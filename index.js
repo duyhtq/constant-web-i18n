@@ -8,7 +8,7 @@ const _ = require('lodash');
 
 const argv = process.argv.slice(2);
 
-const appPath = path.resolve('app');
+const appPath = path.resolve('frontend');
 const envPath = path.resolve('.env');
 
 const name = process.env.app_NAME || 'constant-money';
@@ -35,6 +35,7 @@ if (!fs.existsSync(appPath)) exit('Please clone submodules');
 if (!argv.length) exit('Please give me some command');
 
 const sourcePath = path.resolve(appPath, 'src', 'lang/messages', 'en.js');
+console.log('source path', sourcePath);
 // const sourcePath = path.resolve('../frontend/src/lang/messages/en.js');
 const copiedDir = path.resolve('dist');
 const copiedPath = path.resolve(copiedDir, 'en.js');

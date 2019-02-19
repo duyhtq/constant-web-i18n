@@ -80,6 +80,7 @@
         "developer": "%%%.headerBar.developer%%%",
         "getConstant": "%%%.headerBar.getConstant%%%",
         "getCash": "%%%.headerBar.getCash%%%",
+        "getLoan": "%%%.headerBar.getLoan%%%",
         "sendMoney": "%%%.headerBar.sendMoney%%%",
         "constantLoan": "%%%.headerBar.constantLoan%%%",
         "saveAndGrowMoney": "%%%.headerBar.saveAndGrowMoney%%%",
@@ -114,7 +115,13 @@
             "userInfoInvalidKycPreValidate": "%%%.error.serverCode.userInfoInvalidKycPreValidate%%%",
             "cannotTransferToYourSelf": "%%%.error.serverCode.cannotTransferToYourSelf%%%",
             "invalidUserType": "%%%.error.serverCode.invalidUserType%%%",
-            "emailDoesntExist": "%%%.error.serverCode.emailDoesntExist%%%"
+            "emailDoesntExist": "%%%.error.serverCode.emailDoesntExist%%%",
+            "already_in_another_application": "%%%.error.serverCode.already_in_another_application%%%",
+            "already_verified": "%%%.error.serverCode.already_verified%%%",
+            "exceed_limit": "%%%.error.serverCode.exceed_limit%%%",
+            "invalid_email": "%%%.error.serverCode.invalid_email%%%",
+            "invalid_verification": "%%%.error.serverCode.invalid_verification%%%",
+            "validation_error": "%%%.error.serverCode.validation_error%%%"
         }
     },
     "errorCode": {
@@ -144,6 +151,90 @@
         "8003": "%%%.errorCode.8003%%%",
         "8004": "%%%.errorCode.8004%%%"
     },
+    "loan": {
+        "form": {
+            "personalInfomation": "%%%.loan.form.personalInfomation%%%",
+            "desc": "%%%.loan.form.desc%%%",
+            "loanAmount": "%%%.loan.form.loanAmount%%%",
+            "references": "%%%.loan.form.references%%%",
+            "submit": "%%%.loan.form.submit%%%",
+            "verifyPhone": "%%%.loan.form.verifyPhone%%%",
+            "emailDuplicate": "%%%.loan.form.emailDuplicate%%%",
+            "perweek": "%%%.loan.form.perweek%%%",
+            "loanAmountGreater": "%%%.loan.form.loanAmountGreater%%%",
+            "loanAmountSmaller": "%%%.loan.form.loanAmountSmaller%%%",
+            "label": {
+                "fullname": "%%%.loan.form.label.fullname%%%",
+                "email": "%%%.loan.form.label.email%%%",
+                "address": "%%%.loan.form.label.address%%%",
+                "phone": "%%%.loan.form.label.phone%%%",
+                "photo": "%%%.loan.form.label.photo%%%",
+                "ref1fullname": "%%%.loan.form.label.ref1fullname%%%",
+                "ref1email": "%%%.loan.form.label.ref1email%%%",
+                "ref1phone": "%%%.loan.form.label.ref1phone%%%",
+                "ref1Photo": "%%%.loan.form.label.ref1Photo%%%",
+                "ref1studentid": "%%%.loan.form.label.ref1studentid%%%",
+                "ref2fullname": "%%%.loan.form.label.ref2fullname%%%",
+                "ref2email": "%%%.loan.form.label.ref2email%%%",
+                "ref2phone": "%%%.loan.form.label.ref2phone%%%",
+                "ref2Photo": "%%%.loan.form.label.ref2Photo%%%",
+                "ref2studentid": "%%%.loan.form.label.ref2studentid%%%",
+                "loan_amount": "%%%.loan.form.label.loan_amount%%%",
+                "loanterm": "%%%.loan.form.label.loanterm%%%",
+                "interest": "%%%.loan.form.label.interest%%%",
+                "youwillpay": "%%%.loan.form.label.youwillpay%%%"
+            },
+            "placeholder": {
+                "fullname": "%%%.loan.form.placeholder.fullname%%%",
+                "email": "%%%.loan.form.placeholder.email%%%",
+                "address": "%%%.loan.form.placeholder.address%%%",
+                "phone": "%%%.loan.form.placeholder.phone%%%",
+                "ref1fullname": "%%%.loan.form.placeholder.ref1fullname%%%",
+                "ref1email": "%%%.loan.form.placeholder.ref1email%%%",
+                "ref1studentid": "%%%.loan.form.placeholder.ref1studentid%%%",
+                "ref2fullname": "%%%.loan.form.placeholder.ref2fullname%%%",
+                "ref2email": "%%%.loan.form.placeholder.ref2email%%%",
+                "ref2studentid": "%%%.loan.form.placeholder.ref2studentid%%%",
+                "loan_amount": "%%%.loan.form.placeholder.loan_amount%%%"
+            }
+        },
+        "index": {
+            "title": "%%%.loan.index.title%%%",
+            "desc": "%%%.loan.index.desc%%%",
+            "section1field1": "%%%.loan.index.section1field1%%%",
+            "section1field2": "%%%.loan.index.section1field2%%%",
+            "section1field3": "%%%.loan.index.section1field3%%%",
+            "section2field1": "%%%.loan.index.section2field1%%%",
+            "section2field2": "%%%.loan.index.section2field2%%%"
+        },
+        "agreement": {
+            "desc": "%%%.loan.agreement.desc%%%",
+            "testCI": "%%%.loan.agreement.testCI%%%"
+        },
+        "msg": {
+            "loanconnectSuccess": "%%%.loan.msg.loanconnectSuccess%%%",
+            "loanconnectError": "%%%.loan.msg.loanconnectError%%%",
+            "loandisconnectSuccess": "%%%.loan.msg.loandisconnectSuccess%%%",
+            "loandisconnectError": "%%%.loan.msg.loandisconnectError%%%",
+            "loaninvalid": "%%%.loan.msg.loaninvalid%%%",
+            "backToLoan": "%%%.loan.msg.backToLoan%%%"
+        },
+        "verifyCodeMsg": "%%%.loan.verifyCodeMsg%%%",
+        "resendVerifyCode": "%%%.loan.resendVerifyCode%%%",
+        "submitLoan": "%%%.loan.submitLoan%%%",
+        "confirmSubmitLoan": "%%%.loan.confirmSubmitLoan%%%",
+        "termConditions": "%%%.loan.termConditions%%%",
+        "thankyou": "%%%.loan.thankyou%%%",
+        "canNotSubmitLoan": "%%%.loan.canNotSubmitLoan%%%",
+        "alert": {
+            "sendPhoneToVerify": "%%%.loan.alert.sendPhoneToVerify%%%",
+            "retrySendPhoneToVerifyFailed": "%%%.loan.alert.retrySendPhoneToVerifyFailed%%%",
+            "retrySendPhoneToVerifySuccess": "%%%.loan.alert.retrySendPhoneToVerifySuccess%%%",
+            "submitLoanFailed": "%%%.loan.alert.submitLoanFailed%%%",
+            "submitLoanSuccess": "%%%.loan.alert.submitLoanSuccess%%%",
+            "verifyCodeEmpty": "%%%.loan.alert.verifyCodeEmpty%%%"
+        }
+    },
     "me": {
         "navigation": {
             "myProfile": "%%%.me.navigation.myProfile%%%",
@@ -159,7 +250,8 @@
             "bankInfo": "%%%.me.navigation.bankInfo%%%",
             "referral": "%%%.me.navigation.referral%%%",
             "personalInfo": "%%%.me.navigation.personalInfo%%%",
-            "myTransactions": "%%%.me.navigation.myTransactions%%%"
+            "myTransactions": "%%%.me.navigation.myTransactions%%%",
+            "yourLoan": "%%%.me.navigation.yourLoan%%%"
         },
         "personalProfile": {
             "title": "%%%.me.personalProfile.title%%%",
@@ -426,6 +518,46 @@
             "updatedSuccess": "%%%.me.kycVerification.updatedSuccess%%%",
             "updatedFailed": "%%%.me.kycVerification.updatedFailed%%%",
             "checkVerifyFailed": "%%%.me.kycVerification.checkVerifyFailed%%%"
+        },
+        "loan": {
+            "listApplications": {
+                "name": "%%%.me.loan.listApplications.name%%%",
+                "email": "%%%.me.loan.listApplications.email%%%",
+                "phone": "%%%.me.loan.listApplications.phone%%%",
+                "status": "%%%.me.loan.listApplications.status%%%",
+                "note": "%%%.me.loan.listApplications.note%%%",
+                "noRecord": "%%%.me.loan.listApplications.noRecord%%%",
+                "getListFailed": "%%%.me.loan.listApplications.getListFailed%%%"
+            },
+            "applicationDetail": {
+                "dueDays": "%%%.me.loan.applicationDetail.dueDays%%%",
+                "interestAmount": "%%%.me.loan.applicationDetail.interestAmount%%%",
+                "originalAmount": "%%%.me.loan.applicationDetail.originalAmount%%%",
+                "totalAmount": "%%%.me.loan.applicationDetail.totalAmount%%%",
+                "paid": "%%%.me.loan.applicationDetail.paid%%%",
+                "paidDate": "%%%.me.loan.applicationDetail.paidDate%%%",
+                "paidStatus": "%%%.me.loan.applicationDetail.paidStatus%%%",
+                "payDate": "%%%.me.loan.applicationDetail.payDate%%%",
+                "createdAt": "%%%.me.loan.applicationDetail.createdAt%%%",
+                "dueDayValueLeft": "%%%.me.loan.applicationDetail.dueDayValueLeft%%%",
+                "dueDayValueOver": "%%%.me.loan.applicationDetail.dueDayValueOver%%%",
+                "payConfirmMsg": "%%%.me.loan.applicationDetail.payConfirmMsg%%%",
+                "requireTopup": "%%%.me.loan.applicationDetail.requireTopup%%%",
+                "backBtn": "%%%.me.loan.applicationDetail.backBtn%%%",
+                "cancel": "%%%.me.loan.applicationDetail.cancel%%%",
+                "payForThisTerm": "%%%.me.loan.applicationDetail.payForThisTerm%%%",
+                "getDetailFailed": "%%%.me.loan.applicationDetail.getDetailFailed%%%",
+                "cancelSuccessfully": "%%%.me.loan.applicationDetail.cancelSuccessfully%%%",
+                "cancelFailed": "%%%.me.loan.applicationDetail.cancelFailed%%%",
+                "payFailed": "%%%.me.loan.applicationDetail.payFailed%%%",
+                "paySuccessfully": "%%%.me.loan.applicationDetail.paySuccessfully%%%",
+                "activities": {
+                    "activityLog": "%%%.me.loan.applicationDetail.activities.activityLog%%%",
+                    "showActivities": "%%%.me.loan.applicationDetail.activities.showActivities%%%",
+                    "hideActivities": "%%%.me.loan.applicationDetail.activities.hideActivities%%%",
+                    "timeAt": "%%%.me.loan.applicationDetail.activities.timeAt%%%"
+                }
+            }
         }
     },
     "COIN_EXCHANGE_LP_FAQ_TITLE": "%%%.COIN_EXCHANGE_LP_FAQ_TITLE%%%",
@@ -486,6 +618,7 @@
             "email": "%%%.user.register.email%%%",
             "requiredEmail": "%%%.user.register.requiredEmail%%%",
             "notValidEmail": "%%%.user.register.notValidEmail%%%",
+            "notStudentEmail": "%%%.user.register.notStudentEmail%%%",
             "password": "%%%.user.register.password%%%",
             "requiredPassword": "%%%.user.register.requiredPassword%%%",
             "notValidPassword": "%%%.user.register.notValidPassword%%%",

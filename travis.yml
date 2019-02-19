@@ -1,0 +1,19 @@
+language: node_js
+sudo: required
+node_js:
+- "8"
+script:
+- yarn --version
+- yarn && export APP_NAME=${APP_NAME} && CROWDIN_API=${CROWDIN_API} yarn i18n-prepare && yarn send
+after_success:
+- echo "Success run to get dist"
+- ls -la
+# - git config user.email "travis@travis-ci.org"
+# - git config user.name "Travis CI"
+# - git add .
+# - git commit -m "CI/CD Automatically update localization"
+# - git remote set-url origin https://${CONST_TOKEN}@github.com:constant-money/constant-mvp.git
+# - git push origin feature/localization
+branches:
+  only:
+  - master

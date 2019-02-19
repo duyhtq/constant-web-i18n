@@ -1,7 +1,7 @@
-language: node_js
+language: bash
 sudo: required
-node_js:
-- "8"
+# node_js:
+# - "8"
 git:
   submodules:
     false
@@ -26,4 +26,4 @@ after_success:
 # - git push origin feature/localization
 branches:
   only:
-  - master
+  - integrate/CI

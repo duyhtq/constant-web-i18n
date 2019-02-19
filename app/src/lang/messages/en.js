@@ -80,6 +80,7 @@ export default {
     developer: 'Developer',
     getConstant: 'Buy Constant',
     getCash: 'Withdraw Cash',
+    getLoan: 'Loan Money',
     sendMoney: 'Send Money',
     constantLoan: 'Constant Loan',
     saveAndGrowMoney: 'Save & Grow money',
@@ -114,8 +115,13 @@ export default {
       userInfoInvalidKycPreValidate: 'We could not verify you with the information you uploaded. Please try again.',
       cannotTransferToYourSelf: 'Please enter a recipient other than yourself.',
       invalidUserType: 'Oops we can\'t find you. Please enter your email address again.',
-      emailDoesntExist: 'Oops we can\'t find you. Please enter your email address again.'
-
+      emailDoesntExist: 'Oops we can\'t find you. Please enter your email address again.',
+      already_in_another_application: 'Already in another application',
+      already_verified: 'Already Verified',
+      exceed_limit: 'Exceed limit',
+      invalid_email: 'Email is invalid',
+      invalid_verification: 'Verify Code Invalid',
+      validation_error: 'Your Validation Code Was Wrong'
     },
   },
   errorCode: {
@@ -145,6 +151,134 @@ export default {
     3018: 'Transation Error',
     3019: 'There is no bank info of user',
   },
+  loan: {
+    form : {
+      personalInfomation: 'Personal Information',
+      desc: 'Please enter your detail',
+      loanAmount: 'Loan Amount',
+      references: 'references',
+      submit: 'Submit your loan request',
+      verifyPhone: 'Please enter your verify phone',
+      emailDuplicate: 'Email can not be duplicate with other',
+      perweek: '% per week',
+      loanAmountGreater: 'Loan amount must greater than {value}',
+      loanAmountSmaller: 'Loan amount must smaller than {value}',
+      label: {
+        fullname: 'Full name',
+        email: 'Email',
+        address: 'Address',
+        phone: 'Phone',
+        photo: 'Photo',
+        ref1fullname: 'Full name',
+        ref1email: 'Email',
+        ref1phone: 'Phone',
+        ref1Photo: 'Photo',
+        ref1studentid: 'Student id',
+        ref2fullname: 'Full name',
+        ref2email: 'Email',
+        ref2phone: 'Phone',
+        ref2Photo: 'Photo',
+        ref2studentid: 'Student id',
+        loan_amount: 'Loan amount',
+        loanterm: 'Term loan',
+        interest: 'Interest',
+        youwillpay: 'You\'ll pay'
+      },
+      placeholder: {
+        fullname: 'Please enter your full name',
+        email: 'Please enter your email',
+        address: 'Please enter your address',
+        phone: 'Please enter your phone',
+        ref1fullname: 'Please enter your Full Name',
+        ref1email: 'Please enter your Email',
+        ref1studentid: 'Please enter your Student Id',
+        ref2fullname: 'Please enter your Full Name',
+        ref2email: 'Please enter your Email',
+        ref2studentid: 'Please enter your Student Id',
+        loan_amount: 'Please enter your amount'
+      }
+    },
+    index: {
+      title: 'Loan Constant without any mortgage. Fast & Easy',
+      desc: '\"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...\"',
+      section1field1: 'Why you should choose Constant Loan?',
+      section1field2: 'Constant is a stable currency. No matter what happens, Constant locks in the value of your money to the USD.',
+      section1field3: 'Constant is 100% backed by USD held in an accredited and audited trust. Cash out anytime, anywhere.',
+      section2field1: 'Loan Constant is easy as 1-2-3',
+      section2field2: `
+      <p>
+        Want to pay off your credit cards, medical bills or rent?  Simply enter the amount of constant you want to borrow and make a deposit in ETH, 
+        which will be held securely in the Constant loan smart contact
+      </p>
+      <h5>Benefit1</h5>
+      <h5>Benefit1</h5>
+      <h5>Benefit1</h5>
+      `
+    },
+    agreement: {
+      desc: `
+        <h1 style="text-align: center;">LOAN AGREEMENT</h1>
+        <h5>THIS LOAN AGREEMENT (this “agreement”) dated this 13th day of February, 2019</h5>
+        <strong>BETWEEN:</strong>
+        <p style="text-align: center;">Const LLC of 319 W 106TH ST (the “Lender”)</p>
+        <p style="text-align: right;"><strong>OF THE FIRST PART:</strong></p>
+        <p style="text-align: center;"><strong>AND</strong></p>
+        <p style="text-align: center;">Doanh Chu of California (the “Borrower”)</p>
+        <p style="text-align: right;"><strong>OF THE SECOND PART</strong></p>
+        <p><strong>IN CONSIDERATION OF</strong> the Lender loaning certain monies (the “Loan”) to the Borrower, and the Borrower repaying the Loan to the Lender, both parties agree to keep, perform and fulfill the promises and conditions set out in this Agreement:</p>
+        <u><b>Loan Amount & Interest</b></u>
+        <p>1. The Lender promises to loan $100.00 USD to the Borrower and the Borrower promises to repay this principal amount to the Lender, with interest payable on the unpaid principal at the rate 1.00 percent per annum, calculated yearly not in advance.</p>
+        <u><b>Payment</b></u>
+        <p>2. This Loan will be repaid in consecutive weekly installments commencing on March 1st, 2019 and continuing on the Friday of each following week with the balance then owing under this Agreement being paid on March 22nd, 2019.</p>
+        <p>3. At any time while not in default under this Agreement, the Borrower may pay the outstanding balance then owing under this Agreement to the Lender without further bonus or penalty</p>
+        <u><b>Default</b></u>
+        <p>4. The Borrower must have at least two guarantors for the Lender to loan. The guarantors have to provide ID cards.</p>
+        <u><b>1. Loan Amount & Interest</b></u>
+        <p>5. Notwithstanding anything to the contrary in this Agreement, if the Borrower defaults in the performance of any obligation under this Agreement, then the Lender may declare the principal amount owing and interest due under this Agreement at that time to be immediately due and payable.</p>
+        <p>6. Further, if the Lender declares the principal amount owing under this Agreement to be immediately due and payable, and the Borrower fails to provide full payment, interest at the rate of 2.00 percent per annum, calculated yearly, not in advance, will be charged on the outstanding amount, commencing the day the principal amount is declared due and payable, until full payment is received by the Lender.</p>
+        <p>7. If the Borrower fails to provide full payment including, without limitation, the interest, all of the guarantors will be banned from the loan service.</p>
+        <u><b>Additional Clauses</b></u>
+        <p>8. ID cards?</p>
+        <u><b>Governing Law</b></u>
+        <p>9. This Agreement will be construed in accordance with and governed by the law of the State of Delaware.</p>
+        <u><b>Costs</b></u>
+        <p>10. All costs, expenses and expenditures including, without limitation, the complete legal costs incurred by enforcing this Agreement as a result of any default by the Borrower, will be added to the principal then outstanding and will immediately be paid by the Borrower</p>
+        <u><b>Binding Effect</b></u>
+        <p>11. This Agreement will pass to the benefit of and be binding upon the respective heirs, executors, administrators, successors and permitted assigns of the Borrower and Lender. The Borrower waives presentment for payment, notice of non-payment, protest, and notice of protest.</p>
+        <u><b>Amendments</b></u>
+        <p>12. This Agreement may only be amended or modified by a written instrument executed by both the Borrower and the Lender</p>
+        <u><b>Severability</b></u>
+        <p>13. The clauses and paragraphs contained in this Agreement are intended to be read and construed independently of each other. If any term, covenant, condition or provision of this Agreement is held by a court of competent jurisdiction to be invalid, void or unenforceable, it is the parties’ intent that such provision be reduced in scope by the court only to the extent deemed necessary by that court to render the provision reasonable and enforceable and the remainder of the provisions of this Agreement will in no way be affected, impaired or invalidated as a result.</p>
+        <u><b>General Provisions</b></u>
+        <p>14. Headings are inserted for the convenience of the parties only and are not to be considered when interpreting this Agreement. Words in the singular mean and include the plural and vice versa. Words in the masculine mean and include the feminine a and vice versa</p>
+        <u><b>Entire Agreement</b></u>
+        <p>15. This Agreement constitutes the entire agreement between the parties and there are no further items or provisions, either oral or otherwise.</p>
+      `
+    },
+    msg: {
+      loanconnectSuccess: 'Your request to accept was successed',
+      loanconnectError: 'Your request to accept was failed',
+      loandisconnectSuccess: 'Your request to unaccept was successed',
+      loandisconnectError: 'Your request to unaccept was failed',
+      loaninvalid: 'You access this page with out the code',
+      backToLoan: 'Back to loan page',
+    },
+    verifyCodeMsg: 'Enter the 6 digit code that was sent to ',
+    resendVerifyCode: 'Resend verify code',
+    submitLoan: 'Confirm submit your loan request',
+    confirmSubmitLoan: 'Confirm',
+    termConditions: 'I agree with the Term & Agreements',
+    thankyou: 'Thank you',
+    canNotSubmitLoan: 'You cant submit loan request any more. Please waiting your pending loan request is approved',
+    alert: {
+      sendPhoneToVerify: 'Sent phone to get verify code was failed',
+      retrySendPhoneToVerifyFailed: 'Retry to sent phone to get verify code was failed',
+      retrySendPhoneToVerifySuccess: 'Verify code was sent to your phone',
+      submitLoanFailed: 'Submit Loan Request was failed',
+      submitLoanSuccess: 'Submit Loan Request was success',
+      verifyCodeEmpty: 'Please enter your verify code before submit',
+    }
+  },
   me: {
     navigation: {
       myProfile: 'My Profile',
@@ -161,6 +295,7 @@ export default {
       referral: 'Referral',
       personalInfo: 'Personal Info',
       myTransactions: 'My Orders',
+      yourLoan: 'Your Loans'
     },
     personalProfile: {
       title: 'Personal Detail',
@@ -431,11 +566,11 @@ export default {
       bankAccountName: 'Account Name',
       bankCountry: 'Bank Country',
       routingNumber: 'Routing number',
-      swiftCode: 'Swift code',
-      bankBranchName: 'Bank branch name',
+      swiftCode: 'Swift code',    
+      bankBranchName: 'Bank branch name',      
       bankAccountNumber: 'Your account number',
-      bankAccountType: 'Bank Account Type',
-      achCheckType: 'Ach Check Type',
+      bankAccountType: 'Bank Account Type',  
+      achCheckType: 'Ach Check Type',      
       bankNameHolder: 'Enter Bank Name',
       bankAccountNameHolder: 'Enter Bank Account Name',
       bankAccountNumberHolder: 'Enter Bank Account Number',
@@ -484,6 +619,46 @@ export default {
       updatedFailed: 'Failed while updating your information, please try again!',
       checkVerifyFailed: 'Failed while checking your verify status',
     },
+    loan: {
+      listApplications: {
+        name: 'Name',
+        email: 'Email',
+        phone: 'Phone',
+        status: 'Status',
+        note: 'Note',
+        noRecord: 'You have no loan',
+        getListFailed: 'Failed while getting your loans, please try again'
+      },
+      applicationDetail: {
+        dueDays: 'Due Days',
+        interestAmount: 'Interest Amount',
+        originalAmount: 'Original Amount',
+        totalAmount: 'Total Amount',
+        paid: 'Paid',
+        paidDate: 'Paid Date',
+        paidStatus: 'Paid Status',
+        payDate: 'Pay Date',
+        createdAt: 'Created At',
+        dueDayValueLeft: '{day} days left',
+        dueDayValueOver: '{day} days overdue',
+        payConfirmMsg: 'You will pay {amount} from your wallet ({balance})',
+        requireTopup: 'You balance ({balance}) not enough to pay {amount}. Topup now?',
+        backBtn: 'Back to list',
+        cancel: 'Cancel',
+        payForThisTerm: 'Pay for this term',
+        getDetailFailed: 'Failed while getting application detail, please try again',
+        cancelSuccessfully: 'Your application was canceled successfully',
+        cancelFailed: 'Failed while canceling your application, please try again',
+        payFailed: 'Failed while paying your term, please try again',
+        paySuccessfully: 'Your paying was processed successfully',
+        activities: {
+          activityLog: 'Activity Log',
+          showActivities: 'Show all activities',
+          hideActivities: 'Hide all activities',
+          timeAt: 'at'
+        }
+      }
+    }
   },
   COIN_EXCHANGE_LP_FAQ_TITLE: 'Frequently Asked Questions',
   'landing_page.label.footer':
@@ -498,7 +673,7 @@ export default {
     changeEmailPassword: 'Email & Password',
     login: {
       title: 'Sign in to Constant',
-      username: 'Your email',
+      username: 'Your email',      
       password: 'Password',
       loginButton: 'Sign in',
       keepSignin: 'Keep me signed in',
@@ -550,6 +725,7 @@ export default {
       email: 'Your email',
       requiredEmail: 'Email is required',
       notValidEmail: 'Invalid email address',
+      notStudentEmail: 'Invalid student email address',
       password: 'Password',
       requiredPassword: 'Password is required',
       notValidPassword: 'Password must be 8 characters or more',

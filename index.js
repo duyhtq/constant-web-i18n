@@ -35,6 +35,7 @@ if (!fs.existsSync(appPath)) exit('Please clone submodules');
 if (!argv.length) exit('Please give me some command');
 
 const sourcePath = path.resolve(appPath, 'src', 'lang/messages', 'en.js');
+// const sourcePath = path.resolve('../frontend/src/lang/messages/en.js');
 const copiedDir = path.resolve('dist');
 const copiedPath = path.resolve(copiedDir, 'en.js');
 const storeDir = path.resolve('store');

@@ -13,7 +13,8 @@ before_install:
 script:
 - ls -la
 - yarn --version
-- yarn && export APP_NAME=${APP_NAME} && CROWDIN_API=${CROWDIN_API} yarn i18n-prepare && yarn send
+- yarn && export APP_NAME=${APP_NAME} && CROWDIN_API=${CROWDIN_API} yarn i18n-prepare
+  && yarn send
 after_success:
 - echo "Success run to get dist"
 - ls -la

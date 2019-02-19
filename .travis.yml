@@ -1,6 +1,15 @@
 language: node_js
 node_js:
 - '8'
+git:
+  submodules:
+    false
+before_install:
+- openssl aes-256-cbc -K $encrypted_309cd113c23e_key -iv $encrypted_309cd113c23e_iv
+  -in lucky.enc -out /tmp/lucky -d
+- chmod 600 /tmp/lucky
+- eval `ssh-agent -s`
+- ssh-add /tmp/lucky
 script:
 - ls -la
 - yarn --version
@@ -12,6 +21,3 @@ after_success:
 branches:
   only:
   - integrate/CI
-before_install:
-- openssl aes-256-cbc -K $encrypted_309cd113c23e_key -iv $encrypted_309cd113c23e_iv
-  -in lucky.enc -out lucky -d

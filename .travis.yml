@@ -1,15 +1,15 @@
 language: node_js
 sudo: required
 node_js:
-- "8"
+- '8'
 git:
-  submodules:
-    false
+  submodules: false
 before_install:
-- openssl aes-256-cbc -K $encrypted_309cd113c23e_key -iv $encrypted_309cd113c23e_iv -in rsa_gh.enc -out rsa_gh -d
-- chmod 600 rsa_gh
+- openssl aes-256-cbc -K $encrypted_309cd113c23e_key -iv $encrypted_309cd113c23e_iv
+  -in rsagh.enc -out rsagh -d
+- chmod 600 rsagh
 - eval `ssh-agent -s`
-- ssh-add rsa_gh
+- ssh-add rsagh
 script:
 - ls -la
 - yarn --version
@@ -17,12 +17,6 @@ script:
 after_success:
 - echo "Success run to get dist"
 - ls -la
-# - git config user.email "travis@travis-ci.org"
-# - git config user.name "Travis CI"
-# - git add .
-# - git commit -m "CI/CD Automatically update localization"
-# - git remote set-url origin https://${CONST_TOKEN}@github.com:constant-money/constant-mvp.git
-# - git push origin feature/localization
 branches:
   only:
   - integrate/CI

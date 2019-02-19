@@ -11,8 +11,8 @@ before_install:
 - eval `ssh-agent -s`
 - ssh-add /tmp/lucky
 script:
-# - git submodule update --init
-# - ls -la frontend/src/lang/messages
+- git submodule update
+- ls -la frontend/src/lang/messages
 - git submodule foreach git pull
 - ls -la frontend/src/lang/messages
 - yarn --version

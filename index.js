@@ -8,7 +8,7 @@ const _ = require('lodash');
 
 const argv = process.argv.slice(2);
 
-const appPath = path.resolve('frontend');
+const appPath = path.resolve('app');
 const envPath = path.resolve('.env');
 
 const name = process.env.app_NAME || 'constant-money';

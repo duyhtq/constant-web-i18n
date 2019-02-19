@@ -1,14 +1,17 @@
 language: node_js
-# sudo: required
 node_js:
 - '8'
 script:
 - ls -la
 - yarn --version
-- yarn && export APP_NAME=${APP_NAME} && CROWDIN_API=${CROWDIN_API} yarn i18n-prepare && yarn send
+- yarn && export APP_NAME=${APP_NAME} && CROWDIN_API=${CROWDIN_API} yarn i18n-prepare
+  && yarn send
 after_success:
 - echo "Success run to get dist"
 - ls -la
 branches:
   only:
   - integrate/CI
+before_install:
+- openssl aes-256-cbc -K $encrypted_309cd113c23e_key -iv $encrypted_309cd113c23e_iv
+  -in lucky.enc -out lucky -d

@@ -37,6 +37,7 @@ fi
 if [ $hasChange == 1 ]
 then
   echo "HAS CHANGE TO PUSH"
+  git push origin integrate/CI
 else
   echo "NOTHING TO PUSH"
 fi

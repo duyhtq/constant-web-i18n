@@ -1,4 +1,4 @@
-export APP_NAME=$1 export CROWDIN_API=$2
+# export APP_NAME=$1 export CROWDIN_API=$2
 echo "If Submodule has any new update"
 if [[ `git status --porcelain` ]]; then
   echo "Has some new update from frontend repo"

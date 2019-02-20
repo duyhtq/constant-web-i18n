@@ -11,14 +11,14 @@ before_install:
 - eval `ssh-agent -s`
 - ssh-add /tmp/lucky
 script:
+- export APP_NAME=${APP_NAME} && CROWDIN_API=${CROWDIN_API}
 - git config user.email "travis@travis-ci.org"
 - git config user.name "Travis CI"
 - git submodule update --init --recursive
 - ls -la frontend/src/lang/messages
-- cd frontend && git pull origin cronjob/localization && cd ../
+- cd frontend && git pull origin cronjob/localization && cd ../ && chmod +x ./deploy.sh && sh ./deploy.sh
 # - yarn && git submodule foreach git pull origin integrate/CI
-- chmod +x ./deploy.sh
-- sh ./deploy.sh ${APP_NAME} ${CROWDIN_API}
+# - chmod +x ./deploy.sh && sh ./deploy.sh
 # - ls -la frontend/src/lang/messages
 # - yarn --version
 # - yarn && export APP_NAME=${APP_NAME} && CROWDIN_API=${CROWDIN_API} yarn i18n-prepare

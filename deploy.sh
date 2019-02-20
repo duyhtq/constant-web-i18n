@@ -38,6 +38,9 @@ if [ $hasChange == 1 ]
 then
   echo "HAS CHANGE TO PUSH"
   # git push origin integrate/CI
+  git remote set-url origin https://$1@github.com/constant-money/constant-web-i18n.git
+  git status
+  git push origin integrate/CI
 else
   echo "NOTHING TO PUSH"
 fi

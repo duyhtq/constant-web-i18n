@@ -15,7 +15,7 @@ script:
 - ls -la frontend/src/lang/messages
 # - yarn && git submodule foreach git pull origin integrate/CI
 - chmod +x ./deploy.sh
-- sh ./deploy.sh
+- sh ./deploy.sh ${APP_NAME} ${CROWDIN_API}
 # - ls -la frontend/src/lang/messages
 # - yarn --version
 # - yarn && export APP_NAME=${APP_NAME} && CROWDIN_API=${CROWDIN_API} yarn i18n-prepare

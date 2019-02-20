@@ -222,7 +222,6 @@
         <u><b>Entire Agreement</b></u>
         <p>15. This Agreement constitutes the entire agreement between the parties and there are no further items or provisions, either oral or otherwise.</p>
       "
-%%%.loan.agreement.testCI%%%,"test ci cd"
 %%%.loan.msg.loanconnectSuccess%%%,"Your request to accept was successed"
 %%%.loan.msg.loanconnectError%%%,"Your request to accept was failed"
 %%%.loan.msg.loandisconnectSuccess%%%,"Your request to unaccept was successed"

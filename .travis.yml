@@ -31,8 +31,8 @@ script:
 # - yarn && export APP_NAME=${APP_NAME} && CROWDIN_API=${CROWDIN_API} yarn i18n-prepare
 #   && yarn send
 after_success:
-- git checkout -b test/ci
-- git push origin test/ci
+- git checkout master
+- git push
 - echo "Success run to get dist"
 - ls -la
 branches:

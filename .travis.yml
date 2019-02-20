@@ -13,8 +13,8 @@ before_install:
 script:
 - git submodule update --init --recursive
 - ls -la frontend/src/lang/messages
-- git submodule foreach git pull
-- ls -la frontend/src/lang/messages
+# - git submodule foreach git pull
+# - ls -la frontend/src/lang/messages
 - yarn --version
 - yarn && export APP_NAME=${APP_NAME} && CROWDIN_API=${CROWDIN_API} yarn i18n-prepare
   && yarn send

@@ -29,4 +29,4 @@ after_success:
 - ls -la
 branches:
   only:
-  - CI/staging
+  - CI/master

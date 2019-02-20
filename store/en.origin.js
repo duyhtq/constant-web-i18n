@@ -208,7 +208,8 @@
             "section2field2": "%%%.loan.index.section2field2%%%"
         },
         "agreement": {
-            "desc": "%%%.loan.agreement.desc%%%"
+            "desc": "%%%.loan.agreement.desc%%%",
+            "abctestci": "%%%.loan.agreement.abctestci%%%"
         },
         "msg": {
             "loanconnectSuccess": "%%%.loan.msg.loanconnectSuccess%%%",

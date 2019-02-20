@@ -31,9 +31,11 @@ script:
 # - yarn && export APP_NAME=${APP_NAME} && CROWDIN_API=${CROWDIN_API} yarn i18n-prepare
 #   && yarn send
 after_success:
-- git remote rm origin
-- git remote add origin https://${CONST_TOKEN}@github.com/constant-money/constant-web-i18n.git
-- git fetch origin release/master && git add . && git stash && git checkout release/master && git pull origin release/master && git stash pop &&  git add . && git commit -m "Update NPM" && git push origin release/master
+- git clone -b release/master https://${CONST_TOKEN}@github.com/constant-money/constant-web-i18n.git release && cp -rf ./i18n/ release/i18n/ && cd release && git add . && git commit -m "Update Message" && git push origin release/master
+  # - git remote rm origin
+# - git remote add origin https://${CONST_TOKEN}@github.com/constant-money/constant-web-i18n.git
+# - git fetch origin release/master && git add . && git stash && git checkout release/master && git pull origin release/master && touch abc && git add . && git 
+#&& git stash pop &&  git add . && git commit -m "Update NPM" && git push origin release/master
 - echo "Success run to get dist"
 - ls -la
 branches:

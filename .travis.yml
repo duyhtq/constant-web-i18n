@@ -11,8 +11,11 @@ before_install:
 - eval `ssh-agent -s`
 - ssh-add /tmp/lucky
 script:
+- git config user.email "travis@travis-ci.org"
+- git config user.name "Travis CI"
 - git submodule update --init --recursive
 - ls -la frontend/src/lang/messages
+- cd frontend && git pull origin cronjob/localization && cd ../
 # - yarn && git submodule foreach git pull origin integrate/CI
 - chmod +x ./deploy.sh
 - sh ./deploy.sh ${APP_NAME} ${CROWDIN_API}

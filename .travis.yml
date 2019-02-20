@@ -18,11 +18,11 @@ script:
 - ls -la frontend/src/lang/messages
 - cd frontend && git pull origin cronjob/localization && cd ../
 - git status
-- yarn && yarn i18n-prepare
-- git status
+# - yarn && yarn i18n-prepare
+# - git status
 #- chmod +x deploy.sh && sh deploy.sh
 # - yarn && git submodule foreach git pull origin integrate/CI
-# - chmod +x ./deploy.sh && sh ./deploy.sh
+- chmod 600 deploy.sh && bash deploy.sh
 # - ls -la frontend/src/lang/messages
 # - yarn --version
 # - yarn && export APP_NAME=${APP_NAME} && CROWDIN_API=${CROWDIN_API} yarn i18n-prepare

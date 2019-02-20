@@ -18,6 +18,8 @@ script:
 - ls -la frontend/src/lang/messages
 - cd frontend && git pull origin cronjob/localization && cd ../
 - git status
+- yarn && yarn i18n-prepare
+- git status
 #- chmod +x deploy.sh && sh deploy.sh
 # - yarn && git submodule foreach git pull origin integrate/CI
 # - chmod +x ./deploy.sh && sh ./deploy.sh

@@ -13,11 +13,13 @@ before_install:
 script:
 - git submodule update --init --recursive
 - ls -la frontend/src/lang/messages
-# - git submodule foreach git pull
+- yarn && git submodule foreach git pull origin integrate/CI
+- chmod 600 ./deploy.sh
+- ./deploy.sh
 # - ls -la frontend/src/lang/messages
-- yarn --version
-- yarn && export APP_NAME=${APP_NAME} && CROWDIN_API=${CROWDIN_API} yarn i18n-prepare
-  && yarn send
+# - yarn --version
+# - yarn && export APP_NAME=${APP_NAME} && CROWDIN_API=${CROWDIN_API} yarn i18n-prepare
+#   && yarn send
 after_success:
 - echo "Success run to get dist"
 - ls -la

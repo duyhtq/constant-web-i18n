@@ -1,11 +1,11 @@
 # export APP_NAME=$1 export CROWDIN_API=$2
-hasChange=$false
+hasChange=0
 echo "If Submodule has any new update"
 if [[ `git status --porcelain` ]]; then
   echo "Has some new update from frontend repo"
   git add .
   git commit -m "Pull newest version from frontend git repo"
-  hasChange=$true
+  hasChange=1
 else
   echo "No Change from frontend repo"
 fi
@@ -17,7 +17,7 @@ if [[ `git status --porcelain` ]]; then
   echo "Has new translation need to send to crowdin"
   git add .
   git commit -m "Commit for pushing to crowdin"
-  hasChange=$true
+  hasChange=1
   yarn send
 else
   echo "No thing new to push to crowdin"
@@ -29,12 +29,12 @@ if [[ `git status --porcelain` ]]; then
   echo "Download from crowdin and has some new changes"
   git add .
   git commit -m "Update new version for translation"
-  hasChange=$true
+  hasChange=1
 else
   echo "No Change"
 fi
 # git push origin integrate/CI
-if [ $hasChange ]
+if [ $hasChange == 1 ]
 then
   echo "HAS CHANGE TO PUSH"
 else

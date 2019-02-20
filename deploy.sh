@@ -42,7 +42,7 @@ then
   git status
   git add .
   git commit -m "Travis Update"
-  git push origin integrate/CI
+  git push origin
 else
   echo "NOTHING TO PUSH"
 fi

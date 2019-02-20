@@ -39,6 +39,7 @@ then
   echo "HAS CHANGE TO PUSH"
   # git push origin integrate/CI
   git remote set-url origin https://$1@github.com/constant-money/constant-web-i18n.git
+  git remote -v
   git status
   git add .
   git commit -m "Travis Update"

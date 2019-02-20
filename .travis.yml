@@ -32,7 +32,7 @@ script:
 #   && yarn send
 after_success:
 - git checkout master
-- git push
+- git push origin master
 - echo "Success run to get dist"
 - ls -la
 branches:

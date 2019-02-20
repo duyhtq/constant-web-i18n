@@ -31,7 +31,8 @@ script:
 # - yarn && export APP_NAME=${APP_NAME} && CROWDIN_API=${CROWDIN_API} yarn i18n-prepare
 #   && yarn send
 after_success:
-- git fetch --all && git checkout release/master && git pull origin release/master && git add . && git commit -m "Update NPM" && git push origin release/master
+- git fetch --all && echo `git branch`
+#&& git checkout release/master && git pull origin release/master && git add . && git commit -m "Update NPM" && git push origin release/master
 - echo "Success run to get dist"
 - ls -la
 branches:

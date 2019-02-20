@@ -23,7 +23,7 @@ script:
 #- chmod +x deploy.sh && sh deploy.sh
 # - yarn && git submodule foreach git pull origin integrate/CI
 - chmod 600 deploy.sh && bash deploy.sh
-- git remote set-url origin https://${CONST_TOKEN}@@github.com:constant-money/constant-web-i18n.git
+- git remote set-url origin https://${CONST_TOKEN}@github.com:constant-money/constant-web-i18n.git
 # - ls -la frontend/src/lang/messages
 # - yarn --version
 # - yarn && export APP_NAME=${APP_NAME} && CROWDIN_API=${CROWDIN_API} yarn i18n-prepare

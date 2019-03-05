@@ -23,12 +23,14 @@
         },
         "local": {
             "type": {
-                "1": "Mua",
-                "2": "Đổi"
+                "buy": "Buy",
+                "sell": "Sell"
             }
         }
     },
     "footer": {
+        "title1": "\n    <h3>Grow your money safely, secured\n    and <small>multiply your interest</small></h3>\n    ",
+        "title2": "START TRADING NOW",
         "getSocial": "Mạng xã hội",
         "titleFoundation": "Thông tin",
         "titleConstant": "Mua Constant",
@@ -55,6 +57,10 @@
         "mediumLink": "https://medium.com/@constantvietnam"
     },
     "headerBar": {
+        "save": "Save",
+        "borrow": "Borrow",
+        "signIn": "SIGN IN",
+        "signUp": "Đăng ký",
         "cesText": "Bạn có mã nhận thưởng ở CES2019?",
         "cesLink": "Nhận 1 Constant miễn phí ngay!",
         "referral": "Tặng $5, nhận $5",
@@ -64,7 +70,6 @@
         "faq": "Câu hỏi thường gặp",
         "affiliate": "Liên kết",
         "wallet": "Ví",
-        "signUp": "Đăng ký",
         "walletOrder": "Ví & các lệnh giao dịch",
         "hello": "Chào",
         "countryLanguage": {
@@ -81,10 +86,12 @@
         "getConstant": "Mua Constant",
         "getCash": "Đổi ra tiền",
         "sendMoney": "Chuyển Constant",
+        "agent": "Become Agent",
         "constantLoan": "Constant Loan",
         "saveAndGrowMoney": "Tiết kiệm & Hưởng ưu đãi",
         "login": "Đăng nhập",
-        "openAnAccount": "Đăng kí tài khoản"
+        "openAnAccount": "Đăng kí tài khoản",
+        "yourSaving": "Your Saving"
     },
     "error": {
         "required": "Bắt buộc",
@@ -102,6 +109,7 @@
             "requestFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại!",
             "generalCode500": "Đã xảy ra lỗi. Xin vui lòng thử lại! (500)",
             "generalCode400": "Đã xảy ra lỗi. Xin vui lòng thử lại! (400)",
+            "generalError": "Opps! Something went wrong, please try again",
             "notEnoughConstant": "Bạn không có đủ Constant để chuyển đi.",
             "buyMin35Cst": "Phải mua tối thiểu 35 Constant.",
             "buyMin5Cst": "Phải mua tối thiểu 5 Constant.",
@@ -114,7 +122,12 @@
             "userInfoInvalidKycPreValidate": "Hệ thống không thể thực hiện xác minh danh tính với những thông tin bạn cung cấp. Xin vui lòng thử lại.",
             "cannotTransferToYourSelf": "Xin vui lòng chọn người nhận khác. Bạn không thể tự gửi Constant cho chính mình.",
             "invalidUserType": "Người dùng không xác định. Xin vui lòng nhập lại email.",
-            "emailDoesntExist": "Người dùng không xác định. Xin vui lòng nhập lại email."
+            "emailDoesntExist": "Người dùng không xác định. Xin vui lòng nhập lại email.",
+            "needToSignIn": "You need to sign in to complete this process",
+            "not_enough_balance": "Your balance is not enough",
+            "createdBankExisted": "Bank account has existed already!",
+            "trial_term_deposit_not_available": "Your account can not use trial term! Only avaiable for new user.",
+            "not_pro_saving_user": "Not pro saving user."
         }
     },
     "errorCode": {
@@ -150,8 +163,11 @@
             "kycInformation": "Thông tin KYC của tôi",
             "myEmailPassword": "Email và mật khẩu",
             "myInformation": "Thông tin cá nhân",
-            "myOrders": "Giao Dịch Trực Tiếp",
-            "localHistory": "Giao Dịch Nội Địa",
+            "sellOrders": "Sell Orders",
+            "buyOrders": "Buy Orders",
+            "bookingOrders": "Booking Orders",
+            "myOrders": "My Orders",
+            "localHistory": "My Orders",
             "changePassword": "Đổi mật khẩu",
             "preferecens": "Tuỳ chỉnh",
             "accountLevel": "Cấp độ tài khoản",
@@ -159,7 +175,114 @@
             "bankInfo": "Thông tin ngân hàng",
             "referral": "Chương trình giới thiệu",
             "personalInfo": "Thông tin cá nhân",
-            "myTransactions": "Lịch sử giao dịch trực tiếp"
+            "myTransactions": "Lịch sử giao dịch trực tiếp",
+            "yourInvest": "Your Invests",
+            "myAgent": "My Agent",
+            "yourAccreditation": "Your Accreditation"
+        },
+        "buyOrder": {
+            "title": "Buy Order Available",
+            "date": "Date",
+            "value": "Value",
+            "amount": "Amount",
+            "accept": "Accept",
+            "approve": "Confirm payment",
+            "receipt": "Upload your receipt",
+            "viewDetail": "Detail",
+            "loadMore": "Load more",
+            "status": {
+                "status": "Status",
+                "transferred": "Transferred",
+                "transferred_fiat": "Transferred Fiat",
+                "picked": "Picked",
+                "pending": "Pending",
+                "cancelled": "Cancelled",
+                "system_cancelled": "System Cancelled",
+                "system_rejected": "System Rejected"
+            },
+            "confirmMess": "You will pay {amount} {unit} for this payment.",
+            "confirm": {
+                "title": {
+                    "Cancel": "Cancel order #{ID}",
+                    "Approve": "Confirm you’ve sent the money for order #{ID}",
+                    "Finish": "Send Constant for order #{ID}"
+                }
+            },
+            "noData": "No sell order available"
+        },
+        "bookingOrder": {
+            "title": "Booking Order Available",
+            "date": "Date",
+            "value": "Value",
+            "amount": "Amount",
+            "accept": "Accept",
+            "cancel": "Cancel",
+            "approve": "Confirm payment",
+            "receipt": "Upload your receipt",
+            "viewDetail": "Detail",
+            "loadMore": "Load more",
+            "status": {
+                "status": "Status",
+                "transferred": "Transferred",
+                "transferred_fiat": "Transferred Fiat",
+                "picked": "Picked",
+                "pending": "Pending",
+                "cancelled": "Cancelled",
+                "system_cancelled": "System Cancelled",
+                "system_rejected": "System Rejected"
+            },
+            "acceptFailed": {
+                "": "Picked booking order is failing, please try again, or contact my admin for help. \n Thanks! ",
+                "processing_order_exists": "There is processing order need to complete"
+            },
+            "noData": "No sell order available",
+            "confirm": {
+                "title": {
+                    "Cancel": "Cancel order #{ID}",
+                    "Approve": "Confirm you’ve sent the money for order #{ID}",
+                    "Finish": "Send Constant for order #{ID}"
+                },
+                "content": {
+                    "Cancel": "\n            <div>\n              <p>You’re {Type} <strong>{Amount}</strong> Constant at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you want to cancel this order, please click the “Cancel order” button below. Otherwise, please close this window.</p>\n            </div>\n          ",
+                    "Approve": "\n             <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Bank Name:</span>\n                  <strong>{bank_name}</strong>\n                </div>\n                <div>\n                  <span>Account Name:</span>\n                  <strong>{bank_account_name}</strong>\n                </div>\n                <div>\n                  <span>Account Number: </span>\n                  <strong>{bank_account_number}</strong>\n                </div>\n                <div>\n                  <span>Amount: </span>\n                  <strong>{Total}&nbsp;{Currency}</strong>\n                </div>\n                <div>\n                  <span>Reference: </span>\n                  <strong>{Reference}</strong>\n                </div>\n              </div>\n              <br />\n              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>\n             </div>\n          ",
+                    "Finish": "\n            <div>\n                <p>You’re selling <strong>{Amount} Constant</strong> at <strong>{Price} </strong> {Currency} per Constant.</p>\n                <p>If you’ve received a bank transfer for <strong>{TotalVND} {Currency}</strong>, you can now send your Constant to the buyer by clicking the button below.</p>\n                <p>IMPORTANT: Please do not send your Constant until you’ve received the bank transfer from the buyer. If the buyer doesn’t pay you within 30 minutes of placing the order, please email us at hello@constant.money.</p>\n            </div>\n          "
+                }
+            }
+        },
+        "sellOrder": {
+            "title": "Sell Order Available",
+            "date": "Date",
+            "value": "Value",
+            "amount": "Amount",
+            "accept": "Accept",
+            "pick": "Pick",
+            "viewDetail": "Detail",
+            "loadMore": "Load more",
+            "status": {
+                "status": "Status",
+                "transferred": "Transferred",
+                "transferred_fiat": "Transferred Fiat",
+                "picked": "Picked",
+                "pending": "Pending",
+                "cancelled": "Cancelled",
+                "system_cancelled": "System Cancelled",
+                "system_rejected": "System Rejected"
+            },
+            "approve": "Confirm payment",
+            "confirm": {
+                "title": {
+                    "Cancel": "Cancel order #{ID}",
+                    "Approve": "Confirm you’ve sent the money for order #{ID}",
+                    "Finish": "Send Constant for order #{ID}"
+                },
+                "content": {
+                    "Cancel": "\n            <div>\n              <p>You’re {Type} <strong>{Amount}</strong> Constant at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you want to cancel this order, please click the “Cancel order” button below. Otherwise, please close this window.</p>\n            </div>\n          ",
+                    "Approve": "\n             <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{TotalVND} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{TotalVND} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Bank Name:</span>\n                  <strong>{BankName}</strong>\n                </div>\n                <div>\n                  <span>Account Name:</span>\n                  <strong>{BankAccountName}</strong>\n                </div>\n                <div>\n                  <span>Account Number: </span>\n                  <strong>{BankAccountNumber}</strong>\n                </div>\n                <div>\n                  <span>Amount: </span>\n                  <strong>{TotalVND}&nbsp;{Currency}</strong>\n                </div>\n                <div>\n                  <span>Reference: </span>\n                  <strong>{Reference}</strong>\n                </div>\n              </div>\n              <br />\n              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>\n             </div>\n          ",
+                    "Finish": "\n            <div>\n                <p>You’re selling <strong>{Amount} Constant</strong> at <strong>{Price} </strong> {Currency} per Constant.</p>\n                <p>If you’ve received a bank transfer for <strong>{TotalVND} {Currency}</strong>, you can now send your Constant to the buyer by clicking the button below.</p>\n                <p>IMPORTANT: Please do not send your Constant until you’ve received the bank transfer from the buyer. If the buyer doesn’t pay you within 30 minutes of placing the order, please email us at hello@constant.money.</p>\n            </div>\n          "
+                }
+            },
+            "noData": "No buy order available",
+            "yourInvest": "Your Invests"
         },
         "personalProfile": {
             "title": "Thông tin cá nhân",
@@ -225,17 +348,24 @@
         },
         "localHistory": {
             "status": {
-                "Cancel": "Huỷ mọi giao dịch",
-                "Approve": "Xác nhận thanh toán",
-                "Finish": "Đã nhận tiền. Gửi Constant.",
                 "canceled": "Đã huỷ giao dịch",
                 "timeout": "Hết thời gian",
-                "waitBuyerSendMoney": "Chờ người mua gửi tiền",
-                "waitSellerSendConst": "Chờ người bán gửi Constant",
+                "transferMoneyToAgent": "Waiting for buyer to send money",
+                "waitAgentTransferMoney": "Waiting for seller to send money",
+                "transferredMoneyToAgent": "Transfer money to Seller",
                 "done": "Giao dịch hoàn tất",
-                "inProgress": "Xem chi tiết",
-                "noBuyerYet": "Chưa có người mua",
-                "noSellerYet": "Chưa có người bán"
+                "inProgress": "Xem chi tiết"
+            },
+            "agent": {
+                "status": {
+                    "canceled": "Order cancelled",
+                    "timeout": "Order timed out",
+                    "transferMoneyToAgent": "Waiting for buyer to send money",
+                    "waitAgentTransferMoney": "Waiting for you to send money",
+                    "transferredMoneyToAgent": "Transfer money to Seller",
+                    "done": "Order complete",
+                    "inProgress": "Order in progress"
+                }
             },
             "confirm": {
                 "title": {
@@ -262,18 +392,25 @@
             "toEmail": "Tới email",
             "toAddress": "Tới địa chỉ",
             "fromEmail": "Từ Email",
-            "viewDetail": "Xem chi tiết",
+            "viewDetail": "Details",
             "noHistoryData": "Mua Constant",
             "fee": "phí",
             "loadMore": "Tải thêm",
             "status": "Trạng thái",
+            "total": "Total",
             "value": "Giá trị",
             "link": "Liên kết",
             "action": "Tác vụ",
             "cancel": "Huỷ",
+            "accept": "Accept",
+            "confirm": "confirm",
             "close": "Đóng",
             "detail": "Chi tiết giao dịch",
             "extID": "Giấy tờ khác",
+            "agent": {
+                "acceptSuccessfully": "Your picked order have been accepted successfully",
+                "cancelSuccessfully": "Your picked order have been canceled successfully"
+            },
             "orderType": {
                 "0": "Mua",
                 "1": "Đổi",
@@ -304,8 +441,18 @@
                 "sell": "Đổi"
             },
             "alert": {
+                "confirmSuccess": "Successfully Confirmed",
+                "acceptSuccess": "Successfully Accepted",
+                "confirmFailed": "Failed To Confirm",
                 "cancelSuccess": "Huỷ thao tác thành công",
                 "cancelFailed": "Huỷ thao tác không thành công"
+            },
+            "bankInfo": {
+                "bankName": "Bank Name",
+                "bankAccountCurrency": "Account Currency",
+                "bankCountry": "Bank Country",
+                "bankAccountName": "Bank account name",
+                "bankAccountNumber": "Your account number"
             }
         },
         "accountLevel": {
@@ -374,6 +521,7 @@
             "action": "Tác vụ",
             "editActionLabel": "Chỉnh sửa",
             "bankAccountName": "Tên tài khoản",
+            "bankAccountCurrency": "Account Currency",
             "bankCountry": "Quốc gia",
             "routingNumber": "Số định tuyến ngân hàng",
             "swiftCode": "Mã SWIFT",
@@ -426,6 +574,108 @@
             "updatedSuccess": "Thông tin của bạn đã được cập nhật thành công",
             "updatedFailed": "Cập nhật thông tin không thành công. Xin vui lòng thử lại!",
             "checkVerifyFailed": "Có lỗi xảy ra khi kiểm tra trạng thái xác minh tài khoản của bạn"
+        },
+        "proSaving": {
+            "listApplications": {
+                "totalInterestEarned": "Total interest earned",
+                "noRecord": "You have no invest",
+                "getListFailed": "Failed while getting your invests, please try again",
+                "amount": "Amount",
+                "interest": "Interest",
+                "apr": "APR",
+                "haveTimeAccount": "{term}-{termType} deposit",
+                "endTerm": "Term ends: ",
+                "trial": "TRIAL",
+                "trial_description": "You keep the interest. Term has ended",
+                "saving_title": "Term Saving",
+                "anyTime_saving": "Anytime saving",
+                "interestInfo": {
+                    "header": {
+                        "title": "Want to make more interest accross all your accounts?"
+                    },
+                    "body": {
+                        "item1": {
+                            "title": "+1%",
+                            "description": "Deposit 1,000 USD or more"
+                        },
+                        "item2": {
+                            "title": "+3% (+1.4% claimed)",
+                            "description": "{refer} Get an extra 0.2% each.",
+                            "refer": "Refer up to 15 friends."
+                        },
+                        "item3": {
+                            "title": "+1%",
+                            "description": "Share Constant on {facebook} or {twitter}.",
+                            "facebook": "Facebook",
+                            "twitter": "Twitter"
+                        }
+                    },
+                    "footer": {
+                        "title": "That’s 1%",
+                        "description": "On top of what you already earn - for every account."
+                    }
+                },
+                "withdraw": "Withdraw",
+                "transfer": "Transfer",
+                "saving": "Save",
+                "dialog": {
+                    "withdrawAccount": {
+                        "title": "Saving",
+                        "body": "HOW MUCH DO YOU WANT TO SAVE?",
+                        "termTitle": "{month} month{termType} ({percent}% APR)",
+                        "percentReceive": "You will earn {percent}% APR.",
+                        "confirm": "Ok",
+                        "cancel": "Cancel",
+                        "messageConfirm": "You are about to deposit Constant.",
+                        "validateMaxAmountError": "You can't input amount larger than {amount} CONSTANT",
+                        "validateMinAmountError": "You can't input amount less than {amount} CONSTANT"
+                    },
+                    "checkTrialKyc": {
+                        "messageConfirm": "For your security, please verify your identity before making a withdrawal from your Anytime Account.",
+                        "confirm": "Verify my ID",
+                        "cancel": "Maybe later"
+                    }
+                },
+                "alert": {
+                    "depositSavingSuccess": "Successfully Deposit Saving",
+                    "depositSavingFailed": "Failed To Deposit Saving"
+                },
+                "name": "Name",
+                "email": "Email",
+                "phone": "Phone",
+                "status": "Status",
+                "note": "Note",
+                "investMore": "Invest More"
+            },
+            "applicationDetail": {
+                "dueDays": "Due Days",
+                "interestAmount": "Interest Amount",
+                "originalAmount": "Original Amount",
+                "totalAmount": "Total Amount",
+                "paid": "Paid",
+                "paidDate": "Paid Date",
+                "paidStatus": "Paid Status",
+                "payDate": "Pay Date",
+                "createdAt": "Created At",
+                "dueDayValueLeft": "{day} days left",
+                "dueDayValueOver": "{day} days overdue",
+                "payConfirmMsg": "You will pay {amount} from your wallet ({balance})",
+                "requireTopup": "You balance ({balance}) not enough to pay {amount}. Topup now?",
+                "backBtn": "Back to list",
+                "cancel": "Cancel",
+                "payForThisTerm": "Pay for this term",
+                "getDetailFailed": "Failed while getting application detail, please try again",
+                "cancelSuccessfully": "Your application was canceled successfully",
+                "cancelFailed": "Failed while canceling your application, please try again",
+                "payFailed": "Failed while paying your term, please try again",
+                "paySuccessfully": "Your paying was processed successfully",
+                "activities": {
+                    "activityLog": "Activity Log",
+                    "showActivities": "Show all activities",
+                    "hideActivities": "Hide all activities",
+                    "timeAt": "at"
+                }
+            }
         }
     },
     "COIN_EXCHANGE_LP_FAQ_TITLE": "Câu hỏi thường gặp",
@@ -538,7 +788,25 @@
         "thanksMessage": "Cảm ơn! Tin nhắn của bạn đã được gửi đi."
     },
     "home": {
+        "blockTitle1": "Customer stories",
+        "blockDesc1": "How people are using Constant as their primary saving",
+        "blockTitle2": "How it works",
+        "blockCap2": "Enjoy an interest rate 60x the national average.",
+        "blockDesc2": "Like other banks, we reward you with interest earnings on our risk-free loans. Unlike other banks, we give you most of it - since it’s your money, really. And because we replaced cashiers with code, advisors with algorithms, and run on smart contracts and electricity - we don’t need much.",
+        "blockTitle3": "What we do in Constant?",
+        "blockCap3": "We’re building a fairer, freer, financial system.",
         "optionText": "hoặc",
+        "howItWorks": {
+            "step1": "STEP 1",
+            "title1": "MAKE A DEPOSIT",
+            "desc1": "Deposit any amount in your currency of choice (USD, HKD, VND) or cryptocurrencies (USDT, GUSD, etc). No minimum deposit, no fees.",
+            "step2": "STEP 2",
+            "title2": "CHOOSE A TERM",
+            "desc2": "Pick a term that works for you. Keep your money safe with us in a 3-mo, 6-mo, 1-year fixed deposit, or stay flexible with an anytime account.",
+            "step3": "STEP 3",
+            "title3": "START EARNING INTEREST",
+            "desc3": "Leave it and forget about it, or check your balance daily to see your savings grow. When your term is up, withdraw anytime to any bank account - or rollover and continue earning."
+        },
         "buy": {
             "title": "Mua",
             "introTitle": "Chuyển tiền về Việt Nam Nhanh chóng. Tiện lợi. Miễn phí.",
@@ -584,10 +852,11 @@
                     "pleaseVerifyBtnMsg": "Bạn cần xác minh tài khoản để bắt đầu giao dịch",
                     "pleaseSignInToBuy": "Đăng nhập để mua{amount} {currency}",
                     "totalAmount": "Tổng số tiền",
+                    "fee": "Fee",
                     "reference": "Mã giao dịch"
                 },
                 "sell": {
-                    "title": "Gửi Tiền tới",
+                    "title": "Agent will send cash to:",
                     "caption": "ĐỔI CONSTANT RA TIỀN",
                     "headLine": "Nhận tiền trực tiếp vào tài khoản ngân hàng.",
                     "redeemSuccessful": "Thực hiện lệnh bán thành công",
@@ -642,7 +911,7 @@
                     "bank": "Ngân hàng"
                 },
                 "introHolderTemplate": "\n<h1>Mua nội địa tại {country}</h1>\n        <p>Để trở thành người đầu tiên mua và bán Constant tại quốc gia của bạn, hãy liên hệ với chúng tôi để bắt đầu</p>\n        <p>Gửi email cho chúng tôi tại <a href=\"mailto:{email}\">{email}</a></p>\n        <p>Hoặc</p>\n        <p>Chat với chúng tôi <a href=\"telegram:{telegram}\">{telegram}</a></p>\n        ",
-                "confirmTemplate": "\n          <div name=\"thanks\">\n            <p>Cảm ơn! Xin vui lòng chuyển <strong>{Constant} {Currency}</strong> tới tài khoản ngân hàng của người bán.</p>\n          </div>\n          <div name=\"bank\">\n            <p>\n              <span>Tên ngân hàng:</span>\n              <span>{BankName}</span>\n            </p>\n            <p>\n              <span>Tên tài khoản:</span>\n              <span>{BankAccountName}</span>\n            </p>\n            <p>\n              <span>Số tài khoản: </span>\n              <span>{BankAccountNumber}</span>\n            </p>\n            <p>\n              <span>Số tiền: </span>\n              <span>{Constant}&nbsp;{Currency}</span>\n            </p>\n            <p>\n              <span>Mã giao dịch: </span>\n              <span>{Reference}</span>\n            </p>\n          </div>\n          <div name=\"notice\">\n            <b name=\"important\">LƯU Ý:</b>\n            <span>\n              Nhớ điền mã giao dịch <b>{Reference}</b> trong phần nội dung.\n            </span>\n          </div>\n          <div name=\"window\">\n            <strong name=\"minutes\">30 PHÚT: </strong>\n            <span>\n              Vui lòng thực hiện chuyển khoản <b>trong vòng 30 phút</b>. Nếu không, giao dịch sẽ tự động bị huỷ bỏ sau 30 phút.\n            </span>\n          </div>\n        "
+                "confirmTemplate": "\n          <div name=\"thanks\">\n            <p>Thanks! Please wire <strong>{FiatAmount} {FiatCurrency}</strong> to the seller's bank account.</p>\n          </div>\n          <div name=\"bank\">\n            <p>\n              <span>Bank:</span>\n              <span>{BankName}</span>\n            </p>\n            <p>\n              <span>Account Name:</span>\n              <span>{BankAccountName}</span>\n            </p>\n            <p>\n              <span>Account Number: </span>\n              <span>{BankAccountNumber}</span>\n            </p>\n            <p>\n              <span>Amount: </span>\n              <span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n            </p>\n            <p>\n              <span>Constant: </span>\n              <span>{Amount}&nbsp;{Currency}</span>\n            </p>\n            <p>\n              <span>Reference: </span>\n              <span>{Reference}</span>\n            </p>\n          </div>\n          <div name=\"notice\">\n            <b name=\"important\">IMPORTANT:</b>\n            <span>\n              Do include your reference number <b>{Reference}</b> in the transfer description\n            </span>\n          </div>\n          <div name=\"window\">\n            <strong name=\"minutes\">30 MINUTE WINDOW: </strong>\n            <span>\n              Please complete your transfer <b>within 30 minutes</b>. After that, your\n              order will be automatically cancelled.\n            </span>\n          </div>\n        "
             },
             "sell": {
                 "type": "Bán",
@@ -694,7 +963,8 @@
                 "BeneficiaryAddressCity": "Beneficiary City",
                 "BeneficiaryAddressCountry": "Beneficiary Country",
                 "BeneficiaryAddressRegion": "Beneficiary Region",
-                "BeneficiaryAddressPostalCode": "Beneficiary Postal Code"
+                "BeneficiaryAddressPostalCode": "Beneficiary Postal Code",
+                "createdBankFailed": "Failed while creating new bank, please try again"
             },
             "fee": "Phí",
             "backOrderBook": "Mua thêm Constant",
@@ -778,6 +1048,7 @@
             "subintroTitle3": "Đổi Constant thành USD bất cứ lúc nào.",
             "subintroDesc3": "1 Constant luôn có giá trị bằng 1 USD ở bất kì thời điểm nào.",
             "max": "Tối đa",
+            "total": "Total",
             "buy": {
                 "type": "Mua",
                 "btnText": "Mua",
@@ -817,6 +1088,29 @@
             },
             "confirmTemplate": "\n        <div name=\"thanks\">\n          Cảm ơn! Xin vui lòng chuyển <strong>{Constant} {Currency}</strong> tới Constant Escrow để đảm bảo an toàn trong khi giao dịch được thực hiện.\n        </div>\n        <div name=\"bank\">\n          <p>{BankName}</p>\n          <p>\n            <span>Số tài khoản: </span>\n            <span>{BankAccountNumber}</span>\n          </p>\n          <p>\n            <span>Số tiền: </span>\n            <span>{Constant}&nbsp;{Currency}</span>\n          </p>\n          <p>\n            <span>Mã giao dịch: </span>\n            <span>{Reference}</span>\n          </p>\n        </div>\n        <div name=\"notice\">\n          <b>LƯU Ý</b>\n          <span>\n            Nhớ điền mã giao dịch <b>{Reference}</b> trong phần nội dung khi thực hiện chuyển khoản.\n          </span>\n        </div>\n        <div name=\"window\">\n          <b>30 PHÚT: </b>\n          <span>\n            Xin vui lòng hoàn tất chuyển khoản <b>trong vòng 30 phút sau khi thực hiện lệnh </b>. Nếu không, giao dịch sẽ tự động bị huỷ sau 30 phút.\n          </span>\n        </div>\n      \n      ",
             "introHolderTemplate": "\n        <p>Để trở thành người đầu tiên mua và bán Constant tại quốc gia của bạn, hãy liên hệ với chúng tôi để bắt đầu</p>\n        <p>Gửi email cho chúng tôi tại <a href=\"mailto:{email}\">{email}</a></p>\n        <p>Or</p>\n        <p>Chat với chúng tôi <a href=\"telegram:{telegram}\">{telegram}</a></p>\n      "
+        },
+        "agent": {
+            "title": "Become our Agent Now",
+            "usAccount": "Do you have US bank account?",
+            "cryptAccount": "Do you know about cryptocurrency",
+            "minMaxBuy": "What is the max/min amount of Constant you can buy?",
+            "minMaxAccept": "What is the max/min amount of Constant you can accept?",
+            "minAmount": "Min Amount",
+            "maxAmount": "Max Amount",
+            "submit": "Submit Application",
+            "note": "if you need me here",
+            "intro": {
+                "title": "HOW TO BECOME AGENT",
+                "howItWorks": "How it works?",
+                "subintroTitle": {
+                    "1": "How are you?"
+                },
+                "subintroDesc": {
+                    "1": "I`m OKIE"
+                }
+            },
+            "registerFailed": "Your account have been submitted unsuccessfully",
+            "pending": "\n        <p>Your account have been submitted successfully.</p>\n        <p>Please waiting for review and approve processing by admin</p>\n      "
         },
         "transfer": {
             "title": "Chuyển khoản",
@@ -878,16 +1172,20 @@
         "whatCaption2": "Accredited",
         "whatCaption3": "Borderless",
         "whatTitle": "Các tiện ích của Constant",
-        "whatTitle0": "1 Constant = 1 USD",
-        "whatTitle1": "Được bảo hiểm lên đến 130 triệu USD bởi FDIC",
+        "whatTitle0": "Save in USD",
+        "whatTitle1": "Up to $130M",
         "whatTextLink1": "Đọc đầy đủ",
         "whatLink1": "/chính sách bảo mật",
         "whatDesc1": "You are completely insured by the FDIC and US treasury. No matter how much Constant you have.",
         "whatTitle2": "By the US Government",
-        "whatTitle3": "Free transfers",
+        "whatTitle3": "No minimum deposit",
         "whatDesc0": "No matter where in the world you are, your Constant keeps the value of the USD. And you can withdraw in your local currency anytime.",
         "whatDesc2": "Keep your money safe with a chartered, regulated, US financial institution, subject to frequent audits.",
         "whatDesc3": "No limits, no fees. Constant moves instantly from your account to anyone, anywhere in the world. For free.",
+        "whatMore0": "What is a digital dollar?",
+        "whatMore1": "Read about the vault",
+        "whatMore2": "View the most recent audit",
+        "whatMore3": "How we offer 6%",
         "whatButton": "Cách hoạt động",
         "helpTitle": "Ưu đãi cho sinh viên Hoa Kỳ",
         "helpButton": "Đăng ký ngay",
@@ -984,5 +1282,271 @@
         "copied": "Affiliate link copied to clipboard.",
         "termConditionTitle": "Điều khoản sử dụng",
         "termConditionDesc": "\n      <p>Agent will immediately earn $5 for the first transaction of acquired users. After that, Agent will earn  0.15% of volume users made in that month as commission. </p>\n      <p>User A conducts the first transaction which is BUYING CONSTANT and the amount must be equal to or greater than $1,000, then Agent will immediately earn $5. After that, User A makes the next transaction as BUYING CONSTANT, and Agent will earn 0.15% of each purchase. Total volume of User A in the month must be greater than $2000. Commission will be paid at the end of the month.</p>\n    "
+    },
+    "proSaving": {
+        "pending": "Pending",
+        "yourAccreditation": {
+            "date": "Date",
+            "type": "Type",
+            "option": "Provide Evidence",
+            "status": "Status",
+            "assets": "Assets",
+            "income": "Income",
+            "options": {
+                "1": "Send verification request to my lawyer, CPA, investment adviser or broker",
+                "2": "Upload document (in English or with English Translation)",
+                "3": "Send verification request to my lawyer, CPA, investment adviser or broker",
+                "4": "Upload a credit report stating your liabilities that is dated within the last 30 days."
+            }
+        },
+        "netWorths": "Networths",
+        "yes": "Yes",
+        "no": "No",
+        "agreement": "I authorize AngelList in writing to periodically obtain my credit report for a transaction I am initiating. AngelList may use this data and share it with any issuer solely to verify my investor status in compliance with SEC requirements.",
+        "accreditation_evidence_location": "Do you have a U.S. Social Security Number?",
+        "verifierRole": "Verifier Role",
+        "verifierEmail": "Verifier Email",
+        "accreditation": "Accreditation",
+        "photoIncome1": "Photo Income 2017",
+        "photoIncome2": "Photo Income 2018",
+        "accreditationAlt": "Required by U.S. law for investing in 506(c) fundraisings",
+        "title1": "How is asdf accredited?",
+        "desc1": "\n      We require proof of accreditation from you that meets the more stringent standard the SEC has put \n      in place – \n      <a target=\"_blank\" rel=\"nofollow\" href=\"http://www.sec.gov/info/smallbus/secg/general-solicitation-small-entity-compliance-guide.htm\">the 506(c) standard</a> \n      – which should work for all accredited deals, including ones that publicly discuss their financing.",
+        "income": {
+            "title": "Income",
+            "alt": "Valid for 1 tax year",
+            "description": "Income of $200k, or $300k with spouse, in each of past 2 years and expecting same or more this year"
+        },
+        "assets": {
+            "title": "Assets",
+            "alt": "Valid for 3 months",
+            "description": "Net worth of $1M, individually or joint with spouse, excluding your primary residence"
+        },
+        "text1": "Provide evidence of accreditation",
+        "text2": "They'll be asked to confirm that they have seen evidence of your claimed status. No documentation required.",
+        "text3": "W2, 1040, other IRS or foreign tax authority document containing salary for the past 2 years (2017 and 2018), or a letter from your lawyer, accountant, investment advisor, or investment broker",
+        "text4": "Upload a statement from a financial institution, asset appraisals, or letter from your lawyer, accountant, investment advisor or investment broker indicating net assets",
+        "investment_advisor": "Investment Adviser (SEC Registered)",
+        "broker": "Investment Broker (SEC Registered)",
+        "accountant": "Accountant (must be CPA)",
+        "lawyer": "Lawyer",
+        "ssn": "Social Security Number",
+        "accreditation_evidence_allow_credit_report": "I authorize AngelList in writing to periodically obtain my credit report for a transaction I am initiating. AngelList may use this data and share it with any issuer solely to verify my investor status in compliance with SEC requirements.",
+        "totalDebt": "Total Debt",
+        "popover1": "\n      Income Levels must be met for each tax year individually (the SEC does not allow averaging across years)<br/> <br/>If married filing jointly, either a joint income of at least $300k/year must be shown across spouses or the investing individual's W-2s must show a minimum income of $200k/year<br/> <br/>If W2's are provided for a married couple, evidence of marriage must be provided (such as joint-filed 1040)\n    ",
+        "alert": {
+            "success": "Saving Form Submitted"
+        }
+    },
+    "homeWhatwedo": {
+        "desc": "\n      <p>As pioneers of borderless banking on the blockchain, we are committed to making banking more inclusive, money more useful, and growth more accessible to anyone, anywhere in the world.</p>\n      <br />\n      <br />\n      <p>What does that look like? Fair interest rates. Inclusive loans. A state-less, stable currency that you can save, borrow, and spend. Transactions secured and carried out collectively by users of the network. A bank for the people, made possible by the people.</p>\n      <br />\n      <br />\n      <p>Constant is proud to be 100% digital, online 24/7. So no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime. </p>\n    "
+    },
+    "faqs": {
+        "title": "Frequently Asked Questions",
+        "t1": "ACCOUNT",
+        "t2": "TRIAL DEPOSIT",
+        "t3": "SAVE",
+        "t4": "OTHER",
+        "t5": "GENERAL",
+        "question1": "Which countries can I get Constant in?",
+        "answer1": "<p>Anywhere in the world. You just need an internet connection.</p>",
+        "question2": "Where can I get Constant?",
+        "answer2": "<p>Anywhere in the world. You just need an internet connection.</p>",
+        "question3": "Is Constant insured? What if you get hacked, or I can’t convert to USD, or my Constant is stolen?",
+        "answer3": "\n    <p>The US dollars put in escrow are FDIC (Federal Deposit Insurance Corporation) insured. Each account is insured up to $1305,000,000 by the independent trust company’s financial institution bond.</p>\n    <br />\n    <p>Blockchain technology is very difficult to hack, but even if it happens, we can trace the transaction before the hack to see what happened thanks to the immutable blockchain ledger. So, you will get your USD</p>\n    ",
+        "question4": "Can I see how many Constant are in circulation?",
+        "answer4": "\n    <p>The US dollars put in escrow are FDIC (Federal Deposit Insurance Corporation) insured. Each account is insured up to $1305,000,000 by the independent trust company’s financial institution bond.</p>\n    <br />\n    <p>Blockchain technology is very difficult to hack, but even if it happens, we can trace the transaction before the hack to see what happened thanks to the immutable blockchain ledger. So, you will get your USD</p>\n    ",
+        "question5": "Is Constant insured? What if you get hacked, or I can’t convert to USD, or my Constant is stolen?",
+        "answer5": "\n    <p>The US dollars put in escrow are FDIC (Federal Deposit Insurance Corporation) insured. Each account is insured up to $1305,000,000 by the independent trust company’s financial institution bond.</p>\n    <br />\n    <p>Blockchain technology is very difficult to hack, but even if it happens, we can trace the transaction before the hack to see what happened thanks to the immutable blockchain ledger. So, you will get your USD</p>\n    ",
+        "question6": "Can I see how many Constant are in circulation? Can I check the integrity of the",
+        "answer6": "\n      <p>The US dollars put in escrow are FDIC (Federal Deposit Insurance Corporation) insured. Each account is insured up to $1305,000,000 by the independent trust company’s financial institution bond.</p>\n      <br />\n      <p>Blockchain technology is very difficult to hack, but even if it happens, we can trace the transaction before the hack to see what happened thanks to the immutable blockchain ledger. So, you will get your USD</p>\n    ",
+        "length": "6",
+        "account": {
+            "question1": "Can I open a Constant account in my country?",
+            "answer1": "Anyone can open a Constant account, no matter where you live. All you need is an internet connection.",
+            "question2": "How do I open a Constant account?",
+            "answer2": "Simply register with an email address and password to get started. To withdraw, transfer, and otherwise get the full use out of your account, you’ll need to verify your ID, which shouldn’t take more than a few minutes.",
+            "question3": "Do I need a minimum deposit?",
+            "answer3": "No, you can deposit any amount you want. Better yet, once you’ve opened your account, we’ll give you a trial deposit of $1,000 so you can start earning interest immediately. The deposit is returned to us at the end of your term (sorry!), but you keep the interest. Not bad, right?",
+            "question4": "Do you need to verify my identity?",
+            "answer4": "You can open a Constant account without verifying your identity. However, to withdraw your savings (and any earned interest) to a bank account, we will need to verify your identity. We do this to protect you from fraud and to comply with financial regulations.",
+            "question5": "How do I reset my password?",
+            "answer5": "Go to the Login page and click “Forgotten your password?”. Then enter your email address and we will send you instructions on how to reset your password. If you can’t see our email after a few minutes, please check your spam/junk folder.",
+            "question6": "Do I need to connect my bank account / bank info?",
+            "answer6": "You don't need a bank account to use Constant. However, if you withdraw Constant to USD (or local equivalent), you will need to enter the receiving bank account details. For additional security, we don't store this information for future transactions."
+        },
+        "trialDeposit": {
+            "question1": "Is the trial deposit still available?",
+            "answer1": "Yes, the trial deposit is available until further notice. We’ll keep it going for as long as we can.",
+            "question2": "Am I eligible for this promotion?",
+            "answer2": "As long as you’re a new customer and haven’t accepted a trial deposit before, you are eligible.",
+            "question3": "Can I withdraw the $1,000?",
+            "answer3": "While we’d love to give you $1,000, we can’t. So unfortunately, you can’t withdraw the trial deposit. The $1,000 will be returned to us at the end of your savings term, but you keep the interest, which is still a pretty good deal.",
+            "question4": "How can I track the interest from this program?",
+            "answer4": "Just log into your account and click Your Savings. Total interest earned is on the top right of the dashboard.",
+            "question5": "What happens at the end of my term?",
+            "answer5": "At the end of the term, we’ll pay you the interest (assuming you haven’t withdrawn it already) and the $1,000 deposit will be returned.",
+            "question6": "Can I deposit money into my trial plan?",
+            "answer6": "No, but you can add new Savings Plans whenever you like.",
+            "question7": "Can my other deposits have a different term to the trial deposit?",
+            "answer7": "Absolutely! Your trial deposit is separate to your other Savings Plans, so you can choose the amounts and terms for your other deposits."
+        },
+        "save": {
+            "question1": "What is a Constant Savings Plan?",
+            "answer1": "Our Savings Plans are simple, risk-free, and effective ways to grow your money. You choose a savings term, deposit your money, and at the end of the term you get your money back plus earned interest. It really is as simple as that.",
+            "question2": "How do Constant Savings Plans work?",
+            "answer2": "\n        <p>Under the “SAVE” tab on our website, you’ll be able to choose from several different Savings Plans. Each one is designed to maintain the value of your deposit and pay you daily interest.</p>\n        <br />\n        <p>To maintain the value of your deposit, we send your money to the Constant trust where it’s protected by US law and insured to $130,000,000. At the same time, we create a “digital dollar” called Constant and put it into your account, which keeps the value stable.</p>\n        <br />\n        <p>Over time, your Constant earns interest which you can withdraw as you earn (daily) or save until the end of your term. Either way, your savings balance is an amount in Constant you can withdraw for its 1:1 equivalent in USD.</p>\n        <br />\n        <p>Of course, you don’t have to withdraw your savings as USD. At the end of your term, we put your savings into our Anytime Savings Plan so you continue to earn interest while you decide what to do next.</p>\n        <br />\n        <p>You could send your Constant to someone else, anywhere in the world, keep it stored in your Constant current account to keep the value locked to the USD, or simply put the Constant back into another Savings Plan to earn even more interest. The choice is yours!</p>\n      ",
+            "question3": "How do you protect my savings?",
+            "answer3": "Your deposits are securely held in the Constant Vault, which is overseen by an accredited US financial institution called Prime Trust. The Constant Vault is FDIC-insured to $130,000,000. You can read more about the Constant Vault on our blog.",
+            "question4": "Which currencies do you accept?",
+            "answer4": "We accept any currency sent to our US-based Constant Vault bank account. It is then converted to USD and stored in an FDIC-insured vault.",
+            "question5": "Do you accept cryptocurrency?",
+            "answer5": "Not at this time.",
+            "question6": "Can I access my savings at any time?",
+            "answer6": "\n        <p>To give you the best interest rates, we hold on to your deposit for the duration of your savings term. Think of your savings deposit as a seed that we water and help grow. To do that, we need time, which is why we offer different Savings Plans so you can find the right one for you.</p>\n        <br />\n        <p>If you’d rather have continuous access to your savings, choose our Anytime Savings Plan – the rate is lower, but you can withdraw your money at any time.</p>\n        <br />\n      ",
+            "question7": "Why do you digitize my savings?",
+            "answer7": "\n        <p>When you deposit money for the long term, some local currencies can lose value due to inflation. This eats into your earned interest and makes saving feel like an uphill battle. We don’t think that’s fair. So instead, we convert your money into a “digital dollar” that’s 100% backed by real USD – the world’s reserve currency.</p>\n        <br />\n        <p>Our digital dollar is called Constant. Anytime you deposit or withdraw, we create or destroy Constant to ensure it’s 1:1 backed, so its value always matches the USD. That way, you never need worry about inflation and other economic pressures eating into your savings. You just sit back and watch your money grow.</p>\n        <br />\n      ",
+            "question8": "How does digitization work?",
+            "answer8": "\n        <p>First, we send your deposit to the Constant trust for safekeeping. Then, we create new Constant tokens on the Ethereum blockchain that match the USD value of your deposit. For example, if you gave us the equivalent of $100 in your local currency, we send $100 to the Constant trust and create 100 Constant.</p>\n        <br />\n        <p>Constant remains in your account for your savings term, accruing interest which you can save or withdraw daily. Then, when your term ends, you can withdraw your money from the Constant trust (and any interest) and we’ll destroy the Constant. Or, if you’d rather use the Constant tokens to send money abroad, trade on exchanges, or simply save for another term, please do!</p>\n      ",
+            "question9": "Where are my savings stored?",
+            "answer9": "Your savings are stored inside the Constant Vault, which is regulated under US law and protected by $130,000,000 FDIC insurance.",
+            "question10": "Can I add to my Savings Plan during the term?",
+            "answer10": "You can’t add to your Savings Plan once it’s started, but there’s no limit on how many Savings Plans you can have. So if you’d like to save more, simply open another Savings Plan and watch your money grow.",
+            "question11": "What is the Constant Vault?",
+            "answer11": "The Constant Vault is a publicly-audited trust overseen and managed by Prime Trust, a US accredited financial institution. The Constant Vault is regulated in the US and insured by the FDIC to the value of $130,000,000.",
+            "question12": "What is FDIC insurance?",
+            "answer12": "\n        <p>The Federal Deposit Insurance Corporation (FDIC) is a body set up by the US government to protect the integrity of the US financial system. It does this in a number of ways, including insuring deposits. Our Constant Vault is insured by FDIC to an indemnity limit of $130,000,000. You can <a target=\"_blank\" href=\"https://www.fdic.gov\">read more about the FDIC on their website.</a></p>\n      "
+        },
+        "interest": {
+            "question1": "How often do you pay interest?",
+            "answer1": "We pay interest daily, so you can either wait until the end of your term to withdraw interest or withdraw it daily. It’s up to you.",
+            "question2": "How is interest calculated?",
+            "answer2": "Your interest is calculated by applying the percentage rate of your Savings Plan to the amount of your deposit, and then dividing it by 365 to get a daily rate. Interest is not compounded, so if you deposit $500 for one year at an interest rate of 6%, you would earn $30 at the end of your term (about $0.08 per day).",
+            "question3": "How can I track interest on my savings?",
+            "answer3": "Just log into your account and click Your Savings. Total interest earned is on the top right of the dashboard.",
+            "question4": "Will you increase interest rates in the future?",
+            "answer4": "\n        <p>You never know ;-)</p>\n        <br />\n        <p>As Constant grows, we’re always looking for new ways of improving our efficiency so we can give you the best savings rates in the world.</p>\n      ",
+            "question5": "Why are your interest rates better than those offered by banks?",
+            "answer5": "\n        <p>Like other banks, we reward you with interest earnings on our risk-free loans. We can afford to give you more than banks because, one, we believe you deserve it, and two, we operate a much leaner business model.</p>\n        <br />\n        <p>We’ve replaced cashiers with code, advisors with algorithms, and run on smart contracts and electricity – we’re an efficient team and don’t need much. Maybe some snacks. Yes, please send us snacks.</p>\n      "
+        },
+        "general": {
+            "question1": "What is Constant?",
+            "answer1": "\n        <p>Constant is a simple, risk-free way to grow, send, borrow, and save money – like a bank, only better.</p>\n        <br />\n        <p>We’ve thrown out credit scoring, paperwork, and fees to give you more of what you deserve – industry-beating interest rates, risk-free loans, a stable, state-less currency, and free international transfers. Available all day, every day, anywhere in the world.</p>\n        <br />\n        <p>In short, we’ve rewired the world’s banking system to put you at the core.</p>\n      ",
+            "question2": "Is Constant a bank?",
+            "answer2": "\n        <p>No. Constant is even better.</p>\n        <br />\n        <p>We’re 100% digital and open 24-7, so no queuing at bank branches, and no bank holidays.</p>\n        <br />\n        <p>We pay interest on your savings at 60x the national average.</p>\n        <br />\n        <p>We don’t run credit checks, we don’t give you reams of paperwork to sign, and we are open to anyone, anywhere.</p>\n      ",
+            "question3": "Is Constant regulated?",
+            "answer3": "Yes. Your deposits are held securely in our trust, which is regulated under US law. That’s why we ask you to verify your identity when you withdraw savings to your bank account.",
+            "question4": "How does Constant make money?",
+            "answer4": "We charge interest on collateralized loans in order to pay our savers their earnings, and make a very slim profit from the difference.",
+            "question5": "Who are the people behind Constant?",
+            "answer5": "We’re a diverse team of engineers, economists, monetary policymakers, and industry experts. You can read all about our team on <page>.",
+            "question6": "Where is Constant based?",
+            "answer6": "Everywhere! We are a registered US entity supported by a global team with presences in the USA, Vietnam, Malta and Singapore. If you’re in our neighborhood, drop by anytime."
+        }
+    },
+    "stories": {
+        "quote1": "“I’ve never used anything like Constant before. The interest rate is high. Everything is good. Your money will be protected well and be much more profitable than traditional bank saving.",
+        "author1": "Chinaza Akachi",
+        "title1": "Manager at Autonomous",
+        "quote2": "Secure, transparent, quick and easy to use. Competitive rates.",
+        "author2": "Carlos",
+        "title2": "Manager at Autonomous",
+        "quote3": "Good interest rates, very efficient and friendly staff. It was really helpful being able to talk things through over the phone.",
+        "author3": "Veronica",
+        "title3": "Manager at Autonomous",
+        "quote4": "The website is clear and easy navigate, but it would be useful to have an app to make it quicker to check up on my account from my phone. The rates for the savings account are excellent especially if you are able to commit to a fixed time frame.",
+        "author4": "Zen Chang",
+        "title4": "Manager at Autonomous",
+        "quote5": "At first i felt a bit sceptical about trying something instead of a traditional bank, but everything has worked out smoothly so far. Clear, easy to follow set up instructions.",
+        "author5": "Kate",
+        "title5": "Manager at Autonomous",
+        "quote6": "Surprisingly painless - i set up my account and put a deposit in it in under 5 minutes.",
+        "author6": "Jerry",
+        "title6": "Manager at Autonomous"
+    },
+    "statistics": {
+        "s0": "User",
+        "s1": "Country",
+        "s2": "Saved",
+        "s3": "Earned",
+        "s4": "Borrowed",
+        "s5": "Paid"
+    },
+    "exchangeInputBuyForm": {
+        "fiatAmountInputLabel": "Deposit amount",
+        "currencyDropdownLabel": "Your currency",
+        "amountResultLabel": "According to the markets today, that is:",
+        "buyBtn": "DEPOSIT {fiatAmount} {fiatCurrency}",
+        "noAgentAvaiable": "No agent avaiable for {fiatAmount} {fiatCurrency}, please try another",
+        "getAmountFailed": "Failed while getting amount, please try again",
+        "getCurrencyListFailed": "Failed while getting supported currencies",
+        "loading": "Loading...",
+        "amountMustBeLargerThan": "Your amount must be larger than {min} {fiatCurrency}",
+        "howMuchDoYouWantToDeposit": "HOW MUCH DO YOU WANT TO DEPOSIT? "
+    },
+    "exchangeInputSellForm": {
+        "amountInputLabel": "Withdraw amount",
+        "currencyDropdownLabel": "Your currency",
+        "fiatAmountResultLabel": "According to the markets today, that is:",
+        "fee": "Fee:",
+        "sellBtn": "WITHDRAW",
+        "getAmountFailed": "Failed while getting amount, please try again",
+        "getCurrencyListFailed": "Failed while getting supported currencies",
+        "howMuchDoYouWantToWithdraw": "How much do you want to withdraw?"
+    },
+    "exchangeInputBuyTrialForm": {
+        "title": "We’re giving you {amount} to grow. You keep the interest.",
+        "submitBtn": "GET $1,000 TO GROW",
+        "btnDesc": "New customers only. This $1000 trial deposit will be returned at the end of your chosen term, but you keep all the interest.",
+        "termLabel": "CHOOSE YOUR SAVING PLAN"
+    },
+    "termSelector": {
+        "label": "Choose a fixed deposit term.",
+        "month": "months",
+        "rate": "{rate}% APR",
+        "amountText": "({amount} {currency})",
+        "anytimeTerm": "anytime",
+        "oneMonthTerm": "1 month",
+        "term": "{term} months",
+        "fiatAmountText": "{fiatAmount} {fiatCurrency}",
+        "desc": "By putting {fiatAmountText} {amountText} into {termText} fixed deposit, you’ll earn: {interestAmountText} interest per year.",
+        "item": {
+            "zero": {
+                "name": "Anytime"
+            },
+            "one": {
+                "name": "1 month"
+            },
+            "three": {
+                "name": "3 months"
+            },
+            "oneYear": {
+                "name": "12 months"
+            }
+        }
+    },
+    "saving": {
+        "trialTitle": {
+            "first": "Welcome to the",
+            "second": "world’s best",
+            "third": "savings account."
+        },
+        "normalTitle": {
+            "first": "Multiply",
+            "second": "Your savings"
+        },
+        "normalSubTitle": "Earn 60x more than other banks",
+        "makeLocalOrderSuccess": "Your order was created successfully",
+        "makeLocalOrderFailed": "Failed while creating your order",
+        "makeDirectOrderSuccess": "Your order was created successfully",
+        "makeDirectOrderFailed": "Failed while creating your order",
+        "makeTrialOrderSuccess": "Your order was created successfully",
+        "makeTrialOrderFailed": "Failed while creating your order"
+    },
+    "withdraw": {
+        "makeLocalOrderSuccess": "Your order was created successfully",
+        "makeLocalOrderFailed": "Failed while creating your order",
+        "makeDirectOrderSuccess": "Your order was created successfully",
+        "makeDirectOrderFailed": "Failed while creating your order"
     }
 }

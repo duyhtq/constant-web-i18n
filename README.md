@@ -1,0 +1,1 @@
+git submodule add -b feature/localization https://github.com/constant-money/constant-web.git frontend

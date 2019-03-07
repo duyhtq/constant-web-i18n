@@ -23,14 +23,14 @@
         },
         "local": {
             "type": {
-                "buy": "Deposit",
-                "sell": "Withdraw"
+                "buy": "Gửi tiền",
+                "sell": "Rút tiền"
             }
         }
     },
     "footer": {
-        "title1": "\n    <h3>See how much more your money can grow.</h3>\n    ",
-        "title2": "Save with Constant now",
+        "title1": "\n<h3>Hãy để đồng tiền tự sinh sôi.</h3>    ",
+        "title2": "Tiết Kiệm USD Lãi Suất Cao Tại Đây",
         "getSocial": "Mạng xã hội",
         "titleFoundation": "Thông tin",
         "titleConstant": "Mua Constant",
@@ -70,7 +70,7 @@
         "faq": "Câu hỏi thường gặp",
         "affiliate": "Liên kết",
         "wallet": "Ví",
-        "walletOrder": "Balance and Transactions",
+        "walletOrder": "Số dư và Giao dịch",
         "hello": "Chào",
         "countryLanguage": {
             "title": "Ngôn ngữ",
@@ -91,7 +91,7 @@
         "saveAndGrowMoney": "Tiết kiệm & Hưởng ưu đãi",
         "login": "Đăng nhập",
         "openAnAccount": "Đăng kí tài khoản",
-        "yourSaving": "Your Savings"
+        "yourSaving": "Khoản Tiết Kiệm"
     },
     "error": {
         "required": "Bắt buộc",
@@ -126,8 +126,8 @@
             "needToSignIn": "Bạn cần đăng nhập để hoàn tất hoạt động này",
             "not_enough_balance": "Số dư của bạn không đủ",
             "createdBankExisted": "Tài khoản ngân hàng đã được đăng ký!",
-            "trial_term_deposit_not_available": "The Constant introductory trial is only available to new users .",
-            "not_pro_saving_user": "Sorry, we can only offer services in the USA to SEC accredited investors."
+            "trial_term_deposit_not_available": "Chương trình đăng kí nhận thử 1000 Constant chỉ áp dụng cho khách hàng mới.",
+            "not_pro_saving_user": "Xin lỗi. Chúng tôi chỉ cung cấp dịch vụ này tại Mỹ cho những nhà đầu tư đã được SEC công nhận."
         }
     },
     "errorCode": {
@@ -160,22 +160,22 @@
     "me": {
         "navigation": {
             "myProfile": "Hồ sơ của tôi",
-            "kycInformation": "KYC Information",
+            "kycInformation": "Thông tin KYC",
             "myEmailPassword": "Email và mật khẩu",
-            "myInformation": "Account details",
+            "myInformation": "Thông tin tài khoản",
             "sellOrders": "Lệnh bán",
             "buyOrders": "Lệnh Mua",
-            "bookingOrders": "Sale Orders",
-            "myOrders": "Deposits and withdrawals",
-            "localHistory": "Transfers and interest earnings",
+            "bookingOrders": "Lệnh Bán",
+            "myOrders": "Gửi và rút tiền",
+            "localHistory": "Chuyển khoản và thu nhập lãi",
             "changePassword": "Đổi mật khẩu",
             "preferecens": "Tuỳ chỉnh",
             "accountLevel": "Cấp độ tài khoản",
             "history": "Lịch sử giao dịch",
-            "bankInfo": "Bank Information",
+            "bankInfo": "Thông tin ngân hàng",
             "referral": "Chương trình giới thiệu",
-            "personalInfo": "About you",
-            "myTransactions": "Account activity",
+            "personalInfo": "Cá nhân",
+            "myTransactions": "Hoạt động của tài khoản",
             "yourInvest": "Khoản đầu tư của bạn",
             "myAgent": "Đại lí của tôi",
             "yourAccreditation": "Độ tín nhiệm của bạn"
@@ -349,22 +349,22 @@
         },
         "localHistory": {
             "status": {
-                "canceled": "Cancelled",
+                "canceled": "Đã huỷ",
                 "timeout": "Hết thời gian",
                 "transferMoneyToAgent": "Chờ người mua gửi tiền",
                 "waitAgentTransferMoney": "Chờ người mua gửi tiền",
                 "transferredMoneyToAgent": "Chuyển tiền cho người bán",
-                "done": "Successful",
+                "done": "Thành công",
                 "inProgress": "Xem chi tiết"
             },
             "agent": {
                 "status": {
-                    "canceled": "Cancelled",
-                    "timeout": "Timed out",
+                    "canceled": "Đã huỷ",
+                    "timeout": "Hết thời gian",
                     "transferMoneyToAgent": "Chờ người mua gửi tiền",
                     "waitAgentTransferMoney": "Chờ người mua gửi tiền",
-                    "transferredMoneyToAgent": "Received",
-                    "done": "Successful",
+                    "transferredMoneyToAgent": "Đã nhận",
+                    "done": "Thành công",
                     "inProgress": "Đang xử lí giao dịch"
                 }
             },
@@ -383,7 +383,7 @@
         },
         "history": {
             "title": "Lịch sử giao dịch",
-            "balance": "Total balance: {balance} CONSTANT",
+            "balance": "Số dư: {balance} CONSTANT",
             "date": "Ngày",
             "transactionID": "Mã giao dịch",
             "transfer": "Chuyển khoản",
@@ -416,8 +416,8 @@
                 "0": "Mua",
                 "1": "Đổi",
                 "2": "Chuyển khoản",
-                "4": "Interest",
-                "5": "Fee",
+                "4": "Lãi suất",
+                "5": "Phí",
                 "received": "Đã nhận"
             },
             "orderStatus": {
@@ -440,8 +440,8 @@
                 }
             },
             "direction": {
-                "buy": "Deposit",
-                "sell": "Withdraw"
+                "buy": "Gửi tiền",
+                "sell": "Rút tiền"
             },
             "alert": {
                 "confirmSuccess": "Xác nhận thành công",
@@ -512,13 +512,13 @@
         "bankInfo": {
             "emptyBank": "Mua Constant",
             "getBankFailed": "Không tìm thấy ngân hàng",
-            "btnAdd": "Add a new bank",
-            "titleAddBank": "Add a new bank",
+            "btnAdd": "Thêm ngân hàng",
+            "titleAddBank": "Thêm ngân hàng",
             "titleUpdateBank": "Cập nhật thông tin ngân hàng",
             "btnSubmit": "Thêm ngân hàng",
             "btnUpdate": "Lưu",
             "btnRemove": "Xoá",
-            "title": "Bank Information",
+            "title": "Thông tin ngân hàng",
             "desc": "Vui lòng điền thông tin tài khoản ngân hàng để nhận hoa hồng hấp dẫn từ chương trình Giới thiệu khách hàng và giao dịch thanh toán nhanh hơn",
             "bankName": "Tên ngân hàng",
             "action": "Tác vụ",
@@ -587,12 +587,12 @@
                 "interest": "Lãi suất",
                 "apr": "APR",
                 "haveTimeAccount": "{term}-{termType} deposit",
-                "anyTimeAccount": "Anytime deposit",
+                "anyTimeAccount": "Gửi không kì hạn",
                 "endTerm": "Đáo hạn ngày: ",
                 "trial": "THỬ NGHIỆM",
                 "trial_description": "Đã hết kì hạn. Khách hàng được giữ phần lãi",
-                "saving_title": "Fixed Term Deposits",
-                "anyTime_saving": "Anytime Account",
+                "saving_title": "Gửi có kì hạn",
+                "anyTime_saving": "Tài khoản không kì hạn",
                 "interestInfo": {
                     "header": {
                         "title": "Bạn có muốn tăng thêm lãi suất trên tất cả các khoản tiết kiệm?"
@@ -625,13 +625,13 @@
                 "dialog": {
                     "withdrawAccount": {
                         "title": "Tiết kiệm",
-                        "body": "Want to earn better interest? Transfer your money to a fixed deposit.",
+                        "body": "Bạn muốn một mức lãi suất cao hơn? Hãy chuyển tiền của bạn vào một tài khoản có kì hạn.",
                         "termTitle": "{month} tháng{termType}({percent}%/năm)",
                         "percentReceive": "Bạn được hưởng lãi suất {percent}%/năm.",
                         "confirm": "Ok",
                         "cancel": "Huỷ",
-                        "messageConfirm": "You are about to deposit {amount} Constant.",
-                        "validateMaxAmountError": "Sorry, you don't have enough Constant to withdraw this amount.",
+                        "messageConfirm": "Bạn đang chuẩn bị nạp {amount} Constant.",
+                        "validateMaxAmountError": "Xin lỗi. Bạn không có đủ Constant để rút số tiền này.",
                         "validateMinAmountError": "Bạn không thể nhập số nhỏ hơn {amount} CONSTANT"
                     },
                     "checkTrialKyc": {
@@ -641,7 +641,7 @@
                     }
                 },
                 "alert": {
-                    "depositSavingSuccess": "You successfully deposited Constant.",
+                    "depositSavingSuccess": "Bạn đã nạp Constant thành công.",
                     "depositSavingFailed": "Gửi tiết kiệm không thành công"
                 },
                 "name": "Tên",
@@ -685,11 +685,11 @@
     "COIN_EXCHANGE_LP_FAQ_TITLE": "Câu hỏi thường gặp",
     "landing_page.label.footer": "Constant MVP là sàn giao dịch crypto được phát triển bởi Shanzhai Limited có trụ sở tại Hong Kong cung cấp dịch vụ hoàn chỉnh giúp khách hàng mua crypto số lượng lớn với giá cạnh tranh.<br />Tham gia: <a href=\"https://t.me/coin_bowl\" class=\"landing-link\">t.me/coin_bowl</a><br />Liên hệ với chúng tôi: <a href=\"mailto:hello@constant.money\" class=\"landing-link\" target=\"_top\">hello@constant.money</a>",
     "user": {
-        "kycInformation": "KYC Information",
+        "kycInformation": "Thông tin KYC",
         "logout": "Đăng Xuất",
         "history": "Lịch sử giao dịch",
         "myOrders": "Lịch sử giao dịch trực tiếp",
-        "bankInfo": "Bank Information",
+        "bankInfo": "Thông tin ngân hàng",
         "settings": "Cài đặt",
         "changeEmailPassword": "Email & Mật khẩu",
         "login": {
@@ -793,26 +793,26 @@
     },
     "home": {
         "blockTitle1": "Những chia sẻ của khách hàng",
-        "blockDesc1": "You can save better with Constant.",
+        "blockDesc1": "Tiết kiệm hiệu quả hơn với Constant.",
         "blockTitle2": "Cơ chế hoạt động",
         "blockCap2": "Hưởng lãi suất cao hơn 60 lần so với các ngân hàng khác.",
-        "blockDesc2": "\n      <h5>Like traditional banks, we reward you with interest earnings on our collateralized loans. Unlike traditional banks, we give you most of it - since it’s your money, really.</h5>\n      <br />\n      <h5>And because we replaced cashiers with code, advisors with algorithms, and switched out bricks and mortar for the blockchain - we can pass the savings directly on to you.</h5>\n    ",
-        "blockTitle3": "What we do",
+        "blockDesc2": "\n<h5>Constant chia lãi cho các khoản tiết kiệm dựa trên kết quả đầu tư theo nghiệp vụ ngân hàng. Tuy nhiên, chúng tôi ưu việt hơn: Constant trao phần lớn lãi cho người dùng. Bạn xứng đáng nhận được lãi nhiều hơn từ khoản tích lũy vất vả của mình.</h5>\n<br />\n<h5> Chúng tôi thay nhân sự bằng công nghệ, thay nhà đầu tư bằng thuật toán để vận hành tinh gọn hơn, thông minh hơn và trao cho bạn nhiều lợi ích hơn.</h5>    ",
+        "blockTitle3": "Sứ mệnh của Constant",
         "blockCap3": "Chúng tôi mong muốn xây dựng thành công một hệ thống tài chính công bằng và tự do hơn.",
-        "titleBlock4": "Here’s why you should save with Constant.",
-        "titleCap4": "How people are using Constant as their primary saving",
+        "titleBlock4": "Những lí do mà bạn nên tiết kiệm với Constant.",
+        "titleCap4": "Constant đang là giải pháp tiết kiệm chủ yếu của nhiều khách hàng",
         "titleDesc4": "\n      <p></p>\n      <p></p>\n    ",
         "optionText": "hoặc",
         "howItWorks": {
             "step1": "BƯỚC 1",
             "title1": "GỬI TIỀN TIẾT KIỆM",
-            "desc1": "Deposit any amount in your currency of choice and choose a term that feels good. No minimum deposit, no fees.",
+            "desc1": "Gửi số tiền mà bạn mong muốn tiết kiệm. Chọn kì hạn phù hợp với kế hoạch cá nhân. Không yêu cầu số tiền gửi tối thiểu. Hoàn toàn miễn phí.",
             "step2": "BƯỚC 2",
-            "title2": "DIGITIZE YOUR MONEY",
-            "desc2": "We convert your local currency to a digital dollar called Constant, fully backed by USD and stored in an FDIC insured vault.",
+            "title2": "SỐ HOÁ KHOẢN TIẾT KIỆM",
+            "desc2": "Khoản tiết kiệm của bạn sẽ được số hoá thành Constant. Constant có giá trị bằng với USD và được bảo hộ bởi FDIC.",
             "step3": "BƯỚC 3",
             "title3": "NHẬN LÃI SUẤT",
-            "desc3": "Interest is paid out everyday. You can withdraw anytime, to any bank account. What are you saving for?"
+            "desc3": "Lãi được trả hàng ngày và bạn có thể rút lãi về tài khoản ngân hàng bất cứ lúc nào. Tiêu dùng hay tái đầu tư, lựa chọn nằm ở bạn."
         },
         "buy": {
             "title": "Mua",
@@ -997,7 +997,7 @@
             "subintroDesc4": "Constant được chuyển ngay lập tức từ tài khoản của bạn tới bất cứ ai trên toàn thế giới.",
             "backToNewOrder": "Đặt lệnh mới",
             "goHistory": "Tới Lịch sử giao dịch",
-            "confirmOrderFailed": "Failed while confirm your order, please try again",
+            "confirmOrderFailed": "Xác nhận lệnh không thành công. Xin vui lòng thử lại.",
             "components": {
                 "sellInfoInput": {
                     "continueBtn": "Tiếp tục",
@@ -1175,25 +1175,25 @@
         "midBanner0": "Chống mất giá",
         "midBanner1": "Chuyển khoản tới bất kì đâu",
         "midBanner2": "Hoàn toàn miễn phí",
-        "whatCaption0": "Earn 60x more",
-        "whatCaption1": "Insured up to $250k",
-        "whatCaption2": " Flexible terms",
-        "whatCaption3": "Available worldwide",
+        "whatCaption0": "Lãi suất gấp 60 lần",
+        "whatCaption1": "Bảo hiểm giá trị $250k",
+        "whatCaption2": " Kì hạn linh động",
+        "whatCaption3": "Dễ dàng truy cập",
         "whatTitle": "Các tiện ích của Constant",
         "whatTitle0": "Tiết kiệm bằng USD",
         "whatTitle1": "Lên tới 130 triệu USD",
         "whatTextLink1": "Đọc đầy đủ",
         "whatLink1": "/chính sách bảo mật",
-        "whatDesc1": "Enjoy peace of mind. Your account is insured up to $250,000 by the FDIC and US treasury. You’re saving with a chartered, regulated, US financial institution, subject to frequent audits.",
+        "whatDesc1": "Hoàn toàn không có rủi ro. Tài khoản của bạn được bảo hiểm lên tới $250,000 bởi FDIC và Ngân khố Hoa Kỳ. Khoản tiết kiệm của bạn được đảm bảo bởi một tổ chức giám định tài chính độc lập có uy tín của Hoa Kỳ.",
         "whatTitle2": "Bởi Chính phủ Hoa Kì",
         "whatTitle3": "Không yêu cầu số tiền tối thiểu",
-        "whatDesc0": "Get your money to work for you. Earn up to 60x more than with your average savings account, and multiply your savings without lifting a finger. Free your money from stagnant bank accounts.",
-        "whatDesc2": "Prefer to stay flexible? Choose the Anytime plan and enjoy 1% APR.  Want a higher interest rate?  Choose one of our fixed deposit plans. No minimum deposit, no limits, no fees.",
-        "whatDesc3": "Constant is accessible to anyone with an internet connection. Open an account in 15 seconds, no matter where you live, or how much you have.",
-        "whatMore0": "How we can offer 60x",
-        "whatMore1": "How we protect your money",
-        "whatMore2": "How to pick a plan that’s right for you",
-        "whatMore3": "How people are saving with Constant",
+        "whatDesc0": "Hãy để cho đồng tiền tự sinh sôi. Lãi suất cao hơn nhiều lần so với mặt bằng chung của các ngân hàng, Constat giúp khoản tiết kiệm của khách hàng nảy nở nhanh hơn mà không tốn công sức.",
+        "whatDesc2": "Muốn sự linh động, chọn gửi tiết kiệm không kì hạn để nhận lãi suất 1%/năm. Muốn lãi suất cao, chọn một kì hạn phù hợp với kế hoạch của bạn. Không yêu cầu số tiền gửi tối thiểu, không giới hạn, không tốn phí.",
+        "whatDesc3": "Chỉ cần có kết nối Internet, ai cũng có thể sử dụng dịch vụ của Constant. Dù bạn ở bất cứ đâu, đều không tốn đến 15 giây để mở tài khoản. Dù bạn có bao nhiêu tiền, đều có thể gửi tiết kiệm với Constant.",
+        "whatMore0": "Tại sao Constant có lãi suất cao đến vậy?",
+        "whatMore1": "Constant bảo vệ tiền của bạn như thế nào?",
+        "whatMore2": "Làm thế nào để chọn kì hạn tiết kiệm phù hợp?",
+        "whatMore3": "Mọi người đang sử dụng Constant để tiết kiệm như thế nào?",
         "whatButton": "Cách hoạt động",
         "helpTitle": "Ưu đãi cho sinh viên Hoa Kỳ",
         "helpButton": "Đăng ký ngay",
@@ -1354,7 +1354,7 @@
         "t1": "TÀI KHOẢN",
         "t2": "KHOẢN TIỀN GỬI THỬ NGHIỆM",
         "t3": "TIẾT KIỆM",
-        "t4": "INTEREST",
+        "t4": "LÃI SUẤT",
         "t5": "KHÁI QUÁT CHUNG",
         "question1": "Constant có thể được mua ở những quốc gia nào?",
         "answer1": "<p>Ở bất cứ đâu trên thế giới. Bạn chỉ cần có kết nối Internet là đủ.</p>",
@@ -1453,19 +1453,19 @@
         }
     },
     "stories": {
-        "quote0": "I’ve never used anything like Constant before. The interest rate is high. Everything is good. Your money will be protected well and be much more profitable than traditional bank saving.",
-        "author0": "Chinaza Akachi",
-        "title0": "Manager at Autonomous",
-        "quote1": "Great user experience. It's always fun watching my interest grow, and super convenient that I can withdraw it anytime. A nice zero-risk companion to your other investments, and a decent enough investment in itself.",
-        "author1": "Carlos",
+        "quote0": "Trải nghiệm tại Constant thật tuyệt vời. Thật bất ngờ khi tôi có thể theo dõi được tiền tiết kiệm của mình tăng lên mỗi ngày như thế nào và đặc biệt có thể rút tiền ngay. Đây là một kênh rất đáng để đầu tư!",
+        "author0": "Thảo Phạm",
+        "title0": "Quản Lý Nhân Sự tại Autonomous",
+        "quote1": "Nhân viên tư vấn rất nhiệt tình, hỗ trợ tôi gần như lập tức mỗi khi tôi cần. Nhờ vậy mà việc gửi tiền của tôi thật nhanh chóng và tiện lợi.",
+        "author1": "Minh Vương",
         "title1": "Father of three, saving for his children's college tuition.",
-        "quote2": "Can't rate the Constant support staff highly enough. They walked me through making my first deposit - which was much easier than expected.",
+        "quote2": "Ngoài lãi suất hấp dẫn hơn hẳn, đây còn là một sản phẩm đột phá về mặt công nghệ so với các ngân hàng. Các ngân hàng nên xem chừng những đối thủ như Constant!",
         "author2": "Justin",
         "title2": "Mechanic, saving to take his wife away on her dream holiday to Thailand.",
-        "quote3": "Very promising service. It's cool that my friends in different countries can all get accounts easily, and that you can transfer Constant between them for free - this is the first service we've found that's actually global.",
+        "quote3": "Một điểm cộng lớn của Constant là không giới hạn khoản tiền gửi tiết kiệm tối thiểu và mức lãi suất cực kỳ hấp dẫn. Vì vậy tại sao tôi lại phải giữ tiền trong người mà không gửi nó với Constant chứ?",
         "author3": "Veronica",
         "title3": "Graphic Designer, saving for a deposit to buy her first apartment.",
-        "quote4": "Apart from the bank beating interest rates, this is an incredibly interesting project from a technology standpoint. Banks need to up their game.",
+        "quote4": "Tôi đăng ký mở tài khoản và gửi tiền vào Constant chỉ mất chưa đầy 5 phút. Đây là một kênh đầu tư đáng để cân nhắc!",
         "author4": "Zen Chang",
         "title4": "Engineer, saving for a new car to take his family on roadtrips.",
         "quote5": "Love that there's no minimum deposit required so anyone can benefit from their rates. Feel much safer keeping the tips I make with Constant instead of in a box under my bed!",
@@ -1476,12 +1476,12 @@
         "title6": "Nurse, saving for his wedding."
     },
     "statistics": {
-        "s0": "Users",
-        "s1": "Countries",
+        "s0": "Người Sử Dụng",
+        "s1": "Quốc Gia",
         "s2": "Đã lưu",
         "s3": "Đã kiếm được",
         "s4": "Đã vay",
-        "s5": "Repaid"
+        "s5": "Trả Lại"
     },
     "exchangeInputBuyForm": {
         "fiatAmountInputLabel": "Số tiền gửi",
@@ -1506,13 +1506,13 @@
         "howMuchDoYouWantToWithdraw": "Bạn muốn rút bao nhiêu tiền?"
     },
     "exchangeInputBuyTrialForm": {
-        "title": "\n      <p class=\"textCenter reset\">Simply select your Savings Plan and start earning up to <strong class=\"orangeLight\">60x more</strong> than traditional savings accounts and fixed deposits.</p>\n    ",
-        "highlightText": "you keep all the interest.",
-        "trialLeft": "{number} trials left.",
-        "noMoreTrialLeft": "No more trial left.",
+        "title": "\n<p class=\"textCenter reset\">Chỉ cần chọn kì hạn tiết kiệm thích hợp và bạn có thể thu lợi nhiều hơn <strong class=\"orangeLight\">60 lần</strong>so với ngân hàng.</p>    ",
+        "highlightText": "bạn giữ toàn bộ phần lãi.",
+        "trialLeft": "Chỉ còn {number} lần trải nghiệm dịch vụ miễn phí.",
+        "noMoreTrialLeft": "Không còn trải nghiệm dịch vụ miễn phí.",
         "submitBtn": "NHẬN $1,000",
         "btnDesc": "Chỉ dành cho những khách hàng mới. $1000 này sẽ được trả lại cho Constant khi đáo hạn nhưng bạn sẽ được giữ toàn bộ phần lãi.",
-        "termLabel": "CHOOSE YOUR SAVINGS PLAN"
+        "termLabel": "CHỌN KÌ HẠN TIẾT KIỆM"
     },
     "termSelector": {
         "label": "Chọn kì hạn cố định.",
@@ -1524,7 +1524,7 @@
         "oneMonthTerm": "1 tháng",
         "term": "{term} tháng",
         "fiatAmountText": "{fiatAmount} {fiatCurrency}",
-        "desc": "By putting {fiatAmountText} {amountText} into a {termText} fixed deposit, you’ll earn: {interestAmountText} interest per year.",
+        "desc": "Khi gửi {fiatAmountText}{amountText} với kì hạn {termText}, bạn sẽ kiếm được: {interestAmountText} lãi mỗi năm.",
         "item": {
             "zero": {
                 "name": "Không kì hạn"
@@ -1541,18 +1541,18 @@
         }
     },
     "saving": {
-        "trialLeftNum": "ONLY {trialLeft} TRIAL LEFT",
+        "trialLeftNum": "CHỈ CÒN {trialLeft} LẦN THỬ NGHIỆM MIỄN PHÍ",
         "trialTitle": {
-            "first": "We’re giving you a ",
-            "second": "$1,000 Free Trial ",
-            "third": "Deposit."
+            "first": "Chúng tôi tặng bạn ",
+            "second": "$1,000 để trải nghiệm dịch vụ ",
+            "third": "Gửi tiền."
         },
         "normalTitle": {
             "first": "Nhân lên nhiều lần",
-            "second": "Your savings."
+            "second": "Khoản tiết kiệm của bạn."
         },
-        "normalSubTitle": "Earn 60x more than other banks.",
-        "normalSubTitle1": "Be smarter with your money.",
+        "normalSubTitle": "Lãi suất cao hơn 60 lần so với các ngân hàng khác.",
+        "normalSubTitle1": "Hãy sử dụng đồng tiền một cách thông minh.",
         "makeLocalOrderSuccess": "Lệnh của bạn được tạo thành công",
         "makeLocalOrderFailed": "Lệnh của bạn không được tạo thành công",
         "makeDirectOrderSuccess": "Lệnh của bạn được tạo thành công",

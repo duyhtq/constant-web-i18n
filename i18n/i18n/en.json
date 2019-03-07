@@ -91,7 +91,7 @@
         "saveAndGrowMoney": "Save & Grow money",
         "login": "Login",
         "openAnAccount": "Open an account",
-        "yourSaving": "Your Savings"
+        "yourSaving": "My Savings"
     },
     "error": {
         "required": "Required",
@@ -160,7 +160,7 @@
     "me": {
         "navigation": {
             "myProfile": "My Profile",
-            "kycInformation": "KYC Information",
+            "kycInformation": "KYC information",
             "myEmailPassword": "Email and password",
             "myInformation": "Account details",
             "sellOrders": "Sell Orders",
@@ -172,7 +172,7 @@
             "preferecens": "Preferences",
             "accountLevel": "Account Level",
             "history": "My orders",
-            "bankInfo": "Bank Information",
+            "bankInfo": "Bank information",
             "referral": "Give $5 Get $5",
             "personalInfo": "About you",
             "myTransactions": "Account activity",
@@ -332,8 +332,8 @@
                 "success": "Your alias has been changed.",
                 "failed": "Sorry, something went wrong. Please try again."
             },
-            "emailNotVerified": "Your email is not verified.",
-            "verifyBtn": "Resend"
+            "emailNotVerified": "Please verify your email.",
+            "verifyBtn": "Resend verification"
         },
         "changePassword": {
             "newPasswordIsRequired": "New password is required",
@@ -621,7 +621,7 @@
                 },
                 "withdraw": "Withdraw",
                 "transfer": "Transfer",
-                "saving": "Save",
+                "saving": "Save now",
                 "dialog": {
                     "withdrawAccount": {
                         "title": "Saving",
@@ -631,7 +631,7 @@
                         "confirm": "Ok",
                         "cancel": "Cancel",
                         "messageConfirm": "You are about to deposit {amount} Constant.",
-                        "validateMaxAmountError": "Sorry, you don't have enough Constant to withdraw this amount.",
+                        "validateMaxAmountError": "Sorry, you don't have enough Constant to deposit this amount.",
                         "validateMinAmountError": "Please deposit an amount larger than {amount} CONSTANT."
                     },
                     "checkTrialKyc": {
@@ -693,7 +693,8 @@
         "settings": "Settings",
         "changeEmailPassword": "Email & Password",
         "login": {
-            "title": "Sign in to Constant",
+            "popupTitle": "Welcome to Constant.",
+            "title": "Login to your account",
             "username": "Your email",
             "password": "Password",
             "loginButton": "Sign in",
@@ -754,7 +755,7 @@
             "agreement": "I certify that I am 18 years of age or older, and I agree to the {action}",
             "requiredAgreement": "Please indicate that you have read and agree to the User Agreement and Privacy Policy",
             "registerButton": "Create account",
-            "loginButton": "Already have an account?",
+            "loginButton": "Already have an account? Login",
             "registerSuccessfully": "Success! Welcome to Constant. We’ve sent a verification email to your inbox.",
             "agreementAction": "User Agreement and Privacy Policy.",
             "registerFailed": "Sorry, something went wrong. Please try again."
@@ -805,14 +806,14 @@
         "optionText": "or",
         "howItWorks": {
             "step1": "STEP 1",
-            "title1": "MAKE A DEPOSIT",
-            "desc1": "Deposit any amount in your currency of choice and choose a term that feels good. No minimum deposit, no fees.",
+            "title1": "YOU MAKE A DEPOSIT",
+            "desc1": "Make a bank transfer of any amount to the FDIC insured Constant Vault.",
             "step2": "STEP 2",
-            "title2": "DIGITIZE YOUR MONEY",
-            "desc2": "We convert your local currency to a digital dollar called Constant, fully backed by USD and stored in an FDIC insured vault.",
+            "title2": "WE DIGITIZE YOUR MONEY",
+            "desc2": "Every dollar you have in the Vault is now represented by a digital dollar called Constant in your Savings account.",
             "step3": "STEP 3",
-            "title3": "START EARNING INTEREST",
-            "desc3": "Interest is paid out everyday. You can withdraw anytime, to any bank account. What are you saving for?"
+            "title3": "YOUR SAVINGS MULTIPLY",
+            "desc3": "Interest is paid out daily. You can withdraw Constant to any bank account and get local currency."
         },
         "buy": {
             "title": "Buy",
@@ -1175,7 +1176,7 @@
         "midBanner0": "Protect the value of your money",
         "midBanner1": "Send money anywhere, for free",
         "midBanner2": "Secure and grow your money",
-        "whatCaption0": "Earn 60x more",
+        "whatCaption0": "Earn 60x more in USD",
         "whatCaption1": "Insured up to $250k",
         "whatCaption2": " Flexible terms",
         "whatCaption3": "Available worldwide",
@@ -1184,12 +1185,12 @@
         "whatTitle1": "Up to $130M",
         "whatTextLink1": "Read the full policy",
         "whatLink1": "/privacy-policy",
-        "whatDesc1": "Enjoy peace of mind. Your account is insured up to $250,000 by the FDIC and US treasury. You’re saving with a chartered, regulated, US financial institution, subject to frequent audits.",
+        "whatDesc1": "<p>Your account is insured up to $250,000 by the FDIC and US treasury. Constant is an SEC compliant US company. Enjoy peace of mind.</p>",
         "whatTitle2": "By the US Government",
         "whatTitle3": "No minimum deposit",
-        "whatDesc0": "Get your money to work for you. Earn up to 60x more than with your average savings account, and multiply your savings without lifting a finger. Free your money from stagnant bank accounts.",
-        "whatDesc2": "Prefer to stay flexible? Choose the Anytime plan and enjoy 1% APR.  Want a higher interest rate?  Choose one of our fixed deposit plans. No minimum deposit, no limits, no fees.",
-        "whatDesc3": "Constant is accessible to anyone with an internet connection. Open an account in 15 seconds, no matter where you live, or how much you have.",
+        "whatDesc0": "<p>Earn up to 60x more than with your average USD savings account, and multiply your savings without lifting a finger.</p>",
+        "whatDesc2": "<p>No minimum deposit, no fees. Withdraw anytime with the Anytime Account, or choose one of our fixed deposits to earn up to 6% APR.</p>",
+        "whatDesc3": "<p>Constant is accessible to anyone with an internet connection. Open an account in 15 seconds, anywhere in the world.</p>",
         "whatMore0": "How we can offer 60x",
         "whatMore1": "How we protect your money",
         "whatMore2": "How to pick a plan that’s right for you",
@@ -1498,19 +1499,21 @@
     "exchangeInputSellForm": {
         "amountInputLabel": "Withdraw amount",
         "currencyDropdownLabel": "Your currency",
-        "fiatAmountResultLabel": "According to the markets today, that is:",
-        "fee": "Fee:",
+        "fiatAmountResultLabel": "According to the markets today, you’ll receive: {fiatAmount} {fiatCurrency}",
+        "fee": "withdrawal fee: {fee} {currency}",
         "sellBtn": "WITHDRAW",
         "getAmountFailed": "Failed while getting amount, please try again",
         "getCurrencyListFailed": "Failed while getting supported currencies",
-        "howMuchDoYouWantToWithdraw": "How much do you want to withdraw?"
+        "howMuchDoYouWantToWithdraw": "How much do you want to withdraw?",
+        "yourAnytimeBalance": "Your Anytime Balance: {balance} {currency}",
+        "whichCurrencyYouWant": "Which currency do you want to receive?"
     },
     "exchangeInputBuyTrialForm": {
-        "title": "\n      <p class=\"textCenter reset\">Simply select your Savings Plan and start earning up to <strong class=\"orangeLight\">60x more</strong> than traditional savings accounts and fixed deposits.</p>\n    ",
+        "title": "\n      <p class=\"textCenter reset\">Choose a Savings Plan. See for yourself how it feels to earn <strong class=\"orangeLight\">60x more</strong> interest.</p>\n    ",
         "highlightText": "you keep all the interest.",
         "trialLeft": "{number} trials left.",
         "noMoreTrialLeft": "No more trial left.",
-        "submitBtn": "GET $1,000 TO GROW",
+        "submitBtn": "START YOUR FREE TRIAL",
         "btnDesc": "New customers only. This $1000 trial deposit will be returned at the end of your chosen term, but you keep all the interest.",
         "termLabel": "CHOOSE YOUR SAVINGS PLAN"
     },
@@ -1524,7 +1527,10 @@
         "oneMonthTerm": "1 month",
         "term": "{term} months",
         "fiatAmountText": "{fiatAmount} {fiatCurrency}",
-        "desc": "By putting {fiatAmountText} {amountText} into a {termText} fixed deposit, you’ll earn: {interestAmountText} interest per year.",
+        "desc": "You’ll earn: {interestAmountText} interest after 1 year.",
+        "desc1": "You’ll earn: {interestAmountText} interest after {time}.",
+        "desc2": "The trial $1000 expires, but the interest is yours to keep.",
+        "trialExpires": "The $1000 trial expires, but the interest is yours to keep.",
         "item": {
             "zero": {
                 "name": "Anytime"
@@ -1541,12 +1547,13 @@
         }
     },
     "saving": {
-        "trialLeftNum": "ONLY {trialLeft} TRIAL LEFT",
+        "trialLeftNum": "ONLY {trialLeft} TRIALS LEFT",
         "trialTitle": {
-            "first": "We’re giving you a ",
-            "second": "$1,000 Free Trial ",
-            "third": "Deposit."
+            "first": "Welcome to the world’s best savings account.",
+            "second": "",
+            "third": ""
         },
+        "trialDesc": "\n      <h5 style=\"color: white; margin-top: 50px; padding-right: 63px;line-height: 36px;\">\n        We’re giving you a <strong class=\"orangeThin\">$1000 free trial</strong> deposit. At the end of the trial, <strong class=\"orangeThin\">you keep all the interest</strong>.\n      </h5>\n    ",
         "normalTitle": {
             "first": "Multiply",
             "second": "Your savings."
@@ -1565,5 +1572,8 @@
         "makeLocalOrderFailed": "Failed while creating your order",
         "makeDirectOrderSuccess": "Your order was created successfully",
         "makeDirectOrderFailed": "Failed while creating your order"
+    },
+    "yourSaving": {
+        "hello": "\n      <h5>Hello <strong>{name}</strong>. Let's see how your money is doing today.</h5>\n    "
     }
 }

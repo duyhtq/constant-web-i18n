@@ -23,14 +23,14 @@
         },
         "local": {
             "type": {
-                "buy": "Buy",
-                "sell": "Sell"
+                "buy": "Deposit",
+                "sell": "Withdraw"
             }
         }
     },
     "footer": {
-        "title1": "\n    <h3>Grow your money safely, secured\n    and <small>multiply your interest</small></h3>\n    ",
-        "title2": "START TRADING NOW",
+        "title1": "\n    <h3>See how much more your money can grow.</h3>\n    ",
+        "title2": "Save with Constant now",
         "getSocial": "Social Media",
         "titleFoundation": "Foundation",
         "titleConstant": "Buy Constant",
@@ -70,7 +70,7 @@
         "faq": "FAQs",
         "affiliate": "Affiliate",
         "wallet": "Wallet",
-        "walletOrder": "My Wallet & Orders",
+        "walletOrder": "Balance and Transactions",
         "hello": "Hello",
         "countryLanguage": {
             "title": "Your language",
@@ -91,7 +91,7 @@
         "saveAndGrowMoney": "Save & Grow money",
         "login": "Login",
         "openAnAccount": "Open an account",
-        "yourSaving": "Your Saving"
+        "yourSaving": "Your Savings"
     },
     "error": {
         "required": "Required",
@@ -119,69 +119,69 @@
             "registerPasswordNotMatch": "Please make sure your password matches your email address.",
             "notKycUser": "Please complete the KYC process to buy direct from the network.",
             "transferUserNotFound": "Please enter a valid wallet address.",
-            "userInfoInvalidKycPreValidate": "We could not verify you with the information you uploaded. Please try again.",
+            "userInfoInvalidKycPreValidate": "We could not verify your identity using the information you uploaded. Please try again.",
             "cannotTransferToYourSelf": "Please enter a recipient other than yourself.",
             "invalidUserType": "Oops we can't find you. Please enter your email address again.",
             "emailDoesntExist": "Oops we can't find you. Please enter your email address again.",
-            "needToSignIn": "You need to sign in to complete this process",
-            "not_enough_balance": "Your balance is not enough",
-            "createdBankExisted": "Bank account has existed already!",
-            "trial_term_deposit_not_available": "Your account can not use trial term! Only avaiable for new user.",
-            "not_pro_saving_user": "Not pro saving user."
+            "needToSignIn": "Please sign in to start saving with Constant.",
+            "not_enough_balance": "Please deposit enough Constant to continue.",
+            "createdBankExisted": "You have already saved this bank account. Please try another.",
+            "trial_term_deposit_not_available": "The Constant introductory trial is only available to new users .",
+            "not_pro_saving_user": "Sorry, we can only offer services in the USA to SEC accredited investors."
         }
     },
     "errorCode": {
-        "3000": "Your Constant balance is not enough to create this order",
+        "3000": "Please deposit enough Constant to continue.",
         "3001": "Cannot cancel this order id",
         "3002": "Type should be sell/Buy",
         "3003": "Cannot find exchange rate",
         "3004": "Your Constant must be less or equal 2000",
-        "3005": "Your price must be large than 0",
+        "3005": "Please enter a price larger than 0.",
         "3006": "Your price doesn't match with your list",
         "3007": "Please double check status of your order",
         "3008": "Please double check order type",
         "3009": "You are not owner of this order id",
-        "3010": "You cannot Buy/Sell with yourself",
+        "3010": "Sorry, you can't buy from yourself. / Sorry, you can't sell to yourself.",
         "3011": "Please check your Constant",
-        "3012": "Please check your bank account name",
-        "3013": "Please check your bank account number",
-        "3014": "Please check your routing number or swift code",
-        "3015": "Please check your bank number",
+        "3012": "Please enter a the name of an existing bank.",
+        "3013": "Please enter a valid bank account number.",
+        "3014": "Please enter a valid routing number or swift code.",
+        "3015": "Please enter a valid bank account number.",
         "3016": "You cannot approve this order. Please contact hello@constant.money for support",
         "3017": "You cannot finish this order. Please contact hello@constant.money for support",
         "3018": "Transaction error",
-        "3019": "There is no bank info of user",
-        "8000": "invalid request",
-        "8001": "file invalid",
-        "8002": "invalid file size",
-        "8003": "invalid file type",
-        "8004": "submit file failed"
+        "3019": "Please enter your bank account details to continue.",
+        "8000": "Sorry, something went wrong. Please try again.",
+        "8001": "Please make sure your file name comprises only letters and numbers.",
+        "8002": "Please make sure the size of your file is less than 1.2 MB.",
+        "8003": "Sorry, your file type is not supported.",
+        "8004": "Sorry, an error occurred during upload. Please try again."
     },
     "me": {
         "navigation": {
             "myProfile": "My Profile",
-            "kycInformation": "My KYC Information",
+            "kycInformation": "KYC Information",
             "myEmailPassword": "Email and password",
-            "myInformation": "My Information",
+            "myInformation": "Account details",
             "sellOrders": "Sell Orders",
             "buyOrders": "Buy Orders",
-            "bookingOrders": "Booking Orders",
-            "myOrders": "My Orders",
-            "localHistory": "My Orders",
-            "changePassword": "Change password",
+            "bookingOrders": "Sale Orders",
+            "myOrders": "Deposits and withdrawals",
+            "localHistory": "Transfers and interest earnings",
+            "changePassword": "Change my password",
             "preferecens": "Preferences",
             "accountLevel": "Account Level",
             "history": "My orders",
-            "bankInfo": "Bank Info",
+            "bankInfo": "Bank Information",
             "referral": "Give $5 Get $5",
-            "personalInfo": "Personal Info",
-            "myTransactions": "My Orders",
+            "personalInfo": "About you",
+            "myTransactions": "Account activity",
             "yourInvest": "Your Invests",
             "myAgent": "My Agent",
-            "yourAccreditation": "Your Accreditation"
+            "yourAccreditation": "Accreditation (USA only)"
         },
         "buyOrder": {
-            "title": "Buy Order Available",
+            "title": "You have a buyer.",
             "date": "Date",
             "value": "Value",
             "amount": "Amount",
@@ -233,7 +233,7 @@
             },
             "acceptFailed": {
                 "": "Picked booking order is failing, please try again, or contact my admin for help. \n Thanks! ",
-                "processing_order_exists": "There is processing order need to complete"
+                "processing_order_exists": "There is processing order need to complete."
             },
             "noData": "No sell order available",
             "confirm": {
@@ -285,11 +285,12 @@
             "yourInvest": "Your Invests"
         },
         "personalProfile": {
-            "title": "Personal Detail",
+            "title": "About you",
             "name": "Name",
-            "userName": "Nickname",
+            "userName": "Alias",
             "optional": "Optional",
             "fullName": "Full name",
+            "email": "Email",
             "dob": "Date of birth",
             "gender": "Gender",
             "save": "Submit",
@@ -315,21 +316,21 @@
             "statusProcessing": "Your KYC information is being processed. We’ll notify you when you’re good to go.",
             "statusNeedVerifyEmail": "Please verify your email first",
             "statusPendding": "Your KYC information is invalid. Please check your email for instructions.",
-            "errorsInvalidKYC": "User info is invalid for KYC pre-validate",
-            "errorsMissParramKYC": "User info is not enough to verify KYC",
-            "saveSuccess": "Your profile was updated successfully",
-            "saveFailed": "Failed while updating your profile, please try again",
+            "errorsInvalidKYC": "Sorry, the information you provided is not valid. Please try again.",
+            "errorsMissParramKYC": "Please provide sufficient information to verify your ID.",
+            "saveSuccess": "Your profile has been updated.",
+            "saveFailed": "Sorry, something went wrong. Please try again.",
             "addressInfo": "Your address and ID information should match the information in the uploaded image."
         },
         "accountInfo": {
             "title": "Your account details",
             "email": "Email",
-            "nickname": "Nickname",
+            "nickname": "Alias",
             "nickname_note": "This name will be shown in your preview",
             "alert": {
-                "passwordFailed": "Update Password Failed",
-                "success": "Your nickname was changed successfully",
-                "failed": "Failed"
+                "passwordFailed": "Sorry, something went wrong. Please try again.",
+                "success": "Your alias has been changed.",
+                "failed": "Sorry, something went wrong. Please try again."
             },
             "emailNotVerified": "Your email is not verified.",
             "verifyBtn": "Resend"
@@ -348,22 +349,22 @@
         },
         "localHistory": {
             "status": {
-                "canceled": "Order cancelled",
+                "canceled": "Cancelled",
                 "timeout": "Order timed out",
                 "transferMoneyToAgent": "Waiting for buyer to send money",
                 "waitAgentTransferMoney": "Waiting for seller to send money",
                 "transferredMoneyToAgent": "Transfer money to Seller",
-                "done": "Order complete",
+                "done": "Successful",
                 "inProgress": "Order in progress"
             },
             "agent": {
                 "status": {
-                    "canceled": "Order cancelled",
-                    "timeout": "Order timed out",
+                    "canceled": "Cancelled",
+                    "timeout": "Timed out",
                     "transferMoneyToAgent": "Waiting for buyer to send money",
                     "waitAgentTransferMoney": "Waiting for you to send money",
-                    "transferredMoneyToAgent": "Transfer money to Seller",
-                    "done": "Order complete",
+                    "transferredMoneyToAgent": "Received",
+                    "done": "Successful",
                     "inProgress": "Order in progress"
                 }
             },
@@ -382,7 +383,7 @@
         },
         "history": {
             "title": "My Orders",
-            "balance": "Wallet Balance: {balance} CONSTANT",
+            "balance": "Total balance: {balance} CONSTANT",
             "date": "Date",
             "transactionID": "Transaction ID",
             "transfer": "Transfer",
@@ -415,6 +416,8 @@
                 "0": "Buy",
                 "1": "Convert",
                 "2": "Transfer",
+                "4": "Interest",
+                "5": "Fee",
                 "received": "Received"
             },
             "orderStatus": {
@@ -437,8 +440,8 @@
                 }
             },
             "direction": {
-                "buy": "Buy",
-                "sell": "Convert"
+                "buy": "Deposit",
+                "sell": "Withdraw"
             },
             "alert": {
                 "confirmSuccess": "Successfully Confirmed",
@@ -509,13 +512,13 @@
         "bankInfo": {
             "emptyBank": "Get Constant here",
             "getBankFailed": "Failed while getting user list banks",
-            "btnAdd": "New Bank",
-            "titleAddBank": "Add new bank",
+            "btnAdd": "Add a new bank",
+            "titleAddBank": "Add a new bank",
             "titleUpdateBank": "Update bank",
             "btnSubmit": "Add bank",
             "btnUpdate": "Save",
             "btnRemove": "Delete",
-            "title": "Bank Info",
+            "title": "Bank Information",
             "desc": "Enter your bank account details to unlock bigger referral earnings and faster transaction times.",
             "bankName": "Bank Name",
             "action": "Action",
@@ -556,15 +559,15 @@
         "emailVerification": {
             "pleaseVerify": "Please verify your email to activate your account",
             "resent": "Resend email verification",
-            "sent": "Sent email",
+            "sent": "Email sent.",
             "sendCodeSuccess": "Please check your email inbox for the verification code.",
             "sendCodeFailed": "Your verification code got lost on the way to your inbox. Please try again.",
-            "verifyFailed": "Verify failed, please try again!",
+            "verifyFailed": "Sorry, something went wrong. Please verify your email again.",
             "verifySuccess": "Your email was verified successfully. Please complete the KYC process to buy direct from the network."
         },
         "phoneVerification": {
             "sendCodeSuccess": "Please check your sms inbox for the verification code.",
-            "sendCodeFailed": "Failed while sending verify code, please try again!",
+            "sendCodeFailed": "Sorry, something went wrong. Please resend your verification code.",
             "verifyFailed": "Verification unsuccessful. Please try again.",
             "verifySuccess": "Phone verification successful! "
         },
@@ -578,17 +581,18 @@
         "proSaving": {
             "listApplications": {
                 "totalInterestEarned": "Total interest earned",
-                "noRecord": "You have no invest",
-                "getListFailed": "Failed while getting your invests, please try again",
+                "noRecord": "No time like the present. Start saving now.",
+                "getListFailed": "Sorry, something went wrong. Please try again.",
                 "amount": "Amount",
                 "interest": "Interest",
                 "apr": "APR",
                 "haveTimeAccount": "{term}-{termType} deposit",
+                "anyTimeAccount": "Anytime deposit",
                 "endTerm": "Term ends: ",
                 "trial": "TRIAL",
-                "trial_description": "You keep the interest. Term has ended",
-                "saving_title": "Term Saving",
-                "anyTime_saving": "Anytime saving",
+                "trial_description": "Your trial term has ended.",
+                "saving_title": "Fixed Term Deposits",
+                "anyTime_saving": "Anytime Account",
                 "interestInfo": {
                     "header": {
                         "title": "Want to make more interest accross all your accounts?"
@@ -621,14 +625,14 @@
                 "dialog": {
                     "withdrawAccount": {
                         "title": "Saving",
-                        "body": "HOW MUCH DO YOU WANT TO SAVE?",
+                        "body": "Want to earn better interest? Transfer your money to a fixed deposit.",
                         "termTitle": "{month} month{termType} ({percent}% APR)",
                         "percentReceive": "You will earn {percent}% APR.",
                         "confirm": "Ok",
                         "cancel": "Cancel",
-                        "messageConfirm": "You are about to deposit Constant.",
-                        "validateMaxAmountError": "You can't input amount larger than {amount} CONSTANT",
-                        "validateMinAmountError": "You can't input amount less than {amount} CONSTANT"
+                        "messageConfirm": "You are about to deposit {amount} Constant.",
+                        "validateMaxAmountError": "Sorry, you don't have enough Constant to withdraw this amount.",
+                        "validateMinAmountError": "Please deposit an amount larger than {amount} CONSTANT."
                     },
                     "checkTrialKyc": {
                         "messageConfirm": "For your security, please verify your identity before making a withdrawal from your Anytime Account.",
@@ -637,22 +641,22 @@
                     }
                 },
                 "alert": {
-                    "depositSavingSuccess": "Successfully Deposit Saving",
-                    "depositSavingFailed": "Failed To Deposit Saving"
+                    "depositSavingSuccess": "You successfully deposited Constant.",
+                    "depositSavingFailed": "Sorry, something went wrong. Please try again."
                 },
                 "name": "Name",
                 "email": "Email",
                 "phone": "Phone",
                 "status": "Status",
                 "note": "Note",
-                "investMore": "Invest More"
+                "investMore": "Make another deposit."
             },
             "applicationDetail": {
-                "dueDays": "Due Days",
-                "interestAmount": "Interest Amount",
-                "originalAmount": "Original Amount",
+                "dueDays": "Due date",
+                "interestAmount": "Interest Earned",
+                "originalAmount": "Original Deposit",
                 "totalAmount": "Total Amount",
-                "paid": "Paid",
+                "paid": "Repaid",
                 "paidDate": "Paid Date",
                 "paidStatus": "Paid Status",
                 "payDate": "Pay Date",
@@ -681,11 +685,11 @@
     "COIN_EXCHANGE_LP_FAQ_TITLE": "Frequently Asked Questions",
     "landing_page.label.footer": "Constant MVP is an online exchange developed by Shanzhai Limited, a Hong Kong based company, offering bulk crypto purchasing at competitive prices with full delivery service.<br />Join the dojo: <a href=\"https://t.me/coin_bowl\" class=\"landing-link\">t.me/coin_bowl</a><br />Contact us: <a href=\"mailto:hello@constant.money\" class=\"landing-link\" target=\"_top\">hello@constant.money</a>",
     "user": {
-        "kycInformation": "My KYC Information",
+        "kycInformation": "KYC Information",
         "logout": "Log out",
         "history": "History",
         "myOrders": "My orders",
-        "bankInfo": "Bank Info",
+        "bankInfo": "Bank Information",
         "settings": "Settings",
         "changeEmailPassword": "Email & Password",
         "login": {
@@ -712,7 +716,7 @@
             "requiredUsername": "Email is required",
             "notValidUsername": "Invalid email address",
             "submitButton": "Submit",
-            "resetPasswordIntro": "We have sent a link to your email. Please follow the instruction to sign in with new password",
+            "resetPasswordIntro": "To reset your password, please follow the link sent to your email.",
             "newPasswordTitle": "Enter a new password for your {email} account.",
             "password": "New password",
             "requiredPassword": "Password required",
@@ -731,11 +735,11 @@
             "lastName": "Last name",
             "placeholderLastName": "Enter your last name",
             "requiredLastName": "Last name required",
-            "notValidFirstName": "First name must be greater than 3 and less than 30 characters, Allowed characters are a-z, 0-9, _, - (dash), and .(dot).",
-            "notValidLastName": "Last name must be greater than 3 and less than 30 characters, Allowed characters are a-z, 0-9, _, - (dash), and .(dot).",
+            "notValidFirstName": "First name must be greater than 3 and less than 30 characters, comprising a-z, 0-9, _, - (dash), and .(dot).\n",
+            "notValidLastName": "Last name must be greater than 3 and less than 30 characters, comprising a-z, 0-9, _, - (dash), and .(dot).\n",
             "email": "Your email",
             "requiredEmail": "Email required",
-            "notValidEmail": "Invalid email address",
+            "notValidEmail": "Please enter a valid email address.",
             "password": "Password",
             "requiredPassword": "Password required",
             "notValidPassword": "Your password must be 8 characters or more",
@@ -753,32 +757,32 @@
             "loginButton": "Already have an account?",
             "registerSuccessfully": "Success! Welcome to Constant. We’ve sent a verification email to your inbox.",
             "agreementAction": "User Agreement and Privacy Policy.",
-            "registerFailed": "Failed while creating your account, please try again"
+            "registerFailed": "Sorry, something went wrong. Please try again."
         }
     },
     "landingPage": {
         "contactUS": {
             "title": "Contact Us",
             "yourName": "Your name",
-            "requiredYourName": "Your name is required",
-            "placeholderYourName": "Enter your name",
-            "email": "Your email",
-            "placeholderYourEmail": "Enter your email",
-            "requiredEmail": "Your email is required",
-            "notValidEmail": "Invalid email address",
-            "phone": "Your phone",
+            "requiredYourName": "Please let us know your name.",
+            "placeholderYourName": "What is your name?",
+            "email": "Your email address",
+            "placeholderYourEmail": "Please enter your email address",
+            "requiredEmail": "Please enter your email to continue.",
+            "notValidEmail": "Please enter a valid email address.",
+            "phone": "Your phone number",
             "placeholderPhone": "Enter your phone number",
             "description": "Your message",
-            "placeholderDescription": "Enter your message",
+            "placeholderDescription": "Let us know what you're thinking.",
             "requiredDescription": "Your message is required",
             "contactButton": "Submit",
-            "message": "Thank you! Your message has been sent. You should receive a response from one of our representatives within 12-24 hours."
+            "message": "Thank you! Your message has been sent. You should receive a response from one of our representatives soon.\n"
         }
     },
     "review": {
         "title": "Review",
         "label": {
-            "description": "How is your experience with Constant?",
+            "description": "We'd love to hear your thoughts.",
             "required": "Please enter your comments",
             "submitButtonTitle": "Submit",
             "loadMore": "Load more",
@@ -789,23 +793,26 @@
     },
     "home": {
         "blockTitle1": "Customer stories",
-        "blockDesc1": "How people are using Constant as their primary saving",
+        "blockDesc1": "You can save better with Constant.",
         "blockTitle2": "How it works",
         "blockCap2": "Enjoy an interest rate 60x the national average.",
-        "blockDesc2": "Like other banks, we reward you with interest earnings on our risk-free loans. Unlike other banks, we give you most of it - since it’s your money, really. And because we replaced cashiers with code, advisors with algorithms, and run on smart contracts and electricity - we don’t need much.",
-        "blockTitle3": "What we do in Constant?",
+        "blockDesc2": "\n      <h5>Like traditional banks, we reward you with interest earnings on our collateralized loans. Unlike traditional banks, we give you most of it - since it’s your money, really.</h5>\n      <br />\n      <h5>And because we replaced cashiers with code, advisors with algorithms, and switched out bricks and mortar for the blockchain - we can pass the savings directly on to you.</h5>\n    ",
+        "blockTitle3": "What we do",
         "blockCap3": "We’re building a fairer, freer, financial system.",
+        "titleBlock4": "Here’s why you should save with Constant.",
+        "titleCap4": "How people are using Constant as their primary saving",
+        "titleDesc4": "\n      <p></p>\n      <p></p>\n    ",
         "optionText": "or",
         "howItWorks": {
             "step1": "STEP 1",
             "title1": "MAKE A DEPOSIT",
-            "desc1": "Deposit any amount in your currency of choice (USD, HKD, VND) or cryptocurrencies (USDT, GUSD, etc). No minimum deposit, no fees.",
+            "desc1": "Deposit any amount in your currency of choice and choose a term that feels good. No minimum deposit, no fees.",
             "step2": "STEP 2",
-            "title2": "CHOOSE A TERM",
-            "desc2": "Pick a term that works for you. Keep your money safe with us in a 3-mo, 6-mo, 1-year fixed deposit, or stay flexible with an anytime account.",
+            "title2": "DIGITIZE YOUR MONEY",
+            "desc2": "We convert your local currency to a digital dollar called Constant, fully backed by USD and stored in an FDIC insured vault.",
             "step3": "STEP 3",
             "title3": "START EARNING INTEREST",
-            "desc3": "Leave it and forget about it, or check your balance daily to see your savings grow. When your term is up, withdraw anytime to any bank account - or rollover and continue earning."
+            "desc3": "Interest is paid out everyday. You can withdraw anytime, to any bank account. What are you saving for?"
         },
         "buy": {
             "title": "Buy",
@@ -990,6 +997,7 @@
             "subintroDesc4": "Constant moves instantly from your account to anyone, anywhere in the world. For free.",
             "backToNewOrder": "Place a new order",
             "goHistory": "View your orders",
+            "confirmOrderFailed": "Failed while confirm your order, please try again",
             "components": {
                 "sellInfoInput": {
                     "continueBtn": "Continue",
@@ -1167,25 +1175,25 @@
         "midBanner0": "Protect the value of your money",
         "midBanner1": "Send money anywhere, for free",
         "midBanner2": "Secure and grow your money",
-        "whatCaption0": "Stable",
-        "whatCaption1": "Insured",
-        "whatCaption2": "Accredited",
-        "whatCaption3": "Borderless",
+        "whatCaption0": "Earn 60x more",
+        "whatCaption1": "Insured up to $250k",
+        "whatCaption2": " Flexible terms",
+        "whatCaption3": "Available worldwide",
         "whatTitle": "What can you do with Constant?",
         "whatTitle0": "Save in USD",
         "whatTitle1": "Up to $130M",
         "whatTextLink1": "Read the full policy",
         "whatLink1": "/privacy-policy",
-        "whatDesc1": "You are completely insured by the FDIC and US treasury. No matter how much Constant you have.",
+        "whatDesc1": "Enjoy peace of mind. Your account is insured up to $250,000 by the FDIC and US treasury. You’re saving with a chartered, regulated, US financial institution, subject to frequent audits.",
         "whatTitle2": "By the US Government",
         "whatTitle3": "No minimum deposit",
-        "whatDesc0": "No matter where in the world you are, your Constant keeps the value of the USD. And you can withdraw in your local currency anytime.",
-        "whatDesc2": "Keep your money safe with a chartered, regulated, US financial institution, subject to frequent audits.",
-        "whatDesc3": "No limits, no fees. Constant moves instantly from your account to anyone, anywhere in the world. For free.",
-        "whatMore0": "What is a digital dollar?",
-        "whatMore1": "Read about the vault",
-        "whatMore2": "View the most recent audit",
-        "whatMore3": "How we offer 6%",
+        "whatDesc0": "Get your money to work for you. Earn up to 60x more than with your average savings account, and multiply your savings without lifting a finger. Free your money from stagnant bank accounts.",
+        "whatDesc2": "Prefer to stay flexible? Choose the Anytime plan and enjoy 1% APR.  Want a higher interest rate?  Choose one of our fixed deposit plans. No minimum deposit, no limits, no fees.",
+        "whatDesc3": "Constant is accessible to anyone with an internet connection. Open an account in 15 seconds, no matter where you live, or how much you have.",
+        "whatMore0": "How we can offer 60x",
+        "whatMore1": "How we protect your money",
+        "whatMore2": "How to pick a plan that’s right for you",
+        "whatMore3": "How people are saving with Constant",
         "whatButton": "Watch how it works",
         "helpTitle": "Special price for US Student",
         "helpButton": "Get started today",
@@ -1346,7 +1354,7 @@
         "t1": "ACCOUNT",
         "t2": "TRIAL DEPOSIT",
         "t3": "SAVE",
-        "t4": "OTHER",
+        "t4": "INTEREST",
         "t5": "GENERAL",
         "question1": "Which countries can I get Constant in?",
         "answer1": "<p>Anywhere in the world. You just need an internet connection.</p>",
@@ -1445,32 +1453,35 @@
         }
     },
     "stories": {
-        "quote1": "“I’ve never used anything like Constant before. The interest rate is high. Everything is good. Your money will be protected well and be much more profitable than traditional bank saving.",
-        "author1": "Chinaza Akachi",
-        "title1": "Manager at Autonomous",
-        "quote2": "Secure, transparent, quick and easy to use. Competitive rates.",
-        "author2": "Carlos",
-        "title2": "Manager at Autonomous",
-        "quote3": "Good interest rates, very efficient and friendly staff. It was really helpful being able to talk things through over the phone.",
+        "quote0": "I’ve never used anything like Constant before. The interest rate is high. Everything is good. Your money will be protected well and be much more profitable than traditional bank saving.",
+        "author0": "Chinaza Akachi",
+        "title0": "Manager at Autonomous",
+        "quote1": "Great user experience. It's always fun watching my interest grow, and super convenient that I can withdraw it anytime. A nice zero-risk companion to your other investments, and a decent enough investment in itself.",
+        "author1": "Carlos",
+        "title1": "Father of three, saving for his children's college tuition.",
+        "quote2": "Can't rate the Constant support staff highly enough. They walked me through making my first deposit - which was much easier than expected.",
+        "author2": "Justin",
+        "title2": "Mechanic, saving to take his wife away on her dream holiday to Thailand.",
+        "quote3": "Very promising service. It's cool that my friends in different countries can all get accounts easily, and that you can transfer Constant between them for free - this is the first service we've found that's actually global.",
         "author3": "Veronica",
-        "title3": "Manager at Autonomous",
-        "quote4": "The website is clear and easy navigate, but it would be useful to have an app to make it quicker to check up on my account from my phone. The rates for the savings account are excellent especially if you are able to commit to a fixed time frame.",
+        "title3": "Graphic Designer, saving for a deposit to buy her first apartment.",
+        "quote4": "Apart from the bank beating interest rates, this is an incredibly interesting project from a technology standpoint. Banks need to up their game.",
         "author4": "Zen Chang",
-        "title4": "Manager at Autonomous",
-        "quote5": "At first i felt a bit sceptical about trying something instead of a traditional bank, but everything has worked out smoothly so far. Clear, easy to follow set up instructions.",
+        "title4": "Engineer, saving for a new car to take his family on roadtrips.",
+        "quote5": "Love that there's no minimum deposit required so anyone can benefit from their rates. Feel much safer keeping the tips I make with Constant instead of in a box under my bed!",
         "author5": "Kate",
-        "title5": "Manager at Autonomous",
-        "quote6": "Surprisingly painless - i set up my account and put a deposit in it in under 5 minutes.",
+        "title5": "Student, saving for her final year's course fees. ",
+        "quote6": "I signed up and made a deposit in under 5 minutes. Great for people who don't have the experience or time to invest, but still want to be smart with their money.",
         "author6": "Jerry",
-        "title6": "Manager at Autonomous"
+        "title6": "Nurse, saving for his wedding."
     },
     "statistics": {
-        "s0": "User",
-        "s1": "Country",
+        "s0": "Users",
+        "s1": "Countries",
         "s2": "Saved",
         "s3": "Earned",
         "s4": "Borrowed",
-        "s5": "Paid"
+        "s5": "Repaid"
     },
     "exchangeInputBuyForm": {
         "fiatAmountInputLabel": "Deposit amount",
@@ -1495,21 +1506,25 @@
         "howMuchDoYouWantToWithdraw": "How much do you want to withdraw?"
     },
     "exchangeInputBuyTrialForm": {
-        "title": "We’re giving you {amount} to grow. You keep the interest.",
+        "title": "\n      <p class=\"textCenter reset\">Simply select your Savings Plan and start earning up to <strong class=\"orangeLight\">60x more</strong> than traditional savings accounts and fixed deposits.</p>\n    ",
+        "highlightText": "you keep all the interest.",
+        "trialLeft": "{number} trials left.",
+        "noMoreTrialLeft": "No more trial left.",
         "submitBtn": "GET $1,000 TO GROW",
         "btnDesc": "New customers only. This $1000 trial deposit will be returned at the end of your chosen term, but you keep all the interest.",
-        "termLabel": "CHOOSE YOUR SAVING PLAN"
+        "termLabel": "CHOOSE YOUR SAVINGS PLAN"
     },
     "termSelector": {
         "label": "Choose a fixed deposit term.",
         "month": "months",
-        "rate": "{rate}% APR",
+        "rate": "{rate}%",
+        "apr": "APR",
         "amountText": "({amount} {currency})",
         "anytimeTerm": "anytime",
         "oneMonthTerm": "1 month",
         "term": "{term} months",
         "fiatAmountText": "{fiatAmount} {fiatCurrency}",
-        "desc": "By putting {fiatAmountText} {amountText} into {termText} fixed deposit, you’ll earn: {interestAmountText} interest per year.",
+        "desc": "By putting {fiatAmountText} {amountText} into a {termText} fixed deposit, you’ll earn: {interestAmountText} interest per year.",
         "item": {
             "zero": {
                 "name": "Anytime"
@@ -1526,16 +1541,18 @@
         }
     },
     "saving": {
+        "trialLeftNum": "ONLY {trialLeft} TRIAL LEFT",
         "trialTitle": {
-            "first": "Welcome to the",
-            "second": "world’s best",
-            "third": "savings account."
+            "first": "We’re giving you a ",
+            "second": "$1,000 Free Trial ",
+            "third": "Deposit."
         },
         "normalTitle": {
             "first": "Multiply",
-            "second": "Your savings"
+            "second": "Your savings."
         },
-        "normalSubTitle": "Earn 60x more than other banks",
+        "normalSubTitle": "Earn 60x more than other banks.",
+        "normalSubTitle1": "Be smarter with your money.",
         "makeLocalOrderSuccess": "Your order was created successfully",
         "makeLocalOrderFailed": "Failed while creating your order",
         "makeDirectOrderSuccess": "Your order was created successfully",

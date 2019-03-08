@@ -63,7 +63,7 @@
         "signUp": "Sign Up",
         "cesText": "Got a CES2019 giveaway code?",
         "cesLink": "Claim your 1 FREE Constant now!",
-        "referral": "Give $5, Get $5",
+        "referral": "Give 5 USD, Get 5 USD",
         "promotionPrograms": "Promotion Program",
         "contactUs": "Contact Us",
         "aboutUs": "About",
@@ -844,7 +844,7 @@
                     "sellTitle": "Order Confirmation Convert Constant",
                     "buyThankMsg": "Thanks! Please wire the Constant Trust {amount} to complete your order.",
                     "sellThankMsg": "You sent request convert {amount}. It could be take 30 minutes transfer to your bank account.",
-                    "orderThankMsg": "Thanks! Please wire the Constant Trust ${amount} to complete your order.",
+                    "orderThankMsg": "Thanks! Please wire the Constant Trust {amount} USD to complete your order.",
                     "importantMsg": "Do include your reference number {referenceNumber} in the transfer description.",
                     "important": "IMPORTANT"
                 },
@@ -991,7 +991,7 @@
             "subintroTitle1": "1 Constant = 1 USD.",
             "subintroDesc1": "Pegged to the most stable, useable currency in the world, Constant never loses value.",
             "subintroTitle2": "100% backed and secured.",
-            "subintroDesc2": "Constant is fully backed by USD, held by an independent accredited custodian. All users are insured up to $5M USD.",
+            "subintroDesc2": "Constant is fully backed by USD, held by an independent accredited custodian. All users are insured up to 5M USD.",
             "subintroTitle3": "3.6% interest on any amount.",
             "subintroDesc3": "Constant keeps your savings secure and grows your money over time.",
             "subintroTitle4": "Borderless. Zero fees.",
@@ -1013,7 +1013,7 @@
                     "sellTitle": "Order Confirmation Convert Constant",
                     "buyThankMsg": "Thanks! Please wire the Constant Trust {amount} to complete your order.",
                     "sellThankMsg": "You sent request convert {amount}. It could be take 30 minutes transfer to your bank account.",
-                    "orderThankMsg": "Thanks! Please wire the Constant Trust ${amount} to complete your order.",
+                    "orderThankMsg": "Thanks! Please wire the Constant Trust {amount} USD to complete your order.",
                     "importantMsg": "Do include your reference number {referenceNumber} in the transfer description.",
                     "important": "IMPORTANT"
                 },
@@ -1177,15 +1177,15 @@
         "midBanner1": "Send money anywhere, for free",
         "midBanner2": "Secure and grow your money",
         "whatCaption0": "Earn 60x more in USD",
-        "whatCaption1": "Insured up to $250k",
+        "whatCaption1": "Insured up to 250k USD",
         "whatCaption2": " Flexible terms",
         "whatCaption3": "Available worldwide",
         "whatTitle": "What can you do with Constant?",
         "whatTitle0": "Save in USD",
-        "whatTitle1": "Up to $130M",
+        "whatTitle1": "Up to 130M USD",
         "whatTextLink1": "Read the full policy",
         "whatLink1": "/privacy-policy",
-        "whatDesc1": "<p>Your account is insured up to $250,000 by the FDIC and US treasury. Constant is an SEC compliant US company. Enjoy peace of mind.</p>",
+        "whatDesc1": "<p>Your account is insured up to 250,000 USD by the FDIC and US treasury. Constant is an SEC compliant US company. Enjoy peace of mind.</p>",
         "whatTitle2": "By the US Government",
         "whatTitle3": "No minimum deposit",
         "whatDesc0": "<p>Earn up to 60x more than with your average USD savings account, and multiply your savings without lifting a finger.</p>",
@@ -1290,7 +1290,7 @@
         "btnShare": "Copy link",
         "copied": "Affiliate link copied to clipboard.",
         "termConditionTitle": "Term & Condition",
-        "termConditionDesc": "\n      <p>Agent will immediately earn $5 for the first transaction of acquired users. After that, Agent will earn  0.15% of volume users made in that month as commission. </p>\n      <p>User A conducts the first transaction which is BUYING CONSTANT and the amount must be equal to or greater than $1,000, then Agent will immediately earn $5. After that, User A makes the next transaction as BUYING CONSTANT, and Agent will earn 0.15% of each purchase. Total volume of User A in the month must be greater than $2000. Commission will be paid at the end of the month.</p>\n    "
+        "termConditionDesc": "\n      <p>Agent will immediately earn 5 USD for the first transaction of acquired users. After that, Agent will earn  0.15% of volume users made in that month as commission. </p>\n      <p>User A conducts the first transaction which is BUYING CONSTANT and the amount must be equal to or greater than 1,000 USD, then Agent will immediately earn 5 USD. After that, User A makes the next transaction as BUYING CONSTANT, and Agent will earn 0.15% of each purchase. Total volume of User A in the month must be greater than 2000 USD. Commission will be paid at the end of the month.</p>\n    "
     },
     "proSaving": {
         "pending": "Pending",
@@ -1324,12 +1324,12 @@
         "income": {
             "title": "Income",
             "alt": "Valid for 1 tax year",
-            "description": "Income of $200k, or $300k with spouse, in each of past 2 years and expecting same or more this year"
+            "description": "Income of 200k USD, or 300k USD with spouse, in each of past 2 years and expecting same or more this year"
         },
         "assets": {
             "title": "Assets",
             "alt": "Valid for 3 months",
-            "description": "Net worth of $1M, individually or joint with spouse, excluding your primary residence"
+            "description": "Net worth of 1M USD, individually or joint with spouse, excluding your primary residence"
         },
         "text1": "Provide evidence of accreditation",
         "text2": "They'll be asked to confirm that they have seen evidence of your claimed status. No documentation required.",
@@ -1342,7 +1342,7 @@
         "ssn": "Social Security Number",
         "accreditation_evidence_allow_credit_report": "I authorize AngelList in writing to periodically obtain my credit report for a transaction I am initiating. AngelList may use this data and share it with any issuer solely to verify my investor status in compliance with SEC requirements.",
         "totalDebt": "Total Debt",
-        "popover1": "\n      Income Levels must be met for each tax year individually (the SEC does not allow averaging across years)<br/> <br/>If married filing jointly, either a joint income of at least $300k/year must be shown across spouses or the investing individual's W-2s must show a minimum income of $200k/year<br/> <br/>If W2's are provided for a married couple, evidence of marriage must be provided (such as joint-filed 1040)\n    ",
+        "popover1": "\n      Income Levels must be met for each tax year individually (the SEC does not allow averaging across years)<br/> <br/>If married filing jointly, either a joint income of at least 300k USD/year must be shown across spouses or the investing individual's W-2s must show a minimum income of 200k USD/year<br/> <br/>If W2's are provided for a married couple, evidence of marriage must be provided (such as joint-filed 1040)\n    ",
         "alert": {
             "success": "Saving Form Submitted"
         }
@@ -1362,13 +1362,13 @@
         "question2": "Where can I get Constant?",
         "answer2": "<p>Anywhere in the world. You just need an internet connection.</p>",
         "question3": "Is Constant insured? What if you get hacked, or I can’t convert to USD, or my Constant is stolen?",
-        "answer3": "\n    <p>The US dollars put in escrow are FDIC (Federal Deposit Insurance Corporation) insured. Each account is insured up to $1305,000,000 by the independent trust company’s financial institution bond.</p>\n    <br />\n    <p>Blockchain technology is very difficult to hack, but even if it happens, we can trace the transaction before the hack to see what happened thanks to the immutable blockchain ledger. So, you will get your USD</p>\n    ",
+        "answer3": "\n    <p>The US dollars put in escrow are FDIC (Federal Deposit Insurance Corporation) insured. Each account is insured up to 1305,000,000 USD by the independent trust company’s financial institution bond.</p>\n    <br />\n    <p>Blockchain technology is very difficult to hack, but even if it happens, we can trace the transaction before the hack to see what happened thanks to the immutable blockchain ledger. So, you will get your USD</p>\n    ",
         "question4": "Can I see how many Constant are in circulation?",
-        "answer4": "\n    <p>The US dollars put in escrow are FDIC (Federal Deposit Insurance Corporation) insured. Each account is insured up to $1305,000,000 by the independent trust company’s financial institution bond.</p>\n    <br />\n    <p>Blockchain technology is very difficult to hack, but even if it happens, we can trace the transaction before the hack to see what happened thanks to the immutable blockchain ledger. So, you will get your USD</p>\n    ",
+        "answer4": "\n    <p>The US dollars put in escrow are FDIC (Federal Deposit Insurance Corporation) insured. Each account is insured up to 1305,000,000 USD by the independent trust company’s financial institution bond.</p>\n    <br />\n    <p>Blockchain technology is very difficult to hack, but even if it happens, we can trace the transaction before the hack to see what happened thanks to the immutable blockchain ledger. So, you will get your USD</p>\n    ",
         "question5": "Is Constant insured? What if you get hacked, or I can’t convert to USD, or my Constant is stolen?",
-        "answer5": "\n    <p>The US dollars put in escrow are FDIC (Federal Deposit Insurance Corporation) insured. Each account is insured up to $1305,000,000 by the independent trust company’s financial institution bond.</p>\n    <br />\n    <p>Blockchain technology is very difficult to hack, but even if it happens, we can trace the transaction before the hack to see what happened thanks to the immutable blockchain ledger. So, you will get your USD</p>\n    ",
+        "answer5": "\n    <p>The US dollars put in escrow are FDIC (Federal Deposit Insurance Corporation) insured. Each account is insured up to 1305,000,000 USD by the independent trust company’s financial institution bond.</p>\n    <br />\n    <p>Blockchain technology is very difficult to hack, but even if it happens, we can trace the transaction before the hack to see what happened thanks to the immutable blockchain ledger. So, you will get your USD</p>\n    ",
         "question6": "Can I see how many Constant are in circulation? Can I check the integrity of the",
-        "answer6": "\n      <p>The US dollars put in escrow are FDIC (Federal Deposit Insurance Corporation) insured. Each account is insured up to $1305,000,000 by the independent trust company’s financial institution bond.</p>\n      <br />\n      <p>Blockchain technology is very difficult to hack, but even if it happens, we can trace the transaction before the hack to see what happened thanks to the immutable blockchain ledger. So, you will get your USD</p>\n    ",
+        "answer6": "\n      <p>The US dollars put in escrow are FDIC (Federal Deposit Insurance Corporation) insured. Each account is insured up to 1305,000,000 USD by the independent trust company’s financial institution bond.</p>\n      <br />\n      <p>Blockchain technology is very difficult to hack, but even if it happens, we can trace the transaction before the hack to see what happened thanks to the immutable blockchain ledger. So, you will get your USD</p>\n    ",
         "length": "6",
         "account": {
             "question1": "Can I open a Constant account in my country?",
@@ -1376,7 +1376,7 @@
             "question2": "How do I open a Constant account?",
             "answer2": "Simply register with an email address and password to get started. To withdraw, transfer, and otherwise get the full use out of your account, you’ll need to verify your ID, which shouldn’t take more than a few minutes.",
             "question3": "Do I need a minimum deposit?",
-            "answer3": "No, you can deposit any amount you want. Better yet, once you’ve opened your account, we’ll give you a trial deposit of $1,000 so you can start earning interest immediately. The deposit is returned to us at the end of your term (sorry!), but you keep the interest. Not bad, right?",
+            "answer3": "No, you can deposit any amount you want. Better yet, once you’ve opened your account, we’ll give you a trial deposit of 1,000 USD so you can start earning interest immediately. The deposit is returned to us at the end of your term (sorry!), but you keep the interest. Not bad, right?",
             "question4": "Do you need to verify my identity?",
             "answer4": "You can open a Constant account without verifying your identity. However, to withdraw your savings (and any earned interest) to a bank account, we will need to verify your identity. We do this to protect you from fraud and to comply with financial regulations.",
             "question5": "How do I reset my password?",
@@ -1389,12 +1389,12 @@
             "answer1": "Yes, the trial deposit is available until further notice. We’ll keep it going for as long as we can.",
             "question2": "Am I eligible for this promotion?",
             "answer2": "As long as you’re a new customer and haven’t accepted a trial deposit before, you are eligible.",
-            "question3": "Can I withdraw the $1,000?",
-            "answer3": "While we’d love to give you $1,000, we can’t. So unfortunately, you can’t withdraw the trial deposit. The $1,000 will be returned to us at the end of your savings term, but you keep the interest, which is still a pretty good deal.",
+            "question3": "Can I withdraw the 1,000 USD?",
+            "answer3": "While we’d love to give you 1,000 USD, we can’t. So unfortunately, you can’t withdraw the trial deposit. The 1,000 USD will be returned to us at the end of your savings term, but you keep the interest, which is still a pretty good deal.",
             "question4": "How can I track the interest from this program?",
             "answer4": "Just log into your account and click Your Savings. Total interest earned is on the top right of the dashboard.",
             "question5": "What happens at the end of my term?",
-            "answer5": "At the end of the term, we’ll pay you the interest (assuming you haven’t withdrawn it already) and the $1,000 deposit will be returned.",
+            "answer5": "At the end of the term, we’ll pay you the interest (assuming you haven’t withdrawn it already) and the 1,000 USD deposit will be returned.",
             "question6": "Can I deposit money into my trial plan?",
             "answer6": "No, but you can add new Savings Plans whenever you like.",
             "question7": "Can my other deposits have a different term to the trial deposit?",
@@ -1404,9 +1404,9 @@
             "question1": "What is a Constant Savings Plan?",
             "answer1": "Our Savings Plans are simple, risk-free, and effective ways to grow your money. You choose a savings term, deposit your money, and at the end of the term you get your money back plus earned interest. It really is as simple as that.",
             "question2": "How do Constant Savings Plans work?",
-            "answer2": "\n        <p>Under the “SAVE” tab on our website, you’ll be able to choose from several different Savings Plans. Each one is designed to maintain the value of your deposit and pay you daily interest.</p>\n        <br />\n        <p>To maintain the value of your deposit, we send your money to the Constant trust where it’s protected by US law and insured to $130,000,000. At the same time, we create a “digital dollar” called Constant and put it into your account, which keeps the value stable.</p>\n        <br />\n        <p>Over time, your Constant earns interest which you can withdraw as you earn (daily) or save until the end of your term. Either way, your savings balance is an amount in Constant you can withdraw for its 1:1 equivalent in USD.</p>\n        <br />\n        <p>Of course, you don’t have to withdraw your savings as USD. At the end of your term, we put your savings into our Anytime Savings Plan so you continue to earn interest while you decide what to do next.</p>\n        <br />\n        <p>You could send your Constant to someone else, anywhere in the world, keep it stored in your Constant current account to keep the value locked to the USD, or simply put the Constant back into another Savings Plan to earn even more interest. The choice is yours!</p>\n      ",
+            "answer2": "\n        <p>Under the “SAVE” tab on our website, you’ll be able to choose from several different Savings Plans. Each one is designed to maintain the value of your deposit and pay you daily interest.</p>\n        <br />\n        <p>To maintain the value of your deposit, we send your money to the Constant trust where it’s protected by US law and insured to 130,000,000 USD. At the same time, we create a “digital dollar” called Constant and put it into your account, which keeps the value stable.</p>\n        <br />\n        <p>Over time, your Constant earns interest which you can withdraw as you earn (daily) or save until the end of your term. Either way, your savings balance is an amount in Constant you can withdraw for its 1:1 equivalent in USD.</p>\n        <br />\n        <p>Of course, you don’t have to withdraw your savings as USD. At the end of your term, we put your savings into our Anytime Savings Plan so you continue to earn interest while you decide what to do next.</p>\n        <br />\n        <p>You could send your Constant to someone else, anywhere in the world, keep it stored in your Constant current account to keep the value locked to the USD, or simply put the Constant back into another Savings Plan to earn even more interest. The choice is yours!</p>\n      ",
             "question3": "How do you protect my savings?",
-            "answer3": "Your deposits are securely held in the Constant Vault, which is overseen by an accredited US financial institution called Prime Trust. The Constant Vault is FDIC-insured to $130,000,000. You can read more about the Constant Vault on our blog.",
+            "answer3": "Your deposits are securely held in the Constant Vault, which is overseen by an accredited US financial institution called Prime Trust. The Constant Vault is FDIC-insured to 130,000,000 USD. You can read more about the Constant Vault on our blog.",
             "question4": "Which currencies do you accept?",
             "answer4": "We accept any currency sent to our US-based Constant Vault bank account. It is then converted to USD and stored in an FDIC-insured vault.",
             "question5": "Do you accept cryptocurrency?",
@@ -1416,21 +1416,21 @@
             "question7": "Why do you digitize my savings?",
             "answer7": "\n        <p>When you deposit money for the long term, some local currencies can lose value due to inflation. This eats into your earned interest and makes saving feel like an uphill battle. We don’t think that’s fair. So instead, we convert your money into a “digital dollar” that’s 100% backed by real USD – the world’s reserve currency.</p>\n        <br />\n        <p>Our digital dollar is called Constant. Anytime you deposit or withdraw, we create or destroy Constant to ensure it’s 1:1 backed, so its value always matches the USD. That way, you never need worry about inflation and other economic pressures eating into your savings. You just sit back and watch your money grow.</p>\n        <br />\n      ",
             "question8": "How does digitization work?",
-            "answer8": "\n        <p>First, we send your deposit to the Constant trust for safekeeping. Then, we create new Constant tokens on the Ethereum blockchain that match the USD value of your deposit. For example, if you gave us the equivalent of $100 in your local currency, we send $100 to the Constant trust and create 100 Constant.</p>\n        <br />\n        <p>Constant remains in your account for your savings term, accruing interest which you can save or withdraw daily. Then, when your term ends, you can withdraw your money from the Constant trust (and any interest) and we’ll destroy the Constant. Or, if you’d rather use the Constant tokens to send money abroad, trade on exchanges, or simply save for another term, please do!</p>\n      ",
+            "answer8": "\n        <p>First, we send your deposit to the Constant trust for safekeeping. Then, we create new Constant tokens on the Ethereum blockchain that match the USD value of your deposit. For example, if you gave us the equivalent of 100 USD in your local currency, we send 100 USD to the Constant trust and create 100 Constant.</p>\n        <br />\n        <p>Constant remains in your account for your savings term, accruing interest which you can save or withdraw daily. Then, when your term ends, you can withdraw your money from the Constant trust (and any interest) and we’ll destroy the Constant. Or, if you’d rather use the Constant tokens to send money abroad, trade on exchanges, or simply save for another term, please do!</p>\n      ",
             "question9": "Where are my savings stored?",
-            "answer9": "Your savings are stored inside the Constant Vault, which is regulated under US law and protected by $130,000,000 FDIC insurance.",
+            "answer9": "Your savings are stored inside the Constant Vault, which is regulated under US law and protected by 130,000,000 USD FDIC insurance.",
             "question10": "Can I add to my Savings Plan during the term?",
             "answer10": "You can’t add to your Savings Plan once it’s started, but there’s no limit on how many Savings Plans you can have. So if you’d like to save more, simply open another Savings Plan and watch your money grow.",
             "question11": "What is the Constant Vault?",
-            "answer11": "The Constant Vault is a publicly-audited trust overseen and managed by Prime Trust, a US accredited financial institution. The Constant Vault is regulated in the US and insured by the FDIC to the value of $130,000,000.",
+            "answer11": "The Constant Vault is a publicly-audited trust overseen and managed by Prime Trust, a US accredited financial institution. The Constant Vault is regulated in the US and insured by the FDIC to the value of 130,000,000 USD.",
             "question12": "What is FDIC insurance?",
-            "answer12": "\n        <p>The Federal Deposit Insurance Corporation (FDIC) is a body set up by the US government to protect the integrity of the US financial system. It does this in a number of ways, including insuring deposits. Our Constant Vault is insured by FDIC to an indemnity limit of $130,000,000. You can <a target=\"_blank\" href=\"https://www.fdic.gov\">read more about the FDIC on their website.</a></p>\n      "
+            "answer12": "\n        <p>The Federal Deposit Insurance Corporation (FDIC) is a body set up by the US government to protect the integrity of the US financial system. It does this in a number of ways, including insuring deposits. Our Constant Vault is insured by FDIC to an indemnity limit of 130,000,000 USD. You can <a target=\"_blank\" href=\"https://www.fdic.gov\">read more about the FDIC on their website.</a></p>\n      "
         },
         "interest": {
             "question1": "How often do you pay interest?",
             "answer1": "We pay interest daily, so you can either wait until the end of your term to withdraw interest or withdraw it daily. It’s up to you.",
             "question2": "How is interest calculated?",
-            "answer2": "Your interest is calculated by applying the percentage rate of your Savings Plan to the amount of your deposit, and then dividing it by 365 to get a daily rate. Interest is not compounded, so if you deposit $500 for one year at an interest rate of 6%, you would earn $30 at the end of your term (about $0.08 per day).",
+            "answer2": "Your interest is calculated by applying the percentage rate of your Savings Plan to the amount of your deposit, and then dividing it by 365 to get a daily rate. Interest is not compounded, so if you deposit 500 USD for one year at an interest rate of 6%, you would earn 30 USD at the end of your term (about 0.08 USD per day).",
             "question3": "How can I track interest on my savings?",
             "answer3": "Just log into your account and click Your Savings. Total interest earned is on the top right of the dashboard.",
             "question4": "Will you increase interest rates in the future?",
@@ -1502,7 +1502,8 @@
         "fiatAmountResultLabel": "According to the markets today, you’ll receive: {fiatAmount} {fiatCurrency}",
         "fee": "withdrawal fee: {fee} {currency}",
         "sellBtn": "WITHDRAW",
-        "getAmountFailed": "Failed while getting amount, please try again",
+        "getAmountFailed": "Failed while getting amount",
+        "getFeeFailed": "Failed while calculating fee, please try again",
         "getCurrencyListFailed": "Failed while getting supported currencies",
         "howMuchDoYouWantToWithdraw": "How much do you want to withdraw?",
         "yourAnytimeBalance": "Your Anytime Balance: {balance} {currency}",
@@ -1514,7 +1515,7 @@
         "trialLeft": "{number} trials left.",
         "noMoreTrialLeft": "No more trial left.",
         "submitBtn": "START YOUR FREE TRIAL",
-        "btnDesc": "New customers only. This $1000 trial deposit will be returned at the end of your chosen term, but you keep all the interest.",
+        "btnDesc": "New customers only. This 1000 USD trial deposit will be returned at the end of your chosen term, but you keep all the interest.",
         "termLabel": "CHOOSE YOUR SAVINGS PLAN"
     },
     "termSelector": {
@@ -1529,8 +1530,10 @@
         "fiatAmountText": "{fiatAmount} {fiatCurrency}",
         "desc": "You’ll earn: {interestAmountText} interest after 1 year.",
         "desc1": "You’ll earn: {interestAmountText} interest after {time}.",
-        "desc2": "The trial $1000 expires, but the interest is yours to keep.",
-        "trialExpires": "The $1000 trial expires, but the interest is yours to keep.",
+        "desc2": "The trial 1000 USD expires, but the interest is yours to keep.",
+        "desc3": "That means you'll be withdrawing {withdrawAmount} in {time} !",
+        "desc4": "Earn 1% on your existing balance, and withdraw anytime.",
+        "trialExpires": "The 1000 USD trial expires, but the interest is yours to keep.",
         "item": {
             "zero": {
                 "name": "Anytime"
@@ -1553,7 +1556,7 @@
             "second": "",
             "third": ""
         },
-        "trialDesc": "\n      <h5 style=\"color: white; margin-top: 50px; padding-right: 63px;line-height: 36px;\">\n        We’re giving you a <strong class=\"orangeThin\">$1000 free trial</strong> deposit. At the end of the trial, <strong class=\"orangeThin\">you keep all the interest</strong>.\n      </h5>\n    ",
+        "trialDesc": "\n      <h5 style=\"color: white; margin-top: 50px; padding-right: 63px;line-height: 36px;\">\n        We’re giving you a <strong class=\"orangeThin\">1000 USD free trial</strong> deposit. At the end of the trial, <strong class=\"orangeThin\">you keep all the interest</strong>.\n      </h5>\n    ",
         "normalTitle": {
             "first": "Multiply",
             "second": "Your savings."

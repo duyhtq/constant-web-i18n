@@ -63,7 +63,7 @@
         "signUp": "Đăng ký",
         "cesText": "Bạn có mã nhận thưởng ở CES2019?",
         "cesLink": "Nhận 1 Constant miễn phí ngay!",
-        "referral": "Tặng $5, nhận $5",
+        "referral": "Give 5 USD, Get 5 USD",
         "promotionPrograms": "Các chương trình khuyến mãi",
         "contactUs": "Liên hệ với chúng tôi",
         "aboutUs": "Về chúng tôi",
@@ -844,7 +844,7 @@
                     "sellTitle": "Xác Nhận Đổi Constant",
                     "buyThankMsg": "Cảm ơn! Xin vui lòng chuyển {amount} tới Constant Trust để hoàn tất giao dịch.",
                     "sellThankMsg": "Bạn đã gửi yêu cầu đổi {amount} Constant. Bạn sẽ nhận được tiền trong khoảng 30 phút tới.",
-                    "orderThankMsg": "Cảm ơn! Xin vui lòng chuyển ${amount} tới Constant Trust để hoàn tất giao dịch.",
+                    "orderThankMsg": "Thanks! Please wire the Constant Trust {amount} USD to complete your order.",
                     "importantMsg": "Vui lòng điền số chuyển tiền {referenceNumber} trong phần nội dung chuyển khoản.",
                     "important": "LƯU Ý"
                 },
@@ -991,7 +991,7 @@
             "subintroTitle1": "1 Constant = 1 USD.",
             "subintroDesc1": "Được định giá bằng USD và có thể quy đổi sang USD.",
             "subintroTitle2": "100% an toàn và ổn định.",
-            "subintroDesc2": "Được đảm bảo bởi đồng USD và giám sát bởi một công ty giám hộ tài chính độc lập có uy tín. Tất cả người dùng đều được Công ty Bảo hiểm Ký thác Liên bang Hoa Kỳ và Ngân khố Hoa Kỳ bảo hiểm 100%.",
+            "subintroDesc2": "Constant is fully backed by USD, held by an independent accredited custodian. All users are insured up to 5M USD.",
             "subintroTitle3": "Lãi suất 3.6% trên mọi khoản tiền.",
             "subintroDesc3": "Trả lãi hàng tháng, đảm bảo giá trị khoản tiết kiệm của bạn.",
             "subintroTitle4": "Không biên giới. Miễn phí.",
@@ -1013,7 +1013,7 @@
                     "sellTitle": "Xác Nhận Bán Constant",
                     "buyThankMsg": "Cảm ơn! Vui lòng chuyển tới quỹ Constant {amount} để hoàn thành lệnh của bạn.",
                     "sellThankMsg": "Bạn đã gửi yêu cầu đổi {amount} Constant. Bạn sẽ nhận được tiền trong khoảng 30 phút tới.",
-                    "orderThankMsg": "Xin cảm ơn! Vui lòng chuyển tới quỹ Constant ${amount} để hoàn thành lệnh của bạn.",
+                    "orderThankMsg": "Thanks! Please wire the Constant Trust {amount} USD to complete your order.",
                     "importantMsg": "Vui lòng điền số chuyển tiền {referenceNumber} trong phần nội dung chuyển khoản.",
                     "important": "QUAN TRỌNG"
                 },
@@ -1177,15 +1177,15 @@
         "midBanner1": "Chuyển khoản tới bất kì đâu",
         "midBanner2": "Hoàn toàn miễn phí",
         "whatCaption0": "Lãi suất gấp 60 lần cho USD",
-        "whatCaption1": "Bảo hiểm giá trị $250k",
+        "whatCaption1": "Insured up to 250k USD",
         "whatCaption2": " Kì hạn linh động",
         "whatCaption3": "Dễ dàng truy cập",
         "whatTitle": "Các tiện ích của Constant",
         "whatTitle0": "Tiết kiệm bằng USD",
-        "whatTitle1": "Lên tới 130 triệu USD",
+        "whatTitle1": "Up to 130M USD",
         "whatTextLink1": "Đọc đầy đủ",
         "whatLink1": "/chính sách bảo mật",
-        "whatDesc1": "<p>Bạn hoàn toàn có thể yên tâm khi gửi tiền với chúng tôi. Constant thoả mãn đầy đủ các tiêu chuẩn của SEC và tài khoản của bạn được bảo hiểm lên tới $250,000 bởi FDIC và Ngân khố Hoa Kỳ.</p>",
+        "whatDesc1": "<p>Your account is insured up to 250,000 USD by the FDIC and US treasury. Constant is an SEC compliant US company. Enjoy peace of mind.</p>",
         "whatTitle2": "Bởi Chính phủ Hoa Kì",
         "whatTitle3": "Không yêu cầu số tiền tối thiểu",
         "whatDesc0": "<p>Hưởng lãi suất cao hơn 60 lần khi tiết kiệm bằng USD. Không tốn một cần chút công sức nào và đồng tiền của bạn sẽ tự sinh sôi.</p>",
@@ -1290,7 +1290,7 @@
         "btnShare": "Sao chép liên kết",
         "copied": "Đã sao chép liên kết giới thiệu.",
         "termConditionTitle": "Điều khoản sử dụng",
-        "termConditionDesc": "\n<p>Đại lý sẽ ngay lập tức kiếm được 5 USD cho giao dịch đầu tiên của người dùng mà họ có được. Trong tháng đó, đại lý sẽ kiếm được thêm 0,15% hoa hồng dựa trên khối lượng giao dịch của những khách hàng đó.</p>\n<p>Người dùng A thực hiện giao dịch đầu tiên là MUA CONSTANT và số tiền đó bằng hoặc lớn hơn 1.000 USD, Đại lý sẽ ngay lập tức nhận được 5 USD. Sau đó, Người dùng A thực hiện giao dịch tiếp theo là MUA CONSTANT và đại lý sẽ kiếm được thêm 0,15% hoa hồng cho mỗi lần mua. Tổng số lượng của Constant A mua trong tháng phải có giá trị lớn hơn 2000 USD. Tiền hoa hồng sẽ được trả vào cuối tháng.</p>    "
+        "termConditionDesc": "\n      <p>Agent will immediately earn 5 USD for the first transaction of acquired users. After that, Agent will earn  0.15% of volume users made in that month as commission. </p>\n      <p>User A conducts the first transaction which is BUYING CONSTANT and the amount must be equal to or greater than 1,000 USD, then Agent will immediately earn 5 USD. After that, User A makes the next transaction as BUYING CONSTANT, and Agent will earn 0.15% of each purchase. Total volume of User A in the month must be greater than 2000 USD. Commission will be paid at the end of the month.</p>\n    "
     },
     "proSaving": {
         "pending": "Đang chờ",
@@ -1324,12 +1324,12 @@
         "income": {
             "title": "Thu nhập",
             "alt": "Hợp lệ trong 1 năm tài chính",
-            "description": "Thu nhập khoảng 200 nghìn USD hoặc 300 nghìn USD nếu tính cả vợ/chồng trong 2 năm gần nhất và tiếp tục có thể duy trì mức thu nhập này trong năm tới"
+            "description": "Income of 200k USD, or 300k USD with spouse, in each of past 2 years and expecting same or more this year"
         },
         "assets": {
             "title": "Tài sản",
             "alt": "Hợp lệ trong 3 tháng",
-            "description": "Giá trị ròng trị giá 1 triệu Usd, cá nhân hoặc chung với vợ/chồng, nhưng không bao gồm nơi cư trú chính của bạn"
+            "description": "Net worth of 1M USD, individually or joint with spouse, excluding your primary residence"
         },
         "text1": "Cung cấp bằng chứng về độ tín nhiệm",
         "text2": "Họ sẽ được yêu cầu xác nhận rằng họ đã thấy bằng chứng về trạng thái mà bạn khẳng định. Không yêu cầu tài liệu.",
@@ -1342,7 +1342,7 @@
         "ssn": "Số bảo hiểm xã hội",
         "accreditation_evidence_allow_credit_report": "Tôi ủy quyền cho AngelList bằng văn bản để định kỳ nhận báo cáo tín dụng cho giao dịch tôi đang thực hiện. AngelList có thể sử dụng dữ liệu này và chia sẻ nó với bất kỳ nhà phát hành nào chỉ để xác minh trạng thái nhà đầu tư của tôi tuân thủ các yêu cầu của SEC.",
         "totalDebt": "Tổng số nợ",
-        "popover1": "\nMức thu nhập phải đáp ứng được cho từng năm tài chính (SEC không cho phép tính trung bình qua các năm)<br/><br/>Nếu đã kết hôn và khai thuế chung, thu nhập chung của hai người phải đạt ít nhất là 300 nghìn USD/năm hoặc khoản đầu tư của mỗi cá nhân W-2 phải thể hiện được thu nhập tối thiểu là 200 nghìn USD/năm<br/><br/>Nếu W2 được cung cấp cho một cặp vợ chồng, phải cung cấp bằng chứng về hôn nhân (chẳng hạn như nộp chung 1040)    ",
+        "popover1": "\n      Income Levels must be met for each tax year individually (the SEC does not allow averaging across years)<br/> <br/>If married filing jointly, either a joint income of at least 300k USD/year must be shown across spouses or the investing individual's W-2s must show a minimum income of 200k USD/year<br/> <br/>If W2's are provided for a married couple, evidence of marriage must be provided (such as joint-filed 1040)\n    ",
         "alert": {
             "success": "Đã gửi đơn tiết kiệm"
         }
@@ -1362,13 +1362,13 @@
         "question2": "Có thể mua Constant ở đâu?",
         "answer2": "<p>Ở bất cứ đâu trên thế giới. Bạn chỉ cần có kết nối Internet là đủ.</p>",
         "question3": "Constant có an toàn không? Có khi nào hệ thống Constant bị hack, hay tôi không thể đổi Constant ra USD hay Constant của tôi bị mất không?",
-        "answer3": "\n<p> Tiền của bạn được giữ trong hợp đồng thông minh được đảm bảo bởi Công ty Bảo hiểm Kí thác Liên bang Hoa Kì (FDIC) với giá trị bảo hiểm lên tới 130 triệu USD.</p>\n<br />\n<p>Công nghệ chuỗi khối gần như không thể bị hack, và dù cho điều đó có thể xảy ra, chúng tôi hoàn toàn có thể kiểm tra toàn bộ các giao dịch trên hệ thống. Và nhờ tính năng không thể bị thay đổi của công nghệ chuỗi khối, bạn sẽ luôn nhận lại được tiền của mình</p>    ",
+        "answer3": "\n    <p>The US dollars put in escrow are FDIC (Federal Deposit Insurance Corporation) insured. Each account is insured up to 1305,000,000 USD by the independent trust company’s financial institution bond.</p>\n    <br />\n    <p>Blockchain technology is very difficult to hack, but even if it happens, we can trace the transaction before the hack to see what happened thanks to the immutable blockchain ledger. So, you will get your USD</p>\n    ",
         "question4": "Có thể biết được có bao nhiêu Constant đang lưu hành không?",
-        "answer4": "\n<p> Tiền của bạn được giữ trong hợp đồng thông minh được đảm bảo bởi Công ty Bảo hiểm Kí thác Liên bang Hoa Kì (FDIC) với giá trị bảo hiểm lên tới 130 triệu USD.</p>\n<br />\n<p>Công nghệ chuỗi khối gần như không thể bị hack, và dù cho điều đó có thể xảy ra, chúng tôi hoàn toàn có thể kiểm tra toàn bộ các giao dịch trên hệ thống. Và nhờ tính năng không thể bị thay đổi của công nghệ chuỗi khối, bạn sẽ luôn nhận lại được tiền của mình</p>    ",
+        "answer4": "\n    <p>The US dollars put in escrow are FDIC (Federal Deposit Insurance Corporation) insured. Each account is insured up to 1305,000,000 USD by the independent trust company’s financial institution bond.</p>\n    <br />\n    <p>Blockchain technology is very difficult to hack, but even if it happens, we can trace the transaction before the hack to see what happened thanks to the immutable blockchain ledger. So, you will get your USD</p>\n    ",
         "question5": "Constant có an toàn không? Có khi nào hệ thống Constant bị hack, hay tôi không thể đổi Constant ra USD hay Constant của tôi bị mất không?",
-        "answer5": "\n<p> Tiền của bạn được giữ trong hợp đồng thông minh được đảm bảo bởi Công ty Bảo hiểm Kí thác Liên bang Hoa Kì (FDIC) với giá trị bảo hiểm lên tới 130 triệu USD.</p>\n<br />\n<p>Công nghệ chuỗi khối gần như không thể bị hack, và dù cho điều đó có thể xảy ra, chúng tôi hoàn toàn có thể kiểm tra toàn bộ các giao dịch trên hệ thống. Và nhờ tính năng không thể bị thay đổi của công nghệ chuỗi khối, bạn sẽ luôn nhận lại được tiền của mình</p>    ",
+        "answer5": "\n    <p>The US dollars put in escrow are FDIC (Federal Deposit Insurance Corporation) insured. Each account is insured up to 1305,000,000 USD by the independent trust company’s financial institution bond.</p>\n    <br />\n    <p>Blockchain technology is very difficult to hack, but even if it happens, we can trace the transaction before the hack to see what happened thanks to the immutable blockchain ledger. So, you will get your USD</p>\n    ",
         "question6": "Có thể biết được có bao nhiêu Constant đang lưu hành không?",
-        "answer6": "\n<p> Tiền của bạn được giữ trong hợp đồng thông minh được đảm bảo bởi Công ty Bảo hiểm Kí thác Liên bang Hoa Kì (FDIC) với giá trị bảo hiểm lên tới 130 triệu USD.</p>\n<br />\n<p>Công nghệ chuỗi khối gần như không thể bị hack, và dù cho điều đó có thể xảy ra, chúng tôi hoàn toàn có thể kiểm tra toàn bộ các giao dịch trên hệ thống. Và nhờ tính năng không thể bị thay đổi của công nghệ chuỗi khối, bạn sẽ luôn nhận lại được tiền của mình</p>    ",
+        "answer6": "\n      <p>The US dollars put in escrow are FDIC (Federal Deposit Insurance Corporation) insured. Each account is insured up to 1305,000,000 USD by the independent trust company’s financial institution bond.</p>\n      <br />\n      <p>Blockchain technology is very difficult to hack, but even if it happens, we can trace the transaction before the hack to see what happened thanks to the immutable blockchain ledger. So, you will get your USD</p>\n    ",
         "length": "6",
         "account": {
             "question1": "Tôi có thể mở tài khoản Constant ở nước mình được không?",
@@ -1376,7 +1376,7 @@
             "question2": "Cách mở tài khoản Constant?",
             "answer2": "Đăng ký tài khoản Constant bằng cách nhập email và mật khẩu. Sau đó, bạn nhấn vào đường dẫn xác nhận tài khoản trong email gửi đến bạn ngay sau đó để hoàn tất quá trình đăng ký.",
             "question3": "Số dư tối thiểu trong tài khoản là bao nhiêu?",
-            "answer3": "Bạn không cần có số dư tối thiểu trong tài khoản. Hơn thế nữa, Constant tặng bạn tài khoản dùng thử trị giá 1000 USD để khám phá cách hoạt động của tài khoản. Đến kì đáo hạn, 1000 USD sẽ trở về với chúng tôi, nhưng bạn sẽ được giữ phần lãi.",
+            "answer3": "No, you can deposit any amount you want. Better yet, once you’ve opened your account, we’ll give you a trial deposit of 1,000 USD so you can start earning interest immediately. The deposit is returned to us at the end of your term (sorry!), but you keep the interest. Not bad, right?",
             "question4": "Tôi có nhất thiết phải xác minh tài khoản?",
             "answer4": "Bạn hoàn toàn có thể tạo tài khoản Constant mà không cần xác minh tài khoản. Tuy nhiên, khi bạn rút tiền ra khỏi tài khoản, bạn sẽ cần xác minh thông tin cá nhân. Chúng tôi mong bạn hiểu quy trình này là để bảo vệ khoản tiết kiệm của bạn và để chấp hành quy định tài chính.",
             "question5": "Làm sao đăng nhập khi tôi quên mật khẩu?",
@@ -1389,12 +1389,12 @@
             "answer1": "Chương trình dùng thử hiện chưa có thời gian kết thúc. Chúng tôi luôn nỗ lực để bạn trải nghiệm được Constant lâu nhất có thể ",
             "question2": "Ai có thể tham gia chương trình này? ",
             "answer2": "Chương trình dành cho mọi khách hàng mới tạo tài khoản và chưa tham gia chương trình trước đây",
-            "question3": "Tôi có thể rút 1000$ ra không?",
-            "answer3": "Chúng tôi rất muốn hỗ trợ bạn khoản này. Nhưng tiếc là Constant sẽ lấy lại 1000$ khi đến kỳ đáo hạn. Bạn vẫn được sở hữu lãi từ khoản 1000$ này. ",
+            "question3": "Can I withdraw the 1,000 USD?",
+            "answer3": "While we’d love to give you 1,000 USD, we can’t. So unfortunately, you can’t withdraw the trial deposit. The 1,000 USD will be returned to us at the end of your savings term, but you keep the interest, which is still a pretty good deal.",
             "question4": "Cách kiểm tra lãi từ khoản tiết kiệm này ra sao?",
             "answer4": "Sau khi đăng nhập vào tài khoản, nhấn vào “Sổ Tiết Kiệm”. Tổng số lãi nhận được nằm ở góc phải phía trên của màn hình. Ở đây bạn sẽ thấy lãi tăng lên mỗi ngày và bạn được rút lãi ra bất cứ lúc nào.",
             "question5": "Khi đáo hạn, điều gì xảy ra?",
-            "answer5": "Đến kì đáo hạn, chúng tôi trả lãi từ 1000$ cho bạn. Phần tiền gốc sẽ trở về Constant.",
+            "answer5": "At the end of the term, we’ll pay you the interest (assuming you haven’t withdrawn it already) and the 1,000 USD deposit will be returned.",
             "question6": "Tôi có thể nạp tiền vào tài khoản dùng thử này không? ",
             "answer6": "Bạn không thể nạp tiền vào tài khoản đang có 1000$. Thay vào đó, hãy tạo sổ tiết kiệm mới với mức kì hạn tùy thích",
             "question7": "Khoản tiết kiệm của tôi có thể có mức lãi khác với khoản dùng thử không? ",
@@ -1404,9 +1404,9 @@
             "question1": "Sổ tiết kiệm Constant là gì?",
             "answer1": "Chúng tôi cung cấp dịch vụ tiết kiệm đơn giản, không có rủi ro để bạn yên tâm đầu tư và sinh lời. Bạn nạp tiền vào Constant, chọn kỳ hạn và nhận lãi trả theo ngày. ",
             "question2": "Cách hoạt động của Sổ Tiết kiệm Constant?",
-            "answer2": "\n<p>Bạn có thể chọn số tiền kỳ hạn ưa thích cho khoản tiết kiệm của mình ở phần “Tiết Kiệm” trên trang web</p>\n        <br />\n        <p>Để đảm bảo giá trị của khoản tiết kiệm, chúng tôi gửi tiền vào quỹ tín thác Constant chịu sự quản lý của luật Hòa Kỳ và được bảo hiểm 130 triệu USD</p>\n        <br />\n        <p>Bạn sẽ nhận được Constant - một loại tiền điện tử có giá trị ngang với USD tương ứng với số tiền tiết kiệm của mình</p>\n        <br />\n        <p>Khi đến kỳ đáo hạn, chúng tôi trả lãi cho bạn bằng Constant và bạn có thể đổi Constant trở về USD hoặc tiền địa phương của mình bất cứ lúc nào. </p>\n        <br />\n        <p>Tất nhiên, bạn có thể tiếp tục tích lũy Constant để nhận lãi cho kỳ sau</p>\n      ",
+            "answer2": "\n        <p>Under the “SAVE” tab on our website, you’ll be able to choose from several different Savings Plans. Each one is designed to maintain the value of your deposit and pay you daily interest.</p>\n        <br />\n        <p>To maintain the value of your deposit, we send your money to the Constant trust where it’s protected by US law and insured to 130,000,000 USD. At the same time, we create a “digital dollar” called Constant and put it into your account, which keeps the value stable.</p>\n        <br />\n        <p>Over time, your Constant earns interest which you can withdraw as you earn (daily) or save until the end of your term. Either way, your savings balance is an amount in Constant you can withdraw for its 1:1 equivalent in USD.</p>\n        <br />\n        <p>Of course, you don’t have to withdraw your savings as USD. At the end of your term, we put your savings into our Anytime Savings Plan so you continue to earn interest while you decide what to do next.</p>\n        <br />\n        <p>You could send your Constant to someone else, anywhere in the world, keep it stored in your Constant current account to keep the value locked to the USD, or simply put the Constant back into another Savings Plan to earn even more interest. The choice is yours!</p>\n      ",
             "question3": "Cách Constant bảo hiểm khoản tiết kiệm của tôi?",
-            "answer3": "Khoản tiết kiệm của bạn được quản lý bởi quỹ tín thác Constant, một đơn vị tài chính độc lập là đối tác của Prime Trust. Tất cả các khoản tiết kiệm đều được bảo hiểm với tổng giá trị 130 triệu USD. Bạn có thể tìm hiểu thêm về quỹ Constant tại blog của chúng tôi. \n",
+            "answer3": "Your deposits are securely held in the Constant Vault, which is overseen by an accredited US financial institution called Prime Trust. The Constant Vault is FDIC-insured to 130,000,000 USD. You can read more about the Constant Vault on our blog.",
             "question4": "Constant chấp nhận loại tiền nào?\n",
             "answer4": "Chúng tôi chấp nhận mọi loại tiền. Tiền của bạn sẽ được quy đổi sang USD và trữ trong két sắt an toàn của FDIC",
             "question5": "Constant có chấp nhận tiền ảo không?",
@@ -1416,21 +1416,21 @@
             "question7": "Vì sao tiền tiết kiệm của tôi phải đổi sang Constant? ",
             "answer7": "        <p>Khi tiết kiệm, một số loại tiền tệ sẽ bị mất giá do lạm phát. Cách tốt nhất để chúng tôi đảm bảo lãi suất và lợi ích cho bạn là tạo ra một loại tiền điện tử với giá trị cố định với USD - đồng tiền ổn định nhất thế giới.</p>\n        <br />\n        <p>Tiền điện tử đó chính là Constant. Khi bạn bắt đầu tiết kiệm, chúng tôi tạo ra Constant. Khi bạn rút khoản tiết kiệm ra, Constant sẽ biến mất. Như vậy, giá trị Constant luôn bằng với USD và bạn không phải chịu mất giá.</p>\n        <br />\n      ",
             "question8": "Quá trình số hóa này diễn ra như thế nào?",
-            "answer8": "\n<p>Chúng tôi gửi khoản tiết kiệm (bằng USD hoặc tiền địa phương) của bạn vào quỹ Constant để bảo mật khoản tiền đó. Sau đó, dựa trên số tiền của bạn, chúng tôi quy đổi ra số lượng Constant tương ứng trên công nghệ blockchain của Ethereum với mức giá 1 Constant = 1 USD. Như vậy, nếu bạn gửi tiết kiệm 100 USD, bạn sẽ có 100 Constant và 100 USD của bạn nằm an toàn trong quỹ tín thác</p>\n        <br />\n        <p>Bạn sẽ thấy số tiền của mình sinh lời theo thời gian. Khi đến kỳ đáo hạn, khi bạn rút tiền ra khỏi Constant, chúng tôi sẽ hủy số Constant bạn đang nắm giữ và trả lại USD kèm mức lãi. Bằng cách này, bạn có thể tiếp tục tích lũy Constant thêm 1 kỳ nữa, gửi cho người thân hoặc đơn giản là rút ra để phục vụ nhu cầu cá nhân!</p>\n      ",
+            "answer8": "\n        <p>First, we send your deposit to the Constant trust for safekeeping. Then, we create new Constant tokens on the Ethereum blockchain that match the USD value of your deposit. For example, if you gave us the equivalent of 100 USD in your local currency, we send 100 USD to the Constant trust and create 100 Constant.</p>\n        <br />\n        <p>Constant remains in your account for your savings term, accruing interest which you can save or withdraw daily. Then, when your term ends, you can withdraw your money from the Constant trust (and any interest) and we’ll destroy the Constant. Or, if you’d rather use the Constant tokens to send money abroad, trade on exchanges, or simply save for another term, please do!</p>\n      ",
             "question9": "Khoản tiết kiệm của tôi được trữ ở đâu?",
-            "answer9": "Khoản tiết kiệm của bạn được giữ an toàn trong quỹ tín thác Constant, chịu sự quản lý của luật Hoa Kỳ và được bảo hiểm 130 triệu USD bởi FDIC",
+            "answer9": "Your savings are stored inside the Constant Vault, which is regulated under US law and protected by 130,000,000 USD FDIC insurance.",
             "question10": "Tôi có thể nạp thêm tiền vào khoản tiết kiệm trước khi đáo hạn không?",
             "answer10": "Bạn không thể nạp hoặc rút tiền trong khoản tiết kiệm khi chưa đáo hạn. Tuy nhiên, bạn có thể tạo ra 1 khoản tiết kiệm khác với mức kỳ hạn tùy thích",
             "question11": "Quỹ tín thác Constant là gì? ",
-            "answer11": "Quỹ tín thác Constant được kiểm toán và kiểm soát bởi Prime Trust - một tổ chức tài chính độc lập của Hoa Kỳ. Quỹ tín thác Constant hoạt động theo luật Mỹ và được bảo hiểm bởi FDIC với tổng giá trị là 130 triệu USD",
+            "answer11": "The Constant Vault is a publicly-audited trust overseen and managed by Prime Trust, a US accredited financial institution. The Constant Vault is regulated in the US and insured by the FDIC to the value of 130,000,000 USD.",
             "question12": "FDIC là ai?",
-            "answer12": "        <p>Công ty Bảo hiểm Ký thác Liên bang Hoa Kỳ (FDIC) được thành lập bởi chính phủ Mỹ để đảm bảo khả năng hoạt động của hệ thống tài chính Mỹ. Quỹ tín thác Constant được bảo hiểm bởi FDIC với số tiền lên đến 130 triệu USD. Bạn có thể tìm hiểu thêm về <a target=\"_blank\" href=\"https://www.fdic.gov\">FDIC tại đây.</a></p>\n      "
+            "answer12": "\n        <p>The Federal Deposit Insurance Corporation (FDIC) is a body set up by the US government to protect the integrity of the US financial system. It does this in a number of ways, including insuring deposits. Our Constant Vault is insured by FDIC to an indemnity limit of 130,000,000 USD. You can <a target=\"_blank\" href=\"https://www.fdic.gov\">read more about the FDIC on their website.</a></p>\n      "
         },
         "interest": {
             "question1": "Lãi được trả như thế nào?",
             "answer1": "Chúng tôi trả lãi mỗi ngày. Bạn có thể chọn rút lãi vào cuối kì hoặc bất cứ lúc nào bạn muốn. Lãi này sẽ không tính gộp vào tiền gốc.",
             "question2": "Lãi được tính như thế nào? ",
-            "answer2": "Lãi suất được tính dựa trên tỉ lệ phần trăm lãi suất năm với khoản tiết kiệm của bạn. Ví dụ, bạn tiết kiệm 500USD kì hạn 12 tháng, lãi suất 6%. Sau 1 năm, bạn sẽ nhận lãi 30 USD. Lãi được tính và trả theo ngày và tiếp tục nhận lãi không kì hạn.",
+            "answer2": "Your interest is calculated by applying the percentage rate of your Savings Plan to the amount of your deposit, and then dividing it by 365 to get a daily rate. Interest is not compounded, so if you deposit 500 USD for one year at an interest rate of 6%, you would earn 30 USD at the end of your term (about 0.08 USD per day).",
             "question3": "Làm cách nào để tôi theo dõi lãi suất của mình?",
             "answer3": "Sau khi đăng nhập vào tài khoản, nhấn vào “Sổ Tiết Kiệm”. Tổng số lãi nhận được nằm ở góc phải phía trên của màn hình. Ở đây bạn sẽ thấy lãi tăng lên mỗi ngày và bạn được rút lãi ra bất cứ lúc nào.",
             "question4": "Lãi suất có tăng/giảm trong tương lai? ",
@@ -1502,7 +1502,8 @@
         "fiatAmountResultLabel": "Theo tỉ giá thị trường hôm nay, bạn sẽ nhận được: {fiatAmount}{fiatCurrency}",
         "fee": "phí rút tiền: {fee}{currency}",
         "sellBtn": "RÚT TIỀN",
-        "getAmountFailed": "Xảy ra lỗi khi xác nhận số tiền. Xin vui lòng thử lại.",
+        "getAmountFailed": "Failed while getting amount",
+        "getFeeFailed": "Failed while calculating fee, please try again",
         "getCurrencyListFailed": "Đơn vị tiền tệ này không được hỗ trợ",
         "howMuchDoYouWantToWithdraw": "Bạn muốn rút bao nhiêu tiền?",
         "yourAnytimeBalance": "Số dư không kì hạn: {balance}{currency}",
@@ -1514,7 +1515,7 @@
         "trialLeft": "Chỉ còn {number} lần trải nghiệm dịch vụ miễn phí.",
         "noMoreTrialLeft": "Không còn trải nghiệm dịch vụ miễn phí.",
         "submitBtn": "TRẢI NGHIỆM MIỄN PHÍ",
-        "btnDesc": "Chỉ dành cho những khách hàng mới. $1000 này sẽ được trả lại cho Constant khi đáo hạn nhưng bạn sẽ được giữ toàn bộ phần lãi.",
+        "btnDesc": "New customers only. This 1000 USD trial deposit will be returned at the end of your chosen term, but you keep all the interest.",
         "termLabel": "CHỌN KÌ HẠN TIẾT KIỆM"
     },
     "termSelector": {
@@ -1529,8 +1530,10 @@
         "fiatAmountText": "{fiatAmount}{fiatCurrency}",
         "desc": "Bạn sẽ kiếm được: {interestAmountText} lãi sau 1 năm.",
         "desc1": "Bạn sẽ kiếm được: {interestAmountText} lãi sau {time}.",
-        "desc2": "Hết hạn trải nghiệm $1000 miễn phí. Bạn được giữ toàn bộ phần lãi.",
-        "trialExpires": "Hết hạn trải nghiệm $1000 miễn phí. Bạn được giữ toàn bộ phần lãi.",
+        "desc2": "The trial 1000 USD expires, but the interest is yours to keep.",
+        "desc3": "That means you'll be withdrawing {withdrawAmount} in {time} !",
+        "desc4": "Earn 1% on your existing balance, and withdraw anytime.",
+        "trialExpires": "The 1000 USD trial expires, but the interest is yours to keep.",
         "item": {
             "zero": {
                 "name": "Không kì hạn"
@@ -1553,7 +1556,7 @@
             "second": "",
             "third": ""
         },
-        "trialDesc": "\n<h5 style=\"color: white; margin-top: 50px; padding-right: 63px;line-height: 36px;\">\nChúng tôi tặng bạn <strong class=\"orangeThin\">khoản tiết kiệm $1000 để trải nghiệm</strong>. Khi hết kì hạn, <strong class=\"orangeThin\">bạn được giữ toàn bộ phần lãi</strong>.\n</h5>    ",
+        "trialDesc": "\n      <h5 style=\"color: white; margin-top: 50px; padding-right: 63px;line-height: 36px;\">\n        We’re giving you a <strong class=\"orangeThin\">1000 USD free trial</strong> deposit. At the end of the trial, <strong class=\"orangeThin\">you keep all the interest</strong>.\n      </h5>\n    ",
         "normalTitle": {
             "first": "Nhân lên nhiều lần",
             "second": "Khoản tiết kiệm của bạn."

@@ -91,7 +91,7 @@
         "saveAndGrowMoney": "Tiết kiệm & Hưởng ưu đãi",
         "login": "Đăng nhập",
         "openAnAccount": "Đăng kí tài khoản",
-        "yourSaving": "My Savings"
+        "yourSaving": "Tiết Kiệm"
     },
     "error": {
         "required": "Bắt buộc",
@@ -160,7 +160,7 @@
     "me": {
         "navigation": {
             "myProfile": "Hồ sơ của tôi",
-            "kycInformation": "KYC information",
+            "kycInformation": "Thông tin KYC",
             "myEmailPassword": "Email và mật khẩu",
             "myInformation": "Thông tin tài khoản",
             "sellOrders": "Lệnh bán",
@@ -172,7 +172,7 @@
             "preferecens": "Tuỳ chỉnh",
             "accountLevel": "Cấp độ tài khoản",
             "history": "Lịch sử giao dịch",
-            "bankInfo": "Bank information",
+            "bankInfo": "Thông tin ngân hàng",
             "referral": "Chương trình giới thiệu",
             "personalInfo": "Cá nhân",
             "myTransactions": "Hoạt động của tài khoản",
@@ -332,8 +332,8 @@
                 "success": "Thay đổi tên tài khoản thành công",
                 "failed": "Không thành công"
             },
-            "emailNotVerified": "Please verify your email.",
-            "verifyBtn": "Resend verification"
+            "emailNotVerified": "Xin vui lòng xác nhận email của bạn.",
+            "verifyBtn": "Gửi lại email xác minh"
         },
         "changePassword": {
             "newPasswordIsRequired": "Nhập mật khẩu mới",
@@ -621,7 +621,7 @@
                 },
                 "withdraw": "Rút tiền",
                 "transfer": "Chuyển khoản",
-                "saving": "Save now",
+                "saving": "Tiết kiệm ngay",
                 "dialog": {
                     "withdrawAccount": {
                         "title": "Tiết kiệm",
@@ -631,7 +631,7 @@
                         "confirm": "Ok",
                         "cancel": "Huỷ",
                         "messageConfirm": "Bạn đang chuẩn bị nạp {amount} Constant.",
-                        "validateMaxAmountError": "Sorry, you don't have enough Constant to deposit this amount.",
+                        "validateMaxAmountError": "Xin lỗi. Bạn không có đủ Constant để nạp.",
                         "validateMinAmountError": "Bạn không thể nhập số nhỏ hơn {amount} CONSTANT"
                     },
                     "checkTrialKyc": {
@@ -693,8 +693,8 @@
         "settings": "Cài đặt",
         "changeEmailPassword": "Email & Mật khẩu",
         "login": {
-            "popupTitle": "Welcome to Constant.",
-            "title": "Login to your account",
+            "popupTitle": "Constant xin chào.",
+            "title": "Đăng nhập vào tài khoản của bạn",
             "username": "Email của bạn",
             "password": "Mật khẩu",
             "loginButton": "Đăng nhập",
@@ -755,7 +755,7 @@
             "agreement": "Tôi xác nhận tôi đã 18 tuổi và đồng ý với việc {action}",
             "requiredAgreement": "Xác nhận bạn đã đọc và đồng ý với Thoả thuận sử dụng và Chính sách bảo mật của chúng tôi",
             "registerButton": "Đăng kí ngay!",
-            "loginButton": "Already have an account? Login",
+            "loginButton": "Bạn đã có tài khoản? Đăng nhập tại đây",
             "registerSuccessfully": "Thành công! Chào mừng tới Constant. Chúng tôi đã gửi email xác minh tới hộp thư đến của bạn.",
             "agreementAction": "Thoả thuận sử dụng và Chính sách bảo mật.",
             "registerFailed": "Có lỗi xảy ra khi tạo tài khoản. Vui lòng thử lại sau"
@@ -806,14 +806,14 @@
         "optionText": "hoặc",
         "howItWorks": {
             "step1": "BƯỚC 1",
-            "title1": "YOU MAKE A DEPOSIT",
-            "desc1": "Make a bank transfer of any amount to the FDIC insured Constant Vault.",
+            "title1": "NẠP TIỀN VÀO TÀI KHOẢN",
+            "desc1": "Chuyển khoản tới quỹ Constant, được đảm bảo bởi FDIC.",
             "step2": "BƯỚC 2",
-            "title2": "WE DIGITIZE YOUR MONEY",
-            "desc2": "Every dollar you have in the Vault is now represented by a digital dollar called Constant in your Savings account.",
+            "title2": "SỐ HOÁ ĐỒNG TIỀN",
+            "desc2": "Mỗi một USD bạn có ở trong quỹ Constant bây giờ tương đương với một Constant ở trong tài khoản tiết kiệm của bạn.",
             "step3": "BƯỚC 3",
-            "title3": "YOUR SAVINGS MULTIPLY",
-            "desc3": "Interest is paid out daily. You can withdraw Constant to any bank account and get local currency."
+            "title3": "ĐỒNG TIỀN TỰ SINH SÔI",
+            "desc3": "Lãi suất được trả hàng ngày. Bạn có thể rút Constant thành tiền về tài khoản ngân hàng bất cứ lúc nào."
         },
         "buy": {
             "title": "Mua",
@@ -1176,7 +1176,7 @@
         "midBanner0": "Chống mất giá",
         "midBanner1": "Chuyển khoản tới bất kì đâu",
         "midBanner2": "Hoàn toàn miễn phí",
-        "whatCaption0": "Earn 60x more in USD",
+        "whatCaption0": "Lãi suất gấp 60 lần cho USD",
         "whatCaption1": "Bảo hiểm giá trị $250k",
         "whatCaption2": " Kì hạn linh động",
         "whatCaption3": "Dễ dàng truy cập",
@@ -1185,12 +1185,12 @@
         "whatTitle1": "Lên tới 130 triệu USD",
         "whatTextLink1": "Đọc đầy đủ",
         "whatLink1": "/chính sách bảo mật",
-        "whatDesc1": "<p>Your account is insured up to $250,000 by the FDIC and US treasury. Constant is an SEC compliant US company. Enjoy peace of mind.</p>",
+        "whatDesc1": "<p>Bạn hoàn toàn có thể yên tâm khi gửi tiền với chúng tôi. Constant thoả mãn đầy đủ các tiêu chuẩn của SEC và tài khoản của bạn được bảo hiểm lên tới $250,000 bởi FDIC và Ngân khố Hoa Kỳ.</p>",
         "whatTitle2": "Bởi Chính phủ Hoa Kì",
         "whatTitle3": "Không yêu cầu số tiền tối thiểu",
-        "whatDesc0": "<p>Earn up to 60x more than with your average USD savings account, and multiply your savings without lifting a finger.</p>",
-        "whatDesc2": "<p>No minimum deposit, no fees. Withdraw anytime with the Anytime Account, or choose one of our fixed deposits to earn up to 6% APR.</p>",
-        "whatDesc3": "<p>Constant is accessible to anyone with an internet connection. Open an account in 15 seconds, anywhere in the world.</p>",
+        "whatDesc0": "<p>Hưởng lãi suất cao hơn 60 lần khi tiết kiệm bằng USD. Không tốn một cần chút công sức nào và đồng tiền của bạn sẽ tự sinh sôi.</p>",
+        "whatDesc2": "<p>Không yêu cầu số tiền gửi tối thiểu. Hoàn toàn miễn phí. Rút tiền về bất cứ lúc nào khi gửi không kì hạn hoặc hưởng lãi suất cao nhất lên đến 6%/năm với các khoản gửi có kì hạn.</p>",
+        "whatDesc3": "<p>Chỉ cần có kết nổi Internet, ai cũng có thể sử dụng Constant. Chỉ mất 15 giây để mở tài khoản dù bạn ở bất cứ đâu.</p>",
         "whatMore0": "Tại sao Constant có lãi suất cao đến vậy?",
         "whatMore1": "Constant bảo vệ tiền của bạn như thế nào?",
         "whatMore2": "Làm thế nào để chọn kì hạn tiết kiệm phù hợp?",
@@ -1499,21 +1499,21 @@
     "exchangeInputSellForm": {
         "amountInputLabel": "Rút tiền",
         "currencyDropdownLabel": "Đơn vị tiền tệ",
-        "fiatAmountResultLabel": "According to the markets today, you’ll receive: {fiatAmount} {fiatCurrency}",
-        "fee": "withdrawal fee: {fee} {currency}",
+        "fiatAmountResultLabel": "Theo tỉ giá thị trường hôm nay, bạn sẽ nhận được: {fiatAmount}{fiatCurrency}",
+        "fee": "phí rút tiền: {fee}{currency}",
         "sellBtn": "RÚT TIỀN",
         "getAmountFailed": "Xảy ra lỗi khi xác nhận số tiền. Xin vui lòng thử lại.",
         "getCurrencyListFailed": "Đơn vị tiền tệ này không được hỗ trợ",
         "howMuchDoYouWantToWithdraw": "Bạn muốn rút bao nhiêu tiền?",
-        "yourAnytimeBalance": "Your Anytime Balance: {balance} {currency}",
-        "whichCurrencyYouWant": "Which currency do you want to receive?"
+        "yourAnytimeBalance": "Số dư không kì hạn: {balance}{currency}",
+        "whichCurrencyYouWant": "Bạn muốn nhận đơn vị tiền tệ nào?"
     },
     "exchangeInputBuyTrialForm": {
-        "title": "\n      <p class=\"textCenter reset\">Choose a Savings Plan. See for yourself how it feels to earn <strong class=\"orangeLight\">60x more</strong> interest.</p>\n    ",
+        "title": "\n<p class=\"textCenter reset\">Chọn kì hạn gửi thích hợp. Nhận lãi suất <strong class=\"orangeLight\">cao hơn 60 lần</strong>. </p>    ",
         "highlightText": "bạn giữ toàn bộ phần lãi.",
         "trialLeft": "Chỉ còn {number} lần trải nghiệm dịch vụ miễn phí.",
         "noMoreTrialLeft": "Không còn trải nghiệm dịch vụ miễn phí.",
-        "submitBtn": "START YOUR FREE TRIAL",
+        "submitBtn": "TRẢI NGHIỆM MIỄN PHÍ",
         "btnDesc": "Chỉ dành cho những khách hàng mới. $1000 này sẽ được trả lại cho Constant khi đáo hạn nhưng bạn sẽ được giữ toàn bộ phần lãi.",
         "termLabel": "CHỌN KÌ HẠN TIẾT KIỆM"
     },
@@ -1527,10 +1527,10 @@
         "oneMonthTerm": "1 tháng",
         "term": "{term} tháng",
         "fiatAmountText": "{fiatAmount}{fiatCurrency}",
-        "desc": "You’ll earn: {interestAmountText} interest after 1 year.",
-        "desc1": "You’ll earn: {interestAmountText} interest after {time}.",
-        "desc2": "The trial $1000 expires, but the interest is yours to keep.",
-        "trialExpires": "The $1000 trial expires, but the interest is yours to keep.",
+        "desc": "Bạn sẽ kiếm được: {interestAmountText} lãi sau 1 năm.",
+        "desc1": "Bạn sẽ kiếm được: {interestAmountText} lãi sau {time}.",
+        "desc2": "Hết hạn trải nghiệm $1000 miễn phí. Bạn được giữ toàn bộ phần lãi.",
+        "trialExpires": "Hết hạn trải nghiệm $1000 miễn phí. Bạn được giữ toàn bộ phần lãi.",
         "item": {
             "zero": {
                 "name": "Không kì hạn"
@@ -1547,13 +1547,13 @@
         }
     },
     "saving": {
-        "trialLeftNum": "ONLY {trialLeft} TRIALS LEFT",
+        "trialLeftNum": "CHỈ CÒN {trialLeft} LẦN TRẢI NGHIỆM MIỄN PHÍ",
         "trialTitle": {
-            "first": "Welcome to the world’s best savings account.",
+            "first": "Chào mừng bạn đến với dịch vụ gửi tiết kiệm tốt nhất trên thế giới.",
             "second": "",
             "third": ""
         },
-        "trialDesc": "\n      <h5 style=\"color: white; margin-top: 50px; padding-right: 63px;line-height: 36px;\">\n        We’re giving you a <strong class=\"orangeThin\">$1000 free trial</strong> deposit. At the end of the trial, <strong class=\"orangeThin\">you keep all the interest</strong>.\n      </h5>\n    ",
+        "trialDesc": "\n<h5 style=\"color: white; margin-top: 50px; padding-right: 63px;line-height: 36px;\">\nChúng tôi tặng bạn <strong class=\"orangeThin\">khoản tiết kiệm $1000 để trải nghiệm</strong>. Khi hết kì hạn, <strong class=\"orangeThin\">bạn được giữ toàn bộ phần lãi</strong>.\n</h5>    ",
         "normalTitle": {
             "first": "Nhân lên nhiều lần",
             "second": "Khoản tiết kiệm của bạn."
@@ -1574,6 +1574,6 @@
         "makeDirectOrderFailed": "Lệnh của bạn không được tạo thành công"
     },
     "yourSaving": {
-        "hello": "\n      <h5>Hello <strong>{name}</strong>. Let's see how your money is doing today.</h5>\n    "
+        "hello": "\n<h5>Xin chào <strong>{name}</strong>. Hôm nay bạn đã có thêm bao nhiêu tiền rồi?</h5>    "
     }
 }

@@ -63,7 +63,7 @@
         "signUp": "Đăng ký",
         "cesText": "Bạn có mã nhận thưởng ở CES2019?",
         "cesLink": "Nhận 1 Constant miễn phí ngay!",
-        "referral": "Give 5 USD, Get 5 USD",
+        "referral": "Gửi 5 USD, nhận 5 USD",
         "promotionPrograms": "Các chương trình khuyến mãi",
         "contactUs": "Liên hệ với chúng tôi",
         "aboutUs": "Về chúng tôi",
@@ -585,8 +585,8 @@
                 "getListFailed": "Xảy ra lỗi khi xác nhận khoản đầu tư của bạn. Xin vui lòng thử lại.",
                 "amount": "Số lượng",
                 "interest": "Lãi suất",
-                "apr": "APR",
-                "haveTimeAccount": "{term}-{termType} deposit",
+                "apr": "/năm",
+                "haveTimeAccount": "{term}{termType} tiền gửi",
                 "anyTimeAccount": "Gửi không kì hạn",
                 "endTerm": "Đáo hạn ngày: ",
                 "trial": "THỬ NGHIỆM",
@@ -603,7 +603,7 @@
                             "description": "Gửi tiết kiệm từ 1,000 USD trở lên"
                         },
                         "item2": {
-                            "title": "+3% (+1.4% claimed)",
+                            "title": "+3% (đã nhận +1.4%)",
                             "description": "Nhận thêm 0.2% cho mỗi {refer}.",
                             "refer": "Giới thiệu tối đa cho 15 người bạn."
                         },
@@ -1185,10 +1185,10 @@
         "whatTitle1": "Lên đến 130 triệu USD",
         "whatTextLink1": "Đọc đầy đủ",
         "whatLink1": "/chính sách bảo mật",
-        "whatDesc1": "<p>Bạn hoàn toàn có thể yên tâm khi gửi tiền với chúng tôi. Constant thoả mãn đầy đủ các tiêu chuẩn của SEC và tài khoản của bạn được bảo hiểm lên tới $250,000 bởi FDIC và Ngân khố Hoa Kỳ.</p>",
+        "whatDesc1": "<p>Your account is insured up to 250,000 USD by the FDIC and US treasury. Constant is an SEC compliant US company.</p>",
         "whatTitle2": "Bởi Chính phủ Hoa Kì",
         "whatTitle3": "Không yêu cầu số tiền tối thiểu",
-        "whatDesc0": "<p>Hưởng lãi suất cao hơn 60 lần khi tiết kiệm bằng USD. Không tốn một cần chút công sức nào và đồng tiền của bạn sẽ tự sinh sôi.</p>",
+        "whatDesc0": "<p>Earn up to 60x more than with your average USD savings account Interest is paid out daily for you to withdraw anytime.</p>",
         "whatDesc2": "<p>Không yêu cầu số tiền gửi tối thiểu. Hoàn toàn miễn phí. Rút tiền về bất cứ lúc nào khi gửi không kì hạn hoặc hưởng lãi suất cao nhất lên đến 6%/năm với các khoản gửi có kì hạn.</p>",
         "whatDesc3": "<p>Chỉ cần có kết nổi Internet, ai cũng có thể sử dụng Constant. Chỉ mất 15 giây để mở tài khoản dù bạn ở bất cứ đâu.</p>",
         "whatMore0": "Tại sao Constant có lãi suất cao đến vậy?",
@@ -1389,14 +1389,14 @@
             "answer1": "Chương trình dùng thử hiện chưa có thời gian kết thúc. Chúng tôi luôn nỗ lực để bạn trải nghiệm được Constant lâu nhất có thể ",
             "question2": "Ai có thể tham gia chương trình này? ",
             "answer2": "Chương trình dành cho mọi khách hàng mới tạo tài khoản và chưa tham gia chương trình trước đây",
-            "question3": "Tôi có thể rút 1000$ ra không?",
+            "question3": "Tôi có thể rút 1,000 USD ra không?",
             "answer3": "Rất tiếc là bạn không thể rút 1,000 USD trong tài khoản dùng thử. Chúng tôi sẽ lấy lại 1,000 USD đó khi tài khoản dùng thử của bạn đáo hạn, nhưng bạn được giữ toàn bộ phần lãi.",
             "question4": "Cách kiểm tra lãi từ khoản tiết kiệm này ra sao?",
             "answer4": "Sau khi đăng nhập vào tài khoản, nhấn vào “Sổ Tiết Kiệm”. Tổng số lãi nhận được nằm ở góc phải phía trên của màn hình. Ở đây bạn sẽ thấy lãi tăng lên mỗi ngày và bạn được rút lãi ra bất cứ lúc nào.",
             "question5": "Khi đáo hạn, điều gì xảy ra?",
             "answer5": "Đến kì đáo hạn, chúng tôi sẽ lấy lại 1,000 USD phần gốc. Nếu như bạn chưa rút lãi, chúng tôi sẽ gửi toàn bộ phần lãi cho bạn.",
             "question6": "Tôi có thể nạp tiền vào tài khoản dùng thử này không? ",
-            "answer6": "Bạn không thể nạp tiền vào tài khoản đang có 1000$. Thay vào đó, hãy tạo sổ tiết kiệm mới với mức kì hạn tùy thích",
+            "answer6": "Bạn không thể nạp tiền vào tài khoản đang có 1,000 USD. Thay vào đó, hãy tạo sổ tiết kiệm mới với mức kì hạn tùy thích.",
             "question7": "Khoản tiết kiệm của tôi có thể có mức lãi khác với khoản dùng thử không? ",
             "answer7": "Hoàn toàn có thể! Tài khoản dùng thử sẽ tách biệt với những sổ tiết kiệm khác của bạn. Bạn có thể tự do lựa chọn số tiền và kì hạn tiết kiệm cho những sổ tiết kiệm sau này của mình"
         },
@@ -1556,7 +1556,7 @@
             "second": "",
             "third": ""
         },
-        "trialDesc": "\n<h5 style=\"color: white; margin-top: 50px; padding-right: 63px;line-height: 36px;\">\nChúng tôi tặng bạn <strong class=\"orangeThin\">khoản tiết kiệm $1000</strong> để trải nghiệm dịch vụ. Khi đáo hạn, <strong class=\"orangeThin\">bạn được giữ toàn bộ phần lãi</strong>.\n</h5>    ",
+        "trialDesc": "\n<h5 style=\"color: white; margin-top: 50px; padding-right: 63px;line-height: 36px;\">\nChúng tôi tặng bạn <strong class=\"orangeThin\">khoản tiết kiệm 1,000 USD</strong> để trải nghiệm dịch vụ. Khi đáo hạn, <strong class=\"orangeThin\">bạn được giữ toàn bộ phần lãi</strong>.\n</h5>    ",
         "normalTitle": {
             "first": "Nhân lên nhiều lần",
             "second": "Khoản tiết kiệm của bạn."
@@ -1578,5 +1578,63 @@
     },
     "yourSaving": {
         "hello": "\n<h5>Xin chào <strong>{name}</strong>. Hôm nay bạn đã có thêm bao nhiêu tiền rồi?</h5>    "
+    },
+    "borrow": {
+        "contact": {
+            "title": "Get the capital you need for your PO, even when banks say no.",
+            "desc": "\n        <p>At a low, simple and transparent <strong>0.5% per week</strong>.</p>\n      ",
+            "form": {
+                "placeholder": {
+                    "companyName": "What's the name of your company?",
+                    "poName": "What's the PO value we can help fund?",
+                    "companyExciting": "What's exciting about your company today?",
+                    "companyTarget": "What's your company looking forward to?",
+                    "email": "Your email address",
+                    "phone": "Your phone number"
+                },
+                "btnSubmit": "FINANCE MY PURCHASE ORDER",
+                "alert": {
+                    "success": "Your request is sent successfully",
+                    "failed": "Your request was failed"
+                }
+            }
+        },
+        "what": {
+            "whatCaption0": "24 hour turnaround",
+            "whatCaption1": "No credit check on you or your business",
+            "whatCaption2": "The world’s lowest PO financing rate",
+            "whatCaption3": "No limit on your growth",
+            "whatTitle": "What can you do with Constant?",
+            "whatTitle0": "Save in USD",
+            "whatTitle1": "Up to 130M USD",
+            "whatTextLink1": "Read the full policy",
+            "whatLink1": "/privacy-policy",
+            "whatDesc1": "<p>Banks require good credit based on a solid financial history. That’s not always possible for young businesses. That’s why Constant finances loans based on the creditworthiness of your customers.</p>",
+            "whatTitle2": "By the US Government",
+            "whatTitle3": "No minimum deposit",
+            "whatDesc0": "<p>Banks can take weeks or even months to approve a business loan.  Your PO can’t wait that long.  Constant helps you seize that opportunity.</p>",
+            "whatDesc2": "<p>The beauty of being 100% digital is that we can offer low interest rates on a global scale. No matter how big or small your business is.</p>",
+            "whatDesc3": "<p>Bank loans lack flexibility. If you need more cash, you’ll need a new loan. Constant gives you a line of credit based on your sales volume, and your track record of growth.</p>",
+            "whatMore0": "How we can offer 60x",
+            "whatMore1": "How we protect your money",
+            "whatMore2": "How to pick a plan that’s right for you",
+            "whatMore3": "How people are saving with Constant"
+        },
+        "howItWorks": {
+            "step1": "STEP 1",
+            "title1": "SECURE A PURCHASE ORDER FROM YOUR CUSTOMER",
+            "desc1": "Congrats! This is a growth opportunity that you can easily seize.",
+            "step2": "STEP 2",
+            "title2": "APPLY FOR CONSTANT FINANCING ONLINE",
+            "desc2": "Apply in less than 5 minutes by submitting the PO, with basic details about your business and customers.",
+            "step3": "STEP 3",
+            "title3": "GET THE CAPITAL TO FULFILL YOUR PO",
+            "desc3": "Enjoy quick turnaround. Finance up to 100% of your POs and stay competitive.  Rinse and repeat for your next order."
+        },
+        "blockTitle2": "How it works",
+        "blockDesc2": "\n      <h5>Secure cash with purchase orders.</h5>\n      <br />\n      <h5>We understand that money is fast flowing. If you sell products to reputable clients - established companies, government organizations, or similar - we can fund you the working capital you need to fulfill those orders, in confidence of future payment from your client.</h5>\n    ",
+        "brands": {
+            "title": "Our clients work with some of the world’s leading brands"
+        }
     }
 }

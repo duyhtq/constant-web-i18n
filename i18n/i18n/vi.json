@@ -1581,60 +1581,60 @@
     },
     "borrow": {
         "contact": {
-            "title": "Get the capital you need for your PO, even when banks say no.",
-            "desc": "\n        <p>At a low, simple and transparent <strong>0.5% per week</strong>.</p>\n      ",
+            "title": "Nhận ngay số tiền tạm ứng mà bạn cần cho đơn hàng của mình, ngay cả khi ngân hàng nói \"không\".",
+            "desc": "\n<p>Đơn giản, rõ ràng và lãi suất chỉ <strong>0.5%/tuần</strong>.</p>      ",
             "form": {
                 "placeholder": {
-                    "companyName": "What's the name of your company?",
-                    "poName": "What's the PO value we can help fund?",
-                    "companyExciting": "What's exciting about your company today?",
-                    "companyTarget": "What's your company looking forward to?",
-                    "email": "Your email address",
-                    "phone": "Your phone number"
+                    "companyName": "Tên công ty của bạn là gì?",
+                    "poName": "Bạn cần chúng tôi tạm ứng bao nhiêu cho đơn hàng của bạn?",
+                    "companyExciting": "Ngày hôm nay ở công ty bạn có điều gì thú vị?",
+                    "companyTarget": "Công ty của bạn đang hướng đến mục tiêu nào?",
+                    "email": "Địa chỉ email của bạn",
+                    "phone": "Số điện thoại của bạn"
                 },
-                "btnSubmit": "FINANCE MY PURCHASE ORDER",
+                "btnSubmit": "CHO VAY TẠM ỨNG",
                 "alert": {
-                    "success": "Your request is sent successfully",
-                    "failed": "Your request was failed"
+                    "success": "Yêu cầu của bạn đã được gửi đi thành công",
+                    "failed": "Yêu cầu của bạn không thành công"
                 }
             }
         },
         "what": {
-            "whatCaption0": "24 hour turnaround",
-            "whatCaption1": "No credit check on you or your business",
-            "whatCaption2": "The world’s lowest PO financing rate",
-            "whatCaption3": "No limit on your growth",
-            "whatTitle": "What can you do with Constant?",
-            "whatTitle0": "Save in USD",
-            "whatTitle1": "Up to 130M USD",
-            "whatTextLink1": "Read the full policy",
-            "whatLink1": "/privacy-policy",
-            "whatDesc1": "<p>Banks require good credit based on a solid financial history. That’s not always possible for young businesses. That’s why Constant finances loans based on the creditworthiness of your customers.</p>",
-            "whatTitle2": "By the US Government",
-            "whatTitle3": "No minimum deposit",
-            "whatDesc0": "<p>Banks can take weeks or even months to approve a business loan.  Your PO can’t wait that long.  Constant helps you seize that opportunity.</p>",
-            "whatDesc2": "<p>The beauty of being 100% digital is that we can offer low interest rates on a global scale. No matter how big or small your business is.</p>",
-            "whatDesc3": "<p>Bank loans lack flexibility. If you need more cash, you’ll need a new loan. Constant gives you a line of credit based on your sales volume, and your track record of growth.</p>",
-            "whatMore0": "How we can offer 60x",
-            "whatMore1": "How we protect your money",
-            "whatMore2": "How to pick a plan that’s right for you",
-            "whatMore3": "How people are saving with Constant"
+            "whatCaption0": "Xét duyệt cho vay trong 24h",
+            "whatCaption1": "Không kiểm tra tín dụng cá nhân hay doanh nghiệp",
+            "whatCaption2": "Cho vay tạm ứng lãi suất thấp nhất thế giới",
+            "whatCaption3": "Không giới hạn số tiền",
+            "whatTitle": "Các tiện ích của Constant",
+            "whatTitle0": "Tiết kiệm bằng USD",
+            "whatTitle1": "Lên đến 130 triệu USD",
+            "whatTextLink1": "Đọc đầy đủ chính sách",
+            "whatLink1": "/chính sách bảo mật",
+            "whatDesc1": "<p>Để vay được tiền ngân hàng, khách hàng phải có điểm tín dụng tốt dựa trên nền tảng tài chính vững chắc trong thời gian dài. Điều này không phải lúc nào cũng khả thi với các doanh nghiệp trẻ. Để đáp ứng nhu cầu này, Constant hỗ trợ những khoản vay mà không dựa trên điểm tín dụng của khách hàng.</p>",
+            "whatTitle2": "Bởi Chính phủ Hoa Kì",
+            "whatTitle3": "Không yêu cầu số tiền tối thiểu",
+            "whatDesc0": "<p>Phải mất vài tuần hoặc có khi cả tháng để ngân hàng xét duyệt cho vay. Đơn hàng của bạn không thể đợi lâu đến thế. Constant sẽ giúp bạn xoá tan nỗi lo âu này để có thể tận dụng cơ hội phát triển.</p>",
+            "whatDesc2": "<p>Được số hoá 100% nên chúng tôi có thể chào mời lãi suất rất thấp trên quy mô toàn cầu dù doanh nghiệp của bạn lớn hay nhỏ.</p>",
+            "whatDesc3": "<p>Các khoản vay của ngân hàng rất thiếu linh động. Nếu bạn cần thêm tiền mặt, bạn cần một khoản vay mới. Constant cung cấp cho bạn một khoản tín dụng dựa trên doanh số bán hàng và bạn có thể theo dõi sự phát triển của doanh nghiệp của mình.</p>",
+            "whatMore0": "Tại sao Constant có lãi suất cao đến vậy?",
+            "whatMore1": "Constant bảo vệ tiền của bạn như thế nào?",
+            "whatMore2": "Cách chọn kì hạn tiết kiệm phù hợp",
+            "whatMore3": "Mọi người đang sử dụng Constant để tiết kiệm như thế nào?"
         },
         "howItWorks": {
-            "step1": "STEP 1",
-            "title1": "SECURE A PURCHASE ORDER FROM YOUR CUSTOMER",
-            "desc1": "Congrats! This is a growth opportunity that you can easily seize.",
-            "step2": "STEP 2",
-            "title2": "APPLY FOR CONSTANT FINANCING ONLINE",
-            "desc2": "Apply in less than 5 minutes by submitting the PO, with basic details about your business and customers.",
-            "step3": "STEP 3",
-            "title3": "GET THE CAPITAL TO FULFILL YOUR PO",
-            "desc3": "Enjoy quick turnaround. Finance up to 100% of your POs and stay competitive.  Rinse and repeat for your next order."
+            "step1": "BƯỚC 1",
+            "title1": "ĐẢM BẢO MỘT ĐƠN HÀNG TỪ KHÁCH HÀNG CỦA BẠN",
+            "desc1": "Chúc mừng! Đây là một cơ hội cực tốt mà bạn có thể nắm bắt được dễ dàng.",
+            "step2": "BƯỚC 2",
+            "title2": "LÀM THỦ TỤC CHO VAY TẠM ỨNG ONLINE",
+            "desc2": "Chỉ cần những thông tin cơ bản nhất về doanh nghiệp và khách hàng của bạn. Mất không đến 5 phút để đăng kí. ",
+            "step3": "BƯỚC 3",
+            "title3": "NHẬN NGAY VỐN ĐỂ THỰC HIỆN ĐƠN HÀNG",
+            "desc3": "Thủ tục nhanh gọn. Hỗ trợ vay tạm ứng 100%. Luôn sẵn sàng hỗ trợ cho đơn hàng tiếp theo của bạn."
         },
-        "blockTitle2": "How it works",
-        "blockDesc2": "\n      <h5>Secure cash with purchase orders.</h5>\n      <br />\n      <h5>We understand that money is fast flowing. If you sell products to reputable clients - established companies, government organizations, or similar - we can fund you the working capital you need to fulfill those orders, in confidence of future payment from your client.</h5>\n    ",
+        "blockTitle2": "Cơ chế hoạt động",
+        "blockDesc2": "\n      <h5>Tiền đảm bảo với đơn hàng.</h5>\n      <br />\n      <h5>Chúng tôi hiểu rằng dòng tiền di chuyển rất nhanh. Nếu bạn bán sản phẩm cho khách hàng có uy tín - những công ty được thành lập lâu đời, tổ chức chính phủ, hoặc tương tự như vậy - chúng tôi có thể hỗ trợ bạn vốn lưu động bạn cần phải đáp ứng những đơn đặt hàng, với niềm tin khách hàng của bạn sẽ thanh toán trong tương lai.</h5>\n    ",
         "brands": {
-            "title": "Our clients work with some of the world’s leading brands"
+            "title": "Khách hàng của chúng tôi làm việc với một số thương hiệu hàng đầu thế giới"
         }
     }
 }

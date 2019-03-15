@@ -29,8 +29,8 @@
         }
     },
     "footer": {
-        "title1": "\n<h3>Hãy để đồng tiền tự sinh sôi.</h3>    ",
-        "title2": "Tiết Kiệm USD Lãi Suất Cao Tại Đây",
+        "title1": "\n    <h3>Grow your money safely, secured and multiply your interest</h3>\n    ",
+        "title2": "START SAVING TODAY",
         "getSocial": "Mạng xã hội",
         "titleFoundation": "Thông tin",
         "titleConstant": "Mua Constant",
@@ -54,13 +54,14 @@
         "termOfUse": "Điều Khoản Sử Dụng",
         "privacy": "Chính Sách Bảo Mật",
         "facebookLink": "https://www.facebook.com/ConstantVietNam/",
-        "mediumLink": "https://medium.com/@constantvietnam"
+        "mediumLink": "https://medium.com/@constantvietnam",
+        "contactUs": "Contact us:"
     },
     "headerBar": {
-        "save": "Tiết Kiệm",
+        "save": "Invest",
         "borrow": "Vay",
         "signIn": "ĐĂNG NHẬP",
-        "signUp": "Đăng ký",
+        "signUp": "SIGN UP",
         "cesText": "Bạn có mã nhận thưởng ở CES2019?",
         "cesLink": "Nhận 1 Constant miễn phí ngay!",
         "referral": "Gửi 5 USD, nhận 5 USD",
@@ -157,6 +158,11 @@
         "8003": "Định dạng tập tin không phù hợp",
         "8004": "Tải lên tập tin thất bại"
     },
+    "form": {
+        "required": "Required",
+        "unSupportFile": "Unsupported Format",
+        "exceedSize": "File too large"
+    },
     "me": {
         "navigation": {
             "myProfile": "Hồ sơ của tôi",
@@ -168,6 +174,7 @@
             "bookingOrders": "Lệnh Bán",
             "myOrders": "Gửi và rút tiền",
             "localHistory": "Chuyển khoản và thu nhập lãi",
+            "wallets": "My Wallets",
             "changePassword": "Đổi mật khẩu",
             "preferecens": "Tuỳ chỉnh",
             "accountLevel": "Cấp độ tài khoản",
@@ -179,6 +186,47 @@
             "yourInvest": "Khoản đầu tư của bạn",
             "myAgent": "Đại lí của tôi",
             "yourAccreditation": "Độ tín nhiệm của bạn"
+        },
+        "wallet": {
+            "title": "This is your wallet address you could send Constant to"
+        },
+        "kyc": {
+            "needEmail": "You need to verify your email first.",
+            "reviewing": "\n        <p>Thanks, it’s nice to meet you.</p>\n        <p>\n          We’re looking over your information and will let you know once you’re\n          good to go.\n        </p>\n      ",
+            "verifiedMsg": "\n        <p>Great, everything's in order and your identity has been verified.</p>\n        <p>Thanks for taking the time to tell us about yourself.</p>\n        <p>Welcome to the full Constant Experience.</p>\n      ",
+            "titleStep1": "Hi. Tell us more about yourself.",
+            "titleStep2": "Thanks. Now we need a proof of address.",
+            "lFirstName": "First Name",
+            "plFirstName": "First Name",
+            "lMiddleName": "Middle Name",
+            "plMiddleName": "Middle Name (Optional)",
+            "lLastName": "Last Name",
+            "plLastName": "Last Name",
+            "lBirthday": "Birthday",
+            "isUS": "Are you a US Citizen?",
+            "isUSYes": "Yes",
+            "isUSNo": "No",
+            "lTaxCountry": "Country listed on your ID",
+            "plTaxCountry": "Select your tax country",
+            "lPhone": "Phone Number",
+            "lSSN": "Social Security Number",
+            "lIDNumber": "ID Number",
+            "lDocType": "Type of ID",
+            "plDocType": "Select your ID type",
+            "btnSubmit": "Submit",
+            "lUpload": "Upload an image of the front of your {type}",
+            "descIDUpload": "Please make sure that the photo is complete and clearly visible, in BMP, JPG, JPEG, or PNG format, and is smaller than 3MB.",
+            "lAddrStr1": "Address Street 1",
+            "lAddrCountry": "Country on your proof of address",
+            "plAddrCountry": "Select your country",
+            "lAddrCity": "City",
+            "plAddrCity": "Select your city",
+            "lRegion": "State/Province/Region",
+            "lZipcode": "Zip Code",
+            "plZipcode": "12345",
+            "lAddrUpload": "Please upload a document verifying the address above.",
+            "descAddrUpload": "<div>\n        Valid documents: utility bill, phone bill, mortgage statement, tenancy\n        agreement, bank/credit card statement, insurance letter (motor, home, or\n        life), or financial statement (pension, endowment). <br />\n        <b>Document must be dated within the last 90 days. </b>\n        <br />\n        Please ensure address in proof of address document matches address\n        provided in application.\n      </div>\n      ",
+            "btnBack": "Back"
         },
         "buyOrder": {
             "title": "Danh Sách Lệnh Mua",
@@ -327,6 +375,7 @@
             "email": "Email",
             "nickname": "Tên tài khoản",
             "nickname_note": "Tên này sẽ được hiển thị khi thực hiện giao dịch",
+            "language": "Language",
             "alert": {
                 "passwordFailed": "Cập nhật mật khẩu không thành công",
                 "success": "Thay đổi tên tài khoản thành công",
@@ -563,7 +612,7 @@
             "sendCodeSuccess": "Mã xác minh đã được gửi tới email của bạn. Vui lòng kiểm tra email.",
             "sendCodeFailed": "Có lỗi xảy ra khi gửi mã xác minh. Xin vui lòng thử lại!",
             "verifyFailed": "Xác minh tài khoản không thành công, xin vui lòng thử lại!",
-            "verifySuccess": "Xác minh email thành công. Vui lòng hoàn tất xác minh KYC để mua Constant trực tiếp từ hệ thống."
+            "verifySuccess": "Your email was verified successfully."
         },
         "phoneVerification": {
             "sendCodeSuccess": "Mã xác minh đã được gửi tới điện thoại của bạn. Xin vui lòng kiểm tra điện thoại.",
@@ -585,7 +634,7 @@
                 "getListFailed": "Xảy ra lỗi khi xác nhận khoản đầu tư của bạn. Xin vui lòng thử lại.",
                 "amount": "Số lượng",
                 "interest": "Lãi suất",
-                "apr": "/năm",
+                "apr": "ROI",
                 "haveTimeAccount": "{term}{termType} tiền gửi",
                 "anyTimeAccount": "Gửi không kì hạn",
                 "endTerm": "Đáo hạn ngày: ",
@@ -794,26 +843,26 @@
     },
     "home": {
         "blockTitle1": "Những chia sẻ của khách hàng",
-        "blockDesc1": "Tiết kiệm hiệu quả hơn với Constant.",
+        "blockDesc1": "People make smarter investments with Constant.",
         "blockTitle2": "Cơ chế hoạt động",
         "blockCap2": "Hưởng lãi suất cao hơn 60 lần so với các ngân hàng khác.",
-        "blockDesc2": "\n<h5>Constant chia lãi cho các khoản tiết kiệm dựa trên kết quả đầu tư theo nghiệp vụ ngân hàng. Tuy nhiên, chúng tôi ưu việt hơn: Constant trao phần lớn lãi cho người dùng. Bạn xứng đáng nhận được lãi nhiều hơn từ khoản tích lũy vất vả của mình.</h5>\n<br />\n<h5> Chúng tôi thay nhân sự bằng công nghệ, thay nhà đầu tư bằng thuật toán để vận hành tinh gọn hơn, thông minh hơn và trao cho bạn nhiều lợi ích hơn.</h5>    ",
+        "blockDesc2": "\n    ",
         "blockTitle3": "Sứ mệnh của Constant",
         "blockCap3": "Chúng tôi mong muốn xây dựng thành công một hệ thống tài chính công bằng và tự do hơn.",
-        "titleBlock4": "Những lí do mà bạn nên tiết kiệm với Constant.",
-        "titleCap4": "Constant đang là giải pháp tiết kiệm chủ yếu của nhiều khách hàng",
+        "titleBlock4": "Why you should invest with Constant.",
+        "titleCap4": "Our investment options all offer fixed returns, and have different levels of flexibility to choose from. Get your money to work for you.",
         "titleDesc4": "\n      <p></p>\n      <p></p>\n    ",
         "optionText": "hoặc",
         "howItWorks": {
             "step1": "BƯỚC 1",
-            "title1": "NẠP TIỀN VÀO TÀI KHOẢN",
-            "desc1": "Chuyển khoản tới quỹ Constant, được đảm bảo bởi FDIC.",
+            "title1": "YOU MAKE AN INVESTMENT",
+            "desc1": "Choose among our flexible Investment Plans, then make a bank transfer of any amount to the FDIC insured Constant Vault. Your funds are held in USD, and every user is protected up to $250,000.",
             "step2": "BƯỚC 2",
-            "title2": "SỐ HOÁ ĐỒNG TIỀN",
-            "desc2": "Mỗi một USD bạn có ở trong quỹ Constant bây giờ tương đương với một Constant ở trong tài khoản tiết kiệm của bạn.",
+            "title2": "YOUR MONEY MULTIPLIES",
+            "desc2": "No matter which commitment period you choose, returns are paid out daily into a Flexible Account. Flexible means you can withdraw whenever you like, and earn an extra 1% annually. Stay liquid and make profit on your profit.",
             "step3": "BƯỚC 3",
-            "title3": "ĐỒNG TIỀN TỰ SINH SÔI",
-            "desc3": "Lãi suất được trả hàng ngày. Bạn có thể rút Constant thành tiền về tài khoản ngân hàng bất cứ lúc nào."
+            "title3": "YOU WITHDRAW PROFIT",
+            "desc3": "Your investment income is in USD, but you can withdraw it to any local bank account at the end of the commitment period. Or you could reinvest it to keep growing your money."
         },
         "buy": {
             "title": "Mua",
@@ -864,7 +913,7 @@
                     "reference": "Mã giao dịch"
                 },
                 "sell": {
-                    "title": "Đại lí sẽ gửi tiền cho:",
+                    "title": "Where should we send your investment income to?",
                     "caption": "ĐỔI CONSTANT RA TIỀN",
                     "headLine": "Nhận tiền trực tiếp vào tài khoản ngân hàng.",
                     "redeemSuccessful": "Thực hiện lệnh bán thành công",
@@ -919,7 +968,18 @@
                     "bank": "Ngân hàng"
                 },
                 "introHolderTemplate": "\n<h1>Mua nội địa tại {country}</h1>\n        <p>Để trở thành người đầu tiên mua và bán Constant tại quốc gia của bạn, hãy liên hệ với chúng tôi để bắt đầu</p>\n        <p>Gửi email cho chúng tôi tại <a href=\"mailto:{email}\">{email}</a></p>\n        <p>Hoặc</p>\n        <p>Chat với chúng tôi <a href=\"telegram:{telegram}\">{telegram}</a></p>\n        ",
-                "confirmTemplate": "\n<div name=\"thanks\">\n<p>Cảm ơn! Xin vui lòng gửi <strong>{FiatAmount}{FiatCurrency}</strong> tới tài khoản ngân hàng của người bán.</p>\n</div>\n<div name=\"bank\">\n<p>\n<span>Tên ngân hàng:</span>\n<span>{BankName}</span>\n</p>\n<p>\n<span>Tên tài khoản:</span>\n<span>{BankAccountName}</span>\n</p>\n<p>\n<span>Số tài khoản:</span>\n<span>{BankAccountNumber}</span>\n</p>\n<p>\n<span>Số tiền:</span>\n<span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n</p>\n<p>\n<span>Constant:</span>\n<span>{Amount}&nbsp;{Currency}</span>\n</p>\n<p>\n<span>Mã giao dịch</span>\n<span>{Reference}</span>\n</p>\n</div>\n<div name=\"notice\">\n<b name=\"important\">CHÚ Ý:</b>\n<span>\nLuôn ghi mã giao dịch <b>{Reference}</b> trong phần nội dung chuyển khoản\n</span>\n</div>\n<div name=\"window\">\n<strong name=\"minutes\">30 PHÚT:</strong>\n<span>\nVui lòng chuyển khoản <b>trong vòng 30 phút</b>. Nếu không, giao dịch sẽ tự động bị huỷ bỏ.\n</span>\n</div>        "
+                "confirmTemplate": "\n<div name=\"thanks\">\n<p>Cảm ơn! Xin vui lòng gửi <strong>{FiatAmount}{FiatCurrency}</strong> tới tài khoản ngân hàng của người bán.</p>\n</div>\n<div name=\"bank\">\n<p>\n<span>Tên ngân hàng:</span>\n<span>{BankName}</span>\n</p>\n<p>\n<span>Tên tài khoản:</span>\n<span>{BankAccountName}</span>\n</p>\n<p>\n<span>Số tài khoản:</span>\n<span>{BankAccountNumber}</span>\n</p>\n<p>\n<span>Số tiền:</span>\n<span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n</p>\n<p>\n<span>Constant:</span>\n<span>{Amount}&nbsp;{Currency}</span>\n</p>\n<p>\n<span>Mã giao dịch</span>\n<span>{Reference}</span>\n</p>\n</div>\n<div name=\"notice\">\n<b name=\"important\">CHÚ Ý:</b>\n<span>\nLuôn ghi mã giao dịch <b>{Reference}</b> trong phần nội dung chuyển khoản\n</span>\n</div>\n<div name=\"window\">\n<strong name=\"minutes\">30 PHÚT:</strong>\n<span>\nVui lòng chuyển khoản <b>trong vòng 30 phút</b>. Nếu không, giao dịch sẽ tự động bị huỷ bỏ.\n</span>\n</div>        ",
+                "accountName": "Account Name:",
+                "accountNumber": "Account Number:",
+                "amount": "Amount:",
+                "constant": "Constant:",
+                "reference": "Reference:",
+                "buyThankMsg": "Please wire {fiatAmount} {fiatCurrency} to the seller's bank account.",
+                "importantMsg": "Do include your reference number {referenceNumber} in the transfer description.",
+                "important": "IMPORTANT",
+                "thankYou": "Thank you!",
+                "minuteWindow": "15 MINUTE WINDOW:",
+                "minuteWindowDescription": "Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled."
             },
             "sell": {
                 "type": "Bán",
@@ -983,7 +1043,7 @@
                 "greaterThan": "Phải lớn hơn 0",
                 "notEnough": "Không đủ Constant"
             },
-            "confirmTemplate": "\n<div name=\"thanks\">\n          Cảm ơn! Xin chuyển <strong>{Constant} {Currency}</strong> tới Constant Escrow để đảm bảo an toàn cho tiền của bạn trong khi chờ giao dịch được hoàn thành.\n        </div>\n        <div name=\"bank\">\n          <p>Vietcombank</p>\n          <p>\n            <span>Tài khoản: </span>\n            <span>123456789</span>\n          </p>\n          <p>\n            <span>Tài khoản: </span>\n            <span>{Constant}&nbsp;{Currency}</span>\n          </p>\n          <p>\n            <span>Số giao dịch: </span>\n            <span>ABC123</span>\n          </p>\n        </div>\n        <div name=\"notice\">\n          <b>LƯU Ý</b>\n          <span>\n            Vui lòng ghi kèm số chuyển tiền <b>ABC123</b> trong phần nội dung chuyển tiền\n          </span>\n        </div>\n        <div name=\"window\">\n          <b>30 PHÚT </b>\n          <span>\n            Phiên giao dịch có thời hạn  <b>trong 30 phút</b>. Sau thời gian đó, hệ thống sẽ tự động huỷ lệnh giao dịch.\n          </span>\n        </div>\n      "
+            "confirmTemplate": "\n\n\n        <div name=\"thanks\">\n          Thanks! Please wire <strong>{Constant} {Currency}</strong> to Constant Escrow to  keep your money safe while the deal finalizes.\n        </div>\n        <div name=\"bank\">\n          <p>Vietcombank</p>\n          <p>\n            <span>Account: </span>\n            <span>123456789</span>\n          </p>\n          <p>\n            <span>Amount: </span>\n            <span>{Constant}&nbsp;{Currency}</span>\n          </p>\n          <p>\n            <span>Reference: </span>\n            <span>ABC123</span>\n          </p>\n        </div>\n        <div name=\"notice\">\n          <b>IMPORTANT</b>\n          <span>\n            Do include your reference number <b>ABC123</b> in the transfer description\n          </span>\n        </div>\n        <div name=\"window\">\n          <b>30 MINUTE WINDOW: </b>\n          <span>\n            Please complete your transfer <b>within 30 minutes</b>. After that, your\n            order will be automatically cancelled.\n          </span>\n        </div>\n      "
         },
         "direct": {
             "title": "Trực tiếp",
@@ -1011,11 +1071,14 @@
                 "orderInfo": {
                     "buyTitle": "Xác Nhận Mua Constant",
                     "sellTitle": "Xác Nhận Bán Constant",
-                    "buyThankMsg": "Cảm ơn! Vui lòng chuyển tới quỹ Constant {amount} để hoàn thành lệnh của bạn.",
+                    "buyThankMsg": "Please wire {amount} to Constant Escrow to keep your money safe while the deal finalizes.",
                     "sellThankMsg": "Bạn đã gửi yêu cầu đổi {amount} Constant. Bạn sẽ nhận được tiền trong khoảng 30 phút tới.",
                     "orderThankMsg": "Cảm ơn! Xin vui lòng chuyển tới quỹ Constant {amount} USD để hoàn tất giao dịch.",
                     "importantMsg": "Vui lòng điền số chuyển tiền {referenceNumber} trong phần nội dung chuyển khoản.",
-                    "important": "QUAN TRỌNG"
+                    "important": "QUAN TRỌNG",
+                    "thankYou": "Thank you!",
+                    "minuteWindow": "15 MINUTE WINDOW:",
+                    "minuteWindowDescription": "Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled."
                 },
                 "buy": {
                     "purchaseFailed": "Có lỗi xảy ra khi thực hiện lệnh mua. Xin vui lòng thử lại",
@@ -1176,22 +1239,23 @@
         "midBanner0": "Chống mất giá",
         "midBanner1": "Chuyển khoản tới bất kì đâu",
         "midBanner2": "Hoàn toàn miễn phí",
-        "whatCaption0": "Lãi suất gấp 60 lần cho USD",
-        "whatCaption1": "Bảo hiểm trị giá lên tới 250 ngàn USD",
-        "whatCaption2": " Kì hạn linh động",
-        "whatCaption3": "Dễ dàng truy cập",
+        "whatChatWithUs": "Chat with us",
+        "whatCaption0": "6% annual return",
+        "whatCaption1": "Flexible options",
+        "whatCaption2": "Available worldwide",
+        "whatCaption3": "We’re here to help",
         "whatTitle": "Các tiện ích của Constant",
         "whatTitle0": "Tiết kiệm bằng USD",
         "whatTitle1": "Lên đến 130 triệu USD",
         "whatTextLink1": "Đọc đầy đủ",
         "whatLink1": "/chính sách bảo mật",
-        "whatDesc1": "<p>Your account is insured up to 250,000 USD by the FDIC and US treasury. Constant is an SEC compliant US company.</p>",
+        "whatDesc1": "<p>No minimum principal - you don’t have to have big money to grow money. Stay liquid and still earn with a zero commitment period, or get up to 6% annual return for just a 1 year commitment.</p>",
         "whatTitle2": "Bởi Chính phủ Hoa Kì",
         "whatTitle3": "Không yêu cầu số tiền tối thiểu",
-        "whatDesc0": "<p>Earn up to 60x more than with your average USD savings account Interest is paid out daily for you to withdraw anytime.</p>",
-        "whatDesc2": "<p>Không yêu cầu số tiền gửi tối thiểu. Hoàn toàn miễn phí. Rút tiền về bất cứ lúc nào khi gửi không kì hạn hoặc hưởng lãi suất cao nhất lên đến 6%/năm với các khoản gửi có kì hạn.</p>",
-        "whatDesc3": "<p>Chỉ cần có kết nổi Internet, ai cũng có thể sử dụng Constant. Chỉ mất 15 giây để mở tài khoản dù bạn ở bất cứ đâu.</p>",
-        "whatMore0": "Tại sao Constant có lãi suất cao đến vậy?",
+        "whatDesc0": "<p>Don’t sit on your money. Put it to work. We’re proud of our rates, and we don’t want you to have to wait to enjoy them. Your investment earnings are paid out daily for you to withdraw anytime. </p>",
+        "whatDesc2": "<p>Anyone should have access to better opportunities. Constant is accessible to anyone with an internet connection. Make your first investment in just 15 seconds, anywhere in the world.</p>",
+        "whatDesc3": "<p>You work hard for your money. We make sure it’s taken care of, and you shouldn’t have to pay extra for it. Our Investment Specialists are here to help whenever you need. No commission fees.</p>",
+        "whatMore0": "How we guarantee zero risk high returns",
         "whatMore1": "Constant bảo vệ tiền của bạn như thế nào?",
         "whatMore2": "Làm thế nào để chọn kì hạn tiết kiệm phù hợp?",
         "whatMore3": "Mọi người đang sử dụng Constant để tiết kiệm như thế nào?",
@@ -1348,7 +1412,7 @@
         }
     },
     "homeWhatwedo": {
-        "desc": "\n<p>Chúng tôi tin vào một hệ thống tài chính công bằng hơn, kinh tế hơn!\nTham gia vào lĩnh vực tài chính trên nền tảng blockchain từ những ngày đầu tiên, chúng tôi là những kỹ sư tin rằng ngành tài chính nên dành cho mọi người: nhiều quyền lợi hơn, dễ sử dụng hơn bất kể bạn là ai và đang sinh sống ở đâu.</p>\n<br />\n<br />\n<p>Thế nào là dịch vụ tài chính hoàn hảo? Đối với đội ngũ Constant, đó là loại tiền tệ có thể lưu thông tự do trên toàn thế giới với giá trị ổn định nhất. Bạn có thể tích lũy, tiêu xài, vay nợ chỉ bằng 1 loại tiền tệ quyền lực được định giá bởi USD và bảo hiểm bởi những tổ chức uy tín nhất thế giới. Trong ước mơ của Constant, đây chính là một “ngân hàng” tạo ra bởi người dùng & phục vụ lợi ích của người dùng.</p>\n<br />\n<br />\n<p>Hơn thế nữa, chúng tôi là một dự án công nghệ! Nghĩa là Constant luôn sẵn sàng 24/7, 100% online. Không còn cảnh xếp hàng ở phòng giao dịch, không còn những người nghẽn mạch thanh toán do lễ tết. Chúng tôi - những kỹ sư, nhà thiết kế, chuyên gia tài chính làm việc trên toàn thế giới với mục tiêu lớn nhất là giúp tiền của bạn sinh lời và lưu thông dễ dàng nhất.</p>    "
+        "desc": "\n      <p>We are committed to economic freedom. That’s freedom of movement and freedom of choice. We are committed to economic equality. That’s equal accessibility and equal opportunity. In essence, we want to make money more useful, and growth more attainable, for anyone, anywhere in the world.</p>\n      <br />\n      <br />\n      <p>What does that look like? Fair interest rates. Inclusive loans. A state-less, stable currency that you can invest, borrow, and spend. Transactions secured and carried out collectively by users of the network. A financial solution for the people, made possible by the people.</p>\n      <br />\n      <br />\n      <p>Constant is proud to be 100% digital, online 24/7. So no waiting for your broker to pick up the phone, no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime. </p>\n    "
     },
     "faqs": {
         "title": "Câu hỏi thường gặp",
@@ -1488,13 +1552,14 @@
         "fiatAmountInputLabel": "Số tiền gửi",
         "currencyDropdownLabel": "Đơn vị tiền tệ",
         "amountResultLabel": "Theo tỉ giá ngày hôm nay, tương đương với:",
-        "buyBtn": "GỬI {fiatAmount}{fiatCurrency}",
+        "buyBtn": "INVEST {fiatAmount} {fiatCurrency}",
         "noAgentAvaiable": "Không có đại lí phù hợp với {fiatAmount}{fiatCurrency}. Xin vui lòng thử lại.",
         "getAmountFailed": "Xảy ra lỗi khi xác nhận số tiền. Xin vui lòng thử lại.",
         "getCurrencyListFailed": "Đơn vị tiền tệ này không được hỗ trợ",
         "loading": "Đang tải...",
         "amountMustBeLargerThan": "Số tiền bạn gửi phải lớn hơn {min}{fiatCurrency}",
-        "howMuchDoYouWantToDeposit": "BẠN MUỐN TIẾT KIỆM BAO NHIÊU? "
+        "howMuchDoYouWantToDeposit": "HOW MUCH DO YOU WANT TO INVEST? ",
+        "termLabel": "Pick your investment option"
     },
     "exchangeInputSellForm": {
         "amountInputLabel": "Rút tiền",
@@ -1510,59 +1575,49 @@
         "whichCurrencyYouWant": "Bạn muốn nhận đơn vị tiền tệ nào?"
     },
     "exchangeInputBuyTrialForm": {
-        "title": "\n<p class=\"textCenter reset\">Chọn kì hạn gửi thích hợp. Nhận lãi suất <strong class=\"orangeLight\">cao hơn 60 lần</strong>. </p>    ",
+        "title": "We’re giving you a <b>1000 USD free initial investment.</b> Just so you can see how it works. At the end of the trial, <b>you keep all the returns.</b>",
         "highlightText": "bạn giữ toàn bộ phần lãi.",
         "trialLeft": "Chỉ còn {number} lần trải nghiệm dịch vụ miễn phí.",
         "noMoreTrialLeft": "Không còn trải nghiệm dịch vụ miễn phí.",
-        "submitBtn": "TRẢI NGHIỆM MIỄN PHÍ",
+        "submitBtn": "INVEST NOW",
         "btnDesc": "Chỉ dành cho những khách hàng mới. Khoản tiết kiệm 1,000 USD miễn phí để trải nghiệm dịch vụ sẽ được trả về Constant khi đáo hạn nhưng bạn được giữ toàn bộ phần lãi.",
-        "termLabel": "CHỌN KÌ HẠN TIẾT KIỆM"
+        "termLabel": "Pick your investment option"
     },
     "termSelector": {
-        "label": "Chọn kì hạn cố định.",
+        "label": "Choose a commitment period.",
         "month": "tháng",
         "rate": "{rate}%",
-        "apr": "/năm",
+        "apr": "Annual Return",
         "amountText": "({amount}{currency})",
         "anytimeTerm": "Không kì hạn",
         "oneMonthTerm": "1 tháng",
         "term": "{term} tháng",
         "fiatAmountText": "{fiatAmount}{fiatCurrency}",
-        "desc": "Bạn sẽ kiếm được: {interestAmountText} lãi sau 1 năm.",
-        "desc1": "Bạn sẽ kiếm được: {interestAmountText} lãi sau {time}.",
-        "desc2": "Khoản tiết kiệm 1,000 USD miễn phí đã đến ngày đáo hạn. Bạn được giữ toàn bộ phần lãi.",
-        "desc3": "Điều này có nghĩa bạn sẽ rút {withdrawAmount} trong {time}!",
+        "desc": "Your returns are guaranteed at: {interestAmountText} after 1 year.",
+        "desc1": "Your returns are guaranteed at: {interestAmountText} after {time}.",
+        "desc2": "The 1000 USD principal expires, but the profit is yours to keep.",
+        "desc3": "That means you'll earn: {withdrawAmount} after {time} ! Nice work.",
         "desc4": "Hưởng lãi suất 1% trên số dư tài khoản và có thể rút ra bất cứ lúc nào.",
-        "trialExpires": "Khoản tiết kiệm 1,000 USD miễn phí đã đến ngày đáo hạn. Bạn được giữ toàn bộ phần lãi.",
+        "trialExpires": "The 1000 USD principal expires, but the profit is yours to keep.",
         "item": {
             "zero": {
                 "name": "Không kì hạn"
             },
             "one": {
-                "name": "1 tháng"
+                "name": "1-Month"
             },
             "three": {
-                "name": "3 tháng"
+                "name": "3-Months"
             },
             "oneYear": {
-                "name": "12 tháng"
+                "name": "12-Months"
             }
         }
     },
     "saving": {
         "trialLeftNum": "CHỈ CÒN {trialLeft} LẦN TRẢI NGHIỆM MIỄN PHÍ",
-        "trialTitle": {
-            "first": "Chào mừng bạn đến với dịch vụ gửi tiết kiệm tốt nhất trên thế giới.",
-            "second": "",
-            "third": ""
-        },
-        "trialDesc": "\n<h5 style=\"color: white; margin-top: 50px; padding-right: 63px;line-height: 36px;\">\nChúng tôi tặng bạn <strong class=\"orangeThin\">khoản tiết kiệm 1,000 USD</strong> để trải nghiệm dịch vụ. Khi đáo hạn, <strong class=\"orangeThin\">bạn được giữ toàn bộ phần lãi</strong>.\n</h5>    ",
-        "normalTitle": {
-            "first": "Nhân lên nhiều lần",
-            "second": "Khoản tiết kiệm của bạn."
-        },
-        "normalSubTitle": "Lãi suất cao hơn 60 lần so với các ngân hàng khác.",
-        "normalSubTitle1": "Hãy sử dụng đồng tiền một cách thông minh.",
+        "title": "Invest the way you want.",
+        "subTitle": "The right investment is the one you’re comfortable with. The one that grows reliably over time. Select an option that feels good, and we’ll teach your money how to work for you.",
         "makeLocalOrderSuccess": "Lệnh của bạn được tạo thành công",
         "makeLocalOrderFailed": "Lệnh của bạn không được tạo thành công",
         "makeDirectOrderSuccess": "Lệnh của bạn được tạo thành công",
@@ -1615,7 +1670,7 @@
             "whatDesc0": "<p>Phải mất vài tuần hoặc có khi cả tháng để ngân hàng xét duyệt cho vay. Đơn hàng của bạn không thể đợi lâu đến thế. Constant sẽ giúp bạn xoá tan nỗi lo âu này để có thể tận dụng cơ hội phát triển.</p>",
             "whatDesc2": "<p>Được số hoá 100% nên chúng tôi có thể chào mời lãi suất rất thấp trên quy mô toàn cầu dù doanh nghiệp của bạn lớn hay nhỏ.</p>",
             "whatDesc3": "<p>Các khoản vay của ngân hàng rất thiếu linh động. Nếu bạn cần thêm tiền mặt, bạn cần một khoản vay mới. Constant cung cấp cho bạn một khoản tín dụng dựa trên doanh số bán hàng và bạn có thể theo dõi sự phát triển của doanh nghiệp của mình.</p>",
-            "whatMore0": "Tại sao Constant có lãi suất cao đến vậy?",
+            "whatMore0": "How we guarantee zero risk high returns",
             "whatMore1": "Constant bảo vệ tiền của bạn như thế nào?",
             "whatMore2": "Cách chọn kì hạn tiết kiệm phù hợp",
             "whatMore3": "Mọi người đang sử dụng Constant để tiết kiệm như thế nào?"

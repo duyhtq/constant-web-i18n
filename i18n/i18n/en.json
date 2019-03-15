@@ -29,8 +29,8 @@
         }
     },
     "footer": {
-        "title1": "\n    <h3>See how much more your money can grow.</h3>\n    ",
-        "title2": "Save with Constant now",
+        "title1": "\n    <h3>Grow your money safely, secured and multiply your interest</h3>\n    ",
+        "title2": "START SAVING TODAY",
         "getSocial": "Social Media",
         "titleFoundation": "Foundation",
         "titleConstant": "Buy Constant",
@@ -54,13 +54,14 @@
         "termOfUse": "Terms of Use",
         "privacy": "Privacy Policy",
         "facebookLink": "https://www.facebook.com/const.money",
-        "mediumLink": "https://medium.com/@constantmoney"
+        "mediumLink": "https://medium.com/@constantmoney",
+        "contactUs": "Contact us:"
     },
     "headerBar": {
-        "save": "Save",
+        "save": "Invest",
         "borrow": "Borrow",
         "signIn": "SIGN IN",
-        "signUp": "Sign Up",
+        "signUp": "SIGN UP",
         "cesText": "Got a CES2019 giveaway code?",
         "cesLink": "Claim your 1 FREE Constant now!",
         "referral": "Give 5 USD, Get 5 USD",
@@ -157,6 +158,11 @@
         "8003": "Sorry, your file type is not supported.",
         "8004": "Sorry, an error occurred during upload. Please try again."
     },
+    "form": {
+        "required": "Required",
+        "unSupportFile": "Unsupported Format",
+        "exceedSize": "File too large"
+    },
     "me": {
         "navigation": {
             "myProfile": "My Profile",
@@ -168,6 +174,7 @@
             "bookingOrders": "Sale Orders",
             "myOrders": "Deposits and withdrawals",
             "localHistory": "Transfers and interest earnings",
+            "wallets": "My Wallets",
             "changePassword": "Change my password",
             "preferecens": "Preferences",
             "accountLevel": "Account Level",
@@ -179,6 +186,47 @@
             "yourInvest": "Your Invests",
             "myAgent": "My Agent",
             "yourAccreditation": "Accreditation (USA only)"
+        },
+        "wallet": {
+            "title": "This is your wallet address you could send Constant to"
+        },
+        "kyc": {
+            "needEmail": "You need to verify your email first.",
+            "reviewing": "\n        <p>Thanks, it’s nice to meet you.</p>\n        <p>\n          We’re looking over your information and will let you know once you’re\n          good to go.\n        </p>\n      ",
+            "verifiedMsg": "\n        <p>Great, everything's in order and your identity has been verified.</p>\n        <p>Thanks for taking the time to tell us about yourself.</p>\n        <p>Welcome to the full Constant Experience.</p>\n      ",
+            "titleStep1": "Hi. Tell us more about yourself.",
+            "titleStep2": "Thanks. Now we need a proof of address.",
+            "lFirstName": "First Name",
+            "plFirstName": "First Name",
+            "lMiddleName": "Middle Name",
+            "plMiddleName": "Middle Name (Optional)",
+            "lLastName": "Last Name",
+            "plLastName": "Last Name",
+            "lBirthday": "Birthday",
+            "isUS": "Are you a US Citizen?",
+            "isUSYes": "Yes",
+            "isUSNo": "No",
+            "lTaxCountry": "Country listed on your ID",
+            "plTaxCountry": "Select your tax country",
+            "lPhone": "Phone Number",
+            "lSSN": "Social Security Number",
+            "lIDNumber": "ID Number",
+            "lDocType": "Type of ID",
+            "plDocType": "Select your ID type",
+            "btnSubmit": "Submit",
+            "lUpload": "Upload an image of the front of your {type}",
+            "descIDUpload": "Please make sure that the photo is complete and clearly visible, in BMP, JPG, JPEG, or PNG format, and is smaller than 3MB.",
+            "lAddrStr1": "Address Street 1",
+            "lAddrCountry": "Country on your proof of address",
+            "plAddrCountry": "Select your country",
+            "lAddrCity": "City",
+            "plAddrCity": "Select your city",
+            "lRegion": "State/Province/Region",
+            "lZipcode": "Zip Code",
+            "plZipcode": "12345",
+            "lAddrUpload": "Please upload a document verifying the address above.",
+            "descAddrUpload": "<div>\n        Valid documents: utility bill, phone bill, mortgage statement, tenancy\n        agreement, bank/credit card statement, insurance letter (motor, home, or\n        life), or financial statement (pension, endowment). <br />\n        <b>Document must be dated within the last 90 days. </b>\n        <br />\n        Please ensure address in proof of address document matches address\n        provided in application.\n      </div>\n      ",
+            "btnBack": "Back"
         },
         "buyOrder": {
             "title": "You have a buyer.",
@@ -327,6 +375,7 @@
             "email": "Email",
             "nickname": "Alias",
             "nickname_note": "This name will be shown in your preview",
+            "language": "Language",
             "alert": {
                 "passwordFailed": "Sorry, something went wrong. Please try again.",
                 "success": "Your alias has been changed.",
@@ -563,7 +612,7 @@
             "sendCodeSuccess": "Please check your email inbox for the verification code.",
             "sendCodeFailed": "Your verification code got lost on the way to your inbox. Please try again.",
             "verifyFailed": "Sorry, something went wrong. Please verify your email again.",
-            "verifySuccess": "Your email was verified successfully. Please complete the KYC process to buy direct from the network."
+            "verifySuccess": "Your email was verified successfully."
         },
         "phoneVerification": {
             "sendCodeSuccess": "Please check your sms inbox for the verification code.",
@@ -585,7 +634,7 @@
                 "getListFailed": "Sorry, something went wrong. Please try again.",
                 "amount": "Amount",
                 "interest": "Interest",
-                "apr": "APR",
+                "apr": "ROI",
                 "haveTimeAccount": "{term}-{termType} deposit",
                 "anyTimeAccount": "Anytime deposit",
                 "endTerm": "Term ends: ",
@@ -794,26 +843,26 @@
     },
     "home": {
         "blockTitle1": "Customer stories",
-        "blockDesc1": "You can save better with Constant.",
+        "blockDesc1": "People make smarter investments with Constant.",
         "blockTitle2": "How it works",
         "blockCap2": "Enjoy an interest rate 60x the national average.",
-        "blockDesc2": "\n      <h5>Like traditional banks, we reward you with interest earnings on our collateralized loans. Unlike traditional banks, we give you most of it - since it’s your money, really.</h5>\n      <br />\n      <h5>And because we replaced cashiers with code, advisors with algorithms, and switched out bricks and mortar for the blockchain - we can pass the savings directly on to you.</h5>\n    ",
+        "blockDesc2": "\n    ",
         "blockTitle3": "What we do",
         "blockCap3": "We’re building a fairer, freer, financial system.",
-        "titleBlock4": "Here’s why you should save with Constant.",
-        "titleCap4": "How people are using Constant as their primary saving",
+        "titleBlock4": "Why you should invest with Constant.",
+        "titleCap4": "Our investment options all offer fixed returns, and have different levels of flexibility to choose from. Get your money to work for you.",
         "titleDesc4": "\n      <p></p>\n      <p></p>\n    ",
         "optionText": "or",
         "howItWorks": {
             "step1": "STEP 1",
-            "title1": "YOU MAKE A DEPOSIT",
-            "desc1": "Make a bank transfer of any amount to the FDIC insured Constant Vault.",
+            "title1": "YOU MAKE AN INVESTMENT",
+            "desc1": "Choose among our flexible Investment Plans, then make a bank transfer of any amount to the FDIC insured Constant Vault. Your funds are held in USD, and every user is protected up to $250,000.",
             "step2": "STEP 2",
-            "title2": "WE DIGITIZE YOUR MONEY",
-            "desc2": "Every dollar you have in the Vault is now represented by a digital dollar called Constant in your Savings account.",
+            "title2": "YOUR MONEY MULTIPLIES",
+            "desc2": "No matter which commitment period you choose, returns are paid out daily into a Flexible Account. Flexible means you can withdraw whenever you like, and earn an extra 1% annually. Stay liquid and make profit on your profit.",
             "step3": "STEP 3",
-            "title3": "YOUR SAVINGS MULTIPLY",
-            "desc3": "Interest is paid out daily. You can withdraw Constant to any bank account and get local currency."
+            "title3": "YOU WITHDRAW PROFIT",
+            "desc3": "Your investment income is in USD, but you can withdraw it to any local bank account at the end of the commitment period. Or you could reinvest it to keep growing your money."
         },
         "buy": {
             "title": "Buy",
@@ -864,7 +913,7 @@
                     "reference": "Reference"
                 },
                 "sell": {
-                    "title": "Agent will send cash to:",
+                    "title": "Where should we send your investment income to?",
                     "caption": "CHANGE CONSTANT TO CASH WITH THE US NETWORK",
                     "headLine": "Get cash wired from the US to your bank account.",
                     "redeemSuccessful": "Your selling was completed successfully",
@@ -919,7 +968,18 @@
                     "bank": "Bank"
                 },
                 "introHolderTemplate": "\n          <h1>Buy from local sellers in {country}</h1>\n          <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n          <p>Email us at <a href=\"mailto:{email}\">{email}</a></p>\n          <p>Or</p>\n          <p>Chat with us at <a href=\"telegram:{telegram}\">{telegram}</a></p>\n        ",
-                "confirmTemplate": "\n          <div name=\"thanks\">\n            <p>Thanks! Please wire <strong>{FiatAmount} {FiatCurrency}</strong> to the seller's bank account.</p>\n          </div>\n          <div name=\"bank\">\n            <p>\n              <span>Bank:</span>\n              <span>{BankName}</span>\n            </p>\n            <p>\n              <span>Account Name:</span>\n              <span>{BankAccountName}</span>\n            </p>\n            <p>\n              <span>Account Number: </span>\n              <span>{BankAccountNumber}</span>\n            </p>\n            <p>\n              <span>Amount: </span>\n              <span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n            </p>\n            <p>\n              <span>Constant: </span>\n              <span>{Amount}&nbsp;{Currency}</span>\n            </p>\n            <p>\n              <span>Reference: </span>\n              <span>{Reference}</span>\n            </p>\n          </div>\n          <div name=\"notice\">\n            <b name=\"important\">IMPORTANT:</b>\n            <span>\n              Do include your reference number <b>{Reference}</b> in the transfer description\n            </span>\n          </div>\n          <div name=\"window\">\n            <strong name=\"minutes\">30 MINUTE WINDOW: </strong>\n            <span>\n              Please complete your transfer <b>within 30 minutes</b>. After that, your\n              order will be automatically cancelled.\n            </span>\n          </div>\n        "
+                "confirmTemplate": "\n          <div name=\"thanks\">\n            <p>Thanks! Please wire <strong>{FiatAmount} {FiatCurrency}</strong> to the seller's bank account.</p>\n          </div>\n          <div name=\"bank\">\n            <p>\n              <span>Bank:</span>\n              <span>{BankName}</span>\n            </p>\n            <p>\n              <span>Account Name:</span>\n              <span>{BankAccountName}</span>\n            </p>\n            <p>\n              <span>Account Number: </span>\n              <span>{BankAccountNumber}</span>\n            </p>\n            <p>\n              <span>Amount: </span>\n              <span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n            </p>\n            <p>\n              <span>Constant: </span>\n              <span>{Amount}&nbsp;{Currency}</span>\n            </p>\n            <p>\n              <span>Reference: </span>\n              <span>{Reference}</span>\n            </p>\n          </div>\n          <div name=\"notice\">\n            <b name=\"important\">IMPORTANT:</b>\n            <span>\n              Do include your reference number <b>{Reference}</b> in the transfer description\n            </span>\n          </div>\n          <div name=\"window\">\n            <strong name=\"minutes\">30 MINUTE WINDOW: </strong>\n            <span>\n              Please complete your transfer <b>within 30 minutes</b>. After that, your\n              order will be automatically cancelled.\n            </span>\n          </div>\n        ",
+                "accountName": "Account Name:",
+                "accountNumber": "Account Number:",
+                "amount": "Amount:",
+                "constant": "Constant:",
+                "reference": "Reference:",
+                "buyThankMsg": "Please wire {fiatAmount} {fiatCurrency} to the seller's bank account.",
+                "importantMsg": "Do include your reference number {referenceNumber} in the transfer description.",
+                "important": "IMPORTANT",
+                "thankYou": "Thank you!",
+                "minuteWindow": "15 MINUTE WINDOW:",
+                "minuteWindowDescription": "Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled."
             },
             "sell": {
                 "type": "Sell",
@@ -983,7 +1043,7 @@
                 "greaterThan": "Must be greater than 0",
                 "notEnough": "Constant is not enough"
             },
-            "confirmTemplate": "\n        <div name=\"thanks\">\n          Thanks! Please wire <strong>{Constant} {Currency}</strong> to Constant Escrow to  keep your money safe while the deal finalizes.\n        </div>\n        <div name=\"bank\">\n          <p>Vietcombank</p>\n          <p>\n            <span>Account: </span>\n            <span>123456789</span>\n          </p>\n          <p>\n            <span>Amount: </span>\n            <span>{Constant}&nbsp;{Currency}</span>\n          </p>\n          <p>\n            <span>Reference: </span>\n            <span>ABC123</span>\n          </p>\n        </div>\n        <div name=\"notice\">\n          <b>IMPORTANT</b>\n          <span>\n            Do include your reference number <b>ABC123</b> in the transfer description\n          </span>\n        </div>\n        <div name=\"window\">\n          <b>30 MINUTE WINDOW: </b>\n          <span>\n            Please complete your transfer <b>within 30 minutes</b>. After that, your\n            order will be automatically cancelled.\n          </span>\n        </div>\n      "
+            "confirmTemplate": "\n\n\n        <div name=\"thanks\">\n          Thanks! Please wire <strong>{Constant} {Currency}</strong> to Constant Escrow to  keep your money safe while the deal finalizes.\n        </div>\n        <div name=\"bank\">\n          <p>Vietcombank</p>\n          <p>\n            <span>Account: </span>\n            <span>123456789</span>\n          </p>\n          <p>\n            <span>Amount: </span>\n            <span>{Constant}&nbsp;{Currency}</span>\n          </p>\n          <p>\n            <span>Reference: </span>\n            <span>ABC123</span>\n          </p>\n        </div>\n        <div name=\"notice\">\n          <b>IMPORTANT</b>\n          <span>\n            Do include your reference number <b>ABC123</b> in the transfer description\n          </span>\n        </div>\n        <div name=\"window\">\n          <b>30 MINUTE WINDOW: </b>\n          <span>\n            Please complete your transfer <b>within 30 minutes</b>. After that, your\n            order will be automatically cancelled.\n          </span>\n        </div>\n      "
         },
         "direct": {
             "title": "Direct",
@@ -1011,11 +1071,14 @@
                 "orderInfo": {
                     "buyTitle": "Buy order confirmed",
                     "sellTitle": "Order Confirmation Convert Constant",
-                    "buyThankMsg": "Thanks! Please wire the Constant Trust {amount} to complete your order.",
+                    "buyThankMsg": "Please wire {amount} to Constant Escrow to keep your money safe while the deal finalizes.",
                     "sellThankMsg": "You sent request convert {amount}. It could be take 30 minutes transfer to your bank account.",
                     "orderThankMsg": "Thanks! Please wire the Constant Trust {amount} USD to complete your order.",
                     "importantMsg": "Do include your reference number {referenceNumber} in the transfer description.",
-                    "important": "IMPORTANT"
+                    "important": "IMPORTANT",
+                    "thankYou": "Thank you!",
+                    "minuteWindow": "15 MINUTE WINDOW:",
+                    "minuteWindowDescription": "Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled."
                 },
                 "buy": {
                     "purchaseFailed": "Your purchase did not go through, please try again.",
@@ -1176,22 +1239,23 @@
         "midBanner0": "Protect the value of your money",
         "midBanner1": "Send money anywhere, for free",
         "midBanner2": "Secure and grow your money",
-        "whatCaption0": "Earn 60x more in USD",
-        "whatCaption1": "Insured up to 250k USD",
-        "whatCaption2": " Flexible terms",
-        "whatCaption3": "Available worldwide",
+        "whatChatWithUs": "Chat with us",
+        "whatCaption0": "6% annual return",
+        "whatCaption1": "Flexible options",
+        "whatCaption2": "Available worldwide",
+        "whatCaption3": "We’re here to help",
         "whatTitle": "What can you do with Constant?",
         "whatTitle0": "Save in USD",
         "whatTitle1": "Up to 130M USD",
         "whatTextLink1": "Read the full policy",
         "whatLink1": "/privacy-policy",
-        "whatDesc1": "<p>Your account is insured up to 250,000 USD by the FDIC and US treasury. Constant is an SEC compliant US company.</p>",
+        "whatDesc1": "<p>No minimum principal - you don’t have to have big money to grow money. Stay liquid and still earn with a zero commitment period, or get up to 6% annual return for just a 1 year commitment.</p>",
         "whatTitle2": "By the US Government",
         "whatTitle3": "No minimum deposit",
-        "whatDesc0": "<p>Earn up to 60x more than with your average USD savings account Interest is paid out daily for you to withdraw anytime.</p>",
-        "whatDesc2": "<p>No minimum deposit, no fees. Withdraw anytime with the Anytime Account, or choose one of our fixed deposits to earn up to 6% APR.</p>",
-        "whatDesc3": "<p>Constant is accessible to anyone with an internet connection. Open an account in 15 seconds, anywhere in the world.</p>",
-        "whatMore0": "How we can offer 60x",
+        "whatDesc0": "<p>Don’t sit on your money. Put it to work. We’re proud of our rates, and we don’t want you to have to wait to enjoy them. Your investment earnings are paid out daily for you to withdraw anytime. </p>",
+        "whatDesc2": "<p>Anyone should have access to better opportunities. Constant is accessible to anyone with an internet connection. Make your first investment in just 15 seconds, anywhere in the world.</p>",
+        "whatDesc3": "<p>You work hard for your money. We make sure it’s taken care of, and you shouldn’t have to pay extra for it. Our Investment Specialists are here to help whenever you need. No commission fees.</p>",
+        "whatMore0": "How we guarantee zero risk high returns",
         "whatMore1": "How we protect your money",
         "whatMore2": "How to pick a plan that’s right for you",
         "whatMore3": "How people are saving with Constant",
@@ -1348,7 +1412,7 @@
         }
     },
     "homeWhatwedo": {
-        "desc": "\n      <p>As pioneers of borderless banking on the blockchain, we are committed to making banking more inclusive, money more useful, and growth more accessible to anyone, anywhere in the world.</p>\n      <br />\n      <br />\n      <p>What does that look like? Fair interest rates. Inclusive loans. A state-less, stable currency that you can save, borrow, and spend. Transactions secured and carried out collectively by users of the network. A bank for the people, made possible by the people.</p>\n      <br />\n      <br />\n      <p>Constant is proud to be 100% digital, online 24/7. So no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime. </p>\n    "
+        "desc": "\n      <p>We are committed to economic freedom. That’s freedom of movement and freedom of choice. We are committed to economic equality. That’s equal accessibility and equal opportunity. In essence, we want to make money more useful, and growth more attainable, for anyone, anywhere in the world.</p>\n      <br />\n      <br />\n      <p>What does that look like? Fair interest rates. Inclusive loans. A state-less, stable currency that you can invest, borrow, and spend. Transactions secured and carried out collectively by users of the network. A financial solution for the people, made possible by the people.</p>\n      <br />\n      <br />\n      <p>Constant is proud to be 100% digital, online 24/7. So no waiting for your broker to pick up the phone, no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime. </p>\n    "
     },
     "faqs": {
         "title": "Frequently Asked Questions",
@@ -1488,13 +1552,14 @@
         "fiatAmountInputLabel": "Deposit amount",
         "currencyDropdownLabel": "Your currency",
         "amountResultLabel": "According to the markets today, that is:",
-        "buyBtn": "DEPOSIT {fiatAmount} {fiatCurrency}",
+        "buyBtn": "INVEST {fiatAmount} {fiatCurrency}",
         "noAgentAvaiable": "No agent avaiable for {fiatAmount} {fiatCurrency}, please try another",
         "getAmountFailed": "Failed while getting amount, please try again",
         "getCurrencyListFailed": "Failed while getting supported currencies",
         "loading": "Loading...",
         "amountMustBeLargerThan": "Your amount must be larger than {min} {fiatCurrency}",
-        "howMuchDoYouWantToDeposit": "HOW MUCH DO YOU WANT TO DEPOSIT? "
+        "howMuchDoYouWantToDeposit": "HOW MUCH DO YOU WANT TO INVEST? ",
+        "termLabel": "Pick your investment option"
     },
     "exchangeInputSellForm": {
         "amountInputLabel": "Withdraw amount",
@@ -1510,59 +1575,49 @@
         "whichCurrencyYouWant": "Which currency do you want to receive?"
     },
     "exchangeInputBuyTrialForm": {
-        "title": "\n      <p class=\"textCenter reset\">Choose a Savings Plan. See for yourself how it feels to earn <strong class=\"orangeLight\">60x more</strong> interest.</p>\n    ",
+        "title": "We’re giving you a <b>1000 USD free initial investment.</b> Just so you can see how it works. At the end of the trial, <b>you keep all the returns.</b>",
         "highlightText": "you keep all the interest.",
         "trialLeft": "{number} trials left.",
         "noMoreTrialLeft": "No more trial left.",
-        "submitBtn": "START YOUR FREE TRIAL",
+        "submitBtn": "INVEST NOW",
         "btnDesc": "New customers only. This 1000 USD trial deposit will be returned at the end of your chosen term, but you keep all the interest.",
-        "termLabel": "CHOOSE YOUR SAVINGS PLAN"
+        "termLabel": "Pick your investment option"
     },
     "termSelector": {
-        "label": "Choose a fixed deposit term.",
+        "label": "Choose a commitment period.",
         "month": "months",
         "rate": "{rate}%",
-        "apr": "APR",
+        "apr": "Annual Return",
         "amountText": "({amount} {currency})",
         "anytimeTerm": "anytime",
         "oneMonthTerm": "1 month",
         "term": "{term} months",
         "fiatAmountText": "{fiatAmount} {fiatCurrency}",
-        "desc": "You’ll earn: {interestAmountText} interest after 1 year.",
-        "desc1": "You’ll earn: {interestAmountText} interest after {time}.",
-        "desc2": "The trial 1000 USD expires, but the interest is yours to keep.",
-        "desc3": "That means you'll be withdrawing {withdrawAmount} in {time} !",
+        "desc": "Your returns are guaranteed at: {interestAmountText} after 1 year.",
+        "desc1": "Your returns are guaranteed at: {interestAmountText} after {time}.",
+        "desc2": "The 1000 USD principal expires, but the profit is yours to keep.",
+        "desc3": "That means you'll earn: {withdrawAmount} after {time} ! Nice work.",
         "desc4": "Earn 1% on your existing balance, and withdraw anytime.",
-        "trialExpires": "The 1000 USD trial expires, but the interest is yours to keep.",
+        "trialExpires": "The 1000 USD principal expires, but the profit is yours to keep.",
         "item": {
             "zero": {
                 "name": "Anytime"
             },
             "one": {
-                "name": "1 month"
+                "name": "1-Month"
             },
             "three": {
-                "name": "3 months"
+                "name": "3-Months"
             },
             "oneYear": {
-                "name": "12 months"
+                "name": "12-Months"
             }
         }
     },
     "saving": {
         "trialLeftNum": "ONLY {trialLeft} TRIALS LEFT",
-        "trialTitle": {
-            "first": "Welcome to the world’s best savings account.",
-            "second": "",
-            "third": ""
-        },
-        "trialDesc": "\n      <h5 style=\"color: white; margin-top: 50px; padding-right: 63px;line-height: 36px;\">\n        We’re giving you a <strong class=\"orangeThin\">1000 USD free trial</strong> deposit. At the end of the trial, <strong class=\"orangeThin\">you keep all the interest</strong>.\n      </h5>\n    ",
-        "normalTitle": {
-            "first": "Multiply",
-            "second": "Your savings."
-        },
-        "normalSubTitle": "Earn 60x more than other banks.",
-        "normalSubTitle1": "Be smarter with your money.",
+        "title": "Invest the way you want.",
+        "subTitle": "The right investment is the one you’re comfortable with. The one that grows reliably over time. Select an option that feels good, and we’ll teach your money how to work for you.",
         "makeLocalOrderSuccess": "Your order was created successfully",
         "makeLocalOrderFailed": "Failed while creating your order",
         "makeDirectOrderSuccess": "Your order was created successfully",
@@ -1615,7 +1670,7 @@
             "whatDesc0": "<p>Banks can take weeks or even months to approve a business loan.  Your PO can’t wait that long.  Constant helps you seize that opportunity.</p>",
             "whatDesc2": "<p>The beauty of being 100% digital is that we can offer low interest rates on a global scale. No matter how big or small your business is.</p>",
             "whatDesc3": "<p>Bank loans lack flexibility. If you need more cash, you’ll need a new loan. Constant gives you a line of credit based on your sales volume, and your track record of growth.</p>",
-            "whatMore0": "How we can offer 60x",
+            "whatMore0": "How we guarantee zero risk high returns",
             "whatMore1": "How we protect your money",
             "whatMore2": "How to pick a plan that’s right for you",
             "whatMore3": "How people are saving with Constant"

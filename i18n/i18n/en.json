@@ -92,7 +92,7 @@
         "saveAndGrowMoney": "Save & Grow money",
         "login": "Login",
         "openAnAccount": "Open an account",
-        "yourSaving": "My Savings"
+        "yourSaving": "My Investments"
     },
     "error": {
         "required": "Required",
@@ -629,52 +629,60 @@
         },
         "proSaving": {
             "listApplications": {
-                "totalInterestEarned": "Total interest earned",
+                "totalInterestEarned": "You've already earned",
                 "noRecord": "No time like the present. Start saving now.",
                 "getListFailed": "Sorry, something went wrong. Please try again.",
-                "amount": "Amount",
+                "amount": "Principal",
                 "interest": "Interest",
-                "apr": "ROI",
-                "haveTimeAccount": "{term}-{termType} deposit",
+                "apr": "APR",
+                "haveTimeAccount": "{term}-{termType} investment",
                 "anyTimeAccount": "Anytime deposit",
-                "endTerm": "Term ends: ",
+                "endTerm": "Investment matures: ",
                 "trial": "TRIAL",
                 "trial_description": "Your trial term has ended.",
-                "saving_title": "Fixed Term Deposits",
-                "anyTime_saving": "Anytime Account",
+                "saving_title": "Fixed Term Investments",
+                "anyTime_saving": "Flexible Account",
                 "interestInfo": {
                     "header": {
                         "title": "Want to make more interest accross all your accounts?"
                     },
                     "body": {
                         "item1": {
-                            "title": "+1%",
-                            "description": "Deposit 1,000 USD or more"
+                            "title": "+{percent}%",
+                            "description": "Invest 1,000 USD or more"
                         },
                         "item2": {
-                            "title": "+3% (+1.4% claimed)",
+                            "title": "+{total_percent}% {percent_claimed}",
                             "description": "{refer} Get an extra 0.2% each.",
-                            "refer": "Refer up to 15 friends."
+                            "refer": "Refer up to 15 friends.",
+                            "percent_claimed": "(+{percent}% claimed)"
                         },
                         "item3": {
-                            "title": "+1%",
-                            "description": "Share Constant on {facebook} or {twitter}.",
+                            "title": "+{percent}%",
+                            "description": "Share Constant on {facebook}",
                             "facebook": "Facebook",
                             "twitter": "Twitter"
                         }
                     },
                     "footer": {
-                        "title": "That’s 1%",
+                        "title": "That’s {percent}%",
                         "description": "On top of what you already earn - for every account."
-                    }
+                    },
+                    "referDialog": {
+                        "labelShare": "Share your link",
+                        "btnShare": "Copy link",
+                        "copied": "Referral link copied to clipboard."
+                    },
+                    "shareFbSuccess": "Share referral link success."
                 },
                 "withdraw": "Withdraw",
                 "transfer": "Transfer",
-                "saving": "Save now",
+                "batchtransfer": "Batch Transfer",
+                "saving": "Invest now",
                 "dialog": {
                     "withdrawAccount": {
                         "title": "Saving",
-                        "body": "Want to earn better interest? Transfer your money to a fixed deposit.",
+                        "body": "Want to multiply your returns? Commit any amount for any time horizon.",
                         "termTitle": "{month} month{termType} ({percent}% APR)",
                         "percentReceive": "You will earn {percent}% APR.",
                         "confirm": "Ok",
@@ -1417,9 +1425,9 @@
     "faqs": {
         "title": "Frequently Asked Questions",
         "t1": "ACCOUNT",
-        "t2": "TRIAL DEPOSIT",
-        "t3": "SAVE",
-        "t4": "INTEREST",
+        "t2": "INITIAL INVESTMENT",
+        "t3": "INVEST",
+        "t4": "RETURNS",
         "t5": "GENERAL",
         "question1": "Which countries can I get Constant in?",
         "answer1": "<p>Anywhere in the world. You just need an internet connection.</p>",
@@ -1438,83 +1446,83 @@
             "question1": "Can I open a Constant account in my country?",
             "answer1": "Anyone can open a Constant account, no matter where you live. All you need is an internet connection.",
             "question2": "How do I open a Constant account?",
-            "answer2": "Simply register with an email address and password to get started. To withdraw, transfer, and otherwise get the full use out of your account, you’ll need to verify your ID, which shouldn’t take more than a few minutes.",
-            "question3": "Do I need a minimum deposit?",
-            "answer3": "No, you can deposit any amount you want. Better yet, once you’ve opened your account, we’ll give you a trial deposit of 1,000 USD so you can start earning interest immediately. The deposit is returned to us at the end of your term (sorry!), but you keep the interest. Not bad, right?",
+            "answer2": "Simply register with an email address and password to get started. To withdraw returns from your free $1,000 initial investment, you’ll need to verify your ID, which shouldn’t take more than a few minutes.",
+            "question3": "What is the minimum capital?",
+            "answer3": "You can invest any amount you want. Better yet, once you’ve opened your account, we’ll give you a free initial investment of $1,000 so you can start earning investment income immediately. The $1,000 principal is returned to us at the end of your term (sorry!), but you keep the ROI. Not bad, right?",
             "question4": "Do you need to verify my identity?",
-            "answer4": "You can open a Constant account without verifying your identity. However, to withdraw your savings (and any earned interest) to a bank account, we will need to verify your identity. We do this to protect you from fraud and to comply with financial regulations.",
+            "answer4": "You can open a Constant account without verifying your identity. However, to withdraw earned investment income on your $1,000 initial investment (or any other investment amount), we will need to verify your identity. We do this to protect you from fraud and to comply with financial regulations.",
             "question5": "How do I reset my password?",
             "answer5": "Go to the Login page and click “Forgotten your password?”. Then enter your email address and we will send you instructions on how to reset your password. If you can’t see our email after a few minutes, please check your spam/junk folder.",
             "question6": "Do I need to connect my bank account / bank info?",
-            "answer6": "You don't need a bank account to use Constant. However, if you withdraw Constant to USD (or local equivalent), you will need to enter the receiving bank account details. For additional security, we don't store this information for future transactions."
+            "answer6": "You don't need a bank account to use Constant. However, if you withdraw your Constant investment income to USD (or local equivalent), you will need to enter the receiving bank account details. For additional security, we don't store this information for future transactions."
         },
-        "trialDeposit": {
-            "question1": "Is the trial deposit still available?",
-            "answer1": "Yes, the trial deposit is available until further notice. We’ll keep it going for as long as we can.",
+        "initialInvestment": {
+            "question1": "Is the initial investment promotion still available?",
+            "answer1": "Yes, the initial investment promotion is available until further notice. We’ll keep it going for as long as we can.",
             "question2": "Am I eligible for this promotion?",
-            "answer2": "As long as you’re a new customer and haven’t accepted a trial deposit before, you are eligible.",
-            "question3": "Can I withdraw the 1,000 USD?",
-            "answer3": "While we’d love to give you 1,000 USD, we can’t. So unfortunately, you can’t withdraw the trial deposit. The 1,000 USD will be returned to us at the end of your savings term, but you keep the interest, which is still a pretty good deal.",
-            "question4": "How can I track the interest from this program?",
-            "answer4": "Just log into your account and click Your Savings. Total interest earned is on the top right of the dashboard.",
-            "question5": "What happens at the end of my term?",
-            "answer5": "At the end of the term, we’ll pay you the interest (assuming you haven’t withdrawn it already) and the 1,000 USD deposit will be returned.",
-            "question6": "Can I deposit money into my trial plan?",
-            "answer6": "No, but you can add new Savings Plans whenever you like.",
-            "question7": "Can my other deposits have a different term to the trial deposit?",
-            "answer7": "Absolutely! Your trial deposit is separate to your other Savings Plans, so you can choose the amounts and terms for your other deposits."
+            "answer2": "As long as you’re a new customer and haven’t accepted an initial trial investment before, you are eligible.",
+            "question3": "Can I withdraw the $1,000?",
+            "answer3": "While we’d love to give you $1,000, we can’t. The $1,000 will be returned to us at the end of your commitment period, but you keep the returns, which is still a pretty good deal.",
+            "question4": "How can I track the returns from this promotion?",
+            "answer4": "Just log into your account and click Your Investments. Total earned investment income is on the top right of the dashboard.",
+            "question5": "What happens at the end of my commitment period?",
+            "answer5": "At the end of the term, we’ll pay you the total profit (assuming you haven’t withdrawn it already) and the $1,000 principal will be returned to us. Please note that we will need to verify your identity before you can withdraw investment income to your bank account. This protects you from fraud and complies with financial regulations.",
+            "question6": "Can I invest more into the initial investment promotion?",
+            "answer6": "No, but you can invest in other Investment Plans whenever you like.",
+            "question7": "Can I choose different commitment periods for other Investment Plans?",
+            "answer7": "Absolutely! Participation in the initial investment promotion is separate to your other Investment Plans, so you can choose the amounts and terms for your other investments."
         },
-        "save": {
-            "question1": "What is a Constant Savings Plan?",
-            "answer1": "Our Savings Plans are simple, risk-free, and effective ways to grow your money. You choose a savings term, deposit your money, and at the end of the term you get your money back plus earned interest. It really is as simple as that.",
-            "question2": "How do Constant Savings Plans work?",
-            "answer2": "\n        <p>Under the “SAVE” tab on our website, you’ll be able to choose from several different Savings Plans. Each one is designed to maintain the value of your deposit and pay you daily interest.</p>\n        <br />\n        <p>To maintain the value of your deposit, we send your money to the Constant trust where it’s protected by US law and insured to 130,000,000 USD. At the same time, we create a “digital dollar” called Constant and put it into your account, which keeps the value stable.</p>\n        <br />\n        <p>Over time, your Constant earns interest which you can withdraw as you earn (daily) or save until the end of your term. Either way, your savings balance is an amount in Constant you can withdraw for its 1:1 equivalent in USD.</p>\n        <br />\n        <p>Of course, you don’t have to withdraw your savings as USD. At the end of your term, we put your savings into our Anytime Savings Plan so you continue to earn interest while you decide what to do next.</p>\n        <br />\n        <p>You could send your Constant to someone else, anywhere in the world, keep it stored in your Constant current account to keep the value locked to the USD, or simply put the Constant back into another Savings Plan to earn even more interest. The choice is yours!</p>\n      ",
-            "question3": "How do you protect my savings?",
-            "answer3": "Your deposits are securely held in the Constant Vault, which is overseen by an accredited US financial institution called Prime Trust. The Constant Vault is FDIC-insured to 130,000,000 USD. You can read more about the Constant Vault on our blog.",
+        "invest": {
+            "question1": "What is a Constant Investment Plan?",
+            "answer1": "Our Investment Plans are simple, risk-free, and effective ways to grow your money. You choose a commitment period, invest your money, and at the end of the period you get your money back plus earned investment income. It really is as simple as that.",
+            "question2": "How do Constant Investment Plans work?",
+            "answer2": "\n        <p>Under the “INVEST” tab on our website, you’ll be able to choose from several different Investment Plans. Each one is designed to maintain the value of your principal investment and pay you daily investment income.</p>\n        <br />\n        <p>To maintain the value of your principal, we send your money to the Constant trust where it’s protected by US law and insured to $250,000. At the same time, we create a “digital dollar” called Constant and put it into your account, which keeps the value stable.</p>\n        <br />\n        <p>Over time, your Constant earns investment income which you can withdraw as you earn (daily) or save until the end of your commitment period. Either way, your final investment statement is an amount in Constant you can withdraw for its 1:1 equivalent in USD.</p>\n        <br />\n        <p>Of course, you don’t have to withdraw your principal and investment income as USD. At the end of your commitment period, when your investment matures, we reinvest your final balance into our Anytime Investment Plan so you continue to earn investment income while you decide what to do next.</p>\n        <br />\n        <p>You could send your Constant to someone else, anywhere in the world, keep it stored in your Anytime Investment Plan to keep the value locked to the USD, or simply put the Constant back into another Investment Plan to earn even more interest. The choice is yours!</p>\n      ",
+            "question3": "How do you protect my investment?",
+            "answer3": "Your principal is securely held in the Constant Vault, which is overseen by an accredited US financial institution called Prime Trust. Your investment is FDIC-insured to $250,000. You can read more about the Constant Vault on our blog.",
             "question4": "Which currencies do you accept?",
             "answer4": "We accept any currency sent to our US-based Constant Vault bank account. It is then converted to USD and stored in an FDIC-insured vault.",
             "question5": "Do you accept cryptocurrency?",
             "answer5": "Not at this time.",
-            "question6": "Can I access my savings at any time?",
-            "answer6": "\n        <p>To give you the best interest rates, we hold on to your deposit for the duration of your savings term. Think of your savings deposit as a seed that we water and help grow. To do that, we need time, which is why we offer different Savings Plans so you can find the right one for you.</p>\n        <br />\n        <p>If you’d rather have continuous access to your savings, choose our Anytime Savings Plan – the rate is lower, but you can withdraw your money at any time.</p>\n        <br />\n      ",
-            "question7": "Why do you digitize my savings?",
-            "answer7": "\n        <p>When you deposit money for the long term, some local currencies can lose value due to inflation. This eats into your earned interest and makes saving feel like an uphill battle. We don’t think that’s fair. So instead, we convert your money into a “digital dollar” that’s 100% backed by real USD – the world’s reserve currency.</p>\n        <br />\n        <p>Our digital dollar is called Constant. Anytime you deposit or withdraw, we create or destroy Constant to ensure it’s 1:1 backed, so its value always matches the USD. That way, you never need worry about inflation and other economic pressures eating into your savings. You just sit back and watch your money grow.</p>\n        <br />\n      ",
+            "question6": "Can I access my principal investment at any time?",
+            "answer6": "\n        <p>To give you the best guaranteed returns, we hold on to your principal for the duration of your commitment period. Think of your principal as a seed that we water and help grow. To do that, we need time, which is why we offer different Investment Plans so you can find the right one for you.</p>\n        <br />\n        <p>If you’d rather have continuous access to your principal, choose our Anytime Investment Plan – the rate is lower, but you can withdraw your money at any time.</p>\n        <br />\n      ",
+            "question7": "Why do you digitize my investment?",
+            "answer7": "\n        <p>When you invest money for the long term, some local currencies can lose value due to inflation. This eats into your investment income, diminishing your returns. We don’t think that’s fair. So instead, we convert your principal into a “digital dollar” that’s 100% backed by real USD – the world’s reserve currency.</p>\n        <br />\n        <p>Our digital dollar is called Constant. Anytime you invest or withdraw, we create or destroy Constant to ensure it’s 1:1 backed, so its value always matches the USD. That way, you never need worry about inflation and other economic pressures eating into your investment. You just sit back and watch your money grow.</p>\n        <br />\n      ",
             "question8": "How does digitization work?",
-            "answer8": "\n        <p>First, we send your deposit to the Constant trust for safekeeping. Then, we create new Constant tokens on the Ethereum blockchain that match the USD value of your deposit. For example, if you gave us the equivalent of 100 USD in your local currency, we send 100 USD to the Constant trust and create 100 Constant.</p>\n        <br />\n        <p>Constant remains in your account for your savings term, accruing interest which you can save or withdraw daily. Then, when your term ends, you can withdraw your money from the Constant trust (and any interest) and we’ll destroy the Constant. Or, if you’d rather use the Constant tokens to send money abroad, trade on exchanges, or simply save for another term, please do!</p>\n      ",
-            "question9": "Where are my savings stored?",
-            "answer9": "Your savings are stored inside the Constant Vault, which is regulated under US law and protected by 130,000,000 USD FDIC insurance.",
-            "question10": "Can I add to my Savings Plan during the term?",
-            "answer10": "You can’t add to your Savings Plan once it’s started, but there’s no limit on how many Savings Plans you can have. So if you’d like to save more, simply open another Savings Plan and watch your money grow.",
+            "answer8": "\n        <p>First, we send your investment principal to the Constant Vault for safekeeping. Then, we create new Constant tokens on the Ethereum blockchain that match the USD value of your principal. For example, if you gave us the equivalent of $100 in your local currency, we send $100 to the Constant Vault and create 100 Constant.</p>\n        <br />\n        <p>Constant remains in your account for your commitment period, earning investment income that you can save or withdraw daily. Then, when your period ends, you can withdraw your principal from the Constant Vault (and any returns) and we’ll destroy the Constant. Or, if you’d rather use the Constant tokens to send money abroad, trade on exchanges, or reinvest for another period, please do!</p>\n      ",
+            "question9": "Where is my investment stored?",
+            "answer9": "Your principal and investment income are stored inside the Constant Vault, which is regulated under US law and protected by $130,000,000 FDIC insurance (per account limit of $250,000 applies).",
+            "question10": "Can I add to my Investment Plan during the term?",
+            "answer10": "You can’t add to an Investment Plan once it’s started, but there’s no limit on how many Investment Plans you can have. So if you’d like to invest more, simply open another Investment Plan and watch your money grow.",
             "question11": "What is the Constant Vault?",
-            "answer11": "The Constant Vault is a publicly-audited trust overseen and managed by Prime Trust, a US accredited financial institution. The Constant Vault is regulated in the US and insured by the FDIC to the value of 130,000,000 USD.",
+            "answer11": "The Constant Vault is a publicly-audited trust overseen and managed by Prime Trust, a US accredited financial institution. The Constant Vault is regulated in the US and insured by the FDIC to the value of $130,000,000 (a per account limit of $250,000 applies).",
             "question12": "What is FDIC insurance?",
-            "answer12": "\n        <p>The Federal Deposit Insurance Corporation (FDIC) is a body set up by the US government to protect the integrity of the US financial system. It does this in a number of ways, including insuring deposits. Our Constant Vault is insured by FDIC to an indemnity limit of 130,000,000 USD. You can <a target=\"_blank\" href=\"https://www.fdic.gov\">read more about the FDIC on their website.</a></p>\n      "
+            "answer12": "\n        <p>The Federal Deposit Insurance Corporation (FDIC) is a body set up by the US government to protect the integrity of the US financial system. It does this in a number of ways, including insuring deposits. Our Constant Vault is insured by FDIC to an indemnity limit of $130,000,000. You can <a target=\"_blank\" href=\"https://www.fdic.gov/about/strategic/strategic/mission.html\">read more about the FDIC on their website.</a></p>\n      "
         },
-        "interest": {
-            "question1": "How often do you pay interest?",
-            "answer1": "We pay interest daily, so you can either wait until the end of your term to withdraw interest or withdraw it daily. It’s up to you.",
-            "question2": "How is interest calculated?",
-            "answer2": "Your interest is calculated by applying the percentage rate of your Savings Plan to the amount of your deposit, and then dividing it by 365 to get a daily rate. Interest is not compounded, so if you deposit 500 USD for one year at an interest rate of 6%, you would earn 30 USD at the end of your term (about 0.08 USD per day).",
-            "question3": "How can I track interest on my savings?",
-            "answer3": "Just log into your account and click Your Savings. Total interest earned is on the top right of the dashboard.",
-            "question4": "Will you increase interest rates in the future?",
-            "answer4": "\n        <p>You never know ;-)</p>\n        <br />\n        <p>As Constant grows, we’re always looking for new ways of improving our efficiency so we can give you the best savings rates in the world.</p>\n      ",
-            "question5": "Why are your interest rates better than those offered by banks?",
-            "answer5": "\n        <p>Like other banks, we reward you with interest earnings on our risk-free loans. We can afford to give you more than banks because, one, we believe you deserve it, and two, we operate a much leaner business model.</p>\n        <br />\n        <p>We’ve replaced cashiers with code, advisors with algorithms, and run on smart contracts and electricity – we’re an efficient team and don’t need much. Maybe some snacks. Yes, please send us snacks.</p>\n      "
+        "returns": {
+            "question1": "How are my returns paid out?",
+            "answer1": "We pay investment profit daily, so you can either wait until the end of your commitment period to withdraw your investment income or withdraw it daily. It’s up to you.",
+            "question2": "How are my daily returns calculated?",
+            "answer2": "Your rate of return is calculated by applying the percentage rate of your Investment Plan to the amount of your principal, and then dividing it by 365 to get a daily rate. Your returns are not compounded, so if you invest $500 for one year at a rate of 6%, you would earn $30 investment income at the end of your commitment period (about $0.08 per day).",
+            "question3": "How can I track my earnings?",
+            "answer3": "Just log into your account and click Your Investments. Total earned investment income is on the top right of the dashboard.",
+            "question4": "Will you increase ROI rates in the future?",
+            "answer4": "\n        <p>You never know ;-)</p>\n        <br />\n        <p>As Constant grows, we’re always looking for new ways of improving our efficiency so we can give you the best returns on your investment.</p>\n      ",
+            "question5": "How can you offer such high returns risk-free?",
+            "answer5": "\n        <p>We pay investment income from earnings we make on our risk-free loans. We can afford to give you higher rates than most other low-risk investment products because we use technology to strip out inefficiency and accelerate returns.</p>\n        <br />\n        <p>As a tech company disrupting the investment sector, we don’t need branches, managers, or advisors. Instead, we use custom-designed blockchain technology to remove costly middlemen and intermediary processes, while still providing an auditable transaction history. As a result, we can afford to give much better returns on your investment.</p>\n      "
         },
         "general": {
             "question1": "What is Constant?",
-            "answer1": "\n        <p>Constant is a simple, risk-free way to grow, send, borrow, and save money – like a bank, only better.</p>\n        <br />\n        <p>We’ve thrown out credit scoring, paperwork, and fees to give you more of what you deserve – industry-beating interest rates, risk-free loans, a stable, state-less currency, and free international transfers. Available all day, every day, anywhere in the world.</p>\n        <br />\n        <p>In short, we’ve rewired the world’s banking system to put you at the core.</p>\n      ",
+            "answer1": "\n        <p>Constant is simple, risk-free, and rewarding investment.</p>\n        <br />\n        <p>Through blockchain technology, we’ve developed a suite of flexible investment products designed to grow your money at a pace that suits you. Whether you’re a seasoned investor or dipping your toe into it for the first time, Constant offers substantial returns with zero risk.</p>\n        <br />\n        <p>We’ve thrown out credit scoring, paperwork, and fees to give you more of what you deserve – industry-leading rates, risk-free loans, a stable, state-less currency, and free international transfers.</p>\n        <p>Available all day, every day, anywhere in the world.</p>\n      ",
             "question2": "Is Constant a bank?",
-            "answer2": "\n        <p>No. Constant is even better.</p>\n        <br />\n        <p>We’re 100% digital and open 24-7, so no queuing at bank branches, and no bank holidays.</p>\n        <br />\n        <p>We pay interest on your savings at 60x the national average.</p>\n        <br />\n        <p>We don’t run credit checks, we don’t give you reams of paperwork to sign, and we are open to anyone, anywhere.</p>\n      ",
+            "answer2": "\n        <p>No. Constant is even better.</p>\n        <br />\n        <p>We’re 100% digital and open 24-7, so no queuing at bank branches, and no bank holidays.</p>\n        <br />\n        <p>Our Investment Plans earn you up to 60x more investment income than a typical savings account pays in interest.</p>\n        <br />\n        <p>We don’t run credit checks, we don’t give you reams of paperwork to sign, and we are open to anyone, anywhere.</p>\n      ",
             "question3": "Is Constant regulated?",
-            "answer3": "Yes. Your deposits are held securely in our trust, which is regulated under US law. That’s why we ask you to verify your identity when you withdraw savings to your bank account.",
+            "answer3": "Yes. Your investments are held securely in our trust, which is regulated under US law. That’s why we ask you to verify your identity when you withdraw investments to your bank account.",
             "question4": "How does Constant make money?",
-            "answer4": "We charge interest on collateralized loans in order to pay our savers their earnings, and make a very slim profit from the difference.",
+            "answer4": "We charge interest on collateralized loans to pay you investment income, and make a very slim profit from the difference.",
             "question5": "Who are the people behind Constant?",
-            "answer5": "We’re a diverse team of engineers, economists, monetary policymakers, and industry experts. You can read all about our team on <page>.",
+            "answer5": "We’re a diverse team of engineers, economists, monetary policymakers, and industry experts. You can read all about our team on <a href=\"/about-us\" target=\"_blank\">About Us</a>.",
             "question6": "Where is Constant based?",
-            "answer6": "Everywhere! We are a registered US entity supported by a global team with presences in the USA, Vietnam, Malta and Singapore. If you’re in our neighborhood, drop by anytime."
+            "answer6": "Everywhere! We are a registered US entity supported by a global team with presences in the USA, Vietnam, and Malta. If you’re in our neighborhood, drop by anytime."
         }
     },
     "stories": {

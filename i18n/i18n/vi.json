@@ -92,7 +92,7 @@
         "saveAndGrowMoney": "Tiết kiệm & Hưởng ưu đãi",
         "login": "Đăng nhập",
         "openAnAccount": "Đăng kí tài khoản",
-        "yourSaving": "Tiết Kiệm"
+        "yourSaving": "My Investments"
     },
     "error": {
         "required": "Bắt buộc",
@@ -629,52 +629,60 @@
         },
         "proSaving": {
             "listApplications": {
-                "totalInterestEarned": "Tổng lãi suất",
+                "totalInterestEarned": "You've already earned",
                 "noRecord": "Bạn chưa thực hiện đầu tư",
                 "getListFailed": "Xảy ra lỗi khi xác nhận khoản đầu tư của bạn. Xin vui lòng thử lại.",
-                "amount": "Số lượng",
+                "amount": "Principal",
                 "interest": "Lãi suất",
-                "apr": "Tỉ suất hoàn vốn",
-                "haveTimeAccount": "{term}{termType} tiền gửi",
+                "apr": "APR",
+                "haveTimeAccount": "{term}-{termType} investment",
                 "anyTimeAccount": "Gửi không kì hạn",
-                "endTerm": "Đáo hạn ngày: ",
+                "endTerm": "Investment matures: ",
                 "trial": "THỬ NGHIỆM",
                 "trial_description": "Đã hết kì hạn. Khách hàng được giữ phần lãi",
-                "saving_title": "Gửi có kì hạn",
-                "anyTime_saving": "Tài khoản không kì hạn",
+                "saving_title": "Fixed Term Investments",
+                "anyTime_saving": "Flexible Account",
                 "interestInfo": {
                     "header": {
-                        "title": "Bạn có muốn tăng thêm lãi suất trên tất cả các khoản tiết kiệm?"
+                        "title": "Bạn có muốn tăng thêm lãi suất trên tất cả các khoản đầu tư?"
                     },
                     "body": {
                         "item1": {
-                            "title": "+1%",
-                            "description": "Gửi tiết kiệm từ 1,000 USD trở lên"
+                            "title": "+{percent}%",
+                            "description": "Invest 1,000 USD or more"
                         },
                         "item2": {
-                            "title": "+3% (đã nhận +1.4%)",
+                            "title": "+{total_percent}% {percent_claimed}",
                             "description": "Nhận thêm 0.2% cho mỗi {refer}.",
-                            "refer": "Giới thiệu tối đa cho 15 người bạn."
+                            "refer": "Giới thiệu tối đa cho 15 người bạn.",
+                            "percent_claimed": "(+{percent}% claimed)"
                         },
                         "item3": {
-                            "title": "+1%",
-                            "description": "Chia sẻ về Constant trên {facebook} hoặc {twitter}.",
+                            "title": "+{percent}%",
+                            "description": "Share Constant on {facebook}",
                             "facebook": "Facebook",
                             "twitter": "Twitter"
                         }
                     },
                     "footer": {
-                        "title": "Đó là 1%",
-                        "description": "Cộng thêm vào lãi suất mà bạn đang được nhận. Cho tất cả các khoản tiết kiệm."
-                    }
+                        "title": "That’s {percent}%",
+                        "description": "Cộng thêm vào lãi suất mà bạn đang được nhận. Cho tất cả các khoản đầu tư."
+                    },
+                    "referDialog": {
+                        "labelShare": "Share your link",
+                        "btnShare": "Copy link",
+                        "copied": "Referral link copied to clipboard."
+                    },
+                    "shareFbSuccess": "Share referral link success."
                 },
                 "withdraw": "Rút tiền",
                 "transfer": "Chuyển khoản",
-                "saving": "Tiết kiệm ngay",
+                "batchtransfer": "Batch Transfer",
+                "saving": "Invest now",
                 "dialog": {
                     "withdrawAccount": {
-                        "title": "Tiết kiệm",
-                        "body": "Bạn muốn một mức lãi suất cao hơn? Hãy chuyển tiền của bạn vào một tài khoản có kì hạn.",
+                        "title": "Đầu tư",
+                        "body": "Want to multiply your returns? Commit any amount for any time horizon.",
                         "termTitle": "{month} tháng{termType}({percent}%/năm)",
                         "percentReceive": "Bạn được hưởng lãi suất {percent}%/năm.",
                         "confirm": "Ok",
@@ -684,14 +692,14 @@
                         "validateMinAmountError": "Bạn không thể nhập số nhỏ hơn {amount} CONSTANT"
                     },
                     "checkTrialKyc": {
-                        "messageConfirm": "Vì lí do an ninh, xin vui lòng xác minh danh tính trước khi rút tiền từ tài khoản tiết kiệm không kì hạn.",
+                        "messageConfirm": "Vì lí do an ninh, xin vui lòng xác minh danh tính trước khi rút tiền từ tài khoản không kì hạn.",
                         "confirm": "Xác minh danh tính",
                         "cancel": "Để sau"
                     }
                 },
                 "alert": {
                     "depositSavingSuccess": "Bạn đã nạp Constant thành công.",
-                    "depositSavingFailed": "Gửi tiết kiệm không thành công"
+                    "depositSavingFailed": "Gửi đầu tư không thành công"
                 },
                 "name": "Tên",
                 "email": "Email",
@@ -1053,7 +1061,7 @@
             "subintroTitle2": "100% an toàn và ổn định.",
             "subintroDesc2": "Constant được đảm bảo bởi đồng USD và giám sát bởi một tổ chức tài chính độc lập có uy tín. Khách hàng được bảo hiểm lên tới 5 triệu USD.",
             "subintroTitle3": "Lãi suất 3.6% trên mọi khoản tiền.",
-            "subintroDesc3": "Trả lãi hàng tháng, đảm bảo giá trị khoản tiết kiệm của bạn.",
+            "subintroDesc3": "Trả lãi theo ngày, đảm bảo giá trị khoản đầu tư của bạn.",
             "subintroTitle4": "Không biên giới. Miễn phí.",
             "subintroDesc4": "Constant được chuyển ngay lập tức từ tài khoản của bạn tới bất cứ ai trên toàn thế giới.",
             "backToNewOrder": "Đặt lệnh mới",
@@ -1245,11 +1253,11 @@
         "whatCaption2": "Dễ dàng truy cập",
         "whatCaption3": "Constant luôn sẵn sàng hỗ trợ",
         "whatTitle": "Các tiện ích của Constant",
-        "whatTitle0": "Tiết kiệm bằng USD",
+        "whatTitle0": "Đầu tư bằng USD",
         "whatTitle1": "Lên đến 130 triệu USD",
         "whatTextLink1": "Đọc đầy đủ",
         "whatLink1": "/chính sách bảo mật",
-        "whatDesc1": "<p>Không yêu cầu số tiền đầu tư tối thiểu và bạn không cần phải có số vốn lớn mới có thể đầu tư. Với Constant, bạn có thể chọn đầu tư không kì hạn để dễ dàng thanh khoản hoặc hưởng lãi suất tới 6% với kì hạn 1 năm.</p>",
+        "whatDesc1": "<p>Bạn không cần phải có số vốn lớn mới có thể đầu tư. Bắt đầu từ 1 triệu, bạn có thể chọn đầu tư không kì hạn để dễ dàng thanh khoản hoặc hưởng lãi suất tới 6% với kì hạn 1 năm.</p>",
         "whatTitle2": "Bởi Chính phủ Hoa Kì",
         "whatTitle3": "Không yêu cầu số tiền tối thiểu",
         "whatDesc0": "<p>Hãy tận dụng tối đa nguồn tiền nhàn rỗi. Constant áp dụng lãi suất rất hấp dẫn mà bạn không thể chối từ. Phần lãi sẽ được trả về hàng ngày và bạn có thể rút ra bất cứ lúc nào.</p>",
@@ -1257,8 +1265,8 @@
         "whatDesc3": "<p>Bạn làm việc rất chăm chỉ để kiếm tiền và chúng tôi đảm bảo rằng những đồng tiền này sẽ được sử dụng một cách thích hợp. Những chuyên gia tư vấn đầu tư của Constant luôn sẵn sàng hỗ trợ mọi lúc khách hàng cần và tuyệt đối không nhận tiền hoa hồng.</p>",
         "whatMore0": "Constant đảm bảo lợi nhuận cao và không có rủi ro",
         "whatMore1": "Constant bảo vệ tiền của bạn như thế nào?",
-        "whatMore2": "Làm thế nào để chọn kì hạn tiết kiệm phù hợp?",
-        "whatMore3": "Mọi người đang sử dụng Constant để tiết kiệm như thế nào?",
+        "whatMore2": "Cách chọn kì hạn đầu tư phù hợp",
+        "whatMore3": "Cách sử dụng Constant để đầu tư",
         "whatButton": "Cách hoạt động",
         "helpTitle": "Ưu đãi cho sinh viên Hoa Kỳ",
         "helpButton": "Đăng ký ngay",
@@ -1417,9 +1425,9 @@
     "faqs": {
         "title": "Câu hỏi thường gặp",
         "t1": "TÀI KHOẢN",
-        "t2": "KHOẢN TIỀN GỬI THỬ NGHIỆM",
-        "t3": "TIẾT KIỆM",
-        "t4": "LÃI SUẤT",
+        "t2": "INITIAL INVESTMENT",
+        "t3": "INVEST",
+        "t4": "RETURNS",
         "t5": "KHÁI QUÁT CHUNG",
         "question1": "Constant có thể được mua ở những quốc gia nào?",
         "answer1": "<p>Ở bất cứ đâu trên thế giới. Bạn chỉ cần có kết nối Internet là đủ.</p>",
@@ -1438,83 +1446,83 @@
             "question1": "Tôi có thể mở tài khoản Constant ở nước mình được không?",
             "answer1": "Bất kì ai cũng có thể mở tài khoản Constant bất kể bạn đang ở đâu. Constant là dịch vụ cho bất cứ ai trên thế giới có kết nối internet.",
             "question2": "Cách mở tài khoản Constant?",
-            "answer2": "Đăng ký tài khoản Constant bằng cách nhập email và mật khẩu. Sau đó, bạn nhấn vào đường dẫn xác nhận tài khoản trong email gửi đến bạn ngay sau đó để hoàn tất quá trình đăng ký.",
-            "question3": "Số dư tối thiểu trong tài khoản là bao nhiêu?",
-            "answer3": "Bạn không cần có số dư tối thiểu trong tài khoản. Hơn thế nữa, Constant tặng bạn tài khoản dùng thử trị giá 1000 USD để khám phá cách hoạt động của tài khoản. Đến kì đáo hạn, 1000 USD sẽ trở về với chúng tôi, nhưng bạn sẽ được giữ phần lãi.",
+            "answer2": "Simply register with an email address and password to get started. To withdraw returns from your free $1,000 initial investment, you’ll need to verify your ID, which shouldn’t take more than a few minutes.",
+            "question3": "What is the minimum capital?",
+            "answer3": "You can invest any amount you want. Better yet, once you’ve opened your account, we’ll give you a free initial investment of $1,000 so you can start earning investment income immediately. The $1,000 principal is returned to us at the end of your term (sorry!), but you keep the ROI. Not bad, right?",
             "question4": "Tôi có nhất thiết phải xác minh tài khoản?",
-            "answer4": "Bạn hoàn toàn có thể tạo tài khoản Constant mà không cần xác minh tài khoản. Tuy nhiên, khi bạn rút tiền ra khỏi tài khoản, bạn sẽ cần xác minh thông tin cá nhân. Chúng tôi mong bạn hiểu quy trình này là để bảo vệ khoản tiết kiệm của bạn và để chấp hành quy định tài chính.",
+            "answer4": "You can open a Constant account without verifying your identity. However, to withdraw earned investment income on your $1,000 initial investment (or any other investment amount), we will need to verify your identity. We do this to protect you from fraud and to comply with financial regulations.",
             "question5": "Làm sao đăng nhập khi tôi quên mật khẩu?",
             "answer5": "Bạn hãy vào trang đăng nhập và nhấn vào “Quên mật khẩu?”. Sau đó, nhập địa chỉ email dùng để đăng ký Constant và làm theo hướng dẫn trong email. Nếu bạn không nhận được email tạo lại mật khẩu, hãy kiểm tra hộp mail spam. ",
             "question6": "Tôi có cần cung cấp tài khoản ngân hàng để mua Constant không?",
-            "answer6": "Bạn không cần cung cấp thông tin tài khoản ngân hàng với Constant. Tuy nhiên, khi rút tiền ra, chúng tôi sẽ cần bạn cung cấp thông tin ngân hàng để nhận tiền. Để đảm bảo an toàn cho bạn, chúng tôi không lưu trữ thông tin này."
+            "answer6": "You don't need a bank account to use Constant. However, if you withdraw your Constant investment income to USD (or local equivalent), you will need to enter the receiving bank account details. For additional security, we don't store this information for future transactions."
         },
-        "trialDeposit": {
-            "question1": "Chương trình dùng thử khi nào hết hạn?",
-            "answer1": "Chương trình dùng thử hiện chưa có thời gian kết thúc. Chúng tôi luôn nỗ lực để bạn trải nghiệm được Constant lâu nhất có thể ",
-            "question2": "Ai có thể tham gia chương trình này? ",
-            "answer2": "Chương trình dành cho mọi khách hàng mới tạo tài khoản và chưa tham gia chương trình trước đây",
-            "question3": "Tôi có thể rút 1,000 USD ra không?",
-            "answer3": "Rất tiếc là bạn không thể rút 1,000 USD trong tài khoản dùng thử. Chúng tôi sẽ lấy lại 1,000 USD đó khi tài khoản dùng thử của bạn đáo hạn, nhưng bạn được giữ toàn bộ phần lãi.",
-            "question4": "Cách kiểm tra lãi từ khoản tiết kiệm này ra sao?",
-            "answer4": "Sau khi đăng nhập vào tài khoản, nhấn vào “Sổ Tiết Kiệm”. Tổng số lãi nhận được nằm ở góc phải phía trên của màn hình. Ở đây bạn sẽ thấy lãi tăng lên mỗi ngày và bạn được rút lãi ra bất cứ lúc nào.",
-            "question5": "Khi đáo hạn, điều gì xảy ra?",
-            "answer5": "Đến kì đáo hạn, chúng tôi sẽ lấy lại 1,000 USD phần gốc. Nếu như bạn chưa rút lãi, chúng tôi sẽ gửi toàn bộ phần lãi cho bạn.",
-            "question6": "Tôi có thể nạp tiền vào tài khoản dùng thử này không? ",
-            "answer6": "Bạn không thể nạp tiền vào tài khoản đang có 1,000 USD. Thay vào đó, hãy tạo sổ tiết kiệm mới với mức kì hạn tùy thích.",
-            "question7": "Khoản tiết kiệm của tôi có thể có mức lãi khác với khoản dùng thử không? ",
-            "answer7": "Hoàn toàn có thể! Tài khoản dùng thử sẽ tách biệt với những sổ tiết kiệm khác của bạn. Bạn có thể tự do lựa chọn số tiền và kì hạn tiết kiệm cho những sổ tiết kiệm sau này của mình"
+        "initialInvestment": {
+            "question1": "Is the initial investment promotion still available?",
+            "answer1": "Yes, the initial investment promotion is available until further notice. We’ll keep it going for as long as we can.",
+            "question2": "Am I eligible for this promotion?",
+            "answer2": "As long as you’re a new customer and haven’t accepted an initial trial investment before, you are eligible.",
+            "question3": "Can I withdraw the $1,000?",
+            "answer3": "While we’d love to give you $1,000, we can’t. The $1,000 will be returned to us at the end of your commitment period, but you keep the returns, which is still a pretty good deal.",
+            "question4": "How can I track the returns from this promotion?",
+            "answer4": "Just log into your account and click Your Investments. Total earned investment income is on the top right of the dashboard.",
+            "question5": "What happens at the end of my commitment period?",
+            "answer5": "At the end of the term, we’ll pay you the total profit (assuming you haven’t withdrawn it already) and the $1,000 principal will be returned to us. Please note that we will need to verify your identity before you can withdraw investment income to your bank account. This protects you from fraud and complies with financial regulations.",
+            "question6": "Can I invest more into the initial investment promotion?",
+            "answer6": "No, but you can invest in other Investment Plans whenever you like.",
+            "question7": "Can I choose different commitment periods for other Investment Plans?",
+            "answer7": "Absolutely! Participation in the initial investment promotion is separate to your other Investment Plans, so you can choose the amounts and terms for your other investments."
         },
-        "save": {
-            "question1": "Sổ tiết kiệm Constant là gì?",
-            "answer1": "Chúng tôi cung cấp dịch vụ tiết kiệm đơn giản, không có rủi ro để bạn yên tâm đầu tư và sinh lời. Bạn nạp tiền vào Constant, chọn kỳ hạn và nhận lãi trả theo ngày. ",
-            "question2": "Cách hoạt động của Sổ Tiết kiệm Constant?",
-            "answer2": "\n<p>Bạn có thể chọn kỳ hạn phù hợp cho khoản tiết kiệm của mình ở phần “Tiết Kiệm” trên website Constant. Lãi suất phụ thuộc vào kì hạn với lãi suất tối đa lên đến 6%/năm.</p>\n        <br />\n        <p>Để đảm bảo giá trị của khoản tiết kiệm, chúng tôi gửi tiền vào quỹ tín thác Constant chịu sự quản lý của luật Hoa Kỳ và được bảo hiểm lên tới 130 triệu USD. Đồng thời chúng tôi cũng tạo ra đồng tiền kĩ thuật số Constant sao cho mỗi một USD bạn bỏ vào quỹ tín thác Constant có giá trị đúng bằng 1 Constant ở trong tài khoản của bạn lúc này. </p>\n        <br />\n        <p>Số Constant trong tài khoản của bạn sẽ sinh lãi và lãi sẽ được trả hàng ngày. Bạn có bao nhiêu Constant sẽ rút được về đúng từng đấy USD. </p>\n        <br />\n        <p>Khi đến kỳ đáo hạn, khoản tiết kiệm của bạn nếu không được rút ra sẽ tiếp tục được hưởng lãi suất không kì hạn. Bạn vẫn sẽ tiếp tục được nhận lãi cho đến khi biết phải làm gì tiếp theo với số tiền mà mình có. </p>\n        <br />\n        <p>Bạn cũng có thể gửi Constant đến bất kì ai ở khắp nơi trên thế giới hoặc tiếp tục gửi Constant với kì hạn phù hợp với kế hoạch cá nhân để nhận được nhiều lãi hơn. 1 Constant vẫn luôn có giá bằng 1 USD. Sự lựa chọn nằm trong tầm tay bạn!</p>\n      ",
-            "question3": "Cách Constant bảo hiểm khoản tiết kiệm của tôi?",
-            "answer3": "Khoản tiết kiệm của bạn được giữ trong quỹ tín thác Constant và được giám sát một đơn vị tài chính độc lập có uy tín ở Mỹ là Prime Trust. Quỹ tín thác Constant được bảo hiểm bởi Công ty Bảo hiểm Ký thác Liên bang Hoa Kỳ với tổng giá trị 130 triệu USD. Bạn có thể tìm hiểu thêm về quỹ tín thác Constant tại blog của chúng tôi.",
-            "question4": "Constant chấp nhận loại tiền nào?\n",
-            "answer4": "Chúng tôi chấp nhận mọi loại tiền. Tiền của bạn sẽ được quy đổi sang USD và trữ trong két sắt an toàn của FDIC",
-            "question5": "Constant có chấp nhận tiền ảo không?",
-            "answer5": "Hiện tại thì không. Trong tương lai, Constant sẽ tiếp tục mở rộng và chấp nhận tiền ảo",
-            "question6": "Tôi có thể rút khoản tiết kiệm trước hạn được không?",
-            "answer6": "\n        <p>Để đảm bảo mức lãi cao của bạn, chúng tôi sẽ giữ toàn bộ khoản tiết kiệm trong kỳ hạn. Do đó, chúng tôi rất tiếc là bạn không thể rút khoản tiết kiệm trước hạn.</p>\n        <br />\n        <p>Bạn chỉ có thể rút khoản lãi tính theo ngày. Bạn hãy cân nhắc kĩ và chọn mức kỳ hạn phù hợp với nhu cầu của mình. Hãy nhớ, Constant luôn có mức lãi linh hoạt là 1%/năm cho những người không chắc chắn về khả năng tiết kiệm của mình</p>\n        <br />\n      ",
-            "question7": "Vì sao tiền tiết kiệm của tôi phải đổi sang Constant? ",
-            "answer7": "        <p>Khi tiết kiệm, một số loại tiền tệ sẽ bị mất giá do lạm phát. Cách tốt nhất để chúng tôi đảm bảo lãi suất và lợi ích cho bạn là tạo ra một loại tiền điện tử với giá trị cố định với USD - đồng tiền ổn định nhất thế giới.</p>\n        <br />\n        <p>Tiền điện tử đó chính là Constant. Khi bạn bắt đầu tiết kiệm, chúng tôi tạo ra Constant. Khi bạn rút khoản tiết kiệm ra, Constant sẽ biến mất. Như vậy, giá trị Constant luôn bằng với USD và bạn không phải chịu mất giá.</p>\n        <br />\n      ",
-            "question8": "Quá trình số hóa này diễn ra như thế nào?",
-            "answer8": "\n<p>Khoản tiết kiệm của bạn sẽ được gửi đến và giữ an toàn tại quỹ tín thác Constant. Đồng thời những đồng Constant mới sẽ được chúng tôi tạo ra trên chuỗi khối Ethereum sao cho bạn gửi vào quỹ tín thác Constant bao nhiêu USD sẽ nhận được đúng bấy nhiêu Constant. Ví dụ, nếu bạn gửi cho chúng tôi 100 USD hoặc khoản tiền tương đương với 100 USD, chúng tôi sẽ gửi 100 USD đó tới quỹ tín thác Constant để bạn nhận được 100 Constant. </p>\n        <br />\n        <p>Constant ở trong tài khoản có kì hạn của bạn sẽ sinh lãi và lãi này được trả hàng ngày. Đến ngày đáo hạn, bạn có thể rút cả gốc lẫn lãi về từ quỹ tín thác Constant và chúng tôi sẽ huỷ số đồng Constant tương ứng với số tiền bạn rút. Đặc biệt, bạn hoàn toàn có thể sử dụng Constant để chuyển tiền đi bất cứ đâu, giao dịch trên các sàn giao dịch hoặc đơn giản là tiếp tục gửi tiết kiệm. Hãy sử dụng Constant thật thông minh và hiệu quả!</p>\n      ",
-            "question9": "Khoản tiết kiệm của tôi được trữ ở đâu?",
-            "answer9": "Khoản tiết kiệm của bạn được giữ an toàn trong quỹ tín thác Constant, chịu sự quản lý của luật Hoa Kỳ và được bảo hiểm 130 triệu USD bởi FDIC.",
-            "question10": "Tôi có thể nạp thêm tiền vào khoản tiết kiệm trước khi đáo hạn không?",
-            "answer10": "Bạn không thể nạp hoặc rút tiền trong khoản tiết kiệm khi chưa đáo hạn. Tuy nhiên, bạn có thể tạo ra 1 khoản tiết kiệm khác với mức kỳ hạn tùy thích",
-            "question11": "Quỹ tín thác Constant là gì? ",
-            "answer11": "Quỹ tín thác Constant được kiểm toán công khai và giám sát bởi Prime Trust - một tổ chức tài chính độc lập có uy tín của Hoa Kỳ. Quỹ tín thác Constant tuân thủ tuyệt đối theo luật pháp Hoa Kỳ và được bảo hiểm lên tới 130 triệu USD bởi FDIC.",
-            "question12": "FDIC là ai?",
-            "answer12": "\n        <p>Công ty Bảo hiểm Ký thác Liên bang Hoa Kỳ (FDIC) được thành lập bởi chính phủ Mỹ để đảm bảo khả năng hoạt động của hệ thống tài chính Mỹ. Một trong những lĩnh vực hoạt động chính của FDIC là bảo hiểm tiền gửi. Quỹ tín thác Constant được bảo hiểm lên tới 130 triệu USD bởi FDIC. Bạn có thể tìm hiểu thêm về <a target=\"_blank\" href=\"https://www.fdic.gov\">FDIC tại đây.</a></p>\n      "
+        "invest": {
+            "question1": "What is a Constant Investment Plan?",
+            "answer1": "Our Investment Plans are simple, risk-free, and effective ways to grow your money. You choose a commitment period, invest your money, and at the end of the period you get your money back plus earned investment income. It really is as simple as that.",
+            "question2": "How do Constant Investment Plans work?",
+            "answer2": "\n        <p>Under the “INVEST” tab on our website, you’ll be able to choose from several different Investment Plans. Each one is designed to maintain the value of your principal investment and pay you daily investment income.</p>\n        <br />\n        <p>To maintain the value of your principal, we send your money to the Constant trust where it’s protected by US law and insured to $250,000. At the same time, we create a “digital dollar” called Constant and put it into your account, which keeps the value stable.</p>\n        <br />\n        <p>Over time, your Constant earns investment income which you can withdraw as you earn (daily) or save until the end of your commitment period. Either way, your final investment statement is an amount in Constant you can withdraw for its 1:1 equivalent in USD.</p>\n        <br />\n        <p>Of course, you don’t have to withdraw your principal and investment income as USD. At the end of your commitment period, when your investment matures, we reinvest your final balance into our Anytime Investment Plan so you continue to earn investment income while you decide what to do next.</p>\n        <br />\n        <p>You could send your Constant to someone else, anywhere in the world, keep it stored in your Anytime Investment Plan to keep the value locked to the USD, or simply put the Constant back into another Investment Plan to earn even more interest. The choice is yours!</p>\n      ",
+            "question3": "How do you protect my investment?",
+            "answer3": "Your principal is securely held in the Constant Vault, which is overseen by an accredited US financial institution called Prime Trust. Your investment is FDIC-insured to $250,000. You can read more about the Constant Vault on our blog.",
+            "question4": "Which currencies do you accept?",
+            "answer4": "We accept any currency sent to our US-based Constant Vault bank account. It is then converted to USD and stored in an FDIC-insured vault.",
+            "question5": "Do you accept cryptocurrency?",
+            "answer5": "Not at this time.",
+            "question6": "Can I access my principal investment at any time?",
+            "answer6": "\n        <p>To give you the best guaranteed returns, we hold on to your principal for the duration of your commitment period. Think of your principal as a seed that we water and help grow. To do that, we need time, which is why we offer different Investment Plans so you can find the right one for you.</p>\n        <br />\n        <p>If you’d rather have continuous access to your principal, choose our Anytime Investment Plan – the rate is lower, but you can withdraw your money at any time.</p>\n        <br />\n      ",
+            "question7": "Why do you digitize my investment?",
+            "answer7": "\n        <p>When you invest money for the long term, some local currencies can lose value due to inflation. This eats into your investment income, diminishing your returns. We don’t think that’s fair. So instead, we convert your principal into a “digital dollar” that’s 100% backed by real USD – the world’s reserve currency.</p>\n        <br />\n        <p>Our digital dollar is called Constant. Anytime you invest or withdraw, we create or destroy Constant to ensure it’s 1:1 backed, so its value always matches the USD. That way, you never need worry about inflation and other economic pressures eating into your investment. You just sit back and watch your money grow.</p>\n        <br />\n      ",
+            "question8": "How does digitization work?",
+            "answer8": "\n        <p>First, we send your investment principal to the Constant Vault for safekeeping. Then, we create new Constant tokens on the Ethereum blockchain that match the USD value of your principal. For example, if you gave us the equivalent of $100 in your local currency, we send $100 to the Constant Vault and create 100 Constant.</p>\n        <br />\n        <p>Constant remains in your account for your commitment period, earning investment income that you can save or withdraw daily. Then, when your period ends, you can withdraw your principal from the Constant Vault (and any returns) and we’ll destroy the Constant. Or, if you’d rather use the Constant tokens to send money abroad, trade on exchanges, or reinvest for another period, please do!</p>\n      ",
+            "question9": "Where is my investment stored?",
+            "answer9": "Your principal and investment income are stored inside the Constant Vault, which is regulated under US law and protected by $130,000,000 FDIC insurance (per account limit of $250,000 applies).",
+            "question10": "Can I add to my Investment Plan during the term?",
+            "answer10": "You can’t add to an Investment Plan once it’s started, but there’s no limit on how many Investment Plans you can have. So if you’d like to invest more, simply open another Investment Plan and watch your money grow.",
+            "question11": "What is the Constant Vault?",
+            "answer11": "The Constant Vault is a publicly-audited trust overseen and managed by Prime Trust, a US accredited financial institution. The Constant Vault is regulated in the US and insured by the FDIC to the value of $130,000,000 (a per account limit of $250,000 applies).",
+            "question12": "What is FDIC insurance?",
+            "answer12": "\n        <p>The Federal Deposit Insurance Corporation (FDIC) is a body set up by the US government to protect the integrity of the US financial system. It does this in a number of ways, including insuring deposits. Our Constant Vault is insured by FDIC to an indemnity limit of $130,000,000. You can <a target=\"_blank\" href=\"https://www.fdic.gov/about/strategic/strategic/mission.html\">read more about the FDIC on their website.</a></p>\n      "
         },
-        "interest": {
-            "question1": "Lãi được trả như thế nào?",
-            "answer1": "Chúng tôi trả lãi mỗi ngày. Bạn có thể chọn rút lãi vào cuối kì hoặc bất cứ lúc nào bạn muốn. Lãi này sẽ không tính gộp vào tiền gốc.",
-            "question2": "Lãi được tính như thế nào? ",
-            "answer2": "Phần lãi suất bạn nhận được hàng ngày được tính bằng cách nhân số tiền bạn gửi với phần trăm lãi suất theo kì hạn mà bạn chọn rồi chia cho 365. Lãi suất không được cộng dồn. Ví dụ, nếu bạn gửi 500 USD với kì hạn 1 năm, lãi suất 6%, bạn sẽ nhận được 30 USD khi đáo hạn và lãi trả về hàng ngày khoảng 0.08 USD.",
-            "question3": "Làm cách nào để tôi theo dõi lãi suất của mình?",
-            "answer3": "Sau khi đăng nhập vào tài khoản, nhấn vào “Sổ Tiết Kiệm”. Tổng số lãi nhận được nằm ở góc phải phía trên của màn hình. Ở đây bạn sẽ thấy lãi tăng lên mỗi ngày và bạn được rút lãi ra bất cứ lúc nào.",
-            "question4": "Lãi suất có tăng/giảm trong tương lai? ",
-            "answer4": "Chúng tôi sẽ cố gắng để giữ mức lãi hấp dẫn nhất có thể, hoặc thậm chí là tăng lãi suất hơn nữa! \n",
-            "question5": "Vì sao Constant có mức lãi cao đến vậy?",
-            "answer5": "\n<p>  Chúng tôi hoạt động tương đồng với ngân hàng truyền thống khi khoản tiết kiệm của bạn không có rủi ro. Tuy nhiên, mức lãi của Constant cao hơn do chúng tôi tin rằng bạn xứng đáng nhận được lãi nhiều hơn từ khoản tích lũy vất vả của mình</p>\n        <br />\n        <p>Chúng tôi thay nhân sự bằng công nghệ, thay nhà đầu tư bằng thuật toán để vận hành tinh gọn hơn, thông minh hơn và trao cho bạn nhiều lợi ích hơn</p>\n   "
+        "returns": {
+            "question1": "How are my returns paid out?",
+            "answer1": "We pay investment profit daily, so you can either wait until the end of your commitment period to withdraw your investment income or withdraw it daily. It’s up to you.",
+            "question2": "How are my daily returns calculated?",
+            "answer2": "Your rate of return is calculated by applying the percentage rate of your Investment Plan to the amount of your principal, and then dividing it by 365 to get a daily rate. Your returns are not compounded, so if you invest $500 for one year at a rate of 6%, you would earn $30 investment income at the end of your commitment period (about $0.08 per day).",
+            "question3": "How can I track my earnings?",
+            "answer3": "Just log into your account and click Your Investments. Total earned investment income is on the top right of the dashboard.",
+            "question4": "Will you increase ROI rates in the future?",
+            "answer4": "\n        <p>You never know ;-)</p>\n        <br />\n        <p>As Constant grows, we’re always looking for new ways of improving our efficiency so we can give you the best returns on your investment.</p>\n      ",
+            "question5": "How can you offer such high returns risk-free?",
+            "answer5": "\n        <p>We pay investment income from earnings we make on our risk-free loans. We can afford to give you higher rates than most other low-risk investment products because we use technology to strip out inefficiency and accelerate returns.</p>\n        <br />\n        <p>As a tech company disrupting the investment sector, we don’t need branches, managers, or advisors. Instead, we use custom-designed blockchain technology to remove costly middlemen and intermediary processes, while still providing an auditable transaction history. As a result, we can afford to give much better returns on your investment.</p>\n      "
         },
         "general": {
             "question1": "Constant là gì?",
-            "answer1": "\n<p>Constant là giải pháp đơn giản nhất, ít rủi ro nhất để sinh lời, chuyển khoản quốc tế và vay tín chấp. Chúng tôi vận hành tương đối giống ngân hàng, nhưng ưu việt hơn.</p>\n        <br />\n        <p>Chúng tôi nâng cấp những quy trình cồng kềnh, hệ thống phí phức tạp thành một sản phẩm công nghệ tinh gọn để trao toàn bộ quyền lợi cho người dùng: Bạn có thể tích lũy, tiêu xài, vay nợ chỉ bằng 1 loại tiền tệ quyền lực được định giá bởi USD và bảo hiểm bởi những tổ chức uy tín nhất thế giới.</p>\n        <br />\n        <p> Nói cách khác, đây chính là một “ngân hàng” tạo ra bởi người dùng & phục vụ lợi ích của người dùng.</p>\n      ",
+            "answer1": "\n        <p>Constant is simple, risk-free, and rewarding investment.</p>\n        <br />\n        <p>Through blockchain technology, we’ve developed a suite of flexible investment products designed to grow your money at a pace that suits you. Whether you’re a seasoned investor or dipping your toe into it for the first time, Constant offers substantial returns with zero risk.</p>\n        <br />\n        <p>We’ve thrown out credit scoring, paperwork, and fees to give you more of what you deserve – industry-leading rates, risk-free loans, a stable, state-less currency, and free international transfers.</p>\n        <p>Available all day, every day, anywhere in the world.</p>\n      ",
             "question2": "Constant có phải là ngân hàng không?",
-            "answer2": "\n<p>Chúng tôi ưu việt hơn thế!</p>\n        <br />\n        <p>Chúng tôi là một dự án công nghệ! Nghĩa là Constant luôn sẵn sàng 24/7, 100% online.</p>\n        <br />\n        <p>Chúng tôi trả lãi hơn 60 lần so với mức thông thường.</p>\n        <br />\n        <p>Không còn cảnh xếp hàng ở phòng giao dịch, không còn những người nghẽn mạch thanh toán do lễ tết. Bạn có thể đăng nhập và sử dụng Constant ở bất cứ nơi nào trên thế giới bởi bất cứ ai.</p>\n      ",
+            "answer2": "\n        <p>No. Constant is even better.</p>\n        <br />\n        <p>We’re 100% digital and open 24-7, so no queuing at bank branches, and no bank holidays.</p>\n        <br />\n        <p>Our Investment Plans earn you up to 60x more investment income than a typical savings account pays in interest.</p>\n        <br />\n        <p>We don’t run credit checks, we don’t give you reams of paperwork to sign, and we are open to anyone, anywhere.</p>\n      ",
             "question3": "Constant có hợp pháp không?",
-            "answer3": "Đương nhiên là có! Toàn bộ khoản tiết kiệm của bạn được đảm bảo bởi quỹ tín thác của chúng tôi, chịu sự kiểm soát của luật Hoa Kỳ.",
+            "answer3": "Yes. Your investments are held securely in our trust, which is regulated under US law. That’s why we ask you to verify your identity when you withdraw investments to your bank account.",
             "question4": "Constant kiếm tiền bằng cách nào?",
-            "answer4": "Chúng tôi có lãi từ việc cho vay với các dự án khác theo nghiệp vụ ngân hàng.",
+            "answer4": "We charge interest on collateralized loans to pay you investment income, and make a very slim profit from the difference.",
             "question5": "Đội ngũ Constant gồm những ai?",
-            "answer5": "Chúng tôi là những kỹ sư, nhà thiết kế, chuyên gia tài chính làm việc trên toàn thế giới với mục tiêu lớn nhất là giúp tiền của bạn sinh lời và lưu thông dễ dàng nhất.",
+            "answer5": "We’re a diverse team of engineers, economists, monetary policymakers, and industry experts. You can read all about our team on <a href=\"/about-us\" target=\"_blank\">About Us</a>.",
             "question6": "Trụ sở Constant ở đâu?",
-            "answer6": "Chúng tôi có văn phòng tại hầu hết mọi nơi! Chúng tôi là công ty Hoa Kỳ với sự hỗ trợ từ đội ngũ văn phòng đại diện tại Việt Nam, Malta, Hong Kong và Singapore. Nếu bạn đang ở những nước này, hãy đến thăm Constant nhé."
+            "answer6": "Everywhere! We are a registered US entity supported by a global team with presences in the USA, Vietnam, and Malta. If you’re in our neighborhood, drop by anytime."
         }
     },
     "stories": {
@@ -1616,8 +1624,8 @@
     },
     "saving": {
         "trialLeftNum": "CHỈ CÒN {trialLeft} LẦN TRẢI NGHIỆM MIỄN PHÍ",
-        "title": "Hãy đầu tư theo cách của bạn.",
-        "subTitle": "Một khoản đầu tư đúng đắn là khi bạn cảm thấy thoải mái khi thực hiện đầu tư và khoản đầu tư này liên tục sinh lãi theo thời gian. Bạn chỉ cần chọn một kì hạn đầu tư thích hợp, Constant sẽ giúp bạn đầu tư một cách đúng đắn.",
+        "title": "Đầu tư thông minh & an toàn.",
+        "subTitle": "Constant - nền tảng kết nối nhà đầu tư và người cần vay thế chấp đảm bảo khoản đầu tư liên tục sinh lãi và được bảo hiểm 100%. Bạn chỉ cần chọn kì hạn thích hợp, Constant sẽ giúp bạn đầu tư an toàn và thông minh.",
         "makeLocalOrderSuccess": "Lệnh của bạn được tạo thành công",
         "makeLocalOrderFailed": "Lệnh của bạn không được tạo thành công",
         "makeDirectOrderSuccess": "Lệnh của bạn được tạo thành công",

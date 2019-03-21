@@ -58,8 +58,8 @@
         "contactUs": "Liên hệ:"
     },
     "headerBar": {
-        "deposit": "Deposit",
-        "banking": "Bank",
+        "deposit": "Gửi tiền",
+        "banking": "Ngân hàng",
         "save": "Đầu tư",
         "borrow": "Vay",
         "signIn": "ĐĂNG NHẬP",
@@ -97,16 +97,16 @@
         "yourSaving": "Khoản Đầu Tư Của Tôi",
         "hoverMenu": {
             "deposit": {
-                "title": "Deposit",
-                "subTitle": "$5M insurance"
+                "title": "Gửi tiền",
+                "subTitle": "Bảo hiểm 5 triệu USD"
             },
             "transfer": {
-                "title": "Transfer",
-                "subTitle": "To anyone, anywhere"
+                "title": "Chuyển khoản",
+                "subTitle": "Tới mọi nơi trên thế giới"
             },
             "withdraw": {
-                "title": "Withdraw",
-                "subTitle": "Into any currency"
+                "title": "Rút tiền",
+                "subTitle": "Về tài khoản ngân hàng"
             }
         }
     },
@@ -686,13 +686,13 @@
                         "description": "Cộng thêm vào lãi suất mà bạn đang được nhận. Cho tất cả các khoản đầu tư."
                     },
                     "referDialog": {
-                        "labelShare": "Choose who to email",
+                        "labelShare": "Chọn người để gửi email",
                         "btnShare": "Sao chép liên kết",
                         "copied": "Đã sao chép liên kết giới thiệu của bạn.",
                         "selectEmail": "Chọn email để chia sẻ",
                         "sendInvitations": "Gửi Lời Mời",
                         "sendInvitationsSuccess": "Gửi Lời Mời Thành Công!",
-                        "or": "Or copy link",
+                        "or": "Hoặc sao chép liên kết",
                         "noOptionsMessage": "Không có dữ liệu",
                         "addNewEmail": "Thêm {email}"
                     },
@@ -1277,8 +1277,8 @@
         "midBanner1": "Chuyển khoản tới bất kì đâu",
         "midBanner2": "Hoàn toàn miễn phí",
         "whatChatWithUs": "Chat với Constant",
-        "whatCaption0": "8% annual return",
-        "whatCaption1": "Your money multiplies",
+        "whatCaption0": "Lãi 8%/năm",
+        "whatCaption1": "Đầu tư an toàn lợi nhuận cao",
         "whatCaption2": "Dễ dàng truy cập",
         "whatCaption3": "Constant luôn sẵn sàng hỗ trợ",
         "whatTitle": "Các tiện ích của Constant",
@@ -1286,7 +1286,7 @@
         "whatTitle1": "Lên đến 130 triệu USD",
         "whatTextLink1": "Đọc đầy đủ",
         "whatLink1": "/chính sách bảo mật",
-        "whatDesc1": "<p>No matter which commitment period you choose, returns are paid out daily into a Flexible Account. Flexible means you can withdraw whenever you like - or reinvest and make profit on your profit.</p>",
+        "whatDesc1": "<p>Dù bạn chọn kì hạn bao lâu, lãi luôn được trả về hàng ngày. Bạn có thể rút lãi ra bất cứ lúc nào bạn muốn, tiếp tục tái đầu tư và để đồng tiền tự sinh sôi.</p>",
         "whatTitle2": "Bởi Chính phủ Hoa Kì",
         "whatTitle3": "Không yêu cầu số tiền tối thiểu",
         "whatDesc0": "<p>Hãy tận dụng tối đa nguồn tiền nhàn rỗi. Constant áp dụng lãi suất rất hấp dẫn mà bạn không thể chối từ. Phần lãi sẽ được trả về hàng ngày và bạn có thể rút ra bất cứ lúc nào.</p>",
@@ -1531,7 +1531,7 @@
             "question1": "Lãi suất được trả như thế nào?",
             "answer1": "Chúng tôi trả lãi mỗi ngày. Bạn có thể chọn rút lãi vào cuối kì hoặc bất cứ lúc nào bạn muốn. Lãi này sẽ không tính gộp vào tiền gốc.",
             "question2": "Lãi suất ngày được tính như thế nào?",
-            "answer2": "Your rate of return is calculated by applying the percentage rate of your Investment Plan to the amount of your principal, and then dividing it by 365 to get a daily rate. Your returns are not compounded, so if you invest $500 for one year at a rate of 8%, you would earn $40 investment income at the end of your commitment period (about $0.1 per day).",
+            "answer2": "Phần lãi suất bạn nhận được hàng ngày được tính bằng cách nhân số tiền bạn gửi với phần trăm lãi suất theo kì hạn mà bạn chọn rồi chia cho 365. Lãi suất không được cộng dồn. Ví dụ, nếu bạn gửi 500 USD với kì hạn 1 năm, lãi suất 8%, bạn sẽ nhận được 40 USD khi đáo hạn và lãi trả về hàng ngày khoảng 0.1 USD.",
             "question3": "Kiểm tra lợi nhuận như thế nào?",
             "answer3": "Sau khi đăng nhập, bạn vào phần \"Khoản đầu tư của tôi\". Bạn có thể xem lợi nhuận của mình ở góc trên bên phải của màn hình.",
             "question4": "Trong tương lai lãi suất có thể tăng lên không?",
@@ -1599,17 +1599,17 @@
         "termLabel": "Chọn kế hoạch đầu tư"
     },
     "exchangeInputDepositForm": {
-        "fiatAmountInputLabel": "Deposit amount",
-        "currencyDropdownLabel": "Your currency",
-        "amountResultLabel": "According to the markets today, that is:",
-        "submitBtn": "DEPOSIT {fiatAmount} {fiatCurrency}",
-        "noAgentAvaiable": "No agent avaiable for {fiatAmount} {fiatCurrency}, please try another",
-        "getAmountFailed": "Failed while getting amount, please try again",
-        "getCurrencyListFailed": "Failed while getting supported currencies",
-        "loading": "Loading...",
-        "amountMustBeLargerThan": "Your amount must be larger than {min} {fiatCurrency}",
-        "howMuchDoYouWantToDeposit": "HOW MUCH DO YOU WANT TO DEPOSIT? ",
-        "formDesc": "Constant stores your money across 20 banks insured up to $250,000 each. That means you’re covered up to $5,000,000."
+        "fiatAmountInputLabel": "Số tiền gửi",
+        "currencyDropdownLabel": "Đơn vị tiền tệ",
+        "amountResultLabel": "Theo tỉ giá ngày hôm nay, tương đương với:",
+        "submitBtn": "GỬI {fiatAmount}{fiatCurrency}",
+        "noAgentAvaiable": "Constant chưa hỗ trợ {fiatAmount}{fiatCurrency}. Xin vui lòng chọn lại.",
+        "getAmountFailed": "Xảy ra lỗi khi xác nhận số tiền. Xin vui lòng thử lại.",
+        "getCurrencyListFailed": "Xảy ra lỗi khi xác nhận đơn vị tiền tệ",
+        "loading": "Đang tải...",
+        "amountMustBeLargerThan": "Số tiền gửi phải lớn hơn {min}{fiatCurrency}",
+        "howMuchDoYouWantToDeposit": "BẠN MUỐN GỬI BAO NHIÊU TIỀN? ",
+        "formDesc": "Constant có liên kết với hơn 20 ngân hàng với bảo hiểm 250,000 USD ở mỗi ngân hàng. Điều này có nghĩa bạn được bảo hiểm lên tới 5,000,000 USD."
     },
     "exchangeInputSellForm": {
         "amountInputLabel": "Rút tiền",
@@ -1684,57 +1684,57 @@
         "makeDirectOrderSuccess": "Lệnh của bạn được tạo thành công",
         "makeDirectOrderFailed": "Lệnh của bạn không được tạo thành công",
         "info": {
-            "title": "Withdraw in any currency.",
-            "desc1": "Your funds are held in USD, and can be withdrawn at any time. If you’ve got a different local currency, it’s converted at the real-time market rate, so you preserve the full value of your funds.",
-            "desc2": "If you’d like to move your money to another bank account, that’s fine too - just let us know where to send it."
+            "title": "Rút tiền về tài khoản ngân hàng.",
+            "desc1": "Giữ tiền bằng USD và có thể rút về tài khoản ngân hàng bất cứ lúc nào. Tỉ giá tính theo tỉ giá thị trường tại thời điểm rút nên đồng tiền của bạn vẫn giữ nguyên được giá trị.",
+            "desc2": "Bạn có thể chuyển tiền tới bất kì tài khoản ngân hàng nào mà bạn muốn, miễn là bạn cung cấp thông tin chính xác cho Constant."
         }
     },
     "transfer": {
         "info": {
-            "title": "Send money to anyone, anywhere. For free.",
-            "desc1": "Having a global USD account means that your money can move freely all over the world. No matter how much you send - or how often - it won’t cost you a cent.",
-            "desc2": "When it reaches the other party, they don’t pay anything either. So send money home, do business with the world, and get it done instantly. That’s what it means to be global."
+            "title": "Chuyển khoản tới bất cứ ai, ở bất cứ đâu. Hoàn toàn miễn phí.",
+            "desc1": "Sở hữu một tài khoản USD toàn cầu nghĩa là bạn có thể tự do chuyển tiền của mình tới bất cứ đâu trên thế giới. Không giới hạn số lượng và số lần chuyển khoản. Hoàn toàn miễn phí.",
+            "desc2": "Khi người nhận nhận được tiền, họ cũng không phải trả thêm bất kì chi phí nào. Bạn có thể gửi tiền về nhà, thực hiện các giao dịch quốc tế và tất cả đều có thể được hoàn thành ngay lập tức."
         }
     },
     "deposit": {
-        "title": "Your global USD bank account. Available now in Vietnam.",
+        "title": "Tài khoản USD toàn cầu. Nay đã có mặt tại Việt Nam.",
         "subTitle": {
-            "sub1": "Save in US dollars, instead of unstable local currencies. Enjoy instant transfers of any amount - to anyone or any business - anywhere in the world. For free.",
-            "sub2": "Your account is backed by the full faith and credit of the United States government, insured by the Federal Deposit Insurance Corporation (FDIC). Established in 1933, the FDIC has a perfect record of no lost funds.  {learnMore}",
-            "learnMore": "Learn more +"
+            "sub1": "Giữ tiền bằng USD có lợi hơn nhiều VNĐ. Chuyển khoản hoàn toàn miễn phí tới bất cứ đâu trên thế giới. Hoàn toàn miễn phí.",
+            "sub2": "Tài khoản của bạn được bảo trợ bởi chính phủ Hoa Kỳ và được bảo hiểm bởi Công ty Bảo hiểm Ký thác Liên Bang Hoa Kỳ (FDIC). Từ khi được thành lập vào năm 1933, FDIC chưa từng một lần làm mất tiền. {learnMore}",
+            "learnMore": "Tìm hiểu thêm"
         },
         "what": {
-            "whatCaption0": "Protect the value of your money",
-            "whatCaption1": "Move your money anywhere for free",
-            "whatCaption2": "Insure your money up to $5M",
-            "whatCaption3": "Withdraw your money anytime",
-            "whatDesc0": "Save in USD, the world reserve currency, accepted by merchants worldwide. Protect your money against inflation and instability.",
-            "whatDesc1": "Send and receive any amount, anywhere in the world, instantly and for free. Do bigger business, send money home, unlock greater mobility.",
-            "whatDesc2": "Benefit from the maximum coverage the FDIC provides - multiplied by 20. Since the FDIC insures each account up to $250K, we store your money across 20 of them.",
-            "whatDesc3": "Constant works with your local banking system to make sure that all your funds can be withdrawn anytime, in your currency of choice."
+            "whatCaption0": "Bảo đảm giá trị đồng tiền",
+            "whatCaption1": "Chuyển khoản miễn phí tới mọi nơi",
+            "whatCaption2": "Được bảo hiểm lên tới 5 triệu USD",
+            "whatCaption3": "Rút tiền về bất cứ lúc nào",
+            "whatDesc0": "Để chống lạm phát và mất giá, giữ tiền bằng USD - đồng tiền dự trữ của thế giới và được chấp nhận ở khắp mọi nơi.",
+            "whatDesc1": "Thực hiện chuyển khoản ngay lập tức tới bất cứ đâu trên thế giới, không giới hạn và hoàn toàn miễn phí. Từ làm kinh doanh đến gửi tiền về nhà, hãy sử dụng đồng tiền một cách thật thông minh và linh hoạt.",
+            "whatDesc2": "Mỗi tài khoản được FDIC bảo hiểm tối đa lên đến 250,000 USD. Tiền của bạn được chúng tôi giữ trong 20 tài khoản như thế.",
+            "whatDesc3": "Constant liên kết với hệ thống các ngân hàng địa phương để đảm bảo rằng bạn có thể thực hiện rút tiền bất cứ lúc nào."
         },
         "howItWorks": {
-            "title": "How it works",
-            "step1": "STEP 1",
-            "title1": "SECURE A PURCHASE ORDER FROM YOUR CUSTOMER",
-            "desc1": "Congrats! This is a growth opportunity that you can easily seize.",
-            "step2": "STEP 2",
-            "title2": "APPLY FOR CONSTANT FINANCING ONLINE",
-            "desc2": "Apply in less than 5 minutes by submitting the PO, with basic details about your business and customers.",
-            "step3": "STEP 3",
-            "title3": "GET THE CAPITAL TO FULFILL YOUR PO",
-            "desc3": "Enjoy quick turnaround. Finance up to 100% of your POs and stay competitive.  Rinse and repeat for your next order."
+            "title": "Hướng dẫn sử dụng",
+            "step1": "BƯỚC 1",
+            "title1": "XÁC NHẬN MỘT ĐƠN ĐẶT HÀNG TỪ KHÁCH HÀNG",
+            "desc1": "Xin chúc mừng! Đây là một cơ hội phát triển không thể bỏ qua mà bạn đã có thể nắm bắt được một cách dễ dàng.",
+            "step2": "BƯỚC 2",
+            "title2": "LÀM THỦ TỤC VAY TẠM ỨNG ONLINE CỦA CONSTANT",
+            "desc2": "Chỉ cần những thông tin cơ bản nhất về doanh nghiệp và khách hàng của bạn, mất không đến 5 phút để đăng kí vay tạm ứng.",
+            "step3": "BƯỚC 3",
+            "title3": "NHẬN NGAY VỐN ĐỂ THỰC HIỆN ĐƠN HÀNG",
+            "desc3": "Thủ tục nhanh gọn. Hỗ trợ vay tạm ứng 100%. Luôn sẵn sàng hỗ trợ cho đơn hàng tiếp theo của bạn."
         },
         "checklist": {
-            "title": "Why you should save money with Constant.",
-            "subTitle": "Smarter than your average bank.",
-            "desc1": "Like traditional banks, we reward you with interest earnings on our collateralized loans. Unlike traditional banks, <b>we give you most of it - since it’s your money, really.</b>",
-            "desc2": "And because we replaced cashiers with code, advisors with algorithms, and switched out bricks and mortar for the blockchain - <b>we can pass the savings directly on to you.</b>"
+            "title": "Tại sao nên đầu tư với Constant?",
+            "subTitle": "Ưu việt hơn ngân hàng truyền thống.",
+            "desc1": "Cũng giống như ngân hàng, Constant cho vay thế chấp để trả lãi cho các nhà đầu tư. Khác ở chỗ, <b>Constant áp dụng lãi suất cao nhất có thể cho các khách hàng, vì đó thực sự là tiền kiếm được từ khoản đầu tư của họ.</b>",
+            "desc2": "Và còn bởi vì Constant thay thế các giao dịch viên bằng những dòng code, thay thế các chuyên gia bằng những thuật toán, thay thế toàn bộ cơ sở vật chất và hệ thống nhân sự bằng ứng dụng blockchain -<b>nên Constant có thể mang lại nhiều lợi nhuận hơn nữa cho khách hàng.</b>"
         },
         "howWeWork": {
-            "title": "How We Work",
-            "subTitle": "We’re building a fairer, freer, financial system.",
-            "desc": "\n        <p>As pioneers of borderless banking on the blockchain, we are committed to making banking more inclusive, money more useful, and growth more accessible to anyone, anywhere in the world.</p>\n        <p>What does that look like? Fair interest rates. Inclusive loans. A state-less, stable currency that you can save, borrow, and spend. Transactions secured and carried out collectively by users of the network. A bank for the people, made possible by the people.</p>\n        <p>Constant is proud to be 100% digital, online 24/7. So no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime.</p> \n      "
+            "title": "Sứ mệnh của Constant",
+            "subTitle": "Chúng tôi mong muốn xây dựng thành công một hệ thống tài chính công bằng và tự do hơn.",
+            "desc": "\n<p>Chúng tôi tin vào một hệ thống tài chính công bằng hơn, kinh tế hơn!\nTham gia vào lĩnh vực tài chính trên nền tảng blockchain từ những ngày đầu tiên, chúng tôi là những kỹ sư tin rằng ngành tài chính nên dành cho mọi người: nhiều quyền lợi hơn, dễ sử dụng hơn bất kể bạn là ai và đang sinh sống ở đâu.</p>\n<br />\n<br />\n<p>Thế nào là dịch vụ tài chính hoàn hảo? Đối với đội ngũ Constant, đó là loại tiền tệ có thể lưu thông tự do trên toàn thế giới với giá trị ổn định nhất. Bạn có thể tích lũy, tiêu xài, vay nợ chỉ bằng 1 loại tiền tệ quyền lực được định giá bởi USD và bảo hiểm bởi những tổ chức uy tín nhất thế giới. Trong ước mơ của Constant, đây chính là một “ngân hàng” tạo ra bởi người dùng & phục vụ lợi ích của người dùng.</p>\n<br />\n<br />\n<p>Hơn thế nữa, chúng tôi là một dự án công nghệ! Nghĩa là Constant luôn sẵn sàng 24/7, 100% online. Không còn cảnh xếp hàng ở phòng giao dịch, không còn những người nghẽn mạch thanh toán do lễ tết. Chúng tôi - những kỹ sư, nhà thiết kế, chuyên gia tài chính làm việc trên toàn thế giới với mục tiêu lớn nhất là giúp tiền của bạn sinh lời và lưu thông dễ dàng nhất.</p>      "
         }
     },
     "yourSaving": {

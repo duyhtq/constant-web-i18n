@@ -19,7 +19,7 @@
             "update": "Update",
             "delete": "Delete",
             "fileupload": "Upload",
-            "unit": "Constant"
+            "unit": "USD"
         },
         "local": {
             "type": {
@@ -29,8 +29,8 @@
         }
     },
     "footer": {
-        "title1": "\n    <h3>Grow your money safely, secured and multiply your interest</h3>\n    ",
-        "title2": "START SAVING TODAY",
+        "title1": "\n    <h3>Invest, don’t speculate.</h3>\n    ",
+        "title2": "START MAKING RETURNS",
         "getSocial": "Social Media",
         "titleFoundation": "Foundation",
         "titleConstant": "Buy Constant",
@@ -636,6 +636,7 @@
                 "interest": "Interest",
                 "apr": "APR",
                 "haveTimeAccount": "{term}-{termType} investment",
+                "month": "month",
                 "anyTimeAccount": "Anytime deposit",
                 "endTerm": "Investment matures: ",
                 "trial": "TRIAL",
@@ -644,7 +645,7 @@
                 "anyTime_saving": "Flexible Account",
                 "interestInfo": {
                     "header": {
-                        "title": "Want to make more interest accross all your accounts?"
+                        "title": "Want to unlock more returns for all your accounts?"
                     },
                     "body": {
                         "item1": {
@@ -653,7 +654,7 @@
                         },
                         "item2": {
                             "title": "+{total_percent}% {percent_claimed}",
-                            "description": "{refer} Get an extra 0.2% each.",
+                            "description": "{refer} Get an extra 0.2% each",
                             "refer": "Refer up to 15 friends.",
                             "percent_claimed": "(+{percent}% claimed)"
                         },
@@ -671,7 +672,13 @@
                     "referDialog": {
                         "labelShare": "Share your link",
                         "btnShare": "Copy link",
-                        "copied": "Referral link copied to clipboard."
+                        "copied": "Referral link copied to clipboard.",
+                        "selectEmail": "Select email to share",
+                        "sendInvitations": "Send Invitations",
+                        "sendInvitationsSuccess": "Send Invitations Successfully!",
+                        "or": "Or",
+                        "noOptionsMessage": "No data",
+                        "addNewEmail": "Add {email}"
                     },
                     "shareFbSuccess": "Share referral link success."
                 },
@@ -980,6 +987,7 @@
                 "accountName": "Account Name:",
                 "accountNumber": "Account Number:",
                 "amount": "Amount:",
+                "value": "Value",
                 "constant": "Constant:",
                 "reference": "Reference:",
                 "buyThankMsg": "Please wire {fiatAmount} {fiatCurrency} to the seller's bank account.",
@@ -1086,7 +1094,12 @@
                     "important": "IMPORTANT",
                     "thankYou": "Thank you!",
                     "minuteWindow": "15 MINUTE WINDOW:",
-                    "minuteWindowDescription": "Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled."
+                    "minuteWindowDescription": "Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled.",
+                    "direct": {
+                        "thankYou": "Thanks {name}, your funds are on the way to your bank account.",
+                        "content1": "There is no Constant Trust in your neighborhood yet, so we're sending your money from the main Trust in the USA. As with all international transfers, it may take a couple of days for your investment income to reach you.",
+                        "content2": "Thanks for being patient, and thanks again for investing with Constant."
+                    }
                 },
                 "buy": {
                     "purchaseFailed": "Your purchase did not go through, please try again.",
@@ -1616,6 +1629,9 @@
             },
             "three": {
                 "name": "3-Months"
+            },
+            "six": {
+                "name": "6-Months"
             },
             "oneYear": {
                 "name": "12-Months"

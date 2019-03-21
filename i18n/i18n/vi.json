@@ -19,7 +19,7 @@
             "update": "Cập nhật",
             "delete": "Xoá",
             "fileupload": "Tải lên",
-            "unit": "Constant"
+            "unit": "USD"
         },
         "local": {
             "type": {
@@ -29,8 +29,8 @@
         }
     },
     "footer": {
-        "title1": "\n<h3>Đầu tư thông minh, an toàn và sinh lời hiệu quả</h3>    ",
-        "title2": "ĐẦU TƯ NGAY HÔM NAY",
+        "title1": "\n    <h3>Invest, don’t speculate.</h3>\n    ",
+        "title2": "START MAKING RETURNS",
         "getSocial": "Mạng xã hội",
         "titleFoundation": "Thông tin",
         "titleConstant": "Mua Constant",
@@ -636,6 +636,7 @@
                 "interest": "Lãi suất",
                 "apr": "APR",
                 "haveTimeAccount": "Khoản đầu tư {term}{termType}",
+                "month": "month",
                 "anyTimeAccount": "Gửi không kì hạn",
                 "endTerm": "Ngày đáo hạn: ",
                 "trial": "THỬ NGHIỆM",
@@ -644,7 +645,7 @@
                 "anyTime_saving": "Tài khoản không kì hạn",
                 "interestInfo": {
                     "header": {
-                        "title": "Bạn có muốn tăng thêm lãi suất trên tất cả các khoản đầu tư?"
+                        "title": "Want to unlock more returns for all your accounts?"
                     },
                     "body": {
                         "item1": {
@@ -653,7 +654,7 @@
                         },
                         "item2": {
                             "title": "+{total_percent}% {percent_claimed}",
-                            "description": "Nhận thêm 0.2% cho mỗi {refer}.",
+                            "description": "{refer} Get an extra 0.2% each",
                             "refer": "Giới thiệu tối đa cho 15 người bạn.",
                             "percent_claimed": "(đã được +{percent}%)"
                         },
@@ -671,7 +672,13 @@
                     "referDialog": {
                         "labelShare": "Chia sẻ liên kết của bạn",
                         "btnShare": "Sao chép liên kết",
-                        "copied": "Đã sao chép liên kết giới thiệu của bạn."
+                        "copied": "Đã sao chép liên kết giới thiệu của bạn.",
+                        "selectEmail": "Select email to share",
+                        "sendInvitations": "Send Invitations",
+                        "sendInvitationsSuccess": "Send Invitations Successfully!",
+                        "or": "Or",
+                        "noOptionsMessage": "No data",
+                        "addNewEmail": "Add {email}"
                     },
                     "shareFbSuccess": "Đã chia sẻ liên kết giới thiệu thành công."
                 },
@@ -980,6 +987,7 @@
                 "accountName": "Tên tài khoản:",
                 "accountNumber": "Số tài khoản:",
                 "amount": "Số lượng:",
+                "value": "Value",
                 "constant": "Constant:",
                 "reference": "Mã giao dịch:",
                 "buyThankMsg": "Xin vui lòng chuyển {fiatAmount}{fiatCurrency} tới tài khoản ngân hàng của người bán.",
@@ -1086,7 +1094,12 @@
                     "important": "QUAN TRỌNG",
                     "thankYou": "Xin cảm ơn!",
                     "minuteWindow": "15 PHÚT:",
-                    "minuteWindowDescription": "Vui lòng hoàn tất chuyển khoản trong vòng 15 phút. Nếu không, giao dịch sẽ tự động bị huỷ bỏ."
+                    "minuteWindowDescription": "Vui lòng hoàn tất chuyển khoản trong vòng 15 phút. Nếu không, giao dịch sẽ tự động bị huỷ bỏ.",
+                    "direct": {
+                        "thankYou": "Thanks {name}, your funds are on the way to your bank account.",
+                        "content1": "There is no Constant Trust in your neighborhood yet, so we're sending your money from the main Trust in the USA. As with all international transfers, it may take a couple of days for your investment income to reach you.",
+                        "content2": "Thanks for being patient, and thanks again for investing with Constant."
+                    }
                 },
                 "buy": {
                     "purchaseFailed": "Có lỗi xảy ra khi thực hiện lệnh mua. Xin vui lòng thử lại",
@@ -1616,6 +1629,9 @@
             },
             "three": {
                 "name": "3 Tháng"
+            },
+            "six": {
+                "name": "6-Months"
             },
             "oneYear": {
                 "name": "12 Tháng"

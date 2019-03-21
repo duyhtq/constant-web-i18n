@@ -58,6 +58,8 @@
         "contactUs": "Contact us:"
     },
     "headerBar": {
+        "deposit": "Deposit",
+        "banking": "Bank",
         "save": "Invest",
         "borrow": "Borrow",
         "signIn": "SIGN IN",
@@ -92,7 +94,21 @@
         "saveAndGrowMoney": "Save & Grow money",
         "login": "Login",
         "openAnAccount": "Open an account",
-        "yourSaving": "My Investments"
+        "yourSaving": "My Investments",
+        "hoverMenu": {
+            "deposit": {
+                "title": "Deposit",
+                "subTitle": "$5M insurance"
+            },
+            "transfer": {
+                "title": "Transfer",
+                "subTitle": "To anyone, anywhere"
+            },
+            "withdraw": {
+                "title": "Withdraw",
+                "subTitle": "Into any currency"
+            }
+        }
     },
     "error": {
         "required": "Required",
@@ -670,13 +686,13 @@
                         "description": "On top of what you already earn - for every account."
                     },
                     "referDialog": {
-                        "labelShare": "Share your link",
+                        "labelShare": "Choose who to email",
                         "btnShare": "Copy link",
                         "copied": "Referral link copied to clipboard.",
                         "selectEmail": "Select email to share",
                         "sendInvitations": "Send Invitations",
                         "sendInvitationsSuccess": "Send Invitations Successfully!",
-                        "or": "Or",
+                        "or": "Or copy link",
                         "noOptionsMessage": "No data",
                         "addNewEmail": "Add {email}"
                     },
@@ -1261,8 +1277,8 @@
         "midBanner1": "Send money anywhere, for free",
         "midBanner2": "Secure and grow your money",
         "whatChatWithUs": "Chat with us",
-        "whatCaption0": "6% annual return",
-        "whatCaption1": "Flexible options",
+        "whatCaption0": "8% annual return",
+        "whatCaption1": "Your money multiplies",
         "whatCaption2": "Available worldwide",
         "whatCaption3": "We’re here to help",
         "whatTitle": "What can you do with Constant?",
@@ -1270,7 +1286,7 @@
         "whatTitle1": "Up to 130M USD",
         "whatTextLink1": "Read the full policy",
         "whatLink1": "/privacy-policy",
-        "whatDesc1": "<p>No minimum principal - you don’t have to have big money to grow money. Stay liquid and still earn with a zero commitment period, or get up to 6% annual return for just a 1 year commitment.</p>",
+        "whatDesc1": "<p>No matter which commitment period you choose, returns are paid out daily into a Flexible Account. Flexible means you can withdraw whenever you like - or reinvest and make profit on your profit.</p>",
         "whatTitle2": "By the US Government",
         "whatTitle3": "No minimum deposit",
         "whatDesc0": "<p>Don’t sit on your money. Put it to work. We’re proud of our rates, and we don’t want you to have to wait to enjoy them. Your investment earnings are paid out daily for you to withdraw anytime. </p>",
@@ -1515,7 +1531,7 @@
             "question1": "How are my returns paid out?",
             "answer1": "We pay investment profit daily, so you can either wait until the end of your commitment period to withdraw your investment income or withdraw it daily. It’s up to you.",
             "question2": "How are my daily returns calculated?",
-            "answer2": "Your rate of return is calculated by applying the percentage rate of your Investment Plan to the amount of your principal, and then dividing it by 365 to get a daily rate. Your returns are not compounded, so if you invest $500 for one year at a rate of 6%, you would earn $30 investment income at the end of your commitment period (about $0.08 per day).",
+            "answer2": "Your rate of return is calculated by applying the percentage rate of your Investment Plan to the amount of your principal, and then dividing it by 365 to get a daily rate. Your returns are not compounded, so if you invest $500 for one year at a rate of 8%, you would earn $40 investment income at the end of your commitment period (about $0.1 per day).",
             "question3": "How can I track my earnings?",
             "answer3": "Just log into your account and click Your Investments. Total earned investment income is on the top right of the dashboard.",
             "question4": "Will you increase ROI rates in the future?",
@@ -1581,6 +1597,19 @@
         "amountMustBeLargerThan": "Your amount must be larger than {min} {fiatCurrency}",
         "howMuchDoYouWantToDeposit": "HOW MUCH DO YOU WANT TO INVEST? ",
         "termLabel": "Pick your investment option"
+    },
+    "exchangeInputDepositForm": {
+        "fiatAmountInputLabel": "Deposit amount",
+        "currencyDropdownLabel": "Your currency",
+        "amountResultLabel": "According to the markets today, that is:",
+        "submitBtn": "DEPOSIT {fiatAmount} {fiatCurrency}",
+        "noAgentAvaiable": "No agent avaiable for {fiatAmount} {fiatCurrency}, please try another",
+        "getAmountFailed": "Failed while getting amount, please try again",
+        "getCurrencyListFailed": "Failed while getting supported currencies",
+        "loading": "Loading...",
+        "amountMustBeLargerThan": "Your amount must be larger than {min} {fiatCurrency}",
+        "howMuchDoYouWantToDeposit": "HOW MUCH DO YOU WANT TO DEPOSIT? ",
+        "formDesc": "Constant stores your money across 20 banks insured up to $250,000 each. That means you’re covered up to $5,000,000."
     },
     "exchangeInputSellForm": {
         "amountInputLabel": "Withdraw amount",
@@ -1653,7 +1682,60 @@
         "makeLocalOrderSuccess": "Your order was created successfully",
         "makeLocalOrderFailed": "Failed while creating your order",
         "makeDirectOrderSuccess": "Your order was created successfully",
-        "makeDirectOrderFailed": "Failed while creating your order"
+        "makeDirectOrderFailed": "Failed while creating your order",
+        "info": {
+            "title": "Withdraw in any currency.",
+            "desc1": "Your funds are held in USD, and can be withdrawn at any time. If you’ve got a different local currency, it’s converted at the real-time market rate, so you preserve the full value of your funds.",
+            "desc2": "If you’d like to move your money to another bank account, that’s fine too - just let us know where to send it."
+        }
+    },
+    "transfer": {
+        "info": {
+            "title": "Send money to anyone, anywhere. For free.",
+            "desc1": "Having a global USD account means that your money can move freely all over the world. No matter how much you send - or how often - it won’t cost you a cent.",
+            "desc2": "When it reaches the other party, they don’t pay anything either. So send money home, do business with the world, and get it done instantly. That’s what it means to be global."
+        }
+    },
+    "deposit": {
+        "title": "Your global USD bank account. Available now in Vietnam.",
+        "subTitle": {
+            "sub1": "Save in US dollars, instead of unstable local currencies. Enjoy instant transfers of any amount - to anyone or any business - anywhere in the world. For free.",
+            "sub2": "Your account is backed by the full faith and credit of the United States government, insured by the Federal Deposit Insurance Corporation (FDIC). Established in 1933, the FDIC has a perfect record of no lost funds.  {learnMore}",
+            "learnMore": "Learn more +"
+        },
+        "what": {
+            "whatCaption0": "Protect the value of your money",
+            "whatCaption1": "Move your money anywhere for free",
+            "whatCaption2": "Insure your money up to $5M",
+            "whatCaption3": "Withdraw your money anytime",
+            "whatDesc0": "Save in USD, the world reserve currency, accepted by merchants worldwide. Protect your money against inflation and instability.",
+            "whatDesc1": "Send and receive any amount, anywhere in the world, instantly and for free. Do bigger business, send money home, unlock greater mobility.",
+            "whatDesc2": "Benefit from the maximum coverage the FDIC provides - multiplied by 20. Since the FDIC insures each account up to $250K, we store your money across 20 of them.",
+            "whatDesc3": "Constant works with your local banking system to make sure that all your funds can be withdrawn anytime, in your currency of choice."
+        },
+        "howItWorks": {
+            "title": "How it works",
+            "step1": "STEP 1",
+            "title1": "SECURE A PURCHASE ORDER FROM YOUR CUSTOMER",
+            "desc1": "Congrats! This is a growth opportunity that you can easily seize.",
+            "step2": "STEP 2",
+            "title2": "APPLY FOR CONSTANT FINANCING ONLINE",
+            "desc2": "Apply in less than 5 minutes by submitting the PO, with basic details about your business and customers.",
+            "step3": "STEP 3",
+            "title3": "GET THE CAPITAL TO FULFILL YOUR PO",
+            "desc3": "Enjoy quick turnaround. Finance up to 100% of your POs and stay competitive.  Rinse and repeat for your next order."
+        },
+        "checklist": {
+            "title": "Why you should save money with Constant.",
+            "subTitle": "Smarter than your average bank.",
+            "desc1": "Like traditional banks, we reward you with interest earnings on our collateralized loans. Unlike traditional banks, <b>we give you most of it - since it’s your money, really.</b>",
+            "desc2": "And because we replaced cashiers with code, advisors with algorithms, and switched out bricks and mortar for the blockchain - <b>we can pass the savings directly on to you.</b>"
+        },
+        "howWeWork": {
+            "title": "How We Work",
+            "subTitle": "We’re building a fairer, freer, financial system.",
+            "desc": "\n        <p>As pioneers of borderless banking on the blockchain, we are committed to making banking more inclusive, money more useful, and growth more accessible to anyone, anywhere in the world.</p>\n        <p>What does that look like? Fair interest rates. Inclusive loans. A state-less, stable currency that you can save, borrow, and spend. Transactions secured and carried out collectively by users of the network. A bank for the people, made possible by the people.</p>\n        <p>Constant is proud to be 100% digital, online 24/7. So no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime.</p> \n      "
+        }
     },
     "yourSaving": {
         "hello": "\n      <h5>Hello <strong>{name}</strong>. Let's see how your money is doing today.</h5>\n    "

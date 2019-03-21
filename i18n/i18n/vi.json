@@ -85,7 +85,7 @@
         "trader": "Giao dịch",
         "developer": "Lập trình",
         "getConstant": "Mua Constant",
-        "getCash": "Đổi ra tiền",
+        "getCash": "Rút tiền",
         "sendMoney": "Chuyển Constant",
         "agent": "Trở thành đại lý",
         "constantLoan": "Vay Constant",
@@ -665,7 +665,7 @@
                         }
                     },
                     "footer": {
-                        "title": "Nhận thêm {percent}%",
+                        "title": "Đó là {percent}%",
                         "description": "Cộng thêm vào lãi suất mà bạn đang được nhận. Cho tất cả các khoản đầu tư."
                     },
                     "referDialog": {
@@ -699,7 +699,7 @@
                 },
                 "alert": {
                     "depositSavingSuccess": "Bạn đã nạp Constant thành công.",
-                    "depositSavingFailed": "Gửi đầu tư không thành công"
+                    "depositSavingFailed": "Thực hiện đầu tư không thành công"
                 },
                 "name": "Tên",
                 "email": "Email",
@@ -880,7 +880,7 @@
             "subintroDesc1": "Thao tác đơn giản và người thụ hưởng ở Việt Nam có thể nhận tiền sau 15 phút.",
             "subintroTitle2": "Tiện lợi.",
             "subintroDesc2": "Có thể thực hiện online và không giới hạn số tiền chuyển.",
-            "subintroTitle3": "Miễn phí.",
+            "subintroTitle3": "Không rủi ro.",
             "subintroDesc3": "Phí giao dịch bằng 0 bất kể bạn ở đâu.",
             "subintroTitle4": "Không giới hạn. Miễn phí.",
             "subintroDesc4": "Có thể được chuyển từ tài khoản của bạn tới bất kì ai trên toàn thế giới. Hoàn toàn miễn phí.",
@@ -1328,7 +1328,7 @@
     },
     "referralPage": {
         "headerTitle": "Sở hữu Constant đầu tiên",
-        "headerDesc": "Chúng tôi cung cấp giải pháp chuyển khoản rất tiết kiệm",
+        "headerDesc": "Chúng tôi cung cấp giải pháp chuyển khoản miễn phí",
         "introTitle1": "Đăng kí tài khoản",
         "introTitle2": "Mua Constant",
         "introTitle3": "Mời bạn bè tham gia Constant",
@@ -1526,7 +1526,7 @@
         }
     },
     "stories": {
-        "quote0": "Trải nghiệm tại Constant thật tuyệt vời. Thật bất ngờ khi tôi có thể theo dõi được tiền tiết kiệm của mình tăng lên mỗi ngày như thế nào và đặc biệt có thể rút tiền ngay. Đây là một kênh rất đáng để đầu tư!",
+        "quote0": "Trải nghiệm tại Constant thật tuyệt vời. Thật bất ngờ khi tôi có thể theo dõi được khoản đầu tư của mình tăng lên mỗi ngày như thế nào và đặc biệt có thể rút lãi ngay. Đây là một kênh rất đáng để đầu tư!",
         "author0": "Thảo Phạm",
         "title0": "Quản Lý Nhân Sự tại Autonomous",
         "quote1": "Nhân viên tư vấn rất nhiệt tình, hỗ trợ tôi gần như lập tức mỗi khi tôi cần. Nhờ vậy mà việc gửi tiền của tôi thật nhanh chóng và tiện lợi.",
@@ -1535,13 +1535,13 @@
         "quote2": "Ngoài lãi suất hấp dẫn hơn hẳn, đây còn là một sản phẩm đột phá về mặt công nghệ so với các ngân hàng. Các ngân hàng nên xem chừng những đối thủ như Constant!",
         "author2": "Hải Trần",
         "title2": "Chuẩn bị cho chuyến du lịch Châu Âu cùng gia đình",
-        "quote3": "Một điểm cộng lớn của Constant là không giới hạn khoản tiền gửi tiết kiệm tối thiểu và mức lãi suất cực kỳ hấp dẫn. Vì vậy tại sao tôi lại phải giữ tiền trong người mà không gửi nó với Constant chứ?",
+        "quote3": "Một điểm cộng lớn của Constant là không giới hạn khoản tiền đầu tư tối thiểu và mức lãi suất cực kỳ hấp dẫn. Vì vậy tại sao tôi lại phải giữ tiền trong người mà không gửi nó với Constant chứ?",
         "author3": "Minh Ánh",
         "title3": "Graphic Designer, để dành mua nhà mới",
         "quote4": "Tôi đăng ký mở tài khoản và gửi tiền vào Constant chỉ mất chưa đầy 5 phút. Đây là một kênh đầu tư đáng để cân nhắc!",
         "author4": "Huyền Trang",
         "title4": "Mua ô tô trong năm sau",
-        "quote5": "Không cần số dư tối thiểu, Constant cho phép tôi tiết kiệm bất kì khoản nào! Giữa việc cất tiền trong tủ và tiết kiệm với Constant thì Constant là lựa chọn không thể bàn cãi!",
+        "quote5": "Không cần số dư tối thiểu, Constant cho phép tôi đầu tư bất kì khoản nào! Giữa việc cất tiền trong tủ và tiết kiệm với Constant thì Constant là lựa chọn không thể bàn cãi!",
         "author5": "Nhi",
         "title5": "Đóng học phí đại học",
         "quote6": "Tạo tài khoản mất 5 phút. Constant là kênh đầu tư phù hợp cho người mới bắt đầu",
@@ -1588,7 +1588,7 @@
         "trialLeft": "Chỉ còn {number} lần trải nghiệm dịch vụ miễn phí.",
         "noMoreTrialLeft": "Không còn trải nghiệm dịch vụ miễn phí.",
         "submitBtn": "ĐẦU TƯ NGAY",
-        "btnDesc": "Chỉ dành cho những khách hàng mới. Khoản tiết kiệm 1,000 USD miễn phí để trải nghiệm dịch vụ sẽ được trả về Constant khi đáo hạn nhưng bạn được giữ toàn bộ phần lãi.",
+        "btnDesc": "Chỉ dành cho những khách hàng mới. Khoản đầu tư 1,000 USD miễn phí để trải nghiệm dịch vụ sẽ được trả về Constant khi đáo hạn nhưng bạn được giữ toàn bộ phần lãi.",
         "termLabel": "Chọn kế hoạch đầu tư"
     },
     "termSelector": {
@@ -1650,7 +1650,7 @@
                 "placeholder": {
                     "companyName": "Tên công ty của bạn là gì?",
                     "poName": "Bạn cần chúng tôi tạm ứng bao nhiêu cho đơn hàng của bạn?",
-                    "companyExciting": "Ngày hôm nay ở công ty bạn có điều gì thú vị?",
+                    "companyExciting": "Điều thú vị về công ty của bạn?",
                     "companyTarget": "Công ty của bạn đang hướng đến mục tiêu nào?",
                     "email": "Địa chỉ email của bạn",
                     "phone": "Số điện thoại của bạn"
@@ -1668,7 +1668,7 @@
             "whatCaption2": "Cho vay tạm ứng lãi suất thấp nhất thế giới",
             "whatCaption3": "Không giới hạn số tiền",
             "whatTitle": "Các tiện ích của Constant",
-            "whatTitle0": "Tiết kiệm bằng USD",
+            "whatTitle0": "Đầu tư bằng USD",
             "whatTitle1": "Lên đến 130 triệu USD",
             "whatTextLink1": "Đọc đầy đủ chính sách",
             "whatLink1": "/chính sách bảo mật",
@@ -1680,8 +1680,8 @@
             "whatDesc3": "<p>Các khoản vay của ngân hàng rất thiếu linh động. Nếu bạn cần thêm tiền mặt, bạn cần một khoản vay mới. Constant cung cấp cho bạn một khoản tín dụng dựa trên doanh số bán hàng và bạn có thể theo dõi sự phát triển của doanh nghiệp của mình.</p>",
             "whatMore0": "Constant đảm bảo lợi nhuận cao và không có rủi ro",
             "whatMore1": "Constant bảo vệ tiền của bạn như thế nào?",
-            "whatMore2": "Cách chọn kì hạn tiết kiệm phù hợp",
-            "whatMore3": "Mọi người đang sử dụng Constant để tiết kiệm như thế nào?"
+            "whatMore2": "Cách chọn kì hạn đầu tư phù hợp",
+            "whatMore3": "Cách sử dụng Constant để đầu tư"
         },
         "howItWorks": {
             "step1": "BƯỚC 1",

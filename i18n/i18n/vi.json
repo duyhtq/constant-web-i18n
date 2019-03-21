@@ -29,8 +29,8 @@
         }
     },
     "footer": {
-        "title1": "\n    <h3>Invest, don’t speculate.</h3>\n    ",
-        "title2": "START MAKING RETURNS",
+        "title1": "\n<h3>Đầu tư ngay, đừng chần chừ.</h3>    ",
+        "title2": "BẮT ĐẦU ĐẦU TƯ SINH LỜI",
         "getSocial": "Mạng xã hội",
         "titleFoundation": "Thông tin",
         "titleConstant": "Mua Constant",
@@ -634,9 +634,9 @@
                 "getListFailed": "Xảy ra lỗi khi xác nhận khoản đầu tư của bạn. Xin vui lòng thử lại.",
                 "amount": "Phần gốc",
                 "interest": "Lãi suất",
-                "apr": "APR",
+                "apr": "/năm",
                 "haveTimeAccount": "Khoản đầu tư {term}{termType}",
-                "month": "month",
+                "month": "tháng",
                 "anyTimeAccount": "Gửi không kì hạn",
                 "endTerm": "Ngày đáo hạn: ",
                 "trial": "THỬ NGHIỆM",
@@ -645,7 +645,7 @@
                 "anyTime_saving": "Tài khoản không kì hạn",
                 "interestInfo": {
                     "header": {
-                        "title": "Want to unlock more returns for all your accounts?"
+                        "title": "Bạn muốn lãi suất cao hơn cho tất cả các khoản đầu tư của mình?"
                     },
                     "body": {
                         "item1": {
@@ -654,7 +654,7 @@
                         },
                         "item2": {
                             "title": "+{total_percent}% {percent_claimed}",
-                            "description": "{refer} Get an extra 0.2% each",
+                            "description": "Nhận thêm 0.2% cho mỗi {refer}",
                             "refer": "Giới thiệu tối đa cho 15 người bạn.",
                             "percent_claimed": "(đã được +{percent}%)"
                         },
@@ -673,12 +673,12 @@
                         "labelShare": "Chia sẻ liên kết của bạn",
                         "btnShare": "Sao chép liên kết",
                         "copied": "Đã sao chép liên kết giới thiệu của bạn.",
-                        "selectEmail": "Select email to share",
-                        "sendInvitations": "Send Invitations",
-                        "sendInvitationsSuccess": "Send Invitations Successfully!",
-                        "or": "Or",
-                        "noOptionsMessage": "No data",
-                        "addNewEmail": "Add {email}"
+                        "selectEmail": "Chọn email để chia sẻ",
+                        "sendInvitations": "Gửi Lời Mời",
+                        "sendInvitationsSuccess": "Gửi Lời Mời Thành Công!",
+                        "or": "Hoặc",
+                        "noOptionsMessage": "Không có dữ liệu",
+                        "addNewEmail": "Thêm {email}"
                     },
                     "shareFbSuccess": "Đã chia sẻ liên kết giới thiệu thành công."
                 },
@@ -987,7 +987,7 @@
                 "accountName": "Tên tài khoản:",
                 "accountNumber": "Số tài khoản:",
                 "amount": "Số lượng:",
-                "value": "Value",
+                "value": "Giá trị",
                 "constant": "Constant:",
                 "reference": "Mã giao dịch:",
                 "buyThankMsg": "Xin vui lòng chuyển {fiatAmount}{fiatCurrency} tới tài khoản ngân hàng của người bán.",
@@ -1096,9 +1096,9 @@
                     "minuteWindow": "15 PHÚT:",
                     "minuteWindowDescription": "Vui lòng hoàn tất chuyển khoản trong vòng 15 phút. Nếu không, giao dịch sẽ tự động bị huỷ bỏ.",
                     "direct": {
-                        "thankYou": "Thanks {name}, your funds are on the way to your bank account.",
-                        "content1": "There is no Constant Trust in your neighborhood yet, so we're sending your money from the main Trust in the USA. As with all international transfers, it may take a couple of days for your investment income to reach you.",
-                        "content2": "Thanks for being patient, and thanks again for investing with Constant."
+                        "thankYou": "Xin cảm ơn {name}. Tiền đang được chuyển vào tài khoản của bạn.",
+                        "content1": "Vì không có đại lí nào của Constant ở khu vực của bạn, chúng tôi phải gửi tiền cho bạn từ quỹ Constant từ Mỹ. Với những giao dịch quốc tế, có thể phải mất một vài ngày để bạn nhận được phần lãi của mình.",
+                        "content2": "Cảm ơn bạn vì đã tin tưởng và lựa chọn đầu tư với Constant."
                     }
                 },
                 "buy": {
@@ -1631,7 +1631,7 @@
                 "name": "3 Tháng"
             },
             "six": {
-                "name": "6-Months"
+                "name": "6 Tháng"
             },
             "oneYear": {
                 "name": "12 Tháng"

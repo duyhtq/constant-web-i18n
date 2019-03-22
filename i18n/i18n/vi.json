@@ -28,6 +28,22 @@
             }
         }
     },
+    "validation": {
+        "csv": "Please enter a valid file type (csv)."
+    },
+    "common": {
+        "table": {
+            "action": "Action",
+            "id": "#",
+            "file_name": "File",
+            "status": "Status",
+            "created_at": "Created Date",
+            "updated_at": "Updated Date",
+            "to_email": "Transfer To",
+            "schedule_date": "Schedule Date",
+            "amount": "Amount"
+        }
+    },
     "footer": {
         "title1": "\n<h3>Đầu tư ngay, đừng chần chừ.</h3>    ",
         "title2": "BẮT ĐẦU ĐẦU TƯ SINH LỜI",
@@ -201,7 +217,8 @@
             "myTransactions": "Hoạt động của tài khoản",
             "yourInvest": "Khoản đầu tư của bạn",
             "myAgent": "Đại lí của tôi",
-            "yourAccreditation": "Độ tín nhiệm của bạn"
+            "yourAccreditation": "Độ tín nhiệm của bạn",
+            "batchTransfer": "Batch Transfer"
         },
         "wallet": {
             "title": "Đây là địa chỉ ví của bạn để nhận Constant gửi tới"
@@ -243,6 +260,10 @@
             "lAddrUpload": "Xin vui lòng tải lên một trong các loại giấy tờ sau đây để xác minh địa chỉ.",
             "descAddrUpload": "<div>\n        Giấy tờ hợp lệ: hoá đơn dịch vụ, hoá đơn điện thoại, xác nhận thế chấp, hợp đồng thuê nhà, sao kê tài khoản ngân hàng hoặc thẻ tín dụng, bảo hiểm (bảo hiểm ô tô, xe máy hoặc bảo hiểm nhân thọ), hoặc báo cáo tài chính (lương hưu, trợ cấp).<br />\n        <b>Giấy tờ này phải được cấp trong phạm vi 90 ngày gần nhất.</b>\n        <br />\n        Địa chỉ ở trong giấy tờ phải trùng khớp với địa chỉ đã cung cấp.\n      </div>      ",
             "btnBack": "Trở lại"
+        },
+        "batchTransfer": {
+            "title": "Batch Transfers",
+            "detail": "Batch Transfers Detail"
         },
         "buyOrder": {
             "title": "Danh Sách Lệnh Mua",
@@ -686,11 +707,11 @@
                         "description": "Cộng thêm vào lãi suất mà bạn đang được nhận. Cho tất cả các khoản đầu tư."
                     },
                     "referDialog": {
-                        "labelShare": "Chọn người để gửi email",
+                        "labelShare": "Invite your friends to join Constant",
                         "btnShare": "Sao chép liên kết",
                         "copied": "Đã sao chép liên kết giới thiệu của bạn.",
                         "selectEmail": "Chọn email để chia sẻ",
-                        "sendInvitations": "Gửi Lời Mời",
+                        "sendInvitations": "Send invitations",
                         "sendInvitationsSuccess": "Gửi Lời Mời Thành Công!",
                         "or": "Hoặc sao chép liên kết",
                         "noOptionsMessage": "Không có dữ liệu",
@@ -700,7 +721,9 @@
                 },
                 "withdraw": "Rút tiền",
                 "transfer": "Chuyển khoản",
-                "batchtransfer": "Chuyển khoản hàng loạt",
+                "batchtransfer": "Transfer to multiple people",
+                "row": "Row",
+                "errorMessage": "Error Message",
                 "saving": "Đầu tư ngay",
                 "dialog": {
                     "withdrawAccount": {
@@ -720,9 +743,32 @@
                         "cancel": "Để sau"
                     }
                 },
+                "confirm": {
+                    "batch": {
+                        "title": "Confirm Submit",
+                        "desc": "Are you sure to submit?",
+                        "confirm": "Confirm",
+                        "cancel": "Cancel"
+                    }
+                },
                 "alert": {
                     "depositSavingSuccess": "Bạn đã nạp Constant thành công.",
-                    "depositSavingFailed": "Thực hiện đầu tư không thành công"
+                    "depositSavingFailed": "Thực hiện đầu tư không thành công",
+                    "batchTransferSuccess": "You successfully sent the batch file",
+                    "batchTransferFailed": "Failed to sent the batch file",
+                    "confirmBatchTransferSuccess": "Success",
+                    "confirmBatchTransferFailed": "Failed"
+                },
+                "batchTransferDialog": {
+                    "title": "",
+                    "desc": "\n            <p>\n              For your convenience, here's a template format you can <a href=\"https://drive.google.com/uc?authuser=0&id=1W6RJ8roPsVN5_H345Xw6rEKIIIh34wVx&export=download\">download</a>. <br />\n            </p>\n          "
+                },
+                "field": {
+                    "amount": "USD amount number greater than 0",
+                    "to_email": "Email address is invalid",
+                    "schedule_date": "Date format must be YYYY-MM-DDTHH:MM",
+                    "invalid": " is invalid.",
+                    "endline": "Please ensure all rows are filled."
                 },
                 "name": "Tên",
                 "email": "Email",
@@ -807,6 +853,18 @@
             "newPasswordIntro": "Mật khẩu tài khoản Constant của {email} đã được thay đổi",
             "notRecoverPass": "Tôi không thể khôi phục tài khoản bằng cách sử dụng trang này"
         },
+        "updatePassword": {
+            "title": "Update Password",
+            "description": "Please type new password for your account.",
+            "username": "Your email",
+            "submitButton": "Submit",
+            "password": "New password",
+            "requiredPassword": "Password is required",
+            "notValidPassword": "Password must be 8 characters or more",
+            "confirmPassword": "Retype new password",
+            "notValidConfirmPassword": "Confirm password not match",
+            "resetPasswordIntro": "Your new password has been updated."
+        },
         "register": {
             "giftCode": "Mã giới thiệu (không bắt buộc)",
             "title": "Mở ngay tài khoản để chuyển tiền về Việt Nam. Siêu nhanh. Siêu rẻ.",
@@ -887,7 +945,7 @@
         "howItWorks": {
             "step1": "BƯỚC 1",
             "title1": "ĐẦU TƯ",
-            "desc1": "Chọn một kì hạn đầu tư thích hợp. Chuyển khoản tới quỹ Constant được đảm bảo bởi FDIC số tiền bạn muốn đầu tư. Khoản đầu tư của bạn sẽ được tính theo USD và có bảo hiểm lên đến 250,000 USD.",
+            "desc1": "Choose among our flexible Investment Plans, then make a bank transfer of any amount to the FDIC insured Constant Vault. Your funds will be held in USD, to protect against volatility. We earn you interest and make sure your money is secure, by lending your funds only to borrowers who are willing to overcollateralize.",
             "step2": "BƯỚC 2",
             "title2": "SINH LỜI",
             "desc2": "Lãi sẽ được trả về hàng ngày vào tài khoản linh động của bạn. Phần lãi này được hưởng thêm lãi suất 1%/năm và có thể được rút ra bất cứ lúc nào. Dễ dàng thanh khoản và lãi mẹ sẽ đẻ lãi con.",
@@ -1590,7 +1648,8 @@
         "currencyDropdownLabel": "Đơn vị tiền tệ",
         "amountResultLabel": "Theo tỉ giá ngày hôm nay, tương đương với:",
         "buyBtn": "ĐẦU TƯ {fiatAmount}{fiatCurrency}",
-        "noAgentAvaiable": "Không có đại lí phù hợp với {fiatAmount}{fiatCurrency}. Xin vui lòng thử lại.",
+        "amountTooSmall": "Your amount is too small, please try a larger amount",
+        "noAgentAvaiable": "Please be patient with us, we’re trying to keep up. Try a smaller amount, or try again later.",
         "getAmountFailed": "Xảy ra lỗi khi xác nhận số tiền. Xin vui lòng thử lại.",
         "getCurrencyListFailed": "Đơn vị tiền tệ này không được hỗ trợ",
         "loading": "Đang tải...",
@@ -1602,8 +1661,12 @@
         "fiatAmountInputLabel": "Số tiền gửi",
         "currencyDropdownLabel": "Đơn vị tiền tệ",
         "amountResultLabel": "Theo tỉ giá ngày hôm nay, tương đương với:",
-        "submitBtn": "GỬI {fiatAmount}{fiatCurrency}",
-        "noAgentAvaiable": "Constant chưa hỗ trợ {fiatAmount}{fiatCurrency}. Xin vui lòng chọn lại.",
+        "submitBtn": {
+            "depositNow": "DEPOSIT NOW",
+            "depositWithAmount": "DEPOSIT {fiatAmount} {fiatCurrency}"
+        },
+        "noAgentAvaiable": "Please be patient with us, we’re trying to keep up. Try a smaller amount, or try again later.",
+        "amountTooSmall": "Your amount is too small, please try a larger amount",
         "getAmountFailed": "Xảy ra lỗi khi xác nhận số tiền. Xin vui lòng thử lại.",
         "getCurrencyListFailed": "Xảy ra lỗi khi xác nhận đơn vị tiền tệ",
         "loading": "Đang tải...",
@@ -1687,6 +1750,16 @@
             "title": "Rút tiền về tài khoản ngân hàng.",
             "desc1": "Giữ tiền bằng USD và có thể rút về tài khoản ngân hàng bất cứ lúc nào. Tỉ giá tính theo tỉ giá thị trường tại thời điểm rút nên đồng tiền của bạn vẫn giữ nguyên được giá trị.",
             "desc2": "Bạn có thể chuyển tiền tới bất kì tài khoản ngân hàng nào mà bạn muốn, miễn là bạn cung cấp thông tin chính xác cho Constant."
+        },
+        "what": {
+            "whatCaption0": "Anytime, anywhere",
+            "whatCaption1": "Works with your bank",
+            "whatCaption2": "Receive the full value",
+            "whatCaption3": "Unlimited low-cost withdrawals",
+            "whatDesc0": "When you hit the withdraw button, Constant converts stored USD into local currency that you can pull out at bank branches or ATMs.",
+            "whatDesc1": "The Constant global bank account integrates smoothly with your local banking system, allowing you to smoothly transfer funds if you wish.",
+            "whatDesc2": "Because your money is stored in USD, when you withdraw in your local currency, you’ll find that the value of your money has stayed Constant.",
+            "whatDesc3": "Withdraw as often as you like. The only fee we charge is a 0.25% withdrawal fee - capped at $35. Never more."
         }
     },
     "transfer": {
@@ -1716,14 +1789,14 @@
         "howItWorks": {
             "title": "Hướng dẫn sử dụng",
             "step1": "BƯỚC 1",
-            "title1": "XÁC NHẬN MỘT ĐƠN ĐẶT HÀNG TỪ KHÁCH HÀNG",
-            "desc1": "Xin chúc mừng! Đây là một cơ hội phát triển không thể bỏ qua mà bạn đã có thể nắm bắt được một cách dễ dàng.",
+            "title1": "YOU MAKE A DEPOSIT",
+            "desc1": "Send any currency to your local Constant Trust. If it’s not USD, we convert it.",
             "step2": "BƯỚC 2",
-            "title2": "LÀM THỦ TỤC VAY TẠM ỨNG ONLINE CỦA CONSTANT",
-            "desc2": "Chỉ cần những thông tin cơ bản nhất về doanh nghiệp và khách hàng của bạn, mất không đến 5 phút để đăng kí vay tạm ứng.",
+            "title2": "WE PROTECT YOUR MONEY",
+            "desc2": "Your USD funds are held safely in fully insured US bank accounts.",
             "step3": "BƯỚC 3",
-            "title3": "NHẬN NGAY VỐN ĐỂ THỰC HIỆN ĐƠN HÀNG",
-            "desc3": "Thủ tục nhanh gọn. Hỗ trợ vay tạm ứng 100%. Luôn sẵn sàng hỗ trợ cho đơn hàng tiếp theo của bạn."
+            "title3": "YOU GET MORE",
+            "desc3": "Now you have a global USD account with free transfers and unlimited withdrawals.\n"
         },
         "checklist": {
             "title": "Tại sao nên đầu tư với Constant?",

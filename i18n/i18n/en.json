@@ -28,6 +28,22 @@
             }
         }
     },
+    "validation": {
+        "csv": "Please enter a valid file type (csv)."
+    },
+    "common": {
+        "table": {
+            "action": "Action",
+            "id": "#",
+            "file_name": "File",
+            "status": "Status",
+            "created_at": "Created Date",
+            "updated_at": "Updated Date",
+            "to_email": "Transfer To",
+            "schedule_date": "Schedule Date",
+            "amount": "Amount"
+        }
+    },
     "footer": {
         "title1": "\n    <h3>Invest, don’t speculate.</h3>\n    ",
         "title2": "START MAKING RETURNS",
@@ -201,7 +217,8 @@
             "myTransactions": "Account activity",
             "yourInvest": "Your Invests",
             "myAgent": "My Agent",
-            "yourAccreditation": "Accreditation (USA only)"
+            "yourAccreditation": "Accreditation (USA only)",
+            "batchTransfer": "Batch Transfer"
         },
         "wallet": {
             "title": "This is your wallet address you could send Constant to"
@@ -243,6 +260,10 @@
             "lAddrUpload": "Please upload a document verifying the address above.",
             "descAddrUpload": "<div>\n        Valid documents: utility bill, phone bill, mortgage statement, tenancy\n        agreement, bank/credit card statement, insurance letter (motor, home, or\n        life), or financial statement (pension, endowment). <br />\n        <b>Document must be dated within the last 90 days. </b>\n        <br />\n        Please ensure address in proof of address document matches address\n        provided in application.\n      </div>\n      ",
             "btnBack": "Back"
+        },
+        "batchTransfer": {
+            "title": "Batch Transfers",
+            "detail": "Batch Transfers Detail"
         },
         "buyOrder": {
             "title": "You have a buyer.",
@@ -686,11 +707,11 @@
                         "description": "On top of what you already earn - for every account."
                     },
                     "referDialog": {
-                        "labelShare": "Choose who to email",
+                        "labelShare": "Invite your friends to join Constant",
                         "btnShare": "Copy link",
                         "copied": "Referral link copied to clipboard.",
                         "selectEmail": "Select email to share",
-                        "sendInvitations": "Send Invitations",
+                        "sendInvitations": "Send invitations",
                         "sendInvitationsSuccess": "Send Invitations Successfully!",
                         "or": "Or copy link",
                         "noOptionsMessage": "No data",
@@ -700,7 +721,9 @@
                 },
                 "withdraw": "Withdraw",
                 "transfer": "Transfer",
-                "batchtransfer": "Batch Transfer",
+                "batchtransfer": "Transfer to multiple people",
+                "row": "Row",
+                "errorMessage": "Error Message",
                 "saving": "Invest now",
                 "dialog": {
                     "withdrawAccount": {
@@ -720,9 +743,32 @@
                         "cancel": "Maybe later"
                     }
                 },
+                "confirm": {
+                    "batch": {
+                        "title": "Confirm Submit",
+                        "desc": "Are you sure to submit?",
+                        "confirm": "Confirm",
+                        "cancel": "Cancel"
+                    }
+                },
                 "alert": {
                     "depositSavingSuccess": "You successfully deposited Constant.",
-                    "depositSavingFailed": "Sorry, something went wrong. Please try again."
+                    "depositSavingFailed": "Sorry, something went wrong. Please try again.",
+                    "batchTransferSuccess": "You successfully sent the batch file",
+                    "batchTransferFailed": "Failed to sent the batch file",
+                    "confirmBatchTransferSuccess": "Success",
+                    "confirmBatchTransferFailed": "Failed"
+                },
+                "batchTransferDialog": {
+                    "title": "",
+                    "desc": "\n            <p>\n              For your convenience, here's a template format you can <a href=\"https://drive.google.com/uc?authuser=0&id=1W6RJ8roPsVN5_H345Xw6rEKIIIh34wVx&export=download\">download</a>. <br />\n            </p>\n          "
+                },
+                "field": {
+                    "amount": "USD amount number greater than 0",
+                    "to_email": "Email address is invalid",
+                    "schedule_date": "Date format must be YYYY-MM-DDTHH:MM",
+                    "invalid": " is invalid.",
+                    "endline": "Please ensure all rows are filled."
                 },
                 "name": "Name",
                 "email": "Email",
@@ -807,6 +853,18 @@
             "newPasswordIntro": "Your password has been changed",
             "notRecoverPass": "I can’t recover my account using this page"
         },
+        "updatePassword": {
+            "title": "Update Password",
+            "description": "Please type new password for your account.",
+            "username": "Your email",
+            "submitButton": "Submit",
+            "password": "New password",
+            "requiredPassword": "Password is required",
+            "notValidPassword": "Password must be 8 characters or more",
+            "confirmPassword": "Retype new password",
+            "notValidConfirmPassword": "Confirm password not match",
+            "resetPasswordIntro": "Your new password has been updated."
+        },
         "register": {
             "giftCode": "Invitation code (optional)",
             "title": "Create your account",
@@ -887,7 +945,7 @@
         "howItWorks": {
             "step1": "STEP 1",
             "title1": "YOU MAKE AN INVESTMENT",
-            "desc1": "Choose among our flexible Investment Plans, then make a bank transfer of any amount to the FDIC insured Constant Vault. Your funds are held in USD, and every user is protected up to $250,000.",
+            "desc1": "Choose among our flexible Investment Plans, then make a bank transfer of any amount to the FDIC insured Constant Vault. Your funds will be held in USD, to protect against volatility. We earn you interest and make sure your money is secure, by lending your funds only to borrowers who are willing to overcollateralize.",
             "step2": "STEP 2",
             "title2": "YOUR MONEY MULTIPLIES",
             "desc2": "No matter which commitment period you choose, returns are paid out daily into a Flexible Account. Flexible means you can withdraw whenever you like, and earn an extra 1% annually. Stay liquid and make profit on your profit.",
@@ -1590,7 +1648,8 @@
         "currencyDropdownLabel": "Your currency",
         "amountResultLabel": "According to the markets today, that is:",
         "buyBtn": "INVEST {fiatAmount} {fiatCurrency}",
-        "noAgentAvaiable": "No agent avaiable for {fiatAmount} {fiatCurrency}, please try another",
+        "amountTooSmall": "Your amount is too small, please try a larger amount",
+        "noAgentAvaiable": "Please be patient with us, we’re trying to keep up. Try a smaller amount, or try again later.",
         "getAmountFailed": "Failed while getting amount, please try again",
         "getCurrencyListFailed": "Failed while getting supported currencies",
         "loading": "Loading...",
@@ -1602,8 +1661,12 @@
         "fiatAmountInputLabel": "Deposit amount",
         "currencyDropdownLabel": "Your currency",
         "amountResultLabel": "According to the markets today, that is:",
-        "submitBtn": "DEPOSIT {fiatAmount} {fiatCurrency}",
-        "noAgentAvaiable": "No agent avaiable for {fiatAmount} {fiatCurrency}, please try another",
+        "submitBtn": {
+            "depositNow": "DEPOSIT NOW",
+            "depositWithAmount": "DEPOSIT {fiatAmount} {fiatCurrency}"
+        },
+        "noAgentAvaiable": "Please be patient with us, we’re trying to keep up. Try a smaller amount, or try again later.",
+        "amountTooSmall": "Your amount is too small, please try a larger amount",
         "getAmountFailed": "Failed while getting amount, please try again",
         "getCurrencyListFailed": "Failed while getting supported currencies",
         "loading": "Loading...",
@@ -1687,6 +1750,16 @@
             "title": "Withdraw in any currency.",
             "desc1": "Your funds are held in USD, and can be withdrawn at any time. If you’ve got a different local currency, it’s converted at the real-time market rate, so you preserve the full value of your funds.",
             "desc2": "If you’d like to move your money to another bank account, that’s fine too - just let us know where to send it."
+        },
+        "what": {
+            "whatCaption0": "Anytime, anywhere",
+            "whatCaption1": "Works with your bank",
+            "whatCaption2": "Receive the full value",
+            "whatCaption3": "Unlimited low-cost withdrawals",
+            "whatDesc0": "When you hit the withdraw button, Constant converts stored USD into local currency that you can pull out at bank branches or ATMs.",
+            "whatDesc1": "The Constant global bank account integrates smoothly with your local banking system, allowing you to smoothly transfer funds if you wish.",
+            "whatDesc2": "Because your money is stored in USD, when you withdraw in your local currency, you’ll find that the value of your money has stayed Constant.",
+            "whatDesc3": "Withdraw as often as you like. The only fee we charge is a 0.25% withdrawal fee - capped at $35. Never more."
         }
     },
     "transfer": {
@@ -1716,14 +1789,14 @@
         "howItWorks": {
             "title": "How it works",
             "step1": "STEP 1",
-            "title1": "SECURE A PURCHASE ORDER FROM YOUR CUSTOMER",
-            "desc1": "Congrats! This is a growth opportunity that you can easily seize.",
+            "title1": "YOU MAKE A DEPOSIT",
+            "desc1": "Send any currency to your local Constant Trust. If it’s not USD, we convert it.",
             "step2": "STEP 2",
-            "title2": "APPLY FOR CONSTANT FINANCING ONLINE",
-            "desc2": "Apply in less than 5 minutes by submitting the PO, with basic details about your business and customers.",
+            "title2": "WE PROTECT YOUR MONEY",
+            "desc2": "Your USD funds are held safely in fully insured US bank accounts.",
             "step3": "STEP 3",
-            "title3": "GET THE CAPITAL TO FULFILL YOUR PO",
-            "desc3": "Enjoy quick turnaround. Finance up to 100% of your POs and stay competitive.  Rinse and repeat for your next order."
+            "title3": "YOU GET MORE",
+            "desc3": "Now you have a global USD account with free transfers and unlimited withdrawals.\n"
         },
         "checklist": {
             "title": "Why you should save money with Constant.",

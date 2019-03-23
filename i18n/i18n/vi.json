@@ -761,7 +761,7 @@
                 },
                 "batchTransferDialog": {
                     "title": "",
-                    "desc": "\n<p>\nĐây là định dạng mẫu mà bạn có thể <a href=\"https://drive.google.com/uc?authuser=0&id=1W6RJ8roPsVN5_H345Xw6rEKIIIh34wVx&export=download\">tải về</a>.<br />\n</p>          "
+                    "desc": "<p>\nĐây là định dạng mẫu mà bạn có thể <a href=\"https://drive.google.com/uc?authuser=0&id=1W6RJ8roPsVN5_H345Xw6rEKIIIh34wVx&export=download\">tải về</a>.<br />\n</p>"
                 },
                 "field": {
                     "amount": "Số USD phải lớn hơn 0",

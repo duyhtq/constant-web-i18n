@@ -19,7 +19,11 @@
             "update": "Update",
             "delete": "Delete",
             "fileupload": "Upload",
-            "unit": "USD"
+            "unit": "USD",
+            "transfer": "Transfer",
+            "confirm": "Confirm",
+            "cancel": "Cancel",
+            "confirmPassword": "Confirm Password"
         },
         "local": {
             "type": {
@@ -41,7 +45,12 @@
             "updated_at": "Updated Date",
             "to_email": "Transfer To",
             "schedule_date": "Schedule Date",
-            "amount": "Amount"
+            "amount": "Amount",
+            "processing": "<b style=\"color: #ffc107;\">Processing</b>",
+            "checking": "<b style=\"color: #ffc107;\">Checking</b>",
+            "done": "<b style=\"color: ##28a745;\">Done</b>",
+            "failed": "<b style=\"color: #E64759\">Failed</b>",
+            "pending": "<b style=\"color: #ffc107;\">Pending</b>"
         }
     },
     "footer": {
@@ -74,12 +83,13 @@
         "contactUs": "Contact us:"
     },
     "headerBar": {
+        "myAccount": "My Account",
         "deposit": "Deposit",
         "banking": "Bank",
         "save": "Invest",
         "borrow": "Borrow",
-        "signIn": "SIGN IN",
-        "signUp": "SIGN UP",
+        "signIn": "Sign In",
+        "signUp": "Sign Up",
         "cesText": "Got a CES2019 giveaway code?",
         "cesLink": "Claim your 1 FREE Constant now!",
         "referral": "Give 5 USD, Get 5 USD",
@@ -123,6 +133,14 @@
             "withdraw": {
                 "title": "Withdraw",
                 "subTitle": "Into any currency"
+            },
+            "crypto": {
+                "title": "Crypto-Backed Loan",
+                "subTitle": "Secured by Bitcoin and Ether"
+            },
+            "business": {
+                "title": "Business Financing",
+                "subTitle": "Secured by Account"
             }
         }
     },
@@ -218,7 +236,10 @@
             "yourInvest": "Your Invests",
             "myAgent": "My Agent",
             "yourAccreditation": "Accreditation (USA only)",
-            "batchTransfer": "Batch Transfer"
+            "myLoans": "My Loans",
+            "cryptoLoanHistory": "My Crypto Loans",
+            "batchTransfer": "Batch Transfer",
+            "referralInfo": "Referral Information"
         },
         "wallet": {
             "title": "This is your wallet address you could send Constant to"
@@ -297,12 +318,15 @@
         },
         "bookingOrder": {
             "title": "Booking Order Available",
+            "userAndDate": "User/Date",
             "date": "Date",
             "value": "Value",
             "amount": "Amount",
             "accept": "Accept",
             "cancel": "Cancel",
+            "cancelMess": "Are you sure you want to cancel this order?",
             "approve": "Confirm payment",
+            "approveMess": "Are you sure you want to confirm this order?",
             "receipt": "Upload your receipt",
             "viewDetail": "Detail",
             "loadMore": "Load more",
@@ -433,13 +457,17 @@
         "setting": {
             "title": "Account Settings"
         },
+        "referralInfo": {
+            "title": "Referral Information",
+            "copied": "Referral link copied to clipboard."
+        },
         "localHistory": {
             "status": {
                 "canceled": "Cancelled",
                 "timeout": "Order timed out",
                 "transferMoneyToAgent": "Waiting for buyer to send money",
                 "waitAgentTransferMoney": "Waiting for seller to send money",
-                "transferredMoneyToAgent": "Transfer money to Seller",
+                "transferredMoneyToAgent": "Funds have been sent to your bank account.",
                 "done": "Successful",
                 "inProgress": "Order in progress"
             },
@@ -489,8 +517,11 @@
             "link": "Link",
             "action": "Action",
             "cancel": "Cancel",
+            "cancelMess": "Are you sure you want to cancel this order?",
             "accept": "Accept",
+            "acceptMess": "Are you sure you want to accept this order?",
             "confirm": "confirm",
+            "confirmMess": "Are you sure you want to confirm this order?",
             "close": "Close",
             "detail": "Transaction Details",
             "extID": "External ID",
@@ -535,6 +566,11 @@
                 "confirmFailed": "Failed To Confirm",
                 "cancelSuccess": "Cancellation successful",
                 "cancelFailed": "Cancellation unsuccessful. Please try again."
+            },
+            "user": {
+                "fullName": "Full name",
+                "userName": "User name",
+                "email": "Email"
             },
             "bankInfo": {
                 "bankName": "Bank Name",
@@ -664,6 +700,17 @@
             "updatedFailed": "Failed while updating your information, please try again!",
             "checkVerifyFailed": "Something went wrong, please try again."
         },
+        "referDialog": {
+            "labelShare": "Invite your friends to join Constant",
+            "btnShare": "Copy link",
+            "copied": "Referral link copied to clipboard.",
+            "selectEmail": "Select email to share",
+            "sendInvitations": "Send invitations",
+            "sendInvitationsSuccess": "Send Invitations Successfully!",
+            "or": "Or copy link",
+            "noOptionsMessage": "No data",
+            "addNewEmail": "Add {email}"
+        },
         "proSaving": {
             "listApplications": {
                 "totalInterestEarned": "You've already earned",
@@ -705,17 +752,6 @@
                     "footer": {
                         "title": "That’s {percent}%",
                         "description": "On top of what you already earn - for every account."
-                    },
-                    "referDialog": {
-                        "labelShare": "Invite your friends to join Constant",
-                        "btnShare": "Copy link",
-                        "copied": "Referral link copied to clipboard.",
-                        "selectEmail": "Select email to share",
-                        "sendInvitations": "Send invitations",
-                        "sendInvitationsSuccess": "Send Invitations Successfully!",
-                        "or": "Or copy link",
-                        "noOptionsMessage": "No data",
-                        "addNewEmail": "Add {email}"
                     },
                     "shareFbSuccess": "Share referral link success."
                 },
@@ -1092,7 +1128,7 @@
                     "bank": "Bank"
                 },
                 "introHolderTemplate": "\n          <h1>Convert to local currency your country</h1>\n          <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n          <p>Email us at <a href=\"mailto:{email}\">{email}</a></p>\n          <p>Or</p>\n          <p>Chat with us at <a href=\"telegram:{telegram}\">{telegram}</a></p>\n        ",
-                "confirmTemplate": "\n          <div name=\"thanks\">\n            <p>Thank you!</p>\n            <p>We’ve asked the buyer to send payment to your bank account (the one you registered with us).</p>\n            <p>Once you’ve received payment, please confirm it in the Order History so that we can finalize your sale.</p>\n          </div>\n          <div name=\"notice\">\n            <b name=\"important\">IMPORTANT:</b>\n            <span>\n              We ask you and the buyer to complete your transfer within 30 minutes. This helps protect you and our network from misuse.\n              If the buyer hasn’t transferred the money within 30 minutes, please email us at <a href=\"mailto:hello@constant.money\">hello@constant.money</a>.\n            </span>\n          </div>\n        "
+                "confirmTemplate": "\n          <div name=\"thanks\">\n            <p>Thank you!</p>\n            <p>We’re preparing your funds to be withdrawn to the registered bank account. You should be getting another notification once your withdrawal is in motion. Once you’ve received your funds, please click confirm on the Order History page, so we can finalize the record.</p>\n            <p>If you do not receive a notification confirming your withdrawal after 30 minutes, please send <a href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> an email, and we’ll get it sorted for you.</p>\n          </div>\n        "
             },
             "titleRequestModal": "{type} Constant",
             "unitText": "per Constant",
@@ -1310,12 +1346,138 @@
             "to": "To"
         },
         "constantLoan": {
-            "introTitle": "Constant Loan",
+            "title": "Fair, fully secured crypto-backed loans.",
+            "subTitle": "\n        <p>Our unique loan mechanism protects lenders from risk and secures a 8% annual return. It also delivers a 1% APR for borrowers. How?</p>\n        <p>Borrowers are required to put down collateral, so there is zero risk for lenders. Collateral doesn’t just sit there either - Constant helps borrowers securely lend out what they put down, so that while they pay interest, they are also earning it. This way, borrowers lower their own interest rate, without harming lender returns.</p>\n        <p>Turns out, both parties can win.</p>\n      ",
             "headLine": "Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.",
-            "howItWorks": "How it works",
             "exchange": {
-                "caption": "Constant Loan",
-                "buttonText": "Loan"
+                "caption": "Crypto-backed loan",
+                "buttonText": "Borrow cash",
+                "month": "month",
+                "months": "months",
+                "termLabel": "Pick a loan term",
+                "amountLabel": "How much do you want to borrow?",
+                "collateralLabel": "Collateral required (150% of the loan value)",
+                "startDateLabel": "Start date",
+                "endDateLabel": "End date",
+                "toolTipCollateral": "\n          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.\n        ",
+                "moreInfo": "Your funds will reach you as soon as your collateral is confirmed on its blockchain.  ETA: 2 minutes for ETH and 10 minutes for BTC."
+            },
+            "what": {
+                "whatCaption0": "Instant loans",
+                "whatCaption1": "Crypto for cash",
+                "whatCaption2": "1% interest per year",
+                "whatCaption3": "Guaranteed approval",
+                "whatDesc0": "\n          <p>Our loan mechanism is secured and automated by smart contracts. No lengthy processing times - the money you need is in your account within the hour.</p>\n        ",
+                "whatDesc1": "\n          <p>Secure your loan with BTC or ETH and receive USD - all without needing to sell your crypto. Enjoy liquidity without needing to liquidate.</p>\n        ",
+                "whatDesc2": "\n          <p>Borrow as much as you want, and take as long as you need. Enjoy flexible repayments and the kindest interest rate on the market.</p>\n        ",
+                "whatDesc3": "\n          <p>Constant is for everyone. No credit scoring, background checks or month-long waiting games for approval.</p>\n        "
+            },
+            "howItWorks": {
+                "intro": "\n          <p>Deposit cryptocurrency to secure cash, at the best rates on the market.</p>\n          <p>Need cash? We accept major cryptocurrencies as collateral, in exchange for USD or the equivalent in your local currency. That means you’ll have cash to spend - without needing to sell your crypto.</p>\n        ",
+                "step1": "STEP 1",
+                "title1": "ENTER AN AMOUNT",
+                "desc1": "How much do you want to borrow? Tell us how much, in your currency of choice.",
+                "step2": "STEP 2",
+                "title2": "CHOOSE A COLLATERAL AND A TERM",
+                "desc2": "Secure your loan with BTC or ETH as collateral. Our calculator will tell you how much you need. Then just pick a loan term you feel comfortable with.",
+                "step3": "STEP 3",
+                "title3": "GET CASH TO SPEND",
+                "desc3": "Within the hour, your USD loan will be accessible from your Constant Flexible Account. Withdraw anytime, to any other bank account."
+            },
+            "faqs": {
+                "title": "Frequently Asked Questions",
+                "t1": "GENERAL",
+                "t2": "COLLATERAL",
+                "t3": "REPAYMENT",
+                "t4": "INTEREST",
+                "t5": "TECH",
+                "general": {
+                    "question1": "What is Constant?",
+                    "answer1": "\n            <p>Constant is a suite of simple, secure, and rewarding financial services.</p>\n            <p>Through blockchain technology, we’ve developed a suite of flexible investment products designed to grow your money at a pace that suits you. Whether you’re a seasoned investor or dipping your toe into it for the first time, Constant offers substantial returns with zero risk.</p>\n            <p>We’ve thrown out credit scoring, paperwork, and fees to give you more of what you deserve – industry-leading rates, risk-free loans, a stable, state-less currency, and free international transfers.</p>\n            <p>Available all day, every day, anywhere in the world.</p>\n          ",
+                    "question2": "Can I get a crypto loan?",
+                    "answer2": "\n            <p>Yes, anyone with bitcoin or ethereum to put up as collateral can get a crypto loan.</p>\n          ",
+                    "question3": "Is Constant a bank?",
+                    "answer3": "\n            <p>No. Constant is even better.</p>\n            <p>We’re 100% digital and open 24-7, so no queuing at bank branches, and no bank holidays.</p>\n            <p>Our Investment Plans earn you up to 60x more investment income than a typical savings account pays in interest.</p>\n            <p>We don’t run credit checks for our loans, we don’t give you reams of paperwork to sign, and we are open to anyone, anywhere.</p>\n          ",
+                    "question4": "Is Constant regulated?",
+                    "answer4": "\n            <p>Yes. Funds are held securely in our trust, which is regulated under US law. That’s why we ask you to verify your identity when you withdraw investments to your bank account.</p>\n          ",
+                    "question5": "How does Constant make money?",
+                    "answer5": "\n            <p>We charge interest on collateralized loans to pay investment income to our investors, and make a very slim profit from the difference.</p>\n          ",
+                    "question6": "Who are the people behind Constant?",
+                    "answer6": "\n            <p>We’re a diverse team of engineers, economists, monetary policymakers, and industry experts. You can read all about our team on <page>.</p>\n          ",
+                    "question7": "Where is Constant based?",
+                    "answer7": "\n            <p>Everywhere! We are a registered US entity supported by a global team with presences in the USA, Vietnam, and Malta. If you’re in our neighborhood, drop by anytime.</p>\n          "
+                },
+                "collateral": {
+                    "question1": "What assets do you accept as collateral?",
+                    "answer1": "\n            <p>We only accept bitcoin and ethereum at the moment.</p>\n          ",
+                    "question2": "What happens if my collateral falls in value during my loan term?",
+                    "answer2": "\n            <p>If the value of your collateral falls below 70% of the original market rate, we liquidate (sell) your crypto and you can keep the loan without repaying it. </p>\n            <p>For example, if you borrow $100 and at the time of borrowing your collateral is worth $150, then if it falls below $105, we’ll sell your collateral and you keep the $100.</p>\n          ",
+                    "question3": "Where do you store my crypto collateral?",
+                    "answer3": "\n            <p>We store your crypto in smart contract escrows on the ethereum blockchain, accessible only by encrypted private keys.</p>\n          ",
+                    "question4": "Is my crypto collateral safe with you?",
+                    "answer4": "\n            <p>Yes, very safe. Not only is your collateral stored and cryptographically secured on the ethereum blockchain by the collective computing power of the network, but we also encrypt the private keys on our database.</p>\n          "
+                },
+                "repayment": {
+                    "question1": "How do I repay my loan?",
+                    "answer1": "\n            <p>Once your loan term ends, you repay us the original loan amount plus interest in Constant, our USD-Backed stablecoin. You can buy Constant direct from us for $1 each, or you can trade on exchanges using cryptocurrency and other fiat pairs.</p>\n            <p>Either way, simply send your final loan balance in Constant to our web wallet and we’ll return your crypto.</p>\n          ",
+                    "question2": "What happens if I can’t repay the loan?",
+                    "answer2": "\n            <p>We’ll sell your collateral. That’s it.</p>\n          ",
+                    "question3": "Can I repay the loan in another currency?",
+                    "answer3": "\n            <p>We offer loans in our USD-backed stablecoin, Constant, which you can then withdraw as USD (or local currency). The same happens in reverse. You repay us in Constant (plus the interest) by sending it to our wallet.</p>\n          ",
+                    "question4": "Can I repay the loan in cryptocurrency?",
+                    "answer4": "\n            <p>Since we offer loans in our USD-backed stablecoin, Constant, which you can then withdraw as USD (or local currency), you repay us in Constant, too.</p>\n            <p>You can buy Constant in several ways – through us for fiat currency (we don’t support crypto at the moment) or through exchanges for other cryptos and fiat pairs.</p>\n          ",
+                    "question5": "How long do I have to repay once the loan term is over?",
+                    "answer5": "\n            <p>Once the loan term ends, you have seven days to repay the loan.</p>\n          ",
+                    "question6": "Can I repay early?",
+                    "answer6": "\n            <p>Not at the moment, but we’re looking into this.</p>\n          "
+                },
+                "interest": {
+                    "question1": "What is the interest rate?",
+                    "answer1": "\n            <p>Please check our Crypto Loans webpage for the latest interest rates. Rates differ according to the length of term selected.</p>\n          ",
+                    "question2": "Why is the interest rate so low?",
+                    "answer2": "\n            <p>Our terms are intentionally short, strict, and simple so we can offer you the best loan rates on the market while still protecting our investors. We don’t waste money on debt collection, reams of paperwork, or other unnecessary bureaucracy. Just cash loans for crypto collateral, all secured by the blockchain.</p>\n          "
+                },
+                "tech": {
+                    "question1": "How do Crypto Loans work?",
+                    "answer1": "\n            <p>We loan our investors’ funds to you in return for crypto collateral. Everything is done on the Ethereum blockchain, with our smart contract and USD-backed stablecoin powering the agreements.</p>\n            <p>To get a loan, you must provide bitcoin or ethereum collateral to the value of 150% of your loan amount. This is called overcollateralization and is essential to offer you the best interest rates and to protect our investors.</p>\n            <p>Your crypto collateral is stored and secured on the blockchain, accessible only through private keys that we encrypt on our database. It remains securely protected by the blockchain until you repay the loan and we return your crypto.</p>\n            <p>All of our loans are paid out in our USD-backed stablecoin, Constant. You can then withdraw Constant for USD (or local currency) on our website, or trade it for any other currency with our partner exchanges - and spend it however you want. Since we’re loaning you Constant, you repay in Constant, too, which you can buy from us or from exchanges. </p>\n            <p>Crypto Loans are very simple. If you don’t repay the loan, or if your collateral falls below 70% of its original market value, we keep and sell your crypto. The loan is yours to keep.</p>\n            <p>Overcollateralization is a safety mechanism designed to give our investors confidence and our borrowers the friendliest rates on the market. Constant Crypto Loans are one of the safest and easiest loans to obtain, manage, and repay.</p>\n          "
+                }
+            },
+            "reference": "\n        <div name=\"ref-container\">\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Interested rate:</span>\n            <span name=\"ref-value\">{intRate}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Collateral value:</span>\n            <span name=\"ref-value\">{colValue}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Collateral return:</span>\n            <span name=\"ref-value\">{colReturn}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Default threshold:</span>\n            <span name=\"ref-value\">{defThreshold}</span>\n          </div>\n        </div>\n      ",
+            "transaction": {
+                "transactionID": "transaction ID",
+                "noticeTpl": "Please send <strong>{collateralAmount} {collateralSymbol}</strong> as collateral to the following address within the next <strong>30 minutes</strong>.",
+                "summarizeTitle": "Here are the loan terms:",
+                "copiedAddress": "Address is copied to clipboard",
+                "summarizeContent": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Loan amount:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Interested rate:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Collaterals:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Term:</span>\n              <span name=\"ref-value\">{term}</span>\n            </div>\n          </div>\n        "
+            },
+            "history": {
+                "itemTpl": "\n          <div name=\"loan-info-container\">\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Loan amount:</span>\n              <span name=\"loan-info-value\">{loanAmount}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Interest rate:</span>\n              <span name=\"loan-info-value\">{interestedRate}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Collaterals:</span>\n              <span name=\"loan-info-value\">{collaterals}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Term:</span>\n              <span name=\"loan-info-value\">{term}</span>\n            </div>\n          </div>\n        ",
+                "status": {
+                    "pending": "pending",
+                    "accepted": "accepted",
+                    "payingInterest": "paying",
+                    "done": "done",
+                    "cancelled": "cancelled",
+                    "withdrawed": "withdrawed",
+                    "fullPayment": "full payment"
+                },
+                "confirmPay": {
+                    "payingInterest": {
+                        "title": "Interest Payment",
+                        "content": "\n              <p>Your Interest payment is <strong>{amountConstant}</strong> Constant</p>\n              <p>Your collateral payment is <strong>{amountCollateral} {symbol}</strong></p>\n            ",
+                        "success": "Pay Successfully"
+                    },
+                    "fullPayment": {
+                        "title": "Full Payment",
+                        "content": "\n              <p>Your Interest payment is <strong>{amountConstant}</strong> Constant</p>\n              <p>Your collateral payment is <strong>{amountCollateral} {symbol}</strong></p>\n            ",
+                        "success": "Pay successfully"
+                    }
+                },
+                "interestPaymentTitle": "Interest Payment",
+                "interestPaymentContent": "<p>Your Interest payment is <strong>{amountPayInterest}</strong> Constant</p>",
+                "balanceNotEnough": "Your Balance is not enough to pay",
+                "paySuccess": "Pay Successfully",
+                "noHistoryData": "Get Crypto loan here"
             },
             "errorMessages": {
                 "required": "Required"
@@ -1414,30 +1576,57 @@
         "added": "Added! Now you can easily access the Constant mobile web app."
     },
     "referralPage": {
-        "headerTitle": "Earn your first Constant",
-        "headerDesc": "We provide an affordable transfer money service",
-        "introTitle1": "Sign up an account",
-        "introTitle2": "Purchase Constant",
-        "introTitle3": "Invite some friends to join Constant",
-        "introTitle3b": "Sign up required",
-        "introValue1a": "Sign up free today",
-        "introValue1b": "Completed",
-        "introValue2a": "5 CONSTANT",
-        "introValue2b": "for first order",
-        "introValue3a": "5 CONSTANT",
-        "introValue3b": "for first successful transaction order",
-        "referralEmail": "Email addresses, seperate by commas",
-        "btnTextSendEmail": "Send invites",
-        "emailsInvalid": "Email addresses are invalid",
-        "howItWorkTitle": "How it works",
-        "howItWorkDesc": "\n        <p>\n        - Start by visiting the referrals page. From this page you can copy your referral link and send it to your friends.\n      </p>\n      <p> - Your friends can click the referral link and sign up an account on Constant.</p>\n      <p> - They will initiate a transaction via Constant. </p>\n      </p>\n      <p>\n        - As soon as your friend initiates a first overseas transaction via Constant, you will receive a 5 Const referral bonus when the transaction completes.\n      </p>\n    ",
-        "moreDetailsTitle": "More details",
-        "moreDetailsDesc": "\n            <p>\n              - In just one click you can share your referral link via Facebook, Twitter, or anywhere\n            </p>\n            <p>\n              - Referral links look just like a link to https://constant.money/ except they have special code on the end to identify your account.  For example: <b>https://constant.money/referral/YOUR_REFERRAL_ID</b>\n            </p>\n            <p>\n              - There is no limit to the number of friends you can refer, although we do reserve the right to adjust or change the referral program rules in the future.\n            </p>\n    ",
-        "gamificationTitle": "Gamification",
-        "gamificationDesc": "\n      <p> - Sign up an account </p>\n      <p> - Purchase Constant (+5 CST for first order)</p>\n      <p> - Invite some friends to join Constant ( +5 CST for each friend with at least 1 successful overseas transfer)</p>\n    ",
-        "labelShare": "Share your link",
-        "btnShare": "Copy link",
-        "copied": "Referral link copied to clipboard."
+        "title": "Multiply your investment earnings.",
+        "description": "Earn 6% more on top of what you’re already making <br/> across all your currently active accounts.",
+        "expirationDate": "This program begins on March 15 and ends on June 15, 2019",
+        "body": {
+            "item1": {
+                "title": "Share on facebook",
+                "description": "Post about Constant to spread the word.",
+                "bonusRate": "0.5"
+            },
+            "item2": {
+                "title": "Make an investment of $1000 or more",
+                "description": "Choose a term and deposit funds via bank transfer.",
+                "bonusRate": "0.5"
+            },
+            "item3": {
+                "title": "Refer up to 15 friends",
+                "description": "Get your friends involved, and get rewarded for each friend you bring on board.",
+                "bonusRate": "3"
+            }
+        },
+        "loginRequired": "You need to login to do the action.",
+        "shareFbSuccess": "Share referral link success.",
+        "faqs": {
+            "title": "Frequenly asked questions",
+            "content": {
+                "faq1": {
+                    "question": "What are Constant Referral Rewards?",
+                    "answer": "\n          <p>\n          The Constant Referral Reward program earns you extra interest for investing or sharing Constant with friends and family. You earn interest by completing certain actions, such as referring Constant to friends who then sign up, sharing Constant on social media, and investing a minimum of $1,000 or more. \n          </p>\n          <p>\n          Complete all actions in our Referral Rewards program and you could earn 6% additional interest on your Investment Plans. \n           </p>\n          "
+                },
+                "faq2": {
+                    "question": "How do I earn reward interest?",
+                    "answer": "\n          <p>\n          Simple – just complete any of the following actions: \n          </p>\n          <p>\n          Invest $1,000 or more: <strong>2.5%</strong> (payable once).<br/>\n          Refer Constant to friends and family: <strong>0.2%</strong> for everyone who signs up (3% maximum).<br/>\n          Share Constant on Facebook: <strong>0.5%</strong> (payable once).\n          </p>\n          <p>\n          Your extra interest will be added to all of your existing Investment Plans, except for the Trial Plan.  \n           </p>\n          "
+                },
+                "faq3": {
+                    "question": "Is there a limit on the amount of extra interest I can earn?",
+                    "answer": "\n          <p>\n          Yes, once you’ve completed an action or earned the maximum reward for that action, you won’t earn any further interest. \n          </p>\n          <p>\n          All referral rewards are single use, except referring friends and family where you’ll earn 0.2% for every person who signs up to a maximum of 3%. \n           </p>\n          "
+                },
+                "faq4": {
+                    "question": "Where can I find my referral link?",
+                    "answer": "\n          <p>\n          Log into your account and go to My Investments. There you’ll find referral and Facebook links to share Constant with anyone you want. \n          </p>\n          "
+                },
+                "faq5": {
+                    "question": "When will I receive the extra interest?",
+                    "answer": "\n          <p>\n          Immediately. We add your reward interest to all of your fixed Investment Plans as soon as you complete the actions. We’ll notify you by email, too. \n          </p>\n          "
+                },
+                "faq6": {
+                    "question": "Will the interest expire?",
+                    "answer": "\n          <p>\n          Yes, it will. The referral program lasts 90 days from Mar 15 to June 15. After that, the rate will return to normal. \n          </p>\n          "
+                }
+            }
+        }
     },
     "affiliatePage": {
         "headerTitleNoLogin": "Become an affiliate",
@@ -1648,6 +1837,7 @@
         "currencyDropdownLabel": "Your currency",
         "amountResultLabel": "According to the markets today, that is:",
         "buyBtn": "INVEST {fiatAmount} {fiatCurrency}",
+        "investNow": "INVEST NOW",
         "amountTooSmall": "Your amount is too small, please try a larger amount",
         "noAgentAvaiable": "Please be patient with us, we’re trying to keep up. Try a smaller amount, or try again later.",
         "getAmountFailed": "Failed while getting amount, please try again",
@@ -1869,6 +2059,14 @@
         "blockDesc2": "\n      <h5>Secure cash with purchase orders.</h5>\n      <br />\n      <h5>We understand that money is fast flowing. If you sell products to reputable clients - established companies, government organizations, or similar - we can fund you the working capital you need to fulfill those orders, in confidence of future payment from your client.</h5>\n    ",
         "brands": {
             "title": "Our clients work with some of the world’s leading brands"
+        }
+    },
+    "trade": {
+        "title": "Trade Constant.",
+        "desc": "Protect yourself against volatility and access smarter financial solutions. Constant Coin (CONST) is the stablecoin that at the heart of all our services: a global USD bank account, high income investments and fair, flexible loans. CONST is fully backed by USD, holds its value at 1:1, and can be redeemed for USD at anytime. You can get CONST for Bitcoin, Ether, fiat and more, by using the reputable exchanges listed below.",
+        "coinmarket": {
+            "title": "Follow the growth of Constant",
+            "desc": "Get real-time prices, review historical charts, and track movement and volume across all exchanges."
         }
     }
 }

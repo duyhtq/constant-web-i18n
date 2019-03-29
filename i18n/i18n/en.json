@@ -54,8 +54,24 @@
         }
     },
     "footer": {
-        "title1": "\n    <h3>Invest, don’t speculate.</h3>\n    ",
-        "title2": "START MAKING RETURNS",
+        "cta": {
+            "type1": {
+                "title": "<h3>Start earning interest.</h3>",
+                "btn": "INVEST NOW"
+            },
+            "type2": {
+                "title": "<h3>Get a global USD account.</h3>",
+                "btn": "Sign up now"
+            },
+            "type3": {
+                "title": "<h3>Want to earn interest on your savings?</h3>",
+                "btn": "Browse investment plans"
+            },
+            "type4": {
+                "title": "<h3>Get USD without selling your crypto</h3>",
+                "btn": "BORROW NOW"
+            }
+        },
         "getSocial": "Social Media",
         "titleFoundation": "Foundation",
         "titleConstant": "Buy Constant",
@@ -80,7 +96,8 @@
         "privacy": "Privacy Policy",
         "facebookLink": "https://www.facebook.com/const.money",
         "mediumLink": "https://medium.com/@constantmoney",
-        "contactUs": "Contact us:"
+        "contactUs": "Contact us:",
+        "referral": "Referral"
     },
     "headerBar": {
         "myAccount": "My Account",
@@ -110,7 +127,7 @@
         "about": "About",
         "pricing": "Pricing",
         "personal": "Personal",
-        "trader": "Trader",
+        "trader": "Trade",
         "developer": "Developer",
         "getConstant": "Buy Constant",
         "getCash": "Withdraw Cash",
@@ -120,7 +137,8 @@
         "saveAndGrowMoney": "Save & Grow money",
         "login": "Login",
         "openAnAccount": "Open an account",
-        "yourSaving": "My Investments",
+        "yourSaving": "My Accounts",
+        "myInvestments": "My Investments",
         "hoverMenu": {
             "deposit": {
                 "title": "Deposit",
@@ -261,7 +279,7 @@
             "isUSYes": "Yes",
             "isUSNo": "No",
             "lTaxCountry": "Country listed on your ID",
-            "plTaxCountry": "Select your tax country",
+            "plTaxCountry": "Select your country",
             "lPhone": "Phone Number",
             "lSSN": "Social Security Number",
             "lIDNumber": "ID Number",
@@ -574,6 +592,7 @@
             },
             "bankInfo": {
                 "bankName": "Bank Name",
+                "bankCountryAndCurrency": "Country/Currency",
                 "bankAccountCurrency": "Account Currency",
                 "bankCountry": "Bank Country",
                 "bankAccountName": "Bank account name",
@@ -647,6 +666,7 @@
             "editActionLabel": "Edit",
             "bankAccountName": "Account Name",
             "bankAccountCurrency": "Account Currency",
+            "bankCountryAndCurrency": "Country/Currency",
             "bankCountry": "Bank Country",
             "routingNumber": "Routing number",
             "swiftCode": "Swift code",
@@ -848,6 +868,7 @@
     "landing_page.label.footer": "Constant MVP is an online exchange developed by Shanzhai Limited, a Hong Kong based company, offering bulk crypto purchasing at competitive prices with full delivery service.<br />Join the dojo: <a href=\"https://t.me/coin_bowl\" class=\"landing-link\">t.me/coin_bowl</a><br />Contact us: <a href=\"mailto:hello@constant.money\" class=\"landing-link\" target=\"_top\">hello@constant.money</a>",
     "user": {
         "kycInformation": "KYC Information",
+        "referral": "Referral",
         "logout": "Log out",
         "history": "History",
         "myOrders": "My orders",
@@ -979,15 +1000,26 @@
         "titleDesc4": "\n      <p></p>\n      <p></p>\n    ",
         "optionText": "or",
         "howItWorks": {
-            "step1": "STEP 1",
-            "title1": "YOU MAKE AN INVESTMENT",
+            "step1": "Step 1",
+            "title1": "You make an investment",
             "desc1": "Choose among our flexible Investment Plans, then make a bank transfer of any amount to the FDIC insured Constant Vault. Your funds will be held in USD, to protect against volatility. We earn you interest and make sure your money is secure, by lending your funds only to borrowers who are willing to overcollateralize.",
-            "step2": "STEP 2",
-            "title2": "YOUR MONEY MULTIPLIES",
+            "step2": "Step 2",
+            "title2": "Your money multplies",
             "desc2": "No matter which commitment period you choose, returns are paid out daily into a Flexible Account. Flexible means you can withdraw whenever you like, and earn an extra 1% annually. Stay liquid and make profit on your profit.",
-            "step3": "STEP 3",
-            "title3": "YOU WITHDRAW PROFIT",
+            "step3": "Step 3",
+            "title3": "You withdraw profit",
             "desc3": "Your investment income is in USD, but you can withdraw it to any local bank account at the end of the commitment period. Or you could reinvest it to keep growing your money."
+        },
+        "stories": {
+            "quote0": "Apart from the bank beating interest rates, this is an incredibly interesting project from a technology standpoint. Banks need to up their game.",
+            "author0": "Zen Chang",
+            "title0": "Engineer, lover of new fintech projects.",
+            "quote1": "I signed up and made a deposit in under 5 minutes. Great for people who don't have the experience or time to invest, but still want to be smart with their money.",
+            "author1": "Jerry",
+            "title1": "Nurse, investing to help his money go further.",
+            "quote2": "Can't rate the Constant support staff highly enough. They walked me through making my first deposit - which was much easier than expected.",
+            "author2": "Justin",
+            "title2": "Mechanic, diversifying his income"
         },
         "buy": {
             "title": "Buy",
@@ -1322,6 +1354,8 @@
             "subTitle": "Free. To anyone, anywhere.",
             "introTitle": "Send money to anyone, anywhere. For free.",
             "transferBtn": "Send",
+            "emailAddr": "Recipient’s email",
+            "walletAddr": "Ethereum/EOS wallet address",
             "phToAddress": "Recipient’s email or Ethereum wallet address",
             "confirmMsg": "Are you sure you want to transfer {amount} CONSTANT to {address}?",
             "transferFailed": "Failed while transfering, please try again",
@@ -1347,25 +1381,30 @@
         },
         "constantLoan": {
             "title": "Fair, fully secured crypto-backed loans.",
-            "subTitle": "\n        <p>Our unique loan mechanism protects lenders from risk and secures a 8% annual return. It also delivers a 1% APR for borrowers. How?</p>\n        <p>Borrowers are required to put down collateral, so there is zero risk for lenders. Collateral doesn’t just sit there either - Constant helps borrowers securely lend out what they put down, so that while they pay interest, they are also earning it. This way, borrowers lower their own interest rate, without harming lender returns.</p>\n        <p>Turns out, both parties can win.</p>\n      ",
+            "subTitle": "\n        <h5>Our unique loan mechanism protects lenders from risk and secures a 8% annual return. It also delivers a 2% APR for borrowers. How?</h5>\n        <h5>Borrowers are required to put down collateral, so there is zero risk for lenders. Collateral doesn’t just sit there either - Constant helps borrowers securely lend out what they put down, so that while they pay interest, they are also earning it. This way, borrowers lower their own interest rate, without harming lender returns.</h5>\n        <h5>Turns out, both parties can win.</p>\n      ",
             "headLine": "Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.",
             "exchange": {
                 "caption": "Crypto-backed loan",
                 "buttonText": "Borrow cash",
-                "month": "month",
-                "months": "months",
+                "month": "{period}-month",
+                "months": "{period}-months",
+                "apr": "APR",
                 "termLabel": "Pick a loan term",
                 "amountLabel": "How much do you want to borrow?",
-                "collateralLabel": "Collateral required (150% of the loan value)",
+                "collateralLabel": "Collateral required (75% Loan to Value ratio)",
                 "startDateLabel": "Start date",
                 "endDateLabel": "End date",
                 "toolTipCollateral": "\n          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.\n        ",
                 "moreInfo": "Your funds will reach you as soon as your collateral is confirmed on its blockchain.  ETA: 2 minutes for ETH and 10 minutes for BTC."
             },
+            "interestTable": {
+                "title": "Why you should borrow with Constant.",
+                "description": "Constant crypto-backed loans have a generous loan to value ratio, no matter the amount you borrow. Benefit from the kindest interest rates on the market with our short term loans and get more liquidity out of your crypto."
+            },
             "what": {
                 "whatCaption0": "Instant loans",
                 "whatCaption1": "Crypto for cash",
-                "whatCaption2": "1% interest per year",
+                "whatCaption2": "2% annualized interest",
                 "whatCaption3": "Guaranteed approval",
                 "whatDesc0": "\n          <p>Our loan mechanism is secured and automated by smart contracts. No lengthy processing times - the money you need is in your account within the hour.</p>\n        ",
                 "whatDesc1": "\n          <p>Secure your loan with BTC or ETH and receive USD - all without needing to sell your crypto. Enjoy liquidity without needing to liquidate.</p>\n        ",
@@ -1384,64 +1423,6 @@
                 "title3": "GET CASH TO SPEND",
                 "desc3": "Within the hour, your USD loan will be accessible from your Constant Flexible Account. Withdraw anytime, to any other bank account."
             },
-            "faqs": {
-                "title": "Frequently Asked Questions",
-                "t1": "GENERAL",
-                "t2": "COLLATERAL",
-                "t3": "REPAYMENT",
-                "t4": "INTEREST",
-                "t5": "TECH",
-                "general": {
-                    "question1": "What is Constant?",
-                    "answer1": "\n            <p>Constant is a suite of simple, secure, and rewarding financial services.</p>\n            <p>Through blockchain technology, we’ve developed a suite of flexible investment products designed to grow your money at a pace that suits you. Whether you’re a seasoned investor or dipping your toe into it for the first time, Constant offers substantial returns with zero risk.</p>\n            <p>We’ve thrown out credit scoring, paperwork, and fees to give you more of what you deserve – industry-leading rates, risk-free loans, a stable, state-less currency, and free international transfers.</p>\n            <p>Available all day, every day, anywhere in the world.</p>\n          ",
-                    "question2": "Can I get a crypto loan?",
-                    "answer2": "\n            <p>Yes, anyone with bitcoin or ethereum to put up as collateral can get a crypto loan.</p>\n          ",
-                    "question3": "Is Constant a bank?",
-                    "answer3": "\n            <p>No. Constant is even better.</p>\n            <p>We’re 100% digital and open 24-7, so no queuing at bank branches, and no bank holidays.</p>\n            <p>Our Investment Plans earn you up to 60x more investment income than a typical savings account pays in interest.</p>\n            <p>We don’t run credit checks for our loans, we don’t give you reams of paperwork to sign, and we are open to anyone, anywhere.</p>\n          ",
-                    "question4": "Is Constant regulated?",
-                    "answer4": "\n            <p>Yes. Funds are held securely in our trust, which is regulated under US law. That’s why we ask you to verify your identity when you withdraw investments to your bank account.</p>\n          ",
-                    "question5": "How does Constant make money?",
-                    "answer5": "\n            <p>We charge interest on collateralized loans to pay investment income to our investors, and make a very slim profit from the difference.</p>\n          ",
-                    "question6": "Who are the people behind Constant?",
-                    "answer6": "\n            <p>We’re a diverse team of engineers, economists, monetary policymakers, and industry experts. You can read all about our team on <page>.</p>\n          ",
-                    "question7": "Where is Constant based?",
-                    "answer7": "\n            <p>Everywhere! We are a registered US entity supported by a global team with presences in the USA, Vietnam, and Malta. If you’re in our neighborhood, drop by anytime.</p>\n          "
-                },
-                "collateral": {
-                    "question1": "What assets do you accept as collateral?",
-                    "answer1": "\n            <p>We only accept bitcoin and ethereum at the moment.</p>\n          ",
-                    "question2": "What happens if my collateral falls in value during my loan term?",
-                    "answer2": "\n            <p>If the value of your collateral falls below 70% of the original market rate, we liquidate (sell) your crypto and you can keep the loan without repaying it. </p>\n            <p>For example, if you borrow $100 and at the time of borrowing your collateral is worth $150, then if it falls below $105, we’ll sell your collateral and you keep the $100.</p>\n          ",
-                    "question3": "Where do you store my crypto collateral?",
-                    "answer3": "\n            <p>We store your crypto in smart contract escrows on the ethereum blockchain, accessible only by encrypted private keys.</p>\n          ",
-                    "question4": "Is my crypto collateral safe with you?",
-                    "answer4": "\n            <p>Yes, very safe. Not only is your collateral stored and cryptographically secured on the ethereum blockchain by the collective computing power of the network, but we also encrypt the private keys on our database.</p>\n          "
-                },
-                "repayment": {
-                    "question1": "How do I repay my loan?",
-                    "answer1": "\n            <p>Once your loan term ends, you repay us the original loan amount plus interest in Constant, our USD-Backed stablecoin. You can buy Constant direct from us for $1 each, or you can trade on exchanges using cryptocurrency and other fiat pairs.</p>\n            <p>Either way, simply send your final loan balance in Constant to our web wallet and we’ll return your crypto.</p>\n          ",
-                    "question2": "What happens if I can’t repay the loan?",
-                    "answer2": "\n            <p>We’ll sell your collateral. That’s it.</p>\n          ",
-                    "question3": "Can I repay the loan in another currency?",
-                    "answer3": "\n            <p>We offer loans in our USD-backed stablecoin, Constant, which you can then withdraw as USD (or local currency). The same happens in reverse. You repay us in Constant (plus the interest) by sending it to our wallet.</p>\n          ",
-                    "question4": "Can I repay the loan in cryptocurrency?",
-                    "answer4": "\n            <p>Since we offer loans in our USD-backed stablecoin, Constant, which you can then withdraw as USD (or local currency), you repay us in Constant, too.</p>\n            <p>You can buy Constant in several ways – through us for fiat currency (we don’t support crypto at the moment) or through exchanges for other cryptos and fiat pairs.</p>\n          ",
-                    "question5": "How long do I have to repay once the loan term is over?",
-                    "answer5": "\n            <p>Once the loan term ends, you have seven days to repay the loan.</p>\n          ",
-                    "question6": "Can I repay early?",
-                    "answer6": "\n            <p>Not at the moment, but we’re looking into this.</p>\n          "
-                },
-                "interest": {
-                    "question1": "What is the interest rate?",
-                    "answer1": "\n            <p>Please check our Crypto Loans webpage for the latest interest rates. Rates differ according to the length of term selected.</p>\n          ",
-                    "question2": "Why is the interest rate so low?",
-                    "answer2": "\n            <p>Our terms are intentionally short, strict, and simple so we can offer you the best loan rates on the market while still protecting our investors. We don’t waste money on debt collection, reams of paperwork, or other unnecessary bureaucracy. Just cash loans for crypto collateral, all secured by the blockchain.</p>\n          "
-                },
-                "tech": {
-                    "question1": "How do Crypto Loans work?",
-                    "answer1": "\n            <p>We loan our investors’ funds to you in return for crypto collateral. Everything is done on the Ethereum blockchain, with our smart contract and USD-backed stablecoin powering the agreements.</p>\n            <p>To get a loan, you must provide bitcoin or ethereum collateral to the value of 150% of your loan amount. This is called overcollateralization and is essential to offer you the best interest rates and to protect our investors.</p>\n            <p>Your crypto collateral is stored and secured on the blockchain, accessible only through private keys that we encrypt on our database. It remains securely protected by the blockchain until you repay the loan and we return your crypto.</p>\n            <p>All of our loans are paid out in our USD-backed stablecoin, Constant. You can then withdraw Constant for USD (or local currency) on our website, or trade it for any other currency with our partner exchanges - and spend it however you want. Since we’re loaning you Constant, you repay in Constant, too, which you can buy from us or from exchanges. </p>\n            <p>Crypto Loans are very simple. If you don’t repay the loan, or if your collateral falls below 70% of its original market value, we keep and sell your crypto. The loan is yours to keep.</p>\n            <p>Overcollateralization is a safety mechanism designed to give our investors confidence and our borrowers the friendliest rates on the market. Constant Crypto Loans are one of the safest and easiest loans to obtain, manage, and repay.</p>\n          "
-                }
-            },
             "reference": "\n        <div name=\"ref-container\">\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Interested rate:</span>\n            <span name=\"ref-value\">{intRate}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Collateral value:</span>\n            <span name=\"ref-value\">{colValue}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Collateral return:</span>\n            <span name=\"ref-value\">{colReturn}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Default threshold:</span>\n            <span name=\"ref-value\">{defThreshold}</span>\n          </div>\n        </div>\n      ",
             "transaction": {
                 "transactionID": "transaction ID",
@@ -1452,6 +1433,7 @@
             },
             "history": {
                 "itemTpl": "\n          <div name=\"loan-info-container\">\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Loan amount:</span>\n              <span name=\"loan-info-value\">{loanAmount}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Interest rate:</span>\n              <span name=\"loan-info-value\">{interestedRate}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Collaterals:</span>\n              <span name=\"loan-info-value\">{collaterals}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Term:</span>\n              <span name=\"loan-info-value\">{term}</span>\n            </div>\n          </div>\n        ",
+                "renew": "Renew",
                 "status": {
                     "pending": "pending",
                     "accepted": "accepted",
@@ -1477,7 +1459,12 @@
                 "interestPaymentContent": "<p>Your Interest payment is <strong>{amountPayInterest}</strong> Constant</p>",
                 "balanceNotEnough": "Your Balance is not enough to pay",
                 "paySuccess": "Pay Successfully",
-                "noHistoryData": "Get Crypto loan here"
+                "noHistoryData": "Get Crypto loan here",
+                "paymentDetail": "Payment detail",
+                "itemPayment": "#{id} {description} <strong>{amount}</strong> Constant at {paymentDate}",
+                "noPaymentDetail": "No payment detail",
+                "payConstant": "Pay by Constant",
+                "payCollateral": "Pay by Collateral"
             },
             "errorMessages": {
                 "required": "Required"
@@ -1588,11 +1575,12 @@
             "item2": {
                 "title": "Make an investment of $1000 or more",
                 "description": "Choose a term and deposit funds via bank transfer.",
-                "bonusRate": "0.5"
+                "bonusRate": "2.5"
             },
             "item3": {
                 "title": "Refer up to 15 friends",
                 "description": "Get your friends involved, and get rewarded for each friend you bring on board.",
+                "additionalDesc": "Your referral link: <b>{link}</b>",
                 "bonusRate": "3"
             }
         },
@@ -1700,24 +1688,123 @@
     },
     "faqs": {
         "title": "Frequently Asked Questions",
-        "t1": "ACCOUNT",
-        "t2": "INITIAL INVESTMENT",
-        "t3": "INVEST",
-        "t4": "RETURNS",
-        "t5": "GENERAL",
-        "question1": "Which countries can I get Constant in?",
-        "answer1": "<p>Anywhere in the world. You just need an internet connection.</p>",
-        "question2": "Where can I get Constant?",
-        "answer2": "<p>Anywhere in the world. You just need an internet connection.</p>",
-        "question3": "Is Constant insured? What if you get hacked, or I can’t convert to USD, or my Constant is stolen?",
-        "answer3": "\n    <p>The US dollars put in escrow are FDIC (Federal Deposit Insurance Corporation) insured. Each account is insured up to 1305,000,000 USD by the independent trust company’s financial institution bond.</p>\n    <br />\n    <p>Blockchain technology is very difficult to hack, but even if it happens, we can trace the transaction before the hack to see what happened thanks to the immutable blockchain ledger. So, you will get your USD</p>\n    ",
-        "question4": "Can I see how many Constant are in circulation?",
-        "answer4": "\n    <p>The US dollars put in escrow are FDIC (Federal Deposit Insurance Corporation) insured. Each account is insured up to 1305,000,000 USD by the independent trust company’s financial institution bond.</p>\n    <br />\n    <p>Blockchain technology is very difficult to hack, but even if it happens, we can trace the transaction before the hack to see what happened thanks to the immutable blockchain ledger. So, you will get your USD</p>\n    ",
-        "question5": "Is Constant insured? What if you get hacked, or I can’t convert to USD, or my Constant is stolen?",
-        "answer5": "\n    <p>The US dollars put in escrow are FDIC (Federal Deposit Insurance Corporation) insured. Each account is insured up to 1305,000,000 USD by the independent trust company’s financial institution bond.</p>\n    <br />\n    <p>Blockchain technology is very difficult to hack, but even if it happens, we can trace the transaction before the hack to see what happened thanks to the immutable blockchain ledger. So, you will get your USD</p>\n    ",
-        "question6": "Can I see how many Constant are in circulation? Can I check the integrity of the",
-        "answer6": "\n      <p>The US dollars put in escrow are FDIC (Federal Deposit Insurance Corporation) insured. Each account is insured up to 1305,000,000 USD by the independent trust company’s financial institution bond.</p>\n      <br />\n      <p>Blockchain technology is very difficult to hack, but even if it happens, we can trace the transaction before the hack to see what happened thanks to the immutable blockchain ledger. So, you will get your USD</p>\n    ",
-        "length": "6",
+        "label": {
+            "account": "ACCOUNT",
+            "initialInvestment": "INITIAL INVESTMENT",
+            "invest": "INVEST",
+            "returns": "RETURNS",
+            "general": "GENERAL",
+            "deposit": "DEPOSIT",
+            "transfer": "TRANSFER",
+            "withdraw": "WITHDRAW",
+            "tech": "TECH",
+            "collateral": "COLLATERAL",
+            "interest": "INTEREST",
+            "repayment": "REPAYMENT",
+            "buy": "BUY",
+            "sell": "SELL",
+            "value": "VALUE"
+        },
+        "buy": {
+            "question1": "Where can I buy Constant?",
+            "answer1": "\n        <p>\n          You can buy Constant from us or through one of our exchange partners. Constant is currently listed on four exchanges:\n          <a href=\"https://www.idcm.io/\" target=\"_blank\">IDCM</a>,\n          <a href=\"https://p2pb2b.io/\" target=\"_blank\">P2PB2B</a>,\n          <a href=\"https://crex24.com/\" target=\"_blank\">Crex24</a>, and\n          <a href=\"https://www.bancor.network/\" target=\"_blank\">Bancor</a>.\n        </p>\n      ",
+            "question2": "Can I buy Constant on the website?",
+            "answer2": "\n        <p>Yes, simply deposit any local currency on the “Bank” section of the website and we’ll automatically convert it to Constant. You can then transfer Constant for free to any Constant account or Ethereum wallet.</p>\n      ",
+            "question3": "How much does Constant cost to buy?",
+            "answer3": "\n        <p>You can buy Constant from our network for $1 per 1 Constant. The price should be similar on exchanges, but because we can’t control the market, it might differ due to supply and demand.</p>\n      "
+        },
+        "sell": {
+            "question1": "Where can I sell Constant?",
+            "answer1": "\n        <p>You can sell Constant to us at $1 each. Simply select withdraw from the “Bank” section of our website and we’ll send USD (or local currency) to your bank account. If your Constant is in a separate wallet, you’ll need to transfer it to your Constant account first before you can withdraw it (this is free).</p>\n        <br />\n        <p>You can also sell Constant on exchanges, but please bear in mind the market price might differ from the one we guarantee on our site. This is because we can’t control the market, and exchange prices will vary depending on supply and demand.</p>\n      "
+        },
+        "value": {
+            "question1": "Will the price of Constant go “to the moon”?",
+            "answer1": "\n        <p>Constant is a stablecoin designed to always match the value of USD. However, we can’t control the market, nor the effect of supply and demand, so you never know what price Constant will be. In some cases, people will pay more for stability. All we can guarantee is that you can always buy or redeem Constant from us for $1.</p>\n      ",
+            "question2": "Why is Constant’s price different on exchanges?",
+            "answer2": "\n        <p>Exchanges connect buyers and sellers, and the price of an asset is determined by the forces of supply and demand – the price people are willing to pay based on the asset’s perceived value. The more there is of an asset, the cheaper it is (usually), and vice versa.</p>\n        <br />\n        <p>Since Constant is a stablecoin pegged to the USD, you might be surprised to see its price higher or lower on exchanges. This is outside of our control, and entirely set by the market. Some people will pay a premium for stability, for example.</p>\n        <br />\n        <p>Regardless, no matter what happens, we guarantee you can buy or redeem Constant for $1 from us.</p>\n      "
+        },
+        "collateral": {
+            "question1": "What assets do you accept as collateral?",
+            "answer1": "\n        <p>We only accept bitcoin and ethereum at the moment.</p>\n      ",
+            "question2": "What happens if my collateral falls in value during my loan term?",
+            "answer2": "\n        <p>If the value of your collateral falls below 70% of the original market rate, we liquidate (sell) your crypto and you can keep the loan without repaying it.</p>\n        <p>For example, if you borrow $100 and at the time of borrowing your collateral is worth $150, then if it falls below $105, we’ll sell your collateral and you keep the $100.</p>\n      ",
+            "question3": "Where do you store my crypto collateral?",
+            "answer3": "\n        <p>We store your crypto in smart contract escrows on the ethereum blockchain, accessible only by encrypted private keys.</p>\n      ",
+            "question4": "Is my crypto collateral safe with you?",
+            "answer4": "\n        <p>Yes, very safe. Not only is your collateral stored and cryptographically secured on the ethereum blockchain by the collective computing power of the network, but we also encrypt the private keys on our database.</p>\n      "
+        },
+        "repayment": {
+            "question1": "How do I repay my loan?",
+            "answer1": "\n        <p>Once your loan term ends, you repay us the original loan amount plus interest in Constant, our USD-Backed stablecoin. You can buy Constant direct from us for $1 each, or you can trade on exchanges using cryptocurrency and other fiat pairs.</p>\n        <p>Either way, simply send your final loan balance in Constant to our web wallet and we’ll return your crypto.</p>\n      ",
+            "question2": "What happens if I can’t repay the loan?",
+            "answer2": "\n        <p>We’ll sell your collateral. That’s it.</p>\n      ",
+            "question3": "Can I repay the loan in another currency?",
+            "answer3": "\n        <p>We offer loans in our USD-backed stablecoin, Constant, which you can then withdraw as USD (or local currency). The same happens in reverse. You repay us in Constant (plus the interest) by sending it to our wallet.</p>\n      ",
+            "question4": "Can I repay the loan in cryptocurrency?",
+            "answer4": "\n        <p>Since we offer loans in our USD-backed stablecoin, Constant, which you can then withdraw as USD (or local currency), you repay us in Constant, too.</p>\n        <p>You can buy Constant in several ways – through us for fiat currency (we don’t support crypto at the moment) or through exchanges for other cryptos and fiat pairs.</p>\n      ",
+            "question5": "How long do I have to repay once the loan term is over?",
+            "answer5": "\n        <p>Once the loan term ends, you have seven days to repay the loan.</p>\n      ",
+            "question6": "Can I repay early?",
+            "answer6": "\n        <p>Not at the moment, but we’re looking into this.</p>\n      "
+        },
+        "interest": {
+            "question1": "What is the interest rate?",
+            "answer1": "\n        <p>Please check our <a href=\"#\">Crypto Loans</a> webpage for the latest interest rates. Rates differ according to the length of term selected.</p>\n      ",
+            "question2": "Why is the interest rate so low?",
+            "answer2": "\n        <p>Our terms are intentionally short, strict, and simple so we can offer you the best loan rates on the market while still protecting our investors. We don’t waste money on debt collection, reams of paperwork, or other unnecessary bureaucracy. Just cash loans for crypto collateral, all secured by the blockchain.</p>\n      "
+        },
+        "cryptoLoanTech": {
+            "question1": "How do Crypto Loans work?",
+            "answer1": "\n        <p>We loan our investors’ funds to you in return for crypto collateral. Everything is done on the Ethereum blockchain, with our smart contract and USD-backed stablecoin powering the agreements.</p>\n        <p>To get a loan, you must provide bitcoin or ethereum collateral to the value of 150% of your loan amount. This is called overcollateralization and is essential to offer you the best interest rates and to protect our investors.</p>\n        <p>Your crypto collateral is stored and secured on the blockchain, accessible only through private keys that we encrypt on our database. It remains securely protected by the blockchain until you repay the loan and we return your crypto.</p>\n      ",
+            "question2": " ",
+            "answer2": "\n        <p>All of our loans are paid out in our USD-backed stablecoin, Constant. You can then withdraw Constant for USD (or local currency) on our website, or trade it for any other currency with our partner exchanges - and spend it however you want. Since we’re loaning you Constant, you repay in Constant, too, which you can buy from us or from exchanges. </p>\n        <p>Crypto Loans are very simple. If you don’t repay the loan, or if your collateral falls below 70% of its original market value, we keep and sell your crypto. The loan is yours to keep.</p>\n        <p>Overcollateralization is a safety mechanism designed to give our investors confidence and our borrowers the friendliest rates on the market. Constant Crypto Loans are one of the safest and easiest loans to obtain, manage, and repay.</p>\n      "
+        },
+        "tech": {
+            "question1": "Why do you digitize my investment?",
+            "answer1": "\n        <p>When you invest money for the long term, some local currencies can lose value due to inflation. This eats into your investment income, diminishing your returns. We don’t think that’s fair. So instead, we convert your principal into a “digital dollar” that’s 100% backed by real USD – the world’s reserve currency.</p>\n        <br />\n        <p>Our digital dollar is called Constant. Anytime you invest or withdraw, we create or destroy Constant to ensure it’s 1:1 backed, always matching the value of USD. That way, you never need worry about inflation and other economic pressures eating into your investment. You just sit back and watch your money grow.</p>\n      ",
+            "question2": "How does digitization work?",
+            "answer2": "\n        <p>First, we send your investment principal to the Constant Vault for safekeeping. Then, we create new Constant tokens on the Ethereum blockchain that match the USD value of your principal. For example, if you gave us the equivalent of $100 in your local currency, we send $100 to the Constant Vault and create 100 Constant.</p>\n        <br />\n        <p>Constant remains in your account for your commitment period, earning investment income that you can save or withdraw daily. Then, when your period ends, you can withdraw your principal from the Constant Vault (and any returns) and we’ll destroy the Constant. Or, if you’d rather use the Constant tokens to send money abroad, trade on exchanges, or reinvest for another period, please do!</p>\n      "
+        },
+        "withdraw": {
+            "question1": "How do I withdraw Constant?",
+            "answer1": "\n        <p>Constant works with your local banking system so you can withdraw in USD or local currency. Although we store your deposits as USD, they’ll be automatically converted back into your local currency (at the real-time market rate) if you withdraw to a non-USD bank account.</p>\n        <br />\n        <p>To withdraw funds, simply request the amount you’d like to withdraw from the Withdraw tab, enter the bank details, and click Withdraw. Alternatively, you can also withdraw funds as Constant, our USD-backed stablecoin, to an ETH or EOS wallet. Just enter the wallet address and click Withdraw.</p>\n      ",
+            "question2": "In which currencies can I withdraw?",
+            "answer2": "\n        <p>The currency you withdraw depends on the native currency of your bank account. If you have a USD bank account, you’ll receive USD. In all other cases, your bank will convert the USD we send to your local currency.</p>\n        <br />\n        <p>Of course, you don’t have to withdraw to a bank account at all. You can withdraw your money as Constant, our USD-backed stablecoin, to an ETH or EOS wallet and then trade it for other currency pairs on supported exchanges.</p>\n      ",
+            "question3": "Do you charge withdrawal fees?",
+            "answer3": "\n        <p>\n        The Constant Vault, where we store your funds, is a US-based escrow account. So, withdrawing from this to a bank outside the US will incur a small one-off fee to cover KYC (Know Your Customer). The fee depends on your country of residence, but won’t be more than $35, and you only pay it once. Afterwards, <b>all withdrawals are free.</b>\n        </p>\n      ",
+            "question4": "Is there a limit on the number of withdrawals I can make?",
+            "answer4": "<p>No, you can withdraw as much and as often as you like.</p>",
+            "question5": "How long do withdrawals take?",
+            "answer5": "<p>If you’re based in the US, your funds should arrive the same day as you request the withdrawal. If you’re based outside of the US, it might take a day or two, depending on your bank and country of residence.</p>"
+        },
+        "deposit": {
+            "question1": "Are my deposits safe?",
+            "answer1": "\n        <p>Yes. First, we convert your deposit to USD to stabilise and protect your funds from inflationary devaluation. Then, we send your funds to the Constant Vault, an escrow operated by Prime Trust, an accredited US financial institution.</p>\n        <br />\n        <p>Since the Constant Vault is regulated under US law, your deposits are FDIC-insured to $5,000,000. (We split deposits greater than $250,000 across 20 banks to achieve protection up to $5,000,000).</p>\n      ",
+            "question2": "Is there a limit to how much I can deposit?",
+            "answer2": "\n        <p>No, though if you plan on depositing more than $5,000,000, please contact us to discuss ways of increasing the insurance protection on your account. </p>\n      ",
+            "question3": "How do I make a deposit?",
+            "answer3": "\n        <p>You can deposit funds in two ways:</p>\n        <ol>\n          <li>Through our website. Simply select the amount of money you’d like to deposit and then send it by bank transfer to the Constant Vault. We’ll convert local currency to USD.</li>\n          <li>Through an exchange. If you can’t send money to the Constant Vault directly, you can also buy our USD-backed stablecoin, Constant, from selected exchanges. Buy Constant from an exchange, send it to our wallet address, and we’ll deposit USD into your account.</li>\n        </ol>\n      ",
+            "question4": "Which currencies do you accept?",
+            "answer4": "\n        <p>We accept any currency you can send by bank transfer to our US-based Constant Vault. Once received, we convert your currency to USD.</p>\n        <br />\n        <p>Later, when you’re ready to withdraw, you’ll receive either USD (if you have a USD account) or local currency.</p>\n      ",
+            "question5": "Do you accept cryptocurrencies?",
+            "answer5": "\n        <p>Not directly, but you can buy Constant, our USD-backed stablecoin, from our exchange partners for other cryptocurrencies. Send Constant to our wallet and we’ll deposit the equivalent value of USD into your account.</p>\n      ",
+            "question6": "Is there a limit on the number of deposits I can make?",
+            "answer6": "<p>No. You can deposit as much as you like, as often as you like.</p>"
+        },
+        "transfer": {
+            "question1": "How long will my transfer take?",
+            "answer1": "<p>It should be immediate, though at times of heavy network congestion, perhaps up to 30 seconds.</p>",
+            "question2": "How much does a transfer cost?",
+            "answer2": "<p>Nothing. Constant transfers are free for everyone.</p>",
+            "question3": "To which countries can I transfer money?",
+            "answer3": "<p>You can send funds to anyone, anywhere, anytime.</p>",
+            "question4": "How do transfers work?",
+            "answer4": "\n        <p>We use blockchain technology to make our transfers fast, free, and easy.</p>\n        <br />\n        <p>When you transfer USD, we digitize it in the form of our USD-backed stablecoin, Constant. Since Constant lives on the blockchain, it can be moved to anyone in the world for free – as quickly as sending an email.</p>\n        <br />\n        <p>At the other end, once your recipient receives Constant, they can then withdraw it again as USD or local currency (depending on their bank account).</p>,\n        <p>Here’s a simple example:</p>\n        <ul>\n          <li>You request a transfer of $100 to Mary.</li>\n          <li>We deduct $100 from your balance and send Mary 100 Constant.</li>\n          <li>Mary receives 100 Constant and her balance increases by $100.</li>\n          <li>Mary withdraws $100 and we deduct $100 from her balance.</li>\n        </ul>\n      ",
+            "question5": "Are transfers safe?",
+            "answer5": "\n        <p>Yes – very safe. First, transfers take place on the blockchain, an immutable public ledger that’s extremely tough to hack. It’s virtually impossible to make fraudulent changes without getting noticed since transactions are collectively validated by the network. Even if your money went astray, it would be easy to trace.</p>\n        <br />\n        <p>Second, the blockchain is always on. There is no risk of downtime and no way for your money to get lost. It either reaches the recipient or stays in your account. Nevertheless, both your and the recipient’s Constant account are both FDIC-insured to $5,000,000. So were the worst to happen, we’ve got you covered.</p>\n      ",
+            "question6": "Does the recipient need a Constant account to receive funds?",
+            "answer6": "<p>To receive funds, your recipient needs either a Constant account or a web wallet that supports ERC-20 tokens. That way they can either receive USD or our USD-backed stablecoin, both of which can be withdrawn as USD or local currency (if the recipient doesn’t have a USD bank account).</p>"
+        },
         "account": {
             "question1": "Can I open a Constant account in my country?",
             "answer1": "Anyone can open a Constant account, no matter where you live. All you need is an internet connection.",
@@ -1743,44 +1830,40 @@
             "answer4": "Just log into your account and click Your Investments. Total earned investment income is on the top right of the dashboard.",
             "question5": "What happens at the end of my commitment period?",
             "answer5": "At the end of the term, we’ll pay you the total profit (assuming you haven’t withdrawn it already) and the $1,000 principal will be returned to us. Please note that we will need to verify your identity before you can withdraw investment income to your bank account. This protects you from fraud and complies with financial regulations.",
-            "question6": "Can I invest more into the initial investment promotion?",
+            "question6": "Can I invest more in the initial investment promotion?",
             "answer6": "No, but you can invest in other Investment Plans whenever you like.",
             "question7": "Can I choose different commitment periods for other Investment Plans?",
-            "answer7": "Absolutely! Participation in the initial investment promotion is separate to your other Investment Plans, so you can choose the amounts and terms for your other investments."
+            "answer7": "Absolutely! Participation in the initial investment promotion is separate from your other Investment Plans, so you can choose the amounts and terms for your other investments."
         },
         "invest": {
             "question1": "What is a Constant Investment Plan?",
-            "answer1": "Our Investment Plans are simple, risk-free, and effective ways to grow your money. You choose a commitment period, invest your money, and at the end of the period you get your money back plus earned investment income. It really is as simple as that.",
+            "answer1": "Our Investment Plans are simple, low-risk, and effective ways to grow your money. You choose a commitment period, invest your money, and at the end of the period you get your money back plus earned investment income. It really is as simple as that.",
             "question2": "How do Constant Investment Plans work?",
-            "answer2": "\n        <p>Under the “INVEST” tab on our website, you’ll be able to choose from several different Investment Plans. Each one is designed to maintain the value of your principal investment and pay you daily investment income.</p>\n        <br />\n        <p>To maintain the value of your principal, we send your money to the Constant trust where it’s protected by US law and insured to $250,000. At the same time, we create a “digital dollar” called Constant and put it into your account, which keeps the value stable.</p>\n        <br />\n        <p>Over time, your Constant earns investment income which you can withdraw as you earn (daily) or save until the end of your commitment period. Either way, your final investment statement is an amount in Constant you can withdraw for its 1:1 equivalent in USD.</p>\n        <br />\n        <p>Of course, you don’t have to withdraw your principal and investment income as USD. At the end of your commitment period, when your investment matures, we reinvest your final balance into our Anytime Investment Plan so you continue to earn investment income while you decide what to do next.</p>\n        <br />\n        <p>You could send your Constant to someone else, anywhere in the world, keep it stored in your Anytime Investment Plan to keep the value locked to the USD, or simply put the Constant back into another Investment Plan to earn even more interest. The choice is yours!</p>\n      ",
+            "answer2": "\n        <p>Under the “INVEST” tab on our website, you’ll be able to choose from several different Investment Plans. Each one is designed to maintain the value of your principal investment and pay you daily investment income.</p>\n        <br />\n        <p>To maintain the value of your principal, we send your money to the Constant Vault where it’s protected by US law and insured to $5,000,000. Over time, your Constant earns investment income which you can withdraw as you earn (daily) or save until the end of your commitment period.</p>\n        <br />\n        <p>Of course, you don’t have to withdraw your principal and investment income. You can transfer your money abroad, leave it locked to the USD for stability, or simply reinvest in another Investment Plan to earn even more interest. The choice is yours!</p>\n      ",
             "question3": "How do you protect my investment?",
-            "answer3": "Your principal is securely held in the Constant Vault, which is overseen by an accredited US financial institution called Prime Trust. Your investment is FDIC-insured to $250,000. You can read more about the Constant Vault on our blog.",
+            "answer3": "Your principal is securely held in the Constant Vault, which is overseen by an accredited US financial institution called Prime Trust. Your investment is FDIC-insured to $250,000. You can read more about the Constant Vault on <a href=\"https://medium.com/@constantmoney\" target=\"_blank\">our blog</a>",
             "question4": "Which currencies do you accept?",
-            "answer4": "We accept any currency sent to our US-based Constant Vault bank account. It is then converted to USD and stored in an FDIC-insured vault.",
+            "answer4": "We accept any currency sent to our US-based Constant Vault bank account. It is then converted to USD and stored in the FDIC-insured Vault.",
             "question5": "Do you accept cryptocurrency?",
             "answer5": "Not at this time.",
             "question6": "Can I access my principal investment at any time?",
-            "answer6": "\n        <p>To give you the best guaranteed returns, we hold on to your principal for the duration of your commitment period. Think of your principal as a seed that we water and help grow. To do that, we need time, which is why we offer different Investment Plans so you can find the right one for you.</p>\n        <br />\n        <p>If you’d rather have continuous access to your principal, choose our Anytime Investment Plan – the rate is lower, but you can withdraw your money at any time.</p>\n        <br />\n      ",
-            "question7": "Why do you digitize my investment?",
-            "answer7": "\n        <p>When you invest money for the long term, some local currencies can lose value due to inflation. This eats into your investment income, diminishing your returns. We don’t think that’s fair. So instead, we convert your principal into a “digital dollar” that’s 100% backed by real USD – the world’s reserve currency.</p>\n        <br />\n        <p>Our digital dollar is called Constant. Anytime you invest or withdraw, we create or destroy Constant to ensure it’s 1:1 backed, so its value always matches the USD. That way, you never need worry about inflation and other economic pressures eating into your investment. You just sit back and watch your money grow.</p>\n        <br />\n      ",
-            "question8": "How does digitization work?",
-            "answer8": "\n        <p>First, we send your investment principal to the Constant Vault for safekeeping. Then, we create new Constant tokens on the Ethereum blockchain that match the USD value of your principal. For example, if you gave us the equivalent of $100 in your local currency, we send $100 to the Constant Vault and create 100 Constant.</p>\n        <br />\n        <p>Constant remains in your account for your commitment period, earning investment income that you can save or withdraw daily. Then, when your period ends, you can withdraw your principal from the Constant Vault (and any returns) and we’ll destroy the Constant. Or, if you’d rather use the Constant tokens to send money abroad, trade on exchanges, or reinvest for another period, please do!</p>\n      ",
-            "question9": "Where is my investment stored?",
-            "answer9": "Your principal and investment income are stored inside the Constant Vault, which is regulated under US law and protected by $130,000,000 FDIC insurance (per account limit of $250,000 applies).",
-            "question10": "Can I add to my Investment Plan during the term?",
-            "answer10": "You can’t add to an Investment Plan once it’s started, but there’s no limit on how many Investment Plans you can have. So if you’d like to invest more, simply open another Investment Plan and watch your money grow.",
-            "question11": "What is the Constant Vault?",
-            "answer11": "The Constant Vault is a publicly-audited trust overseen and managed by Prime Trust, a US accredited financial institution. The Constant Vault is regulated in the US and insured by the FDIC to the value of $130,000,000 (a per account limit of $250,000 applies).",
-            "question12": "What is FDIC insurance?",
-            "answer12": "\n        <p>The Federal Deposit Insurance Corporation (FDIC) is a body set up by the US government to protect the integrity of the US financial system. It does this in a number of ways, including insuring deposits. Our Constant Vault is insured by FDIC to an indemnity limit of $130,000,000. You can <a target=\"_blank\" href=\"https://www.fdic.gov/about/strategic/strategic/mission.html\">read more about the FDIC on their website.</a></p>\n      "
+            "answer6": "\n        <p>To give you the best guaranteed returns, we hold on to your principal for the duration of your commitment period. Think of your principal as a seed that we water and help grow. To do that, we need time, which is why we offer different Investment Plans so you can find the right one for you.</p>\n      ",
+            "question7": "Where is my investment stored?",
+            "answer7": "\n        <p>Your principal and investment income are stored inside the Constant Vault, which is regulated under US law and protected by $5,000,000 FDIC insurance (investments above $250,000 will be spread across different Vaults).</p>\n      ",
+            "question8": "Can I add to my Investment Plan during the term?",
+            "answer8": "\n        <p>You can’t add to an Investment Plan once it’s started, but there’s no limit on how many Investment Plans you can have. So if you’d like to invest more, simply open another Investment Plan and watch your money grow.</p>\n      ",
+            "question9": "What is the Constant Vault?",
+            "answer9": "The Constant Vault is a publicly-audited trust overseen and managed by Prime Trust, a US accredited financial institution. The Constant Vault is regulated in the US and insured by the FDIC to the value of $130,000,000 (a per account limit of $5,000,000 applies).",
+            "question10": "What is FDIC insurance?",
+            "answer10": "\n        <p>The Federal Deposit Insurance Corporation (FDIC) is a body set up by the US government to protect the integrity of the US financial system. It does this in a number of ways, including insuring deposits. You can <a href=\"https://www.fdic.gov/about/strategic/strategic/mission.html\" target=\"_blank\">read more about the FDIC on their website.</a></p>\n        <br />\n        <p>Your account is FDIC-insured to $5,000,000. We achieve this limit by spreading larger deposits over multiple bank accounts.</p>\n      "
         },
         "returns": {
             "question1": "How are my returns paid out?",
             "answer1": "We pay investment profit daily, so you can either wait until the end of your commitment period to withdraw your investment income or withdraw it daily. It’s up to you.",
             "question2": "How are my daily returns calculated?",
-            "answer2": "Your rate of return is calculated by applying the percentage rate of your Investment Plan to the amount of your principal, and then dividing it by 365 to get a daily rate. Your returns are not compounded, so if you invest $500 for one year at a rate of 8%, you would earn $40 investment income at the end of your commitment period (about $0.1 per day).",
+            "answer2": "Your rate of return is calculated by applying the percentage rate of your Investment Plan to the amount of your principal, and then dividing it by 365 to get a daily rate. Your returns are not compounded, so if you invest $500 for one year at a rate of 8%, you would earn $40 investment income at the end of your commitment period (about $0.11 per day).",
             "question3": "How can I track my earnings?",
-            "answer3": "Just log into your account and click Your Investments. Total earned investment income is on the top right of the dashboard.",
+            "answer3": "Just log into your account and click My Investments. You’ll see your total earned investment income on the top right of the dashboard.",
             "question4": "Will you increase ROI rates in the future?",
             "answer4": "\n        <p>You never know ;-)</p>\n        <br />\n        <p>As Constant grows, we’re always looking for new ways of improving our efficiency so we can give you the best returns on your investment.</p>\n      ",
             "question5": "How can you offer such high returns risk-free?",
@@ -1788,9 +1871,9 @@
         },
         "general": {
             "question1": "What is Constant?",
-            "answer1": "\n        <p>Constant is simple, risk-free, and rewarding investment.</p>\n        <br />\n        <p>Through blockchain technology, we’ve developed a suite of flexible investment products designed to grow your money at a pace that suits you. Whether you’re a seasoned investor or dipping your toe into it for the first time, Constant offers substantial returns with zero risk.</p>\n        <br />\n        <p>We’ve thrown out credit scoring, paperwork, and fees to give you more of what you deserve – industry-leading rates, risk-free loans, a stable, state-less currency, and free international transfers.</p>\n        <p>Available all day, every day, anywhere in the world.</p>\n      ",
+            "answer1": "\n        <p>Constant is a financial services platform that helps you do more with your money. From investments to loans, our financial services leverage the best of blockchain tech to put you first, helping you achieve economic freedom.</p>\n        <br />\n        <p>We’ve thrown out credit scoring, paperwork, and fees to give you more of what you deserve – industry-leading rates, risk-free loans, a stable, state-less currency, and free international transfers.</p>\n        <br />\n        <p>Available all day, every day, anywhere in the world.</p>\n      ",
             "question2": "Is Constant a bank?",
-            "answer2": "\n        <p>No. Constant is even better.</p>\n        <br />\n        <p>We’re 100% digital and open 24-7, so no queuing at bank branches, and no bank holidays.</p>\n        <br />\n        <p>Our Investment Plans earn you up to 60x more investment income than a typical savings account pays in interest.</p>\n        <br />\n        <p>We don’t run credit checks, we don’t give you reams of paperwork to sign, and we are open to anyone, anywhere.</p>\n      ",
+            "answer2": "\n        <p>No. Constant is even better.</p>\n        <br />\n        <p>We’re 100% digital and open 24-7, so no queuing at bank branches, and no bank holidays.</p>\n        <br />\n        <p>Our Investment Plans earn you up to 60x more investment income than a typical savings account pays in interest. And our Crypto Loans offer some of the lowest interest rates on the market.</p>\n        <br />\n        <p>We don’t run credit checks, we don’t give you reams of paperwork to sign, and we are open to anyone, anywhere.</p>\n      ",
             "question3": "Is Constant regulated?",
             "answer3": "Yes. Your investments are held securely in our trust, which is regulated under US law. That’s why we ask you to verify your identity when you withdraw investments to your bank account.",
             "question4": "How does Constant make money?",
@@ -1801,29 +1884,6 @@
             "answer6": "Everywhere! We are a registered US entity supported by a global team with presences in the USA, Vietnam, and Malta. If you’re in our neighborhood, drop by anytime."
         }
     },
-    "stories": {
-        "quote0": "I’ve never used anything like Constant before. The interest rate is high. Everything is good. Your money will be protected well and be much more profitable than traditional bank saving.",
-        "author0": "Chinaza Akachi",
-        "title0": "Manager at Autonomous",
-        "quote1": "Great user experience. It's always fun watching my interest grow, and super convenient that I can withdraw it anytime. A nice zero-risk companion to your other investments, and a decent enough investment in itself.",
-        "author1": "Carlos",
-        "title1": "Father of three, saving for his children's college tuition.",
-        "quote2": "Can't rate the Constant support staff highly enough. They walked me through making my first deposit - which was much easier than expected.",
-        "author2": "Justin",
-        "title2": "Mechanic, saving to take his wife away on her dream holiday to Thailand.",
-        "quote3": "Very promising service. It's cool that my friends in different countries can all get accounts easily, and that you can transfer Constant between them for free - this is the first service we've found that's actually global.",
-        "author3": "Veronica",
-        "title3": "Graphic Designer, saving for a deposit to buy her first apartment.",
-        "quote4": "Apart from the bank beating interest rates, this is an incredibly interesting project from a technology standpoint. Banks need to up their game.",
-        "author4": "Zen Chang",
-        "title4": "Engineer, saving for a new car to take his family on roadtrips.",
-        "quote5": "Love that there's no minimum deposit required so anyone can benefit from their rates. Feel much safer keeping the tips I make with Constant instead of in a box under my bed!",
-        "author5": "Kate",
-        "title5": "Student, saving for her final year's course fees. ",
-        "quote6": "I signed up and made a deposit in under 5 minutes. Great for people who don't have the experience or time to invest, but still want to be smart with their money.",
-        "author6": "Jerry",
-        "title6": "Nurse, saving for his wedding."
-    },
     "statistics": {
         "s0": "Users",
         "s1": "Countries",
@@ -1833,6 +1893,8 @@
         "s5": "Repaid"
     },
     "exchangeInputBuyForm": {
+        "minUsdRequired": "Please enter an amount larger than 0.01 USD",
+        "minVndRequired": "Please enter an amount larger than 10,000 VND",
         "fiatAmountInputLabel": "Deposit amount",
         "currencyDropdownLabel": "Your currency",
         "amountResultLabel": "According to the markets today, that is:",
@@ -1848,6 +1910,8 @@
         "termLabel": "Pick your investment option"
     },
     "exchangeInputDepositForm": {
+        "minUsdRequired": "Please enter an amount larger than 0.01 USD",
+        "minVndRequired": "Please enter an amount larger than 10,000 VND",
         "fiatAmountInputLabel": "Deposit amount",
         "currencyDropdownLabel": "Your currency",
         "amountResultLabel": "According to the markets today, that is:",
@@ -1865,10 +1929,13 @@
         "formDesc": "Constant stores your money across 20 banks insured up to $250,000 each. That means you’re covered up to $5,000,000."
     },
     "exchangeInputSellForm": {
-        "amountInputLabel": "Withdraw amount",
+        "amountResult": {
+            "amountToWithdraw": "Amount to withdraw: {amount} {currency}",
+            "fee": "Withdrawal fee: {fee} {currency}",
+            "fiatAmountResultLabel": "According to the markets today, you’ll receive: {fiatAmount} {fiatCurrency}",
+            "explain": "* The maximum you can withdraw is {amountExcludeFee} {currency}, so you have enough to cover the withdrawal fee."
+        },
         "currencyDropdownLabel": "Your currency",
-        "fiatAmountResultLabel": "According to the markets today, you’ll receive: {fiatAmount} {fiatCurrency}",
-        "fee": "withdrawal fee: {fee} {currency}",
         "sellBtn": "WITHDRAW",
         "getAmountFailed": "Failed while getting amount",
         "getFeeFailed": "Failed while calculating fee, please try again",
@@ -1878,7 +1945,7 @@
         "whichCurrencyYouWant": "Which currency do you want to receive?"
     },
     "exchangeInputBuyTrialForm": {
-        "title": "We’re giving you a <b>1000 USD free initial investment.</b> Just so you can see how it works. At the end of the trial, <b>you keep all the returns.</b>",
+        "title": "<h6>We’re giving you a 1000 USD free initial investment. Just so you can see how it works. At the end of the trial, you keep all the returns.</h6>",
         "highlightText": "you keep all the interest.",
         "trialLeft": "{number} trials left.",
         "noMoreTrialLeft": "No more trial left.",
@@ -1922,7 +1989,7 @@
     },
     "saving": {
         "trialLeftNum": "ONLY {trialLeft} TRIALS LEFT",
-        "title": "Invest the way you want.",
+        "title": "<h1><span>Invest</span> the way you want.</h1>",
         "subTitle": "The right investment is the one you’re comfortable with. The one that grows reliably over time. Select an option that feels good, and we’ll teach your money how to work for you.",
         "makeLocalOrderSuccess": "Your order was created successfully",
         "makeLocalOrderFailed": "Failed while creating your order",
@@ -1960,7 +2027,8 @@
         }
     },
     "deposit": {
-        "title": "Your global USD bank account. Available now in Vietnam.",
+        "title": "Your global USD bank account.",
+        "availableInVn": "Available now in Vietnam.",
         "subTitle": {
             "sub1": "Save in US dollars, instead of unstable local currencies. Enjoy instant transfers of any amount - to anyone or any business - anywhere in the world. For free.",
             "sub2": "Your account is backed by the full faith and credit of the United States government, insured by the Federal Deposit Insurance Corporation (FDIC). Established in 1933, the FDIC has a perfect record of no lost funds.  {learnMore}",
@@ -1998,6 +2066,20 @@
             "title": "How We Work",
             "subTitle": "We’re building a fairer, freer, financial system.",
             "desc": "\n        <p>As pioneers of borderless banking on the blockchain, we are committed to making banking more inclusive, money more useful, and growth more accessible to anyone, anywhere in the world.</p>\n        <p>What does that look like? Fair interest rates. Inclusive loans. A state-less, stable currency that you can save, borrow, and spend. Transactions secured and carried out collectively by users of the network. A bank for the people, made possible by the people.</p>\n        <p>Constant is proud to be 100% digital, online 24/7. So no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime.</p> \n      "
+        },
+        "stories": {
+            "quote0": "Great user experience. It's always fun watching my savings grow, and super convenient that I can withdraw it anytime. A nice zero-risk companion to your other investments, and a decent enough investment in itself.",
+            "author0": "Carlos",
+            "title0": "Father of three, saving for a rainy day",
+            "quote1": "Love that there's no minimum deposit required so anyone can benefit from their rates. Feel much safer (and smarter) keeping the tips I make with Constant instead of in a box under my bed!",
+            "author1": "Kate",
+            "title1": "Student, being smarter with her money",
+            "quote2": "I used to save USD in my local bank account in Vietnam and earn no interest.  Now I can save and grow my money in USD, in an account fully protected by the FDIC, which I didn't think was possible for foreigners like me.",
+            "author2": "Binh",
+            "title2": "Business owner, looking for a more stable currency.",
+            "quote3": "The 'fringe' benefits are the best part - my friends and business partners in different countries can all get accounts easily, and you can transfer money between them for free. It's actually much more than just saving.",
+            "author3": "Veronica",
+            "title3": "Freelancer, citizen of the world"
         }
     },
     "yourSaving": {
@@ -2067,6 +2149,64 @@
         "coinmarket": {
             "title": "Follow the growth of Constant",
             "desc": "Get real-time prices, review historical charts, and track movement and volume across all exchanges."
+        }
+    },
+    "newHome": {
+        "banner": {
+            "title": "Like your bank, but better.",
+            "subTitle": "Welcome to better saving, borrowing, and making the most of your money. Open to anyone in the world with an internet connection.",
+            "cta": "Open an account",
+            "ctaDesc": "\n        It’s free to open an account. \n        <br />\n        Available locations: World."
+        },
+        "subjects": {
+            "banking": {
+                "title": "Borderless banking.",
+                "desc1": {
+                    "title": "Your global USD bank account.",
+                    "desc": "Bank in USD instead of unstable, landlocked currencies. Protect the value of your savings."
+                },
+                "desc2": {
+                    "title": "Send money home or do business with the world.",
+                    "desc": "Move money across the world in minutes. No matter how much you send - or how often - it won’t cost you a cent."
+                },
+                "desc3": {
+                    "title": "Withdraw in any currency.",
+                    "desc": "Constant works with your local banking system, so that your USD funds can be withdrawn in local currency at any time."
+                },
+                "link": "Open an account"
+            },
+            "invest": {
+                "title": "Invest the way you want.",
+                "desc1": {
+                    "title": "8% annual returns.",
+                    "desc": "Don’t sit on your money. Put it to work."
+                },
+                "desc2": {
+                    "title": "Returns paid out daily. Withdraw anytime.",
+                    "desc": "We’re proud of our rates, and we don’t want you to have to wait to enjoy them."
+                },
+                "desc3": {
+                    "title": "Secure your returns with secured loans.",
+                    "desc": "Your money is invested only in secured, over-collateralized loans. 150% risk-free."
+                },
+                "link": "Get a free initial investment"
+            },
+            "borrow": {
+                "title": "Borrow money at the kindest rates on the market.",
+                "desc1": {
+                    "title": "2% APR.",
+                    "desc": "Put down crypto as collateral and secure USD. Borrow as much as you want, take as long as you need, then get your assets back when you repay."
+                },
+                "desc2": {
+                    "title": "Instant approval.",
+                    "desc": "No lengthy processing times. The money you need is in your account within minutes."
+                },
+                "desc3": {
+                    "title": "Inclusive.",
+                    "desc": "Constant is for everyone. No credit scoring, background checks or month-long waiting games for approval."
+                },
+                "link": "Get cash for your crypto"
+            }
         }
     }
 }

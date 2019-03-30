@@ -56,20 +56,20 @@
     "footer": {
         "cta": {
             "type1": {
-                "title": "<h3>Start earning interest.</h3>",
-                "btn": "INVEST NOW"
+                "title": "<h3>Đầu tư lãi suất cao.</h3>",
+                "btn": "ĐẦU TƯ NGAY"
             },
             "type2": {
-                "title": "<h3>Get a global USD account.</h3>",
-                "btn": "Sign up now"
+                "title": "<h3>Sở hữu tài khoản USD toàn cầu.</h3>",
+                "btn": "Đăng ký ngay"
             },
             "type3": {
-                "title": "<h3>Want to earn interest on your savings?</h3>",
-                "btn": "Browse investment plans"
+                "title": "<h3>Sinh lời từ nguồn tiền nhàn rỗi</h3>",
+                "btn": "Chọn kì hạn đầu tư"
             },
             "type4": {
-                "title": "<h3>Get USD without selling your crypto</h3>",
-                "btn": "BORROW NOW"
+                "title": "<h3>Vay thế chấp nhận tiền ngay</h3>",
+                "btn": "VAY NGAY"
             }
         },
         "getSocial": "Mạng xã hội",
@@ -97,7 +97,7 @@
         "facebookLink": "https://www.facebook.com/ConstantVietNam/",
         "mediumLink": "https://medium.com/@constantvietnam",
         "contactUs": "Liên hệ:",
-        "referral": "Referral"
+        "referral": "Chương trình giới thiệu"
     },
     "headerBar": {
         "myAccount": "Tài khoản của tôi",
@@ -127,7 +127,7 @@
         "about": "Giới thiệu",
         "pricing": "Bảng giá",
         "personal": "Cá nhân",
-        "trader": "Trade",
+        "trader": "Giao dịch",
         "developer": "Lập trình",
         "getConstant": "Mua Constant",
         "getCash": "Rút tiền",
@@ -137,8 +137,8 @@
         "saveAndGrowMoney": "Tiết kiệm & Hưởng ưu đãi",
         "login": "Đăng nhập",
         "openAnAccount": "Đăng kí tài khoản",
-        "yourSaving": "My Accounts",
-        "myInvestments": "My Investments",
+        "yourSaving": "Tài khoản cá nhân",
+        "myInvestments": "Các khoản đầu tư",
         "hoverMenu": {
             "deposit": {
                 "title": "Gửi tiền",
@@ -279,7 +279,7 @@
             "isUSYes": "Có",
             "isUSNo": "Không",
             "lTaxCountry": "Quốc tịch",
-            "plTaxCountry": "Select your country",
+            "plTaxCountry": "Chọn quốc gia",
             "lPhone": "Số điện thoại",
             "lSSN": "Số bảo hiểm xã hội",
             "lIDNumber": "Số CMND",
@@ -477,7 +477,7 @@
         },
         "referralInfo": {
             "title": "Chương trình giới thiệu tăng lãi suất",
-            "copied": "Đã sao chép liên kết giới thiệu của bạn."
+            "copied": "Đã sao chép link giới thiệu của bạn."
         },
         "localHistory": {
             "status": {
@@ -532,7 +532,7 @@
             "status": "Trạng thái",
             "total": "Tổng cộng",
             "value": "Giá trị",
-            "link": "Liên kết",
+            "link": "Link",
             "action": "Tác vụ",
             "cancel": "Huỷ",
             "cancelMess": "Bạn chắc chắn muốn huỷ giao dịch này?",
@@ -592,7 +592,7 @@
             },
             "bankInfo": {
                 "bankName": "Tên ngân hàng",
-                "bankCountryAndCurrency": "Country/Currency",
+                "bankCountryAndCurrency": "Quốc gia/Tiền tệ",
                 "bankAccountCurrency": "Đơn vị tiền tệ",
                 "bankCountry": "Quốc gia",
                 "bankAccountName": "Tên tài khoản",
@@ -666,7 +666,7 @@
             "editActionLabel": "Chỉnh sửa",
             "bankAccountName": "Tên tài khoản",
             "bankAccountCurrency": "Đơn vị tiền tệ",
-            "bankCountryAndCurrency": "Country/Currency",
+            "bankCountryAndCurrency": "Quốc gia/Tiền tệ",
             "bankCountry": "Quốc gia",
             "routingNumber": "Số định tuyến ngân hàng",
             "swiftCode": "Mã SWIFT",
@@ -722,12 +722,12 @@
         },
         "referDialog": {
             "labelShare": "Mời bạn bè sử dụng Constant",
-            "btnShare": "Sao chép liên kết",
-            "copied": "Đã sao chép liên kết giới thiệu.",
+            "btnShare": "Sao chép link",
+            "copied": "Đã sao chép link giới thiệu.",
             "selectEmail": "Gửi lời mời tới",
             "sendInvitations": "Gửi Lời Mời",
             "sendInvitationsSuccess": "Gửi Lời Mời Thành Công!",
-            "or": "Hoặc sao chép liên kết",
+            "or": "Hoặc sao chép link",
             "noOptionsMessage": "Không có dữ liệu",
             "addNewEmail": "Thêm {email}"
         },
@@ -773,7 +773,7 @@
                         "title": "Đó là {percent}%",
                         "description": "Cộng thêm vào lãi suất mà bạn đang được nhận. Cho tất cả các khoản đầu tư."
                     },
-                    "shareFbSuccess": "Đã chia sẻ liên kết giới thiệu thành công."
+                    "shareFbSuccess": "Đã chia sẻ link giới thiệu thành công."
                 },
                 "withdraw": "Rút tiền",
                 "transfer": "Chuyển khoản",
@@ -868,7 +868,7 @@
     "landing_page.label.footer": "Constant MVP là sàn giao dịch crypto được phát triển bởi Shanzhai Limited có trụ sở tại Hong Kong cung cấp dịch vụ hoàn chỉnh giúp khách hàng mua crypto số lượng lớn với giá cạnh tranh.<br />Tham gia: <a href=\"https://t.me/coin_bowl\" class=\"landing-link\">t.me/coin_bowl</a><br />Liên hệ với chúng tôi: <a href=\"mailto:hello@constant.money\" class=\"landing-link\" target=\"_top\">hello@constant.money</a>",
     "user": {
         "kycInformation": "Thông tin KYC",
-        "referral": "Referral",
+        "referral": "Chương trình giới thiệu",
         "logout": "Đăng Xuất",
         "history": "Lịch sử giao dịch",
         "myOrders": "Lịch sử giao dịch trực tiếp",
@@ -900,7 +900,7 @@
             "requiredUsername": "Yêu cầu nhập email",
             "notValidUsername": "Địa chỉ email không hợp lệ",
             "submitButton": "Gửi",
-            "resetPasswordIntro": "Chúng tôi đã gửi một liên kết tới email của bạn. Vui lòng làm theo các hướng dẫn để đăng nhập bằng mật khẩu mới",
+            "resetPasswordIntro": "Chúng tôi đã gửi một đường link tới email của bạn. Vui lòng làm theo các hướng dẫn để đăng nhập bằng mật khẩu mới",
             "newPasswordTitle": "Nhập mật khẩu mới cho tài khoản {email} của bạn.",
             "password": "Mật khẩu mới",
             "requiredPassword": "Mật khẩu là bắt buộc",
@@ -1000,26 +1000,26 @@
         "titleDesc4": "\n      <p></p>\n      <p></p>\n    ",
         "optionText": "hoặc",
         "howItWorks": {
-            "step1": "Step 1",
-            "title1": "You make an investment",
+            "step1": "Bước 1",
+            "title1": "Gửi tiền đầu tư",
             "desc1": "Chọn một kì hạn đầu tư thích hợp rồi chuyển khoản đến quỹ Constant được bảo hiểm bởi FDIC. Constant sẽ sử dụng tiền đầu tư của bạn để thực hiện nghiệp vụ cho vay thế chấp. Để đảm bảo an toàn và có thể trả lãi cho các nhà đầu tư, tài sản thế chấp sẽ có giá trị cao hơn số tiền được cho vay.",
-            "step2": "Step 2",
-            "title2": "Your money multplies",
+            "step2": "Bước 2",
+            "title2": "Đợi khoản đầu tư sinh lời",
             "desc2": "Lãi sẽ được trả về hàng ngày vào tài khoản linh động của bạn. Phần lãi này được hưởng thêm lãi suất 1%/năm và có thể được rút ra bất cứ lúc nào. Dễ dàng thanh khoản và lãi mẹ sẽ đẻ lãi con.",
-            "step3": "Step 3",
-            "title3": "You withdraw profit",
+            "step3": "Bước 3",
+            "title3": "Nhận lãi từ khoản đầu tư",
             "desc3": "Khoản đầu tư của bạn được tính trên USD nhưng bạn hoàn toàn có thể rút VNĐ về tài khoản ngân hàng của mình khi đáo hạn. Hoặc bạn cũng có thể tái đầu tư để kiếm thêm được nhiều tiền hơn nữa."
         },
         "stories": {
             "quote0": "Apart from the bank beating interest rates, this is an incredibly interesting project from a technology standpoint. Banks need to up their game.",
             "author0": "Zen Chang",
-            "title0": "Engineer, lover of new fintech projects.",
+            "title0": "Kĩ sư, một người yêu thích công nghệ.",
             "quote1": "I signed up and made a deposit in under 5 minutes. Great for people who don't have the experience or time to invest, but still want to be smart with their money.",
             "author1": "Jerry",
-            "title1": "Nurse, investing to help his money go further.",
+            "title1": "Y tá, có nhu cầu đầu tư để tăng thu nhập.",
             "quote2": "Can't rate the Constant support staff highly enough. They walked me through making my first deposit - which was much easier than expected.",
             "author2": "Justin",
-            "title2": "Mechanic, diversifying his income"
+            "title2": "Thợ máy, muốn tăng thu nhập từ nhiều nguồn khác nhau."
         },
         "buy": {
             "title": "Mua",
@@ -1354,8 +1354,8 @@
             "subTitle": "Miễn phí. Tới bất cứ ai trên toàn thế giới.",
             "introTitle": "Chuyển khoản tới mọi người ở khắp nơi trên thế giới. Hoàn toàn miễn phí.",
             "transferBtn": "Gửi",
-            "emailAddr": "Recipient’s email",
-            "walletAddr": "Ethereum/EOS wallet address",
+            "emailAddr": "Email của người nhận",
+            "walletAddr": "Địa chỉ ví Ethereum hoặc EOS",
             "phToAddress": "Email hoặc địa chỉ ví Ethereum của người nhận",
             "confirmMsg": "Bạn muốn chuyển {amount} CONSTANT tới {address}?",
             "transferFailed": "Có lỗi xảy ra khi thực hiện giao dịch. Xin vui lòng thử lại",
@@ -1381,30 +1381,30 @@
         },
         "constantLoan": {
             "title": "Vay thế chấp bằng tiền mã hoá.",
-            "subTitle": "\n        <h5>Our unique loan mechanism protects lenders from risk and secures a 8% annual return. It also delivers a 2% APR for borrowers. How?</h5>\n        <h5>Borrowers are required to put down collateral, so there is zero risk for lenders. Collateral doesn’t just sit there either - Constant helps borrowers securely lend out what they put down, so that while they pay interest, they are also earning it. This way, borrowers lower their own interest rate, without harming lender returns.</h5>\n        <h5>Turns out, both parties can win.</p>\n      ",
+            "subTitle": "\n        <h5>Cơ chế cho vay độc đáo của  Constant không chỉ bảo vệ nhà đầu tư khỏi các rủi ro và đảm bảo lãi suất cơ bản 8%/năm mà còn mang lại lợi nhuận 2%/năm cho người đi vay!</h5>\n        <h5>Để vay tiền, người đi vay phải thế chấp một số tài sản nhất định. Số tài sản thế chấp này tiếp tục được Constant sử dụng để cho vay thế chấp. Như vậy, phần tài sản thế chấp không ở yên một chỗ và tiếp tục sinh lời cho người đi vay. Bằng cách này, người đi vay có thể vay được tiền với lãi suất rất thấp mà Constant vẫn đảm bảo được lợi nhuận cho các nhà đầu tư.</h5>\n        <h5>Đôi bên cùng có lợi!</p>\n      ",
             "headLine": "Bạn muốn có tiền để trả nợ thẻ tín dụng, trả tiền thuê nhà hay trả viện phí? Rất đơn giản. Đặt cọc bằng ETH và bạn sẽ nhận được số Constant bạn cần. Số ETH này sẽ được giữ an toàn trong hợp đồng thông minh của Constant.",
             "exchange": {
                 "caption": "Vay thế chấp bằng tiền mã hoá",
                 "buttonText": "Vay tiền",
-                "month": "{period}-month",
-                "months": "{period}-months",
+                "month": "{period} tháng",
+                "months": "{period} tháng",
                 "apr": "APR",
                 "termLabel": "Chọn thời hạn vay",
                 "amountLabel": "Bạn muốn vay bao nhiêu?",
-                "collateralLabel": "Collateral required (75% Loan to Value ratio)",
+                "collateralLabel": "Tài sản thế chấp (Vay được 75% giá trị tài sản thế chấp)",
                 "startDateLabel": "Ngày bắt đầu",
                 "endDateLabel": "Ngày kết thúc",
                 "toolTipCollateral": "\nĐây là khoản thế chấp cần có để vay được {exchangeUnit}. Giá trị tài sản thế chấp được tính theo giá thị trường {exchangeRate}.        ",
                 "moreInfo": "Bạn sẽ nhận được khoản vay ngay khi phần tài sản thế chấp được xác nhận trên chuỗi khối. Thời gian dự kiến: 2 phút cho ETH và 10 phút cho BTC."
             },
             "interestTable": {
-                "title": "Why you should borrow with Constant.",
-                "description": "Constant crypto-backed loans have a generous loan to value ratio, no matter the amount you borrow. Benefit from the kindest interest rates on the market with our short term loans and get more liquidity out of your crypto."
+                "title": "Tại sao chọn vay thế chấp với Constant?",
+                "description": "Không giới hạn số lượng, Constant có thể cho vay đến 75% giá trị tài sản thế chấp. Lãi suất vay cực ưu đãi. Thời hạn vay linh động. Thanh khoản nhanh chóng."
             },
             "what": {
                 "whatCaption0": "Nhận tiền ngay lập tức",
                 "whatCaption1": "Thế chấp tiền mã hoá lấy tiền thật",
-                "whatCaption2": "2% annualized interest",
+                "whatCaption2": "Lợi nhuận 2%/năm",
                 "whatCaption3": "Đảm bảo phê duyệt 100%",
                 "whatDesc0": "\n          <p>Các giao dịch với Constant được thực hiện dựa trên hợp đồng thông minh và công nghệ chuỗi khối nên rất nhanh chóng và an toàn. Bạn sẽ nhận được tiền trong vòng 1 tiếng đồng hồ.</p>\n        ",
                 "whatDesc1": "\n          <p>Bạn không cần phải bán tiền mã hoá đi để lấy tiền. Thế chấp BTC hoặc ETH cho Constant để nhận ngay USD. Rất dễ dàng thanh khoản mà không cần bán đi số tiền mã hoá của mình.</p>\n        ",
@@ -1433,7 +1433,7 @@
             },
             "history": {
                 "itemTpl": "\n          <div name=\"loan-info-container\">\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Khoản vay:</span>\n              <span name=\"loan-info-value\">{loanAmount}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Lãi suất:</span>\n              <span name=\"loan-info-value\">{interestedRate}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Thế chấp:</span>\n              <span name=\"loan-info-value\">{collaterals}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Thời hạn:</span>\n              <span name=\"loan-info-value\">{term}</span>\n            </div>\n          </div>\n        ",
-                "renew": "Renew",
+                "renew": "Gia hạn",
                 "status": {
                     "pending": "đang chờ",
                     "accepted": "đã chấp nhận",
@@ -1460,11 +1460,11 @@
                 "balanceNotEnough": "Số dư của bạn không đủ",
                 "paySuccess": "Thanh toán thành công",
                 "noHistoryData": "Vay Thế Chấp Tại Đây",
-                "paymentDetail": "Payment detail",
-                "itemPayment": "#{id} {description} <strong>{amount}</strong> Constant at {paymentDate}",
-                "noPaymentDetail": "No payment detail",
-                "payConstant": "Pay by Constant",
-                "payCollateral": "Pay by Collateral"
+                "paymentDetail": "Thông tin thanh toán",
+                "itemPayment": "#{id} {description}<strong>{amount}</strong> Constant vào ngày {paymentDate}",
+                "noPaymentDetail": "Không có thông tin thanh toán",
+                "payConstant": "Trả bằng Constant",
+                "payCollateral": "Trả bằng tài sản thế chấp"
             },
             "errorMessages": {
                 "required": "Yêu cầu"
@@ -1547,7 +1547,7 @@
             "title": "Tiền hoa hồng",
             "description": "Người giới thiệu nhận 0.2% hoa hồng với mỗi giao dịch được thực hiện bởi người được giới thiệu."
         },
-        "textRequireLogin": "Nhận liên kết giới thiệu của bạn tại đây và bắt đầu cùng bạn bè nhận thưởng. Đăng nhập Ngay để nhận liên kết giới thiệu của bạn",
+        "textRequireLogin": "Nhận link giới thiệu của bạn tại đây và bắt đầu cùng bạn bè nhận thưởng. Đăng Nhập Ngay để nhận link giới thiệu của bạn",
         "signInNow": "Đăng nhập ngay"
     },
     "pageNotFound": {
@@ -1580,12 +1580,12 @@
             "item3": {
                 "title": "Giới thiệu tối đa cho 15 người bạn",
                 "description": "Giới thiệu Constant cho bạn bè để tăng mức lãi suất được nhận cho mỗi một người bạn mở tài khoản.",
-                "additionalDesc": "Your referral link: <b>{link}</b>",
+                "additionalDesc": "Link giới thiệu của bạn: <b>{link}</b>",
                 "bonusRate": "3"
             }
         },
         "loginRequired": "Bạn cần đăng nhập để thực hiện hành động này.",
-        "shareFbSuccess": "Đã chia sẻ liên kết giới thiệu thành công.",
+        "shareFbSuccess": "Đã chia sẻ link giới thiệu thành công.",
         "faqs": {
             "title": "Các câu hỏi thường gặp",
             "content": {
@@ -1602,8 +1602,8 @@
                     "answer": "\n<p>\nKhi bạn đã hoàn thành mọi thao tác cần thiết, bạn đã tăng mức lãi suất lên tối đa và không thể tăng thêm được nữa. \n</p>\n<p>\nHiện tại, mức lãi suất tối đa có thể là 14%/năm. \n</p>\n          \n          "
                 },
                 "faq4": {
-                    "question": "Có thể tìm liên kết giới thiệu của tôi ở đâu?",
-                    "answer": "\n<p>\n          Đăng nhập vào tài khoản, bạn sẽ tìm thấy liên kết giới thiệu của mình và liên kết để chia sẻ Constant trên Facebook ở mục Khoản đầu tư của tôi.\n          </p>\n          "
+                    "question": "Có thể tìm link giới thiệu của tôi ở đâu?",
+                    "answer": "\n<p>\n          Đăng nhập vào tài khoản, bạn sẽ tìm thấy link giới thiệu của mình và link để chia sẻ Constant trên Facebook ở mục Khoản đầu tư của tôi.\n          </p>\n          "
                 },
                 "faq5": {
                     "question": "Khi nào mức lãi suất tăng thêm được tính?",
@@ -1623,7 +1623,7 @@
         "headerTitleLogined": "Howdy, ",
         "headerDescLogined": "Welcome to our affiliate program, let’s start to earn",
         "labelShare": "Your Affiliate link",
-        "btnShare": "Sao chép liên kết",
+        "btnShare": "Sao chép link",
         "copied": "Đã sao chép liên kết giới thiệu.",
         "termConditionTitle": "Điều khoản sử dụng",
         "termConditionDesc": "\n      <p>Agent will immediately earn 5 USD for the first transaction of acquired users. After that, Agent will earn  0.15% of volume users made in that month as commission. </p>\n      <p>User A conducts the first transaction which is BUYING CONSTANT and the amount must be equal to or greater than 1,000 USD, then Agent will immediately earn 5 USD. After that, User A makes the next transaction as BUYING CONSTANT, and Agent will earn 0.15% of each purchase. Total volume of User A in the month must be greater than 2000 USD. Commission will be paid at the end of the month.</p>\n    "
@@ -1689,121 +1689,121 @@
     "faqs": {
         "title": "Câu hỏi thường gặp",
         "label": {
-            "account": "ACCOUNT",
-            "initialInvestment": "INITIAL INVESTMENT",
-            "invest": "INVEST",
-            "returns": "RETURNS",
-            "general": "GENERAL",
-            "deposit": "DEPOSIT",
-            "transfer": "TRANSFER",
-            "withdraw": "WITHDRAW",
-            "tech": "TECH",
-            "collateral": "COLLATERAL",
-            "interest": "INTEREST",
-            "repayment": "REPAYMENT",
-            "buy": "BUY",
-            "sell": "SELL",
-            "value": "VALUE"
+            "account": "TÀI KHOẢN",
+            "initialInvestment": "ĐẦU TƯ THỬ NGHIỆM",
+            "invest": "ĐẦU TƯ",
+            "returns": "LỢI NHUẬN",
+            "general": "KHÁI QUÁT CHUNG",
+            "deposit": "NỘP TIỀN",
+            "transfer": "CHUYỂN KHOẢN",
+            "withdraw": "RÚT TIỀN",
+            "tech": "CÔNG NGHỆ",
+            "collateral": "THẾ CHẤP",
+            "interest": "LÃI SUẤT",
+            "repayment": "HOÀN TRẢ",
+            "buy": "MUA",
+            "sell": "BÁN",
+            "value": "GIÁ TRỊ"
         },
         "buy": {
-            "question1": "Where can I buy Constant?",
-            "answer1": "\n        <p>\n          You can buy Constant from us or through one of our exchange partners. Constant is currently listed on four exchanges:\n          <a href=\"https://www.idcm.io/\" target=\"_blank\">IDCM</a>,\n          <a href=\"https://p2pb2b.io/\" target=\"_blank\">P2PB2B</a>,\n          <a href=\"https://crex24.com/\" target=\"_blank\">Crex24</a>, and\n          <a href=\"https://www.bancor.network/\" target=\"_blank\">Bancor</a>.\n        </p>\n      ",
-            "question2": "Can I buy Constant on the website?",
-            "answer2": "\n        <p>Yes, simply deposit any local currency on the “Bank” section of the website and we’ll automatically convert it to Constant. You can then transfer Constant for free to any Constant account or Ethereum wallet.</p>\n      ",
-            "question3": "How much does Constant cost to buy?",
-            "answer3": "\n        <p>You can buy Constant from our network for $1 per 1 Constant. The price should be similar on exchanges, but because we can’t control the market, it might differ due to supply and demand.</p>\n      "
+            "question1": "Có thể mua Constant ở đâu?",
+            "answer1": "\n<p>\n          Bạn có thể mua Constant trực tiếp trên website của chúng tôi hoặc mua trên các sàn giao dịch dưới đây:\n          <a href=\"https://www.idcm.io/\" target=\"_blank\">IDCM</a>,\n          <a href=\"https://p2pb2b.io/\" target=\"_blank\">P2PB2B</a>,\n          <a href=\"https://crex24.com/\" target=\"_blank\">Crex24</a>, and\n          <a href=\"https://www.bancor.network/\" target=\"_blank\">Bancor</a>.\n        </p>      ",
+            "question2": "Có thể mua Constant trực tiếp trên website không?",
+            "answer2": "\n<p>Hoàn toàn có thể. Bạn vào mục \"Ngân hàng\" ở trên website và nhập số tiền bạn có. Hệ thống sẽ tự động tính toán số Constant bạn có thể mua được. Sau khi mua thành công, bạn có thể chuyển Constant đến các tài khoản Constant khác hoặc các địa chỉ ví Ethereum hoàn toàn miễn phí.</p>      ",
+            "question3": "1 Constant có giá bao nhiêu?",
+            "answer3": "\n<p>Bạn có thể mua Constant trực tiếp trên website với giá cố định 1 USD cho 1 Constant. Tuy nhiên, giá của Constant trên các sàn giao dịch có thể thay đổi do nhu cầu của thị trường.</p>      "
         },
         "sell": {
-            "question1": "Where can I sell Constant?",
-            "answer1": "\n        <p>You can sell Constant to us at $1 each. Simply select withdraw from the “Bank” section of our website and we’ll send USD (or local currency) to your bank account. If your Constant is in a separate wallet, you’ll need to transfer it to your Constant account first before you can withdraw it (this is free).</p>\n        <br />\n        <p>You can also sell Constant on exchanges, but please bear in mind the market price might differ from the one we guarantee on our site. This is because we can’t control the market, and exchange prices will vary depending on supply and demand.</p>\n      "
+            "question1": "Có thể bán Constant ở đâu?",
+            "answer1": "\n<p>Bạn có thể bán Constant lại cho chúng tôi với giá cố định 1 Constant = 1 USD. Đi đến mục \"Ngân hàng\", chọn rút tiền và chúng tôi sẽ gửi tiền (VNĐ) cho bạn. Tỉ giá được tính theo giá thị trường tại thời điểm rút tiền. Tuy nhiên, nếu bạn giữ Constant ở một địa chỉ ví khác, bạn cần chuyển số Constant này về tài khoản Constant để có thể thực hiện rút tiền. Chuyển Constant hoàn toàn miễn phí.</p>\n<br />\n<p>Bạn cũng có thể bán Constant trên các sàn giao dịch. Tuy nhiên, giá trên các sàn giao dịch có thể sẽ thay đổi theo nhu cầu của thị trường.</p>      "
         },
         "value": {
-            "question1": "Will the price of Constant go “to the moon”?",
-            "answer1": "\n        <p>Constant is a stablecoin designed to always match the value of USD. However, we can’t control the market, nor the effect of supply and demand, so you never know what price Constant will be. In some cases, people will pay more for stability. All we can guarantee is that you can always buy or redeem Constant from us for $1.</p>\n      ",
-            "question2": "Why is Constant’s price different on exchanges?",
-            "answer2": "\n        <p>Exchanges connect buyers and sellers, and the price of an asset is determined by the forces of supply and demand – the price people are willing to pay based on the asset’s perceived value. The more there is of an asset, the cheaper it is (usually), and vice versa.</p>\n        <br />\n        <p>Since Constant is a stablecoin pegged to the USD, you might be surprised to see its price higher or lower on exchanges. This is outside of our control, and entirely set by the market. Some people will pay a premium for stability, for example.</p>\n        <br />\n        <p>Regardless, no matter what happens, we guarantee you can buy or redeem Constant for $1 from us.</p>\n      "
+            "question1": "Giá trị của Constant có thể tăng đột biến không?",
+            "answer1": "\n<p>Constant là một stable token và 1 Constant luôn có giá trị bằng 1 USD. Tuy nhiên, \n không ai biết được điều gì sẽ xảy ra và giá trị của Constant hoàn toàn có thể thay đổi theo quy luật cung cầu của thị trường. Chúng tôi chỉ có thể đảm bảo một điều, bạn luôn có thể mua hoặc bán Constant trực tiếp với chúng tôi với giá 1 USD.</p>      ",
+            "question2": "Tại sao giá trị của Constant lại biến động trên các sàn giao dịch?",
+            "answer2": "\n<p>Sàn giao dịch là nơi kết nối người mua và người bán và giá trị của tài sản được quyết định dựa trên quy luật cung cầu. Người mua luôn sẵn sàng trả cái giá mà họ tin là xứng đáng. Nhu cầu mua càng cao thì giá càng tăng và ngược lại.</p>\n<br />\n<p>Tuy Constant là một stable token luôn có giá trị bằng 1 USD, đừng ngạc nhiên nếu bạn thấy giá của Constant cao hay thấp hơn con số này trên các sàn giao dịch. Sự biến động về giá hoàn toàn phụ thuộc vào nhu cầu của thị trường.</p>\n<br />\n<p>Nhưng, dù thị trường có biến động thế nào đi nữa, chúng tôi đảm bảo bạn luôn có thể mua hoặc bán Constant với giá 1 USD.</p>      "
         },
         "collateral": {
-            "question1": "What assets do you accept as collateral?",
-            "answer1": "\n        <p>We only accept bitcoin and ethereum at the moment.</p>\n      ",
-            "question2": "What happens if my collateral falls in value during my loan term?",
-            "answer2": "\n        <p>If the value of your collateral falls below 70% of the original market rate, we liquidate (sell) your crypto and you can keep the loan without repaying it.</p>\n        <p>For example, if you borrow $100 and at the time of borrowing your collateral is worth $150, then if it falls below $105, we’ll sell your collateral and you keep the $100.</p>\n      ",
-            "question3": "Where do you store my crypto collateral?",
-            "answer3": "\n        <p>We store your crypto in smart contract escrows on the ethereum blockchain, accessible only by encrypted private keys.</p>\n      ",
-            "question4": "Is my crypto collateral safe with you?",
-            "answer4": "\n        <p>Yes, very safe. Not only is your collateral stored and cryptographically secured on the ethereum blockchain by the collective computing power of the network, but we also encrypt the private keys on our database.</p>\n      "
+            "question1": "Để vay tiền cần thế chấp gì?",
+            "answer1": "\n<p>Hiện tại Constant chỉ chấp nhận Bitcoin hoặc Ethereum làm tài sản thế chấp.</p>      ",
+            "question2": "Điều gì sẽ xảy ra nếu như phần tài sản thế chấp mất giá trong thời hạn vay?",
+            "answer2": "\n<p>Nếu tài sản thế chấp của bạn mất giá chỉ còn không đến 70% giá trị ban đầu, phần tài sản thế chấp này sẽ thuộc về Constant và bạn không cần trả lại khoản vay.</p>\n<p>Ví dụ, bạn vay 100 USD và giá trị tài sản thế chấp của bạn là 150 USD tại thời điểm vay. Nếu như giá trị của số tài sản này giảm xuống dưới 105 USD, phần tài sản thế chấp này sẽ thuộc về chúng tôi và bạn không cần trả lại cho Constant 100 USD nữa.</p>      ",
+            "question3": "Phần tài sản thế chấp của tôi được giữ ở đâu?",
+            "answer3": "\n<p>Phần tài sản thế chấp của bạn được lưu giữ trên chuỗi khối ethereum nhờ ứng dụng hợp đồng thông minh. Khoá riêng tư cũng được mã hoá và lưu giữ an toàn trong cơ sở dữ liệu của Constant.</p>      ",
+            "question4": "Phần tài sản thế chấp của tôi có an toàn không?",
+            "answer4": "\n<p>Rất an toàn. Phần tài sản thế chấp của bạn được mã hoã, lưu giữ và bảo vệ trên chuỗi khối ethereum nhờ sức mạnh của cả hệ thống. Khoá riêng tư của phần tài sản này cũng được mã hoá và lưu giữ an toàn trên cơ sở dữ liệu của Constant.</p>      "
         },
         "repayment": {
-            "question1": "How do I repay my loan?",
-            "answer1": "\n        <p>Once your loan term ends, you repay us the original loan amount plus interest in Constant, our USD-Backed stablecoin. You can buy Constant direct from us for $1 each, or you can trade on exchanges using cryptocurrency and other fiat pairs.</p>\n        <p>Either way, simply send your final loan balance in Constant to our web wallet and we’ll return your crypto.</p>\n      ",
-            "question2": "What happens if I can’t repay the loan?",
-            "answer2": "\n        <p>We’ll sell your collateral. That’s it.</p>\n      ",
-            "question3": "Can I repay the loan in another currency?",
-            "answer3": "\n        <p>We offer loans in our USD-backed stablecoin, Constant, which you can then withdraw as USD (or local currency). The same happens in reverse. You repay us in Constant (plus the interest) by sending it to our wallet.</p>\n      ",
-            "question4": "Can I repay the loan in cryptocurrency?",
-            "answer4": "\n        <p>Since we offer loans in our USD-backed stablecoin, Constant, which you can then withdraw as USD (or local currency), you repay us in Constant, too.</p>\n        <p>You can buy Constant in several ways – through us for fiat currency (we don’t support crypto at the moment) or through exchanges for other cryptos and fiat pairs.</p>\n      ",
-            "question5": "How long do I have to repay once the loan term is over?",
-            "answer5": "\n        <p>Once the loan term ends, you have seven days to repay the loan.</p>\n      ",
-            "question6": "Can I repay early?",
-            "answer6": "\n        <p>Not at the moment, but we’re looking into this.</p>\n      "
+            "question1": "Hoàn trả khoản vay của mình như thế nào?",
+            "answer1": "\n<p>Khi hết thời hạn vay, bạn sẽ hoàn trả cho chúng tôi toàn bộ cả gốc lẫn lãi bằng Constant. Bạn có thể mua Constant trực tiếp từ chúng tôi với giá 1 USD cho 1 Constant hoặc bạn cũng có thể mua Constant trên các sàn giao dịch.</p>\n<p>Dù bạn mua Constant bằng cách nào, chỉ cần gửi trả đủ số Constant cho chúng tôi và bạn sẽ nhận lại phần tài sản thế chấp của mình.</p>      ",
+            "question2": "Điều gì sẽ xảy ra nếu tôi không thể hoàn trả được khoản vay của mình?",
+            "answer2": "\n            <p>Nếu bạn không trả được khoản vay, phần tài sản thế chấp của bạn sẽ thuộc về Constant.</p>\n      ",
+            "question3": "Có thể hoàn trả khoản vay bằng đơn vị tiền tệ khác không?",
+            "answer3": "\n            <p>Bạn nhận khoản vay của mình bằng Constant. Bạn có thể bán Constant để nhận VNĐ về tài khoản ngân hàng bất cứ lúc nào. Đến khi hoàn trả khoản vay, bạn cũng phải trả cả gốc lẫn lãi bằng Constant.</p>\n      ",
+            "question4": "Có thể hoàn trả khoản vay bằng tiền mã hoá được không?",
+            "answer4": "\n            <p>Vì bạn nhận các khoản vay thông qua Constant, nên bạn cần hoàn trả khoản vay bằng Constant.</p>\n            <p>Bạn có thể mua Constant trực tiếp trên website của chúng tôi hoặc mua trên các sàn giao dịch khác.</p>\n      ",
+            "question5": "Khi hết thời hạn vay, tôi có bao nhiêu thời gian để hoàn trả hết cả gốc lẫn lãi?",
+            "answer5": "\n<p>Khi hết thời hạn vay, bạn có 7 ngày để hoàn trả hết cả gốc lẫn lãi.</p>      ",
+            "question6": "Tôi có thể hoàn trả trước hạn không?",
+            "answer6": "\n<p>Hiện tại bạn không thể hoàn trả trước hạn. Chúng tôi có thể sẽ cân nhắc áp dụng điều này trong tương lai.</p>      "
         },
         "interest": {
-            "question1": "What is the interest rate?",
-            "answer1": "\n        <p>Please check our <a href=\"#\">Crypto Loans</a> webpage for the latest interest rates. Rates differ according to the length of term selected.</p>\n      ",
-            "question2": "Why is the interest rate so low?",
-            "answer2": "\n        <p>Our terms are intentionally short, strict, and simple so we can offer you the best loan rates on the market while still protecting our investors. We don’t waste money on debt collection, reams of paperwork, or other unnecessary bureaucracy. Just cash loans for crypto collateral, all secured by the blockchain.</p>\n      "
+            "question1": "Lãi suất vay là bao nhiêu?",
+            "answer1": "\n            <p>Xin vui lòng xem trang <a href=\"#\">Vay</a> để cập nhật mức lãi suất mới nhất. Mức lãi suất khác nhau ứng với thời hạn vay khác nhau.</p>\n      ",
+            "question2": "Tại sao mức lãi suất lại thấp được như vậy?",
+            "answer2": "\n            <p>Constant chủ ý cho vay với thời hạn ngắn để có thể áp dụng mức lãi suất tốt nhất có thể trên thị trường trong khi vẫn đảm bảo được lợi nhuận cho các nhà đầu tư. Constant còn không tốn chi phí vào việc thu nợ, hệ thống nhân sự và các thủ tục giấy tờ phức tạp. Tất cả được vận hành và đảm bảo bởi công nghệ chuỗi khối. Chỉ cần thế chấp tài sản số là khách hàng sẽ nhận được tiền ngay. </p>\n      "
         },
         "cryptoLoanTech": {
-            "question1": "How do Crypto Loans work?",
-            "answer1": "\n        <p>We loan our investors’ funds to you in return for crypto collateral. Everything is done on the Ethereum blockchain, with our smart contract and USD-backed stablecoin powering the agreements.</p>\n        <p>To get a loan, you must provide bitcoin or ethereum collateral to the value of 150% of your loan amount. This is called overcollateralization and is essential to offer you the best interest rates and to protect our investors.</p>\n        <p>Your crypto collateral is stored and secured on the blockchain, accessible only through private keys that we encrypt on our database. It remains securely protected by the blockchain until you repay the loan and we return your crypto.</p>\n      ",
+            "question1": "Cơ chế cho vay thế chấp của Constant?",
+            "answer1": "\n<p>Constant đứng ra nhận tiền từ các nhà đầu tư để thực hiện cho vay thế chấp. Tất cả đều được thực hiện và đảm bảo bởi hợp đồng thông minh trên chuỗi khối Ethereum.</p>\n<p>Để vay được tiền, khách hàng cần thế chấp số tài sản trị giá 150% số tiền muốn vay. Constant áp dụng hình thức thế chấp trội này để bảo vệ nhà đầu tư khỏi các rủi ro cũng như có thể đảm bảo mức lãi suất tốt nhất cho người vay.</p>\n<p>Phần tài sản thế chấp của khách hàng được giữ an toàn tuyệt đối trên chuỗi khối với khoá riêng tư đã được mã hoá ở trong cơ sở dữ liệu của Constant. Phần tài sản này sẽ được trả lại cho khách hàng ngay khi họ hoàn trả hết khoản vay và lãi.</p>      ",
             "question2": " ",
-            "answer2": "\n        <p>All of our loans are paid out in our USD-backed stablecoin, Constant. You can then withdraw Constant for USD (or local currency) on our website, or trade it for any other currency with our partner exchanges - and spend it however you want. Since we’re loaning you Constant, you repay in Constant, too, which you can buy from us or from exchanges. </p>\n        <p>Crypto Loans are very simple. If you don’t repay the loan, or if your collateral falls below 70% of its original market value, we keep and sell your crypto. The loan is yours to keep.</p>\n        <p>Overcollateralization is a safety mechanism designed to give our investors confidence and our borrowers the friendliest rates on the market. Constant Crypto Loans are one of the safest and easiest loans to obtain, manage, and repay.</p>\n      "
+            "answer2": "\n<p>Khách hàng nhận các khoản vay thông qua Constant và có thể đổi Constant sang VNĐ vào tài khoản ngân hàng bất cứ lúc nào. Bạn có thể giao dịch Constant trên các sàn giao dịch hay chuyển tới bất cứ đâu bạn muốn. Chỉ cần nhớ một điều, bạn nhận các khoản vay bằng Constant thì sẽ hoàn trả các khoản vay bằng Constant.</p>\n<p>Vay thế chấp với Constant rất đơn giản. Nếu bạn không thể hoàn trả khoản vay, hoặc giá trị phần tài sản thế chấp mất giá xuống dưới mức 70% giá trị ban đầu, phần tài sản thế chấp này sẽ thuộc về Constant.</p>\n<p>Thế chấp trội là hình thức Constant chọn để có thể bảo vệ nhà đầu tư khỏi rủi ro cũng như có thể áp dụng mức lãi suất tốt nhất với người cần vay. Vay thế chấp với Constant - nhanh chóng, dễ dàng, lãi suất thấp!</p>      "
         },
         "tech": {
-            "question1": "Why do you digitize my investment?",
-            "answer1": "\n        <p>When you invest money for the long term, some local currencies can lose value due to inflation. This eats into your investment income, diminishing your returns. We don’t think that’s fair. So instead, we convert your principal into a “digital dollar” that’s 100% backed by real USD – the world’s reserve currency.</p>\n        <br />\n        <p>Our digital dollar is called Constant. Anytime you invest or withdraw, we create or destroy Constant to ensure it’s 1:1 backed, always matching the value of USD. That way, you never need worry about inflation and other economic pressures eating into your investment. You just sit back and watch your money grow.</p>\n      ",
-            "question2": "How does digitization work?",
-            "answer2": "\n        <p>First, we send your investment principal to the Constant Vault for safekeeping. Then, we create new Constant tokens on the Ethereum blockchain that match the USD value of your principal. For example, if you gave us the equivalent of $100 in your local currency, we send $100 to the Constant Vault and create 100 Constant.</p>\n        <br />\n        <p>Constant remains in your account for your commitment period, earning investment income that you can save or withdraw daily. Then, when your period ends, you can withdraw your principal from the Constant Vault (and any returns) and we’ll destroy the Constant. Or, if you’d rather use the Constant tokens to send money abroad, trade on exchanges, or reinvest for another period, please do!</p>\n      "
+            "question1": "Tại sao phải đổi tiền sang Constant để thực hiện đầu tư?",
+            "answer1": "\n<p>Khi bạn thực hiện đầu tư, đặc biệt trong thời gian dài, đồng tiền có thể mất giá do lạm phát. Lạm phát sẽ làm giảm lợi nhuận và bạn không nhận lại được nhiều như bạn mong muốn từ khoản đầu tư của mình. Điều đó thật không công bằng. Vì thế, chúng tôi chuyển khoản đầu tư của bạn sang Constant - đồng dollar số luôn có giá trị bằng với USD.</p>\n<br />\n<p>Đồng dollar số của chúng tôi tên là Constant. Mỗi khi bạn đầu tư hay rút tiền về, chúng tôi tạo ra thêm hoặc huỷ đi số Constant tương ứng sao cho 1 Constant luôn luôn có giá trị bằng 1 USD. Như vậy, bạn không bao giờ phải lo lắng về lạm phát hay bất cứ vấn đề kinh tế nào có thể làm giảm lợi nhuận của bạn. Bạn chỉ cần đầu tư, thư giãn và đợi khoản đầu tư sinh lời với Constant.</p>      ",
+            "question2": "Quá trình này diễn ra như thế nào?",
+            "answer2": "\n<p>Chúng tôi sẽ gửi khoản đầu tư của bạn vào quỹ Constant để đảm bảo. Sau đó, dựa trên số tiền của bạn, chúng tôi tạo ra số lượng Constant tương ứng trên công nghệ blockchain của Ethereum nên 1 Constant luôn có giá trị bằng 1 USD. Như vậy, nếu bạn đầu tư 100 USD, bạn sẽ có 100 Constant trong tài khoản và 100 USD của bạn sẽ nằm an toàn trong quỹ tín thác.</p>\n        <br />\n        <p>Số Constant ở trong tài khoản của bạn sẽ sinh lãi trong suốt kì hạn đầu tư. Khi đáo hạn và bạn rút tiền ra khỏi Constant, chúng tôi sẽ hủy số Constant bạn đang nắm giữ và trả lại bạn số tiền tương ứng kèm mức lãi. Bạn có thể sử dụng Constant để thực hiện chuyển khoản tới bất cứ đâu, giao dịch trên các sàn giao dịch hoặc tái đầu tư với một kì hạn thích hợp để kiếm lãi. Lựa chọn là ở bạn. Hãy đầu tư thông minh!</p>\n      "
         },
         "withdraw": {
-            "question1": "How do I withdraw Constant?",
-            "answer1": "\n        <p>Constant works with your local banking system so you can withdraw in USD or local currency. Although we store your deposits as USD, they’ll be automatically converted back into your local currency (at the real-time market rate) if you withdraw to a non-USD bank account.</p>\n        <br />\n        <p>To withdraw funds, simply request the amount you’d like to withdraw from the Withdraw tab, enter the bank details, and click Withdraw. Alternatively, you can also withdraw funds as Constant, our USD-backed stablecoin, to an ETH or EOS wallet. Just enter the wallet address and click Withdraw.</p>\n      ",
-            "question2": "In which currencies can I withdraw?",
-            "answer2": "\n        <p>The currency you withdraw depends on the native currency of your bank account. If you have a USD bank account, you’ll receive USD. In all other cases, your bank will convert the USD we send to your local currency.</p>\n        <br />\n        <p>Of course, you don’t have to withdraw to a bank account at all. You can withdraw your money as Constant, our USD-backed stablecoin, to an ETH or EOS wallet and then trade it for other currency pairs on supported exchanges.</p>\n      ",
-            "question3": "Do you charge withdrawal fees?",
-            "answer3": "\n        <p>\n        The Constant Vault, where we store your funds, is a US-based escrow account. So, withdrawing from this to a bank outside the US will incur a small one-off fee to cover KYC (Know Your Customer). The fee depends on your country of residence, but won’t be more than $35, and you only pay it once. Afterwards, <b>all withdrawals are free.</b>\n        </p>\n      ",
-            "question4": "Is there a limit on the number of withdrawals I can make?",
-            "answer4": "<p>No, you can withdraw as much and as often as you like.</p>",
-            "question5": "How long do withdrawals take?",
-            "answer5": "<p>If you’re based in the US, your funds should arrive the same day as you request the withdrawal. If you’re based outside of the US, it might take a day or two, depending on your bank and country of residence.</p>"
+            "question1": "Rút Constant về tiền trong tài khoản ngân hàng thế nào?",
+            "answer1": "\n<p>Bạn có thể rút Constant về VNĐ vào tài khoản ngân hàng bất cứ lúc nào. Giá trị của Constant được tính theo tỉ giá thị trường tại thời điểm rút.</p>\n<br />\n<p>Để rút tiền, đi đến mục \"Rút tiền\" và nhập số tiền bạn muốn rút. Sau đó, nhập thông tin tài khoản ngân hàng và ấn \"Rút tiền\". Hoặc bạn cũng có thể nhập địa chỉ ví rồi ấn \"Rút tiền\" để rút Constant về ví ETH hoặc EOS.</p>      ",
+            "question2": "Constant hỗ trợ rút tiền về tài khoản nội địa ở những quốc gia nào?",
+            "answer2": "\n<p>Ở Việt Nam, bạn chỉ có thể rút tiền về tài khoản VNĐ. Giá trị của Constant sẽ được tính theo tỉ giá thị trường tại thời điểm rút.</p>\n<br />\n<p>Bạn cũng có thể rút Constant về ví ETH hoặc EOS để thực hiện giao dịch trên các sàn giao dịch.</p>      ",
+            "question3": "Phí rút tiền là bao nhiêu?",
+            "answer3": "\n<p>\nTiền của bạn được giữ trong quỹ tín thác Constant là một tài khoản ở Mỹ. Vì thế, lần đầu tiên rút tiền từ Constant về tài khoản ngân hàng sẽ mất phí dịch vụ để thực hiện xác minh danh tính, tối đa là 35 USD. Sau đó, <b>rút tiền hoàn toàn miễn phí.</b>\n</p>      ",
+            "question4": "Có giới hạn số lần số lượng rút tiền không?",
+            "answer4": "<p>Không. Bạn có thể thực hiện rút tiền tuỳ ý mà không bị giới hạn số lần số lượng rút.</p>",
+            "question5": "Mất bao lâu để tiền về tài khoản?",
+            "answer5": "<p>Nếu bạn ở Mỹ, bạn sẽ nhận được tiền trong ngày. Nếu bạn không ở Mỹ, có thể mất từ một đến hai ngày để bạn nhận được tiền về tài khoản.</p>"
         },
         "deposit": {
-            "question1": "Are my deposits safe?",
-            "answer1": "\n        <p>Yes. First, we convert your deposit to USD to stabilise and protect your funds from inflationary devaluation. Then, we send your funds to the Constant Vault, an escrow operated by Prime Trust, an accredited US financial institution.</p>\n        <br />\n        <p>Since the Constant Vault is regulated under US law, your deposits are FDIC-insured to $5,000,000. (We split deposits greater than $250,000 across 20 banks to achieve protection up to $5,000,000).</p>\n      ",
-            "question2": "Is there a limit to how much I can deposit?",
-            "answer2": "\n        <p>No, though if you plan on depositing more than $5,000,000, please contact us to discuss ways of increasing the insurance protection on your account. </p>\n      ",
-            "question3": "How do I make a deposit?",
-            "answer3": "\n        <p>You can deposit funds in two ways:</p>\n        <ol>\n          <li>Through our website. Simply select the amount of money you’d like to deposit and then send it by bank transfer to the Constant Vault. We’ll convert local currency to USD.</li>\n          <li>Through an exchange. If you can’t send money to the Constant Vault directly, you can also buy our USD-backed stablecoin, Constant, from selected exchanges. Buy Constant from an exchange, send it to our wallet address, and we’ll deposit USD into your account.</li>\n        </ol>\n      ",
-            "question4": "Which currencies do you accept?",
-            "answer4": "\n        <p>We accept any currency you can send by bank transfer to our US-based Constant Vault. Once received, we convert your currency to USD.</p>\n        <br />\n        <p>Later, when you’re ready to withdraw, you’ll receive either USD (if you have a USD account) or local currency.</p>\n      ",
-            "question5": "Do you accept cryptocurrencies?",
-            "answer5": "\n        <p>Not directly, but you can buy Constant, our USD-backed stablecoin, from our exchange partners for other cryptocurrencies. Send Constant to our wallet and we’ll deposit the equivalent value of USD into your account.</p>\n      ",
-            "question6": "Is there a limit on the number of deposits I can make?",
-            "answer6": "<p>No. You can deposit as much as you like, as often as you like.</p>"
+            "question1": "Nộp tiền vào tài khoản Constant có an toàn không?",
+            "answer1": "\n<p>Rất an toàn. Sau khi nộp tiền, tiền của bạn sẽ được đổi sang USD để giữ trong quỹ Constant được giám sát bởi công ty giám định tài chính độc lập có uy tìn ở Mỹ là PrimeTrust.</p>\n<br />\n<p>Quỹ Constant được bảo hộ bởi pháp luật Hoa Kỳ và bảo hiểm tối đa 5,000,000 USD.</p>      ",
+            "question2": "Nộp tiền một lần tối đa được bao nhiêu?",
+            "answer2": "\n<p>Không có giới hạn.</p>      ",
+            "question3": "Nộp tiền vào tài khoản Constant như thế nào?",
+            "answer3": "\n<p>Có 2 cách để nộp tiền vào tài khoản Constant:</p>\n<ol>\n<li>Nộp tiền trực tiếp trên website. Đơn giản nhập số tiền bạn muốn nộp và thực hiện chuyển khoản đến quỹ Constant. Chúng tôi sau đó sẽ nộp USD vào tài khoản của bạn.</li>\n<li>Mua stable token Constant trên các sàn giao dịch rồi gửi Constant tới ví của chúng tôi. Chúng tôi sẽ nộp USD vào tài khoản của bạn.</li>\n</ol>      ",
+            "question4": "Constant hỗ trợ những đơn vị tiền tệ nào?",
+            "answer4": "\n<p>Constant hỗ trợ tất cả các đơn vị tiền tệ. Sau khi nộp tiền, khoản tiền của bạn sẽ được đổi sang USD theo tỉ giá thị trường tại thời điểm đó và giữ trong quỹ Constant.</p>\n<br />\n<p>Tại Việt Nam, bạn chỉ có thể rút Constant về tài khoản VNĐ.</p>      ",
+            "question5": "Constant có hỗ trợ tiền mã hoá không?",
+            "answer5": "\n<p>Bạn không thể dùng tiền mã hoá để nộp tiền vào tài khoản Constant nhưng có thể dùng tiền mã hoá để mua Constant trên các sàn giao dịch. Sau đó gửi Constant đển ví Constant của chúng tôi và chúng tôi sẽ nộp USD vào tài khoản của bạn.</p>      ",
+            "question6": "Có giới hạn số lần số lượng nộp tiền không?",
+            "answer6": "<p>Không có giới hạn. Bạn có thể nộp bao nhiêu tuỳ thích.</p>"
         },
         "transfer": {
-            "question1": "How long will my transfer take?",
-            "answer1": "<p>It should be immediate, though at times of heavy network congestion, perhaps up to 30 seconds.</p>",
-            "question2": "How much does a transfer cost?",
-            "answer2": "<p>Nothing. Constant transfers are free for everyone.</p>",
-            "question3": "To which countries can I transfer money?",
-            "answer3": "<p>You can send funds to anyone, anywhere, anytime.</p>",
-            "question4": "How do transfers work?",
-            "answer4": "\n        <p>We use blockchain technology to make our transfers fast, free, and easy.</p>\n        <br />\n        <p>When you transfer USD, we digitize it in the form of our USD-backed stablecoin, Constant. Since Constant lives on the blockchain, it can be moved to anyone in the world for free – as quickly as sending an email.</p>\n        <br />\n        <p>At the other end, once your recipient receives Constant, they can then withdraw it again as USD or local currency (depending on their bank account).</p>,\n        <p>Here’s a simple example:</p>\n        <ul>\n          <li>You request a transfer of $100 to Mary.</li>\n          <li>We deduct $100 from your balance and send Mary 100 Constant.</li>\n          <li>Mary receives 100 Constant and her balance increases by $100.</li>\n          <li>Mary withdraws $100 and we deduct $100 from her balance.</li>\n        </ul>\n      ",
-            "question5": "Are transfers safe?",
-            "answer5": "\n        <p>Yes – very safe. First, transfers take place on the blockchain, an immutable public ledger that’s extremely tough to hack. It’s virtually impossible to make fraudulent changes without getting noticed since transactions are collectively validated by the network. Even if your money went astray, it would be easy to trace.</p>\n        <br />\n        <p>Second, the blockchain is always on. There is no risk of downtime and no way for your money to get lost. It either reaches the recipient or stays in your account. Nevertheless, both your and the recipient’s Constant account are both FDIC-insured to $5,000,000. So were the worst to happen, we’ve got you covered.</p>\n      ",
-            "question6": "Does the recipient need a Constant account to receive funds?",
-            "answer6": "<p>To receive funds, your recipient needs either a Constant account or a web wallet that supports ERC-20 tokens. That way they can either receive USD or our USD-backed stablecoin, both of which can be withdrawn as USD or local currency (if the recipient doesn’t have a USD bank account).</p>"
+            "question1": "Chuyển khoản bằng Constant mất bao lâu?",
+            "answer1": "<p>Gần như ngay lập tức và tối đa khoảng 30 giây nếu vào giờ cao điểm.</p>",
+            "question2": "Phí chuyển khoản bằng Constant là bao nhiêu?",
+            "answer2": "<p>Hoàn toàn miễn phí.</p>",
+            "question3": "Có thể chuyển khoản bằng Constant tới đâu?",
+            "answer3": "<p>Chuyển khoản bằng Constant có thể thực hiện mọi nơi mọi lúc.</p>",
+            "question4": "Cơ chế chuyển khoản bằng Constant?",
+            "answer4": "\n<p>Constant ứng dụng công nghệ chuỗi khối để chuyển khoản nhanh chóng, dễ dàng mà hoàn toàn miễn phí.</p>\n<br />\n<p>Thực tế, bạn không thực hiện chuyển tiền mà chuyển Constant. Constant là một stable token ứng dụng công nghệ chuỗi khối nên có thể được chuyển tới bất kì ai ở trên thế giới một cách nhanh chóng, an toàn mà hoàn toàn miễn phí.</p>\n<br />\n<p>Khi người nhận nhận được Constant, họ có thể rút Constant về tài khoản ngân hàng bất cứ lúc nào.</p>\n<p>Ví dụ:</p>\n<ul>\n<li>Bạn muốn gửi cho Mary 100 USD.</li>\n<li>Chúng tôi chuyển 100 USD của bạn sang 100 Constant.</li>\n<li>Mary nhận được 100 Constant và số dư tăng thêm 100 USD.</li>\n<li>Mary rút 100 USD này ra.</li>\n</ul>      ",
+            "question5": "Chuyển khoản bằng Constant có an toàn không?",
+            "answer5": "\n<p>Rất an toàn. Đầu tiên, các giao dịch được thực hiện trên chuỗi khối vốn là một hệ thống mạng rất khó bị can thiệp. Trên chuỗi khối, tất cả các giao dịch đều được xác nhận bởi hệ thống nên không thể có gian lận. Kể cả khi tiền của bạn biến mất, cũng sẽ dễ dàng lần được theo dấu vết.</p>\n<br />\n<p>Thứ hai, chuỗi khối luôn luôn hoạt động. Hoàn toàn không có rủi ro tiền của bạn sẽ biến mất. Constant chỉ hoặc đã được gửi đến người n</p>hận thành công hoặc vẫn đang ở trong tài khoản của bạn. Cả tài khoản của bạn lẫn tài khoản người nhận đều được FDIC bảo hiểm tối đa lên đến 5,000,000 USD. Nên chuyển khoản với Constant tuyệt đối yên tâm.</p>      ",
+            "question6": "Người nhận có cần phải có tài khoản Constant không?",
+            "answer6": "<p>Để nhận được chuyển khoản, người nhận cần phải có hoặc tài khoản Constant (để nhận bằng USD) hoặc địa chỉ ví chứa ERC-20 tokens (để nhận stable token). Cách nào thì người nhận cũng có thể rút tiền về tài khoản ngân hàng bất cứ lúc nào.</p>"
         },
         "account": {
             "question1": "Tôi có thể mở tài khoản Constant ở nước mình được không?",
@@ -1830,40 +1830,40 @@
             "answer4": "Sau khi đăng nhập, bạn vào phần \"Khoản đầu tư của tôi\". Bạn có thể xem lợi nhuận của mình ở góc trên bên phải của màn hình.",
             "question5": "Điều gì sẽ xảy ra khi khoản đầu tư thử nghiệm đáo hạn?",
             "answer5": "Khi đáo hạn, bạn sẽ được nhận toàn bộ phần lãi từ khoản đầu tư thử nghiệm (trong trường hợp phần lãi hoàn toàn chưa được rút) và 1,000 USD sẽ được trả lại cho Constant. Để tuân thủ các quy định của pháp luật và bảo vệ khách hàng khỏi nguy cơ lừa đào, bạn cần phải thực hiện xác minh danh tính trước khi bạn có thể rút phần lãi về tài khoản ngân hàng.",
-            "question6": "Can I invest more in the initial investment promotion?",
+            "question6": "Tôi có thể đầu tư thêm vào khoản đầu tư thử nghiệm được không?",
             "answer6": "Bạn không thể đầu tư thêm vào khoản đầu tư thử nghiệm nhưng bạn hoàn toàn có thể thực hiện một khoản đầu tư khác bất cứ lúc nào.",
             "question7": "Tôi có thể chọn kì hạn khác nhau cho những khoản đầu tư khác nhau?",
-            "answer7": "Absolutely! Participation in the initial investment promotion is separate from your other Investment Plans, so you can choose the amounts and terms for your other investments."
+            "answer7": "Không. Khoản đầu tư thử nghiệm là một khoản đầu tư hoàn toàn riêng biệt mà bạn không thể đầu tư thêm. Nếu muốn đầu tư thêm, bạn hoàn toàn có thể thực hiện một khoản đầu tư khác, hoàn toàn không giới hạn về số khoản đầu tư."
         },
         "invest": {
             "question1": "Đầu tư với Constant là làm gì?",
-            "answer1": "Our Investment Plans are simple, low-risk, and effective ways to grow your money. You choose a commitment period, invest your money, and at the end of the period you get your money back plus earned investment income. It really is as simple as that.",
+            "answer1": "Đầu tư với Constant rất đơn giản, an toàn và hiệu quả. Bạn chỉ cần gửi số tiền mình muốn đầu tư với kì hạn và mức lãi suất thích hợp rồi để đấy. Ngay khi đáo hạn, bạn sẽ nhận lại được toàn bộ số tiền đầu tư của mình cộng thêm phần lãi tính theo mức lãi suất bạn đã chọn. Rất đơn giản!",
             "question2": "Làm thế nào để đầu tư với Constant?",
-            "answer2": "\n        <p>Under the “INVEST” tab on our website, you’ll be able to choose from several different Investment Plans. Each one is designed to maintain the value of your principal investment and pay you daily investment income.</p>\n        <br />\n        <p>To maintain the value of your principal, we send your money to the Constant Vault where it’s protected by US law and insured to $5,000,000. Over time, your Constant earns investment income which you can withdraw as you earn (daily) or save until the end of your commitment period.</p>\n        <br />\n        <p>Of course, you don’t have to withdraw your principal and investment income. You can transfer your money abroad, leave it locked to the USD for stability, or simply reinvest in another Investment Plan to earn even more interest. The choice is yours!</p>\n      ",
+            "answer2": "\n<p>Ở mục \"Đầu tư\" trên ở trên website Constant, bạn có thể chọn nhiều kì hạn đầu tư khác nhau với mức lãi suất khác nhau. Lãi suất sẽ được trả về hàng ngày.</p>\n<br />\n<p>Để bảo vệ nhà đầu tư, các khoản đầu tư được gửi vào quỹ tín thác Constant được bảo hộ bởi pháp luật Hoa Kì và được bảo hiểm lên tới 5,000,000 USD.</p>\n<br />\n<p>Lãi suất đầu tư của Constant được trả hàng ngày, bạn có thể tái đầu tư để kiếm thêm lợi nhuận, thực hiện chuyển khoản quốc tế, hay chỉ đơn giản bảo vệ giá trị tài sản khỏi lạm phát và mất giá. Lựa chọn là của bạn!</p>      ",
             "question3": "Làm thế nào để giảm thiểu rủi ro cho khoản đầu tư?",
-            "answer3": "Your principal is securely held in the Constant Vault, which is overseen by an accredited US financial institution called Prime Trust. Your investment is FDIC-insured to $250,000. You can read more about the Constant Vault on <a href=\"https://medium.com/@constantmoney\" target=\"_blank\">our blog</a>",
+            "answer3": "Khoản đầu tư của bạn được giữ trong quỹ Constant, được giám sát bởi một tổ chức giám sát tài chính độc lập có uy tín của Mỹ là Prime Trust và được bảo hiểm 250,000 USD bởi FDIC. Bạn có thể đọc thêm về quỹ Constant trên <a href=\"https://medium.com/@constantmoney\" target=\"_blank\">blog</a> của chúng tôi",
             "question4": "Constant hỗ trợ những loại tiền tệ nào?",
-            "answer4": "We accept any currency sent to our US-based Constant Vault bank account. It is then converted to USD and stored in the FDIC-insured Vault.",
+            "answer4": "Constant hỗ trợ moi đơn vị tiền tệ được chuyển khoản tới quỹ Constant. Tại đây, khoản tiền của bạn sẽ được đổi sang USD và lưu trữ trong quỹ Constant được bảo hiểm bởi FDIC.",
             "question5": "Constant có hỗ trợ tiền mã hoá không?",
             "answer5": "Hiện tại thì Constant không hỗ trợ tiền mã hoá.",
             "question6": "Tôi có thể rút vốn của mình về bất cứ lúc nào không?",
-            "answer6": "\n        <p>To give you the best guaranteed returns, we hold on to your principal for the duration of your commitment period. Think of your principal as a seed that we water and help grow. To do that, we need time, which is why we offer different Investment Plans so you can find the right one for you.</p>\n      ",
-            "question7": "Where is my investment stored?",
-            "answer7": "\n        <p>Your principal and investment income are stored inside the Constant Vault, which is regulated under US law and protected by $5,000,000 FDIC insurance (investments above $250,000 will be spread across different Vaults).</p>\n      ",
-            "question8": "Can I add to my Investment Plan during the term?",
-            "answer8": "\n        <p>You can’t add to an Investment Plan once it’s started, but there’s no limit on how many Investment Plans you can have. So if you’d like to invest more, simply open another Investment Plan and watch your money grow.</p>\n      ",
-            "question9": "What is the Constant Vault?",
-            "answer9": "The Constant Vault is a publicly-audited trust overseen and managed by Prime Trust, a US accredited financial institution. The Constant Vault is regulated in the US and insured by the FDIC to the value of $130,000,000 (a per account limit of $5,000,000 applies).",
-            "question10": "What is FDIC insurance?",
-            "answer10": "\n        <p>The Federal Deposit Insurance Corporation (FDIC) is a body set up by the US government to protect the integrity of the US financial system. It does this in a number of ways, including insuring deposits. You can <a href=\"https://www.fdic.gov/about/strategic/strategic/mission.html\" target=\"_blank\">read more about the FDIC on their website.</a></p>\n        <br />\n        <p>Your account is FDIC-insured to $5,000,000. We achieve this limit by spreading larger deposits over multiple bank accounts.</p>\n      "
+            "answer6": "\n<p>Để có thể chào mời lãi suất đầu tư hấp dẫn nhất, Constant sẽ giữ khoản đầu tư của bạn cho đến hết kì hạn đầu tư. Hãy cứ nghĩ khoản đầu tư của bạn là một hạt giống cần được chăm sóc để có thể nảy nở ra lợi nhuận. Constant là nước và dưỡng chất để hạt giống đó có thể phát triển khoẻ mạnh. Việc còn lại của bạn chỉ đơn giản là chọn kì hạn đầu tư phù hợp với kế hoạch tài chính cá nhân của mình.</p>      ",
+            "question7": "Khoản đầu tư của tôi được bảo vệ như thế nào?",
+            "answer7": "\n<p>Khoản đầu tư và lợi nhuận của bạn được giữ trong quỹ Constant, được bảo hộ bởi luật pháp Mỹ và được bảo hiểm lên tới 5,000,000 USD bởi FDIC (các khoản đầu tư trên 250,000 USD sẽ được giữ trong những quỹ Constant khác nhau).</p>      ",
+            "question8": "Tôi có thể đầu tư thêm tiền vào một khoản đầu tư có kì hạn của mình không?",
+            "answer8": "\n<p>Bạn không thể đầu tư thêm tiền vào sau khi khoản đầu tư có kì hạn đã bắt đầu. Tuy nhiên, không có giới hạn số khoản đầu tư bạn có thể thực hiện. Nếu như bạn muốn đầu tư nhiều hơn, hãy tạo thêm một khoản đầu tư khác và quan sát lợi nhuận của mình tăng lên mỗi ngày.</p>      ",
+            "question9": "Quỹ tín thác Constant là gì?",
+            "answer9": "Quỹ Constant là một quỹ tín thác được kiểm toán và kiểm soát bởi Prime Trust - một tổ chức giám sát tài chính độc lập có uy tín của Mỹ. Quỹ Constant được bảo hộ bởi pháp luật Mỹ và được bảo hiểm bởi FDIC lên tới 130,000,000 USD (mỗi tài khoản được bảo hiểm tối đa 5,000,000 USD).",
+            "question10": "Bảo hiểm của FDIC là gì?",
+            "answer10": "\n<p>Công ty Bảo hiểm Ký thác Liên bang Hoa Kỳ (FDIC) là một tổ chức được điều hành bởi chính phủ Hoa Kỳ để bảo đảm sự minh bạch của hệ thống tài chính Hoa Kỳ. FDIC thực hiện rất nhiều hoạt động, trong đó có bảo hiểm tiền gửi. Quỹ Constant được FDIC bảo hiểm lên tới 130,000,000 USD. Bạn có thể đọc thêm về FDIC <a href=\"https://www.fdic.gov/about/strategic/strategic/mission.html\" target=\"_blank\">ở đây</a>.</p>      \n<br />\n<p>Mỗi tài khoản được FDIC bảo hiểm tối đa lên tới 5,000,000 USD.</p>      "
         },
         "returns": {
             "question1": "Lãi suất được trả như thế nào?",
             "answer1": "Chúng tôi trả lãi mỗi ngày. Bạn có thể chọn rút lãi vào cuối kì hoặc bất cứ lúc nào bạn muốn. Lãi này sẽ không tính gộp vào tiền gốc.",
             "question2": "Lãi suất ngày được tính như thế nào?",
-            "answer2": "Your rate of return is calculated by applying the percentage rate of your Investment Plan to the amount of your principal, and then dividing it by 365 to get a daily rate. Your returns are not compounded, so if you invest $500 for one year at a rate of 8%, you would earn $40 investment income at the end of your commitment period (about $0.11 per day).",
+            "answer2": "Phần lãi suất bạn nhận được hàng ngày được tính bằng cách nhân số tiền bạn gửi với phần trăm lãi suất theo kì hạn mà bạn chọn rồi chia cho 365. Lãi suất không được cộng dồn. Ví dụ, nếu bạn gửi 500 USD với kì hạn 1 năm, lãi suất 8%, bạn sẽ nhận được 40 USD khi đáo hạn và lãi trả về hàng ngày khoảng 0.11 USD.",
             "question3": "Kiểm tra lợi nhuận như thế nào?",
-            "answer3": "Just log into your account and click My Investments. You’ll see your total earned investment income on the top right of the dashboard.",
+            "answer3": "Sau khi đăng nhập, bạn vào phần \"Các khoản đầu tư\". Bạn có thể xem lợi nhuận của mình ở góc trên bên phải của màn hình.",
             "question4": "Trong tương lai lãi suất có thể tăng lên không?",
             "answer4": "\n<p>Trong tương lai chuyện gì cũng có thể xảy ra ;-)</p>\n<br />\n<p>Constant tiếp tục phát triển, và chúng tôi sẽ tiếp tục cải thiện hiệu quả làm việc để có thể giúp khách hàng kiếm được nhiều lợi nhuận hơn nữa trên mỗi khoản đầu tư của mình.</p>      ",
             "question5": "Làm thế nào Constant có thể đảm bảo lãi suất cao như thế mà hoàn toàn không có rủi ro?",
@@ -1871,9 +1871,9 @@
         },
         "general": {
             "question1": "Constant là gì?",
-            "answer1": "\n        <p>Constant is a financial services platform that helps you do more with your money. From investments to loans, our financial services leverage the best of blockchain tech to put you first, helping you achieve economic freedom.</p>\n        <br />\n        <p>We’ve thrown out credit scoring, paperwork, and fees to give you more of what you deserve – industry-leading rates, risk-free loans, a stable, state-less currency, and free international transfers.</p>\n        <br />\n        <p>Available all day, every day, anywhere in the world.</p>\n      ",
+            "answer1": "\n<p>Constant là dịch vụ tài chính giúp bạn sử dụng đồng tiền hiệu quả hơn. Từ đầu tư tới vay vốn, Constant tận dụng tối đa sự phát triển của công nghệ chuỗi khối để giúp khách hàng giải quyết nhu cầu tài chính một cách tốt nhất.</p>\n<br />\n<p>Constant giảm thiểu chi phí tối đa để khách hàng có thể đầu tư an toàn với lãi suất hấp dẫn nhất, vay tiền nhanh chóng dễ dàng, bảo vệ giá trị tài sản cũng như chuyển khoản quốc tế miễn phí.</p>\n<br />\n<p>Constant luôn sẵn sàng phục vụ. Bất cứ lúc nào. Bất kì nơi đâu.</p>      ",
             "question2": "Constant có phải là ngân hàng không?",
-            "answer2": "\n        <p>No. Constant is even better.</p>\n        <br />\n        <p>We’re 100% digital and open 24-7, so no queuing at bank branches, and no bank holidays.</p>\n        <br />\n        <p>Our Investment Plans earn you up to 60x more investment income than a typical savings account pays in interest. And our Crypto Loans offer some of the lowest interest rates on the market.</p>\n        <br />\n        <p>We don’t run credit checks, we don’t give you reams of paperwork to sign, and we are open to anyone, anywhere.</p>\n      ",
+            "answer2": "\n<p>Constant thậm chí còn tuyệt vời hơn thế.</p>\n<br />\n<p>Constant được số hoá 100% và có khả năng phục vụ 24/7.</p>\n<br />\n<p>Lãi suất đầu tư của Constant hấp dẫn hơn rất nhiều lần so với những dịch vụ đầu tư khác, tối đa lên tới 14%/năm tính trên USD trong khi lãi suất vay thế chấp cũng rất ưu đãi, chỉ từ 2-5%/năm. </p>\n<br />\n<p>Không yêu cầu lịch sử tín dụng và cũng không đưa cho bạn một xấp giấy tờ phải kí, Constant luôn sẵn sàng phục vụ mọi khách hàng ở khắp nơi trên thế giới.</p>      ",
             "question3": "Constant có hợp pháp không?",
             "answer3": "Có. Khoản đầu tư của bạn được giữ an toàn trong quỹ tín thác của chúng tôi, được bảo hộ bởi luật pháp Hoa Kỳ. Đây cũng là lí do bạn được yêu cầu thực hiện xác minh danh tính để có thể rút lãi về tài khoản ngân hàng của mình.",
             "question4": "Constant kiếm tiền bằng cách nào?",
@@ -1893,8 +1893,8 @@
         "s5": "Trả Lại"
     },
     "exchangeInputBuyForm": {
-        "minUsdRequired": "Please enter an amount larger than 0.01 USD",
-        "minVndRequired": "Please enter an amount larger than 10,000 VND",
+        "minUsdRequired": "Xin vui lòng nhập số lớn hơn 0.01 USD",
+        "minVndRequired": "Xin vui lòng nhập số lớn hơn 10,000 VNĐ",
         "fiatAmountInputLabel": "Số tiền gửi",
         "currencyDropdownLabel": "Đơn vị tiền tệ",
         "amountResultLabel": "Theo tỉ giá ngày hôm nay, tương đương với:",
@@ -1910,8 +1910,8 @@
         "termLabel": "Chọn kế hoạch đầu tư"
     },
     "exchangeInputDepositForm": {
-        "minUsdRequired": "Please enter an amount larger than 0.01 USD",
-        "minVndRequired": "Please enter an amount larger than 10,000 VND",
+        "minUsdRequired": "Xin vui lòng nhập số lớn hơn 0.01 USD",
+        "minVndRequired": "Xin vui lòng nhập số lớn hơn 10,000 VNĐ",
         "fiatAmountInputLabel": "Số tiền gửi",
         "currencyDropdownLabel": "Đơn vị tiền tệ",
         "amountResultLabel": "Theo tỉ giá ngày hôm nay, tương đương với:",
@@ -1930,10 +1930,10 @@
     },
     "exchangeInputSellForm": {
         "amountResult": {
-            "amountToWithdraw": "Amount to withdraw: {amount} {currency}",
-            "fee": "Withdrawal fee: {fee} {currency}",
-            "fiatAmountResultLabel": "According to the markets today, you’ll receive: {fiatAmount} {fiatCurrency}",
-            "explain": "* The maximum you can withdraw is {amountExcludeFee} {currency}, so you have enough to cover the withdrawal fee."
+            "amountToWithdraw": "Rút tiền: {amount}{currency}",
+            "fee": "Phí rút tiền: {fee}{currency}",
+            "fiatAmountResultLabel": "Theo tỉ giá thị trường hôm nay, bạn sẽ nhận được: {fiatAmount}{fiatCurrency}",
+            "explain": "*Tính cả phí rút tiền, bạn có thể rút tối đa {amountExcludeFee}{currency}."
         },
         "currencyDropdownLabel": "Đơn vị tiền tệ",
         "sellBtn": "RÚT TIỀN",
@@ -1945,7 +1945,7 @@
         "whichCurrencyYouWant": "Bạn muốn nhận đơn vị tiền tệ nào?"
     },
     "exchangeInputBuyTrialForm": {
-        "title": "<h6>We’re giving you a 1000 USD free initial investment. Just so you can see how it works. At the end of the trial, you keep all the returns.</h6>",
+        "title": "<h6>Chúng tôi tặng bạn một khoản đầu tư thử nghiệm miễn phí trị giá 1,000 USD để bạn hiểu hơn về Constant. Khi đáo hạn, bạn được giữ toàn bộ phần lãi.</h6>",
         "highlightText": "bạn giữ toàn bộ phần lãi.",
         "trialLeft": "Chỉ còn {number} lần trải nghiệm dịch vụ miễn phí.",
         "noMoreTrialLeft": "Không còn trải nghiệm dịch vụ miễn phí.",
@@ -1989,7 +1989,7 @@
     },
     "saving": {
         "trialLeftNum": "CHỈ CÒN {trialLeft} LẦN TRẢI NGHIỆM MIỄN PHÍ",
-        "title": "<h1><span>Invest</span> the way you want.</h1>",
+        "title": "<h1><span>Hãy đầu tư</span>theo cách của bạn.</h1>",
         "subTitle": "Constant - nền tảng kết nối nhà đầu tư và người cần vay thế chấp đảm bảo khoản đầu tư liên tục sinh lãi và được bảo hiểm 100%. Bạn chỉ cần chọn kì hạn thích hợp, Constant sẽ giúp bạn đầu tư an toàn và thông minh.",
         "makeLocalOrderSuccess": "Lệnh của bạn được tạo thành công",
         "makeLocalOrderFailed": "Lệnh của bạn không được tạo thành công",
@@ -2027,8 +2027,8 @@
         }
     },
     "deposit": {
-        "title": "Your global USD bank account.",
-        "availableInVn": "Available now in Vietnam.",
+        "title": "Tài khoản USD quốc tế.",
+        "availableInVn": "Đã có mặt tại Việt Nam.",
         "subTitle": {
             "sub1": "Giữ tiền bằng USD có lợi hơn nhiều VNĐ. Chuyển khoản hoàn toàn miễn phí tới bất cứ đâu trên thế giới. Hoàn toàn miễn phí.",
             "sub2": "Tài khoản của bạn được bảo trợ bởi chính phủ Hoa Kỳ và được bảo hiểm bởi Công ty Bảo hiểm Ký thác Liên Bang Hoa Kỳ (FDIC). Từ khi được thành lập vào năm 1933, FDIC chưa từng một lần làm mất tiền. {learnMore}",
@@ -2070,16 +2070,16 @@
         "stories": {
             "quote0": "Great user experience. It's always fun watching my savings grow, and super convenient that I can withdraw it anytime. A nice zero-risk companion to your other investments, and a decent enough investment in itself.",
             "author0": "Carlos",
-            "title0": "Father of three, saving for a rainy day",
+            "title0": "Có ba con nhỏ, cần tiết kiệm để lo cho các con",
             "quote1": "Love that there's no minimum deposit required so anyone can benefit from their rates. Feel much safer (and smarter) keeping the tips I make with Constant instead of in a box under my bed!",
             "author1": "Kate",
-            "title1": "Student, being smarter with her money",
+            "title1": "Sinh viên, là một người tiêu dùng thông minh",
             "quote2": "I used to save USD in my local bank account in Vietnam and earn no interest.  Now I can save and grow my money in USD, in an account fully protected by the FDIC, which I didn't think was possible for foreigners like me.",
             "author2": "Binh",
-            "title2": "Business owner, looking for a more stable currency.",
-            "quote3": "The 'fringe' benefits are the best part - my friends and business partners in different countries can all get accounts easily, and you can transfer money between them for free. It's actually much more than just saving.",
+            "title2": "Chủ doanh nghiệp, cần một đồng tiền không mất giá.",
+            "quote3": "Những tiện ích phụ của Constant hấp dẫn tôi nhiều hơn là lãi suất đầu tư hay vay thế chấp. Là một doanh nhân, Constant giúp tôi rất nhiều trong việc chuyển khoản quốc tế đến các đối tác. Gần như ngay lập tức và không mất phí. Tiện ích này có giá trị hơn nhiều một khoản đầu tư.",
             "author3": "Veronica",
-            "title3": "Freelancer, citizen of the world"
+            "title3": "Nghề nghiệp tự do, một công dân toàn cầu"
         }
     },
     "yourSaving": {
@@ -2153,59 +2153,59 @@
     },
     "newHome": {
         "banner": {
-            "title": "Like your bank, but better.",
-            "subTitle": "Welcome to better saving, borrowing, and making the most of your money. Open to anyone in the world with an internet connection.",
-            "cta": "Open an account",
-            "ctaDesc": "\n        It’s free to open an account. \n        <br />\n        Available locations: World."
+            "title": "Ưu việt hơn ngân hàng.",
+            "subTitle": "Chào mừng bạn đến với một trong những dịch vụ tài chính tốt nhất trên thế giới. Chỉ cần Internet, Constant luôn sẵn sàng phục vụ tất cả mọi người trên thế giới.",
+            "cta": "Đăng kí tài khoản",
+            "ctaDesc": "\nMở tài khoản miễn phí. \n        <br />\n        Trên toàn thế giới."
         },
         "subjects": {
             "banking": {
-                "title": "Borderless banking.",
+                "title": "Ngân hàng không biên giới.",
                 "desc1": {
-                    "title": "Your global USD bank account.",
-                    "desc": "Bank in USD instead of unstable, landlocked currencies. Protect the value of your savings."
+                    "title": "Tài khoản USD quốc tế.",
+                    "desc": "Giữ tiền trong tài khoản USD bảo vệ giá trị đồng tiền của bạn tốt hơn nhiều so với tài khoản VNĐ."
                 },
                 "desc2": {
-                    "title": "Send money home or do business with the world.",
-                    "desc": "Move money across the world in minutes. No matter how much you send - or how often - it won’t cost you a cent."
+                    "title": "Thực hiện chuyển khoản quốc tế.",
+                    "desc": "Chuyển khoản quốc tế. Ngay lập tức. Không giới hạn số lượng số lần. Hoàn toàn miễn phí."
                 },
                 "desc3": {
-                    "title": "Withdraw in any currency.",
-                    "desc": "Constant works with your local banking system, so that your USD funds can be withdrawn in local currency at any time."
+                    "title": "Rút tiền về tài khoản ngân hàng.",
+                    "desc": "Constant liên kết với các ngân hàng Việt Nam để bạn có thể rút tiền về tài khoản bất cứ lúc nào."
                 },
-                "link": "Open an account"
+                "link": "Đăng kí tài khoản"
             },
             "invest": {
-                "title": "Invest the way you want.",
+                "title": "Hãy đầu tư theo cách của bạn.",
                 "desc1": {
-                    "title": "8% annual returns.",
-                    "desc": "Don’t sit on your money. Put it to work."
+                    "title": "Lãi 8%/năm.",
+                    "desc": "Đừng để có tiền nhãn rồi. Hãy liên tục đầu tư."
                 },
                 "desc2": {
-                    "title": "Returns paid out daily. Withdraw anytime.",
-                    "desc": "We’re proud of our rates, and we don’t want you to have to wait to enjoy them."
+                    "title": "Lãi trả hàng ngày. Rút lãi về lúc nào cũng được.",
+                    "desc": "Đầu tư an toàn lãi suất cao. Bạn đã sẵn sàng chưa?"
                 },
                 "desc3": {
-                    "title": "Secure your returns with secured loans.",
-                    "desc": "Your money is invested only in secured, over-collateralized loans. 150% risk-free."
+                    "title": "Đảm bảo lợi nhuận đầu tư bằng cách cho vay thế chấp.",
+                    "desc": "Khoản đầu tư của bạn được dùng để cho vay thế chấp. Giá trị thế chấp bằng 150% giá trị cần vay nên rất an toàn và gần như không có rủi ro."
                 },
-                "link": "Get a free initial investment"
+                "link": "Đầu tư thử nghiệm miễn phí"
             },
             "borrow": {
-                "title": "Borrow money at the kindest rates on the market.",
+                "title": "Vay thế chấp với lãi suất thấp nhất thị trường.",
                 "desc1": {
-                    "title": "2% APR.",
-                    "desc": "Put down crypto as collateral and secure USD. Borrow as much as you want, take as long as you need, then get your assets back when you repay."
+                    "title": "2%/năm.",
+                    "desc": "Thế chấp tiền mã hoá để nhận ngay USD. Không giới hạn số lượng. Thời hạn vay linh động. Nhận ngay lại phần tài sản thế chấp sau khi hoàn trả đúng hạn."
                 },
                 "desc2": {
-                    "title": "Instant approval.",
-                    "desc": "No lengthy processing times. The money you need is in your account within minutes."
+                    "title": "Xét duyệt ngay lập tức.",
+                    "desc": "Chỉ vài phút là bạn nhận được tiền. Không phải chờ đợi."
                 },
                 "desc3": {
-                    "title": "Inclusive.",
-                    "desc": "Constant is for everyone. No credit scoring, background checks or month-long waiting games for approval."
+                    "title": "Dễ dàng và thuận tiện.",
+                    "desc": "Constant tạo điều kiện tốt nhất cho người đi vay. Không cần điểm tín dụng, không kiểm tra lịch sử tín dụng và không mất thời gian chờ đợi cả tháng trời để được duyệt cho vay."
                 },
-                "link": "Get cash for your crypto"
+                "link": "Vay thế chấp nhận tiền liền tay"
             }
         }
     }

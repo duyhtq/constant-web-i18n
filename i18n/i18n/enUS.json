@@ -11,7 +11,7 @@
             "home": "Home"
         },
         "common": {
-            "error": "Something's not right. Please try again.",
+            "error": "OH! something went wrong!",
             "required": "Required",
             "copied": "Copied",
             "remove": "Remove",
@@ -75,8 +75,8 @@
         "getSocial": "Social Media",
         "titleFoundation": "Foundation",
         "titleConstant": "Buy Constant",
-        "career": "Careers",
-        "about": "About",
+        "career": "Career",
+        "about": "About Us",
         "openSource": "Open Source",
         "foundation": "Foundation",
         "buyConstant": "Buy Constant",
@@ -110,10 +110,10 @@
         "cesText": "Got a CES2019 giveaway code?",
         "cesLink": "Claim your 1 FREE Constant now!",
         "referral": "Give 5 USD, Get 5 USD",
-        "promotionPrograms": "Promotion Program",
+        "promotionPrograms": "Promotion Programs",
         "contactUs": "Contact Us",
-        "aboutUs": "About",
-        "faq": "FAQs",
+        "aboutUs": "About Us",
+        "faq": "FAQ",
         "affiliate": "Affiliate",
         "wallet": "Wallet",
         "walletOrder": "Balance and Transactions",
@@ -188,43 +188,43 @@
             "registerPasswordNotMatch": "Please make sure your password matches your email address.",
             "notKycUser": "Please complete the KYC process to buy direct from the network.",
             "transferUserNotFound": "Please enter a valid wallet address.",
-            "userInfoInvalidKycPreValidate": "We could not verify your identity using the information you uploaded. Please try again.",
+            "userInfoInvalidKycPreValidate": "We could not verify you with the information you uploaded. Please try again.",
             "cannotTransferToYourSelf": "Please enter a recipient other than yourself.",
             "invalidUserType": "Oops we can't find you. Please enter your email address again.",
             "emailDoesntExist": "Oops we can't find you. Please enter your email address again.",
-            "needToSignIn": "Please sign in to start saving with Constant.",
-            "not_enough_balance": "Please deposit enough Constant to continue.",
-            "createdBankExisted": "You have already saved this bank account. Please try another.",
+            "needToSignIn": "You need to sign in to complete this process",
+            "not_enough_balance": "Your balance is not enough",
+            "createdBankExisted": "Bank account has existed already!",
             "trial_term_deposit_not_available": "The Constant introductory trial is only available to new users .",
             "not_pro_saving_user": "Sorry, we can only offer services in the USA to SEC accredited investors."
         }
     },
     "errorCode": {
-        "3000": "Please deposit enough Constant to continue.",
+        "3000": "Your Constant balance is not enough to create this order",
         "3001": "Cannot cancel this order id",
         "3002": "Type should be sell/Buy",
         "3003": "Cannot find exchange rate",
         "3004": "Your Constant must be less or equal 2000",
-        "3005": "Please enter a price larger than 0.",
+        "3005": "Your price must be large than 0",
         "3006": "Your price doesn't match with your list",
         "3007": "Please double check status of your order",
         "3008": "Please double check order type",
         "3009": "You are not owner of this order id",
-        "3010": "Sorry, you can't buy from yourself. / Sorry, you can't sell to yourself.",
+        "3010": "You cannot Buy/Sell with yourself",
         "3011": "Please check your Constant",
-        "3012": "Please enter a the name of an existing bank.",
-        "3013": "Please enter a valid bank account number.",
-        "3014": "Please enter a valid routing number or swift code.",
-        "3015": "Please enter a valid bank account number.",
+        "3012": "Please check your bank account name",
+        "3013": "Please check your bank account number",
+        "3014": "Please check your routing number or swift code",
+        "3015": "Please check your bank number",
         "3016": "You cannot approve this order. Please contact hello@constant.money for support",
         "3017": "You cannot finish this order. Please contact hello@constant.money for support",
-        "3018": "Transaction error",
-        "3019": "Please enter your bank account details to continue.",
-        "8000": "Sorry, something went wrong. Please try again.",
-        "8001": "Please make sure your file name comprises only letters and numbers.",
-        "8002": "Please make sure the size of your file is less than 1.2 MB.",
-        "8003": "Sorry, your file type is not supported.",
-        "8004": "Sorry, an error occurred during upload. Please try again."
+        "3018": "Transation Error",
+        "3019": "There is no bank info of user",
+        "8000": "invalid request",
+        "8001": "file invalid",
+        "8002": "invalid file size",
+        "8003": "invalid file type",
+        "8004": "submit file failed"
     },
     "form": {
         "required": "Required",
@@ -243,17 +243,17 @@
             "myOrders": "Deposits and withdrawals",
             "localHistory": "Transfers and interest earnings",
             "wallets": "My Wallets",
-            "changePassword": "Change my password",
+            "changePassword": "Change password",
             "preferecens": "Preferences",
             "accountLevel": "Account Level",
-            "history": "My orders",
+            "history": "History",
             "bankInfo": "Bank information",
-            "referral": "Give $5 Get $5",
+            "referral": "Referral",
             "personalInfo": "About you",
             "myTransactions": "Account activity",
             "yourInvest": "Your Invests",
             "myAgent": "My Agent",
-            "yourAccreditation": "Accreditation (USA only)",
+            "yourAccreditation": "Your Accreditation",
             "myLoans": "My Loans",
             "cryptoLoanHistory": "My Crypto Loans",
             "batchTransfer": "Batch Transfer",
@@ -305,7 +305,7 @@
             "detail": "Batch Transfers Detail"
         },
         "buyOrder": {
-            "title": "You have a buyer.",
+            "title": "Buy Order Available",
             "date": "Date",
             "value": "Value",
             "amount": "Amount",
@@ -360,7 +360,7 @@
             },
             "acceptFailed": {
                 "": "Picked booking order is failing, please try again, or contact my admin for help. \n Thanks! ",
-                "processing_order_exists": "There is processing order need to complete."
+                "processing_order_exists": "There is processing order need to complete"
             },
             "noData": "No sell order available",
             "confirm": {
@@ -412,9 +412,9 @@
             "yourInvest": "Your Invests"
         },
         "personalProfile": {
-            "title": "About you",
+            "title": "Personal Detail",
             "name": "Name",
-            "userName": "Alias",
+            "userName": "Nickname",
             "optional": "Optional",
             "fullName": "Full name",
             "email": "Email",
@@ -443,22 +443,22 @@
             "statusProcessing": "Your KYC information is being processed. We’ll notify you when you’re good to go.",
             "statusNeedVerifyEmail": "Please verify your email first",
             "statusPendding": "Your KYC information is invalid. Please check your email for instructions.",
-            "errorsInvalidKYC": "Sorry, the information you provided is not valid. Please try again.",
-            "errorsMissParramKYC": "Please provide sufficient information to verify your ID.",
-            "saveSuccess": "Your profile has been updated.",
-            "saveFailed": "Sorry, something went wrong. Please try again.",
+            "errorsInvalidKYC": "User info is invalid for KYC pre-validate",
+            "errorsMissParramKYC": "User info is not enough to verify KYC",
+            "saveSuccess": "Your profile was updated successfully",
+            "saveFailed": "Failed while updating your profile, please try again",
             "addressInfo": "Your address and ID information should match the information in the uploaded image."
         },
         "accountInfo": {
             "title": "Your account details",
             "email": "Email",
-            "nickname": "Alias",
+            "nickname": "Nickname",
             "nickname_note": "This name will be shown in your preview",
             "language": "Language",
             "alert": {
-                "passwordFailed": "Sorry, something went wrong. Please try again.",
-                "success": "Your alias has been changed.",
-                "failed": "Sorry, something went wrong. Please try again."
+                "passwordFailed": "Update Password Failed",
+                "success": "Your nickname was changed successfully",
+                "failed": "Failed"
             },
             "emailNotVerified": "Please verify your email.",
             "verifyBtn": "Resend verification"
@@ -473,7 +473,7 @@
             "changeFailed": "Please make sure you have typed in your old password correctly"
         },
         "setting": {
-            "title": "Account Settings"
+            "title": "General Settings"
         },
         "referralInfo": {
             "title": "Referral Information",
@@ -514,7 +514,7 @@
             }
         },
         "history": {
-            "title": "My Orders",
+            "title": "Transaction History",
             "balance": "Total balance: {balance} CONSTANT",
             "date": "Date",
             "transactionID": "Transaction ID",
@@ -541,7 +541,7 @@
             "confirm": "confirm",
             "confirmMess": "Are you sure you want to confirm this order?",
             "close": "Close",
-            "detail": "Transaction Details",
+            "detail": "Transaction Detail",
             "extID": "External ID",
             "agent": {
                 "acceptSuccessfully": "Your picked order have been accepted successfully",
@@ -561,7 +561,7 @@
                 "2": "Coin minting",
                 "3": "Coin burning",
                 "4": "Transferring",
-                "5": "Converting",
+                "5": "Redeeming",
                 "6": "Cancelled",
                 "7": "Done",
                 "8": "Holding"
@@ -569,7 +569,7 @@
             "dialog": {
                 "cancel": {
                     "title": "Cancel Order",
-                    "body": "Are you sure you want to cancel?",
+                    "body": "Are you sure to cancel?",
                     "confirm": "Yes",
                     "cancel": "No"
                 }
@@ -582,8 +582,8 @@
                 "confirmSuccess": "Successfully Confirmed",
                 "acceptSuccess": "Successfully Accepted",
                 "confirmFailed": "Failed To Confirm",
-                "cancelSuccess": "Cancellation successful",
-                "cancelFailed": "Cancellation unsuccessful. Please try again."
+                "cancelSuccess": "Successfully Cancelled",
+                "cancelFailed": "Failed To Cancel"
             },
             "user": {
                 "fullName": "Full name",
@@ -600,14 +600,14 @@
             }
         },
         "accountLevel": {
-            "head_text": "Our verification process typically takes just a few minutes. Your information will remain 100% private.",
+            "head_text": "Our verification process typically takes just a few minutes. This may take slightly longer outside business hours. Your information will remain 100% private.",
             "step1": "Level 1 : Email Verification",
             "step2": "Level 2 : Phone Verification",
             "step3": "Level 3 : ID Card Verification",
             "step4": "Level 4 : Upload Photo Selfie",
-            "wrm1": "Trade up to {limit} {currency} a day.",
-            "wrm2": "Trade up to {limit} {currency} a day.",
-            "wrm3": "Trade up to {limit} {currency} a day.",
+            "wrm1": "Trade with a limit upto {limit} {currency} a day.",
+            "wrm2": "Trade with the top limit of {limit} {currency} a day.",
+            "wrm3": "Trade with the top limit of {limit} {currency} a day.",
             "wrm4": "Unlimited Amount.",
             "lv3desc": "To comply with relevant anti-money laundering (AML) and counter-terrorism financing (CTF) laws and regulations.",
             "fullName": "Full Name",
@@ -619,24 +619,24 @@
             "phoneCode": "Enter your code",
             "emailButton": "SEND",
             "backPhoto": "Back Photo",
-            "frontPhoto": "Front Facing Photo",
-            "selfiePhoto": "Profile Photo",
+            "frontPhoto": "Front Photo",
+            "selfiePhoto": "Your Selfie Photo",
             "submit": "Submit",
             "ok": "OK",
             "resend": "Resend",
             "alert": {
-                "lv2": "Congratulations! You're now Level 2 verified.",
-                "lv3": "Please wait while we confirm level 3 verification.",
-                "lv4": "Please wait while we confirm level 4 verification.",
-                "invalidPhone": "Please enter a valid phone number.",
+                "lv2": "Congratulation! Your level is upto level 2",
+                "lv3": "Your request upto level 3 is sent",
+                "lv4": "Your request upto level 4 is sent",
+                "invalidPhone": "Invalid Phone",
                 "sendPhoneCodeSuccess": "We sent the secret code to your phone.",
-                "sendEmailCodeSuccess": "We sent a verification code to your email.",
+                "sendEmailCodeSuccess": "We sent a verification code to your email",
                 "imageIdentifierRequired": "Back/Front Image is required",
-                "imageIdentifierPassportRequired": "Please upload the photo that corresponds to your ID.",
-                "imageSelfieRequired": "A selfie is required",
-                "overSMSLimit": "You've entered the wrong verification code 10 times already. Please use the last code sent to your phone to verify.",
-                "invalidCode": "Incorrect code – please try again",
-                "error": "Oops – something went wrong. Please try again"
+                "imageIdentifierPassportRequired": "Passport Photo is requied",
+                "imageSelfieRequired": "Image Selifie is required",
+                "overSMSLimit": "You entered wrong verification code 10 times already. Please use the last code sent to your phone to verify.",
+                "invalidCode": "Your code is incorrect, please try again!",
+                "error": "OH! something went wrong! Please try again"
             },
             "levelStatus": {
                 "pending": "Pending",
@@ -646,8 +646,8 @@
             },
             "idTypes": {
                 "passport": "Passport",
-                "driver_license": "Driver's License",
-                "id_card": "Government-issued ID Card"
+                "driver_license": "Driver License",
+                "id_card": "Government ID Card"
             }
         },
         "bankInfo": {
@@ -660,7 +660,7 @@
             "btnUpdate": "Save",
             "btnRemove": "Delete",
             "title": "Bank Information",
-            "desc": "Enter your bank account details to unlock bigger referral earnings and faster transaction times.",
+            "desc": "Add your bank account details now to receive attractive commission from referral programs and faster payment",
             "bankName": "Bank Name",
             "action": "Action",
             "editActionLabel": "Edit",
@@ -678,21 +678,21 @@
             "bankAccountNameHolder": "Enter Bank Account Name",
             "bankAccountNumberHolder": "Enter Bank Account Number",
             "alert": {
-                "success": "Update successful!",
-                "failed": "Update unsuccessful. Please try again.",
-                "deleteSuccess": "Deleted",
-                "deleteFailed": "Delete unsuccessful. Please try again."
+                "success": "Successfully Updated",
+                "failed": "Failed To Update",
+                "deleteSuccess": "Successfully Deleted",
+                "deleteFailed": "Failed To Delete"
             },
             "dialog": {
                 "update": {
                     "title": "Confirm Update",
-                    "body": "Are you sure you want to update your bank details?",
+                    "body": "Are you sure to update?",
                     "confirm": "Yes",
                     "cancel": "No"
                 },
                 "delete": {
-                    "title": "Deleted",
-                    "body": "Are you sure you want to delete this?",
+                    "title": "Confirm Delete",
+                    "body": "Are you sure to delete?",
                     "confirm": "Yes",
                     "cancel": "No"
                 }
@@ -701,24 +701,24 @@
         "emailVerification": {
             "pleaseVerify": "Please verify your email to activate your account",
             "resent": "Resend email verification",
-            "sent": "Email sent.",
-            "sendCodeSuccess": "Please check your email inbox for the verification code.",
-            "sendCodeFailed": "Your verification code got lost on the way to your inbox. Please try again.",
-            "verifyFailed": "Sorry, something went wrong. Please verify your email again.",
+            "sent": "Sent email",
+            "sendCodeSuccess": "Verify code was sent successfully to your email, please check.",
+            "sendCodeFailed": "Failed while sending verify code, please try again!",
+            "verifyFailed": "Verify failed, please try again!",
             "verifySuccess": "Your email was verified successfully."
         },
         "phoneVerification": {
-            "sendCodeSuccess": "Please check your sms inbox for the verification code.",
-            "sendCodeFailed": "Sorry, something went wrong. Please resend your verification code.",
-            "verifyFailed": "Verification unsuccessful. Please try again.",
-            "verifySuccess": "Phone verification successful! "
+            "sendCodeSuccess": "Verify code was sent successfully to your phone, please check.",
+            "sendCodeFailed": "Failed while sending verify code, please try again!",
+            "verifyFailed": "Verify failed, please try again!",
+            "verifySuccess": "Your phone was verified successfully, now your level is Level 2"
         },
         "kycVerification": {
             "pleaseComplete": "Please complete the KYC process to buy direct from the network.",
             "complete": "Complete KYC",
-            "updatedSuccess": "Information updated",
+            "updatedSuccess": "Your information was updated successfully",
             "updatedFailed": "Failed while updating your information, please try again!",
-            "checkVerifyFailed": "Something went wrong, please try again."
+            "checkVerifyFailed": "Failed while checking your verify status"
         },
         "referDialog": {
             "labelShare": "Invite your friends to join Constant",
@@ -734,8 +734,8 @@
         "proSaving": {
             "listApplications": {
                 "totalInterestEarned": "You've already earned",
-                "noRecord": "No time like the present. Start saving now.",
-                "getListFailed": "Sorry, something went wrong. Please try again.",
+                "noRecord": "You have no invest",
+                "getListFailed": "Failed while getting your invests, please try again",
                 "amount": "Principal",
                 "interest": "Interest",
                 "apr": "APR",
@@ -744,7 +744,7 @@
                 "anyTimeAccount": "Anytime deposit",
                 "endTerm": "Investment matures: ",
                 "trial": "TRIAL",
-                "trial_description": "Your trial term has ended.",
+                "trial_description": "You keep the interest. Term has ended",
                 "saving_title": "Fixed Term Investments",
                 "anyTime_saving": "Flexible Account",
                 "interestInfo": {
@@ -791,7 +791,7 @@
                         "cancel": "Cancel",
                         "messageConfirm": "You are about to deposit {amount} Constant.",
                         "validateMaxAmountError": "Sorry, you don't have enough Constant to deposit this amount.",
-                        "validateMinAmountError": "Please deposit an amount larger than {amount} CONSTANT."
+                        "validateMinAmountError": "You can't input amount less than {amount} CONSTANT"
                     },
                     "checkTrialKyc": {
                         "messageConfirm": "For your security, please verify your identity before making a withdrawal from your Anytime Account.",
@@ -809,7 +809,7 @@
                 },
                 "alert": {
                     "depositSavingSuccess": "You successfully deposited Constant.",
-                    "depositSavingFailed": "Sorry, something went wrong. Please try again.",
+                    "depositSavingFailed": "Failed To Deposit Saving",
                     "batchTransferSuccess": "You successfully sent the batch file",
                     "batchTransferFailed": "Failed to sent the batch file",
                     "confirmBatchTransferSuccess": "Success",
@@ -831,14 +831,14 @@
                 "phone": "Phone",
                 "status": "Status",
                 "note": "Note",
-                "investMore": "Make another deposit."
+                "investMore": "Invest More"
             },
             "applicationDetail": {
-                "dueDays": "Due date",
-                "interestAmount": "Interest Earned",
-                "originalAmount": "Original Deposit",
+                "dueDays": "Due Days",
+                "interestAmount": "Interest Amount",
+                "originalAmount": "Original Amount",
                 "totalAmount": "Total Amount",
-                "paid": "Repaid",
+                "paid": "Paid",
                 "paidDate": "Paid Date",
                 "paidStatus": "Paid Status",
                 "payDate": "Pay Date",
@@ -900,14 +900,14 @@
             "requiredUsername": "Email is required",
             "notValidUsername": "Invalid email address",
             "submitButton": "Submit",
-            "resetPasswordIntro": "To reset your password, please follow the link sent to your email.",
+            "resetPasswordIntro": "We have sent a link to your email. Please follow the instruction to sign in with new password",
             "newPasswordTitle": "Enter a new password for your {email} account.",
             "password": "New password",
-            "requiredPassword": "Password required",
-            "notValidPassword": "Your password must be 8 characters or more",
-            "confirmPassword": "Enter your new password again",
-            "notValidConfirmPassword": "Passwords do not match. Please try again.",
-            "newPasswordIntro": "Your password has been changed",
+            "requiredPassword": "Password is required",
+            "notValidPassword": "Password must be 8 characters or more",
+            "confirmPassword": "Retype new password",
+            "notValidConfirmPassword": "Confirm password not match",
+            "newPasswordIntro": "Password of Constant account for {email} has been changed",
             "notRecoverPass": "I can’t recover my account using this page"
         },
         "updatePassword": {
@@ -926,26 +926,26 @@
             "giftCode": "Invitation code (optional)",
             "title": "Create your account",
             "firstName": "First name",
-            "requiredFirstName": "First name required",
+            "requiredFirstName": "First name is required",
             "placeholderFirstName": "Enter your first name",
             "lastName": "Last name",
             "placeholderLastName": "Enter your last name",
-            "requiredLastName": "Last name required",
-            "notValidFirstName": "First name must be greater than 3 and less than 30 characters, comprising a-z, 0-9, _, - (dash), and .(dot).\n",
-            "notValidLastName": "Last name must be greater than 3 and less than 30 characters, comprising a-z, 0-9, _, - (dash), and .(dot).\n",
+            "requiredLastName": "Last name is required",
+            "notValidFirstName": "First name must be greater than 3 and less than 30 characters, Allowed characters are a-z, 0-9, _, - (dash), and .(dot).",
+            "notValidLastName": "Last name must be greater than 3 and less than 30 characters, Allowed characters are a-z, 0-9, _, - (dash), and .(dot).",
             "email": "Your email",
-            "requiredEmail": "Email required",
-            "notValidEmail": "Please enter a valid email address.",
+            "requiredEmail": "Email is required",
+            "notValidEmail": "Invalid email address",
             "password": "Password",
-            "requiredPassword": "Password required",
-            "notValidPassword": "Your password must be 8 characters or more",
+            "requiredPassword": "Password is required",
+            "notValidPassword": "Password must be 8 characters or more",
             "placeholderPassword": "Enter your password",
             "confirmPassword": "Confirm password",
-            "notValidConfirmPassword": "Please make sure you have entered your password correctly",
+            "notValidConfirmPassword": "Confirm password not match",
             "placeholderConfirmPassword": "Enter confirm password",
             "country": "Country",
             "placeholderCountry": "Please select your country",
-            "requiredCountry": "Country required",
+            "requiredCountry": "Country is required",
             "notValidReCaptcha": "Please validate your reCAPTCHA.",
             "agreement": "I certify that I am 18 years of age or older, and I agree to the {action}",
             "requiredAgreement": "Please indicate that you have read and agree to the User Agreement and Privacy Policy",
@@ -953,32 +953,32 @@
             "loginButton": "Already have an account? Login",
             "registerSuccessfully": "Success! Welcome to Constant. We’ve sent a verification email to your inbox.",
             "agreementAction": "User Agreement and Privacy Policy.",
-            "registerFailed": "Sorry, something went wrong. Please try again."
+            "registerFailed": "Failed while creating your account, please try again"
         }
     },
     "landingPage": {
         "contactUS": {
             "title": "Contact Us",
             "yourName": "Your name",
-            "requiredYourName": "Please let us know your name.",
-            "placeholderYourName": "What is your name?",
-            "email": "Your email address",
-            "placeholderYourEmail": "Please enter your email address",
-            "requiredEmail": "Please enter your email to continue.",
-            "notValidEmail": "Please enter a valid email address.",
-            "phone": "Your phone number",
+            "requiredYourName": "Your name is required",
+            "placeholderYourName": "Enter your name",
+            "email": "Your email",
+            "placeholderYourEmail": "Enter your email",
+            "requiredEmail": "Your email is required",
+            "notValidEmail": "Invalid email address",
+            "phone": "Your phone",
             "placeholderPhone": "Enter your phone number",
             "description": "Your message",
-            "placeholderDescription": "Let us know what you're thinking.",
+            "placeholderDescription": "Enter your message",
             "requiredDescription": "Your message is required",
             "contactButton": "Submit",
-            "message": "Thank you! Your message has been sent. You should receive a response from one of our representatives soon.\n"
+            "message": "Thank you! Your message has been sent. You should receive a response from one of our representatives within 12-24 hours."
         }
     },
     "review": {
         "title": "Review",
         "label": {
-            "description": "We'd love to hear your thoughts.",
+            "description": "How is your experience with Constant?",
             "required": "Please enter your comments",
             "submitButtonTitle": "Submit",
             "loadMore": "Load more",
@@ -1034,8 +1034,8 @@
             "subintroTitle4": "Borderless. Zero fees.",
             "subintroDesc4": "Constant moves instantly from your account to anyone, anywhere in the world. For free.",
             "howItWorks": "How it works",
-            "backToNewOrder": "Place a new order",
-            "goHistory": "View your orders",
+            "backToNewOrder": "Place new order",
+            "goHistory": "Go to History",
             "components": {
                 "sellInfoInput": {
                     "continueBtn": "Continue",
@@ -1214,20 +1214,20 @@
             "subintroDesc3": "Constant keeps your savings secure and grows your money over time.",
             "subintroTitle4": "Borderless. Zero fees.",
             "subintroDesc4": "Constant moves instantly from your account to anyone, anywhere in the world. For free.",
-            "backToNewOrder": "Place a new order",
-            "goHistory": "View your orders",
+            "backToNewOrder": "Place new order",
+            "goHistory": "Go to History",
             "confirmOrderFailed": "Failed while confirm your order, please try again",
             "components": {
                 "sellInfoInput": {
                     "continueBtn": "Continue",
-                    "submitBtn": "Convert",
+                    "submitBtn": "Sell",
                     "close": "Close",
                     "agreeSell": "Agree to convert",
                     "confirmText": "You're converting {amount} {currency}",
                     "confirmSubText": "Please check your information again."
                 },
                 "orderInfo": {
-                    "buyTitle": "Buy order confirmed",
+                    "buyTitle": "Order Confirmation Buy Constant",
                     "sellTitle": "Order Confirmation Convert Constant",
                     "buyThankMsg": "Please wire {amount} to Constant Escrow to keep your money safe while the deal finalizes.",
                     "sellThankMsg": "You sent request convert {amount}. It could be take 30 minutes transfer to your bank account.",
@@ -1244,23 +1244,23 @@
                     }
                 },
                 "buy": {
-                    "purchaseFailed": "Your purchase did not go through, please try again.",
-                    "purchaseSuccessful": "Purchase successful!",
+                    "purchaseFailed": "Failed while purchasing, please try again",
+                    "purchaseSuccessful": "Your purchase was completed successfully",
                     "inputLabel": "BUY",
-                    "confirmBuyMsg": "Are you sure you want to buy {amount} {currency}?",
+                    "confirmBuyMsg": "Are you sure to buy {amount} {currency}?",
                     "submitLabel": "Buy {amount}",
                     "pleaseVerifyBtnLabel": "Verify your account",
-                    "pleaseVerifyBtnMsg": "Please verify your account to buy or convert Constant.",
-                    "pleaseSignInToBuy": "Log in to buy {amount} {currency}"
+                    "pleaseVerifyBtnMsg": "You need to verify your account to start buying/selling",
+                    "pleaseSignInToBuy": "Sign in to buy {amount} {currency}"
                 },
                 "sell": {
-                    "redeemSuccessful": "You successfully converted Constant to USD",
-                    "redeemFailed": "Your conversion didn't go through, please try again.",
+                    "redeemSuccessful": "Your selling was completed successfully",
+                    "redeemFailed": "Failed while selling, please try again",
                     "submitLabel": "GET {amount}",
                     "inputLabel": "CONVERT",
-                    "pleaseSignInToSell": "Log in to sell {amount} {currency}",
+                    "pleaseSignInToSell": " Sign in to sell {amount} {currency}",
                     "pleaseVerifyBtnLabel": "Verify your account",
-                    "pleaseVerifyBtnMsg": "Please verify your account to buy or convert Constant."
+                    "pleaseVerifyBtnMsg": "You need to verify your account to start buying/selling"
                 },
                 "sellBuySkeletonForm": {
                     "needToVerify": "You need to verify your account first to start buy/sell Constant"
@@ -1368,7 +1368,7 @@
             "subintroDesc2": "You can send any amount of Constant to anyone at anytime, for free.",
             "subintroTitle3": "Always reliable.",
             "subintroDesc3": "Unlike other digital currencies, Constant keeps a stable value. This means you can get the equivalent of 1 USD for 1 Constant. In any location, at any time.",
-            "backToNewOrder": "Place a new order",
+            "backToNewOrder": "Place new order",
             "goHistory": "Go to My Orders",
             "components": {
                 "orderInfo": {
@@ -1521,18 +1521,18 @@
         "userAgreement": "User Agreement",
         "privacyPolicy": "Privacy Policy",
         "promotionPrograms": "Promotion Programs",
-        "aboutUs": "About",
+        "aboutUs": "About Us",
         "faqs": "Frequently Asked Questions"
     },
     "components": {
         "userVerifyStatus": {
             "level1Pending": "To start trading, please take a few minutes to verify your account. {verify}",
-            "verifyBtn": "Please verify your account.",
+            "verifyBtn": "Verify now",
             "notLogin": "Please sign in to start trading.{action}",
-            "notLoginBtn": "Log in"
+            "notLoginBtn": "Sign In Now"
         },
         "confirmBtn": {
-            "defaultMsg": "Are you sure?",
+            "defaultMsg": "Please confirm",
             "defaultConfirmText": "Yes",
             "defaultDeclineText": "No",
             "defaultLabelText": "Confirm"
@@ -1540,27 +1540,27 @@
     },
     "promotion_programs": {
         "referral_program": {
-            "title": "Give $5 Get $5",
-            "description": "Both parties will instantly receive 100 HKD once the referred person buys or converts at least 1,000 HKD worth of Constant."
+            "title": "Referral Program",
+            "description": "Both referrer and referred person will instantly get 100 HKD as soon as referred person buys or sells crypto worth of at least 1,000 HKD on <strong>https://constant.money.</strong>"
         },
         "commission": {
             "title": "Commission",
-            "description": "Thanks for referring a friend! You will receive a commission of 0.2% on all their future transactions."
+            "description": "Referrers will forever receive 0.2% commission on every transactions made by referred people."
         },
-        "textRequireLogin": "Get your referral link to share and earn Constant. Sign in now to get your unique link.",
+        "textRequireLogin": "Get your referral link here and start earning with your friends. Sign In Now to get your referral code",
         "signInNow": "Sign in now"
     },
     "pageNotFound": {
-        "pageNotFound": "You took a wrong turn. See you back at Constant. [link to some page?]",
+        "pageNotFound": "Page not found",
         "descText": "Sorry we couldn't find what you were looking for.",
         "backHome": "Back to Home"
     },
     "pwaInstallRequest": {
-        "msg": "Add the Constant app to your home screen for easy access.",
+        "msg": "Add Constant app to access quickly from your home screen",
         "noBtn": "Later",
         "yesBtn": "Yes, thanks",
-        "addFailed": "Constant could not be added. Please try again later.",
-        "added": "Added! Now you can easily access the Constant mobile web app."
+        "addFailed": "Failed while adding app, please try later",
+        "added": "Nice! Next time you can access Constant quickly from the app."
     },
     "referralPage": {
         "title": "Multiply your investment earnings.",
@@ -1575,12 +1575,12 @@
             "item2": {
                 "title": "Make an investment of $1000 or more",
                 "description": "Choose a term and deposit funds via bank transfer.",
-                "bonusRate": "2.5"
+                "bonusRate": "0.5"
             },
             "item3": {
                 "title": "Refer up to 15 friends",
                 "description": "Get your friends involved, and get rewarded for each friend you bring on board.",
-                "additionalDesc": "Your referral link: ",
+                "additionalDesc": "Your referral link: <b>{link}</b>",
                 "bonusRate": "3"
             }
         },

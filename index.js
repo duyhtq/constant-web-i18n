@@ -149,7 +149,8 @@ function unparser() {
 
   const parsedName = {
     vi: 'vi',
-    en: 'en'
+    en: 'en',
+    'en-US': 'enUS'
   };
   handleDir(unzipDir);
   fs.createReadStream(zipFile)

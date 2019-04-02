@@ -106,7 +106,7 @@
         "save": "Invest",
         "borrow": "Borrow",
         "signIn": "Sign In",
-        "signUp": "Sign Up",
+        "signUp": "Get Started",
         "cesText": "Got a CES2019 giveaway code?",
         "cesLink": "Claim your 1 FREE Constant now!",
         "referral": "Give 5 USD, Get 5 USD",
@@ -138,7 +138,7 @@
         "login": "Login",
         "openAnAccount": "Open an account",
         "yourSaving": "My Accounts",
-        "myInvestments": "My Investments",
+        "myInvestments": "My Savings",
         "hoverMenu": {
             "deposit": {
                 "title": "Deposit",
@@ -251,7 +251,7 @@
             "referral": "Referral",
             "personalInfo": "About you",
             "myTransactions": "Account activity",
-            "yourInvest": "Your Invests",
+            "yourInvest": "Your Savings",
             "myAgent": "My Agent",
             "yourAccreditation": "Your Accreditation",
             "myLoans": "My Loans",
@@ -409,7 +409,7 @@
                 }
             },
             "noData": "No buy order available",
-            "yourInvest": "Your Invests"
+            "yourInvest": "Your Savings"
         },
         "personalProfile": {
             "title": "Personal Detail",
@@ -831,7 +831,7 @@
                 "phone": "Phone",
                 "status": "Status",
                 "note": "Note",
-                "investMore": "Invest More"
+                "investMore": "Save More"
             },
             "applicationDetail": {
                 "dueDays": "Due Days",
@@ -995,20 +995,20 @@
         "blockDesc2": "\n    ",
         "blockTitle3": "What we do",
         "blockCap3": "We’re building a fairer, freer, financial system.",
-        "titleBlock4": "Why you should invest with Constant.",
-        "titleCap4": "Our investment options all offer fixed returns, and have different levels of flexibility to choose from. Get your money to work for you.",
+        "titleBlock4": "Why you should save with Constant.",
+        "titleCap4": "We’ve done our homework.",
         "titleDesc4": "\n      <p></p>\n      <p></p>\n    ",
         "optionText": "or",
         "howItWorks": {
             "step1": "Step 1",
-            "title1": "You make an investment",
-            "desc1": "Choose among our flexible Investment Plans, then make a bank transfer of any amount to the FDIC insured Constant Vault. Your funds will be held in USD, to protect against volatility. We earn you interest and make sure your money is secure, by lending your funds only to borrowers who are willing to overcollateralize.",
+            "title1": "Make a deposit",
+            "desc1": "Choose among our flexible Savings Plans, then make a bank transfer of any amount to your Constant account. Now you're ready to start earning interest.",
             "step2": "Step 2",
-            "title2": "Your money multplies",
-            "desc2": "No matter which commitment period you choose, returns are paid out daily into a Flexible Account. Flexible means you can withdraw whenever you like, and earn an extra 1% annually. Stay liquid and make profit on your profit.",
+            "title2": "Earn daily interest",
+            "desc2": "No matter which term you choose, interest is paid out daily into a Flexible Account. So you can withdraw your earnings whenever you like.",
             "step3": "Step 3",
-            "title3": "You withdraw profit",
-            "desc3": "Your investment income is in USD, but you can withdraw it to any local bank account at the end of the commitment period. Or you could reinvest it to keep growing your money."
+            "title3": "Withdraw to any bank account",
+            "desc3": "Constant syncs with your local bank. When the term is up, simply choose the bank account you’d like to withdraw your funds to."
         },
         "stories": {
             "quote0": "Apart from the bank beating interest rates, this is an incredibly interesting project from a technology standpoint. Banks need to up their game.",
@@ -1486,8 +1486,8 @@
         "midBanner1": "Send money anywhere, for free",
         "midBanner2": "Secure and grow your money",
         "whatChatWithUs": "Chat with us",
-        "whatCaption0": "8% annual return",
-        "whatCaption1": "Your money multiplies",
+        "whatCaption0": "5x more interest",
+        "whatCaption1": "Flexible terms",
         "whatCaption2": "Available worldwide",
         "whatCaption3": "We’re here to help",
         "whatTitle": "What can you do with Constant?",
@@ -1495,12 +1495,12 @@
         "whatTitle1": "Up to 130M USD",
         "whatTextLink1": "Read the full policy",
         "whatLink1": "/privacy-policy",
-        "whatDesc1": "<p>No matter which commitment period you choose, returns are paid out daily into a Flexible Account. Flexible means you can withdraw whenever you like - or reinvest and make profit on your profit.</p>",
+        "whatDesc1": "<p>No minimum deposit required to unlock great rates. Choose a term that sounds good, and get your money to work for you.</p>",
         "whatTitle2": "By the US Government",
         "whatTitle3": "No minimum deposit",
-        "whatDesc0": "<p>Don’t sit on your money. Put it to work. We’re proud of our rates, and we don’t want you to have to wait to enjoy them. Your investment earnings are paid out daily for you to withdraw anytime. </p>",
-        "whatDesc2": "<p>Anyone should have access to better opportunities. Constant is accessible to anyone with an internet connection. Make your first investment in just 15 seconds, anywhere in the world.</p>",
-        "whatDesc3": "<p>You work hard for your money. We make sure it’s taken care of, and you shouldn’t have to pay extra for it. Our Investment Specialists are here to help whenever you need. No commission fees.</p>",
+        "whatDesc0": "<p>Than the average savings account. We’re proud of our rates, and we don’t want you to have to wait to enjoy them. Interest is paid out daily for you to withdraw anytime.</p>",
+        "whatDesc2": "<p>Proud to be 100% digital, Constant is accessible to anyone with an internet connection. Open an account in 15 seconds, anywhere in the world.</p>",
+        "whatDesc3": "<p>You work hard for your money. We make sure it’s taken care of. No account fees - that’s only fair. And we’re here to help whenever you need.</p>",
         "whatMore0": "How we guarantee zero risk high returns",
         "whatMore1": "How we protect your money",
         "whatMore2": "How to pick a plan that’s right for you",
@@ -1673,7 +1673,7 @@
         "text2": "They'll be asked to confirm that they have seen evidence of your claimed status. No documentation required.",
         "text3": "W2, 1040, other IRS or foreign tax authority document containing salary for the past 2 years (2017 and 2018), or a letter from your lawyer, accountant, investment advisor, or investment broker",
         "text4": "Upload a statement from a financial institution, asset appraisals, or letter from your lawyer, accountant, investment advisor or investment broker indicating net assets",
-        "investment_advisor": "Investment Adviser (SEC Registered)",
+        "investment_advisor": "Accredited Investor (SEC Registered)",
         "broker": "Investment Broker (SEC Registered)",
         "accountant": "Accountant (must be CPA)",
         "lawyer": "Lawyer",
@@ -1901,7 +1901,7 @@
         "currencyDropdownLabel": "Your currency",
         "amountResultLabel": "According to the markets today, that is:",
         "buyBtn": "INVEST {fiatAmount} {fiatCurrency}",
-        "investNow": "INVEST NOW",
+        "investNow": "SAVE NOW",
         "amountTooSmall": "Your amount is too small, please try a larger amount",
         "noAgentAvaiable": "Please be patient with us, we’re trying to keep up. Try a smaller amount, or try again later.",
         "getAmountFailed": "Failed while getting amount, please try again",
@@ -1976,16 +1976,16 @@
                 "name": "Anytime"
             },
             "one": {
-                "name": "1 Month"
+                "name": "1-Month"
             },
             "three": {
-                "name": "3 Months"
+                "name": "3-Month"
             },
             "six": {
-                "name": "6 Months"
+                "name": "6-Month"
             },
             "oneYear": {
-                "name": "12 Months"
+                "name": "12-Month"
             }
         }
     },
@@ -2178,7 +2178,7 @@
                 "link": "Open an account"
             },
             "invest": {
-                "title": "Invest the way you want.",
+                "title": "Enjoy greater earnings on any fixed deposit.",
                 "desc1": {
                     "title": "8% annual returns.",
                     "desc": "Don’t sit on your money. Put it to work."

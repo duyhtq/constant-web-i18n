@@ -100,8 +100,10 @@
         "referral": "Chương trình giới thiệu"
     },
     "headerBar": {
+        "blog": "Tips",
         "myAccount": "Tài khoản của tôi",
         "deposit": "Gửi tiền",
+        "transfer": "Transfer",
         "banking": "Ngân hàng",
         "save": "Đầu tư",
         "borrow": "Vay",
@@ -196,7 +198,8 @@
             "not_enough_balance": "Số dư của bạn không đủ",
             "createdBankExisted": "Tài khoản ngân hàng đã được đăng ký!",
             "trial_term_deposit_not_available": "Chương trình đăng kí nhận thử 1000 Constant chỉ áp dụng cho khách hàng mới.",
-            "not_pro_saving_user": "Xin lỗi. Chúng tôi chỉ cung cấp dịch vụ này tại Mỹ cho những nhà đầu tư đã được SEC công nhận."
+            "not_pro_saving_user": "Xin lỗi. Chúng tôi chỉ cung cấp dịch vụ này tại Mỹ cho những nhà đầu tư đã được SEC công nhận.",
+            "otpNotMatched": "OPT not matched or invalidated!"
         }
     },
     "errorCode": {
@@ -461,7 +464,8 @@
                 "failed": "Không thành công"
             },
             "emailNotVerified": "Xin vui lòng xác nhận email của bạn.",
-            "verifyBtn": "Gửi lại email xác minh"
+            "verifyBtn": "Gửi lại email xác minh",
+            "enable2Fa": "Enable 2FA"
         },
         "changePassword": {
             "newPasswordIsRequired": "Nhập mật khẩu mới",
@@ -471,6 +475,23 @@
             "title": "Thay đổi mật khẩu",
             "changeSuccess": "Thay đổi mật khẩu thành công",
             "changeFailed": "Hãy chắc chắn bạn đã nhập đúng mật khẩu cũ"
+        },
+        "twoFa": {
+            "description2Fa": "Your personal information is never shown to other users",
+            "qrScanModal": {
+                "title": "Scan QR Code",
+                "inputCode": "Enter your code",
+                "close": "Close",
+                "submit": "Submit"
+            },
+            "disable2FaModal": {
+                "title": "Disable Two Factor",
+                "inputCode": "Enter your code",
+                "close": "Close",
+                "submit": "Submit"
+            },
+            "disable2FaSuccess": "Disable 2FA successfully!",
+            "enable2FaSuccess": "Enable 2FA successfully!"
         },
         "setting": {
             "title": "Cài đặt chung"
@@ -747,6 +768,7 @@
                 "trial_description": "Đã hết kì hạn. Khách hàng được giữ phần lãi",
                 "saving_title": "Đầu tư có kì hạn",
                 "anyTime_saving": "Tài khoản không kì hạn",
+                "input2FA": "Input 2FA",
                 "interestInfo": {
                     "header": {
                         "title": "Bạn muốn lãi suất cao hơn cho tất cả các khoản đầu tư của mình?"
@@ -1043,7 +1065,8 @@
                     "close": "Đóng",
                     "agreeSell": "Đồng ý đổi ra tiền",
                     "confirmText": "Bạn đang muốn đổi {amount} {currency}",
-                    "confirmSubText": "Vui lòng kiểm tra thông tin của bạn một lần nữa."
+                    "confirmSubText": "Vui lòng kiểm tra thông tin của bạn một lần nữa.",
+                    "input2FA": "Input 2FA"
                 },
                 "orderInfo": {
                     "buyTitle": "Xác nhận lệnh",
@@ -1379,7 +1402,8 @@
             },
             "howItWorks": "Hướng dẫn sử dụng",
             "amount": "Số lượng",
-            "to": "Tới"
+            "to": "Tới",
+            "input2FA": "Input 2FA"
         },
         "constantLoan": {
             "title": "Vay thế chấp bằng tiền mã hoá.",
@@ -1686,7 +1710,7 @@
         }
     },
     "homeWhatwedo": {
-        "desc": "\n<p>Chúng tôi tin vào một hệ thống tài chính công bằng hơn, kinh tế hơn!\nTham gia vào lĩnh vực tài chính trên nền tảng blockchain từ những ngày đầu tiên, chúng tôi là những kỹ sư tin rằng ngành tài chính nên dành cho mọi người: nhiều quyền lợi hơn, dễ sử dụng hơn bất kể bạn là ai và đang sinh sống ở đâu.</p>\n<br />\n<br />\n<p>Thế nào là dịch vụ tài chính hoàn hảo? Đối với đội ngũ Constant, đó là loại tiền tệ có thể lưu thông tự do trên toàn thế giới với giá trị ổn định nhất. Bạn có thể tích lũy, tiêu xài, vay nợ chỉ bằng 1 loại tiền tệ quyền lực được định giá bởi USD và bảo hiểm bởi những tổ chức uy tín nhất thế giới. Trong ước mơ của Constant, đây chính là một “ngân hàng” tạo ra bởi người dùng & phục vụ lợi ích của người dùng.</p>\n<br />\n<br />\n<p>Hơn thế nữa, chúng tôi là một dự án công nghệ! Nghĩa là Constant luôn sẵn sàng 24/7, 100% online. Không còn cảnh xếp hàng ở phòng giao dịch, không còn những người nghẽn mạch thanh toán do lễ tết. Chúng tôi - những kỹ sư, nhà thiết kế, chuyên gia tài chính làm việc trên toàn thế giới với mục tiêu lớn nhất là giúp tiền của bạn sinh lời và lưu thông dễ dàng nhất.</p>    "
+        "desc": "\n      <p>We are committed to economic freedom. That’s freedom of movement and freedom of choice. We are committed to economic equality. That’s equal accessibility and equal opportunity. In essence, we want to make money more useful, and growth more attainable, for anyone, anywhere in the world.</p>\n      <p>What does that look like? Fair interest rates. Inclusive loans. A state-less, stable currency that you can invest, borrow, and spend. Transactions secured and carried out collectively by users of the network. A financial solution for the people, made possible by the people.</p>\n      <p>Constant is proud to be 100% digital, online 24/7. So no waiting for your broker to pick up the phone, no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime. </p>\n    "
     },
     "faqs": {
         "title": "Câu hỏi thường gặp",
@@ -2158,7 +2182,7 @@
             "title": "Ưu việt hơn ngân hàng.",
             "subTitle": "Chào mừng bạn đến với một trong những dịch vụ tài chính tốt nhất trên thế giới. Chỉ cần Internet, Constant luôn sẵn sàng phục vụ tất cả mọi người trên thế giới.",
             "cta": "Đăng kí tài khoản",
-            "ctaDesc": "\nMở tài khoản miễn phí. \n        <br />\n        Trên toàn thế giới."
+            "ctaDesc": "\n        It’s free to open an account. Available locations: World."
         },
         "subjects": {
             "banking": {

@@ -100,8 +100,10 @@
         "referral": "Referral"
     },
     "headerBar": {
+        "blog": "Tips",
         "myAccount": "My Account",
         "deposit": "Deposit",
+        "transfer": "Transfer",
         "banking": "Bank",
         "save": "Invest",
         "borrow": "Borrow",
@@ -196,7 +198,8 @@
             "not_enough_balance": "Please deposit enough Constant to continue.",
             "createdBankExisted": "You have already saved this bank account. Please try another.",
             "trial_term_deposit_not_available": "The Constant introductory trial is only available to new users .",
-            "not_pro_saving_user": "Sorry, we can only offer services in the USA to SEC accredited investors."
+            "not_pro_saving_user": "Sorry, we can only offer services in the USA to SEC accredited investors.",
+            "otpNotMatched": "OPT not matched or invalidated!"
         }
     },
     "errorCode": {
@@ -461,7 +464,8 @@
                 "failed": "Sorry, something went wrong. Please try again."
             },
             "emailNotVerified": "Please verify your email.",
-            "verifyBtn": "Resend verification"
+            "verifyBtn": "Resend verification",
+            "enable2Fa": "Enable 2FA"
         },
         "changePassword": {
             "newPasswordIsRequired": "New password is required",
@@ -471,6 +475,23 @@
             "title": "Change your password",
             "changeSuccess": "Your password was changed successfully",
             "changeFailed": "Please make sure you have typed in your old password correctly"
+        },
+        "twoFa": {
+            "description2Fa": "Your personal information is never shown to other users",
+            "qrScanModal": {
+                "title": "Scan QR Code",
+                "inputCode": "Enter your code",
+                "close": "Close",
+                "submit": "Submit"
+            },
+            "disable2FaModal": {
+                "title": "Disable Two Factor",
+                "inputCode": "Enter your code",
+                "close": "Close",
+                "submit": "Submit"
+            },
+            "disable2FaSuccess": "Disable 2FA successfully!",
+            "enable2FaSuccess": "Enable 2FA successfully!"
         },
         "setting": {
             "title": "Account Settings"
@@ -747,6 +768,7 @@
                 "trial_description": "Your trial term has ended.",
                 "saving_title": "Fixed Term Investments",
                 "anyTime_saving": "Flexible Account",
+                "input2FA": "Input 2FA",
                 "interestInfo": {
                     "header": {
                         "title": "Want to unlock more returns for all your accounts?"
@@ -1043,7 +1065,8 @@
                     "close": "Close",
                     "agreeSell": "Agree to convert",
                     "confirmText": "You're converting {amount} {currency}",
-                    "confirmSubText": "Please check your information again."
+                    "confirmSubText": "Please check your information again.",
+                    "input2FA": "Input 2FA"
                 },
                 "orderInfo": {
                     "buyTitle": "Order Confirmation",
@@ -1379,7 +1402,8 @@
             },
             "howItWorks": "How it works",
             "amount": "Amount",
-            "to": "To"
+            "to": "To",
+            "input2FA": "Input 2FA"
         },
         "constantLoan": {
             "title": "Fair, fully secured crypto-backed loans.",
@@ -1686,7 +1710,7 @@
         }
     },
     "homeWhatwedo": {
-        "desc": "\n      <p>We are committed to economic freedom. That’s freedom of movement and freedom of choice. We are committed to economic equality. That’s equal accessibility and equal opportunity. In essence, we want to make money more useful, and growth more attainable, for anyone, anywhere in the world.</p>\n      <br />\n      <br />\n      <p>What does that look like? Fair interest rates. Inclusive loans. A state-less, stable currency that you can invest, borrow, and spend. Transactions secured and carried out collectively by users of the network. A financial solution for the people, made possible by the people.</p>\n      <br />\n      <br />\n      <p>Constant is proud to be 100% digital, online 24/7. So no waiting for your broker to pick up the phone, no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime. </p>\n    "
+        "desc": "\n      <p>We are committed to economic freedom. That’s freedom of movement and freedom of choice. We are committed to economic equality. That’s equal accessibility and equal opportunity. In essence, we want to make money more useful, and growth more attainable, for anyone, anywhere in the world.</p>\n      <p>What does that look like? Fair interest rates. Inclusive loans. A state-less, stable currency that you can invest, borrow, and spend. Transactions secured and carried out collectively by users of the network. A financial solution for the people, made possible by the people.</p>\n      <p>Constant is proud to be 100% digital, online 24/7. So no waiting for your broker to pick up the phone, no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime. </p>\n    "
     },
     "faqs": {
         "title": "Frequently Asked Questions",
@@ -2158,7 +2182,7 @@
             "title": "Like your bank, but better.",
             "subTitle": "Welcome to better saving, borrowing, and making the most of your money. Open to anyone in the world with an internet connection.",
             "cta": "Open an account",
-            "ctaDesc": "\n        It’s free to open an account. \n        <br />\n        Available locations: World."
+            "ctaDesc": "\n        It’s free to open an account. Available locations: World."
         },
         "subjects": {
             "banking": {

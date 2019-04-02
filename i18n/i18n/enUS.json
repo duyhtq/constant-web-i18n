@@ -1907,7 +1907,7 @@
         "loading": "Loading...",
         "amountMustBeLargerThan": "Your amount must be larger than {min} {fiatCurrency}",
         "howMuchDoYouWantToDeposit": "HOW MUCH DO YOU WANT TO INVEST? ",
-        "termLabel": "Pick your investment option"
+        "termLabel": "Choose a time horizon for your investment"
     },
     "exchangeInputDepositForm": {
         "minUsdRequired": "Please enter an amount larger than 0.01 USD",
@@ -1951,7 +1951,7 @@
         "noMoreTrialLeft": "No more trial left.",
         "submitBtn": "INVEST NOW",
         "btnDesc": "New customers only. This 1000 USD trial deposit will be returned at the end of your chosen term, but you keep all the interest.",
-        "termLabel": "Pick your investment option"
+        "termLabel": "Choose a time horizon for your investment"
     },
     "termSelector": {
         "label": "Choose a commitment period.",
@@ -1974,16 +1974,16 @@
                 "name": "Anytime"
             },
             "one": {
-                "name": "1-Month"
+                "name": "1 Month"
             },
             "three": {
-                "name": "3-Months"
+                "name": "3 Months"
             },
             "six": {
-                "name": "6-Months"
+                "name": "6 Months"
             },
             "oneYear": {
-                "name": "12-Months"
+                "name": "12 Months"
             }
         }
     },

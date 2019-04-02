@@ -1350,6 +1350,8 @@
         "transfer": {
             "title": "Transfer",
             "caption": "SEND CONSTANT ANYWHERE",
+            "yourBalance": "Your balance",
+            "validateMaxInput": "Your amount must less than or equal: ${amount}",
             "transferFeeLabel": "Transfer fee",
             "subTitle": "Free. To anyone, anywhere.",
             "introTitle": "Send money to anyone, anywhere. For free.",
@@ -1587,7 +1589,7 @@
         "loginRequired": "You need to login to do the action.",
         "shareFbSuccess": "Share referral link success.",
         "faqs": {
-            "title": "Frequenly asked questions",
+            "title": "Frequently asked questions",
             "content": {
                 "faq1": {
                     "question": "What are Constant Referral Rewards?",

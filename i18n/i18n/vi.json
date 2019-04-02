@@ -1350,6 +1350,8 @@
         "transfer": {
             "title": "Chuyển khoản",
             "caption": "GỬI CONSTANT TỚI BẤT CỨ ĐÂU",
+            "yourBalance": "Your balance",
+            "validateMaxInput": "Your amount must less than or equal: ${amount}",
             "transferFeeLabel": "Phí chuyển khoản",
             "subTitle": "Miễn phí. Tới bất cứ ai trên toàn thế giới.",
             "introTitle": "Chuyển khoản tới mọi người ở khắp nơi trên thế giới. Hoàn toàn miễn phí.",
@@ -1580,14 +1582,14 @@
             "item3": {
                 "title": "Giới thiệu tối đa cho 15 người bạn",
                 "description": "Giới thiệu Constant cho bạn bè để tăng mức lãi suất được nhận cho mỗi một người bạn mở tài khoản.",
-                "additionalDesc": "Link giới thiệu của bạn: ",
+                "additionalDesc": "Your referral link: ",
                 "bonusRate": "3"
             }
         },
         "loginRequired": "Bạn cần đăng nhập để thực hiện hành động này.",
         "shareFbSuccess": "Đã chia sẻ link giới thiệu thành công.",
         "faqs": {
-            "title": "Các câu hỏi thường gặp",
+            "title": "Frequently asked questions",
             "content": {
                 "faq1": {
                     "question": "Phần thưởng cho chương trình giới thiệu của Constant là gì?",

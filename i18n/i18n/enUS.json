@@ -103,7 +103,7 @@
         "blog": "Tips",
         "myAccount": "My Account",
         "deposit": "Deposit",
-        "transfer": "Transfer",
+        "transfer": "Send",
         "banking": "Bank",
         "save": "Save",
         "borrow": "Borrow",
@@ -735,7 +735,7 @@
             "verifySuccess": "Your phone was verified successfully, now your level is Level 2"
         },
         "kycVerification": {
-            "pleaseComplete": "Please complete the KYC process to buy direct from the network.",
+            "pleaseComplete": "Please complete the KYC process to {action}.",
             "complete": "Complete KYC",
             "updatedSuccess": "Your information was updated successfully",
             "updatedFailed": "Failed while updating your information, please try again!",
@@ -1372,7 +1372,7 @@
         },
         "transfer": {
             "title": "Transfer",
-            "caption": "SEND CONSTANT ANYWHERE",
+            "caption": "How much do you want to send",
             "yourBalance": "Your balance",
             "validateMaxInput": "Your amount must less than or equal: ${amount}",
             "transferFeeLabel": "Transfer fee",
@@ -1741,7 +1741,7 @@
         },
         "sell": {
             "question1": "Where can I sell Constant?",
-            "answer1": "\n        <p>You can sell Constant to us at $1 each. Simply select withdraw from the “Bank” section of our website and we’ll send USD (or local currency) to your bank account. If your Constant is in a separate wallet, you’ll need to transfer it to your Constant account first before you can withdraw it (this is free).</p>\n        <br />\n        <p>You can also sell Constant on exchanges, but please bear in mind the market price might differ from the one we guarantee on our site. This is because we can’t control the market, and exchange prices will vary depending on supply and demand.</p>\n      "
+            "answer1": "\n        <p>You can sell Constant to us at $1 each. Simply select withdraw from the “Bank” section of our website and we’ll send USD (or local currency) to your bank account. If your Constant is in a separate wallet, you’ll need to transfer it to your Constant account first before you can withdraw it (this is free). All withdrawals cost 0.25% per transaction (maximum of $35 applies).</p>\n        <br />\n        <p>You can also sell Constant on exchanges, but please bear in mind the market price might differ from the one we guarantee on our site. This is because we can’t control the market, and exchange prices will vary depending on supply and demand.</p>\n      "
         },
         "value": {
             "question1": "Will the price of Constant go “to the moon”?",
@@ -1783,21 +1783,21 @@
             "question1": "How do Crypto Loans work?",
             "answer1": "\n        <p>We loan our investors’ funds to you in return for crypto collateral. Everything is done on the Ethereum blockchain, with our smart contract and USD-backed stablecoin powering the agreements.</p>\n        <p>To get a loan, you must provide bitcoin or ethereum collateral to the value of 150% of your loan amount. This is called overcollateralization and is essential to offer you the best interest rates and to protect our investors.</p>\n        <p>Your crypto collateral is stored and secured on the blockchain, accessible only through private keys that we encrypt on our database. It remains securely protected by the blockchain until you repay the loan and we return your crypto.</p>\n      ",
             "question2": " ",
-            "answer2": "\n        <p>All of our loans are paid out in our USD-backed stablecoin, Constant. You can then withdraw Constant for USD (or local currency) on our website, or trade it for any other currency with our partner exchanges - and spend it however you want. Since we’re loaning you Constant, you repay in Constant, too, which you can buy from us or from exchanges. </p>\n        <p>Crypto Loans are very simple. If you don’t repay the loan, or if your collateral falls below 70% of its original market value, we keep and sell your crypto. The loan is yours to keep.</p>\n        <p>Overcollateralization is a safety mechanism designed to give our investors confidence and our borrowers the friendliest rates on the market. Constant Crypto Loans are one of the safest and easiest loans to obtain, manage, and repay.</p>\n      "
+            "answer2": "\n        <p>All of our loans are paid out in our USD-backed stablecoin, Constant. You can then withdraw Constant for USD (or local currency) on our website, or trade it for any other currency with our partner exchanges, and spend it however you want. Since we’re loaning you Constant, you repay in Constant, too, which you can buy from us or from exchanges. </p>\n        <p>Crypto Loans are very simple. If you don’t repay the loan, or if your collateral falls below 70% of its original market value, we keep and sell your crypto. The loan is yours to keep.</p>\n        <p>Overcollateralization is a safety mechanism designed to give our investors confidence and our borrowers the friendliest rates on the market. Constant Crypto Loans are one of the safest and easiest loans to obtain, manage, and repay.</p>\n      "
         },
         "tech": {
             "question1": "Why do you digitize my savings?",
             "answer1": "\n        <p>When you save for the long term, some local currencies can lose value due to inflation. This eats into your interest, making saving an uphill battle. We don’t think that’s fair. So instead, we convert your savings into a “digital dollar” that’s 100% backed by real USD – the world’s reserve currency.</p>\n        <br />\n        <p>Our digital dollar is called Constant. Anytime you save or withdraw, we create or destroy Constant to ensure it’s 1:1 backed, always matching the value of USD. That way, you never need worry about inflation and other economic pressures eating into your interest. You just sit back and watch your money grow.</p>\n      ",
             "question2": "How does digitization work?",
-            "answer2": "\n        <p>First, we send your savings to the Constant Vault for safekeeping. Then, we create new Constant tokens on the Ethereum blockchain that match the USD value of your savings. For example, if you gave us the equivalent of $100 in your local currency, we send $100 to the Constant Vault and create 100 Constant.</p>\n        <br />\n        <p>Constant remains in your account for your savings term, earning interest that you can save or withdraw daily. Then, when your term ends, you can withdraw your savings from the Constant Vault (and any returns) and we’ll destroy the Constant. Or, if you’d rather use the Constant tokens to send money abroad, trade on exchanges, or save for another period, please do!</p>\n      "
+            "answer2": "\n        <p>First, we send your savings to the Constant Vault for safekeeping. Then, we create new Constant tokens on the Ethereum blockchain that match the USD value of your savings. For example, if you gave us the equivalent of $100 in your local currency, we send $100 to the Constant Vault and create 100 Constant.</p>\n        <br />\n        <p>We then put your savings to work by lending them to overcollateralized borrowers. There is no risk to you since borrowers give us collateral that exceeds the value of the loan. We then use this extra lending income to pay you better interest rates. \n         <br />\n         <p>When your term ends, you can withdraw your savings and interest and we’ll destroy the Constant. Or, if you’d rather use the Constant tokens to send money abroad, trade on exchanges, or save for another period, please do!</p>\n      "
         },
         "withdraw": {
             "question1": "How do I withdraw Constant?",
-            "answer1": "\n        <p>Constant works with your local banking system so you can withdraw in USD or local currency. Although we store your deposits as USD, they’ll be automatically converted back into your local currency (at the real-time market rate) if you withdraw to a non-USD bank account.</p>\n        <br />\n        <p>To withdraw funds, simply request the amount you’d like to withdraw from the Withdraw tab, enter the bank details, and click Withdraw. Alternatively, you can also withdraw funds as Constant, our USD-backed stablecoin, to an ETH or EOS wallet. Just enter the wallet address and click Withdraw.</p>\n      ",
+            "answer1": "\n        <p>Constant works with your local banking system so you can withdraw in USD or local currency. Although we store your deposits as USD, they’ll be automatically converted back into your local currency (at the real-time market rate) if you withdraw to a non-USD bank account.</p>\n        <br />\n        <p>To withdraw funds, simply request the amount you’d like to withdraw from the Withdraw tab, enter the bank details, and click Withdraw. All withdrawals cost 0.25% per transaction (maximum fee of $35). Alternatively, you can also withdraw funds as Constant, our USD-backed stablecoin, to an ETH or EOS wallet for free. Just enter the wallet address and click Withdraw.</p>\n     ",
             "question2": "In which currencies can I withdraw?",
-            "answer2": "\n        <p>The currency you withdraw depends on the native currency of your bank account. If you have a USD bank account, you’ll receive USD. In all other cases, your bank will convert the USD we send to your local currency.</p>\n        <br />\n        <p>Of course, you don’t have to withdraw to a bank account at all. You can withdraw your money as Constant, our USD-backed stablecoin, to an ETH or EOS wallet and then trade it for other currency pairs on supported exchanges.</p>\n      ",
+            "answer2": "\n        <p>The currency you withdraw depends on the native currency of your bank account. If you have a USD bank account, you’ll receive USD. In all other cases, your bank will convert the USD we send to your local currency. All withdrawals are charged at 0.25% (maximum fee of $35) per transaction.</p>\n        <br />\n        <p>Of course, you don’t have to withdraw to a bank account at all. You can withdraw your money as Constant, our USD-backed stablecoin, to an ETH or EOS wallet (for free) and then trade it for other currency pairs on supported exchanges.</p>\n      ",
             "question3": "Do you charge withdrawal fees?",
-            "answer3": "\n        <p>\n        The Constant Vault, where we store your funds, is a US-based escrow account. So, withdrawing from this to a bank outside the US will incur a small one-off fee to cover KYC (Know Your Customer). The fee depends on your country of residence, but won’t be more than $35, and you only pay it once. Afterwards, <b>all withdrawals are free.</b>\n        </p>\n      ",
+            "answer3": "\n        <p>\n        Yes, we charge a small fee of 0.25% per transaction (maximum of $35). \n        </p>\n      ",
             "question4": "Is there a limit on the number of withdrawals I can make?",
             "answer4": "<p>No, you can withdraw as much and as often as you like.</p>",
             "question5": "How long do withdrawals take?",
@@ -1805,7 +1805,7 @@
         },
         "deposit": {
             "question1": "Are my deposits safe?",
-            "answer1": "\n        <p>Yes. First, we convert your deposit to USD to stabilise and protect your funds from inflationary devaluation. Then, we send your funds to the Constant Vault, an escrow operated by Prime Trust, an accredited US financial institution.</p>\n        <br />\n        <p>Since the Constant Vault is regulated under US law, your deposits are FDIC-insured to $5,000,000. (We split deposits greater than $250,000 across 20 banks to achieve protection up to $5,000,000).</p>\n      ",
+            "answer1": "\n        <p>Yes. First, we convert your deposit to USD to stabilize and protect your funds from inflationary devaluation. Then, we send your funds to the Constant Vault, an escrow operated by Prime Trust, an accredited US financial institution.</p>\n        <br />\n        <p>The Constant Vault keeps your money safe across multiple FDIC-insured bank accounts, bringing total coverage to $130,000,000.</p>\n      ",
             "question2": "Is there a limit to how much I can deposit?",
             "answer2": "\n        <p>No, though if you plan on depositing more than $5,000,000, please contact us to discuss ways of increasing the insurance protection on your account. </p>\n      ",
             "question3": "How do I make a deposit?",
@@ -1821,13 +1821,13 @@
             "question1": "How long will my transfer take?",
             "answer1": "<p>It should be immediate, though at times of heavy network congestion, perhaps up to 30 seconds.</p>",
             "question2": "How much does a transfer cost?",
-            "answer2": "<p>Nothing. Constant transfers are free for everyone.</p>",
+            "answer2": "<p>Nothing. Constant transfers are free to send and receive for everyone. If you want to withdraw to your local bank account, we charge a small fee of 0.25% per transaction (maximum $35).</p>",
             "question3": "To which countries can I transfer money?",
             "answer3": "<p>You can send funds to anyone, anywhere, anytime.</p>",
             "question4": "How do transfers work?",
-            "answer4": "\n        <p>We use blockchain technology to make our transfers fast, free, and easy.</p>\n        <br />\n        <p>When you transfer USD, we digitize it in the form of our USD-backed stablecoin, Constant. Since Constant lives on the blockchain, it can be moved to anyone in the world for free – as quickly as sending an email.</p>\n        <br />\n        <p>At the other end, once your recipient receives Constant, they can then withdraw it again as USD or local currency (depending on their bank account).</p>,\n        <p>Here’s a simple example:</p>\n        <ul>\n          <li>You request a transfer of $100 to Mary.</li>\n          <li>We deduct $100 from your balance and send Mary 100 Constant.</li>\n          <li>Mary receives 100 Constant and her balance increases by $100.</li>\n          <li>Mary withdraws $100 and we deduct $100 from her balance.</li>\n        </ul>\n      ",
+            "answer4": "\n        <p>We use blockchain technology to make our transfers fast, free, and easy.</p>\n        <br />\n        <p>When you transfer USD, we digitize it in the form of our USD-backed stablecoin, Constant. Since Constant lives on the blockchain, it can be moved to anyone in the world for free – as quickly as sending an email.</p>\n        <br />\n        <p>At the other end, once your recipient receives Constant, they can then withdraw it again as USD or local currency (depending on their bank account). There's a small withdrawal fee of 0.25% per transaction (maximum $35).</p>,\n        <p>Here’s a simple example:</p>\n        <ul>\n          <li>You request a transfer of $100 to Mary.</li>\n          <li>We deduct $100 from your balance and send Mary 100 Constant.</li>\n          <li>Mary receives 100 Constant and her balance increases by $100.</li>\n          <li>Mary withdraws $100 and we deduct $100 from her balance.</li>\n        </ul>\n      ",
             "question5": "Are transfers safe?",
-            "answer5": "\n        <p>Yes – very safe. First, transfers take place on the blockchain, an immutable public ledger that’s extremely tough to hack. It’s virtually impossible to make fraudulent changes without getting noticed since transactions are collectively validated by the network. Even if your money went astray, it would be easy to trace.</p>\n        <br />\n        <p>Second, the blockchain is always on. There is no risk of downtime and no way for your money to get lost. It either reaches the recipient or stays in your account. Nevertheless, both your and the recipient’s Constant account are both FDIC-insured to $5,000,000. So were the worst to happen, we’ve got you covered.</p>\n      ",
+            "answer5": "\n        <p>Yes – very safe. First, transfers take place on the blockchain, an immutable public ledger that’s extremely tough to hack. It’s virtually impossible to make fraudulent changes without getting noticed since transactions are collectively validated by the network. Even if your money went astray, it would be easy to trace.</p>\n        <br />\n        <p>Second, the blockchain is always on. There is no risk of downtime and no way for your money to get lost. It either reaches the recipient or stays in your account. Nevertheless, we keep your money safe in multiple FDIC-insured bank accounts, bringing total coverage to $130,000,000. So were the worst to happen, we’ve got you covered.</p>\n      ",
             "question6": "Does the recipient need a Constant account to receive funds?",
             "answer6": "<p>To receive funds, your recipient needs either a Constant account or a web wallet that supports ERC-20 tokens. That way they can either receive USD or our USD-backed stablecoin, both of which can be withdrawn as USD or local currency (if the recipient doesn’t have a USD bank account).</p>"
         },
@@ -1865,29 +1865,29 @@
             "question1": "What is a Constant Savings Plan?",
             "answer1": "Our Savings Plans are simple, risk-free, and effective ways to grow your money. You choose a savings term, deposit your money, and at the end of the term you get your money back plus earned interest. It really is as simple as that.",
             "question2": "How do Constant Savings Plans work?",
-            "answer2": "\n        <p>Under the “SAVE” tab on our website, you’ll be able to choose from several different Savings Plans. Each one is designed to maintain the value of your deposit and pay you daily interest.</p>\n        <br />\n        <p>To maintain the value of your deposit, we send your money to the Constant trust where it’s protected by US law and insured to $5,000,000 per account. Over time, you earn interest which you can withdraw as you earn (daily) or save until the end of your term.</p>\n        <br />\n        <p>Of course, you don’t have to withdraw your savings. You could send money abroad, store it in your Constant account to keep the value locked to the USD, or start another Savings Plan to earn even more interest. The choice is yours!\n</p>\n      ",
+            "answer2": "\n        <p>Under the “SAVE” tab on our website, you’ll be able to choose from several different Savings Plans. Each one is designed to maintain the value of your deposit and pay you daily interest.</p>\n        <br />\n        <p>To maintain the value of your deposit, we convert your savings to USD – the world's reserve currency. Then, we lend your savings to overcollateralized borrowers and share the lending income with you as interest. You can withdraw this interest daily or save it until the end of your term.\n        <br />\n        <p>There is no risk to you since borrowers give us collateral that exceeds the value of the loan. If they don't repay, we sell their collateral in plenty of time to return your savings and pay you interest. </p>\n        <br />\n        <p>Of course, you don’t have to withdraw your savings. You could send money abroad, store it in your Constant account to keep the value locked to the USD, or start another Savings Plan to earn even more interest. The choice is yours!\n</p>\n      ",
             "question3": "How do you protect my savings?",
-            "answer3": "Your deposits are securely held in the Constant Vault, which is overseen by an accredited US financial institution called Prime Trust. The Constant Vault is FDIC-insured to $5,000,000 per account. You can read more about the Constant Vault on <a href=\"https://medium.com/@constantmoney\" target=\"_blank\">our blog</a>.",
+            "answer3": "Your deposits are securely held in the Constant Vault, which is overseen by an accredited US financial institution called Prime Trust. The Constant Vault is FDIC-insured to $130,000,000. You can read more about the Constant Vault on <a href=\"https://medium.com/@constantmoney\" target=\"_blank\">our blog</a>.",
             "question4": "Which currencies do you accept?",
             "answer4": "We accept any currency sent to our US-based Constant Vault bank account. It is then converted to USD and stored in the FDIC-insured Vault.",
             "question5": "Do you accept cryptocurrency?",
             "answer5": "Not at this time.",
             "question6": "Can I access my savings at any time?",
-            "answer6": "\n          <p>To give you the best interest rates, we hold on to your deposit for the duration of your savings term. Think of your savings deposit as a seed that we water and help grow. To do that, we need time, which is why we offer different Savings Plans so you can find the right one for you. \n</p>",
+            "answer6": "\n          <p>To give you the best interest rates, we lend your savings to overcollateralized borrowers. In other words, we lend to borrowers that put up collateral worth more than the loan, which removes any risk to you. Think of your savings deposit as a seed that we water and help grow. To do that, we need time, which is why we offer different Savings Plans so you can find the right one for you. \n</p>      ",
             "question7": "Where are my savings stored?",
-            "answer7": "\n        <p>Your savings are stored inside the Constant Vault, which is regulated under US law and protected by $5,000,000 FDIC insurance. </p>\n      ",
+            "answer7": "\n        <p>Your savings are stored inside the Constant Vault. When not on loan, your money is kept safe across multiple FDIC-insured bank accounts, bringing total coverage to $130,000,000.</p>\n      ",
             "question8": "Can I add to my Savings Plan during the term?",
             "answer8": "\n        <p>You can’t add to your Savings Plan once it’s started, but there’s no limit on how many Savings Plans you can have. So if you’d like to save more, simply open another Savings Plan and watch your money grow. </p>\n      ",
             "question9": "What is the Constant Vault?",
-            "answer9": "The Constant Vault is a publicly-audited trust overseen and managed by Prime Trust, a US accredited financial institution. The Constant Vault is regulated in the US and insured by the FDIC to the value of $130,000,000 (a per account limit of $5,000,000 applies).",
+            "answer9": "The Constant Vault is a publicly-audited trust overseen and managed by Prime Trust, a US accredited financial institution. The Constant Vault is regulated in the US and insured by the FDIC to the value of $130,000,000. When your money isn't on loan, your money is kept safe inside the Constant Vault. ",
             "question10": "What is FDIC insurance?",
-            "answer10": "\n        <p>The Federal Deposit Insurance Corporation (FDIC) is a body set up by the US government to protect the integrity of the US financial system. It does this in a number of ways, including insuring deposits. You can <a href=\"https://www.fdic.gov/about/strategic/strategic/mission.html\" target=\"_blank\">read more about the FDIC on their website.</a></p>\n        <br />\n        <p>Your account is FDIC-insured to $5,000,000. We achieve this limit by spreading larger deposits over multiple bank accounts.</p>\n      "
+            "answer10": "\n        <p>The Federal Deposit Insurance Corporation (FDIC) is a body set up by the US government to protect the integrity of the US financial system. It does this in a number of ways, including insuring deposits. You can <a href=\"https://www.fdic.gov/about/strategic/strategic/mission.html\" target=\"_blank\">read more about the FDIC on their website.</a></p>\n        <br />\n        <p>When your money isn't on loan, we keep it safe across multiple FDIC-insured bank accounts, bringing total coverage to $130,000,000.</p>\n      "
         },
         "returns": {
             "question1": "How is interest paid out?",
             "answer1": "We pay interest daily, so you can either wait until the end of your savings term to withdraw your interest or withdraw it each day. It’s up to you.",
             "question2": "How is daily interest calculated?",
-            "answer2": "Your interest is calculated by applying the percentage rate of your Savings Plan to the amount of your deposit, and then dividing it by 365 to get a daily rate. Your interest is not compounded, so if you save $500 for one year at a rate of 8%, you would earn $40 interest at the end of your savings term (about $0.11 per day).",
+            "answer2": "Your interest is calculated by applying the percentage rate of your Savings Plan to the amount of your deposit, and then dividing it by 365 to get a daily rate. Your interest is not compounded, so if you save $500 for one year at a rate of 4%, you would earn $20 interest at the end of your savings term (about $0.05 per day).",
             "question3": "How can I track earned interest?",
             "answer3": "Just log into your account and click My Savings. You’ll see your total earned interest on the top right of the dashboard.",
             "question4": "Will you increase interest rates in the future?",
@@ -1897,11 +1897,11 @@
         },
         "general": {
             "question1": "What is Constant?",
-            "answer1": "\n        <p>Constant is a financial services platform that helps you do more with your money. From savings to loans, our financial services leverage the best of blockchain tech to put you first, helping you achieve economic freedom.</p>\n        <br />\n        <p>We’ve thrown out credit scoring, paperwork, and fees to give you more of what you deserve – industry-leading rates, risk-free loans, a stable, state-less currency, and free international transfers.</p>\n        <br />\n        <p>Available all day, every day, anywhere in the world.</p>\n      ",
+            "answer1": "\n        <p>Constant is a financial services platform that helps you do more with your money. From savings to loans, our financial services leverage the best of blockchain tech to put you first, helping you achieve economic freedom.</p>\n        <p>We’ve thrown out credit scoring, paperwork, and fees to give you more of what you deserve – industry-leading rates, risk-free loans, a stable, state-less currency, and free international transfers.</p>\n        <p>Available all day, every day, anywhere in the world.</p>",
             "question2": "Is Constant a bank?",
-            "answer2": "\n        <p>No. Constant is even better.</p>\n        <br />\n        <p>We’re 100% digital and open 24-7, so no queuing at bank branches, and no bank holidays.</p>\n        <br />\n        <p>Our Savings Plans earn you up to 60x more interest than a typical savings account. And our Crypto Loans offer some of the lowest interest rates on the market.</p>\n        <br />\n        <p>We don’t run credit checks, we don’t give you reams of paperwork to sign, and we are open to anyone, anywhere.</p>\n      ",
+            "answer2": "\n        <p>No. Constant is even better.</p>\n        <br />\n        <p>We’re 100% digital and open 24-7, so no queuing at bank branches, and no bank holidays.</p>\n        <br />\n        <p>Our Savings Plans earn you up to 40x more interest than a typical savings account. And our Crypto Loans offer some of the lowest interest rates on the market.</p>\n        <br />\n        <p>We don’t run credit checks, we don’t give you reams of paperwork to sign, and we are open to anyone, anywhere.</p>\n      ",
             "question3": "Is Constant regulated?",
-            "answer3": "Yes. Your savings are held securely in our trust, which is regulated under US law. That’s why we ask you to verify your identity when you withdraw investments to your bank account.",
+            "answer3": "Yes. When not on loan, your savings are stored in the Constant Vault, which is regulated under US law. That’s why we ask you to verify your identity when you withdraw savings to your bank account.",
             "question4": "How does Constant make money?",
             "answer4": "We charge interest on collateralized loans to pay you interest, and make a very slim profit from the difference.",
             "question5": "Who are the people behind Constant?",
@@ -2180,7 +2180,7 @@
     "newHome": {
         "banner": {
             "title": "Like your bank, but better.",
-            "subTitle": "Welcome to better saving, borrowing, and making the most of your money. Open to anyone in the world with an internet connection.",
+            "subTitle": "Send money home and know it’ll arrive within minutes. Earn 4% annual interest on your savings, while helping underserved people across the world gain much needed access to opportunity.",
             "cta": "Open an account",
             "ctaDesc": "\n        It’s free to open an account. Available locations: World."
         },
@@ -2188,24 +2188,24 @@
             "banking": {
                 "title": "Borderless banking.",
                 "desc1": {
-                    "title": "Your global USD bank account.",
-                    "desc": "Bank in USD instead of unstable, landlocked currencies. Protect the value of your savings."
+                    "title": "Send money home, no matter where home is.",
+                    "desc": "Send a stipend, an allowance, a birthday gift. All you need is an internet connection to send money across the world in minutes."
                 },
                 "desc2": {
-                    "title": "Send money home or do business with the world.",
+                    "title": "Do business with the world.",
                     "desc": "Move money across the world in minutes. No matter how much you send - or how often - it won’t cost you a cent."
                 },
                 "desc3": {
-                    "title": "Withdraw in any currency.",
-                    "desc": "Constant works with your local banking system, so that your USD funds can be withdrawn in local currency at any time."
+                    "title": "Payroll.",
+                    "desc": "Transfer salaries to your distributed team at zero cost. Funds reach instantly, no matter the time zone, or the amount. Streamline your operations."
                 },
                 "link": "Open an account"
             },
             "invest": {
-                "title": "Enjoy greater earnings on any fixed deposit.",
+                "title": "Save with purpose.",
                 "desc1": {
-                    "title": "8% annual returns.",
-                    "desc": "Don’t sit on your money. Put it to work."
+                    "title": "4% annual interest.",
+                    "desc": "Earn 5x the national average rate. Don’t sit on your money, put it to work."
                 },
                 "desc2": {
                     "title": "Returns paid out daily. Withdraw anytime.",
@@ -2213,14 +2213,14 @@
                 },
                 "desc3": {
                     "title": "Secure your returns with secured loans.",
-                    "desc": "Your money is invested only in secured, over-collateralized loans. 150% risk-free."
+                    "desc": "Your money earns interest by funding secured, over-collateralized loans. This means your returns are always guaranteed."
                 },
                 "link": "Get a free initial investment"
             },
             "borrow": {
                 "title": "Borrow money at the kindest rates on the market.",
                 "desc1": {
-                    "title": "2% APR.",
+                    "title": "7.5% APR.",
                     "desc": "Put down crypto as collateral and secure USD. Borrow as much as you want, take as long as you need, then get your assets back when you repay."
                 },
                 "desc2": {

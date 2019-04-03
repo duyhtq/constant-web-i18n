@@ -735,7 +735,7 @@
             "verifySuccess": "Phone verification successful! "
         },
         "kycVerification": {
-            "pleaseComplete": "Please complete the KYC process to buy direct from the network.",
+            "pleaseComplete": "Please complete the KYC process to {action}.",
             "complete": "Complete KYC",
             "updatedSuccess": "Information updated",
             "updatedFailed": "Failed while updating your information, please try again!",

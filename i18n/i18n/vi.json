@@ -735,7 +735,7 @@
             "verifySuccess": "Số điện thoại của bạn đã được xác minh thành công. Tài khoản của bạn đang ở Cấp độ 2"
         },
         "kycVerification": {
-            "pleaseComplete": "Xin vui lòng thực hiện KYC để mua trực tiếp từ hệ thống.",
+            "pleaseComplete": "Xin vui lòng thực hiện KYC để {action}.",
             "complete": "Hoàn tất KYC",
             "updatedSuccess": "Thông tin của bạn đã được cập nhật thành công",
             "updatedFailed": "Cập nhật thông tin không thành công. Xin vui lòng thử lại!",

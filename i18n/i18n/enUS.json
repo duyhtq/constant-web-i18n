@@ -57,7 +57,7 @@
         "cta": {
             "type1": {
                 "title": "<h3>Start earning interest.</h3>",
-                "btn": "MAKE A DEPOSIT"
+                "btn": "Make a deposit"
             },
             "type2": {
                 "title": "<h3>Get a global USD account.</h3>",
@@ -891,7 +891,7 @@
     "user": {
         "kycInformation": "KYC Information",
         "referral": "Referral",
-        "logout": "Log out",
+        "logout": "Sign out",
         "history": "History",
         "myOrders": "My orders",
         "bankInfo": "Bank Information",
@@ -899,7 +899,7 @@
         "changeEmailPassword": "Email & Password",
         "login": {
             "popupTitle": "Welcome to Constant.",
-            "title": "Login to your account",
+            "title": "Hi there.",
             "username": "Your email",
             "password": "Password",
             "loginButton": "Sign in",
@@ -1026,8 +1026,8 @@
             "title1": "Make a deposit",
             "desc1": "Choose among our flexible Savings Plans, then make a bank transfer of any amount to your Constant account. Now you're ready to start earning interest.",
             "step2": "Step 2",
-            "title2": "Earn daily interest",
-            "desc2": "Interest is paid out everyday like clockwork. We make sure your returns are guaranteed by only offering secured, over-collateralized loans.",
+            "title2": "Earn daily compound interest",
+            "desc2": "Interest is compounded everyday like clockwork. We make sure your returns are guaranteed by only offering secured, over-collateralized loans. ",
             "step3": "Step 3",
             "title3": "Withdraw funds",
             "desc3": "Easily withdraw funds to any local bank. When your CD term is up, simply choose the bank account you’d like to send your funds to. Interest earnings can be withdrawn anytime."
@@ -1372,12 +1372,12 @@
         },
         "transfer": {
             "title": "Transfer",
-            "caption": "How much do you want to send",
+            "caption": "How much do you want to send?",
             "yourBalance": "Your balance",
             "validateMaxInput": "Your amount must less than or equal: ${amount}",
             "transferFeeLabel": "Transfer fee",
             "subTitle": "Free. To anyone, anywhere.",
-            "introTitle": "Send money to anyone, anywhere. For free.",
+            "introTitle": "Send money to anyone, anywhere.",
             "transferBtn": "Send",
             "emailAddr": "Recipient’s email",
             "walletAddr": "Ethereum/EOS wallet address",
@@ -1430,7 +1430,7 @@
             "what": {
                 "whatCaption0": "Instant loans",
                 "whatCaption1": "Crypto for cash",
-                "whatCaption2": "2% annualized interest",
+                "whatCaption2": "7.5% annualized interest",
                 "whatCaption3": "Guaranteed approval",
                 "whatDesc0": "\n          <p>Our loan mechanism is secured and automated by smart contracts. No lengthy processing times - the money you need is in your account within the hour.</p>\n        ",
                 "whatDesc1": "\n          <p>Secure your loan with BTC or ETH and receive USD - all without needing to sell your crypto. Enjoy liquidity without needing to liquidate.</p>\n        ",
@@ -1513,18 +1513,18 @@
         "whatCaption0": "Earn 5x interest",
         "whatCaption1": "Save with confidence",
         "whatCaption2": "Save with purpose",
-        "whatCaption3": "No minimum deposit, no fees",
+        "whatCaption3": "We're here to help",
         "whatTitle": "What can you do with Constant?",
         "whatTitle0": "Save in USD",
         "whatTitle1": "Up to 130M USD",
         "whatTextLink1": "Read the full policy",
         "whatLink1": "/privacy-policy",
-        "whatDesc1": "<p>No minimum deposit required to unlock great rates. Choose a term that sounds good, and get your money to work for you.</p>\n<p>When your money isn’t on loan, it is stored in multiple FDIC-insured bank accounts, covered up to $130M.</p>",
+        "whatDesc1": "<p>We strictly require 150% in collateral on every loan. So if borrowers default, you don’t lose a cent. When your money isn’t on loan, it is stored in multiple FDIC-insured bank accounts, covered up to $130M. </p>",
         "whatTitle2": "By the US Government",
         "whatTitle3": "No minimum deposit",
-        "whatDesc0": "<p>Fairer loans are in high demand. That’s how we guarantee you 4% APY.</p>\n<p>We provide lower cost, fully secured loans to economies where capital is extremely expensive. All these loans are collateralized, so you don’t shoulder any risk.</p>",
-        "whatDesc2": "<p>Emerging economies borrow capital at 60% interest - or more. Give them a kinder alternative.</p>\n<p>Fund friendlier loans to earn greater interest. Put your money to more meaningful work.</p>",
-        "whatDesc3": "<p>There’s no minimum deposit required to unlock our best rates. We don’t charge account fees either, because you shouldn’t have to pay to save.</p>\n<p>And interest is paid out daily - for you to withdraw at any time.</p>",
+        "whatDesc0": "<p>We are able to offer you 4% APY by providing lower cost, fully secured loans to economies where capital is extremely expensive. This way, you get 5x the national average rate, and borrowers are able to access capital at a much fairer price. </p>",
+        "whatDesc2": "<p>You can choose how your money earns you money. Emerging economies borrow capital at 60% interest - or more. Earn 4% APY by funding friendlier loans and giving them a kinder alternative.</p>\n",
+        "whatDesc3": "<p>Have questions? We’d love to answer them. You work hard for your money, and deserve to know that it’ll be taken care of. Our diverse team speaks your language, and is here to help whenever you need. </p>",
         "whatMore0": "How we guarantee zero risk high returns",
         "whatMore1": "How we protect your money",
         "whatMore2": "How to pick a plan that’s right for you",
@@ -1710,7 +1710,7 @@
         }
     },
     "homeWhatwedo": {
-        "desc": "\n      <p>We are committed to economic freedom. That’s freedom of movement and freedom of choice. We are committed to economic equality. That’s equal accessibility and equal opportunity. In essence, we want to make money more useful, and growth more attainable, for anyone, anywhere in the world.</p>\n      <p>What does that look like? Fair interest rates. Inclusive loans. A state-less, stable currency that you can invest, borrow, and spend. Transactions secured and carried out collectively by users of the network. A financial solution for the people, made possible by the people.</p>\n      <p>Constant is proud to be 100% digital, online 24/7. So no waiting for your broker to pick up the phone, no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime. </p>\n    "
+        "desc": "\n      <p>We are committed to economic freedom. That’s freedom of movement and freedom of choice. We are committed to economic equality. That’s equal accessibility and equal opportunity. In essence, we want to make money more useful, and growth more attainable, for anyone, anywhere in the world.</p>\n      <p>What does that look like? Fair interest rates. Inclusive loans. Instant, global movement of money. Transactions secured and carried out collectively by users of the network. A financial solution for the people, made possible by the people.</p>\n      <p>Constant is proud to be 100% digital, online 24/7. So no waiting for your broker to pick up the phone, no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime. </p>\n    "
     },
     "faqs": {
         "title": "Frequently Asked Questions",
@@ -1865,7 +1865,7 @@
             "question1": "What is a Constant Savings Plan?",
             "answer1": "Our Savings Plans are simple, risk-free, and effective ways to grow your money. You choose a savings term, deposit your money, and at the end of the term you get your money back plus earned interest. It really is as simple as that.",
             "question2": "How do Constant Savings Plans work?",
-            "answer2": "\n        <p>Under the “SAVE” tab on our website, you’ll be able to choose from several different Savings Plans. Each one is designed to maintain the value of your deposit and pay you daily interest.</p>\n        <br />\n        <p>To maintain the value of your deposit, we convert your savings to USD – the world's reserve currency. Then, we lend your savings to overcollateralized borrowers and share the lending income with you as interest. You can withdraw this interest daily or save it until the end of your term.\n        <br />\n        <p>There is no risk to you since borrowers give us collateral that exceeds the value of the loan. If they don't repay, we sell their collateral in plenty of time to return your savings and pay you interest. </p>\n        <br />\n        <p>Of course, you don’t have to withdraw your savings. You could send money abroad, store it in your Constant account to keep the value locked to the USD, or start another Savings Plan to earn even more interest. The choice is yours!\n</p>\n      ",
+            "answer2": "\n        <p>Under the “SAVE” tab on our website, you’ll be able to choose from several different Savings Plans. Each one is designed to maintain the value of your deposit and pay you compounded interest.</p>\n        <br />\n        <p>To maintain the value of your deposit, we convert your savings to USD – the world's reserve currency. Then, we lend your savings to overcollateralized borrowers and share the lending income with you as interest. You can withdraw this interest at the end of your term.\n        <br />\n        <p>There is no risk to you since borrowers give us collateral that exceeds the value of the loan. If they don't repay, we sell their collateral in plenty of time to return your savings and pay you interest. </p>\n        <br />\n        <p>Of course, you don’t have to withdraw your savings. You could send money abroad, store it in your Constant account to keep the value locked to the USD, or start another Savings Plan to earn even more interest. The choice is yours!\n</p>\n      ",
             "question3": "How do you protect my savings?",
             "answer3": "Your deposits are securely held in the Constant Vault, which is overseen by an accredited US financial institution called Prime Trust. The Constant Vault is FDIC-insured to $130,000,000. You can read more about the Constant Vault on <a href=\"https://medium.com/@constantmoney\" target=\"_blank\">our blog</a>.",
             "question4": "Which currencies do you accept?",
@@ -1885,9 +1885,9 @@
         },
         "returns": {
             "question1": "How is interest paid out?",
-            "answer1": "We pay interest daily, so you can either wait until the end of your savings term to withdraw your interest or withdraw it each day. It’s up to you.",
-            "question2": "How is daily interest calculated?",
-            "answer2": "Your interest is calculated by applying the percentage rate of your Savings Plan to the amount of your deposit, and then dividing it by 365 to get a daily rate. Your interest is not compounded, so if you save $500 for one year at a rate of 4%, you would earn $20 interest at the end of your savings term (about $0.05 per day).",
+            "answer1": "Your interest is compounded and paid to you at the end of your savings term.",
+            "question2": "How is interest calculated?",
+            "answer2": "We compound and calculate your interest daily, so you earn interest on the interest you previously earned as well as on your savings capital. The Annual Percentage Yield (APY) of your Savings Plan takes this daily compounding into account.",
             "question3": "How can I track earned interest?",
             "answer3": "Just log into your account and click My Savings. You’ll see your total earned interest on the top right of the dashboard.",
             "question4": "Will you increase interest rates in the future?",
@@ -1925,7 +1925,7 @@
         "currencyDropdownLabel": "Your currency",
         "amountResultLabel": "According to the markets today, that is:",
         "buyBtn": "INVEST {fiatAmount} {fiatCurrency}",
-        "investNow": "MAKE A DEPOSIT",
+        "investNow": "Make a deposit",
         "amountTooSmall": "Your amount is too small, please try a larger amount",
         "noAgentAvaiable": "Please be patient with us, we’re trying to keep up. Try a smaller amount, or try again later.",
         "getAmountFailed": "Failed while getting amount, please try again",
@@ -1933,7 +1933,7 @@
         "loading": "Loading...",
         "amountMustBeLargerThan": "Your amount must be larger than {min} {fiatCurrency}",
         "howMuchDoYouWantToDeposit": "HOW MUCH DO YOU WANT TO INVEST? ",
-        "termLabel": "Choose a time horizon for your investment"
+        "termLabel": "Pick the savings option that works for you."
     },
     "exchangeInputDepositForm": {
         "minUsdRequired": "Please enter an amount larger than 0.01 USD",
@@ -1942,7 +1942,7 @@
         "currencyDropdownLabel": "Your currency",
         "amountResultLabel": "According to the markets today, that is:",
         "submitBtn": {
-            "depositNow": "DEPOSIT NOW",
+            "depositNow": "Deposit now",
             "depositWithAmount": "DEPOSIT {fiatAmount} {fiatCurrency}"
         },
         "noAgentAvaiable": "Please be patient with us, we’re trying to keep up. Try a smaller amount, or try again later.",
@@ -1975,7 +1975,7 @@
         "highlightText": "you keep all the interest.",
         "trialLeft": "{number} trials left.",
         "noMoreTrialLeft": "No more trial left.",
-        "submitBtn": "START YOUR FREE TRIAL",
+        "submitBtn": "Start your free trial",
         "btnDesc": "New customers only. This 1000 USD trial deposit will be returned at the end of your chosen term, but you keep all the interest.",
         "termLabel": "Choose a time horizon for your investment"
     },
@@ -1983,7 +1983,7 @@
         "label": "Choose a commitment period.",
         "month": "months",
         "rate": "{rate}%",
-        "apr": "Annual Return",
+        "apr": "APY",
         "amountText": "({amount} {currency})",
         "anytimeTerm": "anytime",
         "oneMonthTerm": "1 month",
@@ -2000,22 +2000,22 @@
                 "name": "Anytime"
             },
             "one": {
-                "name": "1-Month"
+                "name": "1-Month CD"
             },
             "three": {
-                "name": "3-Month"
+                "name": "3-Month CD"
             },
             "six": {
-                "name": "6-Month"
+                "name": "6-Month CD"
             },
             "oneYear": {
-                "name": "12-Month"
+                "name": "12-Month CD"
             }
         }
     },
     "saving": {
         "trialLeftNum": "ONLY {trialLeft} TRIALS LEFT",
-        "title": "<h1>Save 5x better</h1>",
+        "title": "<h1>Save 5x better.</h1>",
         "subTitle": "<h5>Saving can be even more rewarding. While you earn 4% annual interest (5x the national average), families and businesses in the emerging world benefit from friendlier lending.</h5>\n<h5>We protect your money by only offering risk-free, collateralized loans, at the kindest rates on the market. Then we pass those interest earnings on to you - because it’s your money, really.</h5>",
         "makeLocalOrderSuccess": "Your order was created successfully",
         "makeLocalOrderFailed": "Failed while creating your order",
@@ -2047,28 +2047,28 @@
     },
     "transfer": {
         "info": {
-            "title": "Send money to anyone, anywhere. For free.",
-            "desc1": "Having a global USD account means that your money can move freely all over the world. No matter how much you send - or how often - it won’t cost you a cent.",
-            "desc2": "When it reaches the other party, they don’t pay anything either. So send money home, do business with the world, and get it done instantly. That’s what it means to be global."
+            "title": "Send money to anyone, anywhere.",
+            "desc1": "It costs nothing to make as many transfers as you like - of any amount. Send money home, pay your international clients, transfer salaries to your distributed team. For free.",
+            "desc2": "The only fee we ever charge is for withdrawals to local bank accounts - at a nominal rate of 0.25% (never more than $35)."
         }
     },
     "deposit": {
         "title": "Your global USD bank account.",
         "availableInVn": "Available now in Vietnam.",
         "subTitle": {
-            "sub1": "Save in US dollars, instead of unstable local currencies. Enjoy instant transfers of any amount - to anyone or any business - anywhere in the world. For free.",
-            "sub2": "Your account is backed by the full faith and credit of the United States government, insured by the Federal Deposit Insurance Corporation (FDIC). Established in 1933, the FDIC has a perfect record of no lost funds.  {learnMore}",
+            "sub1": "It all starts here. Deposit funds to make a zero cost global transfer, multiply your interest earnings by 5x, and access the friendliest loans in the world.",
+            "sub2": "Easily transfer money in using your local bank account, and withdraw it when you’re done. Enjoy full FDIC-backed insurance on all deposits, and 24/7 support with anything you need. {learnMore}",
             "learnMore": "Learn more +"
         },
         "what": {
             "whatCaption0": "Protect the value of your money",
-            "whatCaption1": "Move your money anywhere for free",
-            "whatCaption2": "Insure your money up to $5M",
-            "whatCaption3": "Withdraw your money anytime",
-            "whatDesc0": "Save in USD, the world reserve currency, accepted by merchants worldwide. Protect your money against inflation and instability.",
+            "whatCaption1": "Send money globally, instantly",
+            "whatCaption2": "Insure your money up to $130M",
+            "whatCaption3": "Withdraw anytime",
+            "whatDesc0": "Save in USD, and protect your money against inflation and instability.",
             "whatDesc1": "Send and receive any amount, anywhere in the world, instantly and for free. Do bigger business, send money home, unlock greater mobility.",
-            "whatDesc2": "Benefit from the maximum coverage the FDIC provides - multiplied by 20. Since the FDIC insures each account up to $250K, we store your money across 20 of them.",
-            "whatDesc3": "Constant works with your local banking system to make sure that all your funds can be withdrawn anytime, in your currency of choice."
+            "whatDesc2": "The FDIC insures each account up to $250K, so we store your money across 520 of them.",
+            "whatDesc3": "To any local bank account. Just enter your bank details and you’re good to go."
         },
         "howItWorks": {
             "title": "How it works",
@@ -2076,11 +2076,11 @@
             "title1": "You make a deposit",
             "desc1": "Send any currency to your local Constant Trust. If it’s not USD, we convert it.",
             "step2": "STEP 2",
-            "title2": "We protect your money",
-            "desc2": "Your USD funds are held safely in fully insured US bank accounts.",
+            "title2": "We keep it safe",
+            "desc2": "Your USD funds are held safely in FDIC insured US bank accounts with a total coverage of $130M.\n",
             "step3": "STEP 3",
             "title3": "You get more",
-            "desc3": "Now you have a global USD account with free transfers and unlimited withdrawals.\n"
+            "desc3": "Congratulations. You now have access to free transfers, 4% interest earnings, and more."
         },
         "checklist": {
             "title": "Why you should save money with Constant.",
@@ -2179,10 +2179,10 @@
     },
     "newHome": {
         "banner": {
-            "title": "Like your bank, but better.",
+            "title": "Feel-good banking.",
             "subTitle": "Send money home and know it’ll arrive within minutes. Earn 4% annual interest on your savings, while helping underserved people across the world gain much needed access to opportunity.",
             "cta": "Open an account",
-            "ctaDesc": "\n        It’s free to open an account. Available locations: World."
+            "ctaDesc": "It's free."
         },
         "subjects": {
             "banking": {
@@ -2208,7 +2208,7 @@
                     "desc": "Earn 5x the national average rate. Don’t sit on your money, put it to work."
                 },
                 "desc2": {
-                    "title": "Returns paid out daily. Withdraw anytime.",
+                    "title": "Daily compound interest.",
                     "desc": "We’re proud of our rates, and we don’t want you to have to wait to enjoy them."
                 },
                 "desc3": {

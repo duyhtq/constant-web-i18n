@@ -465,7 +465,7 @@
             },
             "emailNotVerified": "Please verify your email.",
             "verifyBtn": "Resend verification",
-            "enable2Fa": "Enable 2FA"
+            "enable2Fa": "Enable 2FA to add extra security to your account"
         },
         "changePassword": {
             "newPasswordIsRequired": "New password is required",
@@ -477,16 +477,16 @@
             "changeFailed": "Please make sure you have typed in your old password correctly"
         },
         "twoFa": {
-            "description2Fa": "Your personal information is never shown to other users",
+            "description2Fa": "Important actions (withdraw, transfer, etc.) will require you to enter a password via Google Authenticator or Authy.",
             "qrScanModal": {
                 "title": "Scan QR Code",
-                "inputCode": "Enter your code",
+                "inputCode": "Enter password",
                 "close": "Close",
                 "submit": "Submit"
             },
             "disable2FaModal": {
-                "title": "Disable Two Factor",
-                "inputCode": "Enter your code",
+                "title": "Disable 2FA",
+                "inputCode": "Enter password",
                 "close": "Close",
                 "submit": "Submit"
             },

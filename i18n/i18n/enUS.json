@@ -465,7 +465,7 @@
             },
             "emailNotVerified": "Please verify your email.",
             "verifyBtn": "Resend verification",
-            "enable2Fa": "Enable 2FA"
+            "enable2Fa": "Enable 2FA to add extra security to your account"
         },
         "changePassword": {
             "newPasswordIsRequired": "New password is required",
@@ -477,16 +477,16 @@
             "changeFailed": "Please make sure you have typed in your old password correctly"
         },
         "twoFa": {
-            "description2Fa": "Your personal information is never shown to other users",
+            "description2Fa": "Important actions (withdraw, transfer, etc.) will require you to enter a password via Google Authenticator or Authy.",
             "qrScanModal": {
                 "title": "Scan QR Code",
-                "inputCode": "Enter your code",
+                "inputCode": "Enter password",
                 "close": "Close",
                 "submit": "Submit"
             },
             "disable2FaModal": {
-                "title": "Disable Two Factor",
-                "inputCode": "Enter your code",
+                "title": "Disable 2FA",
+                "inputCode": "Enter password",
                 "close": "Close",
                 "submit": "Submit"
             },
@@ -1787,9 +1787,9 @@
         },
         "tech": {
             "question1": "Why do you digitize my savings?",
-            "answer1": "\n        <p>When you save for the long term, some local currencies can lose value due to inflation. This eats into your interest, making saving an uphill battle. We don’t think that’s fair. So instead, we convert your savings into a “digital dollar” that’s 100% backed by real USD – the world’s reserve currency.</p>\n        <br />\n        <p>Our digital dollar is called Constant. Anytime you save or withdraw, we create or destroy Constant to ensure it’s 1:1 backed, always matching the value of USD. That way, you never need worry about inflation and other economic pressures eating into your interest. You just sit back and watch your money grow.</p>\n      ",
+            "answer1": "\n        <p>When you save for the long term, some local currencies can lose value due to inflation. This eats into your interest, making saving an uphill battle. We don’t think that’s fair. So instead, we convert your savings into a “digital dollar” that’s 100% backed by real USD – the world’s reserve currency.</p>\n        <p>Our digital dollar is called Constant. Anytime you save or withdraw, we create or destroy Constant to ensure it’s 1:1 backed, always matching the value of USD. That way, you never need worry about inflation and other economic pressures eating into your interest. You just sit back and watch your money grow.</p>\n      ",
             "question2": "How does digitization work?",
-            "answer2": "\n        <p>First, we send your savings to the Constant Vault for safekeeping. Then, we create new Constant tokens on the Ethereum blockchain that match the USD value of your savings. For example, if you gave us the equivalent of $100 in your local currency, we send $100 to the Constant Vault and create 100 Constant.</p>\n        <br />\n        <p>We then put your savings to work by lending them to overcollateralized borrowers. There is no risk to you since borrowers give us collateral that exceeds the value of the loan. We then use this extra lending income to pay you better interest rates. \n         <br />\n         <p>When your term ends, you can withdraw your savings and interest and we’ll destroy the Constant. Or, if you’d rather use the Constant tokens to send money abroad, trade on exchanges, or save for another period, please do!</p>\n      "
+            "answer2": "\n        <p>First, we send your savings to the Constant Vault for safekeeping. Then, we create new Constant tokens on the Ethereum blockchain that match the USD value of your savings. For example, if you gave us the equivalent of $100 in your local currency, we send $100 to the Constant Vault and create 100 Constant.</p>\n        <p>We then put your savings to work by lending them to overcollateralized borrowers. There is no risk to you since borrowers give us collateral that exceeds the value of the loan. We then use this extra lending income to pay you better interest rates.\n         <p>When your term ends, you can withdraw your savings and interest and we’ll destroy the Constant. Or, if you’d rather use the Constant tokens to send money abroad, trade on exchanges, or save for another period, please do!</p>\n      "
         },
         "withdraw": {
             "question1": "How do I withdraw Constant?",
@@ -1881,7 +1881,7 @@
             "question9": "What is the Constant Vault?",
             "answer9": "The Constant Vault is a publicly-audited trust overseen and managed by Prime Trust, a US accredited financial institution. The Constant Vault is regulated in the US and insured by the FDIC to the value of $130,000,000. When your money isn't on loan, your money is kept safe inside the Constant Vault. ",
             "question10": "What is FDIC insurance?",
-            "answer10": "\n        <p>The Federal Deposit Insurance Corporation (FDIC) is a body set up by the US government to protect the integrity of the US financial system. It does this in a number of ways, including insuring deposits. You can <a href=\"https://www.fdic.gov/about/strategic/strategic/mission.html\" target=\"_blank\">read more about the FDIC on their website.</a></p>\n        <br />\n        <p>When your money isn't on loan, we keep it safe across multiple FDIC-insured bank accounts, bringing total coverage to $130,000,000.</p>\n      "
+            "answer10": "\n        <p>The Federal Deposit Insurance Corporation (FDIC) is a body set up by the US government to protect the integrity of the US financial system. It does this in a number of ways, including insuring deposits. You can <a href=\"https://www.fdic.gov/about/strategic/strategic/mission.html\" target=\"_blank\">read more about the FDIC on their website.</a></p>\n        <p>When your money isn't on loan, we keep it safe across multiple FDIC-insured bank accounts, bringing total coverage to $130,000,000.</p>\n      "
         },
         "returns": {
             "question1": "How is interest paid out?",
@@ -1891,15 +1891,15 @@
             "question3": "How can I track earned interest?",
             "answer3": "Just log into your account and click My Savings. You’ll see your total earned interest on the top right of the dashboard.",
             "question4": "Will you increase interest rates in the future?",
-            "answer4": "\n        <p>You never know ;-)</p>\n        <br />\n        <p>As Constant grows, we’re always looking for new ways of improving our efficiency so we can give you the best interest rates on the market.</p>\n     ",
+            "answer4": "<p>You never know ;-)</p>\n<p>As Constant grows, we’re always looking for new ways of improving our efficiency so we can give you the best interest rates on the market.</p>",
             "question5": "How can you offer such high interest rates?",
-            "answer5": "\n        <p>We pay interest from earnings we make on our risk-free loans. We can afford to give you higher rates than banks because we use technology to strip out inefficiency and boost income.</p>\n        <br />\n        <p>As a tech company disrupting the finance sector, we don’t need branches, managers, or advisors. Instead, we use custom-designed blockchain technology to remove costly middlemen and intermediary processes, while still providing an auditable transaction history. As a result, we can afford to give much better interest rates on your savings.</p>\n      "
+            "answer5": "\n        <p>We pay interest from earnings we make on our risk-free loans. We can afford to give you higher rates than banks because we use technology to strip out inefficiency and boost income.</p>\n        <p>As a tech company disrupting the finance sector, we don’t need branches, managers, or advisors. Instead, we use custom-designed blockchain technology to remove costly middlemen and intermediary processes, while still providing an auditable transaction history. As a result, we can afford to give much better interest rates on your savings.</p>"
         },
         "general": {
             "question1": "What is Constant?",
             "answer1": "\n        <p>Constant is a financial services platform that helps you do more with your money. From savings to loans, our financial services leverage the best of blockchain tech to put you first, helping you achieve economic freedom.</p>\n        <p>We’ve thrown out credit scoring, paperwork, and fees to give you more of what you deserve – industry-leading rates, risk-free loans, a stable, state-less currency, and free international transfers.</p>\n        <p>Available all day, every day, anywhere in the world.</p>",
             "question2": "Is Constant a bank?",
-            "answer2": "\n        <p>No. Constant is even better.</p>\n        <br />\n        <p>We’re 100% digital and open 24-7, so no queuing at bank branches, and no bank holidays.</p>\n        <br />\n        <p>Our Savings Plans earn you up to 40x more interest than a typical savings account. And our Crypto Loans offer some of the lowest interest rates on the market.</p>\n        <br />\n        <p>We don’t run credit checks, we don’t give you reams of paperwork to sign, and we are open to anyone, anywhere.</p>\n      ",
+            "answer2": "\n        <p>No. Constant is even better.</p>\n        <p>We’re 100% digital and open 24-7, so no queuing at bank branches, and no bank holidays.</p>\n        <p>Our Savings Plans earn you up to 40x more interest than a typical savings account. And our Crypto Loans offer some of the lowest interest rates on the market.</p>\n        <p>We don’t run credit checks, we don’t give you reams of paperwork to sign, and we are open to anyone, anywhere.</p>\n      ",
             "question3": "Is Constant regulated?",
             "answer3": "Yes. When not on loan, your savings are stored in the Constant Vault, which is regulated under US law. That’s why we ask you to verify your identity when you withdraw savings to your bank account.",
             "question4": "How does Constant make money?",

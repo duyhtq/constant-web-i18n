@@ -56,7 +56,7 @@
     "footer": {
         "cta": {
             "type1": {
-                "title": "<h3>Start earning interest.</h3>",
+                "title": "<h3>Grow your savings.</h3>",
                 "btn": "Make a deposit"
             },
             "type2": {
@@ -704,7 +704,7 @@
             "bankName": "Bank Name",
             "action": "Action",
             "editActionLabel": "Edit",
-            "bankAccountName": "Account Name",
+            "bankAccountName": "Account name",
             "bankAccountCurrency": "Account Currency",
             "bankCountryAndCurrency": "Country/Currency",
             "bankCountry": "Bank Country",
@@ -829,7 +829,7 @@
                 "haveTimeAccount": "{term}-{termType} deposit",
                 "month": "month",
                 "anyTimeAccount": "Anytime deposit",
-                "endTerm": "Deposit term ends:",
+                "endTerm": "CD term ends:",
                 "trial": "TRIAL",
                 "trial_description": "You keep the interest. Term has ended",
                 "saving_title": "Time Deposits (CD)",
@@ -1216,18 +1216,18 @@
                 "introHolderTemplate": "\n          <h1>Buy from local sellers in {country}</h1>\n          <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n          <p>Email us at <a href=\"mailto:{email}\">{email}</a></p>\n          <p>Or</p>\n          <p>Chat with us at <a href=\"telegram:{telegram}\">{telegram}</a></p>\n        ",
                 "confirmTemplate": "\n          <div name=\"thanks\">\n            <p>Thanks! Please wire <strong>{FiatAmount} {FiatCurrency}</strong> to the seller's bank account.</p>\n          </div>\n          <div name=\"bank\">\n            <p>\n              <span>Bank:</span>\n              <span>{BankName}</span>\n            </p>\n            <p>\n              <span>Account Name:</span>\n              <span>{BankAccountName}</span>\n            </p>\n            <p>\n              <span>Account Number: </span>\n              <span>{BankAccountNumber}</span>\n            </p>\n            <p>\n              <span>Amount: </span>\n              <span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n            </p>\n            <p>\n              <span>Constant: </span>\n              <span>{Amount}&nbsp;{Currency}</span>\n            </p>\n            <p>\n              <span>Reference: </span>\n              <span>{Reference}</span>\n            </p>\n          </div>\n          <div name=\"notice\">\n            <b name=\"important\">IMPORTANT:</b>\n            <span>\n              Do include your reference number <b>{Reference}</b> in the transfer description\n            </span>\n          </div>\n          <div name=\"window\">\n            <strong name=\"minutes\">30 MINUTE WINDOW: </strong>\n            <span>\n              Please complete your transfer <b>within 30 minutes</b>. After that, your\n              order will be automatically cancelled.\n            </span>\n          </div>\n        ",
                 "cryptoAddress": "Crypto Address",
-                "accountName": "Account Name:",
-                "accountNumber": "Account Number:",
-                "amount": "Amount:",
+                "accountName": "Account name",
+                "accountNumber": "Account number",
+                "amount": "Amount",
                 "value": "Value",
-                "constant": "Constant:",
-                "reference": "Reference:",
+                "constant": "Constant",
+                "reference": "Reference",
                 "buyThankMsg": "Please wire {fiatAmount} {fiatCurrency} to the seller's bank account.",
                 "buyThankMsgCrypto": "Please wire {fiatAmount} {fiatCurrency} to the seller's crypto address.",
                 "importantMsg": "Do include your reference number {referenceNumber} in the transfer description.",
-                "important": "IMPORTANT",
+                "important": "Important",
                 "thankYou": "Thank you!",
-                "minuteWindow": "15 MINUTE WINDOW:",
+                "minuteWindow": "15 minute window",
                 "minuteWindowDescription": "Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled."
             },
             "sell": {
@@ -2090,18 +2090,18 @@
         "trialLeftNum": "ONLY {trialLeft} TRIALS LEFT",
         "title": "<h1>Save 5x better.</h1>",
         "subTitle": "<h5>Earn up to 4.00% APY and multiply your savings by 5x the national average.</h5>\n            <br />\n<ul>\n  <li><b>No minimum deposit.</b><br />Start at any amount you feel comfortable with.</li>\n  <br />\n  <li><b>Daily compound interest.</b><br />Earn interest on your interest. Your savings grow faster, every single day.</li>\n</ul>",
-        "makeLocalOrderSuccess": "Your order was created successfully",
+        "makeLocalOrderSuccess": "Thanks! Please make a transfer from your bank.",
         "crypto_amount_exists": "Crypto amount exists",
         "makeLocalOrderFailed": "Failed while creating your order",
-        "makeDirectOrderSuccess": "Your order was created successfully",
+        "makeDirectOrderSuccess": "Thanks! Please make a transfer from your bank.",
         "makeDirectOrderFailed": "Failed while creating your order",
-        "makeTrialOrderSuccess": "Your order was created successfully",
+        "makeTrialOrderSuccess": "Congrats! Your trial has been activated.",
         "makeTrialOrderFailed": "Failed while creating your order"
     },
     "withdraw": {
-        "makeLocalOrderSuccess": "Your order was created successfully",
+        "makeLocalOrderSuccess": "Success! Your funds should reach you shortly.",
         "makeLocalOrderFailed": "Failed while creating your order",
-        "makeDirectOrderSuccess": "Your order was created successfully",
+        "makeDirectOrderSuccess": "Success! Your funds should reach you shortly.",
         "makeDirectOrderFailed": "Failed while creating your order",
         "info": {
             "title": "Withdraw in any currency.",

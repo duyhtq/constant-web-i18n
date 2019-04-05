@@ -162,6 +162,23 @@
                 "title": "Kinh doanh tài chính",
                 "subTitle": "Bảo đảm bằng tài khoản"
             }
+        },
+        "techTeam": {
+            "title": "Tech & Team",
+            "hoverMenu": {
+                "constantCoin": {
+                    "title": "Constant Coin",
+                    "subTitle": "1:1 USD-pegged stablecoin"
+                },
+                "constantChain": {
+                    "title": "Constant Chain",
+                    "subTitle": "Privacy, Scalability & Stability"
+                },
+                "team": {
+                    "title": "Team",
+                    "subTitle": "Research, Engineering & Community"
+                }
+            }
         }
     },
     "error": {
@@ -246,6 +263,7 @@
             "myOrders": "Gửi và rút tiền",
             "localHistory": "Chuyển khoản và thu nhập lãi",
             "wallets": "Ví của tôi",
+            "cryptoWallet": "My Crypto Wallets",
             "changePassword": "Đổi mật khẩu",
             "preferecens": "Tuỳ chỉnh",
             "accountLevel": "Cấp độ tài khoản",
@@ -465,7 +483,7 @@
             },
             "emailNotVerified": "Xin vui lòng xác nhận email của bạn.",
             "verifyBtn": "Gửi lại email xác minh",
-            "enable2Fa": "Enable 2FA"
+            "enable2Fa": "Enable 2FA to add extra security to your account"
         },
         "changePassword": {
             "newPasswordIsRequired": "Nhập mật khẩu mới",
@@ -477,16 +495,17 @@
             "changeFailed": "Hãy chắc chắn bạn đã nhập đúng mật khẩu cũ"
         },
         "twoFa": {
-            "description2Fa": "Your personal information is never shown to other users",
+            "description2Fa": "Important actions (withdraw, transfer, etc.) will require you to enter a password via Google Authenticator or Authy.",
             "qrScanModal": {
                 "title": "Scan QR Code",
-                "inputCode": "Enter your code",
+                "description": "Please scan this code with Google Authenticator or Authy, then enter the password sent to you.",
+                "inputCode": "Enter password",
                 "close": "Close",
                 "submit": "Submit"
             },
             "disable2FaModal": {
-                "title": "Disable Two Factor",
-                "inputCode": "Enter your code",
+                "title": "Disable 2FA",
+                "inputCode": "Enter password",
                 "close": "Close",
                 "submit": "Submit"
             },
@@ -719,6 +738,47 @@
                 }
             }
         },
+        "addressWalletInfo": {
+            "emptyAddress": "You don't have any Wallet yet!",
+            "getWalletFailed": "Failed while getting user list banks",
+            "btnAdd": "Add a new wallet address",
+            "titleAddWallet": "Add a new Wallet address",
+            "titleUpdateWallet": "Update Wallet address",
+            "btnSubmit": "Add Wallet",
+            "btnUpdate": " Save",
+            "btnRemove": " Delete",
+            "title": "Wallets Information",
+            "desc": "Add your bank account details now to receive attractive commission from referral programs and faster payment",
+            "address": "Address",
+            "currency": "Currency",
+            "active": "Active",
+            "action": "Action",
+            "editActionLabel": "Edit",
+            "alert": {
+                "success": "Successfully Updated",
+                "failed": "Failed To Update",
+                "deleteSuccess": "Successfully Deleted",
+                "deleteFailed": "Failed To Delete",
+                "wallet_address_exists": "Wallet address for this currency exists",
+                "crypto_address_exists": "Wallet address for this currency exists",
+                "invalid_crypto_address": "Invalidated Wallet address for this currency",
+                "wallet_address_in_use": "This Wallet address can't removing because it is used"
+            },
+            "dialog": {
+                "update": {
+                    "title": "Confirm Update",
+                    "body": "Are you sure to update?",
+                    "confirm": "Yes",
+                    "cancel": "No"
+                },
+                "delete": {
+                    "title": "Confirm Delete",
+                    "body": "Are you sure to delete?",
+                    "confirm": "Yes",
+                    "cancel": "No"
+                }
+            }
+        },
         "emailVerification": {
             "pleaseVerify": "Vui lòng xác minh email để kích hoạt tài khoản",
             "resent": "Gửi lại email xác minh",
@@ -735,11 +795,17 @@
             "verifySuccess": "Số điện thoại của bạn đã được xác minh thành công. Tài khoản của bạn đang ở Cấp độ 2"
         },
         "kycVerification": {
-            "pleaseComplete": "Xin vui lòng thực hiện KYC để {action}.",
+            "pleaseComplete": "Please complete the KYC process to {action}.",
             "complete": "Hoàn tất KYC",
             "updatedSuccess": "Thông tin của bạn đã được cập nhật thành công",
             "updatedFailed": "Cập nhật thông tin không thành công. Xin vui lòng thử lại!",
-            "checkVerifyFailed": "Có lỗi xảy ra khi kiểm tra trạng thái xác minh tài khoản của bạn"
+            "checkVerifyFailed": "Có lỗi xảy ra khi kiểm tra trạng thái xác minh tài khoản của bạn",
+            "action": {
+                "invest": "invest",
+                "transfer": "transfer",
+                "deposit": "deposit",
+                "withdraw": "withdraw"
+            }
         },
         "referDialog": {
             "labelShare": "Mời bạn bè sử dụng Constant",
@@ -1149,6 +1215,7 @@
                 },
                 "introHolderTemplate": "\n<h1>Mua nội địa tại {country}</h1>\n        <p>Để trở thành người đầu tiên mua và bán Constant tại quốc gia của bạn, hãy liên hệ với chúng tôi để bắt đầu</p>\n        <p>Gửi email cho chúng tôi tại <a href=\"mailto:{email}\">{email}</a></p>\n        <p>Hoặc</p>\n        <p>Chat với chúng tôi <a href=\"telegram:{telegram}\">{telegram}</a></p>\n        ",
                 "confirmTemplate": "\n<div name=\"thanks\">\n<p>Cảm ơn! Xin vui lòng gửi <strong>{FiatAmount}{FiatCurrency}</strong> tới tài khoản ngân hàng của người bán.</p>\n</div>\n<div name=\"bank\">\n<p>\n<span>Tên ngân hàng:</span>\n<span>{BankName}</span>\n</p>\n<p>\n<span>Tên tài khoản:</span>\n<span>{BankAccountName}</span>\n</p>\n<p>\n<span>Số tài khoản:</span>\n<span>{BankAccountNumber}</span>\n</p>\n<p>\n<span>Số tiền:</span>\n<span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n</p>\n<p>\n<span>Constant:</span>\n<span>{Amount}&nbsp;{Currency}</span>\n</p>\n<p>\n<span>Mã giao dịch</span>\n<span>{Reference}</span>\n</p>\n</div>\n<div name=\"notice\">\n<b name=\"important\">CHÚ Ý:</b>\n<span>\nLuôn ghi mã giao dịch <b>{Reference}</b> trong phần nội dung chuyển khoản\n</span>\n</div>\n<div name=\"window\">\n<strong name=\"minutes\">30 PHÚT:</strong>\n<span>\nVui lòng chuyển khoản <b>trong vòng 30 phút</b>. Nếu không, giao dịch sẽ tự động bị huỷ bỏ.\n</span>\n</div>        ",
+                "cryptoAddress": "Crypto Address",
                 "accountName": "Tên tài khoản:",
                 "accountNumber": "Số tài khoản:",
                 "amount": "Số lượng:",
@@ -1156,6 +1223,7 @@
                 "constant": "Constant:",
                 "reference": "Mã giao dịch:",
                 "buyThankMsg": "Xin vui lòng chuyển {fiatAmount}{fiatCurrency} tới tài khoản ngân hàng của người bán.",
+                "buyThankMsgCrypto": "Please wire {fiatAmount} {fiatCurrency} to the seller's crypto address.",
                 "importantMsg": "Hãy nhớ điền mã giao dịch {referenceNumber} trong phần nội dung chuyển khoản.",
                 "important": "LƯU Ý",
                 "thankYou": "Xin cảm ơn!",
@@ -1247,7 +1315,8 @@
                     "close": "Đóng",
                     "agreeSell": "Đồng ý đổi",
                     "confirmText": "Bạn đang bán {amount} {currency}",
-                    "confirmSubText": "Vui lòng kiểm tra thông tin của bạn một lần nữa."
+                    "confirmSubText": "Vui lòng kiểm tra thông tin của bạn một lần nữa.",
+                    "input2FA": "Input 2FA"
                 },
                 "orderInfo": {
                     "buyTitle": "Xác Nhận Mua Constant",
@@ -1881,7 +1950,11 @@
             "question9": "Quỹ tín thác Constant là gì?",
             "answer9": "Quỹ Constant là một quỹ tín thác được kiểm toán và kiểm soát bởi Prime Trust - một tổ chức giám sát tài chính độc lập có uy tín của Mỹ. Quỹ Constant được bảo hộ bởi pháp luật Mỹ và được bảo hiểm bởi FDIC lên tới 130,000,000 USD (mỗi tài khoản được bảo hiểm tối đa 5,000,000 USD).",
             "question10": "Bảo hiểm của FDIC là gì?",
-            "answer10": "\n<p>Công ty Bảo hiểm Ký thác Liên bang Hoa Kỳ (FDIC) là một tổ chức được điều hành bởi chính phủ Hoa Kỳ để bảo đảm sự minh bạch của hệ thống tài chính Hoa Kỳ. FDIC thực hiện rất nhiều hoạt động, trong đó có bảo hiểm tiền gửi. Quỹ Constant được FDIC bảo hiểm lên tới 130,000,000 USD. Bạn có thể đọc thêm về FDIC <a href=\"https://www.fdic.gov/about/strategic/strategic/mission.html\" target=\"_blank\">ở đây</a>.</p>      \n<br />\n<p>Mỗi tài khoản được FDIC bảo hiểm tối đa lên tới 5,000,000 USD.</p>      "
+            "answer10": "\n<p>Công ty Bảo hiểm Ký thác Liên bang Hoa Kỳ (FDIC) là một tổ chức được điều hành bởi chính phủ Hoa Kỳ để bảo đảm sự minh bạch của hệ thống tài chính Hoa Kỳ. FDIC thực hiện rất nhiều hoạt động, trong đó có bảo hiểm tiền gửi. Quỹ Constant được FDIC bảo hiểm lên tới 130,000,000 USD. Bạn có thể đọc thêm về FDIC <a href=\"https://www.fdic.gov/about/strategic/strategic/mission.html\" target=\"_blank\">ở đây</a>.</p>      \n<br />\n<p>Mỗi tài khoản được FDIC bảo hiểm tối đa lên tới 5,000,000 USD.</p>      ",
+            "question11": "Why do you lend my savings to borrowers?",
+            "answer11": "<p>\n        We lend your savings to borrowers so we can pay you better interest rates. Aside from seeing your money grow, you won’t notice any changes to your Savings Plan. There’s no risk to you as all our loans are overcollateralized, meaning we only lend to people who put up collateral worth more than the loan. If someone doesn’t repay, we sell collateral on the market. This guarantees we can always return your savings and pay you interest.\n      </p>",
+            "question12": "Is there a minimum or maximum amount I can save?",
+            "answer12": "\n        <p>No. You can save as much or as little as you like.</p>\n      "
         },
         "returns": {
             "question1": "Lãi suất được trả như thế nào?",
@@ -2018,6 +2091,7 @@
         "title": "<h1><span>Hãy đầu tư</span>theo cách của bạn.</h1>",
         "subTitle": "Constant - nền tảng kết nối nhà đầu tư và người cần vay thế chấp đảm bảo khoản đầu tư liên tục sinh lãi và được bảo hiểm 100%. Bạn chỉ cần chọn kì hạn thích hợp, Constant sẽ giúp bạn đầu tư an toàn và thông minh.",
         "makeLocalOrderSuccess": "Lệnh của bạn được tạo thành công",
+        "crypto_amount_exists": "Crypto amount exists",
         "makeLocalOrderFailed": "Lệnh của bạn không được tạo thành công",
         "makeDirectOrderSuccess": "Lệnh của bạn được tạo thành công",
         "makeDirectOrderFailed": "Lệnh của bạn không được tạo thành công",
@@ -2177,6 +2251,26 @@
             "desc": "Theo dõi giá thị trường, lịch sử giao dịch, khối lượng giao dịch và những biến động của Constant trên tất cả các sàn giao dịch."
         }
     },
+    "constantChain": {
+        "info": {
+            "title": "Constant Chain",
+            "desc": "While Constant Coin (CONST) initially runs on the Ethereum blockchain as an ERC20 token, the long term plan is to for it to run on its own blockchain.  This is important — by building its own blockchain from scratch, we’ll be able to tailor it to its unique features such as privacy and price stability.  It will allow us to test new ideas, algorithms and mechanisms faster — especially those that Ethereum doesn’t fit, such as fast Zero-Knowledge Proof generation."
+        },
+        "what": {
+            "whatCaption0": "Read Constant source code",
+            "whatCaption1": "Download Constant Wallet",
+            "whatCaption2": "Run a Constant node",
+            "whatCaption3": "Explore Constant Block Explorer",
+            "whatDesc0": "Constant Chain is open-source; its design is public, nobody owns or controls COnstant and everyone can take part.",
+            "whatDesc1": "Constant Chain is open-source; its design is public, nobody owns or controls COnstant and everyone can take part.",
+            "whatDesc2": "Constant Chain is open-source; its design is public, nobody owns or controls COnstant and everyone can take part.",
+            "whatDesc3": "Constant Chain is open-source; its design is public, nobody owns or controls COnstant and everyone can take part.",
+            "whatButton0": "Browse Github",
+            "whatButton1": "Download",
+            "whatButton2": "Download",
+            "whatButton3": "Explore"
+        }
+    },
     "newHome": {
         "banner": {
             "title": "Ưu việt hơn ngân hàng.",
@@ -2232,6 +2326,45 @@
                     "desc": "Constant tạo điều kiện tốt nhất cho người đi vay. Không cần điểm tín dụng, không kiểm tra lịch sử tín dụng và không mất thời gian chờ đợi cả tháng trời để được duyệt cho vay."
                 },
                 "link": "Vay thế chấp nhận tiền liền tay"
+            }
+        }
+    },
+    "constantCoin": {
+        "info": {
+            "title": "Constant Coin",
+            "desc": "Borderless banking requires a borderless currency. Constant is a digital dollar, a stablecoin pegged 1:1 with the USD - designed to blend the best of the existing financial system with the fairness and freedom now possible with blockchain technology. Most importantly, anyone can own Constant, and access the financial solutions it unlocks. Constant is available via local banks as well as international cryptocurrency exchanges."
+        },
+        "what": {
+            "whatCaption0": "FDIC insured",
+            "whatCaption1": "Built on Ethereum",
+            "whatCaption2": "1 Constant = 1 USD",
+            "whatCaption3": "Borderless",
+            "whatDesc0": "Every Constant Coin is fully backed by USD, held in a series of FDIC-insured vaults, for coverage of $5M per account. Guaranteed by the US government.",
+            "whatDesc1": "Constant is secured by the combined computing power of the Ethereum network. Transactions are executed using publicly verifiable smart contracts.",
+            "whatDesc2": "The value of Constant is fixed at 1:1 with the USD. Redeemable for fiat at any time, Constant helps preserve the value of volatile currencies.",
+            "whatDesc3": "Anyone can own Constant. That means anyone can have a global USD account, enjoy free worldwide transfers, and access smarter financial solutions.",
+            "whatButton0": "How we protect your money",
+            "whatButton1": "View our smart contract",
+            "whatButton2": "How we guarantee stability",
+            "whatButton3": "Get Constant"
+        },
+        "howItWorks": {
+            "title": "More about the Constant Coin",
+            "desc": "Constant was designed to be a coin for the community, and will continue to be. We tackle user questions and publish development updates frequently. If you have a question or an idea that you want us to explore, drop us message on [telegram].",
+            "link": "Browse all blog posts >",
+            "items": {
+                "date1": "March 19, 2019",
+                "title1": "Introduction to the Constant Chain",
+                "date2": "March 19, 2019",
+                "title2": "Introduction to the Constant Chain",
+                "date3": "March 19, 2019",
+                "title3": "Introduction to the Constant Chain",
+                "date4": "March 19, 2019",
+                "title4": "Introduction to the Constant Chain",
+                "date5": "March 19, 2019",
+                "title5": "Introduction to the Constant Chain",
+                "date6": "March 19, 2019",
+                "title6": "Introduction to the Constant Chain"
             }
         }
     }

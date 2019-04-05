@@ -162,6 +162,23 @@
                 "title": "Business Financing",
                 "subTitle": "Secured by Account"
             }
+        },
+        "techTeam": {
+            "title": "Tech & Team",
+            "hoverMenu": {
+                "constantCoin": {
+                    "title": "Constant Coin",
+                    "subTitle": "1:1 USD-pegged stablecoin"
+                },
+                "constantChain": {
+                    "title": "Constant Chain",
+                    "subTitle": "Privacy, Scalability & Stability"
+                },
+                "team": {
+                    "title": "Team",
+                    "subTitle": "Research, Engineering & Community"
+                }
+            }
         }
     },
     "error": {
@@ -246,6 +263,7 @@
             "myOrders": "Deposits and withdrawals",
             "localHistory": "Transfers and interest earnings",
             "wallets": "My Wallets",
+            "cryptoWallet": "My Crypto Wallets",
             "changePassword": "Change my password",
             "preferecens": "Preferences",
             "accountLevel": "Account Level",
@@ -480,6 +498,7 @@
             "description2Fa": "Important actions (withdraw, transfer, etc.) will require you to enter a password via Google Authenticator or Authy.",
             "qrScanModal": {
                 "title": "Scan QR Code",
+                "description": "Please scan this code with Google Authenticator or Authy, then enter the password sent to you.",
                 "inputCode": "Enter password",
                 "close": "Close",
                 "submit": "Submit"
@@ -719,6 +738,47 @@
                 }
             }
         },
+        "addressWalletInfo": {
+            "emptyAddress": "You don't have any Wallet yet!",
+            "getWalletFailed": "Failed while getting user list banks",
+            "btnAdd": "Add a new wallet address",
+            "titleAddWallet": "Add a new Wallet address",
+            "titleUpdateWallet": "Update Wallet address",
+            "btnSubmit": "Add Wallet",
+            "btnUpdate": " Save",
+            "btnRemove": " Delete",
+            "title": "Wallets Information",
+            "desc": "Add your bank account details now to receive attractive commission from referral programs and faster payment",
+            "address": "Address",
+            "currency": "Currency",
+            "active": "Active",
+            "action": "Action",
+            "editActionLabel": "Edit",
+            "alert": {
+                "success": "Successfully Updated",
+                "failed": "Failed To Update",
+                "deleteSuccess": "Successfully Deleted",
+                "deleteFailed": "Failed To Delete",
+                "wallet_address_exists": "Wallet address for this currency exists",
+                "crypto_address_exists": "Wallet address for this currency exists",
+                "invalid_crypto_address": "Invalidated Wallet address for this currency",
+                "wallet_address_in_use": "This Wallet address can't removing because it is used"
+            },
+            "dialog": {
+                "update": {
+                    "title": "Confirm Update",
+                    "body": "Are you sure to update?",
+                    "confirm": "Yes",
+                    "cancel": "No"
+                },
+                "delete": {
+                    "title": "Confirm Delete",
+                    "body": "Are you sure to delete?",
+                    "confirm": "Yes",
+                    "cancel": "No"
+                }
+            }
+        },
         "emailVerification": {
             "pleaseVerify": "Please verify your email to activate your account",
             "resent": "Resend email verification",
@@ -739,7 +799,13 @@
             "complete": "Complete KYC",
             "updatedSuccess": "Information updated",
             "updatedFailed": "Failed while updating your information, please try again!",
-            "checkVerifyFailed": "Something went wrong, please try again."
+            "checkVerifyFailed": "Something went wrong, please try again.",
+            "action": {
+                "invest": "invest",
+                "transfer": "transfer",
+                "deposit": "deposit",
+                "withdraw": "withdraw"
+            }
         },
         "referDialog": {
             "labelShare": "Invite your friends to join Constant",
@@ -1149,6 +1215,7 @@
                 },
                 "introHolderTemplate": "\n          <h1>Buy from local sellers in {country}</h1>\n          <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n          <p>Email us at <a href=\"mailto:{email}\">{email}</a></p>\n          <p>Or</p>\n          <p>Chat with us at <a href=\"telegram:{telegram}\">{telegram}</a></p>\n        ",
                 "confirmTemplate": "\n          <div name=\"thanks\">\n            <p>Thanks! Please wire <strong>{FiatAmount} {FiatCurrency}</strong> to the seller's bank account.</p>\n          </div>\n          <div name=\"bank\">\n            <p>\n              <span>Bank:</span>\n              <span>{BankName}</span>\n            </p>\n            <p>\n              <span>Account Name:</span>\n              <span>{BankAccountName}</span>\n            </p>\n            <p>\n              <span>Account Number: </span>\n              <span>{BankAccountNumber}</span>\n            </p>\n            <p>\n              <span>Amount: </span>\n              <span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n            </p>\n            <p>\n              <span>Constant: </span>\n              <span>{Amount}&nbsp;{Currency}</span>\n            </p>\n            <p>\n              <span>Reference: </span>\n              <span>{Reference}</span>\n            </p>\n          </div>\n          <div name=\"notice\">\n            <b name=\"important\">IMPORTANT:</b>\n            <span>\n              Do include your reference number <b>{Reference}</b> in the transfer description\n            </span>\n          </div>\n          <div name=\"window\">\n            <strong name=\"minutes\">30 MINUTE WINDOW: </strong>\n            <span>\n              Please complete your transfer <b>within 30 minutes</b>. After that, your\n              order will be automatically cancelled.\n            </span>\n          </div>\n        ",
+                "cryptoAddress": "Crypto Address",
                 "accountName": "Account Name:",
                 "accountNumber": "Account Number:",
                 "amount": "Amount:",
@@ -1156,6 +1223,7 @@
                 "constant": "Constant:",
                 "reference": "Reference:",
                 "buyThankMsg": "Please wire {fiatAmount} {fiatCurrency} to the seller's bank account.",
+                "buyThankMsgCrypto": "Please wire {fiatAmount} {fiatCurrency} to the seller's crypto address.",
                 "importantMsg": "Do include your reference number {referenceNumber} in the transfer description.",
                 "important": "IMPORTANT",
                 "thankYou": "Thank you!",
@@ -1247,7 +1315,8 @@
                     "close": "Close",
                     "agreeSell": "Agree to convert",
                     "confirmText": "You're converting {amount} {currency}",
-                    "confirmSubText": "Please check your information again."
+                    "confirmSubText": "Please check your information again.",
+                    "input2FA": "Input 2FA"
                 },
                 "orderInfo": {
                     "buyTitle": "Buy order confirmed",
@@ -1881,7 +1950,11 @@
             "question9": "What is the Constant Vault?",
             "answer9": "The Constant Vault is a publicly-audited trust overseen and managed by Prime Trust, a US accredited financial institution. The Constant Vault is regulated in the US and insured by the FDIC to the value of $130,000,000 (a per account limit of $5,000,000 applies).",
             "question10": "What is FDIC insurance?",
-            "answer10": "\n        <p>The Federal Deposit Insurance Corporation (FDIC) is a body set up by the US government to protect the integrity of the US financial system. It does this in a number of ways, including insuring deposits. You can <a href=\"https://www.fdic.gov/about/strategic/strategic/mission.html\" target=\"_blank\">read more about the FDIC on their website.</a></p>\n        <br />\n        <p>Your account is FDIC-insured to $5,000,000. We achieve this limit by spreading larger deposits over multiple bank accounts.</p>\n      "
+            "answer10": "\n        <p>The Federal Deposit Insurance Corporation (FDIC) is a body set up by the US government to protect the integrity of the US financial system. It does this in a number of ways, including insuring deposits. You can <a href=\"https://www.fdic.gov/about/strategic/strategic/mission.html\" target=\"_blank\">read more about the FDIC on their website.</a></p>\n        <br />\n        <p>Your account is FDIC-insured to $5,000,000. We achieve this limit by spreading larger deposits over multiple bank accounts.</p>\n      ",
+            "question11": "Why do you lend my savings to borrowers?",
+            "answer11": "<p>\n        We lend your savings to borrowers so we can pay you better interest rates. Aside from seeing your money grow, you won’t notice any changes to your Savings Plan. There’s no risk to you as all our loans are overcollateralized, meaning we only lend to people who put up collateral worth more than the loan. If someone doesn’t repay, we sell collateral on the market. This guarantees we can always return your savings and pay you interest.\n      </p>",
+            "question12": "Is there a minimum or maximum amount I can save?",
+            "answer12": "\n        <p>No. You can save as much or as little as you like.</p>\n      "
         },
         "returns": {
             "question1": "How are my returns paid out?",
@@ -2018,6 +2091,7 @@
         "title": "<h1><span>Invest</span> the way you want.</h1>",
         "subTitle": "The right investment is the one you’re comfortable with. The one that grows reliably over time. Select an option that feels good, and we’ll teach your money how to work for you.",
         "makeLocalOrderSuccess": "Your order was created successfully",
+        "crypto_amount_exists": "Crypto amount exists",
         "makeLocalOrderFailed": "Failed while creating your order",
         "makeDirectOrderSuccess": "Your order was created successfully",
         "makeDirectOrderFailed": "Failed while creating your order",
@@ -2177,6 +2251,26 @@
             "desc": "Get real-time prices, review historical charts, and track movement and volume across all exchanges."
         }
     },
+    "constantChain": {
+        "info": {
+            "title": "Constant Chain",
+            "desc": "While Constant Coin (CONST) initially runs on the Ethereum blockchain as an ERC20 token, the long term plan is to for it to run on its own blockchain.  This is important — by building its own blockchain from scratch, we’ll be able to tailor it to its unique features such as privacy and price stability.  It will allow us to test new ideas, algorithms and mechanisms faster — especially those that Ethereum doesn’t fit, such as fast Zero-Knowledge Proof generation."
+        },
+        "what": {
+            "whatCaption0": "Read Constant source code",
+            "whatCaption1": "Download Constant Wallet",
+            "whatCaption2": "Run a Constant node",
+            "whatCaption3": "Explore Constant Block Explorer",
+            "whatDesc0": "Constant Chain is open-source; its design is public, nobody owns or controls COnstant and everyone can take part.",
+            "whatDesc1": "Constant Chain is open-source; its design is public, nobody owns or controls COnstant and everyone can take part.",
+            "whatDesc2": "Constant Chain is open-source; its design is public, nobody owns or controls COnstant and everyone can take part.",
+            "whatDesc3": "Constant Chain is open-source; its design is public, nobody owns or controls COnstant and everyone can take part.",
+            "whatButton0": "Browse Github",
+            "whatButton1": "Download",
+            "whatButton2": "Download",
+            "whatButton3": "Explore"
+        }
+    },
     "newHome": {
         "banner": {
             "title": "Like your bank, but better.",
@@ -2232,6 +2326,45 @@
                     "desc": "Constant is for everyone. No credit scoring, background checks or month-long waiting games for approval."
                 },
                 "link": "Get cash for your crypto"
+            }
+        }
+    },
+    "constantCoin": {
+        "info": {
+            "title": "Constant Coin",
+            "desc": "Borderless banking requires a borderless currency. Constant is a digital dollar, a stablecoin pegged 1:1 with the USD - designed to blend the best of the existing financial system with the fairness and freedom now possible with blockchain technology. Most importantly, anyone can own Constant, and access the financial solutions it unlocks. Constant is available via local banks as well as international cryptocurrency exchanges."
+        },
+        "what": {
+            "whatCaption0": "FDIC insured",
+            "whatCaption1": "Built on Ethereum",
+            "whatCaption2": "1 Constant = 1 USD",
+            "whatCaption3": "Borderless",
+            "whatDesc0": "Every Constant Coin is fully backed by USD, held in a series of FDIC-insured vaults, for coverage of $5M per account. Guaranteed by the US government.",
+            "whatDesc1": "Constant is secured by the combined computing power of the Ethereum network. Transactions are executed using publicly verifiable smart contracts.",
+            "whatDesc2": "The value of Constant is fixed at 1:1 with the USD. Redeemable for fiat at any time, Constant helps preserve the value of volatile currencies.",
+            "whatDesc3": "Anyone can own Constant. That means anyone can have a global USD account, enjoy free worldwide transfers, and access smarter financial solutions.",
+            "whatButton0": "How we protect your money",
+            "whatButton1": "View our smart contract",
+            "whatButton2": "How we guarantee stability",
+            "whatButton3": "Get Constant"
+        },
+        "howItWorks": {
+            "title": "More about the Constant Coin",
+            "desc": "Constant was designed to be a coin for the community, and will continue to be. We tackle user questions and publish development updates frequently. If you have a question or an idea that you want us to explore, drop us message on [telegram].",
+            "link": "Browse all blog posts >",
+            "items": {
+                "date1": "March 19, 2019",
+                "title1": "Introduction to the Constant Chain",
+                "date2": "March 19, 2019",
+                "title2": "Introduction to the Constant Chain",
+                "date3": "March 19, 2019",
+                "title3": "Introduction to the Constant Chain",
+                "date4": "March 19, 2019",
+                "title4": "Introduction to the Constant Chain",
+                "date5": "March 19, 2019",
+                "title5": "Introduction to the Constant Chain",
+                "date6": "March 19, 2019",
+                "title6": "Introduction to the Constant Chain"
             }
         }
     }

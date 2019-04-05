@@ -61,15 +61,15 @@
             },
             "type2": {
                 "title": "<h3>Get a global USD account.</h3>",
-                "btn": "Sign up now"
+                "btn": "Open an account"
             },
             "type3": {
                 "title": "<h3>Want to earn interest on your savings?</h3>",
-                "btn": "Browse investment plans"
+                "btn": "Browse savings plans"
             },
             "type4": {
                 "title": "<h3>Get USD without selling your crypto</h3>",
-                "btn": "BORROW NOW"
+                "btn": "Borrow now"
             }
         },
         "getSocial": "Social Media",
@@ -755,18 +755,18 @@
         "proSaving": {
             "listApplications": {
                 "totalInterestEarned": "You've already earned",
-                "noRecord": "You have no invest",
-                "getListFailed": "Failed while getting your invests, please try again",
+                "noRecord": "You have not started a Savings Plan yet.",
+                "getListFailed": "Sorry, something went wrong. Please try again.",
                 "amount": "Principal",
                 "interest": "Interest",
-                "apr": "APR",
-                "haveTimeAccount": "{term}-{termType} investment",
+                "apr": "APY",
+                "haveTimeAccount": "{term}-{termType} deposit",
                 "month": "month",
                 "anyTimeAccount": "Anytime deposit",
-                "endTerm": "Investment matures: ",
+                "endTerm": "Deposit term ends:",
                 "trial": "TRIAL",
                 "trial_description": "You keep the interest. Term has ended",
-                "saving_title": "Fixed Term Investments",
+                "saving_title": "Time Deposits (CD)",
                 "anyTime_saving": "Flexible Account",
                 "input2FA": "Input 2FA",
                 "interestInfo": {
@@ -776,7 +776,7 @@
                     "body": {
                         "item1": {
                             "title": "+{percent}%",
-                            "description": "Invest 1,000 USD or more"
+                            "description": "Deposit 1,000 USD or more"
                         },
                         "item2": {
                             "title": "+{total_percent}% {percent_claimed}",
@@ -802,12 +802,12 @@
                 "batchtransfer": "Transfer to multiple people",
                 "row": "Row",
                 "errorMessage": "Error Message",
-                "saving": "Invest now",
+                "saving": "Save now",
                 "dialog": {
                     "withdrawAccount": {
                         "title": "Saving",
-                        "body": "Want to multiply your returns? Commit any amount for any time horizon.",
-                        "termTitle": "{month} month{termType} ({percent}% APR)",
+                        "body": "Want to earn interest on your interest? Start a savings plan to earn up to 4.00% APY.",
+                        "termTitle": "{month} month{termType} ({percent}% APY)",
                         "percentReceive": "You will earn {percent}% APR.",
                         "confirm": "Ok",
                         "cancel": "Cancel",
@@ -1011,7 +1011,7 @@
     },
     "home": {
         "blockTitle1": "Customer stories",
-        "blockDesc1": "People make smarter investments with Constant.",
+        "blockDesc1": "People save better with Constant.",
         "blockTitle2": "How it works",
         "blockCap2": "Enjoy an interest rate 60x the national average.",
         "blockDesc2": "\n    ",
@@ -1093,7 +1093,7 @@
                     "reference": "Reference"
                 },
                 "sell": {
-                    "title": "Where should we send your investment income to?",
+                    "title": "Where should we send your funds to?",
                     "caption": "CHANGE CONSTANT TO CASH WITH THE US NETWORK",
                     "headLine": "Get cash wired from the US to your bank account.",
                     "redeemSuccessful": "Your selling was completed successfully",
@@ -1262,8 +1262,8 @@
                     "minuteWindowDescription": "Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled.",
                     "direct": {
                         "thankYou": "Thanks {name}, your funds are on the way to your bank account.",
-                        "content1": "There is no Constant Trust in your neighborhood yet, so we're sending your money from the main Trust in the USA. As with all international transfers, it may take a couple of days for your investment income to reach you.",
-                        "content2": "Thanks for being patient, and thanks again for investing with Constant."
+                        "content1": "There is no Constant Trust in your neighborhood yet, so we're sending your money from the main Trust in the USA. As with all international transfers, it may take a couple of days for your funds to reach you.",
+                        "content2": "Thanks for being patient, and thanks again for saving with Constant."
                     }
                 },
                 "buy": {
@@ -1589,7 +1589,7 @@
         "added": "Nice! Next time you can access Constant quickly from the app."
     },
     "referralPage": {
-        "title": "Multiply your investment earnings.",
+        "title": "Multiply your interest earnings.",
         "description": "Earn 6% more on top of what you’re already making <br/> across all your currently active accounts.",
         "expirationDate": "This program begins on March 15 and ends on June 15, 2019",
         "body": {
@@ -1599,7 +1599,7 @@
                 "bonusRate": "0.5"
             },
             "item2": {
-                "title": "Make an investment of $1000 or more",
+                "title": "Make a deposit of $1000 or more",
                 "description": "Choose a term and deposit funds via bank transfer.",
                 "bonusRate": "2.5"
             },
@@ -1617,11 +1617,11 @@
             "content": {
                 "faq1": {
                     "question": "What are Constant Referral Rewards?",
-                    "answer": "\n          <p>\n          The Constant Referral Reward program earns you extra interest for investing or sharing Constant with friends and family. You earn interest by completing certain actions, such as referring Constant to friends who then sign up, sharing Constant on social media, and investing a minimum of $1,000 or more. \n          </p>\n          <p>\n          Complete all actions in our Referral Rewards program and you could earn 6% additional interest on your Investment Plans. \n           </p>\n          "
+                    "answer": "\n          <p>\n          The Constant Referral Reward program earns you extra interest on our CD savings plans, by sharing Constant with friends and family. You earn interest by completing certain actions, such as referring Constant to friends who then sign up, sharing Constant on social media, and depositing a minimum of $1,000 or more. \n          </p>\n          <p>\n          Complete all actions in our Referral Rewards program and you could earn 6% additional interest on your Savings Plans. \n           </p>\n          "
                 },
                 "faq2": {
                     "question": "How do I earn reward interest?",
-                    "answer": "\n          <p>\n          Simple – just complete any of the following actions: \n          </p>\n          <p>\n          Invest $1,000 or more: <strong>2.5%</strong> (payable once).<br/>\n          Refer Constant to friends and family: <strong>0.2%</strong> for everyone who signs up (3% maximum).<br/>\n          Share Constant on Facebook: <strong>0.5%</strong> (payable once).\n          </p>\n          <p>\n          Your extra interest will be added to all of your existing Investment Plans, except for the Trial Plan.  \n           </p>\n          "
+                    "answer": "\n          <p>\n          Simple – just complete any of the following actions: \n          </p>\n          <p>\n          Deposit $1,000 or more: <strong>2.5%</strong> (payable once).<br/>\n          Refer Constant to friends and family: <strong>0.2%</strong> for everyone who signs up (3% maximum).<br/>\n          Share Constant on Facebook: <strong>0.5%</strong> (payable once).\n          </p>\n          <p>\n          Your new interest rates will be applied across all of your existing Savings Plans, except for the Trial Plan.  \n           </p>\n          "
                 },
                 "faq3": {
                     "question": "Is there a limit on the amount of extra interest I can earn?",
@@ -1629,11 +1629,11 @@
                 },
                 "faq4": {
                     "question": "Where can I find my referral link?",
-                    "answer": "\n          <p>\n          Log into your account and go to My Investments. There you’ll find referral and Facebook links to share Constant with anyone you want. \n          </p>\n          "
+                    "answer": "\n          <p>\n          Log into your account and go to Accounts. There you’ll find referral and Facebook links to share Constant with anyone you want. \n          </p>\n          "
                 },
                 "faq5": {
                     "question": "When will I receive the extra interest?",
-                    "answer": "\n          <p>\n          Immediately. We add your reward interest to all of your fixed Investment Plans as soon as you complete the actions. We’ll notify you by email, too. \n          </p>\n          "
+                    "answer": "\n<p>           Immediately. We apply your increased interest rates across all of your Savings Plans as soon as you complete the actions. We’ll notify you by email, too.           </p>          "
                 },
                 "faq6": {
                     "question": "Will the interest expire?",
@@ -1924,7 +1924,7 @@
         "fiatAmountInputLabel": "Deposit amount",
         "currencyDropdownLabel": "Your currency",
         "amountResultLabel": "According to the markets today, that is:",
-        "buyBtn": "INVEST {fiatAmount} {fiatCurrency}",
+        "buyBtn": "SAVE {fiatAmount} {fiatCurrency}",
         "investNow": "Make a deposit",
         "amountTooSmall": "Your amount is too small, please try a larger amount",
         "noAgentAvaiable": "Please be patient with us, we’re trying to keep up. Try a smaller amount, or try again later.",
@@ -1932,7 +1932,7 @@
         "getCurrencyListFailed": "Failed while getting supported currencies",
         "loading": "Loading...",
         "amountMustBeLargerThan": "Your amount must be larger than {min} {fiatCurrency}",
-        "howMuchDoYouWantToDeposit": "HOW MUCH DO YOU WANT TO INVEST? ",
+        "howMuchDoYouWantToDeposit": "How much do you want to save?",
         "termLabel": "Pick the savings option that works for you."
     },
     "exchangeInputDepositForm": {
@@ -1951,8 +1951,8 @@
         "getCurrencyListFailed": "Failed while getting supported currencies",
         "loading": "Loading...",
         "amountMustBeLargerThan": "Your amount must be larger than {min} {fiatCurrency}",
-        "howMuchDoYouWantToDeposit": "HOW MUCH DO YOU WANT TO DEPOSIT? ",
-        "formDesc": "Constant stores your money across 20 banks insured up to $250,000 each. That means you’re covered up to $5,000,000."
+        "howMuchDoYouWantToDeposit": "How much do you want to deposit?",
+        "formDesc": "Constant stores your money across multiple FDIC-insured accounts, bringing total coverage up to $130,000,000."
     },
     "exchangeInputSellForm": {
         "amountResult": {
@@ -2171,7 +2171,7 @@
     },
     "trade": {
         "title": "Trade Constant.",
-        "desc": "Protect yourself against volatility and access smarter financial solutions. Constant Coin (CONST) is the stablecoin that at the heart of all our services: a global USD bank account, high income investments and fair, flexible loans. CONST is fully backed by USD, holds its value at 1:1, and can be redeemed for USD at anytime. You can get CONST for Bitcoin, Ether, fiat and more, by using the reputable exchanges listed below.",
+        "desc": "Protect yourself against volatility and access smarter financial solutions. Constant Coin (CONST) is the stablecoin that at the heart of all our services: a global USD bank account, high-yield time deposits, and fair, flexible loans. CONST is fully backed by USD, holds its value at 1:1, and can be redeemed for USD at anytime. You can get CONST for Bitcoin, Ether, fiat and more, by using the reputable exchanges listed below.",
         "coinmarket": {
             "title": "Follow the growth of Constant",
             "desc": "Get real-time prices, review historical charts, and track movement and volume across all exchanges."
@@ -2202,20 +2202,20 @@
                 "link": "Open an account"
             },
             "invest": {
-                "title": "Save with purpose.",
+                "title": "Save 5x better.",
                 "desc1": {
-                    "title": "4% annual interest.",
+                    "title": "4% APY.",
                     "desc": "Earn 5x the national average rate. Don’t sit on your money, put it to work."
                 },
                 "desc2": {
                     "title": "Daily compound interest.",
-                    "desc": "We’re proud of our rates, and we don’t want you to have to wait to enjoy them."
+                    "desc": "Your interest earnings are calculated daily, and compounded, so you’re earning interest on top of interest."
                 },
                 "desc3": {
                     "title": "Secure your returns with secured loans.",
                     "desc": "Your money earns interest by funding secured, over-collateralized loans. This means your returns are always guaranteed."
                 },
-                "link": "Get a free initial investment"
+                "link": "Get a free initial deposit"
             },
             "borrow": {
                 "title": "Borrow money at the kindest rates on the market.",

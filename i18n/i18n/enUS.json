@@ -41,7 +41,7 @@
             "id": "#",
             "file_name": "File",
             "status": "Status",
-            "created_at": "Created Date",
+            "created_at": "Date created",
             "updated_at": "Updated Date",
             "to_email": "Transfer To",
             "schedule_date": "Schedule Date",
@@ -277,11 +277,11 @@
             "yourAccreditation": "Your Accreditation",
             "myLoans": "My Loans",
             "cryptoLoanHistory": "My Crypto Loans",
-            "batchTransfer": "Batch Transfer",
+            "batchTransfer": "Batch transfers",
             "referralInfo": "Referral Information"
         },
         "wallet": {
-            "title": "This is your wallet address you could send Constant to"
+            "title": "This is your Constant wallet address on the Ethereum blockchain."
         },
         "kyc": {
             "needEmail": "You need to verify your email first.",
@@ -435,7 +435,7 @@
         "personalProfile": {
             "title": "Personal Detail",
             "name": "Name",
-            "userName": "Nickname",
+            "userName": "Name",
             "optional": "Optional",
             "fullName": "Full name",
             "email": "Email",
@@ -473,12 +473,12 @@
         "accountInfo": {
             "title": "Your account details",
             "email": "Email",
-            "nickname": "Nickname",
-            "nickname_note": "This name will be shown in your preview",
+            "nickname": "Name",
+            "nickname_note": "What should we call you?",
             "language": "Language",
             "alert": {
                 "passwordFailed": "Update Password Failed",
-                "success": "Your nickname was changed successfully",
+                "success": "Your name was changed successfully",
                 "failed": "Failed"
             },
             "emailNotVerified": "Please verify your email.",
@@ -566,7 +566,7 @@
             "toAddress": "To Address",
             "fromEmail": "From Email",
             "viewDetail": "Details",
-            "noHistoryData": "Get Constant here",
+            "noHistoryData": "Make a deposit to start saving better.",
             "fee": "fee",
             "loadMore": "Load more",
             "status": "Status",
@@ -691,7 +691,7 @@
             }
         },
         "bankInfo": {
-            "emptyBank": "Get Constant here",
+            "emptyBank": "Make a deposit to start saving better.",
             "getBankFailed": "Failed while getting user list banks",
             "btnAdd": "Add a new bank",
             "titleAddBank": "Add a new bank",
@@ -837,7 +837,7 @@
                 "input2FA": "Input 2FA",
                 "interestInfo": {
                     "header": {
-                        "title": "Want to unlock more returns for all your accounts?"
+                        "title": "Want to increase interest earnings across all your accounts?"
                     },
                     "body": {
                         "item1": {
@@ -882,7 +882,7 @@
                         "validateMinAmountError": "You can't input amount less than {amount} CONSTANT"
                     },
                     "checkTrialKyc": {
-                        "messageConfirm": "For your security, please verify your identity before making a withdrawal from your Anytime Account.",
+                        "messageConfirm": "For your security, please verify your identity before making a withdrawal.",
                         "confirm": "Verify my ID",
                         "cancel": "Maybe later"
                     }
@@ -1096,7 +1096,7 @@
             "desc2": "Interest is compounded everyday like clockwork. We make sure your returns are guaranteed by only offering secured, over-collateralized loans. ",
             "step3": "Step 3",
             "title3": "Withdraw funds",
-            "desc3": "Easily withdraw funds to any local bank. When your CD term is up, simply choose the bank account you’d like to send your funds to. Interest earnings can be withdrawn anytime."
+            "desc3": "Easily withdraw funds to any local bank. When your CD term is up, simply choose the bank account you’d like to send your funds to."
         },
         "stories": {
             "quote0": "Apart from the bank beating interest rates, this is an incredibly interesting project from a technology standpoint. Banks need to up their game.",
@@ -1516,7 +1516,7 @@
                 "desc2": "Secure your loan with BTC or ETH as collateral. Our calculator will tell you how much you need. Then just pick a loan term you feel comfortable with.",
                 "step3": "STEP 3",
                 "title3": "Get cash to spend",
-                "desc3": "Within the hour, your USD loan will be accessible from your Constant Flexible Account. Withdraw anytime, to any other bank account."
+                "desc3": "Within the hour, your USD loan will be accessible from your Constant Account. Withdraw anytime, to any other bank account."
             },
             "reference": "\n        <div name=\"ref-container\">\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Interested rate:</span>\n            <span name=\"ref-value\">{intRate}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Collateral value:</span>\n            <span name=\"ref-value\">{colValue}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Collateral return:</span>\n            <span name=\"ref-value\">{colReturn}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Default threshold:</span>\n            <span name=\"ref-value\">{defThreshold}</span>\n          </div>\n        </div>\n      ",
             "transaction": {
@@ -1554,7 +1554,7 @@
                 "interestPaymentContent": "<p>Your Interest payment is <strong>{amountPayInterest}</strong> Constant</p>",
                 "balanceNotEnough": "Your Balance is not enough to pay",
                 "paySuccess": "Pay Successfully",
-                "noHistoryData": "Get Crypto loan here",
+                "noHistoryData": "Explore our USD loans.",
                 "paymentDetail": "Payment detail",
                 "itemPayment": "#{id} {description} <strong>{amount}</strong> Constant at {paymentDate}",
                 "noPaymentDetail": "No payment detail",
@@ -2254,17 +2254,17 @@
     "constantChain": {
         "info": {
             "title": "Constant Chain",
-            "desc": "While Constant Coin (CONST) initially runs on the Ethereum blockchain as an ERC20 token, the long term plan is to for it to run on its own blockchain.  This is important — by building its own blockchain from scratch, we’ll be able to tailor it to its unique features such as privacy and price stability.  It will allow us to test new ideas, algorithms and mechanisms faster — especially those that Ethereum doesn’t fit, such as fast Zero-Knowledge Proof generation."
+            "desc": "Constant Coin (CONST) currently runs on the Ethereum blockchain as an ERC20 token, but will eventually run on its own blockchain. The Constant Chain, which powers all its namesake financial services, will have privacy and price stability at its core, two features we feel are especially important when building a better bank. The Constant Chain is designed to be an eternal work in progress - we look forward to testing new ideas, algorithms and mechanisms faster, and better. \n\nThe Constant Chain is currently running as a testnet. We hope to release the Constant Chain mainnet before the end of 2019. "
         },
         "what": {
-            "whatCaption0": "Read Constant source code",
-            "whatCaption1": "Download Constant Wallet",
-            "whatCaption2": "Run a Constant node",
-            "whatCaption3": "Explore Constant Block Explorer",
-            "whatDesc0": "Constant Chain is open-source; its design is public, nobody owns or controls COnstant and everyone can take part.",
-            "whatDesc1": "Constant Chain is open-source; its design is public, nobody owns or controls COnstant and everyone can take part.",
-            "whatDesc2": "Constant Chain is open-source; its design is public, nobody owns or controls COnstant and everyone can take part.",
-            "whatDesc3": "Constant Chain is open-source; its design is public, nobody owns or controls COnstant and everyone can take part.",
+            "whatCaption0": "Read the source code",
+            "whatCaption1": "Download the Constant Wallet",
+            "whatCaption2": "Run a node",
+            "whatCaption3": "Browse the Block Explorer",
+            "whatDesc0": "Constant Chain is open-source. Its design is public - Constant belongs to everyone.",
+            "whatDesc1": "You can install the Constant Wallet add-on in Chrome. It allows you to sign Constant privacy transactions without running a full Constant node.",
+            "whatDesc2": "Power the Constant Chain. Help build the network and earn CONST in return. ",
+            "whatDesc3": "View the history of transactions that have taken place on the Constant blockchain.",
             "whatButton0": "Browse Github",
             "whatButton1": "Download",
             "whatButton2": "Download",
@@ -2274,7 +2274,7 @@
     "newHome": {
         "banner": {
             "title": "Online banking for global citizens.",
-            "subTitle": "Send money home and know it’ll arrive within minutes. Earn 4% annual interest on your savings, while helping underserved people across the world gain much needed access to opportunity.",
+            "subTitle": "Explore simple tools to manage your money, designed for an interconnected world. Living abroad? Send money home with a single click - no matter where home is. Doing business with the world? Receive payments from international customers and pay overseas vendors with ease - at the speed of the internet. Want to grow your money faster? Earn 4.00% APY with a global USD savings account. Take your money global.",
             "cta": "Open an account",
             "ctaDesc": "It's free."
         },
@@ -2342,7 +2342,7 @@
             "whatDesc0": "Every Constant Coin is fully backed by USD, held in a series of FDIC-insured vaults, for coverage of $5M per account. Guaranteed by the US government.",
             "whatDesc1": "Constant is secured by the combined computing power of the Ethereum network. Transactions are executed using publicly verifiable smart contracts.",
             "whatDesc2": "The value of Constant is fixed at 1:1 with the USD. Redeemable for fiat at any time, Constant helps preserve the value of volatile currencies.",
-            "whatDesc3": "Anyone can own Constant. That means anyone can have a global USD account, enjoy free worldwide transfers, and access smarter financial solutions.",
+            "whatDesc3": "Anyone can own Constant. That means anyone can have a global USD account, enjoy instant worldwide transfers, and access smarter financial solutions.",
             "whatButton0": "How we protect your money",
             "whatButton1": "View our smart contract",
             "whatButton2": "How we guarantee stability",

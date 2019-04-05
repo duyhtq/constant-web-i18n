@@ -139,7 +139,7 @@
         "saveAndGrowMoney": "Save & Grow money",
         "login": "Login",
         "openAnAccount": "Open an account",
-        "yourSaving": "Accounts",
+        "yourSaving": "Your Money",
         "myInvestments": "My Savings",
         "hoverMenu": {
             "deposit": {
@@ -767,7 +767,7 @@
                 "trial": "TRIAL",
                 "trial_description": "You keep the interest. Term has ended",
                 "saving_title": "Time Deposits (CD)",
-                "anyTime_saving": "Flexible Account",
+                "anyTime_saving": "Balance",
                 "input2FA": "Input 2FA",
                 "interestInfo": {
                     "header": {
@@ -1407,7 +1407,7 @@
         },
         "constantLoan": {
             "title": "Fair, fully secured crypto-backed loans.",
-            "subTitle": "\n        <h5>Our unique loan mechanism protects lenders from risk and secures a 8% annual return. It also delivers a 2% APR for borrowers. How?</h5>\n        <h5>Borrowers are required to put down collateral, so there is zero risk for lenders. Collateral doesn’t just sit there either - Constant helps borrowers securely lend out what they put down, so that while they pay interest, they are also earning it. This way, borrowers lower their own interest rate, without harming lender returns.</h5>\n        <h5>Turns out, both parties can win.</p>\n      ",
+            "subTitle": "\n<h5>Crypto collateral is all you need to get USD, available instantly. Put down BTC or ETH to get USD, and get it back when you repay. That’s liquidity without needing to liquidate.</h5>\n<h5>This fully-secured loan mechanism allows us to offer kind lending rates, as well as ensure zero risk for lenders. If borrowers default, collateral gets sold. Borrowers keep the USD, and lenders always get their money back.</h5>",
             "headLine": "Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.",
             "exchange": {
                 "caption": "Crypto-backed loan",
@@ -1590,7 +1590,7 @@
     },
     "referralPage": {
         "title": "Multiply your interest earnings.",
-        "description": "Earn 6% more on top of what you’re already making <br/> across all your currently active accounts.",
+        "description": "Earn 2.6% more on top of what you’re already making<br/>\nacross all your currently active accounts.",
         "expirationDate": "This program begins on March 15 and ends on June 15, 2019",
         "body": {
             "item1": {
@@ -1621,11 +1621,11 @@
                 },
                 "faq2": {
                     "question": "How do I earn reward interest?",
-                    "answer": "\n          <p>\n          Simple – just complete any of the following actions: \n          </p>\n          <p>\n          Deposit $1,000 or more: <strong>2.5%</strong> (payable once).<br/>\n          Refer Constant to friends and family: <strong>0.2%</strong> for everyone who signs up (3% maximum).<br/>\n          Share Constant on Facebook: <strong>0.5%</strong> (payable once).\n          </p>\n          <p>\n          Your new interest rates will be applied across all of your existing Savings Plans, except for the Trial Plan.  \n           </p>\n          "
+                    "answer": "\n          <p>\n          Simple – just complete any of the following actions: \n          </p>\n          <p>\n          Deposit $1,000 or more: <strong>0.5%</strong> (payable once).<br/>\n          Refer Constant to friends and family: <strong>0.1%</strong> for everyone who signs up (2% maximum).<br/>\n          Share Constant on Facebook: <strong>0.1%</strong> (payable once).\n          </p>\n          <p>\n          Your new interest rates will be applied across all of your existing Savings Plans, except for the Trial Plan.  \n           </p>\n          "
                 },
                 "faq3": {
                     "question": "Is there a limit on the amount of extra interest I can earn?",
-                    "answer": "\n          <p>\n          Yes, once you’ve completed an action or earned the maximum reward for that action, you won’t earn any further interest. \n          </p>\n          <p>\n          All referral rewards are single use, except referring friends and family where you’ll earn 0.2% for every person who signs up to a maximum of 3%. \n           </p>\n          "
+                    "answer": "\n          <p>\n          Yes, once you’ve completed an action or earned the maximum reward for that action, you won’t earn any further interest. \n          </p>\n          <p>\n          All referral rewards are single use, except referring friends and family where you’ll earn 0.1% for every person who signs up to a maximum of 2%. \n           </p>\n          "
                 },
                 "faq4": {
                     "question": "Where can I find my referral link?",
@@ -1710,7 +1710,7 @@
         }
     },
     "homeWhatwedo": {
-        "desc": "\n      <p>We are committed to economic freedom. That’s freedom of movement and freedom of choice. We are committed to economic equality. That’s equal accessibility and equal opportunity. In essence, we want to make money more useful, and growth more attainable, for anyone, anywhere in the world.</p>\n      <p>What does that look like? Fair interest rates. Inclusive loans. Instant, global movement of money. Transactions secured and carried out collectively by users of the network. A financial solution for the people, made possible by the people.</p>\n      <p>Constant is proud to be 100% digital, online 24/7. So no waiting for your broker to pick up the phone, no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime. </p>\n    "
+        "desc": "\n    <p>As the world becomes increasingly interconnected, distance shrinks and opportunities grow. Doors are opening — increasing acceptance of diversity, better education, broader opportunities, a global market. In many ways, our neighborhood is now the world. </p>\n<p>Unfortunately, financial systems are still landlocked and insular, characterized by exclusivity, operating behind closed doors. Around the world, money sits languishing in even the best bank accounts, steadily losing value as inflation rises. Loans are hard to access, and even more difficult to repay. It is easier to fly to some places than it is to send money there. Billions of global-thinking people don’t have the means or opportunity to set their money free.</p>\n<p>We need a local bank for our global village. Welcome to Constant. </p>    "
     },
     "faqs": {
         "title": "Frequently Asked Questions",
@@ -1853,7 +1853,7 @@
             "question3": "Can I withdraw the $1,000?",
             "answer3": "While we’d love to give you $1,000, we can’t. The $1,000 will be returned to us at the end of your savings term, but you keep the interest, which is still a pretty good deal.",
             "question4": "How can I track interest from this promotion?",
-            "answer4": "Just log into your account and click Your Savings. Total earned interest is on the top right of the dashboard.",
+            "answer4": "Just log into your account and click 'Your Money'. Total earned interest is on the top right of the dashboard.",
             "question5": "What happens at the end of my savings term?",
             "answer5": "At the end of the term, we’ll pay you the interest (assuming you haven’t withdrawn it already) and the $1,000 trial deposit will be returned to us. Please note that we will need to verify your identity before you can withdraw interest to your bank account. This protects you from fraud and complies with financial regulations.",
             "question6": "Can I deposit more money into my trial plan?",
@@ -2016,7 +2016,7 @@
     "saving": {
         "trialLeftNum": "ONLY {trialLeft} TRIALS LEFT",
         "title": "<h1>Save 5x better.</h1>",
-        "subTitle": "<h5>Saving can be even more rewarding. While you earn 4% annual interest (5x the national average), families and businesses in the emerging world benefit from friendlier lending.</h5>\n<h5>We protect your money by only offering risk-free, collateralized loans, at the kindest rates on the market. Then we pass those interest earnings on to you - because it’s your money, really.</h5>",
+        "subTitle": "<h5>Earn up to 4.00% APY and multiply your savings by 5x the national average.</h5>\n            <br />\n<ul>\n  <li><b>No minimum deposit.</b><br />Start at any amount you feel comfortable with.</li>\n  <br />\n  <li><b>Daily compound interest.</b><br />Earn interest on your interest. Your savings grow faster, every single day.</li>\n</ul>",
         "makeLocalOrderSuccess": "Your order was created successfully",
         "makeLocalOrderFailed": "Failed while creating your order",
         "makeDirectOrderSuccess": "Your order was created successfully",
@@ -2048,15 +2048,15 @@
     "transfer": {
         "info": {
             "title": "Send money to anyone, anywhere.",
-            "desc1": "It costs nothing to make as many transfers as you like - of any amount. Send money home, pay your international clients, transfer salaries to your distributed team. For free.",
-            "desc2": "The only fee we ever charge is for withdrawals to local bank accounts - at a nominal rate of 0.25% (never more than $35)."
+            "desc1": "All you need is an internet connection to make as many transfers as you like - any amount, anywhere in the world. Send money home, pay your international clients, transfer salaries to your distributed team. With a single click.",
+            "desc2": "Enjoy transparent, low cost pricing. Withdrawals to local bank accounts are friendly - at a nominal rate of 0.25% (never more than $35)."
         }
     },
     "deposit": {
         "title": "Your global USD bank account.",
         "availableInVn": "Available now in Vietnam.",
         "subTitle": {
-            "sub1": "It all starts here. Deposit funds to make a zero cost global transfer, multiply your interest earnings by 5x, and access the friendliest loans in the world.",
+            "sub1": "It all starts here. Deposit funds to make instant, international transfers, multiply your interest earnings by 5x, and access the friendliest loans in the world.",
             "sub2": "Easily transfer money in using your local bank account, and withdraw it when you’re done. Enjoy full FDIC-backed insurance on all deposits, and 24/7 support with anything you need. {learnMore}",
             "learnMore": "Learn more +"
         },
@@ -2066,7 +2066,7 @@
             "whatCaption2": "Insure your money up to $130M",
             "whatCaption3": "Withdraw anytime",
             "whatDesc0": "Save in USD, and protect your money against inflation and instability.",
-            "whatDesc1": "Send and receive any amount, anywhere in the world, instantly and for free. Do bigger business, send money home, unlock greater mobility.",
+            "whatDesc1": "Send money home. Do bigger business. All you need is an internet connection.",
             "whatDesc2": "The FDIC insures each account up to $250K, so we store your money across 520 of them.",
             "whatDesc3": "To any local bank account. Just enter your bank details and you’re good to go."
         },
@@ -2080,7 +2080,7 @@
             "desc2": "Your USD funds are held safely in FDIC insured US bank accounts with a total coverage of $130M.\n",
             "step3": "STEP 3",
             "title3": "You get more",
-            "desc3": "Congratulations. You now have access to free transfers, 4% interest earnings, and more."
+            "desc3": "Congratulations. You now have access to global transfers, 4% interest earnings, and more."
         },
         "checklist": {
             "title": "Why you should save money with Constant.",
@@ -2179,7 +2179,7 @@
     },
     "newHome": {
         "banner": {
-            "title": "Feel-good banking.",
+            "title": "Online banking for global citizens.",
             "subTitle": "Send money home and know it’ll arrive within minutes. Earn 4% annual interest on your savings, while helping underserved people across the world gain much needed access to opportunity.",
             "cta": "Open an account",
             "ctaDesc": "It's free."
@@ -2193,11 +2193,11 @@
                 },
                 "desc2": {
                     "title": "Do business with the world.",
-                    "desc": "Move money across the world in minutes. No matter how much you send - or how often - it won’t cost you a cent."
+                    "desc": "Pay your suppliers, receive money from clients, save on fees. Make and receive as many transfers as you want. Withdrawing to a local bank account costs just 0.25% (never more than $35)."
                 },
                 "desc3": {
                     "title": "Payroll.",
-                    "desc": "Transfer salaries to your distributed team at zero cost. Funds reach instantly, no matter the time zone, or the amount. Streamline your operations."
+                    "desc": "Transfer salaries to your distributed team with a single click. Funds reach instantly, no matter the time zone, or the amount. Streamline your operations."
                 },
                 "link": "Open an account"
             },

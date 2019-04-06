@@ -2183,7 +2183,7 @@
         }
     },
     "yourSaving": {
-        "hello": "\n<h5>Xin chào <strong>{name}</strong>. Hôm nay bạn đã có thêm bao nhiêu tiền rồi?</h5>    "
+        "hello": "<h5>Xin chào <strong>{name}</strong>.</h5>\n<h5>Hôm nay bạn đã có thêm bao nhiêu tiền rồi?</h5> "
     },
     "borrow": {
         "contact": {

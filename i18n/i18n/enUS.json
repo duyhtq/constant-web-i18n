@@ -105,7 +105,7 @@
         "deposit": "Deposit",
         "transfer": "Send",
         "banking": "Bank",
-        "save": "Save",
+        "save": "Grow",
         "borrow": "Borrow",
         "signIn": "Sign In",
         "signUp": "Get Started",
@@ -846,7 +846,7 @@
                         },
                         "item2": {
                             "title": "+{total_percent}% {percent_claimed}",
-                            "description": "{refer} Get an extra 0.2% each",
+                            "description": "{refer} Get an extra {referralRate}% each",
                             "refer": "Refer up to 15 friends.",
                             "percent_claimed": "(+{percent}% claimed)"
                         },
@@ -1475,8 +1475,8 @@
             "input2FA": "Input 2FA"
         },
         "constantLoan": {
-            "title": "Fair, fully secured crypto-backed loans.",
-            "subTitle": "\n<h5>Crypto collateral is all you need to get USD, available instantly. Put down BTC or ETH to get USD, and get it back when you repay. That’s liquidity without needing to liquidate.</h5>\n<h5>This fully-secured loan mechanism allows us to offer kind lending rates, as well as ensure zero risk for lenders. If borrowers default, collateral gets sold. Borrowers keep the USD, and lenders always get their money back.</h5>",
+            "title": "Borrow money",
+            "subTitle": "<h5>7.50% APR.</h5>\n<h5>Instant funding.</h5>\n<h5>Get cash for crypto without needing to sell.</h5>\n",
             "headLine": "Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.",
             "exchange": {
                 "caption": "Crypto-backed loan",
@@ -1497,14 +1497,14 @@
                 "description": "Constant crypto-backed loans have a generous loan to value ratio, no matter the amount you borrow. Benefit from the kindest interest rates on the market with our short term loans and get more liquidity out of your crypto."
             },
             "what": {
-                "whatCaption0": "Instant loans",
+                "whatCaption0": "Get funds within minutes.",
                 "whatCaption1": "Crypto for cash",
-                "whatCaption2": "7.5% annualized interest",
-                "whatCaption3": "Guaranteed approval",
-                "whatDesc0": "\n          <p>Our loan mechanism is secured and automated by smart contracts. No lengthy processing times - the money you need is in your account within the hour.</p>\n        ",
+                "whatCaption2": "Things we don’t do.",
+                "whatCaption3": "Here’s an example.",
+                "whatDesc0": "\n<p>The money you need will reach you as soon as your collateral is confirmed on its blockchain. </p>\n\n<p>ETA: 2 minutes for ETH and 10 minutes for BTC.</p>        ",
                 "whatDesc1": "\n          <p>Secure your loan with BTC or ETH and receive USD - all without needing to sell your crypto. Enjoy liquidity without needing to liquidate.</p>\n        ",
-                "whatDesc2": "\n          <p>Borrow as much as you want, and take as long as you need. Enjoy flexible repayments and the kindest interest rate on the market.</p>\n        ",
-                "whatDesc3": "\n          <p>Constant is for everyone. No credit scoring, background checks or month-long waiting games for approval.</p>\n        "
+                "whatDesc2": "\n<p>No credit scoring or background checks - all we need is your collateral.</p>\n\n<p>Get funds instantly - no month-long waiting games for approval.</p>        ",
+                "whatDesc3": "\n<p>If you borrow $1,000 for 1 month at 4.5% APR</p>\n\n<p>\nYour interest is:</p>\n<br>$1,000 x (4.5/12) = $3.75</br>\n<p>\n\nNo repayment schedules. Just repay when you’re done.</p>        "
             },
             "howItWorks": {
                 "intro": "\n          <p>Deposit cryptocurrency to secure cash, at the best rates on the market.</p>\n          <p>Need cash? We accept major cryptocurrencies as collateral, in exchange for USD or the equivalent in your local currency. That means you’ll have cash to spend - without needing to sell your crypto.</p>\n        ",
@@ -1579,21 +1579,21 @@
         "midBanner1": "Send money anywhere, for free",
         "midBanner2": "Secure and grow your money",
         "whatChatWithUs": "Chat with us",
-        "whatCaption0": "Earn 5x interest",
-        "whatCaption1": "Save with confidence",
-        "whatCaption2": "Save with purpose",
-        "whatCaption3": "We're here to help",
+        "whatCaption0": "How we deliver high returns.\n",
+        "whatCaption1": "How we keep your money safe.",
+        "whatCaption2": "Things we don’t do.",
+        "whatCaption3": "Here’s an example.",
         "whatTitle": "What can you do with Constant?",
         "whatTitle0": "Save in USD",
         "whatTitle1": "Up to 130M USD",
         "whatTextLink1": "Read the full policy",
         "whatLink1": "/privacy-policy",
-        "whatDesc1": "<p>We strictly require 150% in collateral on every loan. So if borrowers default, you don’t lose a cent. When your money isn’t on loan, it is stored in multiple FDIC-insured bank accounts, covered up to $130M. </p>",
+        "whatDesc1": "<p>We strictly require every loan to be fully backed by collateral. So if borrowers default, you don’t lose a cent. </p>",
         "whatTitle2": "By the US Government",
         "whatTitle3": "No minimum deposit",
-        "whatDesc0": "<p>We are able to offer you 4% APY by providing lower cost, fully secured loans to economies where capital is extremely expensive. This way, you get 5x the national average rate, and borrowers are able to access capital at a much fairer price. </p>",
-        "whatDesc2": "<p>You can choose how your money earns you money. Emerging economies borrow capital at 60% interest - or more. Earn 4% APY by funding friendlier loans and giving them a kinder alternative.</p>\n",
-        "whatDesc3": "<p>Have questions? We’d love to answer them. You work hard for your money, and deserve to know that it’ll be taken care of. Our diverse team speaks your language, and is here to help whenever you need. </p>",
+        "whatDesc0": "<p>We provide loans at 4.5% to emerging economies, where capital costs 15% or more. That’s how you get 4% APY. </p>",
+        "whatDesc2": "<p>No minimum deposit required. Benefit from the same great rates, no matter the amount.\n</p>\n<p>No lock-in. Changed your mind? Withdraw your money anytime. \n</p>\n",
+        "whatDesc3": "<p>If you deposit $10,000 for 12 months, you will earn:</p>\n<p>\n$10,000 x 4% = $400</p>\n<p>\nDon’t sit on your money. Put it to work. </p>",
         "whatMore0": "How we guarantee zero risk high returns",
         "whatMore1": "How we protect your money",
         "whatMore2": "How to pick a plan that’s right for you",
@@ -1876,7 +1876,7 @@
             "question1": "Are my deposits safe?",
             "answer1": "\n        <p>Yes. First, we convert your deposit to USD to stabilize and protect your funds from inflationary devaluation. Then, we send your funds to the Constant Vault, an escrow operated by Prime Trust, an accredited US financial institution.</p>\n        <br />\n        <p>The Constant Vault keeps your money safe across multiple FDIC-insured bank accounts, bringing total coverage to $130,000,000.</p>\n      ",
             "question2": "Is there a limit to how much I can deposit?",
-            "answer2": "\n        <p>No, though if you plan on depositing more than $5,000,000, please contact us to discuss ways of increasing the insurance protection on your account. </p>\n      ",
+            "answer2": "\n        <p>No, you can deposit as much as you like. </p>\n      ",
             "question3": "How do I make a deposit?",
             "answer3": "\n        <p>You can deposit funds in two ways:</p>\n        <ol>\n          <li>Through our website. Simply select the amount of money you’d like to deposit and then send it by bank transfer to the Constant Vault. We’ll convert local currency to USD.</li>\n          <li>Through an exchange. If you can’t send money to the Constant Vault directly, you can also buy our USD-backed stablecoin, Constant, from selected exchanges. Buy Constant from an exchange, send it to our wallet address, and we’ll deposit USD into your account.</li>\n        </ol>\n      ",
             "question4": "Which currencies do you accept?",
@@ -1894,7 +1894,7 @@
             "question3": "To which countries can I transfer money?",
             "answer3": "<p>You can send funds to anyone, anywhere, anytime.</p>",
             "question4": "How do transfers work?",
-            "answer4": "\n        <p>We use blockchain technology to make our transfers fast, free, and easy.</p>\n        <br />\n        <p>When you transfer USD, we digitize it in the form of our USD-backed stablecoin, Constant. Since Constant lives on the blockchain, it can be moved to anyone in the world for free – as quickly as sending an email.</p>\n        <br />\n        <p>At the other end, once your recipient receives Constant, they can then withdraw it again as USD or local currency (depending on their bank account). There's a small withdrawal fee of 0.25% per transaction (maximum $35).</p>,\n        <p>Here’s a simple example:</p>\n        <ul>\n          <li>You request a transfer of $100 to Mary.</li>\n          <li>We deduct $100 from your balance and send Mary 100 Constant.</li>\n          <li>Mary receives 100 Constant and her balance increases by $100.</li>\n          <li>Mary withdraws $100 and we deduct $100 from her balance.</li>\n        </ul>\n      ",
+            "answer4": "\n        <p>We use blockchain technology to make our transfers fast, free, and easy.</p>\n        <br />\n        <p>When you transfer USD, we digitize it in the form of our USD-backed stablecoin, Constant. Since Constant lives on the blockchain, it can be moved to anyone in the world for free – as quickly as sending an email.</p>\n        <br />\n        <p>At the other end, once your recipient receives Constant, they can then withdraw it again as USD or local currency (depending on their bank account). There's a small withdrawal fee of 0.25% per transaction (maximum $35).</p>\n        <p>Here’s a simple example:</p>\n        <ul>\n          <li>You request a transfer of $100 to Mary.</li>\n          <li>We deduct $100 from your balance and send Mary 100 Constant.</li>\n          <li>Mary receives 100 Constant and her balance increases by $100.</li>\n          <li>Mary withdraws $100 and we deduct $100 from her balance.</li>\n        </ul>\n      ",
             "question5": "Are transfers safe?",
             "answer5": "\n        <p>Yes – very safe. First, transfers take place on the blockchain, an immutable public ledger that’s extremely tough to hack. It’s virtually impossible to make fraudulent changes without getting noticed since transactions are collectively validated by the network. Even if your money went astray, it would be easy to trace.</p>\n        <br />\n        <p>Second, the blockchain is always on. There is no risk of downtime and no way for your money to get lost. It either reaches the recipient or stays in your account. Nevertheless, we keep your money safe in multiple FDIC-insured bank accounts, bringing total coverage to $130,000,000. So were the worst to happen, we’ve got you covered.</p>\n      ",
             "question6": "Does the recipient need a Constant account to receive funds?",
@@ -1904,11 +1904,11 @@
             "question1": "Can I open a Constant account in my country?",
             "answer1": "Anyone can open a Constant account, no matter where you live. All you need is an internet connection.",
             "question2": "How do I open a Constant account?",
-            "answer2": "Simply register with an email address and password to get started. To withdraw interest from your free $1,000 initial investment, you’ll need to verify your ID, which shouldn’t take more than a few minutes.",
+            "answer2": "Simply register with an email address and password to get started. To withdraw interest and savings from a Savings Plan, you’ll need to verify your ID, which shouldn’t take more than a few minutes.",
             "question3": "What is the minimum deposit?",
-            "answer3": "You can save as much or as little as you want. Better yet, once you’ve opened your account, we’ll give you a free trial deposit of $1,000 so you can start earning interest immediately. The $1,000 deposit is returned to us at the end of your term (sorry!), but you keep the interest. Not bad, right?",
+            "answer3": "You can save as much or as little as you want.",
             "question4": "Do you need to verify my identity?",
-            "answer4": "You can open a Constant account without verifying your identity. However, to withdraw interest on your $1,000 initial investment (or any other investment amount), we will need to verify your identity. We do this to protect you from fraud and to comply with financial regulations.",
+            "answer4": "You can open a Constant account without verifying your identity. However, to withdraw savings or interest, we will need to verify your identity. We do this to protect you from fraud and to comply with financial regulations.",
             "question5": "How do I reset my password?",
             "answer5": "Go to the Login page and click “Forgotten your password?”. Then enter your email address and we will send you instructions on how to reset your password. If you can’t see our email after a few minutes, please check your spam/junk folder.",
             "question6": "Do I need to connect my bank account / bank info?",
@@ -1936,7 +1936,7 @@
             "question2": "How do Constant Savings Plans work?",
             "answer2": "\n        <p>Under the “SAVE” tab on our website, you’ll be able to choose from several different Savings Plans. Each one is designed to maintain the value of your deposit and pay you compounded interest.</p>\n        <br />\n        <p>To maintain the value of your deposit, we convert your savings to USD – the world's reserve currency. Then, we lend your savings to overcollateralized borrowers and share the lending income with you as interest. You can withdraw this interest at the end of your term.\n        <br />\n        <p>There is no risk to you since borrowers give us collateral that exceeds the value of the loan. If they don't repay, we sell their collateral in plenty of time to return your savings and pay you interest. </p>\n        <br />\n        <p>Of course, you don’t have to withdraw your savings. You could send money abroad, store it in your Constant account to keep the value locked to the USD, or start another Savings Plan to earn even more interest. The choice is yours!\n</p>\n      ",
             "question3": "How do you protect my savings?",
-            "answer3": "Your deposits are securely held in the Constant Vault, which is overseen by an accredited US financial institution called Prime Trust. The Constant Vault is FDIC-insured to $130,000,000. You can read more about the Constant Vault on <a href=\"https://medium.com/@constantmoney\" target=\"_blank\">our blog</a>.",
+            "answer3": "When not on loan, your deposits are securely held in the Constant Vault, which is overseen by an accredited US financial institution called Prime Trust. The Constant Vault is FDIC-insured to $130,000,000. You can read more about the Constant Vault on <a href=\"https://medium.com/@constantmoney\" target=\"_blank\">our blog</a>",
             "question4": "Which currencies do you accept?",
             "answer4": "We accept any currency sent to our US-based Constant Vault bank account. It is then converted to USD and stored in the FDIC-insured Vault.",
             "question5": "Do you accept cryptocurrency?",
@@ -2088,8 +2088,8 @@
     },
     "saving": {
         "trialLeftNum": "ONLY {trialLeft} TRIALS LEFT",
-        "title": "<h1>Save 5x better.</h1>",
-        "subTitle": "<h5>Earn up to 4.00% APY and multiply your savings by 5x the national average.</h5>\n            <br />\n<ul>\n  <li><b>No minimum deposit.</b><br />Start at any amount you feel comfortable with.</li>\n  <br />\n  <li><b>Daily compound interest.</b><br />Earn interest on your interest. Your savings grow faster, every single day.</li>\n</ul>",
+        "title": "<h1>Grow your money</h1>",
+        "subTitle": "<h5>Earn up to 4.00% APY.</h5>\n<h5>No minimum deposit.</h5>\n<h5>Daily compound interest.</h5>\n<h5>Withdraw anytime.</h5>",
         "makeLocalOrderSuccess": "Thanks! Please make a transfer from your bank.",
         "crypto_amount_exists": "Crypto amount exists",
         "makeLocalOrderFailed": "Failed while creating your order",
@@ -2273,7 +2273,7 @@
     },
     "newHome": {
         "banner": {
-            "title": "Online banking for global citizens.",
+            "title": "Financial tools for a connected world.",
             "subTitle": "Explore simple tools to manage your money, designed for an interconnected world. Living abroad? Send money home with a single click - no matter where home is. Doing business with the world? Receive payments from international customers and pay overseas vendors with ease - at the speed of the internet. Want to grow your money faster? Earn 4.00% APY with a global USD savings account. Take your money global.",
             "cta": "Open an account",
             "ctaDesc": "It's free."
@@ -2296,7 +2296,7 @@
                 "link": "Open an account"
             },
             "invest": {
-                "title": "Save 5x better.",
+                "title": "Grow your money",
                 "desc1": {
                     "title": "4% APY.",
                     "desc": "Earn 5x the national average rate. Don’t sit on your money, put it to work."
@@ -2314,7 +2314,7 @@
             "borrow": {
                 "title": "Borrow money at the kindest rates on the market.",
                 "desc1": {
-                    "title": "7.5% APR.",
+                    "title": "4.5% APR.",
                     "desc": "Put down crypto as collateral and secure USD. Borrow as much as you want, take as long as you need, then get your assets back when you repay."
                 },
                 "desc2": {

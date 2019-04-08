@@ -103,7 +103,7 @@
         "blog": "Tips",
         "myAccount": "Tài khoản của tôi",
         "deposit": "Gửi tiền",
-        "transfer": "Transfer",
+        "transfer": "Chuyển khoản",
         "banking": "Ngân hàng",
         "save": "Đầu tư",
         "borrow": "Vay",
@@ -114,7 +114,7 @@
         "referral": "Gửi 5 USD, nhận 5 USD",
         "promotionPrograms": "Các chương trình khuyến mãi",
         "contactUs": "Liên hệ với chúng tôi",
-        "aboutUs": "Về chúng tôi",
+        "aboutUs": "Giới thiệu",
         "faq": "Câu hỏi thường gặp",
         "affiliate": "Liên kết",
         "wallet": "Ví",
@@ -211,40 +211,40 @@
             "cannotTransferToYourSelf": "Xin vui lòng chọn người nhận khác. Bạn không thể tự gửi Constant cho chính mình.",
             "invalidUserType": "Người dùng không xác định. Xin vui lòng nhập lại email.",
             "emailDoesntExist": "Người dùng không xác định. Xin vui lòng nhập lại email.",
-            "needToSignIn": "Bạn cần đăng nhập để hoàn tất hoạt động này",
+            "needToSignIn": "Bạn cần đăng nhập để thực hiện hành động này",
             "not_enough_balance": "Số dư của bạn không đủ",
-            "createdBankExisted": "Tài khoản ngân hàng đã được đăng ký!",
+            "createdBankExisted": "Tài khoản ngân hàng này đã được đăng ký. Xin vui lòng thử lại.",
             "trial_term_deposit_not_available": "Chương trình đăng kí nhận thử 1000 Constant chỉ áp dụng cho khách hàng mới.",
             "not_pro_saving_user": "Xin lỗi. Chúng tôi chỉ cung cấp dịch vụ này tại Mỹ cho những nhà đầu tư đã được SEC công nhận.",
             "otpNotMatched": "OPT not matched or invalidated!"
         }
     },
     "errorCode": {
-        "3000": "Không đủ Constant để thực hiện lệnh này",
+        "3000": "Xin vui lòng nạp thêm tiền vào tài khoản để thực hiện thao tác này",
         "3001": "Bạn không thể huỷ lệnh này",
         "3002": "Chọn lệnh mua hoặc bán",
         "3003": "Tỉ giá không xác định",
         "3004": "Bạn phải có ít hơn 2,000 Constant",
-        "3005": "Đơn giá phải lớn hơn 0",
+        "3005": "Xin vui lòng nhập số lớn hơn 0",
         "3006": "Đơn giá không phù hợp với danh sách",
         "3007": "Xin vui lòng kiểm tra lại lệnh giao dịch của bạn",
         "3008": "Xin vui lòng kiểm tra lại loại lệnh giao dịch",
         "3009": "Bạn không phải là người thực hiện lệnh này",
         "3010": "Bạn không thể tự thực hiện giao dịch với chính mình",
         "3011": "Xin vui lòng kiểm tra số dư Constant",
-        "3012": "Xin vui lòng kiểm tra tên tài khoản ngân hàng",
-        "3013": "Xin vui lòng kiểm tra số tài khoản ngân hàng",
-        "3014": "Xin vui lòng kiểm tra số định tuyến ngân hàng hoặc mã ngân hàng",
-        "3015": "Xin vui lòng kiểm tra tên ngân hàng",
+        "3012": "Xin vui lòng nhập đúng tên tài khoản ngân hàng",
+        "3013": "Xin vui lòng nhập đúng số tài khoản ngân hàng",
+        "3014": "Xin vui lòng nhập đúng mã ngân hàng hoặc số định tuyến ngân hàng",
+        "3015": "Xin vui lòng nhập đúng số tài khoản ngân hàng",
         "3016": "Bạn không thể thực hiện giao dịch này. Vui lòng liên hệ với chúng tôi qua email hello@constant.money để được trợ giúp.",
         "3017": "Bạn không thể hoàn tất lệnh này. Xin vui lòng liên hệ email hello@constant.money để được trợ giúp.",
         "3018": "Xảy ra lỗi khi thực hiện giao dịch",
-        "3019": "Không có thông tin ngân hàng",
-        "8000": "Yêu cầu không hợp lệ",
-        "8001": "Tập tin không hợp lệ",
-        "8002": "Dung lượng tập tin không phù hợp",
-        "8003": "Định dạng tập tin không phù hợp",
-        "8004": "Tải lên tập tin thất bại"
+        "3019": "Xin vui lòng cung cấp thông tin tài khoản ngân hàng để tiếp tục.",
+        "8000": "Đã có lỗi xảy ra. Xin vui lòng thử lại.",
+        "8001": "Tập tin không hợp lệ.",
+        "8002": "Dung lượng của tập tin phải nhỏ hơn 1.2 MB.",
+        "8003": "Định dạng tập tin không phù hợp.",
+        "8004": "Xảy ra lỗi khi tải tập tin lên. Xin vui lòng thử lại."
     },
     "form": {
         "required": "Yêu cầu",
@@ -263,7 +263,7 @@
             "myOrders": "Gửi và rút tiền",
             "localHistory": "Chuyển khoản và thu nhập lãi",
             "wallets": "Ví của tôi",
-            "cryptoWallet": "My Crypto Wallets",
+            "cryptoWallet": "Ví Constant mã hoá",
             "changePassword": "Đổi mật khẩu",
             "preferecens": "Tuỳ chỉnh",
             "accountLevel": "Cấp độ tài khoản",
@@ -483,7 +483,7 @@
             },
             "emailNotVerified": "Xin vui lòng xác nhận email của bạn.",
             "verifyBtn": "Gửi lại email xác minh",
-            "enable2Fa": "Enable 2FA to add extra security to your account"
+            "enable2Fa": "Bật tính năng xác minh 2 lớp để bảo mật tài khoản của bạn tốt hơn"
         },
         "changePassword": {
             "newPasswordIsRequired": "Nhập mật khẩu mới",
@@ -495,22 +495,22 @@
             "changeFailed": "Hãy chắc chắn bạn đã nhập đúng mật khẩu cũ"
         },
         "twoFa": {
-            "description2Fa": "Important actions (withdraw, transfer, etc.) will require you to enter a password via Google Authenticator or Authy.",
+            "description2Fa": "Để thực hiện rút tiền hay chuyển khoản, bạn cần phải nhập mật khẩu được tạo bởi Google Authenticator hay Authy.",
             "qrScanModal": {
-                "title": "Scan QR Code",
-                "description": "Please scan this code with Google Authenticator or Authy, then enter the password sent to you.",
-                "inputCode": "Enter password",
-                "close": "Close",
-                "submit": "Submit"
+                "title": "Quét mã QR",
+                "description": "Xin vui lòng quét mã QR này bằng Google Authenticator hoặc Authy, rồi nhập mật khẩu được gửi đến bạn.",
+                "inputCode": "Nhập mật khẩu",
+                "close": "Đóng",
+                "submit": "Gửi"
             },
             "disable2FaModal": {
-                "title": "Disable 2FA",
-                "inputCode": "Enter password",
-                "close": "Close",
-                "submit": "Submit"
+                "title": "Tắt xác minh 2 lớp",
+                "inputCode": "Nhập mật khẩu",
+                "close": "Đóng",
+                "submit": "Gửi"
             },
-            "disable2FaSuccess": "Disable 2FA successfully!",
-            "enable2FaSuccess": "Enable 2FA successfully!"
+            "disable2FaSuccess": "Tắt tính năng xác minh 2 lớp thành công!",
+            "enable2FaSuccess": "Bật tính năng xác minh 2 lớp thành công!"
         },
         "setting": {
             "title": "Cài đặt chung"
@@ -739,17 +739,17 @@
             }
         },
         "addressWalletInfo": {
-            "emptyAddress": "You don't have any Wallet yet!",
-            "getWalletFailed": "Failed while getting user list banks",
-            "btnAdd": "Add a new wallet address",
-            "titleAddWallet": "Add a new Wallet address",
-            "titleUpdateWallet": "Update Wallet address",
-            "btnSubmit": "Add Wallet",
-            "btnUpdate": " Save",
-            "btnRemove": " Delete",
-            "title": "Wallets Information",
-            "desc": "Add your bank account details now to receive attractive commission from referral programs and faster payment",
-            "address": "Address",
+            "emptyAddress": "Bạn chưa có ví Constant!",
+            "getWalletFailed": "Không tìm thấy ngân hàng",
+            "btnAdd": "Thêm địa chỉ ví mới",
+            "titleAddWallet": "Thêm địa chỉ ví mới",
+            "titleUpdateWallet": "Cập nhật địa chỉ ví",
+            "btnSubmit": "Thêm địa chỉ ví",
+            "btnUpdate": " Lưu",
+            "btnRemove": " Xoá",
+            "title": "Thông tin ví",
+            "desc": "Cập nhật thông tin tài khoản ngân hàng để thanh toán nhanh hơn và nhận được những ưu đãi hấp dẫn từ chương trình Giới thiệu khách hàng",
+            "address": "Địa chỉ",
             "currency": "Currency",
             "active": "Active",
             "action": "Action",
@@ -846,7 +846,7 @@
                         },
                         "item2": {
                             "title": "+{total_percent}% {percent_claimed}",
-                            "description": "Nhận thêm 0.2% cho mỗi {refer}",
+                            "description": "Nhận thêm {referralRate}% cho mỗi {refer}",
                             "refer": "Giới thiệu tối đa cho 15 người bạn.",
                             "percent_claimed": "(đã được +{percent}%)"
                         },
@@ -1475,7 +1475,7 @@
             "input2FA": "Input 2FA"
         },
         "constantLoan": {
-            "title": "Vay thế chấp bằng tiền mã hoá.",
+            "title": "Vay an toàn. Thế chấp bằng tiền mã hoá.",
             "subTitle": "\n        <h5>Cơ chế cho vay độc đáo của  Constant không chỉ bảo vệ nhà đầu tư khỏi các rủi ro và đảm bảo lãi suất cơ bản 8%/năm mà còn mang lại lợi nhuận 2%/năm cho người đi vay!</h5>\n        <h5>Để vay tiền, người đi vay phải thế chấp một số tài sản nhất định. Số tài sản thế chấp này tiếp tục được Constant sử dụng để cho vay thế chấp. Như vậy, phần tài sản thế chấp không ở yên một chỗ và tiếp tục sinh lời cho người đi vay. Bằng cách này, người đi vay có thể vay được tiền với lãi suất rất thấp mà Constant vẫn đảm bảo được lợi nhuận cho các nhà đầu tư.</h5>\n        <h5>Đôi bên cùng có lợi!</p>\n      ",
             "headLine": "Bạn muốn có tiền để trả nợ thẻ tín dụng, trả tiền thuê nhà hay trả viện phí? Rất đơn giản. Đặt cọc bằng ETH và bạn sẽ nhận được số Constant bạn cần. Số ETH này sẽ được giữ an toàn trong hợp đồng thông minh của Constant.",
             "exchange": {

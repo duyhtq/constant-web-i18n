@@ -846,7 +846,7 @@
                         },
                         "item2": {
                             "title": "+{total_percent}% {percent_claimed}",
-                            "description": "{refer} Get an extra 0.2% each",
+                            "description": "{refer} Get an extra {referralRate}% each",
                             "refer": "Refer up to 15 friends.",
                             "percent_claimed": "(+{percent}% claimed)"
                         },

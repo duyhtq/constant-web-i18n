@@ -56,7 +56,7 @@
     "footer": {
         "cta": {
             "type1": {
-                "title": "<h3>Đầu tư lãi suất cao.</h3>",
+                "title": "<h3>Chuyển khoản tới bất cứ đâu hoàn toàn miễn phí.</h3>",
                 "btn": "ĐẦU TƯ NGAY"
             },
             "type2": {
@@ -102,7 +102,7 @@
     "headerBar": {
         "blog": "Tips",
         "myAccount": "Tài khoản của tôi",
-        "deposit": "Gửi tiền",
+        "deposit": "Nộp tiền",
         "transfer": "Chuyển khoản",
         "banking": "Ngân hàng",
         "save": "Đầu tư",
@@ -464,10 +464,10 @@
             "statusProcessing": "Tài khoản đang được xác minh. Bạn sẽ được thông báo ngay khi quá trình xác minh hoàn tất.",
             "statusNeedVerifyEmail": "Vui lòng xác minh địa chỉ email",
             "statusPendding": "Thông tin xác minh tài khoản không đúng. Vui lòng kiểm tra email để nhận được hướng dẫn.",
-            "errorsInvalidKYC": "Thông tin người dùng không hợp lệ để xác nhận trước bằng KYC",
-            "errorsMissParramKYC": "Chưa đủ thông tin để xác minh danh tính",
-            "saveSuccess": "Hồ sơ của bạn được cập nhật thành công",
-            "saveFailed": "Có lỗi khi cập nhật thông tin tài khoản. Vui lòng thử lại",
+            "errorsInvalidKYC": "Thông tin bạn cung cấp không hợp lệ. Xin vui lòng thử lại.",
+            "errorsMissParramKYC": "Xin vui lòng cung cấp chính xác thông tin để xác minh tài khoản.",
+            "saveSuccess": "Thông tin cá nhân của bạn đã được cập nhật thành công.",
+            "saveFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
             "addressInfo": "Địa chỉ và thông tin cá nhân của bạn nên trùng khớp với hình ảnh được tải lên."
         },
         "accountInfo": {
@@ -477,9 +477,9 @@
             "nickname_note": "Tên này sẽ được hiển thị khi thực hiện giao dịch",
             "language": "Ngôn ngữ",
             "alert": {
-                "passwordFailed": "Cập nhật mật khẩu không thành công",
+                "passwordFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
                 "success": "Thay đổi tên tài khoản thành công",
-                "failed": "Không thành công"
+                "failed": "Đã xảy ra lỗi. Xin vui lòng thử lại."
             },
             "emailNotVerified": "Xin vui lòng xác nhận email của bạn.",
             "verifyBtn": "Gửi lại email xác minh",
@@ -623,7 +623,7 @@
                 "acceptSuccess": "Xác nhận thành công",
                 "confirmFailed": "Xác nhận không thành công",
                 "cancelSuccess": "Huỷ thao tác thành công",
-                "cancelFailed": "Huỷ thao tác không thành công"
+                "cancelFailed": "Huỷ thao tác không thành công. Xin vui lòng thử lại."
             },
             "user": {
                 "fullName": "Họ và tên",
@@ -640,7 +640,7 @@
             }
         },
         "accountLevel": {
-            "head_text": "Quá trình xác minh thường chỉ mất vài phút. Hệ thống có thể phản hồi lâu hơn nếu ngoài giờ làm việc. Thông tin cá nhân của bạn được bảo mật tuyệt đối.",
+            "head_text": "Chỉ mất vài phút để thực hiện xác minh danh tính. Thông tin cá nhân của bạn được bảo mật tuyệt đối.",
             "step1": "Cấp độ 1: Xác minh email",
             "step2": "Cấp độ 2: Xác minh số điện thoại",
             "step3": "Cấp độ 3: Xác minh giấy tờ tùy thân",
@@ -668,7 +668,7 @@
                 "lv2": "Chúc mừng! Tài khoản của bạn đã được nâng cấp lên Tài khoản Cấp 2",
                 "lv3": "Yêu cầu nâng cấp tài khoản lên Cấp độ 3 của bạn đã được gửi thành công!",
                 "lv4": "Yêu cầu nâng cấp tài khoản lên Cấp độ 4 của bạn đã được gửi thành công!",
-                "invalidPhone": "Số điện thoại không hợp lệ",
+                "invalidPhone": "Xin vui lòng nhập đúng số điện thoại.",
                 "sendPhoneCodeSuccess": "Chúng tôi đã gửi mã bí mật tới số điện thoại của bạn.",
                 "sendEmailCodeSuccess": "Chúng tôi đã gửi mã xác nhận tới địa chỉ email của bạn",
                 "imageIdentifierRequired": "Vui lòng thêm ảnh mặt trước/sau",
@@ -700,7 +700,7 @@
             "btnUpdate": "Lưu",
             "btnRemove": "Xoá",
             "title": "Thông tin ngân hàng",
-            "desc": "Vui lòng điền thông tin tài khoản ngân hàng để nhận hoa hồng hấp dẫn từ chương trình Giới thiệu khách hàng và giao dịch thanh toán nhanh hơn",
+            "desc": "Cập nhật thông tin tài khoản ngân hàng để thanh toán nhanh hơn và nhận được những ưu đãi hấp dẫn từ chương trình Giới thiệu khách hàng.",
             "bankName": "Tên ngân hàng",
             "action": "Tác vụ",
             "editActionLabel": "Chỉnh sửa",
@@ -719,9 +719,9 @@
             "bankAccountNumberHolder": "Nhập số tài khoản ngân hàng",
             "alert": {
                 "success": "Cập nhật thành công",
-                "failed": "Cập nhật không thành công",
-                "deleteSuccess": "Xoá thành công",
-                "deleteFailed": "Không thể xoá"
+                "failed": "Cập nhật không thành công. Xin vui lòng thử lại.",
+                "deleteSuccess": "Đã xoá thành công",
+                "deleteFailed": "Xoá không thành công. Xin vui lòng thử lại."
             },
             "dialog": {
                 "update": {
@@ -783,23 +783,23 @@
             "pleaseVerify": "Vui lòng xác minh email để kích hoạt tài khoản",
             "resent": "Gửi lại email xác minh",
             "sent": "Đã gửi email",
-            "sendCodeSuccess": "Mã xác minh đã được gửi tới email của bạn. Vui lòng kiểm tra email.",
+            "sendCodeSuccess": "Xin vui lòng kiểm tra email để lấy mã xác nhận.",
             "sendCodeFailed": "Có lỗi xảy ra khi gửi mã xác minh. Xin vui lòng thử lại!",
-            "verifyFailed": "Xác minh tài khoản không thành công, xin vui lòng thử lại!",
+            "verifyFailed": "Đã xảy ra lỗi. Xin vui lòng xác minh lại email.",
             "verifySuccess": "Xác minh email thành công."
         },
         "phoneVerification": {
-            "sendCodeSuccess": "Mã xác minh đã được gửi tới điện thoại của bạn. Xin vui lòng kiểm tra điện thoại.",
-            "sendCodeFailed": "Có lỗi xảy ra khi gửi mã xác minh. Xin vui lòng thử lại!",
-            "verifyFailed": "Yêu cầu xác minh không thành công, xin vui lòng thử lại!",
-            "verifySuccess": "Số điện thoại của bạn đã được xác minh thành công. Tài khoản của bạn đang ở Cấp độ 2"
+            "sendCodeSuccess": "Xin vui lòng kiểm tra tin nhắn điện thoại để nhận mã xác minh.",
+            "sendCodeFailed": "Đã xảy ra lỗi. Xin vui lòng gửi lại mã xác nhận.",
+            "verifyFailed": "Xác minh không thành công. Xin vui lòng thử lại.",
+            "verifySuccess": "Xác minh số điện thoại thành công."
         },
         "kycVerification": {
             "pleaseComplete": "Please complete the KYC process to {action}.",
             "complete": "Hoàn tất KYC",
             "updatedSuccess": "Thông tin của bạn đã được cập nhật thành công",
             "updatedFailed": "Cập nhật thông tin không thành công. Xin vui lòng thử lại!",
-            "checkVerifyFailed": "Có lỗi xảy ra khi kiểm tra trạng thái xác minh tài khoản của bạn",
+            "checkVerifyFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
             "action": {
                 "invest": "invest",
                 "transfer": "transfer",
@@ -821,11 +821,11 @@
         "proSaving": {
             "listApplications": {
                 "totalInterestEarned": "Bạn đã kiếm được",
-                "noRecord": "Bạn chưa thực hiện đầu tư",
-                "getListFailed": "Xảy ra lỗi khi xác nhận khoản đầu tư của bạn. Xin vui lòng thử lại.",
+                "noRecord": "Bạn vẫn chưa có khoản tiết kiệm nào. Bắt đầu tiết kiệm ngay từ hôm nay.",
+                "getListFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
                 "amount": "Phần gốc",
                 "interest": "Lãi suất",
-                "apr": "/năm",
+                "apr": "Lãi/năm",
                 "haveTimeAccount": "Khoản đầu tư {term}{termType}",
                 "month": "tháng",
                 "anyTimeAccount": "Gửi không kì hạn",
@@ -879,7 +879,7 @@
                         "cancel": "Huỷ",
                         "messageConfirm": "Bạn đang chuẩn bị nạp {amount} Constant.",
                         "validateMaxAmountError": "Xin lỗi. Bạn không có đủ Constant để nạp.",
-                        "validateMinAmountError": "Bạn không thể nhập số nhỏ hơn {amount} CONSTANT"
+                        "validateMinAmountError": "Xin vui lòng nhập số lớn hơn {amount} CONSTANT"
                     },
                     "checkTrialKyc": {
                         "messageConfirm": "Vì lí do an ninh, xin vui lòng xác minh danh tính trước khi rút tiền từ tài khoản không kì hạn.",
@@ -897,7 +897,7 @@
                 },
                 "alert": {
                     "depositSavingSuccess": "Bạn đã nạp Constant thành công.",
-                    "depositSavingFailed": "Thực hiện đầu tư không thành công",
+                    "depositSavingFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
                     "batchTransferSuccess": "Gửi tập tin để thực hiện chuyển khoản hàng loạt thành công",
                     "batchTransferFailed": "Không thành công khi gửi tập tin để thực hiện chuyển khoản hàng loạt",
                     "confirmBatchTransferSuccess": "Thành công",
@@ -919,14 +919,14 @@
                 "phone": "Số điện thoại",
                 "status": "Trạng thái",
                 "note": "Lưu ý",
-                "investMore": "Đầu tư thêm"
+                "investMore": "Mở thêm tài khoản tiết kiệm."
             },
             "applicationDetail": {
-                "dueDays": "Thời hạn",
+                "dueDays": "Ngày đáo hạn",
                 "interestAmount": "Phần lãi",
                 "originalAmount": "Phần gốc",
                 "totalAmount": "Tổng cộng",
-                "paid": "Đã thanh toán",
+                "paid": "Hoàn trả",
                 "paidDate": "Ngày thanh toán",
                 "paidStatus": "Tình trạng thanh toán",
                 "payDate": "Ngày thanh toán",
@@ -988,14 +988,14 @@
             "requiredUsername": "Yêu cầu nhập email",
             "notValidUsername": "Địa chỉ email không hợp lệ",
             "submitButton": "Gửi",
-            "resetPasswordIntro": "Chúng tôi đã gửi một đường link tới email của bạn. Vui lòng làm theo các hướng dẫn để đăng nhập bằng mật khẩu mới",
+            "resetPasswordIntro": "Vui lòng truy cập đường link được gửi tới email của bạn để tạo mật khẩu mới.",
             "newPasswordTitle": "Nhập mật khẩu mới cho tài khoản {email} của bạn.",
             "password": "Mật khẩu mới",
-            "requiredPassword": "Mật khẩu là bắt buộc",
-            "notValidPassword": "Mật khẩu phải có 8 ký tự trở lên",
+            "requiredPassword": "Yêu cầu mật khẩu",
+            "notValidPassword": "Mật khẩu phải có ít nhất 8 ký tự",
             "confirmPassword": "Nhập lại mật khẩu mới",
-            "notValidConfirmPassword": "Mật khẩu không chính xác",
-            "newPasswordIntro": "Mật khẩu tài khoản Constant của {email} đã được thay đổi",
+            "notValidConfirmPassword": "Mật khẩu không khớp. Xin vui lòng thử lại.",
+            "newPasswordIntro": "Mật khẩu tài khoản Constant của {email} đã được thay đổi thành công",
             "notRecoverPass": "Tôi không thể khôi phục tài khoản bằng cách sử dụng trang này"
         },
         "updatePassword": {
@@ -1007,7 +1007,7 @@
             "requiredPassword": "Yêu cầu mật khẩu",
             "notValidPassword": "Mật khẩu phải có ít nhất 8 ký tự",
             "confirmPassword": "Nhập lại mật khẩu mới",
-            "notValidConfirmPassword": "Mật khẩu không chính xác",
+            "notValidConfirmPassword": "Mật khẩu không khớp. Xin vui lòng thử lại.",
             "resetPasswordIntro": "Mật khẩu của bạn đã được cập nhật."
         },
         "register": {
@@ -1019,21 +1019,21 @@
             "lastName": "Họ",
             "placeholderLastName": "Nhập họ của bạn",
             "requiredLastName": "Yêu cầu điền Họ",
-            "notValidFirstName": "Tên phải có từ 3 đến 30 ký tự bao gồm ký tự từ a-z, 0-9 _,-(gạch ngang), và. (dấu chấm).",
-            "notValidLastName": "Họ phải có từ 3 đến 30 ký tự bao gồm ký tự từ a-z, 0-9 _,-(gạch ngang), và. (dấu chấm).",
+            "notValidFirstName": "Tên phải có từ 3 đến 30 ký tự bao gồm các ký tự từ a-z, 0-9 _, - (gạch ngang), và . (dấu chấm).",
+            "notValidLastName": "Họ phải có từ 3 đến 30 ký tự bao gồm các ký tự từ a-z, 0-9 _, - (gạch ngang), và . (dấu chấm).",
             "email": "Email của bạn",
-            "requiredEmail": "Email là bắt buộc",
-            "notValidEmail": "Địa chỉ email không hợp lệ",
+            "requiredEmail": "Yêu cầu nhập email",
+            "notValidEmail": "Xin vui lòng nhập chính xác địa chỉ email.",
             "password": "Mật khẩu",
-            "requiredPassword": "Mật khẩu là bắt buộc",
-            "notValidPassword": "Mật khẩu phải có 8 ký tự trở lên",
+            "requiredPassword": "Yêu cầu nhập mật khẩu",
+            "notValidPassword": "Mật khẩu phải có ít nhất 8 ký tự",
             "placeholderPassword": "Nhập mật khẩu của bạn",
             "confirmPassword": "Xác nhận mật khẩu",
-            "notValidConfirmPassword": "Mật khẩu không chính xác",
+            "notValidConfirmPassword": "Mật khẩu không khớp. Xin vui lòng thử lại.",
             "placeholderConfirmPassword": "Nhập mật khẩu xác nhận",
             "country": "Quốc gia",
             "placeholderCountry": "Chọn quốc gia của bạn",
-            "requiredCountry": "Vui lòng nhập tên nước",
+            "requiredCountry": "Yêu cầu chọn quốc gia",
             "notValidReCaptcha": "Vui lòng xác nhận reCAPTCHA của bạn.",
             "agreement": "Tôi xác nhận tôi đã 18 tuổi và đồng ý với việc {action}",
             "requiredAgreement": "Xác nhận bạn đã đọc và đồng ý với Thoả thuận sử dụng và Chính sách bảo mật của chúng tôi",
@@ -1041,19 +1041,19 @@
             "loginButton": "Bạn đã có tài khoản? Đăng nhập tại đây",
             "registerSuccessfully": "Thành công! Chào mừng tới Constant. Chúng tôi đã gửi email xác minh tới hộp thư đến của bạn.",
             "agreementAction": "Thoả thuận sử dụng và Chính sách bảo mật.",
-            "registerFailed": "Có lỗi xảy ra khi tạo tài khoản. Vui lòng thử lại sau"
+            "registerFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại."
         }
     },
     "landingPage": {
         "contactUS": {
             "title": "Liên hệ",
             "yourName": "Tên của bạn",
-            "requiredYourName": "Vui lòng nhập tên",
+            "requiredYourName": "Xin vui lòng nhập tên",
             "placeholderYourName": "Nhập tên của bạn",
             "email": "Email của bạn",
             "placeholderYourEmail": "Nhập email của bạn",
-            "requiredEmail": "Địa chỉ email là thông tin bắt buộc",
-            "notValidEmail": "Địa chỉ email không hợp lệ",
+            "requiredEmail": "Yêu cầu nhập địa chỉ email",
+            "notValidEmail": "Xin vui lòng nhập đúng địa chỉ email.",
             "phone": "Số điện thoại của bạn",
             "placeholderPhone": "Vui lòng nhập số điện thoại của bạn",
             "description": "Tin nhắn của bạn",
@@ -1083,20 +1083,20 @@
         "blockDesc2": "\n    ",
         "blockTitle3": "Sứ mệnh của Constant",
         "blockCap3": "Chúng tôi mong muốn xây dựng thành công một hệ thống tài chính công bằng và tự do hơn.",
-        "titleBlock4": "Tại sao nên đầu tư với Constant?",
-        "titleCap4": "Mỗi kì hạn đầu tư với Constant có một mức lãi suất cố định khác nhau. Bạn có thể linh động lựa chọn sao cho phù hợp với kế hoạch tài chính của mình. Hãy đầu tư thông minh.",
+        "titleBlock4": "Tại sao nên gửi tiết kiệm với Constant?",
+        "titleCap4": "Đây là lí do:",
         "titleDesc4": "\n      <p></p>\n      <p></p>\n    ",
         "optionText": "hoặc",
         "howItWorks": {
             "step1": "Bước 1",
-            "title1": "Gửi tiền đầu tư",
-            "desc1": "Chọn một kì hạn đầu tư thích hợp rồi chuyển khoản đến quỹ Constant được bảo hiểm bởi FDIC. Constant sẽ sử dụng tiền đầu tư của bạn để thực hiện nghiệp vụ cho vay thế chấp. Để đảm bảo an toàn và có thể trả lãi cho các nhà đầu tư, tài sản thế chấp sẽ có giá trị cao hơn số tiền được cho vay.",
+            "title1": "Gửi tiền tiết kiệm",
+            "desc1": "Chọn một kì hạn thích hợp rồi nộp tiền vào tài khoản Constant để bắt đầu tiết kiệm. ",
             "step2": "Bước 2",
-            "title2": "Đợi khoản đầu tư sinh lời",
-            "desc2": "Lãi sẽ được trả về hàng ngày vào tài khoản linh động của bạn. Phần lãi này được hưởng thêm lãi suất 1%/năm và có thể được rút ra bất cứ lúc nào. Dễ dàng thanh khoản và lãi mẹ sẽ đẻ lãi con.",
+            "title2": "Hưởng lãi suất kép",
+            "desc2": "Lãi suất được cộng dồn hàng ngày để khách hàng có thể thu lợi tối đa từ khoản tiết kiệm của mình.",
             "step3": "Bước 3",
-            "title3": "Nhận lãi từ khoản đầu tư",
-            "desc3": "Khoản đầu tư của bạn được tính trên USD nhưng bạn hoàn toàn có thể rút VNĐ về tài khoản ngân hàng của mình khi đáo hạn. Hoặc bạn cũng có thể tái đầu tư để kiếm thêm được nhiều tiền hơn nữa."
+            "title3": "Rút tiền tiết kiệm",
+            "desc3": "Khi đáo hạn, khách hàng có thể dễ dàng rút hết cả gốc lẫn lãi về tài khoản ngân hàng bất cứ lúc nào."
         },
         "stories": {
             "quote0": "Apart from the bank beating interest rates, this is an incredibly interesting project from a technology standpoint. Banks need to up their game.",
@@ -1441,7 +1441,7 @@
         },
         "transfer": {
             "title": "Chuyển khoản",
-            "caption": "GỬI CONSTANT TỚI BẤT CỨ ĐÂU",
+            "caption": "Bạn muốn chuyển khoản bao nhiêu?",
             "yourBalance": "Your balance",
             "validateMaxInput": "Your amount must less than or equal: ${amount}",
             "transferFeeLabel": "Phí chuyển khoản",
@@ -1475,8 +1475,8 @@
             "input2FA": "Input 2FA"
         },
         "constantLoan": {
-            "title": "Vay an toàn. Thế chấp bằng tiền mã hoá.",
-            "subTitle": "\n        <h5>Cơ chế cho vay độc đáo của  Constant không chỉ bảo vệ nhà đầu tư khỏi các rủi ro và đảm bảo lãi suất cơ bản 8%/năm mà còn mang lại lợi nhuận 2%/năm cho người đi vay!</h5>\n        <h5>Để vay tiền, người đi vay phải thế chấp một số tài sản nhất định. Số tài sản thế chấp này tiếp tục được Constant sử dụng để cho vay thế chấp. Như vậy, phần tài sản thế chấp không ở yên một chỗ và tiếp tục sinh lời cho người đi vay. Bằng cách này, người đi vay có thể vay được tiền với lãi suất rất thấp mà Constant vẫn đảm bảo được lợi nhuận cho các nhà đầu tư.</h5>\n        <h5>Đôi bên cùng có lợi!</p>\n      ",
+            "title": "Vay thế chấp bằng tiền mã hoá",
+            "subTitle": "\n<h5>Lãi suất chỉ 4.5%/năm.</h5>\n<h5>Nhận tiền ngay.</h5>\n<h5>Mà không cần phải bán đi số tiền mã hoá vốn có.</h5>\n      ",
             "headLine": "Bạn muốn có tiền để trả nợ thẻ tín dụng, trả tiền thuê nhà hay trả viện phí? Rất đơn giản. Đặt cọc bằng ETH và bạn sẽ nhận được số Constant bạn cần. Số ETH này sẽ được giữ an toàn trong hợp đồng thông minh của Constant.",
             "exchange": {
                 "caption": "Vay thế chấp bằng tiền mã hoá",
@@ -1498,13 +1498,13 @@
             },
             "what": {
                 "whatCaption0": "Nhận tiền ngay lập tức",
-                "whatCaption1": "Thế chấp tiền mã hoá lấy tiền thật",
-                "whatCaption2": "Lợi nhuận 2%/năm",
-                "whatCaption3": "Đảm bảo phê duyệt 100%",
-                "whatDesc0": "\n          <p>Các giao dịch với Constant được thực hiện dựa trên hợp đồng thông minh và công nghệ chuỗi khối nên rất nhanh chóng và an toàn. Bạn sẽ nhận được tiền trong vòng 1 tiếng đồng hồ.</p>\n        ",
-                "whatDesc1": "\n          <p>Bạn không cần phải bán tiền mã hoá đi để lấy tiền. Thế chấp BTC hoặc ETH cho Constant để nhận ngay USD. Rất dễ dàng thanh khoản mà không cần bán đi số tiền mã hoá của mình.</p>\n        ",
-                "whatDesc2": "\n<p>Nhận ngay số tiền mà bạn cần với yêu cầu hoàn trả linh hoạt và mức lãi suất tốt nhất trên thị trường.</p>        ",
-                "whatDesc3": "\n<p>Constant tạo điều kiện tốt nhất cho người đi vay. Không cần điểm tín dụng, không kiểm tra lịch sử tín dụng và không mất thời gian chờ đợi cả tháng trời để được duyệt cho vay.</p>        "
+                "whatCaption1": "Đơn giản dễ dàng",
+                "whatCaption2": "Lãi suất ưu đãi",
+                "whatCaption3": "Ví dụ:",
+                "whatDesc0": "\n<p>Khách hàng sẽ nhận được tiền ngay khi phần tài sản thế chấp được xác nhận trên chuỗi khối. </p>\n\n<p>Thời gian dự kiến: 2 phút cho ETH và 10 phút cho BTC.</p>        \n        ",
+                "whatDesc1": "\n          <p>Không thủ tục giấy tờ phức tạp. Chỉ cần thế chấp BTC/ETH là nhận ngay được tiền. Tỉ lệ duyệt 100%.</p>\n        ",
+                "whatDesc2": "\n<p>Không kiểm tra lịch sử tín dụng. Không chứng minh tài chính. Lãi suất chỉ từ 4.5%/năm.</p>        ",
+                "whatDesc3": "\n<p>Nếu bạn vay 1,000 USD với mức lãi suất 4.5%/năm cho kì hạn 1 tháng.</p>\n\n<p>Số lãi bạn phải trả là: <br />1,000 USD x (4.5/12) = 3.75 USD</p>\n<p>Không trả lãi định kì. Chỉ cần hoàn trả đầy đủ khi đáo hạn vay.</p>        "
             },
             "howItWorks": {
                 "intro": "\n<p>Thế chấp tiền mã hoá để nhận ngay tiền thật, với tỉ giá và lãi suất tốt nhất trên thị trường.</p>\n          <p>Bạn cần tiền mặt? Constant nhận thế chấp bằng tiền mã hoá để cho vay bằng USD hoặc VNĐ. Bạn vẫn sẽ có tiền để sử dụng mà không cần phải bán đi số tiền mã hoá của mình.</p>\n        ",
@@ -1513,10 +1513,10 @@
                 "desc1": "Bạn muốn vay bao nhiêu? Hãy nói cho Constant biết nhu cầu của bạn.",
                 "step2": "BƯỚC 2",
                 "title2": "CHỌN TÀI SẢN THẾ CHẤP VÀ THỜI HẠN",
-                "desc2": "Bạn có thể sử dụng BTC hay ETH làm vật thế chấp. Chỉ cần chọn thời hạn cho vay phù hợp với khả năng của bạn, hệ thống sẽ tự động tính toán ra số BTC hay ETH mà bạn cần phải thế chấp.",
+                "desc2": "Chỉ cần chọn thời hạn vay phù hợp với khả năng của bạn, hệ thống sẽ tự động tính toán ra số BTC hay ETH mà bạn cần phải thế chấp.",
                 "step3": "BƯỚC 3",
                 "title3": "NHẬN TIỀN",
-                "desc3": "Chỉ trong 1 tiếng, bạn sẽ nhận được số USD bạn cần ở trong tài khoản Constant không kì hạn. Sau đó bạn có thể rút tiền về tài khoản ngân hàng bất cứ lúc nào."
+                "desc3": "Chỉ trong 1 tiếng, bạn sẽ nhận được số USD bạn cần ở trong tài khoản Constant. Bạn có thể rút số tiền này về tài khoản ngân hàng bất cứ lúc nào."
             },
             "reference": "\n        <div name=\"ref-container\">\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Lãi suất:</span>\n            <span name=\"ref-value\">{intRate}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Giá trị thế chấp:</span>\n            <span name=\"ref-value\">{colValue}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Lãi từ phần tài sản thế chấp:</span>\n            <span name=\"ref-value\">{colReturn}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Ngưỡng mặc định:</span>\n            <span name=\"ref-value\">{defThreshold}</span>\n          </div>\n        </div>\n      \n      ",
             "transaction": {
@@ -1579,21 +1579,21 @@
         "midBanner1": "Chuyển khoản tới bất kì đâu",
         "midBanner2": "Hoàn toàn miễn phí",
         "whatChatWithUs": "Chat với Constant",
-        "whatCaption0": "Lãi 8%/năm",
-        "whatCaption1": "Đầu tư an toàn lợi nhuận cao",
-        "whatCaption2": "Dễ dàng truy cập",
-        "whatCaption3": "Constant luôn sẵn sàng hỗ trợ",
+        "whatCaption0": "Lãi suất USD hấp dẫn.",
+        "whatCaption1": "An toàn ít rủi ro.",
+        "whatCaption2": "Dễ dàng thanh khoản.",
+        "whatCaption3": "Ví dụ:",
         "whatTitle": "Các tiện ích của Constant",
         "whatTitle0": "Đầu tư bằng USD",
         "whatTitle1": "Lên đến 130 triệu USD",
         "whatTextLink1": "Đọc đầy đủ",
         "whatLink1": "/chính sách bảo mật",
-        "whatDesc1": "<p>Dù bạn chọn kì hạn bao lâu, lãi luôn được trả về hàng ngày. Bạn có thể rút lãi ra bất cứ lúc nào bạn muốn, tiếp tục tái đầu tư và để đồng tiền tự sinh sôi.</p>",
+        "whatDesc1": "<p>Vì tất cả các khoản vay đều phải có thế chấp, khách hàng có thể yên tâm gửi tiết kiệm với Constant để nhận lãi như một hình thức đầu tư an toàn.</p>",
         "whatTitle2": "Bởi Chính phủ Hoa Kì",
         "whatTitle3": "Không yêu cầu số tiền tối thiểu",
-        "whatDesc0": "<p>Hãy tận dụng tối đa nguồn tiền nhàn rỗi. Constant áp dụng lãi suất rất hấp dẫn mà bạn không thể chối từ. Phần lãi sẽ được trả về hàng ngày và bạn có thể rút ra bất cứ lúc nào.</p>",
-        "whatDesc2": "<p>Ai cũng xứng đáng có được một cơ hội tốt để đầu tư. Dù ở bất cứ đâu trên thế giới, chỉ cần có kết nối Internet và tốn 15s là bạn có thể thực hiện đầu tư với Constant.</p>",
-        "whatDesc3": "<p>Bạn làm việc rất chăm chỉ để kiếm tiền và chúng tôi đảm bảo rằng những đồng tiền này sẽ được sử dụng một cách thích hợp. Những chuyên gia tư vấn đầu tư của Constant luôn sẵn sàng hỗ trợ mọi lúc khách hàng cần và tuyệt đối không nhận tiền hoa hồng.</p>",
+        "whatDesc0": "<p>Constant cho vay thế chấp với lãi suất 4.5%/năm để có khả năng áp dụng mức lãi suất USD tốt nhất cho khách hàng.</p>",
+        "whatDesc2": "<p>Hưởng lãi suất cố định. Không giới hạn số tiền gửi\n</p>\n<p>Nếu khách hàng cần tiền gấp, hoàn toàn có thể rút vốn bất cứ lúc nào. \n</p>",
+        "whatDesc3": "<p>Nếu bạn gửi tiết kiệm 10,000 USD với kì hạn 12 tháng, bạn sẽ kiếm được:</p>\n<p>\n10,000 USD x 4% = 400 USD</p>\n<p>\nHãy tận dụng mọi khoản tiền nhàn rỗi để sinh lời!</p>",
         "whatMore0": "Constant đảm bảo lợi nhuận cao và không có rủi ro",
         "whatMore1": "Constant bảo vệ tiền của bạn như thế nào?",
         "whatMore2": "Cách chọn kì hạn đầu tư phù hợp",
@@ -1779,7 +1779,7 @@
         }
     },
     "homeWhatwedo": {
-        "desc": "\n      <p>We are committed to economic freedom. That’s freedom of movement and freedom of choice. We are committed to economic equality. That’s equal accessibility and equal opportunity. In essence, we want to make money more useful, and growth more attainable, for anyone, anywhere in the world.</p>\n      <p>What does that look like? Fair interest rates. Inclusive loans. A state-less, stable currency that you can invest, borrow, and spend. Transactions secured and carried out collectively by users of the network. A financial solution for the people, made possible by the people.</p>\n      <p>Constant is proud to be 100% digital, online 24/7. So no waiting for your broker to pick up the phone, no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime. </p>\n    "
+        "desc": "\n<p>Chúng tôi tin vào một hệ thống tài chính công bằng hơn, kinh tế hơn!\nTham gia vào lĩnh vực tài chính trên nền tảng blockchain từ những ngày đầu tiên, chúng tôi là những kỹ sư tin rằng ngành tài chính nên dành cho mọi người: nhiều quyền lợi hơn, dễ sử dụng hơn bất kể bạn là ai và đang sinh sống ở đâu.</p>\n<p>Thế nào là dịch vụ tài chính hoàn hảo? Đối với đội ngũ Constant, đó là loại tiền tệ có thể lưu thông tự do trên toàn thế giới với giá trị ổn định nhất. Bạn có thể tích lũy, tiêu xài, vay nợ chỉ bằng 1 loại tiền tệ quyền lực được định giá bởi USD và bảo hiểm bởi những tổ chức uy tín nhất thế giới. Trong ước mơ của Constant, đây chính là một “ngân hàng” tạo ra bởi người dùng & phục vụ lợi ích của người dùng.</p>\n<p>Hơn thế nữa, chúng tôi là một dự án công nghệ! Nghĩa là Constant luôn sẵn sàng 24/7, 100% online. Không còn cảnh xếp hàng ở phòng giao dịch, không còn những người nghẽn mạch thanh toán do lễ tết. Chúng tôi - những kỹ sư, nhà thiết kế, chuyên gia tài chính làm việc trên toàn thế giới với mục tiêu lớn nhất là giúp tiền của bạn sinh lời và lưu thông dễ dàng nhất.</p>    "
     },
     "faqs": {
         "title": "Câu hỏi thường gặp",
@@ -2015,7 +2015,7 @@
         "currencyDropdownLabel": "Đơn vị tiền tệ",
         "amountResultLabel": "Theo tỉ giá ngày hôm nay, tương đương với:",
         "submitBtn": {
-            "depositNow": "NẠP TIỀN NGAY",
+            "depositNow": "NỘP TIỀN VÀO TÀI KHOẢN",
             "depositWithAmount": "NẠP {fiatAmount}{fiatCurrency}"
         },
         "noAgentAvaiable": "Rất tiếc. Hãy thử một con số nhỏ hơn hoặc thử lại sau.",
@@ -2024,8 +2024,8 @@
         "getCurrencyListFailed": "Xảy ra lỗi khi xác nhận đơn vị tiền tệ",
         "loading": "Đang tải...",
         "amountMustBeLargerThan": "Số tiền gửi phải lớn hơn {min}{fiatCurrency}",
-        "howMuchDoYouWantToDeposit": "BẠN MUỐN GỬI BAO NHIÊU TIỀN? ",
-        "formDesc": "Constant có liên kết với hơn 20 ngân hàng với bảo hiểm 250,000 USD ở mỗi ngân hàng. Điều này có nghĩa bạn được bảo hiểm lên tới 5,000,000 USD."
+        "howMuchDoYouWantToDeposit": "BẠN MUỐN NỘP BAO NHIÊU TIỀN VÀO TÀI KHOẢN? ",
+        "formDesc": "Tiền nộp vào tài khoản Constant được FDIC bảo hiểm tối đa lên đến 130,000,000 USD."
     },
     "exchangeInputSellForm": {
         "amountResult": {
@@ -2044,13 +2044,13 @@
         "whichCurrencyYouWant": "Bạn muốn nhận đơn vị tiền tệ nào?"
     },
     "exchangeInputBuyTrialForm": {
-        "title": "<h6>Chúng tôi tặng bạn một khoản đầu tư thử nghiệm miễn phí trị giá 1,000 USD để bạn hiểu hơn về Constant. Khi đáo hạn, bạn được giữ toàn bộ phần lãi.</h6>",
+        "title": "<h6>Chúng tôi tặng bạn một khoản tiết kiệm thử nghiệm trị giá 1,000 USD để trải nghiệm dịch vụ. Khi đáo hạn, bạn được giữ toàn bộ phần lãi.</h6>",
         "highlightText": "bạn giữ toàn bộ phần lãi.",
         "trialLeft": "Chỉ còn {number} lần trải nghiệm dịch vụ miễn phí.",
         "noMoreTrialLeft": "Không còn trải nghiệm dịch vụ miễn phí.",
-        "submitBtn": "ĐẦU TƯ NGAY",
+        "submitBtn": "Đăng ký thử nghiệm",
         "btnDesc": "Chỉ dành cho những khách hàng mới. Khoản đầu tư 1,000 USD miễn phí để trải nghiệm dịch vụ sẽ được trả về Constant khi đáo hạn nhưng bạn được giữ toàn bộ phần lãi.",
-        "termLabel": "Chọn kế hoạch đầu tư"
+        "termLabel": "Chọn kì hạn"
     },
     "termSelector": {
         "label": "Chọn kì hạn.",
@@ -2088,8 +2088,8 @@
     },
     "saving": {
         "trialLeftNum": "CHỈ CÒN {trialLeft} LẦN TRẢI NGHIỆM MIỄN PHÍ",
-        "title": "<h1><span>Hãy đầu tư</span>theo cách của bạn.</h1>",
-        "subTitle": "Constant - nền tảng kết nối nhà đầu tư và người cần vay thế chấp đảm bảo khoản đầu tư liên tục sinh lãi và được bảo hiểm 100%. Bạn chỉ cần chọn kì hạn thích hợp, Constant sẽ giúp bạn đầu tư an toàn và thông minh.",
+        "title": "<h1>Gửi tiết kiệm bằng USD.</h1>",
+        "subTitle": "<h5>Lãi suất 4%/năm.</h5>\n<h5>Không giới hạn số tiền tối thiểu.</h5>\n<h5>Lãi cộng dồn hàng ngày.</h5>\n<h5>Rút gốc bất cứ lúc nào.</h5>",
         "makeLocalOrderSuccess": "Lệnh của bạn được tạo thành công",
         "crypto_amount_exists": "Crypto amount exists",
         "makeLocalOrderFailed": "Lệnh của bạn không được tạo thành công",
@@ -2122,32 +2122,32 @@
     "transfer": {
         "info": {
             "title": "Chuyển khoản tới bất cứ ai, ở bất cứ đâu. Hoàn toàn miễn phí.",
-            "desc1": "Sở hữu một tài khoản USD toàn cầu nghĩa là bạn có thể tự do chuyển tiền của mình tới bất cứ đâu trên thế giới. Không giới hạn số lượng và số lần chuyển khoản. Hoàn toàn miễn phí.",
-            "desc2": "Khi người nhận nhận được tiền, họ cũng không phải trả thêm bất kì chi phí nào. Bạn có thể gửi tiền về nhà, thực hiện các giao dịch quốc tế và tất cả đều có thể được hoàn thành ngay lập tức."
+            "desc1": "Chỉ cần có kết nối Internet, bạn có thể tự do chuyển khoản đi khắp mọi nơi trên thế giới bằng một cú click. Không giới hạn số lượng và số lần chuyển khoản. Hoàn toàn miễn phí.",
+            "desc2": "Chỉ mất 0.25% phí (tối đa 35 USD) để rút tiền về tài khoản ngân hàng."
         }
     },
     "deposit": {
         "title": "Tài khoản USD quốc tế.",
         "availableInVn": "Đã có mặt tại Việt Nam.",
         "subTitle": {
-            "sub1": "Giữ tiền bằng USD có lợi hơn nhiều VNĐ. Chuyển khoản hoàn toàn miễn phí tới bất cứ đâu trên thế giới. Hoàn toàn miễn phí.",
-            "sub2": "Tài khoản của bạn được bảo trợ bởi chính phủ Hoa Kỳ và được bảo hiểm bởi Công ty Bảo hiểm Ký thác Liên Bang Hoa Kỳ (FDIC). Từ khi được thành lập vào năm 1933, FDIC chưa từng một lần làm mất tiền. {learnMore}",
+            "sub1": "Nộp tiền vào tài khoản Constant để có thể thực hiện chuyển khoản quốc tế, gửi tiết kiệm hay vay tiền với lãi suất ưu đãi nhất.",
+            "sub2": "Tất cả các khoản tiền gửi được FDIC bảo hiểm 100%. Có thể rút tiền về tài khoản ngân hàng bất cứ lúc nào. Dịch vụ chăm sóc khách hàng hoạt động 24/7. {learnMore}",
             "learnMore": "Tìm hiểu thêm"
         },
         "what": {
             "whatCaption0": "Bảo đảm giá trị đồng tiền",
-            "whatCaption1": "Chuyển khoản miễn phí tới mọi nơi",
-            "whatCaption2": "Được bảo hiểm lên tới 5 triệu USD",
+            "whatCaption1": "Chuyển khoản quốc tế hoàn toàn miễn phí",
+            "whatCaption2": "Được bảo hiểm 130 triệu USD",
             "whatCaption3": "Rút tiền về bất cứ lúc nào",
-            "whatDesc0": "Để chống lạm phát và mất giá, giữ tiền bằng USD - đồng tiền dự trữ của thế giới và được chấp nhận ở khắp mọi nơi.",
-            "whatDesc1": "Thực hiện chuyển khoản ngay lập tức tới bất cứ đâu trên thế giới, không giới hạn và hoàn toàn miễn phí. Từ làm kinh doanh đến gửi tiền về nhà, hãy sử dụng đồng tiền một cách thật thông minh và linh hoạt.",
-            "whatDesc2": "Mỗi tài khoản được FDIC bảo hiểm tối đa lên đến 250,000 USD. Tiền của bạn được chúng tôi giữ trong 20 tài khoản như thế.",
-            "whatDesc3": "Constant liên kết với hệ thống các ngân hàng địa phương để đảm bảo rằng bạn có thể thực hiện rút tiền bất cứ lúc nào."
+            "whatDesc0": "Giữ tiền bằng USD để bảo vệ giá trị tài sản khỏi lạm phát và mất giá.",
+            "whatDesc1": "Chỉ cần kết nối Internet để có thể chuyển khoản tới khắp mọi nơi trên thế giới.",
+            "whatDesc2": "Mỗi tài khoản được FDIC bảo hiểm tối đa lên đến 250,000 USD. Constant giữ tiền của bạn ở trong 520 tài khoản như thế.",
+            "whatDesc3": "Constant liên kết với các ngân hàng địa phương để bạn có thể thực hiện rút tiền vào mọi lúc bạn muốn."
         },
         "howItWorks": {
             "title": "Hướng dẫn sử dụng",
             "step1": "BƯỚC 1",
-            "title1": "NẠP TIỀN VÀO TÀI KHOẢN CONSTANT",
+            "title1": "NỘP TIỀN VÀO TÀI KHOẢN CONSTANT",
             "desc1": "Gửi số tiền bạn muốn đến quỹ tín thác Constant tại Việt Nam. Số tiền này sẽ được đổi sang USD để lưu trữ theo tỉ giá thị trường ngày hôm đó.",
             "step2": "BƯỚC 2",
             "title2": "TIỀN CỦA BẠN ĐƯỢC ĐẢM BẢO",

@@ -56,15 +56,15 @@
     "footer": {
         "cta": {
             "type1": {
-                "title": "<h3>Grow your savings.</h3>",
+                "title": "<h3>Do more with your money</h3>",
                 "btn": "Make a deposit"
             },
             "type2": {
-                "title": "<h3>Get a global USD account.</h3>",
+                "title": "<h3>Get a global USD account</h3>",
                 "btn": "Open an account"
             },
             "type3": {
-                "title": "<h3>Want to earn interest on your savings?</h3>",
+                "title": "<h3>Grow your savings</h3>",
                 "btn": "Browse savings plans"
             },
             "type4": {
@@ -829,10 +829,10 @@
                 "haveTimeAccount": "{term}-{termType} deposit",
                 "month": "month",
                 "anyTimeAccount": "Anytime deposit",
-                "endTerm": "CD term ends:",
+                "endTerm": "Term ends:",
                 "trial": "TRIAL",
                 "trial_description": "You keep the interest. Term has ended",
-                "saving_title": "Time Deposits (CD)",
+                "saving_title": "Fixed Deposits",
                 "anyTime_saving": "Balance",
                 "input2FA": "Input 2FA",
                 "interestInfo": {
@@ -1096,7 +1096,7 @@
             "desc2": "Interest is compounded everyday like clockwork. We make sure your returns are guaranteed by only offering secured, over-collateralized loans. ",
             "step3": "Step 3",
             "title3": "Withdraw funds",
-            "desc3": "Easily withdraw funds to any local bank. When your CD term is up, simply choose the bank account you’d like to send your funds to."
+            "desc3": "Easily withdraw funds to any local bank. When your term is up, simply choose the bank account you’d like to send your funds to."
         },
         "stories": {
             "quote0": "Apart from the bank beating interest rates, this is an incredibly interesting project from a technology standpoint. Banks need to up their game.",
@@ -1476,7 +1476,7 @@
         },
         "constantLoan": {
             "title": "Borrow money",
-            "subTitle": "<h5>7.50% APR.</h5>\n<h5>Instant funding.</h5>\n<h5>Get cash for crypto without needing to sell.</h5>\n",
+            "subTitle": "<h5>4.50% APR.</h5>\n<h5>Instant funding.</h5>\n<h5>Get cash for crypto without needing to sell.</h5>\n",
             "headLine": "Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.",
             "exchange": {
                 "caption": "Crypto-backed loan",
@@ -1504,7 +1504,7 @@
                 "whatDesc0": "\n<p>The money you need will reach you as soon as your collateral is confirmed on its blockchain. </p>\n\n<p>ETA: 2 minutes for ETH and 10 minutes for BTC.</p>        ",
                 "whatDesc1": "\n          <p>Secure your loan with BTC or ETH and receive USD - all without needing to sell your crypto. Enjoy liquidity without needing to liquidate.</p>\n        ",
                 "whatDesc2": "\n<p>No credit scoring or background checks - all we need is your collateral.</p>\n\n<p>Get funds instantly - no month-long waiting games for approval.</p>        ",
-                "whatDesc3": "\n<p>If you borrow $1,000 for 1 month at 4.5% APR</p>\n\n<p>\nYour interest is:</p>\n<br>$1,000 x (4.5/12) = $3.75</br>\n<p>\n\nNo repayment schedules. Just repay when you’re done.</p>        "
+                "whatDesc3": "\n<p>If you borrow $1,000 for 1 month at 4.5% APR</p>\n\n<p>Your interest is: <br />$1,000 x (4.5/12) = $3.75</p>\n<p>No repayment schedules. Just repay when you’re done.</p>        "
             },
             "howItWorks": {
                 "intro": "\n          <p>Deposit cryptocurrency to secure cash, at the best rates on the market.</p>\n          <p>Need cash? We accept major cryptocurrencies as collateral, in exchange for USD or the equivalent in your local currency. That means you’ll have cash to spend - without needing to sell your crypto.</p>\n        ",
@@ -1686,7 +1686,7 @@
             "content": {
                 "faq1": {
                     "question": "What are Constant Referral Rewards?",
-                    "answer": "\n          <p>\n          The Constant Referral Reward program earns you extra interest on our CD savings plans, by sharing Constant with friends and family. You earn interest by completing certain actions, such as referring Constant to friends who then sign up, sharing Constant on social media, and depositing a minimum of $1,000 or more. \n          </p>\n          <p>\n          Complete all actions in our Referral Rewards program and you could earn 6% additional interest on your Savings Plans. \n           </p>\n          "
+                    "answer": "\n          <p>\n          The Constant Referral Reward program earns you extra interest on our fixed deposit plans, by sharing Constant with friends and family. You earn interest by completing certain actions, such as referring Constant to friends who then sign up, sharing Constant on social media, and depositing a minimum of $1,000 or more. \n          </p>\n          <p>\n          Complete all actions in our Referral Rewards program and you could earn 6% additional interest on your Savings Plans. \n           </p>\n          "
                 },
                 "faq2": {
                     "question": "How do I earn reward interest?",
@@ -2006,7 +2006,7 @@
         "loading": "Loading...",
         "amountMustBeLargerThan": "Your amount must be larger than {min} {fiatCurrency}",
         "howMuchDoYouWantToDeposit": "How much do you want to save?",
-        "termLabel": "Pick the savings option that works for you."
+        "termLabel": "Pick the term that works for you."
     },
     "exchangeInputDepositForm": {
         "minUsdRequired": "Please enter an amount larger than 0.01 USD",
@@ -2073,16 +2073,16 @@
                 "name": "Anytime"
             },
             "one": {
-                "name": "1-Month CD"
+                "name": "1-Month"
             },
             "three": {
-                "name": "3-Month CD"
+                "name": "3-Month"
             },
             "six": {
-                "name": "6-Month CD"
+                "name": "6-Month"
             },
             "oneYear": {
-                "name": "12-Month CD"
+                "name": "12-Month"
             }
         }
     },
@@ -2131,7 +2131,7 @@
         "availableInVn": "Available now in Vietnam.",
         "subTitle": {
             "sub1": "It all starts here. Deposit funds to make instant, international transfers, multiply your interest earnings by 5x, and access the friendliest loans in the world.",
-            "sub2": "Easily transfer money in using your local bank account, and withdraw it when you’re done. Enjoy full FDIC-backed insurance on all deposits, and 24/7 support with anything you need. {learnMore}",
+            "sub2": "Easily transfer money in using your local bank account, and withdraw it when you’re done. Enjoy full FDIC-backed insurance on all deposits. {learnMore}",
             "learnMore": "Learn more +"
         },
         "what": {

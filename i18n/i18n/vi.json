@@ -60,7 +60,7 @@
                 "btn": "ĐẦU TƯ NGAY"
             },
             "type2": {
-                "title": "<h3>Sở hữu tài khoản USD toàn cầu.</h3>",
+                "title": "<h3>Mở ngay tài khoản USD toàn cầu.</h3>",
                 "btn": "Đăng ký ngay"
             },
             "type3": {
@@ -104,7 +104,7 @@
         "referral": "Chương trình giới thiệu"
     },
     "headerBar": {
-        "blog": "Tips",
+        "blog": "Bí quyết",
         "myAccount": "Tài khoản của tôi",
         "deposit": "Nộp tiền",
         "transfer": "Chuyển khoản",
@@ -1095,7 +1095,7 @@
         "blockCap2": "Hưởng lãi suất cao hơn 60 lần so với các ngân hàng khác.",
         "blockDesc2": "\n    ",
         "blockTitle3": "Sứ mệnh của Constant",
-        "blockCap3": "Chúng tôi mong muốn xây dựng thành công một hệ thống tài chính công bằng và tự do hơn.",
+        "blockCap3": "Chúng tôi muốn xây dựng một hệ thống tài chính công bằng và tự do hơn.",
         "titleBlock4": "Tại sao nên gửi tiết kiệm với Constant?",
         "titleCap4": "Đây là lí do:",
         "titleDesc4": "\n      <p></p>\n      <p></p>\n    ",
@@ -1106,7 +1106,7 @@
             "desc1": "Chọn một kì hạn thích hợp rồi nộp tiền vào tài khoản Constant để bắt đầu tiết kiệm. ",
             "step2": "Bước 2",
             "title2": "Hưởng lãi suất kép",
-            "desc2": "Lãi suất được cộng dồn hàng ngày để khách hàng có thể thu lợi tối đa từ khoản tiết kiệm của mình.",
+            "desc2": "Lãi suất được cộng dồn hàng ngày để tối đa hóa lợi nhuận cho khách hàng.",
             "step3": "Bước 3",
             "title3": "Rút tiền tiết kiệm",
             "desc3": "Khi đáo hạn, khách hàng có thể dễ dàng rút hết cả gốc lẫn lãi về tài khoản ngân hàng bất cứ lúc nào."
@@ -1516,7 +1516,7 @@
                 "whatCaption2": "Lãi suất ưu đãi",
                 "whatCaption3": "Ví dụ:",
                 "whatDesc0": "\n<p>Khách hàng sẽ nhận được tiền ngay khi phần tài sản thế chấp được xác nhận trên chuỗi khối. </p>\n\n<p>Thời gian dự kiến: 2 phút cho ETH và 10 phút cho BTC.</p>        \n        ",
-                "whatDesc1": "\n          <p>Không thủ tục giấy tờ phức tạp. Chỉ cần thế chấp BTC/ETH là nhận ngay được tiền. Tỉ lệ duyệt 100%.</p>\n        ",
+                "whatDesc1": "\n          <p>Không thủ tục giấy tờ phức tạp. Chỉ cần thế chấp BTC/ETH là nhận ngay được tiền. Tỉ lệ thành công 100%.</p>\n        ",
                 "whatDesc2": "\n<p>Không kiểm tra lịch sử tín dụng. Không chứng minh tài chính. Lãi suất chỉ từ 4.5%/năm.</p>        ",
                 "whatDesc3": "\n<p>Nếu bạn vay 1,000 USD với mức lãi suất 4.5%/năm cho kì hạn 1 tháng.</p>\n\n<p>Số lãi bạn phải trả là: <br />1,000 USD x (4.5/12) = 3.75 USD</p>\n<p>Không trả lãi định kì. Chỉ cần hoàn trả đầy đủ khi đáo hạn vay.</p>        "
             },
@@ -1602,10 +1602,10 @@
         "whatTitle1": "Lên đến 130 triệu USD",
         "whatTextLink1": "Đọc đầy đủ",
         "whatLink1": "/chính sách bảo mật",
-        "whatDesc1": "<p>Vì tất cả các khoản vay đều phải có thế chấp, khách hàng có thể yên tâm gửi tiết kiệm với Constant để nhận lãi như một hình thức đầu tư an toàn.</p>",
+        "whatDesc1": "<p>Khách hàng có thể yên tâm gửi tiết kiệm để nhận lãi với Constant vì chúng tôi đảm bảo tất cả khoản vay bằng tài sản thế chấp.</p>",
         "whatTitle2": "Bởi Chính phủ Hoa Kì",
         "whatTitle3": "Không yêu cầu số tiền tối thiểu",
-        "whatDesc0": "<p>Constant cho vay thế chấp với lãi suất 4.5%/năm để có khả năng áp dụng mức lãi suất USD tốt nhất cho khách hàng.</p>",
+        "whatDesc0": "<p>Constant cho vay thế chấp với lãi suất 4.5%/năm để áp dụng mức lãi suất USD tốt nhất cho khách hàng.</p>",
         "whatDesc2": "<p>Hưởng lãi suất cố định. Không giới hạn số tiền gửi\n</p>\n<p>Nếu khách hàng cần tiền gấp, hoàn toàn có thể rút vốn bất cứ lúc nào. \n</p>",
         "whatDesc3": "<p>Nếu bạn gửi tiết kiệm 10,000 USD với kì hạn 12 tháng, bạn sẽ kiếm được:</p>\n<p>\n10,000 USD x 4% = 400 USD</p>\n<p>\nHãy tận dụng mọi khoản tiền nhàn rỗi để sinh lời!</p>",
         "whatMore0": "Constant đảm bảo lợi nhuận cao và không có rủi ro",
@@ -1888,15 +1888,15 @@
         },
         "deposit": {
             "question1": "Nộp tiền vào tài khoản Constant có an toàn không?",
-            "answer1": "\n<p>Rất an toàn. Sau khi nộp tiền, tiền của bạn sẽ được đổi sang USD để giữ trong quỹ Constant được giám sát bởi công ty giám định tài chính độc lập có uy tìn ở Mỹ là PrimeTrust.</p>\n<br />\n<p>Quỹ Constant được bảo hộ bởi pháp luật Hoa Kỳ và bảo hiểm tối đa 5,000,000 USD.</p>      ",
+            "answer1": "\n<p>Rất an toàn. Sau khi nộp tiền, tiền của bạn sẽ được đổi sang USD để giữ trong quỹ Constant được giám sát bởi công ty giám định tài chính độc lập có uy tìn ở Mỹ là PrimeTrust.</p>\n<br />\n<p>Quỹ Constant được bảo hộ bởi pháp luật Hoa Kỳ và bảo hiểm tối đa lên tới 130,000,000 USD.</p>      ",
             "question2": "Nộp tiền một lần tối đa được bao nhiêu?",
             "answer2": "\n<p>Không có giới hạn.</p>      ",
             "question3": "Nộp tiền vào tài khoản Constant như thế nào?",
             "answer3": "\n<p>Có 2 cách để nộp tiền vào tài khoản Constant:</p>\n<ol>\n<li>Nộp tiền trực tiếp trên website. Đơn giản nhập số tiền bạn muốn nộp và thực hiện chuyển khoản đến quỹ Constant. Chúng tôi sau đó sẽ nộp USD vào tài khoản của bạn.</li>\n<li>Mua stable token Constant trên các sàn giao dịch rồi gửi Constant tới ví của chúng tôi. Chúng tôi sẽ nộp USD vào tài khoản của bạn.</li>\n</ol>      ",
             "question4": "Constant hỗ trợ những đơn vị tiền tệ nào?",
-            "answer4": "\n<p>Constant hỗ trợ tất cả các đơn vị tiền tệ. Sau khi nộp tiền, khoản tiền của bạn sẽ được đổi sang USD theo tỉ giá thị trường tại thời điểm đó và giữ trong quỹ Constant.</p>\n<br />\n<p>Tại Việt Nam, bạn chỉ có thể rút Constant về tài khoản VNĐ.</p>      ",
+            "answer4": "\n<p>Constant hỗ trợ USD và VND. Sau khi nộp tiền, khoản tiền của bạn sẽ được đổi sang USD theo tỉ giá thị trường tại thời điểm đó và giữ trong quỹ Constant.</p>\n<br />\n<p>Tại Việt Nam, bạn chỉ có thể rút Constant về tài khoản VNĐ.</p>      ",
             "question5": "Constant có hỗ trợ tiền mã hoá không?",
-            "answer5": "\n<p>Bạn không thể dùng tiền mã hoá để nộp tiền vào tài khoản Constant nhưng có thể dùng tiền mã hoá để mua Constant trên các sàn giao dịch. Sau đó gửi Constant đển ví Constant của chúng tôi và chúng tôi sẽ nộp USD vào tài khoản của bạn.</p>      ",
+            "answer5": "\n<p>Bạn có thể mua Constant trên các sàn giao dịch như Crex24, p2pb2b... bằng tiền mã hóa. Sau đó, hãy gửi Constant đển ví Constant của chúng tôi để nhận khoản tiết kiệm bằng USD tương ứng.</p>      ",
             "question6": "Có giới hạn số lần số lượng nộp tiền không?",
             "answer6": "<p>Không có giới hạn. Bạn có thể nộp bao nhiêu tuỳ thích.</p>"
         },
@@ -1948,24 +1948,24 @@
             "question1": "Đầu tư với Constant là làm gì?",
             "answer1": "Đầu tư với Constant rất đơn giản, an toàn và hiệu quả. Bạn chỉ cần gửi số tiền mình muốn đầu tư với kì hạn và mức lãi suất thích hợp rồi để đấy. Ngay khi đáo hạn, bạn sẽ nhận lại được toàn bộ số tiền đầu tư của mình cộng thêm phần lãi tính theo mức lãi suất bạn đã chọn. Rất đơn giản!",
             "question2": "Làm thế nào để đầu tư với Constant?",
-            "answer2": "\n<p>Ở mục \"Đầu tư\" trên ở trên website Constant, bạn có thể chọn nhiều kì hạn đầu tư khác nhau với mức lãi suất khác nhau. Lãi suất sẽ được trả về hàng ngày.</p>\n<br />\n<p>Để bảo vệ nhà đầu tư, các khoản đầu tư được gửi vào quỹ tín thác Constant được bảo hộ bởi pháp luật Hoa Kì và được bảo hiểm lên tới 5,000,000 USD.</p>\n<br />\n<p>Lãi suất đầu tư của Constant được trả hàng ngày, bạn có thể tái đầu tư để kiếm thêm lợi nhuận, thực hiện chuyển khoản quốc tế, hay chỉ đơn giản bảo vệ giá trị tài sản khỏi lạm phát và mất giá. Lựa chọn là của bạn!</p>      ",
+            "answer2": "\n<p>Ở mục \"Tiết kiệm\" trên ở trên website Constant, bạn có thể chọn nhiều kì hạn tiết kiệm khác nhau với mức lãi suất khác nhau. Lãi suất được cộng dồn hàng ngày.</p>\n<br />\n<p>Các khoản tiết kiệm được gửi vào quỹ tín thác Constant được bảo hộ bởi pháp luật Hoa Kì và được bảo hiểm lên tới 130,000,000 USD.</p>\n<br />\n<p>Constant có thể được sử dụng để gửi tiết kiệm hưởng lãi suất kép, thực hiện chuyển khoản quốc tế, hay chỉ đơn giản bảo vệ giá trị tài sản khỏi lạm phát và mất giá. Lựa chọn là của bạn!</p>      ",
             "question3": "Làm thế nào để giảm thiểu rủi ro cho khoản đầu tư?",
             "answer3": "Khoản đầu tư của bạn được giữ trong quỹ Constant, được giám sát bởi một tổ chức giám sát tài chính độc lập có uy tín của Mỹ là Prime Trust và được bảo hiểm 250,000 USD bởi FDIC. Bạn có thể đọc thêm về quỹ Constant trên <a href=\"https://medium.com/@constantmoney\" target=\"_blank\">blog</a> của chúng tôi",
             "question4": "Constant hỗ trợ những loại tiền tệ nào?",
-            "answer4": "Constant hỗ trợ moi đơn vị tiền tệ được chuyển khoản tới quỹ Constant. Tại đây, khoản tiền của bạn sẽ được đổi sang USD và lưu trữ trong quỹ Constant được bảo hiểm bởi FDIC.",
+            "answer4": "Constant chỉ hỗ trợ USD và VNĐ. Khoản tiền của bạn sẽ được đổi sang USD và lưu trữ trong quỹ Constant được bảo hiểm bởi FDIC.",
             "question5": "Constant có hỗ trợ tiền mã hoá không?",
-            "answer5": "Hiện tại thì Constant không hỗ trợ tiền mã hoá.",
+            "answer5": "Constant hiện đã hỗ trợ USDT và sẽ hỗ trợ nhiều loại tiền điện tử khác trong tương lai.",
             "question6": "Tôi có thể rút vốn của mình về bất cứ lúc nào không?",
             "answer6": "\n<p>Để có thể chào mời lãi suất đầu tư hấp dẫn nhất, Constant sẽ giữ khoản đầu tư của bạn cho đến hết kì hạn đầu tư. Hãy cứ nghĩ khoản đầu tư của bạn là một hạt giống cần được chăm sóc để có thể nảy nở ra lợi nhuận. Constant là nước và dưỡng chất để hạt giống đó có thể phát triển khoẻ mạnh. Việc còn lại của bạn chỉ đơn giản là chọn kì hạn đầu tư phù hợp với kế hoạch tài chính cá nhân của mình.</p>      ",
             "question7": "Khoản đầu tư của tôi được bảo vệ như thế nào?",
-            "answer7": "\n<p>Khoản đầu tư và lợi nhuận của bạn được giữ trong quỹ Constant, được bảo hộ bởi luật pháp Mỹ và được bảo hiểm lên tới 5,000,000 USD bởi FDIC (các khoản đầu tư trên 250,000 USD sẽ được giữ trong những quỹ Constant khác nhau).</p>      ",
+            "answer7": "\n<p>Khoản đầu tư và lợi nhuận của bạn được giữ trong quỹ Constant, được bảo hộ bởi luật pháp Mỹ và được bảo hiểm lên tới 130,000,000 USD bởi FDIC (các khoản đầu tư trên 250,000 USD sẽ được giữ trong những quỹ Constant khác nhau).</p>      ",
             "question8": "Tôi có thể đầu tư thêm tiền vào một khoản đầu tư có kì hạn của mình không?",
             "answer8": "\n<p>Bạn không thể đầu tư thêm tiền vào sau khi khoản đầu tư có kì hạn đã bắt đầu. Tuy nhiên, không có giới hạn số khoản đầu tư bạn có thể thực hiện. Nếu như bạn muốn đầu tư nhiều hơn, hãy tạo thêm một khoản đầu tư khác và quan sát lợi nhuận của mình tăng lên mỗi ngày.</p>      ",
             "question9": "Quỹ tín thác Constant là gì?",
-            "answer9": "Quỹ Constant là một quỹ tín thác được kiểm toán và kiểm soát bởi Prime Trust - một tổ chức giám sát tài chính độc lập có uy tín của Mỹ. Quỹ Constant được bảo hộ bởi pháp luật Mỹ và được bảo hiểm bởi FDIC lên tới 130,000,000 USD (mỗi tài khoản được bảo hiểm tối đa 5,000,000 USD).",
+            "answer9": "Quỹ Constant là một quỹ tín thác được kiểm toán và kiểm soát bởi Prime Trust - một tổ chức giám sát tài chính độc lập có uy tín của Mỹ. Quỹ Constant được bảo hộ bởi pháp luật Mỹ và được bảo hiểm bởi FDIC lên tới 130,000,000 USD (mỗi tài khoản được bảo hiểm tối đa 250,000 USD).",
             "question10": "Bảo hiểm của FDIC là gì?",
-            "answer10": "\n<p>Công ty Bảo hiểm Ký thác Liên bang Hoa Kỳ (FDIC) là một tổ chức được điều hành bởi chính phủ Hoa Kỳ để bảo đảm sự minh bạch của hệ thống tài chính Hoa Kỳ. FDIC thực hiện rất nhiều hoạt động, trong đó có bảo hiểm tiền gửi. Quỹ Constant được FDIC bảo hiểm lên tới 130,000,000 USD. Bạn có thể đọc thêm về FDIC <a href=\"https://www.fdic.gov/about/strategic/strategic/mission.html\" target=\"_blank\">ở đây</a>.</p>      \n<br />\n<p>Mỗi tài khoản được FDIC bảo hiểm tối đa lên tới 5,000,000 USD.</p>      ",
-            "question11": "Why do you lend my savings to borrowers?",
+            "answer10": "\n<p>Công ty Bảo hiểm Ký thác Liên bang Hoa Kỳ (FDIC) là một tổ chức được điều hành bởi chính phủ Hoa Kỳ để bảo đảm sự minh bạch của hệ thống tài chính Hoa Kỳ. FDIC thực hiện rất nhiều hoạt động, trong đó có bảo hiểm tiền gửi. Quỹ Constant được FDIC bảo hiểm lên tới 130,000,000 USD. Bạn có thể đọc thêm về FDIC <a href=\"https://www.fdic.gov/about/strategic/strategic/mission.html\" target=\"_blank\">ở đây</a>.</p>      \n<br />\n<p>Mỗi tài khoản được FDIC bảo hiểm tối đa lên tới 250,000 USD.</p>      ",
+            "question11": "Tại sao khoản tiết kiệm của tôi lại được mang cho người khác vay?",
             "answer11": "<p>\n        We lend your savings to borrowers so we can pay you better interest rates. Aside from seeing your money grow, you won’t notice any changes to your Savings Plan. There’s no risk to you as all our loans are overcollateralized, meaning we only lend to people who put up collateral worth more than the loan. If someone doesn’t repay, we sell collateral on the market. This guarantees we can always return your savings and pay you interest.\n      </p>",
             "question12": "Is there a minimum or maximum amount I can save?",
             "answer12": "\n        <p>No. You can save as much or as little as you like.</p>\n      "
@@ -1986,11 +1986,11 @@
             "question1": "Constant là gì?",
             "answer1": "\n<p>Constant là dịch vụ tài chính giúp bạn sử dụng đồng tiền hiệu quả hơn. Từ đầu tư tới vay vốn, Constant tận dụng tối đa sự phát triển của công nghệ chuỗi khối để giúp khách hàng giải quyết nhu cầu tài chính một cách tốt nhất.</p>\n<br />\n<p>Constant giảm thiểu chi phí tối đa để khách hàng có thể đầu tư an toàn với lãi suất hấp dẫn nhất, vay tiền nhanh chóng dễ dàng, bảo vệ giá trị tài sản cũng như chuyển khoản quốc tế miễn phí.</p>\n<br />\n<p>Constant luôn sẵn sàng phục vụ. Bất cứ lúc nào. Bất kì nơi đâu.</p>      ",
             "question2": "Constant có phải là ngân hàng không?",
-            "answer2": "\n<p>Constant thậm chí còn tuyệt vời hơn thế.</p>\n<br />\n<p>Constant được số hoá 100% và có khả năng phục vụ 24/7.</p>\n<br />\n<p>Lãi suất đầu tư của Constant hấp dẫn hơn rất nhiều lần so với những dịch vụ đầu tư khác, tối đa lên tới 14%/năm tính trên USD trong khi lãi suất vay thế chấp cũng rất ưu đãi, chỉ từ 2-5%/năm. </p>\n<br />\n<p>Không yêu cầu lịch sử tín dụng và cũng không đưa cho bạn một xấp giấy tờ phải kí, Constant luôn sẵn sàng phục vụ mọi khách hàng ở khắp nơi trên thế giới.</p>      ",
+            "answer2": "\n<p>Constant thậm chí còn tuyệt vời hơn thế.</p>\n<br />\n<p>Constant được số hoá 100% và có khả năng phục vụ 24/7.</p>\n<br />\n<p>Lãi suất tiết kiệm của Constant lên tới 4%/năm tính trên USD trong khi lãi suất vay thế chấp là thấp nhất thị trường, chỉ từ 4.5%/năm. </p>\n<br />\n<p>Không yêu cầu lịch sử tín dụng và cũng không thủ tục giấy tờ phức tạp, Constant luôn sẵn sàng phục vụ mọi khách hàng ở khắp nơi trên thế giới.</p>      ",
             "question3": "Constant có hợp pháp không?",
             "answer3": "Có. Khoản đầu tư của bạn được giữ an toàn trong quỹ tín thác của chúng tôi, được bảo hộ bởi luật pháp Hoa Kỳ. Đây cũng là lí do bạn được yêu cầu thực hiện xác minh danh tính để có thể rút lãi về tài khoản ngân hàng của mình.",
             "question4": "Constant kiếm tiền bằng cách nào?",
-            "answer4": "Constant lấy lãi từ việc cho vay thế chấp để trả lãi cho các khoản đầu tư của khách hàng.",
+            "answer4": "Constant lấy lãi từ việc cho vay thế chấp để trả lãi cho các khoản tiết kiệm của khách hàng.",
             "question5": "Đội ngũ Constant gồm những ai?",
             "answer5": "Chúng tôi là một đội tuyệt vời gồm những kĩ sư, nhà kinh tế, nhà hoạch định chính sách tiền tệ và những chuyên gia đầu ngành trong nhiều lĩnh vực. Bạn có thể tìm hiểu thêm về đội ngũ Constant tại <a href=\"/about-us\" target=\"_blank\">Giới thiệu</a>.",
             "question6": "Trụ sở Constant ở đâu?",
@@ -2019,8 +2019,8 @@
         "getCurrencyListFailed": "Đơn vị tiền tệ này không được hỗ trợ",
         "loading": "Đang tải...",
         "amountMustBeLargerThan": "Số tiền bạn gửi phải lớn hơn {min}{fiatCurrency}",
-        "howMuchDoYouWantToDeposit": "BẠN MUỐN ĐẦU TƯ BAO NHIÊU? ",
-        "termLabel": "Chọn kế hoạch đầu tư"
+        "howMuchDoYouWantToDeposit": "BẠN MUỐN GỬI TIẾT KIỆM BAO NHIÊU? ",
+        "termLabel": "Chọn kì hạn"
     },
     "exchangeInputDepositForm": {
         "minUsdRequired": "Xin vui lòng nhập số lớn hơn 0.01 USD",
@@ -2135,8 +2135,8 @@
     },
     "transfer": {
         "info": {
-            "title": "Chuyển khoản tới bất cứ ai, ở bất cứ đâu. Hoàn toàn miễn phí.",
-            "desc1": "Chỉ cần có kết nối Internet, bạn có thể tự do chuyển khoản đi khắp mọi nơi trên thế giới bằng một cú click. Không giới hạn số lượng và số lần chuyển khoản. Hoàn toàn miễn phí.",
+            "title": "Chuyển khoản tới bất cứ ai, ở bất cứ đâu.",
+            "desc1": "Chỉ cần có kết nối Internet, bạn có thể tự do chuyển khoản đi khắp mọi nơi trên thế giới bằng một cú click. Không giới hạn số lượng và số lần chuyển khoản với chi phí thấp nhất.",
             "desc2": "Chỉ mất 0.25% phí (tối đa 35 USD) để rút tiền về tài khoản ngân hàng."
         }
     },
@@ -2144,31 +2144,31 @@
         "title": "Tài khoản USD quốc tế.",
         "availableInVn": "Đã có mặt tại Việt Nam.",
         "subTitle": {
-            "sub1": "Nộp tiền vào tài khoản Constant để có thể thực hiện chuyển khoản quốc tế, gửi tiết kiệm hay vay tiền với lãi suất ưu đãi nhất.",
-            "sub2": "Tất cả các khoản tiền gửi được FDIC bảo hiểm 100%. Có thể rút tiền về tài khoản ngân hàng bất cứ lúc nào. Dịch vụ chăm sóc khách hàng hoạt động 24/7. {learnMore}",
+            "sub1": "Nộp tiền vào tài khoản Constant để chuyển khoản quốc tế, gửi tiết kiệm hay vay tiền với lãi suất ưu đãi nhất.",
+            "sub2": "Bảo hiểm 100% bởi FDIC. Rút tiền linh hoạt bất cứ lúc nào. Chăm sóc khách hàng 24/7. {learnMore}",
             "learnMore": "Tìm hiểu thêm"
         },
         "what": {
             "whatCaption0": "Bảo đảm giá trị đồng tiền",
             "whatCaption1": "Chuyển khoản quốc tế hoàn toàn miễn phí",
             "whatCaption2": "Được bảo hiểm 130 triệu USD",
-            "whatCaption3": "Rút tiền về bất cứ lúc nào",
+            "whatCaption3": "Rút tiền bất cứ lúc nào",
             "whatDesc0": "Giữ tiền bằng USD để bảo vệ giá trị tài sản khỏi lạm phát và mất giá.",
-            "whatDesc1": "Chỉ cần kết nối Internet để có thể chuyển khoản tới khắp mọi nơi trên thế giới.",
-            "whatDesc2": "Mỗi tài khoản được FDIC bảo hiểm tối đa lên đến 250,000 USD. Constant giữ tiền của bạn ở trong 520 tài khoản như thế.",
-            "whatDesc3": "Constant liên kết với các ngân hàng địa phương để bạn có thể thực hiện rút tiền vào mọi lúc bạn muốn."
+            "whatDesc1": "Chỉ cần kết nối Internet để chuyển khoản tới mọi nơi trên thế giới.",
+            "whatDesc2": "Mỗi tài khoản được FDIC bảo hiểm tối đa lên đến 250,000 USD, tổng giá trị lên đến 130 triệu USD.",
+            "whatDesc3": "Constant liên kết với các ngân hàng địa phương để bạn có thể rút tiền vào mọi lúc, mọi nơi."
         },
         "howItWorks": {
             "title": "Hướng dẫn sử dụng",
             "step1": "BƯỚC 1",
             "title1": "NỘP TIỀN VÀO TÀI KHOẢN CONSTANT",
-            "desc1": "Gửi số tiền bạn muốn đến quỹ tín thác Constant tại Việt Nam. Số tiền này sẽ được đổi sang USD để lưu trữ theo tỉ giá thị trường ngày hôm đó.",
+            "desc1": "Gửi số tiền bạn muốn đến công ty Constant tại Việt Nam. Số tiền này sẽ được đổi sang USD theo tỉ giá thị trường tại thời điểm đó.",
             "step2": "BƯỚC 2",
             "title2": "TIỀN CỦA BẠN ĐƯỢC ĐẢM BẢO",
-            "desc2": "Tiền của bạn đã tính theo USD được giữ an toàn trong tài khoản ngân hàng ở Mỹ được bảo hiểm 100%.",
+            "desc2": "Tiền của bạn được giữ an toàn trong tài khoản ngân hàng Mỹ được bảo hiểm 100%.",
             "step3": "BƯỚC 3",
-            "title3": "VÀ NHẬN VỀ THÊM NHIỀU TIỆN ÍCH",
-            "desc3": "Bây giờ bạn đã có một tài khoản USD toàn cầu có thể chuyển khoản miễn phí và rút tiền không giới hạn.\n"
+            "title3": "VÀ NHẬN THÊM NHIỀU TIỆN ÍCH",
+            "desc3": "Bạn đã có một tài khoản USD để chuyển khoản quốc tế.\n"
         },
         "checklist": {
             "title": "Tại sao nên đầu tư với Constant?",
@@ -2287,57 +2287,57 @@
     },
     "newHome": {
         "banner": {
-            "title": "Ưu việt hơn ngân hàng.",
-            "subTitle": "Chào mừng bạn đến với một trong những dịch vụ tài chính tốt nhất trên thế giới. Chỉ cần Internet, Constant luôn sẵn sàng phục vụ tất cả mọi người trên thế giới.",
+            "title": "Công cụ tài chính ưu việt thế hệ mới.",
+            "subTitle": "Cùng khám phá công cụ tài chính ưu việt dựa trên công nghệ chuỗi khối giúp bạn sử dụng đồng tiền một cách hiệu quả nhất. Nhận và chuyển khoản tới khắp mọi nơi trên thế giới. Gửi tiết kiệm USD với lãi suất 4%/năm. Vay thế chấp với lãi suất ưu đãi chỉ từ 4.5%/năm. Tất cả những gì bạn cần là kết nối Internet.",
             "cta": "Đăng kí tài khoản",
-            "ctaDesc": "\n        It’s free to open an account. Available locations: World."
+            "ctaDesc": "Miễn phí"
         },
         "subjects": {
             "banking": {
-                "title": "Ngân hàng không biên giới.",
+                "title": "Chuyển khoản quốc tế.",
                 "desc1": {
-                    "title": "Tài khoản USD quốc tế.",
-                    "desc": "Giữ tiền trong tài khoản USD bảo vệ giá trị đồng tiền của bạn tốt hơn nhiều so với tài khoản VNĐ."
+                    "title": "Gửi tiền tới khắp nơi trên thế giới.",
+                    "desc": "Chỉ cần có kết nối Internet, bạn ngay lập tức có thể gửi tiền tới bất kì ai ở bất kì đâu trên toàn thế giới."
                 },
                 "desc2": {
-                    "title": "Thực hiện chuyển khoản quốc tế.",
-                    "desc": "Chuyển khoản quốc tế. Ngay lập tức. Không giới hạn số lượng số lần. Hoàn toàn miễn phí."
+                    "title": "Thực hiện thanh toán quốc tế.",
+                    "desc": "Thực hiện thanh toán các chi phí cho các đối tác hay nhận tiền từ khách hàng nước ngoài với chi phí thấp nhất. Chỉ mất 0.25% phí (tối đa 35 USD) để rút tiền về tài khoản ngân hàng."
                 },
                 "desc3": {
-                    "title": "Rút tiền về tài khoản ngân hàng.",
-                    "desc": "Constant liên kết với các ngân hàng Việt Nam để bạn có thể rút tiền về tài khoản bất cứ lúc nào."
+                    "title": "Trả lương.",
+                    "desc": "Trả lương cho nhân viên qua Constant để tối ưu hoá hoạt động của doanh nghiệp. Chỉ bằng một click, bất kể múi giờ và số lượng, tiền về tài khoản ngay lập tức."
                 },
                 "link": "Đăng kí tài khoản"
             },
             "invest": {
-                "title": "Hãy đầu tư theo cách của bạn.",
+                "title": "Gửi tiết kiệm.",
                 "desc1": {
-                    "title": "Lãi 8%/năm.",
-                    "desc": "Đừng để có tiền nhãn rồi. Hãy liên tục đầu tư."
+                    "title": "Lãi 4%/năm.",
+                    "desc": "Tiết kiệm USD với lãi suất 4%/năm. Không nên để tiền nhàn rỗi mà không sinh lời."
                 },
                 "desc2": {
-                    "title": "Lãi trả hàng ngày. Rút lãi về lúc nào cũng được.",
-                    "desc": "Đầu tư an toàn lãi suất cao. Bạn đã sẵn sàng chưa?"
+                    "title": "Lãi suất kép.",
+                    "desc": "Lãi suất được cộng dồn hàng ngày để khoản tiết kiệm của khách hàng có thể sinh lời tối đa."
                 },
                 "desc3": {
-                    "title": "Đảm bảo lợi nhuận đầu tư bằng cách cho vay thế chấp.",
-                    "desc": "Khoản đầu tư của bạn được dùng để cho vay thế chấp. Giá trị thế chấp bằng 150% giá trị cần vay nên rất an toàn và gần như không có rủi ro."
+                    "title": "Đảm bảo lãi suất tiết kiệm bằng cách cho vay thế chấp.",
+                    "desc": "Constant cho vay thế chấp để đảm bảo lãi suất tiết kiệm USD tốt nhất cho khách hàng. Rất an toàn và gần như không có rủi ro."
                 },
                 "link": "Đầu tư thử nghiệm miễn phí"
             },
             "borrow": {
-                "title": "Vay thế chấp với lãi suất thấp nhất thị trường.",
+                "title": "Vay thế chấp.",
                 "desc1": {
                     "title": "2%/năm.",
-                    "desc": "Thế chấp tiền mã hoá để nhận ngay USD. Không giới hạn số lượng. Thời hạn vay linh động. Nhận ngay lại phần tài sản thế chấp sau khi hoàn trả đúng hạn."
+                    "desc": "Lãi suất ưu đãi nhất thị trường chỉ từ 4.5%/năm. Chọn kì hạn vay phù hợp nhất với bạn và nhận lại tài sản thế chấp sau khi hoàn trả hết khoản vay."
                 },
                 "desc2": {
-                    "title": "Xét duyệt ngay lập tức.",
-                    "desc": "Chỉ vài phút là bạn nhận được tiền. Không phải chờ đợi."
+                    "title": "Nhận tiền ngay lập tức.",
+                    "desc": "Không mất thời gian chờ đợi. Nhận tiền ngay sau vài phút khi tài sản thế chấp được xác nhận trên chuỗi khối."
                 },
                 "desc3": {
                     "title": "Dễ dàng và thuận tiện.",
-                    "desc": "Constant tạo điều kiện tốt nhất cho người đi vay. Không cần điểm tín dụng, không kiểm tra lịch sử tín dụng và không mất thời gian chờ đợi cả tháng trời để được duyệt cho vay."
+                    "desc": "Không kiểm tra lịch sử tín dụng. Không chứng minh tài chính. Tỉ lệ thành công 100%."
                 },
                 "link": "Vay thế chấp nhận tiền liền tay"
             }

@@ -1828,7 +1828,7 @@
         },
         "value": {
             "question1": "Will the price of Constant go “to the moon”?",
-            "answer1": "\n        <p>Constant is a stablecoin designed to always match the value of USD. However, we can’t control the market, nor the effect of supply and demand, so you never know what price Constant will be. In some cases, people will pay more for stability. All we can guarantee is that you can always buy or redeem Constant from us for $1.</p>\n      ",
+            "answer1": "\n        <p>Constant is a stablecoin designed to always match the value of USD. However, we can’t control the market, nor the effect of supply and demand, so you might see different prices on exchanges. In some cases, people will pay more for stability. All we can guarantee is that you can always buy or redeem Constant from us for $1.</p>\n      ",
             "question2": "Why is Constant’s price different on exchanges?",
             "answer2": "\n        <p>Exchanges connect buyers and sellers, and the price of an asset is determined by the forces of supply and demand – the price people are willing to pay based on the asset’s perceived value. The more there is of an asset, the cheaper it is (usually), and vice versa.</p>\n        <br />\n        <p>Since Constant is a stablecoin pegged to the USD, you might be surprised to see its price higher or lower on exchanges. This is outside of our control, and entirely set by the market. Some people will pay a premium for stability, for example.</p>\n        <br />\n        <p>Regardless, no matter what happens, we guarantee you can buy or redeem Constant for $1 from us.</p>\n      "
         },
@@ -2383,10 +2383,10 @@
         }
     },
     "support": {
-        "text": "Can we help? Call us at {phone}. We’re available to help 24/7.",
+        "text": "Can we help? Call us at {phone}. We’re available 24/7.",
         "phone": {
             "vn": "+84 36 656 2949",
-            "us": "+1 909 588 0544"
+            "us": "1-844-201-7242"
         }
     }
 }

@@ -70,6 +70,10 @@
             "type4": {
                 "title": "<h3>Get USD without selling your crypto</h3>",
                 "btn": "Borrow now"
+            },
+            "type5": {
+                "title": "<h3>Send money anywhere </h3>",
+                "btn": "Make a transfer"
             }
         },
         "getSocial": "Social Media",
@@ -281,7 +285,8 @@
             "referralInfo": "Referral Information"
         },
         "wallet": {
-            "title": "This is your Constant wallet address on the Ethereum blockchain."
+            "title": "This is your Constant wallet address on the Ethereum blockchain.",
+            "walletAddress": "Your ether wallet: "
         },
         "kyc": {
             "needEmail": "You need to verify your email first.",
@@ -835,6 +840,7 @@
                 "saving_title": "Fixed Deposits",
                 "anyTime_saving": "Balance",
                 "input2FA": "Input 2FA",
+                "cancel": "Withdraw",
                 "interestInfo": {
                     "header": {
                         "title": "Want to increase interest earnings across all your accounts?"
@@ -885,6 +891,11 @@
                         "messageConfirm": "For your security, please verify your identity before making a withdrawal.",
                         "confirm": "Verify my ID",
                         "cancel": "Maybe later"
+                    },
+                    "cancelDeposit": {
+                        "messageConfirm": "There are no penalties for withdrawing before your term is up, but you won't earn any interest.",
+                        "confirm": "Withdraw",
+                        "cancel": "Cancel"
                     }
                 },
                 "confirm": {
@@ -898,6 +909,8 @@
                 "alert": {
                     "depositSavingSuccess": "You successfully deposited Constant.",
                     "depositSavingFailed": "Failed To Deposit Saving",
+                    "stopSavingSuccess": "You ended your term deposit. Withdraw your funds anytime.",
+                    "stopSavingFailed": "End your term failed.",
                     "batchTransferSuccess": "You successfully sent the batch file",
                     "batchTransferFailed": "Failed to sent the batch file",
                     "confirmBatchTransferSuccess": "Success",
@@ -1215,15 +1228,16 @@
                 },
                 "introHolderTemplate": "\n          <h1>Buy from local sellers in {country}</h1>\n          <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n          <p>Email us at <a href=\"mailto:{email}\">{email}</a></p>\n          <p>Or</p>\n          <p>Chat with us at <a href=\"telegram:{telegram}\">{telegram}</a></p>\n        ",
                 "confirmTemplate": "\n          <div name=\"thanks\">\n            <p>Thanks! Please wire <strong>{FiatAmount} {FiatCurrency}</strong> to the seller's bank account.</p>\n          </div>\n          <div name=\"bank\">\n            <p>\n              <span>Bank:</span>\n              <span>{BankName}</span>\n            </p>\n            <p>\n              <span>Account Name:</span>\n              <span>{BankAccountName}</span>\n            </p>\n            <p>\n              <span>Account Number: </span>\n              <span>{BankAccountNumber}</span>\n            </p>\n            <p>\n              <span>Amount: </span>\n              <span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n            </p>\n            <p>\n              <span>Constant: </span>\n              <span>{Amount}&nbsp;{Currency}</span>\n            </p>\n            <p>\n              <span>Reference: </span>\n              <span>{Reference}</span>\n            </p>\n          </div>\n          <div name=\"notice\">\n            <b name=\"important\">IMPORTANT:</b>\n            <span>\n              Do include your reference number <b>{Reference}</b> in the transfer description\n            </span>\n          </div>\n          <div name=\"window\">\n            <strong name=\"minutes\">30 MINUTE WINDOW: </strong>\n            <span>\n              Please complete your transfer <b>within 30 minutes</b>. After that, your\n              order will be automatically cancelled.\n            </span>\n          </div>\n        ",
-                "cryptoAddress": "Crypto Address",
+                "cryptoAddressUSDT": "USDT address:",
                 "accountName": "Account name",
+                "bankName": "Bank name",
                 "accountNumber": "Account number",
                 "amount": "Amount",
                 "value": "Value",
                 "constant": "Constant",
                 "reference": "Reference",
                 "buyThankMsg": "Please wire {fiatAmount} {fiatCurrency} to the seller's bank account.",
-                "buyThankMsgCrypto": "Please wire {fiatAmount} {fiatCurrency} to the seller's crypto address.",
+                "buyCryptoThankMsg": "Please transfer {fiatAmount} {fiatCurrency} to the seller's crypto address.",
                 "importantMsg": "Do include your reference number {referenceNumber} in the transfer description.",
                 "important": "Important",
                 "thankYou": "Thank you!",
@@ -2366,6 +2380,13 @@
                 "date6": "March 19, 2019",
                 "title6": "Introduction to the Constant Chain"
             }
+        }
+    },
+    "support": {
+        "text": "Can we help? Call us at {phone}. We’re available to help 24/7.",
+        "phone": {
+            "vn": "+84 36 656 2949",
+            "us": "+1 909 588 0544"
         }
     }
 }

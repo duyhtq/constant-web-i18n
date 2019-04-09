@@ -70,6 +70,10 @@
             "type4": {
                 "title": "<h3>Vay thế chấp nhận tiền ngay</h3>",
                 "btn": "VAY NGAY"
+            },
+            "type5": {
+                "title": "<h3>Send money anywhere </h3>",
+                "btn": "Make a transfer"
             }
         },
         "getSocial": "Mạng xã hội",
@@ -105,7 +109,7 @@
         "deposit": "Nộp tiền",
         "transfer": "Chuyển khoản",
         "banking": "Ngân hàng",
-        "save": "Đầu tư",
+        "save": "Tiết kiệm",
         "borrow": "Vay",
         "signIn": "Đăng nhập",
         "signUp": "Đăng ký",
@@ -281,7 +285,8 @@
             "referralInfo": "Chương trình giới thiệu"
         },
         "wallet": {
-            "title": "Đây là địa chỉ ví của bạn để nhận Constant gửi tới"
+            "title": "Đây là địa chỉ ví của bạn để nhận Constant gửi tới",
+            "walletAddress": "Your ether wallet: "
         },
         "kyc": {
             "needEmail": "Bạn cần xác minh địa chỉ email trước.",
@@ -835,6 +840,7 @@
                 "saving_title": "Đầu tư có kì hạn",
                 "anyTime_saving": "Tài khoản không kì hạn",
                 "input2FA": "Input 2FA",
+                "cancel": "Withdraw",
                 "interestInfo": {
                     "header": {
                         "title": "Bạn muốn lãi suất cao hơn cho tất cả các khoản đầu tư của mình?"
@@ -846,7 +852,7 @@
                         },
                         "item2": {
                             "title": "+{total_percent}% {percent_claimed}",
-                            "description": "Nhận thêm {referralRate}% cho mỗi {refer}",
+                            "description": "{refer} Get an extra {referralRate}% each",
                             "refer": "Giới thiệu tối đa cho 15 người bạn.",
                             "percent_claimed": "(đã được +{percent}%)"
                         },
@@ -885,6 +891,11 @@
                         "messageConfirm": "Vì lí do an ninh, xin vui lòng xác minh danh tính trước khi rút tiền từ tài khoản không kì hạn.",
                         "confirm": "Xác minh danh tính",
                         "cancel": "Để sau"
+                    },
+                    "cancelDeposit": {
+                        "messageConfirm": "There are no penalties for withdrawing before your term is up, but you won't earn any interest.",
+                        "confirm": "Withdraw",
+                        "cancel": "Cancel"
                     }
                 },
                 "confirm": {
@@ -898,6 +909,8 @@
                 "alert": {
                     "depositSavingSuccess": "Bạn đã nạp Constant thành công.",
                     "depositSavingFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
+                    "stopSavingSuccess": "You ended your term deposit. Withdraw your funds anytime.",
+                    "stopSavingFailed": "End your term failed.",
                     "batchTransferSuccess": "Gửi tập tin để thực hiện chuyển khoản hàng loạt thành công",
                     "batchTransferFailed": "Không thành công khi gửi tập tin để thực hiện chuyển khoản hàng loạt",
                     "confirmBatchTransferSuccess": "Thành công",
@@ -1215,15 +1228,16 @@
                 },
                 "introHolderTemplate": "\n<h1>Mua nội địa tại {country}</h1>\n        <p>Để trở thành người đầu tiên mua và bán Constant tại quốc gia của bạn, hãy liên hệ với chúng tôi để bắt đầu</p>\n        <p>Gửi email cho chúng tôi tại <a href=\"mailto:{email}\">{email}</a></p>\n        <p>Hoặc</p>\n        <p>Chat với chúng tôi <a href=\"telegram:{telegram}\">{telegram}</a></p>\n        ",
                 "confirmTemplate": "\n<div name=\"thanks\">\n<p>Cảm ơn! Xin vui lòng gửi <strong>{FiatAmount}{FiatCurrency}</strong> tới tài khoản ngân hàng của người bán.</p>\n</div>\n<div name=\"bank\">\n<p>\n<span>Tên ngân hàng:</span>\n<span>{BankName}</span>\n</p>\n<p>\n<span>Tên tài khoản:</span>\n<span>{BankAccountName}</span>\n</p>\n<p>\n<span>Số tài khoản:</span>\n<span>{BankAccountNumber}</span>\n</p>\n<p>\n<span>Số tiền:</span>\n<span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n</p>\n<p>\n<span>Constant:</span>\n<span>{Amount}&nbsp;{Currency}</span>\n</p>\n<p>\n<span>Mã giao dịch</span>\n<span>{Reference}</span>\n</p>\n</div>\n<div name=\"notice\">\n<b name=\"important\">CHÚ Ý:</b>\n<span>\nLuôn ghi mã giao dịch <b>{Reference}</b> trong phần nội dung chuyển khoản\n</span>\n</div>\n<div name=\"window\">\n<strong name=\"minutes\">30 PHÚT:</strong>\n<span>\nVui lòng chuyển khoản <b>trong vòng 30 phút</b>. Nếu không, giao dịch sẽ tự động bị huỷ bỏ.\n</span>\n</div>        ",
-                "cryptoAddress": "Crypto Address",
+                "cryptoAddressUSDT": "USDT address:",
                 "accountName": "Tên tài khoản:",
+                "bankName": "Bank name",
                 "accountNumber": "Số tài khoản:",
                 "amount": "Số lượng:",
                 "value": "Giá trị",
                 "constant": "Constant:",
                 "reference": "Mã giao dịch:",
                 "buyThankMsg": "Xin vui lòng chuyển {fiatAmount}{fiatCurrency} tới tài khoản ngân hàng của người bán.",
-                "buyThankMsgCrypto": "Please wire {fiatAmount} {fiatCurrency} to the seller's crypto address.",
+                "buyCryptoThankMsg": "Please transfer {fiatAmount} {fiatCurrency} to the seller's crypto address.",
                 "importantMsg": "Hãy nhớ điền mã giao dịch {referenceNumber} trong phần nội dung chuyển khoản.",
                 "important": "LƯU Ý",
                 "thankYou": "Xin cảm ơn!",
@@ -2366,6 +2380,13 @@
                 "date6": "March 19, 2019",
                 "title6": "Introduction to the Constant Chain"
             }
+        }
+    },
+    "support": {
+        "text": "Can we help? Call us at {phone}. We’re available to help 24/7.",
+        "phone": {
+            "vn": "+84 36 656 2949",
+            "us": "+1 909 588 0544"
         }
     }
 }

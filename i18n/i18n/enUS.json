@@ -1606,7 +1606,7 @@
         "whatTitle2": "By the US Government",
         "whatTitle3": "No minimum deposit",
         "whatDesc0": "<p>We provide loans at 4.5% to emerging economies, where capital costs 15% or more. That’s how you get 4% APY. </p>",
-        "whatDesc2": "<p>No minimum deposit required. Benefit from the same great rates, no matter the amount.\n</p>\n<p>No lock-in. Changed your mind? Withdraw your money anytime. \n</p>\n",
+        "whatDesc2": "<p>No minimum deposit required. Benefit from the same great rates, no matter the amount.\n</p>\n<p>No lock-in. Changed your mind? Withdraw your money anytime and still earn our basic rate of 1%. \n</p>\n",
         "whatDesc3": "<p>If you deposit $10,000 for 12 months, you will earn:</p>\n<p><br />\n$10,000 x 4% = $400</p>\n<br />\n<p>\nDon’t sit on your money. Put it to work. </p>",
         "whatMore0": "How we guarantee zero risk high returns",
         "whatMore1": "How we protect your money",
@@ -2087,16 +2087,16 @@
                 "name": "Anytime"
             },
             "one": {
-                "name": "1-Month"
-            },
-            "three": {
                 "name": "3-Month"
             },
+            "three": {
+                "name": "12-Month"
+            },
             "six": {
-                "name": "6-Month"
+                "name": "24-Month"
             },
             "oneYear": {
-                "name": "12-Month"
+                "name": "18-Month"
             }
         }
     },

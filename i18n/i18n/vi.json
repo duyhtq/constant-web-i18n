@@ -893,9 +893,9 @@
                         "cancel": "Để sau"
                     },
                     "cancelDeposit": {
-                        "messageConfirm": "There are no penalties for withdrawing before your term is up, but you won't earn any interest.",
-                        "confirm": "Withdraw",
-                        "cancel": "Cancel"
+                        "messageConfirm": "Bạn không phải chịu phí phạt khi rút tiền trước hạn. Tuy nhiên, bạn sẽ không tiếp tục được hưởng lãi nữa.",
+                        "confirm": "Rút tiền",
+                        "cancel": "Huỷ"
                     }
                 },
                 "confirm": {
@@ -909,8 +909,8 @@
                 "alert": {
                     "depositSavingSuccess": "Bạn đã nạp Constant thành công.",
                     "depositSavingFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
-                    "stopSavingSuccess": "You ended your term deposit. Withdraw your funds anytime.",
-                    "stopSavingFailed": "End your term failed.",
+                    "stopSavingSuccess": "Khi đáo hạn, bạn có thể rút tiền về ngay lập tức.",
+                    "stopSavingFailed": "Đáo hạn tiết kiệm không thành công.",
                     "batchTransferSuccess": "Gửi tập tin để thực hiện chuyển khoản hàng loạt thành công",
                     "batchTransferFailed": "Không thành công khi gửi tập tin để thực hiện chuyển khoản hàng loạt",
                     "confirmBatchTransferSuccess": "Thành công",
@@ -1228,16 +1228,16 @@
                 },
                 "introHolderTemplate": "\n<h1>Mua nội địa tại {country}</h1>\n        <p>Để trở thành người đầu tiên mua và bán Constant tại quốc gia của bạn, hãy liên hệ với chúng tôi để bắt đầu</p>\n        <p>Gửi email cho chúng tôi tại <a href=\"mailto:{email}\">{email}</a></p>\n        <p>Hoặc</p>\n        <p>Chat với chúng tôi <a href=\"telegram:{telegram}\">{telegram}</a></p>\n        ",
                 "confirmTemplate": "\n<div name=\"thanks\">\n<p>Cảm ơn! Xin vui lòng gửi <strong>{FiatAmount}{FiatCurrency}</strong> tới tài khoản ngân hàng của người bán.</p>\n</div>\n<div name=\"bank\">\n<p>\n<span>Tên ngân hàng:</span>\n<span>{BankName}</span>\n</p>\n<p>\n<span>Tên tài khoản:</span>\n<span>{BankAccountName}</span>\n</p>\n<p>\n<span>Số tài khoản:</span>\n<span>{BankAccountNumber}</span>\n</p>\n<p>\n<span>Số tiền:</span>\n<span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n</p>\n<p>\n<span>Constant:</span>\n<span>{Amount}&nbsp;{Currency}</span>\n</p>\n<p>\n<span>Mã giao dịch</span>\n<span>{Reference}</span>\n</p>\n</div>\n<div name=\"notice\">\n<b name=\"important\">CHÚ Ý:</b>\n<span>\nLuôn ghi mã giao dịch <b>{Reference}</b> trong phần nội dung chuyển khoản\n</span>\n</div>\n<div name=\"window\">\n<strong name=\"minutes\">30 PHÚT:</strong>\n<span>\nVui lòng chuyển khoản <b>trong vòng 30 phút</b>. Nếu không, giao dịch sẽ tự động bị huỷ bỏ.\n</span>\n</div>        ",
-                "cryptoAddressUSDT": "USDT address:",
+                "cryptoAddressUSDT": "Địa chỉ ví USDT:",
                 "accountName": "Tên tài khoản:",
-                "bankName": "Bank name",
+                "bankName": "Tên ngân hàng",
                 "accountNumber": "Số tài khoản:",
                 "amount": "Số lượng:",
                 "value": "Giá trị",
                 "constant": "Constant:",
                 "reference": "Mã giao dịch:",
                 "buyThankMsg": "Xin vui lòng chuyển {fiatAmount}{fiatCurrency} tới tài khoản ngân hàng của người bán.",
-                "buyCryptoThankMsg": "Please transfer {fiatAmount} {fiatCurrency} to the seller's crypto address.",
+                "buyCryptoThankMsg": "Xin vui lòng chuyển {fiatAmount}{fiatCurrency} tới địa chỉ ví của người bán.",
                 "importantMsg": "Hãy nhớ điền mã giao dịch {referenceNumber} trong phần nội dung chuyển khoản.",
                 "important": "LƯU Ý",
                 "thankYou": "Xin cảm ơn!",
@@ -1456,8 +1456,8 @@
         "transfer": {
             "title": "Chuyển khoản",
             "caption": "Bạn muốn chuyển khoản bao nhiêu?",
-            "yourBalance": "Your balance",
-            "validateMaxInput": "Your amount must less than or equal: ${amount}",
+            "yourBalance": "Số dư",
+            "validateMaxInput": "Xin vui lòng nhập số nhỏ hơn hoặc bằng: ${amount}",
             "transferFeeLabel": "Phí chuyển khoản",
             "subTitle": "Miễn phí. Tới bất cứ ai trên toàn thế giới.",
             "introTitle": "Chuyển khoản tới mọi người ở khắp nơi trên thế giới. Hoàn toàn miễn phí.",
@@ -1497,7 +1497,7 @@
                 "buttonText": "Vay tiền",
                 "month": "{period} tháng",
                 "months": "{period} tháng",
-                "apr": "APR",
+                "apr": "Lãi/năm",
                 "termLabel": "Chọn thời hạn vay",
                 "amountLabel": "Bạn muốn vay bao nhiêu?",
                 "collateralLabel": "Tài sản thế chấp (Vay được 75% giá trị tài sản thế chấp)",
@@ -1689,14 +1689,14 @@
             "item3": {
                 "title": "Giới thiệu tối đa cho 15 người bạn",
                 "description": "Giới thiệu Constant cho bạn bè để tăng mức lãi suất được nhận cho mỗi một người bạn mở tài khoản.",
-                "additionalDesc": "Your referral link: ",
+                "additionalDesc": "Link để giới thiệu: ",
                 "bonusRate": "3"
             }
         },
         "loginRequired": "Bạn cần đăng nhập để thực hiện hành động này.",
         "shareFbSuccess": "Đã chia sẻ link giới thiệu thành công.",
         "faqs": {
-            "title": "Frequently asked questions",
+            "title": "Các câu hỏi thường gặp",
             "content": {
                 "faq1": {
                     "question": "Phần thưởng cho chương trình giới thiệu của Constant là gì?",
@@ -1966,9 +1966,9 @@
             "question10": "Bảo hiểm của FDIC là gì?",
             "answer10": "\n<p>Công ty Bảo hiểm Ký thác Liên bang Hoa Kỳ (FDIC) là một tổ chức được điều hành bởi chính phủ Hoa Kỳ để bảo đảm sự minh bạch của hệ thống tài chính Hoa Kỳ. FDIC thực hiện rất nhiều hoạt động, trong đó có bảo hiểm tiền gửi. Quỹ Constant được FDIC bảo hiểm lên tới 130,000,000 USD. Bạn có thể đọc thêm về FDIC <a href=\"https://www.fdic.gov/about/strategic/strategic/mission.html\" target=\"_blank\">ở đây</a>.</p>      \n<br />\n<p>Mỗi tài khoản được FDIC bảo hiểm tối đa lên tới 250,000 USD.</p>      ",
             "question11": "Tại sao khoản tiết kiệm của tôi lại được mang cho người khác vay?",
-            "answer11": "<p>\n        We lend your savings to borrowers so we can pay you better interest rates. Aside from seeing your money grow, you won’t notice any changes to your Savings Plan. There’s no risk to you as all our loans are overcollateralized, meaning we only lend to people who put up collateral worth more than the loan. If someone doesn’t repay, we sell collateral on the market. This guarantees we can always return your savings and pay you interest.\n      </p>",
-            "question12": "Is there a minimum or maximum amount I can save?",
-            "answer12": "\n        <p>No. You can save as much or as little as you like.</p>\n      "
+            "answer11": "<p>\n       Để có thể áp dụng những mức lãi suất tốt hơn, Constant sử dụng những khoản gửi tiết kiệm của khách hàng để cho vay thế chấp. Các khoản vay đều phải được thế chấp trội để đảm bảo an toàn. Điều này có nghĩa, khoản tiền tiết kiệm của bạn được bảo đảm bởi một phần tài sản có giá trị hơn thế. Do đó, gửi tiết kiệm với Constant rất an toàn và Constant luôn có khả năng trả lãi cho khách hàng. \n      </p>",
+            "question12": "Có thể gửi tiết kiệm tối thiểu/tối đa bao nhiêu tiền?",
+            "answer12": "\n<p>Không có giới hạn. Bạn có thể gửi tiết kiệm bao nhiêu cũng được.</p>      "
         },
         "returns": {
             "question1": "Lãi suất được trả như thế nào?",
@@ -2267,22 +2267,22 @@
     },
     "constantChain": {
         "info": {
-            "title": "Constant Chain",
-            "desc": "While Constant Coin (CONST) initially runs on the Ethereum blockchain as an ERC20 token, the long term plan is to for it to run on its own blockchain.  This is important — by building its own blockchain from scratch, we’ll be able to tailor it to its unique features such as privacy and price stability.  It will allow us to test new ideas, algorithms and mechanisms faster — especially those that Ethereum doesn’t fit, such as fast Zero-Knowledge Proof generation."
+            "title": "Chuỗi khối Constant",
+            "desc": "Constant (CONST) hiện tại đang hoạt động trên chuỗi khối Ethereum như một ERC20 token. Tuy nhiên về dài hạn, sẽ lí tưởng hơn nếu Constant có thể hoạt động trên một chuỗi khối của riêng mình. Điều này rất có giá trị vì khi xây dựng một chuỗi khối mới hoàn toàn, chúng tôi có thể điều chỉnh toàn bộ hệ thống cho phù hợp với những tính năng đặc biệt như khả năng bảo mật hay sự ổn định về giá. Một chuỗi khối riêng cho phép chúng tôi thử nghiệm những ý tưởng mới, những thuật toán mới, những cơ chế và phương thức mới để hệ thống vận hành nhanh và hiệu quả hơn."
         },
         "what": {
-            "whatCaption0": "Read Constant source code",
-            "whatCaption1": "Download Constant Wallet",
-            "whatCaption2": "Run a Constant node",
-            "whatCaption3": "Explore Constant Block Explorer",
-            "whatDesc0": "Constant Chain is open-source; its design is public, nobody owns or controls COnstant and everyone can take part.",
-            "whatDesc1": "Constant Chain is open-source; its design is public, nobody owns or controls COnstant and everyone can take part.",
-            "whatDesc2": "Constant Chain is open-source; its design is public, nobody owns or controls COnstant and everyone can take part.",
-            "whatDesc3": "Constant Chain is open-source; its design is public, nobody owns or controls COnstant and everyone can take part.",
-            "whatButton0": "Browse Github",
-            "whatButton1": "Download",
-            "whatButton2": "Download",
-            "whatButton3": "Explore"
+            "whatCaption0": "Đọc mã nguồn của Constant",
+            "whatCaption1": "Tải về Ví Constant",
+            "whatCaption2": "Chạy một node Constant",
+            "whatCaption3": "Khám phá Constant Block Explorer",
+            "whatDesc0": "Chuỗi khối Constant là mã nguồn mở được công khai, không ai sở hữu Constant và ai cũng có thể tham gia vào hệ thống.",
+            "whatDesc1": "Chuỗi khối Constant là mã nguồn mở được công khai, không ai sở hữu Constant và ai cũng có thể tham gia vào hệ thống.",
+            "whatDesc2": "Chuỗi khối Constant là mã nguồn mở được công khai, không ai sở hữu Constant và ai cũng có thể tham gia vào hệ thống.",
+            "whatDesc3": "Chuỗi khối Constant là mã nguồn mở được công khai, không ai sở hữu Constant và ai cũng có thể tham gia vào hệ thống.",
+            "whatButton0": "Đi đến Github",
+            "whatButton1": "Tải về",
+            "whatButton2": "Tải về",
+            "whatButton3": "Khám phá"
         }
     },
     "newHome": {
@@ -2346,44 +2346,44 @@
     "constantCoin": {
         "info": {
             "title": "Constant Coin",
-            "desc": "Borderless banking requires a borderless currency. Constant is a digital dollar, a stablecoin pegged 1:1 with the USD - designed to blend the best of the existing financial system with the fairness and freedom now possible with blockchain technology. Most importantly, anyone can own Constant, and access the financial solutions it unlocks. Constant is available via local banks as well as international cryptocurrency exchanges."
+            "desc": "Constant là một stablecoin được neo giá 1:1 theo USD. Ứng dụng công nghệ chuỗi khối, Constant xoá nhoà ranh giới giữa các thể chế tài chính hiện hữu để xây dựng một nền tảng tài chính công bằng và tự do hơn. Ai cũng có thể sở hữu Constant và tiếp cận những giải pháp tài chính ưu việt trên nền tảng Constant.\nConstant có thể được mua trực tiếp trên website hoặc trên các sàn giao dịch quốc tế."
         },
         "what": {
-            "whatCaption0": "FDIC insured",
-            "whatCaption1": "Built on Ethereum",
+            "whatCaption0": "Được bảo hiểm bởi FDIC",
+            "whatCaption1": "Được xây dựng trên chuỗi khối Ethereum",
             "whatCaption2": "1 Constant = 1 USD",
-            "whatCaption3": "Borderless",
-            "whatDesc0": "Every Constant Coin is fully backed by USD, held in a series of FDIC-insured vaults, for coverage of $5M per account. Guaranteed by the US government.",
-            "whatDesc1": "Constant is secured by the combined computing power of the Ethereum network. Transactions are executed using publicly verifiable smart contracts.",
-            "whatDesc2": "The value of Constant is fixed at 1:1 with the USD. Redeemable for fiat at any time, Constant helps preserve the value of volatile currencies.",
-            "whatDesc3": "Anyone can own Constant. That means anyone can have a global USD account, enjoy free worldwide transfers, and access smarter financial solutions.",
-            "whatButton0": "How we protect your money",
-            "whatButton1": "View our smart contract",
-            "whatButton2": "How we guarantee stability",
-            "whatButton3": "Get Constant"
+            "whatCaption3": "Không giới hạn",
+            "whatDesc0": "Mỗi một Constant lưu thông trên thị trường đều được đảm bảo bởi 1 USD trong quỹ tín thác được đảm bảo bởi chính phủ Hoa Kỳ và bảo hiểm lên tới 130,000,000 USD bởi FDIC.",
+            "whatDesc1": "Được xây dựng trên chuỗi khối Ethereum, Constant tận dụng được toàn bộ sức mạnh tính toán của hệ thống này. Các giao dịch được thực hiện theo hợp đồng thông minh được xác nhận công khai. ",
+            "whatDesc2": "1 Constant luôn có giá trị bằng 1 USD. Đổi lại về tiền pháp định bất cứ lúc nào. Constant giúp bảo vệ giá trị đồng tiền khỏi lạm phát và mất giá.",
+            "whatDesc3": "Sở hữu Constant đồng nghĩa với bạn sở hữu một tài khoản USD toàn cầu có thể chuyển khoản quốc tế dễ dàng và tiếp cận những giải pháp tài chính thông minh hơn.",
+            "whatButton0": "Cách Constant bảo vệ tiền của khách hàng",
+            "whatButton1": "Nền tảng công nghệ của Constant",
+            "whatButton2": "Cách Constant neo giá theo USD",
+            "whatButton3": "Mua Constant ngay"
         },
         "howItWorks": {
-            "title": "More about the Constant Coin",
-            "desc": "Constant was designed to be a coin for the community, and will continue to be. We tackle user questions and publish development updates frequently. If you have a question or an idea that you want us to explore, drop us message on [telegram].",
-            "link": "Browse all blog posts >",
+            "title": "Tìm hiểu thêm về Constant",
+            "desc": "Constant luôn hướng đến cộng đồng và mong muốn được phục vụ cộng đồng một cách tốt nhất. Nếu bạn có bất kì câu hỏi hay ý tưởng nào muốn chia sẻ với chúng tôi, hãy gửi tin nhắn qua [telegram].",
+            "link": "Xem các bài viết về Constant >",
             "items": {
-                "date1": "March 19, 2019",
-                "title1": "Introduction to the Constant Chain",
-                "date2": "March 19, 2019",
-                "title2": "Introduction to the Constant Chain",
-                "date3": "March 19, 2019",
-                "title3": "Introduction to the Constant Chain",
-                "date4": "March 19, 2019",
-                "title4": "Introduction to the Constant Chain",
-                "date5": "March 19, 2019",
-                "title5": "Introduction to the Constant Chain",
-                "date6": "March 19, 2019",
-                "title6": "Introduction to the Constant Chain"
+                "date1": "19/3/2019",
+                "title1": "Giới thiệu chuỗi khối Constant",
+                "date2": "19/3/2019",
+                "title2": "Giới thiệu chuỗi khối Constant",
+                "date3": "19/3/2019",
+                "title3": "Giới thiệu chuỗi khối Constant",
+                "date4": "19/3/2019",
+                "title4": "Giới thiệu chuỗi khối Constant",
+                "date5": "19/3/2019",
+                "title5": "Giới thiệu chuỗi khối Constant",
+                "date6": "19/3/2019",
+                "title6": "Giới thiệu chuỗi khối Constant"
             }
         }
     },
     "support": {
-        "text": "Can we help? Call us at {phone}. We’re available to help 24/7.",
+        "text": "Gọi {phone} để nhận được sự trợ giúp kịp thời. Sẵn sàng 24/7.",
         "phone": {
             "vn": "+84 36 656 2949",
             "us": "+1 909 588 0544"

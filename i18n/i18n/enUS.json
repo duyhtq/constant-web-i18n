@@ -1490,7 +1490,7 @@
         },
         "constantLoan": {
             "title": "Borrow money",
-            "subTitle": "<h5>4.50% APR.</h5>\n<h5>Instant funding.</h5>\n<h5>Get cash for crypto without needing to sell.</h5>\n",
+            "subTitle": "<h2>4.50% APR.</h2>\n<h2>Instant funding.</h2>\n<h2>Get cash for crypto without needing to sell.</h2>\n",
             "headLine": "Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.",
             "exchange": {
                 "caption": "Crypto-backed loan",
@@ -1594,7 +1594,7 @@
         "midBanner2": "Secure and grow your money",
         "whatChatWithUs": "Chat with us",
         "whatCaption0": "How we deliver high returns.\n",
-        "whatCaption1": "How we keep your money safe.",
+        "whatCaption1": "How we secure your money.",
         "whatCaption2": "Things we don’t do.",
         "whatCaption3": "Here’s an example.",
         "whatTitle": "What can you do with Constant?",
@@ -1607,7 +1607,7 @@
         "whatTitle3": "No minimum deposit",
         "whatDesc0": "<p>We provide loans at 4.5% to emerging economies, where capital costs 15% or more. That’s how you get 4% APY. </p>",
         "whatDesc2": "<p>No minimum deposit required. Benefit from the same great rates, no matter the amount.\n</p>\n<p>No lock-in. Changed your mind? Withdraw your money anytime. \n</p>\n",
-        "whatDesc3": "<p>If you deposit $10,000 for 12 months, you will earn:</p>\n<p>\n$10,000 x 4% = $400</p>\n<p>\nDon’t sit on your money. Put it to work. </p>",
+        "whatDesc3": "<p>If you deposit $10,000 for 12 months, you will earn:</p>\n<p><br />\n$10,000 x 4% = $400</p>\n<br />\n<p>\nDon’t sit on your money. Put it to work. </p>",
         "whatMore0": "How we guarantee zero risk high returns",
         "whatMore1": "How we protect your money",
         "whatMore2": "How to pick a plan that’s right for you",
@@ -2102,8 +2102,8 @@
     },
     "saving": {
         "trialLeftNum": "ONLY {trialLeft} TRIALS LEFT",
-        "title": "<h1>Grow your money</h1>",
-        "subTitle": "<h5>Earn up to 4.00% APY.</h5>\n<h5>No minimum deposit.</h5>\n<h5>Daily compound interest.</h5>\n<h5>Withdraw anytime.</h5>",
+        "title": "<h5>Grow your money</h5>",
+        "subTitle": "<h2>Earn up to 4.00% APY.</h2>\n<h2>No minimum deposit.</h2>\n<h2>Daily compound interest.</h2>\n<h2>Withdraw anytime.</h2>",
         "makeLocalOrderSuccess": "Thanks! Please make a transfer from your bank.",
         "crypto_amount_exists": "Crypto amount exists",
         "makeLocalOrderFailed": "Failed while creating your order",

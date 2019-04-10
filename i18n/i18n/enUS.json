@@ -1605,9 +1605,9 @@
         "whatDesc1": "<p>We strictly require every loan to be fully backed by collateral. So if borrowers default, you don’t lose a cent. </p>",
         "whatTitle2": "By the US Government",
         "whatTitle3": "No minimum deposit",
-        "whatDesc0": "<p>We provide loans at 4.5% to emerging economies, where capital costs 15% or more. That’s how you get 4% APY. </p>",
+        "whatDesc0": "<p>We provide loans at 7.5% to emerging economies, where capital costs 15% or more. That’s how you get 6% APY. </p>",
         "whatDesc2": "<p>No minimum deposit required. Benefit from the same great rates, no matter the amount.\n</p>\n<p>No lock-in. Changed your mind? Withdraw your money anytime and still earn our basic rate of 1%. \n</p>\n",
-        "whatDesc3": "<p>If you deposit $10,000 for 12 months, you will earn:</p>\n<p><br />\n$10,000 x 4% = $400</p>\n<br />\n<p>\nDon’t sit on your money. Put it to work. </p>",
+        "whatDesc3": "<p>If you deposit $10,000 for 24 months, you will earn:</p>\n<br />\n<p>$10,000 x 6% = $800 per year.</p>\n<br />\n<p>That's a $1600 return on investment.</p>\n<br />\n<p>Don’t sit on your money. Put it to work. </p>",
         "whatMore0": "How we guarantee zero risk high returns",
         "whatMore1": "How we protect your money",
         "whatMore2": "How to pick a plan that’s right for you",
@@ -2073,7 +2073,7 @@
         "apr": "APY",
         "amountText": "({amount} {currency})",
         "anytimeTerm": "anytime",
-        "oneMonthTerm": "1 month",
+        "oneMonthTerm": "3 month",
         "term": "{term} months",
         "fiatAmountText": "{fiatAmount} {fiatCurrency}",
         "desc": "Your returns are guaranteed at: {interestAmountText} after 1 year.",
@@ -2103,7 +2103,7 @@
     "saving": {
         "trialLeftNum": "ONLY {trialLeft} TRIALS LEFT",
         "title": "<h5>Grow your money</h5>",
-        "subTitle": "<h2>Earn up to 4.00% APY.</h2>\n<h2>No minimum deposit.</h2>\n<h2>Daily compound interest.</h2>\n<h2>Withdraw anytime.</h2>",
+        "subTitle": "<h2>Earn up to 6.00% APY.</h2>\n<h2>No minimum deposit.</h2>\n<h2>Daily compound interest.</h2>\n<h2>Withdraw anytime.</h2>",
         "makeLocalOrderSuccess": "Thanks! Please make a transfer from your bank.",
         "crypto_amount_exists": "Crypto amount exists",
         "makeLocalOrderFailed": "Failed while creating your order",
@@ -2312,8 +2312,8 @@
             "invest": {
                 "title": "Grow your money",
                 "desc1": {
-                    "title": "4% APY.",
-                    "desc": "Earn 5x the national average rate. Don’t sit on your money, put it to work."
+                    "title": "6% APY.",
+                    "desc": "Earn 60x the national average. Don’t sit on your money, put it to work."
                 },
                 "desc2": {
                     "title": "Daily compound interest.",

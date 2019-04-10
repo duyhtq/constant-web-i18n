@@ -176,11 +176,11 @@
                 },
                 "constantChain": {
                     "title": "Chuỗi Constant",
-                    "subTitle": "Privacy, Scalability & Stability"
+                    "subTitle": "Riêng biệt, Tiềm năng & Ổn định"
                 },
                 "team": {
-                    "title": "Team",
-                    "subTitle": "Research, Engineering & Community"
+                    "title": "Đội ngũ Constant",
+                    "subTitle": "Nghiên cứu, Kiến tạo & Cộng đồng"
                 }
             }
         }
@@ -220,7 +220,7 @@
             "createdBankExisted": "Tài khoản ngân hàng này đã được đăng ký. Xin vui lòng thử lại.",
             "trial_term_deposit_not_available": "Chương trình đăng kí nhận thử 1000 Constant chỉ áp dụng cho khách hàng mới.",
             "not_pro_saving_user": "Xin lỗi. Chúng tôi chỉ cung cấp dịch vụ này tại Mỹ cho những nhà đầu tư đã được SEC công nhận.",
-            "otpNotMatched": "OPT not matched or invalidated!"
+            "otpNotMatched": "Mã OTP không chính xác!"
         }
     },
     "errorCode": {
@@ -286,7 +286,7 @@
         },
         "wallet": {
             "title": "Đây là địa chỉ ví của bạn để nhận Constant gửi tới",
-            "walletAddress": "Your ether wallet: "
+            "walletAddress": "Địa chỉ ví Ether: "
         },
         "kyc": {
             "needEmail": "Bạn cần xác minh địa chỉ email trước.",
@@ -755,32 +755,32 @@
             "title": "Thông tin ví",
             "desc": "Cập nhật thông tin tài khoản ngân hàng để thanh toán nhanh hơn và nhận được những ưu đãi hấp dẫn từ chương trình Giới thiệu khách hàng",
             "address": "Địa chỉ",
-            "currency": "Currency",
-            "active": "Active",
-            "action": "Action",
-            "editActionLabel": "Edit",
+            "currency": "Đơn vị tiền tệ",
+            "active": "Bật",
+            "action": "Tác vụ",
+            "editActionLabel": "Chỉnh sửa",
             "alert": {
-                "success": "Successfully Updated",
-                "failed": "Failed To Update",
-                "deleteSuccess": "Successfully Deleted",
-                "deleteFailed": "Failed To Delete",
-                "wallet_address_exists": "Wallet address for this currency exists",
-                "crypto_address_exists": "Wallet address for this currency exists",
-                "invalid_crypto_address": "Invalidated Wallet address for this currency",
-                "wallet_address_in_use": "This Wallet address can't removing because it is used"
+                "success": "Cập nhật thành công",
+                "failed": "Cập nhật không thành công. Xin vui lòng thử lại.",
+                "deleteSuccess": "Đã xoá thành công",
+                "deleteFailed": "Xoá không thành công. Xin vui lòng thử lại.",
+                "wallet_address_exists": "Địa chỉ ví cho đơn vị tiền tệ này đã tồn tại",
+                "crypto_address_exists": "Địa chỉ ví cho đơn vị tiền tệ này đã tồn tại",
+                "invalid_crypto_address": "Địa chỉ ví không hợp lệ",
+                "wallet_address_in_use": "Địa chỉ ví này không thể bị xoá vì đang được sử dụng"
             },
             "dialog": {
                 "update": {
-                    "title": "Confirm Update",
-                    "body": "Are you sure to update?",
-                    "confirm": "Yes",
-                    "cancel": "No"
+                    "title": "Xác nhận cập nhật",
+                    "body": "Bạn chắc chắn muốn cập nhật?",
+                    "confirm": "Có",
+                    "cancel": "Không"
                 },
                 "delete": {
-                    "title": "Confirm Delete",
-                    "body": "Are you sure to delete?",
-                    "confirm": "Yes",
-                    "cancel": "No"
+                    "title": "Xác nhận xoá",
+                    "body": "Bạn chắc chắn muốn xoá?",
+                    "confirm": "Có",
+                    "cancel": "Không"
                 }
             }
         },
@@ -800,16 +800,16 @@
             "verifySuccess": "Xác minh số điện thoại thành công."
         },
         "kycVerification": {
-            "pleaseComplete": "Please complete the KYC process to {action}.",
+            "pleaseComplete": "Xin vui lòng thực hiện xác minh danh tính để {action}.",
             "complete": "Hoàn tất KYC",
             "updatedSuccess": "Thông tin của bạn đã được cập nhật thành công",
             "updatedFailed": "Cập nhật thông tin không thành công. Xin vui lòng thử lại!",
             "checkVerifyFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
             "action": {
-                "invest": "invest",
-                "transfer": "transfer",
-                "deposit": "deposit",
-                "withdraw": "withdraw"
+                "invest": "gửi tiết kiệm",
+                "transfer": "chuyển khoản",
+                "deposit": "nộp tiền",
+                "withdraw": "rút tiền"
             }
         },
         "referDialog": {

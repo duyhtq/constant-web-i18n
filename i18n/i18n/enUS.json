@@ -806,10 +806,10 @@
             "updatedFailed": "Failed while updating your information, please try again!",
             "checkVerifyFailed": "Failed while checking your verify status",
             "action": {
-                "invest": "invest",
-                "transfer": "transfer",
-                "deposit": "deposit",
-                "withdraw": "withdraw"
+                "invest": "making a deposit",
+                "transfer": "making a transfer",
+                "deposit": "making a deposit",
+                "withdraw": "withdrawing"
             }
         },
         "referDialog": {

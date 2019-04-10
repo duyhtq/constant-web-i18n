@@ -801,7 +801,7 @@
         },
         "kycVerification": {
             "pleaseComplete": "Please complete the KYC process to {action}.",
-            "complete": "Complete KYC",
+            "complete": "Verify",
             "updatedSuccess": "Your information was updated successfully",
             "updatedFailed": "Failed while updating your information, please try again!",
             "checkVerifyFailed": "Failed while checking your verify status",

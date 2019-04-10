@@ -840,7 +840,7 @@
                 "saving_title": "Đầu tư có kì hạn",
                 "anyTime_saving": "Tài khoản không kì hạn",
                 "input2FA": "Input 2FA",
-                "cancel": "Withdraw",
+                "cancel": "Rút tiền",
                 "interestInfo": {
                     "header": {
                         "title": "Bạn muốn lãi suất cao hơn cho tất cả các khoản đầu tư của mình?"
@@ -852,7 +852,7 @@
                         },
                         "item2": {
                             "title": "+{total_percent}% {percent_claimed}",
-                            "description": "{refer} Get an extra {referralRate}% each",
+                            "description": "Nhận thêm {referralRate}% cho mỗi {refer}",
                             "refer": "Giới thiệu tối đa cho 15 người bạn.",
                             "percent_claimed": "(đã được +{percent}%)"
                         },

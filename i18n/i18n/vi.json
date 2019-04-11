@@ -837,8 +837,8 @@
                 "endTerm": "Ngày đáo hạn: ",
                 "trial": "THỬ NGHIỆM",
                 "trial_description": "Đã hết kì hạn. Khách hàng được giữ phần lãi",
-                "saving_title": "Đầu tư có kì hạn",
-                "anyTime_saving": "Tài khoản không kì hạn",
+                "saving_title": "Gửi Tiết Kiệm Có Kì Hạn",
+                "anyTime_saving": "Số dư",
                 "input2FA": "Input 2FA",
                 "cancel": "Rút tiền",
                 "interestInfo": {

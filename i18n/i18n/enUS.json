@@ -1103,7 +1103,7 @@
         "howItWorks": {
             "step1": "Step 1",
             "title1": "Make a deposit",
-            "desc1": "Choose among our flexible Savings Plans, then make a bank transfer of any amount to your Constant account. Now you're ready to start earning interest.",
+            "desc1": "Choose among our flexible fixed deposits, then make a bank transfer of any amount to your Constant account. Now you're ready to start earning interest.",
             "step2": "Step 2",
             "title2": "Earn daily compound interest",
             "desc2": "Interest is compounded everyday like clockwork. We make sure your returns are guaranteed by only offering secured, over-collateralized loans. ",
@@ -1490,7 +1490,7 @@
         },
         "constantLoan": {
             "title": "Borrow money",
-            "subTitle": "<h2>4.50% APR.</h2>\n<h2>Instant funding.</h2>\n<h2>Get cash for crypto without needing to sell.</h2>\n",
+            "subTitle": "\n<h2>4.50% APR.</h2>\n<h2>Instant funding.</h2>\n<h2>Get cash for crypto without needing to sell.</h2>      ",
             "headLine": "Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.",
             "exchange": {
                 "caption": "Crypto-backed loan",
@@ -1607,7 +1607,7 @@
         "whatTitle3": "No minimum deposit",
         "whatDesc0": "<p>We provide loans at 7.5% to emerging economies, where capital costs 15% or more. That’s how you get 6% APY. </p>",
         "whatDesc2": "<p>No minimum deposit required. Benefit from the same great rates, no matter the amount.\n</p>\n<p>No lock-in. Changed your mind? Withdraw your money anytime and still earn our basic rate of 1%. \n</p>\n",
-        "whatDesc3": "<p>If you deposit $10,000 for 24 months, you will earn:</p>\n<br />\n<p>$10,000 x 6% = $600 per year.</p>\n<br />\n<p>That's a $11,236 return on investment.</p>\n<br />\n<p>Don’t sit on your money. Put it to work. </p>",
+        "whatDesc3": "<p>If you deposit $10,000 for 24 months, you’ll withdraw $11,236.</p>\n</br>\n<p>According to the US government, that’s 60x the national savings rate and 7x the national CD. </p>\n",
         "whatMore0": "How we guarantee zero risk high returns",
         "whatMore1": "How we protect your money",
         "whatMore2": "How to pick a plan that’s right for you",
@@ -2064,7 +2064,7 @@
         "noMoreTrialLeft": "No more trial left.",
         "submitBtn": "Start your free trial",
         "btnDesc": "New customers only. This 1000 USD trial deposit will be returned at the end of your chosen term, but you keep all the interest.",
-        "termLabel": "Choose a time horizon for your investment"
+        "termLabel": "Choose a fixed deposit term"
     },
     "termSelector": {
         "label": "Choose a commitment period.",
@@ -2144,8 +2144,8 @@
         "title": "Your global USD bank account.",
         "availableInVn": "Available now in Vietnam.",
         "subTitle": {
-            "sub1": "It all starts here. Deposit funds to make instant, international transfers, multiply your interest earnings by 5x, and access the friendliest loans in the world.",
-            "sub2": "Easily transfer money in using your local bank account, and withdraw it when you’re done. Enjoy full FDIC-backed insurance on all deposits. {learnMore}",
+            "sub1": "This basic account offers you full FDIC insurance, instant international transfers, and 24/7 support with anything you need.",
+            "sub2": "It all starts here. Open an account in in less than a minute.",
             "learnMore": "Learn more +"
         },
         "what": {
@@ -2288,7 +2288,7 @@
     "newHome": {
         "banner": {
             "title": "Financial tools for a connected world.",
-            "subTitle": "Explore simple tools to manage your money, designed for an interconnected world. Living abroad? Send money home with a single click - no matter where home is. Doing business with the world? Receive payments from international customers and pay overseas vendors with ease - at the speed of the internet. Want to grow your money faster? Earn 4.00% APY with a global USD savings account. Take your money global.",
+            "subTitle": "Explore better, borderless ways to manage your money.",
             "cta": "Open an account",
             "ctaDesc": "It's free."
         },

@@ -2109,7 +2109,7 @@
         "amountText": "({amount} {currency})",
         "anytimeTerm": "anytime",
         "oneMonthTerm": "3 month",
-        "term": "{term} months",
+        "term": "{term} month",
         "fiatAmountText": "{fiatAmount} {fiatCurrency}",
         "desc": "Your returns are guaranteed at: {interestAmountText} after 1 year.",
         "desc1": "Your returns are guaranteed at: {interestAmountText} after {time}.",

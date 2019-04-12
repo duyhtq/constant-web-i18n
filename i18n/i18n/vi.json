@@ -108,7 +108,7 @@
         "myAccount": "Tài khoản của tôi",
         "deposit": "Nộp tiền",
         "transfer": "Chuyển khoản",
-        "send": "Send",
+        "send": "Chuyển khoản",
         "banking": "Ngân hàng",
         "save": "Tiết kiệm",
         "borrow": "Vay",
@@ -372,9 +372,9 @@
             "cancelMess": "Bạn chắc chắn muốn huỷ giao dịch này?",
             "approve": "Xác nhận thanh toán",
             "approveMess": "Bạn xác nhận muốn thực hiện giao dịch này?",
-            "reject": "Reject",
-            "rejectMess": "Are you sure you want to reject this order?",
-            "riskNote": "We found this order have risk rule detection, Please verify risk before take an action. if you choose Reject the amount of order will be transfer to your balance.",
+            "reject": "Từ chối",
+            "rejectMess": "Bạn từ chối thực hiện giao dịch này?",
+            "riskNote": "Chúng tôi phát hiện có rủi ro khi thực hiện giao dịch. Xin vui lòng xác minh lại các thông tin cần thiết trước khi thực hiện giao dịch. Nếu bạn chọn Từ chối, số tiền này sẽ được chuyển lại vào tài khoản của bạn.",
             "receipt": "Tải lên biên lai chuyển tiền",
             "viewDetail": "Chi tiết",
             "loadMore": "Tải thêm",
@@ -596,10 +596,10 @@
             "agent": {
                 "acceptSuccessfully": "Lựa chọn của bạn đã được chấp nhận thành công",
                 "cancelSuccessfully": "Lựa chọn của bạn đã được huỷ thành công",
-                "rejectSuccessfully": "Your picked order have been rejected successfully",
+                "rejectSuccessfully": "Đã từ chối thực hiện giao dịch này",
                 "rejectError": {
-                    "no_risk_detected": "Your picked order, don't has risk, it can't reject.",
-                    "notDefined": "Your picked order can't reject"
+                    "no_risk_detected": "Không thể từ chối giao dịch này vì không có rủi ro.",
+                    "notDefined": "Không thể từ chối giao dịch này"
                 }
             },
             "orderType": {
@@ -641,7 +641,7 @@
                 "cancelFailed": "Huỷ thao tác không thành công. Xin vui lòng thử lại."
             },
             "user": {
-                "account": "User",
+                "account": "Tên tài khoản",
                 "fullName": "Họ và tên",
                 "userName": "Tên tài khoản",
                 "email": "Email"
@@ -655,9 +655,9 @@
                 "bankAccountNumber": "Số tài khoản"
             },
             "risk": {
-                "bank": "Have the same bank account with:",
-                "trial": "Have received from trial users:",
-                "detail": "Risk detection"
+                "bank": "Có tài khoản ngân hàng giống với:",
+                "trial": "Đã nhận từ người dùng thử nghiệm:",
+                "detail": "Phát hiện rủi ro"
             }
         },
         "accountLevel": {
@@ -808,8 +808,8 @@
             "sendCodeFailed": "Có lỗi xảy ra khi gửi mã xác minh. Xin vui lòng thử lại!",
             "verifyFailed": "Đã xảy ra lỗi. Xin vui lòng xác minh lại email.",
             "verifySuccess": "Xác minh email thành công.",
-            "pleaseUpdateEmail": "Please update your email to activate your account",
-            "updateEmail": "Update Email"
+            "pleaseUpdateEmail": "Xin vui lòng cập nhật email để kích hoạt tài khoản",
+            "updateEmail": "Cập Nhật Email"
         },
         "phoneVerification": {
             "sendCodeSuccess": "Xin vui lòng kiểm tra tin nhắn điện thoại để nhận mã xác minh.",
@@ -820,7 +820,7 @@
         "kycVerification": {
             "pleaseComplete": "Xin vui lòng thực hiện xác minh danh tính để {action}.",
             "complete": "Hoàn tất KYC",
-            "pleaseKYCBeforeAction": "For your security, we’ll need you to verify your ID before {action}.",
+            "pleaseKYCBeforeAction": "Để đảm bảo an toàn, xin vui lòng xác minh danh tính trước khi {action}.",
             "updatedSuccess": "Thông tin của bạn đã được cập nhật thành công",
             "updatedFailed": "Cập nhật thông tin không thành công. Xin vui lòng thử lại!",
             "checkVerifyFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
@@ -1315,7 +1315,7 @@
                 "BeneficiaryAddressRegion": "Khu vực",
                 "BeneficiaryAddressPostalCode": "Mã bưu điện",
                 "createdBankFailed": "Có lỗi xảy ra khi tạo thêm ngân hàng mới. Xin vui lòng thử lại.",
-                "note": "Note (optional)"
+                "note": "Ghi chú (tuỳ chọn)"
             },
             "fee": "Phí",
             "backOrderBook": "Mua thêm Constant",
@@ -1326,7 +1326,7 @@
                 "greaterThan": "Phải lớn hơn 0",
                 "notEnough": "Không đủ Constant"
             },
-            "confirmTemplate": "\n\n\n        <div name=\"thanks\">\n          Thanks! Please wire <strong>{Constant} {Currency}</strong> to Constant Escrow to  keep your money safe while the deal finalizes.\n        </div>\n        <div name=\"bank\">\n          <p>Vietcombank</p>\n          <p>\n            <span>Account: </span>\n            <span>123456789</span>\n          </p>\n          <p>\n            <span>Amount: </span>\n            <span>{Constant}&nbsp;{Currency}</span>\n          </p>\n          <p>\n            <span>Reference: </span>\n            <span>ABC123</span>\n          </p>\n        </div>\n        <div name=\"notice\">\n          <b>IMPORTANT</b>\n          <span>\n            Do include your reference number <b>ABC123</b> in the transfer description\n          </span>\n        </div>\n        <div name=\"window\">\n          <b>30 MINUTE WINDOW: </b>\n          <span>\n            Please complete your transfer <b>within 30 minutes</b>. After that, your\n            order will be autotically cancelled.\n          </span>\n        </div>\n      "
+            "confirmTemplate": "\n\n\n<div name=\"thanks\">\n          Xin cảm ơn! Vui lòng chuyển <strong>{Constant} {Currency}</strong> tới Constant Escrow để đảm bảo trong khi chờ giao dịch được hoàn thành.\n        </div>\n        <div name=\"bank\">\n          <p>Vietcombank</p>\n          <p>\n            <span> Số tài khoản: </span>\n            <span>123456789</span>\n          </p>\n          <p>\n            <span>Số lượng: </span>\n            <span>{Constant}&nbsp;{Currency}</span>\n          </p>\n          <p>\n            <span>Mã giao dịch: </span>\n            <span>ABC123</span>\n          </p>\n        </div>\n        <div name=\"notice\">\n          <b>LƯU Ý</b>\n          <span>\n            Luôn nhớ điền mã giao dịch <b>ABC123</b> trong phần nội dung chuyển khoản\n          </span>\n        </div>\n        <div name=\"window\">\n          <b>30 PHÚT </b>\n          <span>\n            Vui lòng thực hiện chuyển khoản <b>trong 30 phút</b>. Nếu không, giao dịch sẽ tự động bị huỷ bỏ.\n          </span>\n        </div>\n      "
         },
         "direct": {
             "title": "Trực tiếp",
@@ -1357,13 +1357,13 @@
                     "sellTitle": "Xác Nhận Bán Constant",
                     "buyThankMsg": "Xin vui lòng chuyển {amount} tới Constant Escrow để đảm bảo trong khi chờ giao dịch được hoàn tất.",
                     "sellThankMsg": "Bạn đã gửi yêu cầu đổi {amount} Constant. Bạn sẽ nhận được tiền trong khoảng 30 phút tới.",
-                    "buyAchThankMsg": "We are securing your deposit {amount}. Funds will appear in your account in approximately 48 hours, and will begin earning interest from day 1.",
-                    "sellAchThankMsg": "You sent request convert {amount}. It could be take 30 minutes transfer to your bank account.",
+                    "buyAchThankMsg": "Khoản {amount} bạn nộp vào tài khoản đã được Constant đảm bảo. Trong 48 giờ tới bạn sẽ thấy số tiền này trong tài khoản Constant và lãi suất sẽ được tính ngay từ ngày đầu tiên.",
+                    "sellAchThankMsg": "Bạn muốn rút {amount}. Bạn sẽ nhận được tiền về tài khoản ngân hàng trong 30 phút tới.",
                     "orderThankMsg": "Cảm ơn! Xin vui lòng chuyển tới quỹ Constant {amount} USD để hoàn tất giao dịch.",
                     "importantMsg": "Vui lòng điền số chuyển tiền {referenceNumber} trong phần nội dung chuyển khoản.",
                     "important": "QUAN TRỌNG",
                     "thankYou": "Xin cảm ơn!",
-                    "achThankYou": "Thanks for growing your money with Constant.",
+                    "achThankYou": "Cảm ơn bạn đã gửi tiết kiệm với Constant.",
                     "minuteWindow": "15 PHÚT:",
                     "minuteWindowDescription": "Vui lòng hoàn tất chuyển khoản trong vòng 15 phút. Nếu không, giao dịch sẽ tự động bị huỷ bỏ.",
                     "direct": {
@@ -1479,8 +1479,8 @@
         "transfer": {
             "title": "Chuyển khoản",
             "caption": "Bạn muốn chuyển khoản bao nhiêu?",
-            "viaEmailCaption": "Via Email",
-            "viaAddressCaption": "To an ETH/EOS address",
+            "viaEmailCaption": "Email",
+            "viaAddressCaption": "Địa chỉ ví ETH/EOS",
             "yourBalance": "Số dư",
             "validateMaxInput": "Xin vui lòng nhập số nhỏ hơn hoặc bằng: ${amount}",
             "transferFeeLabel": "Phí chuyển khoản",
@@ -1515,7 +1515,7 @@
         },
         "constantLoan": {
             "title": "Vay thế chấp bằng tiền mã hoá",
-            "subTitle": "\n        <h2>4.50% APR.</h2>\n        <h2>Instant funding.</h2>\n        <h2>Get cash for crypto without needing to sell.</h2>\n      ",
+            "subTitle": "\n        <h2>Lãi suất chỉ từ 4.50%/năm.</h2>\n        <h2>Nhận tiền ngay.</h2>\n        <h2>Mà không cần phải bán đi số tiền mã hoá vốn có.</h2>\n      ",
             "headLine": "Bạn muốn có tiền để trả nợ thẻ tín dụng, trả tiền thuê nhà hay trả viện phí? Rất đơn giản. Đặt cọc bằng ETH và bạn sẽ nhận được số Constant bạn cần. Số ETH này sẽ được giữ an toàn trong hợp đồng thông minh của Constant.",
             "exchange": {
                 "caption": "Vay thế chấp bằng tiền mã hoá",
@@ -2046,10 +2046,10 @@
         "amountMustBeLargerThan": "Số tiền bạn gửi phải lớn hơn {min}{fiatCurrency}",
         "howMuchDoYouWantToDeposit": "BẠN MUỐN GỬI TIẾT KIỆM BAO NHIÊU? ",
         "termLabel": "Chọn kì hạn",
-        "fundsTransferTypeLabel": "Transfer type",
-        "bankAccountNameLabel": "Bank account name",
-        "bankAccountNumberLabel": "Bank account number",
-        "routingNumberLabel": "Routing number"
+        "fundsTransferTypeLabel": "Hình thức chuyển khoản",
+        "bankAccountNameLabel": "Tên tài khoản",
+        "bankAccountNumberLabel": "Số tài khoản",
+        "routingNumberLabel": "Số định tuyến ngân hàng"
     },
     "exchangeInputDepositForm": {
         "minUsdRequired": "Xin vui lòng nhập số lớn hơn 0.01 USD",
@@ -2085,13 +2085,13 @@
         "howMuchDoYouWantToWithdraw": "Bạn muốn rút bao nhiêu tiền?",
         "yourAnytimeBalance": "Số dư không kì hạn: {balance}{currency}",
         "whichCurrencyYouWant": "Bạn muốn nhận đơn vị tiền tệ nào?",
-        "recipientBankInformation": "Recipient’s bank information",
-        "toABankAccount": "To a bank account",
-        "toAWallet": "To an ETH/EOS wallet",
-        "walletAddr": "Ethereum/EOS wallet address",
+        "recipientBankInformation": "Thông tin ngân hàng của người nhận",
+        "toABankAccount": "Chuyển khoản ngân hàng",
+        "toAWallet": "Tới địa chỉ ví ETH/EOS",
+        "walletAddr": "Địa chỉ ví Ethereum/EOS",
         "input2FA": "Input 2FA",
-        "withdrawFailed": "Failed while withdrawing, please try again",
-        "withdrawSuccessful": "Your withdrawal was completed successfully"
+        "withdrawFailed": "Có lỗi xảy ra khi rút tiền. Xin vui lòng thử lại.",
+        "withdrawSuccessful": "Rút tiền thành công"
     },
     "exchangeInputBuyTrialForm": {
         "title": "<h6>Chúng tôi tặng bạn một khoản tiết kiệm thử nghiệm trị giá 1,000 USD để trải nghiệm dịch vụ. Khi đáo hạn, bạn được giữ toàn bộ phần lãi.</h6>",
@@ -2119,7 +2119,7 @@
         "desc4": "Hưởng lãi suất 1% trên số dư tài khoản và có thể rút ra bất cứ lúc nào.",
         "trialExpires": "Khi kết thúc chương trình trải nghiệm, 1,000 USD sẽ được trả lại nhưng bạn được giữ toàn bộ phần lãi.",
         "item": {
-            "termTitle": "{month}-Month{termType}"
+            "termTitle": "{month}-Tháng{termType}"
         }
     },
     "saving": {
@@ -2131,7 +2131,7 @@
         "makeLocalOrderFailed": "Lệnh của bạn không được tạo thành công",
         "makeDirectOrderSuccess": "Lệnh của bạn được tạo thành công",
         "makeDirectOrderFailed": "Lệnh của bạn không được tạo thành công",
-        "makeAchDirectOrderFailed": "Please check your bank details are in order and try again.",
+        "makeAchDirectOrderFailed": "Xin vui lòng kiểm tra lại thông tin ngân hàng và thử lại.",
         "makeTrialOrderSuccess": "Lệnh của bạn được tạo thành công",
         "makeTrialOrderFailed": "Lệnh của bạn không được tạo thành công"
     },
@@ -2141,18 +2141,18 @@
         "makeDirectOrderSuccess": "Lệnh của bạn được tạo thành công",
         "makeDirectOrderFailed": "Lệnh của bạn không được tạo thành công",
         "info": {
-            "title": "Withdraw to your local bank.",
-            "desc1": "Your funds are held in USD, and can be withdrawn to your local bank account at any time. If you’ve got a different local currency, it’s converted at the real-time market rate, so you preserve the full value of your funds.",
-            "desc2": "If you’d like to move your money to a different bank account, that’s fine too - just let us know where to send it."
+            "title": "Rút tiền về tài khoản ngân hàng.",
+            "desc1": "Giữ tiền bằng USD và có thể rút về tài khoản ngân hàng bất cứ lúc nào. Tỉ giá tính theo tỉ giá thị trường tại thời điểm giao dịch nên không bị mất giá.",
+            "desc2": "Bạn có thể chuyển tiền của mình tới bất kì tài khoản ngân hàng nào mà bạn muốn."
         },
         "what": {
             "whatCaption0": "Mọi lúc mọi nơi",
             "whatCaption1": "Dễ dàng nhận tiền qua tài khoản ngân hàng",
             "whatCaption2": "Giá trị luôn được đảm bảo",
             "whatCaption3": "Rút tiền không giới hạn với phí cực thấp",
-            "whatDesc0": "When you hit the withdraw button, your funds will be made available to withdraw from your bank account of choice.",
-            "whatDesc1": "Easily transfer funds in your Constant global bank account to your local bank account. Times may vary depending on your bank’s operating hours.",
-            "whatDesc2": "Your money is stored from day 1 in USD, so if you withdraw in a different currency, the value of your money will have stayed constant.",
+            "whatDesc0": "Tiền của bạn sẽ được chuyển về tài khoản ngân hàng mà bạn chọn.",
+            "whatDesc1": "Dễ dàng rút tiền từ tài khoản Constant về tài khoản ngân hàng bất cứ lúc nào. Tốc độ giao dịch đôi khi khác nhau phụ thuộc vào giờ hoạt động của ngân hàng.",
+            "whatDesc2": "Tiền của bạn được giữ bằng USD nên không bị mất giá.",
             "whatDesc3": "Rút tiền về bất cứ lúc nào bạn muốn. Phí rút tiền chỉ là 0.25% và tối đa là 35 USD."
         }
     },
@@ -2406,18 +2406,18 @@
         }
     },
     "support": {
-        "text": "Can we help? Call us at {phone}. We’re available 24/7.",
+        "text": "Gọi {phone} để nhận được sự trợ giúp kịp thời. Sẵn sàng 24/7.",
         "phone": {
             "vn": "+84 36 656 2949",
             "us": "1 909 588 0544"
         }
     },
     "ours": {
-        "title": "We build tools to help citizens of the world take their money global.",
-        "content": "\n    <h5>As the world becomes increasingly interconnected, distance shrinks and opportunities grow. Doors are opening — increasing acceptance of diversity, better education, broader opportunities, a global market. In many ways, our neighborhood is now the world.</h5>\n    <h5>Unfortunately, financial systems are still landlocked and insular, characterized by exclusivity, operating behind closed doors. Around the world, money sits languishing in even the best bank accounts, steadily losing value as inflation rises. Loans are hard to access, and even more difficult to repay. It is easier to fly to some places than it is to send money there. Billions of global-thinking people don’t have the means or opportunity to set their money free.</h5>\n    <h5>We need a local bank for our global village. Welcome to Constant.</h5>\n    ",
+        "title": "Chúng tôi tạo ra giải pháp tài chính toàn cầu cho những công dân toàn cầu.",
+        "content": "\n<h5>Thế giới ngày càng phẳng. Những ranh giới được xoá mờ và ngày càng có nhiều cánh cửa được mở ra. Với Internet, thế giới hiện chỉ như một ngôi làng.</h5>\n<h5>Tuy nhiên, các hệ thống tài chính hiện hữu vẫn còn rất nhiều hạn chế và chưa thể đáp ứng được nhu cầu của mọi người trong thời đại toàn cầu hoá. Nhiều nơi trên thế giới, tiền nằm im trong tài khoản ngân hàng và theo thời gian mất đi giá trị do lạm phát, các khoản vay thì khó tiếp cận và còn khó hơn nữa để hoàn trả. Bạn có thể dễ dàng di chuyển tới bất cứ đâu, nhưng tiền của bạn thì không thể như thế. Đã đến lúc cần một giải pháp tài chính tốt hơn.</h5>\n<h5>Chào mừng đến với Constant. Giải pháp tài chính toàn cầu cho những công dân toàn cầu.</h5>    ",
         "team": {
-            "title": "Built for global citizens, by global citizens.",
-            "content": "We’re proud of our extraordinary team of more than 50 scientists, engineers, designers, writers, economists, and customer experience specialists from all over the world — fully devoted to our mission of building simple, elegant, useful tools to suit the needs of our global village.",
+            "title": "Được xây dựng bởi những công dân toàn cầu, cho những công dân toàn cầu.",
+            "content": "Constant tự hào tập hợp được đội ngũ hơn 50 thành viên bao gồm những nhà khoa học, kĩ sư, nhà thiết kế, nhà kinh tế học, và những chuyên gia hàng đầu trong các lĩnh vực. Tất cả đều hướng đến mục tiêu xây dựng một công cụ đơn giản, tiện dụng để giải quyết những nhu cầu của công dân toàn cầu trong thời đại toàn cầu hoá.",
             "footer": "<a nice, friendly, human caption about each photo>"
         }
     }

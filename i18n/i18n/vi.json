@@ -2145,14 +2145,14 @@
             "desc2": "Bạn có thể chuyển tiền của mình tới bất kì tài khoản ngân hàng nào mà bạn muốn."
         },
         "what": {
-            "whatCaption0": "Mọi lúc mọi nơi",
-            "whatCaption1": "Dễ dàng nhận tiền qua tài khoản ngân hàng",
-            "whatCaption2": "Giá trị luôn được đảm bảo",
-            "whatCaption3": "Rút tiền không giới hạn với phí cực thấp",
+            "whatCaption0": "0.25%",
+            "whatCaption1": "Convenient",
+            "whatCaption2": "Reliable",
+            "whatCaption3": "We’re here to help",
             "whatDesc0": "Tiền của bạn sẽ được chuyển về tài khoản ngân hàng mà bạn chọn.",
-            "whatDesc1": "Dễ dàng rút tiền từ tài khoản Constant về tài khoản ngân hàng bất cứ lúc nào. Tốc độ giao dịch đôi khi khác nhau phụ thuộc vào giờ hoạt động của ngân hàng.",
-            "whatDesc2": "Tiền của bạn được giữ bằng USD nên không bị mất giá.",
-            "whatDesc3": "Rút tiền về bất cứ lúc nào bạn muốn. Phí rút tiền chỉ là 0.25% và tối đa là 35 USD."
+            "whatDesc1": "<p>No waiting in line or waiting for business hours - all you need is an internet connection. Simply enter the amount and where you want to send it to.</p>",
+            "whatDesc2": "<p>All funds you send are FDIC insured up to $130M, and once a transfer is made, it’s unstoppable. That’s how we protect your money, and make sure it gets to where it needs to go.</p>",
+            "whatDesc3": "<p>Our team is based in your preferred time zone. If you’re in the US, call us at 1-844-201-7242. If you’re in Vietnam, call us at +84 36 656 2949.</p>"
         }
     },
     "transfer": {

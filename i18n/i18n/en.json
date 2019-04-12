@@ -2145,14 +2145,14 @@
             "desc2": "If you’d like to move your money to a different bank account, that’s fine too - just let us know where to send it."
         },
         "what": {
-            "whatCaption0": "Anytime, anywhere",
-            "whatCaption1": "Works with your bank",
-            "whatCaption2": "Receive the full value",
-            "whatCaption3": "Unlimited low-cost withdrawals",
-            "whatDesc0": "When you hit the withdraw button, your funds will be made available to withdraw from your bank account of choice.",
+            "whatCaption0": "0.25%",
+            "whatCaption1": "Convenient",
+            "whatCaption2": "Reliable",
+            "whatCaption3": "We’re here to help",
+            "whatDesc0": "<p>We only charge 0.25% for withdrawing to a local bank. For amounts of $14,000 and above, fees are capped at $35, never more.</p>",
             "whatDesc1": "Easily transfer funds in your Constant global bank account to your local bank account. Times may vary depending on your bank’s operating hours.",
-            "whatDesc2": "Your money is stored from day 1 in USD, so if you withdraw in a different currency, the value of your money will have stayed constant.",
-            "whatDesc3": "Withdraw as often as you like. The only fee we charge is a 0.25% withdrawal fee - capped at $35. Never more."
+            "whatDesc2": "<p>All funds you send are FDIC insured up to $130M, and once a transfer is made, it’s unstoppable. That’s how we protect your money, and make sure it gets to where it needs to go.</p>",
+            "whatDesc3": "<p>Our team is based in your preferred time zone. If you’re in the US, call us at 1-844-201-7242. If you’re in Vietnam, call us at +84 36 656 2949.</p>"
         }
     },
     "transfer": {

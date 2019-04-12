@@ -1325,8 +1325,7 @@
                 "required": "Required",
                 "greaterThan": "Must be greater than 0",
                 "notEnough": "Constant is not enough"
-            },
-            "confirmTemplate": "\n\n\n        <div name=\"thanks\">\n          Thanks! Please wire <strong>{Constant} {Currency}</strong> to Constant Escrow to  keep your money safe while the deal finalizes.\n        </div>\n        <div name=\"bank\">\n          <p>Vietcombank</p>\n          <p>\n            <span>Account: </span>\n            <span>123456789</span>\n          </p>\n          <p>\n            <span>Amount: </span>\n            <span>{Constant}&nbsp;{Currency}</span>\n          </p>\n          <p>\n            <span>Reference: </span>\n            <span>ABC123</span>\n          </p>\n        </div>\n        <div name=\"notice\">\n          <b>IMPORTANT</b>\n          <span>\n            Do include your reference number <b>ABC123</b> in the transfer description\n          </span>\n        </div>\n        <div name=\"window\">\n          <b>30 MINUTE WINDOW: </b>\n          <span>\n            Please complete your transfer <b>within 30 minutes</b>. After that, your\n            order will be autotically cancelled.\n          </span>\n        </div>\n      "
+            }
         },
         "direct": {
             "title": "Direct",

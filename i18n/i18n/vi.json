@@ -1325,8 +1325,7 @@
                 "required": "Yêu cầu",
                 "greaterThan": "Phải lớn hơn 0",
                 "notEnough": "Không đủ Constant"
-            },
-            "confirmTemplate": "\n\n\n<div name=\"thanks\">\n          Xin cảm ơn! Vui lòng chuyển <strong>{Constant} {Currency}</strong> tới Constant Escrow để đảm bảo trong khi chờ giao dịch được hoàn thành.\n        </div>\n        <div name=\"bank\">\n          <p>Vietcombank</p>\n          <p>\n            <span> Số tài khoản: </span>\n            <span>123456789</span>\n          </p>\n          <p>\n            <span>Số lượng: </span>\n            <span>{Constant}&nbsp;{Currency}</span>\n          </p>\n          <p>\n            <span>Mã giao dịch: </span>\n            <span>ABC123</span>\n          </p>\n        </div>\n        <div name=\"notice\">\n          <b>LƯU Ý</b>\n          <span>\n            Luôn nhớ điền mã giao dịch <b>ABC123</b> trong phần nội dung chuyển khoản\n          </span>\n        </div>\n        <div name=\"window\">\n          <b>30 PHÚT </b>\n          <span>\n            Vui lòng thực hiện chuyển khoản <b>trong 30 phút</b>. Nếu không, giao dịch sẽ tự động bị huỷ bỏ.\n          </span>\n        </div>\n      "
+            }
         },
         "direct": {
             "title": "Trực tiếp",

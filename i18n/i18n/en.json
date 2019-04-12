@@ -108,6 +108,7 @@
         "myAccount": "My Account",
         "deposit": "Deposit",
         "transfer": "Transfer",
+        "send": "Send",
         "banking": "Bank",
         "save": "Invest",
         "borrow": "Borrow",
@@ -371,6 +372,9 @@
             "cancelMess": "Are you sure you want to cancel this order?",
             "approve": "Confirm payment",
             "approveMess": "Are you sure you want to confirm this order?",
+            "reject": "Reject",
+            "rejectMess": "Are you sure you want to reject this order?",
+            "riskNote": "We found this order have risk rule detection, Please verify risk before take an action. if you choose Reject the amount of order will be transfer to your balance.",
             "receipt": "Upload your receipt",
             "viewDetail": "Detail",
             "loadMore": "Load more",
@@ -564,6 +568,7 @@
             "date": "Date",
             "transactionID": "Transaction ID",
             "transfer": "Transfer",
+            "cryptoAddress": "Crypto address",
             "reference_number": "Reference No.",
             "type": "Type",
             "amount": "Amount",
@@ -590,7 +595,12 @@
             "extID": "External ID",
             "agent": {
                 "acceptSuccessfully": "Your picked order have been accepted successfully",
-                "cancelSuccessfully": "Your picked order have been canceled successfully"
+                "cancelSuccessfully": "Your picked order have been canceled successfully",
+                "rejectSuccessfully": "Your picked order have been rejected successfully",
+                "rejectError": {
+                    "no_risk_detected": "Your picked order, don't has risk, it can't reject.",
+                    "notDefined": "Your picked order can't reject"
+                }
             },
             "orderType": {
                 "0": "Buy",
@@ -631,6 +641,7 @@
                 "cancelFailed": "Cancellation unsuccessful. Please try again."
             },
             "user": {
+                "account": "User",
                 "fullName": "Full name",
                 "userName": "User name",
                 "email": "Email"
@@ -642,6 +653,11 @@
                 "bankCountry": "Bank Country",
                 "bankAccountName": "Bank account name",
                 "bankAccountNumber": "Your account number"
+            },
+            "risk": {
+                "bank": "Have the same bank account with:",
+                "trial": "Have received from trial users:",
+                "detail": "Risk detection"
             }
         },
         "accountLevel": {
@@ -791,7 +807,9 @@
             "sendCodeSuccess": "Please check your email inbox for the verification code.",
             "sendCodeFailed": "Your verification code got lost on the way to your inbox. Please try again.",
             "verifyFailed": "Sorry, something went wrong. Please verify your email again.",
-            "verifySuccess": "Your email was verified successfully."
+            "verifySuccess": "Your email was verified successfully.",
+            "pleaseUpdateEmail": "Please update your email to activate your account",
+            "updateEmail": "Update Email"
         },
         "phoneVerification": {
             "sendCodeSuccess": "Please check your sms inbox for the verification code.",
@@ -802,6 +820,7 @@
         "kycVerification": {
             "pleaseComplete": "Please complete the KYC process to {action}.",
             "complete": "Complete KYC",
+            "pleaseKYCBeforeAction": "For your security, we’ll need you to verify your ID before {action}.",
             "updatedSuccess": "Information updated",
             "updatedFailed": "Failed while updating your information, please try again!",
             "checkVerifyFailed": "Something went wrong, please try again.",
@@ -1295,7 +1314,8 @@
                 "BeneficiaryAddressCountry": "Beneficiary Country",
                 "BeneficiaryAddressRegion": "Beneficiary Region",
                 "BeneficiaryAddressPostalCode": "Beneficiary Postal Code",
-                "createdBankFailed": "Failed while creating new bank, please try again"
+                "createdBankFailed": "Failed while creating new bank, please try again",
+                "note": "Note (optional)"
             },
             "fee": "Fee",
             "backOrderBook": "Buy more Constant",
@@ -1306,7 +1326,7 @@
                 "greaterThan": "Must be greater than 0",
                 "notEnough": "Constant is not enough"
             },
-            "confirmTemplate": "\n\n\n        <div name=\"thanks\">\n          Thanks! Please wire <strong>{Constant} {Currency}</strong> to Constant Escrow to  keep your money safe while the deal finalizes.\n        </div>\n        <div name=\"bank\">\n          <p>Vietcombank</p>\n          <p>\n            <span>Account: </span>\n            <span>123456789</span>\n          </p>\n          <p>\n            <span>Amount: </span>\n            <span>{Constant}&nbsp;{Currency}</span>\n          </p>\n          <p>\n            <span>Reference: </span>\n            <span>ABC123</span>\n          </p>\n        </div>\n        <div name=\"notice\">\n          <b>IMPORTANT</b>\n          <span>\n            Do include your reference number <b>ABC123</b> in the transfer description\n          </span>\n        </div>\n        <div name=\"window\">\n          <b>30 MINUTE WINDOW: </b>\n          <span>\n            Please complete your transfer <b>within 30 minutes</b>. After that, your\n            order will be automatically cancelled.\n          </span>\n        </div>\n      "
+            "confirmTemplate": "\n\n\n        <div name=\"thanks\">\n          Thanks! Please wire <strong>{Constant} {Currency}</strong> to Constant Escrow to  keep your money safe while the deal finalizes.\n        </div>\n        <div name=\"bank\">\n          <p>Vietcombank</p>\n          <p>\n            <span>Account: </span>\n            <span>123456789</span>\n          </p>\n          <p>\n            <span>Amount: </span>\n            <span>{Constant}&nbsp;{Currency}</span>\n          </p>\n          <p>\n            <span>Reference: </span>\n            <span>ABC123</span>\n          </p>\n        </div>\n        <div name=\"notice\">\n          <b>IMPORTANT</b>\n          <span>\n            Do include your reference number <b>ABC123</b> in the transfer description\n          </span>\n        </div>\n        <div name=\"window\">\n          <b>30 MINUTE WINDOW: </b>\n          <span>\n            Please complete your transfer <b>within 30 minutes</b>. After that, your\n            order will be autotically cancelled.\n          </span>\n        </div>\n      "
         },
         "direct": {
             "title": "Direct",
@@ -1337,10 +1357,13 @@
                     "sellTitle": "Order Confirmation Convert Constant",
                     "buyThankMsg": "Please wire {amount} to Constant Escrow to keep your money safe while the deal finalizes.",
                     "sellThankMsg": "You sent request convert {amount}. It could be take 30 minutes transfer to your bank account.",
+                    "buyAchThankMsg": "We are securing your deposit {amount}. Funds will appear in your account in approximately 48 hours, and will begin earning interest from day 1.",
+                    "sellAchThankMsg": "You sent request convert {amount}. It could be take 30 minutes transfer to your bank account.",
                     "orderThankMsg": "Thanks! Please wire the Constant Trust {amount} USD to complete your order.",
                     "importantMsg": "Do include your reference number {referenceNumber} in the transfer description.",
                     "important": "IMPORTANT",
                     "thankYou": "Thank you!",
+                    "achThankYou": "Thanks for growing your money with Constant.",
                     "minuteWindow": "15 MINUTE WINDOW:",
                     "minuteWindowDescription": "Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled.",
                     "direct": {
@@ -1456,6 +1479,8 @@
         "transfer": {
             "title": "Transfer",
             "caption": "SEND CONSTANT ANYWHERE",
+            "viaEmailCaption": "Via Email",
+            "viaAddressCaption": "To an ETH/EOS address",
             "yourBalance": "Your balance",
             "validateMaxInput": "Your amount must less than or equal: ${amount}",
             "transferFeeLabel": "Transfer fee",
@@ -1490,7 +1515,7 @@
         },
         "constantLoan": {
             "title": "Fair, fully secured crypto-backed loans.",
-            "subTitle": "\n        <h5>Our unique loan mechanism protects lenders from risk and secures a 8% annual return. It also delivers a 2% APR for borrowers. How?</h5>\n        <h5>Borrowers are required to put down collateral, so there is zero risk for lenders. Collateral doesn’t just sit there either - Constant helps borrowers securely lend out what they put down, so that while they pay interest, they are also earning it. This way, borrowers lower their own interest rate, without harming lender returns.</h5>\n        <h5>Turns out, both parties can win.</p>\n      ",
+            "subTitle": "\n        <h2>4.50% APR.</h2>\n        <h2>Instant funding.</h2>\n        <h2>Get cash for crypto without needing to sell.</h2>\n      ",
             "headLine": "Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.",
             "exchange": {
                 "caption": "Crypto-backed loan",
@@ -2020,7 +2045,11 @@
         "loading": "Loading...",
         "amountMustBeLargerThan": "Your amount must be larger than {min} {fiatCurrency}",
         "howMuchDoYouWantToDeposit": "HOW MUCH DO YOU WANT TO INVEST? ",
-        "termLabel": "Pick your investment option"
+        "termLabel": "Pick your investment option",
+        "fundsTransferTypeLabel": "Transfer type",
+        "bankAccountNameLabel": "Bank account name",
+        "bankAccountNumberLabel": "Bank account number",
+        "routingNumberLabel": "Routing number"
     },
     "exchangeInputDepositForm": {
         "minUsdRequired": "Please enter an amount larger than 0.01 USD",
@@ -2055,7 +2084,14 @@
         "getCurrencyListFailed": "Failed while getting supported currencies",
         "howMuchDoYouWantToWithdraw": "How much do you want to withdraw?",
         "yourAnytimeBalance": "Your Anytime Balance: {balance} {currency}",
-        "whichCurrencyYouWant": "Which currency do you want to receive?"
+        "whichCurrencyYouWant": "Which currency do you want to receive?",
+        "recipientBankInformation": "Recipient’s bank information",
+        "toABankAccount": "To a bank account",
+        "toAWallet": "To an ETH/EOS wallet",
+        "walletAddr": "Ethereum/EOS wallet address",
+        "input2FA": "Input 2FA",
+        "withdrawFailed": "Failed while withdrawing, please try again",
+        "withdrawSuccessful": "Your withdrawal was completed successfully"
     },
     "exchangeInputBuyTrialForm": {
         "title": "<h6>We’re giving you a 1000 USD free initial investment. Just so you can see how it works. At the end of the trial, you keep all the returns.</h6>",
@@ -2083,21 +2119,7 @@
         "desc4": "Earn 1% on your existing balance, and withdraw anytime.",
         "trialExpires": "The 1000 USD principal expires, but the profit is yours to keep.",
         "item": {
-            "zero": {
-                "name": "Anytime"
-            },
-            "one": {
-                "name": "1-Month"
-            },
-            "three": {
-                "name": "3-Months"
-            },
-            "six": {
-                "name": "6-Months"
-            },
-            "oneYear": {
-                "name": "12-Months"
-            }
+            "termTitle": "{month}-Month{termType}"
         }
     },
     "saving": {
@@ -2109,6 +2131,7 @@
         "makeLocalOrderFailed": "Failed while creating your order",
         "makeDirectOrderSuccess": "Your order was created successfully",
         "makeDirectOrderFailed": "Failed while creating your order",
+        "makeAchDirectOrderFailed": "Please check your bank details are in order and try again.",
         "makeTrialOrderSuccess": "Your order was created successfully",
         "makeTrialOrderFailed": "Failed while creating your order"
     },
@@ -2118,18 +2141,18 @@
         "makeDirectOrderSuccess": "Your order was created successfully",
         "makeDirectOrderFailed": "Failed while creating your order",
         "info": {
-            "title": "Withdraw in any currency.",
-            "desc1": "Your funds are held in USD, and can be withdrawn at any time. If you’ve got a different local currency, it’s converted at the real-time market rate, so you preserve the full value of your funds.",
-            "desc2": "If you’d like to move your money to another bank account, that’s fine too - just let us know where to send it."
+            "title": "Withdraw to your local bank.",
+            "desc1": "Your funds are held in USD, and can be withdrawn to your local bank account at any time. If you’ve got a different local currency, it’s converted at the real-time market rate, so you preserve the full value of your funds.",
+            "desc2": "If you’d like to move your money to a different bank account, that’s fine too - just let us know where to send it."
         },
         "what": {
             "whatCaption0": "Anytime, anywhere",
             "whatCaption1": "Works with your bank",
             "whatCaption2": "Receive the full value",
             "whatCaption3": "Unlimited low-cost withdrawals",
-            "whatDesc0": "When you hit the withdraw button, Constant converts stored USD into local currency that you can pull out at bank branches or ATMs.",
-            "whatDesc1": "The Constant global bank account integrates smoothly with your local banking system, allowing you to smoothly transfer funds if you wish.",
-            "whatDesc2": "Because your money is stored in USD, when you withdraw in your local currency, you’ll find that the value of your money has stayed Constant.",
+            "whatDesc0": "When you hit the withdraw button, your funds will be made available to withdraw from your bank account of choice.",
+            "whatDesc1": "Easily transfer funds in your Constant global bank account to your local bank account. Times may vary depending on your bank’s operating hours.",
+            "whatDesc2": "Your money is stored from day 1 in USD, so if you withdraw in a different currency, the value of your money will have stayed constant.",
             "whatDesc3": "Withdraw as often as you like. The only fee we charge is a 0.25% withdrawal fee - capped at $35. Never more."
         }
     },
@@ -2383,10 +2406,19 @@
         }
     },
     "support": {
-        "text": "Can we help? Call us at {phone}. We’re available to help 24/7.",
+        "text": "Can we help? Call us at {phone}. We’re available 24/7.",
         "phone": {
             "vn": "+84 36 656 2949",
-            "us": "+1 909 588 0544"
+            "us": "1 909 588 0544"
+        }
+    },
+    "ours": {
+        "title": "We build tools to help citizens of the world take their money global.",
+        "content": "\n    <h5>As the world becomes increasingly interconnected, distance shrinks and opportunities grow. Doors are opening — increasing acceptance of diversity, better education, broader opportunities, a global market. In many ways, our neighborhood is now the world.</h5>\n    <h5>Unfortunately, financial systems are still landlocked and insular, characterized by exclusivity, operating behind closed doors. Around the world, money sits languishing in even the best bank accounts, steadily losing value as inflation rises. Loans are hard to access, and even more difficult to repay. It is easier to fly to some places than it is to send money there. Billions of global-thinking people don’t have the means or opportunity to set their money free.</h5>\n    <h5>We need a local bank for our global village. Welcome to Constant.</h5>\n    ",
+        "team": {
+            "title": "Built for global citizens, by global citizens.",
+            "content": "We’re proud of our extraordinary team of more than 50 scientists, engineers, designers, writers, economists, and customer experience specialists from all over the world — fully devoted to our mission of building simple, elegant, useful tools to suit the needs of our global village.",
+            "footer": "<a nice, friendly, human caption about each photo>"
         }
     }
 }

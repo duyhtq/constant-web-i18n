@@ -169,7 +169,7 @@
             }
         },
         "techTeam": {
-            "title": "Công nghệ",
+            "title": "Giới thiệu",
             "hoverMenu": {
                 "constantCoin": {
                     "title": "Constant Coin",
@@ -1539,7 +1539,7 @@
                 "whatCaption1": "Đơn giản dễ dàng",
                 "whatCaption2": "Lãi suất ưu đãi",
                 "whatCaption3": "Ví dụ:",
-                "whatDesc0": "\n<p>Khách hàng sẽ nhận được tiền ngay khi phần tài sản thế chấp được xác nhận trên chuỗi khối. </p>\n\n<p>Thời gian dự kiến: 2 phút cho ETH và 10 phút cho BTC.</p>        \n        ",
+                "whatDesc0": "\n<p>Nhận được tiền ngay khi phần tài sản thế chấp được xác nhận trên chuỗi khối. </p>\n\n<p>Thời gian dự kiến: 2 phút cho ETH và 10 phút cho BTC.</p>        \n        ",
                 "whatDesc1": "\n          <p>Không thủ tục giấy tờ phức tạp. Chỉ cần thế chấp BTC/ETH là nhận ngay được tiền. Tỉ lệ thành công 100%.</p>\n        ",
                 "whatDesc2": "\n<p>Không kiểm tra lịch sử tín dụng. Không chứng minh tài chính. Lãi suất chỉ từ 4.5%/năm.</p>        ",
                 "whatDesc3": "\n<p>Nếu bạn vay 1,000 USD với mức lãi suất 4.5%/năm cho kì hạn 1 tháng.</p>\n\n<p>Số lãi bạn phải trả là: <br />1,000 USD x (4.5/12) = 3.75 USD</p>\n<p>Không trả lãi định kì. Chỉ cần hoàn trả đầy đủ khi đáo hạn vay.</p>        "
@@ -1550,7 +1550,7 @@
                 "title1": "NHẬP SỐ TIỀN CẦN VAY",
                 "desc1": "Bạn muốn vay bao nhiêu? Hãy nói cho Constant biết nhu cầu của bạn.",
                 "step2": "BƯỚC 2",
-                "title2": "CHỌN TÀI SẢN THẾ CHẤP VÀ THỜI HẠN",
+                "title2": "THẾ CHẤP VÀ CHỌN THỜI HẠN",
                 "desc2": "Chỉ cần chọn thời hạn vay phù hợp với khả năng của bạn, hệ thống sẽ tự động tính toán ra số BTC hay ETH mà bạn cần phải thế chấp.",
                 "step3": "BƯỚC 3",
                 "title3": "NHẬN TIỀN",
@@ -1630,7 +1630,7 @@
         "whatTitle2": "Bởi Chính phủ Hoa Kì",
         "whatTitle3": "Không yêu cầu số tiền tối thiểu",
         "whatDesc0": "<p>Constant cho vay thế chấp với lãi suất 4.5%/năm để áp dụng mức lãi suất USD tốt nhất cho khách hàng.</p>",
-        "whatDesc2": "<p>Hưởng lãi suất cố định. Không giới hạn số tiền gửi\n</p>\n<p>Nếu khách hàng cần tiền gấp, hoàn toàn có thể rút vốn bất cứ lúc nào. \n</p>",
+        "whatDesc2": "<p>Hưởng lãi suất cố định. Không giới hạn số tiền gửi\n</p>\n<br />\n<p>Nếu khách hàng cần tiền gấp, hoàn toàn có thể rút vốn bất cứ lúc nào. \n</p>",
         "whatDesc3": "<p>Nếu bạn gửi tiết kiệm 10,000 USD với kì hạn 12 tháng, bạn sẽ kiếm được:</p>\n<p>\n10,000 USD x 4% = 400 USD</p>\n<p>\nHãy tận dụng mọi khoản tiền nhàn rỗi để sinh lời!</p>",
         "whatMore0": "Constant đảm bảo lợi nhuận cao và không có rủi ro",
         "whatMore1": "Constant bảo vệ tiền của bạn như thế nào?",
@@ -2183,14 +2183,14 @@
         "howItWorks": {
             "title": "Hướng dẫn sử dụng",
             "step1": "BƯỚC 1",
-            "title1": "NỘP TIỀN VÀO TÀI KHOẢN CONSTANT",
+            "title1": "NỘP TIỀN VÀO CONSTANT",
             "desc1": "Gửi số tiền bạn muốn đến công ty Constant tại Việt Nam. Số tiền này sẽ được đổi sang USD theo tỉ giá thị trường tại thời điểm đó.",
             "step2": "BƯỚC 2",
             "title2": "TIỀN CỦA BẠN ĐƯỢC ĐẢM BẢO",
             "desc2": "Tiền của bạn được giữ an toàn trong tài khoản ngân hàng Mỹ được bảo hiểm 100%.",
             "step3": "BƯỚC 3",
             "title3": "VÀ NHẬN THÊM NHIỀU TIỆN ÍCH",
-            "desc3": "Bạn đã có một tài khoản USD để chuyển khoản quốc tế.\n"
+            "desc3": "Bạn đã có một tài khoản USD để chuyển khoản quốc tế, gửi tiết kiệm hay vay tiền với lãi suất ưu đãi nhất.\n"
         },
         "checklist": {
             "title": "Tại sao nên đầu tư với Constant?",
@@ -2281,9 +2281,9 @@
     },
     "trade": {
         "title": "Giao dịch Constant.",
-        "desc": "Hãy sử dụng một giải pháp tài chính thông minh hơn để bảo vệ tài sản của bạn khỏi sự biến động của thị trường. Đồng stablecoin Constant (CONST) là trung tâm của các dịch vụ chúng tôi cung cấp và đóng vai trò như một tài khoản USD quốc tế, một giải pháp đầu tư lợi nhuận cao và một hình thức vay thế chấp linh động, hợp lí. CONST được neo theo giá của USD, 1 CONST = 1 USD và có thể được đổi về USD bất cứ lúc nào. Bạn có thể dùng CONST để mua Bitcoin, Ether và nhiều đồng tiền mã hoá khác thông qua các sàn giao dịch dưới đây.",
+        "desc": "Hãy sử dụng một giải pháp tài chính thông minh hơn để bảo vệ tài sản của bạn khỏi sự biến động của thị trường. Constant (CONST) là nền tảng của mọi dịch vụ tài chính của chúng tôi: tài khoản USD quốc tế, thanh toán quốc tế, gửi tiết kiệm bằng USD và cho vay thế chấp linh động. CONST được neo theo giá của USD, 1 CONST = 1 USD và có thể được đổi về USD bất cứ lúc nào. Bạn có thể dùng CONST để mua Bitcoin, Ethereum và nhiều đồng tiền mã hoá khác thông qua các sàn giao dịch dưới đây.",
         "coinmarket": {
-            "title": "Theo dõi sự phát triển của Constant",
+            "title": "Cập nhật sự phát triển của Constant",
             "desc": "Theo dõi giá thị trường, lịch sử giao dịch, khối lượng giao dịch và những biến động của Constant trên tất cả các sàn giao dịch."
         }
     },

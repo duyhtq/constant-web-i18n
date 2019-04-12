@@ -2074,7 +2074,7 @@
             "amountToWithdraw": "Amount to withdraw: {amount} {currency}",
             "fee": "Withdrawal fee: {fee} {currency}",
             "fiatAmountResultLabel": "According to the markets today, you’ll receive: {fiatAmount} {fiatCurrency}",
-            "explain": "* The maximum you can withdraw is {amountExcludeFee} {currency}, so you have enough to cover the withdrawal fee."
+            "explain": "* The maximum you can send is {amountExcludeFee} {currency}, so you have enough to cover the sending fee."
         },
         "currencyDropdownLabel": "Your currency",
         "sellBtn": "WITHDRAW",
@@ -2323,7 +2323,7 @@
                 },
                 "desc2": {
                     "title": "Do business with the world.",
-                    "desc": "Pay your suppliers, receive money from clients, save on fees. Make and receive as many transfers as you want. Withdrawing to a local bank account costs just 0.25% (never more than $35)."
+                    "desc": "Pay your suppliers, receive money from clients, save on fees. Send and receive transfers to Constant accounts - for free. Sending straight to a local bank account costs just 0.25% (never more than $35)."
                 },
                 "desc3": {
                     "title": "Payroll.",

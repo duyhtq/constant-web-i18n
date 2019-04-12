@@ -1520,7 +1520,7 @@
                 "caption": "Crypto-backed loan",
                 "buttonText": "Borrow cash",
                 "month": "{period}-month",
-                "months": "{period}-months",
+                "months": "{period}-month",
                 "apr": "APR",
                 "termLabel": "Pick a loan term",
                 "amountLabel": "How much do you want to borrow?",

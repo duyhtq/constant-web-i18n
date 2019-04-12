@@ -2044,7 +2044,7 @@
         "loading": "Loading...",
         "amountMustBeLargerThan": "Your amount must be larger than {min} {fiatCurrency}",
         "howMuchDoYouWantToDeposit": "How much do you want to save?",
-        "termLabel": "Pick the term that works for you.",
+        "termLabel": "Pick the fixed deposit term that works for you.",
         "fundsTransferTypeLabel": "Transfer type",
         "bankAccountNameLabel": "Bank account name",
         "bankAccountNumberLabel": "Bank account number",

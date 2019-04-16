@@ -1145,6 +1145,18 @@
         "thanksMessage": "Cảm ơn! Tin nhắn của bạn đã được gửi đi."
     },
     "home": {
+        "lendingSection": {
+            "form": {
+                "tooltip": {
+                    "amount": "<p>How much do you want to lend?</p>",
+                    "maxTerm": "<p>This is the maximum amount of time you want to lend your money out for. Unloaned portions are protected by the FDIC, and can be withdrawn at any time.</p>",
+                    "minRate": "<p>This is the minimum rate you are willing to accept for your loan. If there is a borrower willing to pay more, you will earn the higher interest rate.</p>"
+                },
+                "placeholder": {
+                    "amount": "How much do you want to lend?"
+                }
+            }
+        },
         "blockTitle1": "Những chia sẻ của khách hàng",
         "blockDesc1": "Đầu tư thông minh hơn với Constant.",
         "blockTitle2": "Cơ chế hoạt động",
@@ -1362,8 +1374,7 @@
                 "required": "Yêu cầu",
                 "greaterThan": "Phải lớn hơn 0",
                 "notEnough": "Không đủ Constant"
-            },
-            "confirmTemplate": "\n\n\n        <div name=\"thanks\">\n          Thanks! Please wire <strong>{Constant} {Currency}</strong> to Constant Escrow to  keep your money safe while the deal finalizes.\n        </div>\n        <div name=\"bank\">\n          <p>Vietcombank</p>\n          <p>\n            <span>Account: </span>\n            <span>123456789</span>\n          </p>\n          <p>\n            <span>Amount: </span>\n            <span>{Constant}&nbsp;{Currency}</span>\n          </p>\n          <p>\n            <span>Reference: </span>\n            <span>ABC123</span>\n          </p>\n        </div>\n        <div name=\"notice\">\n          <b>IMPORTANT</b>\n          <span>\n            Do include your reference number <b>ABC123</b> in the transfer description\n          </span>\n        </div>\n        <div name=\"window\">\n          <b>30 MINUTE WINDOW: </b>\n          <span>\n            Please complete your transfer <b>within 30 minutes</b>. After that, your\n            order will be autotically cancelled.\n          </span>\n        </div>\n      "
+            }
         },
         "direct": {
             "title": "Trực tiếp",
@@ -2469,6 +2480,38 @@
             "title": "Được xây dựng bởi những công dân toàn cầu, cho những công dân toàn cầu.",
             "content": "Constant tự hào tập hợp được đội ngũ hơn 50 thành viên bao gồm những nhà khoa học, kĩ sư, nhà thiết kế, nhà kinh tế học, và những chuyên gia hàng đầu trong các lĩnh vực. Tất cả đều hướng đến mục tiêu xây dựng một công cụ đơn giản, tiện dụng để giải quyết những nhu cầu của công dân toàn cầu trong thời đại toàn cầu hoá.",
             "footer": "<a nice, friendly, human caption about each photo>"
+        }
+    },
+    "home1": {
+        "lendingSection": {
+            "form": {
+                "tooltip": {
+                    "amount": "<p>How much do you want to lend?</p>",
+                    "maxTerm": "<p>This is the maximum amount of time you want to lend your money out for. Unloaned portions are protected by the FDIC, and can be withdrawn at any time.</p>",
+                    "minRate": "<p>This is the minimum rate you are willing to accept for your loan. If there is a borrower willing to pay more, you will earn the higher interest rate.</p>"
+                },
+                "placeholder": {
+                    "amount": "How much do you want to lend?"
+                }
+            },
+            "confirm": {
+                "thankYou": "Thanks for growing your money with Constant.",
+                "bankName": "Bank name",
+                "accountName": "Account name",
+                "accountNumber": "Account number",
+                "value": "Value",
+                "amount": "Amount",
+                "reference": "Reference",
+                "important": "IMPORTANT",
+                "importantMsg": "Do include your reference number {referenceNumber} in the transfer description.",
+                "minuteWindow": "15 MINUTE WINDOW:",
+                "minuteWindowDescription": "Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled.",
+                "backOrderBook": "Buy more Constant",
+                "confirmMessage": "Please make payment and click \"Confirm payment\"",
+                "confirmButton": "Confirm payment",
+                "minRate": "Min rate",
+                "maxTerm": "Max term"
+            }
         }
     }
 }

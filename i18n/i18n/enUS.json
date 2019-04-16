@@ -308,7 +308,7 @@
             "lTaxCountry": "Country listed on your ID",
             "plTaxCountry": "Select your country",
             "lPhone": "Phone Number",
-            "lSSN": "Social Security Number",
+            "lSSN": "Social Security Number/ Tax ID",
             "lIDNumber": "ID Number",
             "lDocType": "Type of ID",
             "plDocType": "Select your ID type",
@@ -1121,14 +1121,14 @@
         "optionText": "or",
         "howItWorks": {
             "step1": "Step 1",
-            "title1": "Make a deposit",
-            "desc1": "Choose among our flexible fixed deposits, then make a bank transfer of any amount to your Constant account. Now you're ready to start earning interest.",
+            "title1": "Investors",
+            "desc1": "Enter the amount you want to lend, and the interest rate you want to charge.",
             "step2": "Step 2",
-            "title2": "Earn daily compound interest",
-            "desc2": "Interest is compounded everyday like clockwork. We make sure your returns are guaranteed by only offering secured, over-collateralized loans. ",
+            "title2": "Constant",
+            "desc2": "The algorithm matches investors with borrowers that fit their criteria, and makes the transaction happen seamlessly.",
             "step3": "Step 3",
-            "title3": "Withdraw funds",
-            "desc3": "Easily withdraw funds to any local bank. When your term is up, simply choose the bank account you’d like to send your funds to."
+            "title3": "Borrowers",
+            "desc3": "Enter the amount you want to borrow, and the interest rate you are willing to pay."
         },
         "stories": {
             "quote0": "Apart from the bank beating interest rates, this is an incredibly interesting project from a technology standpoint. Banks need to up their game.",
@@ -1537,7 +1537,7 @@
             "what": {
                 "whatCaption0": "Get funds within minutes.",
                 "whatCaption1": "Crypto for cash",
-                "whatCaption2": "Things we don’t do.",
+                "whatCaption2": "Protected by Ethereum smart contracts while on loan",
                 "whatCaption3": "Here’s an example.",
                 "whatDesc0": "\n<p>The money you need will reach you as soon as your collateral is confirmed on its blockchain. </p>\n\n<p>ETA: 2 minutes for ETH and 10 minutes for BTC.</p>        ",
                 "whatDesc1": "\n          <p>Secure your loan with BTC or ETH and receive USD - all without needing to sell your crypto. Enjoy liquidity without needing to liquidate.</p>\n        ",
@@ -1617,21 +1617,21 @@
         "midBanner1": "Send money anywhere, for free",
         "midBanner2": "Secure and grow your money",
         "whatChatWithUs": "Chat with us",
-        "whatCaption0": "How we deliver high returns.\n",
-        "whatCaption1": "How we secure your money.",
+        "whatCaption0": "Set your own rates",
+        "whatCaption1": "Insured up to $130M while waiting for a match",
         "whatCaption2": "Things we don’t do.",
-        "whatCaption3": "Here’s an example.",
+        "whatCaption3": "Only invest in secured loans",
         "whatTitle": "What can you do with Constant?",
         "whatTitle0": "Save in USD",
         "whatTitle1": "Up to 130M USD",
         "whatTextLink1": "Read the full policy",
         "whatLink1": "/privacy-policy",
-        "whatDesc1": "<p>We strictly require every loan to be fully backed by collateral. So if borrowers default, you don’t lose a cent. </p>",
+        "whatDesc1": "<p>Funds that have not yet been loaned out are kept safe at multiple FDIC-insured bank accounts with an aggregated insurance of $130M. \n</p>\n<br />\n<p>You can withdraw anytime.\n</p>",
         "whatTitle2": "By the US Government",
         "whatTitle3": "No minimum deposit",
-        "whatDesc0": "<p>We provide loans at 7.5% to emerging economies, where capital costs 15% or more. That’s how you get 6% APY. </p>",
-        "whatDesc2": "<p>No minimum deposit required. Benefit from the same great rates, no matter the amount.\n</p>\n<br />\n<p>No lock-in. Changed your mind? Withdraw your money anytime and still earn our basic rate of 1%. \n</p>\n",
-        "whatDesc3": "<p>If you deposit $10,000 for 24 months, you’ll withdraw $11,236.</p>\n</br>\n<p><a target=\"_blank\" href=\"https://www.fdic.gov/regulations/resources/rates/\">According to the US government</a>, that’s 60x the national savings rate and 7x the national CD. </p>",
+        "whatDesc0": "<p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.\n</p>\n<br />\n<p>You decide your rates. No hidden fees.\n</p>",
+        "whatDesc2": "<p>When your money is on loan, it is no longer FDIC insured, but protected by a smart contract that runs exactly as programmed - without the need for human involvement.</p>\n<br />\n<p>Together, FDIC insurance and smart contract security, keep your money independently safe.\n</p>\n",
+        "whatDesc3": "<p>We strictly require every loan to be 150% backed by collateral. For someone to borrow $10,000, they have to put up $15,000 in collateral value.</p>\n<br />\n<p>So if borrowers default, you don’t lose a cent.\n</p>",
         "whatMore0": "How we guarantee zero risk high returns",
         "whatMore1": "How we protect your money",
         "whatMore2": "How to pick a plan that’s right for you",
@@ -2093,7 +2093,7 @@
         "withdrawSuccessful": "Your withdrawal was completed successfully"
     },
     "exchangeInputBuyTrialForm": {
-        "title": "<h6>We’re giving you a 1000 USD free trial deposit. Just so you can see how it works. At the end of the trial, you keep all the interest.</h6>",
+        "title": "<h6>We’re giving you a trial investment of 1000 USD. All you have to do is choose your rate, and we’ll find you a match. When the trial is up, we take the 1000 USD back, but the interest is yours to keep.\n</h6>",
         "highlightText": "you keep all the interest.",
         "trialLeft": "{number} trials left.",
         "noMoreTrialLeft": "No more trial left.",
@@ -2123,8 +2123,8 @@
     },
     "saving": {
         "trialLeftNum": "ONLY {trialLeft} TRIALS LEFT",
-        "title": "<h5>Grow your money</h5>",
-        "subTitle": "<h2 class=\"toolTipMark\">Earn up to 6.00% APY.</h2> \n<h2>No minimum deposit.</h2>\n<h2>Daily compound interest.</h2>\n<h2>Withdraw anytime.</h2>\n<br />\n<h5><small style=\"font-size:16px;\" class=\"darkorange4\">*</small> Interest is derived from funding fully secured loans. All fixed deposits are 150% backed by collateral, not by the FDIC.</h5>",
+        "title": "<h5>Invest the way you want</h5>",
+        "subTitle": "<h2 class=\"toolTipMark\">Set your own rates. </h2> \n<h2>No fees. </h2>\n<h2>No minimum capital.</h2>\n<h2>Withdraw anytime.</h2>\n<br />\n<h5> Lend your assets at rates you choose, to borrowers with 150% in collateral. Your funds are protected by smart contracts and can be withdrawn at any time.</h5>",
         "makeLocalOrderSuccess": "Thanks! Please make a transfer from your bank.",
         "crypto_amount_exists": "Crypto amount exists",
         "makeLocalOrderFailed": "Failed while creating your order",
@@ -2140,8 +2140,8 @@
         "makeDirectOrderSuccess": "Success! Your funds should reach you shortly.",
         "makeDirectOrderFailed": "Failed while creating your order",
         "info": {
-            "title": "Withdraw to your local bank.",
-            "desc1": "Your funds are held in USD, and can be withdrawn to your local bank account at any time. If you’ve got a different local currency, it’s converted at the real-time market rate, so you preserve the full value of your funds.",
+            "title": "SEND MONEY",
+            "desc1": "Conveninent.",
             "desc2": "If you’d like to move your money to a different bank account, that’s fine too - just let us know where to send it."
         },
         "what": {
@@ -2412,8 +2412,8 @@
         }
     },
     "ours": {
-        "title": "We build tools to help citizens of the world take their money global.",
-        "content": "\n    <h5>As the world becomes increasingly interconnected, distance shrinks and opportunities grow. Doors are opening — increasing acceptance of diversity, better education, broader opportunities, a global market. In many ways, our neighborhood is now the world.</h5>\n    <h5>Unfortunately, financial systems are still landlocked and insular, characterized by exclusivity, operating behind closed doors. Around the world, money sits languishing in even the best bank accounts, steadily losing value as inflation rises. Loans are hard to access, and even more difficult to repay. It is easier to fly to some places than it is to send money there. Billions of global-thinking people don’t have the means or opportunity to set their money free.</h5>\n    <h5>We need a local bank for our global village. Welcome to Constant.</h5>\n    ",
+        "title": "In pursuit of financial freedom.",
+        "content": "<h5>We’re proud of our extraordinary team of more than 50 scientists, engineers, designers, writers, economists, and community managers from all over the world — hard at work building a peer-to-peer platform designed to help anyone move towards financial freedom.</h5>\n",
         "team": {
             "title": "Built for global citizens, by global citizens.",
             "content": "We’re proud of our extraordinary team of more than 50 scientists, engineers, designers, writers, economists, and customer experience specialists from all over the world — fully devoted to our mission of building simple, elegant, useful tools to suit the needs of our global village.",

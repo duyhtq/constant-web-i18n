@@ -2140,9 +2140,9 @@
         "makeDirectOrderSuccess": "Lệnh của bạn được tạo thành công",
         "makeDirectOrderFailed": "Lệnh của bạn không được tạo thành công",
         "info": {
-            "title": "Rút tiền về tài khoản ngân hàng.",
-            "desc1": "Giữ tiền bằng USD và có thể rút về tài khoản ngân hàng bất cứ lúc nào. Tỉ giá tính theo tỉ giá thị trường tại thời điểm giao dịch nên không bị mất giá.",
-            "desc2": "SEND MONEY"
+            "title": "SEND MONEY",
+            "desc1": "Conveninent.",
+            "desc2": "Reliable."
         },
         "what": {
             "whatCaption0": "0.25%",

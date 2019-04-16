@@ -2141,8 +2141,8 @@
         "makeDirectOrderFailed": "Failed while creating your order",
         "info": {
             "title": "SEND MONEY",
-            "desc1": "Your funds are held in USD, and can be withdrawn to your local bank account at any time. If you’ve got a different local currency, it’s converted at the real-time market rate, so you preserve the full value of your funds.",
-            "desc2": "If you’d like to move your money to a different bank account, that’s fine too - just let us know where to send it."
+            "desc1": "Conveninent.",
+            "desc2": "Reliable."
         },
         "what": {
             "whatCaption0": "0.25%",

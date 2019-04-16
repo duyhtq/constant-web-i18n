@@ -76,6 +76,11 @@
                 "btn": "Make a transfer"
             }
         },
+        "company": {
+            "name": "CONST LLC",
+            "address1": "101 E Redlands Blvd",
+            "address2": " Redlands, CA 92373, USA"
+        },
         "getSocial": "Social Media",
         "titleFoundation": "Foundation",
         "titleConstant": "Buy Constant",
@@ -92,16 +97,48 @@
         "affiliate": "Affiliate",
         "support": "Support",
         "telegramText": "Join the {link}",
-        "telegramLink": "https://t.me/constantbanking",
-        "telegramTitle": "Constant Telegram",
         "email": "Email us at {email}",
         "copyright": "2019 Constant. {term} and {privacy}",
         "termOfUse": "Terms of Use",
         "privacy": "Privacy Policy",
-        "facebookLink": "https://www.facebook.com/constantbanking",
-        "mediumLink": "https://medium.com/@constantbanking",
         "contactUs": "Contact us:",
-        "referral": "Referral"
+        "referral": "Referral",
+        "phone": {
+            "us": {
+                "title": "US: ",
+                "phone": "+1 844 201 7242"
+            },
+            "hk": {
+                "title": "Hong Kong: ",
+                "phone": "+85 258 01 01 68"
+            },
+            "vn": {
+                "title": "Viet Nam: ",
+                "phone": "+84 36 656 2949"
+            }
+        },
+        "social": {
+            "fb": {
+                "title": "Facebook",
+                "link": "https://www.facebook.com/constantbanking"
+            },
+            "tw": {
+                "title": "Twitter",
+                "link": "https://twitter.com/constantbanking"
+            },
+            "yt": {
+                "title": "Youtube",
+                "link": "https://www.youtube.com/channel/UCAPR7eWI41ADSGtCEroUeNw"
+            },
+            "md": {
+                "title": "Medium",
+                "link": "https://medium.com/@constantbanking"
+            },
+            "tele": {
+                "title": "Constant Telegram",
+                "link": "https://t.me/constantbanking"
+            }
+        }
     },
     "headerBar": {
         "blog": "Tips",
@@ -1294,17 +1331,17 @@
                 "bankAddress": "Bank Address",
                 "depositoryBank": "Depository Bank",
                 "bankPhone": "Bank phone",
-                "bankName": "Bank name",
+                "bankName": "Bank Name",
                 "accountNumber": "Account Number",
                 "bankBranchName": "Bank branch name",
-                "bankAccountName": "Your account name",
-                "bankAccountNumber": "Your account number",
+                "bankAccountName": "Account Name",
+                "bankAccountNumber": "Account Number",
                 "bankAccountType": "Bank Account Type",
                 "swiftCode": "Swift code",
                 "routingNumber": "Routing number",
                 "btnChangeText": "Change",
                 "achCheckType": "Ach Check Type",
-                "yourBanks": "Your banks",
+                "yourBanks": "Recipient's Bank",
                 "addNewBank": "Enter new bank",
                 "emptyBank": "Empty bank",
                 "openYourBank": "Click here to open your banks",
@@ -1325,7 +1362,8 @@
                 "required": "Required",
                 "greaterThan": "Must be greater than 0",
                 "notEnough": "Constant is not enough"
-            }
+            },
+            "confirmTemplate": "\n\n\n        <div name=\"thanks\">\n          Thanks! Please wire <strong>{Constant} {Currency}</strong> to Constant Escrow to  keep your money safe while the deal finalizes.\n        </div>\n        <div name=\"bank\">\n          <p>Vietcombank</p>\n          <p>\n            <span>Account: </span>\n            <span>123456789</span>\n          </p>\n          <p>\n            <span>Amount: </span>\n            <span>{Constant}&nbsp;{Currency}</span>\n          </p>\n          <p>\n            <span>Reference: </span>\n            <span>ABC123</span>\n          </p>\n        </div>\n        <div name=\"notice\">\n          <b>IMPORTANT</b>\n          <span>\n            Do include your reference number <b>ABC123</b> in the transfer description\n          </span>\n        </div>\n        <div name=\"window\">\n          <b>30 MINUTE WINDOW: </b>\n          <span>\n            Please complete your transfer <b>within 30 minutes</b>. After that, your\n            order will be autotically cancelled.\n          </span>\n        </div>\n      "
         },
         "direct": {
             "title": "Direct",
@@ -1347,7 +1385,7 @@
                     "submitBtn": "Sell",
                     "close": "Close",
                     "agreeSell": "Agree to convert",
-                    "confirmText": "You're converting {amount} {currency}",
+                    "confirmText": "You're sending {amount} {currency}",
                     "confirmSubText": "Please check your information again.",
                     "input2FA": "Input 2FA"
                 },
@@ -2077,12 +2115,12 @@
             "explain": "* The maximum you can send is {amountExcludeFee} {currency}, so you have enough to cover the sending fee."
         },
         "currencyDropdownLabel": "Your currency",
-        "sellBtn": "Send",
+        "sellBtn": "Withdraw",
         "getAmountFailed": "Failed while getting amount",
         "getFeeFailed": "Failed while calculating fee, please try again",
         "getCurrencyListFailed": "Failed while getting supported currencies",
         "howMuchDoYouWantToWithdraw": "How much do you want to send?",
-        "yourAnytimeBalance": "Your Anytime Balance: {balance} {currency}",
+        "yourAnytimeBalance": "Your Balance: {balance} {currency}",
         "whichCurrencyYouWant": "Which currency do you want to receive?",
         "recipientBankInformation": "Recipient’s bank information",
         "toABankAccount": "To a bank account",
@@ -2142,7 +2180,8 @@
         "info": {
             "title": "SEND MONEY",
             "desc1": "Conveninent.",
-            "desc2": "Reliable."
+            "desc2": "Reliable.",
+            "desc3": "Just 0.25% to receive."
         },
         "what": {
             "whatCaption0": "0.25%",
@@ -2153,6 +2192,17 @@
             "whatDesc1": "<p>No waiting in line or waiting for business hours - all you need is an internet connection. Simply enter the amount and where you want to send it to.</p>",
             "whatDesc2": "<p>All funds you send are FDIC insured up to $130M, and once a transfer is made, it’s unstoppable. That’s how we protect your money, and make sure it gets to where it needs to go.</p>",
             "whatDesc3": "<p>Our team is based in your preferred time zone. If you’re in the US, call us at 1-844-201-7242. If you’re in Vietnam, call us at +84 36 656 2949.</p>"
+        },
+        "howItWorks": {
+            "step1": "Step 1",
+            "title1": "Sign up",
+            "desc1": "All you need is an email address. You can also sign up using a facebook or google account.",
+            "step2": "Step 2",
+            "title2": "Make a deposit",
+            "desc2": "Make a bank transfer to the FDIC-insured Constant Vault.",
+            "step3": "Step 3",
+            "title3": "Send money",
+            "desc3": "Enter the amount you’d like to send and the recipient's bank account info. We take care of the rest."
         }
     },
     "transfer": {
@@ -2408,7 +2458,8 @@
         "text": "Can we help? Call us at {phone}. We’re available 24/7.",
         "phone": {
             "vn": "1-844-201-7242",
-            "us": "1 909 588 0544"
+            "us": "+1 844 201 7242",
+            "hk": "+85 258 01 01 68"
         }
     },
     "ours": {

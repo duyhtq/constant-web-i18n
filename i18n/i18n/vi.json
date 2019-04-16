@@ -76,6 +76,11 @@
                 "btn": "Thực hiện chuyển khoản"
             }
         },
+        "company": {
+            "name": "CONST LLC",
+            "address1": "101 E Redlands Blvd",
+            "address2": " Redlands, CA 92373, USA"
+        },
         "getSocial": "Mạng xã hội",
         "titleFoundation": "Thông tin",
         "titleConstant": "Mua Constant",
@@ -92,16 +97,48 @@
         "affiliate": "Tiếp thị liên kết",
         "support": "Hỗ trợ",
         "telegramText": "Tham gia {link}",
-        "telegramLink": "https://t.me/constantvietnam",
-        "telegramTitle": "Constant Telegram",
         "email": "Email cho chúng tôi tại {email}",
         "copyright": "2019 Constant. {term} và {privacy}",
         "termOfUse": "Điều Khoản Sử Dụng",
         "privacy": "Chính Sách Bảo Mật",
-        "facebookLink": "https://www.facebook.com/ConstantVietNam/",
-        "mediumLink": "https://medium.com/@constantvietnam",
         "contactUs": "Liên hệ:",
-        "referral": "Chương trình giới thiệu"
+        "referral": "Chương trình giới thiệu",
+        "phone": {
+            "us": {
+                "title": "US: ",
+                "phone": "+1 844 201 7242"
+            },
+            "hk": {
+                "title": "Hong Kong: ",
+                "phone": "+85 258 01 01 68"
+            },
+            "vn": {
+                "title": "Viet Nam: ",
+                "phone": "+84 36 656 2949"
+            }
+        },
+        "social": {
+            "fb": {
+                "title": "Facebook",
+                "link": "https://www.facebook.com/constantbanking"
+            },
+            "tw": {
+                "title": "Twitter",
+                "link": "https://twitter.com/constantbanking"
+            },
+            "yt": {
+                "title": "Youtube",
+                "link": "https://www.youtube.com/channel/UCAPR7eWI41ADSGtCEroUeNw"
+            },
+            "md": {
+                "title": "Medium",
+                "link": "https://medium.com/@constantbanking"
+            },
+            "tele": {
+                "title": "Constant Telegram",
+                "link": "https://t.me/constantbanking"
+            }
+        }
     },
     "headerBar": {
         "blog": "Bí quyết",
@@ -138,7 +175,7 @@
         "developer": "Lập trình",
         "getConstant": "Mua Constant",
         "getCash": "Rút tiền",
-        "sendMoney": "Chuyển Constant",
+        "sendMoney": "Chuyển tiền",
         "agent": "Trở thành đại lý",
         "constantLoan": "Vay Constant",
         "saveAndGrowMoney": "Tiết kiệm & Hưởng ưu đãi",
@@ -1325,7 +1362,8 @@
                 "required": "Yêu cầu",
                 "greaterThan": "Phải lớn hơn 0",
                 "notEnough": "Không đủ Constant"
-            }
+            },
+            "confirmTemplate": "\n\n\n        <div name=\"thanks\">\n          Thanks! Please wire <strong>{Constant} {Currency}</strong> to Constant Escrow to  keep your money safe while the deal finalizes.\n        </div>\n        <div name=\"bank\">\n          <p>Vietcombank</p>\n          <p>\n            <span>Account: </span>\n            <span>123456789</span>\n          </p>\n          <p>\n            <span>Amount: </span>\n            <span>{Constant}&nbsp;{Currency}</span>\n          </p>\n          <p>\n            <span>Reference: </span>\n            <span>ABC123</span>\n          </p>\n        </div>\n        <div name=\"notice\">\n          <b>IMPORTANT</b>\n          <span>\n            Do include your reference number <b>ABC123</b> in the transfer description\n          </span>\n        </div>\n        <div name=\"window\">\n          <b>30 MINUTE WINDOW: </b>\n          <span>\n            Please complete your transfer <b>within 30 minutes</b>. After that, your\n            order will be autotically cancelled.\n          </span>\n        </div>\n      "
         },
         "direct": {
             "title": "Trực tiếp",
@@ -2077,7 +2115,7 @@
             "explain": "*Tính cả phí rút tiền, bạn có thể rút tối đa {amountExcludeFee}{currency}."
         },
         "currencyDropdownLabel": "Đơn vị tiền tệ",
-        "sellBtn": "RÚT TIỀN",
+        "sellBtn": "Withdraw",
         "getAmountFailed": "Không xác định được số tiền",
         "getFeeFailed": "Có lỗi xảy ra khi tính toán chi phí. Xin vui lòng thử lại",
         "getCurrencyListFailed": "Đơn vị tiền tệ này không được hỗ trợ",
@@ -2142,17 +2180,29 @@
         "info": {
             "title": "SEND MONEY",
             "desc1": "Conveninent.",
-            "desc2": "Reliable."
+            "desc2": "Reliable.",
+            "desc3": "Just 0.25% to receive."
         },
         "what": {
             "whatCaption0": "0.25%",
-            "whatCaption1": "Tiện lợi\n",
-            "whatCaption2": "Tin cậy\n",
+            "whatCaption1": "Convenient",
+            "whatCaption2": "Reliable",
             "whatCaption3": "We’re here to help",
-            "whatDesc0": "Tiền của bạn sẽ được chuyển về tài khoản ngân hàng mà bạn chọn.",
-            "whatDesc1": "<p>Bạn không cần phải mất thời gian xếp hàng hoặc chờ đến giờ hành chính để thực hiện chuyển tiền. Chỉ cần có kết nối internet, bạn có thể chuyển tiền đến người nhận ngay lập tức!</p>",
-            "whatDesc2": "<p>Tiền của bạn khi gửi vào Constant sẽ được bảo hiểm bởi FDIC trị giá đến 130 triệu đô. Đó là lý do tại sao bạn không cần phải lo lắng khi gửi tiền tại Constant!\n</p>",
-            "whatDesc3": "<p>Đội ngũ của chúng tôi luôn sẵn sàng hỗ trợ bạn 24/24. Nếu bạn ở Mỹ, hãy liên hệ với chúng tôi qua số 1-844-201-7242, ở Việt Nam liên hệ qua số +84 36 656 2949</p>"
+            "whatDesc0": "<p>We only charge 0.25% for withdrawing to a local bank. For amounts of $14,000 and above, fees are capped at $35, never more.</p>",
+            "whatDesc1": "<p>No waiting in line or waiting for business hours - all you need is an internet connection. Simply enter the amount and where you want to send it to.</p>",
+            "whatDesc2": "<p>All funds you send are FDIC insured up to $130M, and once a transfer is made, it’s unstoppable. That’s how we protect your money, and make sure it gets to where it needs to go.</p>",
+            "whatDesc3": "<p>Our team is based in your preferred time zone. If you’re in the US, call us at 1-844-201-7242. If you’re in Vietnam, call us at +84 36 656 2949.</p>"
+        },
+        "howItWorks": {
+            "step1": "Step 1",
+            "title1": "Sign up",
+            "desc1": "All you need is an email address. You can also sign up using a facebook or google account.",
+            "step2": "Step 2",
+            "title2": "Make a deposit",
+            "desc2": "Make a bank transfer to the FDIC-insured Constant Vault.",
+            "step3": "Step 3",
+            "title3": "Send money",
+            "desc3": "Enter the amount you’d like to send and the recipient's bank account info. We take care of the rest."
         }
     },
     "transfer": {
@@ -2408,7 +2458,8 @@
         "text": "Gọi {phone} để nhận được sự trợ giúp kịp thời. Sẵn sàng 24/7.",
         "phone": {
             "vn": "+84 36 656 2949",
-            "us": "1 909 588 0544"
+            "us": "+1 844 201 7242",
+            "hk": "+85 258 01 01 68"
         }
     },
     "ours": {

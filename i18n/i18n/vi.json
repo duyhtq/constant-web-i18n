@@ -2123,14 +2123,14 @@
             "amountToWithdraw": "Rút tiền: {amount}{currency}",
             "fee": "Phí rút tiền: {fee}{currency}",
             "fiatAmountResultLabel": "Theo tỉ giá thị trường hôm nay, bạn sẽ nhận được: {fiatAmount}{fiatCurrency}",
-            "explain": "*Tính cả phí rút tiền, bạn có thể rút tối đa {amountExcludeFee}{currency}."
+            "explain": "*Tính cả phí chuyển tiền, bạn có thể gửi tối đa {amountExcludeFee}{currency}."
         },
         "currencyDropdownLabel": "Đơn vị tiền tệ",
-        "sellBtn": "Withdraw",
+        "sellBtn": "Gửi tiền",
         "getAmountFailed": "Không xác định được số tiền",
         "getFeeFailed": "Có lỗi xảy ra khi tính toán chi phí. Xin vui lòng thử lại",
         "getCurrencyListFailed": "Đơn vị tiền tệ này không được hỗ trợ",
-        "howMuchDoYouWantToWithdraw": "Bạn muốn rút bao nhiêu tiền?",
+        "howMuchDoYouWantToWithdraw": "Bạn muốn gửi bao nhiêu tiền?",
         "yourAnytimeBalance": "Số dư không kì hạn: {balance}{currency}",
         "whichCurrencyYouWant": "Bạn muốn nhận đơn vị tiền tệ nào?",
         "recipientBankInformation": "Thông tin ngân hàng của người nhận",
@@ -2192,17 +2192,17 @@
             "title": "CHUYỂN TIỀN",
             "desc1": "Tiện lợi.",
             "desc2": "Tin cậy",
-            "desc3": "Chỉ mất 0.25% phí rút tiền"
+            "desc3": "Phí chuyển tiền là 0.25%."
         },
         "what": {
             "whatCaption0": "0.25%",
             "whatCaption1": "Tiện lợi",
             "whatCaption2": "Tin cậy",
             "whatCaption3": "Đội ngũ hỗ trợ",
-            "whatDesc0": "<p>Chúng tôi chỉ thu phí rút tiền 0.25% giao dịch. Với giao dịch từ $14,000 trở lên, phí rút chỉ $35</p>",
+            "whatDesc0": "<p>Chúng tôi chỉ thu phí rút tiền 0.25% giao dịch tại ngân hàng địa phương. Với giao dịch từ $14,000 trở lên, phí rút chỉ là $35!</p>",
             "whatDesc1": "<p>Bạn không cần phải mất thời gian xếp hàng hoặc chờ đến giờ hành chính để thực hiện chuyển tiền. Chỉ cần có kết nối internet, bạn có thể chuyển tiền đến người nhận ngay lập tức!</p>",
             "whatDesc2": "<p>Tiền của bạn khi gửi vào Constant sẽ được bảo hiểm bởi FDIC trị giá đến 130 triệu đô. Đó là lý do tại sao bạn không cần phải lo lắng khi gửi tiền tại Constant!\n</p>",
-            "whatDesc3": "<p>Đội ngũ của chúng tôi luôn sẵn sàng hỗ trợ bạn 24/24. Nếu bạn ở Mỹ, hãy liên hệ với chúng tôi qua số 1-844-201-7242, ở Việt Nam liên hệ qua số +84 36 656 2949</p>\n"
+            "whatDesc3": "<p>Đội ngũ của chúng tôi luôn sẵn sàng hỗ trợ bạn 24/24. Nếu bạn ở Mỹ, hãy liên hệ với chúng tôi qua số 1-844-201-7242, ở Việt Nam liên hệ qua số +84 36 656 2949.</p>\n"
         },
         "howItWorks": {
             "step1": "Step 1",
@@ -2466,7 +2466,7 @@
         }
     },
     "support": {
-        "text": "Gọi {phone} để nhận được sự trợ giúp kịp thời. Sẵn sàng 24/7.",
+        "text": "Bạn cần hỗ trợ? Gọi {phone} ngay cho chúng tôi. Chúng tôi sẵn sàng hỗ trợ bạn 24/7.",
         "phone": {
             "vn": "+84 36 656 2949",
             "us": "+1 844 201 7242",

@@ -56,19 +56,19 @@
     "footer": {
         "cta": {
             "type1": {
-                "title": "<h3>Do more with your money</h3>",
+                "title": "<h3>Make a deposit</h3>",
                 "btn": "Make a deposit"
             },
             "type2": {
-                "title": "<h3>Get a global USD account</h3>",
+                "title": "<h3>Open an account</h3>",
                 "btn": "Open an account"
             },
             "type3": {
-                "title": "<h3>Grow your savings</h3>",
+                "title": "<h3>Make a deposit</h3>",
                 "btn": "Browse savings plans"
             },
             "type4": {
-                "title": "<h3>Get USD without selling your crypto</h3>",
+                "title": "<h3>Borrow now</h3>",
                 "btn": "Borrow now"
             },
             "type5": {

@@ -141,7 +141,7 @@
         }
     },
     "headerBar": {
-        "blog": "Tips",
+        "blog": "Blog",
         "myAccount": "My Account",
         "deposit": "Bank",
         "transfer": "Send",
@@ -181,7 +181,7 @@
         "saveAndGrowMoney": "Save & Grow money",
         "login": "Login",
         "openAnAccount": "Open an account",
-        "yourSaving": "Your Money",
+        "yourSaving": "Accounts",
         "myInvestments": "My Savings",
         "hoverMenu": {
             "deposit": {

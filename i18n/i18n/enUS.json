@@ -2189,7 +2189,7 @@
         "makeDirectOrderSuccess": "Success! Your funds should reach your recipient shortly.",
         "makeDirectOrderFailed": "Failed while creating your order",
         "info": {
-            "title": "SEND MONEY",
+            "title": "Send money",
             "desc1": "Convenient.",
             "desc2": "Reliable.",
             "desc3": "Just 0.25% to receive."

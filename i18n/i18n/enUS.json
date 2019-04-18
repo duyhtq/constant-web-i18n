@@ -2513,7 +2513,7 @@
                     "phone": "+84 36 656 2949"
                 },
                 "eu": {
-                    "name": "Europe (Malta)",
+                    "name": "Malta",
                     "address1": "Villa Malitah, Mediterranean Street",
                     "address2": "The Village, St Julian’s STJ 1870",
                     "phone": "+356 3550 5252"
@@ -2603,7 +2603,7 @@
             },
             "form": {
                 "text1": "Set your own lending terms",
-                "text2": "Invest at the current market rate of 10.00% and find a match instantly, or increase your rate and wait for a matching order.",
+                "text2": "<p>Want to get a borrower instantly?</p>\n<br />\n<p>Invest at the current market rate of 10%. Or increase your rate and wait for a matching order.</p>\n",
                 "text3": "We’re giving you a trial investment of $1000. All you have to do is choose your rate, and we’ll find you a match. When the trial is up, we take the $1000 back, but the interest is yours to keep.",
                 "text4": "\n          <h5>You're almost done.</h5>\n          <p>For your security, we'll need you to verify your ID before using Constant.</p>\n        ",
                 "btn1": "Invest now",
@@ -2624,7 +2624,7 @@
             },
             "confirm": {
                 "thankYou1": "Almost there.",
-                "thankMsg": "Simply wire {amount} to the Constant Trust to make a deposit.",
+                "thankMsg": "Simply wire {amount} to our custodian to make a deposit.",
                 "bankName": "Bank name",
                 "accountName": "Account name",
                 "accountNumber": "Account number",
@@ -2647,14 +2647,14 @@
         "whatCaption0": "Set your own rates",
         "whatCaption1": "Insured up to $130M while waiting for a match",
         "whatCaption2": "Protected by Ethereum smart contracts while on loan",
-        "whatCaption3": "Only invest in secured loans",
+        "whatCaption3": "Collateral backed loans",
         "whatDesc0": "\n      <p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.</p>\n      <br />\n      <p>You decide your rates. No hidden fees.</p>\n      <br />\n      <a href=\"https://www.myconstant.com/crypto-loan\" target=\"_blank\">How money is loaned out</a>\n    ",
         "whatDesc1": "\n      <p>Funds that have not yet been loaned out are kept safe at multiple FDIC-insured bank accounts with an aggregated insurance of $130M.</p>\n      <br />\n      <p>You can withdraw anytime.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/meet-scott-purcell-ceo-of-prime-trust-ae7581835030\" target=\"_blank\">How we deliver FDIC insurance</a>\n    ",
         "whatDesc2": "\n      <p>When your money is on loan, it is no longer FDIC insured, but protected by a smart contract that runs exactly as programmed - without the need for human involvement.</p>\n      <br />\n      <p>Together, FDIC insurance and smart contract security, keep your money independently safe.</p>\n      <br />\n      <a href=\"https://www.google.com/url?q=https://github.com/constant-money&sa=D&ust=1555493848999000&usg=AFQjCNEEEN4_WzaIB05aPU2kpKQi_PbKOw\" target=\"_blank\">View our code</a>\n    ",
-        "whatDesc3": "\n      <p>We strictly require every loan to be 150% backed by collateral. For someone to borrow $10,000, they have to put up $15,000 in collateral value.</p>\n      <br />\n      <p>So if borrowers default, you don’t lose a cent.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/how-do-constant-crypto-loans-work-b22b66b5b687\" target=\"_blank\">How we protect investor funds</a>\n    ",
+        "whatDesc3": "\n      <p>If borrowers default or their collateral falls in value, you don’t lose a cent.</p>\n      <br />\n      <p>How? We strictly require every loan to be 150% backed by collateral. </p>\n      <br />\n   <p>If their collateral falls in value, it is automatically liquidated at 70%, so lenders always get their money back.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/how-do-constant-crypto-loans-work-b22b66b5b687\" target=\"_blank\">How we protect investor funds</a>",
         "howItWorks": {
             "mainTitle": "How it works",
-            "mainDesc": "\n        <h5>We match investors with borrowers glad to pay their rates, and facilitate the entire transaction from beginning to end.</h5>\n      ",
+            "mainDesc": "<h5>The Constant algorithm matches investors with borrowers glad to pay their rates. It  then secures investor funds and borrower collateral in an unstoppable smart contract, and facilitates the entire transaction from beginning to end. </h5>\n",
             "step1": "Step 1",
             "title1": "Investors",
             "desc1": "Enter the amount you want to lend, and the interest rate you want to charge.",

@@ -56,16 +56,16 @@
     "footer": {
         "cta": {
             "type1": {
-                "title": "<h3>Make a deposit</h3>",
-                "btn": "Make a deposit"
+                "title": "<h3>Choose your own interest rate.</h3>",
+                "btn": "Make an investment"
             },
             "type2": {
                 "title": "<h3>Open an account</h3>",
                 "btn": "Open an account"
             },
             "type3": {
-                "title": "<h3>Make a deposit</h3>",
-                "btn": "Browse savings plans"
+                "title": "<h3>Choose your own interest rate.</h3>",
+                "btn": "Make an investment"
             },
             "type4": {
                 "title": "<h3>Borrow now</h3>",

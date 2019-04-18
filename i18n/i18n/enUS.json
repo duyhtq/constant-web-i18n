@@ -110,7 +110,7 @@
             },
             "hk": {
                 "title": "Hong Kong: ",
-                "phone": "+85 258 01 01 68"
+                "phone": "+852 8191-5657"
             },
             "vn": {
                 "title": "Viet Nam: ",
@@ -1361,7 +1361,7 @@
                 "achCheckType": "Ach Check Type",
                 "yourBanks": "Recipient's Bank",
                 "addNewBank": "Enter new bank",
-                "emptyBank": "Empty bank",
+                "emptyBank": "Please select a bank",
                 "openYourBank": "Click here to open your banks",
                 "BeneficiaryAddressStreet1": "Beneficiary Street \n",
                 "BeneficiaryAddressStreet2": "Beneficiary Street 2",
@@ -2480,7 +2480,7 @@
         "phone": {
             "vn": "1-844-201-7242",
             "us": "+1 844 201 7242",
-            "hk": "+85 258 01 01 68"
+            "hk": "+852 8191-5657"
         }
     },
     "ours": {
@@ -2603,7 +2603,7 @@
             },
             "form": {
                 "text1": "Set your own lending terms",
-                "text2": "<p>Want to get a borrower instantly?</p>\n<br />\n<p>Invest at the current market rate of 10%. Or increase your rate and wait for a matching order.</p>\n",
+                "text2": "Want to get a borrower instantly?\n\nInvest at the current market rate of 10%. Or increase your rate and wait for a matching order.\n",
                 "text3": "We’re giving you a trial investment of $1000. All you have to do is choose your rate, and we’ll find you a match. When the trial is up, we take the $1000 back, but the interest is yours to keep.",
                 "text4": "\n          <h5>You're almost done.</h5>\n          <p>For your security, we'll need you to verify your ID before using Constant.</p>\n        ",
                 "btn1": "Invest now",

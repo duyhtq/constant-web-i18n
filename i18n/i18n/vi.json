@@ -2504,7 +2504,7 @@
                     "name": "Hong Kong",
                     "address1": "Flat A, 18/F, 88 Commercial Building",
                     "address2": "28-34 Wing Lok Street, Sheung Wan",
-                    "phone": "+852 8191-5657"
+                    "phone": "+852 8191 5657"
                 },
                 "vn": {
                     "name": "Vietnam",
@@ -2605,7 +2605,11 @@
                 "text1": "Set your own lending terms",
                 "text2": "Invest at the current market rate of 10.00% and find a match instantly, or increase your rate and wait for a matching order.",
                 "text3": "We’re giving you a trial investment of $1000. All you have to do is choose your rate, and we’ll find you a match. When the trial is up, we take the $1000 back, but the interest is yours to keep.",
+                "text4": "\n          <h5>You're almost done.</h5>\n          <p>For your security, we'll need you to verify your ID before using Constant.</p>\n        ",
                 "btn1": "Invest now",
+                "btnVerify": "Verify now",
+                "minRate": "Your minimum interest rate",
+                "maxTerm": "Maximum term",
                 "tooltip": {
                     "amount": "<p>How much do you want to lend?</p>",
                     "maxTerm": "<p>This is the maximum amount of time you want to lend your money out for. Unloaned portions are protected by the FDIC, and can be withdrawn at any time.</p>",

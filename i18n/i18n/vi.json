@@ -169,6 +169,7 @@
             "selectCountry": "Chọn quốc gia"
         },
         "about": "Giới thiệu",
+        "tech": "Tech",
         "pricing": "Bảng giá",
         "personal": "Cá nhân",
         "trader": "Giao dịch",
@@ -643,8 +644,13 @@
                 "0": "Mua",
                 "1": "Đổi",
                 "2": "Chuyển khoản",
+                "3": "Saving",
                 "4": "Lãi suất",
                 "5": "Phí",
+                "6": "Import",
+                "7": "Deposit",
+                "8": "Withdraw",
+                "9": "Risk",
                 "received": "Đã nhận"
             },
             "orderStatus": {
@@ -1577,6 +1583,8 @@
                 "startDateLabel": "Ngày bắt đầu",
                 "endDateLabel": "Ngày kết thúc",
                 "toolTipCollateral": "\nĐây là khoản thế chấp cần có để vay được {exchangeUnit}. Giá trị tài sản thế chấp được tính theo giá thị trường {exchangeRate}.        ",
+                "walletAddressLabel": "Your {symbol} wallet address",
+                "walletAlias": "0x687C906b2....8bd9369242e",
                 "moreInfo": "Bạn sẽ nhận được khoản vay ngay khi phần tài sản thế chấp được xác nhận trên chuỗi khối. Thời gian dự kiến: 2 phút cho ETH và 10 phút cho BTC."
             },
             "interestTable": {
@@ -1615,6 +1623,7 @@
             },
             "history": {
                 "itemTpl": "\n          <div name=\"loan-info-container\">\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Khoản vay:</span>\n              <span name=\"loan-info-value\">{loanAmount}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Lãi suất:</span>\n              <span name=\"loan-info-value\">{interestedRate}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Thế chấp:</span>\n              <span name=\"loan-info-value\">{collaterals}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Thời hạn:</span>\n              <span name=\"loan-info-value\">{term}</span>\n            </div>\n          </div>\n        ",
+                "address": "Address",
                 "renew": "Gia hạn",
                 "status": {
                     "pending": "đang chờ",
@@ -1649,7 +1658,8 @@
                 "payCollateral": "Trả bằng tài sản thế chấp"
             },
             "errorMessages": {
-                "required": "Yêu cầu"
+                "required": "Yêu cầu",
+                "inValidWalletAddress": "Your wallet address invalid"
             },
             "learnMore": "Tìm hiểu thêm"
         },
@@ -2191,13 +2201,13 @@
         "info": {
             "title": "CHUYỂN TIỀN",
             "desc1": "Tiện lợi.",
-            "desc2": "Tin cậy",
+            "desc2": "Tin cậy.",
             "desc3": "Phí chuyển tiền là 0.25%."
         },
         "what": {
             "whatCaption0": "0.25%",
             "whatCaption1": "Tiện lợi",
-            "whatCaption2": "Tin cậy",
+            "whatCaption2": "Tin cậy.",
             "whatCaption3": "Đội ngũ hỗ trợ",
             "whatDesc0": "<p>Chúng tôi chỉ thu phí rút tiền 0.25% giao dịch tại ngân hàng địa phương. Với giao dịch từ $14,000 trở lên, phí rút chỉ là $35!</p>",
             "whatDesc1": "<p>Bạn không cần phải mất thời gian xếp hàng hoặc chờ đến giờ hành chính để thực hiện chuyển tiền. Chỉ cần có kết nối internet, bạn có thể chuyển tiền đến người nhận ngay lập tức!</p>",
@@ -2475,16 +2485,127 @@
     },
     "ours": {
         "title": "Choose your own freedom.",
-        "content": "<h5>Financial freedom looks different for everyone. It’s having the money to do what you want to do. Or simply having enough to never have to worry. Freedom is being able to make your money work for you - so you don’t have to. Freedom is having money that allows you to travel, work and live - anywhere in the world - and thrive.</h5>\n    <h5>Today’s generations are thinking bigger, but financial systems are still landlocked and insular, characterized by exclusivity, operating behind closed doors. People are trapped in centralized systems designed to profit a select few. Money sits languishing in even the best bank accounts, steadily losing value as inflation rises. Loans are hard to access, and even more difficult to repay. It is easier to fly to some places than it is to send money there. Billions of global-thinking people are lack the means or opportunity to even begin thinking about financial freedom.</h5>\n    <h5>This is a platform that connects all those in pursuit of a richer, more open world. Welcome to Constant.</h5>",
+        "content": "\n    <h5>Financial freedom looks different for everyone. It’s having the money to do what you want to do. Or simply having enough to never have to worry. Freedom is being able to make your money work for you - so you don’t have to. Freedom is having money that allows you to travel, work and live - anywhere in the world - and thrive.</h5>\n    <h5>Today’s generations are thinking bigger, but financial systems are still landlocked and insular, characterized by exclusivity, operating behind closed doors. People are trapped in centralized systems designed to profit a select few. Money sits languishing in even the best bank accounts, steadily losing value as inflation rises. Loans are hard to access, and even more difficult to repay. It is easier to fly to some places than it is to send money there. Billions of global-thinking people are lack the means or opportunity to even begin thinking about financial freedom.</h5>\n    <h5>This is a platform that connects all those in pursuit of a richer, more open world. Welcome to Constant.</h5>\n    ",
         "team": {
             "title": "Được xây dựng bởi những công dân toàn cầu, cho những công dân toàn cầu.",
             "content": "Constant tự hào tập hợp được đội ngũ hơn 50 thành viên bao gồm những nhà khoa học, kĩ sư, nhà thiết kế, nhà kinh tế học, và những chuyên gia hàng đầu trong các lĩnh vực. Tất cả đều hướng đến mục tiêu xây dựng một công cụ đơn giản, tiện dụng để giải quyết những nhu cầu của công dân toàn cầu trong thời đại toàn cầu hoá.",
             "footer": "<a nice, friendly, human caption about each photo>"
+        },
+        "localOffices": {
+            "title": "Local Offices",
+            "offices": {
+                "us": {
+                    "name": "United States",
+                    "address1": "101 E Redlands Blvd",
+                    "address2": "Redlands CA 92373",
+                    "phone": "+1 844 201 7242"
+                },
+                "hk": {
+                    "name": "Hong Kong",
+                    "address1": "Flat A, 18/F, 88 Commercial Building",
+                    "address2": "28-34 Wing Lok Street, Sheung Wan",
+                    "phone": "+852 8191-5657"
+                },
+                "vn": {
+                    "name": "Vietnam",
+                    "address1": "139 Hong Ha Street",
+                    "address2": "Ho Chi Minh City",
+                    "phone": "+84 36 656 2949"
+                },
+                "eu": {
+                    "name": "Europe (Malta)",
+                    "address1": "Villa Malitah, Mediterranean Street",
+                    "address2": "The Village, St Julian’s STJ 1870",
+                    "phone": "+356 3550 5252"
+                }
+            }
+        },
+        "leaderships": {
+            "title": "Meet our team",
+            "leaders": {
+                "leader0": {
+                    "name": "Duy Huynh",
+                    "position": "Founder",
+                    "description": "<p>Duy spends most of his days studying the great economic thinkers of the last 100 years and turning their ideas into unstoppable lines of code. Prior to Constant, Duy was a software architect at IBM. He then founded Autonomous, putting AI and Robotics into 350,000 modern workspaces all over the world in less than 2 years.</p><p>At age 19, Duy was a PhD computer science researcher funded by NASA, the Semantic Web and Fujitsu. As a competitive programmer, he was an ACM ICPC World Finalist, USA Computing Olympiad winner, and Vietnam Computing Olympiad winner.</p>"
+                },
+                "leader1": {
+                    "name": "Bao Le",
+                    "position": "Constant Chain",
+                    "description": "<p>Bao leads development on the Constant Chain. He predominantly works on the infrastructure layer of Constant, integrating both on-chain and off-chain components such as the consensus protocol, privacy-preserving zero-knowledge proofs, and monetary policy algorithms. Prior to Constant, Bao built highly scalable systems for emerging markets, including Viettel Group, Vietnam's largest mobile network operator, where he scaled their products for 63M subscribers, and Central Group, Thailand's number 1 retail and service group business.</p><p>Bao leverages his deep knowledge of peer-to-peer applications, cryptography, game theory, and network applications to build highly scalable systems that quantify performance, availability, and extensibility in each line of code.</p>"
+                },
+                "leader2": {
+                    "name": "Thuc Nguyen",
+                    "position": "Cryptography",
+                    "description": "<p>Thuc is a leading expert in the field of applied cryptography, and works on privacy, post-quantum cryptography, randomness, and all things cryptography at Constant. His current focus is on preserving the anonymity and confidentiality of Constant transactions through zero-knowledge proofs.</p><p>Thuc is a professor of applied cryptography at the National University of Vietnam, where he co-founded the Department of Applied Cryptography and Computer Security. He  co-leads the Decentralized Cryptography Research Group, designing innovative cryptographic tools and developing privacy-preserving cryptosystems that simultaneously achieve post-quantum security and practicality. He also leads key projects on security and cryptography for the Vietnamese government.</p>"
+                },
+                "leader3": {
+                    "name": "Zon Chu",
+                    "position": "Applications",
+                    "description": "<p>Zon leads application development. Prior to Constant, he spent 11 years as a full stack developer, project manager, and technical director for various e-commerce and social network companies in Vietnam and the USA. His e-commerce app for Nguyen Kim, one of the top regional retailers in the Asia-Pacific region, hit 4 million users in 2 years.</p><p>Zon has experience building for large, complex systems. He was a technical director at Viettel Group, where he designed software to manage its 50,000 employees and provide telecommunications services to 63 million subscribers across Asia, Africa and the Americas.</p>"
+                },
+                "leader4": {
+                    "name": "Ha Tran",
+                    "position": "Financial Advisor. VP, Goldman Sachs",
+                    "description": "<p>Ha Tran, CFA, has been in the forefront of Technology and Finance over the last 15 years, holding positions in electronic trading and risk management at Goldman Sachs.  He led several innovative efforts to overhaul old ways of doing finance, including Automation, Simulation and Machine Learning.  Mr. Tran is currently working on a project to bring structured and complex financial products a step closer to the general public.</p>"
+                },
+                "leader5": {
+                    "name": "Trong Dinh",
+                    "position": "Smart Contract",
+                    "description": "<p>Trong leads smart contract development at Constant, the heart of the stability mechanism. He automates the dialogue between Constant and its partner custodian, which distributes and protects user funds across multiple FDIC-insured banks, protecting users from fraud, downtime and third-party interference. He spends his days implementing new layers of security and adapting the Constant application layer for use on other major blockchains.</p><p>Trong started to build for the blockchain after more than a decade of developing apps for web and mobile.  His first dApp got people to put promises on the blockchain, by helping them think of smart contracts as simple everyday agreements. He was also the CTO of Ninja, one of the top prediction exchanges built on Ethereum.</p>"
+                },
+                "leader6": {
+                    "name": "Ning Tan",
+                    "position": "Communications",
+                    "description": "<p>Ning facilitates the conversation between product, user and community. Prior to Constant, Ning was the Director of Communications at Autonomous, where she loved helping people in over 60 countries find ways to work smarter.</p><p>Ning specializes in easing the adoption of disruptive tech. She has created voices for friendly IoT products, eager robots, decentralized applications, and a very clever brain from the US military. As a postgraduate at the University of Oxford, she examined how humans navigate traumatic periods in history and respond through storytelling, philosophy and innovation.</p>"
+                },
+                "leader7": {
+                    "name": "Gaël Vo",
+                    "position": "Product Operations",
+                    "description": "<p>Gaël manages financial products at Constant, including remittance, loans, payroll and invoicing. Previously at BNP Paribas, he created a new framework to replace and centralize complex applications, enabling users and other developers to control the system independently.</p><p>Gaël holds a dual master’s degree in computer science and telecommunications from Institut National des Sciences Appliquées de Lyon, and an MBA in finance from Simon Business School in New York. As an MBA intern at Five Star Bank, Gaël developed an automation layer within loan management that cut processing time by 83%.</p>"
+                },
+                "leader8": {
+                    "name": "Tien Nguyen",
+                    "position": "Technical Advisor. Engineering manager, Essential",
+                    "description": "<p>Tien has built some of this decade’s most important products.  He built mobile payments for emerging markets at Google and payment hardware and software solutions for SMB businesses at Square.  Tien also built the Android app at Uber.  He is currently leading app development at Essential.</p>"
+                },
+                "leader9": {
+                    "name": "Bill Pelletier",
+                    "position": "Partnerships",
+                    "description": "<p>Bill leads outreach aimed at integrating Constant as a payment method for major e-commerce retailers.  Prior to Constant, Bill worked closely with some of the world’s biggest e-commerce retailers, including Amazon, Overstock, Target, Wayfair and Home Depot.  Before that, he developed the investment portfolio of major banks as a private banker, and has also advised multiple high profile clients on mergers & acquisition, trust & estates, and provided litigation support.</p>"
+                },
+                "leader10": {
+                    "name": "Dung Tran",
+                    "position": "Scalability",
+                    "description": "<p>Dung works on the consensus & scalability algorithms at Constant. His current focus is on increasing transaction throughput while preserving consensus properties. Dung has extensive research and practical experience in distributed systems, computer networks, and game theory, making him the perfect candidate for designing and implementing consensus and scalability mechanisms at Constant.</p><p>Dung also lectures at the National University of Vietnam. As well as teaching courses on distributed systems, Dung has published several papers on bandwidth measurement and estimation, and is the author of two textbooks, Operation Systems and Computer Networks.  He holds a PhD in computer science from the University of Texas.</p>"
+                },
+                "leader11": {
+                    "name": "Justin Lucas",
+                    "position": "Community",
+                    "description": "<p>Justin leads Constant adoption. Throughout his time living and working in the UK, Hawaii, Japan and the USA, he has worn many hats - from sales to security, customer service to business development, and more. He has worked with early stage start ups as well as giants like Microsoft and Delivery.com, growing dynamic and engaged communities by simply taking a personal approach to resolving conflict, fixing inefficiencies and addressing user pain points with empathy.</p>"
+                }
+            }
+        },
+        "exchangePartners": {
+            "title": "Exchange Partners",
+            "exchanges": {}
+        },
+        "lawyers": {
+            "title": "Legal"
+        },
+        "accountants": {
+            "title": "Accounting"
         }
     },
     "home1": {
         "lendingSection": {
+            "intro": {
+                "content": "\n          <h5>Invest the way you want</h5>\n          <br />\n          <span>\n            <h2>Set your own rates.</h2>\n            <h2>No fees.</h2>\n            <h2>No minimum capital.</h2>\n            <h2>Withdraw anytime.</h2>\n          </span>\n          <br />\n          <h5>\n          Lend your assets at rates you choose, to borrowers with 150% in collateral. Your funds are protected by smart contracts and can be withdrawn at any time.\n          </h5>\n        "
+            },
             "form": {
+                "text1": "Set your own lending terms",
+                "text2": "Invest at the current market rate of 10.00% and find a match instantly, or increase your rate and wait for a matching order.",
+                "text3": "We’re giving you a trial investment of $1000. All you have to do is choose your rate, and we’ll find you a match. When the trial is up, we take the $1000 back, but the interest is yours to keep.",
+                "btn1": "Invest now",
                 "tooltip": {
                     "amount": "<p>How much do you want to lend?</p>",
                     "maxTerm": "<p>This is the maximum amount of time you want to lend your money out for. Unloaned portions are protected by the FDIC, and can be withdrawn at any time.</p>",
@@ -2494,8 +2615,12 @@
                     "amount": "How much do you want to lend?"
                 }
             },
+            "alert": {
+                "success": "Success"
+            },
             "confirm": {
-                "thankYou": "Thanks for growing your money with Constant.",
+                "thankYou1": "Almost there.",
+                "thankMsg": "Simply wire {amount} to the Constant Trust to make a deposit.",
                 "bankName": "Bank name",
                 "accountName": "Account name",
                 "accountNumber": "Account number",
@@ -2510,8 +2635,40 @@
                 "confirmMessage": "Please make payment and click \"Confirm payment\"",
                 "confirmButton": "Confirm payment",
                 "minRate": "Min rate",
-                "maxTerm": "Max term"
+                "maxTerm": "Max term",
+                "btnConfirm": "Confirm",
+                "btnBack": "Back"
             }
+        },
+        "whatCaption0": "Set your own rates",
+        "whatCaption1": "Insured up to $130M while waiting for a match",
+        "whatCaption2": "Protected by Ethereum smart contracts while on loan",
+        "whatCaption3": "Only invest in secured loans",
+        "whatDesc0": "\n      <p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.</p>\n      <br />\n      <p>You decide your rates. No hidden fees.</p>\n      <br />\n      <a href=\"https://www.myconstant.com/crypto-loan\" target=\"_blank\">How money is loaned out</a>\n    ",
+        "whatDesc1": "\n      <p>Funds that have not yet been loaned out are kept safe at multiple FDIC-insured bank accounts with an aggregated insurance of $130M.</p>\n      <br />\n      <p>You can withdraw anytime.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/meet-scott-purcell-ceo-of-prime-trust-ae7581835030\" target=\"_blank\">How we deliver FDIC insurance</a>\n    ",
+        "whatDesc2": "\n      <p>When your money is on loan, it is no longer FDIC insured, but protected by a smart contract that runs exactly as programmed - without the need for human involvement.</p>\n      <br />\n      <p>Together, FDIC insurance and smart contract security, keep your money independently safe.</p>\n      <br />\n      <a href=\"https://www.google.com/url?q=https://github.com/constant-money&sa=D&ust=1555493848999000&usg=AFQjCNEEEN4_WzaIB05aPU2kpKQi_PbKOw\" target=\"_blank\">View our code</a>\n    ",
+        "whatDesc3": "\n      <p>We strictly require every loan to be 150% backed by collateral. For someone to borrow $10,000, they have to put up $15,000 in collateral value.</p>\n      <br />\n      <p>So if borrowers default, you don’t lose a cent.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/how-do-constant-crypto-loans-work-b22b66b5b687\" target=\"_blank\">How we protect investor funds</a>\n    ",
+        "howItWorks": {
+            "mainTitle": "How it works",
+            "mainDesc": "\n        <h5>We match investors with borrowers glad to pay their rates, and facilitate the entire transaction from beginning to end.</h5>\n      ",
+            "step1": "Step 1",
+            "title1": "Investors",
+            "desc1": "Enter the amount you want to lend, and the interest rate you want to charge.",
+            "step2": "Step 2",
+            "title2": "Constant",
+            "desc2": "The algorithm matches investors with borrowers that fit their criteria, and makes the transaction happen seamlessly.",
+            "step3": "Step 3",
+            "title3": "Borrowers",
+            "desc3": "Enter the amount you want to borrow, and the interest rate you are willing to pay."
+        },
+        "checklist": {
+            "title": "Why you should invest with Constant.",
+            "desc": "We’ve done our homework."
+        },
+        "whatwedo": {
+            "title": "How we work",
+            "cap": "We’re building a fairer, freer, financial system.",
+            "desc": "\n        <h5>Financial freedom looks different for everyone. It’s having the money to do what you want to do. Or simply having enough to never have to worry. Freedom is being able to make your money work for you - so you don’t have to. Freedom is having money that allows you to travel, work and live - anywhere in the world - and thrive.</h5>\n        <br />\n        <h5>Today’s generations are thinking bigger, but financial systems are still landlocked and insular, characterized by exclusivity, operating behind closed doors. People are trapped in centralized systems designed to profit a select few. Money sits languishing in even the best bank accounts, steadily losing value as inflation rises. Loans are hard to access, and even more difficult to repay. It is easier to fly to some places than it is to send money there. Billions of global-thinking people are lack the means or opportunity to even begin thinking about financial freedom.</h5>\n        <br />\n        <h5>This is a platform that connects all those in pursuit of a richer, more open world. Welcome to Constant.</h5>\n      "
         }
     }
 }

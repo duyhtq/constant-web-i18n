@@ -2476,7 +2476,7 @@
         }
     },
     "support": {
-        "text": "Can we help? Call us at  {phone}.",
+        "text": "Available 24/7 at {phone}.",
         "phone": {
             "vn": "1-844-201-7242",
             "us": "+1 844 201 7242",

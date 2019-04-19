@@ -346,7 +346,7 @@
             "lTaxCountry": "Country listed on your ID",
             "plTaxCountry": "Select your country",
             "lPhone": "Phone Number",
-            "lSSN": "Social Security Number/ Tax ID",
+            "lSSN": "Social Security Number",
             "lIDNumber": "ID Number",
             "lDocType": "Type of ID",
             "plDocType": "Select your ID type",
@@ -899,7 +899,7 @@
                 "endTerm": "Term ends:",
                 "trial": "TRIAL",
                 "trial_description": "You keep the interest. Term has ended",
-                "saving_title": "Fixed Deposits",
+                "saving_title": "Investments",
                 "anyTime_saving": "Balance",
                 "input2FA": "Input 2FA",
                 "cancel": "Withdraw",
@@ -940,7 +940,7 @@
                 "dialog": {
                     "withdrawAccount": {
                         "title": "Saving",
-                        "body": "Want to earn interest on your interest? Start a savings plan to earn up to 4.00% APY.",
+                        "body": "Want to get more out of your money? Try our investment plans and choose your own interest rate.",
                         "termTitle": "{month} month{termType} ({percent}% APY)",
                         "percentReceive": "You will earn {percent}% APR.",
                         "confirm": "Ok",
@@ -2405,12 +2405,12 @@
             "invest": {
                 "title": "Grow your money",
                 "desc1": {
-                    "title": "6% APY.",
-                    "desc": "Earn 60x the national average. Don’t sit on your money, put it to work."
+                    "title": "Your own APY.",
+                    "desc": "Earn 10% APY or more - it's your choice. Don’t sit on your money, put it to work."
                 },
                 "desc2": {
-                    "title": "Daily compound interest.",
-                    "desc": "Your interest earnings are calculated daily, and compounded, so you’re earning interest on top of interest."
+                    "title": "FDIC and smart contract protected.",
+                    "desc": "When your money is on loan, it is protected by unstoppable Ethereum smart contracts. When it isn't, it is kept safe in multiple FDIC-insured bank accounts, with total coverage of $130M. "
                 },
                 "desc3": {
                     "title": "Secure your returns with secured loans.",
@@ -2648,10 +2648,10 @@
         "whatCaption1": "Insured up to $130M while waiting for a match",
         "whatCaption2": "Protected by Ethereum smart contracts while on loan",
         "whatCaption3": "Collateral backed loans",
-        "whatDesc0": "\n      <p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.</p>\n      <br />\n      <p>You decide your rates. No hidden fees.</p>\n      <br />\n      <a href=\"https://www.myconstant.com/crypto-loan\" target=\"_blank\">How money is loaned out</a>\n    ",
-        "whatDesc1": "\n      <p>Funds that have not yet been loaned out are kept safe at multiple FDIC-insured bank accounts with an aggregated insurance of $130M.</p>\n      <br />\n      <p>You can withdraw anytime.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/meet-scott-purcell-ceo-of-prime-trust-ae7581835030\" target=\"_blank\">How we deliver FDIC insurance</a>\n    ",
-        "whatDesc2": "\n      <p>When your money is on loan, it is no longer FDIC insured, but protected by a smart contract that runs exactly as programmed - without the need for human involvement.</p>\n      <br />\n      <p>Together, FDIC insurance and smart contract security, keep your money independently safe.</p>\n      <br />\n      <a href=\"https://www.google.com/url?q=https://github.com/constant-money&sa=D&ust=1555493848999000&usg=AFQjCNEEEN4_WzaIB05aPU2kpKQi_PbKOw\" target=\"_blank\">View our code</a>\n    ",
-        "whatDesc3": "\n      <p>If borrowers default or their collateral falls in value, you don’t lose a cent.</p>\n      <br />\n      <p>How? We strictly require every loan to be 150% backed by collateral. </p>\n      <br />\n   <p>If their collateral falls in value, it is automatically liquidated at 70%, so lenders always get their money back.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/how-do-constant-crypto-loans-work-b22b66b5b687\" target=\"_blank\">How we protect investor funds</a>",
+        "whatDesc0": "\n      <p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.</p>\n      <br />\n      <p>You decide your rates. No hidden fees.</p>\n      <br />\n      <a href=\"https://www.myconstant.com/crypto-loan\" target=\"_blank\">How money is loaned out ></a>\n    ",
+        "whatDesc1": "\n      <p>Funds that have not yet been loaned out are kept safe at multiple FDIC-insured bank accounts with an aggregated insurance of $130M.</p>\n      <br />\n      <p>You can withdraw anytime.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/meet-scott-purcell-ceo-of-prime-trust-ae7581835030\" target=\"_blank\">How we deliver FDIC insurance ></a>\n    ",
+        "whatDesc2": "\n      <p>When your money is on loan, it is no longer FDIC insured, but protected by a smart contract that runs exactly as programmed - without the need for human involvement.</p>\n      <br />\n      <p>Together, FDIC insurance and smart contract security, keep your money independently safe.</p>\n      <br />\n      <a href=\"https://github.com/constant-money\" target=\"_blank\">View our code ></a>\n    ",
+        "whatDesc3": "\n      <p>If borrowers default or their collateral falls in value, you don’t lose a cent.</p>\n      <br />\n      <p>How? We strictly require every loan to be 150% backed by collateral. </p>\n      <br />\n   <p>If their collateral falls in value, it is automatically liquidated at 70%, so lenders always get their money back.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/how-do-constant-crypto-loans-work-b22b66b5b687\" target=\"_blank\">How we protect investor funds ></a>",
         "howItWorks": {
             "mainTitle": "How it works",
             "mainDesc": "<h5>The Constant algorithm matches investors with borrowers glad to pay their rates. It  then secures investor funds and borrower collateral in an unstoppable smart contract, and facilitates the entire transaction from beginning to end. </h5>\n",
@@ -2672,7 +2672,7 @@
         "whatwedo": {
             "title": "How we work",
             "cap": "We’re building a fairer, freer, financial system.",
-            "desc": "\n        <h5>Financial freedom looks different for everyone. It’s having the money to do what you want to do. Or simply having enough to never have to worry. Freedom is being able to make your money work for you - so you don’t have to. Freedom is having money that allows you to travel, work and live - anywhere in the world - and thrive.</h5>\n        <br />\n        <h5>Today’s generations are thinking bigger, but financial systems are still landlocked and insular, characterized by exclusivity, operating behind closed doors. People are trapped in centralized systems designed to profit a select few. Money sits languishing in even the best bank accounts, steadily losing value as inflation rises. Loans are hard to access, and even more difficult to repay. It is easier to fly to some places than it is to send money there. Billions of global-thinking people are lack the means or opportunity to even begin thinking about financial freedom.</h5>\n        <br />\n        <h5>This is a platform that connects all those in pursuit of a richer, more open world. Welcome to Constant.</h5>\n      "
+            "desc": "\n        <p>Financial freedom looks different for everyone. It’s having the money to do what you want to do. Or simply having enough to never have to worry. Freedom is being able to make your money work for you - so you don’t have to. Freedom is having money that allows you to travel, work and live - anywhere in the world - and thrive.</p>\n        <br />\n        <p>This is a platform that connects all those in pursuit of a richer, more open world. Welcome to Constant.</p>"
         }
     }
 }

@@ -2133,7 +2133,7 @@
             "amountToWithdraw": "Rút tiền: {amount}{currency}",
             "fee": "Phí rút tiền: {fee}{currency}",
             "fiatAmountResultLabel": "Theo tỉ giá thị trường hôm nay, bạn sẽ nhận được: {fiatAmount}{fiatCurrency}",
-            "explain": "*Tính cả phí chuyển tiền, bạn có thể gửi tối đa {amountExcludeFee}{currency}."
+            "explain": "*Tính cả phí chuyển tiền, bạn có thể gửi tối đa {amountExcludeFee} {currency}."
         },
         "currencyDropdownLabel": "Đơn vị tiền tệ",
         "sellBtn": "Gửi tiền",
@@ -2221,7 +2221,7 @@
             "step2": "Bước 2",
             "title2": "Gửi tiền",
             "desc2": "Chuyển tiền vào Quỹ Constant (được bảo hiểm bởi FDIC)\n",
-            "step3": "Step 3",
+            "step3": "Bước 3",
             "title3": "Chuyển tiền",
             "desc3": "Chọn số tiền bạn muốn chuyển và thông tin ngân hàng người nhận. Đó là tất cả những gì bạn cần làm để chuyển tiền\n"
         }
@@ -2599,7 +2599,7 @@
     "home1": {
         "lendingSection": {
             "intro": {
-                "content": "\n<h5>Đầu tư theo cách của bạn</h5>\n          <br />\n          <span>\n            <h2>Tự đặt mức lãi suất.</h2>\n            <h2>Hoàn toàn miễn phí.</h2>\n            <h2>Không yêu cầu số vốn tối thiểu.</h2>\n            <h2>Rút tiền bất cứ lúc nào.</h2>\n          </span>\n          <br />\n          <h5>\n          Đầu tư với mức lãi suất mà bạn mong muốn. Được đảm bảo bằng tài sản thế chấp có giá trị hơn. Ứng dụng hợp đồng thông minh. Có thể rút tiền bất cứ lúc nào.\n          </h5>        "
+                "content": "\n<h5> Hãy đầu tư theo cách của bạn</h5>\n          <br />\n          <span>\n            <h2>Trên nền tảng đầu tư ngang hàng đầu tiên trên thế giới.</h2>\n          </span>\n          <br />\n          <h5>\n          Tự đặt mức lãi suất. Được đảm bảo bằng tài sản thế chấp có giá trị hơn. Ứng dụng hợp đồng thông minh. Không yêu cầu số vốn tối thiểu. Có thể rút tiền bất cứ lúc nào.\n          </h5>        "
             },
             "form": {
                 "text1": "Chọn kì hạn đầu tư",

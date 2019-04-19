@@ -2476,7 +2476,7 @@
         }
     },
     "support": {
-        "text": "Can we help? Call us at {phone}. We’re available 24/7.",
+        "text": "Can we help? Call us at  {phone}.",
         "phone": {
             "vn": "1-844-201-7242",
             "us": "+1 844 201 7242",
@@ -2599,12 +2599,12 @@
     "home1": {
         "lendingSection": {
             "intro": {
-                "content": "\n          <h5>Invest the way you want</h5>\n          <br />\n          <span>\n            <h2>Set your own rates.</h2>\n            <h2>No fees.</h2>\n            <h2>No minimum capital.</h2>\n            <h2>Withdraw anytime.</h2>\n          </span>\n          <br />\n          <h5>\n          Lend your assets at rates you choose, to borrowers with 150% in collateral. Your funds are protected by smart contracts and can be withdrawn at any time.\n          </h5>\n        "
+                "content": "\n          <h5>Invest the way you want</h5>\n          <br />\n          <span>\n            <h2>The world’s first fully secured peer-to-peer lending platform.</h2>\n          </span>\n          <br />\n          <h5>\n          Set your own terms. Backed by a combination of collaterals, smart contracts and FDIC insurance. No minimum capital. Withdraw anytime.\n          </h5>\n        "
             },
             "form": {
                 "text1": "Set your own lending terms",
                 "text2": "Want to get a borrower instantly?\n\nInvest at the current market rate of 10%. Or increase your rate and wait for a matching order.\n",
-                "text3": "We’re giving you a trial investment of $1000. All you have to do is choose your rate, and we’ll find you a match. When the trial is up, we take the $1000 back, but the interest is yours to keep.",
+                "text3": "We’re giving you a trial investment of $1000. When the trial is up, we take the $1000 back, but the interest is yours to keep.",
                 "text4": "\n          <h5>You're almost done.</h5>\n          <p>For your security, we'll need you to verify your ID before using Constant.</p>\n        ",
                 "btn1": "Invest now",
                 "btnVerify": "Verify now",

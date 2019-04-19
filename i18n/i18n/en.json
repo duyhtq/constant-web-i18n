@@ -115,6 +115,10 @@
             "vn": {
                 "title": "Viet Nam: ",
                 "phone": "+84 36 656 2949"
+            },
+            "malta": {
+                "title": "Malta: ",
+                "phone": "+356 3550 5252"
             }
         },
         "social": {
@@ -303,6 +307,7 @@
             "sellOrders": "Sell Orders",
             "buyOrders": "Buy Orders",
             "bookingOrders": "Sale Orders",
+            "termOrders": "Term Orders",
             "myOrders": "Deposits and withdrawals",
             "localHistory": "Transfers and interest earnings",
             "wallets": "My Wallets",
@@ -396,6 +401,34 @@
                     "Approve": "Confirm you’ve sent the money for order #{ID}",
                     "Finish": "Send Constant for order #{ID}"
                 }
+            },
+            "noData": "No sell order available"
+        },
+        "termOrder": {
+            "title": "Term Order Available",
+            "userAndDate": "User/Date",
+            "date": "Date",
+            "termAndRate": "Term/Rate",
+            "amount": "Amount",
+            "confirm": "Confirm",
+            "confirmMess": "Are you sure you want to confirm this order?",
+            "reject": "Reject",
+            "rejectMess": "Are you sure you want to reject this order?",
+            "loadMore": "Load more",
+            "status": {
+                "status": "Status",
+                "transferred": "Transferred",
+                "transferred_fiat": "Transferred Fiat",
+                "picked": "Picked",
+                "pending": "Pending",
+                "cancelled": "Cancelled",
+                "system_cancelled": "System Cancelled",
+                "system_rejected": "System Rejected"
+            },
+            "acceptFailed": {
+                "": "Picked booking order is failing, please try again, or contact my admin for help. \n Thanks! ",
+                "processing_order_exists": "There is processing order need to complete",
+                "validation_error": "Can not accept this order."
             },
             "noData": "No sell order available"
         },
@@ -781,6 +814,7 @@
             "bankNameHolder": "Enter Bank Name",
             "bankAccountNameHolder": "Enter Bank Account Name",
             "bankAccountNumberHolder": "Enter Bank Account Number",
+            "input2FA": "Please, enter your OTP",
             "alert": {
                 "success": "Update successful!",
                 "failed": "Update unsuccessful. Please try again.",
@@ -1616,7 +1650,7 @@
             "reference": "\n        <div name=\"ref-container\">\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Interested rate:</span>\n            <span name=\"ref-value\">{intRate}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Collateral value:</span>\n            <span name=\"ref-value\">{colValue}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Collateral return:</span>\n            <span name=\"ref-value\">{colReturn}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Default threshold:</span>\n            <span name=\"ref-value\">{defThreshold}</span>\n          </div>\n        </div>\n      ",
             "transaction": {
                 "transactionID": "transaction ID",
-                "noticeTpl": "Please send <strong>{collateralAmount} {collateralSymbol}</strong> as collateral to the following address within the next <strong>30 minutes</strong>.",
+                "noticeTpl": "Please send <strong>{collateralAmount} {collateralSymbol}</strong> as collateral to the following address within the next <strong>60 minutes</strong>.",
                 "summarizeTitle": "Here are the loan terms:",
                 "copiedAddress": "Address is copied to clipboard",
                 "summarizeContent": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Loan amount:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Interested rate:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Collaterals:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Term:</span>\n              <span name=\"ref-value\">{term}</span>\n            </div>\n          </div>\n        "
@@ -1624,6 +1658,7 @@
             "history": {
                 "itemTpl": "\n          <div name=\"loan-info-container\">\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Loan amount:</span>\n              <span name=\"loan-info-value\">{loanAmount}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Interest rate:</span>\n              <span name=\"loan-info-value\">{interestedRate}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Collaterals:</span>\n              <span name=\"loan-info-value\">{collaterals}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Term:</span>\n              <span name=\"loan-info-value\">{term}</span>\n            </div>\n          </div>\n        ",
                 "address": "Address",
+                "collateralAddress": "Collateral Address",
                 "renew": "Renew",
                 "status": {
                     "pending": "pending",
@@ -1659,6 +1694,7 @@
             },
             "errorMessages": {
                 "required": "Required",
+                "minimumBorrowAmount": "The minimum amount that you can borrow is {amount} {symbol}",
                 "inValidWalletAddress": "Your wallet address invalid"
             },
             "learnMore": "Learn more"
@@ -2202,7 +2238,8 @@
             "title": "SEND MONEY",
             "desc1": "Conveninent.",
             "desc2": "Reliable.",
-            "desc3": "Just 0.25% to receive."
+            "desc3": "Just 0.25% to receive.",
+            "desc4": "\n        <h5>All you need is an internet connection to make as many transfers as you like - any amount, anywhere in the world. Send money home, pay your international clients, transfer salaries to your distributed team. With a single click</h5>\n      "
         },
         "what": {
             "whatCaption0": "0.25%",
@@ -2489,7 +2526,23 @@
         "team": {
             "title": "Built for global citizens, by global citizens.",
             "content": "We’re proud of our extraordinary team of more than 50 scientists, engineers, designers, writers, economists, and customer experience specialists from all over the world — fully devoted to our mission of building simple, elegant, useful tools to suit the needs of our global village.",
-            "footer": "<a nice, friendly, human caption about each photo>"
+            "footer": "<a nice, friendly, human caption about each photo>",
+            "captions": {
+                "0": {
+                    "caption": "Trong, our technical lead, writing the Constant {link}",
+                    "linkCaption": "smart contract",
+                    "link": "https://medium.com/@constantbanking/meet-trong-the-man-putting-the-smart-in-smart-contract-b4345a31726c"
+                },
+                "1": {
+                    "caption": "Hello from all of us",
+                    "link": " "
+                },
+                "2": {
+                    "caption": "Chatting stablecoins and the future of banking - the team at {link}",
+                    "linkCaption": "CES 2019",
+                    "link": "https://medium.com/@constantbanking/constant-shines-at-ces-2019-c6d206bf4d91"
+                }
+            }
         },
         "localOffices": {
             "title": "Local Offices",
@@ -2523,65 +2576,65 @@
         "leaderships": {
             "title": "Meet our team",
             "leaders": {
-                "leader0": {
+                "duyHuynh": {
                     "name": "Duy Huynh",
                     "position": "Founder",
                     "description": "<p>Duy spends most of his days studying the great economic thinkers of the last 100 years and turning their ideas into unstoppable lines of code. Prior to Constant, Duy was a software architect at IBM. He then founded Autonomous, putting AI and Robotics into 350,000 modern workspaces all over the world in less than 2 years.</p><p>At age 19, Duy was a PhD computer science researcher funded by NASA, the Semantic Web and Fujitsu. As a competitive programmer, he was an ACM ICPC World Finalist, USA Computing Olympiad winner, and Vietnam Computing Olympiad winner.</p>"
                 },
-                "leader1": {
-                    "name": "Bao Le",
-                    "position": "Constant Chain",
-                    "description": "<p>Bao leads development on the Constant Chain. He predominantly works on the infrastructure layer of Constant, integrating both on-chain and off-chain components such as the consensus protocol, privacy-preserving zero-knowledge proofs, and monetary policy algorithms. Prior to Constant, Bao built highly scalable systems for emerging markets, including Viettel Group, Vietnam's largest mobile network operator, where he scaled their products for 63M subscribers, and Central Group, Thailand's number 1 retail and service group business.</p><p>Bao leverages his deep knowledge of peer-to-peer applications, cryptography, game theory, and network applications to build highly scalable systems that quantify performance, availability, and extensibility in each line of code.</p>"
-                },
-                "leader2": {
+                "thucNguyen": {
                     "name": "Thuc Nguyen",
                     "position": "Cryptography",
                     "description": "<p>Thuc is a leading expert in the field of applied cryptography, and works on privacy, post-quantum cryptography, randomness, and all things cryptography at Constant. His current focus is on preserving the anonymity and confidentiality of Constant transactions through zero-knowledge proofs.</p><p>Thuc is a professor of applied cryptography at the National University of Vietnam, where he co-founded the Department of Applied Cryptography and Computer Security. He  co-leads the Decentralized Cryptography Research Group, designing innovative cryptographic tools and developing privacy-preserving cryptosystems that simultaneously achieve post-quantum security and practicality. He also leads key projects on security and cryptography for the Vietnamese government.</p>"
                 },
-                "leader3": {
-                    "name": "Zon Chu",
-                    "position": "Applications",
-                    "description": "<p>Zon leads application development. Prior to Constant, he spent 11 years as a full stack developer, project manager, and technical director for various e-commerce and social network companies in Vietnam and the USA. His e-commerce app for Nguyen Kim, one of the top regional retailers in the Asia-Pacific region, hit 4 million users in 2 years.</p><p>Zon has experience building for large, complex systems. He was a technical director at Viettel Group, where he designed software to manage its 50,000 employees and provide telecommunications services to 63 million subscribers across Asia, Africa and the Americas.</p>"
-                },
-                "leader4": {
+                "haTran": {
                     "name": "Ha Tran",
                     "position": "Financial Advisor. VP, Goldman Sachs",
                     "description": "<p>Ha Tran, CFA, has been in the forefront of Technology and Finance over the last 15 years, holding positions in electronic trading and risk management at Goldman Sachs.  He led several innovative efforts to overhaul old ways of doing finance, including Automation, Simulation and Machine Learning.  Mr. Tran is currently working on a project to bring structured and complex financial products a step closer to the general public.</p>"
                 },
-                "leader5": {
-                    "name": "Trong Dinh",
-                    "position": "Smart Contract",
-                    "description": "<p>Trong leads smart contract development at Constant, the heart of the stability mechanism. He automates the dialogue between Constant and its partner custodian, which distributes and protects user funds across multiple FDIC-insured banks, protecting users from fraud, downtime and third-party interference. He spends his days implementing new layers of security and adapting the Constant application layer for use on other major blockchains.</p><p>Trong started to build for the blockchain after more than a decade of developing apps for web and mobile.  His first dApp got people to put promises on the blockchain, by helping them think of smart contracts as simple everyday agreements. He was also the CTO of Ninja, one of the top prediction exchanges built on Ethereum.</p>"
-                },
-                "leader6": {
-                    "name": "Ning Tan",
-                    "position": "Communications",
-                    "description": "<p>Ning facilitates the conversation between product, user and community. Prior to Constant, Ning was the Director of Communications at Autonomous, where she loved helping people in over 60 countries find ways to work smarter.</p><p>Ning specializes in easing the adoption of disruptive tech. She has created voices for friendly IoT products, eager robots, decentralized applications, and a very clever brain from the US military. As a postgraduate at the University of Oxford, she examined how humans navigate traumatic periods in history and respond through storytelling, philosophy and innovation.</p>"
-                },
-                "leader7": {
-                    "name": "Gaël Vo",
-                    "position": "Product Operations",
-                    "description": "<p>Gaël manages financial products at Constant, including remittance, loans, payroll and invoicing. Previously at BNP Paribas, he created a new framework to replace and centralize complex applications, enabling users and other developers to control the system independently.</p><p>Gaël holds a dual master’s degree in computer science and telecommunications from Institut National des Sciences Appliquées de Lyon, and an MBA in finance from Simon Business School in New York. As an MBA intern at Five Star Bank, Gaël developed an automation layer within loan management that cut processing time by 83%.</p>"
-                },
-                "leader8": {
-                    "name": "Tien Nguyen",
-                    "position": "Technical Advisor. Engineering manager, Essential",
-                    "description": "<p>Tien has built some of this decade’s most important products.  He built mobile payments for emerging markets at Google and payment hardware and software solutions for SMB businesses at Square.  Tien also built the Android app at Uber.  He is currently leading app development at Essential.</p>"
-                },
-                "leader9": {
+                "billPelletier": {
                     "name": "Bill Pelletier",
                     "position": "Partnerships",
                     "description": "<p>Bill leads outreach aimed at integrating Constant as a payment method for major e-commerce retailers.  Prior to Constant, Bill worked closely with some of the world’s biggest e-commerce retailers, including Amazon, Overstock, Target, Wayfair and Home Depot.  Before that, he developed the investment portfolio of major banks as a private banker, and has also advised multiple high profile clients on mergers & acquisition, trust & estates, and provided litigation support.</p>"
                 },
-                "leader10": {
-                    "name": "Dung Tran",
-                    "position": "Scalability",
-                    "description": "<p>Dung works on the consensus & scalability algorithms at Constant. His current focus is on increasing transaction throughput while preserving consensus properties. Dung has extensive research and practical experience in distributed systems, computer networks, and game theory, making him the perfect candidate for designing and implementing consensus and scalability mechanisms at Constant.</p><p>Dung also lectures at the National University of Vietnam. As well as teaching courses on distributed systems, Dung has published several papers on bandwidth measurement and estimation, and is the author of two textbooks, Operation Systems and Computer Networks.  He holds a PhD in computer science from the University of Texas.</p>"
+                "ningTan": {
+                    "name": "Ning Tan",
+                    "position": "Communications",
+                    "description": "<p>Ning facilitates the conversation between product, user and community. Prior to Constant, Ning was the Director of Communications at Autonomous, where she loved helping people in over 60 countries find ways to work smarter.</p><p>Ning specializes in easing the adoption of disruptive tech. She has created voices for friendly IoT products, eager robots, decentralized applications, and a very clever brain from the US military. As a postgraduate at the University of Oxford, she examined how humans navigate traumatic periods in history and respond through storytelling, philosophy and innovation.</p>"
                 },
-                "leader11": {
+                "tienNguyen": {
+                    "name": "Tien Nguyen",
+                    "position": "Technical Advisor. Engineering manager, Essential",
+                    "description": "<p>Tien has built some of this decade’s most important products.  He built mobile payments for emerging markets at Google and payment hardware and software solutions for SMB businesses at Square.  Tien also built the Android app at Uber.  He is currently leading app development at Essential.</p>"
+                },
+                "gaelVo": {
+                    "name": "Gaël Vo",
+                    "position": "Product Operations",
+                    "description": "<p>Gaël manages financial products at Constant, including remittance, loans, payroll and invoicing. Previously at BNP Paribas, he created a new framework to replace and centralize complex applications, enabling users and other developers to control the system independently.</p><p>Gaël holds a dual master’s degree in computer science and telecommunications from Institut National des Sciences Appliquées de Lyon, and an MBA in finance from Simon Business School in New York. As an MBA intern at Five Star Bank, Gaël developed an automation layer within loan management that cut processing time by 83%.</p>"
+                },
+                "zonChu": {
+                    "name": "Zon Chu",
+                    "position": "Applications",
+                    "description": "<p>Zon leads application development. Prior to Constant, he spent 11 years as a full stack developer, project manager, and technical director for various e-commerce and social network companies in Vietnam and the USA. His e-commerce app for Nguyen Kim, one of the top regional retailers in the Asia-Pacific region, hit 4 million users in 2 years.</p><p>Zon has experience building for large, complex systems. He was a technical director at Viettel Group, where he designed software to manage its 50,000 employees and provide telecommunications services to 63 million subscribers across Asia, Africa and the Americas.</p>"
+                },
+                "trongDinh": {
+                    "name": "Trong Dinh",
+                    "position": "Smart Contract",
+                    "description": "<p>Trong leads smart contract development at Constant, the heart of the stability mechanism. He automates the dialogue between Constant and its partner custodian, which distributes and protects user funds across multiple FDIC-insured banks, protecting users from fraud, downtime and third-party interference. He spends his days implementing new layers of security and adapting the Constant application layer for use on other major blockchains.</p><p>Trong started to build for the blockchain after more than a decade of developing apps for web and mobile.  His first dApp got people to put promises on the blockchain, by helping them think of smart contracts as simple everyday agreements. He was also the CTO of Ninja, one of the top prediction exchanges built on Ethereum.</p>"
+                },
+                "baoLe": {
+                    "name": "Bao Le",
+                    "position": "Constant Chain",
+                    "description": "<p>Bao leads development on the Constant Chain. He predominantly works on the infrastructure layer of Constant, integrating both on-chain and off-chain components such as the consensus protocol, privacy-preserving zero-knowledge proofs, and monetary policy algorithms. Prior to Constant, Bao built highly scalable systems for emerging markets, including Viettel Group, Vietnam's largest mobile network operator, where he scaled their products for 63M subscribers, and Central Group, Thailand's number 1 retail and service group business.</p><p>Bao leverages his deep knowledge of peer-to-peer applications, cryptography, game theory, and network applications to build highly scalable systems that quantify performance, availability, and extensibility in each line of code.</p>"
+                },
+                "justinLucas": {
                     "name": "Justin Lucas",
                     "position": "Community",
                     "description": "<p>Justin leads Constant adoption. Throughout his time living and working in the UK, Hawaii, Japan and the USA, he has worn many hats - from sales to security, customer service to business development, and more. He has worked with early stage start ups as well as giants like Microsoft and Delivery.com, growing dynamic and engaged communities by simply taking a personal approach to resolving conflict, fixing inefficiencies and addressing user pain points with empathy.</p>"
+                },
+                "dungTran": {
+                    "name": "Dung Tran",
+                    "position": "Scalability",
+                    "description": "<p>Dung works on the consensus & scalability algorithms at Constant. His current focus is on increasing transaction throughput while preserving consensus properties. Dung has extensive research and practical experience in distributed systems, computer networks, and game theory, making him the perfect candidate for designing and implementing consensus and scalability mechanisms at Constant.</p><p>Dung also lectures at the National University of Vietnam. As well as teaching courses on distributed systems, Dung has published several papers on bandwidth measurement and estimation, and is the author of two textbooks, Operation Systems and Computer Networks.  He holds a PhD in computer science from the University of Texas.</p>"
                 }
             }
         },
@@ -2594,6 +2647,9 @@
         },
         "accountants": {
             "title": "Accounting"
+        },
+        "custodian": {
+            "title": "Custodian"
         }
     },
     "home1": {
@@ -2606,8 +2662,11 @@
                 "text2": "Invest at the current market rate of 10.00% and find a match instantly, or increase your rate and wait for a matching order.",
                 "text3": "We’re giving you a trial investment of $1000. All you have to do is choose your rate, and we’ll find you a match. When the trial is up, we take the $1000 back, but the interest is yours to keep.",
                 "text4": "\n          <h5>You're almost done.</h5>\n          <p>For your security, we'll need you to verify your ID before using Constant.</p>\n        ",
+                "text5": "Free trial",
+                "text6": "\n          <p>\n            <span class=\"darkorange4 bold\">Want to get a borrower instantly?</span> Invest at the current market rate of 10%. Or increase your rate and wait for a matching order.\n          </p>\n        ",
                 "btn1": "Invest now",
                 "btnVerify": "Verify now",
+                "btnTrial": "Start your free trial",
                 "minRate": "Your minimum interest rate",
                 "maxTerm": "Maximum term",
                 "tooltip": {
@@ -2620,7 +2679,11 @@
                 }
             },
             "alert": {
-                "success": "Success"
+                "success": "Success",
+                "trialFailed": "Submit trial was failed",
+                "normalSuccess": "Submit normal success",
+                "normalFailed": "Submit normal failed",
+                "trialSuccess": "Thanks! We're connecting you with a borrower glad to pay your rates. We'll send you an email when you're matched."
             },
             "confirm": {
                 "thankYou1": "Almost there.",

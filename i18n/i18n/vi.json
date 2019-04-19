@@ -2662,11 +2662,11 @@
                 "text2": "Đầu tư với mức lãi suất trung bình 10% để được kết nối ngay với người cần vay vốn. Hoặc tăng mức lãi suất lên và đợi để được kết nối.",
                 "text3": "Chúng tôi tặng bạn một khoản đầu tư thử nghiệm trị giá 1,000 USD để trải nghiệm dịch vụ. Chỉ cần đặt mức lãi suất, hệ thống sẽ tự động kết nối với người cần vay vốn phù hợp. Khi đáo hạn, bạn được giữ toàn bộ phần lãi.",
                 "text4": "\n<h5>Một thao tác cuối cùng để sử dụng Constant.</h5>\n          <p>Vì lí do an ninh, bạn cần phải xác minh danh tính trước khi sử dụng Constant.</p>        ",
-                "text5": "Free trial",
+                "text5": "Đầu tư thử nghiệm",
                 "text6": "\n          <p>\n            <span class=\"darkorange4 bold\">Want to get a borrower instantly?</span> Invest at the current market rate of 10%. Or increase your rate and wait for a matching order.\n          </p>\n        ",
                 "btn1": "Đầu tư ngay",
                 "btnVerify": "Xác minh ngay",
-                "btnTrial": "Start your free trial",
+                "btnTrial": "Bắt đầu đầu tư thử nghiệm",
                 "minRate": "Lãi suất tối thiểu",
                 "maxTerm": "Kì hạn tối đa",
                 "tooltip": {

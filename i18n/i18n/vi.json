@@ -148,10 +148,10 @@
         "blog": "Bí quyết",
         "myAccount": "Tài khoản của tôi",
         "deposit": "Nộp tiền",
-        "transfer": "Chuyển khoản",
+        "transfer": "Rút tiền",
         "send": "Chuyển khoản",
         "banking": "Ngân hàng",
-        "save": "Tiết kiệm",
+        "save": "Đầu tư",
         "borrow": "Vay",
         "signIn": "Đăng nhập",
         "signUp": "Đăng ký",
@@ -2169,14 +2169,14 @@
             "amountToWithdraw": "Rút tiền: {amount}{currency}",
             "fee": "Phí rút tiền: {fee}{currency}",
             "fiatAmountResultLabel": "Theo tỉ giá thị trường hôm nay, bạn sẽ nhận được: {fiatAmount}{fiatCurrency}",
-            "explain": "*Tính cả phí chuyển tiền, bạn có thể gửi tối đa {amountExcludeFee} {currency}."
+            "explain": "*Tính cả phí rút tiền, bạn có thể gửi tối đa {amountExcludeFee} {currency}."
         },
         "currencyDropdownLabel": "Đơn vị tiền tệ",
-        "sellBtn": "Gửi tiền",
+        "sellBtn": "Rút tiền",
         "getAmountFailed": "Không xác định được số tiền",
         "getFeeFailed": "Có lỗi xảy ra khi tính toán chi phí. Xin vui lòng thử lại",
         "getCurrencyListFailed": "Đơn vị tiền tệ này không được hỗ trợ",
-        "howMuchDoYouWantToWithdraw": "Bạn muốn gửi bao nhiêu tiền?",
+        "howMuchDoYouWantToWithdraw": "Bạn muốn rút bao nhiêu tiền?",
         "yourAnytimeBalance": "Số dư không kì hạn: {balance}{currency}",
         "whichCurrencyYouWant": "Bạn muốn nhận đơn vị tiền tệ nào?",
         "recipientBankInformation": "Thông tin ngân hàng của người nhận",
@@ -2238,8 +2238,8 @@
             "title": "CHUYỂN TIỀN",
             "desc1": "Tiện lợi.",
             "desc2": "Tin cậy.",
-            "desc3": "Phí chuyển tiền là 0.25%. Phí tối đa chỉ $35 cho mọi giao dịch.",
-            "desc4": "\n        <h5>All you need is an internet connection to make as many transfers as you like - any amount, anywhere in the world. Send money home, pay your international clients, transfer salaries to your distributed team. With a single click</h5>\n      "
+            "desc3": "Phí rút tiền là 0.25%. Tối đa 35 USD.",
+            "desc4": "\n<h5>Rút tiền ngay lập tức về tài khoản ngân hàng.</h5>      "
         },
         "what": {
             "whatCaption0": "0.25%",
@@ -2714,7 +2714,7 @@
         "whatDesc0": "\n      <p>Constant là một nền tảng kết nối ngang hàng, cho phép người sử dụng kết nối trực tiếp với nhau không qua trung gian.</p>\n      <br />\n      <p>Bạn được tự đặt mức lãi suất mình mong muốn. Hoàn toàn miễn phí.</p>\n      <br />\n      <a href=\"https://www.myconstant.com/crypto-loan\" target=\"_blank\">Cơ chế đầu tư với Constant</a>\n    ",
         "whatDesc1": "\n<p>Phần tiền không thực hiện đầu tư được bảo hiểm lên tới 130,000,000 USD.</p>\n      <br />\n      <p>Bạn có thể rút tiền về bất cứ lúc nào.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/meet-scott-purcell-ceo-of-prime-trust-ae7581835030\" target=\"_blank\">Bảo hiểm FDIC của Constant</a>    ",
         "whatDesc2": "\n<p>Khi thực hiện đầu tư, tiền của bạn sẽ không còn được bảo hiểm bởi FDIC mà được Constant đảm bảo bằng hợp đồng thông minh vận hành tự động trên chuỗi khối.</p>\n      <br />\n      <p>Với bảo hiểm của FDIC và hợp đồng thông minh, tiền của bạn tuyệt đối an toàn.</p>\n      <br />\n      <a href=\"https://www.google.com/url?q=https://github.com/constant-money&sa=D&ust=1555493848999000&usg=AFQjCNEEEN4_WzaIB05aPU2kpKQi_PbKOw\" target=\"_blank\">Xem mã lập trình của Constant</a>\n    ",
-        "whatDesc3": "\n<p>Người vay vốn cần thế chấp tài sản trị giá 150% so với số tiền cần vay. Ví dụ, người vay vốn cần phải thế chấp tài sản trị giá 15,000 USD để vay được 10,000 USD.</p>\n      <br />\n      <p>Vì vậy, đầu tư với Constant rất an toàn.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/how-do-constant-crypto-loans-work-b22b66b5b687\" target=\"_blank\">Cách Constant bảo vệ nhà đầu tư</a>    ",
+        "whatDesc3": "\n<p>Người vay vốn cần thế chấp tài sản trị giá 150% so với số tiền cần vay. Ví dụ, người vay vốn cần phải thế chấp tài sản trị giá 15,000 USD để vay được 10,000 USD.</p>\n      <br />\n      <p>Phần tài sản thế chấp này sẽ được thanh lí ngay khi giá trị bị giảm xuống dưới 70% để trả tiền cho nhà đầu tư.</p>\n      <br />\n <p>Vì vậy, đầu tư với Constant rất an toàn.</p>\n  <br />\n      <a href=\"https://medium.com/@constantbanking/how-do-constant-crypto-loans-work-b22b66b5b687\" target=\"_blank\">Cách Constant bảo vệ nhà đầu tư</a>    ",
         "howItWorks": {
             "mainTitle": "Cơ chế hoạt động",
             "mainDesc": "\n<h5>Chúng tôi là platform công nghệ kết nối nhà đầu tư với người cần vay vốn.</h5>      ",

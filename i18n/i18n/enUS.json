@@ -926,8 +926,8 @@
                 "getListFailed": "Sorry, something went wrong. Please try again.",
                 "amount": "Principal",
                 "interest": "Interest",
-                "apr": "APY",
-                "haveTimeAccount": "{term}-{termType} deposit",
+                "apr": "APR",
+                "haveTimeAccount": "{term}-{termType} investment",
                 "month": "month",
                 "anyTimeAccount": "Anytime deposit",
                 "endTerm": "Term ends:",
@@ -2680,7 +2680,7 @@
             },
             "alert": {
                 "success": "Success",
-                "trialFailed": "Submit trial was failed",
+                "trialFailed": "Sorry, we can only offer one free trial per user.",
                 "normalSuccess": "Submit normal success",
                 "normalFailed": "Submit normal failed",
                 "trialSuccess": "Thanks! We're connecting you with a borrower glad to pay your rates. We'll send you an email when you're matched."

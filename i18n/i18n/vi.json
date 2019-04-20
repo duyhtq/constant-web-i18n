@@ -926,7 +926,7 @@
                 "getListFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
                 "amount": "Phần gốc",
                 "interest": "Lãi suất",
-                "apr": "Lãi/năm",
+                "apr": "/năm",
                 "haveTimeAccount": "Khoản đầu tư {term}{termType}",
                 "month": "tháng",
                 "anyTimeAccount": "Gửi không kì hạn",

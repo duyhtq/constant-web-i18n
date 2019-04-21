@@ -2666,7 +2666,7 @@
                 "text6": "\n          <p>\n            <span class=\"darkorange4 bold\">Want to get a borrower instantly?</span> Invest at the current market rate of 10%. Or increase your rate and wait for a matching order.\n          </p>\n        ",
                 "btn1": "Invest now",
                 "btnVerify": "Verify now",
-                "btnTrial": "Start your free trial",
+                "btnTrial": "Get started",
                 "minRate": "Your minimum interest rate",
                 "maxTerm": "Maximum term",
                 "tooltip": {

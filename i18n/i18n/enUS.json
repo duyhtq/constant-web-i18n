@@ -2672,7 +2672,7 @@
                 "tooltip": {
                     "amount": "<p>How much do you want to lend?</p>",
                     "maxTerm": "<p>This is the maximum amount of time you want to lend your money out for. Unloaned portions are protected by the FDIC, and can be withdrawn at any time.</p>",
-                    "minRate": "<p>This is the minimum rate you are willing to accept for your loan. If there is a borrower willing to pay more, you will earn the higher interest rate.</p>"
+                    "minRate": "<p>This is the annual percentage rate (APR) you are willing to accept for your loan. If there is a borrower willing to pay more, you will earn the higher interest rate.</p>"
                 },
                 "placeholder": {
                     "amount": "How much do you want to lend?"

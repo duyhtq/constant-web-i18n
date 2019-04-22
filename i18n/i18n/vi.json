@@ -1456,7 +1456,7 @@
                     "minuteWindowDescription": "Vui lòng hoàn tất chuyển khoản trong vòng 15 phút. Nếu không, giao dịch sẽ tự động bị huỷ bỏ.",
                     "direct": {
                         "thankYou": "Xin cảm ơn {name}. Tiền đang được chuyển vào tài khoản của bạn.",
-                        "content1": "Vì không có đại lí nào của Constant ở khu vực của bạn, chúng tôi phải gửi tiền cho bạn từ quỹ Constant từ Mỹ. Với những giao dịch quốc tế, có thể phải mất một vài ngày để bạn nhận được phần lãi của mình.",
+                        "content1": "Vì không có đại lí nào của Constant ở khu vực của bạn, chúng tôi phải gửi tiền cho bạn từ quỹ Constant từ Mỹ. Với những giao dịch quốc tế, có thể phải mất một vài ngày để bạn nhận được phần tiền của mình.",
                         "content2": "Cảm ơn bạn vì đã tin tưởng và lựa chọn đầu tư với Constant."
                     }
                 },

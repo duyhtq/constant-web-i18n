@@ -1190,7 +1190,7 @@
                 "tooltip": {
                     "amount": "<p>How much do you want to lend?</p>",
                     "maxTerm": "<p>This is the maximum amount of time you want to lend your money out for. Unloaned portions are protected by the FDIC, and can be withdrawn at any time.</p>",
-                    "minRate": "<p>This is the minimum rate you are willing to accept for your loan. If there is a borrower willing to pay more, you will earn the higher interest rate.</p>"
+                    "minRate": "<p>This is the annual percentage rate (APR) you are willing to accept for your loan. If there is a borrower willing to pay more, you will earn the higher interest rate.</p>"
                 },
                 "placeholder": {
                     "amount": "How much do you want to lend?"
@@ -2298,7 +2298,7 @@
             "desc2": "Your USD funds are held safely in FDIC insured US bank accounts with a total coverage of $130M.\n",
             "step3": "STEP 3",
             "title3": "You get more",
-            "desc3": "Congratulations. You now have access to global transfers, 4% interest earnings, and more."
+            "desc3": "Congratulations. You now have access to global transfers, secured investments, and more."
         },
         "checklist": {
             "title": "Why you should save money with Constant.",
@@ -2442,8 +2442,8 @@
             "invest": {
                 "title": "Grow your money",
                 "desc1": {
-                    "title": "Your own APY.",
-                    "desc": "Earn 10% APY or more - it's your choice. Don’t sit on your money, put it to work."
+                    "title": "Your own APR.",
+                    "desc": "Earn 10% APR or more - it's your choice. Don’t sit on your money, put it to work."
                 },
                 "desc2": {
                     "title": "FDIC and smart contract protected.",

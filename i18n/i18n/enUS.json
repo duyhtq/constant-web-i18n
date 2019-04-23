@@ -1014,7 +1014,7 @@
                 },
                 "batchTransferDialog": {
                     "title": "",
-                    "desc": "\n            <p>\n              For your convenience, here's a template format you can <a href=\"https://drive.google.com/uc?authuser=0&id=1W6RJ8roPsVN5_H345Xw6rEKIIIh34wVx&export=download\">download</a>. <br />\n            </p>\n          "
+                    "desc": "\n            <p>\n              For your convenience, here's a template format you can <a href=\"https://drive.google.com/open?id=141JCoBRpf7lUAiK0Y3IRBrMX1ChOfLbM&export=download\">download</a>. <br />\n            </p>\n          "
                 },
                 "field": {
                     "amount": "USD amount number greater than 0",
@@ -2579,7 +2579,7 @@
                 "duyHuynh": {
                     "name": "Duy Huynh",
                     "position": "Founder",
-                    "description": "<p>Duy spends most of his days studying the great economic thinkers of the last 100 years and turning their ideas into unstoppable lines of code. Prior to Constant, Duy was a software architect at IBM. He then founded Autonomous, putting AI and Robotics into 350,000 modern workspaces all over the world in less than 2 years.</p><p>At age 19, Duy was a PhD computer science researcher funded by NASA, the Semantic Web and Fujitsu. As a competitive programmer, he was an ACM ICPC World Finalist, USA Computing Olympiad winner, and Vietnam Computing Olympiad winner.</p>"
+                    "description": "<p>Duy spends most of his days studying the great economic thinkers of the last 100 years and turning their ideas into unstoppable lines of code. Prior to Constant, Duy was a software architect at IBM. He then founded Autonomous, putting AI and Robotics into 350,000 modern workspaces all over the world in less than 2 years.</p><p>At age 19, Duy was a PhD computer science researcher in the High Dependability Computing Program at the University of Maryland, funded by NASA, the Semantic Web and Fujitsu. As a competitive programmer, he was an ACM ICPC World Finalist, USA Computing Olympiad winner, and Vietnam Computing Olympiad winner.</p>\n"
                 },
                 "thucNguyen": {
                     "name": "Thuc Nguyen",

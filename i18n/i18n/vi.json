@@ -145,11 +145,11 @@
         }
     },
     "headerBar": {
-        "blog": "Bí quyết",
+        "blog": "Blog",
         "myAccount": "Tài khoản của tôi",
         "deposit": "Nộp tiền",
         "transfer": "Rút tiền",
-        "send": "Chuyển khoản",
+        "send": "Gửi",
         "banking": "Ngân hàng",
         "save": "Đầu tư",
         "borrow": "Vay",
@@ -2169,14 +2169,14 @@
             "amountToWithdraw": "Rút tiền: {amount}{currency}",
             "fee": "Phí rút tiền: {fee}{currency}",
             "fiatAmountResultLabel": "Theo tỉ giá thị trường hôm nay, bạn sẽ nhận được: {fiatAmount}{fiatCurrency}",
-            "explain": "*Tính cả phí rút tiền, bạn có thể gửi tối đa {amountExcludeFee} {currency}."
+            "explain": "*Tính cả phí chuyển tiền, bạn có thể gửi tối đa {amountExcludeFee} {currency}."
         },
         "currencyDropdownLabel": "Đơn vị tiền tệ",
         "sellBtn": "Rút tiền",
         "getAmountFailed": "Không xác định được số tiền",
         "getFeeFailed": "Có lỗi xảy ra khi tính toán chi phí. Xin vui lòng thử lại",
         "getCurrencyListFailed": "Đơn vị tiền tệ này không được hỗ trợ",
-        "howMuchDoYouWantToWithdraw": "Bạn muốn rút bao nhiêu tiền?",
+        "howMuchDoYouWantToWithdraw": "Bạn muốn gửi bao nhiêu tiền?",
         "yourAnytimeBalance": "Số dư không kì hạn: {balance}{currency}",
         "whichCurrencyYouWant": "Bạn muốn nhận đơn vị tiền tệ nào?",
         "recipientBankInformation": "Thông tin ngân hàng của người nhận",
@@ -2239,7 +2239,7 @@
             "desc1": "Tiện lợi.",
             "desc2": "Tin cậy.",
             "desc3": "Phí rút tiền là 0.25%. Tối đa 35 USD.",
-            "desc4": "\n<h5>Rút tiền ngay lập tức về tài khoản ngân hàng.</h5>      "
+            "desc4": "Chỉ cần có kết nối internet là bạn có thể chuyển tiền đến bất cứ đâu trên thế giới. Bạn có thể chuyển tiền cho gia đình, thanh toán cho các đối tác quốc tế hay chuyển lương cho nhân viên chỉ bằng 01 cú click chuột.\n"
         },
         "what": {
             "whatCaption0": "0.25%",

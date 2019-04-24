@@ -23,7 +23,8 @@
             "transfer": "Chuyển khoản",
             "confirm": "Xác nhận",
             "cancel": "Huỷ",
-            "confirmPassword": "Xác nhận mật khẩu"
+            "confirmPassword": "Xác nhận mật khẩu",
+            "wrongPassword": "Invalid Password"
         },
         "local": {
             "type": {
@@ -224,6 +225,10 @@
                 "team": {
                     "title": "Đội ngũ Constant",
                     "subTitle": "Nghiên cứu, Kiến tạo & Cộng đồng"
+                },
+                "trade": {
+                    "title": "Trade",
+                    "subTitle": "Constant on exchanges"
                 }
             }
         }
@@ -356,7 +361,7 @@
             "lDocType": "Loại giấy tờ",
             "plDocType": "Chọn loại giấy tờ",
             "btnSubmit": "Gửi",
-            "lUpload": "Tải lên mặt trước của {type}",
+            "lUpload": "Upload an image of the {face} of your {type}",
             "descIDUpload": "Hãy chắc chắn rằng hình ảnh được tải lên phải ở định dạng BMP, JPG, JPEG hoặc PNG, rõ ràng sắc nét và nhỏ hơn 3MB.",
             "lAddrStr1": "Địa chỉ",
             "lAddrCountry": "Quốc gia",
@@ -664,6 +669,7 @@
             "close": "Đóng",
             "detail": "Chi tiết giao dịch",
             "extID": "Giấy tờ khác",
+            "exportToExcel": "Export to excel",
             "agent": {
                 "acceptSuccessfully": "Lựa chọn của bạn đã được chấp nhận thành công",
                 "cancelSuccessfully": "Lựa chọn của bạn đã được huỷ thành công",
@@ -682,7 +688,7 @@
                 "5": "Phí",
                 "6": "Import",
                 "7": "Deposit",
-                "8": "Withdraw",
+                "8": "Chuyển tiền",
                 "9": "Risk",
                 "received": "Đã nhận"
             },
@@ -926,6 +932,7 @@
                 "getListFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
                 "amount": "Phần gốc",
                 "interest": "Lãi suất",
+                "status": "Trạng thái",
                 "apr": "/năm",
                 "haveTimeAccount": "Khoản đầu tư {term}{termType}",
                 "month": "tháng",
@@ -937,6 +944,13 @@
                 "anyTime_saving": "Số dư",
                 "input2FA": "Input 2FA",
                 "cancel": "Rút tiền",
+                "termStatus": {
+                    "created": "Matched",
+                    "pending": "Pending",
+                    "closed": "Closed",
+                    "rejected": "Rejected",
+                    "pending_kyc": "Pending Kyc"
+                },
                 "interestInfo": {
                     "header": {
                         "title": "Bạn muốn lãi suất cao hơn cho tất cả các khoản đầu tư của mình?"
@@ -968,6 +982,7 @@
                 "withdraw": "Rút tiền",
                 "transfer": "Chuyển khoản",
                 "batchtransfer": "Chuyển khoản tới nhiều người cùng lúc",
+                "deposit": "Make a deposit",
                 "row": "Hàng",
                 "errorMessage": "Đã xảy ra lỗi",
                 "saving": "Mở tài khoản ngay",
@@ -1026,7 +1041,6 @@
                 "name": "Tên",
                 "email": "Email",
                 "phone": "Số điện thoại",
-                "status": "Trạng thái",
                 "note": "Lưu ý",
                 "investMore": "Mở thêm tài khoản tiết kiệm."
             },
@@ -1333,6 +1347,10 @@
                     "price": "Đơn giá",
                     "actor": "Người bán",
                     "bank": "Ngân hàng"
+                },
+                "orderWithdraw": {
+                    "title": "Almost there.",
+                    "message": "Please wire {amount} so you have sufficient funds in your account to complete the transfer."
                 },
                 "introHolderTemplate": "\n<h1>Mua nội địa tại {country}</h1>\n        <p>Để trở thành người đầu tiên mua và bán Constant tại quốc gia của bạn, hãy liên hệ với chúng tôi để bắt đầu</p>\n        <p>Gửi email cho chúng tôi tại <a href=\"mailto:{email}\">{email}</a></p>\n        <p>Hoặc</p>\n        <p>Chat với chúng tôi <a href=\"telegram:{telegram}\">{telegram}</a></p>\n        ",
                 "confirmTemplate": "\n<div name=\"thanks\">\n<p>Cảm ơn! Xin vui lòng gửi <strong>{FiatAmount}{FiatCurrency}</strong> tới tài khoản ngân hàng của người bán.</p>\n</div>\n<div name=\"bank\">\n<p>\n<span>Tên ngân hàng:</span>\n<span>{BankName}</span>\n</p>\n<p>\n<span>Tên tài khoản:</span>\n<span>{BankAccountName}</span>\n</p>\n<p>\n<span>Số tài khoản:</span>\n<span>{BankAccountNumber}</span>\n</p>\n<p>\n<span>Số tiền:</span>\n<span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n</p>\n<p>\n<span>Constant:</span>\n<span>{Amount}&nbsp;{Currency}</span>\n</p>\n<p>\n<span>Mã giao dịch</span>\n<span>{Reference}</span>\n</p>\n</div>\n<div name=\"notice\">\n<b name=\"important\">CHÚ Ý:</b>\n<span>\nLuôn ghi mã giao dịch <b>{Reference}</b> trong phần nội dung chuyển khoản\n</span>\n</div>\n<div name=\"window\">\n<strong name=\"minutes\">30 PHÚT:</strong>\n<span>\nVui lòng chuyển khoản <b>trong vòng 30 phút</b>. Nếu không, giao dịch sẽ tự động bị huỷ bỏ.\n</span>\n</div>        ",
@@ -2162,7 +2180,8 @@
         "loading": "Đang tải...",
         "amountMustBeLargerThan": "Số tiền gửi phải lớn hơn {min}{fiatCurrency}",
         "howMuchDoYouWantToDeposit": "BẠN MUỐN NỘP BAO NHIÊU TIỀN VÀO TÀI KHOẢN? ",
-        "formDesc": "Tiền nộp vào tài khoản Constant được FDIC bảo hiểm tối đa lên đến 130,000,000 USD."
+        "formDesc": "Tiền nộp vào tài khoản Constant được FDIC bảo hiểm tối đa lên đến 130,000,000 USD.",
+        "depositForWithdraw": "Please make sure you have sufficient funds in your account to complete the transfer.<br/>To make a transfer of ${amount}, please deposit sufficient funds."
     },
     "exchangeInputSellForm": {
         "amountResult": {
@@ -2229,27 +2248,59 @@
         "makeTrialOrderSuccess": "Lệnh của bạn được tạo thành công",
         "makeTrialOrderFailed": "Lệnh của bạn không được tạo thành công"
     },
+    "send": {
+        "makeLocalOrderSuccess": "Your order was created successfully",
+        "makeLocalOrderFailed": "Failed while creating your order",
+        "makeDirectOrderSuccess": "Your order was created successfully",
+        "makeDirectOrderFailed": "Failed while creating your order",
+        "info": {
+            "title": "SEND MONEY",
+            "desc1": "Conveninent.",
+            "desc2": "Reliable.",
+            "desc3": "Just 0.25% to receive.",
+            "desc4": "\n        <h5>All you need is an internet connection to make as many transfers as you like - any amount, anywhere in the world. Send money home, pay your international clients, transfer salaries to your distributed team. With a single click</h5>\n      "
+        },
+        "what": {
+            "whatCaption0": "0.25%",
+            "whatCaption1": "Convenient",
+            "whatCaption2": "Reliable",
+            "whatCaption3": "We’re here to help",
+            "whatDesc0": "<p>We only charge 0.25% for withdrawing to a local bank. For amounts of $14,000 and above, fees are capped at $35, never more.</p>",
+            "whatDesc1": "<p>No waiting in line or waiting for business hours - all you need is an internet connection. Simply enter the amount and where you want to send it to.</p>",
+            "whatDesc2": "<p>All funds you send are FDIC insured up to $130M, and once a transfer is made, it’s unstoppable. That’s how we protect your money, and make sure it gets to where it needs to go.</p>",
+            "whatDesc3": "<p>Our team is based in your preferred time zone. If you’re in the US, call us at 1-844-201-7242. If you’re in Vietnam, call us at +84 36 656 2949.</p>"
+        },
+        "howItWorks": {
+            "step1": "Step 1",
+            "title1": "Sign up",
+            "desc1": "All you need is an email address. You can also sign up using a facebook or google account.",
+            "step2": "Step 2",
+            "title2": "Make a deposit",
+            "desc2": "Make a bank transfer to the FDIC-insured Constant Vault.",
+            "step3": "Step 3",
+            "title3": "Send money",
+            "desc3": "Enter the amount you’d like to send and the recipient's bank account info. We take care of the rest."
+        }
+    },
     "withdraw": {
         "makeLocalOrderSuccess": "Lệnh của bạn được tạo thành công",
         "makeLocalOrderFailed": "Lệnh của bạn không được tạo thành công",
         "makeDirectOrderSuccess": "Lệnh của bạn được tạo thành công",
         "makeDirectOrderFailed": "Lệnh của bạn không được tạo thành công",
         "info": {
-            "title": "CHUYỂN TIỀN",
-            "desc1": "Tiện lợi.",
-            "desc2": "Tin cậy.",
-            "desc3": "Phí rút tiền là 0.25%. Tối đa 35 USD.",
-            "desc4": "Chỉ cần có kết nối internet là bạn có thể chuyển tiền đến bất cứ đâu trên thế giới. Bạn có thể chuyển tiền cho gia đình, thanh toán cho các đối tác quốc tế hay chuyển lương cho nhân viên chỉ bằng 01 cú click chuột.\n"
+            "title": "Withdraw to your local bank.",
+            "desc1": "Withdraw funds to your bank account of choice.",
+            "desc4": "\n        <h5>Simply let us know where to send your USD funds to. If you’ve got a different local currency, it’s converted at the real-time market rate. Funds should reach you within 2 business days.</h5>\n      "
         },
         "what": {
-            "whatCaption0": "0.25%",
-            "whatCaption1": "Tiện lợi",
-            "whatCaption2": "Tin cậy",
-            "whatCaption3": "Đội ngũ hỗ trợ",
-            "whatDesc0": "<p>Chúng tôi chỉ thu phí rút tiền 0.25% giao dịch tại ngân hàng địa phương. Với giao dịch từ $14,000 trở lên, phí rút chỉ là $35!</p>",
-            "whatDesc1": "<p>Bạn không cần phải mất thời gian xếp hàng hoặc chờ đến giờ hành chính để thực hiện chuyển tiền. Chỉ cần có kết nối internet, bạn có thể chuyển tiền đến người nhận ngay lập tức!</p>",
-            "whatDesc2": "<p>Tiền của bạn khi gửi vào Constant sẽ được bảo hiểm bởi FDIC trị giá đến 130 triệu đô. Đó là lý do tại sao bạn không cần phải lo lắng khi gửi tiền tại Constant!\n</p>",
-            "whatDesc3": "<p>Đội ngũ của chúng tôi luôn sẵn sàng hỗ trợ bạn 24/24. Nếu bạn ở Mỹ, hãy liên hệ với chúng tôi qua số 1-844-201-7242, ở Việt Nam liên hệ qua số +84 36 656 2949.</p>\n"
+            "whatCaption0": "Works with your bank",
+            "whatCaption1": "Easy, quick withdrawals",
+            "whatCaption2": "Withdraw in your local currency",
+            "whatCaption3": "Unlimited low-cost withdrawals",
+            "whatDesc0": "<p>Easily transfer Constant funds to your local bank account. Just let us know where to send it.</p>",
+            "whatDesc1": "<p>Funds should reach you within 2 days, but times may vary depending on your bank’s operating hours.</p>",
+            "whatDesc2": "<p>Your money is stored in USD. If you withdraw in a different currency, it will be converted at the current market rate.</p>",
+            "whatDesc3": "<p>Withdraw as often as you like. The only fee we charge is a 0.25% withdrawal fee - capped at $35. Never more.</p>"
         },
         "howItWorks": {
             "step1": "Bước 1",
@@ -2665,8 +2716,13 @@
                 "text5": "Đầu tư thử nghiệm",
                 "text6": "\n          <p>\n            <span class=\"darkorange4 bold\">Want to get a borrower instantly?</span> Invest at the current market rate of 10%. Or increase your rate and wait for a matching order.\n          </p>\n        ",
                 "btn1": "Đầu tư ngay",
+                "textLogin": "Login",
+                "textRegister": "Register",
+                "btn2": "to invest now",
                 "btnVerify": "Xác minh ngay",
                 "btnTrial": "Bắt đầu đầu tư thử nghiệm",
+                "btnAuth": "Log in or Register to invest",
+                "btnKyc": "Verify your ID to invest",
                 "minRate": "Lãi suất tối thiểu",
                 "maxTerm": "Kì hạn tối đa",
                 "tooltip": {
@@ -2680,6 +2736,8 @@
             },
             "alert": {
                 "success": "Thành công",
+                "sendEmailVerifyForTrialSuccess": "Thanks! We sent you a verification email to unlock your free trial.",
+                "sendEmailVerifyForTrialFailed": "Send email failedSorry, we could not send your verification email. Please make sure your email address is valid and try again.",
                 "trialFailed": "Submit trial was failed",
                 "normalSuccess": "Submit normal success",
                 "normalFailed": "Submit normal failed",

@@ -23,7 +23,8 @@
             "transfer": "Transfer",
             "confirm": "Confirm",
             "cancel": "Cancel",
-            "confirmPassword": "Confirm Password"
+            "confirmPassword": "Confirm Password",
+            "wrongPassword": "Invalid Password"
         },
         "local": {
             "type": {
@@ -224,6 +225,10 @@
                 "team": {
                     "title": "Team",
                     "subTitle": "Research, Engineering & Community"
+                },
+                "trade": {
+                    "title": "Trade",
+                    "subTitle": "Constant on exchanges"
                 }
             }
         }
@@ -356,7 +361,7 @@
             "lDocType": "Type of ID",
             "plDocType": "Select your ID type",
             "btnSubmit": "Submit",
-            "lUpload": "Upload an image of the front of your {type}",
+            "lUpload": "Upload an image of the {face} of your {type}",
             "descIDUpload": "Please make sure that the photo is complete and clearly visible, in BMP, JPG, JPEG, or PNG format, and is smaller than 3MB.",
             "lAddrStr1": "Address Street \n",
             "lAddrCountry": "Country on your proof of address",
@@ -664,6 +669,7 @@
             "close": "Close",
             "detail": "Transaction Detail",
             "extID": "External ID",
+            "exportToExcel": "Export to excel",
             "agent": {
                 "acceptSuccessfully": "Your picked order have been accepted successfully",
                 "cancelSuccessfully": "Your picked order have been canceled successfully",
@@ -926,6 +932,7 @@
                 "getListFailed": "Sorry, something went wrong. Please try again.",
                 "amount": "Principal",
                 "interest": "Interest",
+                "status": "Status",
                 "apr": "APR",
                 "haveTimeAccount": "{term}-{termType} investment",
                 "month": "month",
@@ -937,6 +944,13 @@
                 "anyTime_saving": "Balance",
                 "input2FA": "Input 2FA",
                 "cancel": "Withdraw",
+                "termStatus": {
+                    "created": "Matched",
+                    "pending": "Pending",
+                    "closed": "Closed",
+                    "rejected": "Rejected",
+                    "pending_kyc": "Pending Kyc"
+                },
                 "interestInfo": {
                     "header": {
                         "title": "Want to increase interest earnings across all your accounts?"
@@ -968,6 +982,7 @@
                 "withdraw": "Withdraw",
                 "transfer": "Transfer",
                 "batchtransfer": "Transfer to multiple people",
+                "deposit": "Make a deposit",
                 "row": "Row",
                 "errorMessage": "Error Message",
                 "saving": "Save now",
@@ -1026,7 +1041,6 @@
                 "name": "Name",
                 "email": "Email",
                 "phone": "Phone",
-                "status": "Status",
                 "note": "Note",
                 "investMore": "Save More"
             },
@@ -1333,6 +1347,10 @@
                     "price": "Price",
                     "actor": "Seller",
                     "bank": "Bank"
+                },
+                "orderWithdraw": {
+                    "title": "Almost there.",
+                    "message": "Please wire {amount} so you have sufficient funds in your account to complete the transfer."
                 },
                 "introHolderTemplate": "\n          <h1>Buy from local sellers in {country}</h1>\n          <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n          <p>Email us at <a href=\"mailto:{email}\">{email}</a></p>\n          <p>Or</p>\n          <p>Chat with us at <a href=\"telegram:{telegram}\">{telegram}</a></p>\n        ",
                 "confirmTemplate": "\n          <div name=\"thanks\">\n            <p>Thanks! Please wire <strong>{FiatAmount} {FiatCurrency}</strong> to the seller's bank account.</p>\n          </div>\n          <div name=\"bank\">\n            <p>\n              <span>Bank:</span>\n              <span>{BankName}</span>\n            </p>\n            <p>\n              <span>Account Name:</span>\n              <span>{BankAccountName}</span>\n            </p>\n            <p>\n              <span>Account Number: </span>\n              <span>{BankAccountNumber}</span>\n            </p>\n            <p>\n              <span>Amount: </span>\n              <span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n            </p>\n            <p>\n              <span>Constant: </span>\n              <span>{Amount}&nbsp;{Currency}</span>\n            </p>\n            <p>\n              <span>Reference: </span>\n              <span>{Reference}</span>\n            </p>\n          </div>\n          <div name=\"notice\">\n            <b name=\"important\">IMPORTANT:</b>\n            <span>\n              Do include your reference number <b>{Reference}</b> in the transfer description\n            </span>\n          </div>\n          <div name=\"window\">\n            <strong name=\"minutes\">30 MINUTE WINDOW: </strong>\n            <span>\n              Please complete your transfer <b>within 30 minutes</b>. After that, your\n              order will be automatically cancelled.\n            </span>\n          </div>\n        ",
@@ -2162,7 +2180,8 @@
         "loading": "Loading...",
         "amountMustBeLargerThan": "Your amount must be larger than {min} {fiatCurrency}",
         "howMuchDoYouWantToDeposit": "How much do you want to deposit?",
-        "formDesc": "Constant stores your money across multiple FDIC-insured accounts, bringing total coverage up to $130,000,000."
+        "formDesc": "Constant stores your money across multiple FDIC-insured accounts, bringing total coverage up to $130,000,000.",
+        "depositForWithdraw": "Please make sure you have sufficient funds in your account to complete the transfer.<br/>To make a transfer of ${amount}, please deposit sufficient funds."
     },
     "exchangeInputSellForm": {
         "amountResult": {
@@ -2229,16 +2248,16 @@
         "makeTrialOrderSuccess": "Congrats! Your trial has been activated.",
         "makeTrialOrderFailed": "Failed while creating your order"
     },
-    "withdraw": {
-        "makeLocalOrderSuccess": "Success! Your funds should reach your recipient shortly.",
+    "send": {
+        "makeLocalOrderSuccess": "Your order was created successfully",
         "makeLocalOrderFailed": "Failed while creating your order",
-        "makeDirectOrderSuccess": "Success! Your funds should reach your recipient shortly.",
+        "makeDirectOrderSuccess": "Your order was created successfully",
         "makeDirectOrderFailed": "Failed while creating your order",
         "info": {
-            "title": "Send money",
-            "desc1": "Convenient.",
+            "title": "SEND MONEY",
+            "desc1": "Conveninent.",
             "desc2": "Reliable.",
-            "desc3": "Just 0.25% to receive. Capped at $35.\n",
+            "desc3": "Just 0.25% to receive.",
             "desc4": "\n        <h5>All you need is an internet connection to make as many transfers as you like - any amount, anywhere in the world. Send money home, pay your international clients, transfer salaries to your distributed team. With a single click</h5>\n      "
         },
         "what": {
@@ -2250,6 +2269,38 @@
             "whatDesc1": "<p>No waiting in line or waiting for business hours - all you need is an internet connection. Simply enter the amount and where you want to send it to.</p>",
             "whatDesc2": "<p>All funds you send are FDIC insured up to $130M, and once a transfer is made, it’s unstoppable. That’s how we protect your money, and make sure it gets to where it needs to go.</p>",
             "whatDesc3": "<p>Our team is based in your preferred time zone. If you’re in the US, call us at 1-844-201-7242. If you’re in Vietnam, call us at +84 36 656 2949.</p>"
+        },
+        "howItWorks": {
+            "step1": "Step 1",
+            "title1": "Sign up",
+            "desc1": "All you need is an email address. You can also sign up using a facebook or google account.",
+            "step2": "Step 2",
+            "title2": "Make a deposit",
+            "desc2": "Make a bank transfer to the FDIC-insured Constant Vault.",
+            "step3": "Step 3",
+            "title3": "Send money",
+            "desc3": "Enter the amount you’d like to send and the recipient's bank account info. We take care of the rest."
+        }
+    },
+    "withdraw": {
+        "makeLocalOrderSuccess": "Success! Your funds should reach your recipient shortly.",
+        "makeLocalOrderFailed": "Failed while creating your order",
+        "makeDirectOrderSuccess": "Success! Your funds should reach your recipient shortly.",
+        "makeDirectOrderFailed": "Failed while creating your order",
+        "info": {
+            "title": "Withdraw to your local bank.",
+            "desc1": "Withdraw funds to your bank account of choice.",
+            "desc4": "\n        <h5>Simply let us know where to send your USD funds to. If you’ve got a different local currency, it’s converted at the real-time market rate. Funds should reach you within 2 business days.</h5>\n      "
+        },
+        "what": {
+            "whatCaption0": "Works with your bank",
+            "whatCaption1": "Easy, quick withdrawals",
+            "whatCaption2": "Withdraw in your local currency",
+            "whatCaption3": "Unlimited low-cost withdrawals",
+            "whatDesc0": "<p>Easily transfer Constant funds to your local bank account. Just let us know where to send it.</p>",
+            "whatDesc1": "<p>Funds should reach you within 2 days, but times may vary depending on your bank’s operating hours.</p>",
+            "whatDesc2": "<p>Your money is stored in USD. If you withdraw in a different currency, it will be converted at the current market rate.</p>",
+            "whatDesc3": "<p>Withdraw as often as you like. The only fee we charge is a 0.25% withdrawal fee - capped at $35. Never more.</p>"
         },
         "howItWorks": {
             "step1": "Step 1",
@@ -2665,8 +2716,13 @@
                 "text5": "Free trial",
                 "text6": "\n          <p>\n            <span class=\"darkorange4 bold\">Want to get a borrower instantly?</span> Invest at the current market rate of 10%. Or increase your rate and wait for a matching order.\n          </p>\n        ",
                 "btn1": "Invest now",
+                "textLogin": "Login",
+                "textRegister": "Register",
+                "btn2": "to invest now",
                 "btnVerify": "Verify now",
                 "btnTrial": "Get started",
+                "btnAuth": "Log in or Register to invest",
+                "btnKyc": "Verify your ID to invest",
                 "minRate": "Your minimum interest rate",
                 "maxTerm": "Maximum term",
                 "tooltip": {
@@ -2680,6 +2736,8 @@
             },
             "alert": {
                 "success": "Success",
+                "sendEmailVerifyForTrialSuccess": "Thanks! We sent you a verification email to unlock your free trial.",
+                "sendEmailVerifyForTrialFailed": "Send email failedSorry, we could not send your verification email. Please make sure your email address is valid and try again.",
                 "trialFailed": "Sorry, we can only offer one free trial per user.",
                 "normalSuccess": "Submit normal success",
                 "normalFailed": "Submit normal failed",

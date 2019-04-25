@@ -412,14 +412,19 @@
         "termOrder": {
             "title": "Term Order Available",
             "userAndDate": "User/Date",
+            "matched": "Matched",
             "date": "Date",
             "termAndRate": "Term/Rate",
             "amount": "Amount",
+            "accept": "Accept",
+            "cancel": "Cancel",
             "confirm": "Confirm",
+            "confirmTitle": "Confirm matched amount",
             "confirmMess": "Are you sure you want to confirm this order?",
             "reject": "Reject",
             "rejectMess": "Are you sure you want to reject this order?",
             "loadMore": "Load more",
+            "matchedAmount": "Matched Amount",
             "status": {
                 "status": "Status",
                 "transferred": "Transferred",
@@ -949,7 +954,9 @@
                     "pending": "Pending",
                     "closed": "Closed",
                     "rejected": "Rejected",
-                    "pending_kyc": "Pending Kyc"
+                    "pending_kyc": "Pending Kyc",
+                    "matched": "Matched",
+                    "matching": "Pending"
                 },
                 "interestInfo": {
                     "header": {
@@ -1432,6 +1439,20 @@
                 "required": "Required",
                 "greaterThan": "Must be greater than 0",
                 "notEnough": "Constant is not enough"
+            },
+            "send": {
+                "confirmTemplate": {
+                    "title": "Thank you!",
+                    "description": "Your funds are on the way to your recipient's bank account. We estimate that it will take sometimes. Once the recipient has received the funds, please click confirm on the Order History page, so we can finalize the record.",
+                    "contact": "If you have any questions, feel free to reach out to <a href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime."
+                }
+            },
+            "withdraw": {
+                "confirmTemplate": {
+                    "title": "Thank you!",
+                    "description": "Your funds are on the way to your recipient's bank account. We estimate that it will take sometime. Once the recipient has received the funds, please click confirm on the Order History page, so we can finalize the record.",
+                    "contact": "If you have any questions, feel free to reach out to <a href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime."
+                }
             }
         },
         "direct": {
@@ -1837,27 +1858,27 @@
             "content": {
                 "faq1": {
                     "question": "What are Constant Referral Rewards?",
-                    "answer": "\n          <p>\n          The Constant Referral Reward program earns you extra interest on our fixed deposit plans, by sharing Constant with friends and family. You earn interest by completing certain actions, such as referring Constant to friends who then sign up, sharing Constant on social media, and depositing a minimum of $1,000 or more. \n          </p>\n          <p>\n          Complete all actions in our Referral Rewards program and you could earn 6% additional interest on your Savings Plans. \n           </p>\n          "
+                    "answer": "\n          <p>\n          The Constant Referral Reward program earns you extra interest for investing or sharing Constant with friends and family. You earn interest by completing certain actions, such as referring Constant to friends who then sign up, sharing Constant on social media, and investing a minimum of $1,000 or more.\n          </p>\n          <p>\n          Complete all actions in our Referral Rewards program and you could earn 6% additional interest on your Investment Plans.\n           </p>\n          "
                 },
                 "faq2": {
                     "question": "How do I earn reward interest?",
-                    "answer": "\n          <p>\n          Simple – just complete any of the following actions: \n          </p>\n          <p>\n          Deposit $1,000 or more: <strong>0.5%</strong> (payable once).<br/>\n          Refer Constant to friends and family: <strong>0.1%</strong> for everyone who signs up (2% maximum).<br/>\n          Share Constant on Facebook: <strong>0.1%</strong> (payable once).\n          </p>\n          <p>\n          Your new interest rates will be applied across all of your existing Savings Plans, except for the Trial Plan.  \n           </p>\n          "
+                    "answer": "\n          <p>\n          Simple – just complete any of the following actions:\n          </p>\n          <p>\n          Invest $1,000 or more: <strong>2.5%</strong> (payable once).<br/>\n          Refer Constant to friends and family: <strong>0.2%</strong> for everyone who signs up (3% maximum).<br/>\n          Share Constant on Facebook: <strong>0.5%</strong> (payable once).\n          </p>\n          <p>\n          Your extra interest will be added to all of your existing Investment Plans, except for the Trial Plan.\n           </p>\n          "
                 },
                 "faq3": {
                     "question": "Is there a limit on the amount of extra interest I can earn?",
-                    "answer": "\n          <p>\n          Yes, once you’ve completed an action or earned the maximum reward for that action, you won’t earn any further interest. \n          </p>\n          <p>\n          All referral rewards are single use, except referring friends and family where you’ll earn 0.1% for every person who signs up to a maximum of 2%. \n           </p>\n          "
+                    "answer": "\n          <p>\n          Yes, once you’ve completed an action or earned the maximum reward for that action, you won’t earn any further interest.\n          </p>\n          <p>\n          All referral rewards are single use, except referring friends and family where you’ll earn 0.2% for every person who signs up to a maximum of 3%.\n           </p>\n          "
                 },
                 "faq4": {
                     "question": "Where can I find my referral link?",
-                    "answer": "\n          <p>\n          Log into your account and go to Accounts. There you’ll find referral and Facebook links to share Constant with anyone you want. \n          </p>\n          "
+                    "answer": "\n          <p>\n          Log into your account and go to My Investments. There you’ll find referral and Facebook links to share Constant with anyone you want.\n          </p>\n          "
                 },
                 "faq5": {
                     "question": "When will I receive the extra interest?",
-                    "answer": "\n<p>           Immediately. We apply your increased interest rates across all of your Savings Plans as soon as you complete the actions. We’ll notify you by email, too.           </p>          "
+                    "answer": "\n          <p>\n          Immediately. We add your reward interest to all of your fixed Investment Plans as soon as you complete the actions. We’ll notify you by email, too.\n          </p>\n          "
                 },
                 "faq6": {
                     "question": "Will the interest expire?",
-                    "answer": "\n          <p>\n          Yes, it will. The referral program lasts 90 days from Mar 15 to June 15. After that, the rate will return to normal. \n          </p>\n          "
+                    "answer": "\n          <p>\n          Yes, it will. The referral program lasts 90 days from Mar 15 to June 15. After that, the rate will return to normal.\n          </p>\n          "
                 }
             }
         }
@@ -1902,7 +1923,7 @@
         "photoIncome2": "Photo Income 2018",
         "accreditationAlt": "Required by U.S. law for investing in 506(c) fundraisings",
         "title1": "How is asdf accredited?",
-        "desc1": "\n      We require proof of accreditation from you that meets the more stringent standard the SEC has put \n      in place – \n      <a target=\"_blank\" rel=\"nofollow\" href=\"http://www.sec.gov/info/smallbus/secg/general-solicitation-small-entity-compliance-guide.htm\">the 506(c) standard</a> \n      – which should work for all accredited deals, including ones that publicly discuss their financing.",
+        "desc1": "\n      We require proof of accreditation from you that meets the more stringent standard the SEC has put\n      in place –\n      <a target=\"_blank\" rel=\"nofollow\" href=\"http://www.sec.gov/info/smallbus/secg/general-solicitation-small-entity-compliance-guide.htm\">the 506(c) standard</a>\n      – which should work for all accredited deals, including ones that publicly discuss their financing.",
         "income": {
             "title": "Income",
             "alt": "Valid for 1 tax year",
@@ -2195,6 +2216,7 @@
         "getAmountFailed": "Failed while getting amount",
         "getFeeFailed": "Failed while calculating fee, please try again",
         "getCurrencyListFailed": "Failed while getting supported currencies",
+        "howMuchDoYouWantToSend": "How much do you want to send?",
         "howMuchDoYouWantToWithdraw": "How much do you want to send?",
         "yourAnytimeBalance": "Your Balance: {balance} {currency}",
         "whichCurrencyYouWant": "Which currency do you want to receive?",
@@ -2360,7 +2382,7 @@
         "howWeWork": {
             "title": "How We Work",
             "subTitle": "We’re building a fairer, freer, financial system.",
-            "desc": "\n        <p>As pioneers of borderless banking on the blockchain, we are committed to making banking more inclusive, money more useful, and growth more accessible to anyone, anywhere in the world.</p>\n        <p>What does that look like? Fair interest rates. Inclusive loans. A state-less, stable currency that you can save, borrow, and spend. Transactions secured and carried out collectively by users of the network. A bank for the people, made possible by the people.</p>\n        <p>Constant is proud to be 100% digital, online 24/7. So no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime.</p> \n      "
+            "desc": "\n        <p>As pioneers of borderless banking on the blockchain, we are committed to making banking more inclusive, money more useful, and growth more accessible to anyone, anywhere in the world.</p>\n        <p>What does that look like? Fair interest rates. Inclusive loans. A state-less, stable currency that you can save, borrow, and spend. Transactions secured and carried out collectively by users of the network. A bank for the people, made possible by the people.</p>\n        <p>Constant is proud to be 100% digital, online 24/7. So no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime.</p>\n      "
         },
         "stories": {
             "quote0": "Great user experience. It's always fun watching my savings grow, and super convenient that I can withdraw it anytime. A nice zero-risk companion to your other investments, and a decent enough investment in itself.",
@@ -2723,6 +2745,7 @@
                 "btnTrial": "Get started",
                 "btnAuth": "Log in or Register to invest",
                 "btnKyc": "Verify your ID to invest",
+                "btnKyc1": "<a>Verify your ID</a> to invest",
                 "minRate": "Your minimum interest rate",
                 "maxTerm": "Maximum term",
                 "tooltip": {

@@ -412,14 +412,19 @@
         "termOrder": {
             "title": "Term Order Available",
             "userAndDate": "User/Date",
+            "matched": "Matched",
             "date": "Date",
             "termAndRate": "Term/Rate",
             "amount": "Amount",
+            "accept": "Accept",
+            "cancel": "Cancel",
             "confirm": "Confirm",
+            "confirmTitle": "Confirm matched amount",
             "confirmMess": "Are you sure you want to confirm this order?",
             "reject": "Reject",
             "rejectMess": "Are you sure you want to reject this order?",
             "loadMore": "Load more",
+            "matchedAmount": "Matched Amount",
             "status": {
                 "status": "Status",
                 "transferred": "Transferred",
@@ -949,7 +954,9 @@
                     "pending": "Pending",
                     "closed": "Closed",
                     "rejected": "Rejected",
-                    "pending_kyc": "Pending Kyc"
+                    "pending_kyc": "Pending Kyc",
+                    "matched": "Matched",
+                    "matching": "Pending"
                 },
                 "interestInfo": {
                     "header": {
@@ -1088,7 +1095,7 @@
         "changeEmailPassword": "Email & Mật khẩu",
         "login": {
             "popupTitle": "Constant xin chào.",
-            "title": "Chào đằng ấy",
+            "title": "Chào bạn!",
             "username": "Email của bạn",
             "password": "Mật khẩu",
             "loginButton": "Đăng nhập",
@@ -1432,6 +1439,20 @@
                 "required": "Yêu cầu",
                 "greaterThan": "Phải lớn hơn 0",
                 "notEnough": "Không đủ Constant"
+            },
+            "send": {
+                "confirmTemplate": {
+                    "title": "Thank you!",
+                    "description": "Your funds are on the way to your recipient's bank account. We estimate that it will take sometimes. Once the recipient has received the funds, please click confirm on the Order History page, so we can finalize the record.",
+                    "contact": "If you have any questions, feel free to reach out to <a href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime."
+                }
+            },
+            "withdraw": {
+                "confirmTemplate": {
+                    "title": "Thank you!",
+                    "description": "Your funds are on the way to your recipient's bank account. We estimate that it will take sometime. Once the recipient has received the funds, please click confirm on the Order History page, so we can finalize the record.",
+                    "contact": "If you have any questions, feel free to reach out to <a href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime."
+                }
             }
         },
         "direct": {
@@ -1837,27 +1858,27 @@
             "content": {
                 "faq1": {
                     "question": "Phần thưởng cho chương trình giới thiệu của Constant là gì?",
-                    "answer": "\n          <p>\n          Chương trình giới thiệu của Constant giúp bạn tăng thêm mức lãi suất đầu tư khi bạn chia sẻ và giới thiệu Constant với người thân và bạn bè. Để được tăng thêm mức lãi suất, bạn cần chia sẻ về Constant trên mạng xã hội, giới thiệu cho bạn bè mở tài khoản Constant và đầu tư tối thiểu 1,000 USD trở lên. \n          </p>\n          <p>\n          Hoàn thành tất cả những yêu cầu trên và bạn có thể nhận thêm 6% lãi suất vào các khoản đầu tư của mình.\n          </p>\n          "
+                    "answer": "\n          <p>\n          The Constant Referral Reward program earns you extra interest for investing or sharing Constant with friends and family. You earn interest by completing certain actions, such as referring Constant to friends who then sign up, sharing Constant on social media, and investing a minimum of $1,000 or more.\n          </p>\n          <p>\n          Complete all actions in our Referral Rewards program and you could earn 6% additional interest on your Investment Plans.\n           </p>\n          "
                 },
                 "faq2": {
                     "question": "Làm thế nào để tăng lãi suất đầu tư?",
-                    "answer": "\n          <p>\n          Rất đơn giản. Bạn chỉ cần hoàn thành những yêu cầu sau: \n          </p>\n          <p>\n          Đầu tư tối thiểu 1,000 USD: <strong>2.5%</strong> (chỉ tính một lần).<br/>\n          Giới thiệu Constant cho người khác: <strong>0.2%</strong> cho mỗi một người mở tài khoản (tối đa 3%).<br/>\n          Chia sẻ về Constant trên Facebook: <strong>0.5%</strong> (chỉ tính một lần).\n          </p>\n          <p>\n          Mức lãi suất thưởng này được cộng thêm vào tất cả các khoản đầu tư của bạn, ngoại trừ khoản đầu tư thử nghiệm.  \n           </p>\n          \n           "
+                    "answer": "\n          <p>\n          Simple – just complete any of the following actions:\n          </p>\n          <p>\n          Invest $1,000 or more: <strong>2.5%</strong> (payable once).<br/>\n          Refer Constant to friends and family: <strong>0.2%</strong> for everyone who signs up (3% maximum).<br/>\n          Share Constant on Facebook: <strong>0.5%</strong> (payable once).\n          </p>\n          <p>\n          Your extra interest will be added to all of your existing Investment Plans, except for the Trial Plan.\n           </p>\n          "
                 },
                 "faq3": {
                     "question": "Mức lãi suất tối đa có thể là bao nhiêu?",
-                    "answer": "\n<p>\nKhi bạn đã hoàn thành mọi thao tác cần thiết, bạn đã tăng mức lãi suất lên tối đa và không thể tăng thêm được nữa. \n</p>\n<p>\nHiện tại, mức lãi suất tối đa có thể là 14%/năm. \n</p>\n          \n          "
+                    "answer": "\n          <p>\n          Yes, once you’ve completed an action or earned the maximum reward for that action, you won’t earn any further interest.\n          </p>\n          <p>\n          All referral rewards are single use, except referring friends and family where you’ll earn 0.2% for every person who signs up to a maximum of 3%.\n           </p>\n          "
                 },
                 "faq4": {
                     "question": "Có thể tìm link giới thiệu của tôi ở đâu?",
-                    "answer": "\n<p>\n          Đăng nhập vào tài khoản, bạn sẽ tìm thấy link giới thiệu của mình và link để chia sẻ Constant trên Facebook ở mục Khoản đầu tư của tôi.\n          </p>\n          "
+                    "answer": "\n          <p>\n          Log into your account and go to My Investments. There you’ll find referral and Facebook links to share Constant with anyone you want.\n          </p>\n          "
                 },
                 "faq5": {
                     "question": "Khi nào mức lãi suất tăng thêm được tính?",
-                    "answer": "\n<p>\n          Bạn sẽ được hưởng mức lãi suất tăng thêm vào tất cả các khoản đầu tư ngay lập tức sau khi bạn hoàn thành các yêu cầu của Constant. Constant cũng sẽ gửi bạn email để thông báo về việc tăng mức lãi suất này.\n          </p>\n          "
+                    "answer": "\n          <p>\n          Immediately. We add your reward interest to all of your fixed Investment Plans as soon as you complete the actions. We’ll notify you by email, too.\n          </p>\n          "
                 },
                 "faq6": {
                     "question": "Mức lãi suất tăng thêm này có tồn tại mãi không?",
-                    "answer": "\n          <p>\n          Rất tiếc là không. Chương trình giới thiệu tăng mức lãi suất chỉ có hiệu lực từ 15/3/2019 đến 15/6/2019. Sau thời gian đó, mức lãi suất sẽ trở về mức bình thường. \n          </p>\n          \n          "
+                    "answer": "\n          <p>\n          Yes, it will. The referral program lasts 90 days from Mar 15 to June 15. After that, the rate will return to normal.\n          </p>\n          "
                 }
             }
         }
@@ -1902,7 +1923,7 @@
         "photoIncome2": "Thu nhập năm 2018",
         "accreditationAlt": "Bắt buộc theo luật Hoa Kỳ để đầu tư gây quỹ theo mục 506(c)",
         "title1": "How is asdf accredited?",
-        "desc1": "\nChúng tôi yêu cầu bạn cung cấp những bằng chứng chứng minh bạn có thể đáp ứng tiêu chuẩn nghiêm ngặt mà SEC đã đưa ra\n<a target=\"_blank\" rel=\"nofollow\" href=\"http://www.sec.gov/info/smallbus/secg/general-solicitation-small-entity-compliance-guide.htm\"> tiêu chuẩn 506(c)</a>\n- nên áp dụng cho tất cả những giao dịch được công nhận, bao gồm cả những giao dịch công khai tình tình tài chính của họ.",
+        "desc1": "\n      We require proof of accreditation from you that meets the more stringent standard the SEC has put\n      in place –\n      <a target=\"_blank\" rel=\"nofollow\" href=\"http://www.sec.gov/info/smallbus/secg/general-solicitation-small-entity-compliance-guide.htm\">the 506(c) standard</a>\n      – which should work for all accredited deals, including ones that publicly discuss their financing.",
         "income": {
             "title": "Thu nhập",
             "alt": "Hợp lệ trong 1 năm tài chính",
@@ -2191,10 +2212,11 @@
             "explain": "*Tính cả phí chuyển tiền, bạn có thể gửi tối đa {amountExcludeFee} {currency}."
         },
         "currencyDropdownLabel": "Đơn vị tiền tệ",
-        "sellBtn": "Rút tiền",
+        "sellBtn": "Chuyển tiền",
         "getAmountFailed": "Không xác định được số tiền",
         "getFeeFailed": "Có lỗi xảy ra khi tính toán chi phí. Xin vui lòng thử lại",
         "getCurrencyListFailed": "Đơn vị tiền tệ này không được hỗ trợ",
+        "howMuchDoYouWantToSend": "How much do you want to send?",
         "howMuchDoYouWantToWithdraw": "Bạn muốn gửi bao nhiêu tiền?",
         "yourAnytimeBalance": "Số dư không kì hạn: {balance}{currency}",
         "whichCurrencyYouWant": "Bạn muốn nhận đơn vị tiền tệ nào?",
@@ -2360,7 +2382,7 @@
         "howWeWork": {
             "title": "Sứ mệnh của Constant",
             "subTitle": "Chúng tôi mong muốn xây dựng thành công một hệ thống tài chính công bằng và tự do hơn.",
-            "desc": "\n<p>Chúng tôi tin vào một hệ thống tài chính công bằng hơn, kinh tế hơn!\nTham gia vào lĩnh vực tài chính trên nền tảng blockchain từ những ngày đầu tiên, chúng tôi là những kỹ sư tin rằng ngành tài chính nên dành cho mọi người: nhiều quyền lợi hơn, dễ sử dụng hơn bất kể bạn là ai và đang sinh sống ở đâu.</p>\n<br />\n<br />\n<p>Thế nào là dịch vụ tài chính hoàn hảo? Đối với đội ngũ Constant, đó là loại tiền tệ có thể lưu thông tự do trên toàn thế giới với giá trị ổn định nhất. Bạn có thể tích lũy, tiêu xài, vay nợ chỉ bằng 1 loại tiền tệ quyền lực được định giá bởi USD và bảo hiểm bởi những tổ chức uy tín nhất thế giới. Trong ước mơ của Constant, đây chính là một “ngân hàng” tạo ra bởi người dùng & phục vụ lợi ích của người dùng.</p>\n<br />\n<br />\n<p>Hơn thế nữa, chúng tôi là một dự án công nghệ! Nghĩa là Constant luôn sẵn sàng 24/7, 100% online. Không còn cảnh xếp hàng ở phòng giao dịch, không còn những người nghẽn mạch thanh toán do lễ tết. Chúng tôi - những kỹ sư, nhà thiết kế, chuyên gia tài chính làm việc trên toàn thế giới với mục tiêu lớn nhất là giúp tiền của bạn sinh lời và lưu thông dễ dàng nhất.</p>      "
+            "desc": "\n        <p>As pioneers of borderless banking on the blockchain, we are committed to making banking more inclusive, money more useful, and growth more accessible to anyone, anywhere in the world.</p>\n        <p>What does that look like? Fair interest rates. Inclusive loans. A state-less, stable currency that you can save, borrow, and spend. Transactions secured and carried out collectively by users of the network. A bank for the people, made possible by the people.</p>\n        <p>Constant is proud to be 100% digital, online 24/7. So no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime.</p>\n      "
         },
         "stories": {
             "quote0": "Great user experience. It's always fun watching my savings grow, and super convenient that I can withdraw it anytime. A nice zero-risk companion to your other investments, and a decent enough investment in itself.",
@@ -2723,6 +2745,7 @@
                 "btnTrial": "Bắt đầu đầu tư thử nghiệm",
                 "btnAuth": "Log in or Register to invest",
                 "btnKyc": "Verify your ID to invest",
+                "btnKyc1": "<a>Verify your ID</a> to invest",
                 "minRate": "Lãi suất tối thiểu",
                 "maxTerm": "Kì hạn tối đa",
                 "tooltip": {

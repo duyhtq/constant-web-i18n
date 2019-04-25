@@ -997,11 +997,11 @@
                     "withdrawAccount": {
                         "title": "Saving",
                         "body": "Want to get more out of your money? Try our investment plans and choose your own interest rate.",
-                        "termTitle": "{month} month{termType} ({percent}% APY)",
+                        "termTitle": "{month} month{termType}",
                         "percentReceive": "You will earn {percent}% APR.",
-                        "confirm": "Ok",
+                        "confirm": "Invest",
                         "cancel": "Cancel",
-                        "messageConfirm": "You are about to deposit {amount} Constant.",
+                        "messageConfirm": "You are about to invest {amount} Constant.",
                         "validateMaxAmountError": "Sorry, you don't have enough Constant to deposit this amount.",
                         "validateMinAmountError": "You can't input amount less than {amount} CONSTANT"
                     },
@@ -1025,8 +1025,8 @@
                     }
                 },
                 "alert": {
-                    "depositSavingSuccess": "You successfully deposited Constant.",
-                    "depositSavingFailed": "Failed To Deposit Saving",
+                    "depositSavingSuccess": "You successfully invested Constant.",
+                    "depositSavingFailed": "Failed To Invest Saving",
                     "stopSavingSuccess": "You ended your term deposit. Withdraw your funds anytime.",
                     "stopSavingFailed": "End your term failed.",
                     "batchTransferSuccess": "You successfully sent the batch file",

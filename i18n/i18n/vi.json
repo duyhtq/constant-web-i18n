@@ -312,7 +312,7 @@
             "sellOrders": "Lệnh bán",
             "buyOrders": "Lệnh Mua",
             "bookingOrders": "Lệnh Bán",
-            "termOrders": "Term Orders",
+            "termOrders": "Xác nhận đầu tư",
             "myOrders": "Gửi và rút tiền",
             "localHistory": "Chuyển khoản và thu nhập lãi",
             "wallets": "Ví của tôi",
@@ -410,21 +410,21 @@
             "noData": "Không có lệnh bán phù hợp"
         },
         "termOrder": {
-            "title": "Term Order Available",
-            "userAndDate": "User/Date",
+            "title": "Danh sách đầu tư",
+            "userAndDate": "Tài khoản/Ngày",
             "matched": "Phù hợp",
             "date": "Ngày",
-            "termAndRate": "Term/Rate",
+            "termAndRate": "Kì hạn/Lãi suất",
             "amount": "Số lượng",
             "accept": "Đồng ý",
             "cancel": "Huỷ",
             "confirm": "Xác nhận",
-            "confirmTitle": "Confirm matched amount",
+            "confirmTitle": "Xác nhận khoản đầu tư",
             "confirmMess": "Bạn xác nhận muốn thực hiện giao dịch này?",
             "reject": "Từ chối",
             "rejectMess": "Bạn từ chối thực hiện giao dịch này?",
             "loadMore": "Tải thêm",
-            "matchedAmount": "Matched Amount",
+            "matchedAmount": "Số tiền đầu tư",
             "status": {
                 "status": "Trạng thái",
                 "transferred": "Đã chuyển khoản",
@@ -437,10 +437,10 @@
             },
             "acceptFailed": {
                 "": "Picked booking order is failing, please try again, or contact my admin for help. \n Thanks! ",
-                "processing_order_exists": "There is processing order need to complete",
-                "validation_error": "Can not accept this order."
+                "processing_order_exists": "Đang xử lí lệnh",
+                "validation_error": "Không thể đồng ý lệnh này."
             },
-            "noData": "No sell order available"
+            "noData": "Hiện chưa có lệnh bán"
         },
         "bookingOrder": {
             "title": "Danh sách lệnh giữ chỗ",
@@ -997,11 +997,11 @@
                     "withdrawAccount": {
                         "title": "Tiết kiệm",
                         "body": "Muốn hưởng lãi suất cao hơn? Cam kết tăng lãi suất trên mọi khoản đầu tư bất kể kì hạn.",
-                        "termTitle": "{month} tháng{termType}({percent}%/năm)",
+                        "termTitle": "{month} tháng",
                         "percentReceive": "Bạn được hưởng lãi suất {percent}%/năm.",
-                        "confirm": "Ok",
+                        "confirm": "Đầu tư",
                         "cancel": "Huỷ",
-                        "messageConfirm": "Bạn đang chuẩn bị nạp {amount} Constant.",
+                        "messageConfirm": "Bạn đang chuẩn bị đầu tư {amount} Constant.",
                         "validateMaxAmountError": "Xin lỗi. Bạn không có đủ Constant để nạp.",
                         "validateMinAmountError": "Xin vui lòng nhập số lớn hơn {amount} CONSTANT"
                     },
@@ -1025,7 +1025,7 @@
                     }
                 },
                 "alert": {
-                    "depositSavingSuccess": "Bạn đã nạp Constant thành công.",
+                    "depositSavingSuccess": "Bạn đã đầu tư Constant thành công.",
                     "depositSavingFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
                     "stopSavingSuccess": "Khi đáo hạn, bạn có thể rút tiền về ngay lập tức.",
                     "stopSavingFailed": "Đáo hạn tiết kiệm không thành công.",
@@ -1356,8 +1356,8 @@
                     "bank": "Ngân hàng"
                 },
                 "orderWithdraw": {
-                    "title": "Almost there.",
-                    "message": "Please wire {amount} so you have sufficient funds in your account to complete the transfer."
+                    "title": "Đã gần xong rồi.",
+                    "message": "Xin vui lòng nộp thêm {amount} vào tài khoản để tiếp tục thực hiện chuyển khoản."
                 },
                 "introHolderTemplate": "\n<h1>Mua nội địa tại {country}</h1>\n        <p>Để trở thành người đầu tiên mua và bán Constant tại quốc gia của bạn, hãy liên hệ với chúng tôi để bắt đầu</p>\n        <p>Gửi email cho chúng tôi tại <a href=\"mailto:{email}\">{email}</a></p>\n        <p>Hoặc</p>\n        <p>Chat với chúng tôi <a href=\"telegram:{telegram}\">{telegram}</a></p>\n        ",
                 "confirmTemplate": "\n<div name=\"thanks\">\n<p>Cảm ơn! Xin vui lòng gửi <strong>{FiatAmount}{FiatCurrency}</strong> tới tài khoản ngân hàng của người bán.</p>\n</div>\n<div name=\"bank\">\n<p>\n<span>Tên ngân hàng:</span>\n<span>{BankName}</span>\n</p>\n<p>\n<span>Tên tài khoản:</span>\n<span>{BankAccountName}</span>\n</p>\n<p>\n<span>Số tài khoản:</span>\n<span>{BankAccountNumber}</span>\n</p>\n<p>\n<span>Số tiền:</span>\n<span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n</p>\n<p>\n<span>Constant:</span>\n<span>{Amount}&nbsp;{Currency}</span>\n</p>\n<p>\n<span>Mã giao dịch</span>\n<span>{Reference}</span>\n</p>\n</div>\n<div name=\"notice\">\n<b name=\"important\">CHÚ Ý:</b>\n<span>\nLuôn ghi mã giao dịch <b>{Reference}</b> trong phần nội dung chuyển khoản\n</span>\n</div>\n<div name=\"window\">\n<strong name=\"minutes\">30 PHÚT:</strong>\n<span>\nVui lòng chuyển khoản <b>trong vòng 30 phút</b>. Nếu không, giao dịch sẽ tự động bị huỷ bỏ.\n</span>\n</div>        ",
@@ -1442,16 +1442,16 @@
             },
             "send": {
                 "confirmTemplate": {
-                    "title": "Thank you!",
-                    "description": "Your funds are on the way to your recipient's bank account. We estimate that it will take sometimes. Once the recipient has received the funds, please click confirm on the Order History page, so we can finalize the record.",
-                    "contact": "If you have any questions, feel free to reach out to <a href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime."
+                    "title": "Xin cảm ơn!",
+                    "description": "Tiền của bạn sẽ được chuyển thành công trong vài phút tới. Khi người nhận nhận được tiền, xin vui lòng xác nhận trong lịch sử giao dịch để hoàn tất hồ sơ.",
+                    "contact": "Xin vui lòng liên hệ chúng tôi qua email <a href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> để được hỗ trợ nhanh nhất."
                 }
             },
             "withdraw": {
                 "confirmTemplate": {
-                    "title": "Thank you!",
-                    "description": "Your funds are on the way to your recipient's bank account. We estimate that it will take sometime. Once the recipient has received the funds, please click confirm on the Order History page, so we can finalize the record.",
-                    "contact": "If you have any questions, feel free to reach out to <a href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime."
+                    "title": "Xin cảm ơn!",
+                    "description": "Tiền của bạn sẽ được chuyển thành công trong vài phút tới. Khi người nhận nhận được tiền, xin vui lòng xác nhận trong lịch sử giao dịch để hoàn tất hồ sơ.",
+                    "contact": "Xin vui lòng liên hệ chúng tôi qua email <a href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> để được hỗ trợ nhanh nhất."
                 }
             }
         },
@@ -1656,7 +1656,7 @@
                 "startDateLabel": "Ngày bắt đầu",
                 "endDateLabel": "Ngày kết thúc",
                 "toolTipCollateral": "\nĐây là khoản thế chấp cần có để vay được {exchangeUnit}. Giá trị tài sản thế chấp được tính theo giá thị trường {exchangeRate}.        ",
-                "walletAddressLabel": "Your {symbol} wallet address",
+                "walletAddressLabel": "Địa chỉ ví {symbol} của bạn",
                 "walletAlias": "0x687C906b2....8bd9369242e",
                 "moreInfo": "Bạn sẽ nhận được khoản vay ngay khi phần tài sản thế chấp được xác nhận trên chuỗi khối. Thời gian dự kiến: 2 phút cho ETH và 10 phút cho BTC."
             },
@@ -1923,7 +1923,7 @@
         "photoIncome2": "Thu nhập năm 2018",
         "accreditationAlt": "Bắt buộc theo luật Hoa Kỳ để đầu tư gây quỹ theo mục 506(c)",
         "title1": "How is asdf accredited?",
-        "desc1": "\n      We require proof of accreditation from you that meets the more stringent standard the SEC has put\n      in place –\n      <a target=\"_blank\" rel=\"nofollow\" href=\"http://www.sec.gov/info/smallbus/secg/general-solicitation-small-entity-compliance-guide.htm\">the 506(c) standard</a>\n      – which should work for all accredited deals, including ones that publicly discuss their financing.",
+        "desc1": "\nChúng tôi yêu cầu bạn cung cấp những bằng chứng chứng minh bạn có thể đáp ứng tiêu chuẩn nghiêm ngặt mà SEC đã đưa ra\n<a target=\"_blank\" rel=\"nofollow\" href=\"http://www.sec.gov/info/smallbus/secg/general-solicitation-small-entity-compliance-guide.htm\"> tiêu chuẩn 506(c)</a>\n- được áp dụng cho tất cả những giao dịch được công nhận, bao gồm cả những giao dịch công khai tình tình tài chính của họ.",
         "income": {
             "title": "Thu nhập",
             "alt": "Hợp lệ trong 1 năm tài chính",
@@ -2202,7 +2202,7 @@
         "amountMustBeLargerThan": "Số tiền gửi phải lớn hơn {min}{fiatCurrency}",
         "howMuchDoYouWantToDeposit": "BẠN MUỐN NỘP BAO NHIÊU TIỀN VÀO TÀI KHOẢN? ",
         "formDesc": "Tiền nộp vào tài khoản Constant được FDIC bảo hiểm tối đa lên đến 130,000,000 USD.",
-        "depositForWithdraw": "Please make sure you have sufficient funds in your account to complete the transfer.<br/>To make a transfer of ${amount}, please deposit sufficient funds."
+        "depositForWithdraw": "Bạn không đủ tiền để thực hiện chuyển khoản.<br/>Để chuyển ${amount}, xin vui lòng nộp thêm tiền vào tài khoản."
     },
     "exchangeInputSellForm": {
         "amountResult": {
@@ -2271,10 +2271,10 @@
         "makeTrialOrderFailed": "Lệnh của bạn không được tạo thành công"
     },
     "send": {
-        "makeLocalOrderSuccess": "Your order was created successfully",
-        "makeLocalOrderFailed": "Failed while creating your order",
-        "makeDirectOrderSuccess": "Your order was created successfully",
-        "makeDirectOrderFailed": "Failed while creating your order",
+        "makeLocalOrderSuccess": "Tạo lệnh thành công",
+        "makeLocalOrderFailed": "Tạo lệnh không thành công",
+        "makeDirectOrderSuccess": "Tạo lệnh thành công",
+        "makeDirectOrderFailed": "Tạo lệnh không thành công",
         "info": {
             "title": "CHUYỂN TIỀN",
             "desc1": "Tiện lợi.",
@@ -2321,8 +2321,8 @@
             "whatCaption3": "Phí rút tiền rất thấp",
             "whatDesc0": "<p>Dễ dàng rút tiền từ tài khoản Constant về bất cứ tài khoản ngân hàng nào mà bạn muốn.</p>",
             "whatDesc1": "<p>Bạn sẽ nhận được tiền trong 5 phút. Thời gian chờ có thể sẽ lâu hơn nếu ngoài giờ giao dịch.</p>",
-            "whatDesc2": "<p>Your money is stored in USD. If you withdraw in a different currency, it will be converted at the current market rate.</p>",
-            "whatDesc3": "<p>Withdraw as often as you like. The only fee we charge is a 0.25% withdrawal fee - capped at $35. Never more.</p>"
+            "whatDesc2": "<p>Bạn giữ USD trong tài khoản Constant. Khi rút tiền, bạn sẽ nhận được VNĐ về tài khoản ngân hàng theo tỉ giá thị trường tại thời điểm rút.</p>",
+            "whatDesc3": "<p>Phí rút tiền chỉ 0.25% giá trị giao dịch. Tối đa 35 USD. Không hơn.</p>"
         },
         "howItWorks": {
             "step1": "Bước 1",
@@ -2382,7 +2382,7 @@
         "howWeWork": {
             "title": "Sứ mệnh của Constant",
             "subTitle": "Chúng tôi mong muốn xây dựng thành công một hệ thống tài chính công bằng và tự do hơn.",
-            "desc": "\n        <p>As pioneers of borderless banking on the blockchain, we are committed to making banking more inclusive, money more useful, and growth more accessible to anyone, anywhere in the world.</p>\n        <p>What does that look like? Fair interest rates. Inclusive loans. A state-less, stable currency that you can save, borrow, and spend. Transactions secured and carried out collectively by users of the network. A bank for the people, made possible by the people.</p>\n        <p>Constant is proud to be 100% digital, online 24/7. So no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime.</p>\n      "
+            "desc": "\n<p>Chúng tôi tin vào một hệ thống tài chính công bằng hơn, kinh tế hơn!\nTham gia vào lĩnh vực tài chính trên nền tảng blockchain từ những ngày đầu tiên, chúng tôi là những kỹ sư tin rằng ngành tài chính nên dành cho mọi người: nhiều quyền lợi hơn, dễ sử dụng hơn bất kể bạn là ai và đang sinh sống ở đâu.</p>\n<p>Thế nào là dịch vụ tài chính hoàn hảo? Đối với đội ngũ Constant, đó là loại tiền tệ có thể lưu thông tự do trên toàn thế giới với giá trị ổn định nhất. Bạn có thể tích lũy, tiêu xài, vay nợ chỉ bằng 1 loại tiền tệ quyền lực được định giá bởi USD và bảo hiểm bởi những tổ chức uy tín nhất thế giới. Trong ước mơ của Constant, đây chính là một “ngân hàng” tạo ra bởi người dùng & phục vụ lợi ích của người dùng.</p>\n<p>Hơn thế nữa, chúng tôi là một dự án công nghệ! Nghĩa là Constant luôn sẵn sàng 24/7, 100% online. Không còn cảnh xếp hàng ở phòng giao dịch, không còn những người nghẽn mạch thanh toán do lễ tết. Chúng tôi - những kỹ sư, nhà thiết kế, chuyên gia tài chính làm việc trên toàn thế giới với mục tiêu lớn nhất là giúp tiền của bạn sinh lời và lưu thông dễ dàng nhất.</p>      "
         },
         "stories": {
             "quote0": "Great user experience. It's always fun watching my savings grow, and super convenient that I can withdraw it anytime. A nice zero-risk companion to your other investments, and a decent enough investment in itself.",
@@ -2722,7 +2722,7 @@
             "title": "Accounting"
         },
         "custodian": {
-            "title": "Custodian"
+            "title": "Giám sát"
         }
     },
     "home1": {

@@ -24,7 +24,7 @@
             "confirm": "Xác nhận",
             "cancel": "Huỷ",
             "confirmPassword": "Xác nhận mật khẩu",
-            "wrongPassword": "Invalid Password"
+            "wrongPassword": "Sai mật khẩu"
         },
         "local": {
             "type": {

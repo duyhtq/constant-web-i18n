@@ -150,7 +150,7 @@
         "myAccount": "Tài khoản của tôi",
         "deposit": "Nộp tiền",
         "transfer": "Rút tiền",
-        "send": "Gửi",
+        "send": "Chuyển tiền",
         "banking": "Ngân hàng",
         "save": "Đầu tư",
         "borrow": "Vay",
@@ -227,8 +227,8 @@
                     "subTitle": "Nghiên cứu, Kiến tạo & Cộng đồng"
                 },
                 "trade": {
-                    "title": "Trade",
-                    "subTitle": "Constant on exchanges"
+                    "title": "Giao dịch",
+                    "subTitle": "Các sàn giao dịch"
                 }
             }
         }
@@ -361,7 +361,7 @@
             "lDocType": "Loại giấy tờ",
             "plDocType": "Chọn loại giấy tờ",
             "btnSubmit": "Gửi",
-            "lUpload": "Upload an image of the {face} of your {type}",
+            "lUpload": "Tải lên hình ảnh {face} của {type}",
             "descIDUpload": "Hãy chắc chắn rằng hình ảnh được tải lên phải ở định dạng BMP, JPG, JPEG hoặc PNG, rõ ràng sắc nét và nhỏ hơn 3MB.",
             "lAddrStr1": "Địa chỉ",
             "lAddrCountry": "Quốc gia",
@@ -412,28 +412,28 @@
         "termOrder": {
             "title": "Term Order Available",
             "userAndDate": "User/Date",
-            "matched": "Matched",
-            "date": "Date",
+            "matched": "Phù hợp",
+            "date": "Ngày",
             "termAndRate": "Term/Rate",
-            "amount": "Amount",
-            "accept": "Accept",
-            "cancel": "Cancel",
-            "confirm": "Confirm",
+            "amount": "Số lượng",
+            "accept": "Đồng ý",
+            "cancel": "Huỷ",
+            "confirm": "Xác nhận",
             "confirmTitle": "Confirm matched amount",
-            "confirmMess": "Are you sure you want to confirm this order?",
-            "reject": "Reject",
-            "rejectMess": "Are you sure you want to reject this order?",
-            "loadMore": "Load more",
+            "confirmMess": "Bạn xác nhận muốn thực hiện giao dịch này?",
+            "reject": "Từ chối",
+            "rejectMess": "Bạn từ chối thực hiện giao dịch này?",
+            "loadMore": "Tải thêm",
             "matchedAmount": "Matched Amount",
             "status": {
-                "status": "Status",
-                "transferred": "Transferred",
-                "transferred_fiat": "Transferred Fiat",
-                "picked": "Picked",
-                "pending": "Pending",
-                "cancelled": "Cancelled",
-                "system_cancelled": "System Cancelled",
-                "system_rejected": "System Rejected"
+                "status": "Trạng thái",
+                "transferred": "Đã chuyển khoản",
+                "transferred_fiat": "Đã chuyển tiền",
+                "picked": "Đã chọn",
+                "pending": "Đang chờ",
+                "cancelled": "Đã huỷ",
+                "system_cancelled": "Hệ thống đã huỷ",
+                "system_rejected": "Hệ thống đã từ chối"
             },
             "acceptFailed": {
                 "": "Picked booking order is failing, please try again, or contact my admin for help. \n Thanks! ",
@@ -674,7 +674,7 @@
             "close": "Đóng",
             "detail": "Chi tiết giao dịch",
             "extID": "Giấy tờ khác",
-            "exportToExcel": "Export to excel",
+            "exportToExcel": "Xuất ra tệp Excel",
             "agent": {
                 "acceptSuccessfully": "Lựa chọn của bạn đã được chấp nhận thành công",
                 "cancelSuccessfully": "Lựa chọn của bạn đã được huỷ thành công",
@@ -688,13 +688,13 @@
                 "0": "Mua",
                 "1": "Đổi",
                 "2": "Chuyển khoản",
-                "3": "Saving",
+                "3": "Đầu tư",
                 "4": "Lãi suất",
                 "5": "Phí",
-                "6": "Import",
-                "7": "Deposit",
+                "6": "Nhập",
+                "7": "Nộp tiền",
                 "8": "Chuyển tiền",
-                "9": "Risk",
+                "9": "Rủi ro",
                 "received": "Đã nhận"
             },
             "orderStatus": {
@@ -825,7 +825,7 @@
             "bankNameHolder": "Nhập tên ngân hàng",
             "bankAccountNameHolder": "Nhập tên tài khoản ngân hàng",
             "bankAccountNumberHolder": "Nhập số tài khoản ngân hàng",
-            "input2FA": "Please, enter your OTP",
+            "input2FA": "Xin vui lòng nhập mã OTP",
             "alert": {
                 "success": "Cập nhật thành công",
                 "failed": "Cập nhật không thành công. Xin vui lòng thử lại.",
@@ -950,13 +950,13 @@
                 "input2FA": "Input 2FA",
                 "cancel": "Rút tiền",
                 "termStatus": {
-                    "created": "Matched",
-                    "pending": "Pending",
-                    "closed": "Closed",
-                    "rejected": "Rejected",
-                    "pending_kyc": "Pending Kyc",
-                    "matched": "Matched",
-                    "matching": "Pending"
+                    "created": "Phù hợp",
+                    "pending": "Đang chờ",
+                    "closed": "Đã đóng",
+                    "rejected": "Đã từ chối",
+                    "pending_kyc": "Đang xác minh KYC",
+                    "matched": "Phù hợp",
+                    "matching": "Đang chờ"
                 },
                 "interestInfo": {
                     "header": {
@@ -989,7 +989,7 @@
                 "withdraw": "Rút tiền",
                 "transfer": "Chuyển khoản",
                 "batchtransfer": "Chuyển khoản tới nhiều người cùng lúc",
-                "deposit": "Make a deposit",
+                "deposit": "Nộp tiền",
                 "row": "Hàng",
                 "errorMessage": "Đã xảy ra lỗi",
                 "saving": "Mở tài khoản ngay",
@@ -1689,15 +1689,15 @@
             "reference": "\n        <div name=\"ref-container\">\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Lãi suất:</span>\n            <span name=\"ref-value\">{intRate}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Giá trị thế chấp:</span>\n            <span name=\"ref-value\">{colValue}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Lãi từ phần tài sản thế chấp:</span>\n            <span name=\"ref-value\">{colReturn}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Ngưỡng mặc định:</span>\n            <span name=\"ref-value\">{defThreshold}</span>\n          </div>\n        </div>\n      \n      ",
             "transaction": {
                 "transactionID": "mã giao dịch",
-                "noticeTpl": "Please send <strong>{collateralAmount} {collateralSymbol}</strong> as collateral to the following address within the next <strong>60 minutes</strong>.",
+                "noticeTpl": "Xin vui lòng gửi <strong>{collateralAmount}{collateralSymbol}</strong> tới địa chỉ dưới đây trong vòng <strong>60 phút</strong> để thế chấp.",
                 "summarizeTitle": "Các thời hạn vay:",
                 "copiedAddress": "Đã sao chép địa chỉ",
                 "summarizeContent": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Khoản vay:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Lãi suất:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Thế chấp:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Thời hạn:</span>\n              <span name=\"ref-value\">{term}</span>\n            </div>\n          </div>\n        \n        "
             },
             "history": {
                 "itemTpl": "\n          <div name=\"loan-info-container\">\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Khoản vay:</span>\n              <span name=\"loan-info-value\">{loanAmount}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Lãi suất:</span>\n              <span name=\"loan-info-value\">{interestedRate}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Thế chấp:</span>\n              <span name=\"loan-info-value\">{collaterals}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Thời hạn:</span>\n              <span name=\"loan-info-value\">{term}</span>\n            </div>\n          </div>\n        ",
-                "address": "Address",
-                "collateralAddress": "Collateral Address",
+                "address": "Địa chỉ ví",
+                "collateralAddress": "Địa chỉ ví dùng để thế chấp",
                 "renew": "Gia hạn",
                 "status": {
                     "pending": "đang chờ",
@@ -1733,8 +1733,8 @@
             },
             "errorMessages": {
                 "required": "Yêu cầu",
-                "minimumBorrowAmount": "The minimum amount that you can borrow is {amount} {symbol}",
-                "inValidWalletAddress": "Your wallet address invalid"
+                "minimumBorrowAmount": "Bạn có thể vay tối thiểu {amount}{symbol}",
+                "inValidWalletAddress": "Địa chỉ ví không hợp lệ"
             },
             "learnMore": "Tìm hiểu thêm"
         },
@@ -1858,27 +1858,27 @@
             "content": {
                 "faq1": {
                     "question": "Phần thưởng cho chương trình giới thiệu của Constant là gì?",
-                    "answer": "\n          <p>\n          The Constant Referral Reward program earns you extra interest for investing or sharing Constant with friends and family. You earn interest by completing certain actions, such as referring Constant to friends who then sign up, sharing Constant on social media, and investing a minimum of $1,000 or more.\n          </p>\n          <p>\n          Complete all actions in our Referral Rewards program and you could earn 6% additional interest on your Investment Plans.\n           </p>\n          "
+                    "answer": "\n          <p>\n          Chương trình giới thiệu của Constant giúp bạn tăng thêm mức lãi suất đầu tư khi bạn chia sẻ và giới thiệu Constant với người thân và bạn bè. Để được tăng thêm mức lãi suất, bạn cần chia sẻ về Constant trên mạng xã hội, giới thiệu cho bạn bè mở tài khoản Constant và đầu tư tối thiểu 1,000 USD trở lên. \n          </p>\n          <p>\n          Hoàn thành tất cả những yêu cầu trên và bạn có thể nhận thêm 6% lãi suất vào các khoản đầu tư của mình.\n          </p>\n          "
                 },
                 "faq2": {
                     "question": "Làm thế nào để tăng lãi suất đầu tư?",
-                    "answer": "\n          <p>\n          Simple – just complete any of the following actions:\n          </p>\n          <p>\n          Invest $1,000 or more: <strong>2.5%</strong> (payable once).<br/>\n          Refer Constant to friends and family: <strong>0.2%</strong> for everyone who signs up (3% maximum).<br/>\n          Share Constant on Facebook: <strong>0.5%</strong> (payable once).\n          </p>\n          <p>\n          Your extra interest will be added to all of your existing Investment Plans, except for the Trial Plan.\n           </p>\n          "
+                    "answer": "\n          <p>\n          Rất đơn giản. Bạn chỉ cần hoàn thành những yêu cầu sau: \n          </p>\n          <p>\n          Đầu tư tối thiểu 1,000 USD: <strong>2.5%</strong> (chỉ tính một lần).<br/>\n          Giới thiệu Constant cho người khác: <strong>0.2%</strong> cho mỗi một người mới mở tài khoản (tối đa 3%).<br/>\n          Chia sẻ về Constant trên Facebook: <strong>0.5%</strong> (chỉ tính một lần).\n          </p>\n          <p>\n          Mức lãi suất thưởng này được cộng thêm vào tất cả các khoản đầu tư của bạn, ngoại trừ khoản đầu tư thử nghiệm.  \n           </p>\n          \n          "
                 },
                 "faq3": {
                     "question": "Mức lãi suất tối đa có thể là bao nhiêu?",
-                    "answer": "\n          <p>\n          Yes, once you’ve completed an action or earned the maximum reward for that action, you won’t earn any further interest.\n          </p>\n          <p>\n          All referral rewards are single use, except referring friends and family where you’ll earn 0.2% for every person who signs up to a maximum of 3%.\n           </p>\n          "
+                    "answer": "\n<p>\nKhi bạn đã hoàn thành mọi thao tác cần thiết, bạn đã tăng mức lãi suất lên tối đa và không thể tăng thêm được nữa. \n</p>\n<p>\nHiện tại, mức lãi suất có thể tăng thêm tối đa 6%. \n</p>\n          \n          "
                 },
                 "faq4": {
                     "question": "Có thể tìm link giới thiệu của tôi ở đâu?",
-                    "answer": "\n          <p>\n          Log into your account and go to My Investments. There you’ll find referral and Facebook links to share Constant with anyone you want.\n          </p>\n          "
+                    "answer": "\n<p>\n          Sau khi đăng nhập, bạn sẽ tìm thấy link giới thiệu của mình và link để chia sẻ Constant trên Facebook ở trong tab Tài khoản.\n          </p>\n          "
                 },
                 "faq5": {
                     "question": "Khi nào mức lãi suất tăng thêm được tính?",
-                    "answer": "\n          <p>\n          Immediately. We add your reward interest to all of your fixed Investment Plans as soon as you complete the actions. We’ll notify you by email, too.\n          </p>\n          "
+                    "answer": "\n<p>\n          Bạn sẽ được hưởng mức lãi suất tăng thêm vào tất cả các khoản đầu tư ngay lập tức sau khi bạn hoàn thành các yêu cầu của Constant. Constant cũng sẽ gửi bạn email để thông báo về việc tăng mức lãi suất này.\n          </p>\n          "
                 },
                 "faq6": {
                     "question": "Mức lãi suất tăng thêm này có tồn tại mãi không?",
-                    "answer": "\n          <p>\n          Yes, it will. The referral program lasts 90 days from Mar 15 to June 15. After that, the rate will return to normal.\n          </p>\n          "
+                    "answer": "\n          <p>\n          Chương trình giới thiệu tăng mức lãi suất chỉ có hiệu lực từ 15/3/2019 đến 15/6/2019. Sau thời gian đó, mức lãi suất sẽ trở về mức bình thường. \n          </p>\n          \n          "
                 }
             }
         }
@@ -2207,7 +2207,7 @@
     "exchangeInputSellForm": {
         "amountResult": {
             "amountToWithdraw": "Rút tiền: {amount}{currency}",
-            "fee": "Phí rút tiền: {fee}{currency}",
+            "fee": "Phí chuyển tiền: {fee}{currency}",
             "fiatAmountResultLabel": "Theo tỉ giá thị trường hôm nay, bạn sẽ nhận được: {fiatAmount}{fiatCurrency}",
             "explain": "*Tính cả phí chuyển tiền, bạn có thể gửi tối đa {amountExcludeFee} {currency}."
         },
@@ -2216,7 +2216,7 @@
         "getAmountFailed": "Không xác định được số tiền",
         "getFeeFailed": "Có lỗi xảy ra khi tính toán chi phí. Xin vui lòng thử lại",
         "getCurrencyListFailed": "Đơn vị tiền tệ này không được hỗ trợ",
-        "howMuchDoYouWantToSend": "How much do you want to send?",
+        "howMuchDoYouWantToSend": "Bạn muốn chuyển bao nhiêu tiền?",
         "howMuchDoYouWantToWithdraw": "Bạn muốn gửi bao nhiêu tiền?",
         "yourAnytimeBalance": "Số dư không kì hạn: {balance}{currency}",
         "whichCurrencyYouWant": "Bạn muốn nhận đơn vị tiền tệ nào?",
@@ -2276,11 +2276,11 @@
         "makeDirectOrderSuccess": "Your order was created successfully",
         "makeDirectOrderFailed": "Failed while creating your order",
         "info": {
-            "title": "SEND MONEY",
-            "desc1": "Conveninent.",
-            "desc2": "Reliable.",
-            "desc3": "Just 0.25% to receive.",
-            "desc4": "\n        <h5>All you need is an internet connection to make as many transfers as you like - any amount, anywhere in the world. Send money home, pay your international clients, transfer salaries to your distributed team. With a single click</h5>\n      "
+            "title": "CHUYỂN TIỀN",
+            "desc1": "Tiện lợi.",
+            "desc2": "Tiện lợi.",
+            "desc3": "Phí chuyển chỉ 0.25% giao dịch.",
+            "desc4": "<h5> Chỉ cần có kết nối internet, bạn có thể thực hiện việc chuyển tiền ngay lập tức đến bất kỳ đâu trên thế giới. Chuyển tiền về cho gia đình, thanh toán với các đối tác quốc tế, chuyển lương cho nhân viên, tất cả chỉ trong 01 cú click! </h5>"
         },
         "what": {
             "whatCaption0": "0.25%",
@@ -2294,14 +2294,14 @@
         },
         "howItWorks": {
             "step1": "Step 1",
-            "title1": "Sign up",
-            "desc1": "All you need is an email address. You can also sign up using a facebook or google account.",
+            "title1": "Đăng ký",
+            "desc1": "Bạn có thể đăng nhập bằng địa chỉ email hoặc đăng nhập tự động với Facebook/tài khoản Google\n",
             "step2": "Step 2",
-            "title2": "Make a deposit",
-            "desc2": "Make a bank transfer to the FDIC-insured Constant Vault.",
+            "title2": "Gửi tiền",
+            "desc2": "Chuyển tiền vào Quỹ Constant (được bảo hiểm bởi FDIC)\n",
             "step3": "Step 3",
-            "title3": "Send money",
-            "desc3": "Enter the amount you’d like to send and the recipient's bank account info. We take care of the rest."
+            "title3": "Chuyển tiền",
+            "desc3": "Chọn số tiền bạn muốn chuyển và thông tin ngân hàng người nhận. Đó là tất cả những gì bạn cần làm, phần còn lại để Constant lo.\n"
         }
     },
     "withdraw": {
@@ -2310,17 +2310,17 @@
         "makeDirectOrderSuccess": "Lệnh của bạn được tạo thành công",
         "makeDirectOrderFailed": "Lệnh của bạn không được tạo thành công",
         "info": {
-            "title": "Withdraw to your local bank.",
-            "desc1": "Withdraw funds to your bank account of choice.",
-            "desc4": "\n        <h5>Simply let us know where to send your USD funds to. If you’ve got a different local currency, it’s converted at the real-time market rate. Funds should reach you within 2 business days.</h5>\n      "
+            "title": "Rút tiền về tài khoản ngân hàng.",
+            "desc1": "Rút tiền về tài khoản ngân hàng mà bạn chọn.",
+            "desc4": "\n<h5>Bạn có thể rút tiền từ tài khoản Constant về tài khoản bất cứ lúc nào. Bạn sẽ nhận được VNĐ về tài khoản theo tỉ giá thị trường tại thời điểm rút trong vòng 5 phút.</h5>      "
         },
         "what": {
-            "whatCaption0": "Works with your bank",
-            "whatCaption1": "Easy, quick withdrawals",
-            "whatCaption2": "Withdraw in your local currency",
-            "whatCaption3": "Unlimited low-cost withdrawals",
-            "whatDesc0": "<p>Easily transfer Constant funds to your local bank account. Just let us know where to send it.</p>",
-            "whatDesc1": "<p>Funds should reach you within 2 days, but times may vary depending on your bank’s operating hours.</p>",
+            "whatCaption0": "Liên kết với các ngân hàng",
+            "whatCaption1": "Rút tiền đơn giản nhanh chóng",
+            "whatCaption2": "Nhận tiền VNĐ",
+            "whatCaption3": "Phí rút tiền rất thấp",
+            "whatDesc0": "<p>Dễ dàng rút tiền từ tài khoản Constant về bất cứ tài khoản ngân hàng nào mà bạn muốn.</p>",
+            "whatDesc1": "<p>Bạn sẽ nhận được tiền trong 5 phút. Thời gian chờ có thể sẽ lâu hơn nếu ngoài giờ giao dịch.</p>",
             "whatDesc2": "<p>Your money is stored in USD. If you withdraw in a different currency, it will be converted at the current market rate.</p>",
             "whatDesc3": "<p>Withdraw as often as you like. The only fee we charge is a 0.25% withdrawal fee - capped at $35. Never more.</p>"
         },
@@ -2602,16 +2602,16 @@
             "footer": "<a nice, friendly, human caption about each photo>",
             "captions": {
                 "0": {
-                    "caption": "Trong, our technical lead, writing the Constant {link}",
-                    "linkCaption": "smart contract",
+                    "caption": "Hãy cùng gặp Trọng, người tạo nên {link} cho Constant",
+                    "linkCaption": "hợp đồng thông minh",
                     "link": "https://medium.com/@constantbanking/meet-trong-the-man-putting-the-smart-in-smart-contract-b4345a31726c"
                 },
                 "1": {
-                    "caption": "Hello from all of us",
+                    "caption": "Constant xin chào!",
                     "link": " "
                 },
                 "2": {
-                    "caption": "Chatting stablecoins and the future of banking - the team at {link}",
+                    "caption": "Constant xuất hiện tại sự kiện công nghệ lớn nhất năm {link}",
                     "linkCaption": "CES 2019",
                     "link": "https://medium.com/@constantbanking/constant-shines-at-ces-2019-c6d206bf4d91"
                 }
@@ -2634,8 +2634,8 @@
                 },
                 "vn": {
                     "name": "Việt Nam",
-                    "address1": "139 Hong Ha Street",
-                    "address2": "Ho Chi Minh City",
+                    "address1": "139 Hồng Hà",
+                    "address2": "TP. Hồ Chí Minh",
                     "phone": "+84 36 656 2949"
                 },
                 "eu": {
@@ -2738,14 +2738,14 @@
                 "text5": "Đầu tư thử nghiệm",
                 "text6": "\n          <p>\n            <span class=\"darkorange4 bold\">Want to get a borrower instantly?</span> Invest at the current market rate of 10%. Or increase your rate and wait for a matching order.\n          </p>\n        ",
                 "btn1": "Đầu tư ngay",
-                "textLogin": "Login",
-                "textRegister": "Register",
+                "textLogin": "Đăng nhập",
+                "textRegister": "Đăng ký",
                 "btn2": "to start free trial",
                 "btnVerify": "Xác minh ngay",
                 "btnTrial": "Bắt đầu đầu tư thử nghiệm",
-                "btnAuth": "Log in or Register to invest",
-                "btnKyc": "Verify your ID to invest",
-                "btnKyc1": "<a>Verify your ID</a> to invest",
+                "btnAuth": "Đăng nhập hoặc Đăng ký để đầu tư",
+                "btnKyc": "Xác minh danh tính để đầu tư",
+                "btnKyc1": "<a>Xác minh danh tính</a> để đầu tư",
                 "minRate": "Lãi suất tối thiểu",
                 "maxTerm": "Kì hạn tối đa",
                 "tooltip": {
@@ -2759,12 +2759,12 @@
             },
             "alert": {
                 "success": "Thành công",
-                "sendEmailVerifyForTrialSuccess": "Thanks! We sent you a verification email to unlock your free trial.",
-                "sendEmailVerifyForTrialFailed": "Send email failedSorry, we could not send your verification email. Please make sure your email address is valid and try again.",
+                "sendEmailVerifyForTrialSuccess": "Xin cảm ơn! Bạn sẽ nhận được email xác nhận để thực hiện đầu tư thử nghiệm.",
+                "sendEmailVerifyForTrialFailed": "Gửi email xác nhận không thành công. Xin vui lòng nhập địa chỉ email hợp lệ.",
                 "trialFailed": "Submit trial was failed",
                 "normalSuccess": "Submit normal success",
                 "normalFailed": "Submit normal failed",
-                "trialSuccess": "Thanks! We're connecting you with a borrower glad to pay your rates. We'll send you an email when you're matched."
+                "trialSuccess": "Xin cảm ơn. Bạn sẽ nhận được email thông báo ngay khi bạn được kết nối với người sẵn sàng trả mức lãi suất bạn mong muốn."
             },
             "confirm": {
                 "thankYou1": "Đã gần xong.",

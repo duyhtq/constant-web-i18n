@@ -125,11 +125,11 @@
         "social": {
             "fb": {
                 "title": "Facebook",
-                "link": "https://www.facebook.com/constantbanking"
+                "link": "https://www.facebook.com/constantp2p\n"
             },
             "tw": {
                 "title": "Twitter",
-                "link": "https://twitter.com/constantbanking"
+                "link": "https://twitter.com/constantp2p\n"
             },
             "yt": {
                 "title": "Youtube",
@@ -137,7 +137,7 @@
             },
             "md": {
                 "title": "Medium",
-                "link": "https://medium.com/@constantbanking"
+                "link": "https://medium.com/@constantp2p\n"
             },
             "tele": {
                 "title": "Constant Telegram",
@@ -334,7 +334,7 @@
             "referralInfo": "Referral Information"
         },
         "wallet": {
-            "title": "This is your Constant wallet address on the Ethereum blockchain.",
+            "title": "This is your Constant wallet. Receive Constant from any ERC20 wallet here.",
             "walletAddress": "Your ether wallet: "
         },
         "kyc": {
@@ -1667,7 +1667,7 @@
             "what": {
                 "whatCaption0": "Get funds within minutes.",
                 "whatCaption1": "Crypto for cash",
-                "whatCaption2": "Protected by Ethereum smart contracts while on loan",
+                "whatCaption2": "Instant approval",
                 "whatCaption3": "Here’s an example.",
                 "whatDesc0": "\n<p>The money you need will reach you as soon as your collateral is confirmed on its blockchain. </p>\n\n<p>ETA: 2 minutes for ETH and 10 minutes for BTC.</p>        ",
                 "whatDesc1": "\n          <p>Secure your loan with BTC or ETH and receive USD - all without needing to sell your crypto. Enjoy liquidity without needing to liquidate.</p>\n        ",
@@ -2332,7 +2332,7 @@
             "title2": "Make a deposit",
             "desc2": "Make a bank transfer to the FDIC-insured Constant Vault.",
             "step3": "Step 3",
-            "title3": "Send money",
+            "title3": "Withdraw to your local bank",
             "desc3": "Enter the amount you’d like to send and the recipient's bank account info. We take care of the rest."
         }
     },
@@ -2594,8 +2594,8 @@
         }
     },
     "ours": {
-        "title": "Choose your own freedom.",
-        "content": "\n    <h5>Financial freedom looks different for everyone. It’s having the money to do what you want to do. Or simply having enough to never have to worry. Freedom is being able to make your money work for you - so you don’t have to. Freedom is having money that allows you to travel, work and live - anywhere in the world - and thrive.</h5>\n    <h5>Today’s generations are thinking bigger, but financial systems are still landlocked and insular, characterized by exclusivity, operating behind closed doors. People are trapped in centralized systems designed to profit a select few. Money sits languishing in even the best bank accounts, steadily losing value as inflation rises. Loans are hard to access, and even more difficult to repay. It is easier to fly to some places than it is to send money there. Billions of global-thinking people are lack the means or opportunity to even begin thinking about financial freedom.</h5>\n    <h5>This is a platform that connects all those in pursuit of a richer, more open world. Welcome to Constant.</h5>\n    ",
+        "title": "Think P2P.",
+        "content": "<h5>We’re a global-thinking, ambitious generation trapped in centralized systems designed to profit a select few. Hard-earned money lies stagnant, steadily losing value as inflation rises. Loans are hard to access, and even more difficult to repay. It is easier to fly to some places than it is to send money there.</h5>\n<h5>Today’s world is more connected than ever, but financial systems are still landlocked and insular, characterized by exclusivity, operating behind closed doors. The rapid growth of the P2P movement indicates a broken status quo, and reveals a world in common pursuit of financial autonomy. Everything we do at Constant is designed to make that goal more achievable.</h5>\n<h5>It’s time to choose people, not institutions. This is a platform that connects all those in pursuit of a richer, more open world. Welcome to Constant.</h5>\n",
         "team": {
             "title": "Building a richer, more connected world.",
             "content": "We’re proud of our extraordinary team of more than 50 scientists, engineers, designers, writers, economists, and community managers from all over the world. We love building new financial opportunities that everyone can benefit from - no matter where you live, or how much you have.",
@@ -2792,7 +2792,7 @@
         "whatCaption1": "Insured up to $130M while waiting for a match",
         "whatCaption2": "Protected by Ethereum smart contracts while on loan",
         "whatCaption3": "Collateral backed loans",
-        "whatDesc0": "\n      <p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.</p>\n      <br />\n      <p>You decide your rates. No hidden fees.</p>\n      <br />\n      <a href=\"https://www.myconstant.com/crypto-loan\" target=\"_blank\">How money is loaned out ></a>\n    ",
+        "whatDesc0": "\n      <p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.</p>\n      <br />\n      <p>You decide your rates. No hidden fees.</p>\n      <br />\n      <a href=\"https://www.myconstant.com/borrow\" target=\"_blank\">How money is loaned out ></a>\n    ",
         "whatDesc1": "\n      <p>Funds that have not yet been loaned out are kept safe at multiple FDIC-insured bank accounts with an aggregated insurance of $130M.</p>\n      <br />\n      <p>You can withdraw anytime.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/meet-scott-purcell-ceo-of-prime-trust-ae7581835030\" target=\"_blank\">How we deliver FDIC insurance ></a>\n    ",
         "whatDesc2": "\n      <p>When your money is on loan, it is no longer FDIC insured, but protected by a smart contract that runs exactly as programmed - without the need for human involvement.</p>\n      <br />\n      <p>Together, FDIC insurance and smart contract security, keep your money independently safe.</p>\n      <br />\n      <a href=\"https://github.com/constant-money\" target=\"_blank\">View our code ></a>\n    ",
         "whatDesc3": "\n      <p>If borrowers default or their collateral falls in value, you don’t lose a cent.</p>\n      <br />\n      <p>How? We strictly require every loan to be 150% backed by collateral. </p>\n      <br />\n   <p>If their collateral falls in value, it is automatically liquidated at 70%, so lenders always get their money back.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/how-do-constant-crypto-loans-work-b22b66b5b687\" target=\"_blank\">How we protect investor funds ></a>",
@@ -2816,7 +2816,7 @@
         "whatwedo": {
             "title": "How we work",
             "cap": "We’re building a fairer, freer, financial system.",
-            "desc": "\n        <p>Financial freedom looks different for everyone. It’s having the money to do what you want to do. Or simply having enough to never have to worry. Freedom is being able to make your money work for you - so you don’t have to. Freedom is having money that allows you to travel, work and live - anywhere in the world - and thrive.</p>\n        <br />\n        <p>This is a platform that connects all those in pursuit of a richer, more open world. Welcome to Constant.</p>"
+            "desc": "<h5>Today’s world is more connected than ever, but financial systems are still sluggish, landlocked and insular, characterized by exclusivity, operating behind closed doors. The rapid growth of the P2P movement indicates a broken status quo, and reveals a world in common pursuit of financial autonomy. Everything we do at Constant is designed to make that goal more achievable.</h5>\n<h5>It’s time to choose people, not institutions. This is a platform that connects all those in pursuit of a richer, more open world. Welcome to Constant.</h5>"
         }
     }
 }

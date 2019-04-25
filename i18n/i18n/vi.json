@@ -1444,14 +1444,14 @@
                 "confirmTemplate": {
                     "title": "Xin cảm ơn!",
                     "description": "Tiền của bạn sẽ được chuyển thành công trong vài phút tới. Khi người nhận nhận được tiền, xin vui lòng xác nhận trong lịch sử giao dịch để hoàn tất hồ sơ.",
-                    "contact": "Xin vui lòng liên hệ chúng tôi qua email <a href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> để được hỗ trợ nhanh nhất."
+                    "contact": "If you have any questions, feel free to reach out to <a class=\"white bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime."
                 }
             },
             "withdraw": {
                 "confirmTemplate": {
                     "title": "Xin cảm ơn!",
                     "description": "Tiền của bạn sẽ được chuyển thành công trong vài phút tới. Khi người nhận nhận được tiền, xin vui lòng xác nhận trong lịch sử giao dịch để hoàn tất hồ sơ.",
-                    "contact": "Xin vui lòng liên hệ chúng tôi qua email <a href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> để được hỗ trợ nhanh nhất."
+                    "contact": "If you have any questions, feel free to reach out to <a class=\"white bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime."
                 }
             }
         },
@@ -2647,7 +2647,7 @@
             }
         },
         "leaderships": {
-            "title": "Meet our team",
+            "title": "Những thành viên chủ chốt của Constant",
             "leaders": {
                 "duyHuynh": {
                     "name": "Duy Huynh",

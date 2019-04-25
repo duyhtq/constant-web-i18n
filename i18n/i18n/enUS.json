@@ -954,7 +954,7 @@
                     "pending": "Pending",
                     "closed": "Closed",
                     "rejected": "Rejected",
-                    "pending_kyc": "Pending Kyc",
+                    "pending_kyc": "Verify now",
                     "matched": "Matched",
                     "matching": "Pending"
                 },
@@ -1444,14 +1444,14 @@
                 "confirmTemplate": {
                     "title": "Thank you!",
                     "description": "Your funds are on the way to your recipient's bank account. We estimate that it will take sometimes. Once the recipient has received the funds, please click confirm on the Order History page, so we can finalize the record.",
-                    "contact": "If you have any questions, feel free to reach out to <a href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime."
+                    "contact": "If you have any questions, feel free to reach out to <a class=\"white bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime."
                 }
             },
             "withdraw": {
                 "confirmTemplate": {
                     "title": "Thank you!",
                     "description": "Your funds are on the way to your recipient's bank account. We estimate that it will take sometime. Once the recipient has received the funds, please click confirm on the Order History page, so we can finalize the record.",
-                    "contact": "If you have any questions, feel free to reach out to <a href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime."
+                    "contact": "If you have any questions, feel free to reach out to <a class=\"white bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime."
                 }
             }
         },

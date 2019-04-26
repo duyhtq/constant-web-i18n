@@ -2209,7 +2209,7 @@
             "amountToWithdraw": "Rút tiền: {amount}{currency}",
             "fee": "Phí chuyển tiền: {fee}{currency}",
             "fiatAmountResultLabel": "Theo tỉ giá thị trường hôm nay, bạn sẽ nhận được: {fiatAmount}{fiatCurrency}",
-            "explain": "*Tính cả phí chuyển tiền, bạn có thể gửi tối đa {amountExcludeFee} {currency}."
+            "explain": "*Tính cả phí chuyển tiền, bạn có thể chuyển tối đa {amountExcludeFee} {currency}."
         },
         "currencyDropdownLabel": "Đơn vị tiền tệ",
         "sellBtn": "Chuyển tiền",
@@ -2278,28 +2278,28 @@
         "info": {
             "title": "CHUYỂN TIỀN",
             "desc1": "Tiện lợi.",
-            "desc2": "Tiện lợi.",
+            "desc2": "Tin cậy.",
             "desc3": "Phí chuyển chỉ 0.25% giao dịch.",
             "desc4": "<h5> Chỉ cần có kết nối internet, bạn có thể thực hiện việc chuyển tiền ngay lập tức đến bất kỳ đâu trên thế giới. Chuyển tiền về cho gia đình, thanh toán với các đối tác quốc tế, chuyển lương cho nhân viên, tất cả chỉ trong 01 cú click! </h5>"
         },
         "what": {
             "whatCaption0": "0.25%",
-            "whatCaption1": "Convenient",
-            "whatCaption2": "Reliable",
-            "whatCaption3": "We’re here to help",
-            "whatDesc0": "<p>We only charge 0.25% for withdrawing to a local bank. For amounts of $14,000 and above, fees are capped at $35, never more.</p>",
-            "whatDesc1": "<p>No waiting in line or waiting for business hours - all you need is an internet connection. Simply enter the amount and where you want to send it to.</p>",
-            "whatDesc2": "<p>All funds you send are FDIC insured up to $130M, and once a transfer is made, it’s unstoppable. That’s how we protect your money, and make sure it gets to where it needs to go.</p>",
-            "whatDesc3": "<p>Our team is based in your preferred time zone. If you’re in the US, call us at 1-844-201-7242. If you’re in Vietnam, call us at +84 36 656 2949.</p>"
+            "whatCaption1": "Tiện lợi",
+            "whatCaption2": "Tin cậy",
+            "whatCaption3": "Hỗ trợ",
+            "whatDesc0": "<p>Chúng tôi chỉ thu phí chuyển tiền 0.25% giao dịch. Với giao dịch trên $14,000, phí luôn là $35.</p>",
+            "whatDesc1": "<p>Bạn không cần phải mất thời gian xếp hàng hoặc chờ đến giờ hành chính để thực hiện chuyển tiền. Chỉ cần có kết nối internet, bạn có thể chuyển tiền đến người nhận ngay lập tức!</p>\n\n",
+            "whatDesc2": "<p>Tiền của bạn khi gửi vào Constant sẽ được bảo hiểm bởi FDIC trị giá đến 130 triệu đô. Đó là lý do tại sao bạn không cần phải lo lắng khi gửi tiền tại Constant!</p>\n",
+            "whatDesc3": "<p>Đội ngũ của chúng tôi luôn sẵn sàng hỗ trợ bạn 24/24. Nếu bạn ở Mỹ, hãy liên hệ với chúng tôi qua số 1-844-201-7242, ở Việt Nam liên hệ qua số +84 36 656 2949.</p>\n"
         },
         "howItWorks": {
-            "step1": "Step 1",
+            "step1": "Bước 1",
             "title1": "Đăng ký",
             "desc1": "Bạn có thể đăng nhập bằng địa chỉ email hoặc đăng nhập tự động với Facebook/tài khoản Google\n",
-            "step2": "Step 2",
+            "step2": "Bước 2",
             "title2": "Gửi tiền",
             "desc2": "Chuyển tiền vào Quỹ Constant (được bảo hiểm bởi FDIC)\n",
-            "step3": "Step 3",
+            "step3": "Bước 3",
             "title3": "Chuyển tiền",
             "desc3": "Chọn số tiền bạn muốn chuyển và thông tin ngân hàng người nhận. Đó là tất cả những gì bạn cần làm, phần còn lại để Constant lo.\n"
         }
@@ -2650,76 +2650,76 @@
             "title": "Những thành viên chủ chốt của Constant",
             "leaders": {
                 "duyHuynh": {
-                    "name": "Duy Huynh",
-                    "position": "Founder",
-                    "description": "<p>Duy spends most of his days studying the great economic thinkers of the last 100 years and turning their ideas into unstoppable lines of code. Prior to Constant, Duy was a software architect at IBM. He then founded Autonomous, putting AI and Robotics into 350,000 modern workspaces all over the world in less than 2 years.</p><p>At age 19, Duy was a PhD computer science researcher funded by NASA, the Semantic Web and Fujitsu. As a competitive programmer, he was an ACM ICPC World Finalist, USA Computing Olympiad winner, and Vietnam Computing Olympiad winner.</p>"
+                    "name": "Duy Huỳnh",
+                    "position": "Nhà sáng lập",
+                    "description": "<p>Duy giành phần lớn thời gian của mình để nghiên cứu tư tưởng của những nhà kinh tế học vĩ đại nhất của nhân loại hàng trăm năm qua. Anh mong muốn có thể truyền tải được hết giá trị của những tư tưởng đó thông qua ngôn ngữ lập trình. Trước khi thành lập Constant, Duy từng là kiến trúc sư phần mềm tại IBM và đã thành lập Autonomous - công ty đã áp dụng trí thông minh nhân tạo và công nghệ robot để kiến tạo nên hơn 350,000 không gian làm việc thông minh trên toàn thế giới.</p><p>Năm 19 tuổi, Duy đã được tài trợ bởi NASA, Semantic Web và Fujitsu để làm nghiên cứu sinh tiến sĩ về khoa học máy tính. Trước đó trên ghế nhà trường, anh cũng đã vào đến chung kết của ACM ICPC - cuộc thi lập trình quốc tế lâu đời và danh giá nhất dành cho sinh viên các trường đại học và cao đẳng trên toàn cầu và giành được huy chương vàng Olympic tin học ở cả Mỹ và Việt Nam.</p>"
                 },
                 "thucNguyen": {
-                    "name": "Thuc Nguyen",
-                    "position": "Cryptography",
-                    "description": "<p>Thuc is a leading expert in the field of applied cryptography, and works on privacy, post-quantum cryptography, randomness, and all things cryptography at Constant. His current focus is on preserving the anonymity and confidentiality of Constant transactions through zero-knowledge proofs.</p><p>Thuc is a professor of applied cryptography at the National University of Vietnam, where he co-founded the Department of Applied Cryptography and Computer Security. He  co-leads the Decentralized Cryptography Research Group, designing innovative cryptographic tools and developing privacy-preserving cryptosystems that simultaneously achieve post-quantum security and practicality. He also leads key projects on security and cryptography for the Vietnamese government.</p>"
+                    "name": "Thúc Nguyễn",
+                    "position": "PGS. TS chuyên ngành mật mã ứng dụng",
+                    "description": "<p>Ông là chuyên gia hàng đầu trong lĩnh vực mật mã ứng dụng và đã có rất nhiều năm kinh nghiệm làm về bảo mật quyền riêng tư, mật mã sau lượng tử và tính ngẫu nhiên. Tại Constant, ông hiện đang tập trung vào việc bảo vệ tính ẩn danh và bảo mật các giao dịch thông qua bằng chứng không kiến thức.</p><p>Thầy Thúc là một giảng viên về mật mã ứng dụng tại trường Đại học Quốc gia, là người đồng sáng lập ra Khoa Mật mã ứng dụng và An ninh máy tính. Ngoài ra, thầy cũng là một trong những người lãnh đạo của Nhóm nghiên cứu mật mã phi tập trung, hướng tới việc thiết kế các công cụ mã hoá mang tính đột phá và phát triển các hệ thống bảo mật có thể đối mặt với những thách thức sau khi có máy tính lượng tử. Thầy đồng thời cũng phụ trách nhiều những dự án về an ninh và mật mã cho chính phủ Việt Nam. </p>"
                 },
                 "haTran": {
-                    "name": "Ha Tran",
-                    "position": "Financial Advisor. VP, Goldman Sachs",
-                    "description": "<p>Ha Tran, CFA, has been in the forefront of Technology and Finance over the last 15 years, holding positions in electronic trading and risk management at Goldman Sachs.  He led several innovative efforts to overhaul old ways of doing finance, including Automation, Simulation and Machine Learning.  Mr. Tran is currently working on a project to bring structured and complex financial products a step closer to the general public.</p>"
+                    "name": "Hà Trần",
+                    "position": "Tư vấn tài chính. Phó chủ tịch Goldman Sachs",
+                    "description": "<p>Hà Trần là một chuyên gia tư vấn tài chính có chứng chỉ CFA. Với hơn 15 năm kinh nghiệm trong các lĩnh vực tài chính và công nghệ, ông đang phụ trách giao dịch điện tử và quản lí rủi ro tại Goldman Sachs. Ông Hà luôn nỗ lực để cải thiện những cách làm cũ kĩ trong giới tài chính bằng cách áp dụng công nghệ tự động, mô phỏng và máy học. Ông mong muốn có thể mang một Constant rất thân thiện với người dùng đến gần hơn với cộng đồng. </p>"
                 },
                 "billPelletier": {
                     "name": "Bill Pelletier",
-                    "position": "Partnerships",
-                    "description": "<p>Bill leads outreach aimed at integrating Constant as a payment method for major e-commerce retailers.  Prior to Constant, Bill worked closely with some of the world’s biggest e-commerce retailers, including Amazon, Overstock, Target, Wayfair and Home Depot.  Before that, he developed the investment portfolio of major banks as a private banker, and has also advised multiple high profile clients on mergers & acquisition, trust & estates, and provided litigation support.</p>"
+                    "position": "Phụ trách đối tác",
+                    "description": "<p> Bill phụ trách tìm kiếm những kênh thương mại điện tử có thể sử dụng Constant như một hình thức thanh toán. Trước Constant, Bill đã từng cộng tác với những kênh thương mại điện tử hàng đầu thế giới như Amazon, Overstock. Target, Wayfair và Home Deposit. Trước đó, Bill cũng từng làm phát triển danh mục đầu tư trong nhiều ngân hàng lớn và đã tư vấn và hỗ trợ pháp lí cho nhiều khách hàng cao cấp về các lĩnh vực sáp nhập và thâu tóm, uỷ thác và bất động sản.</p>"
                 },
                 "ningTan": {
                     "name": "Ning Tan",
-                    "position": "Communications",
-                    "description": "<p>Ning facilitates the conversation between product, user and community. Prior to Constant, Ning was the Director of Communications at Autonomous, where she loved helping people in over 60 countries find ways to work smarter.</p><p>Ning specializes in easing the adoption of disruptive tech. She has created voices for friendly IoT products, eager robots, decentralized applications, and a very clever brain from the US military. As a postgraduate at the University of Oxford, she examined how humans navigate traumatic periods in history and respond through storytelling, philosophy and innovation.</p>"
+                    "position": "Phụ trách truyền thông",
+                    "description": "<p>Tại Constant, Ning là chất keo tuyệt vời kết nối sản phẩm với khách hàng và cộng đồng. Trước đó, Ning là Giám đốc Truyền thông ở Autonomous và giúp mang đến cho khách hàng ở hơn 60 quốc gia những cách làm việc thông minh và hiệu quả hơn.</p><p>Thông qua Ning, khách hàng có thể tiếp cận, hiểu và sử dụng những công nghệ đột phá dễ dàng hơn rất nhiều. Cô đã từng làm truyền thông cho rất nhiều những sản phẩm công nghệ cao liên quan đến Internet vạn vật, robot, hay những ứng dụng phi tập trung. Tốt nghiệp thạc sĩ tại Oxford, Ning yêu thích tìm hiểu cách con người vượt qua những giai đoạn đau thương trong lịch sử thông qua những câu chuyện, những phát minh và cả triết học.</p>"
                 },
                 "tienNguyen": {
-                    "name": "Tien Nguyen",
-                    "position": "Technical Advisor. Engineering manager, Essential",
-                    "description": "<p>Tien has built some of this decade’s most important products.  He built mobile payments for emerging markets at Google and payment hardware and software solutions for SMB businesses at Square.  Tien also built the Android app at Uber.  He is currently leading app development at Essential.</p>"
+                    "name": "Tiến Nguyễn",
+                    "position": "Tư vấn kĩ thuật | Kĩ sư trưởng tại Essential",
+                    "description": "<p>Những sản phẩm Tiến đã xây dựng có thể nằm trong danh sách những sản phẩm quan trọng nhất của thập kỉ này. Anh đã xây dựng thành công cổng thanh toán di động tại những thị trường mới nổi cho Google và các giải pháp thanh toán (cả phần cứng và phần mềm) cho các doanh nghiệp vừa và nhỏ cho Square. Tiến cũng là người xây dựng ứng dụng trên hệ điều hành Android cho Uber. Hiện anh đứng đầu bộ phận phát triển ứng dụng tại Essential.</p>"
                 },
                 "gaelVo": {
-                    "name": "Gaël Vo",
-                    "position": "Product Operations",
-                    "description": "<p>Gaël manages financial products at Constant, including remittance, loans, payroll and invoicing. Previously at BNP Paribas, he created a new framework to replace and centralize complex applications, enabling users and other developers to control the system independently.</p><p>Gaël holds a dual master’s degree in computer science and telecommunications from Institut National des Sciences Appliquées de Lyon, and an MBA in finance from Simon Business School in New York. As an MBA intern at Five Star Bank, Gaël developed an automation layer within loan management that cut processing time by 83%.</p>"
+                    "name": "Gaël Võ",
+                    "position": "Phụ trách vận hành sản phẩm",
+                    "description": "<p> Gael quản lí mọi vấn đề liên quan đến tài chính tại Constant từ chuyển khoản, cho vay, trả lương hay lập hoá đơn. Trước đây, anh cũng đã xây dựng thành công một hệ thống mới để thay thế hệ thống cũ quá phức tạp và khó quản lí tại BNP Paribas, giúp cho khách hàng và nhà phát triển có thể kiểm soát hệ thống một cách độc lập.</p><p>Gael có bằng thạc sĩ kép về Khoa học máy tính và Viễn thông tại Học viện Khoa học Ứng dụng Quốc gia Lyon và một bằng thạc sĩ Quản trị kinh doanh chuyên ngành tài chính tại Simon Business School ở New York. Khi thực tập tại Five Star Bank, anh đã phát triển một lớp tự động hoá trong quản lí khoản vay giúp cắt giảm 83% thời gian xử lí.</p>"
                 },
                 "zonChu": {
                     "name": "Zon Chu",
-                    "position": "Applications",
-                    "description": "<p>Zon leads application development. Prior to Constant, he spent 11 years as a full stack developer, project manager, and technical director for various e-commerce and social network companies in Vietnam and the USA. His e-commerce app for Nguyen Kim, one of the top regional retailers in the Asia-Pacific region, hit 4 million users in 2 years.</p><p>Zon has experience building for large, complex systems. He was a technical director at Viettel Group, where he designed software to manage its 50,000 employees and provide telecommunications services to 63 million subscribers across Asia, Africa and the Americas.</p>"
+                    "position": "Phụ trách phát triển sản phẩm",
+                    "description": "<p>Zon là kiến trúc sư trưởng tạo nên Constant. Trước Constant, anh đã có hơn 11 năm kinh nghiệm làm việc từ lập trình viên, quản lí dự án đến giám đốc kĩ thuật cho các công ty thương mai điện tử và truyền thông hàng đầu tại Việt Nam. Ứng dụng thương mại điện tử Zon xây dựng cho Nguyễn Kim, một trong những nhà bán lẻ lớn nhất thị trường châu Á đã có đến 4 triệu người sử dụng chỉ trong 2 năm đầu tiên.</p><p>Zon đặc biệt xuất sắc trong việc xây dựng và quản lí những hệ thống có quy mô lớn và phức tạp. Khi làm Giám đốc kĩ thuật tại tập đoàn Viettel, anh đã xây dựng thành công những ứng dụng có thể quản lí hơn 50,000 nhân viên của tập đoàn và cung cấp dịch vụ viễn thông cho hơn 63 triệu khách hàng của Viettel trên khắp thế giới từ châu Á, châu Phi đến châu Mỹ.</p>"
                 },
                 "trongDinh": {
-                    "name": "Trong Dinh",
-                    "position": "Smart Contract",
-                    "description": "<p>Trong leads smart contract development at Constant, the heart of the stability mechanism. He automates the dialogue between Constant and its partner custodian, which distributes and protects user funds across multiple FDIC-insured banks, protecting users from fraud, downtime and third-party interference. He spends his days implementing new layers of security and adapting the Constant application layer for use on other major blockchains.</p><p>Trong started to build for the blockchain after more than a decade of developing apps for web and mobile.  His first dApp got people to put promises on the blockchain, by helping them think of smart contracts as simple everyday agreements. He was also the CTO of Ninja, one of the top prediction exchanges built on Ethereum.</p>"
+                    "name": "Trọng Đinh",
+                    "position": "Phụ trách hợp đồng thông minh",
+                    "description": "<p>Trọng phụ trách phát triển phần hợp đồng thông minh, là trái tim của dự án Constant. Toàn bộ những thoả thuận giữa Constant và những đối tác đều được anh tự động hoá nhằm bảo vệ khách hàng và tài sản của họ khỏi mọi rủi ro khi giao dịch. Trọng dành phần lớn thời gian của mình để tạo thêm những lớp bảo mật mới và phát triển khả năng ứng dụng Constant lên những chuỗi khối khác. </p><p>Trọng đã có hơn 10 năm kinh nghiệm phát triển ứng dụng cho website và điện thoại di động. Ứng dụng dApp đầu tiên anh xây dựng mang đến rất nhiều hứa hẹn cho người sử dụng, giúp họ hiểu hơn về hợp đồng thông minh như những thoả thuận hàng ngày. Trước Constant, Trọng đã từng là Giám đốc kĩ thuật của Ninja, một trong những ứng dụng hàng đầu được xây dựng trên chuỗi Ethereum.</p>"
                 },
                 "baoLe": {
-                    "name": "Bao Le",
-                    "position": "Constant Chain",
-                    "description": "<p>Bao leads development on the Constant Chain. He predominantly works on the infrastructure layer of Constant, integrating both on-chain and off-chain components such as the consensus protocol, privacy-preserving zero-knowledge proofs, and monetary policy algorithms. Prior to Constant, Bao built highly scalable systems for emerging markets, including Viettel Group, Vietnam's largest mobile network operator, where he scaled their products for 63M subscribers, and Central Group, Thailand's number 1 retail and service group business.</p><p>Bao leverages his deep knowledge of peer-to-peer applications, cryptography, game theory, and network applications to build highly scalable systems that quantify performance, availability, and extensibility in each line of code.</p>"
+                    "name": "Bảo Lê",
+                    "position": "Phụ trách chuỗi Constant",
+                    "description": "<p>Bảo phụ trách phát triển chuỗi Constant. Những việc anh làm chủ yếu liên quan đến cấu trúc nền tảng của Constant, tích hợp các thành phần cả trong và ngoài chuỗi như giao thức đồng thuận, bằng chứng không kiến thức và các thuật toán về chính sách tiền tệ. Trước Constant, Bảo đã xây dựng thành công những hệ thống có khả năng mở rộng cao tại những thị trường mới nổi cho tập đoàn Viettel, nhà cung cấp mạng viễn thông lớn nhất Việt Nam và tập đoàn Central Group, nhà cung cấp dịch vụ bán lẻ số 1 Thái Lan.</p><p> Bảo tận dụng tối đa kiến thức chuyên sâu của mình về ứng dụng ngang hàng, mật mã học, lí thuyết trò chơi và ứng dụng mạng để xây dựng những hệ thống có khả năng mở rộng cao, có thể định lượng hiệu suất, tính khả dụng và phát triển thêm nữa thông qua ngôn ngữ lập trình.</p>"
                 },
                 "justinLucas": {
                     "name": "Justin Lucas",
-                    "position": "Community",
-                    "description": "<p>Justin leads Constant adoption. Throughout his time living and working in the UK, Hawaii, Japan and the USA, he has worn many hats - from sales to security, customer service to business development, and more. He has worked with early stage start ups as well as giants like Microsoft and Delivery.com, growing dynamic and engaged communities by simply taking a personal approach to resolving conflict, fixing inefficiencies and addressing user pain points with empathy.</p>"
+                    "position": "Phụ trách cộng đồng",
+                    "description": "<p>Justin là người sẽ mang Constant đến gần hơn nữa với cộng đồng. Đã từng sống và làm việc ở nhiều những quốc gia khác nhau, từ Anh, Hawaii, Nhật đến Mỹ, Justin có phông văn hoá rộng và kinh nghiệm trong nhiều những lĩnh vực khác nhau từ bán hàng, chăm sóc khách hàng, đến phát triển kinh doanh. Đã từng làm việc trong những công ty khởi nghiệp đến những gã khổng lồ như Microsoft hay Delivery.com, Justin luôn mang được sản phẩm đến gần hơn với những người cần chúng; luôn đồng cảm và hỗ trợ người dùng để giải quyết vấn đề một cách hiệu quả và vui vẻ nhất.</p>"
                 },
                 "dungTran": {
-                    "name": "Dung Tran",
-                    "position": "Scalability",
-                    "description": "<p>Dung works on the consensus & scalability algorithms at Constant. His current focus is on increasing transaction throughput while preserving consensus properties. Dung has extensive research and practical experience in distributed systems, computer networks, and game theory, making him the perfect candidate for designing and implementing consensus and scalability mechanisms at Constant.</p><p>Dung also lectures at the National University of Vietnam. As well as teaching courses on distributed systems, Dung has published several papers on bandwidth measurement and estimation, and is the author of two textbooks, Operation Systems and Computer Networks.  He holds a PhD in computer science from the University of Texas.</p>"
+                    "name": "Dũng Trần",
+                    "position": "Phụ trách khả năng mở rộng",
+                    "description": "<p> Dũng chủ yếu làm về các thuật toán đồng thuận và khả năng mở rộng của Constant. Hiện anh đang tập trung vào việc làm tăng thông lượng giao dịch trong khi vẫn bảo đảm các thuộc tính đồng thuận. Dũng đặc biệt phù hợp với vai trò thiết kế và áp dụng các cơ thế đồng thuận và cơ chế mở rộng tại Constant vì anh có rất nhiều nghiên cứu và kinh nghiệm thực tiễn về các hệ thống phân tán, mạng máy tính và lí thuyết trò chơi.</p><p>Dũng có bằng tiến sĩ về khoa học máy tính tại đại học Texas và đang là một giảng viên của trường Đại học Quốc gia. Không chỉ chuyên giảng dạy về hệ thống phân tán, anh còn là tác giả của hai cuốn giáo trình về Vận hành hệ thống và Mạng máy tính và đã xuất bản nhiều công trình nghiên cứu về đo lường và ước tính băng thông.</p>"
                 }
             }
         },
         "exchangePartners": {
-            "title": "Exchange Partners",
+            "title": "Sàn giao dịch",
             "exchanges": {}
         },
         "lawyers": {
-            "title": "Legal"
+            "title": "Pháp lý"
         },
         "accountants": {
-            "title": "Accounting"
+            "title": "Kiểm toán"
         },
         "custodian": {
             "title": "Giám sát"

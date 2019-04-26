@@ -2768,7 +2768,7 @@
             },
             "confirm": {
                 "thankYou1": "Almost there.",
-                "thankMsg": "Simply wire {amount} to our custodian to make a deposit.",
+                "thankMsg": "Simply wire {amount} to our custodian to make a deposit. Please note that for security reasons, ACH transfers will not go through, and only wire transfers will be accepted by our custodian.",
                 "bankName": "Bank name",
                 "accountName": "Account name",
                 "accountNumber": "Account number",

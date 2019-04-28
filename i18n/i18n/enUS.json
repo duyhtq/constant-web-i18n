@@ -141,7 +141,7 @@
             },
             "tele": {
                 "title": "Constant Telegram",
-                "link": "https://t.me/constantbanking"
+                "link": "https://t.me/constantp2p"
             }
         }
     },
@@ -188,7 +188,7 @@
         "login": "Login",
         "openAnAccount": "Open an account",
         "yourSaving": "Accounts",
-        "myInvestments": "My Savings",
+        "myInvestments": "My Investments",
         "hoverMenu": {
             "deposit": {
                 "title": "Bank",
@@ -250,7 +250,7 @@
             "generalCode500": "Something went wrong, please try again! (500)",
             "generalCode400": "Something went wrong, please try again! (400)",
             "generalError": "Opps! Something went wrong, please try again",
-            "notEnoughConstant": "You do not have enough Constant to send yet.",
+            "notEnoughConstant": "Please ensure you have sufficient funds in your account to complete this transfer.",
             "buyMin35Cst": "The minimum amount you can buy is 35 Constant.",
             "buyMin5Cst": "The minimum amount you can buy is 5 Constant.",
             "registerWithExistEmail": "This email already exists in our system. Please try another.",
@@ -325,7 +325,7 @@
             "referral": "Referral",
             "personalInfo": "About you",
             "myTransactions": "Account activity",
-            "yourInvest": "Your Savings",
+            "yourInvest": "Your Investments",
             "myAgent": "My Agent",
             "yourAccreditation": "Your Accreditation",
             "myLoans": "My Loans",
@@ -520,7 +520,7 @@
                 }
             },
             "noData": "No buy order available",
-            "yourInvest": "Your Savings"
+            "yourInvest": "Your Investments"
         },
         "personalProfile": {
             "title": "Personal Detail",
@@ -557,7 +557,7 @@
             "errorsInvalidKYC": "User info is invalid for KYC pre-validate",
             "errorsMissParramKYC": "User info is not enough to verify KYC",
             "saveSuccess": "Your profile was updated successfully",
-            "saveFailed": "Failed while updating your profile, please try again",
+            "saveFailed": "Something went wrong, please try again",
             "addressInfo": "Your address and ID information should match the information in the uploaded image."
         },
         "accountInfo": {
@@ -645,7 +645,7 @@
         },
         "history": {
             "title": "Transaction History",
-            "balance": "Total balance: {balance} CONSTANT",
+            "balance": "Total balance: {balance} USD",
             "date": "Date",
             "transactionID": "Transaction ID",
             "transfer": "Transfer",
@@ -657,7 +657,7 @@
             "toAddress": "To Address",
             "fromEmail": "From Email",
             "viewDetail": "Details",
-            "noHistoryData": "Make a deposit to start saving better.",
+            "noHistoryData": "Make a deposit to get started.",
             "fee": "fee",
             "loadMore": "Load more",
             "status": "Status",
@@ -688,7 +688,7 @@
                 "0": "Buy",
                 "1": "Convert",
                 "2": "Transfer",
-                "3": "Saving",
+                "3": "Investments",
                 "4": "Interest",
                 "5": "Fee",
                 "6": "Import",
@@ -799,7 +799,7 @@
             }
         },
         "bankInfo": {
-            "emptyBank": "Make a deposit to start saving better.",
+            "emptyBank": "Make a deposit to get started.",
             "getBankFailed": "Failed while getting user list banks",
             "btnAdd": "Add a new bank",
             "titleAddBank": "Add a new bank",
@@ -933,7 +933,7 @@
         "proSaving": {
             "listApplications": {
                 "totalInterestEarned": "You've already earned",
-                "noRecord": "You have not started a Savings Plan yet.",
+                "noRecord": "You have not made any investments yet.",
                 "getListFailed": "Sorry, something went wrong. Please try again.",
                 "amount": "Principal",
                 "interest": "Interest",
@@ -984,7 +984,7 @@
                         "title": "That’s {percent}%",
                         "description": "On top of what you already earn - for every account."
                     },
-                    "shareFbSuccess": "Share referral link success."
+                    "shareFbSuccess": "Success! Thanks for telling your friends about Constant."
                 },
                 "withdraw": "Withdraw",
                 "transfer": "Transfer",
@@ -995,15 +995,15 @@
                 "saving": "Save now",
                 "dialog": {
                     "withdrawAccount": {
-                        "title": "Saving",
+                        "title": "Investments",
                         "body": "Want to get more out of your money? Try our investment plans and choose your own interest rate.",
                         "termTitle": "{month} month{termType}",
                         "percentReceive": "You will earn {percent}% APR.",
                         "confirm": "Invest",
                         "cancel": "Cancel",
-                        "messageConfirm": "You are about to invest {amount} Constant.",
-                        "validateMaxAmountError": "Sorry, you don't have enough Constant to deposit this amount.",
-                        "validateMinAmountError": "You can't input amount less than {amount} CONSTANT"
+                        "messageConfirm": "You are about to invest {amount} USD.",
+                        "validateMaxAmountError": "Please top up your Constant account with sufficient funds.",
+                        "validateMinAmountError": "Please enter an amount larger than {amount} USD."
                     },
                     "checkTrialKyc": {
                         "messageConfirm": "For your security, please verify your identity before making a withdrawal.",
@@ -1025,9 +1025,9 @@
                     }
                 },
                 "alert": {
-                    "depositSavingSuccess": "You successfully invested Constant.",
+                    "depositSavingSuccess": "Success! You made an investment.",
                     "depositSavingFailed": "Failed To Invest Saving",
-                    "stopSavingSuccess": "You ended your term deposit. Withdraw your funds anytime.",
+                    "stopSavingSuccess": "Your investment has matured. Withdraw your funds anytime.",
                     "stopSavingFailed": "End your term failed.",
                     "batchTransferSuccess": "You successfully sent the batch file",
                     "batchTransferFailed": "Failed to sent the batch file",
@@ -1064,7 +1064,7 @@
                 "dueDayValueLeft": "{day} days left",
                 "dueDayValueOver": "{day} days overdue",
                 "payConfirmMsg": "You will pay {amount} from your wallet ({balance})",
-                "requireTopup": "You balance ({balance}) not enough to pay {amount}. Topup now?",
+                "requireTopup": "Your balance of ({balance}) is insufficient to pay {amount}. Please top up.",
                 "backBtn": "Back to list",
                 "cancel": "Cancel",
                 "payForThisTerm": "Pay for this term",
@@ -1281,7 +1281,7 @@
                     "sellTitle": "Order Confirmation Convert Constant",
                     "buyThankMsg": "Thanks! Please wire the Constant Trust {amount} to complete your order.",
                     "sellThankMsg": "You sent request convert {amount}. It could be take 30 minutes transfer to your bank account.",
-                    "orderThankMsg": "Thanks! Please wire the Constant Trust {amount} USD to complete your order.",
+                    "orderThankMsg": "Thanks! Please make a wire transfer of {amount} USD to our custodian Prime Trust LLC.",
                     "importantMsg": "Do include your reference number {referenceNumber} in the transfer description.",
                     "important": "IMPORTANT"
                 },
@@ -1357,7 +1357,7 @@
                 },
                 "orderWithdraw": {
                     "title": "Almost there.",
-                    "message": "Please wire {amount} so you have sufficient funds in your account to complete the transfer."
+                    "message": "Please make a wire transfer of {amount} to our custodian Prime Trust, so you have sufficient funds in your account to complete the transfer."
                 },
                 "introHolderTemplate": "\n          <h1>Buy from local sellers in {country}</h1>\n          <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n          <p>Email us at <a href=\"mailto:{email}\">{email}</a></p>\n          <p>Or</p>\n          <p>Chat with us at <a href=\"telegram:{telegram}\">{telegram}</a></p>\n        ",
                 "confirmTemplate": "\n          <div name=\"thanks\">\n            <p>Thanks! Please wire <strong>{FiatAmount} {FiatCurrency}</strong> to the seller's bank account.</p>\n          </div>\n          <div name=\"bank\">\n            <p>\n              <span>Bank:</span>\n              <span>{BankName}</span>\n            </p>\n            <p>\n              <span>Account Name:</span>\n              <span>{BankAccountName}</span>\n            </p>\n            <p>\n              <span>Account Number: </span>\n              <span>{BankAccountNumber}</span>\n            </p>\n            <p>\n              <span>Amount: </span>\n              <span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n            </p>\n            <p>\n              <span>Constant: </span>\n              <span>{Amount}&nbsp;{Currency}</span>\n            </p>\n            <p>\n              <span>Reference: </span>\n              <span>{Reference}</span>\n            </p>\n          </div>\n          <div name=\"notice\">\n            <b name=\"important\">IMPORTANT:</b>\n            <span>\n              Do include your reference number <b>{Reference}</b> in the transfer description\n            </span>\n          </div>\n          <div name=\"window\">\n            <strong name=\"minutes\">30 MINUTE WINDOW: </strong>\n            <span>\n              Please complete your transfer <b>within 30 minutes</b>. After that, your\n              order will be automatically cancelled.\n            </span>\n          </div>\n        ",
@@ -1609,7 +1609,7 @@
             "viaEmailCaption": "Via Email",
             "viaAddressCaption": "To an ETH/EOS address",
             "yourBalance": "Your balance",
-            "validateMaxInput": "Your amount must less than or equal: ${amount}",
+            "validateMaxInput": "Please enter an amount less than or equal to ${amount}",
             "transferFeeLabel": "Transfer fee",
             "subTitle": "Free. To anyone, anywhere.",
             "introTitle": "Send money to anyone, anywhere.",
@@ -1617,7 +1617,7 @@
             "emailAddr": "Recipient’s email",
             "walletAddr": "Ethereum/EOS wallet address",
             "phToAddress": "Recipient’s email or Ethereum wallet address",
-            "confirmMsg": "Are you sure you want to transfer {amount} CONSTANT to {address}?",
+            "confirmMsg": "Are you sure you want to transfer {amount} USD to {address}?",
             "transferFailed": "Failed while transfering, please try again",
             "transferSuccessful": "Your transfer was completed successfully",
             "timeLimit": "Your money will arrive within ",
@@ -1665,10 +1665,10 @@
                 "description": "Constant crypto-backed loans have a generous loan to value ratio, no matter the amount you borrow. Benefit from the kindest interest rates on the market with our short term loans and get more liquidity out of your crypto."
             },
             "what": {
-                "whatCaption0": "Get funds within minutes.",
+                "whatCaption0": "Get funds within minutes",
                 "whatCaption1": "Crypto for cash",
                 "whatCaption2": "Instant approval",
-                "whatCaption3": "Here’s an example.",
+                "whatCaption3": "Here’s an example",
                 "whatDesc0": "\n<p>The money you need will reach you as soon as your collateral is confirmed on its blockchain. </p>\n\n<p>ETA: 2 minutes for ETH and 10 minutes for BTC.</p>        ",
                 "whatDesc1": "\n          <p>Secure your loan with BTC or ETH and receive USD - all without needing to sell your crypto. Enjoy liquidity without needing to liquidate.</p>\n        ",
                 "whatDesc2": "\n<p>No credit scoring or background checks - all we need is your collateral.</p>\n\n<p>Get funds instantly - no month-long waiting games for approval.</p>        ",
@@ -1711,22 +1711,22 @@
                 "confirmPay": {
                     "payingInterest": {
                         "title": "Interest Payment",
-                        "content": "\n              <p>Your Interest payment is <strong>{amountConstant}</strong> Constant</p>\n              <p>Your collateral payment is <strong>{amountCollateral} {symbol}</strong></p>\n            ",
+                        "content": "\n<p>Your Interest payment is <strong>{amountConstant}</strong> Usd/Constant</p>               <p>Your collateral payment is <strong>{amountCollateral} {symbol}</strong></p>            ",
                         "success": "Pay Successfully"
                     },
                     "fullPayment": {
                         "title": "Full Payment",
-                        "content": "\n              <p>Your Interest payment is <strong>{amountConstant}</strong> Constant</p>\n              <p>Your collateral payment is <strong>{amountCollateral} {symbol}</strong></p>\n            ",
+                        "content": "\n<p>Your Interest payment is <strong>{amountConstant}</strong> Usd/Constant</p>               <p>Your collateral payment is <strong>{amountCollateral} {symbol}</strong></p>            ",
                         "success": "Pay successfully"
                     }
                 },
                 "interestPaymentTitle": "Interest Payment",
-                "interestPaymentContent": "<p>Your Interest payment is <strong>{amountPayInterest}</strong> Constant</p>",
+                "interestPaymentContent": "<p>Your Interest payment is <strong>{amountPayInterest}</strong> USD/Constant</p>",
                 "balanceNotEnough": "Your Balance is not enough to pay",
                 "paySuccess": "Pay Successfully",
                 "noHistoryData": "Explore our USD loans.",
                 "paymentDetail": "Repayment details",
-                "itemPayment": "#{id} {description} <strong>{amount}</strong> Constant at {paymentDate}",
+                "itemPayment": "#{id} {description} <strong>{amount}</strong> USD/Constant on {paymentDate}",
                 "noPaymentDetail": "No payment detail",
                 "payConstant": "Pay by Constant",
                 "payCollateral": "Pay by Collateral"
@@ -1947,7 +1947,7 @@
         "totalDebt": "Total Debt",
         "popover1": "\n      Income Levels must be met for each tax year individually (the SEC does not allow averaging across years)<br/> <br/>If married filing jointly, either a joint income of at least 300k USD/year must be shown across spouses or the investing individual's W-2s must show a minimum income of 200k USD/year<br/> <br/>If W2's are provided for a married couple, evidence of marriage must be provided (such as joint-filed 1040)\n    ",
         "alert": {
-            "success": "Saving Form Submitted"
+            "success": "Investor application submitted"
         }
     },
     "homeWhatwedo": {
@@ -2125,8 +2125,8 @@
             "answer10": "\n        <p>The Federal Deposit Insurance Corporation (FDIC) is a body set up by the US government to protect the integrity of the US financial system. It does this in a number of ways, including insuring deposits. You can <a href=\"https://www.fdic.gov/about/strategic/strategic/mission.html\" target=\"_blank\">read more about the FDIC on their website.</a></p>\n        <p>When your money isn't on loan, we keep it safe across multiple FDIC-insured bank accounts, bringing total coverage to $130,000,000.</p>\n      ",
             "question11": "Why do you lend my savings to borrowers?",
             "answer11": "<p>\n        We lend your savings to borrowers so we can pay you better interest rates. Aside from seeing your money grow, you won’t notice any changes to your Savings Plan. There’s no risk to you as all our loans are overcollateralized, meaning we only lend to people who put up collateral worth more than the loan. If someone doesn’t repay, we sell collateral on the market. This guarantees we can always return your savings and pay you interest.\n      </p>",
-            "question12": "Is there a minimum or maximum amount I can save?",
-            "answer12": "\n        <p>No. You can save as much or as little as you like.</p>\n      "
+            "question12": "Is there a minimum or maximum amount I can invest?",
+            "answer12": "\n<p>No. You can invest as much or as little as you like.</p>      "
         },
         "returns": {
             "question1": "How is interest paid out?",
@@ -2169,7 +2169,7 @@
         "fiatAmountInputLabel": "Deposit amount",
         "currencyDropdownLabel": "Your currency",
         "amountResultLabel": "According to the markets today, that is:",
-        "buyBtn": "SAVE {fiatAmount} {fiatCurrency}",
+        "buyBtn": "INVEST {fiatAmount} {fiatCurrency}",
         "investNow": "Invest now",
         "amountTooSmall": "Your amount is too small, please try a larger amount",
         "noAgentAvaiable": "Please be patient with us, we’re trying to keep up. Try a smaller amount, or try again later.",
@@ -2177,7 +2177,7 @@
         "getCurrencyListFailed": "Failed while getting supported currencies",
         "loading": "Loading...",
         "amountMustBeLargerThan": "Your amount must be larger than {min} {fiatCurrency}",
-        "howMuchDoYouWantToDeposit": "How much do you want to save?",
+        "howMuchDoYouWantToDeposit": "How much do you want to invest?",
         "termLabel": "Pick the term that works for you.",
         "fundsTransferTypeLabel": "Transfer type",
         "bankAccountNameLabel": "Bank account name",
@@ -2374,7 +2374,7 @@
             "desc3": "Congratulations. You now have access to global transfers, secured investments, and more."
         },
         "checklist": {
-            "title": "Why you should save money with Constant.",
+            "title": "Why you should invest with Constant.",
             "subTitle": "Smarter than your average bank.",
             "desc1": "Like traditional banks, we reward you with interest earnings on our collateralized loans. Unlike traditional banks, <b>we give you most of it - since it’s your money, really.</b>",
             "desc2": "And because we replaced cashiers with code, advisors with algorithms, and switched out bricks and mortar for the blockchain - <b>we can pass the savings directly on to you.</b>"
@@ -2382,7 +2382,7 @@
         "howWeWork": {
             "title": "How We Work",
             "subTitle": "We’re building a fairer, freer, financial system.",
-            "desc": "\n        <p>As pioneers of borderless banking on the blockchain, we are committed to making banking more inclusive, money more useful, and growth more accessible to anyone, anywhere in the world.</p>\n        <p>What does that look like? Fair interest rates. Inclusive loans. A state-less, stable currency that you can save, borrow, and spend. Transactions secured and carried out collectively by users of the network. A bank for the people, made possible by the people.</p>\n        <p>Constant is proud to be 100% digital, online 24/7. So no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime.</p>\n      "
+            "desc": "\n<p>Today’s world is more connected than ever, but financial systems are still landlocked and insular, characterized by exclusivity, operating behind closed doors. Hard-earned money lies stagnant, steadily losing value as inflation rises. Loans are hard to access, and even more difficult to repay. It is easier to fly to some places than it is to send money there.</p>\n<p>Everything we do at Constant is designed to make money more free, growth more achievable, and financial opportunities more accessible, to anyone, anywhere in the world. </p>\n <p>Constant is proud to be 100% digital, online 24/7. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime.</p>\n      "
         },
         "stories": {
             "quote0": "Great user experience. It's always fun watching my savings grow, and super convenient that I can withdraw it anytime. A nice zero-risk companion to your other investments, and a decent enough investment in itself.",
@@ -2778,7 +2778,7 @@
                 "important": "Note",
                 "importantMsg": "Do include your reference number {referenceNumber} in the bank transfer description, so we can process your deposit as fast as possible.",
                 "minuteWindow": "Please complete your transfer within 24 hours.",
-                "minuteWindowDescription": "For the sake of security, this session will time-out after 24 hours. If you need a little longer, just re-enter the amount you would like to save when you’re ready.",
+                "minuteWindowDescription": "For the sake of security, this session will time-out after 24 hours. If you need a little longer, just re-enter the amount you would like to invest when you’re ready.",
                 "backOrderBook": "Buy more Constant",
                 "confirmMessage": "After you have made a transfer, please click confirm.",
                 "confirmButton": "Confirm payment",
@@ -2790,7 +2790,7 @@
         },
         "whatCaption0": "Set your own rates",
         "whatCaption1": "Insured up to $130M while waiting for a match",
-        "whatCaption2": "Protected by Ethereum smart contracts while on loan",
+        "whatCaption2": "Protected by Ethereum smart contracts",
         "whatCaption3": "Collateral backed loans",
         "whatDesc0": "\n      <p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.</p>\n      <br />\n      <p>You decide your rates. No hidden fees.</p>\n      <br />\n      <a href=\"https://www.myconstant.com/borrow\" target=\"_blank\">How money is loaned out ></a>\n    ",
         "whatDesc1": "\n      <p>Funds that have not yet been loaned out are kept safe at multiple FDIC-insured bank accounts with an aggregated insurance of $130M.</p>\n      <br />\n      <p>You can withdraw anytime.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/meet-scott-purcell-ceo-of-prime-trust-ae7581835030\" target=\"_blank\">How we deliver FDIC insurance ></a>\n    ",
@@ -2814,7 +2814,7 @@
             "desc": "We’ve done our homework."
         },
         "whatwedo": {
-            "title": "How we work",
+            "title": "Think P2P.",
             "cap": "We’re building a fairer, freer, financial system.",
             "desc": "<h5>Today’s world is more connected than ever, but financial systems are still sluggish, landlocked and insular, characterized by exclusivity, operating behind closed doors. The rapid growth of the P2P movement indicates a broken status quo, and reveals a world in common pursuit of financial autonomy. Everything we do at Constant is designed to make that goal more achievable.</h5>\n<h5>It’s time to choose people, not institutions. This is a platform that connects all those in pursuit of a richer, more open world. Welcome to Constant.</h5>"
         }

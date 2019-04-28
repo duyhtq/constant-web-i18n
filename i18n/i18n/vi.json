@@ -947,7 +947,7 @@
                 "trial_description": "Đã hết kì hạn. Khách hàng được giữ phần lãi",
                 "saving_title": "Gửi Tiết Kiệm Có Kì Hạn",
                 "anyTime_saving": "Số dư",
-                "input2FA": "Input 2FA",
+                "input2FA": "Nhập mã bảo mật 2 lớp",
                 "cancel": "Rút tiền",
                 "termStatus": {
                     "created": "Phù hợp",
@@ -1274,7 +1274,7 @@
                     "agreeSell": "Đồng ý đổi ra tiền",
                     "confirmText": "Bạn đang muốn đổi {amount} {currency}",
                     "confirmSubText": "Vui lòng kiểm tra thông tin của bạn một lần nữa.",
-                    "input2FA": "Input 2FA"
+                    "input2FA": "Nhập mã bảo mật 2 lớp"
                 },
                 "orderInfo": {
                     "buyTitle": "Xác nhận lệnh",
@@ -1477,7 +1477,7 @@
                     "agreeSell": "Đồng ý đổi",
                     "confirmText": "Bạn đang bán {amount} {currency}",
                     "confirmSubText": "Vui lòng kiểm tra thông tin của bạn một lần nữa.",
-                    "input2FA": "Input 2FA"
+                    "input2FA": "Nhập mã bảo mật 2 lớp"
                 },
                 "orderInfo": {
                     "buyTitle": "Xác Nhận Mua Constant",
@@ -1638,7 +1638,7 @@
             "howItWorks": "Hướng dẫn sử dụng",
             "amount": "Số lượng",
             "to": "Tới",
-            "input2FA": "Input 2FA"
+            "input2FA": "Nhập mã bảo mật 2 lớp"
         },
         "constantLoan": {
             "title": "Vay thế chấp bằng tiền mã hoá",

@@ -1681,7 +1681,7 @@
                 "apr": "APR",
                 "termLabel": "Pick a loan term",
                 "amountLabel": "How much do you want to borrow?",
-                "collateralLabel": "Collateral required (75% Loan to Value ratio)",
+                "collateralLabel": "Collateral required (66% Loan to Value ratio)\n",
                 "startDateLabel": "Start date",
                 "endDateLabel": "End date",
                 "toolTipCollateral": "\n          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.\n        ",

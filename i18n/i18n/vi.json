@@ -1681,7 +1681,7 @@
                 "apr": "Lãi/năm",
                 "termLabel": "Chọn thời hạn vay",
                 "amountLabel": "Bạn muốn vay bao nhiêu?",
-                "collateralLabel": "Tài sản thế chấp (Vay được 75% giá trị tài sản thế chấp)",
+                "collateralLabel": "Tài sản thế chấp (Vay được 66% giá trị tài sản thế chấp)",
                 "startDateLabel": "Ngày bắt đầu",
                 "endDateLabel": "Ngày kết thúc",
                 "toolTipCollateral": "\nĐây là khoản thế chấp cần có để vay được {exchangeUnit}. Giá trị tài sản thế chấp được tính theo giá thị trường {exchangeRate}.        ",

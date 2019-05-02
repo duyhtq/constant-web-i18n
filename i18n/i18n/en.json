@@ -104,6 +104,7 @@
         "privacy": "Privacy Policy",
         "contactUs": "Contact us:",
         "referral": "Referral",
+        "paymentGateway": "Payment Gateway",
         "phone": {
             "us": {
                 "title": "US: ",
@@ -231,6 +232,27 @@
                     "subTitle": "Constant on exchanges"
                 }
             }
+        },
+        "extraMenu": {
+            "sendGroup": "Global transfers",
+            "send": "Send",
+            "sendDesc": "Send money to anyone in the world",
+            "payroll": "Payroll",
+            "payrollDesc": "International payroll made simple",
+            "accountGroup": "Manage your money",
+            "deposit": "Deposit",
+            "depositDesc": "Top up funds to use Constant",
+            "withdraw": "Withdraw to fiat",
+            "withdrawDesc": "USD or local currencies",
+            "withdrawCrypto": "Withdraw to crypto",
+            "withdrawCryptoDesc": "ETH, EOS, TRON, and TOMO",
+            "lendingGroup": "Peer-to-peer lending",
+            "invest": "Invest",
+            "investDecs": "Set your own terms",
+            "borrow": "Borrow",
+            "borrowDesc": "Set your own terms",
+            "expert": "Expert",
+            "expertDecs": "More advanced peer-to-peer lending"
         }
     },
     "error": {
@@ -300,6 +322,7 @@
     },
     "form": {
         "required": "Required",
+        "invalidEmail": "Invalid Email Address",
         "unSupportFile": "Unsupported Format",
         "exceedSize": "File too large"
     },
@@ -343,6 +366,8 @@
             "verifiedMsg": "\n        <p>Great, everything's in order and your identity has been verified.</p>\n        <p>Thanks for taking the time to tell us about yourself.</p>\n        <p>Welcome to the full Constant Experience.</p>\n      ",
             "titleStep1": "Hi. Tell us more about yourself.",
             "titleStep2": "Thanks. Now we need a proof of address.",
+            "lEmail": "Email Adrress",
+            "plEmail": "Email Adrress",
             "lFirstName": "First Name",
             "plFirstName": "First Name",
             "lMiddleName": "Middle Name",
@@ -809,6 +834,8 @@
             "btnRemove": "Delete",
             "title": "Bank Information",
             "desc": "Enter your bank account details to unlock bigger referral earnings and faster transaction times.",
+            "subject": "Bank account details for receiving withdrawals or transfers ",
+            "explanations": "(?) For your security, we only use these bank details to process fund withdrawals or transfers. To deposit funds, please enter the amount you want to invest, and follow the instructions to make a wire transfer directly to our FDIC-insured custodian.",
             "bankName": "Bank Name",
             "action": "Action",
             "editActionLabel": "Edit",
@@ -937,7 +964,6 @@
                 "getListFailed": "Sorry, something went wrong. Please try again.",
                 "amount": "Principal",
                 "interest": "Interest",
-                "status": "Status",
                 "apr": "APR",
                 "haveTimeAccount": "{term}-{termType} investment",
                 "month": "month",
@@ -997,11 +1023,11 @@
                     "withdrawAccount": {
                         "title": "Saving",
                         "body": "Want to multiply your returns? Commit any amount for any time horizon.",
-                        "termTitle": "{month} month{termType} ({percent}% APR)",
+                        "termTitle": "{month} month{termType}",
                         "percentReceive": "You will earn {percent}% APR.",
-                        "confirm": "Ok",
+                        "confirm": "Invest",
                         "cancel": "Cancel",
-                        "messageConfirm": "You are about to deposit {amount} Constant.",
+                        "messageConfirm": "You are about to invest {amount} Constant.",
                         "validateMaxAmountError": "Sorry, you don't have enough Constant to deposit this amount.",
                         "validateMinAmountError": "Please deposit an amount larger than {amount} CONSTANT."
                     },
@@ -1025,8 +1051,8 @@
                     }
                 },
                 "alert": {
-                    "depositSavingSuccess": "You successfully deposited Constant.",
-                    "depositSavingFailed": "Sorry, something went wrong. Please try again.",
+                    "depositSavingSuccess": "You successfully invested Constant.",
+                    "depositSavingFailed": "Failed To Invest Saving",
                     "stopSavingSuccess": "You ended your term deposit. Withdraw your funds anytime.",
                     "stopSavingFailed": "End your term failed.",
                     "batchTransferSuccess": "You successfully sent the batch file",
@@ -1048,6 +1074,7 @@
                 "name": "Name",
                 "email": "Email",
                 "phone": "Phone",
+                "status": "Status",
                 "note": "Note",
                 "investMore": "Make another deposit."
             },
@@ -1444,14 +1471,16 @@
                 "confirmTemplate": {
                     "title": "Thank you!",
                     "description": "Your funds are on the way to your recipient's bank account. We estimate that it will take sometimes. Once the recipient has received the funds, please click confirm on the Order History page, so we can finalize the record.",
-                    "contact": "If you have any questions, feel free to reach out to <a href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime."
+                    "contact": "If you have any questions, feel free to reach out to <a class=\"white bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime.",
+                    "actionTitle": "Make another transfer"
                 }
             },
             "withdraw": {
                 "confirmTemplate": {
                     "title": "Thank you!",
                     "description": "Your funds are on the way to your recipient's bank account. We estimate that it will take sometime. Once the recipient has received the funds, please click confirm on the Order History page, so we can finalize the record.",
-                    "contact": "If you have any questions, feel free to reach out to <a href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime."
+                    "contact": "If you have any questions, feel free to reach out to <a class=\"white bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime.",
+                    "actionTitle": "Back to homepage"
                 }
             }
         },
@@ -2400,7 +2429,8 @@
         }
     },
     "yourSaving": {
-        "hello": "\n      <h5>Hello <strong>{name}</strong>. Let's see how your money is doing today.</h5>\n    "
+        "hello": "\n      <h5>Hello <strong>{name}</strong>. Let's see how your money is doing today.</h5>\n    ",
+        "verifyKyc": "Please verify your ID to start your free trial."
     },
     "borrow": {
         "contact": {
@@ -2491,9 +2521,38 @@
     "newHome": {
         "banner": {
             "title": "Like your bank, but better.",
+            "title1": "\n        <h1>The world’s first <span class=\"darkorange4\">fully secured</span> peer-to-peer lending platform.</h1>\n      ",
             "subTitle": "Welcome to better saving, borrowing, and making the most of your money. Open to anyone in the world with an internet connection.",
             "cta": "Open an account",
-            "ctaDesc": "\n        It’s free to open an account. Available locations: World."
+            "ctaDesc": "\n        It’s free to open an account. Available locations: World.",
+            "invest": {
+                "title": "Invest the way you want",
+                "num": "10.00%",
+                "cap": "No minimum capital. Fully secured.",
+                "btn": "Invest"
+            },
+            "borrow": {
+                "title": "Borrow the way you want",
+                "num": "4.50%",
+                "cap": "No limit. Set your own fixed rates.",
+                "btn": "Borrow"
+            }
+        },
+        "howItWorks": {
+            "title": "How it works.",
+            "desc": "Investors make deposit of any amount, and choose the interest rate they want to earn. Borrowers choose how much interest they want to pay, and put down collateral equal to 150% of what they want to borrow. A matching algorithm connects them, and smart contract technology automates the entire process."
+        },
+        "whyItBetter": {
+            "title": "Why it’s better.",
+            "desc": "Unlike traditional P2P platforms that prey on vulnerable borrowers and expect investors to shoulder the risk, Constant is designed to protect them both.",
+            "item0": {
+                "title": "Secured returns for investors",
+                "desc": "If borrowers default, collateral is sold to refund the investor. If collateral falls in value, it is sold at a threshold. It’s all automated by an unstoppable smart contract - investors always get their principal and profit back."
+            },
+            "item1": {
+                "title": "Collateral protection for borrowers",
+                "desc": "Borrower collateral is stored safely in a smart contract escrow, powered by the Ethereum network. This runs exactly as programmed, independent from human intervention - no one can touch these assets. As long as borrowers repay, they will always get their collateral back."
+            }
         },
         "subjects": {
             "banking": {
@@ -2817,6 +2876,65 @@
             "title": "How we work",
             "cap": "We’re building a fairer, freer, financial system.",
             "desc": "\n        <h5>Financial freedom looks different for everyone. It’s having the money to do what you want to do. Or simply having enough to never have to worry. Freedom is being able to make your money work for you - so you don’t have to. Freedom is having money that allows you to travel, work and live - anywhere in the world - and thrive.</h5>\n        <br />\n        <h5>Today’s generations are thinking bigger, but financial systems are still landlocked and insular, characterized by exclusivity, operating behind closed doors. People are trapped in centralized systems designed to profit a select few. Money sits languishing in even the best bank accounts, steadily losing value as inflation rises. Loans are hard to access, and even more difficult to repay. It is easier to fly to some places than it is to send money there. Billions of global-thinking people are lack the means or opportunity to even begin thinking about financial freedom.</h5>\n        <br />\n        <h5>This is a platform that connects all those in pursuit of a richer, more open world. Welcome to Constant.</h5>\n      "
+        }
+    },
+    "payment": {
+        "intro": "\n    <h1>Worldwide, instant, zero cost mass payments.</h1>\n    <br />\n    <h5>\n        Send and receive money instantly. Any amount, any number of people, anywhere in the world. \n        Pay suppliers, freelancers, automate your entire payroll - with a single click.\n    </h5>\n    <br />\n    <h5>Constant allows you to harness the power of global peer to peer technology to truly do business with the world.</h5>\n    <br />\n    <h5>No wait times, no transfer fees. Hello world.</h5>\n  ",
+        "howItWorks": {
+            "heading": "How it works",
+            "step1": "1",
+            "title1": "Deposit funds into your account",
+            "desc1": "Make a bank transfer of any amount to the Constant Vault. Your funds are fully insured by the FDIC.",
+            "step2": "2",
+            "title2": "Upload your list of payees",
+            "desc2": "Download, fill in, then upload the template that we provide for your convenience.",
+            "step3": "3",
+            "title3": "One click to send",
+            "desc3": "Your payments should arrive within minutes. Payees will receive an email notification with instructions on how to access their funds."
+        },
+        "what": {
+            "whatCaption0": "Free transfers. Low cost withdrawals.",
+            "whatCaption1": "Powered by the world",
+            "whatCaption2": "Send USD",
+            "whatCaption3": "Easy API integration",
+            "whatDesc0": "\n        <p>The only fee you’ll ever have to pay with Constant is a small withdrawal fee of 0.25% - capped at $35, no matter the amount. We like to keep things simple and transparent.</p>\n      ",
+            "whatDesc1": "\n        <p>Constant is built on blockchain technology. Thousands and thousands of nodes work together to secure and expedite every payment you send. Protect yourself against fraud and grow your business faster.</p>\n      ",
+            "whatDesc2": "\n        <p>We convert every payment into USD, to protect both you and your payee from volatility. Of course, your recipient can also choose to withdraw their funds into any other local currency.</p>\n      ",
+            "whatDesc3": "\n        <p>Constant is easily integrated into your existing infrastructure. Improve payee satisfaction, streamline costs, and unlock real-time payment visibility.</p>\n      "
+        },
+        "success": {
+            "title": "Customer Success Stories",
+            "customer1": "\n      <div>\n        <h5 class=\"darkblue4\">\n          Constant is our preferred solution for cross-border transactions. Paying international suppliers and clients is much less of a hassle now, and much more cost-effective.\n        </h5>\n        <br /><h3 class=\"bold clearBottom\">Liz Nguyen</h3>\n        <p>CEO of Dropship Vendor Group, supplier to the world’s leading brands.</p>\n      </div>\n      ",
+            "customer2": "\n      <div>\n        <h5 class=\"darkblue4\">\n          E-commerce provider of technology powered office solutions We just started using Constant to automate payroll to our employees in the US, Vietnam, China and Netherlands. Our employees like having the option to hold USD, and haven’t had problems withdrawing to their respective currencies.\n        </h5>\n        <br /><h3 class=\"bold clearBottom\">Justin Lucas</h3>\n        <p>GM at Autonomous.</p>\n      </div>\n      ",
+            "customer3": "\n      <div>\n	      <h5 class=\"darkblue4\">\n		      My partners in different countries all got accounts easily, and most importantly - Constant syncs up with the local banking system so withdrawals are straightforward. Constant is low-friction, easy to integrate, and has saved us a bundle on international transfer fees.\n	      </h5>\n	      <br /><h3 class=\"bold clearBottom\">Veronica Tam</h3>\n	      <p>CEO of Vifah, manufacturer of outdoor furniture for Walmart, Amazon, Wayfair and more. </p>\n      </div>          \n      "
+        },
+        "why": {
+            "title": "Why Constant?"
+        },
+        "faqs": {
+            "title": "Frequently Asked Questions",
+            "q1": "Do you operate globally?",
+            "q2": "How long does it take to withdraw?",
+            "q3": "How do you prevent fraud?",
+            "q4": "How do you prevent chargebacks?",
+            "q5": "What makes you a better choice than other payment solutions?",
+            "q6": "Is Constant taxable?",
+            "a1": "Yes, we support all countries and currencies in the world. All you need is an Internet connection.",
+            "a2": "For US, Hong Kong or Vietnam customers, it would take up to 1 business day. For international customers, the process would take 2-3 business days. It depends a lot on how quickly your bank processes transfers.",
+            "a3": "Your funds are put in a trust vault overseen by PrimeTrust, an accredited US financial institution, and the trust is FDIC insured up to $5,000,000. Prior to registering for a Constant account, you will be asked to do KYC (Know Your Customer) to comply with financial regulations, which protects you against fraud. And thanks to the immutable blockchain ledger, Constant is extremely difficult to hack.",
+            "a4": "Constant is powered by unstoppable smart contracts and built upon the Ethereum blockchain, an immutable digital ledger that acts as a public record of verifiable transactions.",
+            "a5": "Constant allows you to move your money anywhere and anytime for free (with a minimal withdrawal fee of 0.25%). Constant is also part of a greater ecosystem, so you can choose to put your funds into one of our fixed deposits and earn up to 8% annually.",
+            "a6": "Receiving Constant is similar to receiving USD. If the source of funds is not taxable then receiving Constant is not taxable. However, please note that you are responsible for determining any and all taxes assessed, incurred, or required to be collected, paid, or withheld for any reason in connection with the use of our software and services."
+        },
+        "ready": {
+            "question": "Ready to run your global business better?",
+            "button": "Let's Talk"
+        },
+        "form": {
+            "lName": "Your Name",
+            "lEmail": "Your Email",
+            "lCompany": "Your Company",
+            "submitted": "Thank you. Our team will be in touch within 24 hours to discuss how Constant can work for you."
         }
     }
 }

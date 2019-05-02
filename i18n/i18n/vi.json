@@ -104,7 +104,7 @@
         "privacy": "Chính Sách Bảo Mật",
         "contactUs": "Liên hệ:",
         "referral": "Chương trình giới thiệu",
-        "paymentGateway": "Payment Gateway",
+        "paymentGateway": "Cổng thanh toán",
         "phone": {
             "us": {
                 "title": "US: ",
@@ -234,25 +234,25 @@
             }
         },
         "extraMenu": {
-            "sendGroup": "Global transfers",
-            "send": "Send",
-            "sendDesc": "Send money to anyone in the world",
-            "payroll": "Payroll",
-            "payrollDesc": "International payroll made simple",
-            "accountGroup": "Manage your money",
-            "deposit": "Deposit",
-            "depositDesc": "Top up funds to use Constant",
-            "withdraw": "Withdraw to fiat",
-            "withdrawDesc": "USD or local currencies",
-            "withdrawCrypto": "Withdraw to crypto",
-            "withdrawCryptoDesc": "ETH, EOS, TRON, and TOMO",
-            "lendingGroup": "Peer-to-peer lending",
-            "invest": "Invest",
-            "investDecs": "Set your own terms",
-            "borrow": "Borrow",
-            "borrowDesc": "Set your own terms",
-            "expert": "Expert",
-            "expertDecs": "More advanced peer-to-peer lending"
+            "sendGroup": "Chuyển tiền quốc tế",
+            "send": "Chuyển tiền",
+            "sendDesc": "Chuyển tiền tới mọi nơi trên thế giới",
+            "payroll": "Trả lương",
+            "payrollDesc": "Thanh toán lương xuyên biên giới dễ dàng",
+            "accountGroup": "Tài khoản cá nhân",
+            "deposit": "Nộp tiền",
+            "depositDesc": "Nộp tiền vào tài khoản Constant",
+            "withdraw": "Rút tiền mặt",
+            "withdrawDesc": "Rút VND về tài khoản ngân hàng",
+            "withdrawCrypto": "Rút tiền mã hoá",
+            "withdrawCryptoDesc": "ETH, EOS, TRON và TOMO",
+            "lendingGroup": "Cho vay ngang hàng",
+            "invest": "Đầu tư",
+            "investDecs": "Tự đặt mức lãi suất",
+            "borrow": "Vay",
+            "borrowDesc": "Tự chọn kì hạn",
+            "expert": "Chuyên gia",
+            "expertDecs": "Hình thức cho vay ngang hàng ưu việt"
         }
     },
     "error": {
@@ -322,7 +322,7 @@
     },
     "form": {
         "required": "Yêu cầu",
-        "invalidEmail": "Invalid Email Address",
+        "invalidEmail": "Địa chỉ e-mail không hợp lệ",
         "unSupportFile": "Định dạng không được hỗ trợ",
         "exceedSize": "Tập tin quá lớn"
     },
@@ -366,8 +366,8 @@
             "verifiedMsg": "\n<p>Tuyệt vời! Danh tính của bạn đã được xác minh thành công.</p>\n<p>Cảm ơn bạn đã giới thiệu về mình.</p>\n<p>Hãy trải nghiệm Constant một cách đầy đủ nhất.</p>      ",
             "titleStep1": "Chào bạn. Xin hãy giới thiệu về bản mình.",
             "titleStep2": "Xin cảm ơn. Bây giờ bạn cần xác nhận địa chỉ của mình.",
-            "lEmail": "Email Adrress",
-            "plEmail": "Email Adrress",
+            "lEmail": "Email",
+            "plEmail": "Email",
             "lFirstName": "Tên",
             "plFirstName": "Tên",
             "lMiddleName": "Tên Đệm",
@@ -461,7 +461,7 @@
                 "system_rejected": "Hệ thống đã từ chối"
             },
             "acceptFailed": {
-                "": "Picked booking order is failing, please try again, or contact my admin for help. \n Thanks! ",
+                "": "Chọn lệnh giữ chỗ không thành công. Xin vui lòng thử lại hoặc liên hệ với admin để được trợ giúp.\n Xin cảm ơn! ",
                 "processing_order_exists": "Đang xử lí lệnh",
                 "validation_error": "Không thể đồng ý lệnh này."
             },
@@ -674,7 +674,7 @@
             "date": "Ngày",
             "transactionID": "Mã giao dịch",
             "transfer": "Chuyển khoản",
-            "cryptoAddress": "Crypto address",
+            "cryptoAddress": "Địa chỉ ví",
             "reference_number": "Số chuyển tiền.",
             "type": "Loại",
             "amount": "Số lượng",
@@ -834,8 +834,8 @@
             "btnRemove": "Xoá",
             "title": "Thông tin ngân hàng",
             "desc": "Cập nhật thông tin tài khoản ngân hàng để thanh toán nhanh hơn và nhận được những ưu đãi hấp dẫn từ chương trình Giới thiệu khách hàng.",
-            "subject": "Bank account details for receiving withdrawals or transfers ",
-            "explanations": "(?) For your security, we only use these bank details to process fund withdrawals or transfers. To deposit funds, please enter the amount you want to invest, and follow the instructions to make a wire transfer directly to our FDIC-insured custodian.",
+            "subject": "Tài khoản ngân hàng nhận tiền ",
+            "explanations": "(?) Vì lí do an ninh, tài khoản ngân hàng này chỉ dùng để nhận tiền. Để nộp tiền hay thực hiện đầu tư với Constant, xin vui lòng làm theo hướng dẫn để chuyển khoản trực tiếp tới quỹ tín thác Constant được bảo hiểm bởi FDIC.",
             "bankName": "Tên ngân hàng",
             "action": "Tác vụ",
             "editActionLabel": "Chỉnh sửa",
@@ -974,7 +974,7 @@
                 "saving_title": "Gửi Tiết Kiệm Có Kì Hạn",
                 "anyTime_saving": "Số dư",
                 "input2FA": "Nhập mã bảo mật 2 lớp",
-                "cancel": "Rút tiền",
+                "cancel": "Huỷ",
                 "termStatus": {
                     "created": "Phù hợp",
                     "pending": "Đang chờ",
@@ -1023,11 +1023,11 @@
                     "withdrawAccount": {
                         "title": "Tiết kiệm",
                         "body": "Muốn hưởng lãi suất cao hơn? Cam kết tăng lãi suất trên mọi khoản đầu tư bất kể kì hạn.",
-                        "termTitle": "{month} month{termType}",
+                        "termTitle": "{month} tháng{termType}",
                         "percentReceive": "Bạn được hưởng lãi suất {percent}%/năm.",
-                        "confirm": "Invest",
+                        "confirm": "Đầu tư",
                         "cancel": "Huỷ",
-                        "messageConfirm": "You are about to invest {amount} Constant.",
+                        "messageConfirm": "Bạn chuẩn bị đầu tư {amount} Constant.",
                         "validateMaxAmountError": "Xin lỗi. Bạn không có đủ Constant để nạp.",
                         "validateMinAmountError": "Xin vui lòng nhập số lớn hơn {amount} CONSTANT"
                     },
@@ -1051,8 +1051,8 @@
                     }
                 },
                 "alert": {
-                    "depositSavingSuccess": "You successfully invested Constant.",
-                    "depositSavingFailed": "Failed To Invest Saving",
+                    "depositSavingSuccess": "Đầu tư thành công.",
+                    "depositSavingFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
                     "stopSavingSuccess": "Khi đáo hạn, bạn có thể rút tiền về ngay lập tức.",
                     "stopSavingFailed": "Đáo hạn tiết kiệm không thành công.",
                     "batchTransferSuccess": "Gửi tập tin để thực hiện chuyển khoản hàng loạt thành công",
@@ -1471,16 +1471,16 @@
                 "confirmTemplate": {
                     "title": "Xin cảm ơn!",
                     "description": "Tiền của bạn sẽ được chuyển thành công trong vài phút tới. Khi người nhận nhận được tiền, xin vui lòng xác nhận trong lịch sử giao dịch để hoàn tất hồ sơ.",
-                    "contact": "If you have any questions, feel free to reach out to <a class=\"white bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime.",
-                    "actionTitle": "Make another transfer"
+                    "contact": "Xin vui lòng liên hệ với chúng tôi qua email <a class=\"white bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> để được hỗ trợ nhanh nhất.",
+                    "actionTitle": "Đặt lệnh chuyển tiền mới"
                 }
             },
             "withdraw": {
                 "confirmTemplate": {
                     "title": "Xin cảm ơn!",
                     "description": "Tiền của bạn sẽ được chuyển thành công trong vài phút tới. Khi người nhận nhận được tiền, xin vui lòng xác nhận trong lịch sử giao dịch để hoàn tất hồ sơ.",
-                    "contact": "If you have any questions, feel free to reach out to <a class=\"white bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime.",
-                    "actionTitle": "Back to homepage"
+                    "contact": "Xin vui lòng liên hệ với chúng tôi qua email <a class=\"white bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> để được hỗ trợ nhanh nhất.",
+                    "actionTitle": "Về trang chủ"
                 }
             }
         },
@@ -2430,7 +2430,7 @@
     },
     "yourSaving": {
         "hello": "<h5>Xin chào <strong>{name}</strong>.</h5>\n<h5>Hôm nay bạn đã có thêm bao nhiêu tiền rồi?</h5> ",
-        "verifyKyc": "Please verify your ID to start your free trial."
+        "verifyKyc": "Xin vui lòng xác minh danh tính để thực hiện đầu tư thử nghiệm."
     },
     "borrow": {
         "contact": {
@@ -2521,37 +2521,37 @@
     "newHome": {
         "banner": {
             "title": "Công cụ tài chính ưu việt thế hệ mới.",
-            "title1": "\n        <h1>The world’s first <span class=\"darkorange4\">fully secured</span> peer-to-peer lending platform.</h1>\n      ",
+            "title1": "\n<h1>Nền tảng cho vay ngang hàng <span class=\"darkorange4\">an toàn 100%</span> đầu tiên trên thế giới.</h1>      ",
             "subTitle": "Cùng khám phá công cụ tài chính ưu việt dựa trên công nghệ chuỗi khối giúp bạn sử dụng đồng tiền một cách hiệu quả nhất. Nhận và chuyển khoản tới khắp mọi nơi trên thế giới. Gửi tiết kiệm USD với lãi suất 4%/năm. Vay thế chấp với lãi suất ưu đãi chỉ từ 4.5%/năm. Tất cả những gì bạn cần là kết nối Internet.",
             "cta": "Đăng kí tài khoản",
             "ctaDesc": "Miễn phí",
             "invest": {
-                "title": "Invest the way you want",
+                "title": "Đầu tư theo cách bạn muốn",
                 "num": "10.00%",
-                "cap": "No minimum capital. Fully secured.",
-                "btn": "Invest"
+                "cap": "Không yêu cầu vốn tối thiểu. Tuyệt đối an toàn.",
+                "btn": "Đầu tư"
             },
             "borrow": {
-                "title": "Borrow the way you want",
+                "title": "Vay theo cách bạn muốn",
                 "num": "4.50%",
-                "cap": "No limit. Set your own fixed rates.",
-                "btn": "Borrow"
+                "cap": "Không giới hạn số tiền vay. Tự đặt mức lãi suất.",
+                "btn": "Vay"
             }
         },
         "howItWorks": {
-            "title": "How it works.",
-            "desc": "Investors make deposit of any amount, and choose the interest rate they want to earn. Borrowers choose how much interest they want to pay, and put down collateral equal to 150% of what they want to borrow. A matching algorithm connects them, and smart contract technology automates the entire process."
+            "title": "Cơ chế hoạt động.",
+            "desc": "Nhà đầu tư có thể đầu tư không giới hạn với mức lãi suất mà họ mong muốn. Người cần vay vốn sẽ chọn mức lãi suất mà họ có thể trả và phải thế chấp tài sản trị giá 150% so với số tiền họ muốn vay. Một thuật toán ứng dụng hợp đồng thông minh được lập trình để tự động thực hiện toàn bộ quá trình kết nối nhà đầu tư và người cần vay vốn."
         },
         "whyItBetter": {
-            "title": "Why it’s better.",
-            "desc": "Unlike traditional P2P platforms that prey on vulnerable borrowers and expect investors to shoulder the risk, Constant is designed to protect them both.",
+            "title": "Tính ưu việt của Constant",
+            "desc": "Không giống những nền tảng cho vay ngang hàng khác khi nhà đầu tư phải chịu nhiều rủi ro và người cần vay vốn chịu nhiều điểm bất lợi, Constant được thiết kế để bảo vệ cả nhà đầu tư và người cần vay vốn.",
             "item0": {
-                "title": "Secured returns for investors",
-                "desc": "If borrowers default, collateral is sold to refund the investor. If collateral falls in value, it is sold at a threshold. It’s all automated by an unstoppable smart contract - investors always get their principal and profit back."
+                "title": "Đảm bảo an toàn cho nhà đầu tư",
+                "desc": "Nếu người vay vốn không thể hoàn trả khoản vay, tài sản thế chấp sẽ được bán đi để hoàn trả nhà đầu tư. Tài sản thế chấp nếu mất giá xuống đến một mức nhất định cũng sẽ được tự động thanh lí theo hợp đồng thông minh để hoàn trả cho nhà đầu tư. Trong mọi trường hợp, nhà đầu tư sẽ luôn nhận lại được tiền của mình."
             },
             "item1": {
-                "title": "Collateral protection for borrowers",
-                "desc": "Borrower collateral is stored safely in a smart contract escrow, powered by the Ethereum network. This runs exactly as programmed, independent from human intervention - no one can touch these assets. As long as borrowers repay, they will always get their collateral back."
+                "title": "Bảo vệ tài sản thế chấp cho người đi vay",
+                "desc": "Tài sản thế chấp được bảo đảm an toàn bằng hợp đồng thông minh trên chuỗi Ethereum. Hợp đồng thông minh được lập trình và hoạt động tự động mà không có sự can thiệp của con người. Người đi vay luôn có thể nhận lại tài sản thế chấp của mình sau khi hoàn trả hết khoản vay."
             }
         },
         "subjects": {
@@ -2795,7 +2795,7 @@
                 "text3": "Chúng tôi tặng bạn một khoản đầu tư thử nghiệm trị giá 1,000 USD để trải nghiệm dịch vụ. Chỉ cần đặt mức lãi suất, hệ thống sẽ tự động kết nối với người cần vay vốn phù hợp. Khi đáo hạn, bạn được giữ toàn bộ phần lãi.",
                 "text4": "\n<h5>Một thao tác cuối cùng để sử dụng Constant.</h5>\n          <p>Vì lí do an ninh, bạn cần phải xác minh danh tính trước khi sử dụng Constant.</p>        ",
                 "text5": "Đầu tư thử nghiệm",
-                "text6": "\n          <p>\n            <span class=\"darkorange4 bold\">Want to get a borrower instantly?</span> Invest at the current market rate of 10%. Or increase your rate and wait for a matching order.\n          </p>\n        ",
+                "text6": "\n<p>\n            <span class=\"darkorange4 bold\">Muốn được kết nối ngay với người đi vay?</span> Đặt mức lãi suất dưới 10% để thực hiện đầu tư ngay. Với mức lãi suất cao hơn, bạn cần đợi người đi vay chấp nhận trả mức lãi bạn mong muốn để được kết nối.\n          </p>        ",
                 "btn1": "Đầu tư ngay",
                 "textLogin": "Đăng nhập",
                 "textRegister": "Đăng ký",
@@ -2820,9 +2820,9 @@
                 "success": "Thành công",
                 "sendEmailVerifyForTrialSuccess": "Xin cảm ơn! Bạn sẽ nhận được email xác nhận để thực hiện đầu tư thử nghiệm.",
                 "sendEmailVerifyForTrialFailed": "Gửi email xác nhận không thành công. Xin vui lòng nhập địa chỉ email hợp lệ.",
-                "trialFailed": "Submit trial was failed",
-                "normalSuccess": "Submit normal success",
-                "normalFailed": "Submit normal failed",
+                "trialFailed": "Thử nghiệm không thành công",
+                "normalSuccess": "Gửi thành công",
+                "normalFailed": "Gửi không thành công",
                 "trialSuccess": "Xin cảm ơn. Bạn sẽ nhận được email thông báo ngay khi bạn được kết nối với người sẵn sàng trả mức lãi suất bạn mong muốn."
             },
             "confirm": {
@@ -2879,62 +2879,62 @@
         }
     },
     "payment": {
-        "intro": "\n    <h1>Worldwide, instant, zero cost mass payments.</h1>\n    <br />\n    <h5>\n        Send and receive money instantly. Any amount, any number of people, anywhere in the world. \n        Pay suppliers, freelancers, automate your entire payroll - with a single click.\n    </h5>\n    <br />\n    <h5>Constant allows you to harness the power of global peer to peer technology to truly do business with the world.</h5>\n    <br />\n    <h5>No wait times, no transfer fees. Hello world.</h5>\n  ",
+        "intro": "\n<h1>Chuyển tiền quốc tế số lượng lớn quy mô toàn cầu.</h1>\n    <br />\n    <h5>\n        Nhận tiền ngay lập tức. Không giới hạn số lượng và số người nhận. \n        Thanh toán đơn hàng. Trả lương cho toàn bộ công ty. Chỉ với một click.\n    </h5>\n    <br />\n    <h5>Constant ứng dụng công nghệ chuỗi khối giúp khách hàng vươn tầm thế giới.</h5>\n    <br />\n    <h5>Không chờ đợi. Không phí chuyển tiền. Ưu việt là Constant!</h5>  ",
         "howItWorks": {
-            "heading": "How it works",
+            "heading": "Cơ chế hoạt động",
             "step1": "1",
-            "title1": "Deposit funds into your account",
-            "desc1": "Make a bank transfer of any amount to the Constant Vault. Your funds are fully insured by the FDIC.",
+            "title1": "Nộp tiền vào tài khoản",
+            "desc1": "Chuyển tiền vào quỹ tín thác Constant được bảo hiểm bởi FDIC.",
             "step2": "2",
-            "title2": "Upload your list of payees",
-            "desc2": "Download, fill in, then upload the template that we provide for your convenience.",
+            "title2": "Cập nhật danh sách người nhận",
+            "desc2": "Sử dụng mẫu mà Constant cung cấp để điền danh sách người nhận.",
             "step3": "3",
-            "title3": "One click to send",
-            "desc3": "Your payments should arrive within minutes. Payees will receive an email notification with instructions on how to access their funds."
+            "title3": "Thực hiện chuyển tiền",
+            "desc3": "Chỉ vài phút, người nhận đã có thể rút tiền ngay sau khi nhận được email thông báo và hướng dẫn cụ thể cách rút tiền về tài khoản ngân hàng."
         },
         "what": {
-            "whatCaption0": "Free transfers. Low cost withdrawals.",
-            "whatCaption1": "Powered by the world",
-            "whatCaption2": "Send USD",
-            "whatCaption3": "Easy API integration",
-            "whatDesc0": "\n        <p>The only fee you’ll ever have to pay with Constant is a small withdrawal fee of 0.25% - capped at $35, no matter the amount. We like to keep things simple and transparent.</p>\n      ",
-            "whatDesc1": "\n        <p>Constant is built on blockchain technology. Thousands and thousands of nodes work together to secure and expedite every payment you send. Protect yourself against fraud and grow your business faster.</p>\n      ",
-            "whatDesc2": "\n        <p>We convert every payment into USD, to protect both you and your payee from volatility. Of course, your recipient can also choose to withdraw their funds into any other local currency.</p>\n      ",
-            "whatDesc3": "\n        <p>Constant is easily integrated into your existing infrastructure. Improve payee satisfaction, streamline costs, and unlock real-time payment visibility.</p>\n      "
+            "whatCaption0": "Chuyển tiền miễn phí. Phí rút tiền rất thấp.",
+            "whatCaption1": "Vươn tầm thế giới",
+            "whatCaption2": "Chuyển USD",
+            "whatCaption3": "API dễ sử dụng",
+            "whatDesc0": "\n<p>Chuyển tiền miễn phí. Phí rút tiền chỉ 0.25%, tối đa là 35 USD trên mọi giao dịch. Constant luôn đặt lợi ích của khách hàng lên hàng đầu.</p>      ",
+            "whatDesc1": "\n<p>Ứng dụng công nghệ chuỗi khối, mọi giao dịch đều được kiểm soát bằng hàng vạn nút trên hệ thống. Bạn được bảo vệ khỏi mọi rủi ro để nâng tầm doanh nghiệp của mình và hội nhập với thế giới.</p>      ",
+            "whatDesc2": "\n<p>Mọi giao dịch đều được tính trên USD để bảo vệ người sử dụng khỏi lạm phát và mất giá. Người nhận có thể rút tiền về tài khoản ngân hàng bất cứ lúc nào.</p>      ",
+            "whatDesc3": "\n<p>Luôn dễ dàng tích hợp Constant vào nền tảng sẵn có của bạn để nâng cao trải nghiệm người dùng, cắt giảm chi phí và tận dụng khả năng thanh toán theo thời gian thực.</p>      "
         },
         "success": {
-            "title": "Customer Success Stories",
+            "title": "Chia sẻ của khách hàng",
             "customer1": "\n      <div>\n        <h5 class=\"darkblue4\">\n          Constant is our preferred solution for cross-border transactions. Paying international suppliers and clients is much less of a hassle now, and much more cost-effective.\n        </h5>\n        <br /><h3 class=\"bold clearBottom\">Liz Nguyen</h3>\n        <p>CEO of Dropship Vendor Group, supplier to the world’s leading brands.</p>\n      </div>\n      ",
             "customer2": "\n      <div>\n        <h5 class=\"darkblue4\">\n          E-commerce provider of technology powered office solutions We just started using Constant to automate payroll to our employees in the US, Vietnam, China and Netherlands. Our employees like having the option to hold USD, and haven’t had problems withdrawing to their respective currencies.\n        </h5>\n        <br /><h3 class=\"bold clearBottom\">Justin Lucas</h3>\n        <p>GM at Autonomous.</p>\n      </div>\n      ",
             "customer3": "\n      <div>\n	      <h5 class=\"darkblue4\">\n		      My partners in different countries all got accounts easily, and most importantly - Constant syncs up with the local banking system so withdrawals are straightforward. Constant is low-friction, easy to integrate, and has saved us a bundle on international transfer fees.\n	      </h5>\n	      <br /><h3 class=\"bold clearBottom\">Veronica Tam</h3>\n	      <p>CEO of Vifah, manufacturer of outdoor furniture for Walmart, Amazon, Wayfair and more. </p>\n      </div>          \n      "
         },
         "why": {
-            "title": "Why Constant?"
+            "title": "Tính ưu việt của Constant"
         },
         "faqs": {
-            "title": "Frequently Asked Questions",
-            "q1": "Do you operate globally?",
-            "q2": "How long does it take to withdraw?",
-            "q3": "How do you prevent fraud?",
-            "q4": "How do you prevent chargebacks?",
-            "q5": "What makes you a better choice than other payment solutions?",
-            "q6": "Is Constant taxable?",
-            "a1": "Yes, we support all countries and currencies in the world. All you need is an Internet connection.",
-            "a2": "For US, Hong Kong or Vietnam customers, it would take up to 1 business day. For international customers, the process would take 2-3 business days. It depends a lot on how quickly your bank processes transfers.",
-            "a3": "Your funds are put in a trust vault overseen by PrimeTrust, an accredited US financial institution, and the trust is FDIC insured up to $5,000,000. Prior to registering for a Constant account, you will be asked to do KYC (Know Your Customer) to comply with financial regulations, which protects you against fraud. And thanks to the immutable blockchain ledger, Constant is extremely difficult to hack.",
-            "a4": "Constant is powered by unstoppable smart contracts and built upon the Ethereum blockchain, an immutable digital ledger that acts as a public record of verifiable transactions.",
-            "a5": "Constant allows you to move your money anywhere and anytime for free (with a minimal withdrawal fee of 0.25%). Constant is also part of a greater ecosystem, so you can choose to put your funds into one of our fixed deposits and earn up to 8% annually.",
-            "a6": "Receiving Constant is similar to receiving USD. If the source of funds is not taxable then receiving Constant is not taxable. However, please note that you are responsible for determining any and all taxes assessed, incurred, or required to be collected, paid, or withheld for any reason in connection with the use of our software and services."
+            "title": "Câu hỏi thường gặp",
+            "q1": "Constant hoạt động ở những quốc gia nào?",
+            "q2": "Mất bao lâu để rút tiền?",
+            "q3": "Constant chống gian lận bằng cách nào?",
+            "q4": "Constant ngăn chặn giao dịch bồi hoàn như thế nào?",
+            "q5": "Constant ưu việt hơn những cổng thanh toán khác ở điểm nào?",
+            "q6": "Nhận Constant có phải chịu thuế không?",
+            "a1": "Constant là nền tảng online hỗ trợ mọi loại tiền tệ và hoạt động trên toàn thế giới. Tất cả những gì bạn cần là kết nối Internet.",
+            "a2": "Với khách hàng ở Mỹ, Hong Kong và Việt Nam, khách hàng có thể nhận tiền ngay trong ngày. Với khách hàng ở những nơi khác, có thể sẽ mất 2-3 ngày để tiền về tài khoản, tuỳ thuộc vào ngân hàng mà khách hàng sử dụng.",
+            "a3": "Constant được giám sát bởi PrimeTrust, một tổ chức giám sát tài chính có uy tín ở Mỹ và được FDIC bảo hiểm lên tới 5,000,000 USD. Để bảo vệ khách hàng tốt hơn, mọi khách hàng mở tài khoản Constant đều sẽ phải thực hiện xác minh danh tính theo các quy định tài chính. Cùng với công nghệ chuỗi khối ưu việt, gần như không thể có gian lận với Constant.",
+            "a4": "Constant ứng dụng hợp đồng thông minh được xây dựng trên chuỗi Ethereum, một hệ thống không thể bị can thiệp có chứa tất cả các thông tin về các giao dịch đã được kiểm chứng.",
+            "a5": "Constant cho phép khách hàng chuyển tiền tới bất cứ ai ở bất cứ đâu mà hoàn toàn miễn phí. Phí rút tiền chỉ là 0.25%. Hơn thế nữa, Constant còn là một nền tảng tài chính mà bạn có thể đầu tư hoặc vay tiền. Lãi suất đầu tư tại Constant lên tới 8%/năm.",
+            "a6": "Nhận Constant cũng giống như nhận USD. Nếu nguồn tiền bạn nhận không phải đóng thế thì nhận Constant bạn cũng không phải đóng thuế. Tuy nhiên, luôn phải nhớ rằng bạn là người chịu trách nhiệm xác định tất cả những tài sản nào có thể bị đánh thuế hoặc được yêu cầu thanh toán hoặc khấu trừ vì bất cứ lí do nào khi sử dụng nền tảng Constant."
         },
         "ready": {
-            "question": "Ready to run your global business better?",
-            "button": "Let's Talk"
+            "question": "Bạn đã sẵn sàng để vươn tầm ra thế giới?",
+            "button": "Cùng trò chuyện với chúng tôi"
         },
         "form": {
-            "lName": "Your Name",
-            "lEmail": "Your Email",
-            "lCompany": "Your Company",
-            "submitted": "Thank you. Our team will be in touch within 24 hours to discuss how Constant can work for you."
+            "lName": "Tên",
+            "lEmail": "Email",
+            "lCompany": "Công ty",
+            "submitted": "Xin cảm ơn. Chúng tôi sẽ liên lạc với bạn trong vòng 24 tiếng để tư vấn cho bạn cách sử dụng Constant hiệu quả nhất."
         }
     }
 }

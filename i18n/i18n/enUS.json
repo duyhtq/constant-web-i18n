@@ -974,7 +974,7 @@
                 "saving_title": "Investments",
                 "anyTime_saving": "Balance",
                 "input2FA": "Input 2FA",
-                "cancel": "Withdraw",
+                "cancel": "Cancel",
                 "termStatus": {
                     "created": "Matched",
                     "pending": "Pending",

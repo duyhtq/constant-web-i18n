@@ -974,7 +974,7 @@
                 "saving_title": "Fixed Term Investments",
                 "anyTime_saving": "Flexible Account",
                 "input2FA": "Input 2FA",
-                "cancel": "Withdraw",
+                "cancel": "Cancel",
                 "termStatus": {
                     "created": "Matched",
                     "pending": "Pending",

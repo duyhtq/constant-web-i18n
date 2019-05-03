@@ -2827,7 +2827,7 @@
             },
             "confirm": {
                 "thankYou1": "Đã gần xong.",
-                "thankMsg": "Xin vui lòng chuyển khoản {amount} tới quỹ Constant để nộp tiền vào tài khoản.",
+                "thankMsg": "Simply wire {amount} to our custodian to make a deposit.",
                 "bankName": "Tên ngân hàng",
                 "accountName": "Tên tài khoản",
                 "accountNumber": "Số tài khoản",
@@ -2836,8 +2836,8 @@
                 "reference": "Mã giao dịch",
                 "important": "LƯU Ý",
                 "importantMsg": "Hãy nhớ điền mã giao dịch {referenceNumber} trong phần nội dung chuyển khoản.",
-                "minuteWindow": "15 PHÚT:",
-                "minuteWindowDescription": "Vui lòng hoàn tất chuyển khoản trong vòng 15 phút. Nếu không, giao dịch sẽ tự động bị huỷ bỏ.",
+                "minuteWindow": "3 NGÀY:",
+                "minuteWindowDescription": "Vui lòng hoàn tất chuyển khoản trong vòng 3 ngày. Nếu không, giao dịch sẽ tự động bị huỷ bỏ.",
                 "backOrderBook": "Mua thêm Constant",
                 "confirmMessage": "Vui lòng ấn \"Xác nhận thanh toán\" sau khi chuyển khoản thành công",
                 "confirmButton": "Xác nhận thanh toán",
@@ -2905,7 +2905,7 @@
         "success": {
             "title": "Chia sẻ của khách hàng",
             "customer1": "\n      <div>\n        <h5 class=\"darkblue4\">\n          Constant is our preferred solution for cross-border transactions. Paying international suppliers and clients is much less of a hassle now, and much more cost-effective.\n        </h5>\n        <br /><h3 class=\"bold clearBottom\">Liz Nguyen</h3>\n        <p>CEO of Dropship Vendor Group, supplier to the world’s leading brands.</p>\n      </div>\n      ",
-            "customer2": "\n      <div>\n        <h5 class=\"darkblue4\">\n          E-commerce provider of technology powered office solutions We just started using Constant to automate payroll to our employees in the US, Vietnam, China and Netherlands. Our employees like having the option to hold USD, and haven’t had problems withdrawing to their respective currencies.\n        </h5>\n        <br /><h3 class=\"bold clearBottom\">Justin Lucas</h3>\n        <p>GM at Autonomous.</p>\n      </div>\n      ",
+            "customer2": "     <div>\n        <h5 class=\"darkblue4\">\n          E-commerce provider of technology powered office solutions We just started using Constant to automate payroll to our employees in the US, Vietnam, China and Netherlands. Our employees like having the option to hold USD, and haven’t had problems withdrawing to their respective currencies.\n        </h5>\n        <br /><h3 class=\"bold clearBottom\">Bill Pelletier</h3>\n        <p>GM at Autonomous.</p>\n      </div>",
             "customer3": "<div><h5 class=\"darkblue4\">My partners in different countries all got accounts easily, and most importantly - Constant syncs up with the local banking system so withdrawals are straightforward. Constant is low-friction, easy to integrate, and has saved us a bundle on international transfer fees.</h5><br /><h3 class=\"bold clearBottom\">Veronica Tam</h3><p>CEO of Vifah, manufacturer of outdoor furniture for Walmart, Amazon, Wayfair and more. </p></div>"
         },
         "why": {

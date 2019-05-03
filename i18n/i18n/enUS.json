@@ -1670,8 +1670,8 @@
             "input2FA": "Input 2FA"
         },
         "constantLoan": {
-            "title": "Borrow money",
-            "subTitle": "\n        <h2>4.50% APR.</h2>\n        <h2>Instant funding.</h2>\n        <h2>Get cash for crypto without needing to sell.</h2>\n      ",
+            "title": "Borrow the way you want",
+            "subTitle": "\n        <h2>Set your own rates.</h2>\n        <h2>Protected by smart contract.</h2>\n        <h2>Get cash for crypto without needing to sell.</h2>",
             "headLine": "Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.",
             "exchange": {
                 "caption": "Crypto-backed loan",
@@ -2827,7 +2827,7 @@
             },
             "confirm": {
                 "thankYou1": "Almost there.",
-                "thankMsg": "Simply wire {amount} to our custodian to make a deposit. Please note that for security reasons, ACH transfers will not go through, and only wire transfers will be accepted by our custodian.",
+                "thankMsg": "Simply wire {amount} to our custodian to make a deposit.",
                 "bankName": "Bank name",
                 "accountName": "Account name",
                 "accountNumber": "Account number",
@@ -2836,8 +2836,8 @@
                 "reference": "Reference",
                 "important": "Note",
                 "importantMsg": "Do include your reference number {referenceNumber} in the bank transfer description, so we can process your deposit as fast as possible.",
-                "minuteWindow": "Please complete your transfer within 24 hours.",
-                "minuteWindowDescription": "For the sake of security, this session will time-out after 24 hours. If you need a little longer, just re-enter the amount you would like to invest when you’re ready.",
+                "minuteWindow": "Please complete your transfer within 3 days.",
+                "minuteWindowDescription": "For the sake of security, this session will time-out after 3 days. If you need a little longer, just re-enter the amount you would like to invest when you’re ready.",
                 "backOrderBook": "Buy more Constant",
                 "confirmMessage": "After you have made a transfer, please click confirm.",
                 "confirmButton": "Confirm payment",
@@ -2905,7 +2905,7 @@
         "success": {
             "title": "Customer Success Stories",
             "customer1": "\n      <div>\n        <h5 class=\"darkblue4\">\n          Constant is our preferred solution for cross-border transactions. Paying international suppliers and clients is much less of a hassle now, and much more cost-effective.\n        </h5>\n        <br /><h3 class=\"bold clearBottom\">Liz Nguyen</h3>\n        <p>CEO of Dropship Vendor Group, supplier to the world’s leading brands.</p>\n      </div>\n      ",
-            "customer2": "\n      <div>\n        <h5 class=\"darkblue4\">\n          E-commerce provider of technology powered office solutions We just started using Constant to automate payroll to our employees in the US, Vietnam, China and Netherlands. Our employees like having the option to hold USD, and haven’t had problems withdrawing to their respective currencies.\n        </h5>\n        <br /><h3 class=\"bold clearBottom\">Justin Lucas</h3>\n        <p>GM at Autonomous.</p>\n      </div>\n      ",
+            "customer2": "\n      <div>\n        <h5 class=\"darkblue4\">\n          E-commerce provider of technology powered office solutions We just started using Constant to automate payroll to our employees in the US, Vietnam, China and Netherlands. Our employees like having the option to hold USD, and haven’t had problems withdrawing to their respective currencies.\n        </h5>\n        <br /><h3 class=\"bold clearBottom\">Bill Pelletier</h3>\n        <p>GM at Autonomous.</p>\n      </div>\n      ",
             "customer3": "<div><h5 class=\"darkblue4\">My partners in different countries all got accounts easily, and most importantly - Constant syncs up with the local banking system so withdrawals are straightforward. Constant is low-friction, easy to integrate, and has saved us a bundle on international transfer fees.</h5><br /><h3 class=\"bold clearBottom\">Veronica Tam</h3><p>CEO of Vifah, manufacturer of outdoor furniture for Walmart, Amazon, Wayfair and more. </p></div>"
         },
         "why": {

@@ -2827,7 +2827,7 @@
             },
             "confirm": {
                 "thankYou1": "Almost there.",
-                "thankMsg": "Simply wire {amount} to the Constant Trust to make a deposit.",
+                "thankMsg": "Simply wire {amount} to our custodian to make a deposit.",
                 "bankName": "Bank name",
                 "accountName": "Account name",
                 "accountNumber": "Account number",

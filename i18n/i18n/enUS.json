@@ -2521,7 +2521,7 @@
     "newHome": {
         "banner": {
             "title": "The world’s first fully secured peer-to-peer lending platform.",
-            "title1": "\n        <h1>The world’s first <span class=\"darkorange4\">fully secured</span> peer-to-peer lending platform.</h1>\n      ",
+            "title1": "\n        <h1>The world’s first fully secured <span class=\"darkorange4\">peer-to-peer</span> lending platform.</h1>\n      ",
             "subTitle": "No minimum capital. No maximum loans. Set your own rates and tap into true market demand.",
             "cta": "Get started",
             "ctaDesc": "It's free.",

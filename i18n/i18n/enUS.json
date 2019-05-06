@@ -387,7 +387,7 @@
             "lDocType": "Type of ID",
             "plDocType": "Select your ID type",
             "btnSubmit": "Submit",
-            "lUpload": "Upload an image of the {face} of your {type}",
+            "lUpload": "Upload an image of THE {face} of your {type}",
             "descIDUpload": "Please make sure that the photo is complete and clearly visible, in BMP, JPG, JPEG, or PNG format, and is smaller than 3MB.",
             "lAddrStr1": "Address Street \n",
             "lAddrCountry": "Country on your proof of address",
@@ -1704,7 +1704,7 @@
         },
         "constantLoan": {
             "title": "Borrow the way you want",
-            "subTitle": "\n        <h2>Set your own rates.</h2>\n        <h2>Protected by smart contract.</h2>\n        <h2>Get cash for crypto without needing to sell.</h2>",
+            "subTitle": "\n        <h2>Set your own rates.</h2>\n        <h2>Protected by smart contracts.</h2>\n        <h2>Get cash for crypto without needing to sell.</h2>",
             "headLine": "Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.",
             "exchange": {
                 "maxRateTooltip": "This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.",
@@ -1729,26 +1729,26 @@
                 "description": "Constant crypto-backed loans have a generous loan to value ratio, no matter the amount you borrow. Benefit from the kindest interest rates on the market with our short term loans and get more liquidity out of your crypto."
             },
             "what": {
-                "whatCaption0": "Get funds within minutes",
-                "whatCaption1": "Crypto for cash",
-                "whatCaption2": "Instant approval",
-                "whatCaption3": "Here’s an example",
-                "whatDesc0": "\n<p>The money you need will reach you as soon as your collateral is confirmed on its blockchain. </p>\n\n<p>ETA: 2 minutes for ETH and 10 minutes for BTC.</p>        ",
-                "whatDesc1": "\n          <p>Secure your loan with BTC or ETH and receive USD - all without needing to sell your crypto. Enjoy liquidity without needing to liquidate.</p>\n        ",
-                "whatDesc2": "\n<p>No credit scoring or background checks - all we need is your collateral.</p>\n\n<p>Get funds instantly - no month-long waiting games for approval.</p>        ",
-                "whatDesc3": "\n<p>If you borrow $1,000 for 1 month at 4.5% APR</p>\n\n<p>Your interest is: <br />$1,000 x (4.5/12) = $3.75</p>\n<p>No repayment schedules. Just repay when you’re done.</p>        "
+                "whatCaption0": "Set your own rates",
+                "whatCaption1": "Protected by Ethereum",
+                "whatCaption2": "Non-custodial",
+                "whatCaption3": "No credit scoring",
+                "whatDesc0": "\n<p>Our P2P matching algorithm replaces centralized banks and allows you to tap into true market demand.</p>        ",
+                "whatDesc1": "<p>Your loan agreement is protected by a smart contract that will always run exactly as programmed. </p>\n",
+                "whatDesc2": "\n<p>Constant does not touch your collateral. It is securely stored in an Ethereum smart contract escrow.</p>",
+                "whatDesc3": "\n<p>No credit scoring or background checks. Get funds instantly, no month-long waiting games for approval.</p>        "
             },
             "howItWorks": {
                 "intro": "\n          <p>Deposit cryptocurrency to secure cash, at the best rates on the market.</p>\n          <p>Need cash? We accept major cryptocurrencies as collateral, in exchange for USD or the equivalent in your local currency. That means you’ll have cash to spend - without needing to sell your crypto.</p>\n        ",
                 "step1": "STEP 1",
-                "title1": "Enter an amount",
-                "desc1": "How much do you want to borrow? Tell us how much, in your currency of choice.",
+                "title1": "Set your own terms",
+                "desc1": "Choose how much you want to borrow and for how long, then enter the interest rate you want to pay.",
                 "step2": "STEP 2",
-                "title2": "Choose a collateral and a term",
-                "desc2": "Secure your loan with BTC or ETH as collateral. Our calculator will tell you how much you need. Then just pick a loan term you feel comfortable with.",
+                "title2": "Wait to be matched",
+                "desc2": "The Constant matching algorithm finds investors that can lend you the money you need at the rates you want.",
                 "step3": "STEP 3",
                 "title3": "Get cash to spend",
-                "desc3": "Within the hour, your USD loan will be accessible from your Constant Account. Withdraw anytime, to any other bank account."
+                "desc3": "Once you’ve found a match, you’ll receive the loan in your account. Collateral is stored safely in a smart contract escrow and will be automatically returned when you repay."
             },
             "reference": "\n        <div name=\"ref-container\">\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Interest rate:</span>\n            <span name=\"ref-value\">{intRate}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Collateral value:</span>\n            <span name=\"ref-value\">{colValue}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Collateral return:</span>\n            <span name=\"ref-value\">{colReturn}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Default threshold:</span>\n            <span name=\"ref-value\">{defThreshold}</span>\n          </div>",
             "transaction": {
@@ -2539,7 +2539,7 @@
             "title3": "GET THE CAPITAL TO FULFILL YOUR PO",
             "desc3": "Enjoy quick turnaround. Finance up to 100% of your POs and stay competitive.  Rinse and repeat for your next order."
         },
-        "blockTitle2": "How it works",
+        "blockTitle2": "How to borrow",
         "blockDesc2": "\n      <h5>Secure cash with purchase orders.</h5>\n      <br />\n      <h5>We understand that money is fast flowing. If you sell products to reputable clients - established companies, government organizations, or similar - we can fund you the working capital you need to fulfill those orders, in confidence of future payment from your client.</h5>\n    ",
         "brands": {
             "title": "Our clients work with some of the world’s leading brands"
@@ -2575,8 +2575,8 @@
     },
     "newHome": {
         "banner": {
-            "title": "The world’s first fully secured peer-to-peer lending platform.",
-            "title1": "\n        <h1>The world’s first fully secured <span class=\"darkorange4\">peer-to-peer</span> lending platform.</h1>\n      ",
+            "title": "<h2>Set your own rates.</h2>\n <h2>No minimum capital.</h2>\n <h2>Invest only in secured loans.</h2>\n </span>\n <br />\n <h5>\n Your investments are fully backed by borrower collateral, smart contracts and FDIC insurance. Withdraw unloaned portions anytime.\n </h5>",
+            "title1": "\n        <h1>The world’s first <span class=\"textSuccess\">fully secured</span> peer-to-peer lending platform.</h1>\n      ",
             "subTitle": "No minimum capital. No maximum loans. Set your own rates and tap into true market demand.",
             "cta": "Get started",
             "ctaDesc": "It's free.",
@@ -2602,7 +2602,7 @@
             "desc": "Unlike traditional P2P platforms that prey on vulnerable borrowers and expect investors to shoulder the risk, Constant is designed to protect them both.",
             "item0": {
                 "title": "Secured returns for investors",
-                "desc": "If borrowers default, collateral is sold to refund the investor. If collateral falls in value, it is sold at a threshold. It’s all automated by an unstoppable smart contract - investors always get their principal and profit back."
+                "desc": "If borrowers default, collateral is sold to refund the investor. If collateral falls in value, it is sold at a threshold. It’s all automated by an unstoppable smart contract - investors will always get their principal and profit."
             },
             "item1": {
                 "title": "Collateral protection for borrowers",
@@ -2884,7 +2884,7 @@
             },
             "confirm": {
                 "thankYou1": "Almost there.",
-                "thankMsg": "Simply wire {amount} to our custodian to make a deposit.",
+                "thankMsg": "Simply make a transfer of {amount} to complete your deposit.",
                 "bankName": "Bank name",
                 "accountName": "Account name",
                 "accountNumber": "Account number",
@@ -2905,13 +2905,13 @@
             }
         },
         "whatCaption0": "Set your own rates",
-        "whatCaption1": "Insured up to $130M while waiting for a match",
-        "whatCaption2": "Protected by Ethereum smart contracts",
-        "whatCaption3": "Collateral backed loans",
-        "whatDesc0": "\n      <p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.</p>\n      <br />\n      <p>You decide your rates. No hidden fees.</p>\n      <br />\n      <a href=\"https://www.myconstant.com/borrow\" target=\"_blank\">How money is loaned out ></a>\n    ",
-        "whatDesc1": "\n      <p>Funds that have not yet been loaned out are kept safe at multiple FDIC-insured bank accounts with an aggregated insurance of $130M.</p>\n      <br />\n      <p>You can withdraw anytime.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/meet-scott-purcell-ceo-of-prime-trust-ae7581835030\" target=\"_blank\">How we deliver FDIC insurance ></a>\n    ",
-        "whatDesc2": "\n      <p>When your money is on loan, it is no longer FDIC insured, but protected by a smart contract that runs exactly as programmed - without the need for human involvement.</p>\n      <br />\n      <p>Together, FDIC insurance and smart contract security, keep your money independently safe.</p>\n      <br />\n      <a href=\"https://github.com/constant-money\" target=\"_blank\">View our code ></a>\n    ",
-        "whatDesc3": "\n      <p>If borrowers default or their collateral falls in value, you don’t lose a cent.</p>\n      <br />\n      <p>How? We strictly require every loan to be 150% backed by collateral. </p>\n      <br />\n   <p>If their collateral falls in value, it is automatically liquidated at 70%, so lenders always get their money back.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/how-do-constant-crypto-loans-work-b22b66b5b687\" target=\"_blank\">How we protect investor funds ></a>",
+        "whatCaption1": "$130M insurance",
+        "whatCaption2": "Protected by Ethereum",
+        "whatCaption3": "Collateral backed",
+        "whatDesc0": "\n      <p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.</p>\n \n    ",
+        "whatDesc1": "\n      <p>Funds that have not yet been loaned out are kept safe at multiple FDIC-insured bank accounts with an aggregated insurance of $130M. You can withdraw anytime.\n</p>\n    ",
+        "whatDesc2": "\n      <p>When your money is on loan, it is protected by a smart contract that will always run exactly as programmed. Enjoy automatic return of principal and payout of profit.</p>\n    ",
+        "whatDesc3": "\n      <p>If borrowers default or their collateral falls in value, you don’t lose a cent. How? We strictly require every loan to be 150% backed by collateral.</p>",
         "howItWorks": {
             "mainTitle": "How it works",
             "mainDesc": "<h5>The Constant algorithm matches investors with borrowers glad to pay their rates. It  then secures investor funds and borrower collateral in an unstoppable smart contract, and facilitates the entire transaction from beginning to end. </h5>\n",

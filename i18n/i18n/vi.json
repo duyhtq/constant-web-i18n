@@ -335,7 +335,8 @@
             "sellOrders": "Lệnh bán",
             "buyOrders": "Lệnh Mua",
             "bookingOrders": "Lệnh Bán",
-            "termOrders": "Xác nhận đầu tư",
+            "investingOrders": "Investing Orders",
+            "loanOrders": "Loan Orders",
             "myOrders": "Gửi và rút tiền",
             "localHistory": "Chuyển khoản và thu nhập lãi",
             "wallets": "Ví của tôi",
@@ -434,38 +435,70 @@
             },
             "noData": "Không có lệnh bán phù hợp"
         },
-        "termOrder": {
-            "title": "Danh sách đầu tư",
-            "userAndDate": "Tài khoản/Ngày",
-            "matched": "Phù hợp",
-            "date": "Ngày",
-            "termAndRate": "Kì hạn/Lãi suất",
-            "amount": "Số lượng",
-            "accept": "Đồng ý",
-            "cancel": "Huỷ",
-            "confirm": "Xác nhận",
-            "confirmTitle": "Xác nhận khoản đầu tư",
-            "confirmMess": "Bạn xác nhận muốn thực hiện giao dịch này?",
-            "reject": "Từ chối",
-            "rejectMess": "Bạn từ chối thực hiện giao dịch này?",
-            "loadMore": "Tải thêm",
-            "matchedAmount": "Số tiền đầu tư",
+        "investingOrder": {
+            "title": "Investing Order Available",
+            "userAndDate": "User/Date",
+            "matched": "Matched",
+            "date": "Date",
+            "termAndRate": "Term/Rate",
+            "amount": "Amount",
+            "accept": "Accept",
+            "cancel": "Cancel",
+            "confirm": "Confirm",
+            "confirmTitle": "Confirm matched amount",
+            "confirmMess": "Are you sure you want to confirm this order?",
+            "reject": "Reject",
+            "rejectMess": "Are you sure you want to reject this order?",
+            "loadMore": "Load more",
+            "matchedAmount": "Matched Amount",
             "status": {
-                "status": "Trạng thái",
-                "transferred": "Đã chuyển khoản",
-                "transferred_fiat": "Đã chuyển tiền",
-                "picked": "Đã chọn",
-                "pending": "Đang chờ",
-                "cancelled": "Đã huỷ",
-                "system_cancelled": "Hệ thống đã huỷ",
-                "system_rejected": "Hệ thống đã từ chối"
+                "status": "Status",
+                "transferred": "Transferred",
+                "transferred_fiat": "Transferred Fiat",
+                "picked": "Picked",
+                "pending": "Pending",
+                "cancelled": "Cancelled",
+                "system_cancelled": "System Cancelled",
+                "system_rejected": "System Rejected"
             },
             "acceptFailed": {
-                "": "Chọn lệnh giữ chỗ không thành công. Xin vui lòng thử lại hoặc liên hệ với admin để được trợ giúp.\n Xin cảm ơn! ",
-                "processing_order_exists": "Đang xử lí lệnh",
-                "validation_error": "Không thể đồng ý lệnh này."
+                "": "Picked booking order is failing, please try again, or contact my admin for help. \n Thanks! ",
+                "processing_order_exists": "There is processing order need to complete",
+                "validation_error": "Can not accept this order."
             },
-            "noData": "Hiện chưa có lệnh bán"
+            "noData": "No sell order available"
+        },
+        "loanOrder": {
+            "title": "Loan Order Available",
+            "userAndDate": "User/Date",
+            "matched": "Matched",
+            "date": "Date",
+            "termAndRate": "Term/Rate",
+            "amount": "Amount",
+            "cancel": "Cancel",
+            "accept": "Accept",
+            "acceptMess": "Are you sure you want to confirm this order?",
+            "reject": "Reject",
+            "rejectMess": "Are you sure you want to reject this order?",
+            "loadMore": "Load more",
+            "matchedAmount": "Matched Amount",
+            "status": {
+                "status": "Status",
+                "transferred": "Transferred",
+                "transferred_fiat": "Transferred Fiat",
+                "picked": "Picked",
+                "pending": "Pending",
+                "cancelled": "Cancelled",
+                "system_cancelled": "System Cancelled",
+                "system_rejected": "System Rejected"
+            },
+            "acceptSuccessfully": "Your accepting order have been accepted successfully",
+            "acceptFailed": {
+                "": "Picked booking order is failing, please try again, or contact my admin for help. \n Thanks! ",
+                "processing_order_exists": "There is processing order need to complete",
+                "validation_error": "Can not accept this order."
+            },
+            "noData": "No sell order available"
         },
         "bookingOrder": {
             "title": "Danh sách lệnh giữ chỗ",
@@ -1674,6 +1707,8 @@
             "subTitle": "\n        <h2>Lãi suất chỉ từ 4.50%/năm.</h2>\n        <h2>Nhận tiền ngay.</h2>\n        <h2>Mà không cần phải bán đi số tiền mã hoá vốn có.</h2>\n      ",
             "headLine": "Bạn muốn có tiền để trả nợ thẻ tín dụng, trả tiền thuê nhà hay trả viện phí? Rất đơn giản. Đặt cọc bằng ETH và bạn sẽ nhận được số Constant bạn cần. Số ETH này sẽ được giữ an toàn trong hợp đồng thông minh của Constant.",
             "exchange": {
+                "maxRateTooltip": "This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.",
+                "minTermTooltip": "This is the minimum amount of time you want to borrow.",
                 "caption": "Vay thế chấp bằng tiền mã hoá",
                 "buttonText": "Vay tiền",
                 "month": "{period} tháng",
@@ -1763,9 +1798,29 @@
             "errorMessages": {
                 "required": "Yêu cầu",
                 "minimumBorrowAmount": "Bạn có thể vay tối thiểu {amount}{symbol}",
-                "inValidWalletAddress": "Địa chỉ ví không hợp lệ"
+                "inValidWalletAddress": "Địa chỉ ví không hợp lệ",
+                "rangeInterestRate": "Interest rate must be greater than {min}% and less than {max}%"
             },
-            "learnMore": "Tìm hiểu thêm"
+            "learnMore": "Tìm hiểu thêm",
+            "listApplications": {
+                "heading": "Loans",
+                "createdDate": "Created at:",
+                "principal": "Principal",
+                "interest": "Interest +{interest}% APR",
+                "status": "Status",
+                "mapStatus": {
+                    "pending": "Pending",
+                    "recieved": "Recieved",
+                    "accepted": "Accepted",
+                    "payingInterest": "Paying",
+                    "done": "Done",
+                    "withdrawed": "Withdrawed",
+                    "tnxFailed": "Transaction failed",
+                    "cancelled": "Cancelled",
+                    "rejected": "Rejected",
+                    "fullPayment": "full payment"
+                }
+            }
         },
         "bottomBannerText": "Bạn xứng đáng với trải nghiệm dịch vụ tốt hơn",
         "bottomBannerButton": "Đăng kí tài khoản",
@@ -2806,7 +2861,9 @@
                 "btnKyc": "Xác minh danh tính để đầu tư",
                 "btnKyc1": "<a>Xác minh danh tính</a> để đầu tư",
                 "minRate": "Lãi suất tối thiểu",
+                "maxRate": "Your maximum interest rate",
                 "maxTerm": "Kì hạn tối đa",
+                "minTerm": "Minimum term",
                 "tooltip": {
                     "amount": "<p>Bạn muốn đầu tư bao nhiêu?</p>",
                     "maxTerm": "<p>Đây là khoảng thời gian tối đa mà bạn muốn đầu tư. Phần tiền còn lại được đảm bảo bởi FDIC và bạn có thể rút về bất cứ lúc nào.</p>",
@@ -2906,7 +2963,7 @@
             "title": "Chia sẻ của khách hàng",
             "customer1": "\n      <div>\n        <h5 class=\"darkblue4\">\n          Constant is our preferred solution for cross-border transactions. Paying international suppliers and clients is much less of a hassle now, and much more cost-effective.\n        </h5>\n        <br /><h3 class=\"bold clearBottom\">Liz Nguyen</h3>\n        <p>CEO of Dropship Vendor Group, supplier to the world’s leading brands.</p>\n      </div>\n      ",
             "customer2": "     <div>\n        <h5 class=\"darkblue4\">\n          E-commerce provider of technology powered office solutions We just started using Constant to automate payroll to our employees in the US, Vietnam, China and Netherlands. Our employees like having the option to hold USD, and haven’t had problems withdrawing to their respective currencies.\n        </h5>\n        <br /><h3 class=\"bold clearBottom\">Bill Pelletier</h3>\n        <p>GM at Autonomous.</p>\n      </div>",
-            "customer3": "<div><h5 class=\"darkblue4\">My partners in different countries all got accounts easily, and most importantly - Constant syncs up with the local banking system so withdrawals are straightforward. Constant is low-friction, easy to integrate, and has saved us a bundle on international transfer fees.</h5><br /><h3 class=\"bold clearBottom\">Veronica Tam</h3><p>CEO of Vifah, manufacturer of outdoor furniture for Walmart, Amazon, Wayfair and more. </p></div>"
+            "customer3": "\n      <div>\n	      <h5 class=\"darkblue4\">\n		      My partners in different countries all got accounts easily, and most importantly - Constant syncs up with the local banking system so withdrawals are straightforward. Constant is low-friction, easy to integrate, and has saved us a bundle on international transfer fees.\n	      </h5>\n	      <br /><h3 class=\"bold clearBottom\">Veronica Tam</h3>\n	      <p>CEO of Vifah, manufacturer of outdoor furniture for Walmart, Amazon, Wayfair and more. </p>\n      </div>          \n      "
         },
         "why": {
             "title": "Tính ưu việt của Constant"

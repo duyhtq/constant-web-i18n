@@ -2842,7 +2842,7 @@
     "home1": {
         "lendingSection": {
             "intro": {
-                "content": "\n          <h6 class=\"semiBold blue1\">Invest the way you want</h6>\n          <span>\n            <h2>The world’s first fully secured peer-to-peer lending platform.</h2>\n          </span>\n          <br />\n          <h6>\n          Backed by a combination of collaterals, smart contracts and FDIC insurance. Set your own terms. No minimum capital. Withdraw anytime.</h6>"
+                "content": "\n<h6 class=\"semiBold blue1\">Invest the way you want</h6>\n<h2>Set your own rates.</h2>\n <h2>No minimum capital.</h2>\n <h2>Invest only in secured loans.</h2>\n </span>\n <br />\n <h6>\n Your investments are fully backed by borrower collateral, smart contracts and FDIC insurance. Withdraw unloaned portions anytime.\n </h6>"
             },
             "form": {
                 "text1": "Set your own lending terms",

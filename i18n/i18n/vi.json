@@ -46,7 +46,7 @@
             "updated_at": "Ngày cập nhật",
             "to_email": "Chuyển Khoản Tới",
             "schedule_date": "Ngày Dự Kiến",
-            "amount": "Số lượng",
+            "amount": "Số tiền",
             "processing": "<b style=\"color: #ffc107;\">Đang xử lí</b>",
             "checking": "<b style=\"color: #ffc107;\">Đang kiểm tra</b>",
             "done": "<b style=\"color: ##28a745;\">Hoàn thành</b>",
@@ -409,7 +409,7 @@
             "title": "Danh Sách Lệnh Mua",
             "date": "Ngày",
             "value": "Giá trị",
-            "amount": "Số lượng",
+            "amount": "Số tiền",
             "accept": "Đồng ý",
             "approve": "Xác nhận thanh toán",
             "receipt": "Tải lên biên lai chuyển tiền",
@@ -441,7 +441,7 @@
             "matched": "Khớp lệnh",
             "date": "Ngày",
             "termAndRate": "Kì hạn/Lãi suất",
-            "amount": "Số lượng",
+            "amount": "Số tiền",
             "accept": "Đồng ý",
             "cancel": "Huỷ",
             "confirm": "Xác nhận",
@@ -474,7 +474,7 @@
             "matched": "Khớp lệnh",
             "date": "Ngày",
             "termAndRate": "Kì hạn/Lãi suất",
-            "amount": "Số lượng",
+            "amount": "Số tiền",
             "cancel": "Huỷ",
             "accept": "Đồng ý",
             "acceptMess": "Bạn chắc chắn muốn khớp lệnh này?",
@@ -505,7 +505,7 @@
             "userAndDate": "Người sử dụng/Ngày",
             "date": "Ngày",
             "value": "Giá trị",
-            "amount": "Số lượng",
+            "amount": "Số tiền",
             "accept": "Đồng ý",
             "cancel": "Huỷ",
             "cancelMess": "Bạn chắc chắn muốn huỷ giao dịch này?",
@@ -549,7 +549,7 @@
             "title": "Danh sách lệnh bán",
             "date": "Ngày",
             "value": "Giá trị",
-            "amount": "Số lượng",
+            "amount": "Số tiền",
             "accept": "Đồng ý",
             "pick": "Chọn",
             "viewDetail": "Chi tiết",
@@ -710,7 +710,7 @@
             "cryptoAddress": "Địa chỉ ví",
             "reference_number": "Số chuyển tiền.",
             "type": "Loại",
-            "amount": "Số lượng",
+            "amount": "Số tiền",
             "toEmail": "Tới email",
             "toAddress": "Tới địa chỉ",
             "fromEmail": "Từ Email",
@@ -995,7 +995,7 @@
                 "totalInterestEarned": "Bạn đã kiếm được",
                 "noRecord": "Bạn vẫn chưa có khoản tiết kiệm nào. Bắt đầu tiết kiệm ngay từ hôm nay.",
                 "getListFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
-                "amount": "Phần gốc",
+                "amount": "Tiền gốc",
                 "interest": "Lãi suất",
                 "apr": "/năm",
                 "haveTimeAccount": "Khoản đầu tư {term}{termType}",
@@ -1004,17 +1004,17 @@
                 "endTerm": "Ngày đáo hạn: ",
                 "trial": "THỬ NGHIỆM",
                 "trial_description": "Đã hết kì hạn. Khách hàng được giữ phần lãi",
-                "saving_title": "Gửi Tiết Kiệm Có Kì Hạn",
+                "saving_title": "Các khoản đầu tư",
                 "anyTime_saving": "Số dư",
                 "input2FA": "Nhập mã bảo mật 2 lớp",
                 "cancel": "Huỷ",
                 "termStatus": {
-                    "created": "Phù hợp",
+                    "created": "Khớp lệnh",
                     "pending": "Đang chờ",
                     "closed": "Đã đóng",
                     "rejected": "Đã từ chối",
                     "pending_kyc": "Đang xác minh KYC",
-                    "matched": "Phù hợp",
+                    "matched": "Khớp lệnh",
                     "matching": "Đang chờ"
                 },
                 "interestInfo": {
@@ -1113,7 +1113,7 @@
             },
             "applicationDetail": {
                 "dueDays": "Ngày đáo hạn",
-                "interestAmount": "Phần lãi",
+                "interestAmount": "Tiền lãi",
                 "originalAmount": "Phần gốc",
                 "totalAmount": "Tổng cộng",
                 "paid": "Hoàn trả",
@@ -1425,7 +1425,7 @@
                 "accountName": "Tên tài khoản:",
                 "bankName": "Tên ngân hàng",
                 "accountNumber": "Số tài khoản:",
-                "amount": "Số lượng:",
+                "amount": "Số tiền:",
                 "value": "Giá trị",
                 "constant": "Constant:",
                 "reference": "Mã giao dịch:",
@@ -1698,7 +1698,7 @@
                 }
             },
             "howItWorks": "Hướng dẫn sử dụng",
-            "amount": "Số lượng",
+            "amount": "Số tiền",
             "to": "Tới",
             "input2FA": "Nhập mã bảo mật 2 lớp"
         },
@@ -1754,7 +1754,7 @@
             "transaction": {
                 "transactionID": "mã giao dịch",
                 "noticeTpl": "Xin vui lòng gửi <strong>{collateralAmount}{collateralSymbol}</strong> tới địa chỉ dưới đây trong vòng <strong>60 phút</strong> để thế chấp.",
-                "summarizeTitle": "Các thời hạn vay:",
+                "summarizeTitle": "Thông tin khoản vay:",
                 "copiedAddress": "Đã sao chép địa chỉ",
                 "summarizeContent": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Khoản vay:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Lãi suất:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Thế chấp:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Thời hạn:</span>\n              <span name=\"ref-value\">{term}</span>\n            </div>\n          </div>\n        \n        "
             },
@@ -1805,8 +1805,8 @@
             "listApplications": {
                 "heading": "Khoản vay",
                 "createdDate": "Ngày tạo:",
-                "principal": "Phần gốc",
-                "interest": "Phần lãi: +{interest}%/năm",
+                "principal": "Tiền gốc",
+                "interest": "Tiền lãi: +{interest}%/năm",
                 "status": "Trạng thái",
                 "mapStatus": {
                     "pending": "Đang chờ",
@@ -1818,7 +1818,7 @@
                     "tnxFailed": "Giao dịch không thành công",
                     "cancelled": "Đã huỷ",
                     "rejected": "Đã từ chối",
-                    "fullPayment": "full payment"
+                    "fullPayment": "Thanh toán hết"
                 }
             }
         },
@@ -2700,7 +2700,7 @@
         }
     },
     "support": {
-        "text": "Bạn cần hỗ trợ? Gọi {phone} ngay cho chúng tôi. Chúng tôi sẵn sàng hỗ trợ bạn 24/7.",
+        "text": "Call us at {phone}. Monday to Friday, 9am - 5pm PT.",
         "phone": {
             "vn": "+84 36 656 2949",
             "us": "+1 844 201 7242",
@@ -2889,7 +2889,7 @@
                 "accountName": "Tên tài khoản",
                 "accountNumber": "Số tài khoản",
                 "value": "Giá trị",
-                "amount": "Số lượng",
+                "amount": "Số tiền",
                 "reference": "Mã giao dịch",
                 "important": "LƯU Ý",
                 "importantMsg": "Hãy nhớ điền mã giao dịch {referenceNumber} trong phần nội dung chuyển khoản.",

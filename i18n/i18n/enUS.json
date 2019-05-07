@@ -69,8 +69,8 @@
                 "btn": "Make an investment"
             },
             "type4": {
-                "title": "<h3>Borrow now</h3>",
-                "btn": "Get fixed-rate loans of any amount. Pay off credit cards, cover major purchases, \nfund home-improvement, or finance special occasions."
+                "title": "<h3>Get fixed-rate loans of any amount. Pay off credit cards, cover major purchases, \nfund home-improvement, or finance special occasions.</h3>",
+                "btn": "Borrow now"
             },
             "type5": {
                 "title": "<h3>Send money anywhere</h3>",
@@ -1280,7 +1280,7 @@
         },
         "blockTitle1": "Customer stories",
         "blockDesc1": "People save better with Constant.",
-        "blockTitle2": "How to invest",
+        "blockTitle2": "How to borrow",
         "blockCap2": "Enjoy an interest rate 60x the national average.",
         "blockDesc2": "\n    ",
         "blockTitle3": "What we do",

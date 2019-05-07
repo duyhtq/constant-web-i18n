@@ -2700,7 +2700,7 @@
         }
     },
     "support": {
-        "text": "<h6>Question? Call us at {phone}. </h6>\n<h6>Monday to Friday, 9am - 5pm PT.</h6>",
+        "text": "Question? Call us at {phone}.",
         "phone": {
             "vn": "1-844-201-7242",
             "us": "+1 844 201 7242",

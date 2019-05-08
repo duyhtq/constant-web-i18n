@@ -2763,7 +2763,7 @@
     },
     "support": {
         "title": "Monday to Friday, 9am - 5pm PT.",
-        "text": "Call us at {phone}. Monday to Friday, 9am - 5pm PT.",
+        "text": "Questions? Call us at {phone}.",
         "phone": {
             "vn": "1-844-201-7242",
             "us": "+1 844 201 7242",
@@ -2982,14 +2982,14 @@
             "mainTitle": "How it works",
             "mainDesc": "<h5>The Constant algorithm matches investors with borrowers glad to pay their rates. It  then secures investor funds and borrower collateral in an unstoppable smart contract, and facilitates the entire transaction from beginning to end. </h5>\n",
             "step1": "Step 1",
-            "title1": "You make an investment",
-            "desc1": "Choose among our flexible Investment Plans, then make a bank transfer of any amount to the FDIC insured Constant Vault. Your funds will be held in USD, to protect against volatility. We earn you interest and make sure your money is secure, by lending your funds only to borrowers who are willing to overcollateralize.",
+            "title1": "Set your own terms",
+            "desc1": "Choose how much you want to invest and for how long, then enter the interest rate you want to earn.",
             "step2": "Step 2",
-            "title2": "Your money multplies",
-            "desc2": "No matter which commitment period you choose, returns are paid out daily into a Flexible Account. Flexible means you can withdraw whenever you like, and earn an extra 1% annually. Stay liquid and make profit on your profit.",
+            "title2": "Wait to be matched",
+            "desc2": "The matching algorithm finds borrowers that meet your requirements. While you wait, all unloaned portions are FDIC insured and can be withdrawn at any time.",
             "step3": "Step 3",
-            "title3": "You withdraw profit",
-            "desc3": "Your investment income is in USD, but you can withdraw it to any local bank account at the end of the commitment period. Or you could reinvest it to keep growing your money."
+            "title3": "Start earning interest",
+            "desc3": "Once a borrower is found, you’ll start earning interest on the matched amount, to be withdrawn at the end of your term."
         },
         "checklist": {
             "title": "Why you should invest with Constant.",

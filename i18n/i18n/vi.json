@@ -58,7 +58,7 @@
         "cta": {
             "type1": {
                 "title": "<h3>Chuyển khoản tới bất cứ đâu với chi phí thấp nhất.</h3>",
-                "btn": "Mở tài khoản ngay"
+                "btn": "ĐẦU TƯ NGAY"
             },
             "type2": {
                 "title": "<h3>Mở ngay tài khoản USD toàn cầu.</h3>",
@@ -1060,7 +1060,7 @@
                         "percentReceive": "Bạn được hưởng lãi suất {percent}%/năm.",
                         "confirm": "Đầu tư",
                         "cancel": "Huỷ",
-                        "messageConfirm": "Bạn chuẩn bị đầu tư {amount} Constant.",
+                        "messageConfirm": "Xác nhận đầu tư {amount} USD?",
                         "validateMaxAmountError": "Xin lỗi. Bạn không có đủ Constant để nạp.",
                         "validateMinAmountError": "Xin vui lòng nhập số lớn hơn {amount} CONSTANT"
                     },
@@ -2259,7 +2259,7 @@
         "currencyDropdownLabel": "Đơn vị tiền tệ",
         "amountResultLabel": "Theo tỉ giá ngày hôm nay, tương đương với:",
         "buyBtn": "ĐẦU TƯ {fiatAmount}{fiatCurrency}",
-        "investNow": "Mở tài khoản ngay",
+        "investNow": "ĐẦU TƯ NGAY",
         "amountTooSmall": "Số tiền quá nhỏ. Hãy nhập một con số lớn hơn",
         "noAgentAvaiable": "Rất tiếc. Hãy thử một con số nhỏ hơn hoặc thử lại sau.",
         "getAmountFailed": "Xảy ra lỗi khi xác nhận số tiền. Xin vui lòng thử lại.",
@@ -2322,7 +2322,7 @@
         "highlightText": "bạn giữ toàn bộ phần lãi.",
         "trialLeft": "Chỉ còn {number} lần trải nghiệm dịch vụ miễn phí.",
         "noMoreTrialLeft": "Không còn trải nghiệm dịch vụ miễn phí.",
-        "submitBtn": "Mở tài khoản ngay",
+        "submitBtn": "ĐẦU TƯ NGAY",
         "btnDesc": "Chỉ dành cho những khách hàng mới. Khoản đầu tư 1,000 USD miễn phí để trải nghiệm dịch vụ sẽ được trả về Constant khi đáo hạn nhưng bạn được giữ toàn bộ phần lãi.",
         "termLabel": "Chọn kì hạn"
     },

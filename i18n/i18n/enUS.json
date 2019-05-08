@@ -69,7 +69,7 @@
                 "btn": "Make an investment"
             },
             "type4": {
-                "title": "<h3>Get fixed-rate loans of any amount. Pay off credit cards, cover major purchases, \nfund home-improvement, or finance special occasions.</h3>",
+                "title": "<h3>Get fixed-rate loans of any amount.</h3>",
                 "btn": "Borrow now"
             },
             "type5": {
@@ -2646,7 +2646,7 @@
         "faqs": {
             "question1": "What is peer-to-peer (P2P) lending?",
             "answer1": "Unlike bank loans, P2P lending works by matching investors and borrowers directly. Since there are no greedy middlemen getting in the way, you set your own terms and rates, giving you unparalleled control of your finances. So whether you’re looking for a low-interest loan or better returns on your investment, we’ll match you with someone who’d love to do business with you.",
-            "question2": "What makes you different from other P2P lending platforms?",
+            "question2": "What makes Constant different from other P2P lending platforms?\n",
             "answer2": "\n        <p>Constant is the first fully secured P2P lending platform. All investor funds are fully backed by collateral, and all portions that are not yet on loan are covered by FDIC insurance. Borrower collateral is stored safely in escrow, which means no one can touch it until it is transferred back to them after repayment.</p>\n        <p>Unlike other platforms, Constant also allows users to set their own interest rates and terms. \n        Ethereum powered smart contracts automate the loan agreement and always run exactly as programmed – ensuring both investors and borrowers are protected.\n        </p>\n      ",
             "question3": "Who can participate?",
             "answer3": "Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment).",
@@ -2762,7 +2762,7 @@
         }
     },
     "support": {
-        "title": "Monday to Friday, 9am - 5pm PT",
+        "title": "Monday to Friday, 9am - 5pm PT.",
         "text": "Call us at {phone}. Monday to Friday, 9am - 5pm PT.",
         "phone": {
             "vn": "1-844-201-7242",

@@ -740,6 +740,15 @@
                 "rejectError": {
                     "no_risk_detected": "Không thể từ chối giao dịch này vì không có rủi ro.",
                     "notDefined": "Không thể từ chối giao dịch này"
+                },
+                "status": {
+                    "canceled": "Cancelled",
+                    "timeout": "Timed out",
+                    "transferMoneyToAgent": "Your account will be credited once we have received your transfer",
+                    "waitAgentTransferMoney": "Waiting for seller to send money",
+                    "transferredMoneyToAgent": "Received",
+                    "done": "Successful",
+                    "inProgress": "Order in progress"
                 }
             },
             "orderType": {
@@ -789,7 +798,16 @@
                 "account": "Tên tài khoản",
                 "fullName": "Họ và tên",
                 "userName": "Tên tài khoản",
-                "email": "Email"
+                "email": "Email",
+                "status": {
+                    "canceled": "Cancelled",
+                    "timeout": "Order timed out",
+                    "transferMoneyToAgent": "Please make a transfer to complete your deposit",
+                    "waitAgentTransferMoney": "Waiting for seller to send money",
+                    "transferredMoneyToAgent": "Your account will be credited once we have received your transfer.",
+                    "done": "Successful",
+                    "inProgress": "Order in progress"
+                }
             },
             "bankInfo": {
                 "bankName": "Tên ngân hàng",
@@ -1703,6 +1721,18 @@
             "input2FA": "Nhập mã bảo mật 2 lớp"
         },
         "constantLoan": {
+            "faqs": {
+                "question1": "How long will it take to find a match?",
+                "answer1": "This depends on the rates and terms you set. Market levels normally result in immediate (or near-immediate) matches, so we update the market rates on the website regularly. If you choose a lower interest rate, it might take a little longer to find you a suitable match.",
+                "question2": "Do you check my credit score?",
+                "answer2": "As Constant only offers secured loans backed by collateral, there is no need for credit scoring. All you need is adequate collateral to secure your loan. To see how much collateral you’ll need to secure your loan, simply enter the amount you’d like to borrow. The calculator will work out the amount for you.",
+                "question3": "How do you protect my collateral?",
+                "answer3": "Your collateral is held safely in an Ethereum powered smart contract escrow. This means no one can touch it – not even us. When you repay, your collateral is immediately transferred back to you.",
+                "question4": "What happens if I don’t repay the loan?",
+                "answer4": "If you don’t repay the loan, we sell your collateral to pay back investors, and you get to keep the loan. That’s all there is to it.",
+                "question5": "What happens if my crypto collateral falls in value?",
+                "answer5": "If your collateral falls below a certain threshold, we sell it to pay back investors, and refund you the difference. The USD loan is yours to keep."
+            },
             "title": "Vay thế chấp bằng tiền mã hoá",
             "subTitle": "\n        <h2>Lãi suất chỉ từ 4.50%/năm.</h2>\n        <h2>Nhận tiền ngay.</h2>\n        <h2>Mà không cần phải bán đi số tiền mã hoá vốn có.</h2>\n      ",
             "headLine": "Bạn muốn có tiền để trả nợ thẻ tín dụng, trả tiền thuê nhà hay trả viện phí? Rất đơn giản. Đặt cọc bằng ETH và bạn sẽ nhận được số Constant bạn cần. Số ETH này sẽ được giữ an toàn trong hợp đồng thông minh của Constant.",
@@ -1760,8 +1790,12 @@
                 "copiedAddress": "Đã sao chép địa chỉ",
                 "scanQR": "Hoặc scan mã QR này để sử dụng ví của bạn.",
                 "summarizeContent": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Khoản vay:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Lãi suất:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Thế chấp:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Thời hạn:</span>\n              <span name=\"ref-value\">{term}</span>\n            </div>\n          </div>\n        \n        ",
+                "summarizeContent1": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Loan amount:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Interested rate:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Collateral:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n          </div>\n        ",
                 "repaymentField": "\n<div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Ngày hoàn trả:</span>\n              <span name=\"ref-value\">{repayment}</span>\n            </div>\n          </div>\n        ",
-                "borrowMore": "Vay thêm"
+                "borrowMore": "Vay thêm",
+                "termField": "Term",
+                "termUnit": "{period} month",
+                "termUnit1": "{period} months"
             },
             "history": {
                 "itemTpl": "\n          <div name=\"loan-info-container\">\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Khoản vay:</span>\n              <span name=\"loan-info-value\">{loanAmount}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Lãi suất:</span>\n              <span name=\"loan-info-value\">{interestedRate}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Thế chấp:</span>\n              <span name=\"loan-info-value\">{collaterals}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Thời hạn:</span>\n              <span name=\"loan-info-value\">{term}</span>\n            </div>\n          </div>\n        ",
@@ -1825,6 +1859,17 @@
                     "rejected": "Đã từ chối",
                     "fullPayment": "Thanh toán hết"
                 }
+            },
+            "advice": {
+                "title": "Đăng Ký Vay Thế Chấp Từ Constant",
+                "name": "Tên",
+                "namePlaceHolder": "Họ và tên",
+                "phone": "Số điện thoại",
+                "phonePlaceHolder": "Số điện thoại",
+                "agreeToBorrow": "Tôi có sở hữu và sẵn sàng thế chấp cryptocurrency(bạn sẽ được vay 66% giá trị coin)",
+                "submit": "Gửi",
+                "registerSuccess": "Đăng ký thành công",
+                "regiserFail": "Đăng ký thất bại"
             }
         },
         "bottomBannerText": "Bạn xứng đáng với trải nghiệm dịch vụ tốt hơn",
@@ -2598,6 +2643,18 @@
                 "btn": "Vay"
             }
         },
+        "faqs": {
+            "question1": "What is peer-to-peer (P2P) lending?",
+            "answer1": "Unlike bank loans, P2P lending works by matching investors and borrowers directly. Since there are no greedy middlemen getting in the way, you set your own terms and rates, giving you unparalleled control of your finances. So whether you’re looking for a low-interest loan or better returns on your investment, we’ll match you with someone who’d love to do business with you.",
+            "question2": "What makes you different from other P2P lending platforms?",
+            "answer2": "\n        <p>Constant is the first fully secured P2P lending platform. All investor funds are fully backed by collateral, and all portions that are not yet on loan are covered by FDIC insurance. Borrower collateral is stored safely in escrow, which means no one can touch it until it is transferred back to them after repayment.</p>\n        <p>Unlike other platforms, Constant also allows users to set their own interest rates and terms. \n        Ethereum powered smart contracts automate the loan agreement and always run exactly as programmed – ensuring both investors and borrowers are protected.\n        </p>\n      ",
+            "question3": "Who can participate?",
+            "answer3": "Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment).",
+            "question4": "How do you protect customers’ funds?",
+            "answer4": "\n        <p>All of our loans and investments are protected by a combination of FDIC insurance, Ethereum smart contracts, and crypto collateral. When not on loan, we store your funds across multiple FDIC-insured bank accounts with an aggregate indemnity limit of $130,000,000.</p>\n        <p>When your money is on loan, it’s protected by an unstoppable Ethereum smart contract – a programmable ruleset that strictly defines how your money is used. All our borrowers put up 150% of the loan amount in collateral, so investors see a return whether borrowers repay or not.</p>\n      ",
+            "question5": "",
+            "answer5": ""
+        },
         "howItWorks": {
             "title": "Cơ chế hoạt động.",
             "desc": "Nhà đầu tư có thể đầu tư không giới hạn với mức lãi suất mà họ mong muốn. Người cần vay vốn sẽ chọn mức lãi suất mà họ có thể trả và phải thế chấp tài sản trị giá 150% so với số tiền họ muốn vay. Một thuật toán ứng dụng hợp đồng thông minh được lập trình để tự động thực hiện toàn bộ quá trình kết nối nhà đầu tư và người cần vay vốn."
@@ -2896,6 +2953,7 @@
                 "bankName": "Tên ngân hàng",
                 "accountName": "Tên tài khoản",
                 "accountNumber": "Số tài khoản",
+                "accountAddress": "Account address",
                 "value": "Giá trị",
                 "amount": "Số tiền",
                 "reference": "Mã giao dịch",
@@ -2941,6 +2999,18 @@
             "title": "Sứ mệnh của Constant",
             "cap": "Chúng tôi muốn xây dựng một hệ thống tài chính công bằng và tự do hơn.",
             "desc": "\n<h5>Tự do tài chính với mỗi người là khác nhau. Có đủ tiền để làm tất cả những điều mình muốn là tự do tài chính. Đủ điều kiện để không phải lo mưu sinh là tự do tài chính. Với Constant, tự do tài chính là khả năng để đồng tiền tự sinh sôi mà bạn không cần tốn nhiều công sức, cho phép bạn có thể tự do di chuyển, làm việc, hưởng thụ cuộc sống ở bất cứ đâu trên thế giới.</h5>\n<br />\n<h5>Thế hệ trẻ ngày nay suy nghĩ rất tiến bộ và khác biệt. Những thể chế tài chính hiện nay chưa thể theo kịp sự phát triển này. Các ngân hàng không cho khách hàng nhiều lựa chọn. Tiền trong tài khoản liên tục mất giá vì lạm phát. Những khoản vay khó tiếp cận và còn khó hơn để hoàn trả. Di chuyển xuyên lục địa rất dễ dàng, nhưng chuyển tiền thì không. Với rất nhiều người, tự do tài chính gần như là không tưởng.</h5>\n<br />\n<h5>Sứ mệnh của chúng tôi là mang đến cho mọi người công cụ để biến điều không thể thành có thể. Chào mừng đến với Constant.</h5>      "
+        },
+        "faqs": {
+            "question1": "How long will it take to find a match?",
+            "answer1": "This depends on the rates and terms you set. Market levels normally result in immediate (or near-immediate) matches, so we update the market rates on the website regularly. If you choose a larger interest rate, it might take a little longer to find you a suitable match.",
+            "question2": "Are there any limits?",
+            "answer2": "None at all. You can invest as much or as little as you like. ",
+            "question3": "How do I invest?",
+            "answer3": "\n        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to our FDIC-insured escrow account, and wait for a match. This is usually very quick if you’ve set market rates. </p>\n        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>\n      ",
+            "question4": "How do you protect my investment?",
+            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
+            "question5": "What happens when my money isn’t on loan?",
+            "answer5": "When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds."
         }
     },
     "payment": {

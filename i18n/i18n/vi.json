@@ -387,7 +387,7 @@
             "lDocType": "Loại giấy tờ",
             "plDocType": "Chọn loại giấy tờ",
             "btnSubmit": "Gửi",
-            "lUpload": "Upload an image of THE {face} of your {type}",
+            "lUpload": "Tải lên hình ảnh {face} của {type}",
             "descIDUpload": "Hãy chắc chắn rằng hình ảnh được tải lên phải ở định dạng BMP, JPG, JPEG hoặc PNG, rõ ràng sắc nét và nhỏ hơn 3MB.",
             "lAddrStr1": "Địa chỉ",
             "lAddrCountry": "Quốc gia",
@@ -1723,8 +1723,8 @@
                 "walletAddressLabel": "Địa chỉ ví {symbol} của bạn",
                 "walletAlias": "0x687C906b2....8bd9369242e",
                 "moreInfo": "Bạn sẽ nhận được khoản vay ngay khi phần tài sản thế chấp được xác nhận trên chuỗi khối. Thời gian dự kiến: 2 phút cho ETH và 10 phút cho BTC.",
-                "monthLoan": "{term}-month loans",
-                "monthsLoan": "{term}-months loans"
+                "monthLoan": "{term} tháng",
+                "monthsLoan": "{term} tháng"
             },
             "interestTable": {
                 "title": "Tại sao chọn vay thế chấp với Constant?",
@@ -1758,10 +1758,10 @@
                 "noticeTpl": "Xin vui lòng gửi <strong>{collateralAmount}{collateralSymbol}</strong> tới địa chỉ dưới đây trong vòng <strong>60 phút</strong> để thế chấp.",
                 "summarizeTitle": "Thông tin khoản vay:",
                 "copiedAddress": "Đã sao chép địa chỉ",
-                "scanQR": "Or scan this QR code using your mobile wallet.",
+                "scanQR": "Hoặc scan mã QR này để sử dụng ví của bạn.",
                 "summarizeContent": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Khoản vay:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Lãi suất:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Thế chấp:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Thời hạn:</span>\n              <span name=\"ref-value\">{term}</span>\n            </div>\n          </div>\n        \n        ",
-                "repaymentField": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Repayment date:</span>\n              <span name=\"ref-value\">{repayment}</span>\n            </div>\n          </div>\n        ",
-                "borrowMore": "Borrow more"
+                "repaymentField": "\n<div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Ngày hoàn trả:</span>\n              <span name=\"ref-value\">{repayment}</span>\n            </div>\n          </div>\n        ",
+                "borrowMore": "Vay thêm"
             },
             "history": {
                 "itemTpl": "\n          <div name=\"loan-info-container\">\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Khoản vay:</span>\n              <span name=\"loan-info-value\">{loanAmount}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Lãi suất:</span>\n              <span name=\"loan-info-value\">{interestedRate}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Thế chấp:</span>\n              <span name=\"loan-info-value\">{collaterals}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Thời hạn:</span>\n              <span name=\"loan-info-value\">{term}</span>\n            </div>\n          </div>\n        ",
@@ -1815,7 +1815,7 @@
                 "status": "Trạng thái",
                 "mapStatus": {
                     "pending": "Đang chờ",
-                    "recieved": "Received",
+                    "recieved": "Đã nhận",
                     "accepted": "Đã chấp nhận",
                     "payingInterest": "Đang thanh toán",
                     "done": "Hoàn thành",
@@ -2705,8 +2705,8 @@
         }
     },
     "support": {
-        "title": "Monday to Friday, 9am - 5pm PT",
-        "text": "Call us at {phone}. Monday to Friday, 9am - 5pm PT.",
+        "title": "Trong khoảng từ 9h đến 17h từ thứ 2 đến thứ 6",
+        "text": "Liên hệ với chúng tôi qua số điện thoại {phone} trong khoảng 9h đến 17h từ thứ 2 đến thứ 6.",
         "phone": {
             "vn": "+84 36 656 2949",
             "us": "+1 844 201 7242",
@@ -2870,8 +2870,8 @@
                 "maxRate": "Lãi suất tối đa",
                 "maxTerm": "Kì hạn tối đa",
                 "minTerm": "Kì hạn tối thiểu",
-                "amount": "Amount",
-                "termMonth": "{month}-Month",
+                "amount": "Số tiền",
+                "termMonth": "{month} Tháng",
                 "tooltip": {
                     "amount": "<p>Bạn muốn đầu tư bao nhiêu?</p>",
                     "maxTerm": "<p>Đây là khoảng thời gian tối đa mà bạn muốn đầu tư. Phần tiền còn lại được đảm bảo bởi FDIC và bạn có thể rút về bất cứ lúc nào.</p>",
@@ -2924,14 +2924,14 @@
             "mainTitle": "Cơ chế hoạt động",
             "mainDesc": "\n<h5>Chúng tôi là platform công nghệ kết nối nhà đầu tư với người cần vay vốn.</h5>      ",
             "step1": "Bước 1",
-            "title1": "You make an investment",
-            "desc1": "Choose among our flexible Investment Plans, then make a bank transfer of any amount to the FDIC insured Constant Vault. Your funds will be held in USD, to protect against volatility. We earn you interest and make sure your money is secure, by lending your funds only to borrowers who are willing to overcollateralize.",
+            "title1": "Thực hiện đầu tư",
+            "desc1": "Chọn một kì hạn đầu tư thích hợp rồi gửi số tiền bạn muốn đầu tư đến quỹ Constant được bảo hiểm bởi FDIC. Để đảm bảo, tiền của bạn sẽ chỉ được cho vay khi có người sẵn sàng thế chấp nhiều hơn số tiền đó.",
             "step2": "Bước 2",
-            "title2": "Your money multplies",
-            "desc2": "No matter which commitment period you choose, returns are paid out daily into a Flexible Account. Flexible means you can withdraw whenever you like, and earn an extra 1% annually. Stay liquid and make profit on your profit.",
+            "title2": "Sinh lời",
+            "desc2": "Lãi suất được trả về hàng ngày vào tài khoản Constant và có thể rút về bất cứ lúc nào.",
             "step3": "Bước 3",
-            "title3": "You withdraw profit",
-            "desc3": "Your investment income is in USD, but you can withdraw it to any local bank account at the end of the commitment period. Or you could reinvest it to keep growing your money."
+            "title3": "Rút tiền",
+            "desc3": "Khi đáo hạn, rút tiền về tài khoản ngân hàng hoặc tiếp tục tái đầu tư với Constant để kiếm nhiều tiền hơn nữa."
         },
         "checklist": {
             "title": "Tại sao nên đầu tư với Constant?",

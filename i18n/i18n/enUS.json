@@ -2581,7 +2581,7 @@
     "newHome": {
         "banner": {
             "title": "<h2>Set your own rates.</h2>\n <h2>No minimum capital.</h2>\n <h2>Invest only in secured loans.</h2>\n </span>\n <br />\n <h5>\n Your investments are fully backed by borrower collateral, smart contracts and FDIC insurance. Withdraw unloaned portions anytime.\n </h5>",
-            "title1": "\n        <h1>The world’s first <span class=\"textSuccess\">fully secured</span> peer-to-peer lending platform.</h1>\n      ",
+            "title1": "\n        <h1>Experience <span class=\"textSuccess\">fully secured</span> peer-to-peer lending.</h1>\n      ",
             "subTitle": "No minimum capital. No maximum loans. Set your own rates and tap into true market demand.",
             "cta": "Get started",
             "ctaDesc": "It's free.",

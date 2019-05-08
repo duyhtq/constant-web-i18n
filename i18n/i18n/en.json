@@ -387,7 +387,7 @@
             "lDocType": "Type of ID",
             "plDocType": "Select your ID type",
             "btnSubmit": "Submit",
-            "lUpload": "Upload an image of the {face} of your {type}",
+            "lUpload": "Upload an image of THE {face} of your {type}",
             "descIDUpload": "Please make sure that the photo is complete and clearly visible, in BMP, JPG, JPEG, or PNG format, and is smaller than 3MB.",
             "lAddrStr1": "Address Street 1",
             "lAddrCountry": "Country on your proof of address",
@@ -1722,7 +1722,9 @@
                 "toolTipCollateral": "\n          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.\n        ",
                 "walletAddressLabel": "Your {symbol} wallet address",
                 "walletAlias": "0x687C906b2....8bd9369242e",
-                "moreInfo": "Your funds will reach you as soon as your collateral is confirmed on its blockchain.  ETA: 2 minutes for ETH and 10 minutes for BTC."
+                "moreInfo": "Your funds will reach you as soon as your collateral is confirmed on its blockchain.  ETA: 2 minutes for ETH and 10 minutes for BTC.",
+                "monthLoan": "{term}-month loans",
+                "monthsLoan": "{term}-months loans"
             },
             "interestTable": {
                 "title": "Why you should borrow with Constant.",
@@ -1756,7 +1758,10 @@
                 "noticeTpl": "Please send <strong>{collateralAmount} {collateralSymbol}</strong> as collateral to the following address within the next <strong>60 minutes</strong>.",
                 "summarizeTitle": "Here are the loan terms:",
                 "copiedAddress": "Address is copied to clipboard",
-                "summarizeContent": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Loan amount:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Interested rate:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Collaterals:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Term:</span>\n              <span name=\"ref-value\">{term}</span>\n            </div>\n          </div>\n        "
+                "scanQR": "Or scan this QR code using your mobile wallet.",
+                "summarizeContent": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Loan amount:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Interested rate:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Collaterals:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Term:</span>\n              <span name=\"ref-value\">{term}</span>\n            </div>\n          </div>\n        ",
+                "repaymentField": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Repayment date:</span>\n              <span name=\"ref-value\">{repayment}</span>\n            </div>\n          </div>\n        ",
+                "borrowMore": "Borrow more"
             },
             "history": {
                 "itemTpl": "\n          <div name=\"loan-info-container\">\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Loan amount:</span>\n              <span name=\"loan-info-value\">{loanAmount}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Interest rate:</span>\n              <span name=\"loan-info-value\">{interestedRate}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Collaterals:</span>\n              <span name=\"loan-info-value\">{collaterals}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Term:</span>\n              <span name=\"loan-info-value\">{term}</span>\n            </div>\n          </div>\n        ",
@@ -1810,7 +1815,7 @@
                 "status": "Status",
                 "mapStatus": {
                     "pending": "Pending",
-                    "recieved": "Recieved",
+                    "recieved": "Received",
                     "accepted": "Accepted",
                     "payingInterest": "Paying",
                     "done": "Done",
@@ -2700,7 +2705,8 @@
         }
     },
     "support": {
-        "text": "Can we help? Call us at {phone}. We’re available 24/7.",
+        "title": "Monday to Friday, 9am - 5pm PT",
+        "text": "Call us at {phone}. Monday to Friday, 9am - 5pm PT.",
         "phone": {
             "vn": "+84 36 656 2949",
             "us": "+1 844 201 7242",
@@ -2864,6 +2870,8 @@
                 "maxRate": "Your maximum interest rate",
                 "maxTerm": "Maximum term",
                 "minTerm": "Minimum term",
+                "amount": "Amount",
+                "termMonth": "{month}-Month",
                 "tooltip": {
                     "amount": "<p>How much do you want to lend?</p>",
                     "maxTerm": "<p>This is the maximum amount of time you want to lend your money out for. Unloaned portions are protected by the FDIC, and can be withdrawn at any time.</p>",
@@ -2916,14 +2924,14 @@
             "mainTitle": "How it works",
             "mainDesc": "\n        <h5>We match investors with borrowers glad to pay their rates, and facilitate the entire transaction from beginning to end.</h5>\n      ",
             "step1": "Step 1",
-            "title1": "Investors",
-            "desc1": "Enter the amount you want to lend, and the interest rate you want to charge.",
+            "title1": "You make an investment",
+            "desc1": "Choose among our flexible Investment Plans, then make a bank transfer of any amount to the FDIC insured Constant Vault. Your funds will be held in USD, to protect against volatility. We earn you interest and make sure your money is secure, by lending your funds only to borrowers who are willing to overcollateralize.",
             "step2": "Step 2",
-            "title2": "Constant",
-            "desc2": "The algorithm matches investors with borrowers that fit their criteria, and makes the transaction happen seamlessly.",
+            "title2": "Your money multplies",
+            "desc2": "No matter which commitment period you choose, returns are paid out daily into a Flexible Account. Flexible means you can withdraw whenever you like, and earn an extra 1% annually. Stay liquid and make profit on your profit.",
             "step3": "Step 3",
-            "title3": "Borrowers",
-            "desc3": "Enter the amount you want to borrow, and the interest rate you are willing to pay."
+            "title3": "You withdraw profit",
+            "desc3": "Your investment income is in USD, but you can withdraw it to any local bank account at the end of the commitment period. Or you could reinvest it to keep growing your money."
         },
         "checklist": {
             "title": "Why you should invest with Constant.",

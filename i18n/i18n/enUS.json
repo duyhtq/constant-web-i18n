@@ -411,7 +411,7 @@
             "value": "Value",
             "amount": "Amount",
             "accept": "Accept",
-            "approve": "Confirm payment",
+            "approve": "Confirm",
             "receipt": "Upload your receipt",
             "viewDetail": "Detail",
             "loadMore": "Load more",
@@ -509,7 +509,7 @@
             "accept": "Accept",
             "cancel": "Cancel",
             "cancelMess": "Are you sure you want to cancel this order?",
-            "approve": "Confirm payment",
+            "approve": "Confirm",
             "approveMess": "Are you sure you want to confirm this order?",
             "reject": "Reject",
             "rejectMess": "Are you sure you want to reject this order?",
@@ -564,7 +564,7 @@
                 "system_cancelled": "System Cancelled",
                 "system_rejected": "System Rejected"
             },
-            "approve": "Confirm payment",
+            "approve": "Confirm",
             "confirm": {
                 "title": {
                     "Cancel": "Cancel order #{ID}",
@@ -1420,7 +1420,7 @@
                     "message": "Please make a wire transfer of {amount} to our custodian Prime Trust, so you have sufficient funds in your account to complete the transfer."
                 },
                 "introHolderTemplate": "\n          <h1>Buy from local sellers in {country}</h1>\n          <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n          <p>Email us at <a href=\"mailto:{email}\">{email}</a></p>\n          <p>Or</p>\n          <p>Chat with us at <a href=\"telegram:{telegram}\">{telegram}</a></p>\n        ",
-                "confirmTemplate": "\n          <div name=\"thanks\">\n            <p>Thanks! Please wire <strong>{FiatAmount} {FiatCurrency}</strong> to the seller's bank account.</p>\n          </div>\n          <div name=\"bank\">\n            <p>\n              <span>Bank:</span>\n              <span>{BankName}</span>\n            </p>\n            <p>\n              <span>Account Name:</span>\n              <span>{BankAccountName}</span>\n            </p>\n            <p>\n              <span>Account Number: </span>\n              <span>{BankAccountNumber}</span>\n            </p>\n            <p>\n              <span>Amount: </span>\n              <span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n            </p>\n            <p>\n              <span>Constant: </span>\n              <span>{Amount}&nbsp;{Currency}</span>\n            </p>\n            <p>\n              <span>Reference: </span>\n              <span>{Reference}</span>\n            </p>\n          </div>\n          <div name=\"notice\">\n            <b name=\"important\">IMPORTANT:</b>\n            <span>\n              Do include your reference number <b>{Reference}</b> in the transfer description\n            </span>\n          </div>\n          <div name=\"window\">\n            <strong name=\"minutes\">30 MINUTE WINDOW: </strong>\n            <span>\n              Please complete your transfer <b>within 30 minutes</b>. After that, your\n              order will be automatically cancelled.\n            </span>\n          </div>\n        ",
+                "confirmTemplate": "\n          <div name=\"thanks\">\n            <p>Simply make a transfer of <strong>{FiatAmount} {FiatCurrency}</strong> to complete your deposit. </p>\n          </div>\n          <div name=\"bank\">\n            <p>\n              <span>Bank:</span>\n              <span>{BankName}</span>\n            </p>\n            <p>\n              <span>Account Name:</span>\n              <span>{BankAccountName}</span>\n            </p>\n            <p>\n              <span>Account Number: </span>\n              <span>{BankAccountNumber}</span>\n            </p>\n            <p>\n              <span>Amount: </span>\n              <span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n            </p>\n            <p>\n              <span>Amount (USD): </span>\n              <span>{Amount}&nbsp;{Currency}</span>\n            </p>\n            <p>\n              <span>Reference: </span>\n              <span>{Reference}</span>\n            </p>\n          </div>\n          <div name=\"notice\">\n            <b name=\"important\">Please note</b>\n            <span>\n              Do include your reference number <b>{Reference}</b> in the transfer description, so we can credit your account as quickly as possible.\n            </span>\n          </div>\n          <div name=\"window\">\n            <strong name=\"minutes\">Please complete your transfer within 24 hours</strong>\n            <span>\n              For the sake of security, your session will automatically timeout in <b>24 hours.</b> If you need a little longer, just re-enter the amount you'd like to deposit when you're ready.  </p>\n            <p>After you have made a transfer, please click confirm.</p>\n            </span>\n          </div>\n        ",
                 "cryptoAddressUSDT": "USDT address:",
                 "accountName": "Account name",
                 "bankName": "Bank name",
@@ -1429,13 +1429,13 @@
                 "value": "Value",
                 "constant": "Constant",
                 "reference": "Reference",
-                "buyThankMsg": "Please wire {fiatAmount} {fiatCurrency} to the seller's bank account.",
+                "buyThankMsg": "Simply make a transfer of {fiatAmount} to complete your deposit.",
                 "buyCryptoThankMsg": "Please transfer {fiatAmount} {fiatCurrency} to the seller's crypto address.",
                 "importantMsg": "Do include your reference number {referenceNumber} in the transfer description.",
                 "important": "Important",
-                "thankYou": "Thank you!",
-                "minuteWindow": "15 minute window",
-                "minuteWindowDescription": "Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled."
+                "thankYou": "Almost there.",
+                "minuteWindow": "Please complete your transfer within 24 hours.",
+                "minuteWindowDescription": "For the sake of security, this session will time-out after 24 hours. If you need a little longer, just re-enter the amount you would like to invest when you’re ready."
             },
             "sell": {
                 "type": "Sell",
@@ -1492,9 +1492,9 @@
                 "note": "Note (optional)"
             },
             "fee": "Fee",
-            "backOrderBook": "Buy more Constant",
-            "confirmMessage": "Please make payment and click \"Confirm payment\"",
-            "confirmButton": "Confirm payment",
+            "backOrderBook": "Back",
+            "confirmMessage": "After you have made a transfer, please click confirm.",
+            "confirmButton": "Confirm",
             "errorMsgs": {
                 "required": "Required",
                 "greaterThan": "Must be greater than 0",
@@ -1553,8 +1553,8 @@
                     "important": "IMPORTANT",
                     "thankYou": "Thank you!",
                     "achThankYou": "Thanks for growing your money with Constant.",
-                    "minuteWindow": "15 MINUTE WINDOW:",
-                    "minuteWindowDescription": "Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled.",
+                    "minuteWindow": "Please complete your transfer within 3 days.",
+                    "minuteWindowDescription": "For the sake of security, this session will time-out after 3 days. If you need a little longer, just re-enter the amount you would like to invest when you’re ready.",
                     "direct": {
                         "thankYou": "Thanks {name}, your funds are on the way to your recipient's bank account.\n",
                         "content1": "There is no Constant Trust in your neighborhood yet, so we're sending your money from the main Trust in the USA. As with all international transfers, it may take a couple of days for your funds to reach you.",
@@ -2903,9 +2903,9 @@
                 "importantMsg": "Do include your reference number {referenceNumber} in the bank transfer description, so we can process your deposit as fast as possible.",
                 "minuteWindow": "Please complete your transfer within 3 days.",
                 "minuteWindowDescription": "For the sake of security, this session will time-out after 3 days. If you need a little longer, just re-enter the amount you would like to invest when you’re ready.",
-                "backOrderBook": "Buy more Constant",
+                "backOrderBook": "Back",
                 "confirmMessage": "After you have made a transfer, please click confirm.",
-                "confirmButton": "Confirm payment",
+                "confirmButton": "Confirm",
                 "minRate": "Min rate",
                 "maxTerm": "Max term",
                 "btnConfirm": "Confirm",

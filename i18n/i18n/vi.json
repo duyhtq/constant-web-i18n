@@ -742,13 +742,13 @@
                     "notDefined": "Không thể từ chối giao dịch này"
                 },
                 "status": {
-                    "canceled": "Cancelled",
-                    "timeout": "Timed out",
-                    "transferMoneyToAgent": "Your account will be credited once we have received your transfer",
-                    "waitAgentTransferMoney": "Waiting for seller to send money",
-                    "transferredMoneyToAgent": "Received",
-                    "done": "Successful",
-                    "inProgress": "Order in progress"
+                    "canceled": "Đã huỷ",
+                    "timeout": "Hết thời gian",
+                    "transferMoneyToAgent": "Bạn sẽ nhận được tiền trong tài khoản Constant ngay khi bạn chuyển khoản thành công",
+                    "waitAgentTransferMoney": "Đang chuyển tiền",
+                    "transferredMoneyToAgent": "Đã nhận",
+                    "done": "Thành công",
+                    "inProgress": "Đang xử lí giao dịch"
                 }
             },
             "orderType": {
@@ -800,13 +800,13 @@
                 "userName": "Tên tài khoản",
                 "email": "Email",
                 "status": {
-                    "canceled": "Cancelled",
-                    "timeout": "Order timed out",
-                    "transferMoneyToAgent": "Please make a transfer to complete your deposit",
-                    "waitAgentTransferMoney": "Waiting for seller to send money",
-                    "transferredMoneyToAgent": "Your account will be credited once we have received your transfer.",
-                    "done": "Successful",
-                    "inProgress": "Order in progress"
+                    "canceled": "Đã huỷ",
+                    "timeout": "Hết thời gian",
+                    "transferMoneyToAgent": "Xin vui lòng chuyển khoản để nộp tiền vào tài khoản",
+                    "waitAgentTransferMoney": "Đang chuyển tiền",
+                    "transferredMoneyToAgent": "Bạn sẽ nhận được tiền trong tài khoản Constant ngay khi bạn chuyển khoản thành công.",
+                    "done": "Thành công",
+                    "inProgress": "Đang xử lí giao dịch"
                 }
             },
             "bankInfo": {
@@ -1722,16 +1722,16 @@
         },
         "constantLoan": {
             "faqs": {
-                "question1": "How long will it take to find a match?",
-                "answer1": "This depends on the rates and terms you set. Market levels normally result in immediate (or near-immediate) matches, so we update the market rates on the website regularly. If you choose a lower interest rate, it might take a little longer to find you a suitable match.",
-                "question2": "Do you check my credit score?",
-                "answer2": "As Constant only offers secured loans backed by collateral, there is no need for credit scoring. All you need is adequate collateral to secure your loan. To see how much collateral you’ll need to secure your loan, simply enter the amount you’d like to borrow. The calculator will work out the amount for you.",
-                "question3": "How do you protect my collateral?",
-                "answer3": "Your collateral is held safely in an Ethereum powered smart contract escrow. This means no one can touch it – not even us. When you repay, your collateral is immediately transferred back to you.",
-                "question4": "What happens if I don’t repay the loan?",
-                "answer4": "If you don’t repay the loan, we sell your collateral to pay back investors, and you get to keep the loan. That’s all there is to it.",
-                "question5": "What happens if my crypto collateral falls in value?",
-                "answer5": "If your collateral falls below a certain threshold, we sell it to pay back investors, and refund you the difference. The USD loan is yours to keep."
+                "question1": "Cần bao lâu để kết nối nhà đầu tư và người cần vay vốn?",
+                "answer1": "Điều này hoàn toàn phụ thuộc vào kì hạn và mức lãi suất mà bạn mong muốn. Bạn sẽ được kết nối gần như ngay lập tức nếu chọn mức lãi suất ngang với mức thị trường. Nếu không, sẽ lâu hơn một chút để bạn được kết nối. Mức lãi suất thị trường sẽ được cập nhật thường xuyên trên website.",
+                "question2": "Constant có kiểm tra điểm tín dụng cá nhân của tôi không?",
+                "answer2": "Vì Constant là nền tảng cho vay thế chấp, chúng tôi không kiểm tra điểm tín dụng cá nhân của khách hàng. Bạn chỉ cần thế chấp tài sản để vay được tiền. Chỉ cần nhập số tiền bạn muốn vay, hệ thống sẽ tự động tính toán phần tài sản bạn cần thế chấp.",
+                "question3": "Tài sản thế chấp của tôi được bảo vệ như thế nào?",
+                "answer3": "Phần tài sản thế chấp của bạn được bảo vệ bởi hợp đồng thông minh trên chuỗi Ethereum. Không ai có thể can thiệp vào số tài sản này, kể cả chúng tôi. Ngay khi bạn hoàn trả hết khoản vay, phần tài sản thế chấp sẽ tự động được gửi trả lại cho bạn.",
+                "question4": "Điều gì sẽ xảy ra nếu tôi không hoàn trả khoản vay của mình?",
+                "answer4": "Nếu bạn không hoàn trả khoản vay, chúng tôi sẽ bán phần tài sản thế chấp của bạn để trả cho nhà đầu tư.",
+                "question5": "Điều gì xảy ra nếu phần tài sản thế chấp của tôi mất giá?",
+                "answer5": "Nếu giá trị phần tài sản thế chấp của bạn xuống thấp hơn một mức nhất đinh, chúng tôi sẽ thanh lí phần tài sản này để thanh toán cho nhà đầu tư. Bạn được giữ khoản vay mà không cần hoàn trả."
             },
             "title": "Vay thế chấp bằng tiền mã hoá",
             "subTitle": "\n        <h2>Lãi suất chỉ từ 4.50%/năm.</h2>\n        <h2>Nhận tiền ngay.</h2>\n        <h2>Mà không cần phải bán đi số tiền mã hoá vốn có.</h2>\n      ",
@@ -1790,12 +1790,12 @@
                 "copiedAddress": "Đã sao chép địa chỉ",
                 "scanQR": "Hoặc scan mã QR này để sử dụng ví của bạn.",
                 "summarizeContent": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Khoản vay:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Lãi suất:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Thế chấp:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Thời hạn:</span>\n              <span name=\"ref-value\">{term}</span>\n            </div>\n          </div>\n        \n        ",
-                "summarizeContent1": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Loan amount:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Interested rate:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Collateral:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n          </div>\n        ",
+                "summarizeContent1": "\n<div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Khoản vay:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Lãi suất:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Thế chấp:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n          </div>\n        ",
                 "repaymentField": "\n<div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Ngày hoàn trả:</span>\n              <span name=\"ref-value\">{repayment}</span>\n            </div>\n          </div>\n        ",
                 "borrowMore": "Vay thêm",
-                "termField": "Term",
-                "termUnit": "{period} month",
-                "termUnit1": "{period} months"
+                "termField": "Kì hạn",
+                "termUnit": "{period} tháng",
+                "termUnit1": "{period} tháng"
             },
             "history": {
                 "itemTpl": "\n          <div name=\"loan-info-container\">\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Khoản vay:</span>\n              <span name=\"loan-info-value\">{loanAmount}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Lãi suất:</span>\n              <span name=\"loan-info-value\">{interestedRate}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Thế chấp:</span>\n              <span name=\"loan-info-value\">{collaterals}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Thời hạn:</span>\n              <span name=\"loan-info-value\">{term}</span>\n            </div>\n          </div>\n        ",
@@ -2644,14 +2644,14 @@
             }
         },
         "faqs": {
-            "question1": "What is peer-to-peer (P2P) lending?",
-            "answer1": "Unlike bank loans, P2P lending works by matching investors and borrowers directly. Since there are no greedy middlemen getting in the way, you set your own terms and rates, giving you unparalleled control of your finances. So whether you’re looking for a low-interest loan or better returns on your investment, we’ll match you with someone who’d love to do business with you.",
-            "question2": "What makes you different from other P2P lending platforms?",
-            "answer2": "\n        <p>Constant is the first fully secured P2P lending platform. All investor funds are fully backed by collateral, and all portions that are not yet on loan are covered by FDIC insurance. Borrower collateral is stored safely in escrow, which means no one can touch it until it is transferred back to them after repayment.</p>\n        <p>Unlike other platforms, Constant also allows users to set their own interest rates and terms. \n        Ethereum powered smart contracts automate the loan agreement and always run exactly as programmed – ensuring both investors and borrowers are protected.\n        </p>\n      ",
-            "question3": "Who can participate?",
-            "answer3": "Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment).",
-            "question4": "How do you protect customers’ funds?",
-            "answer4": "\n        <p>All of our loans and investments are protected by a combination of FDIC insurance, Ethereum smart contracts, and crypto collateral. When not on loan, we store your funds across multiple FDIC-insured bank accounts with an aggregate indemnity limit of $130,000,000.</p>\n        <p>When your money is on loan, it’s protected by an unstoppable Ethereum smart contract – a programmable ruleset that strictly defines how your money is used. All our borrowers put up 150% of the loan amount in collateral, so investors see a return whether borrowers repay or not.</p>\n      ",
+            "question1": "Hình thức cho vay ngang hàng là gì?",
+            "answer1": "Không giống như vay ngân hàng, hình thức cho vay ngang hàng cho phép người cần vay có thể vay tiền trực tiếp từ nhà đầu tư. Bỏ qua mọi khâu trung gian, nhà đầu tư và người cần vay có thể tự thoả thuận mức lãi suất và kì hạn sao cho đôi bên cùng có lợi. Nếu bạn đang tìm kiếm một cơ hội đầu tư với mức lợi nhuận cao hơn hoặc muốn vay tiền với mức lãi suất thấp, Constant là lựa chọn tốt nhất thị trường.",
+            "question2": "Constant ưu việt hơn những nền tảng cho vay ngang hàng khác ở những điểm nào?",
+            "answer2": "\n<p>Constant là nền tảng cho vay ngang hàng đầu tư bảo đảm an toàn tuyệt đối cho cả nhà đầu tư và người vay vốn. Với nhà đầu tư, khoản tiền đầu tư được bảo đảm bởi tài sản thế chấp và khoản tiền nhàn rỗi được bảo hiểm bởi FDIC. Với người vay, phần tài sản thế chấp được bảo vệ bởi hợp đồng thông minh trên chuỗi khối Ethereum không thể bị can thiệp và sẽ được tự động gửi lại ngay khi khoản vay được hoàn trả đầy đủ.</p>\n        <p>Với Constant, khách hàng được tự quyết định mức lãi suất và kì hạn. \n       Hợp đồng thông minh trên chuỗi khối Ethereum được vận hành tự động và luôn chính xác tuyệt đối, đảm bảo cho cả nhà đầu tư và người vay vốn. \n        </p>      ",
+            "question3": "Điều kiện để sử dụng Constant?",
+            "answer3": "Ai cũng có thể sử dụng Constant. Chỉ cần có kết nối Internet để truy cập website và một tài khoản ngân hàng để thực hiện các giao dịch.",
+            "question4": "Constant bảo vệ tiền của khách hàng như thế nào?",
+            "answer4": "\n<p>Constant sử dụng bảo hiểm của FDIC, hợp đồng thông minh trên chuỗi Ethereum và tài sản thế chấp để bảo vệ tiền của khách hàng. Khi không thực hiện đầu tư, tiền của bạn được giữ trong các tài khoản được FDIC bảo hiểm lên đến 130,000,000 USD.</p>\n        <p>Khi thực hiện đầu tư, nhà đầu tư sẽ được bảo vệ bởi hợp đồng thông minh trên chuỗi Ethereum được lập trình và vận hành tự động. Người vay phải thế chấp 150% giá trị khoản vay nên nhà đầu tư sẽ luôn có lãi kể cả khi người vay không hoàn trả khoản vay.</p>      ",
             "question5": "",
             "answer5": ""
         },
@@ -2762,8 +2762,8 @@
         }
     },
     "support": {
-        "title": "Trong khoảng từ 9h đến 17h từ thứ 2 đến thứ 6",
-        "text": "Liên hệ với chúng tôi qua số điện thoại {phone} trong khoảng 9h đến 17h từ thứ 2 đến thứ 6.",
+        "title": "Trong khoảng từ 9h đến 17h từ thứ 2 đến thứ 6.",
+        "text": "Liên hệ với chúng tôi qua số điện thoại {phone}.",
         "phone": {
             "vn": "+84 36 656 2949",
             "us": "+1 844 201 7242",
@@ -3001,16 +3001,16 @@
             "desc": "\n<h5>Tự do tài chính với mỗi người là khác nhau. Có đủ tiền để làm tất cả những điều mình muốn là tự do tài chính. Đủ điều kiện để không phải lo mưu sinh là tự do tài chính. Với Constant, tự do tài chính là khả năng để đồng tiền tự sinh sôi mà bạn không cần tốn nhiều công sức, cho phép bạn có thể tự do di chuyển, làm việc, hưởng thụ cuộc sống ở bất cứ đâu trên thế giới.</h5>\n<br />\n<h5>Thế hệ trẻ ngày nay suy nghĩ rất tiến bộ và khác biệt. Những thể chế tài chính hiện nay chưa thể theo kịp sự phát triển này. Các ngân hàng không cho khách hàng nhiều lựa chọn. Tiền trong tài khoản liên tục mất giá vì lạm phát. Những khoản vay khó tiếp cận và còn khó hơn để hoàn trả. Di chuyển xuyên lục địa rất dễ dàng, nhưng chuyển tiền thì không. Với rất nhiều người, tự do tài chính gần như là không tưởng.</h5>\n<br />\n<h5>Sứ mệnh của chúng tôi là mang đến cho mọi người công cụ để biến điều không thể thành có thể. Chào mừng đến với Constant.</h5>      "
         },
         "faqs": {
-            "question1": "How long will it take to find a match?",
-            "answer1": "This depends on the rates and terms you set. Market levels normally result in immediate (or near-immediate) matches, so we update the market rates on the website regularly. If you choose a larger interest rate, it might take a little longer to find you a suitable match.",
-            "question2": "Are there any limits?",
-            "answer2": "None at all. You can invest as much or as little as you like. ",
-            "question3": "How do I invest?",
-            "answer3": "\n        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to our FDIC-insured escrow account, and wait for a match. This is usually very quick if you’ve set market rates. </p>\n        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>\n      ",
-            "question4": "How do you protect my investment?",
-            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
-            "question5": "What happens when my money isn’t on loan?",
-            "answer5": "When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds."
+            "question1": "Cần bao lâu để kết nối nhà đầu tư và người cần vay vốn?",
+            "answer1": "Điều này hoàn toàn phụ thuộc vào kì hạn và mức lãi suất mà bạn mong muốn. Bạn sẽ được kết nối gần như ngay lập tức nếu chọn mức lãi suất ngang với mức thị trường. Nếu không, sẽ lâu hơn một chút để bạn được kết nối. Mức lãi suất thị trường sẽ được cập nhật thường xuyên trên website.",
+            "question2": "Hạn mức đầu tư là bao nhiêu?",
+            "answer2": "Hoàn toàn không có giới hạn. Bạn có thể đầu tư bao nhiêu cũng được. ",
+            "question3": "Làm thế nào để đầu tư?",
+            "answer3": "\n<p>Nhập số tiền đầu tư và chọn mức lãi suất và kì hạn mà bạn mong muốn. Chuyển khoản tới quỹ Constant để hoàn tất đầu tư và đợi Constant tìm kiếm cho bạn một ngay vay phù hợp. Nên chọn mức lãi suất ngang mức thị trường để được kết nối nhanh nhất.</p>\n        <p>Khi đã được kết nối, hợp đồng thông minh sẽ tự động gửi tiền của bạn đến tài khoản người vay và lãi sẽ được tính ngay từ lúc đó. Khi đáo hạn, người vay sẽ hoàn trả toàn bộ khoản vay và lãi. Tất cả sẽ được chuyển vào tài khoản Constant của bạn. Sau đó bạn có thể tái đầu tư, rút tiền hoặc thực hiện chuyển khoản quốc tế.</p>      ",
+            "question4": "Constant làm gì để bảo vệ nhà đầu tư?",
+            "answer4": "\n        <p>Để bảo vệ nhà đầu tư, Constant thực hiện các biện pháp sau:</p>\n        <p>Người vay cần thế chấp số tiền mã hoá trị giá 150% khoản vay. Phần tài sản thế chấp này sẽ được thanh lí nếu giá trị giảm xuống dưới mức nhất định.</p>\n        <p>Các khoản đầu tư được vận hành dựa trên hợp đồng thông minh được lập trình sẵn theo ý khách hàng. Phần tiền nhàn rỗi được giữ trong các tài khoản được giám sát bởi PrimeTrust và bảo hiểm bởi FDIC.</p>      \n        <p>Với những biện pháp đó, nhà đầu tư được bảo vệ khỏi mọi rủi ro. Ngay cả khi người vay không hoàn trả khoản vay hay thị trường đi xuống, nhà đầu tư vẫn luôn được bảo vệ và thu được lợi nhuận.</p>      ",
+            "question5": "Phần tiền không đầu tư trong tài khoản Constant có được bảo đảm không?",
+            "answer5": "Phần tiền không đầu tư được giữ trong các tài khoản được FDIC bảo hiểm lên đến 130,000,000 USD. PrimeTrust, một tổ chức tài chính uy tín tại Mỹ là đơn vị quản lí những tài khoản này."
         }
     },
     "payment": {

@@ -1734,7 +1734,7 @@
                 "answer5": "If your collateral falls below a certain threshold, we sell it to pay back investors, and refund you the difference. The USD loan is yours to keep."
             },
             "title": "Borrow the way you want",
-            "subTitle": "\n        <h2>Set your own rates.</h2>\n        <h2>Protected by smart contracts.</h2>\n        <h2>Get cash for crypto without needing to sell.</h2>\n<h6>Get the funds you need at rates you are willing to pay. All your collateral is kept safe in a smart contract escrow, and will be automatically returned to you when the loan is repaid.</h6>",
+            "subTitle": "\n        <h2 class=\"steal1\">Set your own rates.</h2>\n        <h2 class=\"steal1\">Protected by smart contracts.</h2>\n        <h2 class=\"steal1\">Get cash for crypto without needing to sell.</h2>\n<h6>Get the funds you need at rates you are willing to pay. All your collateral is kept safe in a smart contract escrow, and will be automatically returned to you when the loan is repaid.</h6>",
             "headLine": "Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.",
             "exchange": {
                 "maxRateTooltip": "This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.",
@@ -2650,7 +2650,7 @@
             "answer2": "\n        <p>Constant is the first fully secured P2P lending platform. All investor funds are fully backed by collateral, and all portions that are not yet on loan are covered by FDIC insurance. Borrower collateral is stored safely in escrow, which means no one can touch it until it is transferred back to them after repayment.</p>\n        <p>Unlike other platforms, Constant also allows users to set their own interest rates and terms. \n        Ethereum powered smart contracts automate the loan agreement and always run exactly as programmed – ensuring both investors and borrowers are protected.\n        </p>\n      ",
             "question3": "Who can participate?",
             "answer3": "Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment).",
-            "question4": "How do you protect customers’ funds?",
+            "question4": "How does Constant protect customers’ funds?",
             "answer4": "\n        <p>All of our loans and investments are protected by a combination of FDIC insurance, Ethereum smart contracts, and crypto collateral. When not on loan, we store your funds across multiple FDIC-insured bank accounts with an aggregate indemnity limit of $130,000,000.</p>\n        <p>When your money is on loan, it’s protected by an unstoppable Ethereum smart contract – a programmable ruleset that strictly defines how your money is used. All our borrowers put up 150% of the loan amount in collateral, so investors see a return whether borrowers repay or not.</p>\n      ",
             "question5": "",
             "answer5": ""
@@ -2905,7 +2905,7 @@
     "home1": {
         "lendingSection": {
             "intro": {
-                "content": "\n<h6 class=\"semiBold blue1\">Invest the way you want</h6>\n<h2>Set your own rates.</h2>\n <h2>No minimum capital.</h2>\n <h2>Invest only in secured loans.</h2>\n </span>\n <br />\n <h6>\n Your investments are fully backed by borrower collateral, smart contracts and FDIC insurance. Withdraw unloaned portions anytime.\n </h6>"
+                "content": "\n<h6>Invest the way you want</h6>\n<h2 class=\"darkblue1\">Set your own rates.</h2>\n <h2 class=\"darkblue1\">No minimum capital.</h2>\n <h2 class=\"darkblue1\">Invest only in secured loans.</h2>\n </span>\n <br />\n <h6>\n Your investments are fully backed by borrower collateral, smart contracts and FDIC insurance. Withdraw unloaned portions anytime.\n </h6>"
             },
             "form": {
                 "text1": "Set your own lending terms",

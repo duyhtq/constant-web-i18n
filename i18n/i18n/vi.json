@@ -1809,6 +1809,7 @@
                     "done": "hoàn thành",
                     "cancelled": "đã huỷ",
                     "withdrawed": "đã rút tiền",
+                    "expired": "Expired",
                     "fullPayment": "thanh toán hết"
                 },
                 "confirmPay": {
@@ -1857,6 +1858,7 @@
                     "tnxFailed": "Giao dịch không thành công",
                     "cancelled": "Đã huỷ",
                     "rejected": "Đã từ chối",
+                    "expired": "Expired",
                     "fullPayment": "Thanh toán hết"
                 }
             },
@@ -2427,6 +2429,7 @@
             "whatDesc3": "<p>Đội ngũ của chúng tôi luôn sẵn sàng hỗ trợ bạn 24/24. Nếu bạn ở Mỹ, hãy liên hệ với chúng tôi qua số 1-844-201-7242, ở Việt Nam liên hệ qua số +84 36 656 2949.</p>\n"
         },
         "howItWorks": {
+            "title": "How to send",
             "step1": "Bước 1",
             "title1": "Đăng ký",
             "desc1": "Bạn có thể đăng nhập bằng địa chỉ email hoặc đăng nhập tự động với Facebook/tài khoản Google\n",
@@ -2634,7 +2637,8 @@
                 "title": "Đầu tư theo cách bạn muốn",
                 "num": "10.00%",
                 "cap": "Không yêu cầu vốn tối thiểu. Tuyệt đối an toàn.",
-                "btn": "Đầu tư"
+                "btn": "Đầu tư",
+                "btnTrial": "Get $1000 to start"
             },
             "borrow": {
                 "title": "Vay theo cách bạn muốn",

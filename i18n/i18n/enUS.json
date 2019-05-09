@@ -1809,6 +1809,7 @@
                     "done": "done",
                     "cancelled": "cancelled",
                     "withdrawed": "withdrawed",
+                    "expired": "Expired",
                     "fullPayment": "full payment"
                 },
                 "confirmPay": {
@@ -1857,6 +1858,7 @@
                     "tnxFailed": "Transaction failed",
                     "cancelled": "Cancelled",
                     "rejected": "Rejected",
+                    "expired": "Expired",
                     "fullPayment": "full payment"
                 }
             },
@@ -2427,6 +2429,7 @@
             "whatDesc3": "<p>Our team is based in your preferred time zone. If you’re in the US, call us at 1-844-201-7242. If you’re in Vietnam, call us at +84 36 656 2949.</p>"
         },
         "howItWorks": {
+            "title": "How to send",
             "step1": "Step 1",
             "title1": "Sign up",
             "desc1": "All you need is an email address. You can also sign up using a facebook or google account.",
@@ -2634,7 +2637,8 @@
                 "title": "Invest the way you want",
                 "num": "10.00%",
                 "cap": "No minimum capital. Fully secured.",
-                "btn": "Invest"
+                "btn": "Invest",
+                "btnTrial": "Get $1000 to start"
             },
             "borrow": {
                 "title": "Borrow the way you want",

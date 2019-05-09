@@ -2905,7 +2905,7 @@
     "home1": {
         "lendingSection": {
             "intro": {
-                "content": "\n<h6>Invest the way you want</h6>\n<h2 class=\"darkblue1\">Set your own rates.</h2>\n <h2 class=\"darkblue1\">No minimum capital.</h2>\n <h2 class=\"darkblue1\">Invest only in secured loans.</h2>\n </span>\n <br />\n <h6>\n Your investments are fully backed by borrower collateral, smart contracts and FDIC insurance. Withdraw unloaned portions anytime.\n </h6>"
+                "content": "\n<h6>Invest the way you want</h6>\n<h2 class=\"blue1\">Set your own rates.</h2>\n <h2 class=\"blue1\">No minimum capital.</h2>\n <h2 class=\"blue1\">Invest only in secured loans.</h2>\n </span>\n <br />\n <h6>\n Your investments are fully backed by borrower collateral, smart contracts and FDIC insurance. Withdraw unloaned portions anytime.\n </h6>"
             },
             "form": {
                 "text1": "Set your own lending terms",

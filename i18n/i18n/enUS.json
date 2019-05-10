@@ -1191,12 +1191,12 @@
         },
         "forgetPassword": {
             "title": "Forgot your password?",
-            "description": "Please type your email you used to sign in to reset your password. You may need to check your spam folder or unblock hello@constant.money",
+            "description": "Enter the email you originally signed up with. If it seems to be taking a while, please check your spam folder.",
             "username": "Your email",
             "requiredUsername": "Email is required",
             "notValidUsername": "Invalid email address",
             "submitButton": "Submit",
-            "resetPasswordIntro": "We have sent a link to your email. Please follow the instruction to sign in with new password",
+            "resetPasswordIntro": "We have sent a link to your email. Please follow the instructions to sign in with your new password.",
             "newPasswordTitle": "Enter a new password for your {email} account.",
             "password": "New password",
             "requiredPassword": "Password is required",
@@ -1734,7 +1734,7 @@
                 "answer5": "If your collateral falls below a certain threshold, we sell it to pay back investors, and refund you the difference. The USD loan is yours to keep."
             },
             "title": "Borrow the way you want",
-            "subTitle": "\n        <h2 class=\"steal1\">Set your own rates.</h2>\n        <h2 class=\"steal1\">Protected by smart contracts.</h2>\n        <h2 class=\"steal1\">Get cash for crypto without needing to sell.</h2>\n<h6>Get the funds you need at rates you are willing to pay. All your collateral is kept safe in a smart contract escrow, and will be automatically returned to you when the loan is repaid.</h6>",
+            "subTitle": "\n        <h2 class=\"\">Set your own rates.</h2>\n        <h2 class=\"\">Protected by smart contracts.</h2>\n        <h2 class=\"\">Get cash for crypto without needing to sell.</h2>\n<h6>Get the funds you need at rates you are willing to pay. All your collateral is kept safe in a smart contract escrow, and will be automatically returned to you when the loan is repaid.</h6>",
             "headLine": "Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.",
             "exchange": {
                 "maxRateTooltip": "This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.",
@@ -2909,7 +2909,7 @@
     "home1": {
         "lendingSection": {
             "intro": {
-                "content": "\n<h6>Invest the way you want</h6>\n<h2 class=\"blue1\">Set your own rates.</h2>\n <h2 class=\"blue1\">No minimum capital.</h2>\n <h2 class=\"blue1\">Invest only in secured loans.</h2>\n </span>\n <br />\n <h6>\n Your investments are fully backed by borrower collateral, smart contracts and FDIC insurance. Withdraw unloaned portions anytime.\n </h6>"
+                "content": "\n<h6>Invest the way you want</h6>\n<h2 class=\"\">Set your own rates.</h2>\n <h2 class=\"\">No minimum capital.</h2>\n <h2 class=\"\">Invest only in secured loans.</h2>\n </span>\n <br />\n <h6>\n Your investments are fully backed by borrower collateral, smart contracts and FDIC insurance. Withdraw unloaned portions anytime.\n </h6>"
             },
             "form": {
                 "text1": "Set your own lending terms",

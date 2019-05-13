@@ -2976,7 +2976,9 @@
                 "minRate": "Lãi suất tối thiểu",
                 "maxTerm": "Kì hạn tối đa",
                 "btnConfirm": "Xác nhận",
-                "btnBack": "Trở lại"
+                "btnBack": "Trở lại",
+                "bankChosenMessage": "We have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.",
+                "makeAnotherButton": "Make another investment"
             }
         },
         "whatCaption0": "Tự đặt mức lãi suất",

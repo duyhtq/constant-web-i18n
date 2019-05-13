@@ -2993,13 +2993,13 @@
             "mainTitle": "How it works",
             "mainDesc": "<h5>The Constant algorithm matches investors with borrowers glad to pay their rates. It  then secures investor funds and borrower collateral in an unstoppable smart contract, and facilitates the entire transaction from beginning to end. </h5>\n",
             "step1": "Step 1",
-            "title1": "Set your own terms",
+            "title1": "1. Set your own terms",
             "desc1": "Choose how much you want to invest and for how long, then enter the interest rate you want to earn.",
             "step2": "Step 2",
-            "title2": "Wait to be matched",
+            "title2": "2. Wait to be matched",
             "desc2": "The matching algorithm finds borrowers that meet your requirements. While you wait, all unloaned portions are FDIC insured and can be withdrawn at any time.",
             "step3": "Step 3",
-            "title3": "Start earning interest",
+            "title3": "3. Start earning interest",
             "desc3": "Once a borrower is found, you’ll start earning interest on the matched amount, to be withdrawn at the end of your term."
         },
         "checklist": {

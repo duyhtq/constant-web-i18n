@@ -294,7 +294,7 @@
         }
     },
     "errorCode": {
-        "3000": "Xin vui lòng nạp thêm tiền vào tài khoản để thực hiện thao tác này",
+        "3000": "Xin vui lòng nộp thêm tiền vào tài khoản để thực hiện thao tác này",
         "3001": "Bạn không thể huỷ lệnh này",
         "3002": "Chọn lệnh mua hoặc bán",
         "3003": "Tỉ giá không xác định",
@@ -338,7 +338,7 @@
             "investingOrders": "Lệnh đầu tư",
             "loanOrders": "Lệnh vay",
             "myOrders": "Gửi và rút tiền",
-            "localHistory": "Chuyển khoản và thu nhập lãi",
+            "localHistory": "Chuyển khoản và nhận lãi",
             "wallets": "Ví của tôi",
             "cryptoWallet": "Ví Constant mã hoá",
             "changePassword": "Đổi mật khẩu",
@@ -1069,7 +1069,7 @@
                 "deposit": "Nộp tiền",
                 "row": "Hàng",
                 "errorMessage": "Đã xảy ra lỗi",
-                "saving": "Mở tài khoản ngay",
+                "saving": "Đầu tư ngay",
                 "dialog": {
                     "withdrawAccount": {
                         "title": "Tiết kiệm",
@@ -1079,7 +1079,7 @@
                         "confirm": "Đầu tư",
                         "cancel": "Huỷ",
                         "messageConfirm": "Xác nhận đầu tư {amount} USD?",
-                        "validateMaxAmountError": "Xin lỗi. Bạn không có đủ Constant để nạp.",
+                        "validateMaxAmountError": "Xin lỗi. Bạn không có đủ Constant để thực hiện thao tác này.",
                         "validateMinAmountError": "Xin vui lòng nhập số lớn hơn {amount} CONSTANT"
                     },
                     "checkTrialKyc": {
@@ -1800,7 +1800,7 @@
             "history": {
                 "itemTpl": "\n          <div name=\"loan-info-container\">\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Khoản vay:</span>\n              <span name=\"loan-info-value\">{loanAmount}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Lãi suất:</span>\n              <span name=\"loan-info-value\">{interestedRate}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Thế chấp:</span>\n              <span name=\"loan-info-value\">{collaterals}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Thời hạn:</span>\n              <span name=\"loan-info-value\">{term}</span>\n            </div>\n          </div>\n        ",
                 "address": "Địa chỉ ví",
-                "collateralAddress": "Địa chỉ ví dùng để thế chấp",
+                "collateralAddress": "Địa chỉ ví nhận thế chấp",
                 "renew": "Gia hạn",
                 "status": {
                     "pending": "đang chờ",
@@ -2328,7 +2328,7 @@
         "amountResultLabel": "Theo tỉ giá ngày hôm nay, tương đương với:",
         "submitBtn": {
             "depositNow": "NỘP TIỀN VÀO TÀI KHOẢN",
-            "depositWithAmount": "NẠP {fiatAmount}{fiatCurrency}"
+            "depositWithAmount": "NỘP {fiatAmount}{fiatCurrency}"
         },
         "noAgentAvaiable": "Rất tiếc. Hãy thử một con số nhỏ hơn hoặc thử lại sau.",
         "amountTooSmall": "Số tiền quá nhỏ. Hãy nhập một con số lớn hơn",
@@ -2344,6 +2344,8 @@
         "amountResult": {
             "amountToWithdraw": "Rút tiền: {amount}{currency}",
             "fee": "Phí chuyển tiền: {fee}{currency}",
+            "withdrawFee": "Withdrawal fee: {fee} {currency}",
+            "sendFee": "Send fee: {fee} {currency}",
             "fiatAmountResultLabel": "Theo tỉ giá thị trường hôm nay, bạn sẽ nhận được: {fiatAmount}{fiatCurrency}",
             "explain": "*Tính cả phí chuyển tiền, bạn có thể chuyển tối đa {amountExcludeFee} {currency}."
         },
@@ -2953,10 +2955,13 @@
             },
             "confirm": {
                 "thankYou1": "Đã gần xong.",
-                "thankMsg": "Simply wire {amount} to our custodian to make a deposit.",
+                "thankMsg": "Xin vui lòng chuyển khoản {amount} tới quỹ Constant để nộp tiền vào tài khoản.",
                 "bankName": "Tên ngân hàng",
                 "accountName": "Tên tài khoản",
                 "accountNumber": "Số tài khoản",
+                "routingNumberACH": "Routing number for ACH",
+                "routingNumberWire": "Routing number for Wire",
+                "routingNumberACHWire": "Routing number for ACH & Wire",
                 "accountAddress": "Account address",
                 "value": "Giá trị",
                 "amount": "Số tiền",

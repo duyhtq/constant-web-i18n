@@ -79,7 +79,7 @@
         },
         "company": {
             "name": "CONST LLC",
-            "address1": "101 E Redlands Blvd",
+            "address1": "101 E Redlands Blvd, Suite 272",
             "address2": " Redlands, CA 92373, USA"
         },
         "getSocial": "Social Media",
@@ -2344,6 +2344,8 @@
         "amountResult": {
             "amountToWithdraw": "Amount to withdraw: {amount} {currency}",
             "fee": "Withdrawal fee: {fee} {currency}",
+            "withdrawFee": "Withdrawal fee: {fee} {currency}",
+            "sendFee": "Send fee: {fee} {currency}",
             "fiatAmountResultLabel": "According to the markets today, you’ll receive: {fiatAmount} {fiatCurrency}",
             "explain": "* The maximum you can send is {amountExcludeFee} {currency}, so you have enough to cover the transfer fee."
         },
@@ -2803,7 +2805,7 @@
             "offices": {
                 "us": {
                     "name": "United States",
-                    "address1": "101 E Redlands Blvd",
+                    "address1": "101 E Redlands Blvd, Suite 272",
                     "address2": "Redlands CA 92373",
                     "phone": "+1 844 201 7242"
                 },
@@ -2957,6 +2959,9 @@
                 "bankName": "Bank name",
                 "accountName": "Account name",
                 "accountNumber": "Account number",
+                "routingNumberACH": "Routing number for ACH",
+                "routingNumberWire": "Routing number for Wire",
+                "routingNumberACHWire": "Routing number for ACH & Wire",
                 "accountAddress": "Account address",
                 "value": "Value",
                 "amount": "Amount",

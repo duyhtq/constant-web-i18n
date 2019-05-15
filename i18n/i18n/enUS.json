@@ -727,8 +727,10 @@
             "cancelMess": "Are you sure you want to cancel this order?",
             "accept": "Accept",
             "acceptMess": "Are you sure you want to accept this order?",
-            "confirm": "confirm",
+            "confirm": "Confirm",
             "confirmMess": "Are you sure you want to confirm this order?",
+            "reject": "Reject",
+            "rejectMess": "Are you sure you want to reject this order?",
             "close": "Close",
             "detail": "Transaction Detail",
             "extID": "External ID",
@@ -746,7 +748,7 @@
                     "timeout": "Timed out",
                     "transferMoneyToAgent": "Your account will be credited once we have received your transfer",
                     "waitAgentTransferMoney": "Waiting for seller to send money",
-                    "transferredMoneyToAgent": "Received",
+                    "transferredMoneyToAgent": " ",
                     "done": "Successful",
                     "inProgress": "Order in progress"
                 }
@@ -2963,6 +2965,7 @@
                 "routingNumberWire": "Routing number for Wire",
                 "routingNumberACHWire": "Routing number for ACH & Wire",
                 "accountAddress": "Account address",
+                "accountType": "Account Type",
                 "value": "Value",
                 "amount": "Amount",
                 "reference": "Reference",
@@ -3081,6 +3084,11 @@
             "lEmail": "Your Email",
             "lCompany": "Your Company",
             "submitted": "Thank you. Our team will be in touch within 24 hours to discuss how Constant can work for you."
+        }
+    },
+    "modules": {
+        "faqs": {
+            "title": "Top questions from users"
         }
     }
 }

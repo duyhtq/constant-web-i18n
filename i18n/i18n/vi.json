@@ -126,11 +126,11 @@
         "social": {
             "fb": {
                 "title": "Facebook",
-                "link": "https://www.facebook.com/constantbanking"
+                "link": "https://www.facebook.com/constantp2p"
             },
             "tw": {
                 "title": "Twitter",
-                "link": "https://twitter.com/constantbanking"
+                "link": "https://twitter.com/constantp2p"
             },
             "yt": {
                 "title": "Youtube",
@@ -138,11 +138,11 @@
             },
             "md": {
                 "title": "Medium",
-                "link": "https://medium.com/@constantbanking"
+                "link": "https://medium.com/@constantp2p"
             },
             "tele": {
                 "title": "Constant Telegram",
-                "link": "https://t.me/constantbanking"
+                "link": "https://t.me/constantp2p"
             }
         }
     },
@@ -727,8 +727,10 @@
             "cancelMess": "Bạn chắc chắn muốn huỷ giao dịch này?",
             "accept": "Đồng ý",
             "acceptMess": "Bạn đồng ý thực hiện giao dịch này?",
-            "confirm": "xác nhận",
+            "confirm": "Confirm",
             "confirmMess": "Bạn xác nhận muốn thực hiện giao dịch này?",
+            "reject": "Reject",
+            "rejectMess": "Are you sure you want to reject this order?",
             "close": "Đóng",
             "detail": "Chi tiết giao dịch",
             "extID": "Giấy tờ khác",
@@ -746,7 +748,7 @@
                     "timeout": "Hết thời gian",
                     "transferMoneyToAgent": "Bạn sẽ nhận được tiền trong tài khoản Constant ngay khi bạn chuyển khoản thành công",
                     "waitAgentTransferMoney": "Đang chuyển tiền",
-                    "transferredMoneyToAgent": "Đã nhận",
+                    "transferredMoneyToAgent": " ",
                     "done": "Thành công",
                     "inProgress": "Đang xử lí giao dịch"
                 }
@@ -2963,6 +2965,7 @@
                 "routingNumberWire": "Số định tuyến cho chuyển khoản Wire",
                 "routingNumberACHWire": "Số định tuyến cho chuyển khoản ACH & Wire",
                 "accountAddress": "Account address",
+                "accountType": "Account Type",
                 "value": "Giá trị",
                 "amount": "Số tiền",
                 "reference": "Mã giao dịch",
@@ -3081,6 +3084,11 @@
             "lEmail": "Email",
             "lCompany": "Công ty",
             "submitted": "Xin cảm ơn. Chúng tôi sẽ liên lạc với bạn trong vòng 24 tiếng để tư vấn cho bạn cách sử dụng Constant hiệu quả nhất."
+        }
+    },
+    "modules": {
+        "faqs": {
+            "title": "Top questions from users"
         }
     }
 }

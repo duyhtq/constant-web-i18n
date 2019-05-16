@@ -507,7 +507,7 @@
             "value": "Giá trị",
             "amount": "Số tiền",
             "accept": "Đồng ý",
-            "detail": "View Detail",
+            "detail": "Thông tin chi tiết",
             "cancel": "Huỷ",
             "cancelMess": "Bạn chắc chắn muốn huỷ giao dịch này?",
             "approve": "Xác nhận thanh toán",
@@ -518,8 +518,8 @@
             "receipt": "Tải lên biên lai chuyển tiền",
             "viewDetail": "Chi tiết",
             "loadMore": "Tải thêm",
-            "routingNumber": "Routing Number: ",
-            "swiftCode": "Swift Code: ",
+            "routingNumber": "Số định tuyến ngân hàng: ",
+            "swiftCode": "Mã SWIFT: ",
             "status": {
                 "status": "Trạng thái",
                 "transferred": "Đã chuyển khoản",
@@ -543,7 +543,7 @@
                 },
                 "content": {
                     "Cancel": "\n<div>\n              <p>Bạn vừa {Type}<strong>{Amount}</strong> Constant với tỉ giá <strong>{Price}</strong>{Currency}.</p>\n              <p>Nếu bạn muốn huỷ lệnh này, xin vui lòng chọn nút \"Huỷ giao dịch\" ở bên dưới. Nếu không, xin vui lòng đóng cửa sổ này.</p>\n            </div>\n          ",
-                    "Approve": "\n             <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Bank Name:</span>\n                  <strong>{bank_name}</strong>\n                </div>\n                <div>\n                  <span>Account Name:</span>\n                  <strong>{bank_account_name}</strong>\n                </div>\n                <div>\n                  <span>Account Number: </span>\n                  <strong>{bank_account_number}</strong>\n                </div>\n                <div>\n                  <span>Amount: </span>\n                  <strong>{Total}&nbsp;{Currency}</strong>\n                </div>\n                <div>\n                  <span>Reference: </span>\n                  <strong>{Reference}</strong>\n                </div>\n                <div>\n                    <span>Bank Country: </span>\n                    <strong>{bankCountry}</strong>\n                 </div>\n              </div>\n             </div>\n          ",
+                    "Approve": "\n             <div>\n              <p>Bạn đặt lệnh mua <strong>{Amount} Constant</strong> với tỉ giá <strong>{Price}</strong> {Currency}/Constant.</p>\n              <p>Nếu bạn đã chuyển <strong>{Total} {Currency}</strong> tới tài khoản người bán, xin vui lòng chọn “Xác nhận thanh toán”.</p> \n              <p>Nếu chưa, xin vui lòng gửi <strong>{Total} {Currency}</strong> tới tài khoản ngân hàng của người bán. Nhớ ghi mã giao dịch <ref> vào phần nội dung chuyển khoản.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Tên ngân hàng:</span>\n                  <strong>{bank_name}</strong>\n                </div>\n                <div>\n                  <span>Tên tài khoản:</span>\n                  <strong>{bank_account_name}</strong>\n                </div>\n                <div>\n                  <span>Số tài khoản: </span>\n                  <strong>{bank_account_number}</strong>\n                </div>\n                <div>\n                  <span>Số tiền: </span>\n                  <strong>{Total}&nbsp;{Currency}</strong>\n                </div>\n                <div>\n                  <span>Mã giao dịch: </span>\n                  <strong>{Reference}</strong>\n                </div>\n                <div>\n                    <span>Quốc gia: </span>\n                    <strong>{bankCountry}</strong>\n                 </div>\n              </div>\n             </div>\n          ",
                     "Finish": "\n<div>\n                <p>Bạn đã đặt lệnh bán <strong>{Amount} Constant</strong> với giá <strong>{Price} </strong> {Currency} 1 Constant.</p>\n                <p>Khi nhận được chuyển khoản số tiền <strong>{TotalVND} {Currency}</strong>, bạn có thể gửi Constant đi bằng cách nhấn nút bên dưới.</p>\n                <p>LƯU Ý: Vui lòng không gửi Constant khi bạn chưa nhận được chuyển khoản. Nếu bạn chưa nhận được tiền trong vòng 30 phút, \n vui lòng liên hệ Constant tại hello@constant.money.</p>\n            </div>          "
                 }
             }
@@ -1072,9 +1072,9 @@
                 "transfer": "Chuyển khoản",
                 "batchtransfer": "Chuyển khoản tới nhiều người cùng lúc",
                 "deposit": "Nộp tiền",
-                "withdrawDesc": "Withdraw funds to your bank account or wallet address.",
-                "depositDesc": "Store your money in USD. FDIC insured up to $130M.",
-                "transferDesc": "Send money across the world instantly - to as many people as you like.",
+                "withdrawDesc": "Rút tiền về tài khoản ngân hàng hoặc địa chỉ ví bất kì.",
+                "depositDesc": "Giữ tiền bằng USD, được FDIC bảo hiểm lên đến 130 triệu USD.",
+                "transferDesc": "Chuyển tiền quốc tế. Không giới hạn số lượng và số lần chuyển.",
                 "row": "Hàng",
                 "errorMessage": "Đã xảy ra lỗi",
                 "saving": "Đầu tư ngay",
@@ -3093,7 +3093,7 @@
         }
     },
     "landingPro": {
-        "title1": "Constant Pro, the world’s first peer-to-peer lending for professionals, is coming.",
+        "title1": "Constant Pro, nền tảng cho vay ngang hàng dành riêng cho giới chuyên gia sắp sửa được ra mắt.",
         "desc1": "Constant Pro offers an intuitive interface with real time orderbooks, charting tools, trade history, and a simple order process so you can trade on interest rates — within a fully-secured platform, backed by a combination of FDIC, smart contracts, and over-collateralization",
         "emailInput": {
             "placeholder": "Enter the email to be the first to experience it",

@@ -683,7 +683,7 @@
                     "timeout": "Timed out",
                     "transferMoneyToAgent": "Waiting for buyer to send money",
                     "waitAgentTransferMoney": "Waiting for you to send money",
-                    "transferredMoneyToAgent": "Received",
+                    "transferredMoneyToAgent": " ",
                     "done": "Successful",
                     "inProgress": "Order in progress"
                 }

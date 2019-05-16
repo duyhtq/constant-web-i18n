@@ -683,7 +683,7 @@
                     "timeout": "Hết thời gian",
                     "transferMoneyToAgent": "Chờ người mua gửi tiền",
                     "waitAgentTransferMoney": "Chờ người mua gửi tiền",
-                    "transferredMoneyToAgent": "Đã nhận",
+                    "transferredMoneyToAgent": " ",
                     "done": "Thành công",
                     "inProgress": "Đang xử lí giao dịch"
                 }
@@ -3088,7 +3088,7 @@
     },
     "modules": {
         "faqs": {
-            "title": "Top questions from users"
+            "title": "Những câu hỏi thường gặp"
         }
     }
 }

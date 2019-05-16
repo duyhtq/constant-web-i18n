@@ -507,6 +507,7 @@
             "value": "Giá trị",
             "amount": "Số tiền",
             "accept": "Đồng ý",
+            "detail": "View Detail",
             "cancel": "Huỷ",
             "cancelMess": "Bạn chắc chắn muốn huỷ giao dịch này?",
             "approve": "Xác nhận thanh toán",
@@ -517,6 +518,8 @@
             "receipt": "Tải lên biên lai chuyển tiền",
             "viewDetail": "Chi tiết",
             "loadMore": "Tải thêm",
+            "routingNumber": "Routing Number: ",
+            "swiftCode": "Swift Code: ",
             "status": {
                 "status": "Trạng thái",
                 "transferred": "Đã chuyển khoản",
@@ -540,7 +543,7 @@
                 },
                 "content": {
                     "Cancel": "\n<div>\n              <p>Bạn vừa {Type}<strong>{Amount}</strong> Constant với tỉ giá <strong>{Price}</strong>{Currency}.</p>\n              <p>Nếu bạn muốn huỷ lệnh này, xin vui lòng chọn nút \"Huỷ giao dịch\" ở bên dưới. Nếu không, xin vui lòng đóng cửa sổ này.</p>\n            </div>\n          ",
-                    "Approve": "\n             <div>\n              <p>Bạn đã đặt lệnh mua <strong>{Amount} Constant</strong> với giá <strong>{Price}</strong> {Currency} 1 Constant.</p>\n              <p>Khi gửi xong <strong>{Total} {Currency}</strong> vào tài khoản ngân hàng này, vui lòng nhấn \"Xác nhận thanh toán\".</p> \n              <p>Hãy nhớ gửi chính xác <strong>{Total} {Currency}</strong> vào tài khoản và điền số tham chiếu <ref> vào phần thông tin chuyển khoản</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Tên Ngân Hàng:</span>\n                  <strong>{bank_name}</strong>\n                </div>\n                <div>\n                  <span>Tên Tài Khoản:</span>\n                  <strong>{bank_account_name}</strong>\n                </div>\n                <div>\n                  <span>Số Tài Khoản: </span>\n                  <strong>{bank_account_number}</strong>\n                </div>\n                <div>\n                  <span>Số Tiền: </span>\n                  <strong>{Total}&nbsp;{Currency}</strong>\n                </div>\n                <div>\n                  <span>Số Tham Chiếu: </span>\n                  <strong>{Reference}</strong>\n                </div>\n              </div>\n              <br />\n              <p>LƯU Ý: Nếu bạn không hoàn tất giao dịch trong vòng 30 phút, lệnh mua sẽ bị hủy để bảo mật thông tin của bạn.</p>\n             </div>\n          ",
+                    "Approve": "\n             <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Bank Name:</span>\n                  <strong>{bank_name}</strong>\n                </div>\n                <div>\n                  <span>Account Name:</span>\n                  <strong>{bank_account_name}</strong>\n                </div>\n                <div>\n                  <span>Account Number: </span>\n                  <strong>{bank_account_number}</strong>\n                </div>\n                <div>\n                  <span>Amount: </span>\n                  <strong>{Total}&nbsp;{Currency}</strong>\n                </div>\n                <div>\n                  <span>Reference: </span>\n                  <strong>{Reference}</strong>\n                </div>\n                <div>\n                    <span>Bank Country: </span>\n                    <strong>{bankCountry}</strong>\n                 </div>\n              </div>\n             </div>\n          ",
                     "Finish": "\n<div>\n                <p>Bạn đã đặt lệnh bán <strong>{Amount} Constant</strong> với giá <strong>{Price} </strong> {Currency} 1 Constant.</p>\n                <p>Khi nhận được chuyển khoản số tiền <strong>{TotalVND} {Currency}</strong>, bạn có thể gửi Constant đi bằng cách nhấn nút bên dưới.</p>\n                <p>LƯU Ý: Vui lòng không gửi Constant khi bạn chưa nhận được chuyển khoản. Nếu bạn chưa nhận được tiền trong vòng 30 phút, \n vui lòng liên hệ Constant tại hello@constant.money.</p>\n            </div>          "
                 }
             }

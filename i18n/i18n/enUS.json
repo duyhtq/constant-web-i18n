@@ -2950,7 +2950,8 @@
                 },
                 "placeholder": {
                     "amount": "How much do you want to lend?"
-                }
+                },
+                "yourAnytimeBalance": "Your Balance: {balance} {currency}"
             },
             "alert": {
                 "success": "Success",
@@ -3094,13 +3095,13 @@
         }
     },
     "landingPro": {
-        "title1": "Constant Pro, the world’s first peer-to-peer lending for professionals, is coming.",
-        "desc1": "Constant Pro offers an intuitive interface with real time orderbooks, charting tools, trade history, and a simple order process so you can trade on interest rates — within a fully-secured platform, backed by a combination of FDIC, smart contracts, and over-collateralization",
+        "title1": "Peer-to-peer lending for the Pros. Coming soon.",
+        "desc1": "Keep your finger on the pulse of the market, using an intuitive interface with real-time orderbooks, charting tools and detailed trade history. Trade on interest rates and optimize your returns on a fully-secured platform, uniquely backed by a combination of FDIC insurance, smart contracts, and over-collateralization.",
         "emailInput": {
-            "placeholder": "Enter the email to be the first to experience it",
+            "placeholder": "Enter your email for early access",
             "btn": "Step inside"
         },
-        "title2": "Constant Pro is an entirely new way to lend and borrow directly from one another — cutting out the banks and their hefty fees.",
+        "title2": "Get the interest rate you want. No banks, no institutions. Think P2P.",
         "what": {
             "title0": "Set your own rates",
             "desc0": "Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.",

@@ -2950,7 +2950,8 @@
                 },
                 "placeholder": {
                     "amount": "Bạn muốn đầu tư bao nhiêu?"
-                }
+                },
+                "yourAnytimeBalance": "Your Balance: {balance} {currency}"
             },
             "alert": {
                 "success": "Thành công",

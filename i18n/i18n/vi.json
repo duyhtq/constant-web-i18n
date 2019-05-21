@@ -2658,6 +2658,9 @@
                 "btn": "Vay"
             }
         },
+        "crypto": {
+            "desc": "Tất cả các khoản vay và đầu tư trên nền tảng Constant được đảm bảo bởi FDIC, hợp đồng thông minh và tài sản thế chấp."
+        },
         "faqs": {
             "question1": "Hình thức cho vay ngang hàng là gì?",
             "answer1": "Không giống như vay ngân hàng, hình thức cho vay ngang hàng cho phép người cần vay có thể vay tiền trực tiếp từ nhà đầu tư. Bỏ qua mọi khâu trung gian, nhà đầu tư và người cần vay có thể tự thoả thuận mức lãi suất và kì hạn sao cho đôi bên cùng có lợi. Nếu bạn đang tìm kiếm một cơ hội đầu tư với mức lợi nhuận cao hơn hoặc muốn vay tiền với mức lãi suất thấp, Constant là lựa chọn tốt nhất thị trường.",

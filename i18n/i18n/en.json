@@ -168,6 +168,7 @@
         "wallet": "Wallet",
         "walletOrder": "Balance and Transactions",
         "hello": "Hello",
+        "landingPro": "Pro",
         "countryLanguage": {
             "title": "Your language",
             "okBtn": "OK",
@@ -3100,6 +3101,9 @@
         "emailInput": {
             "placeholder": "Enter the email to be the first to experience it",
             "btn": "Step inside"
+        },
+        "alert": {
+            "emailSuccess": "Thanks! You’ll be the first to hear when Pro goes live."
         },
         "title2": "Constant Pro is an entirely new way to lend and borrow directly from one another — cutting out the banks and their hefty fees.",
         "what": {

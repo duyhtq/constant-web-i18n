@@ -168,6 +168,7 @@
         "wallet": "Wallet",
         "walletOrder": "Balance and Transactions",
         "hello": "Hello",
+        "landingPro": "Pro",
         "countryLanguage": {
             "title": "Your language",
             "okBtn": "OK",
@@ -3100,6 +3101,9 @@
         "emailInput": {
             "placeholder": "Enter your email for early access",
             "btn": "Step inside"
+        },
+        "alert": {
+            "emailSuccess": "Thanks! You’ll be the first to hear when Pro goes live."
         },
         "title2": "Get the interest rate you want. No banks, no institutions. Think P2P.",
         "what": {

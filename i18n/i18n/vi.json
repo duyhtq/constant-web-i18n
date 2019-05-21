@@ -168,6 +168,7 @@
         "wallet": "Ví",
         "walletOrder": "Số dư và Giao dịch",
         "hello": "Chào",
+        "landingPro": "Pro",
         "countryLanguage": {
             "title": "Ngôn ngữ",
             "okBtn": "Đồng ý",
@@ -3100,6 +3101,9 @@
         "emailInput": {
             "placeholder": "Nhập email để trở thành người đầu tiên trải nghiệm Constant Pro",
             "btn": "Tiếp tục"
+        },
+        "alert": {
+            "emailSuccess": "Thanks! You’ll be the first to hear when Pro goes live."
         },
         "title2": "Constant Pro là cách thức hoàn toàn mới để kết nối trực tiếp những người có nhu cầu đầu tư và vay vốn mà không cần thông qua bất cứ một khâu trung gian nào.",
         "what": {

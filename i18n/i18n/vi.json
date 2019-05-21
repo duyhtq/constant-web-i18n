@@ -389,7 +389,7 @@
             "plDocType": "Chọn loại giấy tờ",
             "btnSubmit": "Gửi",
             "lUpload": "Tải lên hình ảnh {face} của {type}",
-            "descIDUpload": "Hãy chắc chắn rằng hình ảnh được tải lên phải ở định dạng BMP, JPG, JPEG hoặc PNG, rõ ràng sắc nét và nhỏ hơn 3MB.",
+            "descIDUpload": "Hãy chắc chắn rằng hình ảnh được tải lên phải ở định dạng BMP, JPG, JPEG hoặc PNG, rõ ràng sắc nét và nhỏ hơn 10MB.",
             "lAddrStr1": "Địa chỉ",
             "lAddrCountry": "Quốc gia",
             "plAddrCountry": "Chọn quốc gia",

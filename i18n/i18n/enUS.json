@@ -389,7 +389,7 @@
             "plDocType": "Select your ID type",
             "btnSubmit": "Submit",
             "lUpload": "Upload an image of THE {face} of your {type}",
-            "descIDUpload": "Please make sure that the photo is complete and clearly visible, in BMP, JPG, JPEG, or PNG format, and is smaller than 3MB.",
+            "descIDUpload": "Please make sure that the photo is complete and clearly visible, in BMP, JPG, JPEG, or PNG format, and is smaller than 10MB.",
             "lAddrStr1": "Address Street \n",
             "lAddrCountry": "Country on your proof of address",
             "plAddrCountry": "Select your country",

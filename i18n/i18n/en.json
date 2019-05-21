@@ -1129,7 +1129,8 @@
                     "to_email": "Email address is invalid",
                     "schedule_date": "Date format must be YYYY-MM-DDTHH:MM",
                     "invalid": " is invalid.",
-                    "endline": "Please ensure all rows are filled."
+                    "endline": "Please ensure all rows are filled.",
+                    "cycle_duration": "Schedule dates required"
                 },
                 "name": "Name",
                 "email": "Email",
@@ -1697,6 +1698,7 @@
             "caption": "SEND CONSTANT ANYWHERE",
             "viaEmailCaption": "Via Email",
             "viaAddressCaption": "To an ETH/EOS address",
+            "batchTransferCaption": "To multiple people",
             "yourBalance": "Your balance",
             "validateMaxInput": "Your amount must less than or equal: ${amount}",
             "transferFeeLabel": "Transfer fee",
@@ -1707,6 +1709,7 @@
             "walletAddr": "Ethereum/EOS wallet address",
             "phToAddress": "Recipient’s email or Ethereum wallet address",
             "confirmMsg": "Are you sure you want to transfer {amount} CONSTANT to {address}?",
+            "batchConfirmMsg": "Are you sure you want to transfer to multiple people from the uploaded file?",
             "transferFailed": "Failed while transfering, please try again",
             "transferSuccessful": "Your transfer was completed successfully",
             "timeLimit": "Your money will arrive within ",
@@ -2658,6 +2661,9 @@
                 "btn": "Borrow"
             }
         },
+        "crypto": {
+            "desc": "Fully secured, fully backed. All loans and investments are protected by a combination of FDIC insurance, Ethereum smart contracts, and crypto collateral."
+        },
         "faqs": {
             "question1": "What is peer-to-peer (P2P) lending?",
             "answer1": "Unlike bank loans, P2P lending works by matching investors and borrowers directly. Since there are no greedy middlemen getting in the way, you set your own terms and rates, giving you unparalleled control of your finances. So whether you’re looking for a low-interest loan or better returns on your investment, we’ll match you with someone who’d love to do business with you.",
@@ -2989,6 +2995,8 @@
                 "maxTerm": "Max term",
                 "btnConfirm": "Confirm",
                 "btnBack": "Back",
+                "zelle": "\n          <p className=\"bold\">The quickest way is via <strong>Zelle</strong>.</p>\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n        ",
+                "bankChosenMessage1": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n          <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n        ",
                 "bankChosenMessage": "We have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.",
                 "makeAnotherButton": "Make another investment"
             }

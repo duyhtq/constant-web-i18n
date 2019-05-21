@@ -1129,7 +1129,8 @@
                     "to_email": "Địa chỉ Email không hợp lệ",
                     "schedule_date": "Định dạng ngày tháng phải là YYYY-MM-DDTHH:MM",
                     "invalid": " là không hợp lệ.",
-                    "endline": "Hãy điền tất cả các thông tin được yêu cầu."
+                    "endline": "Hãy điền tất cả các thông tin được yêu cầu.",
+                    "cycle_duration": "Schedule dates required"
                 },
                 "name": "Tên",
                 "email": "Email",
@@ -1697,6 +1698,7 @@
             "caption": "Bạn muốn chuyển khoản bao nhiêu?",
             "viaEmailCaption": "Email",
             "viaAddressCaption": "Địa chỉ ví ETH/EOS",
+            "batchTransferCaption": "To multiple people",
             "yourBalance": "Số dư",
             "validateMaxInput": "Xin vui lòng nhập số nhỏ hơn hoặc bằng: ${amount}",
             "transferFeeLabel": "Phí chuyển khoản",
@@ -1707,6 +1709,7 @@
             "walletAddr": "Địa chỉ ví Ethereum hoặc EOS",
             "phToAddress": "Email hoặc địa chỉ ví Ethereum của người nhận",
             "confirmMsg": "Bạn muốn chuyển {amount} CONSTANT tới {address}?",
+            "batchConfirmMsg": "Are you sure you want to transfer to multiple people from the uploaded file?",
             "transferFailed": "Có lỗi xảy ra khi thực hiện giao dịch. Xin vui lòng thử lại",
             "transferSuccessful": "Giao dịch thành công",
             "timeLimit": "Bạn sẽ nhận được Constant trong ",
@@ -2659,7 +2662,7 @@
             }
         },
         "crypto": {
-            "desc": "Tất cả các khoản vay và đầu tư trên nền tảng Constant được đảm bảo bởi FDIC, hợp đồng thông minh và tài sản thế chấp."
+            "desc": "Fully secured, fully backed. All loans and investments are protected by a combination of FDIC insurance, Ethereum smart contracts, and crypto collateral."
         },
         "faqs": {
             "question1": "Hình thức cho vay ngang hàng là gì?",
@@ -2992,6 +2995,8 @@
                 "maxTerm": "Kì hạn tối đa",
                 "btnConfirm": "Xác nhận",
                 "btnBack": "Trở lại",
+                "zelle": "\n          <p className=\"bold\">The quickest way is via <strong>Zelle</strong>.</p>\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n        ",
+                "bankChosenMessage1": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n          <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n        ",
                 "bankChosenMessage": "Chúng tôi có tài khoản ở rất nhiều các ngân hàng lớn để bạn chuyển khoản dễ dàng hơn. Xin vui lòng chọn ngân hàng thuận tiện nhất với bạn để thực hiện chuyển khoản.",
                 "makeAnotherButton": "Tiếp tục đầu tư"
             }

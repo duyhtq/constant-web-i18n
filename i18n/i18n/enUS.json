@@ -3096,7 +3096,7 @@
         }
     },
     "landingPro": {
-        "title1": "Peer-to-peer lending for the Pros. Coming soon.",
+        "title1": "<h1>Peer-to-peer lending for the Pros. </h1><h1>Coming soon.</h1>",
         "desc1": "Keep your finger on the pulse of the market, using an intuitive interface with real-time orderbooks, charting tools and detailed trade history. Trade on interest rates and optimize your returns on a fully-secured platform, uniquely backed by a combination of FDIC insurance, smart contracts, and over-collateralization.",
         "emailInput": {
             "placeholder": "Enter your email for early access",

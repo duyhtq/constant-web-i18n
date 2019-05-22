@@ -1034,12 +1034,12 @@
                 "cancel": "Cancel",
                 "termStatus": {
                     "created": "Khớp lệnh",
-                    "pending": "Đang chờ",
+                    "pending": "Matching",
                     "closed": "Đã đóng",
                     "rejected": "Đã từ chối",
                     "pending_kyc": "Đang xác minh KYC",
                     "matched": "Khớp lệnh",
-                    "matching": "Đang chờ",
+                    "matching": "Matching",
                     "cancelled": "Đã huỷ"
                 },
                 "interestInfo": {

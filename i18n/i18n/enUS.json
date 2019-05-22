@@ -1039,7 +1039,7 @@
                     "rejected": "Rejected",
                     "pending_kyc": "Verify now",
                     "matched": "Matched",
-                    "matching": "Pending",
+                    "matching": "Matching",
                     "cancelled": "Cancelled"
                 },
                 "interestInfo": {

@@ -1031,7 +1031,7 @@
                 "saving_title": "Các khoản đầu tư",
                 "anyTime_saving": "Số dư",
                 "input2FA": "Nhập mã bảo mật 2 lớp",
-                "cancel": "Huỷ",
+                "cancel": "Cancel",
                 "termStatus": {
                     "created": "Khớp lệnh",
                     "pending": "Đang chờ",
@@ -1039,7 +1039,8 @@
                     "rejected": "Đã từ chối",
                     "pending_kyc": "Đang xác minh KYC",
                     "matched": "Khớp lệnh",
-                    "matching": "Đang chờ"
+                    "matching": "Đang chờ",
+                    "cancelled": "Cancelled"
                 },
                 "interestInfo": {
                     "header": {
@@ -1097,9 +1098,14 @@
                         "cancel": "Để sau"
                     },
                     "cancelDeposit": {
-                        "messageConfirm": "Bạn không phải chịu phí phạt khi rút tiền trước hạn. Tuy nhiên, bạn sẽ không tiếp tục được hưởng lãi nữa.",
-                        "confirm": "Rút tiền",
-                        "cancel": "Huỷ"
+                        "messageConfirm": "Are you sure you want to cancel your investment order before a match is found?",
+                        "confirm": "Yes, cancel",
+                        "cancel": "Go back"
+                    },
+                    "cancelDepositKyc": {
+                        "messageConfirm": "To activate this investment order, all you need to do is verify your ID. Cancel anyway?",
+                        "confirm": "Yes, cancel",
+                        "cancel": "Verify my ID"
                     }
                 },
                 "confirm": {
@@ -1130,7 +1136,7 @@
                     "schedule_date": "Định dạng ngày tháng phải là YYYY-MM-DDTHH:MM",
                     "invalid": " là không hợp lệ.",
                     "endline": "Hãy điền tất cả các thông tin được yêu cầu.",
-                    "cycle_duration": "Schedule dates required"
+                    "cycle_duration": "Chọn ngày gửi đi"
                 },
                 "name": "Tên",
                 "email": "Email",
@@ -1698,7 +1704,7 @@
             "caption": "Bạn muốn chuyển khoản bao nhiêu?",
             "viaEmailCaption": "Email",
             "viaAddressCaption": "Địa chỉ ví ETH/EOS",
-            "batchTransferCaption": "To multiple people",
+            "batchTransferCaption": "Gửi tiền tới nhiều người cùng lúc",
             "yourBalance": "Số dư",
             "validateMaxInput": "Xin vui lòng nhập số nhỏ hơn hoặc bằng: ${amount}",
             "transferFeeLabel": "Phí chuyển khoản",
@@ -1709,7 +1715,7 @@
             "walletAddr": "Địa chỉ ví Ethereum hoặc EOS",
             "phToAddress": "Email hoặc địa chỉ ví Ethereum của người nhận",
             "confirmMsg": "Bạn muốn chuyển {amount} CONSTANT tới {address}?",
-            "batchConfirmMsg": "Are you sure you want to transfer to multiple people from the uploaded file?",
+            "batchConfirmMsg": "Bạn muốn gửi tiền tới những người có trong danh sách này?",
             "transferFailed": "Có lỗi xảy ra khi thực hiện giao dịch. Xin vui lòng thử lại",
             "transferSuccessful": "Giao dịch thành công",
             "timeLimit": "Bạn sẽ nhận được Constant trong ",
@@ -2662,7 +2668,7 @@
             }
         },
         "crypto": {
-            "desc": "Fully secured, fully backed. All loans and investments are protected by a combination of FDIC insurance, Ethereum smart contracts, and crypto collateral."
+            "desc": "Tất cả các khoản vay và đầu tư trên nền tảng Constant được đảm bảo bởi FDIC, hợp đồng thông minh và tài sản thế chấp nên tuyệt đối an toàn."
         },
         "faqs": {
             "question1": "Hình thức cho vay ngang hàng là gì?",
@@ -2958,7 +2964,7 @@
                 "placeholder": {
                     "amount": "Bạn muốn đầu tư bao nhiêu?"
                 },
-                "yourAnytimeBalance": "Your Balance: {balance} {currency}"
+                "yourAnytimeBalance": "Số dư: {balance}{currency}"
             },
             "alert": {
                 "success": "Thành công",
@@ -2972,7 +2978,7 @@
             "confirm": {
                 "thankYou1": "Đã gần xong.",
                 "thankMsg": "Xin vui lòng chuyển khoản {amount} tới quỹ Constant để nộp tiền vào tài khoản.",
-                "thankMsg1": "You currently have {balance} in your balance. Please make a transfer of the remaining {amount} to proceed.",
+                "thankMsg1": "Số dư hiện tại: {balance}. Xin vui lòng nộp vào tài khoản đủ {amount} để tiếp tục.",
                 "bankName": "Tên ngân hàng",
                 "accountName": "Tên tài khoản",
                 "accountNumber": "Số tài khoản",
@@ -2995,8 +3001,8 @@
                 "maxTerm": "Kì hạn tối đa",
                 "btnConfirm": "Xác nhận",
                 "btnBack": "Trở lại",
-                "zelle": "\n          <p className=\"bold\">The quickest way is via <strong>Zelle</strong>.</p>\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n        ",
-                "bankChosenMessage1": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n          <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n        ",
+                "zelle": "\n<p className=\"bold\">Chuyển khoản qua<strong>Zelle</strong> là nhanh nhất.</p>\n          <p>Số tiền: {amount} USD</p>\n          <p>Gửi tới: <strong>finance@myconstant.com</strong></p>\n        ",
+                "bankChosenMessage1": "\n<p>Với chuyển khoản ngân hàng, chúng tôi có tài khoản ở hầu hết các ngân hàng lớn để giao dịch được thuận tiện.</p>\n          <p>Xin vui lòng chọn ngân hàng nào thuận tiện nhất cho bạn để giao dịch.</p>        ",
                 "bankChosenMessage": "Chúng tôi có tài khoản ở rất nhiều các ngân hàng lớn để bạn chuyển khoản dễ dàng hơn. Xin vui lòng chọn ngân hàng thuận tiện nhất với bạn để thực hiện chuyển khoản.",
                 "makeAnotherButton": "Tiếp tục đầu tư"
             }
@@ -3111,7 +3117,7 @@
             "btn": "Tiếp tục"
         },
         "alert": {
-            "emailSuccess": "Thanks! You’ll be the first to hear when Pro goes live."
+            "emailSuccess": "Xin cảm ơn! Bạn sẽ là người đầu tiên được trải nghiệm Pro."
         },
         "title2": "Constant Pro là cách thức hoàn toàn mới để kết nối trực tiếp những người có nhu cầu đầu tư và vay vốn mà không cần thông qua bất cứ một khâu trung gian nào.",
         "what": {
@@ -3138,35 +3144,35 @@
         }
     },
     "landingProReferral": {
-        "title1": "More peers, more interest.",
-        "desc1": "This is your unique referral link. Share it via email, Facebook, or Twitter - and increase your interest earnings with every friend that signs up.",
-        "title2": "12 peers have joined. Nice!",
+        "title1": "Thêm bạn, thêm vui.",
+        "desc1": "Hãy chia sẻ link giới thiệu này của bạn qua email, Facebook hoặc Twitter để được tăng lãi suất khi có người bạn đăng kí mới.",
+        "title2": "Tuyệt vời! 12 người bạn đã tham gia.",
         "shares": {
-            "fb": "Share on Facebook",
-            "tw": "Share on Twitter",
-            "gg": "Share on Google"
+            "fb": "Chia sẻ trên Facebook",
+            "tw": "Chia sẻ trên Twitter",
+            "gg": "Chia sẻ qua Google"
         },
         "levels": {
-            "l0": "<p>Free transaction fees for the first 30 days</p>",
-            "l1": "\n        <p>Free transaction fees for the first 30 days</p>\n        <p>+1% interest for every investment made in the first 30 days</p>\n      ",
-            "l2": "\n      <p>Free transaction fees for the first 30 days</p>\n      <p>+2% interest for every investment made in the first 30 days</p>\n      <p>-2% interest for every loan obtained in the first 30 days</p>\n      ",
-            "l3": "\n        <p>Free transaction fees for the first 30 days</p>\n        <p>+3% interest for every investment made in the first 30 days</p>\n        <p>-3% interest for every loan obtained in the first 30 days</p>\n      "
+            "l0": "<p>Miễn phí giao dịch trong 30 ngày đầu tiên</p>",
+            "l1": "\n<p>Miễn phí giao dịch trong 30 ngày đầu tiên</p>\n        <p>Tăng thêm 1% lãi suất cho mỗi khoản đầu tư trong 30 ngày đầu tiên</p>\n      ",
+            "l2": "\n<p>Miễn phí giao dịch trong 30 ngày đầu tiên</p>\n      <p>Tăng thêm 2% lãi suất cho mỗi khoản đầu tư trong 30 ngày đầu tiên</p>\n      <p>Giảm 2% lãi suất cho mỗi khoản vay trong 30 ngày đầu tiên</p>      ",
+            "l3": "\n<p>Miễn phí giao dịch trong 30 ngày đầu tiên</p>\n      <p>Tăng thêm 3% lãi suất cho mỗi khoản đầu tư trong 30 ngày đầu tiên</p>\n      <p>Giảm 3% lãi suất cho mỗi khoản vay trong 30 ngày đầu tiên</p>      "
         },
         "referral": {
             "placeholder": "https://myconstant.com/?ref=1AcXa2",
-            "btn": "Copy"
+            "btn": "Sao chép"
         },
         "faqs": {
-            "question1": "What are the supported cryptocurrencies?",
-            "answer1": "The treasure box is supporting BTC, ETH and CONST",
-            "question2": "Do I need a minimum deposit?",
-            "answer2": "None at all. You can invest as much or as little as you like. ",
-            "question3": "What is the interest rate?",
+            "question1": "Constant Pro hỗ trợ những coin nào?",
+            "answer1": "Hiện tại, chúng tôi chỉ hỗ trợ BTC, ETH và CONST. Nhiều loại tiền mã hoá khác sẽ được cập nhật thêm trong thời gian tới",
+            "question2": "Hạn mức đầu tư là bao nhiêu?",
+            "answer2": "Hoàn toàn không có giới hạn. Bạn có thể đầu tư bao nhiêu cũng được. ",
+            "question3": "Mức lãi suất là bao nhiêu?",
             "answer3": "\n<p>Nhập số tiền đầu tư và chọn mức lãi suất và kì hạn mà bạn mong muốn. Chuyển khoản tới quỹ Constant để hoàn tất đầu tư và đợi Constant tìm kiếm cho bạn một người vay phù hợp. Nên chọn mức lãi suất ngang mức thị trường để được kết nối nhanh nhất.</p>\n        <p>Khi đã được khớp lệnh, hợp đồng thông minh sẽ tự động gửi tiền của bạn đến tài khoản người vay và lãi sẽ được tính ngay từ lúc đó. Khi đáo hạn, người vay sẽ hoàn trả toàn bộ khoản vay và lãi. Tất cả sẽ được chuyển vào tài khoản Constant của bạn. Sau đó bạn có thể tái đầu tư, rút tiền hoặc thực hiện chuyển khoản quốc tế.</p>      ",
-            "question4": "How much is the monthly earning?",
-            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
-            "question5": "Who can participate?",
-            "answer5": "When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds."
+            "question4": "Constant Pro bảo vệ nhà đầu tư như thế nào?",
+            "answer4": "\n        <p>Để bảo vệ nhà đầu tư, Constant Pro thực hiện các biện pháp sau:</p>\n        <p>Người vay cần thế chấp số tiền mã hoá trị giá 150% khoản vay. Phần tài sản thế chấp này sẽ được thanh lí nếu giá trị giảm xuống dưới mức nhất định.</p>\n        <p>Các khoản đầu tư được vận hành dựa trên hợp đồng thông minh được lập trình sẵn theo ý khách hàng. Phần tiền nhàn rỗi được giữ trong các tài khoản được giám sát bởi PrimeTrust và bảo hiểm bởi FDIC.</p>      \n        <p>Với những biện pháp đó, nhà đầu tư được bảo vệ khỏi mọi rủi ro. Ngay cả khi người vay không hoàn trả khoản vay hay thị trường đi xuống, nhà đầu tư vẫn luôn được bảo vệ và thu được lợi nhuận.</p>      ",
+            "question5": "Phần tiền không đầu tư trong tài khoản Constant được bảo vệ như thế nào?",
+            "answer5": "Phần tiền không đầu tư được giữ trong các tài khoản được FDIC bảo hiểm lên đến 130,000,000 USD. PrimeTrust, một tổ chức tài chính uy tín tại Mỹ là đơn vị quản lí những tài khoản này."
         }
     },
     "modules": {

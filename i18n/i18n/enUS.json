@@ -1025,7 +1025,7 @@
                 "haveTimeAccount": "{term}-{termType} investment",
                 "month": "month",
                 "anyTimeAccount": "Anytime deposit",
-                "endTerm": "Term ends:",
+                "endTerm": "Term ends: ",
                 "trial": "TRIAL",
                 "trial_description": "You keep the interest. Term has ended",
                 "saving_title": "Investments",
@@ -1034,12 +1034,13 @@
                 "cancel": "Cancel",
                 "termStatus": {
                     "created": "Matched",
-                    "pending": "Pending",
+                    "pending": "Matching",
                     "closed": "Closed",
                     "rejected": "Rejected",
                     "pending_kyc": "Verify now",
                     "matched": "Matched",
-                    "matching": "Pending"
+                    "matching": "Pending",
+                    "cancelled": "Cancelled"
                 },
                 "interestInfo": {
                     "header": {
@@ -1097,9 +1098,14 @@
                         "cancel": "Maybe later"
                     },
                     "cancelDeposit": {
-                        "messageConfirm": "There are no penalties for withdrawing before your term is up, but you won't earn any interest.",
-                        "confirm": "Withdraw",
-                        "cancel": "Cancel"
+                        "messageConfirm": "Are you sure you want to cancel your investment order before a match is found?",
+                        "confirm": "Yes, cancel",
+                        "cancel": "Go back"
+                    },
+                    "cancelDepositKyc": {
+                        "messageConfirm": "To activate this investment order, all you need to do is verify your ID. Cancel anyway?",
+                        "confirm": "Yes, cancel",
+                        "cancel": "Verify my ID"
                     }
                 },
                 "confirm": {

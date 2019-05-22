@@ -1040,7 +1040,7 @@
                     "pending_kyc": "Đang xác minh KYC",
                     "matched": "Khớp lệnh",
                     "matching": "Đang chờ",
-                    "cancelled": "Cancelled"
+                    "cancelled": "Đã huỷ"
                 },
                 "interestInfo": {
                     "header": {

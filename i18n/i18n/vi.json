@@ -147,6 +147,8 @@
         }
     },
     "headerBar": {
+        "home": "Home",
+        "account": "Account",
         "blog": "Blog",
         "myAccount": "Tài khoản của tôi",
         "deposit": "Nộp tiền",
@@ -1031,15 +1033,15 @@
                 "saving_title": "Các khoản đầu tư",
                 "anyTime_saving": "Số dư",
                 "input2FA": "Nhập mã bảo mật 2 lớp",
-                "cancel": "Cancel",
+                "cancel": "Huỷ",
                 "termStatus": {
                     "created": "Khớp lệnh",
-                    "pending": "Matching",
+                    "pending": "Đang chờ",
                     "closed": "Đã đóng",
                     "rejected": "Đã từ chối",
                     "pending_kyc": "Đang xác minh KYC",
                     "matched": "Khớp lệnh",
-                    "matching": "Matching",
+                    "matching": "Đang khớp lệnh",
                     "cancelled": "Đã huỷ"
                 },
                 "interestInfo": {
@@ -1098,14 +1100,14 @@
                         "cancel": "Để sau"
                     },
                     "cancelDeposit": {
-                        "messageConfirm": "Are you sure you want to cancel your investment order before a match is found?",
-                        "confirm": "Yes, cancel",
-                        "cancel": "Go back"
+                        "messageConfirm": "Bạn muốn huỷ lệnh đầu tư khi vẫn chưa được khớp lệnh?",
+                        "confirm": "Xác nhận",
+                        "cancel": "Quay lại"
                     },
                     "cancelDepositKyc": {
-                        "messageConfirm": "To activate this investment order, all you need to do is verify your ID. Cancel anyway?",
-                        "confirm": "Yes, cancel",
-                        "cancel": "Verify my ID"
+                        "messageConfirm": "Bạn chỉ cần xác minh danh tính là có thể đầu tư. Bạn vẫn muốn huỷ?",
+                        "confirm": "Xác nhận",
+                        "cancel": "Xác minh danh tính"
                     }
                 },
                 "confirm": {
@@ -1704,6 +1706,7 @@
             "caption": "Bạn muốn chuyển khoản bao nhiêu?",
             "viaEmailCaption": "Email",
             "viaAddressCaption": "Địa chỉ ví ETH/EOS",
+            "viaTomoCaption": "To a TOMO address",
             "batchTransferCaption": "Gửi tiền tới nhiều người cùng lúc",
             "yourBalance": "Số dư",
             "validateMaxInput": "Xin vui lòng nhập số nhỏ hơn hoặc bằng: ${amount}",
@@ -1711,8 +1714,11 @@
             "subTitle": "Miễn phí. Tới bất cứ ai trên toàn thế giới.",
             "introTitle": "Chuyển khoản tới mọi người ở khắp nơi trên thế giới. Hoàn toàn miễn phí.",
             "transferBtn": "Gửi",
-            "emailAddr": "Email của người nhận",
-            "walletAddr": "Địa chỉ ví Ethereum hoặc EOS",
+            "address": {
+                "email": "Recipient’s email",
+                "wallet": "Ethereum/EOS wallet address",
+                "tomo": "TOMO wallet address"
+            },
             "phToAddress": "Email hoặc địa chỉ ví Ethereum của người nhận",
             "confirmMsg": "Bạn muốn chuyển {amount} CONSTANT tới {address}?",
             "batchConfirmMsg": "Bạn muốn gửi tiền tới những người có trong danh sách này?",

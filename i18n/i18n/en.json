@@ -147,6 +147,8 @@
         }
     },
     "headerBar": {
+        "home": "Home",
+        "account": "Account",
         "blog": "Tips",
         "myAccount": "My Account",
         "deposit": "Deposit",
@@ -1704,6 +1706,7 @@
             "caption": "SEND CONSTANT ANYWHERE",
             "viaEmailCaption": "Via Email",
             "viaAddressCaption": "To an ETH/EOS address",
+            "viaTomoCaption": "To a TOMO address",
             "batchTransferCaption": "To multiple people",
             "yourBalance": "Your balance",
             "validateMaxInput": "Your amount must less than or equal: ${amount}",
@@ -1711,8 +1714,11 @@
             "subTitle": "Free. To anyone, anywhere.",
             "introTitle": "Send money to anyone, anywhere. For free.",
             "transferBtn": "Send",
-            "emailAddr": "Recipient’s email",
-            "walletAddr": "Ethereum/EOS wallet address",
+            "address": {
+                "email": "Recipient’s email",
+                "wallet": "Ethereum/EOS wallet address",
+                "tomo": "TOMO wallet address"
+            },
             "phToAddress": "Recipient’s email or Ethereum wallet address",
             "confirmMsg": "Are you sure you want to transfer {amount} CONSTANT to {address}?",
             "batchConfirmMsg": "Are you sure you want to transfer to multiple people from the uploaded file?",

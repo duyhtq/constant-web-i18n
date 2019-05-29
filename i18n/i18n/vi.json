@@ -147,8 +147,8 @@
         }
     },
     "headerBar": {
-        "home": "Home",
-        "account": "Account",
+        "home": "Trang chủ",
+        "account": "Tài khoản",
         "blog": "Blog",
         "myAccount": "Tài khoản của tôi",
         "deposit": "Nộp tiền",
@@ -662,6 +662,13 @@
                 "inputCode": "Nhập mật khẩu",
                 "close": "Đóng",
                 "submit": "Gửi"
+            },
+            "input2Fa": {
+                "title": "Input 2FA",
+                "inputCode": "Enter password",
+                "close": "Close",
+                "submit": "Submit",
+                "message": "Google Authentication"
             },
             "disable2FaSuccess": "Tắt tính năng xác minh 2 lớp thành công!",
             "enable2FaSuccess": "Bật tính năng xác minh 2 lớp thành công!"
@@ -1457,7 +1464,7 @@
                 },
                 "introHolderTemplate": "\n<h1>Mua nội địa tại {country}</h1>\n        <p>Để trở thành người đầu tiên mua và bán Constant tại quốc gia của bạn, hãy liên hệ với chúng tôi để bắt đầu</p>\n        <p>Gửi email cho chúng tôi tại <a href=\"mailto:{email}\">{email}</a></p>\n        <p>Hoặc</p>\n        <p>Chat với chúng tôi <a href=\"telegram:{telegram}\">{telegram}</a></p>\n        ",
                 "confirmTemplate": "\n<div name=\"thanks\">\n<p>Cảm ơn! Xin vui lòng gửi <strong>{FiatAmount}{FiatCurrency}</strong> tới tài khoản ngân hàng của người bán.</p>\n</div>\n<div name=\"bank\">\n<p>\n<span>Tên ngân hàng:</span>\n<span>{BankName}</span>\n</p>\n<p>\n<span>Tên tài khoản:</span>\n<span>{BankAccountName}</span>\n</p>\n<p>\n<span>Số tài khoản:</span>\n<span>{BankAccountNumber}</span>\n</p>\n<p>\n<span>Số tiền:</span>\n<span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n</p>\n<p>\n<span>Constant:</span>\n<span>{Amount}&nbsp;{Currency}</span>\n</p>\n<p>\n<span>Mã giao dịch</span>\n<span>{Reference}</span>\n</p>\n</div>\n<div name=\"notice\">\n<b name=\"important\">CHÚ Ý:</b>\n<span>\nLuôn ghi mã giao dịch <b>{Reference}</b> trong phần nội dung chuyển khoản\n</span>\n</div>\n<div name=\"window\">\n<strong name=\"minutes\">30 PHÚT:</strong>\n<span>\nVui lòng chuyển khoản <b>trong vòng 30 phút</b>. Nếu không, giao dịch sẽ tự động bị huỷ bỏ.\n</span>\n</div>        ",
-                "cryptoAddressUSDT": "Địa chỉ ví USDT:",
+                "cryptoAddress": "{currency} address:",
                 "accountName": "Tên tài khoản:",
                 "bankName": "Tên ngân hàng",
                 "accountNumber": "Số tài khoản:",
@@ -1706,7 +1713,7 @@
             "caption": "Bạn muốn chuyển khoản bao nhiêu?",
             "viaEmailCaption": "Email",
             "viaAddressCaption": "Địa chỉ ví ETH/EOS",
-            "viaTomoCaption": "To a TOMO address",
+            "viaTomoCaption": "Gửi tới ví TOMO",
             "batchTransferCaption": "Gửi tiền tới nhiều người cùng lúc",
             "yourBalance": "Số dư",
             "validateMaxInput": "Xin vui lòng nhập số nhỏ hơn hoặc bằng: ${amount}",
@@ -1715,9 +1722,9 @@
             "introTitle": "Chuyển khoản tới mọi người ở khắp nơi trên thế giới. Hoàn toàn miễn phí.",
             "transferBtn": "Gửi",
             "address": {
-                "email": "Recipient’s email",
-                "wallet": "Ethereum/EOS wallet address",
-                "tomo": "TOMO wallet address"
+                "email": "Email người nhận",
+                "wallet": "Địa chỉ ví Ethereum hoặc EOS",
+                "tomo": "Địa chỉ ví TOMO"
             },
             "phToAddress": "Email hoặc địa chỉ ví Ethereum của người nhận",
             "confirmMsg": "Bạn muốn chuyển {amount} CONSTANT tới {address}?",

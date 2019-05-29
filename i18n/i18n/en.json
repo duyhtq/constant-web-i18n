@@ -663,6 +663,13 @@
                 "close": "Close",
                 "submit": "Submit"
             },
+            "input2Fa": {
+                "title": "Input 2FA",
+                "inputCode": "Enter password",
+                "close": "Close",
+                "submit": "Submit",
+                "message": "Google Authentication"
+            },
             "disable2FaSuccess": "Disable 2FA successfully!",
             "enable2FaSuccess": "Enable 2FA successfully!"
         },
@@ -1457,7 +1464,7 @@
                 },
                 "introHolderTemplate": "\n          <h1>Buy from local sellers in {country}</h1>\n          <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n          <p>Email us at <a href=\"mailto:{email}\">{email}</a></p>\n          <p>Or</p>\n          <p>Chat with us at <a href=\"telegram:{telegram}\">{telegram}</a></p>\n        ",
                 "confirmTemplate": "\n          <div name=\"thanks\">\n            <p>Thanks! Please wire <strong>{FiatAmount} {FiatCurrency}</strong> to the seller's bank account.</p>\n          </div>\n          <div name=\"bank\">\n            <p>\n              <span>Bank:</span>\n              <span>{BankName}</span>\n            </p>\n            <p>\n              <span>Account Name:</span>\n              <span>{BankAccountName}</span>\n            </p>\n            <p>\n              <span>Account Number: </span>\n              <span>{BankAccountNumber}</span>\n            </p>\n            <p>\n              <span>Amount: </span>\n              <span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n            </p>\n            <p>\n              <span>Constant: </span>\n              <span>{Amount}&nbsp;{Currency}</span>\n            </p>\n            <p>\n              <span>Reference: </span>\n              <span>{Reference}</span>\n            </p>\n          </div>\n          <div name=\"notice\">\n            <b name=\"important\">IMPORTANT:</b>\n            <span>\n              Do include your reference number <b>{Reference}</b> in the transfer description\n            </span>\n          </div>\n          <div name=\"window\">\n            <strong name=\"minutes\">30 MINUTE WINDOW: </strong>\n            <span>\n              Please complete your transfer <b>within 30 minutes</b>. After that, your\n              order will be automatically cancelled.\n            </span>\n          </div>\n        ",
-                "cryptoAddressUSDT": "USDT address:",
+                "cryptoAddress": "{currency} address:",
                 "accountName": "Account Name:",
                 "bankName": "Bank name",
                 "accountNumber": "Account Number:",

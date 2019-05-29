@@ -340,7 +340,7 @@
             "bookingOrders": "Sale Orders",
             "investingOrders": "Investing Orders",
             "loanOrders": "Loan Orders",
-            "myOrders": "Deposits and transfers",
+            "myOrders": "Deposits and withdrawals",
             "localHistory": "Transfers and interest earnings",
             "wallets": "Constant wallet",
             "cryptoWallet": "My Crypto Wallets",
@@ -662,6 +662,13 @@
                 "inputCode": "Enter password",
                 "close": "Close",
                 "submit": "Submit"
+            },
+            "input2Fa": {
+                "title": "Input 2FA",
+                "inputCode": "Enter password",
+                "close": "Close",
+                "submit": "Submit",
+                "message": "Google Authentication"
             },
             "disable2FaSuccess": "Disable 2FA successfully!",
             "enable2FaSuccess": "2FA successfully enabled."
@@ -1457,7 +1464,7 @@
                 },
                 "introHolderTemplate": "\n          <h1>Buy from local sellers in {country}</h1>\n          <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n          <p>Email us at <a href=\"mailto:{email}\">{email}</a></p>\n          <p>Or</p>\n          <p>Chat with us at <a href=\"telegram:{telegram}\">{telegram}</a></p>\n        ",
                 "confirmTemplate": "\n          <div name=\"thanks\">\n            <p>Simply make a transfer of <strong>{FiatAmount} {FiatCurrency}</strong> to complete your deposit. </p>\n          </div>\n          <div name=\"bank\">\n            <p>\n              <span>Bank:</span>\n              <span>{BankName}</span>\n            </p>\n            <p>\n              <span>Account Name:</span>\n              <span>{BankAccountName}</span>\n            </p>\n            <p>\n              <span>Account Number: </span>\n              <span>{BankAccountNumber}</span>\n            </p>\n            <p>\n              <span>Amount: </span>\n              <span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n            </p>\n            <p>\n              <span>Amount (USD): </span>\n              <span>{Amount}&nbsp;{Currency}</span>\n            </p>\n            <p>\n              <span>Reference: </span>\n              <span>{Reference}</span>\n            </p>\n          </div>\n          <div name=\"notice\">\n            <b name=\"important\">Please note</b>\n            <span>\n              Do include your reference number <b>{Reference}</b> in the transfer description, so we can credit your account as quickly as possible.\n            </span>\n          </div>\n          <div name=\"window\">\n            <strong name=\"minutes\">Please complete your transfer within 24 hours</strong>\n            <span>\n              For the sake of security, your session will automatically timeout in <b>24 hours.</b> If you need a little longer, just re-enter the amount you'd like to deposit when you're ready.  </p>\n            </span>\n          </div>\n        ",
-                "cryptoAddressUSDT": "USDT address:",
+                "cryptoAddress": "{currency} address:",
                 "accountName": "Account name",
                 "bankName": "Bank name",
                 "accountNumber": "Account number",
@@ -1809,12 +1816,12 @@
             "reference": "\n        <div name=\"ref-container\">\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Interest rate:</span>\n            <span name=\"ref-value\">{intRate}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Collateral value:</span>\n            <span name=\"ref-value\">{colValue}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Collateral return:</span>\n            <span name=\"ref-value\">{colReturn}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Default threshold:</span>\n            <span name=\"ref-value\">{defThreshold}</span>\n          </div>",
             "transaction": {
                 "transactionID": "transaction ID",
-                "noticeTpl": "Please send <strong>{collateralAmount} {collateralSymbol}</strong> as collateral to the following address within the next <strong>60 minutes</strong>.",
+                "noticeTpl": "To receive this loan, please deposit the required collateral. Simply go to your cryptocurrency wallet and send <strong>{collateralAmount} {collateralSymbol}</strong> to the following wallet address. Please complete this action within the next <strong>60 minutes</strong>.",
                 "summarizeTitle": "Here are the loan terms:",
                 "copiedAddress": "Address is copied to clipboard",
                 "scanQR": "Or scan this QR code using your mobile wallet.",
-                "summarizeContent": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Loan amount:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Interested rate:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Collaterals:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Term:</span>\n              <span name=\"ref-value\">{term}</span>\n            </div>\n          </div>\n        ",
-                "summarizeContent1": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Loan amount:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Interested rate:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Collateral:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n          </div>\n        ",
+                "summarizeContent": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Loan amount:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Interest rate:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Collaterals:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Term:</span>\n              <span name=\"ref-value\">{term}</span>\n            </div>",
+                "summarizeContent1": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Loan amount:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Interest rate:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Collateral:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n          </div>\n        ",
                 "repaymentField": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Repayment date:</span>\n              <span name=\"ref-value\">{repayment}</span>\n            </div>\n          </div>\n        ",
                 "borrowMore": "Borrow more",
                 "termField": "Term",

@@ -1473,7 +1473,7 @@
                 "constant": "Constant",
                 "reference": "Reference",
                 "buyThankMsg": "Simply make a transfer of {fiatAmount} to complete your deposit.",
-                "buyCryptoThankMsg": "Please transfer {fiatAmount} {fiatCurrency} to the seller's crypto address.",
+                "buyCryptoThankMsg": "Please transfer {fiatAmount} {fiatCurrency} to the following wallet address to complete your investment.",
                 "importantMsg": "Do include your reference number {referenceNumber} in the transfer description.",
                 "important": "Important",
                 "thankYou": "Almost there.",
@@ -3014,7 +3014,8 @@
                 "maxTerm": "Max term",
                 "btnConfirm": "Confirm",
                 "btnBack": "Back",
-                "zelle": "\n          <p className=\"bold\">The quickest way is via <strong>Zelle</strong>.</p>\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n        ",
+                "zelleTitle": "\n            <p className=\"bold\">The quickest way is via <strong>Zelle</strong>.</p>\n        ",
+                "zelle": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>\n          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n        ",
                 "bankChosenMessage1": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n          <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n        ",
                 "bankChosenMessage": "We have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.",
                 "makeAnotherButton": "Make another investment"

@@ -1038,6 +1038,7 @@
                 "trial": "THỬ NGHIỆM",
                 "trial_description": "Đã hết kì hạn. Khách hàng được giữ phần lãi",
                 "saving_title": "Các khoản đầu tư",
+                "loans_title": "Loans",
                 "anyTime_saving": "Số dư",
                 "input2FA": "Nhập mã bảo mật 2 lớp",
                 "cancel": "Huỷ",
@@ -1815,14 +1816,19 @@
             },
             "reference": "\n        <div name=\"ref-container\">\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Lãi suất:</span>\n            <span name=\"ref-value\">{intRate}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Giá trị thế chấp:</span>\n            <span name=\"ref-value\">{colValue}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Lãi từ phần tài sản thế chấp:</span>\n            <span name=\"ref-value\">{colReturn}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Ngưỡng mặc định:</span>\n            <span name=\"ref-value\">{defThreshold}</span>\n          </div>\n        </div>\n      \n      ",
             "transaction": {
+                "title": "Almost there.",
+                "message": "To finalize your loan, please send your collateral to the following wallet address.",
+                "copiedAddress": "Đã sao chép địa chỉ",
+                "scanQR": "Alternatively, scan this QR code directly from your mobile wallet to complete the transfer.",
+                "summarizeTitle": "Thông tin khoản vay:",
+                "messageDescription": "\n        <p>Please open your cryptocurrency wallet, enter the required collateral amount, paste the Constant wallet address into the recipient field, and click send.</p>\n        <p>Having difficulty finding your cryptocurrency wallet?\n           If you purchase cryptocurrency from an exchange, you will have a wallet with them, usually accessible from your Accounts page.</p>\n        ",
+                "minuteWindow": "Please complete your transfer within 60 minutes.",
+                "minuteWindowDescription": "For the sake of security, this session will time-out after 60 minutes. If you need a little longer, just re-enter the amount you would like to borrow <a href=\"/borrow\" >here</a>.",
                 "transactionID": "mã giao dịch",
                 "noticeTpl": "Xin vui lòng gửi <strong>{collateralAmount}{collateralSymbol}</strong> tới địa chỉ dưới đây trong vòng <strong>60 phút</strong> để thế chấp.",
-                "summarizeTitle": "Thông tin khoản vay:",
-                "copiedAddress": "Đã sao chép địa chỉ",
-                "scanQR": "Hoặc scan mã QR này để sử dụng ví của bạn.",
                 "summarizeContent": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Khoản vay:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Lãi suất:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Thế chấp:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Thời hạn:</span>\n              <span name=\"ref-value\">{term}</span>\n            </div>\n          </div>\n        \n        ",
-                "summarizeContent1": "\n<div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Khoản vay:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Lãi suất:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Thế chấp:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n          </div>\n        ",
-                "repaymentField": "\n<div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Ngày hoàn trả:</span>\n              <span name=\"ref-value\">{repayment}</span>\n            </div>\n          </div>\n        ",
+                "summarizeContent1": "\n          <div class=\"row\">\n            <div class=\"col-md-6 col-sm-4\">\n                <p class=\"semiBold\">Loan amount:</p>\n            </div>\n            <div class=\"col\">\n                <p>{loanAmount}</p>\n            </div>\n           </div>\n           <div class=\"row\">\n            <div class=\"col-md-6 col-sm-4\">\n                <p class=\"semiBold\">Interested rate:</p>\n            </div>\n            <div class=\"col\">\n                <p>{interestedRate}</p>\n            </div>\n           </div>\n           <div class=\"row\">\n            <div class=\"col-md-6 col-sm-4\">\n                <p class=\"semiBold\">Collaterals:</p>\n            </div>\n            <div class=\"col\">\n                <p>{collaterals}</p>\n            </div>\n           </div>\n        ",
+                "repaymentField": "\n            <div class=\"row\">\n              <div class=\"col-md-6 col-sm-4\">\n                  <p class=\"semiBold\">Repayment date:</p>\n              </div>\n              <div class=\"col\">\n                  <p>{repayment}</p>\n              </div>\n           </div>\n        ",
                 "borrowMore": "Vay thêm",
                 "termField": "Kì hạn",
                 "termUnit": "{period} tháng",
@@ -2482,7 +2488,7 @@
         "info": {
             "title": "Rút tiền về tài khoản ngân hàng.",
             "desc1": "Rút tiền về tài khoản ngân hàng mà bạn chọn.",
-            "desc4": "\n<h5>Bạn có thể rút tiền từ tài khoản Constant về tài khoản bất cứ lúc nào. Bạn sẽ nhận được VNĐ về tài khoản theo tỉ giá thị trường tại thời điểm rút trong vòng 5 phút.</h5>      "
+            "desc4": "\n<h5>Bạn có thể rút tiền từ tài khoản Constant về tài khoản bất cứ lúc nào. Bạn sẽ nhận được VNĐ về tài khoản theo tỉ giá thị trường tại thời điểm rút trong vòng 2 ngày.</h5>      "
         },
         "what": {
             "whatCaption0": "Liên kết với các ngân hàng",
@@ -3015,7 +3021,7 @@
                 "btnConfirm": "Xác nhận",
                 "btnBack": "Trở lại",
                 "zelleTitle": "\n<p className=\"bold\">Sử dụng <strong>Zelle</strong> để được hỗ trợ nhanh nhất.</p>        ",
-                "zelle": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <br /><br />\n          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>\n          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n        ",
+                "zelle": "\n          <p>Số tiền: {amount} USD</p>\n          <p>Gửi tới: <strong>finance@myconstant.com</strong></p>\n          <br /><br />\n          <p>Sử dụng Zelle để chuyển khoản nhanh và rẻ hơn.</p>\n          <p>Nếu bạn chưa có Zelle, hoàn toàn có thể dùng email hoặc số điện thoại để đăng kí trên website hoặc ứng dụng di động của ngân hàng bạn đang sử dụng.</p>\n        ",
                 "bankChosenMessage1": "\n<p>Với chuyển khoản ngân hàng, chúng tôi có tài khoản ở hầu hết các ngân hàng lớn để giao dịch được thuận tiện.</p>\n          <p>Xin vui lòng chọn ngân hàng nào thuận tiện nhất cho bạn để giao dịch.</p>        ",
                 "bankChosenMessage": "Chúng tôi có tài khoản ở rất nhiều các ngân hàng lớn để bạn chuyển khoản dễ dàng hơn. Xin vui lòng chọn ngân hàng thuận tiện nhất với bạn để thực hiện chuyển khoản.",
                 "makeAnotherButton": "Tiếp tục đầu tư"

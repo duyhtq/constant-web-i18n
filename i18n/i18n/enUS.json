@@ -1777,7 +1777,7 @@
             "validateMaxInput": "Your amount must less than or equal: ${amount}",
             "transferFeeLabel": "Transfer fee",
             "subTitle": "Free. To anyone, anywhere.",
-            "introTitle": "Send money to anyone, anywhere. For free.",
+            "introTitle": "Withdraw to your crypto wallet.",
             "transferBtn": "Send",
             "address": {
                 "email": "Recipient’s email",
@@ -2578,8 +2578,8 @@
     },
     "transferCrypto": {
         "info": {
-            "title": "Send money to anyone, anywhere. For free.",
-            "desc1": "Having a global USD account means that your money can move freely all over the world. No matter how much you send - or how often - it won’t cost you a cent.",
+            "title": "Withdraw to your crypto wallet.",
+            "desc1": "Instantly send our native stablecoin (CONST) to any ERC20, EOS or TRC20 (TOMO) wallet.",
             "desc2": "When it reaches the other party, they don’t pay anything either. So send money home, do business with the world, and get it done instantly. That’s what it means to be global."
         }
     },
@@ -3228,14 +3228,14 @@
         }
     },
     "landingProReferral": {
-        "title1": "Constant Pro will live in",
+        "title1": "Constant Pro will go live in",
         "desc1": "This is your unique referral link. Share it via email, Facebook, or Twitter - and increase your interest earnings with every friend that signs up.",
-        "title2": "Get better rates with every friend that sign up",
+        "title2": "Get better rates with every friend that signs up",
         "title3": "Your rewards so far",
         "title4": "You've earned this",
         "title5": "FRIENDS THAT SIGNED UP",
         "title6": "INVITE MORE 7 FRIENDS TO ARCHIEVE",
-        "investment": "On investment",
+        "investment": "On investments\n",
         "loans": "On loans",
         "loginRequired": "You need to login to do the action.",
         "shares": {
@@ -3258,7 +3258,7 @@
         },
         "inviteEmail": {
             "title": "Invite friends via email",
-            "placeholder": "Enter email address, seperate by commas",
+            "placeholder": "Enter email addresses, separated by commas",
             "btn": "Invite",
             "sendInvitationsSuccess": "Send Invitations Successfully!"
         },

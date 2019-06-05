@@ -24,7 +24,9 @@
             "confirm": "Confirm",
             "cancel": "Cancel",
             "confirmPassword": "Confirm Password",
-            "wrongPassword": "Invalid Password"
+            "wrongPassword": "Invalid Password",
+            "placeholder": "Please set key for placeholder text",
+            "btn": "Please set key for button text"
         },
         "local": {
             "type": {
@@ -168,7 +170,7 @@
         "faq": "FAQ",
         "affiliate": "Affiliate",
         "wallet": "Wallet",
-        "walletOrder": "Balance and Transactions",
+        "walletOrder": "Orders and Transactions",
         "hello": "Hello",
         "landingPro": "Pro",
         "countryLanguage": {
@@ -401,7 +403,7 @@
             "lZipcode": "Zip Code",
             "plZipcode": "12345",
             "lAddrUpload": "Please upload a document verifying the address above.",
-            "descAddrUpload": "<div>\n        Valid documents: utility bill, phone bill, mortgage statement, tenancy\n        agreement, bank/credit card statement, insurance letter (motor, home, or\n        life), or financial statement (pension, endowment). <br />\n        <b>Document must be dated within the last 90 days. </b>\n        <br />\n        Please ensure your proof of address matches the address\n        provided in your application.      \n        Please make sure that the photo is complete and clearly visible, in BMP, \n        JPG, JPEG, or PNG format, and is smaller than 3MB\n      </div>\n      ",
+            "descAddrUpload": "<div>\n        Valid documents: utility bill, phone bill, mortgage statement, tenancy\n        agreement, bank/credit card statement, insurance letter (motor, home, or\n        life), or financial statement (pension, endowment). <br />\n<p>\n        <b>Document must be dated within the last 90 days. </b>\n        <br />\n<p>\n        Please ensure your proof of address is an exact match with the address\n        provided in your application, including all shorthands and abbreviations. <br />\n<p>      \n        Please make sure that the photo is complete and clearly visible, in BMP, \n        JPG, JPEG, or PNG format, and is smaller than 10MB\n      </div>\n      ",
             "btnBack": "Back"
         },
         "batchTransfer": {
@@ -1025,7 +1027,7 @@
         },
         "proSaving": {
             "listApplications": {
-                "totalInterestEarned": "You've already earned",
+                "totalInterestEarned": "Interest earned",
                 "noRecord": "You have not made any investments yet.",
                 "getListFailed": "Sorry, something went wrong. Please try again.",
                 "amount": "Principal",
@@ -1755,7 +1757,7 @@
         "constantLoan": {
             "faqs": {
                 "question1": "How long will it take to find a match?",
-                "answer1": "This depends on the rates and terms you set. Market levels normally result in immediate (or near-immediate) matches, so we update the market rates on the website regularly. If you choose a lower interest rate, it might take a little longer to find you a suitable match.",
+                "answer1": "This depends on the rates and terms you set. Market levels normally result in immediate (or near-immediate) matches, so we update the market rates on the website regularly. If you choose a lower interest rate, it might take a little longer to find you a suitable match. After you've found a match, the loan will be available in your account within 24 hours (slightly longer for larger amounts).\n",
                 "question2": "Do you check my credit score?",
                 "answer2": "As Constant only offers secured loans backed by collateral, there is no need for credit scoring. All you need is adequate collateral to secure your loan. To see how much collateral you’ll need to secure your loan, simply enter the amount you’d like to borrow. The calculator will work out the amount for you.",
                 "question3": "How do you protect my collateral?",
@@ -3059,7 +3061,7 @@
         },
         "faqs": {
             "question1": "How long will it take to find a match?",
-            "answer1": "This depends on the rates and terms you set. Market levels normally result in immediate (or near-immediate) matches, so we update the market rates on the website regularly. If you choose a larger interest rate, it might take a little longer to find you a suitable match.",
+            "answer1": "This depends on the rates and terms you set. Market levels normally result in immediate (or near-immediate) matches, so we update the market rates on the website regularly. If you choose a lower interest rate, it might take a little longer to find you a suitable match. After you've found a match, the loan will be available in your account within 24 hours (slightly longer for larger amounts).\n",
             "question2": "Are there any limits?",
             "answer2": "None at all. You can invest as much or as little as you like. ",
             "question3": "How do I invest?",
@@ -3164,13 +3166,21 @@
         }
     },
     "landingProReferral": {
-        "title1": "More peers, more interest.",
+        "title1": "Constant Pro will live in",
         "desc1": "This is your unique referral link. Share it via email, Facebook, or Twitter - and increase your interest earnings with every friend that signs up.",
-        "title2": "12 peers have joined. Nice!",
+        "title2": "Get better rates with every friend that sign up",
+        "title3": "Your rewards so far",
+        "title4": "You've earned this",
+        "title5": "FRIENDS THAT SIGNED UP",
+        "title6": "INVITE MORE 7 FRIENDS TO ARCHIEVE",
+        "investment": "On investment",
+        "loans": "On loans",
         "shares": {
+            "title": "Share your unique referral link",
             "fb": "Share on Facebook",
             "tw": "Share on Twitter",
-            "gg": "Share on Google"
+            "gg": "Share on Google",
+            "shareFbSuccess": "Share referral link success."
         },
         "levels": {
             "l0": "<p>Free transaction fees for the first 30 days</p>",
@@ -3180,7 +3190,14 @@
         },
         "referral": {
             "placeholder": "https://myconstant.com/?ref=1AcXa2",
-            "btn": "Copy"
+            "btn": "Copy",
+            "copied": "Referral link copied to clipboard."
+        },
+        "inviteEmail": {
+            "title": "Invite friends via email",
+            "placeholder": "Enter email address, seperate by commas",
+            "btn": "Invite",
+            "sendInvitationsSuccess": "Send Invitations Successfully!"
         },
         "faqs": {
             "question1": "What are the supported cryptocurrencies?",

@@ -24,7 +24,9 @@
             "confirm": "Xác nhận",
             "cancel": "Huỷ",
             "confirmPassword": "Xác nhận mật khẩu",
-            "wrongPassword": "Sai mật khẩu"
+            "wrongPassword": "Sai mật khẩu",
+            "placeholder": "Please set key for placeholder text",
+            "btn": "Please set key for button text"
         },
         "local": {
             "type": {
@@ -3164,13 +3166,21 @@
         }
     },
     "landingProReferral": {
-        "title1": "Thêm bạn, thêm vui.",
+        "title1": "Constant Pro will live in",
         "desc1": "Hãy chia sẻ link giới thiệu này của bạn qua email, Facebook hoặc Twitter để được tăng lãi suất khi có người bạn đăng kí mới.",
-        "title2": "Tuyệt vời! 12 người bạn đã tham gia.",
+        "title2": "Get better rates with every friend that sign up",
+        "title3": "Your rewards so far",
+        "title4": "You've earned this",
+        "title5": "FRIENDS THAT SIGNED UP",
+        "title6": "INVITE MORE 7 FRIENDS TO ARCHIEVE",
+        "investment": "On investment",
+        "loans": "On loans",
         "shares": {
+            "title": "Share your unique referral link",
             "fb": "Chia sẻ trên Facebook",
             "tw": "Chia sẻ trên Twitter",
-            "gg": "Chia sẻ qua Google"
+            "gg": "Chia sẻ qua Google",
+            "shareFbSuccess": "Share referral link success."
         },
         "levels": {
             "l0": "<p>Miễn phí giao dịch trong 30 ngày đầu tiên</p>",
@@ -3180,7 +3190,14 @@
         },
         "referral": {
             "placeholder": "https://myconstant.com/?ref=1AcXa2",
-            "btn": "Sao chép"
+            "btn": "Sao chép",
+            "copied": "Referral link copied to clipboard."
+        },
+        "inviteEmail": {
+            "title": "Invite friends via email",
+            "placeholder": "Enter email address, seperate by commas",
+            "btn": "Invite",
+            "sendInvitationsSuccess": "Send Invitations Successfully!"
         },
         "faqs": {
             "question1": "Constant Pro hỗ trợ những coin nào?",

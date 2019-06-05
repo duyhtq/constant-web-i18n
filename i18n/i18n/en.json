@@ -24,7 +24,9 @@
             "confirm": "Confirm",
             "cancel": "Cancel",
             "confirmPassword": "Confirm Password",
-            "wrongPassword": "Invalid Password"
+            "wrongPassword": "Invalid Password",
+            "placeholder": "Please set key for placeholder text",
+            "btn": "Please set key for button text"
         },
         "local": {
             "type": {
@@ -3164,13 +3166,21 @@
         }
     },
     "landingProReferral": {
-        "title1": "More peers, more interest.",
+        "title1": "Constant Pro will live in",
         "desc1": "This is your unique referral link. Share it via email, Facebook, or Twitter - and increase your interest earnings with every friend that signs up.",
-        "title2": "12 peers have joined. Nice!",
+        "title2": "Get better rates with every friend that sign up",
+        "title3": "Your rewards so far",
+        "title4": "You've earned this",
+        "title5": "FRIENDS THAT SIGNED UP",
+        "title6": "INVITE MORE 7 FRIENDS TO ARCHIEVE",
+        "investment": "On investment",
+        "loans": "On loans",
         "shares": {
+            "title": "Share your unique referral link",
             "fb": "Share on Facebook",
             "tw": "Share on Twitter",
-            "gg": "Share on Google"
+            "gg": "Share on Google",
+            "shareFbSuccess": "Share referral link success."
         },
         "levels": {
             "l0": "<p>Free transaction fees for the first 30 days</p>",
@@ -3180,7 +3190,14 @@
         },
         "referral": {
             "placeholder": "https://myconstant.com/?ref=1AcXa2",
-            "btn": "Copy"
+            "btn": "Copy",
+            "copied": "Referral link copied to clipboard."
+        },
+        "inviteEmail": {
+            "title": "Invite friends via email",
+            "placeholder": "Enter email address, seperate by commas",
+            "btn": "Invite",
+            "sendInvitationsSuccess": "Send Invitations Successfully!"
         },
         "faqs": {
             "question1": "What are the supported cryptocurrencies?",

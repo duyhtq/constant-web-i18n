@@ -343,8 +343,12 @@
             "investingOrders": "Investing Orders",
             "loanOrders": "Loan Orders",
             "myOrders": "Deposits and withdrawals",
+            "deposits": "Deposits",
+            "withdraws": "Withdraws",
             "localHistory": "Transfers and interest earnings",
+            "transfers": "Transfers",
             "wallets": "My Wallets",
+            "constantWallet": "Constant Wallet",
             "cryptoWallet": "My Crypto Wallets",
             "changePassword": "Change my password",
             "preferecens": "Preferences",
@@ -358,7 +362,11 @@
             "myAgent": "My Agent",
             "yourAccreditation": "Accreditation (USA only)",
             "myLoans": "My Loans",
+            "myInvestments": "My Investments",
             "cryptoLoanHistory": "My Crypto Loans",
+            "viewLoanDetail": "View loan detail here",
+            "viewConstantWallet": "View constant wallet here",
+            "viewInvestmentDetail": "View investment detail here",
             "batchTransfer": "Batch Transfer",
             "referralInfo": "Referral Information"
         },
@@ -1082,7 +1090,9 @@
                     },
                     "shareFbSuccess": "Share referral link success."
                 },
-                "withdraw": "Withdraw",
+                "withdraw": "Withdraw fiat",
+                "withdrawFiat": "Withdraw fiat",
+                "withdrawCrypto": "Withdraw crypto",
                 "transfer": "Transfer",
                 "batchtransfer": "Transfer to multiple people",
                 "deposit": "Make a deposit",
@@ -1714,6 +1724,7 @@
         "transfer": {
             "title": "Transfer",
             "caption": "SEND CONSTANT ANYWHERE",
+            "transferType": "Transfer Type",
             "viaEmailCaption": "Via Email",
             "viaAddressCaption": "To an ETH/EOS address",
             "viaTomoCaption": "To a TOMO address",
@@ -1743,6 +1754,50 @@
             "subintroTitle3": "Always reliable.",
             "subintroDesc3": "Unlike other digital currencies, Constant keeps a stable value. This means you can get the equivalent of 1 USD for 1 Constant. In any location, at any time.",
             "backToNewOrder": "Place a new order",
+            "goHistory": "Go to My Orders",
+            "components": {
+                "orderInfo": {
+                    "title": "Your transfer confirmation"
+                }
+            },
+            "howItWorks": "How it works",
+            "amount": "Amount",
+            "to": "To",
+            "input2FA": "Input 2FA"
+        },
+        "transferCrypto": {
+            "title": "Transfer",
+            "caption": "SEND CONSTANT ANYWHERE",
+            "transferType": "Transfer Type",
+            "viaEmailCaption": "Via Email",
+            "viaAddressCaption": "To an ETH/EOS address",
+            "viaTomoCaption": "To a TOMO address",
+            "batchTransferCaption": "To multiple people",
+            "yourBalance": "Your balance",
+            "validateMaxInput": "Your amount must less than or equal: ${amount}",
+            "transferFeeLabel": "Transfer fee",
+            "subTitle": "Free. To anyone, anywhere.",
+            "introTitle": "Send money to anyone, anywhere. For free.",
+            "transferBtn": "Send",
+            "address": {
+                "email": "Recipient’s email",
+                "wallet": "Ethereum/EOS wallet address",
+                "tomo": "TOMO wallet address"
+            },
+            "phToAddress": "Recipient’s email or Ethereum wallet address",
+            "confirmMsg": "Are you sure you want to transfer {amount} CONSTANT to {address}?",
+            "batchConfirmMsg": "Are you sure you want to transfer to multiple people from the uploaded file?",
+            "transferFailed": "Failed while transfering, please try again",
+            "transferSuccessful": "Your transfer was completed successfully",
+            "timeLimit": "Your money will arrive within ",
+            "timeLimitMunite": "2 minutes",
+            "subintroTitle1": "No banks, no borders.",
+            "subintroDesc1": "Constant is a digital currency, so you can send it to anyone, anywhere in the world - within minutes.",
+            "subintroTitle2": "Zero fees. No transaction limits.",
+            "subintroDesc2": "You can send any amount of Constant to anyone at anytime, for free.",
+            "subintroTitle3": "Always reliable.",
+            "subintroDesc3": "Unlike other digital currencies, Constant keeps a stable value. This means you can get the equivalent of 1 USD for 1 Constant. In any location, at any time.",
+            "backToNewOrder": "Place new order",
             "goHistory": "Go to My Orders",
             "components": {
                 "orderInfo": {
@@ -2521,6 +2576,13 @@
             "desc2": "When it reaches the other party, they don’t pay anything either. So send money home, do business with the world, and get it done instantly. That’s what it means to be global."
         }
     },
+    "transferCrypto": {
+        "info": {
+            "title": "Send money to anyone, anywhere. For free.",
+            "desc1": "Having a global USD account means that your money can move freely all over the world. No matter how much you send - or how often - it won’t cost you a cent.",
+            "desc2": "When it reaches the other party, they don’t pay anything either. So send money home, do business with the world, and get it done instantly. That’s what it means to be global."
+        }
+    },
     "deposit": {
         "title": "Your global USD bank account.",
         "availableInVn": "Available now in Vietnam.",
@@ -3175,6 +3237,7 @@
         "title6": "INVITE MORE 7 FRIENDS TO ARCHIEVE",
         "investment": "On investment",
         "loans": "On loans",
+        "loginRequired": "You need to login to do the action.",
         "shares": {
             "title": "Share your unique referral link",
             "fb": "Share on Facebook",

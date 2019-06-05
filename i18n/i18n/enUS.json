@@ -343,8 +343,12 @@
             "investingOrders": "Investing Orders",
             "loanOrders": "Loan Orders",
             "myOrders": "Deposits and withdrawals",
+            "deposits": "Deposits",
+            "withdraws": "Withdraws",
             "localHistory": "Transfers and interest earnings",
+            "transfers": "Transfers",
             "wallets": "Constant wallet",
+            "constantWallet": "Constant Wallet",
             "cryptoWallet": "My Crypto Wallets",
             "changePassword": "Change password",
             "preferecens": "Preferences",
@@ -358,13 +362,17 @@
             "myAgent": "My Agent",
             "yourAccreditation": "Your Accreditation",
             "myLoans": "My Loans",
+            "myInvestments": "My Investments",
             "cryptoLoanHistory": "My Crypto Loans",
+            "viewLoanDetail": "View loan detail here",
+            "viewConstantWallet": "View constant wallet here",
+            "viewInvestmentDetail": "View investment detail here",
             "batchTransfer": "Batch transfers",
             "referralInfo": "Referral Information"
         },
         "wallet": {
-            "title": "This is your Constant wallet. Receive Constant from any ERC20 wallet here.",
-            "walletAddress": "Your ether wallet: "
+            "title": "This is your Constant ERC20/TRC20 (TOMO) wallet. Receive Constant from any ERC20/TRC20 (TOMO) wallet here.",
+            "walletAddress": "Your wallet:"
         },
         "kyc": {
             "needEmail": "You need to verify your email first.",
@@ -1082,13 +1090,15 @@
                     },
                     "shareFbSuccess": "Success! Thanks for telling your friends about Constant."
                 },
-                "withdraw": "Withdraw",
+                "withdraw": "Withdraw fiat",
+                "withdrawFiat": "Withdraw fiat",
+                "withdrawCrypto": "Withdraw crypto",
                 "transfer": "Transfer",
                 "batchtransfer": "Transfer to multiple people",
                 "deposit": "Make a deposit",
                 "withdrawDesc": "Withdraw funds to your bank account or wallet address.",
                 "depositDesc": "Store your money in USD. FDIC insured up to $130M.",
-                "transferDesc": "Send money across the world instantly - to as many people as you like.",
+                "transferDesc": "Send money across the world - to as many people as you like.",
                 "row": "Row",
                 "errorMessage": "Error Message",
                 "saving": "Invest now",
@@ -1714,6 +1724,7 @@
         "transfer": {
             "title": "Transfer",
             "caption": "How much do you want to send?",
+            "transferType": "Transfer Type",
             "viaEmailCaption": "Via Email",
             "viaAddressCaption": "To an ETH/EOS address",
             "viaTomoCaption": "To a TOMO address",
@@ -1754,6 +1765,50 @@
             "to": "To",
             "input2FA": "Input 2FA"
         },
+        "transferCrypto": {
+            "title": "Transfer",
+            "caption": "SEND CONSTANT ANYWHERE",
+            "transferType": "Transfer Type",
+            "viaEmailCaption": "Via Email",
+            "viaAddressCaption": "To an ETH/EOS address",
+            "viaTomoCaption": "To a TOMO address",
+            "batchTransferCaption": "To multiple people",
+            "yourBalance": "Your balance",
+            "validateMaxInput": "Your amount must less than or equal: ${amount}",
+            "transferFeeLabel": "Transfer fee",
+            "subTitle": "Free. To anyone, anywhere.",
+            "introTitle": "Send money to anyone, anywhere. For free.",
+            "transferBtn": "Send",
+            "address": {
+                "email": "Recipient’s email",
+                "wallet": "Ethereum/EOS wallet address",
+                "tomo": "TOMO wallet address"
+            },
+            "phToAddress": "Recipient’s email or Ethereum wallet address",
+            "confirmMsg": "Are you sure you want to transfer {amount} CONSTANT to {address}?",
+            "batchConfirmMsg": "Are you sure you want to transfer to multiple people from the uploaded file?",
+            "transferFailed": "Failed while transfering, please try again",
+            "transferSuccessful": "Your transfer was completed successfully",
+            "timeLimit": "Your money will arrive within ",
+            "timeLimitMunite": "2 minutes",
+            "subintroTitle1": "No banks, no borders.",
+            "subintroDesc1": "Constant is a digital currency, so you can send it to anyone, anywhere in the world - within minutes.",
+            "subintroTitle2": "Zero fees. No transaction limits.",
+            "subintroDesc2": "You can send any amount of Constant to anyone at anytime, for free.",
+            "subintroTitle3": "Always reliable.",
+            "subintroDesc3": "Unlike other digital currencies, Constant keeps a stable value. This means you can get the equivalent of 1 USD for 1 Constant. In any location, at any time.",
+            "backToNewOrder": "Place new order",
+            "goHistory": "Go to My Orders",
+            "components": {
+                "orderInfo": {
+                    "title": "Your transfer confirmation"
+                }
+            },
+            "howItWorks": "How it works",
+            "amount": "Amount",
+            "to": "To",
+            "input2FA": "Input 2FA"
+        },
         "constantLoan": {
             "faqs": {
                 "question1": "How long will it take to find a match?",
@@ -1761,11 +1816,11 @@
                 "question2": "Do you check my credit score?",
                 "answer2": "As Constant only offers secured loans backed by collateral, there is no need for credit scoring. All you need is adequate collateral to secure your loan. To see how much collateral you’ll need to secure your loan, simply enter the amount you’d like to borrow. The calculator will work out the amount for you.",
                 "question3": "How do you protect my collateral?",
-                "answer3": "Your collateral is held safely in an Ethereum powered smart contract escrow. This means no one can touch it – not even us. When you repay, your collateral is immediately transferred back to you.",
+                "answer3": "Your collateral is held safely in an Ethereum powered smart contract escrow. This means no one can touch it – not even us. When you repay, your collateral is immediately transferred back to you. You also have the option to pay a 1% fee for BitGo custodian protection up to 100M USD.\n",
                 "question4": "What happens if I don’t repay the loan?",
-                "answer4": "If you don’t repay the loan, we sell your collateral to pay back investors, and you get to keep the loan. That’s all there is to it.",
+                "answer4": "If you don’t repay the loan, we sell your collateral at 110% of the loan value + interest due, to pay back investors. The difference is refunded to you, and you get to keep the loan. That’s all there is to it.\n",
                 "question5": "What happens if my crypto collateral falls in value?",
-                "answer5": "If your collateral falls below a certain threshold, we sell it to pay back investors, and refund you the difference. The USD loan is yours to keep."
+                "answer5": "We will notify you 3 times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, it’ll be sold to repay the investor, and the difference will be refunded to you. Borrowers will receive notifications at 125%, 120% and 115%, so they can choose to repay early to avoid liquidation, or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%."
             },
             "title": "Borrow the way you want",
             "subTitle": "\n        <h2 class=\"\">Set your own rates.</h2>\n        <h2 class=\"\">Protected by smart contracts.</h2>\n        <h2 class=\"\">Get cash for crypto without needing to sell.</h2>\n<h6>Get the funds you need at rates you are willing to pay. All your collateral is kept safe in a smart contract escrow, and will be automatically returned to you when the loan is repaid.</h6>",
@@ -2521,6 +2576,13 @@
             "desc2": "Enjoy transparent, low cost pricing. Withdrawals to local bank accounts are friendly - at a nominal rate of 0.25% (never more than $35)."
         }
     },
+    "transferCrypto": {
+        "info": {
+            "title": "Send money to anyone, anywhere. For free.",
+            "desc1": "Having a global USD account means that your money can move freely all over the world. No matter how much you send - or how often - it won’t cost you a cent.",
+            "desc2": "When it reaches the other party, they don’t pay anything either. So send money home, do business with the world, and get it done instantly. That’s what it means to be global."
+        }
+    },
     "deposit": {
         "title": "Your global USD bank account.",
         "availableInVn": "Available now in Vietnam.",
@@ -3175,6 +3237,7 @@
         "title6": "INVITE MORE 7 FRIENDS TO ARCHIEVE",
         "investment": "On investment",
         "loans": "On loans",
+        "loginRequired": "You need to login to do the action.",
         "shares": {
             "title": "Share your unique referral link",
             "fb": "Share on Facebook",

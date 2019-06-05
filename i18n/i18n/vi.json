@@ -343,8 +343,12 @@
             "investingOrders": "Lệnh đầu tư",
             "loanOrders": "Lệnh vay",
             "myOrders": "Gửi và rút tiền",
+            "deposits": "Deposits",
+            "withdraws": "Withdraws",
             "localHistory": "Chuyển khoản và nhận lãi",
+            "transfers": "Transfers",
             "wallets": "Ví của tôi",
+            "constantWallet": "Constant Wallet",
             "cryptoWallet": "Ví Constant mã hoá",
             "changePassword": "Đổi mật khẩu",
             "preferecens": "Tuỳ chỉnh",
@@ -358,7 +362,11 @@
             "myAgent": "Đại lí của tôi",
             "yourAccreditation": "Độ tín nhiệm của bạn",
             "myLoans": "Khoản vay của tôi",
+            "myInvestments": "My Investments",
             "cryptoLoanHistory": "Khoản vay thế chấp của tôi",
+            "viewLoanDetail": "View loan detail here",
+            "viewConstantWallet": "View constant wallet here",
+            "viewInvestmentDetail": "View investment detail here",
             "batchTransfer": "Chuyển khoản hàng loạt",
             "referralInfo": "Chương trình giới thiệu"
         },
@@ -1082,7 +1090,9 @@
                     },
                     "shareFbSuccess": "Đã chia sẻ link giới thiệu thành công."
                 },
-                "withdraw": "Rút tiền",
+                "withdraw": "Withdraw fiat",
+                "withdrawFiat": "Withdraw fiat",
+                "withdrawCrypto": "Withdraw crypto",
                 "transfer": "Chuyển khoản",
                 "batchtransfer": "Chuyển khoản tới nhiều người cùng lúc",
                 "deposit": "Nộp tiền",
@@ -1714,6 +1724,7 @@
         "transfer": {
             "title": "Chuyển khoản",
             "caption": "Bạn muốn chuyển khoản bao nhiêu?",
+            "transferType": "Transfer Type",
             "viaEmailCaption": "Email",
             "viaAddressCaption": "Địa chỉ ví ETH/EOS",
             "viaTomoCaption": "Gửi tới ví TOMO",
@@ -1753,6 +1764,50 @@
             "amount": "Số tiền",
             "to": "Tới",
             "input2FA": "Nhập mã bảo mật 2 lớp"
+        },
+        "transferCrypto": {
+            "title": "Transfer",
+            "caption": "SEND CONSTANT ANYWHERE",
+            "transferType": "Transfer Type",
+            "viaEmailCaption": "Via Email",
+            "viaAddressCaption": "To an ETH/EOS address",
+            "viaTomoCaption": "To a TOMO address",
+            "batchTransferCaption": "To multiple people",
+            "yourBalance": "Your balance",
+            "validateMaxInput": "Your amount must less than or equal: ${amount}",
+            "transferFeeLabel": "Transfer fee",
+            "subTitle": "Free. To anyone, anywhere.",
+            "introTitle": "Send money to anyone, anywhere. For free.",
+            "transferBtn": "Send",
+            "address": {
+                "email": "Recipient’s email",
+                "wallet": "Ethereum/EOS wallet address",
+                "tomo": "TOMO wallet address"
+            },
+            "phToAddress": "Recipient’s email or Ethereum wallet address",
+            "confirmMsg": "Are you sure you want to transfer {amount} CONSTANT to {address}?",
+            "batchConfirmMsg": "Are you sure you want to transfer to multiple people from the uploaded file?",
+            "transferFailed": "Failed while transfering, please try again",
+            "transferSuccessful": "Your transfer was completed successfully",
+            "timeLimit": "Your money will arrive within ",
+            "timeLimitMunite": "2 minutes",
+            "subintroTitle1": "No banks, no borders.",
+            "subintroDesc1": "Constant is a digital currency, so you can send it to anyone, anywhere in the world - within minutes.",
+            "subintroTitle2": "Zero fees. No transaction limits.",
+            "subintroDesc2": "You can send any amount of Constant to anyone at anytime, for free.",
+            "subintroTitle3": "Always reliable.",
+            "subintroDesc3": "Unlike other digital currencies, Constant keeps a stable value. This means you can get the equivalent of 1 USD for 1 Constant. In any location, at any time.",
+            "backToNewOrder": "Place new order",
+            "goHistory": "Go to My Orders",
+            "components": {
+                "orderInfo": {
+                    "title": "Your transfer confirmation"
+                }
+            },
+            "howItWorks": "How it works",
+            "amount": "Amount",
+            "to": "To",
+            "input2FA": "Input 2FA"
         },
         "constantLoan": {
             "faqs": {
@@ -2521,6 +2576,13 @@
             "desc2": "Chỉ mất 0.25% phí (tối đa 35 USD) để rút tiền về tài khoản ngân hàng."
         }
     },
+    "transferCrypto": {
+        "info": {
+            "title": "Send money to anyone, anywhere. For free.",
+            "desc1": "Having a global USD account means that your money can move freely all over the world. No matter how much you send - or how often - it won’t cost you a cent.",
+            "desc2": "When it reaches the other party, they don’t pay anything either. So send money home, do business with the world, and get it done instantly. That’s what it means to be global."
+        }
+    },
     "deposit": {
         "title": "Tài khoản USD quốc tế.",
         "availableInVn": "Đã có mặt tại Việt Nam.",
@@ -3175,6 +3237,7 @@
         "title6": "INVITE MORE 7 FRIENDS TO ARCHIEVE",
         "investment": "On investment",
         "loans": "On loans",
+        "loginRequired": "You need to login to do the action.",
         "shares": {
             "title": "Share your unique referral link",
             "fb": "Chia sẻ trên Facebook",

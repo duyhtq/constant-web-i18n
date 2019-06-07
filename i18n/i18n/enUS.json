@@ -344,7 +344,7 @@
             "loanOrders": "Loan Orders",
             "myOrders": "Deposits and withdrawals",
             "deposits": "Deposits",
-            "withdraws": "Withdraws",
+            "withdraws": "Withdrawals",
             "localHistory": "Transfers and interest earnings",
             "transfers": "Transfers",
             "wallets": "Constant wallet",
@@ -364,14 +364,14 @@
             "myLoans": "My Loans",
             "myInvestments": "My Investments",
             "cryptoLoanHistory": "My Crypto Loans",
-            "viewLoanDetail": "View loan detail here",
+            "viewLoanDetail": "View loan details here",
             "viewConstantWallet": "View constant wallet here",
-            "viewInvestmentDetail": "View investment detail here",
+            "viewInvestmentDetail": "View investment details here",
             "batchTransfer": "Batch transfers",
             "referralInfo": "Referral Information"
         },
         "wallet": {
-            "title": "This is your Constant ERC20/TRC20 (TOMO) wallet. Receive Constant from any ERC20/TRC20 (TOMO) wallet here.",
+            "title": "This is your Constant ETH/TOMO wallet. Receive Constant from ETH/TOMO wallet here.",
             "walletAddress": "Your wallet:"
         },
         "kyc": {

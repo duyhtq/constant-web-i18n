@@ -1842,8 +1842,8 @@
                 "walletAddressLabel": "Your {symbol} wallet address",
                 "walletAlias": "0x687C906b2....8bd9369242e",
                 "moreInfo": "Your funds will reach you as soon as your collateral is confirmed on its blockchain.  ETA: 2 minutes for ETH and 10 minutes for BTC.",
-                "monthLoan": "{term}-month loans",
-                "monthsLoan": "{term}-months loans"
+                "monthLoan": "{term}-month loan",
+                "monthsLoan": "{term}-month loan"
             },
             "interestTable": {
                 "title": "Why you should borrow with Constant.",
@@ -1903,7 +1903,7 @@
                     "done": "done",
                     "cancelled": "cancelled",
                     "withdrawed": "withdrawed",
-                    "expired": "Expired",
+                    "expired": "Timed out",
                     "fullPayment": "full payment"
                 },
                 "confirmPay": {
@@ -1952,7 +1952,7 @@
                     "tnxFailed": "Transaction failed",
                     "cancelled": "Cancelled",
                     "rejected": "Rejected",
-                    "expired": "Expired",
+                    "expired": "Timed out",
                     "fullPayment": "full payment"
                 }
             },
@@ -2579,7 +2579,7 @@
     "transferCrypto": {
         "info": {
             "title": "Withdraw to your crypto wallet.",
-            "desc1": "Instantly send our native stablecoin (CONST) to any ERC20, EOS or TRC20 (TOMO) wallet.",
+            "desc1": "Instantly send our native stablecoin (CONST) to any ETH, EOS or TOMO wallet.",
             "desc2": "When it reaches the other party, they don’t pay anything either. So send money home, do business with the world, and get it done instantly. That’s what it means to be global."
         }
     },

@@ -5,6 +5,7 @@ git:
   submodules:
     false
 before_install:
+- echo "BEFORE INSTALL"
 - openssl aes-256-cbc -K $encrypted_309cd113c23e_key -iv $encrypted_309cd113c23e_iv
   -in lucky.enc -out /tmp/lucky -d
 - chmod 600 /tmp/lucky

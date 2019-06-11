@@ -1,4 +1,0 @@
-[submodule "frontend"]
-	path = frontend
-	url = https://github.com/duyhtq/constant-web.git
-	branch = cronjob/localization

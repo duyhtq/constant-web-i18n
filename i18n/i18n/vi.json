@@ -89,6 +89,8 @@
         "titleConstant": "Mua Constant",
         "career": "Tuyển dụng",
         "about": "Giới thiệu",
+        "theTeam": "The Team",
+        "prices": "Pricing and Service times",
         "openSource": "Mã nguồn mở",
         "foundation": "Thông tin",
         "buyConstant": "Mua Constant",
@@ -257,7 +259,8 @@
             "borrow": "Vay",
             "borrowDesc": "Tự chọn kì hạn",
             "expert": "Chuyên gia",
-            "expertDecs": "Hình thức cho vay ngang hàng ưu việt"
+            "expertDecs": "Hình thức cho vay ngang hàng ưu việt",
+            "transfer": "Transfer"
         }
     },
     "error": {
@@ -368,7 +371,8 @@
             "viewConstantWallet": "View constant wallet here",
             "viewInvestmentDetail": "View investment detail here",
             "batchTransfer": "Chuyển khoản hàng loạt",
-            "referralInfo": "Chương trình giới thiệu"
+            "referralInfo": "Chương trình giới thiệu",
+            "transferOrders": "Transfer Orders"
         },
         "wallet": {
             "title": "Đây là địa chỉ ví của bạn để nhận Constant gửi tới",
@@ -848,6 +852,13 @@
                 "detail": "Phát hiện rủi ro"
             }
         },
+        "transferOrders": {
+            "approve": "Approve",
+            "approveMess": "Are you sure you want to approve this order?",
+            "agent": {
+                "approveSuccessfully": "Your order have been approved successfully"
+            }
+        },
         "accountLevel": {
             "head_text": "Chỉ mất vài phút để thực hiện xác minh danh tính. Thông tin cá nhân của bạn được bảo mật tuyệt đối.",
             "step1": "Cấp độ 1: Xác minh email",
@@ -1049,6 +1060,7 @@
                 "trial_description": "Đã hết kì hạn. Khách hàng được giữ phần lãi",
                 "saving_title": "Các khoản đầu tư",
                 "loans_title": "Các khoản vay",
+                "repaySuccess": "Thanks. Please bear with us while we deduct from your balance.Your collateral will be returned to the wallet address it was sent from.",
                 "anyTime_saving": "Số dư",
                 "input2FA": "Nhập mã bảo mật 2 lớp",
                 "cancel": "Huỷ",
@@ -1725,10 +1737,10 @@
             "title": "Chuyển khoản",
             "caption": "Bạn muốn chuyển khoản bao nhiêu?",
             "transferType": "Transfer Type",
-            "viaEmailCaption": "Email",
-            "viaAddressCaption": "Địa chỉ ví ETH/EOS",
-            "viaTomoCaption": "Gửi tới ví TOMO",
-            "batchTransferCaption": "Gửi tiền tới nhiều người cùng lúc",
+            "transferTypeCaption": {
+                "email": "Via Email",
+                "batch": "To multiple people"
+            },
             "yourBalance": "Số dư",
             "validateMaxInput": "Xin vui lòng nhập số nhỏ hơn hoặc bằng: ${amount}",
             "transferFeeLabel": "Phí chuyển khoản",
@@ -1736,9 +1748,7 @@
             "introTitle": "Chuyển khoản tới mọi người ở khắp nơi trên thế giới. Hoàn toàn miễn phí.",
             "transferBtn": "Gửi",
             "address": {
-                "email": "Email người nhận",
-                "wallet": "Địa chỉ ví Ethereum hoặc EOS",
-                "tomo": "Địa chỉ ví TOMO"
+                "email": "Email người nhận"
             },
             "phToAddress": "Email hoặc địa chỉ ví Ethereum của người nhận",
             "confirmMsg": "Bạn muốn chuyển {amount} CONSTANT tới {address}?",
@@ -1769,10 +1779,14 @@
             "title": "Transfer",
             "caption": "SEND CONSTANT ANYWHERE",
             "transferType": "Transfer Type",
-            "viaEmailCaption": "Via Email",
-            "viaAddressCaption": "To an ETH/EOS address",
-            "viaTomoCaption": "To a TOMO address",
-            "batchTransferCaption": "To multiple people",
+            "transferTypeCaption": {
+                "eth": "To an ETH address",
+                "eos": "To an EOS address",
+                "tomo": "To a TOMO address",
+                "usdt": "To a USDT address",
+                "susd": "To a SUSD address",
+                "batch": "To multiple people"
+            },
             "yourBalance": "Your balance",
             "validateMaxInput": "Your amount must less than or equal: ${amount}",
             "transferFeeLabel": "Transfer fee",
@@ -1781,8 +1795,11 @@
             "transferBtn": "Send",
             "address": {
                 "email": "Recipient’s email",
-                "wallet": "Ethereum/EOS wallet address",
-                "tomo": "TOMO wallet address"
+                "eth": "Ethereum wallet address",
+                "eos": "EOS wallet address",
+                "tomo": "TOMO wallet address",
+                "usdt": "USDT wallet address",
+                "susd": "SUSD wallet address"
             },
             "phToAddress": "Recipient’s email or Ethereum wallet address",
             "confirmMsg": "Are you sure you want to transfer {amount} CONSTANT to {address}?",
@@ -1820,7 +1837,11 @@
                 "question4": "Điều gì sẽ xảy ra nếu tôi không hoàn trả khoản vay của mình?",
                 "answer4": "Nếu bạn không hoàn trả khoản vay, chúng tôi sẽ bán phần tài sản thế chấp của bạn để trả cho nhà đầu tư.",
                 "question5": "Điều gì xảy ra nếu phần tài sản thế chấp của tôi mất giá?",
-                "answer5": "Nếu giá trị phần tài sản thế chấp của bạn xuống thấp hơn một mức nhất đinh, chúng tôi sẽ thanh lí phần tài sản này để thanh toán cho nhà đầu tư. Bạn được giữ khoản vay mà không cần hoàn trả."
+                "answer5": "Nếu giá trị phần tài sản thế chấp của bạn xuống thấp hơn một mức nhất đinh, chúng tôi sẽ thanh lí phần tài sản này để thanh toán cho nhà đầu tư. Bạn được giữ khoản vay mà không cần hoàn trả.",
+                "question6": "Can I repay early?",
+                "answer6": "\n          <p>If you'd like to pay back your loan before 75% of the term is up, that's absolutely fine. You simply have to pay interest for the days you are in possession of the loan, and just 50% of the original interest rate for the remaining days of the term.</p>\n          <p>If you'd like to pay back your loan after 75% of the term is up and claim back your collateral, that's also fine, but the interest due on that loan is the full percentage for the entire term.</p>\n        ",
+                "question7": "Can i recall excess if my collateral value increases?",
+                "answer7": "Yes. If the value of your collateral rises during your loan term, you can withdraw the difference. You’ll be able to do this on the site in the next release scheduled for the 25th of June, but in the meantime, our support team is available via telegram, email, and fb chat to assist you manually."
             },
             "title": "Vay thế chấp bằng tiền mã hoá",
             "subTitle": "\n        <h2>Lãi suất chỉ từ 4.50%/năm.</h2>\n        <h2>Nhận tiền ngay.</h2>\n        <h2>Mà không cần phải bán đi số tiền mã hoá vốn có.</h2>\n      ",
@@ -3235,6 +3256,7 @@
         "title4": "You've earned this",
         "title5": "FRIENDS THAT SIGNED UP",
         "title6": "INVITE MORE 7 FRIENDS TO ARCHIEVE",
+        "title7": "INVITE MORE {num} FRIENDS TO ARCHIEVE",
         "investment": "On investment",
         "loans": "On loans",
         "loginRequired": "You need to login to do the action.",
@@ -3273,6 +3295,32 @@
             "answer4": "\n        <p>Để bảo vệ nhà đầu tư, Constant Pro thực hiện các biện pháp sau:</p>\n        <p>Người vay cần thế chấp số tiền mã hoá trị giá 150% khoản vay. Phần tài sản thế chấp này sẽ được thanh lí nếu giá trị giảm xuống dưới mức nhất định.</p>\n        <p>Các khoản đầu tư được vận hành dựa trên hợp đồng thông minh được lập trình sẵn theo ý khách hàng. Phần tiền nhàn rỗi được giữ trong các tài khoản được giám sát bởi PrimeTrust và bảo hiểm bởi FDIC.</p>      \n        <p>Với những biện pháp đó, nhà đầu tư được bảo vệ khỏi mọi rủi ro. Ngay cả khi người vay không hoàn trả khoản vay hay thị trường đi xuống, nhà đầu tư vẫn luôn được bảo vệ và thu được lợi nhuận.</p>      ",
             "question5": "Phần tiền không đầu tư trong tài khoản Constant được bảo vệ như thế nào?",
             "answer5": "Phần tiền không đầu tư được giữ trong các tài khoản được FDIC bảo hiểm lên đến 130,000,000 USD. PrimeTrust, một tổ chức tài chính uy tín tại Mỹ là đơn vị quản lí những tài khoản này."
+        }
+    },
+    "getPrices": {
+        "table1": {
+            "head1": "Receive fiat withdrawal in bank account",
+            "head2": "Business hours",
+            "head3": "Weekends",
+            "head4": "Withdrawal fee"
+        },
+        "table2": {
+            "head1": "Withdraw funds in crypto",
+            "head2": "Business hours",
+            "head3": "Weekends",
+            "head4": "Withdrawal fee"
+        },
+        "table3": {
+            "head1": "Investments matched after funds are received",
+            "head2": "Business hours",
+            "head3": "Weekends",
+            "head4": "Matching fee"
+        },
+        "table4": {
+            "head1": "Loans matched after collateral is received",
+            "head2": "Business hours",
+            "head3": "Weekends",
+            "head4": "Matching fee"
         }
     },
     "modules": {

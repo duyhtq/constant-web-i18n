@@ -89,6 +89,8 @@
         "titleConstant": "Buy Constant",
         "career": "Careers",
         "about": "About",
+        "theTeam": "The Team",
+        "prices": "Pricing and Service times",
         "openSource": "Open Source",
         "foundation": "Foundation",
         "buyConstant": "Buy Constant",
@@ -257,7 +259,8 @@
             "borrow": "Borrow",
             "borrowDesc": "Set your own terms",
             "expert": "Expert",
-            "expertDecs": "More advanced peer-to-peer lending"
+            "expertDecs": "More advanced peer-to-peer lending",
+            "transfer": "Transfer"
         }
     },
     "error": {
@@ -368,7 +371,8 @@
             "viewConstantWallet": "View constant wallet here",
             "viewInvestmentDetail": "View investment detail here",
             "batchTransfer": "Batch Transfer",
-            "referralInfo": "Referral Information"
+            "referralInfo": "Referral Information",
+            "transferOrders": "Transfer Orders"
         },
         "wallet": {
             "title": "This is your wallet address you could send Constant to",
@@ -848,6 +852,13 @@
                 "detail": "Risk detection"
             }
         },
+        "transferOrders": {
+            "approve": "Approve",
+            "approveMess": "Are you sure you want to approve this order?",
+            "agent": {
+                "approveSuccessfully": "Your order have been approved successfully"
+            }
+        },
         "accountLevel": {
             "head_text": "Our verification process typically takes just a few minutes. Your information will remain 100% private.",
             "step1": "Level 1 : Email Verification",
@@ -1049,6 +1060,7 @@
                 "trial_description": "Your trial term has ended.",
                 "saving_title": "Fixed Term Investments",
                 "loans_title": "Loans",
+                "repaySuccess": "Thanks. Please bear with us while we deduct from your balance.Your collateral will be returned to the wallet address it was sent from.",
                 "anyTime_saving": "Flexible Account",
                 "input2FA": "Input 2FA",
                 "cancel": "Cancel",
@@ -1725,10 +1737,10 @@
             "title": "Transfer",
             "caption": "SEND CONSTANT ANYWHERE",
             "transferType": "Transfer Type",
-            "viaEmailCaption": "Via Email",
-            "viaAddressCaption": "To an ETH/EOS address",
-            "viaTomoCaption": "To a TOMO address",
-            "batchTransferCaption": "To multiple people",
+            "transferTypeCaption": {
+                "email": "Via Email",
+                "batch": "To multiple people"
+            },
             "yourBalance": "Your balance",
             "validateMaxInput": "Your amount must less than or equal: ${amount}",
             "transferFeeLabel": "Transfer fee",
@@ -1736,9 +1748,7 @@
             "introTitle": "Send money to anyone, anywhere. For free.",
             "transferBtn": "Send",
             "address": {
-                "email": "Recipient’s email",
-                "wallet": "Ethereum/EOS wallet address",
-                "tomo": "TOMO wallet address"
+                "email": "Recipient’s email"
             },
             "phToAddress": "Recipient’s email or Ethereum wallet address",
             "confirmMsg": "Are you sure you want to transfer {amount} CONSTANT to {address}?",
@@ -1769,10 +1779,14 @@
             "title": "Transfer",
             "caption": "SEND CONSTANT ANYWHERE",
             "transferType": "Transfer Type",
-            "viaEmailCaption": "Via Email",
-            "viaAddressCaption": "To an ETH/EOS address",
-            "viaTomoCaption": "To a TOMO address",
-            "batchTransferCaption": "To multiple people",
+            "transferTypeCaption": {
+                "eth": "To an ETH address",
+                "eos": "To an EOS address",
+                "tomo": "To a TOMO address",
+                "usdt": "To a USDT address",
+                "susd": "To a SUSD address",
+                "batch": "To multiple people"
+            },
             "yourBalance": "Your balance",
             "validateMaxInput": "Your amount must less than or equal: ${amount}",
             "transferFeeLabel": "Transfer fee",
@@ -1781,8 +1795,11 @@
             "transferBtn": "Send",
             "address": {
                 "email": "Recipient’s email",
-                "wallet": "Ethereum/EOS wallet address",
-                "tomo": "TOMO wallet address"
+                "eth": "Ethereum wallet address",
+                "eos": "EOS wallet address",
+                "tomo": "TOMO wallet address",
+                "usdt": "USDT wallet address",
+                "susd": "SUSD wallet address"
             },
             "phToAddress": "Recipient’s email or Ethereum wallet address",
             "confirmMsg": "Are you sure you want to transfer {amount} CONSTANT to {address}?",
@@ -1820,7 +1837,11 @@
                 "question4": "What happens if I don’t repay the loan?",
                 "answer4": "If you don’t repay the loan, we sell your collateral to pay back investors, and you get to keep the loan. That’s all there is to it.",
                 "question5": "What happens if my crypto collateral falls in value?",
-                "answer5": "If your collateral falls below a certain threshold, we sell it to pay back investors, and refund you the difference. The USD loan is yours to keep."
+                "answer5": "If your collateral falls below a certain threshold, we sell it to pay back investors, and refund you the difference. The USD loan is yours to keep.",
+                "question6": "Can I repay early?",
+                "answer6": "\n          <p>If you'd like to pay back your loan before 75% of the term is up, that's absolutely fine. You simply have to pay interest for the days you are in possession of the loan, and just 50% of the original interest rate for the remaining days of the term.</p>\n          <p>If you'd like to pay back your loan after 75% of the term is up and claim back your collateral, that's also fine, but the interest due on that loan is the full percentage for the entire term.</p>\n        ",
+                "question7": "Can i recall excess if my collateral value increases?",
+                "answer7": "Yes. If the value of your collateral rises during your loan term, you can withdraw the difference. You’ll be able to do this on the site in the next release scheduled for the 25th of June, but in the meantime, our support team is available via telegram, email, and fb chat to assist you manually."
             },
             "title": "Fair, fully secured crypto-backed loans.",
             "subTitle": "\n        <h2>4.50% APR.</h2>\n        <h2>Instant funding.</h2>\n        <h2>Get cash for crypto without needing to sell.</h2>\n      ",
@@ -3235,6 +3256,7 @@
         "title4": "You've earned this",
         "title5": "FRIENDS THAT SIGNED UP",
         "title6": "INVITE MORE 7 FRIENDS TO ARCHIEVE",
+        "title7": "INVITE MORE {num} FRIENDS TO ARCHIEVE",
         "investment": "On investment",
         "loans": "On loans",
         "loginRequired": "You need to login to do the action.",
@@ -3273,6 +3295,32 @@
             "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
             "question5": "Who can participate?",
             "answer5": "When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds."
+        }
+    },
+    "getPrices": {
+        "table1": {
+            "head1": "Receive fiat withdrawal in bank account",
+            "head2": "Business hours",
+            "head3": "Weekends",
+            "head4": "Withdrawal fee"
+        },
+        "table2": {
+            "head1": "Withdraw funds in crypto",
+            "head2": "Business hours",
+            "head3": "Weekends",
+            "head4": "Withdrawal fee"
+        },
+        "table3": {
+            "head1": "Investments matched after funds are received",
+            "head2": "Business hours",
+            "head3": "Weekends",
+            "head4": "Matching fee"
+        },
+        "table4": {
+            "head1": "Loans matched after collateral is received",
+            "head2": "Business hours",
+            "head3": "Weekends",
+            "head4": "Matching fee"
         }
     },
     "modules": {

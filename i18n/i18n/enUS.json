@@ -1784,7 +1784,7 @@
                 "eos": "To an EOS address",
                 "tomo": "To a TOMO address",
                 "usdt": "To a USDT address",
-                "susd": "To a SUSD address",
+                "susd": "To a USDS address",
                 "batch": "To multiple people"
             },
             "yourBalance": "Your balance",
@@ -1799,7 +1799,7 @@
                 "eos": "EOS wallet address",
                 "tomo": "TOMO wallet address",
                 "usdt": "USDT wallet address",
-                "susd": "SUSD wallet address"
+                "susd": "USDS wallet address"
             },
             "phToAddress": "Recipient’s email or Ethereum wallet address",
             "confirmMsg": "Are you sure you want to transfer {amount} CONSTANT to {address}?",
@@ -2600,7 +2600,7 @@
     "transferCrypto": {
         "info": {
             "title": "Withdraw to your crypto wallet.",
-            "desc1": "Instantly send our native stablecoin (CONST) to any ETH, EOS, TOMO, USDT, or SUSD address. Just enter the amount, and select where you want it to go.",
+            "desc1": "Instantly send our native stablecoin (CONST) to any ETH, EOS, TOMO, USDT, or USDS address. Just enter the amount, and select where you want it to go.",
             "desc2": "When it reaches the other party, they don’t pay anything either. So send money home, do business with the world, and get it done instantly. That’s what it means to be global."
         }
     },
@@ -2766,7 +2766,7 @@
             },
             "borrow": {
                 "title": "Borrow the way you want",
-                "num": "4.50%",
+                "num": "6.00%",
                 "cap": "No limit. Set your own fixed rates.",
                 "btn": "Borrow"
             }

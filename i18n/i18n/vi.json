@@ -833,7 +833,7 @@
                     "timeout": "Hết thời gian",
                     "transferMoneyToAgent": "Xin vui lòng chuyển khoản để nộp tiền vào tài khoản",
                     "waitAgentTransferMoney": "Đang chuyển tiền",
-                    "transferredMoneyToAgent": "Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.",
+                    "transferredMoneyToAgent": "Số dư hiện tại: {balance} USD. Để đầu tư {investAmount} USD, xin vui lòng nộp thêm {remainAmount} USD vào tài khoản.",
                     "done": "Thành công",
                     "inProgress": "Đang xử lí giao dịch"
                 }
@@ -1046,8 +1046,8 @@
         },
         "proSaving": {
             "listApplications": {
-                "noLoans": "You don't have any loans",
-                "noInvestment": "You don't have any investment",
+                "noLoans": "Bạn chưa có khoản vay nào",
+                "noInvestment": "Bạn chưa có khoản đầu tư nào",
                 "totalInterestEarned": "Bạn đã kiếm được",
                 "noRecord": "Bạn vẫn chưa có khoản tiết kiệm nào. Bắt đầu tiết kiệm ngay từ hôm nay.",
                 "getListFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
@@ -1066,12 +1066,12 @@
                 "anyTime_saving": "Số dư",
                 "input2FA": "Nhập mã bảo mật 2 lớp",
                 "cancel": "Huỷ",
-                "matchedList": "Matched List",
-                "getCollateral": "Recall excess",
-                "payCollateral": "Pay",
-                "getRemainCollateral": "Get Remaining Collateral",
-                "payOffLoan": "Payoff",
-                "payOffLoanTitle": "Payoff Loan",
+                "matchedList": "Danh sách đã khớp lệnh",
+                "getCollateral": "Nhận lại phần dư",
+                "payCollateral": "Thanh toán",
+                "getRemainCollateral": "Nhận lại phần thế chấp còn lại",
+                "payOffLoan": "Hoàn trả",
+                "payOffLoanTitle": "Hoàn trả khoản vay",
                 "termStatus": {
                     "created": "Khớp lệnh",
                     "pending": "Đang chờ",
@@ -1116,7 +1116,7 @@
                 "transfer": "Chuyển khoản",
                 "batchtransfer": "Chuyển khoản tới nhiều người cùng lúc",
                 "deposit": "Nộp tiền",
-                "depositMatched": "Deposit",
+                "depositMatched": "Nộp tiền",
                 "withdrawDesc": "Rút tiền về tài khoản ngân hàng hoặc địa chỉ ví bất kì.",
                 "depositDesc": "Giữ tiền bằng USD, được FDIC bảo hiểm lên đến 130 triệu USD.",
                 "transferDesc": "Chuyển tiền quốc tế. Không giới hạn số lượng và số lần chuyển.",
@@ -1146,9 +1146,9 @@
                         "cancel": "Quay lại"
                     },
                     "cancelLoan": {
-                        "messageConfirm": "Are you sure you want to cancel this loan request?",
-                        "confirm": "Yes",
-                        "cancel": "No"
+                        "messageConfirm": "Bạn chắc chắn muốn huỷ yêu cầu vay này?",
+                        "confirm": "Có",
+                        "cancel": "Không"
                     },
                     "cancelDepositKyc": {
                         "messageConfirm": "Bạn chỉ cần xác minh danh tính là có thể đầu tư. Bạn vẫn muốn huỷ?",
@@ -1156,20 +1156,20 @@
                         "cancel": "Xác minh danh tính"
                     },
                     "getRemainCollateral": {
-                        "messageConfirm": "\n          Are you sure you want to recall <strong>{valueAvailable} {symbol}</strong> to bring your collateral value back to the minimum required amount?\n        ",
-                        "confirm": "Yes",
-                        "cancel": "No"
+                        "messageConfirm": "\nBạn muốn nhận lại <strong>{valueAvailable}{symbol}</strong> để giá trị tài sản thế chấp về lại mức tối thiểu?        ",
+                        "confirm": "Có",
+                        "cancel": "Không"
                     },
                     "payOff": {
                         "early": {
-                            "messageConfirm": "Are you sure you want to make early repayment?",
-                            "confirm": "Repay",
-                            "cancel": "Cancel"
+                            "messageConfirm": "Bạn muốn hoàn trả khoản vay trước hạn?",
+                            "confirm": "Hoàn trả",
+                            "cancel": "Huỷ"
                         },
                         "onTime": {
-                            "messageConfirm": "Please make repayment.",
-                            "confirm": "Repay",
-                            "cancel": "Not now"
+                            "messageConfirm": "Xin vui lòng hoàn trả khoản vay.",
+                            "confirm": "Hoàn trả",
+                            "cancel": "Không phải lúc này"
                         }
                     }
                 },
@@ -1210,13 +1210,13 @@
                 "note": "Lưu ý",
                 "investMore": "Mở thêm tài khoản tiết kiệm.",
                 "depositFrom": {
-                    "title": "Make more deposit for your collateral",
-                    "amount": "Amount",
-                    "amountDesc": "How much do you want to deposit?",
-                    "ok": "Make deposit",
-                    "cancel": "Cancel",
-                    "depositFailed": "Failed while depositing, please try again",
-                    "depositSuccess": "Your deposit was completed successfully"
+                    "title": "Nộp thêm tài sản thế chấp",
+                    "amount": "Số lượng",
+                    "amountDesc": "Bạn muốn nộp bao nhiêu tiền?",
+                    "ok": "Nộp tiền",
+                    "cancel": "Huỷ",
+                    "depositFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
+                    "depositSuccess": "Nộp tiền thành công"
                 }
             },
             "applicationDetail": {
@@ -1825,7 +1825,7 @@
                 "tomo": "Ví TOMO",
                 "usdt": "Ví USDT",
                 "susd": "Ví SUSD",
-                "tusd": "To a TUSD address",
+                "tusd": "Tới ví TUSD",
                 "batch": "Chuyển khoản tới nhiều người"
             },
             "yourBalance": "Số dư",
@@ -1841,7 +1841,7 @@
                 "tomo": "Địa chỉ ví TOMO",
                 "usdt": "Địa chỉ ví USDT",
                 "susd": "Địa chỉ ví SUSD",
-                "tusd": "TUSD wallet address"
+                "tusd": "Địa chỉ ví TUSD"
             },
             "phToAddress": "Email hoặc địa chỉ ví Ethereum của người nhận",
             "confirmMsg": "Bạn muốn chuyển {amount} CONSTANT tới {address}?",
@@ -1902,7 +1902,7 @@
                 "startDateLabel": "Ngày bắt đầu",
                 "endDateLabel": "Ngày kết thúc",
                 "toolTipCollateral": "\nĐây là khoản thế chấp cần có để vay được {exchangeUnit}. Giá trị tài sản thế chấp được tính theo giá thị trường {exchangeRate}.        ",
-                "walletAddressLabel": "Which {symbol} wallet should we return your collateral to?",
+                "walletAddressLabel": "Bạn muốn nhận lại phần tài sản thế chấp qua loại ví {symbol} nào?",
                 "walletAlias": "0x687C906b2....8bd9369242e",
                 "moreInfo": "Bạn sẽ nhận được khoản vay ngay khi phần tài sản thế chấp được xác nhận trên chuỗi khối. Thời gian dự kiến: 2 phút cho ETH và 10 phút cho BTC.",
                 "monthLoan": "{term} tháng",
@@ -1953,11 +1953,11 @@
                 "termField": "Kì hạn",
                 "termUnit": "{period} tháng",
                 "termUnit1": "{period} tháng",
-                "loanAmount": "Loan amount:",
-                "collaterals": "Collateral:",
-                "term": "Term:",
-                "interestedRate": "Interest rate:",
-                "interestedRateValue": "{percent} APR",
+                "loanAmount": "Khoản vay:",
+                "collaterals": "Thế chấp:",
+                "term": "Kì hạn:",
+                "interestedRate": "Lãi suất:",
+                "interestedRateValue": "{percent}%/năm",
                 "matchingFee": "Matching fee:",
                 "matchingFeeValue": "1% of loan amount"
             },
@@ -2062,50 +2062,50 @@
                     "payoffFail": "Payoff Fail",
                     "fillPending": "Fill Pending",
                     "fillFail": "Fill Fail",
-                    "payoffDone": "Payoff done",
-                    "repayDownDone": "Repay Down Done"
+                    "payoffDone": "Hoàn trả thành công",
+                    "repayDownDone": "Hoàn trả thành công"
                 },
                 "mapStatus2": {
-                    "pending": "Pending",
-                    "recieved": "Matching",
-                    "accepted": "Matched",
-                    "payingInterest": "Interest due",
-                    "done": "Closed",
-                    "withdrawed": "Withdrawn",
-                    "tnxFailed": "Please try again",
-                    "cancelled": "Cancelled",
-                    "rejected": "Error occurred",
-                    "timeout": "Timed out",
-                    "chainBorrowPending": "Please try again",
-                    "chainBorrowOk": "Success",
-                    "chainBorrowFailed": "Please try again",
-                    "chainCancelPending": "Cancel",
-                    "chainCancelOk": "Cancelled",
-                    "chainCancelFailed": "Please try again",
-                    "chainBorrowCancel": "Cancelled",
-                    "creating": "Processing"
+                    "pending": "Đang chờ",
+                    "recieved": "Đang khớp lệnh",
+                    "accepted": "Khớp lệnh",
+                    "payingInterest": "Phần lãi phải trả",
+                    "done": "Đã xong",
+                    "withdrawed": "Đã rút tiền",
+                    "tnxFailed": "Xin vui lòng thử lại",
+                    "cancelled": "Đã huỷ",
+                    "rejected": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
+                    "timeout": "Hết thời gian",
+                    "chainBorrowPending": "Xin vui lòng thử lại",
+                    "chainBorrowOk": "Thành công",
+                    "chainBorrowFailed": "Xin vui lòng thử lại",
+                    "chainCancelPending": "Huỷ",
+                    "chainCancelOk": "Đã huỷ",
+                    "chainCancelFailed": "Xin vui lòng thử lại",
+                    "chainBorrowCancel": "Đã huỷ",
+                    "creating": "Đang xử lí"
                 },
-                "getRemainCollateral": "\n          Are you sure you want to recall <strong>{valueAvailable} {symbol}</strong> to bring your collateral value back to the minimum required amount?\n        ",
+                "getRemainCollateral": "\nBạn muốn nhận lại <strong>{valueAvailable}{symbol}</strong> để giá trị tài sản thế chấp về lại mức tối thiểu?        ",
                 "actionsModal": {
-                    "cancel": "Cancel",
-                    "confirm": "Confirm"
+                    "cancel": "Huỷ",
+                    "confirm": "Xác nhận"
                 },
-                "amountLabel": "Loan amount",
-                "feePayoffLabel": "Early repayment fee  ",
-                "feePayoffDesc": " If less than 75% of your term has elapsed, the early repayment fee is 50% of the interest on your remaining term. If more than 75% has elapsed, 100% of the interest on the entire term is due.",
-                "matchingFee": "Matching fee",
-                "interestEarly": "Interest due to date",
-                "interestOnTime": "Interest due",
-                "totalRepayment": "Total repayment",
-                "errorRemainCollateral": "You can not to get the remaining collateral back at the moment",
+                "amountLabel": "Khoản vay",
+                "feePayoffLabel": "Phí trả nợ trước hạn  ",
+                "feePayoffDesc": " Nếu chưa quá 75% thời hạn vay, phí trả nợ trước hạn sẽ bằng 50% lãi suất trong khoảng thời gian còn lại. Nếu đã quá 75% thời hạn vay, bạn sẽ phải trả 100% lãi suất của khoản vay.",
+                "matchingFee": "Phí khớp lệnh",
+                "interestEarly": "Lãi suất đến thời điểm hiện tại",
+                "interestOnTime": "Phần lãi phải trả",
+                "totalRepayment": "Tổng số tiền phải trả",
+                "errorRemainCollateral": "Bạn chưa thể nhận lại phần tài sản thế chấp còn lại ngay lúc này",
                 "depositFrom": {
-                    "title": "Make more deposit for your collateral",
-                    "amount": "Amount",
-                    "amountDesc": "How much do you want to deposit?",
-                    "ok": "Make deposit",
-                    "cancel": "Cancel",
-                    "depositFailed": "Failed while depositing, please try again",
-                    "depositSuccess": "Your deposit was completed successfully"
+                    "title": "Nộp thêm tài sản thế chấp",
+                    "amount": "Số lượng",
+                    "amountDesc": "Bạn muốn nộp bao nhiêu tiền?",
+                    "ok": "Nộp tiền",
+                    "cancel": "Huỷ",
+                    "depositFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
+                    "depositSuccess": "Nộp tiền thành công"
                 }
             },
             "advice": {
@@ -2123,13 +2123,13 @@
         "proLending": {
             "watchBoard": {
                 "invest": {
-                    "title": "Investments"
+                    "title": "Đầu tư"
                 },
                 "borrow": {
-                    "title": "Borrows"
+                    "title": "Vay"
                 }
             },
-            "balances": "Balances"
+            "balances": "Số dư"
         },
         "bottomBannerText": "Bạn xứng đáng với trải nghiệm dịch vụ tốt hơn",
         "bottomBannerButton": "Đăng kí tài khoản",
@@ -2606,7 +2606,7 @@
             "fiatAmountResultLabel": "Theo tỉ giá thị trường hôm nay, bạn sẽ nhận được: {fiatAmount}{fiatCurrency}",
             "explain": "*Tính cả phí chuyển tiền, bạn có thể chuyển tối đa {amountExcludeFee} {currency}."
         },
-        "paymentMethod": "Payment method",
+        "paymentMethod": "Hình thức thanh toán",
         "email": {
             "name": "Recipient",
             "placeholder": "Enter receving email address"
@@ -3516,36 +3516,36 @@
             "date": "Date"
         },
         "investBooking": {
-            "messLoginFirst": "You must be login before make an investment!",
-            "messDepositFirst": "your account balance was not enough. You must be deposit before make an investment!",
-            "matchedSuccess": "Your invest had been matched successfully.",
-            "matchedFailed": "Your invest had been matched unsuccessfully, please try again.",
+            "messLoginFirst": "Xin vui lòng đăng nhập để thực hiện đầu tư!",
+            "messDepositFirst": "Số dư hiện tại không đủ. Xin vui lòng nộp thêm tiền vào tài khoản để thực hiện đầu tư!",
+            "matchedSuccess": "Đã khớp lệnh đầu tư thành công.",
+            "matchedFailed": "Khớp lệnh đầu tư không thành công. Xin vui lòng thử lại.",
             "deposit": {
-                "title": "Investments deposit",
-                "depositButton": "MAKE DEPOSIT",
-                "depositNote": "Please deposit funds in your account to start investing."
+                "title": "Nộp tiền đầu tư",
+                "depositButton": "NỘP TIỀN",
+                "depositNote": "Xin vui lòng nộp thêm tiền vào tài khoản để thực hiện đầu tư."
             },
             "form": {
-                "title": "Investments",
-                "amount": "Amount",
-                "interest": "Min. interest",
-                "term": "Term",
-                "termMonth": "{month}-Month",
-                "investButton": "PLACE INVEST ORDER",
-                "invalidAmount": "Amount must be less than {maxAmount}",
-                "getFeeFailed": "Can not get fee in this time, please try again.",
-                "fee": "Invest fee: <span class=\"amount\">{fee}</span> {currency}",
-                "amountDesc": "<p>How much do you want to lend?</p>",
-                "termDesc": "<p>This is the maximum amount of time you want to lend your money out for. Unloaned portions are protected by the FDIC, and can be withdrawn at any time.</p>",
-                "interestDesc": "<p>This is the minimum rate you are willing to accept for your loan. If there is a borrower willing to pay more, you will earn the higher interest rate.</p>"
+                "title": "Đầu tư",
+                "amount": "Số tiền",
+                "interest": "Lãi suất tối thiểu",
+                "term": "Kì hạn",
+                "termMonth": "{month} tháng",
+                "investButton": "ĐẶT LỆNH ĐẦU TƯ",
+                "invalidAmount": "Xin vui lòng nhập số nhỏ hơn {maxAmount}",
+                "getFeeFailed": "Chưa thể tính phí. Xin vui lòng thử lại.",
+                "fee": "Phí đầu tư: <span class=\"amount\">{fee}</span>{currency}",
+                "amountDesc": "<p>Bạn muốn đầu tư bao nhiêu?</p>",
+                "termDesc": "<p>Đây là khoảng thời gian tối đa mà bạn muốn đầu tư. Phần tiền không đầu tư còn lại được đảm bảo bởi FDIC và bạn có thể rút về bất cứ lúc nào.</p>",
+                "interestDesc": "<p>Đây là mức lãi suất tối thiểu để bạn chấp nhận đầu tư. Nếu người cần vay vốn sẵn sàng trả mức lãi cao hơn, bạn sẽ được hưởng mức lãi suất cao hơn đó.</p>"
             }
         },
         "borrowBooking": {
-            "title": "Borrow",
+            "title": "Vay",
             "exchange": {
-                "amountLabel": "Amount",
-                "collateralLabel": "Collateral required",
-                "walletAddressLabel": "Your {symbol} wallet address",
+                "amountLabel": "Khoản vay",
+                "collateralLabel": "Thế chấp",
+                "walletAddressLabel": "Địa chỉ ví {symbol} của bạn",
                 "walletAlias": "0x687C906b2....8bd9369242e",
                 "maxRate": "Maximum rate (APR)",
                 "minTerm": "Term",

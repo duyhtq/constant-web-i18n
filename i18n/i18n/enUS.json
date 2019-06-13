@@ -1959,7 +1959,7 @@
             "learnMore": "Learn more",
             "listApplications": {
                 "heading": "Loans",
-                "createdDate": "Created at:",
+                "createdDate": "Created at",
                 "principal": "Principal",
                 "interest": "Interest +{interest}% APR",
                 "status": "Status",
@@ -2600,7 +2600,7 @@
     "transferCrypto": {
         "info": {
             "title": "Withdraw to your crypto wallet.",
-            "desc1": "Instantly send our native stablecoin (CONST) to any ETH, EOS or TOMO wallet.",
+            "desc1": "Instantly send our native stablecoin (CONST) to any ETH, EOS, TOMO, USDT, or SUSD address. Just enter the amount, and select where you want it to go.",
             "desc2": "When it reaches the other party, they don’t pay anything either. So send money home, do business with the world, and get it done instantly. That’s what it means to be global."
         }
     },

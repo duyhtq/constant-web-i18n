@@ -524,7 +524,6 @@
             "value": "Value",
             "amount": "Amount",
             "accept": "Accept",
-            "detail": "View Detail",
             "cancel": "Cancel",
             "cancelMess": "Are you sure you want to cancel this order?",
             "approve": "Confirm payment",
@@ -560,7 +559,8 @@
                 },
                 "content": {
                     "Cancel": "\n            <div>\n              <p>You’re {Type} <strong>{Amount}</strong> Constant at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you want to cancel this order, please click the “Cancel order” button below. Otherwise, please close this window.</p>\n            </div>\n          ",
-                    "Approve": "\n             <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Bank Name:</span>\n                  <strong>{bank_name}</strong>\n                </div>\n                <div>\n                  <span>Account Name:</span>\n                  <strong>{bank_account_name}</strong>\n                </div>\n                <div>\n                  <span>Account Number: </span>\n                  <strong>{bank_account_number}</strong>\n                </div>\n                <div>\n                  <span>Amount: </span>\n                  <strong>{Total}&nbsp;{Currency}</strong>\n                </div>\n                <div>\n                  <span>Reference: </span>\n                  <strong>{Reference}</strong>\n                </div>\n                <div>\n                    <span>Bank Country: </span>\n                    <strong>{bankCountry}</strong>\n                 </div>\n              </div>\n             </div>\n          ",
+                    "Approve": "\n             <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Bank Name:</span>\n                  <strong>{bank_name}</strong>\n                </div>\n                <div>\n                  <span>Account Name:</span>\n                  <strong>{bank_account_name}</strong>\n                </div>\n                <div>\n                  <span>Account Number: </span>\n                  <strong>{bank_account_number}</strong>\n                </div>\n                <div>\n                  <span>Amount: </span>\n                  <strong>{Total}&nbsp;{Currency}</strong>\n                </div>\n                <div>\n                  <span>Reference: </span>\n                  <strong>{Reference}</strong>\n                </div>\n                <div>\n                    <span>Bank Country: </span>\n                    <strong>{bankCountry}</strong>\n                 </div>\n              </div>\n              <br />\n              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>\n             </div>\n          ",
+                    "ApproveZelle": "\n             <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Payment method:</span>\n                  <strong>Zelle</strong>\n                </div>\n                <div>\n                  <span>Bank Email Address:</span>\n                  <strong>{Email}</strong>\n                </div>\n             </div>\n          ",
                     "Finish": "\n            <div>\n                <p>You’re selling <strong>{Amount} Constant</strong> at <strong>{Price} </strong> {Currency} per Constant.</p>\n                <p>If you’ve received a bank transfer for <strong>{TotalVND} {Currency}</strong>, you can now send your Constant to the buyer by clicking the button below.</p>\n                <p>IMPORTANT: Please do not send your Constant until you’ve received the bank transfer from the buyer. If the buyer doesn’t pay you within 30 minutes of placing the order, please email us at hello@constant.money.</p>\n            </div>\n          "
                 }
             }
@@ -833,7 +833,7 @@
                     "timeout": "Order timed out",
                     "transferMoneyToAgent": "Please make a transfer to complete your deposit",
                     "waitAgentTransferMoney": "Waiting for seller to send money",
-                    "transferredMoneyToAgent": "Your account will be credited once we have received your transfer.",
+                    "transferredMoneyToAgent": "Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.",
                     "done": "Successful",
                     "inProgress": "Order in progress"
                 }
@@ -1046,6 +1046,8 @@
         },
         "proSaving": {
             "listApplications": {
+                "noLoans": "You don't have any loans",
+                "noInvestment": "You don't have any investment",
                 "totalInterestEarned": "You've already earned",
                 "noRecord": "No time like the present. Start saving now.",
                 "getListFailed": "Sorry, something went wrong. Please try again.",
@@ -1064,6 +1066,12 @@
                 "anyTime_saving": "Flexible Account",
                 "input2FA": "Input 2FA",
                 "cancel": "Cancel",
+                "matchedList": "Matched List",
+                "getCollateral": "Recall excess",
+                "payCollateral": "Pay",
+                "getRemainCollateral": "Get Remaining Collateral",
+                "payOffLoan": "Payoff",
+                "payOffLoanTitle": "Payoff Loan",
                 "termStatus": {
                     "created": "Matched",
                     "pending": "Matching",
@@ -1108,6 +1116,7 @@
                 "transfer": "Transfer",
                 "batchtransfer": "Transfer to multiple people",
                 "deposit": "Make a deposit",
+                "depositMatched": "Deposit",
                 "withdrawDesc": "Withdraw funds to your bank account or wallet address.",
                 "depositDesc": "Store your money in USD. FDIC insured up to $130M.",
                 "transferDesc": "Send money across the world instantly - to as many people as you like.",
@@ -1136,10 +1145,32 @@
                         "confirm": "Yes, cancel",
                         "cancel": "Go back"
                     },
+                    "cancelLoan": {
+                        "messageConfirm": "Are you sure you want to cancel this loan request?",
+                        "confirm": "Yes",
+                        "cancel": "No"
+                    },
                     "cancelDepositKyc": {
                         "messageConfirm": "To activate this investment order, all you need to do is verify your ID. Cancel anyway?",
                         "confirm": "Yes, cancel",
                         "cancel": "Verify my ID"
+                    },
+                    "getRemainCollateral": {
+                        "messageConfirm": "\n          Are you sure you want to recall <strong>{valueAvailable} {symbol}</strong> to bring your collateral value back to the minimum required amount?\n        ",
+                        "confirm": "Yes",
+                        "cancel": "No"
+                    },
+                    "payOff": {
+                        "early": {
+                            "messageConfirm": "Are you sure you want to make early repayment?",
+                            "confirm": "Repay",
+                            "cancel": "Cancel"
+                        },
+                        "onTime": {
+                            "messageConfirm": "Please make repayment.",
+                            "confirm": "Repay",
+                            "cancel": "Not now"
+                        }
                     }
                 },
                 "confirm": {
@@ -1177,7 +1208,16 @@
                 "phone": "Phone",
                 "status": "Status",
                 "note": "Note",
-                "investMore": "Make another deposit."
+                "investMore": "Make another deposit.",
+                "depositFrom": {
+                    "title": "Make more deposit for your collateral",
+                    "amount": "Amount",
+                    "amountDesc": "How much do you want to deposit?",
+                    "ok": "Make deposit",
+                    "cancel": "Cancel",
+                    "depositFailed": "Failed while depositing, please try again",
+                    "depositSuccess": "Your deposit was completed successfully"
+                }
             },
             "applicationDetail": {
                 "dueDays": "Due date",
@@ -1785,6 +1825,7 @@
                 "tomo": "To a TOMO address",
                 "usdt": "To a USDT address",
                 "susd": "To a SUSD address",
+                "tusd": "To a TUSD address",
                 "batch": "To multiple people"
             },
             "yourBalance": "Your balance",
@@ -1799,7 +1840,8 @@
                 "eos": "EOS wallet address",
                 "tomo": "TOMO wallet address",
                 "usdt": "USDT wallet address",
-                "susd": "SUSD wallet address"
+                "susd": "SUSD wallet address",
+                "tusd": "TUSD wallet address"
             },
             "phToAddress": "Recipient’s email or Ethereum wallet address",
             "confirmMsg": "Are you sure you want to transfer {amount} CONSTANT to {address}?",
@@ -1860,7 +1902,7 @@
                 "startDateLabel": "Start date",
                 "endDateLabel": "End date",
                 "toolTipCollateral": "\n          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.\n        ",
-                "walletAddressLabel": "Your {symbol} wallet address",
+                "walletAddressLabel": "Which {symbol} wallet should we return your collateral to?",
                 "walletAlias": "0x687C906b2....8bd9369242e",
                 "moreInfo": "Your funds will reach you as soon as your collateral is confirmed on its blockchain.  ETA: 2 minutes for ETH and 10 minutes for BTC.",
                 "monthLoan": "{term}-month loans",
@@ -1910,7 +1952,14 @@
                 "borrowMore": "Borrow more",
                 "termField": "Term",
                 "termUnit": "{period} month",
-                "termUnit1": "{period} months"
+                "termUnit1": "{period} months",
+                "loanAmount": "Loan amount:",
+                "collaterals": "Collateral:",
+                "term": "Term:",
+                "interestedRate": "Interest rate:",
+                "interestedRateValue": "{percent} APR",
+                "matchingFee": "Matching fee:",
+                "matchingFeeValue": "1% of loan amount"
             },
             "history": {
                 "itemTpl": "\n          <div name=\"loan-info-container\">\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Loan amount:</span>\n              <span name=\"loan-info-value\">{loanAmount}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Interest rate:</span>\n              <span name=\"loan-info-value\">{interestedRate}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Collaterals:</span>\n              <span name=\"loan-info-value\">{collaterals}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Term:</span>\n              <span name=\"loan-info-value\">{term}</span>\n            </div>\n          </div>\n        ",
@@ -1956,12 +2005,32 @@
                 "inValidWalletAddress": "Your wallet address invalid",
                 "rangeInterestRate": "Interest rate must be greater than {min}% and less than {max}%"
             },
+            "depositCollateral": {
+                "collateralTypeLabel": "Collateral type",
+                "walletAddressLabel": "Your {symbol} wallet address",
+                "walletAlias": "0x687C906b2....8bd9369242e",
+                "generateWallet": "Generate wallet address"
+            },
             "learnMore": "Learn more",
             "listApplications": {
                 "heading": "Loans",
-                "createdDate": "Created at:",
+                "amount": "AMOUNT (USD)",
+                "createdDate": "Created at",
+                "endTerm": "Term ends",
                 "principal": "Principal",
-                "interest": "Interest +{interest}% APR",
+                "interests": "INTEREST",
+                "created": "Created: ",
+                "cancel": "Cancel",
+                "dueDays": "Due: ",
+                "getCollateral": "Recall excess",
+                "payOffLoan": "Repay",
+                "depositMatched": "Top up",
+                "collateral": "COLLATERAL",
+                "collateralValue": "COLLATERAL VALUE",
+                "collateralValueDesc": "This represents your collateral value as a percentage of your loan. It accounts for the interest accrued so far, as well as the repayment fee should you choose to repay today. If it falls to 110%, your collateral will be liquidated, and the difference refunded to you.",
+                "liquidWaring": "your collateral will be liquidated, Please top up more collateral...",
+                "interestPrice": "Interest:",
+                "yourLoan": "Your loans ({matched})",
                 "status": "Status",
                 "mapStatus": {
                     "pending": "Pending",
@@ -1975,6 +2044,68 @@
                     "rejected": "Rejected",
                     "expired": "Expired",
                     "fullPayment": "full payment"
+                },
+                "mapStatus1": {
+                    "pending": "Pending",
+                    "approved": "Approved",
+                    "rejected": "Rejected",
+                    "paid": "Paid",
+                    "tnxPending": "Transaction Pending",
+                    "done": "Done",
+                    "repayPending": "Repay Pending",
+                    "repayFail": "Repay Fail",
+                    "repayUpPending": "Repay Up Pending",
+                    "repayUpFail": "Repay Up Fail",
+                    "repayDownPending": "Repay Down Pending",
+                    "repayDownFail": "Repay Down Fail",
+                    "payoffPending": "Payoff Pending",
+                    "payoffFail": "Payoff Fail",
+                    "fillPending": "Fill Pending",
+                    "fillFail": "Fill Fail",
+                    "payoffDone": "Payoff done",
+                    "repayDownDone": "Repay Down Done"
+                },
+                "mapStatus2": {
+                    "pending": "Pending",
+                    "recieved": "Matching",
+                    "accepted": "Matched",
+                    "payingInterest": "Interest due",
+                    "done": "Closed",
+                    "withdrawed": "Withdrawn",
+                    "tnxFailed": "Please try again",
+                    "cancelled": "Cancelled",
+                    "rejected": "Error occurred",
+                    "timeout": "Timed out",
+                    "chainBorrowPending": "Please try again",
+                    "chainBorrowOk": "Success",
+                    "chainBorrowFailed": "Please try again",
+                    "chainCancelPending": "Cancel",
+                    "chainCancelOk": "Cancelled",
+                    "chainCancelFailed": "Please try again",
+                    "chainBorrowCancel": "Cancelled",
+                    "creating": "Processing"
+                },
+                "getRemainCollateral": "\n          Are you sure you want to recall <strong>{valueAvailable} {symbol}</strong> to bring your collateral value back to the minimum required amount?\n        ",
+                "actionsModal": {
+                    "cancel": "Cancel",
+                    "confirm": "Confirm"
+                },
+                "amountLabel": "Loan amount",
+                "feePayoffLabel": "Early repayment fee  ",
+                "feePayoffDesc": " If less than 75% of your term has elapsed, the early repayment fee is 50% of the interest on your remaining term. If more than 75% has elapsed, 100% of the interest on the entire term is due.",
+                "matchingFee": "Matching fee",
+                "interestEarly": "Interest due to date",
+                "interestOnTime": "Interest due",
+                "totalRepayment": "Total repayment",
+                "errorRemainCollateral": "You can not to get the remaining collateral back at the moment",
+                "depositFrom": {
+                    "title": "Make more deposit for your collateral",
+                    "amount": "Amount",
+                    "amountDesc": "How much do you want to deposit?",
+                    "ok": "Make deposit",
+                    "cancel": "Cancel",
+                    "depositFailed": "Failed while depositing, please try again",
+                    "depositSuccess": "Your deposit was completed successfully"
                 }
             },
             "advice": {
@@ -1988,6 +2119,17 @@
                 "registerSuccess": "Đăng ký thành công",
                 "regiserFail": "Đăng ký thất bại"
             }
+        },
+        "proLending": {
+            "watchBoard": {
+                "invest": {
+                    "title": "Investments"
+                },
+                "borrow": {
+                    "title": "Borrows"
+                }
+            },
+            "balances": "Balances"
         },
         "bottomBannerText": "You deserve a better bank",
         "bottomBannerButton": "Open an account",
@@ -2464,6 +2606,11 @@
             "fiatAmountResultLabel": "According to the markets today, you’ll receive: {fiatAmount} {fiatCurrency}",
             "explain": "* The maximum you can withdraw is {amountExcludeFee} {currency}, so you have enough to cover the withdrawal fee."
         },
+        "paymentMethod": "Payment method",
+        "email": {
+            "name": "Recipient",
+            "placeholder": "Enter receving email address"
+        },
         "currencyDropdownLabel": "Your currency",
         "sellBtn": "Withdraw",
         "getAmountFailed": "Failed while getting amount",
@@ -2766,7 +2913,7 @@
             },
             "borrow": {
                 "title": "Borrow the way you want",
-                "num": "4.50%",
+                "num": "6.00%",
                 "cap": "No limit. Set your own fixed rates.",
                 "btn": "Borrow"
             }
@@ -3257,6 +3404,7 @@
         "title5": "FRIENDS THAT SIGNED UP",
         "title6": "INVITE MORE 7 FRIENDS TO ARCHIEVE",
         "title7": "INVITE MORE {num} FRIENDS TO ARCHIEVE",
+        "title8": "INVITE MORE PEERS, MORE REWARDS",
         "investment": "On investment",
         "loans": "On loans",
         "loginRequired": "You need to login to do the action.",
@@ -3326,6 +3474,89 @@
     "modules": {
         "faqs": {
             "title": "Top questions from users"
+        }
+    },
+    "proLending": {
+        "watchBoard": {
+            "investments": "Orderbook",
+            "borrows": "Orderbook",
+            "interestSpread": "interest spread",
+            "interestSpreadValues": "0.10%",
+            "amount": "Amount(USD)",
+            "interest": "Interest(APR)",
+            "term": "Term(Days)",
+            "termValues": "{term}-Months"
+        },
+        "balances": {
+            "title": "Balances",
+            "withdraw": "Withdraw",
+            "withdrawFrom": {
+                "title": "Withdraw your crypto collateral",
+                "amount": "Amount",
+                "amountDesc": "How much do you want to withdraw?",
+                "address": "Your {name} wallet address",
+                "addressDesc": "Your cryptocurrency address to receiving your coins.",
+                "ok": "Ok",
+                "cancel": "cancel",
+                "withdrawFailed": "Failed while withdrawing, please try again",
+                "withdrawSuccess": "Your withdrawal was completed successfully"
+            }
+        },
+        "deposits": {
+            "title": "Deposits"
+        },
+        "openOrders": {
+            "title": "Your open orders",
+            "invest": "invest",
+            "borrow": "borrow",
+            "side": "Side",
+            "amount": "Amount(USD)",
+            "interest": "rate(APR)",
+            "term": "Days",
+            "date": "Date"
+        },
+        "investBooking": {
+            "messLoginFirst": "You must be login before make an investment!",
+            "messDepositFirst": "your account balance was not enough. You must be deposit before make an investment!",
+            "matchedSuccess": "Your invest had been matched successfully.",
+            "matchedFailed": "Your invest had been matched unsuccessfully, please try again.",
+            "deposit": {
+                "title": "Investments deposit",
+                "depositButton": "MAKE DEPOSIT",
+                "depositNote": "Please deposit funds in your account to start investing."
+            },
+            "form": {
+                "title": "Investments",
+                "amount": "Amount",
+                "interest": "Min. interest",
+                "term": "Term",
+                "termMonth": "{month}-Month",
+                "investButton": "PLACE INVEST ORDER",
+                "invalidAmount": "Amount must be less than {maxAmount}",
+                "getFeeFailed": "Can not get fee in this time, please try again.",
+                "fee": "Invest fee: <span class=\"amount\">{fee}</span> {currency}",
+                "amountDesc": "<p>How much do you want to lend?</p>",
+                "termDesc": "<p>This is the maximum amount of time you want to lend your money out for. Unloaned portions are protected by the FDIC, and can be withdrawn at any time.</p>",
+                "interestDesc": "<p>This is the minimum rate you are willing to accept for your loan. If there is a borrower willing to pay more, you will earn the higher interest rate.</p>"
+            }
+        },
+        "borrowBooking": {
+            "title": "Borrow",
+            "exchange": {
+                "amountLabel": "Amount",
+                "collateralLabel": "Collateral required",
+                "walletAddressLabel": "Your {symbol} wallet address",
+                "walletAlias": "0x687C906b2....8bd9369242e",
+                "maxRate": "Maximum rate (APR)",
+                "minTerm": "Term",
+                "maxRateTooltip": "This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.",
+                "minTermTooltip": "This is the minimum amount of time you want to borrow.",
+                "buttonText": "Place borrow order"
+            },
+            "createdSuccess": "Your borrow had been created successfully",
+            "errorMsgs": {
+                "notEnoughBalance": "Your balance is not enough to make borrow!"
+            }
         }
     }
 }

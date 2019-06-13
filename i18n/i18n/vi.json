@@ -524,7 +524,6 @@
             "value": "Giá trị",
             "amount": "Số tiền",
             "accept": "Đồng ý",
-            "detail": "Thông tin chi tiết",
             "cancel": "Huỷ",
             "cancelMess": "Bạn chắc chắn muốn huỷ giao dịch này?",
             "approve": "Xác nhận thanh toán",
@@ -560,7 +559,8 @@
                 },
                 "content": {
                     "Cancel": "\n<div>\n              <p>Bạn vừa {Type}<strong>{Amount}</strong> Constant với tỉ giá <strong>{Price}</strong>{Currency}.</p>\n              <p>Nếu bạn muốn huỷ lệnh này, xin vui lòng chọn nút \"Huỷ giao dịch\" ở bên dưới. Nếu không, xin vui lòng đóng cửa sổ này.</p>\n            </div>\n          ",
-                    "Approve": "\n             <div>\n              <p>Bạn đặt lệnh mua <strong>{Amount} Constant</strong> với tỉ giá <strong>{Price}</strong> {Currency}/Constant.</p>\n              <p>Nếu bạn đã chuyển <strong>{Total} {Currency}</strong> tới tài khoản người bán, xin vui lòng chọn “Xác nhận thanh toán”.</p> \n              <p>Nếu chưa, xin vui lòng gửi <strong>{Total} {Currency}</strong> tới tài khoản ngân hàng của người bán. Nhớ ghi mã giao dịch <ref> vào phần nội dung chuyển khoản.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Tên ngân hàng:</span>\n                  <strong>{bank_name}</strong>\n                </div>\n                <div>\n                  <span>Tên tài khoản:</span>\n                  <strong>{bank_account_name}</strong>\n                </div>\n                <div>\n                  <span>Số tài khoản: </span>\n                  <strong>{bank_account_number}</strong>\n                </div>\n                <div>\n                  <span>Số tiền: </span>\n                  <strong>{Total}&nbsp;{Currency}</strong>\n                </div>\n                <div>\n                  <span>Mã giao dịch: </span>\n                  <strong>{Reference}</strong>\n                </div>\n                <div>\n                    <span>Quốc gia: </span>\n                    <strong>{bankCountry}</strong>\n                 </div>\n              </div>\n             </div>\n          ",
+                    "Approve": "\n             <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Bank Name:</span>\n                  <strong>{bank_name}</strong>\n                </div>\n                <div>\n                  <span>Account Name:</span>\n                  <strong>{bank_account_name}</strong>\n                </div>\n                <div>\n                  <span>Account Number: </span>\n                  <strong>{bank_account_number}</strong>\n                </div>\n                <div>\n                  <span>Amount: </span>\n                  <strong>{Total}&nbsp;{Currency}</strong>\n                </div>\n                <div>\n                  <span>Reference: </span>\n                  <strong>{Reference}</strong>\n                </div>\n                <div>\n                    <span>Bank Country: </span>\n                    <strong>{bankCountry}</strong>\n                 </div>\n              </div>\n              <br />\n              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>\n             </div>\n          ",
+                    "ApproveZelle": "\n             <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Payment method:</span>\n                  <strong>Zelle</strong>\n                </div>\n                <div>\n                  <span>Bank Email Address:</span>\n                  <strong>{Email}</strong>\n                </div>\n             </div>\n          ",
                     "Finish": "\n<div>\n                <p>Bạn đã đặt lệnh bán <strong>{Amount} Constant</strong> với giá <strong>{Price} </strong> {Currency} 1 Constant.</p>\n                <p>Khi nhận được chuyển khoản số tiền <strong>{TotalVND} {Currency}</strong>, bạn có thể gửi Constant đi bằng cách nhấn nút bên dưới.</p>\n                <p>LƯU Ý: Vui lòng không gửi Constant khi bạn chưa nhận được chuyển khoản. Nếu bạn chưa nhận được tiền trong vòng 30 phút, \n vui lòng liên hệ Constant tại hello@constant.money.</p>\n            </div>          "
                 }
             }
@@ -833,7 +833,7 @@
                     "timeout": "Hết thời gian",
                     "transferMoneyToAgent": "Xin vui lòng chuyển khoản để nộp tiền vào tài khoản",
                     "waitAgentTransferMoney": "Đang chuyển tiền",
-                    "transferredMoneyToAgent": "Số dư hiện tại: {balance} USD. Để thực hiện đầu tư {investAmount} USD, xin vui lòng nộp thêm {remainAmount} USD vào tài khoản Constant.",
+                    "transferredMoneyToAgent": "Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.",
                     "done": "Thành công",
                     "inProgress": "Đang xử lí giao dịch"
                 }
@@ -1046,6 +1046,8 @@
         },
         "proSaving": {
             "listApplications": {
+                "noLoans": "You don't have any loans",
+                "noInvestment": "You don't have any investment",
                 "totalInterestEarned": "Bạn đã kiếm được",
                 "noRecord": "Bạn vẫn chưa có khoản tiết kiệm nào. Bắt đầu tiết kiệm ngay từ hôm nay.",
                 "getListFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
@@ -1064,6 +1066,12 @@
                 "anyTime_saving": "Số dư",
                 "input2FA": "Nhập mã bảo mật 2 lớp",
                 "cancel": "Huỷ",
+                "matchedList": "Matched List",
+                "getCollateral": "Recall excess",
+                "payCollateral": "Pay",
+                "getRemainCollateral": "Get Remaining Collateral",
+                "payOffLoan": "Payoff",
+                "payOffLoanTitle": "Payoff Loan",
                 "termStatus": {
                     "created": "Khớp lệnh",
                     "pending": "Đang chờ",
@@ -1108,6 +1116,7 @@
                 "transfer": "Chuyển khoản",
                 "batchtransfer": "Chuyển khoản tới nhiều người cùng lúc",
                 "deposit": "Nộp tiền",
+                "depositMatched": "Deposit",
                 "withdrawDesc": "Rút tiền về tài khoản ngân hàng hoặc địa chỉ ví bất kì.",
                 "depositDesc": "Giữ tiền bằng USD, được FDIC bảo hiểm lên đến 130 triệu USD.",
                 "transferDesc": "Chuyển tiền quốc tế. Không giới hạn số lượng và số lần chuyển.",
@@ -1136,10 +1145,32 @@
                         "confirm": "Xác nhận",
                         "cancel": "Quay lại"
                     },
+                    "cancelLoan": {
+                        "messageConfirm": "Are you sure you want to cancel this loan request?",
+                        "confirm": "Yes",
+                        "cancel": "No"
+                    },
                     "cancelDepositKyc": {
                         "messageConfirm": "Bạn chỉ cần xác minh danh tính là có thể đầu tư. Bạn vẫn muốn huỷ?",
                         "confirm": "Xác nhận",
                         "cancel": "Xác minh danh tính"
+                    },
+                    "getRemainCollateral": {
+                        "messageConfirm": "\n          Are you sure you want to recall <strong>{valueAvailable} {symbol}</strong> to bring your collateral value back to the minimum required amount?\n        ",
+                        "confirm": "Yes",
+                        "cancel": "No"
+                    },
+                    "payOff": {
+                        "early": {
+                            "messageConfirm": "Are you sure you want to make early repayment?",
+                            "confirm": "Repay",
+                            "cancel": "Cancel"
+                        },
+                        "onTime": {
+                            "messageConfirm": "Please make repayment.",
+                            "confirm": "Repay",
+                            "cancel": "Not now"
+                        }
                     }
                 },
                 "confirm": {
@@ -1177,7 +1208,16 @@
                 "phone": "Số điện thoại",
                 "status": "Trạng thái",
                 "note": "Lưu ý",
-                "investMore": "Mở thêm tài khoản tiết kiệm."
+                "investMore": "Mở thêm tài khoản tiết kiệm.",
+                "depositFrom": {
+                    "title": "Make more deposit for your collateral",
+                    "amount": "Amount",
+                    "amountDesc": "How much do you want to deposit?",
+                    "ok": "Make deposit",
+                    "cancel": "Cancel",
+                    "depositFailed": "Failed while depositing, please try again",
+                    "depositSuccess": "Your deposit was completed successfully"
+                }
             },
             "applicationDetail": {
                 "dueDays": "Ngày đáo hạn",
@@ -1785,6 +1825,7 @@
                 "tomo": "Ví TOMO",
                 "usdt": "Ví USDT",
                 "susd": "Ví SUSD",
+                "tusd": "To a TUSD address",
                 "batch": "Chuyển khoản tới nhiều người"
             },
             "yourBalance": "Số dư",
@@ -1799,7 +1840,8 @@
                 "eos": "Địa chỉ ví EOS",
                 "tomo": "Địa chỉ ví TOMO",
                 "usdt": "Địa chỉ ví USDT",
-                "susd": "Địa chỉ ví SUSD"
+                "susd": "Địa chỉ ví SUSD",
+                "tusd": "TUSD wallet address"
             },
             "phToAddress": "Email hoặc địa chỉ ví Ethereum của người nhận",
             "confirmMsg": "Bạn muốn chuyển {amount} CONSTANT tới {address}?",
@@ -1860,7 +1902,7 @@
                 "startDateLabel": "Ngày bắt đầu",
                 "endDateLabel": "Ngày kết thúc",
                 "toolTipCollateral": "\nĐây là khoản thế chấp cần có để vay được {exchangeUnit}. Giá trị tài sản thế chấp được tính theo giá thị trường {exchangeRate}.        ",
-                "walletAddressLabel": "Địa chỉ ví {symbol} của bạn",
+                "walletAddressLabel": "Which {symbol} wallet should we return your collateral to?",
                 "walletAlias": "0x687C906b2....8bd9369242e",
                 "moreInfo": "Bạn sẽ nhận được khoản vay ngay khi phần tài sản thế chấp được xác nhận trên chuỗi khối. Thời gian dự kiến: 2 phút cho ETH và 10 phút cho BTC.",
                 "monthLoan": "{term} tháng",
@@ -1910,7 +1952,14 @@
                 "borrowMore": "Vay thêm",
                 "termField": "Kì hạn",
                 "termUnit": "{period} tháng",
-                "termUnit1": "{period} tháng"
+                "termUnit1": "{period} tháng",
+                "loanAmount": "Loan amount:",
+                "collaterals": "Collateral:",
+                "term": "Term:",
+                "interestedRate": "Interest rate:",
+                "interestedRateValue": "{percent} APR",
+                "matchingFee": "Matching fee:",
+                "matchingFeeValue": "1% of loan amount"
             },
             "history": {
                 "itemTpl": "\n          <div name=\"loan-info-container\">\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Khoản vay:</span>\n              <span name=\"loan-info-value\">{loanAmount}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Lãi suất:</span>\n              <span name=\"loan-info-value\">{interestedRate}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Thế chấp:</span>\n              <span name=\"loan-info-value\">{collaterals}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Thời hạn:</span>\n              <span name=\"loan-info-value\">{term}</span>\n            </div>\n          </div>\n        ",
@@ -1956,12 +2005,32 @@
                 "inValidWalletAddress": "Địa chỉ ví không hợp lệ",
                 "rangeInterestRate": "Lãi suất phải nằm trong khoảng từ {min}% tới {max}%"
             },
+            "depositCollateral": {
+                "collateralTypeLabel": "Collateral type",
+                "walletAddressLabel": "Your {symbol} wallet address",
+                "walletAlias": "0x687C906b2....8bd9369242e",
+                "generateWallet": "Generate wallet address"
+            },
             "learnMore": "Tìm hiểu thêm",
             "listApplications": {
                 "heading": "Các khoản vay",
-                "createdDate": "Ngày tạo",
+                "amount": "AMOUNT (USD)",
+                "createdDate": "Created at",
+                "endTerm": "Term ends",
                 "principal": "Tiền gốc",
-                "interest": "Tiền lãi: +{interest}%/năm",
+                "interests": "INTEREST",
+                "created": "Created: ",
+                "cancel": "Cancel",
+                "dueDays": "Due: ",
+                "getCollateral": "Recall excess",
+                "payOffLoan": "Repay",
+                "depositMatched": "Top up",
+                "collateral": "COLLATERAL",
+                "collateralValue": "COLLATERAL VALUE",
+                "collateralValueDesc": "This represents your collateral value as a percentage of your loan. It accounts for the interest accrued so far, as well as the repayment fee should you choose to repay today. If it falls to 110%, your collateral will be liquidated, and the difference refunded to you.",
+                "liquidWaring": "your collateral will be liquidated, Please top up more collateral...",
+                "interestPrice": "Interest:",
+                "yourLoan": "Your loans ({matched})",
                 "status": "Trạng thái",
                 "mapStatus": {
                     "pending": "Đang chờ",
@@ -1975,6 +2044,68 @@
                     "rejected": "Đã từ chối",
                     "expired": "Hết hạn",
                     "fullPayment": "Thanh toán hết"
+                },
+                "mapStatus1": {
+                    "pending": "Pending",
+                    "approved": "Approved",
+                    "rejected": "Rejected",
+                    "paid": "Paid",
+                    "tnxPending": "Transaction Pending",
+                    "done": "Done",
+                    "repayPending": "Repay Pending",
+                    "repayFail": "Repay Fail",
+                    "repayUpPending": "Repay Up Pending",
+                    "repayUpFail": "Repay Up Fail",
+                    "repayDownPending": "Repay Down Pending",
+                    "repayDownFail": "Repay Down Fail",
+                    "payoffPending": "Payoff Pending",
+                    "payoffFail": "Payoff Fail",
+                    "fillPending": "Fill Pending",
+                    "fillFail": "Fill Fail",
+                    "payoffDone": "Payoff done",
+                    "repayDownDone": "Repay Down Done"
+                },
+                "mapStatus2": {
+                    "pending": "Pending",
+                    "recieved": "Matching",
+                    "accepted": "Matched",
+                    "payingInterest": "Interest due",
+                    "done": "Closed",
+                    "withdrawed": "Withdrawn",
+                    "tnxFailed": "Please try again",
+                    "cancelled": "Cancelled",
+                    "rejected": "Error occurred",
+                    "timeout": "Timed out",
+                    "chainBorrowPending": "Please try again",
+                    "chainBorrowOk": "Success",
+                    "chainBorrowFailed": "Please try again",
+                    "chainCancelPending": "Cancel",
+                    "chainCancelOk": "Cancelled",
+                    "chainCancelFailed": "Please try again",
+                    "chainBorrowCancel": "Cancelled",
+                    "creating": "Processing"
+                },
+                "getRemainCollateral": "\n          Are you sure you want to recall <strong>{valueAvailable} {symbol}</strong> to bring your collateral value back to the minimum required amount?\n        ",
+                "actionsModal": {
+                    "cancel": "Cancel",
+                    "confirm": "Confirm"
+                },
+                "amountLabel": "Loan amount",
+                "feePayoffLabel": "Early repayment fee  ",
+                "feePayoffDesc": " If less than 75% of your term has elapsed, the early repayment fee is 50% of the interest on your remaining term. If more than 75% has elapsed, 100% of the interest on the entire term is due.",
+                "matchingFee": "Matching fee",
+                "interestEarly": "Interest due to date",
+                "interestOnTime": "Interest due",
+                "totalRepayment": "Total repayment",
+                "errorRemainCollateral": "You can not to get the remaining collateral back at the moment",
+                "depositFrom": {
+                    "title": "Make more deposit for your collateral",
+                    "amount": "Amount",
+                    "amountDesc": "How much do you want to deposit?",
+                    "ok": "Make deposit",
+                    "cancel": "Cancel",
+                    "depositFailed": "Failed while depositing, please try again",
+                    "depositSuccess": "Your deposit was completed successfully"
                 }
             },
             "advice": {
@@ -1988,6 +2119,17 @@
                 "registerSuccess": "Đăng ký thành công",
                 "regiserFail": "Đăng ký thất bại"
             }
+        },
+        "proLending": {
+            "watchBoard": {
+                "invest": {
+                    "title": "Investments"
+                },
+                "borrow": {
+                    "title": "Borrows"
+                }
+            },
+            "balances": "Balances"
         },
         "bottomBannerText": "Bạn xứng đáng với trải nghiệm dịch vụ tốt hơn",
         "bottomBannerButton": "Đăng kí tài khoản",
@@ -2463,6 +2605,11 @@
             "sendFee": "Phí chuyển tiền: {fee}{currency}",
             "fiatAmountResultLabel": "Theo tỉ giá thị trường hôm nay, bạn sẽ nhận được: {fiatAmount}{fiatCurrency}",
             "explain": "*Tính cả phí chuyển tiền, bạn có thể chuyển tối đa {amountExcludeFee} {currency}."
+        },
+        "paymentMethod": "Payment method",
+        "email": {
+            "name": "Recipient",
+            "placeholder": "Enter receving email address"
         },
         "currencyDropdownLabel": "Đơn vị tiền tệ",
         "sellBtn": "Chuyển tiền",
@@ -3257,6 +3404,7 @@
         "title5": "Những người bạn đã đăng kí",
         "title6": "Mời thêm 7 người bạn nữa tham gia để nhận thưởng",
         "title7": "Mời thêm {num} người bạn nữa để nhận mức lãi suất ưu đãi",
+        "title8": "INVITE MORE PEERS, MORE REWARDS",
         "investment": "Cho các khoản đầu tư",
         "loans": "Cho các khoản vay",
         "loginRequired": "Xin vui lòng đăng nhập để tiếp tục.",
@@ -3326,6 +3474,89 @@
     "modules": {
         "faqs": {
             "title": "Những câu hỏi thường gặp"
+        }
+    },
+    "proLending": {
+        "watchBoard": {
+            "investments": "Orderbook",
+            "borrows": "Orderbook",
+            "interestSpread": "interest spread",
+            "interestSpreadValues": "0.10%",
+            "amount": "Amount(USD)",
+            "interest": "Interest(APR)",
+            "term": "Term(Days)",
+            "termValues": "{term}-Months"
+        },
+        "balances": {
+            "title": "Balances",
+            "withdraw": "Withdraw",
+            "withdrawFrom": {
+                "title": "Withdraw your crypto collateral",
+                "amount": "Amount",
+                "amountDesc": "How much do you want to withdraw?",
+                "address": "Your {name} wallet address",
+                "addressDesc": "Your cryptocurrency address to receiving your coins.",
+                "ok": "Ok",
+                "cancel": "cancel",
+                "withdrawFailed": "Failed while withdrawing, please try again",
+                "withdrawSuccess": "Your withdrawal was completed successfully"
+            }
+        },
+        "deposits": {
+            "title": "Deposits"
+        },
+        "openOrders": {
+            "title": "Your open orders",
+            "invest": "invest",
+            "borrow": "borrow",
+            "side": "Side",
+            "amount": "Amount(USD)",
+            "interest": "rate(APR)",
+            "term": "Days",
+            "date": "Date"
+        },
+        "investBooking": {
+            "messLoginFirst": "You must be login before make an investment!",
+            "messDepositFirst": "your account balance was not enough. You must be deposit before make an investment!",
+            "matchedSuccess": "Your invest had been matched successfully.",
+            "matchedFailed": "Your invest had been matched unsuccessfully, please try again.",
+            "deposit": {
+                "title": "Investments deposit",
+                "depositButton": "MAKE DEPOSIT",
+                "depositNote": "Please deposit funds in your account to start investing."
+            },
+            "form": {
+                "title": "Investments",
+                "amount": "Amount",
+                "interest": "Min. interest",
+                "term": "Term",
+                "termMonth": "{month}-Month",
+                "investButton": "PLACE INVEST ORDER",
+                "invalidAmount": "Amount must be less than {maxAmount}",
+                "getFeeFailed": "Can not get fee in this time, please try again.",
+                "fee": "Invest fee: <span class=\"amount\">{fee}</span> {currency}",
+                "amountDesc": "<p>How much do you want to lend?</p>",
+                "termDesc": "<p>This is the maximum amount of time you want to lend your money out for. Unloaned portions are protected by the FDIC, and can be withdrawn at any time.</p>",
+                "interestDesc": "<p>This is the minimum rate you are willing to accept for your loan. If there is a borrower willing to pay more, you will earn the higher interest rate.</p>"
+            }
+        },
+        "borrowBooking": {
+            "title": "Borrow",
+            "exchange": {
+                "amountLabel": "Amount",
+                "collateralLabel": "Collateral required",
+                "walletAddressLabel": "Your {symbol} wallet address",
+                "walletAlias": "0x687C906b2....8bd9369242e",
+                "maxRate": "Maximum rate (APR)",
+                "minTerm": "Term",
+                "maxRateTooltip": "This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.",
+                "minTermTooltip": "This is the minimum amount of time you want to borrow.",
+                "buttonText": "Place borrow order"
+            },
+            "createdSuccess": "Your borrow had been created successfully",
+            "errorMsgs": {
+                "notEnoughBalance": "Your balance is not enough to make borrow!"
+            }
         }
     }
 }

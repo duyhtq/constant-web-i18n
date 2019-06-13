@@ -1958,8 +1958,8 @@
                 "term": "Kì hạn:",
                 "interestedRate": "Lãi suất:",
                 "interestedRateValue": "{percent}%/năm",
-                "matchingFee": "Matching fee:",
-                "matchingFeeValue": "1% of loan amount"
+                "matchingFee": "Phí khớp lệnh:",
+                "matchingFeeValue": "1% giá trị khoản vay"
             },
             "history": {
                 "itemTpl": "\n          <div name=\"loan-info-container\">\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Khoản vay:</span>\n              <span name=\"loan-info-value\">{loanAmount}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Lãi suất:</span>\n              <span name=\"loan-info-value\">{interestedRate}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Thế chấp:</span>\n              <span name=\"loan-info-value\">{collaterals}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Thời hạn:</span>\n              <span name=\"loan-info-value\">{term}</span>\n            </div>\n          </div>\n        ",
@@ -2006,31 +2006,31 @@
                 "rangeInterestRate": "Lãi suất phải nằm trong khoảng từ {min}% tới {max}%"
             },
             "depositCollateral": {
-                "collateralTypeLabel": "Collateral type",
-                "walletAddressLabel": "Your {symbol} wallet address",
+                "collateralTypeLabel": "Tài sản thế chấp",
+                "walletAddressLabel": "Địa chỉ ví {symbol} của bạn",
                 "walletAlias": "0x687C906b2....8bd9369242e",
-                "generateWallet": "Generate wallet address"
+                "generateWallet": "Tạo địa chỉ ví"
             },
             "learnMore": "Tìm hiểu thêm",
             "listApplications": {
                 "heading": "Các khoản vay",
-                "amount": "AMOUNT (USD)",
-                "createdDate": "Created at",
-                "endTerm": "Term ends",
+                "amount": "SỐ TIỀN (USD)",
+                "createdDate": "Được tạo lúc",
+                "endTerm": "Ngày đáo hạn",
                 "principal": "Tiền gốc",
-                "interests": "INTEREST",
-                "created": "Created: ",
-                "cancel": "Cancel",
-                "dueDays": "Due: ",
-                "getCollateral": "Recall excess",
-                "payOffLoan": "Repay",
-                "depositMatched": "Top up",
-                "collateral": "COLLATERAL",
-                "collateralValue": "COLLATERAL VALUE",
-                "collateralValueDesc": "This represents your collateral value as a percentage of your loan. It accounts for the interest accrued so far, as well as the repayment fee should you choose to repay today. If it falls to 110%, your collateral will be liquidated, and the difference refunded to you.",
-                "liquidWaring": "your collateral will be liquidated, Please top up more collateral...",
-                "interestPrice": "Interest:",
-                "yourLoan": "Your loans ({matched})",
+                "interests": "LÃI SUẤT",
+                "created": "Được tạo lúc: ",
+                "cancel": "Huỷ",
+                "dueDays": "Ngày đáo hạn: ",
+                "getCollateral": "Nhận lại phần dư",
+                "payOffLoan": "Hoàn trả",
+                "depositMatched": "Nộp thêm",
+                "collateral": "THẾ CHẤP",
+                "collateralValue": "Giá trị thế chấp",
+                "collateralValueDesc": "Con số này thể hiện giá trị tài sản thế chấp của bạn dưới dạng phần trăm của khoản vay, bao gồm cả phần lãi tích lũy cho đến thời điểm hiện tại và phí trả nợ trước hạn nếu bạn hoàn trả khoản vay ngay lúc này. Nếu nó giảm xuống đến 110%, tài sản thế chấp của bạn sẽ được thanh lý, và phần chênh lệch sẽ được hoàn trả cho bạn.",
+                "liquidWaring": "Tài sản thế chấp của bạn chuẩn bị bị thanh lí. Xin vui lòng bỏ thêm tài sản thế chấp...",
+                "interestPrice": "Lãi suất:",
+                "yourLoan": "Khoản vay của bạn ({matched})",
                 "status": "Trạng thái",
                 "mapStatus": {
                     "pending": "Đang chờ",
@@ -2046,14 +2046,14 @@
                     "fullPayment": "Thanh toán hết"
                 },
                 "mapStatus1": {
-                    "pending": "Pending",
-                    "approved": "Approved",
-                    "rejected": "Rejected",
-                    "paid": "Paid",
-                    "tnxPending": "Transaction Pending",
-                    "done": "Done",
-                    "repayPending": "Repay Pending",
-                    "repayFail": "Repay Fail",
+                    "pending": "Đang chờ",
+                    "approved": "Đã xác nhận",
+                    "rejected": "Đã từ chối",
+                    "paid": "Đã thanh toán",
+                    "tnxPending": "Đang xử lí giao dịch",
+                    "done": "Hoàn thành",
+                    "repayPending": "Đang hoàn trả",
+                    "repayFail": "Hoàn trả không thành công",
                     "repayUpPending": "Repay Up Pending",
                     "repayUpFail": "Repay Up Fail",
                     "repayDownPending": "Repay Down Pending",
@@ -2608,8 +2608,8 @@
         },
         "paymentMethod": "Hình thức thanh toán",
         "email": {
-            "name": "Recipient",
-            "placeholder": "Enter receving email address"
+            "name": "Người nhận",
+            "placeholder": "Nhập địa chỉ email người nhận"
         },
         "currencyDropdownLabel": "Đơn vị tiền tệ",
         "sellBtn": "Chuyển tiền",
@@ -3404,7 +3404,7 @@
         "title5": "Những người bạn đã đăng kí",
         "title6": "Mời thêm 7 người bạn nữa tham gia để nhận thưởng",
         "title7": "Mời thêm {num} người bạn nữa để nhận mức lãi suất ưu đãi",
-        "title8": "INVITE MORE PEERS, MORE REWARDS",
+        "title8": "Mời thêm bạn để nhận mức lãi suất ưu đãi",
         "investment": "Cho các khoản đầu tư",
         "loans": "Cho các khoản vay",
         "loginRequired": "Xin vui lòng đăng nhập để tiếp tục.",
@@ -3478,18 +3478,18 @@
     },
     "proLending": {
         "watchBoard": {
-            "investments": "Orderbook",
-            "borrows": "Orderbook",
-            "interestSpread": "interest spread",
+            "investments": "Danh sách lệnh",
+            "borrows": "Danh sách lệnh",
+            "interestSpread": "Chênh lệch lãi suất",
             "interestSpreadValues": "0.10%",
-            "amount": "Amount(USD)",
-            "interest": "Interest(APR)",
-            "term": "Term(Days)",
-            "termValues": "{term}-Months"
+            "amount": "Số tiền (USD)",
+            "interest": "Lãi suất (%/năm)",
+            "term": "Kì hạn (Ngày)",
+            "termValues": "{term} tháng"
         },
         "balances": {
-            "title": "Balances",
-            "withdraw": "Withdraw",
+            "title": "Số dư",
+            "withdraw": "Rút tiền",
             "withdrawFrom": {
                 "title": "Withdraw your crypto collateral",
                 "amount": "Amount",
@@ -3506,14 +3506,14 @@
             "title": "Deposits"
         },
         "openOrders": {
-            "title": "Your open orders",
-            "invest": "invest",
-            "borrow": "borrow",
-            "side": "Side",
-            "amount": "Amount(USD)",
-            "interest": "rate(APR)",
-            "term": "Days",
-            "date": "Date"
+            "title": "Danh sách lệnh của bạn",
+            "invest": "đầu tư",
+            "borrow": "vay",
+            "side": "Bên cạnh",
+            "amount": "Số tiền (USD)",
+            "interest": "Lãi suất (%/năm)",
+            "term": "Ngày",
+            "date": "Ngày"
         },
         "investBooking": {
             "messLoginFirst": "Xin vui lòng đăng nhập để thực hiện đầu tư!",

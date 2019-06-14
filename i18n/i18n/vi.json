@@ -1903,7 +1903,7 @@
                 "endDateLabel": "Ngày kết thúc",
                 "toolTipCollateral": "\nĐây là khoản thế chấp cần có để vay được {exchangeUnit}. Giá trị tài sản thế chấp được tính theo giá thị trường {exchangeRate}.        ",
                 "walletAddressLabel": "Bạn muốn nhận lại phần tài sản thế chấp qua loại ví {symbol} nào?",
-                "walletAlias": "0x687C906b2....8bd9369242e",
+                "walletAlias": "Nhập địa chỉ ví {symbol} của bạn",
                 "moreInfo": "Bạn sẽ nhận được khoản vay ngay khi phần tài sản thế chấp được xác nhận trên chuỗi khối. Thời gian dự kiến: 2 phút cho ETH và 10 phút cho BTC.",
                 "monthLoan": "{term} tháng",
                 "monthsLoan": "{term} tháng"
@@ -3491,19 +3491,19 @@
             "title": "Số dư",
             "withdraw": "Rút tiền",
             "withdrawFrom": {
-                "title": "Withdraw your crypto collateral",
-                "amount": "Amount",
-                "amountDesc": "How much do you want to withdraw?",
-                "address": "Your {name} wallet address",
-                "addressDesc": "Your cryptocurrency address to receiving your coins.",
+                "title": "Rút lại tài khoản thế chấp",
+                "amount": "Số lượng",
+                "amountDesc": "Bạn muốn rút bao nhiêu tiền?",
+                "address": "Địa chỉ ví {name} của bạn",
+                "addressDesc": "Địa chỉ ví để nhận tiền mã hoá.",
                 "ok": "Ok",
-                "cancel": "cancel",
-                "withdrawFailed": "Failed while withdrawing, please try again",
-                "withdrawSuccess": "Your withdrawal was completed successfully"
+                "cancel": "Huỷ",
+                "withdrawFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
+                "withdrawSuccess": "Rút tiền thành công"
             }
         },
         "deposits": {
-            "title": "Deposits"
+            "title": "Nộp tiền"
         },
         "openOrders": {
             "title": "Danh sách lệnh của bạn",

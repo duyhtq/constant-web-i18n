@@ -1903,7 +1903,7 @@
                 "endDateLabel": "End date",
                 "toolTipCollateral": "\n          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.\n        ",
                 "walletAddressLabel": "Which {symbol} wallet should we return your collateral to?",
-                "walletAlias": "0x687C906b2....8bd9369242e",
+                "walletAlias": "Enter your {symbol} wallet address",
                 "moreInfo": "Your funds will reach you as soon as your collateral is confirmed on its blockchain.  ETA: 2 minutes for ETH and 10 minutes for BTC.",
                 "monthLoan": "{term}-month loan",
                 "monthsLoan": "{term}-month loan"
@@ -3203,7 +3203,7 @@
                 "btnKyc1": "<a>Verify your ID</a> to invest",
                 "minRate": "Your minimum interest rate",
                 "maxRate": "Your maximum interest rate",
-                "maxTerm": "Maximum term",
+                "maxTerm": "Lending end date",
                 "minTerm": "Minimum term",
                 "amount": "Amount",
                 "termMonth": "{month}-Month",

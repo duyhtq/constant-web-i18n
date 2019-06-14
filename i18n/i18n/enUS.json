@@ -3204,7 +3204,7 @@
                 "minRate": "Your minimum interest rate",
                 "maxRate": "Your maximum interest rate",
                 "maxTerm": "Lending end date",
-                "minTerm": "Minimum term",
+                "minTerm": "Length of term (days)",
                 "amount": "Amount",
                 "termMonth": "{month}-Month",
                 "tooltip": {

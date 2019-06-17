@@ -3203,8 +3203,8 @@
                 "btnKyc1": "<a>Verify your ID</a> to invest",
                 "minRate": "Your minimum interest rate",
                 "maxRate": "Your maximum interest rate",
-                "maxTerm": "Lending end date",
-                "minTerm": "Length of term (days)",
+                "maxTerm": "Length of term",
+                "minTerm": "Length of term",
                 "amount": "Amount",
                 "termMonth": "{month}-Month",
                 "tooltip": {

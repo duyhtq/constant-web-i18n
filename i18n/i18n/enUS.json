@@ -2752,11 +2752,11 @@
         }
     },
     "deposit": {
-        "title": "Your global USD bank account.",
+        "title": "Deposit USD or USD stablecoins here.",
         "availableInVn": "Available now in Vietnam.",
         "subTitle": {
-            "sub1": "This basic account offers you full FDIC insurance, instant international transfers, and 24/7 support with anything you need.",
-            "sub2": "It all starts here. Open an account in in less than a minute.",
+            "sub1": "Deposit funds to make an investment, repay a loan, or simply keep your money secure. Enjoy instant, international transfers, smart contract security for crypto funds, and full FDIC insurance on fiat deposits.",
+            "sub2": "It all starts here. Make a deposit in in less than a minute.",
             "learnMore": "Learn more +"
         },
         "what": {
@@ -2766,17 +2766,17 @@
             "whatCaption3": "Withdraw anytime",
             "whatDesc0": "Save in USD, and protect your money against inflation and instability.",
             "whatDesc1": "Send money home. Do bigger business. All you need is an internet connection.",
-            "whatDesc2": "The FDIC insures each account up to $250K, so we store your money across 520 of them.",
-            "whatDesc3": "To any local bank account. Just enter your bank details and you’re good to go."
+            "whatDesc2": "The FDIC insures each account up to $250K, so we store your USD funds across 520 of them.",
+            "whatDesc3": "To any local bank account or wallet address. Just enter your details and you’re good to go."
         },
         "howItWorks": {
             "title": "How it works",
             "step1": "STEP 1",
             "title1": "You make a deposit",
-            "desc1": "Send any currency to your local Constant Trust. If it’s not USD, we convert it.",
+            "desc1": "Make a bank transfer of USD, or wallet transfer of one of our supported stablecoins. If you have a different fiat currency, we convert it for you.",
             "step2": "STEP 2",
             "title2": "We keep it safe",
-            "desc2": "Your USD funds are held safely in FDIC insured US bank accounts with a total coverage of $130M.\n",
+            "desc2": "Your USD funds are held safely in FDIC insured US bank accounts with a total coverage of $130M. Your stablecoins are protected by thousands of nodes and smart contract security.",
             "step3": "STEP 3",
             "title3": "You get more",
             "desc3": "Congratulations. You now have access to global transfers, secured investments, and more."

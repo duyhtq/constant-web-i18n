@@ -1775,7 +1775,7 @@
         },
         "transfer": {
             "title": "Transfer",
-            "caption": "How much CONST do you want to send?",
+            "caption": "How much do you want to send?",
             "transferType": "Transfer Type",
             "transferTypeCaption": {
                 "email": "Via Email",

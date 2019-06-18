@@ -1775,7 +1775,7 @@
         },
         "transfer": {
             "title": "Transfer",
-            "caption": "How much do you want to send?",
+            "caption": "How much CONST do you want to send?",
             "transferType": "Transfer Type",
             "transferTypeCaption": {
                 "email": "Via Email",
@@ -2747,7 +2747,7 @@
     "transferCrypto": {
         "info": {
             "title": "Withdraw to your crypto wallet.",
-            "desc1": "Instantly send our native stablecoin (CONST) to any ETH, EOS, TOMO, USDT, or TUSD address. Just enter the amount, and select where you want it to go.",
+            "desc1": "Instantly withdraw our native stablecoin (CONST) to any ETH, EOS or TOMO address. Or, withdraw USDT, TUSD or USDC to a compatible wallet. Just enter the amount, and select where you want it to go.",
             "desc2": "When it reaches the other party, they don’t pay anything either. So send money home, do business with the world, and get it done instantly. That’s what it means to be global."
         }
     },

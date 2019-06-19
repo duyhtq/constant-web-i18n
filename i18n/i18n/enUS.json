@@ -1046,8 +1046,8 @@
         },
         "proSaving": {
             "listApplications": {
-                "noLoans": "You don't have any loans",
-                "noInvestment": "You don't have any investment",
+                "noLoans": "Request your first fixed rate loan in 30 seconds.",
+                "noInvestment": "Make your first investment of any amount today.",
                 "totalInterestEarned": "Interest earned",
                 "noRecord": "You have not made any investments yet.",
                 "getListFailed": "Sorry, something went wrong. Please try again.",
@@ -1775,7 +1775,7 @@
         },
         "transfer": {
             "title": "Transfer",
-            "caption": "How much CONST do you want to send?",
+            "caption": "How much do you want to send?",
             "transferType": "Transfer Type",
             "transferTypeCaption": {
                 "email": "Via Email",

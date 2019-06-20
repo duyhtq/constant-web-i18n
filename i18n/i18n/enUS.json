@@ -1046,7 +1046,7 @@
         },
         "proSaving": {
             "listApplications": {
-                "noLoans": "Request your first fixed rate loan",
+                "noLoans": "Request your first fixed rate loan here.",
                 "noInvestment": "Make your first investment of any amount today.",
                 "totalInterestEarned": "Interest earned",
                 "noRecord": "You have not made any investments yet.",

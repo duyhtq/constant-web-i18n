@@ -368,7 +368,7 @@
             "myInvestments": "My Investments",
             "cryptoLoanHistory": "My Crypto Loans",
             "viewLoanDetail": "View loan details here",
-            "viewConstantWallet": "View constant wallet here",
+            "viewConstantWallet": "Receive CONST here",
             "viewInvestmentDetail": "View investment details here",
             "batchTransfer": "Batch transfers",
             "referralInfo": "Referral Information",
@@ -1046,7 +1046,7 @@
         },
         "proSaving": {
             "listApplications": {
-                "noLoans": "Request your first fixed rate loan in 30 seconds.",
+                "noLoans": "Request your first fixed rate loan",
                 "noInvestment": "Make your first investment of any amount today.",
                 "totalInterestEarned": "Interest earned",
                 "noRecord": "You have not made any investments yet.",

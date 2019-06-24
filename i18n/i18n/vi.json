@@ -12,6 +12,7 @@
         },
         "common": {
             "error": "Đã xảy ra lỗi!",
+            "retry": "Server error, please retry",
             "required": "Bắt buộc",
             "copied": "Đã sao chép",
             "remove": "Xoá",
@@ -175,6 +176,7 @@
         "walletOrder": "Số dư và Giao dịch",
         "hello": "Chào",
         "landingPro": "Pro",
+        "yourWallet": "Wallet",
         "countryLanguage": {
             "title": "Ngôn ngữ",
             "okBtn": "Đồng ý",
@@ -298,7 +300,16 @@
             "createdBankExisted": "Tài khoản ngân hàng này đã được đăng ký. Xin vui lòng thử lại.",
             "trial_term_deposit_not_available": "Chương trình đăng kí nhận thử 1000 Constant chỉ áp dụng cho khách hàng mới.",
             "not_pro_saving_user": "Xin lỗi. Chúng tôi chỉ cung cấp dịch vụ này tại Mỹ cho những nhà đầu tư đã được SEC công nhận.",
-            "otpNotMatched": "Mã OTP không chính xác!"
+            "otpNotMatched": "Mã OTP không chính xác!",
+            "userDocumentCannotChange": "You cannot change KYC information. Please contact admin for support.",
+            "missingUserDocuments": "User hasn't had any document yet!",
+            "userFirstNameInvalid": "FirstName is invalid",
+            "userLastNameInvalid": "LastName is invalid",
+            "userDOBInvalid": "DOB is invalid",
+            "userTaxCountryInvalid": "TaxCountry is invalid",
+            "userTaxIDNumberInvalid": "TaxIDNumber is invalid",
+            "userPhoneNumberInvalid": "PhoneNumber is invalid",
+            "systemError": "System error"
         }
     },
     "errorCode": {
@@ -524,6 +535,7 @@
             "value": "Giá trị",
             "amount": "Số tiền",
             "accept": "Đồng ý",
+            "detail": "View Detail",
             "cancel": "Huỷ",
             "cancelMess": "Bạn chắc chắn muốn huỷ giao dịch này?",
             "approve": "Xác nhận thanh toán",
@@ -560,6 +572,7 @@
                 "content": {
                     "Cancel": "\n<div>\n              <p>Bạn vừa {Type}<strong>{Amount}</strong> Constant với tỉ giá <strong>{Price}</strong>{Currency}.</p>\n              <p>Nếu bạn muốn huỷ lệnh này, xin vui lòng chọn nút \"Huỷ giao dịch\" ở bên dưới. Nếu không, xin vui lòng đóng cửa sổ này.</p>\n            </div>\n          ",
                     "Approve": "\n<div>\n              <p>Bạn đang mua <strong>{Amount} Constant</strong> với giá <strong>{Price}</strong> {Currency} mỗi Constant.</p>\n              <p>Nếu bạn đã gửi <strong>{Total} {Currency}</strong> tới tài khoản ngân hàng của người bán, xin vui lòng ấn “Xác nhận giao dịch” dưới đây.</p> \n              <p>Nếu chưa, xin vui lòng gửi <strong>{Total} {Currency}</strong> tới tài khoản ngân hàng của người bán. Hãy nhớ ghi kèm mã giao dịch <ref> trong phần nội dung chuyển khoản.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Tên ngân hàng:</span>\n                  <strong>{bank_name}</strong>\n                </div>\n                <div>\n                  <span>Tên tài khoản:</span>\n                  <strong>{bank_account_name}</strong>\n                </div>\n                <div>\n                  <span>Số tài khoản: </span>\n                  <strong>{bank_account_number}</strong>\n                </div>\n                <div>\n                  <span>Số tiền: </span>\n                  <strong>{Total}&nbsp;{Currency}</strong>\n                </div>\n                <div>\n                  <span>Mã giao dịch: </span>\n                  <strong>{Reference}</strong>\n                </div>\n                <div>\n                    <span>Quốc gia: </span>\n                    <strong>{bankCountry}</strong>\n                 </div>\n              </div>\n              <br />\n              <p>LƯU Ý: nếu bạn không thực hiện chuyển khoản trong 30 phút, giao dịch sẽ tự động bị huỷ.</p>\n             </div>\n          ",
+                    "ApproveUs": "\n          <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Account Name:</span>\n                  <strong>{bank_account_name}</strong>\n                </div>\n                <div>\n                  <span>Account Number: </span>\n                  <strong>{bank_account_number}</strong>\n                </div>\n                <div>\n                  <span>Amount: </span>\n                  <strong>{Total}&nbsp;{Currency}</strong>\n                </div>\n                <div>\n                  <span>Reference: </span>\n                  <strong>{Reference}</strong>\n                </div>\n                <div>\n                    <span>Bank Country: </span>\n                    <strong>{bankCountry}</strong>\n                 </div>\n              </div>\n              <br />\n              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>\n             </div>\n          ",
                     "ApproveZelle": "\n<div>\n              <p>Bạn đang mua <strong>{Amount} Constant</strong> với giá <strong>{Price}</strong> {Currency} mỗi Constant.</p>\n              <p>Nếu bạn đã gửi <strong>{Total} {Currency}</strong> tới tài khoản ngân hàng của người bán, xin vui lòng ấn “Xác nhận giao dịch” dưới đây.</p> \n              <p>Nếu chưa, xin vui lòng gửi <strong>{Total} {Currency}</strong> tới tài khoản ngân hàng của người bán. Hãy nhớ ghi kèm mã giao dịch <ref> trong phần nội dung chuyển khoản.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Hình thức thanh toán:</span>\n                  <strong>Zelle</strong>\n                </div>\n                <div>\n                  <span>Địa chỉ email:</span>\n                  <strong>{Email}</strong>\n                </div>\n             </div>\n          ",
                     "Finish": "\n<div>\n                <p>Bạn đã đặt lệnh bán <strong>{Amount} Constant</strong> với giá <strong>{Price} </strong> {Currency} 1 Constant.</p>\n                <p>Khi nhận được chuyển khoản số tiền <strong>{TotalVND} {Currency}</strong>, bạn có thể gửi Constant đi bằng cách nhấn nút bên dưới.</p>\n                <p>LƯU Ý: Vui lòng không gửi Constant khi bạn chưa nhận được chuyển khoản. Nếu bạn chưa nhận được tiền trong vòng 30 phút, \n vui lòng liên hệ Constant tại hello@constant.money.</p>\n            </div>          "
                 }
@@ -742,6 +755,7 @@
             "toAddress": "Tới địa chỉ",
             "fromEmail": "Từ Email",
             "viewDetail": "Thông tin chi tiết",
+            "currency": "Currency",
             "noHistoryData": "Mua Constant",
             "fee": "phí",
             "loadMore": "Tải thêm",
@@ -777,7 +791,8 @@
                     "waitAgentTransferMoney": "Đang chuyển tiền",
                     "transferredMoneyToAgent": " ",
                     "done": "Thành công",
-                    "inProgress": "Đang xử lí giao dịch"
+                    "inProgress": "Đang xử lí giao dịch",
+                    "approving": "Waiting for admin approve"
                 }
             },
             "orderType": {
@@ -802,7 +817,8 @@
                 "5": "Đổi Constant",
                 "6": "Đã huỷ",
                 "7": "Hoàn thành",
-                "8": "Tạm giữ"
+                "8": "Tạm giữ",
+                "12": "Waiting Approving"
             },
             "dialog": {
                 "cancel": {
@@ -835,7 +851,8 @@
                     "waitAgentTransferMoney": "Đang chuyển tiền",
                     "transferredMoneyToAgent": "Số dư hiện tại: {balance} USD. Để đầu tư {investAmount} USD, xin vui lòng nộp thêm {remainAmount} USD vào tài khoản.",
                     "done": "Thành công",
-                    "inProgress": "Đang xử lí giao dịch"
+                    "inProgress": "Đang xử lí giao dịch",
+                    "approving": "Waiting for admin approve"
                 }
             },
             "bankInfo": {
@@ -856,8 +873,11 @@
             "approve": "Xác nhận",
             "approveMess": "Bạn đồng ý thực hiện lệnh này?",
             "agent": {
-                "approveSuccessfully": "Thực hiện lệnh thành công"
-            }
+                "approveSuccessfully": "Thực hiện lệnh thành công",
+                "cancelSuccessfully": "Your order have been cancelled successfully"
+            },
+            "cancel": "Cancel",
+            "cancelMess": "Are you sure you want to cancel this order?"
         },
         "accountLevel": {
             "head_text": "Chỉ mất vài phút để thực hiện xác minh danh tính. Thông tin cá nhân của bạn được bảo mật tuyệt đối.",
@@ -1072,6 +1092,7 @@
                 "getRemainCollateral": "Nhận lại phần thế chấp còn lại",
                 "payOffLoan": "Hoàn trả",
                 "payOffLoanTitle": "Hoàn trả khoản vay",
+                "allStatus": "All",
                 "termStatus": {
                     "created": "Khớp lệnh",
                     "pending": "Đang chờ",
@@ -1277,7 +1298,8 @@
             "requiredUsername": "Vui lòng nhập địa chỉ email",
             "loginFailure": "Hãy đảm bảo rằng email và mật khẩu của bạn là chính xác.",
             "warningVerify": "Hãy xác minh tài khoản để bắt đầu giao dịch. {action}",
-            "warningVerifyNow": "Xác minh ngay"
+            "warningVerifyNow": "Xác minh ngay",
+            "two2faRequired": "2FA authentication is required for all users with balance over 1000 USD"
         },
         "forgetPassword": {
             "title": "Quên mật khẩu?",
@@ -1317,6 +1339,8 @@
             "lastName": "Họ",
             "placeholderLastName": "Nhập họ của bạn",
             "requiredLastName": "Yêu cầu điền Họ",
+            "passwordTooWeak": "Please try a stronger password with at least 2 of the following: 1 lowercase character, 1 uppercase character, 1 numeric character, and 1 special character.",
+            "passwordMedium": "This password is ok. To level up your security, choose a password that contains all of the following: at least 1 lowercase character, 1 uppercase character, 1 numeric character, and 1 special character.",
             "notValidFirstName": "Tên phải có từ 3 đến 30 ký tự bao gồm các ký tự từ a-z, 0-9 _, - (gạch ngang), và . (dấu chấm).",
             "notValidLastName": "Họ phải có từ 3 đến 30 ký tự bao gồm các ký tự từ a-z, 0-9 _, - (gạch ngang), và . (dấu chấm).",
             "email": "Email của bạn",
@@ -1783,6 +1807,7 @@
             },
             "yourBalance": "Số dư",
             "validateMaxInput": "Xin vui lòng nhập số nhỏ hơn hoặc bằng: ${amount}",
+            "validateMaxInputBalanceZero": "You don't have enough balance",
             "transferFeeLabel": "Phí chuyển khoản",
             "subTitle": "Miễn phí. Tới bất cứ ai trên toàn thế giới.",
             "introTitle": "Chuyển khoản tới mọi người ở khắp nơi trên thế giới. Hoàn toàn miễn phí.",
@@ -1819,30 +1844,20 @@
             "title": "Chuyển khoản",
             "caption": "Chuyển CONST tới ví mà bạn muốn",
             "transferType": "Loại ví",
-            "transferTypeCaption": {
-                "eth": "Ví ETH",
-                "eos": "Ví EOS",
-                "tomo": "Ví TOMO",
-                "usdt": "Ví USDT",
-                "susd": "Ví SUSD",
-                "tusd": "Tới ví TUSD",
-                "batch": "Chuyển khoản tới nhiều người"
+            "transferTypeCaption": "To an {currency} address",
+            "transferTypesCaption": {
+                "eth": "To an ETH address",
+                "eos": "To an EOS address",
+                "tomo": "To a TOMO address"
             },
             "yourBalance": "Số dư",
             "validateMaxInput": "Xin vui lòng nhập số nhỏ hơn hoặc bằng: ${amount}",
+            "validateMaxInputBalanceZero": "You don't have enough balance",
             "transferFeeLabel": "Phí chuyển khoản",
             "subTitle": "Miễn phí. Tới bất cứ ai trên toàn thế giới.",
             "introTitle": "Chuyển khoản tới mọi người ở khắp nơi trên thế giới. Hoàn toàn miễn phí.",
             "transferBtn": "Chuyển khoản",
-            "address": {
-                "email": "Email người nhận",
-                "eth": "Địa chỉ ví ETH",
-                "eos": "Địa chỉ ví EOS",
-                "tomo": "Địa chỉ ví TOMO",
-                "usdt": "Địa chỉ ví USDT",
-                "susd": "Địa chỉ ví SUSD",
-                "tusd": "Địa chỉ ví TUSD"
-            },
+            "address": "{currency} wallet address",
             "phToAddress": "Email hoặc địa chỉ ví Ethereum của người nhận",
             "confirmMsg": "Bạn muốn chuyển {amount} CONSTANT tới {address}?",
             "batchConfirmMsg": "Bạn muốn chuyển khoản tới những người có trong danh sách này?",
@@ -1883,7 +1898,13 @@
                 "question6": "Tôi có thể trả nợ trước hạn không?",
                 "answer6": "\n<p>Bạn hoàn toàn có thể trả nợ trước hạn. Trong trường hợp bạn trả nợ trước hạn tại thời điểm chưa qua 75% thời hạn vay, bạn sẽ cần phải trả lãi đến thời điểm đó và 50% lãi cho khoản thời gian còn lại.</p>\n<p>Nếu bạn trả nợ trước hạn tại thời điểm đã qua 75% thời hạn vay, bạn sẽ cần phải trả hết toàn bộ lãi suất của khoản vay như ban đầu để nhận lại phần tài sản thế chấp của mình.</p>        ",
                 "question7": "Nếu giá tăng, tôi có được nhận lại một phần tài sản thế chấp không?",
-                "answer7": "Có. Nếu giá tăng, bạn hoàn toàn có thể được lấy lại phần chênh lệnh. Tính năng này dự kiến sẽ có trên website của chúng tôi vào ngày 25/06/2019. Trong lúc đó, xin vui lòng liên hệ đội ngũ của chúng tôi qua Telegram, Email, hay Facebook để được hỗ trợ tốt nhất."
+                "answer7": "Có. Nếu giá tăng, bạn hoàn toàn có thể được lấy lại phần chênh lệnh. Tính năng này dự kiến sẽ có trên website của chúng tôi vào ngày 25/06/2019. Trong lúc đó, xin vui lòng liên hệ đội ngũ của chúng tôi qua Telegram, Email, hay Facebook để được hỗ trợ tốt nhất.",
+                "question8": "What is the LTV (Loan to Value) Ratio? Is it always the same?",
+                "answer8": "\n          <p>The LTV ratio for 1 year loans or shorter is 66%. That means we require 150% of the loan value in collateral. For each month after the first year, we require an extra 5% of the loan value in collateral.</p>\n          <p>For example, if you were to request a loan for 15 months, the collateral due would be 150% + (3*5)% = 165% of the loan value in collateral, which brings your LTV ratio to 60.6%.</p>\n        ",
+                "question9": "How do I make repayment?",
+                "answer9": "\n          <p>We’ll deduct your repayment directly from your Constant account balance. Adding funds is easy. You can do one or a combination of the following:</p>\n          <p>1) Transfer USD to one of our FDIC-insured bank accounts</p>\n          <p>2) Send CONST to your Constant Wallet</p>\n          <p>   Or send any one of our supported stablecoins: </p>\n          <p>   USDT/USDC/TUSD/GUSD/PAX/USDS</p>\n          <p>   Your balance will update when funds have been received in your Constant account.</p>\n        ",
+                "question10": "What happens if I repay late?",
+                "answer10": "The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due."
             },
             "title": "Vay thế chấp bằng tiền mã hoá",
             "subTitle": "\n        <h2>Lãi suất chỉ từ 4.50%/năm.</h2>\n        <h2>Nhận tiền ngay.</h2>\n        <h2>Mà không cần phải bán đi số tiền mã hoá vốn có.</h2>\n      ",
@@ -1901,9 +1922,10 @@
                 "collateralLabel": "Tài sản thế chấp (Vay được 66% giá trị tài sản thế chấp)",
                 "startDateLabel": "Ngày bắt đầu",
                 "endDateLabel": "Ngày kết thúc",
+                "collateralNote": "For this coin, loans will take up to 24 hours to be granted, repaid, or topped up.",
                 "toolTipCollateral": "\nĐây là khoản thế chấp cần có để vay được {exchangeUnit}. Giá trị tài sản thế chấp được tính theo giá thị trường {exchangeRate}.        ",
                 "walletAddressLabel": "Bạn muốn nhận lại phần tài sản thế chấp qua loại ví {symbol} nào?",
-                "walletAlias": "Nhập địa chỉ ví {symbol} của bạn",
+                "walletAlias": "Enter your {symbol} wallet address",
                 "moreInfo": "Bạn sẽ nhận được khoản vay ngay khi phần tài sản thế chấp được xác nhận trên chuỗi khối. Thời gian dự kiến: 2 phút cho ETH và 10 phút cho BTC.",
                 "monthLoan": "{term} tháng",
                 "monthsLoan": "{term} tháng"
@@ -2014,6 +2036,7 @@
             "learnMore": "Tìm hiểu thêm",
             "listApplications": {
                 "heading": "Các khoản vay",
+                "noLoans": "Request your first fixed rate loan.",
                 "amount": "SỐ TIỀN (USD)",
                 "createdDate": "Được tạo lúc",
                 "endTerm": "Ngày đáo hạn",
@@ -2032,6 +2055,7 @@
                 "interestPrice": "Lãi suất:",
                 "yourLoan": "Khoản vay của bạn ({matched})",
                 "status": "Trạng thái",
+                "allStatus": "All",
                 "mapStatus": {
                     "pending": "Đang chờ",
                     "recieved": "Đã nhận",
@@ -2063,7 +2087,9 @@
                     "fillPending": "Fill Pending",
                     "fillFail": "Fill Fail",
                     "payoffDone": "Hoàn trả thành công",
-                    "repayDownDone": "Hoàn trả thành công"
+                    "repayDownDone": "Hoàn trả thành công",
+                    "topupPending": "Top Up Pending",
+                    "manualPending": "Manual Pending"
                 },
                 "mapStatus2": {
                     "pending": "Đang chờ",
@@ -2083,7 +2109,8 @@
                     "chainCancelOk": "Đã huỷ",
                     "chainCancelFailed": "Xin vui lòng thử lại",
                     "chainBorrowCancel": "Đã huỷ",
-                    "creating": "Đang xử lí"
+                    "creating": "Đang xử lí",
+                    "cancelling": "Cancelling"
                 },
                 "getRemainCollateral": "\nBạn muốn nhận lại <strong>{valueAvailable}{symbol}</strong> để giá trị tài sản thế chấp về lại mức tối thiểu?        ",
                 "actionsModal": {
@@ -2098,6 +2125,7 @@
                 "interestOnTime": "Phần lãi phải trả",
                 "totalRepayment": "Tổng số tiền phải trả",
                 "errorRemainCollateral": "Bạn chưa thể nhận lại phần tài sản thế chấp còn lại ngay lúc này",
+                "errorRemainCollateralHtml": "\n          Please wait for assistance, or contact us at <a href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>\n        ",
                 "depositFrom": {
                     "title": "Nộp thêm tài sản thế chấp",
                     "amount": "Số lượng",
@@ -2196,6 +2224,17 @@
             "defaultConfirmText": "Có",
             "defaultDeclineText": "Không",
             "defaultLabelText": "Xác nhận"
+        },
+        "dialog": {
+            "checkTrialKyc": {
+                "messageConfirm": "For your security, please verify your identity before {action} from your Account.",
+                "confirm": "Verify my ID",
+                "cancel": "Maybe later",
+                "action": {
+                    "withdraw": "making a withdrawal",
+                    "transfer": "making a transfer"
+                }
+            }
         }
     },
     "promotion_programs": {
@@ -2752,59 +2791,17 @@
         }
     },
     "deposit": {
-        "title": "Tài khoản USD quốc tế.",
-        "availableInVn": "Đã có mặt tại Việt Nam.",
-        "subTitle": {
-            "sub1": "Nộp tiền vào tài khoản Constant để chuyển khoản quốc tế, gửi tiết kiệm hay vay tiền với lãi suất ưu đãi nhất.",
-            "sub2": "Bảo hiểm 100% bởi FDIC. Rút tiền linh hoạt bất cứ lúc nào. Chăm sóc khách hàng 24/7. {learnMore}",
-            "learnMore": "Tìm hiểu thêm"
-        },
-        "what": {
-            "whatCaption0": "Bảo đảm giá trị đồng tiền",
-            "whatCaption1": "Chuyển khoản quốc tế hoàn toàn miễn phí",
-            "whatCaption2": "Được bảo hiểm 130 triệu USD",
-            "whatCaption3": "Rút tiền bất cứ lúc nào",
-            "whatDesc0": "Giữ tiền bằng USD để bảo vệ giá trị tài sản khỏi lạm phát và mất giá.",
-            "whatDesc1": "Chỉ cần kết nối Internet để chuyển khoản tới mọi nơi trên thế giới.",
-            "whatDesc2": "Mỗi tài khoản được FDIC bảo hiểm tối đa lên đến 250,000 USD, tổng giá trị lên đến 130 triệu USD.",
-            "whatDesc3": "Constant liên kết với các ngân hàng địa phương để bạn có thể rút tiền vào mọi lúc, mọi nơi."
-        },
-        "howItWorks": {
-            "title": "Hướng dẫn sử dụng",
-            "step1": "BƯỚC 1",
-            "title1": "NỘP TIỀN VÀO CONSTANT",
-            "desc1": "Gửi số tiền bạn muốn đến công ty Constant tại Việt Nam. Số tiền này sẽ được đổi sang USD theo tỉ giá thị trường tại thời điểm đó.",
-            "step2": "BƯỚC 2",
-            "title2": "TIỀN CỦA BẠN ĐƯỢC ĐẢM BẢO",
-            "desc2": "Tiền của bạn được giữ an toàn trong tài khoản ngân hàng Mỹ được bảo hiểm 100%.",
-            "step3": "BƯỚC 3",
-            "title3": "VÀ NHẬN THÊM NHIỀU TIỆN ÍCH",
-            "desc3": "Bạn đã có một tài khoản USD để chuyển khoản quốc tế, gửi tiết kiệm hay vay tiền với lãi suất ưu đãi nhất.\n"
-        },
-        "checklist": {
-            "title": "Tại sao nên đầu tư với Constant?",
-            "subTitle": "Ưu việt hơn ngân hàng truyền thống.",
-            "desc1": "Cũng giống như ngân hàng, Constant cho vay thế chấp để trả lãi cho các nhà đầu tư. Khác ở chỗ, <b>Constant áp dụng lãi suất cao nhất có thể cho các khách hàng, vì đó thực sự là tiền kiếm được từ khoản đầu tư của họ.</b>",
-            "desc2": "Và còn bởi vì Constant thay thế các giao dịch viên bằng những dòng code, thay thế các chuyên gia bằng những thuật toán, thay thế toàn bộ cơ sở vật chất và hệ thống nhân sự bằng ứng dụng blockchain -<b>nên Constant có thể mang lại nhiều lợi nhuận hơn nữa cho khách hàng.</b>"
-        },
-        "howWeWork": {
-            "title": "Sứ mệnh của Constant",
-            "subTitle": "Chúng tôi mong muốn xây dựng thành công một hệ thống tài chính công bằng và tự do hơn.",
-            "desc": "\n<p>Chúng tôi tin vào một hệ thống tài chính công bằng hơn, kinh tế hơn!\nTham gia vào lĩnh vực tài chính trên nền tảng blockchain từ những ngày đầu tiên, chúng tôi là những kỹ sư tin rằng ngành tài chính nên dành cho mọi người: nhiều quyền lợi hơn, dễ sử dụng hơn bất kể bạn là ai và đang sinh sống ở đâu.</p>\n<p>Thế nào là dịch vụ tài chính hoàn hảo? Đối với đội ngũ Constant, đó là loại tiền tệ có thể lưu thông tự do trên toàn thế giới với giá trị ổn định nhất. Bạn có thể tích lũy, tiêu xài, vay nợ chỉ bằng 1 loại tiền tệ quyền lực được định giá bởi USD và bảo hiểm bởi những tổ chức uy tín nhất thế giới. Trong ước mơ của Constant, đây chính là một “ngân hàng” tạo ra bởi người dùng & phục vụ lợi ích của người dùng.</p>\n<p>Hơn thế nữa, chúng tôi là một dự án công nghệ! Nghĩa là Constant luôn sẵn sàng 24/7, 100% online. Không còn cảnh xếp hàng ở phòng giao dịch, không còn những người nghẽn mạch thanh toán do lễ tết. Chúng tôi - những kỹ sư, nhà thiết kế, chuyên gia tài chính làm việc trên toàn thế giới với mục tiêu lớn nhất là giúp tiền của bạn sinh lời và lưu thông dễ dàng nhất.</p>      "
-        },
-        "stories": {
-            "quote0": "Great user experience. It's always fun watching my savings grow, and super convenient that I can withdraw it anytime. A nice zero-risk companion to your other investments, and a decent enough investment in itself.",
-            "author0": "Carlos",
-            "title0": "Có ba con nhỏ, cần tiết kiệm để lo cho các con",
-            "quote1": "Love that there's no minimum deposit required so anyone can benefit from their rates. Feel much safer (and smarter) keeping the tips I make with Constant instead of in a box under my bed!",
-            "author1": "Kate",
-            "title1": "Sinh viên, là một người tiêu dùng thông minh",
-            "quote2": "I used to save USD in my local bank account in Vietnam and earn no interest.  Now I can save and grow my money in USD, in an account fully protected by the FDIC, which I didn't think was possible for foreigners like me.",
-            "author2": "Binh",
-            "title2": "Chủ doanh nghiệp, cần một đồng tiền không mất giá.",
-            "quote3": "Những tiện ích phụ của Constant hấp dẫn tôi nhiều hơn là lãi suất đầu tư hay vay thế chấp. Là một doanh nhân, Constant giúp tôi rất nhiều trong việc chuyển khoản quốc tế đến các đối tác. Gần như ngay lập tức và không mất phí. Tiện ích này có giá trị hơn nhiều một khoản đầu tư.",
-            "author3": "Veronica",
-            "title3": "Nghề nghiệp tự do, một công dân toàn cầu"
+        "faqs": {
+            "question1": "Which fiat currencies do you accept?",
+            "answer1": "We accept any currency you can send by bank transfer to our US-based accounts. Once received, we convert your currency to USD.",
+            "question2": "Which stablecoins do you accept?",
+            "answer2": "We accept deposits of USDC, USDT, TUSD, PAX, GUSD, USDS and our native stablecoin, CONST.",
+            "question3": "How do I make a deposit?",
+            "answer3": "\n        <p>You can deposit funds in two ways: </p>\n        <p>Through our website. Simply select the amount of money you’d like to deposit and then send it by bank transfer to the Constant Vault. We’ll convert local currency to USD. </p>\n        <p>Through a cryptocurrency wallet. We accept multiple stablecoins. Just send it to our wallet address, and we’ll credit your account with the USD amount.</p>\n      ",
+            "question4": "What happens after I make a bank transfer?",
+            "answer4": "\n        <p>First, we convert your deposit to USD to stabilize and protect your funds from inflationary devaluation. Then, we send your funds to the Constant Vault, an escrow operated by Prime Trust, an accredited US financial institution.</p>\n        <p>The Constant Vault keeps your money safe across multiple FDIC-insured bank accounts, bringing total coverage to $130,000,000.</p>\n        <p>Later, when you’re ready to withdraw, you’ll receive either USD (if you have a USD account) or local currency.</p>      \n      ",
+            "question5": "Is there a limit on the number of deposits I can make?",
+            "answer5": "No. You can deposit as much as you like, as often as you like."
         }
     },
     "yourSaving": {
@@ -3469,6 +3466,14 @@
             "head2": "Giờ làm việc",
             "head3": "Cuối tuần",
             "head4": "Phí kết nối"
+        },
+        "table5": {
+            "head1": "Early repayment",
+            "head2": "Fees"
+        },
+        "table6": {
+            "head1": "Late repayment",
+            "head2": "Fees"
         }
     },
     "modules": {
@@ -3478,9 +3483,10 @@
     },
     "proLending": {
         "watchBoard": {
-            "investments": "Danh sách lệnh",
-            "borrows": "Danh sách lệnh",
-            "interestSpread": "Chênh lệch lãi suất",
+            "investments": "Investing orders",
+            "borrows": "Borrowing orders",
+            "interestSpread": "Interest spread",
+            "interestSpreadDesc": "Interest spread is the difference between the the lowest lending rate and the highest borrowing rate",
             "interestSpreadValues": "0.10%",
             "amount": "Số tiền (USD)",
             "interest": "Lãi suất (%/năm)",
@@ -3489,6 +3495,7 @@
         },
         "balances": {
             "title": "Số dư",
+            "titleDesc": "All investment and collateral deposits will show here.",
             "withdraw": "Rút tiền",
             "withdrawFrom": {
                 "title": "Rút lại tài khoản thế chấp",
@@ -3503,17 +3510,22 @@
             }
         },
         "deposits": {
-            "title": "Nộp tiền"
+            "title": "MAKE A DEPOSIT",
+            "generateWallet": "Generate receiving wallet address",
+            "depositNote": "Deposit collateral to secure a loan",
+            "walletAddressLabel": "Send collateral to",
+            "scanQR": "Or scan this QR code directly from your mobile wallet to complete the transfer"
         },
         "openOrders": {
             "title": "Danh sách lệnh của bạn",
+            "titleDesc": "These are orders waiting for a match. To view your matched orders, [please visit your accounts page].",
             "invest": "đầu tư",
             "borrow": "vay",
             "side": "Bên cạnh",
             "amount": "Số tiền (USD)",
-            "interest": "Lãi suất (%/năm)",
-            "term": "Ngày",
-            "date": "Ngày"
+            "interest": "Rate(APR)",
+            "term": "Term (Days)",
+            "date": "Created"
         },
         "investBooking": {
             "messLoginFirst": "Xin vui lòng đăng nhập để thực hiện đầu tư!",
@@ -3522,22 +3534,22 @@
             "matchedFailed": "Khớp lệnh đầu tư không thành công. Xin vui lòng thử lại.",
             "deposit": {
                 "title": "Nộp tiền đầu tư",
-                "depositButton": "NỘP TIỀN",
-                "depositNote": "Xin vui lòng nộp thêm tiền vào tài khoản để thực hiện đầu tư."
+                "depositButton": "Go to deposit page",
+                "depositNote": "Deposit funds to make an investment."
             },
             "form": {
-                "title": "Đầu tư",
+                "title": "Invest",
                 "amount": "Số tiền",
-                "interest": "Lãi suất tối thiểu",
-                "term": "Kì hạn",
+                "interest": "Interest (APR)",
+                "term": "Term (Days)",
                 "termMonth": "{month} tháng",
                 "investButton": "ĐẶT LỆNH ĐẦU TƯ",
                 "invalidAmount": "Xin vui lòng nhập số nhỏ hơn {maxAmount}",
                 "getFeeFailed": "Chưa thể tính phí. Xin vui lòng thử lại.",
                 "fee": "Phí đầu tư: <span class=\"amount\">{fee}</span>{currency}",
                 "amountDesc": "<p>Bạn muốn đầu tư bao nhiêu?</p>",
-                "termDesc": "<p>Đây là khoảng thời gian tối đa mà bạn muốn đầu tư. Phần tiền không đầu tư còn lại được đảm bảo bởi FDIC và bạn có thể rút về bất cứ lúc nào.</p>",
-                "interestDesc": "<p>Đây là mức lãi suất tối thiểu để bạn chấp nhận đầu tư. Nếu người cần vay vốn sẵn sàng trả mức lãi cao hơn, bạn sẽ được hưởng mức lãi suất cao hơn đó.</p>"
+                "termDesc": "If there is a borrower looking for a shorter loan at your rates, you will be partially matched. We will continue to find you a match for the rest of the term.",
+                "interestDesc": "This is your annual interest rate. If there is a borrower willing to pay more, you will earn the higher rate."
             }
         },
         "borrowBooking": {
@@ -3545,17 +3557,20 @@
             "exchange": {
                 "amountLabel": "Khoản vay",
                 "collateralLabel": "Thế chấp",
+                "collateralDesc": "To secure your loan, please deposit 150% the loan value in collateral.",
                 "walletAddressLabel": "Địa chỉ ví {symbol} của bạn",
+                "walletAddressDesc": "The wallet that will receive the returned collateral when repayment is made.",
                 "walletAlias": "0x687C906b2....8bd9369242e",
-                "maxRate": "Lãi suất tối đa",
-                "minTerm": "Kì hạn",
+                "maxRate": "Interest rate (APR)",
+                "minTerm": "Term (days)",
                 "maxRateTooltip": "Đây là mức lãi suất tính trên năm mà bạn sẵn sàng trả cho khoản vay của mình. Nếu nhà đầu tư muốn mức lãi suất thấp hơn, bạn sẽ chỉ phải trả mức lãi suất thấp hơn này.",
                 "minTermTooltip": "Đây là kì hạn tối thiểu cho khoản vay của bạn.",
                 "buttonText": "Đặt lệnh vay"
             },
             "createdSuccess": "Tạo lệnh vay thành công",
             "errorMsgs": {
-                "notEnoughBalance": "Số dư không đủ để vay!"
+                "notEnoughBalance": "Số dư không đủ để vay!",
+                "generateCollateralAddressFail": "Can't generate collateral address. Please try again!"
             }
         }
     }

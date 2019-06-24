@@ -12,6 +12,7 @@
         },
         "common": {
             "error": "Something's not right. Please try again.",
+            "retry": "Server error, please retry",
             "required": "Required",
             "copied": "Copied",
             "remove": "Remove",
@@ -175,6 +176,7 @@
         "walletOrder": "Balance and Transactions",
         "hello": "Hello",
         "landingPro": "Pro",
+        "yourWallet": "Wallet",
         "countryLanguage": {
             "title": "Your language",
             "okBtn": "OK",
@@ -298,7 +300,16 @@
             "createdBankExisted": "You have already saved this bank account. Please try another.",
             "trial_term_deposit_not_available": "The Constant introductory trial is only available to new users .",
             "not_pro_saving_user": "Sorry, we can only offer services in the USA to SEC accredited investors.",
-            "otpNotMatched": "OPT not matched or invalidated!"
+            "otpNotMatched": "OPT not matched or invalidated!",
+            "userDocumentCannotChange": "You cannot change KYC information. Please contact admin for support.",
+            "missingUserDocuments": "User hasn't had any document yet!",
+            "userFirstNameInvalid": "FirstName is invalid",
+            "userLastNameInvalid": "LastName is invalid",
+            "userDOBInvalid": "DOB is invalid",
+            "userTaxCountryInvalid": "TaxCountry is invalid",
+            "userTaxIDNumberInvalid": "TaxIDNumber is invalid",
+            "userPhoneNumberInvalid": "PhoneNumber is invalid",
+            "systemError": "System error"
         }
     },
     "errorCode": {
@@ -524,6 +535,7 @@
             "value": "Value",
             "amount": "Amount",
             "accept": "Accept",
+            "detail": "View Detail",
             "cancel": "Cancel",
             "cancelMess": "Are you sure you want to cancel this order?",
             "approve": "Confirm payment",
@@ -560,6 +572,7 @@
                 "content": {
                     "Cancel": "\n            <div>\n              <p>You’re {Type} <strong>{Amount}</strong> Constant at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you want to cancel this order, please click the “Cancel order” button below. Otherwise, please close this window.</p>\n            </div>\n          ",
                     "Approve": "\n             <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Bank Name:</span>\n                  <strong>{bank_name}</strong>\n                </div>\n                <div>\n                  <span>Account Name:</span>\n                  <strong>{bank_account_name}</strong>\n                </div>\n                <div>\n                  <span>Account Number: </span>\n                  <strong>{bank_account_number}</strong>\n                </div>\n                <div>\n                  <span>Amount: </span>\n                  <strong>{Total}&nbsp;{Currency}</strong>\n                </div>\n                <div>\n                  <span>Reference: </span>\n                  <strong>{Reference}</strong>\n                </div>\n                <div>\n                    <span>Bank Country: </span>\n                    <strong>{bankCountry}</strong>\n                 </div>\n              </div>\n              <br />\n              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>\n             </div>\n          ",
+                    "ApproveUs": "\n          <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Account Name:</span>\n                  <strong>{bank_account_name}</strong>\n                </div>\n                <div>\n                  <span>Account Number: </span>\n                  <strong>{bank_account_number}</strong>\n                </div>\n                <div>\n                  <span>Amount: </span>\n                  <strong>{Total}&nbsp;{Currency}</strong>\n                </div>\n                <div>\n                  <span>Reference: </span>\n                  <strong>{Reference}</strong>\n                </div>\n                <div>\n                    <span>Bank Country: </span>\n                    <strong>{bankCountry}</strong>\n                 </div>\n              </div>\n              <br />\n              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>\n             </div>\n          ",
                     "ApproveZelle": "\n             <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Payment method:</span>\n                  <strong>Zelle</strong>\n                </div>\n                <div>\n                  <span>Bank Email Address:</span>\n                  <strong>{Email}</strong>\n                </div>\n             </div>\n          ",
                     "Finish": "\n            <div>\n                <p>You’re selling <strong>{Amount} Constant</strong> at <strong>{Price} </strong> {Currency} per Constant.</p>\n                <p>If you’ve received a bank transfer for <strong>{TotalVND} {Currency}</strong>, you can now send your Constant to the buyer by clicking the button below.</p>\n                <p>IMPORTANT: Please do not send your Constant until you’ve received the bank transfer from the buyer. If the buyer doesn’t pay you within 30 minutes of placing the order, please email us at hello@constant.money.</p>\n            </div>\n          "
                 }
@@ -742,6 +755,7 @@
             "toAddress": "To Address",
             "fromEmail": "From Email",
             "viewDetail": "Details",
+            "currency": "Currency",
             "noHistoryData": "Get Constant here",
             "fee": "fee",
             "loadMore": "Load more",
@@ -777,7 +791,8 @@
                     "waitAgentTransferMoney": "Waiting for seller to send money",
                     "transferredMoneyToAgent": " ",
                     "done": "Successful",
-                    "inProgress": "Order in progress"
+                    "inProgress": "Order in progress",
+                    "approving": "Waiting for admin approve"
                 }
             },
             "orderType": {
@@ -802,7 +817,8 @@
                 "5": "Converting",
                 "6": "Cancelled",
                 "7": "Done",
-                "8": "Holding"
+                "8": "Holding",
+                "12": "Waiting Approving"
             },
             "dialog": {
                 "cancel": {
@@ -835,7 +851,8 @@
                     "waitAgentTransferMoney": "Waiting for seller to send money",
                     "transferredMoneyToAgent": "Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.",
                     "done": "Successful",
-                    "inProgress": "Order in progress"
+                    "inProgress": "Order in progress",
+                    "approving": "Waiting for admin approve"
                 }
             },
             "bankInfo": {
@@ -856,8 +873,11 @@
             "approve": "Approve",
             "approveMess": "Are you sure you want to approve this order?",
             "agent": {
-                "approveSuccessfully": "Your order have been approved successfully"
-            }
+                "approveSuccessfully": "Your order have been approved successfully",
+                "cancelSuccessfully": "Your order have been cancelled successfully"
+            },
+            "cancel": "Cancel",
+            "cancelMess": "Are you sure you want to cancel this order?"
         },
         "accountLevel": {
             "head_text": "Our verification process typically takes just a few minutes. Your information will remain 100% private.",
@@ -1072,6 +1092,7 @@
                 "getRemainCollateral": "Get Remaining Collateral",
                 "payOffLoan": "Payoff",
                 "payOffLoanTitle": "Payoff Loan",
+                "allStatus": "All",
                 "termStatus": {
                     "created": "Matched",
                     "pending": "Matching",
@@ -1277,7 +1298,8 @@
             "requiredUsername": "Please enter your email",
             "loginFailure": "Please make sure your email and password are correct.",
             "warningVerify": "To start trading, please take a few minutes to verify your account. {action}",
-            "warningVerifyNow": "Verify now"
+            "warningVerifyNow": "Verify now",
+            "two2faRequired": "2FA authentication is required for all users with balance over 1000 USD"
         },
         "forgetPassword": {
             "title": "Forgot your password?",
@@ -1317,6 +1339,8 @@
             "lastName": "Last name",
             "placeholderLastName": "Enter your last name",
             "requiredLastName": "Last name required",
+            "passwordTooWeak": "Please try a stronger password with at least 2 of the following: 1 lowercase character, 1 uppercase character, 1 numeric character, and 1 special character.",
+            "passwordMedium": "This password is ok. To level up your security, choose a password that contains all of the following: at least 1 lowercase character, 1 uppercase character, 1 numeric character, and 1 special character.",
             "notValidFirstName": "First name must be greater than 3 and less than 30 characters, comprising a-z, 0-9, _, - (dash), and .(dot).\n",
             "notValidLastName": "Last name must be greater than 3 and less than 30 characters, comprising a-z, 0-9, _, - (dash), and .(dot).\n",
             "email": "Your email",
@@ -1783,6 +1807,7 @@
             },
             "yourBalance": "Your balance",
             "validateMaxInput": "Your amount must less than or equal: ${amount}",
+            "validateMaxInputBalanceZero": "You don't have enough balance",
             "transferFeeLabel": "Transfer fee",
             "subTitle": "Free. To anyone, anywhere.",
             "introTitle": "Send money to anyone, anywhere. For free.",
@@ -1819,30 +1844,20 @@
             "title": "Transfer",
             "caption": "SEND CONSTANT ANYWHERE",
             "transferType": "Transfer Type",
-            "transferTypeCaption": {
+            "transferTypeCaption": "To an {currency} address",
+            "transferTypesCaption": {
                 "eth": "To an ETH address",
                 "eos": "To an EOS address",
-                "tomo": "To a TOMO address",
-                "usdt": "To a USDT address",
-                "susd": "To a SUSD address",
-                "tusd": "To a TUSD address",
-                "batch": "To multiple people"
+                "tomo": "To a TOMO address"
             },
             "yourBalance": "Your balance",
             "validateMaxInput": "Your amount must less than or equal: ${amount}",
+            "validateMaxInputBalanceZero": "You don't have enough balance",
             "transferFeeLabel": "Transfer fee",
             "subTitle": "Free. To anyone, anywhere.",
             "introTitle": "Send money to anyone, anywhere. For free.",
             "transferBtn": "Send",
-            "address": {
-                "email": "Recipient’s email",
-                "eth": "Ethereum wallet address",
-                "eos": "EOS wallet address",
-                "tomo": "TOMO wallet address",
-                "usdt": "USDT wallet address",
-                "susd": "SUSD wallet address",
-                "tusd": "TUSD wallet address"
-            },
+            "address": "{currency} wallet address",
             "phToAddress": "Recipient’s email or Ethereum wallet address",
             "confirmMsg": "Are you sure you want to transfer {amount} CONSTANT to {address}?",
             "batchConfirmMsg": "Are you sure you want to transfer to multiple people from the uploaded file?",
@@ -1883,7 +1898,13 @@
                 "question6": "Can I repay early?",
                 "answer6": "\n          <p>If you'd like to pay back your loan before 75% of the term is up, that's absolutely fine. You simply have to pay interest for the days you are in possession of the loan, and just 50% of the original interest rate for the remaining days of the term.</p>\n          <p>If you'd like to pay back your loan after 75% of the term is up and claim back your collateral, that's also fine, but the interest due on that loan is the full percentage for the entire term.</p>\n        ",
                 "question7": "Can i recall excess if my collateral value increases?",
-                "answer7": "Yes. If the value of your collateral rises during your loan term, you can withdraw the difference. You’ll be able to do this on the site in the next release scheduled for the 25th of June, but in the meantime, our support team is available via telegram, email, and fb chat to assist you manually."
+                "answer7": "Yes. If the value of your collateral rises during your loan term, you can withdraw the difference. You’ll be able to do this on the site in the next release scheduled for the 25th of June, but in the meantime, our support team is available via telegram, email, and fb chat to assist you manually.",
+                "question8": "What is the LTV (Loan to Value) Ratio? Is it always the same?",
+                "answer8": "\n          <p>The LTV ratio for 1 year loans or shorter is 66%. That means we require 150% of the loan value in collateral. For each month after the first year, we require an extra 5% of the loan value in collateral.</p>\n          <p>For example, if you were to request a loan for 15 months, the collateral due would be 150% + (3*5)% = 165% of the loan value in collateral, which brings your LTV ratio to 60.6%.</p>\n        ",
+                "question9": "How do I make repayment?",
+                "answer9": "\n          <p>We’ll deduct your repayment directly from your Constant account balance. Adding funds is easy. You can do one or a combination of the following:</p>\n          <p>1) Transfer USD to one of our FDIC-insured bank accounts</p>\n          <p>2) Send CONST to your Constant Wallet</p>\n          <p>   Or send any one of our supported stablecoins: </p>\n          <p>   USDT/USDC/TUSD/GUSD/PAX/USDS</p>\n          <p>   Your balance will update when funds have been received in your Constant account.</p>\n        ",
+                "question10": "What happens if I repay late?",
+                "answer10": "The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due."
             },
             "title": "Fair, fully secured crypto-backed loans.",
             "subTitle": "\n        <h2>4.50% APR.</h2>\n        <h2>Instant funding.</h2>\n        <h2>Get cash for crypto without needing to sell.</h2>\n      ",
@@ -1901,9 +1922,10 @@
                 "collateralLabel": "Collateral required (75% Loan to Value ratio)",
                 "startDateLabel": "Start date",
                 "endDateLabel": "End date",
+                "collateralNote": "For this coin, loans will take up to 24 hours to be granted, repaid, or topped up.",
                 "toolTipCollateral": "\n          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.\n        ",
                 "walletAddressLabel": "Which {symbol} wallet should we return your collateral to?",
-                "walletAlias": "0x687C906b2....8bd9369242e",
+                "walletAlias": "Enter your {symbol} wallet address",
                 "moreInfo": "Your funds will reach you as soon as your collateral is confirmed on its blockchain.  ETA: 2 minutes for ETH and 10 minutes for BTC.",
                 "monthLoan": "{term}-month loans",
                 "monthsLoan": "{term}-months loans"
@@ -2014,6 +2036,7 @@
             "learnMore": "Learn more",
             "listApplications": {
                 "heading": "Loans",
+                "noLoans": "Request your first fixed rate loan.",
                 "amount": "AMOUNT (USD)",
                 "createdDate": "Created at",
                 "endTerm": "Term ends",
@@ -2032,6 +2055,7 @@
                 "interestPrice": "Interest:",
                 "yourLoan": "Your loans ({matched})",
                 "status": "Status",
+                "allStatus": "All",
                 "mapStatus": {
                     "pending": "Pending",
                     "recieved": "Received",
@@ -2063,7 +2087,9 @@
                     "fillPending": "Fill Pending",
                     "fillFail": "Fill Fail",
                     "payoffDone": "Payoff done",
-                    "repayDownDone": "Repay Down Done"
+                    "repayDownDone": "Repay Down Done",
+                    "topupPending": "Top Up Pending",
+                    "manualPending": "Manual Pending"
                 },
                 "mapStatus2": {
                     "pending": "Pending",
@@ -2083,7 +2109,8 @@
                     "chainCancelOk": "Cancelled",
                     "chainCancelFailed": "Please try again",
                     "chainBorrowCancel": "Cancelled",
-                    "creating": "Processing"
+                    "creating": "Processing",
+                    "cancelling": "Cancelling"
                 },
                 "getRemainCollateral": "\n          Are you sure you want to recall <strong>{valueAvailable} {symbol}</strong> to bring your collateral value back to the minimum required amount?\n        ",
                 "actionsModal": {
@@ -2098,6 +2125,7 @@
                 "interestOnTime": "Interest due",
                 "totalRepayment": "Total repayment",
                 "errorRemainCollateral": "You can not to get the remaining collateral back at the moment",
+                "errorRemainCollateralHtml": "\n          Please wait for assistance, or contact us at <a href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>\n        ",
                 "depositFrom": {
                     "title": "Make more deposit for your collateral",
                     "amount": "Amount",
@@ -2196,6 +2224,17 @@
             "defaultConfirmText": "Yes",
             "defaultDeclineText": "No",
             "defaultLabelText": "Confirm"
+        },
+        "dialog": {
+            "checkTrialKyc": {
+                "messageConfirm": "For your security, please verify your identity before {action} from your Account.",
+                "confirm": "Verify my ID",
+                "cancel": "Maybe later",
+                "action": {
+                    "withdraw": "making a withdrawal",
+                    "transfer": "making a transfer"
+                }
+            }
         }
     },
     "promotion_programs": {
@@ -2752,59 +2791,17 @@
         }
     },
     "deposit": {
-        "title": "Your global USD bank account.",
-        "availableInVn": "Available now in Vietnam.",
-        "subTitle": {
-            "sub1": "Save in US dollars, instead of unstable local currencies. Enjoy instant transfers of any amount - to anyone or any business - anywhere in the world. For free.",
-            "sub2": "Your account is backed by the full faith and credit of the United States government, insured by the Federal Deposit Insurance Corporation (FDIC). Established in 1933, the FDIC has a perfect record of no lost funds.  {learnMore}",
-            "learnMore": "Learn more +"
-        },
-        "what": {
-            "whatCaption0": "Protect the value of your money",
-            "whatCaption1": "Move your money anywhere for free",
-            "whatCaption2": "Insure your money up to $5M",
-            "whatCaption3": "Withdraw your money anytime",
-            "whatDesc0": "Save in USD, the world reserve currency, accepted by merchants worldwide. Protect your money against inflation and instability.",
-            "whatDesc1": "Send and receive any amount, anywhere in the world, instantly and for free. Do bigger business, send money home, unlock greater mobility.",
-            "whatDesc2": "Benefit from the maximum coverage the FDIC provides - multiplied by 20. Since the FDIC insures each account up to $250K, we store your money across 20 of them.",
-            "whatDesc3": "Constant works with your local banking system to make sure that all your funds can be withdrawn anytime, in your currency of choice."
-        },
-        "howItWorks": {
-            "title": "How it works",
-            "step1": "STEP 1",
-            "title1": "YOU MAKE A DEPOSIT",
-            "desc1": "Send any currency to your local Constant Trust. If it’s not USD, we convert it.",
-            "step2": "STEP 2",
-            "title2": "WE PROTECT YOUR MONEY",
-            "desc2": "Your USD funds are held safely in fully insured US bank accounts.",
-            "step3": "STEP 3",
-            "title3": "YOU GET MORE",
-            "desc3": "Now you have a global USD account with free transfers and unlimited withdrawals.\n"
-        },
-        "checklist": {
-            "title": "Why you should save money with Constant.",
-            "subTitle": "Smarter than your average bank.",
-            "desc1": "Like traditional banks, we reward you with interest earnings on our collateralized loans. Unlike traditional banks, <b>we give you most of it - since it’s your money, really.</b>",
-            "desc2": "And because we replaced cashiers with code, advisors with algorithms, and switched out bricks and mortar for the blockchain - <b>we can pass the savings directly on to you.</b>"
-        },
-        "howWeWork": {
-            "title": "How We Work",
-            "subTitle": "We’re building a fairer, freer, financial system.",
-            "desc": "\n        <p>As pioneers of borderless banking on the blockchain, we are committed to making banking more inclusive, money more useful, and growth more accessible to anyone, anywhere in the world.</p>\n        <p>What does that look like? Fair interest rates. Inclusive loans. A state-less, stable currency that you can save, borrow, and spend. Transactions secured and carried out collectively by users of the network. A bank for the people, made possible by the people.</p>\n        <p>Constant is proud to be 100% digital, online 24/7. So no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime.</p>\n      "
-        },
-        "stories": {
-            "quote0": "Great user experience. It's always fun watching my savings grow, and super convenient that I can withdraw it anytime. A nice zero-risk companion to your other investments, and a decent enough investment in itself.",
-            "author0": "Carlos",
-            "title0": "Father of three, saving for a rainy day",
-            "quote1": "Love that there's no minimum deposit required so anyone can benefit from their rates. Feel much safer (and smarter) keeping the tips I make with Constant instead of in a box under my bed!",
-            "author1": "Kate",
-            "title1": "Student, being smarter with her money",
-            "quote2": "I used to save USD in my local bank account in Vietnam and earn no interest.  Now I can save and grow my money in USD, in an account fully protected by the FDIC, which I didn't think was possible for foreigners like me.",
-            "author2": "Binh",
-            "title2": "Business owner, looking for a more stable currency.",
-            "quote3": "The 'fringe' benefits are the best part - my friends and business partners in different countries can all get accounts easily, and you can transfer money between them for free. It's actually much more than just saving.",
-            "author3": "Veronica",
-            "title3": "Freelancer, citizen of the world"
+        "faqs": {
+            "question1": "Which fiat currencies do you accept?",
+            "answer1": "We accept any currency you can send by bank transfer to our US-based accounts. Once received, we convert your currency to USD.",
+            "question2": "Which stablecoins do you accept?",
+            "answer2": "We accept deposits of USDC, USDT, TUSD, PAX, GUSD, USDS and our native stablecoin, CONST.",
+            "question3": "How do I make a deposit?",
+            "answer3": "\n        <p>You can deposit funds in two ways: </p>\n        <p>Through our website. Simply select the amount of money you’d like to deposit and then send it by bank transfer to the Constant Vault. We’ll convert local currency to USD. </p>\n        <p>Through a cryptocurrency wallet. We accept multiple stablecoins. Just send it to our wallet address, and we’ll credit your account with the USD amount.</p>\n      ",
+            "question4": "What happens after I make a bank transfer?",
+            "answer4": "\n        <p>First, we convert your deposit to USD to stabilize and protect your funds from inflationary devaluation. Then, we send your funds to the Constant Vault, an escrow operated by Prime Trust, an accredited US financial institution.</p>\n        <p>The Constant Vault keeps your money safe across multiple FDIC-insured bank accounts, bringing total coverage to $130,000,000.</p>\n        <p>Later, when you’re ready to withdraw, you’ll receive either USD (if you have a USD account) or local currency.</p>      \n      ",
+            "question5": "Is there a limit on the number of deposits I can make?",
+            "answer5": "No. You can deposit as much as you like, as often as you like."
         }
     },
     "yourSaving": {
@@ -3469,6 +3466,14 @@
             "head2": "Business hours",
             "head3": "Weekends",
             "head4": "Matching fee"
+        },
+        "table5": {
+            "head1": "Early repayment",
+            "head2": "Fees"
+        },
+        "table6": {
+            "head1": "Late repayment",
+            "head2": "Fees"
         }
     },
     "modules": {
@@ -3478,9 +3483,10 @@
     },
     "proLending": {
         "watchBoard": {
-            "investments": "Orderbook",
-            "borrows": "Orderbook",
-            "interestSpread": "interest spread",
+            "investments": "Investing orders",
+            "borrows": "Borrowing orders",
+            "interestSpread": "Interest spread",
+            "interestSpreadDesc": "Interest spread is the difference between the the lowest lending rate and the highest borrowing rate",
             "interestSpreadValues": "0.10%",
             "amount": "Amount(USD)",
             "interest": "Interest(APR)",
@@ -3489,6 +3495,7 @@
         },
         "balances": {
             "title": "Balances",
+            "titleDesc": "All investment and collateral deposits will show here.",
             "withdraw": "Withdraw",
             "withdrawFrom": {
                 "title": "Withdraw your crypto collateral",
@@ -3503,17 +3510,22 @@
             }
         },
         "deposits": {
-            "title": "Deposits"
+            "title": "MAKE A DEPOSIT",
+            "generateWallet": "Generate receiving wallet address",
+            "depositNote": "Deposit collateral to secure a loan",
+            "walletAddressLabel": "Send collateral to",
+            "scanQR": "Or scan this QR code directly from your mobile wallet to complete the transfer"
         },
         "openOrders": {
             "title": "Your open orders",
+            "titleDesc": "These are orders waiting for a match. To view your matched orders, [please visit your accounts page].",
             "invest": "invest",
             "borrow": "borrow",
             "side": "Side",
             "amount": "Amount(USD)",
-            "interest": "rate(APR)",
-            "term": "Days",
-            "date": "Date"
+            "interest": "Rate(APR)",
+            "term": "Term (Days)",
+            "date": "Created"
         },
         "investBooking": {
             "messLoginFirst": "You must be login before make an investment!",
@@ -3522,22 +3534,22 @@
             "matchedFailed": "Your invest had been matched unsuccessfully, please try again.",
             "deposit": {
                 "title": "Investments deposit",
-                "depositButton": "MAKE DEPOSIT",
-                "depositNote": "Please deposit funds in your account to start investing."
+                "depositButton": "Go to deposit page",
+                "depositNote": "Deposit funds to make an investment."
             },
             "form": {
-                "title": "Investments",
+                "title": "Invest",
                 "amount": "Amount",
-                "interest": "Min. interest",
-                "term": "Term",
+                "interest": "Interest (APR)",
+                "term": "Term (Days)",
                 "termMonth": "{month}-Month",
                 "investButton": "PLACE INVEST ORDER",
                 "invalidAmount": "Amount must be less than {maxAmount}",
                 "getFeeFailed": "Can not get fee in this time, please try again.",
                 "fee": "Invest fee: <span class=\"amount\">{fee}</span> {currency}",
                 "amountDesc": "<p>How much do you want to lend?</p>",
-                "termDesc": "<p>This is the maximum amount of time you want to lend your money out for. Unloaned portions are protected by the FDIC, and can be withdrawn at any time.</p>",
-                "interestDesc": "<p>This is the minimum rate you are willing to accept for your loan. If there is a borrower willing to pay more, you will earn the higher interest rate.</p>"
+                "termDesc": "If there is a borrower looking for a shorter loan at your rates, you will be partially matched. We will continue to find you a match for the rest of the term.",
+                "interestDesc": "This is your annual interest rate. If there is a borrower willing to pay more, you will earn the higher rate."
             }
         },
         "borrowBooking": {
@@ -3545,17 +3557,20 @@
             "exchange": {
                 "amountLabel": "Amount",
                 "collateralLabel": "Collateral required",
+                "collateralDesc": "To secure your loan, please deposit 150% the loan value in collateral.",
                 "walletAddressLabel": "Your {symbol} wallet address",
+                "walletAddressDesc": "The wallet that will receive the returned collateral when repayment is made.",
                 "walletAlias": "0x687C906b2....8bd9369242e",
-                "maxRate": "Maximum rate (APR)",
-                "minTerm": "Term",
+                "maxRate": "Interest rate (APR)",
+                "minTerm": "Term (days)",
                 "maxRateTooltip": "This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.",
                 "minTermTooltip": "This is the minimum amount of time you want to borrow.",
                 "buttonText": "Place borrow order"
             },
             "createdSuccess": "Your borrow had been created successfully",
             "errorMsgs": {
-                "notEnoughBalance": "Your balance is not enough to make borrow!"
+                "notEnoughBalance": "Your balance is not enough to make borrow!",
+                "generateCollateralAddressFail": "Can't generate collateral address. Please try again!"
             }
         }
     }

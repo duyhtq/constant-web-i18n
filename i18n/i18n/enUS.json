@@ -107,6 +107,8 @@
         "copyright": "2019 Constant. {term} and {privacy}",
         "termOfUse": "Terms of Use",
         "privacy": "Privacy Policy",
+        "copyright2": "{term}",
+        "investorAgreement": "Investor agreement",
         "contactUs": "Contact us:",
         "referral": "Referral",
         "paymentGateway": "Payment Gateway",
@@ -1073,6 +1075,7 @@
                 "getListFailed": "Sorry, something went wrong. Please try again.",
                 "amount": "Principal",
                 "interest": "Interest",
+                "interestAmount": "Total interest",
                 "apr": "APR",
                 "haveTimeAccount": "{term}-{termType} investment",
                 "month": "month",
@@ -1172,7 +1175,7 @@
                         "cancel": "No"
                     },
                     "cancelDepositKyc": {
-                        "messageConfirm": "To activate this investment order, all you need to do is verify your ID. Cancel anyway?",
+                        "messageConfirm": "Are you sure you want to cancel your investment free trial?",
                         "confirm": "Yes, cancel",
                         "cancel": "Verify my ID"
                     },
@@ -1205,8 +1208,10 @@
                 "alert": {
                     "depositSavingSuccess": "You successfully invested Constant.",
                     "depositSavingFailed": "Failed To Invest Saving",
-                    "stopSavingSuccess": "Your investment has matured. Withdraw your funds anytime.",
+                    "stopSavingSuccess": "NO! this happens after you cancelled your trial.",
                     "stopSavingFailed": "End your term failed.",
+                    "applyReferralSuccess": "Thanks! Your rewards have been applied.",
+                    "applyReferralFailed": "Sorry, something went wrong. Please try again.",
                     "batchTransferSuccess": "You successfully sent the batch file",
                     "batchTransferFailed": "Failed to sent the batch file",
                     "confirmBatchTransferSuccess": "Success",
@@ -1859,7 +1864,7 @@
             "transferBtn": "Send",
             "address": "{currency} wallet address",
             "phToAddress": "Recipient’s email or Ethereum wallet address",
-            "confirmMsg": "Are you sure you want to transfer {amount} CONSTANT to {address}?",
+            "confirmMsg": "Are you sure you want to transfer {amount} {name} to {address}?",
             "batchConfirmMsg": "Are you sure you want to transfer to multiple people from the uploaded file?",
             "transferFailed": "Failed while transfering, please try again",
             "transferSuccessful": "Your transfer was completed successfully",
@@ -1923,6 +1928,8 @@
                 "startDateLabel": "Start date",
                 "endDateLabel": "End date",
                 "collateralNote": "For this coin, loans will take up to 24 hours to be granted, repaid, or topped up.",
+                "collateralNoteFee": "Fee: {fee} {currency}",
+                "collateralNoteMatch": "Estimated time to match: {hours} hours",
                 "toolTipCollateral": "\n          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.\n        ",
                 "walletAddressLabel": "Which {symbol} wallet should we return your collateral to?",
                 "walletAlias": "Enter your {symbol} wallet address",
@@ -2791,17 +2798,59 @@
         }
     },
     "deposit": {
-        "faqs": {
-            "question1": "Which fiat currencies do you accept?",
-            "answer1": "We accept any currency you can send by bank transfer to our US-based accounts. Once received, we convert your currency to USD.",
-            "question2": "Which stablecoins do you accept?",
-            "answer2": "We accept deposits of USDC, USDT, TUSD, PAX, GUSD, USDS and our native stablecoin, CONST.",
-            "question3": "How do I make a deposit?",
-            "answer3": "\n        <p>You can deposit funds in two ways: </p>\n        <p>Through our website. Simply select the amount of money you’d like to deposit and then send it by bank transfer to the Constant Vault. We’ll convert local currency to USD. </p>\n        <p>Through a cryptocurrency wallet. We accept multiple stablecoins. Just send it to our wallet address, and we’ll credit your account with the USD amount.</p>\n      ",
-            "question4": "What happens after I make a bank transfer?",
-            "answer4": "\n        <p>First, we convert your deposit to USD to stabilize and protect your funds from inflationary devaluation. Then, we send your funds to the Constant Vault, an escrow operated by Prime Trust, an accredited US financial institution.</p>\n        <p>The Constant Vault keeps your money safe across multiple FDIC-insured bank accounts, bringing total coverage to $130,000,000.</p>\n        <p>Later, when you’re ready to withdraw, you’ll receive either USD (if you have a USD account) or local currency.</p>      \n      ",
-            "question5": "Is there a limit on the number of deposits I can make?",
-            "answer5": "No. You can deposit as much as you like, as often as you like."
+        "title": "Your global USD bank account.",
+        "availableInVn": "Available now in Vietnam.",
+        "subTitle": {
+            "sub1": "Save in US dollars, instead of unstable local currencies. Enjoy instant transfers of any amount - to anyone or any business - anywhere in the world. For free.",
+            "sub2": "Your account is backed by the full faith and credit of the United States government, insured by the Federal Deposit Insurance Corporation (FDIC). Established in 1933, the FDIC has a perfect record of no lost funds.  {learnMore}",
+            "learnMore": "Learn more +"
+        },
+        "what": {
+            "whatCaption0": "Protect the value of your money",
+            "whatCaption1": "Move your money anywhere for free",
+            "whatCaption2": "Insure your money up to $5M",
+            "whatCaption3": "Withdraw your money anytime",
+            "whatDesc0": "Save in USD, the world reserve currency, accepted by merchants worldwide. Protect your money against inflation and instability.",
+            "whatDesc1": "Send and receive any amount, anywhere in the world, instantly and for free. Do bigger business, send money home, unlock greater mobility.",
+            "whatDesc2": "Benefit from the maximum coverage the FDIC provides - multiplied by 20. Since the FDIC insures each account up to $250K, we store your money across 20 of them.",
+            "whatDesc3": "Constant works with your local banking system to make sure that all your funds can be withdrawn anytime, in your currency of choice."
+        },
+        "howItWorks": {
+            "title": "How it works",
+            "step1": "STEP 1",
+            "title1": "YOU MAKE A DEPOSIT",
+            "desc1": "Send any currency to your local Constant Trust. If it’s not USD, we convert it.",
+            "step2": "STEP 2",
+            "title2": "WE PROTECT YOUR MONEY",
+            "desc2": "Your USD funds are held safely in fully insured US bank accounts.",
+            "step3": "STEP 3",
+            "title3": "YOU GET MORE",
+            "desc3": "Now you have a global USD account with free transfers and unlimited withdrawals.\n"
+        },
+        "checklist": {
+            "title": "Why you should save money with Constant.",
+            "subTitle": "Smarter than your average bank.",
+            "desc1": "Like traditional banks, we reward you with interest earnings on our collateralized loans. Unlike traditional banks, <b>we give you most of it - since it’s your money, really.</b>",
+            "desc2": "And because we replaced cashiers with code, advisors with algorithms, and switched out bricks and mortar for the blockchain - <b>we can pass the savings directly on to you.</b>"
+        },
+        "howWeWork": {
+            "title": "How We Work",
+            "subTitle": "We’re building a fairer, freer, financial system.",
+            "desc": "\n        <p>As pioneers of borderless banking on the blockchain, we are committed to making banking more inclusive, money more useful, and growth more accessible to anyone, anywhere in the world.</p>\n        <p>What does that look like? Fair interest rates. Inclusive loans. A state-less, stable currency that you can save, borrow, and spend. Transactions secured and carried out collectively by users of the network. A bank for the people, made possible by the people.</p>\n        <p>Constant is proud to be 100% digital, online 24/7. So no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime.</p>\n      "
+        },
+        "stories": {
+            "quote0": "Great user experience. It's always fun watching my savings grow, and super convenient that I can withdraw it anytime. A nice zero-risk companion to your other investments, and a decent enough investment in itself.",
+            "author0": "Carlos",
+            "title0": "Father of three, saving for a rainy day",
+            "quote1": "Love that there's no minimum deposit required so anyone can benefit from their rates. Feel much safer (and smarter) keeping the tips I make with Constant instead of in a box under my bed!",
+            "author1": "Kate",
+            "title1": "Student, being smarter with her money",
+            "quote2": "I used to save USD in my local bank account in Vietnam and earn no interest.  Now I can save and grow my money in USD, in an account fully protected by the FDIC, which I didn't think was possible for foreigners like me.",
+            "author2": "Binh",
+            "title2": "Business owner, looking for a more stable currency.",
+            "quote3": "The 'fringe' benefits are the best part - my friends and business partners in different countries can all get accounts easily, and you can transfer money between them for free. It's actually much more than just saving.",
+            "author3": "Veronica",
+            "title3": "Freelancer, citizen of the world"
         }
     },
     "yourSaving": {
@@ -3423,6 +3472,10 @@
             "btn": "Copy",
             "copied": "Referral link copied to clipboard."
         },
+        "table": {
+            "referral_used_date": "Date",
+            "extra_rate": "Rate (%)"
+        },
         "inviteEmail": {
             "title": "Invite friends via email",
             "placeholder": "Enter email addresses, separated by commas",
@@ -3544,6 +3597,7 @@
                 "term": "Term (Days)",
                 "termMonth": "{month}-Month",
                 "investButton": "PLACE INVEST ORDER",
+                "loginButton": "Login or Register to invest",
                 "invalidAmount": "Amount must be less than {maxAmount}",
                 "getFeeFailed": "Can not get fee in this time, please try again.",
                 "fee": "Invest fee: <span class=\"amount\">{fee}</span> {currency}",
@@ -3565,13 +3619,28 @@
                 "minTerm": "Term (days)",
                 "maxRateTooltip": "This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.",
                 "minTermTooltip": "This is the minimum amount of time you want to borrow.",
-                "buttonText": "Place borrow order"
+                "buttonText": "PLACE BORROW ORDER",
+                "loginButton": "Login or Register to borrow"
             },
             "createdSuccess": "Your borrow had been created successfully",
             "errorMsgs": {
                 "notEnoughBalance": "Your balance is not enough to make borrow!",
                 "generateCollateralAddressFail": "Can't generate collateral address. Please try again!"
             }
+        }
+    },
+    "deposit1": {
+        "faqs": {
+            "question1": "Which fiat currencies do you accept?",
+            "answer1": "We accept any currency you can send by bank transfer to our US-based accounts. Once received, we convert your currency to USD.",
+            "question2": "Which stablecoins do you accept?",
+            "answer2": "We accept deposits of USDC, USDT, TUSD, PAX, GUSD, USDS and our native stablecoin, CONST.",
+            "question3": "How do I make a deposit?",
+            "answer3": "\n        <p>You can deposit funds in two ways: </p>\n        <p>Through our website. Simply select the amount of money you’d like to deposit and then send it by bank transfer to the Constant Vault. We’ll convert local currency to USD. </p>\n        <p>Through a cryptocurrency wallet. We accept multiple stablecoins. Just send it to our wallet address, and we’ll credit your account with the USD amount.</p>\n      ",
+            "question4": "What happens after I make a bank transfer?",
+            "answer4": "\n        <p>First, we convert your deposit to USD to stabilize and protect your funds from inflationary devaluation. Then, we send your funds to the Constant Vault, an escrow operated by Prime Trust, an accredited US financial institution.</p>\n        <p>The Constant Vault keeps your money safe across multiple FDIC-insured bank accounts, bringing total coverage to $130,000,000.</p>\n        <p>Later, when you’re ready to withdraw, you’ll receive either USD (if you have a USD account) or local currency.</p>      \n      ",
+            "question5": "Is there a limit on the number of deposits I can make?",
+            "answer5": "No. You can deposit as much as you like, as often as you like."
         }
     }
 }

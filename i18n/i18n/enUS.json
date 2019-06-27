@@ -2798,34 +2798,34 @@
         }
     },
     "deposit": {
-        "title": "Your global USD bank account.",
+        "title": "Deposit USD or USD stablecoins here.",
         "availableInVn": "Available now in Vietnam.",
         "subTitle": {
-            "sub1": "Save in US dollars, instead of unstable local currencies. Enjoy instant transfers of any amount - to anyone or any business - anywhere in the world. For free.",
-            "sub2": "Your account is backed by the full faith and credit of the United States government, insured by the Federal Deposit Insurance Corporation (FDIC). Established in 1933, the FDIC has a perfect record of no lost funds.  {learnMore}",
+            "sub1": "Deposit funds to make an investment, repay a loan, or simply keep your money secure. Enjoy instant, international transfers, smart contract security for crypto funds, and full FDIC insurance on fiat deposits.",
+            "sub2": "It all starts here. Make a deposit in in less than a minute.",
             "learnMore": "Learn more +"
         },
         "what": {
             "whatCaption0": "Protect the value of your money",
-            "whatCaption1": "Move your money anywhere for free",
-            "whatCaption2": "Insure your money up to $5M",
-            "whatCaption3": "Withdraw your money anytime",
-            "whatDesc0": "Save in USD, the world reserve currency, accepted by merchants worldwide. Protect your money against inflation and instability.",
-            "whatDesc1": "Send and receive any amount, anywhere in the world, instantly and for free. Do bigger business, send money home, unlock greater mobility.",
-            "whatDesc2": "Benefit from the maximum coverage the FDIC provides - multiplied by 20. Since the FDIC insures each account up to $250K, we store your money across 20 of them.",
-            "whatDesc3": "Constant works with your local banking system to make sure that all your funds can be withdrawn anytime, in your currency of choice."
+            "whatCaption1": "Send money globally, instantly",
+            "whatCaption2": "Insure your money up to $130M",
+            "whatCaption3": "Withdraw anytime",
+            "whatDesc0": "Save in USD, and protect your money against inflation and instability.",
+            "whatDesc1": "Send money home. Do bigger business. All you need is an internet connection.",
+            "whatDesc2": "The FDIC insures each account up to $250K, so we store your USD funds across 520 of them.",
+            "whatDesc3": "To any local bank account or wallet address. Just enter your details and you’re good to go."
         },
         "howItWorks": {
             "title": "How it works",
             "step1": "STEP 1",
-            "title1": "YOU MAKE A DEPOSIT",
-            "desc1": "Send any currency to your local Constant Trust. If it’s not USD, we convert it.",
+            "title1": "You make a deposit",
+            "desc1": "Make a bank transfer of USD, or wallet transfer of one of our supported stablecoins. If you have a different fiat currency, we convert it for you.",
             "step2": "STEP 2",
-            "title2": "WE PROTECT YOUR MONEY",
-            "desc2": "Your USD funds are held safely in fully insured US bank accounts.",
+            "title2": "We keep it safe",
+            "desc2": "Your USD funds are held safely in FDIC insured US bank accounts with a total coverage of $130M. Your stablecoins are protected by thousands of nodes and smart contract security.",
             "step3": "STEP 3",
-            "title3": "YOU GET MORE",
-            "desc3": "Now you have a global USD account with free transfers and unlimited withdrawals.\n"
+            "title3": "You get more",
+            "desc3": "Congratulations. You now have access to global transfers, secured investments, and more."
         },
         "checklist": {
             "title": "Why you should save money with Constant.",
@@ -3444,13 +3444,13 @@
     "landingProReferral": {
         "title1": "Constant Pro will go live in",
         "desc1": "This is your unique referral link. Share it via email, Facebook, or Twitter - and increase your interest earnings with every friend that signs up.",
-        "title2": "Get better rates with every friend that signs up",
+        "title2": "Get better rates with every friend who signs up",
         "title3": "Your rewards so far",
         "title4": "You've earned this",
-        "title5": "FRIENDS THAT SIGNED UP",
+        "title5": "FRIENDS WHO SIGNED UP",
         "title6": "MORE PEERS, MORE INTEREST",
         "title7": "INVITE MORE {num} FRIENDS TO ARCHIEVE",
-        "title8": "INVITE MORE PEERS, MORE REWARDS",
+        "title8": "INVITE MORE PEERS, EARN MORE REWARDS",
         "investment": "On investments\n",
         "loans": "On loans",
         "loginRequired": "You need to login to do the action.",

@@ -1928,7 +1928,7 @@
                 "startDateLabel": "Start date",
                 "endDateLabel": "End date",
                 "collateralNote": "For this coin, loans will take up to 24 hours to be granted, repaid, or topped up.",
-                "collateralNoteFee": "Fee: {fee} {currency}",
+                "collateralNoteFee": "Fee: {fee} {currency} (1%)",
                 "collateralNoteMatch": "Estimated time to match: {hours} hours",
                 "toolTipCollateral": "\n          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.\n        ",
                 "walletAddressLabel": "Which {symbol} wallet should we return your collateral to?",

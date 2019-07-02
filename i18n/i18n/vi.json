@@ -1928,7 +1928,7 @@
                 "startDateLabel": "Ngày bắt đầu",
                 "endDateLabel": "Ngày kết thúc",
                 "collateralNote": "For this coin, loans will take up to 24 hours to be granted, repaid, or topped up.",
-                "collateralNoteFee": "Fee: {fee} {currency}",
+                "collateralNoteFee": "Phí chuyển tiền: {fee}{currency} (1%)",
                 "collateralNoteMatch": "Estimated time to match: {hours} hours",
                 "toolTipCollateral": "\nĐây là khoản thế chấp cần có để vay được {exchangeUnit}. Giá trị tài sản thế chấp được tính theo giá thị trường {exchangeRate}.        ",
                 "walletAddressLabel": "Bạn muốn nhận lại phần tài sản thế chấp qua loại ví {symbol} nào?",

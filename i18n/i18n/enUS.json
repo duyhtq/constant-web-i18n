@@ -715,7 +715,7 @@
                 "timeout": "Order timed out",
                 "transferMoneyToAgent": "Waiting for buyer to send money",
                 "waitAgentTransferMoney": "Waiting for seller to send money",
-                "transferredMoneyToAgent": "Funds have been sent to your bank account.",
+                "transferredMoneyToAgent": "Deposit received. Your balance will update shortly.",
                 "done": "Successful",
                 "inProgress": "Order in progress"
             },
@@ -1208,7 +1208,7 @@
                 "alert": {
                     "depositSavingSuccess": "You successfully invested Constant.",
                     "depositSavingFailed": "Failed To Invest Saving",
-                    "stopSavingSuccess": "NO! this happens after you cancelled your trial.",
+                    "stopSavingSuccess": "You successfully cancelled your investment.",
                     "stopSavingFailed": "End your term failed.",
                     "applyReferralSuccess": "Thanks! Your rewards have been applied.",
                     "applyReferralFailed": "Sorry, something went wrong. Please try again.",
@@ -2671,7 +2671,7 @@
         "toAWallet": "To an ETH/EOS wallet",
         "walletAddr": "Ethereum/EOS wallet address",
         "input2FA": "Input 2FA",
-        "withdrawFailed": "Failed while withdrawing, please try again",
+        "withdrawFailed": "Something went wrong. Please try again.",
         "withdrawSuccessful": "Your withdrawal was completed successfully"
     },
     "exchangeInputBuyTrialForm": {

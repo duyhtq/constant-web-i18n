@@ -715,7 +715,7 @@
                 "timeout": "Hết thời gian",
                 "transferMoneyToAgent": "Chờ người mua gửi tiền",
                 "waitAgentTransferMoney": "Chờ người mua gửi tiền",
-                "transferredMoneyToAgent": "Tiền đã được gửi tới tài khoản ngân hàng của bạn.",
+                "transferredMoneyToAgent": "Nộp tiền thành công. Số dư sẽ được hiển thị trong chốc lát.",
                 "done": "Thành công",
                 "inProgress": "Xem chi tiết"
             },
@@ -2671,7 +2671,7 @@
         "toAWallet": "Tới địa chỉ ví ETH/EOS",
         "walletAddr": "Địa chỉ ví Ethereum/EOS",
         "input2FA": "Nhập mã bảo mật 2 lớp",
-        "withdrawFailed": "Có lỗi xảy ra khi rút tiền. Xin vui lòng thử lại.",
+        "withdrawFailed": "Có lỗi xảy ra. Xin vui lòng thử lại.",
         "withdrawSuccessful": "Rút tiền thành công"
     },
     "exchangeInputBuyTrialForm": {

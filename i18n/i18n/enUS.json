@@ -544,7 +544,7 @@
             "approveMess": "Are you sure you want to confirm this order?",
             "reject": "Reject",
             "rejectMess": "Are you sure you want to reject this order?",
-            "riskNote": "We found this order have risk rule detection, Please verify risk before take an action. if you choose Reject the amount of order will be transfer to your balance.",
+            "riskNote": "We found this order have risk rule detection, Please verify risk before take an action.",
             "receipt": "Upload your receipt",
             "viewDetail": "Detail",
             "loadMore": "Load more",
@@ -1139,7 +1139,7 @@
                 "withdrawCrypto": "Withdraw crypto",
                 "transfer": "Transfer",
                 "batchtransfer": "Transfer to multiple people",
-                "deposit": "Make a deposit",
+                "deposit": "Deposit loan collateral",
                 "depositMatched": "Deposit",
                 "withdrawDesc": "Withdraw funds to your bank account or wallet address.",
                 "depositDesc": "Store your money in USD. FDIC insured up to $130M.",
@@ -1812,7 +1812,7 @@
             },
             "yourBalance": "Your balance",
             "validateMaxInput": "Please enter an amount less than or equal to ${amount}",
-            "validateMaxInputBalanceZero": "You don't have enough balance",
+            "validateMaxInputBalanceZero": "Please make sure your balance is sufficient.",
             "transferFeeLabel": "Transfer fee",
             "subTitle": "Free. To anyone, anywhere.",
             "introTitle": "Send money to anyone, anywhere.",
@@ -1856,8 +1856,8 @@
                 "tomo": "To a TOMO address"
             },
             "yourBalance": "Your balance",
-            "validateMaxInput": "Your amount must less than or equal: ${amount}",
-            "validateMaxInputBalanceZero": "You don't have enough balance",
+            "validateMaxInput": "Please make sure your balance is sufficient.",
+            "validateMaxInputBalanceZero": "Please make sure your balance is sufficient.",
             "transferFeeLabel": "Transfer fee",
             "subTitle": "Free. To anyone, anywhere.",
             "introTitle": "Withdraw to your crypto wallet.",
@@ -2793,7 +2793,7 @@
     "transferCrypto": {
         "info": {
             "title": "Withdraw to your crypto wallet.",
-            "desc1": "Withdraw our native stablecoin (CONST) to a decentralized ETH, EOS or TOMO address (such as metamask, mew, trust, tomo wallet - not exchange wallets like coinbase or binance). Or, withdraw USDT, TUSD or USDC to any compatible wallet. Just enter the amount, and select where you want it to go.",
+            "desc1": "Withdraw our native stablecoin (CONST) to a decentralized ETH, EOS or TOMO address that supports CONST. E.g. metamask, mew, trust, tomo wallet - not exchange wallets like Coinbase or Binance. Or, withdraw USDT, TUSD or USDC to any compatible wallet. Just enter the amount, and select where you want it to go.",
             "desc2": "When it reaches the other party, they don’t pay anything either. So send money home, do business with the world, and get it done instantly. That’s what it means to be global."
         }
     },
@@ -3548,7 +3548,7 @@
         },
         "balances": {
             "title": "Balances",
-            "titleDesc": "All investment and collateral deposits will show here.",
+            "titleDesc": "Deposit investment funds",
             "withdraw": "Withdraw",
             "withdrawFrom": {
                 "title": "Withdraw your crypto collateral",
@@ -3601,9 +3601,9 @@
                 "invalidAmount": "Amount must be less than {maxAmount}",
                 "getFeeFailed": "Can not get fee in this time, please try again.",
                 "fee": "Invest fee: <span class=\"amount\">{fee}</span> {currency}",
-                "amountDesc": "<p>How much do you want to lend?</p>",
+                "amountDesc": "Enter the amount you want to lend. If there is an open order of the same amount, you will match fully. If there is an open order larger than that amount, you will also match fully. If your amount is larger, you will be partially matched. The remainder will go towards a new open order.",
                 "termDesc": "If there is a borrower looking for a shorter loan at your rates, you will be partially matched. We will continue to find you a match for the rest of the term.",
-                "interestDesc": "This is your annual interest rate. If there is a borrower willing to pay more, you will earn the higher rate."
+                "interestDesc": "This the minimum annual interest rate you are willing to accept. If there is a borrower willing to pay more, you will be matched at the higher rate."
             }
         },
         "borrowBooking": {

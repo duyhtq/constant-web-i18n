@@ -1640,7 +1640,7 @@
             "send": {
                 "confirmTemplate": {
                     "title": "Thank you!",
-                    "description": "Your funds are on the way to your recipient's bank account. We estimate that it will take sometimes. Once the recipient has received the funds, please click confirm on the Order History page, so we can finalize the record.",
+                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"white bold\">service times</a> for an estimation of when funds will reach.",
                     "contact": "If you have any questions, feel free to reach out to <a class=\"white bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime.",
                     "actionTitle": "Make another transfer"
                 }
@@ -1648,7 +1648,7 @@
             "withdraw": {
                 "confirmTemplate": {
                     "title": "Thank you!",
-                    "description": "Your funds are on the way to your recipient's bank account. We estimate that it will take sometime. Once the recipient has received the funds, please click confirm on the Order History page, so we can finalize the record.",
+                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"white bold\">service times</a> for an estimation of when funds will reach.",
                     "contact": "If you have any questions, feel free to reach out to <a class=\"white bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime.",
                     "actionTitle": "Back to homepage"
                 }

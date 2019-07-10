@@ -1811,7 +1811,7 @@
                 "batch": "To multiple people"
             },
             "yourBalance": "Your balance",
-            "validateMaxInput": "Please enter an amount less than or equal to ${amount}",
+            "validateMaxInput": "Please make sure your balance is sufficient.",
             "validateMaxInputBalanceZero": "Please make sure your balance is sufficient.",
             "transferFeeLabel": "Transfer fee",
             "subTitle": "Free. To anyone, anywhere.",

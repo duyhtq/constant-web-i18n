@@ -3548,7 +3548,7 @@
         },
         "balances": {
             "title": "Balances",
-            "titleDesc": "Deposit investment funds",
+            "titleDesc": "All investment and collateral deposits will show here.",
             "withdraw": "Withdraw",
             "withdrawFrom": {
                 "title": "Withdraw your crypto collateral",
@@ -3586,7 +3586,7 @@
             "matchedSuccess": "Please wait for 1 minute for your investment to finish matching.",
             "matchedFailed": "Sorry, you have not yet been matched. Please try again.\n",
             "deposit": {
-                "title": "Investment deposits",
+                "title": "Deposit investment funds",
                 "depositButton": "Go to deposit page",
                 "depositNote": "Deposit funds to make an investment."
             },

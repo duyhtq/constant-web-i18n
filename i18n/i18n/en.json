@@ -2031,7 +2031,7 @@
             "errorMessages": {
                 "required": "Required",
                 "minimumBorrowAmount": "The minimum amount that you can borrow is {amount} {symbol}",
-                "inValidWalletAddress": "Your wallet address invalid",
+                "inValidWalletAddress": "Your wallet address is invalid",
                 "rangeInterestRate": "Interest rate must be greater than {min}% and less than {max}%"
             },
             "depositCollateral": {

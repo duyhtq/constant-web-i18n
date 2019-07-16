@@ -311,8 +311,10 @@
             "userTaxCountryInvalid": "TaxCountry is invalid",
             "userTaxIDNumberInvalid": "TaxIDNumber is invalid",
             "userPhoneNumberInvalid": "PhoneNumber is invalid",
-            "systemError": "System error"
-        }
+            "systemError": "System error",
+            "notEnoughConstantRepay": "Your Constant balance is not enough to pay this matched"
+        },
+        "withdrawGreaterThan": "The minimum withdrawal amount is {min}"
     },
     "errorCode": {
         "3000": "Your balance is insufficient. Please try again with a different amount.",
@@ -808,6 +810,8 @@
                 "7": "Deposit",
                 "8": "Withdraw",
                 "9": "Risk",
+                "10": "Borrow",
+                "11": "Pay",
                 "received": "Received"
             },
             "orderStatus": {
@@ -1096,15 +1100,22 @@
                 "payOffLoan": "Payoff",
                 "payOffLoanTitle": "Payoff Loan",
                 "allStatus": "All",
+                "termStatusFilter": {
+                    "pending": "Pending Deposit",
+                    "matching": "Matching",
+                    "matched": "Matched",
+                    "closed": "Closed"
+                },
                 "termStatus": {
                     "created": "Matched",
                     "pending": "Matching",
                     "closed": "Closed",
                     "rejected": "Closed",
-                    "pending_kyc": "Verify now",
+                    "pending_kyc": "Pending Deposit",
                     "matched": "Matched",
                     "matching": "Matching",
-                    "cancelled": "Closed"
+                    "cancelled": "Closed",
+                    "transferred_fiat": "Pending Deposit"
                 },
                 "interestInfo": {
                     "header": {
@@ -1141,6 +1152,7 @@
                 "batchtransfer": "Transfer to multiple people",
                 "deposit": "Make a deposit",
                 "depositMatched": "Deposit",
+                "cancelDepositMatched": "Cancel Deposit",
                 "withdrawDesc": "Withdraw funds to your bank account or wallet address.",
                 "depositDesc": "Store your money in USD. FDIC insured up to $130M.",
                 "transferDesc": "Send money across the world - to as many people as you like.",
@@ -1165,7 +1177,17 @@
                         "cancel": "Maybe later"
                     },
                     "cancelDeposit": {
+                        "messageConfirm": "Are you sure you want to cancel your deposit order?",
+                        "confirm": "Yes, cancel",
+                        "cancel": "Go back"
+                    },
+                    "cancelInvestment": {
                         "messageConfirm": "Are you sure you want to cancel your investment order before a match is found?",
+                        "confirm": "Yes, cancel",
+                        "cancel": "Go back"
+                    },
+                    "cancelDepositMatched": {
+                        "messageConfirm": "Are you sure you want to cancel your top up?",
                         "confirm": "Yes, cancel",
                         "cancel": "Go back"
                     },
@@ -1194,7 +1216,18 @@
                             "messageConfirm": "Are you sure you want to repay?",
                             "confirm": "Repay",
                             "cancel": "Not now"
-                        }
+                        },
+                        "payOffSuccess": "Repayment made. Thanks!",
+                        "notEnoughConstantRepay": "Your current balance is {balance}. Please deposit {requireAmount} to cover the amount due, then click repay again. ",
+                        "makeADeposit": "Make a deposit"
+                    },
+                    "pay": {
+                        "messageConfirm": "Are you sure you want to pay?",
+                        "confirm": "Pay",
+                        "cancel": "Not now",
+                        "paySuccess": "Payment made. Thanks!",
+                        "notEnoughConstantRepay": "Your current balance is {balance}. Please deposit {requireAmount} to cover the amount due, then click repay again. ",
+                        "makeADeposit": "Make a deposit"
                     }
                 },
                 "confirm": {
@@ -1870,6 +1903,8 @@
             "transferSuccessful": "Your transfer was completed successfully",
             "timeLimit": "Your money will arrive within ",
             "timeLimitMunite": "2 minutes",
+            "timeLimit1": "24 hours",
+            "timeLimit2": "36 hours",
             "subintroTitle1": "No banks, no borders.",
             "subintroDesc1": "Constant is a digital currency, so you can send it to anyone, anywhere in the world - within minutes.",
             "subintroTitle2": "Zero fees. No transaction limits.",
@@ -1929,6 +1964,7 @@
                 "endDateLabel": "End date",
                 "collateralNote": "For this coin, loans will take up to 24 hours to be granted, repaid, or topped up.",
                 "collateralNoteFee": "Fee: {fee} {currency} (1%)",
+                "collateralNoteTotal": "Total loan received: {total} {currency}",
                 "collateralNoteMatch": "Estimated time to match: {hours} hours",
                 "toolTipCollateral": "\n          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.\n        ",
                 "walletAddressLabel": "Which {symbol} wallet should we return your collateral to?",
@@ -1984,6 +2020,8 @@
                 "termUnit1": "{period} months",
                 "loanAmount": "Loan amount:",
                 "collaterals": "Collateral:",
+                "collateralRequired": "Collateral Required:",
+                "collateralBalance": "Your Collateral Balance:",
                 "term": "Term:",
                 "interestedRate": "Interest rate:",
                 "interestedRateValue": "{percent} APR",
@@ -2044,7 +2082,8 @@
             "listApplications": {
                 "heading": "Loans",
                 "noLoans": "Request your first fixed rate loan.",
-                "amount": "AMOUNT (USD)",
+                "amount": "AMOUNT (USD): ",
+                "collateralRequired": "Collateral Required: ",
                 "createdDate": "Created at",
                 "endTerm": "Term ends",
                 "principal": "Principal",
@@ -2053,8 +2092,10 @@
                 "cancel": "Cancel",
                 "dueDays": "Due: ",
                 "getCollateral": "Recall excess",
+                "payCollateral": "Pay",
                 "payOffLoan": "Repay",
                 "depositMatched": "Top up",
+                "cancelDepositMatched": "Cancel Deposit",
                 "collateral": "COLLATERAL",
                 "collateralValue": "COLLATERAL VALUE",
                 "collateralValueDesc": "This represents your collateral value as a percentage of your loan. It accounts for the interest accrued so far, as well as the repayment fee should you choose to repay today. If it falls to 110%, your collateral will be liquidated, and the difference refunded to you.",
@@ -2096,7 +2137,10 @@
                     "payoffDone": "Payoff done",
                     "repayDownDone": "Repay Down Done",
                     "topupPending": "Top Up Pending",
-                    "manualPending": "Manual Pending"
+                    "manualPending": "Manual Pending",
+                    "liquidateApproving": "Liquidate Approving",
+                    "liquidatePending": "Liquidate Pending",
+                    "liquidateDone": "Liquidate Done"
                 },
                 "mapStatus2": {
                     "pending": "Pending",
@@ -2125,14 +2169,18 @@
                     "confirm": "Confirm"
                 },
                 "amountLabel": "Loan amount",
-                "feePayoffLabel": "Early repayment fee  ",
+                "feePayLabel": "Payment fee",
+                "feePayoffLabel": "Early repayment fee",
                 "feePayoffDesc": " If less than 75% of your term has elapsed, the early repayment fee is 50% of the interest on your remaining term. If more than 75% has elapsed, 100% of the interest on the entire term is due.",
                 "matchingFee": "Matching fee",
                 "interestEarly": "Interest due to date",
                 "interestOnTime": "Interest due",
+                "interestDue": "Interest due",
                 "totalRepayment": "Total repayment",
+                "totalPayment": "Total Payment",
                 "errorRemainCollateral": "You can not to get the remaining collateral back at the moment",
                 "errorRemainCollateralHtml": "\n          Please wait for assistance, or contact us at <a href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>\n        ",
+                "errorCollateralNotEnoughHtml": "\n          Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.\n        ",
                 "depositFrom": {
                     "title": "Make more deposit for your collateral",
                     "amount": "Amount",
@@ -2672,7 +2720,10 @@
         "walletAddr": "Ethereum/EOS wallet address",
         "input2FA": "Input 2FA",
         "withdrawFailed": "Something went wrong. Please try again.",
-        "withdrawSuccessful": "Your withdrawal was completed successfully"
+        "withdrawSuccessful": "Your withdrawal was completed successfully.",
+        "countryNotSupport": "Your country is not supported at the moment. Our support team will get in touch with you via email.",
+        "validateMaxInput": "Please make sure your balance is sufficient.",
+        "validateMaxInputBalanceZero": "Please make sure your balance is sufficient."
     },
     "exchangeInputBuyTrialForm": {
         "title": "<h6>We’re giving you a trial investment of 1000 USD. All you have to do is choose your rate, and we’ll find you a match. When the trial is up, we take the 1000 USD back, but the interest is yours to keep.\n</h6>",
@@ -3088,6 +3139,7 @@
     "support": {
         "title": "Monday to Friday, 9am - 5pm PT.",
         "text": "Questions? Call us at {phone}.",
+        "newTitle": "\n      <h6>Questions? Let's get on a call.</h6>\n      <h6>Set up a time <a href=\"http://calendly.com/justinconstant\" target=\"_blank\">here</a>.</h6>\n    ",
         "phone": {
             "vn": "1-844-201-7242",
             "us": "+1 844 201 7242",
@@ -3527,6 +3579,11 @@
         "table6": {
             "head1": "Late repayment",
             "head2": "Fees"
+        },
+        "table7": {
+            "head1": "Time for funds to be shown in Constant account after deposit is received",
+            "head2": "Business working hours",
+            "head3": "Weekends"
         }
     },
     "modules": {
@@ -3578,7 +3635,8 @@
             "amount": "Amount (USD)",
             "interest": "Rate(APR)",
             "term": "Term (Days)",
-            "date": "Created"
+            "date": "Created",
+            "messageSuccess": "Your order book have been canceled successfully"
         },
         "investBooking": {
             "messLoginFirst": "Please log in or sign up to make an investment.",
@@ -3610,6 +3668,7 @@
             "title": "Borrow",
             "exchange": {
                 "amountLabel": "Amount",
+                "amountLabelDesc": "How much do you want to borrow?",
                 "collateralLabel": "Collateral required",
                 "collateralDesc": "To secure your loan, please deposit 150% of the loan value in collateral.\n",
                 "walletAddressLabel": "Returning {symbol} wallet address",
@@ -3625,7 +3684,8 @@
             "createdSuccess": "Your borrow had been created successfully",
             "errorMsgs": {
                 "notEnoughBalance": "Your balance is not enough to make borrow!",
-                "generateCollateralAddressFail": "Can't generate collateral address. Please try again!"
+                "generateCollateralAddressFail": "Can't generate collateral address. Please try again!",
+                "maxOfCollateralHolding": "Please try a different coin. To manage risk, the platform can hold only 10% of any coin's 24h trading volume."
             }
         }
     },

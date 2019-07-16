@@ -311,8 +311,10 @@
             "userTaxCountryInvalid": "TaxCountry is invalid",
             "userTaxIDNumberInvalid": "TaxIDNumber is invalid",
             "userPhoneNumberInvalid": "PhoneNumber is invalid",
-            "systemError": "System error"
-        }
+            "systemError": "System error",
+            "notEnoughConstantRepay": "Your Constant balance is not enough to pay this matched"
+        },
+        "withdrawGreaterThan": "The minimum withdrawal amount is {min}"
     },
     "errorCode": {
         "3000": "Xin vui lòng nộp thêm tiền vào tài khoản để thực hiện thao tác này",
@@ -808,6 +810,8 @@
                 "7": "Nộp tiền",
                 "8": "Chuyển tiền",
                 "9": "Rủi ro",
+                "10": "Borrow",
+                "11": "Pay",
                 "received": "Đã nhận"
             },
             "orderStatus": {
@@ -1096,15 +1100,22 @@
                 "payOffLoan": "Hoàn trả",
                 "payOffLoanTitle": "Hoàn trả khoản vay",
                 "allStatus": "All",
+                "termStatusFilter": {
+                    "pending": "Pending Deposit",
+                    "matching": "Matching",
+                    "matched": "Matched",
+                    "closed": "Closed"
+                },
                 "termStatus": {
                     "created": "Khớp lệnh",
                     "pending": "Đang chờ",
                     "closed": "Đã đóng",
-                    "rejected": "Đã từ chối",
-                    "pending_kyc": "Đang xác minh KYC",
+                    "rejected": "Closed",
+                    "pending_kyc": "Pending Deposit",
                     "matched": "Khớp lệnh",
                     "matching": "Đang khớp lệnh",
-                    "cancelled": "Đã huỷ"
+                    "cancelled": "Closed",
+                    "transferred_fiat": "Pending Deposit"
                 },
                 "interestInfo": {
                     "header": {
@@ -1141,6 +1152,7 @@
                 "batchtransfer": "Chuyển khoản tới nhiều người cùng lúc",
                 "deposit": "Nộp tiền",
                 "depositMatched": "Nộp tiền",
+                "cancelDepositMatched": "Cancel Deposit",
                 "withdrawDesc": "Rút tiền về tài khoản ngân hàng hoặc địa chỉ ví bất kì.",
                 "depositDesc": "Giữ tiền bằng USD, được FDIC bảo hiểm lên đến 130 triệu USD.",
                 "transferDesc": "Chuyển tiền quốc tế. Không giới hạn số lượng và số lần chuyển.",
@@ -1165,9 +1177,19 @@
                         "cancel": "Để sau"
                     },
                     "cancelDeposit": {
-                        "messageConfirm": "Bạn muốn huỷ lệnh đầu tư khi vẫn chưa được khớp lệnh?",
+                        "messageConfirm": "Are you sure you want to cancel your deposit order?",
                         "confirm": "Xác nhận",
                         "cancel": "Quay lại"
+                    },
+                    "cancelInvestment": {
+                        "messageConfirm": "Are you sure you want to cancel your investment order before a match is found?",
+                        "confirm": "Yes, cancel",
+                        "cancel": "Go back"
+                    },
+                    "cancelDepositMatched": {
+                        "messageConfirm": "Are you sure you want to cancel your top up?",
+                        "confirm": "Yes, cancel",
+                        "cancel": "Go back"
                     },
                     "cancelLoan": {
                         "messageConfirm": "Bạn chắc chắn muốn huỷ yêu cầu vay này?",
@@ -1186,15 +1208,26 @@
                     },
                     "payOff": {
                         "early": {
-                            "messageConfirm": "Bạn muốn hoàn trả khoản vay trước hạn?",
+                            "messageConfirm": "Are you sure you want to repay?",
                             "confirm": "Hoàn trả",
                             "cancel": "Huỷ"
                         },
                         "onTime": {
-                            "messageConfirm": "Xin vui lòng hoàn trả khoản vay.",
+                            "messageConfirm": "Are you sure you want to repay?",
                             "confirm": "Hoàn trả",
                             "cancel": "Không phải lúc này"
-                        }
+                        },
+                        "payOffSuccess": "Repayment made. Thanks!",
+                        "notEnoughConstantRepay": "Your current balance is {balance}. Please deposit {requireAmount} to cover the amount due, then click repay again. ",
+                        "makeADeposit": "Make a deposit"
+                    },
+                    "pay": {
+                        "messageConfirm": "Are you sure you want to pay?",
+                        "confirm": "Pay",
+                        "cancel": "Not now",
+                        "paySuccess": "Payment made. Thanks!",
+                        "notEnoughConstantRepay": "Your current balance is {balance}. Please deposit {requireAmount} to cover the amount due, then click repay again. ",
+                        "makeADeposit": "Make a deposit"
                     }
                 },
                 "confirm": {
@@ -1640,7 +1673,7 @@
             "send": {
                 "confirmTemplate": {
                     "title": "Xin cảm ơn!",
-                    "description": "Tiền của bạn sẽ được chuyển thành công trong vài phút tới. Khi người nhận nhận được tiền, xin vui lòng xác nhận trong lịch sử giao dịch để hoàn tất hồ sơ.",
+                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"white bold\">service times</a> for an estimation of when funds will reach.",
                     "contact": "Xin vui lòng liên hệ với chúng tôi qua email <a class=\"white bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> để được hỗ trợ nhanh nhất.",
                     "actionTitle": "Đặt lệnh chuyển tiền mới"
                 }
@@ -1648,7 +1681,7 @@
             "withdraw": {
                 "confirmTemplate": {
                     "title": "Xin cảm ơn!",
-                    "description": "Tiền của bạn sẽ được chuyển thành công trong vài phút tới. Khi người nhận nhận được tiền, xin vui lòng xác nhận trong lịch sử giao dịch để hoàn tất hồ sơ.",
+                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"white bold\">service times</a> for an estimation of when funds will reach.",
                     "contact": "Xin vui lòng liên hệ với chúng tôi qua email <a class=\"white bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> để được hỗ trợ nhanh nhất.",
                     "actionTitle": "Về trang chủ"
                 }
@@ -1811,8 +1844,8 @@
                 "batch": "Chuyển khoản tới nhiều người cùng lúc"
             },
             "yourBalance": "Số dư",
-            "validateMaxInput": "Xin vui lòng nhập số nhỏ hơn hoặc bằng: ${amount}",
-            "validateMaxInputBalanceZero": "You don't have enough balance",
+            "validateMaxInput": "Please make sure your balance is sufficient.",
+            "validateMaxInputBalanceZero": "Please make sure your balance is sufficient.",
             "transferFeeLabel": "Phí chuyển khoản",
             "subTitle": "Miễn phí. Tới bất cứ ai trên toàn thế giới.",
             "introTitle": "Chuyển khoản tới mọi người ở khắp nơi trên thế giới. Hoàn toàn miễn phí.",
@@ -1856,8 +1889,8 @@
                 "tomo": "To a TOMO address"
             },
             "yourBalance": "Số dư",
-            "validateMaxInput": "Xin vui lòng nhập số nhỏ hơn hoặc bằng: ${amount}",
-            "validateMaxInputBalanceZero": "You don't have enough balance",
+            "validateMaxInput": "Please make sure your balance is sufficient.",
+            "validateMaxInputBalanceZero": "Please make sure your balance is sufficient.",
             "transferFeeLabel": "Phí chuyển khoản",
             "subTitle": "Miễn phí. Tới bất cứ ai trên toàn thế giới.",
             "introTitle": "Chuyển khoản tới mọi người ở khắp nơi trên thế giới. Hoàn toàn miễn phí.",
@@ -1870,6 +1903,8 @@
             "transferSuccessful": "Chuyển khoản thành công",
             "timeLimit": "Bạn sẽ nhận được tiền trong ",
             "timeLimitMunite": "2 phút",
+            "timeLimit1": "24 hours",
+            "timeLimit2": "36 hours",
             "subintroTitle1": "Không ngân hàng, không biên giới.",
             "subintroDesc1": "Constant là tiền điện tử. Bạn có thể gửi và nhận Constant ngay tức thì tới bất kỳ ai trên toàn thế giới.",
             "subintroTitle2": "Miễn phí. Không giới hạn khối lượng giao dịch.",
@@ -1928,7 +1963,8 @@
                 "startDateLabel": "Ngày bắt đầu",
                 "endDateLabel": "Ngày kết thúc",
                 "collateralNote": "For this coin, loans will take up to 24 hours to be granted, repaid, or topped up.",
-                "collateralNoteFee": "Phí chuyển tiền: {fee}{currency} (1%)",
+                "collateralNoteFee": "Fee: {fee} {currency} (1%)",
+                "collateralNoteTotal": "Total loan received: {total} {currency}",
                 "collateralNoteMatch": "Estimated time to match: {hours} hours",
                 "toolTipCollateral": "\nĐây là khoản thế chấp cần có để vay được {exchangeUnit}. Giá trị tài sản thế chấp được tính theo giá thị trường {exchangeRate}.        ",
                 "walletAddressLabel": "Bạn muốn nhận lại phần tài sản thế chấp qua loại ví {symbol} nào?",
@@ -1984,6 +2020,8 @@
                 "termUnit1": "{period} tháng",
                 "loanAmount": "Khoản vay:",
                 "collaterals": "Thế chấp:",
+                "collateralRequired": "Collateral Required:",
+                "collateralBalance": "Your Collateral Balance:",
                 "term": "Kì hạn:",
                 "interestedRate": "Lãi suất:",
                 "interestedRateValue": "{percent}%/năm",
@@ -2044,7 +2082,8 @@
             "listApplications": {
                 "heading": "Các khoản vay",
                 "noLoans": "Request your first fixed rate loan.",
-                "amount": "SỐ TIỀN (USD)",
+                "amount": "AMOUNT (USD): ",
+                "collateralRequired": "Collateral Required: ",
                 "createdDate": "Được tạo lúc",
                 "endTerm": "Ngày đáo hạn",
                 "principal": "Tiền gốc",
@@ -2053,8 +2092,10 @@
                 "cancel": "Huỷ",
                 "dueDays": "Ngày đáo hạn: ",
                 "getCollateral": "Nhận lại phần dư",
+                "payCollateral": "Pay",
                 "payOffLoan": "Hoàn trả",
                 "depositMatched": "Nộp thêm",
+                "cancelDepositMatched": "Cancel Deposit",
                 "collateral": "THẾ CHẤP",
                 "collateralValue": "Giá trị thế chấp",
                 "collateralValueDesc": "Con số này thể hiện giá trị tài sản thế chấp của bạn dưới dạng phần trăm của khoản vay, bao gồm cả phần lãi tích lũy cho đến thời điểm hiện tại và phí trả nợ trước hạn nếu bạn hoàn trả khoản vay ngay lúc này. Nếu nó giảm xuống đến 110%, tài sản thế chấp của bạn sẽ được thanh lý, và phần chênh lệch sẽ được hoàn trả cho bạn.",
@@ -2096,7 +2137,10 @@
                     "payoffDone": "Hoàn trả thành công",
                     "repayDownDone": "Hoàn trả thành công",
                     "topupPending": "Top Up Pending",
-                    "manualPending": "Manual Pending"
+                    "manualPending": "Manual Pending",
+                    "liquidateApproving": "Liquidate Approving",
+                    "liquidatePending": "Liquidate Pending",
+                    "liquidateDone": "Liquidate Done"
                 },
                 "mapStatus2": {
                     "pending": "Đang chờ",
@@ -2125,14 +2169,18 @@
                     "confirm": "Xác nhận"
                 },
                 "amountLabel": "Khoản vay",
-                "feePayoffLabel": "Phí trả nợ trước hạn  ",
+                "feePayLabel": "Payment fee",
+                "feePayoffLabel": "Early repayment fee",
                 "feePayoffDesc": " Nếu chưa quá 75% thời hạn vay, phí trả nợ trước hạn sẽ bằng 50% lãi suất trong khoảng thời gian còn lại. Nếu đã quá 75% thời hạn vay, bạn sẽ phải trả 100% lãi suất của khoản vay.",
                 "matchingFee": "Phí khớp lệnh",
                 "interestEarly": "Lãi suất đến thời điểm hiện tại",
                 "interestOnTime": "Phần lãi phải trả",
+                "interestDue": "Interest due",
                 "totalRepayment": "Tổng số tiền phải trả",
+                "totalPayment": "Total Payment",
                 "errorRemainCollateral": "Bạn chưa thể nhận lại phần tài sản thế chấp còn lại ngay lúc này",
                 "errorRemainCollateralHtml": "\n          Please wait for assistance, or contact us at <a href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>\n        ",
+                "errorCollateralNotEnoughHtml": "\n          Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.\n        ",
                 "depositFrom": {
                     "title": "Nộp thêm tài sản thế chấp",
                     "amount": "Số lượng",
@@ -2671,8 +2719,11 @@
         "toAWallet": "Tới địa chỉ ví ETH/EOS",
         "walletAddr": "Địa chỉ ví Ethereum/EOS",
         "input2FA": "Nhập mã bảo mật 2 lớp",
-        "withdrawFailed": "Có lỗi xảy ra. Xin vui lòng thử lại.",
-        "withdrawSuccessful": "Rút tiền thành công"
+        "withdrawFailed": "Something went wrong. Please try again.",
+        "withdrawSuccessful": "Your withdrawal was completed successfully.",
+        "countryNotSupport": "Your country is not supported at the moment. Our support team will get in touch with you via email.",
+        "validateMaxInput": "Please make sure your balance is sufficient.",
+        "validateMaxInputBalanceZero": "Please make sure your balance is sufficient."
     },
     "exchangeInputBuyTrialForm": {
         "title": "<h6>Chúng tôi tặng bạn một khoản tiết kiệm thử nghiệm trị giá 1,000 USD để trải nghiệm dịch vụ. Khi đáo hạn, bạn được giữ toàn bộ phần lãi.</h6>",
@@ -3088,6 +3139,7 @@
     "support": {
         "title": "Trong khoảng từ 9h đến 17h từ thứ 2 đến thứ 6.",
         "text": "Liên hệ với chúng tôi qua số điện thoại {phone}.",
+        "newTitle": "\n      <h6>Questions? Let's get on a call.</h6>\n      <h6>Set up a time <a href=\"http://calendly.com/justinconstant\" target=\"_blank\">here</a>.</h6>\n    ",
         "phone": {
             "vn": "+84 36 656 2949",
             "us": "+1 844 201 7242",
@@ -3527,6 +3579,11 @@
         "table6": {
             "head1": "Late repayment",
             "head2": "Fees"
+        },
+        "table7": {
+            "head1": "Time for funds to be shown in Constant account after deposit is received",
+            "head2": "Business working hours",
+            "head3": "Weekends"
         }
     },
     "modules": {
@@ -3578,7 +3635,8 @@
             "amount": "Số tiền (USD)",
             "interest": "Rate(APR)",
             "term": "Term (Days)",
-            "date": "Created"
+            "date": "Created",
+            "messageSuccess": "Your order book have been canceled successfully"
         },
         "investBooking": {
             "messLoginFirst": "Xin vui lòng đăng nhập để thực hiện đầu tư!",
@@ -3610,6 +3668,7 @@
             "title": "Vay",
             "exchange": {
                 "amountLabel": "Khoản vay",
+                "amountLabelDesc": "How much do you want to borrow?",
                 "collateralLabel": "Thế chấp",
                 "collateralDesc": "To secure your loan, please deposit 150% the loan value in collateral.",
                 "walletAddressLabel": "Địa chỉ ví {symbol} của bạn",
@@ -3625,7 +3684,8 @@
             "createdSuccess": "Tạo lệnh vay thành công",
             "errorMsgs": {
                 "notEnoughBalance": "Số dư không đủ để vay!",
-                "generateCollateralAddressFail": "Can't generate collateral address. Please try again!"
+                "generateCollateralAddressFail": "Can't generate collateral address. Please try again!",
+                "maxOfCollateralHolding": "Please try a different coin. To manage risk, the platform can hold only 10% of any coin's 24h trading volume."
             }
         }
     },

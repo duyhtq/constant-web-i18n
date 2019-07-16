@@ -2069,7 +2069,7 @@
             "errorMessages": {
                 "required": "Required",
                 "minimumBorrowAmount": "The minimum amount that you can borrow is {amount} {symbol}",
-                "inValidWalletAddress": "Your wallet address invalid",
+                "inValidWalletAddress": "Your wallet address is invalid",
                 "rangeInterestRate": "Interest rate must be greater than {min}% and less than {max}%"
             },
             "depositCollateral": {
@@ -2997,7 +2997,7 @@
     "newHome": {
         "banner": {
             "title": "<h2>Set your own rates.</h2>\n <h2>No minimum capital.</h2>\n <h2>Invest only in secured loans.</h2>\n </span>\n <br />\n <h5>\n Your investments are fully backed by borrower collateral, smart contracts and FDIC insurance. Withdraw unloaned portions anytime.\n </h5>",
-            "title1": "\n        <h1>Experience <span class=\"textSuccess\">fully secured</span> peer-to-peer lending.</h1>\n      ",
+            "title1": "\n        <h3 class=\"semiBold\">Experience <span class=\"textSuccess\">fully secured</span> peer-to-peer lending.</h3>\n      ",
             "subTitle": "No minimum capital. No maximum loans. Set your own rates and tap into true market demand.",
             "cta": "Get started",
             "ctaDesc": "It's free.",
@@ -3678,7 +3678,7 @@
                 "minTerm": "Term (Days)\n",
                 "maxRateTooltip": "This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.",
                 "minTermTooltip": "This is how long you want to borrow for.\n",
-                "buttonText": "PLACE BORROW ORDER",
+                "buttonText": "BORROW",
                 "loginButton": "Login or Register to borrow"
             },
             "createdSuccess": "Your borrow had been created successfully",

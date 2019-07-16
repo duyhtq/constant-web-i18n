@@ -3678,7 +3678,7 @@
                 "minTerm": "Term (days)",
                 "maxRateTooltip": "This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.",
                 "minTermTooltip": "This is the minimum amount of time you want to borrow.",
-                "buttonText": "PLACE BORROW ORDER",
+                "buttonText": "BORROW",
                 "loginButton": "Login or Register to borrow"
             },
             "createdSuccess": "Your borrow had been created successfully",

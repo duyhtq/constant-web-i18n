@@ -2997,7 +2997,7 @@
     "newHome": {
         "banner": {
             "title": "Công cụ tài chính ưu việt thế hệ mới.",
-            "title1": "\n<h1>Nền tảng cho vay ngang hàng <span class=\"darkorange4\">an toàn 100%</span> đầu tiên trên thế giới.</h1>      ",
+            "title1": "\n<h3 class=\"semiBold\">Nền tảng cho vay ngang hàng <span class=\"darkorange4\">an toàn 100%</span> đầu tiên trên thế giới.</h3>      ",
             "subTitle": "Cùng khám phá công cụ tài chính ưu việt dựa trên công nghệ chuỗi khối giúp bạn sử dụng đồng tiền một cách hiệu quả nhất. Nhận và chuyển khoản tới khắp mọi nơi trên thế giới. Gửi tiết kiệm USD với lãi suất 4%/năm. Vay thế chấp với lãi suất ưu đãi chỉ từ 4.5%/năm. Tất cả những gì bạn cần là kết nối Internet.",
             "cta": "Đăng kí tài khoản",
             "ctaDesc": "Miễn phí",
@@ -3678,7 +3678,7 @@
                 "minTerm": "Term (days)",
                 "maxRateTooltip": "Đây là mức lãi suất tính trên năm mà bạn sẵn sàng trả cho khoản vay của mình. Nếu nhà đầu tư muốn mức lãi suất thấp hơn, bạn sẽ chỉ phải trả mức lãi suất thấp hơn này.",
                 "minTermTooltip": "Đây là kì hạn tối thiểu cho khoản vay của bạn.",
-                "buttonText": "PLACE BORROW ORDER",
+                "buttonText": "BORROW",
                 "loginButton": "Login or Register to borrow"
             },
             "createdSuccess": "Tạo lệnh vay thành công",

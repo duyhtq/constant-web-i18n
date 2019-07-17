@@ -2169,7 +2169,7 @@
                     "confirm": "Confirm"
                 },
                 "amountLabel": "Loan amount",
-                "feePayLabel": "Payment fee",
+                "feePayLabel": "Late Payment Fee",
                 "feePayoffLabel": "Early repayment fee",
                 "feePayoffDesc": " If less than 75% of your term has elapsed, the early repayment fee is 50% of the interest on your remaining term. If more than 75% has elapsed, 100% of the interest on the entire term is due.",
                 "matchingFee": "Matching fee",

@@ -2169,7 +2169,7 @@
                     "confirm": "Confirm"
                 },
                 "amountLabel": "Loan amount",
-                "feePayLabel": "Payment fee",
+                "feePayLabel": "Late Payment Fee",
                 "feePayoffLabel": "Early repayment fee",
                 "feePayoffDesc": " If less than 75% of your term has elapsed, the early repayment fee is 50% of the interest on your remaining term. If more than 75% has elapsed, 100% of the interest on the entire term is due.",
                 "matchingFee": "Matching fee",
@@ -2997,7 +2997,7 @@
     "newHome": {
         "banner": {
             "title": "<h2>Set your own rates.</h2>\n <h2>No minimum capital.</h2>\n <h2>Invest only in secured loans.</h2>\n </span>\n <br />\n <h5>\n Your investments are fully backed by borrower collateral, smart contracts and FDIC insurance. Withdraw unloaned portions anytime.\n </h5>",
-            "title1": "\n        <h3 class=\"semiBold\">Experience <span class=\"textSuccess\">fully secured</span> peer-to-peer lending.</h3>\n      ",
+            "title1": "\n        <h1>Experience <span class=\"textSuccess\">fully secured</span> peer-to-peer lending.</h1>\n      ",
             "subTitle": "No minimum capital. No maximum loans. Set your own rates and tap into true market demand.",
             "cta": "Get started",
             "ctaDesc": "It's free.",
@@ -3596,7 +3596,7 @@
             "investments": "Investing orders",
             "borrows": "Borrowing orders",
             "interestSpread": "Interest spread",
-            "interestSpreadDesc": "Interest spread is the difference between the the lowest lending rate and the highest borrowing rate.\n",
+            "interestSpreadDesc": "Interest spread is the difference between the lowest lending rate and the highest borrowing rate.",
             "interestSpreadValues": "0.10%",
             "amount": "Amount (USD)",
             "interest": "Interest (APR)\n",

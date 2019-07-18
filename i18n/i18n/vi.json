@@ -1083,6 +1083,7 @@
                 "apr": "/năm",
                 "haveTimeAccount": "Khoản đầu tư {term}",
                 "month": "tháng",
+                "day": "day",
                 "anyTimeAccount": "Gửi không kì hạn",
                 "endTerm": "Ngày đáo hạn: ",
                 "trial": "THỬ NGHIỆM",
@@ -1104,7 +1105,8 @@
                     "pending": "Pending Deposit",
                     "matching": "Matching",
                     "matched": "Matched",
-                    "closed": "Closed"
+                    "closed": "Closed",
+                    "allStatus": "All"
                 },
                 "termStatus": {
                     "created": "Khớp lệnh",
@@ -1218,7 +1220,7 @@
                             "cancel": "Không phải lúc này"
                         },
                         "payOffSuccess": "Repayment made. Thanks!",
-                        "notEnoughConstantRepay": "Your current balance is {balance}. Please deposit {requireAmount} to cover the amount due, then click repay again. ",
+                        "notEnoughConstantRepay": "Your current balance is ${balance}. Please deposit ${requireAmount} to cover the amount due, then click repay again. ",
                         "makeADeposit": "Make a deposit"
                     },
                     "pay": {
@@ -1226,7 +1228,7 @@
                         "confirm": "Pay",
                         "cancel": "Not now",
                         "paySuccess": "Payment made. Thanks!",
-                        "notEnoughConstantRepay": "Your current balance is {balance}. Please deposit {requireAmount} to cover the amount due, then click repay again. ",
+                        "notEnoughConstantRepay": "Your current balance is ${balance}. Please deposit ${requireAmount} to cover the amount due, then click repay again. ",
                         "makeADeposit": "Make a deposit"
                     }
                 },
@@ -1659,7 +1661,8 @@
                 "BeneficiaryAddressRegion": "Khu vực",
                 "BeneficiaryAddressPostalCode": "Mã bưu điện",
                 "createdBankFailed": "Có lỗi xảy ra khi tạo thêm ngân hàng mới. Xin vui lòng thử lại.",
-                "note": "Ghi chú (tuỳ chọn)"
+                "note": "Ghi chú (tuỳ chọn)",
+                "fullName": "Full Name"
             },
             "fee": "Phí",
             "backOrderBook": "Mua thêm Constant",
@@ -1971,7 +1974,8 @@
                 "walletAlias": "Enter your {symbol} wallet address",
                 "moreInfo": "Bạn sẽ nhận được khoản vay ngay khi phần tài sản thế chấp được xác nhận trên chuỗi khối. Thời gian dự kiến: 2 phút cho ETH và 10 phút cho BTC.",
                 "monthLoan": "{term} tháng",
-                "monthsLoan": "{term} tháng"
+                "monthsLoan": "{term} tháng",
+                "dayLoan": "{term}-day loans"
             },
             "interestTable": {
                 "title": "Tại sao chọn vay thế chấp với Constant?",
@@ -2161,7 +2165,8 @@
                     "chainCancelFailed": "Xin vui lòng thử lại",
                     "chainBorrowCancel": "Đã huỷ",
                     "creating": "Đang xử lí",
-                    "cancelling": "Cancelling"
+                    "cancelling": "Cancelling",
+                    "allStatus": "All"
                 },
                 "getRemainCollateral": "\nBạn muốn nhận lại <strong>{valueAvailable}{symbol}</strong> để giá trị tài sản thế chấp về lại mức tối thiểu?        ",
                 "actionsModal": {
@@ -3627,7 +3632,7 @@
             "scanQR": "Or scan this QR code directly from your mobile wallet to complete the transfer"
         },
         "openOrders": {
-            "title": "Danh sách lệnh của bạn",
+            "title": "Open orders",
             "titleDesc": "These are orders waiting for a match. To view your matched orders, [please visit your accounts page].",
             "invest": "đầu tư",
             "borrow": "vay",
@@ -3638,8 +3643,23 @@
             "date": "Created",
             "messageSuccess": "Your order book have been canceled successfully"
         },
+        "matchedOrders": {
+            "title": "Matched orders",
+            "titleDesc": "These are orders matched. To view more your matched orders, [please visit your accounts page].",
+            "invest": "invest",
+            "borrow": "borrow",
+            "side": "Side",
+            "amount": "Amount(USD)",
+            "interest": "Rate(APR)",
+            "term": "Term (Days)",
+            "date": "Created",
+            "messageSuccess": "Your order book have been canceled successfully"
+        },
         "investBooking": {
-            "messLoginFirst": "Xin vui lòng đăng nhập để thực hiện đầu tư!",
+            "messLoginFirst": {
+                "invest": "You must be login before make an investment!",
+                "borrow": "You must be login before make an borrow!"
+            },
             "messDepositFirst": "Số dư hiện tại không đủ. Xin vui lòng nộp thêm tiền vào tài khoản để thực hiện đầu tư!",
             "matchedSuccess": "Đã khớp lệnh đầu tư thành công.",
             "matchedFailed": "Khớp lệnh đầu tư không thành công. Xin vui lòng thử lại.",
@@ -3702,5 +3722,8 @@
             "question5": "Is there a limit on the number of deposits I can make?",
             "answer5": "No. You can deposit as much as you like, as often as you like."
         }
+    },
+    "testimonial": {
+        "title": "Our Clients Love Us"
     }
 }

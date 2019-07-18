@@ -1083,6 +1083,7 @@
                 "apr": "APR",
                 "haveTimeAccount": "{term}-{termType} investment",
                 "month": "month",
+                "day": "day",
                 "anyTimeAccount": "Anytime deposit",
                 "endTerm": "Term ends: ",
                 "trial": "TRIAL",
@@ -1104,7 +1105,8 @@
                     "pending": "Pending Deposit",
                     "matching": "Matching",
                     "matched": "Matched",
-                    "closed": "Closed"
+                    "closed": "Closed",
+                    "allStatus": "All"
                 },
                 "termStatus": {
                     "created": "Matched",
@@ -1218,7 +1220,7 @@
                             "cancel": "Not now"
                         },
                         "payOffSuccess": "Repayment made. Thanks!",
-                        "notEnoughConstantRepay": "Your current balance is {balance}. Please deposit {requireAmount} to cover the amount due, then click repay again. ",
+                        "notEnoughConstantRepay": "Your current balance is ${balance}. Please deposit ${requireAmount} to cover the amount due, then click repay again. ",
                         "makeADeposit": "Make a deposit"
                     },
                     "pay": {
@@ -1226,7 +1228,7 @@
                         "confirm": "Pay",
                         "cancel": "Not now",
                         "paySuccess": "Payment made. Thanks!",
-                        "notEnoughConstantRepay": "Your current balance is {balance}. Please deposit {requireAmount} to cover the amount due, then click repay again. ",
+                        "notEnoughConstantRepay": "Your current balance is ${balance}. Please deposit ${requireAmount} to cover the amount due, then click repay again. ",
                         "makeADeposit": "Make a deposit"
                     }
                 },
@@ -1659,7 +1661,8 @@
                 "BeneficiaryAddressRegion": "Beneficiary Region",
                 "BeneficiaryAddressPostalCode": "Beneficiary Postal Code",
                 "createdBankFailed": "Failed while creating new bank, please try again",
-                "note": "Note (optional)"
+                "note": "Note (optional)",
+                "fullName": "Full Name"
             },
             "fee": "Fee",
             "backOrderBook": "Back",
@@ -1971,7 +1974,8 @@
                 "walletAlias": "Enter your {symbol} wallet address",
                 "moreInfo": "Your funds will reach you as soon as your collateral is confirmed on its blockchain.  ETA: 2 minutes for ETH and 10 minutes for BTC.",
                 "monthLoan": "{term}-month loan",
-                "monthsLoan": "{term}-month loan"
+                "monthsLoan": "{term}-month loan",
+                "dayLoan": "{term}-day loans"
             },
             "interestTable": {
                 "title": "Why you should borrow with Constant.",
@@ -2161,7 +2165,8 @@
                     "chainCancelFailed": "Please try again",
                     "chainBorrowCancel": "Cancelled",
                     "creating": "Processing",
-                    "cancelling": "Cancelling"
+                    "cancelling": "Cancelling",
+                    "allStatus": "All"
                 },
                 "getRemainCollateral": "\n          Are you sure you want to recall <strong>{valueAvailable} {symbol}</strong> to bring your collateral value back to the minimum required amount?\n        ",
                 "actionsModal": {
@@ -3627,7 +3632,7 @@
             "scanQR": "Or scan this QR code directly from your mobile wallet to complete the transfer"
         },
         "openOrders": {
-            "title": "Your open orders",
+            "title": "Open orders",
             "titleDesc": "These are orders waiting for a match. To view your matched orders, [please visit your accounts page].",
             "invest": "invest",
             "borrow": "borrow",
@@ -3638,8 +3643,23 @@
             "date": "Created",
             "messageSuccess": "Your order book have been canceled successfully"
         },
+        "matchedOrders": {
+            "title": "Matched orders",
+            "titleDesc": "These are orders matched. To view more your matched orders, [please visit your accounts page].",
+            "invest": "invest",
+            "borrow": "borrow",
+            "side": "Side",
+            "amount": "Amount(USD)",
+            "interest": "Rate(APR)",
+            "term": "Term (Days)",
+            "date": "Created",
+            "messageSuccess": "Your order book have been canceled successfully"
+        },
         "investBooking": {
-            "messLoginFirst": "Please log in or sign up to make an investment.",
+            "messLoginFirst": {
+                "invest": "You must be login before make an investment!",
+                "borrow": "You must be login before make an borrow!"
+            },
             "messDepositFirst": "Please deposit sufficient funds to make this investment.",
             "matchedSuccess": "Please wait for 1 minute for your investment to finish matching.",
             "matchedFailed": "Sorry, you have not yet been matched. Please try again.\n",
@@ -3674,7 +3694,7 @@
                 "walletAddressLabel": "Returning {symbol} wallet address",
                 "walletAddressDesc": "This is the wallet that will receive the returned collateral when repayment is made.\n",
                 "walletAlias": "0x687C906b2....8bd9369242e",
-                "maxRate": "Interest rate (APR)",
+                "maxRate": "Interest (APR)",
                 "minTerm": "Term (Days)\n",
                 "maxRateTooltip": "This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.",
                 "minTermTooltip": "This is how long you want to borrow for.\n",
@@ -3702,5 +3722,8 @@
             "question5": "Is there a limit on the number of deposits I can make?",
             "answer5": "No. You can deposit as much as you like, as often as you like."
         }
+    },
+    "testimonial": {
+        "title": "Our Clients Love Us"
     }
 }

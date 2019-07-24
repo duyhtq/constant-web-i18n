@@ -3633,7 +3633,7 @@
         },
         "openOrders": {
             "title": "Open orders",
-            "titleDesc": "These are orders waiting for a match. To view your matched orders, [please visit your accounts page].",
+            "titleDesc": "These are orders waiting for a match. To view your matched orders, please visit your Accounts page.",
             "invest": "invest",
             "borrow": "borrow",
             "side": "Side",
@@ -3645,7 +3645,7 @@
         },
         "matchedOrders": {
             "title": "Matched orders",
-            "titleDesc": "These are orders matched. To view more your matched orders, [please visit your accounts page].",
+            "titleDesc": "These are matched order. To view more details, please visit your Accounts page.",
             "invest": "invest",
             "borrow": "borrow",
             "side": "Side",

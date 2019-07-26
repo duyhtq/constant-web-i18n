@@ -3634,7 +3634,7 @@
             "interest": "Interest (APR)\n",
             "term": "Term (Days)",
             "termValues": "{term}-Months",
-            "matched": "Matched"
+            "matched": "Time"
         },
         "balances": {
             "title": "Balances",

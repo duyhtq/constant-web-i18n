@@ -3665,8 +3665,8 @@
             "matchedFailed": "Your invest had been matched unsuccessfully, please try again.",
             "deposit": {
                 "title": "Investments deposit",
-                "depositButton": "Go to deposit page",
-                "depositNote": "Deposit funds to make an investment."
+                "depositButton": "Deposit more",
+                "depositNote": "If you don't want to miss invest opportunity, please make sure to keep your funds sufficient."
             },
             "form": {
                 "title": "Invest",

@@ -314,7 +314,8 @@
             "systemError": "System error",
             "notEnoughConstantRepay": "Your Constant balance is not enough to pay this matched"
         },
-        "withdrawGreaterThan": "The minimum withdrawal amount is {min}"
+        "withdrawGreaterThan": "The minimum withdrawal amount is {min}",
+        "withdrawLessThanOrEqual": "The maximum withdrawal amount is {max}"
     },
     "errorCode": {
         "3000": "Please deposit enough Constant to continue.",
@@ -431,7 +432,11 @@
             "plZipcode": "12345",
             "lAddrUpload": "Please upload a document verifying the address above.",
             "descAddrUpload": "<div>\n        Valid documents: utility bill, phone bill, mortgage statement, tenancy\n        agreement, bank/credit card statement, insurance letter (motor, home, or\n        life), or financial statement (pension, endowment). <br />\n        <b>Document must be dated within the last 90 days. </b>\n        <br />\n        Please ensure address in proof of address document matches address\n        provided in application.\n      </div>\n      ",
-            "btnBack": "Back"
+            "btnBack": "Back",
+            "titleExample": "Before uploading, please crop the image of your ID to make the border as small as possible.",
+            "titleExampleClick": "Click here to see the examples.",
+            "correct": "Correct",
+            "incorrect": "Incorrect"
         },
         "batchTransfer": {
             "title": "Batch Transfers",
@@ -577,7 +582,7 @@
                     "Cancel": "\n            <div>\n              <p>You’re {Type} <strong>{Amount}</strong> Constant at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you want to cancel this order, please click the “Cancel order” button below. Otherwise, please close this window.</p>\n            </div>\n          ",
                     "Approve": "\n             <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Bank Name:</span>\n                  <strong>{bank_name}</strong>\n                </div>\n                <div>\n                  <span>Account Name:</span>\n                  <strong>{bank_account_name}</strong>\n                </div>\n                <div>\n                  <span>Account Number: </span>\n                  <strong>{bank_account_number}</strong>\n                </div>\n                <div>\n                  <span>Amount: </span>\n                  <strong>{Total}&nbsp;{Currency}</strong>\n                </div>\n                <div>\n                  <span>Reference: </span>\n                  <strong>{Reference}</strong>\n                </div>\n                <div>\n                    <span>Bank Country: </span>\n                    <strong>{bankCountry}</strong>\n                 </div>\n              </div>\n              <br />\n              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>\n             </div>\n          ",
                     "ApproveUs": "\n          <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Account Name:</span>\n                  <strong>{bank_account_name}</strong>\n                </div>\n                <div>\n                  <span>Account Number: </span>\n                  <strong>{bank_account_number}</strong>\n                </div>\n                <div>\n                  <span>Amount: </span>\n                  <strong>{Total}&nbsp;{Currency}</strong>\n                </div>\n                <div>\n                  <span>Reference: </span>\n                  <strong>{Reference}</strong>\n                </div>\n                <div>\n                    <span>Bank Country: </span>\n                    <strong>{bankCountry}</strong>\n                 </div>\n              </div>\n              <br />\n              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>\n             </div>\n          ",
-                    "ApproveZelle": "\n             <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Payment method:</span>\n                  <strong>Zelle</strong>\n                </div>\n                <div>\n                  <span>Bank Email Address:</span>\n                  <strong>{Email}</strong>\n                </div>\n             </div>\n          ",
+                    "ApproveZelle": "\n             <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Payment method:</span>\n                  <strong>Zelle</strong>\n                </div>\n                <div>\n                  <span>Bank Email Address:</span>\n                  <strong>{Email}</strong>\n                </div>\n                <div>\n                  <span>Full Name:</span>\n                  <strong>{FullName}</strong>\n                </div>\n             </div>\n          ",
                     "Finish": "\n            <div>\n                <p>You’re selling <strong>{Amount} Constant</strong> at <strong>{Price} </strong> {Currency} per Constant.</p>\n                <p>If you’ve received a bank transfer for <strong>{TotalVND} {Currency}</strong>, you can now send your Constant to the buyer by clicking the button below.</p>\n                <p>IMPORTANT: Please do not send your Constant until you’ve received the bank transfer from the buyer. If the buyer doesn’t pay you within 30 minutes of placing the order, please email us at hello@constant.money.</p>\n            </div>\n          "
                 }
             }
@@ -764,6 +769,7 @@
             "fee": "fee",
             "loadMore": "Load more",
             "status": "Status",
+            "note": "Note",
             "total": "Total",
             "value": "Value",
             "link": "Link",
@@ -794,6 +800,7 @@
                     "transferMoneyToAgent": "Your account will be credited once we have received your transfer",
                     "waitAgentTransferMoney": "Waiting for seller to send money",
                     "transferredMoneyToAgent": " ",
+                    "transferredMoneyToAgentInvest": " ",
                     "done": "Successful",
                     "inProgress": "Order in progress",
                     "approving": "Waiting for admin approve"
@@ -855,7 +862,8 @@
                     "timeout": "Order timed out",
                     "transferMoneyToAgent": "Please make a transfer to complete your deposit",
                     "waitAgentTransferMoney": "Waiting for seller to send money",
-                    "transferredMoneyToAgent": "Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.",
+                    "transferredMoneyToAgent": "Your account will be credited once we have received your transfer.",
+                    "transferredMoneyToAgentInvest": "Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.",
                     "done": "Successful",
                     "inProgress": "Order in progress",
                     "approving": "Waiting for admin approve"
@@ -1403,7 +1411,8 @@
             "loginButton": "Already have an account? Login",
             "registerSuccessfully": "Success! Welcome to Constant. We’ve sent a verification email to your inbox.",
             "agreementAction": "User Agreement and Privacy Policy.",
-            "registerFailed": "Sorry, something went wrong. Please try again."
+            "registerFailed": "Sorry, something went wrong. Please try again.",
+            "referrerReferralCode": "Your referrer's referral code: {code}"
         }
     },
     "landingPage": {
@@ -1605,6 +1614,7 @@
                 "buyCryptoThankMsg": "Please transfer {fiatAmount} {fiatCurrency} to the following wallet address to complete your investment.",
                 "importantMsg": "Do include your reference number {referenceNumber} in the transfer description.",
                 "important": "IMPORTANT",
+                "dgxFeeMsg": "(includes the 0.13% DGX transfer fee)",
                 "thankYou": "Thank you!",
                 "minuteWindow": "15 MINUTE WINDOW:",
                 "minuteWindowDescription": "Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled."
@@ -1879,7 +1889,8 @@
             "howItWorks": "How it works",
             "amount": "Amount",
             "to": "To",
-            "input2FA": "Input 2FA"
+            "input2FA": "Input 2FA",
+            "note": "Note (optional)"
         },
         "transferCrypto": {
             "title": "Transfer",
@@ -1904,6 +1915,7 @@
             "batchConfirmMsg": "Are you sure you want to transfer to multiple people from the uploaded file?",
             "transferFailed": "Failed while transfering, please try again",
             "transferSuccessful": "Your transfer was completed successfully",
+            "timeLimitInWorkingTime": "Your money will arrive within 1 hour",
             "timeLimit": "Your money will arrive within ",
             "timeLimitMunite": "2 minutes",
             "timeLimit1": "24 hours",
@@ -1963,12 +1975,14 @@
                 "termLabel": "Pick a loan term",
                 "amountLabel": "How much do you want to borrow?",
                 "collateralLabel": "Collateral required (75% Loan to Value ratio)",
+                "collateralRequiredLabel": "Collateral required ({value}% Loan to Value ratio)",
                 "startDateLabel": "Start date",
                 "endDateLabel": "End date",
                 "collateralNote": "For this coin, loans will take up to 24 hours to be granted, repaid, or topped up.",
                 "collateralNoteFee": "Fee: {fee} {currency} (1%)",
                 "collateralNoteTotal": "Total loan received: {total} {currency}",
                 "collateralNoteMatch": "Estimated time to match: {hours} hours",
+                "collateralNoteMatchInWorkingTime": "Estimated time to match 1 hour",
                 "toolTipCollateral": "\n          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.\n        ",
                 "walletAddressLabel": "Which {symbol} wallet should we return your collateral to?",
                 "walletAlias": "Enter your {symbol} wallet address",
@@ -2071,7 +2085,10 @@
                 "payCollateral": "Pay by Collateral"
             },
             "errorMessages": {
-                "required": "Required",
+                "Required": "Required",
+                "constantAmountRequired": "Amount is required to make a borrow!",
+                "collateralAmountRequired": "Collateral amount is required to make a borrow!",
+                "walletAddressRequired": "Wallet Address is required to make a borrow!",
                 "minimumBorrowAmount": "The minimum amount that you can borrow is {amount} {symbol}",
                 "inValidWalletAddress": "Your wallet address is invalid",
                 "rangeInterestRate": "Interest rate must be greater than {min}% and less than {max}%"
@@ -2160,7 +2177,7 @@
                     "chainBorrowPending": "Please try again",
                     "chainBorrowOk": "Success",
                     "chainBorrowFailed": "Please try again",
-                    "chainCancelPending": "Cancel",
+                    "chainCancelPending": "Cancelled",
                     "chainCancelOk": "Cancelled",
                     "chainCancelFailed": "Please try again",
                     "chainBorrowCancel": "Cancelled",
@@ -2183,6 +2200,9 @@
                 "interestDue": "Interest due",
                 "totalRepayment": "Total repayment",
                 "totalPayment": "Total Payment",
+                "repaymentByCollateral": "Do you want to pay by your collateral?",
+                "willPayCollateral": "Collateral will be pay is",
+                "willReturnCollateral": "Collateral will be return is",
                 "errorRemainCollateral": "You can not to get the remaining collateral back at the moment",
                 "errorRemainCollateralHtml": "\n          Please wait for assistance, or contact us at <a href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>\n        ",
                 "errorCollateralNotEnoughHtml": "\n          Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.\n        ",
@@ -3299,6 +3319,7 @@
                 "textLogin": "Login",
                 "textRegister": "Register",
                 "btn2": "to invest now",
+                "btnBorrow": "to borrow now",
                 "btnVerify": "Verify now",
                 "btnTrial": "Start your free trial",
                 "btnAuth": "Log in or Register to invest",
@@ -3359,7 +3380,9 @@
                 "zelle": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <br /><br />\n          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>\n          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n        ",
                 "bankChosenMessage1": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n          <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n        ",
                 "bankChosenMessage": "We have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.",
-                "makeAnotherButton": "Make another investment"
+                "makeAnotherButton": "Make another investment",
+                "updateBalanceNoteInWorkingTime": "Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience.",
+                "updateBalanceNote": "Please note it might take <strong>up to 1 business day</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience."
             }
         },
         "whatCaption0": "Set your own rates",
@@ -3597,7 +3620,11 @@
         }
     },
     "proLending": {
+        "depositFundsTitle": "Deposit Funds",
+        "depositCollateralTitle": "Deposit Collateral",
         "watchBoard": {
+            "invested": "Invested at Market",
+            "borrowed": "Borrowed at Market",
             "investments": "Investing orders",
             "borrows": "Borrowing orders",
             "interestSpread": "Interest spread",
@@ -3606,7 +3633,8 @@
             "amount": "Amount(USD)",
             "interest": "Interest(APR)",
             "term": "Term(Days)",
-            "termValues": "{term}-Months"
+            "termValues": "{term}-Months",
+            "matched": "Matched"
         },
         "balances": {
             "title": "Balances",
@@ -3625,6 +3653,7 @@
             }
         },
         "deposits": {
+            "depositLabel": "Select loan collateral",
             "title": "MAKE A DEPOSIT",
             "generateWallet": "Generate receiving wallet address",
             "depositNote": "Deposit collateral to secure a loan",
@@ -3641,10 +3670,11 @@
             "interest": "Rate(APR)",
             "term": "Term (Days)",
             "date": "Created",
+            "matched": "Matched",
             "messageSuccess": "Your order book have been canceled successfully"
         },
         "matchedOrders": {
-            "title": "Matched orders",
+            "title": "Orders History",
             "titleDesc": "These are orders matched. To view more your matched orders, [please visit your accounts page].",
             "invest": "invest",
             "borrow": "borrow",
@@ -3653,6 +3683,7 @@
             "interest": "Rate(APR)",
             "term": "Term (Days)",
             "date": "Created",
+            "matched": "Matched",
             "messageSuccess": "Your order book have been canceled successfully"
         },
         "investBooking": {
@@ -3661,12 +3692,15 @@
                 "borrow": "You must be login before make an borrow!"
             },
             "messDepositFirst": "your account balance was not enough. You must be deposit before make an investment!",
+            "minAmountRequired": "Amount must be greater than {value} is required to make an investment!",
+            "amountRequired": "Amount is required to make an investment!",
+            "interestRequired": "Interest is required to make an investment!",
             "matchedSuccess": "Your invest had been matched successfully.",
             "matchedFailed": "Your invest had been matched unsuccessfully, please try again.",
             "deposit": {
                 "title": "Investments deposit",
                 "depositButton": "Deposit more",
-                "depositNote": "If you don't want to miss invest opportunity, please make sure to keep your funds sufficient."
+                "depositNote": "If you don't want to miss  invest opportunity, please make sure to keep your funds sufficient."
             },
             "form": {
                 "title": "Invest",
@@ -3691,7 +3725,9 @@
                 "amountLabelDesc": "How much do you want to borrow?",
                 "collateralLabel": "Collateral required",
                 "collateralDesc": "To secure your loan, please deposit 150% the loan value in collateral.",
+                "collateralRequiredDesc": "To secure your loan, please deposit {value}% the loan value in collateral.",
                 "walletAddressLabel": "Your {symbol} wallet address",
+                "returningWalletAddressLabel": "Returning address",
                 "walletAddressDesc": "The wallet that will receive the returned collateral when repayment is made.",
                 "walletAlias": "0x687C906b2....8bd9369242e",
                 "maxRate": "Interest rate (APR)",
@@ -3707,7 +3743,9 @@
                 "generateCollateralAddressFail": "Can't generate collateral address. Please try again!",
                 "maxOfCollateralHolding": "Please try a different coin. To manage risk, the platform can hold only 10% of any coin's 24h trading volume."
             }
-        }
+        },
+        "orderBook": "Order Book",
+        "tradeHistory": "Trade History"
     },
     "deposit1": {
         "faqs": {

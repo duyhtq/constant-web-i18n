@@ -314,7 +314,8 @@
             "systemError": "System error",
             "notEnoughConstantRepay": "Your Constant balance is not enough to pay this matched"
         },
-        "withdrawGreaterThan": "The minimum withdrawal amount is {min}"
+        "withdrawGreaterThan": "The minimum withdrawal amount is {min}",
+        "withdrawLessThanOrEqual": "The maximum withdrawal amount is {max}"
     },
     "errorCode": {
         "3000": "Xin vui lòng nộp thêm tiền vào tài khoản để thực hiện thao tác này",
@@ -431,7 +432,11 @@
             "plZipcode": "12345",
             "lAddrUpload": "Xin vui lòng tải lên một trong các loại giấy tờ sau đây để xác minh địa chỉ.",
             "descAddrUpload": "<div>\n        Giấy tờ hợp lệ: hoá đơn dịch vụ, hoá đơn điện thoại, xác nhận thế chấp, hợp đồng thuê nhà, sao kê tài khoản ngân hàng hoặc thẻ tín dụng, bảo hiểm (bảo hiểm ô tô, xe máy hoặc bảo hiểm nhân thọ), hoặc báo cáo tài chính (lương hưu, trợ cấp).<br />\n        <b>Giấy tờ này phải được cấp trong phạm vi 90 ngày gần nhất.</b>\n        <br />\n        Địa chỉ ở trong giấy tờ phải trùng khớp với địa chỉ đã cung cấp.\n      </div>      ",
-            "btnBack": "Trở lại"
+            "btnBack": "Trở lại",
+            "titleExample": "Before uploading, please crop the image of your ID to make the border as small as possible.",
+            "titleExampleClick": "Click here to see the examples.",
+            "correct": "Correct",
+            "incorrect": "Incorrect"
         },
         "batchTransfer": {
             "title": "Chuyển khoản hàng loạt",
@@ -577,7 +582,7 @@
                     "Cancel": "\n<div>\n              <p>Bạn vừa {Type}<strong>{Amount}</strong> Constant với tỉ giá <strong>{Price}</strong>{Currency}.</p>\n              <p>Nếu bạn muốn huỷ lệnh này, xin vui lòng chọn nút \"Huỷ giao dịch\" ở bên dưới. Nếu không, xin vui lòng đóng cửa sổ này.</p>\n            </div>\n          ",
                     "Approve": "\n<div>\n              <p>Bạn đang mua <strong>{Amount} Constant</strong> với giá <strong>{Price}</strong> {Currency} mỗi Constant.</p>\n              <p>Nếu bạn đã gửi <strong>{Total} {Currency}</strong> tới tài khoản ngân hàng của người bán, xin vui lòng ấn “Xác nhận giao dịch” dưới đây.</p> \n              <p>Nếu chưa, xin vui lòng gửi <strong>{Total} {Currency}</strong> tới tài khoản ngân hàng của người bán. Hãy nhớ ghi kèm mã giao dịch <ref> trong phần nội dung chuyển khoản.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Tên ngân hàng:</span>\n                  <strong>{bank_name}</strong>\n                </div>\n                <div>\n                  <span>Tên tài khoản:</span>\n                  <strong>{bank_account_name}</strong>\n                </div>\n                <div>\n                  <span>Số tài khoản: </span>\n                  <strong>{bank_account_number}</strong>\n                </div>\n                <div>\n                  <span>Số tiền: </span>\n                  <strong>{Total}&nbsp;{Currency}</strong>\n                </div>\n                <div>\n                  <span>Mã giao dịch: </span>\n                  <strong>{Reference}</strong>\n                </div>\n                <div>\n                    <span>Quốc gia: </span>\n                    <strong>{bankCountry}</strong>\n                 </div>\n              </div>\n              <br />\n              <p>LƯU Ý: nếu bạn không thực hiện chuyển khoản trong 30 phút, giao dịch sẽ tự động bị huỷ.</p>\n             </div>\n          ",
                     "ApproveUs": "\n          <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Account Name:</span>\n                  <strong>{bank_account_name}</strong>\n                </div>\n                <div>\n                  <span>Account Number: </span>\n                  <strong>{bank_account_number}</strong>\n                </div>\n                <div>\n                  <span>Amount: </span>\n                  <strong>{Total}&nbsp;{Currency}</strong>\n                </div>\n                <div>\n                  <span>Reference: </span>\n                  <strong>{Reference}</strong>\n                </div>\n                <div>\n                    <span>Bank Country: </span>\n                    <strong>{bankCountry}</strong>\n                 </div>\n              </div>\n              <br />\n              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>\n             </div>\n          ",
-                    "ApproveZelle": "\n<div>\n              <p>Bạn đang mua <strong>{Amount} Constant</strong> với giá <strong>{Price}</strong> {Currency} mỗi Constant.</p>\n              <p>Nếu bạn đã gửi <strong>{Total} {Currency}</strong> tới tài khoản ngân hàng của người bán, xin vui lòng ấn “Xác nhận giao dịch” dưới đây.</p> \n              <p>Nếu chưa, xin vui lòng gửi <strong>{Total} {Currency}</strong> tới tài khoản ngân hàng của người bán. Hãy nhớ ghi kèm mã giao dịch <ref> trong phần nội dung chuyển khoản.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Hình thức thanh toán:</span>\n                  <strong>Zelle</strong>\n                </div>\n                <div>\n                  <span>Địa chỉ email:</span>\n                  <strong>{Email}</strong>\n                </div>\n<div>\n                  <span>Họ tên:</span>\n                  <strong>{FullName}</strong>\n                </div>\n             </div>\n          ",
+                    "ApproveZelle": "\n             <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Payment method:</span>\n                  <strong>Zelle</strong>\n                </div>\n                <div>\n                  <span>Bank Email Address:</span>\n                  <strong>{Email}</strong>\n                </div>\n                <div>\n                  <span>Full Name:</span>\n                  <strong>{FullName}</strong>\n                </div>\n             </div>\n          ",
                     "Finish": "\n<div>\n                <p>Bạn đã đặt lệnh bán <strong>{Amount} Constant</strong> với giá <strong>{Price} </strong> {Currency} 1 Constant.</p>\n                <p>Khi nhận được chuyển khoản số tiền <strong>{TotalVND} {Currency}</strong>, bạn có thể gửi Constant đi bằng cách nhấn nút bên dưới.</p>\n                <p>LƯU Ý: Vui lòng không gửi Constant khi bạn chưa nhận được chuyển khoản. Nếu bạn chưa nhận được tiền trong vòng 30 phút, \n vui lòng liên hệ Constant tại hello@constant.money.</p>\n            </div>          "
                 }
             }
@@ -764,6 +769,7 @@
             "fee": "phí",
             "loadMore": "Tải thêm",
             "status": "Trạng thái",
+            "note": "Note",
             "total": "Tổng cộng",
             "value": "Số lượng Token",
             "link": "Link",
@@ -794,6 +800,7 @@
                     "transferMoneyToAgent": "Bạn sẽ nhận được tiền trong tài khoản Constant ngay khi bạn chuyển khoản thành công",
                     "waitAgentTransferMoney": "Đang chuyển tiền",
                     "transferredMoneyToAgent": " ",
+                    "transferredMoneyToAgentInvest": " ",
                     "done": "Thành công",
                     "inProgress": "Đang xử lí giao dịch",
                     "approving": "Waiting for admin approve"
@@ -855,7 +862,8 @@
                     "timeout": "Hết thời gian",
                     "transferMoneyToAgent": "Xin vui lòng chuyển khoản để nộp tiền vào tài khoản",
                     "waitAgentTransferMoney": "Đang chuyển tiền",
-                    "transferredMoneyToAgent": "Số dư hiện tại: {balance} USD. Để đầu tư {investAmount} USD, xin vui lòng nộp thêm {remainAmount} USD vào tài khoản.",
+                    "transferredMoneyToAgent": "Your account will be credited once we have received your transfer.",
+                    "transferredMoneyToAgentInvest": "Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.",
                     "done": "Thành công",
                     "inProgress": "Đang xử lí giao dịch",
                     "approving": "Waiting for admin approve"
@@ -1403,7 +1411,8 @@
             "loginButton": "Bạn đã có tài khoản? Đăng nhập tại đây",
             "registerSuccessfully": "Thành công! Chào mừng tới Constant. Chúng tôi đã gửi email xác minh tới hộp thư đến của bạn.",
             "agreementAction": "Thoả thuận sử dụng và Chính sách bảo mật.",
-            "registerFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại."
+            "registerFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
+            "referrerReferralCode": "Your referrer's referral code: {code}"
         }
     },
     "landingPage": {
@@ -1605,6 +1614,7 @@
                 "buyCryptoThankMsg": "Xin vui lòng chuyển khoản {fiatAmount}{fiatCurrency} tới địa chỉ dưới đây để hoàn tất đầu tư.",
                 "importantMsg": "Hãy nhớ điền mã giao dịch {referenceNumber} trong phần nội dung chuyển khoản.",
                 "important": "LƯU Ý",
+                "dgxFeeMsg": "(includes the 0.13% DGX transfer fee)",
                 "thankYou": "Xin cảm ơn!",
                 "minuteWindow": "15 PHÚT:",
                 "minuteWindowDescription": "Vui lòng hoàn tất chuyển khoản trong vòng 15 phút. Nếu không, giao dịch sẽ tự động bị huỷ bỏ."
@@ -1879,7 +1889,8 @@
             "howItWorks": "Hướng dẫn sử dụng",
             "amount": "Số tiền",
             "to": "Tới",
-            "input2FA": "Nhập mã bảo mật 2 lớp"
+            "input2FA": "Nhập mã bảo mật 2 lớp",
+            "note": "Note (optional)"
         },
         "transferCrypto": {
             "title": "Chuyển khoản",
@@ -1904,6 +1915,7 @@
             "batchConfirmMsg": "Bạn muốn chuyển khoản tới những người có trong danh sách này?",
             "transferFailed": "Có lỗi xảy ra khi thực hiện chuyển khoản. Xin vui lòng thử lại",
             "transferSuccessful": "Chuyển khoản thành công",
+            "timeLimitInWorkingTime": "Your money will arrive within 1 hour",
             "timeLimit": "Bạn sẽ nhận được tiền trong ",
             "timeLimitMunite": "2 phút",
             "timeLimit1": "24 hours",
@@ -1963,12 +1975,14 @@
                 "termLabel": "Chọn thời hạn vay",
                 "amountLabel": "Bạn muốn vay bao nhiêu?",
                 "collateralLabel": "Tài sản thế chấp (Vay được 66% giá trị tài sản thế chấp)",
+                "collateralRequiredLabel": "Collateral required ({value}% Loan to Value ratio)",
                 "startDateLabel": "Ngày bắt đầu",
                 "endDateLabel": "Ngày kết thúc",
                 "collateralNote": "For this coin, loans will take up to 24 hours to be granted, repaid, or topped up.",
                 "collateralNoteFee": "Fee: {fee} {currency} (1%)",
                 "collateralNoteTotal": "Total loan received: {total} {currency}",
                 "collateralNoteMatch": "Estimated time to match: {hours} hours",
+                "collateralNoteMatchInWorkingTime": "Estimated time to match 1 hour",
                 "toolTipCollateral": "\nĐây là khoản thế chấp cần có để vay được {exchangeUnit}. Giá trị tài sản thế chấp được tính theo giá thị trường {exchangeRate}.        ",
                 "walletAddressLabel": "Bạn muốn nhận lại phần tài sản thế chấp qua loại ví {symbol} nào?",
                 "walletAlias": "Enter your {symbol} wallet address",
@@ -2071,7 +2085,10 @@
                 "payCollateral": "Trả bằng tài sản thế chấp"
             },
             "errorMessages": {
-                "required": "Yêu cầu",
+                "Required": "Required",
+                "constantAmountRequired": "Amount is required to make a borrow!",
+                "collateralAmountRequired": "Collateral amount is required to make a borrow!",
+                "walletAddressRequired": "Wallet Address is required to make a borrow!",
                 "minimumBorrowAmount": "Bạn có thể vay tối thiểu {amount}{symbol}",
                 "inValidWalletAddress": "Địa chỉ ví không hợp lệ",
                 "rangeInterestRate": "Lãi suất phải nằm trong khoảng từ {min}% tới {max}%"
@@ -2160,7 +2177,7 @@
                     "chainBorrowPending": "Xin vui lòng thử lại",
                     "chainBorrowOk": "Thành công",
                     "chainBorrowFailed": "Xin vui lòng thử lại",
-                    "chainCancelPending": "Huỷ",
+                    "chainCancelPending": "Cancelled",
                     "chainCancelOk": "Đã huỷ",
                     "chainCancelFailed": "Xin vui lòng thử lại",
                     "chainBorrowCancel": "Đã huỷ",
@@ -2183,6 +2200,9 @@
                 "interestDue": "Interest due",
                 "totalRepayment": "Tổng số tiền phải trả",
                 "totalPayment": "Total Payment",
+                "repaymentByCollateral": "Do you want to pay by your collateral?",
+                "willPayCollateral": "Collateral will be pay is",
+                "willReturnCollateral": "Collateral will be return is",
                 "errorRemainCollateral": "Bạn chưa thể nhận lại phần tài sản thế chấp còn lại ngay lúc này",
                 "errorRemainCollateralHtml": "\n          Please wait for assistance, or contact us at <a href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>\n        ",
                 "errorCollateralNotEnoughHtml": "\n          Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.\n        ",
@@ -3299,6 +3319,7 @@
                 "textLogin": "Đăng nhập",
                 "textRegister": "Đăng ký",
                 "btn2": "to start free trial",
+                "btnBorrow": "to borrow now",
                 "btnVerify": "Xác minh ngay",
                 "btnTrial": "Bắt đầu đầu tư thử nghiệm",
                 "btnAuth": "Đăng nhập hoặc Đăng ký để đầu tư",
@@ -3359,7 +3380,9 @@
                 "zelle": "\n          <p>Số tiền: {amount} USD</p>\n          <p>Gửi tới: <strong>finance@myconstant.com</strong></p>\n          <br /><br />\n          <p>Sử dụng Zelle để chuyển khoản nhanh và rẻ hơn.</p>\n          <p>Nếu bạn chưa có Zelle, hoàn toàn có thể dùng email hoặc số điện thoại để đăng kí trên website hoặc ứng dụng di động của ngân hàng bạn đang sử dụng.</p>\n        ",
                 "bankChosenMessage1": "\n<p>Với chuyển khoản ngân hàng, chúng tôi có tài khoản ở hầu hết các ngân hàng lớn để giao dịch được thuận tiện.</p>\n          <p>Xin vui lòng chọn ngân hàng nào thuận tiện nhất cho bạn để giao dịch.</p>        ",
                 "bankChosenMessage": "Chúng tôi có tài khoản ở rất nhiều các ngân hàng lớn để bạn chuyển khoản dễ dàng hơn. Xin vui lòng chọn ngân hàng thuận tiện nhất với bạn để thực hiện chuyển khoản.",
-                "makeAnotherButton": "Tiếp tục đầu tư"
+                "makeAnotherButton": "Tiếp tục đầu tư",
+                "updateBalanceNoteInWorkingTime": "Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience.",
+                "updateBalanceNote": "Please note it might take <strong>up to 1 business day</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience."
             }
         },
         "whatCaption0": "Tự đặt mức lãi suất",
@@ -3597,7 +3620,11 @@
         }
     },
     "proLending": {
+        "depositFundsTitle": "Deposit Funds",
+        "depositCollateralTitle": "Deposit Collateral",
         "watchBoard": {
+            "invested": "Invested at Market",
+            "borrowed": "Borrowed at Market",
             "investments": "Investing orders",
             "borrows": "Borrowing orders",
             "interestSpread": "Interest spread",
@@ -3606,7 +3633,8 @@
             "amount": "Số tiền (USD)",
             "interest": "Lãi suất (%/năm)",
             "term": "Kì hạn (Ngày)",
-            "termValues": "{term} tháng"
+            "termValues": "{term} tháng",
+            "matched": "Matched"
         },
         "balances": {
             "title": "Số dư",
@@ -3625,6 +3653,7 @@
             }
         },
         "deposits": {
+            "depositLabel": "Select loan collateral",
             "title": "MAKE A DEPOSIT",
             "generateWallet": "Generate receiving wallet address",
             "depositNote": "Deposit collateral to secure a loan",
@@ -3641,10 +3670,11 @@
             "interest": "Rate(APR)",
             "term": "Term (Days)",
             "date": "Created",
+            "matched": "Matched",
             "messageSuccess": "Your order book have been canceled successfully"
         },
         "matchedOrders": {
-            "title": "Matched orders",
+            "title": "Orders History",
             "titleDesc": "These are orders matched. To view more your matched orders, [please visit your accounts page].",
             "invest": "invest",
             "borrow": "borrow",
@@ -3653,6 +3683,7 @@
             "interest": "Rate(APR)",
             "term": "Term (Days)",
             "date": "Created",
+            "matched": "Matched",
             "messageSuccess": "Your order book have been canceled successfully"
         },
         "investBooking": {
@@ -3661,12 +3692,15 @@
                 "borrow": "You must be login before make an borrow!"
             },
             "messDepositFirst": "Số dư hiện tại không đủ. Xin vui lòng nộp thêm tiền vào tài khoản để thực hiện đầu tư!",
+            "minAmountRequired": "Amount must be greater than {value} is required to make an investment!",
+            "amountRequired": "Amount is required to make an investment!",
+            "interestRequired": "Interest is required to make an investment!",
             "matchedSuccess": "Đã khớp lệnh đầu tư thành công.",
             "matchedFailed": "Khớp lệnh đầu tư không thành công. Xin vui lòng thử lại.",
             "deposit": {
                 "title": "Nộp tiền đầu tư",
                 "depositButton": "Deposit more",
-                "depositNote": "If you don't want to miss invest opportunity, please make sure to keep your funds sufficient."
+                "depositNote": "If you don't want to miss  invest opportunity, please make sure to keep your funds sufficient."
             },
             "form": {
                 "title": "Invest",
@@ -3691,7 +3725,9 @@
                 "amountLabelDesc": "How much do you want to borrow?",
                 "collateralLabel": "Thế chấp",
                 "collateralDesc": "To secure your loan, please deposit 150% the loan value in collateral.",
+                "collateralRequiredDesc": "To secure your loan, please deposit {value}% the loan value in collateral.",
                 "walletAddressLabel": "Địa chỉ ví {symbol} của bạn",
+                "returningWalletAddressLabel": "Returning address",
                 "walletAddressDesc": "The wallet that will receive the returned collateral when repayment is made.",
                 "walletAlias": "0x687C906b2....8bd9369242e",
                 "maxRate": "Interest rate (APR)",
@@ -3707,7 +3743,9 @@
                 "generateCollateralAddressFail": "Can't generate collateral address. Please try again!",
                 "maxOfCollateralHolding": "Please try a different coin. To manage risk, the platform can hold only 10% of any coin's 24h trading volume."
             }
-        }
+        },
+        "orderBook": "Order Book",
+        "tradeHistory": "Trade History"
     },
     "deposit1": {
         "faqs": {

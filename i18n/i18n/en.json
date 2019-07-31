@@ -5,6 +5,7 @@
         "keywords": "Constant",
         "name": "CONSTANT MONEY",
         "goToHomePage": "Go to Home page",
+        "goToLoginPage": "Go to Sign In page",
         "navigation": {
             "me": "Profile",
             "wallet": "Wallet",
@@ -1045,7 +1046,8 @@
             "verifyFailed": "Sorry, something went wrong. Please verify your email again.",
             "verifySuccess": "Your email was verified successfully.",
             "pleaseUpdateEmail": "Please update your email to activate your account",
-            "updateEmail": "Update Email"
+            "updateEmail": "Update Email",
+            "alreadyVerified": "Your email address has already been verified. Thank you"
         },
         "phoneVerification": {
             "sendCodeSuccess": "Please check your sms inbox for the verification code.",
@@ -1087,6 +1089,7 @@
                 "getListFailed": "Sorry, something went wrong. Please try again.",
                 "amount": "Principal",
                 "interest": "Interest",
+                "rate": "Rate:",
                 "interestAmount": "Total interest",
                 "apr": "APR",
                 "haveTimeAccount": "{term}-{termType} investment",
@@ -1102,6 +1105,7 @@
                 "anyTime_saving": "Flexible Account",
                 "input2FA": "Input 2FA",
                 "cancel": "Cancel",
+                "delete": "Delete",
                 "matchedList": "Matched List",
                 "getCollateral": "Recall excess",
                 "payCollateral": "Pay",
@@ -1114,12 +1118,13 @@
                     "matching": "Matching",
                     "matched": "Matched",
                     "closed": "Closed",
-                    "allStatus": "All"
+                    "allStatus": "All",
+                    "done": "Done"
                 },
                 "termStatus": {
                     "created": "Matched",
                     "pending": "Matching",
-                    "closed": "Closed",
+                    "closed": "Done",
                     "rejected": "Closed",
                     "pending_kyc": "Pending Deposit",
                     "matched": "Matched",
@@ -1191,6 +1196,11 @@
                         "confirm": "Yes, cancel",
                         "cancel": "Go back"
                     },
+                    "deleteInvestment": {
+                        "messageConfirm": "Are you sure you want to delete your investment order?",
+                        "confirm": "Yes",
+                        "cancel": "Go back"
+                    },
                     "cancelInvestment": {
                         "messageConfirm": "Are you sure you want to cancel your investment order before a match is found?",
                         "confirm": "Yes, cancel",
@@ -1203,6 +1213,11 @@
                     },
                     "cancelLoan": {
                         "messageConfirm": "Are you sure you want to cancel this loan request?",
+                        "confirm": "Yes",
+                        "cancel": "No"
+                    },
+                    "deleteLoan": {
+                        "messageConfirm": "Are you sure you want to delete this loan request?",
                         "confirm": "Yes",
                         "cancel": "No"
                     },
@@ -1249,6 +1264,8 @@
                     }
                 },
                 "alert": {
+                    "deleteSavingSuccess": "You successfully deleted investment",
+                    "deleteSavingFailed": "Failed To delete Invest Saving",
                     "depositSavingSuccess": "You successfully invested Constant.",
                     "depositSavingFailed": "Failed To Invest Saving",
                     "stopSavingSuccess": "You ended your term deposit. Withdraw your funds anytime.",
@@ -2111,6 +2128,7 @@
                 "interests": "INTEREST",
                 "created": "Created: ",
                 "cancel": "Cancel",
+                "delete": "Delete",
                 "dueDays": "Due: ",
                 "getCollateral": "Recall excess",
                 "payCollateral": "Pay",

@@ -5,6 +5,7 @@
         "keywords": "Constant",
         "name": "CONSTANT MONEY",
         "goToHomePage": "Go to Home page",
+        "goToLoginPage": "Go to Sign In page",
         "navigation": {
             "me": "Profile",
             "wallet": "Wallet",
@@ -1045,7 +1046,8 @@
             "verifyFailed": "Verify failed, please try again!",
             "verifySuccess": "Your email was verified successfully.",
             "pleaseUpdateEmail": "Please update your email to activate your account",
-            "updateEmail": "Update Email"
+            "updateEmail": "Update Email",
+            "alreadyVerified": "Your email address has already been verified. Thank you"
         },
         "phoneVerification": {
             "sendCodeSuccess": "Verify code was sent successfully to your phone, please check.",
@@ -1087,6 +1089,7 @@
                 "getListFailed": "Sorry, something went wrong. Please try again.",
                 "amount": "Principal",
                 "interest": "Interest",
+                "rate": "Rate:",
                 "interestAmount": "Total interest",
                 "apr": "APR",
                 "haveTimeAccount": "{term}-{termType} investment",
@@ -1102,6 +1105,7 @@
                 "anyTime_saving": "Balance",
                 "input2FA": "Input 2FA",
                 "cancel": "Cancel",
+                "delete": "Delete",
                 "matchedList": "Matched List",
                 "getCollateral": "Recall excess",
                 "payCollateral": "Pay",
@@ -1114,12 +1118,13 @@
                     "matching": "Matching",
                     "matched": "Matched",
                     "closed": "Closed",
-                    "allStatus": "All"
+                    "allStatus": "All",
+                    "done": "Done"
                 },
                 "termStatus": {
                     "created": "Matched",
                     "pending": "Matching",
-                    "closed": "Closed",
+                    "closed": "Done",
                     "rejected": "Closed",
                     "pending_kyc": "Pending Deposit",
                     "matched": "Matched",
@@ -1191,6 +1196,11 @@
                         "confirm": "Yes, cancel",
                         "cancel": "Go back"
                     },
+                    "deleteInvestment": {
+                        "messageConfirm": "Are you sure you want to delete your investment order?",
+                        "confirm": "Yes",
+                        "cancel": "Go back"
+                    },
                     "cancelInvestment": {
                         "messageConfirm": "Are you sure you want to cancel your investment order before a match is found?",
                         "confirm": "Yes, cancel",
@@ -1203,6 +1213,11 @@
                     },
                     "cancelLoan": {
                         "messageConfirm": "Are you sure you want to cancel this loan request?",
+                        "confirm": "Yes",
+                        "cancel": "No"
+                    },
+                    "deleteLoan": {
+                        "messageConfirm": "Are you sure you want to delete this loan request?",
                         "confirm": "Yes",
                         "cancel": "No"
                     },
@@ -1249,6 +1264,8 @@
                     }
                 },
                 "alert": {
+                    "deleteSavingSuccess": "You successfully deleted investment",
+                    "deleteSavingFailed": "Failed To delete Invest Saving",
                     "depositSavingSuccess": "You successfully invested Constant.",
                     "depositSavingFailed": "Failed To Invest Saving",
                     "stopSavingSuccess": "You successfully cancelled your investment.",
@@ -2111,6 +2128,7 @@
                 "interests": "INTEREST",
                 "created": "Created: ",
                 "cancel": "Cancel",
+                "delete": "Delete",
                 "dueDays": "Due: ",
                 "getCollateral": "Recall excess",
                 "payCollateral": "Pay",
@@ -3173,7 +3191,7 @@
     },
     "ours": {
         "title": "Think P2P.",
-        "content": "<h6>We’re a global-thinking, ambitious generation trapped in centralized systems designed to profit a select few. Hard-earned money lies stagnant, steadily losing value as inflation rises. Loans are hard to access, and even more difficult to repay. It is easier to fly to some places than it is to send money there.</h6>\n<h6>Today’s world is more connected than ever, but financial systems are still landlocked and insular, characterized by exclusivity, operating behind closed doors. The rapid growth of the P2P movement indicates a broken status quo, and reveals a world in common pursuit of financial autonomy. Everything we do at Constant is designed to make that goal more achievable.</h6>\n<h6>It’s time to choose people, not institutions. This is a platform that connects all those in pursuit of a richer, more open world. Welcome to Constant.</h6>\n",
+        "content": "\n    <h6>Financial freedom looks different for everyone. It’s having the money to do what you want to do. Or simply having enough to never have to worry. Freedom is being able to make your money work for you - so you don’t have to. Freedom is having money that allows you to travel, work and live - anywhere in the world - and thrive.</h6>\n    <h6>Today’s generations are thinking bigger, but financial systems are still landlocked and insular, characterized by exclusivity, operating behind closed doors. People are trapped in centralized systems designed to profit a select few. Money sits languishing in even the best bank accounts, steadily losing value as inflation rises. Loans are hard to access, and even more difficult to repay. It is easier to fly to some places than it is to send money there. Billions of global-thinking people are lack the means or opportunity to even begin thinking about financial freedom.</h6>\n    <h6>This is a platform that connects all those in pursuit of a richer, more open world. Welcome to Constant.</h6>",
         "team": {
             "title": "Choose people, not institutions.",
             "content": "We’re proud of our extraordinary team of more than 50 scientists, engineers, designers, writers, economists, and community managers from all over the world. We love building new financial opportunities that everyone can benefit from - no matter where you live, or how much you have.",
@@ -3700,7 +3718,7 @@
             "deposit": {
                 "title": "Deposit investment funds",
                 "depositButton": "Deposit more",
-                "depositNote": "If you don't want to miss  invest opportunity, please make sure to keep your funds sufficient."
+                "depositNote": "Invest USD or USD stablecoins. <a href=\"https://www. myconstant. com/deposit\">Top up your account now</a>."
             },
             "form": {
                 "title": "Invest",
@@ -3762,6 +3780,6 @@
         }
     },
     "testimonial": {
-        "title": "Our Clients Love Us"
+        "title": "What people say about us"
     }
 }

@@ -5,6 +5,7 @@
         "keywords": "Constant",
         "name": "CONSTANT",
         "goToHomePage": "Về Trang chủ",
+        "goToLoginPage": "Go to Sign In page",
         "navigation": {
             "me": "Hồ sơ",
             "wallet": "Ví",
@@ -1045,7 +1046,8 @@
             "verifyFailed": "Đã xảy ra lỗi. Xin vui lòng xác minh lại email.",
             "verifySuccess": "Xác minh email thành công.",
             "pleaseUpdateEmail": "Xin vui lòng cập nhật email để kích hoạt tài khoản",
-            "updateEmail": "Cập Nhật Email"
+            "updateEmail": "Cập Nhật Email",
+            "alreadyVerified": "Your email address has already been verified. Thank you"
         },
         "phoneVerification": {
             "sendCodeSuccess": "Xin vui lòng kiểm tra tin nhắn điện thoại để nhận mã xác minh.",
@@ -1087,6 +1089,7 @@
                 "getListFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
                 "amount": "Tiền gốc",
                 "interest": "Lãi suất",
+                "rate": "Rate:",
                 "interestAmount": "Total interest",
                 "apr": "/năm",
                 "haveTimeAccount": "Khoản đầu tư {term}",
@@ -1102,6 +1105,7 @@
                 "anyTime_saving": "Số dư",
                 "input2FA": "Nhập mã bảo mật 2 lớp",
                 "cancel": "Huỷ",
+                "delete": "Delete",
                 "matchedList": "Danh sách đã khớp lệnh",
                 "getCollateral": "Nhận lại phần dư",
                 "payCollateral": "Thanh toán",
@@ -1114,12 +1118,13 @@
                     "matching": "Matching",
                     "matched": "Matched",
                     "closed": "Closed",
-                    "allStatus": "All"
+                    "allStatus": "All",
+                    "done": "Done"
                 },
                 "termStatus": {
                     "created": "Khớp lệnh",
                     "pending": "Đang chờ",
-                    "closed": "Đã đóng",
+                    "closed": "Done",
                     "rejected": "Closed",
                     "pending_kyc": "Pending Deposit",
                     "matched": "Khớp lệnh",
@@ -1191,6 +1196,11 @@
                         "confirm": "Xác nhận",
                         "cancel": "Quay lại"
                     },
+                    "deleteInvestment": {
+                        "messageConfirm": "Are you sure you want to delete your investment order?",
+                        "confirm": "Yes",
+                        "cancel": "Go back"
+                    },
                     "cancelInvestment": {
                         "messageConfirm": "Are you sure you want to cancel your investment order before a match is found?",
                         "confirm": "Yes, cancel",
@@ -1205,6 +1215,11 @@
                         "messageConfirm": "Bạn chắc chắn muốn huỷ yêu cầu vay này?",
                         "confirm": "Có",
                         "cancel": "Không"
+                    },
+                    "deleteLoan": {
+                        "messageConfirm": "Are you sure you want to delete this loan request?",
+                        "confirm": "Yes",
+                        "cancel": "No"
                     },
                     "cancelDepositKyc": {
                         "messageConfirm": "Bạn không muốn nhận khoản đầu tư thử nghiệm miễn phí?",
@@ -1249,6 +1264,8 @@
                     }
                 },
                 "alert": {
+                    "deleteSavingSuccess": "You successfully deleted investment",
+                    "deleteSavingFailed": "Failed To delete Invest Saving",
                     "depositSavingSuccess": "Đầu tư thành công.",
                     "depositSavingFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
                     "stopSavingSuccess": "Không! Điều này chỉ xảy ra sau khi bạn huỷ khoản đầu tư thử nghiệm.",
@@ -2111,6 +2128,7 @@
                 "interests": "LÃI SUẤT",
                 "created": "Được tạo lúc: ",
                 "cancel": "Huỷ",
+                "delete": "Delete",
                 "dueDays": "Ngày đáo hạn: ",
                 "getCollateral": "Nhận lại phần dư",
                 "payCollateral": "Pay",

@@ -3717,8 +3717,8 @@
             "matchedFailed": "Sorry, you have not yet been matched. Please try again.\n",
             "deposit": {
                 "title": "Deposit investment funds",
-                "depositButton": "Deposit more",
-                "depositNote": "Invest USD or USD stablecoins. <a href=\"https://www. myconstant. com/deposit\">Top up your account now</a>."
+                "depositButton": "Deposit funds",
+                "depositNote": "Invest USD or USD stablecoins."
             },
             "form": {
                 "title": "Invest",

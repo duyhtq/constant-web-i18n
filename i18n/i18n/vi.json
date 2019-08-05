@@ -3053,7 +3053,7 @@
             },
             "borrow": {
                 "title": "Vay theo cách bạn muốn",
-                "num": "6.00%",
+                "num": "10.00%",
                 "cap": "Không giới hạn số tiền vay. Tự đặt mức lãi suất.",
                 "btn": "Vay"
             }

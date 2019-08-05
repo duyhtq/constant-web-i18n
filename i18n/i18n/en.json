@@ -3053,7 +3053,7 @@
             },
             "borrow": {
                 "title": "Borrow the way you want",
-                "num": "8.00%",
+                "num": "10.00%",
                 "cap": "No limit. Set your own fixed rates.",
                 "btn": "Borrow"
             }

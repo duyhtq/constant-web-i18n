@@ -722,7 +722,7 @@
                 "canceled": "Cancelled",
                 "timeout": "Order timed out",
                 "transferMoneyToAgent": "Waiting for buyer to send money",
-                "waitAgentTransferMoney": "Waiting for seller to send money",
+                "waitAgentTransferMoney": "Processing",
                 "transferredMoneyToAgent": "Deposit received. Your balance will update shortly.",
                 "done": "Successful",
                 "inProgress": "Order in progress"
@@ -799,7 +799,7 @@
                     "canceled": "Cancelled",
                     "timeout": "Timed out",
                     "transferMoneyToAgent": "Your account will be credited once we have received your transfer",
-                    "waitAgentTransferMoney": "Waiting for seller to send money",
+                    "waitAgentTransferMoney": "Processing",
                     "transferredMoneyToAgent": " ",
                     "transferredMoneyToAgentInvest": " ",
                     "done": "Successful",
@@ -862,7 +862,7 @@
                     "canceled": "Cancelled",
                     "timeout": "Order timed out",
                     "transferMoneyToAgent": "Please make a transfer to complete your deposit",
-                    "waitAgentTransferMoney": "Waiting for seller to send money",
+                    "waitAgentTransferMoney": "Processing",
                     "transferredMoneyToAgent": "Your account will be credited once we have received your transfer.",
                     "transferredMoneyToAgentInvest": "Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.",
                     "done": "Successful",
@@ -3053,7 +3053,7 @@
             },
             "borrow": {
                 "title": "Borrow the way you want",
-                "num": "6.00%",
+                "num": "10.00%",
                 "cap": "No limit. Set your own fixed rates.",
                 "btn": "Borrow"
             }
@@ -3395,7 +3395,7 @@
                 "btnConfirm": "Confirm",
                 "btnBack": "Back",
                 "zelleTitle": "\n            <p className=\"bold\">The quickest way is via <strong>Zelle</strong>.</p>\n        ",
-                "zelle": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <br /><br />\n          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>\n          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n        ",
+                "zelle": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <br /><br />\n          <p>Please include the email address associated with your Constant account in the notes section.</p>\n          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n        ",
                 "bankChosenMessage1": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n          <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n        ",
                 "bankChosenMessage": "We have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.",
                 "makeAnotherButton": "Make another investment",

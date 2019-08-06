@@ -3665,7 +3665,7 @@
                 "address": "Your {name} wallet address",
                 "addressDesc": "Address for crypto withdrawals.",
                 "ok": "Ok",
-                "cancel": "cancel",
+                "cancel": "Cancel",
                 "withdrawFailed": "Something's not right. Please try again.",
                 "withdrawSuccess": "Withdrawal successful."
             }
@@ -3692,7 +3692,7 @@
             "messageSuccess": "Your order book have been canceled successfully"
         },
         "matchedOrders": {
-            "title": "Orders History",
+            "title": "Order History",
             "titleDesc": "These are matched order. To view more details, please visit your Accounts page.",
             "invest": "invest",
             "borrow": "borrow",

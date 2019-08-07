@@ -2205,7 +2205,7 @@
                     "payoffFail": "Payoff Fail",
                     "fillPending": "Fill Pending",
                     "fillFail": "Fill Fail",
-                    "payoffDone": "Payoff done",
+                    "payoffDone": "Repaid",
                     "repayDownDone": "Repay Down Done",
                     "topupPending": "Top Up Pending",
                     "manualPending": "Manual Pending",

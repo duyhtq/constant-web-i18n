@@ -15,6 +15,7 @@
             "error": "Oops, something went wrong. Please try again.",
             "retry": "Server error, please retry",
             "required": "Required",
+            "maxValues": "Must less than ${max}",
             "copied": "Copied",
             "remove": "Remove",
             "save": "Save",
@@ -1174,6 +1175,11 @@
                 "row": "Row",
                 "errorMessage": "Error Message",
                 "saving": "Invest now",
+                "autoTopupDesc": "Turn auto top up on will make sure your loan not get liquidate when your having collateral",
+                "autoTopupStatus": {
+                    "true": "Turn off auto top up",
+                    "false": "Turn on auto top up"
+                },
                 "dialog": {
                     "withdrawAccount": {
                         "title": "Investments",
@@ -1227,7 +1233,12 @@
                         "cancel": "Verify my ID"
                     },
                     "getRemainCollateral": {
-                        "messageConfirm": "\n          Are you sure you want to recall <strong>{valueAvailable} {symbol}</strong> to bring your collateral value back to the minimum required amount?\n        ",
+                        "amount": "Amount",
+                        "requiredAmount": "Amount is required!",
+                        "maxAmount": "Amount must less than {max} {symbol}",
+                        "amountDesc": "How much do you want to remain?",
+                        "messageConfirm": "Are you sure you want to recall <strong>{valueAvailable} {symbol}</strong> to bring your collateral value back to the minimum required amount?",
+                        "remainCollateralFailed": "Failed to remain collateral.",
                         "confirm": "Yes",
                         "cancel": "No"
                     },
@@ -1298,12 +1309,26 @@
                 "depositFrom": {
                     "title": "Make more deposit for your collateral",
                     "amount": "Amount",
+                    "requiredAmount": "Amount is required!",
                     "amountDesc": "How much do you want to deposit?",
+                    "bep2Memo": "Memo",
+                    "bep2MemoDesc": "Memo maybe is your ID if PEP2 crypto!",
+                    "bep2MemoRequired": "Memo is required!",
                     "ok": "Make deposit",
                     "cancel": "Cancel",
                     "depositFailed": "Failed while depositing, please try again",
                     "depositSuccess": "Your deposit was completed successfully"
-                }
+                },
+                "itemMatched": {
+                    "amount": "Amount",
+                    "interest": "Interest rate",
+                    "earned": "Earned",
+                    "duration": "Term",
+                    "matchedDate": "Date matched: ",
+                    "due": "Term ends: "
+                },
+                "yourInvestments": "Partial matches ({matched})",
+                "partialMatchesDesc": "Some investments may be split into smaller amounts to fill multiple loan orders. The platform will keep trying to match you completely for the duration of your term."
             },
             "applicationDetail": {
                 "dueDays": "Due Days",
@@ -1897,7 +1922,7 @@
             "subintroTitle3": "Always reliable.",
             "subintroDesc3": "Unlike other digital currencies, Constant keeps a stable value. This means you can get the equivalent of 1 USD for 1 Constant. In any location, at any time.",
             "backToNewOrder": "Make another transfer",
-            "goHistory": "Go to My Orders",
+            "goHistory": "Go to Orders and Transactions",
             "components": {
                 "orderInfo": {
                     "title": "Your transfer confirmation"
@@ -1944,7 +1969,7 @@
             "subintroTitle3": "Always reliable.",
             "subintroDesc3": "Unlike other digital currencies, Constant keeps a stable value. This means you can get the equivalent of 1 USD for 1 Constant. In any location, at any time.",
             "backToNewOrder": "Place new order",
-            "goHistory": "Go to My Orders",
+            "goHistory": "Go to Orders and Transactions",
             "components": {
                 "orderInfo": {
                     "title": "Your transfer confirmation"
@@ -1998,6 +2023,7 @@
                 "collateralNote": "For this coin, loans will take up to 24 hours to be granted, repaid, or topped up.",
                 "collateralNoteFee": "Fee: {fee} {currency} (1%)",
                 "collateralNoteTotal": "Total loan received: {total} {currency}",
+                "collateralNoteDGXExtraFees": "Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.",
                 "collateralNoteMatch": "Estimated time to match: {hours} hours",
                 "collateralNoteMatchInWorkingTime": "Estimated time to match 1 hour",
                 "toolTipCollateral": "\n          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.\n        ",
@@ -2044,6 +2070,7 @@
                 "messageDescription": "\n        <p>Please open your cryptocurrency wallet, enter the required collateral amount, paste the Constant wallet address into the recipient field, and click send.</p>\n        <p>Having difficulty finding your cryptocurrency wallet?\n           If you purchase cryptocurrency from an exchange, you will have a wallet with them, usually accessible from your Accounts page.</p>\n        ",
                 "minuteWindow": "Please complete your transfer within 60 minutes.",
                 "minuteWindowDescription": "For the sake of security, this session will time-out after 60 minutes. If you need a little longer, just re-enter the amount you would like to borrow <a href=\"/borrow\" >here</a>.",
+                "collateralNoteDGXExtraFees": "Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.",
                 "transactionID": "transaction ID",
                 "noticeTpl": "To receive this loan, please deposit the required collateral. Simply go to your cryptocurrency wallet and send <strong>{collateralAmount} {collateralSymbol}</strong> to the following wallet address. Please complete this action within the next <strong>60 minutes</strong>.",
                 "summarizeContent": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Loan amount:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Interest rate:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Collaterals:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Term:</span>\n              <span name=\"ref-value\">{term}</span>\n            </div>",
@@ -2120,12 +2147,17 @@
             "listApplications": {
                 "heading": "Loans",
                 "noLoans": "Request your first fixed rate loan.",
-                "amount": "AMOUNT (USD): ",
+                "bep2Memo": "Memo",
+                "bep2MemoRequired": "Memo is required!",
+                "bep2MemoDesc": "Memo maybe is your ID if PEP2 crypto!",
+                "walletAlias": "0x687C906b2....8bd9369242e",
+                "walletAddressLabel": "Return to your {symbol} address",
+                "amount": "Amount: ",
                 "collateralRequired": "Collateral Required: ",
                 "createdDate": "Created at",
                 "endTerm": "Term ends",
                 "principal": "Principal",
-                "interests": "INTEREST",
+                "interests": "Interest:",
                 "created": "Created: ",
                 "cancel": "Cancel",
                 "delete": "Delete",
@@ -2135,12 +2167,12 @@
                 "payOffLoan": "Repay",
                 "depositMatched": "Top up",
                 "cancelDepositMatched": "Cancel Deposit",
-                "collateral": "COLLATERAL",
-                "collateralValue": "COLLATERAL VALUE",
-                "collateralValueDesc": "This represents your collateral value as a percentage of your loan. It accounts for the interest accrued so far, as well as the repayment fee should you choose to repay today. If it falls to 110%, your collateral will be liquidated, and the difference refunded to you.",
-                "liquidWaring": "your collateral will be liquidated, Please top up more collateral...",
+                "collateral": "Collateral",
+                "collateralValue": "Collateral value",
+                "liquidWaring": "Your collateral will be liquidated, Please top up more collateral...",
                 "interestPrice": "Interest:",
-                "yourLoan": "Your loans ({matched})",
+                "yourLoan": "Partial matches ({matched})",
+                "partialMatchesDesc": "Some loan requests may be split into smaller amounts to fill multiple investment orders. The platform will keep trying to match you completely for the duration of your term.",
                 "status": "Status",
                 "allStatus": "All",
                 "mapStatus": {
@@ -2227,11 +2259,21 @@
                 "depositFrom": {
                     "title": "Make more deposit for your collateral",
                     "amount": "Amount",
+                    "requiredAmount": "Amount is required!",
                     "amountDesc": "How much do you want to deposit?",
                     "ok": "Make deposit",
                     "cancel": "Cancel",
                     "depositFailed": "Failed while depositing, please try again",
                     "depositSuccess": "Your deposit was completed successfully"
+                },
+                "itemMatched": {
+                    "amount": "Amount",
+                    "interest": "Interest",
+                    "collateral": "Collateral",
+                    "collateralValue": "Collateral value",
+                    "createdDate": "Created: ",
+                    "dueDate": "Due: ",
+                    "collateralValueDesc": "This represents your collateral value as a percentage of your loan. It accounts for the interest accrued so far, as well as the repayment fee should you choose to repay today. If it falls to 110%, your collateral will be liquidated, and the difference refunded to you."
                 }
             },
             "advice": {
@@ -2853,7 +2895,7 @@
         "info": {
             "title": "Withdraw to your local bank.",
             "desc1": "Withdraw funds to your bank account of choice.",
-            "desc4": "\n        <h5>Simply let us know where to send your USD funds to. If you’ve got a different local currency, it’s converted at the real-time market rate. Funds should reach you within 2 business days.</h5>\n      "
+            "desc4": "\n        <h5>Simply let us know where to send your USD funds to. If you’ve got a different local currency, it’s converted at the real-time market rate. Funds should reach you within 2 business days.</h5>\n        <br/>\n        <h5>Prefer to withdraw stablecoins? Do so <a href=\"/transfer-crypto\" class=\"underline\">here.</a></h5>\n      "
         },
         "what": {
             "whatCaption0": "Works with your bank",
@@ -3638,6 +3680,13 @@
         }
     },
     "proLending": {
+        "matchStats": {
+            "lastInterest": "Last Interest",
+            "change": "24H Change",
+            "high": "24H High",
+            "low": "24H Low",
+            "volume": "24H Volume"
+        },
         "depositFundsTitle": "Deposit Funds",
         "depositCollateralTitle": "Deposit Collateral",
         "watchBoard": {
@@ -3663,7 +3712,10 @@
                 "amount": "Amount",
                 "amountDesc": "How much do you want to withdraw?",
                 "address": "Your {name} wallet address",
-                "addressDesc": "Address for crypto withdrawals.",
+                "addressDesc": "Your crypto currency address to receiving your coins.",
+                "bep2Memo": "Memo",
+                "bep2MemoDesc": "Memo maybe is your ID if PEP2 crypto!",
+                "bep2MemoRequired": "Memo is required!",
                 "ok": "Ok",
                 "cancel": "Cancel",
                 "withdrawFailed": "Something's not right. Please try again.",

@@ -15,6 +15,7 @@
             "error": "Đã xảy ra lỗi!",
             "retry": "Server error, please retry",
             "required": "Bắt buộc",
+            "maxValues": "Must less than ${max}",
             "copied": "Đã sao chép",
             "remove": "Xoá",
             "save": "Lưu",
@@ -1087,8 +1088,8 @@
                 "totalInterestEarned": "Bạn đã kiếm được",
                 "noRecord": "Bạn vẫn chưa có khoản tiết kiệm nào. Bắt đầu tiết kiệm ngay từ hôm nay.",
                 "getListFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
-                "amount": "Tiền gốc",
-                "interest": "Lãi suất",
+                "amount": "Principal: ",
+                "interest": "Interest: ",
                 "rate": "Rate:",
                 "interestAmount": "Total interest",
                 "apr": "/năm",
@@ -1096,7 +1097,7 @@
                 "month": "tháng",
                 "day": "day",
                 "anyTimeAccount": "Gửi không kì hạn",
-                "endTerm": "Ngày đáo hạn: ",
+                "endTerm": "Term ends: ",
                 "trial": "THỬ NGHIỆM",
                 "trial_description": "Đã hết kì hạn. Khách hàng được giữ phần lãi",
                 "saving_title": "Các khoản đầu tư",
@@ -1174,6 +1175,11 @@
                 "row": "Hàng",
                 "errorMessage": "Đã xảy ra lỗi",
                 "saving": "Đầu tư ngay",
+                "autoTopupDesc": "Turn auto top up on will make sure your loan not get liquidate when your having collateral",
+                "autoTopupStatus": {
+                    "true": "Turn off auto top up",
+                    "false": "Turn on auto top up"
+                },
                 "dialog": {
                     "withdrawAccount": {
                         "title": "Tiết kiệm",
@@ -1227,7 +1233,12 @@
                         "cancel": "Xác minh danh tính"
                     },
                     "getRemainCollateral": {
-                        "messageConfirm": "\nBạn muốn nhận lại <strong>{valueAvailable}{symbol}</strong> để giá trị tài sản thế chấp về lại mức tối thiểu?        ",
+                        "amount": "Amount",
+                        "requiredAmount": "Amount is required!",
+                        "maxAmount": "Amount must less than {max} {symbol}",
+                        "amountDesc": "How much do you want to remain?",
+                        "messageConfirm": "Are you sure you want to recall <strong>{valueAvailable} {symbol}</strong> to bring your collateral value back to the minimum required amount?",
+                        "remainCollateralFailed": "Failed to remain collateral.",
                         "confirm": "Có",
                         "cancel": "Không"
                     },
@@ -1298,12 +1309,26 @@
                 "depositFrom": {
                     "title": "Nộp thêm tài sản thế chấp",
                     "amount": "Số lượng",
+                    "requiredAmount": "Amount is required!",
                     "amountDesc": "Bạn muốn nộp bao nhiêu tiền?",
+                    "bep2Memo": "Memo",
+                    "bep2MemoDesc": "Memo maybe is your ID if PEP2 crypto!",
+                    "bep2MemoRequired": "Memo is required!",
                     "ok": "Nộp tiền",
                     "cancel": "Huỷ",
                     "depositFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
                     "depositSuccess": "Nộp tiền thành công"
-                }
+                },
+                "itemMatched": {
+                    "amount": "Amount",
+                    "interest": "Interest rate",
+                    "earned": "Earned",
+                    "duration": "Term",
+                    "matchedDate": "Date matched: ",
+                    "due": "Term ends: "
+                },
+                "yourInvestments": "Partial matches ({matched})",
+                "partialMatchesDesc": "Some investments may be split into smaller amounts to fill multiple loan orders. The platform will keep trying to match you completely for the duration of your term."
             },
             "applicationDetail": {
                 "dueDays": "Ngày đáo hạn",
@@ -1897,7 +1922,7 @@
             "subintroTitle3": "Luôn đáng tin cậy.",
             "subintroDesc3": "Constant không bao giờ mất giá. Người dùng luôn có thể đổi 1 Constant sang USD vào bất cứ lúc nào, ở bất cứ đâu.",
             "backToNewOrder": "Đặt lệnh mới",
-            "goHistory": "Đi đến Giao dịch của tôi",
+            "goHistory": "Go to Orders and Transactions",
             "components": {
                 "orderInfo": {
                     "title": "Xác nhận gửi Constant"
@@ -1944,7 +1969,7 @@
             "subintroTitle3": "Luôn đáng tin cậy.",
             "subintroDesc3": "Constant không bao giờ mất giá. Người dùng luôn có thể đổi 1 Constant sang USD vào bất cứ lúc nào, ở bất cứ đâu.",
             "backToNewOrder": "Đặt lệnh mới",
-            "goHistory": "Đi đến Giao dịch của tôi",
+            "goHistory": "Go to Orders and Transactions",
             "components": {
                 "orderInfo": {
                     "title": "Xác nhận chuyển khoản"
@@ -1998,6 +2023,7 @@
                 "collateralNote": "For this coin, loans will take up to 24 hours to be granted, repaid, or topped up.",
                 "collateralNoteFee": "Fee: {fee} {currency} (1%)",
                 "collateralNoteTotal": "Total loan received: {total} {currency}",
+                "collateralNoteDGXExtraFees": "Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.",
                 "collateralNoteMatch": "Estimated time to match: {hours} hours",
                 "collateralNoteMatchInWorkingTime": "Estimated time to match 1 hour",
                 "toolTipCollateral": "\nĐây là khoản thế chấp cần có để vay được {exchangeUnit}. Giá trị tài sản thế chấp được tính theo giá thị trường {exchangeRate}.        ",
@@ -2044,6 +2070,7 @@
                 "messageDescription": "\n<p>Vui lòng mở ví điện tử của bạn. Dán địa chỉ ví của Constant vào địa chỉ người nhận để gửi số coin cần thế chấp.</p>\n        <p>Tìm ví điện tử của bạn ở đâu?\n           Nếu bạn giao dịch tiền điện tử trên các sàn giao dịch, bạn sẽ có một ví điện tử ở trên mỗi sàn. Ví của bạn thường sẽ nằm ở mục \"Tài khoản\" (Account).</p>\n        ",
                 "minuteWindow": "Xin thực hiện chuyển coin trong vòng 60 phút.",
                 "minuteWindowDescription": "Vì lí do an ninh, giao dịch sẽ bị huỷ sau 60 phút. Nếu bạn vẫn muốn vay, vui lòng nhập số tiền bạn muốn vay <a href=\"/borrow\" >tại đây</a>.",
+                "collateralNoteDGXExtraFees": "Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.",
                 "transactionID": "mã giao dịch",
                 "noticeTpl": "Xin vui lòng gửi <strong>{collateralAmount}{collateralSymbol}</strong> tới địa chỉ dưới đây trong vòng <strong>60 phút</strong> để thế chấp.",
                 "summarizeContent": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Khoản vay:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Lãi suất:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Thế chấp:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Thời hạn:</span>\n              <span name=\"ref-value\">{term}</span>\n            </div>\n          </div>\n        \n        ",
@@ -2120,12 +2147,17 @@
             "listApplications": {
                 "heading": "Các khoản vay",
                 "noLoans": "Request your first fixed rate loan.",
-                "amount": "AMOUNT (USD): ",
+                "bep2Memo": "Memo",
+                "bep2MemoRequired": "Memo is required!",
+                "bep2MemoDesc": "Memo maybe is your ID if PEP2 crypto!",
+                "walletAlias": "0x687C906b2....8bd9369242e",
+                "walletAddressLabel": "Return to your {symbol} address",
+                "amount": "Amount: ",
                 "collateralRequired": "Collateral Required: ",
                 "createdDate": "Được tạo lúc",
                 "endTerm": "Ngày đáo hạn",
                 "principal": "Tiền gốc",
-                "interests": "LÃI SUẤT",
+                "interests": "Interest:",
                 "created": "Được tạo lúc: ",
                 "cancel": "Huỷ",
                 "delete": "Delete",
@@ -2135,12 +2167,12 @@
                 "payOffLoan": "Hoàn trả",
                 "depositMatched": "Nộp thêm",
                 "cancelDepositMatched": "Cancel Deposit",
-                "collateral": "THẾ CHẤP",
-                "collateralValue": "Giá trị thế chấp",
-                "collateralValueDesc": "Con số này thể hiện giá trị tài sản thế chấp của bạn dưới dạng phần trăm của khoản vay, bao gồm cả phần lãi tích lũy cho đến thời điểm hiện tại và phí trả nợ trước hạn nếu bạn hoàn trả khoản vay ngay lúc này. Nếu nó giảm xuống đến 110%, tài sản thế chấp của bạn sẽ được thanh lý, và phần chênh lệch sẽ được hoàn trả cho bạn.",
-                "liquidWaring": "Tài sản thế chấp của bạn chuẩn bị bị thanh lí. Xin vui lòng bỏ thêm tài sản thế chấp...",
+                "collateral": "Collateral",
+                "collateralValue": "Collateral value",
+                "liquidWaring": "Your collateral will be liquidated, Please top up more collateral...",
                 "interestPrice": "Lãi suất:",
-                "yourLoan": "Khoản vay của bạn ({matched})",
+                "yourLoan": "Partial matches ({matched})",
+                "partialMatchesDesc": "Some loan requests may be split into smaller amounts to fill multiple investment orders. The platform will keep trying to match you completely for the duration of your term.",
                 "status": "Trạng thái",
                 "allStatus": "All",
                 "mapStatus": {
@@ -2192,7 +2224,7 @@
                     "cancelled": "Đã huỷ",
                     "rejected": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
                     "timeout": "Hết thời gian",
-                    "chainBorrowPending": "Xin vui lòng thử lại",
+                    "chainBorrowPending": "Pending",
                     "chainBorrowOk": "Thành công",
                     "chainBorrowFailed": "Xin vui lòng thử lại",
                     "chainCancelPending": "Cancelled",
@@ -2227,11 +2259,21 @@
                 "depositFrom": {
                     "title": "Nộp thêm tài sản thế chấp",
                     "amount": "Số lượng",
+                    "requiredAmount": "Amount is required!",
                     "amountDesc": "Bạn muốn nộp bao nhiêu tiền?",
                     "ok": "Nộp tiền",
                     "cancel": "Huỷ",
                     "depositFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
                     "depositSuccess": "Nộp tiền thành công"
+                },
+                "itemMatched": {
+                    "amount": "Amount",
+                    "interest": "Interest",
+                    "collateral": "Collateral",
+                    "collateralValue": "Collateral value",
+                    "createdDate": "Created: ",
+                    "dueDate": "Due: ",
+                    "collateralValueDesc": "This represents your collateral value as a percentage of your loan. It accounts for the interest accrued so far, as well as the repayment fee should you choose to repay today. If it falls to 110%, your collateral will be liquidated, and the difference refunded to you."
                 }
             },
             "advice": {
@@ -2853,7 +2895,7 @@
         "info": {
             "title": "Rút tiền về tài khoản ngân hàng.",
             "desc1": "Rút tiền về tài khoản ngân hàng mà bạn chọn.",
-            "desc4": "\n<h5>Bạn có thể rút tiền từ tài khoản Constant về tài khoản bất cứ lúc nào. Bạn sẽ nhận được VNĐ về tài khoản theo tỉ giá thị trường tại thời điểm rút trong vòng 2 ngày.</h5>      "
+            "desc4": "\n        <h5>Simply let us know where to send your USD funds to. If you’ve got a different local currency, it’s converted at the real-time market rate. Funds should reach you within 2 business days.</h5>\n        <br/>\n        <h5>Prefer to withdraw stablecoins? Do so <a href=\"/transfer-crypto\" class=\"underline\">here.</a></h5>\n      "
         },
         "what": {
             "whatCaption0": "Liên kết với các ngân hàng",
@@ -3638,6 +3680,13 @@
         }
     },
     "proLending": {
+        "matchStats": {
+            "lastInterest": "Last Interest",
+            "change": "24H Change",
+            "high": "24H High",
+            "low": "24H Low",
+            "volume": "24H Volume"
+        },
         "depositFundsTitle": "Deposit Funds",
         "depositCollateralTitle": "Deposit Collateral",
         "watchBoard": {
@@ -3663,9 +3712,12 @@
                 "amount": "Số lượng",
                 "amountDesc": "Bạn muốn rút bao nhiêu tiền?",
                 "address": "Địa chỉ ví {name} của bạn",
-                "addressDesc": "Địa chỉ ví để nhận tiền mã hoá.",
+                "addressDesc": "Your crypto currency address to receiving your coins.",
+                "bep2Memo": "Memo",
+                "bep2MemoDesc": "Memo maybe is your ID if PEP2 crypto!",
+                "bep2MemoRequired": "Memo is required!",
                 "ok": "Ok",
-                "cancel": "Huỷ",
+                "cancel": "Cancel",
                 "withdrawFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
                 "withdrawSuccess": "Rút tiền thành công"
             }

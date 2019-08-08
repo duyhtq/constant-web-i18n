@@ -859,6 +859,7 @@
                 "fullName": "Họ và tên",
                 "userName": "Tên tài khoản",
                 "email": "Email",
+                "zelleName": "Zelle name",
                 "status": {
                     "canceled": "Đã huỷ",
                     "timeout": "Hết thời gian",
@@ -1094,9 +1095,11 @@
                 "interestAmount": "Total interest",
                 "apr": "/năm",
                 "haveTimeAccount": "Khoản đầu tư {term}",
+                "investment": "investment",
                 "month": "tháng",
                 "day": "day",
                 "anyTimeAccount": "Gửi không kì hạn",
+                "term": "Term:",
                 "endTerm": "Term ends: ",
                 "trial": "THỬ NGHIỆM",
                 "trial_description": "Đã hết kì hạn. Khách hàng được giữ phần lãi",
@@ -1162,8 +1165,8 @@
                     "shareFbSuccess": "Đã chia sẻ link giới thiệu thành công."
                 },
                 "withdraw": "Rút tiền mặt",
-                "withdrawFiat": "Rút tiền mặt",
-                "withdrawCrypto": "Rút tiền mã hoá",
+                "withdrawFiat": "Fiat",
+                "withdrawCrypto": "Crypto",
                 "transfer": "Chuyển khoản",
                 "batchtransfer": "Chuyển khoản tới nhiều người cùng lúc",
                 "deposit": "Nộp tiền",
@@ -1175,12 +1178,25 @@
                 "row": "Hàng",
                 "errorMessage": "Đã xảy ra lỗi",
                 "saving": "Đầu tư ngay",
-                "autoTopupDesc": "Turn auto top up on will make sure your loan not get liquidate when your having collateral",
-                "autoTopupStatus": {
-                    "true": "Turn off auto top up",
-                    "false": "Turn on auto top up"
-                },
+                "autoTopupDesc": "Automatically trigger a top-up from your balance when the collateral value falls to {LiqPer}%.",
+                "autoTopup": "Auto top up",
                 "dialog": {
+                    "autoTopup": {
+                        "messageConfirm": {
+                            "true": "Are you sure you want to turn off auto top-up? Your collateral will be liquidated if it falls to {LiqPer}%.",
+                            "false": "Auto top-up enabled. Collateral value that falls to {LiqPer}% will be restored to {restoreTo}%."
+                        },
+                        "autoTopUpCollateralSuccess": {
+                            "true": "Turn auto top up on successfully",
+                            "false": "Turn auto top up off successfully"
+                        },
+                        "autoTopUpCollateralFailed": {
+                            "true": "Turn auto top up on failed",
+                            "false": "Turn auto top up off failed"
+                        },
+                        "confirm": "Yes",
+                        "cancel": "No"
+                    },
                     "withdrawAccount": {
                         "title": "Tiết kiệm",
                         "body": "Muốn hưởng lãi suất cao hơn? Cam kết tăng lãi suất trên mọi khoản đầu tư bất kể kì hạn.",
@@ -2152,13 +2168,15 @@
                 "bep2MemoDesc": "Memo maybe is your ID if PEP2 crypto!",
                 "walletAlias": "0x687C906b2....8bd9369242e",
                 "walletAddressLabel": "Return to your {symbol} address",
+                "loan": "loan",
                 "amount": "Amount: ",
-                "collateralRequired": "Collateral Required: ",
+                "collateralRequired": "Collateral: ",
                 "createdDate": "Được tạo lúc",
                 "endTerm": "Ngày đáo hạn",
                 "principal": "Tiền gốc",
                 "interests": "Interest:",
                 "created": "Được tạo lúc: ",
+                "term": "Term: ",
                 "cancel": "Huỷ",
                 "delete": "Delete",
                 "dueDays": "Ngày đáo hạn: ",
@@ -2171,6 +2189,7 @@
                 "collateralValue": "Collateral value",
                 "liquidWaring": "Your collateral will be liquidated, Please top up more collateral...",
                 "interestPrice": "Lãi suất:",
+                "rate": "Rate:",
                 "yourLoan": "Partial matches ({matched})",
                 "partialMatchesDesc": "Some loan requests may be split into smaller amounts to fill multiple investment orders. The platform will keep trying to match you completely for the duration of your term.",
                 "status": "Trạng thái",
@@ -2205,7 +2224,7 @@
                     "payoffFail": "Payoff Fail",
                     "fillPending": "Fill Pending",
                     "fillFail": "Fill Fail",
-                    "payoffDone": "Hoàn trả thành công",
+                    "payoffDone": "Repaid",
                     "repayDownDone": "Hoàn trả thành công",
                     "topupPending": "Top Up Pending",
                     "manualPending": "Manual Pending",
@@ -2895,7 +2914,7 @@
         "info": {
             "title": "Rút tiền về tài khoản ngân hàng.",
             "desc1": "Rút tiền về tài khoản ngân hàng mà bạn chọn.",
-            "desc4": "\n        <h5>Simply let us know where to send your USD funds to. If you’ve got a different local currency, it’s converted at the real-time market rate. Funds should reach you within 2 business days.</h5>\n        <br/>\n        <h5>Prefer to withdraw stablecoins? Do so <a href=\"/transfer-crypto\" class=\"underline\">here.</a></h5>\n      "
+            "desc4": "\n        <h5>Simply let us know where to send your USD funds to. If you’ve got a different local currency, it’s converted at the real-time market rate. Funds should reach you within 2 business days.</h5>\n        <br/>\n        <h5><strong>Prefer to withdraw stablecoins?</strong> Do so <a href=\"/transfer-crypto\" class=\"underline\">here.</a></h5>\n      "
         },
         "what": {
             "whatCaption0": "Liên kết với các ngân hàng",
@@ -3408,7 +3427,9 @@
                 "trialFailed": "Thử nghiệm không thành công",
                 "normalSuccess": "Gửi thành công",
                 "normalFailed": "Gửi không thành công",
-                "trialSuccess": "Xin cảm ơn. Bạn sẽ nhận được email thông báo ngay khi bạn được kết nối với người sẵn sàng trả mức lãi suất bạn mong muốn."
+                "trialSuccess": "Xin cảm ơn. Bạn sẽ nhận được email thông báo ngay khi bạn được kết nối với người sẵn sàng trả mức lãi suất bạn mong muốn.",
+                "zelleSuccess": "Thanks! Please proceed with the transfer.",
+                "zelleFailed": "Something went wrong. Please try again."
             },
             "confirm": {
                 "thankYou1": "Đã gần xong.",
@@ -3429,6 +3450,11 @@
                 "importantMsg": "Hãy nhớ điền mã giao dịch {referenceNumber} trong phần nội dung chuyển khoản.",
                 "minuteWindow": "3 NGÀY:",
                 "minuteWindowDescription": "Vui lòng hoàn tất chuyển khoản trong vòng 3 ngày. Nếu không, giao dịch sẽ tự động bị huỷ bỏ.",
+                "referNote": "Your reference number is {ref_number}",
+                "referNoteDesc": "To streamline the deposit process, please include this reference number when making the bank transfer.",
+                "zelleNote": "Before making a transfer, please enter the full name associated with the Zelle account here",
+                "zellePlaceholder": "Please enter the full name here",
+                "zelleSubmit": "Submit",
                 "backOrderBook": "Mua thêm Constant",
                 "confirmMessage": "Vui lòng ấn \"Xác nhận thanh toán\" sau khi chuyển khoản thành công",
                 "confirmButton": "Xác nhận thanh toán",
@@ -3437,6 +3463,7 @@
                 "btnConfirm": "Xác nhận",
                 "btnBack": "Trở lại",
                 "zelleTitle": "\n<p className=\"bold\">Sử dụng <strong>Zelle</strong> để được hỗ trợ nhanh nhất.</p>        ",
+                "zelle1": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n        ",
                 "zelle": "\n          <p>Số tiền: {amount} USD</p>\n          <p>Gửi tới: <strong>finance@myconstant.com</strong></p>\n          <br /><br />\n          <p>Sử dụng Zelle để chuyển khoản nhanh và rẻ hơn.</p>\n          <p>Nếu bạn chưa có Zelle, hoàn toàn có thể dùng email hoặc số điện thoại để đăng kí trên website hoặc ứng dụng di động của ngân hàng bạn đang sử dụng.</p>\n        ",
                 "bankChosenMessage1": "\n<p>Với chuyển khoản ngân hàng, chúng tôi có tài khoản ở hầu hết các ngân hàng lớn để giao dịch được thuận tiện.</p>\n          <p>Xin vui lòng chọn ngân hàng nào thuận tiện nhất cho bạn để giao dịch.</p>        ",
                 "bankChosenMessage": "Chúng tôi có tài khoản ở rất nhiều các ngân hàng lớn để bạn chuyển khoản dễ dàng hơn. Xin vui lòng chọn ngân hàng thuận tiện nhất với bạn để thực hiện chuyển khoản.",

@@ -361,7 +361,7 @@
             "sellOrders": "Sell Orders",
             "buyOrders": "Buy Orders",
             "bookingOrders": "Sale Orders",
-            "investingOrders": "Investing Orders",
+            "investingOrders": "Open Investing Orders",
             "loanOrders": "Loan Orders",
             "myOrders": "Deposits and withdrawals",
             "deposits": "Deposits",
@@ -859,6 +859,7 @@
                 "fullName": "Full name",
                 "userName": "User name",
                 "email": "Email",
+                "zelleName": "Zelle name",
                 "status": {
                     "canceled": "Cancelled",
                     "timeout": "Order timed out",
@@ -1094,9 +1095,11 @@
                 "interestAmount": "Total interest",
                 "apr": "APR",
                 "haveTimeAccount": "{term}-{termType} investment",
+                "investment": "investment",
                 "month": "month",
                 "day": "day",
                 "anyTimeAccount": "Anytime deposit",
+                "term": "Term:",
                 "endTerm": "Term ends: ",
                 "trial": "TRIAL",
                 "trial_description": "You keep the interest. Term has ended",
@@ -1162,8 +1165,8 @@
                     "shareFbSuccess": "Success! Thanks for telling your friends about Constant."
                 },
                 "withdraw": "Withdraw",
-                "withdrawFiat": "Withdraw fiat",
-                "withdrawCrypto": "Withdraw crypto",
+                "withdrawFiat": "Fiat",
+                "withdrawCrypto": "Crypto",
                 "transfer": "Transfer",
                 "batchtransfer": "Transfer to multiple people",
                 "deposit": "Make a deposit",
@@ -1175,12 +1178,25 @@
                 "row": "Row",
                 "errorMessage": "Error Message",
                 "saving": "Invest now",
-                "autoTopupDesc": "Turn auto top up on will make sure your loan not get liquidate when your having collateral",
-                "autoTopupStatus": {
-                    "true": "Turn off auto top up",
-                    "false": "Turn on auto top up"
-                },
+                "autoTopupDesc": "Automatically trigger a top-up from your balance when the collateral value falls to {LiqPer}%.",
+                "autoTopup": "Auto top up",
                 "dialog": {
+                    "autoTopup": {
+                        "messageConfirm": {
+                            "true": "Are you sure you want to turn off auto top-up? Your collateral will be liquidated if it falls to {LiqPer}%.",
+                            "false": "Auto top-up enabled. Collateral value that falls to {LiqPer}% will be restored to {restoreTo}%."
+                        },
+                        "autoTopUpCollateralSuccess": {
+                            "true": "Turn auto top up on successfully",
+                            "false": "Turn auto top up off successfully"
+                        },
+                        "autoTopUpCollateralFailed": {
+                            "true": "Turn auto top up on failed",
+                            "false": "Turn auto top up off failed"
+                        },
+                        "confirm": "Yes",
+                        "cancel": "No"
+                    },
                     "withdrawAccount": {
                         "title": "Investments",
                         "body": "Want to get more out of your money? Invest in fully secured peer-to-peer lending and choose your own interest rate.",
@@ -2022,7 +2038,7 @@
                 "endDateLabel": "End date",
                 "collateralNote": "For this coin, loans will take up to 24 hours to be granted, repaid, or topped up.",
                 "collateralNoteFee": "Fee: {fee} {currency} (1%)",
-                "collateralNoteTotal": "Total loan received: {total} {currency}",
+                "collateralNoteTotal": "You will receive: {total} {currency}",
                 "collateralNoteDGXExtraFees": "Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.",
                 "collateralNoteMatch": "Estimated time to match: {hours} hours",
                 "collateralNoteMatchInWorkingTime": "Estimated time to match 1 hour",
@@ -2152,13 +2168,15 @@
                 "bep2MemoDesc": "Memo maybe is your ID if PEP2 crypto!",
                 "walletAlias": "0x687C906b2....8bd9369242e",
                 "walletAddressLabel": "Return to your {symbol} address",
+                "loan": "loan",
                 "amount": "Amount: ",
-                "collateralRequired": "Collateral Required: ",
+                "collateralRequired": "Collateral: ",
                 "createdDate": "Created at",
                 "endTerm": "Term ends",
                 "principal": "Principal",
                 "interests": "Interest:",
                 "created": "Created: ",
+                "term": "Term: ",
                 "cancel": "Cancel",
                 "delete": "Delete",
                 "dueDays": "Due: ",
@@ -2171,6 +2189,7 @@
                 "collateralValue": "Collateral value",
                 "liquidWaring": "Your collateral will be liquidated, Please top up more collateral...",
                 "interestPrice": "Interest:",
+                "rate": "Rate:",
                 "yourLoan": "Partial matches ({matched})",
                 "partialMatchesDesc": "Some loan requests may be split into smaller amounts to fill multiple investment orders. The platform will keep trying to match you completely for the duration of your term.",
                 "status": "Status",
@@ -2294,7 +2313,7 @@
                     "title": "Investments"
                 },
                 "borrow": {
-                    "title": "Borrows"
+                    "title": "Loans"
                 }
             },
             "balances": "Balances"
@@ -2895,7 +2914,7 @@
         "info": {
             "title": "Withdraw to your local bank.",
             "desc1": "Withdraw funds to your bank account of choice.",
-            "desc4": "\n        <h5>Simply let us know where to send your USD funds to. If you’ve got a different local currency, it’s converted at the real-time market rate. Funds should reach you within 2 business days.</h5>\n        <br/>\n        <h5>Prefer to withdraw stablecoins? Do so <a href=\"/transfer-crypto\" class=\"underline\">here.</a></h5>\n      "
+            "desc4": "\n        <h5>Simply let us know where to send your USD funds to. If you’ve got a different local currency, it’s converted at the real-time market rate. Funds should reach you within 2 business days.</h5>\n        <br/>\n        <h5><strong>Prefer to withdraw stablecoins?</strong> Do so <a href=\"/transfer-crypto\" class=\"underline\">here.</a></h5>\n      "
         },
         "what": {
             "whatCaption0": "Works with your bank",
@@ -3408,7 +3427,9 @@
                 "trialFailed": "Sorry, we can only offer one free trial per user.",
                 "normalSuccess": "Submit normal success",
                 "normalFailed": "Submit normal failed",
-                "trialSuccess": "Thanks! We're connecting you with a borrower glad to pay your rates. We'll send you an email when you're matched."
+                "trialSuccess": "Thanks! We're connecting you with a borrower glad to pay your rates. We'll send you an email when you're matched.",
+                "zelleSuccess": "Thanks! Please proceed with the transfer.",
+                "zelleFailed": "Something went wrong. Please try again."
             },
             "confirm": {
                 "thankYou1": "Almost there.",
@@ -3429,6 +3450,11 @@
                 "importantMsg": "Do include your reference number {referenceNumber} in the bank transfer description, so we can process your deposit as fast as possible.",
                 "minuteWindow": "Please complete your transfer within 3 days.",
                 "minuteWindowDescription": "For the sake of security, this session will time-out after 3 days. If you need a little longer, just re-enter the amount you would like to invest when you’re ready.",
+                "referNote": "Your reference number is {ref_number}",
+                "referNoteDesc": "To streamline the deposit process, please include this reference number when making the bank transfer.",
+                "zelleNote": "Before making a transfer, please enter the full name associated with the Zelle account here",
+                "zellePlaceholder": "Please enter the full name here",
+                "zelleSubmit": "Submit",
                 "backOrderBook": "Back",
                 "confirmMessage": "After you have made a transfer, please click confirm.",
                 "confirmButton": "Confirm",
@@ -3437,6 +3463,7 @@
                 "btnConfirm": "Confirm",
                 "btnBack": "Back",
                 "zelleTitle": "\n            <p className=\"bold\">The quickest way is via <strong>Zelle</strong>.</p>\n        ",
+                "zelle1": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n        ",
                 "zelle": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <br /><br />\n          <p>Please include the email address associated with your Constant account in the notes section.</p>\n          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n        ",
                 "bankChosenMessage1": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n          <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n        ",
                 "bankChosenMessage": "We have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.",
@@ -3593,7 +3620,7 @@
         "title8": "INVITE MORE PEERS, EARN MORE REWARDS",
         "investment": "On investments\n",
         "loans": "On loans",
-        "loginRequired": "You need to login to do the action.",
+        "loginRequired": "Please log in to your account.",
         "shares": {
             "title": "Share your unique referral link",
             "fb": "Share on Facebook",
@@ -3681,7 +3708,7 @@
     },
     "proLending": {
         "matchStats": {
-            "lastInterest": "Last Interest",
+            "lastInterest": "Latest match",
             "change": "24H Change",
             "high": "24H High",
             "low": "24H Low",
@@ -3693,7 +3720,7 @@
             "invested": "Invested at Market",
             "borrowed": "Borrowed at Market",
             "investments": "Investing orders",
-            "borrows": "Borrowing orders",
+            "borrows": "Open Borrowing Orders",
             "interestSpread": "Interest spread",
             "interestSpreadDesc": "Interest spread is the difference between the lowest lending rate and the highest borrowing rate.",
             "interestSpreadValues": "0.10%",
@@ -3712,10 +3739,10 @@
                 "amount": "Amount",
                 "amountDesc": "How much do you want to withdraw?",
                 "address": "Your {name} wallet address",
-                "addressDesc": "Your crypto currency address to receiving your coins.",
+                "addressDesc": "Receiving crypto wallet address.\n",
                 "bep2Memo": "Memo",
-                "bep2MemoDesc": "Memo maybe is your ID if PEP2 crypto!",
-                "bep2MemoRequired": "Memo is required!",
+                "bep2MemoDesc": "If you are withdrawing to an exchange, please include a MEMO so your funds don't get lost.",
+                "bep2MemoRequired": "Please include a memo.",
                 "ok": "Ok",
                 "cancel": "Cancel",
                 "withdrawFailed": "Something's not right. Please try again.",
@@ -3732,20 +3759,20 @@
         },
         "openOrders": {
             "title": "Open orders",
-            "titleDesc": "These are orders waiting for a match. To view your matched orders, please visit your Accounts page.",
-            "invest": "invest",
-            "borrow": "borrow",
+            "titleDesc": "These are orders waiting for a match.",
+            "invest": "Invest",
+            "borrow": "Borrow",
             "side": "Side",
             "amount": "Amount (USD)",
             "interest": "Rate(APR)",
             "term": "Term (Days)",
             "date": "Created",
             "matched": "Matched",
-            "messageSuccess": "Your order book have been canceled successfully"
+            "messageSuccess": "Your order has been cancelled successfully."
         },
         "matchedOrders": {
             "title": "Order History",
-            "titleDesc": "These are matched order. To view more details, please visit your Accounts page.",
+            "titleDesc": "View your matched orders here.",
             "invest": "invest",
             "borrow": "borrow",
             "side": "Side",
@@ -3754,19 +3781,19 @@
             "term": "Term (Days)",
             "date": "Created",
             "matched": "Matched",
-            "messageSuccess": "Your order book have been canceled successfully"
+            "messageSuccess": "Your order has been cancelled successfully."
         },
         "investBooking": {
             "messLoginFirst": {
-                "invest": "You must be login before make an investment!",
-                "borrow": "You must be login before make an borrow!"
+                "invest": "Please log in to make an investment.",
+                "borrow": "Please log in to request a loan."
             },
             "messDepositFirst": "Please deposit sufficient funds to make this investment.",
-            "minAmountRequired": "Amount must be greater than {value} is required to make an investment!",
-            "amountRequired": "Amount is required to make an investment!",
-            "interestRequired": "Interest is required to make an investment!",
+            "minAmountRequired": "The minimum amount to invest is {value}.\n",
+            "amountRequired": "Please enter an amount.",
+            "interestRequired": "Please enter an amount.",
             "matchedSuccess": "Please wait for 1 minute for your investment to finish matching.",
-            "matchedFailed": "Sorry, you have not yet been matched. Please try again.\n",
+            "matchedFailed": "Sorry, something went wrong. Please try again.\n",
             "deposit": {
                 "title": "Deposit investment funds",
                 "depositButton": "Deposit funds",
@@ -3795,7 +3822,7 @@
                 "amountLabelDesc": "How much do you want to borrow?",
                 "collateralLabel": "Collateral required",
                 "collateralDesc": "To secure your loan, please deposit 150% of the loan value in collateral.\n",
-                "collateralRequiredDesc": "To secure your loan, please deposit {value}% the loan value in collateral.",
+                "collateralRequiredDesc": "To secure your loan, please deposit {value}% of the loan value in collateral.\n",
                 "walletAddressLabel": "Returning {symbol} wallet address",
                 "returningWalletAddressLabel": "Returning address",
                 "walletAddressDesc": "This is the wallet that will receive the returned collateral when repayment is made.\n",
@@ -3803,14 +3830,14 @@
                 "maxRate": "Interest (APR)",
                 "minTerm": "Term (Days)\n",
                 "maxRateTooltip": "This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.",
-                "minTermTooltip": "This is how long you want to borrow for.\n",
+                "minTermTooltip": "This is how long you want to borrow for.",
                 "buttonText": "BORROW",
                 "loginButton": "Login or Register to borrow"
             },
-            "createdSuccess": "Your borrow had been created successfully",
+            "createdSuccess": "Borrow order successfully created",
             "errorMsgs": {
-                "notEnoughBalance": "Your balance is not enough to make borrow!",
-                "generateCollateralAddressFail": "Can't generate collateral address. Please try again!",
+                "notEnoughBalance": "Please deposit sufficient collateral to secure your loan request.",
+                "generateCollateralAddressFail": "Something went wrong. Please try again.",
                 "maxOfCollateralHolding": "Please try a different coin. To manage risk, the platform can hold only 10% of any coin's 24h trading volume."
             }
         },

@@ -393,7 +393,7 @@
             "transferOrders": "Transfer Orders"
         },
         "wallet": {
-            "title": "This is your Constant ETH/TOMO wallet. Receive Constant from ETH/TOMO wallet here.",
+            "title": "This is your Constant wallet. Receive CONST from an ETH/TOMO wallet here. Trying to deposit crypto collateral? Please do so from the Pro page here.",
             "walletAddress": "Your wallet:"
         },
         "kyc": {
@@ -890,7 +890,7 @@
             "approve": "Approve",
             "approveMess": "Are you sure you want to approve this order?",
             "agent": {
-                "approveSuccessfully": "Your order have been approved successfully",
+                "approveSuccessfully": "Success!",
                 "cancelSuccessfully": "Your order have been cancelled successfully"
             },
             "cancel": "Cancel",
@@ -959,7 +959,7 @@
             "title": "Bank Information",
             "desc": "Add your bank account details now to receive attractive commission from referral programs and faster payment",
             "subject": "Bank account details for receiving withdrawals or transfers ",
-            "explanations": "(?) For your security, we only use these bank details to process fund withdrawals or transfers. To deposit funds, please enter the amount you want to invest, and follow the instructions to make a wire transfer directly to our FDIC-insured custodian.",
+            "explanations": "(?) For your security, we only use these bank details to process fund withdrawals or transfers. To deposit funds, please enter the amount you want to invest, and follow the instructions to make a wire transfer directly to one of our international bank accounts.\n",
             "bankName": "Bank Name",
             "action": "Action",
             "editActionLabel": "Edit",
@@ -1173,7 +1173,7 @@
                 "depositMatched": "Deposit",
                 "cancelDepositMatched": "Cancel Deposit",
                 "withdrawDesc": "Withdraw funds to your bank account or wallet address.",
-                "depositDesc": "Store your money in USD. FDIC insured up to $130M.",
+                "depositDesc": "Store your money in USD. Insured up to$130M.\n",
                 "transferDesc": "Send money across the world - to as many people as you like.",
                 "row": "Row",
                 "errorMessage": "Error Message",
@@ -1291,7 +1291,7 @@
                     }
                 },
                 "alert": {
-                    "deleteSavingSuccess": "You successfully deleted investment",
+                    "deleteSavingSuccess": "Investment order deleted",
                     "deleteSavingFailed": "Failed To delete Invest Saving",
                     "depositSavingSuccess": "You successfully invested Constant.",
                     "depositSavingFailed": "Failed To Invest Saving",
@@ -1509,7 +1509,7 @@
             "form": {
                 "tooltip": {
                     "amount": "<p>How much do you want to lend?</p>",
-                    "maxTerm": "<p>This is the maximum amount of time you want to lend your money out for. Unloaned portions are protected by the FDIC, and can be withdrawn at any time.</p>",
+                    "maxTerm": "<p>This is the maximum amount of time you want to lend your money out for. Open orders can be cancelled and withdrawn at any time.</p>\n",
                     "minRate": "<p>This is the annual percentage rate (APR) you are willing to accept for your loan. If there is a borrower willing to pay more, you will earn the higher interest rate.</p>"
                 },
                 "placeholder": {
@@ -1559,7 +1559,7 @@
             "subintroTitle2": "Fully backed and secured.",
             "subintroDesc2": "Every Constant is backed by USD, independently held by a US accredited financial custodian, subject to regular audits.",
             "subintroTitle3": "100% insured.",
-            "subintroDesc3": "All users are fully FDIC and US treasury insured, regardless of amount.",
+            "subintroDesc3": "All users benefit from a collective insurance policy with total coverage of $130M.",
             "subintroTitle4": "Borderless. Zero fees.",
             "subintroDesc4": "Constant moves instantly from your account to anyone, anywhere in the world. For free.",
             "howItWorks": "How it works",
@@ -2015,7 +2015,7 @@
                 "question8": "What is the LTV (Loan to Value) Ratio? Is it always the same?",
                 "answer8": "\n          <p>The LTV ratio for 1 year loans or shorter is 66%. That means we require 150% of the loan value in collateral. For each month after the first year, we require an extra 5% of the loan value in collateral.</p>\n          <p>For example, if you were to request a loan for 15 months, the collateral due would be 150% + (3*5)% = 165% of the loan value in collateral, which brings your LTV ratio to 60.6%.</p>\n        ",
                 "question9": "How do I make repayment?",
-                "answer9": "\n          <p>We’ll deduct your repayment directly from your Constant account balance. Adding funds is easy. You can do one or a combination of the following:</p>\n          <p>1) Transfer USD to one of our FDIC-insured bank accounts</p>\n          <p>2) Send CONST to your Constant Wallet</p>\n          <p>   Or send any one of our supported stablecoins: </p>\n          <p>   USDT/USDC/TUSD/GUSD/PAX/USDS</p>\n          <p>   Your balance will update when funds have been received in your Constant account.</p>\n        ",
+                "answer9": "\n          <p>We’ll deduct your repayment directly from your Constant account balance. Adding funds is easy. You can do one or a combination of the following:</p>\n          <p>1) Transfer USD to one of our US bank accounts</p>\n          <p>2) Send CONST to your Constant Wallet</p>\n          <p>   Or send any one of our supported stablecoins: </p>\n          <p>   USDT/USDC/TUSD/GUSD/PAX/USDS</p>\n          <p>   Your balance will update when funds have been received in your Constant account.</p>",
                 "question10": "What happens if I repay late?",
                 "answer10": "The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due."
             },
@@ -2187,7 +2187,7 @@
                 "cancelDepositMatched": "Cancel Deposit",
                 "collateral": "Collateral",
                 "collateralValue": "Collateral value",
-                "liquidWaring": "Your collateral will be liquidated, Please top up more collateral...",
+                "liquidWaring": "Collateral approaching the liquidation threshold. Please top up.\n",
                 "interestPrice": "Interest:",
                 "rate": "Rate:",
                 "yourLoan": "Partial matches ({matched})",
@@ -2209,7 +2209,7 @@
                 },
                 "mapStatus1": {
                     "pending": "Pending",
-                    "approved": "Approved",
+                    "approved": "Matched",
                     "rejected": "Rejected",
                     "paid": "Paid",
                     "tnxPending": "Transaction Pending",
@@ -2340,11 +2340,11 @@
         "whatTitle1": "Up to 130M USD",
         "whatTextLink1": "Read the full policy",
         "whatLink1": "/privacy-policy",
-        "whatDesc1": "<p>Funds that have not yet been loaned out are kept safe at multiple FDIC-insured bank accounts with an aggregated insurance of $130M. \n</p>\n<br />\n<p>You can withdraw anytime.\n</p>",
+        "whatDesc1": "<p>Funds that have not yet been loaned out are kept safe at multiple bank accounts with an aggregated insurance of $130M. \n</p>\n<br />\n<p>You can withdraw anytime.\n</p>",
         "whatTitle2": "By the US Government",
         "whatTitle3": "No minimum deposit",
         "whatDesc0": "<p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.\n</p>\n<br />\n<p>You decide your rates. No hidden fees.\n</p>",
-        "whatDesc2": "<p>When your money is on loan, it is no longer FDIC insured, but protected by a smart contract that runs exactly as programmed - without the need for human involvement.</p>\n<br />\n<p>Together, FDIC insurance and smart contract security, keep your money independently safe.\n</p>\n",
+        "whatDesc2": "<p>When your money is on loan, it is no longer insured, but protected by a smart contract that runs exactly as programmed - without the need for human involvement.</p>\n<br />\n<p>Together, our $130M insurance policy and smart contract security, keep your money independently safe.\n</p>\n",
         "whatDesc3": "<p>We strictly require every loan to be 150% backed by collateral. For someone to borrow $10,000, they have to put up $15,000 in collateral value.</p>\n<br />\n<p>So if borrowers default, you don’t lose a cent.\n</p>",
         "whatMore0": "How we guarantee zero risk high returns",
         "whatMore1": "How we protect your money",
@@ -2637,7 +2637,7 @@
         },
         "deposit": {
             "question1": "Are my deposits safe?",
-            "answer1": "\n        <p>Yes. First, we convert your deposit to USD to stabilize and protect your funds from inflationary devaluation. Then, we send your funds to the Constant Vault, an escrow operated by Prime Trust, an accredited US financial institution.</p>\n        <br />\n        <p>The Constant Vault keeps your money safe across multiple FDIC-insured bank accounts, bringing total coverage to $130,000,000.</p>\n      ",
+            "answer1": "\n        <p>Yes. First, we convert your deposit to USD to stabilize and protect your funds from inflationary devaluation. Then, we send your funds to the Constant Vault, an escrow operated by Prime Trust, an accredited US financial institution.</p>\n        <br />\n        <p>The Constant Vault keeps your money safe across multiple insured accounts, with total coverage of up to $130,000,000.</p>\n      ",
             "question2": "Is there a limit to how much I can deposit?",
             "answer2": "\n        <p>No, you can deposit as much as you like. </p>\n      ",
             "question3": "How do I make a deposit?",
@@ -2659,7 +2659,7 @@
             "question4": "How do transfers work?",
             "answer4": "\n        <p>We use blockchain technology to make our transfers fast, free, and easy.</p>\n        <br />\n        <p>When you transfer USD, we digitize it in the form of our USD-backed stablecoin, Constant. Since Constant lives on the blockchain, it can be moved to anyone in the world for free – as quickly as sending an email.</p>\n        <br />\n        <p>At the other end, once your recipient receives Constant, they can then withdraw it again as USD or local currency (depending on their bank account). There's a small withdrawal fee of 0.25% per transaction (maximum $35).</p>\n        <p>Here’s a simple example:</p>\n        <ul>\n          <li>You request a transfer of $100 to Mary.</li>\n          <li>We deduct $100 from your balance and send Mary 100 Constant.</li>\n          <li>Mary receives 100 Constant and her balance increases by $100.</li>\n          <li>Mary withdraws $100 and we deduct $100 from her balance.</li>\n        </ul>\n      ",
             "question5": "Are transfers safe?",
-            "answer5": "\n        <p>Yes – very safe. First, transfers take place on the blockchain, an immutable public ledger that’s extremely tough to hack. It’s virtually impossible to make fraudulent changes without getting noticed since transactions are collectively validated by the network. Even if your money went astray, it would be easy to trace.</p>\n        <br />\n        <p>Second, the blockchain is always on. There is no risk of downtime and no way for your money to get lost. It either reaches the recipient or stays in your account. Nevertheless, we keep your money safe in multiple FDIC-insured bank accounts, bringing total coverage to $130,000,000. So were the worst to happen, we’ve got you covered.</p>\n      ",
+            "answer5": "\n        <p>Yes – very safe. First, transfers take place on the blockchain, an immutable public ledger that’s extremely tough to hack. It’s virtually impossible to make fraudulent changes without getting noticed since transactions are collectively validated by the network. Even if your money went astray, it would be easy to trace.</p>\n        <br />\n        <p>Second, the blockchain is always on. There is no risk of downtime and no way for your money to get lost. It either reaches the recipient or stays in your account. Nevertheless, your money is kept safe with our independent custodian Prime Trust, who offers coverage to $130,000,000. So were the worst to happen, we’ve got you covered.</p>\n      ",
             "question6": "Does the recipient need a Constant account to receive funds?",
             "answer6": "<p>To receive funds, your recipient needs either a Constant account or a web wallet that supports ERC-20 tokens. That way they can either receive USD or our USD-backed stablecoin, both of which can be withdrawn as USD or local currency (if the recipient doesn’t have a USD bank account).</p>"
         },
@@ -2699,19 +2699,19 @@
             "question2": "How do Constant Savings Plans work?",
             "answer2": "\n        <p>Under the “SAVE” tab on our website, you’ll be able to choose from several different Savings Plans. Each one is designed to maintain the value of your deposit and pay you compounded interest.</p>\n        <br />\n        <p>To maintain the value of your deposit, we convert your savings to USD – the world's reserve currency. Then, we lend your savings to overcollateralized borrowers and share the lending income with you as interest. You can withdraw this interest at the end of your term.\n        <br />\n        <p>There is no risk to you since borrowers give us collateral that exceeds the value of the loan. If they don't repay, we sell their collateral in plenty of time to return your savings and pay you interest. </p>\n        <br />\n        <p>Of course, you don’t have to withdraw your savings. You could send money abroad, store it in your Constant account to keep the value locked to the USD, or start another Savings Plan to earn even more interest. The choice is yours!\n</p>\n      ",
             "question3": "How do you protect my savings?",
-            "answer3": "When not on loan, your deposits are securely held in the Constant Vault, which is overseen by an accredited US financial institution called Prime Trust. The Constant Vault is FDIC-insured to $130,000,000. You can read more about the Constant Vault on <a href=\"https://medium.com/@constantmoney\" target=\"_blank\">our blog</a>",
+            "answer3": "When not on loan, your deposits are securely held in the Constant Vault, which is overseen by an accredited US financial institution called Prime Trust. The Constant Vault is insured up to $130,000,000. You can read more about the Constant Vault on <a href=\"https://medium.com/@constantmoney\" target=\"_blank\">our blog</a>",
             "question4": "Which currencies do you accept?",
-            "answer4": "We accept any currency sent to our US-based Constant Vault bank account. It is then converted to USD and stored in the FDIC-insured Vault.",
+            "answer4": "We accept any currency sent to our US-based Constant Vault bank account and convert it to USD.\n",
             "question5": "Do you accept cryptocurrency?",
             "answer5": "Not at this time.",
             "question6": "Can I access my savings at any time?",
             "answer6": "\n          <p>To give you the best interest rates, we lend your savings to overcollateralized borrowers. In other words, we lend to borrowers that put up collateral worth more than the loan, which removes any risk to you. Think of your savings deposit as a seed that we water and help grow. To do that, we need time, which is why we offer different Savings Plans so you can find the right one for you. \n</p>      ",
             "question7": "Where are my savings stored?",
-            "answer7": "\n        <p>Your savings are stored inside the Constant Vault. When not on loan, your money is kept safe across multiple FDIC-insured bank accounts, bringing total coverage to $130,000,000.</p>\n      ",
+            "answer7": "\n        <p>Your savings are stored inside the Constant Vault. When not on loan, your money is kept safe with Prime Trust, an accredited financial institution, offering you total coverage of up to $130,000,000.</p>\n      ",
             "question8": "Can I add to my Savings Plan during the term?",
             "answer8": "\n        <p>You can’t add to your Savings Plan once it’s started, but there’s no limit on how many Savings Plans you can have. So if you’d like to save more, simply open another Savings Plan and watch your money grow. </p>\n      ",
             "question9": "What is the Constant Vault?",
-            "answer9": "The Constant Vault is a publicly-audited trust overseen and managed by Prime Trust, a US accredited financial institution. The Constant Vault is regulated in the US and insured by the FDIC to the value of $130,000,000. When your money isn't on loan, your money is kept safe inside the Constant Vault. ",
+            "answer9": "The Constant Vault is a publicly-audited trust overseen and managed by Prime Trust, a US accredited financial institution. The Constant Vault is regulated in the US and insured to the value of $130,000,000. When your money isn't on loan, your money is kept safe inside the Constant Vault. ",
             "question10": "What is FDIC insurance?",
             "answer10": "\n        <p>The Federal Deposit Insurance Corporation (FDIC) is a body set up by the US government to protect the integrity of the US financial system. It does this in a number of ways, including insuring deposits. You can <a href=\"https://www.fdic.gov/about/strategic/strategic/mission.html\" target=\"_blank\">read more about the FDIC on their website.</a></p>\n        <p>When your money isn't on loan, we keep it safe across multiple FDIC-insured bank accounts, bringing total coverage to $130,000,000.</p>\n      ",
             "question11": "Why do you lend my savings to borrowers?",
@@ -2792,7 +2792,7 @@
         "loading": "Loading...",
         "amountMustBeLargerThan": "Your amount must be larger than {min} {fiatCurrency}",
         "howMuchDoYouWantToDeposit": "How much do you want to deposit?",
-        "formDesc": "Constant stores your money across multiple FDIC-insured accounts, bringing total coverage up to $130,000,000.",
+        "formDesc": "Constant partners with accredited financial institutions to store your money across multiple insured accounts, bringing total coverage up to $130,000,000.",
         "depositForWithdraw": "Please make sure you have sufficient funds in your account to complete the transfer.<br/>To make a transfer of ${amount}, please deposit sufficient funds."
     },
     "exchangeInputSellForm": {
@@ -2872,9 +2872,9 @@
         "makeTrialOrderFailed": "Failed while creating your order"
     },
     "send": {
-        "makeLocalOrderSuccess": "Your order was created successfully",
+        "makeLocalOrderSuccess": "Thanks! Your transfer is now processing.",
         "makeLocalOrderFailed": "Failed while creating your order",
-        "makeDirectOrderSuccess": "Your order was created successfully",
+        "makeDirectOrderSuccess": "Thanks! Your transfer is now processing.",
         "makeDirectOrderFailed": "Failed while creating your order",
         "info": {
             "title": "SEND MONEY",
@@ -2890,7 +2890,7 @@
             "whatCaption3": "We’re here to help",
             "whatDesc0": "<p>We only charge 0.25% for withdrawing to a local bank. For amounts of $14,000 and above, fees are capped at $35, never more.</p>",
             "whatDesc1": "<p>No waiting in line or waiting for business hours - all you need is an internet connection. Simply enter the amount and where you want to send it to.</p>",
-            "whatDesc2": "<p>All funds you send are FDIC insured up to $130M, and once a transfer is made, it’s unstoppable. That’s how we protect your money, and make sure it gets to where it needs to go.</p>",
+            "whatDesc2": "<p>All funds you send are protected by our independent custodian, Prime Trust, and once a transfer is made, it’s unstoppable. That’s how we protect your money, and make sure it gets to where it needs to go.</p>\n",
             "whatDesc3": "<p>Our team is based in your preferred time zone. If you’re in the US, call us at 1-844-201-7242. If you’re in Vietnam, call us at +84 36 656 2949.</p>"
         },
         "howItWorks": {
@@ -2900,7 +2900,7 @@
             "desc1": "All you need is an email address. You can also sign up using a facebook or google account.",
             "step2": "Step 2",
             "title2": "Make a deposit",
-            "desc2": "Make a bank transfer to the FDIC-insured Constant Vault.",
+            "desc2": "Make a bank transfer to one of our international accounts.\n",
             "step3": "Step 3",
             "title3": "Send money",
             "desc3": "Enter the amount you’d like to send and the recipient's bank account info. We take care of the rest."
@@ -2932,7 +2932,7 @@
             "desc1": "All you need is an email address. You can also sign up using a facebook or google account.",
             "step2": "Step 2",
             "title2": "Make a deposit",
-            "desc2": "Make a bank transfer to the FDIC-insured Constant Vault.",
+            "desc2": "Make a bank transfer to one of our international accounts.",
             "step3": "Step 3",
             "title3": "Withdraw to your local bank",
             "desc3": "Enter the amount you’d like to send and the recipient's bank account info. We take care of the rest."
@@ -2956,7 +2956,7 @@
         "title": "Deposit USD or USD stablecoins here.",
         "availableInVn": "Available now in Vietnam.",
         "subTitle": {
-            "sub1": "Deposit funds to make an investment, repay a loan, or simply keep your money secure. Enjoy instant, international transfers, smart contract security for crypto funds, and full FDIC insurance on fiat deposits.",
+            "sub1": "Deposit funds to make an investment, repay a loan, or simply keep your money secure. Enjoy instant, international transfers, smart contract security for crypto funds, and $130M of collective insurance on fiat deposits.",
             "sub2": "It all starts here. Make a deposit in in less than a minute.",
             "learnMore": "Learn more +"
         },
@@ -2967,7 +2967,7 @@
             "whatCaption3": "Withdraw anytime",
             "whatDesc0": "Save in USD, and protect your money against inflation and instability.",
             "whatDesc1": "Send money home. Do bigger business. All you need is an internet connection.",
-            "whatDesc2": "The FDIC insures each account up to $250K, so we store your USD funds across 520 of them.",
+            "whatDesc2": "Our independent custodian Prime Trust offers coverage for all our users to the sum of $130M.",
             "whatDesc3": "To any local bank account or wallet address. Just enter your details and you’re good to go."
         },
         "howItWorks": {
@@ -2977,7 +2977,7 @@
             "desc1": "Make a bank transfer of USD, or wallet transfer of one of our supported stablecoins. If you have a different fiat currency, we convert it for you.",
             "step2": "STEP 2",
             "title2": "We keep it safe",
-            "desc2": "Your USD funds are held safely in FDIC insured US bank accounts with a total coverage of $130M. Your stablecoins are protected by thousands of nodes and smart contract security.",
+            "desc2": "Your USD funds are held safely in insured US bank accounts with a total coverage of $130M. Your stablecoins are protected by thousands of nodes and smart contract security.",
             "step3": "STEP 3",
             "title3": "You get more",
             "desc3": "Congratulations. You now have access to global transfers, secured investments, and more."
@@ -3100,7 +3100,7 @@
     },
     "newHome": {
         "banner": {
-            "title": "<h2>Set your own rates.</h2>\n <h2>No minimum capital.</h2>\n <h2>Invest only in secured loans.</h2>\n </span>\n <br />\n <h5>\n Your investments are fully backed by borrower collateral, smart contracts and FDIC insurance. Withdraw unloaned portions anytime.\n </h5>",
+            "title": "<h2>Set your own rates.</h2>\n <h2>No minimum capital.</h2>\n <h2>Invest only in secured loans.</h2>\n </span>\n <br />\n <h5>\n Your investments are fully backed by borrower collateral, smart contracts and funds insurance. Withdraw unloaned portions anytime.\n </h5>",
             "title1": "\n        <h1>Experience <span class=\"textSuccess\">fully secured</span> peer-to-peer lending.</h1>\n      ",
             "subTitle": "No minimum capital. No maximum loans. Set your own rates and tap into true market demand.",
             "cta": "Get started",
@@ -3120,17 +3120,17 @@
             }
         },
         "crypto": {
-            "desc": "Fully secured, fully backed. All loans and investments are protected by a combination of FDIC insurance, Ethereum smart contracts, and crypto collateral."
+            "desc": "Fully secured, fully backed. All loans and investments are protected by a combination of a $130M insurance policy, Ethereum smart contracts and crypto collateral.\n"
         },
         "faqs": {
             "question1": "What is peer-to-peer (P2P) lending?",
             "answer1": "Unlike bank loans, P2P lending works by matching investors and borrowers directly. Since there are no greedy middlemen getting in the way, you set your own terms and rates, giving you unparalleled control of your finances. So whether you’re looking for a low-interest loan or better returns on your investment, we’ll match you with someone who’d love to do business with you.",
             "question2": "What makes Constant different from other P2P lending platforms?\n",
-            "answer2": "\n        <p>Constant is the first fully secured P2P lending platform. All investor funds are fully backed by collateral, and all portions that are not yet on loan are covered by FDIC insurance. Borrower collateral is stored safely in escrow, which means no one can touch it until it is transferred back to them after repayment.</p>\n        <p>Unlike other platforms, Constant also allows users to set their own interest rates and terms. \n        Ethereum powered smart contracts automate the loan agreement and always run exactly as programmed – ensuring both investors and borrowers are protected.\n        </p>\n      ",
+            "answer2": "        <p>Constant is the first fully secured P2P lending platform. All investor funds are fully backed by collateral, and all portions that are not yet on loan are insured up to $130M. Borrower collateral is stored safely in escrow, which means no one can touch it until it is transferred back to them after repayment.</p>\n        <p>Unlike other platforms, Constant also allows users to set their own interest rates and terms. \n        Ethereum powered smart contracts automate the loan agreement and always run exactly as programmed – ensuring both investors and borrowers are protected.\n        </p>",
             "question3": "Who can participate?",
             "answer3": "Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment).",
             "question4": "How does Constant protect customers’ funds?",
-            "answer4": "\n        <p>All of our loans and investments are protected by a combination of FDIC insurance, Ethereum smart contracts, and crypto collateral. When not on loan, we store your funds across multiple FDIC-insured bank accounts with an aggregate indemnity limit of $130,000,000.</p>\n        <p>When your money is on loan, it’s protected by an unstoppable Ethereum smart contract – a programmable ruleset that strictly defines how your money is used. All our borrowers put up 150% of the loan amount in collateral, so investors see a return whether borrowers repay or not.</p>\n      ",
+            "answer4": "\n        <p>All of our loans and investments are protected by a combination of insurance, Ethereum smart contracts, and crypto collateral. When not on loan, we store your funds across multiple insured bank accounts with an aggregate indemnity limit of $130,000,000.</p>\n        <p>When your money is on loan, it’s protected by an unstoppable Ethereum smart contract – a programmable ruleset that strictly defines how your money is used. All our borrowers put up 150% of the loan amount in collateral, so investors see a return whether borrowers repay or not.</p>\n      ",
             "question5": "",
             "answer5": ""
         },
@@ -3174,8 +3174,8 @@
                     "desc": "Earn 10% APR or more - it's your choice. Don’t sit on your money, put it to work."
                 },
                 "desc2": {
-                    "title": "FDIC and smart contract protected.",
-                    "desc": "When your money is on loan, it is protected by unstoppable Ethereum smart contracts. When it isn't, it is kept safe in multiple FDIC-insured bank accounts, with total coverage of $130M. "
+                    "title": "Insured up to $130M and smart contract protected.",
+                    "desc": "When your money is on loan, it is protected by unstoppable Ethereum smart contracts. When it isn't, it is kept safe in multiple insured bank accounts, with total coverage of $130M. "
                 },
                 "desc3": {
                     "title": "Secure your returns with secured loans.",
@@ -3207,11 +3207,11 @@
             "desc": "Borderless banking requires a borderless currency. Constant is a digital dollar, a stablecoin pegged 1:1 with the USD - designed to blend the best of the existing financial system with the fairness and freedom now possible with blockchain technology. Most importantly, anyone can own Constant, and access the financial solutions it unlocks. Constant is available via local banks as well as international cryptocurrency exchanges."
         },
         "what": {
-            "whatCaption0": "FDIC insured",
+            "whatCaption0": "$130M insured",
             "whatCaption1": "Built on Ethereum",
             "whatCaption2": "1 Constant = 1 USD",
             "whatCaption3": "Borderless",
-            "whatDesc0": "Every Constant Coin is fully backed by USD, held in a series of FDIC-insured vaults, for coverage of $5M per account. Guaranteed by the US government.",
+            "whatDesc0": "Every Constant Coin is fully backed by USD, held in a series of escrow accounts, with total coverage up to $130M.",
             "whatDesc1": "Constant is secured by the combined computing power of the Ethereum network. Transactions are executed using publicly verifiable smart contracts.",
             "whatDesc2": "The value of Constant is fixed at 1:1 with the USD. Redeemable for fiat at any time, Constant helps preserve the value of volatile currencies.",
             "whatDesc3": "Anyone can own Constant. That means anyone can have a global USD account, enjoy instant worldwide transfers, and access smarter financial solutions.",
@@ -3349,7 +3349,7 @@
                 "trongDinh": {
                     "name": "Trong Dinh",
                     "position": "Smart Contract",
-                    "description": "<p>Trong leads smart contract development at Constant, the heart of the stability mechanism. He automates the dialogue between Constant and its partner custodian, which distributes and protects user funds across multiple FDIC-insured banks, protecting users from fraud, downtime and third-party interference. He spends his days implementing new layers of security and adapting the Constant application layer for use on other major blockchains.</p><p>Trong started to build for the blockchain after more than a decade of developing apps for web and mobile.  His first dApp got people to put promises on the blockchain, by helping them think of smart contracts as simple everyday agreements. He was also the CTO of Ninja, one of the top prediction exchanges built on Ethereum.</p>"
+                    "description": "<p>Trong leads smart contract development at Constant, the heart of the stability mechanism. He automates the dialogue between Constant and its partner custodian Prime Trust, which distributes and protects user funds across multiple FDIC-insured banks, protecting users from fraud, downtime and third-party interference. He spends his days implementing new layers of security and adapting the Constant application layer for use on other major blockchains.</p><p>Trong started to build for the blockchain after more than a decade of developing apps for web and mobile.  His first dApp got people to put promises on the blockchain, by helping them think of smart contracts as simple everyday agreements. He was also the CTO of Ninja, one of the top prediction exchanges built on Ethereum.</p>\n"
                 },
                 "baoLe": {
                     "name": "Bao Le",
@@ -3412,7 +3412,7 @@
                 "termMonth": "{month}-Month",
                 "tooltip": {
                     "amount": "<p>How much do you want to lend?</p>",
-                    "maxTerm": "<p>This is the maximum amount of time you want to lend your money out for. Unloaned portions are protected by the FDIC, and can be withdrawn at any time.</p>",
+                    "maxTerm": "<p>This is the maximum amount of time you want to lend your money out for. Unloaned portions can be withdrawn at any time.</p>",
                     "minRate": "<p>This is the annual percentage rate (APR) you are willing to accept for your loan. If there is a borrower willing to pay more, you will earn the higher interest rate.</p>"
                 },
                 "placeholder": {
@@ -3477,8 +3477,8 @@
         "whatCaption2": "Protected by Ethereum",
         "whatCaption3": "Collateral backed",
         "whatDesc0": "\n      <p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.</p>\n \n    ",
-        "whatDesc1": "\n      <p>Funds that have not yet been loaned out are kept safe at multiple FDIC-insured bank accounts with an aggregated insurance of $130M. You can withdraw anytime.\n</p>\n    ",
-        "whatDesc2": "\n      <p>When your money is on loan, it is protected by a smart contract that will always run exactly as programmed. Enjoy automatic return of principal and payout of profit.</p>\n    ",
+        "whatDesc1": "\n      <p>Funds that have not yet been loaned out are kept independently safe in an escrow account managed by our partner Prime Trust. This offers our users an aggregated insurance of $130M. You can withdraw anytime.\n</p>\n    ",
+        "whatDesc2": "\n\n      <p>When your money is on loan, it is no longer insured, but protected by a smart contract that runs exactly as programmed - without the need for human involvement.</p>\n      <br />\n      <p>Together, funds insurance and smart contract security, keep your money independently safe.</p>\n      <br />\n      <a href=\"https://www.google.com/url?q=https://github.com/constant-money&sa=D&ust=1555493848999000&usg=AFQjCNEEEN4_WzaIB05aPU2kpKQi_PbKOw\" target=\"_blank\">View our code</a>\n        ",
         "whatDesc3": "\n      <p>If borrowers default or their collateral falls in value, you don’t lose a cent. How? We strictly require every loan to be 150% backed by collateral.</p>",
         "howItWorks": {
             "mainTitle": "How it works",
@@ -3488,7 +3488,7 @@
             "desc1": "Choose how much you want to invest and for how long, then enter the interest rate you want to earn.",
             "step2": "Step 2",
             "title2": "2. Wait to be matched",
-            "desc2": "The matching algorithm finds borrowers that meet your requirements. While you wait, all unloaned portions are FDIC insured and can be withdrawn at any time.",
+            "desc2": "The matching algorithm finds borrowers that meet your requirements. While you wait, all unloaned portions are insured up to $130M and can be withdrawn at any time.",
             "step3": "Step 3",
             "title3": "3. Start earning interest",
             "desc3": "Once a borrower is found, you’ll start earning interest on the matched amount, to be withdrawn at the end of your term."
@@ -3508,11 +3508,11 @@
             "question2": "Are there any limits?",
             "answer2": "None at all. You can invest as much or as little as you like. ",
             "question3": "How do I invest?",
-            "answer3": "\n        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to our FDIC-insured escrow account, and wait for a match. This is usually very quick if you’ve set market rates. </p>\n        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>\n      ",
+            "answer3": "\n       <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to one of our international bank accounts, and wait for a match. This is usually very quick if you’ve set market rates. </p>\n        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>\n      ",
             "question4": "How do you protect my investment?",
-            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
+            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in accounts insured up to $130M, overseen by Prime Trust, an accredited financial institution.</p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
             "question5": "What happens when my money isn’t on loan?",
-            "answer5": "When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds."
+            "answer5": "When not on loan, your money is insured up to $130,000,000. Prime Trust, an accredited US financial institution, manages your money on our behalf and insures users – we never take custody of the funds.\n"
         }
     },
     "payment": {
@@ -3521,7 +3521,7 @@
             "heading": "How it works",
             "step1": "1",
             "title1": "Deposit funds into your account",
-            "desc1": "Make a bank transfer of any amount to the Constant Vault. Your funds are fully insured by the FDIC.",
+            "desc1": "Make a bank transfer of any amount to the Constant Vault.",
             "step2": "2",
             "title2": "Upload your list of payees",
             "desc2": "Download, fill in, then upload the template that we provide for your convenience.",
@@ -3558,7 +3558,7 @@
             "q6": "Is Constant taxable?",
             "a1": "Yes, we support all countries and currencies in the world. All you need is an Internet connection.",
             "a2": "For US, Hong Kong or Vietnam customers, it would take up to 1 business day. For international customers, the process would take 2-3 business days. It depends a lot on how quickly your bank processes transfers.",
-            "a3": "Your funds are put in a trust vault overseen by PrimeTrust, an accredited US financial institution, and the trust is FDIC insured up to $5,000,000. Prior to registering for a Constant account, you will be asked to do KYC (Know Your Customer) to comply with financial regulations, which protects you against fraud. And thanks to the immutable blockchain ledger, Constant is extremely difficult to hack.",
+            "a3": "Your funds are put in a trust vault overseen by PrimeTrust, an accredited US financial institution, and the trust is insured up to $130M. Prior to registering for a Constant account, you will be asked to do KYC (Know Your Customer) to comply with financial regulations, which protects you against fraud. And thanks to the immutable blockchain ledger, Constant is extremely difficult to hack.\n",
             "a4": "Constant is powered by unstoppable smart contracts and built upon the Ethereum blockchain, an immutable digital ledger that acts as a public record of verifiable transactions.",
             "a5": "Constant allows you to move your money anywhere and anytime for free (with a minimal withdrawal fee of 0.25%). Constant is also part of a greater ecosystem, so you can choose to put your funds into one of our fixed deposits and earn up to 8% annually.",
             "a6": "Receiving Constant is similar to receiving USD. If the source of funds is not taxable then receiving Constant is not taxable. However, please note that you are responsible for determining any and all taxes assessed, incurred, or required to be collected, paid, or withheld for any reason in connection with the use of our software and services."
@@ -3576,7 +3576,7 @@
     },
     "landingPro": {
         "title1": "<h1>Peer-to-peer lending for the Pros. </h1><h1>Coming soon.</h1>",
-        "desc1": "Keep your finger on the pulse of the market, using an intuitive interface with real-time orderbooks, charting tools and detailed trade history. Trade on interest rates and optimize your returns on a fully-secured platform, uniquely backed by a combination of FDIC insurance, smart contracts, and over-collateralization.",
+        "desc1": "Keep your finger on the pulse of the market, using an intuitive interface with real-time orderbooks, charting tools and detailed trade history. Trade on interest rates and optimize your returns on a fully-secured platform, uniquely backed by a combination of insurance, smart contracts, and over-collateralization.",
         "emailInput": {
             "placeholder": "Enter your email for early access",
             "btn": "Step inside"
@@ -3589,7 +3589,7 @@
             "title0": "Set your own rates",
             "desc0": "Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.",
             "title1": "$130M insurance",
-            "desc1": "Funds that have not yet been loaned out are kept safe at multiple FDIC-insured bank accounts with an aggregated insurance of $130M. You can withdraw anytime.",
+            "desc1": "Funds that have not yet been loaned out can be withdrawn at anytime.",
             "title2": "Protected by Ethereum",
             "desc2": "When your money is on loan, it is protected by a smart contract that is over collateralized by crypto assets.  The smart contract will always run exactly as programmed.",
             "title3": "Non-custodial",
@@ -3599,7 +3599,7 @@
             "question1": "What is the difference between Constant and Constant Pro?",
             "answer1": "Constant Pro is designed for those who want a little more control over how they manage their money. Constant Pro gives users a full view of what’s going on behind the scenes – so they can examine real-time rates, choose which orders to match with, and secure the best outcomes.",
             "question2": "What does it mean to be fully secured?",
-            "answer2": "<p>All investor funds are fully backed by collateral, and all portions that are not yet on loan are covered by FDIC insurance. Borrower collateral is stored safely in escrow, which means no one can touch it until it is transferred back to them after repayment.</p>\n<p>Unlike other platforms, Constant also allows users to set their own interest rates and terms. Ethereum powered smart contracts automate the loan agreement and always run exactly as programmed – ensuring both investors and borrowers are protected.</p>",
+            "answer2": "<p>All investor funds are fully backed by collateral, and all portions that are not yet on loan benefit from our $130M insurance policy. Borrower collateral is stored safely in escrow, which means no one can touch it until it is transferred back to them after repayment.</p>\n<p>Unlike other platforms, Constant also allows users to set their own interest rates and terms. Ethereum powered smart contracts automate the loan agreement and always run exactly as programmed – ensuring both investors and borrowers are protected.</p>",
             "question3": "Is there a maximum or minimum amount for investing and borrowing?",
             "answer3": "There are no limits with Constant. You can invest or borrow as much or little as you like.",
             "question4": "Who can participate?",
@@ -3655,11 +3655,11 @@
             "question2": "Do I need a minimum deposit?",
             "answer2": "None at all. You can invest as much or as little as you like. ",
             "question3": "What is the interest rate?",
-            "answer3": "\n        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to our FDIC-insured escrow account, and wait for a match. This is usually very quick if you’ve set market rates. </p>\n        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>\n      ",
+            "answer3": "        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to one of our international bank accounts, and wait for a match. This is usually very quick if you’ve set market rates. </p>\n        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>\n      ",
             "question4": "How much is the monthly earning?",
-            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
+            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, your money is stored with our independent custodian, Prime Trust, an accredited financial institution.</p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>",
             "question5": "Who can participate?",
-            "answer5": "When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds."
+            "answer5": "When not on loan, Prime Trust, an accredited US financial institution, manages your money on our behalf – we never take custody of the funds."
         }
     },
     "getPrices": {
@@ -3853,7 +3853,7 @@
             "question3": "How do I make a deposit?",
             "answer3": "\n        <p>You can deposit funds in two ways: </p>\n        <p>Through our website. Simply select the amount of money you’d like to deposit and then send it by bank transfer to the Constant Vault. We’ll convert local currency to USD. </p>\n        <p>Through a cryptocurrency wallet. We accept multiple stablecoins. Just send it to our wallet address, and we’ll credit your account with the USD amount.</p>\n      ",
             "question4": "What happens after I make a bank transfer?",
-            "answer4": "\n        <p>First, we convert your deposit to USD to stabilize and protect your funds from inflationary devaluation. Then, we send your funds to the Constant Vault, an escrow operated by Prime Trust, an accredited US financial institution.</p>\n        <p>The Constant Vault keeps your money safe across multiple FDIC-insured bank accounts, bringing total coverage to $130,000,000.</p>\n        <p>Later, when you’re ready to withdraw, you’ll receive either USD (if you have a USD account) or local currency.</p>      \n      ",
+            "answer4": "      <p>First, we convert your deposit to USD to stabilize and protect your funds from inflationary devaluation. Then, we send your funds to the Constant Vault, an escrow operated by Prime Trust, an accredited US financial institution.</p>\n        <p>Prime Trust offers our users coverage up to $130,000,000.</p>\n        <p>Later, when you’re ready to withdraw, you’ll receive either USD (if you have a USD account) or local currency.</p>      ",
             "question5": "Is there a limit on the number of deposits I can make?",
             "answer5": "No. You can deposit as much as you like, as often as you like."
         }

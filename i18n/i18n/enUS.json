@@ -393,7 +393,7 @@
             "transferOrders": "Transfer Orders"
         },
         "wallet": {
-            "title": "This is your Constant wallet. Receive CONST from an ETH/TOMO wallet here. Trying to deposit crypto collateral? Please do so from the Pro page here.",
+            "title": "Receive CONST or CONSTA here. Trying to deposit crypto collateral? Please do so from the Pro page here.",
             "walletAddress": "Your wallet:"
         },
         "kyc": {
@@ -1173,7 +1173,7 @@
                 "depositMatched": "Deposit",
                 "cancelDepositMatched": "Cancel Deposit",
                 "withdrawDesc": "Withdraw funds to your bank account or wallet address.",
-                "depositDesc": "Store your money in USD. Insured up to$130M.\n",
+                "depositDesc": "Store your money in USD. Insured up to $130M.\n",
                 "transferDesc": "Send money across the world - to as many people as you like.",
                 "row": "Row",
                 "errorMessage": "Error Message",

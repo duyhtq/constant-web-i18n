@@ -393,7 +393,7 @@
             "transferOrders": "Transfer Orders"
         },
         "wallet": {
-            "title": "Receive CONST or CONSTA here. Trying to deposit crypto collateral? Please do so from the Pro page here.",
+            "title": "Receive CONST or CONSTA here. Trying to deposit crypto collateral? Please do so from the Pro page ",
             "walletAddress": "Your wallet:"
         },
         "kyc": {

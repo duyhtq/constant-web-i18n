@@ -106,7 +106,7 @@
         "support": "Support",
         "telegramText": "Join the {link}",
         "email": "Email us at {email}",
-        "copyright": "2019 Constant. {term} and {privacy}",
+        "copyright": "{term} and {privacy}",
         "termOfUse": "Terms of Use",
         "privacy": "Privacy Policy",
         "copyright2": "{term}",

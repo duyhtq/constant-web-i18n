@@ -106,10 +106,12 @@
         "support": "Support",
         "telegramText": "Join the {link}",
         "email": "Email us at {email}",
-        "copyright": "2019 Constant. {term} and {privacy}",
+        "register": "2019 Constant",
+        "copyright": "{term} and {privacy}",
         "termOfUse": "Terms of Use",
         "privacy": "Privacy Policy",
         "copyright2": "{term}",
+        "borrowerAgreement": "Borrower agreement",
         "investorAgreement": "Investor agreement",
         "contactUs": "Contact us:",
         "referral": "Referral",
@@ -833,7 +835,9 @@
                 "6": "Cancelled",
                 "7": "Done",
                 "8": "Holding",
-                "12": "Waiting Approving"
+                "12": "Waiting Approving",
+                "13": "Waiting Approving",
+                "14": "Transfering"
             },
             "dialog": {
                 "cancel": {
@@ -963,7 +967,7 @@
             "bankName": "Bank Name",
             "action": "Action",
             "editActionLabel": "Edit",
-            "bankAccountName": "Account Name",
+            "bankAccountName": "Beneficiary name",
             "bankAccountCurrency": "Account Currency",
             "bankCountryAndCurrency": "Country/Currency",
             "bankCountry": "Bank Country",
@@ -1084,6 +1088,7 @@
         },
         "proSaving": {
             "listApplications": {
+                "headingNote": "We will send you notifications via email if your collateral falls in value. Sometimes, these may wind up in your spam folder, so do check, and drag the email to your main inbox to prevent this from happening in the future. Do also frequently check our site - the values shown here are updated real-time.",
                 "noLoans": "You don't have any loans",
                 "noInvestment": "You don't have any investment",
                 "totalInterestEarned": "You've already earned",
@@ -1665,6 +1670,9 @@
                 "bankName": "Bank name",
                 "accountNumber": "Account Number:",
                 "amount": "Amount:",
+                "yourTopupAmount": "Topup Amount",
+                "collateralBalance": "Your Balance",
+                "collateralRequired": "Collateral Required",
                 "value": "Value",
                 "constant": "Constant:",
                 "reference": "Reference:",
@@ -1711,7 +1719,7 @@
                 "bankName": "Bank name",
                 "accountNumber": "Account Number",
                 "bankBranchName": "Bank branch name",
-                "bankAccountName": "Your account name",
+                "bankAccountName": "Beneficiary name",
                 "bankAccountNumber": "Your account number",
                 "bankAccountType": "Bank Account Type",
                 "swiftCode": "Swift code",
@@ -1978,6 +1986,7 @@
             "timeLimitMunite": "2 minutes",
             "timeLimit1": "24 hours",
             "timeLimit2": "36 hours",
+            "timeLimit3": "36 ~ 72 hours",
             "subintroTitle1": "No banks, no borders.",
             "subintroDesc1": "Constant is a digital currency, so you can send it to anyone, anywhere in the world - within minutes.",
             "subintroTitle2": "Zero fees. No transaction limits.",
@@ -2170,7 +2179,9 @@
                 "walletAddressLabel": "Return to your {symbol} address",
                 "loan": "loan",
                 "amount": "Amount: ",
+                "pendingAmount": "Pending Amount: ",
                 "collateralRequired": "Collateral: ",
+                "exchangeRates": "Exchange rates: 1 {symbol}/{value} USD",
                 "createdDate": "Created at",
                 "endTerm": "Term ends",
                 "principal": "Principal",
@@ -2230,7 +2241,9 @@
                     "manualPending": "Manual Pending",
                     "liquidateApproving": "Liquidate Approving",
                     "liquidatePending": "Liquidate Pending",
-                    "liquidateDone": "Liquidate Done"
+                    "liquidateChainPending": "Liquidate Chain Pending",
+                    "liquidateDone": "Liquidate Done",
+                    "liquidateFailed": "Liquidate Failed"
                 },
                 "mapStatus2": {
                     "pending": "Pending",
@@ -2241,6 +2254,7 @@
                     "withdrawed": "Withdrawn",
                     "tnxFailed": "Please try again",
                     "cancelled": "Cancelled",
+                    "partiallyCancelled": "Partially cancelled",
                     "rejected": "Error occurred",
                     "timeout": "Timed out",
                     "chainBorrowPending": "Pending",

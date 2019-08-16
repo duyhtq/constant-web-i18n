@@ -106,10 +106,12 @@
         "support": "Hỗ trợ",
         "telegramText": "Tham gia {link}",
         "email": "Email cho chúng tôi tại {email}",
-        "copyright": "2019 Constant. {term} và {privacy}",
+        "register": "2019 Constant",
+        "copyright": "{term} and {privacy}",
         "termOfUse": "Điều Khoản Sử Dụng",
         "privacy": "Chính Sách Bảo Mật",
         "copyright2": "{term}",
+        "borrowerAgreement": "Borrower agreement",
         "investorAgreement": "Investor agreement",
         "contactUs": "Liên hệ:",
         "referral": "Chương trình giới thiệu",
@@ -833,7 +835,9 @@
                 "6": "Đã huỷ",
                 "7": "Hoàn thành",
                 "8": "Tạm giữ",
-                "12": "Waiting Approving"
+                "12": "Waiting Approving",
+                "13": "Waiting Approving",
+                "14": "Transfering"
             },
             "dialog": {
                 "cancel": {
@@ -963,7 +967,7 @@
             "bankName": "Tên ngân hàng",
             "action": "Tác vụ",
             "editActionLabel": "Chỉnh sửa",
-            "bankAccountName": "Tên tài khoản",
+            "bankAccountName": "Beneficiary name",
             "bankAccountCurrency": "Đơn vị tiền tệ",
             "bankCountryAndCurrency": "Quốc gia/Tiền tệ",
             "bankCountry": "Quốc gia",
@@ -1084,6 +1088,7 @@
         },
         "proSaving": {
             "listApplications": {
+                "headingNote": "We will send you notifications via email if your collateral falls in value. Sometimes, these may wind up in your spam folder, so do check, and drag the email to your main inbox to prevent this from happening in the future. Do also frequently check our site - the values shown here are updated real-time.",
                 "noLoans": "Bạn chưa có khoản vay nào",
                 "noInvestment": "Bạn chưa có khoản đầu tư nào",
                 "totalInterestEarned": "Bạn đã kiếm được",
@@ -1665,6 +1670,9 @@
                 "bankName": "Tên ngân hàng",
                 "accountNumber": "Số tài khoản:",
                 "amount": "Số tiền:",
+                "yourTopupAmount": "Topup Amount",
+                "collateralBalance": "Your Balance",
+                "collateralRequired": "Collateral Required",
                 "value": "Giá trị",
                 "constant": "Constant:",
                 "reference": "Mã giao dịch:",
@@ -1711,7 +1719,7 @@
                 "bankName": "Tên ngân hàng",
                 "accountNumber": "Số tài khoản",
                 "bankBranchName": "Chi nhánh ngân hàng",
-                "bankAccountName": "Tên tài khoản",
+                "bankAccountName": "Beneficiary name",
                 "bankAccountNumber": "Số tài khoản",
                 "bankAccountType": "Tài khoản ngân hàng",
                 "swiftCode": "Mã SWIFT",
@@ -1978,6 +1986,7 @@
             "timeLimitMunite": "2 phút",
             "timeLimit1": "24 hours",
             "timeLimit2": "36 hours",
+            "timeLimit3": "36 ~ 72 hours",
             "subintroTitle1": "Không ngân hàng, không biên giới.",
             "subintroDesc1": "Constant là tiền điện tử. Bạn có thể gửi và nhận Constant ngay tức thì tới bất kỳ ai trên toàn thế giới.",
             "subintroTitle2": "Miễn phí. Không giới hạn khối lượng giao dịch.",
@@ -2170,7 +2179,9 @@
                 "walletAddressLabel": "Return to your {symbol} address",
                 "loan": "loan",
                 "amount": "Amount: ",
+                "pendingAmount": "Pending Amount: ",
                 "collateralRequired": "Collateral: ",
+                "exchangeRates": "Exchange rates: 1 {symbol}/{value} USD",
                 "createdDate": "Được tạo lúc",
                 "endTerm": "Ngày đáo hạn",
                 "principal": "Tiền gốc",
@@ -2230,7 +2241,9 @@
                     "manualPending": "Manual Pending",
                     "liquidateApproving": "Liquidate Approving",
                     "liquidatePending": "Liquidate Pending",
-                    "liquidateDone": "Liquidate Done"
+                    "liquidateChainPending": "Liquidate Chain Pending",
+                    "liquidateDone": "Liquidate Done",
+                    "liquidateFailed": "Liquidate Failed"
                 },
                 "mapStatus2": {
                     "pending": "Đang chờ",
@@ -2241,6 +2254,7 @@
                     "withdrawed": "Đã rút tiền",
                     "tnxFailed": "Xin vui lòng thử lại",
                     "cancelled": "Đã huỷ",
+                    "partiallyCancelled": "Partially cancelled",
                     "rejected": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
                     "timeout": "Hết thời gian",
                     "chainBorrowPending": "Pending",

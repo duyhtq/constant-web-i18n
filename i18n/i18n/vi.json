@@ -16,6 +16,7 @@
             "retry": "Server error, please retry",
             "required": "Bắt buộc",
             "maxValues": "Must less than ${max}",
+            "minValues": "Must greater than ${min}",
             "copied": "Đã sao chép",
             "remove": "Xoá",
             "save": "Lưu",
@@ -392,7 +393,8 @@
             "viewInvestmentDetail": "Chi tiết khoản đầu tư",
             "batchTransfer": "Chuyển khoản hàng loạt",
             "referralInfo": "Chương trình giới thiệu",
-            "transferOrders": "Lệnh chuyển khoản"
+            "transferOrders": "Lệnh chuyển khoản",
+            "openOrders": "Open Orders"
         },
         "wallet": {
             "title": "Đây là địa chỉ ví của bạn để nhận Constant gửi tới",
@@ -757,6 +759,9 @@
         "history": {
             "title": "Lịch sử giao dịch",
             "balance": "Số dư: {balance} CONSTANT",
+            "holdingBalance": "Holding Balance: {balance} USD",
+            "withdrawAndTransfer": "Withdrawals and Transfers",
+            "investmentOrder": "Investments",
             "date": "Ngày",
             "transactionID": "Mã giao dịch",
             "transfer": "Chuyển khoản",
@@ -1095,7 +1100,9 @@
                 "noRecord": "Bạn vẫn chưa có khoản tiết kiệm nào. Bắt đầu tiết kiệm ngay từ hôm nay.",
                 "getListFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
                 "amount": "Principal: ",
-                "interest": "Interest: ",
+                "interest": "Interest to date: ",
+                "totalInterest": "Total interest: ",
+                "totalInterestDesc": "This is the interest you will earn for the full term. If a borrower repays early, you will earn the interest to date.",
                 "rate": "Rate:",
                 "interestAmount": "Total interest",
                 "apr": "/năm",
@@ -1103,6 +1110,7 @@
                 "investment": "investment",
                 "month": "tháng",
                 "day": "day",
+                "rewardApply": "Reward",
                 "anyTimeAccount": "Gửi không kì hạn",
                 "term": "Term:",
                 "endTerm": "Term ends: ",
@@ -1112,6 +1120,7 @@
                 "loans_title": "Các khoản vay",
                 "repaySuccess": "Chúng tôi sẽ trừ tiền trực tiếp từ số dư của bạn. Phần tài sản thế chấp sẽ được trả về ví ban đầu của bạn trong giây lát. Xin cảm ơn!",
                 "anyTime_saving": "Số dư",
+                "holdingBalance": "Holding Balance",
                 "input2FA": "Nhập mã bảo mật 2 lớp",
                 "cancel": "Huỷ",
                 "delete": "Delete",
@@ -1123,7 +1132,7 @@
                 "payOffLoanTitle": "Hoàn trả khoản vay",
                 "allStatus": "All",
                 "termStatusFilter": {
-                    "pending": "Pending Deposit",
+                    "pending": "Deposit pending",
                     "matching": "Matching",
                     "matched": "Matched",
                     "closed": "Closed",
@@ -1135,11 +1144,11 @@
                     "pending": "Đang chờ",
                     "closed": "Done",
                     "rejected": "Closed",
-                    "pending_kyc": "Pending Deposit",
+                    "pending_kyc": "Deposit pending",
                     "matched": "Khớp lệnh",
                     "matching": "Đang khớp lệnh",
                     "cancelled": "Closed",
-                    "transferred_fiat": "Pending Deposit"
+                    "transferred_fiat": "Deposit pending"
                 },
                 "interestInfo": {
                     "header": {
@@ -1339,6 +1348,23 @@
                     "cancel": "Huỷ",
                     "depositFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
                     "depositSuccess": "Nộp tiền thành công"
+                },
+                "rewardFrom": {
+                    "title": "Make more deposit for your collateral",
+                    "amount": "How many CONSTA do you want to redeem?",
+                    "requiredAmount": "Amount is required!",
+                    "maxAmount": "Your amount must be less than {max}.",
+                    "amountDesc": "How much do you want to apply?",
+                    "close": "Close",
+                    "apply": "Redeem",
+                    "cancel": "Cancel",
+                    "notAvailable": "Uh oh! Something went wrong, Your reward not available. please try again...",
+                    "rewardTitle": "CONSTA balance: {balance}",
+                    "rewardSubTile": "You can apply a maximum of {maxRate} CONSTA per redemption.",
+                    "rewardNote": "This will lower your rate by {rateDown}%",
+                    "rewardInvestNote": "This will increase your rate by {rateUp}%",
+                    "rewardApplyFailed": "Something went wrong. Please try again.",
+                    "rewardApplySuccess": "Rewards redeemed."
                 },
                 "itemMatched": {
                     "amount": "Amount",
@@ -1753,7 +1779,7 @@
                 "confirmTemplate": {
                     "title": "Xin cảm ơn!",
                     "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"white bold\">service times</a> for an estimation of when funds will reach.",
-                    "contact": "Xin vui lòng liên hệ với chúng tôi qua email <a class=\"white bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> để được hỗ trợ nhanh nhất.",
+                    "contact": "If you have any questions, feel free to reach out to <a class=\"colorLight bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime.",
                     "actionTitle": "Đặt lệnh chuyển tiền mới"
                 }
             },
@@ -1761,7 +1787,7 @@
                 "confirmTemplate": {
                     "title": "Xin cảm ơn!",
                     "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"white bold\">service times</a> for an estimation of when funds will reach.",
-                    "contact": "Xin vui lòng liên hệ với chúng tôi qua email <a class=\"white bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> để được hỗ trợ nhanh nhất.",
+                    "contact": "If you have any questions, feel free to reach out to <a class=\"colorLight bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime.",
                     "actionTitle": "Về trang chủ"
                 }
             }
@@ -2181,6 +2207,7 @@
                 "amount": "Amount: ",
                 "pendingAmount": "Pending Amount: ",
                 "collateralRequired": "Collateral: ",
+                "extraRate": "Your total rate will be {rate}% effect from {date}",
                 "exchangeRates": "Exchange rates: 1 {symbol}/{value} USD",
                 "createdDate": "Được tạo lúc",
                 "endTerm": "Ngày đáo hạn",
@@ -2195,6 +2222,7 @@
                 "payCollateral": "Pay",
                 "payOffLoan": "Hoàn trả",
                 "depositMatched": "Nộp thêm",
+                "rewardApply": "Reward",
                 "cancelDepositMatched": "Cancel Deposit",
                 "collateral": "Collateral",
                 "collateralValue": "Collateral value",
@@ -2288,7 +2316,7 @@
                 "willReturnCollateral": "Collateral will be return is",
                 "errorRemainCollateral": "Bạn chưa thể nhận lại phần tài sản thế chấp còn lại ngay lúc này",
                 "errorRemainCollateralHtml": "\n          Please wait for assistance, or contact us at <a href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>\n        ",
-                "errorCollateralNotEnoughHtml": "\n          Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.\n        ",
+                "errorCollateralNotEnoughHtml": "Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.",
                 "depositFrom": {
                     "title": "Nộp thêm tài sản thế chấp",
                     "amount": "Số lượng",
@@ -3874,5 +3902,30 @@
     },
     "testimonial": {
         "title": "Our Clients Love Us"
+    },
+    "yourReferral": {
+        "invite": {
+            "emailPlaceholder": "Enter an email address"
+        },
+        "list": {
+            "user_email": "Email",
+            "statusHtml": "Status",
+            "fund": "Funds",
+            "point": "CONSTA"
+        },
+        "withdraw": {
+            "amountPlaceholder": "Please enter your amount here",
+            "amount": "Amount",
+            "address": "CONSTA Address",
+            "addressPlaceholder": "Please enter your address here",
+            "successMsg": "Success! You withdraw CONSTA.",
+            "failedMsg": "Something went wrong! Please try again"
+        },
+        "transfer": {
+            "email": "Email",
+            "emailPlaceholder": "Please enter your email here",
+            "successMsg": "Success! You transferred CONSTA.",
+            "failedMsg": "Something went wrong! Please try again"
+        }
     }
 }

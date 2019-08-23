@@ -16,6 +16,7 @@
             "retry": "Server error, please retry",
             "required": "Required",
             "maxValues": "Must less than ${max}",
+            "minValues": "Must greater than ${min}",
             "copied": "Copied",
             "remove": "Remove",
             "save": "Save",
@@ -392,7 +393,8 @@
             "viewInvestmentDetail": "View investment details here",
             "batchTransfer": "Batch transfers",
             "referralInfo": "Referral Information",
-            "transferOrders": "Transfer Orders"
+            "transferOrders": "Transfer Orders",
+            "openOrders": "Open Orders"
         },
         "wallet": {
             "title": "Receive CONST or CONSTA here. Trying to deposit crypto collateral? Please do so from the Pro page ",
@@ -757,6 +759,9 @@
         "history": {
             "title": "Transaction History",
             "balance": "Total balance: {balance} USD",
+            "holdingBalance": "Holding Balance: {balance} USD",
+            "withdrawAndTransfer": "Withdrawals and Transfers",
+            "investmentOrder": "Investments",
             "date": "Date",
             "transactionID": "Transaction ID",
             "transfer": "Transfer",
@@ -1095,7 +1100,9 @@
                 "noRecord": "You have not made any investments yet.",
                 "getListFailed": "Sorry, something went wrong. Please try again.",
                 "amount": "Principal: ",
-                "interest": "Interest: ",
+                "interest": "Interest to date: ",
+                "totalInterest": "Total interest: ",
+                "totalInterestDesc": "This is the interest you will earn for the full term. If a borrower repays early, you will earn the interest to date.",
                 "rate": "Rate:",
                 "interestAmount": "Total interest",
                 "apr": "APR",
@@ -1103,6 +1110,7 @@
                 "investment": "investment",
                 "month": "month",
                 "day": "day",
+                "rewardApply": "Reward",
                 "anyTimeAccount": "Anytime deposit",
                 "term": "Term:",
                 "endTerm": "Term ends: ",
@@ -1112,6 +1120,7 @@
                 "loans_title": "Loans",
                 "repaySuccess": "Thanks. Please bear with us while we deduct from your balance.Your collateral will be returned to the wallet address it was sent from.",
                 "anyTime_saving": "Balance",
+                "holdingBalance": "Holding Balance",
                 "input2FA": "Input 2FA",
                 "cancel": "Cancel",
                 "delete": "Delete",
@@ -1123,7 +1132,7 @@
                 "payOffLoanTitle": "Payoff Loan",
                 "allStatus": "All",
                 "termStatusFilter": {
-                    "pending": "Pending Deposit",
+                    "pending": "Deposit pending",
                     "matching": "Matching",
                     "matched": "Matched",
                     "closed": "Closed",
@@ -1135,11 +1144,11 @@
                     "pending": "Matching",
                     "closed": "Done",
                     "rejected": "Closed",
-                    "pending_kyc": "Pending Deposit",
+                    "pending_kyc": "Deposit pending",
                     "matched": "Matched",
                     "matching": "Matching",
                     "cancelled": "Closed",
-                    "transferred_fiat": "Pending Deposit"
+                    "transferred_fiat": "Deposit pending"
                 },
                 "interestInfo": {
                     "header": {
@@ -1339,6 +1348,23 @@
                     "cancel": "Cancel",
                     "depositFailed": "Failed while depositing, please try again",
                     "depositSuccess": "Your deposit was completed successfully"
+                },
+                "rewardFrom": {
+                    "title": "Make more deposit for your collateral",
+                    "amount": "How many CONSTA do you want to redeem?",
+                    "requiredAmount": "Amount is required!",
+                    "maxAmount": "Your amount must be less than {max}.",
+                    "amountDesc": "How much do you want to apply?",
+                    "close": "Close",
+                    "apply": "Redeem",
+                    "cancel": "Cancel",
+                    "notAvailable": "Uh oh! Something went wrong, Your reward not available. please try again...",
+                    "rewardTitle": "CONSTA balance: {balance}",
+                    "rewardSubTile": "You can apply a maximum of {maxRate} CONSTA per redemption.",
+                    "rewardNote": "This will lower your rate by {rateDown}%",
+                    "rewardInvestNote": "This will increase your rate by {rateUp}%",
+                    "rewardApplyFailed": "Something went wrong. Please try again.",
+                    "rewardApplySuccess": "Rewards redeemed."
                 },
                 "itemMatched": {
                     "amount": "Amount",
@@ -1753,7 +1779,7 @@
                 "confirmTemplate": {
                     "title": "Thank you!",
                     "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"white bold\">service times</a> for an estimation of when funds will reach.",
-                    "contact": "If you have any questions, feel free to reach out to <a class=\"white bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime.",
+                    "contact": "If you have any questions, feel free to reach out to <a class=\"colorLight bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime.",
                     "actionTitle": "Make another transfer"
                 }
             },
@@ -1761,7 +1787,7 @@
                 "confirmTemplate": {
                     "title": "Thank you!",
                     "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"white bold\">service times</a> for an estimation of when funds will reach.",
-                    "contact": "If you have any questions, feel free to reach out to <a class=\"white bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime.",
+                    "contact": "If you have any questions, feel free to reach out to <a class=\"colorLight bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime.",
                     "actionTitle": "Back to homepage"
                 }
             }
@@ -2181,6 +2207,7 @@
                 "amount": "Amount: ",
                 "pendingAmount": "Pending Amount: ",
                 "collateralRequired": "Collateral: ",
+                "extraRate": "Your total rate will be {rate}% effect from {date}",
                 "exchangeRates": "Exchange rates: 1 {symbol}/{value} USD",
                 "createdDate": "Created at",
                 "endTerm": "Term ends",
@@ -2195,6 +2222,7 @@
                 "payCollateral": "Pay",
                 "payOffLoan": "Repay",
                 "depositMatched": "Top up",
+                "rewardApply": "Reward",
                 "cancelDepositMatched": "Cancel Deposit",
                 "collateral": "Collateral",
                 "collateralValue": "Collateral value",
@@ -2288,7 +2316,7 @@
                 "willReturnCollateral": "Collateral will be return is",
                 "errorRemainCollateral": "You can not to get the remaining collateral back at the moment",
                 "errorRemainCollateralHtml": "\n          Please wait for assistance, or contact us at <a href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>\n        ",
-                "errorCollateralNotEnoughHtml": "\n          Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.\n        ",
+                "errorCollateralNotEnoughHtml": "Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.",
                 "depositFrom": {
                     "title": "Make more deposit for your collateral",
                     "amount": "Amount",
@@ -3874,5 +3902,30 @@
     },
     "testimonial": {
         "title": "What people say about us"
+    },
+    "yourReferral": {
+        "invite": {
+            "emailPlaceholder": "Enter an email address"
+        },
+        "list": {
+            "user_email": "Email",
+            "statusHtml": "Status",
+            "fund": "Funds",
+            "point": "CONSTA"
+        },
+        "withdraw": {
+            "amountPlaceholder": "Please enter your amount here",
+            "amount": "Amount",
+            "address": "CONSTA Address",
+            "addressPlaceholder": "Please enter your address here",
+            "successMsg": "Success! You withdraw CONSTA.",
+            "failedMsg": "Something went wrong! Please try again"
+        },
+        "transfer": {
+            "email": "Email",
+            "emailPlaceholder": "Please enter your email here",
+            "successMsg": "Success! You transferred CONSTA.",
+            "failedMsg": "Something went wrong! Please try again"
+        }
     }
 }

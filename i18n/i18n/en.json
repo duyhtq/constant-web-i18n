@@ -317,7 +317,8 @@
             "userTaxIDNumberInvalid": "TaxIDNumber is invalid",
             "userPhoneNumberInvalid": "PhoneNumber is invalid",
             "systemError": "System error",
-            "notEnoughConstantRepay": "Your Constant balance is not enough to pay this matched"
+            "notEnoughConstantRepay": "Your Constant balance is not enough to pay this matched",
+            "invalidStatus": "This order has been processed. Please refresh the page to see update!"
         },
         "withdrawGreaterThan": "The minimum withdrawal amount is {min}",
         "withdrawLessThanOrEqual": "The maximum withdrawal amount is {max}"
@@ -968,7 +969,7 @@
             "title": "Bank Information",
             "desc": "Enter your bank account details to unlock bigger referral earnings and faster transaction times.",
             "subject": "Bank account details for receiving withdrawals or transfers ",
-            "explanations": "(?) For your security, we only use these bank details to process fund withdrawals or transfers. To deposit funds, please enter the amount you want to invest, and follow the instructions to make a wire transfer directly to our FDIC-insured custodian.",
+            "explanations": "For your security, we only use these bank details to process fund withdrawals or transfers. To deposit funds, please enter the amount you want to invest, and follow the instructions to make a wire transfer directly to our FDIC-insured custodian.",
             "bankName": "Bank Name",
             "action": "Action",
             "editActionLabel": "Edit",
@@ -2224,6 +2225,7 @@
                 "depositMatched": "Top up",
                 "rewardApply": "Reward",
                 "cancelDepositMatched": "Cancel Deposit",
+                "cashback": "Cash back",
                 "collateral": "Collateral",
                 "collateralValue": "Collateral value",
                 "liquidWaring": "Your collateral will be liquidated, Please top up more collateral...",
@@ -2316,7 +2318,8 @@
                 "willReturnCollateral": "Collateral will be return is",
                 "errorRemainCollateral": "You can not to get the remaining collateral back at the moment",
                 "errorRemainCollateralHtml": "\n          Please wait for assistance, or contact us at <a href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>\n        ",
-                "errorCollateralNotEnoughHtml": "Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.",
+                "errorCollateralNotEnoughHtml": "To recall excess, collateral value must be higher than {lvtPer}%. Your current collateral value is {percent}%.",
+                "errorCantCollateralHtml": "To recall excess, collateral value must be higher than {lvtPer}%. Your current collateral value is {percent}%.",
                 "depositFrom": {
                     "title": "Make more deposit for your collateral",
                     "amount": "Amount",

@@ -317,7 +317,8 @@
             "userTaxIDNumberInvalid": "TaxIDNumber is invalid",
             "userPhoneNumberInvalid": "PhoneNumber is invalid",
             "systemError": "System error",
-            "notEnoughConstantRepay": "Your Constant balance is not enough to pay this matched"
+            "notEnoughConstantRepay": "Your Constant balance is not enough to pay this matched",
+            "invalidStatus": "This order has been processed. Please refresh the page to see update!"
         },
         "withdrawGreaterThan": "The minimum withdrawal amount is {min}",
         "withdrawLessThanOrEqual": "The maximum withdrawal amount is {max}"
@@ -968,7 +969,7 @@
             "title": "Thông tin ngân hàng",
             "desc": "Cập nhật thông tin tài khoản ngân hàng để thanh toán nhanh hơn và nhận được những ưu đãi hấp dẫn từ chương trình Giới thiệu khách hàng.",
             "subject": "Tài khoản ngân hàng nhận tiền ",
-            "explanations": "(?) Vì lí do an ninh, tài khoản ngân hàng này chỉ dùng để nhận tiền. Để nộp tiền hay thực hiện đầu tư với Constant, xin vui lòng làm theo hướng dẫn để chuyển khoản trực tiếp tới quỹ tín thác Constant được bảo hiểm bởi FDIC.",
+            "explanations": "For your security, we only use these bank details to process fund withdrawals or transfers. To deposit funds, please enter the amount you want to invest, and follow the instructions to make a wire transfer directly to our FDIC-insured custodian.",
             "bankName": "Tên ngân hàng",
             "action": "Tác vụ",
             "editActionLabel": "Chỉnh sửa",
@@ -2224,6 +2225,7 @@
                 "depositMatched": "Nộp thêm",
                 "rewardApply": "Reward",
                 "cancelDepositMatched": "Cancel Deposit",
+                "cashback": "Cash back",
                 "collateral": "Collateral",
                 "collateralValue": "Collateral value",
                 "liquidWaring": "Your collateral will be liquidated, Please top up more collateral...",
@@ -2316,7 +2318,8 @@
                 "willReturnCollateral": "Collateral will be return is",
                 "errorRemainCollateral": "Bạn chưa thể nhận lại phần tài sản thế chấp còn lại ngay lúc này",
                 "errorRemainCollateralHtml": "\n          Please wait for assistance, or contact us at <a href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>\n        ",
-                "errorCollateralNotEnoughHtml": "Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.",
+                "errorCollateralNotEnoughHtml": "To recall excess, collateral value must be higher than {lvtPer}%. Your current collateral value is {percent}%.",
+                "errorCantCollateralHtml": "To recall excess, collateral value must be higher than {lvtPer}%. Your current collateral value is {percent}%.",
                 "depositFrom": {
                     "title": "Nộp thêm tài sản thế chấp",
                     "amount": "Số lượng",

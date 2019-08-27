@@ -1352,7 +1352,7 @@
                 },
                 "rewardFrom": {
                     "title": "Make more deposit for your collateral",
-                    "amount": "How many CONSTA do you want to redeem?",
+                    "amount": "How many STAR do you want to redeem?",
                     "requiredAmount": "Amount is required!",
                     "maxAmount": "Your amount must be less than {max}.",
                     "amountDesc": "How much do you want to apply?",
@@ -1360,8 +1360,8 @@
                     "apply": "Redeem",
                     "cancel": "Cancel",
                     "notAvailable": "Uh oh! Something went wrong, Your reward not available. please try again...",
-                    "rewardTitle": "CONSTA balance: {balance}",
-                    "rewardSubTile": "You can use up to 3 CONSTA at one time.",
+                    "rewardTitle": "STAR balance: {balance}",
+                    "rewardSubTile": "You can apply a maximum of {maxRate} STAR per redemption.",
                     "rewardNote": "This will lower your rate by {rateDown}%",
                     "rewardInvestNote": "This will increase your rate by {rateUp}%",
                     "rewardApplyFailed": "Something went wrong. Please try again.",
@@ -3910,24 +3910,38 @@
         "invite": {
             "emailPlaceholder": "Enter an email address"
         },
+        "info": {
+            "balanceTitle": "YOU CURRENTLY HAVE",
+            "title": "Get your friend involved",
+            "desc": "\n        <p>For every friend who makes an investment or loan of $1000 or more, you will earn 1 STAR.</p>\n        <p>1 STAR unlocks either +1% APR on an investment or -1% APR on a loan. You can use up to 3 STAR at one time.</p>\n        <p>Apply your STAR to any investment or loan matched after 20 August 2019, or send to a friend if you’re feeling generous.</p>\n      ",
+            "buttonRedeem": "Redeem STAR",
+            "buttonWithdraw": "Withdraw STAR",
+            "buttonTransfer": "Transfer STAR",
+            "buttonReceive": "Receive STAR"
+        },
         "list": {
             "user_email": "Email",
             "statusHtml": "Status",
             "fund": "Funds",
-            "point": "CONSTA"
+            "point": "STAR"
+        },
+        "history": {
+            "transaction_type": "Type",
+            "status": "Status",
+            "detail": "Detail"
         },
         "withdraw": {
             "amountPlaceholder": "Please enter your amount here",
             "amount": "Amount",
-            "address": "CONSTA Address",
+            "address": "STAR Address",
             "addressPlaceholder": "Please enter your address here",
-            "successMsg": "Success! You withdraw CONSTA.",
+            "successMsg": "Success! You withdraw STAR.",
             "failedMsg": "Something went wrong! Please try again"
         },
         "transfer": {
             "email": "Email",
             "emailPlaceholder": "Please enter your email here",
-            "successMsg": "Success! You transferred CONSTA.",
+            "successMsg": "Success! You transferred STAR.",
             "failedMsg": "Something went wrong! Please try again"
         }
     }

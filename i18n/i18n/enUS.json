@@ -398,7 +398,7 @@
             "openOrders": "Open Orders"
         },
         "wallet": {
-            "title": "Receive CONST or CONSTA here. Trying to deposit crypto collateral? Please do so from the Pro page ",
+            "title": "Receive CONST or STAR here. Trying to deposit crypto collateral? Please do so from the Pro page ",
             "walletAddress": "Your wallet:"
         },
         "kyc": {

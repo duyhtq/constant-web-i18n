@@ -1338,7 +1338,7 @@
                 "note": "Note",
                 "investMore": "Save More",
                 "depositFrom": {
-                    "title": "Make more deposit for your collateral",
+                    "title": "Deposit more collateral",
                     "amount": "Amount",
                     "requiredAmount": "Amount is required!",
                     "amountDesc": "How much do you want to deposit?",
@@ -1351,7 +1351,7 @@
                     "depositSuccess": "Your deposit was completed successfully"
                 },
                 "rewardFrom": {
-                    "title": "Make more deposit for your collateral",
+                    "title": "Deposit more collateral",
                     "amount": "How many STAR do you want to redeem?",
                     "requiredAmount": "Amount is required!",
                     "maxAmount": "Your amount must be less than {max}.",
@@ -2321,7 +2321,7 @@
                 "errorCollateralNotEnoughHtml": "To recall excess, collateral value must be higher than {lvtPer}%. Your current collateral value is {percent}%.",
                 "errorCantCollateralHtml": "To recall excess, collateral value must be higher than {lvtPer}%. Your current collateral value is {percent}%.",
                 "depositFrom": {
-                    "title": "Make more deposit for your collateral",
+                    "title": "Deposit more collateral",
                     "amount": "Amount",
                     "requiredAmount": "Amount is required!",
                     "amountDesc": "How much do you want to deposit?",
@@ -2959,7 +2959,7 @@
         "info": {
             "title": "Withdraw to your local bank.",
             "desc1": "Withdraw funds to your bank account of choice.",
-            "desc4": "\n        <h5>Simply let us know where to send your USD funds to. If you’ve got a different local currency, it’s converted at the real-time market rate. Funds should reach you within 2 business days.</h5>\n        <br/>\n        <h5><strong>Prefer to withdraw stablecoins?</strong> Do so <a href=\"/transfer-crypto\" class=\"underline\">here.</a></h5>\n      "
+            "desc4": "<h6>Simply let us know where to send your USD funds to. If you’ve got a different local currency, it’s converted at the real-time market rate. Funds should reach you within 2 business days.</h5>\n        <br/>\n        <h6><strong>Prefer to withdraw stablecoins?</strong> Do so <a href=\"/transfer-crypto\" class=\"underline\">here.</a></h5>"
         },
         "what": {
             "whatCaption0": "Works with your bank",

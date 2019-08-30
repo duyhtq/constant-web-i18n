@@ -3169,11 +3169,11 @@
         },
         "faqs": {
             "question1": "What is peer-to-peer (P2P) lending?",
-            "answer1": "Unlike bank loans, P2P lending works by matching investors and borrowers directly. Since there are no greedy middlemen getting in the way, you set your own terms and rates, giving you unparalleled control of your finances. So whether you’re looking for a low-interest loan or better returns on your investment, we’ll match you with someone who’d love to do business with you.",
+            "answer1": "<p>Unlike bank loans, P2P lending works by matching investors and borrowers directly. Since there are no greedy middlemen getting in the way, you set your own terms and rates, giving you unparalleled control of your finances. So whether you’re looking for a low-interest loan or better returns on your investment, we’ll match you with someone who’d love to do business with you.</p>",
             "question2": "What makes Constant different from other P2P lending platforms?\n",
             "answer2": "        <p>Constant is the first fully secured P2P lending platform. All investor funds are fully backed by collateral, and all portions that are not yet on loan are insured up to $130M. Borrower collateral is stored safely in escrow, which means no one can touch it until it is transferred back to them after repayment.</p>\n        <p>Unlike other platforms, Constant also allows users to set their own interest rates and terms. \n        Ethereum powered smart contracts automate the loan agreement and always run exactly as programmed – ensuring both investors and borrowers are protected.\n        </p>",
             "question3": "Who can participate?",
-            "answer3": "Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment).",
+            "answer3": "<p>Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment).</p>",
             "question4": "How does Constant protect customers’ funds?",
             "answer4": "\n        <p>All of our loans and investments are protected by a combination of insurance, Ethereum smart contracts, and crypto collateral. When not on loan, we store your funds across multiple insured bank accounts with an aggregate indemnity limit of $130,000,000.</p>\n        <p>When your money is on loan, it’s protected by an unstoppable Ethereum smart contract – a programmable ruleset that strictly defines how your money is used. All our borrowers put up 150% of the loan amount in collateral, so investors see a return whether borrowers repay or not.</p>\n      ",
             "question5": "",

@@ -2069,7 +2069,7 @@
                 "termLabel": "Pick a loan term",
                 "amountLabel": "How much do you want to borrow?",
                 "collateralLabel": "Collateral required (66% Loan to Value ratio)\n",
-                "collateralRequiredLabel": "Collateral required ({value}% Loan to Value ratio)",
+                "collateralRequiredLabel": "Collateral required ({value}% LTV)",
                 "startDateLabel": "Start date",
                 "endDateLabel": "End date",
                 "collateralNote": "For this coin, loans will take up to 24 hours to be granted, repaid, or topped up.",
@@ -2079,7 +2079,7 @@
                 "collateralNoteMatch": "Estimated time to match: {hours} hours",
                 "collateralNoteMatchInWorkingTime": "Estimated time to match 1 hour",
                 "toolTipCollateral": "\n          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.\n        ",
-                "walletAddressLabel": "Which {symbol} wallet should we return your collateral to?",
+                "walletAddressLabel": "Receiving {symbol} wallet for returned funds",
                 "walletAlias": "Enter your {symbol} wallet address",
                 "moreInfo": "Your funds will reach you as soon as your collateral is confirmed on its blockchain.  ETA: 2 minutes for ETH and 10 minutes for BTC.",
                 "monthLoan": "{term}-month loan",
@@ -2959,7 +2959,7 @@
         "info": {
             "title": "Withdraw to your local bank.",
             "desc1": "Withdraw funds to your bank account of choice.",
-            "desc4": "<h6>Simply let us know where to send your USD funds to. If you’ve got a different local currency, it’s converted at the real-time market rate. Funds should reach you within 2 business days.</h5>\n        <br/>\n        <h6><strong>Prefer to withdraw stablecoins?</strong> Do so <a href=\"/transfer-crypto\" class=\"underline\">here.</a></h5>"
+            "desc4": "<h6>Simply let us know where to send your USD funds to. If you’ve got a different local currency, it’s converted at the real-time market rate. Funds should reach you within 2 business days.</h6>\n        <br/>\n        <h6><strong>Prefer to withdraw stablecoins?</strong> Do so <a href=\"/transfer-crypto\" class=\"underline\">here.</a></h6>"
         },
         "what": {
             "whatCaption0": "Works with your bank",

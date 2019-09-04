@@ -3010,10 +3010,10 @@
             "whatCaption1": "Send money globally, instantly",
             "whatCaption2": "Insure your money up to $130M",
             "whatCaption3": "Withdraw anytime",
-            "whatDesc0": "Save in USD, and protect your money against inflation and instability.",
-            "whatDesc1": "Send money home. Do bigger business. All you need is an internet connection.",
-            "whatDesc2": "Our independent custodian Prime Trust offers coverage for all our users to the sum of $130M.",
-            "whatDesc3": "To any local bank account or wallet address. Just enter your details and you’re good to go."
+            "whatDesc0": "<p>Save in USD, and protect your money against inflation and instability.</p>",
+            "whatDesc1": "<p>Send money home. Do bigger business. All you need is an internet connection.</p>",
+            "whatDesc2": "<p>Our independent custodian Prime Trust offers coverage for all our users to the sum of $130M.</p>",
+            "whatDesc3": "<p>To any local bank account or wallet address. Just enter your details and you’re good to go.</p>"
         },
         "howItWorks": {
             "title": "How it works",

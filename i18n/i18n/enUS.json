@@ -438,7 +438,7 @@
             "lZipcode": "Zip Code",
             "plZipcode": "12345",
             "lAddrUpload": "Please upload a document verifying the address above.",
-            "descAddrUpload": "<div>\n        Valid documents: utility bill, phone bill, mortgage statement, tenancy\n        agreement, bank/credit card statement, insurance letter (motor, home, or\n        life), or financial statement (pension, endowment). <br />\n<p>\n        <b>Document must be dated within the last 90 days. </b>\n        <br />\n<p>\n        Please ensure your proof of address is an exact match with the address\n        provided in your application, including all shorthands and abbreviations. <br />\n<p>      \n        Please make sure that the photo is complete and clearly visible, in BMP, \n        JPG, JPEG, or PNG format, and is smaller than 10MB\n      </div>\n      ",
+            "descAddrUpload": "<div>\n        <p>Valid documents: utility bill, phone bill, mortgage statement, tenancy\n        agreement, bank/credit card statement, insurance letter (motor, home, or\n        life), or financial statement (pension, endowment).</p>\n        <p>\n        <strong>Document must be dated within the last 90 days.</strong>\n        </p>\n        <p>\n        Please ensure your proof of address is an exact match with the address\n        provided in your application, including all shorthands and abbreviations.</p>\n        <p>      \n        Please make sure that the photo is complete and clearly visible, in BMP, \n        JPG, JPEG, or PNG format, and is smaller than 10MB.</p>\n      </div>",
             "btnBack": "Back",
             "titleExample": "Before uploading, please crop the image of your ID to make the border as small as possible.",
             "titleExampleClick": "Click here to see the examples.",
@@ -3912,7 +3912,7 @@
         },
         "info": {
             "balanceTitle": "YOU CURRENTLY HAVE",
-            "title": "Get your friend involved",
+            "title": "Get your friends involved\n",
             "desc": "\n        <p>For every friend who makes an investment or loan of $1000 or more, you will earn 1 STAR.</p>\n        <p>1 STAR unlocks either +1% APR on an investment or -1% APR on a loan. You can use up to 3 STAR at one time.</p>\n        <p>Apply your STAR to any investment or loan matched after 20 August 2019, or send to a friend if you’re feeling generous.</p>\n      ",
             "buttonRedeem": "Redeem STAR",
             "buttonWithdraw": "Withdraw STAR",

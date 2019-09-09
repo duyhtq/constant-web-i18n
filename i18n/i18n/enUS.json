@@ -3010,7 +3010,7 @@
             "whatCaption1": "Zero downtime",
             "whatCaption2": "No limits",
             "whatCaption3": "Withdraw anytime",
-            "whatDesc0": "<p>Earn a default 3.6% APY on all deposits, whatever you choose to do next.</p>",
+            "whatDesc0": "<p>Earn a default {interest}% APY on all deposits, whatever you choose to do next.</p>",
             "whatDesc1": "<p>Made an ambitious investing order? Earn interest while you wait for a match. </p>",
             "whatDesc2": "<p>No minimum or maximum deposit, no minimum or maximum term. </p>",
             "whatDesc3": "<p>To any local bank account or wallet address, as often as you like.</p>"

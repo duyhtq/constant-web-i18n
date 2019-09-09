@@ -3010,7 +3010,7 @@
             "whatCaption1": "Zero downtime",
             "whatCaption2": "No limits",
             "whatCaption3": "Withdraw anytime",
-            "whatDesc0": "<p>Earn a default {interest}% APY on all deposits, whatever you choose to do next.</p>",
+            "whatDesc0": "<p>Earn a default {interest}% APR on all deposits, whatever you choose to do next.</p>",
             "whatDesc1": "<p>Made an ambitious investing order? Earn interest while you wait for a match. </p>",
             "whatDesc2": "<p>No minimum or maximum deposit, no minimum or maximum term. </p>",
             "whatDesc3": "<p>To any local bank account or wallet address, as often as you like.</p>"
@@ -3021,8 +3021,8 @@
             "title1": "Make a deposit",
             "desc1": "Make a bank transfer of USD, or wallet transfer of one of our supported stablecoins. If you have a different fiat currency, we convert it for you.",
             "step2": "STEP 2",
-            "title2": "Start earning {interest}% APY",
-            "desc2": "Any deposit will earn {interest}% APY the minute it hits your account. The only time this changes is if you choose to lend it out at a different rate.",
+            "title2": "Start earning {interest}% APR",
+            "desc2": "Any deposit will earn {interest}% APR the minute it hits your account. The only time this changes is if you choose to lend it out at a different rate.",
             "step3": "STEP 3",
             "title3": "Explore possibilities",
             "desc3": "Now you can start investing at your own rates, send funds internationally, or simply allow your money to grow without lifting a finger."

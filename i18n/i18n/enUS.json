@@ -3006,26 +3006,26 @@
             "learnMore": "Learn more +"
         },
         "what": {
-            "whatCaption0": "Protect the value of your money",
-            "whatCaption1": "Send money globally, instantly",
-            "whatCaption2": "Insure your money up to $130M",
+            "whatCaption0": "Guaranteed growth",
+            "whatCaption1": "Zero downtime",
+            "whatCaption2": "No limits",
             "whatCaption3": "Withdraw anytime",
-            "whatDesc0": "<p>Save in USD, and protect your money against inflation and instability.</p>",
-            "whatDesc1": "<p>Send money home. Do bigger business. All you need is an internet connection.</p>",
-            "whatDesc2": "<p>Our independent custodian Prime Trust offers coverage for all our users to the sum of $130M.</p>",
-            "whatDesc3": "<p>To any local bank account or wallet address. Just enter your details and you’re good to go.</p>"
+            "whatDesc0": "<p>Earn a default 3.6% APY on all deposits, whatever you choose to do next.</p>",
+            "whatDesc1": "<p>Made an ambitious investing order? Earn interest while you wait for a match. </p>",
+            "whatDesc2": "<p>No minimum or maximum deposit, no minimum or maximum term. </p>",
+            "whatDesc3": "<p>To any local bank account or wallet address, as often as you like.</p>"
         },
         "howItWorks": {
             "title": "How it works",
             "step1": "STEP 1",
-            "title1": "You make a deposit",
+            "title1": "Make a deposit",
             "desc1": "Make a bank transfer of USD, or wallet transfer of one of our supported stablecoins. If you have a different fiat currency, we convert it for you.",
             "step2": "STEP 2",
-            "title2": "We keep it safe",
-            "desc2": "Your USD funds are held safely in insured US bank accounts with a total coverage of $130M. Your stablecoins are protected by thousands of nodes and smart contract security.",
+            "title2": "Start earning {interest}% APY",
+            "desc2": "Any deposit will earn {interest}% APY the minute it hits your account. The only time this changes is if you choose to lend it out at a different rate.",
             "step3": "STEP 3",
-            "title3": "You get more",
-            "desc3": "Congratulations. You now have access to global transfers, secured investments, and more."
+            "title3": "Explore possibilities",
+            "desc3": "Now you can start investing at your own rates, send funds internationally, or simply allow your money to grow without lifting a finger."
         },
         "checklist": {
             "title": "Why you should save money with Constant.",

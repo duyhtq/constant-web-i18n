@@ -438,7 +438,7 @@
             "lZipcode": "Zip Code",
             "plZipcode": "12345",
             "lAddrUpload": "Please upload a document verifying the address above.",
-            "descAddrUpload": "<div>\n        <p>Valid documents: utility bill, phone bill, mortgage statement, tenancy\n        agreement, bank/credit card statement, insurance letter (motor, home, or\n        life), or financial statement (pension, endowment).</p>\n        <p>\n        <strong>Document must be dated within the last 90 days.</strong>\n        </p>\n        <p>\n        Please ensure your proof of address is an exact match with the address\n        provided in your application, including all shorthands and abbreviations.</p>\n        <p>      \n        Please make sure that the photo is complete and clearly visible, in BMP, \n        JPG, JPEG, or PNG format, and is smaller than 10MB.</p>\n      </div>",
+            "descAddrUpload": "<div>\n        <p>Valid documents: utility bill, phone bill, mortgage statement, tenancy\n        agreement, bank/credit card statement, insurance letter (motor, home, or\n        life), or financial statement (pension, endowment).</p>\n        <p>\n        <strong>Document must be dated within the last 90 days.</strong>\n        </p>\n        <p>\n        Please ensure your proof of address is an exact match with the address\n        provided in your application, including all shorthands and abbreviations.</p>\n        <p>      \n        Please make sure that the photo is complete and clearly visible, in BMP, \n        JPG, JPEG, PNG or PDF format, and is smaller than 10MB.</p>\n      </div>",
             "btnBack": "Back",
             "titleExample": "Before uploading, please crop the image of your ID to make the border as small as possible.",
             "titleExampleClick": "Click here to see the examples.",
@@ -1361,7 +1361,7 @@
                     "cancel": "Cancel",
                     "notAvailable": "Uh oh! Something went wrong, Your reward not available. please try again...",
                     "rewardTitle": "STAR balance: {balance}",
-                    "rewardSubTile": "You can apply a maximum of {maxRate} STAR per redemption.",
+                    "rewardSubTile": "You can apply a maximum of 3 STAR at one time.",
                     "rewardNote": "This will lower your rate by {rateDown}%",
                     "rewardInvestNote": "This will increase your rate by {rateUp}%",
                     "rewardApplyFailed": "Something went wrong. Please try again.",
@@ -1375,7 +1375,7 @@
                     "matchedDate": "Date matched: ",
                     "due": "Term ends: "
                 },
-                "yourInvestments": "Partial matches ({matched})",
+                "yourInvestments": "Match{plural} {matched}",
                 "partialMatchesDesc": "Some investments may be split into smaller amounts to fill multiple loan orders. The platform will keep trying to match you completely for the duration of your term."
             },
             "applicationDetail": {
@@ -2041,9 +2041,9 @@
                 "question3": "How do you protect my collateral?",
                 "answer3": "Your collateral is held safely in an Ethereum powered smart contract escrow. This means no one can touch it – not even us. When you repay, your collateral is immediately transferred back to you. You also have the option to pay a 1% fee for BitGo custodian protection up to 100M USD.\n",
                 "question4": "What happens if I don’t repay the loan?",
-                "answer4": "If you don’t repay the loan, we sell your collateral at 110% of the loan value + interest due, to pay back investors. The difference is refunded to you, and you get to keep the loan. That’s all there is to it.\n",
+                "answer4": "If you don’t repay the loan, we’ll create a sell order for your collateral at 110% of the loan value + interest due to repay investors. Please note the final price may be higher or lower depending on the point of sale, but we’ll always try to get the best price possible for you. You get to keep the loan as well as any difference left over from the sale. That’s it.",
                 "question5": "What happens if my crypto collateral falls in value?",
-                "answer5": "We will notify you 3 times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, it’ll be sold to repay the investor, and the difference will be refunded to you. Borrowers will receive notifications at 125%, 120% and 115%, so they can choose to repay early to avoid liquidation, or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.",
+                "answer5": "We will notify you three times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, we’ll create a sell order to repay the investor. The final price might differ depending on the point of sale, but we’ll always try to get you the best price possible. Any difference will be refunded to you. Borrowers will receive notifications at 125%, 120% and 115%, so they can choose to repay early to avoid liquidation, or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.",
                 "question6": "Can I repay early?",
                 "answer6": "\n          <p>If you'd like to pay back your loan before 75% of the term is up, that's absolutely fine. You simply have to pay interest for the days you are in possession of the loan, and just 50% of the original interest rate for the remaining days of the term.</p>\n          <p>If you'd like to pay back your loan after 75% of the term is up and claim back your collateral, that's also fine, but the interest due on that loan is the full percentage for the entire term.</p>\n        ",
                 "question7": "Can i recall excess if my collateral value increases?",
@@ -2231,7 +2231,7 @@
                 "liquidWaring": "Collateral approaching the liquidation threshold. Please top up.\n",
                 "interestPrice": "Interest:",
                 "rate": "Rate:",
-                "yourLoan": "Partial matches ({matched})",
+                "yourLoan": "Match{plural} {matched}",
                 "partialMatchesDesc": "Some loan requests may be split into smaller amounts to fill multiple investment orders. The platform will keep trying to match you completely for the duration of your term.",
                 "status": "Status",
                 "allStatus": "All",
@@ -2270,7 +2270,7 @@
                     "topupPending": "Top Up Pending",
                     "manualPending": "Manual Pending",
                     "liquidateApproving": "Liquidate Approving",
-                    "liquidatePending": "Liquidate Pending",
+                    "liquidatePending": "Liquidation In Process",
                     "liquidateChainPending": "Liquidate Chain Pending",
                     "liquidateDone": "Liquidate Done",
                     "liquidateFailed": "Liquidate Failed"
@@ -3165,17 +3165,17 @@
             }
         },
         "crypto": {
-            "desc": "Fully secured, fully backed. All loans and investments are protected by a combination of a $130M insurance policy, Ethereum smart contracts and crypto collateral.\n"
+            "desc": "Fully secured, fully backed. All loans and investments are protected by Ethereum smart contracts and crypto collateral.\n"
         },
         "faqs": {
             "question1": "What is peer-to-peer (P2P) lending?",
             "answer1": "<p>Unlike bank loans, P2P lending works by matching investors and borrowers directly. Since there are no greedy middlemen getting in the way, you set your own terms and rates, giving you unparalleled control of your finances. So whether you’re looking for a low-interest loan or better returns on your investment, we’ll match you with someone who’d love to do business with you.</p>",
             "question2": "What makes Constant different from other P2P lending platforms?\n",
-            "answer2": "        <p>Constant is the first fully secured P2P lending platform. All investor funds are fully backed by collateral, and all portions that are not yet on loan are insured up to $130M. Borrower collateral is stored safely in escrow, which means no one can touch it until it is transferred back to them after repayment.</p>\n        <p>Unlike other platforms, Constant also allows users to set their own interest rates and terms. \n        Ethereum powered smart contracts automate the loan agreement and always run exactly as programmed – ensuring both investors and borrowers are protected.\n        </p>",
+            "answer2": "        <p>Constant is the first fully secured P2P lending platform. All investor funds are fully backed by collateral. Borrower collateral is stored safely in escrow, which means no one can touch it until it is transferred back to them after repayment.</p>\n        <p>Unlike other platforms, Constant also allows users to set their own interest rates and terms. \n        Ethereum powered smart contracts automate the loan agreement and always run exactly as programmed – ensuring both investors and borrowers are protected.\n        </p>",
             "question3": "Who can participate?",
             "answer3": "<p>Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment).</p>",
             "question4": "How does Constant protect customers’ funds?",
-            "answer4": "\n        <p>All of our loans and investments are protected by a combination of insurance, Ethereum smart contracts, and crypto collateral. When not on loan, we store your funds across multiple insured bank accounts with an aggregate indemnity limit of $130,000,000.</p>\n        <p>When your money is on loan, it’s protected by an unstoppable Ethereum smart contract – a programmable ruleset that strictly defines how your money is used. All our borrowers put up 150% of the loan amount in collateral, so investors see a return whether borrowers repay or not.</p>\n      ",
+            "answer4": "\n        <p>All of our loans and investments are protected by a combination of Ethereum smart contracts, and crypto collateral.</p>\n        <p>An Ethereum smart contract is an unstoppable programmable ruleset that strictly defines how your money is used. All our borrowers put up 150% of the loan amount in collateral, so investors see a return whether borrowers repay or not.</p>",
             "question5": "",
             "answer5": ""
         },
@@ -3430,7 +3430,7 @@
     "home1": {
         "lendingSection": {
             "intro": {
-                "content": "\n<h6>Invest the way you want</h6>\n<h2 class=\"\">Set your own rates.</h2>\n <h2 class=\"\">No minimum capital.</h2>\n <h2 class=\"\">Invest only in secured loans.</h2>\n </span>\n <br />\n <h6>\n Your investments are fully backed by borrower collateral, smart contracts and FDIC insurance. Withdraw unloaned portions anytime.\n </h6>"
+                "content": "\n<h6>Invest the way you want</h6>\n<h2 class=\"\">Set your own rates.</h2>\n <h2 class=\"\">No minimum capital.</h2>\n <h2 class=\"\">Invest only in secured loans.</h2>\n </span>\n <br />\n <h6>\n Your investments are fully backed by borrower collateral and smart contracts. Unmatched portions earn an automatic 5% APY, and can be withdrawn anytime.\n </h6>"
             },
             "form": {
                 "text1": "Set your own lending terms",
@@ -3518,11 +3518,11 @@
             }
         },
         "whatCaption0": "Set your own rates",
-        "whatCaption1": "Insurance on all deposits",
+        "whatCaption1": "Minimum rate guarantee",
         "whatCaption2": "Protected by Ethereum",
         "whatCaption3": "Collateral backed",
         "whatDesc0": "\n      <p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.</p>\n \n    ",
-        "whatDesc1": "\n      <p>Funds that have not yet been loaned out are kept independently safe in an escrow account managed by our partner Prime Trust. This offers our users an aggregated insurance of $130M. You can withdraw anytime.\n</p>\n    ",
+        "whatDesc1": "\n      <p>Start earning interest even before you find a match. All unmatched deposits earn an automatic 5% APY and can be withdrawn at any time. Stay flexible and enjoy zero downtime.\n</p>\n    ",
         "whatDesc2": "\n\n      <p>When your money is on loan, it is no longer insured, but protected by a smart contract that runs exactly as programmed - without the need for human involvement.</p>\n      <br />\n      <p>Together, funds insurance and smart contract security, keep your money independently safe.</p>\n      <br />\n      <a href=\"https://www.google.com/url?q=https://github.com/constant-money&sa=D&ust=1555493848999000&usg=AFQjCNEEEN4_WzaIB05aPU2kpKQi_PbKOw\" target=\"_blank\">View our code</a>\n        ",
         "whatDesc3": "\n      <p>If borrowers default or their collateral falls in value, you don’t lose a cent. How? We strictly require every loan to be 150% backed by collateral.</p>",
         "howItWorks": {
@@ -3555,7 +3555,7 @@
             "question3": "How do I invest?",
             "answer3": "\n       <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to one of our international bank accounts, and wait for a match. This is usually very quick if you’ve set market rates. </p>\n        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>\n      ",
             "question4": "How do you protect my investment?",
-            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in accounts insured up to $130M, overseen by Prime Trust, an accredited financial institution.</p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
+            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. </p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
             "question5": "What happens when my money isn’t on loan?",
             "answer5": "When not on loan, your money is insured up to $130,000,000. Prime Trust, an accredited US financial institution, manages your money on our behalf and insures users – we never take custody of the funds.\n"
         }
@@ -3702,7 +3702,7 @@
             "question3": "What is the interest rate?",
             "answer3": "        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to one of our international bank accounts, and wait for a match. This is usually very quick if you’ve set market rates. </p>\n        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>\n      ",
             "question4": "How much is the monthly earning?",
-            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, your money is stored with our independent custodian, Prime Trust, an accredited financial institution.</p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>",
+            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. </p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>",
             "question5": "Who can participate?",
             "answer5": "When not on loan, Prime Trust, an accredited US financial institution, manages your money on our behalf – we never take custody of the funds."
         }

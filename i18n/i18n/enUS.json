@@ -3931,10 +3931,10 @@
             "detail": "Detail"
         },
         "withdraw": {
-            "amountPlaceholder": "Please enter your amount here",
+            "amountPlaceholder": "Enter amount",
             "amount": "Amount",
-            "address": "STAR Address",
-            "addressPlaceholder": "Please enter your address here",
+            "address": "Receiving wallet address",
+            "addressPlaceholder": "Enter ERC20 wallet address",
             "successMsg": "Success! You withdraw STAR.",
             "failedMsg": "Something went wrong! Please try again"
         },

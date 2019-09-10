@@ -3522,7 +3522,7 @@
         "whatCaption2": "Protected by Ethereum",
         "whatCaption3": "Collateral backed",
         "whatDesc0": "\n      <p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.</p>\n \n    ",
-        "whatDesc1": "<p>Earn interest before you even find a match. All deposits earn 3.6% APY by default, and can be withdrawn at any time. Paid out every 30 seconds, compounded daily. Stay flexible and enjoy zero downtime.</p>\n    ",
+        "whatDesc1": "<p>Earn interest before you even make an investing order. All deposits earn {interest}% APY by default, and can be withdrawn at any time. Paid out every 30 seconds, compounded daily. Stay flexible and enjoy zero downtime.</p>\n    ",
         "whatDesc2": "\n\n      <p>When your money is on loan, it is no longer insured, but protected by a smart contract that runs exactly as programmed - without the need for human involvement.</p>\n      <br />\n      <p>Together, funds insurance and smart contract security, keep your money independently safe.</p>\n      <br />\n      <a href=\"https://www.google.com/url?q=https://github.com/constant-money&sa=D&ust=1555493848999000&usg=AFQjCNEEEN4_WzaIB05aPU2kpKQi_PbKOw\" target=\"_blank\">View our code</a>\n        ",
         "whatDesc3": "\n      <p>If borrowers default or their collateral falls in value, you don’t lose a cent. How? We strictly require every loan to be 150% backed by collateral.</p>",
         "howItWorks": {

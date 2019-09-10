@@ -3011,7 +3011,7 @@
             "whatCaption2": "No limits",
             "whatCaption3": "Withdraw anytime",
             "whatDesc0": "<p>{interest}% APY on all deposits. See your earnings reflected in your balance immediately.</p>",
-            "whatDesc1": "<p>Made an ambitious investing order? Earn interest while you wait for a match. </p>",
+            "whatDesc1": "<p>Earn {interest}% APY before you even make an investing order. Paid out every 30 seconds </p>",
             "whatDesc2": "<p>No minimum or maximum deposit, no minimum or maximum term. </p>",
             "whatDesc3": "<p>To any local bank account or wallet address, as often as you like.</p>"
         },

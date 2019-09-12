@@ -2969,7 +2969,7 @@
             "whatDesc0": "<p>Easily transfer Constant funds to your local bank account. Just let us know where to send it.</p>",
             "whatDesc1": "<p>Funds should reach you within 2 days, but times may vary depending on your bank’s operating hours.</p>",
             "whatDesc2": "<p>Your money is stored in USD. If you withdraw in a different currency, it will be converted at the current market rate.</p>",
-            "whatDesc3": "<p>Withdraw as often as you like. The only fee we charge is a 0.25% withdrawal fee - capped at $35. Never more.</p>"
+            "whatDesc3": "<p>Withdraw as often as you like. The only fee we charge is a 0.25% withdrawal fee - capped at $35. Please note that Constant cannot be liable for charges from your own bank.</p>\n"
         },
         "howItWorks": {
             "step1": "Step 1",

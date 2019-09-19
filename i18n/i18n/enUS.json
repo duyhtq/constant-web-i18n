@@ -1188,7 +1188,7 @@
                 "depositMatched": "Deposit",
                 "cancelDepositMatched": "Cancel Deposit",
                 "withdrawDesc": "Withdraw funds to your bank account or wallet address.",
-                "depositDesc": "Store your money in USD. Insured up to $130M.\n",
+                "depositDesc": "Earn 5% APY by default.\n",
                 "transferDesc": "Send money across the world - to as many people as you like.",
                 "row": "Row",
                 "errorMessage": "Error Message",
@@ -2021,7 +2021,7 @@
             "subintroTitle3": "Always reliable.",
             "subintroDesc3": "Unlike other digital currencies, Constant keeps a stable value. This means you can get the equivalent of 1 USD for 1 Constant. In any location, at any time.",
             "backToNewOrder": "Place new order",
-            "goHistory": "Go to Orders and Transactions",
+            "goHistory": "Go to Open Orders",
             "components": {
                 "orderInfo": {
                     "title": "Your transfer confirmation"
@@ -3011,7 +3011,7 @@
             "whatCaption2": "No limits",
             "whatCaption3": "Withdraw anytime",
             "whatDesc0": "<p>{interest}% APY on all deposits. See your earnings reflected in your balance immediately.</p>",
-            "whatDesc1": "<p>Earn {interest}% APY before you even make an investing order. Paid out every 30 seconds </p>",
+            "whatDesc1": "<p>Earn {interest}% APY before you start investing. Paid every second</p>",
             "whatDesc2": "<p>No minimum or maximum deposit, no minimum or maximum term. </p>",
             "whatDesc3": "<p>To any local bank account or wallet address, as often as you like.</p>"
         },
@@ -3022,10 +3022,10 @@
             "desc1": "Make a bank transfer of USD, or wallet transfer of one of our supported stablecoins. If you have a different fiat currency, we convert it for you.",
             "step2": "STEP 2",
             "title2": "Earn {interest}% APY",
-            "desc2": "Any deposit will begin earning {interest}% APY the minute it hits your account. The only time this changes is if you choose to lend it out at a different rate.\n",
+            "desc2": "Your deposits earn {interest}% APY the moment they hit your account. The only time this changes is if you then invest them at a different rate.",
             "step3": "STEP 3",
-            "title3": "Explore possibilities",
-            "desc3": "Now you can start investing at your own rates, send funds internationally, or simply allow your money to grow without lifting a finger."
+            "title3": "Watch your money grow",
+            "desc3": "Your balance compounds and increases every second. So no downtime, no wasted earnings."
         },
         "checklist": {
             "title": "Why you should save money with Constant.",
@@ -3891,16 +3891,16 @@
     },
     "deposit1": {
         "faqs": {
-            "question1": "Which fiat currencies do you accept?",
-            "answer1": "We accept any currency you can send by bank transfer to our US-based accounts. Once received, we convert your currency to USD.",
-            "question2": "Which stablecoins do you accept?",
-            "answer2": "We accept deposits of USDC, USDT, TUSD, PAX, GUSD, USDS and our native stablecoin, CONST.",
-            "question3": "How do I make a deposit?",
-            "answer3": "\n        <p>You can deposit funds in two ways: </p>\n        <p>Through our website. Simply select the amount of money you’d like to deposit and then send it by bank transfer to the Constant Vault. We’ll convert local currency to USD. </p>\n        <p>Through a cryptocurrency wallet. We accept multiple stablecoins. Just send it to our wallet address, and we’ll credit your account with the USD amount.</p>\n      ",
-            "question4": "What happens after I make a bank transfer?",
-            "answer4": "      <p>First, we convert your deposit to USD to stabilize and protect your funds from inflationary devaluation. Then, we send your funds to the Constant Vault, an escrow operated by Prime Trust, an accredited US financial institution.</p>\n        <p>Prime Trust offers our users coverage up to $130,000,000.</p>\n        <p>Later, when you’re ready to withdraw, you’ll receive either USD (if you have a USD account) or local currency.</p>      ",
-            "question5": "Is there a limit on the number of deposits I can make?",
-            "answer5": "No. You can deposit as much as you like, as often as you like."
+            "question1": "How do my deposits earn interest?",
+            "answer1": "Flex uses an API with Compound Finance to lend your deposits to a liquidity pool. Others borrow from the pool in return for putting up collateral, and you earn the interest. In other words, Flex is very similar to how investments work on Constant, only with Flex you can withdraw anytime. ",
+            "question2": "Are my deposits insured?",
+            "answer2": "Not always, no. While held with our trust partner, Prime Trust, your deposits are covered by a $130,000,000 insurance policy. However, we expect deposits will spend most of their time earning interest through Compound Finance, so will instead be protected by collateral put up by Compound's users.",
+            "question3": "Can I deposit collateral or other cryptocurrency into Flex?",
+            "answer3": "At the moment, Flex only accepts USD and USD-backed stablecoins. ",
+            "question4": "Can I earn interest while waiting for an investment order to match?",
+            "answer4": "The interest rate depends on supply and demand in Compound's lending market. Sometimes it's higher, sometimes it's lower, but for the time being we've fixed this at 5% APY. ",
+            "question5": "Will the interest rate change?",
+            "answer5": "No, your funds are set aside while waiting for a match so won't earn interest on Flex. If you decide to cancel the order, your funds will return to earning interest in Flex.  "
         }
     },
     "testimonial": {

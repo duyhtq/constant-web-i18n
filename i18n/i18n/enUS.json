@@ -3010,8 +3010,8 @@
             "whatCaption1": "Zero downtime",
             "whatCaption2": "No limits",
             "whatCaption3": "Withdraw anytime",
-            "whatDesc0": "<p>{interest}% APY on all deposits. See your earnings reflected in your balance immediately.</p>",
-            "whatDesc1": "<p>Earn {interest}% APY before you start investing. Paid every second</p>",
+            "whatDesc0": "<p>{interest}% APY on all deposits. See your earnings reflected immediately.</p>",
+            "whatDesc1": "<p>Earn {interest}% APY before you start investing. Paid every second.</p>",
             "whatDesc2": "<p>No minimum or maximum deposit, no minimum or maximum term. </p>",
             "whatDesc3": "<p>To any local bank account or wallet address, as often as you like.</p>"
         },
@@ -3898,9 +3898,9 @@
             "question3": "Can I deposit collateral or other cryptocurrency into Flex?",
             "answer3": "At the moment, Flex only accepts USD and USD-backed stablecoins. ",
             "question4": "Can I earn interest while waiting for an investment order to match?",
-            "answer4": "The interest rate depends on supply and demand in Compound's lending market. Sometimes it's higher, sometimes it's lower, but for the time being we've fixed this at 5% APY. ",
+            "answer4": "No, your funds are set aside while waiting for a match so won't earn interest on Flex. If you decide to cancel the order, your funds will return to earning interest in Flex.  ",
             "question5": "Will the interest rate change?",
-            "answer5": "No, your funds are set aside while waiting for a match so won't earn interest on Flex. If you decide to cancel the order, your funds will return to earning interest in Flex.  "
+            "answer5": "The interest rate depends on supply and demand in Compound's lending market. Sometimes it's higher, sometimes it's lower, but for the time being we've fixed this at 5% APY. "
         }
     },
     "testimonial": {

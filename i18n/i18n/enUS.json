@@ -2836,7 +2836,7 @@
         "getCurrencyListFailed": "Failed while getting supported currencies",
         "loading": "Loading...",
         "amountMustBeLargerThan": "Your amount must be larger than {min} {fiatCurrency}",
-        "howMuchDoYouWantToDeposit": "How much do you want to deposit?",
+        "howMuchDoYouWantToDeposit": "How much do you want to grow?",
         "formDesc": "Constant partners with accredited financial institutions to store your money across multiple insured accounts, bringing total coverage up to $130,000,000.",
         "depositForWithdraw": "Please make sure you have sufficient funds in your account to complete the transfer.<br/>To make a transfer of ${amount}, please deposit sufficient funds."
     },

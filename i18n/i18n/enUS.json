@@ -2827,7 +2827,7 @@
         "currencyDropdownLabel": "Your currency",
         "amountResultLabel": "According to the markets today, that is:",
         "submitBtn": {
-            "depositNow": "Deposit now",
+            "depositNow": "Start growing",
             "depositWithAmount": "Start growing {fiatAmount} {fiatCurrency}"
         },
         "noAgentAvaiable": "Please be patient with us, we’re trying to keep up. Try a smaller amount, or try again later.",

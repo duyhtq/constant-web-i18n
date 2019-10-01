@@ -173,7 +173,7 @@
         "myAccount": "My Account",
         "deposit": "Bank",
         "lending": "Lending",
-        "flex": "High-Yield Savings <sup>NEW</sup>",
+        "flex": "Flex <sup>NEW</sup>",
         "flexMobile": "Savings <sup>NEW</sup>",
         "transfer": "Send",
         "send": "Send",
@@ -318,7 +318,7 @@
             "createdBankExisted": "Nice! This bank account has already been registered.",
             "trial_term_deposit_not_available": "The Constant introductory trial is only available for new users.\n",
             "not_pro_saving_user": "Sorry, we can only offer services in the USA to SEC accredited investors.",
-            "otpNotMatched": "OPT not matched or invalidated!",
+            "otpNotMatched": "Please check your OTP is valid and try again",
             "userDocumentCannotChange": "You cannot change KYC information. Please contact admin for support.",
             "missingUserDocuments": "User hasn't had any document yet!",
             "userFirstNameInvalid": "FirstName is invalid",
@@ -3037,7 +3037,7 @@
         }
     },
     "deposit": {
-        "contentHtml": "\n      <h6>Grow your wealth effortlessly</h6>\n      <h2>Lock in a great rate without</h2>\n      <h2>locking in your money.</h2>\n      <br />\n      <h6>{interest}% APY. Unlimited withdrawals, as often as you like. 24/7 customer service. No fees. No minimum deposit. No penalty. There’s never been a savings account this good.</h6>\n      <br />\n    ",
+        "contentHtml": "\n      <h6>Better than any savings account</h6>\n      <h2>Invest your money</h2>\n      <h2>without locking it in.</h2>\n      <br />\n      <h6>Earn {interest}% APY through automatic lending. Withdraw anytime, as often as you like. No fees. No minimums. All lending secured. There’s never been an easier way to grow your money.</h6>\n      <br />\n    ",
         "title": "Deposit USD or USD stablecoins here.",
         "availableInVn": "Available now in Vietnam.",
         "subTitle": {
@@ -3050,10 +3050,10 @@
             "whatCaption1": "Zero downtime",
             "whatCaption2": "No limits",
             "whatCaption3": "Withdraw anytime",
-            "whatDesc0": "<p>Save in USD, the world reserve currency, accepted by merchants worldwide. Protect your money against inflation and instability.</p>",
-            "whatDesc1": "<p>Send and receive any amount, anywhere in the world, instantly and for free. Do bigger business, send money home, unlock greater mobility.</p>",
-            "whatDesc2": "<p>Benefit from the maximum coverage the FDIC provides - multiplied by 20. Since the FDIC insures each account up to $250K, we store your money across 20 of them.</p>",
-            "whatDesc3": "<p>Constant works with your local banking system to make sure that all your funds can be withdrawn anytime, in your currency of choice.</p>"
+            "whatDesc0": "<p>{interest}% APY on all deposits. See your earnings reflected immediately.</p>",
+            "whatDesc1": "<p>Earn {interest}% APY before you start investing. Compounded and paid every second.</p>",
+            "whatDesc2": "<p>No minimum or maximum deposit, no minimum or maximum term. </p>",
+            "whatDesc3": "<p>To any local bank account or wallet address, as often as you like.</p>"
         },
         "howItWorks": {
             "title": "How it works",
@@ -3573,7 +3573,7 @@
             "desc1": "Choose how much you want to invest and for how long, then enter the interest rate you want to earn.",
             "step2": "Step 2",
             "title2": "2. Wait to be matched",
-            "desc2": "The matching algorithm finds borrowers that meet your requirements. While you wait, all unloaned portions are insured up to $130M and can be withdrawn at any time.",
+            "desc2": "The matching algorithm finds borrowers that meet your requirements. While you wait, your funds remain in the custody of Prime Trust, where they are insured up to $130M and can be withdrawn at any time.",
             "step3": "Step 3",
             "title3": "3. Start earning interest",
             "desc3": "Once a borrower is found, you’ll start earning interest on the matched amount, to be withdrawn at the end of your term."
@@ -3597,7 +3597,7 @@
             "question4": "How do you protect my investment?",
             "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. </p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
             "question5": "What happens when my money isn’t on loan?",
-            "answer5": "When not on loan, your money is insured up to $130,000,000. Prime Trust, an accredited US financial institution, manages your money on our behalf and insures users – we never take custody of the funds.\n"
+            "answer5": "<p>When not on loan or waiting for a match, your money earns 5% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p><p>If you're waiting for a match, your money remains in the custody of Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>\n"
         }
     },
     "payment": {

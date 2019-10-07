@@ -3037,7 +3037,7 @@
         }
     },
     "deposit": {
-        "contentHtml": "\n      <h6>Better than any savings account</h6>\n      <h2>Invest your money</h2>\n      <h2>without locking it in.</h2>\n      <br />\n      <h6>Earn {interest}% APY through automatic lending. Withdraw anytime, as often as you like. No fees. No minimums. All loans secured. There’s never been an easier way to grow your money.</h6>\n      <br />\n    ",
+        "contentHtml": "\n      <h6>Do more with your money</h6>\n      <h2>Enjoy 50x better interest</h2>\n      <h2>than a savings account<sup>1</sup>.</h2>\n      <br />\n      <h6>Earn {interest}% APY on any amount. You deposit, we lend on your behalf, and you keep the interest. All loans secured by collateral and you can withdraw anytime for free. Grow your money without locking it in.</h6>\n      <br />\n<p><sup>1</sup>Comparison based on data from <a href=\"https://www.valuepenguin.com/banking/average-bank-interest-rates\">ValuePenguin</a>.</p>",
         "title": "Deposit USD or USD stablecoins here.",
         "availableInVn": "Available now in Vietnam.",
         "subTitle": {

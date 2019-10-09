@@ -320,7 +320,7 @@
             "not_pro_saving_user": "Sorry, we can only offer services in the USA to SEC accredited investors.",
             "otpNotMatched": "Please check your OTP is valid and try again",
             "userDocumentCannotChange": "You cannot change KYC information. Please contact admin for support.",
-            "missingUserDocuments": "User hasn't had any document yet!",
+            "missingUserDocuments": "Please upload required documents.",
             "userFirstNameInvalid": "FirstName is invalid",
             "userLastNameInvalid": "LastName is invalid",
             "userDOBInvalid": "DOB is invalid",
@@ -709,7 +709,7 @@
             "changeFailed": "Please make sure you have typed in your old password correctly"
         },
         "twoFa": {
-            "description2Fa": "Important actions (withdraw, transfer, etc.) will require you to enter a password via Google Authenticator or Authy.",
+            "description2Fa": "Important actions (withdraw, transfer, etc.) will require you to enter a code via Google Authenticator or Authy.",
             "qrScanModal": {
                 "title": "Scan QR Code",
                 "description": "Please scan this code with Google Authenticator or Authy, then enter the password sent to you.",
@@ -3936,7 +3936,7 @@
             "question2": "Why 5% APY?",
             "answer2": "Compound Finance uses a blockchain protocol that intelligently manages the lending pool. It also sets interest rates according to supply and demand. At the moment, the rate is fixed at 5% APY. In the future, it could be higher or lower depending on activity in Compound’s lending market.",
             "question3": "What is Compound Finance?",
-            "answer3": "Compound Finance is a technology that intelligently manages a lending pool of over $150 million in assets (as of September 2019). Flex interfaces with this technology through an API that allows you to withdraw your deposits and earned interest at any time. <br/>Compound Finance lends in a similar way to banks: your deposits go in and are lent to borrowers in exchange for interest and collateral. But since Compound Finance is a technology, there is no need for branches or staff, so you enjoy a much better interest rate!<br> <a href=\"https://compound.finance/\">Learn more about Compound Finance.</a>",
+            "answer3": "<p>Compound Finance is a technology that intelligently manages a lending pool of over $150 million in assets (as of September 2019). Flex interfaces with this technology through an API that allows you to withdraw your deposits and earned interest at any time.</p>\n\n<p>Compound Finance lends in a similar way to banks: your deposits go in and are lent to borrowers in exchange for interest and collateral. But since Compound Finance is a technology, there is no need for branches or staff, so you enjoy a much better interest rate!</p>\n\n<p><a href=\"https://medium.com/@constantp2p/compound-finance-discover-the-interest-earning-tech-behind-flex-dcbb1decc835\">Learn more about Compound Finance.</a></p>",
             "question4": "Do you have a referral program for Flex?",
             "answer4": "Yes, we do. For every friend you refer to Flex, you’ll get 10% of their interest earnings for the first year (up to a maximum of $1,000,000). For more details, <a href=\"/referral\">visit your Referrals page.</a>",
             "question5": "Can I withdraw anytime?",

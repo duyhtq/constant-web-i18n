@@ -147,7 +147,7 @@
             },
             "yt": {
                 "title": "Youtube",
-                "link": "https://www.youtube.com/channel/UCAPR7eWI41ADSGtCEroUeNw"
+                "link": "https://www.youtube.com/channel/UCedaWJPf9sgsy5JajmqBAtg"
             },
             "md": {
                 "title": "Medium",
@@ -2077,11 +2077,11 @@
                 "answer5": "We will notify you three times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, we’ll create a sell order to repay the investor. The final price might differ depending on the point of sale, but we’ll always try to get you the best price possible. Any difference will be refunded to you. Borrowers will receive notifications at 125%, 120% and 115%, so they can choose to repay early to avoid liquidation, or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.",
                 "question6": "Can I repay early?",
                 "answer6": "\n          <p>If you'd like to pay back your loan before 75% of the term is up, that's absolutely fine. You simply have to pay interest for the days you are in possession of the loan, and just 50% of the original interest rate for the remaining days of the term.</p>\n          <p>If you'd like to pay back your loan after 75% of the term is up and claim back your collateral, that's also fine, but the interest due on that loan is the full percentage for the entire term.</p>\n        ",
-                "question7": "Can i recall excess if my collateral value increases?",
-                "answer7": "Yes. If the value of your collateral rises during your loan term, you can withdraw the difference. You’ll be able to do this on the site in the next release scheduled for the 25th of June, but in the meantime, our support team is available via telegram, email, and fb chat to assist you manually.",
+                "question7": "Can I recall excess if the value of my collateral increases?",
+                "answer7": "Yes. If the value of your collateral rises during your loan term, you can withdraw the difference from your Accounts page.",
                 "question8": "What is the LTV (Loan to Value) Ratio? Is it always the same?",
-                "answer8": "\n          <p>The LTV ratio for 1 year loans or shorter is 66%. That means we require 150% of the loan value in collateral. For each month after the first year, we require an extra 5% of the loan value in collateral.</p>\n          <p>For example, if you were to request a loan for 15 months, the collateral due would be 150% + (3*5)% = 165% of the loan value in collateral, which brings your LTV ratio to 60.6%.</p>\n        ",
-                "question9": "How do I make repayment?",
+                "answer8": "<p>The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most collateral types have an LTV ratio of 66% for 1 year loans or shorter. That means we require 150% of the loan value in collateral. For each month after the first year, we require an extra 5% of the loan value in collateral.</p>\n          <p>For example, if you were to request a loan for 15 months, the collateral due would be 150% + (3*5)% = 165% of the loan value in collateral, which brings your LTV ratio to 60.6%.</p>\n   ",
+                "question9": "How do I repay my loan?",
                 "answer9": "\n          <p>We’ll deduct your repayment directly from your Constant account balance. Adding funds is easy. You can do one or a combination of the following:</p>\n          <p>1) Transfer USD to one of our US bank accounts</p>\n          <p>2) Send CONST to your Constant Wallet</p>\n          <p>   Or send any one of our supported stablecoins: </p>\n          <p>   USDT/USDC/TUSD/GUSD/PAX/USDS</p>\n          <p>   Your balance will update when funds have been received in your Constant account.</p>",
                 "question10": "What happens if I repay late?",
                 "answer10": "The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due."
@@ -2124,11 +2124,11 @@
             "what": {
                 "whatCaption0": "Set your own rates",
                 "whatCaption1": "Protected by Ethereum",
-                "whatCaption2": "Non-custodial",
+                "whatCaption2": "Secure escrow",
                 "whatCaption3": "No credit scoring",
                 "whatDesc0": "\n<p>Our P2P matching algorithm replaces centralized banks and allows you to tap into true market demand.</p>        ",
-                "whatDesc1": "<p>Your loan agreement is protected by a smart contract that will always run exactly as programmed. </p>\n",
-                "whatDesc2": "\n<p>Constant does not touch your collateral. It is securely stored in an Ethereum smart contract escrow.</p>",
+                "whatDesc1": "<p>Loans secured by Ethereum (ETH) are protected by smart contracts that always run exactly as programmed.</p>\n",
+                "whatDesc2": "\n<p>We use a combination of smart contracts, web wallets, and offline wallets to protect your collateral while ensuring we can return it to you as quickly as possible.</p>",
                 "whatDesc3": "\n<p>No credit scoring or background checks. Get funds instantly, no month-long waiting games for approval.</p>        "
             },
             "howItWorks": {
@@ -2141,7 +2141,7 @@
                 "desc2": "The Constant matching algorithm finds investors that can lend you the money you need at the rates you want.",
                 "step3": "STEP 3",
                 "title3": "3. Get cash to spend",
-                "desc3": "Once you’ve found a match, you’ll receive the loan in your account. Collateral is stored safely in a smart contract escrow and will be automatically returned when you repay."
+                "desc3": "Once you’ve found a match, you’ll receive the loan in your account. Collateral is securely escrowed and will be automatically returned when you repay."
             },
             "reference": "\n        <div name=\"ref-container\">\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Interest rate:</span>\n            <span name=\"ref-value\">{intRate}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Collateral value:</span>\n            <span name=\"ref-value\">{colValue}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Collateral return:</span>\n            <span name=\"ref-value\">{colReturn}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Default threshold:</span>\n            <span name=\"ref-value\">{defThreshold}</span>\n          </div>",
             "transaction": {
@@ -3026,7 +3026,7 @@
         "info": {
             "title": "Send money to anyone, anywhere.",
             "desc1": "All you need is an internet connection to make as many transfers as you like - any amount, anywhere in the world. Send money home, pay your international clients, transfer salaries to your distributed team. With a single click.",
-            "desc2": "Enjoy transparent, low cost pricing. Withdrawals to local bank accounts are friendly - at a nominal rate of 0.25% (never more than $35)."
+            "desc2": "Withdrawals to local bank accounts are friendly. No fees."
         }
     },
     "transferCrypto": {

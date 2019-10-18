@@ -63,11 +63,11 @@
     "footer": {
         "cta": {
             "type1": {
-                "title": "<h3>Start earning interest.</h3>",
+                "title": "<h3>Start earning interest</h3>",
                 "btn": "INVEST NOW"
             },
             "type2": {
-                "title": "<h3>Get a global USD account.</h3>",
+                "title": "<h3>Get a global USD account</h3>",
                 "btn": "Sign up now"
             },
             "type3": {
@@ -81,6 +81,10 @@
             "type5": {
                 "title": "<h3>Send money anywhere </h3>",
                 "btn": "Make a transfer"
+            },
+            "type6": {
+                "title": "<h3>Open an account and grow your money</h3>",
+                "btn": "Open an account"
             }
         },
         "company": {
@@ -139,23 +143,23 @@
         "social": {
             "fb": {
                 "title": "Facebook",
-                "link": "https://www.facebook.com/constantbanking"
+                "link": "https://www.facebook.com/constantp2p"
             },
             "tw": {
                 "title": "Twitter",
-                "link": "https://twitter.com/constantbanking"
+                "link": "https://twitter.com/constantp2p"
             },
             "yt": {
                 "title": "Youtube",
-                "link": "https://www.youtube.com/channel/UCAPR7eWI41ADSGtCEroUeNw"
+                "link": "https://www.youtube.com/channel/UCedaWJPf9sgsy5JajmqBAtg"
             },
             "md": {
                 "title": "Medium",
-                "link": "https://medium.com/@constantbanking"
+                "link": "https://medium.com/@constantp2p"
             },
             "tele": {
                 "title": "Constant Telegram",
-                "link": "https://t.me/constantbanking"
+                "link": "https://t.me/constantp2p"
             }
         }
     },
@@ -330,7 +334,8 @@
             "systemError": "System error",
             "notEnoughConstantRepay": "Your Constant balance is not enough to pay this matched",
             "invalidStatus": "This order has been processed. Please refresh the page to see update!",
-            "need_kyc": "For your security, please verify your identity before making a investment."
+            "need_kyc": "For your security, please verify your identity before making a investment.",
+            "external_api_error": "You send so many request, please wait and come back later"
         },
         "withdrawGreaterThan": "The minimum withdrawal amount is {min}",
         "withdrawLessThanOrEqual": "The maximum withdrawal amount is {max}",
@@ -382,6 +387,7 @@
             "loanOrders": "Loan Orders",
             "myOrders": "Deposits and withdrawals",
             "deposits": "Deposits",
+            "topupHistory": "Topup History",
             "withdraws": "Withdraws",
             "localHistory": "Transfers and interest earnings",
             "transfers": "Transfers",
@@ -459,6 +465,7 @@
             "btnBack": "Back",
             "titleExample": "Before uploading, please crop the image of your ID to make the border as small as possible.",
             "titleExampleClick": "Click here to see the examples.",
+            "uploadImageClick": "Click here to upload your images.",
             "correct": "Correct",
             "incorrect": "Incorrect"
         },
@@ -484,7 +491,8 @@
                 "pending": "Pending",
                 "cancelled": "Cancelled",
                 "system_cancelled": "System Cancelled",
-                "system_rejected": "System Rejected"
+                "system_rejected": "System Rejected",
+                "transferring_fiat": "Transferring Fiat"
             },
             "confirmMess": "You will pay {amount} {unit} for this payment.",
             "confirm": {
@@ -796,7 +804,11 @@
             "noHistoryData": "Get Constant here",
             "fee": "fee",
             "withdraw": "Withdraw",
+            "topup": "Top up",
             "loadMore": "Load more",
+            "loanId": "Loan ID",
+            "loanDate": "Loan date",
+            "loanStatus": "Loan status",
             "status": "Status",
             "note": "Note",
             "total": "Total",
@@ -869,6 +881,21 @@
                 "13": "Waiting Approving",
                 "14": "Transfering"
             },
+            "topUpStatus": {
+                "0": "Pending",
+                "1": "Done",
+                "2": "Failed",
+                "3": "Expired",
+                "4": "Topup Pending",
+                "5": "Cancelled",
+                "6": "Pending",
+                "7": "Pending",
+                "8": "Pending",
+                "11": "Cancelled",
+                "12": "Pending",
+                "13": "Pending",
+                "14": "Pending"
+            },
             "dialog": {
                 "cancel": {
                     "title": "Cancel Order",
@@ -903,7 +930,8 @@
                     "transferredMoneyToAgentInvest": "Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.",
                     "done": "Successful",
                     "inProgress": "Order in progress",
-                    "approving": "Waiting for admin approve"
+                    "approving": "Waiting for admin approve",
+                    "transferring_fiat": "Transferring Fiat"
                 }
             },
             "bankInfo": {
@@ -1179,6 +1207,8 @@
                     "cancelled": "Closed",
                     "transferred_fiat": "Deposit pending",
                     "partially_cancelled": "Partially cancelled",
+                    "approving": "Approving",
+                    "transferring_fiat": "Deposit pending",
                     "": ""
                 },
                 "interestInfo": {
@@ -1225,6 +1255,8 @@
                 "saving": "Invest now",
                 "autoTopupDesc": "Automatically trigger a top-up from your balance when the collateral value falls to {LiqPer}%.",
                 "autoTopup": "Auto top up",
+                "autoRenew": "Auto reinvest",
+                "autoRenewDesc": "Tired of manual labour? Turn this on to automatically reinvest at the same interest rate & term!",
                 "dialog": {
                     "autoTopup": {
                         "messageConfirm": {
@@ -1325,6 +1357,22 @@
                         "paySuccess": "Payment made. Thanks!",
                         "notEnoughConstantRepay": "Your current balance is ${balance}. Please deposit ${requireAmount} to cover the amount due, then click repay again. ",
                         "makeADeposit": "Make a deposit"
+                    },
+                    "autoRenewInvestment": {
+                        "messageConfirm": {
+                            "true": "Are you sure you want to disable Auto Reinvest? With Auto Reinvest, your money earns interest around the clock, with no downtime, and no extra effort from you.",
+                            "false": "Auto Reinvest enabled. At maturity, your principal will be automatically placed in an order at the same interest rate and term."
+                        },
+                        "autoRenewInvestmentSuccess": {
+                            "true": "Disabled Auto Reinvest successfully",
+                            "false": "Enabled Auto Reinvest successfully"
+                        },
+                        "autoRenewInvestmentFailed": {
+                            "true": "Failed to disable Auto Reinvest",
+                            "false": "Failed to enable Auto Reinvest"
+                        },
+                        "confirm": "Yes",
+                        "cancel": "No"
                     }
                 },
                 "confirm": {
@@ -1369,6 +1417,7 @@
                 "investMore": "Invest More",
                 "depositFrom": {
                     "title": "Make more deposit for your collateral",
+                    "collateralRecommended": "To restore your collateral value to the recommended {LvtPer}%, please top up {amount} {symbol}. <br>You are free to top up any amount you wish.",
                     "amount": "Amount",
                     "requiredAmount": "Amount is required!",
                     "amountDesc": "How much do you want to deposit?",
@@ -1450,6 +1499,11 @@
         "bankInfo": "Bank Information",
         "settings": "Settings",
         "changeEmailPassword": "Email & Password",
+        "about": "About",
+        "privacy": "Privacy Policy",
+        "prices": "Pricing & Service times",
+        "blog": "Blog",
+        "accountActivities": "Account Activity",
         "login": {
             "popupTitle": "Welcome to Constant.",
             "title": "Login to your account",
@@ -1534,6 +1588,16 @@
             "agreementAction": "User Agreement and Privacy Policy.",
             "registerFailed": "Failed while creating your account, please try again",
             "referrerReferralCode": "Your referrer's referral code: {code}"
+        },
+        "userLogin": {
+            "balance": "Balance",
+            "star": "Star",
+            "deposit": "Deposit",
+            "withdrawFiat": "Withdraw to Fiat",
+            "withdrawCrypto": "Withdraw to Crypto",
+            "transfer": "Transfer",
+            "history": "History",
+            "shareAndEarn": "Share & Earn $"
         }
     },
     "landingPage": {
@@ -2007,7 +2071,11 @@
             "goHistory": "Go to Orders and Transactions",
             "components": {
                 "orderInfo": {
-                    "title": "Your transfer confirmation"
+                    "title": "Transfer confirmation",
+                    "desc": " ",
+                    "cryptoAddress": "To crypto address",
+                    "email": "To email",
+                    "amount": "Amount"
                 }
             },
             "howItWorks": "How it works",
@@ -2055,7 +2123,7 @@
             "goHistory": "Go to Open Orders",
             "components": {
                 "orderInfo": {
-                    "title": "Your transfer confirmation"
+                    "title": "Transfer confirmation"
                 }
             },
             "howItWorks": "How it works",
@@ -2833,28 +2901,8 @@
         "s4": "Borrowed",
         "s5": "Repaid"
     },
-    "exchangeInputBuyForm": {
-        "minUsdRequired": "Please enter an amount larger than 0.01 USD",
-        "minVndRequired": "Please enter an amount larger than 10,000 VND",
-        "fiatAmountInputLabel": "Deposit amount",
-        "currencyDropdownLabel": "Your currency",
-        "amountResultLabel": "According to the markets today, that is:",
-        "buyBtn": "INVEST {fiatAmount} {fiatCurrency}",
-        "investNow": "INVEST NOW",
-        "amountTooSmall": "Your amount is too small, please try a larger amount",
-        "noAgentAvaiable": "Please be patient with us, we’re trying to keep up. Try a smaller amount, or try again later.",
-        "getAmountFailed": "Failed while getting amount, please try again",
-        "getCurrencyListFailed": "Failed while getting supported currencies",
-        "loading": "Loading...",
-        "amountMustBeLargerThan": "Your amount must be larger than {min} {fiatCurrency}",
-        "howMuchDoYouWantToDeposit": "HOW MUCH DO YOU WANT TO INVEST? ",
-        "termLabel": "Pick your investment option",
-        "fundsTransferTypeLabel": "Transfer type",
-        "bankAccountNameLabel": "Bank account name",
-        "bankAccountNumberLabel": "Bank account number",
-        "routingNumberLabel": "Routing number"
-    },
     "exchangeInputDepositForm": {
+        "minAmountRequired": "Please enter an amount larger than {amount} {currency}",
         "minUsdRequired": "Please enter an amount larger than 0.01 USD",
         "minVndRequired": "Please enter an amount larger than 10,000 VND",
         "fiatAmountInputLabel": "Deposit amount",
@@ -2911,7 +2959,8 @@
         "withdrawSuccessful": "Your withdrawal was completed successfully.",
         "countryNotSupport": "Your country is not supported at the moment. Our support team will get in touch with you via email.",
         "validateMaxInput": "Please make sure your balance is sufficient.",
-        "validateMaxInputBalanceZero": "Please make sure your balance is sufficient."
+        "validateMaxInputBalanceZero": "Please make sure your balance is sufficient.",
+        "suggestOtherPayment": "Minimum withdrawal by bank transfer is ${minDirect}. Please use Zelle or PayPal instead (it's much faster, too)."
     },
     "exchangeInputBuyTrialForm": {
         "title": "<h6>We’re giving you a 1000 USD free initial investment. Just so you can see how it works. At the end of the trial, you keep all the returns.</h6>",
@@ -2953,7 +3002,8 @@
         "makeDirectOrderFailed": "Failed while creating your order",
         "makeAchDirectOrderFailed": "Please check your bank details are in order and try again.",
         "makeTrialOrderSuccess": "Your order was created successfully",
-        "makeTrialOrderFailed": "Failed while creating your order"
+        "makeTrialOrderFailed": "Failed while creating your order",
+        "validation_error": "Ensure that there are no more than 10 digits before the decimal point."
     },
     "send": {
         "makeLocalOrderSuccess": "Your order was created successfully",
@@ -3038,6 +3088,7 @@
     },
     "deposit": {
         "contentHtml": "\n      <h6>Grow your wealth effortlessly</h6>\n      <h2>Lock in a great rate without</h2>\n      <h2>locking in your money.</h2>\n      <br />\n      <h6>{interest}% APY. Unlimited withdrawals, as often as you like. 24/7 customer service. No fees. No minimum deposit. No penalty. There’s never been a savings account this good.</h6>\n      <br />\n    ",
+        "learnMore": "Learn more here",
         "title": "Your global USD bank account.",
         "availableInVn": "Available now in Vietnam.",
         "subTitle": {
@@ -3333,7 +3384,8 @@
             "vn": "+84 36 656 2949",
             "us": "+1 844 201 7242",
             "hk": "+85 258 01 01 68"
-        }
+        },
+        "learnMore": "Learn more here"
     },
     "ours": {
         "title": "Choose your own freedom.",
@@ -3554,7 +3606,22 @@
                 "bankChosenMessage": "We have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.",
                 "makeAnotherButton": "Make another investment",
                 "updateBalanceNoteInWorkingTime": "Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience.",
-                "updateBalanceNote": "Please note it might take <strong>up to 1 business day</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience."
+                "updateBalanceNote": "Please note it might take <strong>up to 1 business day</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience.",
+                "autopayment": "Direct debit",
+                "btnAutoPayment": "Choose your bank",
+                "autopayment_message": "Auto payment message",
+                "autopaymentMsgSuccess": "Autopay success",
+                "autopaymentMsgFailed": "Autopay failed",
+                "deletePaymentItemMsgSuccess": "Delete Success",
+                "deletePaymentItemMsgFailed": "Delete Failed",
+                "btnSubmit": "Submit",
+                "btnRemove": "Remove",
+                "btnAdd": "Add",
+                "selectExistingBank": "Select existing bank or add a new bank",
+                "loginTitle": "Log in directly to your bank account",
+                "selectAccountName": "Select account name",
+                "selectAccountType": "Select account type",
+                "questionTitle": "Almost there! Just prove you're not a robot."
             }
         },
         "whatCaption0": "Set your own rates",
@@ -3732,7 +3799,9 @@
             "title": "Invite friends via email",
             "placeholder": "Enter email address, seperate by commas",
             "btn": "Invite",
-            "sendInvitationsSuccess": "Send Invitations Successfully!"
+            "sendInvitationsSuccess": "Send Invitations Successfully!",
+            "sendInvitationsFail": "Send Invitations Failed!",
+            "maximum_invitation_email": "Maximun invitation emails"
         },
         "faqs": {
             "question1": "What are the supported cryptocurrencies?",
@@ -3980,7 +4049,7 @@
             "fund": "Funds",
             "point": "STAR",
             "flex": "FLEX",
-            "statusDesc": "There are 3 steps to earn STAR. 1/3 your friend signs up. 2/3 your friend invests or borrows. 3/3 your friend has invested or borrowed over $1000 and your STAR is in your account.",
+            "statusDesc": "<p>There are 3 steps to earn STAR.</p>\n                  <p>1/3 your friend signs up.</p>\n                  <p>2/3 your friend invests or borrows $1,000 for at least 30 days.</p>\n                  <p>3/3 You receive STAR immediately after the first 30 days of your friend's term.</p>",
             "title": "Invited friends"
         },
         "history": {
@@ -4025,7 +4094,7 @@
     "menuMobile": {
         "btnSignIn": "Sign in",
         "account": "Account",
-        "btnDeposit": "Flex",
+        "btnDeposit": "Deposit",
         "btnReferral": "<div class=\"textLeft\"><small>Share & Earn</small><div>Money</div></div>",
         "btnTransfer": "Transfer",
         "btnWithdrawCrypto": "<div class=\"textLeft\"><small>withdraw to</small><div>Crypto</div></div>",
@@ -4046,6 +4115,97 @@
         "interest": "Interest",
         "wallet": "Wallet",
         "team": "The Team",
-        "security": "Security"
+        "security": "Security",
+        "signout": "Sign out"
+    },
+    "airdrop": {
+        "title": "Earn more and pay less with STARdrop",
+        "subTitle": "We’re giving away <strong>10,000 STAR tokens</strong> that unlock bonus or discounted interest on our lending platform. <br/>To claim yours – worth up to 3% bonus or discounted interest – simply tell people about us.",
+        "cta": {
+            "text": "Launch the STARdrop Telegram bot to earn your first STAR.",
+            "action": "Say hello to STARbot",
+            "steps": {
+                "title": "Claim up to 3 STAR by completing the following steps:",
+                "step1": "Launch STARbot",
+                "step2": "Share us on social media",
+                "step3": "Refer friends and family"
+            }
+        },
+        "howItWorks": "How does STARdrop work?",
+        "compaignEndDesc": "The campaign ends once all 10,000 STARs are given away or on October 31 2019, whichever is soonest.",
+        "faqsTitle": "FAQs",
+        "faqs": {
+            "question1": "What is Constant peer-to-peer lending?",
+            "answer1": "\n        <p>Unlike bank loans, P2P lending works by matching investors and borrowers directly. Since there are no greedy middlemen getting in the way, you set your own terms and rates, giving you unparalleled control of your finances. So whether you’re looking for a low-interest loan or better returns on your investment, we’ll match you with someone who’d love to do business with you.</p>\n       ",
+            "question2": "What is STAR?",
+            "answer2": "\n        <p>STAR is an ERC20 token which can be redeemed for 1% bonus or discounted interest, or sent to someone as a gift. 1 STAR unlocks either +1% APR on an investment or -1% APR on a loan. You can use up to 3 STAR at one time.</p>\n        <p>The great news is all STAR rewards apply to the whole term. To redeem STAR, simply go to your <a href=\"/accounts\" class=\"underline bold\">Accounts</a> page and select an active loan or investment, and then choose how many to redeem.</p>\n      ",
+            "question3": "Can I trade STAR on exchanges?",
+            "answer3": "\n        <p>No, not yet. STAR is only usable on the Constant platform but can still be transferred to other ERC20 wallets. Check out the smart contract on <a href=\"https://etherscan.io/token/0x9027ba8450b1c9bdfad6506190803873391e8e6f\" class=\"underline bold\" target=\"_blank\">Etherscan</a>.</p>\n      ",
+            "question4": "What makes Constant different from other P2P lending platforms?",
+            "answer4": "\n        <p>Constant is the first fully secured P2P lending platform. All investor funds are 150% backed by cryptocurrency collateral. Borrower collateral is stored safely in escrow, which means no one can touch it until it is transferred back to the borrower after repayment.</p>\n        <p>Unlike other platforms, Constant also allows users to set their own interest rates and terms. Ethereum powered smart contracts automate the loan agreement and always run exactly as programmed – ensuring both investors and borrowers are protected.</p>\n      ",
+            "question5": "Who can participate in STARdrop?",
+            "answer5": "\n        <p>Anyone can participate, as long as you have an internet connection (to use our website) and sign up for an account on Constant to receive your reward in STAR.</p>\n      ",
+            "question6": "When does STARdrop end?",
+            "answer6": "\n        <p>Either on October 31 2019 or when all 10,000 STAR have been rewarded.</p>\n      ",
+            "question7": "How can I track STAR rewards?",
+            "answer7": "\n        <p>At the end of the campaign, we’ll publish the results for your reference. In the meantime, you can ask for help from our admins on <a href=\"https://t.me/constantcommunity\" class=\"underline bold\" target=\"_blank\">the STARdrop Telegram group</a>.</p>\n      "
+        }
+    },
+    "seo": {
+        "homepage": {
+            "title": "Secured peer-to-peer lending platform for cryptocurrency bitcoin loan",
+            "keyword": "lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online",
+            "description": "Constant is the P2P lending platform built on P2P technology with the fastest growth rate in Asia. Lend stablecoin and fiat with your own terms and interest rates or borrow money using cryptocurrency as collateral in this defi product.Fully secured by borrower collateral and smart contracts"
+        },
+        "invest": {
+            "title": "Lend money with best rate in the market, secured by collateral",
+            "keyword": "constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance",
+            "description": "Constant P2P lending platform accepts all types of fiat and stablecoin as investment. Earn minimum 10% on any amount. All investments are secured by FDIC insurance and borrower collateral"
+        },
+        "borrow": {
+            "title": "Bitcoin loan instantly without selling your token. Support all crypto",
+            "keyword": "bitcoin loan, ethereum, margin trading, margin borrowing, p2p lending, cryptocurrency, constant project, constant p2p",
+            "description": "Instant bitcoin loans using cryptocurrency as collateral without selling it. Support 100+ tokens for margin trading and lending. No fee, protected by smart contract. Get your cryptocurrency-backed loans to pay your expense or gain advantages in trading"
+        },
+        "proLending": {
+            "title": "Lend money with best rate in the market, secured by collateral",
+            "keyword": "constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance",
+            "description": "Constant P2P lending platform accepts all types of fiat and stablecoin as investment. Earn minimum 10% on any amount. All investments are secured by FDIC insurance and borrower collateral"
+        },
+        "flex": {
+            "title": "Online saving platform for anyone. Earn passive income easily",
+            "keyword": "constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance, passive income, saving account, online saving platform",
+            "description": "Constant offers best rate in the market on any amount, withdraw anytime. Earn your passive income with the highest interest in the market "
+        },
+        "withdraw": {
+            "title": "Secured peer-to-peer lending platform for cryptocurrency bitcoin loan",
+            "keyword": "lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online",
+            "description": "Constant is the P2P lending platform built on P2P technology with the fastest growth rate in Asia. Lend stablecoin and fiat with your own terms and interest rates or borrow money using cryptocurrency as collateral in this defi product.Fully secured by borrower collateral and smart contracts"
+        },
+        "sendCrypto": {
+            "title": "Secured peer-to-peer lending platform for cryptocurrency bitcoin loan",
+            "keyword": "lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online",
+            "description": "Constant is the P2P lending platform built on P2P technology with the fastest growth rate in Asia. Lend stablecoin and fiat with your own terms and interest rates or borrow money using cryptocurrency as collateral in this defi product.Fully secured by borrower collateral and smart contracts"
+        },
+        "aboutUS": {
+            "title": "Secured peer-to-peer lending platform for cryptocurrency bitcoin loan",
+            "keyword": "lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online",
+            "description": "Constant is the P2P lending platform built on P2P technology with the fastest growth rate in Asia. Lend stablecoin and fiat with your own terms and interest rates or borrow money using cryptocurrency as collateral in this defi product.Fully secured by borrower collateral and smart contracts"
+        },
+        "pricing": {
+            "title": "Secured peer-to-peer lending platform for cryptocurrency bitcoin loan",
+            "keyword": "lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online",
+            "description": "Constant is the P2P lending platform built on P2P technology with the fastest growth rate in Asia. Lend stablecoin and fiat with your own terms and interest rates or borrow money using cryptocurrency as collateral in this defi product.Fully secured by borrower collateral and smart contracts"
+        },
+        "transfer": {
+            "title": "Secured peer-to-peer lending platform for cryptocurrency bitcoin loan",
+            "keyword": "lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online",
+            "description": "Constant is the P2P lending platform built on P2P technology with the fastest growth rate in Asia. Lend stablecoin and fiat with your own terms and interest rates or borrow money using cryptocurrency as collateral in this defi product.Fully secured by borrower collateral and smart contracts"
+        },
+        "referral": {
+            "title": "Secured peer-to-peer lending platform for cryptocurrency bitcoin loan",
+            "keyword": "lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online",
+            "description": "Constant is the P2P lending platform built on P2P technology with the fastest growth rate in Asia. Lend stablecoin and fiat with your own terms and interest rates or borrow money using cryptocurrency as collateral in this defi product.Fully secured by borrower collateral and smart contracts"
+        }
     }
 }

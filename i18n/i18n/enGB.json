@@ -1245,6 +1245,7 @@
                 "transfer": "Transfer",
                 "batchtransfer": "Transfer to multiple people",
                 "deposit": "Make a deposit",
+                "balanceCoin": "Balance Coin",
                 "depositMatched": "Deposit",
                 "cancelDepositMatched": "Cancel Deposit",
                 "withdrawDesc": "Withdraw funds to your bank account or wallet address.",
@@ -3145,7 +3146,7 @@
         }
     },
     "yourSaving": {
-        "hello": "\n      <h5>Hello <strong>{name}</strong>. Let's see how your money is doing today.</h5>\n    ",
+        "hello": "\n      <strong>Hello {name}</strong>.<br/>Let's see how your money is doing today.\n    ",
         "verifyKyc": "Please verify your ID to start your free trial."
     },
     "borrow": {
@@ -4207,5 +4208,46 @@
             "keyword": "lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online",
             "description": "Constant is the P2P lending platform built on P2P technology with the fastest growth rate in Asia. Lend stablecoin and fiat with your own terms and interest rates or borrow money using cryptocurrency as collateral in this defi product.Fully secured by borrower collateral and smart contracts"
         }
+    },
+    "ourPress": {
+        "press": {
+            "press1": {
+                "name": "Hacker Noon",
+                "desc": "<p>The traditional loan agreement has been replaced by an unstoppable Ethereum smart contract without any possibility of downtime, fraud, or third-party interference. Fully-secured, blockchain-enabled P2P lending is our contribution to a bankless banking system.</p>"
+            },
+            "press2": {
+                "name": "Coin98",
+                "desc": "<p>Chắc hẳn sẽ có những lúc chúng ta rơi vào hoàn cảnh khi đang HODL một đồng coin nào đó, nhưng lại thấy 1 cơ hội khác trong khi quỹ vốn thì đã hết. Constant sẽ giúp anh em huy động được một lượng cash (tiền mặt) nhất định để vào được kèo mới nhưng không phải cash out (bán) đồng coin đang HODL</p>"
+            },
+            "press3": {
+                "name": "Techworm",
+                "desc": "<p>The best thing about Constant, however, is the security the lending platform has in place. Every loan is fully secured and backed in multiple ways. While on loan it’s protected by borrower collateral, and while waiting to be matched it’s protected by a $130M insurance policy.</p>"
+            },
+            "press4": {
+                "name": "Blockonomi",
+                "desc": "<p>Constant has created a platform that cuts banks out of the lending equation and allows anyone in the world to create loans on whatever terms they like. This is a big shift away from the established lending system, and it could be a big benefit for both borrowers and lenders</p>"
+            },
+            "press5": {
+                "name": "Zero Hedge",
+                "desc": "<p>Lenders can choose their terms, no credit check, and no nonsense – and find borrowers. Programming a system like this using the US banking system, would be expensive, cumbersome, time consuming, and who knows what it might look like after all the regulatory approvals.</p>"
+            },
+            "press6": {
+                "name": "ZyCrypto",
+                "desc": "<p>Constant is different in that users can be confident in the fact that each transaction is fully secured. Every loan is collateral backed. Investor funds are held in escrow accounts when not on loan. This level of security sets Constant apart from other platforms.</p>"
+            }
+        },
+        "desc": {
+            "title": "In the News",
+            "content": "We’re proud to feature in many prominent finance and technology publications. From news to reviews, find out what the journalists, pundits, and experts have to say about the Constant peer-to-peer lending platform."
+        }
+    },
+    "collateralBalance": {
+        "balance": "Balance",
+        "coin": "Coin",
+        "name": "Name",
+        "totalBalance": "Total Balance",
+        "availableBalance": "Available Balance",
+        "action": "Action",
+        "withdraw": "Withdraw"
     }
 }

@@ -168,7 +168,8 @@
         "subTitle": "<h2>Invest or borrow<br> at rates you choose.</h2>",
         "desc": "Experience fully secured, truly P2P lending. Loans 150% secured by crypto collateral and protected by Ethereum smart contracts.",
         "invest": "Invest",
-        "borrow": "Borrow"
+        "borrow": "Borrow",
+        "staking": "Staking <sup>NEW</sup>"
     },
     "headerBar": {
         "home": "Home",
@@ -177,8 +178,9 @@
         "myAccount": "My Account",
         "deposit": "Deposit",
         "lending": "Lending",
-        "flex": "High-Yield Savings <sup>NEW</sup>",
-        "flexMobile": "Savings <sup>NEW</sup>",
+        "flex": "High-Yield Savings",
+        "flexMobile": "Savings",
+        "staking": "Staking <sup>NEW</sup>",
         "transfer": "Transfer",
         "send": "Send",
         "banking": "Bank",
@@ -416,7 +418,8 @@
             "transferOrders": "Transfer Orders",
             "openOrders": "Open Orders",
             "interests": "Interests",
-            "accountActivities": "Account Activity"
+            "accountActivities": "Account Activity",
+            "staking": "Staking history"
         },
         "wallet": {
             "title": "This is your wallet address you could send Constant to",
@@ -1489,6 +1492,26 @@
                     "timeAt": "at"
                 }
             }
+        },
+        "staking": {
+            "balance": "{name} balance: {balance} {symbol} and balance reward: {reward} {symbol}",
+            "matched": "Matched: {amount} {symbol}",
+            "withdraw": "Withdraw",
+            "withdrawReward": "Withdraw reward",
+            "status": {
+                "0": "Pending",
+                "1": "Done",
+                "2": "Received",
+                "3": "Expired",
+                "4": "Allocating",
+                "5": "Allocated",
+                "6": "Voting",
+                "7": "Voted",
+                "8": "Failed",
+                "9": "UnVoting",
+                "10": "UnVoted",
+                "11": "Transfering"
+            }
         }
     },
     "COIN_EXCHANGE_LP_FAQ_TITLE": "Frequently Asked Questions",
@@ -2178,6 +2201,10 @@
                 "collateralNoteFee": "Fee: {fee} {currency} (1%)",
                 "collateralNoteTotal": "Total loan received: {total} {currency}",
                 "collateralNoteDGXExtraFees": "Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.",
+                "usingStaking": "Pay less on your loan through staking",
+                "usingStakingMobile": "Pay less with staking",
+                "usingStakingDesc": "Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.",
+                "stakingMinAmount": "stake amount must be great than {minVal} {currency}",
                 "collateralNoteMatch": "Estimated time to match: {hours} hours",
                 "collateralNoteMatchInWorkingTime": "Estimated time to match 1 hour",
                 "toolTipCollateral": "\n          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.\n        ",
@@ -4072,7 +4099,8 @@
             "email": "Email",
             "emailPlaceholder": "Please enter your email here",
             "successMsg": "Success! You transferred STAR.",
-            "failedMsg": "Something went wrong! Please try again"
+            "failedMsg": "Something went wrong! Please try again",
+            "not_enough_balance": "Not enough balance"
         },
         "flex": {
             "balanceTitle": "YOU CURRENTLY HAVE",
@@ -4211,6 +4239,127 @@
             "title": "Secured peer-to-peer lending platform for cryptocurrency bitcoin loan",
             "keyword": "lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online",
             "description": "Constant is the P2P lending platform built on P2P technology with the fastest growth rate in Asia. Lend stablecoin and fiat with your own terms and interest rates or borrow money using cryptocurrency as collateral in this defi product.Fully secured by borrower collateral and smart contracts"
+        },
+        "staking": {
+            "title": "Secured peer-to-peer lending platform for cryptocurrency bitcoin loan",
+            "keyword": "lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online",
+            "description": "Constant is the P2P lending platform built on P2P technology with the fastest growth rate in Asia. Lend stablecoin and fiat with your own terms and interest rates or borrow money using cryptocurrency as collateral in this defi product.Fully secured by borrower collateral and smart contracts"
+        }
+    },
+    "staking": {
+        "todayRate": "Today’s rate.",
+        "todayRateValues": "{rate}% APR",
+        "howMuchDoYouWantToDeposit": "How much do you want to staking?",
+        "depositNow": "Start staking?",
+        "depositWithAmount": "Start staking {amount} {currency}",
+        "validateMinAmountError": "You can't input amount less than {amount} {currency}",
+        "maxValueAmount": "You can't input amount greater than {max}",
+        "requiredAmount": "Amount is required",
+        "makeStakingSuccess": "Your staking was created successfully",
+        "makeStakingFailed": "Something went wrong. Please try again.",
+        "cancel": "Cancel",
+        "starStaking": "Create staking",
+        "stakingFromTitle": "Start staking",
+        "contentHtml": "\n        <h6>Stake and earn</h6>\n        <h2>Get up to {reward}% APR</h2>\n        <h2>on your cryptocurrencies.</h2>\n        <br />\n        <h6>Join our masternode pool for up to {reward}% APR. Interest paid every 30 minutes. No minimum stake. No fees. Withdraw anytime. Staking has never been this easy.</h6>\n        <br />\n    ",
+        "withdrawFrom": {
+            "unStaking": {
+                "title": "Un-staking",
+                "amount": "Amount",
+                "amountDesc": "How much do you want to un-taking?",
+                "address": "Your {name} wallet address?",
+                "addressDesc": "Receiving crypto wallet address",
+                "maxAmount": "Your amount must be less than {maxAmount} {symbol}.",
+                "withdrawFailed": "Something went wrong. Please try again.",
+                "withdrawSuccess": "Your un-taking was completed successfully."
+            },
+            "withdraw": {
+                "title": "Withdraw your reward",
+                "amount": "Amount",
+                "amountDesc": "How much do you want to withdraw?",
+                "address": "Your {name} wallet address?",
+                "addressDesc": "Receiving crypto wallet address",
+                "maxAmount": "Your amount must be less than {maxAmount} {symbol}.",
+                "withdrawFailed": "Something went wrong. Please try again.",
+                "withdrawSuccess": "Your withdrawal was completed successfully."
+            },
+            "submit": "Submit",
+            "cancel": "Cancel"
+        },
+        "confirmation": {
+            "thankYou": "Almost there",
+            "cryptoThankMsg": "Simply transfer {amount} {currency} to the wallet address below to begin staking.",
+            "stakingAmount": "Staking amount",
+            "cryptoAddress": "{currency} address",
+            "minuteWindowDescription": "For the sake of security, your staking request will time-out after 24 hours. If you need a little longer, just re-enter the amount you would like to stake when you’re ready.",
+            "minuteWindow": "Please complete your transfer within 24 hours."
+        },
+        "learnMore": "For more information, check out our FAQ.",
+        "faqs": {
+            "1": {
+                "question": "What is a masternode?",
+                "answer": "A masternode is a member of a blockchain network that stores an entire copy of the blockchain on their computer at all times. They’re vital to maintaining and securing a blockchain network. To qualify as a masternode, you must first stake a large amount of a blockchain’s native cryptocurrency, which incentivizes the right behavior and discourages fraud. In return for helping maintain the network, masternodes receive a cryptocurrency reward."
+            },
+            "2": {
+                "question": "What is a masternode pool?",
+                "answer": "Rather than one person staking the minimum amount to become a masternode, a masternode pool crowdsources the cryptocurrency from multiple people on the network. This makes it easier to become a masternode for people without the minimum stake, and distributes the rewards among a greater number of people. As a masternode pool further decentralizes a network, it could also be argued it is more secure and democratic."
+            },
+            "3": {
+                "question": "Will the staking rewards ever change?",
+                "answer": "The interest you earn for staking in the masternode pool depends on the blockchain. It’ll be fixed for the beginning of your staking term, but might change during your term or the next time you stake. We’ll make it clear just how much you’ll earn through our masternode pool before you send your cryptocurrency."
+            },
+            "4": {
+                "question": "Which cryptocurrencies do you support?",
+                "answer": "Our first masternode pool will be for TomoChain. You’ll be able to stake TOMO for a reward of {reward}%. We’ll add other masternode pools in time. "
+            },
+            "5": {
+                "question": "Where is my cryptocurrency stored?",
+                "answer": "Like all masternodes, your cryptocurrency is stored in a smart contract escrow on the blockchain. Constant doesn’t take custody of your cryptocurrency. You can verify your stake at any time using your cryptocurrency’s blockchain explorer."
+            },
+            "6": {
+                "question": "Can I withdraw my stake at anytime?",
+                "answer": "Yes, you can withdraw your stake and earned interest at any time. However, to avoid network disruption, withdrawing from a masternode is not instant. Actual withdrawal times vary by blockchain. For TOMO, for example, withdrawals will take two days. As we add more cryptocurrencies to the masternode pool we’ll advise withdrawal times for each one."
+            },
+            "7": {
+                "question": "How is interest paid?",
+                "answer": "Interest is paid directly into your Constant account every 30 minutes. You’ll receive interest in the same cryptocurrency as the one you stake. For example, if you’re staking TOMO, you’ll earn TOMO interest. This is common across multiple blockchains."
+            },
+            "8": {
+                "question": "Can I stake using loan collateral?",
+                "answer": "Yes. If you’re borrowing against your collateral through our platform, you can offset the staking rewards against the cost of the loan. Exactly how much you can offset depends on your collateral, the staking rewards, and the duration of your staking and borrowing term. We’ll determine this mathematically and give you a revised rate before you begin staking."
+            }
+        },
+        "howItWorks": {
+            "1": {
+                "title": "1. Choose your crypto",
+                "desc": "Rewards vary by blockchain, so select a masternode pool that best fits your portfolio and investment goals."
+            },
+            "2": {
+                "title": "2. Send your crypto to the pool",
+                "desc": "Transfer your cryptocurrency to the masternode pool address. Wait for email confirmation or check blockchain explorer for proof of receipt."
+            },
+            "3": {
+                "title": "3. Start earning interest",
+                "desc": "The longer you leave your crypto staking, the more interest you earn. Withdraw anytime to any supported wallet."
+            },
+            "title": "How to stake"
+        },
+        "what": {
+            "1": {
+                "caption": "No minimum stake",
+                "desc": "Join a masternode pool instead of raising the minimum stake alone. Enjoy the rewards no matter how much crypto you own."
+            },
+            "2": {
+                "caption": "Withdraw anytime",
+                "desc": "Withdraw your earned interest (paid every 30 minutes) or crypto stake at any time, without penalty."
+            },
+            "3": {
+                "caption": "No fees",
+                "desc": "Staking is free. Withdrawals are free. All you pay is the transaction fee to send your crypto to the pool."
+            },
+            "4": {
+                "caption": "Support the network",
+                "desc": "Take pride in helping maintain the security and integrity of the blockchain network."
+            }
         }
     },
     "ourPress": {
@@ -4251,11 +4400,21 @@
         "name": "Name",
         "totalBalance": "Total Balance",
         "availableBalance": "Available Balance",
+        "stakingBalance": "Staking Balance",
+        "rewardBalance": "Reward Balance",
         "action": "Action",
         "withdraw": "Withdraw",
+        "withdrawReward": "Withdraw Reward",
         "deposit": "Deposit",
+        "staking": "Staking",
+        "unStaking": "Un-Staking",
         "depositCollateralTitle": "Deposit Collateral",
         "hideSmallBalance": "Hide Small Balances",
-        "hideDesc": "Balances valued are zero."
+        "hideDesc": "Balances valued are zero.",
+        "estimatedValue": "Estimated Value",
+        "tabs": {
+            "collaterals": "Collaterals",
+            "staking": "Staking"
+        }
     }
 }

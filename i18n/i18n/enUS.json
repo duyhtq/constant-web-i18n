@@ -85,6 +85,18 @@
             "type6": {
                 "title": "<h3>Open an account and grow your money</h3>",
                 "btn": "Open an account"
+            },
+            "type9": {
+                "title": "<h3>Stake and earn</h3>",
+                "btn": "Sign up now"
+            },
+            "type10": {
+                "title": "<h3>Invest the way you want</h3>",
+                "btn": "Sign up now"
+            },
+            "type11": {
+                "title": "<h3>Borrow the way you want</h3>",
+                "btn": "Sign up now"
             }
         },
         "company": {
@@ -1498,6 +1510,11 @@
             "matched": "Matched: {amount} {symbol}",
             "withdraw": "Withdraw",
             "withdrawReward": "Withdraw reward",
+            "staking": "Staking",
+            "unStaking": "un-Staking",
+            "reward": "Reward",
+            "rewardWithdraw": "Withdraw reward",
+            "date": "Date",
             "status": {
                 "0": "Pending",
                 "1": "Done",
@@ -4241,16 +4258,16 @@
             "description": "Constant is the P2P lending platform built on P2P technology with the fastest growth rate in Asia. Lend stablecoin and fiat with your own terms and interest rates or borrow money using cryptocurrency as collateral in this defi product.Fully secured by borrower collateral and smart contracts"
         },
         "staking": {
-            "title": "Secured peer-to-peer lending platform for cryptocurrency bitcoin loan",
-            "keyword": "lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online",
-            "description": "Constant is the P2P lending platform built on P2P technology with the fastest growth rate in Asia. Lend stablecoin and fiat with your own terms and interest rates or borrow money using cryptocurrency as collateral in this defi product.Fully secured by borrower collateral and smart contracts"
+            "title": "Staking-as-a-service provider: stake and earn reward for token hodler",
+            "keyword": "staking service, staking pool, staking-as-a-service, token hodler, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online",
+            "description": "Staking service for all token hodlers. Constant offers the most professional and reliable crypto staking pool services available for traders and cryptocurrency evangelists. Join our masternode for interest paid every 30 minutes. No minimum amount. No fees. Withdraw anytime"
         }
     },
     "staking": {
         "todayRate": "Today’s rate.",
         "todayRateValues": "{rate}% APR",
-        "howMuchDoYouWantToDeposit": "How much do you want to staking?",
-        "depositNow": "Start staking?",
+        "howMuchDoYouWantToDeposit": "How much do you want to stake?",
+        "depositNow": "Start staking now",
         "depositWithAmount": "Start staking {amount} {currency}",
         "validateMinAmountError": "You can't input amount less than {amount} {currency}",
         "maxValueAmount": "You can't input amount greater than {max}",
@@ -4293,7 +4310,8 @@
             "minuteWindowDescription": "For the sake of security, your staking request will time-out after 24 hours. If you need a little longer, just re-enter the amount you would like to stake when you’re ready.",
             "minuteWindow": "Please complete your transfer within 24 hours."
         },
-        "learnMore": "For more information, check out our FAQ.",
+        "learnMore": "For more information, ",
+        "learnMoreFAQs": "check out our FAQs.",
         "faqs": {
             "1": {
                 "question": "What is a masternode?",

@@ -85,6 +85,18 @@
             "type6": {
                 "title": "<h3>Open an account and grow your money</h3>",
                 "btn": "Open an account"
+            },
+            "type9": {
+                "title": "<h3>Stake and earn</h3>",
+                "btn": "Sign up now"
+            },
+            "type10": {
+                "title": "<h3>Invest the way you want</h3>",
+                "btn": "Sign up now"
+            },
+            "type11": {
+                "title": "<h3>Borrow the way you want</h3>",
+                "btn": "Sign up now"
             }
         },
         "company": {
@@ -1498,6 +1510,11 @@
             "matched": "Matched: {amount} {symbol}",
             "withdraw": "Withdraw",
             "withdrawReward": "Withdraw reward",
+            "staking": "Staking",
+            "unStaking": "un-Staking",
+            "reward": "Reward",
+            "rewardWithdraw": "Withdraw reward",
+            "date": "Date",
             "status": {
                 "0": "Pending",
                 "1": "Done",
@@ -4293,7 +4310,8 @@
             "minuteWindowDescription": "For the sake of security, your staking request will time-out after 24 hours. If you need a little longer, just re-enter the amount you would like to stake when you’re ready.",
             "minuteWindow": "Please complete your transfer within 24 hours."
         },
-        "learnMore": "For more information, check out our FAQ.",
+        "learnMore": "For more information, ",
+        "learnMoreFAQs": "check out our FAQs.",
         "faqs": {
             "1": {
                 "question": "What is a masternode?",

@@ -132,7 +132,7 @@
         "investorAgreement": "Investor agreement",
         "kycGuidelines": "KYC guidelines",
         "contactUs": "Contact us:",
-        "referral": "Referral",
+        "referral": "Share & Earn $",
         "paymentGateway": "Payment Gateway",
         "phone": {
             "us": {
@@ -235,49 +235,6 @@
         "openAnAccount": "Open an account",
         "yourSaving": "Accounts",
         "myInvestments": "My Investments",
-        "hoverMenu": {
-            "deposit": {
-                "title": "Deposit",
-                "subTitle": "$5M insurance"
-            },
-            "transfer": {
-                "title": "Transfer",
-                "subTitle": "To anyone, anywhere"
-            },
-            "withdraw": {
-                "title": "Withdraw",
-                "subTitle": "Into any currency"
-            },
-            "crypto": {
-                "title": "Crypto-Backed Loan",
-                "subTitle": "Secured by Bitcoin and Ether"
-            },
-            "business": {
-                "title": "Business Financing",
-                "subTitle": "Secured by Account"
-            }
-        },
-        "techTeam": {
-            "title": "Tech & Team",
-            "hoverMenu": {
-                "constantCoin": {
-                    "title": "Constant Coin",
-                    "subTitle": "1:1 USD-pegged stablecoin"
-                },
-                "constantChain": {
-                    "title": "Constant Chain",
-                    "subTitle": "Privacy, Scalability & Stability"
-                },
-                "team": {
-                    "title": "Team",
-                    "subTitle": "Research, Engineering & Community"
-                },
-                "trade": {
-                    "title": "Trade",
-                    "subTitle": "Constant on exchanges"
-                }
-            }
-        },
         "extraMenu": {
             "sendGroup": "Global transfers",
             "send": "Send",
@@ -298,7 +255,23 @@
             "borrowDesc": "Set your own terms",
             "expert": "Expert",
             "expertDecs": "More advanced peer-to-peer lending",
-            "transfer": "Transfer"
+            "transfer": "Transfer",
+            "investFlex": {
+                "title": "Fiat Flex",
+                "desc": "5% APY. Fully secured. Withdraw anytime."
+            },
+            "investCustom": {
+                "title": "Fiat Custom",
+                "desc": "10% APY. Fully secured. Set your own terms."
+            },
+            "investStaking": {
+                "title": "Crypto",
+                "desc": "5%-20% APY. Fully secured. Staking services."
+            },
+            "borrowFiat": {
+                "title": "Cryto-Backed",
+                "desc": "10% APR. Pay back anytime."
+            }
         }
     },
     "error": {
@@ -2333,6 +2306,7 @@
                 "walletAddressRequired": "Wallet Address is required to make a borrow!",
                 "minimumBorrowAmount": "The minimum amount that you can borrow is {amount} {symbol}",
                 "inValidWalletAddress": "Your wallet address invalid",
+                "notSupportBech32": "BTC bech32 not supported",
                 "rangeInterestRate": "Interest rate must be greater than {min}% and less than {max}%"
             },
             "depositCollateral": {
@@ -4420,6 +4394,8 @@
         "availableBalance": "Available Balance",
         "stakingBalance": "Staking Balance",
         "rewardBalance": "Reward Balance",
+        "stakingBalanceMobile": "Balance",
+        "rewardBalanceMobile": "Reward",
         "action": "Action",
         "withdraw": "Withdraw",
         "withdrawReward": "Withdraw Reward",

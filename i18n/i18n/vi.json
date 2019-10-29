@@ -132,7 +132,7 @@
         "investorAgreement": "Investor agreement",
         "kycGuidelines": "KYC guidelines",
         "contactUs": "Liên hệ:",
-        "referral": "Chương trình giới thiệu",
+        "referral": "Share & Earn $",
         "paymentGateway": "Cổng thanh toán",
         "phone": {
             "us": {
@@ -235,49 +235,6 @@
         "openAnAccount": "Đăng kí tài khoản",
         "yourSaving": "Accounts",
         "myInvestments": "Các khoản đầu tư",
-        "hoverMenu": {
-            "deposit": {
-                "title": "Gửi tiền",
-                "subTitle": "Bảo hiểm 5 triệu USD"
-            },
-            "transfer": {
-                "title": "Chuyển khoản",
-                "subTitle": "Tới mọi nơi trên thế giới"
-            },
-            "withdraw": {
-                "title": "Rút tiền",
-                "subTitle": "Về tài khoản ngân hàng"
-            },
-            "crypto": {
-                "title": "Vay thế chấp bằng tiền mã hoá",
-                "subTitle": "Thế chấp bằng Bitcoin hoặc Ether"
-            },
-            "business": {
-                "title": "Kinh doanh tài chính",
-                "subTitle": "Bảo đảm bằng tài khoản"
-            }
-        },
-        "techTeam": {
-            "title": "Giới thiệu",
-            "hoverMenu": {
-                "constantCoin": {
-                    "title": "Constant Coin",
-                    "subTitle": "Stablecoin định giá theo USD"
-                },
-                "constantChain": {
-                    "title": "Chuỗi Constant",
-                    "subTitle": "Riêng biệt, Tiềm năng & Ổn định"
-                },
-                "team": {
-                    "title": "Đội ngũ Constant",
-                    "subTitle": "Nghiên cứu, Kiến tạo & Cộng đồng"
-                },
-                "trade": {
-                    "title": "Giao dịch",
-                    "subTitle": "Các sàn giao dịch"
-                }
-            }
-        },
         "extraMenu": {
             "sendGroup": "Chuyển tiền quốc tế",
             "send": "Chuyển tiền",
@@ -298,7 +255,23 @@
             "borrowDesc": "Tự chọn kì hạn",
             "expert": "Chuyên gia",
             "expertDecs": "Hình thức cho vay ngang hàng ưu việt",
-            "transfer": "Chuyển khoản"
+            "transfer": "Chuyển khoản",
+            "investFlex": {
+                "title": "Fiat Flex",
+                "desc": "5% APY. Fully secured. Withdraw anytime."
+            },
+            "investCustom": {
+                "title": "Fiat Custom",
+                "desc": "10% APY. Fully secured. Set your own terms."
+            },
+            "investStaking": {
+                "title": "Crypto",
+                "desc": "5%-20% APY. Fully secured. Staking services."
+            },
+            "borrowFiat": {
+                "title": "Cryto-Backed",
+                "desc": "10% APR. Pay back anytime."
+            }
         }
     },
     "error": {
@@ -2333,6 +2306,7 @@
                 "walletAddressRequired": "Wallet Address is required to make a borrow!",
                 "minimumBorrowAmount": "Bạn có thể vay tối thiểu {amount}{symbol}",
                 "inValidWalletAddress": "Địa chỉ ví không hợp lệ",
+                "notSupportBech32": "BTC bech32 not supported",
                 "rangeInterestRate": "Lãi suất phải nằm trong khoảng từ {min}% tới {max}%"
             },
             "depositCollateral": {
@@ -4420,6 +4394,8 @@
         "availableBalance": "Available Balance",
         "stakingBalance": "Staking Balance",
         "rewardBalance": "Reward Balance",
+        "stakingBalanceMobile": "Balance",
+        "rewardBalanceMobile": "Reward",
         "action": "Action",
         "withdraw": "Withdraw",
         "withdrawReward": "Withdraw Reward",

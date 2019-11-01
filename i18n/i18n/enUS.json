@@ -19,21 +19,78 @@
             "update": "Update",
             "delete": "Delete",
             "fileupload": "Upload",
-            "unit": "Constant"
+            "unit": "Constant",
+            "transfer": "%%%.app.common.transfer%%%",
+            "confirm": "%%%.app.common.confirm%%%",
+            "cancel": "%%%.app.common.cancel%%%",
+            "confirmPassword": "%%%.app.common.confirmPassword%%%",
+            "wrongPassword": "%%%.app.common.wrongPassword%%%",
+            "placeholder": "%%%.app.common.placeholder%%%",
+            "btn": "%%%.app.common.btn%%%"
         },
         "local": {
             "type": {
-                "1": "Buy",
-                "2": "Sell"
+                "buy": "%%%.app.local.type.buy%%%",
+                "sell": "%%%.app.local.type.sell%%%"
             }
         }
     },
+    "validation": {
+        "csv": "%%%.validation.csv%%%"
+    },
+    "common": {
+        "table": {
+            "action": "%%%.common.table.action%%%",
+            "id": "%%%.common.table.id%%%",
+            "file_name": "%%%.common.table.file_name%%%",
+            "status": "%%%.common.table.status%%%",
+            "created_at": "%%%.common.table.created_at%%%",
+            "updated_at": "%%%.common.table.updated_at%%%",
+            "to_email": "%%%.common.table.to_email%%%",
+            "schedule_date": "%%%.common.table.schedule_date%%%",
+            "amount": "%%%.common.table.amount%%%",
+            "processing": "%%%.common.table.processing%%%",
+            "checking": "%%%.common.table.checking%%%",
+            "done": "%%%.common.table.done%%%",
+            "failed": "%%%.common.table.failed%%%",
+            "pending": "%%%.common.table.pending%%%"
+        }
+    },
     "footer": {
+        "cta": {
+            "type1": {
+                "title": "%%%.footer.cta.type1.title%%%",
+                "btn": "%%%.footer.cta.type1.btn%%%"
+            },
+            "type2": {
+                "title": "%%%.footer.cta.type2.title%%%",
+                "btn": "%%%.footer.cta.type2.btn%%%"
+            },
+            "type3": {
+                "title": "%%%.footer.cta.type3.title%%%",
+                "btn": "%%%.footer.cta.type3.btn%%%"
+            },
+            "type4": {
+                "title": "%%%.footer.cta.type4.title%%%",
+                "btn": "%%%.footer.cta.type4.btn%%%"
+            },
+            "type5": {
+                "title": "%%%.footer.cta.type5.title%%%",
+                "btn": "%%%.footer.cta.type5.btn%%%"
+            }
+        },
+        "company": {
+            "name": "%%%.footer.company.name%%%",
+            "address1": "%%%.footer.company.address1%%%",
+            "address2": "%%%.footer.company.address2%%%"
+        },
         "getSocial": "Social Media",
         "titleFoundation": "About",
         "titleConstant": "Buy Constant",
         "career": "Careers",
         "about": "The team",
+        "theTeam": "%%%.footer.theTeam%%%",
+        "prices": "%%%.footer.prices%%%",
         "openSource": "Open Source",
         "foundation": "Foundation",
         "buyConstant": "Buy Constant",
@@ -45,16 +102,67 @@
         "affiliate": "Affiliate",
         "support": "Support",
         "telegramText": "Join the {link}",
-        "telegramLink": "https://t.me/constant_money",
-        "telegramTitle": "Constant Telegram",
         "email": "Email us at {email}",
         "copyright": "2019 Constant. {term} and {privacy}",
         "termOfUse": "Terms of Use",
         "privacy": "Privacy Policy",
-        "facebookLink": "https://www.facebook.com/const.money",
-        "mediumLink": "https://medium.com/@constantmoney"
+        "contactUs": "%%%.footer.contactUs%%%",
+        "referral": "%%%.footer.referral%%%",
+        "paymentGateway": "%%%.footer.paymentGateway%%%",
+        "phone": {
+            "us": {
+                "title": "%%%.footer.phone.us.title%%%",
+                "phone": "%%%.footer.phone.us.phone%%%"
+            },
+            "hk": {
+                "title": "%%%.footer.phone.hk.title%%%",
+                "phone": "%%%.footer.phone.hk.phone%%%"
+            },
+            "vn": {
+                "title": "%%%.footer.phone.vn.title%%%",
+                "phone": "%%%.footer.phone.vn.phone%%%"
+            },
+            "malta": {
+                "title": "%%%.footer.phone.malta.title%%%",
+                "phone": "%%%.footer.phone.malta.phone%%%"
+            }
+        },
+        "social": {
+            "fb": {
+                "title": "%%%.footer.social.fb.title%%%",
+                "link": "%%%.footer.social.fb.link%%%"
+            },
+            "tw": {
+                "title": "%%%.footer.social.tw.title%%%",
+                "link": "%%%.footer.social.tw.link%%%"
+            },
+            "yt": {
+                "title": "%%%.footer.social.yt.title%%%",
+                "link": "%%%.footer.social.yt.link%%%"
+            },
+            "md": {
+                "title": "%%%.footer.social.md.title%%%",
+                "link": "%%%.footer.social.md.link%%%"
+            },
+            "tele": {
+                "title": "%%%.footer.social.tele.title%%%",
+                "link": "%%%.footer.social.tele.link%%%"
+            }
+        }
     },
     "headerBar": {
+        "home": "%%%.headerBar.home%%%",
+        "account": "%%%.headerBar.account%%%",
+        "blog": "%%%.headerBar.blog%%%",
+        "myAccount": "%%%.headerBar.myAccount%%%",
+        "deposit": "%%%.headerBar.deposit%%%",
+        "transfer": "%%%.headerBar.transfer%%%",
+        "send": "%%%.headerBar.send%%%",
+        "banking": "%%%.headerBar.banking%%%",
+        "save": "%%%.headerBar.save%%%",
+        "borrow": "%%%.headerBar.borrow%%%",
+        "signIn": "%%%.headerBar.signIn%%%",
+        "signUp": "Get Started",
         "cesText": "Got a CES2019 giveaway code?",
         "cesLink": "Claim your 1 FREE Constant now!",
         "referral": "Give $5, Get $5",
@@ -64,9 +172,9 @@
         "faq": "FAQ",
         "affiliate": "Affiliate",
         "wallet": "Wallet",
-        "signUp": "Get Started",
         "walletOrder": "My Wallet & Orders",
         "hello": "Hello",
+        "landingPro": "%%%.headerBar.landingPro%%%",
         "countryLanguage": {
             "title": "Your language",
             "okBtn": "OK",
@@ -74,18 +182,86 @@
             "selectCountry": "Select country"
         },
         "about": "About",
+        "tech": "%%%.headerBar.tech%%%",
         "pricing": "Pricing",
         "personal": "Personal",
         "trader": "Trader",
         "developer": "Developer",
         "getConstant": "Buy Constant",
         "getCash": "Withdraw Cash",
-        "getLoan": "Loan Money",
         "sendMoney": "Send Money",
+        "agent": "%%%.headerBar.agent%%%",
         "constantLoan": "Constant Loan",
         "saveAndGrowMoney": "Save & Grow money",
         "login": "Login",
-        "openAnAccount": "Open an account"
+        "openAnAccount": "Open an account",
+        "yourSaving": "%%%.headerBar.yourSaving%%%",
+        "myInvestments": "%%%.headerBar.myInvestments%%%",
+        "hoverMenu": {
+            "deposit": {
+                "title": "%%%.headerBar.hoverMenu.deposit.title%%%",
+                "subTitle": "%%%.headerBar.hoverMenu.deposit.subTitle%%%"
+            },
+            "transfer": {
+                "title": "%%%.headerBar.hoverMenu.transfer.title%%%",
+                "subTitle": "%%%.headerBar.hoverMenu.transfer.subTitle%%%"
+            },
+            "withdraw": {
+                "title": "%%%.headerBar.hoverMenu.withdraw.title%%%",
+                "subTitle": "%%%.headerBar.hoverMenu.withdraw.subTitle%%%"
+            },
+            "crypto": {
+                "title": "%%%.headerBar.hoverMenu.crypto.title%%%",
+                "subTitle": "%%%.headerBar.hoverMenu.crypto.subTitle%%%"
+            },
+            "business": {
+                "title": "%%%.headerBar.hoverMenu.business.title%%%",
+                "subTitle": "%%%.headerBar.hoverMenu.business.subTitle%%%"
+            }
+        },
+        "techTeam": {
+            "title": "%%%.headerBar.techTeam.title%%%",
+            "hoverMenu": {
+                "constantCoin": {
+                    "title": "%%%.headerBar.techTeam.hoverMenu.constantCoin.title%%%",
+                    "subTitle": "%%%.headerBar.techTeam.hoverMenu.constantCoin.subTitle%%%"
+                },
+                "constantChain": {
+                    "title": "%%%.headerBar.techTeam.hoverMenu.constantChain.title%%%",
+                    "subTitle": "%%%.headerBar.techTeam.hoverMenu.constantChain.subTitle%%%"
+                },
+                "team": {
+                    "title": "%%%.headerBar.techTeam.hoverMenu.team.title%%%",
+                    "subTitle": "%%%.headerBar.techTeam.hoverMenu.team.subTitle%%%"
+                },
+                "trade": {
+                    "title": "%%%.headerBar.techTeam.hoverMenu.trade.title%%%",
+                    "subTitle": "%%%.headerBar.techTeam.hoverMenu.trade.subTitle%%%"
+                }
+            }
+        },
+        "extraMenu": {
+            "sendGroup": "%%%.headerBar.extraMenu.sendGroup%%%",
+            "send": "%%%.headerBar.extraMenu.send%%%",
+            "sendDesc": "%%%.headerBar.extraMenu.sendDesc%%%",
+            "payroll": "%%%.headerBar.extraMenu.payroll%%%",
+            "payrollDesc": "%%%.headerBar.extraMenu.payrollDesc%%%",
+            "accountGroup": "%%%.headerBar.extraMenu.accountGroup%%%",
+            "deposit": "%%%.headerBar.extraMenu.deposit%%%",
+            "depositDesc": "%%%.headerBar.extraMenu.depositDesc%%%",
+            "withdraw": "%%%.headerBar.extraMenu.withdraw%%%",
+            "withdrawDesc": "%%%.headerBar.extraMenu.withdrawDesc%%%",
+            "withdrawCrypto": "%%%.headerBar.extraMenu.withdrawCrypto%%%",
+            "withdrawCryptoDesc": "%%%.headerBar.extraMenu.withdrawCryptoDesc%%%",
+            "lendingGroup": "%%%.headerBar.extraMenu.lendingGroup%%%",
+            "invest": "%%%.headerBar.extraMenu.invest%%%",
+            "investDecs": "%%%.headerBar.extraMenu.investDecs%%%",
+            "borrow": "%%%.headerBar.extraMenu.borrow%%%",
+            "borrowDesc": "%%%.headerBar.extraMenu.borrowDesc%%%",
+            "expert": "%%%.headerBar.extraMenu.expert%%%",
+            "expertDecs": "%%%.headerBar.extraMenu.expertDecs%%%",
+            "transfer": "%%%.headerBar.extraMenu.transfer%%%"
+        }
     },
     "error": {
         "required": "Required",
@@ -103,6 +279,7 @@
             "requestFailed": "Something went wrong, please try again! (500)",
             "generalCode500": "Something went wrong, please try again! (500)",
             "generalCode400": "Something went wrong, please try again! (400)",
+            "generalError": "%%%.error.serverCode.generalError%%%",
             "notEnoughConstant": "Please ensure you have sufficient funds in your account to complete this transfer.",
             "buyMin35Cst": "The minimum amount you can buy is 35 Constant.",
             "buyMin5Cst": "The minimum amount you can buy is 5 Constant.",
@@ -116,12 +293,12 @@
             "cannotTransferToYourSelf": "Please enter a recipient other than yourself.",
             "invalidUserType": "Oops we can't find you. Please enter your email address again.",
             "emailDoesntExist": "Oops we can't find you. Please enter your email address again.",
-            "already_in_another_application": "Already in another application",
-            "already_verified": "Already Verified",
-            "exceed_limit": "Exceed limit",
-            "invalid_email": "Email is invalid",
-            "invalid_verification": "Verify Code Invalid",
-            "validation_error": "Your Validation Code Was Wrong"
+            "needToSignIn": "%%%.error.serverCode.needToSignIn%%%",
+            "not_enough_balance": "%%%.error.serverCode.not_enough_balance%%%",
+            "createdBankExisted": "%%%.error.serverCode.createdBankExisted%%%",
+            "trial_term_deposit_not_available": "%%%.error.serverCode.trial_term_deposit_not_available%%%",
+            "not_pro_saving_user": "%%%.error.serverCode.not_pro_saving_user%%%",
+            "otpNotMatched": "%%%.error.serverCode.otpNotMatched%%%"
         }
     },
     "errorCode": {
@@ -151,89 +328,11 @@
         "8003": "invalid file type",
         "8004": "submit file failed"
     },
-    "loan": {
-        "form": {
-            "personalInfomation": "Personal Information",
-            "desc": "Please enter your detail",
-            "loanAmount": "Loan Amount",
-            "references": "references",
-            "submit": "Submit your loan request",
-            "verifyPhone": "Please enter your verify phone",
-            "emailDuplicate": "Email can not be duplicate with other",
-            "perweek": "% per week",
-            "loanAmountGreater": "Loan amount must greater than {value}",
-            "loanAmountSmaller": "Loan amount must smaller than {value}",
-            "label": {
-                "fullname": "Full name",
-                "email": "Email",
-                "address": "Address",
-                "phone": "Phone",
-                "photo": "Photo",
-                "ref1fullname": "Full name",
-                "ref1email": "Email",
-                "ref1phone": "Phone",
-                "ref1Photo": "Photo",
-                "ref1studentid": "Student id",
-                "ref2fullname": "Full name",
-                "ref2email": "Email",
-                "ref2phone": "Phone",
-                "ref2Photo": "Photo",
-                "ref2studentid": "Student id",
-                "loan_amount": "Loan amount",
-                "loanterm": "Term loan",
-                "interest": "Interest",
-                "youwillpay": "You'll pay"
-            },
-            "placeholder": {
-                "fullname": "Please enter your full name",
-                "email": "Please enter your email",
-                "address": "Please enter your address",
-                "phone": "Please enter your phone",
-                "ref1fullname": "Please enter your Full Name",
-                "ref1email": "Please enter your Email",
-                "ref1studentid": "Please enter your Student Id",
-                "ref2fullname": "Please enter your Full Name",
-                "ref2email": "Please enter your Email",
-                "ref2studentid": "Please enter your Student Id",
-                "loan_amount": "Please enter your amount"
-            }
-        },
-        "index": {
-            "title": "Loan Constant without any mortgage. Fast & Easy",
-            "desc": "\"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...\"",
-            "section1field1": "Why you should choose Constant Loan?",
-            "section1field2": "Constant is a stable currency. No matter what happens, Constant locks in the value of your money to the USD.",
-            "section1field3": "Constant is 100% backed by USD held in an accredited and audited trust. Cash out anytime, anywhere.",
-            "section2field1": "Loan Constant is easy as 1-2-3",
-            "section2field2": "\n      <p>\n        Want to pay off your credit cards, medical bills or rent?  Simply enter the amount of constant you want to borrow and make a deposit in ETH, \n        which will be held securely in the Constant loan smart contact\n      </p>\n      <h5>Benefit1</h5>\n      <h5>Benefit1</h5>\n      <h5>Benefit1</h5>\n      "
-        },
-        "agreement": {
-            "desc": "\n        <h1 style=\"text-align: center;\">LOAN AGREEMENT</h1>\n        <h5>THIS LOAN AGREEMENT (this “agreement”) dated this 13th day of February, 2019</h5>\n        <strong>BETWEEN:</strong>\n        <p style=\"text-align: center;\">Const LLC of 319 W 106TH ST (the “Lender”)</p>\n        <p style=\"text-align: right;\"><strong>OF THE FIRST PART:</strong></p>\n        <p style=\"text-align: center;\"><strong>AND</strong></p>\n        <p style=\"text-align: center;\">Doanh Chu of California (the “Borrower”)</p>\n        <p style=\"text-align: right;\"><strong>OF THE SECOND PART</strong></p>\n        <p><strong>IN CONSIDERATION OF</strong> the Lender loaning certain monies (the “Loan”) to the Borrower, and the Borrower repaying the Loan to the Lender, both parties agree to keep, perform and fulfill the promises and conditions set out in this Agreement:</p>\n        <u><b>Loan Amount & Interest</b></u>\n        <p>1. The Lender promises to loan $100.00 USD to the Borrower and the Borrower promises to repay this principal amount to the Lender, with interest payable on the unpaid principal at the rate 1.00 percent per annum, calculated yearly not in advance.</p>\n        <u><b>Payment</b></u>\n        <p>2. This Loan will be repaid in consecutive weekly installments commencing on March 1st, 2019 and continuing on the Friday of each following week with the balance then owing under this Agreement being paid on March 22nd, 2019.</p>\n        <p>3. At any time while not in default under this Agreement, the Borrower may pay the outstanding balance then owing under this Agreement to the Lender without further bonus or penalty</p>\n        <u><b>Default</b></u>\n        <p>4. The Borrower must have at least two guarantors for the Lender to loan. The guarantors have to provide ID cards.</p>\n        <u><b>1. Loan Amount & Interest</b></u>\n        <p>5. Notwithstanding anything to the contrary in this Agreement, if the Borrower defaults in the performance of any obligation under this Agreement, then the Lender may declare the principal amount owing and interest due under this Agreement at that time to be immediately due and payable.</p>\n        <p>6. Further, if the Lender declares the principal amount owing under this Agreement to be immediately due and payable, and the Borrower fails to provide full payment, interest at the rate of 2.00 percent per annum, calculated yearly, not in advance, will be charged on the outstanding amount, commencing the day the principal amount is declared due and payable, until full payment is received by the Lender.</p>\n        <p>7. If the Borrower fails to provide full payment including, without limitation, the interest, all of the guarantors will be banned from the loan service.</p>\n        <u><b>Additional Clauses</b></u>\n        <p>8. ID cards?</p>\n        <u><b>Governing Law</b></u>\n        <p>9. This Agreement will be construed in accordance with and governed by the law of the State of Delaware.</p>\n        <u><b>Costs</b></u>\n        <p>10. All costs, expenses and expenditures including, without limitation, the complete legal costs incurred by enforcing this Agreement as a result of any default by the Borrower, will be added to the principal then outstanding and will immediately be paid by the Borrower</p>\n        <u><b>Binding Effect</b></u>\n        <p>11. This Agreement will pass to the benefit of and be binding upon the respective heirs, executors, administrators, successors and permitted assigns of the Borrower and Lender. The Borrower waives presentment for payment, notice of non-payment, protest, and notice of protest.</p>\n        <u><b>Amendments</b></u>\n        <p>12. This Agreement may only be amended or modified by a written instrument executed by both the Borrower and the Lender</p>\n        <u><b>Severability</b></u>\n        <p>13. The clauses and paragraphs contained in this Agreement are intended to be read and construed independently of each other. If any term, covenant, condition or provision of this Agreement is held by a court of competent jurisdiction to be invalid, void or unenforceable, it is the parties’ intent that such provision be reduced in scope by the court only to the extent deemed necessary by that court to render the provision reasonable and enforceable and the remainder of the provisions of this Agreement will in no way be affected, impaired or invalidated as a result.</p>\n        <u><b>General Provisions</b></u>\n        <p>14. Headings are inserted for the convenience of the parties only and are not to be considered when interpreting this Agreement. Words in the singular mean and include the plural and vice versa. Words in the masculine mean and include the feminine a and vice versa</p>\n        <u><b>Entire Agreement</b></u>\n        <p>15. This Agreement constitutes the entire agreement between the parties and there are no further items or provisions, either oral or otherwise.</p>\n      ",
-            "abctestci": "lsdkfjasd"
-        },
-        "msg": {
-            "loanconnectSuccess": "Your request to accept was successed",
-            "loanconnectError": "Your request to accept was failed",
-            "loandisconnectSuccess": "Your request to unaccept was successed",
-            "loandisconnectError": "Your request to unaccept was failed",
-            "loaninvalid": "You access this page with out the code",
-            "backToLoan": "Back to loan page"
-        },
-        "verifyCodeMsg": "Enter the 6 digit code that was sent to ",
-        "resendVerifyCode": "Resend verify code",
-        "submitLoan": "Confirm submit your loan request",
-        "confirmSubmitLoan": "Confirm",
-        "termConditions": "I agree with the Term & Agreements",
-        "thankyou": "Thank you",
-        "canNotSubmitLoan": "You cant submit loan request any more. Please waiting your pending loan request is approved",
-        "alert": {
-            "sendPhoneToVerify": "Sent phone to get verify code was failed",
-            "retrySendPhoneToVerifyFailed": "Retry to sent phone to get verify code was failed",
-            "retrySendPhoneToVerifySuccess": "Verify code was sent to your phone",
-            "submitLoanFailed": "Submit Loan Request was failed",
-            "submitLoanSuccess": "Submit Loan Request was success",
-            "verifyCodeEmpty": "Please enter your verify code before submit"
-        }
+    "form": {
+        "required": "%%%.form.required%%%",
+        "invalidEmail": "%%%.form.invalidEmail%%%",
+        "unSupportFile": "%%%.form.unSupportFile%%%",
+        "exceedSize": "%%%.form.exceedSize%%%"
     },
     "me": {
         "navigation": {
@@ -241,8 +340,19 @@
             "kycInformation": "My KYC Information",
             "myEmailPassword": "Email and password",
             "myInformation": "My Information",
+            "sellOrders": "%%%.me.navigation.sellOrders%%%",
+            "buyOrders": "%%%.me.navigation.buyOrders%%%",
+            "bookingOrders": "%%%.me.navigation.bookingOrders%%%",
+            "investingOrders": "%%%.me.navigation.investingOrders%%%",
+            "loanOrders": "%%%.me.navigation.loanOrders%%%",
             "myOrders": "My Direct Orders",
+            "deposits": "%%%.me.navigation.deposits%%%",
+            "withdraws": "%%%.me.navigation.withdraws%%%",
             "localHistory": "My Local Orders",
+            "transfers": "%%%.me.navigation.transfers%%%",
+            "wallets": "%%%.me.navigation.wallets%%%",
+            "constantWallet": "%%%.me.navigation.constantWallet%%%",
+            "cryptoWallet": "%%%.me.navigation.cryptoWallet%%%",
             "changePassword": "Change password",
             "preferecens": "Preferences",
             "accountLevel": "Account Level",
@@ -251,7 +361,244 @@
             "referral": "Referral",
             "personalInfo": "Personal Info",
             "myTransactions": "My Orders",
-            "yourLoan": "Your Loans"
+            "yourInvest": "%%%.me.navigation.yourInvest%%%",
+            "myAgent": "%%%.me.navigation.myAgent%%%",
+            "yourAccreditation": "%%%.me.navigation.yourAccreditation%%%",
+            "myLoans": "%%%.me.navigation.myLoans%%%",
+            "myInvestments": "%%%.me.navigation.myInvestments%%%",
+            "cryptoLoanHistory": "%%%.me.navigation.cryptoLoanHistory%%%",
+            "viewLoanDetail": "%%%.me.navigation.viewLoanDetail%%%",
+            "viewConstantWallet": "%%%.me.navigation.viewConstantWallet%%%",
+            "viewInvestmentDetail": "%%%.me.navigation.viewInvestmentDetail%%%",
+            "batchTransfer": "%%%.me.navigation.batchTransfer%%%",
+            "referralInfo": "%%%.me.navigation.referralInfo%%%",
+            "transferOrders": "%%%.me.navigation.transferOrders%%%"
+        },
+        "wallet": {
+            "title": "%%%.me.wallet.title%%%",
+            "walletAddress": "%%%.me.wallet.walletAddress%%%"
+        },
+        "kyc": {
+            "needEmail": "%%%.me.kyc.needEmail%%%",
+            "reviewing": "%%%.me.kyc.reviewing%%%",
+            "verifiedMsg": "%%%.me.kyc.verifiedMsg%%%",
+            "titleStep1": "%%%.me.kyc.titleStep1%%%",
+            "titleStep2": "%%%.me.kyc.titleStep2%%%",
+            "lEmail": "%%%.me.kyc.lEmail%%%",
+            "plEmail": "%%%.me.kyc.plEmail%%%",
+            "lFirstName": "%%%.me.kyc.lFirstName%%%",
+            "plFirstName": "%%%.me.kyc.plFirstName%%%",
+            "lMiddleName": "%%%.me.kyc.lMiddleName%%%",
+            "plMiddleName": "%%%.me.kyc.plMiddleName%%%",
+            "lLastName": "%%%.me.kyc.lLastName%%%",
+            "plLastName": "%%%.me.kyc.plLastName%%%",
+            "lBirthday": "%%%.me.kyc.lBirthday%%%",
+            "isUS": "%%%.me.kyc.isUS%%%",
+            "isUSYes": "%%%.me.kyc.isUSYes%%%",
+            "isUSNo": "%%%.me.kyc.isUSNo%%%",
+            "lTaxCountry": "%%%.me.kyc.lTaxCountry%%%",
+            "plTaxCountry": "%%%.me.kyc.plTaxCountry%%%",
+            "lPhone": "%%%.me.kyc.lPhone%%%",
+            "lSSN": "%%%.me.kyc.lSSN%%%",
+            "lIDNumber": "%%%.me.kyc.lIDNumber%%%",
+            "lDocType": "%%%.me.kyc.lDocType%%%",
+            "plDocType": "%%%.me.kyc.plDocType%%%",
+            "btnSubmit": "%%%.me.kyc.btnSubmit%%%",
+            "lUpload": "%%%.me.kyc.lUpload%%%",
+            "descIDUpload": "%%%.me.kyc.descIDUpload%%%",
+            "lAddrStr1": "%%%.me.kyc.lAddrStr1%%%",
+            "lAddrCountry": "%%%.me.kyc.lAddrCountry%%%",
+            "plAddrCountry": "%%%.me.kyc.plAddrCountry%%%",
+            "lAddrCity": "%%%.me.kyc.lAddrCity%%%",
+            "plAddrCity": "%%%.me.kyc.plAddrCity%%%",
+            "lRegion": "%%%.me.kyc.lRegion%%%",
+            "lZipcode": "%%%.me.kyc.lZipcode%%%",
+            "plZipcode": "%%%.me.kyc.plZipcode%%%",
+            "lAddrUpload": "%%%.me.kyc.lAddrUpload%%%",
+            "descAddrUpload": "%%%.me.kyc.descAddrUpload%%%",
+            "btnBack": "%%%.me.kyc.btnBack%%%"
+        },
+        "batchTransfer": {
+            "title": "%%%.me.batchTransfer.title%%%",
+            "detail": "%%%.me.batchTransfer.detail%%%"
+        },
+        "buyOrder": {
+            "title": "%%%.me.buyOrder.title%%%",
+            "date": "%%%.me.buyOrder.date%%%",
+            "value": "%%%.me.buyOrder.value%%%",
+            "amount": "%%%.me.buyOrder.amount%%%",
+            "accept": "%%%.me.buyOrder.accept%%%",
+            "approve": "%%%.me.buyOrder.approve%%%",
+            "receipt": "%%%.me.buyOrder.receipt%%%",
+            "viewDetail": "%%%.me.buyOrder.viewDetail%%%",
+            "loadMore": "%%%.me.buyOrder.loadMore%%%",
+            "status": {
+                "status": "%%%.me.buyOrder.status.status%%%",
+                "transferred": "%%%.me.buyOrder.status.transferred%%%",
+                "transferred_fiat": "%%%.me.buyOrder.status.transferred_fiat%%%",
+                "picked": "%%%.me.buyOrder.status.picked%%%",
+                "pending": "%%%.me.buyOrder.status.pending%%%",
+                "cancelled": "%%%.me.buyOrder.status.cancelled%%%",
+                "system_cancelled": "%%%.me.buyOrder.status.system_cancelled%%%",
+                "system_rejected": "%%%.me.buyOrder.status.system_rejected%%%"
+            },
+            "confirmMess": "%%%.me.buyOrder.confirmMess%%%",
+            "confirm": {
+                "title": {
+                    "Cancel": "%%%.me.buyOrder.confirm.title.Cancel%%%",
+                    "Approve": "%%%.me.buyOrder.confirm.title.Approve%%%",
+                    "Finish": "%%%.me.buyOrder.confirm.title.Finish%%%"
+                }
+            },
+            "noData": "%%%.me.buyOrder.noData%%%"
+        },
+        "investingOrder": {
+            "title": "%%%.me.investingOrder.title%%%",
+            "userAndDate": "%%%.me.investingOrder.userAndDate%%%",
+            "matched": "%%%.me.investingOrder.matched%%%",
+            "date": "%%%.me.investingOrder.date%%%",
+            "termAndRate": "%%%.me.investingOrder.termAndRate%%%",
+            "amount": "%%%.me.investingOrder.amount%%%",
+            "accept": "%%%.me.investingOrder.accept%%%",
+            "cancel": "%%%.me.investingOrder.cancel%%%",
+            "confirm": "%%%.me.investingOrder.confirm%%%",
+            "confirmTitle": "%%%.me.investingOrder.confirmTitle%%%",
+            "confirmMess": "%%%.me.investingOrder.confirmMess%%%",
+            "reject": "%%%.me.investingOrder.reject%%%",
+            "rejectMess": "%%%.me.investingOrder.rejectMess%%%",
+            "loadMore": "%%%.me.investingOrder.loadMore%%%",
+            "matchedAmount": "%%%.me.investingOrder.matchedAmount%%%",
+            "status": {
+                "status": "%%%.me.investingOrder.status.status%%%",
+                "transferred": "%%%.me.investingOrder.status.transferred%%%",
+                "transferred_fiat": "%%%.me.investingOrder.status.transferred_fiat%%%",
+                "picked": "%%%.me.investingOrder.status.picked%%%",
+                "pending": "%%%.me.investingOrder.status.pending%%%",
+                "cancelled": "%%%.me.investingOrder.status.cancelled%%%",
+                "system_cancelled": "%%%.me.investingOrder.status.system_cancelled%%%",
+                "system_rejected": "%%%.me.investingOrder.status.system_rejected%%%"
+            },
+            "acceptFailed": {
+                "": "%%%.me.investingOrder.acceptFailed.%%%",
+                "processing_order_exists": "%%%.me.investingOrder.acceptFailed.processing_order_exists%%%",
+                "validation_error": "%%%.me.investingOrder.acceptFailed.validation_error%%%"
+            },
+            "noData": "%%%.me.investingOrder.noData%%%"
+        },
+        "loanOrder": {
+            "title": "%%%.me.loanOrder.title%%%",
+            "userAndDate": "%%%.me.loanOrder.userAndDate%%%",
+            "matched": "%%%.me.loanOrder.matched%%%",
+            "date": "%%%.me.loanOrder.date%%%",
+            "termAndRate": "%%%.me.loanOrder.termAndRate%%%",
+            "amount": "%%%.me.loanOrder.amount%%%",
+            "cancel": "%%%.me.loanOrder.cancel%%%",
+            "accept": "%%%.me.loanOrder.accept%%%",
+            "acceptMess": "%%%.me.loanOrder.acceptMess%%%",
+            "reject": "%%%.me.loanOrder.reject%%%",
+            "rejectMess": "%%%.me.loanOrder.rejectMess%%%",
+            "loadMore": "%%%.me.loanOrder.loadMore%%%",
+            "matchedAmount": "%%%.me.loanOrder.matchedAmount%%%",
+            "status": {
+                "status": "%%%.me.loanOrder.status.status%%%",
+                "transferred": "%%%.me.loanOrder.status.transferred%%%",
+                "transferred_fiat": "%%%.me.loanOrder.status.transferred_fiat%%%",
+                "picked": "%%%.me.loanOrder.status.picked%%%",
+                "pending": "%%%.me.loanOrder.status.pending%%%",
+                "cancelled": "%%%.me.loanOrder.status.cancelled%%%",
+                "system_cancelled": "%%%.me.loanOrder.status.system_cancelled%%%",
+                "system_rejected": "%%%.me.loanOrder.status.system_rejected%%%"
+            },
+            "acceptSuccessfully": "%%%.me.loanOrder.acceptSuccessfully%%%",
+            "acceptFailed": {
+                "": "%%%.me.loanOrder.acceptFailed.%%%",
+                "processing_order_exists": "%%%.me.loanOrder.acceptFailed.processing_order_exists%%%",
+                "validation_error": "%%%.me.loanOrder.acceptFailed.validation_error%%%"
+            },
+            "noData": "%%%.me.loanOrder.noData%%%"
+        },
+        "bookingOrder": {
+            "title": "%%%.me.bookingOrder.title%%%",
+            "userAndDate": "%%%.me.bookingOrder.userAndDate%%%",
+            "date": "%%%.me.bookingOrder.date%%%",
+            "value": "%%%.me.bookingOrder.value%%%",
+            "amount": "%%%.me.bookingOrder.amount%%%",
+            "accept": "%%%.me.bookingOrder.accept%%%",
+            "detail": "%%%.me.bookingOrder.detail%%%",
+            "cancel": "%%%.me.bookingOrder.cancel%%%",
+            "cancelMess": "%%%.me.bookingOrder.cancelMess%%%",
+            "approve": "%%%.me.bookingOrder.approve%%%",
+            "approveMess": "%%%.me.bookingOrder.approveMess%%%",
+            "reject": "%%%.me.bookingOrder.reject%%%",
+            "rejectMess": "%%%.me.bookingOrder.rejectMess%%%",
+            "riskNote": "%%%.me.bookingOrder.riskNote%%%",
+            "receipt": "%%%.me.bookingOrder.receipt%%%",
+            "viewDetail": "%%%.me.bookingOrder.viewDetail%%%",
+            "loadMore": "%%%.me.bookingOrder.loadMore%%%",
+            "routingNumber": "%%%.me.bookingOrder.routingNumber%%%",
+            "swiftCode": "%%%.me.bookingOrder.swiftCode%%%",
+            "status": {
+                "status": "%%%.me.bookingOrder.status.status%%%",
+                "transferred": "%%%.me.bookingOrder.status.transferred%%%",
+                "transferred_fiat": "%%%.me.bookingOrder.status.transferred_fiat%%%",
+                "picked": "%%%.me.bookingOrder.status.picked%%%",
+                "pending": "%%%.me.bookingOrder.status.pending%%%",
+                "cancelled": "%%%.me.bookingOrder.status.cancelled%%%",
+                "system_cancelled": "%%%.me.bookingOrder.status.system_cancelled%%%",
+                "system_rejected": "%%%.me.bookingOrder.status.system_rejected%%%"
+            },
+            "acceptFailed": {
+                "": "%%%.me.bookingOrder.acceptFailed.%%%",
+                "processing_order_exists": "%%%.me.bookingOrder.acceptFailed.processing_order_exists%%%"
+            },
+            "noData": "%%%.me.bookingOrder.noData%%%",
+            "confirm": {
+                "title": {
+                    "Cancel": "%%%.me.bookingOrder.confirm.title.Cancel%%%",
+                    "Approve": "%%%.me.bookingOrder.confirm.title.Approve%%%",
+                    "Finish": "%%%.me.bookingOrder.confirm.title.Finish%%%"
+                },
+                "content": {
+                    "Cancel": "%%%.me.bookingOrder.confirm.content.Cancel%%%",
+                    "Approve": "%%%.me.bookingOrder.confirm.content.Approve%%%",
+                    "Finish": "%%%.me.bookingOrder.confirm.content.Finish%%%"
+                }
+            }
+        },
+        "sellOrder": {
+            "title": "%%%.me.sellOrder.title%%%",
+            "date": "%%%.me.sellOrder.date%%%",
+            "value": "%%%.me.sellOrder.value%%%",
+            "amount": "%%%.me.sellOrder.amount%%%",
+            "accept": "%%%.me.sellOrder.accept%%%",
+            "pick": "%%%.me.sellOrder.pick%%%",
+            "viewDetail": "%%%.me.sellOrder.viewDetail%%%",
+            "loadMore": "%%%.me.sellOrder.loadMore%%%",
+            "status": {
+                "status": "%%%.me.sellOrder.status.status%%%",
+                "transferred": "%%%.me.sellOrder.status.transferred%%%",
+                "transferred_fiat": "%%%.me.sellOrder.status.transferred_fiat%%%",
+                "picked": "%%%.me.sellOrder.status.picked%%%",
+                "pending": "%%%.me.sellOrder.status.pending%%%",
+                "cancelled": "%%%.me.sellOrder.status.cancelled%%%",
+                "system_cancelled": "%%%.me.sellOrder.status.system_cancelled%%%",
+                "system_rejected": "%%%.me.sellOrder.status.system_rejected%%%"
+            },
+            "approve": "%%%.me.sellOrder.approve%%%",
+            "confirm": {
+                "title": {
+                    "Cancel": "%%%.me.sellOrder.confirm.title.Cancel%%%",
+                    "Approve": "%%%.me.sellOrder.confirm.title.Approve%%%",
+                    "Finish": "%%%.me.sellOrder.confirm.title.Finish%%%"
+                },
+                "content": {
+                    "Cancel": "%%%.me.sellOrder.confirm.content.Cancel%%%",
+                    "Approve": "%%%.me.sellOrder.confirm.content.Approve%%%",
+                    "Finish": "%%%.me.sellOrder.confirm.content.Finish%%%"
+                }
+            },
+            "noData": "%%%.me.sellOrder.noData%%%",
+            "yourInvest": "%%%.me.sellOrder.yourInvest%%%"
         },
         "personalProfile": {
             "title": "Personal Detail",
@@ -259,6 +606,7 @@
             "userName": "Name",
             "optional": "Optional",
             "fullName": "Full name",
+            "email": "%%%.me.personalProfile.email%%%",
             "dob": "Date of birth",
             "gender": "Gender",
             "save": "Submit",
@@ -295,13 +643,15 @@
             "email": "Email",
             "nickname": "Name",
             "nickname_note": "What should we call you?",
+            "language": "%%%.me.accountInfo.language%%%",
             "alert": {
                 "passwordFailed": "Update Password Failed",
                 "success": "Your name was changed successfully",
                 "failed": "Failed"
             },
             "emailNotVerified": "Your email is not verified.",
-            "verifyBtn": "Resend"
+            "verifyBtn": "Resend",
+            "enable2Fa": "%%%.me.accountInfo.enable2Fa%%%"
         },
         "changePassword": {
             "newPasswordIsRequired": "New password is required",
@@ -312,22 +662,58 @@
             "changeSuccess": "Your password was changed successfully",
             "changeFailed": "Please make sure you have typed in your old password correctly"
         },
+        "twoFa": {
+            "description2Fa": "%%%.me.twoFa.description2Fa%%%",
+            "qrScanModal": {
+                "title": "%%%.me.twoFa.qrScanModal.title%%%",
+                "description": "%%%.me.twoFa.qrScanModal.description%%%",
+                "inputCode": "%%%.me.twoFa.qrScanModal.inputCode%%%",
+                "close": "%%%.me.twoFa.qrScanModal.close%%%",
+                "submit": "%%%.me.twoFa.qrScanModal.submit%%%"
+            },
+            "disable2FaModal": {
+                "title": "%%%.me.twoFa.disable2FaModal.title%%%",
+                "inputCode": "%%%.me.twoFa.disable2FaModal.inputCode%%%",
+                "close": "%%%.me.twoFa.disable2FaModal.close%%%",
+                "submit": "%%%.me.twoFa.disable2FaModal.submit%%%"
+            },
+            "input2Fa": {
+                "title": "%%%.me.twoFa.input2Fa.title%%%",
+                "inputCode": "%%%.me.twoFa.input2Fa.inputCode%%%",
+                "close": "%%%.me.twoFa.input2Fa.close%%%",
+                "submit": "%%%.me.twoFa.input2Fa.submit%%%",
+                "message": "%%%.me.twoFa.input2Fa.message%%%"
+            },
+            "disable2FaSuccess": "%%%.me.twoFa.disable2FaSuccess%%%",
+            "enable2FaSuccess": "%%%.me.twoFa.enable2FaSuccess%%%"
+        },
         "setting": {
             "title": "General Settings"
         },
+        "referralInfo": {
+            "title": "%%%.me.referralInfo.title%%%",
+            "copied": "%%%.me.referralInfo.copied%%%"
+        },
         "localHistory": {
             "status": {
-                "Cancel": "Cancel order",
-                "Approve": "Confirm payment",
-                "Finish": "Cash received. Send Constant",
                 "canceled": "Order cancelled",
                 "timeout": "Order timed out",
-                "waitBuyerSendMoney": "Waiting for buyer to send money",
-                "waitSellerSendConst": "Waiting for seller to send Constant",
+                "transferMoneyToAgent": "%%%.me.localHistory.status.transferMoneyToAgent%%%",
+                "waitAgentTransferMoney": "%%%.me.localHistory.status.waitAgentTransferMoney%%%",
+                "transferredMoneyToAgent": "%%%.me.localHistory.status.transferredMoneyToAgent%%%",
                 "done": "Order complete",
-                "inProgress": "Order in progress",
-                "noBuyerYet": "No buyers yet",
-                "noSellerYet": "No sellers yet"
+                "inProgress": "Order in progress"
+            },
+            "agent": {
+                "status": {
+                    "canceled": "%%%.me.localHistory.agent.status.canceled%%%",
+                    "timeout": "%%%.me.localHistory.agent.status.timeout%%%",
+                    "transferMoneyToAgent": "%%%.me.localHistory.agent.status.transferMoneyToAgent%%%",
+                    "waitAgentTransferMoney": "%%%.me.localHistory.agent.status.waitAgentTransferMoney%%%",
+                    "transferredMoneyToAgent": "%%%.me.localHistory.agent.status.transferredMoneyToAgent%%%",
+                    "done": "%%%.me.localHistory.agent.status.done%%%",
+                    "inProgress": "%%%.me.localHistory.agent.status.inProgress%%%"
+                }
             },
             "confirm": {
                 "title": {
@@ -348,6 +734,7 @@
             "date": "Date",
             "transactionID": "Transaction ID",
             "transfer": "Transfer",
+            "cryptoAddress": "%%%.me.history.cryptoAddress%%%",
             "reference_number": "Reference No.",
             "type": "Type",
             "amount": "USD Amount",
@@ -359,17 +746,51 @@
             "fee": "fee",
             "loadMore": "Load more",
             "status": "Status",
+            "total": "%%%.me.history.total%%%",
             "value": "Currency Amount",
             "link": "Link",
             "action": "Action",
             "cancel": "Cancel",
+            "cancelMess": "%%%.me.history.cancelMess%%%",
+            "accept": "%%%.me.history.accept%%%",
+            "acceptMess": "%%%.me.history.acceptMess%%%",
+            "confirm": "%%%.me.history.confirm%%%",
+            "confirmMess": "%%%.me.history.confirmMess%%%",
+            "reject": "%%%.me.history.reject%%%",
+            "rejectMess": "%%%.me.history.rejectMess%%%",
             "close": "Close",
             "detail": "Transaction Details",
             "extID": "External ID",
+            "exportToExcel": "%%%.me.history.exportToExcel%%%",
+            "agent": {
+                "acceptSuccessfully": "%%%.me.history.agent.acceptSuccessfully%%%",
+                "cancelSuccessfully": "%%%.me.history.agent.cancelSuccessfully%%%",
+                "rejectSuccessfully": "%%%.me.history.agent.rejectSuccessfully%%%",
+                "rejectError": {
+                    "no_risk_detected": "%%%.me.history.agent.rejectError.no_risk_detected%%%",
+                    "notDefined": "%%%.me.history.agent.rejectError.notDefined%%%"
+                },
+                "status": {
+                    "canceled": "%%%.me.history.agent.status.canceled%%%",
+                    "timeout": "%%%.me.history.agent.status.timeout%%%",
+                    "transferMoneyToAgent": "%%%.me.history.agent.status.transferMoneyToAgent%%%",
+                    "waitAgentTransferMoney": "%%%.me.history.agent.status.waitAgentTransferMoney%%%",
+                    "transferredMoneyToAgent": "%%%.me.history.agent.status.transferredMoneyToAgent%%%",
+                    "done": "%%%.me.history.agent.status.done%%%",
+                    "inProgress": "%%%.me.history.agent.status.inProgress%%%"
+                }
+            },
             "orderType": {
                 "0": "Buy",
                 "1": "Convert",
                 "2": "Transfer",
+                "3": "%%%.me.history.orderType.3%%%",
+                "4": "%%%.me.history.orderType.4%%%",
+                "5": "%%%.me.history.orderType.5%%%",
+                "6": "%%%.me.history.orderType.6%%%",
+                "7": "%%%.me.history.orderType.7%%%",
+                "8": "%%%.me.history.orderType.8%%%",
+                "9": "%%%.me.history.orderType.9%%%",
                 "received": "Received"
             },
             "orderStatus": {
@@ -396,8 +817,46 @@
                 "sell": "Sell"
             },
             "alert": {
+                "confirmSuccess": "%%%.me.history.alert.confirmSuccess%%%",
+                "acceptSuccess": "%%%.me.history.alert.acceptSuccess%%%",
+                "confirmFailed": "%%%.me.history.alert.confirmFailed%%%",
                 "cancelSuccess": "Successfully Cancelled",
                 "cancelFailed": "Failed To Cancel"
+            },
+            "user": {
+                "account": "%%%.me.history.user.account%%%",
+                "fullName": "%%%.me.history.user.fullName%%%",
+                "userName": "%%%.me.history.user.userName%%%",
+                "email": "%%%.me.history.user.email%%%",
+                "status": {
+                    "canceled": "%%%.me.history.user.status.canceled%%%",
+                    "timeout": "%%%.me.history.user.status.timeout%%%",
+                    "transferMoneyToAgent": "%%%.me.history.user.status.transferMoneyToAgent%%%",
+                    "waitAgentTransferMoney": "%%%.me.history.user.status.waitAgentTransferMoney%%%",
+                    "transferredMoneyToAgent": "%%%.me.history.user.status.transferredMoneyToAgent%%%",
+                    "done": "%%%.me.history.user.status.done%%%",
+                    "inProgress": "%%%.me.history.user.status.inProgress%%%"
+                }
+            },
+            "bankInfo": {
+                "bankName": "%%%.me.history.bankInfo.bankName%%%",
+                "bankCountryAndCurrency": "%%%.me.history.bankInfo.bankCountryAndCurrency%%%",
+                "bankAccountCurrency": "%%%.me.history.bankInfo.bankAccountCurrency%%%",
+                "bankCountry": "%%%.me.history.bankInfo.bankCountry%%%",
+                "bankAccountName": "%%%.me.history.bankInfo.bankAccountName%%%",
+                "bankAccountNumber": "%%%.me.history.bankInfo.bankAccountNumber%%%"
+            },
+            "risk": {
+                "bank": "%%%.me.history.risk.bank%%%",
+                "trial": "%%%.me.history.risk.trial%%%",
+                "detail": "%%%.me.history.risk.detail%%%"
+            }
+        },
+        "transferOrders": {
+            "approve": "%%%.me.transferOrders.approve%%%",
+            "approveMess": "%%%.me.transferOrders.approveMess%%%",
+            "agent": {
+                "approveSuccessfully": "%%%.me.transferOrders.agent.approveSuccessfully%%%"
             }
         },
         "accountLevel": {
@@ -462,10 +921,14 @@
             "btnRemove": "Delete",
             "title": "Bank Info",
             "desc": "Add your bank account details now to receive attractive commission from referral programs and faster payment",
+            "subject": "%%%.me.bankInfo.subject%%%",
+            "explanations": "%%%.me.bankInfo.explanations%%%",
             "bankName": "Bank Name",
             "action": "Action",
             "editActionLabel": "Edit",
             "bankAccountName": "Account Name",
+            "bankAccountCurrency": "%%%.me.bankInfo.bankAccountCurrency%%%",
+            "bankCountryAndCurrency": "%%%.me.bankInfo.bankCountryAndCurrency%%%",
             "bankCountry": "Bank Country",
             "routingNumber": "Routing number",
             "swiftCode": "Swift code",
@@ -476,6 +939,7 @@
             "bankNameHolder": "Enter Bank Name",
             "bankAccountNameHolder": "Enter Bank Account Name",
             "bankAccountNumberHolder": "Enter Bank Account Number",
+            "input2FA": "%%%.me.bankInfo.input2FA%%%",
             "alert": {
                 "success": "Successfully Updated",
                 "failed": "Failed To Update",
@@ -497,6 +961,47 @@
                 }
             }
         },
+        "addressWalletInfo": {
+            "emptyAddress": "%%%.me.addressWalletInfo.emptyAddress%%%",
+            "getWalletFailed": "%%%.me.addressWalletInfo.getWalletFailed%%%",
+            "btnAdd": "%%%.me.addressWalletInfo.btnAdd%%%",
+            "titleAddWallet": "%%%.me.addressWalletInfo.titleAddWallet%%%",
+            "titleUpdateWallet": "%%%.me.addressWalletInfo.titleUpdateWallet%%%",
+            "btnSubmit": "%%%.me.addressWalletInfo.btnSubmit%%%",
+            "btnUpdate": "%%%.me.addressWalletInfo.btnUpdate%%%",
+            "btnRemove": "%%%.me.addressWalletInfo.btnRemove%%%",
+            "title": "%%%.me.addressWalletInfo.title%%%",
+            "desc": "%%%.me.addressWalletInfo.desc%%%",
+            "address": "%%%.me.addressWalletInfo.address%%%",
+            "currency": "%%%.me.addressWalletInfo.currency%%%",
+            "active": "%%%.me.addressWalletInfo.active%%%",
+            "action": "%%%.me.addressWalletInfo.action%%%",
+            "editActionLabel": "%%%.me.addressWalletInfo.editActionLabel%%%",
+            "alert": {
+                "success": "%%%.me.addressWalletInfo.alert.success%%%",
+                "failed": "%%%.me.addressWalletInfo.alert.failed%%%",
+                "deleteSuccess": "%%%.me.addressWalletInfo.alert.deleteSuccess%%%",
+                "deleteFailed": "%%%.me.addressWalletInfo.alert.deleteFailed%%%",
+                "wallet_address_exists": "%%%.me.addressWalletInfo.alert.wallet_address_exists%%%",
+                "crypto_address_exists": "%%%.me.addressWalletInfo.alert.crypto_address_exists%%%",
+                "invalid_crypto_address": "%%%.me.addressWalletInfo.alert.invalid_crypto_address%%%",
+                "wallet_address_in_use": "%%%.me.addressWalletInfo.alert.wallet_address_in_use%%%"
+            },
+            "dialog": {
+                "update": {
+                    "title": "%%%.me.addressWalletInfo.dialog.update.title%%%",
+                    "body": "%%%.me.addressWalletInfo.dialog.update.body%%%",
+                    "confirm": "%%%.me.addressWalletInfo.dialog.update.confirm%%%",
+                    "cancel": "%%%.me.addressWalletInfo.dialog.update.cancel%%%"
+                },
+                "delete": {
+                    "title": "%%%.me.addressWalletInfo.dialog.delete.title%%%",
+                    "body": "%%%.me.addressWalletInfo.dialog.delete.body%%%",
+                    "confirm": "%%%.me.addressWalletInfo.dialog.delete.confirm%%%",
+                    "cancel": "%%%.me.addressWalletInfo.dialog.delete.cancel%%%"
+                }
+            }
+        },
         "emailVerification": {
             "pleaseVerify": "Please verify your email to activate your account",
             "resent": "Resend email verification",
@@ -504,7 +1009,9 @@
             "sendCodeSuccess": "Verify code was sent successfully to your email, please check.",
             "sendCodeFailed": "Failed while sending verify code, please try again!",
             "verifyFailed": "Verify failed, please try again!",
-            "verifySuccess": "Your email was verified successfully. Please complete the KYC process to buy direct from the network."
+            "verifySuccess": "Your email was verified successfully. Please complete the KYC process to buy direct from the network.",
+            "pleaseUpdateEmail": "%%%.me.emailVerification.pleaseUpdateEmail%%%",
+            "updateEmail": "%%%.me.emailVerification.updateEmail%%%"
         },
         "phoneVerification": {
             "sendCodeSuccess": "Verify code was sent successfully to your phone, please check.",
@@ -515,47 +1022,190 @@
         "kycVerification": {
             "pleaseComplete": "Please complete the KYC process to buy direct from the network.",
             "complete": "Verify",
+            "pleaseKYCBeforeAction": "%%%.me.kycVerification.pleaseKYCBeforeAction%%%",
             "updatedSuccess": "Your information was updated successfully",
             "updatedFailed": "Failed while updating your information, please try again!",
-            "checkVerifyFailed": "Failed while checking your verify status"
+            "checkVerifyFailed": "Failed while checking your verify status",
+            "action": {
+                "invest": "%%%.me.kycVerification.action.invest%%%",
+                "transfer": "%%%.me.kycVerification.action.transfer%%%",
+                "deposit": "%%%.me.kycVerification.action.deposit%%%",
+                "withdraw": "%%%.me.kycVerification.action.withdraw%%%"
+            }
         },
-        "loan": {
+        "referDialog": {
+            "labelShare": "%%%.me.referDialog.labelShare%%%",
+            "btnShare": "%%%.me.referDialog.btnShare%%%",
+            "copied": "%%%.me.referDialog.copied%%%",
+            "selectEmail": "%%%.me.referDialog.selectEmail%%%",
+            "sendInvitations": "%%%.me.referDialog.sendInvitations%%%",
+            "sendInvitationsSuccess": "%%%.me.referDialog.sendInvitationsSuccess%%%",
+            "or": "%%%.me.referDialog.or%%%",
+            "noOptionsMessage": "%%%.me.referDialog.noOptionsMessage%%%",
+            "addNewEmail": "%%%.me.referDialog.addNewEmail%%%"
+        },
+        "proSaving": {
             "listApplications": {
-                "name": "Name",
-                "email": "Email",
-                "phone": "Phone",
-                "status": "Status",
-                "note": "Note",
-                "noRecord": "You have no loan",
-                "getListFailed": "Failed while getting your loans, please try again"
+                "totalInterestEarned": "%%%.me.proSaving.listApplications.totalInterestEarned%%%",
+                "noRecord": "%%%.me.proSaving.listApplications.noRecord%%%",
+                "getListFailed": "%%%.me.proSaving.listApplications.getListFailed%%%",
+                "amount": "%%%.me.proSaving.listApplications.amount%%%",
+                "interest": "%%%.me.proSaving.listApplications.interest%%%",
+                "apr": "%%%.me.proSaving.listApplications.apr%%%",
+                "haveTimeAccount": "%%%.me.proSaving.listApplications.haveTimeAccount%%%",
+                "month": "%%%.me.proSaving.listApplications.month%%%",
+                "anyTimeAccount": "%%%.me.proSaving.listApplications.anyTimeAccount%%%",
+                "endTerm": "%%%.me.proSaving.listApplications.endTerm%%%",
+                "trial": "%%%.me.proSaving.listApplications.trial%%%",
+                "trial_description": "%%%.me.proSaving.listApplications.trial_description%%%",
+                "saving_title": "%%%.me.proSaving.listApplications.saving_title%%%",
+                "loans_title": "%%%.me.proSaving.listApplications.loans_title%%%",
+                "repaySuccess": "%%%.me.proSaving.listApplications.repaySuccess%%%",
+                "anyTime_saving": "%%%.me.proSaving.listApplications.anyTime_saving%%%",
+                "input2FA": "%%%.me.proSaving.listApplications.input2FA%%%",
+                "cancel": "%%%.me.proSaving.listApplications.cancel%%%",
+                "termStatus": {
+                    "created": "%%%.me.proSaving.listApplications.termStatus.created%%%",
+                    "pending": "%%%.me.proSaving.listApplications.termStatus.pending%%%",
+                    "closed": "%%%.me.proSaving.listApplications.termStatus.closed%%%",
+                    "rejected": "%%%.me.proSaving.listApplications.termStatus.rejected%%%",
+                    "pending_kyc": "%%%.me.proSaving.listApplications.termStatus.pending_kyc%%%",
+                    "matched": "%%%.me.proSaving.listApplications.termStatus.matched%%%",
+                    "matching": "%%%.me.proSaving.listApplications.termStatus.matching%%%",
+                    "cancelled": "%%%.me.proSaving.listApplications.termStatus.cancelled%%%"
+                },
+                "interestInfo": {
+                    "header": {
+                        "title": "%%%.me.proSaving.listApplications.interestInfo.header.title%%%"
+                    },
+                    "body": {
+                        "item1": {
+                            "title": "%%%.me.proSaving.listApplications.interestInfo.body.item1.title%%%",
+                            "description": "%%%.me.proSaving.listApplications.interestInfo.body.item1.description%%%"
+                        },
+                        "item2": {
+                            "title": "%%%.me.proSaving.listApplications.interestInfo.body.item2.title%%%",
+                            "description": "%%%.me.proSaving.listApplications.interestInfo.body.item2.description%%%",
+                            "refer": "%%%.me.proSaving.listApplications.interestInfo.body.item2.refer%%%",
+                            "percent_claimed": "%%%.me.proSaving.listApplications.interestInfo.body.item2.percent_claimed%%%"
+                        },
+                        "item3": {
+                            "title": "%%%.me.proSaving.listApplications.interestInfo.body.item3.title%%%",
+                            "description": "%%%.me.proSaving.listApplications.interestInfo.body.item3.description%%%",
+                            "facebook": "%%%.me.proSaving.listApplications.interestInfo.body.item3.facebook%%%",
+                            "twitter": "%%%.me.proSaving.listApplications.interestInfo.body.item3.twitter%%%"
+                        }
+                    },
+                    "footer": {
+                        "title": "%%%.me.proSaving.listApplications.interestInfo.footer.title%%%",
+                        "description": "%%%.me.proSaving.listApplications.interestInfo.footer.description%%%"
+                    },
+                    "shareFbSuccess": "%%%.me.proSaving.listApplications.interestInfo.shareFbSuccess%%%"
+                },
+                "withdraw": "%%%.me.proSaving.listApplications.withdraw%%%",
+                "withdrawFiat": "%%%.me.proSaving.listApplications.withdrawFiat%%%",
+                "withdrawCrypto": "%%%.me.proSaving.listApplications.withdrawCrypto%%%",
+                "transfer": "%%%.me.proSaving.listApplications.transfer%%%",
+                "batchtransfer": "%%%.me.proSaving.listApplications.batchtransfer%%%",
+                "deposit": "%%%.me.proSaving.listApplications.deposit%%%",
+                "withdrawDesc": "%%%.me.proSaving.listApplications.withdrawDesc%%%",
+                "depositDesc": "%%%.me.proSaving.listApplications.depositDesc%%%",
+                "transferDesc": "%%%.me.proSaving.listApplications.transferDesc%%%",
+                "row": "%%%.me.proSaving.listApplications.row%%%",
+                "errorMessage": "%%%.me.proSaving.listApplications.errorMessage%%%",
+                "saving": "%%%.me.proSaving.listApplications.saving%%%",
+                "dialog": {
+                    "withdrawAccount": {
+                        "title": "%%%.me.proSaving.listApplications.dialog.withdrawAccount.title%%%",
+                        "body": "%%%.me.proSaving.listApplications.dialog.withdrawAccount.body%%%",
+                        "termTitle": "%%%.me.proSaving.listApplications.dialog.withdrawAccount.termTitle%%%",
+                        "percentReceive": "%%%.me.proSaving.listApplications.dialog.withdrawAccount.percentReceive%%%",
+                        "confirm": "%%%.me.proSaving.listApplications.dialog.withdrawAccount.confirm%%%",
+                        "cancel": "%%%.me.proSaving.listApplications.dialog.withdrawAccount.cancel%%%",
+                        "messageConfirm": "%%%.me.proSaving.listApplications.dialog.withdrawAccount.messageConfirm%%%",
+                        "validateMaxAmountError": "%%%.me.proSaving.listApplications.dialog.withdrawAccount.validateMaxAmountError%%%",
+                        "validateMinAmountError": "%%%.me.proSaving.listApplications.dialog.withdrawAccount.validateMinAmountError%%%"
+                    },
+                    "checkTrialKyc": {
+                        "messageConfirm": "%%%.me.proSaving.listApplications.dialog.checkTrialKyc.messageConfirm%%%",
+                        "confirm": "%%%.me.proSaving.listApplications.dialog.checkTrialKyc.confirm%%%",
+                        "cancel": "%%%.me.proSaving.listApplications.dialog.checkTrialKyc.cancel%%%"
+                    },
+                    "cancelDeposit": {
+                        "messageConfirm": "%%%.me.proSaving.listApplications.dialog.cancelDeposit.messageConfirm%%%",
+                        "confirm": "%%%.me.proSaving.listApplications.dialog.cancelDeposit.confirm%%%",
+                        "cancel": "%%%.me.proSaving.listApplications.dialog.cancelDeposit.cancel%%%"
+                    },
+                    "cancelDepositKyc": {
+                        "messageConfirm": "%%%.me.proSaving.listApplications.dialog.cancelDepositKyc.messageConfirm%%%",
+                        "confirm": "%%%.me.proSaving.listApplications.dialog.cancelDepositKyc.confirm%%%",
+                        "cancel": "%%%.me.proSaving.listApplications.dialog.cancelDepositKyc.cancel%%%"
+                    }
+                },
+                "confirm": {
+                    "batch": {
+                        "title": "%%%.me.proSaving.listApplications.confirm.batch.title%%%",
+                        "desc": "%%%.me.proSaving.listApplications.confirm.batch.desc%%%",
+                        "confirm": "%%%.me.proSaving.listApplications.confirm.batch.confirm%%%",
+                        "cancel": "%%%.me.proSaving.listApplications.confirm.batch.cancel%%%"
+                    }
+                },
+                "alert": {
+                    "depositSavingSuccess": "%%%.me.proSaving.listApplications.alert.depositSavingSuccess%%%",
+                    "depositSavingFailed": "%%%.me.proSaving.listApplications.alert.depositSavingFailed%%%",
+                    "stopSavingSuccess": "%%%.me.proSaving.listApplications.alert.stopSavingSuccess%%%",
+                    "stopSavingFailed": "%%%.me.proSaving.listApplications.alert.stopSavingFailed%%%",
+                    "batchTransferSuccess": "%%%.me.proSaving.listApplications.alert.batchTransferSuccess%%%",
+                    "batchTransferFailed": "%%%.me.proSaving.listApplications.alert.batchTransferFailed%%%",
+                    "confirmBatchTransferSuccess": "%%%.me.proSaving.listApplications.alert.confirmBatchTransferSuccess%%%",
+                    "confirmBatchTransferFailed": "%%%.me.proSaving.listApplications.alert.confirmBatchTransferFailed%%%"
+                },
+                "batchTransferDialog": {
+                    "title": "%%%.me.proSaving.listApplications.batchTransferDialog.title%%%",
+                    "desc": "%%%.me.proSaving.listApplications.batchTransferDialog.desc%%%"
+                },
+                "field": {
+                    "amount": "%%%.me.proSaving.listApplications.field.amount%%%",
+                    "to_email": "%%%.me.proSaving.listApplications.field.to_email%%%",
+                    "schedule_date": "%%%.me.proSaving.listApplications.field.schedule_date%%%",
+                    "invalid": "%%%.me.proSaving.listApplications.field.invalid%%%",
+                    "endline": "%%%.me.proSaving.listApplications.field.endline%%%",
+                    "cycle_duration": "%%%.me.proSaving.listApplications.field.cycle_duration%%%"
+                },
+                "name": "%%%.me.proSaving.listApplications.name%%%",
+                "email": "%%%.me.proSaving.listApplications.email%%%",
+                "phone": "%%%.me.proSaving.listApplications.phone%%%",
+                "status": "%%%.me.proSaving.listApplications.status%%%",
+                "note": "%%%.me.proSaving.listApplications.note%%%",
+                "investMore": "%%%.me.proSaving.listApplications.investMore%%%"
             },
             "applicationDetail": {
-                "dueDays": "Due Days",
-                "interestAmount": "Interest Amount",
-                "originalAmount": "Original Amount",
-                "totalAmount": "Total Amount",
-                "paid": "Paid",
-                "paidDate": "Paid Date",
-                "paidStatus": "Paid Status",
-                "payDate": "Pay Date",
-                "createdAt": "Created At",
-                "dueDayValueLeft": "{day} days left",
-                "dueDayValueOver": "{day} days overdue",
-                "payConfirmMsg": "You will pay {amount} from your wallet ({balance})",
-                "requireTopup": "You balance ({balance}) not enough to pay {amount}. Topup now?",
-                "backBtn": "Back to list",
-                "cancel": "Cancel",
-                "payForThisTerm": "Pay for this term",
-                "getDetailFailed": "Failed while getting application detail, please try again",
-                "cancelSuccessfully": "Your application was canceled successfully",
-                "cancelFailed": "Failed while canceling your application, please try again",
-                "payFailed": "Failed while paying your term, please try again",
-                "paySuccessfully": "Your paying was processed successfully",
+                "dueDays": "%%%.me.proSaving.applicationDetail.dueDays%%%",
+                "interestAmount": "%%%.me.proSaving.applicationDetail.interestAmount%%%",
+                "originalAmount": "%%%.me.proSaving.applicationDetail.originalAmount%%%",
+                "totalAmount": "%%%.me.proSaving.applicationDetail.totalAmount%%%",
+                "paid": "%%%.me.proSaving.applicationDetail.paid%%%",
+                "paidDate": "%%%.me.proSaving.applicationDetail.paidDate%%%",
+                "paidStatus": "%%%.me.proSaving.applicationDetail.paidStatus%%%",
+                "payDate": "%%%.me.proSaving.applicationDetail.payDate%%%",
+                "createdAt": "%%%.me.proSaving.applicationDetail.createdAt%%%",
+                "dueDayValueLeft": "%%%.me.proSaving.applicationDetail.dueDayValueLeft%%%",
+                "dueDayValueOver": "%%%.me.proSaving.applicationDetail.dueDayValueOver%%%",
+                "payConfirmMsg": "%%%.me.proSaving.applicationDetail.payConfirmMsg%%%",
+                "requireTopup": "%%%.me.proSaving.applicationDetail.requireTopup%%%",
+                "backBtn": "%%%.me.proSaving.applicationDetail.backBtn%%%",
+                "cancel": "%%%.me.proSaving.applicationDetail.cancel%%%",
+                "payForThisTerm": "%%%.me.proSaving.applicationDetail.payForThisTerm%%%",
+                "getDetailFailed": "%%%.me.proSaving.applicationDetail.getDetailFailed%%%",
+                "cancelSuccessfully": "%%%.me.proSaving.applicationDetail.cancelSuccessfully%%%",
+                "cancelFailed": "%%%.me.proSaving.applicationDetail.cancelFailed%%%",
+                "payFailed": "%%%.me.proSaving.applicationDetail.payFailed%%%",
+                "paySuccessfully": "%%%.me.proSaving.applicationDetail.paySuccessfully%%%",
                 "activities": {
-                    "activityLog": "Activity Log",
-                    "showActivities": "Show all activities",
-                    "hideActivities": "Hide all activities",
-                    "timeAt": "at"
+                    "activityLog": "%%%.me.proSaving.applicationDetail.activities.activityLog%%%",
+                    "showActivities": "%%%.me.proSaving.applicationDetail.activities.showActivities%%%",
+                    "hideActivities": "%%%.me.proSaving.applicationDetail.activities.hideActivities%%%",
+                    "timeAt": "%%%.me.proSaving.applicationDetail.activities.timeAt%%%"
                 }
             }
         }
@@ -564,6 +1214,7 @@
     "landing_page.label.footer": "Constant MVP is an online exchange developed by Shanzhai Limited, a Hong Kong based company, offering bulk crypto purchasing at competitive prices with full delivery service.<br />Join the dojo: <a href=\"https://t.me/coin_bowl\" class=\"landing-link\">t.me/coin_bowl</a><br />Contact us: <a href=\"mailto:hello@constant.money\" class=\"landing-link\" target=\"_top\">hello@constant.money</a>",
     "user": {
         "kycInformation": "My KYC Information",
+        "referral": "%%%.user.referral%%%",
         "logout": "Sign out",
         "history": "History",
         "myOrders": "My orders",
@@ -571,6 +1222,7 @@
         "settings": "Settings",
         "changeEmailPassword": "Email & Password",
         "login": {
+            "popupTitle": "%%%.user.login.popupTitle%%%",
             "title": "Sign in to Constant",
             "username": "Your email",
             "password": "Password",
@@ -604,6 +1256,18 @@
             "newPasswordIntro": "Password of Constant account for {email} has been changed",
             "notRecoverPass": "I can’t recover my account using this page"
         },
+        "updatePassword": {
+            "title": "%%%.user.updatePassword.title%%%",
+            "description": "%%%.user.updatePassword.description%%%",
+            "username": "%%%.user.updatePassword.username%%%",
+            "submitButton": "%%%.user.updatePassword.submitButton%%%",
+            "password": "%%%.user.updatePassword.password%%%",
+            "requiredPassword": "%%%.user.updatePassword.requiredPassword%%%",
+            "notValidPassword": "%%%.user.updatePassword.notValidPassword%%%",
+            "confirmPassword": "%%%.user.updatePassword.confirmPassword%%%",
+            "notValidConfirmPassword": "%%%.user.updatePassword.notValidConfirmPassword%%%",
+            "resetPasswordIntro": "%%%.user.updatePassword.resetPasswordIntro%%%"
+        },
         "register": {
             "giftCode": "Invitation code (optional)",
             "title": "Create your account",
@@ -618,7 +1282,6 @@
             "email": "Your email",
             "requiredEmail": "Email is required",
             "notValidEmail": "Invalid email address",
-            "notStudentEmail": "Invalid student email address",
             "password": "Password",
             "requiredPassword": "Password is required",
             "notValidPassword": "Password must be 8 characters or more",
@@ -671,7 +1334,51 @@
         "thanksMessage": "Thank you! Your message has been sent."
     },
     "home": {
+        "lendingSection": {
+            "form": {
+                "tooltip": {
+                    "amount": "%%%.home.lendingSection.form.tooltip.amount%%%",
+                    "maxTerm": "%%%.home.lendingSection.form.tooltip.maxTerm%%%",
+                    "minRate": "%%%.home.lendingSection.form.tooltip.minRate%%%"
+                },
+                "placeholder": {
+                    "amount": "%%%.home.lendingSection.form.placeholder.amount%%%"
+                }
+            }
+        },
+        "blockTitle1": "%%%.home.blockTitle1%%%",
+        "blockDesc1": "%%%.home.blockDesc1%%%",
+        "blockTitle2": "%%%.home.blockTitle2%%%",
+        "blockCap2": "%%%.home.blockCap2%%%",
+        "blockDesc2": "%%%.home.blockDesc2%%%",
+        "blockTitle3": "%%%.home.blockTitle3%%%",
+        "blockCap3": "%%%.home.blockCap3%%%",
+        "titleBlock4": "%%%.home.titleBlock4%%%",
+        "titleCap4": "%%%.home.titleCap4%%%",
+        "titleDesc4": "%%%.home.titleDesc4%%%",
         "optionText": "or",
+        "howItWorks": {
+            "step1": "%%%.home.howItWorks.step1%%%",
+            "title1": "%%%.home.howItWorks.title1%%%",
+            "desc1": "%%%.home.howItWorks.desc1%%%",
+            "step2": "%%%.home.howItWorks.step2%%%",
+            "title2": "%%%.home.howItWorks.title2%%%",
+            "desc2": "%%%.home.howItWorks.desc2%%%",
+            "step3": "%%%.home.howItWorks.step3%%%",
+            "title3": "%%%.home.howItWorks.title3%%%",
+            "desc3": "%%%.home.howItWorks.desc3%%%"
+        },
+        "stories": {
+            "quote0": "%%%.home.stories.quote0%%%",
+            "author0": "%%%.home.stories.author0%%%",
+            "title0": "%%%.home.stories.title0%%%",
+            "quote1": "%%%.home.stories.quote1%%%",
+            "author1": "%%%.home.stories.author1%%%",
+            "title1": "%%%.home.stories.title1%%%",
+            "quote2": "%%%.home.stories.quote2%%%",
+            "author2": "%%%.home.stories.author2%%%",
+            "title2": "%%%.home.stories.title2%%%"
+        },
         "buy": {
             "title": "Buy",
             "introTitle": "Get a more useful money.",
@@ -694,7 +1401,8 @@
                     "close": "Close",
                     "agreeSell": "Agree to convert",
                     "confirmText": "You're converting {amount} {currency}",
-                    "confirmSubText": "Please check your information again."
+                    "confirmSubText": "Please check your information again.",
+                    "input2FA": "%%%.home.buy.components.sellInfoInput.input2FA%%%"
                 },
                 "orderInfo": {
                     "buyTitle": "Order Confirmation",
@@ -717,6 +1425,7 @@
                     "pleaseVerifyBtnMsg": "You need to verify your account to start buying/selling",
                     "pleaseSignInToBuy": "Sign in to buy {amount} {currency}",
                     "totalAmount": "Total amount",
+                    "fee": "%%%.home.buy.components.buy.fee%%%",
                     "reference": "Reference"
                 },
                 "sell": {
@@ -774,8 +1483,27 @@
                     "actor": "Seller",
                     "bank": "Bank"
                 },
+                "orderWithdraw": {
+                    "title": "%%%.home.convert.buy.orderWithdraw.title%%%",
+                    "message": "%%%.home.convert.buy.orderWithdraw.message%%%"
+                },
                 "introHolderTemplate": "\n          <h1>Buy from local sellers in {country}</h1>\n          <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n          <p>Email us at <a href=\"mailto:{email}\">{email}</a></p>\n          <p>Or</p>\n          <p>Chat with us at <a href=\"telegram:{telegram}\">{telegram}</a></p>\n        ",
-                "confirmTemplate": "\n          <div name=\"thanks\">\n            <p>Thanks! Please wire <strong>{Constant} {Currency}</strong> to the seller's bank account.</p>\n          </div>\n          <div name=\"bank\">\n            <p>\n              <span>Bank:</span>\n              <span>{BankName}</span>\n            </p>\n            <p>\n              <span>Account Name:</span>\n              <span>{BankAccountName}</span>\n            </p>\n            <p>\n              <span>Account Number: </span>\n              <span>{BankAccountNumber}</span>\n            </p>\n            <p>\n              <span>Amount: </span>\n              <span>{Constant}&nbsp;{Currency}</span>\n            </p>\n            <p>\n              <span>Reference: </span>\n              <span>{Reference}</span>\n            </p>\n          </div>\n          <div name=\"notice\">\n            <b name=\"important\">IMPORTANT:</b>\n            <span>\n              Do include your reference number <b>{Reference}</b> in the transfer description\n            </span>\n          </div>\n          <div name=\"window\">\n            <strong name=\"minutes\">30 MINUTE WINDOW: </strong>\n            <span>\n              Please complete your transfer <b>within 30 minutes</b>. After that, your\n              order will be automatically cancelled.\n            </span>\n          </div>\n        "
+                "confirmTemplate": "\n          <div name=\"thanks\">\n            <p>Thanks! Please wire <strong>{Constant} {Currency}</strong> to the seller's bank account.</p>\n          </div>\n          <div name=\"bank\">\n            <p>\n              <span>Bank:</span>\n              <span>{BankName}</span>\n            </p>\n            <p>\n              <span>Account Name:</span>\n              <span>{BankAccountName}</span>\n            </p>\n            <p>\n              <span>Account Number: </span>\n              <span>{BankAccountNumber}</span>\n            </p>\n            <p>\n              <span>Amount: </span>\n              <span>{Constant}&nbsp;{Currency}</span>\n            </p>\n            <p>\n              <span>Reference: </span>\n              <span>{Reference}</span>\n            </p>\n          </div>\n          <div name=\"notice\">\n            <b name=\"important\">IMPORTANT:</b>\n            <span>\n              Do include your reference number <b>{Reference}</b> in the transfer description\n            </span>\n          </div>\n          <div name=\"window\">\n            <strong name=\"minutes\">30 MINUTE WINDOW: </strong>\n            <span>\n              Please complete your transfer <b>within 30 minutes</b>. After that, your\n              order will be automatically cancelled.\n            </span>\n          </div>\n        ",
+                "cryptoAddress": "%%%.home.convert.buy.cryptoAddress%%%",
+                "accountName": "%%%.home.convert.buy.accountName%%%",
+                "bankName": "%%%.home.convert.buy.bankName%%%",
+                "accountNumber": "%%%.home.convert.buy.accountNumber%%%",
+                "amount": "%%%.home.convert.buy.amount%%%",
+                "value": "%%%.home.convert.buy.value%%%",
+                "constant": "%%%.home.convert.buy.constant%%%",
+                "reference": "%%%.home.convert.buy.reference%%%",
+                "buyThankMsg": "%%%.home.convert.buy.buyThankMsg%%%",
+                "buyCryptoThankMsg": "%%%.home.convert.buy.buyCryptoThankMsg%%%",
+                "importantMsg": "%%%.home.convert.buy.importantMsg%%%",
+                "important": "%%%.home.convert.buy.important%%%",
+                "thankYou": "%%%.home.convert.buy.thankYou%%%",
+                "minuteWindow": "%%%.home.convert.buy.minuteWindow%%%",
+                "minuteWindowDescription": "%%%.home.convert.buy.minuteWindowDescription%%%"
             },
             "sell": {
                 "type": "Sell",
@@ -827,7 +1555,9 @@
                 "BeneficiaryAddressCity": "Beneficiary City",
                 "BeneficiaryAddressCountry": "Beneficiary Country",
                 "BeneficiaryAddressRegion": "Beneficiary Region",
-                "BeneficiaryAddressPostalCode": "Beneficiary Postal Code"
+                "BeneficiaryAddressPostalCode": "Beneficiary Postal Code",
+                "createdBankFailed": "%%%.home.convert.payToForm.createdBankFailed%%%",
+                "note": "%%%.home.convert.payToForm.note%%%"
             },
             "fee": "Fee",
             "backOrderBook": "Back",
@@ -838,7 +1568,22 @@
                 "greaterThan": "Must be greater than 0",
                 "notEnough": "Constant is not enough"
             },
-            "confirmTemplate": "\n        <div name=\"thanks\">\n          Thanks! Please wire <strong>{Constant} {Currency}</strong> to Constant Escrow to  keep your money safe while the deal finalizes.\n        </div>\n        <div name=\"bank\">\n          <p>Vietcombank</p>\n          <p>\n            <span>Account: </span>\n            <span>123456789</span>\n          </p>\n          <p>\n            <span>Amount: </span>\n            <span>{Constant}&nbsp;{Currency}</span>\n          </p>\n          <p>\n            <span>Reference: </span>\n            <span>ABC123</span>\n          </p>\n        </div>\n        <div name=\"notice\">\n          <b>IMPORTANT</b>\n          <span>\n            Do include your reference number <b>ABC123</b> in the transfer description\n          </span>\n        </div>\n        <div name=\"window\">\n          <b>30 MINUTE WINDOW: </b>\n          <span>\n            Please complete your transfer <b>within 30 minutes</b>. After that, your\n            order will be automatically cancelled.\n          </span>\n        </div>\n      "
+            "send": {
+                "confirmTemplate": {
+                    "title": "%%%.home.convert.send.confirmTemplate.title%%%",
+                    "description": "%%%.home.convert.send.confirmTemplate.description%%%",
+                    "contact": "%%%.home.convert.send.confirmTemplate.contact%%%",
+                    "actionTitle": "%%%.home.convert.send.confirmTemplate.actionTitle%%%"
+                }
+            },
+            "withdraw": {
+                "confirmTemplate": {
+                    "title": "%%%.home.convert.withdraw.confirmTemplate.title%%%",
+                    "description": "%%%.home.convert.withdraw.confirmTemplate.description%%%",
+                    "contact": "%%%.home.convert.withdraw.confirmTemplate.contact%%%",
+                    "actionTitle": "%%%.home.convert.withdraw.confirmTemplate.actionTitle%%%"
+                }
+            }
         },
         "direct": {
             "title": "Direct",
@@ -853,6 +1598,7 @@
             "subintroDesc4": "Constant moves instantly from your account to anyone, anywhere in the world. For free.",
             "backToNewOrder": "Make another transfer ",
             "goHistory": "Go to History",
+            "confirmOrderFailed": "%%%.home.direct.confirmOrderFailed%%%",
             "components": {
                 "sellInfoInput": {
                     "continueBtn": "Continue",
@@ -860,16 +1606,28 @@
                     "close": "Close",
                     "agreeSell": "Agree to send",
                     "confirmText": "You're sending {amount} {currency}",
-                    "confirmSubText": "Please check the recipient's bank info again."
+                    "confirmSubText": "Please check the recipient's bank info again.",
+                    "input2FA": "%%%.home.direct.components.sellInfoInput.input2FA%%%"
                 },
                 "orderInfo": {
                     "buyTitle": "Order Confirmation Buy Constant",
                     "sellTitle": "Order Confirmation Convert Constant",
                     "buyThankMsg": "Thanks! Please wire the Constant Trust {amount} to complete your order.",
                     "sellThankMsg": "You sent request convert {amount}. It could be take 30 minutes transfer to your bank account.",
+                    "buyAchThankMsg": "%%%.home.direct.components.orderInfo.buyAchThankMsg%%%",
+                    "sellAchThankMsg": "%%%.home.direct.components.orderInfo.sellAchThankMsg%%%",
                     "orderThankMsg": "Thanks! Please wire the Constant Trust ${amount} to complete your order.",
                     "importantMsg": "Do include your reference number {referenceNumber} in the transfer description.",
-                    "important": "IMPORTANT"
+                    "important": "IMPORTANT",
+                    "thankYou": "%%%.home.direct.components.orderInfo.thankYou%%%",
+                    "achThankYou": "%%%.home.direct.components.orderInfo.achThankYou%%%",
+                    "minuteWindow": "%%%.home.direct.components.orderInfo.minuteWindow%%%",
+                    "minuteWindowDescription": "%%%.home.direct.components.orderInfo.minuteWindowDescription%%%",
+                    "direct": {
+                        "thankYou": "%%%.home.direct.components.orderInfo.direct.thankYou%%%",
+                        "content1": "%%%.home.direct.components.orderInfo.direct.content1%%%",
+                        "content2": "%%%.home.direct.components.orderInfo.direct.content2%%%"
+                    }
                 },
                 "buy": {
                     "purchaseFailed": "Failed while purchasing, please try again",
@@ -911,6 +1669,7 @@
             "subintroTitle3": "Get USD for Constant, anytime.",
             "subintroDesc3": "Anyone who holds constant can get 1 USD for 1 Constant, that same day.",
             "max": "Maximum",
+            "total": "%%%.home.local.total%%%",
             "buy": {
                 "type": "Buy",
                 "btnText": "Buy",
@@ -951,15 +1710,49 @@
             "confirmTemplate": "\n        <div name=\"thanks\">\n          Thanks! Please wire <strong>{Constant} {Currency}</strong> to Constant Escrow to  keep your money safe while the deal finalizes.\n        </div>\n        <div name=\"bank\">\n          <p>{BankName}</p>\n          <p>\n            <span>Account: </span>\n            <span>{BankAccountNumber}</span>\n          </p>\n          <p>\n            <span>Amount: </span>\n            <span>{Constant}&nbsp;{Currency}</span>\n          </p>\n          <p>\n            <span>Reference: </span>\n            <span>{Reference}</span>\n          </p>\n        </div>\n        <div name=\"notice\">\n          <b>IMPORTANT</b>\n          <span>\n            Do include your reference number <b>{Reference}</b> in the transfer description\n          </span>\n        </div>\n        <div name=\"window\">\n          <b>30 MINUTE WINDOW: </b>\n          <span>\n            Please complete your transfer <b>within 30 minutes</b>. After that, your\n            order will be automatically cancelled.\n          </span>\n        </div>\n      ",
             "introHolderTemplate": "\n        <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n        <p>Email us at <a href=\"mailto:{email}\">{email}</a></p>\n        <p>Or</p>\n        <p>Chat with us at <a href=\"telegram:{telegram}\">{telegram}</a></p>\n      "
         },
+        "agent": {
+            "title": "%%%.home.agent.title%%%",
+            "usAccount": "%%%.home.agent.usAccount%%%",
+            "cryptAccount": "%%%.home.agent.cryptAccount%%%",
+            "minMaxBuy": "%%%.home.agent.minMaxBuy%%%",
+            "minMaxAccept": "%%%.home.agent.minMaxAccept%%%",
+            "minAmount": "%%%.home.agent.minAmount%%%",
+            "maxAmount": "%%%.home.agent.maxAmount%%%",
+            "submit": "%%%.home.agent.submit%%%",
+            "note": "%%%.home.agent.note%%%",
+            "intro": {
+                "title": "%%%.home.agent.intro.title%%%",
+                "howItWorks": "%%%.home.agent.intro.howItWorks%%%",
+                "subintroTitle": {
+                    "1": "%%%.home.agent.intro.subintroTitle.1%%%"
+                },
+                "subintroDesc": {
+                    "1": "%%%.home.agent.intro.subintroDesc.1%%%"
+                }
+            },
+            "registerFailed": "%%%.home.agent.registerFailed%%%",
+            "pending": "%%%.home.agent.pending%%%"
+        },
         "transfer": {
             "title": "Transfer",
             "caption": "How much do you want to send?",
+            "transferType": "%%%.home.transfer.transferType%%%",
+            "transferTypeCaption": {
+                "email": "%%%.home.transfer.transferTypeCaption.email%%%",
+                "batch": "%%%.home.transfer.transferTypeCaption.batch%%%"
+            },
+            "yourBalance": "%%%.home.transfer.yourBalance%%%",
+            "validateMaxInput": "%%%.home.transfer.validateMaxInput%%%",
             "transferFeeLabel": "Transfer fee",
             "subTitle": "Free. To anyone, anywhere.",
             "introTitle": "Send money to anyone, anywhere.",
             "transferBtn": "Send",
+            "address": {
+                "email": "%%%.home.transfer.address.email%%%"
+            },
             "phToAddress": "Recipient’s email or Ethereum wallet address",
             "confirmMsg": "Are you sure you want to transfer {amount} USD to {address}?",
+            "batchConfirmMsg": "%%%.home.transfer.batchConfirmMsg%%%",
             "transferFailed": "Failed while transfering, please try again",
             "transferSuccessful": "Your transfer was completed successfully",
             "timeLimit": "Your money will arrive within ",
@@ -979,20 +1772,222 @@
             },
             "howItWorks": "How it works",
             "amount": "Amount",
-            "to": "To"
+            "to": "To",
+            "input2FA": "%%%.home.transfer.input2FA%%%"
+        },
+        "transferCrypto": {
+            "title": "%%%.home.transferCrypto.title%%%",
+            "caption": "%%%.home.transferCrypto.caption%%%",
+            "transferType": "%%%.home.transferCrypto.transferType%%%",
+            "transferTypeCaption": {
+                "eth": "%%%.home.transferCrypto.transferTypeCaption.eth%%%",
+                "eos": "%%%.home.transferCrypto.transferTypeCaption.eos%%%",
+                "tomo": "%%%.home.transferCrypto.transferTypeCaption.tomo%%%",
+                "usdt": "%%%.home.transferCrypto.transferTypeCaption.usdt%%%",
+                "susd": "%%%.home.transferCrypto.transferTypeCaption.susd%%%",
+                "batch": "%%%.home.transferCrypto.transferTypeCaption.batch%%%"
+            },
+            "yourBalance": "%%%.home.transferCrypto.yourBalance%%%",
+            "validateMaxInput": "%%%.home.transferCrypto.validateMaxInput%%%",
+            "transferFeeLabel": "%%%.home.transferCrypto.transferFeeLabel%%%",
+            "subTitle": "%%%.home.transferCrypto.subTitle%%%",
+            "introTitle": "%%%.home.transferCrypto.introTitle%%%",
+            "transferBtn": "%%%.home.transferCrypto.transferBtn%%%",
+            "address": {
+                "email": "%%%.home.transferCrypto.address.email%%%",
+                "eth": "%%%.home.transferCrypto.address.eth%%%",
+                "eos": "%%%.home.transferCrypto.address.eos%%%",
+                "tomo": "%%%.home.transferCrypto.address.tomo%%%",
+                "usdt": "%%%.home.transferCrypto.address.usdt%%%",
+                "susd": "%%%.home.transferCrypto.address.susd%%%"
+            },
+            "phToAddress": "%%%.home.transferCrypto.phToAddress%%%",
+            "confirmMsg": "%%%.home.transferCrypto.confirmMsg%%%",
+            "batchConfirmMsg": "%%%.home.transferCrypto.batchConfirmMsg%%%",
+            "transferFailed": "%%%.home.transferCrypto.transferFailed%%%",
+            "transferSuccessful": "%%%.home.transferCrypto.transferSuccessful%%%",
+            "timeLimit": "%%%.home.transferCrypto.timeLimit%%%",
+            "timeLimitMunite": "%%%.home.transferCrypto.timeLimitMunite%%%",
+            "subintroTitle1": "%%%.home.transferCrypto.subintroTitle1%%%",
+            "subintroDesc1": "%%%.home.transferCrypto.subintroDesc1%%%",
+            "subintroTitle2": "%%%.home.transferCrypto.subintroTitle2%%%",
+            "subintroDesc2": "%%%.home.transferCrypto.subintroDesc2%%%",
+            "subintroTitle3": "%%%.home.transferCrypto.subintroTitle3%%%",
+            "subintroDesc3": "%%%.home.transferCrypto.subintroDesc3%%%",
+            "backToNewOrder": "%%%.home.transferCrypto.backToNewOrder%%%",
+            "goHistory": "%%%.home.transferCrypto.goHistory%%%",
+            "components": {
+                "orderInfo": {
+                    "title": "%%%.home.transferCrypto.components.orderInfo.title%%%"
+                }
+            },
+            "howItWorks": "%%%.home.transferCrypto.howItWorks%%%",
+            "amount": "%%%.home.transferCrypto.amount%%%",
+            "to": "%%%.home.transferCrypto.to%%%",
+            "input2FA": "%%%.home.transferCrypto.input2FA%%%"
         },
         "constantLoan": {
-            "introTitle": "Constant Loan",
+            "faqs": {
+                "question1": "%%%.home.constantLoan.faqs.question1%%%",
+                "answer1": "%%%.home.constantLoan.faqs.answer1%%%",
+                "question2": "%%%.home.constantLoan.faqs.question2%%%",
+                "answer2": "%%%.home.constantLoan.faqs.answer2%%%",
+                "question3": "%%%.home.constantLoan.faqs.question3%%%",
+                "answer3": "%%%.home.constantLoan.faqs.answer3%%%",
+                "question4": "%%%.home.constantLoan.faqs.question4%%%",
+                "answer4": "%%%.home.constantLoan.faqs.answer4%%%",
+                "question5": "%%%.home.constantLoan.faqs.question5%%%",
+                "answer5": "%%%.home.constantLoan.faqs.answer5%%%",
+                "question6": "%%%.home.constantLoan.faqs.question6%%%",
+                "answer6": "%%%.home.constantLoan.faqs.answer6%%%",
+                "question7": "%%%.home.constantLoan.faqs.question7%%%",
+                "answer7": "%%%.home.constantLoan.faqs.answer7%%%"
+            },
+            "title": "%%%.home.constantLoan.title%%%",
+            "subTitle": "%%%.home.constantLoan.subTitle%%%",
             "headLine": "Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.",
-            "howItWorks": "How it works",
             "exchange": {
+                "maxRateTooltip": "%%%.home.constantLoan.exchange.maxRateTooltip%%%",
+                "minTermTooltip": "%%%.home.constantLoan.exchange.minTermTooltip%%%",
                 "caption": "Constant Loan",
-                "buttonText": "Loan"
+                "buttonText": "Loan",
+                "month": "%%%.home.constantLoan.exchange.month%%%",
+                "months": "%%%.home.constantLoan.exchange.months%%%",
+                "apr": "%%%.home.constantLoan.exchange.apr%%%",
+                "termLabel": "%%%.home.constantLoan.exchange.termLabel%%%",
+                "amountLabel": "%%%.home.constantLoan.exchange.amountLabel%%%",
+                "collateralLabel": "%%%.home.constantLoan.exchange.collateralLabel%%%",
+                "startDateLabel": "%%%.home.constantLoan.exchange.startDateLabel%%%",
+                "endDateLabel": "%%%.home.constantLoan.exchange.endDateLabel%%%",
+                "toolTipCollateral": "%%%.home.constantLoan.exchange.toolTipCollateral%%%",
+                "walletAddressLabel": "%%%.home.constantLoan.exchange.walletAddressLabel%%%",
+                "walletAlias": "%%%.home.constantLoan.exchange.walletAlias%%%",
+                "moreInfo": "%%%.home.constantLoan.exchange.moreInfo%%%",
+                "monthLoan": "%%%.home.constantLoan.exchange.monthLoan%%%",
+                "monthsLoan": "%%%.home.constantLoan.exchange.monthsLoan%%%"
+            },
+            "interestTable": {
+                "title": "%%%.home.constantLoan.interestTable.title%%%",
+                "description": "%%%.home.constantLoan.interestTable.description%%%"
+            },
+            "what": {
+                "whatCaption0": "%%%.home.constantLoan.what.whatCaption0%%%",
+                "whatCaption1": "%%%.home.constantLoan.what.whatCaption1%%%",
+                "whatCaption2": "%%%.home.constantLoan.what.whatCaption2%%%",
+                "whatCaption3": "%%%.home.constantLoan.what.whatCaption3%%%",
+                "whatDesc0": "%%%.home.constantLoan.what.whatDesc0%%%",
+                "whatDesc1": "%%%.home.constantLoan.what.whatDesc1%%%",
+                "whatDesc2": "%%%.home.constantLoan.what.whatDesc2%%%",
+                "whatDesc3": "%%%.home.constantLoan.what.whatDesc3%%%"
+            },
+            "howItWorks": {
+                "intro": "%%%.home.constantLoan.howItWorks.intro%%%",
+                "step1": "%%%.home.constantLoan.howItWorks.step1%%%",
+                "title1": "%%%.home.constantLoan.howItWorks.title1%%%",
+                "desc1": "%%%.home.constantLoan.howItWorks.desc1%%%",
+                "step2": "%%%.home.constantLoan.howItWorks.step2%%%",
+                "title2": "%%%.home.constantLoan.howItWorks.title2%%%",
+                "desc2": "%%%.home.constantLoan.howItWorks.desc2%%%",
+                "step3": "%%%.home.constantLoan.howItWorks.step3%%%",
+                "title3": "%%%.home.constantLoan.howItWorks.title3%%%",
+                "desc3": "%%%.home.constantLoan.howItWorks.desc3%%%"
+            },
+            "reference": "%%%.home.constantLoan.reference%%%",
+            "transaction": {
+                "title": "%%%.home.constantLoan.transaction.title%%%",
+                "message": "%%%.home.constantLoan.transaction.message%%%",
+                "copiedAddress": "%%%.home.constantLoan.transaction.copiedAddress%%%",
+                "scanQR": "%%%.home.constantLoan.transaction.scanQR%%%",
+                "summarizeTitle": "%%%.home.constantLoan.transaction.summarizeTitle%%%",
+                "messageDescription": "%%%.home.constantLoan.transaction.messageDescription%%%",
+                "minuteWindow": "%%%.home.constantLoan.transaction.minuteWindow%%%",
+                "minuteWindowDescription": "%%%.home.constantLoan.transaction.minuteWindowDescription%%%",
+                "transactionID": "%%%.home.constantLoan.transaction.transactionID%%%",
+                "noticeTpl": "%%%.home.constantLoan.transaction.noticeTpl%%%",
+                "summarizeContent": "%%%.home.constantLoan.transaction.summarizeContent%%%",
+                "summarizeContent1": "%%%.home.constantLoan.transaction.summarizeContent1%%%",
+                "repaymentField": "%%%.home.constantLoan.transaction.repaymentField%%%",
+                "borrowMore": "%%%.home.constantLoan.transaction.borrowMore%%%",
+                "termField": "%%%.home.constantLoan.transaction.termField%%%",
+                "termUnit": "%%%.home.constantLoan.transaction.termUnit%%%",
+                "termUnit1": "%%%.home.constantLoan.transaction.termUnit1%%%"
+            },
+            "history": {
+                "itemTpl": "%%%.home.constantLoan.history.itemTpl%%%",
+                "address": "%%%.home.constantLoan.history.address%%%",
+                "collateralAddress": "%%%.home.constantLoan.history.collateralAddress%%%",
+                "renew": "%%%.home.constantLoan.history.renew%%%",
+                "status": {
+                    "pending": "%%%.home.constantLoan.history.status.pending%%%",
+                    "accepted": "%%%.home.constantLoan.history.status.accepted%%%",
+                    "payingInterest": "%%%.home.constantLoan.history.status.payingInterest%%%",
+                    "done": "%%%.home.constantLoan.history.status.done%%%",
+                    "cancelled": "%%%.home.constantLoan.history.status.cancelled%%%",
+                    "withdrawed": "%%%.home.constantLoan.history.status.withdrawed%%%",
+                    "expired": "%%%.home.constantLoan.history.status.expired%%%",
+                    "fullPayment": "%%%.home.constantLoan.history.status.fullPayment%%%"
+                },
+                "confirmPay": {
+                    "payingInterest": {
+                        "title": "%%%.home.constantLoan.history.confirmPay.payingInterest.title%%%",
+                        "content": "%%%.home.constantLoan.history.confirmPay.payingInterest.content%%%",
+                        "success": "%%%.home.constantLoan.history.confirmPay.payingInterest.success%%%"
+                    },
+                    "fullPayment": {
+                        "title": "%%%.home.constantLoan.history.confirmPay.fullPayment.title%%%",
+                        "content": "%%%.home.constantLoan.history.confirmPay.fullPayment.content%%%",
+                        "success": "%%%.home.constantLoan.history.confirmPay.fullPayment.success%%%"
+                    }
+                },
+                "interestPaymentTitle": "%%%.home.constantLoan.history.interestPaymentTitle%%%",
+                "interestPaymentContent": "%%%.home.constantLoan.history.interestPaymentContent%%%",
+                "balanceNotEnough": "%%%.home.constantLoan.history.balanceNotEnough%%%",
+                "paySuccess": "%%%.home.constantLoan.history.paySuccess%%%",
+                "noHistoryData": "%%%.home.constantLoan.history.noHistoryData%%%",
+                "paymentDetail": "%%%.home.constantLoan.history.paymentDetail%%%",
+                "itemPayment": "%%%.home.constantLoan.history.itemPayment%%%",
+                "noPaymentDetail": "%%%.home.constantLoan.history.noPaymentDetail%%%",
+                "payConstant": "%%%.home.constantLoan.history.payConstant%%%",
+                "payCollateral": "%%%.home.constantLoan.history.payCollateral%%%"
             },
             "errorMessages": {
-                "required": "Required"
+                "required": "Required",
+                "minimumBorrowAmount": "%%%.home.constantLoan.errorMessages.minimumBorrowAmount%%%",
+                "inValidWalletAddress": "%%%.home.constantLoan.errorMessages.inValidWalletAddress%%%",
+                "rangeInterestRate": "%%%.home.constantLoan.errorMessages.rangeInterestRate%%%"
             },
-            "learnMore": "Learn more"
+            "learnMore": "Learn more",
+            "listApplications": {
+                "heading": "%%%.home.constantLoan.listApplications.heading%%%",
+                "createdDate": "%%%.home.constantLoan.listApplications.createdDate%%%",
+                "principal": "%%%.home.constantLoan.listApplications.principal%%%",
+                "interest": "%%%.home.constantLoan.listApplications.interest%%%",
+                "status": "%%%.home.constantLoan.listApplications.status%%%",
+                "mapStatus": {
+                    "pending": "%%%.home.constantLoan.listApplications.mapStatus.pending%%%",
+                    "recieved": "%%%.home.constantLoan.listApplications.mapStatus.recieved%%%",
+                    "accepted": "%%%.home.constantLoan.listApplications.mapStatus.accepted%%%",
+                    "payingInterest": "%%%.home.constantLoan.listApplications.mapStatus.payingInterest%%%",
+                    "done": "%%%.home.constantLoan.listApplications.mapStatus.done%%%",
+                    "withdrawed": "%%%.home.constantLoan.listApplications.mapStatus.withdrawed%%%",
+                    "tnxFailed": "%%%.home.constantLoan.listApplications.mapStatus.tnxFailed%%%",
+                    "cancelled": "%%%.home.constantLoan.listApplications.mapStatus.cancelled%%%",
+                    "rejected": "%%%.home.constantLoan.listApplications.mapStatus.rejected%%%",
+                    "expired": "%%%.home.constantLoan.listApplications.mapStatus.expired%%%",
+                    "fullPayment": "%%%.home.constantLoan.listApplications.mapStatus.fullPayment%%%"
+                }
+            },
+            "advice": {
+                "title": "%%%.home.constantLoan.advice.title%%%",
+                "name": "%%%.home.constantLoan.advice.name%%%",
+                "namePlaceHolder": "%%%.home.constantLoan.advice.namePlaceHolder%%%",
+                "phone": "%%%.home.constantLoan.advice.phone%%%",
+                "phonePlaceHolder": "%%%.home.constantLoan.advice.phonePlaceHolder%%%",
+                "agreeToBorrow": "%%%.home.constantLoan.advice.agreeToBorrow%%%",
+                "submit": "%%%.home.constantLoan.advice.submit%%%",
+                "registerSuccess": "%%%.home.constantLoan.advice.registerSuccess%%%",
+                "regiserFail": "%%%.home.constantLoan.advice.regiserFail%%%"
+            }
         },
         "bottomBannerText": "You deserve a better bank",
         "bottomBannerButton": "Open an account",
@@ -1006,6 +2001,7 @@
         "midBanner0": "Protect the value of your money",
         "midBanner1": "Send money anywhere, for free",
         "midBanner2": "Secure and grow your money",
+        "whatChatWithUs": "%%%.home.whatChatWithUs%%%",
         "whatCaption0": "Stable",
         "whatCaption1": "Insured",
         "whatCaption2": "Accredited",
@@ -1021,6 +2017,10 @@
         "whatDesc0": "No matter where in the world you are, your Constant keeps the value of the USD. And you can withdraw in your local currency anytime.",
         "whatDesc2": "Keep your money safe with a chartered, regulated, US financial institution, subject to frequent audits.",
         "whatDesc3": "No limits, no fees. Constant moves instantly from your account to anyone, anywhere in the world. For free.",
+        "whatMore0": "%%%.home.whatMore0%%%",
+        "whatMore1": "%%%.home.whatMore1%%%",
+        "whatMore2": "%%%.home.whatMore2%%%",
+        "whatMore3": "%%%.home.whatMore3%%%",
         "whatButton": "Watch how it works",
         "helpTitle": "Special price for US Student",
         "helpButton": "Get started today",
@@ -1081,30 +2081,58 @@
         "added": "Nice! Next time you can access Constant quickly from the app."
     },
     "referralPage": {
-        "headerTitle": "Earn your first Constant",
-        "headerDesc": "We provide an affordable transfer money service",
-        "introTitle1": "Sign up an account",
-        "introTitle2": "Purchase Constant",
-        "introTitle3": "Invite some friends to join Constant",
-        "introTitle3b": "Sign up required",
-        "introValue1a": "Sign up free today",
-        "introValue1b": "Completed",
-        "introValue2a": "5 CONSTANT",
-        "introValue2b": "for first order",
-        "introValue3a": "5 CONSTANT",
-        "introValue3b": "for first successful transaction order",
-        "referralEmail": "Email addresses, seperate by commas",
-        "btnTextSendEmail": "Send invites",
-        "emailsInvalid": "Email addresses are invalid",
-        "howItWorkTitle": "How it works",
-        "howItWorkDesc": "\n        <p>\n        - Start by visiting the referrals page. From this page you can copy your referral link and send it to your friends.\n      </p>\n      <p> - Your friends can click the referral link and sign up an account on Constant.</p>\n      <p> - They will initiate a transaction via Constant. </p>\n      </p>\n      <p>\n        - As soon as your friend initiates a first overseas transaction via Constant, you will receive a 5 Const referral bonus when the transaction completes.\n      </p>\n    ",
-        "moreDetailsTitle": "More details",
-        "moreDetailsDesc": "\n            <p>\n              - In just one click you can share your referral link via Facebook, Twitter, or anywhere\n            </p>\n            <p>\n              - Referral links look just like a link to https://constant.money/ except they have special code on the end to identify your account.  For example: <b>https://constant.money/referral/YOUR_REFERRAL_ID</b>\n            </p>\n            <p>\n              - There is no limit to the number of friends you can refer, although we do reserve the right to adjust or change the referral program rules in the future.\n            </p>\n    ",
-        "gamificationTitle": "Gamification",
-        "gamificationDesc": "\n      <p> - Sign up an account </p>\n      <p> - Purchase Constant (+5 CST for first order)</p>\n      <p> - Invite some friends to join Constant ( +5 CST for each friend with at least 1 successful overseas transfer)</p>\n    ",
-        "labelShare": "Share your link",
-        "btnShare": "Copy link",
-        "copied": "Referral link copied to clipboard."
+        "title": "%%%.referralPage.title%%%",
+        "description": "%%%.referralPage.description%%%",
+        "expirationDate": "%%%.referralPage.expirationDate%%%",
+        "body": {
+            "item1": {
+                "title": "%%%.referralPage.body.item1.title%%%",
+                "description": "%%%.referralPage.body.item1.description%%%",
+                "bonusRate": "%%%.referralPage.body.item1.bonusRate%%%"
+            },
+            "item2": {
+                "title": "%%%.referralPage.body.item2.title%%%",
+                "description": "%%%.referralPage.body.item2.description%%%",
+                "bonusRate": "%%%.referralPage.body.item2.bonusRate%%%"
+            },
+            "item3": {
+                "title": "%%%.referralPage.body.item3.title%%%",
+                "description": "%%%.referralPage.body.item3.description%%%",
+                "additionalDesc": "%%%.referralPage.body.item3.additionalDesc%%%",
+                "bonusRate": "%%%.referralPage.body.item3.bonusRate%%%"
+            }
+        },
+        "loginRequired": "%%%.referralPage.loginRequired%%%",
+        "shareFbSuccess": "%%%.referralPage.shareFbSuccess%%%",
+        "faqs": {
+            "title": "%%%.referralPage.faqs.title%%%",
+            "content": {
+                "faq1": {
+                    "question": "%%%.referralPage.faqs.content.faq1.question%%%",
+                    "answer": "%%%.referralPage.faqs.content.faq1.answer%%%"
+                },
+                "faq2": {
+                    "question": "%%%.referralPage.faqs.content.faq2.question%%%",
+                    "answer": "%%%.referralPage.faqs.content.faq2.answer%%%"
+                },
+                "faq3": {
+                    "question": "%%%.referralPage.faqs.content.faq3.question%%%",
+                    "answer": "%%%.referralPage.faqs.content.faq3.answer%%%"
+                },
+                "faq4": {
+                    "question": "%%%.referralPage.faqs.content.faq4.question%%%",
+                    "answer": "%%%.referralPage.faqs.content.faq4.answer%%%"
+                },
+                "faq5": {
+                    "question": "%%%.referralPage.faqs.content.faq5.question%%%",
+                    "answer": "%%%.referralPage.faqs.content.faq5.answer%%%"
+                },
+                "faq6": {
+                    "question": "%%%.referralPage.faqs.content.faq6.question%%%",
+                    "answer": "%%%.referralPage.faqs.content.faq6.answer%%%"
+                }
+            }
+        }
     },
     "affiliatePage": {
         "headerTitleNoLogin": "Become an affiliate",
@@ -1117,5 +2145,1187 @@
         "copied": "Affiliate link copied to clipboard.",
         "termConditionTitle": "Term & Condition",
         "termConditionDesc": "\n      <p>Agent will immediately earn $5 for the first transaction of acquired users. After that, Agent will earn  0.15% of volume users made in that month as commission. </p>\n      <p>User A conducts the first transaction which is BUYING CONSTANT and the amount must be equal to or greater than $1,000, then Agent will immediately earn $5. After that, User A makes the next transaction as BUYING CONSTANT, and Agent will earn 0.15% of each purchase. Total volume of User A in the month must be greater than $2000. Commission will be paid at the end of the month.</p>\n    "
+    },
+    "proSaving": {
+        "pending": "%%%.proSaving.pending%%%",
+        "yourAccreditation": {
+            "date": "%%%.proSaving.yourAccreditation.date%%%",
+            "type": "%%%.proSaving.yourAccreditation.type%%%",
+            "option": "%%%.proSaving.yourAccreditation.option%%%",
+            "status": "%%%.proSaving.yourAccreditation.status%%%",
+            "assets": "%%%.proSaving.yourAccreditation.assets%%%",
+            "income": "%%%.proSaving.yourAccreditation.income%%%",
+            "options": {
+                "1": "%%%.proSaving.yourAccreditation.options.1%%%",
+                "2": "%%%.proSaving.yourAccreditation.options.2%%%",
+                "3": "%%%.proSaving.yourAccreditation.options.3%%%",
+                "4": "%%%.proSaving.yourAccreditation.options.4%%%"
+            }
+        },
+        "netWorths": "%%%.proSaving.netWorths%%%",
+        "yes": "%%%.proSaving.yes%%%",
+        "no": "%%%.proSaving.no%%%",
+        "agreement": "%%%.proSaving.agreement%%%",
+        "accreditation_evidence_location": "%%%.proSaving.accreditation_evidence_location%%%",
+        "verifierRole": "%%%.proSaving.verifierRole%%%",
+        "verifierEmail": "%%%.proSaving.verifierEmail%%%",
+        "accreditation": "%%%.proSaving.accreditation%%%",
+        "photoIncome1": "%%%.proSaving.photoIncome1%%%",
+        "photoIncome2": "%%%.proSaving.photoIncome2%%%",
+        "accreditationAlt": "%%%.proSaving.accreditationAlt%%%",
+        "title1": "%%%.proSaving.title1%%%",
+        "desc1": "%%%.proSaving.desc1%%%",
+        "income": {
+            "title": "%%%.proSaving.income.title%%%",
+            "alt": "%%%.proSaving.income.alt%%%",
+            "description": "%%%.proSaving.income.description%%%"
+        },
+        "assets": {
+            "title": "%%%.proSaving.assets.title%%%",
+            "alt": "%%%.proSaving.assets.alt%%%",
+            "description": "%%%.proSaving.assets.description%%%"
+        },
+        "text1": "%%%.proSaving.text1%%%",
+        "text2": "%%%.proSaving.text2%%%",
+        "text3": "%%%.proSaving.text3%%%",
+        "text4": "%%%.proSaving.text4%%%",
+        "investment_advisor": "%%%.proSaving.investment_advisor%%%",
+        "broker": "%%%.proSaving.broker%%%",
+        "accountant": "%%%.proSaving.accountant%%%",
+        "lawyer": "%%%.proSaving.lawyer%%%",
+        "ssn": "%%%.proSaving.ssn%%%",
+        "accreditation_evidence_allow_credit_report": "%%%.proSaving.accreditation_evidence_allow_credit_report%%%",
+        "totalDebt": "%%%.proSaving.totalDebt%%%",
+        "popover1": "%%%.proSaving.popover1%%%",
+        "alert": {
+            "success": "%%%.proSaving.alert.success%%%"
+        }
+    },
+    "homeWhatwedo": {
+        "desc": "%%%.homeWhatwedo.desc%%%"
+    },
+    "faqs": {
+        "title": "%%%.faqs.title%%%",
+        "label": {
+            "account": "%%%.faqs.label.account%%%",
+            "initialInvestment": "%%%.faqs.label.initialInvestment%%%",
+            "invest": "%%%.faqs.label.invest%%%",
+            "returns": "%%%.faqs.label.returns%%%",
+            "general": "%%%.faqs.label.general%%%",
+            "deposit": "%%%.faqs.label.deposit%%%",
+            "transfer": "%%%.faqs.label.transfer%%%",
+            "withdraw": "%%%.faqs.label.withdraw%%%",
+            "tech": "%%%.faqs.label.tech%%%",
+            "collateral": "%%%.faqs.label.collateral%%%",
+            "interest": "%%%.faqs.label.interest%%%",
+            "repayment": "%%%.faqs.label.repayment%%%",
+            "buy": "%%%.faqs.label.buy%%%",
+            "sell": "%%%.faqs.label.sell%%%",
+            "value": "%%%.faqs.label.value%%%"
+        },
+        "buy": {
+            "question1": "%%%.faqs.buy.question1%%%",
+            "answer1": "%%%.faqs.buy.answer1%%%",
+            "question2": "%%%.faqs.buy.question2%%%",
+            "answer2": "%%%.faqs.buy.answer2%%%",
+            "question3": "%%%.faqs.buy.question3%%%",
+            "answer3": "%%%.faqs.buy.answer3%%%"
+        },
+        "sell": {
+            "question1": "%%%.faqs.sell.question1%%%",
+            "answer1": "%%%.faqs.sell.answer1%%%"
+        },
+        "value": {
+            "question1": "%%%.faqs.value.question1%%%",
+            "answer1": "%%%.faqs.value.answer1%%%",
+            "question2": "%%%.faqs.value.question2%%%",
+            "answer2": "%%%.faqs.value.answer2%%%"
+        },
+        "collateral": {
+            "question1": "%%%.faqs.collateral.question1%%%",
+            "answer1": "%%%.faqs.collateral.answer1%%%",
+            "question2": "%%%.faqs.collateral.question2%%%",
+            "answer2": "%%%.faqs.collateral.answer2%%%",
+            "question3": "%%%.faqs.collateral.question3%%%",
+            "answer3": "%%%.faqs.collateral.answer3%%%",
+            "question4": "%%%.faqs.collateral.question4%%%",
+            "answer4": "%%%.faqs.collateral.answer4%%%"
+        },
+        "repayment": {
+            "question1": "%%%.faqs.repayment.question1%%%",
+            "answer1": "%%%.faqs.repayment.answer1%%%",
+            "question2": "%%%.faqs.repayment.question2%%%",
+            "answer2": "%%%.faqs.repayment.answer2%%%",
+            "question3": "%%%.faqs.repayment.question3%%%",
+            "answer3": "%%%.faqs.repayment.answer3%%%",
+            "question4": "%%%.faqs.repayment.question4%%%",
+            "answer4": "%%%.faqs.repayment.answer4%%%",
+            "question5": "%%%.faqs.repayment.question5%%%",
+            "answer5": "%%%.faqs.repayment.answer5%%%",
+            "question6": "%%%.faqs.repayment.question6%%%",
+            "answer6": "%%%.faqs.repayment.answer6%%%"
+        },
+        "interest": {
+            "question1": "%%%.faqs.interest.question1%%%",
+            "answer1": "%%%.faqs.interest.answer1%%%",
+            "question2": "%%%.faqs.interest.question2%%%",
+            "answer2": "%%%.faqs.interest.answer2%%%"
+        },
+        "cryptoLoanTech": {
+            "question1": "%%%.faqs.cryptoLoanTech.question1%%%",
+            "answer1": "%%%.faqs.cryptoLoanTech.answer1%%%",
+            "question2": "%%%.faqs.cryptoLoanTech.question2%%%",
+            "answer2": "%%%.faqs.cryptoLoanTech.answer2%%%"
+        },
+        "tech": {
+            "question1": "%%%.faqs.tech.question1%%%",
+            "answer1": "%%%.faqs.tech.answer1%%%",
+            "question2": "%%%.faqs.tech.question2%%%",
+            "answer2": "%%%.faqs.tech.answer2%%%"
+        },
+        "withdraw": {
+            "question1": "%%%.faqs.withdraw.question1%%%",
+            "answer1": "%%%.faqs.withdraw.answer1%%%",
+            "question2": "%%%.faqs.withdraw.question2%%%",
+            "answer2": "%%%.faqs.withdraw.answer2%%%",
+            "question3": "%%%.faqs.withdraw.question3%%%",
+            "answer3": "%%%.faqs.withdraw.answer3%%%",
+            "question4": "%%%.faqs.withdraw.question4%%%",
+            "answer4": "%%%.faqs.withdraw.answer4%%%",
+            "question5": "%%%.faqs.withdraw.question5%%%",
+            "answer5": "%%%.faqs.withdraw.answer5%%%"
+        },
+        "deposit": {
+            "question1": "%%%.faqs.deposit.question1%%%",
+            "answer1": "%%%.faqs.deposit.answer1%%%",
+            "question2": "%%%.faqs.deposit.question2%%%",
+            "answer2": "%%%.faqs.deposit.answer2%%%",
+            "question3": "%%%.faqs.deposit.question3%%%",
+            "answer3": "%%%.faqs.deposit.answer3%%%",
+            "question4": "%%%.faqs.deposit.question4%%%",
+            "answer4": "%%%.faqs.deposit.answer4%%%",
+            "question5": "%%%.faqs.deposit.question5%%%",
+            "answer5": "%%%.faqs.deposit.answer5%%%",
+            "question6": "%%%.faqs.deposit.question6%%%",
+            "answer6": "%%%.faqs.deposit.answer6%%%"
+        },
+        "transfer": {
+            "question1": "%%%.faqs.transfer.question1%%%",
+            "answer1": "%%%.faqs.transfer.answer1%%%",
+            "question2": "%%%.faqs.transfer.question2%%%",
+            "answer2": "%%%.faqs.transfer.answer2%%%",
+            "question3": "%%%.faqs.transfer.question3%%%",
+            "answer3": "%%%.faqs.transfer.answer3%%%",
+            "question4": "%%%.faqs.transfer.question4%%%",
+            "answer4": "%%%.faqs.transfer.answer4%%%",
+            "question5": "%%%.faqs.transfer.question5%%%",
+            "answer5": "%%%.faqs.transfer.answer5%%%",
+            "question6": "%%%.faqs.transfer.question6%%%",
+            "answer6": "%%%.faqs.transfer.answer6%%%"
+        },
+        "account": {
+            "question1": "%%%.faqs.account.question1%%%",
+            "answer1": "%%%.faqs.account.answer1%%%",
+            "question2": "%%%.faqs.account.question2%%%",
+            "answer2": "%%%.faqs.account.answer2%%%",
+            "question3": "%%%.faqs.account.question3%%%",
+            "answer3": "%%%.faqs.account.answer3%%%",
+            "question4": "%%%.faqs.account.question4%%%",
+            "answer4": "%%%.faqs.account.answer4%%%",
+            "question5": "%%%.faqs.account.question5%%%",
+            "answer5": "%%%.faqs.account.answer5%%%",
+            "question6": "%%%.faqs.account.question6%%%",
+            "answer6": "%%%.faqs.account.answer6%%%"
+        },
+        "initialInvestment": {
+            "question1": "%%%.faqs.initialInvestment.question1%%%",
+            "answer1": "%%%.faqs.initialInvestment.answer1%%%",
+            "question2": "%%%.faqs.initialInvestment.question2%%%",
+            "answer2": "%%%.faqs.initialInvestment.answer2%%%",
+            "question3": "%%%.faqs.initialInvestment.question3%%%",
+            "answer3": "%%%.faqs.initialInvestment.answer3%%%",
+            "question4": "%%%.faqs.initialInvestment.question4%%%",
+            "answer4": "%%%.faqs.initialInvestment.answer4%%%",
+            "question5": "%%%.faqs.initialInvestment.question5%%%",
+            "answer5": "%%%.faqs.initialInvestment.answer5%%%",
+            "question6": "%%%.faqs.initialInvestment.question6%%%",
+            "answer6": "%%%.faqs.initialInvestment.answer6%%%",
+            "question7": "%%%.faqs.initialInvestment.question7%%%",
+            "answer7": "%%%.faqs.initialInvestment.answer7%%%"
+        },
+        "invest": {
+            "question1": "%%%.faqs.invest.question1%%%",
+            "answer1": "%%%.faqs.invest.answer1%%%",
+            "question2": "%%%.faqs.invest.question2%%%",
+            "answer2": "%%%.faqs.invest.answer2%%%",
+            "question3": "%%%.faqs.invest.question3%%%",
+            "answer3": "%%%.faqs.invest.answer3%%%",
+            "question4": "%%%.faqs.invest.question4%%%",
+            "answer4": "%%%.faqs.invest.answer4%%%",
+            "question5": "%%%.faqs.invest.question5%%%",
+            "answer5": "%%%.faqs.invest.answer5%%%",
+            "question6": "%%%.faqs.invest.question6%%%",
+            "answer6": "%%%.faqs.invest.answer6%%%",
+            "question7": "%%%.faqs.invest.question7%%%",
+            "answer7": "%%%.faqs.invest.answer7%%%",
+            "question8": "%%%.faqs.invest.question8%%%",
+            "answer8": "%%%.faqs.invest.answer8%%%",
+            "question9": "%%%.faqs.invest.question9%%%",
+            "answer9": "%%%.faqs.invest.answer9%%%",
+            "question10": "%%%.faqs.invest.question10%%%",
+            "answer10": "%%%.faqs.invest.answer10%%%",
+            "question11": "%%%.faqs.invest.question11%%%",
+            "answer11": "%%%.faqs.invest.answer11%%%",
+            "question12": "%%%.faqs.invest.question12%%%",
+            "answer12": "%%%.faqs.invest.answer12%%%"
+        },
+        "returns": {
+            "question1": "%%%.faqs.returns.question1%%%",
+            "answer1": "%%%.faqs.returns.answer1%%%",
+            "question2": "%%%.faqs.returns.question2%%%",
+            "answer2": "%%%.faqs.returns.answer2%%%",
+            "question3": "%%%.faqs.returns.question3%%%",
+            "answer3": "%%%.faqs.returns.answer3%%%",
+            "question4": "%%%.faqs.returns.question4%%%",
+            "answer4": "%%%.faqs.returns.answer4%%%",
+            "question5": "%%%.faqs.returns.question5%%%",
+            "answer5": "%%%.faqs.returns.answer5%%%"
+        },
+        "general": {
+            "question1": "%%%.faqs.general.question1%%%",
+            "answer1": "%%%.faqs.general.answer1%%%",
+            "question2": "%%%.faqs.general.question2%%%",
+            "answer2": "%%%.faqs.general.answer2%%%",
+            "question3": "%%%.faqs.general.question3%%%",
+            "answer3": "%%%.faqs.general.answer3%%%",
+            "question4": "%%%.faqs.general.question4%%%",
+            "answer4": "%%%.faqs.general.answer4%%%",
+            "question5": "%%%.faqs.general.question5%%%",
+            "answer5": "%%%.faqs.general.answer5%%%",
+            "question6": "%%%.faqs.general.question6%%%",
+            "answer6": "%%%.faqs.general.answer6%%%"
+        }
+    },
+    "statistics": {
+        "s0": "%%%.statistics.s0%%%",
+        "s1": "%%%.statistics.s1%%%",
+        "s2": "%%%.statistics.s2%%%",
+        "s3": "%%%.statistics.s3%%%",
+        "s4": "%%%.statistics.s4%%%",
+        "s5": "%%%.statistics.s5%%%"
+    },
+    "exchangeInputBuyForm": {
+        "minUsdRequired": "%%%.exchangeInputBuyForm.minUsdRequired%%%",
+        "minVndRequired": "%%%.exchangeInputBuyForm.minVndRequired%%%",
+        "fiatAmountInputLabel": "%%%.exchangeInputBuyForm.fiatAmountInputLabel%%%",
+        "currencyDropdownLabel": "%%%.exchangeInputBuyForm.currencyDropdownLabel%%%",
+        "amountResultLabel": "%%%.exchangeInputBuyForm.amountResultLabel%%%",
+        "buyBtn": "%%%.exchangeInputBuyForm.buyBtn%%%",
+        "investNow": "%%%.exchangeInputBuyForm.investNow%%%",
+        "amountTooSmall": "%%%.exchangeInputBuyForm.amountTooSmall%%%",
+        "noAgentAvaiable": "%%%.exchangeInputBuyForm.noAgentAvaiable%%%",
+        "getAmountFailed": "%%%.exchangeInputBuyForm.getAmountFailed%%%",
+        "getCurrencyListFailed": "%%%.exchangeInputBuyForm.getCurrencyListFailed%%%",
+        "loading": "%%%.exchangeInputBuyForm.loading%%%",
+        "amountMustBeLargerThan": "%%%.exchangeInputBuyForm.amountMustBeLargerThan%%%",
+        "howMuchDoYouWantToDeposit": "%%%.exchangeInputBuyForm.howMuchDoYouWantToDeposit%%%",
+        "termLabel": "%%%.exchangeInputBuyForm.termLabel%%%",
+        "fundsTransferTypeLabel": "%%%.exchangeInputBuyForm.fundsTransferTypeLabel%%%",
+        "bankAccountNameLabel": "%%%.exchangeInputBuyForm.bankAccountNameLabel%%%",
+        "bankAccountNumberLabel": "%%%.exchangeInputBuyForm.bankAccountNumberLabel%%%",
+        "routingNumberLabel": "%%%.exchangeInputBuyForm.routingNumberLabel%%%"
+    },
+    "exchangeInputDepositForm": {
+        "minUsdRequired": "%%%.exchangeInputDepositForm.minUsdRequired%%%",
+        "minVndRequired": "%%%.exchangeInputDepositForm.minVndRequired%%%",
+        "fiatAmountInputLabel": "%%%.exchangeInputDepositForm.fiatAmountInputLabel%%%",
+        "currencyDropdownLabel": "%%%.exchangeInputDepositForm.currencyDropdownLabel%%%",
+        "amountResultLabel": "%%%.exchangeInputDepositForm.amountResultLabel%%%",
+        "submitBtn": {
+            "depositNow": "%%%.exchangeInputDepositForm.submitBtn.depositNow%%%",
+            "depositWithAmount": "%%%.exchangeInputDepositForm.submitBtn.depositWithAmount%%%"
+        },
+        "noAgentAvaiable": "%%%.exchangeInputDepositForm.noAgentAvaiable%%%",
+        "amountTooSmall": "%%%.exchangeInputDepositForm.amountTooSmall%%%",
+        "getAmountFailed": "%%%.exchangeInputDepositForm.getAmountFailed%%%",
+        "getCurrencyListFailed": "%%%.exchangeInputDepositForm.getCurrencyListFailed%%%",
+        "loading": "%%%.exchangeInputDepositForm.loading%%%",
+        "amountMustBeLargerThan": "%%%.exchangeInputDepositForm.amountMustBeLargerThan%%%",
+        "howMuchDoYouWantToDeposit": "%%%.exchangeInputDepositForm.howMuchDoYouWantToDeposit%%%",
+        "formDesc": "%%%.exchangeInputDepositForm.formDesc%%%",
+        "depositForWithdraw": "%%%.exchangeInputDepositForm.depositForWithdraw%%%"
+    },
+    "exchangeInputSellForm": {
+        "amountResult": {
+            "amountToWithdraw": "%%%.exchangeInputSellForm.amountResult.amountToWithdraw%%%",
+            "fee": "%%%.exchangeInputSellForm.amountResult.fee%%%",
+            "withdrawFee": "%%%.exchangeInputSellForm.amountResult.withdrawFee%%%",
+            "sendFee": "%%%.exchangeInputSellForm.amountResult.sendFee%%%",
+            "fiatAmountResultLabel": "%%%.exchangeInputSellForm.amountResult.fiatAmountResultLabel%%%",
+            "explain": "%%%.exchangeInputSellForm.amountResult.explain%%%"
+        },
+        "currencyDropdownLabel": "%%%.exchangeInputSellForm.currencyDropdownLabel%%%",
+        "sellBtn": "%%%.exchangeInputSellForm.sellBtn%%%",
+        "getAmountFailed": "%%%.exchangeInputSellForm.getAmountFailed%%%",
+        "getFeeFailed": "%%%.exchangeInputSellForm.getFeeFailed%%%",
+        "getCurrencyListFailed": "%%%.exchangeInputSellForm.getCurrencyListFailed%%%",
+        "howMuchDoYouWantToSend": "%%%.exchangeInputSellForm.howMuchDoYouWantToSend%%%",
+        "howMuchDoYouWantToWithdraw": "%%%.exchangeInputSellForm.howMuchDoYouWantToWithdraw%%%",
+        "yourAnytimeBalance": "%%%.exchangeInputSellForm.yourAnytimeBalance%%%",
+        "whichCurrencyYouWant": "%%%.exchangeInputSellForm.whichCurrencyYouWant%%%",
+        "recipientBankInformation": "%%%.exchangeInputSellForm.recipientBankInformation%%%",
+        "toABankAccount": "%%%.exchangeInputSellForm.toABankAccount%%%",
+        "toAWallet": "%%%.exchangeInputSellForm.toAWallet%%%",
+        "walletAddr": "%%%.exchangeInputSellForm.walletAddr%%%",
+        "input2FA": "%%%.exchangeInputSellForm.input2FA%%%",
+        "withdrawFailed": "%%%.exchangeInputSellForm.withdrawFailed%%%",
+        "withdrawSuccessful": "%%%.exchangeInputSellForm.withdrawSuccessful%%%"
+    },
+    "exchangeInputBuyTrialForm": {
+        "title": "%%%.exchangeInputBuyTrialForm.title%%%",
+        "highlightText": "%%%.exchangeInputBuyTrialForm.highlightText%%%",
+        "trialLeft": "%%%.exchangeInputBuyTrialForm.trialLeft%%%",
+        "noMoreTrialLeft": "%%%.exchangeInputBuyTrialForm.noMoreTrialLeft%%%",
+        "submitBtn": "%%%.exchangeInputBuyTrialForm.submitBtn%%%",
+        "btnDesc": "%%%.exchangeInputBuyTrialForm.btnDesc%%%",
+        "termLabel": "%%%.exchangeInputBuyTrialForm.termLabel%%%"
+    },
+    "termSelector": {
+        "label": "%%%.termSelector.label%%%",
+        "month": "%%%.termSelector.month%%%",
+        "rate": "%%%.termSelector.rate%%%",
+        "apr": "%%%.termSelector.apr%%%",
+        "amountText": "%%%.termSelector.amountText%%%",
+        "anytimeTerm": "%%%.termSelector.anytimeTerm%%%",
+        "oneMonthTerm": "%%%.termSelector.oneMonthTerm%%%",
+        "term": "%%%.termSelector.term%%%",
+        "fiatAmountText": "%%%.termSelector.fiatAmountText%%%",
+        "desc": "%%%.termSelector.desc%%%",
+        "desc1": "%%%.termSelector.desc1%%%",
+        "desc2": "%%%.termSelector.desc2%%%",
+        "desc3": "%%%.termSelector.desc3%%%",
+        "desc4": "%%%.termSelector.desc4%%%",
+        "trialExpires": "%%%.termSelector.trialExpires%%%",
+        "item": {
+            "termTitle": "%%%.termSelector.item.termTitle%%%"
+        }
+    },
+    "saving": {
+        "trialLeftNum": "%%%.saving.trialLeftNum%%%",
+        "title": "%%%.saving.title%%%",
+        "subTitle": "%%%.saving.subTitle%%%",
+        "makeLocalOrderSuccess": "%%%.saving.makeLocalOrderSuccess%%%",
+        "crypto_amount_exists": "%%%.saving.crypto_amount_exists%%%",
+        "makeLocalOrderFailed": "%%%.saving.makeLocalOrderFailed%%%",
+        "makeDirectOrderSuccess": "%%%.saving.makeDirectOrderSuccess%%%",
+        "makeDirectOrderFailed": "%%%.saving.makeDirectOrderFailed%%%",
+        "makeAchDirectOrderFailed": "%%%.saving.makeAchDirectOrderFailed%%%",
+        "makeTrialOrderSuccess": "%%%.saving.makeTrialOrderSuccess%%%",
+        "makeTrialOrderFailed": "%%%.saving.makeTrialOrderFailed%%%"
+    },
+    "send": {
+        "makeLocalOrderSuccess": "%%%.send.makeLocalOrderSuccess%%%",
+        "makeLocalOrderFailed": "%%%.send.makeLocalOrderFailed%%%",
+        "makeDirectOrderSuccess": "%%%.send.makeDirectOrderSuccess%%%",
+        "makeDirectOrderFailed": "%%%.send.makeDirectOrderFailed%%%",
+        "info": {
+            "title": "%%%.send.info.title%%%",
+            "desc1": "%%%.send.info.desc1%%%",
+            "desc2": "%%%.send.info.desc2%%%",
+            "desc3": "%%%.send.info.desc3%%%",
+            "desc4": "%%%.send.info.desc4%%%"
+        },
+        "what": {
+            "whatCaption0": "%%%.send.what.whatCaption0%%%",
+            "whatCaption1": "%%%.send.what.whatCaption1%%%",
+            "whatCaption2": "%%%.send.what.whatCaption2%%%",
+            "whatCaption3": "%%%.send.what.whatCaption3%%%",
+            "whatDesc0": "%%%.send.what.whatDesc0%%%",
+            "whatDesc1": "%%%.send.what.whatDesc1%%%",
+            "whatDesc2": "%%%.send.what.whatDesc2%%%",
+            "whatDesc3": "%%%.send.what.whatDesc3%%%"
+        },
+        "howItWorks": {
+            "title": "%%%.send.howItWorks.title%%%",
+            "step1": "%%%.send.howItWorks.step1%%%",
+            "title1": "%%%.send.howItWorks.title1%%%",
+            "desc1": "%%%.send.howItWorks.desc1%%%",
+            "step2": "%%%.send.howItWorks.step2%%%",
+            "title2": "%%%.send.howItWorks.title2%%%",
+            "desc2": "%%%.send.howItWorks.desc2%%%",
+            "step3": "%%%.send.howItWorks.step3%%%",
+            "title3": "%%%.send.howItWorks.title3%%%",
+            "desc3": "%%%.send.howItWorks.desc3%%%"
+        }
+    },
+    "withdraw": {
+        "makeLocalOrderSuccess": "%%%.withdraw.makeLocalOrderSuccess%%%",
+        "makeLocalOrderFailed": "%%%.withdraw.makeLocalOrderFailed%%%",
+        "makeDirectOrderSuccess": "%%%.withdraw.makeDirectOrderSuccess%%%",
+        "makeDirectOrderFailed": "%%%.withdraw.makeDirectOrderFailed%%%",
+        "info": {
+            "title": "%%%.withdraw.info.title%%%",
+            "desc1": "%%%.withdraw.info.desc1%%%",
+            "desc4": "%%%.withdraw.info.desc4%%%"
+        },
+        "what": {
+            "whatCaption0": "%%%.withdraw.what.whatCaption0%%%",
+            "whatCaption1": "%%%.withdraw.what.whatCaption1%%%",
+            "whatCaption2": "%%%.withdraw.what.whatCaption2%%%",
+            "whatCaption3": "%%%.withdraw.what.whatCaption3%%%",
+            "whatDesc0": "%%%.withdraw.what.whatDesc0%%%",
+            "whatDesc1": "%%%.withdraw.what.whatDesc1%%%",
+            "whatDesc2": "%%%.withdraw.what.whatDesc2%%%",
+            "whatDesc3": "%%%.withdraw.what.whatDesc3%%%"
+        },
+        "howItWorks": {
+            "step1": "%%%.withdraw.howItWorks.step1%%%",
+            "title1": "%%%.withdraw.howItWorks.title1%%%",
+            "desc1": "%%%.withdraw.howItWorks.desc1%%%",
+            "step2": "%%%.withdraw.howItWorks.step2%%%",
+            "title2": "%%%.withdraw.howItWorks.title2%%%",
+            "desc2": "%%%.withdraw.howItWorks.desc2%%%",
+            "step3": "%%%.withdraw.howItWorks.step3%%%",
+            "title3": "%%%.withdraw.howItWorks.title3%%%",
+            "desc3": "%%%.withdraw.howItWorks.desc3%%%"
+        }
+    },
+    "transfer": {
+        "info": {
+            "title": "%%%.transfer.info.title%%%",
+            "desc1": "%%%.transfer.info.desc1%%%",
+            "desc2": "%%%.transfer.info.desc2%%%"
+        }
+    },
+    "transferCrypto": {
+        "info": {
+            "title": "%%%.transferCrypto.info.title%%%",
+            "desc1": "%%%.transferCrypto.info.desc1%%%",
+            "desc2": "%%%.transferCrypto.info.desc2%%%"
+        }
+    },
+    "deposit": {
+        "title": "%%%.deposit.title%%%",
+        "availableInVn": "%%%.deposit.availableInVn%%%",
+        "subTitle": {
+            "sub1": "%%%.deposit.subTitle.sub1%%%",
+            "sub2": "%%%.deposit.subTitle.sub2%%%",
+            "learnMore": "%%%.deposit.subTitle.learnMore%%%"
+        },
+        "what": {
+            "whatCaption0": "%%%.deposit.what.whatCaption0%%%",
+            "whatCaption1": "%%%.deposit.what.whatCaption1%%%",
+            "whatCaption2": "%%%.deposit.what.whatCaption2%%%",
+            "whatCaption3": "%%%.deposit.what.whatCaption3%%%",
+            "whatDesc0": "%%%.deposit.what.whatDesc0%%%",
+            "whatDesc1": "%%%.deposit.what.whatDesc1%%%",
+            "whatDesc2": "%%%.deposit.what.whatDesc2%%%",
+            "whatDesc3": "%%%.deposit.what.whatDesc3%%%"
+        },
+        "howItWorks": {
+            "title": "%%%.deposit.howItWorks.title%%%",
+            "step1": "%%%.deposit.howItWorks.step1%%%",
+            "title1": "%%%.deposit.howItWorks.title1%%%",
+            "desc1": "%%%.deposit.howItWorks.desc1%%%",
+            "step2": "%%%.deposit.howItWorks.step2%%%",
+            "title2": "%%%.deposit.howItWorks.title2%%%",
+            "desc2": "%%%.deposit.howItWorks.desc2%%%",
+            "step3": "%%%.deposit.howItWorks.step3%%%",
+            "title3": "%%%.deposit.howItWorks.title3%%%",
+            "desc3": "%%%.deposit.howItWorks.desc3%%%"
+        },
+        "checklist": {
+            "title": "%%%.deposit.checklist.title%%%",
+            "subTitle": "%%%.deposit.checklist.subTitle%%%",
+            "desc1": "%%%.deposit.checklist.desc1%%%",
+            "desc2": "%%%.deposit.checklist.desc2%%%"
+        },
+        "howWeWork": {
+            "title": "%%%.deposit.howWeWork.title%%%",
+            "subTitle": "%%%.deposit.howWeWork.subTitle%%%",
+            "desc": "%%%.deposit.howWeWork.desc%%%"
+        },
+        "stories": {
+            "quote0": "%%%.deposit.stories.quote0%%%",
+            "author0": "%%%.deposit.stories.author0%%%",
+            "title0": "%%%.deposit.stories.title0%%%",
+            "quote1": "%%%.deposit.stories.quote1%%%",
+            "author1": "%%%.deposit.stories.author1%%%",
+            "title1": "%%%.deposit.stories.title1%%%",
+            "quote2": "%%%.deposit.stories.quote2%%%",
+            "author2": "%%%.deposit.stories.author2%%%",
+            "title2": "%%%.deposit.stories.title2%%%",
+            "quote3": "%%%.deposit.stories.quote3%%%",
+            "author3": "%%%.deposit.stories.author3%%%",
+            "title3": "%%%.deposit.stories.title3%%%"
+        }
+    },
+    "yourSaving": {
+        "hello": "%%%.yourSaving.hello%%%",
+        "verifyKyc": "%%%.yourSaving.verifyKyc%%%"
+    },
+    "borrow": {
+        "contact": {
+            "title": "%%%.borrow.contact.title%%%",
+            "desc": "%%%.borrow.contact.desc%%%",
+            "form": {
+                "placeholder": {
+                    "companyName": "%%%.borrow.contact.form.placeholder.companyName%%%",
+                    "poName": "%%%.borrow.contact.form.placeholder.poName%%%",
+                    "companyExciting": "%%%.borrow.contact.form.placeholder.companyExciting%%%",
+                    "companyTarget": "%%%.borrow.contact.form.placeholder.companyTarget%%%",
+                    "email": "%%%.borrow.contact.form.placeholder.email%%%",
+                    "phone": "%%%.borrow.contact.form.placeholder.phone%%%"
+                },
+                "btnSubmit": "%%%.borrow.contact.form.btnSubmit%%%",
+                "alert": {
+                    "success": "%%%.borrow.contact.form.alert.success%%%",
+                    "failed": "%%%.borrow.contact.form.alert.failed%%%"
+                }
+            }
+        },
+        "what": {
+            "whatCaption0": "%%%.borrow.what.whatCaption0%%%",
+            "whatCaption1": "%%%.borrow.what.whatCaption1%%%",
+            "whatCaption2": "%%%.borrow.what.whatCaption2%%%",
+            "whatCaption3": "%%%.borrow.what.whatCaption3%%%",
+            "whatTitle": "%%%.borrow.what.whatTitle%%%",
+            "whatTitle0": "%%%.borrow.what.whatTitle0%%%",
+            "whatTitle1": "%%%.borrow.what.whatTitle1%%%",
+            "whatTextLink1": "%%%.borrow.what.whatTextLink1%%%",
+            "whatLink1": "%%%.borrow.what.whatLink1%%%",
+            "whatDesc1": "%%%.borrow.what.whatDesc1%%%",
+            "whatTitle2": "%%%.borrow.what.whatTitle2%%%",
+            "whatTitle3": "%%%.borrow.what.whatTitle3%%%",
+            "whatDesc0": "%%%.borrow.what.whatDesc0%%%",
+            "whatDesc2": "%%%.borrow.what.whatDesc2%%%",
+            "whatDesc3": "%%%.borrow.what.whatDesc3%%%",
+            "whatMore0": "%%%.borrow.what.whatMore0%%%",
+            "whatMore1": "%%%.borrow.what.whatMore1%%%",
+            "whatMore2": "%%%.borrow.what.whatMore2%%%",
+            "whatMore3": "%%%.borrow.what.whatMore3%%%"
+        },
+        "howItWorks": {
+            "step1": "%%%.borrow.howItWorks.step1%%%",
+            "title1": "%%%.borrow.howItWorks.title1%%%",
+            "desc1": "%%%.borrow.howItWorks.desc1%%%",
+            "step2": "%%%.borrow.howItWorks.step2%%%",
+            "title2": "%%%.borrow.howItWorks.title2%%%",
+            "desc2": "%%%.borrow.howItWorks.desc2%%%",
+            "step3": "%%%.borrow.howItWorks.step3%%%",
+            "title3": "%%%.borrow.howItWorks.title3%%%",
+            "desc3": "%%%.borrow.howItWorks.desc3%%%"
+        },
+        "blockTitle2": "%%%.borrow.blockTitle2%%%",
+        "blockDesc2": "%%%.borrow.blockDesc2%%%",
+        "brands": {
+            "title": "%%%.borrow.brands.title%%%"
+        }
+    },
+    "trade": {
+        "title": "%%%.trade.title%%%",
+        "desc": "%%%.trade.desc%%%",
+        "coinmarket": {
+            "title": "%%%.trade.coinmarket.title%%%",
+            "desc": "%%%.trade.coinmarket.desc%%%"
+        }
+    },
+    "constantChain": {
+        "info": {
+            "title": "%%%.constantChain.info.title%%%",
+            "desc": "%%%.constantChain.info.desc%%%"
+        },
+        "what": {
+            "whatCaption0": "%%%.constantChain.what.whatCaption0%%%",
+            "whatCaption1": "%%%.constantChain.what.whatCaption1%%%",
+            "whatCaption2": "%%%.constantChain.what.whatCaption2%%%",
+            "whatCaption3": "%%%.constantChain.what.whatCaption3%%%",
+            "whatDesc0": "%%%.constantChain.what.whatDesc0%%%",
+            "whatDesc1": "%%%.constantChain.what.whatDesc1%%%",
+            "whatDesc2": "%%%.constantChain.what.whatDesc2%%%",
+            "whatDesc3": "%%%.constantChain.what.whatDesc3%%%",
+            "whatButton0": "%%%.constantChain.what.whatButton0%%%",
+            "whatButton1": "%%%.constantChain.what.whatButton1%%%",
+            "whatButton2": "%%%.constantChain.what.whatButton2%%%",
+            "whatButton3": "%%%.constantChain.what.whatButton3%%%"
+        }
+    },
+    "newHome": {
+        "banner": {
+            "title": "%%%.newHome.banner.title%%%",
+            "title1": "%%%.newHome.banner.title1%%%",
+            "subTitle": "%%%.newHome.banner.subTitle%%%",
+            "cta": "%%%.newHome.banner.cta%%%",
+            "ctaDesc": "%%%.newHome.banner.ctaDesc%%%",
+            "invest": {
+                "title": "%%%.newHome.banner.invest.title%%%",
+                "num": "%%%.newHome.banner.invest.num%%%",
+                "cap": "%%%.newHome.banner.invest.cap%%%",
+                "btn": "%%%.newHome.banner.invest.btn%%%",
+                "btnTrial": "%%%.newHome.banner.invest.btnTrial%%%"
+            },
+            "borrow": {
+                "title": "%%%.newHome.banner.borrow.title%%%",
+                "num": "%%%.newHome.banner.borrow.num%%%",
+                "cap": "%%%.newHome.banner.borrow.cap%%%",
+                "btn": "%%%.newHome.banner.borrow.btn%%%"
+            }
+        },
+        "crypto": {
+            "desc": "%%%.newHome.crypto.desc%%%"
+        },
+        "faqs": {
+            "question1": "%%%.newHome.faqs.question1%%%",
+            "answer1": "%%%.newHome.faqs.answer1%%%",
+            "question2": "%%%.newHome.faqs.question2%%%",
+            "answer2": "%%%.newHome.faqs.answer2%%%",
+            "question3": "%%%.newHome.faqs.question3%%%",
+            "answer3": "%%%.newHome.faqs.answer3%%%",
+            "question4": "%%%.newHome.faqs.question4%%%",
+            "answer4": "%%%.newHome.faqs.answer4%%%",
+            "question5": "%%%.newHome.faqs.question5%%%",
+            "answer5": "%%%.newHome.faqs.answer5%%%"
+        },
+        "howItWorks": {
+            "title": "%%%.newHome.howItWorks.title%%%",
+            "desc": "%%%.newHome.howItWorks.desc%%%"
+        },
+        "whyItBetter": {
+            "title": "%%%.newHome.whyItBetter.title%%%",
+            "desc": "%%%.newHome.whyItBetter.desc%%%",
+            "item0": {
+                "title": "%%%.newHome.whyItBetter.item0.title%%%",
+                "desc": "%%%.newHome.whyItBetter.item0.desc%%%"
+            },
+            "item1": {
+                "title": "%%%.newHome.whyItBetter.item1.title%%%",
+                "desc": "%%%.newHome.whyItBetter.item1.desc%%%"
+            }
+        },
+        "subjects": {
+            "banking": {
+                "title": "%%%.newHome.subjects.banking.title%%%",
+                "desc1": {
+                    "title": "%%%.newHome.subjects.banking.desc1.title%%%",
+                    "desc": "%%%.newHome.subjects.banking.desc1.desc%%%"
+                },
+                "desc2": {
+                    "title": "%%%.newHome.subjects.banking.desc2.title%%%",
+                    "desc": "%%%.newHome.subjects.banking.desc2.desc%%%"
+                },
+                "desc3": {
+                    "title": "%%%.newHome.subjects.banking.desc3.title%%%",
+                    "desc": "%%%.newHome.subjects.banking.desc3.desc%%%"
+                },
+                "link": "%%%.newHome.subjects.banking.link%%%"
+            },
+            "invest": {
+                "title": "%%%.newHome.subjects.invest.title%%%",
+                "desc1": {
+                    "title": "%%%.newHome.subjects.invest.desc1.title%%%",
+                    "desc": "%%%.newHome.subjects.invest.desc1.desc%%%"
+                },
+                "desc2": {
+                    "title": "%%%.newHome.subjects.invest.desc2.title%%%",
+                    "desc": "%%%.newHome.subjects.invest.desc2.desc%%%"
+                },
+                "desc3": {
+                    "title": "%%%.newHome.subjects.invest.desc3.title%%%",
+                    "desc": "%%%.newHome.subjects.invest.desc3.desc%%%"
+                },
+                "link": "%%%.newHome.subjects.invest.link%%%"
+            },
+            "borrow": {
+                "title": "%%%.newHome.subjects.borrow.title%%%",
+                "desc1": {
+                    "title": "%%%.newHome.subjects.borrow.desc1.title%%%",
+                    "desc": "%%%.newHome.subjects.borrow.desc1.desc%%%"
+                },
+                "desc2": {
+                    "title": "%%%.newHome.subjects.borrow.desc2.title%%%",
+                    "desc": "%%%.newHome.subjects.borrow.desc2.desc%%%"
+                },
+                "desc3": {
+                    "title": "%%%.newHome.subjects.borrow.desc3.title%%%",
+                    "desc": "%%%.newHome.subjects.borrow.desc3.desc%%%"
+                },
+                "link": "%%%.newHome.subjects.borrow.link%%%"
+            }
+        }
+    },
+    "constantCoin": {
+        "info": {
+            "title": "%%%.constantCoin.info.title%%%",
+            "desc": "%%%.constantCoin.info.desc%%%"
+        },
+        "what": {
+            "whatCaption0": "%%%.constantCoin.what.whatCaption0%%%",
+            "whatCaption1": "%%%.constantCoin.what.whatCaption1%%%",
+            "whatCaption2": "%%%.constantCoin.what.whatCaption2%%%",
+            "whatCaption3": "%%%.constantCoin.what.whatCaption3%%%",
+            "whatDesc0": "%%%.constantCoin.what.whatDesc0%%%",
+            "whatDesc1": "%%%.constantCoin.what.whatDesc1%%%",
+            "whatDesc2": "%%%.constantCoin.what.whatDesc2%%%",
+            "whatDesc3": "%%%.constantCoin.what.whatDesc3%%%",
+            "whatButton0": "%%%.constantCoin.what.whatButton0%%%",
+            "whatButton1": "%%%.constantCoin.what.whatButton1%%%",
+            "whatButton2": "%%%.constantCoin.what.whatButton2%%%",
+            "whatButton3": "%%%.constantCoin.what.whatButton3%%%"
+        },
+        "howItWorks": {
+            "title": "%%%.constantCoin.howItWorks.title%%%",
+            "desc": "%%%.constantCoin.howItWorks.desc%%%",
+            "link": "%%%.constantCoin.howItWorks.link%%%",
+            "items": {
+                "date1": "%%%.constantCoin.howItWorks.items.date1%%%",
+                "title1": "%%%.constantCoin.howItWorks.items.title1%%%",
+                "date2": "%%%.constantCoin.howItWorks.items.date2%%%",
+                "title2": "%%%.constantCoin.howItWorks.items.title2%%%",
+                "date3": "%%%.constantCoin.howItWorks.items.date3%%%",
+                "title3": "%%%.constantCoin.howItWorks.items.title3%%%",
+                "date4": "%%%.constantCoin.howItWorks.items.date4%%%",
+                "title4": "%%%.constantCoin.howItWorks.items.title4%%%",
+                "date5": "%%%.constantCoin.howItWorks.items.date5%%%",
+                "title5": "%%%.constantCoin.howItWorks.items.title5%%%",
+                "date6": "%%%.constantCoin.howItWorks.items.date6%%%",
+                "title6": "%%%.constantCoin.howItWorks.items.title6%%%"
+            }
+        }
+    },
+    "support": {
+        "title": "%%%.support.title%%%",
+        "text": "%%%.support.text%%%",
+        "phone": {
+            "vn": "%%%.support.phone.vn%%%",
+            "us": "%%%.support.phone.us%%%",
+            "hk": "%%%.support.phone.hk%%%"
+        }
+    },
+    "ours": {
+        "title": "%%%.ours.title%%%",
+        "content": "%%%.ours.content%%%",
+        "team": {
+            "title": "%%%.ours.team.title%%%",
+            "content": "%%%.ours.team.content%%%",
+            "footer": "%%%.ours.team.footer%%%",
+            "captions": {
+                "0": {
+                    "caption": "%%%.ours.team.captions.0.caption%%%",
+                    "linkCaption": "%%%.ours.team.captions.0.linkCaption%%%",
+                    "link": "%%%.ours.team.captions.0.link%%%"
+                },
+                "1": {
+                    "caption": "%%%.ours.team.captions.1.caption%%%",
+                    "link": "%%%.ours.team.captions.1.link%%%"
+                },
+                "2": {
+                    "caption": "%%%.ours.team.captions.2.caption%%%",
+                    "linkCaption": "%%%.ours.team.captions.2.linkCaption%%%",
+                    "link": "%%%.ours.team.captions.2.link%%%"
+                }
+            }
+        },
+        "localOffices": {
+            "title": "%%%.ours.localOffices.title%%%",
+            "offices": {
+                "us": {
+                    "name": "%%%.ours.localOffices.offices.us.name%%%",
+                    "address1": "%%%.ours.localOffices.offices.us.address1%%%",
+                    "address2": "%%%.ours.localOffices.offices.us.address2%%%",
+                    "phone": "%%%.ours.localOffices.offices.us.phone%%%"
+                },
+                "hk": {
+                    "name": "%%%.ours.localOffices.offices.hk.name%%%",
+                    "address1": "%%%.ours.localOffices.offices.hk.address1%%%",
+                    "address2": "%%%.ours.localOffices.offices.hk.address2%%%",
+                    "phone": "%%%.ours.localOffices.offices.hk.phone%%%"
+                },
+                "vn": {
+                    "name": "%%%.ours.localOffices.offices.vn.name%%%",
+                    "address1": "%%%.ours.localOffices.offices.vn.address1%%%",
+                    "address2": "%%%.ours.localOffices.offices.vn.address2%%%",
+                    "phone": "%%%.ours.localOffices.offices.vn.phone%%%"
+                },
+                "eu": {
+                    "name": "%%%.ours.localOffices.offices.eu.name%%%",
+                    "address1": "%%%.ours.localOffices.offices.eu.address1%%%",
+                    "address2": "%%%.ours.localOffices.offices.eu.address2%%%",
+                    "phone": "%%%.ours.localOffices.offices.eu.phone%%%"
+                }
+            }
+        },
+        "leaderships": {
+            "title": "%%%.ours.leaderships.title%%%",
+            "leaders": {
+                "duyHuynh": {
+                    "name": "%%%.ours.leaderships.leaders.duyHuynh.name%%%",
+                    "position": "%%%.ours.leaderships.leaders.duyHuynh.position%%%",
+                    "description": "%%%.ours.leaderships.leaders.duyHuynh.description%%%"
+                },
+                "thucNguyen": {
+                    "name": "%%%.ours.leaderships.leaders.thucNguyen.name%%%",
+                    "position": "%%%.ours.leaderships.leaders.thucNguyen.position%%%",
+                    "description": "%%%.ours.leaderships.leaders.thucNguyen.description%%%"
+                },
+                "haTran": {
+                    "name": "%%%.ours.leaderships.leaders.haTran.name%%%",
+                    "position": "%%%.ours.leaderships.leaders.haTran.position%%%",
+                    "description": "%%%.ours.leaderships.leaders.haTran.description%%%"
+                },
+                "billPelletier": {
+                    "name": "%%%.ours.leaderships.leaders.billPelletier.name%%%",
+                    "position": "%%%.ours.leaderships.leaders.billPelletier.position%%%",
+                    "description": "%%%.ours.leaderships.leaders.billPelletier.description%%%"
+                },
+                "ningTan": {
+                    "name": "%%%.ours.leaderships.leaders.ningTan.name%%%",
+                    "position": "%%%.ours.leaderships.leaders.ningTan.position%%%",
+                    "description": "%%%.ours.leaderships.leaders.ningTan.description%%%"
+                },
+                "tienNguyen": {
+                    "name": "%%%.ours.leaderships.leaders.tienNguyen.name%%%",
+                    "position": "%%%.ours.leaderships.leaders.tienNguyen.position%%%",
+                    "description": "%%%.ours.leaderships.leaders.tienNguyen.description%%%"
+                },
+                "gaelVo": {
+                    "name": "%%%.ours.leaderships.leaders.gaelVo.name%%%",
+                    "position": "%%%.ours.leaderships.leaders.gaelVo.position%%%",
+                    "description": "%%%.ours.leaderships.leaders.gaelVo.description%%%"
+                },
+                "zonChu": {
+                    "name": "%%%.ours.leaderships.leaders.zonChu.name%%%",
+                    "position": "%%%.ours.leaderships.leaders.zonChu.position%%%",
+                    "description": "%%%.ours.leaderships.leaders.zonChu.description%%%"
+                },
+                "trongDinh": {
+                    "name": "%%%.ours.leaderships.leaders.trongDinh.name%%%",
+                    "position": "%%%.ours.leaderships.leaders.trongDinh.position%%%",
+                    "description": "%%%.ours.leaderships.leaders.trongDinh.description%%%"
+                },
+                "baoLe": {
+                    "name": "%%%.ours.leaderships.leaders.baoLe.name%%%",
+                    "position": "%%%.ours.leaderships.leaders.baoLe.position%%%",
+                    "description": "%%%.ours.leaderships.leaders.baoLe.description%%%"
+                },
+                "justinLucas": {
+                    "name": "%%%.ours.leaderships.leaders.justinLucas.name%%%",
+                    "position": "%%%.ours.leaderships.leaders.justinLucas.position%%%",
+                    "description": "%%%.ours.leaderships.leaders.justinLucas.description%%%"
+                },
+                "dungTran": {
+                    "name": "%%%.ours.leaderships.leaders.dungTran.name%%%",
+                    "position": "%%%.ours.leaderships.leaders.dungTran.position%%%",
+                    "description": "%%%.ours.leaderships.leaders.dungTran.description%%%"
+                }
+            }
+        },
+        "exchangePartners": {
+            "title": "%%%.ours.exchangePartners.title%%%",
+            "exchanges": {}
+        },
+        "lawyers": {
+            "title": "%%%.ours.lawyers.title%%%"
+        },
+        "accountants": {
+            "title": "%%%.ours.accountants.title%%%"
+        },
+        "custodian": {
+            "title": "%%%.ours.custodian.title%%%"
+        }
+    },
+    "home1": {
+        "lendingSection": {
+            "intro": {
+                "content": "%%%.home1.lendingSection.intro.content%%%"
+            },
+            "form": {
+                "text1": "%%%.home1.lendingSection.form.text1%%%",
+                "text2": "%%%.home1.lendingSection.form.text2%%%",
+                "text3": "%%%.home1.lendingSection.form.text3%%%",
+                "text4": "%%%.home1.lendingSection.form.text4%%%",
+                "text5": "%%%.home1.lendingSection.form.text5%%%",
+                "text6": "%%%.home1.lendingSection.form.text6%%%",
+                "btn1": "%%%.home1.lendingSection.form.btn1%%%",
+                "textLogin": "%%%.home1.lendingSection.form.textLogin%%%",
+                "textRegister": "%%%.home1.lendingSection.form.textRegister%%%",
+                "btn2": "%%%.home1.lendingSection.form.btn2%%%",
+                "btnVerify": "%%%.home1.lendingSection.form.btnVerify%%%",
+                "btnTrial": "%%%.home1.lendingSection.form.btnTrial%%%",
+                "btnAuth": "%%%.home1.lendingSection.form.btnAuth%%%",
+                "btnKyc": "%%%.home1.lendingSection.form.btnKyc%%%",
+                "btnKyc1": "%%%.home1.lendingSection.form.btnKyc1%%%",
+                "minRate": "%%%.home1.lendingSection.form.minRate%%%",
+                "maxRate": "%%%.home1.lendingSection.form.maxRate%%%",
+                "maxTerm": "%%%.home1.lendingSection.form.maxTerm%%%",
+                "minTerm": "%%%.home1.lendingSection.form.minTerm%%%",
+                "amount": "%%%.home1.lendingSection.form.amount%%%",
+                "termMonth": "%%%.home1.lendingSection.form.termMonth%%%",
+                "tooltip": {
+                    "amount": "%%%.home1.lendingSection.form.tooltip.amount%%%",
+                    "maxTerm": "%%%.home1.lendingSection.form.tooltip.maxTerm%%%",
+                    "minRate": "%%%.home1.lendingSection.form.tooltip.minRate%%%"
+                },
+                "placeholder": {
+                    "amount": "%%%.home1.lendingSection.form.placeholder.amount%%%"
+                },
+                "yourAnytimeBalance": "%%%.home1.lendingSection.form.yourAnytimeBalance%%%"
+            },
+            "alert": {
+                "success": "%%%.home1.lendingSection.alert.success%%%",
+                "sendEmailVerifyForTrialSuccess": "%%%.home1.lendingSection.alert.sendEmailVerifyForTrialSuccess%%%",
+                "sendEmailVerifyForTrialFailed": "%%%.home1.lendingSection.alert.sendEmailVerifyForTrialFailed%%%",
+                "trialFailed": "%%%.home1.lendingSection.alert.trialFailed%%%",
+                "normalSuccess": "%%%.home1.lendingSection.alert.normalSuccess%%%",
+                "normalFailed": "%%%.home1.lendingSection.alert.normalFailed%%%",
+                "trialSuccess": "%%%.home1.lendingSection.alert.trialSuccess%%%"
+            },
+            "confirm": {
+                "thankYou1": "%%%.home1.lendingSection.confirm.thankYou1%%%",
+                "thankMsg": "%%%.home1.lendingSection.confirm.thankMsg%%%",
+                "thankMsg1": "%%%.home1.lendingSection.confirm.thankMsg1%%%",
+                "bankName": "%%%.home1.lendingSection.confirm.bankName%%%",
+                "accountName": "%%%.home1.lendingSection.confirm.accountName%%%",
+                "accountNumber": "%%%.home1.lendingSection.confirm.accountNumber%%%",
+                "routingNumberACH": "%%%.home1.lendingSection.confirm.routingNumberACH%%%",
+                "routingNumberWire": "%%%.home1.lendingSection.confirm.routingNumberWire%%%",
+                "routingNumberACHWire": "%%%.home1.lendingSection.confirm.routingNumberACHWire%%%",
+                "accountAddress": "%%%.home1.lendingSection.confirm.accountAddress%%%",
+                "accountType": "%%%.home1.lendingSection.confirm.accountType%%%",
+                "value": "%%%.home1.lendingSection.confirm.value%%%",
+                "amount": "%%%.home1.lendingSection.confirm.amount%%%",
+                "reference": "%%%.home1.lendingSection.confirm.reference%%%",
+                "important": "%%%.home1.lendingSection.confirm.important%%%",
+                "importantMsg": "%%%.home1.lendingSection.confirm.importantMsg%%%",
+                "minuteWindow": "%%%.home1.lendingSection.confirm.minuteWindow%%%",
+                "minuteWindowDescription": "%%%.home1.lendingSection.confirm.minuteWindowDescription%%%",
+                "backOrderBook": "%%%.home1.lendingSection.confirm.backOrderBook%%%",
+                "confirmMessage": "%%%.home1.lendingSection.confirm.confirmMessage%%%",
+                "confirmButton": "%%%.home1.lendingSection.confirm.confirmButton%%%",
+                "minRate": "%%%.home1.lendingSection.confirm.minRate%%%",
+                "maxTerm": "%%%.home1.lendingSection.confirm.maxTerm%%%",
+                "btnConfirm": "%%%.home1.lendingSection.confirm.btnConfirm%%%",
+                "btnBack": "%%%.home1.lendingSection.confirm.btnBack%%%",
+                "zelleTitle": "%%%.home1.lendingSection.confirm.zelleTitle%%%",
+                "zelle": "%%%.home1.lendingSection.confirm.zelle%%%",
+                "bankChosenMessage1": "%%%.home1.lendingSection.confirm.bankChosenMessage1%%%",
+                "bankChosenMessage": "%%%.home1.lendingSection.confirm.bankChosenMessage%%%",
+                "makeAnotherButton": "%%%.home1.lendingSection.confirm.makeAnotherButton%%%"
+            }
+        },
+        "whatCaption0": "%%%.home1.whatCaption0%%%",
+        "whatCaption1": "%%%.home1.whatCaption1%%%",
+        "whatCaption2": "%%%.home1.whatCaption2%%%",
+        "whatCaption3": "%%%.home1.whatCaption3%%%",
+        "whatDesc0": "%%%.home1.whatDesc0%%%",
+        "whatDesc1": "%%%.home1.whatDesc1%%%",
+        "whatDesc2": "%%%.home1.whatDesc2%%%",
+        "whatDesc3": "%%%.home1.whatDesc3%%%",
+        "howItWorks": {
+            "mainTitle": "%%%.home1.howItWorks.mainTitle%%%",
+            "mainDesc": "%%%.home1.howItWorks.mainDesc%%%",
+            "step1": "%%%.home1.howItWorks.step1%%%",
+            "title1": "%%%.home1.howItWorks.title1%%%",
+            "desc1": "%%%.home1.howItWorks.desc1%%%",
+            "step2": "%%%.home1.howItWorks.step2%%%",
+            "title2": "%%%.home1.howItWorks.title2%%%",
+            "desc2": "%%%.home1.howItWorks.desc2%%%",
+            "step3": "%%%.home1.howItWorks.step3%%%",
+            "title3": "%%%.home1.howItWorks.title3%%%",
+            "desc3": "%%%.home1.howItWorks.desc3%%%"
+        },
+        "checklist": {
+            "title": "%%%.home1.checklist.title%%%",
+            "desc": "%%%.home1.checklist.desc%%%"
+        },
+        "whatwedo": {
+            "title": "%%%.home1.whatwedo.title%%%",
+            "cap": "%%%.home1.whatwedo.cap%%%",
+            "desc": "%%%.home1.whatwedo.desc%%%"
+        },
+        "faqs": {
+            "question1": "%%%.home1.faqs.question1%%%",
+            "answer1": "%%%.home1.faqs.answer1%%%",
+            "question2": "%%%.home1.faqs.question2%%%",
+            "answer2": "%%%.home1.faqs.answer2%%%",
+            "question3": "%%%.home1.faqs.question3%%%",
+            "answer3": "%%%.home1.faqs.answer3%%%",
+            "question4": "%%%.home1.faqs.question4%%%",
+            "answer4": "%%%.home1.faqs.answer4%%%",
+            "question5": "%%%.home1.faqs.question5%%%",
+            "answer5": "%%%.home1.faqs.answer5%%%"
+        }
+    },
+    "payment": {
+        "intro": "%%%.payment.intro%%%",
+        "howItWorks": {
+            "heading": "%%%.payment.howItWorks.heading%%%",
+            "step1": "%%%.payment.howItWorks.step1%%%",
+            "title1": "%%%.payment.howItWorks.title1%%%",
+            "desc1": "%%%.payment.howItWorks.desc1%%%",
+            "step2": "%%%.payment.howItWorks.step2%%%",
+            "title2": "%%%.payment.howItWorks.title2%%%",
+            "desc2": "%%%.payment.howItWorks.desc2%%%",
+            "step3": "%%%.payment.howItWorks.step3%%%",
+            "title3": "%%%.payment.howItWorks.title3%%%",
+            "desc3": "%%%.payment.howItWorks.desc3%%%"
+        },
+        "what": {
+            "whatCaption0": "%%%.payment.what.whatCaption0%%%",
+            "whatCaption1": "%%%.payment.what.whatCaption1%%%",
+            "whatCaption2": "%%%.payment.what.whatCaption2%%%",
+            "whatCaption3": "%%%.payment.what.whatCaption3%%%",
+            "whatDesc0": "%%%.payment.what.whatDesc0%%%",
+            "whatDesc1": "%%%.payment.what.whatDesc1%%%",
+            "whatDesc2": "%%%.payment.what.whatDesc2%%%",
+            "whatDesc3": "%%%.payment.what.whatDesc3%%%"
+        },
+        "success": {
+            "title": "%%%.payment.success.title%%%",
+            "customer1": "%%%.payment.success.customer1%%%",
+            "customer2": "%%%.payment.success.customer2%%%",
+            "customer3": "%%%.payment.success.customer3%%%"
+        },
+        "why": {
+            "title": "%%%.payment.why.title%%%"
+        },
+        "faqs": {
+            "title": "%%%.payment.faqs.title%%%",
+            "q1": "%%%.payment.faqs.q1%%%",
+            "q2": "%%%.payment.faqs.q2%%%",
+            "q3": "%%%.payment.faqs.q3%%%",
+            "q4": "%%%.payment.faqs.q4%%%",
+            "q5": "%%%.payment.faqs.q5%%%",
+            "q6": "%%%.payment.faqs.q6%%%",
+            "a1": "%%%.payment.faqs.a1%%%",
+            "a2": "%%%.payment.faqs.a2%%%",
+            "a3": "%%%.payment.faqs.a3%%%",
+            "a4": "%%%.payment.faqs.a4%%%",
+            "a5": "%%%.payment.faqs.a5%%%",
+            "a6": "%%%.payment.faqs.a6%%%"
+        },
+        "ready": {
+            "question": "%%%.payment.ready.question%%%",
+            "button": "%%%.payment.ready.button%%%"
+        },
+        "form": {
+            "lName": "%%%.payment.form.lName%%%",
+            "lEmail": "%%%.payment.form.lEmail%%%",
+            "lCompany": "%%%.payment.form.lCompany%%%",
+            "submitted": "%%%.payment.form.submitted%%%"
+        }
+    },
+    "landingPro": {
+        "title1": "%%%.landingPro.title1%%%",
+        "desc1": "%%%.landingPro.desc1%%%",
+        "emailInput": {
+            "placeholder": "%%%.landingPro.emailInput.placeholder%%%",
+            "btn": "%%%.landingPro.emailInput.btn%%%"
+        },
+        "alert": {
+            "emailSuccess": "%%%.landingPro.alert.emailSuccess%%%"
+        },
+        "title2": "%%%.landingPro.title2%%%",
+        "what": {
+            "title0": "%%%.landingPro.what.title0%%%",
+            "desc0": "%%%.landingPro.what.desc0%%%",
+            "title1": "%%%.landingPro.what.title1%%%",
+            "desc1": "%%%.landingPro.what.desc1%%%",
+            "title2": "%%%.landingPro.what.title2%%%",
+            "desc2": "%%%.landingPro.what.desc2%%%",
+            "title3": "%%%.landingPro.what.title3%%%",
+            "desc3": "%%%.landingPro.what.desc3%%%"
+        },
+        "faqs": {
+            "question1": "%%%.landingPro.faqs.question1%%%",
+            "answer1": "%%%.landingPro.faqs.answer1%%%",
+            "question2": "%%%.landingPro.faqs.question2%%%",
+            "answer2": "%%%.landingPro.faqs.answer2%%%",
+            "question3": "%%%.landingPro.faqs.question3%%%",
+            "answer3": "%%%.landingPro.faqs.answer3%%%",
+            "question4": "%%%.landingPro.faqs.question4%%%",
+            "answer4": "%%%.landingPro.faqs.answer4%%%",
+            "question5": "%%%.landingPro.faqs.question5%%%",
+            "answer5": "%%%.landingPro.faqs.answer5%%%"
+        }
+    },
+    "landingProReferral": {
+        "title1": "%%%.landingProReferral.title1%%%",
+        "desc1": "%%%.landingProReferral.desc1%%%",
+        "title2": "%%%.landingProReferral.title2%%%",
+        "title3": "%%%.landingProReferral.title3%%%",
+        "title4": "%%%.landingProReferral.title4%%%",
+        "title5": "%%%.landingProReferral.title5%%%",
+        "title6": "%%%.landingProReferral.title6%%%",
+        "title7": "%%%.landingProReferral.title7%%%",
+        "investment": "%%%.landingProReferral.investment%%%",
+        "loans": "%%%.landingProReferral.loans%%%",
+        "loginRequired": "%%%.landingProReferral.loginRequired%%%",
+        "shares": {
+            "title": "%%%.landingProReferral.shares.title%%%",
+            "fb": "%%%.landingProReferral.shares.fb%%%",
+            "tw": "%%%.landingProReferral.shares.tw%%%",
+            "gg": "%%%.landingProReferral.shares.gg%%%",
+            "shareFbSuccess": "%%%.landingProReferral.shares.shareFbSuccess%%%"
+        },
+        "levels": {
+            "l0": "%%%.landingProReferral.levels.l0%%%",
+            "l1": "%%%.landingProReferral.levels.l1%%%",
+            "l2": "%%%.landingProReferral.levels.l2%%%",
+            "l3": "%%%.landingProReferral.levels.l3%%%"
+        },
+        "referral": {
+            "placeholder": "%%%.landingProReferral.referral.placeholder%%%",
+            "btn": "%%%.landingProReferral.referral.btn%%%",
+            "copied": "%%%.landingProReferral.referral.copied%%%"
+        },
+        "inviteEmail": {
+            "title": "%%%.landingProReferral.inviteEmail.title%%%",
+            "placeholder": "%%%.landingProReferral.inviteEmail.placeholder%%%",
+            "btn": "%%%.landingProReferral.inviteEmail.btn%%%",
+            "sendInvitationsSuccess": "%%%.landingProReferral.inviteEmail.sendInvitationsSuccess%%%"
+        },
+        "faqs": {
+            "question1": "%%%.landingProReferral.faqs.question1%%%",
+            "answer1": "%%%.landingProReferral.faqs.answer1%%%",
+            "question2": "%%%.landingProReferral.faqs.question2%%%",
+            "answer2": "%%%.landingProReferral.faqs.answer2%%%",
+            "question3": "%%%.landingProReferral.faqs.question3%%%",
+            "answer3": "%%%.landingProReferral.faqs.answer3%%%",
+            "question4": "%%%.landingProReferral.faqs.question4%%%",
+            "answer4": "%%%.landingProReferral.faqs.answer4%%%",
+            "question5": "%%%.landingProReferral.faqs.question5%%%",
+            "answer5": "%%%.landingProReferral.faqs.answer5%%%"
+        }
+    },
+    "getPrices": {
+        "table1": {
+            "head1": "%%%.getPrices.table1.head1%%%",
+            "head2": "%%%.getPrices.table1.head2%%%",
+            "head3": "%%%.getPrices.table1.head3%%%",
+            "head4": "%%%.getPrices.table1.head4%%%"
+        },
+        "table2": {
+            "head1": "%%%.getPrices.table2.head1%%%",
+            "head2": "%%%.getPrices.table2.head2%%%",
+            "head3": "%%%.getPrices.table2.head3%%%",
+            "head4": "%%%.getPrices.table2.head4%%%"
+        },
+        "table3": {
+            "head1": "%%%.getPrices.table3.head1%%%",
+            "head2": "%%%.getPrices.table3.head2%%%",
+            "head3": "%%%.getPrices.table3.head3%%%",
+            "head4": "%%%.getPrices.table3.head4%%%"
+        },
+        "table4": {
+            "head1": "%%%.getPrices.table4.head1%%%",
+            "head2": "%%%.getPrices.table4.head2%%%",
+            "head3": "%%%.getPrices.table4.head3%%%",
+            "head4": "%%%.getPrices.table4.head4%%%"
+        }
+    },
+    "modules": {
+        "faqs": {
+            "title": "%%%.modules.faqs.title%%%"
+        }
     }
 }

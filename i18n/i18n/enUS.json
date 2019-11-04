@@ -262,15 +262,15 @@
             },
             "investCustom": {
                 "title": "Fiat Custom",
-                "desc": "Your rates. Your terms. Fully secured."
+                "desc": "10% APY. Fully secured. Set your own terms."
             },
             "investStaking": {
                 "title": "Crypto Staking",
-                "desc": "5%-20% APY. No minimums. Withdraw anytime."
+                "desc": "5%-20% APY. Fully secured. Staking services."
             },
             "borrowFiat": {
-                "title": "Crypto-backed Loans",
-                "desc": "Your rates. Your terms. No credit checks."
+                "title": "Crypto-Backed",
+                "desc": "10% APR. Pay back anytime."
             }
         }
     },
@@ -2170,8 +2170,8 @@
                 "question10": "What happens if I repay late?",
                 "answer10": "The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due."
             },
-            "title": "Fair, fully secured crypto-backed loans.",
-            "subTitle": "\n        <h2>4.50% APR.</h2>\n        <h2>Instant funding.</h2>\n        <h2>Get cash for crypto without needing to sell.</h2>\n      ",
+            "title": "Borrow the way you want",
+            "subTitle": "<h2 class=\"\">Set your own rates.</h2>\n<h2 class=\"\">Protected by smart contracts.</h2>\n<h2 class=\"\">Get cash for crypto without needing to sell.</h2>\n<h6>Get the funds you need at rates you are willing to pay. All your collateral is kept safe in a smart contract escrow, and will be automatically returned to you when the loan is repaid.</h6>",
             "headLine": "Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.",
             "exchange": {
                 "maxRateTooltip": "This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.",

@@ -636,11 +636,11 @@
                 "content": {
                     "Cancel": "\n<div>\n              <p>Bạn đang {Type} <strong>{Amount}</strong> Constant với giá <strong>{Price}</strong> {Currency}/Constant.</p>\n              <p>Nếu bạn muốn huỷ lệnh này, hãy nhấn nút \"Huỷ lệnh\" phía dưới. Hoặc vui lòng tắt cửa sổ này</p>\n            </div>\n          ",
                     "Approve": "\n             <div>\n              <p>Bạn đang mua <strong>{Amount} Constant</strong> với giá <strong>{Price}</strong> {Currency}/Constant.</p>\n              <p>Nếu bạn gửi<strong>{Total} {Currency}</strong> vào tài khoản ngân hàng này, vui lòng nhấn \"Xác nhận thanh toán\" bên dưới.</p> \n              <p>Hãy nhớ gửi chính xác <strong>{Total} {Currency}</strong> vào tài khoản ngân hàng của người bán. Nhớ điền số tham chiếu <ref> vào phần thông tin chuyển khoản</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Tên Ngân Hàng:</span>\n                  <strong>{bank_name}</strong>\n                </div>\n                <div>\n                  <span>Tên Tài Khoản:</span>\n                  <strong>{bank_account_name}</strong>\n                </div>\n                <div>\n                  <span>Số Tài Khoản: </span>\n                  <strong>{bank_account_number}</strong>\n                </div>\n                <div>\n                  <span>Số Tiền: </span>\n                  <strong>{Total}&nbsp;{Currency}</strong>\n                </div>\n                <div>\n                  <span>Số Tham Chiếu: </span>\n                  <strong>{Reference}</strong>\n                </div>\n              </div>\n              <br />\n              <p>QUAN TRỌNG: Nếu bạn không hoàn tất giao dịch trong vòng 30 phút, lệnh mua sẽ bị hủy để bảo mật thông tin của bạn và mạng lưới của chúng tôi</p>\n             </div>\n          {TotalVND}",
-                    "Finish": "\n            <div>\n                <p>You’re selling <strong>{Amount} Constant</strong> at <strong>{Price} </strong> {Currency} per Constant.</p>\n                <p>If you’ve received a bank transfer for <strong>{TotalVND} {Currency}</strong>, you can now send your Constant to the buyer by clicking the button below.</p>\n                <p>IMPORTANT: Please do not send your Constant until you’ve received the bank transfer from the buyer. If the buyer doesn’t pay you within 30 minutes of placing the order, please email us at hello@constant.money.</p>\n            </div>\n          "
+                    "Finish": "\n            <div>\n                <p>Bạn đang bán <strong>{Amount} Constant</strong> với giá <strong>{Price} </strong> {Currency}/Constant.</p>\n                <p>Nếu bạn đã nhận được <strong>{TotalVND} {Currency}</strong>, bạn có thể gửi Constant đến người mua ngay bằng cách nhấn nút bên dưới.</p>\n                <p>QUAN TRỌNG: Chỉ chuyển Constant khi bạn đã được thanh toán đầy đủ. Nếu bạn chưa nhận được tiền trong vòng 30 phút, liên hệ với chúng tôi qua email hello@constant.money để được giải quyết.</p>\n            </div>\n          "
                 }
             },
-            "noData": "No buy order available",
-            "yourInvest": "Your Invests"
+            "noData": "Không có lệnh mua khả dụng",
+            "yourInvest": "Khoản đầu tư của bạn"
         },
         "personalProfile": {
             "title": "Thông tin cá nhân",
@@ -685,15 +685,15 @@
             "email": "Email",
             "nickname": "Tên tài khoản",
             "nickname_note": "Tên này sẽ được hiển thị khi thực hiện giao dịch",
-            "language": "Language",
+            "language": "Ngôn ngữ",
             "alert": {
                 "passwordFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
                 "success": "Thay đổi tên tài khoản thành công",
                 "failed": "Đã xảy ra lỗi. Xin vui lòng thử lại."
             },
-            "emailNotVerified": "Please verify your email.",
-            "verifyBtn": "Resend verification",
-            "enable2Fa": "Enable 2FA to add extra security to your account"
+            "emailNotVerified": "Vui lòng xác nhận email của bạn.",
+            "verifyBtn": "Gửi lại email xác nhận",
+            "enable2Fa": "Cho phép 2FA thêm vào bảo mật tài khoản của bạn"
         },
         "changePassword": {
             "newPasswordIsRequired": "Nhập mật khẩu mới",
@@ -705,56 +705,56 @@
             "changeFailed": "Hãy chắc chắn bạn đã nhập đúng mật khẩu cũ"
         },
         "twoFa": {
-            "description2Fa": "Important actions (withdraw, transfer, etc.) will require you to enter a password via Google Authenticator or Authy.",
+            "description2Fa": "Hoạt động quan trọng (rút, chuyển,...) yêu cầu bạn nhập mật khẩu qua Google Authenticator hoặc Authy.",
             "qrScanModal": {
-                "title": "Scan QR Code",
-                "description": "Please scan this code with Google Authenticator or Authy, then enter the password sent to you.",
-                "inputCode": "Enter password",
-                "close": "Close",
-                "submit": "Submit"
+                "title": "Quét mã QR",
+                "description": "Vui lòng quét mã QR này bằng Google Authenticator hoặc Authy, rồi nhập mật khẩu được gửi đến.",
+                "inputCode": "Nhập mật khẩu",
+                "close": "Đóng",
+                "submit": "Gửi"
             },
             "disable2FaModal": {
-                "title": "Disable 2FA",
-                "inputCode": "Enter password",
-                "close": "Close",
-                "submit": "Submit"
+                "title": "Vô hiệu hoá 2FA",
+                "inputCode": "Nhập mật khẩu",
+                "close": "Đóng",
+                "submit": "Gửi"
             },
             "input2Fa": {
-                "title": "Input 2FA",
-                "inputCode": "Enter password",
-                "close": "Close",
-                "submit": "Submit",
-                "message": "Google Authentication"
+                "title": "Nhập 2FA",
+                "inputCode": "Nhập mật khẩu",
+                "close": "Đóng",
+                "submit": "Gửi",
+                "message": "Xác thực Google"
             },
-            "disable2FaSuccess": "Disable 2FA successfully!",
-            "enable2FaSuccess": "Enable 2FA successfully!"
+            "disable2FaSuccess": "Vô hiệu hóa 2FA thành công",
+            "enable2FaSuccess": "Bật 2FA thành công!"
         },
         "setting": {
             "title": "Cài đặt chung"
         },
         "referralInfo": {
-            "title": "Referral Information",
-            "copied": "Referral link copied to clipboard."
+            "title": "Thông tin giới thiệu",
+            "copied": "Đã sao chép link giới thiệu"
         },
         "localHistory": {
             "status": {
-                "canceled": "Cancelled",
+                "canceled": "Đã huỷ",
                 "timeout": "Hết thời gian",
-                "transferMoneyToAgent": "Waiting for buyer to send money",
-                "waitAgentTransferMoney": "Waiting for seller to send money",
-                "transferredMoneyToAgent": "Funds have been sent to your bank account.",
-                "done": "Successful",
+                "transferMoneyToAgent": "Chờ người mua gửi tiền",
+                "waitAgentTransferMoney": "Chờ người bán gửi tiền",
+                "transferredMoneyToAgent": "Vốn đã được gửi đến tài khoản ngân hàng của bạn.",
+                "done": "Thành công",
                 "inProgress": "Xem chi tiết"
             },
             "agent": {
                 "status": {
-                    "canceled": "Cancelled",
-                    "timeout": "Timed out",
-                    "transferMoneyToAgent": "Waiting for buyer to send money",
-                    "waitAgentTransferMoney": "Waiting for you to send money",
-                    "transferredMoneyToAgent": "Received",
-                    "done": "Successful",
-                    "inProgress": "Order in progress"
+                    "canceled": "Đã huỷ",
+                    "timeout": "Hết giờ",
+                    "transferMoneyToAgent": "Chờ người mua gửi tiền",
+                    "waitAgentTransferMoney": "Chờ bạn gửi tiền",
+                    "transferredMoneyToAgent": "Đã nhận",
+                    "done": "Thành công",
+                    "inProgress": "Đang xử lý lệnh"
                 }
             },
             "confirm": {
@@ -771,7 +771,7 @@
             }
         },
         "history": {
-            "backToOrder": "Back to order",
+            "backToOrder": "Quay lại lệnh",
             "backToOrderMsg": "Go back to confirmation page",
             "title": "Lịch sử giao dịch",
             "balance": "Total balance: {balance} CONSTANT",

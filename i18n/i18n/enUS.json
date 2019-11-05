@@ -4095,7 +4095,7 @@
         },
         "flex": {
             "balanceTitle": "YOU CURRENTLY HAVE",
-            "desc": "\n        <p class=bold\">Get your friends involved</p>",
+            "desc": "<p class=\"bold\">Get your friends involved</p>\n<p>Refer friends and we’ll give you 10% of the interest they earn in their first year.</p>\n<p>No matter how often they deposit, you earn 10% of what they do – paid every second.</p>\n<p>The more they deposit, the more you earn (up to a maximum of $1,000,000).</p>\n<p>So get referring friends to Flex and earn more interest than ever.</p>",
             "buttonRefer": "Refer friends",
             "buttonFriendEarn": "Friends earn interest",
             "buttonYouEarn": "You earn 10%",

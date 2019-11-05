@@ -3108,7 +3108,7 @@
         }
     },
     "deposit": {
-        "contentHtml": "\n      <h6>Do more with your money</h6>\n      <h2>Enjoy 50x better interest</h2>\n      <h2>than a savings account<sup>1</sup>.</h2>\n      <br />\n      <h6>Earn {interest}% APY on any amount. You deposit, we lend on your behalf, and you keep the interest. All loans secured by collateral and you can withdraw anytime for free. Grow your money without locking it in.</h6>\n      <br />\n<p><sup>1</sup>Comparison based on data from <a href=https://www.valuepenguin.com/banking/average-bank-interest-rates\">ValuePenguin</a>.</p>\"",
+        "contentHtml": "\n      <h6>Do more with your money</h6>\n      <h2>Enjoy 50x better interest</h2>\n      <h2>than a savings account<sup>1</sup>.</h2>\n      <br />\n      <h6>Earn {interest}% APY on any amount. You deposit, we lend on your behalf, and you keep the interest. All loans secured by collateral and you can withdraw anytime for free. Grow your money without locking it in.</h6>\n      <br />\n<p><sup>1</sup>Comparison based on data from <a href=https://www.valuepenguin.com/banking/average-bank-interest-rates\">ValuePenguin</a>.</p>",
         "learnMore": "Learn more here",
         "title": "Deposit USD or USD stablecoins here.",
         "availableInVn": "Available now in Vietnam.",
@@ -4117,10 +4117,10 @@
         "btnSignIn": "Sign in",
         "account": "Account",
         "btnDeposit": "Deposit",
-        "btnReferral": "<div class=textLeft\"><small>Share & Earn</small><div>Money</div></div>\"",
+        "btnReferral": "<div class=textLeft\"><small>Share & Earn</small><div>Money</div></div>",
         "btnTransfer": "Transfer",
-        "btnWithdrawCrypto": "<div class=textLeft\"><small>withdraw to</small><div>Crypto</div></div>\"",
-        "btnWithdrawFiat": "<div class=textLeft\"><small>withdraw to</small><div>Fiat</div></div>\"",
+        "btnWithdrawCrypto": "<div class=textLeft\"><small>withdraw to</small><div>Crypto</div></div>",
+        "btnWithdrawFiat": "<div class=textLeft\"><small>withdraw to</small><div>Fiat</div></div>",
         "btnSetting": "KYC",
         "about": "About",
         "privacy": "Privacy Policy",

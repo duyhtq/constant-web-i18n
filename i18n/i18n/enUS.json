@@ -262,15 +262,15 @@
             },
             "investCustom": {
                 "title": "Fiat Custom",
-                "desc": "10% APY. Fully secured. Set your own terms."
+                "desc": "Your rates. Your terms. Fully secured."
             },
             "investStaking": {
                 "title": "Crypto Staking",
-                "desc": "5%-20% APY. Fully secured. Staking services."
+                "desc": "5%-20% APY. No minimums. Withdraw anytime."
             },
             "borrowFiat": {
-                "title": "Crypto-Backed",
-                "desc": "10% APR. Pay back anytime."
+                "title": "Crypto-backed Loans",
+                "desc": "Your rates. Your terms. No credit checks."
             }
         }
     },

@@ -132,7 +132,7 @@
         "investorAgreement": "Investor agreement",
         "kycGuidelines": "KYC guidelines",
         "contactUs": "Contact us:",
-        "referral": "Share & Earn $",
+        "referral": "Share & Earn",
         "paymentGateway": "Payment Gateway",
         "phone": {
             "us": {
@@ -266,7 +266,7 @@
             },
             "investStaking": {
                 "title": "Crypto Staking",
-                "desc": "5%-20% APY. No minimums. Withdraw anytime."
+                "desc": "5%-20% APY. Low minimums. Withdraw anytime."
             },
             "borrowFiat": {
                 "title": "Crypto-backed Loans",
@@ -1482,11 +1482,11 @@
             "balance": "{name} balance: {balance} {symbol} and balance reward: {reward} {symbol}",
             "matched": "Matched: {amount} {symbol}",
             "withdraw": "Withdraw",
-            "withdrawReward": "Withdraw reward",
-            "staking": "Staking",
-            "unStaking": "un-Staking",
+            "withdrawReward": "Withdraw",
+            "staking": "Stake",
+            "unStaking": "Unstake",
             "reward": "Reward",
-            "rewardWithdraw": "Withdraw reward",
+            "rewardWithdraw": "Withdraw",
             "date": "Date",
             "status": {
                 "0": "Pending",
@@ -1508,7 +1508,7 @@
     "landing_page.label.footer": "Constant MVP is an online exchange developed by Shanzhai Limited, a Hong Kong based company, offering bulk crypto purchasing at competitive prices with full delivery service.<br />Join the dojo: <a href=https://t.me/coin_bowl\" class=\"landing-link\">t.me/coin_bowl</a><br />Contact us: <a href=\"mailto:hello@constant.money\" class=\"landing-link\" target=\"_top\">hello@constant.money</a>\"",
     "user": {
         "kycInformation": "KYC Information",
-        "referral": "Share & Earn $",
+        "referral": "Share & Earn",
         "logout": "Sign out",
         "history": "History",
         "myOrders": "My orders",
@@ -1613,7 +1613,7 @@
             "withdrawCrypto": "Withdraw to Crypto",
             "transfer": "Transfer",
             "history": "History",
-            "shareAndEarn": "Share & Earn $"
+            "shareAndEarn": "Share & Earn"
         }
     },
     "landingPage": {
@@ -4254,7 +4254,7 @@
         "contentHtml": "\n        <h6>Stake and earn</h6>\n        <h2>Get up to {reward}% APR</h2>\n        <h2>on your cryptocurrencies.</h2>\n        <br />\n        <h6>Join our masternode pool for up to {reward}% APR. Interest paid every 30 minutes. Low minimum stake. No fees. Withdraw anytime. Staking has never been this easy.</h6>\n        <br />\n    ",
         "withdrawFrom": {
             "unStaking": {
-                "title": "Un-staking",
+                "title": "Unstake",
                 "amount": "Amount",
                 "amountDesc": "How much do you want to un-taking?",
                 "address": "Your {name} wallet address?",
@@ -4331,7 +4331,7 @@
             },
             "3": {
                 "title": "3. Start earning interest",
-                "desc": "The longer you leave your crypto staking, the more interest you earn. Withdraw anytime to any supported wallet."
+                "desc": "The longer you stake your crypto, the more interest you earn. Withdraw anytime to any supported wallet."
             },
             "title": "How to stake"
         },
@@ -4442,17 +4442,17 @@
         "rewardBalanceMobile": "Reward",
         "action": "Action",
         "withdraw": "Withdraw",
-        "withdrawReward": "Withdraw Reward",
+        "withdrawReward": "Withdraw",
         "deposit": "Deposit",
-        "staking": "Staking",
-        "unStaking": "Un-Staking",
+        "staking": "Stake",
+        "unStaking": "Unstake",
         "depositCollateralTitle": "Deposit Collateral",
         "hideSmallBalance": "Hide Small Balances",
         "hideDesc": "Balances valued are zero.",
         "estimatedValue": "Estimated Value",
         "tabs": {
             "collaterals": "Collaterals",
-            "staking": "Staking"
+            "staking": "Stake"
         }
     }
 }

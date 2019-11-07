@@ -2240,7 +2240,7 @@
                 "summarizeTitle": "Here are the loan terms:",
                 "messageDescription": "\n        <p>Please open your cryptocurrency wallet, enter the required collateral amount, paste the Constant wallet address into the recipient field, and click send.</p>\n        <p>Having difficulty finding your cryptocurrency wallet?\n           If you purchase cryptocurrency from an exchange, you will have a wallet with them, usually accessible from your Accounts page.</p>\n        ",
                 "minuteWindow": "Please complete your transfer within 60 minutes.",
-                "minuteWindowDescription": "For the sake of security, this session will time-out after 60 minutes. If you need a little longer, just re-enter the amount you would like to borrow <a href=/borrow\" >here</a>.\"",
+                "minuteWindowDescription": "For the sake of security, this session will time-out after 60 minutes. If you need a little longer, just re-enter the amount you would like to borrow <a href=\"/borrow\" >here</a>.",
                 "collateralNoteDGXExtraFees": "Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.",
                 "transactionID": "transaction ID",
                 "noticeTpl": "To receive this loan, please deposit the required collateral. Simply go to your cryptocurrency wallet and send <strong>{collateralAmount} {collateralSymbol}</strong> to the following wallet address. Please complete this action within the next <strong>60 minutes</strong>.",

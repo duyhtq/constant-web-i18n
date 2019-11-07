@@ -257,11 +257,11 @@
             "expertDecs": "More advanced peer-to-peer lending",
             "transfer": "Transfer",
             "investFlex": {
-                "title": "Fiat Flex",
+                "title": "Flex",
                 "desc": "5% APY. Fully secured. Withdraw anytime."
             },
             "investCustom": {
-                "title": "Fiat Custom",
+                "title": "Custom",
                 "desc": "Your rates. Your terms. Fully secured."
             },
             "investStaking": {
@@ -600,10 +600,10 @@
                 },
                 "content": {
                     "Cancel": "\n            <div>\n              <p>You’re {Type} <strong>{Amount}</strong> Constant at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you want to cancel this order, please click the “Cancel order” button below. Otherwise, please close this window.</p>\n            </div>\n          ",
-                    "Approve": "\n             <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=bank\">",
-                    "ApproveUs": "\n          <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Account Name:</span>\n                  <strong>{bank_account_name}</strong>\n                </div>\n                <div>\n                  <span>Account Number: </span>\n                  <strong>{bank_account_number}</strong>\n                </div>\n                <div>\n                  <span>Amount: </span>\n                  <strong>{Total}&nbsp;{Currency}</strong>\n                </div>\n                <div>\n                  <span>Reference: </span>\n                  <strong>{Reference}</strong>\n                </div>\n                <div>\n                    <span>Bank Country: </span>\n                    <strong>{bankCountry}</strong>\n                 </div>\n              </div>\n              <br />\n              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>\n             </div>\n          ",
-                    "ApproveZelle": "\n             <div>\n              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n              <div name=\"bank\">\n                <div>\n                  <span>Payment method:</span>\n                  <strong>Zelle</strong>\n                </div>\n                <div>\n                  <span>Bank Email Address:</span>\n                  <strong>{Email}</strong>\n                </div>\n                <div>\n                  <span>Full Name:</span>\n                  <strong>{FullName}</strong>\n                </div>\n             </div>\n          ",
-                    "Finish": "\n            <div>\n                <p>You’re selling <strong>{Amount} Constant</strong> at <strong>{Price} </strong> {Currency} per Constant.</p>\n                <p>If you’ve received a bank transfer for <strong>{TotalVND} {Currency}</strong>, you can now send your Constant to the buyer by clicking the button below.</p>\n                <p>IMPORTANT: Please do not send your Constant until you’ve received the bank transfer from the buyer. If the buyer doesn’t pay you within 30 minutes of placing the order, please email us at hello@constant.money.</p>\n            </div>\n          "
+                    "Approve": "<div>\n<p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n<p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p>\n <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n<div name=\"bank\">\n<div><span>Bank Name:</span>\n<strong>{bank_name}</strong>\n</div><div><span>Account Name:</span><strong>{bank_account_name}</strong>              </div><div><span>Account Number: </span><strong>{bank_account_number}</strong>\n</div><div><span>Amount: </span><strong>{Total}&nbsp;{Currency}</strong></div>\n<div><span>Reference: </span><strong>{Reference}</strong> </div><div> <span>Bank Country: </span><strong>{bankCountry}</strong></div></div><br /><p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p></div>          ",
+                    "ApproveUs": "<div>              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p>               <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>              <div name=\"bank\">                <div>                  <span>Account Name:</span>                  <strong>{bank_account_name}</strong>                </div>                <div>                  <span>Account Number: </span>                  <strong>{bank_account_number}</strong>                </div>                <div>                  <span>Amount: </span>                  <strong>{Total}&nbsp;{Currency}</strong>                </div>                <div>                  <span>Reference: </span>                  <strong>{Reference}</strong>                </div>                <div>                    <span>Bank Country: </span>                    <strong>{bankCountry}</strong>                 </div>              </div>              <br />              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>             </div> ",
+                    "ApproveZelle": "<div><p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p><p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p><div name=bank><div><span>Payment method:</span><strong>Zelle</strong></div><div><span>Bank Email Address:</span><strong>{Email}</strong></div><div><span>Full Name:</span><strong>{FullName}</strong></div> </div>",
+                    "Finish": "<div>                <p>You’re selling <strong>{Amount} Constant</strong> at <strong>{Price} </strong> {Currency} per Constant.</p>                <p>If you’ve received a bank transfer for <strong>{TotalVND} {Currency}</strong>, you can now send your Constant to the buyer by clicking the button below.</p>                <p>IMPORTANT: Please do not send your Constant until you’ve received the bank transfer from the buyer. If the buyer doesn’t pay you within 30 minutes of placing the order, please email us at hello@constant.money.</p>  </div>"
                 }
             }
         },
@@ -1235,7 +1235,7 @@
                 "transfer": "Transfer",
                 "batchtransfer": "Transfer to multiple people",
                 "deposit": "Make a deposit",
-                "balanceCoin": "Coin Balance",
+                "balanceCoin": "Coin balance",
                 "depositMatched": "Deposit",
                 "cancelDepositMatched": "Cancel Deposit",
                 "withdrawDesc": "Withdraw funds to your bank account or wallet address.",
@@ -1844,7 +1844,7 @@
                     "bank": "Bank"
                 },
                 "introHolderTemplate": "\n          <h1>Convert to local currency your country</h1>\n          <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n          <p>Email us at <a href=mailto:{email}\">{email}</a></p>",
-                "confirmTemplate": "\n          <div name=\"thanks\">\n            <p>Thank you!</p>\n            <p>We’re preparing your funds to be withdrawn to the registered bank account. You should be getting another notification once your withdrawal is in motion. Once you’ve received your funds, please click confirm on the Order History page, so we can finalize the record.</p>\n            <p>If you do not receive a notification confirming your withdrawal after 30 minutes, please send <a href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> an email, and we’ll get it sorted for you.</p>\n          </div>\n        "
+                "confirmTemplate": "<div name=\"thanks\">\n            <p>Thank you!</p>\n            <p>We’re preparing your funds to be withdrawn to the registered bank account. You should be getting another notification once your withdrawal is in motion. Once you’ve received your funds, please click confirm on the Order History page, so we can finalize the record.</p>\n            <p>If you do not receive a notification confirming your withdrawal after 30 minutes, please send <a href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a> an email, and we’ll get it sorted for you.</p>\n          </div>"
             },
             "titleRequestModal": "{type} Constant",
             "unitText": "per Constant",
@@ -1890,7 +1890,7 @@
             "send": {
                 "confirmTemplate": {
                     "title": "Thank you!",
-                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=/getPrices\" target=\"_blank\" class=\"white bold\">service times</a> for an estimation of when funds will reach.",
+                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=/getPrices\" target=\"_blank\" class=\"white bold\">service times</a> for an estimation of when funds will reach you.",
                     "contact": "If you have any questions, feel free to reach out to <a class=colorLight bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime.",
                     "actionTitle": "Make another transfer"
                 }
@@ -1898,8 +1898,8 @@
             "withdraw": {
                 "confirmTemplate": {
                     "title": "Thank you!",
-                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=/getPrices\" target=\"_blank\" class=\"white bold\">service times</a> for an estimation of when funds will reach.\"",
-                    "contact": "If you have any questions, feel free to reach out to <a class=colorLight bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> anytime.",
+                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=/getPrices\" target=\"_blank\" class=\"white bold\">service times</a> for an estimation of when funds will reach you.",
+                    "contact": "If you have any questions, feel free to reach out to <a class=colorLight bold\" href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a> anytime.",
                     "actionTitle": "Back to homepage"
                 }
             }
@@ -4251,7 +4251,7 @@
         "cancel": "Cancel",
         "starStaking": "Create staking",
         "stakingFromTitle": "Start staking now",
-        "contentHtml": "\n        <h6>Stake and earn</h6>\n        <h2>Get up to {reward}% APR</h2>\n        <h2>on your cryptocurrencies.</h2>\n        <br />\n        <h6>Join our masternode pool for up to {reward}% APR. Interest paid every 30 minutes. No minimum stake. No fees. Withdraw anytime. Staking has never been this easy.</h6>\n        <br />\n    ",
+        "contentHtml": "\n        <h6>Stake and earn</h6>\n        <h2>Get up to {reward}% APR</h2>\n        <h2>on your cryptocurrencies.</h2>\n        <br />\n        <h6>Join our masternode pool for up to {reward}% APR. Interest paid every 30 minutes. Low minimum stake. No fees. Withdraw anytime. Staking has never been this easy.</h6>\n        <br />\n    ",
         "withdrawFrom": {
             "unStaking": {
                 "title": "Un-staking",

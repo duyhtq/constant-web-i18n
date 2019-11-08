@@ -448,7 +448,7 @@
             "lRegion": "State/Province/Region",
             "lZipcode": "Zip Code",
             "plZipcode": "12345",
-            "lAddrUpload": "To verify the address above, please upload a document that meets <a href=https://medium.com/@constantp2p/how-to-verify-your-id-on-constant-kyc-1a9d08ae0a\" class=\"underline\" target=\"_blank\" >these criteria</a>.",
+            "lAddrUpload": "To verify the address above, please upload a document that meets <a href=\"https://medium.com/@constantp2p/how-to-verify-your-id-on-constant-kyc-1a9d08ae0a\" class=\"underline\" target=\"_blank\" >these criteria</a>.",
             "descAddrUpload": "<div>\n        <p>Valid documents: utility bill, phone bill, mortgage statement, tenancy\n        agreement, bank/credit card statement, insurance letter (motor, home, or\n        life), or financial statement (pension, endowment).</p>\n        <p>\n        <strong>Document must be dated within the last 90 days.</strong>\n        </p>\n        <p>\n        Please ensure your proof of address is an exact match with the address\n        provided in your application, including all shorthands and abbreviations.</p>\n        <p>      \n        Please make sure that the photo is complete and clearly visible, in BMP, \n        JPG, JPEG, PNG or PDF format, and is smaller than 10MB.</p>\n      </div>\n      ",
             "btnBack": "Back",
             "titleExample": "Before uploading, please crop the image of your ID to make the border as small as possible.",
@@ -3400,7 +3400,7 @@
     "support": {
         "title": "Monday to Friday, 9am - 5pm PT.",
         "text": "Questions? Call us at {phone}.",
-        "newTitle": "\n      <h6>Questions? Let's get on a call.</h6>\n      <h6>Set up a time <a href=http://calendly.com/justinconstant\" target=\"_blank\">here</a>.</h6>",
+        "newTitle": "\n      <h6>Questions? Let's get on a call.</h6>\n      <h6>Set up a time <a href=\"http://calendly.com/justinconstant\" target=\"_blank\">here</a>.</h6>",
         "phone": {
             "vn": "+84 36 656 2949",
             "us": "+1 844 201 7242",

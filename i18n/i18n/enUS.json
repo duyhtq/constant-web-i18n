@@ -2171,7 +2171,7 @@
                 "answer10": "The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due."
             },
             "title": "Borrow the way you want",
-            "subTitle": "<h2>Set your own rates.</h2>\n<h2>Protected by smart contracts.</h2>\n<h2>Get cash for crypto without needing to sell.</h2>\n<h6>Get the funds you need at rates you are willing to pay. All your collateral is kept safe in a smart contract escrow, and will be automatically returned to you when the loan is repaid.</h6>",
+            "subTitle": "<h2>Set your own rates.</h2>\n<h2>Get cash for crypto without needing to sell.</h2>\n<h6>Get the funds you need at rates you’re willing to pay. All you collateral is securely escrowed and will be automatically returned to you when the loan is repaid.</h6>",
             "headLine": "Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.",
             "exchange": {
                 "maxRateTooltip": "This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.",
@@ -3108,7 +3108,7 @@
         }
     },
     "deposit": {
-        "contentHtml": "\n      <h6>Do more with your money</h6>\n      <h2>Enjoy 50x better interest</h2>\n      <h2>than a savings account<sup>1</sup>.</h2>\n      <br />\n      <h6>Earn {interest}% APY on any amount. You deposit, we lend on your behalf, and you keep the interest. All loans secured by collateral and you can withdraw anytime for free. Grow your money without locking it in.</h6>\n      <br />\n<p><sup>1</sup>Comparison based on data from <a href=https://www.valuepenguin.com/banking/average-bank-interest-rates\">ValuePenguin</a>.</p>",
+        "contentHtml": "\n      <h6>Do more with your money</h6>\n      <h2>Enjoy 50x better interest</h2>\n      <h2>than a savings account<sup>*</sup>.</h2>\n      <br />\n      <h6>Earn {interest}% APY on any amount. You deposit, we lend on your behalf, and you keep the interest. All loans secured by collateral and you can withdraw anytime for free. Grow your money without locking it in.</h6>\n      <br />\n<p><sup>*</sup>Comparison based on data from <a href=https://www.valuepenguin.com/banking/average-bank-interest-rates\">ValuePenguin</a>.</p>",
         "learnMore": "Learn more here",
         "title": "Deposit USD or USD stablecoins here.",
         "availableInVn": "Available now in Vietnam.",
@@ -3118,7 +3118,7 @@
             "learnMore": "Learn more +"
         },
         "what": {
-            "whatCaption0": "Guaranteed growth",
+            "whatCaption0": "Immediate growth",
             "whatCaption1": "Zero downtime",
             "whatCaption2": "No limits",
             "whatCaption3": "Withdraw anytime",
@@ -3277,7 +3277,7 @@
             }
         },
         "crypto": {
-            "desc": "Fully secured, fully backed. All loans and investments are protected by Ethereum smart contracts and crypto collateral.\n"
+            "desc": "Fully secured, fully backed. All loans and investments are protected by crypto collateral."
         },
         "faqs": {
             "question1": "What is peer-to-peer (P2P) lending?",
@@ -3300,11 +3300,11 @@
             "desc": "Unlike traditional P2P platforms that prey on vulnerable borrowers and expect investors to shoulder the risk, Constant is designed to protect them both.",
             "item0": {
                 "title": "Secured returns for investors",
-                "desc": "If borrowers default, collateral is sold to refund the investor. If collateral falls in value, it is sold at a threshold. It’s all automated by an unstoppable smart contract - investors will always get their principal and profit."
+                "desc": "If borrowers default, collateral is sold to refund the investor. If collateral falls in value, it is sold at a threshold. The platform automates everything to ensure investors always get their principal and profit."
             },
             "item1": {
                 "title": "Collateral protection for borrowers",
-                "desc": "Borrower collateral is stored safely in a smart contract escrow, powered by the Ethereum network. This runs exactly as programmed, independent from human intervention - no one can touch these assets. As long as borrowers repay, they will always get their collateral back."
+                "desc": "Borrower collateral is securely escrowed in either a smart contract, web wallet, or offline wallet (depending on the collateral). This protects collateral while ensuring it can be returned immediately after borrowers repay. "
             }
         },
         "subjects": {
@@ -3543,7 +3543,7 @@
     "home1": {
         "lendingSection": {
             "intro": {
-                "content": "\n<h6>Invest the way you want</h6>\n<h2>Set your own rates.</h2>\n <h2>No minimum capital.</h2>\n <h2>Invest only in secured loans.</h2>\n <br />\n <h6>\n Your investments are fully backed by borrower collateral and smart contracts. Unmatched portions earn an automatic 5% APY, and can be withdrawn anytime.\n </h6>"
+                "content": "\n<h6>Invest the way you want</h6>\n<h2>Set your own rates.</h2>\n <h2>No minimum capital.</h2>\n <h2>Invest only in secured loans.</h2>\n <br />\n <h6>\n Your investments are fully backed by borrower collateral. Unmatched portions earn an automatic 5% APY, and can be withdrawn anytime.\n </h6>"
             },
             "form": {
                 "text1": "Set your own lending terms",
@@ -3646,16 +3646,16 @@
             }
         },
         "whatCaption0": "Set your own rates",
-        "whatCaption1": "Returns guaranteed",
-        "whatCaption2": "Protected by Ethereum",
+        "whatCaption1": "Immediate returns",
+        "whatCaption2": "Built for you",
         "whatCaption3": "Collateral backed",
         "whatDesc0": "\n      <p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.</p>\n \n    ",
         "whatDesc1": "<p>Earn interest before you even make an investing order. All deposits earn {interest}% APY by default, and can be withdrawn at any time. Compounded and paid every second. Stay flexible and enjoy zero downtime.</p>\n    ",
-        "whatDesc2": "\n\n      <p>When your money is on loan, it is no longer insured, but protected by a smart contract that runs exactly as programmed - without the need for human involvement.</p>\n      <br />\n      <p>Together, funds insurance and smart contract security, keep your money independently safe.</p>\n      <br />\n      <a href=https://www.google.com/url?q=https://github.com/constant-money&sa=D&ust=1555493848999000&usg=AFQjCNEEEN4_WzaIB05aPU2kpKQi_PbKOw\" target=\"_blank\">View our code</a>",
+        "whatDesc2": "<p>Enjoy 24-7 customer service, unlimited free withdrawals, and a library of useful content to help you do more with your money. Constant is an open, alternative financial platform and you can <a href=https://www.google.com/url?q=https://github.com/constant-money&sa=D&ust=1555493848999000&usg=AFQjCNEEEN4_WzaIB05aPU2kpKQi_PbKOw\" target=\"_blank\">view all our code</a> as well as suggest features you’d like to see</p>",
         "whatDesc3": "\n      <p>We strictly require every loan to be 150% backed by collateral. For someone to borrow $10,000, they have to put up $15,000 in collateral value.</p>\n      <br />\n      <p>So if borrowers default, you don’t lose a cent.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/how-do-constant-crypto-loans-work-b22b66b5b687\" target=\"_blank\">How we protect investor funds</a>\n    ",
         "howItWorks": {
             "mainTitle": "How it works",
-            "mainDesc": "<h5>The Constant algorithm matches investors with borrowers glad to pay their rates. It  then secures investor funds and borrower collateral in an unstoppable smart contract, and facilitates the entire transaction from beginning to end. </h5>\n",
+            "mainDesc": "<h5>The Constant algorithm matches investors with borrowers glad to pay their rates. It then manages the transfer of investor funds while securely escrowing borrower collateral. </h5>\n",
             "step1": "Step 1",
             "title1": "1. Set your own terms",
             "desc1": "Choose how much you want to invest and for how long, then enter the interest rate you want to earn.",
@@ -4026,7 +4026,7 @@
             "question2": "Why 5% APY?",
             "answer2": "Compound Finance uses a blockchain protocol that intelligently manages the lending pool. It also sets interest rates according to supply and demand. At the moment, the rate is fixed at 5% APY. In the future, it could be higher or lower depending on activity in Compound’s lending market.",
             "question3": "What is Compound Finance?",
-            "answer3": "<p>Compound Finance is a technology that intelligently manages a lending pool of over $150 million in assets (as of September 2019). Flex interfaces with this technology through an API that allows you to withdraw your deposits and earned interest at any time.</p>\n\n<p>Compound Finance lends in a similar way to banks: your deposits go in and are lent to borrowers in exchange for interest and collateral. But since Compound Finance is a technology, there is no need for branches or staff, so you enjoy a much better interest rate!</p>\n\n<p><a href=https://medium.com/@constantp2p/compound-finance-discover-the-interest-earning-tech-behind-flex-dcbb1decc835\">Learn more about Compound Finance.</a></p>\"",
+            "answer3": "<p>Compound Finance is a technology that intelligently manages a lending pool of over $150 million in assets (as of September 2019). Flex interfaces with this technology through an API that allows you to withdraw your deposits and earned interest at any time.</p>\n\n<p>Compound Finance lends in a similar way to banks: your deposits go in and are lent to borrowers in exchange for interest and collateral. But since Compound Finance is a technology, there is no need for branches or staff, so you enjoy a much better interest rate!</p>\n\n<p><a href=\"https://medium.com/@constantp2p/compound-finance-discover-the-interest-earning-tech-behind-flex-dcbb1decc835\">Learn more about Compound Finance.</a></p>\"",
             "question4": "Do you have a referral program for Flex?",
             "answer4": "Yes, we do. For every friend you refer to Flex, you’ll get 10% of their interest earnings for the first year (up to a maximum of $1,000,000). For more details, <a href=/referral\">visit your Referrals page.</a>\"",
             "question5": "Can I withdraw anytime?",

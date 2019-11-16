@@ -120,6 +120,7 @@
         "blog": "Blog",
         "faqs": "Câu hỏi thường gặp",
         "affiliate": "Tiếp thị liên kết",
+        "developers": "Developers",
         "support": "Hỗ trợ",
         "telegramText": "Tham gia {link}",
         "email": "Email cho chúng tôi tại {email}",
@@ -1199,6 +1200,7 @@
                     "partially_cancelled": "Huỷ một phần",
                     "approving": "Đang chấp thuận",
                     "transferring_fiat": "Việc nạp đang chờ xử lý",
+                    "closed_soon": "Matched",
                     "": ""
                 },
                 "interestInfo": {
@@ -1235,7 +1237,7 @@
                 "transfer": "Chuyển khoản",
                 "batchtransfer": "Chuyển khoản tới nhiều người cùng lúc",
                 "deposit": "Nạp tiền",
-                "balanceCoin": "Số dư",
+                "balanceCoin": "Coin balance",
                 "depositMatched": "Nạp",
                 "cancelDepositMatched": "Huỷ nạp",
                 "withdrawDesc": "Rút tiền về tài khoản ngân hàng hoặc địa chỉ ví của bạn.",
@@ -1488,6 +1490,7 @@
             "reward": "Phần thưởng",
             "rewardWithdraw": "Phần thưởng rút tiền",
             "date": "Ngày",
+            "upToNow": "Up to Now",
             "status": {
                 "0": "Đang chờ",
                 "1": "Hoàn thành",
@@ -1890,16 +1893,16 @@
             "send": {
                 "confirmTemplate": {
                     "title": "Xin cảm ơn!",
-                    "description": "Tiền của bạn đang chuyển đến tài khoản ngân hàng của người nhận. Thời gian chuyển phụ thuộc vào từng ngân hàng và vị trí. Vui lòng xem thời gian dịch vụ <a href=\"/getPrices\" target=\"_blank\" class=\"white bold\"> để ước lượng thời gian chuyển hoàn tất.",
-                    "contact": "Nếu bạn có câu hỏi gì, xin liên hệ <a class=\"colorLight bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> bất cứ lúc nào.",
+                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"white bold\">service times</a> for an estimation of when funds will reach you.",
+                    "contact": "If you have any questions, feel free to reach out to <a class=\"colorLight bold\" href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a> anytime.",
                     "actionTitle": "Đặt lệnh chuyển tiền khác"
                 }
             },
             "withdraw": {
                 "confirmTemplate": {
                     "title": "Xin cảm ơn!",
-                    "description": "Tiền của bạn đang trên đường đến tài khoản ngân hàng của người nhận. Thời gian chuyển có thể thay đổi dựa trên ngân hàng và địa điểm. Vui lòng xem <a href=\"/getPrices\"lists\" class=\"white bold\"> thời gian phục vụ </a> để biết ước chừng khi nào tiền sẽ đến.",
-                    "contact": "Nếu bạn có câu hỏi gì, xin liên hệ <a class=\"colorLight bold\" href=\"mailto:annie@myconstant.com\">annie@myconstant.com</a> bất cứ lúc nào.",
+                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"white bold\">service times</a> for an estimation of when funds will reach you.",
+                    "contact": "If you have any questions, feel free to reach out to <a class=\"colorLight bold\" href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a> anytime.",
                     "actionTitle": "Về trang chủ"
                 }
             }
@@ -2960,7 +2963,7 @@
         "paymentMethod": "Phương thức thanh toán",
         "email": {
             "name": "Người nhận",
-            "placeholder": "Nhập địa chỉ nhận email"
+            "placeholder": "Enter receiving email address"
         },
         "currencyDropdownLabel": "Tiền tệ của bạn",
         "sellBtn": "Rút",
@@ -3716,7 +3719,7 @@
             "title": "Chia sẻ của khách hàng",
             "customer1": "      <div>\n        <h5 class=\"darkblue4\">\n          Constant là giải pháp ưa thích của chúng tôi cho các giao dịch xuyên biên giới. Trả tiền cho các nhà cung cấp và khách hàng quốc tế bây giờ ít rắc rối hơn và tiết kiệm chi phí hơn nhiều với Constant.\n        </h5>\n        <br /><h3 class=\"bold clearBottom\">Liz Nguyen</h3>\n        <p>CEO của Dropship Vendor Group, nhà cung cấp cho nhièu thương hiệu hàng đầu thế giới.</p>\n      </div>\n      ",
             "customer2": "      <div>\n        <h5 class=\"darkblue4\">\n          Nhà cung cấp thương mại điện tử về các giải pháp văn phòng hỗ trợ công nghệ. Chúng tôi mới bắt đầu sử dụng Constant để tự động hóa việc chuyển lương cho nhân viên của mình tại Mỹ, Việt Nam, Trung Quốc và Hà Lan. Nhân viên của chúng tôi thích có tùy chọn nắm giữ USD, và với Constant, họ không gặp vấn đề nào khi rút USD về đồng nội tệ quốc gia họ.\n        </h5>\n        <br /><h3 class=\"bold clearBottom\">Justin Lucas</h3>\n        <p>Tổng Giám đốc công ty Autonomous.</p>\n      </div>\n      ",
-            "customer3": "customer3\n"
+            "customer3": "\n      <div>\n	      <h5 class=\"darkblue4\">\n		      My partners in different countries all got accounts easily, and most importantly - Constant syncs up with the local banking system so withdrawals are straightforward. Constant is low-friction, easy to integrate, and has saved us a bundle on international transfer fees.\n	      </h5>\n	      <br /><h3 class=\"bold clearBottom\">Veronica Tam</h3>\n	      <p>CEO of Vifah, manufacturer of outdoor furniture for Walmart, Amazon, Wayfair and more. </p>\n      </div>          \n      "
         },
         "why": {
             "title": "Tính ưu việt của Constant"
@@ -3905,6 +3908,7 @@
             "matched": "Đã khớp"
         },
         "balances": {
+            "collateralBalances": "Coin Balances",
             "title": "Số dư",
             "titleDesc": "Tất cả các khoản đầu tư và thế chấp nạp vào được thể hiện ở đây.",
             "withdraw": "Rút",
@@ -4386,50 +4390,6 @@
             "content": "Chúng tôi tự hào có mặt trong nhiều ấn phẩm tài chính và công nghệ nổi bật, từ các tin tức cho đến những đánh giá, những tìm hiểu mà các nhà báo, chuyên gia nói về nền tảng cho vay ngang hàng Constant."
         }
     },
-    "ourPartner": {
-        "partner": {
-            "partner1": {
-                "name": "Hacker Noon",
-                "desc": "<p>Thỏa thuận cho vay truyền thống đã được thay thế bằng hợp đồng thông minh Ethereum không thể ngăn chặn và không có bất kỳ khả năng ngừng hoạt động, lừa đảo hoặc can thiệp của bên thứ ba nào. Những khoản vay P2P được bảo mật hoàn toàn, được hỗ trợ bởi blockchain là đóng góp của chúng tôi cho một hệ thống tài chính mà không có ngân hàng. </p>"
-            },
-            "partner2": {
-                "name": "Coin98",
-                "desc": "<p>Chắc hẳn sẽ có những lúc chúng ta rơi vào hoàn cảnh khi đang HODL một đồng coin nào đó, nhưng lại thấy 1 cơ hội khác trong khi quỹ vốn thì đã hết. Constant sẽ giúp anh em huy động được một lượng cash (tiền mặt) nhất định để vào được kèo mới nhưng không phải cash out (bán) đồng coin đang HODL</p>\n"
-            },
-            "partner3": {
-                "name": "Techworm",
-                "desc": "<p> Tuy nhiên, điều tuyệt vời nhất về Constant là tính bảo mật của nền tảng cho vay. Mọi khoản vay đều được bảo đảm đầy đủ và bảo đảm sự an toàn theo nhiều cách. Khi cho vay, các khoản vay được bảo vệ bởi tài sản thế chấp của người vay và khi các bên chờ đợi để được khớp, các khoản được bảo vệ bởi chính sách bảo hiểm trị giá $130M.</p>\n"
-            },
-            "partner4": {
-                "name": "Blockonomi",
-                "desc": "<p> Constant đã tạo ra một nền tảng loại bỏ các ngân hàng khỏi phương trình của những khoản vay và cho phép bất kỳ ai trên thế giới tạo ra các khoản vay theo bất kỳ điều khoản nào họ muốn. Đây là một sự thay đổi lớn so với hệ thống cho vay đã được thiết lập và nó có thể là một lợi ích lớn cho cả người vay và người cho vay </ p>\n"
-            },
-            "partner5": {
-                "name": "Zero Hedge\n",
-                "desc": "<p> Người cho vay có thể chọn điều khoản của mình, không cần kiểm tra tín dụng - và từ đó tìm người vay. Lập trình một hệ thống tương tự bằng hệ thống ngân hàng Mỹ sẽ tốn kém, cồng kềnh, tốn thời gian và ai biết chắc nó sẽ trở thành như thế nào sau tất cả các phê duyệt theo quy định. </p>"
-            },
-            "partner6": {
-                "name": "ZyCrypto\n",
-                "desc": "<p> Constant khác biệt ở chỗ người dùng có thể tin tưởng rằng mỗi giao dịch được bảo mật hoàn toàn. Mọi khoản vay đều được thế chấp. Tiền đầu tư của người cho vay được giữ trong tài khoản ký quỹ khi không cho vay. Cấp độ bảo mật này làm Constant khác biệt với các nền tảng khác. </p>\n"
-            },
-            "partner7": {
-                "name": "Blockonomi",
-                "desc": "<p> Constant đã tạo ra một nền tảng loại bỏ các ngân hàng khỏi phương trình của những khoản vay và cho phép bất kỳ ai trên thế giới tạo ra các khoản vay theo bất kỳ điều khoản nào họ muốn. Đây là một sự thay đổi lớn so với hệ thống cho vay đã được thiết lập và nó có thể là một lợi ích lớn cho cả người vay và người cho vay </ p>\n"
-            },
-            "partner8": {
-                "name": "Zero Hedge\n",
-                "desc": "<p> Người cho vay có thể chọn điều khoản của mình, không cần kiểm tra tín dụng - và từ đó tìm người vay. Lập trình một hệ thống tương tự bằng hệ thống ngân hàng Mỹ sẽ tốn kém, cồng kềnh, tốn thời gian và ai biết chắc nó sẽ trở thành như thế nào sau tất cả các phê duyệt theo quy định. </p>"
-            },
-            "partner9": {
-                "name": "ZyCrypto",
-                "desc": "<p> Constant khác biệt ở chỗ người dùng có thể tin tưởng rằng mỗi giao dịch được bảo mật hoàn toàn. Mọi khoản vay đều được thế chấp. Tiền đầu tư của người cho vay được giữ trong tài khoản ký quỹ khi không cho vay. Cấp độ bảo mật này làm Constant khác biệt với các nền tảng khác. </p>\n"
-            }
-        },
-        "desc": {
-            "title": "Trên các tin tức",
-            "content": "Chúng tôi tự hào có mặt trong nhiều ấn phẩm tài chính và công nghệ nổi bật, từ các tin tức cho đến những đánh giá, những tìm hiểu mà các nhà báo, chuyên gia nói về nền tảng cho vay ngang hàng Constant."
-        }
-    },
     "collateralBalance": {
         "balance": "Số dư",
         "coin": "Tiền",
@@ -4453,6 +4413,27 @@
         "tabs": {
             "collaterals": "Thế chấp:",
             "staking": "Staking"
+        }
+    },
+    "developers": {
+        "menu": {
+            "constantAPI": "Constant API",
+            "accountResource": "Account resource",
+            "loanResource": "Loan resource",
+            "investmentResource": "Investment resource"
+        },
+        "content": {
+            "title": "Let’s do great things together",
+            "desc": "Build. Customize. Automate. Do it all with our REST API.",
+            "getStart": "Get started now",
+            "block1": {
+                "title": "Why use our API?",
+                "desc": "Whether you’re an institutional partner or want to whitelabel our tech, our API opens new ways to interact with and exploit the Constant platform.\n          <li>Launch your own whitelabel DeFi product.</li>\n          <li>Add lending to your product suite.</li>\n          <li>Verify and authenticate customers.</li>\n          <li>Automate lending strategies.</li>\n          <li>Support a vast number of digital assets.</li>\n          <li>Add extra utility to your platform or project.</li>\n        Our API lets you program new software, services, and products without spending a fortune on engineering your own tech. Instead, seamlessly interface with our platform to offer everything we do and more.\n        "
+            },
+            "block2": {
+                "title": "What can you do with it?",
+                "desc": "\n          <h5 class=\"margin-0\">Here’s a brief overview of our API services.</h5> \n          <strong>Invest</strong>, <strong>Borrow</strong>, and <strong>Deposit</strong>\n             <li>Browse our open order book. Give your customers access to the best deals in our P2P lending market.</li>\n             <li>Submit customized lending orders. Put customers in the driving seat with flexible rates and terms.</li>\n             <li>Earn interest on fiat and stablecoin deposits. Reward customers with a bank-beating interest rate on deposits, compounded and paid every second.</li> \n          <h5>View balances and withdraw</h5>\n             <li>Browse deposit history. Help your customers keep track of their spend.</li>\n             <li>View coin and fiat balances. Give customers insight into their digital assets and liquidity.</li> \n             <li>Withdraw cryptocurrencies and fiat. Support withdrawal of multiple assets, including USD, crypto, and USD-backed stablecoins.</li> \n          <h5>Onboard new customers</h5>\n             <li>Perform KYC checks. Verify the identity of customers to comply with AML (Anti Money Laundering) regulations.</li>\n             <li>Verify accounts. Reduce spam and improve the quality of your customer database.</li>\n             <li>Authenticate anyone. Help protect customer security and preserve the integrity of your platform through 2FA protocols.</li> \n        "
+            }
         }
     }
 }

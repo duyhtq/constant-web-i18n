@@ -3651,8 +3651,8 @@
         "whatCaption3": "Collateral backed",
         "whatDesc0": "\n      <p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.</p>\n \n    ",
         "whatDesc1": "<p>Earn interest before you even make an investing order. All deposits earn {interest}% APY by default, and can be withdrawn at any time. Compounded and paid every second. Stay flexible and enjoy zero downtime.</p>\n    ",
-        "whatDesc2": "<p>Enjoy 24-7 customer service, unlimited free withdrawals, and a library of useful content to help you do more with your money. Constant is an open, alternative financial platform and you can <a href=https://www.google.com/url?q=https://github.com/constant-money&sa=D&ust=1555493848999000&usg=AFQjCNEEEN4_WzaIB05aPU2kpKQi_PbKOw\" target=\"_blank\">view all our code</a> as well as suggest features you’d like to see</p>",
-        "whatDesc3": "\n      <p>We strictly require every loan to be 150% backed by collateral. For someone to borrow $10,000, they have to put up $15,000 in collateral value.</p>\n      <br />\n      <p>So if borrowers default, you don’t lose a cent.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/how-do-constant-crypto-loans-work-b22b66b5b687\" target=\"_blank\">How we protect investor funds</a>\n    ",
+        "whatDesc2": "<p>Enjoy 24-7 customer service, unlimited free withdrawals, and a library of useful content to help you do more with your money. Constant is an open, alternative financial platform and you can <a href=\"https://github.com/constant-money\" target=\"_blank\">view all our code</a> as well as suggest features you’d like to see</p>",
+        "whatDesc3": "<a href=\"https://medium.com/@constantp2p/risk-and-our-p2p-lending-platform-what-you-should-know-1edcd5a4a5b3\" target=\"_blank\">",
         "howItWorks": {
             "mainTitle": "How it works",
             "mainDesc": "<h5>The Constant algorithm matches investors with borrowers glad to pay their rates. It then manages the transfer of investor funds while securely escrowing borrower collateral. </h5>\n",

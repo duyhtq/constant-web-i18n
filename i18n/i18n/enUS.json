@@ -120,7 +120,6 @@
         "blog": "Blog",
         "faqs": "FAQs",
         "affiliate": "Affiliate",
-        "developers": "Developers",
         "support": "Support",
         "telegramText": "Join the {link}",
         "email": "Email us at {email}",
@@ -300,7 +299,7 @@
             "registerInvalidPassword": "Please enter a valid password.",
             "registerPasswordNotMatch": "Please make sure your password matches your email address.",
             "notKycUser": "Please complete the KYC process to buy direct from the network.",
-            "transferUserNotFound": "Please enter a valid wallet address.",
+            "transferUserNotFound": "Please enter a valid email.",
             "userInfoInvalidKycPreValidate": "We could not verify you with the information you uploaded. Please try again.",
             "cannotTransferToYourSelf": "Please enter a recipient other than yourself.",
             "invalidUserType": "Oops we can't find you. Please enter your email address again.",
@@ -310,7 +309,7 @@
             "createdBankExisted": "Nice! This bank account has already been registered.",
             "trial_term_deposit_not_available": "The Constant introductory trial is only available for new users.\n",
             "not_pro_saving_user": "Sorry, we can only offer services in the USA to SEC accredited investors.",
-            "otpNotMatched": "Please check your OTP is valid and try again",
+            "otpNotMatched": "Google authentication code not matched, please try again",
             "userDocumentCannotChange": "You cannot change KYC information. Please contact admin for support.",
             "missingUserDocuments": "Please upload required documents.",
             "userFirstNameInvalid": "FirstName is invalid",
@@ -709,7 +708,7 @@
             "description2Fa": "Important actions (withdraw, transfer, etc.) will require you to enter a code via Google Authenticator or Authy.",
             "qrScanModal": {
                 "title": "Scan QR Code",
-                "description": "Please scan this code with Google Authenticator or Authy, then enter the password sent to you.",
+                "description": "Please scan this code with Google Authenticator or Authy, then enter the code sent to you.",
                 "inputCode": "Enter password",
                 "close": "Close",
                 "submit": "Submit"
@@ -1200,7 +1199,6 @@
                     "partially_cancelled": "Partially cancelled",
                     "approving": "Approving",
                     "transferring_fiat": "Deposit pending",
-                    "closed_soon": "Matched",
                     "": ""
                 },
                 "interestInfo": {
@@ -1490,7 +1488,6 @@
             "reward": "Reward",
             "rewardWithdraw": "Withdraw",
             "date": "Date",
-            "upToNow": "Up to Now",
             "status": {
                 "0": "Pending",
                 "1": "Done",
@@ -3260,7 +3257,7 @@
     },
     "newHome": {
         "banner": {
-            "title": "<h2>Set your own rates.</h2>\n <h2>No minimum capital.</h2>\n <h2>Invest only in secured loans.</h2>\n </span>\n <br />\n <h5>\n Your investments are fully backed by borrower collateral, smart contracts and funds insurance. Withdraw unloaned portions anytime.\n </h5>",
+            "title": "<h2>Set your own rates.</h2>\n <h2>No minimum capital.</h2>\n <h2>Invest only in secured loans.</h2>\n </span>\n <br />\n <h5>\n Your investments are fully backed by borrower collateral. Unmatched portions earn an automatic 5% APY, and can be withdrawn anytime.\n </h5>",
             "title1": "\n        <h1>Experience <span class=textSuccess\">fully secured</span> peer-to-peer lending.</h1>",
             "subTitle": "Welcome to better saving, borrowing, and making the most of your money. Open to anyone in the world with an internet connection.",
             "cta": "Get started",
@@ -3296,7 +3293,7 @@
         },
         "howItWorks": {
             "title": "How it works.",
-            "desc": "The Constant algorithm matches investors with borrowers glad to pay their rates. It then secures investor funds and borrower collateral in an unstoppable smart contract, and facilitates the entire transaction from beginning to end."
+            "desc": "The Constant algorithm matches investors with borrowers glad to pay their rates. It then manages the transfer of investor funds while securely escrowing borrower collateral."
         },
         "whyItBetter": {
             "title": "Why it’s better.",
@@ -3469,7 +3466,7 @@
             "leaders": {
                 "duyHuynh": {
                     "name": "Duy Huynh",
-                    "position": "Founder",
+                    "position": "Advisor",
                     "description": "<p>Duy spends most of his days studying the great economic thinkers of the last 100 years and turning their ideas into unstoppable lines of code. Prior to Constant, Duy was a software architect at IBM. He then founded Autonomous, putting AI and Robotics into 350,000 modern workspaces all over the world in less than 2 years.</p><p>At age 19, Duy was a PhD computer science researcher in the High Dependability Computing Program at the University of Maryland, funded by NASA, the Semantic Web and Fujitsu. As a competitive programmer, he was an ACM ICPC World Finalist, USA Computing Olympiad winner, and Vietnam Computing Olympiad winner.</p>\n"
                 },
                 "thucNguyen": {
@@ -3719,7 +3716,7 @@
             "title": "Customer Success Stories",
             "customer1": "<div><h5 class=darkblue4\">Constant is our preferred solution for cross-border transactions. Paying international suppliers and clients is much less of a hassle now",
             "customer2": "<div> <h5 class=darkblue4\">E-commerce provider of technology powered office solutions We just started using Constant to automate payroll to our employees in the US",
-            "customer3": "\n      <div>\n	      <h5 class=\"darkblue4\">\n		      My partners in different countries all got accounts easily, and most importantly - Constant syncs up with the local banking system so withdrawals are straightforward. Constant is low-friction, easy to integrate, and has saved us a bundle on international transfer fees.\n	      </h5>\n	      <br /><h3 class=\"bold clearBottom\">Veronica Tam</h3>\n	      <p>CEO of Vifah, manufacturer of outdoor furniture for Walmart, Amazon, Wayfair and more. </p>\n      </div>          \n      "
+            "customer3": "customer3"
         },
         "why": {
             "title": "Why Constant?"
@@ -3908,7 +3905,6 @@
             "matched": "Time"
         },
         "balances": {
-            "collateralBalances": "Coin Balances",
             "title": "Balances",
             "titleDesc": "All investment and collateral deposits will show here.",
             "withdraw": "Withdraw",
@@ -4390,6 +4386,50 @@
             "content": "We’re proud to feature in many prominent finance and technology publications. From news to reviews, find out what the journalists, pundits, and experts have to say about the Constant peer-to-peer lending platform."
         }
     },
+    "ourPartner": {
+        "partner": {
+            "partner1": {
+                "name": "%%%.ourPartner.partner.partner1.name%%%",
+                "desc": "%%%.ourPartner.partner.partner1.desc%%%"
+            },
+            "partner2": {
+                "name": "%%%.ourPartner.partner.partner2.name%%%",
+                "desc": "%%%.ourPartner.partner.partner2.desc%%%"
+            },
+            "partner3": {
+                "name": "%%%.ourPartner.partner.partner3.name%%%",
+                "desc": "%%%.ourPartner.partner.partner3.desc%%%"
+            },
+            "partner4": {
+                "name": "%%%.ourPartner.partner.partner4.name%%%",
+                "desc": "%%%.ourPartner.partner.partner4.desc%%%"
+            },
+            "partner5": {
+                "name": "%%%.ourPartner.partner.partner5.name%%%",
+                "desc": "%%%.ourPartner.partner.partner5.desc%%%"
+            },
+            "partner6": {
+                "name": "%%%.ourPartner.partner.partner6.name%%%",
+                "desc": "%%%.ourPartner.partner.partner6.desc%%%"
+            },
+            "partner7": {
+                "name": "%%%.ourPartner.partner.partner7.name%%%",
+                "desc": "%%%.ourPartner.partner.partner7.desc%%%"
+            },
+            "partner8": {
+                "name": "%%%.ourPartner.partner.partner8.name%%%",
+                "desc": "%%%.ourPartner.partner.partner8.desc%%%"
+            },
+            "partner9": {
+                "name": "%%%.ourPartner.partner.partner9.name%%%",
+                "desc": "%%%.ourPartner.partner.partner9.desc%%%"
+            }
+        },
+        "desc": {
+            "title": "%%%.ourPartner.desc.title%%%",
+            "content": "%%%.ourPartner.desc.content%%%"
+        }
+    },
     "collateralBalance": {
         "balance": "Balance",
         "coin": "Coin",
@@ -4413,27 +4453,6 @@
         "tabs": {
             "collaterals": "Collaterals",
             "staking": "Stake"
-        }
-    },
-    "developers": {
-        "menu": {
-            "constantAPI": "Constant API",
-            "accountResource": "Account resource",
-            "loanResource": "Loan resource",
-            "investmentResource": "Investment resource"
-        },
-        "content": {
-            "title": "Let’s do great things together",
-            "desc": "Build. Customize. Automate. Do it all with our REST API.",
-            "getStart": "Get started now",
-            "block1": {
-                "title": "Why use our API?",
-                "desc": "Whether you’re an institutional partner or want to whitelabel our tech, our API opens new ways to interact with and exploit the Constant platform.\n          <li>Launch your own whitelabel DeFi product.</li>\n          <li>Add lending to your product suite.</li>\n          <li>Verify and authenticate customers.</li>\n          <li>Automate lending strategies.</li>\n          <li>Support a vast number of digital assets.</li>\n          <li>Add extra utility to your platform or project.</li>\n        Our API lets you program new software, services, and products without spending a fortune on engineering your own tech. Instead, seamlessly interface with our platform to offer everything we do and more.\n        "
-            },
-            "block2": {
-                "title": "What can you do with it?",
-                "desc": "\n          <h5 class=\"margin-0\">Here’s a brief overview of our API services.</h5> \n          <strong>Invest</strong>, <strong>Borrow</strong>, and <strong>Deposit</strong>\n             <li>Browse our open order book. Give your customers access to the best deals in our P2P lending market.</li>\n             <li>Submit customized lending orders. Put customers in the driving seat with flexible rates and terms.</li>\n             <li>Earn interest on fiat and stablecoin deposits. Reward customers with a bank-beating interest rate on deposits, compounded and paid every second.</li> \n          <h5>View balances and withdraw</h5>\n             <li>Browse deposit history. Help your customers keep track of their spend.</li>\n             <li>View coin and fiat balances. Give customers insight into their digital assets and liquidity.</li> \n             <li>Withdraw cryptocurrencies and fiat. Support withdrawal of multiple assets, including USD, crypto, and USD-backed stablecoins.</li> \n          <h5>Onboard new customers</h5>\n             <li>Perform KYC checks. Verify the identity of customers to comply with AML (Anti Money Laundering) regulations.</li>\n             <li>Verify accounts. Reduce spam and improve the quality of your customer database.</li>\n             <li>Authenticate anyone. Help protect customer security and preserve the integrity of your platform through 2FA protocols.</li> \n        "
-            }
         }
     }
 }

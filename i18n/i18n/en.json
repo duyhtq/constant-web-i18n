@@ -120,7 +120,6 @@
         "blog": "Blog",
         "faqs": "FAQs",
         "affiliate": "Affiliate",
-        "developers": "Developers",
         "support": "Support",
         "telegramText": "Join the {link}",
         "email": "Email us at {email}",
@@ -709,7 +708,7 @@
             "description2Fa": "Important actions (withdraw, transfer, etc.) will require you to enter a password via Google Authenticator or Authy.",
             "qrScanModal": {
                 "title": "Scan QR Code",
-                "description": "Please scan this code with Google Authenticator or Authy, then enter the password sent to you.",
+                "description": "Please scan this code with Google Authenticator or Authy, then enter the code sent to you.",
                 "inputCode": "Enter password",
                 "close": "Close",
                 "submit": "Submit"
@@ -1200,7 +1199,6 @@
                     "partially_cancelled": "Partially cancelled",
                     "approving": "Approving",
                     "transferring_fiat": "Deposit pending",
-                    "closed_soon": "Matched",
                     "": ""
                 },
                 "interestInfo": {
@@ -1490,7 +1488,6 @@
             "reward": "Reward",
             "rewardWithdraw": "Withdraw reward",
             "date": "Date",
-            "upToNow": "Up to Now",
             "status": {
                 "0": "Pending",
                 "1": "Done",
@@ -3908,7 +3905,6 @@
             "matched": "Matched"
         },
         "balances": {
-            "collateralBalances": "Coin Balances",
             "title": "Balances",
             "titleDesc": "All investment and collateral deposits will show here.",
             "withdraw": "Withdraw",
@@ -4390,6 +4386,50 @@
             "content": "We’re proud to feature in many prominent finance and technology publications. From news to reviews, find out what the journalists, pundits, and experts have to say about the Constant peer-to-peer lending platform."
         }
     },
+    "ourPartner": {
+        "partner": {
+            "partner1": {
+                "name": "%%%.ourPartner.partner.partner1.name%%%",
+                "desc": "%%%.ourPartner.partner.partner1.desc%%%"
+            },
+            "partner2": {
+                "name": "%%%.ourPartner.partner.partner2.name%%%",
+                "desc": "%%%.ourPartner.partner.partner2.desc%%%"
+            },
+            "partner3": {
+                "name": "%%%.ourPartner.partner.partner3.name%%%",
+                "desc": "%%%.ourPartner.partner.partner3.desc%%%"
+            },
+            "partner4": {
+                "name": "%%%.ourPartner.partner.partner4.name%%%",
+                "desc": "%%%.ourPartner.partner.partner4.desc%%%"
+            },
+            "partner5": {
+                "name": "%%%.ourPartner.partner.partner5.name%%%",
+                "desc": "%%%.ourPartner.partner.partner5.desc%%%"
+            },
+            "partner6": {
+                "name": "%%%.ourPartner.partner.partner6.name%%%",
+                "desc": "%%%.ourPartner.partner.partner6.desc%%%"
+            },
+            "partner7": {
+                "name": "%%%.ourPartner.partner.partner7.name%%%",
+                "desc": "%%%.ourPartner.partner.partner7.desc%%%"
+            },
+            "partner8": {
+                "name": "%%%.ourPartner.partner.partner8.name%%%",
+                "desc": "%%%.ourPartner.partner.partner8.desc%%%"
+            },
+            "partner9": {
+                "name": "%%%.ourPartner.partner.partner9.name%%%",
+                "desc": "%%%.ourPartner.partner.partner9.desc%%%"
+            }
+        },
+        "desc": {
+            "title": "%%%.ourPartner.desc.title%%%",
+            "content": "%%%.ourPartner.desc.content%%%"
+        }
+    },
     "collateralBalance": {
         "balance": "Balance",
         "coin": "Coin",
@@ -4413,27 +4453,6 @@
         "tabs": {
             "collaterals": "Collaterals",
             "staking": "Staking"
-        }
-    },
-    "developers": {
-        "menu": {
-            "constantAPI": "Constant API",
-            "accountResource": "Account resource",
-            "loanResource": "Loan resource",
-            "investmentResource": "Investment resource"
-        },
-        "content": {
-            "title": "Let’s do great things together",
-            "desc": "Build. Customize. Automate. Do it all with our REST API.",
-            "getStart": "Get started now",
-            "block1": {
-                "title": "Why use our API?",
-                "desc": "Whether you’re an institutional partner or want to whitelabel our tech, our API opens new ways to interact with and exploit the Constant platform.\n          <li>Launch your own whitelabel DeFi product.</li>\n          <li>Add lending to your product suite.</li>\n          <li>Verify and authenticate customers.</li>\n          <li>Automate lending strategies.</li>\n          <li>Support a vast number of digital assets.</li>\n          <li>Add extra utility to your platform or project.</li>\n        Our API lets you program new software, services, and products without spending a fortune on engineering your own tech. Instead, seamlessly interface with our platform to offer everything we do and more.\n        "
-            },
-            "block2": {
-                "title": "What can you do with it?",
-                "desc": "\n          <h5 class=\"margin-0\">Here’s a brief overview of our API services.</h5> \n          <strong>Invest</strong>, <strong>Borrow</strong>, and <strong>Deposit</strong>\n             <li>Browse our open order book. Give your customers access to the best deals in our P2P lending market.</li>\n             <li>Submit customized lending orders. Put customers in the driving seat with flexible rates and terms.</li>\n             <li>Earn interest on fiat and stablecoin deposits. Reward customers with a bank-beating interest rate on deposits, compounded and paid every second.</li> \n          <h5>View balances and withdraw</h5>\n             <li>Browse deposit history. Help your customers keep track of their spend.</li>\n             <li>View coin and fiat balances. Give customers insight into their digital assets and liquidity.</li> \n             <li>Withdraw cryptocurrencies and fiat. Support withdrawal of multiple assets, including USD, crypto, and USD-backed stablecoins.</li> \n          <h5>Onboard new customers</h5>\n             <li>Perform KYC checks. Verify the identity of customers to comply with AML (Anti Money Laundering) regulations.</li>\n             <li>Verify accounts. Reduce spam and improve the quality of your customer database.</li>\n             <li>Authenticate anyone. Help protect customer security and preserve the integrity of your platform through 2FA protocols.</li> \n        "
-            }
         }
     }
 }

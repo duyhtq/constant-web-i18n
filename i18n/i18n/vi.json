@@ -87,7 +87,7 @@
                 "btn": "Mở tài khoản"
             },
             "type9": {
-                "title": "<h3>Đặt cọc và kiếm tiền</h3>",
+                "title": "<h3>Stake và nhận lãi</h3>",
                 "btn": "Đăng ký ngay"
             },
             "type10": {
@@ -95,7 +95,7 @@
                 "btn": "Đăng ký ngay"
             },
             "type11": {
-                "title": "<h3>Mượn theo cách bạn muốn</h3>",
+                "title": "<h3>Vay theo cách bạn muốn</h3>",
                 "btn": "Đăng ký ngay"
             }
         },
@@ -257,20 +257,20 @@
             "expertDecs": "Thêm hình thức cho vay ngang hàng",
             "transfer": "Chuyển",
             "investFlex": {
-                "title": "Flex",
-                "desc": "5% APY. An toàn tuyệt đối. Rút bất cứ lúc nào."
+                "title": "Tiền pháp định Flex",
+                "desc": "Lãi suất kép 5%/năm. An toàn tuyệt đối. Rút tiền ra bất cứ lúc nào."
             },
             "investCustom": {
                 "title": "Tuỳ chỉnh ",
-                "desc": "Tỷ lệ của bạn. Kỳ hạn của bạn. Bảo mật tuyệt đối."
+                "desc": "Tự chọn kì hạn và lãi suất. Đảm bảo tuyệt đối bởi tài sản thế chấp."
             },
             "investStaking": {
-                "title": "Đặt cọc tiền mã hoá",
-                "desc": "5%-20% APY. Không mức tối thiểu. Rút mọi lúc "
+                "title": "Staking crypto",
+                "desc": "5%-20% APY. Mức tối thiểu thấp. Rút mọi lúc."
             },
             "borrowFiat": {
                 "title": "Vay thế chấp bằng tiền mã hoá",
-                "desc": "Tỷ lệ của bạn. Kỳ hạn của bạn. Không kiểm tra tín dụng."
+                "desc": "Lãi suất của bạn. Kỳ hạn của bạn. Không kiểm tra tín dụng."
             }
         }
     },
@@ -742,7 +742,7 @@
                 "timeout": "Hết thời gian",
                 "transferMoneyToAgent": "Chờ người mua gửi tiền",
                 "waitAgentTransferMoney": "Đang thực hiện",
-                "transferredMoneyToAgent": "Nhận tiền nạp. Số dư của bạn sẽ cập nhật sớm.",
+                "transferredMoneyToAgent": "\nĐã nhận tiền. Số dư sẽ được cập nhật sớm.",
                 "done": "Thành công",
                 "inProgress": "Xem chi tiết"
             },
@@ -852,7 +852,7 @@
                 "11": "Thanh toán",
                 "12": "Phần thưởng",
                 "13": "Lãi suất",
-                "14": "Kiếm được từ chương trình giới thiệu khách hàng",
+                "14": "Kiếm tiền từ chương trình giới thiệu Flex",
                 "101": "Điểm thưởng",
                 "received": "Đã nhận"
             },
@@ -1653,7 +1653,7 @@
                 "tooltip": {
                     "amount": "<p>Bạn muốn cho mượn bao nhiêu?</p>",
                     "maxTerm": "<p>Đây là khoảng thời gian tối đa bạn muốn cho vay tiền của mình. Các lệnh mở có thể được hủy và rút bất cứ lúc nào.</p>",
-                    "minRate": "<p>Đây là lãi suất bình quân hàng năm (APR) mà bạn sẵn sàng chấp nhận cho khoản vay của mình. Nếu có một người vay sẵn sàng trả nhiều tiền lãi hơn, bạn sẽ cho vay với lãi suất cao hơn.</p>"
+                    "minRate": "<p>Đây là lãi kép mà bạn sẵn sàng chấp nhận cho khoản vay của mình. Nếu có một người vay sẵn sàng trả nhiều tiền lãi hơn, bạn sẽ cho vay với lãi suất cao hơn.</p>"
                 },
                 "placeholder": {
                     "amount": "Bạn muốn cho mượn bao nhiêu?"
@@ -1668,7 +1668,7 @@
         "blockTitle3": "Sứ mệnh",
         "blockCap3": "Chúng tôi xây dựng hệ thống tài chính công bằng và tự do hơn.",
         "titleBlock4": "Tại sao bạn nên tiết kiệm cùng Constant.",
-        "titleCap4": "Chúng tôi đã xong phần việc của mình",
+        "titleCap4": "Chúng tôi đã hoàn thành nhiệm vụ",
         "titleDesc4": "\n      <p></p>\n      <p></p>\n    ",
         "optionText": "hoặc",
         "howItWorks": {
@@ -2154,7 +2154,7 @@
                 "question2": "Hệ thống có kiểm tra điểm tín dụng của tôi không?",
                 "answer2": "Vì Constant chỉ cung cấp các khoản vay có bảo đảm bởi tài sản thế chấp, nên hệ thống không cần chấm điểm tín dụng. Tất cả bạn cần là tài sản thế chấp đầy đủ để đảm bảo khoản vay. Để xem bạn cần bao nhiêu tài sản thế chấp để đảm bảo khoản vay của mình, bạn chỉ cần nhập số tiền bạn muốn vay. Máy tính sẽ tính ra giá trị thế chấp cho bạn.",
                 "question3": "Hệ thống bảo vệ tài sản thế chấp của tôi như thế nào?",
-                "answer3": "Tài sản thế chấp của bạn được giữ an toàn trong một hợp đồng thông minh trên mạng Ethereum. Điều này có nghĩa là không ai có thể tiếp cận tài sản thế chấp đó - ngay cả chúng tôi. Khi bạn hoàn trả khoản vay, tài sản thế chấp của bạn ngay lập tức được chuyển lại cho bạn.\n",
+                "answer3": "Tài sản thế chấp của bạn được giữ an toàn trong một hợp đồng thông minh trên mạng Ethereum, không ai có thể tiếp cận tài sản thế chấp đó - ngay cả chúng tôi. Khi bạn hoàn trả khoản vay, tài sản thế chấp của bạn ngay lập tức được chuyển lại cho bạn. Bạn cũng có thể trả 1% phí cho BitGo để bảo vệ tài sản lên đến 100 triệu USD.",
                 "question4": "Điều gì sẽ xảy ra nếu tôi không hoàn trả khoản vay của mình?",
                 "answer4": "Nếu bạn không hoàn trả khoản vay, chúng tôi sẽ tạo một lệnh bán tài sản thế chấp của bạn với 110% giá trị khoản vay + tiền lãi đến hạn trả cho các nhà đầu tư. Xin lưu ý giá cuối cùng có thể cao hơn hoặc thấp hơn tùy thuộc vào thời điểm bán, nhưng chúng tôi sẽ luôn cố gắng để có được giá tốt nhất có thể cho bạn. Bạn có thể giữ khoản vay cũng như bất kỳ phần thừa còn lại từ việc thanh lý tài sản thế chấp.\n",
                 "question5": "Điều gì xảy ra nếu phần tài sản thế chấp của tôi mất giá?",
@@ -2162,7 +2162,7 @@
                 "question6": "Tôi có thể hoàn trả trước hạn không?",
                 "answer6": "\n<p>Nếu bạn muốn trả lại khoản vay trước 75% kỳ hạn, điều này không thành vấn đề. Bạn đơn giản phải trả lãi cho các ngày vay mượn và chỉ 50% lãi suất gốc cho kỳ hạn còn lại.</p>\n          <p>Nếu bạn muốn trả lại khoản vay sau 75% kỳ hạn và yêu cầu nhận lại tài sản thế chấp, điều này không thành vấn đề nhưng lãi phải trả dựa theo khoản vay là toàn bộ phần trăm của cả kỳ hạn.</p>\n        ",
                 "question7": "Nếu tài sản thế chấp của tôi tăng, tôi có thể thu hồi tài sản được không?",
-                "answer7": "Có. Nếu giá trị tài sản thế chấp tăng trong kỳ hạn vay, bạn có thể rút phần chênh lệnh. Tính năng này dự kiến sẽ có mặt trên website của chúng tôi vào ngày 25/06/2019. Trong lúc đó, vui lòng liên hệ đội ngũ của chúng tôi qua Telegram, Email, hay Facebook để được hỗ trợ tốt nhất.",
+                "answer7": "Có. Nếu giá trị tài sản thế chấp tăng lên, bạn hoàn có thể rút lại phần chênh về tài khoản Constant.",
                 "question8": "Tỷ số LTV (Loan to Value) là gì? Tỷ số đó có luôn giống nhau?",
                 "answer8": "\n<p>Tỷ lệ LTV cho khoản vay không quá 1 năm là 66%. Chúng tôi yêu cầu 150% của giá trị vay bằng tài sản thế chấp. Mỗi tháng sau năm đầu, chúng tôi nhận thêm 5% giá trị khoản vay thế chấp.</p>\n          <p>Ví dụ, nếu bạn muốn vay trong 15 tháng, lãi thế chấp sẽ là 150% + (3*5)% = 165% của giá trị khoản vay thế chấp, nên tỷ lệ LTV của bạn là 60.6%.</p>\n        ",
                 "question9": "Tôi hoàn trả khoản vay như thế nào?",
@@ -2170,8 +2170,8 @@
                 "question10": "Điều gì xảy ra nếu tôi hoàn trả trễ?",
                 "answer10": "Thời gian ân hạn nhận thanh toán là 3 ngày sau khi thời hạn vay của bạn kết thúc. Vào ngày thứ 2 và thứ 3, bạn sẽ phải chịu một khoản phí trễ phạt là 10% trên tổng số tiền lãi đến hạn.\n \n"
             },
-            "title": "Các khoản vay thế chấp bằng tiền mã hoá công bằng và hoàn toàn đảm bảo",
-            "subTitle": "\n        <h2>4.50% lãi suất bình quân năm.</h2>\n        <h2>Nhận tiền ngay.</h2>\n        <h2>Nhận tiền mặt từ tiền mã hoá mà không cần bán tiền mã hoá.</h2>\n      ",
+            "title": "Vay theo cách bạn muốn",
+            "subTitle": "\n        <h2>Tự chọn kì hạn lãi suất.</h2>\n        <h2>Nhận tiền ngay mà không cần bán tiền mã hoá.</h2>\n        <h6>Nhận ngay số tiền bạn mong muốn với mức lãi suất bạn có thể trả. Tài sản thế chấp được đảm bảo trên escrow và sẽ được tự động trả lại ngay khi bạn hoàn trả khoản vay</h6>\n      ",
             "headLine": "Bạn muốn trả nợ thẻ tín dụng, viện phí hoặc tiền thuê nhà? Đơn giản chỉ cần nhập số lượng Constant bạn muốn vay và đặt cọc ETH, khoản vay Constant sẽ được giữ an toàn trong hợp đồng thông minh của Constant.",
             "exchange": {
                 "maxRateTooltip": "Đây là lãi suất bình quân năm (APR) mà bạn sẵn sàng trả cho khoản vay. Nếu có một nhà đầu tư sẵn sàng nhận lợi nhuận ít hơn, bạn sẽ trả lãi suất thấp hơn.",
@@ -2183,8 +2183,8 @@
                 "apr": "APR",
                 "termLabel": "Chọn thời hạn vay",
                 "amountLabel": "Bạn muốn vay bao nhiêu?",
-                "collateralLabel": "Tài sản thế chấp yêu cầu (Tỷ lệ LTV 75%)",
-                "collateralRequiredLabel": "Tài sản thế chấp yêu cầu (Tỷ lệ LTV {value}%)",
+                "collateralLabel": "Tài sản thế chấp yêu cầu (66% tỷ lệ giá trị khoản vay)\n",
+                "collateralRequiredLabel": "Tài sản thế chấp yêu cầu ({value}% LTV)",
                 "startDateLabel": "Ngày bắt đầu",
                 "endDateLabel": "Ngày kết thúc",
                 "collateralNote": "Đối với đồng tiền này, các khoản vay sẽ mất tới 24 giờ để được cấp, hoàn trả hoặc nạp thêm.\n",
@@ -2210,26 +2210,26 @@
                 "description": "Các khoản vay thế chấp tiền mã hoá của Constant chấp nhận một khoảng rộng của tỷ lệ giá trị vay/giá trị tài sản thế chấp, bất kể số lượng bạn vay bao nhiêu. Hưởng lợi từ lãi suất tốt nhất trên thị trường với các khoản vay ngắn hạn của chúng tôi để thanh khoản những đồng tiền mã hoá của bạn dễ dàng."
             },
             "what": {
-                "whatCaption0": "Nhận tiền ngay lập tức",
-                "whatCaption1": "Đổi tiền mã hoá lấy tiền mặt",
-                "whatCaption2": "2% lãi suất hàng năm",
-                "whatCaption3": "Phê duyệt được đảm bảo",
-                "whatDesc0": "          <p>Cơ chế cho vay của chúng tôi được bảo đảm và tự động bởi các hợp đồng thông minh. Không mất thời gian xử lý lâu - số tiền bạn cần sẽ có trong tài khoản của bạn trong vòng một giờ</p>\n        ",
-                "whatDesc1": "<p>Đảm bảo khoản vay của bạn bằng BTC hoặc ETH và nhận USD, không cần bán tiền điện tử của bạn. Tận hưởng sự thanh khoản mà không cần thanh lý tiền của mình.</p>",
-                "whatDesc2": "<p>Vay bao nhiêu tuỳ thích và trong bao lâu tuỳ mong muốn. Tận hưởng hình thức hoản trả linh hoạt và lãi suất hấp dẫn nhất trên thị trường.</p>",
-                "whatDesc3": "         <p>Constant dành cho tất cả mọi người. Không chấm điểm tín dụng, kiểm tra lý lịch hoặc hàng tháng trời chờ đợi để được phê duyệt.</p>"
+                "whatCaption0": "Tự chọn kì hạn lãi suất",
+                "whatCaption1": "Bảo vệ bởi hợp đồng thông minh",
+                "whatCaption2": "Giữ an toàn trên escrow",
+                "whatCaption3": "Không kiểm tra lịch sử tín dụng",
+                "whatDesc0": "\n<p>Cơ chế khớp lệnh ngang hàng phi tập trung của Constant cho phép người sử dụng tiếp cận được nguồn vốn với lãi suất ưu đãi.</p>\n        ",
+                "whatDesc1": "\n<p>Những khoản vay được đảm bảo bằng Ethereum (ETH) sẽ được bảo vệ bởi hợp đồng thông minh đã được lập trình từ trước.</p>        ",
+                "whatDesc2": "\n<p>Constant sử dụng hợp đồng thông minh, ví nóng, ví lạnh để bảo vệ tài sản thế chấp của người dùng mà vẫn có thể đảm bảo hoàn trả lại tài sản thế chấp một cách nhanh nhất.</p>        ",
+                "whatDesc3": "\n<p>Không kiểm tra lịch sử tín dụng cá nhân. Nhận tiền ngay. Không cần chờ đợi.</p>        "
             },
             "howItWorks": {
                 "intro": "          <p>Gửi tiền điện tử vào để thu về tiền mặt, với lãi suất tốt nhất trên thị trường.</p>\n          <p>Cần tiền mặt? Chúng tôi chấp nhận các loại tiền điện tử lớn dùng làm tài sản thế chấp, để đổi lấy USD hoặc đồng nội tệ tương đương. Điều đó có nghĩa là bạn sẽ có tiền để chi tiêu - mà không cần bán tiền điện tử của mình.</p>\n        ",
                 "step1": "BƯỚC 1",
-                "title1": "NHẬP SỐ TIỀN CẦN VAY",
-                "desc1": "Bạn muốn vay bao nhiêu? Hãy nói cho chúng tôi số tiền theo đơn vị tiền tệ bạn muốn.",
+                "title1": "1. NHẬP SỐ TIỀN CẦN VAY",
+                "desc1": "Nhập số tiền bạn cần vay với mức lãi suất và kì hạn bạn mong muốn.",
                 "step2": "BƯỚC 2",
-                "title2": "CHỌN TÀI SẢN THẾ CHẤP VÀ THỜI HẠN",
-                "desc2": "Đảm bảo khoản vay của bạn với BTC hoặc ETH làm tài sản thế chấp. Máy tính của chúng tôi sẽ cho bạn biết bạn cần bao nhiêu để thế chấp. Sau đó, chỉ cần chọn một thời hạn vay mà bạn cảm thấy thoải mái.\n",
+                "title2": "2. ĐỢI KHỚP LỆNH",
+                "desc2": "Sau khi gửi tài sản thế chấp, thuật toán của Constant sẽ tìm cho bạn nhà đầu tư sẵn sàng cho bạn vay số tiền bạn cần với mức lãi suất và kì hạn bạn muốn.",
                 "step3": "BƯỚC 3",
-                "title3": "NHẬN TIỀN",
-                "desc3": "Chỉ trong 1 tiếng, bạn sẽ nhận được số USD bạn cần ở trong tài khoản linh hoạt Constant. Bạn có thể rút số tiền này về tài khoản ngân hàng bất cứ lúc nào."
+                "title3": "3. NHẬN TIỀN",
+                "desc3": "Ngay khi khớp lệnh, bạn sẽ nhận được tiền trong tài khoản Constant và có thể rút về tài khoản ngân hàng hoặc ví tiền điện tử bất cứ lúc nào."
             },
             "reference": "\n        <div name=\"ref-container\">\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Tỷ lệ lãi suất:</span>\n            <span name=\"ref-value\">{intRate}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Giá trị thế chấp:</span>\n            <span name=\"ref-value\">{colValue}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Tiền lời tài sản thế chấp:</span>\n            <span name=\"ref-value\">{colReturn}</span>\n          </div>\n          <div name=\"ref-item\">\n            <span name=\"ref-label\">Ngưỡng mặc định:</span>\n            <span name=\"ref-value\">{defThreshold}</span>\n          </div>\n        </div>      ",
             "transaction": {
@@ -2243,7 +2243,7 @@
                 "minuteWindowDescription": "Vì mục đích bảo mật, phiên này sẽ hết giờ sau 60 phút. Nếu bạn cần thêm thời gian, hãy nhập số lượng bạn muốn mượn<a href=\"/borrow\" >here</a>.",
                 "collateralNoteDGXExtraFees": "Digix trừ 0.13% khi nhận bất kỳ khoản nào trong DGX, chúng tôi cần thêm chi phí để lưu giữ khoản vay.",
                 "transactionID": "mã giao dịch",
-                "noticeTpl": "Vui lòng gửi <strong>{collateralAmount}{collateralSymbol}</strong> tới địa chỉ dưới đây trong vòng <strong>60 phút</strong> để thế chấp.",
+                "noticeTpl": "Để nhận khoản vay này. vui lòng nạp tài sản thế chấp theo yêu cầu. Đơn giản chỉ cần bạn vào ví tiền mã hoá và gửi <strong>{collateralAmount} {collateralSymbol}</strong> đến địa chỉ ví sau đây. Hãy hoàn thành giao dịch này trong <strong>60 phút</strong> tới.",
                 "summarizeContent": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Khoản vay:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Lãi suất:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Thế chấp:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Thời hạn:</span>\n              <span name=\"ref-value\">{term}</span>\n            </div>\n          </div>\n        \n        ",
                 "summarizeContent1": "\n          <div class=\"row\">\n            <div class=\"col-md-6 col-sm-4\">\n                <p class=\"semiBold\">Khoản vay:</p>\n            </div>\n            <div class=\"col\">\n                <p>{loanAmount}</p>\n            </div>\n           </div>\n           <div class=\"row\">\n            <div class=\"col-md-6 col-sm-4\">\n                <p class=\"semiBold\">Lãi suất:</p>\n            </div>\n            <div class=\"col\">\n                <p>{interestedRate}</p>\n            </div>\n           </div>\n           <div class=\"row\">\n            <div class=\"col-md-6 col-sm-4\">\n                <p class=\"semiBold\">Thế chấp:</p>\n            </div>\n            <div class=\"col\">\n                <p>{collaterals}</p>\n            </div>\n           </div>\n        ",
                 "repaymentField": "\n<div class=\"row\">\n              <div class=\"col-md-6 col-sm-4\">\n                  <p class=\"semiBold\">Ngày đáo hạn:</p>\n              </div>\n              <div class=\"col\">\n                  <p>{repayment}</p>\n              </div>\n           </div>\n        ",
@@ -2499,7 +2499,7 @@
         "midBanner1": "Gửi tiền bất kỳ đâu hoàn toàn miễn phí",
         "midBanner2": "An toàn và tăng vốn",
         "whatChatWithUs": "Chat với chúng tôi",
-        "whatCaption0": "8% lãi suất hàng năm",
+        "whatCaption0": "Tự thiết đặt lãi suất",
         "whatCaption1": "Tiền của bạn sinh lời",
         "whatCaption2": "Có mặt trên toàn thế giới",
         "whatCaption3": "Chúng tôi sẵn sàng hỗ trợ",
@@ -2710,7 +2710,7 @@
         }
     },
     "homeWhatwedo": {
-        "desc": "\n<p>Chúng tôi cam kết về sự tự do kinh tế, tự do biến động và tự do chọn lựa. Chúng tôi cam kết sự bình đẳng kinh tế, bình đẳng tiếp cận và công bằng về cơ hội. Vì vậy, chúng tôi muốn kiếm tiền có ích hơn, phát triển hơn nữa để phục vụ tất cả mọi người trên thế giới.</p>\n<p>Cụ thể ra sao? Lãi suất công bằng. Khoản vay độc quyền. Bạn có thể đầu tư, vay và chi tiêu loại tiền tệ ổn định, hạn chế ảnh hưởng bởi nhà nước. Giao dịch bảo mật và được tiến hành chung bởi người dùng trong mạng lưới. Giải pháp tài chính cho mọi người được giải quyết bởi mọi người.</p>\n<p>Constant tự hào 100% kỹ thuật hoá, hoạt động online 24/7. Không để nhà môi chờ điện thoại quá lâu, không xếp hàng tại các chi nhánh ngân hàng và nói không với nghỉ lễ ngân hàng. Đội ngũ chuyên gia kinh tế, thiết kế và kỹ sư đang làm việc trên toàn thế giới. Nếu bạn ở gần chúng tôi, hãy ghé thăm bất kỳ lúc nào.</p>    "
+        "desc": "     <p>Khi thế giới ngày càng kết nối, khoản cách được rút ngắn và cơ hội ngày càng được mở rộng. Mở cửa cho những chấp nhận phát triển của sự đa dạng, một nền giáo dục tốt hơn, cơ hội rộng mở hơn, thị trường toàn cầu hơn. Trong nhiều cách, các nước lân cận đang vươn tầm thế giới </p>\n<p>Thật không may, hệ thống tài chính vẫn bị giam cầm trong nội địa, hoạt động khép kín. Trên thế giới, tiền vẫn cứ mãi nằm im trong các ngân hàng và dần mất giá trị vì lạm phát. Khoản vay thì khó khăn và khó tất toán. Mọi người nghĩ rằng thật dễ dàng để bay đến một số quốc gia và gửi tiền ở đó. Hàng tỷ người trên thế giới nghĩ rằng họ không có phương tiện hoặc cơ hội để gửi tiền miễn phí.</p>\n<p>Chúng ta cần một ngân hàng địa phương cho một ngôi làng toàn cầu. Chào mừng đến với Constant.</p>  \n"
     },
     "faqs": {
         "title": "Câu hỏi thường gặp",
@@ -2793,7 +2793,7 @@
         },
         "withdraw": {
             "question1": "Rút Constant về như thế nào?",
-            "answer1": "        <p>Constant làm việc với hệ thống ngân hàng tại quốc gia của bạn để bạn có thể rút bằng USD hoặc đồng nội tệ. Mặc dù chúng tôi lưu trữ tiền gửi của bạn dưới dạng USD, nhưng chúng sẽ được tự động chuyển đổi trở lại thành nội tệ của bạn (theo tỷ giá thị trường theo thời gian thực) nếu bạn rút về tài khoản ngân hàng không phải là USD.</p>\n        <br />\n        <p>Để rút tiền, chỉ cần yêu cầu số tiền bạn muốn rút từ tab Rút tiền, nhập chi tiết ngân hàng và nhấp vào Rút tiền. Ngoài ra, bạn cũng có thể rút tiền dưới dạng Constant, stablecoin được hỗ trợ bằng USD của chúng tôi, sang ví ETH hoặc EOS. Bạn chỉ cần nhập địa chỉ ví và nhấp vào Rút tiền.</p>\n      ",
+            "answer1": "        <p>Constant làm việc với hệ thống ngân hàng tại quốc gia của bạn để bạn có thể rút bằng USD hoặc đồng nội tệ. Mặc dù chúng tôi lưu trữ tiền gửi của bạn dưới dạng USD, nhưng chúng sẽ được tự động chuyển đổi trở lại thành nội tệ của bạn (theo tỷ giá thị trường theo thời gian thực) nếu bạn rút về tài khoản ngân hàng không phải là USD.</p>\n        <br />\n        <p>Để rút tiền, chỉ cần yêu cầu số tiền bạn muốn rút từ tab Rút tiền, nhập chi tiết ngân hàng và nhấp vào Rút tiền. Tất cả chi phí rút mất 0.25% trên giao dịch (phí tối đa của 35$). Tương tự, bạn cũng có thể rút vốn bằng Constant, đồng stablecoin được đảm bảo bằng USD về ví ETH hoặc EOS miễn phí. Chỉ cần nhận địa chỉ ví và nhấp Rút.</p>",
             "question2": "Tôi có thể rút tiền dưới dạng tiền tệ nào?",
             "answer2": "        <p>Loại tiền bạn rút tùy thuộc vào loại tiền gốc trong tài khoản ngân hàng của bạn. Nếu bạn có tài khoản ngân hàng USD, bạn sẽ nhận được USD. Trong tất cả các trường hợp khác, ngân hàng của bạn sẽ chuyển đổi USD chúng tôi gửi sang nội tệ của bạn.</p>\n        <br />\n        <p>Tất nhiên, bạn không cần phải rút tiền vào tài khoản ngân hàng. Bạn có thể rút tiền của mình dưới dạng Constant, stablecoin được hỗ trợ bằng USD của chúng tôi, sang ví ETH hoặc EOS và sau đó giao dịch lấy các cặp tiền khác trên các sàn giao dịch thứ cấp.</p>",
             "question3": "Hệ thống có tính phí rút tiền không?",
@@ -2805,7 +2805,7 @@
         },
         "deposit": {
             "question1": "Khoản tiền nạp của tôi có an toàn không?",
-            "answer1": "        <p>Đúng. Đầu tiên, chúng tôi chuyển đổi tiền gửi của bạn sang USD để bảo vệ tiền của bạn khỏi sự mất giá trị. Sau đó, chúng tôi gửi tiền của bạn đến quỹ tín thác Constant, một sự ký quỹ được điều hành bởi Prime Trust, một tổ chức tài chính được công nhận của Hoa Kỳ.</p>\n        <br />\n        <p>Vì quỹ tín thác Constant được quy định theo luật Hoa Kỳ, tiền gửi của bạn được bảo hiểm bởi FDIC với giá trị đến 5.000.000 USD. (Chúng tôi chia những khoản tiền gửi lớn hơn 250.000 USD trải trên 20 ngân hàng để đạt được sự bảo hiểm lên tới 5.000.000 USD).</p>",
+            "answer1": "        \n <p>Đầu tiên, chúng tôi chuyển đổi số tiền nạp của bạn sang USD to bình ổn giá trị và bảo vệ vốn của bạn khỏi sự lạm phát. Sau đó, chúng tôi sẽ gửi số vốn này đến Constant Vault, một tổ chức ký quỹ được vận hành bởi Prime Trust một tổ chức tài chính Hoa Kỳ được công nhận.</p>\n        <br />\n        <p>The Constant Vault giữ tiền của bạn an toàn trên nhiều tài khoản được bảo hiểm với tổng bảo hiểm lên đến $130,000,000.</p>\n      ",
             "question2": "Có giới hạn cho một lần nạp tiền không?",
             "answer2": " <p>Không. Nếu bạn though có ý định nạp số tiền nhiều hơn $5,000,000, hãy liên hệ với chúng tôi để bàn thảo cách để tăng sự bảo hiểm trên tài khoản của bạn. </p>",
             "question3": "Nộp tiền vào tài khoản như thế nào?",
@@ -2901,7 +2901,7 @@
         },
         "general": {
             "question1": "Constant là gì?",
-            "answer1": "\n<p>Constant là dịch vụ tài chính giúp bạn sử dụng đồng tiền hiệu quả hơn. Từ đầu tư tới vay vốn, Constant tận dụng tối đa sự phát triển của công nghệ chuỗi khối để giúp khách hàng giải quyết nhu cầu tài chính một cách tốt nhất.</p>\n<br />\n<p>Constant giảm thiểu chi phí tối đa để khách hàng có thể đầu tư an toàn với lãi suất hấp dẫn nhất, vay tiền nhanh chóng dễ dàng, bảo vệ giá trị tài sản cũng như chuyển khoản quốc tế miễn phí.</p>\n<br />\n<p>Constant luôn sẵn sàng phục vụ. Bất cứ lúc nào. Bất kì nơi đâu.</p>      ",
+            "answer1": "  <p>Constant là nền tảng dịch vụ tài chính cho phép bạn dùng tiền của mình làm nhiều điều hơn. Từ tiết kiệm đến cho vay, dịch vụ tài chính của chúng tôi áp dụng công nghê blockchain tốt nhất để giúp bạn chinh phục sự tự do tài chính.</p>\n        <p>Chúng tôi không xem xét chỉ số tín dụng, các biên bản giấy tờ hay chi phí để cho phép bạn được trải nghiệm những điều xứng đáng - lãi suất dẫn đầu nền công nghiẹp, khoản vay phi rủi ro, tiền lệ ổn định ít lệ thuộc chính phủ và chuyển tiền quốc tế miễn phí.</p>\n        <p>Constant luôn sẵn sàng phục vụ bất cứ lúc nào, bất kỳ nơi đâu.</p>",
             "question2": "Constant có phải là ngân hàng không?",
             "answer2": "\n<p>Constant thậm chí còn tuyệt vời hơn thế.</p>\n<br />\n<p>Constant được số hoá 100% và có khả năng phục vụ 24/7.</p>\n<br />\n<p>Lãi suất tiết kiệm của Constant lên tới 4%/năm tính trên USD trong khi lãi suất vay thế chấp là thấp nhất thị trường, chỉ từ 4.5%/năm. </p>\n<br />\n<p>Không yêu cầu lịch sử tín dụng và cũng không thủ tục giấy tờ phức tạp, Constant luôn sẵn sàng phục vụ mọi khách hàng ở khắp nơi trên thế giới.</p>      ",
             "question3": "Constant có hợp pháp không?",
@@ -2940,7 +2940,7 @@
         "loading": "Đang tải...",
         "amountMustBeLargerThan": "Số lượng phải lớn hơn {min}{fiatCurrency}",
         "todayRate": "Lãi suất hôm nay",
-        "todayRateValues": "{rate}% lãi suất bình quân năm",
+        "todayRateValues": "Lãi suất kép {rate}%",
         "howMuchDoYouWantToDeposit": "BẠN MUỐN CÓ THÊM BAO NHIÊU TIỀN? ",
         "formDesc": "Constant cất giữ tiền của bạn trong một hệ thống 20 ngân hàng, mỗi ngân hàng được bảo hiểm $250,000. Điều đó có nghĩa bạn được bảo hiểm tới $5,000,000.",
         "depositForWithdraw": "Xin vui lòng đảm bảo bạn có đủ số dư trong tài khoản để hoàn thành chuyển khoản.<br/>Để thực hiện chuyển khoản ${amount}, xin vui lòng nạp đủ số dư.",
@@ -3015,7 +3015,7 @@
     "saving": {
         "trialLeftNum": "CHỈ CÒN {trialLeft} LẦN TRẢI NGHIỆM MIỄN PHÍ",
         "title": "<h1><span>Đầu tư</span> theo cách bạn muốn.</h1>\n",
-        "subTitle": "Cách đầu tư đúng là cách mà bạn cảm thấy thoải mái với, một cách đầu tư mang lại tăng trưởng lợi nhuận đáng tin cậy theo thời gian. Chọn một cách bạn cảm thấy phù hợp và chúng tôi sẽ dạy tiền của bạn cách tạo ra lợi nhuận.",
+        "subTitle": "<h2 class=toolTipMark\">Tự thiết đặt lãi suất của bạn.</h2> ",
         "makeLocalOrderSuccess": "Lệnh của bạn được tạo thành công",
         "crypto_amount_exists": "Số lượng tiền mã hoá hiện có",
         "makeLocalOrderFailed": "Tạo lệnh không thành công",
@@ -3108,36 +3108,36 @@
         }
     },
     "deposit": {
-        "contentHtml": "      <h6>Tăng trưởng tài sản của bạn một cách dễ dàng</h6>\n      <h2>Bạn nhận mức lãi suất tuyệt vời mà không cần</h2>\n      <h2>bán đi tài sản của mình.</h2>\n      <br />\n      <h6>{interest}% lãi suất bình quân năm. Rút tiền không giới hạn, bao nhiêu lần tùy thích. Dịch vụ chăm sóc khách hàng 24/7. Miễn phí. Không có tiền gửi tối thiểu. Không bị phạt. Chưa bao giờ có phương thức tiết kiệm nào tốt như vậy.</h6>\n      <br />",
+        "contentHtml": "\n<h6>Trải nghiệm nhiều hơn với tiền của bạn</h6>\n      <h2>Tận hưởng lợi nhận 50x tốt hơn</h2>\n      <h2>tài khoản tiết kiệm<sup>*</sup>.</h2>\n      <br />\n      <h6>Kiếm {interest}% APY trên bất kỳ tài khoản nào. Bạn gửi, Constant thay bạn cho vay, chúng tôi thay bạn cho vay, bạn nhận được lãi suất. Tất cả khoản vay được đảm bảo bởi tài sản thế chấp và bạn có thể rút miễn phí bất kỳ lúc nào. Tăng vốn mà không cần khoá vốn.</h6>\n      <br />\n<p><sup>*</sup>So sánh dựa trên dữ liệu từ <a href=https://www. valuepenguin. com/banking/average-bank-interest-rates\">ValuePenguin</a>.</p>    ",
         "learnMore": "Tìm hiểu thêm ở đây.",
         "title": "Tài khoản USD quốc tế của bạn.",
         "availableInVn": "Đã có mặt tại Việt Nam.",
         "subTitle": {
-            "sub1": "Đầu tư bằng USD thay vì dùng một đồng nội tệ không ổn định nào khác. Hãy tận hưởng dịch vụ chuyển khoản ngay lập tức với bất kỳ giá trị số tiền bao nhiêu - cho bất kỳ ai hoặc bất kỳ doanh nghiệp nào - tới bất cứ nơi nào trên thế giới. Hoàn toàn miễn phí.",
-            "sub2": "Tài khoản của bạn được bảo đảm đầy đủ bởi chính phủ Hoa Kỳ, được bảo hiểm bởi Tập đoàn Bảo hiểm Tiền gửi Liên bang (FDIC). Được thành lập vào năm 1933, FDIC chưa từng làm mất tiền của bất kỳ nhà đầu tư nào.",
+            "sub1": "\nNạp tiền để đầu tư, tất toán khoản vay hay đơn giản để bảo vệ vốn của bạn. Tận hưởng dịch vụ chuyển tiền quốc tế tức thì, bảo mật của hợp đồng thông minh và tiền bảo hiểm trên tiền pháp định lên đến 130 triệu USD.",
+            "sub2": "Tất cả đều bắt đầu tại đây. Gửi tiền chưa đầy một phút.",
             "learnMore": "Tìm hiểu thêm +"
         },
         "what": {
-            "whatCaption0": "Bảo đảm giá trị tiền của bạn",
-            "whatCaption1": "Chuyển khoản tới bất kì đâu hoàn toàn miễn phí",
-            "whatCaption2": "Tiền của bạn được bảo hiểm 5 triệu USD",
+            "whatCaption0": "Lãi suất tức thì",
+            "whatCaption1": "Không chờ đợi",
+            "whatCaption2": "Không giới hạn",
             "whatCaption3": "Rút tiền bất cứ lúc nào",
-            "whatDesc0": "Giữ tiền bằng USD để bảo vệ giá trị tài sản khỏi lạm phát và mất giá.",
-            "whatDesc1": "<p>Gửi và nhận bất kỳ số tiền nào, tới bất cứ nơi nào trên thế giới, ngay lập tức và hoàn toàn miễn phí. Bạn có thể làm kinh doanh lớn hơn, gửi tiền về nhà, hay nói chung là nền tài chính tự do xuyên biên giới tuyệt vời hơn.</p>\n",
-            "whatDesc2": "Mỗi tài khoản được FDIC bảo hiểm tối đa lên đến 250,000 USD, tổng giá trị lên đến 130 triệu USD.",
-            "whatDesc3": "Constant liên kết với các ngân hàng địa phương để bạn có thể rút tiền vào mọi lúc, mọi nơi."
+            "whatDesc0": "<p>{interest}% lãi suất kép được tính ngay khi có tiền trong tài khoản.</p>",
+            "whatDesc1": "<p>Lãi suất kép tính theo giây. Số dư tăng lên từng giây không ngừng nghỉ.</p>",
+            "whatDesc2": "<p>Gửi tiền không giới hạn. Không kỳ hạn</p>",
+            "whatDesc3": "<p>Rút tiền về tài khoản ngân hàng hoặc địa chỉ ví bất cứ lúc nào.</p>"
         },
         "howItWorks": {
             "title": "Cơ chế hoạt động",
             "step1": "BƯỚC 1",
             "title1": "NẠP TIỀN VÀO TÀI KHOẢN",
-            "desc1": "Gửi số tiền bạn muốn đến công ty Constant tại Việt Nam. Số tiền này sẽ được đổi sang USD theo tỉ giá thị trường tại thời điểm đó.",
+            "desc1": "Gửi tiền đến tài khoản của Công ty TNHH MyConstant hoặc nạp tiền vào địa chỉ ví được cung cấp bằng stable coins.",
             "step2": "BƯỚC 2",
-            "title2": "TIỀN CỦA BẠN ĐƯỢC ĐẢM BẢO",
-            "desc2": "Tiền của bạn được giữ an toàn trong tài khoản ngân hàng Mỹ được bảo hiểm 100%.",
+            "title2": "Nhận lãi suất kép 5%",
+            "desc2": "\nBạn nhận được {interest}% lãi kép ngay sau khi nạp. Tỷ lệ lãi suất tuỳ thuộc vào sự thay đổi về thời gian.",
             "step3": "BƯỚC 3",
-            "title3": "VÀ NHẬN THÊM NHIỀU TIỆN ÍCH",
-            "desc3": "Bạn đã có một tài khoản USD để chuyển khoản quốc tế, gửi tiết kiệm hay vay tiền với lãi suất ưu đãi nhất.\n"
+            "title3": "Số dư tăng theo giây",
+            "desc3": "Lãi suất được cộng dồn và số dư của bạn sẽ tăng theo từng giây. Không bỏ phí một chút thời gian nào.\n"
         },
         "checklist": {
             "title": "Tại sao nên đầu tư với Constant?",
@@ -3257,8 +3257,8 @@
     },
     "newHome": {
         "banner": {
-            "title": "<h2> Đặt mức lãi suất bạn muốn. </ h2>\n  <h2> Không có vốn tối thiểu. </ h2>\n  <h2> Chỉ đầu tư vào các khoản vay có bảo đảm. </ h2>\n  </span>\n  <br />\n  <h5>\n  Các khoản đầu tư của bạn được hỗ trợ đầy đủ bởi tài sản thế chấp của người vay, hợp đồng thông minh và bảo hiểm quỹ. Bạn có thể rút các phần tiền gốc chưa được khớp cho vay bất cứ lúc nào.\n  </ h5>",
-            "title1": "        <h1>Trải nghiệm<span class=textSuccess\">hoàn toàn đảm bảo</span> cho vay ngang hàng.</h1>",
+            "title": "<h2> Đặt mức lãi suất bạn muốn. </ h2>\n  <h2> Không có vốn tối thiểu. </ h2>\n  <h2> Chỉ đầu tư vào các khoản vay có bảo đảm. </ h2>\n  </span>\n  <br />\n  <h5>\n  Các khoản đầu tư của bạn được hỗ trợ hoàn toàn bằng tài sản thế chấp của người vay. Phần không được cho vay sẽ tự động nhận 5% lãi kép và có thể rút bất kỳ lúc nào. \n </h5>",
+            "title1": "\n<h1>Trải nghiệm<span class=textSuccess\"> nền tảng cho vay ngang hàng</span>hoàn toàn đảm bảo</h1>      ",
             "subTitle": "Chào mừng bạn đến với dịch vụ tiết kiệm, vay mượn và tận dụng tối đa giá trị của tiền của bạn. Chúng tôi phục vụ cho bất cứ ai trên thế giới, miễn là có kết nối Internet.",
             "cta": "Bắt đầu",
             "ctaDesc": "Hoàn toàn miễn phí",
@@ -3283,7 +3283,7 @@
             "question1": "Hình thức cho vay ngang hàng là gì?",
             "answer1": "Không giống như vay ngân hàng, hình thức cho vay ngang hàng cho phép người cần vay có thể vay tiền trực tiếp từ nhà đầu tư. Bỏ qua mọi khâu trung gian, nhà đầu tư và người cần vay có thể tự thoả thuận mức lãi suất và kì hạn sao cho đôi bên cùng có lợi. Nếu bạn đang tìm kiếm một cơ hội đầu tư với mức lợi nhuận cao hơn hoặc muốn vay tiền với mức lãi suất thấp, Constant là lựa chọn tốt nhất thị trường.",
             "question2": "Constant ưu việt hơn những nền tảng cho vay ngang hàng khác ở những điểm nào?",
-            "answer2": "\n<p>Constant là nền tảng cho vay ngang hàng đầu tư bảo đảm an toàn tuyệt đối cho cả nhà đầu tư và người vay vốn. Với nhà đầu tư, khoản tiền đầu tư được bảo đảm bởi tài sản thế chấp và khoản tiền nhàn rỗi được bảo hiểm bởi FDIC. Với người vay, phần tài sản thế chấp được bảo vệ bởi hợp đồng thông minh trên chuỗi khối Ethereum không thể bị can thiệp và sẽ được tự động gửi lại ngay khi khoản vay được hoàn trả đầy đủ.</p>\n        <p>Với Constant, khách hàng được tự quyết định mức lãi suất và kì hạn. \n       Hợp đồng thông minh trên chuỗi khối Ethereum được vận hành tự động và luôn chính xác tuyệt đối, đảm bảo cho cả nhà đầu tư và người vay vốn. \n        </p>      ",
+            "answer2": "\n<p>Constant là nền tảng cho vay ngang hàng đầu tư bảo đảm an toàn tuyệt đối cho cả nhà đầu tư và người vay vốn. Với nhà đầu tư, khoản tiền đầu tư được bảo đảm bởi tài sản thế chấp của người vay. Với người vay, phần tài sản thế chấp được bảo vệ bởi hợp đồng thông minh trên chuỗi khối Ethereum không thể bị can thiệp và sẽ được tự động gửi lại ngay khi khoản vay được hoàn trả đầy đủ.</p>\n        <p>Với Constant, khách hàng được tự quyết định mức lãi suất và kì hạn. \n       Hợp đồng thông minh trên chuỗi khối Ethereum được vận hành tự động và luôn chính xác tuyệt đối, đảm bảo cho cả nhà đầu tư và người vay vốn. \n        </p>      ",
             "question3": "Ai có thể tham gia?",
             "answer3": "Ai cũng có thể sử dụng Constant. Chỉ cần có kết nối Internet để truy cập website và một tài khoản ngân hàng để thực hiện các giao dịch (vay hoặc hoàn trả khoản vay).",
             "question4": "Constant bảo vệ tiền của khách hàng như thế nào?",
@@ -3304,7 +3304,7 @@
             },
             "item1": {
                 "title": "Bảo vệ tài sản thế chấp cho người đi vay",
-                "desc": "Tài sản thế chấp được bảo đảm an toàn bằng hợp đồng thông minh trên chuỗi Ethereum. Hợp đồng thông minh được lập trình và hoạt động tự động mà không có sự can thiệp của con người. Người đi vay luôn có thể nhận lại tài sản thế chấp của mình sau khi hoàn trả hết khoản vay."
+                "desc": "Tài sản thế chấp được bảo đảm an toàn bằng hợp đồng thông minh, ví web hoặc ví offline (tuỳ thuộc vào tài sản thế chấp). Việc này giúp bảo vệ tài sản thế chấp trong khi vẫn đảm bảo việc trả lại ngay sau khi người vay tất toán."
             }
         },
         "subjects": {
@@ -3327,8 +3327,8 @@
             "invest": {
                 "title": "Đầu tư theo cách bạn muốn.",
                 "desc1": {
-                    "title": "8% lãi suất hàng năm.",
-                    "desc": "Đừng để tiền của bạn nằm yên. Hãy để nó sinh lời."
+                    "title": "Lãi kép riêng của bạn.",
+                    "desc": "Kiếm hơn 10% lãi kép. Đừng để tiền của bạn nằm yên. Hãy để nó sinh lời."
                 },
                 "desc2": {
                     "title": "Lợi nhuận được trả hàng ngày. Rút ra bất cứ lúc nào.",
@@ -3336,14 +3336,14 @@
                 },
                 "desc3": {
                     "title": "Đảm bảo lợi nhuận đầu tư với những khoản cho vay chắc chắn.",
-                    "desc": "Tiền của bạn được đầu tư một cách đảm bảo bằng các tài sản thế chấp vượt mức 150%. Đây là lợi nhuận với rủi ro bằng 0. "
+                    "desc": "Tiền lãi bạn kiếm được bằng cách hỗ trợ các khoản vay tài sản khoản thế chấp quá mức. Có nghĩa là lợi nhuận của bạn luôn được đảm bảo."
                 },
                 "link": "Đầu tư thử nghiệm miễn phí"
             },
             "borrow": {
                 "title": "Vay tiền với mức lãi suất tốt nhất trên thị trường.",
                 "desc1": {
-                    "title": "2%/lãi suất bình quân năm.",
+                    "title": "4.5% lãi kép.",
                     "desc": "Đặt tiền điện tử của bạn làm tài sản thế chấp và thu về USD. Vay bao nhiêu bạn muốn, trong bao lâu bạn kỳ vọng, sau đó lấy lại tài sản thế chấp khi bạn đã hoàn trả khoản vay."
                 },
                 "desc2": {
@@ -3400,7 +3400,7 @@
     "support": {
         "title": "Trong khoảng từ 9h đến 17h từ thứ 2 đến thứ 6.",
         "text": "Có câu hỏi? Gọi chúng tôi tại {phone}",
-        "newTitle": "      <h6>Có câu hỏi? Hãy gọi điện cho chúng tôi.</h6>\n      <h6>Thiết lập thời gian<a href=\"http://calendly.com/justinconstant\" target=\"_blank\">here</a>.</h6>",
+        "newTitle": "\n<h6>Có câu hỏi? Hãy gọi điện cho chúng tôi.</h6>\n      <h6>Đặt lịch ở <a href=\"http://calendly.com/justinconstant\" target=\"_blank\">đây</a>.</h6>    ",
         "phone": {
             "vn": "+84 36 656 2949",
             "us": "+1 844 201 7242",
@@ -3412,7 +3412,7 @@
         "title": "Tư duy ngang hàng (P2P)",
         "content": "\n<h5>Tự do tài chính với mỗi người là khác nhau. Có đủ tiền để làm tất cả những điều mình muốn là tự do tài chính. Đủ điều kiện để không phải lo mưu sinh là tự do tài chính. Với Constant, tự do tài chính là khả năng để đồng tiền tự sinh sôi mà bạn không cần tốn nhiều công sức, cho phép bạn có thể tự do di chuyển, làm việc, hưởng thụ cuộc sống ở bất cứ đâu trên thế giới.</h5>\n<h5>Thế hệ trẻ ngày nay suy nghĩ rất tiến bộ và khác biệt. Những thể chế tài chính hiện nay chưa thể theo kịp sự phát triển này. Các ngân hàng không cho khách hàng nhiều lựa chọn. Tiền trong tài khoản liên tục mất giá vì lạm phát. Những khoản vay khó tiếp cận và còn khó hơn để hoàn trả. Di chuyển xuyên lục địa rất dễ dàng, nhưng chuyển tiền thì không. Với rất nhiều người, tự do tài chính gần như là không tưởng.</h5>\n<h5>Sứ mệnh của chúng tôi là mang đến cho mọi người công cụ để biến điều không thể thành có thể. Chào mừng đến với Constant.</h5>    ",
         "team": {
-            "title": "Lựa chọn con người giao dịch, không phải những định chế lớn",
+            "title": "Chọn nhân lực, không phải tổ chức",
             "content": "Constant tự hào tập hợp được đội ngũ hơn 50 thành viên bao gồm những nhà khoa học, kĩ sư, nhà thiết kế, nhà kinh tế học, và những chuyên gia hàng đầu trong các lĩnh vực. Chúng tôi yêu thích việc xây dựng nên các cơ hội tài chính mới mà mọi người đều có thể hưởng lợi - bất kể bạn sống ở đâu, hoặc bạn có bao nhiêu tiền.",
             "footer": "<một lời tựa đẹp, thân thiện, nhân văn về mỗi bức ảnh>",
             "captions": {
@@ -3543,7 +3543,7 @@
     "home1": {
         "lendingSection": {
             "intro": {
-                "content": "          <h6>Đầu tư theo cách mà bạn muốn</h6>\n                <h2>Thiết lập mức lãi suất của mình.</h2>\n            <h2>Không mất phí.</h2>\n            <h2>Không có mức đầu tư tối thiểu.</h2>\n                  <br />\n          <h6>\n         Các khoản đầu tư của bạn được hỗ trợ đầy đủ bởi tài sản thế chấp của người vay. Các phần chưa được khớp để cho vay sẽ tự động kiếm được 5% lãi suất bình quân năm và có thể được rút bất cứ lúc nào.\n          </h6>\n        "
+                "content": "\n<h6>Đầu tư theo cách bạn muốn</h6>\n<h2>Tự thiết đặt lãi suất của bạn.</h2>\n <h2>Không có vốn tối thiểu.</h2>\n <h2>Chỉ đầu tư vào khoản vay đảm bảo.</h2>\n <br />\n <h6>\n Sự đầu tư của bạn hoàn toàn được đảm bảo bằng tài sản thế chấp của người vay. Phần chưa cho vay sẽ kiếm được 5% lãi kép và được rút bất kỳ lúc nào. \n </h6>"
             },
             "form": {
                 "text1": "Chọn kì hạn đầu tư",
@@ -3571,7 +3571,7 @@
                 "tooltip": {
                     "amount": "<p>Bạn muốn đầu tư bao nhiêu?</p>",
                     "maxTerm": "<p>Đây là khoảng thời gian tối đa mà bạn muốn đầu tư. Với phần tiền còn lại, bạn có thể rút về bất cứ lúc nào.</p>",
-                    "minRate": "<p>Đây là mức lãi suất bình quân năm (APR) bạn chấp nhận để cho vay. Nếu người cần vay vốn sẵn sàng trả mức lãi cao hơn, bạn sẽ được hưởng mức lãi suất cao hơn.</p>"
+                    "minRate": "<p>Đây là mức lãi kép bạn chấp nhận để cho vay. Nếu người cần vay vốn sẵn sàng trả mức lãi cao hơn, bạn sẽ được hưởng mức lãi suất cao hơn.</p>"
                 },
                 "placeholder": {
                     "amount": "Bạn muốn cho vay bao nhiêu?"
@@ -3650,17 +3650,17 @@
         "whatCaption2": "Được xây dựng cho chính bạn",
         "whatCaption3": "Được bảo đảm bởi tài sản thế chấp",
         "whatDesc0": "\n      <p>Constant là một nền tảng kết nối ngang hàng, cho phép người sử dụng kết nối trực tiếp với nhau không qua trung gian.</p>\n \n    ",
-        "whatDesc1": "<p> Kiếm lãi trước khi bạn thực hiện lệnh đầu tư. Tất cả khoản tiền gửi dều kiếm được {interest}% lãi suất bình quân năm mặc định và có thể rút được bất cứ lúc nào. Lãi được tính kép và được trả vào mỗi giây. Luôn linh hoạt và tận hưởng thời gian tiền chết bằng không. </p>",
+        "whatDesc1": "<p> Kiếm lãi trước khi bạn thực hiện lệnh đầu tư. Tất cả khoản tiền gửi dều kiếm được {interest}% lãi kép mặc định và có thể rút được bất cứ lúc nào. Là lãi kép và được trả vào mỗi giây. Luôn linh hoạt và không đợi chờ. </p>",
         "whatDesc2": "<p> Tận hưởng dịch vụ khách hàng 24-7, rút tiền miễn phí không giới hạn và thư viện nội dung hữu ích để giúp bạn kiếm được nhiều hơn với số tiền của mình. Constant là một nền tảng tài chính mở, thay thế các mô hình cũ và bạn có thể <a href = https: //www.google.com/url? Q = https: //github.com/constant-money&sa=D&ust=1555493848999000&usg=AFQjCNEEEN4_WzaIB05aPU2kpQ _blank \"> xem tất cả mã của chúng tôi </a> cũng như đề xuất các tính năng bạn muốn xem </p>",
-        "whatDesc3": "\n<p>Người vay vốn cần thế chấp tài sản trị giá 150% so với số tiền cần vay. Ví dụ, người vay vốn cần phải thế chấp tài sản trị giá 15,000 USD để vay được 10,000 USD.</p>\n      <br />\n      <p>Phần tài sản thế chấp này sẽ được thanh lí ngay khi giá trị bị giảm xuống dưới 70% để trả tiền cho nhà đầu tư.</p>\n      <br />\n <p>Vì vậy, đầu tư với Constant rất an toàn.</p>\n  <br />\n      <a href=\"https://medium.com/@constantbanking/how-do-constant-crypto-loans-work-b22b66b5b687\" target=\"_blank\">Cách Constant bảo vệ nhà đầu tư</a>    ",
+        "whatDesc3": "\n<p>Người vay vốn cần thế chấp tài sản trị giá 150% so với số tiền cần vay. Ví dụ, người vay vốn cần phải thế chấp tài sản trị giá 15,000 Usd để vay được 10,000 Usd.</p>\n      <br />\n      <p>Nếu người vay mặc định, bạn không mất một xu.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/how-do-constant-crypto-loans-work-b22b66b5b687\" target=\"_blank\">Cách Constant bảo vệ nhà đầu tư</a>    ",
         "howItWorks": {
             "mainTitle": "Cơ chế hoạt động",
-            "mainDesc": "<h5> Thuật toán Constant khớp với các nhà đầu tư với những người vay đồng ý trả lãi suất yêu cầu của nhà đầu tư. Sau đó, hệ thống quản lý việc chuyển tiền của nhà đầu tư đi, trong khi vẫn bảo đảm an toàn cho người vay bằng tài sản thế chấp. </ h5>",
+            "mainDesc": "<h5> Thuật toán Constant khớp nhà đầu tư với người vay đồng ý trả lãi suất theo yêu cầu của nhà đầu tư. Sau đó, hệ thống quản lý việc chuyển tiền của nhà đầu tư đi trong khi vẫn bảo đảm an toàn cho người vay bằng tài sản thế chấp. </ h5>",
             "step1": "Bước 1",
             "title1": "1. Thiết lập điều khoản của bạn",
             "desc1": "Chọn số tiền bạn muốn đầu tư và trong bao lâu, sau đó nhập lãi suất bạn muốn kiếm.",
             "step2": "Bước 2",
-            "title2": "2. Chờ được khớp",
+            "title2": "2.Chờ khớp lệnh",
             "desc2": "Thuật toán khớp lệnh tìm những người vay đáp ứng yêu cầu của bạn. Trong khi bạn chờ đợi, tiền của bạn vẫn nằm trong sự giám sát của Prime Trust, nơi tiền của bạn được bảo hiểm lên tới 130 triệu USD và bạn có thể rút tiền ra bất cứ lúc nào.",
             "step3": "Bước 3",
             "title3": "3. Bắt đầu kiếm lợi nhuận",
@@ -3685,7 +3685,7 @@
             "question4": "Constant làm gì để bảo vệ khoản tiền của nhà đầu tư?",
             "answer4": "\n        <p> Chúng tôi đã thực hiện các bước quan trọng để bảo vệ không chỉ khoản đầu tư của bạn mà cả lợi nhuận của bạn.</p>\n         <p> Tất cả những người vay của chúng tôi phải đặt giá trị 150% số tiền vay làm tài sản thế chấp bằng tiền điện tử. Chúng tôi cũng đặt ngưỡng thanh lý để bảo đảm chống lại sự sụt giảm giá trị tài sản thế chấp. </p>\n         <p> Điều khoản cho vay của bạn được mã hóa thành hợp đồng thông minh Ethereum xác định nghiêm ngặt cách sử dụng tiền của bạn. Khi không cho vay, chúng tôi sẽ lưu trữ tiền của bạn trong các tài khoản ngân hàng được bảo hiểm bởi FDIC, được giám sát bởi Prime Trust.</p>\n         <p> Kết hợp với nhau, các biện pháp bảo vệ này đảm bảo rằng không có vấn đề gì xảy ra nếu người đi vay không trả nợ, nếu thị trường tiền điện tử giảm hoặc một số sự kiện không may khác xảy ra, thì tiền gốc và tiền lãi của bạn được đảm bảo.</p>",
             "question5": "Phần tiền không đầu tư trong tài khoản Constant có được bảo đảm không?",
-            "answer5": "<p> Khi không được cho vay hoặc đang chờ đợi để được khớp, tiền của bạn kiếm được 5% lãi suất bình quân năm thông qua Flex - một tài khoản tiết kiệm cho phép rút tiền bất cứ lúc nào được cung cấp bởi Compound Finance. Bảo mật, linh hoạt và tự động, Flex là một cách dễ dàng để tiền của bạn tăng lên trong khoảng thời gian chờ thực hiện các khoản đầu tư. Tất cả các khoản rút tiền đều miễn phí và không giới hạn.</p><p>Nếu bạn đang chờ được khớp, tiền của bạn vẫn nằm trong sự giám sát của Prime Trust, một tổ chức tài chính được công nhận của Hoa Kỳ bảo đảm tiền gửi lên tới 130 triệu USD. </ P>"
+            "answer5": "<p> Khi không được cho vay hoặc đang chờ đợi để khớp lệnh, bạn kiếm được 5% lãi kép thông qua Flex - một tài khoản tiết kiệm cho phép rút tiền bất cứ lúc nào được cung cấp bởi Compound Finance. Bảo mật, linh hoạt và tự động, Flex giúp bạn tăng vốn trong thời gian chờ thực hiện các khoản đầu tư. Tất cả các khoản rút tiền đều miễn phí và không giới hạn.</p><p>Nếu bạn đang chờ khớp lệnh, tiền của bạn vẫn nằm trong sự giám sát của Prime Trust, một tổ chức tài chính được công nhận của Hoa Kỳ có bảo hiểm lên tới 130 triệu USD. </ P>"
         }
     },
     "payment": {
@@ -3757,7 +3757,7 @@
         "alert": {
             "emailSuccess": "Xin cảm ơn! Bạn sẽ là người đầu tiên được trải nghiệm Pro."
         },
-        "title2": "Constant Pro là cách thức hoàn toàn mới để kết nối trực tiếp những người có nhu cầu đầu tư và vay vốn mà không cần thông qua bất cứ một khâu trung gian nào.",
+        "title2": "Nhận tỷ lệ lãi suất bạn muốn. Không ngân hàng. Không tổ chức. Suy nghĩ ngang hàng.",
         "what": {
             "title0": "Tự đặt mức lãi suất",
             "desc0": "Chúng tôi sử dụng thuật toán kết nối ngang hàng để loại bỏ hoàn toàn các khâu trung gian, cho phép người sử dụng có khả năng đáp ứng chính xác nhu cầu thị trường.",
@@ -3899,7 +3899,7 @@
             "interestSpreadDesc": "Chênh lệch lãi suất là chênh lệch giữa lãi suất cho vay ra thấp nhất và lãi suất muốn vay vào cao nhất\n",
             "interestSpreadValues": "0.10%",
             "amount": "Số lượng (USD)",
-            "interest": "Lãi suất (Lãi suất bình quân năm)",
+            "interest": "Lãi kép (APR)",
             "term": "Kì hạn (Ngày)",
             "termValues": "{term} tháng",
             "matched": "Thời gian"
@@ -3962,16 +3962,16 @@
                 "invest": "Xin vui lòng đăng nhập để thực hiện đầu tư!",
                 "borrow": "Xin vui lòng đăng nhập để thực hiện khoản vay!"
             },
-            "messDepositFirst": "Số dư hiện tại không đủ. Xin vui lòng nộp thêm tiền vào tài khoản để thực hiện đầu tư!",
+            "messDepositFirst": "Vui lòng nộp thêm tiền để đầu tư.\n",
             "minAmountRequired": "Số lượng lớn hơn {value} được yêu cầu để thực hiện khoản đầu tư",
             "amountRequired": "Số lượng yêu cầu để thực hiện khoản đầu tư!",
             "interestRequired": "Lãi suất yêu cầu để thực hiện khoản đầu tư!",
-            "matchedSuccess": "Đã khớp lệnh đầu tư thành công.",
+            "matchedSuccess": "Vui lòng chờ 1 phút để khoản đầu tư của bạn hoàn tất.",
             "matchedFailed": "Khớp lệnh đầu tư không thành công. Xin vui lòng thử lại.",
             "deposit": {
-                "title": "Nộp tiền đầu tư",
-                "depositButton": "Nạp thêm tiền",
-                "depositNote": "Nếu bạn không muốn mất cơ hội đầu tư, xin vui lòng đảm bảo giữ số dư đủ."
+                "title": "Nộp vốn đầu tư",
+                "depositButton": "Nạp tiền",
+                "depositNote": "Đầu tư USD hoặc stablecoin USD"
             },
             "form": {
                 "title": "Đầu tư",
@@ -3996,14 +3996,14 @@
                 "amountLabelDesc": "Bạn muốn vay bao nhiêu?",
                 "collateralLabel": "Thế chấp yêu cầu",
                 "collateralDesc": "Để đảm bảo khoản vay, xin vui lòng nạp thế chấp có giá trị bằng 150% giá trị khoản vay.",
-                "collateralRequiredDesc": "Để đảm bảo khoản vay, xin vui lòng nạp thế chấp có giá trị bằng {value}% giá trị khoản vay.",
+                "collateralRequiredDesc": "Để đảm bảo khoản vay, vui lòng nạp {value}% giá trị khoản vay bằng tài sản thế chấp.",
                 "walletAddressLabel": "Địa chỉ ví {symbol} của bạn",
                 "returningWalletAddressLabel": "Địa chỉ trả lại",
                 "walletAddressDesc": "Đây là ví sẽ nhận được tài sản thế chấp trả lại khi hoàn trả khoản vay được thực hiện.\n",
                 "walletAlias": "0x687C906b2....8bd9369242e\n",
-                "maxRate": "Lãi suất (Lãi suất bình quân năm)",
+                "maxRate": "Lãi kép (APR)",
                 "minTerm": "Kì hạn (Ngày)",
-                "maxRateTooltip": "Đây là mức lãi suất bình quân năm (APR) mà bạn sẵn sàng trả cho khoản vay của mình. Nếu có nhà đầu tư chấp nhận khoản lợi nhuận nhỏ hơn, bạn sẽ chỉ phải trả mức lãi suất thấp hơn.",
+                "maxRateTooltip": "Đây là mức lãi kép mà bạn sẵn sàng trả cho khoản vay của mình. Nếu có nhà đầu tư chấp nhận khoản lợi nhuận nhỏ hơn, bạn sẽ chỉ phải trả mức lãi suất thấp hơn.",
                 "minTermTooltip": "Đây là kì hạn cho khoản tiền mà bạn muốn vay.",
                 "buttonText": "VAY",
                 "loginButton": "Đăng nhập hoặc Đăng ký để vay"
@@ -4023,7 +4023,7 @@
         "faqs": {
             "question1": "Flex là gì?",
             "answer1": "Flex là một tài khoản tiền gửi giúp bạn kiếm được 5% lãi suất bình quân năm thông qua việc cho vay tự động. Khi bạn gửi tiền vào Flex, nó sẽ đi vào một bể thanh khoản được quản lý bởi Compound Finance. Những người đi vay đã đặt tài sản thế chấp sau đó có thể đảm bảo các khoản vay từ nhóm để đổi lấy tiền lãi - và chúng tôi trả lãi cho bạn. Vì tiền gửi của bạn đi đến một nhóm chứ không phải là người vay cá nhân, bạn có thể rút hoặc gửi bất cứ lúc nào, bao nhiêu lần tùy thích và không mất bất kỳ khoản phí nào.",
-            "question2": "Tại sao lại là 5% lãi suất bình quân năm?",
+            "question2": "Tại sao lại là mức lãi suất kép 5%/năm?",
             "answer2": "Compound Finance sử dụng giao thức blockchain để quản lý thông minh các khoản vay. Nó cũng tự đặt lãi suất vay theo cung và cầu. Hiện tại, lãi suất được cố định ở mức 5% lãi suất bình quân năm. Trong tương lai, lãi suất có thể cao hơn hoặc thấp hơn tùy thuộc vào hoạt động trong thị trường cho vay Compound.",
             "question3": "Compound Finance là gì?\n",
             "answer3": "<p>Compound Finance là một công nghệ quản lý thông minh các khoản cho vay hơn với giá trị các khoản vay đang quản lý là hơn 150 triệu USD (tính đến tháng 9 năm 2019). Giao diện Flex tích hợp công nghệ này thông qua API, từ đó cho phép bạn rút tiền gửi và kiếm lãi bất cứ lúc nào.</p>\n\n<p> Compound Finance cho vay theo cách tương tự như ngân hàng: tiền gửi của bạn đi vào và được dùng để cho người vay vay để đổi lấy tiền lãi và người vay sẽ nộp tài sản thế chấp. Nhưng vì Compound Finance là một công nghệ, không cần chi nhánh hay nhân viên, vì vậy bạn được hưởng mức lãi suất tốt hơn nhiều!</p>\n\n <p> <a href=\"https://medium.com/@constantp2p/compound-finance-discover-the-interest-earning-tech-behind-flex-dcbb1decc835\"> Tìm hiểu thêm về Compount Finance. </a></p>\"",
@@ -4241,7 +4241,7 @@
         "todayRate": "Lãi suất hôm nay",
         "todayRateValues": "{rate}% lãi suất bình quân năm",
         "howMuchDoYouWantToDeposit": "Bạn muốn stake bao nhiêu?",
-        "depositNow": "Bắt đầu staking bây giờ",
+        "depositNow": "Bắt đầu staking ngay",
         "depositWithAmount": "Bắt đầu staking {amount} {currency}",
         "validateMinAmountError": "Bạn không thể nhập số lượng nhỏ hơn {amount}{currency}",
         "maxValueAmount": "Bạn không thể nhập số lượng lớn hơn {max}",
@@ -4251,7 +4251,7 @@
         "cancel": "Huỷ",
         "starStaking": "Tạo staking",
         "stakingFromTitle": "Bắt đầu staking bây giờ",
-        "contentHtml": "        <h6>Stake và nhận lãi</h6>\n        <h2>Nhận lãi tới {reward}% lãi suất bình quân năm</h2>\n        <h2>với tiền mã hoá của bạn.</h2>\n        <br />\n        <h6>Tham gia bể masternode của chúng tôi để nhận tới {reward}% lãi suất bình quân năm. Lãi suất đươc trả mỗi 30 phút. Không cần lượng stake nhỏ nhất. Không mất phí. Rút bất cứ lúc nào. Staking chưa bao giờ dễ dàng như thế.</h6>\n        <br />\n    ",
+        "contentHtml": "        <h6>Stake và nhận lãi</h6>\n        <h2>Nhận lãi tới {reward}% lãi kép</h2>\n        <h2>bằng tiền mã hoá của bạn.</h2>\n        <br />\n       <h6>Tham gia hệ thống masternood để nhận đến {reward}% lãi kép. Lợi nhuậ được trả mỗi 30 giấy. Lượng stake tối thiểu nhỏ. Miễn phí. Rút bất kỳ lúc nào. Staking chưa bao giờ dễ dàng đến thế.</h6>\n        <br />\n",
         "withdrawFrom": {
             "unStaking": {
                 "title": "Bỏ stake",
@@ -4289,56 +4289,56 @@
         "faqs": {
             "1": {
                 "question": "Masternode là gì?",
-                "answer": "Một masternode là một thành viên trong mạng blockchain lưu trữ toàn bộ bản sao dữ liệu của blockchain trên máy tính của họ vào mọi lúc. Họ rất quan trọng trong việc duy trì và bảo mật cho mạng blockchain. Để đủ điều kiện trở thành masternode, trước tiên bạn phải stake một số lượng lớn tiền mã hoá gốc trên mạng blockchain đó. Điều này khuyến khích hành vi đúng và chống lại hành vi gian lận trong mạng. Đổi lạ, vì giúp duy trì mạng, các masternode nhận được phần thưởng."
+                "answer": "Masternode là một thành viên trong mạng blockchain lưu trữ toàn bộ bản sao dữ liệu của blockchain trên máy tính vào mọi lúc. Chúng đóng vai trò quan trọng trong việc duy trì và bảo mật cho mạng blockchain. Để đủ điều kiện trở thành masternode, trước tiên bạn phải stake một số lượng lớn tiền mã hoá gốc trên mạng blockchain đó. Điều này khuyến khích hành vi đúng và chống lại hành vi gian lận trong mạng. Đổi lại, vì giúp duy trì mạng, các masternode nhận được phần thưởng crypto."
             },
             "2": {
-                "question": "Bể masternode là gì?",
-                "answer": "Thay vì một người staking số tiền tối thiểu để trở thành một masternode, một bể masternode sẽ thu thập tiền mã hoá từ nhiều người trên mạng blockchain. Điều này giúp nhóm nhiều người đó dễ dàng trở thành một masternode cho tất cả mọi người với phần lãi được phân phối cho số lượng người lớn hơn. Khi một bể masternode được tạo ra, mạng lưới được lập luận rằng trở nên an toàn và dân chủ hơn."
+                "question": "Hệ thống masternode là gì?",
+                "answer": "Thay vì một người staking số tiền tối thiểu để trở thành một masternode, một hệ thống masternode sẽ thu thập tiền mã hoá từ nhiều người trên mạng lưới. Điều này giúp nhiều người dễ dàng trở thành một masternode mà không yêu cầu lượng stake tối thiểu và phần thưởng được phân chia giữa nhưng người có số lượng lớn hơn. Khi một hệ thống masternode phân tán mạng lưới, điều này được xem là an toàn và dân chủ hơn."
             },
             "3": {
                 "question": "Phần thưởng staking có thể thay đổi không?",
-                "answer": "Tiền lãi bạn kiếm được khi staking trong bể masternode phụ thuộc vào blockchain. Nó sẽ được chỉnh sửa vào thời điểm bạn bắt đầu staking, nhưng có thể thay đổi trong suốt thời gian bạn staking hoặc lần tiếp theo bạn staking. Chúng tôi sẽ làm rõ số tiền bạn kiếm được thông qua bể masternode của chúng tôi trước khi bạn gửi tiền để staking."
+                "answer": "Tiền lãi bạn kiếm được khi staking trong hệ thống masternode phụ thuộc vào blockchain. Nó sẽ cố định vào kỳ hạn bạn bắt đầu staking, nhưng có thể thay đổi trong suốt kỳ hạn hoặc lần tiếp theo bạn staking. Chúng tôi sẽ làm rõ số tiền bạn kiếm được thông qua hệ thống masternode của chúng tôi trước khi bạn gửi crypto."
             },
             "4": {
                 "question": "Hệ thống hỗ trợ tiền mã hoá nào?",
                 "answer": "Bể masternode đầu tiên của chúng tôi là TomoChain. Bạn có thể stake TOMO để nhận lãi suất {reward}%. Chúng tôi sẽ bổ sung thêm các bể masternode khác theo thời gian."
             },
             "5": {
-                "question": "Tiền mã hoá của tôi được cất trữ ở đâu?",
+                "question": "Tiền mã hoá của tôi được lưu trữ ở đâu?",
                 "answer": "Giống như tất cả các masternode, tiền mã hoá của bạn được lưu trữ trong một hợp đồng thông minh ký quỹ trên blockchain. Constant không có quyền kiểm soát tiền mã hoá của bạn. Bạn có thể xác minh phần stake của mình bất cứ lúc nào bằng cách sử dụng trang dữ liệu blockchain explorer."
             },
             "6": {
                 "question": "Tôi có thể rút khoản stake bất cứ lúc nào không?",
-                "answer": "Đúng, bạn có thể rút phần stake của mình và kiếm lãi bất cứ lúc nào. Tuy nhiên, để tránh sự gián đoạn trong mạng, việc rút tiền từ một masternode không phải là ngay lập tức. Thời gian rút tiền thực tế khác nhau tùy theo blockchain. Ví dụ, đối với TOMO, việc rút tiền sẽ mất hai ngày. Khi chúng tôi thêm nhiều blockchain vào bể masternode, chúng tôi sẽ chỉ rõ thời gian rút tiền với từng mạng."
+                "answer": "Bạn có thể rút phần stake của mình và nhận lợi nhuận bất cứ lúc nào. Tuy nhiên, để tránh sự gián đoạn trong mạng lưới, rút tiền từ một masternode không xảy ra tức thì. Thời gian rút tiền thực tế tùy theo từng blockchain. Ví dụ, đối với TOMO, việc rút tiền sẽ mất hai ngày. Khi chúng tôi thêm nhiều blockchain vào hệ thống masternode, chúng tôi sẽ nêu rõ thời gian rút tiền với từng mạng."
             },
             "7": {
                 "question": "Lãi suất được trả như thế nào?",
                 "answer": "Tiền lãi được trả trực tiếp vào tài khoản Constant của bạn cứ sau 30 phút. Bạn sẽ nhận được tiền lãi cùng loại tiền điện tử giống như loại bạn đã stake. Ví dụ: nếu bạn stake TOMO, bạn sẽ kiếm được tiền lãi là đồng TOMO. Điều này là phổ biến với nhiều blockchains.\n"
             },
             "8": {
-                "question": "Tôi có thể stake sử dụng tài sản thế chấp không?",
-                "answer": "Đúng. Nếu bạn vay mượn với tài sản thế chấp của bạn thông qua nền tảng của chúng tôi, bạn có thể dùng phần lãi từ staking để trả cho chi phí khoản vay. Chính xác số tiền bạn có thể dùng để bù đắp chi phí vay tùy thuộc vào tài sản thế chấp của bạn, phần lãi staking và thời hạn staking và thời hạn vay. Chúng tôi sẽ xác định điều này một cách toán học và đưa ra tỷ lệ bù đắp khoản bạn đang vay trước khi bạn bắt đầu staking."
+                "question": "Tôi có thể stake sử dụng khoản vay tài sản thế chấp không?",
+                "answer": "Nếu bạn vay bằng tài sản thế chấp của bạn thông qua nền tảng của chúng tôi, bạn có thể dùng phần lãi từ staking để trả cho chi phí khoản vay. Chính xác số tiền bạn có thể dùng để bù đắp chi phí vay tùy thuộc vào tài sản thế chấp của bạn, phần lãi staking và thời hạn staking và kỳ hạn vay. Chúng tôi sẽ tính toán và đưa ra lãi suất bù đắp trước khi bạn bắt đầu staking."
             }
         },
         "howItWorks": {
             "1": {
                 "title": "1. Chọn tiền mã hoá của bạn",
-                "desc": "Phần thưởng đa dạng phụ thuộc vào blockchain, vì thế hãy chọn bể masternode phù hợp nhất với danh mục đầu tư và mục tiêu đầu tư của bạn."
+                "desc": "Phần thưởng đa dạng phụ thuộc vào blockchain, vì thế hãy chọn hệ thống masternode phù hợp nhất với danh mục đầu tư và mục tiêu đầu tư của bạn."
             },
             "2": {
-                "title": "2. Gửi tiền mã hoá của bạn vào bể",
-                "desc": "Chuyển tiền mã hoá của bạn đến địa chỉ bể masternode. Đợi xác nhận email hoặc kiểm tra blockchain explorer để xem bằng chứng nhận tiền.\n"
+                "title": "2. Gửi tiền mã hoá của bạn vào hệ thống",
+                "desc": "Chuyển tiền mã hoá của bạn đến địa chỉ masternode. Đợi xác nhận email hoặc kiểm tra blockchain explorer để xem bằng chứng nhận tiền.\n"
             },
             "3": {
                 "title": "3. Bắt đầu nhận lợi nhuận",
-                "desc": "Bạn càng stake tiền mã hoá của mình lâu, bạn càng kiếm được nhiều tiền lãi. Rút tiền bất cứ lúc nào đến bất kỳ ví nào trong danh mục được hỗ trợ."
+                "desc": "Bạn stake tiền mã hoá càng lâu, bạn càng kiếm được nhiều lợi nhuận. Rút tiền bất cứ lúc nào đến bất kỳ ví nào trong danh mục được hỗ trợ."
             },
             "title": "Stake như thế nào?"
         },
         "what": {
             "1": {
-                "caption": "Không có số lượng stake tối thiểu",
-                "desc": "Tham gia một bể masternode và bắt đầu kiếm tiền với ít vốn đầu tư bỏ ra. Tận hưởng phần lãi stake cho dù bạn sở hữu nhiều hay ít tiền mã hoá.\n"
+                "caption": "Stake với số lượng nhỏ",
+                "desc": "Tham gia hệ thống masternode và bắt đầu stake với số vốn nhỏ. Tận hưởng phần thưởng bất kể giá trị crypto bạn giữ.\n"
             },
             "2": {
                 "caption": "Rút tiền bất cứ lúc nào",
@@ -4346,11 +4346,11 @@
             },
             "3": {
                 "caption": "Không mất phí",
-                "desc": "Staking là miễn phí. Rút tiền là miễn phí. Tất cả những gì bạn phải trả là phí giao dịch để gửi tiền mã hoá của bạn đến bể.\n"
+                "desc": "Staking miễn phí. Rút tiền miễn phí. Tất cả những gì bạn cần trả là phí giao dịch để gửi tiền mã hoá của bạn vào hệ thống."
             },
             "4": {
                 "caption": "Hỗ trợ mạng lưới",
-                "desc": "Hãy tự hào về việc mình giúp duy trì tính bảo mật và toàn vẹn của mạng blockchain.\n"
+                "desc": "Hãy tự hào vì bạn đã giúp duy trì tính bảo mật và sự thống nhất của mạng blockchain.\n"
             }
         }
     },

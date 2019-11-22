@@ -145,7 +145,7 @@
             },
             "vn": {
                 "title": "Viet Nam: ",
-                "phone": "+84 36 656 2949"
+                "phone": "+84 34 362 8061"
             },
             "malta": {
                 "title": "Malta: ",
@@ -2083,7 +2083,7 @@
             "subintroDesc2": "You can send any amount of Constant to anyone at anytime, for free.",
             "subintroTitle3": "Always reliable.",
             "subintroDesc3": "Unlike other digital currencies, Constant keeps a stable value. This means you can get the equivalent of 1 USD for 1 Constant. In any location, at any time.",
-            "backToNewOrder": "Make another transfer",
+            "backToNewOrder": "Another transfer",
             "goHistory": "Go to Orders and Transactions",
             "components": {
                 "orderInfo": {
@@ -2171,7 +2171,7 @@
                 "answer10": "The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due."
             },
             "title": "Borrow the way you want",
-            "subTitle": "<h2>Set your own rates.</h2>\n<h2>Get cash for crypto without needing to sell.</h2>\n<h6>Get the funds you need at rates you’re willing to pay. All you collateral is securely escrowed and will be automatically returned to you when the loan is repaid.</h6>",
+            "subTitle": "\n<h2>Set your own rates.</h2>\n<h2>Borrow against 60+ cryptocurrencies.</h2>\n<h2>Get cash for crypto without needing to sell.</h2>\n<h6>Get the funds you need at rates you’re willing to pay. All your collateral is securely escrowed and will be automatically returned to you when the loan is repaid.</h6>      ",
             "headLine": "Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.",
             "exchange": {
                 "maxRateTooltip": "This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.",
@@ -3501,7 +3501,7 @@
                 },
                 "zonChu": {
                     "name": "Zon Chu",
-                    "position": "Applications",
+                    "position": "CEO",
                     "description": "<p>Zon leads application development. Prior to Constant, he spent 11 years as a full stack developer, project manager, and technical director for various e-commerce and social network companies in Vietnam and the USA. His e-commerce app for Nguyen Kim, one of the top regional retailers in the Asia-Pacific region, hit 4 million users in 2 years.</p><p>Zon has experience building for large, complex systems. He was a technical director at Viettel Group, where he designed software to manage its 50,000 employees and provide telecommunications services to 63 million subscribers across Asia, Africa and the Americas.</p>"
                 },
                 "trongDinh": {
@@ -3652,7 +3652,7 @@
         "whatDesc0": "\n      <p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.</p>\n \n    ",
         "whatDesc1": "<p>Earn interest before you even make an investing order. All deposits earn {interest}% APY by default, and can be withdrawn at any time. Compounded and paid every second. Stay flexible and enjoy zero downtime.</p>\n    ",
         "whatDesc2": "<p>Enjoy 24-7 customer service, unlimited free withdrawals, and a library of useful content to help you do more with your money. Constant is an open, alternative financial platform and you can <a href=\"https://github.com/constant-money\" target=\"_blank\">view all our code</a> as well as suggest features you’d like to see</p>",
-        "whatDesc3": "<p>We strictly require every loan to be 150% backed by collateral. For someone to borrow $10,000, they have to put up $15,000 in collateral value.</p>\n      <br />\n      <p>So if borrowers default, you don’t lose a cent.</p>\n      <br />\n      <a href=\"https://medium.com/@constantp2p/risk-and-our-p2p-lending-platform-what-you-should-know-1edcd5a4a5b3\" target=\"_blank\">How we protect investor funds</a>",
+        "whatDesc3": "\n<p>আমাদের কঠোরভাবে প্রতিটি লোন জামানত দ্বারা 150% ব্যাক করা প্রয়োজন। কেউ যদি 10,000 ডলার লোন নিতে চায় তারা 15,000 ডলার জামানত রাখতে হবে। </p>\n      <br />\n      <p>    সুতরাং ঋণগ্রহীতারা যদি ঋণ দিতে অক্ষম  হয় তবুও আপনি এক শতাংশও হারাবেন না।  </p>\n      <br />\n      <a href=\"https://medium.com/@constantp2p/risk-and-our-p2p-lending-platform-what-you-should-know-1edcd5a4a5b3\" target=\"_blank\">আমরা এভাবেই বিনিয়োগকারীদের তহবিল রক্ষা করে থাকি   </a>    ",
         "howItWorks": {
             "mainTitle": "How it works",
             "mainDesc": "<h5>The Constant algorithm matches investors with borrowers glad to pay their rates. It then manages the transfer of investor funds while securely escrowing borrower collateral. </h5>\n",

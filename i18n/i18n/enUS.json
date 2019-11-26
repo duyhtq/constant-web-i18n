@@ -30,7 +30,8 @@
             "confirmPassword": "Confirm Password",
             "wrongPassword": "Invalid Password",
             "placeholder": "Please set key for placeholder text",
-            "btn": "Please set key for button text"
+            "btn": "Please set key for button text",
+            "close": "Close"
         },
         "local": {
             "type": {
@@ -38,6 +39,10 @@
                 "sell": "Withdraw"
             }
         }
+    },
+    "lang": {
+        "en": "English",
+        "vn": "Tiếng Việt"
     },
     "validation": {
         "csv": "Please enter a valid file type (csv)."
@@ -120,6 +125,7 @@
         "blog": "Blog",
         "faqs": "FAQs",
         "affiliate": "Affiliate",
+        "developers": "Developers",
         "support": "Support",
         "telegramText": "Join the {link}",
         "email": "Email us at {email}",
@@ -173,7 +179,8 @@
                 "title": "Constant Telegram",
                 "link": "https://t.me/constantp2p"
             }
-        }
+        },
+        "content": "\n    <p class=\"bold\">Is CONST LLC a bank?</p>\n    <p>Please note that CONST LLC (hereafter referred to as “we”, “us”, or “Company”) is not a bank or deposit account, nor is it a regulated financial institution. Constant tokens are not financial instruments. No interest will be paid on any funds or other assets held in your Constant account and all assets directly held by us are not insured by us or, except as set forth below, any third party or any government agency.</p>\n    <p>We work with independent third-party financial institutions such as Prime Trust to provide cash management for the fiat deposits backing Constant tokens, ensuring that all Constant tokens in circulation are matched by an equal amount of fiat deposits. To achieve this, the fiat deposits backing Constant are held in one or more depository accounts at US banks or trust companies whose deposits may be insured.</p>\n    <p>Rate is current at the time of reading, and may be subject to change in the future.</p>\n    "
     },
     "lending": {
         "title": "Constant",
@@ -309,7 +316,7 @@
             "createdBankExisted": "Nice! This bank account has already been registered.",
             "trial_term_deposit_not_available": "The Constant introductory trial is only available for new users.\n",
             "not_pro_saving_user": "Sorry, we can only offer services in the USA to SEC accredited investors.",
-            "otpNotMatched": "Google authentication code not matched, please try again",
+            "otpNotMatched": "Google authentication code not matched, please try again.",
             "userDocumentCannotChange": "You cannot change KYC information. Please contact admin for support.",
             "missingUserDocuments": "Please upload required documents.",
             "userFirstNameInvalid": "FirstName is invalid",
@@ -321,8 +328,11 @@
             "systemError": "System error",
             "notEnoughConstantRepay": "Your Constant balance is not enough to pay this matched",
             "invalidStatus": "This order has been processed. Please refresh the page to see update!",
-            "need_kyc": "For your security, please verify your identity before making a investment.",
-            "external_api_error": "You send so many request, please wait and come back later"
+            "need_kyc": "For your security, please verify your identity before investing or withdrawing fiat (USD, for example). This step isn’t required for stablecoins.",
+            "external_api_error": "You send so many request, please wait and come back later",
+            "invalidCoupon": "Invalid coupon code",
+            "usedCoupon": "Coupon is used",
+            "prvMaxWithdraw": "Prv is max withdraw"
         },
         "withdrawGreaterThan": "The minimum withdrawal amount is {min}",
         "withdrawLessThanOrEqual": "The maximum withdrawal amount is {max}",
@@ -353,7 +363,8 @@
         "8001": "file invalid",
         "8002": "invalid file size",
         "8003": "invalid file type",
-        "8004": "submit file failed"
+        "8004": "submit file failed",
+        "9006": "Your wallet address invalid"
     },
     "form": {
         "required": "Required",
@@ -367,6 +378,7 @@
             "kycInformation": "KYC information",
             "myEmailPassword": "Email and password",
             "myInformation": "Account details",
+            "securities": "Account security",
             "sellOrders": "Sell Orders",
             "buyOrders": "Buy Orders",
             "bookingOrders": "Sale Orders",
@@ -705,13 +717,58 @@
             "changeFailed": "Please make sure you have typed in your old password correctly"
         },
         "twoFa": {
+            "googleAuth": "Google Authentication",
+            "sMSAuth": "SMS Authentication",
+            "facebookButton": "Login with Facebook",
+            "googleButton": "Login with Google",
+            "labelOff": "Turn on now?",
+            "labelOn": "Disable",
+            "noteOn": "<p>Looking good.</p>\n            <p>You’re using Google 2FA to protect your account with your phone as well as your password.</p>",
+            "noteOff": "<p>Yikes – you’re not using Google 2FA.</p>\n            <p>Google 2FA uses your phone as well as your password to protect your account.</p>\n              <p>We strongly recommend you enable 2FA to protect your account from fraud, identity theft, and other abuse.</p>\n                <p>Enable 2FA now to double the security protection on your account.</p>",
             "description2Fa": "Important actions (withdraw, transfer, etc.) will require you to enter a code via Google Authenticator or Authy.",
+            "invalidatePassword": "Password not matched, please try again",
+            "invalidateOtp": "Google authentication code not matched, please try again",
             "qrScanModal": {
                 "title": "Scan QR Code",
+                "step1": "Step 1",
+                "step2": "Step 2",
                 "description": "Please scan this code with Google Authenticator or Authy, then enter the code sent to you.",
+                "canNotScanCode": "If you are unable to scan the QR code, please enter this code manually into the app.",
                 "inputCode": "Enter password",
+                "inputAuthCode": "Google authentication code",
+                "facebook": "Sign-in with your facebook account.",
+                "requiredFacebook": "You must sign-in with your facebook account.",
+                "google": "Sign-in with your google account.",
+                "requiredGoogle": "You must sign-in with your google account",
+                "inputPassword": "Enter password",
+                "requiredPassword": "Password is required",
+                "requiredCode": "Google authentication code is required",
+                "message": "Code copied to clipboard.",
                 "close": "Close",
-                "submit": "Submit"
+                "submit": "Submit",
+                "cancel": "Cancel",
+                "confirm": "Confirm"
+            },
+            "disableModal": {
+                "title": "Disabled Google authenticator",
+                "description": "Please scan this code with Google Authenticator or Authy, then enter the code sent to you.",
+                "inputAuthCode": "Google authentication code",
+                "inputPassword": "Enter password",
+                "facebook": "Sign-in with your facebook account.",
+                "google": "Sign-in with your google account.",
+                "requiredFacebook": "You must sign-in with your facebook account.",
+                "requiredGoogle": "You must sign-in with your google account",
+                "requiredPassword": "Password is required",
+                "requiredCode": "Google authentication code is required",
+                "cancel": "Cancel",
+                "confirm": "Confirm"
+            },
+            "backupModal": {
+                "title": "Enabled Google authenticator",
+                "label": "Please save this Key on paper",
+                "description": "This Key will allow you to recover your Google Authenticator in case of phone loss.",
+                "message": "Code copied to clipboard.",
+                "ok": "Done"
             },
             "disable2FaModal": {
                 "title": "Disable 2FA",
@@ -853,6 +910,7 @@
                 "12": "Reward",
                 "13": "Interest",
                 "14": "Earned from referral flex",
+                "15": "Membership Reward",
                 "101": "Bonus",
                 "received": "Received"
             },
@@ -937,7 +995,12 @@
                 "destination": "Have the same destination transfer to:",
                 "trial": "Have received from trial users:",
                 "detail": "Risk detection"
-            }
+            },
+            "fiat": "Fiat",
+            "collateral": "Collateral",
+            "collateralAmount": "Amount: ",
+            "collateralPay": "Pay: ",
+            "description": "Description: "
         },
         "transferOrders": {
             "approve": "Approve",
@@ -1143,6 +1206,7 @@
                 "totalInterestEarned": "Interest earned",
                 "noRecord": "You have not made any investments yet.",
                 "getListFailed": "Sorry, something went wrong. Please try again.",
+                "createdDate": "Created Date",
                 "amount": "Principal",
                 "interest": "Interest to date",
                 "totalInterest": "Total interest",
@@ -1179,7 +1243,7 @@
                 "payOffLoanTitle": "Payoff Loan",
                 "allStatus": "All",
                 "termStatusFilter": {
-                    "pending": "Deposit pending",
+                    "pending": "Pending",
                     "matching": "Matching",
                     "matched": "Matched",
                     "closed": "Closed",
@@ -1191,15 +1255,17 @@
                     "pending": "Matching",
                     "closed": "Done",
                     "rejected": "Closed",
-                    "pending_kyc": "Deposit pending",
+                    "pending_kyc": "Pending",
                     "matched": "Matched",
                     "matching": "Matching",
                     "cancelled": "Closed",
-                    "transferred_fiat": "Deposit pending",
+                    "transferred_fiat": "Pending",
                     "partially_cancelled": "Partially cancelled",
                     "approving": "Approving",
-                    "transferring_fiat": "Deposit pending",
-                    "": ""
+                    "transferring_fiat": "Pending",
+                    "closed_soon": "Matched",
+                    "": "",
+                    "picked": "Pending"
                 },
                 "interestInfo": {
                     "header": {
@@ -1248,7 +1314,17 @@
                 "autoTopup": "Auto top up",
                 "autoRenew": "Auto reinvest",
                 "autoRenewDesc": "Tired of manual labour? Turn this on to automatically reinvest at the same interest rate & term!",
+                "autoRenewLoan": "Auto renew",
+                "autoRenewLoanDesc": "Tired of manual labour? Turn this on to automatically re-loan at the same interest rate & term!",
                 "dialog": {
+                    "payment": {
+                        "caption": "Payment required.",
+                        "amount": "Amount",
+                        "label": "Transfer to address",
+                        "message": "Address has been copied!",
+                        "description": "To repay your loan, please transfer {amount} {currency} to the address above.",
+                        "ok": "Close"
+                    },
                     "autoTopup": {
                         "messageConfirm": {
                             "true": "Are you sure you want to turn off auto top-up? Your collateral will be liquidated if it falls to {LiqPer}%.",
@@ -1259,6 +1335,22 @@
                             "false": "Turn auto top up off successfully"
                         },
                         "autoTopUpCollateralFailed": {
+                            "true": "Turn auto top up on failed",
+                            "false": "Turn auto top up off failed"
+                        },
+                        "confirm": "Yes",
+                        "cancel": "No"
+                    },
+                    "autoRenew": {
+                        "messageConfirm": {
+                            "true": "Are you sure you want to turn off auto renew?",
+                            "false": "When you repay your loan, your collateral balance will be used to secure a new loan order at the same amount, interest rate, and term."
+                        },
+                        "autoRenewCollateralSuccess": {
+                            "true": "Turn auto renew on successfully",
+                            "false": "Turn auto renew off successfully"
+                        },
+                        "autoRenewCollateralFailed": {
                             "true": "Turn auto top up on failed",
                             "false": "Turn auto top up off failed"
                         },
@@ -1488,6 +1580,7 @@
             "reward": "Reward",
             "rewardWithdraw": "Withdraw",
             "date": "Date",
+            "upToNow": "Up to Now",
             "status": {
                 "0": "Pending",
                 "1": "Done",
@@ -1520,6 +1613,7 @@
         "prices": "Pricing & Service times",
         "blog": "Blog",
         "accountActivities": "Account Activity",
+        "memberShip": "Membership",
         "login": {
             "popupTitle": "Welcome to Constant.",
             "title": "Hi there.",
@@ -1603,7 +1697,9 @@
             "registerSuccessfully": "Success! Welcome to Constant. We’ve sent a verification email to your inbox.",
             "agreementAction": "User Agreement and Privacy Policy.",
             "registerFailed": "Failed while creating your account, please try again",
-            "referrerReferralCode": "Your referrer's referral code: {code}"
+            "referrerReferralCode": "Your referrer's referral code: {code}",
+            "promotionCode": "Promotion Code",
+            "promotionCodeRequired": "Please input Promotion Code"
         },
         "userLogin": {
             "balance": "Balance",
@@ -1614,6 +1710,11 @@
             "transfer": "Transfer",
             "history": "History",
             "shareAndEarn": "Share & Earn"
+        },
+        "account": {
+            "currentBalance": "Current Balance",
+            "interestRate": "Interest Rate",
+            "estimatedValue": "Estimated Value"
         }
     },
     "landingPage": {
@@ -2084,7 +2185,7 @@
             "subintroTitle3": "Always reliable.",
             "subintroDesc3": "Unlike other digital currencies, Constant keeps a stable value. This means you can get the equivalent of 1 USD for 1 Constant. In any location, at any time.",
             "backToNewOrder": "Another transfer",
-            "goHistory": "Go to Orders and Transactions",
+            "goHistory": "Orders and Transactions",
             "components": {
                 "orderInfo": {
                     "title": "Transfer confirmation",
@@ -2110,6 +2211,7 @@
                 "eos": "To an EOS address",
                 "tomo": "To a TOMO address"
             },
+            "maxBalance": "Max transfer",
             "yourBalance": "Your balance",
             "validateMaxInput": "Please make sure your balance is sufficient.",
             "validateMaxInputBalanceZero": "Please make sure your balance is sufficient.",
@@ -2172,6 +2274,13 @@
             },
             "title": "Borrow the way you want",
             "subTitle": "\n<h2>Set your own rates.</h2>\n<h2>Borrow against 60+ cryptocurrencies.</h2>\n<h2>Get cash for crypto without needing to sell.</h2>\n<h6>Get the funds you need at rates you’re willing to pay. All your collateral is securely escrowed and will be automatically returned to you when the loan is repaid.</h6>      ",
+            "intro": {
+                "desc": {
+                    "1": "Secure escrow",
+                    "2": "No credit checks",
+                    "3": "Repay anytime"
+                }
+            },
             "headLine": "Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.",
             "exchange": {
                 "maxRateTooltip": "This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.",
@@ -2189,6 +2298,7 @@
                 "endDateLabel": "End date",
                 "collateralNote": "For this coin, loans will take up to 24 hours to be granted, repaid, or topped up.",
                 "collateralNoteFee": "Fee: {fee} {currency} (1%)",
+                "collateralNoteMatchedFee": "Fee: 1%",
                 "collateralNoteTotal": "You will receive: {total} {currency}",
                 "collateralNoteDGXExtraFees": "Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.",
                 "usingStaking": "Pay less on your loan through staking",
@@ -2331,7 +2441,7 @@
                 "collateralAddress": "Collateral Address",
                 "extraRate": "Your total rate will be {rate}% effect from {date}",
                 "exchangeRates": "Exchange rates: 1 {symbol}/{value} USD",
-                "createdDate": "Created at",
+                "createdDate": "Created Date",
                 "endTerm": "Term ends",
                 "principal": "Principal",
                 "interests": "Interest",
@@ -2394,7 +2504,9 @@
                     "liquidatePending": "Liquidation In Process",
                     "liquidateChainPending": "Liquidate Chain Pending",
                     "liquidateDone": "Liquidate Done",
-                    "liquidateFailed": "Liquidate Failed"
+                    "liquidateFailed": "Liquidate Failed",
+                    "payoffPrvPending": "Payoff Pending",
+                    "payPrvPending": "Payoff Pending"
                 },
                 "mapStatus2": {
                     "pending": "Pending",
@@ -2436,8 +2548,11 @@
                 "totalRepayment": "Total repayment",
                 "totalPayment": "Total Payment",
                 "repaymentByCollateral": "Do you want to repay with collateral?",
+                "repaymentMethod": "Payment method: ",
                 "willPayCollateral": "Collateral to be repaid",
                 "willReturnCollateral": "Collateral to be returned",
+                "repayAddress": "Repay address",
+                "copyMessage": "Address has been copied!",
                 "errorRemainCollateral": "You can not to get the remaining collateral back at the moment",
                 "errorRemainCollateralHtml": "\n          Please wait for assistance, or contact us at <a href=mailto:hello@myconstant.com\">hello@myconstant.com</a>",
                 "errorCollateralNotEnoughHtml": "Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.",
@@ -2460,7 +2575,8 @@
                     "collateralValue": "Collateral value",
                     "createdDate": "Created",
                     "dueDate": "Due",
-                    "collateralValueDesc": "This represents your collateral value as a percentage of your loan. It accounts for the interest accrued so far, as well as the repayment fee should you choose to repay today. If it falls to 110%, your collateral will be liquidated, and the difference refunded to you."
+                    "collateralValueDesc": "This represents your collateral value as a percentage of your loan. It accounts for the interest accrued so far, as well as the repayment fee should you choose to repay today. If it falls to 110%, your collateral will be liquidated, and the difference refunded to you.",
+                    "repayAddress": "Repay Address"
                 }
             },
             "advice": {
@@ -3163,6 +3279,13 @@
             "quote3": "The 'fringe' benefits are the best part - my friends and business partners in different countries can all get accounts easily, and you can transfer money between them for free. It's actually much more than just saving.",
             "author3": "Veronica",
             "title3": "Freelancer, citizen of the world"
+        },
+        "intro": {
+            "desc": {
+                "1": "Fully secured by collateral",
+                "2": "Compounded & paid every second",
+                "3": "Unlimited free withdrawals"
+            }
         }
     },
     "yourSaving": {
@@ -3259,7 +3382,7 @@
         "banner": {
             "title": "<h2>Set your own rates.</h2>\n <h2>No minimum capital.</h2>\n <h2>Invest only in secured loans.</h2>\n </span>\n <br />\n <h5>\n Your investments are fully backed by borrower collateral. Unmatched portions earn an automatic 5% APY, and can be withdrawn anytime.\n </h5>",
             "title1": "\n        <h1>Experience <span class=textSuccess\">fully secured</span> peer-to-peer lending.</h1>",
-            "subTitle": "Welcome to better saving, borrowing, and making the most of your money. Open to anyone in the world with an internet connection.",
+            "subTitle": "Your investments are fully backed by borrower collateral and smart contracts. Unmatched portions earn an automatic 5% APY, and can be withdrawn anytime.",
             "cta": "Get started",
             "ctaDesc": "It's free.",
             "invest": {
@@ -3293,7 +3416,25 @@
         },
         "howItWorks": {
             "title": "How it works.",
-            "desc": "The Constant algorithm matches investors with borrowers glad to pay their rates. It then manages the transfer of investor funds while securely escrowing borrower collateral."
+            "desc": "The Constant algorithm matches investors with borrowers glad to pay their rates. It then manages the transfer of investor funds while securely escrowing borrower collateral.",
+            "content": {
+                "1": {
+                    "title": "1. Investor",
+                    "desc": "Investors deposit any amount and choose the interest rate they want to earn."
+                },
+                "2": {
+                    "title": "2. Secure escrow",
+                    "desc": "Borrower collateral is securely escrowed in either a smart contract (ETH only), web wallet, or cold wallet."
+                },
+                "3": {
+                    "title": "3. Borrower",
+                    "desc": "Borrowers choose how much interest they want to pay, and put down collateral equal to 150% of what they want to borrow."
+                },
+                "4": {
+                    "title": "4. Constant P2P Lending Platform",
+                    "desc": "The Constant algorithm matches investors and borrowers on their chosen rates and terms."
+                }
+            }
         },
         "whyItBetter": {
             "title": "Why it’s better.",
@@ -3402,7 +3543,7 @@
         "text": "Questions? Call us at {phone}.",
         "newTitle": "\n      <h6>Questions? Let's get on a call.</h6>\n      <h6>Set up a time <a href=\"http://calendly.com/justinconstant\" target=\"_blank\">here</a>.</h6>",
         "phone": {
-            "vn": "+84 36 656 2949",
+            "vn": "+84 34 362 8061",
             "us": "+1 844 201 7242",
             "hk": "+852 8191-5657"
         },
@@ -3451,7 +3592,7 @@
                     "name": "Vietnam",
                     "address1": "139 Hong Ha Street",
                     "address2": "Ho Chi Minh City",
-                    "phone": "+84 36 656 2949"
+                    "phone": "+84 34 362 8061"
                 },
                 "eu": {
                     "name": "Malta",
@@ -3523,6 +3664,21 @@
                     "name": "Dung Tran",
                     "position": "Scalability",
                     "description": "<p>Dung works on the consensus & scalability algorithms at Constant. His current focus is on increasing transaction throughput while preserving consensus properties. Dung has extensive research and practical experience in distributed systems, computer networks, and game theory, making him the perfect candidate for designing and implementing consensus and scalability mechanisms at Constant.</p><p>Dung also lectures at the National University of Vietnam. As well as teaching courses on distributed systems, Dung has published several papers on bandwidth measurement and estimation, and is the author of two textbooks, Operation Systems and Computer Networks.  He holds a PhD in computer science from the University of Texas.</p>"
+                },
+                "nguyenBui": {
+                    "name": "Nguyen Bui",
+                    "position": "Head of Growth",
+                    "description": "\n            <p>Nguyen is in charge of Constant Growth hacking.  He has 14 years of experience in marketing and business development in Vietnam, Singapore and global crypto market. Previously, he was Director of marketing and partnership at TomoChain and Business leader at Infinity Blockchain Labs.</p>\n            <p>Nguyen hold MBA degree from Nanyang Technological University in Singapore and Bachelor of Engineering at Hanoi University of Science and Technology.</p>"
+                },
+                "chris": {
+                    "name": "Chris Roper",
+                    "position": "Communications Manager",
+                    "description": "\n            <p>Chris leads comms and content for the Constant growth team. Before joining Constant, Chris spent five years as a freelance copywriter for various blockchain, finance, and technology firms. Prior to that, Chris wrote for Octopus Energy, a renewable energy startup in London, helping the British public navigate a notoriously complex industry.</p>\n            <p>Chris believes the right words can inspire positive change and has dedicated his career to helping people improve their lives through technology. At Constant, Chris writes useful content, clear communications, and relatable advice that helps customers do more with their money.</p>\n          "
+                },
+                "peter": {
+                    "name": "Peter Upton",
+                    "position": "Social Media Manager",
+                    "description": "\n            <p>Peter is Constant’s community liaison. He runs social media and promotes the Constant brand as well as major collaborations and partnerships on the platform. Peter has a Bachelor’s Degree in Journalism from Indiana University, specializing in advertising and public relations.</p>\n            <p>Peter has run social media for a major university in the US and worked on experiential marketing for brands like Heineken, McVities, and Nickelodeon. He previously spent one year teaching creative advertising at Yitong college in China.</p>\n          "
                 }
             }
         },
@@ -3543,7 +3699,12 @@
     "home1": {
         "lendingSection": {
             "intro": {
-                "content": "\n<h6>Invest the way you want</h6>\n<h2>Set your own rates.</h2>\n <h2>No minimum capital.</h2>\n <h2>Invest only in secured loans.</h2>\n <br />\n <h6>\n Your investments are fully backed by borrower collateral. Unmatched portions earn an automatic 5% APY, and can be withdrawn anytime.\n </h6>"
+                "content": "\n<h6>Invest the way you want</h6>\n<h2>Set your own rates.</h2>\n <h2>No minimum capital.</h2>\n <h2>Invest only in secured loans.</h2>\n <br />\n <h6>\n Your investments are fully backed by borrower collateral. Unmatched portions earn an automatic 5% APY, and can be withdrawn anytime.\n </h6>",
+                "desc": {
+                    "1": "Fully secured by collateral",
+                    "2": "Your own rates and terms",
+                    "3": "24/7 customer service"
+                }
             },
             "form": {
                 "text1": "Set your own lending terms",
@@ -3555,7 +3716,9 @@
                 "btn1": "Invest now",
                 "textLogin": "Login",
                 "textRegister": "Register",
+                "or": "or",
                 "btn2": "to invest now",
+                "deposit": "to deposit now",
                 "btnBorrow": "to borrow now",
                 "btnVerify": "Verify now",
                 "btnTrial": "Get started",
@@ -3621,6 +3784,7 @@
                 "btnConfirm": "Confirm",
                 "btnBack": "Back",
                 "zelleTitle": "\n            <p className=bold\">The quickest way is via <strong>Zelle</strong>.</p>",
+                "zelleDesc": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n          <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n        ",
                 "zelle1": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n        ",
                 "zelle": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <br /><br />\n          <p>Please include the email address associated with your Constant account in the notes section.</p>\n          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n        ",
                 "bankChosenMessage1": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n          <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n        ",
@@ -3716,7 +3880,7 @@
             "title": "Customer Success Stories",
             "customer1": "<div><h5 class=darkblue4\">Constant is our preferred solution for cross-border transactions. Paying international suppliers and clients is much less of a hassle now",
             "customer2": "<div> <h5 class=darkblue4\">E-commerce provider of technology powered office solutions We just started using Constant to automate payroll to our employees in the US",
-            "customer3": "customer3"
+            "customer3": ""
         },
         "why": {
             "title": "Why Constant?"
@@ -3877,7 +4041,9 @@
     },
     "modules": {
         "faqs": {
-            "title": "Top questions from users"
+            "title": "Top questions from users",
+            "viewAll": "View all",
+            "hide": "Hide"
         }
     },
     "proLending": {
@@ -3905,6 +4071,7 @@
             "matched": "Time"
         },
         "balances": {
+            "collateralBalances": "Coin balance",
             "title": "Balances",
             "titleDesc": "All investment and collateral deposits will show here.",
             "withdraw": "Withdraw",
@@ -3997,16 +4164,24 @@
                 "collateralLabel": "Collateral required",
                 "collateralDesc": "To secure your loan, please deposit 150% of the loan value in collateral.\n",
                 "collateralRequiredDesc": "To secure your loan, please deposit {value}% of the loan value in collateral.\n",
-                "walletAddressLabel": "Returning {symbol} wallet address",
-                "returningWalletAddressLabel": "Returning address",
-                "walletAddressDesc": "This is the wallet that will receive the returned collateral when repayment is made.\n",
-                "walletAlias": "0x687C906b2....8bd9369242e",
                 "maxRate": "Interest (APR)",
                 "minTerm": "Term (Days)\n",
                 "maxRateTooltip": "This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.",
                 "minTermTooltip": "This is how long you want to borrow for.",
                 "buttonText": "BORROW",
-                "loginButton": "Login or Register to borrow"
+                "loginButton": "Login or Register to borrow",
+                "amountRequired": "Amount is required to make a borrow!",
+                "amountMin": "The minimum amount that you can borrow is {amount}",
+                "collateralRequired": "Collateral amount is required to make a borrow!",
+                "rateRequired": "Interest rate is required to make a borrow!",
+                "rateMax": "Interest rate must be less than {rate}%",
+                "collateralNoteFee": "Fee: {fee} {currency} (1%)",
+                "collateralNoteMatchedFee": "Fee: 1%",
+                "collateralNoteTotal": "Total loan received: {total} {currency}",
+                "usingStaking": "Pay less on your loan through staking",
+                "usingStakingMobile": "Pay less with staking",
+                "usingStakingDesc": "Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.",
+                "stakingMinAmount": "stake amount must be great than {minVal} {currency}"
             },
             "createdSuccess": "Borrow order successfully created",
             "errorMsgs": {
@@ -4113,9 +4288,16 @@
         "desc": "Open an account and get a $10 bonus straight into your account",
         "action": "Get $10"
     },
+    "borrowHeader": {
+        "desc": "Get cash or stablecoins for a $50 Thanksgiving reward",
+        "action": "Borrow now",
+        "ruleDesc": "New customers only. Promotion starts 00:00 GMT 11/21/19 and ends 23:59 GMT 11/28/19. Available rewards: $10 (minimum loan $1,000), $20 (minimum loan $2,000), and $50 (minimum loan $5,000). Minimums apply to single loans only"
+    },
     "menuMobile": {
         "btnSignIn": "Sign in",
         "account": "Account",
+        "history": "History",
+        "membership": "Membership",
         "btnDeposit": "Deposit",
         "btnReferral": "<div class=textLeft\"><small>Share & Earn</small><div>Money</div></div>",
         "btnTransfer": "Transfer",
@@ -4138,7 +4320,10 @@
         "wallet": "Wallet",
         "team": "The Team",
         "security": "Security",
-        "signout": "Sign out"
+        "signout": "Sign out",
+        "goBack": "Go back",
+        "aboutYou": "About You",
+        "accountActivity": "Account Activity"
     },
     "airdrop": {
         "endedTitle": "The Constant STARdrop campaign has now ended (October 24 2019, 10:00 AM GMT+7). We’ve reached the limit of 10,000 STAR, and thank you all for your support.",
@@ -4261,6 +4446,7 @@
                 "addressDesc": "Receiving crypto wallet address",
                 "maxAmount": "Your amount must be less than {maxAmount} {symbol}.",
                 "withdrawFailed": "Something went wrong. Please try again.",
+                "withdrawAddressFailed": "Your wallet address invalid. Please try again.",
                 "withdrawSuccess": "Your un-taking was completed successfully."
             },
             "withdraw": {
@@ -4271,6 +4457,7 @@
                 "addressDesc": "Receiving crypto wallet address",
                 "maxAmount": "Your amount must be less than {maxAmount} {symbol}.",
                 "withdrawFailed": "Something went wrong. Please try again.",
+                "withdrawAddressFailed": "Your wallet address invalid. Please try again.",
                 "withdrawSuccess": "Your withdrawal was completed successfully."
             },
             "submit": "Submit",
@@ -4354,7 +4541,12 @@
             }
         }
     },
+    "ourPartners": {
+        "title": "Our Partners",
+        "desc": "We are working closely with"
+    },
     "ourPress": {
+        "title": "Our Press",
         "press": {
             "press1": {
                 "name": "Hacker Noon",
@@ -4386,50 +4578,6 @@
             "content": "We’re proud to feature in many prominent finance and technology publications. From news to reviews, find out what the journalists, pundits, and experts have to say about the Constant peer-to-peer lending platform."
         }
     },
-    "ourPartner": {
-        "partner": {
-            "partner1": {
-                "name": "%%%.ourPartner.partner.partner1.name%%%",
-                "desc": "%%%.ourPartner.partner.partner1.desc%%%"
-            },
-            "partner2": {
-                "name": "%%%.ourPartner.partner.partner2.name%%%",
-                "desc": "%%%.ourPartner.partner.partner2.desc%%%"
-            },
-            "partner3": {
-                "name": "%%%.ourPartner.partner.partner3.name%%%",
-                "desc": "%%%.ourPartner.partner.partner3.desc%%%"
-            },
-            "partner4": {
-                "name": "%%%.ourPartner.partner.partner4.name%%%",
-                "desc": "%%%.ourPartner.partner.partner4.desc%%%"
-            },
-            "partner5": {
-                "name": "%%%.ourPartner.partner.partner5.name%%%",
-                "desc": "%%%.ourPartner.partner.partner5.desc%%%"
-            },
-            "partner6": {
-                "name": "%%%.ourPartner.partner.partner6.name%%%",
-                "desc": "%%%.ourPartner.partner.partner6.desc%%%"
-            },
-            "partner7": {
-                "name": "%%%.ourPartner.partner.partner7.name%%%",
-                "desc": "%%%.ourPartner.partner.partner7.desc%%%"
-            },
-            "partner8": {
-                "name": "%%%.ourPartner.partner.partner8.name%%%",
-                "desc": "%%%.ourPartner.partner.partner8.desc%%%"
-            },
-            "partner9": {
-                "name": "%%%.ourPartner.partner.partner9.name%%%",
-                "desc": "%%%.ourPartner.partner.partner9.desc%%%"
-            }
-        },
-        "desc": {
-            "title": "%%%.ourPartner.desc.title%%%",
-            "content": "%%%.ourPartner.desc.content%%%"
-        }
-    },
     "collateralBalance": {
         "balance": "Balance",
         "coin": "Coin",
@@ -4453,6 +4601,78 @@
         "tabs": {
             "collaterals": "Collaterals",
             "staking": "Stake"
+        }
+    },
+    "developers": {
+        "menu": {
+            "constantAPI": "Constant API",
+            "accountResource": "Account resource",
+            "loanResource": "Loan resource",
+            "investmentResource": "Investment resource"
+        },
+        "content": {
+            "title": "Let’s do great things together",
+            "desc": "Build. Customize. Automate. Do it all with our REST API.",
+            "getStart": "Get started now",
+            "block1": {
+                "title": "Why use our API?",
+                "desc": "Whether you’re an institutional partner or want to whitelabel our tech, our API opens new ways to interact with and exploit the Constant platform.\n          <li>Launch your own whitelabel DeFi product.</li>\n          <li>Add lending to your product suite.</li>\n          <li>Verify and authenticate customers.</li>\n          <li>Automate lending strategies.</li>\n          <li>Support a vast number of digital assets.</li>\n          <li>Add extra utility to your platform or project.</li>\n        Our API lets you program new software, services, and products without spending a fortune on engineering your own tech. Instead, seamlessly interface with our platform to offer everything we do and more.\n        "
+            },
+            "block2": {
+                "title": "What can you do with it?",
+                "desc": "\n          <h5 class=\"margin-0\">Here’s a brief overview of our API services.</h5> \n          <strong>Invest</strong>, <strong>Borrow</strong>, and <strong>Deposit</strong>\n             <li>Browse our open order book. Give your customers access to the best deals in our P2P lending market.</li>\n             <li>Submit customized lending orders. Put customers in the driving seat with flexible rates and terms.</li>\n             <li>Earn interest on fiat and stablecoin deposits. Reward customers with a bank-beating interest rate on deposits, compounded and paid every second.</li> \n          <h5>View balances and withdraw</h5>\n             <li>Browse deposit history. Help your customers keep track of their spend.</li>\n             <li>View coin and fiat balances. Give customers insight into their digital assets and liquidity.</li> \n             <li>Withdraw cryptocurrencies and fiat. Support withdrawal of multiple assets, including USD, crypto, and USD-backed stablecoins.</li> \n          <h5>Onboard new customers</h5>\n             <li>Perform KYC checks. Verify the identity of customers to comply with AML (Anti Money Laundering) regulations.</li>\n             <li>Verify accounts. Reduce spam and improve the quality of your customer database.</li>\n             <li>Authenticate anyone. Help protect customer security and preserve the integrity of your platform through 2FA protocols.</li> \n        "
+            }
+        }
+    },
+    "testimonials": {
+        "title": "Let’s get to know each other better",
+        "desc": "Transparency is important to us. Below, you’ll find reviews, testimonials, case studies, and other important information so you can use our platform with confidence.",
+        "viewAll": "View All"
+    },
+    "memberShip": {
+        "intro": {
+            "title": "Membership Rewards",
+            "details": "Get exclusive platform benefits the more you invest or borrow"
+        },
+        "caption": "Membership",
+        "expiredDate": "Your will expired in {date}",
+        "remaining": "{type} ${value} in {date} days",
+        "borrow": "Borrow",
+        "invest": "Invest",
+        "investOrBorrow": "Invest or Borrow",
+        "or": "Or",
+        "keepLevel": "{type} ${value} to keep your level",
+        "getLevelDate": "From {date}",
+        "title": {
+            "silver": "Silver",
+            "gold": "Gold",
+            "platinum": "Platinum"
+        },
+        "get": {
+            "silver": "Get 100 CONST",
+            "gold": "Get 1 STAR",
+            "platinum": "Get 2 STAR"
+        },
+        "take": {
+            "silver": "Take 100 CONST",
+            "gold": "Take 1 STAR",
+            "platinum": "Take 2 STAR"
+        },
+        "desc": {
+            "silver": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} cashback when you become a Silver member.</p>\n              <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped}.</p>\n              <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>",
+            "gold": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} when you become a Gold member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>\n              <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped}.</p>\n              <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>",
+            "platinum": "<h4>What you get:</h4>\n                 <p><i class=\"fal fa-check\"></i> {cashback} when you become a Platinum member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>\n                <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped} of the LTV.</p>\n                <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>"
+        },
+        "history": {
+            "title": "History",
+            "level": "Get level",
+            "reward": "Get reward",
+            "date": "Date"
+        },
+        "rewardType": {
+            "reward": "Start",
+            "fiat": "CONST",
+            "null": "N/A"
         }
     }
 }

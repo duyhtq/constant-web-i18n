@@ -30,7 +30,8 @@
             "confirmPassword": "Xác nhận mật khẩu",
             "wrongPassword": "Mật khẩu không hợp lệ",
             "placeholder": "Hãy đặt khoá cho phần giữ chỗ văn bản",
-            "btn": "Hãy đặt khoá cho nút văn bản"
+            "btn": "Hãy đặt khoá cho nút văn bản",
+            "close": "Close"
         },
         "local": {
             "type": {
@@ -38,6 +39,10 @@
                 "sell": "Rút"
             }
         }
+    },
+    "lang": {
+        "en": "English",
+        "vn": "Tiếng Việt"
     },
     "validation": {
         "csv": "Hãy nhập loại tệp hợp lệ (csv)."
@@ -120,6 +125,7 @@
         "blog": "Blog",
         "faqs": "Câu hỏi thường gặp",
         "affiliate": "Tiếp thị liên kết",
+        "developers": "Nhà phát triển",
         "support": "Hỗ trợ",
         "telegramText": "Tham gia {link}",
         "email": "Email cho chúng tôi tại {email}",
@@ -132,7 +138,7 @@
         "investorAgreement": "Thoả thuận nhà đầu tư",
         "kycGuidelines": "Hướng dẫn KYC",
         "contactUs": "Liên hệ chúng tôi:",
-        "referral": "Chia rẻ & Nhận tiền",
+        "referral": "Chia sẻ & Nhận tiền",
         "paymentGateway": "Cổng thanh toán",
         "phone": {
             "us": {
@@ -145,7 +151,7 @@
             },
             "vn": {
                 "title": "Việt Nam:",
-                "phone": "+84 36 656 2949"
+                "phone": "+84 34 362 8061"
             },
             "malta": {
                 "title": "Malta:",
@@ -173,7 +179,8 @@
                 "title": "Constant Telegram",
                 "link": "https://t.me/constantp2p"
             }
-        }
+        },
+        "content": "\n    <p class=\"bold\">Is CONST LLC a bank?</p>\n    <p>Please note that CONST LLC (hereafter referred to as “we”, “us”, or “Company”) is not a bank or deposit account, nor is it a regulated financial institution. Constant tokens are not financial instruments. No interest will be paid on any funds or other assets held in your Constant account and all assets directly held by us are not insured by us or, except as set forth below, any third party or any government agency.</p>\n    <p>We work with independent third-party financial institutions such as Prime Trust to provide cash management for the fiat deposits backing Constant tokens, ensuring that all Constant tokens in circulation are matched by an equal amount of fiat deposits. To achieve this, the fiat deposits backing Constant are held in one or more depository accounts at US banks or trust companies whose deposits may be insured.</p>\n    <p>Rate is current at the time of reading, and may be subject to change in the future.</p>\n    "
     },
     "lending": {
         "title": "Constant",
@@ -309,7 +316,7 @@
             "createdBankExisted": "Tài khoản ngân hàng đã được đăng ký!",
             "trial_term_deposit_not_available": "Bản dùng thử giới thiệu Constant chỉ dành cho người dùng mới.",
             "not_pro_saving_user": "Xin lỗi, chúng tôi chỉ cung cấp dịch vụ tại Mỹ cho nhà đầu tư được SEC công nhận.",
-            "otpNotMatched": "Vui lòng kiểm tra, OTP không hợp lý, hãy thử lại",
+            "otpNotMatched": "Google authentication code not matched, please try again.",
             "userDocumentCannotChange": "Bạn không thể thay đổi thông tin KYC. Vui lòng liên hệ admin để được hỗ trợ.",
             "missingUserDocuments": "Vui lòng tải lên các tài liệu cần thiết.\n \n",
             "userFirstNameInvalid": "Tên không hợp lệ",
@@ -321,8 +328,11 @@
             "systemError": "Lỗi hệ thống",
             "notEnoughConstantRepay": "Số dư Constant của bạn không đủ để thực hiện thao tác này",
             "invalidStatus": "Lệnh này đang được xử lý. Vui lòng làm mới trang để xem cập nhật!",
-            "need_kyc": "Để bảo mật, hãy xác minh danh tính của bạn trước khi đầu tư.",
-            "external_api_error": "Bạn gửi quá nhiều đề nghị, vui lòng chờ và quay lại sau"
+            "need_kyc": "For your security, please verify your identity before investing or withdrawing fiat (USD, for example). This step isn’t required for stablecoins.",
+            "external_api_error": "Bạn gửi quá nhiều đề nghị, vui lòng chờ và quay lại sau",
+            "invalidCoupon": "Invalid coupon code",
+            "usedCoupon": "Coupon is used",
+            "prvMaxWithdraw": "Prv is max withdraw"
         },
         "withdrawGreaterThan": "Lượng rút tối thiểu là {min}",
         "withdrawLessThanOrEqual": "Lượng rút tối đa là {max}",
@@ -353,7 +363,8 @@
         "8001": "Tập tin không hợp lệ.",
         "8002": "Dung lượng của tập tin phải nhỏ hơn 1.2 MB.",
         "8003": "Định dạng tập tin không phù hợp.",
-        "8004": "Xảy ra lỗi khi tải tập tin lên. Xin vui lòng thử lại."
+        "8004": "Xảy ra lỗi khi tải tập tin lên. Xin vui lòng thử lại.",
+        "9006": "Your wallet address invalid"
     },
     "form": {
         "required": "Đã yêu cầu",
@@ -367,6 +378,7 @@
             "kycInformation": "Thông tin KYC",
             "myEmailPassword": "Email và mật khẩu",
             "myInformation": "Chi tiết tài khoản",
+            "securities": "Account security",
             "sellOrders": "Lệnh bán",
             "buyOrders": "Lệnh mua",
             "bookingOrders": "Lệnh giảm giá",
@@ -705,13 +717,58 @@
             "changeFailed": "Hãy chắc chắn bạn đã nhập đúng mật khẩu cũ"
         },
         "twoFa": {
+            "googleAuth": "Google Authentication",
+            "sMSAuth": "SMS Authentication",
+            "facebookButton": "Login with Facebook",
+            "googleButton": "Login with Google",
+            "labelOff": "Turn on now?",
+            "labelOn": "Disable",
+            "noteOn": "<p>Looking good.</p>\n            <p>You’re using Google 2FA to protect your account with your phone as well as your password.</p>",
+            "noteOff": "<p>Yikes – you’re not using Google 2FA.</p>\n            <p>Google 2FA uses your phone as well as your password to protect your account.</p>\n              <p>We strongly recommend you enable 2FA to protect your account from fraud, identity theft, and other abuse.</p>\n                <p>Enable 2FA now to double the security protection on your account.</p>",
             "description2Fa": "Hoạt động quan trọng (rút, chuyển,...) yêu cầu bạn nhập mật khẩu qua Google Authenticator hoặc Authy.",
+            "invalidatePassword": "Password not matched, please try again",
+            "invalidateOtp": "Google authentication code not matched, please try again",
             "qrScanModal": {
                 "title": "Quét mã QR",
-                "description": "Vui lòng quét mã QR này bằng Google Authenticator hoặc Authy, rồi nhập mật khẩu được gửi đến.",
+                "step1": "Step 1",
+                "step2": "Step 2",
+                "description": "Please scan this code with Google Authenticator or Authy, then enter the code sent to you.",
+                "canNotScanCode": "If you are unable to scan the QR code, please enter this code manually into the app.",
                 "inputCode": "Nhập mật khẩu",
+                "inputAuthCode": "Google authentication code",
+                "facebook": "Sign-in with your facebook account.",
+                "requiredFacebook": "You must sign-in with your facebook account.",
+                "google": "Sign-in with your google account.",
+                "requiredGoogle": "You must sign-in with your google account",
+                "inputPassword": "Enter password",
+                "requiredPassword": "Password is required",
+                "requiredCode": "Google authentication code is required",
+                "message": "Code copied to clipboard.",
                 "close": "Đóng",
-                "submit": "Gửi"
+                "submit": "Gửi",
+                "cancel": "Cancel",
+                "confirm": "Confirm"
+            },
+            "disableModal": {
+                "title": "Disabled Google authenticator",
+                "description": "Please scan this code with Google Authenticator or Authy, then enter the code sent to you.",
+                "inputAuthCode": "Google authentication code",
+                "inputPassword": "Enter password",
+                "facebook": "Sign-in with your facebook account.",
+                "google": "Sign-in with your google account.",
+                "requiredFacebook": "You must sign-in with your facebook account.",
+                "requiredGoogle": "You must sign-in with your google account",
+                "requiredPassword": "Password is required",
+                "requiredCode": "Google authentication code is required",
+                "cancel": "Cancel",
+                "confirm": "Confirm"
+            },
+            "backupModal": {
+                "title": "Enabled Google authenticator",
+                "label": "Please save this Key on paper",
+                "description": "This Key will allow you to recover your Google Authenticator in case of phone loss.",
+                "message": "Code copied to clipboard.",
+                "ok": "Done"
             },
             "disable2FaModal": {
                 "title": "Vô hiệu hoá 2FA",
@@ -853,6 +910,7 @@
                 "12": "Phần thưởng",
                 "13": "Lãi suất",
                 "14": "Kiếm tiền từ chương trình giới thiệu Flex",
+                "15": "Membership Reward",
                 "101": "Điểm thưởng",
                 "received": "Đã nhận"
             },
@@ -937,7 +995,12 @@
                 "destination": "Có cùng điểm chuyển khoản đến: ",
                 "trial": "Đã nhận từ người dùng thử:",
                 "detail": "Điều tra rủi ro"
-            }
+            },
+            "fiat": "Fiat",
+            "collateral": "Collateral",
+            "collateralAmount": "Amount: ",
+            "collateralPay": "Pay: ",
+            "description": "Description: "
         },
         "transferOrders": {
             "approve": "Chấp nhận",
@@ -1143,6 +1206,7 @@
                 "totalInterestEarned": "Lãi suất nhận được",
                 "noRecord": "Bạn vẫn chưa có khoản đầu tư nào",
                 "getListFailed": "Xin lỗi, có lỗi xảy ra. Vui lòng thử lại.",
+                "createdDate": "Created Date",
                 "amount": "Tiền gốc",
                 "interest": "Lãi suất đến nay",
                 "totalInterest": "Tổng lãi suất",
@@ -1179,7 +1243,7 @@
                 "payOffLoanTitle": "Khoản vay hoàn trả",
                 "allStatus": "Tất cả",
                 "termStatusFilter": {
-                    "pending": "Nạp đang chờ xử lý",
+                    "pending": "Pending",
                     "matching": "Đang khớp lệnh",
                     "matched": "Đã khớp",
                     "closed": "Đã đóng",
@@ -1191,15 +1255,17 @@
                     "pending": "Đang khớp lệnh",
                     "closed": "Hoàn tất",
                     "rejected": "Đã đóng",
-                    "pending_kyc": "Nạp đang chờ xử lý",
+                    "pending_kyc": "Pending",
                     "matched": "Đã khớp",
                     "matching": "Đang khớp lệnh",
                     "cancelled": "Đã đóng",
-                    "transferred_fiat": "Việc nạp đang chờ xử lý",
+                    "transferred_fiat": "Pending",
                     "partially_cancelled": "Huỷ một phần",
                     "approving": "Đang chấp thuận",
-                    "transferring_fiat": "Việc nạp đang chờ xử lý",
-                    "": ""
+                    "transferring_fiat": "Pending",
+                    "closed_soon": "Đã khớp",
+                    "": "",
+                    "picked": "Pending"
                 },
                 "interestInfo": {
                     "header": {
@@ -1248,7 +1314,17 @@
                 "autoTopup": "Tự động top up",
                 "autoRenew": "Tự động tái đầu tư",
                 "autoRenewDesc": "Mệt mỏi vì thao tắc bằng tay? Bật phần này để tự động tái đầu tư với cùng mức lãi suất & thời hạn!",
+                "autoRenewLoan": "Auto renew",
+                "autoRenewLoanDesc": "Tired of manual labour? Turn this on to automatically re-loan at the same interest rate & term!",
                 "dialog": {
+                    "payment": {
+                        "caption": "Payment required.",
+                        "amount": "Amount",
+                        "label": "Transfer to address",
+                        "message": "Address has been copied!",
+                        "description": "To repay your loan, please transfer {amount} {currency} to the address above.",
+                        "ok": "Close"
+                    },
                     "autoTopup": {
                         "messageConfirm": {
                             "true": "Bạn có chắc muốn tắt tự động top-up? Tài sản thế chấp của bạn sẽ được đổi ra tiền nếu giá trị giảm tới {LiqPer}%.",
@@ -1264,6 +1340,22 @@
                         },
                         "confirm": "Có",
                         "cancel": "Không"
+                    },
+                    "autoRenew": {
+                        "messageConfirm": {
+                            "true": "Are you sure you want to turn off auto renew?",
+                            "false": "When you repay your loan, your collateral balance will be used to secure a new loan order at the same amount, interest rate, and term."
+                        },
+                        "autoRenewCollateralSuccess": {
+                            "true": "Turn auto renew on successfully",
+                            "false": "Turn auto renew off successfully"
+                        },
+                        "autoRenewCollateralFailed": {
+                            "true": "Turn auto top up on failed",
+                            "false": "Turn auto top up off failed"
+                        },
+                        "confirm": "Yes",
+                        "cancel": "No"
                     },
                     "withdrawAccount": {
                         "title": "Khoản đầu tư",
@@ -1482,12 +1574,13 @@
             "balance": "{name} tài khoản: {balance} {symbol} và phần thưởng tài khoản: {reward} {symbol}",
             "matched": "Khớp: {amount} {symbol}",
             "withdraw": "Rút tiền",
-            "withdrawReward": "Rút tiền",
+            "withdrawReward": "Withdraw",
             "staking": "Stake",
-            "unStaking": "Huỷ Stake",
+            "unStaking": "Unstake",
             "reward": "Phần thưởng",
-            "rewardWithdraw": "Rút tiền",
+            "rewardWithdraw": "Withdraw",
             "date": "Ngày",
+            "upToNow": "Cho đến nay",
             "status": {
                 "0": "Đang chờ",
                 "1": "Hoàn thành",
@@ -1520,6 +1613,7 @@
         "prices": "Chi phí & thời gian dịch vụ",
         "blog": "Blog",
         "accountActivities": "Hoạt động tài khoản",
+        "memberShip": "Membership",
         "login": {
             "popupTitle": "Chào mừng đến với Constant.",
             "title": "Xin chào",
@@ -1603,7 +1697,9 @@
             "registerSuccessfully": "Thành công! Chào mừng tới Constant. Chúng tôi đã gửi email xác minh tới hộp thư đến của bạn.",
             "agreementAction": "Thoả thuận sử dụng và Chính sách bảo mật.",
             "registerFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
-            "referrerReferralCode": "Mã người được giới thiệu:{code}"
+            "referrerReferralCode": "Mã người được giới thiệu:{code}",
+            "promotionCode": "Promotion Code",
+            "promotionCodeRequired": "Please input Promotion Code"
         },
         "userLogin": {
             "balance": "Số dư",
@@ -1614,6 +1710,11 @@
             "transfer": "Chuyển",
             "history": "Lịch sử",
             "shareAndEarn": "Chia sẻ & Kiếm tiền"
+        },
+        "account": {
+            "currentBalance": "Current Balance",
+            "interestRate": "Interest Rate",
+            "estimatedValue": "Estimated Value"
         }
     },
     "landingPage": {
@@ -2084,7 +2185,7 @@
             "subintroTitle3": "Luôn đáng tin cậy.",
             "subintroDesc3": "Constant không bao giờ mất giá. Người dùng luôn có thể đổi 1 Constant sang USD vào bất cứ lúc nào, ở bất cứ đâu.",
             "backToNewOrder": "Thực hiện chuyển khoản mới",
-            "goHistory": "Đi đến Lệnh và Giao dịch",
+            "goHistory": "Orders and Transactions",
             "components": {
                 "orderInfo": {
                     "title": "Xác nhận chuyển khoản",
@@ -2110,6 +2211,7 @@
                 "eos": "Tới một địa chỉ EOS",
                 "tomo": "Tới một địa chỉ TOMO"
             },
+            "maxBalance": "Max transfer",
             "yourBalance": "Số dư của bạn",
             "validateMaxInput": "Vui lòng đảm bảo bạn có đủ số dư",
             "validateMaxInputBalanceZero": "Vui lòng đảm bảo bạn có đủ số dư",
@@ -2172,6 +2274,13 @@
             },
             "title": "Vay theo cách bạn muốn",
             "subTitle": "\n        <h2>Tự chọn kì hạn lãi suất.</h2>\n        <h2>Nhận tiền ngay mà không cần bán tiền mã hoá.</h2>\n        <h6>Nhận ngay số tiền bạn mong muốn với mức lãi suất bạn có thể trả. Tài sản thế chấp được đảm bảo trên escrow và sẽ được tự động trả lại ngay khi bạn hoàn trả khoản vay</h6>\n      ",
+            "intro": {
+                "desc": {
+                    "1": "Secure escrow",
+                    "2": "No credit checks",
+                    "3": "Repay anytime"
+                }
+            },
             "headLine": "Bạn muốn trả nợ thẻ tín dụng, viện phí hoặc tiền thuê nhà? Đơn giản chỉ cần nhập số lượng Constant bạn muốn vay và đặt cọc ETH, khoản vay Constant sẽ được giữ an toàn trong hợp đồng thông minh của Constant.",
             "exchange": {
                 "maxRateTooltip": "Đây là lãi suất bình quân năm (APR) mà bạn sẵn sàng trả cho khoản vay. Nếu có một nhà đầu tư sẵn sàng nhận lợi nhuận ít hơn, bạn sẽ trả lãi suất thấp hơn.",
@@ -2189,6 +2298,7 @@
                 "endDateLabel": "Ngày kết thúc",
                 "collateralNote": "Đối với đồng tiền này, các khoản vay sẽ mất tới 24 giờ để được cấp, hoàn trả hoặc nạp thêm.\n",
                 "collateralNoteFee": "Phí: {fee}{currency} (1%)",
+                "collateralNoteMatchedFee": "Fee: 1%",
                 "collateralNoteTotal": "Tổng khoản vay nhận được: {total} {currency}",
                 "collateralNoteDGXExtraFees": "Digix khấu trừ 0,13% khi nhận bất kỳ số tiền nào dưới dạng DGX, chúng tôi cần thêm khoản phí này để duy trì số tiền cho vay.\n",
                 "usingStaking": "Hoàn trả khoản vay ít hơn thông qua staking",
@@ -2331,7 +2441,7 @@
                 "collateralAddress": "Địa chỉ tài sản thế chấp",
                 "extraRate": "Lãi suất tổng hợp của bạn là {rate}% có hiệu lực từ ngày {date}",
                 "exchangeRates": "Tỷ giá: 1 {symbol}/{value} USD",
-                "createdDate": "Được tạo lúc",
+                "createdDate": "Created Date",
                 "endTerm": "Kỳ hạn kết thúc",
                 "principal": "Tiền gốc",
                 "interests": "Lãi suất",
@@ -2394,7 +2504,9 @@
                     "liquidatePending": "Thanh tiến đang diễn ra",
                     "liquidateChainPending": "Đang xử lý chuỗi thanh lý",
                     "liquidateDone": "Thanh toán hoàn thành",
-                    "liquidateFailed": "Thanh toán thất bại"
+                    "liquidateFailed": "Thanh toán thất bại",
+                    "payoffPrvPending": "Payoff Pending",
+                    "payPrvPending": "Payoff Pending"
                 },
                 "mapStatus2": {
                     "pending": "Đang chờ xử lý",
@@ -2436,8 +2548,11 @@
                 "totalRepayment": "Tổng số tiền hoản trả",
                 "totalPayment": "Tổng số tiền thanh toán",
                 "repaymentByCollateral": "Bạn có muốn thanh toán bằng tài sản thế chấp?",
+                "repaymentMethod": "Payment method: ",
                 "willPayCollateral": "Tài sản thế chấp được thanh toán là",
                 "willReturnCollateral": "Tài sản thế chấp được trả lại là",
+                "repayAddress": "Repay address",
+                "copyMessage": "Address has been copied!",
                 "errorRemainCollateral": "Bạn chưa thể nhận lại phần tài sản thế chấp còn lại ngay lúc này",
                 "errorRemainCollateralHtml": "          Xin vui lòng chờ sự hỗ trợ, hoặc liên lạc với chúng tôi tại <a href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>\n        ",
                 "errorCollateralNotEnoughHtml": "Giá trị tài sản thế chấp của bạn là {percent}% khoản vay. Đó là lý do tại sao bạn không thể thu lại quá mức.\n",
@@ -2460,7 +2575,8 @@
                     "collateralValue": "Giá trị thế chấp",
                     "createdDate": "Đã tạo",
                     "dueDate": "Ngày đáo hạn",
-                    "collateralValueDesc": "Điều này thể hiện giá trị tài sản thế chấp của bạn bằng bao nhiêu phần trăm của khoản vay. Nó chiếm phần lãi tích lũy cho đến nay, cũng như phí trả nợ mà bạn nên chọn để trả nợ ngay hôm nay. Nếu nó rơi xuống 110%, tài sản thế chấp của bạn sẽ được thanh lý, và phần chênh lệch được hoàn trả cho bạn.\n"
+                    "collateralValueDesc": "Điều này thể hiện giá trị tài sản thế chấp của bạn bằng bao nhiêu phần trăm của khoản vay. Nó chiếm phần lãi tích lũy cho đến nay, cũng như phí trả nợ mà bạn nên chọn để trả nợ ngay hôm nay. Nếu nó rơi xuống 110%, tài sản thế chấp của bạn sẽ được thanh lý, và phần chênh lệch được hoàn trả cho bạn.\n",
+                    "repayAddress": "Repay Address"
                 }
             },
             "advice": {
@@ -3163,6 +3279,13 @@
             "quote3": "Những tiện ích phụ của Constant hấp dẫn tôi nhiều hơn là lãi suất đầu tư hay vay thế chấp. Là một doanh nhân, Constant giúp tôi rất nhiều trong việc chuyển khoản quốc tế đến các đối tác. Gần như ngay lập tức và không mất phí. Tiện ích này có giá trị hơn nhiều một khoản đầu tư.",
             "author3": "Veronica",
             "title3": "Nghề nghiệp tự do, một công dân toàn cầu"
+        },
+        "intro": {
+            "desc": {
+                "1": "Fully secured by collateral",
+                "2": "Compounded & paid every second",
+                "3": "Unlimited free withdrawals"
+            }
         }
     },
     "yourSaving": {
@@ -3259,7 +3382,7 @@
         "banner": {
             "title": "<h2> Đặt mức lãi suất bạn muốn. </ h2>\n  <h2> Không có vốn tối thiểu. </ h2>\n  <h2> Chỉ đầu tư vào các khoản vay có bảo đảm. </ h2>\n  </span>\n  <br />\n  <h5>\n  Các khoản đầu tư của bạn được hỗ trợ hoàn toàn bằng tài sản thế chấp của người vay. Phần không được cho vay sẽ tự động nhận 5% lãi kép và có thể rút bất kỳ lúc nào. \n </h5>",
             "title1": "\n<h1>Trải nghiệm<span class=textSuccess\"> nền tảng cho vay ngang hàng</span>hoàn toàn đảm bảo</h1>      ",
-            "subTitle": "Chào mừng bạn đến với dịch vụ tiết kiệm, vay mượn và tận dụng tối đa giá trị của tiền của bạn. Chúng tôi phục vụ cho bất cứ ai trên thế giới, miễn là có kết nối Internet.",
+            "subTitle": "Your investments are fully backed by borrower collateral and smart contracts. Unmatched portions earn an automatic 5% APY, and can be withdrawn anytime.",
             "cta": "Bắt đầu",
             "ctaDesc": "Hoàn toàn miễn phí",
             "invest": {
@@ -3293,7 +3416,25 @@
         },
         "howItWorks": {
             "title": "Cơ chế hoạt động.",
-            "desc": "Nhà đầu tư có thể đầu tư không giới hạn với mức lãi suất mà họ mong muốn. Người cần vay vốn sẽ chọn mức lãi suất mà họ có thể trả và phải thế chấp tài sản trị giá 150% so với số tiền họ muốn vay. Một thuật toán ứng dụng hợp đồng thông minh được lập trình để tự động thực hiện toàn bộ quá trình kết nối nhà đầu tư và người cần vay vốn."
+            "desc": "Nhà đầu tư có thể đầu tư không giới hạn với mức lãi suất mà họ mong muốn. Người cần vay vốn sẽ chọn mức lãi suất mà họ có thể trả và phải thế chấp tài sản trị giá 150% so với số tiền họ muốn vay. Một thuật toán ứng dụng hợp đồng thông minh được lập trình để tự động thực hiện toàn bộ quá trình kết nối nhà đầu tư và người cần vay vốn.",
+            "content": {
+                "1": {
+                    "title": "1. Investor",
+                    "desc": "Investors deposit any amount and choose the interest rate they want to earn."
+                },
+                "2": {
+                    "title": "2. Secure escrow",
+                    "desc": "Borrower collateral is securely escrowed in either a smart contract (ETH only), web wallet, or cold wallet."
+                },
+                "3": {
+                    "title": "3. Borrower",
+                    "desc": "Borrowers choose how much interest they want to pay, and put down collateral equal to 150% of what they want to borrow."
+                },
+                "4": {
+                    "title": "4. Constant P2P Lending Platform",
+                    "desc": "The Constant algorithm matches investors and borrowers on their chosen rates and terms."
+                }
+            }
         },
         "whyItBetter": {
             "title": "Tính ưu việt của Constant",
@@ -3402,7 +3543,7 @@
         "text": "Có câu hỏi? Gọi chúng tôi tại {phone}",
         "newTitle": "\n<h6>Có câu hỏi? Hãy gọi điện cho chúng tôi.</h6>\n      <h6>Đặt lịch ở <a href=\"http://calendly.com/justinconstant\" target=\"_blank\">đây</a>.</h6>    ",
         "phone": {
-            "vn": "+84 36 656 2949",
+            "vn": "+84 34 362 8061",
             "us": "+1 844 201 7242",
             "hk": "+852 8191-5657"
         },
@@ -3451,7 +3592,7 @@
                     "name": "Việt Nam",
                     "address1": "139 Hồng Hà",
                     "address2": "TP. Hồ Chí Minh",
-                    "phone": "+84 36 656 2949"
+                    "phone": "+84 34 362 8061"
                 },
                 "eu": {
                     "name": "Malta",
@@ -3523,6 +3664,21 @@
                     "name": "Dũng Trần",
                     "position": "Phụ trách Scalability",
                     "description": "<p> Dũng chủ yếu làm về các thuật toán đồng thuận và khả năng mở rộng của Constant. Hiện anh đang tập trung vào việc làm tăng thông lượng giao dịch trong khi vẫn bảo đảm các thuộc tính đồng thuận. Dũng đặc biệt phù hợp với vai trò thiết kế và áp dụng các cơ thế đồng thuận và cơ chế mở rộng tại Constant vì anh có rất nhiều nghiên cứu và kinh nghiệm thực tiễn về các hệ thống phân tán, mạng máy tính và lí thuyết trò chơi.</p><p>Dũng có bằng tiến sĩ về khoa học máy tính tại đại học Texas và đang là một giảng viên của trường Đại học Quốc gia. Không chỉ chuyên giảng dạy về hệ thống phân tán, anh còn là tác giả của hai cuốn giáo trình về Vận hành hệ thống và Mạng máy tính và đã xuất bản nhiều công trình nghiên cứu về đo lường và ước tính băng thông.</p>"
+                },
+                "nguyenBui": {
+                    "name": "Nguyen Bui",
+                    "position": "Head of Growth",
+                    "description": "\n            <p>Nguyen is in charge of Constant Growth hacking.  He has 14 years of experience in marketing and business development in Vietnam, Singapore and global crypto market. Previously, he was Director of marketing and partnership at TomoChain and Business leader at Infinity Blockchain Labs.</p>\n            <p>Nguyen hold MBA degree from Nanyang Technological University in Singapore and Bachelor of Engineering at Hanoi University of Science and Technology.</p>"
+                },
+                "chris": {
+                    "name": "Chris Roper",
+                    "position": "Communications Manager",
+                    "description": "\n            <p>Chris leads comms and content for the Constant growth team. Before joining Constant, Chris spent five years as a freelance copywriter for various blockchain, finance, and technology firms. Prior to that, Chris wrote for Octopus Energy, a renewable energy startup in London, helping the British public navigate a notoriously complex industry.</p>\n            <p>Chris believes the right words can inspire positive change and has dedicated his career to helping people improve their lives through technology. At Constant, Chris writes useful content, clear communications, and relatable advice that helps customers do more with their money.</p>\n          "
+                },
+                "peter": {
+                    "name": "Peter Upton",
+                    "position": "Social Media Manager",
+                    "description": "\n            <p>Peter is Constant’s community liaison. He runs social media and promotes the Constant brand as well as major collaborations and partnerships on the platform. Peter has a Bachelor’s Degree in Journalism from Indiana University, specializing in advertising and public relations.</p>\n            <p>Peter has run social media for a major university in the US and worked on experiential marketing for brands like Heineken, McVities, and Nickelodeon. He previously spent one year teaching creative advertising at Yitong college in China.</p>\n          "
                 }
             }
         },
@@ -3543,7 +3699,12 @@
     "home1": {
         "lendingSection": {
             "intro": {
-                "content": "\n<h6>Đầu tư theo cách bạn muốn</h6>\n<h2>Tự thiết đặt lãi suất của bạn.</h2>\n <h2>Không có vốn tối thiểu.</h2>\n <h2>Chỉ đầu tư vào khoản vay đảm bảo.</h2>\n <br />\n <h6>\n Sự đầu tư của bạn hoàn toàn được đảm bảo bằng tài sản thế chấp của người vay. Phần chưa cho vay sẽ kiếm được 5% lãi kép và được rút bất kỳ lúc nào. \n </h6>"
+                "content": "\n<h6>Đầu tư theo cách bạn muốn</h6>\n<h2>Tự thiết đặt lãi suất của bạn.</h2>\n <h2>Không có vốn tối thiểu.</h2>\n <h2>Chỉ đầu tư vào khoản vay đảm bảo.</h2>\n <br />\n <h6>\n Sự đầu tư của bạn hoàn toàn được đảm bảo bằng tài sản thế chấp của người vay. Phần chưa cho vay sẽ kiếm được 5% lãi kép và được rút bất kỳ lúc nào. \n </h6>",
+                "desc": {
+                    "1": "Fully secured by collateral",
+                    "2": "Your own rates and terms",
+                    "3": "24/7 customer service"
+                }
             },
             "form": {
                 "text1": "Chọn kì hạn đầu tư",
@@ -3555,7 +3716,9 @@
                 "btn1": "Đầu tư ngay",
                 "textLogin": "Đăng nhập",
                 "textRegister": "Đăng ký",
+                "or": "or",
                 "btn2": "đầu tư ngay",
+                "deposit": "to deposit now",
                 "btnBorrow": "Vay ngay",
                 "btnVerify": "Xác minh ngay",
                 "btnTrial": "Bắt đầu ",
@@ -3621,6 +3784,7 @@
                 "btnConfirm": "Xác nhận",
                 "btnBack": "Trở lại",
                 "zelleTitle": "\n<p className=\"bold\">Sử dụng <strong>Zelle</strong> để được hỗ trợ nhanh nhất.</p>        ",
+                "zelleDesc": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n          <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n        ",
                 "zelle1": "          <p>Số lượng: {amount} USD</p>\n          <p>Gửi tới: <strong>finance@myconstant.com</strong></p>",
                 "zelle": "\n          <p>Số tiền: {amount} USD</p>\n          <p>Gửi tới: <strong>finance@myconstant.com</strong></p>\n          <p>Vui lòng bao gồm địa chỉ email được liên kết với tài khoản Constant của bạn trong phần ghi chú..</p>\n          <p>Nếu bạn chưa có Zelle, hoàn toàn có thể dùng email hoặc số điện thoại để đăng kí trên website hoặc ứng dụng di động của ngân hàng bạn đang sử dụng.</p>        ",
                 "bankChosenMessage1": "\n<p>Với chuyển khoản ngân hàng, chúng tôi có tài khoản ở hầu hết các ngân hàng lớn để giao dịch được thuận tiện.</p>\n          <p>Xin vui lòng chọn ngân hàng nào thuận tiện nhất cho bạn để giao dịch.</p>        ",
@@ -3716,7 +3880,7 @@
             "title": "Chia sẻ của khách hàng",
             "customer1": "      <div>\n        <h5 class=\"darkblue4\">\n          Constant là giải pháp ưa thích của chúng tôi cho các giao dịch xuyên biên giới. Trả tiền cho các nhà cung cấp và khách hàng quốc tế bây giờ ít rắc rối hơn và tiết kiệm chi phí hơn nhiều với Constant.\n        </h5>\n        <br /><h3 class=\"bold clearBottom\">Liz Nguyen</h3>\n        <p>CEO của Dropship Vendor Group, nhà cung cấp cho nhièu thương hiệu hàng đầu thế giới.</p>\n      </div>\n      ",
             "customer2": "      <div>\n        <h5 class=\"darkblue4\">\n          Nhà cung cấp thương mại điện tử về các giải pháp văn phòng hỗ trợ công nghệ. Chúng tôi mới bắt đầu sử dụng Constant để tự động hóa việc chuyển lương cho nhân viên của mình tại Mỹ, Việt Nam, Trung Quốc và Hà Lan. Nhân viên của chúng tôi thích có tùy chọn nắm giữ USD, và với Constant, họ không gặp vấn đề nào khi rút USD về đồng nội tệ quốc gia họ.\n        </h5>\n        <br /><h3 class=\"bold clearBottom\">Justin Lucas</h3>\n        <p>Tổng Giám đốc công ty Autonomous.</p>\n      </div>\n      ",
-            "customer3": "<div>\n       <h5 class = \"darkblue4\">\n               Tất cả các đối tác của tôi ở các quốc gia khác nhau đều có tài khoản một cách dễ dàng và quan trọng nhất - Constant đồng bộ hóa với hệ thống ngân hàng quốc gia để việc rút tiền rất đơn giản. Constant sử dụng dễ dàng, dễ tích hợp và đã giúp chúng tôi tiết kiệm được một khoản phí chuyển khoản quốc tế.\n        </h5>\n        <br /> <h3 class = \"bold ClearBottom\"> Veronica Tam </ h3>\n        <p> CEO của Vifah, nhà sản xuất đồ gỗ ngoài trời cho Walmart, Amazon, Wayfair và nhiều thương hiệu khác.</p>\n   </div>"
+            "customer3": ""
         },
         "why": {
             "title": "Tính ưu việt của Constant"
@@ -3877,7 +4041,9 @@
     },
     "modules": {
         "faqs": {
-            "title": "Những câu hỏi thường gặp"
+            "title": "Những câu hỏi thường gặp",
+            "viewAll": "View all",
+            "hide": "Hide"
         }
     },
     "proLending": {
@@ -3905,6 +4071,7 @@
             "matched": "Thời gian"
         },
         "balances": {
+            "collateralBalances": "Coin balance",
             "title": "Số dư",
             "titleDesc": "Tất cả các khoản đầu tư và thế chấp nạp vào được thể hiện ở đây.",
             "withdraw": "Rút",
@@ -3997,16 +4164,24 @@
                 "collateralLabel": "Thế chấp yêu cầu",
                 "collateralDesc": "Để đảm bảo khoản vay, xin vui lòng nạp thế chấp có giá trị bằng 150% giá trị khoản vay.",
                 "collateralRequiredDesc": "Để đảm bảo khoản vay, vui lòng nạp {value}% giá trị khoản vay bằng tài sản thế chấp.",
-                "walletAddressLabel": "Địa chỉ ví {symbol} của bạn",
-                "returningWalletAddressLabel": "Địa chỉ trả lại",
-                "walletAddressDesc": "Đây là ví sẽ nhận được tài sản thế chấp trả lại khi hoàn trả khoản vay được thực hiện.\n",
-                "walletAlias": "0x687C906b2....8bd9369242e\n",
                 "maxRate": "Lãi kép (APR)",
                 "minTerm": "Kì hạn (Ngày)",
                 "maxRateTooltip": "Đây là mức lãi kép mà bạn sẵn sàng trả cho khoản vay của mình. Nếu có nhà đầu tư chấp nhận khoản lợi nhuận nhỏ hơn, bạn sẽ chỉ phải trả mức lãi suất thấp hơn.",
                 "minTermTooltip": "Đây là kì hạn cho khoản tiền mà bạn muốn vay.",
                 "buttonText": "VAY",
-                "loginButton": "Đăng nhập hoặc Đăng ký để vay"
+                "loginButton": "Đăng nhập hoặc Đăng ký để vay",
+                "amountRequired": "Amount is required to make a borrow!",
+                "amountMin": "The minimum amount that you can borrow is {amount}",
+                "collateralRequired": "Collateral amount is required to make a borrow!",
+                "rateRequired": "Interest rate is required to make a borrow!",
+                "rateMax": "Interest rate must be less than {rate}%",
+                "collateralNoteFee": "Fee: {fee} {currency} (1%)",
+                "collateralNoteMatchedFee": "Fee: 1%",
+                "collateralNoteTotal": "Total loan received: {total} {currency}",
+                "usingStaking": "Pay less on your loan through staking",
+                "usingStakingMobile": "Pay less with staking",
+                "usingStakingDesc": "Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.",
+                "stakingMinAmount": "stake amount must be great than {minVal} {currency}"
             },
             "createdSuccess": "Tạo lệnh vay thành công",
             "errorMsgs": {
@@ -4113,9 +4288,16 @@
         "desc": "Mở một tài khoản và nhận tiền thưởng $ 10 vào thẳng tài khoản của bạn\n",
         "action": "Nhận $10"
     },
+    "borrowHeader": {
+        "desc": "Get cash or stablecoins for a $50 Thanksgiving reward",
+        "action": "Borrow now",
+        "ruleDesc": "New customers only. Promotion starts 00:00 GMT 11/21/19 and ends 23:59 GMT 11/28/19. Available rewards: $10 (minimum loan $1,000), $20 (minimum loan $2,000), and $50 (minimum loan $5,000). Minimums apply to single loans only"
+    },
     "menuMobile": {
         "btnSignIn": "Đăng nhập",
         "account": "Tài khoản",
+        "history": "History",
+        "membership": "Membership",
         "btnDeposit": "Nạp tiền",
         "btnReferral": "<div class=\"textLeft\"><small>Chia sẻ & Kiếm tiền</small><div>Tiền</div></div>\n",
         "btnTransfer": "Chuyển khoản",
@@ -4138,7 +4320,10 @@
         "wallet": "Ví",
         "team": "Đội ngũ",
         "security": "Bảo mật",
-        "signout": "Đăng xuất"
+        "signout": "Đăng xuất",
+        "goBack": "Go back",
+        "aboutYou": "About You",
+        "accountActivity": "Account Activity"
     },
     "airdrop": {
         "endedTitle": "Chiến dịch Constant STARdrop đã kết thúc (ngày 24 tháng 10 năm 2019, 10:00 AM GMT + 7). Chúng tôi đã đạt đến giới hạn 10.000 SAO và cảm ơn tất cả các bạn đã ủng hộ.\n \n",
@@ -4261,6 +4446,7 @@
                 "addressDesc": "Địa chỉ ví để nhận tiền mã hoá.",
                 "maxAmount": "Số tiền của bạn phải nhỏ hơn {maxAmount}{symbol}.",
                 "withdrawFailed": "Có lỗi xảy ra. Xin vui lòng thử lại.",
+                "withdrawAddressFailed": "Your wallet address invalid. Please try again.",
                 "withdrawSuccess": "Yêu cầu bỏ staking của bạn đã thực hiện thành công"
             },
             "withdraw": {
@@ -4271,6 +4457,7 @@
                 "addressDesc": "Địa chỉ ví để nhận tiền mã hoá.",
                 "maxAmount": "Số tiền của bạn phải nhỏ hơn {maxAmount}{symbol}.",
                 "withdrawFailed": "Có lỗi xảy ra. Xin vui lòng thử lại.",
+                "withdrawAddressFailed": "Your wallet address invalid. Please try again.",
                 "withdrawSuccess": "Rút tiền thành công."
             },
             "submit": "Gửi",
@@ -4354,7 +4541,12 @@
             }
         }
     },
+    "ourPartners": {
+        "title": "Our Partners",
+        "desc": "We are working closely with"
+    },
     "ourPress": {
+        "title": "Our Press",
         "press": {
             "press1": {
                 "name": "Hacker Noon",
@@ -4386,50 +4578,6 @@
             "content": "Chúng tôi tự hào có mặt trong nhiều ấn phẩm tài chính và công nghệ nổi bật, từ các tin tức cho đến những đánh giá, những tìm hiểu mà các nhà báo, chuyên gia nói về nền tảng cho vay ngang hàng Constant."
         }
     },
-    "ourPartner": {
-        "partner": {
-            "partner1": {
-                "name": "%%%.ourPartner.partner.partner1.name%%%",
-                "desc": "%%%.ourPartner.partner.partner1.desc%%%"
-            },
-            "partner2": {
-                "name": "%%%.ourPartner.partner.partner2.name%%%",
-                "desc": "%%%.ourPartner.partner.partner2.desc%%%"
-            },
-            "partner3": {
-                "name": "%%%.ourPartner.partner.partner3.name%%%",
-                "desc": "%%%.ourPartner.partner.partner3.desc%%%"
-            },
-            "partner4": {
-                "name": "%%%.ourPartner.partner.partner4.name%%%",
-                "desc": "%%%.ourPartner.partner.partner4.desc%%%"
-            },
-            "partner5": {
-                "name": "%%%.ourPartner.partner.partner5.name%%%",
-                "desc": "%%%.ourPartner.partner.partner5.desc%%%"
-            },
-            "partner6": {
-                "name": "%%%.ourPartner.partner.partner6.name%%%",
-                "desc": "%%%.ourPartner.partner.partner6.desc%%%"
-            },
-            "partner7": {
-                "name": "%%%.ourPartner.partner.partner7.name%%%",
-                "desc": "%%%.ourPartner.partner.partner7.desc%%%"
-            },
-            "partner8": {
-                "name": "%%%.ourPartner.partner.partner8.name%%%",
-                "desc": "%%%.ourPartner.partner.partner8.desc%%%"
-            },
-            "partner9": {
-                "name": "%%%.ourPartner.partner.partner9.name%%%",
-                "desc": "%%%.ourPartner.partner.partner9.desc%%%"
-            }
-        },
-        "desc": {
-            "title": "%%%.ourPartner.desc.title%%%",
-            "content": "%%%.ourPartner.desc.content%%%"
-        }
-    },
     "collateralBalance": {
         "balance": "Số dư",
         "coin": "Tiền",
@@ -4442,10 +4590,10 @@
         "rewardBalanceMobile": "Phần thưởng",
         "action": "Hành động",
         "withdraw": "Rút tiền",
-        "withdrawReward": "Rút tiền",
+        "withdrawReward": "Withdraw",
         "deposit": "Nạp tiền",
         "staking": "Stake",
-        "unStaking": "Bỏ stake",
+        "unStaking": "Unstake",
         "depositCollateralTitle": "Nộp tài sản thế chấp",
         "hideSmallBalance": "Ẩn Số dư nhỏ",
         "hideDesc": "Giá trị số dư là 0",
@@ -4453,6 +4601,78 @@
         "tabs": {
             "collaterals": "Thế chấp:",
             "staking": "Stake"
+        }
+    },
+    "developers": {
+        "menu": {
+            "constantAPI": "Constant API",
+            "accountResource": "Tài nguyên tài khoản",
+            "loanResource": "Tài nguyên vay",
+            "investmentResource": "Tài nguyên đầu tư"
+        },
+        "content": {
+            "title": "Hãy cũng nhau làm những điều vĩ đại",
+            "desc": "Xây dựng. Tùy chỉnh. Tự động hóa. Làm mọi thứ với API của chúng tôi.",
+            "getStart": "Bắt đầu bây giờ",
+            "block1": {
+                "title": "Tại sao nên sử dụng API của chúng tôi?",
+                "desc": "Cho dù bạn là đối tác tổ chức hay muốn sử dụng công nghệ của chúng tôi, API của chúng tôi sẽ mở ra những cách mới để tương tác và khai thác nền tảng Constant.\n           <li> Ra mắt sản phẩm DeFi của riêng bạn. </ li>\n           <li> Thêm cho vay vào bộ sản phẩm của bạn. </ li>\n           <li> Xác minh và xác thực khách hàng. </ li>\n           <li> Tự động hóa chiến lược cho vay. </ li>\n           <li> Hỗ trợ số lượng lớn tài sản kỹ thuật số. </ li>\n           <li> Thêm tiện ích bổ sung cho nền tảng hoặc dự án của bạn. </ li>\n         API của chúng tôi cho phép bạn lập trình phần mềm, dịch vụ và sản phẩm mới mà không tốn nhiều tiền vào vấn đề công nghệ. Thay vào đó, giao diện liền mạch với nền tảng của chúng tôi để cung cấp mọi thứ chúng tôi làm và hơn thế nữa."
+            },
+            "block2": {
+                "title": "Bạn có thể làm gì với nó?",
+                "desc": "          <h5 class = \"margin-0\"> Tổng quan ngắn gọn về các dịch vụ API của chúng tôi. </ h5>\n          <strong> Đầu tư </ strong>, <strong> Vay </ strong> và <strong> Gửi tiền </ strong>\n             <li> Duyệt sách đặt hàng mở của chúng tôi. Cung cấp cho khách hàng của bạn quyền truy cập vào các giao dịch tốt nhất trong thị trường cho vay P2P của chúng tôi. </ Li>\n             <li> Gửi đơn đặt hàng cho vay tùy chỉnh. Đặt khách hàng vào vị trí lái xe với mức giá và điều khoản linh hoạt. </ Li>\n             <li> Kiếm lãi từ tiền gửi tiền mặt và stablecoin. Thưởng cho khách hàng với lãi suất vượt ngân hàng đối với tiền gửi, gộp và trả mỗi giây. </ Li>\n          <h5> Xem số dư và rút tiền </ h5>\n             <li> Duyệt lịch sử tiền gửi. Giúp khách hàng của bạn theo dõi chi tiêu của họ. </ Li>\n             <li> Xem số dư crypto và tiền mặt. Cung cấp cho khách hàng cái nhìn sâu sắc về tài sản kỹ thuật số và thanh khoản của họ. </ Li>\n             <li> Rút tiền điện tử và tiền mặt. Hỗ trợ rút nhiều tài sản, bao gồm USD, tiền điện tử và stablecoin được USD hỗ trợ. </ Li>\n          <h5> Hỗ trợ khách hàng mới </ h5>\n             <li> Thực hiện kiểm tra KYC. Xác minh danh tính của khách hàng để tuân thủ các quy định của AML (Chống rửa tiền). </ Li>\n             <li> Xác minh tài khoản. Giảm thư rác và cải thiện chất lượng cơ sở dữ liệu khách hàng của bạn. </ Li>\n             <li> Xác thực bất cứ ai. Giúp bảo vệ an ninh khách hàng và bảo vệ tính toàn vẹn của nền tảng của bạn thông qua các giao thức 2FA. </ Li>"
+            }
+        }
+    },
+    "testimonials": {
+        "title": "Let’s get to know each other better",
+        "desc": "Transparency is important to us. Below, you’ll find reviews, testimonials, case studies, and other important information so you can use our platform with confidence.",
+        "viewAll": "View All"
+    },
+    "memberShip": {
+        "intro": {
+            "title": "Membership Rewards",
+            "details": "Get exclusive platform benefits the more you invest or borrow"
+        },
+        "caption": "Membership",
+        "expiredDate": "Your will expired in {date}",
+        "remaining": "{type} ${value} in {date} days",
+        "borrow": "Borrow",
+        "invest": "Invest",
+        "investOrBorrow": "Invest or Borrow",
+        "or": "Or",
+        "keepLevel": "{type} ${value} to keep your level",
+        "getLevelDate": "From {date}",
+        "title": {
+            "silver": "Silver",
+            "gold": "Gold",
+            "platinum": "Platinum"
+        },
+        "get": {
+            "silver": "Get 100 CONST",
+            "gold": "Get 1 STAR",
+            "platinum": "Get 2 STAR"
+        },
+        "take": {
+            "silver": "Take 100 CONST",
+            "gold": "Take 1 STAR",
+            "platinum": "Take 2 STAR"
+        },
+        "desc": {
+            "silver": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} cashback when you become a Silver member.</p>\n              <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped}.</p>\n              <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>",
+            "gold": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} when you become a Gold member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>\n              <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped}.</p>\n              <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>",
+            "platinum": "<h4>What you get:</h4>\n                 <p><i class=\"fal fa-check\"></i> {cashback} when you become a Platinum member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>\n                <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped} of the LTV.</p>\n                <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>"
+        },
+        "history": {
+            "title": "History",
+            "level": "Get level",
+            "reward": "Get reward",
+            "date": "Date"
+        },
+        "rewardType": {
+            "reward": "Start",
+            "fiat": "CONST",
+            "null": "N/A"
         }
     }
 }

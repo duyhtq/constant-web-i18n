@@ -100,7 +100,7 @@
                 "btn": "Đăng ký ngay"
             },
             "type11": {
-                "title": "<h3>Vay theo cách bạn muốn</h3>",
+                "title": "<h3>Vay theo cách của bạn</h3>",
                 "btn": "Đăng ký ngay"
             }
         },
@@ -264,20 +264,20 @@
             "expertDecs": "Thêm hình thức cho vay ngang hàng",
             "transfer": "Chuyển",
             "investFlex": {
-                "title": "Tiền pháp định Flex",
+                "title": "Không kì hạn",
                 "desc": "Lãi suất kép 5%/năm. An toàn tuyệt đối. Rút tiền ra bất cứ lúc nào."
             },
             "investCustom": {
-                "title": "Tuỳ chỉnh ",
-                "desc": "Tự chọn kì hạn và lãi suất. Đảm bảo tuyệt đối bởi tài sản thế chấp."
+                "title": "Có kì hạn",
+                "desc": "Tự chọn kì hạn và lãi suất. Đảm bảo an toàn tuyệt đối bởi tài sản thế chấp."
             },
             "investStaking": {
                 "title": "Staking crypto",
-                "desc": "5%-20% APY. Mức tối thiểu thấp. Rút mọi lúc."
+                "desc": "Lãi suất kép 5%-20%. Không yêu cầu số lượng tối thiểu. Rút coin về bất cứ lúc nào."
             },
             "borrowFiat": {
                 "title": "Vay thế chấp bằng tiền mã hoá",
-                "desc": "Lãi suất của bạn. Kỳ hạn của bạn. Không kiểm tra tín dụng."
+                "desc": "Tự chọn kì hạn và lãi suất. Không kiểm tra lịch sử tín dụng."
             }
         }
     },
@@ -2272,13 +2272,13 @@
                 "question10": "Điều gì xảy ra nếu tôi hoàn trả trễ?",
                 "answer10": "Thời gian ân hạn nhận thanh toán là 3 ngày sau khi thời hạn vay của bạn kết thúc. Vào ngày thứ 2 và thứ 3, bạn sẽ phải chịu một khoản phí trễ phạt là 10% trên tổng số tiền lãi đến hạn.\n \n"
             },
-            "title": "Vay theo cách bạn muốn",
-            "subTitle": "\n        <h2>Tự chọn kì hạn lãi suất.</h2>\n        <h2>Nhận tiền ngay mà không cần bán tiền mã hoá.</h2>\n        <h6>Nhận ngay số tiền bạn mong muốn với mức lãi suất bạn có thể trả. Tài sản thế chấp được đảm bảo trên escrow và sẽ được tự động trả lại ngay khi bạn hoàn trả khoản vay</h6>\n      ",
+            "title": "Vay thế chấp bằng tiền mã hoá.",
+            "subTitle": "\n        <h2>Tự chọn kì hạn và lãi suất.</h2>\n        <h2>Nhận tiền ngay mà không cần bán tiền mã hoá.</h2>\n        <h6>Nhận ngay số tiền bạn mong muốn với mức lãi suất bạn có thể trả. Tài sản thế chấp được đảm bảo trên escrow và sẽ được tự động trả lại ngay khi bạn hoàn trả khoản vay</h6>\n      ",
             "intro": {
                 "desc": {
-                    "1": "Secure escrow",
-                    "2": "No credit checks",
-                    "3": "Repay anytime"
+                    "1": "Bảo chứng an toàn",
+                    "2": "Không kiểm tra lịch sử tín dụng",
+                    "3": "Tất toán bất cứ lúc nào"
                 }
             },
             "headLine": "Bạn muốn trả nợ thẻ tín dụng, viện phí hoặc tiền thuê nhà? Đơn giản chỉ cần nhập số lượng Constant bạn muốn vay và đặt cọc ETH, khoản vay Constant sẽ được giữ an toàn trong hợp đồng thông minh của Constant.",
@@ -3057,7 +3057,7 @@
         "amountMustBeLargerThan": "Số lượng phải lớn hơn {min}{fiatCurrency}",
         "todayRate": "Lãi suất hôm nay",
         "todayRateValues": "Lãi suất kép {rate}%",
-        "howMuchDoYouWantToDeposit": "BẠN MUỐN CÓ THÊM BAO NHIÊU TIỀN? ",
+        "howMuchDoYouWantToDeposit": "BẠN MUỐN ĐẦU TƯ BAO NHIÊU? ",
         "formDesc": "Constant cất giữ tiền của bạn trong một hệ thống 20 ngân hàng, mỗi ngân hàng được bảo hiểm $250,000. Điều đó có nghĩa bạn được bảo hiểm tới $5,000,000.",
         "depositForWithdraw": "Xin vui lòng đảm bảo bạn có đủ số dư trong tài khoản để hoàn thành chuyển khoản.<br/>Để thực hiện chuyển khoản ${amount}, xin vui lòng nạp đủ số dư.",
         "warningCryptoBelowLimit": "Có thể sẽ tốn đến 30 phút để cập nhật tài khoản của bạn. Xin cảm ơn vì sự kiên nhẫn.",
@@ -3224,7 +3224,7 @@
         }
     },
     "deposit": {
-        "contentHtml": "\n<h6>Trải nghiệm nhiều hơn với tiền của bạn</h6>\n      <h2>Tận hưởng lợi nhận 50x tốt hơn</h2>\n      <h2>tài khoản tiết kiệm<sup>*</sup>.</h2>\n      <br />\n      <h6>Kiếm {interest}% APY trên bất kỳ tài khoản nào. Bạn gửi, Constant thay bạn cho vay, chúng tôi thay bạn cho vay, bạn nhận được lãi suất. Tất cả khoản vay được đảm bảo bởi tài sản thế chấp và bạn có thể rút miễn phí bất kỳ lúc nào. Tăng vốn mà không cần khoá vốn.</h6>\n      <br />\n<p><sup>*</sup>So sánh dựa trên dữ liệu từ <a href=https://www. valuepenguin. com/banking/average-bank-interest-rates\">ValuePenguin</a>.</p>    ",
+        "contentHtml": "\n<h6>Đầu tư không kì hạn</h6>\n      <h2>Lãi suất kép 5%/năm.</h2>\n      <br />\n      <h6>Nhận ngay {interest}% lãi suất kép trên mọi khoản tiền gửi. Tất cả được đảm bảo bởi tài sản thế chấp. Rút tiền về bất cứ lúc nào. Hoàn toàn miễn phí. </h6>\n<br />\n<h6>Tăng vốn dễ dàng. Không cần khoá vốn.</h6>\n      <br />    ",
         "learnMore": "Tìm hiểu thêm ở đây.",
         "title": "Tài khoản USD quốc tế của bạn.",
         "availableInVn": "Đã có mặt tại Việt Nam.",
@@ -3282,9 +3282,9 @@
         },
         "intro": {
             "desc": {
-                "1": "Fully secured by collateral",
-                "2": "Compounded & paid every second",
-                "3": "Unlimited free withdrawals"
+                "1": "Đảm bảo bởi tài sản thế chấp",
+                "2": "Lãi suất kép",
+                "3": "Miễn phí rút tiền"
             }
         }
     },
@@ -3381,8 +3381,8 @@
     "newHome": {
         "banner": {
             "title": "<h2> Đặt mức lãi suất bạn muốn. </ h2>\n  <h2> Không có vốn tối thiểu. </ h2>\n  <h2> Chỉ đầu tư vào các khoản vay có bảo đảm. </ h2>\n  </span>\n  <br />\n  <h5>\n  Các khoản đầu tư của bạn được hỗ trợ hoàn toàn bằng tài sản thế chấp của người vay. Phần không được cho vay sẽ tự động nhận 5% lãi kép và có thể rút bất kỳ lúc nào. \n </h5>",
-            "title1": "\n<h1>Trải nghiệm<span class=textSuccess\"> nền tảng cho vay ngang hàng</span>hoàn toàn đảm bảo</h1>      ",
-            "subTitle": "Your investments are fully backed by borrower collateral and smart contracts. Unmatched portions earn an automatic 5% APY, and can be withdrawn anytime.",
+            "title1": "\n<h1>Trải nghiệm<span class=\"darkorange4\">nền tảng cho vay ngang hàng</span>an toàn 100%.</h1>      ",
+            "subTitle": "Khoản đầu tư của bạn được đảm bảo hoàn toàn bởi tài sản thế chấp của người vay và hợp đồng thông minh trên blockchain. Số dư trong tài khoản tự động nhận lãi suất kép 5%/năm. Rút tiền ra bất cứ lúc nào.",
             "cta": "Bắt đầu",
             "ctaDesc": "Hoàn toàn miễn phí",
             "invest": {
@@ -3400,7 +3400,7 @@
             }
         },
         "crypto": {
-            "desc": "Tất cả các khoản vay và đầu tư trên nền tảng Constant được đảm bảo bởi FDIC, hợp đồng thông minh trên mạng Ethereum và tài sản thế chấp nên tuyệt đối an toàn."
+            "desc": "Tuyệt đối an toàn. Tất cả các khoản đầu tư và khoản vay đều được đảm bảo bởi tài sản thế chấp và hợp đồng thông minh."
         },
         "faqs": {
             "question1": "Hình thức cho vay ngang hàng là gì?",
@@ -3419,20 +3419,20 @@
             "desc": "Nhà đầu tư có thể đầu tư không giới hạn với mức lãi suất mà họ mong muốn. Người cần vay vốn sẽ chọn mức lãi suất mà họ có thể trả và phải thế chấp tài sản trị giá 150% so với số tiền họ muốn vay. Một thuật toán ứng dụng hợp đồng thông minh được lập trình để tự động thực hiện toàn bộ quá trình kết nối nhà đầu tư và người cần vay vốn.",
             "content": {
                 "1": {
-                    "title": "1. Investor",
-                    "desc": "Investors deposit any amount and choose the interest rate they want to earn."
+                    "title": "1. Nhà đầu tư",
+                    "desc": "Nhà đầu tư nạp tiền vào tài khoản, chọn mức lãi suất và kì hạn mong muốn."
                 },
                 "2": {
-                    "title": "2. Secure escrow",
-                    "desc": "Borrower collateral is securely escrowed in either a smart contract (ETH only), web wallet, or cold wallet."
+                    "title": "2. Bảo chứng an toàn (escrow)",
+                    "desc": "Tài sản thế chấp của người vay được giữ an toàn trên escrow vận hành bởi hợp đồng thông minh."
                 },
                 "3": {
-                    "title": "3. Borrower",
-                    "desc": "Borrowers choose how much interest they want to pay, and put down collateral equal to 150% of what they want to borrow."
+                    "title": "3. Người vay",
+                    "desc": "Người vay chọn mức lãi suất, kì hạn phù hợp và thế chấp 150% giá trị khoản vay."
                 },
                 "4": {
-                    "title": "4. Constant P2P Lending Platform",
-                    "desc": "The Constant algorithm matches investors and borrowers on their chosen rates and terms."
+                    "title": "4. Nền tảng cho vay ngang hàng Constant",
+                    "desc": "Thuật toán của Constant sẽ kết nối nhà đầu tư và người vay dựa theo lãi suất và kì hạn mong muốn."
                 }
             }
         },
@@ -3699,16 +3699,16 @@
     "home1": {
         "lendingSection": {
             "intro": {
-                "content": "\n<h6>Đầu tư theo cách bạn muốn</h6>\n<h2>Tự thiết đặt lãi suất của bạn.</h2>\n <h2>Không có vốn tối thiểu.</h2>\n <h2>Chỉ đầu tư vào khoản vay đảm bảo.</h2>\n <br />\n <h6>\n Sự đầu tư của bạn hoàn toàn được đảm bảo bằng tài sản thế chấp của người vay. Phần chưa cho vay sẽ kiếm được 5% lãi kép và được rút bất kỳ lúc nào. \n </h6>",
+                "content": "\n<h6>Đầu tư có kì hạn</h6>\n<h2>Tự chọn lãi suất và kì hạn.</h2>\n <h2>Không yêu cầu vốn tối thiểu.</h2>\n <h2>Được đảm bảo bởi tài sản thế chấp.</h2>\n <br />\n <h6>\n Các khoản đầu tư được đảm bảo an toàn tuyệt đối bởi tài sản thế chấp của người vay. Tài sản thế chấp phải có giá trị tối thiểu bằng 150% giá trị khoản vay.\n </h6>        ",
                 "desc": {
-                    "1": "Fully secured by collateral",
-                    "2": "Your own rates and terms",
-                    "3": "24/7 customer service"
+                    "1": "Đảm bảo bởi tài sản thế chấp",
+                    "2": "Tự chọn kì hạn và lãi suất",
+                    "3": "Hỗ trợ 24/7"
                 }
             },
             "form": {
-                "text1": "Chọn kì hạn đầu tư",
-                "text2": "Bạn muốn có được một người vay ngay lập tức?\n\nCho vay với lãi suất thị trường hiện tại là 10%. Hoặc tăng lãi suất bạn muốn và chờ đợi một lệnh khớp với người đi vay",
+                "text1": "Chọn điều khoản đầu tư",
+                "text2": "Đầu tư với mức lãi suất thị trường 10% để được khớp lệnh ngay. Tăng mức lãi suất có thể làm tăng thời gian khớp lệnh.",
                 "text3": "Chúng tôi tặng bạn một khoản đầu tư thử nghiệm trị giá 1,000 USD để trải nghiệm dịch vụ. Khi đáo hạn, chúng tôi sẽ thu hồi $,1000 lại, còn bạn được giữ toàn bộ phần lãi.",
                 "text4": "\n<h5>Một thao tác cuối cùng để sử dụng Constant.</h5>\n          <p>Vì lí do an ninh, bạn cần phải xác minh danh tính trước khi sử dụng Constant.</p>        ",
                 "text5": "Dùng thử miễn phí",
@@ -3716,9 +3716,9 @@
                 "btn1": "Đầu tư ngay",
                 "textLogin": "Đăng nhập",
                 "textRegister": "Đăng ký",
-                "or": "or",
+                "or": "hoặc",
                 "btn2": "đầu tư ngay",
-                "deposit": "to deposit now",
+                "deposit": "để đầu tư ngay",
                 "btnBorrow": "Vay ngay",
                 "btnVerify": "Xác minh ngay",
                 "btnTrial": "Bắt đầu ",
@@ -3726,10 +3726,10 @@
                 "btnKyc": "Xác minh danh tính để đầu tư",
                 "btnKyc1": "<a>Xác minh danh tính</a> để đầu tư",
                 "minRate": "Lãi suất tối thiểu",
-                "maxRate": "Lãi suất tối đa",
-                "maxTerm": "Độ dài kỳ hạn",
-                "minTerm": "Độ dài kỳ hạn",
-                "amount": "Số lượng",
+                "maxRate": "Lãi suất",
+                "maxTerm": "Kì hạn",
+                "minTerm": "Kì hạn",
+                "amount": "Số tiền",
                 "termMonth": "{month} Tháng",
                 "tooltip": {
                     "amount": "<p>Bạn muốn đầu tư bao nhiêu?</p>",
@@ -3779,7 +3779,7 @@
                 "backOrderBook": "Trở lại",
                 "confirmMessage": "Sau khi bạn đã thực hiện chuyển khoản, xin vui lòng bấm xác nhận.",
                 "confirmButton": "Xác nhận ",
-                "minRate": "Lãi suất tối thiểu",
+                "minRate": "Lãi suất",
                 "maxTerm": "Kì hạn tối đa",
                 "btnConfirm": "Xác nhận",
                 "btnBack": "Trở lại",
@@ -4065,7 +4065,7 @@
             "interestSpreadDesc": "Chênh lệch lãi suất là chênh lệch giữa lãi suất cho vay ra thấp nhất và lãi suất muốn vay vào cao nhất\n",
             "interestSpreadValues": "0.10%",
             "amount": "Số lượng (USD)",
-            "interest": "Lãi kép (APR)",
+            "interest": "Lãi suất (%/năm)",
             "term": "Kì hạn (Ngày)",
             "termValues": "{term} tháng",
             "matched": "Thời gian"
@@ -4105,7 +4105,7 @@
             "borrow": "vay",
             "side": "Bên cạnh",
             "amount": "Số lượng (USD)",
-            "interest": "Lãi suất (Lãi suất bình quân năm)",
+            "interest": "Lãi suất (%/năm)",
             "term": "Kì hạn (Ngày)",
             "date": "Đã tạo",
             "matched": "Đã khớp",
@@ -4118,7 +4118,7 @@
             "borrow": "vay",
             "side": "Bên cạnh",
             "amount": "Số lượng (USD)",
-            "interest": "Lãi suất (Lãi suất bình quân năm)",
+            "interest": "Lãi suất (%/năm)",
             "term": "Kì hạn (Ngày)",
             "date": "Đã tạo",
             "matched": "Đã khớp",
@@ -4143,7 +4143,7 @@
             "form": {
                 "title": "Đầu tư",
                 "amount": "Số lượng",
-                "interest": "Lãi suất (Lãi suất bình quân năm)",
+                "interest": "Lãi suất (%/năm)",
                 "term": "Kì hạn (Ngày)",
                 "termMonth": "{month}-Tháng",
                 "investButton": "ĐẶT LỆNH ĐẦU TƯ",
@@ -4164,7 +4164,7 @@
                 "collateralLabel": "Thế chấp yêu cầu",
                 "collateralDesc": "Để đảm bảo khoản vay, xin vui lòng nạp thế chấp có giá trị bằng 150% giá trị khoản vay.",
                 "collateralRequiredDesc": "Để đảm bảo khoản vay, vui lòng nạp {value}% giá trị khoản vay bằng tài sản thế chấp.",
-                "maxRate": "Lãi kép (APR)",
+                "maxRate": "Lãi suất (%/năm)",
                 "minTerm": "Kì hạn (Ngày)",
                 "maxRateTooltip": "Đây là mức lãi kép mà bạn sẵn sàng trả cho khoản vay của mình. Nếu có nhà đầu tư chấp nhận khoản lợi nhuận nhỏ hơn, bạn sẽ chỉ phải trả mức lãi suất thấp hơn.",
                 "minTermTooltip": "Đây là kì hạn cho khoản tiền mà bạn muốn vay.",
@@ -4424,7 +4424,7 @@
     },
     "staking": {
         "todayRate": "Lãi suất hôm nay",
-        "todayRateValues": "{rate}% lãi suất bình quân năm",
+        "todayRateValues": "Lãi suất {rate}%/năm",
         "howMuchDoYouWantToDeposit": "Bạn muốn stake bao nhiêu?",
         "depositNow": "Bắt đầu staking ngay",
         "depositWithAmount": "Bắt đầu staking {amount} {currency}",
@@ -4436,7 +4436,7 @@
         "cancel": "Huỷ",
         "starStaking": "Tạo staking",
         "stakingFromTitle": "Bắt đầu staking bây giờ",
-        "contentHtml": "        <h6>Stake và nhận lãi</h6>\n        <h2>Nhận lãi tới {reward}% lãi kép</h2>\n        <h2>bằng tiền mã hoá của bạn.</h2>\n        <br />\n       <h6>Tham gia hệ thống masternood để nhận đến {reward}% lãi kép. Lợi nhuậ được trả mỗi 30 giấy. Lượng stake tối thiểu nhỏ. Miễn phí. Rút bất kỳ lúc nào. Staking chưa bao giờ dễ dàng đến thế.</h6>\n        <br />\n",
+        "contentHtml": "\n<h6>Stake và nhận lãi</h6>\n        <h2>Nhận lãi suất {reward}%/năm</h2>\n        <h2>trên số tiền mã hoá stake.</h2>\n        <br />\n       <h6>Tham gia hệ thống masternood để nhận lãi suất đến {reward}%/năm. Lãi được trả mỗi 30 giây. Hoàn toàn Miễn phí. Rút tiền về bất kỳ lúc nào. Staking chưa bao giờ dễ dàng đến thế.</h6>\n        <br />    ",
         "withdrawFrom": {
             "unStaking": {
                 "title": "Bỏ stake",

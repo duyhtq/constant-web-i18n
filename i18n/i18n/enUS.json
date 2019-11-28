@@ -419,7 +419,7 @@
             "staking": "Staking history"
         },
         "wallet": {
-            "title": "Receive CONST or STAR here. Trying to deposit crypto collateral? Please do so from the Pro page ",
+            "title": "Receive CONST or STAR here. Trying to deposit crypto collateral? Please do so from the Coin Balance",
             "walletAddress": "Your wallet:"
         },
         "kyc": {

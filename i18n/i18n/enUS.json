@@ -3627,8 +3627,8 @@
                 },
                 "ningTan": {
                     "name": "Ning Tan",
-                    "position": "Communications",
-                    "description": "<p>Ning facilitates the conversation between product, user and community. Prior to Constant, Ning was the Director of Communications at Autonomous, where she loved helping people in over 60 countries find ways to work smarter.</p><p>Ning specializes in easing the adoption of disruptive tech. She has created voices for friendly IoT products, eager robots, decentralized applications, and a very clever brain from the US military. As a postgraduate at the University of Oxford, she examined how humans navigate traumatic periods in history and respond through storytelling, philosophy and innovation.</p>"
+                    "position": "Advisor",
+                    "description": "<p>Ning facilitates the conversation between product, user and community. Ning was the Director of Communications at Autonomous, where she loved helping people in over 60 countries find ways to work smarter.</p><p>Ning specializes in easing the adoption of disruptive tech. She has created voices for friendly IoT products, eager robots, decentralized applications, and a very clever brain from the US military. As a postgraduate at the University of Oxford, she examined how humans navigate traumatic periods in history and respond through storytelling, philosophy and innovation.</p>"
                 },
                 "tienNguyen": {
                     "name": "Tien Nguyen",
@@ -4436,7 +4436,7 @@
         "cancel": "Cancel",
         "starStaking": "Create staking",
         "stakingFromTitle": "Start staking now",
-        "contentHtml": "\n        <h6>Stake and earn</h6>\n        <h2>Get up to {reward}% APR</h2>\n        <h2>on your cryptocurrencies.</h2>\n        <br />\n        <h6>Join our masternode pool for up to {reward}% APR. Interest paid every 30 minutes. Low minimum stake. No fees. Withdraw anytime. Staking has never been this easy.</h6>\n        <br />\n    ",
+        "contentHtml": "\n        <h6>Stake and earn</h6>\n        <h2>Get up to {reward}% APR</h2>\n        <h2>on your cryptocurrencies.</h2>\n        <br />\n        <h6>Join our staking pool for up to {reward}% APR. Interest paid every 30 minutes. Low minimum stake. No fees. Withdraw anytime. Staking has never been this easy.</h6>\n        <br />\n    ",
         "withdrawFrom": {
             "unStaking": {
                 "title": "Unstake",

@@ -3394,7 +3394,7 @@
             },
             "borrow": {
                 "title": "Vay theo cách bạn muốn",
-                "num": "10.00%",
+                "num": "9.00%",
                 "cap": "Không giới hạn số tiền vay. Tự đặt mức lãi suất.",
                 "btn": "Vay"
             }
@@ -3708,11 +3708,11 @@
             },
             "form": {
                 "text1": "Chọn điều khoản đầu tư",
-                "text2": "Đầu tư với mức lãi suất thị trường 10% để được khớp lệnh ngay. Tăng mức lãi suất có thể làm tăng thời gian khớp lệnh.",
+                "text2": "Đầu tư với mức lãi suất thị trường 9% để được khớp lệnh ngay. Tăng mức lãi suất có thể làm tăng thời gian khớp lệnh.",
                 "text3": "Chúng tôi tặng bạn một khoản đầu tư thử nghiệm trị giá 1,000 USD để trải nghiệm dịch vụ. Khi đáo hạn, chúng tôi sẽ thu hồi $,1000 lại, còn bạn được giữ toàn bộ phần lãi.",
                 "text4": "\n<h5>Một thao tác cuối cùng để sử dụng Constant.</h5>\n          <p>Vì lí do an ninh, bạn cần phải xác minh danh tính trước khi sử dụng Constant.</p>        ",
                 "text5": "Dùng thử miễn phí",
-                "text6": "\n<p>\n            <span class=\"darkorange4 bold\">Muốn được kết nối ngay với người đi vay?</span> Đặt mức lãi suất dưới 10% để thực hiện đầu tư ngay. Với mức lãi suất cao hơn, bạn cần đợi người đi vay chấp nhận trả mức lãi bạn mong muốn để được kết nối.\n          </p>        ",
+                "text6": "\n<p>\n            <span class=\"darkorange4 bold\">Muốn được kết nối ngay với người đi vay?</span> Đặt mức lãi suất dưới 9% để thực hiện đầu tư ngay. Với mức lãi suất cao hơn, bạn cần đợi người đi vay chấp nhận trả mức lãi bạn mong muốn để được kết nối.\n          </p>        ",
                 "btn1": "Đầu tư ngay",
                 "textLogin": "Đăng nhập",
                 "textRegister": "Đăng ký",

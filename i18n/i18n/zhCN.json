@@ -110,7 +110,7 @@
             "address2": "Redlands, CA 92373, USA"
         },
         "getSocial": "社交媒体",
-        "titleFoundation": "基金会",
+        "titleFoundation": "About",
         "titleConstant": "买 Constant",
         "career": "职业",
         "about": "关于",
@@ -137,7 +137,7 @@
         "borrowerAgreement": "借方协议",
         "investorAgreement": "投资者协议",
         "kycGuidelines": "KYC 教程",
-        "contactUs": "联系我们:",
+        "contactUs": "Contact us",
         "referral": "分享和赚取$",
         "paymentGateway": "支付口",
         "phone": {
@@ -332,6 +332,7 @@
             "external_api_error": "您发送了太多要求，请稍候再试",
             "invalidCoupon": "Invalid coupon code",
             "usedCoupon": "Coupon is used",
+            "restrictedEmail": "Email is restricted",
             "prvMaxWithdraw": "Prv is max withdraw"
         },
         "withdrawGreaterThan": "最小提款金额是 {min}",
@@ -850,6 +851,8 @@
             "currency": "货币",
             "noHistoryData": "在此获取Constant",
             "fee": "手续费",
+            "received": "received",
+            "withdrawals": "Withdrawals",
             "withdraw": "提取",
             "topup": "充值",
             "loadMore": "加载更多",
@@ -1000,7 +1003,14 @@
             "collateral": "Collateral",
             "collateralAmount": "Amount: ",
             "collateralPay": "Pay: ",
-            "description": "Description: "
+            "description": "Description: ",
+            "withdrawStatus": {
+                "0": "Pending",
+                "1": "Done",
+                "2": "Failed",
+                "3": "Approving",
+                "4": "Rejected"
+            }
         },
         "transferOrders": {
             "approve": "通过",
@@ -1208,6 +1218,8 @@
                 "getListFailed": "获取投资失败，请重试",
                 "createdDate": "Created Date",
                 "amount": "本金",
+                "received": "received",
+                "matched": "matched",
                 "interest": "到目前为止的利 息",
                 "totalInterest": "利息总额",
                 "totalInterestDesc": "这是您将在整个期限内赚取的利息。如果借款人早日偿还，您将赚取最新的利息。",
@@ -1295,6 +1307,7 @@
                     },
                     "shareFbSuccess": "分享推荐链接成功"
                 },
+                "shareAndEarn": "Earn 10% of friends' interest: Refer now",
                 "withdraw": "提取法币",
                 "withdrawFiat": "法币",
                 "withdrawCrypto": "加密货币",
@@ -1615,15 +1628,16 @@
         "accountActivities": "帐户活动",
         "memberShip": "Membership",
         "login": {
-            "popupTitle": "欢迎使用 Constant。",
+            "popupTitle": "Welcome to Constant",
             "title": "登录您的账号",
             "username": "您的邮箱",
+            "email": "Email",
             "password": "密码",
-            "loginButton": "登录",
+            "loginButton": "Log in",
             "keepSignin": "保持登录状态",
             "registerText": "没有账户？",
-            "registerButton": "注册",
-            "forgetPassword": "忘记密码？",
+            "registerButton": "Sign up for free",
+            "forgetPassword": "Forgot password?",
             "requiredPassword": "请输入您的密码",
             "notValidPassword": "密码必须是8个字符或更多",
             "notValidUsername": "无效的邮箱",
@@ -1631,7 +1645,9 @@
             "loginFailure": "请确保您的邮箱和密码正确。",
             "warningVerify": "要开始交易，请花几分钟验证您的帐户。 {action}",
             "warningVerifyNow": "立即验证",
-            "two2faRequired": "余额超过 1000 美元的所有用户需要2FA 认证"
+            "two2faRequired": "余额超过 1000 美元的所有用户需要2FA 认证",
+            "loginSocialTitle": "Log in instantly",
+            "loginEmailTitle": "or log in with email"
         },
         "forgetPassword": {
             "title": "忘记密码？",
@@ -1663,6 +1679,8 @@
             "resetPasswordIntro": "您的新密码已更新。"
         },
         "register": {
+            "registerSocialTitle": "Sign up instantly",
+            "registerEmailTitle": "or sign up with email",
             "giftCode": "邀请码(可选)",
             "title": "创建您的帐户",
             "firstName": "名字",
@@ -1691,9 +1709,9 @@
             "notValidReCaptcha": "请验证您的 reCAPTCHA。",
             "agreement": "我证明我是18岁或18岁以上的人，我同意 {action}",
             "requiredAgreement": "请确认您已经阅读并同意用户协议和隐私政策",
-            "registerButton": "创建帐户",
+            "registerButton": "Sign up for free",
             "loginText": "已经有一个帐户？",
-            "loginButton": "登录",
+            "loginButton": "Log in",
             "registerSuccessfully": "成功！欢迎来到Constant。我们已经向您的邮箱发送了一封验证邮件。",
             "agreementAction": "用户协议和隐私政策。",
             "registerFailed": "创建您的帐户失败，请重试",
@@ -2577,6 +2595,11 @@
                     "dueDate": "到期",
                     "collateralValueDesc": "这表示您的抵押价值占您贷款的百分比。 它计入了迄今累积的利息以及如果你选择今天还款的还款。 如果下降到110%，您的抵押品将被清算，差额将退还给您。",
                     "repayAddress": "Repay Address"
+                },
+                "paymentMethod": {
+                    "const": "USD",
+                    "collateral": "Collateral",
+                    "prv": "PRV"
                 }
             },
             "advice": {
@@ -3387,14 +3410,14 @@
             "ctaDesc": "可以免费打开帐户。可用地区：世界。",
             "invest": {
                 "title": "投资您想要的方式",
-                "num": "10.00%",
+                "num": "9.00%",
                 "cap": "没有最低资本，完全安全。",
                 "btn": "投资",
                 "btnTrial": "获取$1000来开始"
             },
             "borrow": {
                 "title": "以您想要的方式借贷。",
-                "num": "6.00%",
+                "num": "9.00%",
                 "cap": "没有限制，设置自己的固定费率。",
                 "btn": "借款"
             }
@@ -3708,14 +3731,14 @@
             },
             "form": {
                 "text1": "设置您自己的借贷条款",
-                "text2": "以当前10.00%的市场价格投资并即时找到匹配，或提高您的比率，等待匹配的订单。",
+                "text2": "Invest at the current market rate of 9.00% and find a match instantly, or increase your rate and wait for a matching order.",
                 "text3": "我们给你1000美元的试投资。你所要做的就是选择你的价格，我们会给你找到匹配的。审判结束后，我们收回1000美元，但利息由你保管。",
                 "text4": "\n          <h5>您几乎完成了。</h5>\n          <p>为了您的安全，我们需要您验证您的ID才能使用Constant。</p>\n        ",
                 "text5": "免费试用",
                 "text6": "\n          <p>\n            <span class=\"darkorange4 bold\">想立即获得借款人吗？</span> 以10%的当前市场价格投资。 或者提高您的比率并等待匹配的订单。\n          </p>\n        ",
                 "btn1": "立即投资",
-                "textLogin": "登录",
-                "textRegister": "注册",
+                "textLogin": "Log in",
+                "textRegister": "Sign up",
                 "or": "or",
                 "btn2": "立即投资",
                 "deposit": "to deposit now",
@@ -4147,7 +4170,7 @@
                 "term": "期限（天）",
                 "termMonth": "{month}月-",
                 "investButton": "下投资订单",
-                "loginButton": "登录或注册投资",
+                "loginButton": "Log in or Sign up to invest",
                 "invalidAmount": "金额必须小于 {maxAmount}",
                 "getFeeFailed": "无法在此时间内收取费用，请重试。",
                 "fee": "投资费用： <span class=\"amount\">{fee}</span> {currency}",
@@ -4169,7 +4192,7 @@
                 "maxRateTooltip": "这是您愿意支付贷款的年利率(APR)。 如果有投资者愿意减少收入，你将支付较低的利率。",
                 "minTermTooltip": "这是您想要借款的最短时间。",
                 "buttonText": "下借款单",
-                "loginButton": "登录或注册以借款",
+                "loginButton": "Log in or Sign up to borrow",
                 "amountRequired": "Amount is required to make a borrow!",
                 "amountMin": "The minimum amount that you can borrow is {amount}",
                 "collateralRequired": "Collateral amount is required to make a borrow!",
@@ -4226,6 +4249,29 @@
         "title": "我们的客户喜欢我们"
     },
     "yourReferral": {
+        "v1": {
+            "howItWorks": {
+                "step1": {
+                    "title": "Create your referral link",
+                    "desc": "Open an account to get your unique referral link"
+                },
+                "step2": {
+                    "title": "Refer friends",
+                    "desc": "Invite your friends by email or share your unique referral link on social media"
+                },
+                "step3": {
+                    "title": "Earn together",
+                    "desc": "Get paid every time your friend invests or borrows"
+                }
+            }
+        },
+        "referral_history": {
+            "user_email": "Friend’s email address",
+            "value": "Your earnings ",
+            "object_type": "Type",
+            "object_amount": "Amount (USD)",
+            "created_at": "Date & Time"
+        },
         "invite": {
             "emailPlaceholder": "输入电子邮件地址"
         },
@@ -4245,6 +4291,7 @@
             "fund": "基金",
             "point": "STAR",
             "flex": "FLEX",
+            "date": "Date & Time",
             "statusDesc": "<p>赚取STAR有三个步骤。</p>\n                  <p>1/3 你的好友签名。</p>\n                  <p>2/3 你的朋友投资或借款 至少$1 000在30天。</p>\n                  <p>3/3 您的朋友期限结束后立即收到STAR。</p>",
             "title": "邀请好友"
         },
@@ -4571,6 +4618,18 @@
             "press6": {
                 "name": "ZyCrypto",
                 "desc": "<p>Constant的不同之处在于用户可以相信每个交易都是完全安全的。每笔贷款都有抵押担保。投资者的资金在没有贷款的情况下存放在托管账户中。这种级别的安全设置与其他平台不同</p>"
+            },
+            "press7": {
+                "name": "",
+                "desc": "And when it comes to pioneering a new generation of fintech platforms, Constant provides a measuring stick for the industry’s progress."
+            },
+            "press8": {
+                "name": "",
+                "desc": "<p>And one DeFi platform, Constant, a secured P2P lending startup that leverages smart contracts on Ethereum, has garnered significant traction over the last several months — capitalizing on a unique offering and the technology underscoring the ascendance of open financial protocols.</p>"
+            },
+            "press9": {
+                "name": "",
+                "desc": "<p>Constant works by enabling borrowers to stake liquid capital via over-collateralized crypto assets (e.g., Ether) based on an LTV ratio. Subsequently, borrowers can “cherrypick” the best deals enumerated on Constant’s interface, selecting the best interest rates that are posted independently by each lending peer. The opposite is similar for lenders, who can choose to set custom interest rates and terms, which borrowers can then decide from.</p>"
             }
         },
         "desc": {
@@ -4635,7 +4694,7 @@
             "details": "Get exclusive platform benefits the more you invest or borrow"
         },
         "caption": "Membership",
-        "expiredDate": "Your will expired in {date}",
+        "expiredDate": "Your {value} points will expired in {date}",
         "remaining": "{type} ${value} in {date} days",
         "borrow": "Borrow",
         "invest": "Invest",
@@ -4670,9 +4729,9 @@
             "date": "Date"
         },
         "rewardType": {
-            "reward": "Start",
+            "reward": "Stat",
             "fiat": "CONST",
-            "null": "N/A"
+            "null": "Not Available"
         }
     }
 }

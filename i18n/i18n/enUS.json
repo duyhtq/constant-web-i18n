@@ -137,7 +137,7 @@
         "borrowerAgreement": "Borrower agreement",
         "investorAgreement": "Investor agreement",
         "kycGuidelines": "KYC guidelines",
-        "contactUs": "Contact us:",
+        "contactUs": "Contact us",
         "referral": "Share & Earn",
         "paymentGateway": "Payment Gateway",
         "phone": {
@@ -332,6 +332,7 @@
             "external_api_error": "You send so many request, please wait and come back later",
             "invalidCoupon": "Invalid coupon code",
             "usedCoupon": "Coupon is used",
+            "restrictedEmail": "Email is restricted",
             "prvMaxWithdraw": "Prv is max withdraw"
         },
         "withdrawGreaterThan": "The minimum withdrawal amount is {min}",
@@ -850,6 +851,8 @@
             "currency": "Currency",
             "noHistoryData": "Make a deposit to get started.",
             "fee": "fee",
+            "received": "received",
+            "withdrawals": "Withdrawals",
             "withdraw": "Withdraw",
             "topup": "Top up",
             "loadMore": "Load more",
@@ -1000,7 +1003,14 @@
             "collateral": "Collateral",
             "collateralAmount": "Amount: ",
             "collateralPay": "Pay: ",
-            "description": "Description: "
+            "description": "Description: ",
+            "withdrawStatus": {
+                "0": "Pending",
+                "1": "Done",
+                "2": "Failed",
+                "3": "Approving",
+                "4": "Rejected"
+            }
         },
         "transferOrders": {
             "approve": "Approve",
@@ -1208,6 +1218,8 @@
                 "getListFailed": "Sorry, something went wrong. Please try again.",
                 "createdDate": "Created Date",
                 "amount": "Principal",
+                "received": "received",
+                "matched": "matched",
                 "interest": "Interest to date",
                 "totalInterest": "Total interest",
                 "totalInterestDesc": "This is the interest you will earn for the full term. If a borrower repays early, you will earn the interest to date.",
@@ -1295,6 +1307,7 @@
                     },
                     "shareFbSuccess": "Success! Thanks for telling your friends about Constant."
                 },
+                "shareAndEarn": "Earn 10% of friends' interest: Refer now",
                 "withdraw": "Withdraw",
                 "withdrawFiat": "Fiat",
                 "withdrawCrypto": "Crypto",
@@ -1615,15 +1628,16 @@
         "accountActivities": "Account Activity",
         "memberShip": "Membership",
         "login": {
-            "popupTitle": "Welcome to Constant.",
+            "popupTitle": "Welcome to Constant",
             "title": "Hi there.",
             "username": "Your email",
+            "email": "Email",
             "password": "Password",
-            "loginButton": "Sign in",
+            "loginButton": "Log in",
             "keepSignin": "Keep me signed in",
             "registerText": "Don't have an account?",
-            "registerButton": "Sign up",
-            "forgetPassword": "Forgot your password?",
+            "registerButton": "Sign up for free",
+            "forgetPassword": "Forgot password?",
             "requiredPassword": "Please enter your password",
             "notValidPassword": "Password must be 8 characters or more",
             "notValidUsername": "Invalid email address",
@@ -1631,7 +1645,9 @@
             "loginFailure": "Please make sure your email and password are correct.",
             "warningVerify": "To start trading, please take a few minutes to verify your account. {action}",
             "warningVerifyNow": "Verify now",
-            "two2faRequired": "2FA authentication is required for all users with balance over 1000 USD"
+            "two2faRequired": "2FA authentication is required for all users with balance over 1000 USD",
+            "loginSocialTitle": "Log in instantly",
+            "loginEmailTitle": "or log in with email"
         },
         "forgetPassword": {
             "title": "Forgot your password?",
@@ -1663,6 +1679,8 @@
             "resetPasswordIntro": "Your new password has been updated."
         },
         "register": {
+            "registerSocialTitle": "Sign up instantly",
+            "registerEmailTitle": "or sign up with email",
             "giftCode": "Invitation code (optional)",
             "title": "Create your account",
             "firstName": "First name",
@@ -1691,9 +1709,9 @@
             "notValidReCaptcha": "Please validate your reCAPTCHA.",
             "agreement": "I certify that I am 18 years of age or older, and I agree to the {action}",
             "requiredAgreement": "Please indicate that you have read and agree to the User Agreement and Privacy Policy",
-            "registerButton": "Create account",
+            "registerButton": "Sign up for free",
             "loginText": "Already have an account?",
-            "loginButton": "Login",
+            "loginButton": "Log in",
             "registerSuccessfully": "Success! Welcome to Constant. We’ve sent a verification email to your inbox.",
             "agreementAction": "User Agreement and Privacy Policy.",
             "registerFailed": "Failed while creating your account, please try again",
@@ -2577,6 +2595,11 @@
                     "dueDate": "Due",
                     "collateralValueDesc": "This represents your collateral value as a percentage of your loan. It accounts for the interest accrued so far, as well as the repayment fee should you choose to repay today. If it falls to 110%, your collateral will be liquidated, and the difference refunded to you.",
                     "repayAddress": "Repay Address"
+                },
+                "paymentMethod": {
+                    "const": "USD",
+                    "collateral": "Collateral",
+                    "prv": "PRV"
                 }
             },
             "advice": {
@@ -3387,7 +3410,7 @@
             "ctaDesc": "It's free.",
             "invest": {
                 "title": "Invest the way you want",
-                "num": "10.00%",
+                "num": "9.00%",
                 "cap": "No minimum capital. Fully secured.",
                 "btn": "Invest",
                 "btnTrial": "Get $1000 to start"
@@ -3708,14 +3731,14 @@
             },
             "form": {
                 "text1": "Set your own lending terms",
-                "text2": "Want to get a borrower instantly?\n\nInvest at the current market rate of 10%. Or increase your rate and wait for a matching order.\n",
+                "text2": "Invest at the current market rate of 9.00% and find a match instantly, or increase your rate and wait for a matching order.",
                 "text3": "We’re giving you a trial investment of $1000. When your term is up, we take the $1000 back, but the interest is yours to keep.",
                 "text4": "\n          <h5>You're almost done.</h5>\n          <p>For your security, we'll need you to verify your ID before using Constant.</p>\n        ",
                 "text5": "Free trial",
                 "text6": "\n          <p>\n            <span class=darkorange4 bold\">Want to get a borrower instantly?</span> Invest at the current market rate of <b>10%</b>. Or increase your rate and wait for a matching order.",
                 "btn1": "Invest now",
-                "textLogin": "Login",
-                "textRegister": "Register",
+                "textLogin": "Log in",
+                "textRegister": "Sign up",
                 "or": "or",
                 "btn2": "to invest now",
                 "deposit": "to deposit now",
@@ -4147,7 +4170,7 @@
                 "term": "Term (Days)",
                 "termMonth": "{month}-Month",
                 "investButton": "INVEST",
-                "loginButton": "Login or Register to invest",
+                "loginButton": "Log in or Sign up to invest",
                 "invalidAmount": "Insufficient funds",
                 "getFeeFailed": "Sorry, something went wrong. Please try again.",
                 "fee": "Invest fee: <span class=amount\">{fee}</span> {currency}\"",
@@ -4169,7 +4192,7 @@
                 "maxRateTooltip": "This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.",
                 "minTermTooltip": "This is how long you want to borrow for.",
                 "buttonText": "BORROW",
-                "loginButton": "Login or Register to borrow",
+                "loginButton": "Log in or Sign up to borrow",
                 "amountRequired": "Amount is required to make a borrow!",
                 "amountMin": "The minimum amount that you can borrow is {amount}",
                 "collateralRequired": "Collateral amount is required to make a borrow!",
@@ -4226,6 +4249,29 @@
         "title": "What people say about us"
     },
     "yourReferral": {
+        "v1": {
+            "howItWorks": {
+                "step1": {
+                    "title": "Create your referral link",
+                    "desc": "Open an account to get your unique referral link"
+                },
+                "step2": {
+                    "title": "Refer friends",
+                    "desc": "Invite your friends by email or share your unique referral link on social media"
+                },
+                "step3": {
+                    "title": "Earn together",
+                    "desc": "Get paid every time your friend invests or borrows"
+                }
+            }
+        },
+        "referral_history": {
+            "user_email": "Friend’s email address",
+            "value": "Your earnings ",
+            "object_type": "Type",
+            "object_amount": "Amount (USD)",
+            "created_at": "Date & Time"
+        },
         "invite": {
             "emailPlaceholder": "Enter an email address"
         },
@@ -4245,6 +4291,7 @@
             "fund": "Funds",
             "point": "STAR",
             "flex": "FLEX",
+            "date": "Date & Time",
             "statusDesc": "<p>There are 3 steps to earn STAR.</p>\n                  <p>1/3 your friend signs up.</p>\n                  <p>2/3 your friend invests or borrows $1,000 for at least 30 days.</p>\n                  <p>3/3 You receive STAR immediately after the first 30 days of your friend's term.</p>",
             "title": "Invited friends"
         },
@@ -4571,6 +4618,18 @@
             "press6": {
                 "name": "ZyCrypto",
                 "desc": "<p>Constant is different in that users can be confident in the fact that each transaction is fully secured. Every loan is collateral backed. Investor funds are held in escrow accounts when not on loan. This level of security sets Constant apart from other platforms.</p>"
+            },
+            "press7": {
+                "name": "",
+                "desc": "And when it comes to pioneering a new generation of fintech platforms, Constant provides a measuring stick for the industry’s progress."
+            },
+            "press8": {
+                "name": "",
+                "desc": "<p>And one DeFi platform, Constant, a secured P2P lending startup that leverages smart contracts on Ethereum, has garnered significant traction over the last several months — capitalizing on a unique offering and the technology underscoring the ascendance of open financial protocols.</p>"
+            },
+            "press9": {
+                "name": "",
+                "desc": "<p>Constant works by enabling borrowers to stake liquid capital via over-collateralized crypto assets (e.g., Ether) based on an LTV ratio. Subsequently, borrowers can “cherrypick” the best deals enumerated on Constant’s interface, selecting the best interest rates that are posted independently by each lending peer. The opposite is similar for lenders, who can choose to set custom interest rates and terms, which borrowers can then decide from.</p>"
             }
         },
         "desc": {
@@ -4635,7 +4694,7 @@
             "details": "Get exclusive platform benefits the more you invest or borrow"
         },
         "caption": "Membership",
-        "expiredDate": "Your will expired in {date}",
+        "expiredDate": "Your {value} points will expired in {date}",
         "remaining": "{type} ${value} in {date} days",
         "borrow": "Borrow",
         "invest": "Invest",
@@ -4670,9 +4729,9 @@
             "date": "Date"
         },
         "rewardType": {
-            "reward": "Start",
+            "reward": "Stat",
             "fiat": "CONST",
-            "null": "N/A"
+            "null": "Not Available"
         }
     }
 }

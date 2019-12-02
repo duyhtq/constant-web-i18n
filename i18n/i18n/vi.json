@@ -110,7 +110,7 @@
             "address2": " Redlands, CA 92373, USA"
         },
         "getSocial": "Mạng xã hội",
-        "titleFoundation": "Về chúng tôi",
+        "titleFoundation": "About",
         "titleConstant": "Mua Constant",
         "career": "Tuyển dụng",
         "about": "Đội ngũ",
@@ -137,7 +137,7 @@
         "borrowerAgreement": "Thoả thuận người vay",
         "investorAgreement": "Thoả thuận nhà đầu tư",
         "kycGuidelines": "Hướng dẫn KYC",
-        "contactUs": "Liên hệ chúng tôi:",
+        "contactUs": "Contact us",
         "referral": "Chia sẻ & Nhận tiền",
         "paymentGateway": "Cổng thanh toán",
         "phone": {
@@ -332,6 +332,7 @@
             "external_api_error": "Bạn gửi quá nhiều đề nghị, vui lòng chờ và quay lại sau",
             "invalidCoupon": "Invalid coupon code",
             "usedCoupon": "Coupon is used",
+            "restrictedEmail": "Email is restricted",
             "prvMaxWithdraw": "Prv is max withdraw"
         },
         "withdrawGreaterThan": "Lượng rút tối thiểu là {min}",
@@ -850,6 +851,8 @@
             "currency": "Tiền tệ",
             "noHistoryData": "Hãy nạp tiền để bắt đầu",
             "fee": "phí",
+            "received": "received",
+            "withdrawals": "Withdrawals",
             "withdraw": "Rút",
             "topup": "Nạp",
             "loadMore": "Tải thêm",
@@ -1000,7 +1003,14 @@
             "collateral": "Collateral",
             "collateralAmount": "Amount: ",
             "collateralPay": "Pay: ",
-            "description": "Description: "
+            "description": "Description: ",
+            "withdrawStatus": {
+                "0": "Pending",
+                "1": "Done",
+                "2": "Failed",
+                "3": "Approving",
+                "4": "Rejected"
+            }
         },
         "transferOrders": {
             "approve": "Chấp nhận",
@@ -1208,6 +1218,8 @@
                 "getListFailed": "Xin lỗi, có lỗi xảy ra. Vui lòng thử lại.",
                 "createdDate": "Created Date",
                 "amount": "Tiền gốc",
+                "received": "received",
+                "matched": "matched",
                 "interest": "Lãi suất đến nay",
                 "totalInterest": "Tổng lãi suất",
                 "totalInterestDesc": "Đây là lãi suất bạn kiếm được trong nguyên một kỳ. Nếu người mượn hoàn trả sớm, bạn sẽ kiếm được lãi suất đến hiện tại.",
@@ -1295,6 +1307,7 @@
                     },
                     "shareFbSuccess": "Thành công! Cảm ơn đã nói với bạn bè của bạn về Constant."
                 },
+                "shareAndEarn": "Earn 10% of friends' interest: Refer now",
                 "withdraw": "Rút tiền ",
                 "withdrawFiat": "Tiền mặt",
                 "withdrawCrypto": "Tiền mã hoá",
@@ -1615,15 +1628,16 @@
         "accountActivities": "Hoạt động tài khoản",
         "memberShip": "Membership",
         "login": {
-            "popupTitle": "Chào mừng đến với Constant.",
+            "popupTitle": "Welcome to Constant",
             "title": "Xin chào",
             "username": "Email của bạn",
+            "email": "Email",
             "password": "Mật khẩu",
-            "loginButton": "Đăng nhập",
+            "loginButton": "Log in",
             "keepSignin": "Giữ trạng thái đăng nhập",
             "registerText": "Chưa có tài khoản?",
-            "registerButton": "Đăng ký",
-            "forgetPassword": "Quên mật khẩu?",
+            "registerButton": "Sign up for free",
+            "forgetPassword": "Forgot password?",
             "requiredPassword": "Vui lòng nhập mật khẩu",
             "notValidPassword": "Mật khẩu phải có ít nhất 8 ký tự",
             "notValidUsername": "Địa chỉ email không hợp lệ",
@@ -1631,7 +1645,9 @@
             "loginFailure": "Hãy đảm bảo rằng email và mật khẩu của bạn là chính xác.",
             "warningVerify": "Hãy xác minh tài khoản để bắt đầu giao dịch. {action}",
             "warningVerifyNow": "Xác minh ngay",
-            "two2faRequired": "Tất cả người dùng có số dư trên 1000 USD được yêu cầu xác thực 2FA"
+            "two2faRequired": "Tất cả người dùng có số dư trên 1000 USD được yêu cầu xác thực 2FA",
+            "loginSocialTitle": "Log in instantly",
+            "loginEmailTitle": "or log in with email"
         },
         "forgetPassword": {
             "title": "Quên mật khẩu?",
@@ -1663,6 +1679,8 @@
             "resetPasswordIntro": "Mật khẩu mới của bạn đã được cập nhật"
         },
         "register": {
+            "registerSocialTitle": "Sign up instantly",
+            "registerEmailTitle": "or sign up with email",
             "giftCode": "Mã giới thiệu (không bắt buộc)",
             "title": "Tạo tài khoản",
             "firstName": "Đệm và Tên",
@@ -1691,9 +1709,9 @@
             "notValidReCaptcha": "Vui lòng xác nhận reCAPTCHA của bạn.",
             "agreement": "Tôi xác nhận tôi đã 18 tuổi và đồng ý với việc {action}",
             "requiredAgreement": "Xác nhận bạn đã đọc và đồng ý với Thoả thuận sử dụng và Chính sách bảo mật của chúng tôi",
-            "registerButton": "Đăng ký tài khoản",
+            "registerButton": "Sign up for free",
             "loginText": "Bạn đã có tài khoản chưa?",
-            "loginButton": "Đăng nhập",
+            "loginButton": "Log in",
             "registerSuccessfully": "Thành công! Chào mừng tới Constant. Chúng tôi đã gửi email xác minh tới hộp thư đến của bạn.",
             "agreementAction": "Thoả thuận sử dụng và Chính sách bảo mật.",
             "registerFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
@@ -2577,6 +2595,11 @@
                     "dueDate": "Ngày đáo hạn",
                     "collateralValueDesc": "Điều này thể hiện giá trị tài sản thế chấp của bạn bằng bao nhiêu phần trăm của khoản vay. Nó chiếm phần lãi tích lũy cho đến nay, cũng như phí trả nợ mà bạn nên chọn để trả nợ ngay hôm nay. Nếu nó rơi xuống 110%, tài sản thế chấp của bạn sẽ được thanh lý, và phần chênh lệch được hoàn trả cho bạn.\n",
                     "repayAddress": "Repay Address"
+                },
+                "paymentMethod": {
+                    "const": "USD",
+                    "collateral": "Collateral",
+                    "prv": "PRV"
                 }
             },
             "advice": {
@@ -3387,7 +3410,7 @@
             "ctaDesc": "Hoàn toàn miễn phí",
             "invest": {
                 "title": "Đầu tư theo cách bạn muốn",
-                "num": "10.00%",
+                "num": "9.00%",
                 "cap": "Không yêu cầu vốn tối thiểu. Tuyệt đối an toàn.",
                 "btn": "Đầu tư",
                 "btnTrial": "Nhận $1,000 để bắt đầu"
@@ -3708,14 +3731,14 @@
             },
             "form": {
                 "text1": "Chọn điều khoản đầu tư",
-                "text2": "Đầu tư với mức lãi suất thị trường 9% để được khớp lệnh ngay. Tăng mức lãi suất có thể làm tăng thời gian khớp lệnh.",
+                "text2": "Invest at the current market rate of 9.00% and find a match instantly, or increase your rate and wait for a matching order.",
                 "text3": "Chúng tôi tặng bạn một khoản đầu tư thử nghiệm trị giá 1,000 USD để trải nghiệm dịch vụ. Khi đáo hạn, chúng tôi sẽ thu hồi $,1000 lại, còn bạn được giữ toàn bộ phần lãi.",
                 "text4": "\n<h5>Một thao tác cuối cùng để sử dụng Constant.</h5>\n          <p>Vì lí do an ninh, bạn cần phải xác minh danh tính trước khi sử dụng Constant.</p>        ",
                 "text5": "Dùng thử miễn phí",
                 "text6": "\n<p>\n            <span class=\"darkorange4 bold\">Muốn được kết nối ngay với người đi vay?</span> Đặt mức lãi suất dưới 9% để thực hiện đầu tư ngay. Với mức lãi suất cao hơn, bạn cần đợi người đi vay chấp nhận trả mức lãi bạn mong muốn để được kết nối.\n          </p>        ",
                 "btn1": "Đầu tư ngay",
-                "textLogin": "Đăng nhập",
-                "textRegister": "Đăng ký",
+                "textLogin": "Log in",
+                "textRegister": "Sign up",
                 "or": "hoặc",
                 "btn2": "đầu tư ngay",
                 "deposit": "để đầu tư ngay",
@@ -4147,7 +4170,7 @@
                 "term": "Kì hạn (Ngày)",
                 "termMonth": "{month}-Tháng",
                 "investButton": "ĐẶT LỆNH ĐẦU TƯ",
-                "loginButton": "Đăng nhập hoặc Đăng ký để đầu tư",
+                "loginButton": "Log in or Sign up to invest",
                 "invalidAmount": "Số lượng phải nhỏ hơn {maxAmount}",
                 "getFeeFailed": "Chưa thể tính phí. Xin vui lòng thử lại.",
                 "fee": "Phí đầu tư: <span class=\"amount\">{fee}</span>{currency}",
@@ -4169,7 +4192,7 @@
                 "maxRateTooltip": "Đây là mức lãi kép mà bạn sẵn sàng trả cho khoản vay của mình. Nếu có nhà đầu tư chấp nhận khoản lợi nhuận nhỏ hơn, bạn sẽ chỉ phải trả mức lãi suất thấp hơn.",
                 "minTermTooltip": "Đây là kì hạn cho khoản tiền mà bạn muốn vay.",
                 "buttonText": "VAY",
-                "loginButton": "Đăng nhập hoặc Đăng ký để vay",
+                "loginButton": "Log in or Sign up to borrow",
                 "amountRequired": "Amount is required to make a borrow!",
                 "amountMin": "The minimum amount that you can borrow is {amount}",
                 "collateralRequired": "Collateral amount is required to make a borrow!",
@@ -4226,6 +4249,29 @@
         "title": "Khách hàng nói về chúng tôi"
     },
     "yourReferral": {
+        "v1": {
+            "howItWorks": {
+                "step1": {
+                    "title": "Create your referral link",
+                    "desc": "Open an account to get your unique referral link"
+                },
+                "step2": {
+                    "title": "Refer friends",
+                    "desc": "Invite your friends by email or share your unique referral link on social media"
+                },
+                "step3": {
+                    "title": "Earn together",
+                    "desc": "Get paid every time your friend invests or borrows"
+                }
+            }
+        },
+        "referral_history": {
+            "user_email": "Friend’s email address",
+            "value": "Your earnings ",
+            "object_type": "Type",
+            "object_amount": "Amount (USD)",
+            "created_at": "Date & Time"
+        },
         "invite": {
             "emailPlaceholder": "Nhập địa chỉ email "
         },
@@ -4245,6 +4291,7 @@
             "fund": "Tài sản",
             "point": "STAR",
             "flex": "FLEX",
+            "date": "Date & Time",
             "statusDesc": "<p>Có 3 bước để kiếm STAR.</p>\n                  <p>1/3 Bạn của bạn đăng ký.</p>\n                  <p>2/3 Bạn của bạn đầu tư hoặc vay $1,000 trong ít nhất 30 ngày.</p>\n                  <p>3/3 Bạn ngay lập tức nhận STAR sau 30 ngày đầu tiên của kỳ hạn đầu tư/vay của bạn của bạn.</p>",
             "title": "Mời bạn bè"
         },
@@ -4571,6 +4618,18 @@
             "press6": {
                 "name": "ZyCrypto",
                 "desc": "<p> Constant khác biệt ở chỗ người dùng có thể tin tưởng rằng mỗi giao dịch được bảo mật hoàn toàn. Mọi khoản vay đều được thế chấp. Tiền đầu tư của người cho vay được giữ trong tài khoản ký quỹ khi không cho vay. Cấp độ bảo mật này làm Constant khác biệt với các nền tảng khác. </p>\n"
+            },
+            "press7": {
+                "name": "",
+                "desc": "And when it comes to pioneering a new generation of fintech platforms, Constant provides a measuring stick for the industry’s progress."
+            },
+            "press8": {
+                "name": "",
+                "desc": "<p>And one DeFi platform, Constant, a secured P2P lending startup that leverages smart contracts on Ethereum, has garnered significant traction over the last several months — capitalizing on a unique offering and the technology underscoring the ascendance of open financial protocols.</p>"
+            },
+            "press9": {
+                "name": "",
+                "desc": "<p>Constant works by enabling borrowers to stake liquid capital via over-collateralized crypto assets (e.g., Ether) based on an LTV ratio. Subsequently, borrowers can “cherrypick” the best deals enumerated on Constant’s interface, selecting the best interest rates that are posted independently by each lending peer. The opposite is similar for lenders, who can choose to set custom interest rates and terms, which borrowers can then decide from.</p>"
             }
         },
         "desc": {
@@ -4635,7 +4694,7 @@
             "details": "Get exclusive platform benefits the more you invest or borrow"
         },
         "caption": "Membership",
-        "expiredDate": "Your will expired in {date}",
+        "expiredDate": "Your {value} points will expired in {date}",
         "remaining": "{type} ${value} in {date} days",
         "borrow": "Borrow",
         "invest": "Invest",
@@ -4670,9 +4729,9 @@
             "date": "Date"
         },
         "rewardType": {
-            "reward": "Start",
+            "reward": "Stat",
             "fiat": "CONST",
-            "null": "N/A"
+            "null": "Not Available"
         }
     }
 }

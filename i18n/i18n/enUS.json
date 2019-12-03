@@ -251,9 +251,9 @@
             "accountGroup": "Manage your money",
             "deposit": "Deposit",
             "depositDesc": "Top up funds to use Constant",
-            "withdraw": "Withdraw to fiat",
+            "withdraw": "Withdraw fiat",
             "withdrawDesc": "USD or local currencies",
-            "withdrawCrypto": "Withdraw to crypto",
+            "withdrawCrypto": "Withdraw crypto",
             "withdrawCryptoDesc": "ETH, EOS, TRON, and TOMO",
             "lendingGroup": "Peer-to-peer lending",
             "invest": "Invest",
@@ -415,7 +415,7 @@
             "referralInfo": "Referral Information",
             "transferOrders": "Transfer Orders",
             "openOrders": "Open Orders",
-            "interests": "Interests",
+            "interests": "Interest",
             "accountActivities": "Account Activity",
             "staking": "Staking history"
         },
@@ -1723,8 +1723,8 @@
             "balance": "Balance",
             "star": "Star",
             "deposit": "Deposit",
-            "withdrawFiat": "Withdraw to Fiat",
-            "withdrawCrypto": "Withdraw to Crypto",
+            "withdrawFiat": "Withdraw fiat",
+            "withdrawCrypto": "Withdraw crypto",
             "transfer": "Transfer",
             "history": "History",
             "shareAndEarn": "Share & Earn"
@@ -1939,8 +1939,8 @@
                 "important": "Important",
                 "dgxFeeMsg": "(includes the 0.13% DGX transfer fee)",
                 "thankYou": "Almost there.",
-                "minuteWindow": "Please complete your transfer within 24 hours.",
-                "minuteWindowDescription": "For the sake of security, this session will time-out after 24 hours. If you need a little longer, just re-enter the amount you would like to invest when you’re ready."
+                "minuteWindow": "Please complete your transfer within 12 hours.",
+                "minuteWindowDescription": "For the sake of security, this session will time-out after 12 hours. If you need a little longer, just re-enter the amount you would like to invest when you’re ready."
             },
             "sell": {
                 "type": "Sell",
@@ -2322,7 +2322,7 @@
                 "usingStaking": "Pay less on your loan through staking",
                 "usingStakingMobile": "Pay less with staking",
                 "usingStakingDesc": "Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.",
-                "stakingMinAmount": "stake amount must be great than {minVal} {currency}",
+                "stakingMinAmount": "The staking amount must be greater than {minVal} {currency}",
                 "collateralNoteMatch": "Estimated time to match: {hours} hours",
                 "collateralNoteMatchInWorkingTime": "Estimated time to match 1 hour",
                 "toolTipCollateral": "\n          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.\n        ",
@@ -2400,7 +2400,7 @@
                     "payingInterest": "paying",
                     "done": "done",
                     "cancelled": "cancelled",
-                    "withdrawed": "withdrawed",
+                    "withdrawed": "withdrawn",
                     "expired": "Timed out",
                     "fullPayment": "full payment"
                 },
@@ -4204,7 +4204,7 @@
                 "usingStaking": "Pay less on your loan through staking",
                 "usingStakingMobile": "Pay less with staking",
                 "usingStakingDesc": "Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.",
-                "stakingMinAmount": "stake amount must be great than {minVal} {currency}"
+                "stakingMinAmount": "The staking amount must be greater than {minVal} {currency}"
             },
             "createdSuccess": "Borrow order successfully created",
             "errorMsgs": {
@@ -4346,10 +4346,10 @@
         "history": "History",
         "membership": "Membership",
         "btnDeposit": "Deposit",
-        "btnReferral": "<div class=textLeft\"><small>Share & Earn</small><div>Money</div></div>",
+        "btnReferral": "<div class=textLeft\"><small>Share & earn</small><div>interest</div></div>",
         "btnTransfer": "Transfer",
-        "btnWithdrawCrypto": "<div class=textLeft\"><small>withdraw to</small><div>Crypto</div></div>",
-        "btnWithdrawFiat": "<div class=textLeft\"><small>withdraw to</small><div>Fiat</div></div>",
+        "btnWithdrawCrypto": "<div class=textLeft\"><small>Withdraw to</small><div>crypto</div></div>",
+        "btnWithdrawFiat": "<div class=textLeft\"><small>Withdraw to</small><div>fiat</div></div>",
         "btnSetting": "KYC",
         "about": "About",
         "privacy": "Privacy Policy",
@@ -4475,10 +4475,10 @@
         "howMuchDoYouWantToDeposit": "How much do you want to stake?",
         "depositNow": "Start staking now",
         "depositWithAmount": "Start staking {amount} {currency}",
-        "validateMinAmountError": "You can't input amount less than {amount} {currency}",
-        "maxValueAmount": "You can't input amount greater than {max}",
+        "validateMinAmountError": "You can't stake less than {amount} {currency}",
+        "maxValueAmount": "You can't stake an amount greater than {max}",
         "requiredAmount": "Amount is required",
-        "makeStakingSuccess": "Your staking was created successfully",
+        "makeStakingSuccess": "You have successfully staked {amount} {cryptocurrency}",
         "makeStakingFailed": "Something went wrong. Please try again.",
         "cancel": "Cancel",
         "starStaking": "Create staking",
@@ -4488,13 +4488,13 @@
             "unStaking": {
                 "title": "Unstake",
                 "amount": "Amount",
-                "amountDesc": "How much do you want to un-taking?",
+                "amountDesc": "How much do you want to un-stake?",
                 "address": "Your {name} wallet address?",
                 "addressDesc": "Receiving crypto wallet address",
                 "maxAmount": "Your amount must be less than {maxAmount} {symbol}.",
                 "withdrawFailed": "Something went wrong. Please try again.",
-                "withdrawAddressFailed": "Your wallet address invalid. Please try again.",
-                "withdrawSuccess": "Your un-taking was completed successfully."
+                "withdrawAddressFailed": "Your wallet address is invalid. Please try again.",
+                "withdrawSuccess": "You successfully un-staked your {cryptocurrency}."
             },
             "withdraw": {
                 "title": "Withdraw your reward",
@@ -4504,7 +4504,7 @@
                 "addressDesc": "Receiving crypto wallet address",
                 "maxAmount": "Your amount must be less than {maxAmount} {symbol}.",
                 "withdrawFailed": "Something went wrong. Please try again.",
-                "withdrawAddressFailed": "Your wallet address invalid. Please try again.",
+                "withdrawAddressFailed": "Your wallet address is invalid. Please try again.",
                 "withdrawSuccess": "Your withdrawal was completed successfully."
             },
             "submit": "Submit",

@@ -1939,8 +1939,8 @@
                 "important": "QUAN TRỌNG",
                 "dgxFeeMsg": "(bao gồm 0.13% DGX phí giao dịch)",
                 "thankYou": "Gần được rồi.",
-                "minuteWindow": "Vui lòng hoàn thành chuyển khoản trong vòng 24h",
-                "minuteWindowDescription": "Vì mục đích bảo mật, thời gian hiệu lực sẽ hết thời gian sau 24 giờ. Nếu bạn cần lâu hơn một chút, chỉ cần nhập lại số tiền bạn muốn đầu tư khi bạn đã sẵn sàng."
+                "minuteWindow": "Vui lòng hoàn thành chuyển khoản trong vòng 12h",
+                "minuteWindowDescription": "Vì mục đích bảo mật, thời gian hiệu lực sẽ hết thời gian sau 12 giờ. Nếu bạn cần lâu hơn một chút, chỉ cần nhập lại số tiền bạn muốn đầu tư khi bạn đã sẵn sàng."
             },
             "sell": {
                 "type": "Bán",

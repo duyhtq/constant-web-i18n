@@ -3777,7 +3777,7 @@
             },
             "confirm": {
                 "thankYou1": "Almost there.",
-                "thankMsg": "Simply make a transfer of {amount} to complete your deposit.",
+                "thankMsg": "Transfer {amount}  to complete your deposit.",
                 "thankMsg1": "You currently have {balance} in your balance. Please make a transfer of the remaining {amount} to proceed.",
                 "bankName": "Bank name",
                 "accountName": "Account name",
@@ -3806,11 +3806,11 @@
                 "maxTerm": "Max term",
                 "btnConfirm": "Confirm",
                 "btnBack": "Back",
-                "zelleTitle": "\n            <p className=bold\">The quickest way is via <strong>Zelle</strong>.</p>",
-                "zelleDesc": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n          <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n        ",
+                "zelleTitle": "\n            <p className=bold\">The fastest way to transfer</p>",
+                "zelleDesc": "<p>Zelle is the fastest way to send money to us. All you need is a US bank account and an email address or phone number.</p> \n<p>You can find Zelle in your mobile banking app, but if your bank doesn’t offer Zelle yet, you can use the Zelle app. </p>",
                 "zelle1": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n        ",
                 "zelle": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <br /><br />\n          <p>Please include the email address associated with your Constant account in the notes section.</p>\n          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n        ",
-                "bankChosenMessage1": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n          <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n        ",
+                "bankChosenMessage1": "<p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to. </p>\n<p>If you don’t bank with any of those listed, no problem. You can transfer from any bank account, but please note that your bank might charge you a fee.</p>\n",
                 "bankChosenMessage": "We have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.",
                 "makeAnotherButton": "Make another investment",
                 "updateBalanceNoteInWorkingTime": "Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience.",
@@ -4494,7 +4494,7 @@
                 "maxAmount": "Your amount must be less than {maxAmount} {symbol}.",
                 "withdrawFailed": "Something went wrong. Please try again.",
                 "withdrawAddressFailed": "Your wallet address is invalid. Please try again.",
-                "withdrawSuccess": "You successfully un-staked your {cryptocurrency}."
+                "withdrawSuccess": "You successfully un-staked your {amount} {cryptocurrency}."
             },
             "withdraw": {
                 "title": "Withdraw your reward",

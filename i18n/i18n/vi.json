@@ -2009,16 +2009,16 @@
             "send": {
                 "confirmTemplate": {
                     "title": "Xin cảm ơn!",
-                    "description": "Tiền của bạn đang trên đường đến tài khoản ngân hàng của người nhận. Thời gian có thể thay đổi dựa trên ngân hàng và địa điểm. Vui lòng xem <a href=\"/getPrices\"lists\" class=\"white bold\"> thời gian phục vụ </a> của chúng tôi để biết ước tính khi nào tiền sẽ đến tay bạn.",
-                    "contact": "Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ với <a class=\"colorLight bold\" href=\"mailto:hello@myconstant.com\"> hello@myconstant.com </a> bất cứ lúc nào.",
+                    "description": "Tiền của bạn đang trên đường đến tài khoản ngân hàng của người nhận. Thời gian có thể thay đổi dựa trên ngân hàng và địa điểm. Vui lòng xem <a href=\"/getPrices\" class=\"colorLight semiBold\"> thời gian phục vụ </a> của chúng tôi để biết ước tính khi nào tiền sẽ đến tay bạn.",
+                    "contact": "Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ với <a class=\"colorLight semiBold\" href=\"mailto:hello@myconstant.com\"> hello@myconstant.com </a> bất cứ lúc nào.",
                     "actionTitle": "Đặt lệnh chuyển tiền khác"
                 }
             },
             "withdraw": {
                 "confirmTemplate": {
                     "title": "Xin cảm ơn!",
-                    "description": "Tiền của bạn đang trên đường đến tài khoản ngân hàng của người nhận. Thời gian có thể thay đổi dựa trên ngân hàng và địa điểm. Vui lòng xem <a href=\"/getPrices\"lists\" class=\"white bold\"> thời gian phục vụ </a> của chúng tôi để biết ước tính khi nào tiền sẽ đến tay bạn.",
-                    "contact": "Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ với <a class=\"colorLight bold\" href=\"mailto:hello@myconstant.com\"> hello@myconstant.com </a> bất cứ lúc nào.",
+                    "description": "Tiền của bạn đang trên đường đến tài khoản ngân hàng của người nhận. Thời gian có thể thay đổi dựa trên ngân hàng và địa điểm. Vui lòng xem <a href=\"/getPrices\"lists\" class=\"colorLight semiBold\"> thời gian phục vụ </a> của chúng tôi để biết ước tính khi nào tiền sẽ đến tay bạn.",
+                    "contact": "Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ với <a class=\"colorLight semiBold\" href=\"mailto:hello@myconstant.com\"> hello@myconstant.com </a> bất cứ lúc nào.",
                     "actionTitle": "Về trang chủ"
                 }
             }

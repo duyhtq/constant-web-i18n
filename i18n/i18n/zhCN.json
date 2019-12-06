@@ -2009,16 +2009,16 @@
             "send": {
                 "confirmTemplate": {
                     "title": "感谢！",
-                    "description": "您的资金正在流向收款人的银行账户。时间可能因银行和地点导致延迟。 请查看我们的 <a href=\"/getPrices\" target=\"_blank\" class=\"white bold\">服务时间</a> 来估计资金何时到达您。",
-                    "contact": "如果你有任何疑问，随时可以联系 <a class=\"colorLight bold\" href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>",
+                    "description": "您的资金正在流向收款人的银行账户。时间可能因银行和地点导致延迟。 请查看我们的 <a href=\"/getPrices\" target=\"_blank\" class=\"colorLight semiBold\">服务时间</a> 来估计资金何时到达您。",
+                    "contact": "如果你有任何疑问，随时可以联系 <a class=\"colorLight semiBold\" href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>",
                     "actionTitle": "发起其他转账"
                 }
             },
             "withdraw": {
                 "confirmTemplate": {
                     "title": "谢谢！",
-                    "description": "您的资金正在流向收款人的银行账户。时间可能因银行和地点导致延迟。 请查看我们的 <a href=\"/getPrices\" target=\"_blank\" class=\"white bold\">服务时间</a> 来估计资金何时到达您。",
-                    "contact": "如果你有任何疑问，随时可以联系 <a class=\"colorLight bold\" href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>",
+                    "description": "您的资金正在流向收款人的银行账户。时间可能因银行和地点导致延迟。 请查看我们的 <a href=\"/getPrices\" target=\"_blank\" class=\"colorLight semiBold\">服务时间</a> 来估计资金何时到达您。",
+                    "contact": "如果你有任何疑问，随时可以联系 <a class=\"colorLight semiBold\" href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>",
                     "actionTitle": "返回首页"
                 }
             }

@@ -2291,7 +2291,7 @@
                 "answer10": "收到付款的宽限期是在您的任期结束3天之后。 在第二天和第三天，您将支付10%的到期利息。"
             },
             "title": "公平，完全有担保的加密贷款。",
-            "subTitle": "<h2>4.50% APR。</h2>\n        <h2>即时供资</h2>\n        <h2>获得加密现金而不需要卖出</h2>\n      ",
+            "subTitle": "<h2>4.50% APR。</h2>\n        <h2>即时资金</h2>\n        <h2>无需出售即可获取加密货币现金</h2>\n      ",
             "intro": {
                 "desc": {
                     "1": "Secure escrow",
@@ -3247,7 +3247,7 @@
         }
     },
     "deposit": {
-        "contentHtml": "\n      <h6>尽力扩张你的财富</h6>\n      <h2>无需</h2>\n      <h2>锁定你的钱.</h2>\n      <br />\n      <h6>{interest}% APY。 无限制提款，如您所喜欢的那样，无限制提款，如同您所喜欢的那样，24/7客户服务。无收费。无最低存款。无处罚。 这个好账号从来没有储蓄账户。</h6>\n      <br />\n    ",
+        "contentHtml": "\n      <h6>尽力扩大你的财富</h6>\n      <h2>无需</h2>\n      <h2>锁定你的钱.</h2>\n      <br />\n      <h6>{interest}% APY。 无限制提款，如您所喜欢的那样，无限制提款，如同您所喜欢的那样，24/7客户服务。无收费。无最低存款。无处罚。这样的储蓄帐户从来没有。</h6>\n      <br />\n    ",
         "learnMore": "在这里了解更多",
         "title": "您的全求美元银行账户。",
         "availableInVn": "现已在越南提供。",
@@ -3722,7 +3722,7 @@
     "home1": {
         "lendingSection": {
             "intro": {
-                "content": "\n          <h5>以您想要的方式</h5>\n          <br />\n          <span>\n            <h2>设置您自己的费率。</h2>\n            <h2>不收费。</h2>\n            <h2>没有最低资本。</h2>\n            <h2>随时提取。</h2>\n          </span>\n          <br />\n          <h5>\n          按您选择的利率划定您的资产， 向借款人提供150%的担保。 您的资金受到智能合约的保护，可以随时提款。\n          </h5>\n        ",
+                "content": "\n          <h5>以您想要的方式</h5>\n          <br />\n          <span>\n            <h2>设置您自己的费率。</h2>\n            <h2>不收费。</h2>\n            <h2>没有最低资本。</h2>\n            <h2>随时提取。</h2>\n          </span>\n          <br />\n          <h5>\n          以您选择的利率借出资产， 向借款人提供150%的担保。 您的资金受到智能合约的保护，可以随时提款。\n          </h5>\n        ",
                 "desc": {
                     "1": "Fully secured by collateral",
                     "2": "Your own rates and terms",
@@ -4483,7 +4483,7 @@
         "cancel": "取消",
         "starStaking": "创建staking",
         "stakingFromTitle": "开始staking",
-        "contentHtml": "\n        <h6>关注并赚取</h6>\n        <h2>最多获得 {reward}% APR</h2>\n        <h2>您的加密货币。</h2>\n        <br />\n        <h6>加入我们的主节点池，最多为 {reward}% APR。 每隔30分钟支付利息。 没有最低的利害关系。没有收费。任何时候都不会退款。请留言从来都不是容易的。</h6>\n        <br />\n    ",
+        "contentHtml": "\n        <h6>关注并赚取</h6>\n        <h2>最多获得 {reward}% APR</h2>\n        <h2>您的加密货币。</h2>\n        <br />\n        <h6>加入我们的masternode池，最多可以 {reward}% APR。 每隔30分钟支付利息。 无最低stake。 不收费。随时提取。staking从未如此简单。</h6>\n        <br />\n    ",
         "withdrawFrom": {
             "unStaking": {
                 "title": "取消staking",

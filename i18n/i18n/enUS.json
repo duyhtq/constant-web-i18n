@@ -420,7 +420,7 @@
             "staking": "Staking history"
         },
         "wallet": {
-            "title": "Receive CONST or STAR here. Trying to deposit crypto collateral? Please do so from the Coin Balance",
+            "title": "Receive CONST here. Trying to deposit crypto collateral? Please do so from the Coin Balance",
             "walletAddress": "Your wallet:"
         },
         "kyc": {
@@ -4694,7 +4694,7 @@
             "details": "Get exclusive platform benefits the more you invest or borrow"
         },
         "caption": "Membership",
-        "expiredDate": "Your {value} points will expired in {date}",
+        "expiredDate": "Your {value} points will expire on {date}",
         "remaining": "{type} ${value} in {date} days",
         "borrow": "Borrow",
         "invest": "Invest",
@@ -4724,12 +4724,12 @@
         },
         "history": {
             "title": "History",
-            "level": "Get level",
-            "reward": "Get reward",
+            "level": "Status",
+            "reward": "Reward",
             "date": "Date"
         },
         "rewardType": {
-            "reward": "Stat",
+            "reward": "STAR",
             "fiat": "CONST",
             "null": "Not Available"
         }

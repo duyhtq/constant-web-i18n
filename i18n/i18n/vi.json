@@ -2208,7 +2208,7 @@
                 "orderInfo": {
                     "title": "Xác nhận chuyển khoản",
                     "desc": " ",
-                    "cryptoAddress": "Tới địa chỉ tiền mã hoá",
+                    "cryptoAddress": "Tới địa chỉ",
                     "email": "Tới Email",
                     "amount": "Số lượng"
                 }

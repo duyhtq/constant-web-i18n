@@ -31,7 +31,7 @@
             "wrongPassword": "更改密码",
             "placeholder": "请设置占位文本的密钥",
             "btn": "请设置文本按钮的密钥",
-            "close": "Close"
+            "close": "关闭"
         },
         "local": {
             "type": {
@@ -41,8 +41,8 @@
         }
     },
     "lang": {
-        "en": "English",
-        "vn": "Tiếng Việt"
+        "en": "英文",
+        "vn": "越南语"
     },
     "validation": {
         "csv": "请输入有效的文件类型（csv）。"
@@ -110,7 +110,7 @@
             "address2": "Redlands, CA 92373, USA"
         },
         "getSocial": "社交媒体",
-        "titleFoundation": "About",
+        "titleFoundation": "关于",
         "titleConstant": "买 Constant",
         "career": "职业",
         "about": "关于",
@@ -137,7 +137,7 @@
         "borrowerAgreement": "借方协议",
         "investorAgreement": "投资者协议",
         "kycGuidelines": "KYC 教程",
-        "contactUs": "Contact us",
+        "contactUs": "联系我们",
         "referral": "分享和赚取$",
         "paymentGateway": "支付口",
         "phone": {
@@ -180,7 +180,7 @@
                 "link": "https://t.me/constantp2p"
             }
         },
-        "content": "\n    <p class=\"bold\">Is CONST LLC a bank?</p>\n    <p>Please note that CONST LLC (hereafter referred to as “we”, “us”, or “Company”) is not a bank or deposit account, nor is it a regulated financial institution. Constant tokens are not financial instruments. No interest will be paid on any funds or other assets held in your Constant account and all assets directly held by us are not insured by us or, except as set forth below, any third party or any government agency.</p>\n    <p>We work with independent third-party financial institutions such as Prime Trust to provide cash management for the fiat deposits backing Constant tokens, ensuring that all Constant tokens in circulation are matched by an equal amount of fiat deposits. To achieve this, the fiat deposits backing Constant are held in one or more depository accounts at US banks or trust companies whose deposits may be insured.</p>\n    <p>Rate is current at the time of reading, and may be subject to change in the future.</p>\n    "
+        "content": "\n    <p class=\"bold\">CONSTLC 是一家银行吗？</p>\n    <p>请注意CONSTLC (以下简称“我们”， “我们”或“公司”不是一个银行或存款账户，也不是一个受管制的金融机构。 constant 代币 不是金融工具。 任何存放在您的constant账户中的资金或其他资产都不会支付利息，我们直接持有的所有资产均不由我们或任何第三方或任何政府机构（下文规定的除外）投保</p>\n    <p>我们与Prime Trust等独立第三方金融机构合作，为支持Constant代币的法币存款提供现金管理，确保所有流通中的constant代币与等量的法币存款匹配。为了实现这一目标，法币存款支持constant被保存在美国银行或信托公司的一个或多个存款账户中，这些银行或信托公司的存款可能被保险</p>\n    <p>费率在阅读时是当前的，将来可能会有变化</p>\n    "
     },
     "lending": {
         "title": "固定",
@@ -316,7 +316,7 @@
             "createdBankExisted": "银行帐户已经存在！",
             "trial_term_deposit_not_available": "Constant进行的入门试验只供新用户使用。",
             "not_pro_saving_user": "抱歉，我们只能在美国为SEC认可的投资者提供服务。",
-            "otpNotMatched": "Google authentication code not matched, please try again.",
+            "otpNotMatched": "谷歌验证码不匹配，请重试。",
             "userDocumentCannotChange": "您不能更改 KYC 信息。请联系管理员。",
             "missingUserDocuments": "用户还没有任何文档！",
             "userFirstNameInvalid": "名字无效",
@@ -328,12 +328,12 @@
             "systemError": "系统错误",
             "notEnoughConstantRepay": "您的固定余额不足以支付此操作",
             "invalidStatus": "此订单已处理。请刷新页面查看更新！",
-            "need_kyc": "For your security, please verify your identity before investing or withdrawing fiat (USD, for example). This step isn’t required for stablecoins.",
+            "need_kyc": "为了您的资产安全，请在投资或撤回法币（如美元）前核实您的身份。这一步不需要为稳定币。",
             "external_api_error": "您发送了太多要求，请稍候再试",
-            "invalidCoupon": "Invalid coupon code",
-            "usedCoupon": "Coupon is used",
-            "restrictedEmail": "Email is restricted",
-            "prvMaxWithdraw": "Prv is max withdraw"
+            "invalidCoupon": "无效的优惠券代码",
+            "usedCoupon": "使用优惠券",
+            "restrictedEmail": "电子邮件已被限制",
+            "prvMaxWithdraw": "Prv 是最大提款"
         },
         "withdrawGreaterThan": "最小提款金额是 {min}",
         "withdrawLessThanOrEqual": "最大提款金额为 {max}",
@@ -365,7 +365,7 @@
         "8002": "无效的文件大小",
         "8003": "无效的文件类型",
         "8004": "提交文件失败",
-        "9006": "Your wallet address invalid"
+        "9006": "您的钱包地址无效"
     },
     "form": {
         "required": "必填",
@@ -379,7 +379,7 @@
             "kycInformation": "KYC 信息",
             "myEmailPassword": "电子邮件和密码",
             "myInformation": "账户详情",
-            "securities": "Account security",
+            "securities": "账户安全",
             "sellOrders": "卖单",
             "buyOrders": "买单",
             "bookingOrders": "销售订单",
@@ -718,58 +718,58 @@
             "changeFailed": "请确保您输入了正确的旧密码"
         },
         "twoFa": {
-            "googleAuth": "Google Authentication",
-            "sMSAuth": "SMS Authentication",
-            "facebookButton": "Login with Facebook",
-            "googleButton": "Login with Google",
-            "labelOff": "Turn on now?",
-            "labelOn": "Disable",
-            "noteOn": "<p>Looking good.</p>\n            <p>You’re using Google 2FA to protect your account with your phone as well as your password.</p>",
-            "noteOff": "<p>Yikes – you’re not using Google 2FA.</p>\n            <p>Google 2FA uses your phone as well as your password to protect your account.</p>\n              <p>We strongly recommend you enable 2FA to protect your account from fraud, identity theft, and other abuse.</p>\n                <p>Enable 2FA now to double the security protection on your account.</p>",
+            "googleAuth": "谷歌身份验证",
+            "sMSAuth": "短信验证",
+            "facebookButton": "使用Facebook登录",
+            "googleButton": "使用Google登录",
+            "labelOff": "现在打开？",
+            "labelOn": "关闭",
+            "noteOn": "<p>看起来好。</p>\n            <p>您正在使用 Google 2FA 来保护您的帐户和密码。</p>",
+            "noteOff": "<p>Yikes — — 您不使用 Google 2FA。</p>\n            <p>Google 2FA 使用您的手机和密码来保护您的帐户。</p>\n              <p>我们强烈建议您启用 2FA 以保护您的帐户免受欺诈。 盗用身份和其他滥用。</p>\n                <p>现在启用 2FA 以便将您帐户上的安全保护增加一倍。</p>",
             "description2Fa": "重要操作（提款，转移等）将要求您通过Google Authenticator或Authy输入密码。",
-            "invalidatePassword": "Password not matched, please try again",
-            "invalidateOtp": "Google authentication code not matched, please try again",
+            "invalidatePassword": "密码不匹配，请重试",
+            "invalidateOtp": "Google 身份验证码不匹配，请重试",
             "qrScanModal": {
                 "title": "扫描二维码",
-                "step1": "Step 1",
-                "step2": "Step 2",
-                "description": "Please scan this code with Google Authenticator or Authy, then enter the code sent to you.",
-                "canNotScanCode": "If you are unable to scan the QR code, please enter this code manually into the app.",
+                "step1": "第 1 步",
+                "step2": "第 2 步",
+                "description": "请使用Google Authenticator或Authy扫描此代码，然后输入发送给您的代码。",
+                "canNotScanCode": "如果您无法扫描二维码，请手动将此代码输入应用程序。",
                 "inputCode": "输入密码",
-                "inputAuthCode": "Google authentication code",
-                "facebook": "Sign-in with your facebook account.",
-                "requiredFacebook": "You must sign-in with your facebook account.",
-                "google": "Sign-in with your google account.",
-                "requiredGoogle": "You must sign-in with your google account",
-                "inputPassword": "Enter password",
-                "requiredPassword": "Password is required",
-                "requiredCode": "Google authentication code is required",
-                "message": "Code copied to clipboard.",
+                "inputAuthCode": "Google 身份验证码",
+                "facebook": "使用您的 Facebook 帐户登录。",
+                "requiredFacebook": "您必须使用您的Facebook账户登录。",
+                "google": "使用您的 Google 帐号登录。",
+                "requiredGoogle": "您必须使用您的 Google 帐号登录",
+                "inputPassword": "输入密码",
+                "requiredPassword": "密码是必需的",
+                "requiredCode": "需要Google身份验证码",
+                "message": "代码已复制",
                 "close": "关闭",
                 "submit": "提交",
-                "cancel": "Cancel",
-                "confirm": "Confirm"
+                "cancel": "取消",
+                "confirm": "确认"
             },
             "disableModal": {
-                "title": "Disabled Google authenticator",
-                "description": "Please scan this code with Google Authenticator or Authy, then enter the code sent to you.",
-                "inputAuthCode": "Google authentication code",
-                "inputPassword": "Enter password",
-                "facebook": "Sign-in with your facebook account.",
-                "google": "Sign-in with your google account.",
-                "requiredFacebook": "You must sign-in with your facebook account.",
-                "requiredGoogle": "You must sign-in with your google account",
-                "requiredPassword": "Password is required",
-                "requiredCode": "Google authentication code is required",
-                "cancel": "Cancel",
-                "confirm": "Confirm"
+                "title": "关闭谷歌身份验证器",
+                "description": "请使用Google Authenticator或Authy扫描此代码，然后输入发送给您的代码。",
+                "inputAuthCode": "Google 身份验证码",
+                "inputPassword": "输入密码",
+                "facebook": "使用您的 Facebook 帐户登录。",
+                "google": "使用您的 Google 帐号登录。",
+                "requiredFacebook": "您必须使用您的Facebook账户登录。",
+                "requiredGoogle": "您必须使用您的 Google 帐号登录",
+                "requiredPassword": "密码是必需的",
+                "requiredCode": "需要Google身份验证码",
+                "cancel": "取消",
+                "confirm": "确认"
             },
             "backupModal": {
-                "title": "Enabled Google authenticator",
-                "label": "Please save this Key on paper",
-                "description": "This Key will allow you to recover your Google Authenticator in case of phone loss.",
-                "message": "Code copied to clipboard.",
-                "ok": "Done"
+                "title": "启用谷歌身份验证器",
+                "label": "请在纸上保存这个密钥",
+                "description": "此密钥将允许您在手机丢失时恢复您的 Google 身份验证器。",
+                "message": "代码已复制",
+                "ok": "完成"
             },
             "disable2FaModal": {
                 "title": "禁用2FA",
@@ -851,8 +851,8 @@
             "currency": "货币",
             "noHistoryData": "在此获取Constant",
             "fee": "手续费",
-            "received": "received",
-            "withdrawals": "Withdrawals",
+            "received": "已接收",
+            "withdrawals": "提取",
             "withdraw": "提取",
             "topup": "充值",
             "loadMore": "加载更多",
@@ -913,7 +913,7 @@
                 "12": "奖励",
                 "13": "利息",
                 "14": "从邀请返佣赚取",
-                "15": "Membership Reward",
+                "15": "会员奖励",
                 "101": "加成",
                 "received": "已接收"
             },
@@ -999,17 +999,17 @@
                 "trial": "已从试用用户收到：",
                 "detail": "风险检测"
             },
-            "fiat": "Fiat",
-            "collateral": "Collateral",
-            "collateralAmount": "Amount: ",
-            "collateralPay": "Pay: ",
-            "description": "Description: ",
+            "fiat": "法币",
+            "collateral": "抵押金",
+            "collateralAmount": "金额： ",
+            "collateralPay": "支付： ",
+            "description": "描述： ",
             "withdrawStatus": {
-                "0": "Pending",
-                "1": "Done",
-                "2": "Failed",
-                "3": "Approving",
-                "4": "Rejected"
+                "0": "待处理",
+                "1": "完成",
+                "2": "失败",
+                "3": "审批中",
+                "4": "已拒绝"
             }
         },
         "transferOrders": {
@@ -1216,10 +1216,10 @@
                 "totalInterestEarned": "您已经赚取了",
                 "noRecord": "您没有投资",
                 "getListFailed": "获取投资失败，请重试",
-                "createdDate": "Created Date",
+                "createdDate": "创建日期",
                 "amount": "本金",
-                "received": "received",
-                "matched": "matched",
+                "received": "已接收",
+                "matched": "已匹配",
                 "interest": "到目前为止的利 息",
                 "totalInterest": "利息总额",
                 "totalInterestDesc": "这是您将在整个期限内赚取的利息。如果借款人早日偿还，您将赚取最新的利息。",
@@ -1255,7 +1255,7 @@
                 "payOffLoanTitle": "归还贷款",
                 "allStatus": "全部",
                 "termStatusFilter": {
-                    "pending": "Pending",
+                    "pending": "待处理",
                     "matching": "匹配中",
                     "matched": "已匹配",
                     "closed": "已关闭",
@@ -1267,17 +1267,17 @@
                     "pending": "匹配中",
                     "closed": "完成",
                     "rejected": "已关闭",
-                    "pending_kyc": "Pending",
+                    "pending_kyc": "待处理",
                     "matched": "已匹配",
                     "matching": "匹配中",
                     "cancelled": "已关闭",
-                    "transferred_fiat": "Pending",
+                    "transferred_fiat": "待处理",
                     "partially_cancelled": "部分取消",
                     "approving": "审批中",
-                    "transferring_fiat": "Pending",
+                    "transferring_fiat": "待处理",
                     "closed_soon": "已匹配",
                     "": "",
-                    "picked": "Pending"
+                    "picked": "待处理"
                 },
                 "interestInfo": {
                     "header": {
@@ -1307,7 +1307,7 @@
                     },
                     "shareFbSuccess": "分享推荐链接成功"
                 },
-                "shareAndEarn": "Earn 10% of friends' interest: Refer now",
+                "shareAndEarn": "赚取10%的朋友的利息：立即参考",
                 "withdraw": "提取法币",
                 "withdrawFiat": "法币",
                 "withdrawCrypto": "加密货币",
@@ -1327,16 +1327,16 @@
                 "autoTopup": "自动充值",
                 "autoRenew": "自动再投资",
                 "autoRenewDesc": "苦干手工？开启这个功能，自动以同样的利率和条件进行再投资！",
-                "autoRenewLoan": "Auto renew",
-                "autoRenewLoanDesc": "Tired of manual labour? Turn this on to automatically re-loan at the same interest rate & term!",
+                "autoRenewLoan": "自动更新",
+                "autoRenewLoanDesc": "厌倦了体力劳动？打开此项可自动以相同的利率和期限重新贷款！",
                 "dialog": {
                     "payment": {
-                        "caption": "Payment required.",
-                        "amount": "Amount",
-                        "label": "Transfer to address",
-                        "message": "Address has been copied!",
-                        "description": "To repay your loan, please transfer {amount} {currency} to the address above.",
-                        "ok": "Close"
+                        "caption": "需要付款。",
+                        "amount": "金额",
+                        "label": "转到地址",
+                        "message": "地址已复制！",
+                        "description": "要还贷款，请将{amount}{currency}转到上面的地址。",
+                        "ok": "关闭"
                     },
                     "autoTopup": {
                         "messageConfirm": {
@@ -1356,19 +1356,19 @@
                     },
                     "autoRenew": {
                         "messageConfirm": {
-                            "true": "Are you sure you want to turn off auto renew?",
-                            "false": "When you repay your loan, your collateral balance will be used to secure a new loan order at the same amount, interest rate, and term."
+                            "true": "您确定要关闭自动更新吗？",
+                            "false": "当您偿还贷款时，您的抵押余额将用于以相同的金额、利率和期限获得新的贷款订单。"
                         },
                         "autoRenewCollateralSuccess": {
-                            "true": "Turn auto renew on successfully",
-                            "false": "Turn auto renew off successfully"
+                            "true": "自动更新成功",
+                            "false": "成功关闭自动更新"
                         },
                         "autoRenewCollateralFailed": {
-                            "true": "Turn auto top up on failed",
-                            "false": "Turn auto top up off failed"
+                            "true": "开启自动充值失败",
+                            "false": "开启自动充值失败"
                         },
-                        "confirm": "Yes",
-                        "cancel": "No"
+                        "confirm": "是",
+                        "cancel": "否"
                     },
                     "withdrawAccount": {
                         "title": "保存中",
@@ -1587,11 +1587,11 @@
             "balance": "{name} 余额: {balance} {symbol} 和余额奖励: {reward} {symbol}",
             "matched": "匹配: {amount} {symbol}",
             "withdraw": "提取",
-            "withdrawReward": "Withdraw",
+            "withdrawReward": "取款",
             "staking": "Stake",
-            "unStaking": "Unstake",
+            "unStaking": "取消Stake",
             "reward": "奖励",
-            "rewardWithdraw": "Withdraw",
+            "rewardWithdraw": "提款",
             "date": "日期",
             "upToNow": "直到现在。",
             "status": {
@@ -1626,18 +1626,18 @@
         "prices": "定价和服务时间",
         "blog": "Blog",
         "accountActivities": "帐户活动",
-        "memberShip": "Membership",
+        "memberShip": "会员\n",
         "login": {
-            "popupTitle": "Welcome to Constant",
+            "popupTitle": "欢迎使用 Constant。",
             "title": "登录您的账号",
             "username": "您的邮箱",
-            "email": "Email",
+            "email": "邮箱",
             "password": "密码",
-            "loginButton": "Log in",
+            "loginButton": "登录",
             "keepSignin": "保持登录状态",
             "registerText": "没有账户？",
-            "registerButton": "Sign up for free",
-            "forgetPassword": "Forgot password?",
+            "registerButton": "免费注册",
+            "forgetPassword": "忘记密码？",
             "requiredPassword": "请输入您的密码",
             "notValidPassword": "密码必须是8个字符或更多",
             "notValidUsername": "无效的邮箱",
@@ -1646,8 +1646,8 @@
             "warningVerify": "要开始交易，请花几分钟验证您的帐户。 {action}",
             "warningVerifyNow": "立即验证",
             "two2faRequired": "余额超过 1000 美元的所有用户需要2FA 认证",
-            "loginSocialTitle": "Log in instantly",
-            "loginEmailTitle": "or log in with email"
+            "loginSocialTitle": "即时登录",
+            "loginEmailTitle": "或使用邮箱登录"
         },
         "forgetPassword": {
             "title": "忘记密码？",
@@ -1679,8 +1679,8 @@
             "resetPasswordIntro": "您的新密码已更新。"
         },
         "register": {
-            "registerSocialTitle": "Sign up instantly",
-            "registerEmailTitle": "or sign up with email",
+            "registerSocialTitle": "即时注册",
+            "registerEmailTitle": "或用邮箱注册",
             "giftCode": "邀请码(可选)",
             "title": "创建您的帐户",
             "firstName": "名字",
@@ -1709,15 +1709,15 @@
             "notValidReCaptcha": "请验证您的 reCAPTCHA。",
             "agreement": "我证明我是18岁或18岁以上的人，我同意 {action}",
             "requiredAgreement": "请确认您已经阅读并同意用户协议和隐私政策",
-            "registerButton": "Sign up for free",
+            "registerButton": "免费注册",
             "loginText": "已经有一个帐户？",
-            "loginButton": "Log in",
+            "loginButton": "登录",
             "registerSuccessfully": "成功！欢迎来到Constant。我们已经向您的邮箱发送了一封验证邮件。",
             "agreementAction": "用户协议和隐私政策。",
             "registerFailed": "创建您的帐户失败，请重试",
             "referrerReferralCode": "您的推荐代码: {code}",
-            "promotionCode": "Promotion Code",
-            "promotionCodeRequired": "Please input Promotion Code"
+            "promotionCode": "促销代码",
+            "promotionCodeRequired": "请输入促销代码"
         },
         "userLogin": {
             "balance": "余额",
@@ -1730,9 +1730,9 @@
             "shareAndEarn": "分享和赚取$"
         },
         "account": {
-            "currentBalance": "Current Balance",
-            "interestRate": "Interest Rate",
-            "estimatedValue": "Estimated Value"
+            "currentBalance": "当前余额",
+            "interestRate": "利率",
+            "estimatedValue": "预计收入"
         }
     },
     "landingPage": {
@@ -2203,7 +2203,7 @@
             "subintroTitle3": "总是可靠的。",
             "subintroDesc3": "与其他数字货币不同，常数值保持稳定。 这意味着您可以获得一个congstant的1美元等值。在任何地点，任何时间都是如此。",
             "backToNewOrder": "下新订单",
-            "goHistory": "Orders and Transactions",
+            "goHistory": "订单和交易",
             "components": {
                 "orderInfo": {
                     "title": "划转确认",
@@ -2229,7 +2229,7 @@
                 "eos": "到 EOS 地址",
                 "tomo": "到TOMO 地址"
             },
-            "maxBalance": "Max transfer",
+            "maxBalance": "最大划转",
             "yourBalance": "您的余额",
             "validateMaxInput": "请确保您的余额足够。",
             "validateMaxInputBalanceZero": "请确保您的余额足够。",
@@ -2294,9 +2294,9 @@
             "subTitle": "<h2>4.50% APR。</h2>\n        <h2>即时资金</h2>\n        <h2>无需出售即可获取加密货币现金</h2>\n      ",
             "intro": {
                 "desc": {
-                    "1": "Secure escrow",
-                    "2": "No credit checks",
-                    "3": "Repay anytime"
+                    "1": "安全托管",
+                    "2": "无信用检查",
+                    "3": "随时还款"
                 }
             },
             "headLine": "想要支付您的信用卡、医疗账单或租金吗？ 只需输入您想要借款并在ETH存款的Constant， 它将安全地保存在Constant贷款智能合同。",
@@ -2316,7 +2316,7 @@
                 "endDateLabel": "结束日期",
                 "collateralNote": "对于这个币种，贷款最多需要24小时才能发放、偿还或充值。",
                 "collateralNoteFee": "手续费: {fee} {currency} (1%)",
-                "collateralNoteMatchedFee": "Fee: 1%",
+                "collateralNoteMatchedFee": "手续费：1%",
                 "collateralNoteTotal": "收到的贷款总额： {total} {currency}",
                 "collateralNoteDGXExtraFees": "Digix在收到任何DGX金额时扣除0.13%，我们需要增加这笔费用以保持贷款金额。",
                 "usingStaking": "通过staking少付你的贷款",
@@ -2459,7 +2459,7 @@
                 "collateralAddress": "担保地址",
                 "extraRate": "您的总利率将是来自 {rate}的 {date} 效果",
                 "exchangeRates": "汇率：1 {symbol}/{value} 美元",
-                "createdDate": "Created Date",
+                "createdDate": "创建时间",
                 "endTerm": "到期时间",
                 "principal": "本金",
                 "interests": "利息",
@@ -2523,8 +2523,8 @@
                     "liquidateChainPending": "清算链待定",
                     "liquidateDone": "清算完成",
                     "liquidateFailed": "清理失败",
-                    "payoffPrvPending": "Payoff Pending",
-                    "payPrvPending": "Payoff Pending"
+                    "payoffPrvPending": "等待付款",
+                    "payPrvPending": "等待付款"
                 },
                 "mapStatus2": {
                     "pending": "待处理",
@@ -2566,11 +2566,11 @@
                 "totalRepayment": "偿还总额",
                 "totalPayment": "总付款金额",
                 "repaymentByCollateral": "您想要通过担保金支付吗？",
-                "repaymentMethod": "Payment method: ",
+                "repaymentMethod": "支付方式： ",
                 "willPayCollateral": "抵押金将被支付是",
                 "willReturnCollateral": "担保金将被退还是",
-                "repayAddress": "Repay address",
-                "copyMessage": "Address has been copied!",
+                "repayAddress": "还款地址",
+                "copyMessage": "地址已复制！",
                 "errorRemainCollateral": "你现在不能拿回剩余的抵押金",
                 "errorRemainCollateralHtml": "请等待帮助，或在 <a href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>\n        联系我们        ",
                 "errorCollateralNotEnoughHtml": "您的抵押值是贷款值的 {percent}%。因此您不能收回过多。",
@@ -2594,11 +2594,11 @@
                     "createdDate": "已创建",
                     "dueDate": "到期",
                     "collateralValueDesc": "这表示您的抵押价值占您贷款的百分比。 它计入了迄今累积的利息以及如果你选择今天还款的还款。 如果下降到110%，您的抵押品将被清算，差额将退还给您。",
-                    "repayAddress": "Repay Address"
+                    "repayAddress": "还款地址"
                 },
                 "paymentMethod": {
-                    "const": "USD",
-                    "collateral": "Collateral",
+                    "const": "美金",
+                    "collateral": "抵押金",
                     "prv": "PRV"
                 }
             },
@@ -3305,9 +3305,9 @@
         },
         "intro": {
             "desc": {
-                "1": "Fully secured by collateral",
-                "2": "Compounded & paid every second",
-                "3": "Unlimited free withdrawals"
+                "1": "完全由抵押金担保",
+                "2": "复利，每秒支付",
+                "3": "无限免费提款"
             }
         }
     },
@@ -3405,7 +3405,7 @@
         "banner": {
             "title": "像您的银行一样，但更好了。",
             "title1": "<h1>全球第一 <span class=\"darkorange4\">安全</span> 对等借贷平台。</h1>\n      ",
-            "subTitle": "Your investments are fully backed by borrower collateral and smart contracts. Unmatched portions earn an automatic 5% APY, and can be withdrawn anytime.",
+            "subTitle": "您的投资完全有借贷者抵押和智能合同的支持。不匹配的部分可以自动获得5%的年化率，并且可以随时提取。",
             "cta": "开户",
             "ctaDesc": "可以免费打开帐户。可用地区：世界。",
             "invest": {
@@ -3442,20 +3442,20 @@
             "desc": "投资者存放任何金额，并选择他们想要赚取的利率。 借款人选择他们想要支付多少利息，并将相当于他们想要借款的150%的抵押金放入贷方。 匹配的算法将它们连接起来，智能合同技术使整个过程自动化。",
             "content": {
                 "1": {
-                    "title": "1. Investor",
-                    "desc": "Investors deposit any amount and choose the interest rate they want to earn."
+                    "title": "1. 投资者",
+                    "desc": "投资者可以任意存款，并选择他们想要赚取的利率。"
                 },
                 "2": {
-                    "title": "2. Secure escrow",
-                    "desc": "Borrower collateral is securely escrowed in either a smart contract (ETH only), web wallet, or cold wallet."
+                    "title": "2.安全托管",
+                    "desc": "借款人抵押金安全地托管在智能合约（仅ETH）、网络钱包或冷钱包中。"
                 },
                 "3": {
-                    "title": "3. Borrower",
-                    "desc": "Borrowers choose how much interest they want to pay, and put down collateral equal to 150% of what they want to borrow."
+                    "title": "3.借贷者",
+                    "desc": "借贷者选择他们想付多少利息，并将相当于他们想要借款的150%的抵押金放入贷方。"
                 },
                 "4": {
-                    "title": "4. Constant P2P Lending Platform",
-                    "desc": "The Constant algorithm matches investors and borrowers on their chosen rates and terms."
+                    "title": "4. ConstantP2P贷款平台",
+                    "desc": "Constant算法根据投资者和借款人选择的利率和条件进行匹配。"
                 }
             }
         },
@@ -3690,18 +3690,18 @@
                 },
                 "nguyenBui": {
                     "name": "Nguyen Bui",
-                    "position": "Head of Growth",
-                    "description": "\n            <p>Nguyen is in charge of Constant Growth hacking.  He has 14 years of experience in marketing and business development in Vietnam, Singapore and global crypto market. Previously, he was Director of marketing and partnership at TomoChain and Business leader at Infinity Blockchain Labs.</p>\n            <p>Nguyen hold MBA degree from Nanyang Technological University in Singapore and Bachelor of Engineering at Hanoi University of Science and Technology.</p>"
+                    "position": "增长总监",
+                    "description": "\n            <p>Nguyen 负责Constant Growth hacking。 他在越南、新加坡和全球加密市场销售和商业发展方面拥有14年的经验。 此前，他曾任TomoChain公司营销主任和无限区块链实验室商业领袖。</p>\n            <p>Nguyen拥有新加坡南阳技术大学的MBA学位和河内科学技术大学的工程学士学位。</p>"
                 },
                 "chris": {
                     "name": "Chris Roper",
-                    "position": "Communications Manager",
-                    "description": "\n            <p>Chris leads comms and content for the Constant growth team. Before joining Constant, Chris spent five years as a freelance copywriter for various blockchain, finance, and technology firms. Prior to that, Chris wrote for Octopus Energy, a renewable energy startup in London, helping the British public navigate a notoriously complex industry.</p>\n            <p>Chris believes the right words can inspire positive change and has dedicated his career to helping people improve their lives through technology. At Constant, Chris writes useful content, clear communications, and relatable advice that helps customers do more with their money.</p>\n          "
+                    "position": "社区经理",
+                    "description": "\n            <p>Chris负责持续增长团队的沟通和内容。在加入Constant之前，Chris曾在多家区块链、金融和技术公司担任过5年的自由撰稿人。在此之前，Chris曾为伦敦一家可再生能源初创公司章鱼能源（Octopus Energy）撰文，帮助英国公众驾驭一个众所周知的复杂行业。</p>\n            <p>Chris 认为正确的言辞能够激发积极的变化，并已将他的职业生涯致力于帮助人们通过技术改善生活。在Constant，Chris撰写有用的内容、清晰的沟通和相关的建议，帮助客户用他们的钱做更多的事情。</p>\n          "
                 },
                 "peter": {
                     "name": "Peter Upton",
-                    "position": "Social Media Manager",
-                    "description": "\n            <p>Peter is Constant’s community liaison. He runs social media and promotes the Constant brand as well as major collaborations and partnerships on the platform. Peter has a Bachelor’s Degree in Journalism from Indiana University, specializing in advertising and public relations.</p>\n            <p>Peter has run social media for a major university in the US and worked on experiential marketing for brands like Heineken, McVities, and Nickelodeon. He previously spent one year teaching creative advertising at Yitong college in China.</p>\n          "
+                    "position": "社交媒体经理",
+                    "description": "\n            <p>Peter 是Constant社区联络人。他经营社交媒体，并在平台上推广Constant品牌以及主要合作和伙伴关系。Peter拥有印第安纳大学新闻学学士学位，专攻广告和公共关系。。</p>\n            <p>Peter 在美国一所大学经营社交媒体，并为喜力（Heineken）、麦维迪（McVities）和尼克洛登（Nickelodeon）等品牌从事体验营销。此前，他曾在中国易通学院教授创意广告一年。</p>\n          "
                 }
             }
         },
@@ -3724,24 +3724,24 @@
             "intro": {
                 "content": "\n          <h5>以您想要的方式</h5>\n          <br />\n          <span>\n            <h2>设置您自己的费率。</h2>\n            <h2>不收费。</h2>\n            <h2>没有最低资本。</h2>\n            <h2>随时提取。</h2>\n          </span>\n          <br />\n          <h5>\n          以您选择的利率借出资产， 向借款人提供150%的担保。 您的资金受到智能合约的保护，可以随时提款。\n          </h5>\n        ",
                 "desc": {
-                    "1": "Fully secured by collateral",
-                    "2": "Your own rates and terms",
-                    "3": "24/7 customer service"
+                    "1": "完全由抵押金担保",
+                    "2": "您自己的利率和期限",
+                    "3": "24/7 客户服务"
                 }
             },
             "form": {
                 "text1": "设置您自己的借贷条款",
-                "text2": "Invest at the current market rate of 9.00% and find a match instantly, or increase your rate and wait for a matching order.",
+                "text2": "以当前9.00%的市场价格投资并即时找到匹配，或提高您的比率，等待匹配的订单。",
                 "text3": "我们给你1000美元的试投资。你所要做的就是选择你的价格，我们会给你找到匹配的。审判结束后，我们收回1000美元，但利息由你保管。",
                 "text4": "\n          <h5>您几乎完成了。</h5>\n          <p>为了您的安全，我们需要您验证您的ID才能使用Constant。</p>\n        ",
                 "text5": "免费试用",
                 "text6": "\n          <p>\n            <span class=\"darkorange4 bold\">想立即获得借款人吗？</span> 以10%的当前市场价格投资。 或者提高您的比率并等待匹配的订单。\n          </p>\n        ",
                 "btn1": "立即投资",
-                "textLogin": "Log in",
-                "textRegister": "Sign up",
-                "or": "or",
+                "textLogin": "登录",
+                "textRegister": "注册",
+                "or": "或",
                 "btn2": "立即投资",
-                "deposit": "to deposit now",
+                "deposit": "立即存款",
                 "btnBorrow": "立即借款",
                 "btnVerify": "立即验证",
                 "btnTrial": "开始您的免费试用",
@@ -3807,7 +3807,7 @@
                 "btnConfirm": "确认",
                 "btnBack": "返回",
                 "zelleTitle": "<p className=\"bold\">最快的方式是 <strong>Zelle</strong>。</p>\n        ",
-                "zelleDesc": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n          <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n        ",
+                "zelleDesc": "<p>对于直接存款和电汇，我们在各大银行都有账户，可以更快地收到您的存款。</p>\n          <p>请选择最方便您转帐的银行。</p>\n        ",
                 "zelle1": "<p>金额: {amount} 美元</p>\n          <p>发送到: <strong>finance@myconstant.com</strong></p>\n        ",
                 "zelle": "<p>金额: {amount} 美元</p>\n          <p>发送到: <strong>finance@myconstant. om</strong></p>\n          <br /><br />\n          <p>我们推荐Zelle，因为它比直接存款快， 比电汇更便宜。</p>\n          <p>没有Zelle？ 只需通过您银行的网站或手机应用注册服务，即可使用电子邮件地址或电话号码。</p>\n        ",
                 "bankChosenMessage1": "<p>用于直接存款和电汇。 我们在主流银行有账户可以更快地收到您的存款。</p>\n          <p>请选择最方便您转账的银行。</p>\n        ",
@@ -4065,8 +4065,8 @@
     "modules": {
         "faqs": {
             "title": "用户的最热门问题",
-            "viewAll": "View all",
-            "hide": "Hide"
+            "viewAll": "查看全部",
+            "hide": "隐藏"
         }
     },
     "proLending": {
@@ -4094,7 +4094,7 @@
             "matched": "已匹配"
         },
         "balances": {
-            "collateralBalances": "Coin balance",
+            "collateralBalances": "货币余额",
             "title": "余额",
             "titleDesc": "所有投资和附带存款都将在这里显示。",
             "withdraw": "提取",
@@ -4170,7 +4170,7 @@
                 "term": "期限（天）",
                 "termMonth": "{month}月-",
                 "investButton": "下投资订单",
-                "loginButton": "Log in or Sign up to invest",
+                "loginButton": "登录或注册以投资",
                 "invalidAmount": "金额必须小于 {maxAmount}",
                 "getFeeFailed": "无法在此时间内收取费用，请重试。",
                 "fee": "投资费用： <span class=\"amount\">{fee}</span> {currency}",
@@ -4192,19 +4192,19 @@
                 "maxRateTooltip": "这是您愿意支付贷款的年利率(APR)。 如果有投资者愿意减少收入，你将支付较低的利率。",
                 "minTermTooltip": "这是您想要借款的最短时间。",
                 "buttonText": "下借款单",
-                "loginButton": "Log in or Sign up to borrow",
-                "amountRequired": "Amount is required to make a borrow!",
-                "amountMin": "The minimum amount that you can borrow is {amount}",
-                "collateralRequired": "Collateral amount is required to make a borrow!",
-                "rateRequired": "Interest rate is required to make a borrow!",
-                "rateMax": "Interest rate must be less than {rate}%",
-                "collateralNoteFee": "Fee: {fee} {currency} (1%)",
-                "collateralNoteMatchedFee": "Fee: 1%",
-                "collateralNoteTotal": "Total loan received: {total} {currency}",
-                "usingStaking": "Pay less on your loan through staking",
-                "usingStakingMobile": "Pay less with staking",
-                "usingStakingDesc": "Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.",
-                "stakingMinAmount": "stake amount must be great than {minVal} {currency}"
+                "loginButton": "登录或注册借款。",
+                "amountRequired": "借款需要金额！",
+                "amountMin": "您可以借入的最低金额是 {amount}",
+                "collateralRequired": "借款需要抵押金！",
+                "rateRequired": "贷款需要利率！",
+                "rateMax": "利率必须小于 {rate}%",
+                "collateralNoteFee": "手续费: {fee} {currency} (1%)",
+                "collateralNoteMatchedFee": "手续费：1%",
+                "collateralNoteTotal": "收到的贷款总额： {total} {currency}",
+                "usingStaking": "通过staking少付你的贷款",
+                "usingStakingMobile": "通过staking少付",
+                "usingStakingDesc": "将您的抵押金存入我们的masternode池，以节省您贷款的{discount}%。请注意，抵押金需要2个工作日才能提取，您不能收回超额部分。",
+                "stakingMinAmount": "Stake金额必须大于 {minVal} {currency}"
             },
             "createdSuccess": "您的借款已成功创建",
             "errorMsgs": {
@@ -4252,25 +4252,25 @@
         "v1": {
             "howItWorks": {
                 "step1": {
-                    "title": "Create your referral link",
-                    "desc": "Open an account to get your unique referral link"
+                    "title": "创建您的邀请链接",
+                    "desc": "打开一个帐户来获取您唯一的邀请链接"
                 },
                 "step2": {
-                    "title": "Refer friends",
-                    "desc": "Invite your friends by email or share your unique referral link on social media"
+                    "title": "邀请好友",
+                    "desc": "通过电子邮件邀请您的朋友或在社交媒体上共享您独特的邀请链接"
                 },
                 "step3": {
-                    "title": "Earn together",
-                    "desc": "Get paid every time your friend invests or borrows"
+                    "title": "一起挣钱",
+                    "desc": "每次你的朋友投资或借款都能得到返佣"
                 }
             }
         },
         "referral_history": {
-            "user_email": "Friend’s email address",
-            "value": "Your earnings ",
-            "object_type": "Type",
-            "object_amount": "Amount (USD)",
-            "created_at": "Date & Time"
+            "user_email": "朋友的邮箱",
+            "value": "您的收入 ",
+            "object_type": "类型",
+            "object_amount": "金额(美金）",
+            "created_at": "日期 & 时间："
         },
         "invite": {
             "emailPlaceholder": "输入电子邮件地址"
@@ -4291,7 +4291,7 @@
             "fund": "基金",
             "point": "STAR",
             "flex": "FLEX",
-            "date": "Date & Time",
+            "date": "日期 & 时间：",
             "statusDesc": "<p>赚取STAR有三个步骤。</p>\n                  <p>1/3 你的好友签名。</p>\n                  <p>2/3 你的朋友投资或借款 至少$1 000在30天。</p>\n                  <p>3/3 您的朋友期限结束后立即收到STAR。</p>",
             "title": "邀请好友"
         },
@@ -4336,15 +4336,15 @@
         "action": "获得 $10"
     },
     "borrowHeader": {
-        "desc": "Get cash or stablecoins for a $50 Thanksgiving reward",
-        "action": "Borrow now",
-        "ruleDesc": "New customers only. Promotion starts 00:00 GMT 11/21/19 and ends 23:59 GMT 11/28/19. Available rewards: $10 (minimum loan $1,000), $20 (minimum loan $2,000), and $50 (minimum loan $5,000). Minimums apply to single loans only"
+        "desc": "获得现金或稳定币为50美元的感恩节奖励",
+        "action": "立刻借款",
+        "ruleDesc": "仅限新客户。促销活动00:00 GMT 11/21/19 开始，到 23:59 GMT 11/28/19 结束。可用奖励：10美元（最低贷款1000美元）、20美元（最低贷款2000美元）和50美元（最低贷款5000美元）。最低限额只适用于贷款"
     },
     "menuMobile": {
         "btnSignIn": "登录",
         "account": "账户",
-        "history": "History",
-        "membership": "Membership",
+        "history": "历史",
+        "membership": "会员\n",
         "btnDeposit": "充值",
         "btnReferral": "<div class=\"textLeft\"><small>分享与收入</small><div>货币</div></div>",
         "btnTransfer": "划转",
@@ -4368,9 +4368,9 @@
         "team": "团队",
         "security": "安全",
         "signout": "注销",
-        "goBack": "Go back",
-        "aboutYou": "About You",
-        "accountActivity": "Account Activity"
+        "goBack": "返回",
+        "aboutYou": "关于你",
+        "accountActivity": "帐户活动"
     },
     "airdrop": {
         "endedTitle": "持续的STARD活动现已结束（2019年10月24日10时0分，上午GMT+7）。 我们已达到10 000个STAR上限，并感谢你们大家的支持。",
@@ -4493,7 +4493,7 @@
                 "addressDesc": "正在接收加密钱包地址",
                 "maxAmount": "您的金额必须小于 {maxAmount} {symbol}。",
                 "withdrawFailed": "出错了。请重试。",
-                "withdrawAddressFailed": "Your wallet address invalid. Please try again.",
+                "withdrawAddressFailed": "您的钱包地址无效。请重试。",
                 "withdrawSuccess": "您的取消抵押已完成。"
             },
             "withdraw": {
@@ -4504,7 +4504,7 @@
                 "addressDesc": "正在接收加密钱包地址",
                 "maxAmount": "您的金额必须小于 {maxAmount} {symbol}。",
                 "withdrawFailed": "出错了。请重试。",
-                "withdrawAddressFailed": "Your wallet address invalid. Please try again.",
+                "withdrawAddressFailed": "您的钱包地址无效。请重试。",
                 "withdrawSuccess": "您的提取已完成。"
             },
             "submit": "提交",
@@ -4589,11 +4589,11 @@
         }
     },
     "ourPartners": {
-        "title": "Our Partners",
-        "desc": "We are working closely with"
+        "title": "我们的合作伙伴",
+        "desc": "我们正在密切合作"
     },
     "ourPress": {
-        "title": "Our Press",
+        "title": "我们的新闻",
         "press": {
             "press1": {
                 "name": "Hacker Noon",
@@ -4621,15 +4621,15 @@
             },
             "press7": {
                 "name": "",
-                "desc": "And when it comes to pioneering a new generation of fintech platforms, Constant provides a measuring stick for the industry’s progress."
+                "desc": "当谈到开创新一代金融科技平台时，Constant为该行业的进步提供了一个衡量标准。"
             },
             "press8": {
                 "name": "",
-                "desc": "<p>And one DeFi platform, Constant, a secured P2P lending startup that leverages smart contracts on Ethereum, has garnered significant traction over the last several months — capitalizing on a unique offering and the technology underscoring the ascendance of open financial protocols.</p>"
+                "desc": "<p>而DeFi平台Constant，一家利用以太坊智能合约的安全P2P借贷初创公司，在过去几个月里获得了巨大的吸引力——利用独特的产品和强调开放金融协议优势的技术</p>"
             },
             "press9": {
                 "name": "",
-                "desc": "<p>Constant works by enabling borrowers to stake liquid capital via over-collateralized crypto assets (e.g., Ether) based on an LTV ratio. Subsequently, borrowers can “cherrypick” the best deals enumerated on Constant’s interface, selecting the best interest rates that are posted independently by each lending peer. The opposite is similar for lenders, who can choose to set custom interest rates and terms, which borrowers can then decide from.</p>"
+                "desc": "<p>Constant的工作原理是使借款人能够通过基于LTV比率的过度抵押加密资产（例如Ether）来持有流动资本。随后，借款人可以在Constant的界面上“选择”列出的最佳交易，选择由每个贷款同行独立发布的最佳利率。与此相反的是，贷款人可以选择设定自定义利率和条款，然后借款人可以从中做出决定</p>"
             }
         },
         "desc": {
@@ -4649,10 +4649,10 @@
         "rewardBalanceMobile": "奖励",
         "action": "操作",
         "withdraw": "提取",
-        "withdrawReward": "Withdraw",
+        "withdrawReward": "提取",
         "deposit": "充值",
         "staking": "Stake",
-        "unStaking": "Unstake",
+        "unStaking": "取消stake",
         "depositCollateralTitle": "存抵押资产",
         "hideSmallBalance": "隐藏小余额",
         "hideDesc": "估值为零。",
@@ -4684,54 +4684,54 @@
         }
     },
     "testimonials": {
-        "title": "Let’s get to know each other better",
-        "desc": "Transparency is important to us. Below, you’ll find reviews, testimonials, case studies, and other important information so you can use our platform with confidence.",
-        "viewAll": "View All"
+        "title": "让我们更好地相互了解",
+        "desc": "透明度对我们很重要。下面，您将找到评论、推荐、研究案例和其他重要信息，以便您能够自信地使用我们的平台。",
+        "viewAll": "查看全部"
     },
     "memberShip": {
         "intro": {
-            "title": "Membership Rewards",
-            "details": "Get exclusive platform benefits the more you invest or borrow"
+            "title": "会员奖励",
+            "details": "投资或借贷越多，就可以获得独家平台收益"
         },
-        "caption": "Membership",
-        "expiredDate": "Your {value} points will expired in {date}",
-        "remaining": "{type} ${value} in {date} days",
-        "borrow": "Borrow",
-        "invest": "Invest",
-        "investOrBorrow": "Invest or Borrow",
-        "or": "Or",
-        "keepLevel": "{type} ${value} to keep your level",
-        "getLevelDate": "From {date}",
+        "caption": "会员\n",
+        "expiredDate": "您的 {value} 点将在 {date} 过期",
+        "remaining": "{type} ${value} 在 {date} 天",
+        "borrow": "借款",
+        "invest": "投资",
+        "investOrBorrow": "投资或借款",
+        "or": "或",
+        "keepLevel": "{type} ${value} 来保持您的等级",
+        "getLevelDate": "从{date}",
         "title": {
-            "silver": "Silver",
-            "gold": "Gold",
-            "platinum": "Platinum"
+            "silver": "银色",
+            "gold": "黄金",
+            "platinum": "铂金"
         },
         "get": {
-            "silver": "Get 100 CONST",
-            "gold": "Get 1 STAR",
-            "platinum": "Get 2 STAR"
+            "silver": "得到100 CONST",
+            "gold": "得到 1 STAR",
+            "platinum": "得到 2 STAR"
         },
         "take": {
-            "silver": "Take 100 CONST",
-            "gold": "Take 1 STAR",
-            "platinum": "Take 2 STAR"
+            "silver": "获取100 CONST",
+            "gold": "获取 1 STAR",
+            "platinum": "获取 2 STAR"
         },
         "desc": {
-            "silver": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} cashback when you become a Silver member.</p>\n              <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped}.</p>\n              <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>",
-            "gold": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} when you become a Gold member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>\n              <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped}.</p>\n              <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>",
-            "platinum": "<h4>What you get:</h4>\n                 <p><i class=\"fal fa-check\"></i> {cashback} when you become a Platinum member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>\n                <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped} of the LTV.</p>\n                <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>"
+            "silver": "<h4>你可以得到什么:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} c当您成为银卡会员时，可进行现金返还</p>\n              <p><i class=\"fal fa-check\"></i> 新投资订单的即时存款，上限为{上限}</p>\n              <p><i class=\"fal fa-check\"></i> 即时稳定币和加密货币提取</p>",
+            "gold": "<h4>你得到什么:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} 当你成为黄金会员。你可以用你的STAR兑换投资的{红利}红利利息或贷款的{红利}折扣</p>\n              <p><i class=\"fal fa-check\"></i>新投资订单的即时存款，上限为{上限}</p>\n              <p><i class=\"fal fa-check\"></i> 即时稳定币和加密货币提款</p>",
+            "platinum": "<h4>你会得到什么：</h4>\n                 <p><i class=\"fal fa-check\"></i> {cashback} 您可以在投资或贷款优惠时兑换STAR {bonus} 红利或 {bonus} 折扣。</p>\n                <p><i class=\"fal fa-check\"></i> 新投资订单的即时存款 限定在 {capped} 的 LTV 上。</p>\n                <p><i class=\"fal fa-check\"></i> 立刻提取稳定币加密货币。</p>"
         },
         "history": {
-            "title": "History",
-            "level": "Get level",
-            "reward": "Get reward",
-            "date": "Date"
+            "title": "历史",
+            "level": "获取级别",
+            "reward": "获得奖励",
+            "date": "日期"
         },
         "rewardType": {
-            "reward": "Stat",
-            "fiat": "CONST",
-            "null": "Not Available"
+            "reward": "STAR",
+            "fiat": "CONST\n",
+            "null": "无法使用"
         }
     }
 }

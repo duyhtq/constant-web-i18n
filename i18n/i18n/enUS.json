@@ -336,7 +336,7 @@
             "prvMaxWithdraw": "Prv is max withdraw"
         },
         "withdrawGreaterThan": "The minimum withdrawal amount is {min}",
-        "withdrawLessThanOrEqual": "The maximum withdrawal amount is {max}",
+        "withdrawLessThanOrEqual": "The maximum withdrawal amount is {max}. Please try other available methods - bank transfer, Paypal.",
         "reachDayLimit": "You have reached the daily Zelle withdrawal limit of $500. Please choose a different withdrawal method."
     },
     "errorCode": {
@@ -3236,7 +3236,7 @@
         "info": {
             "title": "Send money to anyone, anywhere.",
             "desc1": "All you need is an internet connection to make as many transfers as you like - any amount, anywhere in the world. Send money home, pay your international clients, transfer salaries to your distributed team. With a single click.",
-            "desc2": "Withdrawals to local bank accounts are friendly. No fees."
+            "desc2": "Note: only use this feature when you want to transfer money between Constant accounts."
         }
     },
     "transferCrypto": {

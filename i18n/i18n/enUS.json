@@ -3062,7 +3062,7 @@
         "s5": "Repaid"
     },
     "exchangeInputDepositForm": {
-        "minAmountRequired": "Please enter an amount larger than {amount} {currency}",
+        "minAmountRequired": "All investments must be at least {amount} {currency}",
         "minUsdRequired": "Please enter an amount larger than 0.01 USD",
         "minVndRequired": "Please enter an amount larger than 10,000 VND",
         "fiatAmountInputLabel": "Deposit amount",

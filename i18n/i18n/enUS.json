@@ -2344,7 +2344,7 @@
                 "whatCaption3": "No credit scoring",
                 "whatDesc0": "\n<p>Our P2P matching algorithm replaces centralized banks and allows you to tap into true market demand.</p>        ",
                 "whatDesc1": "<p>Loans secured by Ethereum (ETH) are protected by smart contracts that always run exactly as programmed.</p>\n",
-                "whatDesc2": "\n<p>We use a combination of smart contracts, web wallets, and offline wallets to protect your collateral while ensuring we can return it to you as quickly as possible.</p>",
+                "whatDesc2": "\n<p>Smart contracts and insured BitGo escrows protect your collateral while ensuring we can return it to you as quickly as possible.</p>",
                 "whatDesc3": "\n<p>No credit scoring or background checks. Get funds instantly, no month-long waiting games for approval.</p>        "
             },
             "howItWorks": {
@@ -3429,7 +3429,7 @@
             "question1": "What is peer-to-peer (P2P) lending?",
             "answer1": "<p>Constant is the first fully secured P2P lending platform. All investor funds are fully backed by collateral. Borrower collateral is stored safely in a smart contract or insured BitGo escrow, which means no one can touch it – not even us. Unlike other platforms, Constant also allows users to set their own interest rates and terms. </p>",
             "question2": "What makes Constant different from other P2P lending platforms?\n",
-            "answer2": "        <p>Constant is the first fully secured P2P lending platform. All investor funds are fully backed by collateral. Borrower collateral is stored safely in escrow, which means no one can touch it until it is transferred back to them after repayment.</p>\n        <p>Unlike other platforms, Constant also allows users to set their own interest rates and terms. \n        Ethereum powered smart contracts automate the loan agreement and always run exactly as programmed – ensuring both investors and borrowers are protected.\n        </p>",
+            "answer2": "        <p>Constant is the first fully secured P2P lending platform. All investor funds are fully backed by collateral. Borrower collateral is stored safely in a smart contract or insured BitGo escrow, which means no one can touch it – not even us. Unlike other platforms, Constant also allows users to set their own interest rates and terms</p>",
             "question3": "Who can participate?",
             "answer3": "<p>Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment).</p>",
             "question4": "How does Constant protect customers’ funds?",

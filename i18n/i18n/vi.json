@@ -31,7 +31,7 @@
             "wrongPassword": "Mật khẩu không hợp lệ",
             "placeholder": "Hãy đặt khoá cho phần giữ chỗ văn bản",
             "btn": "Hãy đặt khoá cho nút văn bản",
-            "close": "Close"
+            "close": "Đóng"
         },
         "local": {
             "type": {
@@ -110,7 +110,7 @@
             "address2": " Redlands, CA 92373, USA"
         },
         "getSocial": "Mạng xã hội",
-        "titleFoundation": "About",
+        "titleFoundation": "Giới thiệu",
         "titleConstant": "Mua Constant",
         "career": "Tuyển dụng",
         "about": "Đội ngũ",
@@ -137,7 +137,7 @@
         "borrowerAgreement": "Thoả thuận người vay",
         "investorAgreement": "Thoả thuận nhà đầu tư",
         "kycGuidelines": "Hướng dẫn KYC",
-        "contactUs": "Contact us",
+        "contactUs": "Liên hệ",
         "referral": "Chia sẻ & Nhận tiền",
         "paymentGateway": "Cổng thanh toán",
         "phone": {
@@ -316,7 +316,7 @@
             "createdBankExisted": "Tài khoản ngân hàng đã được đăng ký!",
             "trial_term_deposit_not_available": "Bản dùng thử giới thiệu Constant chỉ dành cho người dùng mới.",
             "not_pro_saving_user": "Xin lỗi, chúng tôi chỉ cung cấp dịch vụ tại Mỹ cho nhà đầu tư được SEC công nhận.",
-            "otpNotMatched": "Google authentication code not matched, please try again.",
+            "otpNotMatched": "Mã OTP không chính xác. Xin vui lòng thử lại.",
             "userDocumentCannotChange": "Bạn không thể thay đổi thông tin KYC. Vui lòng liên hệ admin để được hỗ trợ.",
             "missingUserDocuments": "Vui lòng tải lên các tài liệu cần thiết.\n \n",
             "userFirstNameInvalid": "Tên không hợp lệ",
@@ -328,11 +328,11 @@
             "systemError": "Lỗi hệ thống",
             "notEnoughConstantRepay": "Số dư Constant của bạn không đủ để thực hiện thao tác này",
             "invalidStatus": "Lệnh này đang được xử lý. Vui lòng làm mới trang để xem cập nhật!",
-            "need_kyc": "For your security, please verify your identity before investing or withdrawing fiat (USD, for example). This step isn’t required for stablecoins.",
+            "need_kyc": "Bạn phải được xác minh danh tính trước khi thực hiện các giao dịch bằng tiền mặt.",
             "external_api_error": "Bạn gửi quá nhiều đề nghị, vui lòng chờ và quay lại sau",
-            "invalidCoupon": "Invalid coupon code",
-            "usedCoupon": "Coupon is used",
-            "restrictedEmail": "Email is restricted",
+            "invalidCoupon": "Mã khuyến mãi không đúng. Xin vui lòng nhập lại.",
+            "usedCoupon": "Mã khuyến mãi đã được sử dụng.",
+            "restrictedEmail": "Tên miền email không hợp lệ.",
             "prvMaxWithdraw": "Prv is max withdraw"
         },
         "withdrawGreaterThan": "Lượng rút tối thiểu là {min}",
@@ -365,7 +365,7 @@
         "8002": "Dung lượng của tập tin phải nhỏ hơn 1.2 MB.",
         "8003": "Định dạng tập tin không phù hợp.",
         "8004": "Xảy ra lỗi khi tải tập tin lên. Xin vui lòng thử lại.",
-        "9006": "Your wallet address invalid"
+        "9006": "Địa chỉ ví không đúng."
     },
     "form": {
         "required": "Đã yêu cầu",
@@ -379,7 +379,7 @@
             "kycInformation": "Thông tin KYC",
             "myEmailPassword": "Email và mật khẩu",
             "myInformation": "Chi tiết tài khoản",
-            "securities": "Account security",
+            "securities": "Bảo mật tài khoản",
             "sellOrders": "Lệnh bán",
             "buyOrders": "Lệnh mua",
             "bookingOrders": "Lệnh giảm giá",
@@ -718,58 +718,58 @@
             "changeFailed": "Hãy chắc chắn bạn đã nhập đúng mật khẩu cũ"
         },
         "twoFa": {
-            "googleAuth": "Google Authentication",
-            "sMSAuth": "SMS Authentication",
-            "facebookButton": "Login with Facebook",
-            "googleButton": "Login with Google",
-            "labelOff": "Turn on now?",
-            "labelOn": "Disable",
-            "noteOn": "<p>Looking good.</p>\n            <p>You’re using Google 2FA to protect your account with your phone as well as your password.</p>",
-            "noteOff": "<p>Yikes – you’re not using Google 2FA.</p>\n            <p>Google 2FA uses your phone as well as your password to protect your account.</p>\n              <p>We strongly recommend you enable 2FA to protect your account from fraud, identity theft, and other abuse.</p>\n                <p>Enable 2FA now to double the security protection on your account.</p>",
+            "googleAuth": "Xác thực Google",
+            "sMSAuth": "Xác thực tin nhắn",
+            "facebookButton": "Đăng nhập bằng Facebook",
+            "googleButton": "Đăng nhập bằng Google",
+            "labelOff": "Bạn muốn bật bảo mật 2 lớp?",
+            "labelOn": "Tắt",
+            "noteOn": "<p>Bạn đã bật thành công bảo mật 2 lớp. Bạn sẽ phải cần cả mật khẩu và mã OTP để đăng nhập vào tài khoản.</p>",
+            "noteOff": "<p>Bạn hiện đang không sử dụng Google 2FA để bảo vệ tài khoản.</p>\n<p>Chúng tôi khuyến khích bật Google 2FA để tài khoản của bạn được bảo vệ tốt hơn, tránh được những rủi ro về bảo mật thông tin và lừa đảo.</p>\n<p>Bật Google 2FA ngay để bảo vệ tài khoản bằng hai lớp bảo mật.</p>",
             "description2Fa": "Hoạt động quan trọng (rút, chuyển,...) yêu cầu bạn nhập mật khẩu qua Google Authenticator hoặc Authy.",
-            "invalidatePassword": "Password not matched, please try again",
-            "invalidateOtp": "Google authentication code not matched, please try again",
+            "invalidatePassword": "Mật khẩu không đúng. Xin vui lòng thử lại.",
+            "invalidateOtp": "Mã OTP không đúng. Xin vui lòng thử lại.",
             "qrScanModal": {
                 "title": "Quét mã QR",
-                "step1": "Step 1",
-                "step2": "Step 2",
-                "description": "Please scan this code with Google Authenticator or Authy, then enter the code sent to you.",
-                "canNotScanCode": "If you are unable to scan the QR code, please enter this code manually into the app.",
+                "step1": "Bước 1",
+                "step2": "Bước 2",
+                "description": "Xin vui lòng scan mã QR này bằng Google Authenticator hoặc Authy rồi nhập mã OTP bạn thấy ở trong ứng dụng.",
+                "canNotScanCode": "Nếu bạn không thể scan mã QR, xin vui lòng nhập mã này trực tiếp vào Google Authenticator hoặc Authy.",
                 "inputCode": "Nhập mật khẩu",
-                "inputAuthCode": "Google authentication code",
-                "facebook": "Sign-in with your facebook account.",
-                "requiredFacebook": "You must sign-in with your facebook account.",
-                "google": "Sign-in with your google account.",
-                "requiredGoogle": "You must sign-in with your google account",
-                "inputPassword": "Enter password",
-                "requiredPassword": "Password is required",
-                "requiredCode": "Google authentication code is required",
-                "message": "Code copied to clipboard.",
+                "inputAuthCode": "Mã xác thực 2FA",
+                "facebook": "Đăng nhập bằng tài khoản Facebook.",
+                "requiredFacebook": "Bạn cần phải đăng nhập bằng tài khoản Facebook.",
+                "google": "Đăng nhập bằng tài khoản Google.",
+                "requiredGoogle": "Bạn cần phải đăng nhập bằng tài khoản Google",
+                "inputPassword": "Nhập mật khẩu",
+                "requiredPassword": "Xin vui lòng nhập mật khẩu",
+                "requiredCode": "Xin vui lòng nhập mã xác thực 2FA",
+                "message": "Đã sao chép vào bộ nhớ.",
                 "close": "Đóng",
                 "submit": "Gửi",
-                "cancel": "Cancel",
-                "confirm": "Confirm"
+                "cancel": "Huỷ",
+                "confirm": "Xác nhận"
             },
             "disableModal": {
-                "title": "Disabled Google authenticator",
-                "description": "Please scan this code with Google Authenticator or Authy, then enter the code sent to you.",
-                "inputAuthCode": "Google authentication code",
-                "inputPassword": "Enter password",
-                "facebook": "Sign-in with your facebook account.",
-                "google": "Sign-in with your google account.",
-                "requiredFacebook": "You must sign-in with your facebook account.",
-                "requiredGoogle": "You must sign-in with your google account",
-                "requiredPassword": "Password is required",
-                "requiredCode": "Google authentication code is required",
-                "cancel": "Cancel",
-                "confirm": "Confirm"
+                "title": "Tắt mã xác thực 2FA",
+                "description": "Xin vui lòng scan mã QR này bằng Google Authenticator hoặc Authy rồi nhập mã OTP bạn thấy ở trong ứng dụng.",
+                "inputAuthCode": "Mã xác thực 2FA",
+                "inputPassword": "Nhập mật khẩu",
+                "facebook": "Đăng nhập bằng tài khoản Facebook.",
+                "google": "Đăng nhập bằng tài khoản Google.",
+                "requiredFacebook": "Bạn cần phải đăng nhập bằng tài khoản Facebook.",
+                "requiredGoogle": "Bạn cần phải đăng nhập bằng tài khoản Google",
+                "requiredPassword": "Xin vui lòng nhập mật khẩu",
+                "requiredCode": "Xin vui lòng nhập mã xác thực 2FA",
+                "cancel": "Huỷ",
+                "confirm": "Xác nhận"
             },
             "backupModal": {
-                "title": "Enabled Google authenticator",
+                "title": "Kích hoạt xác thực Google",
                 "label": "Please save this Key on paper",
                 "description": "This Key will allow you to recover your Google Authenticator in case of phone loss.",
                 "message": "Code copied to clipboard.",
-                "ok": "Done"
+                "ok": "Hoàn thành"
             },
             "disable2FaModal": {
                 "title": "Vô hiệu hoá 2FA",
@@ -851,8 +851,8 @@
             "currency": "Tiền tệ",
             "noHistoryData": "Hãy nạp tiền để bắt đầu",
             "fee": "phí",
-            "received": "received",
-            "withdrawals": "Withdrawals",
+            "received": "đã nhận",
+            "withdrawals": "Rút",
             "withdraw": "Rút",
             "topup": "Nạp",
             "loadMore": "Tải thêm",
@@ -913,7 +913,7 @@
                 "12": "Phần thưởng",
                 "13": "Lãi suất",
                 "14": "Kiếm tiền từ chương trình giới thiệu Flex",
-                "15": "Membership Reward",
+                "15": "Phần thưởng thành viên",
                 "101": "Điểm thưởng",
                 "received": "Đã nhận"
             },
@@ -999,17 +999,17 @@
                 "trial": "Đã nhận từ người dùng thử:",
                 "detail": "Điều tra rủi ro"
             },
-            "fiat": "Fiat",
-            "collateral": "Collateral",
-            "collateralAmount": "Amount: ",
-            "collateralPay": "Pay: ",
-            "description": "Description: ",
+            "fiat": "Tiền mặt",
+            "collateral": "Tài sản thế chấp",
+            "collateralAmount": "Số lượng: ",
+            "collateralPay": "Thanh toán: ",
+            "description": "Chi tiết: ",
             "withdrawStatus": {
-                "0": "Pending",
-                "1": "Done",
-                "2": "Failed",
-                "3": "Approving",
-                "4": "Rejected"
+                "0": "Đang xử lý",
+                "1": "Hoàn thành",
+                "2": "Thất bại",
+                "3": "Đang chờ duyệt",
+                "4": "Từ chối"
             }
         },
         "transferOrders": {
@@ -1216,10 +1216,10 @@
                 "totalInterestEarned": "Lãi suất nhận được",
                 "noRecord": "Bạn vẫn chưa có khoản đầu tư nào",
                 "getListFailed": "Xin lỗi, có lỗi xảy ra. Vui lòng thử lại.",
-                "createdDate": "Created Date",
+                "createdDate": "Ngày tạo",
                 "amount": "Tiền gốc",
-                "received": "received",
-                "matched": "matched",
+                "received": "đã nhận",
+                "matched": "đã khớp lệnh",
                 "interest": "Lãi suất đến nay",
                 "totalInterest": "Tổng lãi suất",
                 "totalInterestDesc": "Đây là lãi suất bạn kiếm được trong nguyên một kỳ. Nếu người mượn hoàn trả sớm, bạn sẽ kiếm được lãi suất đến hiện tại.",
@@ -1255,7 +1255,7 @@
                 "payOffLoanTitle": "Khoản vay hoàn trả",
                 "allStatus": "Tất cả",
                 "termStatusFilter": {
-                    "pending": "Pending",
+                    "pending": "Đang chờ",
                     "matching": "Đang khớp lệnh",
                     "matched": "Đã khớp",
                     "closed": "Đã đóng",
@@ -1267,17 +1267,17 @@
                     "pending": "Đang khớp lệnh",
                     "closed": "Hoàn tất",
                     "rejected": "Đã đóng",
-                    "pending_kyc": "Pending",
+                    "pending_kyc": "Đang chờ",
                     "matched": "Đã khớp",
                     "matching": "Đang khớp lệnh",
                     "cancelled": "Đã đóng",
-                    "transferred_fiat": "Pending",
+                    "transferred_fiat": "Đang chờ",
                     "partially_cancelled": "Huỷ một phần",
                     "approving": "Đang chấp thuận",
-                    "transferring_fiat": "Pending",
+                    "transferring_fiat": "Đang chờ",
                     "closed_soon": "Đã khớp",
                     "": "",
-                    "picked": "Pending"
+                    "picked": "Đang chờ"
                 },
                 "interestInfo": {
                     "header": {
@@ -1307,7 +1307,7 @@
                     },
                     "shareFbSuccess": "Thành công! Cảm ơn đã nói với bạn bè của bạn về Constant."
                 },
-                "shareAndEarn": "Earn 10% of friends' interest: Refer now",
+                "shareAndEarn": "Giới thiệu thêm bạn bè để nhận 10% số tiền lãi của mỗi người mà bạn giới thiệu",
                 "withdraw": "Rút tiền ",
                 "withdrawFiat": "Tiền mặt",
                 "withdrawCrypto": "Tiền mã hoá",
@@ -1332,7 +1332,7 @@
                 "dialog": {
                     "payment": {
                         "caption": "Payment required.",
-                        "amount": "Amount",
+                        "amount": "Số lượng",
                         "label": "Transfer to address",
                         "message": "Address has been copied!",
                         "description": "To repay your loan, please transfer {amount} {currency} to the address above.",
@@ -1365,10 +1365,10 @@
                         },
                         "autoRenewCollateralFailed": {
                             "true": "Turn auto top up on failed",
-                            "false": "Turn auto top up off failed"
+                            "false": "Bật tự động top up thất bại"
                         },
-                        "confirm": "Yes",
-                        "cancel": "No"
+                        "confirm": "Đúng",
+                        "cancel": "Sai"
                     },
                     "withdrawAccount": {
                         "title": "Khoản đầu tư",
@@ -1587,11 +1587,11 @@
             "balance": "{name} tài khoản: {balance} {symbol} và phần thưởng tài khoản: {reward} {symbol}",
             "matched": "Khớp: {amount} {symbol}",
             "withdraw": "Rút tiền",
-            "withdrawReward": "Withdraw",
+            "withdrawReward": "Rút",
             "staking": "Stake",
             "unStaking": "Unstake",
             "reward": "Phần thưởng",
-            "rewardWithdraw": "Withdraw",
+            "rewardWithdraw": "Rút",
             "date": "Ngày",
             "upToNow": "Cho đến nay",
             "status": {
@@ -1626,18 +1626,18 @@
         "prices": "Chi phí & thời gian dịch vụ",
         "blog": "Blog",
         "accountActivities": "Hoạt động tài khoản",
-        "memberShip": "Membership",
+        "memberShip": "Thành viên",
         "login": {
-            "popupTitle": "Welcome to Constant",
+            "popupTitle": "Constant xin chào",
             "title": "Xin chào",
             "username": "Email của bạn",
             "email": "Email",
             "password": "Mật khẩu",
-            "loginButton": "Log in",
+            "loginButton": "Đăng nhập",
             "keepSignin": "Giữ trạng thái đăng nhập",
             "registerText": "Chưa có tài khoản?",
-            "registerButton": "Sign up for free",
-            "forgetPassword": "Forgot password?",
+            "registerButton": "Mở tài khoản miễn phí",
+            "forgetPassword": "Quên mật khẩu?",
             "requiredPassword": "Vui lòng nhập mật khẩu",
             "notValidPassword": "Mật khẩu phải có ít nhất 8 ký tự",
             "notValidUsername": "Địa chỉ email không hợp lệ",
@@ -1646,8 +1646,8 @@
             "warningVerify": "Hãy xác minh tài khoản để bắt đầu giao dịch. {action}",
             "warningVerifyNow": "Xác minh ngay",
             "two2faRequired": "Tất cả người dùng có số dư trên 1000 USD được yêu cầu xác thực 2FA",
-            "loginSocialTitle": "Log in instantly",
-            "loginEmailTitle": "or log in with email"
+            "loginSocialTitle": "Đăng nhập ngay lập tức",
+            "loginEmailTitle": "hoặc đăng nhập bằng email"
         },
         "forgetPassword": {
             "title": "Quên mật khẩu?",
@@ -1679,8 +1679,8 @@
             "resetPasswordIntro": "Mật khẩu mới của bạn đã được cập nhật"
         },
         "register": {
-            "registerSocialTitle": "Sign up instantly",
-            "registerEmailTitle": "or sign up with email",
+            "registerSocialTitle": "Đăng kí ngay lập tức",
+            "registerEmailTitle": "hoặc đăng kí bằng email",
             "giftCode": "Mã giới thiệu (không bắt buộc)",
             "title": "Tạo tài khoản",
             "firstName": "Đệm và Tên",
@@ -1709,15 +1709,15 @@
             "notValidReCaptcha": "Vui lòng xác nhận reCAPTCHA của bạn.",
             "agreement": "Tôi xác nhận tôi đã 18 tuổi và đồng ý với việc {action}",
             "requiredAgreement": "Xác nhận bạn đã đọc và đồng ý với Thoả thuận sử dụng và Chính sách bảo mật của chúng tôi",
-            "registerButton": "Sign up for free",
+            "registerButton": "Mở tài khoản miễn phí",
             "loginText": "Bạn đã có tài khoản chưa?",
-            "loginButton": "Log in",
+            "loginButton": "Đăng nhập",
             "registerSuccessfully": "Thành công! Chào mừng tới Constant. Chúng tôi đã gửi email xác minh tới hộp thư đến của bạn.",
             "agreementAction": "Thoả thuận sử dụng và Chính sách bảo mật.",
             "registerFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
             "referrerReferralCode": "Mã người được giới thiệu:{code}",
-            "promotionCode": "Promotion Code",
-            "promotionCodeRequired": "Please input Promotion Code"
+            "promotionCode": "Mã khuyến mãi",
+            "promotionCodeRequired": "Nhập mã khuyến mãi"
         },
         "userLogin": {
             "balance": "Số dư",
@@ -1730,9 +1730,9 @@
             "shareAndEarn": "Chia sẻ & Kiếm tiền"
         },
         "account": {
-            "currentBalance": "Current Balance",
-            "interestRate": "Interest Rate",
-            "estimatedValue": "Estimated Value"
+            "currentBalance": "Số dư",
+            "interestRate": "Lãi suất",
+            "estimatedValue": "Giá trị ước tính"
         }
     },
     "landingPage": {
@@ -2203,7 +2203,7 @@
             "subintroTitle3": "Luôn đáng tin cậy.",
             "subintroDesc3": "Constant không bao giờ mất giá. Người dùng luôn có thể đổi 1 Constant sang USD vào bất cứ lúc nào, ở bất cứ đâu.",
             "backToNewOrder": "Thực hiện chuyển khoản mới",
-            "goHistory": "Orders and Transactions",
+            "goHistory": "Lệnh và giao dịch",
             "components": {
                 "orderInfo": {
                     "title": "Xác nhận chuyển khoản",
@@ -2229,7 +2229,7 @@
                 "eos": "Tới một địa chỉ EOS",
                 "tomo": "Tới một địa chỉ TOMO"
             },
-            "maxBalance": "Max transfer",
+            "maxBalance": "Hạn mức",
             "yourBalance": "Số dư của bạn",
             "validateMaxInput": "Vui lòng đảm bảo bạn có đủ số dư",
             "validateMaxInputBalanceZero": "Vui lòng đảm bảo bạn có đủ số dư",
@@ -2316,7 +2316,7 @@
                 "endDateLabel": "Ngày kết thúc",
                 "collateralNote": "Đối với đồng tiền này, các khoản vay sẽ mất tới 24 giờ để được cấp, hoàn trả hoặc nạp thêm.\n",
                 "collateralNoteFee": "Phí: {fee}{currency} (1%)",
-                "collateralNoteMatchedFee": "Fee: 1%",
+                "collateralNoteMatchedFee": "Phí: 1%",
                 "collateralNoteTotal": "Tổng khoản vay nhận được: {total} {currency}",
                 "collateralNoteDGXExtraFees": "Digix khấu trừ 0,13% khi nhận bất kỳ số tiền nào dưới dạng DGX, chúng tôi cần thêm khoản phí này để duy trì số tiền cho vay.\n",
                 "usingStaking": "Hoàn trả khoản vay ít hơn thông qua staking",
@@ -2459,7 +2459,7 @@
                 "collateralAddress": "Địa chỉ tài sản thế chấp",
                 "extraRate": "Lãi suất tổng hợp của bạn là {rate}% có hiệu lực từ ngày {date}",
                 "exchangeRates": "Tỷ giá: 1 {symbol}/{value} USD",
-                "createdDate": "Created Date",
+                "createdDate": "Ngày tạo",
                 "endTerm": "Kỳ hạn kết thúc",
                 "principal": "Tiền gốc",
                 "interests": "Lãi suất",
@@ -4703,14 +4703,14 @@
         "keepLevel": "{type} ${value} to keep your level",
         "getLevelDate": "From {date}",
         "title": {
-            "silver": "Silver",
-            "gold": "Gold",
-            "platinum": "Platinum"
+            "silver": "Vàng",
+            "gold": "Bạch kim",
+            "platinum": "Kim cương"
         },
         "get": {
-            "silver": "Get 100 CONST",
-            "gold": "Get 1 STAR",
-            "platinum": "Get 2 STAR"
+            "silver": "Nhận 100 USD",
+            "gold": "Nhận 1 STAR",
+            "platinum": "Nhận 2 STAR"
         },
         "take": {
             "silver": "Take 100 CONST",
@@ -4731,7 +4731,7 @@
         "rewardType": {
             "reward": "Stat",
             "fiat": "CONST",
-            "null": "Not Available"
+            "null": "Không hợp lệ"
         }
     }
 }

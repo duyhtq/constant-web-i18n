@@ -1258,7 +1258,7 @@
                     "pending": "Pending",
                     "matching": "Matching",
                     "matched": "Matched",
-                    "closed": "Closed",
+                    "closed": "Cancelled",
                     "allStatus": "All",
                     "done": "Done"
                 },
@@ -2531,7 +2531,7 @@
                     "recieved": "Matching",
                     "accepted": "Matched",
                     "payingInterest": "Interest due",
-                    "done": "Closed",
+                    "done": "Done",
                     "withdrawed": "Withdrawn",
                     "tnxFailed": "Please try again",
                     "cancelled": "Cancelled",

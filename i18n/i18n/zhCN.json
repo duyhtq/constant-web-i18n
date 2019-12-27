@@ -42,7 +42,8 @@
     },
     "lang": {
         "en": "英文",
-        "vn": "越南语"
+        "vn": "越南语",
+        "zh": "简体中文"
     },
     "validation": {
         "csv": "请输入有效的文件类型（csv）。"
@@ -136,6 +137,8 @@
         "copyright2": "{term}",
         "borrowerAgreement": "借方协议",
         "investorAgreement": "投资者协议",
+        "AMLPolicy": "AML Policy",
+        "membership": "Membership",
         "kycGuidelines": "KYC 教程",
         "contactUs": "联系我们",
         "referral": "分享和赚取$",
@@ -294,7 +297,7 @@
         "taxIDValid": "请输入一个有效的 ID 号码",
         "expiredSession": "您的登录信息已过期，请重新登录。",
         "serverCode": {
-            "requestFailed": "发生错误，请重试！(500)",
+            "requestFailed": "Something went wrong. Please refresh your browser and try again.",
             "generalCode500": "发生错误，请重试！(500)",
             "generalCode400": "发生错误，请重试！(400)",
             "generalError": "抱歉，出错了，请重试。",
@@ -333,7 +336,10 @@
             "invalidCoupon": "无效的优惠券代码",
             "usedCoupon": "使用优惠券",
             "restrictedEmail": "电子邮件已被限制",
-            "prvMaxWithdraw": "Prv 是最大提款"
+            "prvMaxWithdraw": "Prv 是最大提款",
+            "inValidWalletAddress": "Receive address invalid",
+            "": "Opps! Something went wrong, please try again",
+            "loginFailure": "Please make sure your email and password are correct."
         },
         "withdrawGreaterThan": "最小提款金额是 {min}",
         "withdrawLessThanOrEqual": "最大提款金额为 {max}",
@@ -782,13 +788,49 @@
                 "inputCode": "输入密码",
                 "close": "关闭",
                 "submit": "提交",
-                "message": "谷歌身份验证"
+                "message": "谷歌身份验证",
+                "popupTitle": "Two-factor Authentication",
+                "newTitle": "Google Authentication",
+                "newInputCode": "Please input the 6-digit code from your Google Authenticator app.",
+                "cantAccess": "Can’t access Google Authentication?"
             },
             "disable2FaSuccess": "禁用两步验证成功！",
             "enable2FaSuccess": "启用两步验证成功！"
         },
         "setting": {
             "title": "常规设置"
+        },
+        "flexInterestConfig": {
+            "title": "Earn 5% APY on your balance with Flex",
+            "label": "Earn 5% APY through Flex",
+            "noteOn": "Your balance is earning 5% APY through Flex. You can withdraw anytime for free.",
+            "noteOff": "Your balance is escrowed with Prime Trust and insured to $130,000,000.",
+            "desc": "What would you like to do with your balance?",
+            "descDesc": "<p>You can choose to earn 5% APY on your balance with Flex.</p>\n                <p>Flex is a lending pool that uses Compound Finance technology to earn you interest. All lending is secured by borrower collateral, which protects your funds, and you can withdraw anytime for free.</p>\n                <p>If you disable Flex, your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust store your funds across multiple insured bank accounts, giving total coverage of $130,000,000, but you won’t earn interest.</p>\n",
+            "enableFlex": {
+                "messageConfirm": {
+                    "true": "Your balance is escrowed with Prime Trust and insured to $130,000,000.",
+                    "false": "Your balance earns 5% APY through Flex. You can withdraw anytime for free."
+                },
+                "enableFlexSuccess": {
+                    "true": "<p>Your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust stores your funds across multiple insured bank accounts, giving total coverage of $130,000,000. You can withdraw anytime for free, but your balance will not earn interest.</p>\n<a href=\"https://medium.com/@constantp2p/meet-scott-purcell-ceo-of-prime-trust-ae7581835030\" class=\"underline\">Find out more about Prime Trust</a>\n",
+                    "false": "<p>Congratulations! Your balance will now earn 5% APY through Flex. You can withdraw anytime for free and your balance is protected by borrower collateral.</p>\n<a href=\"https://medium.com/@constantp2p/compound-finance-discover-the-interest-earning-tech-behind-flex-dcbb1decc835\" class=\"underline\">Find out how Flex works</a>\n"
+                },
+                "enableFlexFailed": {
+                    "true": "Sorry, we can’t disable Flex for you right now – please try again later. If you keep getting this message, please email us at hello@myconstant.com.",
+                    "false": "Sorry, we can’t enable Flex for you right now – please try again later. If you keep getting this message, please email us at hello@myconstant.com."
+                },
+                "confirm": {
+                    "title": "Yes",
+                    "true": "Yes, insure my balance with Prime Trust",
+                    "false": "Yes, I want to earn 5% APY"
+                },
+                "cancel": {
+                    "title": "No",
+                    "true": "No, I’ll keep earning 5% APY",
+                    "false": "No, I’ll stick with the insurance"
+                }
+            }
         },
         "referralInfo": {
             "title": "推荐信息",
@@ -877,6 +919,7 @@
             "detail": "交易详情",
             "extID": "外部ID",
             "exportToExcel": "导出到Excel",
+            "openOrders": "Open orders",
             "agent": {
                 "acceptSuccessfully": "您选择的订单已被接受",
                 "cancelSuccessfully": "您选择的订单已成功取消",
@@ -914,7 +957,10 @@
                 "13": "利息",
                 "14": "从邀请返佣赚取",
                 "15": "会员奖励",
+                "16": "Referral Term Deposit",
+                "17": "Referral Reward",
                 "101": "加成",
+                "102": "Coupon Signup",
                 "received": "已接收"
             },
             "orderStatus": {
@@ -930,7 +976,8 @@
                 "11": "划转失败",
                 "12": "等待通过",
                 "13": "等待通过",
-                "14": "划转中"
+                "14": "划转中",
+                "15": "Confirming"
             },
             "topUpStatus": {
                 "0": "待处理",
@@ -1177,6 +1224,11 @@
             "updateEmail": "更新电子邮件",
             "alreadyVerified": "您的电子邮件地址已被验证。谢谢您。"
         },
+        "emailConfirm": {
+            "verifyFailed": "Confirm failed, please try again!",
+            "verifySuccess": "Your email was confirmed successfully.",
+            "alreadyVerified": "Your email address has already been confirmed. Thank you"
+        },
         "phoneVerification": {
             "sendCodeSuccess": "验证码已成功发送到您的电话，请检查。",
             "sendCodeFailed": "发送验证码失败，请重试！",
@@ -1218,8 +1270,10 @@
                 "getListFailed": "获取投资失败，请重试",
                 "createdDate": "创建日期",
                 "amount": "本金",
+                "staking": "Stake balance",
                 "received": "已接收",
                 "matched": "已匹配",
+                "holding": "balance holding",
                 "interest": "到目前为止的利 息",
                 "totalInterest": "利息总额",
                 "totalInterestDesc": "这是您将在整个期限内赚取的利息。如果借款人早日偿还，您将赚取最新的利息。",
@@ -1234,6 +1288,7 @@
                 "anyTimeAccount": "随时充值",
                 "balanceInterestDesc": "<p><strong>为什么我的余额增加？</strong></p>\n            <p>至 <strong>Sep 10 2019</strong>您将在当前余额中自动赚取 <strong>{systemInterest}%的库存</strong> 这些收入将每日实时更新和复合！您仍然可以随时提款。</p>\n        ",
                 "balanceStarDesc": "通过推荐朋友赚取STAR。 然后您可以兑换每个STAR1%红利或折扣利息。点击推荐链接获得说明\n        ",
+                "referralDesc": "\n        Get a 10% reward when your friends earn interest – paid out every second. So if your friend earns $100, we’ll give you $10. There’s no limit to the number of friends you can refer.\n        ",
                 "term": "期限",
                 "endTerm": "到期",
                 "trial": "测试",
@@ -1258,7 +1313,7 @@
                     "pending": "待处理",
                     "matching": "匹配中",
                     "matched": "已匹配",
-                    "closed": "已关闭",
+                    "closed": "Cancelled",
                     "allStatus": "全部",
                     "done": "完成"
                 },
@@ -1276,7 +1331,7 @@
                     "approving": "审批中",
                     "transferring_fiat": "待处理",
                     "closed_soon": "已匹配",
-                    "": "",
+                    "undefined": "",
                     "picked": "待处理"
                 },
                 "interestInfo": {
@@ -1551,7 +1606,9 @@
                     "due": "到期"
                 },
                 "yourInvestments": "匹配{plural} {matched}",
-                "partialMatchesDesc": "有些投资可能被分成较小的数额，以满足多项贷款订单。 该平台将不断尝试在您的任期内完全适合您。"
+                "partialMatchesDesc": "有些投资可能被分成较小的数额，以满足多项贷款订单。 该平台将不断尝试在您的任期内完全适合您。",
+                "noOpenData": "No open order available",
+                "noData": "No data available"
             },
             "applicationDetail": {
                 "dueDays": "到期",
@@ -1588,6 +1645,10 @@
             "matched": "匹配: {amount} {symbol}",
             "withdraw": "提取",
             "withdrawReward": "取款",
+            "cancel": "Cancel",
+            "cancelMess": "Are you sure you want to cancel?",
+            "cancelStakingFailed": "Something went wrong. Please try again.",
+            "cancelStakingSuccessfully": "Your order was canceled successfully.",
             "staking": "Stake",
             "unStaking": "取消Stake",
             "reward": "奖励",
@@ -1606,7 +1667,9 @@
                 "8": "失败",
                 "9": "取消投票",
                 "10": "未投票",
-                "11": "划转中"
+                "11": "划转中",
+                "12": "Cancelled",
+                "13": "Reward Pending"
             }
         }
     },
@@ -1647,7 +1710,8 @@
             "warningVerifyNow": "立即验证",
             "two2faRequired": "余额超过 1000 美元的所有用户需要2FA 认证",
             "loginSocialTitle": "即时登录",
-            "loginEmailTitle": "或使用邮箱登录"
+            "loginEmailTitle": "或使用邮箱登录",
+            "loginFailed": "Failed while logging in, please try again"
         },
         "forgetPassword": {
             "title": "忘记密码？",
@@ -1717,7 +1781,8 @@
             "registerFailed": "创建您的帐户失败，请重试",
             "referrerReferralCode": "您的推荐代码: {code}",
             "promotionCode": "促销代码",
-            "promotionCodeRequired": "请输入促销代码"
+            "agreementText": "By ticking this box, I agree to Constant's",
+            "agreementTextLink": "Terms and Conditions."
         },
         "userLogin": {
             "balance": "余额",
@@ -1923,6 +1988,7 @@
                 "introHolderTemplate": "<p>成为第一个在你的国家购买和卖出constant的人 只需联系我们就可以开始。</p>\n        <p>发电子邮件给我们 <a href=\"mailto:{email}\">{email}</a></p>\n        <p>或</p>\n        <p>与我们聊天 <a href=\"telegram:{telegram}\">{telegram}</a></p>\n        ",
                 "confirmTemplate": "<div name=\"thanks\">\n          谢谢！请在交易完成时将{Constant}{Currency}</strong>转至Constant Escrow，以保证您的资金安全。\n        </div>\n        <div name=\"bank\">\n          <p>{BankName}</p>\n          <p>\n            <span>Account: </span>\n            <span>{BankAccountNumber}</span>\n          </p>\n          <p>\n            <span>Amount: </span>\n            <span>{Constant}&nbsp;{Currency}</span>\n          </p>\n          <p>\n            <span>Reference: </span>\n            <span>{Reference}</span>\n          </p>\n        </div>\n        <div name=\"notice\">\n          <b>IMPORTANT</b>\n          <span>\n           请包含参考号 <b>{Reference}</b> 在转账时\n          </span>\n        </div>\n        <div name=\"window\">\n          <b>30分钟窗口： </b>\n          <span>\n           请完成您的转账 <b>在30分钟内</b>. 在那之后，你的订单将自动取消。\n          </span>\n        </div>\n      ",
                 "cryptoAddress": "{currency} 地址:",
+                "scanQR": "Alternatively, scan this QR code directly from your mobile wallet to complete the investment.",
                 "accountName": "账户名称：",
                 "bankName": "银行名称",
                 "accountNumber": "账户号码:",
@@ -2009,16 +2075,16 @@
             "send": {
                 "confirmTemplate": {
                     "title": "感谢！",
-                    "description": "您的资金正在流向收款人的银行账户。时间可能因银行和地点导致延迟。 请查看我们的 <a href=\"/getPrices\" target=\"_blank\" class=\"colorLight semiBold\">服务时间</a> 来估计资金何时到达您。",
-                    "contact": "如果你有任何疑问，随时可以联系 <a class=\"colorLight semiBold\" href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>",
+                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"colorLight semiBold\">service times</a> for an estimation of when funds will reach you.",
+                    "contact": "If you have any questions, feel free to reach out to <a class=\"colorLight semiBold\" href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a> anytime.",
                     "actionTitle": "发起其他转账"
                 }
             },
             "withdraw": {
                 "confirmTemplate": {
                     "title": "谢谢！",
-                    "description": "您的资金正在流向收款人的银行账户。时间可能因银行和地点导致延迟。 请查看我们的 <a href=\"/getPrices\" target=\"_blank\" class=\"colorLight semiBold\">服务时间</a> 来估计资金何时到达您。",
-                    "contact": "如果你有任何疑问，随时可以联系 <a class=\"colorLight semiBold\" href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>",
+                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"colorLight semiBold\">service times</a> for an estimation of when funds will reach you.",
+                    "contact": "If you have any questions, feel free to reach out to <a class=\"colorLight semiBold\" href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a> anytime.",
                     "actionTitle": "返回首页"
                 }
             }
@@ -2194,6 +2260,7 @@
             "batchConfirmMsg": "您确定要从上传文件传输给很多人吗？",
             "transferFailed": "划转失败，请重试",
             "transferSuccessful": "划转成功",
+            "transferConfirm": "We've already sent you a verification email, please confirm before we proceed your request.",
             "timeLimit": "你的钱会到",
             "timeLimitMunite": "2分钟",
             "subintroTitle1": "没有银行，没有边界。",
@@ -2208,7 +2275,7 @@
                 "orderInfo": {
                     "title": "划转确认",
                     "desc": " ",
-                    "cryptoAddress": "到加密货币地址",
+                    "cryptoAddress": "To address",
                     "email": "到邮箱",
                     "amount": "金额"
                 }
@@ -2243,6 +2310,7 @@
             "batchConfirmMsg": "您确定要从上传文件传输给很多人吗？",
             "transferFailed": "转账失败，请重试",
             "transferSuccessful": "划转成功",
+            "transferConfirm": "We've already sent you a verification email, please confirm before we proceed your request.",
             "timeLimitInWorkingTime": "您的钱将在 1 小时内到账",
             "timeLimit": "您的钱将到账在",
             "timeLimitMunite": "2 分钟",
@@ -2301,6 +2369,8 @@
             },
             "headLine": "想要支付您的信用卡、医疗账单或租金吗？ 只需输入您想要借款并在ETH存款的Constant， 它将安全地保存在Constant贷款智能合同。",
             "exchange": {
+                "usedMarketRate": "Use market rate ",
+                "usedMarketRateDesc": "When market rate is enabled, you're guaranteed a match at the best rate and term available in the market.",
                 "maxRateTooltip": "这是您愿意支付贷款的年利率(APR)。 如果有投资者愿意减少收入，你将支付较低的利率。",
                 "minTermTooltip": "这是您想要借款的最短时间。",
                 "caption": "加密支持的贷款",
@@ -2387,7 +2457,13 @@
                 "interestedRate": "利率:",
                 "interestedRateValue": "{percent} APR",
                 "matchingFee": "匹配费用：",
-                "matchingFeeValue": "贷款金额的1%"
+                "matchingFeeValue": "贷款金额的1%",
+                "cryptoAddress": "{currency} address:",
+                "backOrderBook": "Back",
+                "bitgo": {
+                    "title": "Secured by BitGo",
+                    "content": "You’re sending your collateral to BitGo, a qualified digital asset custodian. Your collateral will be securely stored inside a BitGo cold wallet that’s insured to $100M. So no matter what happens to Constant, your collateral is secure."
+                }
             },
             "history": {
                 "itemTpl": "\n          <div name=\"loan-info-container\">\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">贷款金额:</span>\n              <span name=\"loan-info-value\">{贷款金额}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">利率:</span>\n              <span name=\"loan-info-value\">{利率}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">抵押:</span>\n              <span name=\"loan-info-value\">{抵押}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">期限:</span>\n              <span name=\"loan-info-value\">{期限}</span>\n            </div>\n          </div>\n        ",
@@ -2531,7 +2607,7 @@
                     "recieved": "匹配中",
                     "accepted": "已匹配",
                     "payingInterest": "应付利息",
-                    "done": "已关闭",
+                    "done": "Done",
                     "withdrawed": "已提取",
                     "tnxFailed": "请重试",
                     "cancelled": "已取消",
@@ -2568,6 +2644,9 @@
                 "repaymentByCollateral": "您想要通过担保金支付吗？",
                 "repaymentMethod": "支付方式： ",
                 "willPayCollateral": "抵押金将被支付是",
+                "feePayoffExchangeRate": "Collateral value is based on the current market price of {value} USD/{currency}",
+                "payCollateralFee": "Repay with collateral fee",
+                "payCollateralFeeDesc": "This fee is to cover the difference in price during liquidation process.",
                 "willReturnCollateral": "担保金将被退还是",
                 "repayAddress": "还款地址",
                 "copyMessage": "地址已复制！",
@@ -2594,7 +2673,9 @@
                     "createdDate": "已创建",
                     "dueDate": "到期",
                     "collateralValueDesc": "这表示您的抵押价值占您贷款的百分比。 它计入了迄今累积的利息以及如果你选择今天还款的还款。 如果下降到110%，您的抵押品将被清算，差额将退还给您。",
-                    "repayAddress": "还款地址"
+                    "repayAddress": "还款地址",
+                    "collateralValueAtLiquid": "Liquidation price",
+                    "collateralValueAtLiquidDesc": "Once the price of the token falls to this price, your loan will be liquidated.\n          Note: this number is always changed unpredictably due to the fluctuation of the market. Please keep an eye on your loans to avoid liquidation."
                 },
                 "paymentMethod": {
                     "const": "美金",
@@ -2674,6 +2755,7 @@
     "static_page": {
         "userAgreement": "用户协议",
         "privacyPolicy": "隐私政策",
+        "AMLPolicy": "Anti-Money Laundering Agreement",
         "promotionPrograms": "促销方案",
         "aboutUs": "关于我们",
         "faqs": "常见问题"
@@ -3063,6 +3145,7 @@
     },
     "exchangeInputDepositForm": {
         "minAmountRequired": "请输入大于 {amount} {currency} 的金额",
+        "minDepositRequired": "Please enter an amount larger than {amount} {currency}",
         "minUsdRequired": "请输入大于0.01美元的金额",
         "minVndRequired": "请输入大于10,000 VND 的金额",
         "fiatAmountInputLabel": "充值余额",
@@ -3423,6 +3506,7 @@
             }
         },
         "crypto": {
+            "bitGo": "$100M escrow insurance",
             "desc": "完全安全，完全支持。所有贷款和投资都受到联邦存款保险公司保险、以太坊智能合约和加密抵押金的保护。"
         },
         "faqs": {
@@ -3811,6 +3895,8 @@
                 "zelle1": "<p>金额: {amount} 美元</p>\n          <p>发送到: <strong>finance@myconstant.com</strong></p>\n        ",
                 "zelle": "<p>金额: {amount} 美元</p>\n          <p>发送到: <strong>finance@myconstant. om</strong></p>\n          <br /><br />\n          <p>我们推荐Zelle，因为它比直接存款快， 比电汇更便宜。</p>\n          <p>没有Zelle？ 只需通过您银行的网站或手机应用注册服务，即可使用电子邮件地址或电话号码。</p>\n        ",
                 "bankChosenMessage1": "<p>用于直接存款和电汇。 我们在主流银行有账户可以更快地收到您的存款。</p>\n          <p>请选择最方便您转账的银行。</p>\n        ",
+                "bankTransfer": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.</p>\n          <p>If you don’t bank with any of those listed, no problem. You can transfer from any bank account, but please note that your bank might charge you a fee.</p>\n        ",
+                "bankAutoPaymentMessage": "\n          <p>We’ve partnered with Checkbook to make bank transfers even easier.</p>\n          <p>Instead of logging into your bank account separately, enter your login details here and Checkbook will arrange the transfer automatically by ACH/digital check.</p>\n          <p>Neither Constant nor Checkbook store your details, and the service is free.</p>\n        ",
                 "bankChosenMessage": "我们在主流银行有账户可以更快地接收您的存款。请选择最方便您转账的银行。",
                 "makeAnotherButton": "投资其他",
                 "updateBalanceNoteInWorkingTime": "请注意，在收到您的存款后，更新您的余额可能需要 <strong>个小时</strong> 。 我们正在努力减少这次时间，所以感谢您的耐心。",
@@ -4025,6 +4111,13 @@
         }
     },
     "getPrices": {
+        "title": "Pricing and Service times",
+        "desc": "\n    <p className=\"bold\">All times shown below are maximum estimates. In all cases, the team strives for ASAP.</p>\n    <p>While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</p>\n    ",
+        "collateralIssue": "\n    *About collateral issue, please ping <a href=\"https://t.me/andy_9210\" className=\"underline bold\" target=\"_blank\"><strong>@andy_9210</strong></a> on telegram to get direct support.\n    ",
+        "withdrawCryptoNote": "\n    <p>*Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually. The maximum waiting time is 24 hours.</p>\n    <p>*Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>\n    ",
+        "withdrawCollateralNote": "\n    <p>*About collateral issue, please ping <a href=\"https://t.me/andy_9210\" className=\"underline bold\" target=\"_blank\"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>\n    ",
+        "holidaysNote": "\n    <p>*Our service time may also be affected by public and banking holidays in the US and your local country.</p>\n    ",
+        "zelleDepositDelayIssue": "\n    <p>*Possible reasons for a delay in processing your Zelle deposit</p>\n    <p> - Missing relevant information to match with your deposit order: Name, User ID, Reference...</p>\n    <p> - Varying level of processing time by the bank.</p>\n    <p> - Transfering from an account with the account holder's name different than your registered name on Constant platform.</p>\n    <p> - Lack of or incorrect deposit order created prior to depositing.</p>\n    ",
         "depositFiat": {
             "head1": "法币",
             "head2": "营业时间 (9am-6pm GMT + 7, 周一至周五)",
@@ -4037,6 +4130,12 @@
             "head3": "营业时间以外",
             "head4": "手续费"
         },
+        "depositCollateral": {
+            "head1": "Collateral",
+            "head2": "Business hours (9am-6pm GMT +7, Mon-Fri)",
+            "head3": "Outside business hours",
+            "head4": "Fee"
+        },
         "withdrawFiat": {
             "head1": "提取法币",
             "head2": "营业时间 (9am-6pm GMT + 7, 周一至周五)",
@@ -4048,6 +4147,12 @@
             "head2": "营业时间 (9am-6pm GMT + 7, 周一至周五)",
             "head3": "营业时间以外",
             "head4": "手续费"
+        },
+        "withdrawCollateral": {
+            "head1": "Collateral withdrawal",
+            "head2": "Business hours (9am-6pm GMT +7, Mon-Fri)",
+            "head3": "Business hours (9am-6pm CET, Mon-Fri)",
+            "head4": "Fee"
         },
         "matchingFee": {
             "head1": "匹配费用",
@@ -4064,7 +4169,8 @@
     },
     "modules": {
         "faqs": {
-            "title": "用户的最热门问题",
+            "title": "Frequently-asked questions (FAQs)",
+            "desc": "Here you'll find answers to the most common questions our customers ask. If you can't find your answer here, please email us at <a href=\"mailto:hello@myconstant.com\" class=\"landing-link semiBold\" target=\"_top\">hello@myconstant.com</a> and we'll be happy to help you.",
             "viewAll": "查看全部",
             "hide": "隐藏"
         }
@@ -4268,6 +4374,7 @@
         "referral_history": {
             "user_email": "朋友的邮箱",
             "value": "您的收入 ",
+            "valueDesc": "As soon as you’ve earned at least 1 cent, you can track your earnings below.",
             "object_type": "类型",
             "object_amount": "金额(美金）",
             "created_at": "日期 & 时间："
@@ -4473,6 +4580,8 @@
         "todayRate": "今天的费率。",
         "todayRateValues": "{rate}% APR",
         "howMuchDoYouWantToDeposit": "您想要做多少staking？",
+        "usingAvailableBalance": "Use max available amount ({maxAmount} {currency})?",
+        "usingAvailableBalanceDesc": "Use max of your available amount",
         "depositNow": "开始staking?",
         "depositWithAmount": "开始staking {amount} {currency}",
         "validateMinAmountError": "您输入的金额不能小于 {amount} {currency}",
@@ -4489,23 +4598,27 @@
                 "title": "取消staking",
                 "amount": "金额",
                 "amountDesc": "您想取消多少staking？",
+                "usingAvailableBalance": "Use max available amount ({maxAmount} {currency})?",
                 "address": "您的 {name} 钱包地址？",
                 "addressDesc": "正在接收加密钱包地址",
                 "maxAmount": "您的金额必须小于 {maxAmount} {symbol}。",
                 "withdrawFailed": "出错了。请重试。",
                 "withdrawAddressFailed": "您的钱包地址无效。请重试。",
-                "withdrawSuccess": "您的取消抵押已完成。"
+                "withdrawSuccess": "您的取消抵押已完成。",
+                "returnAmount": "Your {amount} {currency} un-taking will return to your coin balance."
             },
             "withdraw": {
                 "title": "提取你的奖励",
                 "amount": "金额",
                 "amountDesc": "您想要提取多少？",
+                "usingAvailableBalance": "Use max available amount ({maxAmount} {currency})?",
                 "address": "您的 {name} 钱包地址？",
                 "addressDesc": "正在接收加密钱包地址",
                 "maxAmount": "您的金额必须小于 {maxAmount} {symbol}。",
                 "withdrawFailed": "出错了。请重试。",
                 "withdrawAddressFailed": "您的钱包地址无效。请重试。",
-                "withdrawSuccess": "您的提取已完成。"
+                "withdrawSuccess": "您的提取已完成。",
+                "returnAmount": "Your {amount} {currency} reward will return to your coin balance."
             },
             "submit": "提交",
             "cancel": "取消"
@@ -4514,9 +4627,13 @@
             "thankYou": "快好了",
             "cryptoThankMsg": "只需将 {amount} {currency} 转到以下的钱包地址即可开始staking。",
             "stakingAmount": "staking 金额",
+            "availableBalance": "Available Balance",
+            "stakingRequired": "Staking required",
             "cryptoAddress": "{currency} 地址",
             "minuteWindowDescription": "为了安全，您的 staking 请求将在 24 小时后超时。 如果您需要更长一点时间，只需在您准备好后重新输入您想要staking金额。",
-            "minuteWindow": "请在 24 小时内完成您的划转。"
+            "minuteWindow": "请在 24 小时内完成您的划转。",
+            "scanQR": "Alternatively, scan this QR code directly from your mobile wallet to complete the staking.",
+            "backOrderBook": "Back"
         },
         "learnMore": "更多信息 ",
         "learnMoreFAQs": "查看我们的常见问题。",
@@ -4621,7 +4738,7 @@
             },
             "press7": {
                 "name": "",
-                "desc": "当谈到开创新一代金融科技平台时，Constant为该行业的进步提供了一个衡量标准。"
+                "desc": "<p>And when it comes to pioneering a new generation of fintech platforms, Constant provides a measuring stick for the industry’s progress.</p>"
             },
             "press8": {
                 "name": "",
@@ -4647,6 +4764,9 @@
         "rewardBalance": "奖励余额",
         "stakingBalanceMobile": "余额",
         "rewardBalanceMobile": "奖励",
+        "availableBalanceMobile": "Available",
+        "pendingAmountMobile": "Pending",
+        "pendingUnStaking": "Un-staking amount, During un-stake time the pending transaction amount is not available.",
         "action": "操作",
         "withdraw": "提取",
         "withdrawReward": "提取",
@@ -4689,9 +4809,38 @@
         "viewAll": "查看全部"
     },
     "memberShip": {
+        "undefined": "",
+        "howItWorks": {
+            "title": "How membership works",
+            "everyDollar": "EVERY DOLLAR",
+            "borrowInvest": "you invest or borrow",
+            "point": "membership point",
+            "startDate": "1 day",
+            "endDate": "180 days",
+            "headLine": "You invest<br />or borrow",
+            "desc": "\n      <p>Each point expires after 180 days.</p>\n      <p>Once you invest or borrow the minimum amount for membership, rewards continue until your points expire.</p>\n      <p>To keep your benefits, simply invest or borrow again to top up your points.</p>\n      ",
+            "details": "For every dollar you invest or borrow, you earn 1 membership point. Each point expires after 180 days.  \n        Once you invest or borrow the minimum amount for membership, rewards continue until your points expire.  \n        To keep your benefits, simply invest or borrow again to top up your points.",
+            "level1": {
+                "title": "Gold Member",
+                "point": "(25,000 points)",
+                "desc": ""
+            },
+            "level2": {
+                "title": "Platinum Member",
+                "point": "(50,000 points)",
+                "desc": ""
+            },
+            "level3": {
+                "title": "Diamond Member",
+                "point": "(100,000 points)",
+                "desc": "For every dollar you invest or borrow, you earn 1 membership point. \n          Each point expires after 180 days. Once you invest or borrow the minimum amount for membership, rewards continue until your points expire.\n          To keep your benefits, simply invest or borrow again to top up your points."
+            }
+        },
         "intro": {
             "title": "会员奖励",
-            "details": "投资或借贷越多，就可以获得独家平台收益"
+            "details": "投资或借贷越多，就可以获得独家平台收益",
+            "howItWork": "How it works",
+            "yourMember": "Your membership"
         },
         "caption": "会员\n",
         "expiredDate": "您的 {value} 点将在 {date} 过期",
@@ -4703,28 +4852,28 @@
         "keepLevel": "{type} ${value} 来保持您的等级",
         "getLevelDate": "从{date}",
         "title": {
-            "silver": "银色",
-            "gold": "黄金",
-            "platinum": "铂金"
+            "level1": "Gold",
+            "level2": "Platinum",
+            "level3": "Diamond"
         },
         "get": {
-            "silver": "得到100 CONST",
-            "gold": "得到 1 STAR",
-            "platinum": "得到 2 STAR"
+            "level1": "Get 100 CONST",
+            "level2": "Get 1 STAR",
+            "level3": "Get 2 STAR"
         },
         "take": {
-            "silver": "获取100 CONST",
-            "gold": "获取 1 STAR",
-            "platinum": "获取 2 STAR"
+            "level1": "Take 100 CONST",
+            "level2": "Take 1 STAR",
+            "level3": "Take 2 STAR"
         },
         "desc": {
-            "silver": "<h4>你可以得到什么:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} c当您成为银卡会员时，可进行现金返还</p>\n              <p><i class=\"fal fa-check\"></i> 新投资订单的即时存款，上限为{上限}</p>\n              <p><i class=\"fal fa-check\"></i> 即时稳定币和加密货币提取</p>",
-            "gold": "<h4>你得到什么:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} 当你成为黄金会员。你可以用你的STAR兑换投资的{红利}红利利息或贷款的{红利}折扣</p>\n              <p><i class=\"fal fa-check\"></i>新投资订单的即时存款，上限为{上限}</p>\n              <p><i class=\"fal fa-check\"></i> 即时稳定币和加密货币提款</p>",
-            "platinum": "<h4>你会得到什么：</h4>\n                 <p><i class=\"fal fa-check\"></i> {cashback} 您可以在投资或贷款优惠时兑换STAR {bonus} 红利或 {bonus} 折扣。</p>\n                <p><i class=\"fal fa-check\"></i> 新投资订单的即时存款 限定在 {capped} 的 LTV 上。</p>\n                <p><i class=\"fal fa-check\"></i> 立刻提取稳定币加密货币。</p>"
+            "level1": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} cashback when you become a Silver member.</p>\n              <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped}.</p>\n              <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>",
+            "level2": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} when you become a Gold member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>\n              <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped}.</p>\n              <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>",
+            "level3": "<h4>What you get:</h4>\n                 <p><i class=\"fal fa-check\"></i> {cashback} when you become a Platinum member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>\n                <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped} of the LTV.</p>\n                <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>"
         },
         "history": {
             "title": "历史",
-            "level": "获取级别",
+            "level": "Status",
             "reward": "获得奖励",
             "date": "日期"
         },
@@ -4732,6 +4881,205 @@
             "reward": "STAR",
             "fiat": "CONST\n",
             "null": "无法使用"
+        },
+        "memberShipLevel": {
+            "level0": "Member",
+            "level1": "Gold",
+            "level2": "Platinum",
+            "level3": "Diamond"
+        },
+        "faqs": {
+            "1": {
+                "question": "Do the minimum amounts apply to single loans only?",
+                "answer": "\n          <p>No, you can invest or borrow multiple times within the 180 days to become a Gold, Platinum or Diamond member.</p>\n          "
+            },
+            "2": {
+                "question": "Do outstanding loans and investments qualify?",
+                "answer": "\n          <p>Yes. You can meet the minimum threshold on active loans and investments that are yet to mature.</p>\n          "
+            },
+            "3": {
+                "question": "Can I combine loans and investments to reach the membership threshold?",
+                "answer": "\n          <p>\n          The Constant Referral Reward program earns you extra interest for investing or sharing Constant with friends and family. \n          You earn interest by completing certain actions, such as referring Constant to friends who then sign up, \n          sharing Constant on social media, and investing a minimum of $1,000 or more.\n          </p>\n          <p>\n          Complete all actions in our Referral Rewards program and you could earn 6% additional interest on your Investment Plans.\n           </p>\n          "
+            },
+            "4": {
+                "question": "What are Constant Referral Rewards?",
+                "answer": "\n          <p>No. The membership thresholds apply separately to loans and investments. \n          For example, you must invest $25,000 or borrow $25,000 to qualify for Gold membership.</p>\n          "
+            },
+            "5": {
+                "question": "How long do membership rewards last?",
+                "answer": "\n          <p>\n          The $100 cashback and STAR bonuses <strong>are one-off rewards only</strong>. The other benefits last as long as your points do. \n          You earn a point for every dollar you invest or borrow and each point expires after 180 days. So, \n          if you make a single investment of $25,000, for example, your points will last 180 days and so will the benefits.\n          </p>\n          <p>\n          If you invest several times to reach the minimum, your rewards will last 180 days from the first qualifying point you earned. \n          For example, if you invest $10,000 and then $15,000 three months later, your benefits will continue until your first batch of points expire.\n           </p>\n          "
+            },
+            "6": {
+                "question": "Can I extend membership rewards?",
+                "answer": "\n          <p>\n          Yes! When your points expire, simply invest or borrow again to top them up. \n          This way, you can keep your membership benefits for as long as you want them.\n           </p>\n          "
+            },
+            "7": {
+                "question": "Do I need to contact you when I’ve reached the minimum amount?",
+                "answer": "\n          <p>\n          No, you don’t need to do anything. We’ll track your investment and loan volume on a rolling six-month basis and when you meet the minimum threshold, \n          we’ll immediately upgrade you to Gold, Platinum or Diamond status. \n          Your rewards are also paid immediately, and the ongoing benefits last as long as your points do. \n           </p>\n          "
+            }
+        }
+    },
+    "trustPilot": {
+        "title": "Excellent",
+        "star": "4",
+        "desc": "Here’s what customers are saying about us on",
+        "viewAll": "View us on TrustPilot",
+        "comments": {
+            "0": {
+                "star": "3",
+                "title": "Good, but not the best they could be",
+                "desc": "I have made some investments with Myconstant. They have been good and I have been paid out as expected. My only gripe is that they aren't insured as some others are. I have taken my money out since then. If they were insured, I would go back to investing with them.",
+                "date": "Nov 24, 2019",
+                "auth": "Jason T"
+            },
+            "1": {
+                "star": "5",
+                "title": "Bright start to a new platform",
+                "desc": "Constant is still a very young company but is a powerful tool for investors and borrowers. Like many of the other reviews have mentioned, their customer service has given me comfort in resolving any issues quickly and professionally while Constant diligently works through the kinks on the platform. It is also very clear to me that Constant is working hard to progress their platform as I have noticed a steady stream of improvements in services, functionality, and interface design over the past few months, and I appreciate their investment in making Constant a valuable tool for customers.At first I was hesitant to transfer money over to Constant to start investing, but from my experience over the past several months, I have been very happy with it and and totally comfortable investing my money with them.",
+                "date": "Nov 21, 2019",
+                "auth": "Eric M."
+            },
+            "2": {
+                "star": "5",
+                "title": "Great platform for crypto investors",
+                "desc": "I got into crypto about three years ago by buying bitcoin. Since that time I have tried to figure out how to best maximize my investment returns through various crypto platforms and after trying many of the platforms I have settled on two and Constant is one of those. As a lender looking to make a return on investment I could not be more pleased with what Constant does and how they do it. I feel that my capital is well taken care of, the platform allows me to earn outsized returns on “idle” cash that would either be tied up in a low interest bearing account at a bank or exposed to volatility in the stock market or locked up in an illiquid investment for years. Earning a consistent 10% return annual is not easy folks and as far as I can tell, Constant may be one of the only ways of doing that with a minimum amount of risk and relatively high liquidity. Like any investment in crypto, one has to always be mindful of what happens in a really rough bear market and there are no guarantees in life but I think Constant has built a truly standout platform that is well worth considering if you have capital available to invest into the crypto space.",
+                "date": "Nov 21, 2019",
+                "auth": "SRR"
+            },
+            "3": {
+                "star": "5",
+                "title": "Constant has the best Customer Service in Crypto!",
+                "desc": "The Constant product is unlike anything I’ve ever used. More than their product, the customer service is what keeps me coming back! If I have any questions or doubts they’ll clarify in no time. Andy is one of the best at what he does, and is a massive help!",
+                "date": "Nov 21, 2019",
+                "auth": "Suji L"
+            },
+            "4": {
+                "star": "4",
+                "title": "I have been a borrower right from the…",
+                "desc": "I have been a borrower right from the start. Although there's a few bugs here and there but just because the customer support is superb gives you confidence with their platform. Since then a lot of improvements in a very short time. I'd give them 4 stars for their platform but because customer support is just super so I give them 5 stars. And oh, you won't find any other lending platform that accepts a variety of collateral than Constant. More success to the team.",
+                "date": "Nov 21, 2019",
+                "auth": "Ace"
+            },
+            "5": {
+                "star": "4",
+                "title": "Very good Platform",
+                "desc": "Very good platform and the support is very good. They need to improve their UI but so far so good. Transfers are fast with in a day. They work in US night hours (8PM-6AM)!!.",
+                "date": "Nov 20, 2019",
+                "auth": "Rajans"
+            },
+            "6": {
+                "star": "5",
+                "title": "Constant is the best blockchain related…",
+                "desc": "Constant is the best blockchain related service I have ever used! Their platform is very promising and helpful.The support/ops team is very brilliant and very helpful,those kind people are available whenever you need them.They are very innovative.I have used their products many times and my experiences with them were always perfect.I would definitely recommend everyone to try Constant.",
+                "date": "Nov 19, 2019",
+                "auth": "Burak Demircin"
+            },
+            "7": {
+                "star": "4",
+                "title": "Great platform with room to grow",
+                "desc": "Great platform with room to grow! I was hesitant at first but noticed they have a 1800 number you can call to their California Office. I called and the gentleman on the phone answered all of my questions!",
+                "date": "Nov 13, 2019",
+                "auth": "Justin L"
+            },
+            "8": {
+                "star": "4",
+                "title": "Did a lot of research on it and if it…",
+                "desc": "Did a lot of research on it and if it is legit, then it is a brilliant idea. I've invested a couple of times but have not yet withdrawn money. Here's an in-depth review: p2pinvesting101.blogspot.com/",
+                "date": "Nov 9, 2019",
+                "auth": "Pboneef"
+            },
+            "9": {
+                "star": "5",
+                "title": "Promising young project",
+                "desc": "Interesting product idea. Project is still young, but customer support team is excellent and eager to help you out and support you through the process. I have invested multiple times since August and pay outs have been smooth. Would recommend thoroughly reading the site, FAQs and blogs and ask questions to make sure you are comfortable with the mechanism by which this works.",
+                "date": "Nov 6, 2019",
+                "auth": "Bob P"
+            },
+            "10": {
+                "star": "5",
+                "title": "Excellent customer service and product!!",
+                "desc": "Their customer service is excellent! I had the pleasure of working with Andy and Claire (Both from Telegram) and they were there for every step of the process. When I called their number to ask a few more questions, again I was met with excellent customer service. I definitely recommend my constant to anybody looking for a loan by using their cryptocurrency. I believe they have a section where you can also invest and they’ll give you a certain percentage back, but I have only used the loan part. Again, thank you for everything!",
+                "date": "Dec 4, 2019",
+                "auth": "Fernando Sarmiento"
+            },
+            "11": {
+                "star": "5",
+                "title": "I have to say that the customer service…",
+                "desc": "I have to say that the customer service support is amazing all my questions and concerns were answered and the support I received made me want to signup and invest. The only complaint I have is it takes time to deposit and withdraw, especially over the weekend but the support team has let me know that they are working on getting this fixed. I am not one to leave reviews but I was so impressed with the support and the patience they had with me and explained in so much detail thank you so much and I will be spreading the word to my friends and family.",
+                "date": "Dec 4, 2019",
+                "auth": "Nikki Marie"
+            },
+            "12": {
+                "star": "5",
+                "title": "New constant customer",
+                "desc": "I reached out to the constant customer service team and the rep spent the time answering all of my questions and walked me through the steps of doing my first p2p investment. It was quick and easy! The only draw back is that they don’t have an app!",
+                "date": "Dec 4, 2019",
+                "auth": "Jen Camacho"
+            },
+            "13": {
+                "star": "5",
+                "title": "I am blown away at the exceptional…",
+                "desc": "I am blown away at the exceptional customer service the rep has provided!! He was so knowledgeable and quick to assist!! I love that I have the option to withdraw any time I want with Flex!!! I was offered options and didn’t feel like I was being sucked into something like a regular bank. The only bummer is they don’t have an app yet. But I am super hopeful for the future they have to offer!!!!",
+                "date": "Dec 4, 2019",
+                "auth": "Ashley F"
+            },
+            "14": {
+                "star": "5",
+                "title": "Great software i have ever experienced",
+                "desc": "Great software i have ever experienced. Customer service is awesome, they are willing to anwer all my questions and assist me much. 5 star for My constant",
+                "date": "Dec 4, 2019",
+                "auth": "Daisy Daisy"
+            }
+        }
+    },
+    "ourStory": {
+        "title": "Our Story",
+        "thanks": "- Thanks for reading -",
+        "b1": {
+            "time": "Jan 2019",
+            "title1": "Hi there.",
+            "title2": "Thanks for visiting our  secured P2P lending  platform.",
+            "content1": "\n        <p>If it’s your first time here, I’d love to tell you a little about who we are and what we do.</p>\n        <p>Like many stories, ours has a few twists and turns. So let’s rewind to January 2019 when it all began…</p>\n        <p>Back then, we were a humble stablecoin project. A team of economists, engineers, and creatives looking to make money more useful.</p>\n      "
+        },
+        "b2": {
+            "time": "CES 2019",
+            "title1": "Back then, we were a humble stablecoin project",
+            "content1": "\n        <p>We had developed an efficient, borderless, and stable digital currency, backed by the US Dollar, which we launched at CES 2019 in Las Vegas.</p>\n        <p>Our stablecoin (CONST) offered stability for people in troubled economies:</p>\n        <p>- It cut the cost of international transfers.</p>\n        <p>- It slashed processing times from days to minutes.</p>\n        <p>- gave everyone access to a free USD account.</p>\n        <p>But we wanted to do more…</p>\n      "
+        },
+        "b3": {
+            "title1": "We wanted to help people grow their money.",
+            "content1": "\n        <p>Like the rest of the world, we’d experienced first-hand the problems with traditional banking. The miserable interest rates, the huge fees, the slow, inefficient systems…</p>\n        <p>So, we began thinking about how we could pay a great interest rate on our stablecoin.</p>\n        <p>Digital currencies are versatile. They move quickly, freely, and are protected by the blockchain technology underpinning them – surely we could put those efficiency savings to work?</p>\n        <p>After a lot of discussion, we set our sights on an industry that – until now – has had a mixed reputation: peer-to-peer (P2P) lending. </p>\n        <p>The problem with P2P lending, as we saw it, was too much centralization and too little use of collateral. P2P lenders were doing what banks did – setting rates, evaluating risk, and so on. </p>\n        <p>Ultimately, this takes control away from you, the customer. </p>\n        <p>So, we built a P2P lending platform that would do two things:</p>\n      ",
+            "missions": {
+                "1": {
+                    "title": "1",
+                    "content": "\n            <p><strong>Give you control</strong> over amounts, rates, and terms.</p>  \n            <p>We’re the only P2P lending platform in the world to offer this (as far as we know).</p>\n          "
+                },
+                "2": {
+                    "title": "2",
+                    "content": "\n            <p><strong>Secure all lending</strong> with collateral. This protects your funds and means we never do credit checks.</p>\n          "
+                }
+            }
+        },
+        "b4": {
+            "time1": "May 2019",
+            "title1": "Our P2P lending platform launched",
+            "time2": "Jun 2019",
+            "title2": "We’d matched <span class=\"attention\">$1,000,000</span> in loans",
+            "content2": "Helping people across the world get the cash they need to do the things they want."
+        },
+        "b6": {
+            "time": "Today",
+            "title1": "Our P2P lending platform is internationally recognized as one of the most flexible, transparent, and rewarding.",
+            "content1": "Our P2P lending platform is internationally recognized as one of the most flexible, transparent, and rewarding.",
+            "content2": "We’re the fastest-growing P2P lender in SE Asia, and have featured in HackerNoon, ZeroHedge, Inc., and many other popular tech and finance publications."
+        },
+        "b7": {
+            "content1": "\n        <p>And as you’ve probably guessed by reading this far, we’re not done yet...</p>\n        <p>Our goal is to give you the best financial tools in the world and the expertise to use them.</p>\n        <p>That means continuous development of our technology, making it faster, cheaper, and more secure, and giving you all the helpful content you need to take advantage of it.</p>\n      ",
+            "title2": "Our job is to help you do more with your money.",
+            "content2": "\n        <p>To give you great interest rates on investments and easy access to credit when you need it.</p>\n      "
+        },
+        "b8": {
+            "content1": "\n        <p>No, we’re not perfect, but we’re honest about our shortcomings and dedicated to improving.</p>\n        <p>Something broken? Get in touch</p>\n        <p>Want a new feature? Let us know</p>\n        <p>Got a question? We’re always here for you.</p>\n        <p>Our <strong>customer service team works 24/7</strong>, providing round-the-clock support no matter wherer you live.</p>\n        <p>We promise you'll always have a say in the development of the Constant platform...</p>\n        <p>Because we <strong>built it for you</strong></p>"
         }
     }
 }

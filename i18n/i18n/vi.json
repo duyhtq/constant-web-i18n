@@ -42,7 +42,8 @@
     },
     "lang": {
         "en": "English",
-        "vn": "Tiếng Việt"
+        "vn": "Tiếng Việt",
+        "zh": "简体中文"
     },
     "validation": {
         "csv": "Hãy nhập loại tệp hợp lệ (csv)."
@@ -136,6 +137,8 @@
         "copyright2": "{term}",
         "borrowerAgreement": "Thoả thuận người vay",
         "investorAgreement": "Thoả thuận nhà đầu tư",
+        "AMLPolicy": "AML Policy",
+        "membership": "Membership",
         "kycGuidelines": "Hướng dẫn KYC",
         "contactUs": "Liên hệ",
         "referral": "Chia sẻ & Nhận tiền",
@@ -294,7 +297,7 @@
         "taxIDValid": "Vui lòng nhập số hợp lệ",
         "expiredSession": "Phiên làm việc hết hạn. Xin vui lòng đăng nhập lại.",
         "serverCode": {
-            "requestFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại!",
+            "requestFailed": "Something went wrong. Please refresh your browser and try again.",
             "generalCode500": "Đã xảy ra lỗi. Xin vui lòng thử lại! (500)",
             "generalCode400": "Đã xảy ra lỗi. Xin vui lòng thử lại! (400)",
             "generalError": "Opps! Có gì đó không ổn, vui lòng thử lại",
@@ -333,7 +336,10 @@
             "invalidCoupon": "Mã khuyến mãi không đúng. Xin vui lòng nhập lại.",
             "usedCoupon": "Mã khuyến mãi đã được sử dụng.",
             "restrictedEmail": "Tên miền email không hợp lệ.",
-            "prvMaxWithdraw": "Prv is max withdraw"
+            "prvMaxWithdraw": "Prv is max withdraw",
+            "inValidWalletAddress": "Receive address invalid",
+            "undefined": "Opps! Something went wrong, please try again",
+            "loginFailure": "Please make sure your email and password are correct."
         },
         "withdrawGreaterThan": "Lượng rút tối thiểu là {min}",
         "withdrawLessThanOrEqual": "Lượng rút tối đa là {max}",
@@ -782,13 +788,49 @@
                 "inputCode": "Nhập mật khẩu",
                 "close": "Đóng",
                 "submit": "Gửi",
-                "message": "Xác thực Google"
+                "message": "Xác thực Google",
+                "popupTitle": "Two-factor Authentication",
+                "newTitle": "Google Authentication",
+                "newInputCode": "Please input the 6-digit code from your Google Authenticator app.",
+                "cantAccess": "Can’t access Google Authentication?"
             },
             "disable2FaSuccess": "Vô hiệu hóa 2FA thành công",
             "enable2FaSuccess": "Bật 2FA thành công!"
         },
         "setting": {
             "title": "Cài đặt chung"
+        },
+        "flexInterestConfig": {
+            "title": "Earn 5% APY on your balance with Flex",
+            "label": "Earn 5% APY through Flex",
+            "noteOn": "Your balance is earning 5% APY through Flex. You can withdraw anytime for free.",
+            "noteOff": "Your balance is escrowed with Prime Trust and insured to $130,000,000.",
+            "desc": "What would you like to do with your balance?",
+            "descDesc": "<p>You can choose to earn 5% APY on your balance with Flex.</p>\n                <p>Flex is a lending pool that uses Compound Finance technology to earn you interest. All lending is secured by borrower collateral, which protects your funds, and you can withdraw anytime for free.</p>\n                <p>If you disable Flex, your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust store your funds across multiple insured bank accounts, giving total coverage of $130,000,000, but you won’t earn interest.</p>\n",
+            "enableFlex": {
+                "messageConfirm": {
+                    "true": "Your balance is escrowed with Prime Trust and insured to $130,000,000.",
+                    "false": "Your balance earns 5% APY through Flex. You can withdraw anytime for free."
+                },
+                "enableFlexSuccess": {
+                    "true": "<p>Your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust stores your funds across multiple insured bank accounts, giving total coverage of $130,000,000. You can withdraw anytime for free, but your balance will not earn interest.</p>\n<a href=\"https://medium.com/@constantp2p/meet-scott-purcell-ceo-of-prime-trust-ae7581835030\" class=\"underline\">Find out more about Prime Trust</a>\n",
+                    "false": "<p>Congratulations! Your balance will now earn 5% APY through Flex. You can withdraw anytime for free and your balance is protected by borrower collateral.</p>\n<a href=\"https://medium.com/@constantp2p/compound-finance-discover-the-interest-earning-tech-behind-flex-dcbb1decc835\" class=\"underline\">Find out how Flex works</a>\n"
+                },
+                "enableFlexFailed": {
+                    "true": "Sorry, we can’t disable Flex for you right now – please try again later. If you keep getting this message, please email us at hello@myconstant.com.",
+                    "false": "Sorry, we can’t enable Flex for you right now – please try again later. If you keep getting this message, please email us at hello@myconstant.com."
+                },
+                "confirm": {
+                    "title": "Yes",
+                    "true": "Yes, insure my balance with Prime Trust",
+                    "false": "Yes, I want to earn 5% APY"
+                },
+                "cancel": {
+                    "title": "No",
+                    "true": "No, I’ll keep earning 5% APY",
+                    "false": "No, I’ll stick with the insurance"
+                }
+            }
         },
         "referralInfo": {
             "title": "Thông tin giới thiệu",
@@ -877,6 +919,7 @@
             "detail": "Chi tiết giao dịch",
             "extID": "Giấy tờ khác",
             "exportToExcel": "Xuất ra dạng tệp Excel",
+            "openOrders": "Open orders",
             "agent": {
                 "acceptSuccessfully": "Lệnh đã chọn của bạn đã được chấp nhận",
                 "cancelSuccessfully": "Lệnh đã chọn của bạn đã được huỷ thành công",
@@ -914,7 +957,10 @@
                 "13": "Lãi suất",
                 "14": "Kiếm tiền từ chương trình giới thiệu Flex",
                 "15": "Phần thưởng thành viên",
+                "16": "Referral Term Deposit",
+                "17": "Referral Reward",
                 "101": "Điểm thưởng",
+                "102": "Coupon Signup",
                 "received": "Đã nhận"
             },
             "orderStatus": {
@@ -930,7 +976,8 @@
                 "11": "Chuyển khoản thất bại",
                 "12": "Đang chờ duyệt",
                 "13": "Đang chờ duyệt",
-                "14": "Đang chuyển khoản"
+                "14": "Đang chuyển khoản",
+                "15": "Confirming"
             },
             "topUpStatus": {
                 "0": "Đang chờ",
@@ -1177,6 +1224,11 @@
             "updateEmail": "Cập nhật email",
             "alreadyVerified": "Địa chỉ email của bạn đã được xác minh. Cảm ơn"
         },
+        "emailConfirm": {
+            "verifyFailed": "Confirm failed, please try again!",
+            "verifySuccess": "Your email was confirmed successfully.",
+            "alreadyVerified": "Your email address has already been confirmed. Thank you"
+        },
         "phoneVerification": {
             "sendCodeSuccess": "Xin vui lòng kiểm tra tin nhắn điện thoại để nhận mã xác minh.",
             "sendCodeFailed": "Đã xảy ra lỗi. Xin vui lòng gửi lại mã xác nhận.",
@@ -1218,8 +1270,10 @@
                 "getListFailed": "Xin lỗi, có lỗi xảy ra. Vui lòng thử lại.",
                 "createdDate": "Ngày tạo",
                 "amount": "Tiền gốc",
+                "staking": "Stake balance",
                 "received": "đã nhận",
                 "matched": "đã khớp lệnh",
+                "holding": "balance holding",
                 "interest": "Lãi suất đến nay",
                 "totalInterest": "Tổng lãi suất",
                 "totalInterestDesc": "Đây là lãi suất bạn kiếm được trong nguyên một kỳ. Nếu người mượn hoàn trả sớm, bạn sẽ kiếm được lãi suất đến hiện tại.",
@@ -1234,6 +1288,7 @@
                 "anyTimeAccount": "Nạp bất kỳ lúc nào",
                 "balanceInterestDesc": "\n        <p><strong>Tại sao số dư tài khoản của tôi tăng?</strong></p>\n            <p>Kể từ <strong>10/09/2019</strong>, bạn tự động kiếm được <strong>{systemInterest}% tỷ suất thu nhập hàng năm</strong> vào số dư hiện tại. Thu nhập này sẽ được cập nhật mỗi ngày theo thời gian thực và tính lãi kép hàng ngày! Bạn có thể rút bất kỳ lúc nào.</p>\n        ",
                 "balanceStarDesc": "\nKiếm STAR bằng cách giới thiệu bạn bè. Bạn có thể hoàn trả 1% cho mỗi STAR hoặc giảm giá lãi suất. Đi đến link giới thiệu để được hướng dẫn        ",
+                "referralDesc": "\n        Get a 10% reward when your friends earn interest – paid out every second. So if your friend earns $100, we’ll give you $10. There’s no limit to the number of friends you can refer.\n        ",
                 "term": "Kỳ hạn",
                 "endTerm": "Kỳ hạn kết thúc",
                 "trial": "THỬ NGHIỆM",
@@ -1258,7 +1313,7 @@
                     "pending": "Đang chờ",
                     "matching": "Đang khớp lệnh",
                     "matched": "Đã khớp",
-                    "closed": "Đã đóng",
+                    "closed": "Cancelled",
                     "allStatus": "Tất cả",
                     "done": "Hoàn tất"
                 },
@@ -1276,7 +1331,7 @@
                     "approving": "Đang chấp thuận",
                     "transferring_fiat": "Đang chờ",
                     "closed_soon": "Đã khớp",
-                    "": "",
+                    "undefined": "",
                     "picked": "Đang chờ"
                 },
                 "interestInfo": {
@@ -1551,7 +1606,9 @@
                     "due": "Kỳ hạn kết thúc"
                 },
                 "yourInvestments": "Khớp {plural} {matched}",
-                "partialMatchesDesc": "Một số khoản đầu tư có thể được chia thành một lượng nhỏ để lấp đầy nhiều đơn đặt hàng cho vay. Nền tảng sẽ tiếp tục cố gắng để khớp khoản đầu tư của bạn theo đúng kỳ hạn."
+                "partialMatchesDesc": "Một số khoản đầu tư có thể được chia thành một lượng nhỏ để lấp đầy nhiều đơn đặt hàng cho vay. Nền tảng sẽ tiếp tục cố gắng để khớp khoản đầu tư của bạn theo đúng kỳ hạn.",
+                "noOpenData": "No open order available",
+                "noData": "No data available"
             },
             "applicationDetail": {
                 "dueDays": "Ngày đáo hạn",
@@ -1588,6 +1645,10 @@
             "matched": "Khớp: {amount} {symbol}",
             "withdraw": "Rút tiền",
             "withdrawReward": "Rút",
+            "cancel": "Cancel",
+            "cancelMess": "Are you sure you want to cancel?",
+            "cancelStakingFailed": "Something went wrong. Please try again.",
+            "cancelStakingSuccessfully": "Your order was canceled successfully.",
             "staking": "Stake",
             "unStaking": "Unstake",
             "reward": "Phần thưởng",
@@ -1606,7 +1667,9 @@
                 "8": "Không thành công",
                 "9": "Huỷ bầu chọn",
                 "10": "Không bình chọn",
-                "11": "Đang chuyển"
+                "11": "Đang chuyển",
+                "12": "Cancelled",
+                "13": "Reward Pending"
             }
         }
     },
@@ -1647,7 +1710,8 @@
             "warningVerifyNow": "Xác minh ngay",
             "two2faRequired": "Tất cả người dùng có số dư trên 1000 USD được yêu cầu xác thực 2FA",
             "loginSocialTitle": "Đăng nhập ngay lập tức",
-            "loginEmailTitle": "hoặc đăng nhập bằng email"
+            "loginEmailTitle": "hoặc đăng nhập bằng email",
+            "loginFailed": "Failed while logging in, please try again"
         },
         "forgetPassword": {
             "title": "Quên mật khẩu?",
@@ -1717,7 +1781,8 @@
             "registerFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
             "referrerReferralCode": "Mã người được giới thiệu:{code}",
             "promotionCode": "Mã khuyến mãi",
-            "promotionCodeRequired": "Nhập mã khuyến mãi"
+            "agreementText": "By ticking this box, I agree to Constant's",
+            "agreementTextLink": "Terms and Conditions."
         },
         "userLogin": {
             "balance": "Số dư",
@@ -1923,6 +1988,7 @@
                 "introHolderTemplate": "\n<h1>Mua nội địa tại {country}</h1>\n        <p>Để trở thành người đầu tiên mua và bán Constant tại quốc gia của bạn, hãy liên hệ với chúng tôi để bắt đầu</p>\n        <p>Gửi email cho chúng tôi tại <a href=\"mailto:{email}\">{email}</a></p>\n   \n        ",
                 "confirmTemplate": " <div name=\"thanks\">\n            <p>Cảm ơn! Vui lòng chuyển <strong>{FiatAmount} {FiatCurrency}</strong> tới tài khoản ngân hàng người bán.</p>\n          </div>\n          <div name=\"bank\">\n            <p>\n              <span>Bank:</span>\n              <span>{BankName}</span>\n            </p>\n            <p>\n              <span>Tên tài khoản:</span>\n              <span>{BankAccountName}</span>\n            </p>\n            <p>\n              <span>Số tài khoản: </span>\n              <span>{BankAccountNumber}</span>\n            </p>\n            <p>\n              <span>Số lượng: </span>\n              <span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n            </p>\n            <p>\n              <span>Constant: </span>\n              <span>{Amount}&nbsp;{Currency}</span>\n            </p>\n            <p>\n              <span>Tham chiếu: </span>\n              <span>{Reference}</span>\n            </p>\n          </div>\n          <div name=\"notice\">\n            <b name=\"important\">QUAN TRỌNG:</b>\n            <span>\n              Hãy viết số tham chiếu <b>{Reference}</b> trong tin nhắn chuyển tiền\n            </span>\n          </div>\n          <div name=\"window\">\n            <strong name=\"minutes\">THỰC HIỆN TRONG 30 PHÚT: </strong>\n            <span>\n              Vui lòng hoàn thành chuyển tiền <b>trong vòng 30 phút</b>. Sau đó, lệnh\n              của bạn sẽ được tự động huỷ.\n            </span>\n          </div>",
                 "cryptoAddress": "{currency} địa chỉ:",
+                "scanQR": "Alternatively, scan this QR code directly from your mobile wallet to complete the investment.",
                 "accountName": "Tên tài khoản:",
                 "bankName": "Tên ngân hàng",
                 "accountNumber": "Số tài khoản:",
@@ -2009,16 +2075,16 @@
             "send": {
                 "confirmTemplate": {
                     "title": "Xin cảm ơn!",
-                    "description": "Tiền của bạn đang trên đường đến tài khoản ngân hàng của người nhận. Thời gian có thể thay đổi dựa trên ngân hàng và địa điểm. Vui lòng xem <a href=\"/getPrices\" class=\"colorLight semiBold\"> thời gian phục vụ </a> của chúng tôi để biết ước tính khi nào tiền sẽ đến tay bạn.",
-                    "contact": "Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ với <a class=\"colorLight semiBold\" href=\"mailto:hello@myconstant.com\"> hello@myconstant.com </a> bất cứ lúc nào.",
+                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"colorLight semiBold\">service times</a> for an estimation of when funds will reach you.",
+                    "contact": "If you have any questions, feel free to reach out to <a class=\"colorLight semiBold\" href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a> anytime.",
                     "actionTitle": "Đặt lệnh chuyển tiền khác"
                 }
             },
             "withdraw": {
                 "confirmTemplate": {
                     "title": "Xin cảm ơn!",
-                    "description": "Tiền của bạn đang trên đường đến tài khoản ngân hàng của người nhận. Thời gian có thể thay đổi dựa trên ngân hàng và địa điểm. Vui lòng xem <a href=\"/getPrices\"lists\" class=\"colorLight semiBold\"> thời gian phục vụ </a> của chúng tôi để biết ước tính khi nào tiền sẽ đến tay bạn.",
-                    "contact": "Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ với <a class=\"colorLight semiBold\" href=\"mailto:hello@myconstant.com\"> hello@myconstant.com </a> bất cứ lúc nào.",
+                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"colorLight semiBold\">service times</a> for an estimation of when funds will reach you.",
+                    "contact": "If you have any questions, feel free to reach out to <a class=\"colorLight semiBold\" href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a> anytime.",
                     "actionTitle": "Về trang chủ"
                 }
             }
@@ -2194,6 +2260,7 @@
             "batchConfirmMsg": "Bạn có chắc muốn chuyển khoản tới nhiều người từ trong danh sách này?",
             "transferFailed": "Có lỗi xảy ra khi thực hiện giao dịch. Xin vui lòng thử lại",
             "transferSuccessful": "Giao dịch thành công",
+            "transferConfirm": "We've already sent you a verification email, please confirm before we proceed your request.",
             "timeLimit": "Bạn sẽ nhận được Constant trong ",
             "timeLimitMunite": "2 phút",
             "subintroTitle1": "Không ngân hàng, không biên giới.",
@@ -2208,7 +2275,7 @@
                 "orderInfo": {
                     "title": "Xác nhận chuyển khoản",
                     "desc": " ",
-                    "cryptoAddress": "Tới địa chỉ",
+                    "cryptoAddress": "To address",
                     "email": "Tới Email",
                     "amount": "Số lượng"
                 }
@@ -2243,6 +2310,7 @@
             "batchConfirmMsg": "Bạn có chắc muốn chuyển khoản tới những người có trong danh sách này?",
             "transferFailed": "Có lỗi xảy ra khi thực hiện chuyển khoản. Xin vui lòng thử lại",
             "transferSuccessful": "Chuyển khoản thành công",
+            "transferConfirm": "We've already sent you a verification email, please confirm before we proceed your request.",
             "timeLimitInWorkingTime": "Bạn sẽ nhận được tiền trong 1 giờ",
             "timeLimit": "Bạn sẽ nhận được tiền trong ",
             "timeLimitMunite": "2 phút",
@@ -2301,6 +2369,8 @@
             },
             "headLine": "Bạn muốn trả nợ thẻ tín dụng, viện phí hoặc tiền thuê nhà? Đơn giản chỉ cần nhập số lượng Constant bạn muốn vay và đặt cọc ETH, khoản vay Constant sẽ được giữ an toàn trong hợp đồng thông minh của Constant.",
             "exchange": {
+                "usedMarketRate": "Use market rate ",
+                "usedMarketRateDesc": "When market rate is enabled, you're guaranteed a match at the best rate and term available in the market.",
                 "maxRateTooltip": "Đây là lãi suất bình quân năm (APR) mà bạn sẵn sàng trả cho khoản vay. Nếu có một nhà đầu tư sẵn sàng nhận lợi nhuận ít hơn, bạn sẽ trả lãi suất thấp hơn.",
                 "minTermTooltip": "Đây là kì hạn tối thiểu cho khoản vay mà bạn muốn.",
                 "caption": "Vay thế chấp bằng tiền mã hoá",
@@ -2387,7 +2457,13 @@
                 "interestedRate": "Lãi suất:",
                 "interestedRateValue": "{percent} APR",
                 "matchingFee": "Phí khớp lệnh:",
-                "matchingFeeValue": "1% giá trị khoản vay"
+                "matchingFeeValue": "1% giá trị khoản vay",
+                "cryptoAddress": "{currency} address:",
+                "backOrderBook": "Back",
+                "bitgo": {
+                    "title": "Secured by BitGo",
+                    "content": "You’re sending your collateral to BitGo, a qualified digital asset custodian. Your collateral will be securely stored inside a BitGo cold wallet that’s insured to $100M. So no matter what happens to Constant, your collateral is secure."
+                }
             },
             "history": {
                 "itemTpl": "\n          <div name=\"loan-info-container\">\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Khoản vay:</span>\n              <span name=\"loan-info-value\">{loanAmount}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Lãi suất:</span>\n              <span name=\"loan-info-value\">{interestedRate}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Thế chấp:</span>\n              <span name=\"loan-info-value\">{collaterals}</span>\n            </div>\n            <div name=\"loan-info-item\">\n              <span name=\"loan-info-label\">Kỳ hạn:</span>\n              <span name=\"loan-info-value\">{term}</span>\n            </div>\n          </div>\n        ",
@@ -2531,7 +2607,7 @@
                     "recieved": "Đang khớp lệnh",
                     "accepted": "Đã khớp",
                     "payingInterest": "Lãi phải trả",
-                    "done": "Đã đóng",
+                    "done": "Done",
                     "withdrawed": "Đã rút ",
                     "tnxFailed": "Vui lòng thử lại",
                     "cancelled": "Đã huỷ",
@@ -2568,6 +2644,9 @@
                 "repaymentByCollateral": "Bạn có muốn thanh toán bằng tài sản thế chấp?",
                 "repaymentMethod": "Payment method: ",
                 "willPayCollateral": "Tài sản thế chấp được thanh toán là",
+                "feePayoffExchangeRate": "Collateral value is based on the current market price of {value} USD/{currency}",
+                "payCollateralFee": "Repay with collateral fee",
+                "payCollateralFeeDesc": "This fee is to cover the difference in price during liquidation process.",
                 "willReturnCollateral": "Tài sản thế chấp được trả lại là",
                 "repayAddress": "Repay address",
                 "copyMessage": "Address has been copied!",
@@ -2594,7 +2673,9 @@
                     "createdDate": "Đã tạo",
                     "dueDate": "Ngày đáo hạn",
                     "collateralValueDesc": "Điều này thể hiện giá trị tài sản thế chấp của bạn bằng bao nhiêu phần trăm của khoản vay. Nó chiếm phần lãi tích lũy cho đến nay, cũng như phí trả nợ mà bạn nên chọn để trả nợ ngay hôm nay. Nếu nó rơi xuống 110%, tài sản thế chấp của bạn sẽ được thanh lý, và phần chênh lệch được hoàn trả cho bạn.\n",
-                    "repayAddress": "Repay Address"
+                    "repayAddress": "Repay Address",
+                    "collateralValueAtLiquid": "Liquidation price",
+                    "collateralValueAtLiquidDesc": "Once the price of the token falls to this price, your loan will be liquidated.\n          Note: this number is always changed unpredictably due to the fluctuation of the market. Please keep an eye on your loans to avoid liquidation."
                 },
                 "paymentMethod": {
                     "const": "USD",
@@ -2674,6 +2755,7 @@
     "static_page": {
         "userAgreement": "Thỏa Thuận Người Dùng",
         "privacyPolicy": "Chính Sách Bảo Mật",
+        "AMLPolicy": "Anti-Money Laundering Agreement",
         "promotionPrograms": "Các Chương Trình Khuyến Mãi",
         "aboutUs": "Về Chúng Tôi",
         "faqs": "Câu hỏi thường gặp"
@@ -3063,6 +3145,7 @@
     },
     "exchangeInputDepositForm": {
         "minAmountRequired": "Vui lòng nhập số lớn hơn {amount}{currency}",
+        "minDepositRequired": "Please enter an amount larger than {amount} {currency}",
         "minUsdRequired": "Xin vui lòng nhập số lớn hơn 0.01 USD",
         "minVndRequired": "Xin vui lòng nhập số lớn hơn 10,000 VNĐ",
         "fiatAmountInputLabel": "Số tiền nạp",
@@ -3423,6 +3506,7 @@
             }
         },
         "crypto": {
+            "bitGo": "$100M escrow insurance",
             "desc": "Tuyệt đối an toàn. Tất cả các khoản đầu tư và khoản vay đều được đảm bảo bởi tài sản thế chấp và hợp đồng thông minh."
         },
         "faqs": {
@@ -3811,6 +3895,8 @@
                 "zelle1": "          <p>Số lượng: {amount} USD</p>\n          <p>Gửi tới: <strong>finance@myconstant.com</strong></p>",
                 "zelle": "\n          <p>Số tiền: {amount} USD</p>\n          <p>Gửi tới: <strong>finance@myconstant.com</strong></p>\n          <p>Vui lòng bao gồm địa chỉ email được liên kết với tài khoản Constant của bạn trong phần ghi chú..</p>\n          <p>Nếu bạn chưa có Zelle, hoàn toàn có thể dùng email hoặc số điện thoại để đăng kí trên website hoặc ứng dụng di động của ngân hàng bạn đang sử dụng.</p>        ",
                 "bankChosenMessage1": "\n<p>Với chuyển khoản ngân hàng, chúng tôi có tài khoản ở hầu hết các ngân hàng lớn để giao dịch được thuận tiện.</p>\n          <p>Xin vui lòng chọn ngân hàng nào thuận tiện nhất cho bạn để giao dịch.</p>        ",
+                "bankTransfer": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.</p>\n          <p>If you don’t bank with any of those listed, no problem. You can transfer from any bank account, but please note that your bank might charge you a fee.</p>\n        ",
+                "bankAutoPaymentMessage": "\n          <p>We’ve partnered with Checkbook to make bank transfers even easier.</p>\n          <p>Instead of logging into your bank account separately, enter your login details here and Checkbook will arrange the transfer automatically by ACH/digital check.</p>\n          <p>Neither Constant nor Checkbook store your details, and the service is free.</p>\n        ",
                 "bankChosenMessage": "Chúng tôi có tài khoản ở rất nhiều các ngân hàng lớn để bạn chuyển khoản dễ dàng hơn. Xin vui lòng chọn ngân hàng thuận tiện nhất với bạn để thực hiện chuyển khoản.",
                 "makeAnotherButton": "Đầu tư một khoản khác",
                 "updateBalanceNoteInWorkingTime": "Xin lưu ý rằng có thể mất <strong> tối đa 1 giờ </ strong> để cập nhật số dư của bạn sau khi nhận được khoản tiền gửi của bạn. Chúng tôi đang nỗ lực để giảm thời gian này, vì vậy cảm ơn sự kiên nhẫn của bạn.",
@@ -4025,6 +4111,13 @@
         }
     },
     "getPrices": {
+        "title": "Pricing and Service times",
+        "desc": "\n    <p className=\"bold\">All times shown below are maximum estimates. In all cases, the team strives for ASAP.</p>\n    <p>While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</p>\n    ",
+        "collateralIssue": "\n    *About collateral issue, please ping <a href=\"https://t.me/andy_9210\" className=\"underline bold\" target=\"_blank\"><strong>@andy_9210</strong></a> on telegram to get direct support.\n    ",
+        "withdrawCryptoNote": "\n    <p>*Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually. The maximum waiting time is 24 hours.</p>\n    <p>*Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>\n    ",
+        "withdrawCollateralNote": "\n    <p>*About collateral issue, please ping <a href=\"https://t.me/andy_9210\" className=\"underline bold\" target=\"_blank\"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>\n    ",
+        "holidaysNote": "\n    <p>*Our service time may also be affected by public and banking holidays in the US and your local country.</p>\n    ",
+        "zelleDepositDelayIssue": "\n    <p>*Possible reasons for a delay in processing your Zelle deposit</p>\n    <p> - Missing relevant information to match with your deposit order: Name, User ID, Reference...</p>\n    <p> - Varying level of processing time by the bank.</p>\n    <p> - Transfering from an account with the account holder's name different than your registered name on Constant platform.</p>\n    <p> - Lack of or incorrect deposit order created prior to depositing.</p>\n    ",
         "depositFiat": {
             "head1": "Tiền mặt",
             "head2": "Giờ làm việc (9am-6pm, GMT+7, Thứ Hai-Thứ Sáu)",
@@ -4037,6 +4130,12 @@
             "head3": "Ngoài giờ làm việc",
             "head4": "Phí"
         },
+        "depositCollateral": {
+            "head1": "Collateral",
+            "head2": "Business hours (9am-6pm GMT +7, Mon-Fri)",
+            "head3": "Outside business hours",
+            "head4": "Fee"
+        },
         "withdrawFiat": {
             "head1": "Rút tiền mặt",
             "head2": "Giờ làm việc (9am-6pm, GMT+7, Thứ Hai-Thứ Sáu)",
@@ -4048,6 +4147,12 @@
             "head2": "Giờ làm việc (9am-6pm, GMT+7, Thứ Hai-Thứ Sáu)",
             "head3": "Ngoài giờ làm việc",
             "head4": "Phí"
+        },
+        "withdrawCollateral": {
+            "head1": "Collateral withdrawal",
+            "head2": "Business hours (9am-6pm GMT +7, Mon-Fri)",
+            "head3": "Business hours (9am-6pm CET, Mon-Fri)",
+            "head4": "Fee"
         },
         "matchingFee": {
             "head1": "Phí kết nối",
@@ -4064,7 +4169,8 @@
     },
     "modules": {
         "faqs": {
-            "title": "Những câu hỏi thường gặp",
+            "title": "Frequently-asked questions (FAQs)",
+            "desc": "Here you'll find answers to the most common questions our customers ask. If you can't find your answer here, please email us at <a href=\"mailto:hello@myconstant.com\" class=\"landing-link semiBold\" target=\"_top\">hello@myconstant.com</a> and we'll be happy to help you.",
             "viewAll": "View all",
             "hide": "Hide"
         }
@@ -4268,6 +4374,7 @@
         "referral_history": {
             "user_email": "Friend’s email address",
             "value": "Your earnings ",
+            "valueDesc": "As soon as you’ve earned at least 1 cent, you can track your earnings below.",
             "object_type": "Type",
             "object_amount": "Amount (USD)",
             "created_at": "Date & Time"
@@ -4473,6 +4580,8 @@
         "todayRate": "Lãi suất hôm nay",
         "todayRateValues": "Lãi suất {rate}%/năm",
         "howMuchDoYouWantToDeposit": "Bạn muốn stake bao nhiêu?",
+        "usingAvailableBalance": "Use max available amount ({maxAmount} {currency})?",
+        "usingAvailableBalanceDesc": "Use max of your available amount",
         "depositNow": "Bắt đầu staking ngay",
         "depositWithAmount": "Bắt đầu staking {amount} {currency}",
         "validateMinAmountError": "Bạn không thể nhập số lượng nhỏ hơn {amount}{currency}",
@@ -4489,23 +4598,27 @@
                 "title": "Bỏ stake",
                 "amount": "Số lượng",
                 "amountDesc": "Bạn muốn bỏ staking bao nhiêu?",
+                "usingAvailableBalance": "Use max available amount ({maxAmount} {currency})?",
                 "address": "Địa chỉ ví {name} của bạn?",
                 "addressDesc": "Địa chỉ ví để nhận tiền mã hoá.",
                 "maxAmount": "Số tiền của bạn phải nhỏ hơn {maxAmount}{symbol}.",
                 "withdrawFailed": "Có lỗi xảy ra. Xin vui lòng thử lại.",
                 "withdrawAddressFailed": "Your wallet address invalid. Please try again.",
-                "withdrawSuccess": "Yêu cầu bỏ staking của bạn đã thực hiện thành công"
+                "withdrawSuccess": "Yêu cầu bỏ staking của bạn đã thực hiện thành công",
+                "returnAmount": "Your {amount} {currency} un-taking will return to your coin balance."
             },
             "withdraw": {
                 "title": "Rút phần thưởng của bạn",
                 "amount": "Số lượng",
                 "amountDesc": "Bạn muốn rút bao nhiêu?",
+                "usingAvailableBalance": "Use max available amount ({maxAmount} {currency})?",
                 "address": "Địa chỉ ví {name} của bạn?",
                 "addressDesc": "Địa chỉ ví để nhận tiền mã hoá.",
                 "maxAmount": "Số tiền của bạn phải nhỏ hơn {maxAmount}{symbol}.",
                 "withdrawFailed": "Có lỗi xảy ra. Xin vui lòng thử lại.",
                 "withdrawAddressFailed": "Your wallet address invalid. Please try again.",
-                "withdrawSuccess": "Rút tiền thành công."
+                "withdrawSuccess": "Rút tiền thành công.",
+                "returnAmount": "Your {amount} {currency} reward will return to your coin balance."
             },
             "submit": "Gửi",
             "cancel": "Huỷ"
@@ -4514,9 +4627,13 @@
             "thankYou": "Đã gần xong",
             "cryptoThankMsg": "Chuyển {amount} {currency} vào địa chỉ ví bên dưới để bắt đầu staking.\n",
             "stakingAmount": "Số lượng Staking",
+            "availableBalance": "Available Balance",
+            "stakingRequired": "Staking required",
             "cryptoAddress": "{currency} địa chỉ",
             "minuteWindowDescription": "Vì mục đích bảo mật, yêu cầu staking của bạn sẽ hết hạn sau 24 giờ. Nếu bạn cần lâu hơn một chút, chỉ cần nhập lại số tiền bạn muốn stake khi bạn đã sẵn sàng.",
-            "minuteWindow": "Vui lòng hoàn tất chuyển khoản trong 24 phút."
+            "minuteWindow": "Vui lòng hoàn tất chuyển khoản trong 24 phút.",
+            "scanQR": "Alternatively, scan this QR code directly from your mobile wallet to complete the staking.",
+            "backOrderBook": "Back"
         },
         "learnMore": "Để biết thêm thông tin,",
         "learnMoreFAQs": "Xem các câu hỏi thường gặp",
@@ -4621,7 +4738,7 @@
             },
             "press7": {
                 "name": "",
-                "desc": "And when it comes to pioneering a new generation of fintech platforms, Constant provides a measuring stick for the industry’s progress."
+                "desc": "<p>And when it comes to pioneering a new generation of fintech platforms, Constant provides a measuring stick for the industry’s progress.</p>"
             },
             "press8": {
                 "name": "",
@@ -4647,6 +4764,9 @@
         "rewardBalance": "Số dư tiền thưởng",
         "stakingBalanceMobile": "Số dư",
         "rewardBalanceMobile": "Phần thưởng",
+        "availableBalanceMobile": "Available",
+        "pendingAmountMobile": "Pending",
+        "pendingUnStaking": "Un-staking amount, During un-stake time the pending transaction amount is not available.",
         "action": "Hành động",
         "withdraw": "Rút tiền",
         "withdrawReward": "Withdraw",
@@ -4689,9 +4809,38 @@
         "viewAll": "View All"
     },
     "memberShip": {
+        "undefined": "",
+        "howItWorks": {
+            "title": "How membership works",
+            "everyDollar": "EVERY DOLLAR",
+            "borrowInvest": "you invest or borrow",
+            "point": "membership point",
+            "startDate": "1 day",
+            "endDate": "180 days",
+            "headLine": "You invest<br />or borrow",
+            "desc": "\n      <p>Each point expires after 180 days.</p>\n      <p>Once you invest or borrow the minimum amount for membership, rewards continue until your points expire.</p>\n      <p>To keep your benefits, simply invest or borrow again to top up your points.</p>\n      ",
+            "details": "For every dollar you invest or borrow, you earn 1 membership point. Each point expires after 180 days.  \n        Once you invest or borrow the minimum amount for membership, rewards continue until your points expire.  \n        To keep your benefits, simply invest or borrow again to top up your points.",
+            "level1": {
+                "title": "Gold Member",
+                "point": "(25,000 points)",
+                "desc": ""
+            },
+            "level2": {
+                "title": "Platinum Member",
+                "point": "(50,000 points)",
+                "desc": ""
+            },
+            "level3": {
+                "title": "Diamond Member",
+                "point": "(100,000 points)",
+                "desc": "For every dollar you invest or borrow, you earn 1 membership point. \n          Each point expires after 180 days. Once you invest or borrow the minimum amount for membership, rewards continue until your points expire.\n          To keep your benefits, simply invest or borrow again to top up your points."
+            }
+        },
         "intro": {
             "title": "Membership Rewards",
-            "details": "Get exclusive platform benefits the more you invest or borrow"
+            "details": "Get exclusive platform benefits the more you invest or borrow",
+            "howItWork": "How it works",
+            "yourMember": "Your membership"
         },
         "caption": "Membership",
         "expiredDate": "Your {value} points will expired in {date}",
@@ -4703,35 +4852,234 @@
         "keepLevel": "{type} ${value} to keep your level",
         "getLevelDate": "From {date}",
         "title": {
-            "silver": "Vàng",
-            "gold": "Bạch kim",
-            "platinum": "Kim cương"
+            "level1": "Gold",
+            "level2": "Platinum",
+            "level3": "Diamond"
         },
         "get": {
-            "silver": "Nhận 100 USD",
-            "gold": "Nhận 1 STAR",
-            "platinum": "Nhận 2 STAR"
+            "level1": "Get 100 CONST",
+            "level2": "Get 1 STAR",
+            "level3": "Get 2 STAR"
         },
         "take": {
-            "silver": "Take 100 CONST",
-            "gold": "Take 1 STAR",
-            "platinum": "Take 2 STAR"
+            "level1": "Take 100 CONST",
+            "level2": "Take 1 STAR",
+            "level3": "Take 2 STAR"
         },
         "desc": {
-            "silver": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} cashback when you become a Silver member.</p>\n              <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped}.</p>\n              <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>",
-            "gold": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} when you become a Gold member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>\n              <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped}.</p>\n              <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>",
-            "platinum": "<h4>What you get:</h4>\n                 <p><i class=\"fal fa-check\"></i> {cashback} when you become a Platinum member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>\n                <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped} of the LTV.</p>\n                <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>"
+            "level1": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} cashback when you become a Silver member.</p>\n              <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped}.</p>\n              <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>",
+            "level2": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} when you become a Gold member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>\n              <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped}.</p>\n              <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>",
+            "level3": "<h4>What you get:</h4>\n                 <p><i class=\"fal fa-check\"></i> {cashback} when you become a Platinum member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>\n                <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped} of the LTV.</p>\n                <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>"
         },
         "history": {
             "title": "History",
-            "level": "Get level",
+            "level": "Status",
             "reward": "Get reward",
             "date": "Date"
         },
         "rewardType": {
-            "reward": "Stat",
+            "reward": "STAR",
             "fiat": "CONST",
             "null": "Không hợp lệ"
+        },
+        "memberShipLevel": {
+            "level0": "Member",
+            "level1": "Gold",
+            "level2": "Platinum",
+            "level3": "Diamond"
+        },
+        "faqs": {
+            "1": {
+                "question": "Do the minimum amounts apply to single loans only?",
+                "answer": "\n          <p>No, you can invest or borrow multiple times within the 180 days to become a Gold, Platinum or Diamond member.</p>\n          "
+            },
+            "2": {
+                "question": "Do outstanding loans and investments qualify?",
+                "answer": "\n          <p>Yes. You can meet the minimum threshold on active loans and investments that are yet to mature.</p>\n          "
+            },
+            "3": {
+                "question": "Can I combine loans and investments to reach the membership threshold?",
+                "answer": "\n          <p>\n          The Constant Referral Reward program earns you extra interest for investing or sharing Constant with friends and family. \n          You earn interest by completing certain actions, such as referring Constant to friends who then sign up, \n          sharing Constant on social media, and investing a minimum of $1,000 or more.\n          </p>\n          <p>\n          Complete all actions in our Referral Rewards program and you could earn 6% additional interest on your Investment Plans.\n           </p>\n          "
+            },
+            "4": {
+                "question": "What are Constant Referral Rewards?",
+                "answer": "\n          <p>No. The membership thresholds apply separately to loans and investments. \n          For example, you must invest $25,000 or borrow $25,000 to qualify for Gold membership.</p>\n          "
+            },
+            "5": {
+                "question": "How long do membership rewards last?",
+                "answer": "\n          <p>\n          The $100 cashback and STAR bonuses <strong>are one-off rewards only</strong>. The other benefits last as long as your points do. \n          You earn a point for every dollar you invest or borrow and each point expires after 180 days. So, \n          if you make a single investment of $25,000, for example, your points will last 180 days and so will the benefits.\n          </p>\n          <p>\n          If you invest several times to reach the minimum, your rewards will last 180 days from the first qualifying point you earned. \n          For example, if you invest $10,000 and then $15,000 three months later, your benefits will continue until your first batch of points expire.\n           </p>\n          "
+            },
+            "6": {
+                "question": "Can I extend membership rewards?",
+                "answer": "\n          <p>\n          Yes! When your points expire, simply invest or borrow again to top them up. \n          This way, you can keep your membership benefits for as long as you want them.\n           </p>\n          "
+            },
+            "7": {
+                "question": "Do I need to contact you when I’ve reached the minimum amount?",
+                "answer": "\n          <p>\n          No, you don’t need to do anything. We’ll track your investment and loan volume on a rolling six-month basis and when you meet the minimum threshold, \n          we’ll immediately upgrade you to Gold, Platinum or Diamond status. \n          Your rewards are also paid immediately, and the ongoing benefits last as long as your points do. \n           </p>\n          "
+            }
+        }
+    },
+    "trustPilot": {
+        "title": "Excellent",
+        "star": "4",
+        "desc": "Here’s what customers are saying about us on",
+        "viewAll": "View us on TrustPilot",
+        "comments": {
+            "0": {
+                "star": "3",
+                "title": "Good, but not the best they could be",
+                "desc": "I have made some investments with Myconstant. They have been good and I have been paid out as expected. My only gripe is that they aren't insured as some others are. I have taken my money out since then. If they were insured, I would go back to investing with them.",
+                "date": "Nov 24, 2019",
+                "auth": "Jason T"
+            },
+            "1": {
+                "star": "5",
+                "title": "Bright start to a new platform",
+                "desc": "Constant is still a very young company but is a powerful tool for investors and borrowers. Like many of the other reviews have mentioned, their customer service has given me comfort in resolving any issues quickly and professionally while Constant diligently works through the kinks on the platform. It is also very clear to me that Constant is working hard to progress their platform as I have noticed a steady stream of improvements in services, functionality, and interface design over the past few months, and I appreciate their investment in making Constant a valuable tool for customers.At first I was hesitant to transfer money over to Constant to start investing, but from my experience over the past several months, I have been very happy with it and and totally comfortable investing my money with them.",
+                "date": "Nov 21, 2019",
+                "auth": "Eric M."
+            },
+            "2": {
+                "star": "5",
+                "title": "Great platform for crypto investors",
+                "desc": "I got into crypto about three years ago by buying bitcoin. Since that time I have tried to figure out how to best maximize my investment returns through various crypto platforms and after trying many of the platforms I have settled on two and Constant is one of those. As a lender looking to make a return on investment I could not be more pleased with what Constant does and how they do it. I feel that my capital is well taken care of, the platform allows me to earn outsized returns on “idle” cash that would either be tied up in a low interest bearing account at a bank or exposed to volatility in the stock market or locked up in an illiquid investment for years. Earning a consistent 10% return annual is not easy folks and as far as I can tell, Constant may be one of the only ways of doing that with a minimum amount of risk and relatively high liquidity. Like any investment in crypto, one has to always be mindful of what happens in a really rough bear market and there are no guarantees in life but I think Constant has built a truly standout platform that is well worth considering if you have capital available to invest into the crypto space.",
+                "date": "Nov 21, 2019",
+                "auth": "SRR"
+            },
+            "3": {
+                "star": "5",
+                "title": "Constant has the best Customer Service in Crypto!",
+                "desc": "The Constant product is unlike anything I’ve ever used. More than their product, the customer service is what keeps me coming back! If I have any questions or doubts they’ll clarify in no time. Andy is one of the best at what he does, and is a massive help!",
+                "date": "Nov 21, 2019",
+                "auth": "Suji L"
+            },
+            "4": {
+                "star": "4",
+                "title": "I have been a borrower right from the…",
+                "desc": "I have been a borrower right from the start. Although there's a few bugs here and there but just because the customer support is superb gives you confidence with their platform. Since then a lot of improvements in a very short time. I'd give them 4 stars for their platform but because customer support is just super so I give them 5 stars. And oh, you won't find any other lending platform that accepts a variety of collateral than Constant. More success to the team.",
+                "date": "Nov 21, 2019",
+                "auth": "Ace"
+            },
+            "5": {
+                "star": "4",
+                "title": "Very good Platform",
+                "desc": "Very good platform and the support is very good. They need to improve their UI but so far so good. Transfers are fast with in a day. They work in US night hours (8PM-6AM)!!.",
+                "date": "Nov 20, 2019",
+                "auth": "Rajans"
+            },
+            "6": {
+                "star": "5",
+                "title": "Constant is the best blockchain related…",
+                "desc": "Constant is the best blockchain related service I have ever used! Their platform is very promising and helpful.The support/ops team is very brilliant and very helpful,those kind people are available whenever you need them.They are very innovative.I have used their products many times and my experiences with them were always perfect.I would definitely recommend everyone to try Constant.",
+                "date": "Nov 19, 2019",
+                "auth": "Burak Demircin"
+            },
+            "7": {
+                "star": "4",
+                "title": "Great platform with room to grow",
+                "desc": "Great platform with room to grow! I was hesitant at first but noticed they have a 1800 number you can call to their California Office. I called and the gentleman on the phone answered all of my questions!",
+                "date": "Nov 13, 2019",
+                "auth": "Justin L"
+            },
+            "8": {
+                "star": "4",
+                "title": "Did a lot of research on it and if it…",
+                "desc": "Did a lot of research on it and if it is legit, then it is a brilliant idea. I've invested a couple of times but have not yet withdrawn money. Here's an in-depth review: p2pinvesting101.blogspot.com/",
+                "date": "Nov 9, 2019",
+                "auth": "Pboneef"
+            },
+            "9": {
+                "star": "5",
+                "title": "Promising young project",
+                "desc": "Interesting product idea. Project is still young, but customer support team is excellent and eager to help you out and support you through the process. I have invested multiple times since August and pay outs have been smooth. Would recommend thoroughly reading the site, FAQs and blogs and ask questions to make sure you are comfortable with the mechanism by which this works.",
+                "date": "Nov 6, 2019",
+                "auth": "Bob P"
+            },
+            "10": {
+                "star": "5",
+                "title": "Excellent customer service and product!!",
+                "desc": "Their customer service is excellent! I had the pleasure of working with Andy and Claire (Both from Telegram) and they were there for every step of the process. When I called their number to ask a few more questions, again I was met with excellent customer service. I definitely recommend my constant to anybody looking for a loan by using their cryptocurrency. I believe they have a section where you can also invest and they’ll give you a certain percentage back, but I have only used the loan part. Again, thank you for everything!",
+                "date": "Dec 4, 2019",
+                "auth": "Fernando Sarmiento"
+            },
+            "11": {
+                "star": "5",
+                "title": "I have to say that the customer service…",
+                "desc": "I have to say that the customer service support is amazing all my questions and concerns were answered and the support I received made me want to signup and invest. The only complaint I have is it takes time to deposit and withdraw, especially over the weekend but the support team has let me know that they are working on getting this fixed. I am not one to leave reviews but I was so impressed with the support and the patience they had with me and explained in so much detail thank you so much and I will be spreading the word to my friends and family.",
+                "date": "Dec 4, 2019",
+                "auth": "Nikki Marie"
+            },
+            "12": {
+                "star": "5",
+                "title": "New constant customer",
+                "desc": "I reached out to the constant customer service team and the rep spent the time answering all of my questions and walked me through the steps of doing my first p2p investment. It was quick and easy! The only draw back is that they don’t have an app!",
+                "date": "Dec 4, 2019",
+                "auth": "Jen Camacho"
+            },
+            "13": {
+                "star": "5",
+                "title": "I am blown away at the exceptional…",
+                "desc": "I am blown away at the exceptional customer service the rep has provided!! He was so knowledgeable and quick to assist!! I love that I have the option to withdraw any time I want with Flex!!! I was offered options and didn’t feel like I was being sucked into something like a regular bank. The only bummer is they don’t have an app yet. But I am super hopeful for the future they have to offer!!!!",
+                "date": "Dec 4, 2019",
+                "auth": "Ashley F"
+            },
+            "14": {
+                "star": "5",
+                "title": "Great software i have ever experienced",
+                "desc": "Great software i have ever experienced. Customer service is awesome, they are willing to anwer all my questions and assist me much. 5 star for My constant",
+                "date": "Dec 4, 2019",
+                "auth": "Daisy Daisy"
+            }
+        }
+    },
+    "ourStory": {
+        "title": "Our Story",
+        "thanks": "- Thanks for reading -",
+        "b1": {
+            "time": "Jan 2019",
+            "title1": "Hi there.",
+            "title2": "Thanks for visiting our  secured P2P lending  platform.",
+            "content1": "\n        <p>If it’s your first time here, I’d love to tell you a little about who we are and what we do.</p>\n        <p>Like many stories, ours has a few twists and turns. So let’s rewind to January 2019 when it all began…</p>\n        <p>Back then, we were a humble stablecoin project. A team of economists, engineers, and creatives looking to make money more useful.</p>\n      "
+        },
+        "b2": {
+            "time": "CES 2019",
+            "title1": "Back then, we were a humble stablecoin project",
+            "content1": "\n        <p>We had developed an efficient, borderless, and stable digital currency, backed by the US Dollar, which we launched at CES 2019 in Las Vegas.</p>\n        <p>Our stablecoin (CONST) offered stability for people in troubled economies:</p>\n        <p>- It cut the cost of international transfers.</p>\n        <p>- It slashed processing times from days to minutes.</p>\n        <p>- gave everyone access to a free USD account.</p>\n        <p>But we wanted to do more…</p>\n      "
+        },
+        "b3": {
+            "title1": "We wanted to help people grow their money.",
+            "content1": "\n        <p>Like the rest of the world, we’d experienced first-hand the problems with traditional banking. The miserable interest rates, the huge fees, the slow, inefficient systems…</p>\n        <p>So, we began thinking about how we could pay a great interest rate on our stablecoin.</p>\n        <p>Digital currencies are versatile. They move quickly, freely, and are protected by the blockchain technology underpinning them – surely we could put those efficiency savings to work?</p>\n        <p>After a lot of discussion, we set our sights on an industry that – until now – has had a mixed reputation: peer-to-peer (P2P) lending. </p>\n        <p>The problem with P2P lending, as we saw it, was too much centralization and too little use of collateral. P2P lenders were doing what banks did – setting rates, evaluating risk, and so on. </p>\n        <p>Ultimately, this takes control away from you, the customer. </p>\n        <p>So, we built a P2P lending platform that would do two things:</p>\n      ",
+            "missions": {
+                "1": {
+                    "title": "1",
+                    "content": "\n            <p><strong>Give you control</strong> over amounts, rates, and terms.</p>  \n            <p>We’re the only P2P lending platform in the world to offer this (as far as we know).</p>\n          "
+                },
+                "2": {
+                    "title": "2",
+                    "content": "\n            <p><strong>Secure all lending</strong> with collateral. This protects your funds and means we never do credit checks.</p>\n          "
+                }
+            }
+        },
+        "b4": {
+            "time1": "May 2019",
+            "title1": "Our P2P lending platform launched",
+            "time2": "Jun 2019",
+            "title2": "We’d matched <span class=\"attention\">$1,000,000</span> in loans",
+            "content2": "Helping people across the world get the cash they need to do the things they want."
+        },
+        "b6": {
+            "time": "Today",
+            "title1": "Our P2P lending platform is internationally recognized as one of the most flexible, transparent, and rewarding.",
+            "content1": "Our P2P lending platform is internationally recognized as one of the most flexible, transparent, and rewarding.",
+            "content2": "We’re the fastest-growing P2P lender in SE Asia, and have featured in HackerNoon, ZeroHedge, Inc., and many other popular tech and finance publications."
+        },
+        "b7": {
+            "content1": "\n        <p>And as you’ve probably guessed by reading this far, we’re not done yet...</p>\n        <p>Our goal is to give you the best financial tools in the world and the expertise to use them.</p>\n        <p>That means continuous development of our technology, making it faster, cheaper, and more secure, and giving you all the helpful content you need to take advantage of it.</p>\n      ",
+            "title2": "Our job is to help you do more with your money.",
+            "content2": "\n        <p>To give you great interest rates on investments and easy access to credit when you need it.</p>\n      "
+        },
+        "b8": {
+            "content1": "\n        <p>No, we’re not perfect, but we’re honest about our shortcomings and dedicated to improving.</p>\n        <p>Something broken? Get in touch</p>\n        <p>Want a new feature? Let us know</p>\n        <p>Got a question? We’re always here for you.</p>\n        <p>Our <strong>customer service team works 24/7</strong>, providing round-the-clock support no matter wherer you live.</p>\n        <p>We promise you'll always have a say in the development of the Constant platform...</p>\n        <p>Because we <strong>built it for you</strong></p>"
         }
     }
 }

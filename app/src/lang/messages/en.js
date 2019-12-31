@@ -31,7 +31,10 @@ export default {
       wrongPassword: 'Invalid Password',
       placeholder: 'Please set key for placeholder text',
       btn: 'Please set key for button text',
-      close: 'Close'
+      close: 'Close',
+      days: 'days',
+      months: 'months',
+      selectChoice: 'Please select your choice',
     },
     local: {
       type: {
@@ -357,6 +360,7 @@ export default {
       inValidWalletAddress: 'Receive address invalid',
       undefined: 'Opps! Something went wrong, please try again',
       loginFailure: 'Please make sure your email and password are correct.',
+      stakingRequireMinTerm: 'Staking loan is required min term'
     },
     withdrawGreaterThan: 'The minimum withdrawal amount is {min}',
     withdrawLessThanOrEqual: 'The maximum withdrawal amount is {max}',
@@ -1778,6 +1782,7 @@ export default {
               cancel: 'Not now',
             },
             payOffSuccess: 'Repayment made. Thanks!',
+            payOffFailed: 'Repay failed',
             notEnoughConstantRepay: 'Your current balance is ${balance}. Please deposit ${requireAmount} to cover the amount due, then click repay again. ',
             makeADeposit: 'Make a deposit'
           },
@@ -2933,6 +2938,7 @@ export default {
           'Constant crypto-backed loans have a generous loan to value ratio, no matter the amount you borrow. Benefit from the kindest interest rates on the market with our short term loans and get more liquidity out of your crypto.',
       },
       what: {
+        title: 'Why borrow with us?',
         whatCaption0: 'Instant loans',
         whatCaption1: 'Crypto for cash',
         whatCaption2: '2% annualized interest',
@@ -3158,6 +3164,7 @@ export default {
         inValidWalletAddress: 'Your wallet address invalid',
         notSupportBech32: 'BTC bech32 not supported',
         rangeInterestRate: 'Interest rate must be greater than {min}% and less than {max}%',
+        stakingMinTimeRequire: 'Length of term must be equal or greater than {days} days',
       },
       depositCollateral: {
         collateralTypeLabel: 'Collateral type',
@@ -4325,6 +4332,7 @@ export default {
       learnMore: 'Learn more +',
     },
     what: {
+      title: 'Why invest with us?',
       whatCaption0: 'Protect the value of your money',
       whatCaption1: 'Move your money anywhere for free',
       whatCaption2: 'Insure your money up to $5M',
@@ -4394,7 +4402,7 @@ export default {
         2: 'Compounded & paid every second',
         3: 'Unlimited free withdrawals',
       }
-    }
+    },
   },
   yourSaving: {
     hello: `
@@ -6247,15 +6255,15 @@ export default {
     },
     desc: {
       level1: `<h4>What you get:</h4>
-              <p><i class="fal fa-check"></i> {cashback} cashback when you become a Silver member.</p>
+              <p><i class="fal fa-check"></i> {cashback} cashback when you become a Gold member.</p>
               <p><i class="fal fa-check"></i> Instant deposit on new investment orders, capped at {capped}.</p>
               <p><i class="fal fa-check"></i> Instant stablecoin and cryptocurrency withdrawals.</p>`,
       level2: `<h4>What you get:</h4>
-              <p><i class="fal fa-check"></i> {cashback} when you become a Gold member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>
+              <p><i class="fal fa-check"></i> {cashback} when you become a Platinum member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>
               <p><i class="fal fa-check"></i> Instant deposit on new investment orders, capped at {capped}.</p>
               <p><i class="fal fa-check"></i> Instant stablecoin and cryptocurrency withdrawals.</p>`,
       level3: `<h4>What you get:</h4>
-                 <p><i class="fal fa-check"></i> {cashback} when you become a Platinum member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>
+                 <p><i class="fal fa-check"></i> {cashback} when you become a Diamond member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>
                 <p><i class="fal fa-check"></i> Instant deposit on new investment orders, capped at {capped} of the LTV.</p>
                 <p><i class="fal fa-check"></i> Instant stablecoin and cryptocurrency withdrawals.</p>`,
     },
@@ -6537,12 +6545,21 @@ export default {
     b8: {
       content1: `
         <p>No, we’re not perfect, but we’re honest about our shortcomings and dedicated to improving.</p>
-        <p>Something broken? Get in touch</p>
-        <p>Want a new feature? Let us know</p>
+        <p class="clearBottom">Something broken? Get in touch</p>
+        <p class="clearBottom">Want a new feature? Let us know</p>
         <p>Got a question? We’re always here for you.</p>
         <p>Our <strong>customer service team works 24/7</strong>, providing round-the-clock support no matter wherer you live.</p>
         <p>We promise you'll always have a say in the development of the Constant platform...</p>
         <p>Because we <strong>built it for you</strong></p>`
+    }
+  },
+  partner: {
+    commission: {
+      user_id: 'User Id',
+      value: 'Commission',
+      object_type: 'Type',
+      object_amount: 'Amount',
+      created_at: 'Created at'
     }
   }
 };

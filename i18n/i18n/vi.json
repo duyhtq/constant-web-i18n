@@ -31,7 +31,10 @@
             "wrongPassword": "Mật khẩu không hợp lệ",
             "placeholder": "Hãy đặt khoá cho phần giữ chỗ văn bản",
             "btn": "Hãy đặt khoá cho nút văn bản",
-            "close": "Đóng"
+            "close": "Đóng",
+            "days": "days",
+            "months": "months",
+            "selectChoice": "Please select your choice"
         },
         "local": {
             "type": {
@@ -183,7 +186,7 @@
                 "link": "https://t.me/constantp2p"
             }
         },
-        "content": "\n    <p class=\"bold\">Is CONST LLC a bank?</p>\n    <p>Please note that CONST LLC (hereafter referred to as “we”, “us”, or “Company”) is not a bank or deposit account, nor is it a regulated financial institution. Constant tokens are not financial instruments. No interest will be paid on any funds or other assets held in your Constant account and all assets directly held by us are not insured by us or, except as set forth below, any third party or any government agency.</p>\n    <p>We work with independent third-party financial institutions such as Prime Trust to provide cash management for the fiat deposits backing Constant tokens, ensuring that all Constant tokens in circulation are matched by an equal amount of fiat deposits. To achieve this, the fiat deposits backing Constant are held in one or more depository accounts at US banks or trust companies whose deposits may be insured.</p>\n    <p>Rate is current at the time of reading, and may be subject to change in the future.</p>\n    "
+        "content": "\n<p class=\"bold\">CONST LLC có phải là ngân hàng không?</p>\n<p>Xin lưu ý rằng CONST LLC (sau đây được gọi bằng \"chúng tôi\" hay \"công ty\") không phải là một ngân hàng hay một tổ chức tài chính. Token Constant không phải là một công cụ tài chính. Tiền lãi sẽ không được trả cho bất kì khoản tiền hoặc tài nào khác được giữ trong tài khoản Constant. Tất cả những tài sản do chúng tôi trực tiếp nắm giữ sẽ không được bảo hiểm bởi bất kì bên thứ ba hay cơ quan chính phủ nào, trừ những ngoại lệ dưới đây.</p> \n<p>Chúng tôi làm việc với PrimeTrust - một tổ chức tài chính độc lập để quản lí quỹ dự phòng cho token Constant, đảm bảo rằng với mỗi một đồng Constant đang lưu hành đều có 1 USD ở trong quỹ dự phòng. Quỹ dự phòng được giữ trong rất nhiều các tài khoản ngân hàng ở Mỹ. Những tài khoản này được bảo hiểm bởi FDIC.</p>\n<p>Mức lãi suất có thể bị thay đổi trong tương lai.</p>    "
     },
     "lending": {
         "title": "Constant",
@@ -297,7 +300,7 @@
         "taxIDValid": "Vui lòng nhập số hợp lệ",
         "expiredSession": "Phiên làm việc hết hạn. Xin vui lòng đăng nhập lại.",
         "serverCode": {
-            "requestFailed": "Something went wrong. Please refresh your browser and try again.",
+            "requestFailed": "Đã xảy ra sự cố. Xin vui lòng tải lại trình duyệt.",
             "generalCode500": "Đã xảy ra lỗi. Xin vui lòng thử lại! (500)",
             "generalCode400": "Đã xảy ra lỗi. Xin vui lòng thử lại! (400)",
             "generalError": "Opps! Có gì đó không ổn, vui lòng thử lại",
@@ -336,10 +339,11 @@
             "invalidCoupon": "Mã khuyến mãi không đúng. Xin vui lòng nhập lại.",
             "usedCoupon": "Mã khuyến mãi đã được sử dụng.",
             "restrictedEmail": "Tên miền email không hợp lệ.",
-            "prvMaxWithdraw": "Prv is max withdraw",
-            "inValidWalletAddress": "Receive address invalid",
-            "undefined": "Opps! Something went wrong, please try again",
-            "loginFailure": "Please make sure your email and password are correct."
+            "prvMaxWithdraw": "Không đủ PRV",
+            "inValidWalletAddress": "Địa chỉ ví không hợp lệ",
+            "undefined": "Oops… Có sự cố xảy ra, xin vui lòng thử lại.",
+            "loginFailure": "Email và mật khẩu không khớp.",
+            "stakingRequireMinTerm": "Staking loan is required min term"
         },
         "withdrawGreaterThan": "Lượng rút tối thiểu là {min}",
         "withdrawLessThanOrEqual": "Lượng rút tối đa là {max}",
@@ -772,9 +776,9 @@
             },
             "backupModal": {
                 "title": "Kích hoạt xác thực Google",
-                "label": "Please save this Key on paper",
-                "description": "This Key will allow you to recover your Google Authenticator in case of phone loss.",
-                "message": "Code copied to clipboard.",
+                "label": "Xin hãy lưu mật khẩu này ra giấy",
+                "description": "Mật khẩu này cho phép bạn hồi phục mã Google Authenticator trong trường hợp điện thoại gặp sự cố.",
+                "message": "Đã sao chép vào bộ nhớ.",
                 "ok": "Hoàn thành"
             },
             "disable2FaModal": {
@@ -789,10 +793,10 @@
                 "close": "Đóng",
                 "submit": "Gửi",
                 "message": "Xác thực Google",
-                "popupTitle": "Two-factor Authentication",
-                "newTitle": "Google Authentication",
-                "newInputCode": "Please input the 6-digit code from your Google Authenticator app.",
-                "cantAccess": "Can’t access Google Authentication?"
+                "popupTitle": "Xác minh hai bước",
+                "newTitle": "Xác thực Google",
+                "newInputCode": "Xin vui lòng nhập mã 6 số từ ứng dụng Google Authenticator.",
+                "cantAccess": "Không thể truy cập Google Authenticator?"
             },
             "disable2FaSuccess": "Vô hiệu hóa 2FA thành công",
             "enable2FaSuccess": "Bật 2FA thành công!"
@@ -801,19 +805,19 @@
             "title": "Cài đặt chung"
         },
         "flexInterestConfig": {
-            "title": "Earn 5% APY on your balance with Flex",
-            "label": "Earn 5% APY through Flex",
-            "noteOn": "Your balance is earning 5% APY through Flex. You can withdraw anytime for free.",
-            "noteOff": "Your balance is escrowed with Prime Trust and insured to $130,000,000.",
-            "desc": "What would you like to do with your balance?",
-            "descDesc": "<p>You can choose to earn 5% APY on your balance with Flex.</p>\n                <p>Flex is a lending pool that uses Compound Finance technology to earn you interest. All lending is secured by borrower collateral, which protects your funds, and you can withdraw anytime for free.</p>\n                <p>If you disable Flex, your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust store your funds across multiple insured bank accounts, giving total coverage of $130,000,000, but you won’t earn interest.</p>\n",
+            "title": "Hưởng mức lãi suất kép theo giây 5%/năm với Flex",
+            "label": "Lãi suất kép 5%/năm theo từng giây với Flex",
+            "noteOn": "Số dư tài khoản của bạn đang được hưởng mức lãi suất kép 5%/năm theo từng giây với Flex. Có thể rút tiền bất cứ lúc nào. Hoàn toàn miễn phí.",
+            "noteOff": "Số dư của bạn được đảm bảo bởi PrimeTrust, tối đa lên tới 130 triệu USD.",
+            "desc": "Bạn muốn làm gì với số dư của mình?",
+            "descDesc": "<p>Bạn có thể hưởng mức lãi suất kép 5%/năm theo từng giây với Flex.</p>\n<p>Nếu chọn Flex, bạn sẽ được hưởng mức lãi suất như trên từ nền tảng tài chính công nghệ Compound. Tất cả các khoản đầu tư qua Compound đều được đảm bảo bởi tài sản thế chấp. Có thể rút tiền ra bất cứ lúc nào.</p>\n<p>Nếu không chọn Flex, bạn sẽ không được hưởng lãi suất. Tuy nhiên, tiền của bạn sẽ được giữ trong các tài khoản ngân hàng được đảm bảo bởi PrimeTrust lên tới 130 triệu USD.</p>\n",
             "enableFlex": {
                 "messageConfirm": {
-                    "true": "Your balance is escrowed with Prime Trust and insured to $130,000,000.",
-                    "false": "Your balance earns 5% APY through Flex. You can withdraw anytime for free."
+                    "true": "Số dư của bạn được đảm bảo bởi PrimeTrust, tối đa lên tới 130 triệu USD.",
+                    "false": "Số dư tài khoản của bạn đang được hưởng mức lãi suất kép 5%/năm theo từng giây với Flex. Có thể rút tiền bất cứ lúc nào. Hoàn toàn miễn phí."
                 },
                 "enableFlexSuccess": {
-                    "true": "<p>Your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust stores your funds across multiple insured bank accounts, giving total coverage of $130,000,000. You can withdraw anytime for free, but your balance will not earn interest.</p>\n<a href=\"https://medium.com/@constantp2p/meet-scott-purcell-ceo-of-prime-trust-ae7581835030\" class=\"underline\">Find out more about Prime Trust</a>\n",
+                    "true": "<p>Số dư của bạn được đảm bảo bởi PrimeTrust - một tổ chức tài chính uy tín tại Mỹ. PrimeTrust giữ tiền trong nhiều tài khoản ngân hàng được bảo hiểm lên tới 130 triệu USD. Tuy bạn vẫn có thể rút tiền bất cứ lúc nào, nhưng số dư của bạn không được nhận lãi.</p>\n<a href=\"https://medium.com/@constantp2p/meet-scott-purcell-ceo-of-prime-trust-ae7581835030\" class=\"underline\">Tìm hiểu thêm về PrimeTrust</a>\n",
                     "false": "<p>Congratulations! Your balance will now earn 5% APY through Flex. You can withdraw anytime for free and your balance is protected by borrower collateral.</p>\n<a href=\"https://medium.com/@constantp2p/compound-finance-discover-the-interest-earning-tech-behind-flex-dcbb1decc835\" class=\"underline\">Find out how Flex works</a>\n"
                 },
                 "enableFlexFailed": {
@@ -1498,6 +1502,7 @@
                             "cancel": "Không phải lúc này"
                         },
                         "payOffSuccess": "Hoàn trả được thực hiện. Cảm ơn!",
+                        "payOffFailed": "Repay failed",
                         "notEnoughConstantRepay": "Số dư hiện tại của bạn là ${balance}. Vui lòng gửi ${requireAmount} để trả cho số tiền đến hạn, sau đó nhấp vào hoàn trả một lần nữa.",
                         "makeADeposit": "Nạp tiền"
                     },
@@ -2408,6 +2413,7 @@
                 "description": "Các khoản vay thế chấp tiền mã hoá của Constant chấp nhận một khoảng rộng của tỷ lệ giá trị vay/giá trị tài sản thế chấp, bất kể số lượng bạn vay bao nhiêu. Hưởng lợi từ lãi suất tốt nhất trên thị trường với các khoản vay ngắn hạn của chúng tôi để thanh khoản những đồng tiền mã hoá của bạn dễ dàng."
             },
             "what": {
+                "title": "Why borrow with us?",
                 "whatCaption0": "Tự chọn kì hạn lãi suất",
                 "whatCaption1": "Bảo vệ bởi hợp đồng thông minh",
                 "whatCaption2": "Giữ an toàn trên escrow",
@@ -2511,7 +2517,8 @@
                 "minimumBorrowAmount": "Bạn có thể vay tối thiểu {amount}{symbol}",
                 "inValidWalletAddress": "Địa chỉ ví không hợp lệ",
                 "notSupportBech32": "Không hỗ trợ BTC bech32",
-                "rangeInterestRate": "Lãi suất phải nằm trong khoảng từ {min}% tới {max}%"
+                "rangeInterestRate": "Lãi suất phải nằm trong khoảng từ {min}% tới {max}%",
+                "stakingMinTimeRequire": "Length of term must be equal or greater than {days} days"
             },
             "depositCollateral": {
                 "collateralTypeLabel": "Loại tài sản thế chấp",
@@ -3340,6 +3347,7 @@
             "learnMore": "Tìm hiểu thêm +"
         },
         "what": {
+            "title": "Why invest with us?",
             "whatCaption0": "Lãi suất tức thì",
             "whatCaption1": "Không chờ đợi",
             "whatCaption2": "Không giới hạn",
@@ -4867,9 +4875,9 @@
             "level3": "Take 2 STAR"
         },
         "desc": {
-            "level1": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} cashback when you become a Silver member.</p>\n              <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped}.</p>\n              <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>",
-            "level2": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} when you become a Gold member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>\n              <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped}.</p>\n              <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>",
-            "level3": "<h4>What you get:</h4>\n                 <p><i class=\"fal fa-check\"></i> {cashback} when you become a Platinum member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>\n                <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped} of the LTV.</p>\n                <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>"
+            "level1": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} cashback when you become a Gold member.</p>\n              <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped}.</p>\n              <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>",
+            "level2": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} when you become a Platinum member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>\n              <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped}.</p>\n              <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>",
+            "level3": "<h4>What you get:</h4>\n                 <p><i class=\"fal fa-check\"></i> {cashback} when you become a Diamond member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>\n                <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped} of the LTV.</p>\n                <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>"
         },
         "history": {
             "title": "History",
@@ -5079,7 +5087,16 @@
             "content2": "\n        <p>To give you great interest rates on investments and easy access to credit when you need it.</p>\n      "
         },
         "b8": {
-            "content1": "\n        <p>No, we’re not perfect, but we’re honest about our shortcomings and dedicated to improving.</p>\n        <p>Something broken? Get in touch</p>\n        <p>Want a new feature? Let us know</p>\n        <p>Got a question? We’re always here for you.</p>\n        <p>Our <strong>customer service team works 24/7</strong>, providing round-the-clock support no matter wherer you live.</p>\n        <p>We promise you'll always have a say in the development of the Constant platform...</p>\n        <p>Because we <strong>built it for you</strong></p>"
+            "content1": "\n        <p>No, we’re not perfect, but we’re honest about our shortcomings and dedicated to improving.</p>\n        <p class=\"clearBottom\">Something broken? Get in touch</p>\n        <p class=\"clearBottom\">Want a new feature? Let us know</p>\n        <p>Got a question? We’re always here for you.</p>\n        <p>Our <strong>customer service team works 24/7</strong>, providing round-the-clock support no matter wherer you live.</p>\n        <p>We promise you'll always have a say in the development of the Constant platform...</p>\n        <p>Because we <strong>built it for you</strong></p>"
+        }
+    },
+    "partner": {
+        "commission": {
+            "user_id": "User Id",
+            "value": "Commission",
+            "object_type": "Type",
+            "object_amount": "Amount",
+            "created_at": "Created at"
         }
     }
 }

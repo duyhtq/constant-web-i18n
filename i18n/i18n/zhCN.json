@@ -31,7 +31,10 @@
             "wrongPassword": "更改密码",
             "placeholder": "请设置占位文本的密钥",
             "btn": "请设置文本按钮的密钥",
-            "close": "关闭"
+            "close": "关闭",
+            "days": "days",
+            "months": "months",
+            "selectChoice": "Please select your choice"
         },
         "local": {
             "type": {
@@ -338,8 +341,9 @@
             "restrictedEmail": "电子邮件已被限制",
             "prvMaxWithdraw": "Prv 是最大提款",
             "inValidWalletAddress": "Receive address invalid",
-            "": "Opps! Something went wrong, please try again",
-            "loginFailure": "Please make sure your email and password are correct."
+            "undefined": "Opps! Something went wrong, please try again",
+            "loginFailure": "Please make sure your email and password are correct.",
+            "stakingRequireMinTerm": "Staking loan is required min term"
         },
         "withdrawGreaterThan": "最小提款金额是 {min}",
         "withdrawLessThanOrEqual": "最大提款金额为 {max}",
@@ -1498,6 +1502,7 @@
                             "cancel": "暂不"
                         },
                         "payOffSuccess": "还款。谢谢！",
+                        "payOffFailed": "Repay failed",
                         "notEnoughConstantRepay": "您当前的余额是 ${balance}。请存款 ${requireAmount} 来支付到期金额，然后再次单击还款。 ",
                         "makeADeposit": "进行充值"
                     },
@@ -2408,6 +2413,7 @@
                 "description": "无论你借多少钱，Constant的加密货币支持贷款都有一个慷慨的贷款价值比。从市场上最优惠的利率和我们的短期贷款中获益，并从您的加密货币中获得更多的流动性。"
             },
             "what": {
+                "title": "Why borrow with us?",
                 "whatCaption0": "即时贷款",
                 "whatCaption1": "Crypto现款",
                 "whatCaption2": "2%年化利率",
@@ -2511,7 +2517,8 @@
                 "minimumBorrowAmount": "您可以借入的最低金额是 {amount} {symbol}",
                 "inValidWalletAddress": "您的钱包地址无效",
                 "notSupportBech32": "BTC bech32 不支持",
-                "rangeInterestRate": "利率必须大于 {min}%且小于 {max}%"
+                "rangeInterestRate": "利率必须大于 {min}%且小于 {max}%",
+                "stakingMinTimeRequire": "Length of term must be equal or greater than {days} days"
             },
             "depositCollateral": {
                 "collateralTypeLabel": "抵押类型",
@@ -3340,6 +3347,7 @@
             "learnMore": "了解更多"
         },
         "what": {
+            "title": "Why invest with us?",
             "whatCaption0": "保护您钱的价值",
             "whatCaption1": "免费转您的钱到任何地方",
             "whatCaption2": "为你的钱投保500万美元",
@@ -4867,9 +4875,9 @@
             "level3": "Take 2 STAR"
         },
         "desc": {
-            "level1": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} cashback when you become a Silver member.</p>\n              <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped}.</p>\n              <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>",
-            "level2": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} when you become a Gold member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>\n              <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped}.</p>\n              <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>",
-            "level3": "<h4>What you get:</h4>\n                 <p><i class=\"fal fa-check\"></i> {cashback} when you become a Platinum member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>\n                <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped} of the LTV.</p>\n                <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>"
+            "level1": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} cashback when you become a Gold member.</p>\n              <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped}.</p>\n              <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>",
+            "level2": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> {cashback} when you become a Platinum member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>\n              <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped}.</p>\n              <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>",
+            "level3": "<h4>What you get:</h4>\n                 <p><i class=\"fal fa-check\"></i> {cashback} when you become a Diamond member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>\n                <p><i class=\"fal fa-check\"></i> Instant deposit on new investment orders, capped at {capped} of the LTV.</p>\n                <p><i class=\"fal fa-check\"></i> Instant stablecoin and cryptocurrency withdrawals.</p>"
         },
         "history": {
             "title": "历史",
@@ -5079,7 +5087,16 @@
             "content2": "\n        <p>To give you great interest rates on investments and easy access to credit when you need it.</p>\n      "
         },
         "b8": {
-            "content1": "\n        <p>No, we’re not perfect, but we’re honest about our shortcomings and dedicated to improving.</p>\n        <p>Something broken? Get in touch</p>\n        <p>Want a new feature? Let us know</p>\n        <p>Got a question? We’re always here for you.</p>\n        <p>Our <strong>customer service team works 24/7</strong>, providing round-the-clock support no matter wherer you live.</p>\n        <p>We promise you'll always have a say in the development of the Constant platform...</p>\n        <p>Because we <strong>built it for you</strong></p>"
+            "content1": "\n        <p>No, we’re not perfect, but we’re honest about our shortcomings and dedicated to improving.</p>\n        <p class=\"clearBottom\">Something broken? Get in touch</p>\n        <p class=\"clearBottom\">Want a new feature? Let us know</p>\n        <p>Got a question? We’re always here for you.</p>\n        <p>Our <strong>customer service team works 24/7</strong>, providing round-the-clock support no matter wherer you live.</p>\n        <p>We promise you'll always have a say in the development of the Constant platform...</p>\n        <p>Because we <strong>built it for you</strong></p>"
+        }
+    },
+    "partner": {
+        "commission": {
+            "user_id": "User Id",
+            "value": "Commission",
+            "object_type": "Type",
+            "object_amount": "Amount",
+            "created_at": "Created at"
         }
     }
 }

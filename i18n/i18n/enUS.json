@@ -342,7 +342,7 @@
             "restrictedEmail": "Email is restricted",
             "prvMaxWithdraw": "Prv is max withdraw",
             "inValidWalletAddress": "Receive address invalid",
-            "": "Opps! Something went wrong, please try again",
+            "undefined": "Opps! Something went wrong, please try again",
             "loginFailure": "Please make sure your email and password are correct.",
             "stakingRequireMinTerm": "Staking loan is required min term"
         },

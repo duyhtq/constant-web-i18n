@@ -342,7 +342,7 @@
             "restrictedEmail": "Tên miền email không hợp lệ.",
             "prvMaxWithdraw": "Không đủ PRV",
             "inValidWalletAddress": "Địa chỉ ví không hợp lệ",
-            "": "Oops… Có sự cố xảy ra, xin vui lòng thử lại.",
+            "undefined": "Oops… Có sự cố xảy ra, xin vui lòng thử lại.",
             "loginFailure": "Email và mật khẩu không khớp.",
             "stakingRequireMinTerm": "Staking loan is required min term"
         },

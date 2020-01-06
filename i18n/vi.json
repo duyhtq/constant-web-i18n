@@ -1387,7 +1387,7 @@
                 "autoTopup": "Tự động top up",
                 "autoRenew": "Tự động tái đầu tư",
                 "autoRenewDesc": "Mệt mỏi vì thao tắc bằng tay? Bật phần này để tự động tái đầu tư với cùng mức lãi suất & thời hạn!",
-                "autoRenewLoan": "Tự động tái đầu tư",
+                "autoRenewLoan": "Tự động tái đầu tư",
                 "autoRenewLoanDesc": "Tính năng này giúp bạn tự động tạo lệnh tái đầu tư với cùng mức lãi suất và kì hạn!",
                 "dialog": {
                     "payment": {

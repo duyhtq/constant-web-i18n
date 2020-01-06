@@ -131,6 +131,7 @@ export default {
     affiliate: 'Affiliate',
     developers: 'Developers',
     support: 'Support',
+    supportCenter: 'Support Center',
     telegramText: 'Join the {link}',
     // telegramLink: 'https://t.me/constant_money',
     // telegramTitle: 'Constant Telegram',
@@ -2771,7 +2772,8 @@ export default {
           desc: ' ',
           cryptoAddress: 'To address',
           email: 'To email',
-          amount: 'Amount'
+          amount: 'Amount',
+          promotionAmount: 'Bonus'
         },
       },
       howItWorks: 'How it works',
@@ -2842,6 +2844,8 @@ export default {
       amount: 'Amount',
       to: 'To',
       input2FA: 'Input 2FA',
+      promotion: 'Withdraw in {currency} and get a {percent}% bonus',
+      promotionDesc: 'Get a free {percent}% bonus when you select {currency}. The bonus is paid automatically (you don’t need to increase your withdrawal amount) and will be sent to the same wallet address you choose for withdrawal.'
     },
     constantLoan: {
       faqs: {
@@ -2915,8 +2919,8 @@ export default {
         collateralNoteMatchedFee: 'Fee: 1%',
         collateralNoteTotal: 'Total loan received: {total} {currency}',
         collateralNoteDGXExtraFees: 'Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.',
-        usingStaking: 'Pay less on your loan through staking',
-        usingStakingMobile: 'Pay less with staking',
+        usingStaking: 'Pay less {discount}% on your loan through staking',
+        usingStakingMobile: 'Pay less {discount}% with staking',
         usingStakingDesc: 'Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.',
         stakingMinAmount: 'stake amount must be great than {minVal} {currency}',
         collateralNoteMatch: 'Estimated time to match: {hours} hours',
@@ -3008,6 +3012,18 @@ export default {
         `,
         minuteWindow: 'Please complete your transfer within 60 minutes.',
         minuteWindowDescription: `For the sake of security, this session will time-out after 60 minutes. If you need a little longer, just re-enter the amount you would like to borrow <a href="/borrow" >here</a>.`,
+        msgInfoManual: `
+          <span>At the moment, {symbol} deposits aren’t automatic, so we need to change your loan status manually. Therefore, please give us <b>up to 12 hours</b> to confirm receipt of your collateral (it's usually much faster).</span>
+          <br />
+          <span>If you have any questions, please email us at hello@myconstant.com or message <a href='https://t.me/@andy_9210'>Andy</a>, our head of customer service, on Telegram.</span>
+          <br />
+          <span>We'll start finding you a match as soon as we receive your collateral.</span>
+        `,
+        msgInfoAuto: `
+          <span>
+            Once we receive your collateral, your loan status will change from <b>pending</b> to <b>matching</b>. This is usually very fast – around 1 block confirmation – but might take a little longer during busy times. When your status changes, it means we’ve begun finding an investor to accept your terms. We’ll email you as soon as we find you a match.
+          </span>
+        `,
         collateralNoteDGXExtraFees: 'Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.',
         transactionID: 'transaction ID',
         noticeTpl:
@@ -3182,6 +3198,7 @@ export default {
         walletAlias: '0x687C906b2....8bd9369242e',
         walletAddressLabel: 'Return to your {symbol} address',
         loan: 'loan',
+        staked: 'STAKED',
         amount: 'Amount',
         pendingAmount: 'Pending Amount',
         collateralRequired: 'Collateral',
@@ -4267,6 +4284,7 @@ export default {
       `,
     },
     what: {
+      title: 'What we can do',
       whatCaption0: 'Works with your bank',
       whatCaption1: 'Easy, quick withdrawals',
       whatCaption2: 'Withdraw in your local currency',
@@ -4957,6 +4975,7 @@ export default {
         }
       },
       form: {
+        gotoVerifyKyc: 'Go to verify now',
         text1: 'Set your own lending terms',
         text2:
           'Invest at the current market rate of 9.00% and find a match instantly, or increase your rate and wait for a matching order.',
@@ -5414,8 +5433,10 @@ export default {
   getPrices: {
     title: 'Pricing and Service times',
     desc: `
-    <p className="bold">All times shown below are maximum estimates. In all cases, the team strives for ASAP.</p>
-    <p>While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</p>
+    <p class="bold">GET 3x INTEREST FOR EACH DAY YOUR TRANSACTION IS DELAYED.</p>
+    <p class="bold">All times shown below are maximum estimates. In all cases, the team strives for ASAP.</p>
+    <p class="bold">All delay compensation will be credited directly into your Constant balance.</p>
+    <p class="bold">While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</p>
     `,
     collateralIssue: `
     *About collateral issue, please ping <a href="https://t.me/andy_9210" className="underline bold" target="_blank"><strong>@andy_9210</strong></a> on telegram to get direct support.
@@ -5626,8 +5647,8 @@ export default {
         collateralNoteFee: 'Fee: {fee} {currency} (1%)',
         collateralNoteMatchedFee: 'Fee: 1%',
         collateralNoteTotal: 'Total loan received: {total} {currency}',
-        usingStaking: 'Pay less on your loan through staking',
-        usingStakingMobile: 'Pay less with staking',
+        usingStaking: 'Pay less {discount}% on your loan through staking',
+        usingStakingMobile: 'Pay less {discount}% with staking',
         usingStakingDesc: 'Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.',
         stakingMinAmount: 'stake amount must be great than {minVal} {currency}',
       },
@@ -5871,14 +5892,14 @@ export default {
       description: 'Constant is the P2P lending platform built on P2P technology with the fastest growth rate in Asia. Lend stablecoin and fiat with your own terms and interest rates or borrow money using cryptocurrency as collateral in this defi product.Fully secured by borrower collateral and smart contracts',
     },
     invest: {
-      title: 'Lend money with best rate in the market, secured by collateral',
+      title: 'Invest in fully secured loans',
       keyword: 'constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance',
-      description: 'Constant P2P lending platform accepts all types of fiat and stablecoin as investment. Earn minimum 10% on any amount. All investments are secured by FDIC insurance and borrower collateral',
+      description: 'P2P lending built on P2P technology. Enjoy up to 9% returns on your investments. All lending is backed by borrower collateral, smart contracts, and insurance. No fees. Free withdrawals',
     },
     borrow: {
-      title: 'Bitcoin loan instantly without selling your token. Support all crypto',
+      title: 'Borrow against 60+ crypto assets',
       keyword: 'bitcoin loan, ethereum, margin trading, margin borrowing, p2p lending, cryptocurrency, constant project, constant p2p',
-      description: 'Instant bitcoin loans using cryptocurrency as collateral without selling it. Support 100+ tokens for margin trading and lending. No fee, protected by smart contract. Get your cryptocurrency-backed loans to pay your expense or gain advantages in trading',
+      description: 'Get a loan for as low as 9% APR. Your crypto assets are securely escrowed and returned to you when you repay. No credit checks, no paperwork. Get the money you need without selling up',
     },
     proLending: {
       title: 'Lend money with best rate in the market, secured by collateral',
@@ -5886,9 +5907,9 @@ export default {
       description: 'Constant P2P lending platform accepts all types of fiat and stablecoin as investment. Earn minimum 10% on any amount. All investments are secured by FDIC insurance and borrower collateral',
     },
     flex: {
-      title: 'Online saving platform for anyone. Earn passive income easily',
+      title: 'Enjoy 50x better interest than a savings account',
       keyword: 'constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance, passive income, saving account, online saving platform',
-      description: 'Constant offers best rate in the market on any amount, withdraw anytime. Earn your passive income with the highest interest in the market ',
+      description: 'Join our Flex lending pool to earn 5% APY on your investments. All lending is protected by collateral, and interest is compounded and paid every second. Withdraw anytime for free',
     },
     withdraw: {
       title: 'Secured peer-to-peer lending platform for cryptocurrency bitcoin loan',
@@ -6044,6 +6065,7 @@ export default {
       }
     },
     what: {
+      title: 'Why stake with us?',
       1: {
         caption: 'No minimum stake',
         desc: 'Join a masternode pool instead of raising the minimum stake alone. Enjoy the rewards no matter how much crypto you own.'

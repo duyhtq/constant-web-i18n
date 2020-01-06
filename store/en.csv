@@ -28,6 +28,9 @@
 %%%.app.common.placeholder%%%,"Please set key for placeholder text"
 %%%.app.common.btn%%%,"Please set key for button text"
 %%%.app.common.close%%%,"Close"
+%%%.app.common.days%%%,"days"
+%%%.app.common.months%%%,"months"
+%%%.app.common.selectChoice%%%,"Please select your choice"
 %%%.app.local.type.buy%%%,"Deposit"
 %%%.app.local.type.sell%%%,"Withdraw"
 %%%.lang.en%%%,"English"
@@ -87,6 +90,7 @@
 %%%.footer.affiliate%%%,"Affiliate"
 %%%.footer.developers%%%,"Developers"
 %%%.footer.support%%%,"Support"
+%%%.footer.supportCenter%%%,"Support Center"
 %%%.footer.telegramText%%%,"Join the {link}"
 %%%.footer.email%%%,"Email us at {email}"
 %%%.footer.register%%%,"2019 Constant"
@@ -263,6 +267,7 @@
 %%%.error.serverCode.inValidWalletAddress%%%,"Receive address invalid"
 %%%.error.serverCode.undefined%%%,"Opps! Something went wrong, please try again"
 %%%.error.serverCode.loginFailure%%%,"Please make sure your email and password are correct."
+%%%.error.serverCode.stakingRequireMinTerm%%%,"Staking loan is required min term"
 %%%.error.withdrawGreaterThan%%%,"The minimum withdrawal amount is {min}"
 %%%.error.withdrawLessThanOrEqual%%%,"The maximum withdrawal amount is {max}"
 %%%.error.reachDayLimit%%%,"You have reached the daily Zelle withdrawal limit of $500. Please choose a different withdrawal method."
@@ -1393,6 +1398,7 @@
 %%%.me.proSaving.listApplications.dialog.payOff.onTime.confirm%%%,"Repay"
 %%%.me.proSaving.listApplications.dialog.payOff.onTime.cancel%%%,"Not now"
 %%%.me.proSaving.listApplications.dialog.payOff.payOffSuccess%%%,"Repayment made. Thanks!"
+%%%.me.proSaving.listApplications.dialog.payOff.payOffFailed%%%,"Repay failed"
 %%%.me.proSaving.listApplications.dialog.payOff.notEnoughConstantRepay%%%,"Your current balance is ${balance}. Please deposit ${requireAmount} to cover the amount due, then click repay again. "
 %%%.me.proSaving.listApplications.dialog.payOff.makeADeposit%%%,"Make a deposit"
 %%%.me.proSaving.listApplications.dialog.pay.messageConfirm%%%,"Are you sure you want to pay?"
@@ -2123,6 +2129,7 @@
 %%%.home.transfer.components.orderInfo.cryptoAddress%%%,"To address"
 %%%.home.transfer.components.orderInfo.email%%%,"To email"
 %%%.home.transfer.components.orderInfo.amount%%%,"Amount"
+%%%.home.transfer.components.orderInfo.promotionAmount%%%,"Bonus"
 %%%.home.transfer.howItWorks%%%,"How it works"
 %%%.home.transfer.amount%%%,"Amount"
 %%%.home.transfer.to%%%,"To"
@@ -2169,6 +2176,8 @@
 %%%.home.transferCrypto.amount%%%,"Amount"
 %%%.home.transferCrypto.to%%%,"To"
 %%%.home.transferCrypto.input2FA%%%,"Input 2FA"
+%%%.home.transferCrypto.promotion%%%,"Withdraw in {currency} and get a {percent}% bonus"
+%%%.home.transferCrypto.promotionDesc%%%,"Get a free {percent}% bonus when you select {currency}. The bonus is paid automatically (you don’t need to increase your withdrawal amount) and will be sent to the same wallet address you choose for withdrawal."
 %%%.home.constantLoan.faqs.question1%%%,"How long will it take to find a match?"
 %%%.home.constantLoan.faqs.answer1%%%,"This depends on the rates and terms you set. Market levels normally result in immediate (or near-immediate) matches, so we update the market rates on the website regularly. If you choose a lower interest rate, it might take a little longer to find you a suitable match."
 %%%.home.constantLoan.faqs.question2%%%,"Do you check my credit score?"
@@ -2232,8 +2241,8 @@
 %%%.home.constantLoan.exchange.collateralNoteMatchedFee%%%,"Fee: 1%"
 %%%.home.constantLoan.exchange.collateralNoteTotal%%%,"Total loan received: {total} {currency}"
 %%%.home.constantLoan.exchange.collateralNoteDGXExtraFees%%%,"Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount."
-%%%.home.constantLoan.exchange.usingStaking%%%,"Pay less on your loan through staking"
-%%%.home.constantLoan.exchange.usingStakingMobile%%%,"Pay less with staking"
+%%%.home.constantLoan.exchange.usingStaking%%%,"Pay less {discount}% on your loan through staking"
+%%%.home.constantLoan.exchange.usingStakingMobile%%%,"Pay less {discount}% with staking"
 %%%.home.constantLoan.exchange.usingStakingDesc%%%,"Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess."
 %%%.home.constantLoan.exchange.stakingMinAmount%%%,"stake amount must be great than {minVal} {currency}"
 %%%.home.constantLoan.exchange.collateralNoteMatch%%%,"Estimated time to match: {hours} hours"
@@ -2249,6 +2258,7 @@
 %%%.home.constantLoan.exchange.dayLoan%%%,"{term}-day loans"
 %%%.home.constantLoan.interestTable.title%%%,"Why you should borrow with Constant."
 %%%.home.constantLoan.interestTable.description%%%,"Constant crypto-backed loans have a generous loan to value ratio, no matter the amount you borrow. Benefit from the kindest interest rates on the market with our short term loans and get more liquidity out of your crypto."
+%%%.home.constantLoan.what.title%%%,"Why borrow with us?"
 %%%.home.constantLoan.what.whatCaption0%%%,"Instant loans"
 %%%.home.constantLoan.what.whatCaption1%%%,"Crypto for cash"
 %%%.home.constantLoan.what.whatCaption2%%%,"2% annualized interest"
@@ -2310,6 +2320,18 @@
         "
 %%%.home.constantLoan.transaction.minuteWindow%%%,"Please complete your transfer within 60 minutes."
 %%%.home.constantLoan.transaction.minuteWindowDescription%%%,"For the sake of security, this session will time-out after 60 minutes. If you need a little longer, just re-enter the amount you would like to borrow <a href=""/borrow"" >here</a>."
+%%%.home.constantLoan.transaction.msgInfoManual%%%,"
+          <span>At the moment, {symbol} deposits aren’t automatic, so we need to change your loan status manually. Therefore, please give us <b>up to 12 hours</b> to confirm receipt of your collateral (it's usually much faster).</span>
+          <br />
+          <span>If you have any questions, please email us at hello@myconstant.com or message <a href='https://t.me/@andy_9210'>Andy</a>, our head of customer service, on Telegram.</span>
+          <br />
+          <span>We'll start finding you a match as soon as we receive your collateral.</span>
+        "
+%%%.home.constantLoan.transaction.msgInfoAuto%%%,"
+          <span>
+            Once we receive your collateral, your loan status will change from <b>pending</b> to <b>matching</b>. This is usually very fast – around 1 block confirmation – but might take a little longer during busy times. When your status changes, it means we’ve begun finding an investor to accept your terms. We’ll email you as soon as we find you a match.
+          </span>
+        "
 %%%.home.constantLoan.transaction.collateralNoteDGXExtraFees%%%,"Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount."
 %%%.home.constantLoan.transaction.transactionID%%%,"transaction ID"
 %%%.home.constantLoan.transaction.noticeTpl%%%,"Please send <strong>{collateralAmount} {collateralSymbol}</strong> as collateral to the following address within the next <strong>60 minutes</strong>."
@@ -2447,6 +2469,7 @@
 %%%.home.constantLoan.errorMessages.inValidWalletAddress%%%,"Your wallet address invalid"
 %%%.home.constantLoan.errorMessages.notSupportBech32%%%,"BTC bech32 not supported"
 %%%.home.constantLoan.errorMessages.rangeInterestRate%%%,"Interest rate must be greater than {min}% and less than {max}%"
+%%%.home.constantLoan.errorMessages.stakingMinTimeRequire%%%,"Length of term must be equal or greater than {days} days"
 %%%.home.constantLoan.depositCollateral.collateralTypeLabel%%%,"Collateral type"
 %%%.home.constantLoan.depositCollateral.walletAddressLabel%%%,"Your {symbol} wallet address"
 %%%.home.constantLoan.depositCollateral.walletAlias%%%,"0x687C906b2....8bd9369242e"
@@ -2460,6 +2483,7 @@
 %%%.home.constantLoan.listApplications.walletAlias%%%,"0x687C906b2....8bd9369242e"
 %%%.home.constantLoan.listApplications.walletAddressLabel%%%,"Return to your {symbol} address"
 %%%.home.constantLoan.listApplications.loan%%%,"loan"
+%%%.home.constantLoan.listApplications.staked%%%,"STAKED"
 %%%.home.constantLoan.listApplications.amount%%%,"Amount"
 %%%.home.constantLoan.listApplications.pendingAmount%%%,"Pending Amount"
 %%%.home.constantLoan.listApplications.collateralRequired%%%,"Collateral"
@@ -3282,6 +3306,7 @@
         <br/>
         <h6><strong>Prefer to withdraw stablecoins?</strong> Do so <a href=""/transfer-crypto"" class=""underline"">here.</a></h6>
       "
+%%%.withdraw.what.title%%%,"What we can do"
 %%%.withdraw.what.whatCaption0%%%,"Works with your bank"
 %%%.withdraw.what.whatCaption1%%%,"Easy, quick withdrawals"
 %%%.withdraw.what.whatCaption2%%%,"Withdraw in your local currency"
@@ -3319,6 +3344,7 @@
 %%%.deposit.subTitle.sub1%%%,"Save in US dollars, instead of unstable local currencies. Enjoy instant transfers of any amount - to anyone or any business - anywhere in the world. For free."
 %%%.deposit.subTitle.sub2%%%,"Your account is backed by the full faith and credit of the United States government, insured by the Federal Deposit Insurance Corporation (FDIC). Established in 1933, the FDIC has a perfect record of no lost funds.  {learnMore}"
 %%%.deposit.subTitle.learnMore%%%,"Learn more +"
+%%%.deposit.what.title%%%,"Why invest with us?"
 %%%.deposit.what.whatCaption0%%%,"Protect the value of your money"
 %%%.deposit.what.whatCaption1%%%,"Move your money anywhere for free"
 %%%.deposit.what.whatCaption2%%%,"Insure your money up to $5M"
@@ -3659,6 +3685,7 @@
 %%%.home1.lendingSection.intro.desc.1%%%,"Fully secured by collateral"
 %%%.home1.lendingSection.intro.desc.2%%%,"Your own rates and terms"
 %%%.home1.lendingSection.intro.desc.3%%%,"24/7 customer service"
+%%%.home1.lendingSection.form.gotoVerifyKyc%%%,"Go to verify now"
 %%%.home1.lendingSection.form.text1%%%,"Set your own lending terms"
 %%%.home1.lendingSection.form.text2%%%,"Invest at the current market rate of 9.00% and find a match instantly, or increase your rate and wait for a matching order."
 %%%.home1.lendingSection.form.text3%%%,"We’re giving you a trial investment of $1000. All you have to do is choose your rate, and we’ll find you a match. When the trial is up, we take the $1000 back, but the interest is yours to keep."
@@ -4031,8 +4058,10 @@
 %%%.landingProReferral.faqs.answer5%%%,"When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds."
 %%%.getPrices.title%%%,"Pricing and Service times"
 %%%.getPrices.desc%%%,"
-    <p className=""bold"">All times shown below are maximum estimates. In all cases, the team strives for ASAP.</p>
-    <p>While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</p>
+    <p class=""bold"">GET 3x INTEREST FOR EACH DAY YOUR TRANSACTION IS DELAYED.</p>
+    <p class=""bold"">All times shown below are maximum estimates. In all cases, the team strives for ASAP.</p>
+    <p class=""bold"">All delay compensation will be credited directly into your Constant balance.</p>
+    <p class=""bold"">While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</p>
     "
 %%%.getPrices.collateralIssue%%%,"
     *About collateral issue, please ping <a href=""https://t.me/andy_9210"" className=""underline bold"" target=""_blank""><strong>@andy_9210</strong></a> on telegram to get direct support.
@@ -4195,8 +4224,8 @@
 %%%.proLending.borrowBooking.exchange.collateralNoteFee%%%,"Fee: {fee} {currency} (1%)"
 %%%.proLending.borrowBooking.exchange.collateralNoteMatchedFee%%%,"Fee: 1%"
 %%%.proLending.borrowBooking.exchange.collateralNoteTotal%%%,"Total loan received: {total} {currency}"
-%%%.proLending.borrowBooking.exchange.usingStaking%%%,"Pay less on your loan through staking"
-%%%.proLending.borrowBooking.exchange.usingStakingMobile%%%,"Pay less with staking"
+%%%.proLending.borrowBooking.exchange.usingStaking%%%,"Pay less {discount}% on your loan through staking"
+%%%.proLending.borrowBooking.exchange.usingStakingMobile%%%,"Pay less {discount}% with staking"
 %%%.proLending.borrowBooking.exchange.usingStakingDesc%%%,"Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess."
 %%%.proLending.borrowBooking.exchange.stakingMinAmount%%%,"stake amount must be great than {minVal} {currency}"
 %%%.proLending.borrowBooking.createdSuccess%%%,"Your borrow had been created successfully"
@@ -4379,18 +4408,18 @@
 %%%.seo.homepage.title%%%,"Secured peer-to-peer lending platform for cryptocurrency bitcoin loan"
 %%%.seo.homepage.keyword%%%,"lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online"
 %%%.seo.homepage.description%%%,"Constant is the P2P lending platform built on P2P technology with the fastest growth rate in Asia. Lend stablecoin and fiat with your own terms and interest rates or borrow money using cryptocurrency as collateral in this defi product.Fully secured by borrower collateral and smart contracts"
-%%%.seo.invest.title%%%,"Lend money with best rate in the market, secured by collateral"
+%%%.seo.invest.title%%%,"Invest in fully secured loans"
 %%%.seo.invest.keyword%%%,"constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance"
-%%%.seo.invest.description%%%,"Constant P2P lending platform accepts all types of fiat and stablecoin as investment. Earn minimum 10% on any amount. All investments are secured by FDIC insurance and borrower collateral"
-%%%.seo.borrow.title%%%,"Bitcoin loan instantly without selling your token. Support all crypto"
+%%%.seo.invest.description%%%,"P2P lending built on P2P technology. Enjoy up to 9% returns on your investments. All lending is backed by borrower collateral, smart contracts, and insurance. No fees. Free withdrawals"
+%%%.seo.borrow.title%%%,"Borrow against 60+ crypto assets"
 %%%.seo.borrow.keyword%%%,"bitcoin loan, ethereum, margin trading, margin borrowing, p2p lending, cryptocurrency, constant project, constant p2p"
-%%%.seo.borrow.description%%%,"Instant bitcoin loans using cryptocurrency as collateral without selling it. Support 100+ tokens for margin trading and lending. No fee, protected by smart contract. Get your cryptocurrency-backed loans to pay your expense or gain advantages in trading"
+%%%.seo.borrow.description%%%,"Get a loan for as low as 9% APR. Your crypto assets are securely escrowed and returned to you when you repay. No credit checks, no paperwork. Get the money you need without selling up"
 %%%.seo.proLending.title%%%,"Lend money with best rate in the market, secured by collateral"
 %%%.seo.proLending.keyword%%%,"constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance"
 %%%.seo.proLending.description%%%,"Constant P2P lending platform accepts all types of fiat and stablecoin as investment. Earn minimum 10% on any amount. All investments are secured by FDIC insurance and borrower collateral"
-%%%.seo.flex.title%%%,"Online saving platform for anyone. Earn passive income easily"
+%%%.seo.flex.title%%%,"Enjoy 50x better interest than a savings account"
 %%%.seo.flex.keyword%%%,"constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance, passive income, saving account, online saving platform"
-%%%.seo.flex.description%%%,"Constant offers best rate in the market on any amount, withdraw anytime. Earn your passive income with the highest interest in the market "
+%%%.seo.flex.description%%%,"Join our Flex lending pool to earn 5% APY on your investments. All lending is protected by collateral, and interest is compounded and paid every second. Withdraw anytime for free"
 %%%.seo.withdraw.title%%%,"Secured peer-to-peer lending platform for cryptocurrency bitcoin loan"
 %%%.seo.withdraw.keyword%%%,"lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online"
 %%%.seo.withdraw.description%%%,"Constant is the P2P lending platform built on P2P technology with the fastest growth rate in Asia. Lend stablecoin and fiat with your own terms and interest rates or borrow money using cryptocurrency as collateral in this defi product.Fully secured by borrower collateral and smart contracts"
@@ -4502,6 +4531,7 @@
 %%%.staking.what.3.desc%%%,"Staking is free. Withdrawals are free. All you pay is the transaction fee to send your crypto to the pool."
 %%%.staking.what.4.caption%%%,"Support the network"
 %%%.staking.what.4.desc%%%,"Take pride in helping maintain the security and integrity of the blockchain network."
+%%%.staking.what.title%%%,"Why stake with us?"
 %%%.ourPartners.title%%%,"Our Partners"
 %%%.ourPartners.desc%%%,"We are working closely with"
 %%%.ourPress.title%%%,"Our Press"
@@ -4635,15 +4665,15 @@
 %%%.memberShip.take.level2%%%,"Take 1 STAR"
 %%%.memberShip.take.level3%%%,"Take 2 STAR"
 %%%.memberShip.desc.level1%%%,"<h4>What you get:</h4>
-              <p><i class=""fal fa-check""></i> {cashback} cashback when you become a Silver member.</p>
+              <p><i class=""fal fa-check""></i> {cashback} cashback when you become a Gold member.</p>
               <p><i class=""fal fa-check""></i> Instant deposit on new investment orders, capped at {capped}.</p>
               <p><i class=""fal fa-check""></i> Instant stablecoin and cryptocurrency withdrawals.</p>"
 %%%.memberShip.desc.level2%%%,"<h4>What you get:</h4>
-              <p><i class=""fal fa-check""></i> {cashback} when you become a Gold member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>
+              <p><i class=""fal fa-check""></i> {cashback} when you become a Platinum member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>
               <p><i class=""fal fa-check""></i> Instant deposit on new investment orders, capped at {capped}.</p>
               <p><i class=""fal fa-check""></i> Instant stablecoin and cryptocurrency withdrawals.</p>"
 %%%.memberShip.desc.level3%%%,"<h4>What you get:</h4>
-                 <p><i class=""fal fa-check""></i> {cashback} when you become a Platinum member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>
+                 <p><i class=""fal fa-check""></i> {cashback} when you become a Diamond member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>
                 <p><i class=""fal fa-check""></i> Instant deposit on new investment orders, capped at {capped} of the LTV.</p>
                 <p><i class=""fal fa-check""></i> Instant stablecoin and cryptocurrency withdrawals.</p>"
 %%%.memberShip.history.title%%%,"History"
@@ -4846,9 +4876,14 @@
       "
 %%%.ourStory.b8.content1%%%,"
         <p>No, we’re not perfect, but we’re honest about our shortcomings and dedicated to improving.</p>
-        <p>Something broken? Get in touch</p>
-        <p>Want a new feature? Let us know</p>
+        <p class=""clearBottom"">Something broken? Get in touch</p>
+        <p class=""clearBottom"">Want a new feature? Let us know</p>
         <p>Got a question? We’re always here for you.</p>
         <p>Our <strong>customer service team works 24/7</strong>, providing round-the-clock support no matter wherer you live.</p>
         <p>We promise you'll always have a say in the development of the Constant platform...</p>
         <p>Because we <strong>built it for you</strong></p>"
+%%%.partner.commission.user_id%%%,"User Id"
+%%%.partner.commission.value%%%,"Commission"
+%%%.partner.commission.object_type%%%,"Type"
+%%%.partner.commission.object_amount%%%,"Amount"
+%%%.partner.commission.created_at%%%,"Created at"

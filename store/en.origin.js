@@ -31,7 +31,10 @@
             "wrongPassword": "%%%.app.common.wrongPassword%%%",
             "placeholder": "%%%.app.common.placeholder%%%",
             "btn": "%%%.app.common.btn%%%",
-            "close": "%%%.app.common.close%%%"
+            "close": "%%%.app.common.close%%%",
+            "days": "%%%.app.common.days%%%",
+            "months": "%%%.app.common.months%%%",
+            "selectChoice": "%%%.app.common.selectChoice%%%"
         },
         "local": {
             "type": {
@@ -128,6 +131,7 @@
         "affiliate": "%%%.footer.affiliate%%%",
         "developers": "%%%.footer.developers%%%",
         "support": "%%%.footer.support%%%",
+        "supportCenter": "%%%.footer.supportCenter%%%",
         "telegramText": "%%%.footer.telegramText%%%",
         "email": "%%%.footer.email%%%",
         "register": "%%%.footer.register%%%",
@@ -339,7 +343,8 @@
             "prvMaxWithdraw": "%%%.error.serverCode.prvMaxWithdraw%%%",
             "inValidWalletAddress": "%%%.error.serverCode.inValidWalletAddress%%%",
             "undefined": "%%%.error.serverCode.undefined%%%",
-            "loginFailure": "%%%.error.serverCode.loginFailure%%%"
+            "loginFailure": "%%%.error.serverCode.loginFailure%%%",
+            "stakingRequireMinTerm": "%%%.error.serverCode.stakingRequireMinTerm%%%"
         },
         "withdrawGreaterThan": "%%%.error.withdrawGreaterThan%%%",
         "withdrawLessThanOrEqual": "%%%.error.withdrawLessThanOrEqual%%%",
@@ -1498,6 +1503,7 @@
                             "cancel": "%%%.me.proSaving.listApplications.dialog.payOff.onTime.cancel%%%"
                         },
                         "payOffSuccess": "%%%.me.proSaving.listApplications.dialog.payOff.payOffSuccess%%%",
+                        "payOffFailed": "%%%.me.proSaving.listApplications.dialog.payOff.payOffFailed%%%",
                         "notEnoughConstantRepay": "%%%.me.proSaving.listApplications.dialog.payOff.notEnoughConstantRepay%%%",
                         "makeADeposit": "%%%.me.proSaving.listApplications.dialog.payOff.makeADeposit%%%"
                     },
@@ -2277,7 +2283,8 @@
                     "desc": "%%%.home.transfer.components.orderInfo.desc%%%",
                     "cryptoAddress": "%%%.home.transfer.components.orderInfo.cryptoAddress%%%",
                     "email": "%%%.home.transfer.components.orderInfo.email%%%",
-                    "amount": "%%%.home.transfer.components.orderInfo.amount%%%"
+                    "amount": "%%%.home.transfer.components.orderInfo.amount%%%",
+                    "promotionAmount": "%%%.home.transfer.components.orderInfo.promotionAmount%%%"
                 }
             },
             "howItWorks": "%%%.home.transfer.howItWorks%%%",
@@ -2333,7 +2340,9 @@
             "howItWorks": "%%%.home.transferCrypto.howItWorks%%%",
             "amount": "%%%.home.transferCrypto.amount%%%",
             "to": "%%%.home.transferCrypto.to%%%",
-            "input2FA": "%%%.home.transferCrypto.input2FA%%%"
+            "input2FA": "%%%.home.transferCrypto.input2FA%%%",
+            "promotion": "%%%.home.transferCrypto.promotion%%%",
+            "promotionDesc": "%%%.home.transferCrypto.promotionDesc%%%"
         },
         "constantLoan": {
             "faqs": {
@@ -2408,6 +2417,7 @@
                 "description": "%%%.home.constantLoan.interestTable.description%%%"
             },
             "what": {
+                "title": "%%%.home.constantLoan.what.title%%%",
                 "whatCaption0": "%%%.home.constantLoan.what.whatCaption0%%%",
                 "whatCaption1": "%%%.home.constantLoan.what.whatCaption1%%%",
                 "whatCaption2": "%%%.home.constantLoan.what.whatCaption2%%%",
@@ -2439,6 +2449,8 @@
                 "messageDescription": "%%%.home.constantLoan.transaction.messageDescription%%%",
                 "minuteWindow": "%%%.home.constantLoan.transaction.minuteWindow%%%",
                 "minuteWindowDescription": "%%%.home.constantLoan.transaction.minuteWindowDescription%%%",
+                "msgInfoManual": "%%%.home.constantLoan.transaction.msgInfoManual%%%",
+                "msgInfoAuto": "%%%.home.constantLoan.transaction.msgInfoAuto%%%",
                 "collateralNoteDGXExtraFees": "%%%.home.constantLoan.transaction.collateralNoteDGXExtraFees%%%",
                 "transactionID": "%%%.home.constantLoan.transaction.transactionID%%%",
                 "noticeTpl": "%%%.home.constantLoan.transaction.noticeTpl%%%",
@@ -2511,7 +2523,8 @@
                 "minimumBorrowAmount": "%%%.home.constantLoan.errorMessages.minimumBorrowAmount%%%",
                 "inValidWalletAddress": "%%%.home.constantLoan.errorMessages.inValidWalletAddress%%%",
                 "notSupportBech32": "%%%.home.constantLoan.errorMessages.notSupportBech32%%%",
-                "rangeInterestRate": "%%%.home.constantLoan.errorMessages.rangeInterestRate%%%"
+                "rangeInterestRate": "%%%.home.constantLoan.errorMessages.rangeInterestRate%%%",
+                "stakingMinTimeRequire": "%%%.home.constantLoan.errorMessages.stakingMinTimeRequire%%%"
             },
             "depositCollateral": {
                 "collateralTypeLabel": "%%%.home.constantLoan.depositCollateral.collateralTypeLabel%%%",
@@ -2529,6 +2542,7 @@
                 "walletAlias": "%%%.home.constantLoan.listApplications.walletAlias%%%",
                 "walletAddressLabel": "%%%.home.constantLoan.listApplications.walletAddressLabel%%%",
                 "loan": "%%%.home.constantLoan.listApplications.loan%%%",
+                "staked": "%%%.home.constantLoan.listApplications.staked%%%",
                 "amount": "%%%.home.constantLoan.listApplications.amount%%%",
                 "pendingAmount": "%%%.home.constantLoan.listApplications.pendingAmount%%%",
                 "collateralRequired": "%%%.home.constantLoan.listApplications.collateralRequired%%%",
@@ -3294,6 +3308,7 @@
             "desc4": "%%%.withdraw.info.desc4%%%"
         },
         "what": {
+            "title": "%%%.withdraw.what.title%%%",
             "whatCaption0": "%%%.withdraw.what.whatCaption0%%%",
             "whatCaption1": "%%%.withdraw.what.whatCaption1%%%",
             "whatCaption2": "%%%.withdraw.what.whatCaption2%%%",
@@ -3340,6 +3355,7 @@
             "learnMore": "%%%.deposit.subTitle.learnMore%%%"
         },
         "what": {
+            "title": "%%%.deposit.what.title%%%",
             "whatCaption0": "%%%.deposit.what.whatCaption0%%%",
             "whatCaption1": "%%%.deposit.what.whatCaption1%%%",
             "whatCaption2": "%%%.deposit.what.whatCaption2%%%",
@@ -3814,6 +3830,7 @@
                 }
             },
             "form": {
+                "gotoVerifyKyc": "%%%.home1.lendingSection.form.gotoVerifyKyc%%%",
                 "text1": "%%%.home1.lendingSection.form.text1%%%",
                 "text2": "%%%.home1.lendingSection.form.text2%%%",
                 "text3": "%%%.home1.lendingSection.form.text3%%%",
@@ -4702,7 +4719,8 @@
             "4": {
                 "caption": "%%%.staking.what.4.caption%%%",
                 "desc": "%%%.staking.what.4.desc%%%"
-            }
+            },
+            "title": "%%%.staking.what.title%%%"
         }
     },
     "ourPartners": {
@@ -5080,6 +5098,15 @@
         },
         "b8": {
             "content1": "%%%.ourStory.b8.content1%%%"
+        }
+    },
+    "partner": {
+        "commission": {
+            "user_id": "%%%.partner.commission.user_id%%%",
+            "value": "%%%.partner.commission.value%%%",
+            "object_type": "%%%.partner.commission.object_type%%%",
+            "object_amount": "%%%.partner.commission.object_amount%%%",
+            "created_at": "%%%.partner.commission.created_at%%%"
         }
     }
 }

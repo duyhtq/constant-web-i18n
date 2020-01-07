@@ -3690,7 +3690,7 @@
 %%%.home1.lendingSection.intro.desc.3%%%,"24/7 customer service"
 %%%.home1.lendingSection.form.gotoVerifyKyc%%%,"Go to verify now"
 %%%.home1.lendingSection.form.text1%%%,"Set your own lending terms"
-%%%.home1.lendingSection.form.text2%%%,"Invest at the current market rate of 9.00% and find a match instantly, or increase your rate and wait for a matching order."
+%%%.home1.lendingSection.form.text2%%%,"Invest at the current market rate of 8.00% and find a match instantly, or increase your rate and wait for a matching order."
 %%%.home1.lendingSection.form.text3%%%,"We’re giving you a trial investment of $1000. All you have to do is choose your rate, and we’ll find you a match. When the trial is up, we take the $1000 back, but the interest is yours to keep."
 %%%.home1.lendingSection.form.text4%%%,"
           <h5>You're almost done.</h5>
@@ -4573,7 +4573,7 @@
 %%%.collateralBalance.pendingUnStaking%%%,"Un-staking amount, During un-stake time the pending transaction amount is not available."
 %%%.collateralBalance.action%%%,"Action"
 %%%.collateralBalance.withdraw%%%,"Withdraw"
-%%%.collateralBalance.withdrawReward%%%,"Withdraw"
+%%%.collateralBalance.withdrawReward%%%,"Withdraw Reward"
 %%%.collateralBalance.deposit%%%,"Deposit"
 %%%.collateralBalance.staking%%%,"Stake"
 %%%.collateralBalance.unStaking%%%,"Unstake"

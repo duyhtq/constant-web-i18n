@@ -1382,7 +1382,7 @@
                 "depositMatched": "Deposit",
                 "cancelDepositMatched": "Cancel Deposit",
                 "withdrawDesc": "Withdraw funds to your bank account or wallet address.",
-                "depositDesc": "Earn 5% APY by default.\n",
+                "depositDesc": "Earn 4% APY by default.\n",
                 "transferDesc": "Send money across the world - to as many people as you like.",
                 "row": "Row",
                 "errorMessage": "Error Message",
@@ -3837,7 +3837,7 @@
             "form": {
                 "gotoVerifyKyc": "Go to verify now",
                 "text1": "Set your own lending terms",
-                "text2": "Invest at the current market rate of 9.00% and find a match instantly, or increase your rate and wait for a matching order.",
+                "text2": "Invest at the current market rate of 8.00% and find a match instantly, or increase your rate and wait for a matching order.",
                 "text3": "We’re giving you a trial investment of $1000. When your term is up, we take the $1000 back, but the interest is yours to keep.",
                 "text4": "\n          <h5>You're almost done.</h5>\n          <p>For your security, we'll need you to verify your ID before using Constant.</p>\n        ",
                 "text5": "Free trial",

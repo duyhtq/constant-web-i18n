@@ -3837,7 +3837,7 @@
             "form": {
                 "gotoVerifyKyc": "Go to verify now",
                 "text1": "Chọn điều khoản đầu tư",
-                "text2": "Invest at the current market rate of 9.00% and find a match instantly, or increase your rate and wait for a matching order.",
+                "text2": "Invest at the current market rate of 8.00% and find a match instantly, or increase your rate and wait for a matching order.",
                 "text3": "Chúng tôi tặng bạn một khoản đầu tư thử nghiệm trị giá 1,000 USD để trải nghiệm dịch vụ. Khi đáo hạn, chúng tôi sẽ thu hồi $,1000 lại, còn bạn được giữ toàn bộ phần lãi.",
                 "text4": "\n<h5>Một thao tác cuối cùng để sử dụng Constant.</h5>\n          <p>Vì lí do an ninh, bạn cần phải xác minh danh tính trước khi sử dụng Constant.</p>        ",
                 "text5": "Dùng thử miễn phí",
@@ -4793,7 +4793,7 @@
         "pendingUnStaking": "Un-staking amount, During un-stake time the pending transaction amount is not available.",
         "action": "Hành động",
         "withdraw": "Rút tiền",
-        "withdrawReward": "Withdraw",
+        "withdrawReward": "Withdraw Reward",
         "deposit": "Nạp tiền",
         "staking": "Stake",
         "unStaking": "Unstake",

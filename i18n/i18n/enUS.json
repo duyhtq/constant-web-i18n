@@ -3827,7 +3827,7 @@
     "home1": {
         "lendingSection": {
             "intro": {
-                "content": "\n<h6>Invest the way you want</h6>\n<h2>Set your own rates.</h2>\n <h2>No minimum capital.</h2>\n <h2>Invest only in secured loans.</h2>\n <br />\n <h6>\n Your investments are fully backed by borrower collateral. Unmatched portions earn an automatic 5% APY, and can be withdrawn anytime.\n </h6>",
+                "content": "\n<h6>Invest the way you want</h6>\n<h2>Set your own rates.</h2>\n <h2>No minimum capital.</h2>\n <h2>Invest only in secured loans.</h2>\n <br />\n <h6>\n Your investments are fully backed by borrower collateral. Unmatched portions earn an automatic 4% APY, and can be withdrawn anytime.\n </h6>",
                 "desc": {
                     "1": "Fully secured by collateral",
                     "2": "Your own rates and terms",
@@ -3837,11 +3837,11 @@
             "form": {
                 "gotoVerifyKyc": "Go to verify now",
                 "text1": "Set your own lending terms",
-                "text2": "Invest at the current market rate of 9.00% and find a match instantly, or increase your rate and wait for a matching order.",
+                "text2": "Invest at the current market rate of 8.00% and find a match instantly, or increase your rate and wait for a matching order.",
                 "text3": "We’re giving you a trial investment of $1000. When your term is up, we take the $1000 back, but the interest is yours to keep.",
                 "text4": "\n          <h5>You're almost done.</h5>\n          <p>For your security, we'll need you to verify your ID before using Constant.</p>\n        ",
                 "text5": "Free trial",
-                "text6": "\n          <p>\n            <span class=darkorange4 bold\">Want to get a borrower instantly?</span> Invest at the current market rate of <b>10%</b>. Or increase your rate and wait for a matching order.",
+                "text6": "\n          <p>\n            <span class=darkorange4 bold\">Want to get a borrower instantly?</span> Invest at the current market rate of <b>8%</b>. Or increase your rate and wait for a matching order.",
                 "btn1": "Invest now",
                 "textLogin": "Log in",
                 "textRegister": "Sign up",

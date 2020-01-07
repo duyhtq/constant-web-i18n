@@ -4983,7 +4983,7 @@ export default {
         gotoVerifyKyc: 'Go to verify now',
         text1: 'Set your own lending terms',
         text2:
-          'Invest at the current market rate of 9.00% and find a match instantly, or increase your rate and wait for a matching order.',
+          'Invest at the current market rate of 8.00% and find a match instantly, or increase your rate and wait for a matching order.',
         text3:
           'We’re giving you a trial investment of $1000. All you have to do is choose your rate, and we’ll find you a match. When the trial is up, we take the $1000 back, but the interest is yours to keep.',
         text4: `
@@ -6154,7 +6154,7 @@ export default {
     pendingUnStaking: 'Un-staking amount, During un-stake time the pending transaction amount is not available.',
     action: 'Action',
     withdraw: 'Withdraw',
-    withdrawReward: 'Withdraw',
+    withdrawReward: 'Withdraw Reward',
     deposit: 'Deposit',
     staking: 'Stake',
     unStaking: 'Unstake',

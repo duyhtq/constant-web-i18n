@@ -124,6 +124,8 @@
 %%%.footer.social.md.link%%%,"https://medium.com/@constantp2p"
 %%%.footer.social.tele.title%%%,"Constant Telegram"
 %%%.footer.social.tele.link%%%,"https://t.me/constantp2p"
+%%%.footer.social.email.title%%%,"Email"
+%%%.footer.social.email.link%%%,"hello@myconstant.com"
 %%%.footer.content%%%,"
     <p class=""bold"">Is CONST LLC a bank?</p>
     <p>Please note that CONST LLC (hereafter referred to as “we”, “us”, or “Company”) is not a bank or deposit account, nor is it a regulated financial institution. Constant tokens are not financial instruments. No interest will be paid on any funds or other assets held in your Constant account and all assets directly held by us are not insured by us or, except as set forth below, any third party or any government agency.</p>
@@ -206,7 +208,7 @@
 %%%.headerBar.extraMenu.expertDecs%%%,"More advanced peer-to-peer lending"
 %%%.headerBar.extraMenu.transfer%%%,"Transfer"
 %%%.headerBar.extraMenu.investFlex.title%%%,"Fiat Flex"
-%%%.headerBar.extraMenu.investFlex.desc%%%,"5% APY. Fully secured. Withdraw anytime."
+%%%.headerBar.extraMenu.investFlex.desc%%%,"{percent}% APY. Fully secured. Withdraw anytime."
 %%%.headerBar.extraMenu.investCustom.title%%%,"Fiat Custom"
 %%%.headerBar.extraMenu.investCustom.desc%%%,"Your rates. Your terms. Fully secured."
 %%%.headerBar.extraMenu.investStaking.title%%%,"Crypto Staking"
@@ -815,30 +817,30 @@
 %%%.me.twoFa.disable2FaSuccess%%%,"Disable 2FA successfully!"
 %%%.me.twoFa.enable2FaSuccess%%%,"Enable 2FA successfully!"
 %%%.me.setting.title%%%,"General Settings"
-%%%.me.flexInterestConfig.title%%%,"Earn 5% APY on your balance with Flex"
-%%%.me.flexInterestConfig.label%%%,"Earn 5% APY through Flex"
-%%%.me.flexInterestConfig.noteOn%%%,"Your balance is earning 5% APY through Flex. You can withdraw anytime for free."
+%%%.me.flexInterestConfig.title%%%,"Earn 4% APY on your balance with Flex"
+%%%.me.flexInterestConfig.label%%%,"Earn 4% APY through Flex"
+%%%.me.flexInterestConfig.noteOn%%%,"Your balance is earning 4% APY through Flex. You can withdraw anytime for free."
 %%%.me.flexInterestConfig.noteOff%%%,"Your balance is escrowed with Prime Trust and insured to $130,000,000."
 %%%.me.flexInterestConfig.desc%%%,"What would you like to do with your balance?"
-%%%.me.flexInterestConfig.descDesc%%%,"<p>You can choose to earn 5% APY on your balance with Flex.</p>
+%%%.me.flexInterestConfig.descDesc%%%,"<p>You can choose to earn 4% APY on your balance with Flex.</p>
                 <p>Flex is a lending pool that uses Compound Finance technology to earn you interest. All lending is secured by borrower collateral, which protects your funds, and you can withdraw anytime for free.</p>
                 <p>If you disable Flex, your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust store your funds across multiple insured bank accounts, giving total coverage of $130,000,000, but you won’t earn interest.</p>
 "
 %%%.me.flexInterestConfig.enableFlex.messageConfirm.true%%%,"Your balance is escrowed with Prime Trust and insured to $130,000,000."
-%%%.me.flexInterestConfig.enableFlex.messageConfirm.false%%%,"Your balance earns 5% APY through Flex. You can withdraw anytime for free."
+%%%.me.flexInterestConfig.enableFlex.messageConfirm.false%%%,"Your balance earns 4% APY through Flex. You can withdraw anytime for free."
 %%%.me.flexInterestConfig.enableFlex.enableFlexSuccess.true%%%,"<p>Your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust stores your funds across multiple insured bank accounts, giving total coverage of $130,000,000. You can withdraw anytime for free, but your balance will not earn interest.</p>
 <a href=""https://medium.com/@constantp2p/meet-scott-purcell-ceo-of-prime-trust-ae7581835030"" class=""underline"">Find out more about Prime Trust</a>
 "
-%%%.me.flexInterestConfig.enableFlex.enableFlexSuccess.false%%%,"<p>Congratulations! Your balance will now earn 5% APY through Flex. You can withdraw anytime for free and your balance is protected by borrower collateral.</p>
+%%%.me.flexInterestConfig.enableFlex.enableFlexSuccess.false%%%,"<p>Congratulations! Your balance will now earn 4% APY through Flex. You can withdraw anytime for free and your balance is protected by borrower collateral.</p>
 <a href=""https://medium.com/@constantp2p/compound-finance-discover-the-interest-earning-tech-behind-flex-dcbb1decc835"" class=""underline"">Find out how Flex works</a>
 "
 %%%.me.flexInterestConfig.enableFlex.enableFlexFailed.true%%%,"Sorry, we can’t disable Flex for you right now – please try again later. If you keep getting this message, please email us at hello@myconstant.com."
 %%%.me.flexInterestConfig.enableFlex.enableFlexFailed.false%%%,"Sorry, we can’t enable Flex for you right now – please try again later. If you keep getting this message, please email us at hello@myconstant.com."
 %%%.me.flexInterestConfig.enableFlex.confirm.title%%%,"Yes"
 %%%.me.flexInterestConfig.enableFlex.confirm.true%%%,"Yes, insure my balance with Prime Trust"
-%%%.me.flexInterestConfig.enableFlex.confirm.false%%%,"Yes, I want to earn 5% APY"
+%%%.me.flexInterestConfig.enableFlex.confirm.false%%%,"Yes, I want to earn 4% APY"
 %%%.me.flexInterestConfig.enableFlex.cancel.title%%%,"No"
-%%%.me.flexInterestConfig.enableFlex.cancel.true%%%,"No, I’ll keep earning 5% APY"
+%%%.me.flexInterestConfig.enableFlex.cancel.true%%%,"No, I’ll keep earning 4% APY"
 %%%.me.flexInterestConfig.enableFlex.cancel.false%%%,"No, I’ll stick with the insurance"
 %%%.me.referralInfo.title%%%,"Referral Information"
 %%%.me.referralInfo.copied%%%,"Referral link copied to clipboard."
@@ -1555,6 +1557,7 @@
 %%%.user.blog%%%,"Blog"
 %%%.user.accountActivities%%%,"Account Activity"
 %%%.user.memberShip%%%,"Membership"
+%%%.user.supportCenter%%%,"Support Center"
 %%%.user.login.popupTitle%%%,"Welcome to Constant"
 %%%.user.login.title%%%,"Login to your account"
 %%%.user.login.username%%%,"Your email"
@@ -3464,7 +3467,7 @@
 %%%.newHome.banner.title1%%%,"
         <h1>The world’s first <span class=""darkorange4"">fully secured</span> peer-to-peer lending platform.</h1>
       "
-%%%.newHome.banner.subTitle%%%,"Your investments are fully backed by borrower collateral and smart contracts. Unmatched portions earn an automatic 5% APY, and can be withdrawn anytime."
+%%%.newHome.banner.subTitle%%%,"Your investments are fully backed by borrower collateral and smart contracts. Unmatched portions earn an automatic 4% APY, and can be withdrawn anytime."
 %%%.newHome.banner.cta%%%,"Open an account"
 %%%.newHome.banner.ctaDesc%%%,"
         It’s free to open an account. Available locations: World."
@@ -4058,7 +4061,7 @@
 %%%.landingProReferral.faqs.answer5%%%,"When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds."
 %%%.getPrices.title%%%,"Pricing and Service times"
 %%%.getPrices.desc%%%,"
-    <p class=""bold"">GET 3x INTEREST FOR EACH DAY YOUR TRANSACTION IS DELAYED.</p>
+    <p class=""bold"">GET 3x INTEREST FOR EACH DAY YOUR STABLECOIN WITHDRAWALS IS DELAYED.</p>
     <p class=""bold"">All times shown below are maximum estimates. In all cases, the team strives for ASAP.</p>
     <p class=""bold"">All delay compensation will be credited directly into your Constant balance.</p>
     <p class=""bold"">While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</p>
@@ -4087,7 +4090,7 @@
 %%%.getPrices.depositFiat.head2%%%,"Business hours (9am-6pm GMT +7, Mon-Fri)"
 %%%.getPrices.depositFiat.head3%%%,"Outside business hours"
 %%%.getPrices.depositFiat.head4%%%,"Fee"
-%%%.getPrices.depositCrypto.head1%%%,"Crypto"
+%%%.getPrices.depositCrypto.head1%%%,"Stablecoins"
 %%%.getPrices.depositCrypto.head2%%%,"Business hours (9am-6pm GMT +7, Mon-Fri)"
 %%%.getPrices.depositCrypto.head3%%%,"Outside business hours"
 %%%.getPrices.depositCrypto.head4%%%,"Fee"
@@ -4099,13 +4102,13 @@
 %%%.getPrices.withdrawFiat.head2%%%,"Business hours (9am-6pm GMT +7, Mon-Fri)"
 %%%.getPrices.withdrawFiat.head3%%%,"Outside business hours"
 %%%.getPrices.withdrawFiat.head4%%%,"Fee"
-%%%.getPrices.withdrawCrypto.head1%%%,"Crypto withdrawal"
+%%%.getPrices.withdrawCrypto.head1%%%,"Stablecoin withdrawal"
 %%%.getPrices.withdrawCrypto.head2%%%,"Business hours (9am-6pm GMT +7, Mon-Fri)"
 %%%.getPrices.withdrawCrypto.head3%%%,"Outside business hours"
 %%%.getPrices.withdrawCrypto.head4%%%,"Fee"
 %%%.getPrices.withdrawCollateral.head1%%%,"Collateral withdrawal"
 %%%.getPrices.withdrawCollateral.head2%%%,"Business hours (9am-6pm GMT +7, Mon-Fri)"
-%%%.getPrices.withdrawCollateral.head3%%%,"Business hours (9am-6pm CET, Mon-Fri)"
+%%%.getPrices.withdrawCollateral.head3%%%,"Outside business hours"
 %%%.getPrices.withdrawCollateral.head4%%%,"Fee"
 %%%.getPrices.matchingFee.head1%%%,"Matching fee"
 %%%.getPrices.matchingFee.head2%%%," "
@@ -4236,9 +4239,9 @@
 %%%.proLending.orderBook%%%,"Order Book"
 %%%.proLending.tradeHistory%%%,"Trade History"
 %%%.deposit1.faqs.question1%%%,"What is Flex?"
-%%%.deposit1.faqs.answer1%%%,"Flex is a deposit account that earns you 5% APY through automatic lending. When you deposit money into Flex, it goes into a liquidity pool managed by Compound Finance. Borrowers who’ve put up collateral can then secure loans from the pool in return for interest – and we pay that interest to you. Since your deposits go to a pool rather than individual borrowers, you can withdraw or deposit anytime, as often as you like, and without any fees. "
-%%%.deposit1.faqs.question2%%%,"Why 5% APY?"
-%%%.deposit1.faqs.answer2%%%,"Compound Finance uses a blockchain protocol that intelligently manages the lending pool. It also sets interest rates according to supply and demand. At the moment, the rate is fixed at 5% APY. In the future, it could be higher or lower depending on activity in Compound’s lending market."
+%%%.deposit1.faqs.answer1%%%,"Flex is a deposit account that earns you 4% APY through automatic lending. When you deposit money into Flex, it goes into a liquidity pool managed by Compound Finance. Borrowers who’ve put up collateral can then secure loans from the pool in return for interest – and we pay that interest to you. Since your deposits go to a pool rather than individual borrowers, you can withdraw or deposit anytime, as often as you like, and without any fees. "
+%%%.deposit1.faqs.question2%%%,"Why 4% APY?"
+%%%.deposit1.faqs.answer2%%%,"Compound Finance uses a blockchain protocol that intelligently manages the lending pool. It also sets interest rates according to supply and demand. At the moment, the rate is fixed at 4% APY. In the future, it could be higher or lower depending on activity in Compound’s lending market."
 %%%.deposit1.faqs.question3%%%,"What is Compound Finance?"
 %%%.deposit1.faqs.answer3%%%,"Compound Finance is a technology that intelligently manages a lending pool of over $150 million in assets (as of September 2019). Flex interfaces with this technology through an API that allows you to withdraw your deposits and earned interest at any time. <br/>Compound Finance lends in a similar way to banks: your deposits go in and are lent to borrowers in exchange for interest and collateral. But since Compound Finance is a technology, there is no need for branches or staff, so you enjoy a much better interest rate!<br> <a href=""https://compound.finance/"">Learn more about Compound Finance.</a>"
 %%%.deposit1.faqs.question4%%%,"Do you have a referral program for Flex?"
@@ -4254,7 +4257,7 @@
 %%%.deposit1.faqs.question9%%%,"Can I earn interest while waiting for an investment order to match?"
 %%%.deposit1.faqs.answer9%%%,"No, your funds are set aside while waiting for a match so won't earn interest on Flex. If you decide to cancel the order, your funds will return to earning interest in Flex."
 %%%.deposit1.faqs.question10%%%,"Will the interest rate change?"
-%%%.deposit1.faqs.answer10%%%,"The interest rate depends on supply and demand in Compound's lending market. Sometimes it's higher, sometimes it's lower, but for the time being we've fixed this at 5% APY."
+%%%.deposit1.faqs.answer10%%%,"The interest rate depends on supply and demand in Compound's lending market. Sometimes it's higher, sometimes it's lower, but for the time being we've fixed this at 4% APY."
 %%%.deposit1.faqs.question11%%%,"Are there any fees?"
 %%%.deposit1.faqs.answer11%%%,"No – all deposits and withdrawals on Flex are free."
 %%%.deposit1.faqs.question12%%%,"How does Constant make money?"
@@ -4362,6 +4365,7 @@
 %%%.menuMobile.goBack%%%,"Go back"
 %%%.menuMobile.aboutYou%%%,"About You"
 %%%.menuMobile.accountActivity%%%,"Account Activity"
+%%%.menuMobile.supportCenter%%%,"Support Center"
 %%%.airdrop.endedTitle%%%,"The Constant STARdrop campaign has now ended (October 24 2019, 10:00 AM GMT+7). We’ve reached the limit of 10,000 STAR, and thank you all for your support."
 %%%.airdrop.endDesc%%%,"You’ll receive your STAR within 10 business days – please keep an eye on your Constant account."
 %%%.airdrop.title%%%,"Earn more and pay less with STARdrop"
@@ -4419,7 +4423,7 @@
 %%%.seo.proLending.description%%%,"Constant P2P lending platform accepts all types of fiat and stablecoin as investment. Earn minimum 10% on any amount. All investments are secured by FDIC insurance and borrower collateral"
 %%%.seo.flex.title%%%,"Enjoy 50x better interest than a savings account"
 %%%.seo.flex.keyword%%%,"constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance, passive income, saving account, online saving platform"
-%%%.seo.flex.description%%%,"Join our Flex lending pool to earn 5% APY on your investments. All lending is protected by collateral, and interest is compounded and paid every second. Withdraw anytime for free"
+%%%.seo.flex.description%%%,"Join our Flex lending pool to earn 4% APY on your investments. All lending is protected by collateral, and interest is compounded and paid every second. Withdraw anytime for free"
 %%%.seo.withdraw.title%%%,"Secured peer-to-peer lending platform for cryptocurrency bitcoin loan"
 %%%.seo.withdraw.keyword%%%,"lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online"
 %%%.seo.withdraw.description%%%,"Constant is the P2P lending platform built on P2P technology with the fastest growth rate in Asia. Lend stablecoin and fiat with your own terms and interest rates or borrow money using cryptocurrency as collateral in this defi product.Fully secured by borrower collateral and smart contracts"

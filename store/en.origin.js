@@ -185,6 +185,10 @@
             "tele": {
                 "title": "%%%.footer.social.tele.title%%%",
                 "link": "%%%.footer.social.tele.link%%%"
+            },
+            "email": {
+                "title": "%%%.footer.social.email.title%%%",
+                "link": "%%%.footer.social.email.link%%%"
             }
         },
         "content": "%%%.footer.content%%%"
@@ -1696,6 +1700,7 @@
         "blog": "%%%.user.blog%%%",
         "accountActivities": "%%%.user.accountActivities%%%",
         "memberShip": "%%%.user.memberShip%%%",
+        "supportCenter": "%%%.user.supportCenter%%%",
         "login": {
             "popupTitle": "%%%.user.login.popupTitle%%%",
             "title": "%%%.user.login.title%%%",
@@ -4494,7 +4499,8 @@
         "signout": "%%%.menuMobile.signout%%%",
         "goBack": "%%%.menuMobile.goBack%%%",
         "aboutYou": "%%%.menuMobile.aboutYou%%%",
-        "accountActivity": "%%%.menuMobile.accountActivity%%%"
+        "accountActivity": "%%%.menuMobile.accountActivity%%%",
+        "supportCenter": "%%%.menuMobile.supportCenter%%%"
     },
     "airdrop": {
         "endedTitle": "%%%.airdrop.endedTitle%%%",

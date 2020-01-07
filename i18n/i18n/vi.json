@@ -185,6 +185,10 @@
             "tele": {
                 "title": "Constant Telegram",
                 "link": "https://t.me/constantp2p"
+            },
+            "email": {
+                "title": "Email",
+                "link": "hello@myconstant.com"
             }
         },
         "content": "\n<p class=\"bold\">CONST LLC có phải là ngân hàng không?</p>\n<p>Xin lưu ý rằng CONST LLC (sau đây được gọi bằng \"chúng tôi\" hay \"công ty\") không phải là một ngân hàng hay một tổ chức tài chính. Token Constant không phải là một công cụ tài chính. Tiền lãi sẽ không được trả cho bất kì khoản tiền hoặc tài nào khác được giữ trong tài khoản Constant. Tất cả những tài sản do chúng tôi trực tiếp nắm giữ sẽ không được bảo hiểm bởi bất kì bên thứ ba hay cơ quan chính phủ nào, trừ những ngoại lệ dưới đây.</p> \n<p>Chúng tôi làm việc với PrimeTrust - một tổ chức tài chính độc lập để quản lí quỹ dự phòng cho token Constant, đảm bảo rằng với mỗi một đồng Constant đang lưu hành đều có 1 USD ở trong quỹ dự phòng. Quỹ dự phòng được giữ trong rất nhiều các tài khoản ngân hàng ở Mỹ. Những tài khoản này được bảo hiểm bởi FDIC.</p>\n<p>Mức lãi suất có thể bị thay đổi trong tương lai.</p>    "
@@ -272,7 +276,7 @@
             "transfer": "Chuyển",
             "investFlex": {
                 "title": "Không kì hạn",
-                "desc": "Lãi suất kép 5%/năm. An toàn tuyệt đối. Rút tiền ra bất cứ lúc nào."
+                "desc": "{percent}% APY. Fully secured. Withdraw anytime."
             },
             "investCustom": {
                 "title": "Có kì hạn",
@@ -806,20 +810,20 @@
             "title": "Cài đặt chung"
         },
         "flexInterestConfig": {
-            "title": "Hưởng mức lãi suất kép theo giây 5%/năm với Flex",
-            "label": "Lãi suất kép 5%/năm theo từng giây với Flex",
-            "noteOn": "Số dư tài khoản của bạn đang được hưởng mức lãi suất kép 5%/năm theo từng giây với Flex. Có thể rút tiền bất cứ lúc nào. Hoàn toàn miễn phí.",
+            "title": "Earn 4% APY on your balance with Flex",
+            "label": "Earn 4% APY through Flex",
+            "noteOn": "Your balance is earning 4% APY through Flex. You can withdraw anytime for free.",
             "noteOff": "Số dư của bạn được đảm bảo bởi PrimeTrust, tối đa lên tới 130 triệu USD.",
             "desc": "Bạn muốn làm gì với số dư của mình?",
-            "descDesc": "<p>Bạn có thể hưởng mức lãi suất kép 5%/năm theo từng giây với Flex.</p>\n<p>Nếu chọn Flex, bạn sẽ được hưởng mức lãi suất như trên từ nền tảng tài chính công nghệ Compound. Tất cả các khoản đầu tư qua Compound đều được đảm bảo bởi tài sản thế chấp. Có thể rút tiền ra bất cứ lúc nào.</p>\n<p>Nếu không chọn Flex, bạn sẽ không được hưởng lãi suất. Tuy nhiên, tiền của bạn sẽ được giữ trong các tài khoản ngân hàng được đảm bảo bởi PrimeTrust lên tới 130 triệu USD.</p>\n",
+            "descDesc": "<p>You can choose to earn 4% APY on your balance with Flex.</p>\n                <p>Flex is a lending pool that uses Compound Finance technology to earn you interest. All lending is secured by borrower collateral, which protects your funds, and you can withdraw anytime for free.</p>\n                <p>If you disable Flex, your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust store your funds across multiple insured bank accounts, giving total coverage of $130,000,000, but you won’t earn interest.</p>\n",
             "enableFlex": {
                 "messageConfirm": {
                     "true": "Số dư của bạn được đảm bảo bởi PrimeTrust, tối đa lên tới 130 triệu USD.",
-                    "false": "Số dư tài khoản của bạn đang được hưởng mức lãi suất kép 5%/năm theo từng giây với Flex. Có thể rút tiền bất cứ lúc nào. Hoàn toàn miễn phí."
+                    "false": "Your balance earns 4% APY through Flex. You can withdraw anytime for free."
                 },
                 "enableFlexSuccess": {
                     "true": "<p>Số dư của bạn được đảm bảo bởi PrimeTrust - một tổ chức tài chính uy tín tại Mỹ. PrimeTrust giữ tiền trong nhiều tài khoản ngân hàng được bảo hiểm lên tới 130 triệu USD. Tuy bạn vẫn có thể rút tiền bất cứ lúc nào, nhưng số dư của bạn không được nhận lãi.</p>\n<a href=\"https://medium.com/@constantp2p/meet-scott-purcell-ceo-of-prime-trust-ae7581835030\" class=\"underline\">Tìm hiểu thêm về PrimeTrust</a>\n",
-                    "false": "<p>Xin chúc mừng! Tài khoản của bạn sẽ được hưởng mức lãi suất kép 5%/năm với Flex, được đảm bảo bởi tài sản thế chấp và có thể rút tiền bất cứ líc nào.</p>\n<a href=\"https://medium.com/@constantp2p/compound-finance-discover-the-interest-earning-tech-behind-flex-dcbb1decc835\" class=\"underline\">Tìm hiểu thêm về Flex</a>\n"
+                    "false": "<p>Congratulations! Your balance will now earn 4% APY through Flex. You can withdraw anytime for free and your balance is protected by borrower collateral.</p>\n<a href=\"https://medium.com/@constantp2p/compound-finance-discover-the-interest-earning-tech-behind-flex-dcbb1decc835\" class=\"underline\">Find out how Flex works</a>\n"
                 },
                 "enableFlexFailed": {
                     "true": "Đã xảy ra lỗi. Bạn không thể tắt Flex tại thời điểm hiện tại. Xin vui lòng thử lại. Nếu bạn vẫn tiếp tục gặp sự cố này, xin vui lòng liên hệ với chúng tôi qua email hello@myconstant.com.",
@@ -828,11 +832,11 @@
                 "confirm": {
                     "title": "Đúng",
                     "true": "Bảo đảm số dư với PrimeTrust",
-                    "false": "Hưởng mức lãi suất kép 5%/năm"
+                    "false": "Yes, I want to earn 4% APY"
                 },
                 "cancel": {
                     "title": "Sai",
-                    "true": "Tôi muốn giữ mức lãi suất kép 5%/năm",
+                    "true": "No, I’ll keep earning 4% APY",
                     "false": "Tôi muốn số dư của mình được bảo đảm"
                 }
             }
@@ -1696,6 +1700,7 @@
         "blog": "Blog",
         "accountActivities": "Hoạt động tài khoản",
         "memberShip": "Thành viên",
+        "supportCenter": "Support Center",
         "login": {
             "popupTitle": "Constant xin chào",
             "title": "Xin chào",
@@ -3504,7 +3509,7 @@
         "banner": {
             "title": "<h2> Đặt mức lãi suất bạn muốn. </ h2>\n  <h2> Không có vốn tối thiểu. </ h2>\n  <h2> Chỉ đầu tư vào các khoản vay có bảo đảm. </ h2>\n  </span>\n  <br />\n  <h5>\n  Các khoản đầu tư của bạn được hỗ trợ hoàn toàn bằng tài sản thế chấp của người vay. Phần không được cho vay sẽ tự động nhận 5% lãi kép và có thể rút bất kỳ lúc nào. \n </h5>",
             "title1": "\n<h1>Trải nghiệm nền tảng cho vay ngang hàng an toàn 100%.</h1>      ",
-            "subTitle": "Khoản đầu tư của bạn được đảm bảo hoàn toàn bởi tài sản thế chấp của người vay và hợp đồng thông minh trên blockchain. Số dư trong tài khoản tự động nhận lãi suất kép 5%/năm. Rút tiền ra bất cứ lúc nào.",
+            "subTitle": "Your investments are fully backed by borrower collateral and smart contracts. Unmatched portions earn an automatic 4% APY, and can be withdrawn anytime.",
             "cta": "Bắt đầu",
             "ctaDesc": "Hoàn toàn miễn phí",
             "invest": {
@@ -4129,7 +4134,7 @@
     },
     "getPrices": {
         "title": "Giờ hoạt động",
-        "desc": "\n    <p class=\"bold\">GET 3x INTEREST FOR EACH DAY YOUR TRANSACTION IS DELAYED.</p>\n    <p class=\"bold\">All times shown below are maximum estimates. In all cases, the team strives for ASAP.</p>\n    <p class=\"bold\">All delay compensation will be credited directly into your Constant balance.</p>\n    <p class=\"bold\">While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</p>\n    ",
+        "desc": "\n    <p class=\"bold\">GET 3x INTEREST FOR EACH DAY YOUR STABLECOIN WITHDRAWALS IS DELAYED.</p>\n    <p class=\"bold\">All times shown below are maximum estimates. In all cases, the team strives for ASAP.</p>\n    <p class=\"bold\">All delay compensation will be credited directly into your Constant balance.</p>\n    <p class=\"bold\">While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</p>\n    ",
         "collateralIssue": "\n    *About collateral issue, please ping <a href=\"https://t.me/andy_9210\" className=\"underline bold\" target=\"_blank\"><strong>@andy_9210</strong></a> on telegram to get direct support.\n    ",
         "withdrawCryptoNote": "\n    <p>*Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually. The maximum waiting time is 24 hours.</p>\n    <p>*Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>\n    ",
         "withdrawCollateralNote": "\n    <p>*About collateral issue, please ping <a href=\"https://t.me/andy_9210\" className=\"underline bold\" target=\"_blank\"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>\n    ",
@@ -4142,7 +4147,7 @@
             "head4": "Phí"
         },
         "depositCrypto": {
-            "head1": "Tiền mã hoá",
+            "head1": "Stablecoins",
             "head2": "Giờ làm việc (9am-6pm, GMT+7, Thứ Hai-Thứ Sáu)",
             "head3": "Ngoài giờ làm việc",
             "head4": "Phí"
@@ -4160,7 +4165,7 @@
             "head4": "Phí"
         },
         "withdrawCrypto": {
-            "head1": "Rút tiền mã hoá",
+            "head1": "Stablecoin withdrawal",
             "head2": "Giờ làm việc (9am-6pm, GMT+7, Thứ Hai-Thứ Sáu)",
             "head3": "Ngoài giờ làm việc",
             "head4": "Phí"
@@ -4168,7 +4173,7 @@
         "withdrawCollateral": {
             "head1": "Collateral withdrawal",
             "head2": "Business hours (9am-6pm GMT +7, Mon-Fri)",
-            "head3": "Business hours (9am-6pm CET, Mon-Fri)",
+            "head3": "Outside business hours",
             "head4": "Fee"
         },
         "matchingFee": {
@@ -4343,9 +4348,9 @@
     "deposit1": {
         "faqs": {
             "question1": "Flex là gì?",
-            "answer1": "Flex là một tài khoản tiền gửi giúp bạn kiếm được 5% lãi suất bình quân năm thông qua việc cho vay tự động. Khi bạn gửi tiền vào Flex, nó sẽ đi vào một bể thanh khoản được quản lý bởi Compound Finance. Những người đi vay đã đặt tài sản thế chấp sau đó có thể đảm bảo các khoản vay từ nhóm để đổi lấy tiền lãi - và chúng tôi trả lãi cho bạn. Vì tiền gửi của bạn đi đến một nhóm chứ không phải là người vay cá nhân, bạn có thể rút hoặc gửi bất cứ lúc nào, bao nhiêu lần tùy thích và không mất bất kỳ khoản phí nào.",
-            "question2": "Tại sao lại là mức lãi suất kép 5%/năm?",
-            "answer2": "Compound Finance sử dụng giao thức blockchain để quản lý thông minh các khoản vay. Nó cũng tự đặt lãi suất vay theo cung và cầu. Hiện tại, lãi suất được cố định ở mức 5% lãi suất bình quân năm. Trong tương lai, lãi suất có thể cao hơn hoặc thấp hơn tùy thuộc vào hoạt động trong thị trường cho vay Compound.",
+            "answer1": "Flex is a deposit account that earns you 4% APY through automatic lending. When you deposit money into Flex, it goes into a liquidity pool managed by Compound Finance. Borrowers who’ve put up collateral can then secure loans from the pool in return for interest – and we pay that interest to you. Since your deposits go to a pool rather than individual borrowers, you can withdraw or deposit anytime, as often as you like, and without any fees. ",
+            "question2": "Why 4% APY?",
+            "answer2": "Compound Finance uses a blockchain protocol that intelligently manages the lending pool. It also sets interest rates according to supply and demand. At the moment, the rate is fixed at 4% APY. In the future, it could be higher or lower depending on activity in Compound’s lending market.",
             "question3": "Compound Finance là gì?\n",
             "answer3": "<p>Compound Finance là một công nghệ quản lý thông minh các khoản cho vay hơn với giá trị các khoản vay đang quản lý là hơn 150 triệu USD (tính đến tháng 9 năm 2019). Giao diện Flex tích hợp công nghệ này thông qua API, từ đó cho phép bạn rút tiền gửi và kiếm lãi bất cứ lúc nào.</p>\n\n<p> Compound Finance cho vay theo cách tương tự như ngân hàng: tiền gửi của bạn đi vào và được dùng để cho người vay vay để đổi lấy tiền lãi và người vay sẽ nộp tài sản thế chấp. Nhưng vì Compound Finance là một công nghệ, không cần chi nhánh hay nhân viên, vì vậy bạn được hưởng mức lãi suất tốt hơn nhiều!</p>\n\n <p> <a href=\"https://medium.com/@constantp2p/compound-finance-discover-the-interest-earning-tech-behind-flex-dcbb1decc835\"> Tìm hiểu thêm về Compount Finance. </a></p>\"",
             "question4": "Flex có chương trình giới thiệu khách hàng không?",
@@ -4361,7 +4366,7 @@
             "question9": "Tôi có thể kiếm được tiền lãi trong khi chờ lệnh đầu tư khớp không?\n \n",
             "answer9": "Không, tiền của bạn sẽ được để ở trạng thái chờ trong khi chờ đợi một sự khớp lệnh diễn ra, vì thế không thể kiếm được tiền lãi trên Flex. Nếu bạn quyết định hủy lệnh chờ khớp, tiền của bạn sẽ trở lại để kiếm lãi trong Flex.\n \n",
             "question10": "Mức lãi suất này liệu sẽ thay đổi không?",
-            "answer10": "Lãi suất phụ thuộc vào cung và cầu trong thị trường cho vay Compound. Đôi khi, nó cao hơn, đôi khi thấp hơn, nhưng hiện tại chúng tôi đã cố định lãi suất này ở mức 5% lãi suất bình quân năm.",
+            "answer10": "The interest rate depends on supply and demand in Compound's lending market. Sometimes it's higher, sometimes it's lower, but for the time being we've fixed this at 4% APY.",
             "question11": "Có khoản phí nào không?",
             "answer11": "Không - mọi nạp tiền và rút riền trên Flex đều miễn phí",
             "question12": "Constant kiếm tiền bằng cách nào?",
@@ -4494,7 +4499,8 @@
         "signout": "Đăng xuất",
         "goBack": "Go back",
         "aboutYou": "About You",
-        "accountActivity": "Account Activity"
+        "accountActivity": "Account Activity",
+        "supportCenter": "Support Center"
     },
     "airdrop": {
         "endedTitle": "Chiến dịch Constant STARdrop đã kết thúc (ngày 24 tháng 10 năm 2019, 10:00 AM GMT + 7). Chúng tôi đã đạt đến giới hạn 10.000 SAO và cảm ơn tất cả các bạn đã ủng hộ.\n \n",
@@ -4555,7 +4561,7 @@
         "flex": {
             "title": "Enjoy 50x better interest than a savings account",
             "keyword": "Dự án Constant, cho vay đầu tư ngang hàng, câu lạc bộ cho vay, ngang hàng, người cho vay, cho vay ngang hàng tốt nhất, cho vay tiền, tài chính cho vay, thu nhậo thụ động, tài khoản tiết kiệm, nền tảng tiết kiệm trực tuyến",
-            "description": "Join our Flex lending pool to earn 5% APY on your investments. All lending is protected by collateral, and interest is compounded and paid every second. Withdraw anytime for free"
+            "description": "Join our Flex lending pool to earn 4% APY on your investments. All lending is protected by collateral, and interest is compounded and paid every second. Withdraw anytime for free"
         },
         "withdraw": {
             "title": "Nền tảng cho vay ngang hàng bảo đảm cho các khoản vay tiền mã hoá",

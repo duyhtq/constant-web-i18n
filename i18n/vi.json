@@ -1382,7 +1382,7 @@
                 "depositMatched": "Nạp",
                 "cancelDepositMatched": "Huỷ nạp",
                 "withdrawDesc": "Rút tiền về tài khoản ngân hàng hoặc địa chỉ ví của bạn.",
-                "depositDesc": "Mặc định kiếm 5% lãi suất bình quân hàng năm",
+                "depositDesc": "Mặc định kiếm 4% lãi suất bình quân hàng năm",
                 "transferDesc": "Gửi tiền trên khắp toàn thế giới - tới bất cứ bao nhiêu người bạn muốn.",
                 "row": "Hàng",
                 "errorMessage": "Thông báo lỗi",

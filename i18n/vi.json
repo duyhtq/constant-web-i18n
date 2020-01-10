@@ -5057,53 +5057,53 @@
         }
     },
     "ourStory": {
-        "title": "Our Story",
-        "thanks": "- Thanks for reading -",
+        "title": "Hành trình của Constant",
+        "thanks": "- Xin cảm ơn vì đã dõi theo hành trình của chúng tôi -",
         "b1": {
-            "time": "Jan 2019",
-            "title1": "Hi there.",
-            "title2": "Thanks for visiting our  secured P2P lending  platform.",
-            "content1": "\n        <p>If it’s your first time here, I’d love to tell you a little about who we are and what we do.</p>\n        <p>Like many stories, ours has a few twists and turns. So let’s rewind to January 2019 when it all began…</p>\n        <p>Back then, we were a humble stablecoin project. A team of economists, engineers, and creatives looking to make money more useful.</p>\n      "
+            "time": "Tháng 1 - 2019",
+            "title1": "Xin chào.",
+            "title2": "Chân thành cảm ơn vì đã đồng hành cùng chúng tôi.",
+            "content1": "\n<p>Đây có thể là lần đầu tiên bạn biết đến Constant, hãy để chúng tôi kể với bạn về Constant.</p>\n<p>Cũng giống như bao câu truyện khác, câu chuyện của chúng tôi cũng có những điểm thắt nút thú vị. Hãy cùng quay lại tháng 1/2019, nơi tất cả bắt đầu...</p>\n<p>Tại thời điểm đó, Constant chỉ là một dự án stablecoin non trẻ, tập hợp của những người trẻ nhiều hoài bão trên nhiều lĩnh vực từ kinh tế, công nghệ, kĩ thuật,... với mong muốn tạo ra một đồng tiền thật hữu ích.</p>      "
         },
         "b2": {
             "time": "CES 2019",
-            "title1": "Back then, we were a humble stablecoin project",
-            "content1": "\n        <p>We had developed an efficient, borderless, and stable digital currency, backed by the US Dollar, which we launched at CES 2019 in Las Vegas.</p>\n        <p>Our stablecoin (CONST) offered stability for people in troubled economies:</p>\n        <p>- It cut the cost of international transfers.</p>\n        <p>- It slashed processing times from days to minutes.</p>\n        <p>- gave everyone access to a free USD account.</p>\n        <p>But we wanted to do more…</p>\n      "
+            "title1": "Tại thời điểm đó, Constant chỉ là một dự án stablecoin non trẻ",
+            "content1": "\n<p>Chúng tôi đã nỗ lực để tạo ra một đồng tiền mã hoá hiệu quả, không bị giới hạn vật lí và được đảm bảo bởi USD, lần đầu tiên ra mắt tại CES 2019 ở Las Vegas.</p>\n<p>Stablecoin (CONST) của chúng tôi là lời giải cho nhiều vấn đề:</p>\n<p>- Cắt giảm chi phí chuyển tiền quốc tế.</p>\n<p>- Thời gian thực hiện giao dịch chỉ tính bằng phút.</p>\n<p>- Tất cả mọi người đều có thể sở hữu một tài khoản USD.</p>\n<p>- Nhưng chúng tôi còn muốn nhiều hơn thế...</p>      "
         },
         "b3": {
-            "title1": "We wanted to help people grow their money.",
-            "content1": "\n        <p>Like the rest of the world, we’d experienced first-hand the problems with traditional banking. The miserable interest rates, the huge fees, the slow, inefficient systems…</p>\n        <p>So, we began thinking about how we could pay a great interest rate on our stablecoin.</p>\n        <p>Digital currencies are versatile. They move quickly, freely, and are protected by the blockchain technology underpinning them – surely we could put those efficiency savings to work?</p>\n        <p>After a lot of discussion, we set our sights on an industry that – until now – has had a mixed reputation: peer-to-peer (P2P) lending. </p>\n        <p>The problem with P2P lending, as we saw it, was too much centralization and too little use of collateral. P2P lenders were doing what banks did – setting rates, evaluating risk, and so on. </p>\n        <p>Ultimately, this takes control away from you, the customer. </p>\n        <p>So, we built a P2P lending platform that would do two things:</p>\n      ",
+            "title1": "Chúng tôi muốn giúp mọi người tự chủ được tài chính.",
+            "content1": "\n<p>Cũng như mọi người, chúng tôi cũng đã có những vấn đề với hệ thống ngân hàng truyền thống. Lãi suất thấp, phí cao, tốc độ xử lí giao dịch chậm, hệ thống quá cồng kềnh,...</p>\n<p>Vì vậy, chúng tôi bắt đầu nghĩ rằng những người sở hữu stablecoin của chúng tôi xứng đáng được hưởng mức lãi suất tốt hơn.</p>\n<p>Tiền mã hoá nhờ ứng dụng công nghệ chuỗi khối nên rất linh động, giao dịch rất nhanh, chi phí thấp. Và chúng tôi tin chắc rằng mình có thể tận dụng những ưu điểm này để tạo ra một sản phẩm có ích hơn nữa.</p>\n<p>Sau khi nghiên cứu thị trường rất kĩ, chúng tôi đã quyết định tiến vào một lĩnh vực hoàn toàn mới và hiện vẫn còn có nhiều tranh cãi - đó chính là cho vay ngang hàng.</p>\n<p>Vấn đề với thị trường cho vay ngang hàng mà chúng tôi nhận thấy đó là nó quá tập trung và nhiều rủi ro. Những người cho vay vẫn chỉ làm những điều giống như ngân hàng truyền thống - đặt mức lãi suất, đánh giá rủi ro,...</p>\n<p>Vì lẽ đó, những người thực sự có nhu cầu không thể tiếp cận được điều mình muốn.</p>\n<p>Và chúng tôi quyết tâm xây dựng một nền tảng cho vay ngang hàng giải quyết được 2 vấn đề:</p>      ",
             "missions": {
                 "1": {
                     "title": "1",
-                    "content": "\n            <p><strong>Give you control</strong> over amounts, rates, and terms.</p>  \n            <p>We’re the only P2P lending platform in the world to offer this (as far as we know).</p>\n          "
+                    "content": "\n<p><strong>Bạn được toàn quyền quyết định</strong> hạn mức, mức lãi suất và kì hạn.</p>\n<p>Constant hiện tại là nền tảng cho vay ngang hàng duy nhất trên thế giới làm được điều này.</p>          "
                 },
                 "2": {
                     "title": "2",
-                    "content": "\n            <p><strong>Secure all lending</strong> with collateral. This protects your funds and means we never do credit checks.</p>\n          "
+                    "content": "\n<p><strong>Đảm bảo các khoản vay</strong> bằng tài sản thế chấp, đảm bảo an toàn cho người sử dụng mà không cần kiểm tra lịch sử tín dụng cá nhân.</p>          "
                 }
             }
         },
         "b4": {
-            "time1": "May 2019",
-            "title1": "Our P2P lending platform launched",
-            "time2": "Jun 2019",
-            "title2": "We’d matched <span class=\"attention\">$1,000,000</span> in loans",
-            "content2": "Helping people across the world get the cash they need to do the things they want."
+            "time1": "Tháng 5 - 2019",
+            "title1": "Nền tảng cho vay ngang hàng Constant chính thức ra mắt.",
+            "time2": "Tháng 6 - 2019",
+            "title2": "Tổng giá trị khoản vay thông qua Constant là <span class=\"attention\">$1,000,000</span>.",
+            "content2": "Chúng tôi vui mừng vì có thể giúp mọi người ở khắp nơi trên thế giới có thể có được số tiền họ cần để làm những điều họ muốn."
         },
         "b6": {
-            "time": "Today",
-            "title1": "Our P2P lending platform is internationally recognized as one of the most flexible, transparent, and rewarding.",
-            "content1": "Our P2P lending platform is internationally recognized as one of the most flexible, transparent, and rewarding.",
-            "content2": "We’re the fastest-growing P2P lender in SE Asia, and have featured in HackerNoon, ZeroHedge, Inc., and many other popular tech and finance publications."
+            "time": "Hôm nay",
+            "title1": "Nền tảng cho vay ngang hàng Constant được công nhận rộng rãi là một trong những nền tảng linh hoạt, minh bạch và đáng tin cậy nhất.",
+            "content1": "Nền tảng cho vay ngang hàng Constant được công nhận rộng rãi là một trong những nền tảng linh hoạt, minh bạch và đáng tin cậy nhất.",
+            "content2": "Constant là nền tảng cho vay ngang hàng phát triển nhanh nhất khu vực Đông Nam Á và đã được nhắc đến trên nhiều những trang thông tin truyền thông nổi tiếng như HackerNoon, ZeroHedge, Inc., ..."
         },
         "b7": {
-            "content1": "\n        <p>And as you’ve probably guessed by reading this far, we’re not done yet...</p>\n        <p>Our goal is to give you the best financial tools in the world and the expertise to use them.</p>\n        <p>That means continuous development of our technology, making it faster, cheaper, and more secure, and giving you all the helpful content you need to take advantage of it.</p>\n      ",
-            "title2": "Our job is to help you do more with your money.",
-            "content2": "\n        <p>To give you great interest rates on investments and easy access to credit when you need it.</p>\n      "
+            "content1": "\n<p>Câu chuyện của chúng tôi vẫn chưa kết thúc...</p>\n<p>Chúng tôi vẫn đang nỗ lực từng ngày để xây dựng cho bạn một công cụ tài chính hiệu quả, dễ sử dụng.</p>\n<p>Điều đó cũng có nghĩa, công nghệ của chúng tôi phải ngày càng phát triển hơn, làm cho mọi thứ trở nên nhanh hơn, rẻ hơn, an toàn hơn và cho bạn mọi thứ bạn cần để làm điều bạn muốn.</p>      ",
+            "title2": "Mục tiêu của chúng tôi là giúp bạn tự chủ được tài chính.",
+            "content2": "\n<p>Để mang đến người dùng mức lãi suất tốt nhất cũng như tính thanh khoản cao nhất.</p>      "
         },
         "b8": {
-            "content1": "\n        <p>No, we’re not perfect, but we’re honest about our shortcomings and dedicated to improving.</p>\n        <p class=\"clearBottom\">Something broken? Get in touch</p>\n        <p class=\"clearBottom\">Want a new feature? Let us know</p>\n        <p>Got a question? We’re always here for you.</p>\n        <p>Our <strong>customer service team works 24/7</strong>, providing round-the-clock support no matter wherer you live.</p>\n        <p>We promise you'll always have a say in the development of the Constant platform...</p>\n        <p>Because we <strong>built it for you</strong></p>"
+            "content1": "\n<p>Chúng tôi không hoàn hảo, nhưng chúng tôi chân thành về những khiếm khuyết và khát khao để cải thiện mọi thứ tốt hơn.</p>\n<p class=\"clearBottom\">Bạn gặp vấn đề? Hãy để chúng tôi giúp bạn.</p>\n<p class=\"clearBottom\">Bạn muốn tính năng mới? Hãy để chúng tôi làm.</p>\n<p>Bạn có câu hỏi? Hãy để chúng tôi trả lời.</p>\n<p>Đội ngũ chăm sóc khách hàng của chúng tôi hoạt động<strong>24/7</strong>, luôn sẵn sàng cho dù bạn ở bất cứ đâu trên thế giới.</p>\n<p>Chúng tôi cam kết rằng bạn luôn là người có tiếng nói với sự phát triển của Constant.</p>\n<p>Bởi vì, Constant được tạo ra <strong>là để dành cho bạn.</strong></p>"
         }
     },
     "partner": {

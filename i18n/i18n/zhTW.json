@@ -144,6 +144,7 @@
         "AMLPolicy": "AML Policy",
         "membership": "Membership",
         "kycGuidelines": "KYC guidelines",
+        "borrowerPRV": "Crypto Incognito Loans",
         "contactUs": "Contact us",
         "referral": "Share & Earn $",
         "paymentGateway": "Payment Gateway",
@@ -185,6 +186,10 @@
             "tele": {
                 "title": "Constant Telegram",
                 "link": "https://t.me/constantp2p"
+            },
+            "email": {
+                "title": "Email",
+                "link": "hello@myconstant.com"
             }
         },
         "content": "\n    <p class=\"bold\">Is CONST LLC a bank?</p>\n    <p>Please note that CONST LLC (hereafter referred to as “we”, “us”, or “Company”) is not a bank or deposit account, nor is it a regulated financial institution. Constant tokens are not financial instruments. No interest will be paid on any funds or other assets held in your Constant account and all assets directly held by us are not insured by us or, except as set forth below, any third party or any government agency.</p>\n    <p>We work with independent third-party financial institutions such as Prime Trust to provide cash management for the fiat deposits backing Constant tokens, ensuring that all Constant tokens in circulation are matched by an equal amount of fiat deposits. To achieve this, the fiat deposits backing Constant are held in one or more depository accounts at US banks or trust companies whose deposits may be insured.</p>\n    <p>Rate is current at the time of reading, and may be subject to change in the future.</p>\n    "
@@ -272,7 +277,7 @@
             "transfer": "Transfer",
             "investFlex": {
                 "title": "Fiat Flex",
-                "desc": "5% APY. Fully secured. Withdraw anytime."
+                "desc": "{percent}% APY. Fully secured. Withdraw anytime."
             },
             "investCustom": {
                 "title": "Fiat Custom",
@@ -285,6 +290,10 @@
             "borrowFiat": {
                 "title": "Crypto-backed Loans",
                 "desc": "Your rates. Your terms. No credit checks."
+            },
+            "borrowPRV": {
+                "title": "Crypto Incognito Loans",
+                "desc": "Borrow against PRV from 6% APR. Secure escrow. No credit checks"
             }
         }
     },
@@ -344,7 +353,7 @@
             "inValidWalletAddress": "Receive address invalid",
             "": "Opps! Something went wrong, please try again",
             "loginFailure": "Please make sure your email and password are correct.",
-            "stakingRequireMinTerm": "Staking loan is required min term"
+            "stakingRequireMinTerm": "Since you staked your collateral to reduce the interest on your loan, you can’t un-stake until your loan matures."
         },
         "withdrawGreaterThan": "The minimum withdrawal amount is {min}",
         "withdrawLessThanOrEqual": "The maximum withdrawal amount is {max}",
@@ -806,20 +815,20 @@
             "title": "General Settings"
         },
         "flexInterestConfig": {
-            "title": "Earn 5% APY on your balance with Flex",
-            "label": "Earn 5% APY through Flex",
-            "noteOn": "Your balance is earning 5% APY through Flex. You can withdraw anytime for free.",
+            "title": "Earn 4% APY on your balance with Flex",
+            "label": "Earn 4% APY through Flex",
+            "noteOn": "Your balance is earning 4% APY through Flex. You can withdraw anytime for free.",
             "noteOff": "Your balance is escrowed with Prime Trust and insured to $130,000,000.",
             "desc": "What would you like to do with your balance?",
-            "descDesc": "<p>You can choose to earn 5% APY on your balance with Flex.</p>\n                <p>Flex is a lending pool that uses Compound Finance technology to earn you interest. All lending is secured by borrower collateral, which protects your funds, and you can withdraw anytime for free.</p>\n                <p>If you disable Flex, your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust store your funds across multiple insured bank accounts, giving total coverage of $130,000,000, but you won’t earn interest.</p>\n",
+            "descDesc": "<p>You can choose to earn 4% APY on your balance with Flex.</p>\n                <p>Flex is a lending pool that uses Compound Finance technology to earn you interest. All lending is secured by borrower collateral, which protects your funds, and you can withdraw anytime for free.</p>\n                <p>If you disable Flex, your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust store your funds across multiple insured bank accounts, giving total coverage of $130,000,000, but you won’t earn interest.</p>\n",
             "enableFlex": {
                 "messageConfirm": {
                     "true": "Your balance is escrowed with Prime Trust and insured to $130,000,000.",
-                    "false": "Your balance earns 5% APY through Flex. You can withdraw anytime for free."
+                    "false": "Your balance earns 4% APY through Flex. You can withdraw anytime for free."
                 },
                 "enableFlexSuccess": {
                     "true": "<p>Your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust stores your funds across multiple insured bank accounts, giving total coverage of $130,000,000. You can withdraw anytime for free, but your balance will not earn interest.</p>\n<a href=\"https://medium.com/@constantp2p/meet-scott-purcell-ceo-of-prime-trust-ae7581835030\" class=\"underline\">Find out more about Prime Trust</a>\n",
-                    "false": "<p>Congratulations! Your balance will now earn 5% APY through Flex. You can withdraw anytime for free and your balance is protected by borrower collateral.</p>\n<a href=\"https://medium.com/@constantp2p/compound-finance-discover-the-interest-earning-tech-behind-flex-dcbb1decc835\" class=\"underline\">Find out how Flex works</a>\n"
+                    "false": "<p>Congratulations! Your balance will now earn 4% APY through Flex. You can withdraw anytime for free and your balance is protected by borrower collateral.</p>\n<a href=\"https://medium.com/@constantp2p/compound-finance-discover-the-interest-earning-tech-behind-flex-dcbb1decc835\" class=\"underline\">Find out how Flex works</a>\n"
                 },
                 "enableFlexFailed": {
                     "true": "Sorry, we can’t disable Flex for you right now – please try again later. If you keep getting this message, please email us at hello@myconstant.com.",
@@ -828,11 +837,11 @@
                 "confirm": {
                     "title": "Yes",
                     "true": "Yes, insure my balance with Prime Trust",
-                    "false": "Yes, I want to earn 5% APY"
+                    "false": "Yes, I want to earn 4% APY"
                 },
                 "cancel": {
                     "title": "No",
-                    "true": "No, I’ll keep earning 5% APY",
+                    "true": "No, I’ll keep earning 4% APY",
                     "false": "No, I’ll stick with the insurance"
                 }
             }
@@ -1696,6 +1705,7 @@
         "blog": "Blog",
         "accountActivities": "Account Activity",
         "memberShip": "Membership",
+        "supportCenter": "Support Center",
         "login": {
             "popupTitle": "Welcome to Constant",
             "title": "Login to your account",
@@ -2268,7 +2278,9 @@
             "transferSuccessful": "Your transfer was completed successfully",
             "transferConfirm": "We've already sent you a verification email, please confirm before we proceed your request.",
             "timeLimit": "Your money will arrive within ",
-            "timeLimitMunite": "2 minutes",
+            "timeLimitMunite": "minutes",
+            "timeLimit1": "24 hours",
+            "timeLimit2": "48 hours",
             "subintroTitle1": "No banks, no borders.",
             "subintroDesc1": "Constant is a digital currency, so you can send it to anyone, anywhere in the world - within minutes.",
             "subintroTitle2": "Zero fees. No transaction limits.",
@@ -2320,9 +2332,9 @@
             "transferConfirm": "We've already sent you a verification email, please confirm before we proceed your request.",
             "timeLimitInWorkingTime": "Your money will arrive within 1 hour",
             "timeLimit": "Your money will arrive within ",
-            "timeLimitMunite": "2 minutes",
+            "timeLimitMunite": "minutes",
             "timeLimit1": "24 hours",
-            "timeLimit2": "36 hours",
+            "timeLimit2": "48 hours",
             "timeLimit3": "36 ~ 72 hours",
             "subintroTitle1": "No banks, no borders.",
             "subintroDesc1": "Constant is a digital currency, so you can send it to anyone, anywhere in the world - within minutes.",
@@ -2383,6 +2395,7 @@
                 "maxRateTooltip": "This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.",
                 "minTermTooltip": "This is the minimum amount of time you want to borrow.",
                 "caption": "Crypto-backed loan",
+                "captionPRV": "Get the best loan rate in the market",
                 "buttonText": "Borrow cash",
                 "month": "{period}-month",
                 "months": "{period}-months",
@@ -2398,8 +2411,8 @@
                 "collateralNoteMatchedFee": "Fee: 1%",
                 "collateralNoteTotal": "Total loan received: {total} {currency}",
                 "collateralNoteDGXExtraFees": "Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.",
-                "usingStaking": "Pay less {discount}% on your loan through staking",
-                "usingStakingMobile": "Pay less {discount}% with staking",
+                "usingStaking": "Get {discount}% off your interest rate by staking collateral",
+                "usingStakingMobile": "Get {discount}% off with staking",
                 "usingStakingDesc": "Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.",
                 "stakingMinAmount": "stake amount must be great than {minVal} {currency}",
                 "collateralNoteMatch": "Estimated time to match: {hours} hours",
@@ -2472,6 +2485,7 @@
                 "matchingFeeValue": "1% of loan amount",
                 "cryptoAddress": "{currency} address:",
                 "backOrderBook": "Back",
+                "backAccount": "Done",
                 "bitgo": {
                     "title": "Secured by BitGo",
                     "content": "You’re sending your collateral to BitGo, a qualified digital asset custodian. Your collateral will be securely stored inside a BitGo cold wallet that’s insured to $100M. So no matter what happens to Constant, your collateral is secure."
@@ -2707,6 +2721,56 @@
                 "submit": "Gửi",
                 "registerSuccess": "Đăng ký thành công",
                 "regiserFail": "Đăng ký thất bại"
+            }
+        },
+        "prvLoan": {
+            "title": "Unlock the value of your crypto.",
+            "subTitle": "<h2>Borrow against PRV for {rate}% APR.</h2> \n                <h2>Get cash without selling up.</h2>\n                <h2>It pays to stay private.</h2>\n                <h6 style=\"margin-top: 6px;\">Borrow against PRV for as little as {rate}% APR. Your collateral is securely escrowed and automatically returned when you repay. \n                Free withdrawals in cash, stablecoins, and private stablecoins.</h6>\n        ",
+            "intro": {
+                "crypto": "Fully secured, fully backed. Your collateral is securely escrowed and returned when you repay.",
+                "desc": {
+                    "1": "Secure escrow",
+                    "2": "No credit checks",
+                    "3": "Repay anytime"
+                }
+            },
+            "what": {
+                "title": "Why borrow with us?",
+                "whatCaption0": "The best rates and terms",
+                "whatCaption1": "Secure escrow",
+                "whatCaption2": "Free withdrawals",
+                "whatCaption3": "24/7 customer support",
+                "whatDesc0": "\n          <p>Enjoy the lowest interest rate in and the most generous Loan-to-Value ratio (66%) in the market. </p>\n        ",
+                "whatDesc1": "\n          <p>Your PRV is securely stored inside a password-protected wallet hosted on a dedicated server. </p>\n        ",
+                "whatDesc2": "\n          <p>Withdraw your loan in PRV, stablecoins, or private stablecoins (e.g. pUSDT) absolutely free.</p>\n        ",
+                "whatDesc3": "\n          <p>Enjoy round-the-clock customer support from our teams in the US, Europe, and Asia.</p>\n        "
+            },
+            "howItWorks": {
+                "blockTitle": "How it works",
+                "title1": "Create your borrow order",
+                "desc1": "Choose how much you want to borrow and for how long. The interest rate is 6% fixed.",
+                "title2": "Wait for approval",
+                "desc2": "Constant, as the investor, will review your loan details and match your loan.",
+                "title3": "Get cash to spend",
+                "desc3": "Once approved, you’ll receive your loan in your account. You can then withdraw your loan in fiat or stablecoins."
+            },
+            "faqs": {
+                "question1": "Do you check my credit score?",
+                "answer1": "No. Your PRV secures the loan, so we don’t need to run a credit check. If you default, we sell the PRV to repay the loan and will give you any difference.",
+                "question2": "How do you protect my collateral?",
+                "answer2": "We are looking into non-custodial escrow services, but for the time being, your PRV is stored in a combination of hot and cold wallets. Our hot wallets are password-protected and hosted on a dedicated server to which only our CEO and CTO have access. ",
+                "question3": "What happens if I don’t repay?",
+                "answer3": "If you don’t repay, we’ll sell your PRV to settle the debt. We’ll give you the difference if there’s anything left over.",
+                "question4": "What happens if my PRV falls in value?",
+                "answer4": "If your PRV falls to 110% of its original value (when you took out the loan), we sell it to settle the debt.",
+                "question5": "Can I repay early?",
+                "answer5": "If you'd like to pay back your loan before 75% of the term is up, that's absolutely fine. \n        You pay interest for the days you are in possession of the loan, and just 50% of the original interest rate for the remaining days of the term.\n        <br/>\n        If you'd like to pay back your loan after 75% of the term is up and claim back your collateral, that's also fine, but the interest due on that loan is the full percentage for the entire term.",
+                "question6": "Can I recall excess collateral if the value increases?",
+                "answer6": "We’ll deduct your repayment directly from your Constant account balance. Adding funds is easy. You can do one or a combination of the following:\n        <br/>1) Transfer USD to one of our US bank accounts\n        <br/>2) Send CONST to your Constant Wallet\n        <br/>Or send any one of our supported stablecoins:\n        <br/>USDT/USDC/TUSD/GUSD/PAX/USDS\n        <br/>You can also repay using your collateral balance.\n        <br/>Your balance will update when funds have been received in your Constant account.",
+                "question7": "What happens if I repay late?",
+                "answer7": "The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due.",
+                "question8": "Where can I get PRV?",
+                "answer8": "You can buy PRV directly within the Incognito app (in pDEX). Or, you can convert your Constant balance to PRV by selecting PRV from the dropdown box on our crypto withdrawal page."
             }
         },
         "proLending": {
@@ -3504,7 +3568,7 @@
         "banner": {
             "title": "Like your bank, but better.",
             "title1": "\n        <h1>The world’s first <span class=\"darkorange4\">fully secured</span> peer-to-peer lending platform.</h1>\n      ",
-            "subTitle": "Your investments are fully backed by borrower collateral and smart contracts. Unmatched portions earn an automatic 5% APY, and can be withdrawn anytime.",
+            "subTitle": "Your investments are fully backed by borrower collateral and smart contracts. Unmatched portions earn an automatic 4% APY, and can be withdrawn anytime.",
             "cta": "Open an account",
             "ctaDesc": "\n        It’s free to open an account. Available locations: World.",
             "invest": {
@@ -3832,7 +3896,7 @@
             "form": {
                 "gotoVerifyKyc": "Go to verify now",
                 "text1": "Set your own lending terms",
-                "text2": "Invest at the current market rate of 9.00% and find a match instantly, or increase your rate and wait for a matching order.",
+                "text2": "Invest at the current market rate of 8.00% and find a match instantly, or increase your rate and wait for a matching order.",
                 "text3": "We’re giving you a trial investment of $1000. All you have to do is choose your rate, and we’ll find you a match. When the trial is up, we take the $1000 back, but the interest is yours to keep.",
                 "text4": "\n          <h5>You're almost done.</h5>\n          <p>For your security, we'll need you to verify your ID before using Constant.</p>\n        ",
                 "text5": "Free trial",
@@ -4129,7 +4193,7 @@
     },
     "getPrices": {
         "title": "Pricing and Service times",
-        "desc": "\n    <p class=\"bold\">GET 3x INTEREST FOR EACH DAY YOUR TRANSACTION IS DELAYED.</p>\n    <p class=\"bold\">All times shown below are maximum estimates. In all cases, the team strives for ASAP.</p>\n    <p class=\"bold\">All delay compensation will be credited directly into your Constant balance.</p>\n    <p class=\"bold\">While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</p>\n    ",
+        "desc": "\n    <p class=\"bold\">GET 3x INTEREST FOR EACH DAY YOUR STABLECOIN WITHDRAWALS IS DELAYED.</p>\n    <p class=\"bold\">All times shown below are maximum estimates. In all cases, the team strives for ASAP.</p>\n    <p class=\"bold\">All delay compensation will be credited directly into your Constant balance.</p>\n    <p class=\"bold\">While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</p>\n    ",
         "collateralIssue": "\n    *About collateral issue, please ping <a href=\"https://t.me/andy_9210\" className=\"underline bold\" target=\"_blank\"><strong>@andy_9210</strong></a> on telegram to get direct support.\n    ",
         "withdrawCryptoNote": "\n    <p>*Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually. The maximum waiting time is 24 hours.</p>\n    <p>*Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>\n    ",
         "withdrawCollateralNote": "\n    <p>*About collateral issue, please ping <a href=\"https://t.me/andy_9210\" className=\"underline bold\" target=\"_blank\"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>\n    ",
@@ -4142,7 +4206,7 @@
             "head4": "Fee"
         },
         "depositCrypto": {
-            "head1": "Crypto",
+            "head1": "Stablecoins",
             "head2": "Business hours (9am-6pm GMT +7, Mon-Fri)",
             "head3": "Outside business hours",
             "head4": "Fee"
@@ -4160,7 +4224,7 @@
             "head4": "Fee"
         },
         "withdrawCrypto": {
-            "head1": "Crypto withdrawal",
+            "head1": "Stablecoin withdrawal",
             "head2": "Business hours (9am-6pm GMT +7, Mon-Fri)",
             "head3": "Outside business hours",
             "head4": "Fee"
@@ -4168,7 +4232,7 @@
         "withdrawCollateral": {
             "head1": "Collateral withdrawal",
             "head2": "Business hours (9am-6pm GMT +7, Mon-Fri)",
-            "head3": "Business hours (9am-6pm CET, Mon-Fri)",
+            "head3": "Outside business hours",
             "head4": "Fee"
         },
         "matchingFee": {
@@ -4324,8 +4388,8 @@
                 "collateralNoteFee": "Fee: {fee} {currency} (1%)",
                 "collateralNoteMatchedFee": "Fee: 1%",
                 "collateralNoteTotal": "Total loan received: {total} {currency}",
-                "usingStaking": "Pay less {discount}% on your loan through staking",
-                "usingStakingMobile": "Pay less {discount}% with staking",
+                "usingStaking": "Get {discount}% off your interest rate by staking collateral",
+                "usingStakingMobile": "Get {discount}% off with staking",
                 "usingStakingDesc": "Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.",
                 "stakingMinAmount": "stake amount must be great than {minVal} {currency}"
             },
@@ -4343,9 +4407,9 @@
     "deposit1": {
         "faqs": {
             "question1": "What is Flex?",
-            "answer1": "Flex is a deposit account that earns you 5% APY through automatic lending. When you deposit money into Flex, it goes into a liquidity pool managed by Compound Finance. Borrowers who’ve put up collateral can then secure loans from the pool in return for interest – and we pay that interest to you. Since your deposits go to a pool rather than individual borrowers, you can withdraw or deposit anytime, as often as you like, and without any fees. ",
-            "question2": "Why 5% APY?",
-            "answer2": "Compound Finance uses a blockchain protocol that intelligently manages the lending pool. It also sets interest rates according to supply and demand. At the moment, the rate is fixed at 5% APY. In the future, it could be higher or lower depending on activity in Compound’s lending market.",
+            "answer1": "Flex is a deposit account that earns you 4% APY through automatic lending. When you deposit money into Flex, it goes into a liquidity pool managed by Compound Finance. Borrowers who’ve put up collateral can then secure loans from the pool in return for interest – and we pay that interest to you. Since your deposits go to a pool rather than individual borrowers, you can withdraw or deposit anytime, as often as you like, and without any fees. ",
+            "question2": "Why 4% APY?",
+            "answer2": "Compound Finance uses a blockchain protocol that intelligently manages the lending pool. It also sets interest rates according to supply and demand. At the moment, the rate is fixed at 4% APY. In the future, it could be higher or lower depending on activity in Compound’s lending market.",
             "question3": "What is Compound Finance?",
             "answer3": "Compound Finance is a technology that intelligently manages a lending pool of over $150 million in assets (as of September 2019). Flex interfaces with this technology through an API that allows you to withdraw your deposits and earned interest at any time. <br/>Compound Finance lends in a similar way to banks: your deposits go in and are lent to borrowers in exchange for interest and collateral. But since Compound Finance is a technology, there is no need for branches or staff, so you enjoy a much better interest rate!<br> <a href=\"https://compound.finance/\">Learn more about Compound Finance.</a>",
             "question4": "Do you have a referral program for Flex?",
@@ -4361,7 +4425,7 @@
             "question9": "Can I earn interest while waiting for an investment order to match?",
             "answer9": "No, your funds are set aside while waiting for a match so won't earn interest on Flex. If you decide to cancel the order, your funds will return to earning interest in Flex.",
             "question10": "Will the interest rate change?",
-            "answer10": "The interest rate depends on supply and demand in Compound's lending market. Sometimes it's higher, sometimes it's lower, but for the time being we've fixed this at 5% APY.",
+            "answer10": "The interest rate depends on supply and demand in Compound's lending market. Sometimes it's higher, sometimes it's lower, but for the time being we've fixed this at 4% APY.",
             "question11": "Are there any fees?",
             "answer11": "No – all deposits and withdrawals on Flex are free.",
             "question12": "How does Constant make money?",
@@ -4494,7 +4558,8 @@
         "signout": "Sign out",
         "goBack": "Go back",
         "aboutYou": "About You",
-        "accountActivity": "Account Activity"
+        "accountActivity": "Account Activity",
+        "supportCenter": "Support Center"
     },
     "airdrop": {
         "endedTitle": "The Constant STARdrop campaign has now ended (October 24 2019, 10:00 AM GMT+7). We’ve reached the limit of 10,000 STAR, and thank you all for your support.",
@@ -4540,12 +4605,12 @@
         "invest": {
             "title": "Invest in fully secured loans",
             "keyword": "constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance",
-            "description": "P2P lending built on P2P technology. Enjoy up to 9% returns on your investments. All lending is backed by borrower collateral, smart contracts, and insurance. No fees. Free withdrawals"
+            "description": "P2P lending built on P2P technology. Enjoy up to 8% returns on your investments. All lending is backed by borrower collateral, smart contracts, and insurance. No fees. Free withdrawals"
         },
         "borrow": {
             "title": "Borrow against 60+ crypto assets",
             "keyword": "bitcoin loan, ethereum, margin trading, margin borrowing, p2p lending, cryptocurrency, constant project, constant p2p",
-            "description": "Get a loan for as low as 9% APR. Your crypto assets are securely escrowed and returned to you when you repay. No credit checks, no paperwork. Get the money you need without selling up"
+            "description": "Get a loan for as low as 8% APR. Your crypto assets are securely escrowed and returned to you when you repay. No credit checks, no paperwork. Get the money you need without selling up"
         },
         "proLending": {
             "title": "Lend money with best rate in the market, secured by collateral",
@@ -4555,7 +4620,7 @@
         "flex": {
             "title": "Enjoy 50x better interest than a savings account",
             "keyword": "constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance, passive income, saving account, online saving platform",
-            "description": "Join our Flex lending pool to earn 5% APY on your investments. All lending is protected by collateral, and interest is compounded and paid every second. Withdraw anytime for free"
+            "description": "Join our Flex lending pool to earn 4% APY on your investments. All lending is protected by collateral, and interest is compounded and paid every second. Withdraw anytime for free"
         },
         "withdraw": {
             "title": "Secured peer-to-peer lending platform for cryptocurrency bitcoin loan",
@@ -4787,9 +4852,25 @@
         "pendingUnStaking": "Un-staking amount, During un-stake time the pending transaction amount is not available.",
         "action": "Action",
         "withdraw": "Withdraw",
-        "withdrawReward": "Withdraw",
+        "withdrawReward": "Withdraw Reward",
         "deposit": "Deposit",
         "staking": "Stake",
+        "autoStake": "Auto-Stake",
+        "autoStakeDesc": "Auto-stake automatically adds staking rewards above {amount} {currency} back into the staking pool. Enable this if you want to earn even more interest on your {currency}.",
+        "autoStakeConfirm": {
+            "true": "Auto-staking enabled. Once you’ve earned at least {amount} {currency}, auto-stake will transfer your rewards to the staking pool so you earn even more interest.",
+            "false": "Are you sure you want to turn off auto stake?",
+            "confirm": "Confirm",
+            "cancel": "Cancel",
+            "autoStakeSuccess": {
+                "true": "Turn auto stake on successfully",
+                "false": "Turn auto stake off successfully"
+            },
+            "autoStakeFailed": {
+                "true": "Turn auto stake on failed",
+                "false": "Turn auto stake off failed"
+            }
+        },
         "unStaking": "Unstake",
         "depositCollateralTitle": "Deposit Collateral",
         "hideSmallBalance": "Hide Small Balances",
@@ -4838,6 +4919,11 @@
             "headLine": "You invest<br />or borrow",
             "desc": "\n      <p>Each point expires after 180 days.</p>\n      <p>Once you invest or borrow the minimum amount for membership, rewards continue until your points expire.</p>\n      <p>To keep your benefits, simply invest or borrow again to top up your points.</p>\n      ",
             "details": "For every dollar you invest or borrow, you earn 1 membership point. Each point expires after 180 days.  \n        Once you invest or borrow the minimum amount for membership, rewards continue until your points expire.  \n        To keep your benefits, simply invest or borrow again to top up your points.",
+            "levelInfo": {
+                "title": "{level} Member",
+                "point": "{point} points",
+                "desc": "You need"
+            },
             "level1": {
                 "title": "Gold Member",
                 "point": "(25,000 points)",
@@ -4851,7 +4937,7 @@
             "level3": {
                 "title": "Diamond Member",
                 "point": "(100,000 points)",
-                "desc": "For every dollar you invest or borrow, you earn 1 membership point. \n          Each point expires after 180 days. Once you invest or borrow the minimum amount for membership, rewards continue until your points expire.\n          To keep your benefits, simply invest or borrow again to top up your points."
+                "desc": ""
             }
         },
         "intro": {
@@ -4860,19 +4946,30 @@
             "howItWork": "How it works",
             "yourMember": "Your membership"
         },
+        "whatYouHad": "Your membership activity",
+        "whatYouHadDesc": "Your investment and borrowing activity for the past six months. Here you can see how much you need to invest or borrow to qualify for membership rewards.",
+        "whatYouHadDone": "{type} ${total} in {date}.",
+        "membershipPoints": "Your Membership Points",
+        "membershipPointsDesc": "Your total active membership points. You get 1 point for every dollar you invest or borrow. Points expire 180 days from the date you earn them, but you can top them up with new orders. ",
+        "tierProgress": "Don’t lose your benefits",
+        "tierProgressDesc": "Earn {points} points by {date} to maintain {level} membership",
         "caption": "Membership",
+        "pointExpiredDate": "{value} points will expired on {date}",
         "expiredDate": "Your {value} points will expired in {date}",
         "remaining": "{type} ${value} in {date} days",
         "borrow": "Borrow",
         "invest": "Invest",
+        "borrowed": "Borrowed",
+        "invested": "Invested",
         "investOrBorrow": "Invest or Borrow",
         "or": "Or",
         "keepLevel": "{type} ${value} to keep your level",
         "getLevelDate": "From {date}",
         "title": {
-            "level1": "Gold",
-            "level2": "Platinum",
-            "level3": "Diamond"
+            "level0": "Member",
+            "level1": "Gold Member",
+            "level2": "Platinum Member",
+            "level3": "Diamond Member"
         },
         "get": {
             "level1": "Get 100 CONST",
@@ -4902,9 +4999,9 @@
         },
         "memberShipLevel": {
             "level0": "Member",
-            "level1": "Gold",
-            "level2": "Platinum",
-            "level3": "Diamond"
+            "level1": "Gold Member",
+            "level2": "Platinum Member",
+            "level3": "Diamond Member"
         },
         "faqs": {
             "1": {
@@ -5047,6 +5144,41 @@
                 "desc": "Great software i have ever experienced. Customer service is awesome, they are willing to anwer all my questions and assist me much. 5 star for My constant",
                 "date": "Dec 4, 2019",
                 "auth": "Daisy Daisy"
+            },
+            "15": {
+                "star": "5",
+                "title": "Excellent customer service and product!!",
+                "desc": "Their customer service is excellent! I had the pleasure of working with Andy and Claire (Both from Telegram) and they were there for every step of the process. When I called their number to ask a few more questions, again I was met with excellent customer service. I definitely recommend my constant to anybody looking for a loan by using their cryptocurrency. I believe they have a section where you can also invest and they’ll give you a certain percentage back, but I have only used the loan part. Again, thank you for everything!",
+                "date": "Dec 4, 2019",
+                "auth": "Fernando Sarmiento"
+            },
+            "16": {
+                "star": "5",
+                "title": "Great service",
+                "desc": "I have been using Constant for the past few months, and their customer service is always helpful. Any issues they will always respond fast! I plan on using them for a long time to come.",
+                "date": "Dec 13, 2019",
+                "auth": "Karek"
+            },
+            "17": {
+                "star": "5",
+                "title": "Great solution and customer service",
+                "desc": "Great solution, was really awesome to be able to borrow against my Wanchain! Lots of great features on the site, the staff on telegram have been very helpful in guiding me and providing me usability tips.",
+                "date": "Dec 13, 2019",
+                "auth": "James Mckenzie"
+            },
+            "18": {
+                "star": "5",
+                "title": "I’m just really surprised they actually…",
+                "desc": "I’m just really surprised they actually respond to emails very quickly. There are lots of companies that don’t Weather it is banking purchases or investing. I understand verifying new account but they contact me the same day.",
+                "date": "Dec 19, 2019",
+                "auth": "John"
+            },
+            "19": {
+                "star": "5",
+                "title": "Great platform and customer support",
+                "desc": "Easy to use, great customer support and responsive to request. I am looking forward to making Constant a central part of my investment strategy.",
+                "date": "Jan 7, 2020",
+                "auth": "Corey C."
             }
         }
     },
@@ -5107,6 +5239,12 @@
             "object_type": "Type",
             "object_amount": "Amount",
             "created_at": "Created at"
+        }
+    },
+    "borrowPrv": {
+        "form": {
+            "maxRate": "Your interest rate",
+            "maxRateTooltip": "This is the annual percentage rate (APR) you'll pay on your loan."
         }
     }
 }

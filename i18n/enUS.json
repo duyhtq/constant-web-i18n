@@ -348,7 +348,7 @@
             "inValidWalletAddress": "Receive address invalid",
             "": "Opps! Something went wrong, please try again",
             "loginFailure": "Please make sure your email and password are correct.",
-            "stakingRequireMinTerm": "Staking loan is required min term"
+            "stakingRequireMinTerm": "Since you staked your collateral to reduce the interest on your loan, you can’t un-stake until your loan matures."
         },
         "withdrawGreaterThan": "The minimum withdrawal amount is {min}",
         "withdrawLessThanOrEqual": "The maximum withdrawal amount is {max}. Please try other available methods.",
@@ -2327,7 +2327,7 @@
             "timeLimit": "Your money will arrive within ",
             "timeLimitMunite": "minutes",
             "timeLimit1": "24 hours",
-            "timeLimit2": "36 hours",
+            "timeLimit2": "48 hours",
             "timeLimit3": "36 ~ 72 hours",
             "subintroTitle1": "No banks, no borders.",
             "subintroDesc1": "Constant is a digital currency, so you can send it to anyone, anywhere in the world - within minutes.",
@@ -2373,7 +2373,7 @@
                 "answer10": "The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due."
             },
             "title": "Borrow the way you want",
-            "subTitle": "\n<h2>Set your own rates.</h2>\n<h2>Borrow against 60+ cryptocurrencies.</h2>\n<h2>Get cash for crypto without needing to sell.</h2>\n<h6>Get the funds you need at rates you’re willing to pay. Your collateral is securely escrowed and is automatically returned to you when you repay. Free withdrawals in cash or stablecoins. </h6>",
+            "subTitle": "\n<h2>Set your own rates.</h2>\n<h2>Borrow against 60+ cryptocurrencies.</h2>\n<h2>Get cash for crypto without needing to sell.</h2>\n<h6 style=\"margin-top: 6px\">Get the funds you need at rates you’re willing to pay. Your collateral is securely escrowed and is automatically returned to you when you repay. Free withdrawals in cash or stablecoins. </h6>",
             "intro": {
                 "desc": {
                     "1": "Secure escrow",
@@ -2403,8 +2403,8 @@
                 "collateralNoteMatchedFee": "Fee: 1%",
                 "collateralNoteTotal": "You will receive: {total} {currency}",
                 "collateralNoteDGXExtraFees": "Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.",
-                "usingStaking": "Pay less {discount}% on your loan through staking",
-                "usingStakingMobile": "Pay less {discount}% with staking",
+                "usingStaking": "Get {discount}% off your interest rate by staking collateral",
+                "usingStakingMobile": "Get {discount}% off with staking",
                 "usingStakingDesc": "Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.",
                 "stakingMinAmount": "The staking amount must be greater than {minVal} {currency}",
                 "collateralNoteMatch": "Estimated time to match: {hours} hours",
@@ -3196,7 +3196,7 @@
             "sendFee": "Send fee: {fee} {currency}",
             "fiatAmountResultLabel": "According to the markets today, you’ll receive: {fiatAmount} {fiatCurrency}",
             "explain": "* The maximum you can send is {amountExcludeFee} {currency}, so you have enough to cover the transfer fee.",
-            "explainNoFee": "* The maximum amount you can withdraw is {amountExcludeFee}{currency}."
+            "explainNoFee": "* The maximum amount you can withdraw is {amountExcludeFee} {currency}."
         },
         "paymentMethod": "Payment method",
         "email": {
@@ -3827,7 +3827,7 @@
     "home1": {
         "lendingSection": {
             "intro": {
-                "content": "\n<h6>Invest the way you want</h6>\n<h2>Set your own rates.</h2>\n <h2>No minimum capital.</h2>\n <h2>Invest only in secured loans.</h2>\n <br />\n <h6>\n Your investments are fully backed by borrower collateral. Unmatched portions earn an automatic 4% APY, and can be withdrawn anytime.\n </h6>",
+                "content": "\n<h6>Invest the way you want</h6>\n<h2>Set your own rates.</h2>\n <h2>Invest from $50.</h2>\n <h2>Invest only in secured loans.</h2>\n <br />\n <h6>\n Your investments are fully backed by borrower collateral. Unmatched portions earn an automatic 4% APY, and can be withdrawn anytime.\n </h6>",
                 "desc": {
                     "1": "Fully secured by collateral",
                     "2": "Your own rates and terms",
@@ -4329,8 +4329,8 @@
                 "collateralNoteFee": "Fee: {fee} {currency} (1%)",
                 "collateralNoteMatchedFee": "Fee: 1%",
                 "collateralNoteTotal": "Total loan received: {total} {currency}",
-                "usingStaking": "Pay less {discount}% on your loan through staking",
-                "usingStakingMobile": "Pay less {discount}% with staking",
+                "usingStaking": "Get {discount}% off your interest rate by staking collateral",
+                "usingStakingMobile": "Get {discount}% off with staking",
                 "usingStakingDesc": "Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.",
                 "stakingMinAmount": "The staking amount must be greater than {minVal} {currency}"
             },
@@ -4546,12 +4546,12 @@
         "invest": {
             "title": "Invest in fully secured loans",
             "keyword": "constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance",
-            "description": "P2P lending built on P2P technology. Enjoy up to 9% returns on your investments. All lending is backed by borrower collateral, smart contracts, and insurance. No fees. Free withdrawals"
+            "description": "P2P lending built on P2P technology. Enjoy up to 8% returns on your investments. All lending is backed by borrower collateral, smart contracts, and insurance. No fees. Free withdrawals"
         },
         "borrow": {
             "title": "Borrow against 60+ crypto assets",
             "keyword": "bitcoin loan, ethereum, margin trading, margin borrowing, p2p lending, cryptocurrency, constant project, constant p2p",
-            "description": "Get a loan for as low as 9% APR. Your crypto assets are securely escrowed and returned to you when you repay. No credit checks, no paperwork. Get the money you need without selling up"
+            "description": "Get a loan for as low as 8% APR. Your crypto assets are securely escrowed and returned to you when you repay. No credit checks, no paperwork. Get the money you need without selling up"
         },
         "proLending": {
             "title": "Lend money with best rate in the market, secured by collateral",
@@ -4857,7 +4857,7 @@
             "level3": {
                 "title": "Diamond Member",
                 "point": "(100,000 points)",
-                "desc": "For every dollar you invest or borrow, you earn 1 membership point. \n          Each point expires after 180 days. Once you invest or borrow the minimum amount for membership, rewards continue until your points expire.\n          To keep your benefits, simply invest or borrow again to top up your points."
+                "desc": ""
             }
         },
         "intro": {
@@ -4876,9 +4876,9 @@
         "keepLevel": "{type} ${value} to keep your level",
         "getLevelDate": "From {date}",
         "title": {
-            "level1": "Gold",
-            "level2": "Platinum",
-            "level3": "Diamond"
+            "level1": "Gold Member",
+            "level2": "Platinum Member",
+            "level3": "Diamond Member"
         },
         "get": {
             "level1": "Get 100 CONST",
@@ -4908,9 +4908,9 @@
         },
         "memberShipLevel": {
             "level0": "Member",
-            "level1": "Gold",
-            "level2": "Platinum",
-            "level3": "Diamond"
+            "level1": "Gold Member",
+            "level2": "Platinum Member",
+            "level3": "Diamond Member"
         },
         "faqs": {
             "1": {

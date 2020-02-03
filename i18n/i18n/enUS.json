@@ -4991,9 +4991,9 @@
         "getLevelDate": "From {date}",
         "title": {
             "level0": "Member",
-            "level1": "Gold Member",
-            "level2": "Platinum Member",
-            "level3": "Diamond Member"
+            "level1": "Gold",
+            "level2": "Platinum",
+            "level3": "Diamond"
         },
         "get": {
             "level1": "Get 100 CONST",
@@ -5023,9 +5023,9 @@
         },
         "memberShipLevel": {
             "level0": "Member",
-            "level1": "Gold Member",
-            "level2": "Platinum Member",
-            "level3": "Diamond Member"
+            "level1": "Gold",
+            "level2": "Platinum",
+            "level3": "Diamond"
         },
         "faqs": {
             "1": {

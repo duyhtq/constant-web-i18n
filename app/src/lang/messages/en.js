@@ -146,6 +146,7 @@ export default {
     AMLPolicy: 'AML Policy',
     membership: 'Membership',
     kycGuidelines: 'KYC guidelines',
+    borrowerPRV: 'Crypto Incognito Loans',
     // facebookLink: 'https://www.facebook.com/const.money',
     // mediumLink: 'https://medium.com/@constantmoney',
     contactUs: 'Contact us',
@@ -155,18 +156,22 @@ export default {
       us: {
         title: 'US: ',
         phone: '+1 844 201 7242',
+        time: '(9am - 5pm PST, Mon - Fri)'
       },
       hk: {
         title: 'Hong Kong: ',
         phone: '+85 258 01 01 68',
+        time: ''
       },
       vn: {
         title: 'Viet Nam: ',
         phone: '+84 34 362 8061',
+        time: ''
       },
       malta: {
         title: 'Malta: ',
         phone: '+356 3550 5252',
+        time: ''
       },
     },
     social: {
@@ -293,11 +298,16 @@ export default {
       },
       investStaking: {
         title: 'Crypto Staking',
-        desc: '5%-20% APY. No minimums. Withdraw anytime.',
+        desc: '6%-50% APR. Low minimums. Withdraw anytime.',
+        descHotFix: '6%-50% APR. Low minimums. Withdraw anytime.',
       },
       borrowFiat: {
         title: 'Crypto-backed Loans',
         desc: 'Your rates. Your terms. No credit checks.',
+      },
+      borrowPRV    : {
+        title: 'Crypto Incognito Loans',
+        desc: 'Borrow against PRV from 6% APR. Secure escrow. No credit checks',
       }
     }
   },
@@ -365,7 +375,7 @@ export default {
       inValidWalletAddress: 'Receive address invalid',
       undefined: 'Opps! Something went wrong, please try again',
       loginFailure: 'Please make sure your email and password are correct.',
-      stakingRequireMinTerm: 'Staking loan is required min term'
+      stakingRequireMinTerm: 'Since you staked your collateral to reduce the interest on your loan, you can’t un-stake until your loan matures.'
     },
     withdrawGreaterThan: 'The minimum withdrawal amount is {min}',
     withdrawLessThanOrEqual: 'The maximum withdrawal amount is {max}',
@@ -2757,7 +2767,9 @@ export default {
       transferSuccessful: 'Your transfer was completed successfully',
       transferConfirm: `We've already sent you a verification email, please confirm before we proceed your request.`,
       timeLimit: 'Your money will arrive within ',
-      timeLimitMunite: '2 minutes',
+      timeLimitMunite: 'minutes',
+      timeLimit1: '24 hours',
+      timeLimit2: '48 hours',
       subintroTitle1: 'No banks, no borders.',
       subintroDesc1:
         'Constant is a digital currency, so you can send it to anyone, anywhere in the world - within minutes.',
@@ -2778,7 +2790,11 @@ export default {
           cryptoAddress: 'To address',
           email: 'To email',
           amount: 'Amount',
-          promotionAmount: 'Bonus'
+          promotionAmount: 'Bonus',
+          serviceTime: `
+          <h6 class="bold colorLight">Service time guarantee &#10004; </h6>
+          <p class="colorLight">Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>
+          `
         },
       },
       howItWorks: 'How it works',
@@ -2823,9 +2839,9 @@ export default {
       transferConfirm: `We've already sent you a verification email, please confirm before we proceed your request.`,
       timeLimitInWorkingTime: 'Your money will arrive within 1 hour',
       timeLimit: 'Your money will arrive within ',
-      timeLimitMunite: '2 minutes',
+      timeLimitMunite: 'minutes',
       timeLimit1: '24 hours',
-      timeLimit2: '36 hours',
+      timeLimit2: '48 hours',
       timeLimit3: '36 ~ 72 hours',
       subintroTitle1: 'No banks, no borders.',
       subintroDesc1:
@@ -2909,6 +2925,7 @@ export default {
         maxRateTooltip: 'This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.',
         minTermTooltip: 'This is the minimum amount of time you want to borrow.',
         caption: 'Crypto-backed loan',
+        captionPRV: 'Get the best loan rate in the market',
         buttonText: 'Borrow cash',
         month: '{period}-month',
         months: '{period}-months',
@@ -2924,11 +2941,15 @@ export default {
         collateralNoteMatchedFee: 'Fee: 1%',
         collateralNoteTotal: 'Total loan received: {total} {currency}',
         collateralNoteDGXExtraFees: 'Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.',
-        usingStaking: 'Pay less {discount}% on your loan through staking',
-        usingStakingMobile: 'Pay less {discount}% with staking',
+        usingStaking: 'Get {discount}% off your interest rate by staking collateral',
+        usingStakingMobile: 'Get {discount}% off with staking',
         usingStakingDesc: 'Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.',
         stakingMinAmount: 'stake amount must be great than {minVal} {currency}',
         collateralNoteMatch: 'Estimated time to match: {hours} hours',
+        collateralNoteMatchTime: 'The rate you entered will have a longer time of matching, according to our past data. Estimated time of matching {hours} hours {type}.',
+        collateralNoteMatchNoneTime: 'The rate you entered will have a longer time of matching, according to our past data. Estimated time of matching.',
+        collateralNoteMatchTimeMax:'maximum',
+        collateralNoteMatchTimeApprox:'approx',
         collateralNoteMatchInWorkingTime: 'Estimated time to match 1 hour',
         toolTipCollateral: `
           This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.
@@ -3105,6 +3126,7 @@ export default {
         matchingFeeValue: '1% of loan amount',
         cryptoAddress: '{currency} address:',
         backOrderBook: 'Back',
+        backAccount: 'Done',
         bitgo: {
           title: 'Secured by BitGo',
           content: 'You’re sending your collateral to BitGo, a qualified digital asset custodian. Your collateral will be securely stored inside a BitGo cold wallet that’s insured to $100M. So no matter what happens to Constant, your collateral is secure.'
@@ -3373,6 +3395,78 @@ export default {
         submit: 'Gửi',
         registerSuccess: 'Đăng ký thành công',
         regiserFail: 'Đăng ký thất bại'
+      }
+    },
+    prvLoan: {
+      title: 'Unlock the value of your crypto.',
+      subTitle: `<h2>Borrow against PRV for {rate}% APR.</h2> 
+                <h2>Get cash without selling up.</h2>
+                <h2>It pays to stay private.</h2>
+                <h6 style="margin-top: 6px;">Borrow against PRV for as little as {rate}% APR. Your collateral is securely escrowed and automatically returned when you repay. 
+                Free withdrawals in cash, stablecoins, and private stablecoins.</h6>
+        `,
+      intro: {
+        crypto: 'Fully secured, fully backed. Your collateral is securely escrowed and returned when you repay.',
+        desc: {
+          1: 'Secure escrow',
+          2: 'No credit checks',
+          3: 'Repay anytime'
+        }
+      },
+      what: {
+        title: 'Why borrow with us?',
+        whatCaption0: 'The best rates and terms',
+        whatCaption1: 'Secure escrow',
+        whatCaption2: 'Free withdrawals',
+        whatCaption3: '24/7 customer support',
+        whatDesc0: `
+          <p>Enjoy the lowest interest rate in and the most generous Loan-to-Value ratio (66%) in the market. </p>
+        `,
+        whatDesc1: `
+          <p>Your PRV is securely stored inside a password-protected wallet hosted on a dedicated server. </p>
+        `,
+        whatDesc2: `
+          <p>Withdraw your loan in PRV, stablecoins, or private stablecoins (e.g. pUSDT) absolutely free.</p>
+        `,
+        whatDesc3: `
+          <p>Enjoy round-the-clock customer support from our teams in the US, Europe, and Asia.</p>
+        `,
+      },
+      howItWorks: {
+        blockTitle: 'How it works',
+        title1: 'Create your borrow order',
+        desc1: 'Choose how much you want to borrow and for how long. The interest rate is 6% fixed.',
+        title2: 'Wait for approval',
+        desc2: 'Constant, as the investor, will review your loan details and match your loan.',
+        title3: 'Get cash to spend',
+        desc3: 'Once approved, you’ll receive your loan in your account. You can then withdraw your loan in fiat or stablecoins.',
+      },
+      faqs: {
+        question1: 'Do you check my credit score?',
+        answer1: 'No. Your PRV secures the loan, so we don’t need to run a credit check. If you default, we sell the PRV to repay the loan and will give you any difference.',
+        question2: 'How do you protect my collateral?',
+        answer2: 'We are looking into non-custodial escrow services, but for the time being, your PRV is stored in a combination of hot and cold wallets. Our hot wallets are password-protected and hosted on a dedicated server to which only our CEO and CTO have access. ',
+        question3: 'What happens if I don’t repay?',
+        answer3: 'If you don’t repay, we’ll sell your PRV to settle the debt. We’ll give you the difference if there’s anything left over.',
+        question4: 'What happens if my PRV falls in value?',
+        answer4: 'If your PRV falls to 110% of its original value (when you took out the loan), we sell it to settle the debt.',
+        question5: 'Can I repay early?',
+        answer5: `If you'd like to pay back your loan before 75% of the term is up, that's absolutely fine. 
+        You pay interest for the days you are in possession of the loan, and just 50% of the original interest rate for the remaining days of the term.
+        <br/>
+        If you'd like to pay back your loan after 75% of the term is up and claim back your collateral, that's also fine, but the interest due on that loan is the full percentage for the entire term.`,
+        question6: 'Can I recall excess collateral if the value increases?',
+        answer6: `We’ll deduct your repayment directly from your Constant account balance. Adding funds is easy. You can do one or a combination of the following:
+        <br/>1) Transfer USD to one of our US bank accounts
+        <br/>2) Send CONST to your Constant Wallet
+        <br/>Or send any one of our supported stablecoins:
+        <br/>USDT/USDC/TUSD/GUSD/PAX/USDS
+        <br/>You can also repay using your collateral balance.
+        <br/>Your balance will update when funds have been received in your Constant account.`,
+        question7: 'What happens if I repay late?',
+        answer7: 'The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due.',
+        question8: 'Where can I get PRV?',
+        answer8: 'You can buy PRV directly within the Incognito app (in pDEX). Or, you can convert your Constant balance to PRV by selecting PRV from the dropdown box on our crypto withdrawal page.',
       }
     },
     proLending: {
@@ -4996,6 +5090,7 @@ export default {
             <span class="darkorange4 bold">Want to get a borrower instantly?</span> Invest at the current market rate of 10%. Or increase your rate and wait for a matching order.
           </p>
         `,
+        text7: 'The rate you entered is higher than our market rate so it might take longer to find you a match.',
         btn1: 'Invest now',
         textLogin: 'Log in',
         textRegister: 'Sign up',
@@ -5438,17 +5533,17 @@ export default {
   getPrices: {
     title: 'Pricing and Service times',
     desc: `
-    <p class="bold">GET 3x INTEREST FOR EACH DAY YOUR STABLECOIN WITHDRAWALS IS DELAYED.</p>
     <p class="bold">All times shown below are maximum estimates. In all cases, the team strives for ASAP.</p>
-    <p class="bold">All delay compensation will be credited directly into your Constant balance.</p>
     <p class="bold">While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</p>
     `,
     collateralIssue: `
     *About collateral issue, please ping <a href="https://t.me/andy_9210" className="underline bold" target="_blank"><strong>@andy_9210</strong></a> on telegram to get direct support.
     `,
     withdrawCryptoNote: `
-    <p>*Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually. The maximum waiting time is 24 hours.</p>
+    <p>*Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually.</p>
     <p>*Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>
+    <h6 class="bold">Service time guarantee &#10004; </h6>
+    <p>Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>
     `,
     withdrawCollateralNote: `
     <p>*About collateral issue, please ping <a href="https://t.me/andy_9210" className="underline bold" target="_blank"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>
@@ -5561,6 +5656,7 @@ export default {
         ok: 'Ok',
         cancel: 'Cancel',
         withdrawFailed: 'Failed while withdrawing, please try again',
+        withdrawFailedSameAddress: 'Unable to withdraw to the same wallet address.',
         withdrawSuccess: 'Your withdrawal was completed successfully',
       }
     },
@@ -5652,8 +5748,8 @@ export default {
         collateralNoteFee: 'Fee: {fee} {currency} (1%)',
         collateralNoteMatchedFee: 'Fee: 1%',
         collateralNoteTotal: 'Total loan received: {total} {currency}',
-        usingStaking: 'Pay less {discount}% on your loan through staking',
-        usingStakingMobile: 'Pay less {discount}% with staking',
+        usingStaking: 'Get {discount}% off your interest rate by staking collateral',
+        usingStakingMobile: 'Get {discount}% off with staking',
         usingStakingDesc: 'Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.',
         stakingMinAmount: 'stake amount must be great than {minVal} {currency}',
       },
@@ -5900,12 +5996,12 @@ export default {
     invest: {
       title: 'Invest in fully secured loans',
       keyword: 'constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance',
-      description: 'P2P lending built on P2P technology. Enjoy up to 9% returns on your investments. All lending is backed by borrower collateral, smart contracts, and insurance. No fees. Free withdrawals',
+      description: 'P2P lending built on P2P technology. Enjoy up to 8% returns on your investments. All lending is backed by borrower collateral, smart contracts, and insurance. No fees. Free withdrawals',
     },
     borrow: {
       title: 'Borrow against 60+ crypto assets',
       keyword: 'bitcoin loan, ethereum, margin trading, margin borrowing, p2p lending, cryptocurrency, constant project, constant p2p',
-      description: 'Get a loan for as low as 9% APR. Your crypto assets are securely escrowed and returned to you when you repay. No credit checks, no paperwork. Get the money you need without selling up',
+      description: 'Get a loan for as low as 8% APR. Your crypto assets are securely escrowed and returned to you when you repay. No credit checks, no paperwork. Get the money you need without selling up',
     },
     proLending: {
       title: 'Lend money with best rate in the market, secured by collateral',
@@ -6132,6 +6228,18 @@ export default {
       press9: {
         name: '',
         desc: '<p>Constant works by enabling borrowers to stake liquid capital via over-collateralized crypto assets (e.g., Ether) based on an LTV ratio. Subsequently, borrowers can “cherrypick” the best deals enumerated on Constant’s interface, selecting the best interest rates that are posted independently by each lending peer. The opposite is similar for lenders, who can choose to set custom interest rates and terms, which borrowers can then decide from.</p>'
+      },
+      press10: {
+        name: '',
+        desc: '<p>Constant acts as a trading hub where borrowers and creditors pick the best deal. Moreover, the Redlands, Calif.-based venture allows users to set their own interest rates and terms -- a feature that doesn’t exist anywhere else.</p>'
+      },
+      press11: {
+        name: '',
+        desc: '<p>Constant acts as a trading hub where borrowers and creditors pick the best deal. Moreover, the Redlands, Calif.-based venture allows users to set their own interest rates and terms -- a feature that doesn’t exist anywhere else.</p>'
+      },
+      press12: {
+        name: '',
+        desc: '<p>It\'s a great service, with free deposits and withdrawals, extremely fast responding customer support and a transparent team.</p>'
       }
     },
     desc: {
@@ -6157,6 +6265,22 @@ export default {
     withdrawReward: 'Withdraw Reward',
     deposit: 'Deposit',
     staking: 'Stake',
+    autoStake: 'Auto-Stake',
+    autoStakeDesc: 'Auto-stake automatically adds staking rewards above {amount} {currency} back into the staking pool. Enable this if you want to earn even more interest on your {currency}.',
+    autoStakeConfirm: {
+      true: 'Auto-staking enabled. Once you’ve earned at least {amount} {currency}, auto-stake will transfer your rewards to the staking pool so you earn even more interest.',
+      false: 'Are you sure you want to turn off auto stake?',
+      confirm: 'Confirm',
+      cancel: 'Cancel',
+      autoStakeSuccess: {
+        true: 'Turn auto stake on successfully',
+        false: 'Turn auto stake off successfully'
+      },
+      autoStakeFailed: {
+        true: 'Turn auto stake on failed',
+        false: 'Turn auto stake off failed'
+      },
+    },
     unStaking: 'Unstake',
     depositCollateralTitle: 'Deposit Collateral',
     hideSmallBalance: 'Hide Small Balances',
@@ -6233,6 +6357,11 @@ export default {
       details: `For every dollar you invest or borrow, you earn 1 membership point. Each point expires after 180 days.  
         Once you invest or borrow the minimum amount for membership, rewards continue until your points expire.  
         To keep your benefits, simply invest or borrow again to top up your points.`,
+      levelInfo: {
+        title: '{level} Member',
+        point: '{point} points',
+        desc: 'You need'
+      },
       level1: {
         title: 'Gold Member',
         point: '(25,000 points)',
@@ -6246,9 +6375,7 @@ export default {
       level3: {
         title: 'Diamond Member',
         point: '(100,000 points)',
-        desc: `For every dollar you invest or borrow, you earn 1 membership point. 
-          Each point expires after 180 days. Once you invest or borrow the minimum amount for membership, rewards continue until your points expire.
-          To keep your benefits, simply invest or borrow again to top up your points.`
+        desc: ''
       },
     },
     intro: {
@@ -6257,19 +6384,30 @@ export default {
       howItWork: 'How it works',
       yourMember: 'Your membership'
     },
+    whatYouHad: 'Your membership activity',
+    whatYouHadDesc: 'Your investment and borrowing activity for the past six months. Here you can see how much you need to invest or borrow to qualify for membership rewards.',
+    whatYouHadDone: '{type} ${total} in {date}.',
+    membershipPoints: 'Your Membership Points',
+    membershipPointsDesc: 'Your total active membership points. You get 1 point for every dollar you invest or borrow. Points expire 180 days from the date you earn them, but you can top them up with new orders. ',
+    tierProgress: 'Don’t lose your benefits',
+    tierProgressDesc: 'Earn {points} points by {date} to maintain {level} membership',
     caption: 'Membership',
+    pointExpiredDate: '{value} points will expired on {date}',
     expiredDate: 'Your {value} points will expired in {date}',
     remaining: '{type} ${value} in {date} days',
     borrow: 'Borrow',
     invest: 'Invest',
+    borrowed: 'Borrowed',
+    invested: 'Invested',
     investOrBorrow: 'Invest or Borrow',
     or: 'Or',
     keepLevel: '{type} ${value} to keep your level',
     getLevelDate: 'From {date}',
     title: {
-      level1: 'Gold',
-      level2: 'Platinum',
-      level3: 'Diamond',
+      level0: 'Member',
+      level1: 'Gold Member',
+      level2: 'Platinum Member',
+      level3: 'Diamond Member',
     },
     get: {
       level1: 'Get 100 CONST',
@@ -6308,9 +6446,9 @@ export default {
     },
     memberShipLevel: {
       level0: 'Member',
-      level1: 'Gold',
-      level2: 'Platinum',
-      level3: 'Diamond'
+      level1: 'Gold Member',
+      level2: 'Platinum Member',
+      level3: 'Diamond Member'
     },
     faqs: {
       1: {
@@ -6492,6 +6630,41 @@ export default {
         date: 'Dec 4, 2019',
         auth: 'Daisy Daisy'
       },
+      15: {
+        star: '5',
+        title: 'Excellent customer service and product!!',
+        desc: 'Their customer service is excellent! I had the pleasure of working with Andy and Claire (Both from Telegram) and they were there for every step of the process. When I called their number to ask a few more questions, again I was met with excellent customer service. I definitely recommend my constant to anybody looking for a loan by using their cryptocurrency. I believe they have a section where you can also invest and they’ll give you a certain percentage back, but I have only used the loan part. Again, thank you for everything!',
+        date: 'Dec 4, 2019',
+        auth: 'Fernando Sarmiento'
+      },
+      16: {
+        star: '5',
+        title: 'Great service',
+        desc: 'I have been using Constant for the past few months, and their customer service is always helpful. Any issues they will always respond fast! I plan on using them for a long time to come.',
+        date: 'Dec 13, 2019',
+        auth: 'Karek'
+      },
+      17: {
+        star: '5',
+        title: 'Great solution and customer service',
+        desc: 'Great solution, was really awesome to be able to borrow against my Wanchain! Lots of great features on the site, the staff on telegram have been very helpful in guiding me and providing me usability tips.',
+        date: 'Dec 13, 2019',
+        auth: 'James Mckenzie'
+      },
+      18: {
+        star: '5',
+        title: 'I’m just really surprised they actually…',
+        desc: 'I’m just really surprised they actually respond to emails very quickly. There are lots of companies that don’t Weather it is banking purchases or investing. I understand verifying new account but they contact me the same day.',
+        date: 'Dec 19, 2019',
+        auth: 'John'
+      },
+      19: {
+        star: '5',
+        title: 'Great platform and customer support',
+        desc: 'Easy to use, great customer support and responsive to request. I am looking forward to making Constant a central part of my investment strategy.',
+        date: 'Jan 7, 2020',
+        auth: 'Corey C.'
+      },
     }
   },
   ourStory: {
@@ -6589,5 +6762,74 @@ export default {
       object_amount: 'Amount',
       created_at: 'Created at'
     }
+  },
+  borrowPrv: {
+    form: {
+      maxRate: 'Your interest rate',
+      maxRateTooltip: 'This is the annual percentage rate (APR) you\'ll pay on your loan.',
+    }
+  },
+  notification: {
+    title: 'Notifications',
+    viewAll: 'View All',
+    markAllRead: 'Mark all as read',
+    noNewData: 'No new notifications',
+    noData: 'No notifications',
+    invest: {
+      done: {
+        title: 'Your investment has matured',
+        desc: `Your investment of \${amount} matured on {date}. You earned \${interestAmount} interest on your principal, bringing your total to \${totalAmount}. Your money is in your account and ready to use.`
+      },
+      match: {
+        title: 'Your investment order matched',
+        desc: `Congrats – your investment order of \${amount} has matched! Your money is on its way to the borrower and you’ll start earning {rate}% APR immediately. To track your investment, please visit your <a href="/accounts" class="underline">Accounts page</a>.`
+      },
+      partialMatch: {
+        title: 'Your investment order partially matched',
+        desc: `Your investment order of \${amount} partially matched. We found a borrower to accept your rate and term on \${matchedAmount}, and we’ll continue trying to match the rest. In the meantime, you can track your order on your <a href="/accounts" class="underline">Accounts page</a>.`
+      },
+      partialMatchLast: {
+        title: 'Your investment order is now fully matched',
+        desc: `Your investment order of \${amount} is now fully matched. We found a borrower to accept your rate and term on the remaining \${matchedAmount}. You can track your investment on your <a href="/accounts" class="underline">Accounts page</a>.`
+      },
+    },
+    loan: {
+      done: {
+        title: 'Your loan has matured',
+        desc: `Your loan of \${amount} matured on {expiredDate}. You repaid a total of \${paidAmount}, including \${interest}. Thanks for borrowing with us!`
+      },
+      match: {
+        title: 'Your loan order matched',
+        desc: `Congrats – your loan order of \${amount} has matched! The money is in your account and ready to use. Repay before {dueDate} and we’ll return your collateral. To track your loan, please visit your <a href="/accounts" class="underline">Accounts page</a>.`
+      },
+      partialMatch: {
+        title: 'Your loan order partially matched',
+        desc: `Your loan order of \${amount} partially matched. We found a investor to accept your rate and term on \${matchedAmount}, and we’ll continue trying to match the rest. In the meantime, you can track your order on your <a href="/accounts" class="underline">Accounts page</a>.`
+      },
+      partialMatchLast: {
+        title: 'Your loan order is now fully matched',
+        desc: `Your loan order of \${amount} is now fully matched. We found a investor to accept your rate and term on the remaining \${matchedAmount}. You can track your loan on your <a href="/accounts" class="underline">Accounts page</a>.`
+      },
+      liquidate: {
+        title: 'Your collateral is nearing liquidation',
+        desc: `The value of your {crypto} collateral has fallen to {collateralPercent}% of the investor’s principal and earned interest. When it falls to {liquidationPercent}%, your collateral will be sold to repay the investor (you keep the loan and anything left over from the sale). Please <a href="/accounts" class="underline">top up</a> your collateral to avoid liquidation.`
+      },
+      promotion: {
+        membership: {
+          title: 'title',
+          desc: `desc`
+        }
+      },
+      system: {
+        summary: {
+          title: 'title',
+          desc: `desc`
+        }
+      }
+    }
+  },
+  blog: {
+    title: 'Learn & Grow',
+    subTitle: 'News, advice, and opinion from the Constant team',
   }
 };

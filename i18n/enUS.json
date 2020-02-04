@@ -258,6 +258,7 @@
         "openAnAccount": "Open an account",
         "yourSaving": "Accounts",
         "myInvestments": "My Investments",
+        "ourStory": "Our Story",
         "extraMenu": {
             "sendGroup": "Global transfers",
             "send": "Send",
@@ -2027,7 +2028,8 @@
                 "dgxFeeMsg": "(includes the 0.13% DGX transfer fee)",
                 "thankYou": "Almost there.",
                 "minuteWindow": "Please complete your transfer within 12 hours.",
-                "minuteWindowDescription": "For the sake of security, this session will time-out after 12 hours. If you need a little longer, just re-enter the amount you would like to invest when you’re ready."
+                "minuteWindowDescription": "For the sake of security, this session will time-out after 12 hours. If you need a little longer, just re-enter the amount you would like to invest when you’re ready.",
+                "minuteWindowDescriptionDGX": "Invested DGX is converted to USD. When your term ends, you can choose to withdraw in DGX at the spot price, as USD, or a supported stablecoin."
             },
             "sell": {
                 "type": "Sell",
@@ -5280,7 +5282,7 @@
         "invest": {
             "done": {
                 "title": "Your investment has matured",
-                "desc": "Your investment of ${amount} matured on {date}. You earned ${interestAmount} interest on your principal, bringing your total to ${totalAmount}. Your money is in your account and ready to use."
+                "desc": "Your investment of ${amount} matured on {expiredDate}. You earned ${interestAmount} interest on your principal, bringing your total to ${totalAmount}. Your money is in your account and ready to use."
             },
             "match": {
                 "title": "Your investment order matched",

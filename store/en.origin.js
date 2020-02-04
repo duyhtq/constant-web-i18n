@@ -258,6 +258,7 @@
         "openAnAccount": "%%%.headerBar.openAnAccount%%%",
         "yourSaving": "%%%.headerBar.yourSaving%%%",
         "myInvestments": "%%%.headerBar.myInvestments%%%",
+        "ourStory": "%%%.headerBar.ourStory%%%",
         "extraMenu": {
             "sendGroup": "%%%.headerBar.extraMenu.sendGroup%%%",
             "send": "%%%.headerBar.extraMenu.send%%%",
@@ -2027,7 +2028,8 @@
                 "dgxFeeMsg": "%%%.home.convert.buy.dgxFeeMsg%%%",
                 "thankYou": "%%%.home.convert.buy.thankYou%%%",
                 "minuteWindow": "%%%.home.convert.buy.minuteWindow%%%",
-                "minuteWindowDescription": "%%%.home.convert.buy.minuteWindowDescription%%%"
+                "minuteWindowDescription": "%%%.home.convert.buy.minuteWindowDescription%%%",
+                "minuteWindowDescriptionDGX": "%%%.home.convert.buy.minuteWindowDescriptionDGX%%%"
             },
             "sell": {
                 "type": "%%%.home.convert.sell.type%%%",

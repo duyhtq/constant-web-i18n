@@ -267,6 +267,7 @@ export default {
     openAnAccount: 'Open an account',
     yourSaving: 'Accounts',
     myInvestments: 'My Investments',
+    ourStory: 'Our Story',
     extraMenu: {
       sendGroup: 'Global transfers',
       send: 'Send',
@@ -2420,6 +2421,8 @@ export default {
         minuteWindow: '15 MINUTE WINDOW:',
         minuteWindowDescription:
           'Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled.',
+        minuteWindowDescriptionDGX:
+          'Invested DGX is converted to USD. When your term ends, you can choose to withdraw in DGX at the spot price, as USD, or a supported stablecoin.',
       },
       sell: {
         type: 'Sell',
@@ -6778,7 +6781,7 @@ export default {
     invest: {
       done: {
         title: 'Your investment has matured',
-        desc: `Your investment of \${amount} matured on {date}. You earned \${interestAmount} interest on your principal, bringing your total to \${totalAmount}. Your money is in your account and ready to use.`
+        desc: `Your investment of \${amount} matured on {expiredDate}. You earned \${interestAmount} interest on your principal, bringing your total to \${totalAmount}. Your money is in your account and ready to use.`
       },
       match: {
         title: 'Your investment order matched',

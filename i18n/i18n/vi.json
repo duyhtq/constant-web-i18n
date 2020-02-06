@@ -357,7 +357,7 @@
             "restrictedEmail": "Tên miền email không hợp lệ.",
             "prvMaxWithdraw": "Không đủ PRV",
             "inValidWalletAddress": "Địa chỉ ví không hợp lệ",
-            "undefined": "Oops… Có sự cố xảy ra, xin vui lòng thử lại.",
+            "": "Oops… Có sự cố xảy ra, xin vui lòng thử lại.",
             "loginFailure": "Email và mật khẩu không khớp.",
             "stakingRequireMinTerm": "Since you staked your collateral to reduce the interest on your loan, you can’t un-stake until your loan matures."
         },
@@ -2285,9 +2285,9 @@
             "transferSuccessful": "Giao dịch thành công",
             "transferConfirm": "We've already sent you a verification email, please confirm before we proceed your request.",
             "timeLimit": "Bạn sẽ nhận được Constant trong ",
-            "timeLimitMunite": "phút",
-            "timeLimit1": "24 Giờ",
-            "timeLimit2": "48 Giờ",
+            "timeLimitMunite": "minutes",
+            "timeLimit1": "24 hours",
+            "timeLimit2": "48 hours",
             "subintroTitle1": "Không ngân hàng, không biên giới.",
             "subintroDesc1": "Constant được phát triển dựa trên công nghệ chuỗi khối nên có thể được gửi đi tới bất cứ ai ở khắp nơi trên thế giới chỉ trong giây lát.",
             "subintroTitle2": "Miễn phí. Không giới hạn khối lượng giao dịch.",
@@ -2340,9 +2340,9 @@
             "transferConfirm": "We've already sent you a verification email, please confirm before we proceed your request.",
             "timeLimitInWorkingTime": "Bạn sẽ nhận được tiền trong 1 giờ",
             "timeLimit": "Bạn sẽ nhận được tiền trong ",
-            "timeLimitMunite": "phút",
+            "timeLimitMunite": "minutes",
             "timeLimit1": "24 Giờ",
-            "timeLimit2": "48 Giờ",
+            "timeLimit2": "48 hours",
             "timeLimit3": "36 ~ 72 Giờ",
             "subintroTitle1": "Không ngân hàng, không biên giới.",
             "subintroDesc1": "Constant là một loại tiền điện tử. Bạn có thể gửi Constant cho bất cứ ai, bất kỳ đâu trên toàn thế giới - chỉ trong vài phút",
@@ -4052,7 +4052,7 @@
             "question4": "Constant làm gì để bảo vệ khoản tiền của nhà đầu tư?",
             "answer4": "\n        <p> Chúng tôi đã thực hiện các bước quan trọng để bảo vệ không chỉ khoản đầu tư của bạn mà cả lợi nhuận của bạn.</p>\n         <p> Tất cả những người vay của chúng tôi phải đặt giá trị 150% số tiền vay làm tài sản thế chấp bằng tiền điện tử. Chúng tôi cũng đặt ngưỡng thanh lý để bảo đảm chống lại sự sụt giảm giá trị tài sản thế chấp. </p>\n         <p> Điều khoản cho vay của bạn được mã hóa thành hợp đồng thông minh Ethereum xác định nghiêm ngặt cách sử dụng tiền của bạn. Khi không cho vay, chúng tôi sẽ lưu trữ tiền của bạn trong các tài khoản ngân hàng được bảo hiểm bởi FDIC, được giám sát bởi Prime Trust.</p>\n         <p> Kết hợp với nhau, các biện pháp bảo vệ này đảm bảo rằng không có vấn đề gì xảy ra nếu người đi vay không trả nợ, nếu thị trường tiền điện tử giảm hoặc một số sự kiện không may khác xảy ra, thì tiền gốc và tiền lãi của bạn được đảm bảo.</p>",
             "question5": "Phần tiền không đầu tư trong tài khoản Constant có được bảo đảm không?",
-            "answer5": "<p> Khi không được cho vay hoặc đang chờ đợi để khớp lệnh, bạn kiếm được 5% lãi kép thông qua Flex - một tài khoản tiết kiệm cho phép rút tiền bất cứ lúc nào được cung cấp bởi Compound Finance. Bảo mật, linh hoạt và tự động, Flex giúp bạn tăng vốn trong thời gian chờ thực hiện các khoản đầu tư. Tất cả các khoản rút tiền đều miễn phí và không giới hạn.</p><p>Nếu bạn đang chờ khớp lệnh, tiền của bạn vẫn nằm trong sự giám sát của Prime Trust, một tổ chức tài chính được công nhận của Hoa Kỳ có bảo hiểm lên tới 130 triệu USD. </ P>"
+            "answer5": "<p>When not on loan or waiting for a match, you can choose to store your funds in Prime Trust, an accredited US financial institution that insures deposits up to $130M. OR earn 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p><p>If you’re waiting for a match, your money will automatically remain in the custody of Prime Trust.</p>"
         }
     },
     "payment": {

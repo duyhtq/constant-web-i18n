@@ -151,19 +151,23 @@
         "phone": {
             "us": {
                 "title": "US: ",
-                "phone": "+1 844 201 7242"
+                "phone": "+1 844 201 7242",
+                "time": "(9am - 5pm PST, Mon - Fri)"
             },
             "hk": {
                 "title": "Hong Kong: ",
-                "phone": "+85 258 01 01 68"
+                "phone": "+85 258 01 01 68",
+                "time": ""
             },
             "vn": {
                 "title": "Viet Nam: ",
-                "phone": "+84 34 362 8061"
+                "phone": "+84 34 362 8061",
+                "time": ""
             },
             "malta": {
                 "title": "Malta: ",
-                "phone": "+356 3550 5252"
+                "phone": "+356 3550 5252",
+                "time": ""
             }
         },
         "social": {
@@ -254,6 +258,7 @@
         "openAnAccount": "Open an account",
         "yourSaving": "Accounts",
         "myInvestments": "My Investments",
+        "ourStory": "Our Story",
         "extraMenu": {
             "sendGroup": "Global transfers",
             "send": "Send",
@@ -285,7 +290,8 @@
             },
             "investStaking": {
                 "title": "Crypto Staking",
-                "desc": "5%-20% APY. No minimums. Withdraw anytime."
+                "desc": "6%-50% APR. Low minimums. Withdraw anytime.",
+                "descHotFix": "6%-50% APR. Low minimums. Withdraw anytime."
             },
             "borrowFiat": {
                 "title": "Crypto-backed Loans",
@@ -2022,7 +2028,8 @@
                 "dgxFeeMsg": "(includes the 0.13% DGX transfer fee)",
                 "thankYou": "Thank you!",
                 "minuteWindow": "15 MINUTE WINDOW:",
-                "minuteWindowDescription": "Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled."
+                "minuteWindowDescription": "Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled.",
+                "minuteWindowDescriptionDGX": "Invested DGX is converted to USD. When your term ends, you can choose to withdraw in DGX at the spot price, as USD, or a supported stablecoin."
             },
             "sell": {
                 "type": "Sell",
@@ -2296,7 +2303,8 @@
                     "cryptoAddress": "To address",
                     "email": "To email",
                     "amount": "Amount",
-                    "promotionAmount": "Bonus"
+                    "promotionAmount": "Bonus",
+                    "serviceTime": "\n          <h6 class=\"bold colorLight\">Service time guarantee &#10004; </h6>\n          <p class=\"colorLight\">Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>\n          "
                 }
             },
             "howItWorks": "How it works",
@@ -2416,6 +2424,10 @@
                 "usingStakingDesc": "Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.",
                 "stakingMinAmount": "stake amount must be great than {minVal} {currency}",
                 "collateralNoteMatch": "Estimated time to match: {hours} hours",
+                "collateralNoteMatchTime": "The rate you entered will have a longer time of matching, according to our past data. Estimated time of matching {hours} hours {type}.",
+                "collateralNoteMatchNoneTime": "The rate you entered will have a longer time of matching, according to our past data. Estimated time of matching.",
+                "collateralNoteMatchTimeMax": "maximum",
+                "collateralNoteMatchTimeApprox": "approx",
                 "collateralNoteMatchInWorkingTime": "Estimated time to match 1 hour",
                 "toolTipCollateral": "\n          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.\n        ",
                 "walletAddressLabel": "Which {symbol} wallet should we return your collateral to?",
@@ -3901,6 +3913,7 @@
                 "text4": "\n          <h5>You're almost done.</h5>\n          <p>For your security, we'll need you to verify your ID before using Constant.</p>\n        ",
                 "text5": "Free trial",
                 "text6": "\n          <p>\n            <span class=\"darkorange4 bold\">Want to get a borrower instantly?</span> Invest at the current market rate of 10%. Or increase your rate and wait for a matching order.\n          </p>\n        ",
+                "text7": "The rate you entered is higher than our market rate so it might take longer to find you a match.",
                 "btn1": "Invest now",
                 "textLogin": "Log in",
                 "textRegister": "Sign up",
@@ -4193,9 +4206,9 @@
     },
     "getPrices": {
         "title": "Pricing and Service times",
-        "desc": "\n    <p class=\"bold\">GET 3x INTEREST FOR EACH DAY YOUR STABLECOIN WITHDRAWALS IS DELAYED.</p>\n    <p class=\"bold\">All times shown below are maximum estimates. In all cases, the team strives for ASAP.</p>\n    <p class=\"bold\">All delay compensation will be credited directly into your Constant balance.</p>\n    <p class=\"bold\">While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</p>\n    ",
+        "desc": "\n    <p class=\"bold\">All times shown below are maximum estimates. In all cases, the team strives for ASAP.</p>\n    <p class=\"bold\">While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</p>\n    ",
         "collateralIssue": "\n    *About collateral issue, please ping <a href=\"https://t.me/andy_9210\" className=\"underline bold\" target=\"_blank\"><strong>@andy_9210</strong></a> on telegram to get direct support.\n    ",
-        "withdrawCryptoNote": "\n    <p>*Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually. The maximum waiting time is 24 hours.</p>\n    <p>*Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>\n    ",
+        "withdrawCryptoNote": "\n    <p>*Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually.</p>\n    <p>*Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>\n    <h6 class=\"bold\">Service time guarantee &#10004; </h6>\n    <p>Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>\n    ",
         "withdrawCollateralNote": "\n    <p>*About collateral issue, please ping <a href=\"https://t.me/andy_9210\" className=\"underline bold\" target=\"_blank\"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>\n    ",
         "holidaysNote": "\n    <p>*Our service time may also be affected by public and banking holidays in the US and your local country.</p>\n    ",
         "zelleDepositDelayIssue": "\n    <p>*Possible reasons for a delay in processing your Zelle deposit</p>\n    <p> - Missing relevant information to match with your deposit order: Name, User ID, Reference...</p>\n    <p> - Varying level of processing time by the bank.</p>\n    <p> - Transfering from an account with the account holder's name different than your registered name on Constant platform.</p>\n    <p> - Lack of or incorrect deposit order created prior to depositing.</p>\n    ",
@@ -4297,6 +4310,7 @@
                 "ok": "Ok",
                 "cancel": "Cancel",
                 "withdrawFailed": "Failed while withdrawing, please try again",
+                "withdrawFailedSameAddress": "Unable to withdraw to the same wallet address.",
                 "withdrawSuccess": "Your withdrawal was completed successfully"
             }
         },
@@ -4830,6 +4844,18 @@
             "press9": {
                 "name": "",
                 "desc": "<p>Constant works by enabling borrowers to stake liquid capital via over-collateralized crypto assets (e.g., Ether) based on an LTV ratio. Subsequently, borrowers can “cherrypick” the best deals enumerated on Constant’s interface, selecting the best interest rates that are posted independently by each lending peer. The opposite is similar for lenders, who can choose to set custom interest rates and terms, which borrowers can then decide from.</p>"
+            },
+            "press10": {
+                "name": "",
+                "desc": "<p>Constant acts as a trading hub where borrowers and creditors pick the best deal. Moreover, the Redlands, Calif.-based venture allows users to set their own interest rates and terms -- a feature that doesn’t exist anywhere else.</p>"
+            },
+            "press11": {
+                "name": "",
+                "desc": "<p>Constant acts as a trading hub where borrowers and creditors pick the best deal. Moreover, the Redlands, Calif.-based venture allows users to set their own interest rates and terms -- a feature that doesn’t exist anywhere else.</p>"
+            },
+            "press12": {
+                "name": "",
+                "desc": "<p>It's a great service, with free deposits and withdrawals, extremely fast responding customer support and a transparent team.</p>"
             }
         },
         "desc": {
@@ -5246,5 +5272,68 @@
             "maxRate": "Your interest rate",
             "maxRateTooltip": "This is the annual percentage rate (APR) you'll pay on your loan."
         }
+    },
+    "notification": {
+        "title": "Notifications",
+        "viewAll": "View All",
+        "markAllRead": "Mark all as read",
+        "noNewData": "No new notifications",
+        "noData": "No notifications",
+        "invest": {
+            "done": {
+                "title": "Your investment has matured",
+                "desc": "Your investment of ${amount} matured on {expiredDate}. You earned ${interestAmount} interest on your principal, bringing your total to ${totalAmount}. Your money is in your account and ready to use."
+            },
+            "match": {
+                "title": "Your investment order matched",
+                "desc": "Congrats – your investment order of ${amount} has matched! Your money is on its way to the borrower and you’ll start earning {rate}% APR immediately. To track your investment, please visit your <a href=\"/accounts\" class=\"underline\">Accounts page</a>."
+            },
+            "partialMatch": {
+                "title": "Your investment order partially matched",
+                "desc": "Your investment order of ${amount} partially matched. We found a borrower to accept your rate and term on ${matchedAmount}, and we’ll continue trying to match the rest. In the meantime, you can track your order on your <a href=\"/accounts\" class=\"underline\">Accounts page</a>."
+            },
+            "partialMatchLast": {
+                "title": "Your investment order is now fully matched",
+                "desc": "Your investment order of ${amount} is now fully matched. We found a borrower to accept your rate and term on the remaining ${matchedAmount}. You can track your investment on your <a href=\"/accounts\" class=\"underline\">Accounts page</a>."
+            }
+        },
+        "loan": {
+            "done": {
+                "title": "Your loan has matured",
+                "desc": "Your loan of ${amount} matured on {expiredDate}. You repaid a total of ${paidAmount}, including ${interest}. Thanks for borrowing with us!"
+            },
+            "match": {
+                "title": "Your loan order matched",
+                "desc": "Congrats – your loan order of ${amount} has matched! The money is in your account and ready to use. Repay before {dueDate} and we’ll return your collateral. To track your loan, please visit your <a href=\"/accounts\" class=\"underline\">Accounts page</a>."
+            },
+            "partialMatch": {
+                "title": "Your loan order partially matched",
+                "desc": "Your loan order of ${amount} partially matched. We found a investor to accept your rate and term on ${matchedAmount}, and we’ll continue trying to match the rest. In the meantime, you can track your order on your <a href=\"/accounts\" class=\"underline\">Accounts page</a>."
+            },
+            "partialMatchLast": {
+                "title": "Your loan order is now fully matched",
+                "desc": "Your loan order of ${amount} is now fully matched. We found a investor to accept your rate and term on the remaining ${matchedAmount}. You can track your loan on your <a href=\"/accounts\" class=\"underline\">Accounts page</a>."
+            },
+            "liquidate": {
+                "title": "Your collateral is nearing liquidation",
+                "desc": "The value of your {crypto} collateral has fallen to {collateralPercent}% of the investor’s principal and earned interest. When it falls to {liquidationPercent}%, your collateral will be sold to repay the investor (you keep the loan and anything left over from the sale). Please <a href=\"/accounts\" class=\"underline\">top up</a> your collateral to avoid liquidation."
+            },
+            "promotion": {
+                "membership": {
+                    "title": "title",
+                    "desc": "desc"
+                }
+            },
+            "system": {
+                "summary": {
+                    "title": "title",
+                    "desc": "desc"
+                }
+            }
+        }
+    },
+    "blog": {
+        "title": "Learn & Grow",
+        "subTitle": "News, advice, and opinion from the Constant team"
     }
 }

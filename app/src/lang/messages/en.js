@@ -212,8 +212,11 @@ export default {
     subTitle: '<h2>Invest or borrow<br> at rates you choose.</h2>',
     desc: 'Experience fully secured, truly P2P lending. Loans 150% secured by crypto collateral and protected by Ethereum smart contracts.',
     invest: 'Invest',
+    investDesc: 'Earn 8% interest fully secured.',
     borrow: 'Borrow',
+    borrowDesc: 'Your rates. Your terms. No credit checks. Crypto-backed.',
     staking: 'Staking <sup>NEW</sup>',
+    stakingDesc: 'Earn 6-50% APR on a Constant node. Low minimums. Withdraw anytime.',
   },
   headerBar: {
     home: 'Home',
@@ -2504,7 +2507,10 @@ export default {
       send: {
         confirmTemplate: {
           title: 'Thank you!',
-          description: `Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href="/getPrices" target="_blank" class="colorLight semiBold">service times</a> for an estimation of when funds will reach you.`,
+          description: `Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href="/getPrices" target="_blank" class="colorLight semiBold">service times</a> for an estimation of when funds will reach you.
+<br/>
+While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.
+`,
           contact: 'If you have any questions, feel free to reach out to <a class="colorLight semiBold" href="mailto:hello@myconstant.com">hello@myconstant.com</a> anytime.',
           actionTitle: 'Make another transfer'
         }
@@ -2512,7 +2518,10 @@ export default {
       withdraw: {
         confirmTemplate: {
           title: 'Thank you!',
-          description: `Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href="/getPrices" target="_blank" class="colorLight semiBold">service times</a> for an estimation of when funds will reach you.`,
+          description: `Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href="/getPrices" target="_blank" class="colorLight semiBold">service times</a> for an estimation of when funds will reach you.
+<br/>
+While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.
+`,
           contact: 'If you have any questions, feel free to reach out to <a class="colorLight semiBold" href="mailto:hello@myconstant.com">hello@myconstant.com</a> anytime.',
           actionTitle: 'Back to homepage'
         }
@@ -5183,10 +5192,14 @@ export default {
         zelle1: `
           <p>Amount: {amount} USD</p>
           <p>Send to: <strong>finance@myconstant.com</strong></p>
+          <p>Full name: <strong>Const LLC</strong></p>
+          <p>Type: <strong>Personal Account</strong></p>
         `,
         zelle: `
           <p>Amount: {amount} USD</p>
           <p>Send to: <strong>finance@myconstant.com</strong></p>
+          <p>Full name: <strong>Const LLC</strong></p>
+          <p>Type: <strong>Personal Account</strong></p>
           <br /><br />
           <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>
           <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>
@@ -5309,7 +5322,10 @@ export default {
         <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>
       `,
       question5: 'What happens when my money isn’t on loan?',
-      answer5: 'When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds.',
+      answer5: `
+      <p>When not on loan or waiting for a match, you can choose to store your funds in Prime Trust, an accredited US financial institution that insures deposits up to $130M. OR earn 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>
+      <p>If you’re waiting for a match, your money will automatically remain in the custody of Prime Trust.</p>
+      `,
     }
   },
   payment: {
@@ -6394,9 +6410,11 @@ export default {
     membershipPointsDesc: 'Your total active membership points. You get 1 point for every dollar you invest or borrow. Points expire 180 days from the date you earn them, but you can top them up with new orders. ',
     tierProgress: 'Don’t lose your benefits',
     tierProgressDesc: 'Earn {points} points by {date} to maintain {level} membership',
+    tierProgressDescMember: 'For every dollar you invest or borrow, you earn 1 membership point. Each point expires after 180 days.',
     caption: 'Membership',
     pointExpiredDate: '{value} points will expired on {date}',
     expiredDate: 'Your {value} points will expired in {date}',
+    pointNeed2GetGold: 'Your need {value} points to get Gold Member',
     remaining: '{type} ${value} in {date} days',
     borrow: 'Borrow',
     invest: 'Invest',
@@ -6408,9 +6426,9 @@ export default {
     getLevelDate: 'From {date}',
     title: {
       level0: 'Member',
-      level1: 'Gold Member',
-      level2: 'Platinum Member',
-      level3: 'Diamond Member',
+      level1: 'Gold',
+      level2: 'Platinum',
+      level3: 'Diamond',
     },
     get: {
       level1: 'Get 100 CONST',
@@ -6449,9 +6467,9 @@ export default {
     },
     memberShipLevel: {
       level0: 'Member',
-      level1: 'Gold Member',
-      level2: 'Platinum Member',
-      level3: 'Diamond Member'
+      level1: 'Gold',
+      level2: 'Platinum',
+      level3: 'Diamond'
     },
     faqs: {
       1: {
@@ -6832,7 +6850,7 @@ export default {
     }
   },
   blog: {
-    title: 'Learn & Grow',
-    subTitle: 'News, advice, and opinion from the Constant team',
+    title: 'The Ledger',
+    subTitle: 'News, advice, and opinion from the Constant team (and guests).',
   }
 };

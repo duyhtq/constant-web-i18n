@@ -203,8 +203,11 @@
         "subTitle": "<h2>Invest or borrow<br> at rates you choose.</h2>",
         "desc": "Experience fully secured, truly P2P lending. Loans 150% secured by crypto collateral and protected by Ethereum smart contracts.",
         "invest": "Invest",
+        "investDesc": "Earn 8% interest fully secured.",
         "borrow": "Borrow",
-        "staking": "Staking <sup>NEW</sup>"
+        "borrowDesc": "Your rates. Your terms. No credit checks. Crypto-backed.",
+        "staking": "Staking <sup>NEW</sup>",
+        "stakingDesc": "Earn 6-50% APR on a Constant node. Low minimums. Withdraw anytime."
     },
     "headerBar": {
         "home": "Home",
@@ -2098,7 +2101,7 @@
             "send": {
                 "confirmTemplate": {
                     "title": "Thank you!",
-                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"colorLight semiBold\">service times</a> for an estimation of when funds will reach you.",
+                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"colorLight semiBold\">service times</a> for an estimation of when funds will reach you.\n<br/>\nWhile Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.\n",
                     "contact": "If you have any questions, feel free to reach out to <a class=\"colorLight semiBold\" href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a> anytime.",
                     "actionTitle": "Make another transfer"
                 }
@@ -2106,7 +2109,7 @@
             "withdraw": {
                 "confirmTemplate": {
                     "title": "Thank you!",
-                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"colorLight semiBold\">service times</a> for an estimation of when funds will reach you.",
+                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"colorLight semiBold\">service times</a> for an estimation of when funds will reach you.\n<br/>\nWhile Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.\n",
                     "contact": "If you have any questions, feel free to reach out to <a class=\"colorLight semiBold\" href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a> anytime.",
                     "actionTitle": "Back to homepage"
                 }
@@ -2419,7 +2422,7 @@
                 "collateralNoteMatchedFee": "Fee: 1%",
                 "collateralNoteTotal": "You will receive: {total} {currency}",
                 "collateralNoteDGXExtraFees": "Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.",
-                "usingStaking": "Get {discount}% off your interest rate by staking collateral",
+                "usingStaking": "Get {discount}% off your rate by staking collateral",
                 "usingStakingMobile": "Get {discount}% off with staking",
                 "usingStakingDesc": "Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.",
                 "stakingMinAmount": "stake amount must be great than {minVal} {currency}",
@@ -3986,8 +3989,8 @@
                 "btnBack": "Back",
                 "zelleTitle": "\n            <p className=bold\">The quickest way is via <strong>Zelle</strong>.</p>",
                 "zelleDesc": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n          <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n        ",
-                "zelle1": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n        ",
-                "zelle": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <br /><br />\n          <p>Please include the email address associated with your Constant account in the notes section.</p>\n          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n        ",
+                "zelle1": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <p>Full name: <strong>Const LLC</strong></p>\n          <p>Type: <strong>Personal Account</strong></p>\n        ",
+                "zelle": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <p>Full name: <strong>Const LLC</strong></p>\n          <p>Type: <strong>Personal Account</strong></p>\n          <br /><br />\n          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>\n          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n        ",
                 "bankChosenMessage1": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n          <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n        ",
                 "bankTransfer": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.</p>\n          <p>If you don’t bank with any of those listed, no problem. You can transfer from any bank account, but please note that your bank might charge you a fee.</p>\n        ",
                 "bankAutoPaymentMessage": "\n          <p>We’ve partnered with Checkbook to make bank transfers even easier.</p>\n          <p>Instead of logging into your bank account separately, enter your login details here and Checkbook will arrange the transfer automatically by ACH/digital check.</p>\n          <p>Neither Constant nor Checkbook store your details, and the service is free.</p>\n        ",
@@ -4052,7 +4055,7 @@
             "question4": "How do you protect my investment?",
             "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. </p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
             "question5": "What happens when my money isn’t on loan?",
-            "answer5": "<p>When not on loan or waiting for a match, your money earns 5% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p><p>If you're waiting for a match, your money remains in the custody of Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>\n"
+            "answer5": "\n      <p>When not on loan or waiting for a match, you can choose to store your funds in Prime Trust, an accredited US financial institution that insures deposits up to $130M. OR earn 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>\n      <p>If you’re waiting for a match, your money will automatically remain in the custody of Prime Trust.</p>\n      "
         }
     },
     "payment": {
@@ -4402,7 +4405,7 @@
                 "collateralNoteFee": "Fee: {fee} {currency} (1%)",
                 "collateralNoteMatchedFee": "Fee: 1%",
                 "collateralNoteTotal": "Total loan received: {total} {currency}",
-                "usingStaking": "Get {discount}% off your interest rate by staking collateral",
+                "usingStaking": "Get {discount}% off your rate by staking collateral",
                 "usingStakingMobile": "Get {discount}% off with staking",
                 "usingStakingDesc": "Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.",
                 "stakingMinAmount": "stake amount must be great than {minVal} {currency}"
@@ -4979,9 +4982,11 @@
         "membershipPointsDesc": "Your total active membership points. You get 1 point for every dollar you invest or borrow. Points expire 180 days from the date you earn them, but you can top them up with new orders. ",
         "tierProgress": "Don’t lose your benefits",
         "tierProgressDesc": "Earn {points} points by {date} to maintain {level} membership",
+        "tierProgressDescMember": "For every dollar you invest or borrow, you earn 1 membership point. Each point expires after 180 days.",
         "caption": "Membership",
         "pointExpiredDate": "{value} points will expired on {date}",
         "expiredDate": "Your {value} points will expire on {date}",
+        "pointNeed2GetGold": "Your need {value} points to get Gold Member",
         "remaining": "{type} ${value} in {date} days",
         "borrow": "Borrow",
         "invest": "Invest",
@@ -5333,7 +5338,7 @@
         }
     },
     "blog": {
-        "title": "Learn & Grow",
-        "subTitle": "News, advice, and opinion from the Constant team"
+        "title": "The Ledger",
+        "subTitle": "News, advice, and opinion from the Constant team (and guests)."
     }
 }

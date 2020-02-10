@@ -203,8 +203,11 @@
         "subTitle": "<h2>Đầu tư hay vay<br>với tỷ lệ bạn chọn.</h2>",
         "desc": "Trải nghiệm đầy đủ dịch vụ cho vay P2P an toàn, uy tín. Các khoản vay được bảo đảm 150% bằng tài sản thế chấp tiền điện tử và được hợp đồng thông minh Ethereum bảo vệ.",
         "invest": "Đầu tư",
+        "investDesc": "Earn 8% interest fully secured.",
         "borrow": "Vay",
-        "staking": "Đặt cọc <sup>MỚI</sup>"
+        "borrowDesc": "Your rates. Your terms. No credit checks. Crypto-backed.",
+        "staking": "Đặt cọc <sup>MỚI</sup>",
+        "stakingDesc": "Earn 6-50% APR on a Constant node. Low minimums. Withdraw anytime."
     },
     "headerBar": {
         "home": "Trang chủ",
@@ -2098,7 +2101,7 @@
             "send": {
                 "confirmTemplate": {
                     "title": "Xin cảm ơn!",
-                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"colorLight semiBold\">service times</a> for an estimation of when funds will reach you.",
+                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"colorLight semiBold\">service times</a> for an estimation of when funds will reach you.\n<br/>\nWhile Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.\n",
                     "contact": "If you have any questions, feel free to reach out to <a class=\"colorLight semiBold\" href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a> anytime.",
                     "actionTitle": "Đặt lệnh chuyển tiền khác"
                 }
@@ -2106,7 +2109,7 @@
             "withdraw": {
                 "confirmTemplate": {
                     "title": "Xin cảm ơn!",
-                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"colorLight semiBold\">service times</a> for an estimation of when funds will reach you.",
+                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"colorLight semiBold\">service times</a> for an estimation of when funds will reach you.\n<br/>\nWhile Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.\n",
                     "contact": "If you have any questions, feel free to reach out to <a class=\"colorLight semiBold\" href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a> anytime.",
                     "actionTitle": "Về trang chủ"
                 }
@@ -3986,8 +3989,8 @@
                 "btnBack": "Trở lại",
                 "zelleTitle": "\n<p className=\"bold\">Sử dụng <strong>Zelle</strong> để được hỗ trợ nhanh nhất.</p>        ",
                 "zelleDesc": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n          <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n        ",
-                "zelle1": "          <p>Số lượng: {amount} USD</p>\n          <p>Gửi tới: <strong>finance@myconstant.com</strong></p>",
-                "zelle": "\n          <p>Số tiền: {amount} USD</p>\n          <p>Gửi tới: <strong>finance@myconstant.com</strong></p>\n          <p>Vui lòng bao gồm địa chỉ email được liên kết với tài khoản Constant của bạn trong phần ghi chú..</p>\n          <p>Nếu bạn chưa có Zelle, hoàn toàn có thể dùng email hoặc số điện thoại để đăng kí trên website hoặc ứng dụng di động của ngân hàng bạn đang sử dụng.</p>        ",
+                "zelle1": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <p>Full name: <strong>Const LLC</strong></p>\n          <p>Type: <strong>Personal Account</strong></p>\n        ",
+                "zelle": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <p>Full name: <strong>Const LLC</strong></p>\n          <p>Type: <strong>Personal Account</strong></p>\n          <br /><br />\n          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>\n          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n        ",
                 "bankChosenMessage1": "\n<p>Với chuyển khoản ngân hàng, chúng tôi có tài khoản ở hầu hết các ngân hàng lớn để giao dịch được thuận tiện.</p>\n          <p>Xin vui lòng chọn ngân hàng nào thuận tiện nhất cho bạn để giao dịch.</p>        ",
                 "bankTransfer": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.</p>\n          <p>If you don’t bank with any of those listed, no problem. You can transfer from any bank account, but please note that your bank might charge you a fee.</p>\n        ",
                 "bankAutoPaymentMessage": "\n          <p>We’ve partnered with Checkbook to make bank transfers even easier.</p>\n          <p>Instead of logging into your bank account separately, enter your login details here and Checkbook will arrange the transfer automatically by ACH/digital check.</p>\n          <p>Neither Constant nor Checkbook store your details, and the service is free.</p>\n        ",
@@ -4052,7 +4055,7 @@
             "question4": "Constant làm gì để bảo vệ khoản tiền của nhà đầu tư?",
             "answer4": "\n        <p> Chúng tôi đã thực hiện các bước quan trọng để bảo vệ không chỉ khoản đầu tư của bạn mà cả lợi nhuận của bạn.</p>\n         <p> Tất cả những người vay của chúng tôi phải đặt giá trị 150% số tiền vay làm tài sản thế chấp bằng tiền điện tử. Chúng tôi cũng đặt ngưỡng thanh lý để bảo đảm chống lại sự sụt giảm giá trị tài sản thế chấp. </p>\n         <p> Điều khoản cho vay của bạn được mã hóa thành hợp đồng thông minh Ethereum xác định nghiêm ngặt cách sử dụng tiền của bạn. Khi không cho vay, chúng tôi sẽ lưu trữ tiền của bạn trong các tài khoản ngân hàng được bảo hiểm bởi FDIC, được giám sát bởi Prime Trust.</p>\n         <p> Kết hợp với nhau, các biện pháp bảo vệ này đảm bảo rằng không có vấn đề gì xảy ra nếu người đi vay không trả nợ, nếu thị trường tiền điện tử giảm hoặc một số sự kiện không may khác xảy ra, thì tiền gốc và tiền lãi của bạn được đảm bảo.</p>",
             "question5": "Phần tiền không đầu tư trong tài khoản Constant có được bảo đảm không?",
-            "answer5": "<p> Khi không được cho vay hoặc đang chờ đợi để khớp lệnh, bạn kiếm được 5% lãi kép thông qua Flex - một tài khoản tiết kiệm cho phép rút tiền bất cứ lúc nào được cung cấp bởi Compound Finance. Bảo mật, linh hoạt và tự động, Flex giúp bạn tăng vốn trong thời gian chờ thực hiện các khoản đầu tư. Tất cả các khoản rút tiền đều miễn phí và không giới hạn.</p><p>Nếu bạn đang chờ khớp lệnh, tiền của bạn vẫn nằm trong sự giám sát của Prime Trust, một tổ chức tài chính được công nhận của Hoa Kỳ có bảo hiểm lên tới 130 triệu USD. </ P>"
+            "answer5": "\n      <p>When not on loan or waiting for a match, you can choose to store your funds in Prime Trust, an accredited US financial institution that insures deposits up to $130M. OR earn 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>\n      <p>If you’re waiting for a match, your money will automatically remain in the custody of Prime Trust.</p>\n      "
         }
     },
     "payment": {
@@ -4979,9 +4982,11 @@
         "membershipPointsDesc": "Your total active membership points. You get 1 point for every dollar you invest or borrow. Points expire 180 days from the date you earn them, but you can top them up with new orders. ",
         "tierProgress": "Don’t lose your benefits",
         "tierProgressDesc": "Earn {points} points by {date} to maintain {level} membership",
+        "tierProgressDescMember": "For every dollar you invest or borrow, you earn 1 membership point. Each point expires after 180 days.",
         "caption": "Membership",
         "pointExpiredDate": "{value} points will expired on {date}",
         "expiredDate": "Your {value} points will expired in {date}",
+        "pointNeed2GetGold": "Your need {value} points to get Gold Member",
         "remaining": "{type} ${value} in {date} days",
         "borrow": "Borrow",
         "invest": "Invest",
@@ -4993,9 +4998,9 @@
         "getLevelDate": "From {date}",
         "title": {
             "level0": "Member",
-            "level1": "Gold Member",
-            "level2": "Platinum Member",
-            "level3": "Diamond Member"
+            "level1": "Gold",
+            "level2": "Platinum",
+            "level3": "Diamond"
         },
         "get": {
             "level1": "Get 100 CONST",
@@ -5025,9 +5030,9 @@
         },
         "memberShipLevel": {
             "level0": "Member",
-            "level1": "Gold Member",
-            "level2": "Platinum Member",
-            "level3": "Diamond Member"
+            "level1": "Gold",
+            "level2": "Platinum",
+            "level3": "Diamond"
         },
         "faqs": {
             "1": {
@@ -5333,7 +5338,7 @@
         }
     },
     "blog": {
-        "title": "Learn & Grow",
-        "subTitle": "News, advice, and opinion from the Constant team"
+        "title": "The Ledger",
+        "subTitle": "News, advice, and opinion from the Constant team (and guests)."
     }
 }

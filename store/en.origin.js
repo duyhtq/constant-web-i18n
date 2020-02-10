@@ -203,8 +203,11 @@
         "subTitle": "%%%.lending.subTitle%%%",
         "desc": "%%%.lending.desc%%%",
         "invest": "%%%.lending.invest%%%",
+        "investDesc": "%%%.lending.investDesc%%%",
         "borrow": "%%%.lending.borrow%%%",
-        "staking": "%%%.lending.staking%%%"
+        "borrowDesc": "%%%.lending.borrowDesc%%%",
+        "staking": "%%%.lending.staking%%%",
+        "stakingDesc": "%%%.lending.stakingDesc%%%"
     },
     "headerBar": {
         "home": "%%%.headerBar.home%%%",
@@ -4979,9 +4982,11 @@
         "membershipPointsDesc": "%%%.memberShip.membershipPointsDesc%%%",
         "tierProgress": "%%%.memberShip.tierProgress%%%",
         "tierProgressDesc": "%%%.memberShip.tierProgressDesc%%%",
+        "tierProgressDescMember": "%%%.memberShip.tierProgressDescMember%%%",
         "caption": "%%%.memberShip.caption%%%",
         "pointExpiredDate": "%%%.memberShip.pointExpiredDate%%%",
         "expiredDate": "%%%.memberShip.expiredDate%%%",
+        "pointNeed2GetGold": "%%%.memberShip.pointNeed2GetGold%%%",
         "remaining": "%%%.memberShip.remaining%%%",
         "borrow": "%%%.memberShip.borrow%%%",
         "invest": "%%%.memberShip.invest%%%",

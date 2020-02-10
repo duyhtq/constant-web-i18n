@@ -141,8 +141,11 @@
 %%%.lending.subTitle%%%,"<h2>Invest or borrow<br> at rates you choose.</h2>"
 %%%.lending.desc%%%,"Experience fully secured, truly P2P lending. Loans 150% secured by crypto collateral and protected by Ethereum smart contracts."
 %%%.lending.invest%%%,"Invest"
+%%%.lending.investDesc%%%,"Earn 8% interest fully secured."
 %%%.lending.borrow%%%,"Borrow"
+%%%.lending.borrowDesc%%%,"Your rates. Your terms. No credit checks. Crypto-backed."
 %%%.lending.staking%%%,"Staking <sup>NEW</sup>"
+%%%.lending.stakingDesc%%%,"Earn 6-50% APR on a Constant node. Low minimums. Withdraw anytime."
 %%%.headerBar.home%%%,"Home"
 %%%.headerBar.account%%%,"Account"
 %%%.headerBar.blog%%%,"Tips"
@@ -1951,11 +1954,17 @@
 %%%.home.convert.errorMsgs.greaterThan%%%,"Must be greater than 0"
 %%%.home.convert.errorMsgs.notEnough%%%,"Constant is not enough"
 %%%.home.convert.send.confirmTemplate.title%%%,"Thank you!"
-%%%.home.convert.send.confirmTemplate.description%%%,"Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=""/getPrices"" target=""_blank"" class=""colorLight semiBold"">service times</a> for an estimation of when funds will reach you."
+%%%.home.convert.send.confirmTemplate.description%%%,"Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=""/getPrices"" target=""_blank"" class=""colorLight semiBold"">service times</a> for an estimation of when funds will reach you.
+<br/>
+While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.
+"
 %%%.home.convert.send.confirmTemplate.contact%%%,"If you have any questions, feel free to reach out to <a class=""colorLight semiBold"" href=""mailto:hello@myconstant.com"">hello@myconstant.com</a> anytime."
 %%%.home.convert.send.confirmTemplate.actionTitle%%%,"Make another transfer"
 %%%.home.convert.withdraw.confirmTemplate.title%%%,"Thank you!"
-%%%.home.convert.withdraw.confirmTemplate.description%%%,"Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=""/getPrices"" target=""_blank"" class=""colorLight semiBold"">service times</a> for an estimation of when funds will reach you."
+%%%.home.convert.withdraw.confirmTemplate.description%%%,"Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=""/getPrices"" target=""_blank"" class=""colorLight semiBold"">service times</a> for an estimation of when funds will reach you.
+<br/>
+While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.
+"
 %%%.home.convert.withdraw.confirmTemplate.contact%%%,"If you have any questions, feel free to reach out to <a class=""colorLight semiBold"" href=""mailto:hello@myconstant.com"">hello@myconstant.com</a> anytime."
 %%%.home.convert.withdraw.confirmTemplate.actionTitle%%%,"Back to homepage"
 %%%.home.direct.title%%%,"Direct"
@@ -3857,10 +3866,14 @@
 %%%.home1.lendingSection.confirm.zelle1%%%,"
           <p>Amount: {amount} USD</p>
           <p>Send to: <strong>finance@myconstant.com</strong></p>
+          <p>Full name: <strong>Const LLC</strong></p>
+          <p>Type: <strong>Personal Account</strong></p>
         "
 %%%.home1.lendingSection.confirm.zelle%%%,"
           <p>Amount: {amount} USD</p>
           <p>Send to: <strong>finance@myconstant.com</strong></p>
+          <p>Full name: <strong>Const LLC</strong></p>
+          <p>Type: <strong>Personal Account</strong></p>
           <br /><br />
           <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>
           <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>
@@ -3970,7 +3983,10 @@
         <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>
       "
 %%%.home1.faqs.question5%%%,"What happens when my money isn’t on loan?"
-%%%.home1.faqs.answer5%%%,"When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds."
+%%%.home1.faqs.answer5%%%,"
+      <p>When not on loan or waiting for a match, you can choose to store your funds in Prime Trust, an accredited US financial institution that insures deposits up to $130M. OR earn 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>
+      <p>If you’re waiting for a match, your money will automatically remain in the custody of Prime Trust.</p>
+      "
 %%%.payment.intro%%%,"
     <h1>Worldwide, instant, zero cost mass payments.</h1>
     <br />
@@ -4758,9 +4774,11 @@
 %%%.memberShip.membershipPointsDesc%%%,"Your total active membership points. You get 1 point for every dollar you invest or borrow. Points expire 180 days from the date you earn them, but you can top them up with new orders. "
 %%%.memberShip.tierProgress%%%,"Don’t lose your benefits"
 %%%.memberShip.tierProgressDesc%%%,"Earn {points} points by {date} to maintain {level} membership"
+%%%.memberShip.tierProgressDescMember%%%,"For every dollar you invest or borrow, you earn 1 membership point. Each point expires after 180 days."
 %%%.memberShip.caption%%%,"Membership"
 %%%.memberShip.pointExpiredDate%%%,"{value} points will expired on {date}"
 %%%.memberShip.expiredDate%%%,"Your {value} points will expired in {date}"
+%%%.memberShip.pointNeed2GetGold%%%,"Your need {value} points to get Gold Member"
 %%%.memberShip.remaining%%%,"{type} ${value} in {date} days"
 %%%.memberShip.borrow%%%,"Borrow"
 %%%.memberShip.invest%%%,"Invest"
@@ -4771,9 +4789,9 @@
 %%%.memberShip.keepLevel%%%,"{type} ${value} to keep your level"
 %%%.memberShip.getLevelDate%%%,"From {date}"
 %%%.memberShip.title.level0%%%,"Member"
-%%%.memberShip.title.level1%%%,"Gold Member"
-%%%.memberShip.title.level2%%%,"Platinum Member"
-%%%.memberShip.title.level3%%%,"Diamond Member"
+%%%.memberShip.title.level1%%%,"Gold"
+%%%.memberShip.title.level2%%%,"Platinum"
+%%%.memberShip.title.level3%%%,"Diamond"
 %%%.memberShip.get.level1%%%,"Get 100 CONST"
 %%%.memberShip.get.level2%%%,"Get 1 STAR"
 %%%.memberShip.get.level3%%%,"Get 2 STAR"
@@ -4800,9 +4818,9 @@
 %%%.memberShip.rewardType.fiat%%%,"CONST"
 %%%.memberShip.rewardType.null%%%,"Not Available"
 %%%.memberShip.memberShipLevel.level0%%%,"Member"
-%%%.memberShip.memberShipLevel.level1%%%,"Gold Member"
-%%%.memberShip.memberShipLevel.level2%%%,"Platinum Member"
-%%%.memberShip.memberShipLevel.level3%%%,"Diamond Member"
+%%%.memberShip.memberShipLevel.level1%%%,"Gold"
+%%%.memberShip.memberShipLevel.level2%%%,"Platinum"
+%%%.memberShip.memberShipLevel.level3%%%,"Diamond"
 %%%.memberShip.faqs.1.question%%%,"Do the minimum amounts apply to single loans only?"
 %%%.memberShip.faqs.1.answer%%%,"
           <p>No, you can invest or borrow multiple times within the 180 days to become a Gold, Platinum or Diamond member.</p>
@@ -5057,5 +5075,5 @@
 %%%.notification.loan.promotion.membership.desc%%%,"desc"
 %%%.notification.loan.system.summary.title%%%,"title"
 %%%.notification.loan.system.summary.desc%%%,"desc"
-%%%.blog.title%%%,"Learn & Grow"
-%%%.blog.subTitle%%%,"News, advice, and opinion from the Constant team"
+%%%.blog.title%%%,"The Ledger"
+%%%.blog.subTitle%%%,"News, advice, and opinion from the Constant team (and guests)."

@@ -836,8 +836,8 @@
                     "false": "Your balance earns 4% APY through Flex. You can withdraw anytime for free."
                 },
                 "enableFlexSuccess": {
-                    "true": "<p>Số dư của bạn được đảm bảo bởi PrimeTrust - một tổ chức tài chính uy tín tại Mỹ. PrimeTrust giữ tiền trong nhiều tài khoản ngân hàng được bảo hiểm lên tới 130 triệu USD. Tuy bạn vẫn có thể rút tiền bất cứ lúc nào, nhưng số dư của bạn không được nhận lãi.</p>\n<a href=\"https://medium.com/@constantp2p/meet-scott-purcell-ceo-of-prime-trust-ae7581835030\" class=\"underline\">Tìm hiểu thêm về PrimeTrust</a>\n",
-                    "false": "<p>Congratulations! Your balance will now earn 4% APY through Flex. You can withdraw anytime for free and your balance is protected by borrower collateral.</p>\n<a href=\"https://medium.com/@constantp2p/compound-finance-discover-the-interest-earning-tech-behind-flex-dcbb1decc835\" class=\"underline\">Find out how Flex works</a>\n"
+                    "true": "<p>Your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust stores your funds across multiple insured bank accounts, giving total coverage of $130,000,000. You can withdraw anytime for free, but your balance will not earn interest.</p>\n<a href=\"/blog/5de7367206d81400175587e0\" class=\"underline\" target=\"_blank\">Find out more about Prime Trust</a>\n",
+                    "false": "<p>Congratulations! Your balance will now earn 4% APY through Flex. You can withdraw anytime for free and your balance is protected by borrower collateral.</p>\n<a href=\"/blog/5de4888606d81400175587aa\" class=\"underline\" target=\"_blank\">Find out how Flex works</a>\n"
                 },
                 "enableFlexFailed": {
                     "true": "Đã xảy ra lỗi. Bạn không thể tắt Flex tại thời điểm hiện tại. Xin vui lòng thử lại. Nếu bạn vẫn tiếp tục gặp sự cố này, xin vui lòng liên hệ với chúng tôi qua email hello@myconstant.com.",
@@ -894,7 +894,7 @@
             }
         },
         "history": {
-            "backToOrder": "Quay lại lệnh",
+            "backToOrder": "View detail",
             "backToOrderMsg": "Trở lại trang xác nhận ",
             "title": "Lịch sử giao dịch",
             "balance": "Tổng số dư: {balance} USD",
@@ -1297,6 +1297,7 @@
                 "received": "đã nhận",
                 "matched": "đã khớp lệnh",
                 "holding": "balance holding",
+                "ref_number": "Ref number",
                 "interest": "Lãi suất đến nay",
                 "totalInterest": "Tổng lãi suất",
                 "totalInterestDesc": "Đây là lãi suất bạn kiếm được trong nguyên một kỳ. Nếu người mượn hoàn trả sớm, bạn sẽ kiếm được lãi suất đến hiện tại.",
@@ -2087,7 +2088,18 @@
                 "BeneficiaryAddressPostalCode": "Mã bưu điện",
                 "createdBankFailed": "Có lỗi xảy ra khi tạo thêm ngân hàng mới. Xin vui lòng thử lại.",
                 "note": "Ghi chú (tuỳ chọn)",
-                "fullName": "Họ tên đầy đủ"
+                "fullName": "Họ tên đầy đủ",
+                "transferMethod": "Transfer Method",
+                "transferMethods": {
+                    "ach": {
+                        "title": "ACH",
+                        "desc": "Fee: Free. Time: 2-5 days"
+                    },
+                    "wire": {
+                        "title": "Wire",
+                        "desc": "Fee: might be charged by your bank. Time: a business day"
+                    }
+                }
             },
             "fee": "Phí",
             "backOrderBook": "Trở lại",
@@ -3771,7 +3783,7 @@
                 "2": {
                     "caption": "Constant xuất hiện tại sự kiện công nghệ lớn nhất năm {link}",
                     "linkCaption": "CES 2019",
-                    "link": "https://medium.com/@constantbanking/constant-shines-at-ces-2019-c6d206bf4d91"
+                    "link": "/blog/5de72ea006d81400175587da"
                 }
             }
         },
@@ -4020,7 +4032,7 @@
         "whatCaption2": "Được xây dựng cho chính bạn",
         "whatCaption3": "Được bảo đảm bởi tài sản thế chấp",
         "whatDesc0": "\n      <p>Constant là một nền tảng kết nối ngang hàng, cho phép người sử dụng kết nối trực tiếp với nhau không qua trung gian.</p>\n \n    ",
-        "whatDesc1": "<p> Kiếm lãi trước khi bạn thực hiện lệnh đầu tư. Tất cả khoản tiền gửi dều kiếm được {interest}% lãi kép mặc định và có thể rút được bất cứ lúc nào. Là lãi kép và được trả vào mỗi giây. Luôn linh hoạt và không đợi chờ. </p>",
+        "whatDesc1": "\n      <p>Funds that have not yet been loaned out are kept safe at multiple FDIC-insured bank accounts with an aggregated insurance of $130M.</p>\n      <br />\n      <p>You can withdraw anytime.</p>\n      <br />\n      <a href=\"/blog/5de7367206d81400175587e0\" target=\"_blank\">How we deliver FDIC insurance</a>\n    ",
         "whatDesc2": "<p> Tận hưởng dịch vụ khách hàng 24-7, rút tiền miễn phí không giới hạn và thư viện nội dung hữu ích để giúp bạn kiếm được nhiều hơn với số tiền của mình. Constant là một nền tảng tài chính mở, thay thế các mô hình cũ và bạn có thể <a href = https: //www.google.com/url? Q = https: //github.com/constant-money&sa=D&ust=1555493848999000&usg=AFQjCNEEEN4_WzaIB05aPU2kpQ _blank \"> xem tất cả mã của chúng tôi </a> cũng như đề xuất các tính năng bạn muốn xem </p>",
         "whatDesc3": "\n<p>Người vay vốn cần thế chấp tài sản trị giá 150% so với số tiền cần vay. Ví dụ, người vay vốn cần phải thế chấp tài sản trị giá 15,000 Usd để vay được 10,000 Usd.</p>\n      <br />\n      <p>Nếu người vay mặc định, bạn không mất một xu.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/how-do-constant-crypto-loans-work-b22b66b5b687\" target=\"_blank\">Cách Constant bảo vệ nhà đầu tư</a>    ",
         "howItWorks": {
@@ -4269,6 +4281,7 @@
             "title": "Frequently-asked questions (FAQs)",
             "desc": "Here you'll find answers to the most common questions our customers ask. If you can't find your answer here, please email us at <a href=\"mailto:hello@myconstant.com\" class=\"landing-link semiBold\" target=\"_top\">hello@myconstant.com</a> and we'll be happy to help you.",
             "viewAll": "View all",
+            "viewLess": "View less",
             "hide": "Hide"
         }
     },
@@ -4534,7 +4547,8 @@
     "registerBonus": {
         "title": "Muốn có $10 để bắt đầu?",
         "description": "Tạo tài khoản của bạn và xác minh danh tính để nhận tiền thưởng $ 10, hoàn toàn miễn phí.\n",
-        "numLeft": "CHỈ CÓ {numLeft} PHẦN THƯỞNG CÒN LẠI"
+        "numLeft": "CHỈ CÓ {numLeft} PHẦN THƯỞNG CÒN LẠI",
+        "forUsOnly": "Promotion for US customers only"
     },
     "signupHeader": {
         "desc": "Mở một tài khoản và nhận tiền thưởng $ 10 vào thẳng tài khoản của bạn\n",
@@ -5300,6 +5314,14 @@
             "partialMatchLast": {
                 "title": "Your investment order is now fully matched",
                 "desc": "Your investment order of ${amount} is now fully matched. We found a borrower to accept your rate and term on the remaining ${matchedAmount}. You can track your investment on your <a href=\"/accounts\" class=\"underline\">Accounts page</a>."
+            },
+            "membershipPoint": {
+                "title": "Congrats! You earned {amount} points",
+                "desc": "Due to your investment order of ${amount}, your total points up til now is {totalAmount}. Only {amountToNextLevel} points to reach {nextLevel}!"
+            },
+            "membershipPointMax": {
+                "title": "Congrats! You earned {amount} points",
+                "desc": "Due to your investment order of ${amount}, your total points up til now is {totalAmount}. Keep up the good work!"
             }
         },
         "loan": {
@@ -5313,28 +5335,46 @@
             },
             "partialMatch": {
                 "title": "Your loan order partially matched",
-                "desc": "Your loan order of ${amount} partially matched. We found a investor to accept your rate and term on ${matchedAmount}, and we’ll continue trying to match the rest. In the meantime, you can track your order on your <a href=\"/accounts\" class=\"underline\">Accounts page</a>."
+                "desc": "Your loan order of ${amount} partially matched. We found a investor to accept your rate and term on ${matchedAmount}, and we’ll continue trying to match the rest. In the meantime, you can track your order on your <a href=\"/accounts\" class=\"underline\">Accounts page</a>.",
+                "title_1": "Your loan order partially matched",
+                "desc_1": "Your loan order of ${amount} partially matched. We found a investor to accept your rate and term on ${matchedAmount}, and we’ll continue trying to match the rest. Repay before {dueDate} and we’ll return your collateral. In the meantime, you can track your order on your <a href=\"/accounts\" class=\"underline\">Accounts page</a>."
             },
             "partialMatchLast": {
                 "title": "Your loan order is now fully matched",
-                "desc": "Your loan order of ${amount} is now fully matched. We found a investor to accept your rate and term on the remaining ${matchedAmount}. You can track your loan on your <a href=\"/accounts\" class=\"underline\">Accounts page</a>."
+                "desc": "Your loan order of ${amount} is now fully matched. We found a investor to accept your rate and term on the remaining ${matchedAmount}. You can track your loan on your <a href=\"/accounts\" class=\"underline\">Accounts page</a>.",
+                "title_1": "Your loan order is now fully matched",
+                "desc_1": "Your loan order of ${amount} is now fully matched. We found a investor to accept your rate and term on the remaining ${matchedAmount}. Repay before {dueDate} and we’ll return your collateral. You can track your loan on your <a href=\"/accounts\" class=\"underline\">Accounts page</a>."
             },
             "liquidate": {
                 "title": "Your collateral is nearing liquidation",
                 "desc": "The value of your {crypto} collateral has fallen to {collateralPercent}% of the investor’s principal and earned interest. When it falls to {liquidationPercent}%, your collateral will be sold to repay the investor (you keep the loan and anything left over from the sale). Please <a href=\"/accounts\" class=\"underline\">top up</a> your collateral to avoid liquidation."
             },
-            "promotion": {
-                "membership": {
-                    "title": "title",
-                    "desc": "desc"
-                }
+            "membershipPoint": {
+                "title": "Congrats! You earned {amount} points",
+                "desc": "Due to your loan order of ${amount}, your total points up til now is {totalAmount}. Only {amountToNextLevel} points to reach {nextLevel}!"
             },
-            "system": {
-                "summary": {
-                    "title": "title",
-                    "desc": "desc"
-                }
+            "membershipPointMax": {
+                "title": "Congrats! You earned {amount} points",
+                "desc": "Due to your loan order of ${amount}, your total points up til now is {totalAmount}. Keep up the good work!"
             }
+        },
+        "promotion": {
+            "membership": {
+                "title": "title",
+                "desc": "desc"
+            }
+        },
+        "system": {
+            "summary": {
+                "title": "title",
+                "desc": "desc"
+            }
+        },
+        "nextLevel": {
+            "0": " ",
+            "1": "Gold",
+            "2": "Platinum",
+            "3": "Diamond"
         }
     },
     "blog": {

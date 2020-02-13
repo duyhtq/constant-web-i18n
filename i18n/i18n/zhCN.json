@@ -203,8 +203,11 @@
         "subTitle": "<h2>Invest or borrow<br> at rates you choose.</h2>",
         "desc": "Experience fully secured, truly P2P lending. Loans 150% secured by crypto collateral and protected by Ethereum smart contracts.",
         "invest": "Invest",
+        "investDesc": "Earn 8% interest fully secured.",
         "borrow": "Borrow",
-        "staking": "Staking <sup>NEW</sup>"
+        "borrowDesc": "Your rates. Your terms. No credit checks. Crypto-backed.",
+        "staking": "Staking <sup>NEW</sup>",
+        "stakingDesc": "Earn 6-50% APR on a Constant node. Low minimums. Withdraw anytime."
     },
     "headerBar": {
         "home": "Home",
@@ -833,8 +836,8 @@
                     "false": "Your balance earns 4% APY through Flex. You can withdraw anytime for free."
                 },
                 "enableFlexSuccess": {
-                    "true": "<p>Your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust stores your funds across multiple insured bank accounts, giving total coverage of $130,000,000. You can withdraw anytime for free, but your balance will not earn interest.</p>\n<a href=\"https://medium.com/@constantp2p/meet-scott-purcell-ceo-of-prime-trust-ae7581835030\" class=\"underline\">Find out more about Prime Trust</a>\n",
-                    "false": "<p>Congratulations! Your balance will now earn 4% APY through Flex. You can withdraw anytime for free and your balance is protected by borrower collateral.</p>\n<a href=\"https://medium.com/@constantp2p/compound-finance-discover-the-interest-earning-tech-behind-flex-dcbb1decc835\" class=\"underline\">Find out how Flex works</a>\n"
+                    "true": "<p>Your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust stores your funds across multiple insured bank accounts, giving total coverage of $130,000,000. You can withdraw anytime for free, but your balance will not earn interest.</p>\n<a href=\"/blog/5de7367206d81400175587e0\" class=\"underline\" target=\"_blank\">Find out more about Prime Trust</a>\n",
+                    "false": "<p>Congratulations! Your balance will now earn 4% APY through Flex. You can withdraw anytime for free and your balance is protected by borrower collateral.</p>\n<a href=\"/blog/5de4888606d81400175587aa\" class=\"underline\" target=\"_blank\">Find out how Flex works</a>\n"
                 },
                 "enableFlexFailed": {
                     "true": "Sorry, we can’t disable Flex for you right now – please try again later. If you keep getting this message, please email us at hello@myconstant.com.",
@@ -2084,7 +2087,12 @@
                 "BeneficiaryAddressPostalCode": "Beneficiary Postal Code",
                 "createdBankFailed": "Failed while creating new bank, please try again",
                 "note": "Note (optional)",
-                "fullName": "Full Name"
+                "fullName": "Full Name",
+                "transferMethod": "Transfer Method",
+                "transferMethods": {
+                    "ach": "ACH",
+                    "wire": "Wire"
+                }
             },
             "fee": "Fee",
             "backOrderBook": "Buy more Constant",
@@ -2098,7 +2106,7 @@
             "send": {
                 "confirmTemplate": {
                     "title": "Thank you!",
-                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"colorLight semiBold\">service times</a> for an estimation of when funds will reach you.",
+                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"colorLight semiBold\">service times</a> for an estimation of when funds will reach you.\n<br/>\nWhile Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.\n",
                     "contact": "If you have any questions, feel free to reach out to <a class=\"colorLight semiBold\" href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a> anytime.",
                     "actionTitle": "Make another transfer"
                 }
@@ -2106,7 +2114,7 @@
             "withdraw": {
                 "confirmTemplate": {
                     "title": "Thank you!",
-                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"colorLight semiBold\">service times</a> for an estimation of when funds will reach you.",
+                    "description": "Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href=\"/getPrices\" target=\"_blank\" class=\"colorLight semiBold\">service times</a> for an estimation of when funds will reach you.\n<br/>\nWhile Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.\n",
                     "contact": "If you have any questions, feel free to reach out to <a class=\"colorLight semiBold\" href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a> anytime.",
                     "actionTitle": "Back to homepage"
                 }
@@ -3267,7 +3275,9 @@
             "sendFee": "Send fee: {fee} {currency}",
             "fiatAmountResultLabel": "According to the markets today, you’ll receive: {fiatAmount} {fiatCurrency}",
             "explain": "* The maximum you can withdraw is {amountExcludeFee} {currency}, so you have enough to cover the withdrawal fee.",
-            "explainNoFee": "* The maximum you can withdraw is {amountExcludeFee} {currency}."
+            "explainNoFee": "* The maximum you can withdraw is {amountExcludeFee} {currency}.",
+            "achDesc": "Note: it might take from 2 to 5 business days to process ACH transfer. Free.",
+            "wireDesc": "Note: it only takes a business day to process wire transfer. While Constant processes your withdrawals free of charge, fees may be applied separately by your financial institution."
         },
         "paymentMethod": "Payment method",
         "email": {
@@ -3768,7 +3778,7 @@
                 "2": {
                     "caption": "Chatting stablecoins and the future of banking - the team at {link}",
                     "linkCaption": "CES 2019",
-                    "link": "https://medium.com/@constantbanking/constant-shines-at-ces-2019-c6d206bf4d91"
+                    "link": "/blog/5de72ea006d81400175587da"
                 }
             }
         },
@@ -3986,8 +3996,8 @@
                 "btnBack": "Back",
                 "zelleTitle": "\n            <p className=\"bold\">The quickest way is via <strong>Zelle</strong>.</p>\n        ",
                 "zelleDesc": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n          <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n        ",
-                "zelle1": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n        ",
-                "zelle": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <br /><br />\n          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>\n          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n        ",
+                "zelle1": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <p>Full name: <strong>Const LLC</strong></p>\n          <p>Type: <strong>Personal Account</strong></p>\n        ",
+                "zelle": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <p>Full name: <strong>Const LLC</strong></p>\n          <p>Type: <strong>Personal Account</strong></p>\n          <br /><br />\n          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>\n          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n        ",
                 "bankChosenMessage1": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n          <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n        ",
                 "bankTransfer": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.</p>\n          <p>If you don’t bank with any of those listed, no problem. You can transfer from any bank account, but please note that your bank might charge you a fee.</p>\n        ",
                 "bankAutoPaymentMessage": "\n          <p>We’ve partnered with Checkbook to make bank transfers even easier.</p>\n          <p>Instead of logging into your bank account separately, enter your login details here and Checkbook will arrange the transfer automatically by ACH/digital check.</p>\n          <p>Neither Constant nor Checkbook store your details, and the service is free.</p>\n        ",
@@ -4017,7 +4027,7 @@
         "whatCaption2": "Protected by Ethereum smart contracts while on loan",
         "whatCaption3": "Only invest in secured loans",
         "whatDesc0": "<p>我们的点对点匹配算法取代了当前银行系统的集中式低效率，使您能够挖掘真正的市场需求</p>           \n   <br/>            \n  <p>你决定你的价格。没有隐藏的费用</p>        \n      <br/>          \n    <a href=“https://www.myconstant.com/crypto-loan” target=“_blank”>如何借出资金</a>",
-        "whatDesc1": "\n      <p>Funds that have not yet been loaned out are kept safe at multiple FDIC-insured bank accounts with an aggregated insurance of $130M.</p>\n      <br />\n      <p>You can withdraw anytime.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/meet-scott-purcell-ceo-of-prime-trust-ae7581835030\" target=\"_blank\">How we deliver FDIC insurance</a>\n    ",
+        "whatDesc1": "\n      <p>Funds that have not yet been loaned out are kept safe at multiple FDIC-insured bank accounts with an aggregated insurance of $130M.</p>\n      <br />\n      <p>You can withdraw anytime.</p>\n      <br />\n      <a href=\"/blog/5de7367206d81400175587e0\" target=\"_blank\">How we deliver FDIC insurance</a>\n    ",
         "whatDesc2": "\n      <p>When your money is on loan, it is no longer FDIC insured, but protected by a smart contract that runs exactly as programmed - without the need for human involvement.</p>\n      <br />\n      <p>Together, FDIC insurance and smart contract security, keep your money independently safe.</p>\n      <br />\n      <a href=\"https://www.google.com/url?q=https://github.com/constant-money&sa=D&ust=1555493848999000&usg=AFQjCNEEEN4_WzaIB05aPU2kpKQi_PbKOw\" target=\"_blank\">View our code</a>\n    ",
         "whatDesc3": "\n      <p>We strictly require every loan to be 150% backed by collateral. For someone to borrow $10,000, they have to put up $15,000 in collateral value.</p>\n      <br />\n      <p>So if borrowers default, you don’t lose a cent.</p>\n      <br />\n      <a href=\"https://medium.com/@constantbanking/how-do-constant-crypto-loans-work-b22b66b5b687\" target=\"_blank\">How we protect investor funds</a>\n    ",
         "howItWorks": {
@@ -4052,7 +4062,7 @@
             "question4": "How do you protect my investment?",
             "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
             "question5": "What happens when my money isn’t on loan?",
-            "answer5": "When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds."
+            "answer5": "\n      <p>When not on loan or waiting for a match, you can choose to store your funds in Prime Trust, an accredited US financial institution that insures deposits up to $130M. OR earn 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>\n      <p>If you’re waiting for a match, your money will automatically remain in the custody of Prime Trust.</p>\n      "
         }
     },
     "payment": {
@@ -4266,6 +4276,7 @@
             "title": "Frequently-asked questions (FAQs)",
             "desc": "Here you'll find answers to the most common questions our customers ask. If you can't find your answer here, please email us at <a href=\"mailto:hello@myconstant.com\" class=\"landing-link semiBold\" target=\"_top\">hello@myconstant.com</a> and we'll be happy to help you.",
             "viewAll": "View all",
+            "viewLess": "View less",
             "hide": "Hide"
         }
     },
@@ -4979,9 +4990,11 @@
         "membershipPointsDesc": "Your total active membership points. You get 1 point for every dollar you invest or borrow. Points expire 180 days from the date you earn them, but you can top them up with new orders. ",
         "tierProgress": "Don’t lose your benefits",
         "tierProgressDesc": "Earn {points} points by {date} to maintain {level} membership",
+        "tierProgressDescMember": "For every dollar you invest or borrow, you earn 1 membership point. Each point expires after 180 days.",
         "caption": "Membership",
         "pointExpiredDate": "{value} points will expired on {date}",
         "expiredDate": "Your {value} points will expired in {date}",
+        "pointNeed2GetGold": "Your need {value} points to get Gold Member",
         "remaining": "{type} ${value} in {date} days",
         "borrow": "Borrow",
         "invest": "Invest",
@@ -4993,9 +5006,9 @@
         "getLevelDate": "From {date}",
         "title": {
             "level0": "Member",
-            "level1": "Gold Member",
-            "level2": "Platinum Member",
-            "level3": "Diamond Member"
+            "level1": "Gold",
+            "level2": "Platinum",
+            "level3": "Diamond"
         },
         "get": {
             "level1": "Get 100 CONST",
@@ -5025,9 +5038,9 @@
         },
         "memberShipLevel": {
             "level0": "Member",
-            "level1": "Gold Member",
-            "level2": "Platinum Member",
-            "level3": "Diamond Member"
+            "level1": "Gold",
+            "level2": "Platinum",
+            "level3": "Diamond"
         },
         "faqs": {
             "1": {
@@ -5295,6 +5308,14 @@
             "partialMatchLast": {
                 "title": "Your investment order is now fully matched",
                 "desc": "Your investment order of ${amount} is now fully matched. We found a borrower to accept your rate and term on the remaining ${matchedAmount}. You can track your investment on your <a href=\"/accounts\" class=\"underline\">Accounts page</a>."
+            },
+            "membershipPoint": {
+                "title": "Congrats! You earned {amount} points",
+                "desc": "Due to your investment order of ${amount}, your total points up til now is {totalAmount}. Only {amountToNextLevel} points to reach {nextLevel}!"
+            },
+            "membershipPointMax": {
+                "title": "Congrats! You earned {amount} points",
+                "desc": "Due to your investment order of ${amount}, your total points up til now is {totalAmount}. Keep up the good work!"
             }
         },
         "loan": {
@@ -5308,32 +5329,50 @@
             },
             "partialMatch": {
                 "title": "Your loan order partially matched",
-                "desc": "Your loan order of ${amount} partially matched. We found a investor to accept your rate and term on ${matchedAmount}, and we’ll continue trying to match the rest. In the meantime, you can track your order on your <a href=\"/accounts\" class=\"underline\">Accounts page</a>."
+                "desc": "Your loan order of ${amount} partially matched. We found a investor to accept your rate and term on ${matchedAmount}, and we’ll continue trying to match the rest. In the meantime, you can track your order on your <a href=\"/accounts\" class=\"underline\">Accounts page</a>.",
+                "title_1": "Your loan order partially matched",
+                "desc_1": "Your loan order of ${amount} partially matched. We found a investor to accept your rate and term on ${matchedAmount}, and we’ll continue trying to match the rest. Repay before {dueDate} and we’ll return your collateral. In the meantime, you can track your order on your <a href=\"/accounts\" class=\"underline\">Accounts page</a>."
             },
             "partialMatchLast": {
                 "title": "Your loan order is now fully matched",
-                "desc": "Your loan order of ${amount} is now fully matched. We found a investor to accept your rate and term on the remaining ${matchedAmount}. You can track your loan on your <a href=\"/accounts\" class=\"underline\">Accounts page</a>."
+                "desc": "Your loan order of ${amount} is now fully matched. We found a investor to accept your rate and term on the remaining ${matchedAmount}. You can track your loan on your <a href=\"/accounts\" class=\"underline\">Accounts page</a>.",
+                "title_1": "Your loan order is now fully matched",
+                "desc_1": "Your loan order of ${amount} is now fully matched. We found a investor to accept your rate and term on the remaining ${matchedAmount}. Repay before {dueDate} and we’ll return your collateral. You can track your loan on your <a href=\"/accounts\" class=\"underline\">Accounts page</a>."
             },
             "liquidate": {
                 "title": "Your collateral is nearing liquidation",
                 "desc": "The value of your {crypto} collateral has fallen to {collateralPercent}% of the investor’s principal and earned interest. When it falls to {liquidationPercent}%, your collateral will be sold to repay the investor (you keep the loan and anything left over from the sale). Please <a href=\"/accounts\" class=\"underline\">top up</a> your collateral to avoid liquidation."
             },
-            "promotion": {
-                "membership": {
-                    "title": "title",
-                    "desc": "desc"
-                }
+            "membershipPoint": {
+                "title": "Congrats! You earned {amount} points",
+                "desc": "Due to your loan order of ${amount}, your total points up til now is {totalAmount}. Only {amountToNextLevel} points to reach {nextLevel}!"
             },
-            "system": {
-                "summary": {
-                    "title": "title",
-                    "desc": "desc"
-                }
+            "membershipPointMax": {
+                "title": "Congrats! You earned {amount} points",
+                "desc": "Due to your loan order of ${amount}, your total points up til now is {totalAmount}. Keep up the good work!"
             }
+        },
+        "promotion": {
+            "membership": {
+                "title": "title",
+                "desc": "desc"
+            }
+        },
+        "system": {
+            "summary": {
+                "title": "title",
+                "desc": "desc"
+            }
+        },
+        "nextLevel": {
+            "0": " ",
+            "1": "Gold",
+            "2": "Platinum",
+            "3": "Diamond"
         }
     },
     "blog": {
-        "title": "Learn & Grow",
-        "subTitle": "News, advice, and opinion from the Constant team"
+        "title": "The Ledger",
+        "subTitle": "News, advice, and opinion from the Constant team (and guests)."
     }
 }

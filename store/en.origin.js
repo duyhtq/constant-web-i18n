@@ -1297,6 +1297,7 @@
                 "received": "%%%.me.proSaving.listApplications.received%%%",
                 "matched": "%%%.me.proSaving.listApplications.matched%%%",
                 "holding": "%%%.me.proSaving.listApplications.holding%%%",
+                "ref_number": "%%%.me.proSaving.listApplications.ref_number%%%",
                 "interest": "%%%.me.proSaving.listApplications.interest%%%",
                 "totalInterest": "%%%.me.proSaving.listApplications.totalInterest%%%",
                 "totalInterestDesc": "%%%.me.proSaving.listApplications.totalInterestDesc%%%",
@@ -2087,7 +2088,18 @@
                 "BeneficiaryAddressPostalCode": "%%%.home.convert.payToForm.BeneficiaryAddressPostalCode%%%",
                 "createdBankFailed": "%%%.home.convert.payToForm.createdBankFailed%%%",
                 "note": "%%%.home.convert.payToForm.note%%%",
-                "fullName": "%%%.home.convert.payToForm.fullName%%%"
+                "fullName": "%%%.home.convert.payToForm.fullName%%%",
+                "transferMethod": "%%%.home.convert.payToForm.transferMethod%%%",
+                "transferMethods": {
+                    "ach": {
+                        "title": "%%%.home.convert.payToForm.transferMethods.ach.title%%%",
+                        "desc": "%%%.home.convert.payToForm.transferMethods.ach.desc%%%"
+                    },
+                    "wire": {
+                        "title": "%%%.home.convert.payToForm.transferMethods.wire.title%%%",
+                        "desc": "%%%.home.convert.payToForm.transferMethods.wire.desc%%%"
+                    }
+                }
             },
             "fee": "%%%.home.convert.fee%%%",
             "backOrderBook": "%%%.home.convert.backOrderBook%%%",
@@ -4269,6 +4281,7 @@
             "title": "%%%.modules.faqs.title%%%",
             "desc": "%%%.modules.faqs.desc%%%",
             "viewAll": "%%%.modules.faqs.viewAll%%%",
+            "viewLess": "%%%.modules.faqs.viewLess%%%",
             "hide": "%%%.modules.faqs.hide%%%"
         }
     },
@@ -4534,7 +4547,8 @@
     "registerBonus": {
         "title": "%%%.registerBonus.title%%%",
         "description": "%%%.registerBonus.description%%%",
-        "numLeft": "%%%.registerBonus.numLeft%%%"
+        "numLeft": "%%%.registerBonus.numLeft%%%",
+        "forUsOnly": "%%%.registerBonus.forUsOnly%%%"
     },
     "signupHeader": {
         "desc": "%%%.signupHeader.desc%%%",
@@ -5300,6 +5314,14 @@
             "partialMatchLast": {
                 "title": "%%%.notification.invest.partialMatchLast.title%%%",
                 "desc": "%%%.notification.invest.partialMatchLast.desc%%%"
+            },
+            "membershipPoint": {
+                "title": "%%%.notification.invest.membershipPoint.title%%%",
+                "desc": "%%%.notification.invest.membershipPoint.desc%%%"
+            },
+            "membershipPointMax": {
+                "title": "%%%.notification.invest.membershipPointMax.title%%%",
+                "desc": "%%%.notification.invest.membershipPointMax.desc%%%"
             }
         },
         "loan": {
@@ -5313,28 +5335,46 @@
             },
             "partialMatch": {
                 "title": "%%%.notification.loan.partialMatch.title%%%",
-                "desc": "%%%.notification.loan.partialMatch.desc%%%"
+                "desc": "%%%.notification.loan.partialMatch.desc%%%",
+                "title_1": "%%%.notification.loan.partialMatch.title_1%%%",
+                "desc_1": "%%%.notification.loan.partialMatch.desc_1%%%"
             },
             "partialMatchLast": {
                 "title": "%%%.notification.loan.partialMatchLast.title%%%",
-                "desc": "%%%.notification.loan.partialMatchLast.desc%%%"
+                "desc": "%%%.notification.loan.partialMatchLast.desc%%%",
+                "title_1": "%%%.notification.loan.partialMatchLast.title_1%%%",
+                "desc_1": "%%%.notification.loan.partialMatchLast.desc_1%%%"
             },
             "liquidate": {
                 "title": "%%%.notification.loan.liquidate.title%%%",
                 "desc": "%%%.notification.loan.liquidate.desc%%%"
             },
-            "promotion": {
-                "membership": {
-                    "title": "%%%.notification.loan.promotion.membership.title%%%",
-                    "desc": "%%%.notification.loan.promotion.membership.desc%%%"
-                }
+            "membershipPoint": {
+                "title": "%%%.notification.loan.membershipPoint.title%%%",
+                "desc": "%%%.notification.loan.membershipPoint.desc%%%"
             },
-            "system": {
-                "summary": {
-                    "title": "%%%.notification.loan.system.summary.title%%%",
-                    "desc": "%%%.notification.loan.system.summary.desc%%%"
-                }
+            "membershipPointMax": {
+                "title": "%%%.notification.loan.membershipPointMax.title%%%",
+                "desc": "%%%.notification.loan.membershipPointMax.desc%%%"
             }
+        },
+        "promotion": {
+            "membership": {
+                "title": "%%%.notification.promotion.membership.title%%%",
+                "desc": "%%%.notification.promotion.membership.desc%%%"
+            }
+        },
+        "system": {
+            "summary": {
+                "title": "%%%.notification.system.summary.title%%%",
+                "desc": "%%%.notification.system.summary.desc%%%"
+            }
+        },
+        "nextLevel": {
+            "0": "%%%.notification.nextLevel.0%%%",
+            "1": "%%%.notification.nextLevel.1%%%",
+            "2": "%%%.notification.nextLevel.2%%%",
+            "3": "%%%.notification.nextLevel.3%%%"
         }
     },
     "blog": {

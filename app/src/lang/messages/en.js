@@ -1038,10 +1038,10 @@ export default {
         },
         enableFlexSuccess: {
           true: `<p>Your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust stores your funds across multiple insured bank accounts, giving total coverage of $130,000,000. You can withdraw anytime for free, but your balance will not earn interest.</p>
-<a href="https://medium.com/@constantp2p/meet-scott-purcell-ceo-of-prime-trust-ae7581835030" class="underline">Find out more about Prime Trust</a>
+<a href="/blog/5de7367206d81400175587e0" class="underline" target="_blank">Find out more about Prime Trust</a>
 `,
           false: `<p>Congratulations! Your balance will now earn 4% APY through Flex. You can withdraw anytime for free and your balance is protected by borrower collateral.</p>
-<a href="https://medium.com/@constantp2p/compound-finance-discover-the-interest-earning-tech-behind-flex-dcbb1decc835" class="underline">Find out how Flex works</a>
+<a href="/blog/5de4888606d81400175587aa" class="underline" target="_blank">Find out how Flex works</a>
 `,
         },
         enableFlexFailed: {
@@ -1140,7 +1140,7 @@ export default {
       },
     },
     history: {
-      backToOrder: 'Back to order',
+      backToOrder: 'View detail',
       backToOrderMsg: 'Go back to confirmation page',
       title: 'Transaction History',
       balance: 'Total balance: {balance} CONSTANT',
@@ -1559,6 +1559,7 @@ export default {
         received: 'received',
         matched: 'matched',
         holding: 'balance holding',
+        ref_number: 'Ref number',
         interest: 'Interest to date',
         totalInterest: 'Total interest',
         totalInterestDesc: 'This is the interest you will earn for the full term. If a borrower repays early, you will earn the interest to date.',
@@ -2493,7 +2494,18 @@ export default {
         BeneficiaryAddressPostalCode: 'Beneficiary Postal Code',
         createdBankFailed: 'Failed while creating new bank, please try again',
         note: 'Note (optional)',
-        fullName: 'Full Name'
+        fullName: 'Full Name',
+        transferMethod: 'Transfer Method',
+        transferMethods: {
+          ach: {
+            title: 'ACH',
+            desc: 'Fee: Free. Time: 2-5 days',
+          },
+          wire: {
+            title: 'Wire',
+            desc: 'Fee: might be charged by your bank. Time: a business day',
+          }
+        }
       },
       fee: 'Fee',
       backOrderBook: 'Buy more Constant',
@@ -4872,7 +4884,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
             'Chatting stablecoins and the future of banking - the team at {link}',
           linkCaption: 'CES 2019',
           link:
-            'https://medium.com/@constantbanking/constant-shines-at-ces-2019-c6d206bf4d91',
+            '/blog/5de72ea006d81400175587da',
         },
       },
     },
@@ -5255,7 +5267,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       <br />
       <p>You can withdraw anytime.</p>
       <br />
-      <a href="https://medium.com/@constantbanking/meet-scott-purcell-ceo-of-prime-trust-ae7581835030" target="_blank">How we deliver FDIC insurance</a>
+      <a href="/blog/5de7367206d81400175587e0" target="_blank">How we deliver FDIC insurance</a>
     `,
     whatDesc2: `
       <p>When your money is on loan, it is no longer FDIC insured, but protected by a smart contract that runs exactly as programmed - without the need for human involvement.</p>
@@ -5631,6 +5643,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       title: 'Frequently-asked questions (FAQs)',
       desc: `Here you'll find answers to the most common questions our customers ask. If you can't find your answer here, please email us at <a href="mailto:hello@myconstant.com" class="landing-link semiBold" target="_top">hello@myconstant.com</a> and we'll be happy to help you.`,
       viewAll: 'View all',
+      viewLess: 'View less',
       hide: 'Hide'
     }
   },
@@ -5911,7 +5924,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
   registerBonus: {
     title: 'Fancy $10 to get started?',
     description: 'Create your account and verify your ID to get a $10 bonus, absolutely free.',
-    numLeft: 'ONLY {numLeft} BONUSES LEFT'
+    numLeft: 'ONLY {numLeft} BONUSES LEFT',
+    forUsOnly: 'Promotion for US customers only'
   },
   signupHeader: {
     desc: 'Open an account and get a $10 bonus straight into your account',
@@ -6813,6 +6827,14 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         title: 'Your investment order is now fully matched',
         desc: `Your investment order of \${amount} is now fully matched. We found a borrower to accept your rate and term on the remaining \${matchedAmount}. You can track your investment on your <a href="/accounts" class="underline">Accounts page</a>.`
       },
+      membershipPoint: {
+        title: 'Congrats! You earned {amount} points',
+        desc: `Due to your investment order of \${amount}, your total points up til now is {totalAmount}. Only {amountToNextLevel} points to reach {nextLevel}!`
+      },
+      membershipPointMax: {
+        title: 'Congrats! You earned {amount} points',
+        desc: `Due to your investment order of \${amount}, your total points up til now is {totalAmount}. Keep up the good work!`
+      },
     },
     loan: {
       done: {
@@ -6825,29 +6847,47 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       },
       partialMatch: {
         title: 'Your loan order partially matched',
-        desc: `Your loan order of \${amount} partially matched. We found a investor to accept your rate and term on \${matchedAmount}, and we’ll continue trying to match the rest. In the meantime, you can track your order on your <a href="/accounts" class="underline">Accounts page</a>.`
+        desc: `Your loan order of \${amount} partially matched. We found a investor to accept your rate and term on \${matchedAmount}, and we’ll continue trying to match the rest. In the meantime, you can track your order on your <a href="/accounts" class="underline">Accounts page</a>.`,
+        title_1: 'Your loan order partially matched',
+        desc_1: `Your loan order of \${amount} partially matched. We found a investor to accept your rate and term on \${matchedAmount}, and we’ll continue trying to match the rest. Repay before {dueDate} and we’ll return your collateral. In the meantime, you can track your order on your <a href="/accounts" class="underline">Accounts page</a>.`
       },
       partialMatchLast: {
         title: 'Your loan order is now fully matched',
-        desc: `Your loan order of \${amount} is now fully matched. We found a investor to accept your rate and term on the remaining \${matchedAmount}. You can track your loan on your <a href="/accounts" class="underline">Accounts page</a>.`
+        desc: `Your loan order of \${amount} is now fully matched. We found a investor to accept your rate and term on the remaining \${matchedAmount}. You can track your loan on your <a href="/accounts" class="underline">Accounts page</a>.`,
+        title_1: 'Your loan order is now fully matched',
+        desc_1: `Your loan order of \${amount} is now fully matched. We found a investor to accept your rate and term on the remaining \${matchedAmount}. Repay before {dueDate} and we’ll return your collateral. You can track your loan on your <a href="/accounts" class="underline">Accounts page</a>.`
       },
       liquidate: {
         title: 'Your collateral is nearing liquidation',
         desc: `The value of your {crypto} collateral has fallen to {collateralPercent}% of the investor’s principal and earned interest. When it falls to {liquidationPercent}%, your collateral will be sold to repay the investor (you keep the loan and anything left over from the sale). Please <a href="/accounts" class="underline">top up</a> your collateral to avoid liquidation.`
       },
-      promotion: {
-        membership: {
-          title: 'title',
-          desc: `desc`
-        }
+      membershipPoint: {
+        title: 'Congrats! You earned {amount} points',
+        desc: `Due to your loan order of \${amount}, your total points up til now is {totalAmount}. Only {amountToNextLevel} points to reach {nextLevel}!`
       },
-      system: {
-        summary: {
-          title: 'title',
-          desc: `desc`
-        }
+      membershipPointMax: {
+        title: 'Congrats! You earned {amount} points',
+        desc: `Due to your loan order of \${amount}, your total points up til now is {totalAmount}. Keep up the good work!`
+      },
+    },
+    promotion: {
+      membership: {
+        title: 'title',
+        desc: `desc`
       }
-    }
+    },
+    system: {
+      summary: {
+        title: 'title',
+        desc: `desc`
+      }
+    },
+    nextLevel: {
+      0: ' ',
+      1: 'Gold',
+      2: 'Platinum',
+      3: 'Diamond',
+    },
   },
   blog: {
     title: 'The Ledger',

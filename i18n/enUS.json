@@ -15,6 +15,7 @@
             "error": "Oops, something went wrong. Please try again.",
             "retry": "Server error, please retry",
             "required": "Required",
+            "maxInterest": "Must less than {max} %",
             "maxValues": "Must less than ${max}",
             "minValues": "Must greater than ${min}",
             "copied": "Copied",
@@ -1313,6 +1314,7 @@
                 "balanceInterestDesc": "\n        <p><strong>Why is my balance increasing?</strong></p>\n            <p>As of <strong>Sep 10 2019</strong>, you’ll automatically earn <strong>{systemInterest}% APY</strong> on your current balance. These earnings will update real-time, and compound daily! You’ll still be able to withdraw anytime.</p>\n        ",
                 "balanceStarDesc": "\n        Earn STAR by referring friends. You can then redeem each STAR for 1% bonus or discounted interest. Go to Referral link for further instructions\n        ",
                 "referralDesc": "\n        Get a 10% reward when your friends earn interest – paid out every second. So if your friend earns $100, we’ll give you $10. There’s no limit to the number of friends you can refer.\n        ",
+                "referralDescUS": "\n        Get a $10 reward for you and your friends when you refer them to invest with us. Additionally, get rewarded 10% of their earned interest in their first year - paid out every second. So if your friend earns $100 we’ll give you $10. There’s no limit to the number of friends you can refer.\n        ",
                 "term": "Term",
                 "endTerm": "Term ends",
                 "trial": "TRIAL",
@@ -1387,6 +1389,7 @@
                     "shareFbSuccess": "Success! Thanks for telling your friends about Constant."
                 },
                 "shareAndEarn": "Invite friends, earn 10% more",
+                "shareAndEarnUS": "Invite a friend, earn $10 or more.",
                 "withdraw": "Withdraw",
                 "withdrawFiat": "Fiat",
                 "withdrawCrypto": "Crypto",
@@ -4441,7 +4444,7 @@
             "question2": "Why 4% APY?",
             "answer2": "Compound Finance uses a blockchain protocol that intelligently manages the lending pool. It also sets interest rates according to supply and demand. At the moment, the rate is fixed at 4% APY. In the future, it could be higher or lower depending on activity in Compound’s lending market.",
             "question3": "What is Compound Finance?",
-            "answer3": "<p>Compound Finance is a technology that intelligently manages a lending pool of over $150 million in assets (as of September 2019). Flex interfaces with this technology through an API that allows you to withdraw your deposits and earned interest at any time.</p>\n\n<p>Compound Finance lends in a similar way to banks: your deposits go in and are lent to borrowers in exchange for interest and collateral. But since Compound Finance is a technology, there is no need for branches or staff, so you enjoy a much better interest rate!</p>\n\n<p><a href=\"https://medium.com/@constantp2p/compound-finance-discover-the-interest-earning-tech-behind-flex-dcbb1decc835\">Learn more about Compound Finance.</a></p>\"",
+            "answer3": "<p>Compound Finance is a technology that intelligently manages a lending pool of over $150 million in assets (as of September 2019). Flex interfaces with this technology through an API that allows you to withdraw your deposits and earned interest at any time.</p>\n\n<p>Compound Finance lends in a similar way to banks: your deposits go in and are lent to borrowers in exchange for interest and collateral. But since Compound Finance is a technology, there is no need for branches or staff, so you enjoy a much better interest rate!</p>\n\n<p><a href=\"https://medium.com/@constantp2p/compound-finance-discover-the-interest-earning-tech-behind-flex-dcbb1decc835\">Learn more about Compound Finance.</a></p>",
             "question4": "Do you have a referral program for Flex?",
             "answer4": "Yes, we do. For every friend you refer to Flex, you’ll get 10% of their interest earnings for the first year (up to a maximum of $1,000,000). For more details, <a href=/referral\">visit your Referrals page.</a>\"",
             "question5": "Can I withdraw anytime?",
@@ -4590,7 +4593,13 @@
         "goBack": "Go back",
         "aboutYou": "About You",
         "accountActivity": "Account Activity",
-        "supportCenter": "Support Center"
+        "supportCenter": "Support Center",
+        "greeting": {
+            "title": "Good",
+            "morning": "Morning",
+            "afternoon": "Afternoon",
+            "evening": "Evening"
+        }
     },
     "airdrop": {
         "endedTitle": "The Constant STARdrop campaign has now ended (October 24 2019, 10:00 AM GMT+7). We’ve reached the limit of 10,000 STAR, and thank you all for your support.",
@@ -5327,7 +5336,15 @@
         "loan": {
             "done": {
                 "title": "Your loan has matured",
-                "desc": "Your loan of ${amount} matured on {expiredDate}. You repaid a total of ${paidAmount}, including ${interest}. Thanks for borrowing with us!"
+                "desc": "Your loan of ${amount} matured today! Please repay a total of ${paidAmount} as soon as possible to avoid extra overdue fee."
+            },
+            "done_1": {
+                "title": "Hurry! Repay your loan now",
+                "desc": "Your loan of ${amount} matured yesterday! Please repay a total of ${paidAmount} including ${overAmount} overdue fee as soon as possible to get your collateral back."
+            },
+            "done_2": {
+                "title": "Last call! Repay your loan now",
+                "desc": "Your loan of ${amount} matured a while ago! Please repay a total of ${paidAmount} including ${overAmount} overdue fee as soon as possible or your collateral will be liquidated."
             },
             "match": {
                 "title": "Your loan order matched",

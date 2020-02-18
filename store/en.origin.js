@@ -15,6 +15,7 @@
             "error": "%%%.app.common.error%%%",
             "retry": "%%%.app.common.retry%%%",
             "required": "%%%.app.common.required%%%",
+            "maxInterest": "%%%.app.common.maxInterest%%%",
             "maxValues": "%%%.app.common.maxValues%%%",
             "minValues": "%%%.app.common.minValues%%%",
             "copied": "%%%.app.common.copied%%%",
@@ -1313,6 +1314,7 @@
                 "balanceInterestDesc": "%%%.me.proSaving.listApplications.balanceInterestDesc%%%",
                 "balanceStarDesc": "%%%.me.proSaving.listApplications.balanceStarDesc%%%",
                 "referralDesc": "%%%.me.proSaving.listApplications.referralDesc%%%",
+                "referralDescUS": "%%%.me.proSaving.listApplications.referralDescUS%%%",
                 "term": "%%%.me.proSaving.listApplications.term%%%",
                 "endTerm": "%%%.me.proSaving.listApplications.endTerm%%%",
                 "trial": "%%%.me.proSaving.listApplications.trial%%%",
@@ -1387,6 +1389,7 @@
                     "shareFbSuccess": "%%%.me.proSaving.listApplications.interestInfo.shareFbSuccess%%%"
                 },
                 "shareAndEarn": "%%%.me.proSaving.listApplications.shareAndEarn%%%",
+                "shareAndEarnUS": "%%%.me.proSaving.listApplications.shareAndEarnUS%%%",
                 "withdraw": "%%%.me.proSaving.listApplications.withdraw%%%",
                 "withdrawFiat": "%%%.me.proSaving.listApplications.withdrawFiat%%%",
                 "withdrawCrypto": "%%%.me.proSaving.listApplications.withdrawCrypto%%%",
@@ -4590,7 +4593,13 @@
         "goBack": "%%%.menuMobile.goBack%%%",
         "aboutYou": "%%%.menuMobile.aboutYou%%%",
         "accountActivity": "%%%.menuMobile.accountActivity%%%",
-        "supportCenter": "%%%.menuMobile.supportCenter%%%"
+        "supportCenter": "%%%.menuMobile.supportCenter%%%",
+        "greeting": {
+            "title": "%%%.menuMobile.greeting.title%%%",
+            "morning": "%%%.menuMobile.greeting.morning%%%",
+            "afternoon": "%%%.menuMobile.greeting.afternoon%%%",
+            "evening": "%%%.menuMobile.greeting.evening%%%"
+        }
     },
     "airdrop": {
         "endedTitle": "%%%.airdrop.endedTitle%%%",
@@ -5328,6 +5337,14 @@
             "done": {
                 "title": "%%%.notification.loan.done.title%%%",
                 "desc": "%%%.notification.loan.done.desc%%%"
+            },
+            "done_1": {
+                "title": "%%%.notification.loan.done_1.title%%%",
+                "desc": "%%%.notification.loan.done_1.desc%%%"
+            },
+            "done_2": {
+                "title": "%%%.notification.loan.done_2.title%%%",
+                "desc": "%%%.notification.loan.done_2.desc%%%"
             },
             "match": {
                 "title": "%%%.notification.loan.match.title%%%",

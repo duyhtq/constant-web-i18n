@@ -15,6 +15,7 @@ export default {
       error: 'OH! something went wrong!',
       retry: 'Server error, please retry',
       required: 'Required',
+      maxInterest: 'Must less than {max} %',
       maxValues: 'Must less than ${max}',
       minValues: 'Must greater than ${min}',
       copied: 'Copied',
@@ -1582,6 +1583,9 @@ export default {
         referralDesc: `
         Get a 10% reward when your friends earn interest – paid out every second. So if your friend earns $100, we’ll give you $10. There’s no limit to the number of friends you can refer.
         `,
+        referralDescUS: `
+        Get a $10 reward for you and your friends when you refer them to invest with us. Additionally, get rewarded 10% of their earned interest in their first year - paid out every second. So if your friend earns $100 we’ll give you $10. There’s no limit to the number of friends you can refer.
+        `,
         term: 'Term',
         endTerm: 'Term ends',
         trial: 'TRIAL',
@@ -1656,6 +1660,7 @@ export default {
           shareFbSuccess: 'Share referral link success.',
         },
         shareAndEarn: `Earn 10% of friends' interest: Refer now`,
+        shareAndEarnUS: `Invite a friend, earn $10 or more.`,
         withdraw: 'Withdraw fiat',
         withdrawFiat: 'Fiat',
         withdrawCrypto: 'Crypto',
@@ -5968,6 +5973,12 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     aboutYou: 'About You',
     accountActivity: 'Account Activity',
     supportCenter: 'Support Center',
+    greeting: {
+      title: 'Good',
+      morning: 'Morning',
+      afternoon: 'Afternoon',
+      evening: 'Evening'
+    }
   },
   airdrop: {
     endedTitle: `The Constant STARdrop campaign has now ended (October 24 2019, 10:00 AM GMT+7). We’ve reached the limit of 10,000 STAR, and thank you all for your support.`,
@@ -6839,7 +6850,15 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     loan: {
       done: {
         title: 'Your loan has matured',
-        desc: `Your loan of \${amount} matured on {expiredDate}. You repaid a total of \${paidAmount}, including \${interest}. Thanks for borrowing with us!`
+        desc: `Your loan of \${amount} matured today! Please repay a total of \${paidAmount} as soon as possible to avoid extra overdue fee.`
+      },
+      done_1: {
+        title: 'Hurry! Repay your loan now',
+        desc: `Your loan of \${amount} matured yesterday! Please repay a total of \${paidAmount} including \${overAmount} overdue fee as soon as possible to get your collateral back.`
+      },
+      done_2: {
+        title: 'Last call! Repay your loan now',
+        desc: `Your loan of \${amount} matured a while ago! Please repay a total of \${paidAmount} including \${overAmount} overdue fee as soon as possible or your collateral will be liquidated.`
       },
       match: {
         title: 'Your loan order matched',

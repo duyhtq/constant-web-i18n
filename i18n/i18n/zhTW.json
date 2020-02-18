@@ -894,7 +894,7 @@
             }
         },
         "history": {
-            "backToOrder": "Back to order",
+            "backToOrder": "View detail",
             "backToOrderMsg": "Go back to confirmation page",
             "title": "Transaction History",
             "balance": "Total balance: {balance} CONSTANT",
@@ -2090,8 +2090,8 @@
                 "fullName": "Full Name",
                 "transferMethod": "Transfer Method",
                 "transferMethods": {
-                    "ach": "ACH",
-                    "wire": "Wire"
+                    "ach": "%%%.home.convert.payToForm.transferMethods.ach%%%",
+                    "wire": "%%%.home.convert.payToForm.transferMethods.wire%%%"
                 }
             },
             "fee": "Fee",
@@ -3276,8 +3276,8 @@
             "fiatAmountResultLabel": "According to the markets today, you’ll receive: {fiatAmount} {fiatCurrency}",
             "explain": "* The maximum you can withdraw is {amountExcludeFee} {currency}, so you have enough to cover the withdrawal fee.",
             "explainNoFee": "* The maximum you can withdraw is {amountExcludeFee} {currency}.",
-            "achDesc": "Note: it might take from 2 to 5 business days to process ACH transfer. Free.",
-            "wireDesc": "Note: it only takes a business day to process wire transfer. While Constant processes your withdrawals free of charge, fees may be applied separately by your financial institution."
+            "achDesc": "%%%.exchangeInputSellForm.amountResult.achDesc%%%",
+            "wireDesc": "%%%.exchangeInputSellForm.amountResult.wireDesc%%%"
         },
         "paymentMethod": "Payment method",
         "email": {
@@ -5321,7 +5321,7 @@
         "loan": {
             "done": {
                 "title": "Your loan has matured",
-                "desc": "Your loan of ${amount} matured on {expiredDate}. You repaid a total of ${paidAmount}, including ${interest}. Thanks for borrowing with us!"
+                "desc": "Your loan of ${amount} matured today! Please repay a total of ${paidAmount} as soon as possible to avoid extra overdue fee."
             },
             "match": {
                 "title": "Your loan order matched",

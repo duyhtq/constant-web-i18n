@@ -15,7 +15,6 @@
             "error": "Đã xảy ra lỗi! Xin vui lòng thử lại",
             "retry": "Lỗi máy chủ, vui lòng thử lại",
             "required": "Bắt buộc",
-            "maxInterest": "Must less than {max} %",
             "maxValues": "Phải ít hơn ${max}",
             "minValues": "Phải nhiều hơn ${min}",
             "copied": "Đã sao chép",
@@ -1298,7 +1297,6 @@
                 "received": "đã nhận",
                 "matched": "đã khớp lệnh",
                 "holding": "balance holding",
-                "ref_number": "Ref number",
                 "interest": "Lãi suất đến nay",
                 "totalInterest": "Tổng lãi suất",
                 "totalInterestDesc": "Đây là lãi suất bạn kiếm được trong nguyên một kỳ. Nếu người mượn hoàn trả sớm, bạn sẽ kiếm được lãi suất đến hiện tại.",
@@ -1314,7 +1312,6 @@
                 "balanceInterestDesc": "\n        <p><strong>Tại sao số dư tài khoản của tôi tăng?</strong></p>\n            <p>Kể từ <strong>10/09/2019</strong>, bạn tự động kiếm được <strong>{systemInterest}% tỷ suất thu nhập hàng năm</strong> vào số dư hiện tại. Thu nhập này sẽ được cập nhật mỗi ngày theo thời gian thực và tính lãi kép hàng ngày! Bạn có thể rút bất kỳ lúc nào.</p>\n        ",
                 "balanceStarDesc": "\nKiếm STAR bằng cách giới thiệu bạn bè. Bạn có thể hoàn trả 1% cho mỗi STAR hoặc giảm giá lãi suất. Đi đến link giới thiệu để được hướng dẫn        ",
                 "referralDesc": "\n        Get a 10% reward when your friends earn interest – paid out every second. So if your friend earns $100, we’ll give you $10. There’s no limit to the number of friends you can refer.\n        ",
-                "referralDescUS": "\n        Get a $10 reward for you and your friends when you refer them to invest with us. Additionally, get rewarded 10% of their earned interest in their first year - paid out every second. So if your friend earns $100 we’ll give you $10. There’s no limit to the number of friends you can refer.\n        ",
                 "term": "Kỳ hạn",
                 "endTerm": "Kỳ hạn kết thúc",
                 "trial": "THỬ NGHIỆM",
@@ -1389,7 +1386,6 @@
                     "shareFbSuccess": "Thành công! Cảm ơn đã nói với bạn bè của bạn về Constant."
                 },
                 "shareAndEarn": "Giới thiệu thêm bạn bè để nhận 10% số tiền lãi của mỗi người mà bạn giới thiệu",
-                "shareAndEarnUS": "Invite a friend, earn $10 or more.",
                 "withdraw": "Rút tiền ",
                 "withdrawFiat": "Tiền mặt",
                 "withdrawCrypto": "Tiền mã hoá",
@@ -2094,14 +2090,8 @@
                 "fullName": "Họ tên đầy đủ",
                 "transferMethod": "Transfer Method",
                 "transferMethods": {
-                    "ach": {
-                        "title": "ACH",
-                        "desc": "Fee: Free. Time: 2-5 days"
-                    },
-                    "wire": {
-                        "title": "Wire",
-                        "desc": "Fee: might be charged by your bank. Time: a business day"
-                    }
+                    "ach": "%%%.home.convert.payToForm.transferMethods.ach%%%",
+                    "wire": "%%%.home.convert.payToForm.transferMethods.wire%%%"
                 }
             },
             "fee": "Phí",
@@ -3285,7 +3275,9 @@
             "sendFee": "Phí chuyển tiền: {fee} {currency}",
             "fiatAmountResultLabel": "Theo tỉ giá thị trường hôm nay, bạn sẽ nhận được: {fiatAmount} {fiatCurrency}",
             "explain": "*Bạn có thể gửi tối đa là {amountExcludeFee} {currency}, vì vậy bạn có đủ để để trả phí chuyển khoản.",
-            "explainNoFee": "* Bạn có thể rút tối đa là {amountExcludeFee} {currency}."
+            "explainNoFee": "* Bạn có thể rút tối đa là {amountExcludeFee} {currency}.",
+            "achDesc": "%%%.exchangeInputSellForm.amountResult.achDesc%%%",
+            "wireDesc": "%%%.exchangeInputSellForm.amountResult.wireDesc%%%"
         },
         "paymentMethod": "Phương thức thanh toán",
         "email": {
@@ -4550,8 +4542,7 @@
     "registerBonus": {
         "title": "Muốn có $10 để bắt đầu?",
         "description": "Tạo tài khoản của bạn và xác minh danh tính để nhận tiền thưởng $ 10, hoàn toàn miễn phí.\n",
-        "numLeft": "CHỈ CÓ {numLeft} PHẦN THƯỞNG CÒN LẠI",
-        "forUsOnly": "Promotion for US customers only"
+        "numLeft": "CHỈ CÓ {numLeft} PHẦN THƯỞNG CÒN LẠI"
     },
     "signupHeader": {
         "desc": "Mở một tài khoản và nhận tiền thưởng $ 10 vào thẳng tài khoản của bạn\n",
@@ -4593,13 +4584,7 @@
         "goBack": "Go back",
         "aboutYou": "About You",
         "accountActivity": "Account Activity",
-        "supportCenter": "Support Center",
-        "greeting": {
-            "title": "Good",
-            "morning": "Morning",
-            "afternoon": "Afternoon",
-            "evening": "Evening"
-        }
+        "supportCenter": "Support Center"
     },
     "airdrop": {
         "endedTitle": "Chiến dịch Constant STARdrop đã kết thúc (ngày 24 tháng 10 năm 2019, 10:00 AM GMT + 7). Chúng tôi đã đạt đến giới hạn 10.000 SAO và cảm ơn tất cả các bạn đã ủng hộ.\n \n",
@@ -5337,14 +5322,6 @@
             "done": {
                 "title": "Your loan has matured",
                 "desc": "Your loan of ${amount} matured today! Please repay a total of ${paidAmount} as soon as possible to avoid extra overdue fee."
-            },
-            "done_1": {
-                "title": "Hurry! Repay your loan now",
-                "desc": "Your loan of ${amount} matured yesterday! Please repay a total of ${paidAmount} including ${overAmount} overdue fee as soon as possible to get your collateral back."
-            },
-            "done_2": {
-                "title": "Last call! Repay your loan now",
-                "desc": "Your loan of ${amount} matured a while ago! Please repay a total of ${paidAmount} including ${overAmount} overdue fee as soon as possible or your collateral will be liquidated."
             },
             "match": {
                 "title": "Your loan order matched",

@@ -197,6 +197,7 @@
 %%%.headerBar.yourSaving%%%,"Accounts"
 %%%.headerBar.myInvestments%%%,"My Investments"
 %%%.headerBar.ourStory%%%,"Our Story"
+%%%.headerBar.testimonial%%%,"Why people love us"
 %%%.headerBar.extraMenu.sendGroup%%%,"Global transfers"
 %%%.headerBar.extraMenu.send%%%,"Send"
 %%%.headerBar.extraMenu.sendDesc%%%,"Send money to anyone in the world"
@@ -2259,7 +2260,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.constantLoan.intro.desc.1%%%,"Secure escrow"
 %%%.home.constantLoan.intro.desc.2%%%,"No credit checks"
 %%%.home.constantLoan.intro.desc.3%%%,"Repay anytime"
+%%%.home.constantLoan.intro.youtube.title%%%,"Why borrow with Constant?"
 %%%.home.constantLoan.headLine%%%,"Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact."
+%%%.home.constantLoan.exchange.stakingTimeMessage%%%,"Your collateral will be sent to the Constant node. Please note: early repayment won’t be possible for at least {dayNum} days."
 %%%.home.constantLoan.exchange.usedMarketRate%%%,"Use market rate "
 %%%.home.constantLoan.exchange.usedMarketRateDesc%%%,"When market rate is enabled, you're guaranteed a match at the best rate and term available in the market."
 %%%.home.constantLoan.exchange.maxRateTooltip%%%,"This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate."
@@ -3790,6 +3793,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home1.lendingSection.intro.desc.1%%%,"Fully secured by collateral"
 %%%.home1.lendingSection.intro.desc.2%%%,"Your own rates and terms"
 %%%.home1.lendingSection.intro.desc.3%%%,"24/7 customer service"
+%%%.home1.lendingSection.intro.youtube.title%%%,"Why invest with Constant?"
 %%%.home1.lendingSection.form.gotoVerifyKyc%%%,"Go to verify now"
 %%%.home1.lendingSection.form.text1%%%,"Set your own lending terms"
 %%%.home1.lendingSection.form.text2%%%,"Invest at the current market rate of 8.00% and find a match instantly, or increase your rate and wait for a matching order."
@@ -3839,6 +3843,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home1.lendingSection.alert.zelleFailed%%%,"Something went wrong. Please try again."
 %%%.home1.lendingSection.confirm.thankYou1%%%,"Almost there."
 %%%.home1.lendingSection.confirm.thankMsg%%%,"Simply wire {amount} to the Constant Trust to make a deposit."
+%%%.home1.lendingSection.confirm.thankMsg2%%%,"
+          <div>Your account currently has a balance of {userBalance}.</div>
+          <div>Please deposit {amount} to complete your investment.</div>"
 %%%.home1.lendingSection.confirm.thankMsg1%%%,"You currently have {balance} in your balance. Please make a transfer of the remaining {amount} to proceed."
 %%%.home1.lendingSection.confirm.bankName%%%,"Bank name"
 %%%.home1.lendingSection.confirm.accountName%%%,"Account name"
@@ -3978,25 +3985,50 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         <h5>This is a platform that connects all those in pursuit of a richer, more open world. Welcome to Constant.</h5>
       "
 %%%.home1.faqs.question1%%%,"How long will it take to find a match?"
-%%%.home1.faqs.answer1%%%,"This depends on the rates and terms you set. Market levels normally result in immediate (or near-immediate) matches, so we update the market rates on the website regularly. If you choose a larger interest rate, it might take a little longer to find you a suitable match."
+%%%.home1.faqs.answer1%%%,"This depends on the rates and terms you set. If you choose the market rate, you’ll match very quickly – usually within minutes. If you set a higher rate, it might take a little longer. In that case, try reducing your interest rate to market levels to guarantee a match. We regularly update the market rate so you know what most borrowers are willing to pay."
 %%%.home1.faqs.question2%%%,"Are there any limits?"
-%%%.home1.faqs.answer2%%%,"None at all. You can invest as much or as little as you like. "
+%%%.home1.faqs.answer2%%%,"You can invest as much as you like, starting from just $50."
 %%%.home1.faqs.question3%%%,"How do I invest?"
 %%%.home1.faqs.answer3%%%,"
-        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to our FDIC-insured escrow account, and wait for a match. This is usually very quick if you’ve set market rates. </p>
-        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>
+        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Transfer that amount to one of our international bank accounts – we have banks in the US and abroad to make transfers quick and easy for you. Then sit back and wait for a match. This is usually very quick if you’ve set market rates.</p>
+        <p>Once you’ve found a match, we’ll transfer your funds from an escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – reinvest, withdraw, or send money abroad.</p>
+        <p><a href=""/blog/how-to-invest-with-constant-in-3-simple-steps"" className=""underline"" target=""_blank"">How to invest with Constant in 3 simple steps.</a></p>
       "
 %%%.home1.faqs.question4%%%,"How do you protect my investment?"
 %%%.home1.faqs.answer4%%%,"
-        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>
-        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>
-        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>      
-        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>
+        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too:</p>
+        <ol>
+          <li>All of our borrowers must put up 150% of the loan amount as crypto collateral. If they don’t repay, we sell the collateral to repay you.</li>
+          <li>We also include a liquidation threshold to insure against a fall in the collateral’s value. If the value falls to 110% of your principal and earned interest, it’s sold to repay you.</li>
+          <li>We only accept vetted, quality cryptocurrencies and cap our exposure to these markets by daily trading volume. This ensures we can sell the collateral should the market dip.</li>
+        </ol>
+        <p>These protective measures help ensure you get the returns promised. However, all investment involves risk, and despite our best efforts, we can’t guarantee the return of your principal and profit. Therefore please invest wisely.</p>
+        <p><a href=""/blog/how-we-protect-your-money-and-collateral"" className=""underline"" target=""_blank"">Read more about how we protect you.</a></p>
       "
 %%%.home1.faqs.question5%%%,"What happens when my money isn’t on loan?"
 %%%.home1.faqs.answer5%%%,"
-      <p>When not on loan or waiting for a match, you can choose to store your funds in Prime Trust, an accredited US financial institution that insures deposits up to $130M. OR earn 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>
-      <p>If you’re waiting for a match, your money will automatically remain in the custody of Prime Trust.</p>
+        <p>You choose what we do with your money when it’s not on loan or waiting to be matched:</p>
+        <ol>
+          <li>
+            <p>You can store your funds in Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>
+            <p><a href=""/blog/meet-scott-purcell-%E2%80%94-ceo-of-prime-trust"" className=""underline"" target=""_blank"">Learn more about Prime Trust.</a></p>
+            <p>OR</p>
+          </li>
+          <li>
+            <p>Earn 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>
+            <p><a href=""/blog/compound-finance-discover-the-interest-earning-tech-behind-flex"" className=""underline"" target=""_blank"">Learn more about Flex.</a></p>
+          </li>
+        </ol>
+        <p>If you’re waiting for a match, your money will automatically remain in the custody of Prime Trust.</p>
+      "
+%%%.home1.faqs.question6%%%,"What happens if a borrower repays early?"
+%%%.home1.faqs.answer6%%%,"
+        <p>If a borrower repays before 75% of the loan term is complete, they’ll pay you earned interest to date plus 50% of the interest due on the remainder of the term.</p>
+        <p>If a borrower repays after 75% of the loan term is complete, they’ll pay you 100% of the interest due on the loan.</p>
+      "
+%%%.home1.faqs.question7%%%,"What happens if you have to sell borrower collateral to repay me?"
+%%%.home1.faqs.answer7%%%,"
+        <p>If a borrower can’t repay, or their collateral falls to 110% of your principal and earned profit, we’ll sell the collateral to repay you. In either case, you’ll get your principal back. You’ll also get earned interest to date if the collateral is sold mid-term, or 100% of the interest due if the collateral is sold after the term ends.</p>
       "
 %%%.payment.intro%%%,"
     <h1>Worldwide, instant, zero cost mass payments.</h1>
@@ -4483,6 +4515,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.menuMobile.greeting.morning%%%,"Morning"
 %%%.menuMobile.greeting.afternoon%%%,"Afternoon"
 %%%.menuMobile.greeting.evening%%%,"Evening"
+%%%.menuMobile.greeting.hi%%%,"Hi you"
+%%%.menuMobile.language%%%,"Language"
+%%%.menuMobile.setting%%%,"Setting"
 %%%.airdrop.endedTitle%%%,"The Constant STARdrop campaign has now ended (October 24 2019, 10:00 AM GMT+7). We’ve reached the limit of 10,000 STAR, and thank you all for your support."
 %%%.airdrop.endDesc%%%,"You’ll receive your STAR within 10 business days – please keep an eye on your Constant account."
 %%%.airdrop.title%%%,"Earn more and pay less with STARdrop"
@@ -5082,6 +5117,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.notification.invest.membershipPoint.desc%%%,"Due to your investment order of ${amount}, your total points up til now is {totalAmount}. Only {amountToNextLevel} points to reach {nextLevel}!"
 %%%.notification.invest.membershipPointMax.title%%%,"Congrats! You earned {amount} points"
 %%%.notification.invest.membershipPointMax.desc%%%,"Due to your investment order of ${amount}, your total points up til now is {totalAmount}. Keep up the good work!"
+%%%.notification.invest.repaidEarly.title%%%,"Your investment has been repaid early"
+%%%.notification.invest.repaidEarly.desc%%%,"Your investment of {amount} has been repaid early. Please click <a href=""/accounts"" class=""underline"">here</a> to check your dashboard and reinvest your money."
 %%%.notification.loan.done.title%%%,"Your loan has matured"
 %%%.notification.loan.done.desc%%%,"Your loan of ${amount} matured today! Please repay a total of ${paidAmount} as soon as possible to avoid extra overdue fee."
 %%%.notification.loan.done_1.title%%%,"Hurry! Repay your loan now"

@@ -263,6 +263,7 @@
         "yourSaving": "%%%.headerBar.yourSaving%%%",
         "myInvestments": "%%%.headerBar.myInvestments%%%",
         "ourStory": "%%%.headerBar.ourStory%%%",
+        "testimonial": "%%%.headerBar.testimonial%%%",
         "extraMenu": {
             "sendGroup": "%%%.headerBar.extraMenu.sendGroup%%%",
             "send": "%%%.headerBar.extraMenu.send%%%",
@@ -2412,10 +2413,14 @@
                     "1": "%%%.home.constantLoan.intro.desc.1%%%",
                     "2": "%%%.home.constantLoan.intro.desc.2%%%",
                     "3": "%%%.home.constantLoan.intro.desc.3%%%"
+                },
+                "youtube": {
+                    "title": "%%%.home.constantLoan.intro.youtube.title%%%"
                 }
             },
             "headLine": "%%%.home.constantLoan.headLine%%%",
             "exchange": {
+                "stakingTimeMessage": "%%%.home.constantLoan.exchange.stakingTimeMessage%%%",
                 "usedMarketRate": "%%%.home.constantLoan.exchange.usedMarketRate%%%",
                 "usedMarketRateDesc": "%%%.home.constantLoan.exchange.usedMarketRateDesc%%%",
                 "maxRateTooltip": "%%%.home.constantLoan.exchange.maxRateTooltip%%%",
@@ -3921,6 +3926,9 @@
                     "1": "%%%.home1.lendingSection.intro.desc.1%%%",
                     "2": "%%%.home1.lendingSection.intro.desc.2%%%",
                     "3": "%%%.home1.lendingSection.intro.desc.3%%%"
+                },
+                "youtube": {
+                    "title": "%%%.home1.lendingSection.intro.youtube.title%%%"
                 }
             },
             "form": {
@@ -3974,6 +3982,7 @@
             "confirm": {
                 "thankYou1": "%%%.home1.lendingSection.confirm.thankYou1%%%",
                 "thankMsg": "%%%.home1.lendingSection.confirm.thankMsg%%%",
+                "thankMsg2": "%%%.home1.lendingSection.confirm.thankMsg2%%%",
                 "thankMsg1": "%%%.home1.lendingSection.confirm.thankMsg1%%%",
                 "bankName": "%%%.home1.lendingSection.confirm.bankName%%%",
                 "accountName": "%%%.home1.lendingSection.confirm.accountName%%%",
@@ -4070,7 +4079,11 @@
             "question4": "%%%.home1.faqs.question4%%%",
             "answer4": "%%%.home1.faqs.answer4%%%",
             "question5": "%%%.home1.faqs.question5%%%",
-            "answer5": "%%%.home1.faqs.answer5%%%"
+            "answer5": "%%%.home1.faqs.answer5%%%",
+            "question6": "%%%.home1.faqs.question6%%%",
+            "answer6": "%%%.home1.faqs.answer6%%%",
+            "question7": "%%%.home1.faqs.question7%%%",
+            "answer7": "%%%.home1.faqs.answer7%%%"
         }
     },
     "payment": {
@@ -4598,8 +4611,11 @@
             "title": "%%%.menuMobile.greeting.title%%%",
             "morning": "%%%.menuMobile.greeting.morning%%%",
             "afternoon": "%%%.menuMobile.greeting.afternoon%%%",
-            "evening": "%%%.menuMobile.greeting.evening%%%"
-        }
+            "evening": "%%%.menuMobile.greeting.evening%%%",
+            "hi": "%%%.menuMobile.greeting.hi%%%"
+        },
+        "language": "%%%.menuMobile.language%%%",
+        "setting": "%%%.menuMobile.setting%%%"
     },
     "airdrop": {
         "endedTitle": "%%%.airdrop.endedTitle%%%",
@@ -5331,6 +5347,10 @@
             "membershipPointMax": {
                 "title": "%%%.notification.invest.membershipPointMax.title%%%",
                 "desc": "%%%.notification.invest.membershipPointMax.desc%%%"
+            },
+            "repaidEarly": {
+                "title": "%%%.notification.invest.repaidEarly.title%%%",
+                "desc": "%%%.notification.invest.repaidEarly.desc%%%"
             }
         },
         "loan": {

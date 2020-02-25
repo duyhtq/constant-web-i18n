@@ -15,6 +15,7 @@
             "error": "Đã xảy ra lỗi! Xin vui lòng thử lại",
             "retry": "Lỗi máy chủ, vui lòng thử lại",
             "required": "Bắt buộc",
+            "maxInterest": "Must less than {max} %",
             "maxValues": "Phải ít hơn ${max}",
             "minValues": "Phải nhiều hơn ${min}",
             "copied": "Đã sao chép",
@@ -262,6 +263,7 @@
         "yourSaving": "Tài khoản",
         "myInvestments": "Đầu tư của tôi",
         "ourStory": "Our Story",
+        "testimonial": "Why people love us",
         "extraMenu": {
             "sendGroup": "Chuyển tiền quốc tế",
             "send": "Gửi",
@@ -1297,6 +1299,7 @@
                 "received": "đã nhận",
                 "matched": "đã khớp lệnh",
                 "holding": "balance holding",
+                "ref_number": "Ref number",
                 "interest": "Lãi suất đến nay",
                 "totalInterest": "Tổng lãi suất",
                 "totalInterestDesc": "Đây là lãi suất bạn kiếm được trong nguyên một kỳ. Nếu người mượn hoàn trả sớm, bạn sẽ kiếm được lãi suất đến hiện tại.",
@@ -1312,6 +1315,7 @@
                 "balanceInterestDesc": "\n        <p><strong>Tại sao số dư tài khoản của tôi tăng?</strong></p>\n            <p>Kể từ <strong>10/09/2019</strong>, bạn tự động kiếm được <strong>{systemInterest}% tỷ suất thu nhập hàng năm</strong> vào số dư hiện tại. Thu nhập này sẽ được cập nhật mỗi ngày theo thời gian thực và tính lãi kép hàng ngày! Bạn có thể rút bất kỳ lúc nào.</p>\n        ",
                 "balanceStarDesc": "\nKiếm STAR bằng cách giới thiệu bạn bè. Bạn có thể hoàn trả 1% cho mỗi STAR hoặc giảm giá lãi suất. Đi đến link giới thiệu để được hướng dẫn        ",
                 "referralDesc": "\n        Get a 10% reward when your friends earn interest – paid out every second. So if your friend earns $100, we’ll give you $10. There’s no limit to the number of friends you can refer.\n        ",
+                "referralDescUS": "\n        Get a $10 reward for you and your friends when you refer them to invest with us. Additionally, get rewarded 10% of their earned interest in their first year - paid out every second. So if your friend earns $100 we’ll give you $10. There’s no limit to the number of friends you can refer.\n        ",
                 "term": "Kỳ hạn",
                 "endTerm": "Kỳ hạn kết thúc",
                 "trial": "THỬ NGHIỆM",
@@ -1386,6 +1390,7 @@
                     "shareFbSuccess": "Thành công! Cảm ơn đã nói với bạn bè của bạn về Constant."
                 },
                 "shareAndEarn": "Giới thiệu thêm bạn bè để nhận 10% số tiền lãi của mỗi người mà bạn giới thiệu",
+                "shareAndEarnUS": "Invite a friend, earn $10 or more.",
                 "withdraw": "Rút tiền ",
                 "withdrawFiat": "Tiền mặt",
                 "withdrawCrypto": "Tiền mã hoá",
@@ -2090,8 +2095,14 @@
                 "fullName": "Họ tên đầy đủ",
                 "transferMethod": "Transfer Method",
                 "transferMethods": {
-                    "ach": "%%%.home.convert.payToForm.transferMethods.ach%%%",
-                    "wire": "%%%.home.convert.payToForm.transferMethods.wire%%%"
+                    "ach": {
+                        "title": "ACH",
+                        "desc": "Fee: Free. Time: 2-5 days"
+                    },
+                    "wire": {
+                        "title": "Wire",
+                        "desc": "Fee: might be charged by your bank. Time: a business day"
+                    }
                 }
             },
             "fee": "Phí",
@@ -2402,10 +2413,14 @@
                     "1": "Bảo chứng an toàn",
                     "2": "Không kiểm tra lịch sử tín dụng",
                     "3": "Tất toán bất cứ lúc nào"
+                },
+                "youtube": {
+                    "title": "Why borrow with Constant?"
                 }
             },
             "headLine": "Bạn muốn trả nợ thẻ tín dụng, viện phí hoặc tiền thuê nhà? Đơn giản chỉ cần nhập số lượng Constant bạn muốn vay và đặt cọc ETH, khoản vay Constant sẽ được giữ an toàn trong hợp đồng thông minh của Constant.",
             "exchange": {
+                "stakingTimeMessage": "Your collateral will be sent to the Constant node. Please note: early repayment won’t be possible for at least {dayNum} days.",
                 "usedMarketRate": "Mức lãi suất thị trường ",
                 "usedMarketRateDesc": "Khi sử dụng mức lãi suất thị trường, lệnh của bạn sẽ được khớp ở mức lãi suất và kì hạn tốt nhất có trên thị trường.",
                 "maxRateTooltip": "Đây là lãi suất bình quân năm (APR) mà bạn sẵn sàng trả cho khoản vay. Nếu có một nhà đầu tư sẵn sàng nhận lợi nhuận ít hơn, bạn sẽ trả lãi suất thấp hơn.",
@@ -3275,9 +3290,7 @@
             "sendFee": "Phí chuyển tiền: {fee} {currency}",
             "fiatAmountResultLabel": "Theo tỉ giá thị trường hôm nay, bạn sẽ nhận được: {fiatAmount} {fiatCurrency}",
             "explain": "*Bạn có thể gửi tối đa là {amountExcludeFee} {currency}, vì vậy bạn có đủ để để trả phí chuyển khoản.",
-            "explainNoFee": "* Bạn có thể rút tối đa là {amountExcludeFee} {currency}.",
-            "achDesc": "%%%.exchangeInputSellForm.amountResult.achDesc%%%",
-            "wireDesc": "%%%.exchangeInputSellForm.amountResult.wireDesc%%%"
+            "explainNoFee": "* Bạn có thể rút tối đa là {amountExcludeFee} {currency}."
         },
         "paymentMethod": "Phương thức thanh toán",
         "email": {
@@ -3913,6 +3926,9 @@
                     "1": "Đảm bảo bởi tài sản thế chấp",
                     "2": "Tự chọn kì hạn và lãi suất",
                     "3": "Hỗ trợ 24/7"
+                },
+                "youtube": {
+                    "title": "Why invest with Constant?"
                 }
             },
             "form": {
@@ -3966,6 +3982,7 @@
             "confirm": {
                 "thankYou1": "Đã gần xong.",
                 "thankMsg": "Xin vui lòng chuyển khoản {amount} để hoàn thành việc nạp tiền",
+                "thankMsg2": "\n          <div>Your account currently has a balance of {userBalance}.</div>\n          <div>Please deposit {amount} to complete your investment.</div>",
                 "thankMsg1": "Số dư hiện tại: {balance}. Xin vui lòng nộp vào tài khoản đủ {amount} để tiếp tục.",
                 "bankName": "Tên ngân hàng",
                 "accountName": "Tên tài khoản",
@@ -4054,15 +4071,19 @@
         },
         "faqs": {
             "question1": "Cần bao lâu để kết nối nhà đầu tư và người cần vay vốn?",
-            "answer1": "Điều này hoàn toàn phụ thuộc vào kì hạn và mức lãi suất mà bạn mong muốn. Bạn sẽ được kết nối gần như ngay lập tức nếu chọn mức lãi suất ngang với mức thị trường. Nếu không, sẽ lâu hơn một chút để bạn được kết nối. Mức lãi suất thị trường sẽ được cập nhật thường xuyên trên website. Sau khi bạn được khớp, khoản vay sẽ có sẵn trong tài khoản của bạn trong vòng 24 giờ (lâu hơn một chút với số tiền vay lớn).",
+            "answer1": "This depends on the rates and terms you set. If you choose the market rate, you’ll match very quickly – usually within minutes. If you set a higher rate, it might take a little longer. In that case, try reducing your interest rate to market levels to guarantee a match. We regularly update the market rate so you know what most borrowers are willing to pay.",
             "question2": "Có hạn mức không?",
-            "answer2": "Hoàn toàn không có giới hạn. Bạn có thể đầu tư bao nhiêu cũng được. ",
+            "answer2": "You can invest as much as you like, starting from just $50.",
             "question3": "Làm thế nào để đầu tư?",
-            "answer3": "\n<p>Nhập số tiền đầu tư và chọn mức lãi suất và kì hạn mà bạn mong muốn. Chuyển khoản tới quỹ Constant để hoàn tất đầu tư và đợi Constant tìm kiếm cho bạn một người vay phù hợp. Nên chọn mức lãi suất ngang mức thị trường để được kết nối nhanh nhất.</p>\n        <p>Khi đã được kết nối, hợp đồng thông minh sẽ tự động gửi tiền của bạn đến tài khoản người vay và lãi sẽ được tính ngay từ lúc đó. Khi đáo hạn, người vay sẽ hoàn trả toàn bộ khoản vay và lãi. Tất cả sẽ được chuyển vào tài khoản Constant của bạn. Sau đó bạn có thể tái đầu tư, rút tiền hoặc thực hiện chuyển khoản quốc tế.</p>      ",
+            "answer3": "\n        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Transfer that amount to one of our international bank accounts – we have banks in the US and abroad to make transfers quick and easy for you. Then sit back and wait for a match. This is usually very quick if you’ve set market rates.</p>\n        <p>Once you’ve found a match, we’ll transfer your funds from an escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – reinvest, withdraw, or send money abroad.</p>\n        <p><a href=\"/blog/how-to-invest-with-constant-in-3-simple-steps\" className=\"underline\" target=\"_blank\">How to invest with Constant in 3 simple steps.</a></p>\n      ",
             "question4": "Constant làm gì để bảo vệ khoản tiền của nhà đầu tư?",
-            "answer4": "\n        <p> Chúng tôi đã thực hiện các bước quan trọng để bảo vệ không chỉ khoản đầu tư của bạn mà cả lợi nhuận của bạn.</p>\n         <p> Tất cả những người vay của chúng tôi phải đặt giá trị 150% số tiền vay làm tài sản thế chấp bằng tiền điện tử. Chúng tôi cũng đặt ngưỡng thanh lý để bảo đảm chống lại sự sụt giảm giá trị tài sản thế chấp. </p>\n         <p> Điều khoản cho vay của bạn được mã hóa thành hợp đồng thông minh Ethereum xác định nghiêm ngặt cách sử dụng tiền của bạn. Khi không cho vay, chúng tôi sẽ lưu trữ tiền của bạn trong các tài khoản ngân hàng được bảo hiểm bởi FDIC, được giám sát bởi Prime Trust.</p>\n         <p> Kết hợp với nhau, các biện pháp bảo vệ này đảm bảo rằng không có vấn đề gì xảy ra nếu người đi vay không trả nợ, nếu thị trường tiền điện tử giảm hoặc một số sự kiện không may khác xảy ra, thì tiền gốc và tiền lãi của bạn được đảm bảo.</p>",
+            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too:</p>\n        <ol>\n          <li>All of our borrowers must put up 150% of the loan amount as crypto collateral. If they don’t repay, we sell the collateral to repay you.</li>\n          <li>We also include a liquidation threshold to insure against a fall in the collateral’s value. If the value falls to 110% of your principal and earned interest, it’s sold to repay you.</li>\n          <li>We only accept vetted, quality cryptocurrencies and cap our exposure to these markets by daily trading volume. This ensures we can sell the collateral should the market dip.</li>\n        </ol>\n        <p>These protective measures help ensure you get the returns promised. However, all investment involves risk, and despite our best efforts, we can’t guarantee the return of your principal and profit. Therefore please invest wisely.</p>\n        <p><a href=\"/blog/how-we-protect-your-money-and-collateral\" className=\"underline\" target=\"_blank\">Read more about how we protect you.</a></p>\n      ",
             "question5": "Phần tiền không đầu tư trong tài khoản Constant có được bảo đảm không?",
-            "answer5": "\n      <p>When not on loan or waiting for a match, you can choose to store your funds in Prime Trust, an accredited US financial institution that insures deposits up to $130M. OR earn 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>\n      <p>If you’re waiting for a match, your money will automatically remain in the custody of Prime Trust.</p>\n      "
+            "answer5": "\n        <p>You choose what we do with your money when it’s not on loan or waiting to be matched:</p>\n        <ol>\n          <li>\n            <p>You can store your funds in Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>\n            <p><a href=\"/blog/meet-scott-purcell-%E2%80%94-ceo-of-prime-trust\" className=\"underline\" target=\"_blank\">Learn more about Prime Trust.</a></p>\n            <p>OR</p>\n          </li>\n          <li>\n            <p>Earn 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>\n            <p><a href=\"/blog/compound-finance-discover-the-interest-earning-tech-behind-flex\" className=\"underline\" target=\"_blank\">Learn more about Flex.</a></p>\n          </li>\n        </ol>\n        <p>If you’re waiting for a match, your money will automatically remain in the custody of Prime Trust.</p>\n      ",
+            "question6": "What happens if a borrower repays early?",
+            "answer6": "\n        <p>If a borrower repays before 75% of the loan term is complete, they’ll pay you earned interest to date plus 50% of the interest due on the remainder of the term.</p>\n        <p>If a borrower repays after 75% of the loan term is complete, they’ll pay you 100% of the interest due on the loan.</p>\n      ",
+            "question7": "What happens if you have to sell borrower collateral to repay me?",
+            "answer7": "\n        <p>If a borrower can’t repay, or their collateral falls to 110% of your principal and earned profit, we’ll sell the collateral to repay you. In either case, you’ll get your principal back. You’ll also get earned interest to date if the collateral is sold mid-term, or 100% of the interest due if the collateral is sold after the term ends.</p>\n      "
         }
     },
     "payment": {
@@ -4542,7 +4563,8 @@
     "registerBonus": {
         "title": "Muốn có $10 để bắt đầu?",
         "description": "Tạo tài khoản của bạn và xác minh danh tính để nhận tiền thưởng $ 10, hoàn toàn miễn phí.\n",
-        "numLeft": "CHỈ CÓ {numLeft} PHẦN THƯỞNG CÒN LẠI"
+        "numLeft": "CHỈ CÓ {numLeft} PHẦN THƯỞNG CÒN LẠI",
+        "forUsOnly": "Promotion for US customers only"
     },
     "signupHeader": {
         "desc": "Mở một tài khoản và nhận tiền thưởng $ 10 vào thẳng tài khoản của bạn\n",
@@ -4584,7 +4606,16 @@
         "goBack": "Go back",
         "aboutYou": "About You",
         "accountActivity": "Account Activity",
-        "supportCenter": "Support Center"
+        "supportCenter": "Support Center",
+        "greeting": {
+            "title": "Good",
+            "morning": "Morning",
+            "afternoon": "Afternoon",
+            "evening": "Evening",
+            "hi": "Hi you"
+        },
+        "language": "Language",
+        "setting": "Setting"
     },
     "airdrop": {
         "endedTitle": "Chiến dịch Constant STARdrop đã kết thúc (ngày 24 tháng 10 năm 2019, 10:00 AM GMT + 7). Chúng tôi đã đạt đến giới hạn 10.000 SAO và cảm ơn tất cả các bạn đã ủng hộ.\n \n",
@@ -5316,12 +5347,24 @@
             "membershipPointMax": {
                 "title": "Congrats! You earned {amount} points",
                 "desc": "Due to your investment order of ${amount}, your total points up til now is {totalAmount}. Keep up the good work!"
+            },
+            "repaidEarly": {
+                "title": "Your investment has been repaid early",
+                "desc": "Your investment of {amount} has been repaid early. Please click <a href=\"/accounts\" class=\"underline\">here</a> to check your dashboard and reinvest your money."
             }
         },
         "loan": {
             "done": {
                 "title": "Your loan has matured",
                 "desc": "Your loan of ${amount} matured today! Please repay a total of ${paidAmount} as soon as possible to avoid extra overdue fee."
+            },
+            "done_1": {
+                "title": "Hurry! Repay your loan now",
+                "desc": "Your loan of ${amount} matured yesterday! Please repay a total of ${paidAmount} including ${overAmount} overdue fee as soon as possible to get your collateral back."
+            },
+            "done_2": {
+                "title": "Last call! Repay your loan now",
+                "desc": "Your loan of ${amount} matured a while ago! Please repay a total of ${paidAmount} including ${overAmount} overdue fee as soon as possible or your collateral will be liquidated."
             },
             "match": {
                 "title": "Your loan order matched",

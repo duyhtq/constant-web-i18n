@@ -1659,7 +1659,7 @@
 %%%.user.register.registerSuccessfully%%%,"Success! Welcome to Constant. We’ve sent a verification email to your inbox."
 %%%.user.register.agreementAction%%%,"User Agreement and Privacy Policy."
 %%%.user.register.registerFailed%%%,"Failed while creating your account, please try again"
-%%%.user.register.referrerReferralCode%%%,"Your referrer's referral code: {code}"
+%%%.user.register.referrerReferralCode%%%,"Invitation code (optional)"
 %%%.user.register.promotionCode%%%,"Promotion Code"
 %%%.user.register.agreementText%%%,"By ticking this box, I agree to Constant's"
 %%%.user.register.agreementTextLink%%%,"Terms and Conditions."

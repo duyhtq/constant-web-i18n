@@ -1809,7 +1809,7 @@
             "registerSuccessfully": "Thành công! Chào mừng tới Constant. Chúng tôi đã gửi email xác minh tới hộp thư đến của bạn.",
             "agreementAction": "Thoả thuận sử dụng và Chính sách bảo mật.",
             "registerFailed": "Đã xảy ra lỗi. Xin vui lòng thử lại.",
-            "referrerReferralCode": "Mã người được giới thiệu:{code}",
+            "referrerReferralCode": "Invitation code (optional)",
             "promotionCode": "Mã khuyến mãi",
             "agreementText": "By ticking this box, I agree to Constant's",
             "agreementTextLink": "Điều khoản và Điều kiện."

@@ -1809,7 +1809,7 @@
             "registerSuccessfully": "Success! Welcome to Constant. We’ve sent a verification email to your inbox.",
             "agreementAction": "User Agreement and Privacy Policy.",
             "registerFailed": "Sorry, something went wrong. Please try again.",
-            "referrerReferralCode": "Your referrer's referral code: {code}",
+            "referrerReferralCode": "Invitation code (optional)",
             "promotionCode": "Promotion Code",
             "agreementText": "By ticking this box, I agree to Constant's",
             "agreementTextLink": "Terms and Conditions."

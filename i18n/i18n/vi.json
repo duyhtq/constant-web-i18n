@@ -748,6 +748,12 @@
             "changeSuccess": "Thay đổi mật khẩu thành công",
             "changeFailed": "Hãy chắc chắn bạn đã nhập đúng mật khẩu cũ"
         },
+        "changeRef": {
+            "title": "Change your referral code",
+            "btnChange": "Change",
+            "changeSuccess": "Your referral code was changed successfully",
+            "changeFailed": "Your referral code was changed failed"
+        },
         "twoFa": {
             "googleAuth": "Xác thực Google",
             "sMSAuth": "Xác thực tin nhắn",
@@ -1322,6 +1328,8 @@
                 "trial_description": "Đã hết kì hạn. Bạn được giữ phần lãi",
                 "saving_title": "Khoản đầu tư",
                 "loans_title": "Khoản vay",
+                "secondInvestments": "Secondary Market",
+                "secondInvestmentsDesc": "Buy and sell matched investments on our secondary market. Sell your investment to end your term early or buy another investor’s order to earn their interest. View or cancel your secondary market orders below.",
                 "repaySuccess": "Chúng tôi sẽ trừ trực tiếp từ số dư của bạn. Tài sản thế chấp sẽ được trả về ví ban đầu của bạn trong giây lát. Cảm ơn.",
                 "anyTime_saving": "Số dư",
                 "balanceInterest": "Lãi suất kiếm được cho đến nay",
@@ -1337,12 +1345,20 @@
                 "payOffLoanTitle": "Khoản vay hoàn trả",
                 "allStatus": "Tất cả",
                 "termStatusFilter": {
-                    "pending": "Đang chờ",
-                    "matching": "Đang khớp lệnh",
-                    "matched": "Đã khớp",
-                    "closed": "Huỷ",
-                    "allStatus": "Tất cả",
-                    "done": "Hoàn tất"
+                    "investment": {
+                        "pending": "Pending",
+                        "matching": "Matching",
+                        "matched": "Matched",
+                        "closed": "Cancelled",
+                        "allStatus": "All",
+                        "done": "Done"
+                    },
+                    "secondary_investment": {
+                        "voiding": "Selling",
+                        "voided": "Sold",
+                        "matched": "Bought",
+                        "done": "Done"
+                    }
                 },
                 "termStatus": {
                     "created": "Đã khớp",
@@ -1359,7 +1375,10 @@
                     "transferring_fiat": "Đang chờ",
                     "closed_soon": "Đã khớp",
                     "undefined": "",
-                    "picked": "Đang chờ"
+                    "picked": "Đang chờ",
+                    "voiding": "Selling",
+                    "voided": "Sold",
+                    "void_cancelled": "Canceled"
                 },
                 "interestInfo": {
                     "header": {
@@ -1575,7 +1594,10 @@
                     "batchTransferSuccess": "Gửi tập tin hàng loạt thành công",
                     "batchTransferFailed": "Gửi tập tin hàng loạt thất bại",
                     "confirmBatchTransferSuccess": "Thành công",
-                    "confirmBatchTransferFailed": "Thất bại"
+                    "confirmBatchTransferFailed": "Thất bại",
+                    "voidInvestmentSuccess": "Thanks. Your investment has rejoined the matching queue and we’ll let you know when we find a buyer. In the meantime, you can cancel your sell order from your Accounts page.",
+                    "voidInvestmentFailed": "Sorry, we couldn’t create your sell order. Please try again later. If you keep seeing this message, please email us at <a href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>.",
+                    "voidInvestmentFailedMinAmount": "Sorry, we couldn't create your sell order as your investment is less than ${minAmount}."
                 },
                 "batchTransferDialog": {
                     "title": "",
@@ -1632,7 +1654,15 @@
                     "earned": "Đã kiếm được",
                     "duration": "Kỳ hạn",
                     "matchedDate": "Ngày được khớp",
-                    "due": "Kỳ hạn kết thúc"
+                    "due": "Kỳ hạn kết thúc",
+                    "void": "End your term early",
+                    "dialog": {
+                        "void": {
+                            "messageConfirm": "\n              <p>To end your term early, you can sell your investment to another investor. Once sold, you get your principal of ${amount} back and 2% APR on elapsed term time, but you’ll lose any earned membership points on this investment. Selling normally takes around 24 hours.</p> \n              <p>Would you like to sell your investment?</p> \n              ",
+                            "confirm": "Yes",
+                            "cancel": "Go back"
+                        }
+                    }
                 },
                 "yourInvestments": "Khớp {plural} {matched}",
                 "partialMatchesDesc": "Một số khoản đầu tư có thể được chia thành một lượng nhỏ để lấp đầy nhiều đơn đặt hàng cho vay. Nền tảng sẽ tiếp tục cố gắng để khớp khoản đầu tư của bạn theo đúng kỳ hạn.",
@@ -4083,7 +4113,58 @@
             "question6": "What happens if a borrower repays early?",
             "answer6": "\n        <p>If a borrower repays before 75% of the loan term is complete, they’ll pay you earned interest to date plus 50% of the interest due on the remainder of the term.</p>\n        <p>If a borrower repays after 75% of the loan term is complete, they’ll pay you 100% of the interest due on the loan.</p>\n      ",
             "question7": "What happens if you have to sell borrower collateral to repay me?",
-            "answer7": "\n        <p>If a borrower can’t repay, or their collateral falls to 110% of your principal and earned profit, we’ll sell the collateral to repay you. In either case, you’ll get your principal back. You’ll also get earned interest to date if the collateral is sold mid-term, or 100% of the interest due if the collateral is sold after the term ends.</p>\n      "
+            "answer7": "\n        <p>If a borrower can’t repay, or their collateral falls to 110% of your principal and earned profit, we’ll sell the collateral to repay you. In either case, you’ll get your principal back. You’ll also get earned interest to date if the collateral is sold mid-term, or 100% of the interest due if the collateral is sold after the term ends.</p>\n      ",
+            "question8": "Can I end my investment term early?",
+            "answer8": "\n        <p>Yes. To end your term early, you can sell your investment to another investor from your Accounts page. Once sold, you’ll get your principal back and 2% APR on elapsed term time. Selling relies on finding a buyer willing to accept your rate and term so might take around 24 hours. You’ll also lose any earned membership points on your sold investment.</p>\n      "
+        }
+    },
+    "investbackedBond": {
+        "intro": {
+            "content": "\n          <h6>Invest the way you want</h6>\n          <h2>Set your own rates.</h2>\n          <h2>Invest from $50.</h2>\n          <h2>Invest only in secured loans.</h2>\n          <br />\n          <h6>\n          Your investments are fully backed by borrower collateral. Unmatched portions earn an automatic 4% APY, and can be withdrawn anytime.\n          </h6>\n        ",
+            "desc": {
+                "1": "Fully secured by collateral",
+                "2": "Your own rates and terms",
+                "3": "24/7 customer service"
+            }
+        },
+        "what": {
+            "title": "Why invest with us?",
+            "whatCaption0": "Set your own rates",
+            "whatCaption1": "Insured up to $130M while waiting for a match",
+            "whatCaption2": "Protected by Ethereum smart contracts while on loan",
+            "whatCaption3": "Only invest in secured loans",
+            "whatDesc0": "\n      <p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.</p>\n    ",
+            "whatDesc1": "\n      <p>Earn interest before you even make an investing order. All deposits earn {interest}% APY by default and can be withdrawn at any time. Compounded and paid every second. Stay flexible and enjoy zero downtime.</p>\n    ",
+            "whatDesc2": "\n      <p>Enjoy 24-7 customer service, unlimited free withdrawals, and a library of useful content to help you do more with your money. Constant is an open, alternative financial platform and you can <a href=\"https://github.com/constant-money\" target=\"_blank\">view all our code</a> as well as suggest features you’d like to see</p>\n    ",
+            "whatDesc3": "\n      <p>We strictly require every loan to be 150% backed by collateral. For someone to borrow $10,000, they have to put up $15,000 in collateral value.</p>\n      <br />\n      <p>So if borrowers default, you don’t lose a cent.</p>\n      <br />\n      <a href=\"https://medium.com/@constantp2p/risk-and-our-p2p-lending-platform-what-you-should-know-1edcd5a4a5b3\" target=\"_blank\">How we protect investor funds</a>\n    "
+        },
+        "howItWorks": {
+            "mainTitle": "How it works",
+            "mainDesc": "\n      ",
+            "step1": "Step 1",
+            "title1": "You make an investment",
+            "desc1": "Choose among our flexible Investment Plans, then make a bank transfer of any amount to the FDIC insured Constant Vault. Your funds will be held in USD, to protect against volatility. We earn you interest and make sure your money is secure, by lending your funds only to borrowers who are willing to overcollateralize.",
+            "step2": "Step 2",
+            "title2": "Your money multplies",
+            "desc2": "No matter which commitment period you choose, returns are paid out daily into a Flexible Account. Flexible means you can withdraw whenever you like, and earn an extra 1% annually. Stay liquid and make profit on your profit.",
+            "step3": "Step 3",
+            "title3": "You withdraw profit",
+            "desc3": "Your investment income is in USD, but you can withdraw it to any local bank account at the end of the commitment period. Or you could reinvest it to keep growing your money."
+        },
+        "faqs": {
+            "question1": "How long will it take to find a match?",
+            "answer1": "This depends on the rates and terms you set. Market levels normally result in immediate (or near-immediate) matches, so we update the market rates on the website regularly. If you choose a larger interest rate, it might take a little longer to find you a suitable match.",
+            "question2": "Are there any limits?",
+            "answer2": "None at all. You can invest as much or as little as you like. ",
+            "question3": "How do I invest?",
+            "answer3": "\n        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to our FDIC-insured escrow account, and wait for a match. This is usually very quick if you’ve set market rates. </p>\n        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>\n      ",
+            "question4": "How do you protect my investment?",
+            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
+            "question5": "What happens when my money isn’t on loan?",
+            "answer5": "When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds."
+        },
+        "alert": {
+            "getBankBondSettingsFailed": "Something went wrong. Please try again."
         }
     },
     "payment": {
@@ -4222,6 +4303,11 @@
             "sendInvitationsFail": "Gửi Lời Mời Thất Bại!",
             "maximum_invitation_email": "Số lượt mời email tối đa"
         },
+        "editReferral": {
+            "success": "Update referral code successfully",
+            "failed": "Update referral code failed",
+            "duplicated": "Sorry, someone has already created that referral code. Please choose another."
+        },
         "faqs": {
             "question1": "Hệ thống hỗ trợ những đồng tiền mã hoá nào?",
             "answer1": "Hiện tại, chúng tôi chỉ hỗ trợ BTC, ETH và CONST",
@@ -4279,6 +4365,11 @@
             "head3": "Outside business hours",
             "head4": "Fee"
         },
+        "withdrawCollateralData": {
+            "title1": "ERC20 collaterals <strong>not</strong> deposited in BitGo / BTC, ETH, BEP2, TOMO, BEAM, XZC: <$10,000",
+            "title2": "ERC20 collaterals <strong>not</strong> deposited in BitGo / BTC, ETH, BEP2, TOMO, BEAM, XZC: >$10,000",
+            "title3": "<a href=\"https://docs.google.com/spreadsheets/d/1VIiNXdg7LTJXuUHhtYw2nEH14q4d9rUjW_9QH2zIyzU/edit#gid=0\" target=\"_blank\" class=\"underline bold\">ERC20 collaterals deposited in BitGo</a> / Others"
+        },
         "matchingFee": {
             "head1": "Phí kết nối",
             "head2": " "
@@ -4316,6 +4407,9 @@
             "borrowed": "Đã cho vay tại giá thị trường",
             "investments": "Lệnh đầu tư",
             "borrows": "Mở lệnh vay",
+            "voidInvestmentBorrows": "Secondary Investments",
+            "voidInvestmentBorrowsDesc": "These are matched orders investors want to sell. You can’t change the term or rate on a secondary investment, but you earn all the interest due on the loan regardless of how much time is left in the term.",
+            "bankBondBorrows": "Open Bank Bond Borrowing Orders",
             "interestSpread": "Chênh lệch lãi suất",
             "interestSpreadDesc": "Chênh lệch lãi suất là chênh lệch giữa lãi suất cho vay ra thấp nhất và lãi suất muốn vay vào cao nhất\n",
             "interestSpreadValues": "0.10%",
@@ -4326,10 +4420,10 @@
             "matched": "Thời gian"
         },
         "balances": {
-            "collateralBalances": "Coin balance",
+            "collateralBalances": "Withdraw crypto",
             "title": "Số dư",
             "titleDesc": "Tất cả các khoản đầu tư và thế chấp nạp vào được thể hiện ở đây.",
-            "withdraw": "Rút",
+            "withdraw": "Withdraw cash",
             "withdrawFrom": {
                 "title": "Rút tiền mã hoá thế chấp của bạn",
                 "amount": "Số lượng",
@@ -4362,7 +4456,7 @@
             "side": "Bên cạnh",
             "amount": "Số lượng (USD)",
             "interest": "Lãi suất (%/năm)",
-            "term": "Kì hạn (Ngày)",
+            "term": "Days",
             "date": "Đã tạo",
             "matched": "Đã khớp",
             "messageSuccess": "Lệnh của bạn đã huỷ thành công"
@@ -4375,7 +4469,7 @@
             "side": "Bên cạnh",
             "amount": "Số lượng (USD)",
             "interest": "Lãi suất (%/năm)",
-            "term": "Kì hạn (Ngày)",
+            "term": "Days",
             "date": "Đã tạo",
             "matched": "Đã khớp",
             "messageSuccess": "Lệnh của bạn đã huỷ thành công"
@@ -4448,7 +4542,8 @@
             }
         },
         "orderBook": "Sổ lệnh",
-        "tradeHistory": "Lịch sử giao dịch"
+        "tradeHistory": "Lịch sử giao dịch",
+        "activityChart": "Activity Chart My Constant"
     },
     "deposit1": {
         "faqs": {
@@ -4615,7 +4710,10 @@
             "hi": "Hi you"
         },
         "language": "Language",
-        "setting": "Setting"
+        "setting": "Setting",
+        "btnInvestments": "Investments",
+        "btnLoans": "Loans",
+        "btnSecondaryMarket": "<div class=\"textLeft\"><small>Secondary</small><div>Market</div></div>"
     },
     "airdrop": {
         "endedTitle": "Chiến dịch Constant STARdrop đã kết thúc (ngày 24 tháng 10 năm 2019, 10:00 AM GMT + 7). Chúng tôi đã đạt đến giới hạn 10.000 SAO và cảm ơn tất cả các bạn đã ủng hộ.\n \n",
@@ -4903,6 +5001,50 @@
         "desc": {
             "title": "Trên các tin tức",
             "content": "Chúng tôi tự hào có mặt trong nhiều ấn phẩm tài chính và công nghệ nổi bật, từ các tin tức cho đến những đánh giá, những tìm hiểu mà các nhà báo, chuyên gia nói về nền tảng cho vay ngang hàng Constant."
+        }
+    },
+    "ourPartner": {
+        "partner": {
+            "partner1": {
+                "name": "Hacker Noon",
+                "desc": "<p>The traditional loan agreement has been replaced by an unstoppable Ethereum smart contract without any possibility of downtime, fraud, or third-party interference. Fully-secured, blockchain-enabled P2P lending is our contribution to a bankless banking system.</p>"
+            },
+            "partner2": {
+                "name": "Coin98",
+                "desc": "<p>Chắc hẳn sẽ có những lúc chúng ta rơi vào hoàn cảnh khi đang HODL một đồng coin nào đó, nhưng lại thấy 1 cơ hội khác trong khi quỹ vốn thì đã hết. Constant sẽ giúp anh em huy động được một lượng cash (tiền mặt) nhất định để vào được kèo mới nhưng không phải cash out (bán) đồng coin đang HODL</p>"
+            },
+            "partner3": {
+                "name": "Techworm",
+                "desc": "<p>The best thing about Constant, however, is the security the lending platform has in place. Every loan is fully secured and backed in multiple ways. While on loan it’s protected by borrower collateral, and while waiting to be matched it’s protected by a $130M insurance policy.</p>"
+            },
+            "partner4": {
+                "name": "Blockonomi",
+                "desc": "<p>Constant has created a platform that cuts banks out of the lending equation and allows anyone in the world to create loans on whatever terms they like. This is a big shift away from the established lending system, and it could be a big benefit for both borrowers and lenders</p>"
+            },
+            "partner5": {
+                "name": "Zero Hedge",
+                "desc": "<p>Lenders can choose their terms, no credit check, and no nonsense – and find borrowers. Programming a system like this using the US banking system, would be expensive, cumbersome, time consuming, and who knows what it might look like after all the regulatory approvals.</p>"
+            },
+            "partner6": {
+                "name": "ZyCrypto",
+                "desc": "<p>Constant is different in that users can be confident in the fact that each transaction is fully secured. Every loan is collateral backed. Investor funds are held in escrow accounts when not on loan. This level of security sets Constant apart from other platforms.</p>"
+            },
+            "partner7": {
+                "name": "Blockonomi",
+                "desc": "<p>Constant has created a platform that cuts banks out of the lending equation and allows anyone in the world to create loans on whatever terms they like. This is a big shift away from the established lending system, and it could be a big benefit for both borrowers and lenders</p>"
+            },
+            "partner8": {
+                "name": "Zero Hedge",
+                "desc": "<p>Lenders can choose their terms, no credit check, and no nonsense – and find borrowers. Programming a system like this using the US banking system, would be expensive, cumbersome, time consuming, and who knows what it might look like after all the regulatory approvals.</p>"
+            },
+            "partner9": {
+                "name": "ZyCrypto",
+                "desc": "<p>Constant is different in that users can be confident in the fact that each transaction is fully secured. Every loan is collateral backed. Investor funds are held in escrow accounts when not on loan. This level of security sets Constant apart from other platforms.</p>"
+            }
+        },
+        "desc": {
+            "title": "In the News",
+            "content": "We’re proud to feature in many prominent finance and technology publications. From news to reviews, find out what the journalists, pundits, and experts have to say about the Constant peer-to-peer lending platform."
         }
     },
     "collateralBalance": {

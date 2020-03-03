@@ -15,7 +15,6 @@
             "error": "Oops, something went wrong. Please try again.",
             "retry": "Server error, please retry",
             "required": "Required",
-            "maxInterest": "Must less than {max} %",
             "maxValues": "Must less than ${max}",
             "minValues": "Must greater than ${min}",
             "copied": "Copied",
@@ -263,7 +262,6 @@
         "yourSaving": "Accounts",
         "myInvestments": "My Investments",
         "ourStory": "Our Story",
-        "testimonial": "Why people love us",
         "extraMenu": {
             "sendGroup": "Global transfers",
             "send": "Send",
@@ -747,12 +745,6 @@
             "title": "Change your password",
             "changeSuccess": "Your password was changed successfully",
             "changeFailed": "Please make sure you have typed in your old password correctly"
-        },
-        "changeRef": {
-            "title": "Change your referral code",
-            "btnChange": "Change",
-            "changeSuccess": "Your referral code was changed successfully",
-            "changeFailed": "Your referral code was changed failed"
         },
         "twoFa": {
             "googleAuth": "Google Authentication",
@@ -1305,7 +1297,6 @@
                 "received": "received",
                 "matched": "matched",
                 "holding": "balance holding",
-                "ref_number": "Ref number",
                 "interest": "Interest to date",
                 "totalInterest": "Total interest",
                 "totalInterestDesc": "This is the interest you will earn for the full term. If a borrower repays early, you will earn the interest to date.",
@@ -1321,15 +1312,12 @@
                 "balanceInterestDesc": "\n        <p><strong>Why is my balance increasing?</strong></p>\n            <p>As of <strong>Sep 10 2019</strong>, you’ll automatically earn <strong>{systemInterest}% APY</strong> on your current balance. These earnings will update real-time, and compound daily! You’ll still be able to withdraw anytime.</p>\n        ",
                 "balanceStarDesc": "\n        Earn STAR by referring friends. You can then redeem each STAR for 1% bonus or discounted interest. Go to Referral link for further instructions\n        ",
                 "referralDesc": "\n        Get a 10% reward when your friends earn interest – paid out every second. So if your friend earns $100, we’ll give you $10. There’s no limit to the number of friends you can refer.\n        ",
-                "referralDescUS": "\n        Get a $10 reward for you and your friends when you refer them to invest with us. Additionally, get rewarded 10% of their earned interest in their first year - paid out every second. So if your friend earns $100 we’ll give you $10. There’s no limit to the number of friends you can refer.\n        ",
                 "term": "Term",
                 "endTerm": "Term ends",
                 "trial": "TRIAL",
                 "trial_description": "You keep the interest. Term has ended",
                 "saving_title": "Investments",
                 "loans_title": "Loans",
-                "secondInvestments": "Secondary Market",
-                "secondInvestmentsDesc": "Buy and sell matched investments on our secondary market. Sell your investment to end your term early or buy another investor’s order to earn their interest. View or cancel your secondary market orders below.",
                 "repaySuccess": "Thanks. Please bear with us while we deduct from your balance.Your collateral will be returned to the wallet address it was sent from.",
                 "anyTime_saving": "Balance",
                 "balanceInterest": "Interest earned so far",
@@ -1345,20 +1333,12 @@
                 "payOffLoanTitle": "Payoff Loan",
                 "allStatus": "All",
                 "termStatusFilter": {
-                    "investment": {
-                        "pending": "Pending",
-                        "matching": "Matching",
-                        "matched": "Matched",
-                        "closed": "Cancelled",
-                        "allStatus": "All",
-                        "done": "Done"
-                    },
-                    "secondary_investment": {
-                        "voiding": "Selling",
-                        "voided": "Sold",
-                        "matched": "Bought",
-                        "done": "Done"
-                    }
+                    "pending": "%%%.me.proSaving.listApplications.termStatusFilter.pending%%%",
+                    "matching": "%%%.me.proSaving.listApplications.termStatusFilter.matching%%%",
+                    "matched": "%%%.me.proSaving.listApplications.termStatusFilter.matched%%%",
+                    "closed": "%%%.me.proSaving.listApplications.termStatusFilter.closed%%%",
+                    "allStatus": "%%%.me.proSaving.listApplications.termStatusFilter.allStatus%%%",
+                    "done": "%%%.me.proSaving.listApplications.termStatusFilter.done%%%"
                 },
                 "termStatus": {
                     "created": "Matched",
@@ -1375,10 +1355,7 @@
                     "transferring_fiat": "Pending",
                     "closed_soon": "Matched",
                     "undefined": "",
-                    "picked": "Pending",
-                    "voiding": "Selling",
-                    "voided": "Sold",
-                    "void_cancelled": "Canceled"
+                    "picked": "Pending"
                 },
                 "interestInfo": {
                     "header": {
@@ -1409,7 +1386,6 @@
                     "shareFbSuccess": "Success! Thanks for telling your friends about Constant."
                 },
                 "shareAndEarn": "Invite friends, earn 10% more",
-                "shareAndEarnUS": "Invite a friend, earn $10 or more.",
                 "withdraw": "Withdraw",
                 "withdrawFiat": "Fiat",
                 "withdrawCrypto": "Crypto",
@@ -1594,10 +1570,7 @@
                     "batchTransferSuccess": "You successfully sent the batch file",
                     "batchTransferFailed": "Failed to sent the batch file",
                     "confirmBatchTransferSuccess": "Success",
-                    "confirmBatchTransferFailed": "Failed",
-                    "voidInvestmentSuccess": "Thanks. Your investment has rejoined the matching queue and we’ll let you know when we find a buyer. In the meantime, you can cancel your sell order from your Accounts page.",
-                    "voidInvestmentFailed": "Sorry, we couldn’t create your sell order. Please try again later. If you keep seeing this message, please email us at <a href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>.",
-                    "voidInvestmentFailedMinAmount": "Sorry, we couldn't create your sell order as your investment is less than ${minAmount}."
+                    "confirmBatchTransferFailed": "Failed"
                 },
                 "batchTransferDialog": {
                     "title": "",
@@ -1654,15 +1627,7 @@
                     "earned": "Earned",
                     "duration": "Term",
                     "matchedDate": "Date matched",
-                    "due": "Term ends",
-                    "void": "End your term early",
-                    "dialog": {
-                        "void": {
-                            "messageConfirm": "\n              <p>To end your term early, you can sell your investment to another investor. Once sold, you get your principal of ${amount} back and 2% APR on elapsed term time, but you’ll lose any earned membership points on this investment. Selling normally takes around 24 hours.</p> \n              <p>Would you like to sell your investment?</p> \n              ",
-                            "confirm": "Yes",
-                            "cancel": "Go back"
-                        }
-                    }
+                    "due": "Term ends"
                 },
                 "yourInvestments": "Match{plural} {matched}",
                 "partialMatchesDesc": "Some investments may be split into smaller amounts to fill multiple loan orders. The platform will keep trying to match you completely for the duration of your term.",
@@ -2125,14 +2090,8 @@
                 "fullName": "Full Name",
                 "transferMethod": "Transfer Method",
                 "transferMethods": {
-                    "ach": {
-                        "title": "ACH",
-                        "desc": "Fee: Free. Time: 2-5 days"
-                    },
-                    "wire": {
-                        "title": "Wire",
-                        "desc": "Fee: might be charged by your bank. Time: a business day"
-                    }
+                    "ach": "%%%.home.convert.payToForm.transferMethods.ach%%%",
+                    "wire": "%%%.home.convert.payToForm.transferMethods.wire%%%"
                 }
             },
             "fee": "Fee",
@@ -2443,14 +2402,10 @@
                     "1": "Secure escrow",
                     "2": "No credit checks",
                     "3": "Repay anytime"
-                },
-                "youtube": {
-                    "title": "Why borrow with Constant?"
                 }
             },
             "headLine": "Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.",
             "exchange": {
-                "stakingTimeMessage": "Your collateral will be sent to the Constant node. Please note: early repayment won’t be possible for at least {dayNum} days.",
                 "usedMarketRate": "Use market rate ",
                 "usedMarketRateDesc": "When market rate is enabled, you're guaranteed a match at the best rate and term available in the market.",
                 "maxRateTooltip": "This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.",
@@ -3320,7 +3275,9 @@
             "sendFee": "Send fee: {fee} {currency}",
             "fiatAmountResultLabel": "According to the markets today, you’ll receive: {fiatAmount} {fiatCurrency}",
             "explain": "* The maximum you can send is {amountExcludeFee} {currency}, so you have enough to cover the transfer fee.",
-            "explainNoFee": "* The maximum amount you can withdraw is {amountExcludeFee} {currency}."
+            "explainNoFee": "* The maximum amount you can withdraw is {amountExcludeFee} {currency}.",
+            "achDesc": "%%%.exchangeInputSellForm.amountResult.achDesc%%%",
+            "wireDesc": "%%%.exchangeInputSellForm.amountResult.wireDesc%%%"
         },
         "paymentMethod": "Payment method",
         "email": {
@@ -3956,9 +3913,6 @@
                     "1": "Fully secured by collateral",
                     "2": "Your own rates and terms",
                     "3": "24/7 customer service"
-                },
-                "youtube": {
-                    "title": "Why invest with Constant?"
                 }
             },
             "form": {
@@ -4012,7 +3966,6 @@
             "confirm": {
                 "thankYou1": "Almost there.",
                 "thankMsg": "Transfer {amount}  to complete your deposit.",
-                "thankMsg2": "\n          <div>Your account currently has a balance of {userBalance}.</div>\n          <div>Please deposit {amount} to complete your investment.</div>",
                 "thankMsg1": "You currently have {balance} in your balance. Please make a transfer of the remaining {amount} to proceed.",
                 "bankName": "Bank name",
                 "accountName": "Account name",
@@ -4109,62 +4062,7 @@
             "question4": "How do you protect my investment?",
             "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too:</p>\n        <ol>\n          <li>All of our borrowers must put up 150% of the loan amount as crypto collateral. If they don’t repay, we sell the collateral to repay you.</li>\n          <li>We also include a liquidation threshold to insure against a fall in the collateral’s value. If the value falls to 110% of your principal and earned interest, it’s sold to repay you.</li>\n          <li>We only accept vetted, quality cryptocurrencies and cap our exposure to these markets by daily trading volume. This ensures we can sell the collateral should the market dip.</li>\n        </ol>\n        <p>These protective measures help ensure you get the returns promised. However, all investment involves risk, and despite our best efforts, we can’t guarantee the return of your principal and profit. Therefore please invest wisely.</p>\n        <p><a href=\"/blog/how-we-protect-your-money-and-collateral\" className=\"underline\" target=\"_blank\">Read more about how we protect you.</a></p>\n      ",
             "question5": "What happens when my money isn’t on loan?",
-            "answer5": "\n        <p>You choose what we do with your money when it’s not on loan or waiting to be matched:</p>\n        <ol>\n          <li>\n            <p>You can store your funds in Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>\n            <p><a href=\"/blog/meet-scott-purcell-%E2%80%94-ceo-of-prime-trust\" className=\"underline\" target=\"_blank\">Learn more about Prime Trust.</a></p>\n            <p>OR</p>\n          </li>\n          <li>\n            <p>Earn 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>\n            <p><a href=\"/blog/compound-finance-discover-the-interest-earning-tech-behind-flex\" className=\"underline\" target=\"_blank\">Learn more about Flex.</a></p>\n          </li>\n        </ol>\n        <p>If you’re waiting for a match, your money will automatically remain in the custody of Prime Trust.</p>\n      ",
-            "question6": "What happens if a borrower repays early?",
-            "answer6": "\n        <p>If a borrower repays before 75% of the loan term is complete, they’ll pay you earned interest to date plus 50% of the interest due on the remainder of the term.</p>\n        <p>If a borrower repays after 75% of the loan term is complete, they’ll pay you 100% of the interest due on the loan.</p>\n      ",
-            "question7": "What happens if you have to sell borrower collateral to repay me?",
-            "answer7": "\n        <p>If a borrower can’t repay, or their collateral falls to 110% of your principal and earned profit, we’ll sell the collateral to repay you. In either case, you’ll get your principal back. You’ll also get earned interest to date if the collateral is sold mid-term, or 100% of the interest due if the collateral is sold after the term ends.</p>\n      ",
-            "question8": "Can I end my investment term early?",
-            "answer8": "\n        <p>Yes. To end your term early, you can sell your investment to another investor from your Accounts page. Once sold, you’ll get your principal back and 2% APR on elapsed term time. Selling relies on finding a buyer willing to accept your rate and term so might take around 24 hours. You’ll also lose any earned membership points on your sold investment.</p>\n      "
-        }
-    },
-    "investbackedBond": {
-        "intro": {
-            "content": "\n          <h6>Invest the way you want</h6>\n          <h2>Set your own rates.</h2>\n          <h2>Invest from $50.</h2>\n          <h2>Invest only in secured loans.</h2>\n          <br />\n          <h6>\n          Your investments are fully backed by borrower collateral. Unmatched portions earn an automatic 4% APY, and can be withdrawn anytime.\n          </h6>\n        ",
-            "desc": {
-                "1": "Fully secured by collateral",
-                "2": "Your own rates and terms",
-                "3": "24/7 customer service"
-            }
-        },
-        "what": {
-            "title": "Why invest with us?",
-            "whatCaption0": "Set your own rates",
-            "whatCaption1": "Insured up to $130M while waiting for a match",
-            "whatCaption2": "Protected by Ethereum smart contracts while on loan",
-            "whatCaption3": "Only invest in secured loans",
-            "whatDesc0": "\n      <p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.</p>\n    ",
-            "whatDesc1": "\n      <p>Earn interest before you even make an investing order. All deposits earn {interest}% APY by default and can be withdrawn at any time. Compounded and paid every second. Stay flexible and enjoy zero downtime.</p>\n    ",
-            "whatDesc2": "\n      <p>Enjoy 24-7 customer service, unlimited free withdrawals, and a library of useful content to help you do more with your money. Constant is an open, alternative financial platform and you can <a href=\"https://github.com/constant-money\" target=\"_blank\">view all our code</a> as well as suggest features you’d like to see</p>\n    ",
-            "whatDesc3": "\n      <p>We strictly require every loan to be 150% backed by collateral. For someone to borrow $10,000, they have to put up $15,000 in collateral value.</p>\n      <br />\n      <p>So if borrowers default, you don’t lose a cent.</p>\n      <br />\n      <a href=\"https://medium.com/@constantp2p/risk-and-our-p2p-lending-platform-what-you-should-know-1edcd5a4a5b3\" target=\"_blank\">How we protect investor funds</a>\n    "
-        },
-        "howItWorks": {
-            "mainTitle": "How it works",
-            "mainDesc": "\n      ",
-            "step1": "Step 1",
-            "title1": "You make an investment",
-            "desc1": "Choose among our flexible Investment Plans, then make a bank transfer of any amount to the FDIC insured Constant Vault. Your funds will be held in USD, to protect against volatility. We earn you interest and make sure your money is secure, by lending your funds only to borrowers who are willing to overcollateralize.",
-            "step2": "Step 2",
-            "title2": "Your money multplies",
-            "desc2": "No matter which commitment period you choose, returns are paid out daily into a Flexible Account. Flexible means you can withdraw whenever you like, and earn an extra 1% annually. Stay liquid and make profit on your profit.",
-            "step3": "Step 3",
-            "title3": "You withdraw profit",
-            "desc3": "Your investment income is in USD, but you can withdraw it to any local bank account at the end of the commitment period. Or you could reinvest it to keep growing your money."
-        },
-        "faqs": {
-            "question1": "How long will it take to find a match?",
-            "answer1": "This depends on the rates and terms you set. Market levels normally result in immediate (or near-immediate) matches, so we update the market rates on the website regularly. If you choose a larger interest rate, it might take a little longer to find you a suitable match.",
-            "question2": "Are there any limits?",
-            "answer2": "None at all. You can invest as much or as little as you like. ",
-            "question3": "How do I invest?",
-            "answer3": "\n        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to our FDIC-insured escrow account, and wait for a match. This is usually very quick if you’ve set market rates. </p>\n        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>\n      ",
-            "question4": "How do you protect my investment?",
-            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
-            "question5": "What happens when my money isn’t on loan?",
-            "answer5": "When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds."
-        },
-        "alert": {
-            "getBankBondSettingsFailed": "Something went wrong. Please try again."
+            "answer5": "\n        <p>You choose what we do with your money when it’s not on loan or waiting to be matched:</p>\n        <ol>\n          <li>\n            <p>You can store your funds in Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>\n            <p><a href=\"/blog/meet-scott-purcell-%E2%80%94-ceo-of-prime-trust\" className=\"underline\" target=\"_blank\">Learn more about Prime Trust.</a></p>\n            <p>OR</p>\n          </li>\n          <li>\n            <p>Earn 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>\n            <p><a href=\"/blog/compound-finance-discover-the-interest-earning-tech-behind-flex\" className=\"underline\" target=\"_blank\">Learn more about Flex.</a></p>\n          </li>\n        </ol>\n        <p>If you’re waiting for a match, your money will automatically remain in the custody of Prime Trust.</p>\n      "
         }
     },
     "payment": {
@@ -4303,11 +4201,6 @@
             "sendInvitationsFail": "Send Invitations Failed!",
             "maximum_invitation_email": "Maximun invitation emails"
         },
-        "editReferral": {
-            "success": "Update referral code successfully",
-            "failed": "Update referral code failed",
-            "duplicated": "Sorry, someone has already created that referral code. Please choose another."
-        },
         "faqs": {
             "question1": "What are the supported cryptocurrencies?",
             "answer1": "The treasure box is supporting BTC, ETH and CONST",
@@ -4365,11 +4258,6 @@
             "head3": "Outside business hours",
             "head4": "Fee"
         },
-        "withdrawCollateralData": {
-            "title1": "ERC20 collaterals <strong>not</strong> deposited in BitGo / BTC, ETH, BEP2, TOMO, BEAM, XZC: <$10,000",
-            "title2": "ERC20 collaterals <strong>not</strong> deposited in BitGo / BTC, ETH, BEP2, TOMO, BEAM, XZC: >$10,000",
-            "title3": "<a href=\"https://docs.google.com/spreadsheets/d/1VIiNXdg7LTJXuUHhtYw2nEH14q4d9rUjW_9QH2zIyzU/edit#gid=0\" target=\"_blank\" class=\"underline bold\">ERC20 collaterals deposited in BitGo</a> / Others"
-        },
         "matchingFee": {
             "head1": "Matching fee",
             "head2": " "
@@ -4407,9 +4295,6 @@
             "borrowed": "Borrowed at Market",
             "investments": "Investing orders",
             "borrows": "Borrowing Orders",
-            "voidInvestmentBorrows": "Secondary Investments",
-            "voidInvestmentBorrowsDesc": "These are matched orders investors want to sell. You can’t change the term or rate on a secondary investment, but you earn all the interest due on the loan regardless of how much time is left in the term.",
-            "bankBondBorrows": "Open Bank Bond Borrowing Orders",
             "interestSpread": "Interest spread",
             "interestSpreadDesc": "Interest spread is the difference between the lowest lending rate and the highest borrowing rate.",
             "interestSpreadValues": "0.10%",
@@ -4456,7 +4341,7 @@
             "side": "Side",
             "amount": "Amount (USD)",
             "interest": "Rate(APR)",
-            "term": "Days",
+            "term": "(Days)",
             "date": "Created",
             "matched": "Matched",
             "messageSuccess": "Your order has been cancelled successfully."
@@ -4542,8 +4427,7 @@
             }
         },
         "orderBook": "Order Book",
-        "tradeHistory": "Trade History",
-        "activityChart": "Activity Chart My Constant"
+        "tradeHistory": "Trade History"
     },
     "deposit1": {
         "faqs": {
@@ -4658,8 +4542,7 @@
     "registerBonus": {
         "title": "Fancy $10 to get started?",
         "description": "Create your account and verify your ID to get a $10 bonus, absolutely free.",
-        "numLeft": "ONLY {numLeft} BONUSES LEFT",
-        "forUsOnly": "Promotion for US customers only"
+        "numLeft": "ONLY {numLeft} BONUSES LEFT"
     },
     "signupHeader": {
         "desc": "Open an account and get a $10 bonus straight into your account",
@@ -4701,19 +4584,7 @@
         "goBack": "Go back",
         "aboutYou": "About You",
         "accountActivity": "Account Activity",
-        "supportCenter": "Support Center",
-        "greeting": {
-            "title": "Good",
-            "morning": "Morning",
-            "afternoon": "Afternoon",
-            "evening": "Evening",
-            "hi": "Hi you"
-        },
-        "language": "Language",
-        "setting": "Setting",
-        "btnInvestments": "Investments",
-        "btnLoans": "Loans",
-        "btnSecondaryMarket": "<div class=\"textLeft\"><small>Secondary</small><div>Market</div></div>"
+        "supportCenter": "Support Center"
     },
     "airdrop": {
         "endedTitle": "The Constant STARdrop campaign has now ended (October 24 2019, 10:00 AM GMT+7). We’ve reached the limit of 10,000 STAR, and thank you all for your support.",
@@ -5003,50 +4874,6 @@
             "content": "We’re proud to feature in many prominent finance and technology publications. From news to reviews, find out what the journalists, pundits, and experts have to say about the Constant peer-to-peer lending platform."
         }
     },
-    "ourPartner": {
-        "partner": {
-            "partner1": {
-                "name": "Hacker Noon",
-                "desc": "<p>The traditional loan agreement has been replaced by an unstoppable Ethereum smart contract without any possibility of downtime, fraud, or third-party interference. Fully-secured, blockchain-enabled P2P lending is our contribution to a bankless banking system.</p>"
-            },
-            "partner2": {
-                "name": "Coin98",
-                "desc": "<p>Chắc hẳn sẽ có những lúc chúng ta rơi vào hoàn cảnh khi đang HODL một đồng coin nào đó, nhưng lại thấy 1 cơ hội khác trong khi quỹ vốn thì đã hết. Constant sẽ giúp anh em huy động được một lượng cash (tiền mặt) nhất định để vào được kèo mới nhưng không phải cash out (bán) đồng coin đang HODL</p>"
-            },
-            "partner3": {
-                "name": "Techworm",
-                "desc": "<p>The best thing about Constant, however, is the security the lending platform has in place. Every loan is fully secured and backed in multiple ways. While on loan it’s protected by borrower collateral, and while waiting to be matched it’s protected by a $130M insurance policy.</p>"
-            },
-            "partner4": {
-                "name": "Blockonomi",
-                "desc": "<p>Constant has created a platform that cuts banks out of the lending equation and allows anyone in the world to create loans on whatever terms they like. This is a big shift away from the established lending system, and it could be a big benefit for both borrowers and lenders</p>"
-            },
-            "partner5": {
-                "name": "Zero Hedge",
-                "desc": "<p>Lenders can choose their terms, no credit check, and no nonsense – and find borrowers. Programming a system like this using the US banking system, would be expensive, cumbersome, time consuming, and who knows what it might look like after all the regulatory approvals.</p>"
-            },
-            "partner6": {
-                "name": "ZyCrypto",
-                "desc": "<p>Constant is different in that users can be confident in the fact that each transaction is fully secured. Every loan is collateral backed. Investor funds are held in escrow accounts when not on loan. This level of security sets Constant apart from other platforms.</p>"
-            },
-            "partner7": {
-                "name": "Blockonomi",
-                "desc": "<p>Constant has created a platform that cuts banks out of the lending equation and allows anyone in the world to create loans on whatever terms they like. This is a big shift away from the established lending system, and it could be a big benefit for both borrowers and lenders</p>"
-            },
-            "partner8": {
-                "name": "Zero Hedge",
-                "desc": "<p>Lenders can choose their terms, no credit check, and no nonsense – and find borrowers. Programming a system like this using the US banking system, would be expensive, cumbersome, time consuming, and who knows what it might look like after all the regulatory approvals.</p>"
-            },
-            "partner9": {
-                "name": "ZyCrypto",
-                "desc": "<p>Constant is different in that users can be confident in the fact that each transaction is fully secured. Every loan is collateral backed. Investor funds are held in escrow accounts when not on loan. This level of security sets Constant apart from other platforms.</p>"
-            }
-        },
-        "desc": {
-            "title": "In the News",
-            "content": "We’re proud to feature in many prominent finance and technology publications. From news to reviews, find out what the journalists, pundits, and experts have to say about the Constant peer-to-peer lending platform."
-        }
-    },
     "collateralBalance": {
         "balance": "Balance",
         "coin": "Coin",
@@ -5073,8 +4900,8 @@
             "confirm": "Confirm",
             "cancel": "Cancel",
             "autoStakeSuccess": {
-                "true": "Turn auto stake on successfully",
-                "false": "Turn auto stake off successfully"
+                "true": "Auto stake turned on successfully",
+                "false": "Auto stake turned off successfully"
             },
             "autoStakeFailed": {
                 "true": "Turn auto stake on failed",
@@ -5489,24 +5316,12 @@
             "membershipPointMax": {
                 "title": "Congrats! You earned {amount} points",
                 "desc": "Due to your investment order of ${amount}, your total points up til now is {totalAmount}. Keep up the good work!"
-            },
-            "repaidEarly": {
-                "title": "Your investment has been repaid early",
-                "desc": "Your investment of {amount} has been repaid early. Please click <a href=\"/accounts\" class=\"underline\">here</a> to check your dashboard and reinvest your money."
             }
         },
         "loan": {
             "done": {
                 "title": "Your loan has matured",
                 "desc": "Your loan of ${amount} matured today! Please repay a total of ${paidAmount} as soon as possible to avoid extra overdue fee."
-            },
-            "done_1": {
-                "title": "Hurry! Repay your loan now",
-                "desc": "Your loan of ${amount} matured yesterday! Please repay a total of ${paidAmount} including ${overAmount} overdue fee as soon as possible to get your collateral back."
-            },
-            "done_2": {
-                "title": "Last call! Repay your loan now",
-                "desc": "Your loan of ${amount} matured a while ago! Please repay a total of ${paidAmount} including ${overAmount} overdue fee as soon as possible or your collateral will be liquidated."
             },
             "match": {
                 "title": "Your loan order matched",

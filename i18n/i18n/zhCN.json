@@ -1333,12 +1333,12 @@
                 "payOffLoanTitle": "Payoff Loan",
                 "allStatus": "All",
                 "termStatusFilter": {
-                    "pending": "Pending",
-                    "matching": "Matching",
-                    "matched": "Matched",
-                    "closed": "Cancelled",
-                    "allStatus": "All",
-                    "done": "Done"
+                    "pending": "%%%.me.proSaving.listApplications.termStatusFilter.pending%%%",
+                    "matching": "%%%.me.proSaving.listApplications.termStatusFilter.matching%%%",
+                    "matched": "%%%.me.proSaving.listApplications.termStatusFilter.matched%%%",
+                    "closed": "%%%.me.proSaving.listApplications.termStatusFilter.closed%%%",
+                    "allStatus": "%%%.me.proSaving.listApplications.termStatusFilter.allStatus%%%",
+                    "done": "%%%.me.proSaving.listApplications.termStatusFilter.done%%%"
                 },
                 "termStatus": {
                     "created": "Matched",
@@ -1804,7 +1804,7 @@
             "registerSuccessfully": "Success! Welcome to Constant. We’ve sent a verification email to your inbox.",
             "agreementAction": "User Agreement and Privacy Policy.",
             "registerFailed": "Failed while creating your account, please try again",
-            "referrerReferralCode": "Your referrer's referral code: {code}",
+            "referrerReferralCode": "Invitation code (optional)",
             "promotionCode": "Promotion Code",
             "agreementText": "By ticking this box, I agree to Constant's",
             "agreementTextLink": "Terms and Conditions."
@@ -4054,15 +4054,15 @@
         },
         "faqs": {
             "question1": "How long will it take to find a match?",
-            "answer1": "This depends on the rates and terms you set. Market levels normally result in immediate (or near-immediate) matches, so we update the market rates on the website regularly. If you choose a larger interest rate, it might take a little longer to find you a suitable match.",
+            "answer1": "This depends on the rates and terms you set. If you choose the market rate, you’ll match very quickly – usually within minutes. If you set a higher rate, it might take a little longer. In that case, try reducing your interest rate to market levels to guarantee a match. We regularly update the market rate so you know what most borrowers are willing to pay.",
             "question2": "Are there any limits?",
-            "answer2": "None at all. You can invest as much or as little as you like. ",
+            "answer2": "You can invest as much as you like, starting from just $50.",
             "question3": "How do I invest?",
-            "answer3": "\n        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to our FDIC-insured escrow account, and wait for a match. This is usually very quick if you’ve set market rates. </p>\n        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>\n      ",
+            "answer3": "\n        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Transfer that amount to one of our international bank accounts – we have banks in the US and abroad to make transfers quick and easy for you. Then sit back and wait for a match. This is usually very quick if you’ve set market rates.</p>\n        <p>Once you’ve found a match, we’ll transfer your funds from an escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – reinvest, withdraw, or send money abroad.</p>\n        <p><a href=\"/blog/how-to-invest-with-constant-in-3-simple-steps\" className=\"underline\" target=\"_blank\">How to invest with Constant in 3 simple steps.</a></p>\n      ",
             "question4": "How do you protect my investment?",
-            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
+            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too:</p>\n        <ol>\n          <li>All of our borrowers must put up 150% of the loan amount as crypto collateral. If they don’t repay, we sell the collateral to repay you.</li>\n          <li>We also include a liquidation threshold to insure against a fall in the collateral’s value. If the value falls to 110% of your principal and earned interest, it’s sold to repay you.</li>\n          <li>We only accept vetted, quality cryptocurrencies and cap our exposure to these markets by daily trading volume. This ensures we can sell the collateral should the market dip.</li>\n        </ol>\n        <p>These protective measures help ensure you get the returns promised. However, all investment involves risk, and despite our best efforts, we can’t guarantee the return of your principal and profit. Therefore please invest wisely.</p>\n        <p><a href=\"/blog/how-we-protect-your-money-and-collateral\" className=\"underline\" target=\"_blank\">Read more about how we protect you.</a></p>\n      ",
             "question5": "What happens when my money isn’t on loan?",
-            "answer5": "\n      <p>When not on loan or waiting for a match, you can choose to store your funds in Prime Trust, an accredited US financial institution that insures deposits up to $130M. OR earn 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>\n      <p>If you’re waiting for a match, your money will automatically remain in the custody of Prime Trust.</p>\n      "
+            "answer5": "\n        <p>You choose what we do with your money when it’s not on loan or waiting to be matched:</p>\n        <ol>\n          <li>\n            <p>You can store your funds in Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>\n            <p><a href=\"/blog/meet-scott-purcell-%E2%80%94-ceo-of-prime-trust\" className=\"underline\" target=\"_blank\">Learn more about Prime Trust.</a></p>\n            <p>OR</p>\n          </li>\n          <li>\n            <p>Earn 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>\n            <p><a href=\"/blog/compound-finance-discover-the-interest-earning-tech-behind-flex\" className=\"underline\" target=\"_blank\">Learn more about Flex.</a></p>\n          </li>\n        </ol>\n        <p>If you’re waiting for a match, your money will automatically remain in the custody of Prime Trust.</p>\n      "
         }
     },
     "payment": {
@@ -4305,10 +4305,10 @@
             "matched": "Matched"
         },
         "balances": {
-            "collateralBalances": "Coin balance",
+            "collateralBalances": "Withdraw crypto",
             "title": "Balances",
             "titleDesc": "All investment and collateral deposits will show here.",
-            "withdraw": "Withdraw",
+            "withdraw": "Withdraw cash",
             "withdrawFrom": {
                 "title": "Withdraw your crypto collateral",
                 "amount": "Amount",
@@ -4341,7 +4341,7 @@
             "side": "Side",
             "amount": "Amount(USD)",
             "interest": "Rate(APR)",
-            "term": "Term (Days)",
+            "term": "(Days)",
             "date": "Created",
             "matched": "Matched",
             "messageSuccess": "Your order book have been canceled successfully"
@@ -4354,7 +4354,7 @@
             "side": "Side",
             "amount": "Amount(USD)",
             "interest": "Rate(APR)",
-            "term": "Term (Days)",
+            "term": "Days",
             "date": "Created",
             "matched": "Matched",
             "messageSuccess": "Your order book have been canceled successfully"

@@ -4387,9 +4387,9 @@
             "head4": "Fee"
         },
         "withdrawCollateralData": {
-            "title1": "ERC20 collateral <strong>not</strong> deposited in BitGo / BTC, ETH, BEP2, TOMO, BEAM, XZC: <$10,000",
-            "title2": "ERC20 collateral <strong>not</strong> deposited in BitGo / BTC, ETH, BEP2, TOMO, BEAM, XZC: >$10,000",
-            "title3": "<a href=\"https://docs.google.com/spreadsheets/d/1VIiNXdg7LTJXuUHhtYw2nEH14q4d9rUjW_9QH2zIyzU/edit#gid=0\" target=\"_blank\" class=\"underline\"><strong>ERC20 collaterals deposited in BitGo</strong></a> / Others"
+            "title1": "ERC20 collaterals <strong>not</strong> deposited in BitGo / BTC, ETH, BEP2, TOMO, BEAM, XZC: <$10,000",
+            "title2": "ERC20 collaterals <strong>not</strong> deposited in BitGo / BTC, ETH, BEP2, TOMO, BEAM, XZC: >$10,000",
+            "title3": "<a href=\"https://docs.google.com/spreadsheets/d/1VIiNXdg7LTJXuUHhtYw2nEH14q4d9rUjW_9QH2zIyzU/edit#gid=0\" target=\"_blank\" class=\"underline bold\">ERC20 collaterals deposited in BitGo</a> / Others"
         },
         "matchingFee": {
             "head1": "Matching fee",

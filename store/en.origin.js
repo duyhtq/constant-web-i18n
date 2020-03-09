@@ -1377,8 +1377,7 @@
                     "undefined": "%%%.me.proSaving.listApplications.termStatus.undefined%%%",
                     "picked": "%%%.me.proSaving.listApplications.termStatus.picked%%%",
                     "voiding": "%%%.me.proSaving.listApplications.termStatus.voiding%%%",
-                    "voided": "%%%.me.proSaving.listApplications.termStatus.voided%%%",
-                    "void_cancelled": "%%%.me.proSaving.listApplications.termStatus.void_cancelled%%%"
+                    "voided": "%%%.me.proSaving.listApplications.termStatus.voided%%%"
                 },
                 "interestInfo": {
                     "header": {
@@ -1589,6 +1588,8 @@
                     "depositSavingFailed": "%%%.me.proSaving.listApplications.alert.depositSavingFailed%%%",
                     "stopSavingSuccess": "%%%.me.proSaving.listApplications.alert.stopSavingSuccess%%%",
                     "stopSavingFailed": "%%%.me.proSaving.listApplications.alert.stopSavingFailed%%%",
+                    "stopSellingInvestmentSuccess": "%%%.me.proSaving.listApplications.alert.stopSellingInvestmentSuccess%%%",
+                    "stopSellingInvestmentFailed": "%%%.me.proSaving.listApplications.alert.stopSellingInvestmentFailed%%%",
                     "applyReferralSuccess": "%%%.me.proSaving.listApplications.alert.applyReferralSuccess%%%",
                     "applyReferralFailed": "%%%.me.proSaving.listApplications.alert.applyReferralFailed%%%",
                     "batchTransferSuccess": "%%%.me.proSaving.listApplications.alert.batchTransferSuccess%%%",
@@ -3327,6 +3328,10 @@
             "name": "%%%.exchangeInputSellForm.email.name%%%",
             "placeholder": "%%%.exchangeInputSellForm.email.placeholder%%%"
         },
+        "venmo": {
+            "name": "%%%.exchangeInputSellForm.venmo.name%%%",
+            "placeholder": "%%%.exchangeInputSellForm.venmo.placeholder%%%"
+        },
         "currencyDropdownLabel": "%%%.exchangeInputSellForm.currencyDropdownLabel%%%",
         "sellBtn": "%%%.exchangeInputSellForm.sellBtn%%%",
         "getAmountFailed": "%%%.exchangeInputSellForm.getAmountFailed%%%",
@@ -4031,6 +4036,8 @@
                 "minuteWindowDescription": "%%%.home1.lendingSection.confirm.minuteWindowDescription%%%",
                 "referNote": "%%%.home1.lendingSection.confirm.referNote%%%",
                 "referNoteDesc": "%%%.home1.lendingSection.confirm.referNoteDesc%%%",
+                "googleNoteDesc": "%%%.home1.lendingSection.confirm.googleNoteDesc%%%",
+                "venmoNoteDesc": "%%%.home1.lendingSection.confirm.venmoNoteDesc%%%",
                 "zelleNote": "%%%.home1.lendingSection.confirm.zelleNote%%%",
                 "zellePlaceholder": "%%%.home1.lendingSection.confirm.zellePlaceholder%%%",
                 "zelleSubmit": "%%%.home1.lendingSection.confirm.zelleSubmit%%%",
@@ -4043,8 +4050,22 @@
                 "btnBack": "%%%.home1.lendingSection.confirm.btnBack%%%",
                 "zelleTitle": "%%%.home1.lendingSection.confirm.zelleTitle%%%",
                 "zelleDesc": "%%%.home1.lendingSection.confirm.zelleDesc%%%",
+                "googleDesc": "%%%.home1.lendingSection.confirm.googleDesc%%%",
+                "venmoDesc": "%%%.home1.lendingSection.confirm.venmoDesc%%%",
                 "zelle1": "%%%.home1.lendingSection.confirm.zelle1%%%",
                 "zelle": "%%%.home1.lendingSection.confirm.zelle%%%",
+                "google": "%%%.home1.lendingSection.confirm.google%%%",
+                "googleNote": "%%%.home1.lendingSection.confirm.googleNote%%%",
+                "googlePlaceholder": "%%%.home1.lendingSection.confirm.googlePlaceholder%%%",
+                "googleSubmit": "%%%.home1.lendingSection.confirm.googleSubmit%%%",
+                "venmo": "%%%.home1.lendingSection.confirm.venmo%%%",
+                "venmoNote": "%%%.home1.lendingSection.confirm.venmoNote%%%",
+                "venmoPlaceholder": "%%%.home1.lendingSection.confirm.venmoPlaceholder%%%",
+                "venmoSubmit": "%%%.home1.lendingSection.confirm.venmoSubmit%%%",
+                "paypal": "%%%.home1.lendingSection.confirm.paypal%%%",
+                "paypalNote": "%%%.home1.lendingSection.confirm.paypalNote%%%",
+                "paypalPlaceholder": "%%%.home1.lendingSection.confirm.paypalPlaceholder%%%",
+                "paypalSubmit": "%%%.home1.lendingSection.confirm.paypalSubmit%%%",
                 "bankChosenMessage1": "%%%.home1.lendingSection.confirm.bankChosenMessage1%%%",
                 "bankTransfer": "%%%.home1.lendingSection.confirm.bankTransfer%%%",
                 "bankAutoPaymentMessage": "%%%.home1.lendingSection.confirm.bankAutoPaymentMessage%%%",
@@ -4485,6 +4506,7 @@
             "interestRequired": "%%%.proLending.investBooking.interestRequired%%%",
             "matchedSuccess": "%%%.proLending.investBooking.matchedSuccess%%%",
             "matchedFailed": "%%%.proLending.investBooking.matchedFailed%%%",
+            "matchedSecondaryInvestmentSuccess": "%%%.proLending.investBooking.matchedSecondaryInvestmentSuccess%%%",
             "deposit": {
                 "title": "%%%.proLending.investBooking.deposit.title%%%",
                 "depositButton": "%%%.proLending.investBooking.deposit.depositButton%%%",
@@ -4503,7 +4525,8 @@
                 "fee": "%%%.proLending.investBooking.form.fee%%%",
                 "amountDesc": "%%%.proLending.investBooking.form.amountDesc%%%",
                 "termDesc": "%%%.proLending.investBooking.form.termDesc%%%",
-                "interestDesc": "%%%.proLending.investBooking.form.interestDesc%%%"
+                "interestDesc": "%%%.proLending.investBooking.form.interestDesc%%%",
+                "goToAccountApp": "%%%.proLending.investBooking.form.goToAccountApp%%%"
             }
         },
         "borrowBooking": {
@@ -4531,7 +4554,8 @@
                 "usingStaking": "%%%.proLending.borrowBooking.exchange.usingStaking%%%",
                 "usingStakingMobile": "%%%.proLending.borrowBooking.exchange.usingStakingMobile%%%",
                 "usingStakingDesc": "%%%.proLending.borrowBooking.exchange.usingStakingDesc%%%",
-                "stakingMinAmount": "%%%.proLending.borrowBooking.exchange.stakingMinAmount%%%"
+                "stakingMinAmount": "%%%.proLending.borrowBooking.exchange.stakingMinAmount%%%",
+                "goToAccountApp": "%%%.proLending.borrowBooking.exchange.goToAccountApp%%%"
             },
             "createdSuccess": "%%%.proLending.borrowBooking.createdSuccess%%%",
             "errorMsgs": {
@@ -5202,12 +5226,15 @@
             "title": "%%%.memberShip.history.title%%%",
             "level": "%%%.memberShip.history.level%%%",
             "reward": "%%%.memberShip.history.reward%%%",
-            "date": "%%%.memberShip.history.date%%%"
+            "date": "%%%.memberShip.history.date%%%",
+            "redeem": "%%%.memberShip.history.redeem%%%",
+            "redeemDesc": "%%%.memberShip.history.redeemDesc%%%"
         },
         "rewardType": {
             "reward": "%%%.memberShip.rewardType.reward%%%",
             "fiat": "%%%.memberShip.rewardType.fiat%%%",
-            "null": "%%%.memberShip.rewardType.null%%%"
+            "null": "%%%.memberShip.rewardType.null%%%",
+            "mixed": "%%%.memberShip.rewardType.mixed%%%"
         },
         "memberShipLevel": {
             "level0": "%%%.memberShip.memberShipLevel.level0%%%",
@@ -5243,6 +5270,43 @@
             "7": {
                 "question": "%%%.memberShip.faqs.7.question%%%",
                 "answer": "%%%.memberShip.faqs.7.answer%%%"
+            },
+            "8": {
+                "question": "%%%.memberShip.faqs.8.question%%%",
+                "answer": "%%%.memberShip.faqs.8.answer%%%"
+            },
+            "9": {
+                "question": "%%%.memberShip.faqs.9.question%%%",
+                "answer": "%%%.memberShip.faqs.9.answer%%%"
+            },
+            "10": {
+                "question": "%%%.memberShip.faqs.10.question%%%",
+                "answer": "%%%.memberShip.faqs.10.answer%%%"
+            },
+            "11": {
+                "question": "%%%.memberShip.faqs.11.question%%%",
+                "answer": "%%%.memberShip.faqs.11.answer%%%"
+            },
+            "12": {
+                "question": "%%%.memberShip.faqs.12.question%%%",
+                "answer": "%%%.memberShip.faqs.12.answer%%%"
+            },
+            "13": {
+                "question": "%%%.memberShip.faqs.13.question%%%",
+                "answer": "%%%.memberShip.faqs.13.answer%%%"
+            },
+            "14": {
+                "question": "%%%.memberShip.faqs.14.question%%%",
+                "answer": "%%%.memberShip.faqs.14.answer%%%"
+            }
+        },
+        "reviewMemberShip": {
+            "redeemButton": "%%%.memberShip.reviewMemberShip.redeemButton%%%",
+            "redeemButtonMobile": "%%%.memberShip.reviewMemberShip.redeemButtonMobile%%%",
+            "redeemPopup": {
+                "messageConfirm": "%%%.memberShip.reviewMemberShip.redeemPopup.messageConfirm%%%",
+                "confirm": "%%%.memberShip.reviewMemberShip.redeemPopup.confirm%%%",
+                "cancel": "%%%.memberShip.reviewMemberShip.redeemPopup.cancel%%%"
             }
         }
     },
@@ -5493,6 +5557,14 @@
             "repaidEarly": {
                 "title": "%%%.notification.invest.repaidEarly.title%%%",
                 "desc": "%%%.notification.invest.repaidEarly.desc%%%"
+            },
+            "selling": {
+                "title": "%%%.notification.invest.selling.title%%%",
+                "desc": "%%%.notification.invest.selling.desc%%%"
+            },
+            "sold": {
+                "title": "%%%.notification.invest.sold.title%%%",
+                "desc": "%%%.notification.invest.sold.desc%%%"
             }
         },
         "loan": {

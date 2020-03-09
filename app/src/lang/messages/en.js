@@ -1650,7 +1650,6 @@ export default {
           picked: 'Pending',
           voiding: 'Selling',
           voided: 'Sold',
-          void_cancelled: 'Canceled'
         },
         interestInfo: {
           header: {
@@ -1872,6 +1871,8 @@ export default {
           depositSavingFailed: 'Failed To Invest Saving',
           stopSavingSuccess: 'You ended your term deposit. Withdraw your funds anytime.',
           stopSavingFailed: 'End your term failed.',
+          stopSellingInvestmentSuccess: 'Thanks – we’ve cancelled your sell order and the investment remains yours.',
+          stopSellingInvestmentFailed: 'End your term failed.',
           applyReferralSuccess: 'Thanks! Your rewards have been applied.',
           applyReferralFailed: 'Sorry, something went wrong. Please try again.',
           batchTransferSuccess: 'You successfully sent the batch file',
@@ -4308,6 +4309,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       name: 'Recipient',
       placeholder: 'Enter receiving email address',
     },
+    venmo: {
+      name: 'Recipient',
+      placeholder: 'Enter receiving phone number',
+    },
     currencyDropdownLabel: 'Your currency',
     sellBtn: 'Withdraw',
     getAmountFailed: 'Failed while getting amount',
@@ -5233,6 +5238,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           'Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled.',
         referNote: 'Your reference number is {ref_number}',
         referNoteDesc: 'To streamline the deposit process, please include this reference number when making the bank transfer.',
+        googleNoteDesc: 'To streamline the deposit process, please include this reference number when sending your money using Google Pay.',
+        venmoNoteDesc: 'To streamline the deposit process, please include this reference number when sending your money using Venmo.',
         zelleNote: 'Before making a transfer, please enter the full name associated with the Zelle account here',
         zellePlaceholder: 'Please enter the full name here',
         zelleSubmit: 'Submit',
@@ -5250,6 +5257,13 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>
           <p>Please select the bank that is most convenient for you to transfer funds to.</p>
         `,
+        googleDesc: `
+          <p>Google Pay is a fast, safe payment tool linked to your Google account. To get started, log into Google Pay and link a payment method (such as a bank card). Then enter the details on the right in your Google Pay account and click send.</p>
+        `,
+        venmoDesc: `
+          <p>Venmo is a fast, easy, and convenient payment app from the makers of PayPal. </p>
+          <p>To use Venmo, simply download the app and send your money to us using the details on the right-hand side of the page.</p>
+        `,
         zelle1: `
           <p>Amount: {amount} USD</p>
           <p>Send to: <strong>finance@myconstant.com</strong></p>
@@ -5265,6 +5279,31 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>
           <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>
         `,
+        google: `
+          <p>Amount: {amount} USD</p>
+          <p>Send to: <strong>accounting@constant.money</strong></p>
+          <p>Full name: <strong>Const LLC</strong></p>
+          <p>Type: <strong>Personal Account</strong></p>
+        `,
+        googleNote: 'Before making a transfer, please enter the email associated with your Google Pay account below:',
+        googlePlaceholder: 'Please enter the email here',
+        googleSubmit: 'Submit',
+        venmo: `
+        <p>Amount: {amount} USD</p>
+        <p>Send to: <strong>909-288-9105</strong></p>
+        `,
+        venmoNote: 'Before making a transfer, please enter the phone number associated with the Venmo account here',
+        venmoPlaceholder: 'Please enter the phone number here',
+        venmoSubmit: 'Submit',
+        paypal: `
+          <p>Amount: {amount} USD</p>
+          <p>Send to: <strong>finance@myconstant.com</strong></p>
+          <p>Full name: <strong>Const LLC</strong></p>
+          <p>Type: <strong>Personal Account</strong></p>
+        `,
+        paypalNote: 'Before making a transfer, please enter the email associated with the Paypal account here',
+        paypalPlaceholder: 'Please enter the email here',
+        paypalSubmit: 'Submit',
         bankChosenMessage1: `
           <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>
           <p>Please select the bank that is most convenient for you to transfer funds to.</p>
@@ -5729,26 +5768,26 @@ While Constant processes your deposits and withdrawals free of charge, transacti
   getPrices: {
     title: 'Pricing and Service times',
     desc: `
-    <p class="bold">All times shown below are maximum estimates. In all cases, the team strives for ASAP.</p>
-    <p class="bold">While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</p>
+    <div>All times shown below are maximum estimates. In all cases, the team strives for ASAP.</div>
+    <div>While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</div>
     `,
     collateralIssue: `
-    *About collateral issue, please ping <a href="https://t.me/andy_9210" className="underline bold" target="_blank"><strong>@andy_9210</strong></a> on telegram to get direct support.
+    <p class="title">*About collateral issue, please ping <a href="https://t.me/andy_9210" className="underline bold" target="_blank"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>
     `,
     withdrawCryptoNote: `
-    <p>*Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually.</p>
-    <p>*Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>
-    <h6 class="bold">Service time guarantee &#10004; </h6>
+    <p class="title">*Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually.</p>
+    <p class="title">*Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>
+    <div class="bold">Service time guarantee &#10004; </div>
     <p>Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>
     `,
     withdrawCollateralNote: `
-    <p>*About collateral issue, please ping <a href="https://t.me/andy_9210" className="underline bold" target="_blank"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>
+    <p class="title">*About collateral issue, please ping <a href="https://t.me/andy_9210" className="underline bold" target="_blank"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>
     `,
     holidaysNote: `
-    <p>*Our service time may also be affected by public and banking holidays in the US and your local country.</p>
+    <p class="title">*Our service time may also be affected by public and banking holidays in the US and your local country.</p>
     `,
     zelleDepositDelayIssue: `
-    <p>*Possible reasons for a delay in processing your Zelle deposit</p>
+    <p class="title">*Possible reasons for a delay in processing your Zelle deposit</p>
     <p> - Missing relevant information to match with your deposit order: Name, User ID, Reference...</p>
     <p> - Varying level of processing time by the bank.</p>
     <p> - Transfering from an account with the account holder's name different than your registered name on Constant platform.</p>
@@ -5793,7 +5832,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     withdrawCollateralData: {
       title1: `ERC20 collaterals <strong>not</strong> deposited in BitGo / BTC, ETH, BEP2, TOMO, BEAM, XZC: <$10,000`,
       title2: `ERC20 collaterals <strong>not</strong> deposited in BitGo / BTC, ETH, BEP2, TOMO, BEAM, XZC: >$10,000`,
-      title3: `<a href="https://docs.google.com/spreadsheets/d/1VIiNXdg7LTJXuUHhtYw2nEH14q4d9rUjW_9QH2zIyzU/edit#gid=0" target="_blank" class="underline bold">ERC20 collaterals deposited in BitGo</a> / Others`,
+      title3: `<a href="https://docs.google.com/spreadsheets/d/1VIiNXdg7LTJXuUHhtYw2nEH14q4d9rUjW_9QH2zIyzU/edit#gid=0" target="_blank" class="underline"><strong>ERC20 collaterals deposited in BitGo</strong></a> / Others`,
     },
     matchingFee: {
       head1: 'Matching fee',
@@ -5881,7 +5920,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       side: 'Side',
       amount: 'Amount(USD)',
       interest: 'Rate(APR)',
-      term: '(Days)',
+      term: 'Days',
       date: 'Created',
       matched: 'Matched',
       messageSuccess: 'Your order book have been canceled successfully'
@@ -5910,6 +5949,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       interestRequired: 'Interest is required to make an investment!',
       matchedSuccess: 'Your invest had been matched successfully.',
       matchedFailed: 'Your invest had been matched unsuccessfully, please try again.',
+      matchedSecondaryInvestmentSuccess: 'Done! You\'ve bought a new investment. To track it, please visit the Secondary Market tab on your Accounts page.',
       deposit: {
         title: 'Investments deposit',
         depositButton: 'Deposit more',
@@ -5929,6 +5969,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         amountDesc: '<p>How much do you want to lend?</p>',
         termDesc: 'If there is a borrower looking for a shorter loan at your rates, you will be partially matched. We will continue to find you a match for the rest of the term.',
         interestDesc:'This is your annual interest rate. If there is a borrower willing to pay more, you will earn the higher rate.',
+        goToAccountApp: "Please go to the Account tab to sign up or log in.",
       }
     },
     borrowBooking: {
@@ -5957,6 +5998,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         usingStakingMobile: 'Get {discount}% off with staking',
         usingStakingDesc: 'Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.',
         stakingMinAmount: 'stake amount must be great than {minVal} {currency}',
+        goToAccountApp: "Please go to the Account tab to sign up or log in.",
       },
       createdSuccess: 'Your borrow had been created successfully',
       errorMsgs: {
@@ -6617,9 +6659,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       <p>Once you invest or borrow the minimum amount for membership, rewards continue until your points expire.</p>
       <p>To keep your benefits, simply invest or borrow again to top up your points.</p>
       `,
-      details: `For every dollar you invest or borrow, you earn 1 membership point. Each point expires after 180 days.  
-        Once you invest or borrow the minimum amount for membership, rewards continue until your points expire.  
-        To keep your benefits, simply invest or borrow again to top up your points.`,
+      details: `For every dollar you invest or borrow, you earn 1 membership point. Each point expires after 180 days. Once you invest or borrow the minimum amount for membership your rewards continue until your points expire. To keep your benefits, simply invest or borrow again to top up your points.`,
       levelInfo: {
         title: '{level} Member',
         point: '{point} points',
@@ -6686,28 +6726,43 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     },
     desc: {
       level1: `<h4>What you get:</h4>
-              <p><i class="fal fa-check"></i> {cashback} cashback when you become a Gold member.</p>
-              <p><i class="fal fa-check"></i> Instant deposit on new investment orders, capped at {capped}.</p>
-              <p><i class="fal fa-check"></i> Instant stablecoin and cryptocurrency withdrawals.</p>`,
+              <p><i class="fal fa-check"></i> $50 credit to your Constant account the first time you reach Gold (after leaving a review on Trustpilot).</p>
+              <p><i class="fal fa-check"></i> US members: $15 credit every time you refer a friend.</p>
+              <p><i class="fal fa-check"></i> 15% of all earned interest from Flex accounts of referred friends during their first year.</p>
+              <p><i class="fal fa-check"></i> Withdrawals through Google Pay and Venmo.</p>
+            `,
       level2: `<h4>What you get:</h4>
-              <p><i class="fal fa-check"></i> {cashback} when you become a Platinum member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>
-              <p><i class="fal fa-check"></i> Instant deposit on new investment orders, capped at {capped}.</p>
-              <p><i class="fal fa-check"></i> Instant stablecoin and cryptocurrency withdrawals.</p>`,
+              <p><i class="fal fa-check"></i> $50 credit to your Constant account the first time you reach Platinum (after leaving a review on Trustpilot).</p>
+              <p><i class="fal fa-check"></i> 17.5% of all earned interest from Flex accounts of referred friends during their first year.</p>
+              <p><i class="fal fa-check"></i> US members: $17.5 credit every time you refer a friend.</p>
+              <p><i class="fal fa-check"></i> Withdrawals through Google Pay and Venmo.</p>
+              <p><i class="fal fa-check"></i> Deposits through Paypal.</p>
+              <p><i class="fal fa-check"></i> Deposits through ACH and Checkbook for all investment term lengths.</p>
+            `,
       level3: `<h4>What you get:</h4>
-                 <p><i class="fal fa-check"></i> {cashback} when you become a Diamond member. You can redeem your STAR for {bonus} bonus interest on an investment or a {bonus} discount on a loan.</p>
-                <p><i class="fal fa-check"></i> Instant deposit on new investment orders, capped at {capped} of the LTV.</p>
-                <p><i class="fal fa-check"></i> Instant stablecoin and cryptocurrency withdrawals.</p>`,
+              <p><i class="fal fa-check"></i> $50 credit to your Constant account the first time you reach Diamond (after leaving a review on Trustpilot).</p>
+              <p><i class="fal fa-check"></i> Automatic bump to the top of our matching queue for all investments.</p>
+              <p><i class="fal fa-check"></i> 20% of all earned interest from Flex accounts of referred friends during their first year.</p>
+              <p><i class="fal fa-check"></i> US members: $20 credit every time you refer a friend.</p>
+              <p><i class="fal fa-check"></i> 1 STAR tokens to redeem for a 1% bonus or discounted interest.</p>
+              <p><i class="fal fa-check"></i> Withdrawals through Google Pay and Venmo.</p>
+              <p><i class="fal fa-check"></i> Deposits through Paypal.</p>
+              <p><i class="fal fa-check"></i> Deposits through ACH and Checkbook for all investment term lengths.</p>
+            `,
     },
     history: {
       title: 'History',
       level: 'Status',
       reward: 'Get reward',
       date: 'Date',
+      redeem: 'Redeem',
+      redeemDesc: 'Membership rewards are paid after you\'ve reviewed us TrustPilot. If you\'ve reviewed us already, your rewards will go straight into your account. Otherwise, click the Unlock your rewards button below to submit your TrustPilot username and get your rewards.'
     },
     rewardType: {
       reward: 'STAR',
-      fiat: 'CONST',
+      fiat: '$',
       null: 'Not Available',
+      mixed: 'Mixed'
     },
     memberShipLevel: {
       level0: 'Member',
@@ -6717,70 +6772,135 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     },
     faqs: {
       1: {
-        question: 'Do the minimum amounts apply to single loans only?',
+        question: 'Do the minimum investment/borrow amounts apply to single loans only?',
         answer: `
-          <p>No, you can invest or borrow multiple times within the 180 days to become a Gold, Platinum or Diamond member.</p>
+          <p>
+          No, you can invest or borrow multiple times within the 180 days to become a Gold, Platinum, or Diamond member.
+          </p>
           `,
       },
       2: {
-        question: 'Do outstanding loans and investments qualify?',
+        question: 'Do outstanding loans and investments qualify for points?',
         answer: `
-          <p>Yes. You can meet the minimum threshold on active loans and investments that are yet to mature.</p>
+          <p>
+          Yes. You can meet the minimum threshold for membership on active loans and investments that are yet to mature.
+          </p>
           `,
       },
       3: {
         question: 'Can I combine loans and investments to reach the membership threshold?',
         answer: `
           <p>
-          The Constant Referral Reward program earns you extra interest for investing or sharing Constant with friends and family. 
-          You earn interest by completing certain actions, such as referring Constant to friends who then sign up, 
-          sharing Constant on social media, and investing a minimum of $1,000 or more.
+          No. The membership thresholds apply separately to loans and investments. For example, you must invest $25,000 or borrow $25,000 to qualify for Gold membership.
           </p>
-          <p>
-          Complete all actions in our Referral Rewards program and you could earn 6% additional interest on your Investment Plans.
-           </p>
           `,
       },
       4: {
-        question: 'What are Constant Referral Rewards?',
-        answer: `
-          <p>No. The membership thresholds apply separately to loans and investments. 
-          For example, you must invest $25,000 or borrow $25,000 to qualify for Gold membership.</p>
-          `,
-      },
-      5: {
         question: 'How long do membership rewards last?',
         answer: `
           <p>
-          The $100 cashback and STAR bonuses <strong>are one-off rewards only</strong>. The other benefits last as long as your points do. 
-          You earn a point for every dollar you invest or borrow and each point expires after 180 days. So, 
-          if you make a single investment of $25,000, for example, your points will last 180 days and so will the benefits.
+          The $50 cashback rewards and STAR bonus are <strong>one-off rewards only</strong>. The other benefits last as long as your points do. You earn a point for every dollar you invest or borrow and each point expires after 180 days. So, if you make a single investment of $25,000, for example, your points will last 180 days and so will the benefits.
           </p>
           <p>
-          If you invest several times to reach the minimum, your rewards will last 180 days from the first qualifying point you earned. 
-          For example, if you invest $10,000 and then $15,000 three months later, your benefits will continue until your first batch of points expire.
+          If you invest several times to reach the minimum, your rewards will last 180 days from the first qualifying point you earned. For example, if you invest $10,000 and then $15,000 three months later, your benefits will continue until your first batch of points expire.
+           </p>
+          `,
+      },
+      5: {
+        question: 'Can I extend membership rewards?',
+        answer: `
+          <p>
+          Yes! When your points expire, simply invest or borrow again to top them up. This way, you can keep your membership benefits for as long as you want them.
            </p>
           `,
       },
       6: {
-        question: 'Can I extend membership rewards?',
+        question: 'Do I need to contact you when I’ve reached the minimum amount?',
         answer: `
           <p>
-          Yes! When your points expire, simply invest or borrow again to top them up. 
-          This way, you can keep your membership benefits for as long as you want them.
+          No, you don’t need to do anything. We’ll track your investment and loan volume on a rolling six-month basis and when you meet the minimum threshold, we’ll immediately upgrade you to Gold, Platinum, or Diamond status.
            </p>
           `,
       },
       7: {
-        question: 'Do I need to contact you when I’ve reached the minimum amount?',
+        question: 'Why is there an expiration date on membership points?',
         answer: `
           <p>
-          No, you don’t need to do anything. We’ll track your investment and loan volume on a rolling six-month basis and when you meet the minimum threshold, 
-          we’ll immediately upgrade you to Gold, Platinum or Diamond status. 
-          Your rewards are also paid immediately, and the ongoing benefits last as long as your points do. 
+          While there is an expiration date on points there is no expiration date on the Membership Rewards program. This is our way of saying thank you to our most loyal and active customers, so we want to run the program for as long as possible. The expiration date allows us to tie membership strictly to active, regular users of our platform.
            </p>
           `,
       },
+      8: {
+        question: 'Can you qualify for each level multiple times?',
+        answer: `
+          <p>
+          Yes, you can. However, the $150 and STAR bonuses can only be claimed once during the lifetime of your account. You can maintain the other benefits indefinitely.
+           </p>
+          `,
+      },
+      9: {
+        question: 'Can I earn all the benefits at once?',
+        answer: `
+          <p>
+          Interest from referrals is exclusive to each level of membership. The instant credit reward can each be earned only one time per each level. For example, if you invest $100,000, you’ll get $150 + 1 STAR + 20% of earned interest from referred friends’ Flex accounts (until your membership points expire).
+           </p>
+          `,
+      },
+      10: {
+        question: 'How do I redeem STAR?',
+        answer: `
+          <p>
+          By going to your <a href="/accounts" class="underline bold">Accounts</a> page you can redeem STAR against any active investment or loan. 1 STAR = +/- 1% interest (depending on if you’re a lender or borrower). The bonus or discount is applied from the date of redemption until the loan or investment matures. STAR tokens don’t expire, so you can save them up and redeem them in one go if you want.
+           </p>
+          `,
+      },
+      11: {
+        question: 'What happens when my points expire?',
+        answer: `
+          <p>
+          You can top points up to maintain your membership benefits. Your Membership Rewards page shows when your points expire and you’ll also receive an email reminder from us too. If you allow your points to expire, you will lose your membership and benefits, but can always re-qualify by earning enough points. Please note the $150 and STAR bonuses are one-time benefits — you can only earn them once per level.
+           </p>
+          `,
+      },
+      12: {
+        question: 'Will my referral interest change when my points expire?',
+        answer: `
+          <p>
+          As stated above, if you allow your points to expire, you will lose your membership and benefits. This includes bonus referral interest rates. However, all special interest rates from friends you refer will be upgraded upon achieving membership.
+           </p>
+          `,
+      },
+      13: {
+        question: 'Do I have to complete 3 Trustpilot reviews to get all $150?',
+        answer: `
+          <p>
+          When you reach a new membership level you will be prompted to leave a review on our Trustpilot. Once you click the link to our Trustpilot on our membership page and enter your username your reward will be automatically credited to your account. If you have done this once you never have to do it again. Thanks for spreading the word about our platform :).
+           </p>
+          `,
+      },
+      14: {
+        question: 'I am already a member. Can I claim an additional $50 or STAR reward for my current level?',
+        answer: `
+          <p>
+          If you’re already participating in our membership program then, first of all, thank you! But since you’ve already received a reward for your current level, you must move up a level to receive new rewards.
+           </p>
+           <p>
+          <strong>For example:</strong> if you are already a Gold member you won’t be able to earn $50 cashback for Gold again but can gain $50 rewards if you upgrade to Platinum or Diamond. If you’re already a Diamond member you’ll be unable to receive further one-time rewards from any level as you already have earned them.
+           </p>
+           <p>
+          You will, however, be able to receive all extra interest and rewards on your new referrals based on your current level as well as its new withdrawal/deposit options.
+           </p>
+          `,
+      },
+    },
+    reviewMemberShip: {
+      redeemButton: 'Unlock your rewards',
+      redeemButtonMobile: 'Rewards',
+      redeemPopup: {
+        messageConfirm: 'To unlock your rewards, please <a href="https://www.trustpilot.com/review/myconstant.com" class="underline" target="_blank">review us on TrustPilot</a>. Then enter your TrustPilot username below and click Submit. Your rewards will unlock immediately.',
+        confirm: 'Submit',
+        cancel: 'Cancel'
+      }
     }
   },
   trustPilot: {
@@ -6972,7 +7092,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         1: {
           title: '1',
           content: `
-            <p><strong>Give you control</strong> over amounts, rates, and terms.</p>  
+            <p><strong>Give you control</strong> over amounts, rates, and terms.</p>
             <p>We’re the only P2P lending platform in the world to offer this (as far as we know).</p>
           `,
         },
@@ -7069,6 +7189,14 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         title: 'Your investment has been repaid early',
         desc: `Your investment of {amount} has been repaid early. Please click <a href="/accounts" class="underline">here</a> to check your dashboard and reinvest your money.`
       },
+      selling: {
+        title: 'We\'re selling your investment',
+        desc: `Your investment order has rejoined the matching queue. Once sold, we'll return your principal of \${amount} and pay you 2% APR on elapsed term time. In the meantime, you can cancel your sell order from your <a href="/accounts" class="underline">Accounts page</a>.`
+      },
+      sold: {
+        title: 'Your investment was sold',
+        desc: `We've sold your investment order. Your principal of \${amount} and 2%APR earned interest of \${interestAmount} are in your account and ready to use.`
+      }
     },
     loan: {
       done: {

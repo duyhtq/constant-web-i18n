@@ -133,6 +133,7 @@
         "developers": "%%%.footer.developers%%%",
         "support": "%%%.footer.support%%%",
         "supportCenter": "%%%.footer.supportCenter%%%",
+        "help": "%%%.footer.help%%%",
         "telegramText": "%%%.footer.telegramText%%%",
         "email": "%%%.footer.email%%%",
         "register": "%%%.footer.register%%%",
@@ -197,7 +198,14 @@
                 "link": "%%%.footer.social.email.link%%%"
             }
         },
-        "content": "%%%.footer.content%%%"
+        "content": "%%%.footer.content%%%",
+        "mainPages": {
+            "titleConstant": "%%%.footer.mainPages.titleConstant%%%",
+            "invest": "%%%.footer.mainPages.invest%%%",
+            "borrow": "%%%.footer.mainPages.borrow%%%",
+            "flex": "%%%.footer.mainPages.flex%%%",
+            "staking": "%%%.footer.mainPages.staking%%%"
+        }
     },
     "lending": {
         "title": "%%%.lending.title%%%",
@@ -483,6 +491,7 @@
             "plDocType": "%%%.me.kyc.plDocType%%%",
             "btnSubmit": "%%%.me.kyc.btnSubmit%%%",
             "lUpload": "%%%.me.kyc.lUpload%%%",
+            "selfie": "%%%.me.kyc.selfie%%%",
             "descIDUpload": "%%%.me.kyc.descIDUpload%%%",
             "lAddrStr1": "%%%.me.kyc.lAddrStr1%%%",
             "lAddrCountry": "%%%.me.kyc.lAddrCountry%%%",
@@ -2133,6 +2142,12 @@
                     "wire": {
                         "title": "%%%.home.convert.payToForm.transferMethods.wire.title%%%",
                         "desc": "%%%.home.convert.payToForm.transferMethods.wire.desc%%%"
+                    }
+                },
+                "transferMethodsCheckbook": {
+                    "ach": {
+                        "title": "%%%.home.convert.payToForm.transferMethodsCheckbook.ach.title%%%",
+                        "desc": "%%%.home.convert.payToForm.transferMethodsCheckbook.ach.desc%%%"
                     }
                 }
             },

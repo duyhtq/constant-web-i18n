@@ -114,9 +114,9 @@
             "address1": "101 E Redlands Blvd",
             "address2": " Redlands, CA 92373, USA"
         },
-        "getSocial": "Social Media",
+        "getSocial": "Follow",
         "titleFoundation": "About",
-        "titleConstant": "Buy Constant",
+        "titleConstant": "Constant",
         "career": "Career",
         "about": "About",
         "theTeam": "The Team",
@@ -131,8 +131,9 @@
         "faqs": "FAQs",
         "affiliate": "Affiliate",
         "developers": "Developers",
-        "support": "Support",
+        "support": "Help & Support",
         "supportCenter": "Support Center",
+        "help": "Help",
         "telegramText": "Join the {link}",
         "email": "Email us at {email}",
         "register": "2019 Constant",
@@ -189,7 +190,7 @@
                 "link": "https://medium.com/@constantp2p"
             },
             "tele": {
-                "title": "Constant Telegram",
+                "title": "Telegram",
                 "link": "https://t.me/constantp2p"
             },
             "email": {
@@ -197,7 +198,14 @@
                 "link": "hello@myconstant.com"
             }
         },
-        "content": "\n    <p class=\"bold\">Is CONST LLC a bank?</p>\n    <p>Please note that CONST LLC (hereafter referred to as “we”, “us”, or “Company”) is not a bank or deposit account, nor is it a regulated financial institution. Constant tokens are not financial instruments. No interest will be paid on any funds or other assets held in your Constant account and all assets directly held by us are not insured by us or, except as set forth below, any third party or any government agency.</p>\n    <p>We work with independent third-party financial institutions such as Prime Trust to provide cash management for the fiat deposits backing Constant tokens, ensuring that all Constant tokens in circulation are matched by an equal amount of fiat deposits. To achieve this, the fiat deposits backing Constant are held in one or more depository accounts at US banks or trust companies whose deposits may be insured.</p>\n    <p>Rate is current at the time of reading, and may be subject to change in the future.</p>\n    "
+        "content": "\n    <p class=\"bold\">Is CONST LLC a bank?</p>\n    <p>Please note that CONST LLC (hereafter referred to as “we”, “us”, or “Company”) is not a bank or deposit account, nor is it a regulated financial institution. Constant tokens are not financial instruments. No interest will be paid on any funds or other assets held in your Constant account and all assets directly held by us are not insured by us or, except as set forth below, any third party or any government agency.</p>\n    <p>We work with independent third-party financial institutions such as Prime Trust to provide cash management for the fiat deposits backing Constant tokens, ensuring that all Constant tokens in circulation are matched by an equal amount of fiat deposits. To achieve this, the fiat deposits backing Constant are held in one or more depository accounts at US banks or trust companies whose deposits may be insured.</p>\n    <p>Rate is current at the time of reading, and may be subject to change in the future.</p>\n    ",
+        "mainPages": {
+            "titleConstant": "Constant",
+            "invest": "Invest",
+            "borrow": "Borrow",
+            "flex": "Deposit",
+            "staking": "Staking"
+        }
     },
     "lending": {
         "title": "Constant",
@@ -483,6 +491,7 @@
             "plDocType": "Select your ID type",
             "btnSubmit": "Submit",
             "lUpload": "Upload an image of THE {face} of your {type}",
+            "selfie": "Upload an image of your SELFIE",
             "descIDUpload": "Please make sure that the photo is complete and clearly visible, in BMP, JPG, JPEG, or PNG format, and is smaller than 3MB.",
             "lAddrStr1": "Address Street 1",
             "lAddrCountry": "Country on your proof of address",
@@ -844,8 +853,8 @@
                     "false": "Your balance earns 4% APY through Flex. You can withdraw anytime for free."
                 },
                 "enableFlexSuccess": {
-                    "true": "<p>Your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust stores your funds across multiple insured bank accounts, giving total coverage of $130,000,000. You can withdraw anytime for free, but your balance will not earn interest.</p>\n<a href=\"/blog/5de7367206d81400175587e0\" class=\"underline\" target=\"_blank\">Find out more about Prime Trust</a>\n",
-                    "false": "<p>Congratulations! Your balance will now earn 4% APY through Flex. You can withdraw anytime for free and your balance is protected by borrower collateral.</p>\n<a href=\"/blog/5de4888606d81400175587aa\" class=\"underline\" target=\"_blank\">Find out how Flex works</a>\n"
+                    "true": "<p>Your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust stores your funds across multiple insured bank accounts, giving total coverage of $130,000,000. You can withdraw anytime for free, but your balance will not earn interest.</p>\n<a href=\"/blog/meet-scott-purcell-—-ceo-of-prime-trust\" class=\"underline\" target=\"_blank\">Find out more about Prime Trust</a>\n",
+                    "false": "<p>Congratulations! Your balance will now earn 4% APY through Flex. You can withdraw anytime for free and your balance is protected by borrower collateral.</p>\n<a href=\"/blog/flex-or-prime-trust-you-decide!\" class=\"underline\" target=\"_blank\">Find out how Flex works</a>\n"
                 },
                 "enableFlexFailed": {
                     "true": "Sorry, we can’t disable Flex for you right now – please try again later. If you keep getting this message, please email us at hello@myconstant.com.",
@@ -1442,7 +1451,7 @@
                     "autoTopup": {
                         "messageConfirm": {
                             "true": "Are you sure you want to turn off auto top-up? Your collateral will be liquidated if it falls to {LiqPer}%.",
-                            "false": "Auto top-up enabled. Collateral value that falls to {LiqPer}% will be restored to {restoreTo}%."
+                            "false": "Auto top-up enabled. Collateral value that falls to {AutoTopupPer}% will be restored to {AutoTopupToPer}%."
                         },
                         "autoTopUpCollateralSuccess": {
                             "true": "Turn auto top up on successfully",
@@ -2133,6 +2142,12 @@
                     "wire": {
                         "title": "Wire",
                         "desc": "Fee: might be charged by your bank. Time: a business day"
+                    }
+                },
+                "transferMethodsCheckbook": {
+                    "ach": {
+                        "title": "ACH",
+                        "desc": "Fee: Free. Time: next business day"
                     }
                 }
             },
@@ -3826,7 +3841,7 @@
                 "2": {
                     "caption": "Chatting stablecoins and the future of banking - the team at {link}",
                     "linkCaption": "CES 2019",
-                    "link": "/blog/5de72ea006d81400175587da"
+                    "link": "/blog/constant-shines-at-ces-2019"
                 }
             }
         },
@@ -4054,7 +4069,7 @@
                 "venmoDesc": "\n          <p>Venmo is a fast, easy, and convenient payment app from the makers of PayPal. </p>\n          <p>To use Venmo, simply download the app and send your money to us using the details on the right-hand side of the page.</p>\n        ",
                 "zelle1": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <p>Full name: <strong>Const LLC</strong></p>\n          <p>Type: <strong>Personal Account</strong></p>\n        ",
                 "zelle": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <p>Full name: <strong>Const LLC</strong></p>\n          <p>Type: <strong>Personal Account</strong></p>\n          <br /><br />\n          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>\n          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n        ",
-                "google": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>accounting@constant.money</strong></p>\n          <p>Full name: <strong>Const LLC</strong></p>\n          <p>Type: <strong>Personal Account</strong></p>\n        ",
+                "google": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>accounting@constant.money</strong></p>\n        ",
                 "googleNote": "Before making a transfer, please enter the email associated with your Google Pay account below:",
                 "googlePlaceholder": "Please enter the email here",
                 "googleSubmit": "Submit",
@@ -5219,8 +5234,8 @@
         },
         "desc": {
             "level1": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> $50 credit to your Constant account the first time you reach Gold (after leaving a review on Trustpilot).</p>\n              <p><i class=\"fal fa-check\"></i> US members: $15 credit every time you refer a friend.</p>\n              <p><i class=\"fal fa-check\"></i> 15% of all earned interest from Flex accounts of referred friends during their first year.</p>\n              <p><i class=\"fal fa-check\"></i> Withdrawals through Google Pay and Venmo.</p>\n            ",
-            "level2": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> $50 credit to your Constant account the first time you reach Platinum (after leaving a review on Trustpilot).</p>\n              <p><i class=\"fal fa-check\"></i> 17.5% of all earned interest from Flex accounts of referred friends during their first year.</p>\n              <p><i class=\"fal fa-check\"></i> US members: $17.5 credit every time you refer a friend.</p>\n              <p><i class=\"fal fa-check\"></i> Withdrawals through Google Pay and Venmo.</p>\n              <p><i class=\"fal fa-check\"></i> Deposits through Paypal.</p>\n              <p><i class=\"fal fa-check\"></i> Deposits through ACH and Checkbook for all investment term lengths.</p>\n            ",
-            "level3": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> $50 credit to your Constant account the first time you reach Diamond (after leaving a review on Trustpilot).</p>\n              <p><i class=\"fal fa-check\"></i> Automatic bump to the top of our matching queue for all investments.</p>\n              <p><i class=\"fal fa-check\"></i> 20% of all earned interest from Flex accounts of referred friends during their first year.</p>\n              <p><i class=\"fal fa-check\"></i> US members: $20 credit every time you refer a friend.</p>\n              <p><i class=\"fal fa-check\"></i> 1 STAR tokens to redeem for a 1% bonus or discounted interest.</p>\n              <p><i class=\"fal fa-check\"></i> Withdrawals through Google Pay and Venmo.</p>\n              <p><i class=\"fal fa-check\"></i> Deposits through Paypal.</p>\n              <p><i class=\"fal fa-check\"></i> Deposits through ACH and Checkbook for all investment term lengths.</p>\n            "
+            "level2": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> $50 credit to your Constant account the first time you reach Platinum (after leaving a review on Trustpilot).</p>\n              <p><i class=\"fal fa-check\"></i> US members: $17.5 credit every time you refer a friend.</p>\n              <p><i class=\"fal fa-check\"></i> 17.5% of all earned interest from Flex accounts of referred friends during their first year.</p>\n              <p><i class=\"fal fa-check\"></i> Withdrawals through Google Pay and Venmo.</p>\n              <p><i class=\"fal fa-check\"></i> Deposits through Paypal.</p>\n              <p><i class=\"fal fa-check\"></i> Deposits through Checkbook ACH for all investment term lengths.</p>\n            ",
+            "level3": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> $50 credit to your Constant account the first time you reach Diamond (after leaving a review on Trustpilot).</p>\n              <p><i class=\"fal fa-check\"></i> US members: $20 credit every time you refer a friend.</p>\n              <p><i class=\"fal fa-check\"></i> 20% of all earned interest from Flex accounts of referred friends during their first year.</p>\n              <p><i class=\"fal fa-check\"></i> Withdrawals through Google Pay and Venmo.</p>\n              <p><i class=\"fal fa-check\"></i> Deposits through Paypal.</p>\n              <p><i class=\"fal fa-check\"></i> Deposits through Checkbook ACH for all investment term lengths.</p>\n              <p><i class=\"fal fa-check\"></i> Automatic bump to the top of our matching queue for all investments.</p>\n              <p><i class=\"fal fa-check\"></i> 1 STAR tokens to redeem for a 1% bonus or discounted interest.</p>\n            "
         },
         "history": {
             "title": "History",
@@ -5547,12 +5562,12 @@
                 "desc": "Your investment order of ${amount} is now fully matched. We found a borrower to accept your rate and term on the remaining ${matchedAmount}. You can track your investment on your <a href=\"/accounts\" class=\"underline\">Accounts page</a>."
             },
             "membershipPoint": {
-                "title": "Congrats! You earned {amount} points",
-                "desc": "Due to your investment order of ${amount}, your total points up til now is {totalAmount}. Only {amountToNextLevel} points to reach {nextLevel}!"
+                "title": "Congrats! You earned {amount} membership points",
+                "desc": "You earned {amount} points for investing ${amount}. Your total is now {totalAmount} points – you need just {amountToNextLevel} to reach {nextLevel}!"
             },
             "membershipPointMax": {
-                "title": "Congrats! You earned {amount} points",
-                "desc": "Due to your investment order of ${amount}, your total points up til now is {totalAmount}. Keep up the good work!"
+                "title": "Congrats! You earned {amount} membership points",
+                "desc": "You earned {amount} points for investing ${amount}. Your total is now {totalAmount} points."
             },
             "repaidEarly": {
                 "title": "Your investment has been repaid early",
@@ -5578,7 +5593,7 @@
             },
             "done_2": {
                 "title": "Last call! Repay your loan now",
-                "desc": "Your loan of ${amount} matured a while ago! Please repay a total of ${paidAmount} including ${overAmount} overdue fee as soon as possible or your collateral will be liquidated."
+                "desc": "Your loan of ${amount} matured a while ago! Please repay a total of ${paidAmount} including an ${overAmount} overdue fee as soon as possible or your collateral will be sold."
             },
             "match": {
                 "title": "Your loan order matched",
@@ -5601,12 +5616,12 @@
                 "desc": "The value of your {crypto} collateral has fallen to {collateralPercent}% of the investor’s principal and earned interest. When it falls to {liquidationPercent}%, your collateral will be sold to repay the investor (you keep the loan and anything left over from the sale). Please <a href=\"/accounts\" class=\"underline\">top up</a> your collateral to avoid liquidation."
             },
             "membershipPoint": {
-                "title": "Congrats! You earned {amount} points",
-                "desc": "Due to your loan order of ${amount}, your total points up til now is {totalAmount}. Only {amountToNextLevel} points to reach {nextLevel}!"
+                "title": "Congrats! You earned {amount} membership points",
+                "desc": "You earned {amount} points for borrowing ${amount}. Your total is now {totalAmount} points – you need just {amountToNextLevel} to reach {nextLevel}!"
             },
             "membershipPointMax": {
-                "title": "Congrats! You earned {amount} points",
-                "desc": "Due to your loan order of ${amount}, your total points up til now is {totalAmount}. Keep up the good work!"
+                "title": "Congrats! You earned {amount} membership points",
+                "desc": "You earned {amount} points for borrowing ${amount}. Your total is now {totalAmount} points."
             }
         },
         "promotion": {

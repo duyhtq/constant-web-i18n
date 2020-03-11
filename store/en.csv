@@ -73,9 +73,9 @@
 %%%.footer.company.name%%%,"CONST LLC"
 %%%.footer.company.address1%%%,"101 E Redlands Blvd"
 %%%.footer.company.address2%%%," Redlands, CA 92373, USA"
-%%%.footer.getSocial%%%,"Social Media"
+%%%.footer.getSocial%%%,"Follow"
 %%%.footer.titleFoundation%%%,"About"
-%%%.footer.titleConstant%%%,"Buy Constant"
+%%%.footer.titleConstant%%%,"Constant"
 %%%.footer.career%%%,"Career"
 %%%.footer.about%%%,"About"
 %%%.footer.theTeam%%%,"The Team"
@@ -90,8 +90,9 @@
 %%%.footer.faqs%%%,"FAQs"
 %%%.footer.affiliate%%%,"Affiliate"
 %%%.footer.developers%%%,"Developers"
-%%%.footer.support%%%,"Support"
+%%%.footer.support%%%,"Help & Support"
 %%%.footer.supportCenter%%%,"Support Center"
+%%%.footer.help%%%,"Help"
 %%%.footer.telegramText%%%,"Join the {link}"
 %%%.footer.email%%%,"Email us at {email}"
 %%%.footer.register%%%,"2019 Constant"
@@ -128,7 +129,7 @@
 %%%.footer.social.yt.link%%%,"https://www.youtube.com/channel/UCedaWJPf9sgsy5JajmqBAtg"
 %%%.footer.social.md.title%%%,"Medium"
 %%%.footer.social.md.link%%%,"https://medium.com/@constantp2p"
-%%%.footer.social.tele.title%%%,"Constant Telegram"
+%%%.footer.social.tele.title%%%,"Telegram"
 %%%.footer.social.tele.link%%%,"https://t.me/constantp2p"
 %%%.footer.social.email.title%%%,"Email"
 %%%.footer.social.email.link%%%,"hello@myconstant.com"
@@ -138,6 +139,11 @@
     <p>We work with independent third-party financial institutions such as Prime Trust to provide cash management for the fiat deposits backing Constant tokens, ensuring that all Constant tokens in circulation are matched by an equal amount of fiat deposits. To achieve this, the fiat deposits backing Constant are held in one or more depository accounts at US banks or trust companies whose deposits may be insured.</p>
     <p>Rate is current at the time of reading, and may be subject to change in the future.</p>
     "
+%%%.footer.mainPages.titleConstant%%%,"Constant"
+%%%.footer.mainPages.invest%%%,"Invest"
+%%%.footer.mainPages.borrow%%%,"Borrow"
+%%%.footer.mainPages.flex%%%,"Deposit"
+%%%.footer.mainPages.staking%%%,"Staking"
 %%%.lending.title%%%,"Constant"
 %%%.lending.subTitle%%%,"<h2>Invest or borrow<br> at rates you choose.</h2>"
 %%%.lending.desc%%%,"Experience fully secured, truly P2P lending. Loans 150% secured by crypto collateral and protected by Ethereum smart contracts."
@@ -400,6 +406,7 @@
 %%%.me.kyc.plDocType%%%,"Select your ID type"
 %%%.me.kyc.btnSubmit%%%,"Submit"
 %%%.me.kyc.lUpload%%%,"Upload an image of THE {face} of your {type}"
+%%%.me.kyc.selfie%%%,"Upload an image of your SELFIE"
 %%%.me.kyc.descIDUpload%%%,"Please make sure that the photo is complete and clearly visible, in BMP, JPG, JPEG, or PNG format, and is smaller than 3MB."
 %%%.me.kyc.lAddrStr1%%%,"Address Street 1"
 %%%.me.kyc.lAddrCountry%%%,"Country on your proof of address"
@@ -847,10 +854,10 @@
 %%%.me.flexInterestConfig.enableFlex.messageConfirm.true%%%,"Your balance is escrowed with Prime Trust and insured to $130,000,000."
 %%%.me.flexInterestConfig.enableFlex.messageConfirm.false%%%,"Your balance earns 4% APY through Flex. You can withdraw anytime for free."
 %%%.me.flexInterestConfig.enableFlex.enableFlexSuccess.true%%%,"<p>Your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust stores your funds across multiple insured bank accounts, giving total coverage of $130,000,000. You can withdraw anytime for free, but your balance will not earn interest.</p>
-<a href=""/blog/5de7367206d81400175587e0"" class=""underline"" target=""_blank"">Find out more about Prime Trust</a>
+<a href=""/blog/meet-scott-purcell-—-ceo-of-prime-trust"" class=""underline"" target=""_blank"">Find out more about Prime Trust</a>
 "
 %%%.me.flexInterestConfig.enableFlex.enableFlexSuccess.false%%%,"<p>Congratulations! Your balance will now earn 4% APY through Flex. You can withdraw anytime for free and your balance is protected by borrower collateral.</p>
-<a href=""/blog/5de4888606d81400175587aa"" class=""underline"" target=""_blank"">Find out how Flex works</a>
+<a href=""/blog/flex-or-prime-trust-you-decide!"" class=""underline"" target=""_blank"">Find out how Flex works</a>
 "
 %%%.me.flexInterestConfig.enableFlex.enableFlexFailed.true%%%,"Sorry, we can’t disable Flex for you right now – please try again later. If you keep getting this message, please email us at hello@myconstant.com."
 %%%.me.flexInterestConfig.enableFlex.enableFlexFailed.false%%%,"Sorry, we can’t enable Flex for you right now – please try again later. If you keep getting this message, please email us at hello@myconstant.com."
@@ -1368,7 +1375,7 @@
 %%%.me.proSaving.listApplications.dialog.payment.description%%%,"To repay your loan, please transfer {amount} {currency} to the address above."
 %%%.me.proSaving.listApplications.dialog.payment.ok%%%,"Close"
 %%%.me.proSaving.listApplications.dialog.autoTopup.messageConfirm.true%%%,"Are you sure you want to turn off auto top-up? Your collateral will be liquidated if it falls to {LiqPer}%."
-%%%.me.proSaving.listApplications.dialog.autoTopup.messageConfirm.false%%%,"Auto top-up enabled. Collateral value that falls to {LiqPer}% will be restored to {restoreTo}%."
+%%%.me.proSaving.listApplications.dialog.autoTopup.messageConfirm.false%%%,"Auto top-up enabled. Collateral value that falls to {AutoTopupPer}% will be restored to {AutoTopupToPer}%."
 %%%.me.proSaving.listApplications.dialog.autoTopup.autoTopUpCollateralSuccess.true%%%,"Turn auto top up on successfully"
 %%%.me.proSaving.listApplications.dialog.autoTopup.autoTopUpCollateralSuccess.false%%%,"Turn auto top up off successfully"
 %%%.me.proSaving.listApplications.dialog.autoTopup.autoTopUpCollateralFailed.true%%%,"Turn auto top up on failed"
@@ -1982,6 +1989,8 @@
 %%%.home.convert.payToForm.transferMethods.ach.desc%%%,"Fee: Free. Time: 2-5 days"
 %%%.home.convert.payToForm.transferMethods.wire.title%%%,"Wire"
 %%%.home.convert.payToForm.transferMethods.wire.desc%%%,"Fee: might be charged by your bank. Time: a business day"
+%%%.home.convert.payToForm.transferMethodsCheckbook.ach.title%%%,"ACH"
+%%%.home.convert.payToForm.transferMethodsCheckbook.ach.desc%%%,"Fee: Free. Time: next business day"
 %%%.home.convert.fee%%%,"Fee"
 %%%.home.convert.backOrderBook%%%,"Buy more Constant"
 %%%.home.convert.confirmMessage%%%,"Please make payment and click ""Confirm payment"""
@@ -3726,7 +3735,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.ours.team.captions.1.link%%%," "
 %%%.ours.team.captions.2.caption%%%,"Chatting stablecoins and the future of banking - the team at {link}"
 %%%.ours.team.captions.2.linkCaption%%%,"CES 2019"
-%%%.ours.team.captions.2.link%%%,"/blog/5de72ea006d81400175587da"
+%%%.ours.team.captions.2.link%%%,"/blog/constant-shines-at-ces-2019"
 %%%.ours.localOffices.title%%%,"Local Offices"
 %%%.ours.localOffices.offices.us.name%%%,"United States"
 %%%.ours.localOffices.offices.us.address1%%%,"101 E Redlands Blvd"
@@ -3934,8 +3943,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home1.lendingSection.confirm.google%%%,"
           <p>Amount: {amount} USD</p>
           <p>Send to: <strong>accounting@constant.money</strong></p>
-          <p>Full name: <strong>Const LLC</strong></p>
-          <p>Type: <strong>Personal Account</strong></p>
         "
 %%%.home1.lendingSection.confirm.googleNote%%%,"Before making a transfer, please enter the email associated with your Google Pay account below:"
 %%%.home1.lendingSection.confirm.googlePlaceholder%%%,"Please enter the email here"
@@ -5021,21 +5028,21 @@ While Constant processes your deposits and withdrawals free of charge, transacti
             "
 %%%.memberShip.desc.level2%%%,"<h4>What you get:</h4>
               <p><i class=""fal fa-check""></i> $50 credit to your Constant account the first time you reach Platinum (after leaving a review on Trustpilot).</p>
-              <p><i class=""fal fa-check""></i> 17.5% of all earned interest from Flex accounts of referred friends during their first year.</p>
               <p><i class=""fal fa-check""></i> US members: $17.5 credit every time you refer a friend.</p>
+              <p><i class=""fal fa-check""></i> 17.5% of all earned interest from Flex accounts of referred friends during their first year.</p>
               <p><i class=""fal fa-check""></i> Withdrawals through Google Pay and Venmo.</p>
               <p><i class=""fal fa-check""></i> Deposits through Paypal.</p>
-              <p><i class=""fal fa-check""></i> Deposits through ACH and Checkbook for all investment term lengths.</p>
+              <p><i class=""fal fa-check""></i> Deposits through Checkbook ACH for all investment term lengths.</p>
             "
 %%%.memberShip.desc.level3%%%,"<h4>What you get:</h4>
               <p><i class=""fal fa-check""></i> $50 credit to your Constant account the first time you reach Diamond (after leaving a review on Trustpilot).</p>
-              <p><i class=""fal fa-check""></i> Automatic bump to the top of our matching queue for all investments.</p>
-              <p><i class=""fal fa-check""></i> 20% of all earned interest from Flex accounts of referred friends during their first year.</p>
               <p><i class=""fal fa-check""></i> US members: $20 credit every time you refer a friend.</p>
-              <p><i class=""fal fa-check""></i> 1 STAR tokens to redeem for a 1% bonus or discounted interest.</p>
+              <p><i class=""fal fa-check""></i> 20% of all earned interest from Flex accounts of referred friends during their first year.</p>
               <p><i class=""fal fa-check""></i> Withdrawals through Google Pay and Venmo.</p>
               <p><i class=""fal fa-check""></i> Deposits through Paypal.</p>
-              <p><i class=""fal fa-check""></i> Deposits through ACH and Checkbook for all investment term lengths.</p>
+              <p><i class=""fal fa-check""></i> Deposits through Checkbook ACH for all investment term lengths.</p>
+              <p><i class=""fal fa-check""></i> Automatic bump to the top of our matching queue for all investments.</p>
+              <p><i class=""fal fa-check""></i> 1 STAR tokens to redeem for a 1% bonus or discounted interest.</p>
             "
 %%%.memberShip.history.title%%%,"History"
 %%%.memberShip.history.level%%%,"Status"
@@ -5338,10 +5345,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.notification.invest.partialMatch.desc%%%,"Your investment order of ${amount} partially matched. We found a borrower to accept your rate and term on ${matchedAmount}, and we’ll continue trying to match the rest. In the meantime, you can track your order on your <a href=""/accounts"" class=""underline"">Accounts page</a>."
 %%%.notification.invest.partialMatchLast.title%%%,"Your investment order is now fully matched"
 %%%.notification.invest.partialMatchLast.desc%%%,"Your investment order of ${amount} is now fully matched. We found a borrower to accept your rate and term on the remaining ${matchedAmount}. You can track your investment on your <a href=""/accounts"" class=""underline"">Accounts page</a>."
-%%%.notification.invest.membershipPoint.title%%%,"Congrats! You earned {amount} points"
-%%%.notification.invest.membershipPoint.desc%%%,"Due to your investment order of ${amount}, your total points up til now is {totalAmount}. Only {amountToNextLevel} points to reach {nextLevel}!"
-%%%.notification.invest.membershipPointMax.title%%%,"Congrats! You earned {amount} points"
-%%%.notification.invest.membershipPointMax.desc%%%,"Due to your investment order of ${amount}, your total points up til now is {totalAmount}. Keep up the good work!"
+%%%.notification.invest.membershipPoint.title%%%,"Congrats! You earned {amount} membership points"
+%%%.notification.invest.membershipPoint.desc%%%,"You earned {amount} points for investing ${amount}. Your total is now {totalAmount} points – you need just {amountToNextLevel} to reach {nextLevel}!"
+%%%.notification.invest.membershipPointMax.title%%%,"Congrats! You earned {amount} membership points"
+%%%.notification.invest.membershipPointMax.desc%%%,"You earned {amount} points for investing ${amount}. Your total is now {totalAmount} points."
 %%%.notification.invest.repaidEarly.title%%%,"Your investment has been repaid early"
 %%%.notification.invest.repaidEarly.desc%%%,"Your investment of {amount} has been repaid early. Please click <a href=""/accounts"" class=""underline"">here</a> to check your dashboard and reinvest your money."
 %%%.notification.invest.selling.title%%%,"We're selling your investment"
@@ -5353,7 +5360,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.notification.loan.done_1.title%%%,"Hurry! Repay your loan now"
 %%%.notification.loan.done_1.desc%%%,"Your loan of ${amount} matured yesterday! Please repay a total of ${paidAmount} including ${overAmount} overdue fee as soon as possible to get your collateral back."
 %%%.notification.loan.done_2.title%%%,"Last call! Repay your loan now"
-%%%.notification.loan.done_2.desc%%%,"Your loan of ${amount} matured a while ago! Please repay a total of ${paidAmount} including ${overAmount} overdue fee as soon as possible or your collateral will be liquidated."
+%%%.notification.loan.done_2.desc%%%,"Your loan of ${amount} matured a while ago! Please repay a total of ${paidAmount} including an ${overAmount} overdue fee as soon as possible or your collateral will be sold."
 %%%.notification.loan.match.title%%%,"Your loan order matched"
 %%%.notification.loan.match.desc%%%,"Congrats – your loan order of ${amount} has matched! The money is in your account and ready to use. Repay before {dueDate} and we’ll return your collateral. To track your loan, please visit your <a href=""/accounts"" class=""underline"">Accounts page</a>."
 %%%.notification.loan.partialMatch.title%%%,"Your loan order partially matched"
@@ -5366,10 +5373,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.notification.loan.partialMatchLast.desc_1%%%,"Your loan order of ${amount} is now fully matched. We found a investor to accept your rate and term on the remaining ${matchedAmount}. Repay before {dueDate} and we’ll return your collateral. You can track your loan on your <a href=""/accounts"" class=""underline"">Accounts page</a>."
 %%%.notification.loan.liquidate.title%%%,"Your collateral is nearing liquidation"
 %%%.notification.loan.liquidate.desc%%%,"The value of your {crypto} collateral has fallen to {collateralPercent}% of the investor’s principal and earned interest. When it falls to {liquidationPercent}%, your collateral will be sold to repay the investor (you keep the loan and anything left over from the sale). Please <a href=""/accounts"" class=""underline"">top up</a> your collateral to avoid liquidation."
-%%%.notification.loan.membershipPoint.title%%%,"Congrats! You earned {amount} points"
-%%%.notification.loan.membershipPoint.desc%%%,"Due to your loan order of ${amount}, your total points up til now is {totalAmount}. Only {amountToNextLevel} points to reach {nextLevel}!"
-%%%.notification.loan.membershipPointMax.title%%%,"Congrats! You earned {amount} points"
-%%%.notification.loan.membershipPointMax.desc%%%,"Due to your loan order of ${amount}, your total points up til now is {totalAmount}. Keep up the good work!"
+%%%.notification.loan.membershipPoint.title%%%,"Congrats! You earned {amount} membership points"
+%%%.notification.loan.membershipPoint.desc%%%,"You earned {amount} points for borrowing ${amount}. Your total is now {totalAmount} points – you need just {amountToNextLevel} to reach {nextLevel}!"
+%%%.notification.loan.membershipPointMax.title%%%,"Congrats! You earned {amount} membership points"
+%%%.notification.loan.membershipPointMax.desc%%%,"You earned {amount} points for borrowing ${amount}. Your total is now {totalAmount} points."
 %%%.notification.promotion.membership.title%%%,"title"
 %%%.notification.promotion.membership.desc%%%,"desc"
 %%%.notification.system.summary.title%%%,"title"

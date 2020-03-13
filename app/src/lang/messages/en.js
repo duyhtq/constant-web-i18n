@@ -1594,7 +1594,7 @@ export default {
             <p>As of <strong>Sep 10 2019</strong>, you’ll automatically earn <strong>{systemInterest}% APY</strong> on your current balance. These earnings will update real-time, and compound daily! You’ll still be able to withdraw anytime.</p>
         `,
         balanceStarDesc: `
-        Earn STAR by referring friends. You can then redeem each STAR for 1% bonus or discounted interest. Go to Referral link for further instructions
+        Earn STAR through our Membership Program. Then redeem each STAR for 1% bonus (investments) or discounted interest (loans). Check out our Membership page for more details.
         `,
         referralDesc: `
         Get a 10% reward when your friends earn interest – paid out every second. So if your friend earns $100, we’ll give you $10. There’s no limit to the number of friends you can refer.
@@ -5785,22 +5785,22 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     <div>While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</div>
     `,
     collateralIssue: `
-    <p class="title">*About collateral issue, please ping <a href="https://t.me/andy_9210" className="underline bold" target="_blank"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>
+    <p class="title">* About collateral issue, please ping <a href="https://t.me/andy_9210" className="underline bold" target="_blank"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>
     `,
     withdrawCryptoNote: `
-    <p class="title">*Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually.</p>
-    <p class="title">*Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>
-    <div class="bold">Service time guarantee &#10004; </div>
+    <p class="title">* Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually.</p>
+    <p class="title">* Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>
+    <div class="bold guarantee">Service time guarantee &#10004; </div>
     <p>Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>
     `,
     withdrawCollateralNote: `
-    <p class="title">*About collateral issue, please ping <a href="https://t.me/andy_9210" className="underline bold" target="_blank"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>
+    <p class="title">* About collateral issue, please ping <a href="https://t.me/andy_9210" className="underline bold" target="_blank"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>
     `,
     holidaysNote: `
-    <p class="title">*Our service time may also be affected by public and banking holidays in the US and your local country.</p>
+    <p class="title">* Our service time may also be affected by public and banking holidays in the US and your local country.</p>
     `,
     zelleDepositDelayIssue: `
-    <p class="title">*Possible reasons for a delay in processing your Zelle deposit</p>
+    <p class="title">* Possible reasons for a delay in processing your Zelle deposit</p>
     <p> - Missing relevant information to match with your deposit order: Name, User ID, Reference...</p>
     <p> - Varying level of processing time by the bank.</p>
     <p> - Transfering from an account with the account holder's name different than your registered name on Constant platform.</p>
@@ -6004,6 +6004,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         collateralRequired: 'Collateral amount is required to make a borrow!',
         rateRequired: 'Interest rate is required to make a borrow!',
         rateMax: 'Interest rate must be less than {rate}%',
+        rateMax1: 'Interest rate must from 1% to {rate}%',
         collateralNoteFee: 'Fee: {fee} {currency} (1%)',
         collateralNoteMatchedFee: 'Fee: 1%',
         collateralNoteTotal: 'Total loan received: {total} {currency}',
@@ -6011,7 +6012,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         usingStakingMobile: 'Get {discount}% off with staking',
         usingStakingDesc: 'Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.',
         stakingMinAmount: 'stake amount must be great than {minVal} {currency}',
-        goToAccountApp: "Please go to the Account tab to sign up or log in.",
+        goToAccountApp: 'Please go to the Account tab to sign up or log in.',
       },
       createdSuccess: 'Your borrow had been created successfully',
       errorMsgs: {
@@ -6190,7 +6191,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     blog: 'Blog',
     interest: 'Interest',
     wallet: 'Wallet',
-    team: 'The Team',
+    team: 'Our Story',
     security: 'Security',
     signout: 'Sign out',
     goBack: 'Go back',

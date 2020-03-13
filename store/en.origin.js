@@ -4563,6 +4563,7 @@
                 "collateralRequired": "%%%.proLending.borrowBooking.exchange.collateralRequired%%%",
                 "rateRequired": "%%%.proLending.borrowBooking.exchange.rateRequired%%%",
                 "rateMax": "%%%.proLending.borrowBooking.exchange.rateMax%%%",
+                "rateMax1": "%%%.proLending.borrowBooking.exchange.rateMax1%%%",
                 "collateralNoteFee": "%%%.proLending.borrowBooking.exchange.collateralNoteFee%%%",
                 "collateralNoteMatchedFee": "%%%.proLending.borrowBooking.exchange.collateralNoteMatchedFee%%%",
                 "collateralNoteTotal": "%%%.proLending.borrowBooking.exchange.collateralNoteTotal%%%",

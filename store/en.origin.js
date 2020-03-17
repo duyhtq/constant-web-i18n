@@ -2388,6 +2388,7 @@
                 "eos": "%%%.home.transferCrypto.transferTypesCaption.eos%%%",
                 "tomo": "%%%.home.transferCrypto.transferTypesCaption.tomo%%%"
             },
+            "exchangeRate": "%%%.home.transferCrypto.exchangeRate%%%",
             "maxBalance": "%%%.home.transferCrypto.maxBalance%%%",
             "yourBalance": "%%%.home.transferCrypto.yourBalance%%%",
             "validateMaxInput": "%%%.home.transferCrypto.validateMaxInput%%%",
@@ -4361,6 +4362,7 @@
         "title": "%%%.getPrices.title%%%",
         "desc": "%%%.getPrices.desc%%%",
         "collateralIssue": "%%%.getPrices.collateralIssue%%%",
+        "withdrawFiatNote": "%%%.getPrices.withdrawFiatNote%%%",
         "withdrawCryptoNote": "%%%.getPrices.withdrawCryptoNote%%%",
         "withdrawCollateralNote": "%%%.getPrices.withdrawCollateralNote%%%",
         "holidaysNote": "%%%.getPrices.holidaysNote%%%",

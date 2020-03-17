@@ -212,7 +212,7 @@
         "subTitle": "<h2>Đầu tư hay vay<br>với tỷ lệ bạn chọn.</h2>",
         "desc": "Trải nghiệm đầy đủ dịch vụ cho vay P2P an toàn, uy tín. Các khoản vay được bảo đảm 150% bằng tài sản thế chấp tiền điện tử và được hợp đồng thông minh Ethereum bảo vệ.",
         "invest": "Đầu tư",
-        "investDesc": "Earn 8% interest fully secured.",
+        "investDesc": "Earn 7% interest fully secured.",
         "borrow": "Vay",
         "borrowDesc": "Your rates. Your terms. No credit checks. Crypto-backed.",
         "staking": "Đặt cọc <sup>MỚI</sup>",
@@ -2388,6 +2388,7 @@
                 "eos": "Tới một địa chỉ EOS",
                 "tomo": "Tới một địa chỉ TOMO"
             },
+            "exchangeRate": "Exchange rate",
             "maxBalance": "Hạn mức",
             "yourBalance": "Số dư của bạn",
             "validateMaxInput": "Vui lòng đảm bảo bạn có đủ số dư",
@@ -2878,7 +2879,7 @@
         "midBanner1": "Gửi tiền bất kỳ đâu hoàn toàn miễn phí",
         "midBanner2": "An toàn và tăng vốn",
         "whatChatWithUs": "Chat với chúng tôi",
-        "whatCaption0": "Tự thiết đặt lãi suất",
+        "whatCaption0": "7% annual return",
         "whatCaption1": "Tiền của bạn sinh lời",
         "whatCaption2": "Có mặt trên toàn thế giới",
         "whatCaption3": "Chúng tôi sẵn sàng hỗ trợ",
@@ -3271,7 +3272,7 @@
             "question1": "Lợi nhuận của tôi được trả như thế nào?",
             "answer1": "Chúng tôi trả lãi mỗi ngày. Bạn có thể chọn rút lãi vào cuối kì hoặc bất cứ lúc nào bạn muốn. Lãi này sẽ không tính gộp vào tiền gốc.",
             "question2": "Lãi suất ngày được tính như thế nào?",
-            "answer2": "Phần lãi suất bạn nhận được hàng ngày được tính bằng cách nhân số tiền bạn gửi với phần trăm lãi suất theo kì hạn mà bạn chọn rồi chia cho 365. Lãi suất không được cộng dồn. Ví dụ, nếu bạn gửi 500 USD với kì hạn 1 năm, lãi suất 8%, bạn sẽ nhận được 40 USD khi đáo hạn và lãi trả về hàng ngày khoảng 0.11 USD.",
+            "answer2": "Your rate of return is calculated by applying the percentage rate of your Investment Plan to the amount of your principal, and then dividing it by 365 to get a daily rate. Your returns are not compounded, so if you invest $500 for one year at a rate of 7%, you would earn $40 investment income at the end of your commitment period (about $0.11 per day).",
             "question3": "Kiểm tra lợi nhuận tôi kiếm được như thế nào?",
             "answer3": "Sau khi đăng nhập, bạn vào phần \"Các khoản đầu tư\". Bạn có thể xem lợi nhuận của mình ở góc trên bên phải của màn hình.",
             "question4": "Trong tương lai lợi suất tôi kiếm được có thể tăng lên không?",
@@ -3740,7 +3741,7 @@
             "invest": {
                 "title": "Đầu tư theo cách bạn muốn.",
                 "desc1": {
-                    "title": "Lãi kép riêng của bạn.",
+                    "title": "7% annual returns.",
                     "desc": "Kiếm hơn 10% lãi kép. Đừng để tiền của bạn nằm yên. Hãy để nó sinh lời."
                 },
                 "desc2": {
@@ -3984,7 +3985,7 @@
             "form": {
                 "gotoVerifyKyc": "Go to verify now",
                 "text1": "Chọn điều khoản đầu tư",
-                "text2": "Invest at the current market rate of 8.00% and find a match instantly, or increase your rate and wait for a matching order.",
+                "text2": "Invest at the current market rate of 7.00% and find a match instantly, or increase your rate and wait for a matching order.",
                 "text3": "Chúng tôi tặng bạn một khoản đầu tư thử nghiệm trị giá 1,000 USD để trải nghiệm dịch vụ. Khi đáo hạn, chúng tôi sẽ thu hồi $,1000 lại, còn bạn được giữ toàn bộ phần lãi.",
                 "text4": "\n<h5>Một thao tác cuối cùng để sử dụng Constant.</h5>\n          <p>Vì lí do an ninh, bạn cần phải xác minh danh tính trước khi sử dụng Constant.</p>        ",
                 "text5": "Dùng thử miễn phí",
@@ -4248,7 +4249,7 @@
             "a2": "Với khách hàng ở Mỹ, Hong Kong và Việt Nam, khách hàng có thể nhận tiền ngay trong ngày. Với khách hàng ở những nơi khác, có thể sẽ mất 2-3 ngày để tiền về tài khoản, tuỳ thuộc vào ngân hàng mà khách hàng sử dụng.",
             "a3": "Constant được giám sát bởi PrimeTrust, một tổ chức giám sát tài chính có uy tín ở Mỹ và được FDIC bảo hiểm lên tới 5,000,000 USD. Để bảo vệ khách hàng tốt hơn, mọi khách hàng mở tài khoản Constant đều sẽ phải thực hiện xác minh danh tính theo các quy định tài chính. Cùng với công nghệ chuỗi khối ưu việt, gần như không thể có gian lận với Constant.",
             "a4": "Constant ứng dụng hợp đồng thông minh được xây dựng trên chuỗi Ethereum, một hệ thống không thể bị can thiệp có chứa tất cả các thông tin về các giao dịch đã được kiểm chứng.",
-            "a5": "Constant cho phép khách hàng chuyển tiền tới bất cứ ai ở bất cứ đâu mà hoàn toàn miễn phí. Phí rút tiền chỉ là 0.25%. Hơn thế nữa, Constant còn là một nền tảng tài chính mà bạn có thể đầu tư hoặc vay tiền. Lãi suất đầu tư tại Constant lên tới 8%/năm.",
+            "a5": "Constant allows you to move your money anywhere and anytime for free (with a minimal withdrawal fee of 0.25%). Constant is also part of a greater ecosystem, so you can choose to put your funds into one of our fixed deposits and earn up to 7% annually.",
             "a6": "Nhận Constant cũng giống như nhận USD. Nếu nguồn tiền bạn nhận không phải đóng thế thì nhận Constant bạn cũng không phải đóng thuế. Tuy nhiên, luôn phải nhớ rằng bạn là người chịu trách nhiệm xác định tất cả những tài sản nào có thể bị đánh thuế hoặc được yêu cầu thanh toán hoặc khấu trừ vì bất cứ lí do nào khi sử dụng nền tảng Constant."
         },
         "ready": {
@@ -4361,6 +4362,7 @@
         "title": "Giờ hoạt động",
         "desc": "\n    <div>All times shown below are maximum estimates. In all cases, the team strives for ASAP.</div>\n    <div>While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</div>\n    ",
         "collateralIssue": "\n    <p class=\"title\">* About collateral issue, please ping <a href=\"https://t.me/andy_9210\" className=\"underline bold\" target=\"_blank\"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>\n    ",
+        "withdrawFiatNote": "\n    <p class=\"title\">* A receiving fee may be charged by your financial institutions.</p>\n    ",
         "withdrawCryptoNote": "\n    <p class=\"title\">* Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually.</p>\n    <p class=\"title\">* Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>\n    <div class=\"bold guarantee\">Service time guarantee &#10004; </div>\n    <p>Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>\n    ",
         "withdrawCollateralNote": "\n    <p class=\"title\">* About collateral issue, please ping <a href=\"https://t.me/andy_9210\" className=\"underline bold\" target=\"_blank\"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>\n    ",
         "holidaysNote": "\n    <p class=\"title\">* Our service time may also be affected by public and banking holidays in the US and your local country.</p>\n    ",
@@ -4799,12 +4801,12 @@
         "invest": {
             "title": "Invest in fully secured loans",
             "keyword": "Dự án Constant, cho vay đầu tư ngang hàng, câu lạc bộ cho vay, ngang hàng, người cho vay, cho vay ngang hàng tốt nhất, cho vay tiền, tài chính cho vay",
-            "description": "P2P lending built on P2P technology. Enjoy up to 8% returns on your investments. All lending is backed by borrower collateral, smart contracts, and insurance. No fees. Free withdrawals"
+            "description": "P2P lending built on P2P technology. Enjoy up to 7% returns on your investments. All lending is backed by borrower collateral, smart contracts, and insurance. No fees. Free withdrawals"
         },
         "borrow": {
             "title": "Borrow against 60+ crypto assets",
             "keyword": "Vay Bitcoin, ethereum, trade margin, vay margin, cho vay ngang hàng, tiền mã hoá, dự án Constant, Constant cho vay ngang hàng",
-            "description": "Get a loan for as low as 8% APR. Your crypto assets are securely escrowed and returned to you when you repay. No credit checks, no paperwork. Get the money you need without selling up"
+            "description": "Get a loan for as low as 7% APR. Your crypto assets are securely escrowed and returned to you when you repay. No credit checks, no paperwork. Get the money you need without selling up"
         },
         "proLending": {
             "title": "Cho vay ra với lãi suất tốt nhất trên thị trưởng, đảm bảo bằng tài sản thế chấp",

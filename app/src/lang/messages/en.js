@@ -221,7 +221,7 @@ export default {
     subTitle: '<h2>Invest or borrow<br> at rates you choose.</h2>',
     desc: 'Experience fully secured, truly P2P lending. Loans 150% secured by crypto collateral and protected by Ethereum smart contracts.',
     invest: 'Invest',
-    investDesc: 'Earn 8% interest fully secured.',
+    investDesc: 'Earn 7% interest fully secured.',
     borrow: 'Borrow',
     borrowDesc: 'Your rates. Your terms. No credit checks. Crypto-backed.',
     staking: 'Staking <sup>NEW</sup>',
@@ -2898,6 +2898,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       // viaUSDTCaption: 'To a USDT address',
       // viaSUSDCaption: 'To a SUSD address',
       // batchTransferCaption: 'To multiple people',
+      exchangeRate: 'Exchange rate',
       maxBalance: 'Max transfer',
       yourBalance: 'Your balance',
       validateMaxInput: 'Please make sure your balance is sufficient.',
@@ -3579,7 +3580,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     midBanner1: 'Send money anywhere, for free',
     midBanner2: 'Secure and grow your money',
     whatChatWithUs: 'Chat with us',
-    whatCaption0: '8% annual return',
+    whatCaption0: '7% annual return',
     whatCaption1: 'Your money multiplies',
     whatCaption2: 'Available worldwide',
     whatCaption3: 'We’re here to help',
@@ -4218,7 +4219,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         'We pay investment profit daily, so you can either wait until the end of your commitment period to withdraw your investment income or withdraw it daily. It’s up to you.',
       question2: 'How are my daily returns calculated?',
       answer2:
-        'Your rate of return is calculated by applying the percentage rate of your Investment Plan to the amount of your principal, and then dividing it by 365 to get a daily rate. Your returns are not compounded, so if you invest $500 for one year at a rate of 8%, you would earn $40 investment income at the end of your commitment period (about $0.11 per day).',
+        'Your rate of return is calculated by applying the percentage rate of your Investment Plan to the amount of your principal, and then dividing it by 365 to get a daily rate. Your returns are not compounded, so if you invest $500 for one year at a rate of 7%, you would earn $40 investment income at the end of your commitment period (about $0.11 per day).',
       question3: 'How can I track my earnings?',
       answer3:
         'Just log into your account and click My Investments. You’ll see your total earned investment income on the top right of the dashboard.',
@@ -4824,7 +4825,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       invest: {
         title: 'Invest the way you want.',
         desc1: {
-          title: '8% annual returns.',
+          title: '7% annual returns.',
           desc: 'Don’t sit on your money. Put it to work.',
         },
         desc2: {
@@ -5167,7 +5168,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         gotoVerifyKyc: 'Go to verify now',
         text1: 'Set your own lending terms',
         text2:
-          'Invest at the current market rate of 8.00% and find a match instantly, or increase your rate and wait for a matching order.',
+          'Invest at the current market rate of 7.00% and find a match instantly, or increase your rate and wait for a matching order.',
         text3:
           'We’re giving you a trial investment of $1000. All you have to do is choose your rate, and we’ll find you a match. When the trial is up, we take the $1000 back, but the interest is yours to keep.',
         text4: `
@@ -5640,7 +5641,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       a4:
         'Constant is powered by unstoppable smart contracts and built upon the Ethereum blockchain, an immutable digital ledger that acts as a public record of verifiable transactions.',
       a5:
-        'Constant allows you to move your money anywhere and anytime for free (with a minimal withdrawal fee of 0.25%). Constant is also part of a greater ecosystem, so you can choose to put your funds into one of our fixed deposits and earn up to 8% annually.',
+        'Constant allows you to move your money anywhere and anytime for free (with a minimal withdrawal fee of 0.25%). Constant is also part of a greater ecosystem, so you can choose to put your funds into one of our fixed deposits and earn up to 7% annually.',
       a6:
         'Receiving Constant is similar to receiving USD. If the source of funds is not taxable then receiving Constant is not taxable. However, please note that you are responsible for determining any and all taxes assessed, incurred, or required to be collected, paid, or withheld for any reason in connection with the use of our software and services.',
     },
@@ -5786,6 +5787,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     `,
     collateralIssue: `
     <p class="title">* About collateral issue, please ping <a href="https://t.me/andy_9210" className="underline bold" target="_blank"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>
+    `,
+    withdrawFiatNote: `
+    <p class="title">* A receiving fee may be charged by your financial institutions.</p>
     `,
     withdrawCryptoNote: `
     <p class="title">* Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually.</p>
@@ -6012,7 +6016,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         usingStakingMobile: 'Get {discount}% off with staking',
         usingStakingDesc: 'Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.',
         stakingMinAmount: 'stake amount must be great than {minVal} {currency}',
-        goToAccountApp: 'Please go to the Account tab to sign up or log in.',
+        goToAccountApp: "Please go to the Account tab to sign up or log in.",
       },
       createdSuccess: 'Your borrow had been created successfully',
       errorMsgs: {
@@ -6271,12 +6275,12 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     invest: {
       title: 'Invest in fully secured loans',
       keyword: 'constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance',
-      description: 'P2P lending built on P2P technology. Enjoy up to 8% returns on your investments. All lending is backed by borrower collateral, smart contracts, and insurance. No fees. Free withdrawals',
+      description: 'P2P lending built on P2P technology. Enjoy up to 7% returns on your investments. All lending is backed by borrower collateral, smart contracts, and insurance. No fees. Free withdrawals',
     },
     borrow: {
       title: 'Borrow against 60+ crypto assets',
       keyword: 'bitcoin loan, ethereum, margin trading, margin borrowing, p2p lending, cryptocurrency, constant project, constant p2p',
-      description: 'Get a loan for as low as 8% APR. Your crypto assets are securely escrowed and returned to you when you repay. No credit checks, no paperwork. Get the money you need without selling up',
+      description: 'Get a loan for as low as 7% APR. Your crypto assets are securely escrowed and returned to you when you repay. No credit checks, no paperwork. Get the money you need without selling up',
     },
     proLending: {
       title: 'Lend money with best rate in the market, secured by collateral',

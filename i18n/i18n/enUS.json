@@ -89,8 +89,8 @@
                 "btn": "Borrow now"
             },
             "type5": {
-                "title": "<h3>Send money anywhere</h3>",
-                "btn": "Make a transfer"
+                "title": "<h3>Invite your friends, earn a bonus</h3>",
+                "btn": "Invite now"
             },
             "type6": {
                 "title": "<h3>Open an account and grow your money</h3>",
@@ -212,7 +212,7 @@
         "subTitle": "<h2>Invest or borrow<br> at rates you choose.</h2>",
         "desc": "Experience fully secured, truly P2P lending. Loans 150% secured by crypto collateral and protected by Ethereum smart contracts.",
         "invest": "Invest",
-        "investDesc": "Earn 8% interest fully secured.",
+        "investDesc": "Earn 7% interest fully secured.",
         "borrow": "Borrow",
         "borrowDesc": "Your rates. Your terms. No credit checks. Crypto-backed.",
         "staking": "Staking <sup>NEW</sup>",
@@ -2388,6 +2388,7 @@
                 "eos": "To an EOS address",
                 "tomo": "To a TOMO address"
             },
+            "exchangeRate": "Exchange rate",
             "maxBalance": "Max transfer",
             "yourBalance": "Your balance",
             "validateMaxInput": "Please make sure your balance is sufficient.",
@@ -2878,7 +2879,7 @@
         "midBanner1": "Send money anywhere, for free",
         "midBanner2": "Secure and grow your money",
         "whatChatWithUs": "Chat with us",
-        "whatCaption0": "Set your own rates",
+        "whatCaption0": "7% annual return",
         "whatCaption1": "Insured up to $130M while waiting for a match",
         "whatCaption2": "Things we don’t do.",
         "whatCaption3": "Only invest in secured loans",
@@ -3271,7 +3272,7 @@
             "question1": "How is interest paid out?",
             "answer1": "Your interest is compounded and paid to you at the end of your savings term.",
             "question2": "How is interest calculated?",
-            "answer2": "We compound and calculate your interest daily, so you earn interest on the interest you previously earned as well as on your savings capital. The Annual Percentage Yield (APY) of your Savings Plan takes this daily compounding into account.",
+            "answer2": "Your rate of return is calculated by applying the percentage rate of your Investment Plan to the amount of your principal, and then dividing it by 365 to get a daily rate. Your returns are not compounded, so if you invest $500 for one year at a rate of 7%, you would earn $40 investment income at the end of your commitment period (about $0.11 per day).",
             "question3": "How can I track earned interest?",
             "answer3": "Just log into your account and click My Savings. You’ll see your total earned interest on the top right of the dashboard.",
             "question4": "Will you increase interest rates in the future?",
@@ -3740,7 +3741,7 @@
             "invest": {
                 "title": "Grow your money",
                 "desc1": {
-                    "title": "Your own APR.",
+                    "title": "7% annual returns.",
                     "desc": "Earn 10% APR or more - it's your choice. Don’t sit on your money, put it to work."
                 },
                 "desc2": {
@@ -3984,11 +3985,11 @@
             "form": {
                 "gotoVerifyKyc": "Go to verify now",
                 "text1": "Set your own lending terms",
-                "text2": "Invest at the current market rate of 8.00% and find a match instantly, or increase your rate and wait for a matching order.",
+                "text2": "Invest at the current market rate of 7.00% and find a match instantly, or increase your rate and wait for a matching order.",
                 "text3": "We’re giving you a trial investment of $1000. When your term is up, we take the $1000 back, but the interest is yours to keep.",
                 "text4": "\n          <h5>You're almost done.</h5>\n          <p>For your security, we'll need you to verify your ID before using Constant.</p>\n        ",
                 "text5": "Free trial",
-                "text6": "\n          <p>\n            <span class=darkorange4 bold\">Want to get a borrower instantly?</span> Invest at the current market rate of <b>8%</b>. Or increase your rate and wait for a matching order.",
+                "text6": "\n          <p>\n            <span class=darkorange4 bold\">Want to get a borrower instantly?</span> Invest at the current market rate of <b>7%</b>. Or increase your rate and wait for a matching order.",
                 "text7": "The rate you entered is higher than our market rate so it might take longer to find you a match.",
                 "btn1": "Invest now",
                 "textLogin": "Log in",
@@ -4248,7 +4249,7 @@
             "a2": "For US, Hong Kong or Vietnam customers, it would take up to 1 business day. For international customers, the process would take 2-3 business days. It depends a lot on how quickly your bank processes transfers.",
             "a3": "Your funds are put in a trust vault overseen by PrimeTrust, an accredited US financial institution, and the trust is insured up to $130M. Prior to registering for a Constant account, you will be asked to do KYC (Know Your Customer) to comply with financial regulations, which protects you against fraud. And thanks to the immutable blockchain ledger, Constant is extremely difficult to hack.\n",
             "a4": "Constant is powered by unstoppable smart contracts and built upon the Ethereum blockchain, an immutable digital ledger that acts as a public record of verifiable transactions.",
-            "a5": "Constant allows you to move your money anywhere and anytime for free (with a minimal withdrawal fee of 0.25%). Constant is also part of a greater ecosystem, so you can choose to put your funds into one of our fixed deposits and earn up to 8% annually.",
+            "a5": "Constant allows you to move your money anywhere and anytime for free (with a minimal withdrawal fee of 0.25%). Constant is also part of a greater ecosystem, so you can choose to put your funds into one of our fixed deposits and earn up to 7% annually.",
             "a6": "Receiving Constant is similar to receiving USD. If the source of funds is not taxable then receiving Constant is not taxable. However, please note that you are responsible for determining any and all taxes assessed, incurred, or required to be collected, paid, or withheld for any reason in connection with the use of our software and services."
         },
         "ready": {
@@ -4361,6 +4362,7 @@
         "title": "Pricing and Service times",
         "desc": "\n    <div>All times shown below are maximum estimates. In all cases, the team strives for ASAP.</div>\n    <div>While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</div>\n    ",
         "collateralIssue": "\n    <p class=\"title\">* About collateral issue, please ping <a href=\"https://t.me/andy_9210\" className=\"underline bold\" target=\"_blank\"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>\n    ",
+        "withdrawFiatNote": "\n    <p class=\"title\">* A receiving fee may be charged by your financial institutions.</p>\n    ",
         "withdrawCryptoNote": "\n    <p class=\"title\">* Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually.</p>\n    <p class=\"title\">* Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>\n    <div class=\"bold guarantee\">Service time guarantee &#10004; </div>\n    <p>Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>\n    ",
         "withdrawCollateralNote": "\n    <p class=\"title\">* About collateral issue, please ping <a href=\"https://t.me/andy_9210\" className=\"underline bold\" target=\"_blank\"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>\n    ",
         "holidaysNote": "\n    <p class=\"title\">* Our service time may also be affected by public and banking holidays in the US and your local country.</p>\n    ",
@@ -4799,12 +4801,12 @@
         "invest": {
             "title": "Invest in fully secured loans",
             "keyword": "constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance",
-            "description": "P2P lending built on P2P technology. Enjoy up to 8% returns on your investments. All lending is backed by borrower collateral, smart contracts, and insurance. No fees. Free withdrawals"
+            "description": "P2P lending built on P2P technology. Enjoy up to 7% returns on your investments. All lending is backed by borrower collateral, smart contracts, and insurance. No fees. Free withdrawals"
         },
         "borrow": {
             "title": "Borrow against 60+ crypto assets",
             "keyword": "bitcoin loan, ethereum, margin trading, margin borrowing, p2p lending, cryptocurrency, constant project, constant p2p",
-            "description": "Get a loan for as low as 8% APR. Your crypto assets are securely escrowed and returned to you when you repay. No credit checks, no paperwork. Get the money you need without selling up"
+            "description": "Get a loan for as low as 7% APR. Your crypto assets are securely escrowed and returned to you when you repay. No credit checks, no paperwork. Get the money you need without selling up"
         },
         "proLending": {
             "title": "Lend money with best rate in the market, secured by collateral",

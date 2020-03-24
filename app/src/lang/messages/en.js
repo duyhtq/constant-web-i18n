@@ -7477,6 +7477,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
               <p><i class="fal fa-check"></i> US members: $15 credit every time you refer a friend.</p>
               <p><i class="fal fa-check"></i> 15% of all earned interest from Flex accounts of referred friends during their first year.</p>
               <p><i class="fal fa-check"></i> Withdrawals through Google Pay and Venmo.</p>
+              <p><i class="fal fa-check"></i> Deposits/withdrawals through Checkbook ACH for all investment term lengths.</p>
             `,
       level2: `<h4>What you get:</h4>
               <p><i class="fal fa-check"></i> $50 credit to your Constant account the first time you reach Platinum (after leaving a review on Trustpilot).</p>
@@ -7484,7 +7485,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
               <p><i class="fal fa-check"></i> 17.5% of all earned interest from Flex accounts of referred friends during their first year.</p>
               <p><i class="fal fa-check"></i> Withdrawals through Google Pay and Venmo.</p>
               <p><i class="fal fa-check"></i> Deposits through Paypal.</p>
-              <p><i class="fal fa-check"></i> Deposits through Checkbook ACH for all investment term lengths.</p>
+              <p><i class="fal fa-check"></i> Deposits/withdrawals through Checkbook ACH for all investment term lengths.</p>
             `,
       level3: `<h4>What you get:</h4>
               <p><i class="fal fa-check"></i> $50 credit to your Constant account the first time you reach Diamond (after leaving a review on Trustpilot).</p>
@@ -7492,7 +7493,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
               <p><i class="fal fa-check"></i> 20% of all earned interest from Flex accounts of referred friends during their first year.</p>
               <p><i class="fal fa-check"></i> Withdrawals through Google Pay and Venmo.</p>
               <p><i class="fal fa-check"></i> Deposits through Paypal.</p>
-              <p><i class="fal fa-check"></i> Deposits through Checkbook ACH for all investment term lengths.</p>
+              <p><i class="fal fa-check"></i> Deposits/withdrawals through Checkbook ACH for all investment term lengths.</p>
               <p><i class="fal fa-check"></i> Automatic bump to the top of our matching queue for all investments.</p>
               <p><i class="fal fa-check"></i> 1 STAR tokens to redeem for a 1% bonus or discounted interest.</p>
             `,

@@ -77,8 +77,8 @@ export default {
         btn: 'INVEST NOW',
       },
       type2: {
-        title: '<h3>Get a global USD account</h3>',
-        btn: 'Sign up now',
+        title: '<h3>Do more with your money</h3>',
+        btn: 'Open a free account',
       },
       type3: {
         title: '<h3>Want to earn interest on your savings?</h3>',
@@ -200,6 +200,10 @@ export default {
       email: {
         title: 'Email',
         link: 'hello@myconstant.com'
+      },
+      linkedin: {
+        title: 'Linkedin',
+        link: 'https://www.linkedin.com/company/constantp2p/'
       }
     },
     content: `
@@ -498,7 +502,7 @@ export default {
       lEmail: 'Email Adrress',
       discardNoteTitle: 'Your KYC application has not yet been approved due to:',
       discardNote: 'Please make sure all your documents are in order and just click submit again.',
-      plEmail: 'Email Adrress',
+      plEmail: 'Email Address',
       lFirstName: 'First Name',
       plFirstName: 'First Name',
       lMiddleName: 'Middle Name',
@@ -2192,6 +2196,66 @@ export default {
       message:
         'Thank you! Your message has been sent. You should receive a response from one of our representatives within 12-24 hours.',
     },
+    title:`
+    <p class="header">Earn 7% APR now.</p>
+    <p>Diversify into fully-secured P2P loans. All lending is 150% backed by digital assets. No fees. No dips.</p>
+    <p>Start investing from just $50.</p>
+    `,
+    howItWorks: {
+      title: 'How It Works',
+      data: {
+        0: {
+          title: 'Step 1',
+          desc: `
+            <p>Sign up for your free Constant account.</p>
+            `,
+        },
+        1: {
+          title: 'Step 2',
+          desc: `
+            <p>Create an investment order with your chosen rate and term.</p>
+            `,
+        },
+        2: {
+          title: 'Step 3',
+          desc: `
+            <p>We’ll match you with a borrower 150% backed by collateral.</p>
+            `,
+        },
+        3: {
+          title: 'Step 4',
+          desc: `
+            <p>Earn interest for the duration of your term.</p>
+            `,
+        },
+        4: {
+          title: 'Step 5',
+          desc: `
+            <p>Reinvest or withdraw your funds.</p>
+            `,
+        },
+      }
+    },
+    howWeProtectYou: {
+      title: 'How We Protect You',
+      data: {
+        0: {
+          title: 'Prime Trust',
+          desc: `
+            <p>Prime Trust is the accredited custodian of our USD reserve. When you deposit, your unloaned funds are stored across multiple bank accounts <strong>insured to a total of $130,000,000.</strong> So no matter what happens to us, you can still retrieve your funds.</p>
+            `,
+        },
+        1: {
+          title: 'BitGo',
+          desc: `
+            <p>When on loan, your funds are <strong>150% backed by digital assets.</strong> If borrowers default or their collateral falls in value, the collateral is sold to repay you. All collateral is vetted regularly to ensure we can sell quickly and at the right price to repay you.</p>
+            `,
+        },
+      }
+    },
+    whyPeopleLoveUs: {
+      title: 'Why People Love Us'
+    }
   },
   review: {
     title: 'Review',
@@ -2452,6 +2516,7 @@ export default {
         `,
         cryptoAddress: '{currency} address:',
         scanQR: 'Alternatively, scan this QR code directly from your mobile wallet to complete the investment.',
+        scanDepositQR: 'Alternatively, scan this QR code directly from your mobile wallet to complete the deposit.',
         accountName: 'Account Name:',
         bankName: 'Bank name',
         accountNumber: 'Account Number:',
@@ -2474,6 +2539,7 @@ export default {
         minuteWindow: '15 MINUTE WINDOW:',
         minuteWindowDescription:
           'Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled.',
+        minuteWindowDepositDescription: 'For the sake of security, this session will time-out after 12 hours. If you need a little longer, just re-enter the amount you would like to deposit when you’re ready.',
         minuteWindowDescriptionDGX:
           'Invested DGX is converted to USD. When your term ends, you can choose to withdraw in DGX at the spot price, as USD, or a supported stablecoin.',
       },
@@ -2873,7 +2939,11 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           serviceTime: `
           <h6 class="bold colorLight">Service time guarantee &#10004; </h6>
           <p class="colorLight">Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>
-          `
+          `,
+          serviceTimeTransferViaEmail: `
+            <p class="colorLight">Your transfer is being processed and should be completed within a few minutes. </p>
+            <p class="colorLight">If you still can’t see your funds after 10 minutes, please contact customer support.</p>
+          `,
         },
       },
       howItWorks: 'How it works',
@@ -5226,6 +5296,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           'Thanks! We\'re connecting you with a borrower glad to pay your rates. We\'ll send you an email when you\'re matched.',
         zelleSuccess: 'Thanks! Please proceed with the transfer.',
         zelleFailed: 'Something went wrong. Please try again.',
+        needKyc: '',
       },
       confirm: {
         thankYou1: 'Almost there.',
@@ -5890,7 +5961,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       borrows: 'Borrowing orders',
       voidInvestmentBorrows: 'Secondary Investments',
       voidInvestmentBorrowsDesc: 'These are matched orders investors want to sell. You can’t change the term or rate on a secondary investment, but you earn all the interest due on the loan regardless of how much time is left in the term.',
-      bankBondBorrows: 'Open Bank Bond Borrowing Orders',
+      bankBondBorrows: 'Bond Orders',
       interestSpread: 'Interest spread',
       interestSpreadDesc: 'Interest spread is the difference between the the lowest lending rate and the highest borrowing rate',
       interestSpreadValues: '0.10%',
@@ -6662,8 +6733,666 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     desc: 'Transparency is important to us. Below, you’ll find reviews, testimonials, case studies, and other important information so you can use our platform with confidence.',
     viewAll: 'View All',
   },
+  whyPeopleLoveUs: {
+    title: 'Why People Love Us',
+    viewFullArticle: 'Read full article',
+    tabs: {
+      customers: 'Customers',
+      press: 'Press',
+      partners: 'Partners'
+    },
+    customers: {
+      trustPilot: {
+        title: 'Excellent',
+        star: '4',
+        desc: 'From great rates to speedy service, learn how we’ve earned our stars.',
+        viewAll: 'View us on TrustPilot',
+        readMore: 'Read more',
+        comments: {
+          0: {
+            star: '5',
+            title: 'I\'m in the same boat as the rest of the…',
+            desc: 'I\'m in the same boat as the rest of the folks here. Lot\'s of potential for this platform. With the crypto crash yesterday, I was please to see several of my loans liquidate at 110% protecting my principal. Yes, I didn\'t make the target return but that was due to the 50% drop in bitcoin and liquidation of my investment. Their system worked. It took a few days to process. They have some bugs here and there to fix. My only compliant is that their finance team is in Vietnam so any questions you have or updates to your account cannot get processed until the evening when their team starts their day in Vietnam. I\'ve had some glitches with deposits but overall I can live with a 1-2 day delay. The returns are awesome and they protected my capital.',
+            date: 'Mar 14, 2020',
+            auth: 'J. S.',
+            link: 'https://www.trustpilot.com/reviews/5e6ce5b23c93ae091807d0d6'
+          },
+          1: {
+            star: '4',
+            title: 'The app needs to be improved',
+            desc: 'I wish I could give 5 stars. The mobile app is not great as expected. The UI is not user friendly. I get logged out automatically and have to enter username and password most of time. I am hoping for the better mobile app where I should be able to login with Face ID. And Pro section doesn’t all the list of Investing and Borrowing orders.',
+            date: 'Mar 14, 2020',
+            auth: 'Pradip',
+            link: 'https://www.trustpilot.com/reviews/5e6c4af83c93ae09180797ac'
+          },
+          2: {
+            star: '4',
+            title: 'Good p2p lending',
+            desc: 'I\'ve had good experiences with Myconsant. The 8% interest is good. The customer service chat is good. Using Zelle to make deposits if fantastically fast. Can\'t make deposits using ACH.',
+            date: 'Mar 14, 2020',
+            auth: 'Bruce Nguyen',
+            link: 'https://www.trustpilot.com/reviews/5e6c31f73c93ae096463bb61'
+          },
+          3: {
+            star: '4',
+            title: 'Good site with lots of potential',
+            desc: 'At first, my deposit was not placed in my account. I reached out to support and they quickly corrected the issue. Since then, I have used it to invest, and to stake crypto and everything has worked well. I\'m impressed, and looking forward to continual development. They can and do change some terms quite frequently, and I think the UI could be slightly improved in some regards, but overall it has been a good experience and I will continue to invest with them.',
+            date: 'Mar 14, 2020',
+            auth: 'Matt Edwards',
+            link: 'https://www.trustpilot.com/reviews/5e6bbdfb3c93ae0918075e93'
+          },
+          4: {
+            star: '5',
+            title: 'good bank',
+            desc: 'good bank need to to make stakig easy but other then that',
+            date: 'Mar 14, 2020',
+            auth: 'Chris Walden Wince Tofoya',
+            link: 'https://www.trustpilot.com/reviews/5e6bbd473c93ae0918075e0f'
+          },
+          5: {
+            star: '5',
+            title: 'It\'s real, I\'m a believer now!',
+            desc: 'Update 3/13/2020: Alright, so COVID-19 (corona virus) is a thing now, oil prices crashed, the market\'s depressed, and people are being forced to stay home in quarantines. Also, Bitcoin crashed by 50%! So you can imagine my surprise when I logged on to MyConstant today and',
+            date: 'Mar 14, 2020',
+            auth: 'Paul Boneef',
+            link: 'https://www.trustpilot.com/reviews/5e6bb4a83c93ae0918075790'
+          },
+          6: {
+            star: '5',
+            title: 'Best P2P lending platform out there..',
+            desc: 'Best P2P lending platform out there... loving the experience thus far. Good luck finding another one with as much liquidity options as well as collateral backing to protect lenders.',
+            date: 'Mar 14, 2020',
+            auth: 'Guillermo Miguel Bellver',
+            link: 'https://www.trustpilot.com/reviews/5e6bb3d83c93ae0964637e18'
+          },
+          7: {
+            star: '5',
+            title: 'I have been using Constant from the…',
+            desc: 'I have been using Constant from the initial phrase it started it\'s operation. I was really excited when the introduced the "pro" option which let\'s you see at what rate the investments are being matched and the pending investment as well as the pending loan request. I usually get my investment matched pretty quick as I do it in market rate. So far, I have had no problem with the website. It\'s secured and uses Google authentication to make it more secured.',
+            date: 'Mar 13, 2020',
+            auth: 'Priyash Kafle',
+            link: 'https://www.trustpilot.com/reviews/5e6b786e3c93ae09646352de'
+          },
+          8: {
+            star: '5',
+            title: 'so far so good!',
+            desc: 'so far so good, love the 8% lending rate, thanks MyConstant!',
+            date: 'Mar 13, 2020',
+            auth: 'Amy Matteson',
+            link: 'https://www.trustpilot.com/reviews/5e6b20c23c93ae091806f906'
+          },
+          9: {
+            star: '5',
+            title: 'Excellent alternative investment platform',
+            desc: 'Started with my first investment since beginning of the year. So far I\'ve already had several completed investments and many more active ones ranging from 7.5% - 8.0% APY. Simple to use and reliable service.',
+            date: 'Mar 13, 2020',
+            auth: 'DLNYC',
+            link: 'https://www.trustpilot.com/reviews/5e6b13ee3c93ae0964631e83'
+          },
+        }
+      },
+      socialMedia: {
+        title: 'SOCIAL MEDIA',
+        desc: `Find out what <strong>1,000s of followers</strong> have to say about their Constant experience. Want to join the conversation? Click an icon below to get started.`,
+        comments: {
+          viewMore: 'View more on',
+          tw: {
+            0: {
+              name: 'Samuel McCulloch',
+              auth: '@traders_insight',
+              desc: `
+                    <p>I wrote up a full review of <a href="https://twitter.com/constantp2p" target="_blank">@Constantp2p</a>, a secured P2P lending platform. Right now I'm earning 8% APR on my 3rd 30-day term loan.</p>
+                    <p>I'm really excited about what the team has built and love the functionality behind it. Get ready for a podcast coming soon.</p>
+                  `,
+              date: 'Jan 24, 2020',
+              link: 'https://twitter.com/traders_insight/status/1220429609688276993?s=20',
+              authLink: 'https://twitter.com/traders_insight'
+            },
+            1: {
+              name: 'Samuel McCulloch',
+              auth: '@traders_insight',
+              desc: `
+                  <p>it’s great! thanks for launching.</p>
+                  <p>are you planning to incorporate <a href="https://twitter.com/Plaid" target="_blank">@Plaid</a> into your platform? would be much better for secure direct transfer of funds to/from banks.</p>
+                `,
+              date: 'Jan 24, 2020',
+              link: 'https://twitter.com/traders_insight/status/1220429609688276993?s=20',
+              authLink: 'https://twitter.com/pjsimas'
+            },
+            2: {
+              name: 'UJOAT',
+              auth: '@UJOATcom',
+              desc: `
+                  <p>you constantly keep exceeding my expectations. Awesome job and hats off to the team.</p>
+                `,
+              date: 'Feb 07, 2020',
+              link: 'https://twitter.com/UJOATcom/status/1225774103732400128?s=20',
+              authLink: 'https://twitter.com/UJOATcom'
+            },
+            3: {
+              name: 'Chartist Artist',
+              auth: '@chartist_artist',
+              desc: `
+                  <p>The platform and good and quickly response by Telegram of all req👍👍👍👍</p>
+                `,
+              date: 'Feb 05, 2020',
+              link: 'https://twitter.com/chartist_artist/status/1224773834278088709?s=20',
+              authLink: 'https://twitter.com/chartist_artist'
+            },
+            4: {
+              name: 'RookieXBT',
+              auth: '@RookieXBT',
+              desc: `
+                  <p>2/ <a href="https://twitter.com/constantp2p" target="_blank">@constantp2p</a> is P2P lending platform that offers customers to use various currencies as collateral. Borrow or Invest, your choice!</p>
+                  <p>Including, but not limited to: $ENJ, $VET, $FTM, $BNB</p>
+                  <p>The offer great customer service and have an easy to use website!</p>
+                  <p><a title="https://www.myconstant.com?r=E6LGDDDH90" href="https://t.co/NODA5sOqAK?amp=1" target="_blank" rel="noopener noreferrer">myconstant.com/?r=E6LGDDDH90</a></p>
+                `,
+              date: 'Dec 24, 2019',
+              link: 'https://twitter.com/RookieXBT/status/1209158840228438018?s=20',
+              authLink: 'https://twitter.com/RookieXBT'
+            },
+            5: {
+              name: 'RookieXBT',
+              auth: '@RookieXBT',
+              desc: `
+                  <p>You guys are amazing !</p>
+                `,
+              date: 'Dec 15, 2019',
+              link: 'https://twitter.com/RookieXBT/status/1206080311844593664?s=20',
+              authLink: 'https://twitter.com/RookieXBT'
+            },
+            6: {
+              name: 'Christopher Xi',
+              auth: '@Christopher_Xii',
+              desc: `
+                  <p>I hope to be able to staking on myConstant and receive a reward for HBwallet. That is a great feature for those who like passive income</p>
+                `,
+              date: 'Dec 06, 2019',
+              link: 'https://twitter.com/Christopher_Xii/status/1202811001738915840?s=20',
+              authLink: 'https://twitter.com/Christopher_Xii'
+            },
+            7: {
+              name: 'Tim',
+              auth: '@Tim88288305',
+              desc: `
+                  <p>great news! Looking to have more cool features between <a href="https://twitter.com/HBWallet_Ether" target="_blank">@HBWallet_Ether</a> & <a href="https://twitter.com/constantp2p" target="_blank">@constantp2p</a></p>
+                `,
+              date: 'Dec 05, 2019',
+              link: 'https://twitter.com/Tim88288305/status/1202535815500353539?s=20',
+              authLink: 'https://twitter.com/Tim88288305'
+            },
+            8: {
+              name: 'Anh Nguyen',
+              auth: '@anhntv2012',
+              desc: `
+                  <p>Thank you, <a href="https://twitter.com/constantp2p" target="_blank">@constantp2p</a>, for making my Monday brighter 😍 Let's go staking $TOMO @TomoChainANN 💰💰💰</p>
+                `,
+              date: 'Nov 04, 2019',
+              link: 'https://twitter.com/anhntv2012/status/1191293595388481536?s=20',
+              authLink: 'https://twitter.com/anhntv2012'
+            },
+            9: {
+              name: 'KryptoKarlsson.',
+              auth: '@KryptoKarlsson',
+              desc: `
+                  <p>You tried <a href="https://twitter.com/constantp2p" target="_blank">@constantp2p</a> yet? Really nice alternative to a centralized bank where you get 5% (!) interest only for depositing funds. Crypto-backed loans and P2P lending are also nice features! Register here and get a 10$ bonus: <a title="https://www.myconstant.com?r=K8VWG148GT" href="https://t.co/sO6Uws139B?amp=1" target="_blank" rel=" noopener noreferrer">myconstant.com/?r=K8VWG148GT</a> #crypto #btc #eth #DeFi</p>
+                `,
+              date: 'Oct 01, 2019',
+              link: 'https://twitter.com/KryptoKarlsson/status/1178773984147623936?s=20',
+              authLink: 'https://twitter.com/KryptoKarlsson'
+            },
+            10: {
+              name: 'Markus',
+              auth: '@Markus30230949',
+              desc: `
+                  <p>That’s awesome! Love my constant and the 10% market rate and 14% for BUSD is insane! Keep up the great work! Are you guys working on an IPhone App yet?</p>
+                `,
+              date: 'Sep 30, 2019',
+              link: 'https://twitter.com/Markus30230949/status/1178499525582786560?s=20',
+              authLink: 'https://twitter.com/Markus30230949'
+            },
+            11: {
+              name: 'CZ Binance',
+              auth: '@cz_binance',
+              desc: `
+                  <p>Some much appreciated "competition" to <a href="https://twitter.com/binance" target="_blank">@binance</a> lending. Let's grow together!  🙏🙏🙏</p>
+                `,
+              date: 'Sep 18, 2019',
+              link: 'https://twitter.com/cz_binance/status/1174174313060163589?s=20',
+              authLink: 'https://twitter.com/cz_binance'
+            },
+            12: {
+              name: 'Kian Northcote',
+              auth: '@KJNorthcote',
+              desc: `
+                  <p>Interested in peer-to-peer lending and online investing? Here's part one of my review of <a href="https://twitter.com/constantp2p" target="_blank">@constantp2p</a> one of the most innovative lending platforms out there. https://kiannorthcote.com/2019/10/11/product-review-investing-made-easy-with-constant-part-one/ #p2p #investing #finance</p>
+                `,
+              date: 'Oct 11, 2019',
+              link: 'https://twitter.com/KJNorthcote/status/1182583408452460544?s=20',
+              authLink: 'https://twitter.com/KJNorthcote'
+            },
+          },
+          fb: {
+            0: {
+              name: 'Mike Desposito',
+              auth: 'Mike Desposito',
+              desc: `
+                  <p>I love this platform, it is such a hidden gem that more people should know about. I've already been investing my money and making my 8%. Its so easy to deposit and withdraw. And your money makes 4% just sitting there when it's not in loan. That is an INSANE rate compared to other platforms or banks that offer between .01% to 1.7%. You literally cannot beat this and I am sure you guys are going to blow up big one day soon.</p>
+                `,
+              date: ' ',
+              link: ' ',
+              authLink: 'https://www.facebook.com/mike.desposito'
+            },
+            1: {
+              name: 'Robert Carpenter',
+              auth: 'Robert Carpenter',
+              desc: `
+                  <p>I have been using constant and love their setup for investing! I was very skeptical at first because it seemed too good to be true but in reality it is that great! Ultimately there is no fee to transfer money in or out, and it allows you to invest any amount of money for any rate that you would wish. Normally if I invest any sum of money for around 10% interest it is then matched to a borrower and I am able to earn the interest. If you go too high on the rate you don t lose anything but you also will not be matched to make money on your investment. It also lets you choose for how long to invest. Let me know if you have questions and I would be happy to explain more. My recommendation would be to set up an account and deposit a small amount to test it for yourself to get the hang of it.</p>
+                `,
+              date: 'Jul 30, 2019',
+              link: ' ',
+              authLink: 'https://www.facebook.com/math.carpenter'
+            },
+            2: {
+              name: 'Franky Tallavas',
+              auth: 'Franky Tallavas',
+              desc: `
+                  <p>It's a unique platform to invest in, and they provide great customer service. I was able to use Zelle to place and lend funds within minutes at 8%. So far so good.</p>
+                `,
+              date: 'Feb 26, 2020',
+              link: ' ',
+              authLink: 'https://www.facebook.com/FraaankyT'
+            },
+            3: {
+              name: 'Esther Dan',
+              auth: 'Esther Dan',
+              desc: `
+                  <p>Great product. I have invested thousands and receive my returns monthly. Thank you My Constant !</p>
+                `,
+              date: ' ',
+              link: ' ',
+              authLink: 'https://www.facebook.com/esther.dan.7'
+            },
+          },
+          tele: {
+            0: {
+              name: 'Dungeon',
+              auth: 'Dungeon',
+              desc: `
+                  <p>Wow,thank you very much I was just doing it to help others here and to support Constant and team members since they were very helpful and kind towards me since I joined the group back in July 👍I appreciate it very much.I will always support you guys no matter what.🥳</p>
+                `,
+              date: 'Mar 02, 2020',
+              link: ' '
+            },
+            1: {
+              name: 'Dungeon',
+              auth: 'Dungeon',
+              desc: `
+                  <p>No worries,all of my past experiences with Constant and their team/communication were perfect as a customer so I just wanted to share that with others too,they are very trustworthy people.As in your case a little bit of delay is normal in my opinion because I believe most of their operational team live in UTC+7 time zone and it's past 2 am there right now.</p>
+                `,
+              date: 'Feb 26, 2020',
+              link: ' '
+            },
+            2: {
+              name: 'Dungeon',
+              auth: 'Dungeon',
+              desc: `
+                  <p>Also Constant team is working hard to add new features and they have the best support I have seen to be honest. Communications are great.</p>
+                `,
+              date: 'Feb 04, 2020',
+              link: ' '
+            },
+            3: {
+              name: 'Dungeon',
+              auth: 'Dungeon',
+              desc: `
+                  <p>As 2019 comes to an end I'd like to give a huge shout out to the Constant team,I joined here around middle of this year (July) before they have reached $1MM matching volume and they have achieved so much since then thanks to their hard work,I believe their professionalism and their constant support will make them the biggest crypto service in upcoming year and I also publicly would like to thank them on a personal level👍 @ningtan  @andy_9210 @claire_dang  @jtrain1 @chrisjroper @Peter_Constant @AnnLuong @Natew55</p>
+                `,
+              date: 'Dec 31, 2019',
+              link: ' '
+            },
+            4: {
+              name: 'Dungeon',
+              auth: 'Dungeon',
+              desc: `
+                  <p>You shouldn't be really worried,many people here including myself used Constant's services many times and our experiences with them was always very good as customers.There is nothing you should be worried about,Constant is honest and good business(in my opinion they are the most secure service in this industry)</p>
+                `,
+              date: 'Dec 09, 2019',
+              link: ' '
+            },
+            5: {
+              name: 'Dungeon',
+              auth: 'Dungeon',
+              desc: `
+                  <p>As a happy customer I would say Constant is the best lending service because of many factors but the most important thing is they have very good support. I already recommended their services to many people I know and they used Constant,now they are telling me they are very satisfied too.</p>
+                `,
+              date: 'Dec 06, 2019',
+              link: ' '
+            },
+            6: {
+              name: 'John',
+              auth: 'John',
+              desc: `
+                  <p>I understand the anxiety involved when it comes to trusting your hard worked money with a newish, virtual company. I feel that sometimes, but Constant has to this point given me no reason that my anxiety is provoked by them...the communication has been on point</p>
+                `,
+              date: 'Feb 26, 2020',
+              link: ' '
+            },
+            7: {
+              name: 'John',
+              auth: 'John',
+              desc: `
+                  <p>The customer service with Constant is top notch! 💯</p>
+                `,
+              date: 'Jan 11, 2020',
+              link: ' '
+            },
+            8: {
+              name: 'ktn699',
+              auth: 'ktn699',
+              desc: `
+                  <p>i will vouch that constant - regardless of whatever bugs - has always gotten my coin and cash to where it needs to be. sometimes the delay is just with regards to finace team verification  and liquidity with certain coins, but to be honest, ive seen dramatic improvements over the last 3 months</p>
+                `,
+              date: 'Feb 26, 2020',
+              link: ' '
+            },
+            9: {
+              name: 'ktn699',
+              auth: 'ktn699',
+              desc: `
+                  <p>constant website has been getting better and better</p>
+                `,
+              date: 'Jan 04, 2020',
+              link: ' '
+            },
+            10: {
+              name: 'ktn699',
+              auth: 'ktn699',
+              desc: `
+                  <p>i agree that constant team has done a good job! bravo and looking forward to seeing your progress</p>
+                `,
+              date: 'Dec 31, 2019',
+              link: ' '
+            },
+            11: {
+              name: 'Mike',
+              auth: 'Mike',
+              desc: `
+                  <p>Constant is 900% better than other P2P lenders. Lending tree and all that stuff..... no guaranteed return on your $ and way less %apy</p>
+                `,
+              date: 'Feb 04, 2020',
+              link: ' '
+            },
+            12: {
+              name: 'Stephen Tang',
+              auth: 'Stephen Tang',
+              desc: `
+                  <p>Constant actually is the only platform that offers such diverse selection of alts for use as collateral.</p>
+                `,
+              date: 'Feb 04, 2020',
+              link: ' '
+            },
+            13: {
+              name: 'HBK',
+              auth: 'HBK',
+              desc: `
+                  <p>Constant is definitely a breath of fresh air. Hope the platform is doing well and sticks around!</p>
+                `,
+              date: 'Jan 23, 2020',
+              link: ' '
+            },
+            14: {
+              name: 'Mike Le',
+              auth: 'Mike Le',
+              desc: `
+                  <p>thanks for a great promotion campaign haha. The first time using incognito chain, working really smooth, really love the feature paying transaction fee by tokens</p>
+                `,
+              date: 'Jan 09, 2020',
+              link: ' '
+            },
+            15: {
+              name: 'RookieXBT',
+              auth: 'RookieXBT',
+              desc: `
+                  <p>Yup very cool, Constant is covering all ground. Gotta love it. I have no problem sharing great products in the crypto space with others. Thank you for the great service and help this year! 💥🚀 you guys are the best.</p>
+                `,
+              date: 'Dec 24, 2019',
+              link: ' '
+            },
+            16: {
+              name: 'RookieXBT',
+              auth: 'RookieXBT',
+              desc: `
+                  <p>💯 these guys are the most helpful, transparent service out there thats genuinely helping a ton of people out. I and many other people I know from Fantom and TomoChain community have nothing but great things to say about Constant.</p>
+                `,
+              date: 'Dec 12, 2019',
+              link: ' '
+            },
+            17: {
+              name: 'Jadenn Isma',
+              auth: 'Jadenn Isma',
+              desc: `
+                  <p>Everybody saying constant is a good service😁</p>
+                `,
+              date: 'Dec 19, 2019',
+              link: ' '
+            },
+            18: {
+              name: '2pac',
+              auth: '2pac',
+              desc: `
+                  <p>Hi guys, Im @2pac from Fantom Marines,  and I want to share my good experience with Constant,  in less of one day, I got $18.500 USD loan, and withdraw it without problems. Nice Service!!</p>
+                `,
+              date: 'Dec 07, 2019',
+              link: ' '
+            },
+            19: {
+              name: 'Sanjeev_k',
+              auth: 'Sanjeev_k',
+              desc: `
+                  <p>Hahha apart from this service is quite Gud and Andy was very helpful</p>
+                `,
+              date: 'Dec 06, 2019',
+              link: ' '
+            },
+          }
+        }
+      },
+      testimonials: {
+        title: 'Testimonials',
+        desc: 'Get the inside scoop from customers eager to share their stories with you.',
+        youtubes: {
+          1: {
+            title: 'Crypto: My Constant P2P lending Overview - Proof of Withdrawal',
+            link: 'https://www.youtube.com/watch?v=qT_uP9bcfl4',
+            id: 'qT_uP9bcfl4'
+          },
+          2: {
+            title: 'One Month review on shopify and Myconstant accounts',
+            link: 'https://www.youtube.com/watch?v=wlHdQ77QBDs',
+            id: 'wlHdQ77QBDs'
+          }
+        },
+        articles: {
+          1: {
+            title: 'My Experience with Constant- P2P Lending',
+            link: 'https://medium.com/@wtc.capitalregion/my-experience-with-constant-p2p-lending-10e149086582',
+            date: 'Nov 20, 2019',
+            author: 'Waltonchain (Capital Region)'
+          },
+          2: {
+            title: 'Review of Constant: a borderless, block-chain based P2P lending platform',
+            link: 'https://www.publish0x.com/miscellaneous/review-of-constant-a-borderless-block-chain-based-p2p-lendin-xqqzlk',
+            date: 'Oct 20, 2019',
+            author: 'ktn699 | Miscellaneous'
+          },
+          3: {
+            title: 'Product Review: Investing Made Easy with Constant – Part One',
+            link: 'https://kiannorthcote.com/2019/10/11/product-review-investing-made-easy-with-constant-part-one/',
+            date: 'Oct 11, 2019',
+            author: 'Kian'
+          },
+          4: {
+            title: 'One Month review on shopify and Myconstant accounts',
+            link: 'https://kiannorthcote.com/2019/12/13/product-review-investing-made-easy-with-constant-part-two/',
+            date: 'Dec 13, 2019',
+            author: 'Kian'
+          },
+          5: {
+            title: 'Constant - Secured P2P Lending Platform Review',
+            link: 'https://www.endofthechain.com/constant-secured-p2p-lending-platform-review/',
+            date: 'Dec 13, 2019',
+            author: 'End of the Chain'
+          },
+          6: {
+            title: 'Why Tung invested all his TUSD savings with Constant',
+            link: 'https://www.myconstant.com/blog/invested-tusd-with-constant',
+            date: 'Jun 27, 2019',
+            author: 'Constant'
+          },
+        }
+      }
+    },
+    press: {
+      consumerFinance: {
+        title: 'CONSUMER FINANCE',
+        desc: `
+        <p>As the new kid on the block, <strong>we get a lot of press.</strong> Journalists cover everything from our invesment products to the flexibility and support you get along the way. Find out what finance’s most respected publications think about us below.   </p>
+        `,
+        data: {
+          1: {
+            name: 'Inc.',
+            desc: `Constant which allows borrowers and lenders to transact directly. Banks, brokers and other third parties are cut off from any deal, and therefore access to financial data is minimized. Constant lowers borrowing costs by removing middlemen, and thereby streamlining processes.`,
+            link: 'https://www.inc.com/kenny-kline/startups-have-these-advantages-over-large-enterprises.html',
+          },
+          2: {
+            name: 'Entrepreneur',
+            desc: `Constant acts as a trading hub where borrowers and creditors pick the best deal. Moreover, the Redlands, Calif.-based venture allows users to set their own interest rates and terms -- a feature that doesn’t exist anywhere else.`,
+            link: 'https://www.entrepreneur.com/article/344621',
+          },
+          3: {
+            name: 'ZeroHedge',
+            desc: `Lenders can choose their terms, no credit check, and no nonsense – and find borrowers. Programming a system like this using the US banking system, would be expensive, cumbersome, time consuming, and who knows what it might look like after all the regulatory approvals.`,
+            link: 'https://www.zerohedge.com/news/2019-08-30/lending-stable-coin-threatens-traditional-banking',
+          },
+        }
+      },
+      technology: {
+        title: 'Technology',
+        desc: `
+        <p><strong>Technology is our heart,</strong> and customers are our lifeblood. We combine the two to build products that make a positive difference to people’s lives.</p>
+        `,
+        data: {
+          1: {
+            name: 'Hackernoon',
+            desc: `The traditional loan agreement has been replaced by an unstoppable Ethereum smart contract without any possibility of downtime, fraud, or third-party interference. Fully-secured, blockchain-enabled P2P lending is our contribution to a bankless banking system.`,
+            link: 'https://hackernoon.com/how-we-built-constant-a-secured-p2p-lending-platform-that-puts-customers-in-control-6820e32d8402',
+          },
+          2: {
+            name: 'Techworm',
+            desc: `The best thing about Constant, however, is the security the lending platform has in place. Every loan is fully secured and backed in multiple ways. While on loan it’s protected by borrower collateral, and while waiting to be matched it’s protected by a $130M insurance policy.`,
+            link: 'https://www.techworm.net/2019/09/technology-changing-way-finance.html',
+          },
+          3: {
+            name: 'TechBullion',
+            desc: `Constant works by enabling borrowers to stake liquid capital via over-collateralized crypto assets (e.g., Ether) based on an LTV ratio. Subsequently, borrowers can “cherrypick” the best deals enumerated on Constant’s interface, selecting the best interest rates that are posted independently by each lending peer.`,
+            link: 'https://techbullion.com/why-constants-rise-is-indicative-of-the-blossoming-class-of-defi-platforms/',
+          },
+        }
+      },
+      blockchain: {
+        title: 'Blockchain',
+        desc: `
+        <p><strong>We believe in the future of blockchain</strong> and are proud members of the crypto community. As our voice has grown, the crypto press has helped tell our story to the world.</p>
+        `,
+        data: {
+          1: {
+            name: 'CoinSpeaker',
+            desc: `And when it comes to pioneering a new generation of fintech platforms, Constant provides a measuring stick for the industry’s progress.`,
+            link: 'https://www.coinspeaker.com/constant-p2p-lending-growth/',
+          },
+          2: {
+            name: 'Blockonomi',
+            desc: `Constant has created a platform that cuts banks out of the lending equation and allows anyone in the world to create loans on whatever terms they like. This is a big shift away from the established lending system, and it could be a big benefit for both borrowers and lenders.`,
+            link: 'https://blockonomi.com/constant-decentralized-p2p-lending/',
+          },
+          3: {
+            name: 'CryptoGazette',
+            desc: `Constant, a leading secured P2P lending platform, has been expanding its service and product offerings in recent months as it continues to originate more loans on its Ethereum-based lending service.`,
+            link: 'https://cryptogazette.com/how-constant-is-pioneering-the-exploration-of-a-new-fintech-generation/',
+          },
+          4: {
+            name: 'EndofTheChain',
+            desc: `It's a great service, with free deposits and withdrawals, extremely fast responding customer support and a transparent team.`,
+            link: 'https://www.endofthechain.com/constant-secured-p2p-lending-platform-review/',
+          },
+          5: {
+            name: 'Coin98',
+            desc: `Chắc hẳn sẽ có những lúc chúng ta rơi vào hoàn cảnh khi đang HODL một đồng coin nào đó, nhưng lại thấy 1 cơ hội khác trong khi quỹ vốn thì đã hết. Constant sẽ giúp anh em huy động được một lượng cash (tiền mặt) nhất định để vào được kèo mới nhưng không phải cash out (bán) đồng coin đang HODL.`,
+            link: 'https://coin98.net/constant-la-gi/',
+          },
+        }
+      }
+    },
+    partners: {
+      custody: {
+        title: 'Custody',
+        readMore: 'Read more',
+        data: {
+          0: {
+            title: 'Prime Trust',
+            desc: `
+            <p>Prime Trust is the independent, accredited custodian of our USD reserve. When you deposit, Prime Trust stores your money across multiple bank accounts <strong>insured to a total of $130,000,000.</strong></p>
+            `,
+            link: 'https://primetrust.com/'
+          },
+          1: {
+            title: 'BitGo',
+            desc: `
+            <p>BitGo is our approved custodian of digital asset collateral. When you borrow against a BitGo-supported cryptocurrency, your collateral is sent to a BitGo escrow <strong>insured to $100,000,000.</strong></p>
+            `,
+            link: 'https://www.bitgo.com/'
+          },
+        }
+      },
+      settlement: {
+        title: 'Settlement',
+        data: {
+          cb: {
+            title: 'Checkbook',
+            desc: `
+            <p>Checkbook helps settle withdrawals via ACH and digital cheque, making transfers cheaper for US residents.</p>
+            `,
+            link: 'https://checkbook.io/'
+          },
+          qc: {
+            title: 'QCP Capital',
+            desc: `
+            <p>QCP Capital helps manage collateral and offers occasional trading services.</p>
+            `,
+            link: 'https://qcp.capital/'
+          },
+        }
+      },
+      blockchain: {
+        title: 'Blockchain',
+        desc: `
+        <p>We’ve signed partnerships with <strong>blockchain’s biggest movers and shakers.</strong> Together, we work hard to help you do more with your assets.</p>
+        `,
+        vip: {
+          name: 'CZ Binance',
+          auth: '@cz_binance',
+          desc:`
+            <p>Some much appreciated "competition" to <a href="https://twitter.com/binance" target="_blank">@binance</a> lending. Let's grow together!</p>
+          `,
+        }
+      },
+    }
+  },
   memberShip: {
     undefined: '',
+    getBackReward: 'Because you placed your loan that brought your account to the next level of membership status on the secondary market, rewards for this level have been removed from your account. This is to prevent fraud. Get your points back to earn back your rewards.',
     howItWorks: {
       title: 'How membership works',
       everyDollar: 'EVERY DOLLAR',
@@ -6924,7 +7653,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
   trustPilot: {
     title: 'Excellent',
     star: '4',
-    desc: 'Here’s what customers are saying about us on',
+    desc: 'From great rates to speedy service, learn how we’ve earned our stars.',
     viewAll: 'View us on TrustPilot',
     comments: {
       0: {
@@ -7206,6 +7935,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       repaidEarly: {
         title: 'Your investment has been repaid early',
         desc: `Your investment of {amount} has been repaid early. Please click <a href="/accounts" class="underline">here</a> to check your dashboard and reinvest your money.`
+      },
+      repaidEarlyLiquidated: {
+        title: 'Your investment has ended early',
+        desc: `The value of your borrower's collateral fell to 110% of your principal and earned interest. To avoid risk to your principal, we've sold the collateral and repaid you \${totalAmount}. `,
       },
       selling: {
         title: 'We\'re selling your investment',

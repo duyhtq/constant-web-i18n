@@ -196,6 +196,10 @@
             "email": {
                 "title": "%%%.footer.social.email.title%%%",
                 "link": "%%%.footer.social.email.link%%%"
+            },
+            "linkedin": {
+                "title": "%%%.footer.social.linkedin.title%%%",
+                "link": "%%%.footer.social.linkedin.link%%%"
             }
         },
         "content": "%%%.footer.content%%%",
@@ -1887,6 +1891,48 @@
             "requiredDescription": "%%%.landingPage.contactUS.requiredDescription%%%",
             "contactButton": "%%%.landingPage.contactUS.contactButton%%%",
             "message": "%%%.landingPage.contactUS.message%%%"
+        },
+        "title": "%%%.landingPage.title%%%",
+        "howItWorks": {
+            "title": "%%%.landingPage.howItWorks.title%%%",
+            "data": {
+                "0": {
+                    "title": "%%%.landingPage.howItWorks.data.0.title%%%",
+                    "desc": "%%%.landingPage.howItWorks.data.0.desc%%%"
+                },
+                "1": {
+                    "title": "%%%.landingPage.howItWorks.data.1.title%%%",
+                    "desc": "%%%.landingPage.howItWorks.data.1.desc%%%"
+                },
+                "2": {
+                    "title": "%%%.landingPage.howItWorks.data.2.title%%%",
+                    "desc": "%%%.landingPage.howItWorks.data.2.desc%%%"
+                },
+                "3": {
+                    "title": "%%%.landingPage.howItWorks.data.3.title%%%",
+                    "desc": "%%%.landingPage.howItWorks.data.3.desc%%%"
+                },
+                "4": {
+                    "title": "%%%.landingPage.howItWorks.data.4.title%%%",
+                    "desc": "%%%.landingPage.howItWorks.data.4.desc%%%"
+                }
+            }
+        },
+        "howWeProtectYou": {
+            "title": "%%%.landingPage.howWeProtectYou.title%%%",
+            "data": {
+                "0": {
+                    "title": "%%%.landingPage.howWeProtectYou.data.0.title%%%",
+                    "desc": "%%%.landingPage.howWeProtectYou.data.0.desc%%%"
+                },
+                "1": {
+                    "title": "%%%.landingPage.howWeProtectYou.data.1.title%%%",
+                    "desc": "%%%.landingPage.howWeProtectYou.data.1.desc%%%"
+                }
+            }
+        },
+        "whyPeopleLoveUs": {
+            "title": "%%%.landingPage.whyPeopleLoveUs.title%%%"
         }
     },
     "review": {
@@ -2059,6 +2105,7 @@
                 "confirmTemplate": "%%%.home.convert.buy.confirmTemplate%%%",
                 "cryptoAddress": "%%%.home.convert.buy.cryptoAddress%%%",
                 "scanQR": "%%%.home.convert.buy.scanQR%%%",
+                "scanDepositQR": "%%%.home.convert.buy.scanDepositQR%%%",
                 "accountName": "%%%.home.convert.buy.accountName%%%",
                 "bankName": "%%%.home.convert.buy.bankName%%%",
                 "accountNumber": "%%%.home.convert.buy.accountNumber%%%",
@@ -2077,6 +2124,7 @@
                 "thankYou": "%%%.home.convert.buy.thankYou%%%",
                 "minuteWindow": "%%%.home.convert.buy.minuteWindow%%%",
                 "minuteWindowDescription": "%%%.home.convert.buy.minuteWindowDescription%%%",
+                "minuteWindowDepositDescription": "%%%.home.convert.buy.minuteWindowDepositDescription%%%",
                 "minuteWindowDescriptionDGX": "%%%.home.convert.buy.minuteWindowDescriptionDGX%%%"
             },
             "sell": {
@@ -2369,7 +2417,8 @@
                     "email": "%%%.home.transfer.components.orderInfo.email%%%",
                     "amount": "%%%.home.transfer.components.orderInfo.amount%%%",
                     "promotionAmount": "%%%.home.transfer.components.orderInfo.promotionAmount%%%",
-                    "serviceTime": "%%%.home.transfer.components.orderInfo.serviceTime%%%"
+                    "serviceTime": "%%%.home.transfer.components.orderInfo.serviceTime%%%",
+                    "serviceTimeTransferViaEmail": "%%%.home.transfer.components.orderInfo.serviceTimeTransferViaEmail%%%"
                 }
             },
             "howItWorks": "%%%.home.transfer.howItWorks%%%",
@@ -4028,7 +4077,8 @@
                 "normalFailed": "%%%.home1.lendingSection.alert.normalFailed%%%",
                 "trialSuccess": "%%%.home1.lendingSection.alert.trialSuccess%%%",
                 "zelleSuccess": "%%%.home1.lendingSection.alert.zelleSuccess%%%",
-                "zelleFailed": "%%%.home1.lendingSection.alert.zelleFailed%%%"
+                "zelleFailed": "%%%.home1.lendingSection.alert.zelleFailed%%%",
+                "needKyc": "%%%.home1.lendingSection.alert.needKyc%%%"
             },
             "confirm": {
                 "thankYou1": "%%%.home1.lendingSection.confirm.thankYou1%%%",
@@ -5159,8 +5209,569 @@
         "desc": "%%%.testimonials.desc%%%",
         "viewAll": "%%%.testimonials.viewAll%%%"
     },
+    "whyPeopleLoveUs": {
+        "title": "%%%.whyPeopleLoveUs.title%%%",
+        "viewFullArticle": "%%%.whyPeopleLoveUs.viewFullArticle%%%",
+        "tabs": {
+            "customers": "%%%.whyPeopleLoveUs.tabs.customers%%%",
+            "press": "%%%.whyPeopleLoveUs.tabs.press%%%",
+            "partners": "%%%.whyPeopleLoveUs.tabs.partners%%%"
+        },
+        "customers": {
+            "trustPilot": {
+                "title": "%%%.whyPeopleLoveUs.customers.trustPilot.title%%%",
+                "star": "%%%.whyPeopleLoveUs.customers.trustPilot.star%%%",
+                "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.desc%%%",
+                "viewAll": "%%%.whyPeopleLoveUs.customers.trustPilot.viewAll%%%",
+                "readMore": "%%%.whyPeopleLoveUs.customers.trustPilot.readMore%%%",
+                "comments": {
+                    "0": {
+                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.0.star%%%",
+                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.0.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.0.desc%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.0.date%%%",
+                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.0.auth%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.0.link%%%"
+                    },
+                    "1": {
+                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.1.star%%%",
+                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.1.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.1.desc%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.1.date%%%",
+                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.1.auth%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.1.link%%%"
+                    },
+                    "2": {
+                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.2.star%%%",
+                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.2.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.2.desc%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.2.date%%%",
+                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.2.auth%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.2.link%%%"
+                    },
+                    "3": {
+                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.3.star%%%",
+                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.3.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.3.desc%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.3.date%%%",
+                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.3.auth%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.3.link%%%"
+                    },
+                    "4": {
+                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.4.star%%%",
+                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.4.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.4.desc%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.4.date%%%",
+                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.4.auth%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.4.link%%%"
+                    },
+                    "5": {
+                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.5.star%%%",
+                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.5.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.5.desc%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.5.date%%%",
+                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.5.auth%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.5.link%%%"
+                    },
+                    "6": {
+                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.6.star%%%",
+                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.6.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.6.desc%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.6.date%%%",
+                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.6.auth%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.6.link%%%"
+                    },
+                    "7": {
+                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.7.star%%%",
+                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.7.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.7.desc%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.7.date%%%",
+                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.7.auth%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.7.link%%%"
+                    },
+                    "8": {
+                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.star%%%",
+                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.desc%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.date%%%",
+                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.auth%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.link%%%"
+                    },
+                    "9": {
+                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.star%%%",
+                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.desc%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.date%%%",
+                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.auth%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.link%%%"
+                    }
+                }
+            },
+            "socialMedia": {
+                "title": "%%%.whyPeopleLoveUs.customers.socialMedia.title%%%",
+                "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.desc%%%",
+                "comments": {
+                    "viewMore": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.viewMore%%%",
+                    "tw": {
+                        "0": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.0.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.0.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.0.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.0.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.0.link%%%",
+                            "authLink": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.0.authLink%%%"
+                        },
+                        "1": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.1.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.1.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.1.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.1.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.1.link%%%",
+                            "authLink": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.1.authLink%%%"
+                        },
+                        "2": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.2.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.2.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.2.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.2.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.2.link%%%",
+                            "authLink": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.2.authLink%%%"
+                        },
+                        "3": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.3.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.3.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.3.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.3.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.3.link%%%",
+                            "authLink": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.3.authLink%%%"
+                        },
+                        "4": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.4.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.4.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.4.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.4.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.4.link%%%",
+                            "authLink": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.4.authLink%%%"
+                        },
+                        "5": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.5.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.5.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.5.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.5.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.5.link%%%",
+                            "authLink": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.5.authLink%%%"
+                        },
+                        "6": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.6.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.6.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.6.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.6.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.6.link%%%",
+                            "authLink": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.6.authLink%%%"
+                        },
+                        "7": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.7.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.7.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.7.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.7.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.7.link%%%",
+                            "authLink": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.7.authLink%%%"
+                        },
+                        "8": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.8.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.8.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.8.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.8.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.8.link%%%",
+                            "authLink": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.8.authLink%%%"
+                        },
+                        "9": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.9.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.9.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.9.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.9.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.9.link%%%",
+                            "authLink": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.9.authLink%%%"
+                        },
+                        "10": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.10.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.10.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.10.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.10.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.10.link%%%",
+                            "authLink": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.10.authLink%%%"
+                        },
+                        "11": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.11.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.11.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.11.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.11.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.11.link%%%",
+                            "authLink": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.11.authLink%%%"
+                        },
+                        "12": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.12.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.12.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.12.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.12.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.12.link%%%",
+                            "authLink": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tw.12.authLink%%%"
+                        }
+                    },
+                    "fb": {
+                        "0": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.0.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.0.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.0.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.0.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.0.link%%%",
+                            "authLink": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.0.authLink%%%"
+                        },
+                        "1": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.1.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.1.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.1.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.1.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.1.link%%%",
+                            "authLink": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.1.authLink%%%"
+                        },
+                        "2": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.2.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.2.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.2.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.2.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.2.link%%%",
+                            "authLink": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.2.authLink%%%"
+                        },
+                        "3": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.3.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.3.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.3.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.3.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.3.link%%%",
+                            "authLink": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.3.authLink%%%"
+                        }
+                    },
+                    "tele": {
+                        "0": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.0.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.0.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.0.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.0.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.0.link%%%"
+                        },
+                        "1": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.1.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.1.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.1.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.1.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.1.link%%%"
+                        },
+                        "2": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.2.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.2.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.2.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.2.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.2.link%%%"
+                        },
+                        "3": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.3.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.3.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.3.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.3.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.3.link%%%"
+                        },
+                        "4": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.4.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.4.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.4.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.4.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.4.link%%%"
+                        },
+                        "5": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.5.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.5.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.5.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.5.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.5.link%%%"
+                        },
+                        "6": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.6.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.6.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.6.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.6.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.6.link%%%"
+                        },
+                        "7": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.7.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.7.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.7.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.7.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.7.link%%%"
+                        },
+                        "8": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.8.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.8.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.8.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.8.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.8.link%%%"
+                        },
+                        "9": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.9.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.9.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.9.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.9.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.9.link%%%"
+                        },
+                        "10": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.10.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.10.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.10.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.10.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.10.link%%%"
+                        },
+                        "11": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.11.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.11.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.11.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.11.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.11.link%%%"
+                        },
+                        "12": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.12.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.12.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.12.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.12.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.12.link%%%"
+                        },
+                        "13": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.13.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.13.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.13.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.13.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.13.link%%%"
+                        },
+                        "14": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.14.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.14.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.14.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.14.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.14.link%%%"
+                        },
+                        "15": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.15.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.15.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.15.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.15.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.15.link%%%"
+                        },
+                        "16": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.16.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.16.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.16.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.16.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.16.link%%%"
+                        },
+                        "17": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.17.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.17.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.17.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.17.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.17.link%%%"
+                        },
+                        "18": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.18.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.18.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.18.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.18.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.18.link%%%"
+                        },
+                        "19": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.19.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.19.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.19.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.19.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.tele.19.link%%%"
+                        }
+                    }
+                }
+            },
+            "testimonials": {
+                "title": "%%%.whyPeopleLoveUs.customers.testimonials.title%%%",
+                "desc": "%%%.whyPeopleLoveUs.customers.testimonials.desc%%%",
+                "youtubes": {
+                    "1": {
+                        "title": "%%%.whyPeopleLoveUs.customers.testimonials.youtubes.1.title%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.testimonials.youtubes.1.link%%%",
+                        "id": "%%%.whyPeopleLoveUs.customers.testimonials.youtubes.1.id%%%"
+                    },
+                    "2": {
+                        "title": "%%%.whyPeopleLoveUs.customers.testimonials.youtubes.2.title%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.testimonials.youtubes.2.link%%%",
+                        "id": "%%%.whyPeopleLoveUs.customers.testimonials.youtubes.2.id%%%"
+                    }
+                },
+                "articles": {
+                    "1": {
+                        "title": "%%%.whyPeopleLoveUs.customers.testimonials.articles.1.title%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.testimonials.articles.1.link%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.testimonials.articles.1.date%%%",
+                        "author": "%%%.whyPeopleLoveUs.customers.testimonials.articles.1.author%%%"
+                    },
+                    "2": {
+                        "title": "%%%.whyPeopleLoveUs.customers.testimonials.articles.2.title%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.testimonials.articles.2.link%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.testimonials.articles.2.date%%%",
+                        "author": "%%%.whyPeopleLoveUs.customers.testimonials.articles.2.author%%%"
+                    },
+                    "3": {
+                        "title": "%%%.whyPeopleLoveUs.customers.testimonials.articles.3.title%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.testimonials.articles.3.link%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.testimonials.articles.3.date%%%",
+                        "author": "%%%.whyPeopleLoveUs.customers.testimonials.articles.3.author%%%"
+                    },
+                    "4": {
+                        "title": "%%%.whyPeopleLoveUs.customers.testimonials.articles.4.title%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.testimonials.articles.4.link%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.testimonials.articles.4.date%%%",
+                        "author": "%%%.whyPeopleLoveUs.customers.testimonials.articles.4.author%%%"
+                    },
+                    "5": {
+                        "title": "%%%.whyPeopleLoveUs.customers.testimonials.articles.5.title%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.testimonials.articles.5.link%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.testimonials.articles.5.date%%%",
+                        "author": "%%%.whyPeopleLoveUs.customers.testimonials.articles.5.author%%%"
+                    },
+                    "6": {
+                        "title": "%%%.whyPeopleLoveUs.customers.testimonials.articles.6.title%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.testimonials.articles.6.link%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.testimonials.articles.6.date%%%",
+                        "author": "%%%.whyPeopleLoveUs.customers.testimonials.articles.6.author%%%"
+                    }
+                }
+            }
+        },
+        "press": {
+            "consumerFinance": {
+                "title": "%%%.whyPeopleLoveUs.press.consumerFinance.title%%%",
+                "desc": "%%%.whyPeopleLoveUs.press.consumerFinance.desc%%%",
+                "data": {
+                    "1": {
+                        "name": "%%%.whyPeopleLoveUs.press.consumerFinance.data.1.name%%%",
+                        "desc": "%%%.whyPeopleLoveUs.press.consumerFinance.data.1.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.consumerFinance.data.1.link%%%"
+                    },
+                    "2": {
+                        "name": "%%%.whyPeopleLoveUs.press.consumerFinance.data.2.name%%%",
+                        "desc": "%%%.whyPeopleLoveUs.press.consumerFinance.data.2.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.consumerFinance.data.2.link%%%"
+                    },
+                    "3": {
+                        "name": "%%%.whyPeopleLoveUs.press.consumerFinance.data.3.name%%%",
+                        "desc": "%%%.whyPeopleLoveUs.press.consumerFinance.data.3.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.consumerFinance.data.3.link%%%"
+                    }
+                }
+            },
+            "technology": {
+                "title": "%%%.whyPeopleLoveUs.press.technology.title%%%",
+                "desc": "%%%.whyPeopleLoveUs.press.technology.desc%%%",
+                "data": {
+                    "1": {
+                        "name": "%%%.whyPeopleLoveUs.press.technology.data.1.name%%%",
+                        "desc": "%%%.whyPeopleLoveUs.press.technology.data.1.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.technology.data.1.link%%%"
+                    },
+                    "2": {
+                        "name": "%%%.whyPeopleLoveUs.press.technology.data.2.name%%%",
+                        "desc": "%%%.whyPeopleLoveUs.press.technology.data.2.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.technology.data.2.link%%%"
+                    },
+                    "3": {
+                        "name": "%%%.whyPeopleLoveUs.press.technology.data.3.name%%%",
+                        "desc": "%%%.whyPeopleLoveUs.press.technology.data.3.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.technology.data.3.link%%%"
+                    }
+                }
+            },
+            "blockchain": {
+                "title": "%%%.whyPeopleLoveUs.press.blockchain.title%%%",
+                "desc": "%%%.whyPeopleLoveUs.press.blockchain.desc%%%",
+                "data": {
+                    "1": {
+                        "name": "%%%.whyPeopleLoveUs.press.blockchain.data.1.name%%%",
+                        "desc": "%%%.whyPeopleLoveUs.press.blockchain.data.1.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.blockchain.data.1.link%%%"
+                    },
+                    "2": {
+                        "name": "%%%.whyPeopleLoveUs.press.blockchain.data.2.name%%%",
+                        "desc": "%%%.whyPeopleLoveUs.press.blockchain.data.2.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.blockchain.data.2.link%%%"
+                    },
+                    "3": {
+                        "name": "%%%.whyPeopleLoveUs.press.blockchain.data.3.name%%%",
+                        "desc": "%%%.whyPeopleLoveUs.press.blockchain.data.3.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.blockchain.data.3.link%%%"
+                    },
+                    "4": {
+                        "name": "%%%.whyPeopleLoveUs.press.blockchain.data.4.name%%%",
+                        "desc": "%%%.whyPeopleLoveUs.press.blockchain.data.4.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.blockchain.data.4.link%%%"
+                    },
+                    "5": {
+                        "name": "%%%.whyPeopleLoveUs.press.blockchain.data.5.name%%%",
+                        "desc": "%%%.whyPeopleLoveUs.press.blockchain.data.5.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.blockchain.data.5.link%%%"
+                    }
+                }
+            }
+        },
+        "partners": {
+            "custody": {
+                "title": "%%%.whyPeopleLoveUs.partners.custody.title%%%",
+                "readMore": "%%%.whyPeopleLoveUs.partners.custody.readMore%%%",
+                "data": {
+                    "0": {
+                        "title": "%%%.whyPeopleLoveUs.partners.custody.data.0.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.partners.custody.data.0.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.partners.custody.data.0.link%%%"
+                    },
+                    "1": {
+                        "title": "%%%.whyPeopleLoveUs.partners.custody.data.1.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.partners.custody.data.1.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.partners.custody.data.1.link%%%"
+                    }
+                }
+            },
+            "settlement": {
+                "title": "%%%.whyPeopleLoveUs.partners.settlement.title%%%",
+                "data": {
+                    "cb": {
+                        "title": "%%%.whyPeopleLoveUs.partners.settlement.data.cb.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.partners.settlement.data.cb.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.partners.settlement.data.cb.link%%%"
+                    },
+                    "qc": {
+                        "title": "%%%.whyPeopleLoveUs.partners.settlement.data.qc.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.partners.settlement.data.qc.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.partners.settlement.data.qc.link%%%"
+                    }
+                }
+            },
+            "blockchain": {
+                "title": "%%%.whyPeopleLoveUs.partners.blockchain.title%%%",
+                "desc": "%%%.whyPeopleLoveUs.partners.blockchain.desc%%%",
+                "vip": {
+                    "name": "%%%.whyPeopleLoveUs.partners.blockchain.vip.name%%%",
+                    "auth": "%%%.whyPeopleLoveUs.partners.blockchain.vip.auth%%%",
+                    "desc": "%%%.whyPeopleLoveUs.partners.blockchain.vip.desc%%%"
+                }
+            }
+        }
+    },
     "memberShip": {
         "undefined": "%%%.memberShip.undefined%%%",
+        "getBackReward": "%%%.memberShip.getBackReward%%%",
         "howItWorks": {
             "title": "%%%.memberShip.howItWorks.title%%%",
             "everyDollar": "%%%.memberShip.howItWorks.everyDollar%%%",
@@ -5575,6 +6186,10 @@
             "repaidEarly": {
                 "title": "%%%.notification.invest.repaidEarly.title%%%",
                 "desc": "%%%.notification.invest.repaidEarly.desc%%%"
+            },
+            "repaidEarlyLiquidated": {
+                "title": "%%%.notification.invest.repaidEarlyLiquidated.title%%%",
+                "desc": "%%%.notification.invest.repaidEarlyLiquidated.desc%%%"
             },
             "selling": {
                 "title": "%%%.notification.invest.selling.title%%%",

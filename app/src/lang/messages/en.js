@@ -8002,7 +8002,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       summary: {
         title: 'title',
         desc: `desc`
-      }/me/pages/History/OpenOrder/invest.js
+      }
     },
     nextLevel: {
       0: ' ',

@@ -4161,9 +4161,9 @@
         "whatCaption2": "Built for you",
         "whatCaption3": "Collateral backed",
         "whatDesc0": "\n      <p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.</p>\n \n    ",
-        "whatDesc1": "\n      <p>Funds that have not yet been loaned out are kept safe at multiple FDIC-insured bank accounts with an aggregated insurance of $130M.</p>\n      <br />\n      <p>You can withdraw anytime.</p>\n      <br />\n      <a href=\"/blog/5de7367206d81400175587e0\" target=\"_blank\">How we deliver FDIC insurance</a>\n    ",
+        "whatDesc1": "      <p>Earn 4% APY on your balance with Flex. Or, insure your balance up to $130,000,000 with our custodial partner, Prime Trust.</p>\n      <br />\n      <a href=\"/blog/flex-or-prime-trust-constant\" target=\"_blank\">Your balance, your choice.</a>",
         "whatDesc2": "<p>Enjoy 24-7 customer service, unlimited free withdrawals, and a library of useful content to help you do more with your money. Constant is an open, alternative financial platform and you can <a href=\"https://github.com/constant-money\" target=\"_blank\">view all our code</a> as well as suggest features you’d like to see</p>",
-        "whatDesc3": "<p>We strictly require every loan to be 150% backed by collateral. For someone to borrow $10,000, they have to put up $15,000 in collateral value.</p>\n      <br />\n      <p>So if borrowers default, you don’t lose a cent.</p>\n      <br />\n      <a href=\"/blog/5de4991006d81400175587ad\" target=\"_blank\">How we protect investor funds</a>",
+        "whatDesc3": "<p>We strictly require every loan to be 150% backed by collateral. For someone to borrow $10,000, they have to put up $15,000 in collateral value.</p>\n      <br />\n      <p>So if borrowers default, you don’t lose a cent.</p>\n      <br />\n      <a href=\"/blog/how-constant-protects-money-and-collateral\" target=\"_blank\">How we protect investors' funds.</a>",
         "howItWorks": {
             "mainTitle": "How it works",
             "mainDesc": "<h5>The Constant platform matches investors with borrowers glad to pay their rates. It then manages the transfer of investor funds while securely escrowing collateral in either a smart contract or BitGo custody. </h5>",

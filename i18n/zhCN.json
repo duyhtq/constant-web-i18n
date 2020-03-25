@@ -6249,9 +6249,9 @@
             }
         },
         "system": {
-            "summary": {
-                "title": "title",
-                "desc": "desc"
+            "inform": {
+                "title": "Information",
+                "desc": "{content}"
             }
         },
         "nextLevel": {

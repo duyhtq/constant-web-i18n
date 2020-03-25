@@ -6249,9 +6249,9 @@
             }
         },
         "system": {
-            "summary": {
-                "title": "%%%.notification.system.summary.title%%%",
-                "desc": "%%%.notification.system.summary.desc%%%"
+            "inform": {
+                "title": "%%%.notification.system.inform.title%%%",
+                "desc": "%%%.notification.system.inform.desc%%%"
             }
         },
         "nextLevel": {

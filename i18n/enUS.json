@@ -4157,7 +4157,7 @@
             }
         },
         "whatCaption0": "Set your own rates",
-        "whatCaption1": "Immediate returns",
+        "whatCaption1": "Invest or insure deposits",
         "whatCaption2": "Built for you",
         "whatCaption3": "Collateral backed",
         "whatDesc0": "\n      <p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.</p>\n \n    ",
@@ -6249,9 +6249,9 @@
             }
         },
         "system": {
-            "summary": {
-                "title": "title",
-                "desc": "desc"
+            "inform": {
+                "title": "Information",
+                "desc": "{content}"
             }
         },
         "nextLevel": {

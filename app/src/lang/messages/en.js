@@ -7999,9 +7999,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       }
     },
     system: {
-      summary: {
-        title: 'title',
-        desc: `desc`
+      inform: {
+        title: 'Information',
+        desc: '{content}'
       }
     },
     nextLevel: {

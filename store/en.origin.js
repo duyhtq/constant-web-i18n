@@ -2117,7 +2117,9 @@
                 "constant": "%%%.home.convert.buy.constant%%%",
                 "reference": "%%%.home.convert.buy.reference%%%",
                 "buyThankMsg": "%%%.home.convert.buy.buyThankMsg%%%",
+                "buyDepositThankMsg": "%%%.home.convert.buy.buyDepositThankMsg%%%",
                 "buyCryptoThankMsg": "%%%.home.convert.buy.buyCryptoThankMsg%%%",
+                "buyCryptoDepositThankMsg": "%%%.home.convert.buy.buyCryptoDepositThankMsg%%%",
                 "importantMsg": "%%%.home.convert.buy.importantMsg%%%",
                 "important": "%%%.home.convert.buy.important%%%",
                 "dgxFeeMsg": "%%%.home.convert.buy.dgxFeeMsg%%%",
@@ -6264,5 +6266,36 @@
     "blog": {
         "title": "%%%.blog.title%%%",
         "subTitle": "%%%.blog.subTitle%%%"
+    },
+    "history": {
+        "deposit": {
+            "title": "%%%.history.deposit.title%%%",
+            "exportExel": "%%%.history.deposit.exportExel%%%",
+            "tabs": {
+                "fiat": "%%%.history.deposit.tabs.fiat%%%",
+                "collateral": "%%%.history.deposit.tabs.collateral%%%",
+                "openOrders": "%%%.history.deposit.tabs.openOrders%%%"
+            },
+            "headers": {
+                "currencyAmount": "%%%.history.deposit.headers.currencyAmount%%%",
+                "amount": "%%%.history.deposit.headers.amount%%%",
+                "cryptoAddress": "%%%.history.deposit.headers.cryptoAddress%%%",
+                "time": "%%%.history.deposit.headers.time%%%",
+                "day": "%%%.history.deposit.headers.day%%%",
+                "status": "%%%.history.deposit.headers.status%%%"
+            },
+            "status": {
+                "pending": "%%%.history.deposit.status.pending%%%",
+                "picked": "%%%.history.deposit.status.picked%%%",
+                "transferred_fiat": "%%%.history.deposit.status.transferred_fiat%%%",
+                "transferred_fiat_invest": "%%%.history.deposit.status.transferred_fiat_invest%%%",
+                "transferred": "%%%.history.deposit.status.transferred%%%",
+                "transferring_fiat": "%%%.history.deposit.status.transferring_fiat%%%",
+                "cancelled": "%%%.history.deposit.status.cancelled%%%",
+                "system_cancelled": "%%%.history.deposit.status.system_cancelled%%%",
+                "system_rejected": "%%%.history.deposit.status.system_rejected%%%",
+                "approving": "%%%.history.deposit.status.approving%%%"
+            }
+        }
     }
 }

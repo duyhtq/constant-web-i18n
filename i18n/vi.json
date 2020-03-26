@@ -2117,7 +2117,9 @@
                 "constant": "Constant:",
                 "reference": "Tham chiếu:",
                 "buyThankMsg": "Chỉ cần thực hiện chuyển khoản {fiatAmount} để hoàn tất khoản tiền gửi của bạn.",
+                "buyDepositThankMsg": "Please wire {fiatAmount} {fiatCurrency} to the seller's bank account.",
                 "buyCryptoThankMsg": "Xin vui lòng chuyển khoản {fiatAmount}{fiatCurrency} tới địa chỉ dưới đây để hoàn tất khoản đầu tư của bạn.",
+                "buyCryptoDepositThankMsg": "Please transfer {fiatAmount} {fiatCurrency} to the following wallet address to complete your deposit.",
                 "importantMsg": "Hãy nhớ điền mã tham chiếu {referenceNumber} trong phần nội dung chuyển khoản.",
                 "important": "QUAN TRỌNG",
                 "dgxFeeMsg": "(bao gồm 0.13% DGX phí giao dịch)",
@@ -2448,7 +2450,7 @@
             "transferBtn": "Gửi",
             "address": "{currency} địa chỉ ví",
             "phToAddress": "Email hoặc địa chỉ ví Ethereum của người nhận",
-            "confirmMsg": "Bạn có chắc muốn chuyển {amount} {name} tới {address}?",
+            "confirmMsg": "\n      <p>You’re about to convert {constAmount} CONST (USD) to {amount} {name} and then withdraw it to wallet address {address}.</p>\n      <p>Do you want to proceed?</p>\n      ",
             "batchConfirmMsg": "Bạn có chắc muốn chuyển khoản tới những người có trong danh sách này?",
             "transferFailed": "Có lỗi xảy ra khi thực hiện chuyển khoản. Xin vui lòng thử lại",
             "transferSuccessful": "Chuyển khoản thành công",
@@ -6264,5 +6266,36 @@
     "blog": {
         "title": "The Ledger",
         "subTitle": "News, advice, and opinion from the Constant team (and guests)."
+    },
+    "history": {
+        "deposit": {
+            "title": "Deposit History",
+            "exportExel": "Export to excel",
+            "tabs": {
+                "fiat": "Fiat",
+                "collateral": "Collateral",
+                "openOrders": "Open Orders"
+            },
+            "headers": {
+                "currencyAmount": "Currency Amount",
+                "amount": "USD Amount",
+                "cryptoAddress": "Crypto Address",
+                "time": "Time",
+                "day": "Day",
+                "status": "Status"
+            },
+            "status": {
+                "pending": "Order in progress",
+                "picked": "Please make a transfer to complete your deposit",
+                "transferred_fiat": "Your account will be credited once we have received your transfer.",
+                "transferred_fiat_invest": "Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.",
+                "transferred": "Successful",
+                "transferring_fiat": "Transferring Fiat",
+                "cancelled": "Cancelled",
+                "system_cancelled": "Order timed out",
+                "system_rejected": "Order timed out",
+                "approving": "Waiting for admin approve"
+            }
+        }
     }
 }

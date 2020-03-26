@@ -2529,8 +2529,12 @@ export default {
         reference: 'Reference:',
         buyThankMsg:
           'Please wire {fiatAmount} {fiatCurrency} to the seller\'s bank account.',
+        buyDepositThankMsg:
+          'Please wire {fiatAmount} {fiatCurrency} to the seller\'s bank account.',
         buyCryptoThankMsg:
           'Please transfer {fiatAmount} {fiatCurrency} to the following wallet address to complete your investment.',
+        buyCryptoDepositThankMsg:
+          'Please transfer {fiatAmount} {fiatCurrency} to the following wallet address to complete your deposit.',
         importantMsg:
           'Do include your reference number {referenceNumber} in the transfer description.',
         important: 'IMPORTANT',
@@ -2981,8 +2985,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       // emailAddr: 'Recipient’s email',
       // walletAddr: 'Ethereum/EOS wallet address',
       phToAddress: 'Recipient’s email or Ethereum wallet address',
-      confirmMsg:
-        'Are you sure you want to transfer {amount} {name} to {address}?', //kt
+      confirmMsg: `
+      <p>You’re about to convert {constAmount} CONST (USD) to {amount} {name} and then withdraw it to wallet address {address}.</p>
+      <p>Do you want to proceed?</p>
+      `,
       batchConfirmMsg: 'Are you sure you want to transfer to multiple people from the uploaded file?',
       transferFailed: 'Failed while transfering, please try again',
       transferSuccessful: 'Your transfer was completed successfully',
@@ -8014,5 +8020,36 @@ While Constant processes your deposits and withdrawals free of charge, transacti
   blog: {
     title: 'The Ledger',
     subTitle: 'News, advice, and opinion from the Constant team (and guests).',
+  },
+  history: {
+    deposit: {
+      title: 'Deposit History',
+      exportExel: 'Export to excel',
+      tabs: {
+        fiat: 'Fiat',
+        collateral: 'Collateral',
+        openOrders: 'Open Orders'
+      },
+      headers: {
+        currencyAmount: 'Currency Amount',
+        amount: 'USD Amount',
+        cryptoAddress: 'Crypto Address',
+        time: 'Time',
+        day: 'Day',
+        status: 'Status',
+      },
+      status: {
+        pending: 'Order in progress',
+        picked: 'Please make a transfer to complete your deposit',
+        transferred_fiat: 'Your account will be credited once we have received your transfer.',
+        transferred_fiat_invest: 'Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.',
+        transferred: 'Successful',
+        transferring_fiat: 'Transferring Fiat',
+        cancelled: 'Cancelled',
+        system_cancelled: 'Order timed out',
+        system_rejected: 'Order timed out',
+        approving: 'Waiting for admin approve',
+      }
+    }
   }
 };

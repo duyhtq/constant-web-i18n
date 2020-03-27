@@ -1722,11 +1722,16 @@
 %%%.landingPage.contactUS.requiredDescription%%%,"Your message is required"
 %%%.landingPage.contactUS.contactButton%%%,"Submit"
 %%%.landingPage.contactUS.message%%%,"Thank you! Your message has been sent. You should receive a response from one of our representatives within 12-24 hours."
-%%%.landingPage.title%%%,"
-    <p class=""header"">Earn 7% APR now.</p>
-    <p>Diversify into fully-secured P2P loans. All lending is 150% backed by digital assets. No fees. No dips.</p>
-    <p>Start investing from just $50.</p>
-    "
+%%%.landingPage.diversify.title%%%,"
+        <p class=""header"">Earn 7% APR now.</p>
+        <p>Diversify into fully-secured P2P loans. All lending is 150% backed by digital assets. No fees. No dips.</p>
+        <p>Start investing from just $50.</p>
+      "
+%%%.landingPage.secureReturns.title%%%,"
+        <p class=""header"">Earn 7% APR now.</p>
+        <p>When markets dive, secure your returns with P2P lending. All loans are 150% backed by digital assets. No fees. No dips.</p>
+        <p>Start investing from just $50.</p>
+      "
 %%%.landingPage.howItWorks.title%%%,"How It Works"
 %%%.landingPage.howItWorks.data.0.title%%%,"Step 1"
 %%%.landingPage.howItWorks.data.0.desc%%%,"
@@ -3952,6 +3957,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home1.lendingSection.confirm.referNoteDesc%%%,"To streamline the deposit process, please include this reference number when making the bank transfer."
 %%%.home1.lendingSection.confirm.googleNoteDesc%%%,"To streamline the deposit process, please include this reference number when sending your money using Google Pay."
 %%%.home1.lendingSection.confirm.venmoNoteDesc%%%,"To streamline the deposit process, please include this reference number when sending your money using Venmo."
+%%%.home1.lendingSection.confirm.paypalNoteDesc%%%,"To streamline the deposit process, please include this reference number when sending your money using PayPal."
 %%%.home1.lendingSection.confirm.zelleNote%%%,"Before making a transfer, please enter the full name associated with the Zelle account here"
 %%%.home1.lendingSection.confirm.zellePlaceholder%%%,"Please enter the full name here"
 %%%.home1.lendingSection.confirm.zelleSubmit%%%,"Submit"
@@ -3973,9 +3979,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           <p>Google Pay is a fast, safe payment tool linked to your Google account. To get started, log into Google Pay and link a payment method (such as a bank card). Then enter the details on the right in your Google Pay account and click send.</p>
         "
 %%%.home1.lendingSection.confirm.venmoDesc%%%,"
-          <p>Venmo is a fast, easy, and convenient payment app from the makers of PayPal. </p>
-          <p>To use Venmo, simply download the app and send your money to us using the details on the right-hand side of the page.</p>
+          <p>Venmo is a fast, easy, and convenient payment app from the makers of PayPal </p>
+          <p>To use Venmo, simply download the app and send your money to us using the details on the right-hand side of this page.</p>
         "
+%%%.home1.lendingSection.confirm.paypalDesc%%%,"PayPal is one of the world’s most trusted and secure payment services. To get started, create a free PayPal account and link a card or bank account. Then enter the details on the right from your PayPal account and click send."
 %%%.home1.lendingSection.confirm.zelle1%%%,"
           <p>Amount: {amount} USD</p>
           <p>Send to: <strong>finance@myconstant.com</strong></p>
@@ -4002,7 +4009,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         <p>Amount: {amount} USD</p>
         <p>Send to: <strong>909-288-9105</strong></p>
         "
-%%%.home1.lendingSection.confirm.venmoNote%%%,"Before making a transfer, please enter the phone number associated with the Venmo account here"
+%%%.home1.lendingSection.confirm.venmoNote%%%,"Before making a transfer, please enter the phone number associated with your Venmo account below:"
 %%%.home1.lendingSection.confirm.venmoPlaceholder%%%,"Please enter the phone number here"
 %%%.home1.lendingSection.confirm.venmoSubmit%%%,"Submit"
 %%%.home1.lendingSection.confirm.paypal%%%,"
@@ -4011,7 +4018,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           <p>Full name: <strong>Const LLC</strong></p>
           <p>Type: <strong>Personal Account</strong></p>
         "
-%%%.home1.lendingSection.confirm.paypalNote%%%,"Before making a transfer, please enter the email associated with the Paypal account here"
+%%%.home1.lendingSection.confirm.paypalNote%%%,"Before making a transfer, please enter the email associated with your PayPal account below:"
 %%%.home1.lendingSection.confirm.paypalPlaceholder%%%,"Please enter the email here"
 %%%.home1.lendingSection.confirm.paypalSubmit%%%,"Submit"
 %%%.home1.lendingSection.confirm.bankChosenMessage1%%%,"
@@ -4129,12 +4136,12 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         <ol>
           <li>
             <p>You can store your funds in Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>
-            <p><a href=""/blog/meet-scott-purcell-%E2%80%94-ceo-of-prime-trust"" className=""underline"" target=""_blank"">Learn more about Prime Trust.</a></p>
+            <p><a href=""/blog/prime-trust-asset-protection"" className=""underline"" target=""_blank"">Learn more about Prime Trust.</a></p>
             <p>OR</p>
           </li>
           <li>
             <p>Earn 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>
-            <p><a href=""/blog/compound-finance-discover-the-interest-earning-tech-behind-flex"" className=""underline"" target=""_blank"">Learn more about Flex.</a></p>
+            <p><a href=""/blog/flex-apy-account-compound-finance"" className=""underline"" target=""_blank"">Learn more about Flex.</a></p>
           </li>
         </ol>
         <p>If you’re waiting for a match, your money will automatically remain in the custody of Prime Trust.</p>
@@ -5025,65 +5032,65 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.whyPeopleLoveUs.customers.trustPilot.viewAll%%%,"View us on TrustPilot"
 %%%.whyPeopleLoveUs.customers.trustPilot.readMore%%%,"Read more"
 %%%.whyPeopleLoveUs.customers.trustPilot.comments.0.star%%%,"5"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.0.title%%%,"I'm in the same boat as the rest of the…"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.0.desc%%%,"I'm in the same boat as the rest of the folks here. Lot's of potential for this platform. With the crypto crash yesterday, I was please to see several of my loans liquidate at 110% protecting my principal. Yes, I didn't make the target return but that was due to the 50% drop in bitcoin and liquidation of my investment. Their system worked. It took a few days to process. They have some bugs here and there to fix. My only compliant is that their finance team is in Vietnam so any questions you have or updates to your account cannot get processed until the evening when their team starts their day in Vietnam. I've had some glitches with deposits but overall I can live with a 1-2 day delay. The returns are awesome and they protected my capital."
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.0.date%%%,"Mar 14, 2020"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.0.auth%%%,"J. S."
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.0.link%%%,"https://www.trustpilot.com/reviews/5e6ce5b23c93ae091807d0d6"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.0.title%%%,"Great vehicle for tech savvy investor"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.0.desc%%%,"Constant is a great vehicle for the tech savvy investor. I love the way they have structured their investments as well as how open they are for guidance and support. Great community!"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.0.date%%%,"Mar 26, 2020"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.0.auth%%%,"gauchomatt"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.0.link%%%,"https://www.trustpilot.com/reviews/5e7c3a623c93ae09646b261a"
 %%%.whyPeopleLoveUs.customers.trustPilot.comments.1.star%%%,"4"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.1.title%%%,"The app needs to be improved"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.1.desc%%%,"I wish I could give 5 stars. The mobile app is not great as expected. The UI is not user friendly. I get logged out automatically and have to enter username and password most of time. I am hoping for the better mobile app where I should be able to login with Face ID. And Pro section doesn’t all the list of Investing and Borrowing orders."
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.1.date%%%,"Mar 14, 2020"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.1.auth%%%,"Pradip"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.1.link%%%,"https://www.trustpilot.com/reviews/5e6c4af83c93ae09180797ac"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.2.star%%%,"4"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.2.title%%%,"Good p2p lending"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.2.desc%%%,"I've had good experiences with Myconsant. The 8% interest is good. The customer service chat is good. Using Zelle to make deposits if fantastically fast. Can't make deposits using ACH."
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.2.date%%%,"Mar 14, 2020"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.2.auth%%%,"Bruce Nguyen"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.2.link%%%,"https://www.trustpilot.com/reviews/5e6c31f73c93ae096463bb61"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.3.star%%%,"4"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.3.title%%%,"Good site with lots of potential"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.3.desc%%%,"At first, my deposit was not placed in my account. I reached out to support and they quickly corrected the issue. Since then, I have used it to invest, and to stake crypto and everything has worked well. I'm impressed, and looking forward to continual development. They can and do change some terms quite frequently, and I think the UI could be slightly improved in some regards, but overall it has been a good experience and I will continue to invest with them."
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.3.date%%%,"Mar 14, 2020"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.3.auth%%%,"Matt Edwards"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.3.link%%%,"https://www.trustpilot.com/reviews/5e6bbdfb3c93ae0918075e93"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.1.title%%%,"No complaints yet. Would recommend using"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.1.desc%%%,"No complaints yet. So far I've only had one issue with Constant, and Covid-19 is probably to blame. I was trying to withdraw my money and it didn't go through, so I had to submit it again."
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.1.date%%%,"Mar 26, 2020"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.1.auth%%%,"Harry"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.1.link%%%,"https://www.trustpilot.com/reviews/5e7ba64d3c93ae09180ed244"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.2.star%%%,"5"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.2.title%%%,"Great platform !"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.2.desc%%%,"This has been a great platform for investing. Even during the recent market crash no one lost their principal or interest. I would continue investing provided they add more ways to withdraw money and investors be able to see the collateral used to secure the investments. Also I like to see the app updated with face id to avoid entering the passwords every time."
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.2.date%%%,"Mar 25, 2020"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.2.auth%%%,"CN_AMN"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.2.link%%%,"https://www.trustpilot.com/reviews/5e7b8eb73c93ae09180ec0cd"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.3.star%%%,"5"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.3.title%%%,"So far it is great!"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.3.desc%%%,"So far it is great!"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.3.date%%%,"Mar 26, 2020"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.3.auth%%%,"Preowned Flat"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.3.link%%%,"https://www.trustpilot.com/reviews/5e7a5f3e3c93ae09180e2746"
 %%%.whyPeopleLoveUs.customers.trustPilot.comments.4.star%%%,"5"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.4.title%%%,"good bank"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.4.desc%%%,"good bank need to to make stakig easy but other then that"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.4.date%%%,"Mar 14, 2020"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.4.auth%%%,"Chris Walden Wince Tofoya"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.4.link%%%,"https://www.trustpilot.com/reviews/5e6bbd473c93ae0918075e0f"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.4.title%%%,"Very good experience."
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.4.desc%%%,"Very good experience."
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.4.date%%%,"Mar 24, 2020"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.4.auth%%%,"Albert Bloomfield"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.4.link%%%,"https://www.trustpilot.com/reviews/5e7a15e53c93ae09180deac6"
 %%%.whyPeopleLoveUs.customers.trustPilot.comments.5.star%%%,"5"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.5.title%%%,"It's real, I'm a believer now!"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.5.desc%%%,"Update 3/13/2020: Alright, so COVID-19 (corona virus) is a thing now, oil prices crashed, the market's depressed, and people are being forced to stay home in quarantines. Also, Bitcoin crashed by 50%! So you can imagine my surprise when I logged on to MyConstant today and"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.5.date%%%,"Mar 14, 2020"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.5.auth%%%,"Paul Boneef"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.5.link%%%,"https://www.trustpilot.com/reviews/5e6bb4a83c93ae0918075790"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.5.title%%%,"Overall the experience was good"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.5.desc%%%,"Overall the experience was good. Constant is trustworthy. Most of the time, I have used it without a problem. However, if you want to withdraw a large amount of money, the process is manual as the team has to approve the transaction for the security purpose. So I think it is not very suitable in a time sensitive case."
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.5.date%%%,"Mar 24, 2020"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.5.auth%%%,"Kit Gazinpoj Techahuasingh"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.5.link%%%,"https://www.trustpilot.com/reviews/5e79b5643c93ae096469c3c3"
 %%%.whyPeopleLoveUs.customers.trustPilot.comments.6.star%%%,"5"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.6.title%%%,"Best P2P lending platform out there.."
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.6.desc%%%,"Best P2P lending platform out there... loving the experience thus far. Good luck finding another one with as much liquidity options as well as collateral backing to protect lenders."
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.6.date%%%,"Mar 14, 2020"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.6.auth%%%,"Guillermo Miguel Bellver"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.6.link%%%,"https://www.trustpilot.com/reviews/5e6bb3d83c93ae0964637e18"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.6.title%%%,"Happily yielding 8,5% p.a.!"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.6.desc%%%,"I have been using MyConstant since September 2019, and have averagely yielded 8,5% since then. In times of super low-interest rates in the legacy financial world, how awesome is that? Thanks to the team for putting together such intuitive and easy to use product!"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.6.date%%%,"Mar 23, 2020"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.6.auth%%%,"Lorenz W."
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.6.link%%%,"https://www.trustpilot.com/reviews/5e795fb33c93ae096469b589"
 %%%.whyPeopleLoveUs.customers.trustPilot.comments.7.star%%%,"5"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.7.title%%%,"I have been using Constant from the…"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.7.desc%%%,"I have been using Constant from the initial phrase it started it's operation. I was really excited when the introduced the ""pro"" option which let's you see at what rate the investments are being matched and the pending investment as well as the pending loan request. I usually get my investment matched pretty quick as I do it in market rate. So far, I have had no problem with the website. It's secured and uses Google authentication to make it more secured."
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.7.date%%%,"Mar 13, 2020"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.7.auth%%%,"Priyash Kafle"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.7.link%%%,"https://www.trustpilot.com/reviews/5e6b786e3c93ae09646352de"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.star%%%,"5"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.title%%%,"so far so good!"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.desc%%%,"so far so good, love the 8% lending rate, thanks MyConstant!"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.date%%%,"Mar 13, 2020"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.auth%%%,"Amy Matteson"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.link%%%,"https://www.trustpilot.com/reviews/5e6b20c23c93ae091806f906"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.7.title%%%,"Loving this so far"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.7.desc%%%,"Loving this so far. A little unsure of how it all works. Would like a better UI on interest earned. Been on here for about 5 months. Just need a little more explanation on how they calculated roi."
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.7.date%%%,"Mar 23, 2020"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.7.auth%%%,"Joshua Scelsi"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.7.link%%%,"https://www.trustpilot.com/reviews/5e790a863c93ae09180d6db2"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.star%%%,"4"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.title%%%,"Easy to use, great interest, slightly slow support"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.desc%%%,"I have found Constant to be easy to use and that the platform does exactly what it says it does. They have made earning interest, lending money, and securing your principal very easy and straightforward. The Pro interface is especially helpful for making decisions, but you don't have to use it at all if you don't want."
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.date%%%,"Mar 22, 2020"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.auth%%%,"Alan Filer"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.link%%%,"https://www.trustpilot.com/reviews/5e776f043c93ae096468bb15"
 %%%.whyPeopleLoveUs.customers.trustPilot.comments.9.star%%%,"5"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.title%%%,"Excellent alternative investment platform"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.desc%%%,"Started with my first investment since beginning of the year. So far I've already had several completed investments and many more active ones ranging from 7.5% - 8.0% APY. Simple to use and reliable service."
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.date%%%,"Mar 13, 2020"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.auth%%%,"DLNYC"
-%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.link%%%,"https://www.trustpilot.com/reviews/5e6b13ee3c93ae0964631e83"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.title%%%,"Very Impressed and Recommended service!"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.desc%%%,"I have been very impressed by MyConstant. I researched this service and product for a considerable amount of time, read various reviews, interacted with MyConstant's service team - it all checks out. I recommend you try this product and see for yourself. I recommend it."
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.date%%%,"Mar 20, 2020"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.auth%%%,"A.N"
+%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.link%%%,"https://www.trustpilot.com/reviews/5e74f1ed3c93ae09180bafa2"
 %%%.whyPeopleLoveUs.customers.socialMedia.title%%%,"SOCIAL MEDIA"
 %%%.whyPeopleLoveUs.customers.socialMedia.desc%%%,"Find out what <strong>1,000s of followers</strong> have to say about their Constant experience. Want to join the conversation? Click an icon below to get started."
 %%%.whyPeopleLoveUs.customers.socialMedia.comments.viewMore%%%,"View more on"
@@ -5914,12 +5921,15 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.history.deposit.tabs.fiat%%%,"Fiat"
 %%%.history.deposit.tabs.collateral%%%,"Collateral"
 %%%.history.deposit.tabs.openOrders%%%,"Open Orders"
+%%%.history.deposit.headers.orderNo%%%,"#"
 %%%.history.deposit.headers.currencyAmount%%%,"Currency Amount"
 %%%.history.deposit.headers.amount%%%,"USD Amount"
+%%%.history.deposit.headers.refNo%%%,"Ref number"
 %%%.history.deposit.headers.cryptoAddress%%%,"Crypto Address"
 %%%.history.deposit.headers.time%%%,"Time"
 %%%.history.deposit.headers.day%%%,"Day"
 %%%.history.deposit.headers.status%%%,"Status"
+%%%.history.deposit.headers.action%%%," "
 %%%.history.deposit.status.pending%%%,"Order in progress"
 %%%.history.deposit.status.picked%%%,"Please make a transfer to complete your deposit"
 %%%.history.deposit.status.transferred_fiat%%%,"Your account will be credited once we have received your transfer."

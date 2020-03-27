@@ -1892,7 +1892,12 @@
             "contactButton": "%%%.landingPage.contactUS.contactButton%%%",
             "message": "%%%.landingPage.contactUS.message%%%"
         },
-        "title": "%%%.landingPage.title%%%",
+        "diversify": {
+            "title": "%%%.landingPage.diversify.title%%%"
+        },
+        "secureReturns": {
+            "title": "%%%.landingPage.secureReturns.title%%%"
+        },
         "howItWorks": {
             "title": "%%%.landingPage.howItWorks.title%%%",
             "data": {
@@ -4106,6 +4111,7 @@
                 "referNoteDesc": "%%%.home1.lendingSection.confirm.referNoteDesc%%%",
                 "googleNoteDesc": "%%%.home1.lendingSection.confirm.googleNoteDesc%%%",
                 "venmoNoteDesc": "%%%.home1.lendingSection.confirm.venmoNoteDesc%%%",
+                "paypalNoteDesc": "%%%.home1.lendingSection.confirm.paypalNoteDesc%%%",
                 "zelleNote": "%%%.home1.lendingSection.confirm.zelleNote%%%",
                 "zellePlaceholder": "%%%.home1.lendingSection.confirm.zellePlaceholder%%%",
                 "zelleSubmit": "%%%.home1.lendingSection.confirm.zelleSubmit%%%",
@@ -4120,6 +4126,7 @@
                 "zelleDesc": "%%%.home1.lendingSection.confirm.zelleDesc%%%",
                 "googleDesc": "%%%.home1.lendingSection.confirm.googleDesc%%%",
                 "venmoDesc": "%%%.home1.lendingSection.confirm.venmoDesc%%%",
+                "paypalDesc": "%%%.home1.lendingSection.confirm.paypalDesc%%%",
                 "zelle1": "%%%.home1.lendingSection.confirm.zelle1%%%",
                 "zelle": "%%%.home1.lendingSection.confirm.zelle%%%",
                 "google": "%%%.home1.lendingSection.confirm.google%%%",
@@ -6277,12 +6284,15 @@
                 "openOrders": "%%%.history.deposit.tabs.openOrders%%%"
             },
             "headers": {
+                "orderNo": "%%%.history.deposit.headers.orderNo%%%",
                 "currencyAmount": "%%%.history.deposit.headers.currencyAmount%%%",
                 "amount": "%%%.history.deposit.headers.amount%%%",
+                "refNo": "%%%.history.deposit.headers.refNo%%%",
                 "cryptoAddress": "%%%.history.deposit.headers.cryptoAddress%%%",
                 "time": "%%%.history.deposit.headers.time%%%",
                 "day": "%%%.history.deposit.headers.day%%%",
-                "status": "%%%.history.deposit.headers.status%%%"
+                "status": "%%%.history.deposit.headers.status%%%",
+                "action": "%%%.history.deposit.headers.action%%%"
             },
             "status": {
                 "pending": "%%%.history.deposit.status.pending%%%",

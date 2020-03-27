@@ -1892,7 +1892,12 @@
             "contactButton": "Submit",
             "message": "Thank you! Your message has been sent. You should receive a response from one of our representatives within 12-24 hours."
         },
-        "title": "\n    <p class=\"header\">Earn 7% APR now.</p>\n    <p>Diversify into fully-secured P2P loans. All lending is 150% backed by digital assets. No fees. No dips.</p>\n    <p>Start investing from just $50.</p>\n    ",
+        "diversify": {
+            "title": "\n        <p class=\"header\">Earn 7% APR now.</p>\n        <p>Diversify into fully-secured P2P loans. All lending is 150% backed by digital assets. No fees. No dips.</p>\n        <p>Start investing from just $50.</p>\n      "
+        },
+        "secureReturns": {
+            "title": "\n        <p class=\"header\">Earn 7% APR now.</p>\n        <p>When markets dive, secure your returns with P2P lending. All loans are 150% backed by digital assets. No fees. No dips.</p>\n        <p>Start investing from just $50.</p>\n      "
+        },
         "howItWorks": {
             "title": "How It Works",
             "data": {
@@ -4106,6 +4111,7 @@
                 "referNoteDesc": "To streamline the deposit process, please include this reference number when making the bank transfer.",
                 "googleNoteDesc": "To streamline the deposit process, please include this reference number when sending your money using Google Pay.",
                 "venmoNoteDesc": "To streamline the deposit process, please include this reference number when sending your money using Venmo.",
+                "paypalNoteDesc": "To streamline the deposit process, please include this reference number when sending your money using PayPal.",
                 "zelleNote": "Before making a transfer, please enter the full name associated with the Zelle account here",
                 "zellePlaceholder": "Please enter the full name here",
                 "zelleSubmit": "Submit",
@@ -4119,7 +4125,8 @@
                 "zelleTitle": "\n            <p className=bold\">The fastest way to transfer</p>",
                 "zelleDesc": "<p>Zelle is the fastest way to send money to us. All you need is a US bank account and an email address or phone number.</p> \n<p>You can find Zelle in your mobile banking app, but if your bank doesn’t offer Zelle yet, you can use the Zelle app. </p>",
                 "googleDesc": "\n          <p>Google Pay is a fast, safe payment tool linked to your Google account. To get started, log into Google Pay and link a payment method (such as a bank card). Then enter the details on the right in your Google Pay account and click send.</p>\n        ",
-                "venmoDesc": "\n          <p>Venmo is a fast, easy, and convenient payment app from the makers of PayPal. </p>\n          <p>To use Venmo, simply download the app and send your money to us using the details on the right-hand side of the page.</p>\n        ",
+                "venmoDesc": "\n          <p>Venmo is a fast, easy, and convenient payment app from the makers of PayPal </p>\n          <p>To use Venmo, simply download the app and send your money to us using the details on the right-hand side of this page.</p>\n        ",
+                "paypalDesc": "PayPal is one of the world’s most trusted and secure payment services. To get started, create a free PayPal account and link a card or bank account. Then enter the details on the right from your PayPal account and click send.",
                 "zelle1": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <p>Full name: <strong>Const LLC</strong></p>\n          <p>Type: <strong>Personal Account</strong></p>\n        ",
                 "zelle": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <p>Full name: <strong>Const LLC</strong></p>\n          <p>Type: <strong>Personal Account</strong></p>\n          <br /><br />\n          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>\n          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n        ",
                 "google": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>accounting@constant.money</strong></p>\n        ",
@@ -4127,11 +4134,11 @@
                 "googlePlaceholder": "Please enter the email here",
                 "googleSubmit": "Submit",
                 "venmo": "\n        <p>Amount: {amount} USD</p>\n        <p>Send to: <strong>909-288-9105</strong></p>\n        ",
-                "venmoNote": "Before making a transfer, please enter the phone number associated with the Venmo account here",
+                "venmoNote": "Before making a transfer, please enter the phone number associated with your Venmo account below:",
                 "venmoPlaceholder": "Please enter the phone number here",
                 "venmoSubmit": "Submit",
                 "paypal": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <p>Full name: <strong>Const LLC</strong></p>\n          <p>Type: <strong>Personal Account</strong></p>\n        ",
-                "paypalNote": "Before making a transfer, please enter the email associated with the Paypal account here",
+                "paypalNote": "Before making a transfer, please enter the email associated with your PayPal account below:",
                 "paypalPlaceholder": "Please enter the email here",
                 "paypalSubmit": "Submit",
                 "bankChosenMessage1": "<p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to. </p>\n<p>If you don’t bank with any of those listed, no problem. You can transfer from any bank account, but please note that your bank might charge you a fee.</p>\n",
@@ -4198,7 +4205,7 @@
             "question4": "How do you protect my investment?",
             "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too:</p>\n        <ol>\n          <li>All of our borrowers must put up 150% of the loan amount as crypto collateral. If they don’t repay, we sell the collateral to repay you.</li>\n          <li>We also include a liquidation threshold to insure against a fall in the collateral’s value. If the value falls to 110% of your principal and earned interest, it’s sold to repay you.</li>\n          <li>We only accept vetted, quality cryptocurrencies and cap our exposure to these markets by daily trading volume. This ensures we can sell the collateral should the market dip.</li>\n        </ol>\n        <p>These protective measures help ensure you get the returns promised. However, all investment involves risk, and despite our best efforts, we can’t guarantee the return of your principal and profit. Therefore please invest wisely.</p>\n        <p><a href=\"/blog/how-we-protect-your-money-and-collateral\" className=\"underline\" target=\"_blank\">Read more about how we protect you.</a></p>\n      ",
             "question5": "What happens when my money isn’t on loan?",
-            "answer5": "\n        <p>You choose what we do with your money when it’s not on loan or waiting to be matched:</p>\n        <ol>\n          <li>\n            <p>You can store your funds in Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>\n            <p><a href=\"/blog/meet-scott-purcell-%E2%80%94-ceo-of-prime-trust\" className=\"underline\" target=\"_blank\">Learn more about Prime Trust.</a></p>\n            <p>OR</p>\n          </li>\n          <li>\n            <p>Earn 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>\n            <p><a href=\"/blog/compound-finance-discover-the-interest-earning-tech-behind-flex\" className=\"underline\" target=\"_blank\">Learn more about Flex.</a></p>\n          </li>\n        </ol>\n        <p>If you’re waiting for a match, your money will automatically remain in the custody of Prime Trust.</p>\n      ",
+            "answer5": "\n        <p>You choose what we do with your money when it’s not on loan or waiting to be matched:</p>\n        <ol>\n          <li>\n            <p>You can store your funds in Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>\n            <p><a href=\"/blog/prime-trust-asset-protection\" className=\"underline\" target=\"_blank\">Learn more about Prime Trust.</a></p>\n            <p>OR</p>\n          </li>\n          <li>\n            <p>Earn 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>\n            <p><a href=\"/blog/flex-apy-account-compound-finance\" className=\"underline\" target=\"_blank\">Learn more about Flex.</a></p>\n          </li>\n        </ol>\n        <p>If you’re waiting for a match, your money will automatically remain in the custody of Prime Trust.</p>\n      ",
             "question6": "What happens if a borrower repays early?",
             "answer6": "\n        <p>If a borrower repays before 75% of the loan term is complete, they’ll pay you earned interest to date plus 50% of the interest due on the remainder of the term.</p>\n        <p>If a borrower repays after 75% of the loan term is complete, they’ll pay you 100% of the interest due on the loan.</p>\n      ",
             "question7": "What happens if you have to sell borrower collateral to repay me?",
@@ -4646,7 +4653,7 @@
             "question2": "Why 4% APY?",
             "answer2": "Compound Finance uses a blockchain protocol that intelligently manages the lending pool. It also sets interest rates according to supply and demand. At the moment, the rate is fixed at 4% APY. In the future, it could be higher or lower depending on activity in Compound’s lending market.",
             "question3": "What is Compound Finance?",
-            "answer3": "<p>Compound Finance is a technology that intelligently manages a lending pool of over $150 million in assets (as of September 2019). Flex interfaces with this technology through an API that allows you to withdraw your deposits and earned interest at any time.</p>\n\n<p>Compound Finance lends in a similar way to banks: your deposits go in and are lent to borrowers in exchange for interest and collateral. But since Compound Finance is a technology, there is no need for branches or staff, so you enjoy a much better interest rate!</p>\n\n<p><a href=\"/blog/compound-finance-discover-the-interest-earning-tech-behind-flex\">Learn more about Compound Finance.</a></p>",
+            "answer3": "<p>Compound Finance is a technology that intelligently manages a lending pool of over $150 million in assets (as of September 2019). Flex interfaces with this technology through an API that allows you to withdraw your deposits and earned interest at any time.</p>\n\n<p>Compound Finance lends in a similar way to banks: your deposits go in and are lent to borrowers in exchange for interest and collateral. But since Compound Finance is a technology, there is no need for branches or staff, so you enjoy a much better interest rate!</p>\n\n<p><a href=\"/blog/flex-apy-account-compound-finance\">Learn more about Compound Finance.</a></p>",
             "question4": "Do you have a referral program for Flex?",
             "answer4": "Yes, we do. For every friend you refer to Flex, you’ll get 10% of their interest earnings for the first year (up to a maximum of $1,000,000). For more details, <a href=\"/referral\">visit your Referrals page.</a>",
             "question5": "Can I withdraw anytime?",
@@ -5229,83 +5236,83 @@
                 "comments": {
                     "0": {
                         "star": "5",
-                        "title": "I'm in the same boat as the rest of the…",
-                        "desc": "I'm in the same boat as the rest of the folks here. Lot's of potential for this platform. With the crypto crash yesterday, I was please to see several of my loans liquidate at 110% protecting my principal. Yes, I didn't make the target return but that was due to the 50% drop in bitcoin and liquidation of my investment. Their system worked. It took a few days to process. They have some bugs here and there to fix. My only compliant is that their finance team is in Vietnam so any questions you have or updates to your account cannot get processed until the evening when their team starts their day in Vietnam. I've had some glitches with deposits but overall I can live with a 1-2 day delay. The returns are awesome and they protected my capital.",
-                        "date": "Mar 14, 2020",
-                        "auth": "J. S.",
-                        "link": "https://www.trustpilot.com/reviews/5e6ce5b23c93ae091807d0d6"
+                        "title": "Great vehicle for tech savvy investor",
+                        "desc": "Constant is a great vehicle for the tech savvy investor. I love the way they have structured their investments as well as how open they are for guidance and support. Great community!",
+                        "date": "Mar 26, 2020",
+                        "auth": "gauchomatt",
+                        "link": "https://www.trustpilot.com/reviews/5e7c3a623c93ae09646b261a"
                     },
                     "1": {
                         "star": "4",
-                        "title": "The app needs to be improved",
-                        "desc": "I wish I could give 5 stars. The mobile app is not great as expected. The UI is not user friendly. I get logged out automatically and have to enter username and password most of time. I am hoping for the better mobile app where I should be able to login with Face ID. And Pro section doesn’t all the list of Investing and Borrowing orders.",
-                        "date": "Mar 14, 2020",
-                        "auth": "Pradip",
-                        "link": "https://www.trustpilot.com/reviews/5e6c4af83c93ae09180797ac"
+                        "title": "No complaints yet. Would recommend using",
+                        "desc": "No complaints yet. So far I've only had one issue with Constant, and Covid-19 is probably to blame. I was trying to withdraw my money and it didn't go through, so I had to submit it again.",
+                        "date": "Mar 26, 2020",
+                        "auth": "Harry",
+                        "link": "https://www.trustpilot.com/reviews/5e7ba64d3c93ae09180ed244"
                     },
                     "2": {
-                        "star": "4",
-                        "title": "Good p2p lending",
-                        "desc": "I've had good experiences with Myconsant. The 8% interest is good. The customer service chat is good. Using Zelle to make deposits if fantastically fast. Can't make deposits using ACH.",
-                        "date": "Mar 14, 2020",
-                        "auth": "Bruce Nguyen",
-                        "link": "https://www.trustpilot.com/reviews/5e6c31f73c93ae096463bb61"
+                        "star": "5",
+                        "title": "Great platform !",
+                        "desc": "This has been a great platform for investing. Even during the recent market crash no one lost their principal or interest. I would continue investing provided they add more ways to withdraw money and investors be able to see the collateral used to secure the investments. Also I like to see the app updated with face id to avoid entering the passwords every time.",
+                        "date": "Mar 25, 2020",
+                        "auth": "CN_AMN",
+                        "link": "https://www.trustpilot.com/reviews/5e7b8eb73c93ae09180ec0cd"
                     },
                     "3": {
-                        "star": "4",
-                        "title": "Good site with lots of potential",
-                        "desc": "At first, my deposit was not placed in my account. I reached out to support and they quickly corrected the issue. Since then, I have used it to invest, and to stake crypto and everything has worked well. I'm impressed, and looking forward to continual development. They can and do change some terms quite frequently, and I think the UI could be slightly improved in some regards, but overall it has been a good experience and I will continue to invest with them.",
-                        "date": "Mar 14, 2020",
-                        "auth": "Matt Edwards",
-                        "link": "https://www.trustpilot.com/reviews/5e6bbdfb3c93ae0918075e93"
+                        "star": "5",
+                        "title": "So far it is great!",
+                        "desc": "So far it is great!",
+                        "date": "Mar 26, 2020",
+                        "auth": "Preowned Flat",
+                        "link": "https://www.trustpilot.com/reviews/5e7a5f3e3c93ae09180e2746"
                     },
                     "4": {
                         "star": "5",
-                        "title": "good bank",
-                        "desc": "good bank need to to make stakig easy but other then that",
-                        "date": "Mar 14, 2020",
-                        "auth": "Chris Walden Wince Tofoya",
-                        "link": "https://www.trustpilot.com/reviews/5e6bbd473c93ae0918075e0f"
+                        "title": "Very good experience.",
+                        "desc": "Very good experience.",
+                        "date": "Mar 24, 2020",
+                        "auth": "Albert Bloomfield",
+                        "link": "https://www.trustpilot.com/reviews/5e7a15e53c93ae09180deac6"
                     },
                     "5": {
                         "star": "5",
-                        "title": "It's real, I'm a believer now!",
-                        "desc": "Update 3/13/2020: Alright, so COVID-19 (corona virus) is a thing now, oil prices crashed, the market's depressed, and people are being forced to stay home in quarantines. Also, Bitcoin crashed by 50%! So you can imagine my surprise when I logged on to MyConstant today and",
-                        "date": "Mar 14, 2020",
-                        "auth": "Paul Boneef",
-                        "link": "https://www.trustpilot.com/reviews/5e6bb4a83c93ae0918075790"
+                        "title": "Overall the experience was good",
+                        "desc": "Overall the experience was good. Constant is trustworthy. Most of the time, I have used it without a problem. However, if you want to withdraw a large amount of money, the process is manual as the team has to approve the transaction for the security purpose. So I think it is not very suitable in a time sensitive case.",
+                        "date": "Mar 24, 2020",
+                        "auth": "Kit Gazinpoj Techahuasingh",
+                        "link": "https://www.trustpilot.com/reviews/5e79b5643c93ae096469c3c3"
                     },
                     "6": {
                         "star": "5",
-                        "title": "Best P2P lending platform out there..",
-                        "desc": "Best P2P lending platform out there... loving the experience thus far. Good luck finding another one with as much liquidity options as well as collateral backing to protect lenders.",
-                        "date": "Mar 14, 2020",
-                        "auth": "Guillermo Miguel Bellver",
-                        "link": "https://www.trustpilot.com/reviews/5e6bb3d83c93ae0964637e18"
+                        "title": "Happily yielding 8,5% p.a.!",
+                        "desc": "I have been using MyConstant since September 2019, and have averagely yielded 8,5% since then. In times of super low-interest rates in the legacy financial world, how awesome is that? Thanks to the team for putting together such intuitive and easy to use product!",
+                        "date": "Mar 23, 2020",
+                        "auth": "Lorenz W.",
+                        "link": "https://www.trustpilot.com/reviews/5e795fb33c93ae096469b589"
                     },
                     "7": {
                         "star": "5",
-                        "title": "I have been using Constant from the…",
-                        "desc": "I have been using Constant from the initial phrase it started it's operation. I was really excited when the introduced the \"pro\" option which let's you see at what rate the investments are being matched and the pending investment as well as the pending loan request. I usually get my investment matched pretty quick as I do it in market rate. So far, I have had no problem with the website. It's secured and uses Google authentication to make it more secured.",
-                        "date": "Mar 13, 2020",
-                        "auth": "Priyash Kafle",
-                        "link": "https://www.trustpilot.com/reviews/5e6b786e3c93ae09646352de"
+                        "title": "Loving this so far",
+                        "desc": "Loving this so far. A little unsure of how it all works. Would like a better UI on interest earned. Been on here for about 5 months. Just need a little more explanation on how they calculated roi.",
+                        "date": "Mar 23, 2020",
+                        "auth": "Joshua Scelsi",
+                        "link": "https://www.trustpilot.com/reviews/5e790a863c93ae09180d6db2"
                     },
                     "8": {
-                        "star": "5",
-                        "title": "so far so good!",
-                        "desc": "so far so good, love the 8% lending rate, thanks MyConstant!",
-                        "date": "Mar 13, 2020",
-                        "auth": "Amy Matteson",
-                        "link": "https://www.trustpilot.com/reviews/5e6b20c23c93ae091806f906"
+                        "star": "4",
+                        "title": "Easy to use, great interest, slightly slow support",
+                        "desc": "I have found Constant to be easy to use and that the platform does exactly what it says it does. They have made earning interest, lending money, and securing your principal very easy and straightforward. The Pro interface is especially helpful for making decisions, but you don't have to use it at all if you don't want.",
+                        "date": "Mar 22, 2020",
+                        "auth": "Alan Filer",
+                        "link": "https://www.trustpilot.com/reviews/5e776f043c93ae096468bb15"
                     },
                     "9": {
                         "star": "5",
-                        "title": "Excellent alternative investment platform",
-                        "desc": "Started with my first investment since beginning of the year. So far I've already had several completed investments and many more active ones ranging from 7.5% - 8.0% APY. Simple to use and reliable service.",
-                        "date": "Mar 13, 2020",
-                        "auth": "DLNYC",
-                        "link": "https://www.trustpilot.com/reviews/5e6b13ee3c93ae0964631e83"
+                        "title": "Very Impressed and Recommended service!",
+                        "desc": "I have been very impressed by MyConstant. I researched this service and product for a considerable amount of time, read various reviews, interacted with MyConstant's service team - it all checks out. I recommend you try this product and see for yourself. I recommend it.",
+                        "date": "Mar 20, 2020",
+                        "auth": "A.N",
+                        "link": "https://www.trustpilot.com/reviews/5e74f1ed3c93ae09180bafa2"
                     }
                 }
             },
@@ -6277,12 +6284,15 @@
                 "openOrders": "Open Orders"
             },
             "headers": {
+                "orderNo": "#",
                 "currencyAmount": "Currency Amount",
                 "amount": "USD Amount",
+                "refNo": "Ref number",
                 "cryptoAddress": "Crypto Address",
                 "time": "Time",
                 "day": "Day",
-                "status": "Status"
+                "status": "Status",
+                "action": " "
             },
             "status": {
                 "pending": "Order in progress",

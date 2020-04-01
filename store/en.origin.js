@@ -964,6 +964,7 @@
             "extID": "%%%.me.history.extID%%%",
             "exportToExcel": "%%%.me.history.exportToExcel%%%",
             "openOrders": "%%%.me.history.openOrders%%%",
+            "requestExecute": "%%%.me.history.requestExecute%%%",
             "agent": {
                 "acceptSuccessfully": "%%%.me.history.agent.acceptSuccessfully%%%",
                 "cancelSuccessfully": "%%%.me.history.agent.cancelSuccessfully%%%",
@@ -1055,7 +1056,9 @@
                 "acceptSuccess": "%%%.me.history.alert.acceptSuccess%%%",
                 "confirmFailed": "%%%.me.history.alert.confirmFailed%%%",
                 "cancelSuccess": "%%%.me.history.alert.cancelSuccess%%%",
-                "cancelFailed": "%%%.me.history.alert.cancelFailed%%%"
+                "cancelFailed": "%%%.me.history.alert.cancelFailed%%%",
+                "requestSuccess": "%%%.me.history.alert.requestSuccess%%%",
+                "requestFailed": "%%%.me.history.alert.requestFailed%%%"
             },
             "user": {
                 "account": "%%%.me.history.user.account%%%",
@@ -5609,6 +5612,11 @@
                 "title": "%%%.whyPeopleLoveUs.customers.testimonials.title%%%",
                 "desc": "%%%.whyPeopleLoveUs.customers.testimonials.desc%%%",
                 "youtubes": {
+                    "0": {
+                        "title": "%%%.whyPeopleLoveUs.customers.testimonials.youtubes.0.title%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.testimonials.youtubes.0.link%%%",
+                        "id": "%%%.whyPeopleLoveUs.customers.testimonials.youtubes.0.id%%%"
+                    },
                     "1": {
                         "title": "%%%.whyPeopleLoveUs.customers.testimonials.youtubes.1.title%%%",
                         "link": "%%%.whyPeopleLoveUs.customers.testimonials.youtubes.1.link%%%",
@@ -5618,6 +5626,11 @@
                         "title": "%%%.whyPeopleLoveUs.customers.testimonials.youtubes.2.title%%%",
                         "link": "%%%.whyPeopleLoveUs.customers.testimonials.youtubes.2.link%%%",
                         "id": "%%%.whyPeopleLoveUs.customers.testimonials.youtubes.2.id%%%"
+                    },
+                    "3": {
+                        "title": "%%%.whyPeopleLoveUs.customers.testimonials.youtubes.3.title%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.testimonials.youtubes.3.link%%%",
+                        "id": "%%%.whyPeopleLoveUs.customers.testimonials.youtubes.3.id%%%"
                     }
                 },
                 "articles": {
@@ -6275,9 +6288,15 @@
         "subTitle": "%%%.blog.subTitle%%%"
     },
     "history": {
+        "support": {
+            "messageConfirm": "%%%.history.support.messageConfirm%%%",
+            "confirm": "%%%.history.support.confirm%%%",
+            "cancel": "%%%.history.support.cancel%%%"
+        },
         "deposit": {
             "title": "%%%.history.deposit.title%%%",
             "exportExel": "%%%.history.deposit.exportExel%%%",
+            "noHistoryData": "%%%.history.deposit.noHistoryData%%%",
             "tabs": {
                 "fiat": "%%%.history.deposit.tabs.fiat%%%",
                 "collateral": "%%%.history.deposit.tabs.collateral%%%",

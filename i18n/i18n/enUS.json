@@ -964,6 +964,7 @@
             "extID": "External ID",
             "exportToExcel": "Export to excel",
             "openOrders": "Open orders",
+            "requestExecute": "Help",
             "agent": {
                 "acceptSuccessfully": "Your picked order have been accepted successfully",
                 "cancelSuccessfully": "Your picked order have been canceled successfully",
@@ -1055,7 +1056,9 @@
                 "acceptSuccess": "Successfully Accepted",
                 "confirmFailed": "Failed To Confirm",
                 "cancelSuccess": "Successfully Cancelled",
-                "cancelFailed": "Failed To Cancel"
+                "cancelFailed": "Failed To Cancel",
+                "requestSuccess": "Successfully Requested",
+                "requestFailed": "Failed To Request"
             },
             "user": {
                 "account": "User",
@@ -5609,15 +5612,25 @@
                 "title": "Testimonials",
                 "desc": "Get the inside scoop from customers eager to share their stories with you.",
                 "youtubes": {
-                    "1": {
+                    "0": {
                         "title": "Crypto: My Constant P2P lending Overview - Proof of Withdrawal",
                         "link": "https://www.youtube.com/watch?v=qT_uP9bcfl4",
                         "id": "qT_uP9bcfl4"
                     },
-                    "2": {
+                    "1": {
                         "title": "One Month review on shopify and Myconstant accounts",
                         "link": "https://www.youtube.com/watch?v=wlHdQ77QBDs",
                         "id": "wlHdQ77QBDs"
+                    },
+                    "2": {
+                        "title": "Try Peer2Peer Lending with Constant",
+                        "link": "https://www.youtube.com/watch?v=cbewsqUHZlo",
+                        "id": "cbewsqUHZlo"
+                    },
+                    "3": {
+                        "title": "How Constant helps Mike do more with his money",
+                        "link": "https://www.youtube.com/watch?v=qlYVUAllUX0",
+                        "id": "qlYVUAllUX0"
                     }
                 },
                 "articles": {
@@ -6275,9 +6288,15 @@
         "subTitle": "News, advice, and opinion from the Constant team (and guests)."
     },
     "history": {
+        "support": {
+            "messageConfirm": "How can we help you with this withdrawal?",
+            "confirm": "Send",
+            "cancel": "No"
+        },
         "deposit": {
             "title": "Deposit History",
             "exportExel": "Export to excel",
+            "noHistoryData": "Make a deposit to get started.",
             "tabs": {
                 "fiat": "Fiat",
                 "collateral": "Collateral",

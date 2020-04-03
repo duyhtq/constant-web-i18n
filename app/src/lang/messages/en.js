@@ -5922,7 +5922,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     `,
     withdrawCryptoNote: `
     <p class="title">* Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually.</p>
-    <p class="title">* Withdrawal fee for DAI is stil kept at 1.5% until further notice.</p>
+    <p class="title">* Withdrawal fee for DAI is still kept at 1.5% until further notice.</p>
     <p class="title">* Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>
     <div class="bold guarantee">Service time guarantee &#10004; </div>
     <p>Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>

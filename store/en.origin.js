@@ -35,7 +35,9 @@
             "close": "%%%.app.common.close%%%",
             "days": "%%%.app.common.days%%%",
             "months": "%%%.app.common.months%%%",
-            "selectChoice": "%%%.app.common.selectChoice%%%"
+            "selectChoice": "%%%.app.common.selectChoice%%%",
+            "inRange": "%%%.app.common.inRange%%%",
+            "copiedAddress": "%%%.app.common.copiedAddress%%%"
         },
         "local": {
             "type": {
@@ -423,6 +425,7 @@
             "myEmailPassword": "%%%.me.navigation.myEmailPassword%%%",
             "myInformation": "%%%.me.navigation.myInformation%%%",
             "securities": "%%%.me.navigation.securities%%%",
+            "notification_settings": "%%%.me.navigation.notification_settings%%%",
             "sellOrders": "%%%.me.navigation.sellOrders%%%",
             "buyOrders": "%%%.me.navigation.buyOrders%%%",
             "bookingOrders": "%%%.me.navigation.bookingOrders%%%",
@@ -843,6 +846,34 @@
         },
         "setting": {
             "title": "%%%.me.setting.title%%%"
+        },
+        "notificationSetting": {
+            "title": "%%%.me.notificationSetting.title%%%",
+            "secondaryMarketSetting": {
+                "title": "%%%.me.notificationSetting.secondaryMarketSetting.title%%%",
+                "desc": "%%%.me.notificationSetting.secondaryMarketSetting.desc%%%",
+                "labelOff": "%%%.me.notificationSetting.secondaryMarketSetting.labelOff%%%",
+                "labelOn": "%%%.me.notificationSetting.secondaryMarketSetting.labelOn%%%",
+                "noteOn": "%%%.me.notificationSetting.secondaryMarketSetting.noteOn%%%",
+                "noteOff": "%%%.me.notificationSetting.secondaryMarketSetting.noteOff%%%",
+                "interestRequired": "%%%.me.notificationSetting.secondaryMarketSetting.interestRequired%%%",
+                "interest": "%%%.me.notificationSetting.secondaryMarketSetting.interest%%%",
+                "interestInRange": "%%%.me.notificationSetting.secondaryMarketSetting.interestInRange%%%",
+                "termInRange": "%%%.me.notificationSetting.secondaryMarketSetting.termInRange%%%",
+                "termRequired": "%%%.me.notificationSetting.secondaryMarketSetting.termRequired%%%",
+                "term": "%%%.me.notificationSetting.secondaryMarketSetting.term%%%",
+                "termMonth": "%%%.me.notificationSetting.secondaryMarketSetting.termMonth%%%",
+                "termDesc": "%%%.me.notificationSetting.secondaryMarketSetting.termDesc%%%",
+                "interestDesc": "%%%.me.notificationSetting.secondaryMarketSetting.interestDesc%%%",
+                "submit": "%%%.me.notificationSetting.secondaryMarketSetting.submit%%%",
+                "messageConfirmEnable": "%%%.me.notificationSetting.secondaryMarketSetting.messageConfirmEnable%%%",
+                "messageConfirmUpdate": "%%%.me.notificationSetting.secondaryMarketSetting.messageConfirmUpdate%%%",
+                "messageConfirmDisable": "%%%.me.notificationSetting.secondaryMarketSetting.messageConfirmDisable%%%",
+                "confirm": "%%%.me.notificationSetting.secondaryMarketSetting.confirm%%%",
+                "cancel": "%%%.me.notificationSetting.secondaryMarketSetting.cancel%%%",
+                "updateSuccess": "%%%.me.notificationSetting.secondaryMarketSetting.updateSuccess%%%",
+                "disableSuccess": "%%%.me.notificationSetting.secondaryMarketSetting.disableSuccess%%%"
+            }
         },
         "flexInterestConfig": {
             "title": "%%%.me.flexInterestConfig.title%%%",
@@ -6297,9 +6328,10 @@
             "title": "%%%.history.deposit.title%%%",
             "exportExel": "%%%.history.deposit.exportExel%%%",
             "noHistoryData": "%%%.history.deposit.noHistoryData%%%",
+            "received": "%%%.history.deposit.received%%%",
             "tabs": {
                 "fiat": "%%%.history.deposit.tabs.fiat%%%",
-                "collateral": "%%%.history.deposit.tabs.collateral%%%",
+                "crypto": "%%%.history.deposit.tabs.crypto%%%",
                 "openOrders": "%%%.history.deposit.tabs.openOrders%%%"
             },
             "headers": {

@@ -35,7 +35,9 @@
             "close": "Close",
             "days": "days",
             "months": "months",
-            "selectChoice": "Please select your choice"
+            "selectChoice": "Please select your choice",
+            "inRange": "Must be greater than or equal to {min} and less than or equal to {max}",
+            "copiedAddress": "Address is copied to clipboard"
         },
         "local": {
             "type": {
@@ -423,6 +425,7 @@
             "myEmailPassword": "Email and password",
             "myInformation": "Account details",
             "securities": "Account security",
+            "notification_settings": "Notification Settings",
             "sellOrders": "Sell Orders",
             "buyOrders": "Buy Orders",
             "bookingOrders": "Sale Orders",
@@ -843,6 +846,34 @@
         },
         "setting": {
             "title": "Account Settings"
+        },
+        "notificationSetting": {
+            "title": "Notification Settings",
+            "secondaryMarketSetting": {
+                "title": "Secondary market notifications",
+                "desc": "\n        <p>\n        Want to be the first to know about new secondary market orders? Enable notifications here and we’ll notify you by mobile when an order appears that matches your criteria.\n        </p>\n        ",
+                "labelOff": "Enable",
+                "labelOn": "Disable",
+                "noteOn": "<p>Got it. Secondary market notifications are on. You’ll receive a notification whenever a new order appears that matches your criteria below.</p>\n            ",
+                "noteOff": "\n            <p>Secondary market notifications are off. You won’t be reminded when new orders appear. Enable notifications to avoid missing the best deals.</p>\n            ",
+                "interestRequired": "Min rate is required!",
+                "interest": "Min rate (APR)",
+                "interestInRange": "Min rate must be greater than or equal to {min} and less than or equal to {max}",
+                "termInRange": "Max term must be greater than {min} and less than or equal to {max}",
+                "termRequired": "Max term is required!",
+                "term": "Max term (Months)",
+                "termMonth": "{month}-Month",
+                "termDesc": "You’ll receive notifications for orders less than or equal to this term length.",
+                "interestDesc": "You’ll receive notifications for orders matching this interest rate or above.",
+                "submit": "Submit",
+                "messageConfirmEnable": "We’ll notify you of new orders that match your minimum interest rate of {rate}% and maximum term of {term} months. Do you want to proceed?",
+                "messageConfirmUpdate": "You’re about to change your notification settings to a minimum interest rate of {rate}% and maximum term of {term} months. Do you want to proceed?",
+                "messageConfirmDisable": "Are you sure you want to disable secondary market notifications? You might miss out on the best deals.",
+                "confirm": "Yes",
+                "cancel": "No",
+                "updateSuccess": "Successfully Updated",
+                "disableSuccess": "Successfully Disabled"
+            }
         },
         "flexInterestConfig": {
             "title": "Earn 4% APY on your balance with Flex",
@@ -6297,25 +6328,26 @@
             "title": "Deposit History",
             "exportExel": "Export to excel",
             "noHistoryData": "Make a deposit to get started.",
+            "received": "received",
             "tabs": {
                 "fiat": "Fiat",
-                "collateral": "Collateral",
+                "crypto": "Crypto",
                 "openOrders": "Open Orders"
             },
             "headers": {
                 "orderNo": "#",
-                "currencyAmount": "Currency Amount",
-                "amount": "USD Amount",
-                "refNo": "Ref number",
+                "currencyAmount": "Deposited",
+                "amount": "Received",
+                "refNo": "Reference",
                 "cryptoAddress": "Crypto Address",
                 "time": "Time",
-                "day": "Day",
+                "day": "Date",
                 "status": "Status",
                 "action": " "
             },
             "status": {
                 "pending": "Order in progress",
-                "picked": "Please make a transfer to complete your deposit",
+                "picked": "Pending",
                 "transferred_fiat": "Your account will be credited once we have received your transfer.",
                 "transferred_fiat_invest": "Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.",
                 "transferred": "Successful",

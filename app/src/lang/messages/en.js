@@ -3913,22 +3913,297 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       },
     },
   },
-  affiliatePage: {
-    headerTitleNoLogin: 'Become an affiliate',
-    headerDescNoLogin: 'Let’s earn up to 0.15% of volume users made',
-    headerButtonSignup: 'Sign up to begin',
-
-    headerTitleLogined: 'Howdy, ',
-    headerDescLogined: 'Welcome to our affiliate program, let’s start to earn',
-    labelShare: 'Your Affiliate link',
-    btnShare: 'Copy link',
-    copied: 'Affiliate link copied to clipboard.',
-
-    termConditionTitle: 'Term & Condition',
-    termConditionDesc: `
-      <p>Agent will immediately earn 5 USD for the first transaction of acquired users. After that, Agent will earn  0.15% of volume users made in that month as commission. </p>
-      <p>User A conducts the first transaction which is BUYING CONSTANT and the amount must be equal to or greater than 1,000 USD, then Agent will immediately earn 5 USD. After that, User A makes the next transaction as BUYING CONSTANT, and Agent will earn 0.15% of each purchase. Total volume of User A in the month must be greater than 2000 USD. Commission will be paid at the end of the month.</p>
-    `,
+  affiliates: {
+    greetingForm: {
+      title:`
+        <p class="header">Hello {name},</p>
+        <p>Make money with our affiliate program. Refer investors and <strong>earn a commission of 1%</strong> of their invested amount. Plus a <strong>€ 5 bonus</strong> for every registration.</p>
+      `,
+      inviteFriends: 'Invite friends',
+    },
+    applyForm: {
+      title:`
+        <p class="header">Get paid for your content.</p>
+        <p>Become a Constant affiliate and earn money on your content. <strong>Get $20</strong> for every person you refer plus <strong>20% of their Flex interest</strong> for life. Refer as many people as you like, however you like. </p>
+      `,
+      userName: 'Your name',
+      userEmail: 'Your email address',
+      applyNow: 'Apply now',
+      notValidEmail: 'Invalid email address',
+      requestSuccess: 'Successfully Requested',
+      requestFailed: 'Failed To Request',
+    },
+    summary: {
+      title: 'P2P lending done right. No fees. All loans secured.',
+      data: {
+        0: {
+          title: '8.5%',
+          desc: 'average net annual return'
+        },
+        1: {
+          title: '15,000+',
+          desc: 'registered investors'
+        },
+        2: {
+          title: '$15M+',
+          desc: 'matched loan volume'
+        },
+      }
+    },
+    whyBecome: {
+      title: 'Why become an affiliate?',
+      desc: `
+        <div class="section-desc-title">YOU EARN MORE</div>
+        <div><strong>Earn $20 for every registration</strong>, paid instantly after they pass KYC, and with no limits.</div>
+        <div><strong>Then earn 20% of their Flex interest</strong>, paid every second, and capped at a generous $1,000,000.</div>
+        <div><strong>Your referee also gets $10</strong> when they pass KYC. </div>
+      `,
+      formula: {
+        0: 'per registration',
+        1: ' ',
+        2: 'of referee’s Flex interest',
+        3: ' ',
+        4: 'for your referee',
+      },
+      data: {
+        0: {
+          title: 'REWARD YOUR COMMUNITY',
+          desc: 'Your referees earn $10 when they sign up and pass KYC – with no obligation to invest. Your affiliate offers are an easy way to reward followers who engage with your content.'
+        },
+        1: {
+          title: 'HELP PEOPLE INVEST BETTER',
+          desc: 'Help your community overcome the challenges of today’s investment market. Constant is an ideal way to diversify and enjoy secured returns of up to 7% APR without fees.'
+        },
+        2: {
+          title: 'CUT THROUGH THE NOISE',
+          desc: 'Whether you already monetize or not, our creative team will help boost the value and impact of your content. We can advise on SEO, copywriting, marketing, and more.'
+        },
+      }
+    },
+    aboutYou: {
+      title: 'About you',
+      desc: `You’ll <strong>love</strong> our affiliate program if`,
+      data: {
+        0: {
+          title: 'Your write, talk, or stream about investing',
+          desc: 'Your skills, knowledge, and expertise can help your customers reach their financial goals, fast. As an affiliate, your voice goes further.'
+        },
+        1: {
+          title: 'Your audience is interested in personal finance',
+          desc: 'Turn your blog, website, podcast, stream, or social media channel into a platform for helping people do more with their money.'
+        },
+        2: {
+          title: 'You want to turn your hard work into a regular income',
+          desc: 'Monetize your content and enjoy an extra income stream with no limits. You already do the hard work – why not get paid for it? '
+        },
+      }
+    },
+    faqs: {
+      desc: 'Unlike traditional P2P platforms that prey on vulnerable borrowers and expect investors to shoulder the risk, Constant is designed to protect them both.',
+      0: {
+        question: 'What is the Constant Affiliate Program?',
+        answer: `
+          <p>
+          The Constant Affiliate Program rewards you for referring people to Constant through your website, service, or platform. For every person who signs up using your referral link, you’ll earn a $20 bonus, paid immediately upon them passing KYC. You’ll also earn 20% of their Flex earnings, paid every second, and capped at $1,000,000.
+          </p>
+          <p>
+          We track your referrals using cookies with a 30-day lifespan. If someone clicks your affiliate link and signs up within a 30-day period, you’ll earn the bonus and commission – even if they don’t sign up immediately. Of course, should your referee clear their cookies, we won’t be able to track them, so please bear this in mind. You want people to sign up as soon as possible.
+          </p>
+          `,
+      },
+      1: {
+        question: 'Who can become a Constant affiliate?',
+        answer: `
+          <p>
+          Anyone, so long as your audience is based in the US. You will only earn rewards for referring US citizens.
+          </p>
+          `,
+      },
+      2: {
+        question: 'How do I join the Constant Affiliate program?',
+        answer: `
+          <p>
+          It’s easy! Enter your name and email address on our Affiliate page and we’ll send you a short application form. We’ll review your responses and get back to you within three business days (usually sooner). Once approved, you can start earning immediately.
+          </p>
+          `,
+      },
+      3: {
+        question: 'How long will the application approval process take?',
+        answer: `
+          <p>
+          Approval should take no longer than three business days, but might take a little longer if we need more information from you.
+          </p>
+          `,
+      },
+      4: {
+        question: 'Do I need to pay to become a Constant affiliate?',
+        answer: `
+          <p>
+          No – we’ll be paying you!
+          </p>
+          `,
+      },
+      5: {
+        question: 'Where can I promote Constant to earn under the program?',
+        answer: `
+          <p>
+          Anywhere you want! Blogs, social media, websites – you name it.
+          </p>
+          `,
+      },
+      6: {
+        question: 'Do I need to register as a business to become an affiliate?',
+        answer: `
+          <p>
+          No, you don’t.
+          </p>
+          `,
+      },
+      7: {
+        question: 'Do I need to have my own website to become an affiliate?',
+        answer: `
+          <p>
+          No, but you do need an online platform to share your affiliate link. This could be YouTube or another social media channel, for example, or an email newsletter.
+          </p>
+          `,
+      },
+      8: {
+        question: 'What promotions am I not allowed to use?',
+        answer: `
+          <p>
+          You can’t make false or misleading statements about Constant, or use Constant keywords in Google ads. Neither can you use visitor exchange systems, forced clicks, and other methods that lead to unqualified traffic. You are not allowed to send spam with Constant ads or use other aggressive marketing methods. If you use any of these methods, your affiliate account will permanently cancelled.
+          </p>
+          `,
+      },
+      9: {
+        question: 'How long do affiliate cookies last?',
+        answer: `
+          <p>
+          When someone clicks your affiliate link, a cookie is created. That cookie will stay on their computer for 30 days unless manually cleared. You’ll earn rewards on all sign-ups containing your unique cookie data.
+          </p>
+          `,
+      },
+      10: {
+        question: 'Who has control of what’s being published on an affiliate’s site/blog?',
+        answer: `
+          <p>
+          As long as you publish in accordance with the affiliate program terms and conditions, you have full control over publication.
+          </p>
+          `,
+      },
+      11: {
+        question: 'If someone has my affiliate cookie but invests from a different source, do I still earn the rewards?',
+        answer: `
+          <p>
+          Yes. It doesn’t matter where the person signs up as long as they do so with your unique cookie installed.
+          </p>
+          `,
+      },
+      12: {
+        question: 'What if my referral doesn\'t show up in reporting?',
+        answer: `
+          <p>
+          If this happens, email us at <a href="mailto:hello@myconstant.com" target="_blank">hello@myconstant.com</a> with the details so we can see if something went wrong.
+          </p>
+          `,
+      },
+      13: {
+        question: 'Will I have any report on my performance?',
+        answer: `
+          <p>
+          Yes, you’ll receive monthly reports, notifications when you earn, and occasional updates on how to boost your earnings through our affiliate program.
+          </p>
+          `,
+      },
+      14: {
+        question: 'Can my affiliate account get cancelled?',
+        answer: `
+          <p>
+          Yes. We will cancel your membership if you break any of the clauses in our affiliate program terms and conditions.
+          </p>
+          `,
+      },
+      15: {
+        question: 'What happens if my affiliate account is inactive?',
+        answer: `
+          <p>
+          We understand it might take time for your referees to sign up. You have a full six months before we consider reviewing your membership, and we’ll be in touch regularly before then with ideas on how to kickstart your affiliate earnings.
+          </p>
+          `,
+      },
+      16: {
+        question: 'How do I cancel my affiliate membership?',
+        answer: `
+          <p>
+          Hopefully you won’t need to! But if so, send us an email at <a href="mailto:hello@myconstant.com" target="_blank">hello@myconstant.com</a> and we’ll arrange it for you.
+          </p>
+          `,
+      },
+      17: {
+        question: 'What technical skills do I need to become an affiliate?',
+        answer: `
+          <p>
+          As long as you can work a computer or smartphone and know how to use the internet, you can become an affiliate.
+          </p>
+          `,
+      },
+      18: {
+        question: 'Can I use the Constant logo in my own banners?',
+        answer: `
+          <p>
+          Yes, but please send your design to us first for approval. You’ll get a better response if your banner is consistent with our brand guidelines.
+          </p>
+          `,
+      },
+      19: {
+        question: 'What affiliate platform should I choose?',
+        answer: `
+          <p>
+          That’s up to you. Our affiliates use many different platforms, including podcasts, blogs, streaming accounts, social media, personal websites and others.
+          </p>
+          `,
+      },
+      20: {
+        question: 'Do I get paid if I invest myself?',
+        answer: `
+          <p>
+          You won’t get paid under the affiliate program, no.
+          </p>
+          `,
+      },
+      21: {
+        question: 'Are my earnings taxable?',
+        answer: `
+          <p>
+          Yes. Please consult your local tax authority for more information.
+          </p>
+          `,
+      },
+      22: {
+        question: 'Can people I refer see my username?',
+        answer: `
+          <p>
+          No. The affiliate program is private for both you and your referees.
+          </p>
+          `,
+      },
+      23: {
+        question: 'Can I promote my affiliate link across multiple platforms?',
+        answer: `
+          <p>
+          Yes – in fact, we encourage it!
+          </p>
+          `,
+      },
+      24: {
+        question: 'In what currency will I get paid?',
+        answer: `
+          <p>
+          You’ll be paid in USD.
+          </p>
+          `,
+      },
+    }
   },
   proSaving: {
     pending: 'Pending',
@@ -5443,7 +5718,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         venmoSubmit: 'Submit',
         paypal: `
           <p>Amount: {amount} USD</p>
-          <p>Send to: <strong>finance@myconstant.com</strong></p>
+          <p>Send to: <strong>accounting@constant.money</strong></p>
           <p>Full name: <strong>Const LLC</strong></p>
           <p>Type: <strong>Personal Account</strong></p>
         `,

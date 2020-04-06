@@ -3116,17 +3116,183 @@
             }
         }
     },
-    "affiliatePage": {
-        "headerTitleNoLogin": "%%%.affiliatePage.headerTitleNoLogin%%%",
-        "headerDescNoLogin": "%%%.affiliatePage.headerDescNoLogin%%%",
-        "headerButtonSignup": "%%%.affiliatePage.headerButtonSignup%%%",
-        "headerTitleLogined": "%%%.affiliatePage.headerTitleLogined%%%",
-        "headerDescLogined": "%%%.affiliatePage.headerDescLogined%%%",
-        "labelShare": "%%%.affiliatePage.labelShare%%%",
-        "btnShare": "%%%.affiliatePage.btnShare%%%",
-        "copied": "%%%.affiliatePage.copied%%%",
-        "termConditionTitle": "%%%.affiliatePage.termConditionTitle%%%",
-        "termConditionDesc": "%%%.affiliatePage.termConditionDesc%%%"
+    "affiliates": {
+        "greetingForm": {
+            "title": "%%%.affiliates.greetingForm.title%%%",
+            "inviteFriends": "%%%.affiliates.greetingForm.inviteFriends%%%"
+        },
+        "applyForm": {
+            "title": "%%%.affiliates.applyForm.title%%%",
+            "userName": "%%%.affiliates.applyForm.userName%%%",
+            "userEmail": "%%%.affiliates.applyForm.userEmail%%%",
+            "applyNow": "%%%.affiliates.applyForm.applyNow%%%",
+            "notValidEmail": "%%%.affiliates.applyForm.notValidEmail%%%",
+            "requestSuccess": "%%%.affiliates.applyForm.requestSuccess%%%",
+            "requestFailed": "%%%.affiliates.applyForm.requestFailed%%%"
+        },
+        "summary": {
+            "title": "%%%.affiliates.summary.title%%%",
+            "data": {
+                "0": {
+                    "title": "%%%.affiliates.summary.data.0.title%%%",
+                    "desc": "%%%.affiliates.summary.data.0.desc%%%"
+                },
+                "1": {
+                    "title": "%%%.affiliates.summary.data.1.title%%%",
+                    "desc": "%%%.affiliates.summary.data.1.desc%%%"
+                },
+                "2": {
+                    "title": "%%%.affiliates.summary.data.2.title%%%",
+                    "desc": "%%%.affiliates.summary.data.2.desc%%%"
+                }
+            }
+        },
+        "whyBecome": {
+            "title": "%%%.affiliates.whyBecome.title%%%",
+            "desc": "%%%.affiliates.whyBecome.desc%%%",
+            "formula": {
+                "0": "%%%.affiliates.whyBecome.formula.0%%%",
+                "1": "%%%.affiliates.whyBecome.formula.1%%%",
+                "2": "%%%.affiliates.whyBecome.formula.2%%%",
+                "3": "%%%.affiliates.whyBecome.formula.3%%%",
+                "4": "%%%.affiliates.whyBecome.formula.4%%%"
+            },
+            "data": {
+                "0": {
+                    "title": "%%%.affiliates.whyBecome.data.0.title%%%",
+                    "desc": "%%%.affiliates.whyBecome.data.0.desc%%%"
+                },
+                "1": {
+                    "title": "%%%.affiliates.whyBecome.data.1.title%%%",
+                    "desc": "%%%.affiliates.whyBecome.data.1.desc%%%"
+                },
+                "2": {
+                    "title": "%%%.affiliates.whyBecome.data.2.title%%%",
+                    "desc": "%%%.affiliates.whyBecome.data.2.desc%%%"
+                }
+            }
+        },
+        "aboutYou": {
+            "title": "%%%.affiliates.aboutYou.title%%%",
+            "desc": "%%%.affiliates.aboutYou.desc%%%",
+            "data": {
+                "0": {
+                    "title": "%%%.affiliates.aboutYou.data.0.title%%%",
+                    "desc": "%%%.affiliates.aboutYou.data.0.desc%%%"
+                },
+                "1": {
+                    "title": "%%%.affiliates.aboutYou.data.1.title%%%",
+                    "desc": "%%%.affiliates.aboutYou.data.1.desc%%%"
+                },
+                "2": {
+                    "title": "%%%.affiliates.aboutYou.data.2.title%%%",
+                    "desc": "%%%.affiliates.aboutYou.data.2.desc%%%"
+                }
+            }
+        },
+        "faqs": {
+            "0": {
+                "question": "%%%.affiliates.faqs.0.question%%%",
+                "answer": "%%%.affiliates.faqs.0.answer%%%"
+            },
+            "1": {
+                "question": "%%%.affiliates.faqs.1.question%%%",
+                "answer": "%%%.affiliates.faqs.1.answer%%%"
+            },
+            "2": {
+                "question": "%%%.affiliates.faqs.2.question%%%",
+                "answer": "%%%.affiliates.faqs.2.answer%%%"
+            },
+            "3": {
+                "question": "%%%.affiliates.faqs.3.question%%%",
+                "answer": "%%%.affiliates.faqs.3.answer%%%"
+            },
+            "4": {
+                "question": "%%%.affiliates.faqs.4.question%%%",
+                "answer": "%%%.affiliates.faqs.4.answer%%%"
+            },
+            "5": {
+                "question": "%%%.affiliates.faqs.5.question%%%",
+                "answer": "%%%.affiliates.faqs.5.answer%%%"
+            },
+            "6": {
+                "question": "%%%.affiliates.faqs.6.question%%%",
+                "answer": "%%%.affiliates.faqs.6.answer%%%"
+            },
+            "7": {
+                "question": "%%%.affiliates.faqs.7.question%%%",
+                "answer": "%%%.affiliates.faqs.7.answer%%%"
+            },
+            "8": {
+                "question": "%%%.affiliates.faqs.8.question%%%",
+                "answer": "%%%.affiliates.faqs.8.answer%%%"
+            },
+            "9": {
+                "question": "%%%.affiliates.faqs.9.question%%%",
+                "answer": "%%%.affiliates.faqs.9.answer%%%"
+            },
+            "10": {
+                "question": "%%%.affiliates.faqs.10.question%%%",
+                "answer": "%%%.affiliates.faqs.10.answer%%%"
+            },
+            "11": {
+                "question": "%%%.affiliates.faqs.11.question%%%",
+                "answer": "%%%.affiliates.faqs.11.answer%%%"
+            },
+            "12": {
+                "question": "%%%.affiliates.faqs.12.question%%%",
+                "answer": "%%%.affiliates.faqs.12.answer%%%"
+            },
+            "13": {
+                "question": "%%%.affiliates.faqs.13.question%%%",
+                "answer": "%%%.affiliates.faqs.13.answer%%%"
+            },
+            "14": {
+                "question": "%%%.affiliates.faqs.14.question%%%",
+                "answer": "%%%.affiliates.faqs.14.answer%%%"
+            },
+            "15": {
+                "question": "%%%.affiliates.faqs.15.question%%%",
+                "answer": "%%%.affiliates.faqs.15.answer%%%"
+            },
+            "16": {
+                "question": "%%%.affiliates.faqs.16.question%%%",
+                "answer": "%%%.affiliates.faqs.16.answer%%%"
+            },
+            "17": {
+                "question": "%%%.affiliates.faqs.17.question%%%",
+                "answer": "%%%.affiliates.faqs.17.answer%%%"
+            },
+            "18": {
+                "question": "%%%.affiliates.faqs.18.question%%%",
+                "answer": "%%%.affiliates.faqs.18.answer%%%"
+            },
+            "19": {
+                "question": "%%%.affiliates.faqs.19.question%%%",
+                "answer": "%%%.affiliates.faqs.19.answer%%%"
+            },
+            "20": {
+                "question": "%%%.affiliates.faqs.20.question%%%",
+                "answer": "%%%.affiliates.faqs.20.answer%%%"
+            },
+            "21": {
+                "question": "%%%.affiliates.faqs.21.question%%%",
+                "answer": "%%%.affiliates.faqs.21.answer%%%"
+            },
+            "22": {
+                "question": "%%%.affiliates.faqs.22.question%%%",
+                "answer": "%%%.affiliates.faqs.22.answer%%%"
+            },
+            "23": {
+                "question": "%%%.affiliates.faqs.23.question%%%",
+                "answer": "%%%.affiliates.faqs.23.answer%%%"
+            },
+            "24": {
+                "question": "%%%.affiliates.faqs.24.question%%%",
+                "answer": "%%%.affiliates.faqs.24.answer%%%"
+            },
+            "desc": "%%%.affiliates.faqs.desc%%%"
+        }
     },
     "proSaving": {
         "pending": "%%%.proSaving.pending%%%",

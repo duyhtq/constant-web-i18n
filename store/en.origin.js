@@ -378,6 +378,7 @@
             "inValidWalletAddress": "%%%.error.serverCode.inValidWalletAddress%%%",
             "undefined": "%%%.error.serverCode.undefined%%%",
             "loginFailure": "%%%.error.serverCode.loginFailure%%%",
+            "loginFailureCaptchaV2": "%%%.error.serverCode.loginFailureCaptchaV2%%%",
             "stakingRequireMinTerm": "%%%.error.serverCode.stakingRequireMinTerm%%%"
         },
         "withdrawGreaterThan": "%%%.error.withdrawGreaterThan%%%",
@@ -852,6 +853,7 @@
             "secondaryMarketSetting": {
                 "title": "%%%.me.notificationSetting.secondaryMarketSetting.title%%%",
                 "desc": "%%%.me.notificationSetting.secondaryMarketSetting.desc%%%",
+                "downloadApp": "%%%.me.notificationSetting.secondaryMarketSetting.downloadApp%%%",
                 "labelOff": "%%%.me.notificationSetting.secondaryMarketSetting.labelOff%%%",
                 "labelOn": "%%%.me.notificationSetting.secondaryMarketSetting.labelOn%%%",
                 "noteOn": "%%%.me.notificationSetting.secondaryMarketSetting.noteOn%%%",
@@ -1810,6 +1812,7 @@
             "registerButton": "%%%.user.login.registerButton%%%",
             "forgetPassword": "%%%.user.login.forgetPassword%%%",
             "requiredPassword": "%%%.user.login.requiredPassword%%%",
+            "loginFailureCaptchaV2": "%%%.user.login.loginFailureCaptchaV2%%%",
             "notValidPassword": "%%%.user.login.notValidPassword%%%",
             "notValidUsername": "%%%.user.login.notValidUsername%%%",
             "requiredUsername": "%%%.user.login.requiredUsername%%%",

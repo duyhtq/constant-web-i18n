@@ -293,6 +293,7 @@
 %%%.error.serverCode.inValidWalletAddress%%%,"Receive address invalid"
 %%%.error.serverCode.undefined%%%,"Opps! Something went wrong, please try again"
 %%%.error.serverCode.loginFailure%%%,"Please make sure your email and password are correct."
+%%%.error.serverCode.loginFailureCaptchaV2%%%,"Something went wrong please try again"
 %%%.error.serverCode.stakingRequireMinTerm%%%,"Since you staked your collateral to reduce the interest on your loan, you can’t un-stake until your loan matures."
 %%%.error.withdrawGreaterThan%%%,"The minimum withdrawal amount is {min}"
 %%%.error.withdrawLessThanOrEqual%%%,"The maximum withdrawal amount is {max}"
@@ -848,12 +849,13 @@
 %%%.me.twoFa.enable2FaSuccess%%%,"Enable 2FA successfully!"
 %%%.me.setting.title%%%,"General Settings"
 %%%.me.notificationSetting.title%%%,"Notification Settings"
-%%%.me.notificationSetting.secondaryMarketSetting.title%%%,"Secondary market notifications"
+%%%.me.notificationSetting.secondaryMarketSetting.title%%%,"Secondary market mobile notifications"
 %%%.me.notificationSetting.secondaryMarketSetting.desc%%%,"
         <p>
         Want to be the first to know about new secondary market orders? Enable notifications here and we’ll notify you by mobile when an order appears that matches your criteria.
         </p>
         "
+%%%.me.notificationSetting.secondaryMarketSetting.downloadApp%%%,"Don’t have the app? Download it now using the links below."
 %%%.me.notificationSetting.secondaryMarketSetting.labelOff%%%,"Enable"
 %%%.me.notificationSetting.secondaryMarketSetting.labelOn%%%,"Disable"
 %%%.me.notificationSetting.secondaryMarketSetting.noteOn%%%,"<p>Got it. Secondary market notifications are on. You’ll receive a notification whenever a new order appears that matches your criteria below.</p>
@@ -1658,6 +1660,7 @@
 %%%.user.login.registerButton%%%,"Sign up for free"
 %%%.user.login.forgetPassword%%%,"Forgot password?"
 %%%.user.login.requiredPassword%%%,"Please enter your password"
+%%%.user.login.loginFailureCaptchaV2%%%,"please check I'm not a robot."
 %%%.user.login.notValidPassword%%%,"Password must be 8 characters or more"
 %%%.user.login.notValidUsername%%%,"Invalid email address"
 %%%.user.login.requiredUsername%%%,"Please enter your email"

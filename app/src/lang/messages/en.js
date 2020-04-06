@@ -395,6 +395,7 @@ export default {
       inValidWalletAddress: 'Receive address invalid',
       undefined: 'Opps! Something went wrong, please try again',
       loginFailure: 'Please make sure your email and password are correct.',
+      loginFailureCaptchaV2: 'Something went wrong please try again',
       stakingRequireMinTerm: 'Since you staked your collateral to reduce the interest on your loan, you can’t un-stake until your loan matures.'
     },
     withdrawGreaterThan: 'The minimum withdrawal amount is {min}',
@@ -1048,12 +1049,13 @@ export default {
     notificationSetting: {
       title: 'Notification Settings',
       secondaryMarketSetting: {
-        title: 'Secondary market notifications',
+        title: 'Secondary market mobile notifications',
         desc: `
         <p>
         Want to be the first to know about new secondary market orders? Enable notifications here and we’ll notify you by mobile when an order appears that matches your criteria.
         </p>
         `,
+        downloadApp: 'Don’t have the app? Download it now using the links below.',
         labelOff: 'Enable',
         labelOn: 'Disable',
         noteOn: `<p>Got it. Secondary market notifications are on. You’ll receive a notification whenever a new order appears that matches your criteria below.</p>
@@ -2111,6 +2113,7 @@ export default {
       registerButton: 'Sign up for free',
       forgetPassword: 'Forgot password?',
       requiredPassword: 'Please enter your password',
+      loginFailureCaptchaV2: 'please check I\'m not a robot.',
       notValidPassword: 'Password must be 8 characters or more',
       notValidUsername: 'Invalid email address',
       requiredUsername: 'Please enter your email',

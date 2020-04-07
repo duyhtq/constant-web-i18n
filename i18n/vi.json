@@ -3118,7 +3118,7 @@
     },
     "affiliates": {
         "greetingForm": {
-            "title": "\n        <p class=\"header\">Hello {name},</p>\n        <p>Make money with our affiliate program. Refer investors and <strong>earn a commission of 1%</strong> of their invested amount. Plus a <strong>€ 5 bonus</strong> for every registration.</p>\n      ",
+            "title": "\n        <p class=\"header\">Hello {name},</p>\n        <p>Welcome to your affiliate dashboard. You’ll find your affiliate link and sharing options below. You can track your earnings here, too.</p>\n        <p>Your total referral earnings to date: <strong>{totalEarned}</strong>.</p>\n      ",
             "inviteFriends": "Invite friends"
         },
         "applyForm": {
@@ -3128,7 +3128,8 @@
             "applyNow": "Apply now",
             "notValidEmail": "Invalid email address",
             "requestSuccess": "Successfully Requested",
-            "requestFailed": "Failed To Request"
+            "requestFailed": "Failed To Request",
+            "affiliateExisted": "Affiliate with this email already exists."
         },
         "summary": {
             "title": "P2P lending done right. No fees. All loans secured.",
@@ -3189,6 +3190,30 @@
                     "desc": "Monetize your content and enjoy an extra income stream with no limits. You already do the hard work – why not get paid for it? "
                 }
             }
+        },
+        "referralUsers": {
+            "user_email": "Email",
+            "statusHtml": "Status",
+            "fund": "Funds",
+            "point": "STAR",
+            "flex": "FLEX",
+            "date": "Date & Time",
+            "statusDesc": "<p>There are 3 steps to earn STAR.</p>\n                  <p>1/3 your friend signs up.</p>\n                  <p>2/3 your friend invests or borrows $1,000 for at least 30 days.</p>\n                  <p>3/3 You receive STAR immediately after the first 30 days of your friend's term.</p>",
+            "title": "Emailed invites",
+            "noRecord": "No record found"
+        },
+        "referralHistory": {
+            "title": "Latest referral history (one month by default)",
+            "noRecord": "No record found",
+            "user_email": "Referee's email address",
+            "value": "Your earnings ",
+            "valueDesc": "As soon as you’ve earned at least 1 cent, you can track your earnings below.",
+            "object_type": "Type",
+            "object_amount": "Amount (USD)",
+            "created_at": "Date & Time"
+        },
+        "terms": {
+            "content": "\n        <p class=\"section-title\">Terms and Conditions</p>\n        <p>1. The amount you earn depends on how your referees use the platform:</p>\n        <p class=\"desc\">You earn 20% of your referees’ earned Flex interest. We pay this interest every second that your referees earn.</p>\n        <p>2. We will pay you $20 for every person who signs up using your referral link and passes KYC. If they don’t pass KYC, you don’t earn the $20 bonus.</p>\n        <p>3. Your referral earnings are paid in USD, directly into your Constant account.</p>\n        <p>4. The maximum affiliate interest you can earn through Flex is $1,000,000.</p>\n        <p>5. You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>\n        <p>6. If you make false or misleading statements about Constant, use Constant keywords in Google ads, use visitor exchange systems, forced clicks, and other methods that lead to unqualified traffic, send spam with Constant ads or use other aggressive marketing methods, your affiliate earnings will be forfeit and your membership cancelled.</p>\n        <p>7. To qualify for affiliate earnings, your referees must be US citizens.</p>\n        <p>8. Constant reserves the right to change the terms of the affiliate program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p>\n      "
         },
         "faqs": {
             "0": {
@@ -4898,6 +4923,8 @@
             }
         },
         "referral_history": {
+            "title": "Latest referral history (one month by default)",
+            "noRecord": "No record found",
             "user_email": "Friend’s email address",
             "value": "Your earnings ",
             "valueDesc": "As soon as you’ve earned at least 1 cent, you can track your earnings below.",
@@ -4906,7 +4933,8 @@
             "created_at": "Date & Time"
         },
         "invite": {
-            "emailPlaceholder": "Nhập địa chỉ email "
+            "emailPlaceholder": "Nhập địa chỉ email ",
+            "affiliateUser": "\n      <p>\n      You’re already registered under our affiliate program so can’t refer here. Please visit your <a href=\"/affiliates\" class=\"underline bold\">affiliate dashboard</a> to get your unique affiliate link, sharing tools, and to track your earnings.\n      </p>\n      "
         },
         "info": {
             "balanceTitle": "BẠN HIỆN TẠI CÓ",
@@ -4926,7 +4954,8 @@
             "flex": "FLEX",
             "date": "Date & Time",
             "statusDesc": "<p>Có 3 bước để kiếm STAR.</p>\n                  <p>1/3 Bạn của bạn đăng ký.</p>\n                  <p>2/3 Bạn của bạn đầu tư hoặc vay $1,000 trong ít nhất 30 ngày.</p>\n                  <p>3/3 Bạn ngay lập tức nhận STAR sau 30 ngày đầu tiên của kỳ hạn đầu tư/vay của bạn của bạn.</p>",
-            "title": "Mời bạn bè"
+            "title": "Mời bạn bè",
+            "noRecord": "No record found"
         },
         "history": {
             "transaction_type": "Loại",
@@ -6042,7 +6071,7 @@
         "caption": "Membership",
         "pointExpiredDate": "{value} points will expired on {date}",
         "expiredDate": "Your {value} points will expired in {date}",
-        "pointNeed2GetGold": "Your need {value} points to get Gold Member",
+        "pointNeed2GetGold": "You still need {value} points to reach Gold Member status",
         "remaining": "{type} ${value} in {date} days",
         "borrow": "Borrow",
         "invest": "Invest",
@@ -6071,7 +6100,7 @@
         "desc": {
             "level1": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> $50 credit to your Constant account the first time you reach Gold (after leaving a review on Trustpilot).</p>\n              <p><i class=\"fal fa-check\"></i> US members: $15 credit every time you refer a friend.</p>\n              <p><i class=\"fal fa-check\"></i> 15% of all earned interest from Flex accounts of referred friends during their first year.</p>\n              <p><i class=\"fal fa-check\"></i> Withdrawals through Google Pay and Venmo.</p>\n              <p><i class=\"fal fa-check\"></i> Deposits/withdrawals through Checkbook ACH for all investment term lengths.</p>\n            ",
             "level2": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> $50 credit to your Constant account the first time you reach Platinum (after leaving a review on Trustpilot).</p>\n              <p><i class=\"fal fa-check\"></i> US members: $17.5 credit every time you refer a friend.</p>\n              <p><i class=\"fal fa-check\"></i> 17.5% of all earned interest from Flex accounts of referred friends during their first year.</p>\n              <p><i class=\"fal fa-check\"></i> Withdrawals through Google Pay and Venmo.</p>\n              <p><i class=\"fal fa-check\"></i> Deposits through Paypal.</p>\n              <p><i class=\"fal fa-check\"></i> Deposits/withdrawals through Checkbook ACH for all investment term lengths.</p>\n            ",
-            "level3": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> $50 credit to your Constant account the first time you reach Diamond (after leaving a review on Trustpilot).</p>\n              <p><i class=\"fal fa-check\"></i> US members: $20 credit every time you refer a friend.</p>\n              <p><i class=\"fal fa-check\"></i> 20% of all earned interest from Flex accounts of referred friends during their first year.</p>\n              <p><i class=\"fal fa-check\"></i> Withdrawals through Google Pay and Venmo.</p>\n              <p><i class=\"fal fa-check\"></i> Deposits through Paypal.</p>\n              <p><i class=\"fal fa-check\"></i> Deposits/withdrawals through Checkbook ACH for all investment term lengths.</p>\n              <p><i class=\"fal fa-check\"></i> Automatic bump to the top of our matching queue for all investments.</p>\n              <p><i class=\"fal fa-check\"></i> 1 STAR tokens to redeem for a 1% bonus or discounted interest.</p>\n            "
+            "level3": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> $50 credit to your Constant account the first time you reach Diamond (after leaving a review on Trustpilot).</p>\n              <p><i class=\"fal fa-check\"></i> US members: $20 credit every time you refer a friend.</p>\n              <p><i class=\"fal fa-check\"></i> 20% of all earned interest from Flex accounts of referred friends during their first year.</p>\n              <p><i class=\"fal fa-check\"></i> Withdrawals through Google Pay and Venmo.</p>\n              <p><i class=\"fal fa-check\"></i> Deposits through Paypal.</p>\n              <p><i class=\"fal fa-check\"></i> Deposits/withdrawals through Checkbook ACH for all investment term lengths.</p>\n              <p><i class=\"fal fa-check\"></i> Automatic bump to the top of our matching queue for all investments.</p>\n              <p><i class=\"fal fa-check\"></i> 1 STAR token to redeem for a 1% bonus or discounted interest.</p>\n            "
         },
         "history": {
             "title": "History",

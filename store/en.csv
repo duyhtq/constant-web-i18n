@@ -3022,7 +3022,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           "
 %%%.affiliates.greetingForm.title%%%,"
         <p class=""header"">Hello {name},</p>
-        <p>Make money with our affiliate program. Refer investors and <strong>earn a commission of 1%</strong> of their invested amount. Plus a <strong>€ 5 bonus</strong> for every registration.</p>
+        <p>Welcome to your affiliate dashboard. You’ll find your affiliate link and sharing options below. You can track your earnings here, too.</p>
+        <p>Your total referral earnings to date: <strong>{totalEarned}</strong>.</p>
       "
 %%%.affiliates.greetingForm.inviteFriends%%%,"Invite friends"
 %%%.affiliates.applyForm.title%%%,"
@@ -3035,6 +3036,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.affiliates.applyForm.notValidEmail%%%,"Invalid email address"
 %%%.affiliates.applyForm.requestSuccess%%%,"Successfully Requested"
 %%%.affiliates.applyForm.requestFailed%%%,"Failed To Request"
+%%%.affiliates.applyForm.affiliateExisted%%%,"Affiliate with this email already exists."
 %%%.affiliates.summary.title%%%,"P2P lending done right. No fees. All loans secured."
 %%%.affiliates.summary.data.0.title%%%,"8.5%"
 %%%.affiliates.summary.data.0.desc%%%,"average net annual return"
@@ -3068,6 +3070,38 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.affiliates.aboutYou.data.1.desc%%%,"Turn your blog, website, podcast, stream, or social media channel into a platform for helping people do more with their money."
 %%%.affiliates.aboutYou.data.2.title%%%,"You want to turn your hard work into a regular income"
 %%%.affiliates.aboutYou.data.2.desc%%%,"Monetize your content and enjoy an extra income stream with no limits. You already do the hard work – why not get paid for it? "
+%%%.affiliates.referralUsers.user_email%%%,"Email"
+%%%.affiliates.referralUsers.statusHtml%%%,"Status"
+%%%.affiliates.referralUsers.fund%%%,"Funds"
+%%%.affiliates.referralUsers.point%%%,"STAR"
+%%%.affiliates.referralUsers.flex%%%,"FLEX"
+%%%.affiliates.referralUsers.date%%%,"Date & Time"
+%%%.affiliates.referralUsers.statusDesc%%%,"<p>There are 3 steps to earn STAR.</p>
+                  <p>1/3 your friend signs up.</p>
+                  <p>2/3 your friend invests or borrows $1,000 for at least 30 days.</p>
+                  <p>3/3 You receive STAR immediately after the first 30 days of your friend's term.</p>"
+%%%.affiliates.referralUsers.title%%%,"Emailed invites"
+%%%.affiliates.referralUsers.noRecord%%%,"No record found"
+%%%.affiliates.referralHistory.title%%%,"Latest referral history (one month by default)"
+%%%.affiliates.referralHistory.noRecord%%%,"No record found"
+%%%.affiliates.referralHistory.user_email%%%,"Referee's email address"
+%%%.affiliates.referralHistory.value%%%,"Your earnings "
+%%%.affiliates.referralHistory.valueDesc%%%,"As soon as you’ve earned at least 1 cent, you can track your earnings below."
+%%%.affiliates.referralHistory.object_type%%%,"Type"
+%%%.affiliates.referralHistory.object_amount%%%,"Amount (USD)"
+%%%.affiliates.referralHistory.created_at%%%,"Date & Time"
+%%%.affiliates.terms.content%%%,"
+        <p class=""section-title"">Terms and Conditions</p>
+        <p>1. The amount you earn depends on how your referees use the platform:</p>
+        <p class=""desc"">You earn 20% of your referees’ earned Flex interest. We pay this interest every second that your referees earn.</p>
+        <p>2. We will pay you $20 for every person who signs up using your referral link and passes KYC. If they don’t pass KYC, you don’t earn the $20 bonus.</p>
+        <p>3. Your referral earnings are paid in USD, directly into your Constant account.</p>
+        <p>4. The maximum affiliate interest you can earn through Flex is $1,000,000.</p>
+        <p>5. You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>
+        <p>6. If you make false or misleading statements about Constant, use Constant keywords in Google ads, use visitor exchange systems, forced clicks, and other methods that lead to unqualified traffic, send spam with Constant ads or use other aggressive marketing methods, your affiliate earnings will be forfeit and your membership cancelled.</p>
+        <p>7. To qualify for affiliate earnings, your referees must be US citizens.</p>
+        <p>8. Constant reserves the right to change the terms of the affiliate program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p>
+      "
 %%%.affiliates.faqs.0.question%%%,"What is the Constant Affiliate Program?"
 %%%.affiliates.faqs.0.answer%%%,"
           <p>
@@ -4854,6 +4888,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.yourReferral.v1.howItWorks.step2.desc%%%,"Invite your friends by email or share your unique referral link on social media"
 %%%.yourReferral.v1.howItWorks.step3.title%%%,"Earn together"
 %%%.yourReferral.v1.howItWorks.step3.desc%%%,"Get paid every time your friend invests or borrows"
+%%%.yourReferral.referral_history.title%%%,"Latest referral history (one month by default)"
+%%%.yourReferral.referral_history.noRecord%%%,"No record found"
 %%%.yourReferral.referral_history.user_email%%%,"Friend’s email address"
 %%%.yourReferral.referral_history.value%%%,"Your earnings "
 %%%.yourReferral.referral_history.valueDesc%%%,"As soon as you’ve earned at least 1 cent, you can track your earnings below."
@@ -4861,6 +4897,11 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.yourReferral.referral_history.object_amount%%%,"Amount (USD)"
 %%%.yourReferral.referral_history.created_at%%%,"Date & Time"
 %%%.yourReferral.invite.emailPlaceholder%%%,"Enter an email address"
+%%%.yourReferral.invite.affiliateUser%%%,"
+      <p>
+      You’re already registered under our affiliate program so can’t refer here. Please visit your <a href=""/affiliates"" class=""underline bold"">affiliate dashboard</a> to get your unique affiliate link, sharing tools, and to track your earnings.
+      </p>
+      "
 %%%.yourReferral.info.balanceTitle%%%,"YOU CURRENTLY HAVE"
 %%%.yourReferral.info.title%%%,"Get your friend involved"
 %%%.yourReferral.info.desc%%%,"
@@ -4884,6 +4925,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
                   <p>2/3 your friend invests or borrows $1,000 for at least 30 days.</p>
                   <p>3/3 You receive STAR immediately after the first 30 days of your friend's term.</p>"
 %%%.yourReferral.list.title%%%,"Invited friends"
+%%%.yourReferral.list.noRecord%%%,"No record found"
 %%%.yourReferral.history.transaction_type%%%,"Type"
 %%%.yourReferral.history.status%%%,"Status"
 %%%.yourReferral.history.detail%%%,"Detail"
@@ -5762,7 +5804,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.memberShip.caption%%%,"Membership"
 %%%.memberShip.pointExpiredDate%%%,"{value} points will expired on {date}"
 %%%.memberShip.expiredDate%%%,"Your {value} points will expired in {date}"
-%%%.memberShip.pointNeed2GetGold%%%,"Your need {value} points to get Gold Member"
+%%%.memberShip.pointNeed2GetGold%%%,"You still need {value} points to reach Gold Member status"
 %%%.memberShip.remaining%%%,"{type} ${value} in {date} days"
 %%%.memberShip.borrow%%%,"Borrow"
 %%%.memberShip.invest%%%,"Invest"
@@ -5805,7 +5847,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
               <p><i class=""fal fa-check""></i> Deposits through Paypal.</p>
               <p><i class=""fal fa-check""></i> Deposits/withdrawals through Checkbook ACH for all investment term lengths.</p>
               <p><i class=""fal fa-check""></i> Automatic bump to the top of our matching queue for all investments.</p>
-              <p><i class=""fal fa-check""></i> 1 STAR tokens to redeem for a 1% bonus or discounted interest.</p>
+              <p><i class=""fal fa-check""></i> 1 STAR token to redeem for a 1% bonus or discounted interest.</p>
             "
 %%%.memberShip.history.title%%%,"History"
 %%%.memberShip.history.level%%%,"Status"

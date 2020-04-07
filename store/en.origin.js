@@ -3128,7 +3128,8 @@
             "applyNow": "%%%.affiliates.applyForm.applyNow%%%",
             "notValidEmail": "%%%.affiliates.applyForm.notValidEmail%%%",
             "requestSuccess": "%%%.affiliates.applyForm.requestSuccess%%%",
-            "requestFailed": "%%%.affiliates.applyForm.requestFailed%%%"
+            "requestFailed": "%%%.affiliates.applyForm.requestFailed%%%",
+            "affiliateExisted": "%%%.affiliates.applyForm.affiliateExisted%%%"
         },
         "summary": {
             "title": "%%%.affiliates.summary.title%%%",
@@ -3189,6 +3190,30 @@
                     "desc": "%%%.affiliates.aboutYou.data.2.desc%%%"
                 }
             }
+        },
+        "referralUsers": {
+            "user_email": "%%%.affiliates.referralUsers.user_email%%%",
+            "statusHtml": "%%%.affiliates.referralUsers.statusHtml%%%",
+            "fund": "%%%.affiliates.referralUsers.fund%%%",
+            "point": "%%%.affiliates.referralUsers.point%%%",
+            "flex": "%%%.affiliates.referralUsers.flex%%%",
+            "date": "%%%.affiliates.referralUsers.date%%%",
+            "statusDesc": "%%%.affiliates.referralUsers.statusDesc%%%",
+            "title": "%%%.affiliates.referralUsers.title%%%",
+            "noRecord": "%%%.affiliates.referralUsers.noRecord%%%"
+        },
+        "referralHistory": {
+            "title": "%%%.affiliates.referralHistory.title%%%",
+            "noRecord": "%%%.affiliates.referralHistory.noRecord%%%",
+            "user_email": "%%%.affiliates.referralHistory.user_email%%%",
+            "value": "%%%.affiliates.referralHistory.value%%%",
+            "valueDesc": "%%%.affiliates.referralHistory.valueDesc%%%",
+            "object_type": "%%%.affiliates.referralHistory.object_type%%%",
+            "object_amount": "%%%.affiliates.referralHistory.object_amount%%%",
+            "created_at": "%%%.affiliates.referralHistory.created_at%%%"
+        },
+        "terms": {
+            "content": "%%%.affiliates.terms.content%%%"
         },
         "faqs": {
             "0": {
@@ -4898,6 +4923,8 @@
             }
         },
         "referral_history": {
+            "title": "%%%.yourReferral.referral_history.title%%%",
+            "noRecord": "%%%.yourReferral.referral_history.noRecord%%%",
             "user_email": "%%%.yourReferral.referral_history.user_email%%%",
             "value": "%%%.yourReferral.referral_history.value%%%",
             "valueDesc": "%%%.yourReferral.referral_history.valueDesc%%%",
@@ -4906,7 +4933,8 @@
             "created_at": "%%%.yourReferral.referral_history.created_at%%%"
         },
         "invite": {
-            "emailPlaceholder": "%%%.yourReferral.invite.emailPlaceholder%%%"
+            "emailPlaceholder": "%%%.yourReferral.invite.emailPlaceholder%%%",
+            "affiliateUser": "%%%.yourReferral.invite.affiliateUser%%%"
         },
         "info": {
             "balanceTitle": "%%%.yourReferral.info.balanceTitle%%%",
@@ -4926,7 +4954,8 @@
             "flex": "%%%.yourReferral.list.flex%%%",
             "date": "%%%.yourReferral.list.date%%%",
             "statusDesc": "%%%.yourReferral.list.statusDesc%%%",
-            "title": "%%%.yourReferral.list.title%%%"
+            "title": "%%%.yourReferral.list.title%%%",
+            "noRecord": "%%%.yourReferral.list.noRecord%%%"
         },
         "history": {
             "transaction_type": "%%%.yourReferral.history.transaction_type%%%",

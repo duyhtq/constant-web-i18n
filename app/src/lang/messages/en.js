@@ -3917,7 +3917,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     greetingForm: {
       title:`
         <p class="header">Hello {name},</p>
-        <p>Make money with our affiliate program. Refer investors and <strong>earn a commission of 1%</strong> of their invested amount. Plus a <strong>€ 5 bonus</strong> for every registration.</p>
+        <p>Welcome to your affiliate dashboard. You’ll find your affiliate link and sharing options below. You can track your earnings here, too.</p>
+        <p>Your total referral earnings to date: <strong>{totalEarned}</strong>.</p>
       `,
       inviteFriends: 'Invite friends',
     },
@@ -3932,6 +3933,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       notValidEmail: 'Invalid email address',
       requestSuccess: 'Successfully Requested',
       requestFailed: 'Failed To Request',
+      affiliateExisted: 'Affiliate with this email already exists.',
     },
     summary: {
       title: 'P2P lending done right. No fees. All loans secured.',
@@ -3997,6 +3999,44 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           desc: 'Monetize your content and enjoy an extra income stream with no limits. You already do the hard work – why not get paid for it? '
         },
       }
+    },
+    referralUsers: {
+      user_email: 'Email',
+      statusHtml: 'Status',
+      fund: 'Funds',
+      point: 'STAR',
+      flex: 'FLEX',
+      date: 'Date & Time',
+      statusDesc: `<p>There are 3 steps to earn STAR.</p>
+                  <p>1/3 your friend signs up.</p>
+                  <p>2/3 your friend invests or borrows $1,000 for at least 30 days.</p>
+                  <p>3/3 You receive STAR immediately after the first 30 days of your friend's term.</p>`,
+      title: 'Emailed invites',
+      noRecord: 'No record found'
+    },
+    referralHistory: {
+      title: 'Latest referral history (one month by default)',
+      noRecord: 'No record found',
+      user_email: 'Referee\'s email address',
+      value: 'Your earnings ',
+      valueDesc: 'As soon as you’ve earned at least 1 cent, you can track your earnings below.',
+      object_type: 'Type',
+      object_amount: 'Amount (USD)',
+      created_at: 'Date & Time',
+    },
+    terms: {
+      content: `
+        <p class="section-title">Terms and Conditions</p>
+        <p>1. The amount you earn depends on how your referees use the platform:</p>
+        <p class="desc">You earn 20% of your referees’ earned Flex interest. We pay this interest every second that your referees earn.</p>
+        <p>2. We will pay you $20 for every person who signs up using your referral link and passes KYC. If they don’t pass KYC, you don’t earn the $20 bonus.</p>
+        <p>3. Your referral earnings are paid in USD, directly into your Constant account.</p>
+        <p>4. The maximum affiliate interest you can earn through Flex is $1,000,000.</p>
+        <p>5. You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>
+        <p>6. If you make false or misleading statements about Constant, use Constant keywords in Google ads, use visitor exchange systems, forced clicks, and other methods that lead to unqualified traffic, send spam with Constant ads or use other aggressive marketing methods, your affiliate earnings will be forfeit and your membership cancelled.</p>
+        <p>7. To qualify for affiliate earnings, your referees must be US citizens.</p>
+        <p>8. Constant reserves the right to change the terms of the affiliate program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p>
+      `
     },
     faqs: {
       desc: 'Unlike traditional P2P platforms that prey on vulnerable borrowers and expect investors to shoulder the risk, Constant is designed to protect them both.',
@@ -6489,6 +6529,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       }
     },
     referral_history: {
+      title: 'Latest referral history (one month by default)',
+      noRecord: 'No record found',
       user_email: 'Friend’s email address',
       value: 'Your earnings ',
       valueDesc: 'As soon as you’ve earned at least 1 cent, you can track your earnings below.',
@@ -6498,6 +6540,11 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     },
     invite: {
       emailPlaceholder: 'Enter an email address',
+      affiliateUser: `
+      <p>
+      You’re already registered under our affiliate program so can’t refer here. Please visit your <a href="/affiliates" class="underline bold">affiliate dashboard</a> to get your unique affiliate link, sharing tools, and to track your earnings.
+      </p>
+      `
     },
     info: {
       balanceTitle: 'YOU CURRENTLY HAVE',
@@ -6524,7 +6571,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
                   <p>1/3 your friend signs up.</p>
                   <p>2/3 your friend invests or borrows $1,000 for at least 30 days.</p>
                   <p>3/3 You receive STAR immediately after the first 30 days of your friend's term.</p>`,
-      title: 'Invited friends'
+      title: 'Invited friends',
+      noRecord: 'No record found'
     },
     history: {
       transaction_type: 'Type',
@@ -7792,7 +7840,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     caption: 'Membership',
     pointExpiredDate: '{value} points will expired on {date}',
     expiredDate: 'Your {value} points will expired in {date}',
-    pointNeed2GetGold: 'Your need {value} points to get Gold Member',
+    pointNeed2GetGold: 'You still need {value} points to reach Gold Member status',
     remaining: '{type} ${value} in {date} days',
     borrow: 'Borrow',
     invest: 'Invest',
@@ -7842,7 +7890,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
               <p><i class="fal fa-check"></i> Deposits through Paypal.</p>
               <p><i class="fal fa-check"></i> Deposits/withdrawals through Checkbook ACH for all investment term lengths.</p>
               <p><i class="fal fa-check"></i> Automatic bump to the top of our matching queue for all investments.</p>
-              <p><i class="fal fa-check"></i> 1 STAR tokens to redeem for a 1% bonus or discounted interest.</p>
+              <p><i class="fal fa-check"></i> 1 STAR token to redeem for a 1% bonus or discounted interest.</p>
             `,
     },
     history: {

@@ -1080,6 +1080,7 @@ export default {
         cancel: 'No',
         updateSuccess: 'Successfully Updated',
         disableSuccess: 'Successfully Disabled',
+        enableSuccess: 'Successfully Enabled',
       }
     },
     flexInterestConfig: {
@@ -2254,6 +2255,13 @@ export default {
         <p>Start investing from just $50.</p>
       `,
     },
+    steadyGrowth: {
+      title:`
+        <p class="header">Earn 7% APR now.</p>
+        <p>Don’t go down with the market. Enjoy steady growth with fully-secured P2P lending. All loans are 150% backed by digital assets. No fees.</p>
+        <p>Start investing from just $50.</p>
+      `,
+    },
     howItWorks: {
       title: 'How It Works',
       data: {
@@ -2968,6 +2976,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       transferFailed: 'Failed while transfering, please try again',
       transferSuccessful: 'Your transfer was completed successfully',
       transferConfirm: `We've already sent you a verification email, please confirm before we proceed your request.`,
+      two2faRequired: `
+      <p>2FA authentication is required to do this action.</p>
+      <p>Please enable your 2FA <a href="/me/securities" class="underline bold">here</a>.</p>
+`,
       timeLimit: 'Your money will arrive within ',
       timeLimitMunite: 'minutes',
       timeLimit1: '24 hours',
@@ -3046,6 +3058,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       transferFailed: 'Failed while transfering, please try again',
       transferSuccessful: 'Your transfer was completed successfully',
       transferConfirm: `We've already sent you a verification email, please confirm before we proceed your request.`,
+      two2faRequired: `
+      <p>2FA authentication is required to do this action.</p>
+      <p>Please enable your 2FA <a href="/me/securities" class="underline bold">here</a>.</p>
+`,
       timeLimitInWorkingTime: 'Your money will arrive within 1 hour',
       timeLimit: 'Your money will arrive within ',
       timeLimitMunite: 'minutes',
@@ -3933,7 +3949,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       notValidEmail: 'Invalid email address',
       requestSuccess: 'Successfully Requested',
       requestFailed: 'Failed To Request',
-      affiliateExisted: 'Affiliate with this email already exists.',
+      affiliateExisted: 'An affiliate application already exists for this email address.',
     },
     summary: {
       title: 'P2P lending done right. No fees. All loans secured.',
@@ -3979,6 +3995,34 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         2: {
           title: 'CUT THROUGH THE NOISE',
           desc: 'Whether you already monetize or not, our creative team will help boost the value and impact of your content. We can advise on SEO, copywriting, marketing, and more.'
+        },
+      }
+    },
+    howItWorks: {
+      title: 'How it works',
+      desc: `
+      <p>There are <strong>no limits</strong> to the number of people you can refer for the $20 bonus.</p>
+      <p>Your Flex earnings are capped at $1,000,000.</p>`,
+      data: {
+        0: {
+          title: ' ',
+          desc: 'Referee clicks your unique affiliate link.'
+        },
+        1: {
+          title: ' ',
+          desc: 'Referee signs up and passes KYC.'
+        },
+        2: {
+          title: ' ',
+          desc: 'You get $20 paid instantly to your Constant account.'
+        },
+        3: {
+          title: ' ',
+          desc: 'Your referee invests in Flex for 4% APY.'
+        },
+        4: {
+          title: ' ',
+          desc: 'You get 20% of their Flex earnings, paid every second.'
         },
       }
     },

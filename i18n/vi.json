@@ -874,7 +874,8 @@
                 "confirm": "Yes",
                 "cancel": "No",
                 "updateSuccess": "Successfully Updated",
-                "disableSuccess": "Successfully Disabled"
+                "disableSuccess": "Successfully Disabled",
+                "enableSuccess": "Successfully Enabled"
             }
         },
         "flexInterestConfig": {
@@ -1935,6 +1936,9 @@
         "secureReturns": {
             "title": "\n        <p class=\"header\">Earn 7% APR now.</p>\n        <p>When markets dive, secure your returns with P2P lending. All loans are 150% backed by digital assets. No fees. No dips.</p>\n        <p>Start investing from just $50.</p>\n      "
         },
+        "steadyGrowth": {
+            "title": "\n        <p class=\"header\">Earn 7% APR now.</p>\n        <p>Don’t go down with the market. Enjoy steady growth with fully-secured P2P lending. All loans are 150% backed by digital assets. No fees.</p>\n        <p>Start investing from just $50.</p>\n      "
+        },
         "howItWorks": {
             "title": "How It Works",
             "data": {
@@ -2441,6 +2445,7 @@
             "transferFailed": "Có lỗi xảy ra khi thực hiện giao dịch. Xin vui lòng thử lại",
             "transferSuccessful": "Giao dịch thành công",
             "transferConfirm": "We've already sent you a verification email, please confirm before we proceed your request.",
+            "two2faRequired": "\n      <p>2FA authentication is required to do this action.</p>\n      <p>Please enable your 2FA <a href=\"/me/securities\" class=\"underline bold\">here</a>.</p>\n",
             "timeLimit": "Bạn sẽ nhận được Constant trong ",
             "timeLimitMunite": "minutes",
             "timeLimit1": "24 hours",
@@ -2497,6 +2502,7 @@
             "transferFailed": "Có lỗi xảy ra khi thực hiện chuyển khoản. Xin vui lòng thử lại",
             "transferSuccessful": "Chuyển khoản thành công",
             "transferConfirm": "We've already sent you a verification email, please confirm before we proceed your request.",
+            "two2faRequired": "\n      <p>2FA authentication is required to do this action.</p>\n      <p>Please enable your 2FA <a href=\"/me/securities\" class=\"underline bold\">here</a>.</p>\n",
             "timeLimitInWorkingTime": "Bạn sẽ nhận được tiền trong 1 giờ",
             "timeLimit": "Bạn sẽ nhận được tiền trong ",
             "timeLimitMunite": "minutes",
@@ -3129,7 +3135,7 @@
             "notValidEmail": "Invalid email address",
             "requestSuccess": "Successfully Requested",
             "requestFailed": "Failed To Request",
-            "affiliateExisted": "Affiliate with this email already exists."
+            "affiliateExisted": "An affiliate application already exists for this email address."
         },
         "summary": {
             "title": "P2P lending done right. No fees. All loans secured.",
@@ -3170,6 +3176,32 @@
                 "2": {
                     "title": "CUT THROUGH THE NOISE",
                     "desc": "Whether you already monetize or not, our creative team will help boost the value and impact of your content. We can advise on SEO, copywriting, marketing, and more."
+                }
+            }
+        },
+        "howItWorks": {
+            "title": "How it works",
+            "desc": "\n      <p>There are <strong>no limits</strong> to the number of people you can refer for the $20 bonus.</p>\n      <p>Your Flex earnings are capped at $1,000,000.</p>",
+            "data": {
+                "0": {
+                    "title": " ",
+                    "desc": "Referee clicks your unique affiliate link."
+                },
+                "1": {
+                    "title": " ",
+                    "desc": "Referee signs up and passes KYC."
+                },
+                "2": {
+                    "title": " ",
+                    "desc": "You get $20 paid instantly to your Constant account."
+                },
+                "3": {
+                    "title": " ",
+                    "desc": "Your referee invests in Flex for 4% APY."
+                },
+                "4": {
+                    "title": " ",
+                    "desc": "You get 20% of their Flex earnings, paid every second."
                 }
             }
         },

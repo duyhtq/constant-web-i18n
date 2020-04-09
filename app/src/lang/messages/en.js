@@ -1569,6 +1569,11 @@ export default {
       updateEmail: 'Update Email',
       alreadyVerified: 'Your email address has already been verified. Thank you',
     },
+    withdrawEmailConfirm: {
+      alreadyVerified: 'Your withdrawal has already been confirmed. Thank you',
+      verifySuccess: 'Your withdrawal order has been confirmed successfully',
+      verifyFailed: 'Your confirmation link has expired. Please create a new withdrawal order',
+    },
     emailConfirm: {
       verifyFailed: 'Confirm failed, please try again!',
       verifySuccess: 'Your email was confirmed successfully.',
@@ -2979,7 +2984,11 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       two2faRequired: `
       <p>2FA authentication is required to do this action.</p>
       <p>Please enable your 2FA <a href="/me/securities" class="underline bold">here</a>.</p>
-`,
+      `,
+      verifyEmailRequired: `
+      <p>You need to verify your email to do this action.</p>
+      <p>Please verify your email <a href="/me/information" class="underline bold">here</a>.</p>
+      `,
       timeLimit: 'Your money will arrive within ',
       timeLimitMunite: 'minutes',
       timeLimit1: '24 hours',
@@ -3061,7 +3070,11 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       two2faRequired: `
       <p>2FA authentication is required to do this action.</p>
       <p>Please enable your 2FA <a href="/me/securities" class="underline bold">here</a>.</p>
-`,
+        `,
+      verifyEmailRequired: `
+      <p>You need to verify your email to do this action.</p>
+      <p>Please verify your email <a href="/me/information" class="underline bold">here</a>.</p>
+      `,
       timeLimitInWorkingTime: 'Your money will arrive within 1 hour',
       timeLimit: 'Your money will arrive within ',
       timeLimitMunite: 'minutes',
@@ -3456,6 +3469,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         loan: 'loan',
         staked: 'STAKED',
         amount: 'Amount',
+        matched: 'matched',
         pendingAmount: 'Pending Amount',
         collateralRequired: 'Collateral',
         collateralAddress: 'Collateral Address',

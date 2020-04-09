@@ -874,7 +874,8 @@
                 "confirm": "%%%.me.notificationSetting.secondaryMarketSetting.confirm%%%",
                 "cancel": "%%%.me.notificationSetting.secondaryMarketSetting.cancel%%%",
                 "updateSuccess": "%%%.me.notificationSetting.secondaryMarketSetting.updateSuccess%%%",
-                "disableSuccess": "%%%.me.notificationSetting.secondaryMarketSetting.disableSuccess%%%"
+                "disableSuccess": "%%%.me.notificationSetting.secondaryMarketSetting.disableSuccess%%%",
+                "enableSuccess": "%%%.me.notificationSetting.secondaryMarketSetting.enableSuccess%%%"
             }
         },
         "flexInterestConfig": {
@@ -1935,6 +1936,9 @@
         "secureReturns": {
             "title": "%%%.landingPage.secureReturns.title%%%"
         },
+        "steadyGrowth": {
+            "title": "%%%.landingPage.steadyGrowth.title%%%"
+        },
         "howItWorks": {
             "title": "%%%.landingPage.howItWorks.title%%%",
             "data": {
@@ -2441,6 +2445,7 @@
             "transferFailed": "%%%.home.transfer.transferFailed%%%",
             "transferSuccessful": "%%%.home.transfer.transferSuccessful%%%",
             "transferConfirm": "%%%.home.transfer.transferConfirm%%%",
+            "two2faRequired": "%%%.home.transfer.two2faRequired%%%",
             "timeLimit": "%%%.home.transfer.timeLimit%%%",
             "timeLimitMunite": "%%%.home.transfer.timeLimitMunite%%%",
             "timeLimit1": "%%%.home.transfer.timeLimit1%%%",
@@ -2497,6 +2502,7 @@
             "transferFailed": "%%%.home.transferCrypto.transferFailed%%%",
             "transferSuccessful": "%%%.home.transferCrypto.transferSuccessful%%%",
             "transferConfirm": "%%%.home.transferCrypto.transferConfirm%%%",
+            "two2faRequired": "%%%.home.transferCrypto.two2faRequired%%%",
             "timeLimitInWorkingTime": "%%%.home.transferCrypto.timeLimitInWorkingTime%%%",
             "timeLimit": "%%%.home.transferCrypto.timeLimit%%%",
             "timeLimitMunite": "%%%.home.transferCrypto.timeLimitMunite%%%",
@@ -3170,6 +3176,32 @@
                 "2": {
                     "title": "%%%.affiliates.whyBecome.data.2.title%%%",
                     "desc": "%%%.affiliates.whyBecome.data.2.desc%%%"
+                }
+            }
+        },
+        "howItWorks": {
+            "title": "%%%.affiliates.howItWorks.title%%%",
+            "desc": "%%%.affiliates.howItWorks.desc%%%",
+            "data": {
+                "0": {
+                    "title": "%%%.affiliates.howItWorks.data.0.title%%%",
+                    "desc": "%%%.affiliates.howItWorks.data.0.desc%%%"
+                },
+                "1": {
+                    "title": "%%%.affiliates.howItWorks.data.1.title%%%",
+                    "desc": "%%%.affiliates.howItWorks.data.1.desc%%%"
+                },
+                "2": {
+                    "title": "%%%.affiliates.howItWorks.data.2.title%%%",
+                    "desc": "%%%.affiliates.howItWorks.data.2.desc%%%"
+                },
+                "3": {
+                    "title": "%%%.affiliates.howItWorks.data.3.title%%%",
+                    "desc": "%%%.affiliates.howItWorks.data.3.desc%%%"
+                },
+                "4": {
+                    "title": "%%%.affiliates.howItWorks.data.4.title%%%",
+                    "desc": "%%%.affiliates.howItWorks.data.4.desc%%%"
                 }
             }
         },

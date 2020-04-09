@@ -1305,6 +1305,11 @@
             "updateEmail": "Cập nhật email",
             "alreadyVerified": "Địa chỉ email của bạn đã được xác minh. Cảm ơn"
         },
+        "withdrawEmailConfirm": {
+            "alreadyVerified": "Your withdrawal has already been confirmed. Thank you",
+            "verifySuccess": "Your withdrawal order has been confirmed successfully",
+            "verifyFailed": "Your confirmation link has expired. Please create a new withdrawal order"
+        },
         "emailConfirm": {
             "verifyFailed": "Xác nhận không thành công. Xin vui lòng thử lại.",
             "verifySuccess": "Xác minh email thành công.",
@@ -2445,7 +2450,8 @@
             "transferFailed": "Có lỗi xảy ra khi thực hiện giao dịch. Xin vui lòng thử lại",
             "transferSuccessful": "Giao dịch thành công",
             "transferConfirm": "We've already sent you a verification email, please confirm before we proceed your request.",
-            "two2faRequired": "\n      <p>2FA authentication is required to do this action.</p>\n      <p>Please enable your 2FA <a href=\"/me/securities\" class=\"underline bold\">here</a>.</p>\n",
+            "two2faRequired": "\n      <p>2FA authentication is required to do this action.</p>\n      <p>Please enable your 2FA <a href=\"/me/securities\" class=\"underline bold\">here</a>.</p>\n      ",
+            "verifyEmailRequired": "\n      <p>You need to verify your email to do this action.</p>\n      <p>Please verify your email <a href=\"/me/information\" class=\"underline bold\">here</a>.</p>\n      ",
             "timeLimit": "Bạn sẽ nhận được Constant trong ",
             "timeLimitMunite": "minutes",
             "timeLimit1": "24 hours",
@@ -2502,7 +2508,8 @@
             "transferFailed": "Có lỗi xảy ra khi thực hiện chuyển khoản. Xin vui lòng thử lại",
             "transferSuccessful": "Chuyển khoản thành công",
             "transferConfirm": "We've already sent you a verification email, please confirm before we proceed your request.",
-            "two2faRequired": "\n      <p>2FA authentication is required to do this action.</p>\n      <p>Please enable your 2FA <a href=\"/me/securities\" class=\"underline bold\">here</a>.</p>\n",
+            "two2faRequired": "\n      <p>2FA authentication is required to do this action.</p>\n      <p>Please enable your 2FA <a href=\"/me/securities\" class=\"underline bold\">here</a>.</p>\n        ",
+            "verifyEmailRequired": "\n      <p>You need to verify your email to do this action.</p>\n      <p>Please verify your email <a href=\"/me/information\" class=\"underline bold\">here</a>.</p>\n      ",
             "timeLimitInWorkingTime": "Bạn sẽ nhận được tiền trong 1 giờ",
             "timeLimit": "Bạn sẽ nhận được tiền trong ",
             "timeLimitMunite": "minutes",
@@ -2739,6 +2746,7 @@
                 "loan": "khoản vay",
                 "staked": "STAKED",
                 "amount": "Số lượng",
+                "matched": "matched",
                 "pendingAmount": "Số lượng đang chờ",
                 "collateralRequired": "Thế chấp",
                 "collateralAddress": "Địa chỉ tài sản thế chấp",

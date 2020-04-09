@@ -1305,6 +1305,11 @@
             "updateEmail": "%%%.me.emailVerification.updateEmail%%%",
             "alreadyVerified": "%%%.me.emailVerification.alreadyVerified%%%"
         },
+        "withdrawEmailConfirm": {
+            "alreadyVerified": "%%%.me.withdrawEmailConfirm.alreadyVerified%%%",
+            "verifySuccess": "%%%.me.withdrawEmailConfirm.verifySuccess%%%",
+            "verifyFailed": "%%%.me.withdrawEmailConfirm.verifyFailed%%%"
+        },
         "emailConfirm": {
             "verifyFailed": "%%%.me.emailConfirm.verifyFailed%%%",
             "verifySuccess": "%%%.me.emailConfirm.verifySuccess%%%",
@@ -2446,6 +2451,7 @@
             "transferSuccessful": "%%%.home.transfer.transferSuccessful%%%",
             "transferConfirm": "%%%.home.transfer.transferConfirm%%%",
             "two2faRequired": "%%%.home.transfer.two2faRequired%%%",
+            "verifyEmailRequired": "%%%.home.transfer.verifyEmailRequired%%%",
             "timeLimit": "%%%.home.transfer.timeLimit%%%",
             "timeLimitMunite": "%%%.home.transfer.timeLimitMunite%%%",
             "timeLimit1": "%%%.home.transfer.timeLimit1%%%",
@@ -2503,6 +2509,7 @@
             "transferSuccessful": "%%%.home.transferCrypto.transferSuccessful%%%",
             "transferConfirm": "%%%.home.transferCrypto.transferConfirm%%%",
             "two2faRequired": "%%%.home.transferCrypto.two2faRequired%%%",
+            "verifyEmailRequired": "%%%.home.transferCrypto.verifyEmailRequired%%%",
             "timeLimitInWorkingTime": "%%%.home.transferCrypto.timeLimitInWorkingTime%%%",
             "timeLimit": "%%%.home.transferCrypto.timeLimit%%%",
             "timeLimitMunite": "%%%.home.transferCrypto.timeLimitMunite%%%",
@@ -2739,6 +2746,7 @@
                 "loan": "%%%.home.constantLoan.listApplications.loan%%%",
                 "staked": "%%%.home.constantLoan.listApplications.staked%%%",
                 "amount": "%%%.home.constantLoan.listApplications.amount%%%",
+                "matched": "%%%.home.constantLoan.listApplications.matched%%%",
                 "pendingAmount": "%%%.home.constantLoan.listApplications.pendingAmount%%%",
                 "collateralRequired": "%%%.home.constantLoan.listApplications.collateralRequired%%%",
                 "collateralAddress": "%%%.home.constantLoan.listApplications.collateralAddress%%%",

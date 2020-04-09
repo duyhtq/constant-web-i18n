@@ -1260,6 +1260,9 @@
 %%%.me.emailVerification.pleaseUpdateEmail%%%,"Please update your email to activate your account"
 %%%.me.emailVerification.updateEmail%%%,"Update Email"
 %%%.me.emailVerification.alreadyVerified%%%,"Your email address has already been verified. Thank you"
+%%%.me.withdrawEmailConfirm.alreadyVerified%%%,"Your withdrawal has already been confirmed. Thank you"
+%%%.me.withdrawEmailConfirm.verifySuccess%%%,"Your withdrawal order has been confirmed successfully"
+%%%.me.withdrawEmailConfirm.verifyFailed%%%,"Your confirmation link has expired. Please create a new withdrawal order"
 %%%.me.emailConfirm.verifyFailed%%%,"Confirm failed, please try again!"
 %%%.me.emailConfirm.verifySuccess%%%,"Your email was confirmed successfully."
 %%%.me.emailConfirm.alreadyVerified%%%,"Your email address has already been confirmed. Thank you"
@@ -2277,7 +2280,11 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.transfer.two2faRequired%%%,"
       <p>2FA authentication is required to do this action.</p>
       <p>Please enable your 2FA <a href=""/me/securities"" class=""underline bold"">here</a>.</p>
-"
+      "
+%%%.home.transfer.verifyEmailRequired%%%,"
+      <p>You need to verify your email to do this action.</p>
+      <p>Please verify your email <a href=""/me/information"" class=""underline bold"">here</a>.</p>
+      "
 %%%.home.transfer.timeLimit%%%,"Your money will arrive within "
 %%%.home.transfer.timeLimitMunite%%%,"minutes"
 %%%.home.transfer.timeLimit1%%%,"24 hours"
@@ -2338,7 +2345,11 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.transferCrypto.two2faRequired%%%,"
       <p>2FA authentication is required to do this action.</p>
       <p>Please enable your 2FA <a href=""/me/securities"" class=""underline bold"">here</a>.</p>
-"
+        "
+%%%.home.transferCrypto.verifyEmailRequired%%%,"
+      <p>You need to verify your email to do this action.</p>
+      <p>Please verify your email <a href=""/me/information"" class=""underline bold"">here</a>.</p>
+      "
 %%%.home.transferCrypto.timeLimitInWorkingTime%%%,"Your money will arrive within 1 hour"
 %%%.home.transferCrypto.timeLimit%%%,"Your money will arrive within "
 %%%.home.transferCrypto.timeLimitMunite%%%,"minutes"
@@ -2675,6 +2686,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.constantLoan.listApplications.loan%%%,"loan"
 %%%.home.constantLoan.listApplications.staked%%%,"STAKED"
 %%%.home.constantLoan.listApplications.amount%%%,"Amount"
+%%%.home.constantLoan.listApplications.matched%%%,"matched"
 %%%.home.constantLoan.listApplications.pendingAmount%%%,"Pending Amount"
 %%%.home.constantLoan.listApplications.collateralRequired%%%,"Collateral"
 %%%.home.constantLoan.listApplications.collateralAddress%%%,"Collateral Address"

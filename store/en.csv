@@ -73,8 +73,8 @@
 %%%.footer.cta.type11.title%%%,"<h3>Borrow the way you want</h3>"
 %%%.footer.cta.type11.btn%%%,"Sign up now"
 %%%.footer.company.name%%%,"CONST LLC"
-%%%.footer.company.address1%%%,"101 E Redlands Blvd"
-%%%.footer.company.address2%%%," Redlands, CA 92373, USA"
+%%%.footer.company.address1%%%,"21800 Opportunity Way"
+%%%.footer.company.address2%%%,"Riverside, CA 92508, USA"
 %%%.footer.getSocial%%%,"Follow"
 %%%.footer.titleFoundation%%%,"About"
 %%%.footer.titleConstant%%%,"Constant"
@@ -2278,8 +2278,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.transfer.transferSuccessful%%%,"Your transfer was completed successfully"
 %%%.home.transfer.transferConfirm%%%,"We've already sent you a verification email, please confirm before we proceed your request."
 %%%.home.transfer.two2faRequired%%%,"
-      <p>2FA authentication is required to do this action.</p>
-      <p>Please enable your 2FA <a href=""/me/securities"" class=""underline bold"">here</a>.</p>
+        <p><span class=""bold"">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=""/me/securities"" class=""underline bold"">here</a> or go to Setting > Account security > enable Google Authentication.</p>
+        <p>If you have problems, email <a href=""mailto://hello@myconstant.com"">hello@myconstant.com</a>.</p>
       "
 %%%.home.transfer.verifyEmailRequired%%%,"
       <p>You need to verify your email to do this action.</p>
@@ -2343,9 +2343,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.transferCrypto.transferSuccessful%%%,"Your transfer was completed successfully"
 %%%.home.transferCrypto.transferConfirm%%%,"We've already sent you a verification email, please confirm before we proceed your request."
 %%%.home.transferCrypto.two2faRequired%%%,"
-      <p>2FA authentication is required to do this action.</p>
-      <p>Please enable your 2FA <a href=""/me/securities"" class=""underline bold"">here</a>.</p>
-        "
+        <p><span class=""bold"">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=""/me/securities"" class=""underline bold"">here</a> or go to Setting > Account security > enable Google Authentication.</p>
+        <p>If you have problems, email <a href=""mailto://hello@myconstant.com"">hello@myconstant.com</a>.</p>
+      "
 %%%.home.transferCrypto.verifyEmailRequired%%%,"
       <p>You need to verify your email to do this action.</p>
       <p>Please verify your email <a href=""/me/information"" class=""underline bold"">here</a>.</p>
@@ -3054,7 +3054,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.affiliates.greetingForm.inviteFriends%%%,"Invite friends"
 %%%.affiliates.applyForm.title%%%,"
         <p class=""header"">Get paid for your content.</p>
-        <p>Become a Constant affiliate and earn money on your content. <strong>Get $20</strong> for every person you refer plus <strong>20% of their Flex interest</strong> for life. Refer as many people as you like, however you like. </p>
+        <p>Become a Constant affiliate and earn money on your content. <strong>Get $20</strong> for every person<sup>1</sup> you refer plus <strong>20% of their Flex interest</strong> for life. Refer as many people as you like, however you like. </p>
+      "
+%%%.affiliates.applyForm.titleDesc%%%,"
+      <p class=""reference""><sup>1</sup> To qualify for the $20 reward, your referee must be a US citizen.</p>
       "
 %%%.affiliates.applyForm.userName%%%,"Your name"
 %%%.affiliates.applyForm.userEmail%%%,"Your email address"
@@ -3063,6 +3066,24 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.affiliates.applyForm.requestSuccess%%%,"Successfully Requested"
 %%%.affiliates.applyForm.requestFailed%%%,"Failed To Request"
 %%%.affiliates.applyForm.affiliateExisted%%%,"An affiliate application already exists for this email address."
+%%%.affiliates.applicationForm.title%%%,"
+      <p class=""header"">Constant Affiliate Application Form</p>
+      "
+%%%.affiliates.applicationForm.desc%%%,"
+      <p>Thanks for your interest in our affiliate program. To progress your application, please fill out the details below:</p>
+        "
+%%%.affiliates.applicationForm.fullName%%%,"Your full name (as it appears on your ID)"
+%%%.affiliates.applicationForm.emailAddress%%%,"Email address"
+%%%.affiliates.applicationForm.phoneNumber%%%,"Phone number"
+%%%.affiliates.applicationForm.permanentAddress%%%,"Permanent address (in full)"
+%%%.affiliates.applicationForm.taxId%%%,"Tax ID"
+%%%.affiliates.applicationForm.website%%%,"Website"
+%%%.affiliates.applicationForm.socialMediaLinks%%%,"Social media links"
+%%%.affiliates.applicationForm.howToAdvertise%%%,"How will you advertise us? (CPC, blog, SEO, and so on)"
+%%%.affiliates.applicationForm.others%%%,"Anything else that might help us approve your application"
+%%%.affiliates.applicationForm.applyNow%%%,"Apply now"
+%%%.affiliates.applicationForm.requestSuccess%%%,"Successfully Submitted"
+%%%.affiliates.applicationForm.requestFailed%%%,"Failed To Submit"
 %%%.affiliates.summary.title%%%,"P2P lending done right. No fees. All loans secured."
 %%%.affiliates.summary.data.0.title%%%,"8.5%"
 %%%.affiliates.summary.data.0.desc%%%,"average net annual return"
@@ -3073,7 +3094,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.affiliates.whyBecome.title%%%,"Why become an affiliate?"
 %%%.affiliates.whyBecome.desc%%%,"
         <div class=""section-desc-title"">YOU EARN MORE</div>
-        <div><strong>Earn $20 for every registration</strong>, paid instantly after they pass KYC, and with no limits.</div>
+        <div><strong>Earn $20 for every US citizen who registers</strong>, paid instantly after they pass KYC, and with no limits.</div>
         <div><strong>Then earn 20% of their Flex interest</strong>, paid every second, and capped at a generous $1,000,000.</div>
         <div><strong>Your referee also gets $10</strong> when they pass KYC. </div>
       "
@@ -3726,6 +3747,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.exchangeInputSellForm.toAWallet%%%,"To an ETH/EOS wallet"
 %%%.exchangeInputSellForm.walletAddr%%%,"Ethereum/EOS wallet address"
 %%%.exchangeInputSellForm.input2FA%%%,"Input 2FA"
+%%%.exchangeInputSellForm.two2faRequired%%%,"
+      <p><span class=""bold"">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=""/me/securities"" class=""underline bold"">here</a> or go to Setting > Account security > enable Google Authentication.</p>
+      <p>If you have problems, email <a href=""mailto://hello@myconstant.com"">hello@myconstant.com</a>.</p>
+    "
 %%%.exchangeInputSellForm.withdrawFailed%%%,"Something went wrong. Please try again."
 %%%.exchangeInputSellForm.withdrawSuccessful%%%,"Your withdrawal was completed successfully."
 %%%.exchangeInputSellForm.countryNotSupport%%%,"Your country is not supported at the moment. Our support team will get in touch with you via email."
@@ -4096,8 +4121,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.ours.team.captions.2.link%%%,"/blog/constant-shines-at-ces-2019"
 %%%.ours.localOffices.title%%%,"Local Offices"
 %%%.ours.localOffices.offices.us.name%%%,"United States"
-%%%.ours.localOffices.offices.us.address1%%%,"101 E Redlands Blvd"
-%%%.ours.localOffices.offices.us.address2%%%,"Redlands CA 92373"
+%%%.ours.localOffices.offices.us.address1%%%,"21800 Opportunity Way"
+%%%.ours.localOffices.offices.us.address2%%%,"Riverside, CA 92508, USA"
 %%%.ours.localOffices.offices.us.phone%%%,"+1 844 201 7242"
 %%%.ours.localOffices.offices.hk.name%%%,"Hong Kong"
 %%%.ours.localOffices.offices.hk.address1%%%,"Flat A, 18/F, 88 Commercial Building"
@@ -6224,8 +6249,12 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.notification.loan.membershipPoint.desc%%%,"You earned {amount} points for borrowing ${amount}. Your total is now {totalAmount} points – you need just {amountToNextLevel} to reach {nextLevel}!"
 %%%.notification.loan.membershipPointMax.title%%%,"Congrats! You earned {amount} membership points"
 %%%.notification.loan.membershipPointMax.desc%%%,"You earned {amount} points for borrowing ${amount}. Your total is now {totalAmount} points."
-%%%.notification.promotion.membership.title%%%,"title"
-%%%.notification.promotion.membership.desc%%%,"desc"
+%%%.notification.deposit.done.title%%%,"We received your deposit"
+%%%.notification.deposit.done.desc%%%,"Your deposit of ${amount} is in your account and ready to use. Your new balance is ${balance}."
+%%%.notification.transfer.received.title%%%,"You received a transfer"
+%%%.notification.transfer.received.desc%%%,"You have received a transfer of ${amount} from {fromEmail}."
+%%%.notification.transfer.sent.title%%%,"Your transfer was successful"
+%%%.notification.transfer.sent.desc%%%,"You sent ${amount} to {toEmail}."
 %%%.notification.system.inform.title%%%,"Information"
 %%%.notification.system.inform.desc%%%,"{content}"
 %%%.notification.nextLevel.0%%%," "

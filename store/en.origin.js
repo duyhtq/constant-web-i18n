@@ -3137,6 +3137,7 @@
         },
         "applyForm": {
             "title": "%%%.affiliates.applyForm.title%%%",
+            "titleDesc": "%%%.affiliates.applyForm.titleDesc%%%",
             "userName": "%%%.affiliates.applyForm.userName%%%",
             "userEmail": "%%%.affiliates.applyForm.userEmail%%%",
             "applyNow": "%%%.affiliates.applyForm.applyNow%%%",
@@ -3144,6 +3145,22 @@
             "requestSuccess": "%%%.affiliates.applyForm.requestSuccess%%%",
             "requestFailed": "%%%.affiliates.applyForm.requestFailed%%%",
             "affiliateExisted": "%%%.affiliates.applyForm.affiliateExisted%%%"
+        },
+        "applicationForm": {
+            "title": "%%%.affiliates.applicationForm.title%%%",
+            "desc": "%%%.affiliates.applicationForm.desc%%%",
+            "fullName": "%%%.affiliates.applicationForm.fullName%%%",
+            "emailAddress": "%%%.affiliates.applicationForm.emailAddress%%%",
+            "phoneNumber": "%%%.affiliates.applicationForm.phoneNumber%%%",
+            "permanentAddress": "%%%.affiliates.applicationForm.permanentAddress%%%",
+            "taxId": "%%%.affiliates.applicationForm.taxId%%%",
+            "website": "%%%.affiliates.applicationForm.website%%%",
+            "socialMediaLinks": "%%%.affiliates.applicationForm.socialMediaLinks%%%",
+            "howToAdvertise": "%%%.affiliates.applicationForm.howToAdvertise%%%",
+            "others": "%%%.affiliates.applicationForm.others%%%",
+            "applyNow": "%%%.affiliates.applicationForm.applyNow%%%",
+            "requestSuccess": "%%%.affiliates.applicationForm.requestSuccess%%%",
+            "requestFailed": "%%%.affiliates.applicationForm.requestFailed%%%"
         },
         "summary": {
             "title": "%%%.affiliates.summary.title%%%",
@@ -3686,6 +3703,7 @@
         "toAWallet": "%%%.exchangeInputSellForm.toAWallet%%%",
         "walletAddr": "%%%.exchangeInputSellForm.walletAddr%%%",
         "input2FA": "%%%.exchangeInputSellForm.input2FA%%%",
+        "two2faRequired": "%%%.exchangeInputSellForm.two2faRequired%%%",
         "withdrawFailed": "%%%.exchangeInputSellForm.withdrawFailed%%%",
         "withdrawSuccessful": "%%%.exchangeInputSellForm.withdrawSuccessful%%%",
         "countryNotSupport": "%%%.exchangeInputSellForm.countryNotSupport%%%",
@@ -6533,10 +6551,20 @@
                 "desc": "%%%.notification.loan.membershipPointMax.desc%%%"
             }
         },
-        "promotion": {
-            "membership": {
-                "title": "%%%.notification.promotion.membership.title%%%",
-                "desc": "%%%.notification.promotion.membership.desc%%%"
+        "deposit": {
+            "done": {
+                "title": "%%%.notification.deposit.done.title%%%",
+                "desc": "%%%.notification.deposit.done.desc%%%"
+            }
+        },
+        "transfer": {
+            "received": {
+                "title": "%%%.notification.transfer.received.title%%%",
+                "desc": "%%%.notification.transfer.received.desc%%%"
+            },
+            "sent": {
+                "title": "%%%.notification.transfer.sent.title%%%",
+                "desc": "%%%.notification.transfer.sent.desc%%%"
             }
         },
         "system": {

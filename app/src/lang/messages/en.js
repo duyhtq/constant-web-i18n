@@ -113,8 +113,8 @@ export default {
     },
     company: {
       name: 'CONST LLC',
-      address1: '101 E Redlands Blvd',
-      address2: ' Redlands, CA 92373, USA',
+      address1: '21800 Opportunity Way',
+      address2: 'Riverside, CA 92508, USA',
     },
     getSocial: 'Follow',
     titleFoundation: 'About',
@@ -2982,8 +2982,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       transferSuccessful: 'Your transfer was completed successfully',
       transferConfirm: `We've already sent you a verification email, please confirm before we proceed your request.`,
       two2faRequired: `
-      <p>2FA authentication is required to do this action.</p>
-      <p>Please enable your 2FA <a href="/me/securities" class="underline bold">here</a>.</p>
+        <p><span class="bold">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href="/me/securities" class="underline bold">here</a> or go to Setting > Account security > enable Google Authentication.</p>
+        <p>If you have problems, email <a href="mailto://hello@myconstant.com">hello@myconstant.com</a>.</p>
       `,
       verifyEmailRequired: `
       <p>You need to verify your email to do this action.</p>
@@ -3068,9 +3068,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       transferSuccessful: 'Your transfer was completed successfully',
       transferConfirm: `We've already sent you a verification email, please confirm before we proceed your request.`,
       two2faRequired: `
-      <p>2FA authentication is required to do this action.</p>
-      <p>Please enable your 2FA <a href="/me/securities" class="underline bold">here</a>.</p>
-        `,
+        <p><span class="bold">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href="/me/securities" class="underline bold">here</a> or go to Setting > Account security > enable Google Authentication.</p>
+        <p>If you have problems, email <a href="mailto://hello@myconstant.com">hello@myconstant.com</a>.</p>
+      `,
       verifyEmailRequired: `
       <p>You need to verify your email to do this action.</p>
       <p>Please verify your email <a href="/me/information" class="underline bold">here</a>.</p>
@@ -3955,7 +3955,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     applyForm: {
       title:`
         <p class="header">Get paid for your content.</p>
-        <p>Become a Constant affiliate and earn money on your content. <strong>Get $20</strong> for every person you refer plus <strong>20% of their Flex interest</strong> for life. Refer as many people as you like, however you like. </p>
+        <p>Become a Constant affiliate and earn money on your content. <strong>Get $20</strong> for every person<sup>1</sup> you refer plus <strong>20% of their Flex interest</strong> for life. Refer as many people as you like, however you like. </p>
+      `,
+      titleDesc: `
+      <p class="reference"><sup>1</sup> To qualify for the $20 reward, your referee must be a US citizen.</p>
       `,
       userName: 'Your name',
       userEmail: 'Your email address',
@@ -3964,6 +3967,26 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       requestSuccess: 'Successfully Requested',
       requestFailed: 'Failed To Request',
       affiliateExisted: 'An affiliate application already exists for this email address.',
+    },
+    applicationForm: {
+      title: `
+      <p class="header">Constant Affiliate Application Form</p>
+      `,
+      desc: `
+      <p>Thanks for your interest in our affiliate program. To progress your application, please fill out the details below:</p>
+        `,
+      fullName: 'Your full name (as it appears on your ID)',
+      emailAddress: 'Email address',
+      phoneNumber: 'Phone number',
+      permanentAddress: 'Permanent address (in full)',
+      taxId: 'Tax ID',
+      website: 'Website',
+      socialMediaLinks: 'Social media links',
+      howToAdvertise: 'How will you advertise us? (CPC, blog, SEO, and so on)',
+      others: 'Anything else that might help us approve your application',
+      applyNow: 'Apply now',
+      requestSuccess: 'Successfully Submitted',
+      requestFailed: 'Failed To Submit',
     },
     summary: {
       title: 'P2P lending done right. No fees. All loans secured.',
@@ -3986,7 +4009,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       title: 'Why become an affiliate?',
       desc: `
         <div class="section-desc-title">YOU EARN MORE</div>
-        <div><strong>Earn $20 for every registration</strong>, paid instantly after they pass KYC, and with no limits.</div>
+        <div><strong>Earn $20 for every US citizen who registers</strong>, paid instantly after they pass KYC, and with no limits.</div>
         <div><strong>Then earn 20% of their Flex interest</strong>, paid every second, and capped at a generous $1,000,000.</div>
         <div><strong>Your referee also gets $10</strong> when they pass KYC. </div>
       `,
@@ -4845,6 +4868,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     toAWallet: 'To an ETH/EOS wallet',
     walletAddr: 'Ethereum/EOS wallet address',
     input2FA: 'Input 2FA',
+    two2faRequired: `
+      <p><span class="bold">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href="/me/securities" class="underline bold">here</a> or go to Setting > Account security > enable Google Authentication.</p>
+      <p>If you have problems, email <a href="mailto://hello@myconstant.com">hello@myconstant.com</a>.</p>
+    `,
     withdrawFailed: 'Something went wrong. Please try again.',
     withdrawSuccessful: 'Your withdrawal was completed successfully.',
     countryNotSupport: 'Your country is not supported at the moment. Our support team will get in touch with you via email.',
@@ -5459,8 +5486,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       offices: {
         us: {
           name: 'United States',
-          address1: '101 E Redlands Blvd',
-          address2: 'Redlands CA 92373',
+          address1: '21800 Opportunity Way',
+          address2: 'Riverside, CA 92508, USA',
           phone: '+1 844 201 7242',
         },
         hk: {
@@ -8445,10 +8472,20 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         desc: `You earned {amount} points for borrowing \${amount}. Your total is now {totalAmount} points.`
       },
     },
-    promotion: {
-      membership: {
-        title: 'title',
-        desc: `desc`
+    deposit: {
+      done: {
+        title: 'We received your deposit',
+        desc: `Your deposit of \${amount} is in your account and ready to use. Your new balance is \${balance}.`
+      }
+    },
+    transfer: {
+      received: {
+        title: 'You received a transfer',
+        desc: `You have received a transfer of \${amount} from {fromEmail}.`
+      },
+      sent: {
+        title: 'Your transfer was successful',
+        desc: `You sent \${amount} to {toEmail}.`
       }
     },
     system: {

@@ -273,6 +273,7 @@
         "constantLoan": "%%%.headerBar.constantLoan%%%",
         "saveAndGrowMoney": "%%%.headerBar.saveAndGrowMoney%%%",
         "login": "%%%.headerBar.login%%%",
+        "signup": "%%%.headerBar.signup%%%",
         "openAnAccount": "%%%.headerBar.openAnAccount%%%",
         "yourSaving": "%%%.headerBar.yourSaving%%%",
         "myInvestments": "%%%.headerBar.myInvestments%%%",
@@ -427,6 +428,7 @@
             "myInformation": "%%%.me.navigation.myInformation%%%",
             "securities": "%%%.me.navigation.securities%%%",
             "notification_settings": "%%%.me.navigation.notification_settings%%%",
+            "email_settings": "%%%.me.navigation.email_settings%%%",
             "sellOrders": "%%%.me.navigation.sellOrders%%%",
             "buyOrders": "%%%.me.navigation.buyOrders%%%",
             "bookingOrders": "%%%.me.navigation.bookingOrders%%%",
@@ -788,6 +790,7 @@
                 "step1": "%%%.me.twoFa.qrScanModal.step1%%%",
                 "step2": "%%%.me.twoFa.qrScanModal.step2%%%",
                 "description": "%%%.me.twoFa.qrScanModal.description%%%",
+                "requireVerifiedEmail": "%%%.me.twoFa.qrScanModal.requireVerifiedEmail%%%",
                 "canNotScanCode": "%%%.me.twoFa.qrScanModal.canNotScanCode%%%",
                 "inputCode": "%%%.me.twoFa.qrScanModal.inputCode%%%",
                 "inputAuthCode": "%%%.me.twoFa.qrScanModal.inputAuthCode%%%",
@@ -876,6 +879,26 @@
                 "updateSuccess": "%%%.me.notificationSetting.secondaryMarketSetting.updateSuccess%%%",
                 "disableSuccess": "%%%.me.notificationSetting.secondaryMarketSetting.disableSuccess%%%",
                 "enableSuccess": "%%%.me.notificationSetting.secondaryMarketSetting.enableSuccess%%%"
+            }
+        },
+        "emailSetting": {
+            "title": "%%%.me.emailSetting.title%%%",
+            "emailConfirmation": {
+                "title": "%%%.me.emailSetting.emailConfirmation.title%%%",
+                "desc": "%%%.me.emailSetting.emailConfirmation.desc%%%",
+                "labelOff": "%%%.me.emailSetting.emailConfirmation.labelOff%%%",
+                "labelOn": "%%%.me.emailSetting.emailConfirmation.labelOn%%%",
+                "noteOn": "%%%.me.emailSetting.emailConfirmation.noteOn%%%",
+                "noteOff": "%%%.me.emailSetting.emailConfirmation.noteOff%%%",
+                "messageConfirmEnable": "%%%.me.emailSetting.emailConfirmation.messageConfirmEnable%%%",
+                "messageConfirmDisable": "%%%.me.emailSetting.emailConfirmation.messageConfirmDisable%%%",
+                "confirm": "%%%.me.emailSetting.emailConfirmation.confirm%%%",
+                "cancel": "%%%.me.emailSetting.emailConfirmation.cancel%%%",
+                "disableSuccess": "%%%.me.emailSetting.emailConfirmation.disableSuccess%%%",
+                "enableSuccess": "%%%.me.emailSetting.emailConfirmation.enableSuccess%%%",
+                "disableFailed": "%%%.me.emailSetting.emailConfirmation.disableFailed%%%",
+                "enableFailed": "%%%.me.emailSetting.emailConfirmation.enableFailed%%%",
+                "two2faRequired": "%%%.me.emailSetting.emailConfirmation.two2faRequired%%%"
             }
         },
         "flexInterestConfig": {
@@ -1038,6 +1061,12 @@
                 "15": "%%%.me.history.orderType.15%%%",
                 "16": "%%%.me.history.orderType.16%%%",
                 "17": "%%%.me.history.orderType.17%%%",
+                "18": "%%%.me.history.orderType.18%%%",
+                "19": "%%%.me.history.orderType.19%%%",
+                "20": "%%%.me.history.orderType.20%%%",
+                "21": "%%%.me.history.orderType.21%%%",
+                "22": "%%%.me.history.orderType.22%%%",
+                "23": "%%%.me.history.orderType.23%%%",
                 "101": "%%%.me.history.orderType.101%%%",
                 "102": "%%%.me.history.orderType.102%%%",
                 "received": "%%%.me.history.orderType.received%%%"
@@ -1137,7 +1166,9 @@
                 "1": "%%%.me.history.withdrawStatus.1%%%",
                 "2": "%%%.me.history.withdrawStatus.2%%%",
                 "3": "%%%.me.history.withdrawStatus.3%%%",
-                "4": "%%%.me.history.withdrawStatus.4%%%"
+                "4": "%%%.me.history.withdrawStatus.4%%%",
+                "5": "%%%.me.history.withdrawStatus.5%%%",
+                "6": "%%%.me.history.withdrawStatus.6%%%"
             }
         },
         "transferOrders": {
@@ -1813,6 +1844,7 @@
             "email": "%%%.user.login.email%%%",
             "password": "%%%.user.login.password%%%",
             "loginButton": "%%%.user.login.loginButton%%%",
+            "loginSignupButton": "%%%.user.login.loginSignupButton%%%",
             "keepSignin": "%%%.user.login.keepSignin%%%",
             "registerText": "%%%.user.login.registerText%%%",
             "registerButton": "%%%.user.login.registerButton%%%",
@@ -1825,7 +1857,7 @@
             "loginFailure": "%%%.user.login.loginFailure%%%",
             "warningVerify": "%%%.user.login.warningVerify%%%",
             "warningVerifyNow": "%%%.user.login.warningVerifyNow%%%",
-            "two2faRequired": "%%%.user.login.two2faRequired%%%",
+            "twoFaRequired": "%%%.user.login.twoFaRequired%%%",
             "loginSocialTitle": "%%%.user.login.loginSocialTitle%%%",
             "loginEmailTitle": "%%%.user.login.loginEmailTitle%%%",
             "loginFailed": "%%%.user.login.loginFailed%%%"
@@ -2450,7 +2482,7 @@
             "transferFailed": "%%%.home.transfer.transferFailed%%%",
             "transferSuccessful": "%%%.home.transfer.transferSuccessful%%%",
             "transferConfirm": "%%%.home.transfer.transferConfirm%%%",
-            "two2faRequired": "%%%.home.transfer.two2faRequired%%%",
+            "twoFaRequired": "%%%.home.transfer.twoFaRequired%%%",
             "verifyEmailRequired": "%%%.home.transfer.verifyEmailRequired%%%",
             "timeLimit": "%%%.home.transfer.timeLimit%%%",
             "timeLimitMunite": "%%%.home.transfer.timeLimitMunite%%%",
@@ -2508,7 +2540,7 @@
             "transferFailed": "%%%.home.transferCrypto.transferFailed%%%",
             "transferSuccessful": "%%%.home.transferCrypto.transferSuccessful%%%",
             "transferConfirm": "%%%.home.transferCrypto.transferConfirm%%%",
-            "two2faRequired": "%%%.home.transferCrypto.two2faRequired%%%",
+            "twoFaRequired": "%%%.home.transferCrypto.twoFaRequired%%%",
             "verifyEmailRequired": "%%%.home.transferCrypto.verifyEmailRequired%%%",
             "timeLimitInWorkingTime": "%%%.home.transferCrypto.timeLimitInWorkingTime%%%",
             "timeLimit": "%%%.home.transferCrypto.timeLimit%%%",
@@ -3703,7 +3735,7 @@
         "toAWallet": "%%%.exchangeInputSellForm.toAWallet%%%",
         "walletAddr": "%%%.exchangeInputSellForm.walletAddr%%%",
         "input2FA": "%%%.exchangeInputSellForm.input2FA%%%",
-        "two2faRequired": "%%%.exchangeInputSellForm.two2faRequired%%%",
+        "twoFaRequired": "%%%.exchangeInputSellForm.twoFaRequired%%%",
         "withdrawFailed": "%%%.exchangeInputSellForm.withdrawFailed%%%",
         "withdrawSuccessful": "%%%.exchangeInputSellForm.withdrawSuccessful%%%",
         "countryNotSupport": "%%%.exchangeInputSellForm.countryNotSupport%%%",
@@ -3759,6 +3791,7 @@
         "makeLocalOrderFailed": "%%%.send.makeLocalOrderFailed%%%",
         "makeDirectOrderSuccess": "%%%.send.makeDirectOrderSuccess%%%",
         "makeDirectOrderFailed": "%%%.send.makeDirectOrderFailed%%%",
+        "transferConfirm": "%%%.send.transferConfirm%%%",
         "info": {
             "title": "%%%.send.info.title%%%",
             "desc1": "%%%.send.info.desc1%%%",
@@ -4025,9 +4058,7 @@
             "question3": "%%%.newHome.faqs.question3%%%",
             "answer3": "%%%.newHome.faqs.answer3%%%",
             "question4": "%%%.newHome.faqs.question4%%%",
-            "answer4": "%%%.newHome.faqs.answer4%%%",
-            "question5": "%%%.newHome.faqs.question5%%%",
-            "answer5": "%%%.newHome.faqs.answer5%%%"
+            "answer4": "%%%.newHome.faqs.answer4%%%"
         },
         "howItWorks": {
             "title": "%%%.newHome.howItWorks.title%%%",
@@ -4820,7 +4851,9 @@
                 "cancel": "%%%.proLending.balances.withdrawFrom.cancel%%%",
                 "withdrawFailed": "%%%.proLending.balances.withdrawFrom.withdrawFailed%%%",
                 "withdrawFailedSameAddress": "%%%.proLending.balances.withdrawFrom.withdrawFailedSameAddress%%%",
-                "withdrawSuccess": "%%%.proLending.balances.withdrawFrom.withdrawSuccess%%%"
+                "withdrawSuccess": "%%%.proLending.balances.withdrawFrom.withdrawSuccess%%%",
+                "transferConfirm": "%%%.proLending.balances.withdrawFrom.transferConfirm%%%",
+                "twoFaRequired": "%%%.proLending.balances.withdrawFrom.twoFaRequired%%%"
             }
         },
         "deposits": {
@@ -6565,6 +6598,18 @@
             "sent": {
                 "title": "%%%.notification.transfer.sent.title%%%",
                 "desc": "%%%.notification.transfer.sent.desc%%%"
+            }
+        },
+        "transfer_crypto": {
+            "sent": {
+                "title": "%%%.notification.transfer_crypto.sent.title%%%",
+                "desc": "%%%.notification.transfer_crypto.sent.desc%%%"
+            }
+        },
+        "withdraw": {
+            "fiat": {
+                "title": "%%%.notification.withdraw.fiat.title%%%",
+                "desc": "%%%.notification.withdraw.fiat.desc%%%"
             }
         },
         "system": {

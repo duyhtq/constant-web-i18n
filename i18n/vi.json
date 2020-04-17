@@ -273,6 +273,7 @@
         "constantLoan": "Vay Constant",
         "saveAndGrowMoney": "Tiết kiệm & Hưởng ưu đãi",
         "login": "Đăng nhập",
+        "signup": " | Sign up",
         "openAnAccount": "Đăng kí tài khoản",
         "yourSaving": "Tài khoản",
         "myInvestments": "Đầu tư của tôi",
@@ -427,6 +428,7 @@
             "myInformation": "Chi tiết tài khoản",
             "securities": "Bảo mật tài khoản",
             "notification_settings": "Notification Settings",
+            "email_settings": "Email Settings",
             "sellOrders": "Lệnh bán",
             "buyOrders": "Lệnh mua",
             "bookingOrders": "Lệnh giảm giá",
@@ -476,7 +478,7 @@
             "verifiedMsg": "\n<p>Tuyệt vời! Mọi thứ đã hoàn thành và danh tính của bạn đã được xác minh</p>\n<p>Cảm ơn bạn đã dành thời gian giới thiệu về bản thân.</p>\n<p>Hãy trải nghiệm Constant một cách đầy đủ nhất.</p>      ",
             "titleStep1": "Chào bạn. Xin hãy giới thiệu về bản mình.",
             "titleStep2": "Cảm ơn. Bây giờ bạn cần xác nhận địa chỉ của mình.",
-            "lEmail": "Địa chỉ Email ",
+            "lEmail": "Email Address",
             "discardNoteTitle": "Yêu cầu KYC của bạn vẫn chưa được chấp nhận vì:",
             "discardNote": "Hãy đảm bảo tất cả tài liệu của bạn đang theo thứ tự và nhấn nộp lại.",
             "plEmail": "Email Address",
@@ -788,6 +790,7 @@
                 "step1": "Bước 1",
                 "step2": "Bước 2",
                 "description": "Xin vui lòng scan mã QR này bằng Google Authenticator hoặc Authy rồi nhập mã OTP bạn thấy ở trong ứng dụng.",
+                "requireVerifiedEmail": "\n          <p>Please <a class=\"underline bold\" href=\"/me/information\">update your email</a> and verify it to generate QR code for scanning with Google Authenticator or Authy.</p>\n        ",
                 "canNotScanCode": "Nếu bạn không thể scan mã QR, xin vui lòng nhập mã này trực tiếp vào Google Authenticator hoặc Authy.",
                 "inputCode": "Nhập mật khẩu",
                 "inputAuthCode": "Mã xác thực 2FA",
@@ -876,6 +879,26 @@
                 "updateSuccess": "Successfully Updated",
                 "disableSuccess": "Successfully Disabled",
                 "enableSuccess": "Successfully Enabled"
+            }
+        },
+        "emailSetting": {
+            "title": "Email Settings",
+            "emailConfirmation": {
+                "title": "Email Confirmations",
+                "desc": "\n        <p>\n        Enable email confirmations add extra security to your account. When you withdraw or transfer USD, crypto, or stablecoins, we’ll email you a link to authorize the transaction. This is in addition to 2-Factor Authorization.\n        </p>\n        ",
+                "labelOff": "Enable",
+                "labelOn": "Disable",
+                "noteOn": "<p>Nice – email confirmations are enabled on all withdrawals and transfers. Whenever you withdraw or transfer USD, cryptocurrency, or stablecoins, we’ll email you a link to authorize the transaction.</p>\n            ",
+                "noteOff": "\n            <p>Uh oh – email confirmations are disabled. Enable them now to add extra security to your account.</p>\n            ",
+                "messageConfirmEnable": "Thank you. Email confirmations have been enabled. Anytime you withdraw or transfer, we’ll email you a link to authorize the transaction.",
+                "messageConfirmDisable": "Are you sure you want to disable email confirmations? Without them, your withdrawals and transfers are authorized using 2-Factor Authorization only. We recommend enabling email confirmations to add extra security to your account.",
+                "confirm": "Yes",
+                "cancel": "No",
+                "disableSuccess": "Successfully Disabled",
+                "enableSuccess": "Successfully Enabled",
+                "disableFailed": "Failed To Disable",
+                "enableFailed": "Failed To Enable",
+                "two2faRequired": "Please <a href=\"/me/securities\" class=\"underline\">enable 2-Factor Authorization</a> before {action} email notifications."
             }
         },
         "flexInterestConfig": {
@@ -1038,6 +1061,12 @@
                 "15": "Phần thưởng thành viên",
                 "16": "Referral Term Deposit",
                 "17": "Referral Reward",
+                "18": "Service Time Interest",
+                "19": "Ajust Increase",
+                "20": "Ajust Descrease",
+                "21": "Referral Bonus",
+                "22": "Purchase",
+                "23": "Refund",
                 "101": "Điểm thưởng",
                 "102": "Coupon Signup",
                 "received": "Đã nhận"
@@ -1137,7 +1166,9 @@
                 "1": "Hoàn thành",
                 "2": "Thất bại",
                 "3": "Đang chờ duyệt",
-                "4": "Từ chối"
+                "4": "Từ chối",
+                "5": "<span style=\"color: rgb(227,152,77)\">Confirming</span>",
+                "6": "<span style=\"color: rgb(227,152,77)\">Order timed out</span>"
             }
         },
         "transferOrders": {
@@ -1813,6 +1844,7 @@
             "email": "Email",
             "password": "Mật khẩu",
             "loginButton": "Đăng nhập",
+            "loginSignupButton": "Log in / Sign up",
             "keepSignin": "Giữ trạng thái đăng nhập",
             "registerText": "Chưa có tài khoản?",
             "registerButton": "Mở tài khoản miễn phí",
@@ -1825,7 +1857,7 @@
             "loginFailure": "Hãy đảm bảo rằng email và mật khẩu của bạn là chính xác.",
             "warningVerify": "Hãy xác minh tài khoản để bắt đầu giao dịch. {action}",
             "warningVerifyNow": "Xác minh ngay",
-            "two2faRequired": "Tất cả người dùng có số dư trên 1000 USD được yêu cầu xác thực 2FA",
+            "twoFaRequired": "2FA authentication is required for all users with balance over 1000 USD",
             "loginSocialTitle": "Đăng nhập ngay lập tức",
             "loginEmailTitle": "hoặc đăng nhập bằng email",
             "loginFailed": "Đăng nhập không thành công. Xin vui lòng thử lại."
@@ -2449,8 +2481,8 @@
             "batchConfirmMsg": "Bạn có chắc muốn chuyển khoản tới nhiều người từ trong danh sách này?",
             "transferFailed": "Có lỗi xảy ra khi thực hiện giao dịch. Xin vui lòng thử lại",
             "transferSuccessful": "Giao dịch thành công",
-            "transferConfirm": "We've already sent you a verification email, please confirm before we proceed your request.",
-            "two2faRequired": "\n        <p><span class=\"bold\">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=\"/me/securities\" class=\"underline bold\">here</a> or go to Setting > Account security > enable Google Authentication.</p>\n        <p>If you have problems, email <a href=\"mailto://hello@myconstant.com\">hello@myconstant.com</a>.</p>\n      ",
+            "transferConfirm": "We've already sent you a verification link by email. Please click this link to approve your transaction.",
+            "twoFaRequired": "\n        <p><span class=\"bold\">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=\"/me/securities\" class=\"underline bold\">here</a> or go to Setting > Account security > enable Google Authentication.</p>\n        <p>If you have problems, email <a href=\"mailto://hello@myconstant.com\">hello@myconstant.com</a>.</p>\n      ",
             "verifyEmailRequired": "\n      <p>You need to verify your email to do this action.</p>\n      <p>Please verify your email <a href=\"/me/information\" class=\"underline bold\">here</a>.</p>\n      ",
             "timeLimit": "Bạn sẽ nhận được Constant trong ",
             "timeLimitMunite": "minutes",
@@ -2507,8 +2539,8 @@
             "batchConfirmMsg": "Bạn có chắc muốn chuyển khoản tới những người có trong danh sách này?",
             "transferFailed": "Có lỗi xảy ra khi thực hiện chuyển khoản. Xin vui lòng thử lại",
             "transferSuccessful": "Chuyển khoản thành công",
-            "transferConfirm": "We've already sent you a verification email, please confirm before we proceed your request.",
-            "two2faRequired": "\n        <p><span class=\"bold\">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=\"/me/securities\" class=\"underline bold\">here</a> or go to Setting > Account security > enable Google Authentication.</p>\n        <p>If you have problems, email <a href=\"mailto://hello@myconstant.com\">hello@myconstant.com</a>.</p>\n      ",
+            "transferConfirm": "We've already sent you a verification link by email. Please click this link to approve your transaction.",
+            "twoFaRequired": "\n        <p><span class=\"bold\">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=\"/me/securities\" class=\"underline bold\">here</a> or go to Setting > Account security > enable Google Authentication.</p>\n        <p>If you have problems, email <a href=\"mailto://hello@myconstant.com\">hello@myconstant.com</a>.</p>\n      ",
             "verifyEmailRequired": "\n      <p>You need to verify your email to do this action.</p>\n      <p>Please verify your email <a href=\"/me/information\" class=\"underline bold\">here</a>.</p>\n      ",
             "timeLimitInWorkingTime": "Bạn sẽ nhận được tiền trong 1 giờ",
             "timeLimit": "Bạn sẽ nhận được tiền trong ",
@@ -2539,23 +2571,23 @@
         "constantLoan": {
             "faqs": {
                 "question1": "Cần bao lâu để kết nối nhà đầu tư và người cần vay vốn?",
-                "answer1": "Điều này phụ thuộc vào lãi suất và kỳ hạn bạn thiết lập. Thị trường sẽ giúp bạn khớp với người tương ứng ngay lập tức (hoặc gần như ngay lập tức), vì vậy chúng tôi cập nhật lãi suất thị trường trên trang web Constant thường xuyên. Nếu bạn chọn mức lãi suất thấp hơn, sẽ có thể mất một chút thời gian để khớp bạn với một người tương ứng.",
+                "answer1": "\n        <p>This depends on the rates and terms you set. Market levels normally result in immediate (or near-immediate) matches, so we update the market rates on the website regularly. If you choose a lower interest rate, it might take a little longer to find you a suitable match. After you've found a match, the loan will be available in your account within 24 hours (slightly longer for larger amounts).</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-to-borrow-against-crypto-4-simple-steps\" className=\"underline\" target=\"_blank\">How to borrow in 4 simple steps.</a></p>\n      ",
                 "question2": "Hệ thống có kiểm tra điểm tín dụng của tôi không?",
-                "answer2": "Vì Constant chỉ cung cấp các khoản vay có bảo đảm bởi tài sản thế chấp, nên hệ thống không cần chấm điểm tín dụng. Tất cả bạn cần là tài sản thế chấp đầy đủ để đảm bảo khoản vay. Để xem bạn cần bao nhiêu tài sản thế chấp để đảm bảo khoản vay của mình, bạn chỉ cần nhập số tiền bạn muốn vay. Máy tính sẽ tính ra giá trị thế chấp cho bạn.",
+                "answer2": "\n        <p>As we only offer secured loans backed by collateral, there is no need for credit scoring. All you need is adequate collateral to secure your loan. To see how much collateral you need to secure your loan, simply enter the amount you’d like to borrow. The calculator will work out the amount for you.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-to-borrow-against-crypto-4-simple-steps\" className=\"underline\" target=\"_blank\">How to borrow in 4 simple steps.</a></p>\n      ",
                 "question3": "Hệ thống bảo vệ tài sản thế chấp của tôi như thế nào?",
-                "answer3": "Tài sản thế chấp của bạn được giữ an toàn trong một hợp đồng thông minh trên mạng Ethereum, không ai có thể tiếp cận tài sản thế chấp đó - ngay cả chúng tôi. Khi bạn hoàn trả khoản vay, tài sản thế chấp của bạn ngay lập tức được chuyển lại cho bạn. Bạn cũng có thể trả 1% phí cho BitGo để bảo vệ tài sản lên đến 100 triệu USD.",
+                "answer3": "\n        <p>Depending on your collateral, it’s held safely in either BitGo custody, an Ethereum smart contract, or a password-protected web wallet hosted on a dedicated server (to which only our CEO and CTO have access). When you repay, your collateral is immediately transferred back to you.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral\" className=\"underline\" target=\"_blank\">How we protect your collateral.</a></p>\n      ",
                 "question4": "Điều gì sẽ xảy ra nếu tôi không hoàn trả khoản vay của mình?",
-                "answer4": "Nếu bạn không hoàn trả khoản vay, chúng tôi sẽ tạo một lệnh bán tài sản thế chấp của bạn với 110% giá trị khoản vay + tiền lãi đến hạn trả cho các nhà đầu tư. Xin lưu ý giá cuối cùng có thể cao hơn hoặc thấp hơn tùy thuộc vào thời điểm bán, nhưng chúng tôi sẽ luôn cố gắng để có được giá tốt nhất có thể cho bạn. Bạn có thể giữ khoản vay cũng như bất kỳ phần thừa còn lại từ việc thanh lý tài sản thế chấp.\n",
+                "answer4": "If you don’t repay the loan, your collateral will be sold to repay your investor. You get to keep the loan. That’s it.",
                 "question5": "Điều gì xảy ra nếu phần tài sản thế chấp của tôi mất giá?",
-                "answer5": "Chúng tôi sẽ thông báo cho bạn 3 lần tại thời điểm 5% giá trước khi tài sản thế chấp của bạn giảm xuống 110% giá trị khoản vay + lãi suất tính đến hiện tại. Lúc này, chúng tôi sẽ tạo một lệnh bán để hoàn trả nhà đầu tư. Giá cuối cùng tuỳ thuộc vào điểm bán nhưng chúng tôi sẽ cố gắng bán với giá tốt nhất có thể. Bạn sẽ được hoàn trả những phần chênh lệch. Người vay sẽ nhận thông báo khi đạt 125%, 120% và 115%, vì vậy họ có thể chọn hoàn trả sớm để tránh thanh lý hoặc nạp thêm tài sản thế chấp. Với việc này, tài sản thế chấp sẽ tự động bị thanh lý tại 110%.",
+                "answer5": "\n        <p>We will notify you three times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, we’ll create a sell order to repay the investor. You keep the loan, but you lose your collateral.</p>\n        <p>Borrowers will receive notifications at 125%, 120% ad 115% of the investor’s principal plus earned interest. You can choose to repay early to avoid liquidation or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.</p>\n        <p><a href=\"https://www.myconstant.com/blog/extra-protection-for-your-collateral-auto-top-up\" className=\"underline\" target=\"_blank\">How to avoid liquidation with auto top-up.</a></p>\n      ",
                 "question6": "Tôi có thể hoàn trả trước hạn không?",
                 "answer6": "\n<p>Nếu bạn muốn trả lại khoản vay trước 75% kỳ hạn, điều này không thành vấn đề. Bạn đơn giản phải trả lãi cho các ngày vay mượn và chỉ 50% lãi suất gốc cho kỳ hạn còn lại.</p>\n          <p>Nếu bạn muốn trả lại khoản vay sau 75% kỳ hạn và yêu cầu nhận lại tài sản thế chấp, điều này không thành vấn đề nhưng lãi phải trả dựa theo khoản vay là toàn bộ phần trăm của cả kỳ hạn.</p>\n        ",
-                "question7": "Nếu tài sản thế chấp của tôi tăng, tôi có thể thu hồi tài sản được không?",
-                "answer7": "Có. Nếu giá trị tài sản thế chấp tăng lên, bạn hoàn có thể rút lại phần chênh về tài khoản Constant.",
-                "question8": "Tỷ số LTV (Loan to Value) là gì? Tỷ số đó có luôn giống nhau?",
-                "answer8": "\n<p>Tỷ lệ LTV cho khoản vay không quá 1 năm là 66%. Chúng tôi yêu cầu 150% của giá trị vay bằng tài sản thế chấp. Mỗi tháng sau năm đầu, chúng tôi nhận thêm 5% giá trị khoản vay thế chấp.</p>\n          <p>Ví dụ, nếu bạn muốn vay trong 15 tháng, lãi thế chấp sẽ là 150% + (3*5)% = 165% của giá trị khoản vay thế chấp, nên tỷ lệ LTV của bạn là 60.6%.</p>\n        ",
-                "question9": "Tôi hoàn trả khoản vay như thế nào?",
-                "answer9": "\n<p>Chúng tôi sẽ khấu trừ hoàn trả trực tiếp từ số dư tài khoản Constant của bạn. Thêm vốn thật dễ. Bạn có thể làm riêng hoặc kết hợp với những tính năng sau:</p>\n          <p>1) Chuyển USD đến một trong những tài khoản ngân hàng được đảm bảo bởi FDIC.</p>\n          <p>2) Gửi CONST đến Ví Constant</p>\n          <p>   Hoặc gửi bất kỳ đồng stablecoin được hỗ trợ nào: </p>\n          <p>   USDT/USDC/TUSD/GUSD/PAX/USDS</p>\n          <p>   Số dư sẽ được cập nhật khi vốn được nhận trong tài khoản Constant của bạn.</p>\n        ",
+                "question7": "Can I recall excess if the value of my collateral increases?",
+                "answer7": "\n        <p>Yes. If the value of your collateral rises during your loan term, you can withdraw the difference from your Accounts page.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-to-deposit-top-up-recall-crypto-constant\" className=\"underline\" target=\"_blank\">How to deposit, top-up, and recall excess collateral.</a></p>\n      ",
+                "question8": "What is the LTV (Loan-to-Value) Ratio? Is it always the same?",
+                "answer8": "\n        <p>The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral.</p>\n      ",
+                "question9": "How do I repay my loan?",
+                "answer9": "\n          <p>We’ll deduct your repayment directly from your Constant account balance. Adding funds is easy. You can do one or a combination of the following:</p>\n          <ol>\n            <li>Transfer USD to one of our US bank accounts.</li>\n            <li>Send any one of our supported stablecoins: USDT/USDC/TUSD/GUSD/PAX/USDS.</li>\n            <li>Repay the equivalent USD value in a supported cryptocurrency.</li>\n          </ol>\n          <p>Your balance will update when funds have been received in your Constant account.</p>\n        ",
                 "question10": "Điều gì xảy ra nếu tôi hoàn trả trễ?",
                 "answer10": "Thời gian ân hạn nhận thanh toán là 3 ngày sau khi thời hạn vay của bạn kết thúc. Vào ngày thứ 2 và thứ 3, bạn sẽ phải chịu một khoản phí trễ phạt là 10% trên tổng số tiền lãi đến hạn.\n \n"
             },
@@ -3703,7 +3735,7 @@
         "toAWallet": "Tới một địa chỉ ví ETH/EOS",
         "walletAddr": "Địa chỉ ví Ethereum/EOS",
         "input2FA": "Nhập 2FA",
-        "two2faRequired": "\n      <p><span class=\"bold\">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=\"/me/securities\" class=\"underline bold\">here</a> or go to Setting > Account security > enable Google Authentication.</p>\n      <p>If you have problems, email <a href=\"mailto://hello@myconstant.com\">hello@myconstant.com</a>.</p>\n    ",
+        "twoFaRequired": "\n      <p><span class=\"bold\">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=\"/me/securities\" class=\"underline bold\">here</a> or go to Setting > Account security > enable Google Authentication.</p>\n      <p>If you have problems, email <a href=\"mailto://hello@myconstant.com\">hello@myconstant.com</a>.</p>\n    ",
         "withdrawFailed": "Có lỗi xảy ra. Xin vui lòng thử lại.",
         "withdrawSuccessful": "Rút tiền thành công.",
         "countryNotSupport": "Quốc gia của bạn đang không hỗ trợ vào thời điểm hiện tại. Đội ngũ hỗ trợ của chúng tôi sẽ liên lạc với bạn qua email.",
@@ -3759,6 +3791,7 @@
         "makeLocalOrderFailed": "Tạo lệnh không thành công",
         "makeDirectOrderSuccess": "Tạo lệnh thành công",
         "makeDirectOrderFailed": "Tạo lệnh không thành công",
+        "transferConfirm": "We've already sent you a verification link by email. Please click this link to approve your transaction.",
         "info": {
             "title": "CHUYỂN TIỀN",
             "desc1": "Tiện lợi.",
@@ -4019,15 +4052,13 @@
         },
         "faqs": {
             "question1": "Hình thức cho vay ngang hàng là gì?",
-            "answer1": "Không giống như vay ngân hàng, hình thức cho vay ngang hàng cho phép người cần vay có thể vay tiền trực tiếp từ nhà đầu tư. Bỏ qua mọi khâu trung gian, nhà đầu tư và người cần vay có thể tự thoả thuận mức lãi suất và kì hạn sao cho đôi bên cùng có lợi. Nếu bạn đang tìm kiếm một cơ hội đầu tư với mức lợi nhuận cao hơn hoặc muốn vay tiền với mức lãi suất thấp, Constant là lựa chọn tốt nhất thị trường.",
-            "question2": "Constant ưu việt hơn những nền tảng cho vay ngang hàng khác ở những điểm nào?",
-            "answer2": "\n<p>Constant là nền tảng cho vay ngang hàng đầu tư bảo đảm an toàn tuyệt đối cho cả nhà đầu tư và người vay vốn. Với nhà đầu tư, khoản tiền đầu tư được bảo đảm bởi tài sản thế chấp của người vay. Với người vay, phần tài sản thế chấp được bảo vệ bởi hợp đồng thông minh trên chuỗi khối Ethereum không thể bị can thiệp và sẽ được tự động gửi lại ngay khi khoản vay được hoàn trả đầy đủ.</p>\n        <p>Với Constant, khách hàng được tự quyết định mức lãi suất và kì hạn. \n       Hợp đồng thông minh trên chuỗi khối Ethereum được vận hành tự động và luôn chính xác tuyệt đối, đảm bảo cho cả nhà đầu tư và người vay vốn. \n        </p>      ",
+            "answer1": "\n      <p>P2P lending is where one person lends to another in return for interest, without any third party getting in the way. Unlike bank lending, where the bank lends your deposits and keeps the lion’s share of interest, P2P lending lets you keep all the profits yourself.</p>\n      <p>On our platform, you also set your own rates and terms, which gives you plenty of flexibility to find the right investment. We also differ from other P2P lending platforms in that we only use liquid collateral – in other words, we secure loans with collateral that’s easy to sell if borrowers default, ensuring you get your money back (plus interest).</p>\n      <p>New to P2P lending? <a href=\"https://www.myconstant.com/blog/peer-to-peer-lending-what-you-should-know-before-investing\" class=\"underline\" target=\"_blank\">Here’s what to know before you invest.</a></p>\n      ",
+            "question2": "What makes Constant different from other P2P lending platforms?",
+            "answer2": "\n        <p>Constant is the first fully-secured P2P lending platform. Every loan is 150% (minimum) backed by collateral, which is sold if borrowers default or its value falls to a threshold, protecting investors (borrowers keep the loan).</p>\n        <p>Unlike other platforms, we don’t need credit checks and you set the interest rate and term, not us. As well as providing you with a platform on which to do business, we also give you the educational resources to reach your financial goals, fast.</p>\n        <p><a href=\"https://www.myconstant.com/blog/11-reasons-to-invest-with-constant\" class=\"underline\" target=\"_blank\">Discover 11 reasons to invest with Constant.</a></p>\n      ",
             "question3": "Ai có thể tham gia?",
-            "answer3": "Ai cũng có thể sử dụng Constant. Chỉ cần có kết nối Internet để truy cập website và một tài khoản ngân hàng để thực hiện các giao dịch (vay hoặc hoàn trả khoản vay).",
-            "question4": "Constant bảo vệ tiền của khách hàng như thế nào?",
-            "answer4": "\n<p>Constant sử dụng bảo hiểm của FDIC, hợp đồng thông minh trên chuỗi Ethereum và tài sản thế chấp để bảo vệ tiền của khách hàng. Khi không thực hiện đầu tư, tiền của bạn được giữ trong các tài khoản được FDIC bảo hiểm lên đến 130,000,000 USD.</p>\n        <p>Khi thực hiện đầu tư, nhà đầu tư sẽ được bảo vệ bởi hợp đồng thông minh trên chuỗi Ethereum được lập trình và vận hành tự động. Người vay phải thế chấp 150% giá trị khoản vay nên nhà đầu tư sẽ luôn có lãi kể cả khi người vay không hoàn trả khoản vay.</p>      ",
-            "question5": "",
-            "answer5": ""
+            "answer3": "\n        <p>Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment). If you intend to invest fiat (USD), you will also need to pass KYC (Know Your Customer) checks.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-to-verify-your-id-on-constant-kyc\" class=\"underline\" target=\"_blank\">How to verify your ID (KYC).</a></p>\n      ",
+            "question4": "How does Constant protect customers’ assets?",
+            "answer4": "\n        <p>All loans are 150% (minimum) backed by collateral put up by borrowers. If borrowers default or their collateral falls too much in value, the collateral is sold to repay investors.</p>\n        <p>In addition, we use insured custodial partners (Prime Trust and BitGo) to manage both fiat (USD) and digital assets. This additional layer of protection helps minimize the threat of theft, mismanagement, or loss of your assets.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral\" class=\"underline\" target=\"_blank\">Read more about how we protect your assets.</a></p>\n      "
         },
         "howItWorks": {
             "title": "Cơ chế hoạt động.",
@@ -4491,7 +4522,7 @@
             "question4": "Constant làm gì để bảo vệ khoản tiền của nhà đầu tư?",
             "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too:</p>\n        <ol>\n          <li>All of our borrowers must put up 150% of the loan amount as crypto collateral. If they don’t repay, we sell the collateral to repay you.</li>\n          <li>We also include a liquidation threshold to insure against a fall in the collateral’s value. If the value falls to 110% of your principal and earned interest, it’s sold to repay you.</li>\n          <li>We only accept vetted, quality cryptocurrencies and cap our exposure to these markets by daily trading volume. This ensures we can sell the collateral should the market dip.</li>\n        </ol>\n        <p>These protective measures help ensure you get the returns promised. However, all investment involves risk, and despite our best efforts, we can’t guarantee the return of your principal and profit. Therefore please invest wisely.</p>\n        <p><a href=\"/blog/how-we-protect-your-money-and-collateral\" className=\"underline\" target=\"_blank\">Read more about how we protect you.</a></p>\n      ",
             "question5": "Phần tiền không đầu tư trong tài khoản Constant có được bảo đảm không?",
-            "answer5": "\n        <p>You choose what we do with your money when it’s not on loan or waiting to be matched:</p>\n        <ol>\n          <li>\n            <p>You can store your funds in Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>\n            <p><a href=\"/blog/prime-trust-asset-protection\" className=\"underline\" target=\"_blank\">Learn more about Prime Trust.</a></p>\n            <p>OR</p>\n          </li>\n          <li>\n            <p>Earn 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>\n            <p><a href=\"/blog/flex-apy-account-compound-finance\" className=\"underline\" target=\"_blank\">Learn more about Flex.</a></p>\n          </li>\n        </ol>\n        <p>If you’re waiting for a match, your money will automatically remain in the custody of Prime Trust.</p>\n      ",
+            "answer5": "\n        <p>When not on loan or waiting for a match, your money earns 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>\n        <p>If you're waiting for a match, your money remains in the custody of Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>\n        <p>Flex is enabled by default, but you can disable it from your Accounts page. You will no longer earn interest and your funds will remain in Prime Trust custody (unless matching for a P2P loan).</p>\n        <p><a href=\"https://www.myconstant.com/blog/flex-or-prime-trust-constant\" className=\"underline\" target=\"_blank\">Prime Trust or Flex?</a></p>\n      ",
             "question6": "What happens if a borrower repays early?",
             "answer6": "\n        <p>If a borrower repays before 75% of the loan term is complete, they’ll pay you earned interest to date plus 50% of the interest due on the remainder of the term.</p>\n        <p>If a borrower repays after 75% of the loan term is complete, they’ll pay you 100% of the interest due on the loan.</p>\n      ",
             "question7": "What happens if you have to sell borrower collateral to repay me?",
@@ -4541,7 +4572,7 @@
             "question3": "How do I invest?",
             "answer3": "\n        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to our FDIC-insured escrow account, and wait for a match. This is usually very quick if you’ve set market rates. </p>\n        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>\n      ",
             "question4": "How do you protect my investment?",
-            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
+            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>\n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
             "question5": "What happens when my money isn’t on loan?",
             "answer5": "When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds."
         },
@@ -4550,7 +4581,7 @@
         }
     },
     "payment": {
-        "intro": "\n<h1>Chuyển tiền quốc tế số lượng lớn quy mô toàn cầu.</h1>\n    <br />\n    <h5>\n        Nhận tiền ngay lập tức. Không giới hạn số lượng và số người nhận. \n        Thanh toán đơn hàng. Trả lương cho toàn bộ công ty. Chỉ với một click.\n    </h5>\n    <br />\n    <h5>Constant ứng dụng công nghệ chuỗi khối giúp khách hàng vươn tầm thế giới.</h5>\n    <br />\n    <h5>Không chờ đợi. Không phí chuyển tiền. Ưu việt là Constant!</h5>  ",
+        "intro": "\n    <h1>Worldwide, instant, zero cost mass payments.</h1>\n    <br />\n    <h5>\n        Send and receive money instantly. Any amount, any number of people, anywhere in the world.\n        Pay suppliers, freelancers, automate your entire payroll - with a single click.\n    </h5>\n    <br />\n    <h5>Constant allows you to harness the power of global peer to peer technology to truly do business with the world.</h5>\n    <br />\n    <h5>No wait times, no transfer fees. Hello world.</h5>\n  ",
         "howItWorks": {
             "heading": "Cơ chế hoạt động",
             "step1": "1",
@@ -4637,7 +4668,7 @@
             "question3": "Mức lãi suất là bao nhiêu?",
             "answer3": "\n        <p>Nhập số tiền đầu tư và chọn mức lãi suất và kì hạn mà bạn mong muốn. Chuyển khoản tới quỹ Constant để hoàn tất đầu tư và đợi Constant tìm kiếm cho bạn một người vay phù hợp. Nên chọn mức lãi suất ngang mức thị trường để được kết nối nhanh nhất.</p>\n        <p>Khi đã được kết nối, hợp đồng thông minh sẽ tự động gửi tiền của bạn đến tài khoản người vay và lãi sẽ được tính ngay từ thời điểm đó. Khi đáo hạn, người vay sẽ hoàn trả toàn bộ khoản vay và lãi. Tất cả sẽ được chuyển vào tài khoản Constant của bạn. Sau đó bạn có thể tái đầu tư, rút tiền hoặc thực hiện chuyển khoản quốc tế.</p>      ",
             "question4": "Lợi nhuận hàng tháng là bao nhiêu?",
-            "answer4": "\n        <p> Chúng tôi đã thực hiện các bước quan trọng để bảo vệ không chỉ khoản đầu tư của bạn mà cả lợi nhuận của bạn.</p>\n         <p> Tất cả những người vay của chúng tôi phải đặt giá trị 150% số tiền vay làm tài sản thế chấp bằng tiền điện tử. Chúng tôi cũng đặt ngưỡng thanh lý để bảo đảm chống lại sự sụt giảm giá trị tài sản thế chấp. </p>\n         <p> Điều khoản cho vay của bạn được mã hóa thành hợp đồng thông minh Ethereum xác định nghiêm ngặt cách sử dụng tiền của bạn. Khi không cho vay, chúng tôi sẽ lưu trữ tiền của bạn trong các tài khoản ngân hàng được bảo hiểm bởi FDIC, được giám sát bởi Prime Trust.</p>\n         <p> Kết hợp với nhau, các biện pháp bảo vệ này đảm bảo rằng không có vấn đề gì xảy ra nếu người đi vay không trả nợ, nếu thị trường tiền điện tử giảm hoặc một số sự kiện không may khác xảy ra, thì tiền gốc và tiền lãi của bạn được đảm bảo.</p>",
+            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>\n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
             "question5": "Ai có thể tham gia?",
             "answer5": "Phần tiền không đầu tư được giữ trong các tài khoản được FDIC bảo hiểm lên đến 130,000,000 USD. PrimeTrust, một tổ chức tài chính uy tín tại Mỹ là đơn vị quản lí những tài khoản này."
         }
@@ -4698,7 +4729,7 @@
             "question3": "Lãi suất vay là bao nhiêu?",
             "answer3": "\n<p>Nhập số tiền đầu tư và chọn mức lãi suất và kì hạn mà bạn mong muốn. Chuyển khoản tới quỹ Constant để hoàn tất đầu tư và đợi Constant tìm kiếm cho bạn một người vay phù hợp. Nên chọn mức lãi suất ngang mức thị trường để được kết nối nhanh nhất.</p>\n        <p>Khi đã được khớp lệnh, hợp đồng thông minh sẽ tự động gửi tiền của bạn đến tài khoản người vay và lãi sẽ được tính ngay từ lúc đó. Khi đáo hạn, người vay sẽ hoàn trả toàn bộ khoản vay và lãi. Tất cả sẽ được chuyển vào tài khoản Constant của bạn. Sau đó bạn có thể tái đầu tư, rút tiền hoặc thực hiện chuyển khoản quốc tế.</p>      ",
             "question4": "Lợi nhuận hàng tháng là bao nhiêu?",
-            "answer4": "\n        <p> Chúng tôi đã thực hiện các bước quan trọng để bảo vệ không chỉ khoản đầu tư của bạn mà cả lợi nhuận của bạn.</p>\n         <p> Tất cả những người vay của chúng tôi phải đặt giá trị 150% số tiền vay làm tài sản thế chấp bằng tiền điện tử. Chúng tôi cũng đặt ngưỡng thanh lý để bảo đảm chống lại sự sụt giảm giá trị tài sản thế chấp. </p>\n         <p> Điều khoản cho vay của bạn được mã hóa thành hợp đồng thông minh Ethereum xác định nghiêm ngặt cách sử dụng tiền của bạn. Khi không cho vay, chúng tôi sẽ lưu trữ tiền của bạn trong các tài khoản ngân hàng được bảo hiểm bởi FDIC, được giám sát bởi Prime Trust.</p>\n         <p> Kết hợp với nhau, các biện pháp bảo vệ này đảm bảo rằng không có vấn đề gì xảy ra nếu người đi vay không trả nợ, nếu thị trường tiền điện tử giảm hoặc một số sự kiện không may khác xảy ra, thì tiền gốc và tiền lãi của bạn được đảm bảo.</p>",
+            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>\n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
             "question5": "Ai có thể tham gia?",
             "answer5": "Khi không được cho vay, Prime Trust, một tổ chức tài chính được công nhận của Hoa Kỳ, thay mặt chúng tôi quản lý tiền của bạn - chúng tôi không quản lý tiền của bạn."
         }
@@ -4820,7 +4851,9 @@
                 "cancel": "Huỷ",
                 "withdrawFailed": "Có gì đó không ổn. Xin vui lòng thử lại",
                 "withdrawFailedSameAddress": "Unable to withdraw to the same wallet address.",
-                "withdrawSuccess": "Rút tiền thành công"
+                "withdrawSuccess": "Rút tiền thành công",
+                "transferConfirm": "We've already sent you a verification link by email. Please click this link to approve your transaction.",
+                "twoFaRequired": "\n          <p><span class=\"bold\">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=\"/me/securities\" class=\"underline bold\">here</a> or go to Setting > Account security > enable Google Authentication.</p>\n          <p>If you have problems, email <a href=\"mailto://hello@myconstant.com\">hello@myconstant.com</a>.</p>\n        "
             }
         },
         "deposits": {
@@ -4935,11 +4968,11 @@
     "deposit1": {
         "faqs": {
             "question1": "Flex là gì?",
-            "answer1": "Flex is a deposit account that earns you 4% APY through automatic lending. When you deposit money into Flex, it goes into a liquidity pool managed by Compound Finance. Borrowers who’ve put up collateral can then secure loans from the pool in return for interest – and we pay that interest to you. Since your deposits go to a pool rather than individual borrowers, you can withdraw or deposit anytime, as often as you like, and without any fees. ",
+            "answer1": "\n      <p>Flex is a deposit account that earns you 4% APY through automatic lending. When you deposit money into Flex, it goes into a liquidity pool managed by Compound Finance. Borrowers who’ve put up collateral can then secure loans from the pool in return for interest – and we pay that interest to you. Since your deposits go to a pool rather than individual borrowers, you can withdraw or deposit anytime, as often as you like, and without any fees.</p>\n      <p><a href=\"https://www.myconstant.com/blog/flex-apy-account-compound-finance\" class=\"underline\" target=\"_blank\">How Flex works.</a></p>\n      ",
             "question2": "Why 4% APY?",
             "answer2": "Compound Finance uses a blockchain protocol that intelligently manages the lending pool. It also sets interest rates according to supply and demand. At the moment, the rate is fixed at 4% APY. In the future, it could be higher or lower depending on activity in Compound’s lending market.",
             "question3": "Compound Finance là gì?\n",
-            "answer3": "<p>Compound Finance là một công nghệ quản lý thông minh các khoản cho vay hơn với giá trị các khoản vay đang quản lý là hơn 150 triệu USD (tính đến tháng 9 năm 2019). Giao diện Flex tích hợp công nghệ này thông qua API, từ đó cho phép bạn rút tiền gửi và kiếm lãi bất cứ lúc nào.</p>\n\n<p> Compound Finance cho vay theo cách tương tự như ngân hàng: tiền gửi của bạn đi vào và được dùng để cho người vay vay để đổi lấy tiền lãi và người vay sẽ nộp tài sản thế chấp. Nhưng vì Compound Finance là một công nghệ, không cần chi nhánh hay nhân viên, vì vậy bạn được hưởng mức lãi suất tốt hơn nhiều!</p>\n\n <p> <a href=\"https://medium.com/@constantp2p/compound-finance-discover-the-interest-earning-tech-behind-flex-dcbb1decc835\"> Tìm hiểu thêm về Compount Finance. </a></p>\"",
+            "answer3": "\n      <p>Compound Finance is a technology that intelligently manages a lending pool of over $150 million in assets (as of September 2019). Flex interfaces with this technology through an API that allows you to withdraw your deposits and earned interest at any time.</p>\n      <p>Compound Finance lends in a similar way to banks: your deposits go in and are lent to borrowers in exchange for interest and collateral. But since Compound Finance is a technology, there is no need for branches or staff, so you enjoy a much better interest rate!</p>\n      <p><a href=\"https://compound.finance/\" class=\"underline\" target=\"_blank\">Learn more about Compound Finance.</a></p>\n      ",
             "question4": "Flex có chương trình giới thiệu khách hàng không?",
             "answer4": "Có. Đối với mỗi người bạn mà bạn giới thiệu đến Flex, bạn sẽ nhận được 10% lợi nhuận của họ trong năm đầu tiên (bạn sẽ được nhận số tiền lên tới 1.000.000 USD). Để biết thêm chi tiết, <a href=\"/referral\"> truy cập trang Giới thiệu khách hàng của bạn. </a>",
             "question5": "Tôi có thể rút bất cứ lúc nào không?",
@@ -4947,7 +4980,7 @@
             "question6": "Khoản tiền nạp của tôi tạo ra lãi như thế nào?",
             "answer6": "Flex sử dụng API tích hợp với Compound Finance để cho vay tiền gửi của bạn vào một 'bể thanh khoản'. Những người vay từ 'bể thanh khoản' này phải nộp tài sản thế chấp, và bạn sẽ kiếm được tiền lãi. Nói cách khác, Flex rất giống với cách các khoản đầu tư hoạt động trên Constant, nhưng chỉ với Flex bạn mới có thể rút bất cứ lúc nào.",
             "question7": "Khoản tiền nạp của tôi có an toàn không?",
-            "answer7": "Không phải lúc nào cũng vậy. Được bảo vệ nhờ đối tác tin cậy của chúng tôi, Prime Trust, tiền gửi của bạn được bảo hiểm theo chính sách bảo hiểm có trị giá 130.000.000 USD. Tuy nhiên, chúng tôi hy vọng tiền gửi sẽ được dùng phần lớn thời gian để kiếm lãi cho bạn thông qua Compound Finance. Do đó, tiền gửi thay vào đó sẽ được bảo vệ bằng tài sản thế chấp do người vay của Compound nộp.",
+            "answer7": "\n      <p>Not always, no. While held with our trust partner, Prime Trust, your deposits are covered by a $130,000,000 insurance policy. However, we expect deposits will spend most of their time earning interest through Compound Finance, so will instead be protected by collateral put up by Compound's users.</p>\n      <p><a href=\"https://www.myconstant.com/blog/flex-or-prime-trust-constant\" class=\"underline\" target=\"_blank\">Earn interest on your deposits or insure them?</a></p>\n      ",
             "question8": "Tôi có thể nạp tài sản thế chấp hoặc những tiền mã hoá khác vào Flex?",
             "answer8": "Hiện tại, Flex chỉ chấp nhận các USD và các stablecoin hỗ trợ bởi USD.\n \n",
             "question9": "Tôi có thể kiếm được tiền lãi trong khi chờ lệnh đầu tư khớp không?\n \n",
@@ -5499,7 +5532,7 @@
             },
             "block2": {
                 "title": "Bạn có thể làm gì với nó?",
-                "desc": "          <h5 class = \"margin-0\"> Tổng quan ngắn gọn về các dịch vụ API của chúng tôi. </ h5>\n          <strong> Đầu tư </ strong>, <strong> Vay </ strong> và <strong> Gửi tiền </ strong>\n             <li> Duyệt sách đặt hàng mở của chúng tôi. Cung cấp cho khách hàng của bạn quyền truy cập vào các giao dịch tốt nhất trong thị trường cho vay P2P của chúng tôi. </ Li>\n             <li> Gửi đơn đặt hàng cho vay tùy chỉnh. Đặt khách hàng vào vị trí lái xe với mức giá và điều khoản linh hoạt. </ Li>\n             <li> Kiếm lãi từ tiền gửi tiền mặt và stablecoin. Thưởng cho khách hàng với lãi suất vượt ngân hàng đối với tiền gửi, gộp và trả mỗi giây. </ Li>\n          <h5> Xem số dư và rút tiền </ h5>\n             <li> Duyệt lịch sử tiền gửi. Giúp khách hàng của bạn theo dõi chi tiêu của họ. </ Li>\n             <li> Xem số dư crypto và tiền mặt. Cung cấp cho khách hàng cái nhìn sâu sắc về tài sản kỹ thuật số và thanh khoản của họ. </ Li>\n             <li> Rút tiền điện tử và tiền mặt. Hỗ trợ rút nhiều tài sản, bao gồm USD, tiền điện tử và stablecoin được USD hỗ trợ. </ Li>\n          <h5> Hỗ trợ khách hàng mới </ h5>\n             <li> Thực hiện kiểm tra KYC. Xác minh danh tính của khách hàng để tuân thủ các quy định của AML (Chống rửa tiền). </ Li>\n             <li> Xác minh tài khoản. Giảm thư rác và cải thiện chất lượng cơ sở dữ liệu khách hàng của bạn. </ Li>\n             <li> Xác thực bất cứ ai. Giúp bảo vệ an ninh khách hàng và bảo vệ tính toàn vẹn của nền tảng của bạn thông qua các giao thức 2FA. </ Li>"
+                "desc": "\n          <h5 class=\"margin-0\">Here’s a brief overview of our API services.</h5>\n          <strong>Invest</strong>, <strong>Borrow</strong>, and <strong>Deposit</strong>\n             <li>Browse our open order book. Give your customers access to the best deals in our P2P lending market.</li>\n             <li>Submit customized lending orders. Put customers in the driving seat with flexible rates and terms.</li>\n             <li>Earn interest on fiat and stablecoin deposits. Reward customers with a bank-beating interest rate on deposits, compounded and paid every second.</li>\n          <h5>View balances and withdraw</h5>\n             <li>Browse deposit history. Help your customers keep track of their spend.</li>\n             <li>View coin and fiat balances. Give customers insight into their digital assets and liquidity.</li>\n             <li>Withdraw cryptocurrencies and fiat. Support withdrawal of multiple assets, including USD, crypto, and USD-backed stablecoins.</li>\n          <h5>Onboard new customers</h5>\n             <li>Perform KYC checks. Verify the identity of customers to comply with AML (Anti Money Laundering) regulations.</li>\n             <li>Verify accounts. Reduce spam and improve the quality of your customer database.</li>\n             <li>Authenticate anyone. Help protect customer security and preserve the integrity of your platform through 2FA protocols.</li>\n        "
             }
         }
     },
@@ -6127,8 +6160,8 @@
         "tierProgressDesc": "Earn {points} points by {date} to maintain {level} membership",
         "tierProgressDescMember": "For every dollar you invest or borrow, you earn 1 membership point. Each point expires after 180 days.",
         "caption": "Membership",
-        "pointExpiredDate": "{value} points will expired on {date}",
-        "expiredDate": "Your {value} points will expired in {date}",
+        "pointExpiredDate": "{value} points will expire on {date}",
+        "expiredDate": "Your {value} points will expire on {date}",
         "pointNeed2GetGold": "You still need {value} points to reach Gold Member status",
         "remaining": "{type} ${value} in {date} days",
         "borrow": "Borrow",
@@ -6166,7 +6199,7 @@
             "reward": "Get reward",
             "date": "Date",
             "redeem": "Redeem",
-            "redeemDesc": "Membership rewards are paid after you've reviewed us TrustPilot. If you've reviewed us already, your rewards will go straight into your account. Otherwise, click the Unlock your rewards button below to submit your TrustPilot username and get your rewards."
+            "redeemDesc": "Membership rewards are paid after you've reviewed us on TrustPilot. If you've reviewed us already, your rewards will go straight into your account. Otherwise, click the Unlock Your Rewards button below to submit your TrustPilot username and claim your rewards."
         },
         "rewardType": {
             "reward": "STAR",
@@ -6242,7 +6275,7 @@
             "redeemButton": "Unlock your rewards",
             "redeemButtonMobile": "Rewards",
             "redeemPopup": {
-                "messageConfirm": "To unlock your rewards, please <a href=\"https://www.trustpilot.com/review/myconstant.com\" class=\"underline\" target=\"_blank\">review us on TrustPilot</a>. Then enter your TrustPilot username below and click Submit. Your rewards will unlock immediately.",
+                "messageConfirm": "To unlock your rewards, please <a href=\"https://www.trustpilot.com/review/myconstant.com\" class=\"underline\" target=\"_blank\">review us on TrustPilot</a>. Then enter your TrustPilot username below and click Submit. Your rewards will be released to your account immediately.",
                 "confirm": "Submit",
                 "cancel": "Cancel"
             }
@@ -6565,6 +6598,18 @@
             "sent": {
                 "title": "Your transfer was successful",
                 "desc": "You sent ${amount} to {toEmail}."
+            }
+        },
+        "transfer_crypto": {
+            "sent": {
+                "title": "Your transfer was successful",
+                "desc": "You sent {amount} {currency} to {receiver}."
+            }
+        },
+        "withdraw": {
+            "fiat": {
+                "title": "Your withdrawal was successful",
+                "desc": "You have successfully withdrawn {fiatAmount} {fiatCurrency}."
             }
         },
         "system": {

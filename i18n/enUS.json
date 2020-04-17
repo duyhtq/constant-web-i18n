@@ -273,6 +273,7 @@
         "constantLoan": "Constant Loan",
         "saveAndGrowMoney": "Save & Grow money",
         "login": "Login",
+        "signup": " | Sign up",
         "openAnAccount": "Open an account",
         "yourSaving": "Accounts",
         "myInvestments": "My Investments",
@@ -427,6 +428,7 @@
             "myInformation": "Account details",
             "securities": "Account security",
             "notification_settings": "Notification Settings",
+            "email_settings": "Email Settings",
             "sellOrders": "Sell Orders",
             "buyOrders": "Buy Orders",
             "bookingOrders": "Sale Orders",
@@ -476,7 +478,7 @@
             "verifiedMsg": "\n        <p>Great, everything's in order and your identity has been verified.</p>\n        <p>Thanks for taking the time to tell us about yourself.</p>\n        <p>Welcome to the full Constant Experience.</p>\n      ",
             "titleStep1": "Hi. Tell us more about yourself.",
             "titleStep2": "Thanks. Now we need a proof of address.",
-            "lEmail": "Email Adrress",
+            "lEmail": "Email Address",
             "discardNoteTitle": "Your KYC application has not yet been approved due to:",
             "discardNote": "Please make sure all your documents are in order and just click submit again.",
             "plEmail": "Email Address",
@@ -788,6 +790,7 @@
                 "step1": "Step 1",
                 "step2": "Step 2",
                 "description": "Please scan this code with Google Authenticator or Authy, then enter the code sent to you.",
+                "requireVerifiedEmail": "\n          <p>Please <a class=\"underline bold\" href=\"/me/information\">update your email</a> and verify it to generate QR code for scanning with Google Authenticator or Authy.</p>\n        ",
                 "canNotScanCode": "If you are unable to scan the QR code, please enter this code manually into the app.",
                 "inputCode": "Enter password",
                 "inputAuthCode": "Google authentication code",
@@ -876,6 +879,26 @@
                 "updateSuccess": "Successfully Updated",
                 "disableSuccess": "Successfully Disabled",
                 "enableSuccess": "Successfully Enabled"
+            }
+        },
+        "emailSetting": {
+            "title": "Email Settings",
+            "emailConfirmation": {
+                "title": "Email Confirmations",
+                "desc": "\n        <p>\n        Enable email confirmations add extra security to your account. When you withdraw or transfer USD, crypto, or stablecoins, we’ll email you a link to authorize the transaction. This is in addition to 2-Factor Authorization.\n        </p>\n        ",
+                "labelOff": "Enable",
+                "labelOn": "Disable",
+                "noteOn": "<p>Nice – email confirmations are enabled on all withdrawals and transfers. Whenever you withdraw or transfer USD, cryptocurrency, or stablecoins, we’ll email you a link to authorize the transaction.</p>\n            ",
+                "noteOff": "\n            <p>Uh oh – email confirmations are disabled. Enable them now to add extra security to your account.</p>\n            ",
+                "messageConfirmEnable": "Thank you. Email confirmations have been enabled. Anytime you withdraw or transfer, we’ll email you a link to authorize the transaction.",
+                "messageConfirmDisable": "Are you sure you want to disable email confirmations? Without them, your withdrawals and transfers are authorized using 2-Factor Authorization only. We recommend enabling email confirmations to add extra security to your account.",
+                "confirm": "Yes",
+                "cancel": "No",
+                "disableSuccess": "Successfully Disabled",
+                "enableSuccess": "Successfully Enabled",
+                "disableFailed": "Failed To Disable",
+                "enableFailed": "Failed To Enable",
+                "two2faRequired": "Please <a href=\"/me/securities\" class=\"underline\">enable 2-Factor Authorization</a> before {action} email notifications."
             }
         },
         "flexInterestConfig": {
@@ -1038,6 +1061,12 @@
                 "15": "Membership Reward",
                 "16": "Referral Term Deposit",
                 "17": "Referral Reward",
+                "18": "Service Time Interest",
+                "19": "Ajust Increase",
+                "20": "Ajust Descrease",
+                "21": "Referral Bonus",
+                "22": "Purchase",
+                "23": "Refund",
                 "101": "Bonus",
                 "102": "Coupon Signup",
                 "received": "Received"
@@ -1137,7 +1166,9 @@
                 "1": "Done",
                 "2": "Failed",
                 "3": "Approving",
-                "4": "Rejected"
+                "4": "Rejected",
+                "5": "<span style=\"color: rgb(227,152,77)\">Confirming</span>",
+                "6": "<span style=\"color: rgb(227,152,77)\">Order timed out</span>"
             }
         },
         "transferOrders": {
@@ -1813,6 +1844,7 @@
             "email": "Email",
             "password": "Password",
             "loginButton": "Log in",
+            "loginSignupButton": "Log in / Sign up",
             "keepSignin": "Keep me signed in",
             "registerText": "Don't have an account?",
             "registerButton": "Sign up for free",
@@ -1825,7 +1857,7 @@
             "loginFailure": "Please make sure your email and password are correct.",
             "warningVerify": "To start trading, please take a few minutes to verify your account. {action}",
             "warningVerifyNow": "Verify now",
-            "two2faRequired": "2FA authentication is required for all users with balance over 1000 USD",
+            "twoFaRequired": "2FA authentication is required for all users with balance over 1000 USD",
             "loginSocialTitle": "Log in instantly",
             "loginEmailTitle": "or log in with email",
             "loginFailed": "Failed while logging in, please try again"
@@ -2449,8 +2481,8 @@
             "batchConfirmMsg": "Are you sure you want to transfer to multiple people from the uploaded file?",
             "transferFailed": "Failed while transfering, please try again",
             "transferSuccessful": "Your transfer was completed successfully",
-            "transferConfirm": "We've already sent you a verification email, please confirm before we proceed your request.",
-            "two2faRequired": "\n        <p><span class=\"bold\">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=\"/me/securities\" class=\"underline bold\">here</a> or go to Setting > Account security > enable Google Authentication.</p>\n        <p>If you have problems, email <a href=\"mailto://hello@myconstant.com\">hello@myconstant.com</a>.</p>\n      ",
+            "transferConfirm": "We've already sent you a verification link by email. Please click this link to approve your transaction.",
+            "twoFaRequired": "\n        <p><span class=\"bold\">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=\"/me/securities\" class=\"underline bold\">here</a> or go to Setting > Account security > enable Google Authentication.</p>\n        <p>If you have problems, email <a href=\"mailto://hello@myconstant.com\">hello@myconstant.com</a>.</p>\n      ",
             "verifyEmailRequired": "\n      <p>You need to verify your email to do this action.</p>\n      <p>Please verify your email <a href=\"/me/information\" class=\"underline bold\">here</a>.</p>\n      ",
             "timeLimit": "Your money will arrive within ",
             "timeLimitMunite": "minutes",
@@ -2507,8 +2539,8 @@
             "batchConfirmMsg": "Are you sure you want to transfer to multiple people from the uploaded file?",
             "transferFailed": "Failed while transfering, please try again",
             "transferSuccessful": "Your transfer was completed successfully",
-            "transferConfirm": "We've already sent you a verification email, please confirm before we proceed your request.",
-            "two2faRequired": "\n        <p><span class=\"bold\">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=\"/me/securities\" class=\"underline bold\">here</a> or go to Setting > Account security > enable Google Authentication.</p>\n        <p>If you have problems, email <a href=\"mailto://hello@myconstant.com\">hello@myconstant.com</a>.</p>\n      ",
+            "transferConfirm": "We've already sent you a verification link by email. Please click this link to approve your transaction.",
+            "twoFaRequired": "\n        <p><span class=\"bold\">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=\"/me/securities\" class=\"underline bold\">here</a> or go to Setting > Account security > enable Google Authentication.</p>\n        <p>If you have problems, email <a href=\"mailto://hello@myconstant.com\">hello@myconstant.com</a>.</p>\n      ",
             "verifyEmailRequired": "\n      <p>You need to verify your email to do this action.</p>\n      <p>Please verify your email <a href=\"/me/information\" class=\"underline bold\">here</a>.</p>\n      ",
             "timeLimitInWorkingTime": "Your money will arrive within 1 hour",
             "timeLimit": "Your money will arrive within ",
@@ -2539,23 +2571,23 @@
         "constantLoan": {
             "faqs": {
                 "question1": "How long will it take to find a match?",
-                "answer1": "This depends on the rates and terms you set. Market levels normally result in immediate (or near-immediate) matches, so we update the market rates on the website regularly. If you choose a lower interest rate, it might take a little longer to find you a suitable match. After you've found a match, the loan will be available in your account within 24 hours (slightly longer for larger amounts).\n",
+                "answer1": "\n        <p>This depends on the rates and terms you set. Market levels normally result in immediate (or near-immediate) matches, so we update the market rates on the website regularly. If you choose a lower interest rate, it might take a little longer to find you a suitable match. After you've found a match, the loan will be available in your account within 24 hours (slightly longer for larger amounts).</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-to-borrow-against-crypto-4-simple-steps\" className=\"underline\" target=\"_blank\">How to borrow in 4 simple steps.</a></p>\n      ",
                 "question2": "Do you check my credit score?",
-                "answer2": "As Constant only offers secured loans backed by collateral, there is no need for credit scoring. All you need is adequate collateral to secure your loan. To see how much collateral you’ll need to secure your loan, simply enter the amount you’d like to borrow. The calculator will work out the amount for you.",
+                "answer2": "\n        <p>As we only offer secured loans backed by collateral, there is no need for credit scoring. All you need is adequate collateral to secure your loan. To see how much collateral you need to secure your loan, simply enter the amount you’d like to borrow. The calculator will work out the amount for you.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-to-borrow-against-crypto-4-simple-steps\" className=\"underline\" target=\"_blank\">How to borrow in 4 simple steps.</a></p>\n      ",
                 "question3": "How do you protect my collateral?",
-                "answer3": "If your collateral is ethereum (ETH), it’s held safely in an Ethereum-powered smart contract. All other collateral is held in a BitGo cold wallet, secured by a bank-grade Class III vault and insured to $100M. This means no-one can touch your collateral – not even us. When you repay, your collateral is returned directly to you.",
+                "answer3": "\n        <p>Depending on your collateral, it’s held safely in either BitGo custody, an Ethereum smart contract, or a password-protected web wallet hosted on a dedicated server (to which only our CEO and CTO have access). When you repay, your collateral is immediately transferred back to you.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral\" className=\"underline\" target=\"_blank\">How we protect your collateral.</a></p>\n      ",
                 "question4": "What happens if I don’t repay the loan?",
-                "answer4": "If you don’t repay the loan, we’ll create a sell order for your collateral at 110% of the loan value + interest due to repay investors. Please note the final price may be higher or lower depending on the point of sale, but we’ll always try to get the best price possible for you. You get to keep the loan as well as any difference left over from the sale. That’s it.",
+                "answer4": "If you don’t repay the loan, your collateral will be sold to repay your investor. You get to keep the loan. That’s it.",
                 "question5": "What happens if my crypto collateral falls in value?",
-                "answer5": "We will notify you three times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, we’ll create a sell order to repay the investor. The final price might differ depending on the point of sale, but we’ll always try to get you the best price possible. Any difference will be refunded to you. Borrowers will receive notifications at 125%, 120% and 115%, so they can choose to repay early to avoid liquidation, or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.",
+                "answer5": "\n        <p>We will notify you three times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, we’ll create a sell order to repay the investor. You keep the loan, but you lose your collateral.</p>\n        <p>Borrowers will receive notifications at 125%, 120% ad 115% of the investor’s principal plus earned interest. You can choose to repay early to avoid liquidation or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.</p>\n        <p><a href=\"https://www.myconstant.com/blog/extra-protection-for-your-collateral-auto-top-up\" className=\"underline\" target=\"_blank\">How to avoid liquidation with auto top-up.</a></p>\n      ",
                 "question6": "Can I repay early?",
                 "answer6": "\n          <p>If you'd like to pay back your loan before 75% of the term is up, that's absolutely fine. You simply have to pay interest for the days you are in possession of the loan, and just 50% of the original interest rate for the remaining days of the term.</p>\n          <p>If you'd like to pay back your loan after 75% of the term is up and claim back your collateral, that's also fine, but the interest due on that loan is the full percentage for the entire term.</p>\n        ",
                 "question7": "Can I recall excess if the value of my collateral increases?",
-                "answer7": "Yes. If the value of your collateral rises during your loan term, you can withdraw the difference from your Accounts page.",
-                "question8": "What is the LTV (Loan to Value) Ratio? Is it always the same?",
-                "answer8": "<p>The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most collateral types have an LTV ratio of 66% for 1 year loans or shorter. That means we require 150% of the loan value in collateral. For each month after the first year, we require an extra 5% of the loan value in collateral.</p>\n          <p>For example, if you were to request a loan for 15 months, the collateral due would be 150% + (3*5)% = 165% of the loan value in collateral, which brings your LTV ratio to 60.6%.</p>\n   ",
+                "answer7": "\n        <p>Yes. If the value of your collateral rises during your loan term, you can withdraw the difference from your Accounts page.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-to-deposit-top-up-recall-crypto-constant\" className=\"underline\" target=\"_blank\">How to deposit, top-up, and recall excess collateral.</a></p>\n      ",
+                "question8": "What is the LTV (Loan-to-Value) Ratio? Is it always the same?",
+                "answer8": "\n        <p>The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral.</p>\n      ",
                 "question9": "How do I repay my loan?",
-                "answer9": "\n          <p>We’ll deduct your repayment directly from your Constant account balance. Adding funds is easy. You can do one or a combination of the following:</p>\n          <p>1) Transfer USD to one of our US bank accounts</p>\n          <p>2) Send CONST to your Constant Wallet</p>\n          <p>   Or send any one of our supported stablecoins: </p>\n          <p>   USDT/USDC/TUSD/GUSD/PAX/USDS</p>\n          <p>You can also repay using your collateral balance. </p>\n          <p>   Your balance will update when funds have been received in your Constant account.</p>",
+                "answer9": "\n          <p>We’ll deduct your repayment directly from your Constant account balance. Adding funds is easy. You can do one or a combination of the following:</p>\n          <ol>\n            <li>Transfer USD to one of our US bank accounts.</li>\n            <li>Send any one of our supported stablecoins: USDT/USDC/TUSD/GUSD/PAX/USDS.</li>\n            <li>Repay the equivalent USD value in a supported cryptocurrency.</li>\n          </ol>\n          <p>Your balance will update when funds have been received in your Constant account.</p>\n        ",
                 "question10": "What happens if I repay late?",
                 "answer10": "The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due."
             },
@@ -3703,7 +3735,7 @@
         "toAWallet": "To an ETH/EOS wallet",
         "walletAddr": "Ethereum/EOS wallet address",
         "input2FA": "Input 2FA",
-        "two2faRequired": "\n      <p><span class=\"bold\">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=\"/me/securities\" class=\"underline bold\">here</a> or go to Setting > Account security > enable Google Authentication.</p>\n      <p>If you have problems, email <a href=\"mailto://hello@myconstant.com\">hello@myconstant.com</a>.</p>\n    ",
+        "twoFaRequired": "\n      <p><span class=\"bold\">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=\"/me/securities\" class=\"underline bold\">here</a> or go to Setting > Account security > enable Google Authentication.</p>\n      <p>If you have problems, email <a href=\"mailto://hello@myconstant.com\">hello@myconstant.com</a>.</p>\n    ",
         "withdrawFailed": "Something went wrong. Please try again.",
         "withdrawSuccessful": "Your withdrawal was completed successfully.",
         "countryNotSupport": "Your country is not supported at the moment. Our support team will get in touch with you via email.",
@@ -3759,6 +3791,7 @@
         "makeLocalOrderFailed": "Failed while creating your order",
         "makeDirectOrderSuccess": "Thanks! Your transfer is now processing.",
         "makeDirectOrderFailed": "Failed while creating your order",
+        "transferConfirm": "We've already sent you a verification link by email. Please click this link to approve your transaction.",
         "info": {
             "title": "SEND MONEY",
             "desc1": "Convenient.",
@@ -4019,15 +4052,13 @@
         },
         "faqs": {
             "question1": "What is peer-to-peer (P2P) lending?",
-            "answer1": "<p>Constant is the first fully secured P2P lending platform. All investor funds are fully backed by collateral. Borrower collateral is stored safely in a smart contract or insured BitGo custody, which means no one can touch it – not even us. Unlike other platforms, Constant also allows users to set their own interest rates and terms. </p>",
-            "question2": "What makes Constant different from other P2P lending platforms?\n",
-            "answer2": "        <p>Constant is the first fully secured P2P lending platform. All investor funds are fully backed by collateral. Borrower collateral is stored safely in a smart contract or insured BitGo custody, which means no one can touch it – not even us. Unlike other platforms, Constant also allows users to set their own interest rates and terms</p>",
+            "answer1": "\n      <p>P2P lending is where one person lends to another in return for interest, without any third party getting in the way. Unlike bank lending, where the bank lends your deposits and keeps the lion’s share of interest, P2P lending lets you keep all the profits yourself.</p>\n      <p>On our platform, you also set your own rates and terms, which gives you plenty of flexibility to find the right investment. We also differ from other P2P lending platforms in that we only use liquid collateral – in other words, we secure loans with collateral that’s easy to sell if borrowers default, ensuring you get your money back (plus interest).</p>\n      <p>New to P2P lending? <a href=\"https://www.myconstant.com/blog/peer-to-peer-lending-what-you-should-know-before-investing\" class=\"underline\" target=\"_blank\">Here’s what to know before you invest.</a></p>\n      ",
+            "question2": "What makes Constant different from other P2P lending platforms?",
+            "answer2": "\n        <p>Constant is the first fully-secured P2P lending platform. Every loan is 150% (minimum) backed by collateral, which is sold if borrowers default or its value falls to a threshold, protecting investors (borrowers keep the loan).</p>\n        <p>Unlike other platforms, we don’t need credit checks and you set the interest rate and term, not us. As well as providing you with a platform on which to do business, we also give you the educational resources to reach your financial goals, fast.</p>\n        <p><a href=\"https://www.myconstant.com/blog/11-reasons-to-invest-with-constant\" class=\"underline\" target=\"_blank\">Discover 11 reasons to invest with Constant.</a></p>\n      ",
             "question3": "Who can participate?",
-            "answer3": "<p>Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment).</p>",
-            "question4": "How does Constant protect customers’ funds?",
-            "answer4": "<p>All of our loans and investments are protected by a combination of Ethereum smart contracts, insured BitGo custody, and crypto collateral.</p>\n<p>An Ethereum smart contract is an unstoppable, programmable ruleset that strictly defines how your money is used. All our borrowers put up 150% of the loan amount in collateral, so investors see a return whether borrowers repay or not.</p>\n<p>Non-ethereum collateral will be escrowed with BitGo, a qualified and insured custodian of digital assets. The BitGo cold wallet is protected by a bank-grade Class III vault, insured to $100M by Lloyds, the world’s biggest insurance market.</p>\n",
-            "question5": "",
-            "answer5": ""
+            "answer3": "\n        <p>Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment). If you intend to invest fiat (USD), you will also need to pass KYC (Know Your Customer) checks.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-to-verify-your-id-on-constant-kyc\" class=\"underline\" target=\"_blank\">How to verify your ID (KYC).</a></p>\n      ",
+            "question4": "How does Constant protect customers’ assets?",
+            "answer4": "\n        <p>All loans are 150% (minimum) backed by collateral put up by borrowers. If borrowers default or their collateral falls too much in value, the collateral is sold to repay investors.</p>\n        <p>In addition, we use insured custodial partners (Prime Trust and BitGo) to manage both fiat (USD) and digital assets. This additional layer of protection helps minimize the threat of theft, mismanagement, or loss of your assets.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral\" class=\"underline\" target=\"_blank\">Read more about how we protect your assets.</a></p>\n      "
         },
         "howItWorks": {
             "title": "How it works.",
@@ -4491,7 +4522,7 @@
             "question4": "How do you protect my investment?",
             "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too:</p>\n        <ol>\n          <li>All of our borrowers must put up 150% of the loan amount as crypto collateral. If they don’t repay, we sell the collateral to repay you.</li>\n          <li>We also include a liquidation threshold to insure against a fall in the collateral’s value. If the value falls to 110% of your principal and earned interest, it’s sold to repay you.</li>\n          <li>We only accept vetted, quality cryptocurrencies and cap our exposure to these markets by daily trading volume. This ensures we can sell the collateral should the market dip.</li>\n        </ol>\n        <p>These protective measures help ensure you get the returns promised. However, all investment involves risk, and despite our best efforts, we can’t guarantee the return of your principal and profit. Therefore please invest wisely.</p>\n        <p><a href=\"/blog/how-we-protect-your-money-and-collateral\" className=\"underline\" target=\"_blank\">Read more about how we protect you.</a></p>\n      ",
             "question5": "What happens when my money isn’t on loan?",
-            "answer5": "\n        <p>You choose what we do with your money when it’s not on loan or waiting to be matched:</p>\n        <ol>\n          <li>\n            <p>You can store your funds in Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>\n            <p><a href=\"/blog/prime-trust-asset-protection\" className=\"underline\" target=\"_blank\">Learn more about Prime Trust.</a></p>\n            <p>OR</p>\n          </li>\n          <li>\n            <p>Earn 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>\n            <p><a href=\"/blog/flex-apy-account-compound-finance\" className=\"underline\" target=\"_blank\">Learn more about Flex.</a></p>\n          </li>\n        </ol>\n        <p>If you’re waiting for a match, your money will automatically remain in the custody of Prime Trust.</p>\n      ",
+            "answer5": "\n        <p>When not on loan or waiting for a match, your money earns 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>\n        <p>If you're waiting for a match, your money remains in the custody of Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>\n        <p>Flex is enabled by default, but you can disable it from your Accounts page. You will no longer earn interest and your funds will remain in Prime Trust custody (unless matching for a P2P loan).</p>\n        <p><a href=\"https://www.myconstant.com/blog/flex-or-prime-trust-constant\" className=\"underline\" target=\"_blank\">Prime Trust or Flex?</a></p>\n      ",
             "question6": "What happens if a borrower repays early?",
             "answer6": "\n        <p>If a borrower repays before 75% of the loan term is complete, they’ll pay you earned interest to date plus 50% of the interest due on the remainder of the term.</p>\n        <p>If a borrower repays after 75% of the loan term is complete, they’ll pay you 100% of the interest due on the loan.</p>\n      ",
             "question7": "What happens if you have to sell borrower collateral to repay me?",
@@ -4541,7 +4572,7 @@
             "question3": "How do I invest?",
             "answer3": "\n        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to our FDIC-insured escrow account, and wait for a match. This is usually very quick if you’ve set market rates. </p>\n        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>\n      ",
             "question4": "How do you protect my investment?",
-            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
+            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>\n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
             "question5": "What happens when my money isn’t on loan?",
             "answer5": "When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds."
         },
@@ -4550,7 +4581,7 @@
         }
     },
     "payment": {
-        "intro": "\n    <h1>Worldwide, instant, zero cost mass payments.</h1>\n    <br />\n    <h5>\n        Send and receive money instantly. Any amount, any number of people, anywhere in the world. \n        Pay suppliers, freelancers, automate your entire payroll - with a single click.\n    </h5>\n    <br />\n    <h5>Constant allows you to harness the power of global peer to peer technology to truly do business with the world.</h5>\n    <br />\n    <h5>No wait times, no transfer fees. Hello world.</h5>\n  ",
+        "intro": "\n    <h1>Worldwide, instant, zero cost mass payments.</h1>\n    <br />\n    <h5>\n        Send and receive money instantly. Any amount, any number of people, anywhere in the world.\n        Pay suppliers, freelancers, automate your entire payroll - with a single click.\n    </h5>\n    <br />\n    <h5>Constant allows you to harness the power of global peer to peer technology to truly do business with the world.</h5>\n    <br />\n    <h5>No wait times, no transfer fees. Hello world.</h5>\n  ",
         "howItWorks": {
             "heading": "How it works",
             "step1": "1",
@@ -4637,7 +4668,7 @@
             "question3": "Is there a maximum or minimum amount for investing and borrowing?",
             "answer3": "There are no limits with Constant. You can invest or borrow as much or little as you like.",
             "question4": "Who can participate?",
-            "answer4": "Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to make investments and withdraw profit, and to receive or repay a loan).",
+            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>\n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
             "question5": "Which currencies do you support?",
             "answer5": "<p>Investment funds are held in USD – other fiat currencies will be converted.</p>\n<p>For borrower collateral, we accept BTC and ETH. </p>\n<p>Loans are offered in USD, VND and Constant – the platform’s native stablecoin, pegged 1:1 with the USD.</p>"
         }
@@ -4698,7 +4729,7 @@
             "question3": "What is the interest rate?",
             "answer3": "        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to one of our international bank accounts, and wait for a match. This is usually very quick if you’ve set market rates. </p>\n        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>\n      ",
             "question4": "How much is the monthly earning?",
-            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. </p>      \n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>",
+            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>\n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
             "question5": "Who can participate?",
             "answer5": "When not on loan, Prime Trust, an accredited US financial institution, manages your money on our behalf – we never take custody of the funds."
         }
@@ -4820,7 +4851,9 @@
                 "cancel": "Cancel",
                 "withdrawFailed": "Something's not right. Please try again.",
                 "withdrawFailedSameAddress": "Unable to withdraw to the same wallet address.",
-                "withdrawSuccess": "Withdrawal successful."
+                "withdrawSuccess": "Withdrawal successful.",
+                "transferConfirm": "We've already sent you a verification link by email. Please click this link to approve your transaction.",
+                "twoFaRequired": "\n          <p><span class=\"bold\">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=\"/me/securities\" class=\"underline bold\">here</a> or go to Setting > Account security > enable Google Authentication.</p>\n          <p>If you have problems, email <a href=\"mailto://hello@myconstant.com\">hello@myconstant.com</a>.</p>\n        "
             }
         },
         "deposits": {
@@ -4935,11 +4968,11 @@
     "deposit1": {
         "faqs": {
             "question1": "What is Flex?",
-            "answer1": "Flex is a deposit account that earns you 4% APY through automatic lending. When you deposit money into Flex, it goes into a liquidity pool managed by Compound Finance. Borrowers who’ve put up collateral can then secure loans from the pool in return for interest – and we pay that interest to you. Since your deposits go to a pool rather than individual borrowers, you can withdraw or deposit anytime, as often as you like, and without any fees. ",
+            "answer1": "\n      <p>Flex is a deposit account that earns you 4% APY through automatic lending. When you deposit money into Flex, it goes into a liquidity pool managed by Compound Finance. Borrowers who’ve put up collateral can then secure loans from the pool in return for interest – and we pay that interest to you. Since your deposits go to a pool rather than individual borrowers, you can withdraw or deposit anytime, as often as you like, and without any fees.</p>\n      <p><a href=\"https://www.myconstant.com/blog/flex-apy-account-compound-finance\" class=\"underline\" target=\"_blank\">How Flex works.</a></p>\n      ",
             "question2": "Why 4% APY?",
             "answer2": "Compound Finance uses a blockchain protocol that intelligently manages the lending pool. It also sets interest rates according to supply and demand. At the moment, the rate is fixed at 4% APY. In the future, it could be higher or lower depending on activity in Compound’s lending market.",
             "question3": "What is Compound Finance?",
-            "answer3": "<p>Compound Finance is a technology that intelligently manages a lending pool of over $150 million in assets (as of September 2019). Flex interfaces with this technology through an API that allows you to withdraw your deposits and earned interest at any time.</p>\n\n<p>Compound Finance lends in a similar way to banks: your deposits go in and are lent to borrowers in exchange for interest and collateral. But since Compound Finance is a technology, there is no need for branches or staff, so you enjoy a much better interest rate!</p>\n\n<p><a href=\"/blog/flex-apy-account-compound-finance\">Learn more about Compound Finance.</a></p>",
+            "answer3": "\n      <p>Compound Finance is a technology that intelligently manages a lending pool of over $150 million in assets (as of September 2019). Flex interfaces with this technology through an API that allows you to withdraw your deposits and earned interest at any time.</p>\n      <p>Compound Finance lends in a similar way to banks: your deposits go in and are lent to borrowers in exchange for interest and collateral. But since Compound Finance is a technology, there is no need for branches or staff, so you enjoy a much better interest rate!</p>\n      <p><a href=\"https://compound.finance/\" class=\"underline\" target=\"_blank\">Learn more about Compound Finance.</a></p>\n      ",
             "question4": "Do you have a referral program for Flex?",
             "answer4": "Yes, we do. For every friend you refer to Flex, you’ll get 10% of their interest earnings for the first year (up to a maximum of $1,000,000). For more details, <a href=\"/referral\">visit your Referrals page.</a>",
             "question5": "Can I withdraw anytime?",
@@ -4947,7 +4980,7 @@
             "question6": "How do my deposits earn interest?",
             "answer6": "Flex uses an API with Compound Finance to lend your deposits to a liquidity pool. Others borrow from the pool in return for putting up collateral, and you earn the interest. In other words, Flex is very similar to how investments work on Constant, only with Flex you can withdraw anytime.",
             "question7": "Are my deposits insured?",
-            "answer7": "Not always, no. While held with our trust partner, Prime Trust, your deposits are covered by a $130,000,000 insurance policy. However, we expect deposits will spend most of their time earning interest through Compound Finance, so will instead be protected by collateral put up by Compound's users.",
+            "answer7": "\n      <p>Not always, no. While held with our trust partner, Prime Trust, your deposits are covered by a $130,000,000 insurance policy. However, we expect deposits will spend most of their time earning interest through Compound Finance, so will instead be protected by collateral put up by Compound's users.</p>\n      <p><a href=\"https://www.myconstant.com/blog/flex-or-prime-trust-constant\" class=\"underline\" target=\"_blank\">Earn interest on your deposits or insure them?</a></p>\n      ",
             "question8": "Can I deposit collateral or other cryptocurrency into Flex?",
             "answer8": "At the moment, Flex only accepts USD and USD-backed stablecoins.",
             "question9": "Can I earn interest while waiting for an investment order to match?",
@@ -5499,7 +5532,7 @@
             },
             "block2": {
                 "title": "What can you do with it?",
-                "desc": "\n          <h5 class=\"margin-0\">Here’s a brief overview of our API services.</h5> \n          <strong>Invest</strong>, <strong>Borrow</strong>, and <strong>Deposit</strong>\n             <li>Browse our open order book. Give your customers access to the best deals in our P2P lending market.</li>\n             <li>Submit customized lending orders. Put customers in the driving seat with flexible rates and terms.</li>\n             <li>Earn interest on fiat and stablecoin deposits. Reward customers with a bank-beating interest rate on deposits, compounded and paid every second.</li> \n          <h5>View balances and withdraw</h5>\n             <li>Browse deposit history. Help your customers keep track of their spend.</li>\n             <li>View coin and fiat balances. Give customers insight into their digital assets and liquidity.</li> \n             <li>Withdraw cryptocurrencies and fiat. Support withdrawal of multiple assets, including USD, crypto, and USD-backed stablecoins.</li> \n          <h5>Onboard new customers</h5>\n             <li>Perform KYC checks. Verify the identity of customers to comply with AML (Anti Money Laundering) regulations.</li>\n             <li>Verify accounts. Reduce spam and improve the quality of your customer database.</li>\n             <li>Authenticate anyone. Help protect customer security and preserve the integrity of your platform through 2FA protocols.</li> \n        "
+                "desc": "\n          <h5 class=\"margin-0\">Here’s a brief overview of our API services.</h5>\n          <strong>Invest</strong>, <strong>Borrow</strong>, and <strong>Deposit</strong>\n             <li>Browse our open order book. Give your customers access to the best deals in our P2P lending market.</li>\n             <li>Submit customized lending orders. Put customers in the driving seat with flexible rates and terms.</li>\n             <li>Earn interest on fiat and stablecoin deposits. Reward customers with a bank-beating interest rate on deposits, compounded and paid every second.</li>\n          <h5>View balances and withdraw</h5>\n             <li>Browse deposit history. Help your customers keep track of their spend.</li>\n             <li>View coin and fiat balances. Give customers insight into their digital assets and liquidity.</li>\n             <li>Withdraw cryptocurrencies and fiat. Support withdrawal of multiple assets, including USD, crypto, and USD-backed stablecoins.</li>\n          <h5>Onboard new customers</h5>\n             <li>Perform KYC checks. Verify the identity of customers to comply with AML (Anti Money Laundering) regulations.</li>\n             <li>Verify accounts. Reduce spam and improve the quality of your customer database.</li>\n             <li>Authenticate anyone. Help protect customer security and preserve the integrity of your platform through 2FA protocols.</li>\n        "
             }
         }
     },
@@ -6127,7 +6160,7 @@
         "tierProgressDesc": "Earn {points} points by {date} to maintain {level} membership",
         "tierProgressDescMember": "For every dollar you invest or borrow, you earn 1 membership point. Each point expires after 180 days.",
         "caption": "Membership",
-        "pointExpiredDate": "{value} points will expired on {date}",
+        "pointExpiredDate": "{value} points will expire on {date}",
         "expiredDate": "Your {value} points will expire on {date}",
         "pointNeed2GetGold": "You still need {value} points to reach Gold Member status",
         "remaining": "{type} ${value} in {date} days",
@@ -6166,7 +6199,7 @@
             "reward": "Reward",
             "date": "Date",
             "redeem": "Redeem",
-            "redeemDesc": "Membership rewards are paid after you've reviewed us TrustPilot. If you've reviewed us already, your rewards will go straight into your account. Otherwise, click the Unlock your rewards button below to submit your TrustPilot username and get your rewards."
+            "redeemDesc": "Membership rewards are paid after you've reviewed us on TrustPilot. If you've reviewed us already, your rewards will go straight into your account. Otherwise, click the Unlock Your Rewards button below to submit your TrustPilot username and claim your rewards."
         },
         "rewardType": {
             "reward": "STAR",
@@ -6242,7 +6275,7 @@
             "redeemButton": "Unlock your rewards",
             "redeemButtonMobile": "Rewards",
             "redeemPopup": {
-                "messageConfirm": "To unlock your rewards, please <a href=\"https://www.trustpilot.com/review/myconstant.com\" class=\"underline\" target=\"_blank\">review us on TrustPilot</a>. Then enter your TrustPilot username below and click Submit. Your rewards will unlock immediately.",
+                "messageConfirm": "To unlock your rewards, please <a href=\"https://www.trustpilot.com/review/myconstant.com\" class=\"underline\" target=\"_blank\">review us on TrustPilot</a>. Then enter your TrustPilot username below and click Submit. Your rewards will be released to your account immediately.",
                 "confirm": "Submit",
                 "cancel": "Cancel"
             }
@@ -6565,6 +6598,18 @@
             "sent": {
                 "title": "Your transfer was successful",
                 "desc": "You sent ${amount} to {toEmail}."
+            }
+        },
+        "transfer_crypto": {
+            "sent": {
+                "title": "Your transfer was successful",
+                "desc": "You sent {amount} {currency} to {receiver}."
+            }
+        },
+        "withdraw": {
+            "fiat": {
+                "title": "Your withdrawal was successful",
+                "desc": "You have successfully withdrawn {fiatAmount} {fiatCurrency}."
             }
         },
         "system": {

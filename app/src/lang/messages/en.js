@@ -282,7 +282,8 @@ export default {
     constantLoan: 'Constant Loan',
     saveAndGrowMoney: 'Save & Grow money',
     login: 'Login',
-    signup: ' | Sign up',
+    log_in: 'Log in',
+    createAccount: 'Create account',
     openAnAccount: 'Open an account',
     yourSaving: 'Accounts',
     myInvestments: 'My Investments',
@@ -326,9 +327,13 @@ export default {
         title: 'Crypto-backed Loans',
         desc: 'Your rates. Your terms. No credit checks.',
       },
-      borrowPRV    : {
+      borrowPRV: {
         title: 'Crypto Incognito Loans',
         desc: 'Borrow against PRV from 6% APR. Secure escrow. No credit checks',
+      },
+      borrowCoins: {
+        title: 'Crypto Credit',
+        desc: 'Borrow cash, get crypto. No exchanges',
       }
     }
   },
@@ -1701,6 +1706,7 @@ export default {
         trial_description: 'You keep the interest. Term has ended',
         saving_title: 'Investments',
         loans_title: 'Loans',
+        coin2coin_title: 'Crypto Credit',
         secondInvestments: 'Secondary Market',
         secondInvestmentsDesc: 'Buy and sell matched investments on our secondary market. Sell your investment to end your term early or buy another investor’s order to earn their interest. View or cancel your secondary market orders below.',
         repaySuccess: 'Thanks. Please bear with us while we deduct from your balance.Your collateral will be returned to the wallet address it was sent from.',
@@ -2306,6 +2312,16 @@ export default {
         <p class="header">Earn 7% APR now.</p>
         <p>Don’t go down with the market. Enjoy steady growth with fully-secured P2P lending. All loans are 150% backed by digital assets. No fees.</p>
         <p>Start investing from just $50.</p>
+      `,
+    },
+    netReturns: {
+      title:`
+        <p class="header">Earn 7% APR now.</p>
+        <p>Catch great returns with secured P2P lending. All loans are 150% backed by collateral. No fees.</p>
+        <p>Start investing from just $50.</p>
+        <p></p>
+        <p>Questions?</p>
+        <p>Check out our <a href="#landing-faqs" class="underline">FAQs</a>.</p>
       `,
     },
     howItWorks: {
@@ -3219,6 +3235,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         'Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.',
       exchange: {
         stakingTimeMessage: `Your collateral will be sent to the Constant node. Please note: early repayment won’t be possible for at least {dayNum} days.`,
+        exchangeInfo: 'Estimate amount USD (const) you need to borrow',
+        exchangeInfoDesc: 'Estimate amount USD (const) you need to borrow',
         usedMarketRate: 'Use market rate ',
         usedMarketRateDesc: 'When market rate is enabled, you\'re guaranteed a match at the best rate and term available in the market.',
         maxRateTooltip: 'This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.',
@@ -3238,6 +3256,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         collateralNote: 'For this coin, loans will take up to 24 hours to be granted, repaid, or topped up.',
         collateralNoteFee: 'Fee: {fee} {currency} (1%)',
         collateralNoteMatchedFee: 'Fee: 1%',
+        yourBalance: 'Your current balance is {value} {symbol}',
         collateralNoteTotal: 'Total loan received: {total} {currency}',
         collateralNoteDGXExtraFees: 'Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.',
         usingStaking: 'Get {discount}% off your interest rate by staking collateral',
@@ -3326,7 +3345,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       transaction: {
         title: 'Almost there.',
         message: 'To finalize your loan, please send your collateral to the following wallet address.',
-
+        exchangeMaxAmount: 'Exchange Max Amount',
         copiedAddress: 'Address is copied to clipboard',
         scanQR: 'Alternatively, scan this QR code directly from your mobile wallet to complete the transfer.',
         summarizeTitle: 'Here are the loan terms:',
@@ -3506,6 +3525,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         inValidWalletAddress: 'Your wallet address invalid',
         notSupportBech32: 'BTC bech32 not supported',
         rangeInterestRate: 'Interest rate must be greater than {min}% and less than {max}%',
+        rangeMarketRate: 'Interest rate must be greater than or equivalent {value}%',
         stakingMinTimeRequire: 'Length of term must be equal or greater than {days} days',
       },
       depositCollateral: {
@@ -3667,6 +3687,600 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           depositSuccess: 'Your deposit was completed successfully',
         },
         itemMatched: {
+          matchedAmount: 'Matched (USD)',
+          matchedAmountDesc: 'The amount of USD you borrowed. This might be less than your original order if you only got a partial match.',
+          filledCollateralAmount: 'Bought (Crypto)',
+          filledCollateralAmountDesc: 'How much crypto we bought using your USD loan. Depending on the final sale price, this might be a bit less than your original order',
+          maxCollateralAmount: 'Max Collateral',
+          filledAmount: 'Used (USD)',
+          filledAmountDesc: 'The amount of USD we used to buy your chosen crypto. If we pay less than the matched amount, we\'ll return the difference to your account.',
+          amount: 'Amount',
+          interest: 'Interest',
+          collateral: 'Collateral',
+          collateralValue: 'Collateral value',
+          createdDate: 'Created',
+          dueDate: 'Due',
+          collateralValueDesc: 'This represents your collateral value as a percentage of your loan. It accounts for the interest accrued so far, as well as the repayment fee should you choose to repay today. If it falls to 110%, your collateral will be liquidated, and the difference refunded to you.',
+          repayAddress: 'Repay Address',
+          collateralValueAtLiquid: 'Liquidation price',
+          collateralValueAtLiquidDesc: `Once the price of the token falls to this price, your loan will be liquidated.
+          Note: this number is always changed unpredictably due to the fluctuation of the market. Please keep an eye on your loans to avoid liquidation.`,
+          collateralValueAtLiquidC2CDesc: `Once the price of the collateral falls to this price, your loan will be liquidated.
+          Note: this number is always changed unpredictably due to the fluctuation of the market. Please keep an eye on your loans to avoid liquidation.`,
+        },
+        paymentMethod: {
+          const: 'USD',
+          collateral: 'Collateral',
+          prv: 'PRV'
+        }
+      },
+      advice: {
+        title: 'Đăng Ký Vay Thế Chấp Từ Constant',
+        name: 'Tên',
+        namePlaceHolder: 'Họ và tên',
+        phone: 'Số điện thoại',
+        phonePlaceHolder: 'Số điện thoại',
+        agreeToBorrow: 'Tôi có sở hữu và sẵn sàng thế chấp cryptocurrency(bạn sẽ được vay 66% giá trị coin)',
+        submit: 'Gửi',
+        registerSuccess: 'Đăng ký thành công',
+        regiserFail: 'Đăng ký thất bại'
+      }
+    },
+    constantC2CLoan: {
+      faqs: {
+        question1: 'What is Crypto Credit?',
+        answer1: `
+        <p>Crypto Credit is a fast, easy way to borrow USD against your existing cryptocurrencies to buy new coins.It’s a bit like a margin account, only it’s faster, cheaper, and you always get the best price for your chosen cryptocurrency.</p> 
+        <p>You choose the interest rate and term and put down collateral equivalent to the USD value of your chosen crypto. We then search multiple exchanges to find the best prices and then deposit your chosen crypto into your Constant coin balance.</p> 
+        <p>Meanwhile, we store your collateral in a BitGo cold wallet insured to $100M. When you repay the USD loan, you get your collateral back. There are no trading fees, no withdrawal fees, and you always get the best price for your chosen cryptocurrency.</p>`,
+        question2: 'How does Crypto Credit work?',
+        answer2: `
+        <p>First, decide which cryptocurrency you want to buy. </p>
+        <p>Then, set the details for your loan – including the collateral you want to use, the interest rate, and term.</p> 
+        <p>You’ll then see how much USD you’re going to borrow. This is also the amount you’ll need to repay. We get prices from multiple exchanges to ensure you get the best deal.</p> 
+        <p>If you have enough collateral in your coin balance, you can create your order. Otherwise you’ll need to top-up from your coin balance first. You won’t be able to create an order unless you have sufficient collateral in your coin balance.</p> 
+        <p>When you match with an investor, we use their funds to buy your chosen cryptocurrency and then deposit it in your coin balance. You can then withdraw it to any wallet you like. You won’t interact with an exchange at all. </p>
+        <p>Then, just repay before the term ends to get your collateral back.</p> 
+        <p>That’s it!</p>
+        `,
+        question3: 'Why use Crypto Credit instead of an exchange?',
+        answer3: `
+        <p>Exchange margin accounts charge higher interest rates, trading fees, withdrawal fees, and have only one source for pricing data: the exchange. </p>
+        <p>With Constant Crypto Credit, you set the rate and term to a level you’re comfortable with. Then, we search multiple exchanges to find you the best price, and faster, so you don’t ever miss out on better deals. All trading and withdrawals are free, too.</p> 
+        <p>While with us, your collateral is held in a BitGo cold wallet insured to $100M. Most exchanges store collateral in uninsured hot wallets which are less secure and don’t cover you against theft.</p> 
+        `,
+        question4: 'Am I borrowing cryptocurrency or USD?',
+        answer4: `
+        You borrow USD that we then use to buy your chosen cryptocurrency for you. We do the hard work on the exchanges so you can focus on your trading strategy.
+        `,
+        question5: 'How do I repay a Crypto Credit loan?',
+        answer5: `
+          <p>You can repay your loan in the following ways:</p>
+            <P>1) Deposit USD or a supported stablecoin. <br/>
+            2) Deposit a supported cryptocurrency that matches the value of your loan.<br/>
+            3) Use your existing coin balance or USD balance to repay the value of your loan.</P> 
+        `,
+        question6: 'How do you protect my collateral?',
+        answer6: `
+          <p>Your collateral is stored in a BitGo cold wallet that’s insured to $100,000,000. This protects you against:</p>
+            <p> - Third-party hacks, copying, or theft of private keys.<br>
+             - Insider theft of dishonest acts by BitGo employees or executives.<br>
+             - Loss of keys.</p>
+          <p>When you repay, we co-sign the release of your collateral back into your coin balance and you can then withdraw it to any wallet address you choose.</p>
+          <a target="_blank" href="https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral">How we protect your collateral.</a>
+        `,
+        question7: 'How long will it take to match and get my cryptocurrency?',
+        answer7: `
+        This depends on the rates and terms you set. Market rates will match you in thirty minutes, and you’ll match even faster if you set a higher rate. As we know timely settlement is important for margin traders, it might be worth paying more for a fast match. 
+        `,
+        question8: 'Do you check my credit score?',
+        answer8: `
+          As we only offer secured loans backed by collateral, there is no need for credit scoring. All you need is adequate collateral to secure your loan. When creating your loan order, you’ll see how much collateral you need. 
+        `,
+        question9: 'What happens if I don’t repay the loan?',
+        answer9: `
+          If you don’t repay the loan, your collateral will be sold to repay your investor. You get to keep your chosen cryptocurrency. That’s it.
+        `,
+        question10: 'What happens if my crypto collateral falls in value?',
+        answer10: `
+        <p>We will notify you three times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, we’ll create a sell order to repay the investor. You keep your chosen cryptocurrency, but lose your collateral. </p>
+        <p>You receive email notifications at 125%, 120% and 115% of the investor’s principal plus earned interest. You can choose to repay early to avoid liquidation or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.</p>
+        <a target="_blank" href="https://www.myconstant.com/blog/extra-protection-for-your-collateral-auto-top-up">How to avoid liquidation with auto top-up.</a> 
+        `,
+        question11: 'Can I repay early?',
+        answer11: `
+        <p>If you'd like to pay back your loan before 75% of the term is up, that's absolutely fine. You simply have to pay interest for the days you are in possession of the loan, and just 50% of the original interest rate for the remaining days of the term.</p>
+        <p>If you'd like to pay back your loan after 75% of the term is up and claim back your collateral, that's also fine, but the interest due on that loan is the full percentage for the entire term.</p>
+        `,
+        question12: 'Can I recall excess if the value of my collateral increases?',
+        answer12: `
+        <p>Yes. If the value of your collateral rises during your loan term, you can withdraw the difference from your Accounts page.</p>
+        <a target="_blank" href="https://www.myconstant.com/blog/how-to-deposit-top-up-recall-crypto-constant">How to deposit, top-up, and recall excess collateral.</a>
+        `,
+        question13: 'What is the LTV (Loan-to-Value) Ratio? Is it always the same?',
+        answer13: `
+        The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral.
+        `,
+        question14: 'What happens if I repay late?',
+        answer14: `
+        The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due.
+        `
+      },
+      title: 'Fast and easy crypto credit',
+      subTitle: `
+        <h2>Trade the margin.</h2>
+        <h2>Skip the exchange.</h2>
+        <h2>Borrow against 40+ cryptos.</h2>
+        <br>
+        <p>Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.</p>
+      `,
+      intro: {
+        desc: {
+          1: 'Secure escrow',
+          2: 'No credit checks',
+          3: 'Repay anytime',
+        },
+        youtube: {
+          title: 'Why borrow with Constant?',
+        }
+      },
+      headLine:
+        'Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.',
+      exchange: {
+        stakingTimeMessage: `Your collateral will be sent to the Constant node. Please note: early repayment won’t be possible for at least {dayNum} days.`,
+        exchangeInfo: 'The amount you will borrow in USD',
+        exchangeInfoDesc: 'The amount you will borrow in USD',
+        usedMarketRate: 'Use market rate ',
+        usedMarketRateDesc: 'When market rate is enabled, you\'re guaranteed a match at the best rate and term available in the market.',
+        maxRate: 'Maximum interest rate',
+        maxRateTooltip: 'This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.',
+        minTermTooltip: 'This is the minimum amount of time you want to borrow.',
+        minTerm: 'Length of term',
+        caption: 'Set your own borrowing terms',
+        buttonText: 'Borrow cash',
+        month: '{period}-month',
+        months: '{period}-months',
+        apr: 'APR',
+        termLabel: 'Pick a loan term',
+        amountLabel: 'What do you want to buy?',
+        collateralLabel: 'Collateral required (75% Loan to Value ratio)',
+        collateralRequiredLabel: 'Collateral required ({value}% LTV)',
+        startDateLabel: 'Start date',
+        endDateLabel: 'End date',
+        collateralNote: 'For this coin, loans will take up to 24 hours to be granted, repaid, or topped up.',
+        collateralNoteFee: 'Fee: {fee} {currency} (1%)',
+        collateralNoteMatchedFee: 'Fee: 1%',
+        yourBalance: 'Your current balance is {value} {symbol}',
+        collateralNoteTotal: 'Total loan received: {total} {currency}',
+        collateralNoteDGXExtraFees: 'Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.',
+        collateralNoteMatch: 'Estimated time to match: {hours} hours',
+        collateralNoteMatchTime: 'The rate you entered will have a longer time of matching, according to our past data. Estimated time of matching {hours} hours {type}.',
+        collateralNoteMatchNoneTime: 'The rate you entered will have a longer time of matching, according to our past data. Estimated time of matching.',
+        collateralNoteMatchTimeMax:'maximum',
+        collateralNoteMatchTimeApprox:'approx',
+        collateralNoteMatchInWorkingTime: 'Estimated time to match 1 hour',
+        toolTipCollateral: `
+          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.
+        `,
+        walletAddressLabel: 'Which {symbol} wallet should we return your collateral to?',
+        walletAlias: 'Enter your {symbol} wallet address',
+        moreInfo:
+          'Your funds will reach you as soon as your collateral is confirmed on its blockchain.  ETA: 2 minutes for ETH and 10 minutes for BTC.',
+        monthLoan: '{term}-month loans',
+        monthsLoan: '{term}-months loans',
+        dayLoan: '{term}-day loans',
+      },
+      compareTable: {
+        title: 'Constant vs Exchange Margin Accounts.',
+        description:
+          '(?) We search multiple exchanges to find the best price for your chosen cryptocurrency. <br/>Exchange margin accounts typically only use the price on that exchange, so you can miss out on better deals elsewhere. ',
+      },
+      what: {
+        title: 'Why borrow with us?',
+        whatCaption0: 'Instant loans',
+        whatCaption1: 'Crypto for cash',
+        whatCaption2: '2% annualized interest',
+        whatCaption3: 'Guaranteed approval',
+        whatDesc0: `
+          <p>Our loan mechanism is secured and automated by smart contracts. No lengthy processing times - the money you need is in your account within the hour.</p>
+        `,
+        whatDesc1: `
+          <p>Secure your loan with BTC or ETH and receive USD - all without needing to sell your crypto. Enjoy liquidity without needing to liquidate.</p>
+        `,
+        whatDesc2: `
+          <p>Borrow as much as you want, and take as long as you need. Enjoy flexible repayments and the kindest interest rate on the market.</p>
+        `,
+        whatDesc3: `
+          <p>Constant is for everyone. No credit scoring, background checks or month-long waiting games for approval.</p>
+        `,
+      },
+      howItWorks: {
+        intro: `
+          <p>Deposit cryptocurrency to secure cash, at the best rates on the market.</p>
+          <p>Need cash? We accept major cryptocurrencies as collateral, in exchange for USD or the equivalent in your local currency. That means you’ll have cash to spend - without needing to sell your crypto.</p>
+        `,
+        step1: 'STEP 1',
+        title1: 'ENTER AN AMOUNT',
+        desc1:
+          'How much do you want to borrow? Tell us how much, in your currency of choice.',
+        step2: 'STEP 2',
+        title2: 'CHOOSE A COLLATERAL AND A TERM',
+        desc2:
+          'Secure your loan with BTC or ETH as collateral. Our calculator will tell you how much you need. Then just pick a loan term you feel comfortable with.',
+        step3: 'STEP 3',
+        title3: 'GET CASH TO SPEND',
+        desc3:
+          'Within the hour, your USD loan will be accessible from your Constant Flexible Account. Withdraw anytime, to any other bank account.',
+      },
+      reference: `
+        <div name="ref-container">
+          <div name="ref-item">
+            <span name="ref-label">Interested rate:</span>
+            <span name="ref-value">{intRate}</span>
+          </div>
+          <div name="ref-item">
+            <span name="ref-label">Collateral value:</span>
+            <span name="ref-value">{colValue}</span>
+          </div>
+          <div name="ref-item">
+            <span name="ref-label">Collateral return:</span>
+            <span name="ref-value">{colReturn}</span>
+          </div>
+          <div name="ref-item">
+            <span name="ref-label">Default threshold:</span>
+            <span name="ref-value">{defThreshold}</span>
+          </div>
+        </div>
+      `,
+      transaction: {
+        title: 'Almost there.',
+        message: 'To finalize your loan, please send your collateral to the following wallet address.',
+        exchangeMaxAmount: 'Exchange Max Amount',
+        copiedAddress: 'Address is copied to clipboard',
+        scanQR: 'Alternatively, scan this QR code directly from your mobile wallet to complete the transfer.',
+        summarizeTitle: 'Here are the loan terms:',
+        messageDescription: `
+        <p>Please open your cryptocurrency wallet, enter the required collateral amount, paste the Constant wallet address into the recipient field, and click send.</p>
+        <p>Having difficulty finding your cryptocurrency wallet?
+           If you purchase cryptocurrency from an exchange, you will have a wallet with them, usually accessible from your Accounts page.</p>
+        `,
+        minuteWindow: 'Please complete your transfer within 60 minutes.',
+        minuteWindowDescription: `For the sake of security, this session will time-out after 60 minutes. If you need a little longer, just re-enter the amount you would like to borrow <a href="/borrow" >here</a>.`,
+        msgInfoManual: `
+          <span>At the moment, {symbol} deposits aren’t automatic, so we need to change your loan status manually. Therefore, please give us <b>up to 12 hours</b> to confirm receipt of your collateral (it's usually much faster).</span>
+          <br />
+          <span>If you have any questions, please email us at hello@myconstant.com or message <a href='https://t.me/@andy_9210'>Andy</a>, our head of customer service, on Telegram.</span>
+          <br />
+          <span>We'll start finding you a match as soon as we receive your collateral.</span>
+        `,
+        msgInfoAuto: `
+          <span>
+            Once we receive your collateral, your loan status will change from <b>pending</b> to <b>matching</b>. This is usually very fast – around 1 block confirmation – but might take a little longer during busy times. When your status changes, it means we’ve begun finding an investor to accept your terms. We’ll email you as soon as we find you a match.
+          </span>
+        `,
+        collateralNoteDGXExtraFees: 'Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.',
+        transactionID: 'transaction ID',
+        noticeTpl:
+          'Please send <strong>{collateralAmount} {collateralSymbol}</strong> as collateral to the following address within the next <strong>60 minutes</strong>.',
+
+        summarizeContent: `
+          <div name="ref-container">
+            <div name="ref-item">
+              <span name="ref-label">Loan amount:</span>
+              <span name="ref-value">{loanAmount}</span>
+            </div>
+            <div name="ref-item">
+              <span name="ref-label">Interested rate:</span>
+              <span name="ref-value">{interestedRate}</span>
+            </div>
+            <div name="ref-item">
+              <span name="ref-label">Collaterals:</span>
+              <span name="ref-value">{collaterals}</span>
+            </div>
+            <div name="ref-item">
+              <span name="ref-label">Term:</span>
+              <span name="ref-value">{term}</span>
+            </div>
+          </div>
+        `,
+        summarizeContent1: `
+          <div class="row">
+            <div class="col-md-6 col-sm-4">
+                <p class="semiBold">Loan amount:</p>
+            </div>
+            <div class="col">
+                <p>{loanAmount}</p>
+            </div>
+           </div>
+           <div class="row">
+            <div class="col-md-6 col-sm-4">
+                <p class="semiBold">Interested rate:</p>
+            </div>
+            <div class="col">
+                <p>{interestedRate}</p>
+            </div>
+           </div>
+           <div class="row">
+            <div class="col-md-6 col-sm-4">
+                <p class="semiBold">Collaterals:</p>
+            </div>
+            <div class="col">
+                <p>{collaterals}</p>
+            </div>
+           </div>
+        `,
+        repaymentField: `
+            <div class="row">
+              <div class="col-md-6 col-sm-4">
+                  <p class="semiBold">Repayment date:</p>
+              </div>
+              <div class="col">
+                  <p>{repayment}</p>
+              </div>
+           </div>
+        `,
+        borrowMore: 'Borrow more',
+        termField: 'Term',
+        termUnit: '{period} month',
+        termUnit1: '{period} months',
+        loanAmount: 'Loan amount:',
+        collaterals: 'Collateral:',
+        collateralRequired: 'Collateral Required:',
+        collateralBalance: 'Your Collateral Balance:',
+        term: 'Term:',
+        interestedRate: 'Interest rate:',
+        interestedRateValue: '{percent} APR',
+        matchingFee: 'Matching fee:',
+        matchingFeeValue: '1% of loan amount',
+        cryptoAddress: '{currency} address:',
+        backOrderBook: 'Back',
+        backAccount: 'Done',
+        bitgo: {
+          title: 'Secured by BitGo',
+          content: 'You’re sending your collateral to BitGo, a qualified digital asset custodian. Your collateral will be securely stored inside a BitGo cold wallet that’s insured to $100M. So no matter what happens to Constant, your collateral is secure.'
+        }
+      },
+      history: {
+        itemTpl: `
+          <div name="loan-info-container">
+            <div name="loan-info-item">
+              <span name="loan-info-label">Loan amount:</span>
+              <span name="loan-info-value">{loanAmount}</span>
+            </div>
+            <div name="loan-info-item">
+              <span name="loan-info-label">Interest rate:</span>
+              <span name="loan-info-value">{interestedRate}</span>
+            </div>
+            <div name="loan-info-item">
+              <span name="loan-info-label">Collaterals:</span>
+              <span name="loan-info-value">{collaterals}</span>
+            </div>
+            <div name="loan-info-item">
+              <span name="loan-info-label">Term:</span>
+              <span name="loan-info-value">{term}</span>
+            </div>
+          </div>
+        `,
+        address: 'Address',
+        collateralAddress: 'Collateral Address',
+        renew: 'Renew',
+        status: {
+          pending: 'pending',
+          accepted: 'accepted',
+          payingInterest: 'paying',
+          done: 'done',
+          cancelled: 'cancelled',
+          withdrawed: 'withdrawed',
+          expired: 'Expired',
+          fullPayment: 'full payment',
+        },
+        confirmPay: {
+          payingInterest: {
+            title: 'Interest Payment',
+            content: `
+              <p>Your Interest payment is <strong>{amountConstant}</strong> Constant</p>
+              <p>Your collateral payment is <strong>{amountCollateral} {symbol}</strong></p>
+            `,
+            success: 'Pay Successfully',
+          },
+          fullPayment: {
+            title: 'Full Payment',
+            content: `
+              <p>Your Interest payment is <strong>{amountConstant}</strong> Constant</p>
+              <p>Your collateral payment is <strong>{amountCollateral} {symbol}</strong></p>
+            `,
+            success: 'Pay successfully',
+          },
+        },
+        interestPaymentTitle: 'Interest Payment',
+        interestPaymentContent:
+          '<p>Your Interest payment is <strong>{amountPayInterest}</strong> Constant</p>',
+        balanceNotEnough: 'Your Balance is not enough to pay',
+        paySuccess: 'Pay Successfully',
+        noHistoryData: 'Get Crypto loan here',
+        paymentDetail: 'Payment detail',
+        itemPayment:
+          '#{id} {description} <strong>{amount}</strong> Constant at {paymentDate}',
+        noPaymentDetail: 'No payment detail',
+        payConstant: 'Pay by Constant',
+        payCollateral: 'Pay by Collateral',
+      },
+      errorMessages: {
+        Required: 'Required',
+        constantAmountRequired: 'Amount is required to make a borrow!',
+        collateralAmountRequired: 'Collateral amount is required to make a borrow!',
+        walletAddressRequired: 'Wallet Address is required to make a borrow!',
+        minimumBorrowAmount:
+          'The minimum amount that you can borrow is {amount} {symbol}',
+        inValidWalletAddress: 'Your wallet address invalid',
+        notSupportBech32: 'BTC bech32 not supported',
+        rangeInterestRate: 'Interest rate must be greater than {min}% and less than {max}%',
+        rangeMarketRate: 'Please choose the market rate or higher so you’re guaranteed to match with an investor.',
+        notEnoughCollateral: 'You don’t have enough {symbol} to use as collateral. Please deposit {amount} {symbol} to complete your loan.',
+      },
+      depositCollateral: {
+        collateralTypeLabel: 'Collateral type',
+        walletAddressLabel: 'Your {symbol} wallet address',
+        walletAlias: '0x687C906b2....8bd9369242e',
+        generateWallet: 'Generate wallet address',
+      },
+      learnMore: 'Learn more',
+      listApplications: {
+        heading: 'Crypto Credit',
+        noLoans: 'Request your first fixed rate loan.',
+        bep2Memo: 'Memo',
+        bep2MemoRequired: 'Memo is required!',
+        bep2MemoDesc: 'Memo maybe is your ID if PEP2 crypto!',
+        walletAlias: '0x687C906b2....8bd9369242e',
+        walletAddressLabel: 'Return to your {symbol} address',
+        loan: 'loan',
+        staked: 'STAKED',
+        amount: 'Amount',
+        matched: 'matched',
+        pendingAmount: 'Pending Amount',
+        collateralRequired: 'Collateral',
+        collateralAddress: 'Collateral Address',
+        extraRate: 'Your total rate will be {rate}% effect from {date}',
+        exchangeRates: 'Exchange rates: 1 {symbol}/{value} USD',
+        createdDate: 'Created Date',
+        endTerm: 'Term ends',
+        principal: 'Principal',
+        interests: 'Interest',
+        created: 'Created',
+        term: 'Term',
+        cancel: 'Cancel',
+        delete: 'Delete',
+        dueDays: 'Due',
+        getCollateral: 'Recall excess',
+        payCollateral: 'Pay',
+        payOffLoan: 'Repay',
+        depositMatched: 'Top up',
+        rewardApply: 'Reward',
+        cancelDepositMatched: 'Cancel Deposit',
+        cashback: 'Cash back',
+        collateral: 'Collateral',
+        collateralValue: 'Collateral value',
+        liquidWaring: 'Your collateral will be liquidated, Please top up more collateral...',
+        interestPrice: 'Interest:',
+        rate: 'Rate',
+        yourLoan: 'Match{plural} {matched}',
+        partialMatchesDesc: 'Some loan requests may be split into smaller amounts to fill multiple investment orders. The platform will keep trying to match you completely for the duration of your term.',
+        status: 'Status',
+        allStatus: 'All',
+        mapStatus: {
+          pending: 'Pending',
+          recieved: 'Received',
+          accepted: 'Accepted',
+          payingInterest: 'Paying',
+          done: 'Done',
+          withdrawed: 'Withdrawed',
+          tnxFailed: 'Transaction failed',
+          cancelled: 'Cancelled',
+          rejected: 'Rejected',
+          expired: 'Expired',
+          fullPayment: 'full payment',
+        },
+        mapStatus1: {
+          pending: 'Pending',
+          approved: 'Approved',
+          rejected: 'Rejected',
+          paid: 'Paid',
+          tnxPending: 'Transaction Pending',
+          done: 'Done',
+          repayPending: 'Repay Pending',
+          repayFail: 'Repay Fail',
+          repayUpPending: 'Repay Up Pending',
+          repayUpFail: 'Repay Up Fail',
+          repayDownPending: 'Repay Down Pending',
+          repayDownFail: 'Repay Down Fail',
+          payoffPending: 'Payoff Pending',
+          payoffFail: 'Payoff Fail',
+          fillPending: 'Fill Pending',
+          fillFail: 'Fill Fail',
+          payoffDone: 'Repaid',
+          repayDownDone: 'Repay Down Done',
+          topupPending: 'Top Up Pending',
+          manualPending: 'Manual Pending',
+          liquidateApproving: 'Liquidate Approving',
+          liquidatePending: 'Liquidation In Process',
+          liquidateChainPending: 'Liquidate Chain Pending',
+          liquidateDone: 'Liquidate Done',
+          liquidateFailed: 'Liquidate Failed',
+          payoffPrvPending: 'Payoff Pending',
+          payPrvPending: 'Payoff Pending',
+        },
+        mapStatus2: {
+          pending: 'Pending',
+          recieved: 'Matching',
+          accepted: 'Matched',
+          payingInterest: 'Interest due',
+          done: 'Done',
+          withdrawed: 'Withdrawn',
+          tnxFailed: 'Please try again',
+          cancelled: 'Cancelled',
+          rejected: 'Error occurred',
+          timeout: 'Timed out',
+          chainBorrowPending: 'Pending',
+          chainBorrowOk: 'Success',
+          chainBorrowFailed: 'Please try again',
+          chainCancelPending: 'Cancelled',
+          chainCancelOk: 'Cancelled',
+          chainCancelFailed: 'Please try again',
+          chainBorrowCancel: 'Cancelled',
+          creating: 'Processing',
+          cancelling: 'Cancelling',
+          manualPending: 'Pending',
+          allStatus: 'All',
+          partiallyCancelled: 'Partially cancelled',
+        },
+        getRemainCollateral: `
+          Are you sure you want to recall <strong>{valueAvailable} {symbol}</strong> to bring your collateral value back to the minimum required amount?
+        `,
+        actionsModal: {
+          cancel: 'Cancel',
+          confirm: 'Confirm',
+        },
+        amountLabel: 'Loan amount',
+        feePayLabel: 'Payment fee',
+        feePayoffLabel: 'Early repayment fee',
+        feePayoffDesc: ' If less than 75% of your term has elapsed, the early repayment fee is 50% of the interest on your remaining term. If more than 75% has elapsed, 100% of the interest on the entire term is due.',
+        matchingFee: 'Matching fee',
+        interestEarly: 'Interest due to date',
+        interestOnTime: 'Interest due',
+        interestDue: 'Interest due',
+        totalRepayment: 'Total repayment',
+        totalPayment: 'Total Payment',
+        repaymentByCollateral: 'Do you want to pay by your collateral?',
+        repaymentMethod: 'Payment method: ',
+        willPayCollateral: 'Collateral will be pay is',
+        feePayoffExchangeRate: 'Collateral value is based on the current market price of {value} USD/{currency}',
+        payCollateralFee: 'Repay with collateral fee',
+        payCollateralFeeDesc: 'This fee is to cover the difference in price during liquidation process.',
+        willReturnCollateral: 'Collateral will be return is',
+        repayAddress: 'Repay address',
+        copyMessage: 'Address has been copied!',
+        errorRemainCollateral: 'You can not to get the remaining collateral back at the moment',
+        errorRemainCollateralHtml: `
+          Please wait for assistance, or contact us at <a href="mailto:hello@myconstant.com">hello@myconstant.com</a>
+        `,
+        errorCollateralNotEnoughHtml: 'Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.',
+        errorCantCollateralHtml: 'To recall excess, collateral value must be higher than {lvtPer}%. Your current collateral value is {percent}%.',
+        errorGetCollateralValueHtml: 'To recall excess, collateral value must be higher than {value} USD. Your current collateral value is {currentValue} USD ({amount} {currency} * ${exchangeRate})',
+        depositFrom: {
+          title: 'Make more deposit for your collateral',
+          amount: 'Amount',
+          requiredAmount: 'Amount is required!',
+          amountDesc: 'How much do you want to deposit?',
+          ok: 'Make deposit',
+          cancel: 'Cancel',
+          depositFailed: 'Failed while depositing, please try again',
+          depositSuccess: 'Your deposit was completed successfully',
+        },
+        itemMatched: {
+          matchedAmount: 'Amount',
+          filledCollateralAmount: 'Filled Collateral Amount',
+          maxCollateralAmount: 'Max Collateral',
+          filledAmount: 'Filled Amount',
           amount: 'Amount',
           interest: 'Interest',
           collateral: 'Collateral',
@@ -6380,7 +6994,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     `,
     withdrawCryptoNote: `
     <p class="title">* Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually.</p>
-    <p class="title">* Withdrawal fee for DAI is still kept at 1.5% until further notice.</p>
+    <p class="title">* Withdrawal fee for DAI is still kept at 3.5% until further notice.</p>
     <p class="title">* Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>
     <div class="bold guarantee">Service time guarantee &#10004; </div>
     <p>Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>
@@ -6587,6 +7201,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       exchange: {
         amountLabel: 'Amount',
         amountLabelDesc: 'How much do you want to borrow?',
+        exchangeInfo: 'Estimate amount',
+        exchangeInfoDesc: 'Estimate amount USD (const) you need to borrow',
         collateralLabel: 'Collateral required',
         collateralDesc: 'To secure your loan, please deposit 150% the loan value in collateral.',
         collateralRequiredDesc: 'To secure your loan, please deposit {value}% the loan value in collateral.',
@@ -6604,6 +7220,47 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         rateMax1: 'Interest rate must from 1% to {rate}%',
         collateralNoteFee: 'Fee: {fee} {currency} (1%)',
         collateralNoteMatchedFee: 'Fee: 1%',
+        yourBalance: 'Your current balance is {value} {symbol}',
+        collateralNoteTotal: 'Total loan received: {total} {currency}',
+        usingStaking: 'Get {discount}% off your interest rate by staking collateral',
+        usingStakingMobile: 'Get {discount}% off with staking',
+        usingStakingDesc: 'Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.',
+        stakingMinAmount: 'stake amount must be great than {minVal} {currency}',
+        goToAccountApp: "Please go to the Account tab to sign up or log in.",
+      },
+      createdSuccess: 'Your borrow had been created successfully',
+      errorMsgs: {
+        notEnoughBalance: 'Your balance is not enough to make borrow!',
+        generateCollateralAddressFail: 'Can\'t generate collateral address. Please try again!',
+        maxOfCollateralHolding: 'Please try a different coin. To manage risk, the platform can hold only 10% of any coin\'s 24h trading volume.',
+        error: 'OH! something went wrong! Please try again'
+      }
+    },
+    borrowC2CBooking: {
+      title: 'Crypto Credit',
+      exchange: {
+        amountLabel: 'Crypto to buy',
+        amountLabelDesc: 'The amount and type of cryptocurrency you want to buy?',
+        exchangeInfo: 'USD loan value',
+        exchangeInfoDesc: 'The amount of USD you’re borrowing to buy your chosen crypto. We search multiple exchanges to find the best price for you',
+        collateralLabel: 'Collateral required',
+        collateralDesc: 'The amount of collateral you need to secure the USD loan used to buy your chosen crypto.',
+        collateralRequiredDesc: 'To secure your loan, please deposit {value}% the loan value in collateral.',
+        maxRate: 'Interest rate (APR)',
+        minTerm: 'Term (days)',
+        maxRateTooltip: 'The annual interest rate you’ll pay on your USD loan. Choose the market rate or higher to match quickly.',
+        minTermTooltip: 'The duration of your loan term. Repay in cash, stablecoins, or cryptocurrency before your term ends to get your collateral back',
+        buttonText: 'PLACE BORROW ORDER',
+        loginButton: 'Log in or Sign up to borrow',
+        amountRequired: 'Amount is required to make a borrow!',
+        amountMin: 'The minimum amount that you can borrow is {amount}',
+        collateralRequired: 'Collateral amount is required to make a borrow!',
+        rateRequired: 'Interest rate is required to make a borrow!',
+        rateMax: 'Interest rate must be less than {rate}%',
+        rateMax1: 'Interest rate must from 1% to {rate}%',
+        collateralNoteFee: 'Fee: {fee} {currency} (1%)',
+        collateralNoteMatchedFee: 'Fee: 1%',
+        yourBalance: 'Your current balance is {value} {symbol}',
         collateralNoteTotal: 'Total loan received: {total} {currency}',
         usingStaking: 'Get {discount}% off your interest rate by staking collateral',
         usingStakingMobile: 'Get {discount}% off with staking',
@@ -6785,6 +7442,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     history: 'History',
     membership: 'Membership',
     btnDeposit: 'Deposit',
+    btnLoansC2C: 'Crypto Credit',
     btnReferral: `<div class="textLeft"><small>Share & Earn</small><div>Money</div></div>`,
     btnTransfer: 'Transfer',
     btnWithdrawCrypto: `<div class="textLeft"><small>withdraw to</small><div>Crypto</div></div>`,

@@ -203,7 +203,8 @@
 %%%.headerBar.constantLoan%%%,"Constant Loan"
 %%%.headerBar.saveAndGrowMoney%%%,"Save & Grow money"
 %%%.headerBar.login%%%,"Login"
-%%%.headerBar.signup%%%," | Sign up"
+%%%.headerBar.log_in%%%,"Log in"
+%%%.headerBar.createAccount%%%,"Create account"
 %%%.headerBar.openAnAccount%%%,"Open an account"
 %%%.headerBar.yourSaving%%%,"Accounts"
 %%%.headerBar.myInvestments%%%,"My Investments"
@@ -240,6 +241,8 @@
 %%%.headerBar.extraMenu.borrowFiat.desc%%%,"Your rates. Your terms. No credit checks."
 %%%.headerBar.extraMenu.borrowPRV.title%%%,"Crypto Incognito Loans"
 %%%.headerBar.extraMenu.borrowPRV.desc%%%,"Borrow against PRV from 6% APR. Secure escrow. No credit checks"
+%%%.headerBar.extraMenu.borrowCoins.title%%%,"Crypto Credit"
+%%%.headerBar.extraMenu.borrowCoins.desc%%%,"Borrow cash, get crypto. No exchanges"
 %%%.error.required%%%,"Required"
 %%%.error.requiredOne%%%,"Please fill in the required fields."
 %%%.error.greaterThan%%%,"Please enter a number greater than {min}"
@@ -1369,6 +1372,7 @@
 %%%.me.proSaving.listApplications.trial_description%%%,"You keep the interest. Term has ended"
 %%%.me.proSaving.listApplications.saving_title%%%,"Investments"
 %%%.me.proSaving.listApplications.loans_title%%%,"Loans"
+%%%.me.proSaving.listApplications.coin2coin_title%%%,"Crypto Credit"
 %%%.me.proSaving.listApplications.secondInvestments%%%,"Secondary Market"
 %%%.me.proSaving.listApplications.secondInvestmentsDesc%%%,"Buy and sell matched investments on our secondary market. Sell your investment to end your term early or buy another investor’s order to earn their interest. View or cancel your secondary market orders below."
 %%%.me.proSaving.listApplications.repaySuccess%%%,"Thanks. Please bear with us while we deduct from your balance.Your collateral will be returned to the wallet address it was sent from."
@@ -1817,6 +1821,14 @@
         <p class=""header"">Earn 7% APR now.</p>
         <p>Don’t go down with the market. Enjoy steady growth with fully-secured P2P lending. All loans are 150% backed by digital assets. No fees.</p>
         <p>Start investing from just $50.</p>
+      "
+%%%.landingPage.netReturns.title%%%,"
+        <p class=""header"">Earn 7% APR now.</p>
+        <p>Catch great returns with secured P2P lending. All loans are 150% backed by collateral. No fees.</p>
+        <p>Start investing from just $50.</p>
+        <p></p>
+        <p>Questions?</p>
+        <p>Check out our <a href=""#landing-faqs"" class=""underline"">FAQs</a>.</p>
       "
 %%%.landingPage.howItWorks.title%%%,"How It Works"
 %%%.landingPage.howItWorks.data.0.title%%%,"Step 1"
@@ -2469,6 +2481,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.constantLoan.intro.youtube.title%%%,"Why borrow with Constant?"
 %%%.home.constantLoan.headLine%%%,"Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact."
 %%%.home.constantLoan.exchange.stakingTimeMessage%%%,"Your collateral will be sent to the Constant node. Please note: early repayment won’t be possible for at least {dayNum} days."
+%%%.home.constantLoan.exchange.exchangeInfo%%%,"Estimate amount USD (const) you need to borrow"
+%%%.home.constantLoan.exchange.exchangeInfoDesc%%%,"Estimate amount USD (const) you need to borrow"
 %%%.home.constantLoan.exchange.usedMarketRate%%%,"Use market rate "
 %%%.home.constantLoan.exchange.usedMarketRateDesc%%%,"When market rate is enabled, you're guaranteed a match at the best rate and term available in the market."
 %%%.home.constantLoan.exchange.maxRateTooltip%%%,"This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate."
@@ -2488,6 +2502,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.constantLoan.exchange.collateralNote%%%,"For this coin, loans will take up to 24 hours to be granted, repaid, or topped up."
 %%%.home.constantLoan.exchange.collateralNoteFee%%%,"Fee: {fee} {currency} (1%)"
 %%%.home.constantLoan.exchange.collateralNoteMatchedFee%%%,"Fee: 1%"
+%%%.home.constantLoan.exchange.yourBalance%%%,"Your current balance is {value} {symbol}"
 %%%.home.constantLoan.exchange.collateralNoteTotal%%%,"Total loan received: {total} {currency}"
 %%%.home.constantLoan.exchange.collateralNoteDGXExtraFees%%%,"Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount."
 %%%.home.constantLoan.exchange.usingStaking%%%,"Get {discount}% off your interest rate by staking collateral"
@@ -2563,6 +2578,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       "
 %%%.home.constantLoan.transaction.title%%%,"Almost there."
 %%%.home.constantLoan.transaction.message%%%,"To finalize your loan, please send your collateral to the following wallet address."
+%%%.home.constantLoan.transaction.exchangeMaxAmount%%%,"Exchange Max Amount"
 %%%.home.constantLoan.transaction.copiedAddress%%%,"Address is copied to clipboard"
 %%%.home.constantLoan.transaction.scanQR%%%,"Alternatively, scan this QR code directly from your mobile wallet to complete the transfer."
 %%%.home.constantLoan.transaction.summarizeTitle%%%,"Here are the loan terms:"
@@ -2723,6 +2739,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.constantLoan.errorMessages.inValidWalletAddress%%%,"Your wallet address invalid"
 %%%.home.constantLoan.errorMessages.notSupportBech32%%%,"BTC bech32 not supported"
 %%%.home.constantLoan.errorMessages.rangeInterestRate%%%,"Interest rate must be greater than {min}% and less than {max}%"
+%%%.home.constantLoan.errorMessages.rangeMarketRate%%%,"Interest rate must be greater than or equivalent {value}%"
 %%%.home.constantLoan.errorMessages.stakingMinTimeRequire%%%,"Length of term must be equal or greater than {days} days"
 %%%.home.constantLoan.depositCollateral.collateralTypeLabel%%%,"Collateral type"
 %%%.home.constantLoan.depositCollateral.walletAddressLabel%%%,"Your {symbol} wallet address"
@@ -2869,6 +2886,13 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.constantLoan.listApplications.depositFrom.cancel%%%,"Cancel"
 %%%.home.constantLoan.listApplications.depositFrom.depositFailed%%%,"Failed while depositing, please try again"
 %%%.home.constantLoan.listApplications.depositFrom.depositSuccess%%%,"Your deposit was completed successfully"
+%%%.home.constantLoan.listApplications.itemMatched.matchedAmount%%%,"Matched (USD)"
+%%%.home.constantLoan.listApplications.itemMatched.matchedAmountDesc%%%,"The amount of USD you borrowed. This might be less than your original order if you only got a partial match."
+%%%.home.constantLoan.listApplications.itemMatched.filledCollateralAmount%%%,"Bought (Crypto)"
+%%%.home.constantLoan.listApplications.itemMatched.filledCollateralAmountDesc%%%,"How much crypto we bought using your USD loan. Depending on the final sale price, this might be a bit less than your original order"
+%%%.home.constantLoan.listApplications.itemMatched.maxCollateralAmount%%%,"Max Collateral"
+%%%.home.constantLoan.listApplications.itemMatched.filledAmount%%%,"Used (USD)"
+%%%.home.constantLoan.listApplications.itemMatched.filledAmountDesc%%%,"The amount of USD we used to buy your chosen crypto. If we pay less than the matched amount, we'll return the difference to your account."
 %%%.home.constantLoan.listApplications.itemMatched.amount%%%,"Amount"
 %%%.home.constantLoan.listApplications.itemMatched.interest%%%,"Interest"
 %%%.home.constantLoan.listApplications.itemMatched.collateral%%%,"Collateral"
@@ -2879,6 +2903,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.constantLoan.listApplications.itemMatched.repayAddress%%%,"Repay Address"
 %%%.home.constantLoan.listApplications.itemMatched.collateralValueAtLiquid%%%,"Liquidation price"
 %%%.home.constantLoan.listApplications.itemMatched.collateralValueAtLiquidDesc%%%,"Once the price of the token falls to this price, your loan will be liquidated.
+          Note: this number is always changed unpredictably due to the fluctuation of the market. Please keep an eye on your loans to avoid liquidation."
+%%%.home.constantLoan.listApplications.itemMatched.collateralValueAtLiquidC2CDesc%%%,"Once the price of the collateral falls to this price, your loan will be liquidated.
           Note: this number is always changed unpredictably due to the fluctuation of the market. Please keep an eye on your loans to avoid liquidation."
 %%%.home.constantLoan.listApplications.paymentMethod.const%%%,"USD"
 %%%.home.constantLoan.listApplications.paymentMethod.collateral%%%,"Collateral"
@@ -2892,6 +2918,526 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.constantLoan.advice.submit%%%,"Gửi"
 %%%.home.constantLoan.advice.registerSuccess%%%,"Đăng ký thành công"
 %%%.home.constantLoan.advice.regiserFail%%%,"Đăng ký thất bại"
+%%%.home.constantC2CLoan.faqs.question1%%%,"What is Crypto Credit?"
+%%%.home.constantC2CLoan.faqs.answer1%%%,"
+        <p>Crypto Credit is a fast, easy way to borrow USD against your existing cryptocurrencies to buy new coins.It’s a bit like a margin account, only it’s faster, cheaper, and you always get the best price for your chosen cryptocurrency.</p> 
+        <p>You choose the interest rate and term and put down collateral equivalent to the USD value of your chosen crypto. We then search multiple exchanges to find the best prices and then deposit your chosen crypto into your Constant coin balance.</p> 
+        <p>Meanwhile, we store your collateral in a BitGo cold wallet insured to $100M. When you repay the USD loan, you get your collateral back. There are no trading fees, no withdrawal fees, and you always get the best price for your chosen cryptocurrency.</p>"
+%%%.home.constantC2CLoan.faqs.question2%%%,"How does Crypto Credit work?"
+%%%.home.constantC2CLoan.faqs.answer2%%%,"
+        <p>First, decide which cryptocurrency you want to buy. </p>
+        <p>Then, set the details for your loan – including the collateral you want to use, the interest rate, and term.</p> 
+        <p>You’ll then see how much USD you’re going to borrow. This is also the amount you’ll need to repay. We get prices from multiple exchanges to ensure you get the best deal.</p> 
+        <p>If you have enough collateral in your coin balance, you can create your order. Otherwise you’ll need to top-up from your coin balance first. You won’t be able to create an order unless you have sufficient collateral in your coin balance.</p> 
+        <p>When you match with an investor, we use their funds to buy your chosen cryptocurrency and then deposit it in your coin balance. You can then withdraw it to any wallet you like. You won’t interact with an exchange at all. </p>
+        <p>Then, just repay before the term ends to get your collateral back.</p> 
+        <p>That’s it!</p>
+        "
+%%%.home.constantC2CLoan.faqs.question3%%%,"Why use Crypto Credit instead of an exchange?"
+%%%.home.constantC2CLoan.faqs.answer3%%%,"
+        <p>Exchange margin accounts charge higher interest rates, trading fees, withdrawal fees, and have only one source for pricing data: the exchange. </p>
+        <p>With Constant Crypto Credit, you set the rate and term to a level you’re comfortable with. Then, we search multiple exchanges to find you the best price, and faster, so you don’t ever miss out on better deals. All trading and withdrawals are free, too.</p> 
+        <p>While with us, your collateral is held in a BitGo cold wallet insured to $100M. Most exchanges store collateral in uninsured hot wallets which are less secure and don’t cover you against theft.</p> 
+        "
+%%%.home.constantC2CLoan.faqs.question4%%%,"Am I borrowing cryptocurrency or USD?"
+%%%.home.constantC2CLoan.faqs.answer4%%%,"
+        You borrow USD that we then use to buy your chosen cryptocurrency for you. We do the hard work on the exchanges so you can focus on your trading strategy.
+        "
+%%%.home.constantC2CLoan.faqs.question5%%%,"How do I repay a Crypto Credit loan?"
+%%%.home.constantC2CLoan.faqs.answer5%%%,"
+          <p>You can repay your loan in the following ways:</p>
+            <P>1) Deposit USD or a supported stablecoin. <br/>
+            2) Deposit a supported cryptocurrency that matches the value of your loan.<br/>
+            3) Use your existing coin balance or USD balance to repay the value of your loan.</P> 
+        "
+%%%.home.constantC2CLoan.faqs.question6%%%,"How do you protect my collateral?"
+%%%.home.constantC2CLoan.faqs.answer6%%%,"
+          <p>Your collateral is stored in a BitGo cold wallet that’s insured to $100,000,000. This protects you against:</p>
+            <p> - Third-party hacks, copying, or theft of private keys.<br>
+             - Insider theft of dishonest acts by BitGo employees or executives.<br>
+             - Loss of keys.</p>
+          <p>When you repay, we co-sign the release of your collateral back into your coin balance and you can then withdraw it to any wallet address you choose.</p>
+          <a target=""_blank"" href=""https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral"">How we protect your collateral.</a>
+        "
+%%%.home.constantC2CLoan.faqs.question7%%%,"How long will it take to match and get my cryptocurrency?"
+%%%.home.constantC2CLoan.faqs.answer7%%%,"
+        This depends on the rates and terms you set. Market rates will match you in thirty minutes, and you’ll match even faster if you set a higher rate. As we know timely settlement is important for margin traders, it might be worth paying more for a fast match. 
+        "
+%%%.home.constantC2CLoan.faqs.question8%%%,"Do you check my credit score?"
+%%%.home.constantC2CLoan.faqs.answer8%%%,"
+          As we only offer secured loans backed by collateral, there is no need for credit scoring. All you need is adequate collateral to secure your loan. When creating your loan order, you’ll see how much collateral you need. 
+        "
+%%%.home.constantC2CLoan.faqs.question9%%%,"What happens if I don’t repay the loan?"
+%%%.home.constantC2CLoan.faqs.answer9%%%,"
+          If you don’t repay the loan, your collateral will be sold to repay your investor. You get to keep your chosen cryptocurrency. That’s it.
+        "
+%%%.home.constantC2CLoan.faqs.question10%%%,"What happens if my crypto collateral falls in value?"
+%%%.home.constantC2CLoan.faqs.answer10%%%,"
+        <p>We will notify you three times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, we’ll create a sell order to repay the investor. You keep your chosen cryptocurrency, but lose your collateral. </p>
+        <p>You receive email notifications at 125%, 120% and 115% of the investor’s principal plus earned interest. You can choose to repay early to avoid liquidation or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.</p>
+        <a target=""_blank"" href=""https://www.myconstant.com/blog/extra-protection-for-your-collateral-auto-top-up"">How to avoid liquidation with auto top-up.</a> 
+        "
+%%%.home.constantC2CLoan.faqs.question11%%%,"Can I repay early?"
+%%%.home.constantC2CLoan.faqs.answer11%%%,"
+        <p>If you'd like to pay back your loan before 75% of the term is up, that's absolutely fine. You simply have to pay interest for the days you are in possession of the loan, and just 50% of the original interest rate for the remaining days of the term.</p>
+        <p>If you'd like to pay back your loan after 75% of the term is up and claim back your collateral, that's also fine, but the interest due on that loan is the full percentage for the entire term.</p>
+        "
+%%%.home.constantC2CLoan.faqs.question12%%%,"Can I recall excess if the value of my collateral increases?"
+%%%.home.constantC2CLoan.faqs.answer12%%%,"
+        <p>Yes. If the value of your collateral rises during your loan term, you can withdraw the difference from your Accounts page.</p>
+        <a target=""_blank"" href=""https://www.myconstant.com/blog/how-to-deposit-top-up-recall-crypto-constant"">How to deposit, top-up, and recall excess collateral.</a>
+        "
+%%%.home.constantC2CLoan.faqs.question13%%%,"What is the LTV (Loan-to-Value) Ratio? Is it always the same?"
+%%%.home.constantC2CLoan.faqs.answer13%%%,"
+        The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral.
+        "
+%%%.home.constantC2CLoan.faqs.question14%%%,"What happens if I repay late?"
+%%%.home.constantC2CLoan.faqs.answer14%%%,"
+        The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due.
+        "
+%%%.home.constantC2CLoan.title%%%,"Fast and easy crypto credit"
+%%%.home.constantC2CLoan.subTitle%%%,"
+        <h2>Trade the margin.</h2>
+        <h2>Skip the exchange.</h2>
+        <h2>Borrow against 40+ cryptos.</h2>
+        <br>
+        <p>Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.</p>
+      "
+%%%.home.constantC2CLoan.intro.desc.1%%%,"Secure escrow"
+%%%.home.constantC2CLoan.intro.desc.2%%%,"No credit checks"
+%%%.home.constantC2CLoan.intro.desc.3%%%,"Repay anytime"
+%%%.home.constantC2CLoan.intro.youtube.title%%%,"Why borrow with Constant?"
+%%%.home.constantC2CLoan.headLine%%%,"Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact."
+%%%.home.constantC2CLoan.exchange.stakingTimeMessage%%%,"Your collateral will be sent to the Constant node. Please note: early repayment won’t be possible for at least {dayNum} days."
+%%%.home.constantC2CLoan.exchange.exchangeInfo%%%,"The amount you will borrow in USD"
+%%%.home.constantC2CLoan.exchange.exchangeInfoDesc%%%,"The amount you will borrow in USD"
+%%%.home.constantC2CLoan.exchange.usedMarketRate%%%,"Use market rate "
+%%%.home.constantC2CLoan.exchange.usedMarketRateDesc%%%,"When market rate is enabled, you're guaranteed a match at the best rate and term available in the market."
+%%%.home.constantC2CLoan.exchange.maxRate%%%,"Maximum interest rate"
+%%%.home.constantC2CLoan.exchange.maxRateTooltip%%%,"This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate."
+%%%.home.constantC2CLoan.exchange.minTermTooltip%%%,"This is the minimum amount of time you want to borrow."
+%%%.home.constantC2CLoan.exchange.minTerm%%%,"Length of term"
+%%%.home.constantC2CLoan.exchange.caption%%%,"Set your own borrowing terms"
+%%%.home.constantC2CLoan.exchange.buttonText%%%,"Borrow cash"
+%%%.home.constantC2CLoan.exchange.month%%%,"{period}-month"
+%%%.home.constantC2CLoan.exchange.months%%%,"{period}-months"
+%%%.home.constantC2CLoan.exchange.apr%%%,"APR"
+%%%.home.constantC2CLoan.exchange.termLabel%%%,"Pick a loan term"
+%%%.home.constantC2CLoan.exchange.amountLabel%%%,"What do you want to buy?"
+%%%.home.constantC2CLoan.exchange.collateralLabel%%%,"Collateral required (75% Loan to Value ratio)"
+%%%.home.constantC2CLoan.exchange.collateralRequiredLabel%%%,"Collateral required ({value}% LTV)"
+%%%.home.constantC2CLoan.exchange.startDateLabel%%%,"Start date"
+%%%.home.constantC2CLoan.exchange.endDateLabel%%%,"End date"
+%%%.home.constantC2CLoan.exchange.collateralNote%%%,"For this coin, loans will take up to 24 hours to be granted, repaid, or topped up."
+%%%.home.constantC2CLoan.exchange.collateralNoteFee%%%,"Fee: {fee} {currency} (1%)"
+%%%.home.constantC2CLoan.exchange.collateralNoteMatchedFee%%%,"Fee: 1%"
+%%%.home.constantC2CLoan.exchange.yourBalance%%%,"Your current balance is {value} {symbol}"
+%%%.home.constantC2CLoan.exchange.collateralNoteTotal%%%,"Total loan received: {total} {currency}"
+%%%.home.constantC2CLoan.exchange.collateralNoteDGXExtraFees%%%,"Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount."
+%%%.home.constantC2CLoan.exchange.collateralNoteMatch%%%,"Estimated time to match: {hours} hours"
+%%%.home.constantC2CLoan.exchange.collateralNoteMatchTime%%%,"The rate you entered will have a longer time of matching, according to our past data. Estimated time of matching {hours} hours {type}."
+%%%.home.constantC2CLoan.exchange.collateralNoteMatchNoneTime%%%,"The rate you entered will have a longer time of matching, according to our past data. Estimated time of matching."
+%%%.home.constantC2CLoan.exchange.collateralNoteMatchTimeMax%%%,"maximum"
+%%%.home.constantC2CLoan.exchange.collateralNoteMatchTimeApprox%%%,"approx"
+%%%.home.constantC2CLoan.exchange.collateralNoteMatchInWorkingTime%%%,"Estimated time to match 1 hour"
+%%%.home.constantC2CLoan.exchange.toolTipCollateral%%%,"
+          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.
+        "
+%%%.home.constantC2CLoan.exchange.walletAddressLabel%%%,"Which {symbol} wallet should we return your collateral to?"
+%%%.home.constantC2CLoan.exchange.walletAlias%%%,"Enter your {symbol} wallet address"
+%%%.home.constantC2CLoan.exchange.moreInfo%%%,"Your funds will reach you as soon as your collateral is confirmed on its blockchain.  ETA: 2 minutes for ETH and 10 minutes for BTC."
+%%%.home.constantC2CLoan.exchange.monthLoan%%%,"{term}-month loans"
+%%%.home.constantC2CLoan.exchange.monthsLoan%%%,"{term}-months loans"
+%%%.home.constantC2CLoan.exchange.dayLoan%%%,"{term}-day loans"
+%%%.home.constantC2CLoan.compareTable.title%%%,"Constant vs Exchange Margin Accounts."
+%%%.home.constantC2CLoan.compareTable.description%%%,"(?) We search multiple exchanges to find the best price for your chosen cryptocurrency. <br/>Exchange margin accounts typically only use the price on that exchange, so you can miss out on better deals elsewhere. "
+%%%.home.constantC2CLoan.what.title%%%,"Why borrow with us?"
+%%%.home.constantC2CLoan.what.whatCaption0%%%,"Instant loans"
+%%%.home.constantC2CLoan.what.whatCaption1%%%,"Crypto for cash"
+%%%.home.constantC2CLoan.what.whatCaption2%%%,"2% annualized interest"
+%%%.home.constantC2CLoan.what.whatCaption3%%%,"Guaranteed approval"
+%%%.home.constantC2CLoan.what.whatDesc0%%%,"
+          <p>Our loan mechanism is secured and automated by smart contracts. No lengthy processing times - the money you need is in your account within the hour.</p>
+        "
+%%%.home.constantC2CLoan.what.whatDesc1%%%,"
+          <p>Secure your loan with BTC or ETH and receive USD - all without needing to sell your crypto. Enjoy liquidity without needing to liquidate.</p>
+        "
+%%%.home.constantC2CLoan.what.whatDesc2%%%,"
+          <p>Borrow as much as you want, and take as long as you need. Enjoy flexible repayments and the kindest interest rate on the market.</p>
+        "
+%%%.home.constantC2CLoan.what.whatDesc3%%%,"
+          <p>Constant is for everyone. No credit scoring, background checks or month-long waiting games for approval.</p>
+        "
+%%%.home.constantC2CLoan.howItWorks.intro%%%,"
+          <p>Deposit cryptocurrency to secure cash, at the best rates on the market.</p>
+          <p>Need cash? We accept major cryptocurrencies as collateral, in exchange for USD or the equivalent in your local currency. That means you’ll have cash to spend - without needing to sell your crypto.</p>
+        "
+%%%.home.constantC2CLoan.howItWorks.step1%%%,"STEP 1"
+%%%.home.constantC2CLoan.howItWorks.title1%%%,"ENTER AN AMOUNT"
+%%%.home.constantC2CLoan.howItWorks.desc1%%%,"How much do you want to borrow? Tell us how much, in your currency of choice."
+%%%.home.constantC2CLoan.howItWorks.step2%%%,"STEP 2"
+%%%.home.constantC2CLoan.howItWorks.title2%%%,"CHOOSE A COLLATERAL AND A TERM"
+%%%.home.constantC2CLoan.howItWorks.desc2%%%,"Secure your loan with BTC or ETH as collateral. Our calculator will tell you how much you need. Then just pick a loan term you feel comfortable with."
+%%%.home.constantC2CLoan.howItWorks.step3%%%,"STEP 3"
+%%%.home.constantC2CLoan.howItWorks.title3%%%,"GET CASH TO SPEND"
+%%%.home.constantC2CLoan.howItWorks.desc3%%%,"Within the hour, your USD loan will be accessible from your Constant Flexible Account. Withdraw anytime, to any other bank account."
+%%%.home.constantC2CLoan.reference%%%,"
+        <div name=""ref-container"">
+          <div name=""ref-item"">
+            <span name=""ref-label"">Interested rate:</span>
+            <span name=""ref-value"">{intRate}</span>
+          </div>
+          <div name=""ref-item"">
+            <span name=""ref-label"">Collateral value:</span>
+            <span name=""ref-value"">{colValue}</span>
+          </div>
+          <div name=""ref-item"">
+            <span name=""ref-label"">Collateral return:</span>
+            <span name=""ref-value"">{colReturn}</span>
+          </div>
+          <div name=""ref-item"">
+            <span name=""ref-label"">Default threshold:</span>
+            <span name=""ref-value"">{defThreshold}</span>
+          </div>
+        </div>
+      "
+%%%.home.constantC2CLoan.transaction.title%%%,"Almost there."
+%%%.home.constantC2CLoan.transaction.message%%%,"To finalize your loan, please send your collateral to the following wallet address."
+%%%.home.constantC2CLoan.transaction.exchangeMaxAmount%%%,"Exchange Max Amount"
+%%%.home.constantC2CLoan.transaction.copiedAddress%%%,"Address is copied to clipboard"
+%%%.home.constantC2CLoan.transaction.scanQR%%%,"Alternatively, scan this QR code directly from your mobile wallet to complete the transfer."
+%%%.home.constantC2CLoan.transaction.summarizeTitle%%%,"Here are the loan terms:"
+%%%.home.constantC2CLoan.transaction.messageDescription%%%,"
+        <p>Please open your cryptocurrency wallet, enter the required collateral amount, paste the Constant wallet address into the recipient field, and click send.</p>
+        <p>Having difficulty finding your cryptocurrency wallet?
+           If you purchase cryptocurrency from an exchange, you will have a wallet with them, usually accessible from your Accounts page.</p>
+        "
+%%%.home.constantC2CLoan.transaction.minuteWindow%%%,"Please complete your transfer within 60 minutes."
+%%%.home.constantC2CLoan.transaction.minuteWindowDescription%%%,"For the sake of security, this session will time-out after 60 minutes. If you need a little longer, just re-enter the amount you would like to borrow <a href=""/borrow"" >here</a>."
+%%%.home.constantC2CLoan.transaction.msgInfoManual%%%,"
+          <span>At the moment, {symbol} deposits aren’t automatic, so we need to change your loan status manually. Therefore, please give us <b>up to 12 hours</b> to confirm receipt of your collateral (it's usually much faster).</span>
+          <br />
+          <span>If you have any questions, please email us at hello@myconstant.com or message <a href='https://t.me/@andy_9210'>Andy</a>, our head of customer service, on Telegram.</span>
+          <br />
+          <span>We'll start finding you a match as soon as we receive your collateral.</span>
+        "
+%%%.home.constantC2CLoan.transaction.msgInfoAuto%%%,"
+          <span>
+            Once we receive your collateral, your loan status will change from <b>pending</b> to <b>matching</b>. This is usually very fast – around 1 block confirmation – but might take a little longer during busy times. When your status changes, it means we’ve begun finding an investor to accept your terms. We’ll email you as soon as we find you a match.
+          </span>
+        "
+%%%.home.constantC2CLoan.transaction.collateralNoteDGXExtraFees%%%,"Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount."
+%%%.home.constantC2CLoan.transaction.transactionID%%%,"transaction ID"
+%%%.home.constantC2CLoan.transaction.noticeTpl%%%,"Please send <strong>{collateralAmount} {collateralSymbol}</strong> as collateral to the following address within the next <strong>60 minutes</strong>."
+%%%.home.constantC2CLoan.transaction.summarizeContent%%%,"
+          <div name=""ref-container"">
+            <div name=""ref-item"">
+              <span name=""ref-label"">Loan amount:</span>
+              <span name=""ref-value"">{loanAmount}</span>
+            </div>
+            <div name=""ref-item"">
+              <span name=""ref-label"">Interested rate:</span>
+              <span name=""ref-value"">{interestedRate}</span>
+            </div>
+            <div name=""ref-item"">
+              <span name=""ref-label"">Collaterals:</span>
+              <span name=""ref-value"">{collaterals}</span>
+            </div>
+            <div name=""ref-item"">
+              <span name=""ref-label"">Term:</span>
+              <span name=""ref-value"">{term}</span>
+            </div>
+          </div>
+        "
+%%%.home.constantC2CLoan.transaction.summarizeContent1%%%,"
+          <div class=""row"">
+            <div class=""col-md-6 col-sm-4"">
+                <p class=""semiBold"">Loan amount:</p>
+            </div>
+            <div class=""col"">
+                <p>{loanAmount}</p>
+            </div>
+           </div>
+           <div class=""row"">
+            <div class=""col-md-6 col-sm-4"">
+                <p class=""semiBold"">Interested rate:</p>
+            </div>
+            <div class=""col"">
+                <p>{interestedRate}</p>
+            </div>
+           </div>
+           <div class=""row"">
+            <div class=""col-md-6 col-sm-4"">
+                <p class=""semiBold"">Collaterals:</p>
+            </div>
+            <div class=""col"">
+                <p>{collaterals}</p>
+            </div>
+           </div>
+        "
+%%%.home.constantC2CLoan.transaction.repaymentField%%%,"
+            <div class=""row"">
+              <div class=""col-md-6 col-sm-4"">
+                  <p class=""semiBold"">Repayment date:</p>
+              </div>
+              <div class=""col"">
+                  <p>{repayment}</p>
+              </div>
+           </div>
+        "
+%%%.home.constantC2CLoan.transaction.borrowMore%%%,"Borrow more"
+%%%.home.constantC2CLoan.transaction.termField%%%,"Term"
+%%%.home.constantC2CLoan.transaction.termUnit%%%,"{period} month"
+%%%.home.constantC2CLoan.transaction.termUnit1%%%,"{period} months"
+%%%.home.constantC2CLoan.transaction.loanAmount%%%,"Loan amount:"
+%%%.home.constantC2CLoan.transaction.collaterals%%%,"Collateral:"
+%%%.home.constantC2CLoan.transaction.collateralRequired%%%,"Collateral Required:"
+%%%.home.constantC2CLoan.transaction.collateralBalance%%%,"Your Collateral Balance:"
+%%%.home.constantC2CLoan.transaction.term%%%,"Term:"
+%%%.home.constantC2CLoan.transaction.interestedRate%%%,"Interest rate:"
+%%%.home.constantC2CLoan.transaction.interestedRateValue%%%,"{percent} APR"
+%%%.home.constantC2CLoan.transaction.matchingFee%%%,"Matching fee:"
+%%%.home.constantC2CLoan.transaction.matchingFeeValue%%%,"1% of loan amount"
+%%%.home.constantC2CLoan.transaction.cryptoAddress%%%,"{currency} address:"
+%%%.home.constantC2CLoan.transaction.backOrderBook%%%,"Back"
+%%%.home.constantC2CLoan.transaction.backAccount%%%,"Done"
+%%%.home.constantC2CLoan.transaction.bitgo.title%%%,"Secured by BitGo"
+%%%.home.constantC2CLoan.transaction.bitgo.content%%%,"You’re sending your collateral to BitGo, a qualified digital asset custodian. Your collateral will be securely stored inside a BitGo cold wallet that’s insured to $100M. So no matter what happens to Constant, your collateral is secure."
+%%%.home.constantC2CLoan.history.itemTpl%%%,"
+          <div name=""loan-info-container"">
+            <div name=""loan-info-item"">
+              <span name=""loan-info-label"">Loan amount:</span>
+              <span name=""loan-info-value"">{loanAmount}</span>
+            </div>
+            <div name=""loan-info-item"">
+              <span name=""loan-info-label"">Interest rate:</span>
+              <span name=""loan-info-value"">{interestedRate}</span>
+            </div>
+            <div name=""loan-info-item"">
+              <span name=""loan-info-label"">Collaterals:</span>
+              <span name=""loan-info-value"">{collaterals}</span>
+            </div>
+            <div name=""loan-info-item"">
+              <span name=""loan-info-label"">Term:</span>
+              <span name=""loan-info-value"">{term}</span>
+            </div>
+          </div>
+        "
+%%%.home.constantC2CLoan.history.address%%%,"Address"
+%%%.home.constantC2CLoan.history.collateralAddress%%%,"Collateral Address"
+%%%.home.constantC2CLoan.history.renew%%%,"Renew"
+%%%.home.constantC2CLoan.history.status.pending%%%,"pending"
+%%%.home.constantC2CLoan.history.status.accepted%%%,"accepted"
+%%%.home.constantC2CLoan.history.status.payingInterest%%%,"paying"
+%%%.home.constantC2CLoan.history.status.done%%%,"done"
+%%%.home.constantC2CLoan.history.status.cancelled%%%,"cancelled"
+%%%.home.constantC2CLoan.history.status.withdrawed%%%,"withdrawed"
+%%%.home.constantC2CLoan.history.status.expired%%%,"Expired"
+%%%.home.constantC2CLoan.history.status.fullPayment%%%,"full payment"
+%%%.home.constantC2CLoan.history.confirmPay.payingInterest.title%%%,"Interest Payment"
+%%%.home.constantC2CLoan.history.confirmPay.payingInterest.content%%%,"
+              <p>Your Interest payment is <strong>{amountConstant}</strong> Constant</p>
+              <p>Your collateral payment is <strong>{amountCollateral} {symbol}</strong></p>
+            "
+%%%.home.constantC2CLoan.history.confirmPay.payingInterest.success%%%,"Pay Successfully"
+%%%.home.constantC2CLoan.history.confirmPay.fullPayment.title%%%,"Full Payment"
+%%%.home.constantC2CLoan.history.confirmPay.fullPayment.content%%%,"
+              <p>Your Interest payment is <strong>{amountConstant}</strong> Constant</p>
+              <p>Your collateral payment is <strong>{amountCollateral} {symbol}</strong></p>
+            "
+%%%.home.constantC2CLoan.history.confirmPay.fullPayment.success%%%,"Pay successfully"
+%%%.home.constantC2CLoan.history.interestPaymentTitle%%%,"Interest Payment"
+%%%.home.constantC2CLoan.history.interestPaymentContent%%%,"<p>Your Interest payment is <strong>{amountPayInterest}</strong> Constant</p>"
+%%%.home.constantC2CLoan.history.balanceNotEnough%%%,"Your Balance is not enough to pay"
+%%%.home.constantC2CLoan.history.paySuccess%%%,"Pay Successfully"
+%%%.home.constantC2CLoan.history.noHistoryData%%%,"Get Crypto loan here"
+%%%.home.constantC2CLoan.history.paymentDetail%%%,"Payment detail"
+%%%.home.constantC2CLoan.history.itemPayment%%%,"#{id} {description} <strong>{amount}</strong> Constant at {paymentDate}"
+%%%.home.constantC2CLoan.history.noPaymentDetail%%%,"No payment detail"
+%%%.home.constantC2CLoan.history.payConstant%%%,"Pay by Constant"
+%%%.home.constantC2CLoan.history.payCollateral%%%,"Pay by Collateral"
+%%%.home.constantC2CLoan.errorMessages.Required%%%,"Required"
+%%%.home.constantC2CLoan.errorMessages.constantAmountRequired%%%,"Amount is required to make a borrow!"
+%%%.home.constantC2CLoan.errorMessages.collateralAmountRequired%%%,"Collateral amount is required to make a borrow!"
+%%%.home.constantC2CLoan.errorMessages.walletAddressRequired%%%,"Wallet Address is required to make a borrow!"
+%%%.home.constantC2CLoan.errorMessages.minimumBorrowAmount%%%,"The minimum amount that you can borrow is {amount} {symbol}"
+%%%.home.constantC2CLoan.errorMessages.inValidWalletAddress%%%,"Your wallet address invalid"
+%%%.home.constantC2CLoan.errorMessages.notSupportBech32%%%,"BTC bech32 not supported"
+%%%.home.constantC2CLoan.errorMessages.rangeInterestRate%%%,"Interest rate must be greater than {min}% and less than {max}%"
+%%%.home.constantC2CLoan.errorMessages.rangeMarketRate%%%,"Please choose the market rate or higher so you’re guaranteed to match with an investor."
+%%%.home.constantC2CLoan.errorMessages.notEnoughCollateral%%%,"You don’t have enough {symbol} to use as collateral. Please deposit {amount} {symbol} to complete your loan."
+%%%.home.constantC2CLoan.depositCollateral.collateralTypeLabel%%%,"Collateral type"
+%%%.home.constantC2CLoan.depositCollateral.walletAddressLabel%%%,"Your {symbol} wallet address"
+%%%.home.constantC2CLoan.depositCollateral.walletAlias%%%,"0x687C906b2....8bd9369242e"
+%%%.home.constantC2CLoan.depositCollateral.generateWallet%%%,"Generate wallet address"
+%%%.home.constantC2CLoan.learnMore%%%,"Learn more"
+%%%.home.constantC2CLoan.listApplications.heading%%%,"Crypto Credit"
+%%%.home.constantC2CLoan.listApplications.noLoans%%%,"Request your first fixed rate loan."
+%%%.home.constantC2CLoan.listApplications.bep2Memo%%%,"Memo"
+%%%.home.constantC2CLoan.listApplications.bep2MemoRequired%%%,"Memo is required!"
+%%%.home.constantC2CLoan.listApplications.bep2MemoDesc%%%,"Memo maybe is your ID if PEP2 crypto!"
+%%%.home.constantC2CLoan.listApplications.walletAlias%%%,"0x687C906b2....8bd9369242e"
+%%%.home.constantC2CLoan.listApplications.walletAddressLabel%%%,"Return to your {symbol} address"
+%%%.home.constantC2CLoan.listApplications.loan%%%,"loan"
+%%%.home.constantC2CLoan.listApplications.staked%%%,"STAKED"
+%%%.home.constantC2CLoan.listApplications.amount%%%,"Amount"
+%%%.home.constantC2CLoan.listApplications.matched%%%,"matched"
+%%%.home.constantC2CLoan.listApplications.pendingAmount%%%,"Pending Amount"
+%%%.home.constantC2CLoan.listApplications.collateralRequired%%%,"Collateral"
+%%%.home.constantC2CLoan.listApplications.collateralAddress%%%,"Collateral Address"
+%%%.home.constantC2CLoan.listApplications.extraRate%%%,"Your total rate will be {rate}% effect from {date}"
+%%%.home.constantC2CLoan.listApplications.exchangeRates%%%,"Exchange rates: 1 {symbol}/{value} USD"
+%%%.home.constantC2CLoan.listApplications.createdDate%%%,"Created Date"
+%%%.home.constantC2CLoan.listApplications.endTerm%%%,"Term ends"
+%%%.home.constantC2CLoan.listApplications.principal%%%,"Principal"
+%%%.home.constantC2CLoan.listApplications.interests%%%,"Interest"
+%%%.home.constantC2CLoan.listApplications.created%%%,"Created"
+%%%.home.constantC2CLoan.listApplications.term%%%,"Term"
+%%%.home.constantC2CLoan.listApplications.cancel%%%,"Cancel"
+%%%.home.constantC2CLoan.listApplications.delete%%%,"Delete"
+%%%.home.constantC2CLoan.listApplications.dueDays%%%,"Due"
+%%%.home.constantC2CLoan.listApplications.getCollateral%%%,"Recall excess"
+%%%.home.constantC2CLoan.listApplications.payCollateral%%%,"Pay"
+%%%.home.constantC2CLoan.listApplications.payOffLoan%%%,"Repay"
+%%%.home.constantC2CLoan.listApplications.depositMatched%%%,"Top up"
+%%%.home.constantC2CLoan.listApplications.rewardApply%%%,"Reward"
+%%%.home.constantC2CLoan.listApplications.cancelDepositMatched%%%,"Cancel Deposit"
+%%%.home.constantC2CLoan.listApplications.cashback%%%,"Cash back"
+%%%.home.constantC2CLoan.listApplications.collateral%%%,"Collateral"
+%%%.home.constantC2CLoan.listApplications.collateralValue%%%,"Collateral value"
+%%%.home.constantC2CLoan.listApplications.liquidWaring%%%,"Your collateral will be liquidated, Please top up more collateral..."
+%%%.home.constantC2CLoan.listApplications.interestPrice%%%,"Interest:"
+%%%.home.constantC2CLoan.listApplications.rate%%%,"Rate"
+%%%.home.constantC2CLoan.listApplications.yourLoan%%%,"Match{plural} {matched}"
+%%%.home.constantC2CLoan.listApplications.partialMatchesDesc%%%,"Some loan requests may be split into smaller amounts to fill multiple investment orders. The platform will keep trying to match you completely for the duration of your term."
+%%%.home.constantC2CLoan.listApplications.status%%%,"Status"
+%%%.home.constantC2CLoan.listApplications.allStatus%%%,"All"
+%%%.home.constantC2CLoan.listApplications.mapStatus.pending%%%,"Pending"
+%%%.home.constantC2CLoan.listApplications.mapStatus.recieved%%%,"Received"
+%%%.home.constantC2CLoan.listApplications.mapStatus.accepted%%%,"Accepted"
+%%%.home.constantC2CLoan.listApplications.mapStatus.payingInterest%%%,"Paying"
+%%%.home.constantC2CLoan.listApplications.mapStatus.done%%%,"Done"
+%%%.home.constantC2CLoan.listApplications.mapStatus.withdrawed%%%,"Withdrawed"
+%%%.home.constantC2CLoan.listApplications.mapStatus.tnxFailed%%%,"Transaction failed"
+%%%.home.constantC2CLoan.listApplications.mapStatus.cancelled%%%,"Cancelled"
+%%%.home.constantC2CLoan.listApplications.mapStatus.rejected%%%,"Rejected"
+%%%.home.constantC2CLoan.listApplications.mapStatus.expired%%%,"Expired"
+%%%.home.constantC2CLoan.listApplications.mapStatus.fullPayment%%%,"full payment"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.pending%%%,"Pending"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.approved%%%,"Approved"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.rejected%%%,"Rejected"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.paid%%%,"Paid"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.tnxPending%%%,"Transaction Pending"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.done%%%,"Done"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.repayPending%%%,"Repay Pending"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.repayFail%%%,"Repay Fail"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.repayUpPending%%%,"Repay Up Pending"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.repayUpFail%%%,"Repay Up Fail"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.repayDownPending%%%,"Repay Down Pending"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.repayDownFail%%%,"Repay Down Fail"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.payoffPending%%%,"Payoff Pending"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.payoffFail%%%,"Payoff Fail"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.fillPending%%%,"Fill Pending"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.fillFail%%%,"Fill Fail"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.payoffDone%%%,"Repaid"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.repayDownDone%%%,"Repay Down Done"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.topupPending%%%,"Top Up Pending"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.manualPending%%%,"Manual Pending"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.liquidateApproving%%%,"Liquidate Approving"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.liquidatePending%%%,"Liquidation In Process"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.liquidateChainPending%%%,"Liquidate Chain Pending"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.liquidateDone%%%,"Liquidate Done"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.liquidateFailed%%%,"Liquidate Failed"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.payoffPrvPending%%%,"Payoff Pending"
+%%%.home.constantC2CLoan.listApplications.mapStatus1.payPrvPending%%%,"Payoff Pending"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.pending%%%,"Pending"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.recieved%%%,"Matching"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.accepted%%%,"Matched"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.payingInterest%%%,"Interest due"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.done%%%,"Done"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.withdrawed%%%,"Withdrawn"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.tnxFailed%%%,"Please try again"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.cancelled%%%,"Cancelled"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.rejected%%%,"Error occurred"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.timeout%%%,"Timed out"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.chainBorrowPending%%%,"Pending"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.chainBorrowOk%%%,"Success"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.chainBorrowFailed%%%,"Please try again"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.chainCancelPending%%%,"Cancelled"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.chainCancelOk%%%,"Cancelled"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.chainCancelFailed%%%,"Please try again"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.chainBorrowCancel%%%,"Cancelled"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.creating%%%,"Processing"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.cancelling%%%,"Cancelling"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.manualPending%%%,"Pending"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.allStatus%%%,"All"
+%%%.home.constantC2CLoan.listApplications.mapStatus2.partiallyCancelled%%%,"Partially cancelled"
+%%%.home.constantC2CLoan.listApplications.getRemainCollateral%%%,"
+          Are you sure you want to recall <strong>{valueAvailable} {symbol}</strong> to bring your collateral value back to the minimum required amount?
+        "
+%%%.home.constantC2CLoan.listApplications.actionsModal.cancel%%%,"Cancel"
+%%%.home.constantC2CLoan.listApplications.actionsModal.confirm%%%,"Confirm"
+%%%.home.constantC2CLoan.listApplications.amountLabel%%%,"Loan amount"
+%%%.home.constantC2CLoan.listApplications.feePayLabel%%%,"Payment fee"
+%%%.home.constantC2CLoan.listApplications.feePayoffLabel%%%,"Early repayment fee"
+%%%.home.constantC2CLoan.listApplications.feePayoffDesc%%%," If less than 75% of your term has elapsed, the early repayment fee is 50% of the interest on your remaining term. If more than 75% has elapsed, 100% of the interest on the entire term is due."
+%%%.home.constantC2CLoan.listApplications.matchingFee%%%,"Matching fee"
+%%%.home.constantC2CLoan.listApplications.interestEarly%%%,"Interest due to date"
+%%%.home.constantC2CLoan.listApplications.interestOnTime%%%,"Interest due"
+%%%.home.constantC2CLoan.listApplications.interestDue%%%,"Interest due"
+%%%.home.constantC2CLoan.listApplications.totalRepayment%%%,"Total repayment"
+%%%.home.constantC2CLoan.listApplications.totalPayment%%%,"Total Payment"
+%%%.home.constantC2CLoan.listApplications.repaymentByCollateral%%%,"Do you want to pay by your collateral?"
+%%%.home.constantC2CLoan.listApplications.repaymentMethod%%%,"Payment method: "
+%%%.home.constantC2CLoan.listApplications.willPayCollateral%%%,"Collateral will be pay is"
+%%%.home.constantC2CLoan.listApplications.feePayoffExchangeRate%%%,"Collateral value is based on the current market price of {value} USD/{currency}"
+%%%.home.constantC2CLoan.listApplications.payCollateralFee%%%,"Repay with collateral fee"
+%%%.home.constantC2CLoan.listApplications.payCollateralFeeDesc%%%,"This fee is to cover the difference in price during liquidation process."
+%%%.home.constantC2CLoan.listApplications.willReturnCollateral%%%,"Collateral will be return is"
+%%%.home.constantC2CLoan.listApplications.repayAddress%%%,"Repay address"
+%%%.home.constantC2CLoan.listApplications.copyMessage%%%,"Address has been copied!"
+%%%.home.constantC2CLoan.listApplications.errorRemainCollateral%%%,"You can not to get the remaining collateral back at the moment"
+%%%.home.constantC2CLoan.listApplications.errorRemainCollateralHtml%%%,"
+          Please wait for assistance, or contact us at <a href=""mailto:hello@myconstant.com"">hello@myconstant.com</a>
+        "
+%%%.home.constantC2CLoan.listApplications.errorCollateralNotEnoughHtml%%%,"Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess."
+%%%.home.constantC2CLoan.listApplications.errorCantCollateralHtml%%%,"To recall excess, collateral value must be higher than {lvtPer}%. Your current collateral value is {percent}%."
+%%%.home.constantC2CLoan.listApplications.errorGetCollateralValueHtml%%%,"To recall excess, collateral value must be higher than {value} USD. Your current collateral value is {currentValue} USD ({amount} {currency} * ${exchangeRate})"
+%%%.home.constantC2CLoan.listApplications.depositFrom.title%%%,"Make more deposit for your collateral"
+%%%.home.constantC2CLoan.listApplications.depositFrom.amount%%%,"Amount"
+%%%.home.constantC2CLoan.listApplications.depositFrom.requiredAmount%%%,"Amount is required!"
+%%%.home.constantC2CLoan.listApplications.depositFrom.amountDesc%%%,"How much do you want to deposit?"
+%%%.home.constantC2CLoan.listApplications.depositFrom.ok%%%,"Make deposit"
+%%%.home.constantC2CLoan.listApplications.depositFrom.cancel%%%,"Cancel"
+%%%.home.constantC2CLoan.listApplications.depositFrom.depositFailed%%%,"Failed while depositing, please try again"
+%%%.home.constantC2CLoan.listApplications.depositFrom.depositSuccess%%%,"Your deposit was completed successfully"
+%%%.home.constantC2CLoan.listApplications.itemMatched.matchedAmount%%%,"Amount"
+%%%.home.constantC2CLoan.listApplications.itemMatched.filledCollateralAmount%%%,"Filled Collateral Amount"
+%%%.home.constantC2CLoan.listApplications.itemMatched.maxCollateralAmount%%%,"Max Collateral"
+%%%.home.constantC2CLoan.listApplications.itemMatched.filledAmount%%%,"Filled Amount"
+%%%.home.constantC2CLoan.listApplications.itemMatched.amount%%%,"Amount"
+%%%.home.constantC2CLoan.listApplications.itemMatched.interest%%%,"Interest"
+%%%.home.constantC2CLoan.listApplications.itemMatched.collateral%%%,"Collateral"
+%%%.home.constantC2CLoan.listApplications.itemMatched.collateralValue%%%,"Collateral value"
+%%%.home.constantC2CLoan.listApplications.itemMatched.createdDate%%%,"Created"
+%%%.home.constantC2CLoan.listApplications.itemMatched.dueDate%%%,"Due"
+%%%.home.constantC2CLoan.listApplications.itemMatched.collateralValueDesc%%%,"This represents your collateral value as a percentage of your loan. It accounts for the interest accrued so far, as well as the repayment fee should you choose to repay today. If it falls to 110%, your collateral will be liquidated, and the difference refunded to you."
+%%%.home.constantC2CLoan.listApplications.itemMatched.repayAddress%%%,"Repay Address"
+%%%.home.constantC2CLoan.listApplications.itemMatched.collateralValueAtLiquid%%%,"Liquidation price"
+%%%.home.constantC2CLoan.listApplications.itemMatched.collateralValueAtLiquidDesc%%%,"Once the price of the token falls to this price, your loan will be liquidated.
+          Note: this number is always changed unpredictably due to the fluctuation of the market. Please keep an eye on your loans to avoid liquidation."
+%%%.home.constantC2CLoan.listApplications.paymentMethod.const%%%,"USD"
+%%%.home.constantC2CLoan.listApplications.paymentMethod.collateral%%%,"Collateral"
+%%%.home.constantC2CLoan.listApplications.paymentMethod.prv%%%,"PRV"
+%%%.home.constantC2CLoan.advice.title%%%,"Đăng Ký Vay Thế Chấp Từ Constant"
+%%%.home.constantC2CLoan.advice.name%%%,"Tên"
+%%%.home.constantC2CLoan.advice.namePlaceHolder%%%,"Họ và tên"
+%%%.home.constantC2CLoan.advice.phone%%%,"Số điện thoại"
+%%%.home.constantC2CLoan.advice.phonePlaceHolder%%%,"Số điện thoại"
+%%%.home.constantC2CLoan.advice.agreeToBorrow%%%,"Tôi có sở hữu và sẵn sàng thế chấp cryptocurrency(bạn sẽ được vay 66% giá trị coin)"
+%%%.home.constantC2CLoan.advice.submit%%%,"Gửi"
+%%%.home.constantC2CLoan.advice.registerSuccess%%%,"Đăng ký thành công"
+%%%.home.constantC2CLoan.advice.regiserFail%%%,"Đăng ký thất bại"
 %%%.home.prvLoan.title%%%,"Unlock the value of your crypto."
 %%%.home.prvLoan.subTitle%%%,"<h2>Borrow against PRV for {rate}% APR.</h2> 
                 <h2>Get cash without selling up.</h2>
@@ -4789,7 +5335,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     "
 %%%.getPrices.withdrawCryptoNote%%%,"
     <p class=""title"">* Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually.</p>
-    <p class=""title"">* Withdrawal fee for DAI is still kept at 1.5% until further notice.</p>
+    <p class=""title"">* Withdrawal fee for DAI is still kept at 3.5% until further notice.</p>
     <p class=""title"">* Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>
     <div class=""bold guarantee"">Service time guarantee &#10004; </div>
     <p>Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>
@@ -4946,6 +5492,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.proLending.borrowBooking.title%%%,"Borrow"
 %%%.proLending.borrowBooking.exchange.amountLabel%%%,"Amount"
 %%%.proLending.borrowBooking.exchange.amountLabelDesc%%%,"How much do you want to borrow?"
+%%%.proLending.borrowBooking.exchange.exchangeInfo%%%,"Estimate amount"
+%%%.proLending.borrowBooking.exchange.exchangeInfoDesc%%%,"Estimate amount USD (const) you need to borrow"
 %%%.proLending.borrowBooking.exchange.collateralLabel%%%,"Collateral required"
 %%%.proLending.borrowBooking.exchange.collateralDesc%%%,"To secure your loan, please deposit 150% the loan value in collateral."
 %%%.proLending.borrowBooking.exchange.collateralRequiredDesc%%%,"To secure your loan, please deposit {value}% the loan value in collateral."
@@ -4963,6 +5511,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.proLending.borrowBooking.exchange.rateMax1%%%,"Interest rate must from 1% to {rate}%"
 %%%.proLending.borrowBooking.exchange.collateralNoteFee%%%,"Fee: {fee} {currency} (1%)"
 %%%.proLending.borrowBooking.exchange.collateralNoteMatchedFee%%%,"Fee: 1%"
+%%%.proLending.borrowBooking.exchange.yourBalance%%%,"Your current balance is {value} {symbol}"
 %%%.proLending.borrowBooking.exchange.collateralNoteTotal%%%,"Total loan received: {total} {currency}"
 %%%.proLending.borrowBooking.exchange.usingStaking%%%,"Get {discount}% off your interest rate by staking collateral"
 %%%.proLending.borrowBooking.exchange.usingStakingMobile%%%,"Get {discount}% off with staking"
@@ -4974,6 +5523,40 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.proLending.borrowBooking.errorMsgs.generateCollateralAddressFail%%%,"Can't generate collateral address. Please try again!"
 %%%.proLending.borrowBooking.errorMsgs.maxOfCollateralHolding%%%,"Please try a different coin. To manage risk, the platform can hold only 10% of any coin's 24h trading volume."
 %%%.proLending.borrowBooking.errorMsgs.error%%%,"OH! something went wrong! Please try again"
+%%%.proLending.borrowC2CBooking.title%%%,"Crypto Credit"
+%%%.proLending.borrowC2CBooking.exchange.amountLabel%%%,"Crypto to buy"
+%%%.proLending.borrowC2CBooking.exchange.amountLabelDesc%%%,"The amount and type of cryptocurrency you want to buy?"
+%%%.proLending.borrowC2CBooking.exchange.exchangeInfo%%%,"USD loan value"
+%%%.proLending.borrowC2CBooking.exchange.exchangeInfoDesc%%%,"The amount of USD you’re borrowing to buy your chosen crypto. We search multiple exchanges to find the best price for you"
+%%%.proLending.borrowC2CBooking.exchange.collateralLabel%%%,"Collateral required"
+%%%.proLending.borrowC2CBooking.exchange.collateralDesc%%%,"The amount of collateral you need to secure the USD loan used to buy your chosen crypto."
+%%%.proLending.borrowC2CBooking.exchange.collateralRequiredDesc%%%,"To secure your loan, please deposit {value}% the loan value in collateral."
+%%%.proLending.borrowC2CBooking.exchange.maxRate%%%,"Interest rate (APR)"
+%%%.proLending.borrowC2CBooking.exchange.minTerm%%%,"Term (days)"
+%%%.proLending.borrowC2CBooking.exchange.maxRateTooltip%%%,"The annual interest rate you’ll pay on your USD loan. Choose the market rate or higher to match quickly."
+%%%.proLending.borrowC2CBooking.exchange.minTermTooltip%%%,"The duration of your loan term. Repay in cash, stablecoins, or cryptocurrency before your term ends to get your collateral back"
+%%%.proLending.borrowC2CBooking.exchange.buttonText%%%,"PLACE BORROW ORDER"
+%%%.proLending.borrowC2CBooking.exchange.loginButton%%%,"Log in or Sign up to borrow"
+%%%.proLending.borrowC2CBooking.exchange.amountRequired%%%,"Amount is required to make a borrow!"
+%%%.proLending.borrowC2CBooking.exchange.amountMin%%%,"The minimum amount that you can borrow is {amount}"
+%%%.proLending.borrowC2CBooking.exchange.collateralRequired%%%,"Collateral amount is required to make a borrow!"
+%%%.proLending.borrowC2CBooking.exchange.rateRequired%%%,"Interest rate is required to make a borrow!"
+%%%.proLending.borrowC2CBooking.exchange.rateMax%%%,"Interest rate must be less than {rate}%"
+%%%.proLending.borrowC2CBooking.exchange.rateMax1%%%,"Interest rate must from 1% to {rate}%"
+%%%.proLending.borrowC2CBooking.exchange.collateralNoteFee%%%,"Fee: {fee} {currency} (1%)"
+%%%.proLending.borrowC2CBooking.exchange.collateralNoteMatchedFee%%%,"Fee: 1%"
+%%%.proLending.borrowC2CBooking.exchange.yourBalance%%%,"Your current balance is {value} {symbol}"
+%%%.proLending.borrowC2CBooking.exchange.collateralNoteTotal%%%,"Total loan received: {total} {currency}"
+%%%.proLending.borrowC2CBooking.exchange.usingStaking%%%,"Get {discount}% off your interest rate by staking collateral"
+%%%.proLending.borrowC2CBooking.exchange.usingStakingMobile%%%,"Get {discount}% off with staking"
+%%%.proLending.borrowC2CBooking.exchange.usingStakingDesc%%%,"Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess."
+%%%.proLending.borrowC2CBooking.exchange.stakingMinAmount%%%,"stake amount must be great than {minVal} {currency}"
+%%%.proLending.borrowC2CBooking.exchange.goToAccountApp%%%,"Please go to the Account tab to sign up or log in."
+%%%.proLending.borrowC2CBooking.createdSuccess%%%,"Your borrow had been created successfully"
+%%%.proLending.borrowC2CBooking.errorMsgs.notEnoughBalance%%%,"Your balance is not enough to make borrow!"
+%%%.proLending.borrowC2CBooking.errorMsgs.generateCollateralAddressFail%%%,"Can't generate collateral address. Please try again!"
+%%%.proLending.borrowC2CBooking.errorMsgs.maxOfCollateralHolding%%%,"Please try a different coin. To manage risk, the platform can hold only 10% of any coin's 24h trading volume."
+%%%.proLending.borrowC2CBooking.errorMsgs.error%%%,"OH! something went wrong! Please try again"
 %%%.proLending.orderBook%%%,"Order Book"
 %%%.proLending.tradeHistory%%%,"Trade History"
 %%%.proLending.activityChart%%%,"Activity Chart My Constant"
@@ -5098,6 +5681,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.menuMobile.history%%%,"History"
 %%%.menuMobile.membership%%%,"Membership"
 %%%.menuMobile.btnDeposit%%%,"Deposit"
+%%%.menuMobile.btnLoansC2C%%%,"Crypto Credit"
 %%%.menuMobile.btnReferral%%%,"<div class=""textLeft""><small>Share & Earn</small><div>Money</div></div>"
 %%%.menuMobile.btnTransfer%%%,"Transfer"
 %%%.menuMobile.btnWithdrawCrypto%%%,"<div class=""textLeft""><small>withdraw to</small><div>Crypto</div></div>"

@@ -3215,13 +3215,15 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         question10: 'What happens if I repay late?',
         answer10: 'The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due.'
       },
-      title: 'Fair, fully secured crypto-backed loans.',
-      subTitle: `
-        <h2>4.50% APR.</h2>
-        <h2>Instant funding.</h2>
-        <h2>Get cash for crypto without needing to sell.</h2>
-      `,
       intro: {
+        content: `
+        <p>Borrow the way you want</p>
+        <h2>Set your own rates.</h2>
+        <h2>Borrow against 60+ cryptocurrencies.</h2>
+        <h2>Get cash for crypto without needing to sell.</h2>
+        <p/>
+        <p>Get the funds you need at rates you’re willing to pay. Your collateral is securely escrowed and is automatically returned to you when you repay. Free withdrawals in cash or stablecoins. </p>
+        `,
         desc: {
           1: 'Secure escrow',
           2: 'No credit checks',
@@ -3239,7 +3241,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         exchangeInfoDesc: 'Estimate amount USD (const) you need to borrow',
         usedMarketRate: 'Use market rate ',
         usedMarketRateDesc: 'When market rate is enabled, you\'re guaranteed a match at the best rate and term available in the market.',
+        maxRate: 'Your maximum interest rate',
         maxRateTooltip: 'This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.',
+        minTerm: 'Length of term',
         minTermTooltip: 'This is the minimum amount of time you want to borrow.',
         caption: 'Crypto-backed loan',
         captionPRV: 'Get the best loan rate in the market',
@@ -3806,15 +3810,15 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due.
         `
       },
-      title: 'Fast and easy crypto credit',
-      subTitle: `
+      intro: {
+        content: `
+        <p>Fast and easy crypto credit</p>
         <h2>Trade the margin.</h2>
         <h2>Skip the exchange.</h2>
         <h2>Borrow against 40+ cryptos.</h2>
-        <br>
+        <p/>
         <p>Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.</p>
       `,
-      intro: {
         desc: {
           1: 'Secure escrow',
           2: 'No credit checks',
@@ -4491,21 +4495,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       },
     }
   },
-  promotion_programs: {
-    referral_program: {
-      title: 'Referral Program',
-      description:
-        'Both referrer and referred person will instantly get 100 HKD as soon as referred person buys or sells crypto worth of at least 1,000 HKD on <strong>https://constant.money.</strong>',
-    },
-    commission: {
-      title: 'Commission',
-      description:
-        'Referrers will forever receive 0.2% commission on every transactions made by referred people.',
-    },
-    textRequireLogin:
-      'Get your referral link here and start earning with your friends. Sign In Now to get your referral code',
-    signInNow: 'Sign in now',
-  },
   pageNotFound: {
     pageNotFound: 'Page not found',
     descText: 'Sorry we couldn\'t find what you were looking for.',
@@ -4996,79 +4985,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           `,
       },
     }
-  },
-  proSaving: {
-    pending: 'Pending',
-    yourAccreditation: {
-      date: 'Date',
-      type: 'Type',
-      option: 'Provide Evidence',
-      status: 'Status',
-      assets: 'Assets',
-      income: 'Income',
-      options: {
-        '1':
-          'Send verification request to my lawyer, CPA, investment adviser or broker',
-        '2': 'Upload document (in English or with English Translation)',
-        '3':
-          'Send verification request to my lawyer, CPA, investment adviser or broker',
-        '4':
-          'Upload a credit report stating your liabilities that is dated within the last 30 days.',
-      },
-    },
-    netWorths: 'Networths',
-    yes: 'Yes',
-    no: 'No',
-    agreement:
-      'I authorize AngelList in writing to periodically obtain my credit report for a transaction I am initiating. AngelList may use this data and share it with any issuer solely to verify my investor status in compliance with SEC requirements.',
-    accreditation_evidence_location:
-      'Do you have a U.S. Social Security Number?',
-    verifierRole: 'Verifier Role',
-    verifierEmail: 'Verifier Email',
-    accreditation: 'Accreditation',
-    photoIncome1: 'Photo Income 2017',
-    photoIncome2: 'Photo Income 2018',
-    accreditationAlt:
-      'Required by U.S. law for investing in 506(c) fundraisings',
-    title1: 'How is asdf accredited?',
-    desc1: `
-      We require proof of accreditation from you that meets the more stringent standard the SEC has put
-      in place –
-      <a target="_blank" rel="nofollow" href="http://www.sec.gov/info/smallbus/secg/general-solicitation-small-entity-compliance-guide.htm">the 506(c) standard</a>
-      – which should work for all accredited deals, including ones that publicly discuss their financing.`,
-    income: {
-      title: 'Income',
-      alt: 'Valid for 1 tax year',
-      description:
-        'Income of 200k USD, or 300k USD with spouse, in each of past 2 years and expecting same or more this year',
-    },
-    assets: {
-      title: 'Assets',
-      alt: 'Valid for 3 months',
-      description:
-        'Net worth of 1M USD, individually or joint with spouse, excluding your primary residence',
-    },
-    text1: 'Provide evidence of accreditation',
-    text2:
-      'They\'ll be asked to confirm that they have seen evidence of your claimed status. No documentation required.',
-    text3:
-      'W2, 1040, other IRS or foreign tax authority document containing salary for the past 2 years (2017 and 2018), or a letter from your lawyer, accountant, investment advisor, or investment broker',
-    text4:
-      'Upload a statement from a financial institution, asset appraisals, or letter from your lawyer, accountant, investment advisor or investment broker indicating net assets',
-    investment_advisor: 'Investment Adviser (SEC Registered)',
-    broker: 'Investment Broker (SEC Registered)',
-    accountant: 'Accountant (must be CPA)',
-    lawyer: 'Lawyer',
-    ssn: 'Social Security Number',
-    accreditation_evidence_allow_credit_report:
-      'I authorize AngelList in writing to periodically obtain my credit report for a transaction I am initiating. AngelList may use this data and share it with any issuer solely to verify my investor status in compliance with SEC requirements.',
-    totalDebt: 'Total Debt',
-    popover1: `
-      Income Levels must be met for each tax year individually (the SEC does not allow averaging across years)<br/> <br/>If married filing jointly, either a joint income of at least 300k USD/year must be shown across spouses or the investing individual's W-2s must show a minimum income of 200k USD/year<br/> <br/>If W2's are provided for a married couple, evidence of marriage must be provided (such as joint-filed 1040)
-    `,
-    alert: {
-      success: 'Saving Form Submitted',
-    },
   },
   homeWhatwedo: {
     desc: `
@@ -5663,12 +5579,12 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     makeDirectOrderSuccess: 'Your order was created successfully',
     makeDirectOrderFailed: 'Failed while creating your order',
     info: {
-      title: 'Withdraw to your local bank.',
-      desc1: 'Withdraw funds to your bank account of choice.',
-      desc4: `
-        <h6>Simply let us know where to send your USD funds to. If you’ve got a different local currency, it’s converted at the real-time market rate. Funds should reach you within 2 business days.</h6>
-        <br/>
-        <h6><strong>Prefer to withdraw stablecoins?</strong> Do so <a href="/transfer-crypto" class="underline">here.</a></h6>
+      content: `
+      <p>Withdraw to your local bank.</p>
+      <h2>Withdraw funds to your bank account of choice.</h2>
+      <p />
+      <p>Simply let us know where to send your USD funds to. If you’ve got a different local currency, it’s converted at the real-time market rate. Funds should reach you within 2 business days.</p>
+      <p><strong>Prefer to withdraw stablecoins?</strong> Do so <a href="/transfer-crypto" class="underline">here.</a></p>
       `,
     },
     what: {
@@ -5702,30 +5618,31 @@ While Constant processes your deposits and withdrawals free of charge, transacti
   },
   transfer: {
     info: {
-      title: 'Send money to anyone, anywhere. For free.',
-      desc1:
-        'Having a global USD account means that your money can move freely all over the world. No matter how much you send - or how often - it won’t cost you a cent.',
-      desc2:
-        'When it reaches the other party, they don’t pay anything either. So send money home, do business with the world, and get it done instantly. That’s what it means to be global.',
+      content: `
+      <h2>Send money to anyone, anywhere.</h2>
+      <p/>
+      <p>All you need is an internet connection to make as many transfers as you like - any amount, anywhere in the world. Send money home, pay your international clients, transfer salaries to your distributed team. With a single click.</p>
+      <p>Note: only use this feature when you want to transfer money between Constant accounts.</p>
+      `,
     },
   },
   transferCrypto: {
     info: {
-      title: 'Send money to anyone, anywhere. For free.',
-      desc1:
-        'Having a global USD account means that your money can move freely all over the world. No matter how much you send - or how often - it won’t cost you a cent.',
-      desc2:
-        'When it reaches the other party, they don’t pay anything either. So send money home, do business with the world, and get it done instantly. That’s what it means to be global.',
+      content: `
+      <h2>Withdraw to your crypto wallet.</h2>
+      <p/>
+      <p>Withdraw our native stablecoin (CONST) to a decentralized ETH, EOS or TOMO address that supports CONST. E.g. metamask, mew, trust, tomo wallet - not exchange wallets like Coinbase or Binance. Or, withdraw USDT, TUSD or USDC to any compatible wallet. Just enter the amount, and select where you want it to go.</p>
+      `,
     },
   },
   deposit: {
     contentHtml: `
-      <h6>Grow your wealth effortlessly</h6>
-      <h2>Lock in a great rate without</h2>
-      <h2>locking in your money.</h2>
-      <br />
-      <h6>{interest}% APY. Unlimited withdrawals, as often as you like. 24/7 customer service. No fees. No minimum deposit. No penalty. There’s never been a savings account this good.</h6>
-      <br />
+      <p>Do more with your money</p>
+      <h2>Enjoy 50x better interest</h2>
+      <h2>than a savings account<sup>*</sup>.</h2>
+      <p/>
+      <p>Earn {interest}% APY on any amount. You deposit, we lend on your behalf, and you keep the interest. All loans secured by collateral and you can withdraw anytime for free. Grow your money without locking it in.</p>
+      <p><sup>*</sup>Comparison based on data from <a href=https://www.valuepenguin.com/banking/average-bank-interest-rates">ValuePenguin</a>.</p>
     `,
     learnMore: 'Learn more here',
     title: 'Your global USD bank account.',
@@ -6349,18 +6266,14 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     lendingSection: {
       intro: {
         content: `
-          <h5>Invest the way you want</h5>
-          <br />
-          <span>
-            <h2>Set your own rates.</h2>
-            <h2>No fees.</h2>
-            <h2>No minimum capital.</h2>
-            <h2>Withdraw anytime.</h2>
-          </span>
-          <br />
-          <h5>
-          Lend your assets at rates you choose, to borrowers with 150% in collateral. Your funds are protected by smart contracts and can be withdrawn at any time.
-          </h5>
+          <p>Invest the way you want</p>
+          <h2>Set your own rates.</h2>
+           <h2>Invest from $50.</h2>
+           <h2>Invest only in secured loans.</h2>
+           <p />
+           <p>
+           Your investments are fully backed by borrower collateral. Unmatched portions earn an automatic 4% APY, and can be withdrawn anytime.
+           </p>
         `,
         desc: {
           1: 'Fully secured by collateral',
@@ -7185,7 +7098,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         interest: 'Interest (APR)',
         term: 'Term (Days)',
         termMonth: '{month}-Month',
-        investButton: 'PLACE INVEST ORDER',
+        investButton: 'Invest',
         loginButton: 'Log in or Sign up to invest',
         invalidAmount: 'Amount must be less than {maxAmount}',
         getFeeFailed: 'Can not get fee in this time, please try again.',
@@ -7210,7 +7123,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         minTerm: 'Term (days)',
         maxRateTooltip: 'This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.',
         minTermTooltip: 'This is the minimum amount of time you want to borrow.',
-        buttonText: 'PLACE BORROW ORDER',
+        buttonText: 'Borrow',
         loginButton: 'Log in or Sign up to borrow',
         amountRequired: 'Amount is required to make a borrow!',
         amountMin: 'The minimum amount that you can borrow is {amount}',
@@ -7250,7 +7163,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         minTerm: 'Term (days)',
         maxRateTooltip: 'The annual interest rate you’ll pay on your USD loan. Choose the market rate or higher to match quickly.',
         minTermTooltip: 'The duration of your loan term. Repay in cash, stablecoins, or cryptocurrency before your term ends to get your collateral back',
-        buttonText: 'PLACE BORROW ORDER',
+        buttonText: 'Borrow',
         loginButton: 'Log in or Sign up to borrow',
         amountRequired: 'Amount is required to make a borrow!',
         amountMin: 'The minimum amount that you can borrow is {amount}',
@@ -7612,12 +7525,11 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     starStaking: 'Create staking',
     stakingFromTitle: 'Start staking',
     contentHtml: `
-        <h6>Stake and earn</h6>
+        <p>Stake and earn</p>
         <h2>Get up to {reward}% APR</h2>
         <h2>on your cryptocurrencies.</h2>
-        <br />
-        <h6>Join our masternode pool for up to {reward}% APR. Interest paid every 30 minutes. No minimum stake. No fees. Withdraw anytime. Staking has never been this easy.</h6>
-        <br />
+        <p />
+        <p>Join our staking pool for up to {reward}% APR. Interest paid every 30 minutes. Low minimum stake. No fees. Withdraw anytime. Staking has never been this easy.</p>
     `,
     withdrawFrom: {
       unStaking: {

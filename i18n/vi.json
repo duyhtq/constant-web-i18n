@@ -2600,9 +2600,8 @@
                 "question10": "Điều gì xảy ra nếu tôi hoàn trả trễ?",
                 "answer10": "Thời gian ân hạn nhận thanh toán là 3 ngày sau khi thời hạn vay của bạn kết thúc. Vào ngày thứ 2 và thứ 3, bạn sẽ phải chịu một khoản phí trễ phạt là 10% trên tổng số tiền lãi đến hạn.\n \n"
             },
-            "title": "Vay thế chấp bằng tiền mã hoá.",
-            "subTitle": "\n        <h2>Tự chọn kì hạn và lãi suất.</h2>\n        <h2>Nhận tiền ngay mà không cần bán tiền mã hoá.</h2>\n        <h2>Hỗ trợ hơn 60 loại token.</h2>\n        <h6>Nhận ngay số tiền bạn mong muốn với mức lãi suất bạn có thể trả. Tài sản thế chấp được đảm bảo trên escrow và sẽ được tự động trả lại ngay khi bạn hoàn trả khoản vay</h6>\n      ",
             "intro": {
+                "content": "\n        <p>Borrow the way you want</p>\n        <h2>Set your own rates.</h2>\n        <h2>Borrow against 60+ cryptocurrencies.</h2>\n        <h2>Get cash for crypto without needing to sell.</h2>\n        <p/>\n        <p>Get the funds you need at rates you’re willing to pay. Your collateral is securely escrowed and is automatically returned to you when you repay. Free withdrawals in cash or stablecoins. </p>\n        ",
                 "desc": {
                     "1": "Bảo chứng an toàn",
                     "2": "Không kiểm tra lịch sử tín dụng",
@@ -2619,7 +2618,9 @@
                 "exchangeInfoDesc": "Estimate amount USD (const) you need to borrow",
                 "usedMarketRate": "Mức lãi suất thị trường ",
                 "usedMarketRateDesc": "Khi sử dụng mức lãi suất thị trường, lệnh của bạn sẽ được khớp ở mức lãi suất và kì hạn tốt nhất có trên thị trường.",
+                "maxRate": "Your maximum interest rate",
                 "maxRateTooltip": "Đây là lãi suất bình quân năm (APR) mà bạn sẵn sàng trả cho khoản vay. Nếu có một nhà đầu tư sẵn sàng nhận lợi nhuận ít hơn, bạn sẽ trả lãi suất thấp hơn.",
+                "minTerm": "Length of term",
                 "minTermTooltip": "Đây là kì hạn tối thiểu cho khoản vay mà bạn muốn.",
                 "caption": "Vay thế chấp bằng tiền mã hoá",
                 "captionPRV": "Get the best loan rate in the market",
@@ -2997,9 +2998,8 @@
                 "question14": "What happens if I repay late?",
                 "answer14": "\n        The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due.\n        "
             },
-            "title": "Fast and easy crypto credit",
-            "subTitle": "\n        <h2>Trade the margin.</h2>\n        <h2>Skip the exchange.</h2>\n        <h2>Borrow against 40+ cryptos.</h2>\n        <br>\n        <p>Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.</p>\n      ",
             "intro": {
+                "content": "\n        <p>Fast and easy crypto credit</p>\n        <h2>Trade the margin.</h2>\n        <h2>Skip the exchange.</h2>\n        <h2>Borrow against 40+ cryptos.</h2>\n        <p/>\n        <p>Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.</p>\n      ",
                 "desc": {
                     "1": "Secure escrow",
                     "2": "No credit checks",
@@ -3496,18 +3496,6 @@
             }
         }
     },
-    "promotion_programs": {
-        "referral_program": {
-            "title": "Chương trình Giới thiệu người dùng",
-            "description": "Cả người giới thiệu và người dùng mới đều sẽ nhận được 100 HKD khi người dùng mới thực hiện giao dịch mua hoặc bán CONSTANT với giá trị tối thiểu là 1,000 HKD trên website <strong>https://constant.money.</strong>"
-        },
-        "commission": {
-            "title": "Tiền hoa hồng",
-            "description": "Người giới thiệu nhận 0.2% hoa hồng với mỗi giao dịch được thực hiện bởi người được giới thiệu."
-        },
-        "textRequireLogin": "Nhận link giới thiệu của bạn tại đây và bắt đầu cùng bạn bè nhận thưởng. Đăng Nhập Ngay để nhận link giới thiệu của bạn",
-        "signInNow": "Đăng nhập ngay"
-    },
     "pageNotFound": {
         "pageNotFound": "Không tìm thấy trang",
         "descText": "Chúng tôi không thể tìm thấy nội dung bạn đang tìm.",
@@ -3818,61 +3806,6 @@
                 "answer": "\n          <p>\n          You’ll be paid in USD.\n          </p>\n          "
             },
             "desc": "Unlike traditional P2P platforms that prey on vulnerable borrowers and expect investors to shoulder the risk, Constant is designed to protect them both."
-        }
-    },
-    "proSaving": {
-        "pending": "Đang chờ",
-        "yourAccreditation": {
-            "date": "Ngày",
-            "type": "Loại",
-            "option": "Cung cấp bằng chứng",
-            "status": "Trạng thái",
-            "assets": "Tài sản",
-            "income": "Thu nhập",
-            "options": {
-                "1": "Gửi yêu cầu xác minh tới luật sư, kế toán, nhà tư vấn đầu tư hoặc nhà môi giới của tôi",
-                "2": "Tải lên tài liệu (bằng tiếng Anh)",
-                "3": "Gửi yêu cầu xác minh tới luật sư, kế toán, nhà tư vấn đầu tư hoặc nhà môi giới của tôi",
-                "4": "Tải lên bản báo cáo tín dụng trong 30 ngày gần đây của bạn."
-            }
-        },
-        "netWorths": "Giá trị ròng",
-        "yes": "Có",
-        "no": "Không",
-        "agreement": "Tôi ủy quyền cho AngelList bằng văn bản để định kỳ nhận báo cáo tín dụng cho giao dịch tôi đang thực hiện. AngelList có thể sử dụng dữ liệu này và chia sẻ nó với bất kỳ nhà phát hành nào chỉ để xác minh trạng thái nhà đầu tư của tôi tuân thủ các yêu cầu của SEC.",
-        "accreditation_evidence_location": "Bạn có số bảo hiểm xã hội Hoa Kỳ không?",
-        "verifierRole": "Vai trò xác minh",
-        "verifierEmail": "Email xác minh",
-        "accreditation": "Độ tín nhiệm",
-        "photoIncome1": "Hình ảnh thu nhập 2017",
-        "photoIncome2": "Hình ảnh thu nhập 2018",
-        "accreditationAlt": "Được yêu cầu bởi luật Hoa Kỳ để đầu tư gọi vốn 506(c)",
-        "title1": "Asdf tín nhiệm như thế nào?",
-        "desc1": "\n      Chúng tôi yêu cầu bằng chứng độ tín nhiệm của bạn để đáp ứng các tiêu chuẩn nghiêm ngặt của SEC –\n      <a target=\"_blank\" rel=\"nofollow\" href=\"http://www.sec.gov/info/smallbus/secg/general-solicitation-small-entity-compliance-guide.htm\">tiêu chuẩn 506(c)</a>\n      –Áp dụng cho tất cả các giao dịch tín nhiệm gồm những giao dịch công khai thảo luận tài chính.",
-        "income": {
-            "title": "Thu nhập",
-            "alt": "Hiệu lực trong 1 năm thuế",
-            "description": "Thu nhập 200k USD hoặc 300k USD với người phối ngẫu, trong mỗi 2 năm qua và kỳ vọng tương tự hoặc nhiều hơn trong năm nay"
-        },
-        "assets": {
-            "title": "Tài sản",
-            "alt": "Hợp lệ trong 3 tháng",
-            "description": "Giá trị tài sản 1 triệu USD, là sở hữu cá nhân hoặc chung với vợ/chồng, nhưng không bao gồm giá trị nơi cư trú chính của bạn"
-        },
-        "text1": "Cung cấp bằng chứng về độ tín nhiệm",
-        "text2": "Họ sẽ được yêu cầu xác nhận rằng họ đã thấy bằng chứng về trạng thái mà bạn khẳng định. Không yêu cầu tài liệu.",
-        "text3": "W2, 1040, IRS hoặc tài liệu của cơ quan thuế nước ngoài có lương trong 2 năm qua (2017 và 2018) hoặc thư của luật sư, kế toán, cố vấn đầu tư hoặc môi giới đầu tư của bạn",
-        "text4": "Tải lên bằng chứng từ một tổ chức tài chính, tổ chức giám định tài sản hoặc một bức thư từ luật sư, kế toán, nhà tư vấn đầu tư hoặc nhà môi giới đầu tư để chứng minh tài sản thật của bạn",
-        "investment_advisor": "Như tư vấn đầu tư (phải đăng kí với SEC)",
-        "broker": "Nhà môi giới đầu tư (phải đăng kí với SEC)",
-        "accountant": "Kế toán (phải là CPA)",
-        "lawyer": "Luật sư",
-        "ssn": "Số bảo hiểm xã hội",
-        "accreditation_evidence_allow_credit_report": "Tôi ủy quyền cho AngelList bằng văn bản để định kỳ nhận báo cáo tín dụng cho giao dịch tôi đang thực hiện. AngelList có thể sử dụng dữ liệu này và chia sẻ nó với bất kỳ nhà phát hành nào chỉ để xác minh trạng thái nhà đầu tư của tôi tuân thủ các yêu cầu của SEC.",
-        "totalDebt": "Tổng dư nợ",
-        "popover1": "\nMức thu nhập phải đáp ứng được cho từng năm tài chính (SEC không cho phép tính trung bình qua các năm)<br/><br/>Nếu đã kết hôn và khai thuế chung, thu nhập chung của hai người phải đạt ít nhất là 300 nghìn USD/năm hoặc khoản đầu tư của mỗi cá nhân W-2 phải thể hiện được thu nhập tối thiểu là 200 nghìn USD/năm<br/><br/>Nếu W2 được cung cấp cho một cặp vợ chồng, phải cung cấp bằng chứng về hôn nhân (chẳng hạn như nộp chung 1040)    ",
-        "alert": {
-            "success": "Đã gửi đơn tiết kiệm"
         }
     },
     "homeWhatwedo": {
@@ -4240,9 +4173,7 @@
         "makeDirectOrderSuccess": "Lệnh của bạn được tạo thành công",
         "makeDirectOrderFailed": "Tạo lệnh không thành công",
         "info": {
-            "title": "Rút tiền về tài khoản ngân hàng ở quốc gia bạn.",
-            "desc1": "Rút tiền về tài khoản ngân hàng mà bạn chọn.",
-            "desc4": "        <h6>Chỉ cần cho chúng tôi biết nơi bạn muốn gửi tiền USD của bạn đến. Nếu bạn đã có một đồng tiền nội địa khác, thì số USD sẽ được chuyển đổi theo tỷ giá thị trường theo thời gian thực. Tiền sẽ đến tay bạn trong vòng 2 ngày làm việc..</h6>\n        <br/>\n        <h6><strong>Muốn rút stablecoins?</strong> Thao tác ơ <a href=\"/transfer-crypto\" class=\"underline\">đây.</a></h6>"
+            "content": "\n      <p>Withdraw to your local bank.</p>\n      <h2>Withdraw funds to your bank account of choice.</h2>\n      <p />\n      <p>Simply let us know where to send your USD funds to. If you’ve got a different local currency, it’s converted at the real-time market rate. Funds should reach you within 2 business days.</p>\n      <p><strong>Prefer to withdraw stablecoins?</strong> Do so <a href=\"/transfer-crypto\" class=\"underline\">here.</a></p>\n      "
         },
         "what": {
             "title": "What we can do",
@@ -4269,20 +4200,16 @@
     },
     "transfer": {
         "info": {
-            "title": "Gửi tiền tới bất cứ ai, bất kỳ đâu. Hoàn toàn miễn phí",
-            "desc1": "Có tài khoản USD toàn cầu có nghĩa là tiền của bạn có thể di chuyển tự do trên toàn thế giới. Cho dù bạn gửi bao nhiêu - hay nạp tiền thường xuyên như thế nào - bạn cũng sẽ không mất chi phí nào.",
-            "desc2": "Khi tiền được chuyển đến, người nhận cũng không phải trả bất cứ thứ gì. Vì vậy, gửi tiền về nhà, làm kinh doanh khắp thế giới chỉ bằng chuyển tuyền nhanh tức khắc. Đó chính là ý nghĩa của vươn ra thế giới."
+            "content": "\n      <h2>Send money to anyone, anywhere.</h2>\n      <p/>\n      <p>All you need is an internet connection to make as many transfers as you like - any amount, anywhere in the world. Send money home, pay your international clients, transfer salaries to your distributed team. With a single click.</p>\n      <p>Note: only use this feature when you want to transfer money between Constant accounts.</p>\n      "
         }
     },
     "transferCrypto": {
         "info": {
-            "title": "Gửi tiền tới bất cứ ai, bất kỳ đâu. Hoàn toàn miễn phí.",
-            "desc1": "Có tài khoản USD toàn cầu có nghĩa là tiền của bạn có thể di chuyển tự do trên toàn thế giới. Cho dù bạn gửi bao nhiêu - hay nạp tiền thường xuyên như thế nào - bạn cũng sẽ không mất chi phí nào.",
-            "desc2": "Khi tiền được chuyển đến, người nhận cũng không phải trả bất cứ thứ gì. Vì vậy, gửi tiền về nhà, làm kinh doanh khắp thế giới chỉ bằng chuyển tuyền nhanh tức khắc. Đó chính là ý nghĩa của vươn ra thế giới."
+            "content": "\n      <h2>Withdraw to your crypto wallet.</h2>\n      <p/>\n      <p>Withdraw our native stablecoin (CONST) to a decentralized ETH, EOS or TOMO address that supports CONST. E.g. metamask, mew, trust, tomo wallet - not exchange wallets like Coinbase or Binance. Or, withdraw USDT, TUSD or USDC to any compatible wallet. Just enter the amount, and select where you want it to go.</p>\n      "
         }
     },
     "deposit": {
-        "contentHtml": "\n<h6>Đầu tư không kì hạn</h6>\n      <h2>Lãi suất kép 5%/năm.</h2>\n      <br />\n      <h6>Nhận ngay {interest}% lãi suất kép trên mọi khoản tiền gửi. Tất cả được đảm bảo bởi tài sản thế chấp. Rút tiền về bất cứ lúc nào. Hoàn toàn miễn phí. </h6>\n<br />\n<h6>Tăng vốn dễ dàng. Không cần khoá vốn.</h6>\n      <br />    ",
+        "contentHtml": "\n      <p>Do more with your money</p>\n      <h2>Enjoy 50x better interest</h2>\n      <h2>than a savings account<sup>*</sup>.</h2>\n      <p/>\n      <p>Earn {interest}% APY on any amount. You deposit, we lend on your behalf, and you keep the interest. All loans secured by collateral and you can withdraw anytime for free. Grow your money without locking it in.</p>\n      <p><sup>*</sup>Comparison based on data from <a href=https://www.valuepenguin.com/banking/average-bank-interest-rates\">ValuePenguin</a>.</p>\n    ",
         "learnMore": "Tìm hiểu thêm ở đây.",
         "title": "Tài khoản USD quốc tế của bạn.",
         "availableInVn": "Đã có mặt tại Việt Nam.",
@@ -4757,7 +4684,7 @@
     "home1": {
         "lendingSection": {
             "intro": {
-                "content": "\n<h6>Đầu tư có kì hạn</h6>\n<h2>Tự chọn lãi suất và kì hạn.</h2>\n <h2>Không yêu cầu vốn tối thiểu.</h2>\n <h2>Được đảm bảo bởi tài sản thế chấp.</h2>\n <br />\n <h6>\n Các khoản đầu tư được đảm bảo an toàn tuyệt đối bởi tài sản thế chấp của người vay. Tài sản thế chấp phải có giá trị tối thiểu bằng 150% giá trị khoản vay.\n </h6>        ",
+                "content": "\n          <p>Invest the way you want</p>\n          <h2>Set your own rates.</h2>\n           <h2>Invest from $50.</h2>\n           <h2>Invest only in secured loans.</h2>\n           <p />\n           <p>\n           Your investments are fully backed by borrower collateral. Unmatched portions earn an automatic 4% APY, and can be withdrawn anytime.\n           </p>\n        ",
                 "desc": {
                     "1": "Đảm bảo bởi tài sản thế chấp",
                     "2": "Tự chọn kì hạn và lãi suất",
@@ -5325,7 +5252,7 @@
                 "interest": "Lãi suất (%/năm)",
                 "term": "Kì hạn (Ngày)",
                 "termMonth": "{month}-Tháng",
-                "investButton": "ĐẶT LỆNH ĐẦU TƯ",
+                "investButton": "Invest",
                 "loginButton": "Log in or Sign up to invest",
                 "invalidAmount": "Số lượng phải nhỏ hơn {maxAmount}",
                 "getFeeFailed": "Chưa thể tính phí. Xin vui lòng thử lại.",
@@ -5350,7 +5277,7 @@
                 "minTerm": "Kì hạn (Ngày)",
                 "maxRateTooltip": "Đây là mức lãi kép mà bạn sẵn sàng trả cho khoản vay của mình. Nếu có nhà đầu tư chấp nhận khoản lợi nhuận nhỏ hơn, bạn sẽ chỉ phải trả mức lãi suất thấp hơn.",
                 "minTermTooltip": "Đây là kì hạn cho khoản tiền mà bạn muốn vay.",
-                "buttonText": "VAY",
+                "buttonText": "Borrow",
                 "loginButton": "Log in or Sign up to borrow",
                 "amountRequired": "Amount is required to make a borrow!",
                 "amountMin": "The minimum amount that you can borrow is {amount}",
@@ -5390,7 +5317,7 @@
                 "minTerm": "Term (days)",
                 "maxRateTooltip": "The annual interest rate you’ll pay on your USD loan. Choose the market rate or higher to match quickly.",
                 "minTermTooltip": "The duration of your loan term. Repay in cash, stablecoins, or cryptocurrency before your term ends to get your collateral back",
-                "buttonText": "PLACE BORROW ORDER",
+                "buttonText": "Borrow",
                 "loginButton": "Log in or Sign up to borrow",
                 "amountRequired": "Amount is required to make a borrow!",
                 "amountMin": "The minimum amount that you can borrow is {amount}",
@@ -5708,7 +5635,7 @@
         "cancel": "Huỷ",
         "starStaking": "Tạo staking",
         "stakingFromTitle": "Bắt đầu staking bây giờ",
-        "contentHtml": "\n<h6>Stake và nhận lãi</h6>\n        <h2>Nhận lãi suất {reward}%/năm</h2>\n        <h2>trên số tiền mã hoá stake.</h2>\n        <br />\n       <h6>Tham gia hệ thống masternood để nhận lãi suất đến {reward}%/năm. Lãi được trả mỗi 30 giây. Hoàn toàn Miễn phí. Rút tiền về bất kỳ lúc nào. Staking chưa bao giờ dễ dàng đến thế.</h6>\n        <br />    ",
+        "contentHtml": "\n        <p>Stake and earn</p>\n        <h2>Get up to {reward}% APR</h2>\n        <h2>on your cryptocurrencies.</h2>\n        <p />\n        <p>Join our staking pool for up to {reward}% APR. Interest paid every 30 minutes. Low minimum stake. No fees. Withdraw anytime. Staking has never been this easy.</p>\n    ",
         "withdrawFrom": {
             "unStaking": {
                 "title": "Bỏ stake",

@@ -2600,9 +2600,8 @@
                 "question10": "%%%.home.constantLoan.faqs.question10%%%",
                 "answer10": "%%%.home.constantLoan.faqs.answer10%%%"
             },
-            "title": "%%%.home.constantLoan.title%%%",
-            "subTitle": "%%%.home.constantLoan.subTitle%%%",
             "intro": {
+                "content": "%%%.home.constantLoan.intro.content%%%",
                 "desc": {
                     "1": "%%%.home.constantLoan.intro.desc.1%%%",
                     "2": "%%%.home.constantLoan.intro.desc.2%%%",
@@ -2619,7 +2618,9 @@
                 "exchangeInfoDesc": "%%%.home.constantLoan.exchange.exchangeInfoDesc%%%",
                 "usedMarketRate": "%%%.home.constantLoan.exchange.usedMarketRate%%%",
                 "usedMarketRateDesc": "%%%.home.constantLoan.exchange.usedMarketRateDesc%%%",
+                "maxRate": "%%%.home.constantLoan.exchange.maxRate%%%",
                 "maxRateTooltip": "%%%.home.constantLoan.exchange.maxRateTooltip%%%",
+                "minTerm": "%%%.home.constantLoan.exchange.minTerm%%%",
                 "minTermTooltip": "%%%.home.constantLoan.exchange.minTermTooltip%%%",
                 "caption": "%%%.home.constantLoan.exchange.caption%%%",
                 "captionPRV": "%%%.home.constantLoan.exchange.captionPRV%%%",
@@ -2997,9 +2998,8 @@
                 "question14": "%%%.home.constantC2CLoan.faqs.question14%%%",
                 "answer14": "%%%.home.constantC2CLoan.faqs.answer14%%%"
             },
-            "title": "%%%.home.constantC2CLoan.title%%%",
-            "subTitle": "%%%.home.constantC2CLoan.subTitle%%%",
             "intro": {
+                "content": "%%%.home.constantC2CLoan.intro.content%%%",
                 "desc": {
                     "1": "%%%.home.constantC2CLoan.intro.desc.1%%%",
                     "2": "%%%.home.constantC2CLoan.intro.desc.2%%%",
@@ -3496,18 +3496,6 @@
             }
         }
     },
-    "promotion_programs": {
-        "referral_program": {
-            "title": "%%%.promotion_programs.referral_program.title%%%",
-            "description": "%%%.promotion_programs.referral_program.description%%%"
-        },
-        "commission": {
-            "title": "%%%.promotion_programs.commission.title%%%",
-            "description": "%%%.promotion_programs.commission.description%%%"
-        },
-        "textRequireLogin": "%%%.promotion_programs.textRequireLogin%%%",
-        "signInNow": "%%%.promotion_programs.signInNow%%%"
-    },
     "pageNotFound": {
         "pageNotFound": "%%%.pageNotFound.pageNotFound%%%",
         "descText": "%%%.pageNotFound.descText%%%",
@@ -3818,61 +3806,6 @@
                 "answer": "%%%.affiliates.faqs.24.answer%%%"
             },
             "desc": "%%%.affiliates.faqs.desc%%%"
-        }
-    },
-    "proSaving": {
-        "pending": "%%%.proSaving.pending%%%",
-        "yourAccreditation": {
-            "date": "%%%.proSaving.yourAccreditation.date%%%",
-            "type": "%%%.proSaving.yourAccreditation.type%%%",
-            "option": "%%%.proSaving.yourAccreditation.option%%%",
-            "status": "%%%.proSaving.yourAccreditation.status%%%",
-            "assets": "%%%.proSaving.yourAccreditation.assets%%%",
-            "income": "%%%.proSaving.yourAccreditation.income%%%",
-            "options": {
-                "1": "%%%.proSaving.yourAccreditation.options.1%%%",
-                "2": "%%%.proSaving.yourAccreditation.options.2%%%",
-                "3": "%%%.proSaving.yourAccreditation.options.3%%%",
-                "4": "%%%.proSaving.yourAccreditation.options.4%%%"
-            }
-        },
-        "netWorths": "%%%.proSaving.netWorths%%%",
-        "yes": "%%%.proSaving.yes%%%",
-        "no": "%%%.proSaving.no%%%",
-        "agreement": "%%%.proSaving.agreement%%%",
-        "accreditation_evidence_location": "%%%.proSaving.accreditation_evidence_location%%%",
-        "verifierRole": "%%%.proSaving.verifierRole%%%",
-        "verifierEmail": "%%%.proSaving.verifierEmail%%%",
-        "accreditation": "%%%.proSaving.accreditation%%%",
-        "photoIncome1": "%%%.proSaving.photoIncome1%%%",
-        "photoIncome2": "%%%.proSaving.photoIncome2%%%",
-        "accreditationAlt": "%%%.proSaving.accreditationAlt%%%",
-        "title1": "%%%.proSaving.title1%%%",
-        "desc1": "%%%.proSaving.desc1%%%",
-        "income": {
-            "title": "%%%.proSaving.income.title%%%",
-            "alt": "%%%.proSaving.income.alt%%%",
-            "description": "%%%.proSaving.income.description%%%"
-        },
-        "assets": {
-            "title": "%%%.proSaving.assets.title%%%",
-            "alt": "%%%.proSaving.assets.alt%%%",
-            "description": "%%%.proSaving.assets.description%%%"
-        },
-        "text1": "%%%.proSaving.text1%%%",
-        "text2": "%%%.proSaving.text2%%%",
-        "text3": "%%%.proSaving.text3%%%",
-        "text4": "%%%.proSaving.text4%%%",
-        "investment_advisor": "%%%.proSaving.investment_advisor%%%",
-        "broker": "%%%.proSaving.broker%%%",
-        "accountant": "%%%.proSaving.accountant%%%",
-        "lawyer": "%%%.proSaving.lawyer%%%",
-        "ssn": "%%%.proSaving.ssn%%%",
-        "accreditation_evidence_allow_credit_report": "%%%.proSaving.accreditation_evidence_allow_credit_report%%%",
-        "totalDebt": "%%%.proSaving.totalDebt%%%",
-        "popover1": "%%%.proSaving.popover1%%%",
-        "alert": {
-            "success": "%%%.proSaving.alert.success%%%"
         }
     },
     "homeWhatwedo": {
@@ -4240,9 +4173,7 @@
         "makeDirectOrderSuccess": "%%%.withdraw.makeDirectOrderSuccess%%%",
         "makeDirectOrderFailed": "%%%.withdraw.makeDirectOrderFailed%%%",
         "info": {
-            "title": "%%%.withdraw.info.title%%%",
-            "desc1": "%%%.withdraw.info.desc1%%%",
-            "desc4": "%%%.withdraw.info.desc4%%%"
+            "content": "%%%.withdraw.info.content%%%"
         },
         "what": {
             "title": "%%%.withdraw.what.title%%%",
@@ -4269,16 +4200,12 @@
     },
     "transfer": {
         "info": {
-            "title": "%%%.transfer.info.title%%%",
-            "desc1": "%%%.transfer.info.desc1%%%",
-            "desc2": "%%%.transfer.info.desc2%%%"
+            "content": "%%%.transfer.info.content%%%"
         }
     },
     "transferCrypto": {
         "info": {
-            "title": "%%%.transferCrypto.info.title%%%",
-            "desc1": "%%%.transferCrypto.info.desc1%%%",
-            "desc2": "%%%.transferCrypto.info.desc2%%%"
+            "content": "%%%.transferCrypto.info.content%%%"
         }
     },
     "deposit": {

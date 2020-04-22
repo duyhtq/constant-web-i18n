@@ -230,7 +230,9 @@ export default {
     investDesc: 'Earn 7% interest fully secured.',
     borrow: 'Borrow',
     borrowDesc: 'Your rates. Your terms. No credit checks. Crypto-backed.',
-    staking: 'Staking <sup>NEW</sup>',
+    borrowCoin: 'Crypto Credit <sup>NEW</sup>',
+    borrowCoinDesc: 'Borrow cash, get crypto. No exchanges.',
+    staking: 'Staking',
     stakingDesc: 'Earn 6-50% APR on a Constant node. Low minimums. Withdraw anytime.',
   },
   headerBar: {
@@ -1890,6 +1892,7 @@ export default {
             cancel: 'Go back',
           },
           cancelDepositMatched: {
+            message: 'Your successfully cancelled to up.',
             messageConfirm:
               'Are you sure you want to cancel your top up?',
             confirm: 'Yes, cancel',
@@ -1963,6 +1966,11 @@ export default {
             confirm: 'Yes',
             cancel: 'No',
           },
+          cancelBorrow: {
+            messageConfirm:  'Are you sure you want to cancel your borrow?',
+            confirm: 'Yes',
+            cancel: 'No',
+          },
         },
         confirm: {
           batch: {
@@ -1973,6 +1981,7 @@ export default {
           },
         },
         alert: {
+          cancelBorrowSuccess: 'You successfully cancelled borrow',
           deleteSavingSuccess: 'You successfully deleted investment',
           deleteSavingFailed: 'Failed To delete Invest Saving',
           depositSavingSuccess: 'You successfully invested Constant.',
@@ -3815,7 +3824,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         <p>Fast and easy crypto credit</p>
         <h2>Trade the margin.</h2>
         <h2>Skip the exchange.</h2>
-        <h2>Borrow against 40+ cryptos.</h2>
+        <h2>Borrow against 60+ cryptos.</h2>
         <p/>
         <p>Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.</p>
       `,
@@ -3881,18 +3890,18 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       },
       what: {
         title: 'Why borrow with us?',
-        whatCaption0: 'Instant loans',
-        whatCaption1: 'Crypto for cash',
-        whatCaption2: '2% annualized interest',
+        whatCaption0: 'Set your own rates',
+        whatCaption1: 'No exchanges',
+        whatCaption2: 'Multiple pricing oracles',
         whatCaption3: 'Guaranteed approval',
         whatDesc0: `
-          <p>Our loan mechanism is secured and automated by smart contracts. No lengthy processing times - the money you need is in your account within the hour.</p>
+          <p>Our P2P matching algorithm allows you to tap into true market demand. Choose the market rate to guarantee a match, or go higher to match even faster.</p>
         `,
         whatDesc1: `
-          <p>Secure your loan with BTC or ETH and receive USD - all without needing to sell your crypto. Enjoy liquidity without needing to liquidate.</p>
+          <p>We match you with an investor and then source your chosen cryptocurrency at the best rates. No expensive middlemen. No trading fees.</p>
         `,
         whatDesc2: `
-          <p>Borrow as much as you want, and take as long as you need. Enjoy flexible repayments and the kindest interest rate on the market.</p>
+          <p>Our pricing algorithm searches multiple exchanges to find you the best price, saving you time and money. We compare the market so you can focus on trading.</p>
         `,
         whatDesc3: `
           <p>Constant is for everyone. No credit scoring, background checks or month-long waiting games for approval.</p>
@@ -4120,7 +4129,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         notSupportBech32: 'BTC bech32 not supported',
         rangeInterestRate: 'Interest rate must be greater than {min}% and less than {max}%',
         rangeMarketRate: 'Please choose the market rate or higher so you’re guaranteed to match with an investor.',
-        notEnoughCollateral: 'You don’t have enough {symbol} to use as collateral. Please deposit {amount} {symbol} to complete your loan.',
+        notEnoughCollateral: 'You don’t have enough {symbol} to use as collateral. Please deposit {amount} {symbol} to complete your loan',
+        notEnoughBalance: 'Please deposit sufficient collateral to secure your loan request',
+        notEnoughCollateralLink: ' here.'
       },
       depositCollateral: {
         collateralTypeLabel: 'Collateral type',
@@ -4159,7 +4170,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         payCollateral: 'Pay',
         payOffLoan: 'Repay',
         depositMatched: 'Top up',
-        rewardApply: 'Reward',
+        redeemApply: 'Redeem STAR',
         cancelDepositMatched: 'Cancel Deposit',
         cashback: 'Cash back',
         collateral: 'Collateral',
@@ -4171,6 +4182,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         partialMatchesDesc: 'Some loan requests may be split into smaller amounts to fill multiple investment orders. The platform will keep trying to match you completely for the duration of your term.',
         status: 'Status',
         allStatus: 'All',
+        cancelBorrow: 'Cancel',
         mapStatus: {
           pending: 'Pending',
           recieved: 'Received',
@@ -4212,6 +4224,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           liquidateFailed: 'Liquidate Failed',
           payoffPrvPending: 'Payoff Pending',
           payPrvPending: 'Payoff Pending',
+          cancelled: 'Cancelled',
         },
         mapStatus2: {
           pending: 'Pending',
@@ -4281,10 +4294,13 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           depositSuccess: 'Your deposit was completed successfully',
         },
         itemMatched: {
-          matchedAmount: 'Amount',
-          filledCollateralAmount: 'Filled Collateral Amount',
+          matchedAmount: 'Matched (USD)',
+          matchedAmountDesc: 'The amount of USD you borrowed. This might be less than your original order if you only got a partial match.',
+          filledCollateralAmount: 'Bought (Crypto)',
+          filledCollateralAmountDesc: 'How much crypto we bought using your USD loan. Depending on the final sale price, this might be a bit less than your original order',
           maxCollateralAmount: 'Max Collateral',
-          filledAmount: 'Filled Amount',
+          filledAmount: 'Used (USD)',
+          filledAmountDesc: 'The amount of USD we used to buy your chosen crypto. If we pay less than the matched amount, we\'ll return the difference to your account.',
           amount: 'Amount',
           interest: 'Interest',
           collateral: 'Collateral',
@@ -5731,116 +5747,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     hello: `
       <strong>Hello {name}</strong>.<br/>Let's see how your money is doing today.
     `,
-    verifyKyc: 'Please verify your ID to start your free trial.',
-  },
-  borrow: {
-    contact: {
-      title: 'Get the capital you need for your PO, even when banks say no.',
-      desc: `
-        <p>At a low, simple and transparent <strong>0.5% per week</strong>.</p>
-      `,
-      form: {
-        placeholder: {
-          companyName: 'What\'s the name of your company?',
-          poName: 'What\'s the PO value we can help fund?',
-          companyExciting: 'What\'s exciting about your company today?',
-          companyTarget: 'What\'s your company looking forward to?',
-          email: 'Your email address',
-          phone: 'Your phone number',
-        },
-        btnSubmit: 'FINANCE MY PURCHASE ORDER',
-        alert: {
-          success: 'Your request is sent successfully',
-          failed: 'Your request was failed',
-        },
-      },
-    },
-    what: {
-      whatCaption0: '24 hour turnaround',
-      whatCaption1: 'No credit check on you or your business',
-      whatCaption2: 'The world’s lowest PO financing rate',
-      whatCaption3: 'No limit on your growth',
-      whatTitle: 'What can you do with Constant?',
-      whatTitle0: 'Save in USD',
-
-      whatTitle1: 'Up to 130M USD',
-      whatTextLink1: 'Read the full policy',
-      whatLink1: '/privacy-policy',
-      whatDesc1:
-        '<p>Banks require good credit based on a solid financial history. That’s not always possible for young businesses. That’s why Constant finances loans based on the creditworthiness of your customers.</p>',
-
-      whatTitle2: 'By the US Government',
-      whatTitle3: 'No minimum deposit',
-      whatDesc0:
-        '<p>Banks can take weeks or even months to approve a business loan.  Your PO can’t wait that long.  Constant helps you seize that opportunity.</p>',
-
-      whatDesc2:
-        '<p>The beauty of being 100% digital is that we can offer low interest rates on a global scale. No matter how big or small your business is.</p>',
-      whatDesc3:
-        '<p>Bank loans lack flexibility. If you need more cash, you’ll need a new loan. Constant gives you a line of credit based on your sales volume, and your track record of growth.</p>',
-      whatMore0: 'How we guarantee zero risk high returns',
-      whatMore1: 'How we protect your money',
-      whatMore2: 'How to pick a plan that’s right for you',
-      whatMore3: 'How people are saving with Constant',
-    },
-    howItWorks: {
-      step1: 'STEP 1',
-      title1: 'SECURE A PURCHASE ORDER FROM YOUR CUSTOMER',
-      desc1:
-        'Congrats! This is a growth opportunity that you can easily seize.',
-      step2: 'STEP 2',
-      title2: 'APPLY FOR CONSTANT FINANCING ONLINE',
-      desc2:
-        'Apply in less than 5 minutes by submitting the PO, with basic details about your business and customers.',
-      step3: 'STEP 3',
-      title3: 'GET THE CAPITAL TO FULFILL YOUR PO',
-      desc3:
-        'Enjoy quick turnaround. Finance up to 100% of your POs and stay competitive.  Rinse and repeat for your next order.',
-    },
-    blockTitle2: 'How it works',
-    blockDesc2: `
-      <h5>Secure cash with purchase orders.</h5>
-      <br />
-      <h5>We understand that money is fast flowing. If you sell products to reputable clients - established companies, government organizations, or similar - we can fund you the working capital you need to fulfill those orders, in confidence of future payment from your client.</h5>
-    `,
-    brands: {
-      title: 'Our clients work with some of the world’s leading brands',
-    },
-  },
-  trade: {
-    title: 'Trade Constant.',
-    desc:
-      'Protect yourself against volatility and access smarter financial solutions. Constant Coin (CONST) is the stablecoin that at the heart of all our services: a global USD bank account, high income investments and fair, flexible loans. CONST is fully backed by USD, holds its value at 1:1, and can be redeemed for USD at anytime. You can get CONST for Bitcoin, Ether, fiat and more, by using the reputable exchanges listed below.',
-    coinmarket: {
-      title: 'Follow the growth of Constant',
-      desc:
-        'Get real-time prices, review historical charts, and track movement and volume across all exchanges.',
-    },
-  },
-  constantChain: {
-    info: {
-      title: 'Constant Chain',
-      desc:
-        'While Constant Coin (CONST) initially runs on the Ethereum blockchain as an ERC20 token, the long term plan is to for it to run on its own blockchain.  This is important — by building its own blockchain from scratch, we’ll be able to tailor it to its unique features such as privacy and price stability.  It will allow us to test new ideas, algorithms and mechanisms faster — especially those that Ethereum doesn’t fit, such as fast Zero-Knowledge Proof generation.',
-    },
-    what: {
-      whatCaption0: 'Read Constant source code',
-      whatCaption1: 'Download Constant Wallet',
-      whatCaption2: 'Run a Constant node',
-      whatCaption3: 'Explore Constant Block Explorer',
-      whatDesc0:
-        'Constant Chain is open-source; its design is public, nobody owns or controls COnstant and everyone can take part.',
-      whatDesc1:
-        'Constant Chain is open-source; its design is public, nobody owns or controls COnstant and everyone can take part.',
-      whatDesc2:
-        'Constant Chain is open-source; its design is public, nobody owns or controls COnstant and everyone can take part.',
-      whatDesc3:
-        'Constant Chain is open-source; its design is public, nobody owns or controls COnstant and everyone can take part.',
-      whatButton0: 'Browse Github',
-      whatButton1: 'Download',
-      whatButton2: 'Download',
-      whatButton3: 'Explore',
-    },
   },
   newHome: {
     banner: {
@@ -5982,51 +5888,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
             'Constant is for everyone. No credit scoring, background checks or month-long waiting games for approval.',
         },
         link: 'Get cash for your crypto',
-      },
-    },
-  },
-  constantCoin: {
-    info: {
-      title: 'Constant Coin',
-      desc:
-        'Borderless banking requires a borderless currency. Constant is a digital dollar, a stablecoin pegged 1:1 with the USD - designed to blend the best of the existing financial system with the fairness and freedom now possible with blockchain technology. Most importantly, anyone can own Constant, and access the financial solutions it unlocks. Constant is available via local banks as well as international cryptocurrency exchanges.',
-    },
-    what: {
-      whatCaption0: 'FDIC insured',
-      whatCaption1: 'Built on Ethereum',
-      whatCaption2: '1 Constant = 1 USD',
-      whatCaption3: 'Borderless',
-      whatDesc0:
-        'Every Constant Coin is fully backed by USD, held in a series of FDIC-insured vaults, for coverage of $5M per account. Guaranteed by the US government.',
-      whatDesc1:
-        'Constant is secured by the combined computing power of the Ethereum network. Transactions are executed using publicly verifiable smart contracts.',
-      whatDesc2:
-        'The value of Constant is fixed at 1:1 with the USD. Redeemable for fiat at any time, Constant helps preserve the value of volatile currencies.',
-      whatDesc3:
-        'Anyone can own Constant. That means anyone can have a global USD account, enjoy free worldwide transfers, and access smarter financial solutions.',
-      whatButton0: 'How we protect your money',
-      whatButton1: 'View our smart contract',
-      whatButton2: 'How we guarantee stability',
-      whatButton3: 'Get Constant',
-    },
-    howItWorks: {
-      title: 'More about the Constant Coin',
-      desc:
-        'Constant was designed to be a coin for the community, and will continue to be. We tackle user questions and publish development updates frequently. If you have a question or an idea that you want us to explore, drop us message on [telegram].',
-      link: 'Browse all blog posts >',
-      items: {
-        date1: 'March 19, 2019',
-        title1: 'Introduction to the Constant Chain',
-        date2: 'March 19, 2019',
-        title2: 'Introduction to the Constant Chain',
-        date3: 'March 19, 2019',
-        title3: 'Introduction to the Constant Chain',
-        date4: 'March 19, 2019',
-        title4: 'Introduction to the Constant Chain',
-        date5: 'March 19, 2019',
-        title5: 'Introduction to the Constant Chain',
-        date6: 'March 19, 2019',
-        title6: 'Introduction to the Constant Chain',
       },
     },
   },
@@ -6211,41 +6072,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
             <p>Peter has run social media for a major university in the US and worked on experiential marketing for brands like Heineken, McVities, and Nickelodeon. He previously spent one year teaching creative advertising at Yitong college in China.</p>
           `
         },
-        // leader11: {
-        //   name: 'Daniel Nguyen',
-        //   position: 'Risk-management',
-        //   description: '<p>Daniel works to keep Constant airtight. He spent many years handling Asset Liability Management for some of Vietnam’s largest banks, analyzing asset performance, evaluating risk and implementing policies.  With Constant, he hopes to create the new future of banking in emerging economies.  He holds a Masters degree in Investment and Finance from Bournemouth University, UK.</p>'
-        // },
-        // leader12: {
-        //   name: 'Duc Dinh',
-        //   position: 'Stability',
-        //   description: '<p>Duc is enjoying the rapid evolution of his design mindset as he writes decentralized concepts into code.  He has many years of experience designing and implementing scalable non-trivial systems, including ad serving with Eclick, automated marketing in micro-services architecture with Agency Revolution, and recommendation engines with Aduro Inc.</p>'
-        // },
-        // leader13: {
-        //   name: 'Jason Bui',
-        //   position: 'Payments',
-        //   description: '<p>Jason works on payment applications at Constant, aimed at energizing economies by bringing the world closer together.  Prior to joining Constant, Jason spent many years in the financial services industry, splitting his time between the US and South East Asia.  He specializes in cross-border payment platforms that connect businesses, professionals, countries and currencies. Jason holds a Marketing and Communications degree from Baruch College, New York.</p>'
-        // },
-        // leader15: {
-        //   name: 'An Nguyen',
-        //   position: 'UX',
-        //   description: '<p>An leads design at Constant. He understands that the best technology is invisible, and that the best technology is useless if no one is using it.  As a full-time digital product designer, he specializes in creating intuitive, responsive, delightful meeting points for users to come face to face with new ways of thinking.  As a some-time Muso-kai karate instructor and one-time bodyguard for a monk, he specializes in adapting to tricky situations, and in getting back up again.</p>'
-        // },
-        // leader16: {
-        //   name: 'Duy Bao',
-        //   position: 'Stability',
-        //   description: '<p>Bao loves finding new ways to build software that changes how people interact with the world.  He spent many years studying AI and Machine Learning, and creating software that autonomously improves over time.  Eventually, he discovered Blockchain and found himself enjoying this new paradigm of thinking.  Now as a Constant engineer, he finds macroeconomics fascinating and takes pleasure in turning its abstract concepts into code.</p>'
-        // },
-        // leader17: {
-        //   name: 'Dung Van',
-        //   position: 'Scalability',
-        //   description: '<p>Dung is interested in Internet technology and distributed systems, with extensive experience in building large scale systems.  Prior to Constant, he designed and built scalable systems for transcoding video and crawling massive social media feeds.  For the last few years, he has fallen into the blockchain hole, developing for both Bitcoin and Ethereum ecoystems.  He now works on consensus protocol at Constant, aiming to build a secure, scalable, blockchain-powered financial system.</p>'
-        // },
-        // leader18: {
-        //   name: 'Khoa Tran',
-        //   position: 'Privacy',
-        //   description: '<p>Khoa is a researcher in the area of privacy and cryptography. His research interests focus on public-key cryptography, computational number theory, and computational algebraic geometry. He is currently working on zero-knowledge proofs that aim to preserve the anonymity and confidentiality of cryptocurrency transactions.</p>'
-        // },
       },
     },
     exchangePartners: {
@@ -6667,110 +6493,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       getBankBondSettingsFailed: 'Something went wrong. Please try again.'
     }
   },
-  payment: {
-    intro: `
-    <h1>Worldwide, instant, zero cost mass payments.</h1>
-    <br />
-    <h5>
-        Send and receive money instantly. Any amount, any number of people, anywhere in the world.
-        Pay suppliers, freelancers, automate your entire payroll - with a single click.
-    </h5>
-    <br />
-    <h5>Constant allows you to harness the power of global peer to peer technology to truly do business with the world.</h5>
-    <br />
-    <h5>No wait times, no transfer fees. Hello world.</h5>
-  `,
-    howItWorks: {
-      heading: 'How it works',
-      step1: '1',
-      title1: 'Deposit funds into your account',
-      desc1:
-        'Make a bank transfer of any amount to the Constant Vault. Your funds are fully insured by the FDIC.',
-      step2: '2',
-      title2: 'Upload your list of payees',
-      desc2:
-        'Download, fill in, then upload the template that we provide for your convenience.',
-      step3: '3',
-      title3: 'One click to send',
-      desc3:
-        'Your payments should arrive within minutes. Payees will receive an email notification with instructions on how to access their funds.',
-    },
-    what: {
-      whatCaption0: 'Free transfers. Low cost withdrawals.',
-      whatCaption1: 'Powered by the world',
-      whatCaption2: 'Send USD',
-      whatCaption3: 'Easy API integration',
-      whatDesc0: `
-        <p>The only fee you’ll ever have to pay with Constant is a small withdrawal fee of 0.25% - capped at $35, no matter the amount. We like to keep things simple and transparent.</p>
-      `,
-      whatDesc1: `
-        <p>Constant is built on blockchain technology. Thousands and thousands of nodes work together to secure and expedite every payment you send. Protect yourself against fraud and grow your business faster.</p>
-      `,
-      whatDesc2: `
-        <p>We convert every payment into USD, to protect both you and your payee from volatility. Of course, your recipient can also choose to withdraw their funds into any other local currency.</p>
-      `,
-      whatDesc3: `
-        <p>Constant is easily integrated into your existing infrastructure. Improve payee satisfaction, streamline costs, and unlock real-time payment visibility.</p>
-      `,
-    },
-    success: {
-      title: 'Customer Success Stories',
-      customer1: `
-      <div>
-        <h5 class="darkblue4">
-          Constant is our preferred solution for cross-border transactions. Paying international suppliers and clients is much less of a hassle now, and much more cost-effective.
-        </h5>
-        <br /><h3 class="bold clearBottom">Liz Nguyen</h3>
-        <p>CEO of Dropship Vendor Group, supplier to the world’s leading brands.</p>
-      </div>
-      `,
-      customer2: `
-      <div>
-        <h5 class="darkblue4">
-          E-commerce provider of technology powered office solutions We just started using Constant to automate payroll to our employees in the US, Vietnam, China and Netherlands. Our employees like having the option to hold USD, and haven’t had problems withdrawing to their respective currencies.
-        </h5>
-        <br /><h3 class="bold clearBottom">Justin Lucas</h3>
-        <p>GM at Autonomous.</p>
-      </div>
-      `,
-      customer3: '',
-    },
-    why: {
-      title: 'Why Constant?',
-    },
-    faqs: {
-      title: 'Frequently Asked Questions',
-      q1: 'Do you operate globally?',
-      q2: 'How long does it take to withdraw?',
-      q3: 'How do you prevent fraud?',
-      q4: 'How do you prevent chargebacks?',
-      q5: 'What makes you a better choice than other payment solutions?',
-      q6: 'Is Constant taxable?',
-      a1:
-        'Yes, we support all countries and currencies in the world. All you need is an Internet connection.',
-      a2:
-        'For US, Hong Kong or Vietnam customers, it would take up to 1 business day. For international customers, the process would take 2-3 business days. It depends a lot on how quickly your bank processes transfers.',
-      a3:
-        'Your funds are put in a trust vault overseen by PrimeTrust, an accredited US financial institution, and the trust is FDIC insured up to $5,000,000. Prior to registering for a Constant account, you will be asked to do KYC (Know Your Customer) to comply with financial regulations, which protects you against fraud. And thanks to the immutable blockchain ledger, Constant is extremely difficult to hack.',
-      a4:
-        'Constant is powered by unstoppable smart contracts and built upon the Ethereum blockchain, an immutable digital ledger that acts as a public record of verifiable transactions.',
-      a5:
-        'Constant allows you to move your money anywhere and anytime for free (with a minimal withdrawal fee of 0.25%). Constant is also part of a greater ecosystem, so you can choose to put your funds into one of our fixed deposits and earn up to 7% annually.',
-      a6:
-        'Receiving Constant is similar to receiving USD. If the source of funds is not taxable then receiving Constant is not taxable. However, please note that you are responsible for determining any and all taxes assessed, incurred, or required to be collected, paid, or withheld for any reason in connection with the use of our software and services.',
-    },
-    ready: {
-      question: 'Ready to run your global business better?',
-      button: 'Let\'s Talk',
-    },
-    form: {
-      lName: 'Your Name',
-      lEmail: 'Your Email',
-      lCompany: 'Your Company',
-      submitted:
-        'Thank you. Our team will be in touch within 24 hours to discuss how Constant can work for you.',
-    },
-  },
   landingPro: {
     title1: 'Constant Pro, the world’s first peer-to-peer lending for professionals, is coming.',
     desc1: 'Constant Pro offers an intuitive interface with real time orderbooks, charting tools, trade history, and a simple order process so you can trade on interest rates — within a fully-secured platform, backed by a combination of FDIC, smart contracts, and over-collateralization',
@@ -6915,6 +6637,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     withdrawCollateralNote: `
     <p class="title">* About collateral issue, please ping <a href="https://t.me/andy_9210" className="underline bold" target="_blank"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>
     `,
+    unstakingNote: `
+    <p class="title">* It depends on Incognito chain. Read more <a href="https://incognito.org/t/the-algorithm-of-probability-for-node-selection/836" className="underline bold" target="_blank"><strong>here</strong></a>.</p>
+    `,
     holidaysNote: `
     <p class="title">* Our service time may also be affected by public and banking holidays in the US and your local country.</p>
     `,
@@ -6965,6 +6690,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       title1: `ERC20 collaterals <strong>not</strong> deposited in BitGo / BTC, ETH, BEP2, TOMO, BEAM, XZC: <$10,000`,
       title2: `ERC20 collaterals <strong>not</strong> deposited in BitGo / BTC, ETH, BEP2, TOMO, BEAM, XZC: >$10,000`,
       title3: `<a href="https://docs.google.com/spreadsheets/d/1VIiNXdg7LTJXuUHhtYw2nEH14q4d9rUjW_9QH2zIyzU/edit#gid=0" target="_blank" class="underline"><strong>ERC20 collaterals deposited in BitGo</strong></a> / Others`,
+    },
+    unstaking: {
+      head1: 'Unstaking',
+      head2: 'Tokens received in your balance',
     },
     matchingFee: {
       head1: 'Matching fee',
@@ -7230,9 +6959,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       question12: 'How does Constant make money?',
       answer12: 'Flex deposits earn interest through an API with Compound Finance, another lending platform. Compound sets interest rates according to supply and demand, and Constant will make a slim profit on any difference between the Flex and Compound rates.'
     },
-  },
-  testimonial: {
-    title: 'Our Clients Love Us',
   },
   yourReferral: {
     v1: {
@@ -7543,7 +7269,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         withdrawFailed: 'Something went wrong. Please try again.',
         withdrawAddressFailed: 'Your wallet address invalid. Please try again.',
         withdrawSuccess: 'Your un-taking was completed successfully.',
-        returnAmount: 'Your {amount} {currency} un-taking will return to your coin balance.',
+        returnAmount: 'Your {amount} unstaked {currency} will return to your coin balance.',
       },
       withdraw: {
         title: 'Withdraw your reward',
@@ -7698,50 +7424,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       press12: {
         name: '',
         desc: '<p>It\'s a great service, with free deposits and withdrawals, extremely fast responding customer support and a transparent team.</p>'
-      }
-    },
-    desc: {
-      title: 'In the News',
-      content: 'We’re proud to feature in many prominent finance and technology publications. From news to reviews, find out what the journalists, pundits, and experts have to say about the Constant peer-to-peer lending platform.'
-    }
-  },
-  ourPartner: {
-    partner: {
-      partner1: {
-        name: 'Hacker Noon',
-        desc: `<p>The traditional loan agreement has been replaced by an unstoppable Ethereum smart contract without any possibility of downtime, fraud, or third-party interference. Fully-secured, blockchain-enabled P2P lending is our contribution to a bankless banking system.</p>`,
-      },
-      partner2: {
-        name: 'Coin98',
-        desc: `<p>Chắc hẳn sẽ có những lúc chúng ta rơi vào hoàn cảnh khi đang HODL một đồng coin nào đó, nhưng lại thấy 1 cơ hội khác trong khi quỹ vốn thì đã hết. Constant sẽ giúp anh em huy động được một lượng cash (tiền mặt) nhất định để vào được kèo mới nhưng không phải cash out (bán) đồng coin đang HODL</p>`,
-      },
-      partner3: {
-        name: 'Techworm',
-        desc: `<p>The best thing about Constant, however, is the security the lending platform has in place. Every loan is fully secured and backed in multiple ways. While on loan it’s protected by borrower collateral, and while waiting to be matched it’s protected by a $130M insurance policy.</p>`,
-      },
-      partner4: {
-        name: 'Blockonomi',
-        desc: `<p>Constant has created a platform that cuts banks out of the lending equation and allows anyone in the world to create loans on whatever terms they like. This is a big shift away from the established lending system, and it could be a big benefit for both borrowers and lenders</p>`,
-      },
-      partner5: {
-        name: 'Zero Hedge',
-        desc: `<p>Lenders can choose their terms, no credit check, and no nonsense – and find borrowers. Programming a system like this using the US banking system, would be expensive, cumbersome, time consuming, and who knows what it might look like after all the regulatory approvals.</p>`,
-      },
-      partner6: {
-        name: 'ZyCrypto',
-        desc: `<p>Constant is different in that users can be confident in the fact that each transaction is fully secured. Every loan is collateral backed. Investor funds are held in escrow accounts when not on loan. This level of security sets Constant apart from other platforms.</p>`,
-      },
-      partner7: {
-        name: 'Blockonomi',
-        desc: `<p>Constant has created a platform that cuts banks out of the lending equation and allows anyone in the world to create loans on whatever terms they like. This is a big shift away from the established lending system, and it could be a big benefit for both borrowers and lenders</p>`,
-      },
-      partner8: {
-        name: 'Zero Hedge',
-        desc: `<p>Lenders can choose their terms, no credit check, and no nonsense – and find borrowers. Programming a system like this using the US banking system, would be expensive, cumbersome, time consuming, and who knows what it might look like after all the regulatory approvals.</p>`,
-      },
-      partner9: {
-        name: 'ZyCrypto',
-        desc: `<p>Constant is different in that users can be confident in the fact that each transaction is fully secured. Every loan is collateral backed. Investor funds are held in escrow accounts when not on loan. This level of security sets Constant apart from other platforms.</p>`,
       }
     },
     desc: {
@@ -8530,21 +8212,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         point: '{point} points',
         desc: 'You need'
       },
-      level1: {
-        title: 'Gold Member',
-        point: '(25,000 points)',
-        desc: ''
-      },
-      level2: {
-        title: 'Platinum Member',
-        point: '(50,000 points)',
-        desc: ''
-      },
-      level3: {
-        title: 'Diamond Member',
-        point: '(100,000 points)',
-        desc: ''
-      },
     },
     intro: {
       title: 'Membership Rewards',
@@ -8578,16 +8245,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       level1: 'Gold',
       level2: 'Platinum',
       level3: 'Diamond',
-    },
-    get: {
-      level1: 'Get 100 CONST',
-      level2: 'Get 1 STAR',
-      level3: 'Get 2 STAR',
-    },
-    take: {
-      level1: 'Take 100 CONST',
-      level2: 'Take 1 STAR',
-      level3: 'Take 2 STAR',
     },
     desc: {
       level1: `<h4>What you get:</h4>

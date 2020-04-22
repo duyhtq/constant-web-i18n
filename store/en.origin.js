@@ -221,6 +221,8 @@
         "investDesc": "%%%.lending.investDesc%%%",
         "borrow": "%%%.lending.borrow%%%",
         "borrowDesc": "%%%.lending.borrowDesc%%%",
+        "borrowCoin": "%%%.lending.borrowCoin%%%",
+        "borrowCoinDesc": "%%%.lending.borrowCoinDesc%%%",
         "staking": "%%%.lending.staking%%%",
         "stakingDesc": "%%%.lending.stakingDesc%%%"
     },
@@ -1595,6 +1597,7 @@
                         "cancel": "%%%.me.proSaving.listApplications.dialog.cancelInvestment.cancel%%%"
                     },
                     "cancelDepositMatched": {
+                        "message": "%%%.me.proSaving.listApplications.dialog.cancelDepositMatched.message%%%",
                         "messageConfirm": "%%%.me.proSaving.listApplications.dialog.cancelDepositMatched.messageConfirm%%%",
                         "confirm": "%%%.me.proSaving.listApplications.dialog.cancelDepositMatched.confirm%%%",
                         "cancel": "%%%.me.proSaving.listApplications.dialog.cancelDepositMatched.cancel%%%"
@@ -1663,6 +1666,11 @@
                         },
                         "confirm": "%%%.me.proSaving.listApplications.dialog.autoRenewInvestment.confirm%%%",
                         "cancel": "%%%.me.proSaving.listApplications.dialog.autoRenewInvestment.cancel%%%"
+                    },
+                    "cancelBorrow": {
+                        "messageConfirm": "%%%.me.proSaving.listApplications.dialog.cancelBorrow.messageConfirm%%%",
+                        "confirm": "%%%.me.proSaving.listApplications.dialog.cancelBorrow.confirm%%%",
+                        "cancel": "%%%.me.proSaving.listApplications.dialog.cancelBorrow.cancel%%%"
                     }
                 },
                 "confirm": {
@@ -1674,6 +1682,7 @@
                     }
                 },
                 "alert": {
+                    "cancelBorrowSuccess": "%%%.me.proSaving.listApplications.alert.cancelBorrowSuccess%%%",
                     "deleteSavingSuccess": "%%%.me.proSaving.listApplications.alert.deleteSavingSuccess%%%",
                     "deleteSavingFailed": "%%%.me.proSaving.listApplications.alert.deleteSavingFailed%%%",
                     "depositSavingSuccess": "%%%.me.proSaving.listApplications.alert.depositSavingSuccess%%%",
@@ -3166,7 +3175,9 @@
                 "notSupportBech32": "%%%.home.constantC2CLoan.errorMessages.notSupportBech32%%%",
                 "rangeInterestRate": "%%%.home.constantC2CLoan.errorMessages.rangeInterestRate%%%",
                 "rangeMarketRate": "%%%.home.constantC2CLoan.errorMessages.rangeMarketRate%%%",
-                "notEnoughCollateral": "%%%.home.constantC2CLoan.errorMessages.notEnoughCollateral%%%"
+                "notEnoughCollateral": "%%%.home.constantC2CLoan.errorMessages.notEnoughCollateral%%%",
+                "notEnoughBalance": "%%%.home.constantC2CLoan.errorMessages.notEnoughBalance%%%",
+                "notEnoughCollateralLink": "%%%.home.constantC2CLoan.errorMessages.notEnoughCollateralLink%%%"
             },
             "depositCollateral": {
                 "collateralTypeLabel": "%%%.home.constantC2CLoan.depositCollateral.collateralTypeLabel%%%",
@@ -3205,7 +3216,7 @@
                 "payCollateral": "%%%.home.constantC2CLoan.listApplications.payCollateral%%%",
                 "payOffLoan": "%%%.home.constantC2CLoan.listApplications.payOffLoan%%%",
                 "depositMatched": "%%%.home.constantC2CLoan.listApplications.depositMatched%%%",
-                "rewardApply": "%%%.home.constantC2CLoan.listApplications.rewardApply%%%",
+                "redeemApply": "%%%.home.constantC2CLoan.listApplications.redeemApply%%%",
                 "cancelDepositMatched": "%%%.home.constantC2CLoan.listApplications.cancelDepositMatched%%%",
                 "cashback": "%%%.home.constantC2CLoan.listApplications.cashback%%%",
                 "collateral": "%%%.home.constantC2CLoan.listApplications.collateral%%%",
@@ -3217,6 +3228,7 @@
                 "partialMatchesDesc": "%%%.home.constantC2CLoan.listApplications.partialMatchesDesc%%%",
                 "status": "%%%.home.constantC2CLoan.listApplications.status%%%",
                 "allStatus": "%%%.home.constantC2CLoan.listApplications.allStatus%%%",
+                "cancelBorrow": "%%%.home.constantC2CLoan.listApplications.cancelBorrow%%%",
                 "mapStatus": {
                     "pending": "%%%.home.constantC2CLoan.listApplications.mapStatus.pending%%%",
                     "recieved": "%%%.home.constantC2CLoan.listApplications.mapStatus.recieved%%%",
@@ -3257,7 +3269,8 @@
                     "liquidateDone": "%%%.home.constantC2CLoan.listApplications.mapStatus1.liquidateDone%%%",
                     "liquidateFailed": "%%%.home.constantC2CLoan.listApplications.mapStatus1.liquidateFailed%%%",
                     "payoffPrvPending": "%%%.home.constantC2CLoan.listApplications.mapStatus1.payoffPrvPending%%%",
-                    "payPrvPending": "%%%.home.constantC2CLoan.listApplications.mapStatus1.payPrvPending%%%"
+                    "payPrvPending": "%%%.home.constantC2CLoan.listApplications.mapStatus1.payPrvPending%%%",
+                    "cancelled": "%%%.home.constantC2CLoan.listApplications.mapStatus1.cancelled%%%"
                 },
                 "mapStatus2": {
                     "pending": "%%%.home.constantC2CLoan.listApplications.mapStatus2.pending%%%",
@@ -3324,9 +3337,12 @@
                 },
                 "itemMatched": {
                     "matchedAmount": "%%%.home.constantC2CLoan.listApplications.itemMatched.matchedAmount%%%",
+                    "matchedAmountDesc": "%%%.home.constantC2CLoan.listApplications.itemMatched.matchedAmountDesc%%%",
                     "filledCollateralAmount": "%%%.home.constantC2CLoan.listApplications.itemMatched.filledCollateralAmount%%%",
+                    "filledCollateralAmountDesc": "%%%.home.constantC2CLoan.listApplications.itemMatched.filledCollateralAmountDesc%%%",
                     "maxCollateralAmount": "%%%.home.constantC2CLoan.listApplications.itemMatched.maxCollateralAmount%%%",
                     "filledAmount": "%%%.home.constantC2CLoan.listApplications.itemMatched.filledAmount%%%",
+                    "filledAmountDesc": "%%%.home.constantC2CLoan.listApplications.itemMatched.filledAmountDesc%%%",
                     "amount": "%%%.home.constantC2CLoan.listApplications.itemMatched.amount%%%",
                     "interest": "%%%.home.constantC2CLoan.listApplications.itemMatched.interest%%%",
                     "collateral": "%%%.home.constantC2CLoan.listApplications.itemMatched.collateral%%%",
@@ -4275,94 +4291,7 @@
         }
     },
     "yourSaving": {
-        "hello": "%%%.yourSaving.hello%%%",
-        "verifyKyc": "%%%.yourSaving.verifyKyc%%%"
-    },
-    "borrow": {
-        "contact": {
-            "title": "%%%.borrow.contact.title%%%",
-            "desc": "%%%.borrow.contact.desc%%%",
-            "form": {
-                "placeholder": {
-                    "companyName": "%%%.borrow.contact.form.placeholder.companyName%%%",
-                    "poName": "%%%.borrow.contact.form.placeholder.poName%%%",
-                    "companyExciting": "%%%.borrow.contact.form.placeholder.companyExciting%%%",
-                    "companyTarget": "%%%.borrow.contact.form.placeholder.companyTarget%%%",
-                    "email": "%%%.borrow.contact.form.placeholder.email%%%",
-                    "phone": "%%%.borrow.contact.form.placeholder.phone%%%"
-                },
-                "btnSubmit": "%%%.borrow.contact.form.btnSubmit%%%",
-                "alert": {
-                    "success": "%%%.borrow.contact.form.alert.success%%%",
-                    "failed": "%%%.borrow.contact.form.alert.failed%%%"
-                }
-            }
-        },
-        "what": {
-            "whatCaption0": "%%%.borrow.what.whatCaption0%%%",
-            "whatCaption1": "%%%.borrow.what.whatCaption1%%%",
-            "whatCaption2": "%%%.borrow.what.whatCaption2%%%",
-            "whatCaption3": "%%%.borrow.what.whatCaption3%%%",
-            "whatTitle": "%%%.borrow.what.whatTitle%%%",
-            "whatTitle0": "%%%.borrow.what.whatTitle0%%%",
-            "whatTitle1": "%%%.borrow.what.whatTitle1%%%",
-            "whatTextLink1": "%%%.borrow.what.whatTextLink1%%%",
-            "whatLink1": "%%%.borrow.what.whatLink1%%%",
-            "whatDesc1": "%%%.borrow.what.whatDesc1%%%",
-            "whatTitle2": "%%%.borrow.what.whatTitle2%%%",
-            "whatTitle3": "%%%.borrow.what.whatTitle3%%%",
-            "whatDesc0": "%%%.borrow.what.whatDesc0%%%",
-            "whatDesc2": "%%%.borrow.what.whatDesc2%%%",
-            "whatDesc3": "%%%.borrow.what.whatDesc3%%%",
-            "whatMore0": "%%%.borrow.what.whatMore0%%%",
-            "whatMore1": "%%%.borrow.what.whatMore1%%%",
-            "whatMore2": "%%%.borrow.what.whatMore2%%%",
-            "whatMore3": "%%%.borrow.what.whatMore3%%%"
-        },
-        "howItWorks": {
-            "step1": "%%%.borrow.howItWorks.step1%%%",
-            "title1": "%%%.borrow.howItWorks.title1%%%",
-            "desc1": "%%%.borrow.howItWorks.desc1%%%",
-            "step2": "%%%.borrow.howItWorks.step2%%%",
-            "title2": "%%%.borrow.howItWorks.title2%%%",
-            "desc2": "%%%.borrow.howItWorks.desc2%%%",
-            "step3": "%%%.borrow.howItWorks.step3%%%",
-            "title3": "%%%.borrow.howItWorks.title3%%%",
-            "desc3": "%%%.borrow.howItWorks.desc3%%%"
-        },
-        "blockTitle2": "%%%.borrow.blockTitle2%%%",
-        "blockDesc2": "%%%.borrow.blockDesc2%%%",
-        "brands": {
-            "title": "%%%.borrow.brands.title%%%"
-        }
-    },
-    "trade": {
-        "title": "%%%.trade.title%%%",
-        "desc": "%%%.trade.desc%%%",
-        "coinmarket": {
-            "title": "%%%.trade.coinmarket.title%%%",
-            "desc": "%%%.trade.coinmarket.desc%%%"
-        }
-    },
-    "constantChain": {
-        "info": {
-            "title": "%%%.constantChain.info.title%%%",
-            "desc": "%%%.constantChain.info.desc%%%"
-        },
-        "what": {
-            "whatCaption0": "%%%.constantChain.what.whatCaption0%%%",
-            "whatCaption1": "%%%.constantChain.what.whatCaption1%%%",
-            "whatCaption2": "%%%.constantChain.what.whatCaption2%%%",
-            "whatCaption3": "%%%.constantChain.what.whatCaption3%%%",
-            "whatDesc0": "%%%.constantChain.what.whatDesc0%%%",
-            "whatDesc1": "%%%.constantChain.what.whatDesc1%%%",
-            "whatDesc2": "%%%.constantChain.what.whatDesc2%%%",
-            "whatDesc3": "%%%.constantChain.what.whatDesc3%%%",
-            "whatButton0": "%%%.constantChain.what.whatButton0%%%",
-            "whatButton1": "%%%.constantChain.what.whatButton1%%%",
-            "whatButton2": "%%%.constantChain.what.whatButton2%%%",
-            "whatButton3": "%%%.constantChain.what.whatButton3%%%"
-        }
+        "hello": "%%%.yourSaving.hello%%%"
     },
     "newHome": {
         "banner": {
@@ -4481,45 +4410,6 @@
                     "desc": "%%%.newHome.subjects.borrow.desc3.desc%%%"
                 },
                 "link": "%%%.newHome.subjects.borrow.link%%%"
-            }
-        }
-    },
-    "constantCoin": {
-        "info": {
-            "title": "%%%.constantCoin.info.title%%%",
-            "desc": "%%%.constantCoin.info.desc%%%"
-        },
-        "what": {
-            "whatCaption0": "%%%.constantCoin.what.whatCaption0%%%",
-            "whatCaption1": "%%%.constantCoin.what.whatCaption1%%%",
-            "whatCaption2": "%%%.constantCoin.what.whatCaption2%%%",
-            "whatCaption3": "%%%.constantCoin.what.whatCaption3%%%",
-            "whatDesc0": "%%%.constantCoin.what.whatDesc0%%%",
-            "whatDesc1": "%%%.constantCoin.what.whatDesc1%%%",
-            "whatDesc2": "%%%.constantCoin.what.whatDesc2%%%",
-            "whatDesc3": "%%%.constantCoin.what.whatDesc3%%%",
-            "whatButton0": "%%%.constantCoin.what.whatButton0%%%",
-            "whatButton1": "%%%.constantCoin.what.whatButton1%%%",
-            "whatButton2": "%%%.constantCoin.what.whatButton2%%%",
-            "whatButton3": "%%%.constantCoin.what.whatButton3%%%"
-        },
-        "howItWorks": {
-            "title": "%%%.constantCoin.howItWorks.title%%%",
-            "desc": "%%%.constantCoin.howItWorks.desc%%%",
-            "link": "%%%.constantCoin.howItWorks.link%%%",
-            "items": {
-                "date1": "%%%.constantCoin.howItWorks.items.date1%%%",
-                "title1": "%%%.constantCoin.howItWorks.items.title1%%%",
-                "date2": "%%%.constantCoin.howItWorks.items.date2%%%",
-                "title2": "%%%.constantCoin.howItWorks.items.title2%%%",
-                "date3": "%%%.constantCoin.howItWorks.items.date3%%%",
-                "title3": "%%%.constantCoin.howItWorks.items.title3%%%",
-                "date4": "%%%.constantCoin.howItWorks.items.date4%%%",
-                "title4": "%%%.constantCoin.howItWorks.items.title4%%%",
-                "date5": "%%%.constantCoin.howItWorks.items.date5%%%",
-                "title5": "%%%.constantCoin.howItWorks.items.title5%%%",
-                "date6": "%%%.constantCoin.howItWorks.items.date6%%%",
-                "title6": "%%%.constantCoin.howItWorks.items.title6%%%"
             }
         }
     },
@@ -4919,65 +4809,6 @@
             "getBankBondSettingsFailed": "%%%.investbackedBond.alert.getBankBondSettingsFailed%%%"
         }
     },
-    "payment": {
-        "intro": "%%%.payment.intro%%%",
-        "howItWorks": {
-            "heading": "%%%.payment.howItWorks.heading%%%",
-            "step1": "%%%.payment.howItWorks.step1%%%",
-            "title1": "%%%.payment.howItWorks.title1%%%",
-            "desc1": "%%%.payment.howItWorks.desc1%%%",
-            "step2": "%%%.payment.howItWorks.step2%%%",
-            "title2": "%%%.payment.howItWorks.title2%%%",
-            "desc2": "%%%.payment.howItWorks.desc2%%%",
-            "step3": "%%%.payment.howItWorks.step3%%%",
-            "title3": "%%%.payment.howItWorks.title3%%%",
-            "desc3": "%%%.payment.howItWorks.desc3%%%"
-        },
-        "what": {
-            "whatCaption0": "%%%.payment.what.whatCaption0%%%",
-            "whatCaption1": "%%%.payment.what.whatCaption1%%%",
-            "whatCaption2": "%%%.payment.what.whatCaption2%%%",
-            "whatCaption3": "%%%.payment.what.whatCaption3%%%",
-            "whatDesc0": "%%%.payment.what.whatDesc0%%%",
-            "whatDesc1": "%%%.payment.what.whatDesc1%%%",
-            "whatDesc2": "%%%.payment.what.whatDesc2%%%",
-            "whatDesc3": "%%%.payment.what.whatDesc3%%%"
-        },
-        "success": {
-            "title": "%%%.payment.success.title%%%",
-            "customer1": "%%%.payment.success.customer1%%%",
-            "customer2": "%%%.payment.success.customer2%%%",
-            "customer3": "%%%.payment.success.customer3%%%"
-        },
-        "why": {
-            "title": "%%%.payment.why.title%%%"
-        },
-        "faqs": {
-            "title": "%%%.payment.faqs.title%%%",
-            "q1": "%%%.payment.faqs.q1%%%",
-            "q2": "%%%.payment.faqs.q2%%%",
-            "q3": "%%%.payment.faqs.q3%%%",
-            "q4": "%%%.payment.faqs.q4%%%",
-            "q5": "%%%.payment.faqs.q5%%%",
-            "q6": "%%%.payment.faqs.q6%%%",
-            "a1": "%%%.payment.faqs.a1%%%",
-            "a2": "%%%.payment.faqs.a2%%%",
-            "a3": "%%%.payment.faqs.a3%%%",
-            "a4": "%%%.payment.faqs.a4%%%",
-            "a5": "%%%.payment.faqs.a5%%%",
-            "a6": "%%%.payment.faqs.a6%%%"
-        },
-        "ready": {
-            "question": "%%%.payment.ready.question%%%",
-            "button": "%%%.payment.ready.button%%%"
-        },
-        "form": {
-            "lName": "%%%.payment.form.lName%%%",
-            "lEmail": "%%%.payment.form.lEmail%%%",
-            "lCompany": "%%%.payment.form.lCompany%%%",
-            "submitted": "%%%.payment.form.submitted%%%"
-        }
-    },
     "landingPro": {
         "title1": "%%%.landingPro.title1%%%",
         "desc1": "%%%.landingPro.desc1%%%",
@@ -5080,6 +4911,7 @@
         "withdrawFiatNote": "%%%.getPrices.withdrawFiatNote%%%",
         "withdrawCryptoNote": "%%%.getPrices.withdrawCryptoNote%%%",
         "withdrawCollateralNote": "%%%.getPrices.withdrawCollateralNote%%%",
+        "unstakingNote": "%%%.getPrices.unstakingNote%%%",
         "holidaysNote": "%%%.getPrices.holidaysNote%%%",
         "zelleDepositDelayIssue": "%%%.getPrices.zelleDepositDelayIssue%%%",
         "depositFiat": {
@@ -5122,6 +4954,10 @@
             "title1": "%%%.getPrices.withdrawCollateralData.title1%%%",
             "title2": "%%%.getPrices.withdrawCollateralData.title2%%%",
             "title3": "%%%.getPrices.withdrawCollateralData.title3%%%"
+        },
+        "unstaking": {
+            "head1": "%%%.getPrices.unstaking.head1%%%",
+            "head2": "%%%.getPrices.unstaking.head2%%%"
         },
         "matchingFee": {
             "head1": "%%%.getPrices.matchingFee.head1%%%",
@@ -5374,9 +5210,6 @@
             "question12": "%%%.deposit1.faqs.question12%%%",
             "answer12": "%%%.deposit1.faqs.answer12%%%"
         }
-    },
-    "testimonial": {
-        "title": "%%%.testimonial.title%%%"
     },
     "yourReferral": {
         "v1": {
@@ -5808,50 +5641,6 @@
         "desc": {
             "title": "%%%.ourPress.desc.title%%%",
             "content": "%%%.ourPress.desc.content%%%"
-        }
-    },
-    "ourPartner": {
-        "partner": {
-            "partner1": {
-                "name": "%%%.ourPartner.partner.partner1.name%%%",
-                "desc": "%%%.ourPartner.partner.partner1.desc%%%"
-            },
-            "partner2": {
-                "name": "%%%.ourPartner.partner.partner2.name%%%",
-                "desc": "%%%.ourPartner.partner.partner2.desc%%%"
-            },
-            "partner3": {
-                "name": "%%%.ourPartner.partner.partner3.name%%%",
-                "desc": "%%%.ourPartner.partner.partner3.desc%%%"
-            },
-            "partner4": {
-                "name": "%%%.ourPartner.partner.partner4.name%%%",
-                "desc": "%%%.ourPartner.partner.partner4.desc%%%"
-            },
-            "partner5": {
-                "name": "%%%.ourPartner.partner.partner5.name%%%",
-                "desc": "%%%.ourPartner.partner.partner5.desc%%%"
-            },
-            "partner6": {
-                "name": "%%%.ourPartner.partner.partner6.name%%%",
-                "desc": "%%%.ourPartner.partner.partner6.desc%%%"
-            },
-            "partner7": {
-                "name": "%%%.ourPartner.partner.partner7.name%%%",
-                "desc": "%%%.ourPartner.partner.partner7.desc%%%"
-            },
-            "partner8": {
-                "name": "%%%.ourPartner.partner.partner8.name%%%",
-                "desc": "%%%.ourPartner.partner.partner8.desc%%%"
-            },
-            "partner9": {
-                "name": "%%%.ourPartner.partner.partner9.name%%%",
-                "desc": "%%%.ourPartner.partner.partner9.desc%%%"
-            }
-        },
-        "desc": {
-            "title": "%%%.ourPartner.desc.title%%%",
-            "content": "%%%.ourPartner.desc.content%%%"
         }
     },
     "collateralBalance": {
@@ -6511,21 +6300,6 @@
                 "title": "%%%.memberShip.howItWorks.levelInfo.title%%%",
                 "point": "%%%.memberShip.howItWorks.levelInfo.point%%%",
                 "desc": "%%%.memberShip.howItWorks.levelInfo.desc%%%"
-            },
-            "level1": {
-                "title": "%%%.memberShip.howItWorks.level1.title%%%",
-                "point": "%%%.memberShip.howItWorks.level1.point%%%",
-                "desc": "%%%.memberShip.howItWorks.level1.desc%%%"
-            },
-            "level2": {
-                "title": "%%%.memberShip.howItWorks.level2.title%%%",
-                "point": "%%%.memberShip.howItWorks.level2.point%%%",
-                "desc": "%%%.memberShip.howItWorks.level2.desc%%%"
-            },
-            "level3": {
-                "title": "%%%.memberShip.howItWorks.level3.title%%%",
-                "point": "%%%.memberShip.howItWorks.level3.point%%%",
-                "desc": "%%%.memberShip.howItWorks.level3.desc%%%"
             }
         },
         "intro": {
@@ -6560,16 +6334,6 @@
             "level1": "%%%.memberShip.title.level1%%%",
             "level2": "%%%.memberShip.title.level2%%%",
             "level3": "%%%.memberShip.title.level3%%%"
-        },
-        "get": {
-            "level1": "%%%.memberShip.get.level1%%%",
-            "level2": "%%%.memberShip.get.level2%%%",
-            "level3": "%%%.memberShip.get.level3%%%"
-        },
-        "take": {
-            "level1": "%%%.memberShip.take.level1%%%",
-            "level2": "%%%.memberShip.take.level2%%%",
-            "level3": "%%%.memberShip.take.level3%%%"
         },
         "desc": {
             "level1": "%%%.memberShip.desc.level1%%%",

@@ -151,7 +151,7 @@ function unparser() {
     vi: 'vi',
     en: 'en',
     'en-US': 'enUS',
-    'en-GB': 'enGB',
+    // 'en-GB': 'enGB',
     'zh-CN': 'zhCN',
   };
   handleDir(unzipDir);

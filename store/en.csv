@@ -1107,6 +1107,7 @@
 %%%.me.history.orderStatus.13%%%,"Waiting Approving"
 %%%.me.history.orderStatus.14%%%,"Transfering"
 %%%.me.history.orderStatus.15%%%,"Confirming"
+%%%.me.history.orderStatus.16%%%,"Order timed out"
 %%%.me.history.topUpStatus.0%%%,"Pending"
 %%%.me.history.topUpStatus.1%%%,"Done"
 %%%.me.history.topUpStatus.2%%%,"Failed"
@@ -4733,20 +4734,23 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home1.lendingSection.alert.zelleSuccess%%%,"Thanks! Please proceed with the transfer."
 %%%.home1.lendingSection.alert.zelleFailed%%%,"Something went wrong. Please try again."
 %%%.home1.lendingSection.alert.needKyc%%%,""
+%%%.home1.lendingSection.confirm.needGoldMember%%%,"<p>You must become a Gold member and above, or choose a longer investment term to use this feature</p>"
+%%%.home1.lendingSection.confirm.needPlatinumMember%%%,"<p>You must become a Platinum member and above to use this feature.</p>"
 %%%.home1.lendingSection.confirm.thankYou1%%%,"Almost there."
 %%%.home1.lendingSection.confirm.thankMsg%%%,"Simply wire {amount} to the Constant Trust to make a deposit."
-%%%.home1.lendingSection.confirm.thankMsg2%%%,"
-          <div>Your account currently has a balance of {userBalance}.</div>
-          <div>Please deposit {amount} to complete your investment.</div>"
+%%%.home1.lendingSection.confirm.thankMsgCurrentBalance%%%,"<div>Your account currently has a balance of {userBalance}.</div>"
+%%%.home1.lendingSection.confirm.thankMsgDeposit%%%,"<div>Please deposit {amount} to complete your investment.</div>"
 %%%.home1.lendingSection.confirm.thankMsg1%%%,"You currently have {balance} in your balance. Please make a transfer of the remaining {amount} to proceed."
 %%%.home1.lendingSection.confirm.bankName%%%,"Bank name"
+%%%.home1.lendingSection.confirm.bankAddress%%%,"Bank address"
+%%%.home1.lendingSection.confirm.swiftCode%%%,"Swift code"
 %%%.home1.lendingSection.confirm.accountName%%%,"Account name"
 %%%.home1.lendingSection.confirm.accountNumber%%%,"Account number"
-%%%.home1.lendingSection.confirm.routingNumberACH%%%,"Routing number for ACH"
+%%%.home1.lendingSection.confirm.accountType%%%,"Account Type"
+%%%.home1.lendingSection.confirm.accountAddress%%%,"Account address"
+%%%.home1.lendingSection.confirm.routingNumberAch%%%,"Routing number for ACH"
 %%%.home1.lendingSection.confirm.routingNumberWire%%%,"Routing number for Wire"
 %%%.home1.lendingSection.confirm.routingNumberACHWire%%%,"Routing number for ACH & Wire"
-%%%.home1.lendingSection.confirm.accountAddress%%%,"Account address"
-%%%.home1.lendingSection.confirm.accountType%%%,"Account Type"
 %%%.home1.lendingSection.confirm.value%%%,"Value"
 %%%.home1.lendingSection.confirm.amount%%%,"Amount"
 %%%.home1.lendingSection.confirm.reference%%%,"Reference"
@@ -4784,11 +4788,11 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           <p>To use Venmo, simply download the app and send your money to us using the details on the right-hand side of this page.</p>
         "
 %%%.home1.lendingSection.confirm.paypalDesc%%%,"PayPal is one of the world’s most trusted and secure payment services. To get started, create a free PayPal account and link a card or bank account. Then enter the details on the right from your PayPal account and click send."
-%%%.home1.lendingSection.confirm.zelle1%%%,"
+%%%.home1.lendingSection.confirm.zelleInfo%%%,"
           <p>Amount: {amount} USD</p>
-          <p>Send to: <strong>finance@myconstant.com</strong></p>
-          <p>Full name: <strong>Const LLC</strong></p>
-          <p>Type: <strong>Personal Account</strong></p>
+          <p>Send to: <strong>{email}</strong></p>
+          <p>Full name: <strong>{name}</strong></p>
+          <p>Type: <strong>{type}</strong></p>
         "
 %%%.home1.lendingSection.confirm.zelle%%%,"
           <p>Amount: {amount} USD</p>
@@ -4801,23 +4805,23 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         "
 %%%.home1.lendingSection.confirm.google%%%,"
           <p>Amount: {amount} USD</p>
-          <p>Send to: <strong>accounting@constant.money</strong></p>
+          <p>Send to: <strong>{email}</strong></p>
         "
 %%%.home1.lendingSection.confirm.googleNote%%%,"Before making a transfer, please enter the email associated with your Google Pay account below:"
 %%%.home1.lendingSection.confirm.googlePlaceholder%%%,"Please enter the email here"
 %%%.home1.lendingSection.confirm.googleSubmit%%%,"Submit"
 %%%.home1.lendingSection.confirm.venmo%%%,"
         <p>Amount: {amount} USD</p>
-        <p>Send to: <strong>909-288-9105</strong></p>
+        <p>Send to: <strong>{phone}</strong></p>
         "
 %%%.home1.lendingSection.confirm.venmoNote%%%,"Before making a transfer, please enter the phone number associated with your Venmo account below:"
 %%%.home1.lendingSection.confirm.venmoPlaceholder%%%,"Please enter the phone number here"
 %%%.home1.lendingSection.confirm.venmoSubmit%%%,"Submit"
 %%%.home1.lendingSection.confirm.paypal%%%,"
           <p>Amount: {amount} USD</p>
-          <p>Send to: <strong>accounting@constant.money</strong></p>
-          <p>Full name: <strong>Const LLC</strong></p>
-          <p>Type: <strong>Personal Account</strong></p>
+          <p>Send to: <strong>{email}</strong></p>
+          <p>Full name: <strong>{name}</strong></p>
+          <p>Type: <strong>{type}</strong></p>
         "
 %%%.home1.lendingSection.confirm.paypalNote%%%,"Before making a transfer, please enter the email associated with your PayPal account below:"
 %%%.home1.lendingSection.confirm.paypalPlaceholder%%%,"Please enter the email here"
@@ -5124,7 +5128,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     <p class=""title"">* A receiving fee may be charged by your financial institutions.</p>
     "
 %%%.getPrices.withdrawCryptoNote%%%,"
-    <p class=""title"">* Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually.</p>
+    <p class=""title"">* Please note that $2,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal will need to be approved manually. </p>
+    <p class=""title"">* $60,000 is the daily limitation for all the platform.</p>
     <p class=""title"">* Withdrawal fee for DAI is still kept at 3.5% until further notice.</p>
     <p class=""title"">* Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>
     <div class=""bold guarantee"">Service time guarantee &#10004; </div>

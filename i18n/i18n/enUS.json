@@ -221,7 +221,9 @@
         "investDesc": "Earn 7% interest fully secured.",
         "borrow": "Borrow",
         "borrowDesc": "Your rates. Your terms. No credit checks. Crypto-backed.",
-        "staking": "Staking <sup>NEW</sup>",
+        "borrowCoin": "Crypto Credit <sup>NEW</sup>",
+        "borrowCoinDesc": "Borrow cash, get crypto. No exchanges.",
+        "staking": "Staking",
         "stakingDesc": "Earn 6-50% APR on a Constant node. Low minimums. Withdraw anytime."
     },
     "headerBar": {
@@ -1595,6 +1597,7 @@
                         "cancel": "Go back"
                     },
                     "cancelDepositMatched": {
+                        "message": "Your successfully cancelled to up.",
                         "messageConfirm": "Are you sure you want to cancel your top up?",
                         "confirm": "Yes, cancel",
                         "cancel": "Go back"
@@ -1663,6 +1666,11 @@
                         },
                         "confirm": "Yes",
                         "cancel": "No"
+                    },
+                    "cancelBorrow": {
+                        "messageConfirm": "Are you sure you want to cancel your borrow?",
+                        "confirm": "Yes",
+                        "cancel": "No"
                     }
                 },
                 "confirm": {
@@ -1674,6 +1682,7 @@
                     }
                 },
                 "alert": {
+                    "cancelBorrowSuccess": "You successfully cancelled borrow",
                     "deleteSavingSuccess": "Investment order deleted",
                     "deleteSavingFailed": "Failed To delete Invest Saving",
                     "depositSavingSuccess": "You successfully invested Constant.",
@@ -2999,7 +3008,7 @@
                 "answer14": "\n        The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due.\n        "
             },
             "intro": {
-                "content": "\n        <p>Fast and easy crypto credit</p>\n        <h2>Trade the margin.</h2>\n        <h2>Skip the exchange.</h2>\n        <h2>Borrow against 40+ cryptos.</h2>\n        <p/>\n        <p>Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.</p>\n      ",
+                "content": "\n        <p>Fast and easy crypto credit</p>\n        <h2>Trade the margin.</h2>\n        <h2>Skip the exchange.</h2>\n        <h2>Borrow against 60+ cryptos.</h2>\n        <p/>\n        <p>Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.</p>\n      ",
                 "desc": {
                     "1": "Secure escrow",
                     "2": "No credit checks",
@@ -3057,13 +3066,13 @@
             },
             "what": {
                 "title": "Why borrow with us?",
-                "whatCaption0": "Instant loans",
-                "whatCaption1": "Crypto for cash",
-                "whatCaption2": "2% annualized interest",
+                "whatCaption0": "Set your own rates",
+                "whatCaption1": "No exchanges",
+                "whatCaption2": "Multiple pricing oracles",
                 "whatCaption3": "Guaranteed approval",
-                "whatDesc0": "\n          <p>Our loan mechanism is secured and automated by smart contracts. No lengthy processing times - the money you need is in your account within the hour.</p>\n        ",
-                "whatDesc1": "\n          <p>Secure your loan with BTC or ETH and receive USD - all without needing to sell your crypto. Enjoy liquidity without needing to liquidate.</p>\n        ",
-                "whatDesc2": "\n          <p>Borrow as much as you want, and take as long as you need. Enjoy flexible repayments and the kindest interest rate on the market.</p>\n        ",
+                "whatDesc0": "\n          <p>Our P2P matching algorithm allows you to tap into true market demand. Choose the market rate to guarantee a match, or go higher to match even faster.</p>\n        ",
+                "whatDesc1": "\n          <p>We match you with an investor and then source your chosen cryptocurrency at the best rates. No expensive middlemen. No trading fees.</p>\n        ",
+                "whatDesc2": "\n          <p>Our pricing algorithm searches multiple exchanges to find you the best price, saving you time and money. We compare the market so you can focus on trading.</p>\n        ",
                 "whatDesc3": "\n          <p>Constant is for everyone. No credit scoring, background checks or month-long waiting games for approval.</p>\n        "
             },
             "howItWorks": {
@@ -3166,7 +3175,9 @@
                 "notSupportBech32": "BTC bech32 not supported",
                 "rangeInterestRate": "Interest rate must be greater than {min}% and less than {max}%",
                 "rangeMarketRate": "Please choose the market rate or higher so you’re guaranteed to match with an investor.",
-                "notEnoughCollateral": "You don’t have enough {symbol} to use as collateral. Please deposit {amount} {symbol} to complete your loan."
+                "notEnoughCollateral": "You don’t have enough {symbol} to use as collateral. Please deposit {amount} {symbol} to complete your loan",
+                "notEnoughBalance": "Please deposit sufficient collateral to secure your loan request",
+                "notEnoughCollateralLink": " here."
             },
             "depositCollateral": {
                 "collateralTypeLabel": "Collateral type",
@@ -3205,7 +3216,7 @@
                 "payCollateral": "Pay",
                 "payOffLoan": "Repay",
                 "depositMatched": "Top up",
-                "rewardApply": "Reward",
+                "redeemApply": "Redeem STAR",
                 "cancelDepositMatched": "Cancel Deposit",
                 "cashback": "Cash back",
                 "collateral": "Collateral",
@@ -3217,6 +3228,7 @@
                 "partialMatchesDesc": "Some loan requests may be split into smaller amounts to fill multiple investment orders. The platform will keep trying to match you completely for the duration of your term.",
                 "status": "Status",
                 "allStatus": "All",
+                "cancelBorrow": "Cancel",
                 "mapStatus": {
                     "pending": "Pending",
                     "recieved": "Received",
@@ -3257,7 +3269,8 @@
                     "liquidateDone": "Liquidate Done",
                     "liquidateFailed": "Liquidate Failed",
                     "payoffPrvPending": "Payoff Pending",
-                    "payPrvPending": "Payoff Pending"
+                    "payPrvPending": "Payoff Pending",
+                    "cancelled": "Cancelled"
                 },
                 "mapStatus2": {
                     "pending": "Pending",
@@ -3323,10 +3336,13 @@
                     "depositSuccess": "Your deposit was completed successfully"
                 },
                 "itemMatched": {
-                    "matchedAmount": "Amount",
-                    "filledCollateralAmount": "Filled Collateral Amount",
+                    "matchedAmount": "Matched (USD)",
+                    "matchedAmountDesc": "The amount of USD you borrowed. This might be less than your original order if you only got a partial match.",
+                    "filledCollateralAmount": "Bought (Crypto)",
+                    "filledCollateralAmountDesc": "How much crypto we bought using your USD loan. Depending on the final sale price, this might be a bit less than your original order",
                     "maxCollateralAmount": "Max Collateral",
-                    "filledAmount": "Filled Amount",
+                    "filledAmount": "Used (USD)",
+                    "filledAmountDesc": "The amount of USD we used to buy your chosen crypto. If we pay less than the matched amount, we'll return the difference to your account.",
                     "amount": "Amount",
                     "interest": "Interest",
                     "collateral": "Collateral",
@@ -4275,94 +4291,7 @@
         }
     },
     "yourSaving": {
-        "hello": "\n      <strong>Hello {name}</strong>.<br/>Let's see how your money is doing today.\n    ",
-        "verifyKyc": "Please verify your ID to start your free trial."
-    },
-    "borrow": {
-        "contact": {
-            "title": "Get the capital you need for your PO, even when banks say no.",
-            "desc": "\n        <p>At a low, simple and transparent <strong>0.5% per week</strong>.</p>\n      ",
-            "form": {
-                "placeholder": {
-                    "companyName": "What's the name of your company?",
-                    "poName": "What's the PO value we can help fund?",
-                    "companyExciting": "What's exciting about your company today?",
-                    "companyTarget": "What's your company looking forward to?",
-                    "email": "Your email address",
-                    "phone": "Your phone number"
-                },
-                "btnSubmit": "FINANCE MY PURCHASE ORDER",
-                "alert": {
-                    "success": "Your request is sent successfully",
-                    "failed": "Your request was failed"
-                }
-            }
-        },
-        "what": {
-            "whatCaption0": "24 hour turnaround",
-            "whatCaption1": "No credit check on you or your business",
-            "whatCaption2": "The world’s lowest PO financing rate",
-            "whatCaption3": "No limit on your growth",
-            "whatTitle": "What can you do with Constant?",
-            "whatTitle0": "Save in USD",
-            "whatTitle1": "Up to 130M USD",
-            "whatTextLink1": "Read the full policy",
-            "whatLink1": "/privacy-policy",
-            "whatDesc1": "<p>Banks require good credit based on a solid financial history. That’s not always possible for young businesses. That’s why Constant finances loans based on the creditworthiness of your customers.</p>",
-            "whatTitle2": "By the US Government",
-            "whatTitle3": "No minimum deposit",
-            "whatDesc0": "<p>Banks can take weeks or even months to approve a business loan.  Your PO can’t wait that long.  Constant helps you seize that opportunity.</p>",
-            "whatDesc2": "<p>The beauty of being 100% digital is that we can offer low interest rates on a global scale. No matter how big or small your business is.</p>",
-            "whatDesc3": "<p>Bank loans lack flexibility. If you need more cash, you’ll need a new loan. Constant gives you a line of credit based on your sales volume, and your track record of growth.</p>",
-            "whatMore0": "How we guarantee zero risk high returns",
-            "whatMore1": "How we protect your money",
-            "whatMore2": "How to pick a plan that’s right for you",
-            "whatMore3": "How people are saving with Constant"
-        },
-        "howItWorks": {
-            "step1": "STEP 1",
-            "title1": "SECURE A PURCHASE ORDER FROM YOUR CUSTOMER",
-            "desc1": "Congrats! This is a growth opportunity that you can easily seize.",
-            "step2": "STEP 2",
-            "title2": "APPLY FOR CONSTANT FINANCING ONLINE",
-            "desc2": "Apply in less than 5 minutes by submitting the PO, with basic details about your business and customers.",
-            "step3": "STEP 3",
-            "title3": "GET THE CAPITAL TO FULFILL YOUR PO",
-            "desc3": "Enjoy quick turnaround. Finance up to 100% of your POs and stay competitive.  Rinse and repeat for your next order."
-        },
-        "blockTitle2": "How to borrow",
-        "blockDesc2": "\n      <h5>Secure cash with purchase orders.</h5>\n      <br />\n      <h5>We understand that money is fast flowing. If you sell products to reputable clients - established companies, government organizations, or similar - we can fund you the working capital you need to fulfill those orders, in confidence of future payment from your client.</h5>\n    ",
-        "brands": {
-            "title": "Our clients work with some of the world’s leading brands"
-        }
-    },
-    "trade": {
-        "title": "Trade Constant.",
-        "desc": "Protect yourself against volatility and access smarter financial solutions. Constant Coin (CONST) is the stablecoin that at the heart of all our services: a global USD bank account, high-yield time deposits, and fair, flexible loans. CONST is fully backed by USD, holds its value at 1:1, and can be redeemed for USD at anytime. You can get CONST for Bitcoin, Ether, fiat and more, by using the reputable exchanges listed below.",
-        "coinmarket": {
-            "title": "Follow the growth of Constant",
-            "desc": "Get real-time prices, review historical charts, and track movement and volume across all exchanges."
-        }
-    },
-    "constantChain": {
-        "info": {
-            "title": "Constant Chain",
-            "desc": "Constant Coin (CONST) currently runs on the Ethereum blockchain as an ERC20 token, but will eventually run on its own blockchain. The Constant Chain, which powers all its namesake financial services, will have privacy and price stability at its core, two features we feel are especially important when building a better bank. The Constant Chain is designed to be an eternal work in progress - we look forward to testing new ideas, algorithms and mechanisms faster, and better. \n\nThe Constant Chain is currently running as a testnet. We hope to release the Constant Chain mainnet before the end of 2019. "
-        },
-        "what": {
-            "whatCaption0": "Read the source code",
-            "whatCaption1": "Download the Constant Wallet",
-            "whatCaption2": "Run a node",
-            "whatCaption3": "Browse the Block Explorer",
-            "whatDesc0": "Constant Chain is open-source. Its design is public - Constant belongs to everyone.",
-            "whatDesc1": "You can install the Constant Wallet add-on in Chrome. It allows you to sign Constant privacy transactions without running a full Constant node.",
-            "whatDesc2": "Power the Constant Chain. Help build the network and earn CONST in return. ",
-            "whatDesc3": "View the history of transactions that have taken place on the Constant blockchain.",
-            "whatButton0": "Browse Github",
-            "whatButton1": "Download",
-            "whatButton2": "Download",
-            "whatButton3": "Explore"
-        }
+        "hello": "\n      <strong>Hello {name}</strong>.<br/>Let's see how your money is doing today.\n    "
     },
     "newHome": {
         "banner": {
@@ -4481,45 +4410,6 @@
                     "desc": "Constant is for everyone. No credit scoring, background checks or month-long waiting games for approval."
                 },
                 "link": "Get cash for your crypto"
-            }
-        }
-    },
-    "constantCoin": {
-        "info": {
-            "title": "Constant Coin",
-            "desc": "Borderless banking requires a borderless currency. Constant is a digital dollar, a stablecoin pegged 1:1 with the USD - designed to blend the best of the existing financial system with the fairness and freedom now possible with blockchain technology. Most importantly, anyone can own Constant, and access the financial solutions it unlocks. Constant is available via local banks as well as international cryptocurrency exchanges."
-        },
-        "what": {
-            "whatCaption0": "$130M insured",
-            "whatCaption1": "Built on Ethereum",
-            "whatCaption2": "1 Constant = 1 USD",
-            "whatCaption3": "Borderless",
-            "whatDesc0": "Every Constant Coin is fully backed by USD, held in a series of escrow accounts, with total coverage up to $130M.",
-            "whatDesc1": "Constant is secured by the combined computing power of the Ethereum network. Transactions are executed using publicly verifiable smart contracts.",
-            "whatDesc2": "The value of Constant is fixed at 1:1 with the USD. Redeemable for fiat at any time, Constant helps preserve the value of volatile currencies.",
-            "whatDesc3": "Anyone can own Constant. That means anyone can have a global USD account, enjoy instant worldwide transfers, and access smarter financial solutions.",
-            "whatButton0": "How we protect your money",
-            "whatButton1": "View our smart contract",
-            "whatButton2": "How we guarantee stability",
-            "whatButton3": "Get Constant"
-        },
-        "howItWorks": {
-            "title": "More about the Constant Coin",
-            "desc": "Constant was designed to be a coin for the community, and will continue to be. We tackle user questions and publish development updates frequently. If you have a question or an idea that you want us to explore, drop us message on [telegram].",
-            "link": "Browse all blog posts >",
-            "items": {
-                "date1": "March 19, 2019",
-                "title1": "Introduction to the Constant Chain",
-                "date2": "March 19, 2019",
-                "title2": "Introduction to the Constant Chain",
-                "date3": "March 19, 2019",
-                "title3": "Introduction to the Constant Chain",
-                "date4": "March 19, 2019",
-                "title4": "Introduction to the Constant Chain",
-                "date5": "March 19, 2019",
-                "title5": "Introduction to the Constant Chain",
-                "date6": "March 19, 2019",
-                "title6": "Introduction to the Constant Chain"
             }
         }
     },
@@ -4919,65 +4809,6 @@
             "getBankBondSettingsFailed": "Something went wrong. Please try again."
         }
     },
-    "payment": {
-        "intro": "\n    <h1>Worldwide, instant, zero cost mass payments.</h1>\n    <br />\n    <h5>\n        Send and receive money instantly. Any amount, any number of people, anywhere in the world.\n        Pay suppliers, freelancers, automate your entire payroll - with a single click.\n    </h5>\n    <br />\n    <h5>Constant allows you to harness the power of global peer to peer technology to truly do business with the world.</h5>\n    <br />\n    <h5>No wait times, no transfer fees. Hello world.</h5>\n  ",
-        "howItWorks": {
-            "heading": "How it works",
-            "step1": "1",
-            "title1": "Deposit funds into your account",
-            "desc1": "Make a bank transfer of any amount to the Constant Vault.",
-            "step2": "2",
-            "title2": "Upload your list of payees",
-            "desc2": "Download, fill in, then upload the template that we provide for your convenience.",
-            "step3": "3",
-            "title3": "One click to send",
-            "desc3": "Your payments should arrive within minutes. Payees will receive an email notification with instructions on how to access their funds."
-        },
-        "what": {
-            "whatCaption0": "Free transfers. Low cost withdrawals.",
-            "whatCaption1": "Powered by the world",
-            "whatCaption2": "Send USD",
-            "whatCaption3": "Easy API integration",
-            "whatDesc0": "\n        <p>The only fee you’ll ever have to pay with Constant is a small withdrawal fee of 0.25% - capped at $35, no matter the amount. We like to keep things simple and transparent.</p>\n      ",
-            "whatDesc1": "\n        <p>Constant is built on blockchain technology. Thousands and thousands of nodes work together to secure and expedite every payment you send. Protect yourself against fraud and grow your business faster.</p>\n      ",
-            "whatDesc2": "\n        <p>We convert every payment into USD, to protect both you and your payee from volatility. Of course, your recipient can also choose to withdraw their funds into any other local currency.</p>\n      ",
-            "whatDesc3": "\n        <p>Constant is easily integrated into your existing infrastructure. Improve payee satisfaction, streamline costs, and unlock real-time payment visibility.</p>\n      "
-        },
-        "success": {
-            "title": "Customer Success Stories",
-            "customer1": "<div><h5 class=darkblue4\">Constant is our preferred solution for cross-border transactions. Paying international suppliers and clients is much less of a hassle now",
-            "customer2": "<div> <h5 class=darkblue4\">E-commerce provider of technology powered office solutions We just started using Constant to automate payroll to our employees in the US",
-            "customer3": ""
-        },
-        "why": {
-            "title": "Why Constant?"
-        },
-        "faqs": {
-            "title": "Frequently Asked Questions",
-            "q1": "Do you operate globally?",
-            "q2": "How long does it take to withdraw?",
-            "q3": "How do you prevent fraud?",
-            "q4": "How do you prevent chargebacks?",
-            "q5": "What makes you a better choice than other payment solutions?",
-            "q6": "Is Constant taxable?",
-            "a1": "Yes, we support all countries and currencies in the world. All you need is an Internet connection.",
-            "a2": "For US, Hong Kong or Vietnam customers, it would take up to 1 business day. For international customers, the process would take 2-3 business days. It depends a lot on how quickly your bank processes transfers.",
-            "a3": "Your funds are put in a trust vault overseen by PrimeTrust, an accredited US financial institution, and the trust is insured up to $130M. Prior to registering for a Constant account, you will be asked to do KYC (Know Your Customer) to comply with financial regulations, which protects you against fraud. And thanks to the immutable blockchain ledger, Constant is extremely difficult to hack.\n",
-            "a4": "Constant is powered by unstoppable smart contracts and built upon the Ethereum blockchain, an immutable digital ledger that acts as a public record of verifiable transactions.",
-            "a5": "Constant allows you to move your money anywhere and anytime for free (with a minimal withdrawal fee of 0.25%). Constant is also part of a greater ecosystem, so you can choose to put your funds into one of our fixed deposits and earn up to 7% annually.",
-            "a6": "Receiving Constant is similar to receiving USD. If the source of funds is not taxable then receiving Constant is not taxable. However, please note that you are responsible for determining any and all taxes assessed, incurred, or required to be collected, paid, or withheld for any reason in connection with the use of our software and services."
-        },
-        "ready": {
-            "question": "Ready to run your global business better?",
-            "button": "Let's Talk"
-        },
-        "form": {
-            "lName": "Your Name",
-            "lEmail": "Your Email",
-            "lCompany": "Your Company",
-            "submitted": "Thank you. Our team will be in touch within 24 hours to discuss how Constant can work for you."
-        }
-    },
     "landingPro": {
         "title1": "<h1>Peer-to-peer lending for the Pros. </h1><h1>Coming soon.</h1>",
         "desc1": "Keep your finger on the pulse of the market, using an intuitive interface with real-time orderbooks, charting tools and detailed trade history. Trade on interest rates and optimize your returns on a fully-secured platform, uniquely backed by a combination of insurance, smart contracts, and over-collateralization.",
@@ -5080,6 +4911,7 @@
         "withdrawFiatNote": "\n    <p class=\"title\">* A receiving fee may be charged by your financial institutions.</p>\n    ",
         "withdrawCryptoNote": "\n    <p class=\"title\">* Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually.</p>\n    <p class=\"title\">* Withdrawal fee for DAI is still kept at 3.5% until further notice.</p>\n    <p class=\"title\">* Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>\n    <div class=\"bold guarantee\">Service time guarantee &#10004; </div>\n    <p>Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>\n    ",
         "withdrawCollateralNote": "\n    <p class=\"title\">* About collateral issue, please ping <a href=\"https://t.me/andy_9210\" className=\"underline bold\" target=\"_blank\"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>\n    ",
+        "unstakingNote": "\n    <p class=\"title\">* It depends on Incognito chain. Read more <a href=\"https://incognito.org/t/the-algorithm-of-probability-for-node-selection/836\" className=\"underline bold\" target=\"_blank\"><strong>here</strong></a>.</p>\n    ",
         "holidaysNote": "\n    <p class=\"title\">* Our service time may also be affected by public and banking holidays in the US and your local country.</p>\n    ",
         "zelleDepositDelayIssue": "\n    <p class=\"title\">* Possible reasons for a delay in processing your Zelle deposit</p>\n    <p> - Missing relevant information to match with your deposit order: Name, User ID, Reference...</p>\n    <p> - Varying level of processing time by the bank.</p>\n    <p> - Transfering from an account with the account holder's name different than your registered name on Constant platform.</p>\n    <p> - Lack of or incorrect deposit order created prior to depositing.</p>\n    ",
         "depositFiat": {
@@ -5122,6 +4954,10 @@
             "title1": "ERC20 collateral <strong>not</strong> deposited in BitGo / BTC, ETH, BEP2, TOMO, BEAM, XZC: <$10,000",
             "title2": "ERC20 collateral <strong>not</strong> deposited in BitGo / BTC, ETH, BEP2, TOMO, BEAM, XZC: >$10,000",
             "title3": "<a href=\"https://docs.google.com/spreadsheets/d/1VIiNXdg7LTJXuUHhtYw2nEH14q4d9rUjW_9QH2zIyzU/edit#gid=0\" target=\"_blank\" class=\"underline\"><strong>ERC20 collaterals deposited in BitGo</strong></a> / Others"
+        },
+        "unstaking": {
+            "head1": "Unstaking",
+            "head2": "Tokens received in your balance"
         },
         "matchingFee": {
             "head1": "Matching fee",
@@ -5374,9 +5210,6 @@
             "question12": "How does Constant make money?",
             "answer12": "Flex deposits earn interest through an API with Compound Finance, another lending platform. Compound sets interest rates according to supply and demand, and Constant will make a slim profit on any difference between the Flex and Compound rates."
         }
-    },
-    "testimonial": {
-        "title": "What people say about us"
     },
     "yourReferral": {
         "v1": {
@@ -5648,7 +5481,7 @@
                 "withdrawFailed": "Something went wrong. Please try again.",
                 "withdrawAddressFailed": "Your wallet address is invalid. Please try again.",
                 "withdrawSuccess": "You successfully un-staked your {amount} {cryptocurrency}.",
-                "returnAmount": "Your {amount} {currency} un-taking will return to your coin balance."
+                "returnAmount": "Your {amount} unstaked {currency} will return to your coin balance."
             },
             "withdraw": {
                 "title": "Withdraw your reward",
@@ -5803,50 +5636,6 @@
             "press12": {
                 "name": "",
                 "desc": "<p>It's a great service, with free deposits and withdrawals, extremely fast responding customer support and a transparent team.</p>"
-            }
-        },
-        "desc": {
-            "title": "In the News",
-            "content": "We’re proud to feature in many prominent finance and technology publications. From news to reviews, find out what the journalists, pundits, and experts have to say about the Constant peer-to-peer lending platform."
-        }
-    },
-    "ourPartner": {
-        "partner": {
-            "partner1": {
-                "name": "Hacker Noon",
-                "desc": "<p>The traditional loan agreement has been replaced by an unstoppable Ethereum smart contract without any possibility of downtime, fraud, or third-party interference. Fully-secured, blockchain-enabled P2P lending is our contribution to a bankless banking system.</p>"
-            },
-            "partner2": {
-                "name": "Coin98",
-                "desc": "<p>Chắc hẳn sẽ có những lúc chúng ta rơi vào hoàn cảnh khi đang HODL một đồng coin nào đó, nhưng lại thấy 1 cơ hội khác trong khi quỹ vốn thì đã hết. Constant sẽ giúp anh em huy động được một lượng cash (tiền mặt) nhất định để vào được kèo mới nhưng không phải cash out (bán) đồng coin đang HODL</p>"
-            },
-            "partner3": {
-                "name": "Techworm",
-                "desc": "<p>The best thing about Constant, however, is the security the lending platform has in place. Every loan is fully secured and backed in multiple ways. While on loan it’s protected by borrower collateral, and while waiting to be matched it’s protected by a $130M insurance policy.</p>"
-            },
-            "partner4": {
-                "name": "Blockonomi",
-                "desc": "<p>Constant has created a platform that cuts banks out of the lending equation and allows anyone in the world to create loans on whatever terms they like. This is a big shift away from the established lending system, and it could be a big benefit for both borrowers and lenders</p>"
-            },
-            "partner5": {
-                "name": "Zero Hedge",
-                "desc": "<p>Lenders can choose their terms, no credit check, and no nonsense – and find borrowers. Programming a system like this using the US banking system, would be expensive, cumbersome, time consuming, and who knows what it might look like after all the regulatory approvals.</p>"
-            },
-            "partner6": {
-                "name": "ZyCrypto",
-                "desc": "<p>Constant is different in that users can be confident in the fact that each transaction is fully secured. Every loan is collateral backed. Investor funds are held in escrow accounts when not on loan. This level of security sets Constant apart from other platforms.</p>"
-            },
-            "partner7": {
-                "name": "Blockonomi",
-                "desc": "<p>Constant has created a platform that cuts banks out of the lending equation and allows anyone in the world to create loans on whatever terms they like. This is a big shift away from the established lending system, and it could be a big benefit for both borrowers and lenders</p>"
-            },
-            "partner8": {
-                "name": "Zero Hedge",
-                "desc": "<p>Lenders can choose their terms, no credit check, and no nonsense – and find borrowers. Programming a system like this using the US banking system, would be expensive, cumbersome, time consuming, and who knows what it might look like after all the regulatory approvals.</p>"
-            },
-            "partner9": {
-                "name": "ZyCrypto",
-                "desc": "<p>Constant is different in that users can be confident in the fact that each transaction is fully secured. Every loan is collateral backed. Investor funds are held in escrow accounts when not on loan. This level of security sets Constant apart from other platforms.</p>"
             }
         },
         "desc": {
@@ -6511,21 +6300,6 @@
                 "title": "{level} Member",
                 "point": "{point} points",
                 "desc": "You need"
-            },
-            "level1": {
-                "title": "Gold Member",
-                "point": "(25,000 points)",
-                "desc": ""
-            },
-            "level2": {
-                "title": "Platinum Member",
-                "point": "(50,000 points)",
-                "desc": ""
-            },
-            "level3": {
-                "title": "Diamond Member",
-                "point": "(100,000 points)",
-                "desc": ""
             }
         },
         "intro": {
@@ -6560,16 +6334,6 @@
             "level1": "Gold",
             "level2": "Platinum",
             "level3": "Diamond"
-        },
-        "get": {
-            "level1": "Get 100 CONST",
-            "level2": "Get 1 STAR",
-            "level3": "Get 2 STAR"
-        },
-        "take": {
-            "level1": "Take 100 CONST",
-            "level2": "Take 1 STAR",
-            "level3": "Take 2 STAR"
         },
         "desc": {
             "level1": "<h4>What you get:</h4>\n              <p><i class=\"fal fa-check\"></i> $50 credit to your Constant account the first time you reach Gold (after leaving a review on Trustpilot).</p>\n              <p><i class=\"fal fa-check\"></i> US members: $15 credit every time you refer a friend.</p>\n              <p><i class=\"fal fa-check\"></i> 15% of all earned interest from Flex accounts of referred friends during their first year.</p>\n              <p><i class=\"fal fa-check\"></i> Withdrawals through Google Pay and Venmo.</p>\n              <p><i class=\"fal fa-check\"></i> Deposits/withdrawals through Checkbook ACH for all investment term lengths.</p>\n            ",

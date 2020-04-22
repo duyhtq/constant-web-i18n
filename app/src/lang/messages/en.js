@@ -1355,7 +1355,8 @@ export default {
         12: 'Waiting Approving',
         13: 'Waiting Approving',
         14: 'Transfering',
-        15: 'Confirming'
+        15: 'Confirming',
+        16: 'Order timed out',
       },
       topUpStatus: {
         0: 'Pending',
@@ -6175,21 +6176,24 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         needKyc: '',
       },
       confirm: {
+        needGoldMember: '<p>You must become a Gold member and above, or choose a longer investment term to use this feature</p>',
+        needPlatinumMember: '<p>You must become a Platinum member and above to use this feature.</p>',
         thankYou1: 'Almost there.',
         thankMsg:
           'Simply wire {amount} to the Constant Trust to make a deposit.',
-        thankMsg2: `
-          <div>Your account currently has a balance of {userBalance}.</div>
-          <div>Please deposit {amount} to complete your investment.</div>`,
+        thankMsgCurrentBalance: `<div>Your account currently has a balance of {userBalance}.</div>`,
+        thankMsgDeposit: `<div>Please deposit {amount} to complete your investment.</div>`,
         thankMsg1: 'You currently have {balance} in your balance. Please make a transfer of the remaining {amount} to proceed.',
         bankName: 'Bank name',
+        bankAddress: 'Bank address',
+        swiftCode: 'Swift code',
         accountName: 'Account name',
         accountNumber: 'Account number',
-        routingNumberACH: 'Routing number for ACH',
+        accountType: 'Account Type',
+        accountAddress: 'Account address',
+        routingNumberAch: 'Routing number for ACH',
         routingNumberWire: 'Routing number for Wire',
         routingNumberACHWire: 'Routing number for ACH & Wire',
-        accountAddress: 'Account address',
-        accountType: 'Account Type',
         value: 'Value',
         amount: 'Amount',
         reference: 'Reference',
@@ -6229,11 +6233,11 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           <p>To use Venmo, simply download the app and send your money to us using the details on the right-hand side of this page.</p>
         `,
         paypalDesc: `PayPal is one of the world’s most trusted and secure payment services. To get started, create a free PayPal account and link a card or bank account. Then enter the details on the right from your PayPal account and click send.`,
-        zelle1: `
+        zelleInfo: `
           <p>Amount: {amount} USD</p>
-          <p>Send to: <strong>finance@myconstant.com</strong></p>
-          <p>Full name: <strong>Const LLC</strong></p>
-          <p>Type: <strong>Personal Account</strong></p>
+          <p>Send to: <strong>{email}</strong></p>
+          <p>Full name: <strong>{name}</strong></p>
+          <p>Type: <strong>{type}</strong></p>
         `,
         zelle: `
           <p>Amount: {amount} USD</p>
@@ -6246,23 +6250,23 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         `,
         google: `
           <p>Amount: {amount} USD</p>
-          <p>Send to: <strong>accounting@constant.money</strong></p>
+          <p>Send to: <strong>{email}</strong></p>
         `,
         googleNote: 'Before making a transfer, please enter the email associated with your Google Pay account below:',
         googlePlaceholder: 'Please enter the email here',
         googleSubmit: 'Submit',
         venmo: `
         <p>Amount: {amount} USD</p>
-        <p>Send to: <strong>909-288-9105</strong></p>
+        <p>Send to: <strong>{phone}</strong></p>
         `,
         venmoNote: 'Before making a transfer, please enter the phone number associated with your Venmo account below:',
         venmoPlaceholder: 'Please enter the phone number here',
         venmoSubmit: 'Submit',
         paypal: `
           <p>Amount: {amount} USD</p>
-          <p>Send to: <strong>accounting@constant.money</strong></p>
-          <p>Full name: <strong>Const LLC</strong></p>
-          <p>Type: <strong>Personal Account</strong></p>
+          <p>Send to: <strong>{email}</strong></p>
+          <p>Full name: <strong>{name}</strong></p>
+          <p>Type: <strong>{type}</strong></p>
         `,
         paypalNote: 'Before making a transfer, please enter the email associated with your PayPal account below:',
         paypalPlaceholder: 'Please enter the email here',
@@ -6628,7 +6632,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     <p class="title">* A receiving fee may be charged by your financial institutions.</p>
     `,
     withdrawCryptoNote: `
-    <p class="title">* Please note that $10,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal need to be approved manually.</p>
+    <p class="title">* Please note that $2,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal will need to be approved manually. </p>
+    <p class="title">* $60,000 is the daily limitation for all the platform.</p>
     <p class="title">* Withdrawal fee for DAI is still kept at 3.5% until further notice.</p>
     <p class="title">* Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>
     <div class="bold guarantee">Service time guarantee &#10004; </div>

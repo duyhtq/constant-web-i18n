@@ -335,7 +335,7 @@ export default {
       },
       borrowCoins: {
         title: 'Crypto Credit',
-        desc: 'Borrow cash, get crypto. No exchanges',
+        desc: 'Borrow cash, get crypto. No exchanges.',
       }
     }
   },
@@ -2041,7 +2041,7 @@ export default {
           title: 'Make more deposit for your collateral',
           amount: 'How many STAR do you want to redeem?',
           requiredAmount: 'Amount is required!',
-          maxAmount: 'Your amount must be less than {max}.',
+          maxAmount: 'Your amount must be <= {max}.',
           amountDesc: 'How much do you want to apply?',
           close: 'Close',
           apply: 'Redeem',
@@ -4308,6 +4308,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           collateralValue: 'Collateral value',
           createdDate: 'Created',
           dueDate: 'Due',
+          price: 'Price',
+          priceDesc: 'price of your chosen crypto',
           collateralValueDesc: 'This represents your collateral value as a percentage of your loan. It accounts for the interest accrued so far, as well as the repayment fee should you choose to repay today. If it falls to 110%, your collateral will be liquidated, and the difference refunded to you.',
           repayAddress: 'Repay Address',
           collateralValueAtLiquid: 'Liquidation price',
@@ -5755,14 +5757,14 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       title1: `
         <h1>The world’s first <span class="darkorange4">fully secured</span> peer-to-peer lending platform.</h1>
       `,
-      subTitle: 'Your investments are fully backed by borrower collateral and smart contracts. Unmatched portions earn an automatic 4% APY, and can be withdrawn anytime.',
+      subTitle: 'Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.',
       cta: 'Open an account',
       ctaDesc: `
         It’s free to open an account. Available locations: World.`,
       invest: {
         title: 'Invest the way you want',
         num: '9.00%',
-        cap: 'No minimum capital. Fully secured.',
+        cap: 'Start from just $50. Fully secured.',
         btn: 'Invest',
         btnTrial: 'Get $1000 to start',
       },
@@ -6203,42 +6205,136 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         minuteWindow: '15 MINUTE WINDOW:',
         minuteWindowDescription:
           'Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled.',
-        referNote: 'Your reference number is {ref_number}',
-        referNoteDesc: 'To streamline the deposit process, please include this reference number when making the bank transfer.',
-        googleNoteDesc: 'To streamline the deposit process, please include this reference number when sending your money using Google Pay.',
-        venmoNoteDesc: 'To streamline the deposit process, please include this reference number when sending your money using Venmo.',
-        paypalNoteDesc: 'To streamline the deposit process, please include this reference number when sending your money using PayPal.',
-        zelleNote: 'Before making a transfer, please enter the full name associated with the Zelle account here',
-        zellePlaceholder: 'Please enter the full name here',
-        zelleSubmit: 'Submit',
+        referNote: 'Your reference number is {refNumber}',
         backOrderBook: 'Buy more Constant',
         confirmMessage: 'Please make payment and click "Confirm payment"',
         confirmButton: 'Confirm payment',
         minRate: 'Min rate',
         maxTerm: 'Max term',
         btnConfirm: 'Confirm',
-        btnBack: 'Back',
-        zelleTitle: `
-            <p className="bold">The quickest way is via <strong>Zelle</strong>.</p>
-        `,
-        zelleDesc: `
-          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>
-          <p>Please select the bank that is most convenient for you to transfer funds to.</p>
-        `,
-        googleDesc: `
-          <p>Google Pay is a fast, safe payment tool linked to your Google account. To get started, log into Google Pay and link a payment method (such as a bank card). Then enter the details on the right in your Google Pay account and click send.</p>
-        `,
-        venmoDesc: `
-          <p>Venmo is a fast, easy, and convenient payment app from the makers of PayPal </p>
-          <p>To use Venmo, simply download the app and send your money to us using the details on the right-hand side of this page.</p>
-        `,
-        paypalDesc: `PayPal is one of the world’s most trusted and secure payment services. To get started, create a free PayPal account and link a card or bank account. Then enter the details on the right from your PayPal account and click send.`,
-        zelleInfo: `
-          <p>Amount: {amount} USD</p>
-          <p>Send to: <strong>{email}</strong></p>
-          <p>Full name: <strong>{name}</strong></p>
-          <p>Type: <strong>{type}</strong></p>
-        `,
+        paymentMethods: {
+          0: {
+            desc: `
+              <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.</p>
+              <p>If you don’t bank with any of those listed, no problem. You can transfer from any bank account, but please note that your bank might charge you a fee.</p>
+            `,
+            referNoteDesc: 'To streamline the deposit process, please include this reference number when making the bank transfer.',
+          },
+          '-1': {
+            desc: `
+              <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>
+              <p>Please select the bank that is most convenient for you to transfer funds to.</p>
+            `,
+            paymentInfo: `
+              <div class="row">
+                <div class="col">
+                    <label>Amount</label>
+                    <p>{amount} USD</p>
+                </div>
+                <div class="col">
+                    <label>Send to</label>
+                    <p>{email}</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                    <label>Full name</label>
+                    <p>{name}</p>
+                </div>
+                <div class="col">
+                    <label>Type</label>
+                    <p>{type}</p>
+                </div>
+              </div>
+            `,
+            note: 'Before making a transfer, please enter the full name associated with the Zelle account here',
+            placeholder: 'Please enter the full name here',
+            submitButton: 'Submit',
+            referNoteDesc: 'To streamline the deposit process, please include this reference number when making the bank transfer.',
+          },
+          '-2': {
+            desc: `
+              <p>We’ve partnered with Checkbook to make bank transfers even easier.</p>
+              <p>Instead of logging into your bank account separately, enter your login details here and Checkbook will arrange the transfer automatically by ACH/digital check.</p>
+              <p>Neither Constant nor Checkbook store your details, and the service is free.</p>
+            `,
+            referNoteDesc: ' ',
+          },
+          '-3': {
+            desc: `
+              <p>Google Pay is a fast, safe payment tool linked to your Google account. To get started, log into Google Pay and link a payment method (such as a bank card). Then enter the details on the right in your Google Pay account and click send.</p>
+            `,
+            paymentInfo: `
+              <div class="row">
+                <div class="col">
+                    <label>Amount</label>
+                    <p>{amount} USD</p>
+                </div>
+                <div class="col">
+                    <label>Send to</label>
+                    <p>{email}</p>
+                </div>
+              </div>
+            `,
+            note: 'Before making a transfer, please enter the email associated with your Google Pay account below:',
+            placeholder: 'Please enter the email here',
+            submitButton: 'Submit',
+            referNoteDesc: 'To streamline the deposit process, please include this reference number when sending your money using Google Pay.',
+          },
+          '-4': {
+            desc: `
+              <p>Venmo is a fast, easy, and convenient payment app from the makers of PayPal </p>
+              <p>To use Venmo, simply download the app and send your money to us using the details on the right-hand side of this page.</p>
+            `,
+            paymentInfo: `
+              <div class="row">
+                <div class="col">
+                    <label>Amount</label>
+                    <p>{amount} USD</p>
+                </div>
+                <div class="col">
+                    <label>Send to</label>
+                    <p>{phone}</p>
+                </div>
+              </div>
+            `,
+            note: 'Before making a transfer, please enter the phone number associated with your Venmo account below:',
+            placeholder: 'Please enter the phone number here',
+            submitButton: 'Submit',
+            referNoteDesc: 'To streamline the deposit process, please include this reference number when sending your money using Venmo.',
+          },
+          '-5': {
+            desc: `
+              <p>PayPal is one of the world’s most trusted and secure payment services. To get started, create a free PayPal account and link a card or bank account. Then enter the details on the right from your PayPal account and click send.</p>
+            `,
+            paymentInfo: `
+              <div class="row">
+                <div class="col">
+                    <label>Amount</label>
+                    <p>{amount} USD</p>
+                </div>
+                <div class="col">
+                    <label>Send to</label>
+                    <p>{email}</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                    <label>Full name</label>
+                    <p>{name}</p>
+                </div>
+                <div class="col">
+                    <label>Type</label>
+                    <p>{type}</p>
+                </div>
+              </div>
+            `,
+            note: 'Before making a transfer, please enter the email associated with your PayPal account below:',
+            placeholder: 'Please enter the email here',
+            submitButton: 'Submit',
+            referNoteDesc: 'To streamline the deposit process, please include this reference number when sending your money using PayPal.',
+          },
+        },
         zelle: `
           <p>Amount: {amount} USD</p>
           <p>Send to: <strong>finance@myconstant.com</strong></p>
@@ -6248,47 +6344,15 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>
           <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>
         `,
-        google: `
-          <p>Amount: {amount} USD</p>
-          <p>Send to: <strong>{email}</strong></p>
-        `,
-        googleNote: 'Before making a transfer, please enter the email associated with your Google Pay account below:',
-        googlePlaceholder: 'Please enter the email here',
-        googleSubmit: 'Submit',
-        venmo: `
-        <p>Amount: {amount} USD</p>
-        <p>Send to: <strong>{phone}</strong></p>
-        `,
-        venmoNote: 'Before making a transfer, please enter the phone number associated with your Venmo account below:',
-        venmoPlaceholder: 'Please enter the phone number here',
-        venmoSubmit: 'Submit',
-        paypal: `
-          <p>Amount: {amount} USD</p>
-          <p>Send to: <strong>{email}</strong></p>
-          <p>Full name: <strong>{name}</strong></p>
-          <p>Type: <strong>{type}</strong></p>
-        `,
-        paypalNote: 'Before making a transfer, please enter the email associated with your PayPal account below:',
-        paypalPlaceholder: 'Please enter the email here',
-        paypalSubmit: 'Submit',
         bankChosenMessage1: `
           <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>
           <p>Please select the bank that is most convenient for you to transfer funds to.</p>
-        `,
-        bankTransfer: `
-          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.</p>
-          <p>If you don’t bank with any of those listed, no problem. You can transfer from any bank account, but please note that your bank might charge you a fee.</p>
-        `,
-        bankAutoPaymentMessage: `
-          <p>We’ve partnered with Checkbook to make bank transfers even easier.</p>
-          <p>Instead of logging into your bank account separately, enter your login details here and Checkbook will arrange the transfer automatically by ACH/digital check.</p>
-          <p>Neither Constant nor Checkbook store your details, and the service is free.</p>
         `,
         bankChosenMessage: 'We have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.',
         makeAnotherButton: 'Make another investment',
         updateBalanceNoteInWorkingTime: `Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience.`,
         updateBalanceNote: `Please note it might take <strong>up to 1 business day</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience.`,
-        autopayment: 'Direct debit',
+        autoPayment: 'Direct debit',
         btnAutoPayment: 'Choose your bank',
         autopayment_message: 'Auto payment message',
         autopaymentMsgSuccess: 'Autopay success',

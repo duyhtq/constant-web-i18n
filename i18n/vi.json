@@ -326,7 +326,7 @@
             },
             "borrowCoins": {
                 "title": "Crypto Credit",
-                "desc": "Borrow cash, get crypto. No exchanges"
+                "desc": "Borrow cash, get crypto. No exchanges."
             }
         }
     },
@@ -1738,7 +1738,7 @@
                     "title": "Nạp thêm tài sản thế chấp",
                     "amount": "Bạn muốn đổi bao nhiêu STAR?",
                     "requiredAmount": "Lượng được yêu cầu!",
-                    "maxAmount": "Số tiền của bạn phải ít hơn {max}.",
+                    "maxAmount": "Your amount must be <= {max}.",
                     "amountDesc": "Bạn muốn áp dụng bao nhiêu?",
                     "close": "Đóng",
                     "apply": "Đổi quà",
@@ -3350,6 +3350,8 @@
                     "collateralValue": "Collateral value",
                     "createdDate": "Created",
                     "dueDate": "Due",
+                    "price": "Price",
+                    "priceDesc": "price of your chosen crypto",
                     "collateralValueDesc": "This represents your collateral value as a percentage of your loan. It accounts for the interest accrued so far, as well as the repayment fee should you choose to repay today. If it falls to 110%, your collateral will be liquidated, and the difference refunded to you.",
                     "repayAddress": "Repay Address",
                     "collateralValueAtLiquid": "Liquidation price",
@@ -4298,13 +4300,13 @@
         "banner": {
             "title": "<h2> Đặt mức lãi suất bạn muốn. </ h2>\n  <h2> Không có vốn tối thiểu. </ h2>\n  <h2> Chỉ đầu tư vào các khoản vay có bảo đảm. </ h2>\n  </span>\n  <br />\n  <h5>\n  Các khoản đầu tư của bạn được hỗ trợ hoàn toàn bằng tài sản thế chấp của người vay. Phần không được cho vay sẽ tự động nhận 5% lãi kép và có thể rút bất kỳ lúc nào. \n </h5>",
             "title1": "\n<h1>Trải nghiệm nền tảng cho vay ngang hàng an toàn 100%.</h1>      ",
-            "subTitle": "Your investments are fully backed by borrower collateral and smart contracts. Unmatched portions earn an automatic 4% APY, and can be withdrawn anytime.",
+            "subTitle": "Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.",
             "cta": "Bắt đầu",
             "ctaDesc": "Hoàn toàn miễn phí",
             "invest": {
                 "title": "Đầu tư theo cách bạn muốn",
                 "num": "9.00%",
-                "cap": "Không yêu cầu vốn tối thiểu. Tuyệt đối an toàn.",
+                "cap": "Start from just $50. Fully secured.",
                 "btn": "Đầu tư",
                 "btnTrial": "Nhận $1,000 để bắt đầu"
             },
@@ -4659,48 +4661,62 @@
                 "importantMsg": "Hãy nhớ điền mã giao dịch {referenceNumber} trong phần nội dung chuyển khoản, từ đó chúng tôi có thể xử lý khoản tiền gửi càng nhanh càng tốt.",
                 "minuteWindow": "Vui lòng hoàn tất chuyển khoản của bạn trong vòng 3 ngày.",
                 "minuteWindowDescription": "Vì mục đích bảo mật, thời gian hiệu lực sẽ hết thời gian sau 3 ngày. Nếu bạn cần lâu hơn một chút, chỉ cần nhập lại số tiền bạn muốn đầu tư khi bạn đã sẵn sàng.",
-                "referNote": "Số tham chiếu của bạn là {ref_number}",
-                "referNoteDesc": "Để quá trình gửi tiền dễ dàng, vui lòng viết rõ số tham chiếu này khi thực hiện chuyển khoản ngân hàng.\n \n",
-                "googleNoteDesc": "To streamline the deposit process, please include this reference number when sending your money using Google Pay.",
-                "venmoNoteDesc": "To streamline the deposit process, please include this reference number when sending your money using Venmo.",
-                "paypalNoteDesc": "To streamline the deposit process, please include this reference number when sending your money using PayPal.",
-                "zelleNote": "Trước khi thực hiện chuyển khoản, vui lòng nhập tên đầy đủ được liên kết với tài khoản Zelle tại đây\n \n",
-                "zellePlaceholder": "Vui lòng nhập đầy đủ họ và tên",
-                "zelleSubmit": "Gửi",
+                "referNote": "Your reference number is {refNumber}",
                 "backOrderBook": "Trở lại",
                 "confirmMessage": "Sau khi bạn đã thực hiện chuyển khoản, xin vui lòng bấm xác nhận.",
                 "confirmButton": "Xác nhận ",
                 "minRate": "Lãi suất",
                 "maxTerm": "Kì hạn tối đa",
                 "btnConfirm": "Xác nhận",
-                "btnBack": "Trở lại",
-                "zelleTitle": "\n<p className=\"bold\">Sử dụng <strong>Zelle</strong> để được hỗ trợ nhanh nhất.</p>        ",
-                "zelleDesc": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n          <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n        ",
-                "googleDesc": "\n          <p>Google Pay is a fast, safe payment tool linked to your Google account. To get started, log into Google Pay and link a payment method (such as a bank card). Then enter the details on the right in your Google Pay account and click send.</p>\n        ",
-                "venmoDesc": "\n          <p>Venmo is a fast, easy, and convenient payment app from the makers of PayPal </p>\n          <p>To use Venmo, simply download the app and send your money to us using the details on the right-hand side of this page.</p>\n        ",
-                "paypalDesc": "PayPal is one of the world’s most trusted and secure payment services. To get started, create a free PayPal account and link a card or bank account. Then enter the details on the right from your PayPal account and click send.",
-                "zelleInfo": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>{email}</strong></p>\n          <p>Full name: <strong>{name}</strong></p>\n          <p>Type: <strong>{type}</strong></p>\n        ",
+                "paymentMethods": {
+                    "0": {
+                        "desc": "\n              <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.</p>\n              <p>If you don’t bank with any of those listed, no problem. You can transfer from any bank account, but please note that your bank might charge you a fee.</p>\n            ",
+                        "referNoteDesc": "To streamline the deposit process, please include this reference number when making the bank transfer."
+                    },
+                    "-1": {
+                        "desc": "\n              <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n              <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n            ",
+                        "paymentInfo": "\n              <div class=\"row\">\n                <div class=\"col\">\n                    <label>Amount</label>\n                    <p>{amount} USD</p>\n                </div>\n                <div class=\"col\">\n                    <label>Send to</label>\n                    <p>{email}</p>\n                </div>\n              </div>\n              <div class=\"row\">\n                <div class=\"col\">\n                    <label>Full name</label>\n                    <p>{name}</p>\n                </div>\n                <div class=\"col\">\n                    <label>Type</label>\n                    <p>{type}</p>\n                </div>\n              </div>\n            ",
+                        "note": "Before making a transfer, please enter the full name associated with the Zelle account here",
+                        "placeholder": "Please enter the full name here",
+                        "submitButton": "Submit",
+                        "referNoteDesc": "To streamline the deposit process, please include this reference number when making the bank transfer."
+                    },
+                    "-2": {
+                        "desc": "\n              <p>We’ve partnered with Checkbook to make bank transfers even easier.</p>\n              <p>Instead of logging into your bank account separately, enter your login details here and Checkbook will arrange the transfer automatically by ACH/digital check.</p>\n              <p>Neither Constant nor Checkbook store your details, and the service is free.</p>\n            ",
+                        "referNoteDesc": " "
+                    },
+                    "-3": {
+                        "desc": "\n              <p>Google Pay is a fast, safe payment tool linked to your Google account. To get started, log into Google Pay and link a payment method (such as a bank card). Then enter the details on the right in your Google Pay account and click send.</p>\n            ",
+                        "paymentInfo": "\n              <div class=\"row\">\n                <div class=\"col\">\n                    <label>Amount</label>\n                    <p>{amount} USD</p>\n                </div>\n                <div class=\"col\">\n                    <label>Send to</label>\n                    <p>{email}</p>\n                </div>\n              </div>\n            ",
+                        "note": "Before making a transfer, please enter the email associated with your Google Pay account below:",
+                        "placeholder": "Please enter the email here",
+                        "submitButton": "Submit",
+                        "referNoteDesc": "To streamline the deposit process, please include this reference number when sending your money using Google Pay."
+                    },
+                    "-4": {
+                        "desc": "\n              <p>Venmo is a fast, easy, and convenient payment app from the makers of PayPal </p>\n              <p>To use Venmo, simply download the app and send your money to us using the details on the right-hand side of this page.</p>\n            ",
+                        "paymentInfo": "\n              <div class=\"row\">\n                <div class=\"col\">\n                    <label>Amount</label>\n                    <p>{amount} USD</p>\n                </div>\n                <div class=\"col\">\n                    <label>Send to</label>\n                    <p>{phone}</p>\n                </div>\n              </div>\n            ",
+                        "note": "Before making a transfer, please enter the phone number associated with your Venmo account below:",
+                        "placeholder": "Please enter the phone number here",
+                        "submitButton": "Submit",
+                        "referNoteDesc": "To streamline the deposit process, please include this reference number when sending your money using Venmo."
+                    },
+                    "-5": {
+                        "desc": "\n              <p>PayPal is one of the world’s most trusted and secure payment services. To get started, create a free PayPal account and link a card or bank account. Then enter the details on the right from your PayPal account and click send.</p>\n            ",
+                        "paymentInfo": "\n              <div class=\"row\">\n                <div class=\"col\">\n                    <label>Amount</label>\n                    <p>{amount} USD</p>\n                </div>\n                <div class=\"col\">\n                    <label>Send to</label>\n                    <p>{email}</p>\n                </div>\n              </div>\n              <div class=\"row\">\n                <div class=\"col\">\n                    <label>Full name</label>\n                    <p>{name}</p>\n                </div>\n                <div class=\"col\">\n                    <label>Type</label>\n                    <p>{type}</p>\n                </div>\n              </div>\n            ",
+                        "note": "Before making a transfer, please enter the email associated with your PayPal account below:",
+                        "placeholder": "Please enter the email here",
+                        "submitButton": "Submit",
+                        "referNoteDesc": "To streamline the deposit process, please include this reference number when sending your money using PayPal."
+                    }
+                },
                 "zelle": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <p>Full name: <strong>Const LLC</strong></p>\n          <p>Type: <strong>Personal Account</strong></p>\n          <br /><br />\n          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>\n          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n        ",
-                "google": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>{email}</strong></p>\n        ",
-                "googleNote": "Before making a transfer, please enter the email associated with your Google Pay account below:",
-                "googlePlaceholder": "Please enter the email here",
-                "googleSubmit": "Submit",
-                "venmo": "\n        <p>Amount: {amount} USD</p>\n        <p>Send to: <strong>{phone}</strong></p>\n        ",
-                "venmoNote": "Before making a transfer, please enter the phone number associated with your Venmo account below:",
-                "venmoPlaceholder": "Please enter the phone number here",
-                "venmoSubmit": "Submit",
-                "paypal": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>{email}</strong></p>\n          <p>Full name: <strong>{name}</strong></p>\n          <p>Type: <strong>{type}</strong></p>\n        ",
-                "paypalNote": "Before making a transfer, please enter the email associated with your PayPal account below:",
-                "paypalPlaceholder": "Please enter the email here",
-                "paypalSubmit": "Submit",
                 "bankChosenMessage1": "\n<p>Với chuyển khoản ngân hàng, chúng tôi có tài khoản ở hầu hết các ngân hàng lớn để giao dịch được thuận tiện.</p>\n          <p>Xin vui lòng chọn ngân hàng nào thuận tiện nhất cho bạn để giao dịch.</p>        ",
-                "bankTransfer": "\n          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.</p>\n          <p>If you don’t bank with any of those listed, no problem. You can transfer from any bank account, but please note that your bank might charge you a fee.</p>\n        ",
-                "bankAutoPaymentMessage": "\n          <p>We’ve partnered with Checkbook to make bank transfers even easier.</p>\n          <p>Instead of logging into your bank account separately, enter your login details here and Checkbook will arrange the transfer automatically by ACH/digital check.</p>\n          <p>Neither Constant nor Checkbook store your details, and the service is free.</p>\n        ",
                 "bankChosenMessage": "Chúng tôi có tài khoản ở rất nhiều các ngân hàng lớn để bạn chuyển khoản dễ dàng hơn. Xin vui lòng chọn ngân hàng thuận tiện nhất với bạn để thực hiện chuyển khoản.",
                 "makeAnotherButton": "Đầu tư một khoản khác",
                 "updateBalanceNoteInWorkingTime": "Xin lưu ý rằng có thể mất <strong> tối đa 1 giờ </ strong> để cập nhật số dư của bạn sau khi nhận được khoản tiền gửi của bạn. Chúng tôi đang nỗ lực để giảm thời gian này, vì vậy cảm ơn sự kiên nhẫn của bạn.",
                 "updateBalanceNote": "Xin lưu ý rằng có thể mất <strong> tối đa 1 giờ </ strong> để cập nhật số dư của bạn sau khi nhận được khoản tiền gửi của bạn. Chúng tôi đang nỗ lực để giảm thời gian này, vì vậy cảm ơn sự kiên nhẫn của bạn.",
-                "autopayment": "Ghi nợ trực tiếp",
+                "autoPayment": "Direct debit",
                 "btnAutoPayment": "Chọn ngân hàng của bạn",
                 "autopayment_message": "Tin nhắn tự động thanh toán",
                 "autopaymentMsgSuccess": "Tự động thanh toán thành công",
@@ -4709,6 +4725,7 @@
                 "deletePaymentItemMsgFailed": "Xóa bỏ thất bại",
                 "btnSubmit": "Gửi",
                 "btnRemove": "Xoá",
+                "btnBack": "Trở lại",
                 "btnAdd": "Thêm",
                 "selectExistingBank": "Chọn ngân hàng hiện tại hoặc thêm ngân hàng mới",
                 "loginTitle": "Đăng nhập trực tiếp vào tài khoản ngân hàng của bạn",

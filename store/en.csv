@@ -244,7 +244,7 @@
 %%%.headerBar.extraMenu.borrowPRV.title%%%,"Crypto Incognito Loans"
 %%%.headerBar.extraMenu.borrowPRV.desc%%%,"Borrow against PRV from 6% APR. Secure escrow. No credit checks"
 %%%.headerBar.extraMenu.borrowCoins.title%%%,"Crypto Credit"
-%%%.headerBar.extraMenu.borrowCoins.desc%%%,"Borrow cash, get crypto. No exchanges"
+%%%.headerBar.extraMenu.borrowCoins.desc%%%,"Borrow cash, get crypto. No exchanges."
 %%%.error.required%%%,"Required"
 %%%.error.requiredOne%%%,"Please fill in the required fields."
 %%%.error.greaterThan%%%,"Please enter a number greater than {min}"
@@ -1602,7 +1602,7 @@
 %%%.me.proSaving.listApplications.rewardFrom.title%%%,"Make more deposit for your collateral"
 %%%.me.proSaving.listApplications.rewardFrom.amount%%%,"How many STAR do you want to redeem?"
 %%%.me.proSaving.listApplications.rewardFrom.requiredAmount%%%,"Amount is required!"
-%%%.me.proSaving.listApplications.rewardFrom.maxAmount%%%,"Your amount must be less than {max}."
+%%%.me.proSaving.listApplications.rewardFrom.maxAmount%%%,"Your amount must be <= {max}."
 %%%.me.proSaving.listApplications.rewardFrom.amountDesc%%%,"How much do you want to apply?"
 %%%.me.proSaving.listApplications.rewardFrom.close%%%,"Close"
 %%%.me.proSaving.listApplications.rewardFrom.apply%%%,"Redeem"
@@ -3440,6 +3440,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.constantC2CLoan.listApplications.itemMatched.collateralValue%%%,"Collateral value"
 %%%.home.constantC2CLoan.listApplications.itemMatched.createdDate%%%,"Created"
 %%%.home.constantC2CLoan.listApplications.itemMatched.dueDate%%%,"Due"
+%%%.home.constantC2CLoan.listApplications.itemMatched.price%%%,"Price"
+%%%.home.constantC2CLoan.listApplications.itemMatched.priceDesc%%%,"price of your chosen crypto"
 %%%.home.constantC2CLoan.listApplications.itemMatched.collateralValueDesc%%%,"This represents your collateral value as a percentage of your loan. It accounts for the interest accrued so far, as well as the repayment fee should you choose to repay today. If it falls to 110%, your collateral will be liquidated, and the difference refunded to you."
 %%%.home.constantC2CLoan.listApplications.itemMatched.repayAddress%%%,"Repay Address"
 %%%.home.constantC2CLoan.listApplications.itemMatched.collateralValueAtLiquid%%%,"Liquidation price"
@@ -4492,13 +4494,13 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.newHome.banner.title1%%%,"
         <h1>The world’s first <span class=""darkorange4"">fully secured</span> peer-to-peer lending platform.</h1>
       "
-%%%.newHome.banner.subTitle%%%,"Your investments are fully backed by borrower collateral and smart contracts. Unmatched portions earn an automatic 4% APY, and can be withdrawn anytime."
+%%%.newHome.banner.subTitle%%%,"Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free."
 %%%.newHome.banner.cta%%%,"Open an account"
 %%%.newHome.banner.ctaDesc%%%,"
         It’s free to open an account. Available locations: World."
 %%%.newHome.banner.invest.title%%%,"Invest the way you want"
 %%%.newHome.banner.invest.num%%%,"9.00%"
-%%%.newHome.banner.invest.cap%%%,"No minimum capital. Fully secured."
+%%%.newHome.banner.invest.cap%%%,"Start from just $50. Fully secured."
 %%%.newHome.banner.invest.btn%%%,"Invest"
 %%%.newHome.banner.invest.btnTrial%%%,"Get $1000 to start"
 %%%.newHome.banner.borrow.title%%%,"Borrow the way you want"
@@ -4758,42 +4760,122 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home1.lendingSection.confirm.importantMsg%%%,"Do include your reference number {referenceNumber} in the transfer description."
 %%%.home1.lendingSection.confirm.minuteWindow%%%,"15 MINUTE WINDOW:"
 %%%.home1.lendingSection.confirm.minuteWindowDescription%%%,"Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled."
-%%%.home1.lendingSection.confirm.referNote%%%,"Your reference number is {ref_number}"
-%%%.home1.lendingSection.confirm.referNoteDesc%%%,"To streamline the deposit process, please include this reference number when making the bank transfer."
-%%%.home1.lendingSection.confirm.googleNoteDesc%%%,"To streamline the deposit process, please include this reference number when sending your money using Google Pay."
-%%%.home1.lendingSection.confirm.venmoNoteDesc%%%,"To streamline the deposit process, please include this reference number when sending your money using Venmo."
-%%%.home1.lendingSection.confirm.paypalNoteDesc%%%,"To streamline the deposit process, please include this reference number when sending your money using PayPal."
-%%%.home1.lendingSection.confirm.zelleNote%%%,"Before making a transfer, please enter the full name associated with the Zelle account here"
-%%%.home1.lendingSection.confirm.zellePlaceholder%%%,"Please enter the full name here"
-%%%.home1.lendingSection.confirm.zelleSubmit%%%,"Submit"
+%%%.home1.lendingSection.confirm.referNote%%%,"Your reference number is {refNumber}"
 %%%.home1.lendingSection.confirm.backOrderBook%%%,"Buy more Constant"
 %%%.home1.lendingSection.confirm.confirmMessage%%%,"Please make payment and click ""Confirm payment"""
 %%%.home1.lendingSection.confirm.confirmButton%%%,"Confirm payment"
 %%%.home1.lendingSection.confirm.minRate%%%,"Min rate"
 %%%.home1.lendingSection.confirm.maxTerm%%%,"Max term"
 %%%.home1.lendingSection.confirm.btnConfirm%%%,"Confirm"
-%%%.home1.lendingSection.confirm.btnBack%%%,"Back"
-%%%.home1.lendingSection.confirm.zelleTitle%%%,"
-            <p className=""bold"">The quickest way is via <strong>Zelle</strong>.</p>
-        "
-%%%.home1.lendingSection.confirm.zelleDesc%%%,"
-          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>
-          <p>Please select the bank that is most convenient for you to transfer funds to.</p>
-        "
-%%%.home1.lendingSection.confirm.googleDesc%%%,"
-          <p>Google Pay is a fast, safe payment tool linked to your Google account. To get started, log into Google Pay and link a payment method (such as a bank card). Then enter the details on the right in your Google Pay account and click send.</p>
-        "
-%%%.home1.lendingSection.confirm.venmoDesc%%%,"
-          <p>Venmo is a fast, easy, and convenient payment app from the makers of PayPal </p>
-          <p>To use Venmo, simply download the app and send your money to us using the details on the right-hand side of this page.</p>
-        "
-%%%.home1.lendingSection.confirm.paypalDesc%%%,"PayPal is one of the world’s most trusted and secure payment services. To get started, create a free PayPal account and link a card or bank account. Then enter the details on the right from your PayPal account and click send."
-%%%.home1.lendingSection.confirm.zelleInfo%%%,"
-          <p>Amount: {amount} USD</p>
-          <p>Send to: <strong>{email}</strong></p>
-          <p>Full name: <strong>{name}</strong></p>
-          <p>Type: <strong>{type}</strong></p>
-        "
+%%%.home1.lendingSection.confirm.paymentMethods.0.desc%%%,"
+              <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.</p>
+              <p>If you don’t bank with any of those listed, no problem. You can transfer from any bank account, but please note that your bank might charge you a fee.</p>
+            "
+%%%.home1.lendingSection.confirm.paymentMethods.0.referNoteDesc%%%,"To streamline the deposit process, please include this reference number when making the bank transfer."
+%%%.home1.lendingSection.confirm.paymentMethods.-1.desc%%%,"
+              <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>
+              <p>Please select the bank that is most convenient for you to transfer funds to.</p>
+            "
+%%%.home1.lendingSection.confirm.paymentMethods.-1.paymentInfo%%%,"
+              <div class=""row"">
+                <div class=""col"">
+                    <label>Amount</label>
+                    <p>{amount} USD</p>
+                </div>
+                <div class=""col"">
+                    <label>Send to</label>
+                    <p>{email}</p>
+                </div>
+              </div>
+              <div class=""row"">
+                <div class=""col"">
+                    <label>Full name</label>
+                    <p>{name}</p>
+                </div>
+                <div class=""col"">
+                    <label>Type</label>
+                    <p>{type}</p>
+                </div>
+              </div>
+            "
+%%%.home1.lendingSection.confirm.paymentMethods.-1.note%%%,"Before making a transfer, please enter the full name associated with the Zelle account here"
+%%%.home1.lendingSection.confirm.paymentMethods.-1.placeholder%%%,"Please enter the full name here"
+%%%.home1.lendingSection.confirm.paymentMethods.-1.submitButton%%%,"Submit"
+%%%.home1.lendingSection.confirm.paymentMethods.-1.referNoteDesc%%%,"To streamline the deposit process, please include this reference number when making the bank transfer."
+%%%.home1.lendingSection.confirm.paymentMethods.-2.desc%%%,"
+              <p>We’ve partnered with Checkbook to make bank transfers even easier.</p>
+              <p>Instead of logging into your bank account separately, enter your login details here and Checkbook will arrange the transfer automatically by ACH/digital check.</p>
+              <p>Neither Constant nor Checkbook store your details, and the service is free.</p>
+            "
+%%%.home1.lendingSection.confirm.paymentMethods.-2.referNoteDesc%%%," "
+%%%.home1.lendingSection.confirm.paymentMethods.-3.desc%%%,"
+              <p>Google Pay is a fast, safe payment tool linked to your Google account. To get started, log into Google Pay and link a payment method (such as a bank card). Then enter the details on the right in your Google Pay account and click send.</p>
+            "
+%%%.home1.lendingSection.confirm.paymentMethods.-3.paymentInfo%%%,"
+              <div class=""row"">
+                <div class=""col"">
+                    <label>Amount</label>
+                    <p>{amount} USD</p>
+                </div>
+                <div class=""col"">
+                    <label>Send to</label>
+                    <p>{email}</p>
+                </div>
+              </div>
+            "
+%%%.home1.lendingSection.confirm.paymentMethods.-3.note%%%,"Before making a transfer, please enter the email associated with your Google Pay account below:"
+%%%.home1.lendingSection.confirm.paymentMethods.-3.placeholder%%%,"Please enter the email here"
+%%%.home1.lendingSection.confirm.paymentMethods.-3.submitButton%%%,"Submit"
+%%%.home1.lendingSection.confirm.paymentMethods.-3.referNoteDesc%%%,"To streamline the deposit process, please include this reference number when sending your money using Google Pay."
+%%%.home1.lendingSection.confirm.paymentMethods.-4.desc%%%,"
+              <p>Venmo is a fast, easy, and convenient payment app from the makers of PayPal </p>
+              <p>To use Venmo, simply download the app and send your money to us using the details on the right-hand side of this page.</p>
+            "
+%%%.home1.lendingSection.confirm.paymentMethods.-4.paymentInfo%%%,"
+              <div class=""row"">
+                <div class=""col"">
+                    <label>Amount</label>
+                    <p>{amount} USD</p>
+                </div>
+                <div class=""col"">
+                    <label>Send to</label>
+                    <p>{phone}</p>
+                </div>
+              </div>
+            "
+%%%.home1.lendingSection.confirm.paymentMethods.-4.note%%%,"Before making a transfer, please enter the phone number associated with your Venmo account below:"
+%%%.home1.lendingSection.confirm.paymentMethods.-4.placeholder%%%,"Please enter the phone number here"
+%%%.home1.lendingSection.confirm.paymentMethods.-4.submitButton%%%,"Submit"
+%%%.home1.lendingSection.confirm.paymentMethods.-4.referNoteDesc%%%,"To streamline the deposit process, please include this reference number when sending your money using Venmo."
+%%%.home1.lendingSection.confirm.paymentMethods.-5.desc%%%,"
+              <p>PayPal is one of the world’s most trusted and secure payment services. To get started, create a free PayPal account and link a card or bank account. Then enter the details on the right from your PayPal account and click send.</p>
+            "
+%%%.home1.lendingSection.confirm.paymentMethods.-5.paymentInfo%%%,"
+              <div class=""row"">
+                <div class=""col"">
+                    <label>Amount</label>
+                    <p>{amount} USD</p>
+                </div>
+                <div class=""col"">
+                    <label>Send to</label>
+                    <p>{email}</p>
+                </div>
+              </div>
+              <div class=""row"">
+                <div class=""col"">
+                    <label>Full name</label>
+                    <p>{name}</p>
+                </div>
+                <div class=""col"">
+                    <label>Type</label>
+                    <p>{type}</p>
+                </div>
+              </div>
+            "
+%%%.home1.lendingSection.confirm.paymentMethods.-5.note%%%,"Before making a transfer, please enter the email associated with your PayPal account below:"
+%%%.home1.lendingSection.confirm.paymentMethods.-5.placeholder%%%,"Please enter the email here"
+%%%.home1.lendingSection.confirm.paymentMethods.-5.submitButton%%%,"Submit"
+%%%.home1.lendingSection.confirm.paymentMethods.-5.referNoteDesc%%%,"To streamline the deposit process, please include this reference number when sending your money using PayPal."
 %%%.home1.lendingSection.confirm.zelle%%%,"
           <p>Amount: {amount} USD</p>
           <p>Send to: <strong>finance@myconstant.com</strong></p>
@@ -4803,47 +4885,15 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>
           <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>
         "
-%%%.home1.lendingSection.confirm.google%%%,"
-          <p>Amount: {amount} USD</p>
-          <p>Send to: <strong>{email}</strong></p>
-        "
-%%%.home1.lendingSection.confirm.googleNote%%%,"Before making a transfer, please enter the email associated with your Google Pay account below:"
-%%%.home1.lendingSection.confirm.googlePlaceholder%%%,"Please enter the email here"
-%%%.home1.lendingSection.confirm.googleSubmit%%%,"Submit"
-%%%.home1.lendingSection.confirm.venmo%%%,"
-        <p>Amount: {amount} USD</p>
-        <p>Send to: <strong>{phone}</strong></p>
-        "
-%%%.home1.lendingSection.confirm.venmoNote%%%,"Before making a transfer, please enter the phone number associated with your Venmo account below:"
-%%%.home1.lendingSection.confirm.venmoPlaceholder%%%,"Please enter the phone number here"
-%%%.home1.lendingSection.confirm.venmoSubmit%%%,"Submit"
-%%%.home1.lendingSection.confirm.paypal%%%,"
-          <p>Amount: {amount} USD</p>
-          <p>Send to: <strong>{email}</strong></p>
-          <p>Full name: <strong>{name}</strong></p>
-          <p>Type: <strong>{type}</strong></p>
-        "
-%%%.home1.lendingSection.confirm.paypalNote%%%,"Before making a transfer, please enter the email associated with your PayPal account below:"
-%%%.home1.lendingSection.confirm.paypalPlaceholder%%%,"Please enter the email here"
-%%%.home1.lendingSection.confirm.paypalSubmit%%%,"Submit"
 %%%.home1.lendingSection.confirm.bankChosenMessage1%%%,"
           <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>
           <p>Please select the bank that is most convenient for you to transfer funds to.</p>
-        "
-%%%.home1.lendingSection.confirm.bankTransfer%%%,"
-          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.</p>
-          <p>If you don’t bank with any of those listed, no problem. You can transfer from any bank account, but please note that your bank might charge you a fee.</p>
-        "
-%%%.home1.lendingSection.confirm.bankAutoPaymentMessage%%%,"
-          <p>We’ve partnered with Checkbook to make bank transfers even easier.</p>
-          <p>Instead of logging into your bank account separately, enter your login details here and Checkbook will arrange the transfer automatically by ACH/digital check.</p>
-          <p>Neither Constant nor Checkbook store your details, and the service is free.</p>
         "
 %%%.home1.lendingSection.confirm.bankChosenMessage%%%,"We have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to."
 %%%.home1.lendingSection.confirm.makeAnotherButton%%%,"Make another investment"
 %%%.home1.lendingSection.confirm.updateBalanceNoteInWorkingTime%%%,"Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience."
 %%%.home1.lendingSection.confirm.updateBalanceNote%%%,"Please note it might take <strong>up to 1 business day</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience."
-%%%.home1.lendingSection.confirm.autopayment%%%,"Direct debit"
+%%%.home1.lendingSection.confirm.autoPayment%%%,"Direct debit"
 %%%.home1.lendingSection.confirm.btnAutoPayment%%%,"Choose your bank"
 %%%.home1.lendingSection.confirm.autopayment_message%%%,"Auto payment message"
 %%%.home1.lendingSection.confirm.autopaymentMsgSuccess%%%,"Autopay success"
@@ -4852,6 +4902,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home1.lendingSection.confirm.deletePaymentItemMsgFailed%%%,"Delete Failed"
 %%%.home1.lendingSection.confirm.btnSubmit%%%,"Submit"
 %%%.home1.lendingSection.confirm.btnRemove%%%,"Remove"
+%%%.home1.lendingSection.confirm.btnBack%%%,"Back"
 %%%.home1.lendingSection.confirm.btnAdd%%%,"Add"
 %%%.home1.lendingSection.confirm.selectExistingBank%%%,"Select existing bank or add a new bank"
 %%%.home1.lendingSection.confirm.loginTitle%%%,"Log in directly to your bank account"

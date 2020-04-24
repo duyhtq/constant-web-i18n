@@ -142,11 +142,12 @@ export default {
     email: 'Email us at {email}',
     register: '2019 Constant',
     copyright: '{term} and {privacy}',
-    termOfUse: 'Terms of Use',
+    termOfService: 'Terms of Service',
     privacy: 'Privacy Policy',
     copyright2: '{term}',
     borrowerAgreement: 'Borrower agreement',
     investorAgreement: 'Investor agreement',
+    serviceAgreement: 'Loan Matching Service Agreement',
     AMLPolicy: 'AML Policy',
     membership: 'Membership',
     kycGuidelines: 'KYC guidelines',
@@ -1175,17 +1176,6 @@ export default {
         done: 'Successful',
         inProgress: 'Order in progress',
       },
-      agent: {
-        status: {
-          canceled: 'Cancelled',
-          timeout: 'Timed out',
-          transferMoneyToAgent: 'Waiting for buyer to send money',
-          waitAgentTransferMoney: 'Waiting for you to send money',
-          transferredMoneyToAgent: 'Received',
-          done: 'Successful',
-          inProgress: 'Order in progress',
-        },
-      },
       confirm: {
         title: {
           Cancel: 'Cancel order #{ID}',
@@ -1291,27 +1281,6 @@ export default {
       exportToExcel: 'Export to excel',
       openOrders: 'Open orders',
       requestExecute: 'Help',
-      agent: {
-        acceptSuccessfully: 'Your picked order have been accepted successfully',
-        cancelSuccessfully: 'Your picked order have been canceled successfully',
-        rejectSuccessfully: 'Your picked order have been rejected successfully',
-        rejectError: {
-          no_risk_detected:
-            'Your picked order, don\'t has risk, it can\'t reject.',
-          notDefined: 'Your picked order can\'t reject',
-        },
-        status: {
-          canceled: 'Cancelled',
-          timeout: 'Timed out',
-          transferMoneyToAgent: 'Your account will be credited once we have received your transfer',
-          waitAgentTransferMoney: 'Waiting for seller to send money',
-          transferredMoneyToAgent: ' ',
-          transferredMoneyToAgentInvest: ' ',
-          done: 'Successful',
-          inProgress: 'Order in progress',
-          approving: 'Waiting for admin approve',
-        },
-      },
       orderType: {
         0: 'Buy',
         1: 'Convert',
@@ -1399,7 +1368,15 @@ export default {
         fullName: 'Full name',
         userName: 'User name',
         email: 'Email',
-        zelleName: 'Zelle name',
+        phone: 'Phone',
+        paymentMethods: {
+          auto_bank: 'Checkbook',
+          email: 'Zelle',
+          google_pay: 'Google Pay',
+          venmo: 'Venmo',
+          paypal: 'Paypal',
+          fiat: 'Bank Transfer',
+        },
         status: {
           canceled: 'Cancelled',
           timeout: 'Order timed out',
@@ -1445,10 +1422,6 @@ export default {
     transferOrders: {
       approve: 'Approve',
       approveMess: 'Are you sure you want to approve this order?',
-      agent: {
-        approveSuccessfully: 'Your order have been approved successfully',
-        cancelSuccessfully: 'Your order have been cancelled successfully',
-      },
       cancel: 'Cancel',
       cancelMess: 'Are you sure you want to cancel this order?',
     },
@@ -2989,32 +2962,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         <p>Chat with us at <a href="telegram:{telegram}">{telegram}</a></p>
       `,
     },
-    agent: {
-      title: 'Become our Agent Now',
-      usAccount: 'Do you have US bank account?',
-      cryptAccount: 'Do you know about cryptocurrency',
-      minMaxBuy: 'What is the max/min amount of Constant you can buy?',
-      minMaxAccept: 'What is the max/min amount of Constant you can accept?',
-      minAmount: 'Min Amount',
-      maxAmount: 'Max Amount',
-      submit: 'Submit Application',
-      note: 'if you need me here',
-      intro: {
-        title: 'HOW TO BECOME AGENT',
-        howItWorks: 'How it works?',
-        subintroTitle: {
-          1: 'How are you?',
-        },
-        subintroDesc: {
-          1: 'I`m OKIE',
-        },
-      },
-      registerFailed: 'Your account have been submitted unsuccessfully',
-      pending: `
-        <p>Your account have been submitted successfully.</p>
-        <p>Please waiting for review and approve processing by admin</p>
-      `,
-    },
     transfer: {
       title: 'Transfer',
       caption: 'SEND CONSTANT ANYWHERE',
@@ -3218,7 +3165,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           <ol>
             <li>Transfer USD to one of our US bank accounts.</li>
             <li>Send any one of our supported stablecoins: USDT/USDC/TUSD/GUSD/PAX/USDS.</li>
-            <li>Repay the equivalent USD value in a supported cryptocurrency.</li>
+            <li>Repay the equivalent USD value using your collateral.</li>
           </ol>
           <p>Your balance will update when funds have been received in your Constant account.</p>
         `,
@@ -3319,6 +3266,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         `,
       },
       howItWorks: {
+        title: 'How it works',
         intro: `
           <p>Deposit cryptocurrency to secure cash, at the best rates on the market.</p>
           <p>Need cash? We accept major cryptocurrencies as collateral, in exchange for USD or the equivalent in your local currency. That means you’ll have cash to spend - without needing to sell your crypto.</p>
@@ -3770,9 +3718,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         question5: 'How do I repay a Crypto Credit loan?',
         answer5: `
           <p>You can repay your loan in the following ways:</p>
-            <P>1) Deposit USD or a supported stablecoin. <br/>
-            2) Deposit a supported cryptocurrency that matches the value of your loan.<br/>
-            3) Use your existing coin balance or USD balance to repay the value of your loan.</P> 
+            <p>1) Deposit USD or a supported stablecoin. <br/>
+            2) Repay the equivalent USD value using your collateral.</p> 
         `,
         question6: 'How do you protect my collateral?',
         answer6: `

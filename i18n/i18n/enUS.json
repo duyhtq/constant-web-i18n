@@ -140,11 +140,12 @@
         "email": "Email us at {email}",
         "register": "2019 Constant",
         "copyright": "{term} and {privacy}",
-        "termOfUse": "Terms of Use",
+        "termOfService": "Terms of Service",
         "privacy": "Privacy Policy",
         "copyright2": "{term}",
         "borrowerAgreement": "Borrower agreement",
         "investorAgreement": "Investor agreement",
+        "serviceAgreement": "Loan Matching Service Agreement",
         "AMLPolicy": "AML Policy",
         "membership": "Membership",
         "kycGuidelines": "KYC guidelines",
@@ -954,17 +955,6 @@
                 "done": "Successful",
                 "inProgress": "Order in progress"
             },
-            "agent": {
-                "status": {
-                    "canceled": "Cancelled",
-                    "timeout": "Timed out",
-                    "transferMoneyToAgent": "Waiting for buyer to send money",
-                    "waitAgentTransferMoney": "Waiting for you to send money",
-                    "transferredMoneyToAgent": " ",
-                    "done": "Successful",
-                    "inProgress": "Order in progress"
-                }
-            },
             "confirm": {
                 "title": {
                     "Cancel": "Cancel order #{ID}",
@@ -1029,26 +1019,6 @@
             "exportToExcel": "Export to excel",
             "openOrders": "Open orders",
             "requestExecute": "Help",
-            "agent": {
-                "acceptSuccessfully": "Your picked order have been accepted successfully",
-                "cancelSuccessfully": "Your picked order have been canceled successfully",
-                "rejectSuccessfully": "Your picked order have been rejected successfully",
-                "rejectError": {
-                    "no_risk_detected": "Your picked order, don't has risk, it can't reject.",
-                    "notDefined": "Your picked order can't reject"
-                },
-                "status": {
-                    "canceled": "Cancelled",
-                    "timeout": "Timed out",
-                    "transferMoneyToAgent": "Your account will be credited once we have received your transfer",
-                    "waitAgentTransferMoney": "Processing",
-                    "transferredMoneyToAgent": " ",
-                    "transferredMoneyToAgentInvest": " ",
-                    "done": "Successful",
-                    "inProgress": "Order in progress",
-                    "approving": "Waiting for admin approve"
-                }
-            },
             "orderType": {
                 "0": "Buy",
                 "1": "Convert",
@@ -1136,7 +1106,15 @@
                 "fullName": "Full name",
                 "userName": "User name",
                 "email": "Email",
-                "zelleName": "Zelle name",
+                "phone": "Phone",
+                "paymentMethods": {
+                    "auto_bank": "Checkbook",
+                    "email": "Zelle",
+                    "google_pay": "Google Pay",
+                    "venmo": "Venmo",
+                    "paypal": "Paypal",
+                    "fiat": "Bank Transfer"
+                },
                 "status": {
                     "canceled": "Cancelled",
                     "timeout": "Order timed out",
@@ -1182,10 +1160,6 @@
         "transferOrders": {
             "approve": "Approve",
             "approveMess": "Are you sure you want to approve this order?",
-            "agent": {
-                "approveSuccessfully": "Success!",
-                "cancelSuccessfully": "Your order have been cancelled successfully"
-            },
             "cancel": "Cancel",
             "cancelMess": "Are you sure you want to cancel this order?"
         },
@@ -2454,29 +2428,6 @@
             "confirmTemplate": "\n        <div name=thanks\">",
             "introHolderTemplate": "\n        <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n        <p>Email us at <a href=\"mailto:{email}\">{email}</a></p>\n        <p>Or</p>\n        <p>Chat with us at <a href=\"telegram:{telegram}\">{telegram}</a></p>\n      "
         },
-        "agent": {
-            "title": "Become our Agent Now",
-            "usAccount": "Do you have US bank account?",
-            "cryptAccount": "Do you know about cryptocurrency",
-            "minMaxBuy": "What is the max/min amount of Constant you can buy?",
-            "minMaxAccept": "What is the max/min amount of Constant you can accept?",
-            "minAmount": "Min Amount",
-            "maxAmount": "Max Amount",
-            "submit": "Submit Application",
-            "note": "if you need me here",
-            "intro": {
-                "title": "HOW TO BECOME AGENT",
-                "howItWorks": "How it works?",
-                "subintroTitle": {
-                    "1": "How are you?"
-                },
-                "subintroDesc": {
-                    "1": "I`m OKIE"
-                }
-            },
-            "registerFailed": "Your account have been submitted unsuccessfully",
-            "pending": "\n        <p>Your account have been submitted successfully.</p>\n        <p>Please waiting for review and approve processing by admin</p>\n      "
-        },
         "transfer": {
             "title": "Transfer",
             "caption": "How much do you want to send?",
@@ -2606,7 +2557,7 @@
                 "question8": "What is the LTV (Loan-to-Value) Ratio? Is it always the same?",
                 "answer8": "\n        <p>The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral.</p>\n      ",
                 "question9": "How do I repay my loan?",
-                "answer9": "\n          <p>We’ll deduct your repayment directly from your Constant account balance. Adding funds is easy. You can do one or a combination of the following:</p>\n          <ol>\n            <li>Transfer USD to one of our US bank accounts.</li>\n            <li>Send any one of our supported stablecoins: USDT/USDC/TUSD/GUSD/PAX/USDS.</li>\n            <li>Repay the equivalent USD value in a supported cryptocurrency.</li>\n          </ol>\n          <p>Your balance will update when funds have been received in your Constant account.</p>\n        ",
+                "answer9": "\n          <p>We’ll deduct your repayment directly from your Constant account balance. Adding funds is easy. You can do one or a combination of the following:</p>\n          <ol>\n            <li>Transfer USD to one of our US bank accounts.</li>\n            <li>Send any one of our supported stablecoins: USDT/USDC/TUSD/GUSD/PAX/USDS.</li>\n            <li>Repay the equivalent USD value using your collateral.</li>\n          </ol>\n          <p>Your balance will update when funds have been received in your Constant account.</p>\n        ",
                 "question10": "What happens if I repay late?",
                 "answer10": "The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due."
             },
@@ -2684,6 +2635,7 @@
                 "whatDesc3": "\n<p>No credit scoring or background checks. Get funds instantly, no month-long waiting games for approval.</p>        "
             },
             "howItWorks": {
+                "title": "How it works",
                 "intro": "\n          <p>Deposit cryptocurrency to secure cash, at the best rates on the market.</p>\n          <p>Need cash? We accept major cryptocurrencies as collateral, in exchange for USD or the equivalent in your local currency. That means you’ll have cash to spend - without needing to sell your crypto.</p>\n        ",
                 "step1": "STEP 1",
                 "title1": "1. Set your own terms",
@@ -2988,7 +2940,7 @@
                 "question4": "Am I borrowing cryptocurrency or USD?",
                 "answer4": "\n        You borrow USD that we then use to buy your chosen cryptocurrency for you. We do the hard work on the exchanges so you can focus on your trading strategy.\n        ",
                 "question5": "How do I repay a Crypto Credit loan?",
-                "answer5": "\n          <p>You can repay your loan in the following ways:</p>\n            <P>1) Deposit USD or a supported stablecoin. <br/>\n            2) Deposit a supported cryptocurrency that matches the value of your loan.<br/>\n            3) Use your existing coin balance or USD balance to repay the value of your loan.</P> \n        ",
+                "answer5": "\n          <p>You can repay your loan in the following ways:</p>\n            <p>1) Deposit USD or a supported stablecoin. <br/>\n            2) Repay the equivalent USD value using your collateral.</p> \n        ",
                 "question6": "How do you protect my collateral?",
                 "answer6": "\n          <p>Your collateral is stored in a BitGo cold wallet that’s insured to $100,000,000. This protects you against:</p>\n            <p> - Third-party hacks, copying, or theft of private keys.<br>\n             - Insider theft of dishonest acts by BitGo employees or executives.<br>\n             - Loss of keys.</p>\n          <p>When you repay, we co-sign the release of your collateral back into your coin balance and you can then withdraw it to any wallet address you choose.</p>\n          <a target=\"_blank\" href=\"https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral\">How we protect your collateral.</a>\n        ",
                 "question7": "How long will it take to match and get my cryptocurrency?",

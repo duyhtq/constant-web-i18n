@@ -99,11 +99,12 @@
 %%%.footer.email%%%,"Email us at {email}"
 %%%.footer.register%%%,"2019 Constant"
 %%%.footer.copyright%%%,"{term} and {privacy}"
-%%%.footer.termOfUse%%%,"Terms of Use"
+%%%.footer.termOfService%%%,"Terms of Service"
 %%%.footer.privacy%%%,"Privacy Policy"
 %%%.footer.copyright2%%%,"{term}"
 %%%.footer.borrowerAgreement%%%,"Borrower agreement"
 %%%.footer.investorAgreement%%%,"Investor agreement"
+%%%.footer.serviceAgreement%%%,"Loan Matching Service Agreement"
 %%%.footer.AMLPolicy%%%,"AML Policy"
 %%%.footer.membership%%%,"Membership"
 %%%.footer.kycGuidelines%%%,"KYC guidelines"
@@ -948,13 +949,6 @@
 %%%.me.localHistory.status.transferredMoneyToAgent%%%,"Funds have been sent to your bank account."
 %%%.me.localHistory.status.done%%%,"Successful"
 %%%.me.localHistory.status.inProgress%%%,"Order in progress"
-%%%.me.localHistory.agent.status.canceled%%%,"Cancelled"
-%%%.me.localHistory.agent.status.timeout%%%,"Timed out"
-%%%.me.localHistory.agent.status.transferMoneyToAgent%%%,"Waiting for buyer to send money"
-%%%.me.localHistory.agent.status.waitAgentTransferMoney%%%,"Waiting for you to send money"
-%%%.me.localHistory.agent.status.transferredMoneyToAgent%%%,"Received"
-%%%.me.localHistory.agent.status.done%%%,"Successful"
-%%%.me.localHistory.agent.status.inProgress%%%,"Order in progress"
 %%%.me.localHistory.confirm.title.Cancel%%%,"Cancel order #{ID}"
 %%%.me.localHistory.confirm.title.Approve%%%,"Confirm you’ve sent the money for order #{ID}"
 %%%.me.localHistory.confirm.title.Finish%%%,"Send Constant for order #{ID}"
@@ -1052,20 +1046,6 @@
 %%%.me.history.exportToExcel%%%,"Export to excel"
 %%%.me.history.openOrders%%%,"Open orders"
 %%%.me.history.requestExecute%%%,"Help"
-%%%.me.history.agent.acceptSuccessfully%%%,"Your picked order have been accepted successfully"
-%%%.me.history.agent.cancelSuccessfully%%%,"Your picked order have been canceled successfully"
-%%%.me.history.agent.rejectSuccessfully%%%,"Your picked order have been rejected successfully"
-%%%.me.history.agent.rejectError.no_risk_detected%%%,"Your picked order, don't has risk, it can't reject."
-%%%.me.history.agent.rejectError.notDefined%%%,"Your picked order can't reject"
-%%%.me.history.agent.status.canceled%%%,"Cancelled"
-%%%.me.history.agent.status.timeout%%%,"Timed out"
-%%%.me.history.agent.status.transferMoneyToAgent%%%,"Your account will be credited once we have received your transfer"
-%%%.me.history.agent.status.waitAgentTransferMoney%%%,"Waiting for seller to send money"
-%%%.me.history.agent.status.transferredMoneyToAgent%%%," "
-%%%.me.history.agent.status.transferredMoneyToAgentInvest%%%," "
-%%%.me.history.agent.status.done%%%,"Successful"
-%%%.me.history.agent.status.inProgress%%%,"Order in progress"
-%%%.me.history.agent.status.approving%%%,"Waiting for admin approve"
 %%%.me.history.orderType.0%%%,"Buy"
 %%%.me.history.orderType.1%%%,"Convert"
 %%%.me.history.orderType.2%%%,"Transfer"
@@ -1138,7 +1118,13 @@
 %%%.me.history.user.fullName%%%,"Full name"
 %%%.me.history.user.userName%%%,"User name"
 %%%.me.history.user.email%%%,"Email"
-%%%.me.history.user.zelleName%%%,"Zelle name"
+%%%.me.history.user.phone%%%,"Phone"
+%%%.me.history.user.paymentMethods.auto_bank%%%,"Checkbook"
+%%%.me.history.user.paymentMethods.email%%%,"Zelle"
+%%%.me.history.user.paymentMethods.google_pay%%%,"Google Pay"
+%%%.me.history.user.paymentMethods.venmo%%%,"Venmo"
+%%%.me.history.user.paymentMethods.paypal%%%,"Paypal"
+%%%.me.history.user.paymentMethods.fiat%%%,"Bank Transfer"
 %%%.me.history.user.status.canceled%%%,"Cancelled"
 %%%.me.history.user.status.timeout%%%,"Order timed out"
 %%%.me.history.user.status.transferMoneyToAgent%%%,"Please make a transfer to complete your deposit"
@@ -1173,8 +1159,6 @@
 %%%.me.history.withdrawStatus.6%%%,"<span style=""color: rgb(227,152,77)"">Order timed out</span>"
 %%%.me.transferOrders.approve%%%,"Approve"
 %%%.me.transferOrders.approveMess%%%,"Are you sure you want to approve this order?"
-%%%.me.transferOrders.agent.approveSuccessfully%%%,"Your order have been approved successfully"
-%%%.me.transferOrders.agent.cancelSuccessfully%%%,"Your order have been cancelled successfully"
 %%%.me.transferOrders.cancel%%%,"Cancel"
 %%%.me.transferOrders.cancelMess%%%,"Are you sure you want to cancel this order?"
 %%%.me.accountLevel.head_text%%%,"Our verification process typically takes just a few minutes. This may take slightly longer outside business hours. Your information will remain 100% private."
@@ -2297,24 +2281,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         <p>Or</p>
         <p>Chat with us at <a href=""telegram:{telegram}"">{telegram}</a></p>
       "
-%%%.home.agent.title%%%,"Become our Agent Now"
-%%%.home.agent.usAccount%%%,"Do you have US bank account?"
-%%%.home.agent.cryptAccount%%%,"Do you know about cryptocurrency"
-%%%.home.agent.minMaxBuy%%%,"What is the max/min amount of Constant you can buy?"
-%%%.home.agent.minMaxAccept%%%,"What is the max/min amount of Constant you can accept?"
-%%%.home.agent.minAmount%%%,"Min Amount"
-%%%.home.agent.maxAmount%%%,"Max Amount"
-%%%.home.agent.submit%%%,"Submit Application"
-%%%.home.agent.note%%%,"if you need me here"
-%%%.home.agent.intro.title%%%,"HOW TO BECOME AGENT"
-%%%.home.agent.intro.howItWorks%%%,"How it works?"
-%%%.home.agent.intro.subintroTitle.1%%%,"How are you?"
-%%%.home.agent.intro.subintroDesc.1%%%,"I`m OKIE"
-%%%.home.agent.registerFailed%%%,"Your account have been submitted unsuccessfully"
-%%%.home.agent.pending%%%,"
-        <p>Your account have been submitted successfully.</p>
-        <p>Please waiting for review and approve processing by admin</p>
-      "
 %%%.home.transfer.title%%%,"Transfer"
 %%%.home.transfer.caption%%%,"SEND CONSTANT ANYWHERE"
 %%%.home.transfer.transferType%%%,"Transfer Type"
@@ -2471,7 +2437,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           <ol>
             <li>Transfer USD to one of our US bank accounts.</li>
             <li>Send any one of our supported stablecoins: USDT/USDC/TUSD/GUSD/PAX/USDS.</li>
-            <li>Repay the equivalent USD value in a supported cryptocurrency.</li>
+            <li>Repay the equivalent USD value using your collateral.</li>
           </ol>
           <p>Your balance will update when funds have been received in your Constant account.</p>
         "
@@ -2555,6 +2521,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.constantLoan.what.whatDesc3%%%,"
           <p>Constant is for everyone. No credit scoring, background checks or month-long waiting games for approval.</p>
         "
+%%%.home.constantLoan.howItWorks.title%%%,"How it works"
 %%%.home.constantLoan.howItWorks.intro%%%,"
           <p>Deposit cryptocurrency to secure cash, at the best rates on the market.</p>
           <p>Need cash? We accept major cryptocurrencies as collateral, in exchange for USD or the equivalent in your local currency. That means you’ll have cash to spend - without needing to sell your crypto.</p>
@@ -2958,9 +2925,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.constantC2CLoan.faqs.question5%%%,"How do I repay a Crypto Credit loan?"
 %%%.home.constantC2CLoan.faqs.answer5%%%,"
           <p>You can repay your loan in the following ways:</p>
-            <P>1) Deposit USD or a supported stablecoin. <br/>
-            2) Deposit a supported cryptocurrency that matches the value of your loan.<br/>
-            3) Use your existing coin balance or USD balance to repay the value of your loan.</P> 
+            <p>1) Deposit USD or a supported stablecoin. <br/>
+            2) Repay the equivalent USD value using your collateral.</p> 
         "
 %%%.home.constantC2CLoan.faqs.question6%%%,"How do you protect my collateral?"
 %%%.home.constantC2CLoan.faqs.answer6%%%,"

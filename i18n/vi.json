@@ -140,11 +140,12 @@
         "email": "Email cho chúng tôi tại {email}",
         "register": "2019 Constant",
         "copyright": "{term} và {privacy}",
-        "termOfUse": "Điều Khoản Sử Dụng",
+        "termOfService": "Terms of Service",
         "privacy": "Chính Sách Bảo Mật",
         "copyright2": "{term}",
         "borrowerAgreement": "Thoả thuận người vay",
         "investorAgreement": "Thoả thuận nhà đầu tư",
+        "serviceAgreement": "Loan Matching Service Agreement",
         "AMLPolicy": "Chính sách chống rửa tiền",
         "membership": "Thành viên",
         "kycGuidelines": "Hướng dẫn KYC",
@@ -954,17 +955,6 @@
                 "done": "Thành công",
                 "inProgress": "Xem chi tiết"
             },
-            "agent": {
-                "status": {
-                    "canceled": "Đã huỷ",
-                    "timeout": "Hết giờ",
-                    "transferMoneyToAgent": "Chờ người mua gửi tiền",
-                    "waitAgentTransferMoney": "Chờ bạn gửi tiền",
-                    "transferredMoneyToAgent": "Đã nhận",
-                    "done": "Thành công",
-                    "inProgress": "Đang xử lý lệnh"
-                }
-            },
             "confirm": {
                 "title": {
                     "Cancel": "Huỷ giao dịch #{ID}",
@@ -1029,26 +1019,6 @@
             "exportToExcel": "Xuất ra dạng tệp Excel",
             "openOrders": "Lệnh chưa khớp",
             "requestExecute": "Help",
-            "agent": {
-                "acceptSuccessfully": "Lệnh đã chọn của bạn đã được chấp nhận",
-                "cancelSuccessfully": "Lệnh đã chọn của bạn đã được huỷ thành công",
-                "rejectSuccessfully": "Lệnh đã chọn của bạn đã được từ chối",
-                "rejectError": {
-                    "no_risk_detected": "Không thể từ chối giao dịch này vì không có rủi ro.",
-                    "notDefined": "Không thể từ chối lệnh này"
-                },
-                "status": {
-                    "canceled": "Đã huỷ",
-                    "timeout": "Hết giờ",
-                    "transferMoneyToAgent": "Tài khoản của bạn sẽ được nhận ngay khi chúng tôi nhận được chuyển khoản của bạn",
-                    "waitAgentTransferMoney": "Đang thực hiện",
-                    "transferredMoneyToAgent": " ",
-                    "transferredMoneyToAgentInvest": " ",
-                    "done": "Thành công",
-                    "inProgress": "Đang xử lí giao dịch",
-                    "approving": "Đang chờ admin chấp thuận"
-                }
-            },
             "orderType": {
                 "0": "Mua",
                 "1": "Đổi",
@@ -1136,7 +1106,15 @@
                 "fullName": "Họ và tên",
                 "userName": "Tên người dùng",
                 "email": "Email",
-                "zelleName": "Tên Zelle",
+                "phone": "Phone",
+                "paymentMethods": {
+                    "auto_bank": "Checkbook",
+                    "email": "Zelle",
+                    "google_pay": "Google Pay",
+                    "venmo": "Venmo",
+                    "paypal": "Paypal",
+                    "fiat": "Bank Transfer"
+                },
                 "status": {
                     "canceled": "Đã huỷ",
                     "timeout": "Lệnh đã hết giờ",
@@ -1182,10 +1160,6 @@
         "transferOrders": {
             "approve": "Chấp nhận",
             "approveMess": "Bạn có chắc muốn chấp nhận lệnh này?",
-            "agent": {
-                "approveSuccessfully": "Thành công!",
-                "cancelSuccessfully": "Lệnh của bạn đã huỷ thành công"
-            },
             "cancel": "Huỷ",
             "cancelMess": "Bạn có chắc muốn huỷ lệnh?"
         },
@@ -2454,29 +2428,6 @@
             "confirmTemplate": "     <div name=thanks\">",
             "introHolderTemplate": "\n        <p>Để trở thành người đầu tiên mua và bán Constant tại quốc gia của bạn, hãy liên hệ với chúng tôi để bắt đầu</p>\n        <p>Gửi email cho chúng tôi tại <a href=\"mailto:{email}\">{email}</a></p>\n        <p>Or</p>\n        <p>Chat với chúng tôi <a href=\"telegram:{telegram}\">{telegram}</a></p>\n      "
         },
-        "agent": {
-            "title": "Trở thành đại lí của chúng tôi ngay",
-            "usAccount": "Bạn có tài khoản ngân hàng ở Mỹ không?",
-            "cryptAccount": "Bạn có biết gì về tiền mã hoá không?",
-            "minMaxBuy": "Bạn có thể mua tối thiểu/tối đa bao nhiêu Constant?",
-            "minMaxAccept": "Bạn có thể chấp nhận tối thiểu/tối đa bao nhiêu Constant?",
-            "minAmount": "Số lượng tối thiểu",
-            "maxAmount": "Số lượng tối đa",
-            "submit": "Gửi đăng kí",
-            "note": "Nếu bạn cần tôi ở đây",
-            "intro": {
-                "title": "HƯỚNG DẪN TRỞ THÀNH ĐẠI LÝ",
-                "howItWorks": "Cơ chế hoạt động",
-                "subintroTitle": {
-                    "1": "Bạn cảm thấy thế nào?"
-                },
-                "subintroDesc": {
-                    "1": "Tôi ổn"
-                }
-            },
-            "registerFailed": "Tài khoản của bạn đã được gửi thành công",
-            "pending": "\n        <p>Tài khoản của bạn đã được gửi thành công.</p>\n        <p>Vui lòng chờ xem xét và phê duyệt xử lý bởi quản trị viên</p>"
-        },
         "transfer": {
             "title": "Chuyển khoản",
             "caption": "Bạn muốn chuyển khoản bao nhiêu?",
@@ -2606,7 +2557,7 @@
                 "question8": "What is the LTV (Loan-to-Value) Ratio? Is it always the same?",
                 "answer8": "\n        <p>The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral.</p>\n      ",
                 "question9": "How do I repay my loan?",
-                "answer9": "\n          <p>We’ll deduct your repayment directly from your Constant account balance. Adding funds is easy. You can do one or a combination of the following:</p>\n          <ol>\n            <li>Transfer USD to one of our US bank accounts.</li>\n            <li>Send any one of our supported stablecoins: USDT/USDC/TUSD/GUSD/PAX/USDS.</li>\n            <li>Repay the equivalent USD value in a supported cryptocurrency.</li>\n          </ol>\n          <p>Your balance will update when funds have been received in your Constant account.</p>\n        ",
+                "answer9": "\n          <p>We’ll deduct your repayment directly from your Constant account balance. Adding funds is easy. You can do one or a combination of the following:</p>\n          <ol>\n            <li>Transfer USD to one of our US bank accounts.</li>\n            <li>Send any one of our supported stablecoins: USDT/USDC/TUSD/GUSD/PAX/USDS.</li>\n            <li>Repay the equivalent USD value using your collateral.</li>\n          </ol>\n          <p>Your balance will update when funds have been received in your Constant account.</p>\n        ",
                 "question10": "Điều gì xảy ra nếu tôi hoàn trả trễ?",
                 "answer10": "Thời gian ân hạn nhận thanh toán là 3 ngày sau khi thời hạn vay của bạn kết thúc. Vào ngày thứ 2 và thứ 3, bạn sẽ phải chịu một khoản phí trễ phạt là 10% trên tổng số tiền lãi đến hạn.\n \n"
             },
@@ -2684,6 +2635,7 @@
                 "whatDesc3": "\n<p>Không kiểm tra lịch sử tín dụng cá nhân. Nhận tiền ngay. Không cần chờ đợi.</p>        "
             },
             "howItWorks": {
+                "title": "How it works",
                 "intro": "          <p>Gửi tiền điện tử vào để thu về tiền mặt, với lãi suất tốt nhất trên thị trường.</p>\n          <p>Cần tiền mặt? Chúng tôi chấp nhận các loại tiền điện tử lớn dùng làm tài sản thế chấp, để đổi lấy USD hoặc đồng nội tệ tương đương. Điều đó có nghĩa là bạn sẽ có tiền để chi tiêu - mà không cần bán tiền điện tử của mình.</p>\n        ",
                 "step1": "BƯỚC 1",
                 "title1": "1. NHẬP SỐ TIỀN CẦN VAY",
@@ -2988,7 +2940,7 @@
                 "question4": "Am I borrowing cryptocurrency or USD?",
                 "answer4": "\n        You borrow USD that we then use to buy your chosen cryptocurrency for you. We do the hard work on the exchanges so you can focus on your trading strategy.\n        ",
                 "question5": "How do I repay a Crypto Credit loan?",
-                "answer5": "\n          <p>You can repay your loan in the following ways:</p>\n            <P>1) Deposit USD or a supported stablecoin. <br/>\n            2) Deposit a supported cryptocurrency that matches the value of your loan.<br/>\n            3) Use your existing coin balance or USD balance to repay the value of your loan.</P> \n        ",
+                "answer5": "\n          <p>You can repay your loan in the following ways:</p>\n            <p>1) Deposit USD or a supported stablecoin. <br/>\n            2) Repay the equivalent USD value using your collateral.</p> \n        ",
                 "question6": "How do you protect my collateral?",
                 "answer6": "\n          <p>Your collateral is stored in a BitGo cold wallet that’s insured to $100,000,000. This protects you against:</p>\n            <p> - Third-party hacks, copying, or theft of private keys.<br>\n             - Insider theft of dishonest acts by BitGo employees or executives.<br>\n             - Loss of keys.</p>\n          <p>When you repay, we co-sign the release of your collateral back into your coin balance and you can then withdraw it to any wallet address you choose.</p>\n          <a target=\"_blank\" href=\"https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral\">How we protect your collateral.</a>\n        ",
                 "question7": "How long will it take to match and get my cryptocurrency?",

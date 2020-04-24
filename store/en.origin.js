@@ -140,11 +140,12 @@
         "email": "%%%.footer.email%%%",
         "register": "%%%.footer.register%%%",
         "copyright": "%%%.footer.copyright%%%",
-        "termOfUse": "%%%.footer.termOfUse%%%",
+        "termOfService": "%%%.footer.termOfService%%%",
         "privacy": "%%%.footer.privacy%%%",
         "copyright2": "%%%.footer.copyright2%%%",
         "borrowerAgreement": "%%%.footer.borrowerAgreement%%%",
         "investorAgreement": "%%%.footer.investorAgreement%%%",
+        "serviceAgreement": "%%%.footer.serviceAgreement%%%",
         "AMLPolicy": "%%%.footer.AMLPolicy%%%",
         "membership": "%%%.footer.membership%%%",
         "kycGuidelines": "%%%.footer.kycGuidelines%%%",
@@ -954,17 +955,6 @@
                 "done": "%%%.me.localHistory.status.done%%%",
                 "inProgress": "%%%.me.localHistory.status.inProgress%%%"
             },
-            "agent": {
-                "status": {
-                    "canceled": "%%%.me.localHistory.agent.status.canceled%%%",
-                    "timeout": "%%%.me.localHistory.agent.status.timeout%%%",
-                    "transferMoneyToAgent": "%%%.me.localHistory.agent.status.transferMoneyToAgent%%%",
-                    "waitAgentTransferMoney": "%%%.me.localHistory.agent.status.waitAgentTransferMoney%%%",
-                    "transferredMoneyToAgent": "%%%.me.localHistory.agent.status.transferredMoneyToAgent%%%",
-                    "done": "%%%.me.localHistory.agent.status.done%%%",
-                    "inProgress": "%%%.me.localHistory.agent.status.inProgress%%%"
-                }
-            },
             "confirm": {
                 "title": {
                     "Cancel": "%%%.me.localHistory.confirm.title.Cancel%%%",
@@ -1029,26 +1019,6 @@
             "exportToExcel": "%%%.me.history.exportToExcel%%%",
             "openOrders": "%%%.me.history.openOrders%%%",
             "requestExecute": "%%%.me.history.requestExecute%%%",
-            "agent": {
-                "acceptSuccessfully": "%%%.me.history.agent.acceptSuccessfully%%%",
-                "cancelSuccessfully": "%%%.me.history.agent.cancelSuccessfully%%%",
-                "rejectSuccessfully": "%%%.me.history.agent.rejectSuccessfully%%%",
-                "rejectError": {
-                    "no_risk_detected": "%%%.me.history.agent.rejectError.no_risk_detected%%%",
-                    "notDefined": "%%%.me.history.agent.rejectError.notDefined%%%"
-                },
-                "status": {
-                    "canceled": "%%%.me.history.agent.status.canceled%%%",
-                    "timeout": "%%%.me.history.agent.status.timeout%%%",
-                    "transferMoneyToAgent": "%%%.me.history.agent.status.transferMoneyToAgent%%%",
-                    "waitAgentTransferMoney": "%%%.me.history.agent.status.waitAgentTransferMoney%%%",
-                    "transferredMoneyToAgent": "%%%.me.history.agent.status.transferredMoneyToAgent%%%",
-                    "transferredMoneyToAgentInvest": "%%%.me.history.agent.status.transferredMoneyToAgentInvest%%%",
-                    "done": "%%%.me.history.agent.status.done%%%",
-                    "inProgress": "%%%.me.history.agent.status.inProgress%%%",
-                    "approving": "%%%.me.history.agent.status.approving%%%"
-                }
-            },
             "orderType": {
                 "0": "%%%.me.history.orderType.0%%%",
                 "1": "%%%.me.history.orderType.1%%%",
@@ -1136,7 +1106,15 @@
                 "fullName": "%%%.me.history.user.fullName%%%",
                 "userName": "%%%.me.history.user.userName%%%",
                 "email": "%%%.me.history.user.email%%%",
-                "zelleName": "%%%.me.history.user.zelleName%%%",
+                "phone": "%%%.me.history.user.phone%%%",
+                "paymentMethods": {
+                    "auto_bank": "%%%.me.history.user.paymentMethods.auto_bank%%%",
+                    "email": "%%%.me.history.user.paymentMethods.email%%%",
+                    "google_pay": "%%%.me.history.user.paymentMethods.google_pay%%%",
+                    "venmo": "%%%.me.history.user.paymentMethods.venmo%%%",
+                    "paypal": "%%%.me.history.user.paymentMethods.paypal%%%",
+                    "fiat": "%%%.me.history.user.paymentMethods.fiat%%%"
+                },
                 "status": {
                     "canceled": "%%%.me.history.user.status.canceled%%%",
                     "timeout": "%%%.me.history.user.status.timeout%%%",
@@ -1182,10 +1160,6 @@
         "transferOrders": {
             "approve": "%%%.me.transferOrders.approve%%%",
             "approveMess": "%%%.me.transferOrders.approveMess%%%",
-            "agent": {
-                "approveSuccessfully": "%%%.me.transferOrders.agent.approveSuccessfully%%%",
-                "cancelSuccessfully": "%%%.me.transferOrders.agent.cancelSuccessfully%%%"
-            },
             "cancel": "%%%.me.transferOrders.cancel%%%",
             "cancelMess": "%%%.me.transferOrders.cancelMess%%%"
         },
@@ -2454,29 +2428,6 @@
             "confirmTemplate": "%%%.home.local.confirmTemplate%%%",
             "introHolderTemplate": "%%%.home.local.introHolderTemplate%%%"
         },
-        "agent": {
-            "title": "%%%.home.agent.title%%%",
-            "usAccount": "%%%.home.agent.usAccount%%%",
-            "cryptAccount": "%%%.home.agent.cryptAccount%%%",
-            "minMaxBuy": "%%%.home.agent.minMaxBuy%%%",
-            "minMaxAccept": "%%%.home.agent.minMaxAccept%%%",
-            "minAmount": "%%%.home.agent.minAmount%%%",
-            "maxAmount": "%%%.home.agent.maxAmount%%%",
-            "submit": "%%%.home.agent.submit%%%",
-            "note": "%%%.home.agent.note%%%",
-            "intro": {
-                "title": "%%%.home.agent.intro.title%%%",
-                "howItWorks": "%%%.home.agent.intro.howItWorks%%%",
-                "subintroTitle": {
-                    "1": "%%%.home.agent.intro.subintroTitle.1%%%"
-                },
-                "subintroDesc": {
-                    "1": "%%%.home.agent.intro.subintroDesc.1%%%"
-                }
-            },
-            "registerFailed": "%%%.home.agent.registerFailed%%%",
-            "pending": "%%%.home.agent.pending%%%"
-        },
         "transfer": {
             "title": "%%%.home.transfer.title%%%",
             "caption": "%%%.home.transfer.caption%%%",
@@ -2684,6 +2635,7 @@
                 "whatDesc3": "%%%.home.constantLoan.what.whatDesc3%%%"
             },
             "howItWorks": {
+                "title": "%%%.home.constantLoan.howItWorks.title%%%",
                 "intro": "%%%.home.constantLoan.howItWorks.intro%%%",
                 "step1": "%%%.home.constantLoan.howItWorks.step1%%%",
                 "title1": "%%%.home.constantLoan.howItWorks.title1%%%",

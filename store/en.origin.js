@@ -119,18 +119,10 @@
         "getSocial": "%%%.footer.getSocial%%%",
         "titleFoundation": "%%%.footer.titleFoundation%%%",
         "titleConstant": "%%%.footer.titleConstant%%%",
-        "career": "%%%.footer.career%%%",
-        "about": "%%%.footer.about%%%",
-        "theTeam": "%%%.footer.theTeam%%%",
         "prices": "%%%.footer.prices%%%",
         "openSource": "%%%.footer.openSource%%%",
-        "foundation": "%%%.footer.foundation%%%",
-        "buyConstant": "%%%.footer.buyConstant%%%",
-        "redeemConstant": "%%%.footer.redeemConstant%%%",
         "transferConstant": "%%%.footer.transferConstant%%%",
-        "pricing": "%%%.footer.pricing%%%",
         "blog": "%%%.footer.blog%%%",
-        "faqs": "%%%.footer.faqs%%%",
         "affiliate": "%%%.footer.affiliate%%%",
         "developers": "%%%.footer.developers%%%",
         "support": "%%%.footer.support%%%",
@@ -143,16 +135,12 @@
         "termOfService": "%%%.footer.termOfService%%%",
         "privacy": "%%%.footer.privacy%%%",
         "copyright2": "%%%.footer.copyright2%%%",
-        "borrowerAgreement": "%%%.footer.borrowerAgreement%%%",
-        "investorAgreement": "%%%.footer.investorAgreement%%%",
         "serviceAgreement": "%%%.footer.serviceAgreement%%%",
         "AMLPolicy": "%%%.footer.AMLPolicy%%%",
         "membership": "%%%.footer.membership%%%",
         "kycGuidelines": "%%%.footer.kycGuidelines%%%",
-        "borrowerPRV": "%%%.footer.borrowerPRV%%%",
         "contactUs": "%%%.footer.contactUs%%%",
         "referral": "%%%.footer.referral%%%",
-        "paymentGateway": "%%%.footer.paymentGateway%%%",
         "phone": {
             "us": {
                 "title": "%%%.footer.phone.us.title%%%",
@@ -284,26 +272,6 @@
         "ourStory": "%%%.headerBar.ourStory%%%",
         "testimonial": "%%%.headerBar.testimonial%%%",
         "extraMenu": {
-            "sendGroup": "%%%.headerBar.extraMenu.sendGroup%%%",
-            "send": "%%%.headerBar.extraMenu.send%%%",
-            "sendDesc": "%%%.headerBar.extraMenu.sendDesc%%%",
-            "payroll": "%%%.headerBar.extraMenu.payroll%%%",
-            "payrollDesc": "%%%.headerBar.extraMenu.payrollDesc%%%",
-            "accountGroup": "%%%.headerBar.extraMenu.accountGroup%%%",
-            "deposit": "%%%.headerBar.extraMenu.deposit%%%",
-            "depositDesc": "%%%.headerBar.extraMenu.depositDesc%%%",
-            "withdraw": "%%%.headerBar.extraMenu.withdraw%%%",
-            "withdrawDesc": "%%%.headerBar.extraMenu.withdrawDesc%%%",
-            "withdrawCrypto": "%%%.headerBar.extraMenu.withdrawCrypto%%%",
-            "withdrawCryptoDesc": "%%%.headerBar.extraMenu.withdrawCryptoDesc%%%",
-            "lendingGroup": "%%%.headerBar.extraMenu.lendingGroup%%%",
-            "invest": "%%%.headerBar.extraMenu.invest%%%",
-            "investDecs": "%%%.headerBar.extraMenu.investDecs%%%",
-            "borrow": "%%%.headerBar.extraMenu.borrow%%%",
-            "borrowDesc": "%%%.headerBar.extraMenu.borrowDesc%%%",
-            "expert": "%%%.headerBar.extraMenu.expert%%%",
-            "expertDecs": "%%%.headerBar.extraMenu.expertDecs%%%",
-            "transfer": "%%%.headerBar.extraMenu.transfer%%%",
             "investFlex": {
                 "title": "%%%.headerBar.extraMenu.investFlex.title%%%",
                 "desc": "%%%.headerBar.extraMenu.investFlex.desc%%%"
@@ -439,9 +407,6 @@
             "email_settings": "%%%.me.navigation.email_settings%%%",
             "sellOrders": "%%%.me.navigation.sellOrders%%%",
             "buyOrders": "%%%.me.navigation.buyOrders%%%",
-            "bookingOrders": "%%%.me.navigation.bookingOrders%%%",
-            "investingOrders": "%%%.me.navigation.investingOrders%%%",
-            "loanOrders": "%%%.me.navigation.loanOrders%%%",
             "myOrders": "%%%.me.navigation.myOrders%%%",
             "deposits": "%%%.me.navigation.deposits%%%",
             "topupHistory": "%%%.me.navigation.topupHistory%%%",
@@ -470,7 +435,6 @@
             "viewInvestmentDetail": "%%%.me.navigation.viewInvestmentDetail%%%",
             "batchTransfer": "%%%.me.navigation.batchTransfer%%%",
             "referralInfo": "%%%.me.navigation.referralInfo%%%",
-            "transferOrders": "%%%.me.navigation.transferOrders%%%",
             "openOrders": "%%%.me.navigation.openOrders%%%",
             "interests": "%%%.me.navigation.interests%%%",
             "accountActivities": "%%%.me.navigation.accountActivities%%%",
@@ -531,187 +495,6 @@
         "batchTransfer": {
             "title": "%%%.me.batchTransfer.title%%%",
             "detail": "%%%.me.batchTransfer.detail%%%"
-        },
-        "buyOrder": {
-            "title": "%%%.me.buyOrder.title%%%",
-            "date": "%%%.me.buyOrder.date%%%",
-            "value": "%%%.me.buyOrder.value%%%",
-            "amount": "%%%.me.buyOrder.amount%%%",
-            "accept": "%%%.me.buyOrder.accept%%%",
-            "approve": "%%%.me.buyOrder.approve%%%",
-            "receipt": "%%%.me.buyOrder.receipt%%%",
-            "viewDetail": "%%%.me.buyOrder.viewDetail%%%",
-            "loadMore": "%%%.me.buyOrder.loadMore%%%",
-            "status": {
-                "status": "%%%.me.buyOrder.status.status%%%",
-                "transferred": "%%%.me.buyOrder.status.transferred%%%",
-                "transferred_fiat": "%%%.me.buyOrder.status.transferred_fiat%%%",
-                "picked": "%%%.me.buyOrder.status.picked%%%",
-                "pending": "%%%.me.buyOrder.status.pending%%%",
-                "cancelled": "%%%.me.buyOrder.status.cancelled%%%",
-                "system_cancelled": "%%%.me.buyOrder.status.system_cancelled%%%",
-                "system_rejected": "%%%.me.buyOrder.status.system_rejected%%%",
-                "transferring_fiat": "%%%.me.buyOrder.status.transferring_fiat%%%"
-            },
-            "confirmMess": "%%%.me.buyOrder.confirmMess%%%",
-            "confirm": {
-                "title": {
-                    "Cancel": "%%%.me.buyOrder.confirm.title.Cancel%%%",
-                    "Approve": "%%%.me.buyOrder.confirm.title.Approve%%%",
-                    "Finish": "%%%.me.buyOrder.confirm.title.Finish%%%"
-                }
-            },
-            "noData": "%%%.me.buyOrder.noData%%%"
-        },
-        "investingOrder": {
-            "title": "%%%.me.investingOrder.title%%%",
-            "userAndDate": "%%%.me.investingOrder.userAndDate%%%",
-            "matched": "%%%.me.investingOrder.matched%%%",
-            "date": "%%%.me.investingOrder.date%%%",
-            "termAndRate": "%%%.me.investingOrder.termAndRate%%%",
-            "amount": "%%%.me.investingOrder.amount%%%",
-            "accept": "%%%.me.investingOrder.accept%%%",
-            "cancel": "%%%.me.investingOrder.cancel%%%",
-            "confirm": "%%%.me.investingOrder.confirm%%%",
-            "confirmTitle": "%%%.me.investingOrder.confirmTitle%%%",
-            "confirmMess": "%%%.me.investingOrder.confirmMess%%%",
-            "reject": "%%%.me.investingOrder.reject%%%",
-            "rejectMess": "%%%.me.investingOrder.rejectMess%%%",
-            "loadMore": "%%%.me.investingOrder.loadMore%%%",
-            "matchedAmount": "%%%.me.investingOrder.matchedAmount%%%",
-            "status": {
-                "status": "%%%.me.investingOrder.status.status%%%",
-                "transferred": "%%%.me.investingOrder.status.transferred%%%",
-                "transferred_fiat": "%%%.me.investingOrder.status.transferred_fiat%%%",
-                "picked": "%%%.me.investingOrder.status.picked%%%",
-                "pending": "%%%.me.investingOrder.status.pending%%%",
-                "cancelled": "%%%.me.investingOrder.status.cancelled%%%",
-                "system_cancelled": "%%%.me.investingOrder.status.system_cancelled%%%",
-                "system_rejected": "%%%.me.investingOrder.status.system_rejected%%%"
-            },
-            "acceptFailed": {
-                "": "%%%.me.investingOrder.acceptFailed.%%%",
-                "processing_order_exists": "%%%.me.investingOrder.acceptFailed.processing_order_exists%%%",
-                "validation_error": "%%%.me.investingOrder.acceptFailed.validation_error%%%"
-            },
-            "noData": "%%%.me.investingOrder.noData%%%"
-        },
-        "loanOrder": {
-            "title": "%%%.me.loanOrder.title%%%",
-            "userAndDate": "%%%.me.loanOrder.userAndDate%%%",
-            "matched": "%%%.me.loanOrder.matched%%%",
-            "date": "%%%.me.loanOrder.date%%%",
-            "termAndRate": "%%%.me.loanOrder.termAndRate%%%",
-            "amount": "%%%.me.loanOrder.amount%%%",
-            "cancel": "%%%.me.loanOrder.cancel%%%",
-            "accept": "%%%.me.loanOrder.accept%%%",
-            "acceptMess": "%%%.me.loanOrder.acceptMess%%%",
-            "reject": "%%%.me.loanOrder.reject%%%",
-            "rejectMess": "%%%.me.loanOrder.rejectMess%%%",
-            "loadMore": "%%%.me.loanOrder.loadMore%%%",
-            "matchedAmount": "%%%.me.loanOrder.matchedAmount%%%",
-            "status": {
-                "status": "%%%.me.loanOrder.status.status%%%",
-                "transferred": "%%%.me.loanOrder.status.transferred%%%",
-                "transferred_fiat": "%%%.me.loanOrder.status.transferred_fiat%%%",
-                "picked": "%%%.me.loanOrder.status.picked%%%",
-                "pending": "%%%.me.loanOrder.status.pending%%%",
-                "cancelled": "%%%.me.loanOrder.status.cancelled%%%",
-                "system_cancelled": "%%%.me.loanOrder.status.system_cancelled%%%",
-                "system_rejected": "%%%.me.loanOrder.status.system_rejected%%%"
-            },
-            "acceptSuccessfully": "%%%.me.loanOrder.acceptSuccessfully%%%",
-            "acceptFailed": {
-                "": "%%%.me.loanOrder.acceptFailed.%%%",
-                "processing_order_exists": "%%%.me.loanOrder.acceptFailed.processing_order_exists%%%",
-                "validation_error": "%%%.me.loanOrder.acceptFailed.validation_error%%%"
-            },
-            "noData": "%%%.me.loanOrder.noData%%%"
-        },
-        "bookingOrder": {
-            "title": "%%%.me.bookingOrder.title%%%",
-            "userAndDate": "%%%.me.bookingOrder.userAndDate%%%",
-            "date": "%%%.me.bookingOrder.date%%%",
-            "value": "%%%.me.bookingOrder.value%%%",
-            "amount": "%%%.me.bookingOrder.amount%%%",
-            "accept": "%%%.me.bookingOrder.accept%%%",
-            "detail": "%%%.me.bookingOrder.detail%%%",
-            "cancel": "%%%.me.bookingOrder.cancel%%%",
-            "cancelMess": "%%%.me.bookingOrder.cancelMess%%%",
-            "approve": "%%%.me.bookingOrder.approve%%%",
-            "approveMess": "%%%.me.bookingOrder.approveMess%%%",
-            "reject": "%%%.me.bookingOrder.reject%%%",
-            "rejectMess": "%%%.me.bookingOrder.rejectMess%%%",
-            "riskNote": "%%%.me.bookingOrder.riskNote%%%",
-            "receipt": "%%%.me.bookingOrder.receipt%%%",
-            "viewDetail": "%%%.me.bookingOrder.viewDetail%%%",
-            "loadMore": "%%%.me.bookingOrder.loadMore%%%",
-            "routingNumber": "%%%.me.bookingOrder.routingNumber%%%",
-            "swiftCode": "%%%.me.bookingOrder.swiftCode%%%",
-            "status": {
-                "status": "%%%.me.bookingOrder.status.status%%%",
-                "transferred": "%%%.me.bookingOrder.status.transferred%%%",
-                "transferred_fiat": "%%%.me.bookingOrder.status.transferred_fiat%%%",
-                "picked": "%%%.me.bookingOrder.status.picked%%%",
-                "pending": "%%%.me.bookingOrder.status.pending%%%",
-                "cancelled": "%%%.me.bookingOrder.status.cancelled%%%",
-                "system_cancelled": "%%%.me.bookingOrder.status.system_cancelled%%%",
-                "system_rejected": "%%%.me.bookingOrder.status.system_rejected%%%"
-            },
-            "acceptFailed": {
-                "": "%%%.me.bookingOrder.acceptFailed.%%%",
-                "processing_order_exists": "%%%.me.bookingOrder.acceptFailed.processing_order_exists%%%"
-            },
-            "noData": "%%%.me.bookingOrder.noData%%%",
-            "confirm": {
-                "title": {
-                    "Cancel": "%%%.me.bookingOrder.confirm.title.Cancel%%%",
-                    "Approve": "%%%.me.bookingOrder.confirm.title.Approve%%%",
-                    "Finish": "%%%.me.bookingOrder.confirm.title.Finish%%%"
-                },
-                "content": {
-                    "Cancel": "%%%.me.bookingOrder.confirm.content.Cancel%%%",
-                    "Approve": "%%%.me.bookingOrder.confirm.content.Approve%%%",
-                    "ApproveUs": "%%%.me.bookingOrder.confirm.content.ApproveUs%%%",
-                    "ApproveZelle": "%%%.me.bookingOrder.confirm.content.ApproveZelle%%%",
-                    "Finish": "%%%.me.bookingOrder.confirm.content.Finish%%%"
-                }
-            }
-        },
-        "sellOrder": {
-            "title": "%%%.me.sellOrder.title%%%",
-            "date": "%%%.me.sellOrder.date%%%",
-            "value": "%%%.me.sellOrder.value%%%",
-            "amount": "%%%.me.sellOrder.amount%%%",
-            "accept": "%%%.me.sellOrder.accept%%%",
-            "pick": "%%%.me.sellOrder.pick%%%",
-            "viewDetail": "%%%.me.sellOrder.viewDetail%%%",
-            "loadMore": "%%%.me.sellOrder.loadMore%%%",
-            "status": {
-                "status": "%%%.me.sellOrder.status.status%%%",
-                "transferred": "%%%.me.sellOrder.status.transferred%%%",
-                "transferred_fiat": "%%%.me.sellOrder.status.transferred_fiat%%%",
-                "picked": "%%%.me.sellOrder.status.picked%%%",
-                "pending": "%%%.me.sellOrder.status.pending%%%",
-                "cancelled": "%%%.me.sellOrder.status.cancelled%%%",
-                "system_cancelled": "%%%.me.sellOrder.status.system_cancelled%%%",
-                "system_rejected": "%%%.me.sellOrder.status.system_rejected%%%"
-            },
-            "approve": "%%%.me.sellOrder.approve%%%",
-            "confirm": {
-                "title": {
-                    "Cancel": "%%%.me.sellOrder.confirm.title.Cancel%%%",
-                    "Approve": "%%%.me.sellOrder.confirm.title.Approve%%%",
-                    "Finish": "%%%.me.sellOrder.confirm.title.Finish%%%"
-                },
-                "content": {
-                    "Cancel": "%%%.me.sellOrder.confirm.content.Cancel%%%",
-                    "Approve": "%%%.me.sellOrder.confirm.content.Approve%%%",
-                    "Finish": "%%%.me.sellOrder.confirm.content.Finish%%%"
-                }
-            },
-            "noData": "%%%.me.sellOrder.noData%%%",
-            "yourInvest": "%%%.me.sellOrder.yourInvest%%%"
         },
         "personalProfile": {
             "title": "%%%.me.personalProfile.title%%%",
@@ -1940,23 +1723,7 @@
         }
     },
     "landingPage": {
-        "contactUS": {
-            "title": "%%%.landingPage.contactUS.title%%%",
-            "yourName": "%%%.landingPage.contactUS.yourName%%%",
-            "requiredYourName": "%%%.landingPage.contactUS.requiredYourName%%%",
-            "placeholderYourName": "%%%.landingPage.contactUS.placeholderYourName%%%",
-            "email": "%%%.landingPage.contactUS.email%%%",
-            "placeholderYourEmail": "%%%.landingPage.contactUS.placeholderYourEmail%%%",
-            "requiredEmail": "%%%.landingPage.contactUS.requiredEmail%%%",
-            "notValidEmail": "%%%.landingPage.contactUS.notValidEmail%%%",
-            "phone": "%%%.landingPage.contactUS.phone%%%",
-            "placeholderPhone": "%%%.landingPage.contactUS.placeholderPhone%%%",
-            "description": "%%%.landingPage.contactUS.description%%%",
-            "placeholderDescription": "%%%.landingPage.contactUS.placeholderDescription%%%",
-            "requiredDescription": "%%%.landingPage.contactUS.requiredDescription%%%",
-            "contactButton": "%%%.landingPage.contactUS.contactButton%%%",
-            "message": "%%%.landingPage.contactUS.message%%%"
-        },
+        "faqsSectionLink": "%%%.landingPage.faqsSectionLink%%%",
         "diversify": {
             "title": "%%%.landingPage.diversify.title%%%"
         },
@@ -1968,6 +1735,9 @@
         },
         "netReturns": {
             "title": "%%%.landingPage.netReturns.title%%%"
+        },
+        "investEasy": {
+            "title": "%%%.landingPage.investEasy.title%%%"
         },
         "howItWorks": {
             "title": "%%%.landingPage.howItWorks.title%%%",
@@ -2973,6 +2743,7 @@
             },
             "headLine": "%%%.home.constantC2CLoan.headLine%%%",
             "exchange": {
+                "eventBox": "%%%.home.constantC2CLoan.exchange.eventBox%%%",
                 "stakingTimeMessage": "%%%.home.constantC2CLoan.exchange.stakingTimeMessage%%%",
                 "exchangeInfo": "%%%.home.constantC2CLoan.exchange.exchangeInfo%%%",
                 "exchangeInfoDesc": "%%%.home.constantC2CLoan.exchange.exchangeInfoDesc%%%",
@@ -5929,6 +5700,22 @@
                             "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.3.date%%%",
                             "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.3.link%%%",
                             "authLink": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.3.authLink%%%"
+                        },
+                        "4": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.4.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.4.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.4.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.4.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.4.link%%%",
+                            "authLink": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.4.authLink%%%"
+                        },
+                        "5": {
+                            "name": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.5.name%%%",
+                            "auth": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.5.auth%%%",
+                            "desc": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.5.desc%%%",
+                            "date": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.5.date%%%",
+                            "link": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.5.link%%%",
+                            "authLink": "%%%.whyPeopleLoveUs.customers.socialMedia.comments.fb.5.authLink%%%"
                         }
                     },
                     "tele": {
@@ -6738,6 +6525,10 @@
             "inform": {
                 "title": "%%%.notification.system.inform.title%%%",
                 "desc": "%%%.notification.system.inform.desc%%%"
+            },
+            "common": {
+                "viewingTitle": "%%%.notification.system.common.viewingTitle%%%",
+                "viewingContent": "%%%.notification.system.common.viewingContent%%%"
             }
         },
         "nextLevel": {
@@ -6779,6 +6570,7 @@
                 "action": "%%%.history.deposit.headers.action%%%"
             },
             "status": {
+                "matching": "%%%.history.deposit.status.matching%%%",
                 "pending": "%%%.history.deposit.status.pending%%%",
                 "picked": "%%%.history.deposit.status.picked%%%",
                 "transferred_fiat": "%%%.history.deposit.status.transferred_fiat%%%",
@@ -6789,6 +6581,107 @@
                 "system_cancelled": "%%%.history.deposit.status.system_cancelled%%%",
                 "system_rejected": "%%%.history.deposit.status.system_rejected%%%",
                 "approving": "%%%.history.deposit.status.approving%%%"
+            }
+        },
+        "withdrawFiat": {
+            "title": "%%%.history.withdrawFiat.title%%%",
+            "exportExcel": "%%%.history.withdrawFiat.exportExcel%%%",
+            "noHistoryData": "%%%.history.withdrawFiat.noHistoryData%%%",
+            "bankName": "%%%.history.withdrawFiat.bankName%%%",
+            "accountNumber": "%%%.history.withdrawFiat.accountNumber%%%",
+            "beneficiaryName": "%%%.history.withdrawFiat.beneficiaryName%%%",
+            "tabs": {
+                "fiat": "%%%.history.withdrawFiat.tabs.fiat%%%",
+                "openOrders": "%%%.history.withdrawFiat.tabs.openOrders%%%"
+            },
+            "headers": {
+                "orderNo": "%%%.history.withdrawFiat.headers.orderNo%%%",
+                "usdAmount": "%%%.history.withdrawFiat.headers.usdAmount%%%",
+                "currencyAmount": "%%%.history.withdrawFiat.headers.currencyAmount%%%",
+                "paymentMethod": "%%%.history.withdrawFiat.headers.paymentMethod%%%",
+                "fee": "%%%.history.withdrawFiat.headers.fee%%%",
+                "date": "%%%.history.withdrawFiat.headers.date%%%",
+                "status": "%%%.history.withdrawFiat.headers.status%%%",
+                "action": "%%%.history.withdrawFiat.headers.action%%%"
+            }
+        },
+        "withdrawCrypto": {
+            "title": "%%%.history.withdrawCrypto.title%%%",
+            "exportExcel": "%%%.history.withdrawCrypto.exportExcel%%%",
+            "noHistoryData": "%%%.history.withdrawCrypto.noHistoryData%%%",
+            "tabs": {
+                "crypto": "%%%.history.withdrawCrypto.tabs.crypto%%%",
+                "openOrders": "%%%.history.withdrawCrypto.tabs.openOrders%%%"
+            },
+            "headers": {
+                "orderNo": "%%%.history.withdrawCrypto.headers.orderNo%%%",
+                "usdAmount": "%%%.history.withdrawCrypto.headers.usdAmount%%%",
+                "currencyAmount": "%%%.history.withdrawCrypto.headers.currencyAmount%%%",
+                "address": "%%%.history.withdrawCrypto.headers.address%%%",
+                "date": "%%%.history.withdrawCrypto.headers.date%%%",
+                "status": "%%%.history.withdrawCrypto.headers.status%%%",
+                "action": "%%%.history.withdrawCrypto.headers.action%%%"
+            }
+        },
+        "transferConstant": {
+            "title": "%%%.history.transferConstant.title%%%",
+            "exportExcel": "%%%.history.transferConstant.exportExcel%%%",
+            "noHistoryData": "%%%.history.transferConstant.noHistoryData%%%",
+            "tabs": {
+                "sent": "%%%.history.transferConstant.tabs.sent%%%",
+                "received": "%%%.history.transferConstant.tabs.received%%%",
+                "openOrders": "%%%.history.transferConstant.tabs.openOrders%%%"
+            },
+            "headers": {
+                "orderNo": "%%%.history.transferConstant.headers.orderNo%%%",
+                "amount": "%%%.history.transferConstant.headers.amount%%%",
+                "fee": "%%%.history.transferConstant.headers.fee%%%",
+                "fromEmail": "%%%.history.transferConstant.headers.fromEmail%%%",
+                "toEmail": "%%%.history.transferConstant.headers.toEmail%%%",
+                "date": "%%%.history.transferConstant.headers.date%%%",
+                "status": "%%%.history.transferConstant.headers.status%%%",
+                "action": "%%%.history.transferConstant.headers.action%%%"
+            }
+        },
+        "invest": {
+            "title": "%%%.history.invest.title%%%",
+            "noHistoryData": "%%%.history.invest.noHistoryData%%%",
+            "tabs": {
+                "plus": "%%%.history.invest.tabs.plus%%%",
+                "minus": "%%%.history.invest.tabs.minus%%%",
+                "interest": "%%%.history.invest.tabs.interest%%%",
+                "openOrders": "%%%.history.invest.tabs.openOrders%%%"
+            },
+            "headers": {
+                "orderNo": "%%%.history.invest.headers.orderNo%%%",
+                "amount": "%%%.history.invest.headers.amount%%%",
+                "term": "%%%.history.invest.headers.term%%%",
+                "termRate": "%%%.history.invest.headers.termRate%%%",
+                "date": "%%%.history.invest.headers.date%%%",
+                "status": "%%%.history.invest.headers.status%%%",
+                "action": "%%%.history.invest.headers.action%%%"
+            }
+        },
+        "borrow": {
+            "title": "%%%.history.borrow.title%%%",
+            "exportExcel": "%%%.history.borrow.exportExcel%%%",
+            "noHistoryData": "%%%.history.borrow.noHistoryData%%%",
+            "tabs": {
+                "borrow": "%%%.history.borrow.tabs.borrow%%%",
+                "topup": "%%%.history.borrow.tabs.topup%%%",
+                "payoff": "%%%.history.borrow.tabs.payoff%%%",
+                "recallExcess": "%%%.history.borrow.tabs.recallExcess%%%"
+            },
+            "headers": {
+                "orderNo": "%%%.history.borrow.headers.orderNo%%%",
+                "amount": "%%%.history.borrow.headers.amount%%%",
+                "fee": "%%%.history.borrow.headers.fee%%%",
+                "interest": "%%%.history.borrow.headers.interest%%%",
+                "loanId": "%%%.history.borrow.headers.loanId%%%",
+                "loanDate": "%%%.history.borrow.headers.loanDate%%%",
+                "payoffDate": "%%%.history.borrow.headers.payoffDate%%%",
+                "date": "%%%.history.borrow.headers.date%%%",
+                "status": "%%%.history.borrow.headers.status%%%"
             }
         }
     }

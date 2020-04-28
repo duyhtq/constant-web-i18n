@@ -119,18 +119,10 @@
         "getSocial": "Follow",
         "titleFoundation": "Giới thiệu",
         "titleConstant": "Constant",
-        "career": "Tuyển dụng",
-        "about": "Đội ngũ",
-        "theTeam": "Đội ngũ",
         "prices": "Chi phí và thời gian dịch vụ",
         "openSource": "Mã nguồn mở",
-        "foundation": "Thông tin",
-        "buyConstant": "Mua Constant",
-        "redeemConstant": "Đổi Constant",
         "transferConstant": "Chuyển khoản Constant",
-        "pricing": "Bảng giá",
         "blog": "Blog",
-        "faqs": "Câu hỏi thường gặp",
         "affiliate": "Tiếp thị liên kết",
         "developers": "Nhà phát triển",
         "support": "Help & Support",
@@ -143,16 +135,12 @@
         "termOfService": "Terms of Service",
         "privacy": "Chính Sách Bảo Mật",
         "copyright2": "{term}",
-        "borrowerAgreement": "Thoả thuận người vay",
-        "investorAgreement": "Thoả thuận nhà đầu tư",
         "serviceAgreement": "Loan Matching Service Agreement",
         "AMLPolicy": "Chính sách chống rửa tiền",
         "membership": "Thành viên",
         "kycGuidelines": "Hướng dẫn KYC",
-        "borrowerPRV": "Crypto Incognito Loans",
         "contactUs": "Liên hệ",
         "referral": "Chia sẻ & Nhận tiền",
-        "paymentGateway": "Cổng thanh toán",
         "phone": {
             "us": {
                 "title": "US: ",
@@ -284,26 +272,6 @@
         "ourStory": "Our Story",
         "testimonial": "Why people love us",
         "extraMenu": {
-            "sendGroup": "Chuyển tiền quốc tế",
-            "send": "Gửi",
-            "sendDesc": "Chuyển tiền tới mọi người trên thế giới",
-            "payroll": "Trả lương",
-            "payrollDesc": "Thanh toán lương toàn cầu dễ dàng",
-            "accountGroup": "Quản lý tiền của bạn",
-            "deposit": "Nạp",
-            "depositDesc": "Nạp tiền để sử dụng Constant",
-            "withdraw": "Rút tiền mặt",
-            "withdrawDesc": "USD hoặc tiền địa phương",
-            "withdrawCrypto": "Rút tiền mã hoá",
-            "withdrawCryptoDesc": "ETH, EOS, TRON và TOMO",
-            "lendingGroup": "Cho vay ngang hàng",
-            "invest": "Đầu tư",
-            "investDecs": "Đặt kỳ hạn của bạn",
-            "borrow": "Vay",
-            "borrowDesc": "Đặt kỳ hạn của bạn",
-            "expert": "Chuyên gia",
-            "expertDecs": "Thêm hình thức cho vay ngang hàng",
-            "transfer": "Chuyển",
             "investFlex": {
                 "title": "Không kì hạn",
                 "desc": "{percent}% APY. Fully secured. Withdraw anytime."
@@ -439,9 +407,6 @@
             "email_settings": "Email Settings",
             "sellOrders": "Lệnh bán",
             "buyOrders": "Lệnh mua",
-            "bookingOrders": "Lệnh giảm giá",
-            "investingOrders": "Mở lệnh đầu tư",
-            "loanOrders": "Lệnh vay",
             "myOrders": "Nạp và rút",
             "deposits": "Nạp",
             "topupHistory": "Lịch sử nạp",
@@ -470,7 +435,6 @@
             "viewInvestmentDetail": "Xen chi tiết khoản đầu tư ở đây",
             "batchTransfer": "Chuyển khoản hàng loạt",
             "referralInfo": "Thông tin giới thiệu",
-            "transferOrders": "Lệnh chuyển khoản",
             "openOrders": "Mở lệnh",
             "interests": "Lãi suất",
             "accountActivities": "Hoạt động của tài khoản",
@@ -531,187 +495,6 @@
         "batchTransfer": {
             "title": "Chuyển khoản hàng loạt",
             "detail": "Thông tin chuyển khoản hàng loạt "
-        },
-        "buyOrder": {
-            "title": "Danh Sách Lệnh Mua",
-            "date": "Ngày",
-            "value": "Giá trị",
-            "amount": "Số lượng",
-            "accept": "Đồng ý",
-            "approve": "Xác nhận thanh toán",
-            "receipt": "Tải lên biên lai",
-            "viewDetail": "Chi tiết",
-            "loadMore": "Tải thêm",
-            "status": {
-                "status": "Trạng thái",
-                "transferred": "Đã chuyển khoản",
-                "transferred_fiat": "Đã chuyển Fiat",
-                "picked": "Đã chọn",
-                "pending": "Đang chờ xử lý",
-                "cancelled": "Đã huỷ",
-                "system_cancelled": "Hệ thống đã huỷ",
-                "system_rejected": "Hệ thống đã từ chối",
-                "transferring_fiat": "Đang chuyển Fiat"
-            },
-            "confirmMess": "Bạn sẽ trả {amount}{unit} cho giao dịch này.",
-            "confirm": {
-                "title": {
-                    "Cancel": "Huỷ lệnh #{ID}",
-                    "Approve": "Xác nhận bạn đã chuyển tiền cho lệnh #{ID}",
-                    "Finish": "Gửi Constant cho lệnh #{ID}"
-                }
-            },
-            "noData": "Không có lệnh bán khả dụng"
-        },
-        "investingOrder": {
-            "title": "Lệnh đầu tư khả dụng",
-            "userAndDate": "Người dùng/Ngày",
-            "matched": "Khớp lệnh",
-            "date": "Ngày",
-            "termAndRate": "Kì hạn/Lãi suất",
-            "amount": "Số lượng",
-            "accept": "Chấp nhận",
-            "cancel": "Huỷ",
-            "confirm": "Xác nhận",
-            "confirmTitle": "Xác nhận khoản được khớp",
-            "confirmMess": "Bạn có chắc là muốn xác nhận lệnh này?",
-            "reject": "Từ chối",
-            "rejectMess": "Bạn có chắc là muốn từ chối lệnh này?",
-            "loadMore": "Tải thêm",
-            "matchedAmount": "Lượng đã khớp",
-            "status": {
-                "status": "Trạng thái",
-                "transferred": "Đã chuyển",
-                "transferred_fiat": "Đã chuyển Fiat",
-                "picked": "Đã chọn",
-                "pending": "Đang chờ xử lý",
-                "cancelled": "Đã huỷ",
-                "system_cancelled": "Hệ thống đã huỷ",
-                "system_rejected": "Hệ thống đã từ chối"
-            },
-            "acceptFailed": {
-                "": "Lệnh đặt chỗ đã chọn thất bại, vui lòng thử lại hoặc liên hệ admin để hỗ trợ. \nXin cảm ơn! ",
-                "processing_order_exists": "Có lệnh cần được xử lý",
-                "validation_error": "Không thể chấp nhận lệnh này"
-            },
-            "noData": "Không có lệnh bán khả dụng"
-        },
-        "loanOrder": {
-            "title": "Lẹnh vay khả dụng",
-            "userAndDate": "Người dùng/Ngày",
-            "matched": "Khớp lệnh",
-            "date": "Ngày",
-            "termAndRate": "Kì hạn/Tỷ lệ",
-            "amount": "Lượng",
-            "cancel": "Huỷ",
-            "accept": "Chấp nhận",
-            "acceptMess": "Bạn có chắc là muốn xác nhận lệnh này?",
-            "reject": "Từ chối",
-            "rejectMess": "Bạn có chắc là muốn từ chối lệnh này?",
-            "loadMore": "Tải thêm",
-            "matchedAmount": "Lượng đã khớp",
-            "status": {
-                "status": "Trạng thái",
-                "transferred": "Đã chuyển",
-                "transferred_fiat": "Đã chuyển Fiat",
-                "picked": "Đã chọn",
-                "pending": "Đang chờ xử lý",
-                "cancelled": "Đã huỷ",
-                "system_cancelled": "Hệ thống đã huỷ",
-                "system_rejected": "Hệ thống đã từ chối"
-            },
-            "acceptSuccessfully": "Lệnh của bạn được chấp nhận thành công",
-            "acceptFailed": {
-                "": "Lệnh giữ chỗ đã chọn thất bại, vui lòng thử lại hoặc liên hệ admin để được hỗ trợ. \nCảm ơn!",
-                "processing_order_exists": "Có lệnh cần được xử lý",
-                "validation_error": "Không thể chấp nhận lệnh này"
-            },
-            "noData": "Không có lệnh bán khả dụng"
-        },
-        "bookingOrder": {
-            "title": "Lệnh giữ chỗ khả dụng ",
-            "userAndDate": "Người dùng/Ngày",
-            "date": "Ngày",
-            "value": "Giá trị",
-            "amount": "Lượng",
-            "accept": "Chấp nhận",
-            "detail": "Xem Chi tiết",
-            "cancel": "Huỷ",
-            "cancelMess": "Bạn có chắc muốn huỷ lệnh?",
-            "approve": "Xác nhận ",
-            "approveMess": "Bạn có chắc là muốn xác nhận lệnh này?",
-            "reject": "Từ chối",
-            "rejectMess": "Bạn có chắc là muốn từ chối lệnh này?",
-            "riskNote": "Chúng tôi phát hiện có rủi ro khi thực hiện giao dịch này. Vui lòng xác minh trước khi giao dịch. ",
-            "receipt": "Tải lên biên lai",
-            "viewDetail": "Chi tiết",
-            "loadMore": "Tải thêm",
-            "routingNumber": "Số định tuyến: ",
-            "swiftCode": "Mã SWIFT: ",
-            "status": {
-                "status": "Trạng thái",
-                "transferred": "Đã chuyển",
-                "transferred_fiat": "Đã chuyển Fiat",
-                "picked": "Đã chọn",
-                "pending": "Đang chờ xử lý",
-                "cancelled": "Đã huỷ",
-                "system_cancelled": "Hệ thống đã huỷ",
-                "system_rejected": "Hệ thống đã từ chối"
-            },
-            "acceptFailed": {
-                "": "Lệnh đặt chỗ đã chọn thất bại, vui lòng thử lại hoặc liên hệ admin để được hỗ trợ. \nXin cảm ơn! ",
-                "processing_order_exists": "Có lệnh cần được xử lý"
-            },
-            "noData": "Không có lệnh bán khả dụng",
-            "confirm": {
-                "title": {
-                    "Cancel": "Huỷ lệnh #{ID}",
-                    "Approve": "Xác nhận bạn đã gửi tiền cho giao dịch #{ID}",
-                    "Finish": "Gửi Constant theo lệnh #{ID}"
-                },
-                "content": {
-                    "Cancel": "\n<div>\n              <p>Bạn có {Type}<strong>{Amount}</strong> Constant với giá <strong>{Price}</strong>{Currency}.</p>\n              <p>Nếu bạn muốn huỷ lệnh này, vui lòng chọn nút \"Huỷ lệnh\" ở bên dưới. Nếu không, xin vui lòng đóng cửa sổ này.</p>\n            </div>\n          ",
-                    "Approve": "\n             <div>\n              <p>Bạn đang mua <strong>{Amount} Constant</strong> với giá <strong>{Price}</strong> {Currency} /Constant.</p>\n              <p>Nếu bạn đã gửi <strong>{Total} {Currency}</strong> đến tài khoản ngân hàng người bán, vui lòng chọn \"Xác nhận thanh toán\" bên dưới.</p> \n              <p>Nếu không, vui lòng gửi <strong>{Total} {Currency}</strong> đến tài khoản ngân hàng người bán. Hãy nhớ ghi số tham chiếu <ref> trobg mô tả chuyển khoản.</p>\n              <div name=\"bank\">\n            <div><span>Tên ngân hàng:</span>\n<strong>{bank_name}</strong>\n</div><div><span>Account Name:</span><strong>{bank_account_name}</strong>              </div><div><span>Account Number: </span><strong>{bank_account_number}</strong>\n</div><div><span>Amount: </span><strong>{Total}&nbsp;{Currency}</strong></div>\n<div><span>Reference: </span><strong>{Reference}</strong> </div><div> <span>Quốc gia của ngân hàng: </span><strong>{bankCountry}</strong></div></div><br /><p>QUAN TRỌNG: Nếu bạn không hoàn thành chuyển khoản trong vòng 30 phút, lệnh của bạn sẽ bị hủy. Điều này bảo vệ bạn và mạng của chúng tôi khỏi việc sử dụng sai</p></div>             ",
-                    "ApproveUs": "\n             <div>\n              <p>Bạn đang mua <strong>{Amount} Constant</strong> với giá <strong>{Price}</strong> {Currency} /Constant.</p>\n              <p>Nếu bạn đã gửi <strong>{Total} {Currency}</strong> đến tài khoản ngân hàng người bán, vui lòng chọn \"Xác nhận thanh toán\" bên dưới.</p> \n              <p>Nếu không, vui lòng gửi <strong>{Total} {Currency}</strong> đến tài khoản ngân hàng người bán. Hãy nhớ ghi số tham chiếu <ref> trobg mô tả chuyển khoản.</p>\n              <div name=\"bank\">\n            <div><span>Tên ngân hàng:</span>\n<strong>{bank_name}</strong>\n</div><div><span>Account Name:</span><strong>{bank_account_name}</strong>              </div><div><span>Account Number: </span><strong>{bank_account_number}</strong>\n</div><div><span>Amount: </span><strong>{Total}&nbsp;{Currency}</strong></div>\n<div><span>Reference: </span><strong>{Reference}</strong> </div><div> <span>Quốc gia của ngân hàng: </span><strong>{bankCountry}</strong></div></div><br /><p>QUAN TRỌNG: Nếu bạn không hoàn thành chuyển khoản trong vòng 30 phút, lệnh của bạn sẽ bị hủy. Điều này bảo vệ bạn và mạng của chúng tôi khỏi việc sử dụng sai</p></div>             ",
-                    "ApproveZelle": "\n             <div>\n              <p>Bạn đang mua <strong>{Amount} Constant</strong> với giá <strong>{Price}</strong> {Currency} /Constant.</p>\n              <p>Nếu bạn đã gửi <strong>{Total} {Currency}</strong> đến tài khoản ngân hàng người bán, vui lòng chọn \"Xác nhận thanh toán\" bên dưới.</p> \n              <p>Nếu không, vui lòng gửi <strong>{Total} {Currency}</strong> đến tài khoản ngân hàng người bán. Hãy nhớ ghi số tham chiếu <ref> trobg mô tả chuyển khoản.</p>\n              <div name=\"bank\">\n       <div><span>Phương thức thanh toán:</span><strong>Zelle</strong></div><div><span>Địa chỉ email ngân hàng:</span><strong>{Email}</strong></div><div><span>Tên đầy đủ:</span><strong>{FullName}</strong></div> </div>",
-                    "Finish": "\n<div>\n                <p>Bạn đang bán <strong>{Amount} Constant</strong> với giá <strong>{Price} </strong> {Currency}/ Constant.</p>\n                <p>Khi nhận được <strong>{TotalVND} {Currency}</strong> chuyển khoản, bạn có thể gửi Constant đi bằng cách nhấn nút bên dưới.</p>\n                <p>QUAN TRỌNG: Vui lòng không gửi Constant khi bạn chưa nhận được chuyển khoản. Nếu bạn chưa nhận được tiền trong vòng 30 phút, vui lòng liên hệ Constant qua hello@constant.money.</p>\n            </div>          "
-                }
-            }
-        },
-        "sellOrder": {
-            "title": "Lệnh bán khả dụng",
-            "date": "Ngày",
-            "value": "Giá trị",
-            "amount": "Lượng",
-            "accept": "Chấp nhận",
-            "pick": "Chọn",
-            "viewDetail": "Chi tiết",
-            "loadMore": "Tải thêm",
-            "status": {
-                "status": "Trạng thái",
-                "transferred": "Đã chuyển",
-                "transferred_fiat": "Đã chuyển Fiat",
-                "picked": "Đã chọn",
-                "pending": "Đang chờ xử lý",
-                "cancelled": "Đã huỷ",
-                "system_cancelled": "Hệ thống đã huỷ",
-                "system_rejected": "Hệ thống đã từ chối"
-            },
-            "approve": "Xác nhận ",
-            "confirm": {
-                "title": {
-                    "Cancel": "Huỷ lệnh #{ID}",
-                    "Approve": "Xác nhận bạn đã gửi tiền cho giao dịch #{ID}",
-                    "Finish": "Gửi Constant theo lệnh #{ID}"
-                },
-                "content": {
-                    "Cancel": "\n<div>\n              <p>Bạn đang {Type} <strong>{Amount}</strong> Constant với giá <strong>{Price}</strong> {Currency}/Constant.</p>\n              <p>Nếu bạn muốn huỷ lệnh này, hãy nhấn nút \"Huỷ lệnh\" phía dưới. Hoặc vui lòng tắt cửa sổ này</p>\n            </div>\n          ",
-                    "Approve": "\n             <div>\n              <p>Bạn đang mua <strong>{Amount} Constant</strong> với giá <strong>{Price}</strong> {Currency}/Constant.</p>\n              <p>Nếu bạn gửi<strong>{Total} {Currency}</strong> vào tài khoản ngân hàng này, vui lòng nhấn \"Xác nhận thanh toán\" bên dưới.</p> \n              <p>Hãy nhớ gửi chính xác <strong>{Total} {Currency}</strong> vào tài khoản ngân hàng của người bán. Nhớ điền số tham chiếu <ref> vào phần thông tin chuyển khoản</p>\n              <div name=\"bank\">\n               ",
-                    "Finish": "\n            <div>\n                <p>Bạn đang bán <strong>{Amount} Constant</strong> với giá <strong>{Price} </strong> {Currency}/Constant.</p>\n                <p>Nếu bạn đã nhận được <strong>{TotalVND} {Currency}</strong>, bạn có thể gửi Constant đến người mua ngay bằng cách nhấn nút bên dưới.</p>\n                <p>QUAN TRỌNG: Chỉ chuyển Constant khi bạn đã được thanh toán đầy đủ. Nếu bạn chưa nhận được tiền trong vòng 30 phút, liên hệ với chúng tôi qua email hello@constant.money để được giải quyết.</p>\n            </div>\n          "
-                }
-            },
-            "noData": "Không có lệnh mua khả dụng",
-            "yourInvest": "Khoản đầu tư của bạn"
         },
         "personalProfile": {
             "title": "Thông tin cá nhân",
@@ -1061,7 +844,7 @@
                 "11": "Chuyển khoản thất bại",
                 "12": "Đang chờ duyệt",
                 "13": "Đang chờ duyệt",
-                "14": "Đang chuyển khoản",
+                "14": "Transferring",
                 "15": "Đang xác nhận",
                 "16": "Order timed out"
             },
@@ -1940,25 +1723,9 @@
         }
     },
     "landingPage": {
-        "contactUS": {
-            "title": "Liên hệ",
-            "yourName": "Tên của bạn",
-            "requiredYourName": "Xin vui lòng nhập tên",
-            "placeholderYourName": "Nhập tên của bạn",
-            "email": "Email của bạn",
-            "placeholderYourEmail": "Nhập email của bạn",
-            "requiredEmail": "Yêu cầu nhập địa chỉ email",
-            "notValidEmail": "Xin vui lòng nhập đúng địa chỉ email.",
-            "phone": "Số điện thoại của bạn",
-            "placeholderPhone": "Vui lòng nhập số điện thoại của bạn",
-            "description": "Tin nhắn của bạn",
-            "placeholderDescription": "Nhập tin nhắn của bạn",
-            "requiredDescription": "Vui lòng nhập tin nhắn",
-            "contactButton": "Gửi",
-            "message": "Cảm ơn! Tin nhắn của bạn đã được gửi đi. Bạn sẽ nhận được phản hồi từ đại diện của chúng tôi trong vòng 12-24 giờ."
-        },
+        "faqsSectionLink": "\n      <p></p>\n      <p>Questions?</p>\n      <p>Check out our <a href=\"#landing-faqs\" class=\"underline\">FAQs</a>.</p>\n    ",
         "diversify": {
-            "title": "\n        <p class=\"header\">Earn 7% APR now.</p>\n        <p>Diversify into fully-secured P2P loans. All lending is 150% backed by digital assets. No fees. No dips.</p>\n        <p>Start investing from just $50.</p>\n      "
+            "title": "\n        <p class=\"header\">Earn 7% APR now.</p>\n        <p>Diversify into fully-secured P2P loans. All lending is 150% backed by digital assets. No fees. No dips.</p>\n        <p>Start investing from just $50.</p>\n        \n      "
         },
         "secureReturns": {
             "title": "\n        <p class=\"header\">Earn 7% APR now.</p>\n        <p>When markets dive, secure your returns with P2P lending. All loans are 150% backed by digital assets. No fees. No dips.</p>\n        <p>Start investing from just $50.</p>\n      "
@@ -1967,7 +1734,10 @@
             "title": "\n        <p class=\"header\">Earn 7% APR now.</p>\n        <p>Don’t go down with the market. Enjoy steady growth with fully-secured P2P lending. All loans are 150% backed by digital assets. No fees.</p>\n        <p>Start investing from just $50.</p>\n      "
         },
         "netReturns": {
-            "title": "\n        <p class=\"header\">Earn 7% APR now.</p>\n        <p>Catch great returns with secured P2P lending. All loans are 150% backed by collateral. No fees.</p>\n        <p>Start investing from just $50.</p>\n        <p></p>\n        <p>Questions?</p>\n        <p>Check out our <a href=\"#landing-faqs\" class=\"underline\">FAQs</a>.</p>\n      "
+            "title": "\n        <p class=\"header\">Earn 7% APR now.</p>\n        <p>Catch great returns with secured P2P lending. All loans are 150% backed by collateral. No fees.</p>\n        <p>Start investing from just $50.</p>\n      "
+        },
+        "investEasy": {
+            "title": "\n        <p class=\"header\">Get your free $10 bonus</p>\n        <p>Earn 7% APR with secured P2P lending. All loans 150% backed by collateral. No fees.</p>\n        <p>Create your free account now and get <strong>a $10 bonus</strong> when you verify your ID.</p>\n      "
         },
         "howItWorks": {
             "title": "How It Works",
@@ -2973,6 +2743,7 @@
             },
             "headLine": "Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.",
             "exchange": {
+                "eventBox": "Borrow now to get 1% discount from the crypto price.",
                 "stakingTimeMessage": "Your collateral will be sent to the Constant node. Please note: early repayment won’t be possible for at least {dayNum} days.",
                 "exchangeInfo": "The amount you will borrow in USD",
                 "exchangeInfoDesc": "The amount you will borrow in USD",
@@ -5929,6 +5700,22 @@
                             "date": " ",
                             "link": " ",
                             "authLink": "https://www.facebook.com/esther.dan.7"
+                        },
+                        "4": {
+                            "name": "Alex",
+                            "auth": "Alex",
+                            "desc": "\n                  <p>FYI - I’ve used MyConstant without problems since 2019 - I have a substantial chunk of change invested with no problems or $ losses. It’s a similar business platform as Worthy Bonds (offering secured loans) where I invested too - but Worthy financial uses business assets as collateral for that loan, which is riskier as those assets can drop in value in times like these and are harder to liquidate if a business defaults on their loan. I like MyConstant approach to secured lending better and just moved more $ from my Worthy Bonds and Wealthfront accounts to MyConstant. I invested with Fundrise, Diversyfund and others that deliver good returns on investment - I’ve had 0 losses this past decade. I manage investments in my solo 401k too.</p>\n                ",
+                            "date": " ",
+                            "link": " ",
+                            "authLink": " "
+                        },
+                        "5": {
+                            "name": "Ty Taylor",
+                            "auth": "Ty Taylor",
+                            "desc": "\n                  <p>Ive done over $35,000 already this year and not lost a penny. Last year with Proser P2p I lost over $5,000 in defaults.</p>\n                ",
+                            "date": " ",
+                            "link": " ",
+                            "authLink": " "
                         }
                     },
                     "tele": {
@@ -6738,6 +6525,10 @@
             "inform": {
                 "title": "Information",
                 "desc": "{content}"
+            },
+            "common": {
+                "viewingTitle": "{viewingTitle}",
+                "viewingContent": "{viewingContent}"
             }
         },
         "nextLevel": {
@@ -6779,8 +6570,9 @@
                 "action": " "
             },
             "status": {
-                "pending": "Order in progress",
-                "picked": "Pending",
+                "matching": "Matching",
+                "pending": "Pending",
+                "picked": "Order in progress",
                 "transferred_fiat": "Your account will be credited once we have received your transfer.",
                 "transferred_fiat_invest": "Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.",
                 "transferred": "Successful",
@@ -6789,6 +6581,107 @@
                 "system_cancelled": "Order timed out",
                 "system_rejected": "Order timed out",
                 "approving": "Waiting for admin approve"
+            }
+        },
+        "withdrawFiat": {
+            "title": "Withdrawals History",
+            "exportExcel": "Export to excel",
+            "noHistoryData": "Make a withdrawal to get started.",
+            "bankName": "Bank name",
+            "accountNumber": "Account number",
+            "beneficiaryName": "Beneficiary name",
+            "tabs": {
+                "fiat": "Fiat",
+                "openOrders": "Open Orders"
+            },
+            "headers": {
+                "orderNo": "#",
+                "usdAmount": "USD Amount",
+                "currencyAmount": "Currency Amount",
+                "paymentMethod": "Payment Method",
+                "fee": "Fee",
+                "date": "Date",
+                "status": "Status",
+                "action": "Action"
+            }
+        },
+        "withdrawCrypto": {
+            "title": "Withdrawals History",
+            "exportExcel": "Export to excel",
+            "noHistoryData": "Make a withdrawal to get started.",
+            "tabs": {
+                "crypto": "Crypto",
+                "openOrders": "Open Orders"
+            },
+            "headers": {
+                "orderNo": "#",
+                "usdAmount": "USD Amount",
+                "currencyAmount": "Currency Amount",
+                "address": "Send to Address",
+                "date": "Date",
+                "status": "Status",
+                "action": "Action"
+            }
+        },
+        "transferConstant": {
+            "title": "History",
+            "exportExcel": "Export to excel",
+            "noHistoryData": "Make a transfer to get started.",
+            "tabs": {
+                "sent": "Sent",
+                "received": "Received",
+                "openOrders": "Open Orders"
+            },
+            "headers": {
+                "orderNo": "#",
+                "amount": "Amount",
+                "fee": "Fee",
+                "fromEmail": "From Email",
+                "toEmail": "To Email",
+                "date": "Date",
+                "status": "Status",
+                "action": "Action"
+            }
+        },
+        "invest": {
+            "title": "History",
+            "noHistoryData": "Make an investment to get started.",
+            "tabs": {
+                "plus": "+",
+                "minus": "-",
+                "interest": "Interest",
+                "openOrders": "Open Orders"
+            },
+            "headers": {
+                "orderNo": "#",
+                "amount": "Amount",
+                "term": "Term",
+                "termRate": "Rate",
+                "date": "Date",
+                "status": "Status",
+                "action": "Action"
+            }
+        },
+        "borrow": {
+            "title": "History",
+            "exportExcel": "Export to excel",
+            "noHistoryData": "Make a transfer to get started.",
+            "tabs": {
+                "borrow": "Borrow",
+                "topup": "Topup",
+                "payoff": "Payoff",
+                "recallExcess": "Recall Excess"
+            },
+            "headers": {
+                "orderNo": "#",
+                "amount": "Amount",
+                "fee": "Fee",
+                "interest": "Interest",
+                "loanId": "Loan ID",
+                "loanDate": "Loan Date",
+                "payoffDate": "Payoff Date",
+                "date": "Date",
+                "status": "Status"
             }
         }
     }

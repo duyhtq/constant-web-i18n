@@ -312,6 +312,9 @@
 %%%.me.navigation.email_settings%%%,"Email Settings"
 %%%.me.navigation.sellOrders%%%,"Sell Orders"
 %%%.me.navigation.buyOrders%%%,"Buy Orders"
+%%%.me.navigation.bookingOrders%%%,"Sale Orders"
+%%%.me.navigation.investingOrders%%%,"Investing Orders"
+%%%.me.navigation.loanOrders%%%,"Loan Orders"
 %%%.me.navigation.myOrders%%%,"Deposits and withdrawals"
 %%%.me.navigation.deposits%%%,"Deposits"
 %%%.me.navigation.topupHistory%%%,"Topup History"
@@ -340,6 +343,7 @@
 %%%.me.navigation.viewInvestmentDetail%%%,"View investment detail here"
 %%%.me.navigation.batchTransfer%%%,"Batch Transfer"
 %%%.me.navigation.referralInfo%%%,"Referral Information"
+%%%.me.navigation.transferOrders%%%,"Transfer Orders"
 %%%.me.navigation.openOrders%%%,"Open Orders"
 %%%.me.navigation.interests%%%,"Interests"
 %%%.me.navigation.accountActivities%%%,"Account Activity"
@@ -418,6 +422,283 @@
 %%%.me.kyc.incorrect%%%,"Incorrect"
 %%%.me.batchTransfer.title%%%,"Batch Transfers"
 %%%.me.batchTransfer.detail%%%,"Batch Transfers Detail"
+%%%.me.buyOrder.title%%%,"Buy Order Available"
+%%%.me.buyOrder.date%%%,"Date"
+%%%.me.buyOrder.value%%%,"Value"
+%%%.me.buyOrder.amount%%%,"Amount"
+%%%.me.buyOrder.accept%%%,"Accept"
+%%%.me.buyOrder.approve%%%,"Confirm payment"
+%%%.me.buyOrder.receipt%%%,"Upload your receipt"
+%%%.me.buyOrder.viewDetail%%%,"Detail"
+%%%.me.buyOrder.loadMore%%%,"Load more"
+%%%.me.buyOrder.status.status%%%,"Status"
+%%%.me.buyOrder.status.transferred%%%,"Transferred"
+%%%.me.buyOrder.status.transferred_fiat%%%,"Transferred Fiat"
+%%%.me.buyOrder.status.picked%%%,"Picked"
+%%%.me.buyOrder.status.pending%%%,"Pending"
+%%%.me.buyOrder.status.cancelled%%%,"Cancelled"
+%%%.me.buyOrder.status.system_cancelled%%%,"System Cancelled"
+%%%.me.buyOrder.status.system_rejected%%%,"System Rejected"
+%%%.me.buyOrder.status.transferring_fiat%%%,"Transferring Fiat"
+%%%.me.buyOrder.confirmMess%%%,"You will pay {amount} {unit} for this payment."
+%%%.me.buyOrder.confirm.title.Cancel%%%,"Cancel order #{ID}"
+%%%.me.buyOrder.confirm.title.Approve%%%,"Confirm you’ve sent the money for order #{ID}"
+%%%.me.buyOrder.confirm.title.Finish%%%,"Send Constant for order #{ID}"
+%%%.me.buyOrder.noData%%%,"No sell order available"
+%%%.me.investingOrder.title%%%,"Investing Order Available"
+%%%.me.investingOrder.userAndDate%%%,"User/Date"
+%%%.me.investingOrder.matched%%%,"Matched"
+%%%.me.investingOrder.date%%%,"Date"
+%%%.me.investingOrder.termAndRate%%%,"Term/Rate"
+%%%.me.investingOrder.amount%%%,"Amount"
+%%%.me.investingOrder.accept%%%,"Accept"
+%%%.me.investingOrder.cancel%%%,"Cancel"
+%%%.me.investingOrder.confirm%%%,"Confirm"
+%%%.me.investingOrder.confirmTitle%%%,"Confirm matched amount"
+%%%.me.investingOrder.confirmMess%%%,"Are you sure you want to confirm this order?"
+%%%.me.investingOrder.reject%%%,"Reject"
+%%%.me.investingOrder.rejectMess%%%,"Are you sure you want to reject this order?"
+%%%.me.investingOrder.loadMore%%%,"Load more"
+%%%.me.investingOrder.matchedAmount%%%,"Matched Amount"
+%%%.me.investingOrder.status.status%%%,"Status"
+%%%.me.investingOrder.status.transferred%%%,"Transferred"
+%%%.me.investingOrder.status.transferred_fiat%%%,"Transferred Fiat"
+%%%.me.investingOrder.status.picked%%%,"Picked"
+%%%.me.investingOrder.status.pending%%%,"Pending"
+%%%.me.investingOrder.status.cancelled%%%,"Cancelled"
+%%%.me.investingOrder.status.system_cancelled%%%,"System Cancelled"
+%%%.me.investingOrder.status.system_rejected%%%,"System Rejected"
+%%%.me.investingOrder.acceptFailed.%%%,"Picked booking order is failing, please try again, or contact my admin for help. 
+ Thanks! "
+%%%.me.investingOrder.acceptFailed.processing_order_exists%%%,"There is processing order need to complete"
+%%%.me.investingOrder.acceptFailed.validation_error%%%,"Can not accept this order."
+%%%.me.investingOrder.noData%%%,"No sell order available"
+%%%.me.loanOrder.title%%%,"Loan Order Available"
+%%%.me.loanOrder.userAndDate%%%,"User/Date"
+%%%.me.loanOrder.matched%%%,"Matched"
+%%%.me.loanOrder.date%%%,"Date"
+%%%.me.loanOrder.termAndRate%%%,"Term/Rate"
+%%%.me.loanOrder.amount%%%,"Amount"
+%%%.me.loanOrder.cancel%%%,"Cancel"
+%%%.me.loanOrder.accept%%%,"Accept"
+%%%.me.loanOrder.acceptMess%%%,"Are you sure you want to confirm this order?"
+%%%.me.loanOrder.reject%%%,"Reject"
+%%%.me.loanOrder.rejectMess%%%,"Are you sure you want to reject this order?"
+%%%.me.loanOrder.loadMore%%%,"Load more"
+%%%.me.loanOrder.matchedAmount%%%,"Matched Amount"
+%%%.me.loanOrder.status.status%%%,"Status"
+%%%.me.loanOrder.status.transferred%%%,"Transferred"
+%%%.me.loanOrder.status.transferred_fiat%%%,"Transferred Fiat"
+%%%.me.loanOrder.status.picked%%%,"Picked"
+%%%.me.loanOrder.status.pending%%%,"Pending"
+%%%.me.loanOrder.status.cancelled%%%,"Cancelled"
+%%%.me.loanOrder.status.system_cancelled%%%,"System Cancelled"
+%%%.me.loanOrder.status.system_rejected%%%,"System Rejected"
+%%%.me.loanOrder.acceptSuccessfully%%%,"Your accepting order have been accepted successfully"
+%%%.me.loanOrder.acceptFailed.%%%,"Picked booking order is failing, please try again, or contact my admin for help. 
+ Thanks! "
+%%%.me.loanOrder.acceptFailed.processing_order_exists%%%,"There is processing order need to complete"
+%%%.me.loanOrder.acceptFailed.validation_error%%%,"Can not accept this order."
+%%%.me.loanOrder.noData%%%,"No sell order available"
+%%%.me.bookingOrder.title%%%,"Booking Order Available"
+%%%.me.bookingOrder.userAndDate%%%,"User/Date"
+%%%.me.bookingOrder.date%%%,"Date"
+%%%.me.bookingOrder.value%%%,"Value"
+%%%.me.bookingOrder.amount%%%,"Amount"
+%%%.me.bookingOrder.accept%%%,"Accept"
+%%%.me.bookingOrder.detail%%%,"View Detail"
+%%%.me.bookingOrder.cancel%%%,"Cancel"
+%%%.me.bookingOrder.cancelMess%%%,"Are you sure you want to cancel this order?"
+%%%.me.bookingOrder.approve%%%,"Confirm payment"
+%%%.me.bookingOrder.approveMess%%%,"Are you sure you want to confirm this order?"
+%%%.me.bookingOrder.reject%%%,"Reject"
+%%%.me.bookingOrder.rejectMess%%%,"Are you sure you want to reject this order?"
+%%%.me.bookingOrder.riskNote%%%,"We found this order have risk rule detection, Please verify risk before take an action. if you choose Reject the amount of order will be transfer to your balance."
+%%%.me.bookingOrder.receipt%%%,"Upload your receipt"
+%%%.me.bookingOrder.viewDetail%%%,"Detail"
+%%%.me.bookingOrder.loadMore%%%,"Load more"
+%%%.me.bookingOrder.routingNumber%%%,"Routing Number: "
+%%%.me.bookingOrder.swiftCode%%%,"Swift Code: "
+%%%.me.bookingOrder.status.status%%%,"Status"
+%%%.me.bookingOrder.status.transferred%%%,"Transferred"
+%%%.me.bookingOrder.status.transferred_fiat%%%,"Transferred Fiat"
+%%%.me.bookingOrder.status.picked%%%,"Picked"
+%%%.me.bookingOrder.status.pending%%%,"Pending"
+%%%.me.bookingOrder.status.cancelled%%%,"Cancelled"
+%%%.me.bookingOrder.status.system_cancelled%%%,"System Cancelled"
+%%%.me.bookingOrder.status.system_rejected%%%,"System Rejected"
+%%%.me.bookingOrder.acceptFailed.%%%,"Picked booking order is failing, please try again, or contact my admin for help. 
+ Thanks! "
+%%%.me.bookingOrder.acceptFailed.processing_order_exists%%%,"There is processing order need to complete"
+%%%.me.bookingOrder.noData%%%,"No sell order available"
+%%%.me.bookingOrder.confirm.title.Cancel%%%,"Cancel order #{ID}"
+%%%.me.bookingOrder.confirm.title.Approve%%%,"Confirm you’ve sent the money for order #{ID}"
+%%%.me.bookingOrder.confirm.title.Finish%%%,"Send Constant for order #{ID}"
+%%%.me.bookingOrder.confirm.content.Cancel%%%,"
+            <div>
+              <p>You’re {Type} <strong>{Amount}</strong> Constant at <strong>{Price}</strong> {Currency} per Constant.</p>
+              <p>If you want to cancel this order, please click the “Cancel order” button below. Otherwise, please close this window.</p>
+            </div>
+          "
+%%%.me.bookingOrder.confirm.content.Approve%%%,"
+             <div>
+              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>
+              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> 
+              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>
+              <div name=""bank"">
+                <div>
+                  <span>Bank Name:</span>
+                  <strong>{bank_name}</strong>
+                </div>
+                <div>
+                  <span>Account Name:</span>
+                  <strong>{bank_account_name}</strong>
+                </div>
+                <div>
+                  <span>Account Number: </span>
+                  <strong>{bank_account_number}</strong>
+                </div>
+                <div>
+                  <span>Amount: </span>
+                  <strong>{Total}&nbsp;{Currency}</strong>
+                </div>
+                <div>
+                  <span>Reference: </span>
+                  <strong>{Reference}</strong>
+                </div>
+                <div>
+                    <span>Bank Country: </span>
+                    <strong>{bankCountry}</strong>
+                 </div>
+              </div>
+              <br />
+              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>
+             </div>
+          "
+%%%.me.bookingOrder.confirm.content.ApproveUs%%%,"
+          <div>
+              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>
+              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> 
+              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>
+              <div name=""bank"">
+                <div>
+                  <span>Account Name:</span>
+                  <strong>{bank_account_name}</strong>
+                </div>
+                <div>
+                  <span>Account Number: </span>
+                  <strong>{bank_account_number}</strong>
+                </div>
+                <div>
+                  <span>Amount: </span>
+                  <strong>{Total}&nbsp;{Currency}</strong>
+                </div>
+                <div>
+                  <span>Reference: </span>
+                  <strong>{Reference}</strong>
+                </div>
+                <div>
+                    <span>Bank Country: </span>
+                    <strong>{bankCountry}</strong>
+                 </div>
+              </div>
+              <br />
+              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>
+             </div>
+          "
+%%%.me.bookingOrder.confirm.content.ApproveZelle%%%,"
+             <div>
+              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>
+              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> 
+              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>
+              <div name=""bank"">
+                <div>
+                  <span>Payment method:</span>
+                  <strong>Zelle</strong>
+                </div>
+                <div>
+                  <span>Bank Email Address:</span>
+                  <strong>{Email}</strong>
+                </div>
+                <div>
+                  <span>Full Name:</span>
+                  <strong>{FullName}</strong>
+                </div>
+             </div>
+          "
+%%%.me.bookingOrder.confirm.content.Finish%%%,"
+            <div>
+                <p>You’re selling <strong>{Amount} Constant</strong> at <strong>{Price} </strong> {Currency} per Constant.</p>
+                <p>If you’ve received a bank transfer for <strong>{TotalVND} {Currency}</strong>, you can now send your Constant to the buyer by clicking the button below.</p>
+                <p>IMPORTANT: Please do not send your Constant until you’ve received the bank transfer from the buyer. If the buyer doesn’t pay you within 30 minutes of placing the order, please email us at hello@constant.money.</p>
+            </div>
+          "
+%%%.me.sellOrder.title%%%,"Sell Order Available"
+%%%.me.sellOrder.date%%%,"Date"
+%%%.me.sellOrder.value%%%,"Value"
+%%%.me.sellOrder.amount%%%,"Amount"
+%%%.me.sellOrder.accept%%%,"Accept"
+%%%.me.sellOrder.pick%%%,"Pick"
+%%%.me.sellOrder.viewDetail%%%,"Detail"
+%%%.me.sellOrder.loadMore%%%,"Load more"
+%%%.me.sellOrder.status.status%%%,"Status"
+%%%.me.sellOrder.status.transferred%%%,"Transferred"
+%%%.me.sellOrder.status.transferred_fiat%%%,"Transferred Fiat"
+%%%.me.sellOrder.status.picked%%%,"Picked"
+%%%.me.sellOrder.status.pending%%%,"Pending"
+%%%.me.sellOrder.status.cancelled%%%,"Cancelled"
+%%%.me.sellOrder.status.system_cancelled%%%,"System Cancelled"
+%%%.me.sellOrder.status.system_rejected%%%,"System Rejected"
+%%%.me.sellOrder.approve%%%,"Confirm payment"
+%%%.me.sellOrder.confirm.title.Cancel%%%,"Cancel order #{ID}"
+%%%.me.sellOrder.confirm.title.Approve%%%,"Confirm you’ve sent the money for order #{ID}"
+%%%.me.sellOrder.confirm.title.Finish%%%,"Send Constant for order #{ID}"
+%%%.me.sellOrder.confirm.content.Cancel%%%,"
+            <div>
+              <p>You’re {Type} <strong>{Amount}</strong> Constant at <strong>{Price}</strong> {Currency} per Constant.</p>
+              <p>If you want to cancel this order, please click the “Cancel order” button below. Otherwise, please close this window.</p>
+            </div>
+          "
+%%%.me.sellOrder.confirm.content.Approve%%%,"
+             <div>
+              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>
+              <p>If you’ve sent <strong>{TotalVND} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> 
+              <p>Otherwise, please send <strong>{TotalVND} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>
+              <div name=""bank"">
+                <div>
+                  <span>Bank Name:</span>
+                  <strong>{BankName}</strong>
+                </div>
+                <div>
+                  <span>Account Name:</span>
+                  <strong>{BankAccountName}</strong>
+                </div>
+                <div>
+                  <span>Account Number: </span>
+                  <strong>{BankAccountNumber}</strong>
+                </div>
+                <div>
+                  <span>Amount: </span>
+                  <strong>{TotalVND}&nbsp;{Currency}</strong>
+                </div>
+                <div>
+                  <span>Reference: </span>
+                  <strong>{Reference}</strong>
+                </div>
+              </div>
+              <br />
+              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>
+             </div>
+          "
+%%%.me.sellOrder.confirm.content.Finish%%%,"
+            <div>
+                <p>You’re selling <strong>{Amount} Constant</strong> at <strong>{Price} </strong> {Currency} per Constant.</p>
+                <p>If you’ve received a bank transfer for <strong>{TotalVND} {Currency}</strong>, you can now send your Constant to the buyer by clicking the button below.</p>
+                <p>IMPORTANT: Please do not send your Constant until you’ve received the bank transfer from the buyer. If the buyer doesn’t pay you within 30 minutes of placing the order, please email us at hello@constant.money.</p>
+            </div>
+          "
+%%%.me.sellOrder.noData%%%,"No buy order available"
+%%%.me.sellOrder.yourInvest%%%,"Your Invests"
 %%%.me.personalProfile.title%%%,"Personal Detail"
 %%%.me.personalProfile.name%%%,"Name"
 %%%.me.personalProfile.userName%%%,"Nickname"
@@ -820,7 +1101,7 @@
 %%%.me.history.user.status.transferredMoneyToAgentInvest%%%,"Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD."
 %%%.me.history.user.status.done%%%,"Successful"
 %%%.me.history.user.status.inProgress%%%,"Order in progress"
-%%%.me.history.user.status.approving%%%,"Waiting for admin approve"
+%%%.me.history.user.status.approving%%%,"Waiting for admin approval"
 %%%.me.history.user.status.transferring_fiat%%%,"Transferring Fiat"
 %%%.me.history.bankInfo.bankName%%%,"Bank Name"
 %%%.me.history.bankInfo.bankCountryAndCurrency%%%,"Country/Currency"
@@ -5022,6 +5303,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.proLending.borrowBooking.errorMsgs.maxOfCollateralHolding%%%,"Please try a different coin. To manage risk, the platform can hold only 10% of any coin's 24h trading volume."
 %%%.proLending.borrowBooking.errorMsgs.error%%%,"OH! something went wrong! Please try again"
 %%%.proLending.borrowC2CBooking.title%%%,"Crypto Credit"
+%%%.proLending.borrowC2CBooking.exchange.eventBox%%%,"Borrow now to get 1% discount from the crypto price"
 %%%.proLending.borrowC2CBooking.exchange.amountLabel%%%,"Crypto to buy"
 %%%.proLending.borrowC2CBooking.exchange.amountLabelDesc%%%,"The amount and type of cryptocurrency you want to buy?"
 %%%.proLending.borrowC2CBooking.exchange.exchangeInfo%%%,"USD loan value"
@@ -6424,7 +6706,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.history.deposit.status.cancelled%%%,"Cancelled"
 %%%.history.deposit.status.system_cancelled%%%,"Order timed out"
 %%%.history.deposit.status.system_rejected%%%,"Order timed out"
-%%%.history.deposit.status.approving%%%,"Waiting for admin approve"
+%%%.history.deposit.status.approving%%%,"Waiting for admin approval"
 %%%.history.withdrawFiat.title%%%,"Withdrawals History"
 %%%.history.withdrawFiat.exportExcel%%%,"Export to excel"
 %%%.history.withdrawFiat.noHistoryData%%%,"Make a withdrawal to get started."

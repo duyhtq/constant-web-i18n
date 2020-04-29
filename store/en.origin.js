@@ -407,6 +407,9 @@
             "email_settings": "%%%.me.navigation.email_settings%%%",
             "sellOrders": "%%%.me.navigation.sellOrders%%%",
             "buyOrders": "%%%.me.navigation.buyOrders%%%",
+            "bookingOrders": "%%%.me.navigation.bookingOrders%%%",
+            "investingOrders": "%%%.me.navigation.investingOrders%%%",
+            "loanOrders": "%%%.me.navigation.loanOrders%%%",
             "myOrders": "%%%.me.navigation.myOrders%%%",
             "deposits": "%%%.me.navigation.deposits%%%",
             "topupHistory": "%%%.me.navigation.topupHistory%%%",
@@ -435,6 +438,7 @@
             "viewInvestmentDetail": "%%%.me.navigation.viewInvestmentDetail%%%",
             "batchTransfer": "%%%.me.navigation.batchTransfer%%%",
             "referralInfo": "%%%.me.navigation.referralInfo%%%",
+            "transferOrders": "%%%.me.navigation.transferOrders%%%",
             "openOrders": "%%%.me.navigation.openOrders%%%",
             "interests": "%%%.me.navigation.interests%%%",
             "accountActivities": "%%%.me.navigation.accountActivities%%%",
@@ -495,6 +499,187 @@
         "batchTransfer": {
             "title": "%%%.me.batchTransfer.title%%%",
             "detail": "%%%.me.batchTransfer.detail%%%"
+        },
+        "buyOrder": {
+            "title": "%%%.me.buyOrder.title%%%",
+            "date": "%%%.me.buyOrder.date%%%",
+            "value": "%%%.me.buyOrder.value%%%",
+            "amount": "%%%.me.buyOrder.amount%%%",
+            "accept": "%%%.me.buyOrder.accept%%%",
+            "approve": "%%%.me.buyOrder.approve%%%",
+            "receipt": "%%%.me.buyOrder.receipt%%%",
+            "viewDetail": "%%%.me.buyOrder.viewDetail%%%",
+            "loadMore": "%%%.me.buyOrder.loadMore%%%",
+            "status": {
+                "status": "%%%.me.buyOrder.status.status%%%",
+                "transferred": "%%%.me.buyOrder.status.transferred%%%",
+                "transferred_fiat": "%%%.me.buyOrder.status.transferred_fiat%%%",
+                "picked": "%%%.me.buyOrder.status.picked%%%",
+                "pending": "%%%.me.buyOrder.status.pending%%%",
+                "cancelled": "%%%.me.buyOrder.status.cancelled%%%",
+                "system_cancelled": "%%%.me.buyOrder.status.system_cancelled%%%",
+                "system_rejected": "%%%.me.buyOrder.status.system_rejected%%%",
+                "transferring_fiat": "%%%.me.buyOrder.status.transferring_fiat%%%"
+            },
+            "confirmMess": "%%%.me.buyOrder.confirmMess%%%",
+            "confirm": {
+                "title": {
+                    "Cancel": "%%%.me.buyOrder.confirm.title.Cancel%%%",
+                    "Approve": "%%%.me.buyOrder.confirm.title.Approve%%%",
+                    "Finish": "%%%.me.buyOrder.confirm.title.Finish%%%"
+                }
+            },
+            "noData": "%%%.me.buyOrder.noData%%%"
+        },
+        "investingOrder": {
+            "title": "%%%.me.investingOrder.title%%%",
+            "userAndDate": "%%%.me.investingOrder.userAndDate%%%",
+            "matched": "%%%.me.investingOrder.matched%%%",
+            "date": "%%%.me.investingOrder.date%%%",
+            "termAndRate": "%%%.me.investingOrder.termAndRate%%%",
+            "amount": "%%%.me.investingOrder.amount%%%",
+            "accept": "%%%.me.investingOrder.accept%%%",
+            "cancel": "%%%.me.investingOrder.cancel%%%",
+            "confirm": "%%%.me.investingOrder.confirm%%%",
+            "confirmTitle": "%%%.me.investingOrder.confirmTitle%%%",
+            "confirmMess": "%%%.me.investingOrder.confirmMess%%%",
+            "reject": "%%%.me.investingOrder.reject%%%",
+            "rejectMess": "%%%.me.investingOrder.rejectMess%%%",
+            "loadMore": "%%%.me.investingOrder.loadMore%%%",
+            "matchedAmount": "%%%.me.investingOrder.matchedAmount%%%",
+            "status": {
+                "status": "%%%.me.investingOrder.status.status%%%",
+                "transferred": "%%%.me.investingOrder.status.transferred%%%",
+                "transferred_fiat": "%%%.me.investingOrder.status.transferred_fiat%%%",
+                "picked": "%%%.me.investingOrder.status.picked%%%",
+                "pending": "%%%.me.investingOrder.status.pending%%%",
+                "cancelled": "%%%.me.investingOrder.status.cancelled%%%",
+                "system_cancelled": "%%%.me.investingOrder.status.system_cancelled%%%",
+                "system_rejected": "%%%.me.investingOrder.status.system_rejected%%%"
+            },
+            "acceptFailed": {
+                "": "%%%.me.investingOrder.acceptFailed.%%%",
+                "processing_order_exists": "%%%.me.investingOrder.acceptFailed.processing_order_exists%%%",
+                "validation_error": "%%%.me.investingOrder.acceptFailed.validation_error%%%"
+            },
+            "noData": "%%%.me.investingOrder.noData%%%"
+        },
+        "loanOrder": {
+            "title": "%%%.me.loanOrder.title%%%",
+            "userAndDate": "%%%.me.loanOrder.userAndDate%%%",
+            "matched": "%%%.me.loanOrder.matched%%%",
+            "date": "%%%.me.loanOrder.date%%%",
+            "termAndRate": "%%%.me.loanOrder.termAndRate%%%",
+            "amount": "%%%.me.loanOrder.amount%%%",
+            "cancel": "%%%.me.loanOrder.cancel%%%",
+            "accept": "%%%.me.loanOrder.accept%%%",
+            "acceptMess": "%%%.me.loanOrder.acceptMess%%%",
+            "reject": "%%%.me.loanOrder.reject%%%",
+            "rejectMess": "%%%.me.loanOrder.rejectMess%%%",
+            "loadMore": "%%%.me.loanOrder.loadMore%%%",
+            "matchedAmount": "%%%.me.loanOrder.matchedAmount%%%",
+            "status": {
+                "status": "%%%.me.loanOrder.status.status%%%",
+                "transferred": "%%%.me.loanOrder.status.transferred%%%",
+                "transferred_fiat": "%%%.me.loanOrder.status.transferred_fiat%%%",
+                "picked": "%%%.me.loanOrder.status.picked%%%",
+                "pending": "%%%.me.loanOrder.status.pending%%%",
+                "cancelled": "%%%.me.loanOrder.status.cancelled%%%",
+                "system_cancelled": "%%%.me.loanOrder.status.system_cancelled%%%",
+                "system_rejected": "%%%.me.loanOrder.status.system_rejected%%%"
+            },
+            "acceptSuccessfully": "%%%.me.loanOrder.acceptSuccessfully%%%",
+            "acceptFailed": {
+                "": "%%%.me.loanOrder.acceptFailed.%%%",
+                "processing_order_exists": "%%%.me.loanOrder.acceptFailed.processing_order_exists%%%",
+                "validation_error": "%%%.me.loanOrder.acceptFailed.validation_error%%%"
+            },
+            "noData": "%%%.me.loanOrder.noData%%%"
+        },
+        "bookingOrder": {
+            "title": "%%%.me.bookingOrder.title%%%",
+            "userAndDate": "%%%.me.bookingOrder.userAndDate%%%",
+            "date": "%%%.me.bookingOrder.date%%%",
+            "value": "%%%.me.bookingOrder.value%%%",
+            "amount": "%%%.me.bookingOrder.amount%%%",
+            "accept": "%%%.me.bookingOrder.accept%%%",
+            "detail": "%%%.me.bookingOrder.detail%%%",
+            "cancel": "%%%.me.bookingOrder.cancel%%%",
+            "cancelMess": "%%%.me.bookingOrder.cancelMess%%%",
+            "approve": "%%%.me.bookingOrder.approve%%%",
+            "approveMess": "%%%.me.bookingOrder.approveMess%%%",
+            "reject": "%%%.me.bookingOrder.reject%%%",
+            "rejectMess": "%%%.me.bookingOrder.rejectMess%%%",
+            "riskNote": "%%%.me.bookingOrder.riskNote%%%",
+            "receipt": "%%%.me.bookingOrder.receipt%%%",
+            "viewDetail": "%%%.me.bookingOrder.viewDetail%%%",
+            "loadMore": "%%%.me.bookingOrder.loadMore%%%",
+            "routingNumber": "%%%.me.bookingOrder.routingNumber%%%",
+            "swiftCode": "%%%.me.bookingOrder.swiftCode%%%",
+            "status": {
+                "status": "%%%.me.bookingOrder.status.status%%%",
+                "transferred": "%%%.me.bookingOrder.status.transferred%%%",
+                "transferred_fiat": "%%%.me.bookingOrder.status.transferred_fiat%%%",
+                "picked": "%%%.me.bookingOrder.status.picked%%%",
+                "pending": "%%%.me.bookingOrder.status.pending%%%",
+                "cancelled": "%%%.me.bookingOrder.status.cancelled%%%",
+                "system_cancelled": "%%%.me.bookingOrder.status.system_cancelled%%%",
+                "system_rejected": "%%%.me.bookingOrder.status.system_rejected%%%"
+            },
+            "acceptFailed": {
+                "": "%%%.me.bookingOrder.acceptFailed.%%%",
+                "processing_order_exists": "%%%.me.bookingOrder.acceptFailed.processing_order_exists%%%"
+            },
+            "noData": "%%%.me.bookingOrder.noData%%%",
+            "confirm": {
+                "title": {
+                    "Cancel": "%%%.me.bookingOrder.confirm.title.Cancel%%%",
+                    "Approve": "%%%.me.bookingOrder.confirm.title.Approve%%%",
+                    "Finish": "%%%.me.bookingOrder.confirm.title.Finish%%%"
+                },
+                "content": {
+                    "Cancel": "%%%.me.bookingOrder.confirm.content.Cancel%%%",
+                    "Approve": "%%%.me.bookingOrder.confirm.content.Approve%%%",
+                    "ApproveUs": "%%%.me.bookingOrder.confirm.content.ApproveUs%%%",
+                    "ApproveZelle": "%%%.me.bookingOrder.confirm.content.ApproveZelle%%%",
+                    "Finish": "%%%.me.bookingOrder.confirm.content.Finish%%%"
+                }
+            }
+        },
+        "sellOrder": {
+            "title": "%%%.me.sellOrder.title%%%",
+            "date": "%%%.me.sellOrder.date%%%",
+            "value": "%%%.me.sellOrder.value%%%",
+            "amount": "%%%.me.sellOrder.amount%%%",
+            "accept": "%%%.me.sellOrder.accept%%%",
+            "pick": "%%%.me.sellOrder.pick%%%",
+            "viewDetail": "%%%.me.sellOrder.viewDetail%%%",
+            "loadMore": "%%%.me.sellOrder.loadMore%%%",
+            "status": {
+                "status": "%%%.me.sellOrder.status.status%%%",
+                "transferred": "%%%.me.sellOrder.status.transferred%%%",
+                "transferred_fiat": "%%%.me.sellOrder.status.transferred_fiat%%%",
+                "picked": "%%%.me.sellOrder.status.picked%%%",
+                "pending": "%%%.me.sellOrder.status.pending%%%",
+                "cancelled": "%%%.me.sellOrder.status.cancelled%%%",
+                "system_cancelled": "%%%.me.sellOrder.status.system_cancelled%%%",
+                "system_rejected": "%%%.me.sellOrder.status.system_rejected%%%"
+            },
+            "approve": "%%%.me.sellOrder.approve%%%",
+            "confirm": {
+                "title": {
+                    "Cancel": "%%%.me.sellOrder.confirm.title.Cancel%%%",
+                    "Approve": "%%%.me.sellOrder.confirm.title.Approve%%%",
+                    "Finish": "%%%.me.sellOrder.confirm.title.Finish%%%"
+                },
+                "content": {
+                    "Cancel": "%%%.me.sellOrder.confirm.content.Cancel%%%",
+                    "Approve": "%%%.me.sellOrder.confirm.content.Approve%%%",
+                    "Finish": "%%%.me.sellOrder.confirm.content.Finish%%%"
+                }
+            },
+            "noData": "%%%.me.sellOrder.noData%%%",
+            "yourInvest": "%%%.me.sellOrder.yourInvest%%%"
         },
         "personalProfile": {
             "title": "%%%.me.personalProfile.title%%%",
@@ -4888,6 +5073,7 @@
         "borrowC2CBooking": {
             "title": "%%%.proLending.borrowC2CBooking.title%%%",
             "exchange": {
+                "eventBox": "%%%.proLending.borrowC2CBooking.exchange.eventBox%%%",
                 "amountLabel": "%%%.proLending.borrowC2CBooking.exchange.amountLabel%%%",
                 "amountLabelDesc": "%%%.proLending.borrowC2CBooking.exchange.amountLabelDesc%%%",
                 "exchangeInfo": "%%%.proLending.borrowC2CBooking.exchange.exchangeInfo%%%",

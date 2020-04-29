@@ -420,6 +420,9 @@ export default {
       email_settings: 'Email Settings',
       sellOrders: 'Sell Orders',
       buyOrders: 'Buy Orders',
+      bookingOrders: 'Sale Orders',
+      investingOrders: 'Investing Orders',
+      loanOrders: 'Loan Orders',
       myOrders: 'Deposits and withdrawals',
       deposits: 'Deposits',
       topupHistory: 'Topup History',
@@ -448,6 +451,7 @@ export default {
       viewInvestmentDetail: 'View investment detail here',
       batchTransfer: 'Batch Transfer',
       referralInfo: 'Referral Information',
+      transferOrders: 'Transfer Orders',
       openOrders: 'Open Orders',
       interests: 'Interests',
       accountActivities: 'Account Activity',
@@ -533,6 +537,326 @@ export default {
     batchTransfer: {
       title: 'Batch Transfers',
       detail: 'Batch Transfers Detail',
+    },
+    buyOrder: {
+      title: 'Buy Order Available',
+      date: 'Date',
+      value: 'Value',
+      amount: 'Amount',
+      accept: 'Accept',
+      approve: 'Confirm payment',
+      receipt: 'Upload your receipt',
+      viewDetail: 'Detail',
+      loadMore: 'Load more',
+      status: {
+        status: 'Status',
+        transferred: 'Transferred',
+        transferred_fiat: 'Transferred Fiat',
+        picked: 'Picked',
+        pending: 'Pending',
+        cancelled: 'Cancelled',
+        system_cancelled: 'System Cancelled',
+        system_rejected: 'System Rejected',
+        transferring_fiat: 'Transferring Fiat',
+      },
+      confirmMess: 'You will pay {amount} {unit} for this payment.',
+      confirm: {
+        title: {
+          Cancel: 'Cancel order #{ID}',
+          Approve: 'Confirm you’ve sent the money for order #{ID}',
+          Finish: 'Send Constant for order #{ID}',
+        },
+      },
+      noData: 'No sell order available',
+    },
+    investingOrder: {
+      title: 'Investing Order Available',
+      userAndDate: 'User/Date',
+      matched: 'Matched',
+      date: 'Date',
+      termAndRate: 'Term/Rate',
+      amount: 'Amount',
+      accept: 'Accept',
+      cancel: 'Cancel',
+      confirm: 'Confirm',
+      confirmTitle: 'Confirm matched amount',
+      confirmMess: 'Are you sure you want to confirm this order?',
+      reject: 'Reject',
+      rejectMess: 'Are you sure you want to reject this order?',
+      loadMore: 'Load more',
+      matchedAmount: 'Matched Amount',
+      status: {
+        status: 'Status',
+        transferred: 'Transferred',
+        transferred_fiat: 'Transferred Fiat',
+        picked: 'Picked',
+        pending: 'Pending',
+        cancelled: 'Cancelled',
+        system_cancelled: 'System Cancelled',
+        system_rejected: 'System Rejected',
+      },
+      acceptFailed: {
+        '':
+          'Picked booking order is failing, please try again, or contact my admin for help. \n Thanks! ',
+        processing_order_exists: 'There is processing order need to complete',
+        validation_error: 'Can not accept this order.',
+      },
+      noData: 'No sell order available',
+    },
+    loanOrder: {
+      title: 'Loan Order Available',
+      userAndDate: 'User/Date',
+      matched: 'Matched',
+      date: 'Date',
+      termAndRate: 'Term/Rate',
+      amount: 'Amount',
+      cancel: 'Cancel',
+      accept: 'Accept',
+      acceptMess: 'Are you sure you want to confirm this order?',
+      reject: 'Reject',
+      rejectMess: 'Are you sure you want to reject this order?',
+      loadMore: 'Load more',
+      matchedAmount: 'Matched Amount',
+      status: {
+        status: 'Status',
+        transferred: 'Transferred',
+        transferred_fiat: 'Transferred Fiat',
+        picked: 'Picked',
+        pending: 'Pending',
+        cancelled: 'Cancelled',
+        system_cancelled: 'System Cancelled',
+        system_rejected: 'System Rejected',
+      },
+      acceptSuccessfully: 'Your accepting order have been accepted successfully',
+      acceptFailed: {
+        '':
+          'Picked booking order is failing, please try again, or contact my admin for help. \n Thanks! ',
+        processing_order_exists: 'There is processing order need to complete',
+        validation_error: 'Can not accept this order.',
+      },
+      noData: 'No sell order available',
+    },
+    bookingOrder: {
+      title: 'Booking Order Available',
+      userAndDate: 'User/Date',
+      date: 'Date',
+      value: 'Value',
+      amount: 'Amount',
+      accept: 'Accept',
+      detail: 'View Detail',
+      cancel: 'Cancel',
+      cancelMess: 'Are you sure you want to cancel this order?',
+      approve: 'Confirm payment',
+      approveMess: 'Are you sure you want to confirm this order?',
+      reject: 'Reject',
+      rejectMess: 'Are you sure you want to reject this order?',
+      riskNote:
+        'We found this order have risk rule detection, Please verify risk before take an action. if you choose Reject the amount of order will be transfer to your balance.',
+      receipt: 'Upload your receipt',
+      viewDetail: 'Detail',
+      loadMore: 'Load more',
+      routingNumber: 'Routing Number: ',
+      swiftCode: 'Swift Code: ',
+      status: {
+        status: 'Status',
+        transferred: 'Transferred',
+        transferred_fiat: 'Transferred Fiat',
+        picked: 'Picked',
+        pending: 'Pending',
+        cancelled: 'Cancelled',
+        system_cancelled: 'System Cancelled',
+        system_rejected: 'System Rejected',
+      },
+      acceptFailed: {
+        '':
+          'Picked booking order is failing, please try again, or contact my admin for help. \n Thanks! ',
+        processing_order_exists: 'There is processing order need to complete',
+      },
+      noData: 'No sell order available',
+      confirm: {
+        title: {
+          Cancel: 'Cancel order #{ID}',
+          Approve: 'Confirm you’ve sent the money for order #{ID}',
+          Finish: 'Send Constant for order #{ID}',
+        },
+        content: {
+          Cancel: `
+            <div>
+              <p>You’re {Type} <strong>{Amount}</strong> Constant at <strong>{Price}</strong> {Currency} per Constant.</p>
+              <p>If you want to cancel this order, please click the “Cancel order” button below. Otherwise, please close this window.</p>
+            </div>
+          `,
+          Approve: `
+             <div>
+              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>
+              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> 
+              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>
+              <div name="bank">
+                <div>
+                  <span>Bank Name:</span>
+                  <strong>{bank_name}</strong>
+                </div>
+                <div>
+                  <span>Account Name:</span>
+                  <strong>{bank_account_name}</strong>
+                </div>
+                <div>
+                  <span>Account Number: </span>
+                  <strong>{bank_account_number}</strong>
+                </div>
+                <div>
+                  <span>Amount: </span>
+                  <strong>{Total}&nbsp;{Currency}</strong>
+                </div>
+                <div>
+                  <span>Reference: </span>
+                  <strong>{Reference}</strong>
+                </div>
+                <div>
+                    <span>Bank Country: </span>
+                    <strong>{bankCountry}</strong>
+                 </div>
+              </div>
+              <br />
+              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>
+             </div>
+          `,
+          ApproveUs: `
+          <div>
+              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>
+              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> 
+              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>
+              <div name="bank">
+                <div>
+                  <span>Account Name:</span>
+                  <strong>{bank_account_name}</strong>
+                </div>
+                <div>
+                  <span>Account Number: </span>
+                  <strong>{bank_account_number}</strong>
+                </div>
+                <div>
+                  <span>Amount: </span>
+                  <strong>{Total}&nbsp;{Currency}</strong>
+                </div>
+                <div>
+                  <span>Reference: </span>
+                  <strong>{Reference}</strong>
+                </div>
+                <div>
+                    <span>Bank Country: </span>
+                    <strong>{bankCountry}</strong>
+                 </div>
+              </div>
+              <br />
+              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>
+             </div>
+          `,
+          ApproveZelle: `
+             <div>
+              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>
+              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> 
+              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>
+              <div name="bank">
+                <div>
+                  <span>Payment method:</span>
+                  <strong>Zelle</strong>
+                </div>
+                <div>
+                  <span>Bank Email Address:</span>
+                  <strong>{Email}</strong>
+                </div>
+                <div>
+                  <span>Full Name:</span>
+                  <strong>{FullName}</strong>
+                </div>
+             </div>
+          `,
+          Finish: `
+            <div>
+                <p>You’re selling <strong>{Amount} Constant</strong> at <strong>{Price} </strong> {Currency} per Constant.</p>
+                <p>If you’ve received a bank transfer for <strong>{TotalVND} {Currency}</strong>, you can now send your Constant to the buyer by clicking the button below.</p>
+                <p>IMPORTANT: Please do not send your Constant until you’ve received the bank transfer from the buyer. If the buyer doesn’t pay you within 30 minutes of placing the order, please email us at hello@constant.money.</p>
+            </div>
+          `,
+        },
+      },
+    },
+    sellOrder: {
+      title: 'Sell Order Available',
+      date: 'Date',
+      value: 'Value',
+      amount: 'Amount',
+      accept: 'Accept',
+      pick: 'Pick',
+      viewDetail: 'Detail',
+      loadMore: 'Load more',
+      status: {
+        status: 'Status',
+        transferred: 'Transferred',
+        transferred_fiat: 'Transferred Fiat',
+        picked: 'Picked',
+        pending: 'Pending',
+        cancelled: 'Cancelled',
+        system_cancelled: 'System Cancelled',
+        system_rejected: 'System Rejected',
+      },
+      approve: 'Confirm payment',
+      confirm: {
+        title: {
+          Cancel: 'Cancel order #{ID}',
+          Approve: 'Confirm you’ve sent the money for order #{ID}',
+          Finish: 'Send Constant for order #{ID}',
+        },
+        content: {
+          Cancel: `
+            <div>
+              <p>You’re {Type} <strong>{Amount}</strong> Constant at <strong>{Price}</strong> {Currency} per Constant.</p>
+              <p>If you want to cancel this order, please click the “Cancel order” button below. Otherwise, please close this window.</p>
+            </div>
+          `,
+          Approve: `
+             <div>
+              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>
+              <p>If you’ve sent <strong>{TotalVND} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> 
+              <p>Otherwise, please send <strong>{TotalVND} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>
+              <div name="bank">
+                <div>
+                  <span>Bank Name:</span>
+                  <strong>{BankName}</strong>
+                </div>
+                <div>
+                  <span>Account Name:</span>
+                  <strong>{BankAccountName}</strong>
+                </div>
+                <div>
+                  <span>Account Number: </span>
+                  <strong>{BankAccountNumber}</strong>
+                </div>
+                <div>
+                  <span>Amount: </span>
+                  <strong>{TotalVND}&nbsp;{Currency}</strong>
+                </div>
+                <div>
+                  <span>Reference: </span>
+                  <strong>{Reference}</strong>
+                </div>
+              </div>
+              <br />
+              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>
+             </div>
+          `,
+          Finish: `
+            <div>
+                <p>You’re selling <strong>{Amount} Constant</strong> at <strong>{Price} </strong> {Currency} per Constant.</p>
+                <p>If you’ve received a bank transfer for <strong>{TotalVND} {Currency}</strong>, you can now send your Constant to the buyer by clicking the button below.</p>
+                <p>IMPORTANT: Please do not send your Constant until you’ve received the bank transfer from the buyer. If the buyer doesn’t pay you within 30 minutes of placing the order, please email us at hello@constant.money.</p>
+            </div>
+          `,
+        },
+      },
+      noData: 'No buy order available',
+      yourInvest: 'Your Invests',
     },
     personalProfile: {
       title: 'Personal Detail',
@@ -1026,7 +1350,7 @@ export default {
           transferredMoneyToAgentInvest: 'Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.',
           done: 'Successful',
           inProgress: 'Order in progress',
-          approving: 'Waiting for admin approve',
+          approving: 'Waiting for admin approval',
           transferring_fiat: 'Transferring Fiat',
         }
       },
@@ -6530,6 +6854,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     borrowC2CBooking: {
       title: 'Crypto Credit',
       exchange: {
+        eventBox: 'Borrow now to get 1% discount from the crypto price',
         amountLabel: 'Crypto to buy',
         amountLabelDesc: 'The amount and type of cryptocurrency you want to buy?',
         exchangeInfo: 'USD loan value',
@@ -8523,7 +8848,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         cancelled: 'Cancelled',
         system_cancelled: 'Order timed out',
         system_rejected: 'Order timed out',
-        approving: 'Waiting for admin approve',
+        approving: 'Waiting for admin approval',
       }
     },
     withdrawFiat: {

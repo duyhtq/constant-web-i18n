@@ -38,6 +38,7 @@ export default {
       selectChoice: 'Please select your choice',
       inRange: 'Must be greater than or equal to {min} and less than or equal to {max}',
       copiedAddress: 'Address is copied to clipboard',
+      uploading: 'Uploading...',
     },
     local: {
       type: {
@@ -128,6 +129,7 @@ export default {
     support: 'Help & Support',
     supportCenter: 'Support Center',
     help: 'Help',
+    acknowledgement: 'Constant Acknowledgement',
     telegramText: 'Join the {link}',
     email: 'Email us at {email}',
     register: '2019 Constant',
@@ -5338,8 +5340,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     formDesc:
       'Constant stores your money across 20 banks insured up to $250,000 each. That means you’re covered up to $5,000,000.',
     depositForWithdraw:
-      'Please make sure you have sufficient funds in your account to complete the transfer.<br/>' +
-      'To make a transfer of ${amount}, please deposit sufficient funds.',
+    'Please make sure you have sufficient funds in your account to complete the transfer.<br/>' +
+    'To make a transfer of ${amount}, please deposit sufficient funds.',
     warningCryptoBelowLimit: 'It might take up to 30 minutes to update your balance. Thank you for your patience.',
     warningCryptoOverLimit: ' As your deposit is over {amount}, it might take up to 1 business day to approve. We’re working to reduce this delay, and in the meantime, thank you for your patience.',
   },
@@ -5880,15 +5882,15 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           name: 'Duy Huynh',
           position: 'Founder',
           description:
-            '<p>Duy spends most of his days studying the great economic thinkers of the last 100 years and turning their ideas into unstoppable lines of code. Prior to Constant, Duy was a software architect at IBM. He then founded Autonomous, putting AI and Robotics into 350,000 modern workspaces all over the world in less than 2 years.</p>' +
-            '<p>At age 19, Duy was a PhD computer science researcher funded by NASA, the Semantic Web and Fujitsu. As a competitive programmer, he was an ACM ICPC World Finalist, USA Computing Olympiad winner, and Vietnam Computing Olympiad winner.</p>',
+          '<p>Duy spends most of his days studying the great economic thinkers of the last 100 years and turning their ideas into unstoppable lines of code. Prior to Constant, Duy was a software architect at IBM. He then founded Autonomous, putting AI and Robotics into 350,000 modern workspaces all over the world in less than 2 years.</p>' +
+          '<p>At age 19, Duy was a PhD computer science researcher funded by NASA, the Semantic Web and Fujitsu. As a competitive programmer, he was an ACM ICPC World Finalist, USA Computing Olympiad winner, and Vietnam Computing Olympiad winner.</p>',
         },
         thucNguyen: {
           name: 'Thuc Nguyen',
           position: 'Cryptography',
           description:
-            '<p>Thuc is a leading expert in the field of applied cryptography, and works on privacy, post-quantum cryptography, randomness, and all things cryptography at Constant. His current focus is on preserving the anonymity and confidentiality of Constant transactions through zero-knowledge proofs.</p>' +
-            '<p>Thuc is a professor of applied cryptography at the National University of Vietnam, where he co-founded the Department of Applied Cryptography and Computer Security. He  co-leads the Decentralized Cryptography Research Group, designing innovative cryptographic tools and developing privacy-preserving cryptosystems that simultaneously achieve post-quantum security and practicality. He also leads key projects on security and cryptography for the Vietnamese government.</p>',
+          '<p>Thuc is a leading expert in the field of applied cryptography, and works on privacy, post-quantum cryptography, randomness, and all things cryptography at Constant. His current focus is on preserving the anonymity and confidentiality of Constant transactions through zero-knowledge proofs.</p>' +
+          '<p>Thuc is a professor of applied cryptography at the National University of Vietnam, where he co-founded the Department of Applied Cryptography and Computer Security. He  co-leads the Decentralized Cryptography Research Group, designing innovative cryptographic tools and developing privacy-preserving cryptosystems that simultaneously achieve post-quantum security and practicality. He also leads key projects on security and cryptography for the Vietnamese government.</p>',
         },
         haTran: {
           name: 'Ha Tran',
@@ -5906,8 +5908,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           name: 'Ning Tan',
           position: 'Communications',
           description:
-            '<p>Ning facilitates the conversation between product, user and community. Prior to Constant, Ning was the Director of Communications at Autonomous, where she loved helping people in over 60 countries find ways to work smarter.</p>' +
-            '<p>Ning specializes in easing the adoption of disruptive tech. She has created voices for friendly IoT products, eager robots, decentralized applications, and a very clever brain from the US military. As a postgraduate at the University of Oxford, she examined how humans navigate traumatic periods in history and respond through storytelling, philosophy and innovation.</p>',
+          '<p>Ning facilitates the conversation between product, user and community. Prior to Constant, Ning was the Director of Communications at Autonomous, where she loved helping people in over 60 countries find ways to work smarter.</p>' +
+          '<p>Ning specializes in easing the adoption of disruptive tech. She has created voices for friendly IoT products, eager robots, decentralized applications, and a very clever brain from the US military. As a postgraduate at the University of Oxford, she examined how humans navigate traumatic periods in history and respond through storytelling, philosophy and innovation.</p>',
         },
         tienNguyen: {
           name: 'Tien Nguyen',
@@ -5919,29 +5921,29 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           name: 'Gaël Vo',
           position: 'Product Operations',
           description:
-            '<p>Gaël manages financial products at Constant, including remittance, loans, payroll and invoicing. Previously at BNP Paribas, he created a new framework to replace and centralize complex applications, enabling users and other developers to control the system independently.</p>' +
-            '<p>Gaël holds a dual master’s degree in computer science and telecommunications from Institut National des Sciences Appliquées de Lyon, and an MBA in finance from Simon Business School in New York. As an MBA intern at Five Star Bank, Gaël developed an automation layer within loan management that cut processing time by 83%.</p>',
+          '<p>Gaël manages financial products at Constant, including remittance, loans, payroll and invoicing. Previously at BNP Paribas, he created a new framework to replace and centralize complex applications, enabling users and other developers to control the system independently.</p>' +
+          '<p>Gaël holds a dual master’s degree in computer science and telecommunications from Institut National des Sciences Appliquées de Lyon, and an MBA in finance from Simon Business School in New York. As an MBA intern at Five Star Bank, Gaël developed an automation layer within loan management that cut processing time by 83%.</p>',
         },
         zonChu: {
           name: 'Zon Chu',
           position: 'Applications',
           description:
-            '<p>Zon leads application development. Prior to Constant, he spent 11 years as a full stack developer, project manager, and technical director for various e-commerce and social network companies in Vietnam and the USA. His e-commerce app for Nguyen Kim, one of the top regional retailers in the Asia-Pacific region, hit 4 million users in 2 years.</p>' +
-            '<p>Zon has experience building for large, complex systems. He was a technical director at Viettel Group, where he designed software to manage its 50,000 employees and provide telecommunications services to 63 million subscribers across Asia, Africa and the Americas.</p>',
+          '<p>Zon leads application development. Prior to Constant, he spent 11 years as a full stack developer, project manager, and technical director for various e-commerce and social network companies in Vietnam and the USA. His e-commerce app for Nguyen Kim, one of the top regional retailers in the Asia-Pacific region, hit 4 million users in 2 years.</p>' +
+          '<p>Zon has experience building for large, complex systems. He was a technical director at Viettel Group, where he designed software to manage its 50,000 employees and provide telecommunications services to 63 million subscribers across Asia, Africa and the Americas.</p>',
         },
         trongDinh: {
           name: 'Trong Dinh',
           position: 'Smart Contract',
           description:
-            '<p>Trong leads smart contract development at Constant, the heart of the stability mechanism. He automates the dialogue between Constant and its partner custodian, which distributes and protects user funds across multiple FDIC-insured banks, protecting users from fraud, downtime and third-party interference. He spends his days implementing new layers of security and adapting the Constant application layer for use on other major blockchains.</p>' +
-            '<p>Trong started to build for the blockchain after more than a decade of developing apps for web and mobile.  His first dApp got people to put promises on the blockchain, by helping them think of smart contracts as simple everyday agreements. He was also the CTO of Ninja, one of the top prediction exchanges built on Ethereum.</p>',
+          '<p>Trong leads smart contract development at Constant, the heart of the stability mechanism. He automates the dialogue between Constant and its partner custodian, which distributes and protects user funds across multiple FDIC-insured banks, protecting users from fraud, downtime and third-party interference. He spends his days implementing new layers of security and adapting the Constant application layer for use on other major blockchains.</p>' +
+          '<p>Trong started to build for the blockchain after more than a decade of developing apps for web and mobile.  His first dApp got people to put promises on the blockchain, by helping them think of smart contracts as simple everyday agreements. He was also the CTO of Ninja, one of the top prediction exchanges built on Ethereum.</p>',
         },
         baoLe: {
           name: 'Bao Le',
           position: 'Constant Chain',
           description:
-            '<p>Bao leads development on the Constant Chain. He predominantly works on the infrastructure layer of Constant, integrating both on-chain and off-chain components such as the consensus protocol, privacy-preserving zero-knowledge proofs, and monetary policy algorithms. Prior to Constant, Bao built highly scalable systems for emerging markets, including Viettel Group, Vietnam\'s largest mobile network operator, where he scaled their products for 63M subscribers, and Central Group, Thailand\'s number 1 retail and service group business.</p>' +
-            '<p>Bao leverages his deep knowledge of peer-to-peer applications, cryptography, game theory, and network applications to build highly scalable systems that quantify performance, availability, and extensibility in each line of code.</p>',
+          '<p>Bao leads development on the Constant Chain. He predominantly works on the infrastructure layer of Constant, integrating both on-chain and off-chain components such as the consensus protocol, privacy-preserving zero-knowledge proofs, and monetary policy algorithms. Prior to Constant, Bao built highly scalable systems for emerging markets, including Viettel Group, Vietnam\'s largest mobile network operator, where he scaled their products for 63M subscribers, and Central Group, Thailand\'s number 1 retail and service group business.</p>' +
+          '<p>Bao leverages his deep knowledge of peer-to-peer applications, cryptography, game theory, and network applications to build highly scalable systems that quantify performance, availability, and extensibility in each line of code.</p>',
         },
         justinLucas: {
           name: 'Justin Lucas',
@@ -5953,8 +5955,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           name: 'Dung Tran',
           position: 'Scalability',
           description:
-            '<p>Dung works on the consensus & scalability algorithms at Constant. His current focus is on increasing transaction throughput while preserving consensus properties. Dung has extensive research and practical experience in distributed systems, computer networks, and game theory, making him the perfect candidate for designing and implementing consensus and scalability mechanisms at Constant.</p>' +
-            '<p>Dung also lectures at the National University of Vietnam. As well as teaching courses on distributed systems, Dung has published several papers on bandwidth measurement and estimation, and is the author of two textbooks, Operation Systems and Computer Networks.  He holds a PhD in computer science from the University of Texas.</p>',
+          '<p>Dung works on the consensus & scalability algorithms at Constant. His current focus is on increasing transaction throughput while preserving consensus properties. Dung has extensive research and practical experience in distributed systems, computer networks, and game theory, making him the perfect candidate for designing and implementing consensus and scalability mechanisms at Constant.</p>' +
+          '<p>Dung also lectures at the National University of Vietnam. As well as teaching courses on distributed systems, Dung has published several papers on bandwidth measurement and estimation, and is the author of two textbooks, Operation Systems and Computer Networks.  He holds a PhD in computer science from the University of Texas.</p>',
         },
         nguyenBui: {
           name: 'Nguyen Bui',
@@ -8437,7 +8439,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         star: '5',
         title: 'Bright start to a new platform',
         desc: 'Constant is still a very young company but is a powerful tool for investors and borrowers. Like many of the other reviews have mentioned, their customer service has given me comfort in resolving any issues quickly and professionally while Constant diligently works through the kinks on the platform. It is also very clear to me that Constant is working hard to progress their platform as I have noticed a steady stream of improvements in services, functionality, and interface design over the past few months, and I appreciate their investment in making Constant a valuable tool for customers.' +
-          'At first I was hesitant to transfer money over to Constant to start investing, but from my experience over the past several months, I have been very happy with it and and totally comfortable investing my money with them.',
+        'At first I was hesitant to transfer money over to Constant to start investing, but from my experience over the past several months, I have been very happy with it and and totally comfortable investing my money with them.',
         date: 'Nov 21, 2019',
         auth: 'Eric M.'
       },
@@ -8951,6 +8953,72 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         date: 'Date',
         status: 'Status',
       },
+    },
+  },
+  helpAndSupport: {
+    title: 'Help & Support',
+    help: 'Help',
+    searchPlaceholder: 'Search for an article or question',
+    what :'What could you like to do?',
+    whatDesc: 'Click a button below to access step-by-step guides and tutorials',
+    question: 'Have a specific question?',
+    questionDesc: 'Click a topic below and we’ll answer it as best we can.',
+    announcements: 'Announcements',
+    announcementsDesc: 'All you need to know, in one place.',
+    categories: 'FAQ categories',
+    browseCategories: 'Browse categories',
+    notFound: 'No results for',
+    found: 'results for',
+    search: 'Search results',
+    noResults: 'Sorry! content not found',
+    form: {
+      caption: 'Can\'t find what you\'re looking for? Tell us what you need below.',
+      email: 'Your email address',
+      emailError: 'Requester email address is invalid.',
+      title: 'Subject',
+      titleError: 'Subject: cannot be blank',
+      note: 'Description',
+      noteError: 'Description: cannot be blank',
+      submit: 'Submit',
+      posts: {
+        true: 'Your request is successfully submitted.',
+        false: 'Uh oh! Something went wrong - ',
+        retry: 'please try again.',
+      }
+    },
+    socials: {
+      telegram: {
+        title: 'Join our Telegram community',
+        desc: 'Get help from 1,000s of customers.',
+        link: 'https://t.me/constantp2p',
+      },
+      blog: {
+        title: 'Read our blog',
+        desc: 'Discover the latest news, guides, and opinon from the team and guests.',
+        link: '/blog'
+      },
+      chat: {
+        title: 'Chat with us live',
+        desc: 'Speak to our customer support team, day or night.',
+        link: 'https://constant.zendesk.com/hc/en-us'
+      },
+      email: {
+        title: 'Send us an email',
+        desc: 'We’d love to hear from you.',
+        link: 'mailto:hello@myconstant.com'
+      },
+      fb: {
+        title: 'Facebook',
+        link: 'https://www.facebook.com/constantp2p',
+      },
+      tw: {
+        title: 'Twitter',
+        link: 'https://twitter.com/constantp2p',
+      },
+      linkedin: {
+        title: 'Linkedin',
+        link: 'https://www.linkedin.com/company/constantp2p/'
+      }
     },
   }
 };

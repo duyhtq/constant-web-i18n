@@ -37,7 +37,8 @@
             "months": "%%%.app.common.months%%%",
             "selectChoice": "%%%.app.common.selectChoice%%%",
             "inRange": "%%%.app.common.inRange%%%",
-            "copiedAddress": "%%%.app.common.copiedAddress%%%"
+            "copiedAddress": "%%%.app.common.copiedAddress%%%",
+            "uploading": "%%%.app.common.uploading%%%"
         },
         "local": {
             "type": {
@@ -128,6 +129,7 @@
         "support": "%%%.footer.support%%%",
         "supportCenter": "%%%.footer.supportCenter%%%",
         "help": "%%%.footer.help%%%",
+        "acknowledgement": "%%%.footer.acknowledgement%%%",
         "telegramText": "%%%.footer.telegramText%%%",
         "email": "%%%.footer.email%%%",
         "register": "%%%.footer.register%%%",
@@ -6868,6 +6870,72 @@
                 "payoffDate": "%%%.history.borrow.headers.payoffDate%%%",
                 "date": "%%%.history.borrow.headers.date%%%",
                 "status": "%%%.history.borrow.headers.status%%%"
+            }
+        }
+    },
+    "helpAndSupport": {
+        "title": "%%%.helpAndSupport.title%%%",
+        "help": "%%%.helpAndSupport.help%%%",
+        "searchPlaceholder": "%%%.helpAndSupport.searchPlaceholder%%%",
+        "what": "%%%.helpAndSupport.what%%%",
+        "whatDesc": "%%%.helpAndSupport.whatDesc%%%",
+        "question": "%%%.helpAndSupport.question%%%",
+        "questionDesc": "%%%.helpAndSupport.questionDesc%%%",
+        "announcements": "%%%.helpAndSupport.announcements%%%",
+        "announcementsDesc": "%%%.helpAndSupport.announcementsDesc%%%",
+        "categories": "%%%.helpAndSupport.categories%%%",
+        "browseCategories": "%%%.helpAndSupport.browseCategories%%%",
+        "notFound": "%%%.helpAndSupport.notFound%%%",
+        "found": "%%%.helpAndSupport.found%%%",
+        "search": "%%%.helpAndSupport.search%%%",
+        "noResults": "%%%.helpAndSupport.noResults%%%",
+        "form": {
+            "caption": "%%%.helpAndSupport.form.caption%%%",
+            "email": "%%%.helpAndSupport.form.email%%%",
+            "emailError": "%%%.helpAndSupport.form.emailError%%%",
+            "title": "%%%.helpAndSupport.form.title%%%",
+            "titleError": "%%%.helpAndSupport.form.titleError%%%",
+            "note": "%%%.helpAndSupport.form.note%%%",
+            "noteError": "%%%.helpAndSupport.form.noteError%%%",
+            "submit": "%%%.helpAndSupport.form.submit%%%",
+            "posts": {
+                "true": "%%%.helpAndSupport.form.posts.true%%%",
+                "false": "%%%.helpAndSupport.form.posts.false%%%",
+                "retry": "%%%.helpAndSupport.form.posts.retry%%%"
+            }
+        },
+        "socials": {
+            "telegram": {
+                "title": "%%%.helpAndSupport.socials.telegram.title%%%",
+                "desc": "%%%.helpAndSupport.socials.telegram.desc%%%",
+                "link": "%%%.helpAndSupport.socials.telegram.link%%%"
+            },
+            "blog": {
+                "title": "%%%.helpAndSupport.socials.blog.title%%%",
+                "desc": "%%%.helpAndSupport.socials.blog.desc%%%",
+                "link": "%%%.helpAndSupport.socials.blog.link%%%"
+            },
+            "chat": {
+                "title": "%%%.helpAndSupport.socials.chat.title%%%",
+                "desc": "%%%.helpAndSupport.socials.chat.desc%%%",
+                "link": "%%%.helpAndSupport.socials.chat.link%%%"
+            },
+            "email": {
+                "title": "%%%.helpAndSupport.socials.email.title%%%",
+                "desc": "%%%.helpAndSupport.socials.email.desc%%%",
+                "link": "%%%.helpAndSupport.socials.email.link%%%"
+            },
+            "fb": {
+                "title": "%%%.helpAndSupport.socials.fb.title%%%",
+                "link": "%%%.helpAndSupport.socials.fb.link%%%"
+            },
+            "tw": {
+                "title": "%%%.helpAndSupport.socials.tw.title%%%",
+                "link": "%%%.helpAndSupport.socials.tw.link%%%"
+            },
+            "linkedin": {
+                "title": "%%%.helpAndSupport.socials.linkedin.title%%%",
+                "link": "%%%.helpAndSupport.socials.linkedin.link%%%"
             }
         }
     }

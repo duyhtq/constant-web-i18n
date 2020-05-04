@@ -37,7 +37,8 @@
             "months": "months",
             "selectChoice": "Please select your choice",
             "inRange": "Must be greater than or equal to {min} and less than or equal to {max}",
-            "copiedAddress": "Address is copied to clipboard"
+            "copiedAddress": "Address is copied to clipboard",
+            "uploading": "Uploading..."
         },
         "local": {
             "type": {
@@ -128,6 +129,7 @@
         "support": "Help & Support",
         "supportCenter": "Support Center",
         "help": "Help",
+        "acknowledgement": "Constant Acknowledgement",
         "telegramText": "Join the {link}",
         "email": "Email us at {email}",
         "register": "2019 Constant",
@@ -6868,6 +6870,72 @@
                 "payoffDate": "Payoff Date",
                 "date": "Date",
                 "status": "Status"
+            }
+        }
+    },
+    "helpAndSupport": {
+        "title": "Help & Support",
+        "help": "Help",
+        "searchPlaceholder": "Search for an article or question",
+        "what": "What could you like to do?",
+        "whatDesc": "Click a button below to access step-by-step guides and tutorials",
+        "question": "Have a specific question?",
+        "questionDesc": "Click a topic below and we’ll answer it as best we can.",
+        "announcements": "Announcements",
+        "announcementsDesc": "All you need to know, in one place.",
+        "categories": "FAQ categories",
+        "browseCategories": "Browse categories",
+        "notFound": "No results for",
+        "found": "results for",
+        "search": "Search results",
+        "noResults": "Sorry! content not found",
+        "form": {
+            "caption": "Can't find what you're looking for? Tell us what you need below.",
+            "email": "Your email address",
+            "emailError": "Requester email address is invalid.",
+            "title": "Subject",
+            "titleError": "Subject: cannot be blank",
+            "note": "Description",
+            "noteError": "Description: cannot be blank",
+            "submit": "Submit",
+            "posts": {
+                "true": "Your request is successfully submitted.",
+                "false": "Uh oh! Something went wrong - ",
+                "retry": "please try again."
+            }
+        },
+        "socials": {
+            "telegram": {
+                "title": "Join our Telegram community",
+                "desc": "Get help from 1,000s of customers.",
+                "link": "https://t.me/constantp2p"
+            },
+            "blog": {
+                "title": "Read our blog",
+                "desc": "Discover the latest news, guides, and opinon from the team and guests.",
+                "link": "/blog"
+            },
+            "chat": {
+                "title": "Chat with us live",
+                "desc": "Speak to our customer support team, day or night.",
+                "link": "https://constant.zendesk.com/hc/en-us"
+            },
+            "email": {
+                "title": "Send us an email",
+                "desc": "We’d love to hear from you.",
+                "link": "mailto:hello@myconstant.com"
+            },
+            "fb": {
+                "title": "Facebook",
+                "link": "https://www.facebook.com/constantp2p"
+            },
+            "tw": {
+                "title": "Twitter",
+                "link": "https://twitter.com/constantp2p"
+            },
+            "linkedin": {
+                "title": "Linkedin",
+                "link": "https://www.linkedin.com/company/constantp2p/"
             }
         }
     }

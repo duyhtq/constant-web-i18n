@@ -148,11 +148,11 @@ function unparser() {
   rimraf.sync(`${i18nDir}/*`);
 
   const parsedName = {
-    vi: 'vi',
-    en: 'en',
+    // vi: 'vi',
+    // en: 'en',
     'en-US': 'enUS',
     // 'en-GB': 'enGB',
-    'zh-CN': 'zhCN',
+    // 'zh-CN': 'zhCN',
   };
   handleDir(unzipDir);
   fs.createReadStream(zipFile)

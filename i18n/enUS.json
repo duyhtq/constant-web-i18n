@@ -3493,7 +3493,7 @@
     },
     "affiliates": {
         "greetingForm": {
-            "title": "\n        <p class=\"header\">Hello {name},</p>\n        <p>Welcome to your affiliate dashboard. You’ll find your affiliate link and sharing options below. You can track your earnings here, too.</p>\n        <p>Your total referral earnings to date: <strong>{totalEarned}</strong>.</p>\n      ",
+            "title": "\n        <p class=\"header\">Hello {name},</p>\n        <p>Welcome to your affiliate dashboard. You’ll find your affiliate link and sharing options below. You can track your earnings here, too.</p>\n        <p>Your total referral earnings to date: <strong>${totalEarned}</strong>.</p>\n      ",
             "inviteFriends": "Invite friends"
         },
         "applyForm": {

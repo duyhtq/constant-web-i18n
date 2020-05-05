@@ -3593,7 +3593,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.affiliates.greetingForm.title%%%,"
         <p class=""header"">Hello {name},</p>
         <p>Welcome to your affiliate dashboard. You’ll find your affiliate link and sharing options below. You can track your earnings here, too.</p>
-        <p>Your total referral earnings to date: <strong>{totalEarned}</strong>.</p>
+        <p>Your total referral earnings to date: <strong>${totalEarned}</strong>.</p>
       "
 %%%.affiliates.greetingForm.inviteFriends%%%,"Invite friends"
 %%%.affiliates.applyForm.title%%%,"

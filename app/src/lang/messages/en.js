@@ -122,7 +122,6 @@ export default {
     titleConstant: 'Constant',
     prices: 'Pricing and Service times',
     openSource: 'Open Source',
-    transferConstant: 'Transfer Constant',
     blog: 'Blog',
     affiliate: 'Affiliate',
     developers: 'Developers',
@@ -225,57 +224,29 @@ export default {
   headerBar: {
     home: 'Home',
     account: 'Account',
-    blog: 'Tips',
-    myAccount: 'My Account',
-    deposit: 'Deposit',
     lending: 'Lending',
     flex: 'High-Yield Savings',
     flexMobile: 'Savings',
     staking: 'Staking <sup>NEW</sup>',
     transfer: 'Transfer',
-    send: 'Send',
-    banking: 'Bank',
     save: 'Invest',
     borrow: 'Borrow',
     signIn: 'Sign In',
     signUp: 'Sign Up',
-    cesText: 'Got a CES2019 giveaway code?',
-    cesLink: 'Claim your 1 FREE Constant now!',
-    referral: 'Give 5 USD, Get 5 USD',
-    promotionPrograms: 'Promotion Programs',
     contactUs: 'Contact Us',
     aboutUs: 'About Us',
     faq: 'FAQ',
-    affiliate: 'Affiliate',
     wallet: 'Wallet',
     walletOrder: 'Balance and Transactions',
-    hello: 'Hello',
     landingPro: 'Pro',
     yourWallet: 'Wallet',
-    countryLanguage: {
-      title: 'Your language',
-      okBtn: 'OK',
-      selectLanguage: 'Select language',
-      selectCountry: 'Select country',
-    },
     about: 'About',
-    tech: 'Tech',
-    pricing: 'Pricing',
-    personal: 'Personal',
-    trader: 'Trade',
     developer: 'Developer',
-    getConstant: 'Buy Constant',
-    getCash: 'Withdraw Cash',
-    sendMoney: 'Send Money',
-    agent: 'Become Agent',
-    constantLoan: 'Constant Loan',
-    saveAndGrowMoney: 'Save & Grow money',
     login: 'Login',
     log_in: 'Log in',
     createAccount: 'Create account',
     openAnAccount: 'Open an account',
     yourSaving: 'Accounts',
-    myInvestments: 'My Investments',
     ourStory: 'Our Story',
     testimonial: 'Why people love us',
     extraMenu: {
@@ -413,15 +384,11 @@ export default {
   },
   me: {
     navigation: {
-      myProfile: 'My Profile',
       kycInformation: 'KYC information',
-      myEmailPassword: 'Email and password',
       myInformation: 'Account details',
       securities: 'Account security',
       notification_settings: 'Notification Settings',
       email_settings: 'Email Settings',
-      sellOrders: 'Sell Orders',
-      buyOrders: 'Buy Orders',
       bookingOrders: 'Sale Orders',
       investingOrders: 'Investing Orders',
       loanOrders: 'Loan Orders',
@@ -434,25 +401,15 @@ export default {
       wallets: 'My Wallets',
       constantWallet: 'Constant Wallet',
       cryptoWallet: 'My Crypto Wallets',
-      changePassword: 'Change password',
-      preferecens: 'Preferences',
-      accountLevel: 'Account Level',
-      history: 'History',
       bankInfo: 'Bank information',
       referral: 'Referral',
       personalInfo: 'About you',
       myTransactions: 'Account activity',
-      yourInvest: 'Your Invests',
-      myAgent: 'My Agent',
-      yourAccreditation: 'Your Accreditation',
-      myLoans: 'My Loans',
-      myInvestments: 'My Investments',
       cryptoLoanHistory: 'My Crypto Loans',
       viewLoanDetail: 'View loan detail here',
       viewConstantWallet: 'View constant wallet here',
       viewInvestmentDetail: 'View investment detail here',
       batchTransfer: 'Batch Transfer',
-      referralInfo: 'Referral Information',
       transferOrders: 'Transfer Orders',
       openOrders: 'Open Orders',
       interests: 'Interests',
@@ -3795,6 +3752,18 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       },
       compareTable: {
         title: 'Constant vs Exchange Margin Accounts.',
+        benefits: 'Benefits',
+        const: 'Constant',
+        exchangeMarginAccount: 'Exchange margin accounts',
+        term: 'Set your own rates and terms',
+        apr: 'Average cost to borrow (APR)',
+        price: 'Best cryptocurrency prices(?)',
+        support: '24-7 customer services',
+        cryptos:'60+ supported tokens',
+        withdraw: 'Free withdraws',
+        trading: 'Free trading (no fees)',
+        percent: '7%',
+        otherPercent: 'Up to 13.%',
         description:
           '(?) We search multiple exchanges to find the best price for your chosen cryptocurrency. <br/>Exchange margin accounts typically only use the price on that exchange, so you can miss out on better deals elsewhere. ',
       },
@@ -4397,13 +4366,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     faqs: 'Frequently Asked Questions',
   },
   components: {
-    userVerifyStatus: {
-      level1Pending:
-        'To start trading, please take a few minutes to verify your account. {verify}',
-      verifyBtn: 'Verify now',
-      notLogin: 'Please sign in to start trading.{action}',
-      notLoginBtn: 'Sign In Now',
-    },
     confirmBtn: {
       defaultMsg: 'Please confirm',
       defaultConfirmText: 'Yes',
@@ -5662,24 +5624,17 @@ While Constant processes your deposits and withdrawals free of charge, transacti
   },
   newHome: {
     banner: {
-      title: 'Like your bank, but better.',
       title1: `
         <h1>The world’s first <span class="darkorange4">fully secured</span> peer-to-peer lending platform.</h1>
       `,
       subTitle: 'Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.',
-      cta: 'Open an account',
-      ctaDesc: `
-        It’s free to open an account. Available locations: World.`,
       invest: {
         title: 'Invest the way you want',
-        num: '9.00%',
         cap: 'Start from just $50. Fully secured.',
         btn: 'Invest',
-        btnTrial: 'Get $1000 to start',
       },
       borrow: {
         title: 'Borrow the way you want',
-        num: '9.00%',
         cap: 'No limit. Set your own fixed rates.',
         btn: 'Borrow',
       },
@@ -5742,64 +5697,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       item1: {
         title: 'Collateral protection for borrowers',
         desc: 'Borrower collateral is stored safely in a smart contract escrow, powered by the Ethereum network. This runs exactly as programmed, independent from human intervention - no one can touch these assets. As long as borrowers repay, they will always get their collateral back.',
-      },
-    },
-    subjects: {
-      banking: {
-        title: 'Borderless banking.',
-        desc1: {
-          title: 'Your global USD bank account.',
-          desc:
-            'Bank in USD instead of unstable, landlocked currencies. Protect the value of your savings.',
-        },
-        desc2: {
-          title: 'Send money home or do business with the world.',
-          desc:
-            'Move money across the world in minutes. No matter how much you send - or how often - it won’t cost you a cent.',
-        },
-        desc3: {
-          title: 'Withdraw in any currency.',
-          desc:
-            'Constant works with your local banking system, so that your USD funds can be withdrawn in local currency at any time.',
-        },
-        link: 'Open an account',
-      },
-      invest: {
-        title: 'Invest the way you want.',
-        desc1: {
-          title: '7% annual returns.',
-          desc: 'Don’t sit on your money. Put it to work.',
-        },
-        desc2: {
-          title: 'Returns paid out daily. Withdraw anytime.',
-          desc:
-            'We’re proud of our rates, and we don’t want you to have to wait to enjoy them.',
-        },
-        desc3: {
-          title: 'Secure your returns with secured loans.',
-          desc:
-            'Your money is invested only in secured, over-collateralized loans. 150% risk-free.',
-        },
-        link: 'Get a free initial investment',
-      },
-      borrow: {
-        title: 'Borrow money at the kindest rates on the market.',
-        desc1: {
-          title: '2% APR.',
-          desc:
-            'Put down crypto as collateral and secure USD. Borrow as much as you want, take as long as you need, then get your assets back when you repay.',
-        },
-        desc2: {
-          title: 'Instant approval.',
-          desc:
-            'No lengthy processing times. The money you need is in your account within minutes.',
-        },
-        desc3: {
-          title: 'Inclusive.',
-          desc:
-            'Constant is for everyone. No credit scoring, background checks or month-long waiting games for approval.',
-        },
-        link: 'Get cash for your crypto',
       },
     },
   },
@@ -6089,6 +5986,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       confirm: {
         needGoldMember: '<p>You must become a Gold member and above, or choose a longer investment term to use this feature</p>',
         needPlatinumMember: '<p>You must become a Platinum member and above to use this feature.</p>',
+        depositLimit: '<p>Your deposit limit is {amount} USD.</p>',
+        methodNotAvailable: '<p>This payment method is temporarily not available. Please choose another one.</p>',
         thankYou1: 'Almost there.',
         thankMsg:
           'Simply wire {amount} to the Constant Trust to make a deposit.',
@@ -6394,9 +6293,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     emailInput: {
       placeholder: 'Enter the email to be the first to experience it',
       btn: 'Step inside',
-    },
-    alert: {
-      emailSuccess: 'Thanks! You’ll be the first to hear when Pro goes live.'
     },
     title2: 'Constant Pro is an entirely new way to lend and borrow directly from one another — cutting out the banks and their hefty fees.',
     what: {
@@ -7500,23 +7396,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
             auth: 'Sean Higgins',
             link: 'https://www.trustpilot.com/reviews/5ea32c85086b6409bc8cf3cb'
           },
-          8: {
-            star: '2',
-            title: 'Nate failed to help me with my Zelle…',
-            desc: 'Nate failed to help me with my Zelle deposit today, kept sending me generic email with out resolving my issue. Was highly disappointed with his service.',
-            date: 'Apr 24, 2020',
-            auth: 'Preowned Flat',
-            link: 'https://www.trustpilot.com/reviews/5ea24be9086b6409bc8c318f'
-          },
-          9: {
-            star: '5',
-            title: 'Constant has been awesome and most of…',
-            desc: 'Constant has been awesome and most of all, reliable.',
-            date: 'Apr 23, 2020',
-            auth: 'Harold',
-            link: 'https://www.trustpilot.com/reviews/5ea192b4086b6409543e250e'
-          },
-
         }
       },
       socialMedia: {

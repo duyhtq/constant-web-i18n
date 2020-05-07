@@ -122,7 +122,6 @@
         "titleConstant": "%%%.footer.titleConstant%%%",
         "prices": "%%%.footer.prices%%%",
         "openSource": "%%%.footer.openSource%%%",
-        "transferConstant": "%%%.footer.transferConstant%%%",
         "blog": "%%%.footer.blog%%%",
         "affiliate": "%%%.footer.affiliate%%%",
         "developers": "%%%.footer.developers%%%",
@@ -220,57 +219,29 @@
     "headerBar": {
         "home": "%%%.headerBar.home%%%",
         "account": "%%%.headerBar.account%%%",
-        "blog": "%%%.headerBar.blog%%%",
-        "myAccount": "%%%.headerBar.myAccount%%%",
-        "deposit": "%%%.headerBar.deposit%%%",
         "lending": "%%%.headerBar.lending%%%",
         "flex": "%%%.headerBar.flex%%%",
         "flexMobile": "%%%.headerBar.flexMobile%%%",
         "staking": "%%%.headerBar.staking%%%",
         "transfer": "%%%.headerBar.transfer%%%",
-        "send": "%%%.headerBar.send%%%",
-        "banking": "%%%.headerBar.banking%%%",
         "save": "%%%.headerBar.save%%%",
         "borrow": "%%%.headerBar.borrow%%%",
         "signIn": "%%%.headerBar.signIn%%%",
         "signUp": "%%%.headerBar.signUp%%%",
-        "cesText": "%%%.headerBar.cesText%%%",
-        "cesLink": "%%%.headerBar.cesLink%%%",
-        "referral": "%%%.headerBar.referral%%%",
-        "promotionPrograms": "%%%.headerBar.promotionPrograms%%%",
         "contactUs": "%%%.headerBar.contactUs%%%",
         "aboutUs": "%%%.headerBar.aboutUs%%%",
         "faq": "%%%.headerBar.faq%%%",
-        "affiliate": "%%%.headerBar.affiliate%%%",
         "wallet": "%%%.headerBar.wallet%%%",
         "walletOrder": "%%%.headerBar.walletOrder%%%",
-        "hello": "%%%.headerBar.hello%%%",
         "landingPro": "%%%.headerBar.landingPro%%%",
         "yourWallet": "%%%.headerBar.yourWallet%%%",
-        "countryLanguage": {
-            "title": "%%%.headerBar.countryLanguage.title%%%",
-            "okBtn": "%%%.headerBar.countryLanguage.okBtn%%%",
-            "selectLanguage": "%%%.headerBar.countryLanguage.selectLanguage%%%",
-            "selectCountry": "%%%.headerBar.countryLanguage.selectCountry%%%"
-        },
         "about": "%%%.headerBar.about%%%",
-        "tech": "%%%.headerBar.tech%%%",
-        "pricing": "%%%.headerBar.pricing%%%",
-        "personal": "%%%.headerBar.personal%%%",
-        "trader": "%%%.headerBar.trader%%%",
         "developer": "%%%.headerBar.developer%%%",
-        "getConstant": "%%%.headerBar.getConstant%%%",
-        "getCash": "%%%.headerBar.getCash%%%",
-        "sendMoney": "%%%.headerBar.sendMoney%%%",
-        "agent": "%%%.headerBar.agent%%%",
-        "constantLoan": "%%%.headerBar.constantLoan%%%",
-        "saveAndGrowMoney": "%%%.headerBar.saveAndGrowMoney%%%",
         "login": "%%%.headerBar.login%%%",
         "log_in": "%%%.headerBar.log_in%%%",
         "createAccount": "%%%.headerBar.createAccount%%%",
         "openAnAccount": "%%%.headerBar.openAnAccount%%%",
         "yourSaving": "%%%.headerBar.yourSaving%%%",
-        "myInvestments": "%%%.headerBar.myInvestments%%%",
         "ourStory": "%%%.headerBar.ourStory%%%",
         "testimonial": "%%%.headerBar.testimonial%%%",
         "extraMenu": {
@@ -400,15 +371,11 @@
     },
     "me": {
         "navigation": {
-            "myProfile": "%%%.me.navigation.myProfile%%%",
             "kycInformation": "%%%.me.navigation.kycInformation%%%",
-            "myEmailPassword": "%%%.me.navigation.myEmailPassword%%%",
             "myInformation": "%%%.me.navigation.myInformation%%%",
             "securities": "%%%.me.navigation.securities%%%",
             "notification_settings": "%%%.me.navigation.notification_settings%%%",
             "email_settings": "%%%.me.navigation.email_settings%%%",
-            "sellOrders": "%%%.me.navigation.sellOrders%%%",
-            "buyOrders": "%%%.me.navigation.buyOrders%%%",
             "bookingOrders": "%%%.me.navigation.bookingOrders%%%",
             "investingOrders": "%%%.me.navigation.investingOrders%%%",
             "loanOrders": "%%%.me.navigation.loanOrders%%%",
@@ -421,25 +388,15 @@
             "wallets": "%%%.me.navigation.wallets%%%",
             "constantWallet": "%%%.me.navigation.constantWallet%%%",
             "cryptoWallet": "%%%.me.navigation.cryptoWallet%%%",
-            "changePassword": "%%%.me.navigation.changePassword%%%",
-            "preferecens": "%%%.me.navigation.preferecens%%%",
-            "accountLevel": "%%%.me.navigation.accountLevel%%%",
-            "history": "%%%.me.navigation.history%%%",
             "bankInfo": "%%%.me.navigation.bankInfo%%%",
             "referral": "%%%.me.navigation.referral%%%",
             "personalInfo": "%%%.me.navigation.personalInfo%%%",
             "myTransactions": "%%%.me.navigation.myTransactions%%%",
-            "yourInvest": "%%%.me.navigation.yourInvest%%%",
-            "myAgent": "%%%.me.navigation.myAgent%%%",
-            "yourAccreditation": "%%%.me.navigation.yourAccreditation%%%",
-            "myLoans": "%%%.me.navigation.myLoans%%%",
-            "myInvestments": "%%%.me.navigation.myInvestments%%%",
             "cryptoLoanHistory": "%%%.me.navigation.cryptoLoanHistory%%%",
             "viewLoanDetail": "%%%.me.navigation.viewLoanDetail%%%",
             "viewConstantWallet": "%%%.me.navigation.viewConstantWallet%%%",
             "viewInvestmentDetail": "%%%.me.navigation.viewInvestmentDetail%%%",
             "batchTransfer": "%%%.me.navigation.batchTransfer%%%",
-            "referralInfo": "%%%.me.navigation.referralInfo%%%",
             "transferOrders": "%%%.me.navigation.transferOrders%%%",
             "openOrders": "%%%.me.navigation.openOrders%%%",
             "interests": "%%%.me.navigation.interests%%%",
@@ -2973,6 +2930,18 @@
             },
             "compareTable": {
                 "title": "%%%.home.constantC2CLoan.compareTable.title%%%",
+                "benefits": "%%%.home.constantC2CLoan.compareTable.benefits%%%",
+                "const": "%%%.home.constantC2CLoan.compareTable.const%%%",
+                "exchangeMarginAccount": "%%%.home.constantC2CLoan.compareTable.exchangeMarginAccount%%%",
+                "term": "%%%.home.constantC2CLoan.compareTable.term%%%",
+                "apr": "%%%.home.constantC2CLoan.compareTable.apr%%%",
+                "price": "%%%.home.constantC2CLoan.compareTable.price%%%",
+                "support": "%%%.home.constantC2CLoan.compareTable.support%%%",
+                "cryptos": "%%%.home.constantC2CLoan.compareTable.cryptos%%%",
+                "withdraw": "%%%.home.constantC2CLoan.compareTable.withdraw%%%",
+                "trading": "%%%.home.constantC2CLoan.compareTable.trading%%%",
+                "percent": "%%%.home.constantC2CLoan.compareTable.percent%%%",
+                "otherPercent": "%%%.home.constantC2CLoan.compareTable.otherPercent%%%",
                 "description": "%%%.home.constantC2CLoan.compareTable.description%%%"
             },
             "what": {
@@ -3401,12 +3370,6 @@
         "faqs": "%%%.static_page.faqs%%%"
     },
     "components": {
-        "userVerifyStatus": {
-            "level1Pending": "%%%.components.userVerifyStatus.level1Pending%%%",
-            "verifyBtn": "%%%.components.userVerifyStatus.verifyBtn%%%",
-            "notLogin": "%%%.components.userVerifyStatus.notLogin%%%",
-            "notLoginBtn": "%%%.components.userVerifyStatus.notLoginBtn%%%"
-        },
         "confirmBtn": {
             "defaultMsg": "%%%.components.confirmBtn.defaultMsg%%%",
             "defaultConfirmText": "%%%.components.confirmBtn.defaultConfirmText%%%",
@@ -4208,21 +4171,15 @@
     },
     "newHome": {
         "banner": {
-            "title": "%%%.newHome.banner.title%%%",
             "title1": "%%%.newHome.banner.title1%%%",
             "subTitle": "%%%.newHome.banner.subTitle%%%",
-            "cta": "%%%.newHome.banner.cta%%%",
-            "ctaDesc": "%%%.newHome.banner.ctaDesc%%%",
             "invest": {
                 "title": "%%%.newHome.banner.invest.title%%%",
-                "num": "%%%.newHome.banner.invest.num%%%",
                 "cap": "%%%.newHome.banner.invest.cap%%%",
-                "btn": "%%%.newHome.banner.invest.btn%%%",
-                "btnTrial": "%%%.newHome.banner.invest.btnTrial%%%"
+                "btn": "%%%.newHome.banner.invest.btn%%%"
             },
             "borrow": {
                 "title": "%%%.newHome.banner.borrow.title%%%",
-                "num": "%%%.newHome.banner.borrow.num%%%",
                 "cap": "%%%.newHome.banner.borrow.cap%%%",
                 "btn": "%%%.newHome.banner.borrow.btn%%%"
             }
@@ -4273,56 +4230,6 @@
             "item1": {
                 "title": "%%%.newHome.whyItBetter.item1.title%%%",
                 "desc": "%%%.newHome.whyItBetter.item1.desc%%%"
-            }
-        },
-        "subjects": {
-            "banking": {
-                "title": "%%%.newHome.subjects.banking.title%%%",
-                "desc1": {
-                    "title": "%%%.newHome.subjects.banking.desc1.title%%%",
-                    "desc": "%%%.newHome.subjects.banking.desc1.desc%%%"
-                },
-                "desc2": {
-                    "title": "%%%.newHome.subjects.banking.desc2.title%%%",
-                    "desc": "%%%.newHome.subjects.banking.desc2.desc%%%"
-                },
-                "desc3": {
-                    "title": "%%%.newHome.subjects.banking.desc3.title%%%",
-                    "desc": "%%%.newHome.subjects.banking.desc3.desc%%%"
-                },
-                "link": "%%%.newHome.subjects.banking.link%%%"
-            },
-            "invest": {
-                "title": "%%%.newHome.subjects.invest.title%%%",
-                "desc1": {
-                    "title": "%%%.newHome.subjects.invest.desc1.title%%%",
-                    "desc": "%%%.newHome.subjects.invest.desc1.desc%%%"
-                },
-                "desc2": {
-                    "title": "%%%.newHome.subjects.invest.desc2.title%%%",
-                    "desc": "%%%.newHome.subjects.invest.desc2.desc%%%"
-                },
-                "desc3": {
-                    "title": "%%%.newHome.subjects.invest.desc3.title%%%",
-                    "desc": "%%%.newHome.subjects.invest.desc3.desc%%%"
-                },
-                "link": "%%%.newHome.subjects.invest.link%%%"
-            },
-            "borrow": {
-                "title": "%%%.newHome.subjects.borrow.title%%%",
-                "desc1": {
-                    "title": "%%%.newHome.subjects.borrow.desc1.title%%%",
-                    "desc": "%%%.newHome.subjects.borrow.desc1.desc%%%"
-                },
-                "desc2": {
-                    "title": "%%%.newHome.subjects.borrow.desc2.title%%%",
-                    "desc": "%%%.newHome.subjects.borrow.desc2.desc%%%"
-                },
-                "desc3": {
-                    "title": "%%%.newHome.subjects.borrow.desc3.title%%%",
-                    "desc": "%%%.newHome.subjects.borrow.desc3.desc%%%"
-                },
-                "link": "%%%.newHome.subjects.borrow.link%%%"
             }
         }
     },
@@ -4549,6 +4456,8 @@
             "confirm": {
                 "needGoldMember": "%%%.home1.lendingSection.confirm.needGoldMember%%%",
                 "needPlatinumMember": "%%%.home1.lendingSection.confirm.needPlatinumMember%%%",
+                "depositLimit": "%%%.home1.lendingSection.confirm.depositLimit%%%",
+                "methodNotAvailable": "%%%.home1.lendingSection.confirm.methodNotAvailable%%%",
                 "thankYou1": "%%%.home1.lendingSection.confirm.thankYou1%%%",
                 "thankMsg": "%%%.home1.lendingSection.confirm.thankMsg%%%",
                 "thankMsgCurrentBalance": "%%%.home1.lendingSection.confirm.thankMsgCurrentBalance%%%",
@@ -4699,9 +4608,6 @@
         "emailInput": {
             "placeholder": "%%%.landingPro.emailInput.placeholder%%%",
             "btn": "%%%.landingPro.emailInput.btn%%%"
-        },
-        "alert": {
-            "emailSuccess": "%%%.landingPro.alert.emailSuccess%%%"
         },
         "title2": "%%%.landingPro.title2%%%",
         "what": {
@@ -5677,22 +5583,6 @@
                         "date": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.7.date%%%",
                         "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.7.auth%%%",
                         "link": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.7.link%%%"
-                    },
-                    "8": {
-                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.star%%%",
-                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.title%%%",
-                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.desc%%%",
-                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.date%%%",
-                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.auth%%%",
-                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.8.link%%%"
-                    },
-                    "9": {
-                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.star%%%",
-                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.title%%%",
-                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.desc%%%",
-                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.date%%%",
-                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.auth%%%",
-                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.comments.9.link%%%"
                     }
                 }
             },

@@ -2936,6 +2936,7 @@
                 "term": "%%%.home.constantC2CLoan.compareTable.term%%%",
                 "apr": "%%%.home.constantC2CLoan.compareTable.apr%%%",
                 "price": "%%%.home.constantC2CLoan.compareTable.price%%%",
+                "priceDesc": "%%%.home.constantC2CLoan.compareTable.priceDesc%%%",
                 "support": "%%%.home.constantC2CLoan.compareTable.support%%%",
                 "cryptos": "%%%.home.constantC2CLoan.compareTable.cryptos%%%",
                 "withdraw": "%%%.home.constantC2CLoan.compareTable.withdraw%%%",

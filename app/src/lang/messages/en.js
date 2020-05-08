@@ -3695,12 +3695,12 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         <p>Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.</p>
       `,
         desc: {
-          1: 'Secure escrow',
-          2: 'No credit checks',
-          3: 'Repay anytime',
+          1: 'Your rates and terms',
+          2: 'Best crypto prices',
+          3: 'No trading fees',
         },
         youtube: {
-          title: 'Why borrow with Constant?',
+          title: 'How does Crypto Credit work?',
         }
       },
       headLine:
@@ -3758,7 +3758,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         term: 'Set your own rates and terms',
         apr: 'Average cost to borrow (APR)',
         price: 'Best prices',
-        priceDesc: 'This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.',
+        priceDesc: 'We search multiple exchanges to find the best price for your chosen cryptocurrency.<br/>\n' +
+        'Exchange margin accounts typically only use the price on that exchange, so you can miss out on better deals elsewhere.',
         support: '24-7 customer services',
         cryptos:'60+ supported tokens',
         withdraw: 'Free withdraws',
@@ -3768,7 +3769,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         description:
           '(?) We search multiple exchanges to find the best price for your chosen cryptocurrency. <br/>Exchange margin accounts typically only use the price on that exchange, so you can miss out on better deals elsewhere. ',
       },
-      what: {
+      why: {
         title: 'Why borrow with us?',
         whatCaption0: 'Set your own rates',
         whatCaption1: 'No exchanges',
@@ -3788,22 +3789,40 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         `,
       },
       howItWorks: {
-        intro: `
-          <p>Deposit cryptocurrency to secure cash, at the best rates on the market.</p>
-          <p>Need cash? We accept major cryptocurrencies as collateral, in exchange for USD or the equivalent in your local currency. That means you’ll have cash to spend - without needing to sell your crypto.</p>
-        `,
+        title: `How it works`,
         step1: 'STEP 1',
-        title1: 'ENTER AN AMOUNT',
+        title1: 'Choose a crypto',
         desc1:
-          'How much do you want to borrow? Tell us how much, in your currency of choice.',
+          'We’ll tell you how much USD you need to borrow and the collateral required to secure the loan to buy your crypto.',
         step2: 'STEP 2',
-        title2: 'CHOOSE A COLLATERAL AND A TERM',
+        title2: 'Send your collateral',
         desc2:
-          'Secure your loan with BTC or ETH as collateral. Our calculator will tell you how much you need. Then just pick a loan term you feel comfortable with.',
+          'We store your collateral in an insured BitGo cold wallet or Ethereum smart contract until you repay the loan.',
         step3: 'STEP 3',
-        title3: 'GET CASH TO SPEND',
+        title3: 'Get your crypto',
         desc3:
-          'Within the hour, your USD loan will be accessible from your Constant Flexible Account. Withdraw anytime, to any other bank account.',
+          'We’ll buy your chosen crypto and then deposit it into your coin balance. Any leftover USD will also be returned to your account.',
+        step4: 'STEP 4',
+        title4: 'Repay your loan',
+        desc4:
+          'Repay your loan at any time. We accept USD, stablecoins, or the equivalent value of collateral. ',
+        step5: 'STEP 5',
+        title5: 'Get your collateral',
+        desc5:
+          'Once you’ve repaid, your collateral returns to your coin balance where you can withdraw it to your wallet.',
+      },
+      what: {
+        title: `What can you do with Crypto Credit?`,
+        subTitle: 'Crypto Credit is similar to a crypto-backed loan, but with one extra step: we use your loan to buy cryptocurrency on your behalf. Here are just a few things you can do with Crypto Credit.\n',
+        title1: 'Trade margin',
+        desc1:
+          'Think a crypto might rise in price? Use Crypto Credit to buy it and then sell again when your prediction pays off. Repay your loan and keep the profits (and get your collateral back).  \n',
+        title2: 'Exploit big events',
+        desc2:
+          'Buy cryptos impacted by upcoming events like halvenings, forks, and exchange listings. When your trade pays off, repay the loan and keep the profits (and your collateral). ',
+        title3: 'Get IEO prices',
+        desc3:
+          'Increase your IEO buying power with Crypto Credit. Buy what you need to access the sale prices and then sell again later. Repay your loan and get your collateral back. \n',
       },
       reference: `
         <div name="ref-container">

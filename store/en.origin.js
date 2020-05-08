@@ -2945,19 +2945,19 @@
                 "otherPercent": "%%%.home.constantC2CLoan.compareTable.otherPercent%%%",
                 "description": "%%%.home.constantC2CLoan.compareTable.description%%%"
             },
-            "what": {
-                "title": "%%%.home.constantC2CLoan.what.title%%%",
-                "whatCaption0": "%%%.home.constantC2CLoan.what.whatCaption0%%%",
-                "whatCaption1": "%%%.home.constantC2CLoan.what.whatCaption1%%%",
-                "whatCaption2": "%%%.home.constantC2CLoan.what.whatCaption2%%%",
-                "whatCaption3": "%%%.home.constantC2CLoan.what.whatCaption3%%%",
-                "whatDesc0": "%%%.home.constantC2CLoan.what.whatDesc0%%%",
-                "whatDesc1": "%%%.home.constantC2CLoan.what.whatDesc1%%%",
-                "whatDesc2": "%%%.home.constantC2CLoan.what.whatDesc2%%%",
-                "whatDesc3": "%%%.home.constantC2CLoan.what.whatDesc3%%%"
+            "why": {
+                "title": "%%%.home.constantC2CLoan.why.title%%%",
+                "whatCaption0": "%%%.home.constantC2CLoan.why.whatCaption0%%%",
+                "whatCaption1": "%%%.home.constantC2CLoan.why.whatCaption1%%%",
+                "whatCaption2": "%%%.home.constantC2CLoan.why.whatCaption2%%%",
+                "whatCaption3": "%%%.home.constantC2CLoan.why.whatCaption3%%%",
+                "whatDesc0": "%%%.home.constantC2CLoan.why.whatDesc0%%%",
+                "whatDesc1": "%%%.home.constantC2CLoan.why.whatDesc1%%%",
+                "whatDesc2": "%%%.home.constantC2CLoan.why.whatDesc2%%%",
+                "whatDesc3": "%%%.home.constantC2CLoan.why.whatDesc3%%%"
             },
             "howItWorks": {
-                "intro": "%%%.home.constantC2CLoan.howItWorks.intro%%%",
+                "title": "%%%.home.constantC2CLoan.howItWorks.title%%%",
                 "step1": "%%%.home.constantC2CLoan.howItWorks.step1%%%",
                 "title1": "%%%.home.constantC2CLoan.howItWorks.title1%%%",
                 "desc1": "%%%.home.constantC2CLoan.howItWorks.desc1%%%",
@@ -2966,7 +2966,23 @@
                 "desc2": "%%%.home.constantC2CLoan.howItWorks.desc2%%%",
                 "step3": "%%%.home.constantC2CLoan.howItWorks.step3%%%",
                 "title3": "%%%.home.constantC2CLoan.howItWorks.title3%%%",
-                "desc3": "%%%.home.constantC2CLoan.howItWorks.desc3%%%"
+                "desc3": "%%%.home.constantC2CLoan.howItWorks.desc3%%%",
+                "step4": "%%%.home.constantC2CLoan.howItWorks.step4%%%",
+                "title4": "%%%.home.constantC2CLoan.howItWorks.title4%%%",
+                "desc4": "%%%.home.constantC2CLoan.howItWorks.desc4%%%",
+                "step5": "%%%.home.constantC2CLoan.howItWorks.step5%%%",
+                "title5": "%%%.home.constantC2CLoan.howItWorks.title5%%%",
+                "desc5": "%%%.home.constantC2CLoan.howItWorks.desc5%%%"
+            },
+            "what": {
+                "title": "%%%.home.constantC2CLoan.what.title%%%",
+                "subTitle": "%%%.home.constantC2CLoan.what.subTitle%%%",
+                "title1": "%%%.home.constantC2CLoan.what.title1%%%",
+                "desc1": "%%%.home.constantC2CLoan.what.desc1%%%",
+                "title2": "%%%.home.constantC2CLoan.what.title2%%%",
+                "desc2": "%%%.home.constantC2CLoan.what.desc2%%%",
+                "title3": "%%%.home.constantC2CLoan.what.title3%%%",
+                "desc3": "%%%.home.constantC2CLoan.what.desc3%%%"
             },
             "reference": "%%%.home.constantC2CLoan.reference%%%",
             "transaction": {

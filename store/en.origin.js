@@ -2904,6 +2904,7 @@
                 "apr": "%%%.home.constantC2CLoan.exchange.apr%%%",
                 "termLabel": "%%%.home.constantC2CLoan.exchange.termLabel%%%",
                 "amountLabel": "%%%.home.constantC2CLoan.exchange.amountLabel%%%",
+                "amountDesc": "%%%.home.constantC2CLoan.exchange.amountDesc%%%",
                 "collateralLabel": "%%%.home.constantC2CLoan.exchange.collateralLabel%%%",
                 "collateralRequiredLabel": "%%%.home.constantC2CLoan.exchange.collateralRequiredLabel%%%",
                 "startDateLabel": "%%%.home.constantC2CLoan.exchange.startDateLabel%%%",

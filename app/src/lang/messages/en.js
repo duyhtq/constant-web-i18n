@@ -346,7 +346,8 @@ export default {
     },
     withdrawGreaterThan: 'The minimum withdrawal amount is {min}',
     withdrawLessThanOrEqual: 'The maximum withdrawal amount is {max}',
-    reachDayLimit: 'You have reached the daily Zelle withdrawal limit of $500. Please choose a different withdrawal method.'
+    reachDayLimit: 'You have reached the daily Zelle withdrawal limit of $500. Please choose a different withdrawal method.',
+    suspendWithdrawalTo: `<p>For your security, withdrawals and transfers have been temporarily suspended on your account until {date}. This follows a recent change to your security settings. To reinstate withdrawals and transfers early, please <a href="/me/securities" target="_blank" class="underline bold">enable email confirmations</a>.</p>`
   },
   errorCode: {
     8000: 'invalid request',
@@ -389,9 +390,8 @@ export default {
       securities: 'Account security',
       notification_settings: 'Notification Settings',
       email_settings: 'Email Settings',
-      bookingOrders: 'Sale Orders',
-      investingOrders: 'Investing Orders',
-      loanOrders: 'Loan Orders',
+      sellOrders: 'Sell Orders',
+      buyOrders: 'Buy Orders',
       myOrders: 'Deposits and withdrawals',
       deposits: 'Deposits',
       topupHistory: 'Topup History',
@@ -410,7 +410,7 @@ export default {
       viewConstantWallet: 'View constant wallet here',
       viewInvestmentDetail: 'View investment detail here',
       batchTransfer: 'Batch Transfer',
-      transferOrders: 'Transfer Orders',
+      referralInfo: 'Referral Information',
       openOrders: 'Open Orders',
       interests: 'Interests',
       accountActivities: 'Account Activity',
@@ -527,219 +527,6 @@ export default {
         },
       },
       noData: 'No sell order available',
-    },
-    investingOrder: {
-      title: 'Investing Order Available',
-      userAndDate: 'User/Date',
-      matched: 'Matched',
-      date: 'Date',
-      termAndRate: 'Term/Rate',
-      amount: 'Amount',
-      accept: 'Accept',
-      cancel: 'Cancel',
-      confirm: 'Confirm',
-      confirmTitle: 'Confirm matched amount',
-      confirmMess: 'Are you sure you want to confirm this order?',
-      reject: 'Reject',
-      rejectMess: 'Are you sure you want to reject this order?',
-      loadMore: 'Load more',
-      matchedAmount: 'Matched Amount',
-      status: {
-        status: 'Status',
-        transferred: 'Transferred',
-        transferred_fiat: 'Transferred Fiat',
-        picked: 'Picked',
-        pending: 'Pending',
-        cancelled: 'Cancelled',
-        system_cancelled: 'System Cancelled',
-        system_rejected: 'System Rejected',
-      },
-      acceptFailed: {
-        '':
-          'Picked booking order is failing, please try again, or contact my admin for help. \n Thanks! ',
-        processing_order_exists: 'There is processing order need to complete',
-        validation_error: 'Can not accept this order.',
-      },
-      noData: 'No sell order available',
-    },
-    loanOrder: {
-      title: 'Loan Order Available',
-      userAndDate: 'User/Date',
-      matched: 'Matched',
-      date: 'Date',
-      termAndRate: 'Term/Rate',
-      amount: 'Amount',
-      cancel: 'Cancel',
-      accept: 'Accept',
-      acceptMess: 'Are you sure you want to confirm this order?',
-      reject: 'Reject',
-      rejectMess: 'Are you sure you want to reject this order?',
-      loadMore: 'Load more',
-      matchedAmount: 'Matched Amount',
-      status: {
-        status: 'Status',
-        transferred: 'Transferred',
-        transferred_fiat: 'Transferred Fiat',
-        picked: 'Picked',
-        pending: 'Pending',
-        cancelled: 'Cancelled',
-        system_cancelled: 'System Cancelled',
-        system_rejected: 'System Rejected',
-      },
-      acceptSuccessfully: 'Your accepting order have been accepted successfully',
-      acceptFailed: {
-        '':
-          'Picked booking order is failing, please try again, or contact my admin for help. \n Thanks! ',
-        processing_order_exists: 'There is processing order need to complete',
-        validation_error: 'Can not accept this order.',
-      },
-      noData: 'No sell order available',
-    },
-    bookingOrder: {
-      title: 'Booking Order Available',
-      userAndDate: 'User/Date',
-      date: 'Date',
-      value: 'Value',
-      amount: 'Amount',
-      accept: 'Accept',
-      detail: 'View Detail',
-      cancel: 'Cancel',
-      cancelMess: 'Are you sure you want to cancel this order?',
-      approve: 'Confirm payment',
-      approveMess: 'Are you sure you want to confirm this order?',
-      reject: 'Reject',
-      rejectMess: 'Are you sure you want to reject this order?',
-      riskNote:
-        'We found this order have risk rule detection, Please verify risk before take an action. if you choose Reject the amount of order will be transfer to your balance.',
-      receipt: 'Upload your receipt',
-      viewDetail: 'Detail',
-      loadMore: 'Load more',
-      routingNumber: 'Routing Number: ',
-      swiftCode: 'Swift Code: ',
-      status: {
-        status: 'Status',
-        transferred: 'Transferred',
-        transferred_fiat: 'Transferred Fiat',
-        picked: 'Picked',
-        pending: 'Pending',
-        cancelled: 'Cancelled',
-        system_cancelled: 'System Cancelled',
-        system_rejected: 'System Rejected',
-      },
-      acceptFailed: {
-        '':
-          'Picked booking order is failing, please try again, or contact my admin for help. \n Thanks! ',
-        processing_order_exists: 'There is processing order need to complete',
-      },
-      noData: 'No sell order available',
-      confirm: {
-        title: {
-          Cancel: 'Cancel order #{ID}',
-          Approve: 'Confirm you’ve sent the money for order #{ID}',
-          Finish: 'Send Constant for order #{ID}',
-        },
-        content: {
-          Cancel: `
-            <div>
-              <p>You’re {Type} <strong>{Amount}</strong> Constant at <strong>{Price}</strong> {Currency} per Constant.</p>
-              <p>If you want to cancel this order, please click the “Cancel order” button below. Otherwise, please close this window.</p>
-            </div>
-          `,
-          Approve: `
-             <div>
-              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>
-              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> 
-              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>
-              <div name="bank">
-                <div>
-                  <span>Bank Name:</span>
-                  <strong>{bank_name}</strong>
-                </div>
-                <div>
-                  <span>Account Name:</span>
-                  <strong>{bank_account_name}</strong>
-                </div>
-                <div>
-                  <span>Account Number: </span>
-                  <strong>{bank_account_number}</strong>
-                </div>
-                <div>
-                  <span>Amount: </span>
-                  <strong>{Total}&nbsp;{Currency}</strong>
-                </div>
-                <div>
-                  <span>Reference: </span>
-                  <strong>{Reference}</strong>
-                </div>
-                <div>
-                    <span>Bank Country: </span>
-                    <strong>{bankCountry}</strong>
-                 </div>
-              </div>
-              <br />
-              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>
-             </div>
-          `,
-          ApproveUs: `
-          <div>
-              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>
-              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> 
-              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>
-              <div name="bank">
-                <div>
-                  <span>Account Name:</span>
-                  <strong>{bank_account_name}</strong>
-                </div>
-                <div>
-                  <span>Account Number: </span>
-                  <strong>{bank_account_number}</strong>
-                </div>
-                <div>
-                  <span>Amount: </span>
-                  <strong>{Total}&nbsp;{Currency}</strong>
-                </div>
-                <div>
-                  <span>Reference: </span>
-                  <strong>{Reference}</strong>
-                </div>
-                <div>
-                    <span>Bank Country: </span>
-                    <strong>{bankCountry}</strong>
-                 </div>
-              </div>
-              <br />
-              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>
-             </div>
-          `,
-          ApproveZelle: `
-             <div>
-              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>
-              <p>If you’ve sent <strong>{Total} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> 
-              <p>Otherwise, please send <strong>{Total} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>
-              <div name="bank">
-                <div>
-                  <span>Payment method:</span>
-                  <strong>Zelle</strong>
-                </div>
-                <div>
-                  <span>Bank Email Address:</span>
-                  <strong>{Email}</strong>
-                </div>
-                <div>
-                  <span>Full Name:</span>
-                  <strong>{FullName}</strong>
-                </div>
-             </div>
-          `,
-          Finish: `
-            <div>
-                <p>You’re selling <strong>{Amount} Constant</strong> at <strong>{Price} </strong> {Currency} per Constant.</p>
-                <p>If you’ve received a bank transfer for <strong>{TotalVND} {Currency}</strong>, you can now send your Constant to the buyer by clicking the button below.</p>
-                <p>IMPORTANT: Please do not send your Constant until you’ve received the bank transfer from the buyer. If the buyer doesn’t pay you within 30 minutes of placing the order, please email us at hello@constant.money.</p>
-            </div>
-          `,
-        },
-      },
     },
     sellOrder: {
       title: 'Sell Order Available',
@@ -1344,12 +1131,6 @@ export default {
         5: '<span style="color: rgb(227,152,77)">Confirming</span>',
         6: '<span style="color: rgb(227,152,77)">Order timed out</span>',
       }
-    },
-    transferOrders: {
-      approve: 'Approve',
-      approveMess: 'Are you sure you want to approve this order?',
-      cancel: 'Cancel',
-      cancelMess: 'Are you sure you want to cancel this order?',
     },
     accountLevel: {
       head_text:

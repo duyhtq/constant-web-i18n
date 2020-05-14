@@ -1031,7 +1031,7 @@ export default {
         4: 'Transferring',
         5: 'Redeeming',
         6: 'Cancelled',
-        7: 'Done',
+        7: 'Successful',
         8: 'Holding',
         11: 'Transfer failed',
         12: 'Waiting Approving',
@@ -2918,7 +2918,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         collateralNoteMatchedFee: 'Fee: 1%',
         yourBalance: 'Your current balance is {value} {symbol}',
         collateralNoteTotal: 'Total loan received: {total} {currency}',
-        collateralNoteDGXExtraFees: 'Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.',
+        collateralNoteDGXExtraFees: 'Digix deducts an additional 0.13% fee on all DGX transfers. This fee will be deducted from your coin balance.',
         usingStaking: 'Get {discount}% off your interest rate by staking collateral',
         usingStakingMobile: 'Get {discount}% off with staking',
         usingStakingDesc: 'Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.',
@@ -3029,7 +3029,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
             Once we receive your collateral, your loan status will change from <b>pending</b> to <b>matching</b>. This is usually very fast – around 1 block confirmation – but might take a little longer during busy times. When your status changes, it means we’ve begun finding an investor to accept your terms. We’ll email you as soon as we find you a match.
           </span>
         `,
-        collateralNoteDGXExtraFees: 'Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.',
+        collateralNoteDGXExtraFees: 'Digix deducts an additional 0.13% fee on all DGX transfers. This fee will be deducted from your coin balance.',
         transactionID: 'transaction ID',
         noticeTpl:
           'Please send <strong>{collateralAmount} {collateralSymbol}</strong> as collateral to the following address within the next <strong>60 minutes</strong>.',
@@ -3514,7 +3514,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         collateralNoteMatchedFee: 'Fee: 1%',
         yourBalance: 'Your current balance is {value} {symbol}',
         collateralNoteTotal: 'Total loan received: {total} {currency}',
-        collateralNoteDGXExtraFees: 'Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.',
+        collateralNoteDGXExtraFees: 'Digix deducts an additional 0.13% fee on all DGX transfers. This fee will be deducted from your coin balance.',
         collateralNoteMatch: 'Estimated time to match: {hours} hours',
         collateralNoteMatchTime: 'The rate you entered will have a longer time of matching, according to our past data. Estimated time of matching {hours} hours {type}.',
         collateralNoteMatchNoneTime: 'The rate you entered will have a longer time of matching, according to our past data. Estimated time of matching.',
@@ -3652,7 +3652,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
             Once we receive your collateral, your loan status will change from <b>pending</b> to <b>matching</b>. This is usually very fast – around 1 block confirmation – but might take a little longer during busy times. When your status changes, it means we’ve begun finding an investor to accept your terms. We’ll email you as soon as we find you a match.
           </span>
         `,
-        collateralNoteDGXExtraFees: 'Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.',
+        collateralNoteDGXExtraFees: 'Digix deducts an additional 0.13% fee on all DGX transfers. This fee will be deducted from your coin balance.',
         transactionID: 'transaction ID',
         noticeTpl:
           'Please send <strong>{collateralAmount} {collateralSymbol}</strong> as collateral to the following address within the next <strong>60 minutes</strong>.',
@@ -5212,20 +5212,20 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       'The right investment is the one you’re comfortable with. The one that grows reliably over time. Select an option that feels good, and we’ll teach your money how to work for you.',
     makeLocalOrderSuccess: 'Your order was created successfully',
     crypto_amount_exists: 'Crypto amount exists',
-    makeLocalOrderFailed: 'Failed while creating your order',
+    makeLocalOrderFailed: 'Sorry, we couldn\'t create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.',
     makeDirectOrderSuccess: 'Your order was created successfully',
-    makeDirectOrderFailed: 'Failed while creating your order',
+    makeDirectOrderFailed: 'Sorry, we couldn\'t create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.',
     makeAchDirectOrderFailed:
       'Please check your bank details are in order and try again.',
     makeTrialOrderSuccess: 'Your order was created successfully',
-    makeTrialOrderFailed: 'Failed while creating your order',
+    makeTrialOrderFailed: 'Sorry, we couldn\'t create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.',
     validation_error: 'Ensure that there are no more than 10 digits before the decimal point.'
   },
   send: {
     makeLocalOrderSuccess: 'Your order was created successfully',
-    makeLocalOrderFailed: 'Failed while creating your order',
+    makeLocalOrderFailed: 'Sorry, we couldn\'t create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.',
     makeDirectOrderSuccess: 'Your order was created successfully',
-    makeDirectOrderFailed: 'Failed while creating your order',
+    makeDirectOrderFailed: 'Sorry, we couldn\'t create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.',
     transferConfirm: `We've already sent you a verification link by email. Please click this link to approve your transaction.`,
     info: {
       title: 'SEND MONEY',
@@ -5267,9 +5267,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
   },
   withdraw: {
     makeLocalOrderSuccess: 'Your order was created successfully',
-    makeLocalOrderFailed: 'Failed while creating your order',
+    makeLocalOrderFailed: 'Sorry, we couldn\'t create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.',
     makeDirectOrderSuccess: 'Your order was created successfully',
-    makeDirectOrderFailed: 'Failed while creating your order',
+    makeDirectOrderFailed: 'Sorry, we couldn\'t create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.',
     info: {
       content: `
       <p>Withdraw to your local bank.</p>
@@ -5418,6 +5418,44 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         3: 'Unlimited free withdrawals',
       }
     },
+    compareTable: {
+      title: 'Constant vs Saving Accounts',
+      benefits: 'Benefits',
+      constant: 'Constant',
+      others: 'Savings accounts',
+      interestRate: {
+        title: 'Interest rate',
+        constant: '4% APY',
+        others: 'Up to 1.7% APY*',
+      },
+      compounded: {
+        title: 'Compounded',
+        constant: 'Every second',
+        others: 'Every 1-12 months',
+      },
+      fees: {
+        title: 'Compounded',
+        constant: 'FREE',
+        others: 'Up to $15',
+      },
+      availability: {
+        title: 'Availability',
+        constant: 'Global',
+        others: 'US only',
+      },
+      minimumBalance: {
+        title: 'Minimum balance',
+        constant: 'NO',
+        others: 'Up to $2,500',
+      },
+      protection: {
+        title: 'Protection',
+        constant: 'Collateral',
+        others: 'FDIC deposit insurance',
+      },
+      description:
+        `* Data taken from first 100 results on <a href="https://www.bankrate.com/banking/savings/rates/" target="_blank" class="underline">https://www.bankrate.com/banking/savings/rates/</a> and correct as of April 29, 2020. `,
+    },
   },
   yourSaving: {
     hello: `
@@ -5431,14 +5469,50 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       `,
       subTitle: 'Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.',
       invest: {
-        title: 'Invest the way you want',
-        cap: 'Start from just $50. Fully secured.',
-        btn: 'Invest',
+        title: 'Invest',
+        cap: `
+          <p>
+            <strong>7%</strong>
+            <br />
+            Interest Rate
+          </p>
+          <p class="clearBottom">
+            digital collateral-backed
+          </p>
+        `,
+        btn: 'Explore',
       },
       borrow: {
-        title: 'Borrow the way you want',
-        cap: 'No limit. Set your own fixed rates.',
-        btn: 'Borrow',
+        title: 'Borrow',
+        cap: `
+          <p>
+            <strong>5% - 20%</strong>
+            <br />
+            Interest Rate
+          </p>
+          <p class="clearBottom">
+            <strong>411 516</strong>
+            <br />
+            Available loans
+          </p>
+        `,
+        btn: 'Explore',
+      },
+      loanOriginator: {
+        title: 'LO Invest',
+        cap: `
+          <p>
+            <strong>5% - 20%</strong>
+            <br />
+            Interest Rate
+          </p>
+          <p class="clearBottom">
+            <strong>1 007 235</strong>
+            <br />
+            Available loans
+          </p>
+        `,
+        btn: 'Explore',
       },
     },
     crypto: {
@@ -6968,63 +7042,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
   ourPartners: {
     title: 'Our Partners',
     desc: 'We are working closely with'
-  },
-  ourPress: {
-    title: 'Our Press',
-    press: {
-      press1: {
-        name: 'Hacker Noon',
-        desc: `<p>The traditional loan agreement has been replaced by an unstoppable Ethereum smart contract without any possibility of downtime, fraud, or third-party interference. Fully-secured, blockchain-enabled P2P lending is our contribution to a bankless banking system.</p>`,
-      },
-      press2: {
-        name: 'Coin98',
-        desc: `<p>Chắc hẳn sẽ có những lúc chúng ta rơi vào hoàn cảnh khi đang HODL một đồng coin nào đó, nhưng lại thấy 1 cơ hội khác trong khi quỹ vốn thì đã hết. Constant sẽ giúp anh em huy động được một lượng cash (tiền mặt) nhất định để vào được kèo mới nhưng không phải cash out (bán) đồng coin đang HODL</p>`,
-      },
-      press3: {
-        name: 'Techworm',
-        desc: `<p>The best thing about Constant, however, is the security the lending platform has in place. Every loan is fully secured and backed in multiple ways. While on loan it’s protected by borrower collateral, and while waiting to be matched it’s protected by a $130M insurance policy.</p>`,
-      },
-      press4: {
-        name: 'Blockonomi',
-        desc: `<p>Constant has created a platform that cuts banks out of the lending equation and allows anyone in the world to create loans on whatever terms they like. This is a big shift away from the established lending system, and it could be a big benefit for both borrowers and lenders</p>`,
-      },
-      press5: {
-        name: 'Zero Hedge',
-        desc: `<p>Lenders can choose their terms, no credit check, and no nonsense – and find borrowers. Programming a system like this using the US banking system, would be expensive, cumbersome, time consuming, and who knows what it might look like after all the regulatory approvals.</p>`,
-      },
-      press6: {
-        name: 'ZyCrypto',
-        desc: `<p>Constant is different in that users can be confident in the fact that each transaction is fully secured. Every loan is collateral backed. Investor funds are held in escrow accounts when not on loan. This level of security sets Constant apart from other platforms.</p>`,
-      },
-      press7: {
-        name: '',
-        desc: '<p>And when it comes to pioneering a new generation of fintech platforms, Constant provides a measuring stick for the industry’s progress.</p>'
-      },
-      press8: {
-        name: '',
-        desc: '<p>And one DeFi platform, Constant, a secured P2P lending startup that leverages smart contracts on Ethereum, has garnered significant traction over the last several months — capitalizing on a unique offering and the technology underscoring the ascendance of open financial protocols.</p>',
-      },
-      press9: {
-        name: '',
-        desc: '<p>Constant works by enabling borrowers to stake liquid capital via over-collateralized crypto assets (e.g., Ether) based on an LTV ratio. Subsequently, borrowers can “cherrypick” the best deals enumerated on Constant’s interface, selecting the best interest rates that are posted independently by each lending peer. The opposite is similar for lenders, who can choose to set custom interest rates and terms, which borrowers can then decide from.</p>'
-      },
-      press10: {
-        name: '',
-        desc: '<p>Constant acts as a trading hub where borrowers and creditors pick the best deal. Moreover, the Redlands, Calif.-based venture allows users to set their own interest rates and terms -- a feature that doesn’t exist anywhere else.</p>'
-      },
-      press11: {
-        name: '',
-        desc: '<p>Constant acts as a trading hub where borrowers and creditors pick the best deal. Moreover, the Redlands, Calif.-based venture allows users to set their own interest rates and terms -- a feature that doesn’t exist anywhere else.</p>'
-      },
-      press12: {
-        name: '',
-        desc: '<p>It\'s a great service, with free deposits and withdrawals, extremely fast responding customer support and a transparent team.</p>'
-      }
-    },
-    desc: {
-      title: 'In the News',
-      content: 'We’re proud to feature in many prominent finance and technology publications. From news to reviews, find out what the journalists, pundits, and experts have to say about the Constant peer-to-peer lending platform.'
-    }
   },
   collateralBalance: {
     balance: 'Balance',

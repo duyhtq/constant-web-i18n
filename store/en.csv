@@ -4238,6 +4238,16 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.yourSaving.hello%%%,"
       <strong>Hello {name}</strong>.<br/>Let's see how your money is doing today.
     "
+%%%.newHome.oldBanner.title1%%%,"
+        <h1>The world’s first <span class=""darkorange4"">fully secured</span> peer-to-peer lending platform.</h1>
+      "
+%%%.newHome.oldBanner.subTitle%%%,"Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free."
+%%%.newHome.oldBanner.invest.title%%%,"Invest the way you want"
+%%%.newHome.oldBanner.invest.cap%%%,"Start from just $50. Fully secured."
+%%%.newHome.oldBanner.invest.btn%%%,"Invest"
+%%%.newHome.oldBanner.borrow.title%%%,"Borrow the way you want"
+%%%.newHome.oldBanner.borrow.cap%%%,"No limit. Set your own fixed rates."
+%%%.newHome.oldBanner.borrow.btn%%%,"Borrow"
 %%%.newHome.banner.title1%%%,"
         <h1>The world’s first <span class=""darkorange4"">fully secured</span> peer-to-peer lending platform.</h1>
       "
@@ -5427,6 +5437,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.staking.what.title%%%,"Why stake with us?"
 %%%.ourPartners.title%%%,"Our Partners"
 %%%.ourPartners.desc%%%,"We are working closely with"
+%%%.ourPress.title%%%,"Our Press"
 %%%.collateralBalance.balance%%%,"Balance"
 %%%.collateralBalance.coin%%%,"Coin"
 %%%.collateralBalance.name%%%,"Name"
@@ -6021,24 +6032,16 @@ Exchange margin accounts typically only use the price on that exchange, so you c
               <p><i class=""fal fa-check""></i> $50 credit to your Constant account the first time you reach Gold (after leaving a review on Trustpilot).</p>
               <p><i class=""fal fa-check""></i> US members: $15 credit every time you refer a friend.</p>
               <p><i class=""fal fa-check""></i> 15% of all earned interest from Flex accounts of referred friends during their first year.</p>
-              <p><i class=""fal fa-check""></i> Withdrawals through Google Pay and Venmo.</p>
-              <p><i class=""fal fa-check""></i> Deposits/withdrawals through Checkbook ACH for all investment term lengths.</p>
             "
 %%%.memberShip.desc.level2%%%,"<h4>What you get:</h4>
               <p><i class=""fal fa-check""></i> $50 credit to your Constant account the first time you reach Platinum (after leaving a review on Trustpilot).</p>
               <p><i class=""fal fa-check""></i> US members: $17.5 credit every time you refer a friend.</p>
               <p><i class=""fal fa-check""></i> 17.5% of all earned interest from Flex accounts of referred friends during their first year.</p>
-              <p><i class=""fal fa-check""></i> Withdrawals through Google Pay and Venmo.</p>
-              <p><i class=""fal fa-check""></i> Deposits through Paypal.</p>
-              <p><i class=""fal fa-check""></i> Deposits/withdrawals through Checkbook ACH for all investment term lengths.</p>
             "
 %%%.memberShip.desc.level3%%%,"<h4>What you get:</h4>
               <p><i class=""fal fa-check""></i> $50 credit to your Constant account the first time you reach Diamond (after leaving a review on Trustpilot).</p>
               <p><i class=""fal fa-check""></i> US members: $20 credit every time you refer a friend.</p>
               <p><i class=""fal fa-check""></i> 20% of all earned interest from Flex accounts of referred friends during their first year.</p>
-              <p><i class=""fal fa-check""></i> Withdrawals through Google Pay and Venmo.</p>
-              <p><i class=""fal fa-check""></i> Deposits through Paypal.</p>
-              <p><i class=""fal fa-check""></i> Deposits/withdrawals through Checkbook ACH for all investment term lengths.</p>
               <p><i class=""fal fa-check""></i> Automatic bump to the top of our matching queue for all investments.</p>
               <p><i class=""fal fa-check""></i> 1 STAR token to redeem for a 1% bonus or discounted interest.</p>
             "

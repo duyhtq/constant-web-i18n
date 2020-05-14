@@ -4104,6 +4104,20 @@
         "hello": "%%%.yourSaving.hello%%%"
     },
     "newHome": {
+        "oldBanner": {
+            "title1": "%%%.newHome.oldBanner.title1%%%",
+            "subTitle": "%%%.newHome.oldBanner.subTitle%%%",
+            "invest": {
+                "title": "%%%.newHome.oldBanner.invest.title%%%",
+                "cap": "%%%.newHome.oldBanner.invest.cap%%%",
+                "btn": "%%%.newHome.oldBanner.invest.btn%%%"
+            },
+            "borrow": {
+                "title": "%%%.newHome.oldBanner.borrow.title%%%",
+                "cap": "%%%.newHome.oldBanner.borrow.cap%%%",
+                "btn": "%%%.newHome.oldBanner.borrow.btn%%%"
+            }
+        },
         "banner": {
             "title1": "%%%.newHome.banner.title1%%%",
             "subTitle": "%%%.newHome.banner.subTitle%%%",
@@ -5315,6 +5329,9 @@
     "ourPartners": {
         "title": "%%%.ourPartners.title%%%",
         "desc": "%%%.ourPartners.desc%%%"
+    },
+    "ourPress": {
+        "title": "%%%.ourPress.title%%%"
     },
     "collateralBalance": {
         "balance": "%%%.collateralBalance.balance%%%",

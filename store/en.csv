@@ -824,7 +824,7 @@
 %%%.me.history.orderStatus.4%%%,"Transferring"
 %%%.me.history.orderStatus.5%%%,"Redeeming"
 %%%.me.history.orderStatus.6%%%,"Cancelled"
-%%%.me.history.orderStatus.7%%%,"Done"
+%%%.me.history.orderStatus.7%%%,"Successful"
 %%%.me.history.orderStatus.8%%%,"Holding"
 %%%.me.history.orderStatus.11%%%,"Transfer failed"
 %%%.me.history.orderStatus.12%%%,"Waiting Approving"
@@ -2215,7 +2215,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.constantLoan.exchange.collateralNoteMatchedFee%%%,"Fee: 1%"
 %%%.home.constantLoan.exchange.yourBalance%%%,"Your current balance is {value} {symbol}"
 %%%.home.constantLoan.exchange.collateralNoteTotal%%%,"Total loan received: {total} {currency}"
-%%%.home.constantLoan.exchange.collateralNoteDGXExtraFees%%%,"Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount."
+%%%.home.constantLoan.exchange.collateralNoteDGXExtraFees%%%,"Digix deducts an additional 0.13% fee on all DGX transfers. This fee will be deducted from your coin balance."
 %%%.home.constantLoan.exchange.usingStaking%%%,"Get {discount}% off your interest rate by staking collateral"
 %%%.home.constantLoan.exchange.usingStakingMobile%%%,"Get {discount}% off with staking"
 %%%.home.constantLoan.exchange.usingStakingDesc%%%,"Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess."
@@ -2313,7 +2313,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
             Once we receive your collateral, your loan status will change from <b>pending</b> to <b>matching</b>. This is usually very fast – around 1 block confirmation – but might take a little longer during busy times. When your status changes, it means we’ve begun finding an investor to accept your terms. We’ll email you as soon as we find you a match.
           </span>
         "
-%%%.home.constantLoan.transaction.collateralNoteDGXExtraFees%%%,"Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount."
+%%%.home.constantLoan.transaction.collateralNoteDGXExtraFees%%%,"Digix deducts an additional 0.13% fee on all DGX transfers. This fee will be deducted from your coin balance."
 %%%.home.constantLoan.transaction.transactionID%%%,"transaction ID"
 %%%.home.constantLoan.transaction.noticeTpl%%%,"Please send <strong>{collateralAmount} {collateralSymbol}</strong> as collateral to the following address within the next <strong>60 minutes</strong>."
 %%%.home.constantLoan.transaction.summarizeContent%%%,"
@@ -2746,7 +2746,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.constantC2CLoan.exchange.collateralNoteMatchedFee%%%,"Fee: 1%"
 %%%.home.constantC2CLoan.exchange.yourBalance%%%,"Your current balance is {value} {symbol}"
 %%%.home.constantC2CLoan.exchange.collateralNoteTotal%%%,"Total loan received: {total} {currency}"
-%%%.home.constantC2CLoan.exchange.collateralNoteDGXExtraFees%%%,"Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount."
+%%%.home.constantC2CLoan.exchange.collateralNoteDGXExtraFees%%%,"Digix deducts an additional 0.13% fee on all DGX transfers. This fee will be deducted from your coin balance."
 %%%.home.constantC2CLoan.exchange.collateralNoteMatch%%%,"Estimated time to match: {hours} hours"
 %%%.home.constantC2CLoan.exchange.collateralNoteMatchTime%%%,"The rate you entered will have a longer time of matching, according to our past data. Estimated time of matching {hours} hours {type}."
 %%%.home.constantC2CLoan.exchange.collateralNoteMatchNoneTime%%%,"The rate you entered will have a longer time of matching, according to our past data. Estimated time of matching."
@@ -2867,7 +2867,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
             Once we receive your collateral, your loan status will change from <b>pending</b> to <b>matching</b>. This is usually very fast – around 1 block confirmation – but might take a little longer during busy times. When your status changes, it means we’ve begun finding an investor to accept your terms. We’ll email you as soon as we find you a match.
           </span>
         "
-%%%.home.constantC2CLoan.transaction.collateralNoteDGXExtraFees%%%,"Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount."
+%%%.home.constantC2CLoan.transaction.collateralNoteDGXExtraFees%%%,"Digix deducts an additional 0.13% fee on all DGX transfers. This fee will be deducted from your coin balance."
 %%%.home.constantC2CLoan.transaction.transactionID%%%,"transaction ID"
 %%%.home.constantC2CLoan.transaction.noticeTpl%%%,"Please send <strong>{collateralAmount} {collateralSymbol}</strong> as collateral to the following address within the next <strong>60 minutes</strong>."
 %%%.home.constantC2CLoan.transaction.summarizeContent%%%,"
@@ -4075,17 +4075,17 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.saving.subTitle%%%,"The right investment is the one you’re comfortable with. The one that grows reliably over time. Select an option that feels good, and we’ll teach your money how to work for you."
 %%%.saving.makeLocalOrderSuccess%%%,"Your order was created successfully"
 %%%.saving.crypto_amount_exists%%%,"Crypto amount exists"
-%%%.saving.makeLocalOrderFailed%%%,"Failed while creating your order"
+%%%.saving.makeLocalOrderFailed%%%,"Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you."
 %%%.saving.makeDirectOrderSuccess%%%,"Your order was created successfully"
-%%%.saving.makeDirectOrderFailed%%%,"Failed while creating your order"
+%%%.saving.makeDirectOrderFailed%%%,"Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you."
 %%%.saving.makeAchDirectOrderFailed%%%,"Please check your bank details are in order and try again."
 %%%.saving.makeTrialOrderSuccess%%%,"Your order was created successfully"
-%%%.saving.makeTrialOrderFailed%%%,"Failed while creating your order"
+%%%.saving.makeTrialOrderFailed%%%,"Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you."
 %%%.saving.validation_error%%%,"Ensure that there are no more than 10 digits before the decimal point."
 %%%.send.makeLocalOrderSuccess%%%,"Your order was created successfully"
-%%%.send.makeLocalOrderFailed%%%,"Failed while creating your order"
+%%%.send.makeLocalOrderFailed%%%,"Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you."
 %%%.send.makeDirectOrderSuccess%%%,"Your order was created successfully"
-%%%.send.makeDirectOrderFailed%%%,"Failed while creating your order"
+%%%.send.makeDirectOrderFailed%%%,"Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you."
 %%%.send.transferConfirm%%%,"We've already sent you a verification link by email. Please click this link to approve your transaction."
 %%%.send.info.title%%%,"SEND MONEY"
 %%%.send.info.desc1%%%,"Conveninent."
@@ -4113,9 +4113,9 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.send.howItWorks.title3%%%,"Send money"
 %%%.send.howItWorks.desc3%%%,"Enter the amount you’d like to send and the recipient's bank account info. We take care of the rest."
 %%%.withdraw.makeLocalOrderSuccess%%%,"Your order was created successfully"
-%%%.withdraw.makeLocalOrderFailed%%%,"Failed while creating your order"
+%%%.withdraw.makeLocalOrderFailed%%%,"Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you."
 %%%.withdraw.makeDirectOrderSuccess%%%,"Your order was created successfully"
-%%%.withdraw.makeDirectOrderFailed%%%,"Failed while creating your order"
+%%%.withdraw.makeDirectOrderFailed%%%,"Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you."
 %%%.withdraw.info.content%%%,"
       <p>Withdraw to your local bank.</p>
       <h2>Withdraw funds to your bank account of choice.</h2>
@@ -4212,6 +4212,29 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.deposit.intro.desc.1%%%,"Fully secured by collateral"
 %%%.deposit.intro.desc.2%%%,"Compounded & paid every second"
 %%%.deposit.intro.desc.3%%%,"Unlimited free withdrawals"
+%%%.deposit.compareTable.title%%%,"Constant vs Saving Accounts"
+%%%.deposit.compareTable.benefits%%%,"Benefits"
+%%%.deposit.compareTable.constant%%%,"Constant"
+%%%.deposit.compareTable.others%%%,"Savings accounts"
+%%%.deposit.compareTable.interestRate.title%%%,"Interest rate"
+%%%.deposit.compareTable.interestRate.constant%%%,"4% APY"
+%%%.deposit.compareTable.interestRate.others%%%,"Up to 1.7% APY*"
+%%%.deposit.compareTable.compounded.title%%%,"Compounded"
+%%%.deposit.compareTable.compounded.constant%%%,"Every second"
+%%%.deposit.compareTable.compounded.others%%%,"Every 1-12 months"
+%%%.deposit.compareTable.fees.title%%%,"Compounded"
+%%%.deposit.compareTable.fees.constant%%%,"FREE"
+%%%.deposit.compareTable.fees.others%%%,"Up to $15"
+%%%.deposit.compareTable.availability.title%%%,"Availability"
+%%%.deposit.compareTable.availability.constant%%%,"Global"
+%%%.deposit.compareTable.availability.others%%%,"US only"
+%%%.deposit.compareTable.minimumBalance.title%%%,"Minimum balance"
+%%%.deposit.compareTable.minimumBalance.constant%%%,"NO"
+%%%.deposit.compareTable.minimumBalance.others%%%,"Up to $2,500"
+%%%.deposit.compareTable.protection.title%%%,"Protection"
+%%%.deposit.compareTable.protection.constant%%%,"Collateral"
+%%%.deposit.compareTable.protection.others%%%,"FDIC deposit insurance"
+%%%.deposit.compareTable.description%%%,"* Data taken from first 100 results on <a href=""https://www.bankrate.com/banking/savings/rates/"" target=""_blank"" class=""underline"">https://www.bankrate.com/banking/savings/rates/</a> and correct as of April 29, 2020. "
 %%%.yourSaving.hello%%%,"
       <strong>Hello {name}</strong>.<br/>Let's see how your money is doing today.
     "
@@ -4219,12 +4242,46 @@ Exchange margin accounts typically only use the price on that exchange, so you c
         <h1>The world’s first <span class=""darkorange4"">fully secured</span> peer-to-peer lending platform.</h1>
       "
 %%%.newHome.banner.subTitle%%%,"Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free."
-%%%.newHome.banner.invest.title%%%,"Invest the way you want"
-%%%.newHome.banner.invest.cap%%%,"Start from just $50. Fully secured."
-%%%.newHome.banner.invest.btn%%%,"Invest"
-%%%.newHome.banner.borrow.title%%%,"Borrow the way you want"
-%%%.newHome.banner.borrow.cap%%%,"No limit. Set your own fixed rates."
-%%%.newHome.banner.borrow.btn%%%,"Borrow"
+%%%.newHome.banner.invest.title%%%,"Invest"
+%%%.newHome.banner.invest.cap%%%,"
+          <p>
+            <strong>7%</strong>
+            <br />
+            Interest Rate
+          </p>
+          <p class=""clearBottom"">
+            digital collateral-backed
+          </p>
+        "
+%%%.newHome.banner.invest.btn%%%,"Explore"
+%%%.newHome.banner.borrow.title%%%,"Borrow"
+%%%.newHome.banner.borrow.cap%%%,"
+          <p>
+            <strong>5% - 20%</strong>
+            <br />
+            Interest Rate
+          </p>
+          <p class=""clearBottom"">
+            <strong>411 516</strong>
+            <br />
+            Available loans
+          </p>
+        "
+%%%.newHome.banner.borrow.btn%%%,"Explore"
+%%%.newHome.banner.loanOriginator.title%%%,"LO Invest"
+%%%.newHome.banner.loanOriginator.cap%%%,"
+          <p>
+            <strong>5% - 20%</strong>
+            <br />
+            Interest Rate
+          </p>
+          <p class=""clearBottom"">
+            <strong>1 007 235</strong>
+            <br />
+            Available loans
+          </p>
+        "
+%%%.newHome.banner.loanOriginator.btn%%%,"Explore"
 %%%.newHome.crypto.bitGo%%%,"$100M escrow insurance"
 %%%.newHome.crypto.desc%%%,"Fully secured, fully backed. All loans and investments are protected by a combination of FDIC insurance, Ethereum smart contracts, and crypto collateral."
 %%%.newHome.faqs.question1%%%,"What is peer-to-peer (P2P) lending?"
@@ -5370,33 +5427,6 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.staking.what.title%%%,"Why stake with us?"
 %%%.ourPartners.title%%%,"Our Partners"
 %%%.ourPartners.desc%%%,"We are working closely with"
-%%%.ourPress.title%%%,"Our Press"
-%%%.ourPress.press.press1.name%%%,"Hacker Noon"
-%%%.ourPress.press.press1.desc%%%,"<p>The traditional loan agreement has been replaced by an unstoppable Ethereum smart contract without any possibility of downtime, fraud, or third-party interference. Fully-secured, blockchain-enabled P2P lending is our contribution to a bankless banking system.</p>"
-%%%.ourPress.press.press2.name%%%,"Coin98"
-%%%.ourPress.press.press2.desc%%%,"<p>Chắc hẳn sẽ có những lúc chúng ta rơi vào hoàn cảnh khi đang HODL một đồng coin nào đó, nhưng lại thấy 1 cơ hội khác trong khi quỹ vốn thì đã hết. Constant sẽ giúp anh em huy động được một lượng cash (tiền mặt) nhất định để vào được kèo mới nhưng không phải cash out (bán) đồng coin đang HODL</p>"
-%%%.ourPress.press.press3.name%%%,"Techworm"
-%%%.ourPress.press.press3.desc%%%,"<p>The best thing about Constant, however, is the security the lending platform has in place. Every loan is fully secured and backed in multiple ways. While on loan it’s protected by borrower collateral, and while waiting to be matched it’s protected by a $130M insurance policy.</p>"
-%%%.ourPress.press.press4.name%%%,"Blockonomi"
-%%%.ourPress.press.press4.desc%%%,"<p>Constant has created a platform that cuts banks out of the lending equation and allows anyone in the world to create loans on whatever terms they like. This is a big shift away from the established lending system, and it could be a big benefit for both borrowers and lenders</p>"
-%%%.ourPress.press.press5.name%%%,"Zero Hedge"
-%%%.ourPress.press.press5.desc%%%,"<p>Lenders can choose their terms, no credit check, and no nonsense – and find borrowers. Programming a system like this using the US banking system, would be expensive, cumbersome, time consuming, and who knows what it might look like after all the regulatory approvals.</p>"
-%%%.ourPress.press.press6.name%%%,"ZyCrypto"
-%%%.ourPress.press.press6.desc%%%,"<p>Constant is different in that users can be confident in the fact that each transaction is fully secured. Every loan is collateral backed. Investor funds are held in escrow accounts when not on loan. This level of security sets Constant apart from other platforms.</p>"
-%%%.ourPress.press.press7.name%%%,""
-%%%.ourPress.press.press7.desc%%%,"<p>And when it comes to pioneering a new generation of fintech platforms, Constant provides a measuring stick for the industry’s progress.</p>"
-%%%.ourPress.press.press8.name%%%,""
-%%%.ourPress.press.press8.desc%%%,"<p>And one DeFi platform, Constant, a secured P2P lending startup that leverages smart contracts on Ethereum, has garnered significant traction over the last several months — capitalizing on a unique offering and the technology underscoring the ascendance of open financial protocols.</p>"
-%%%.ourPress.press.press9.name%%%,""
-%%%.ourPress.press.press9.desc%%%,"<p>Constant works by enabling borrowers to stake liquid capital via over-collateralized crypto assets (e.g., Ether) based on an LTV ratio. Subsequently, borrowers can “cherrypick” the best deals enumerated on Constant’s interface, selecting the best interest rates that are posted independently by each lending peer. The opposite is similar for lenders, who can choose to set custom interest rates and terms, which borrowers can then decide from.</p>"
-%%%.ourPress.press.press10.name%%%,""
-%%%.ourPress.press.press10.desc%%%,"<p>Constant acts as a trading hub where borrowers and creditors pick the best deal. Moreover, the Redlands, Calif.-based venture allows users to set their own interest rates and terms -- a feature that doesn’t exist anywhere else.</p>"
-%%%.ourPress.press.press11.name%%%,""
-%%%.ourPress.press.press11.desc%%%,"<p>Constant acts as a trading hub where borrowers and creditors pick the best deal. Moreover, the Redlands, Calif.-based venture allows users to set their own interest rates and terms -- a feature that doesn’t exist anywhere else.</p>"
-%%%.ourPress.press.press12.name%%%,""
-%%%.ourPress.press.press12.desc%%%,"<p>It's a great service, with free deposits and withdrawals, extremely fast responding customer support and a transparent team.</p>"
-%%%.ourPress.desc.title%%%,"In the News"
-%%%.ourPress.desc.content%%%,"We’re proud to feature in many prominent finance and technology publications. From news to reviews, find out what the journalists, pundits, and experts have to say about the Constant peer-to-peer lending platform."
 %%%.collateralBalance.balance%%%,"Balance"
 %%%.collateralBalance.coin%%%,"Coin"
 %%%.collateralBalance.name%%%,"Name"

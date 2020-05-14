@@ -868,7 +868,7 @@
                 "4": "Transferring",
                 "5": "Redeeming",
                 "6": "Cancelled",
-                "7": "Done",
+                "7": "Successful",
                 "8": "Holding",
                 "11": "Transfer failed",
                 "12": "Waiting Approving",
@@ -2393,7 +2393,7 @@
                 "collateralNoteMatchedFee": "Fee: 1%",
                 "yourBalance": "Your current balance is {value} {symbol}",
                 "collateralNoteTotal": "You will receive: {total} {currency}",
-                "collateralNoteDGXExtraFees": "Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.",
+                "collateralNoteDGXExtraFees": "Digix deducts an additional 0.13% fee on all DGX transfers. This fee will be deducted from your coin balance.",
                 "usingStaking": "Get {discount}% off your rate by staking collateral",
                 "usingStakingMobile": "Get {discount}% off with staking",
                 "usingStakingDesc": "Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.",
@@ -2453,7 +2453,7 @@
                 "minuteWindowDescription": "For the sake of security, this session will time-out after 60 minutes. If you need a little longer, just re-enter the amount you would like to borrow <a href=\"/borrow\" >here</a>.",
                 "msgInfoManual": "\n          <span>At the moment, {symbol} deposits aren’t automatic, so we need to change your loan status manually. Therefore, please give us <b>up to 12 hours</b> to confirm receipt of your collateral (it's usually much faster).</span>\n          <br />\n          <span>If you have any questions, please email us at hello@myconstant.com or message <a href='https://t.me/@andy_9210'>Andy</a>, our head of customer service, on Telegram.</span>\n          <br />\n          <span>We'll start finding you a match as soon as we receive your collateral.</span>\n        ",
                 "msgInfoAuto": "\n          <span>\n            Once we receive your collateral, your loan status will change from <b>pending</b> to <b>matching</b>. This is usually very fast – around 1 block confirmation – but might take a little longer during busy times. When your status changes, it means we’ve begun finding an investor to accept your terms. We’ll email you as soon as we find you a match.\n          </span>\n        ",
-                "collateralNoteDGXExtraFees": "Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.",
+                "collateralNoteDGXExtraFees": "Digix deducts an additional 0.13% fee on all DGX transfers. This fee will be deducted from your coin balance.",
                 "transactionID": "transaction ID",
                 "noticeTpl": "To receive this loan, please deposit the required collateral. Simply go to your cryptocurrency wallet and send <strong>{collateralAmount} {collateralSymbol}</strong> to the following wallet address. Please complete this action within the next <strong>60 minutes</strong>.",
                 "summarizeContent": "\n          <div name=ref-container\">",
@@ -2793,7 +2793,7 @@
                 "collateralNoteMatchedFee": "Fee: 1%",
                 "yourBalance": "Your current balance is {value} {symbol}",
                 "collateralNoteTotal": "Total loan received: {total} {currency}",
-                "collateralNoteDGXExtraFees": "Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.",
+                "collateralNoteDGXExtraFees": "Digix deducts an additional 0.13% fee on all DGX transfers. This fee will be deducted from your coin balance.",
                 "collateralNoteMatch": "Estimated time to match: {hours} hours",
                 "collateralNoteMatchTime": "The rate you entered will have a longer time of matching, according to our past data. Estimated time of matching {hours} hours {type}.",
                 "collateralNoteMatchNoneTime": "The rate you entered will have a longer time of matching, according to our past data. Estimated time of matching.",
@@ -2877,7 +2877,7 @@
                 "minuteWindowDescription": "For the sake of security, this session will time-out after 60 minutes. If you need a little longer, just re-enter the amount you would like to borrow <a href=\"/borrow\" >here</a>.",
                 "msgInfoManual": "\n          <span>At the moment, {symbol} deposits aren’t automatic, so we need to change your loan status manually. Therefore, please give us <b>up to 12 hours</b> to confirm receipt of your collateral (it's usually much faster).</span>\n          <br />\n          <span>If you have any questions, please email us at hello@myconstant.com or message <a href='https://t.me/@andy_9210'>Andy</a>, our head of customer service, on Telegram.</span>\n          <br />\n          <span>We'll start finding you a match as soon as we receive your collateral.</span>\n        ",
                 "msgInfoAuto": "\n          <span>\n            Once we receive your collateral, your loan status will change from <b>pending</b> to <b>matching</b>. This is usually very fast – around 1 block confirmation – but might take a little longer during busy times. When your status changes, it means we’ve begun finding an investor to accept your terms. We’ll email you as soon as we find you a match.\n          </span>\n        ",
-                "collateralNoteDGXExtraFees": "Digix deduct 0.13% when receiving any amount in DGX, we need to add this fee to preserve the loan amount.",
+                "collateralNoteDGXExtraFees": "Digix deducts an additional 0.13% fee on all DGX transfers. This fee will be deducted from your coin balance.",
                 "transactionID": "transaction ID",
                 "noticeTpl": "Please send <strong>{collateralAmount} {collateralSymbol}</strong> as collateral to the following address within the next <strong>60 minutes</strong>.",
                 "summarizeContent": "\n          <div name=\"ref-container\">\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Loan amount:</span>\n              <span name=\"ref-value\">{loanAmount}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Interested rate:</span>\n              <span name=\"ref-value\">{interestedRate}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Collaterals:</span>\n              <span name=\"ref-value\">{collaterals}</span>\n            </div>\n            <div name=\"ref-item\">\n              <span name=\"ref-label\">Term:</span>\n              <span name=\"ref-value\">{term}</span>\n            </div>\n          </div>\n        ",
@@ -3912,19 +3912,19 @@
         "subTitle": "<h2 class=toolTipMark\">Set your own rates. </h2> ",
         "makeLocalOrderSuccess": "Thanks! Please make a transfer from your bank.",
         "crypto_amount_exists": "Crypto amount exists",
-        "makeLocalOrderFailed": "Failed while creating your order",
+        "makeLocalOrderFailed": "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
         "makeDirectOrderSuccess": "Thanks! Please make a transfer from your bank.",
-        "makeDirectOrderFailed": "Failed while creating your order",
+        "makeDirectOrderFailed": "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
         "makeAchDirectOrderFailed": "Please check your bank details are in order and try again.",
         "makeTrialOrderSuccess": "Congrats! Your trial has been activated.",
-        "makeTrialOrderFailed": "Failed while creating your order",
+        "makeTrialOrderFailed": "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
         "validation_error": "Ensure that there are no more than 10 digits before the decimal point."
     },
     "send": {
         "makeLocalOrderSuccess": "Thanks! Your transfer is now processing.",
-        "makeLocalOrderFailed": "Failed while creating your order",
+        "makeLocalOrderFailed": "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
         "makeDirectOrderSuccess": "Thanks! Your transfer is now processing.",
-        "makeDirectOrderFailed": "Failed while creating your order",
+        "makeDirectOrderFailed": "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
         "transferConfirm": "We've already sent you a verification link by email. Please click this link to approve your transaction.",
         "info": {
             "title": "SEND MONEY",
@@ -3958,9 +3958,9 @@
     },
     "withdraw": {
         "makeLocalOrderSuccess": "Success! Your funds should reach your recipient shortly.",
-        "makeLocalOrderFailed": "Failed while creating your order",
+        "makeLocalOrderFailed": "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
         "makeDirectOrderSuccess": "Success! Your funds should reach your recipient shortly.",
-        "makeDirectOrderFailed": "Failed while creating your order",
+        "makeDirectOrderFailed": "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
         "info": {
             "content": "\n      <p>Withdraw to your local bank.</p>\n      <h2>Withdraw funds to your bank account of choice.</h2>\n      <p />\n      <p>Simply let us know where to send your USD funds to. If you’ve got a different local currency, it’s converted at the real-time market rate. Funds should reach you within 2 business days.</p>\n      <p><strong>Prefer to withdraw stablecoins?</strong> Do so <a href=\"/transfer-crypto\" class=\"underline\">here.</a></p>\n      "
         },
@@ -4061,6 +4061,43 @@
                 "2": "Compounded & paid every second",
                 "3": "Unlimited free withdrawals"
             }
+        },
+        "compareTable": {
+            "title": "Constant vs Saving Accounts",
+            "benefits": "Benefits",
+            "constant": "Constant",
+            "others": "Savings accounts",
+            "interestRate": {
+                "title": "Interest rate",
+                "constant": "4% APY",
+                "others": "Up to 1.7% APY*"
+            },
+            "compounded": {
+                "title": "Compounded",
+                "constant": "Every second",
+                "others": "Every 1-12 months"
+            },
+            "fees": {
+                "title": "Compounded",
+                "constant": "FREE",
+                "others": "Up to $15"
+            },
+            "availability": {
+                "title": "Availability",
+                "constant": "Global",
+                "others": "US only"
+            },
+            "minimumBalance": {
+                "title": "Minimum balance",
+                "constant": "NO",
+                "others": "Up to $2,500"
+            },
+            "protection": {
+                "title": "Protection",
+                "constant": "Collateral",
+                "others": "FDIC deposit insurance"
+            },
+            "description": "* Data taken from first 100 results on <a href=\"https://www.bankrate.com/banking/savings/rates/\" target=\"_blank\" class=\"underline\">https://www.bankrate.com/banking/savings/rates/</a> and correct as of April 29, 2020. "
         }
     },
     "yourSaving": {
@@ -4071,14 +4108,19 @@
             "title1": "\n        <h1>Experience <span class=textSuccess\">fully secured</span> peer-to-peer lending.</h1>",
             "subTitle": "Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.",
             "invest": {
-                "title": "Invest the way you want",
-                "cap": "Start from just $50. Fully secured.",
-                "btn": "Invest"
+                "title": "Invest",
+                "cap": "\n          <p>\n            <strong>7%</strong>\n            <br />\n            Interest Rate\n          </p>\n          <p class=\"clearBottom\">\n            digital collateral-backed\n          </p>\n        ",
+                "btn": "Explore"
             },
             "borrow": {
-                "title": "Borrow the way you want",
-                "cap": "No limit. Set your own fixed rates.",
-                "btn": "Borrow"
+                "title": "Borrow",
+                "cap": "\n          <p>\n            <strong>5% - 20%</strong>\n            <br />\n            Interest Rate\n          </p>\n          <p class=\"clearBottom\">\n            <strong>411 516</strong>\n            <br />\n            Available loans\n          </p>\n        ",
+                "btn": "Explore"
+            },
+            "loanOriginator": {
+                "title": "LO Invest",
+                "cap": "\n          <p>\n            <strong>5% - 20%</strong>\n            <br />\n            Interest Rate\n          </p>\n          <p class=\"clearBottom\">\n            <strong>1 007 235</strong>\n            <br />\n            Available loans\n          </p>\n        ",
+                "btn": "Explore"
             }
         },
         "crypto": {
@@ -5273,63 +5315,6 @@
     "ourPartners": {
         "title": "Our Partners",
         "desc": "We are working closely with"
-    },
-    "ourPress": {
-        "title": "Our Press",
-        "press": {
-            "press1": {
-                "name": "Hacker Noon",
-                "desc": "<p>The traditional loan agreement has been replaced by an unstoppable Ethereum smart contract without any possibility of downtime, fraud, or third-party interference. Fully-secured, blockchain-enabled P2P lending is our contribution to a bankless banking system.</p>"
-            },
-            "press2": {
-                "name": "Coin98",
-                "desc": "<p>Chắc hẳn sẽ có những lúc chúng ta rơi vào hoàn cảnh khi đang HODL một đồng coin nào đó, nhưng lại thấy 1 cơ hội khác trong khi quỹ vốn thì đã hết. Constant sẽ giúp anh em huy động được một lượng cash (tiền mặt) nhất định để vào được kèo mới nhưng không phải cash out (bán) đồng coin đang HODL</p>"
-            },
-            "press3": {
-                "name": "Techworm",
-                "desc": "<p>The best thing about Constant, however, is the security the lending platform has in place. Every loan is fully secured and backed in multiple ways. While on loan it’s protected by borrower collateral, and while waiting to be matched it’s protected by a $130M insurance policy.</p>"
-            },
-            "press4": {
-                "name": "Blockonomi",
-                "desc": "<p>Constant has created a platform that cuts banks out of the lending equation and allows anyone in the world to create loans on whatever terms they like. This is a big shift away from the established lending system, and it could be a big benefit for both borrowers and lenders</p>"
-            },
-            "press5": {
-                "name": "Zero Hedge",
-                "desc": "<p>Lenders can choose their terms, no credit check, and no nonsense – and find borrowers. Programming a system like this using the US banking system, would be expensive, cumbersome, time consuming, and who knows what it might look like after all the regulatory approvals.</p>"
-            },
-            "press6": {
-                "name": "ZyCrypto",
-                "desc": "<p>Constant is different in that users can be confident in the fact that each transaction is fully secured. Every loan is collateral backed. Investor funds are held in escrow accounts when not on loan. This level of security sets Constant apart from other platforms.</p>"
-            },
-            "press7": {
-                "name": "",
-                "desc": "<p>And when it comes to pioneering a new generation of fintech platforms, Constant provides a measuring stick for the industry’s progress.</p>"
-            },
-            "press8": {
-                "name": "",
-                "desc": "<p>And one DeFi platform, Constant, a secured P2P lending startup that leverages smart contracts on Ethereum, has garnered significant traction over the last several months — capitalizing on a unique offering and the technology underscoring the ascendance of open financial protocols.</p>"
-            },
-            "press9": {
-                "name": "",
-                "desc": "<p>Constant works by enabling borrowers to stake liquid capital via over-collateralized crypto assets (e.g., Ether) based on an LTV ratio. Subsequently, borrowers can “cherrypick” the best deals enumerated on Constant’s interface, selecting the best interest rates that are posted independently by each lending peer. The opposite is similar for lenders, who can choose to set custom interest rates and terms, which borrowers can then decide from.</p>"
-            },
-            "press10": {
-                "name": "",
-                "desc": "<p>Constant acts as a trading hub where borrowers and creditors pick the best deal. Moreover, the Redlands, Calif.-based venture allows users to set their own interest rates and terms -- a feature that doesn’t exist anywhere else.</p>"
-            },
-            "press11": {
-                "name": "",
-                "desc": "<p>Constant acts as a trading hub where borrowers and creditors pick the best deal. Moreover, the Redlands, Calif.-based venture allows users to set their own interest rates and terms -- a feature that doesn’t exist anywhere else.</p>"
-            },
-            "press12": {
-                "name": "",
-                "desc": "<p>It's a great service, with free deposits and withdrawals, extremely fast responding customer support and a transparent team.</p>"
-            }
-        },
-        "desc": {
-            "title": "In the News",
-            "content": "We’re proud to feature in many prominent finance and technology publications. From news to reviews, find out what the journalists, pundits, and experts have to say about the Constant peer-to-peer lending platform."
-        }
     },
     "collateralBalance": {
         "balance": "Balance",

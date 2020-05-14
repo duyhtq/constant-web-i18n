@@ -4061,6 +4061,43 @@
                 "2": "%%%.deposit.intro.desc.2%%%",
                 "3": "%%%.deposit.intro.desc.3%%%"
             }
+        },
+        "compareTable": {
+            "title": "%%%.deposit.compareTable.title%%%",
+            "benefits": "%%%.deposit.compareTable.benefits%%%",
+            "constant": "%%%.deposit.compareTable.constant%%%",
+            "others": "%%%.deposit.compareTable.others%%%",
+            "interestRate": {
+                "title": "%%%.deposit.compareTable.interestRate.title%%%",
+                "constant": "%%%.deposit.compareTable.interestRate.constant%%%",
+                "others": "%%%.deposit.compareTable.interestRate.others%%%"
+            },
+            "compounded": {
+                "title": "%%%.deposit.compareTable.compounded.title%%%",
+                "constant": "%%%.deposit.compareTable.compounded.constant%%%",
+                "others": "%%%.deposit.compareTable.compounded.others%%%"
+            },
+            "fees": {
+                "title": "%%%.deposit.compareTable.fees.title%%%",
+                "constant": "%%%.deposit.compareTable.fees.constant%%%",
+                "others": "%%%.deposit.compareTable.fees.others%%%"
+            },
+            "availability": {
+                "title": "%%%.deposit.compareTable.availability.title%%%",
+                "constant": "%%%.deposit.compareTable.availability.constant%%%",
+                "others": "%%%.deposit.compareTable.availability.others%%%"
+            },
+            "minimumBalance": {
+                "title": "%%%.deposit.compareTable.minimumBalance.title%%%",
+                "constant": "%%%.deposit.compareTable.minimumBalance.constant%%%",
+                "others": "%%%.deposit.compareTable.minimumBalance.others%%%"
+            },
+            "protection": {
+                "title": "%%%.deposit.compareTable.protection.title%%%",
+                "constant": "%%%.deposit.compareTable.protection.constant%%%",
+                "others": "%%%.deposit.compareTable.protection.others%%%"
+            },
+            "description": "%%%.deposit.compareTable.description%%%"
         }
     },
     "yourSaving": {
@@ -4079,6 +4116,11 @@
                 "title": "%%%.newHome.banner.borrow.title%%%",
                 "cap": "%%%.newHome.banner.borrow.cap%%%",
                 "btn": "%%%.newHome.banner.borrow.btn%%%"
+            },
+            "loanOriginator": {
+                "title": "%%%.newHome.banner.loanOriginator.title%%%",
+                "cap": "%%%.newHome.banner.loanOriginator.cap%%%",
+                "btn": "%%%.newHome.banner.loanOriginator.btn%%%"
             }
         },
         "crypto": {
@@ -5273,63 +5315,6 @@
     "ourPartners": {
         "title": "%%%.ourPartners.title%%%",
         "desc": "%%%.ourPartners.desc%%%"
-    },
-    "ourPress": {
-        "title": "%%%.ourPress.title%%%",
-        "press": {
-            "press1": {
-                "name": "%%%.ourPress.press.press1.name%%%",
-                "desc": "%%%.ourPress.press.press1.desc%%%"
-            },
-            "press2": {
-                "name": "%%%.ourPress.press.press2.name%%%",
-                "desc": "%%%.ourPress.press.press2.desc%%%"
-            },
-            "press3": {
-                "name": "%%%.ourPress.press.press3.name%%%",
-                "desc": "%%%.ourPress.press.press3.desc%%%"
-            },
-            "press4": {
-                "name": "%%%.ourPress.press.press4.name%%%",
-                "desc": "%%%.ourPress.press.press4.desc%%%"
-            },
-            "press5": {
-                "name": "%%%.ourPress.press.press5.name%%%",
-                "desc": "%%%.ourPress.press.press5.desc%%%"
-            },
-            "press6": {
-                "name": "%%%.ourPress.press.press6.name%%%",
-                "desc": "%%%.ourPress.press.press6.desc%%%"
-            },
-            "press7": {
-                "name": "%%%.ourPress.press.press7.name%%%",
-                "desc": "%%%.ourPress.press.press7.desc%%%"
-            },
-            "press8": {
-                "name": "%%%.ourPress.press.press8.name%%%",
-                "desc": "%%%.ourPress.press.press8.desc%%%"
-            },
-            "press9": {
-                "name": "%%%.ourPress.press.press9.name%%%",
-                "desc": "%%%.ourPress.press.press9.desc%%%"
-            },
-            "press10": {
-                "name": "%%%.ourPress.press.press10.name%%%",
-                "desc": "%%%.ourPress.press.press10.desc%%%"
-            },
-            "press11": {
-                "name": "%%%.ourPress.press.press11.name%%%",
-                "desc": "%%%.ourPress.press.press11.desc%%%"
-            },
-            "press12": {
-                "name": "%%%.ourPress.press.press12.name%%%",
-                "desc": "%%%.ourPress.press.press12.desc%%%"
-            }
-        },
-        "desc": {
-            "title": "%%%.ourPress.desc.title%%%",
-            "content": "%%%.ourPress.desc.content%%%"
-        }
     },
     "collateralBalance": {
         "balance": "%%%.collateralBalance.balance%%%",

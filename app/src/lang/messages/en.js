@@ -5464,9 +5464,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
   },
   newHome: {
     oldBanner: {
-      title1: `
-        <h1>The world’s first <span class="darkorange4">fully secured</span> peer-to-peer lending platform.</h1>
-      `,
+      title1: `<h1>Experience <span class=textSuccess">fully secured</span> peer-to-peer lending.</h1>`,
       subTitle: 'Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.',
       invest: {
         title: 'Invest the way you want',
@@ -5480,9 +5478,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       },
     },
     banner: {
-      title1: `
-        <h1>The world’s first <span class="darkorange4">fully secured</span> peer-to-peer lending platform.</h1>
-      `,
+      title1: `<h1>Experience <span class=textSuccess">fully secured</span> peer-to-peer lending.</h1>`,
       subTitle: 'Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.',
       invest: {
         title: 'Invest',

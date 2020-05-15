@@ -4238,9 +4238,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.yourSaving.hello%%%,"
       <strong>Hello {name}</strong>.<br/>Let's see how your money is doing today.
     "
-%%%.newHome.oldBanner.title1%%%,"
-        <h1>The world’s first <span class=""darkorange4"">fully secured</span> peer-to-peer lending platform.</h1>
-      "
+%%%.newHome.oldBanner.title1%%%,"<h1>Experience <span class=textSuccess"">fully secured</span> peer-to-peer lending.</h1>"
 %%%.newHome.oldBanner.subTitle%%%,"Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free."
 %%%.newHome.oldBanner.invest.title%%%,"Invest the way you want"
 %%%.newHome.oldBanner.invest.cap%%%,"Start from just $50. Fully secured."
@@ -4248,9 +4246,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.newHome.oldBanner.borrow.title%%%,"Borrow the way you want"
 %%%.newHome.oldBanner.borrow.cap%%%,"No limit. Set your own fixed rates."
 %%%.newHome.oldBanner.borrow.btn%%%,"Borrow"
-%%%.newHome.banner.title1%%%,"
-        <h1>The world’s first <span class=""darkorange4"">fully secured</span> peer-to-peer lending platform.</h1>
-      "
+%%%.newHome.banner.title1%%%,"<h1>Experience <span class=textSuccess"">fully secured</span> peer-to-peer lending.</h1>"
 %%%.newHome.banner.subTitle%%%,"Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free."
 %%%.newHome.banner.invest.title%%%,"Invest"
 %%%.newHome.banner.invest.cap%%%,"

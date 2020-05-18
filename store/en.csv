@@ -3437,7 +3437,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.affiliates.whyBecome.title%%%,"Why become an affiliate?"
 %%%.affiliates.whyBecome.desc%%%,"
         <div class=""section-desc-title"">YOU EARN MORE</div>
-        <div><strong>Earn $20 for every US citizen who registers</strong>, paid instantly after they pass KYC, and with no limits.</div>
+        <div><strong>Earn $20 for every US citizen who registers</strong>, paid instantly after they make their first deposit, and with no limits.</div>
         <div><strong>Then earn 20% of their Flex interest</strong>, paid every second, and capped at a generous $1,000,000.</div>
         <div><strong>Your referee also gets $10</strong> when they pass KYC. </div>
       "
@@ -3459,7 +3459,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.affiliates.howItWorks.data.0.title%%%," "
 %%%.affiliates.howItWorks.data.0.desc%%%,"Referee clicks your unique affiliate link."
 %%%.affiliates.howItWorks.data.1.title%%%," "
-%%%.affiliates.howItWorks.data.1.desc%%%,"Referee signs up and passes KYC."
+%%%.affiliates.howItWorks.data.1.desc%%%,"Referee signs up, passes KYC, and makes their first deposit (min $10)."
 %%%.affiliates.howItWorks.data.2.title%%%," "
 %%%.affiliates.howItWorks.data.2.desc%%%,"You get $20 paid instantly to your Constant account."
 %%%.affiliates.howItWorks.data.3.title%%%," "
@@ -3506,10 +3506,10 @@ Exchange margin accounts typically only use the price on that exchange, so you c
         <p>7. To qualify for affiliate earnings, your referees must be US citizens.</p>
         <p>8. Constant reserves the right to change the terms of the affiliate program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p>
       "
-%%%.affiliates.faqs.0.question%%%,"What is the Constant Affiliate Program?"
+%%%.affiliates.faqs.0.question%%%,"What is the Constant affiliate program?"
 %%%.affiliates.faqs.0.answer%%%,"
           <p>
-          The Constant Affiliate Program rewards you for referring people to Constant through your website, service, or platform. For every person who signs up using your referral link, you’ll earn a $20 bonus, paid immediately upon them passing KYC. You’ll also earn 20% of their Flex earnings, paid every second, and capped at $1,000,000.
+          The Constant Affiliate Program rewards you for referring people to Constant through your website, service, or platform. For every person who signs up using your referral link, you’ll earn a $20 bonus, paid immediately upon them making their first deposit (minimum $10). You’ll also earn 20% of their Flex earnings, paid every second, and capped at $1,000,000.
           </p>
           <p>
           We track your referrals using cookies with a 30-day lifespan. If someone clicks your affiliate link and signs up within a 30-day period, you’ll earn the bonus and commission – even if they don’t sign up immediately. Of course, should your referee clear their cookies, we won’t be able to track them, so please bear this in mind. You want people to sign up as soon as possible.

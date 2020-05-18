@@ -4365,7 +4365,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       title: 'Why become an affiliate?',
       desc: `
         <div class="section-desc-title">YOU EARN MORE</div>
-        <div><strong>Earn $20 for every US citizen who registers</strong>, paid instantly after they pass KYC, and with no limits.</div>
+        <div><strong>Earn $20 for every US citizen who registers</strong>, paid instantly after they make their first deposit, and with no limits.</div>
         <div><strong>Then earn 20% of their Flex interest</strong>, paid every second, and capped at a generous $1,000,000.</div>
         <div><strong>Your referee also gets $10</strong> when they pass KYC. </div>
       `,
@@ -4403,7 +4403,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         },
         1: {
           title: ' ',
-          desc: 'Referee signs up and passes KYC.'
+          desc: 'Referee signs up, passes KYC, and makes their first deposit (min $10).'
         },
         2: {
           title: ' ',
@@ -4478,10 +4478,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     faqs: {
       desc: 'Unlike traditional P2P platforms that prey on vulnerable borrowers and expect investors to shoulder the risk, Constant is designed to protect them both.',
       0: {
-        question: 'What is the Constant Affiliate Program?',
+        question: 'What is the Constant affiliate program?',
         answer: `
           <p>
-          The Constant Affiliate Program rewards you for referring people to Constant through your website, service, or platform. For every person who signs up using your referral link, you’ll earn a $20 bonus, paid immediately upon them passing KYC. You’ll also earn 20% of their Flex earnings, paid every second, and capped at $1,000,000.
+          The Constant Affiliate Program rewards you for referring people to Constant through your website, service, or platform. For every person who signs up using your referral link, you’ll earn a $20 bonus, paid immediately upon them making their first deposit (minimum $10). You’ll also earn 20% of their Flex earnings, paid every second, and capped at $1,000,000.
           </p>
           <p>
           We track your referrals using cookies with a 30-day lifespan. If someone clicks your affiliate link and signs up within a 30-day period, you’ll earn the bonus and commission – even if they don’t sign up immediately. Of course, should your referee clear their cookies, we won’t be able to track them, so please bear this in mind. You want people to sign up as soon as possible.

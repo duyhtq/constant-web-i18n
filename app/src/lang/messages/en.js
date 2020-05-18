@@ -1032,7 +1032,7 @@ export default {
         5: 'Redeeming',
         6: 'Cancelled',
         7: 'Successful',
-        8: 'Holding',
+        8: 'In progress',
         11: 'Transfer failed',
         12: 'Waiting Approving',
         13: 'Waiting Approving',
@@ -2325,6 +2325,10 @@ export default {
         accountName: 'Account Name:',
         bankName: 'Bank name',
         accountNumber: 'Account Number:',
+        routingNumberWire: 'Routing Number Wire',
+        swiftCode: 'Swift Code',
+        accountType: 'Account Type',
+        accountAddress: 'Account Address',
         amount: 'Amount:',
         yourTopupAmount:'Topup Amount',
         collateralBalance:'Your Balance',
@@ -2874,9 +2878,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       intro: {
         content: `
         <p>Borrow the way you want</p>
-        <h2>Set your own rates.</h2>
-        <h2>Borrow against 60+ cryptocurrencies.</h2>
-        <h2>Get cash for crypto without needing to sell.</h2>
+        <p class="h1">Set your own rates.</p>
+        <p class="h1">Borrow against 60+ cryptocurrencies.</p>
+        <h1>Get cash for crypto without needing to sell.</h1>
         <p/>
         <p>Get the funds you need at rates you’re willing to pay. Your collateral is securely escrowed and is automatically returned to you when you repay. Free withdrawals in cash or stablecoins. </p>
         `,
@@ -2947,21 +2951,21 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       },
       what: {
         title: 'Why borrow with us?',
-        whatCaption0: 'Instant loans',
-        whatCaption1: 'Crypto for cash',
-        whatCaption2: '2% annualized interest',
-        whatCaption3: 'Guaranteed approval',
+        whatCaption0: 'Set your own rates',
+        whatCaption1: 'Protected by Ethereum',
+        whatCaption2: 'Secure escrow',
+        whatCaption3: 'No credit scoring',
         whatDesc0: `
-          <p>Our loan mechanism is secured and automated by smart contracts. No lengthy processing times - the money you need is in your account within the hour.</p>
+          <p>Our P2P matching algorithm replaces centralized banks and allows you to tap into true market demand.</p>
         `,
         whatDesc1: `
-          <p>Secure your loan with BTC or ETH and receive USD - all without needing to sell your crypto. Enjoy liquidity without needing to liquidate.</p>
+          <p>Loans secured by Ethereum (ETH) are protected by smart contracts that always run exactly as programmed.</p>
         `,
         whatDesc2: `
-          <p>Borrow as much as you want, and take as long as you need. Enjoy flexible repayments and the kindest interest rate on the market.</p>
+          <p>Smart contracts and insured BitGo custody protect your collateral while ensuring we can return it to you as quickly as possible.</p>
         `,
         whatDesc3: `
-          <p>Constant is for everyone. No credit scoring, background checks or month-long waiting games for approval.</p>
+          <p>No credit scoring or background checks. Get funds instantly, no month-long waiting games for approval.</p>
         `,
       },
       howItWorks: {
@@ -2971,17 +2975,17 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           <p>Need cash? We accept major cryptocurrencies as collateral, in exchange for USD or the equivalent in your local currency. That means you’ll have cash to spend - without needing to sell your crypto.</p>
         `,
         step1: 'STEP 1',
-        title1: 'ENTER AN AMOUNT',
+        title1: '1. Set your own terms',
         desc1:
-          'How much do you want to borrow? Tell us how much, in your currency of choice.',
+          'Choose how much you want to borrow and for how long, then enter the interest rate you want to pay.',
         step2: 'STEP 2',
-        title2: 'CHOOSE A COLLATERAL AND A TERM',
+        title2: '2. Wait to be matched',
         desc2:
-          'Secure your loan with BTC or ETH as collateral. Our calculator will tell you how much you need. Then just pick a loan term you feel comfortable with.',
+          'The Constant matching algorithm finds investors that can lend you the money you need at the rates you want.',
         step3: 'STEP 3',
-        title3: 'GET CASH TO SPEND',
+        title3: '3. Get cash to spend',
         desc3:
-          'Within the hour, your USD loan will be accessible from your Constant Flexible Account. Withdraw anytime, to any other bank account.',
+          'Once you’ve found a match, you’ll receive the loan in your account. ETH collateral is securely escrowed in a smart contract, while all other collateral is held in a BitGo cold wallet insured to $100M. Collateral will be automatically returned when you repay.',
       },
       reference: `
         <div name="ref-container">
@@ -3469,9 +3473,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       intro: {
         content: `
         <p>Fast and easy crypto credit</p>
-        <h2>Trade the margin.</h2>
-        <h2>Skip the exchange.</h2>
-        <h2>Borrow against 60+ cryptos.</h2>
+        <h1>Trade the margin.</h1>
+        <p class="h1">Skip the exchange.</p>
+        <p class="h1">Borrow against 60+ cryptos.</p>
         <p/>
         <p>Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.</p>
       `,
@@ -5330,8 +5334,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
   deposit: {
     contentHtml: `
       <p>Do more with your money</p>
-      <h2>Enjoy 50x better interest</h2>
-      <h2>than a savings account<sup>*</sup>.</h2>
+      <h1>Enjoy 50x better interest<br/>than a savings account<sup>*</sup>.</h1>
       <p/>
       <p>Earn {interest}% APY on any amount. You deposit, we lend on your behalf, and you keep the interest. All loans secured by collateral and you can withdraw anytime for free. Grow your money without locking it in.</p>
       <p><sup>*</sup>Comparison based on data from <a href=https://www.valuepenguin.com/banking/average-bank-interest-rates">ValuePenguin</a>.</p>
@@ -5464,7 +5467,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
   },
   newHome: {
     oldBanner: {
-      title1: `<h1>Experience <span class=textSuccess">fully secured</span> peer-to-peer lending.</h1>`,
+      title1: `Experience <span class=textSuccess">fully secured</span> peer-to-peer lending.`,
       subTitle: 'Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.',
       invest: {
         title: 'Invest the way you want',
@@ -5478,7 +5481,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       },
     },
     banner: {
-      title1: `<h1>Experience <span class=textSuccess">fully secured</span> peer-to-peer lending.</h1>`,
+      title1: `Experience <span class=textSuccess">fully secured</span> peer-to-peer lending.`,
       subTitle: 'Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.',
       invest: {
         title: 'Invest',
@@ -5790,13 +5793,13 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       intro: {
         content: `
           <p>Invest the way you want</p>
-          <h2>Set your own rates.</h2>
-           <h2>Invest from $50.</h2>
-           <h2>Invest only in secured loans.</h2>
-           <p />
-           <p>
-           Your investments are fully backed by borrower collateral. Unmatched portions earn an automatic 4% APY, and can be withdrawn anytime.
-           </p>
+          <h1>Set your own rates.</h1>
+          <p class="h1">Invest from $50.</p>
+          <p class="h1">Invest only in secured loans.</p>
+          <p />
+          <p>
+          Your investments are fully backed by borrower collateral. Unmatched portions earn an automatic 4% APY, and can be withdrawn anytime.
+          </p>
         `,
         desc: {
           1: 'Fully secured by collateral',
@@ -6933,8 +6936,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     stakingFromTitle: 'Start staking',
     contentHtml: `
         <p>Stake and earn</p>
-        <h2>Get up to {reward}% APR</h2>
-        <h2>on your cryptocurrencies.</h2>
+        <h1>Get up to {reward}% APR<br/>on your cryptocurrencies.</h1>
         <p />
         <p>Join our staking pool for up to {reward}% APR. Interest paid every 30 minutes. Low minimum stake. No fees. Withdraw anytime. Staking has never been this easy.</p>
     `,
@@ -7034,7 +7036,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     what: {
       title: 'Why stake with us?',
       1: {
-        caption: 'No minimum stake',
+        caption: 'Low minimum stake',
         desc: 'Join a masternode pool instead of raising the minimum stake alone. Enjoy the rewards no matter how much crypto you own.'
       },
       2: {
@@ -8319,8 +8321,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       },
       status: {
         matching: 'Matching',
-        pending: 'Pending',
-        picked: 'Order in progress',
+        pending: 'Confirming',
+        picked: 'In progress',
         transferred_fiat: 'Your account will be credited once we have received your transfer.',
         transferred_fiat_invest: 'Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.',
         transferred: 'Successful',

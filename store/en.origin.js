@@ -5357,6 +5357,7 @@
         "staking": "%%%.collateralBalance.staking%%%",
         "autoStake": "%%%.collateralBalance.autoStake%%%",
         "autoStakeDesc": "%%%.collateralBalance.autoStakeDesc%%%",
+        "autoStakeDescPRV": "%%%.collateralBalance.autoStakeDescPRV%%%",
         "autoStakeConfirm": {
             "true": "%%%.collateralBalance.autoStakeConfirm.true%%%",
             "false": "%%%.collateralBalance.autoStakeConfirm.false%%%",

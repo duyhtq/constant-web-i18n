@@ -7079,7 +7079,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     deposit: 'Deposit',
     staking: 'Stake',
     autoStake: 'Auto-Stake',
-    autoStakeDesc: 'Auto-stake adds rewards above {amount} {currency} back into the staking pool. This compounding your interest, giving you an effective rate of 64% APR. Enable this if you want to earn even more interest on your {currency}.',
+    autoStakeDesc: 'Auto-stake automatically adds staking rewards above {amount} {currency} back into the staking pool. Enable this if you want to earn even more interest on your {currency}.',
+    autoStakeDescPRV: 'Auto-stake adds rewards above {amount} {currency} back into the staking pool. This compounding your interest, giving you an effective rate of {percent}% APR. Enable this if you want to earn even more interest on your {currency}.',
     autoStakeConfirm: {
       true: 'Auto-staking enabled. Once you’ve earned at least {amount} {currency}, auto-stake will transfer your rewards to the staking pool so you earn even more interest.',
       false: 'Are you sure you want to turn off auto stake?',

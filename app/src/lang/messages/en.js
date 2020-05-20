@@ -2837,7 +2837,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       `,
         question3: 'How do you protect my collateral?',
         answer3: `
-        <p>Depending on your collateral, it’s held safely in either BitGo custody, an Ethereum smart contract, or a password-protected web wallet hosted on a dedicated server (to which only our CEO and CTO have access). When you repay, your collateral is immediately transferred back to you.</p>
+        <p>Depending on your collateral, it’s held safely in either Prime Trust custody, an Ethereum smart contract, or a password-protected web wallet hosted on a dedicated server (to which only our CEO and CTO have access). When you repay, your collateral is immediately transferred back to you.</p>
         <p><a href="https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral" className="underline" target="_blank">How we protect your collateral.</a></p>
       `,
         question4: 'What happens if I don’t repay the loan?',
@@ -2962,7 +2962,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           <p>Loans secured by Ethereum (ETH) are protected by smart contracts that always run exactly as programmed.</p>
         `,
         whatDesc2: `
-          <p>Smart contracts and insured BitGo custody protect your collateral while ensuring we can return it to you as quickly as possible.</p>
+          <p>Smart contracts and Prime Trust custody protect your collateral while ensuring we can return it to you as quickly as possible.</p>
         `,
         whatDesc3: `
           <p>No credit scoring or background checks. Get funds instantly, no month-long waiting games for approval.</p>
@@ -2985,7 +2985,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         step3: 'STEP 3',
         title3: '3. Get cash to spend',
         desc3:
-          'Once you’ve found a match, you’ll receive the loan in your account. ETH collateral is securely escrowed in a smart contract, while all other collateral is held in a BitGo cold wallet insured to $100M. Collateral will be automatically returned when you repay.',
+          'Once you’ve found a match, you’ll receive the loan in your account. ETH collateral is securely escrowed in a smart contract, while supported collateral is held in Prime Trust cold storage. Collateral will be automatically returned when you repay.',
       },
       reference: `
         <div name="ref-container">
@@ -5532,7 +5532,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     },
     crypto: {
       bitGo: '$100M escrow insurance',
-      desc: 'Fully secured, fully backed. All loans and investments are protected by a combination of FDIC insurance, Ethereum smart contracts, and crypto collateral.'
+      desc: 'Fully secured, fully backed. All lending is secured by crypto collateral. Smart contracts and Prime Trust custody protect collateral until it’s returned to you.'
     },
     faqs: {
       question1: 'What is peer-to-peer (P2P) lending?',
@@ -5556,7 +5556,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       question4: 'How does Constant protect customers’ assets?',
       answer4: `
         <p>All loans are 150% (minimum) backed by collateral put up by borrowers. If borrowers default or their collateral falls too much in value, the collateral is sold to repay investors.</p>
-        <p>In addition, we use insured custodial partners (Prime Trust and BitGo) to manage both fiat (USD) and digital assets. This additional layer of protection helps minimize the threat of theft, mismanagement, or loss of your assets.</p>
+        <p>In addition, we use qualified custodial partners (Prime Trust) to manage both fiat (USD) and digital assets. This additional layer of protection helps minimize the threat of theft, mismanagement, or loss of your assets.</p>
         <p><a href="https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral" class="underline" target="_blank">Read more about how we protect your assets.</a></p>
       `,
     },
@@ -5568,7 +5568,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           title: '1. Investor', desc: 'Investors deposit any amount and choose the interest rate they want to earn.',
         },
         2: {
-          title: '2. Secure escrow', desc: 'Borrower collateral is securely escrowed in either a smart contract (ETH only), web wallet, or cold wallet.'
+          title: '2. Secure escrow', desc: 'Borrower collateral is either securely escrowed in an Ethereum smart contract or held in a cold wallet with our qualified custodian, Prime Trust.'
         },
         3: {
           title: '3. Borrower', desc: 'Borrowers choose how much interest they want to pay, and put down collateral equal to 150% of what they want to borrow.'
@@ -5587,7 +5587,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       },
       item1: {
         title: 'Collateral protection for borrowers',
-        desc: 'Borrower collateral is stored safely in a smart contract escrow, powered by the Ethereum network. This runs exactly as programmed, independent from human intervention - no one can touch these assets. As long as borrowers repay, they will always get their collateral back.',
+        desc: 'Ethereum (ETH) collateral is stored in a smart contract that always runs exactly as programmed. All other collateral is held in a Prime Trust cold wallet. So no matter what happens to the Constant platform, borrower collateral is secure.',
       },
     },
   },
@@ -5895,6 +5895,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         routingNumberAch: 'Routing number for ACH',
         routingNumberWire: 'Routing number for Wire',
         routingNumberACHWire: 'Routing number for ACH & Wire',
+        bankPhone: 'Bank phone',
         value: 'Value',
         amount: 'Amount',
         reference: 'Reference',
@@ -6032,6 +6033,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
             placeholder: 'Please enter the email here',
             submitButton: 'Submit',
             referNoteDesc: 'To streamline the deposit process, please include this reference number when sending your money using PayPal.',
+          },
+          '-6': {
+            referNoteDesc: 'To streamline the deposit process, please include this reference number when making the bank transfer.',
           },
         },
         zelle: `
@@ -8499,7 +8503,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       linkedin: {
         title: 'Linkedin',
         link: 'https://www.linkedin.com/company/constantp2p/'
-      }
+      },
     },
-  }
+  },
 };

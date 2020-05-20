@@ -5173,15 +5173,20 @@
             "keyword": "%%%.seo.withdraw.keyword%%%",
             "description": "%%%.seo.withdraw.description%%%"
         },
+        "cryptoCredit": {
+            "title": "%%%.seo.cryptoCredit.title%%%",
+            "keyword": "%%%.seo.cryptoCredit.keyword%%%",
+            "description": "%%%.seo.cryptoCredit.description%%%"
+        },
         "sendCrypto": {
             "title": "%%%.seo.sendCrypto.title%%%",
             "keyword": "%%%.seo.sendCrypto.keyword%%%",
             "description": "%%%.seo.sendCrypto.description%%%"
         },
-        "aboutUS": {
-            "title": "%%%.seo.aboutUS.title%%%",
-            "keyword": "%%%.seo.aboutUS.keyword%%%",
-            "description": "%%%.seo.aboutUS.description%%%"
+        "aboutUs": {
+            "title": "%%%.seo.aboutUs.title%%%",
+            "keyword": "%%%.seo.aboutUs.keyword%%%",
+            "description": "%%%.seo.aboutUs.description%%%"
         },
         "pricing": {
             "title": "%%%.seo.pricing.title%%%",

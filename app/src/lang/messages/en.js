@@ -5086,6 +5086,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     s5: 'Repaid',
   },
   exchangeInputDepositForm: {
+    maxAmountRequired: 'Please enter an amount smaller than {amount} {currency}',
     minAmountRequired: 'Please enter an amount larger than {amount} {currency}',
     minDepositRequired: 'Please enter an amount larger than {amount} {currency}',
     minUsdRequired: 'Please enter an amount larger than 0.01 USD',
@@ -6904,7 +6905,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     aboutUs: {
       title: 'Our Story - The Leading Fully Secured Peer-to-Peer Lending Platform',
       keyword: 'lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online',
-      description: 'Learn about Constant and our mission to help you do more with your money though our fully secured peer-to-peer lending platform. Constant: an online investment platform that puts customers first.',
+      description: 'Learn about Constant and our mission to help you do more with your money though our fully secured peer-to-peer lending platform. Constant: an online investment platform that puts customers first.',
     },
     pricing: {
       title: 'Pricing and Service Times - Peer-to-Peer Lending Platform - Constant',

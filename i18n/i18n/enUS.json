@@ -2342,7 +2342,7 @@
                 "question2": "Do you check my credit score?",
                 "answer2": "\n        <p>As we only offer secured loans backed by collateral, there is no need for credit scoring. All you need is adequate collateral to secure your loan. To see how much collateral you need to secure your loan, simply enter the amount you’d like to borrow. The calculator will work out the amount for you.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-to-borrow-against-crypto-4-simple-steps\" className=\"underline\" target=\"_blank\">How to borrow in 4 simple steps.</a></p>\n      ",
                 "question3": "How do you protect my collateral?",
-                "answer3": "\n        <p>Depending on your collateral, it’s held safely in either BitGo custody, an Ethereum smart contract, or a password-protected web wallet hosted on a dedicated server (to which only our CEO and CTO have access). When you repay, your collateral is immediately transferred back to you.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral\" className=\"underline\" target=\"_blank\">How we protect your collateral.</a></p>\n      ",
+                "answer3": "\n        <p>Depending on your collateral, it’s held safely in either Prime Trust custody, an Ethereum smart contract, or a password-protected web wallet hosted on a dedicated server (to which only our CEO and CTO have access). When you repay, your collateral is immediately transferred back to you.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral\" className=\"underline\" target=\"_blank\">How we protect your collateral.</a></p>\n      ",
                 "question4": "What happens if I don’t repay the loan?",
                 "answer4": "If you don’t repay the loan, your collateral will be sold to repay your investor. You get to keep the loan. That’s it.",
                 "question5": "What happens if my crypto collateral falls in value?",
@@ -2428,7 +2428,7 @@
                 "whatCaption3": "No credit scoring",
                 "whatDesc0": "\n          <p>Our P2P matching algorithm replaces centralized banks and allows you to tap into true market demand.</p>\n        ",
                 "whatDesc1": "\n          <p>Loans secured by Ethereum (ETH) are protected by smart contracts that always run exactly as programmed.</p>\n        ",
-                "whatDesc2": "\n          <p>Smart contracts and insured BitGo custody protect your collateral while ensuring we can return it to you as quickly as possible.</p>\n        ",
+                "whatDesc2": "\n          <p>Smart contracts and Prime Trust custody protect your collateral while ensuring we can return it to you as quickly as possible.</p>\n        ",
                 "whatDesc3": "\n          <p>No credit scoring or background checks. Get funds instantly, no month-long waiting games for approval.</p>\n        "
             },
             "howItWorks": {
@@ -2442,7 +2442,7 @@
                 "desc2": "The Constant matching algorithm finds investors that can lend you the money you need at the rates you want.",
                 "step3": "STEP 3",
                 "title3": "3. Get cash to spend",
-                "desc3": "Once you’ve found a match, you’ll receive the loan in your account. ETH collateral is securely escrowed in a smart contract, while all other collateral is held in a BitGo cold wallet insured to $100M. Collateral will be automatically returned when you repay."
+                "desc3": "Once you’ve found a match, you’ll receive the loan in your account. ETH collateral is securely escrowed in a smart contract, while supported collateral is held in Prime Trust cold storage. Collateral will be automatically returned when you repay."
             },
             "reference": "\n        <div name=ref-container\">",
             "transaction": {
@@ -4143,7 +4143,7 @@
         },
         "crypto": {
             "bitGo": "$100M custody insurance",
-            "desc": "Fully secured, fully backed. All lending is secured by crypto collateral. Smart contracts and BitGo custody protect collateral until it’s returned to you."
+            "desc": "Fully secured, fully backed. All lending is secured by crypto collateral. Smart contracts and Prime Trust custody protect collateral until it’s returned to you."
         },
         "faqs": {
             "question1": "What is peer-to-peer (P2P) lending?",
@@ -4153,7 +4153,7 @@
             "question3": "Who can participate?",
             "answer3": "\n        <p>Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment). If you intend to invest fiat (USD), you will also need to pass KYC (Know Your Customer) checks.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-to-verify-your-id-on-constant-kyc\" class=\"underline\" target=\"_blank\">How to verify your ID (KYC).</a></p>\n      ",
             "question4": "How does Constant protect customers’ assets?",
-            "answer4": "\n        <p>All loans are 150% (minimum) backed by collateral put up by borrowers. If borrowers default or their collateral falls too much in value, the collateral is sold to repay investors.</p>\n        <p>In addition, we use insured custodial partners (Prime Trust and BitGo) to manage both fiat (USD) and digital assets. This additional layer of protection helps minimize the threat of theft, mismanagement, or loss of your assets.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral\" class=\"underline\" target=\"_blank\">Read more about how we protect your assets.</a></p>\n      "
+            "answer4": "\n        <p>All loans are 150% (minimum) backed by collateral put up by borrowers. If borrowers default or their collateral falls too much in value, the collateral is sold to repay investors.</p>\n        <p>In addition, we use qualified custodial partners (Prime Trust) to manage both fiat (USD) and digital assets. This additional layer of protection helps minimize the threat of theft, mismanagement, or loss of your assets.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral\" class=\"underline\" target=\"_blank\">Read more about how we protect your assets.</a></p>\n      "
         },
         "howItWorks": {
             "title": "How it works.",
@@ -4165,7 +4165,7 @@
                 },
                 "2": {
                     "title": "2. Secure escrow",
-                    "desc": "Borrower collateral is either securely escrowed in an Ethereum smart contract or held in a BitGo cold wallet insured to $100M."
+                    "desc": "Borrower collateral is either securely escrowed in an Ethereum smart contract or held in a cold wallet with our qualified custodian, Prime Trust."
                 },
                 "3": {
                     "title": "3. Borrower",
@@ -4186,7 +4186,7 @@
             },
             "item1": {
                 "title": "Collateral protection for borrowers",
-                "desc": "Ethereum (ETH) collateral is stored in a smart contract that always runs exactly as programmed. All other collateral is held in a BitGo cold wallet that’s insured to $100M. So no matter what happens to the Constant platform, borrower collateral is secure."
+                "desc": "Ethereum (ETH) collateral is stored in a smart contract that always runs exactly as programmed. All other collateral is held in a Prime Trust cold wallet. So no matter what happens to the Constant platform, borrower collateral is secure."
             }
         }
     },
@@ -4430,6 +4430,7 @@
                 "routingNumberAch": "Routing number for ACH",
                 "routingNumberWire": "Routing number for Wire",
                 "routingNumberACHWire": "Routing number for ACH & Wire",
+                "bankPhone": "Bank phone",
                 "value": "Value",
                 "amount": "Amount",
                 "reference": "Reference",
@@ -4484,6 +4485,9 @@
                         "placeholder": "Please enter the email here",
                         "submitButton": "Submit",
                         "referNoteDesc": "To streamline the deposit process, please include this reference number when sending your money using PayPal."
+                    },
+                    "-6": {
+                        "referNoteDesc": "To streamline the deposit process, please include this reference number when making the bank transfer."
                     }
                 },
                 "zelle": "\n          <p>Amount: {amount} USD</p>\n          <p>Send to: <strong>finance@myconstant.com</strong></p>\n          <p>Full name: <strong>Const LLC</strong></p>\n          <p>Type: <strong>Personal Account</strong></p>\n          <br /><br />\n          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>\n          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n        ",

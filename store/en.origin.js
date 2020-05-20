@@ -3815,6 +3815,7 @@
         "s5": "%%%.statistics.s5%%%"
     },
     "exchangeInputDepositForm": {
+        "maxAmountRequired": "%%%.exchangeInputDepositForm.maxAmountRequired%%%",
         "minAmountRequired": "%%%.exchangeInputDepositForm.minAmountRequired%%%",
         "minDepositRequired": "%%%.exchangeInputDepositForm.minDepositRequired%%%",
         "minUsdRequired": "%%%.exchangeInputDepositForm.minUsdRequired%%%",

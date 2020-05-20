@@ -4430,6 +4430,7 @@
                 "routingNumberAch": "%%%.home1.lendingSection.confirm.routingNumberAch%%%",
                 "routingNumberWire": "%%%.home1.lendingSection.confirm.routingNumberWire%%%",
                 "routingNumberACHWire": "%%%.home1.lendingSection.confirm.routingNumberACHWire%%%",
+                "bankPhone": "%%%.home1.lendingSection.confirm.bankPhone%%%",
                 "value": "%%%.home1.lendingSection.confirm.value%%%",
                 "amount": "%%%.home1.lendingSection.confirm.amount%%%",
                 "reference": "%%%.home1.lendingSection.confirm.reference%%%",
@@ -4484,6 +4485,9 @@
                         "placeholder": "%%%.home1.lendingSection.confirm.paymentMethods.-5.placeholder%%%",
                         "submitButton": "%%%.home1.lendingSection.confirm.paymentMethods.-5.submitButton%%%",
                         "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.-5.referNoteDesc%%%"
+                    },
+                    "-6": {
+                        "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.-6.referNoteDesc%%%"
                     }
                 },
                 "zelle": "%%%.home1.lendingSection.confirm.zelle%%%",

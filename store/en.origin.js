@@ -2249,7 +2249,6 @@
             "transferFailed": "%%%.home.transfer.transferFailed%%%",
             "transferSuccessful": "%%%.home.transfer.transferSuccessful%%%",
             "transferConfirm": "%%%.home.transfer.transferConfirm%%%",
-            "twoFaRequired": "%%%.home.transfer.twoFaRequired%%%",
             "verifyEmailRequired": "%%%.home.transfer.verifyEmailRequired%%%",
             "timeLimit": "%%%.home.transfer.timeLimit%%%",
             "timeLimitMunite": "%%%.home.transfer.timeLimitMunite%%%",
@@ -2307,7 +2306,6 @@
             "transferFailed": "%%%.home.transferCrypto.transferFailed%%%",
             "transferSuccessful": "%%%.home.transferCrypto.transferSuccessful%%%",
             "transferConfirm": "%%%.home.transferCrypto.transferConfirm%%%",
-            "twoFaRequired": "%%%.home.transferCrypto.twoFaRequired%%%",
             "verifyEmailRequired": "%%%.home.transferCrypto.verifyEmailRequired%%%",
             "timeLimitInWorkingTime": "%%%.home.transferCrypto.timeLimitInWorkingTime%%%",
             "timeLimit": "%%%.home.transferCrypto.timeLimit%%%",
@@ -3286,6 +3284,11 @@
                     "withdraw": "%%%.components.dialog.checkTrialKyc.action.withdraw%%%",
                     "transfer": "%%%.components.dialog.checkTrialKyc.action.transfer%%%"
                 }
+            },
+            "require2Fa": {
+                "message": "%%%.components.dialog.require2Fa.message%%%",
+                "cancel": "%%%.components.dialog.require2Fa.cancel%%%",
+                "enable": "%%%.components.dialog.require2Fa.enable%%%"
             }
         }
     },
@@ -3874,7 +3877,6 @@
         "toAWallet": "%%%.exchangeInputSellForm.toAWallet%%%",
         "walletAddr": "%%%.exchangeInputSellForm.walletAddr%%%",
         "input2FA": "%%%.exchangeInputSellForm.input2FA%%%",
-        "twoFaRequired": "%%%.exchangeInputSellForm.twoFaRequired%%%",
         "withdrawFailed": "%%%.exchangeInputSellForm.withdrawFailed%%%",
         "withdrawSuccessful": "%%%.exchangeInputSellForm.withdrawSuccessful%%%",
         "countryNotSupport": "%%%.exchangeInputSellForm.countryNotSupport%%%",
@@ -3923,7 +3925,8 @@
         "makeAchDirectOrderFailed": "%%%.saving.makeAchDirectOrderFailed%%%",
         "makeTrialOrderSuccess": "%%%.saving.makeTrialOrderSuccess%%%",
         "makeTrialOrderFailed": "%%%.saving.makeTrialOrderFailed%%%",
-        "validation_error": "%%%.saving.validation_error%%%"
+        "validation_error": "%%%.saving.validation_error%%%",
+        "invalid_amount": "%%%.saving.invalid_amount%%%"
     },
     "send": {
         "makeLocalOrderSuccess": "%%%.send.makeLocalOrderSuccess%%%",
@@ -4779,8 +4782,7 @@
                 "withdrawFailed": "%%%.proLending.balances.withdrawFrom.withdrawFailed%%%",
                 "withdrawFailedSameAddress": "%%%.proLending.balances.withdrawFrom.withdrawFailedSameAddress%%%",
                 "withdrawSuccess": "%%%.proLending.balances.withdrawFrom.withdrawSuccess%%%",
-                "transferConfirm": "%%%.proLending.balances.withdrawFrom.transferConfirm%%%",
-                "twoFaRequired": "%%%.proLending.balances.withdrawFrom.twoFaRequired%%%"
+                "transferConfirm": "%%%.proLending.balances.withdrawFrom.transferConfirm%%%"
             }
         },
         "deposits": {

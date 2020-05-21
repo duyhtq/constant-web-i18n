@@ -2698,10 +2698,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       transferFailed: 'Failed while transfering, please try again',
       transferSuccessful: 'Your transfer was completed successfully',
       transferConfirm: `We've already sent you a verification link by email. Please click this link to approve your transaction.`,
-      twoFaRequired: `
-        <p><span class="bold">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href="/me/securities" class="underline bold">here</a> or go to Setting > Account security > enable Google Authentication.</p>
-        <p>If you have problems, email <a href="mailto://hello@myconstant.com">hello@myconstant.com</a>.</p>
-      `,
       verifyEmailRequired: `
       <p>You need to verify your email to do this action.</p>
       <p>Please verify your email <a href="/me/information" class="underline bold">here</a>.</p>
@@ -2784,10 +2780,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       transferFailed: 'Failed while transfering, please try again',
       transferSuccessful: 'Your transfer was completed successfully',
       transferConfirm: `We've already sent you a verification link by email. Please click this link to approve your transaction.`,
-      twoFaRequired: `
-        <p><span class="bold">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href="/me/securities" class="underline bold">here</a> or go to Setting > Account security > enable Google Authentication.</p>
-        <p>If you have problems, email <a href="mailto://hello@myconstant.com">hello@myconstant.com</a>.</p>
-      `,
       verifyEmailRequired: `
       <p>You need to verify your email to do this action.</p>
       <p>Please verify your email <a href="/me/information" class="underline bold">here</a>.</p>
@@ -4189,6 +4181,14 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           transfer: 'making a transfer'
         }
       },
+      require2Fa: {
+        message: `
+          <p><span class="bold">Action required:</span> For your security, we now require all accounts to enable 2-Factor Authorization (2FA). Please enable this now from your settings menu.</p>
+          <p>If you have any problems, please email <a href="mailto://hello@myconstant.com">hello@myconstant.com</a>.</p>
+        `,
+        cancel: 'Close',
+        enable: 'Enable 2FA now',
+      }
     }
   },
   pageNotFound: {
@@ -5152,10 +5152,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     toAWallet: 'To an ETH/EOS wallet',
     walletAddr: 'Ethereum/EOS wallet address',
     input2FA: 'Input 2FA',
-    twoFaRequired: `
-      <p><span class="bold">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href="/me/securities" class="underline bold">here</a> or go to Setting > Account security > enable Google Authentication.</p>
-      <p>If you have problems, email <a href="mailto://hello@myconstant.com">hello@myconstant.com</a>.</p>
-    `,
     withdrawFailed: 'Something went wrong. Please try again.',
     withdrawSuccessful: 'Your withdrawal was completed successfully.',
     countryNotSupport: 'Your country is not supported at the moment. Our support team will get in touch with you via email.',
@@ -5224,7 +5220,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       'Please check your bank details are in order and try again.',
     makeTrialOrderSuccess: 'Your order was created successfully',
     makeTrialOrderFailed: 'Sorry, we couldn\'t create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.',
-    validation_error: 'Ensure that there are no more than 10 digits before the decimal point.'
+    validation_error: 'Ensure that there are no more than 10 digits before the decimal point.',
+    invalid_amount: 'Invalid amount, please check your amount and try again',
   },
   send: {
     makeLocalOrderSuccess: 'Your order was created successfully',
@@ -6452,10 +6449,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         withdrawFailedSameAddress: 'Unable to withdraw to the same wallet address.',
         withdrawSuccess: 'Your withdrawal was completed successfully',
         transferConfirm: `We've already sent you a verification link by email. Please click this link to approve your transaction.`,
-        twoFaRequired: `
-          <p><span class="bold">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href="/me/securities" class="underline bold">here</a> or go to Setting > Account security > enable Google Authentication.</p>
-          <p>If you have problems, email <a href="mailto://hello@myconstant.com">hello@myconstant.com</a>.</p>
-        `,
       }
     },
     deposits: {

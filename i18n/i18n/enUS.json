@@ -2249,7 +2249,6 @@
             "transferFailed": "Failed while transfering, please try again",
             "transferSuccessful": "Your transfer was completed successfully",
             "transferConfirm": "We've already sent you a verification link by email. Please click this link to approve your transaction.",
-            "twoFaRequired": "\n        <p><span class=\"bold\">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=\"/me/securities\" class=\"underline bold\">here</a> or go to Setting > Account security > enable Google Authentication.</p>\n        <p>If you have problems, email <a href=\"mailto://hello@myconstant.com\">hello@myconstant.com</a>.</p>\n      ",
             "verifyEmailRequired": "\n      <p>You need to verify your email to do this action.</p>\n      <p>Please verify your email <a href=\"/me/information\" class=\"underline bold\">here</a>.</p>\n      ",
             "timeLimit": "Your money will arrive within ",
             "timeLimitMunite": "minutes",
@@ -2307,7 +2306,6 @@
             "transferFailed": "Failed while transfering, please try again",
             "transferSuccessful": "Your transfer was completed successfully",
             "transferConfirm": "We've already sent you a verification link by email. Please click this link to approve your transaction.",
-            "twoFaRequired": "\n        <p><span class=\"bold\">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=\"/me/securities\" class=\"underline bold\">here</a> or go to Setting > Account security > enable Google Authentication.</p>\n        <p>If you have problems, email <a href=\"mailto://hello@myconstant.com\">hello@myconstant.com</a>.</p>\n      ",
             "verifyEmailRequired": "\n      <p>You need to verify your email to do this action.</p>\n      <p>Please verify your email <a href=\"/me/information\" class=\"underline bold\">here</a>.</p>\n      ",
             "timeLimitInWorkingTime": "Your money will arrive within 1 hour",
             "timeLimit": "Your money will arrive within ",
@@ -3286,6 +3284,11 @@
                     "withdraw": "making a withdrawal",
                     "transfer": "making a transfer"
                 }
+            },
+            "require2Fa": {
+                "message": "\n          <p><span class=\"bold\">Action required:</span> For your security, we now require all accounts to enable 2-Factor Authorization (2FA). Please enable this now from your settings menu.</p>\n          <p>If you have any problems, please email <a href=\"mailto://hello@myconstant.com\">hello@myconstant.com</a>.</p>\n        ",
+                "cancel": "Close",
+                "enable": "Enable 2FA now"
             }
         }
     },
@@ -3874,7 +3877,6 @@
         "toAWallet": "To an ETH/EOS wallet",
         "walletAddr": "Ethereum/EOS wallet address",
         "input2FA": "Input 2FA",
-        "twoFaRequired": "\n      <p><span class=\"bold\">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=\"/me/securities\" class=\"underline bold\">here</a> or go to Setting > Account security > enable Google Authentication.</p>\n      <p>If you have problems, email <a href=\"mailto://hello@myconstant.com\">hello@myconstant.com</a>.</p>\n    ",
         "withdrawFailed": "Something went wrong. Please try again.",
         "withdrawSuccessful": "Your withdrawal was completed successfully.",
         "countryNotSupport": "Your country is not supported at the moment. Our support team will get in touch with you via email.",
@@ -3923,7 +3925,8 @@
         "makeAchDirectOrderFailed": "Please check your bank details are in order and try again.",
         "makeTrialOrderSuccess": "Congrats! Your trial has been activated.",
         "makeTrialOrderFailed": "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
-        "validation_error": "Ensure that there are no more than 10 digits before the decimal point."
+        "validation_error": "Ensure that there are no more than 10 digits before the decimal point.",
+        "invalid_amount": "Invalid amount, please check your amount and try again"
     },
     "send": {
         "makeLocalOrderSuccess": "Thanks! Your transfer is now processing.",
@@ -4779,8 +4782,7 @@
                 "withdrawFailed": "Something's not right. Please try again.",
                 "withdrawFailedSameAddress": "Unable to withdraw to the same wallet address.",
                 "withdrawSuccess": "Withdrawal successful.",
-                "transferConfirm": "We've already sent you a verification link by email. Please click this link to approve your transaction.",
-                "twoFaRequired": "\n          <p><span class=\"bold\">Urgent action required:</span> Due to a recent security incident, your account has been frozen until you enable 2-Factor Authorization. Please enable this now at <a href=\"/me/securities\" class=\"underline bold\">here</a> or go to Setting > Account security > enable Google Authentication.</p>\n          <p>If you have problems, email <a href=\"mailto://hello@myconstant.com\">hello@myconstant.com</a>.</p>\n        "
+                "transferConfirm": "We've already sent you a verification link by email. Please click this link to approve your transaction."
             }
         },
         "deposits": {

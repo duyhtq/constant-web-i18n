@@ -1252,7 +1252,8 @@
                     "undefined": "%%%.me.proSaving.listApplications.termStatus.undefined%%%",
                     "picked": "%%%.me.proSaving.listApplications.termStatus.picked%%%",
                     "voiding": "%%%.me.proSaving.listApplications.termStatus.voiding%%%",
-                    "voided": "%%%.me.proSaving.listApplications.termStatus.voided%%%"
+                    "voided": "%%%.me.proSaving.listApplications.termStatus.voided%%%",
+                    "locked": "%%%.me.proSaving.listApplications.termStatus.locked%%%"
                 },
                 "interestInfo": {
                     "header": {
@@ -3931,6 +3932,7 @@
     "send": {
         "makeLocalOrderSuccess": "%%%.send.makeLocalOrderSuccess%%%",
         "makeLocalOrderFailed": "%%%.send.makeLocalOrderFailed%%%",
+        "zelleOverLimit": "%%%.send.zelleOverLimit%%%",
         "makeDirectOrderSuccess": "%%%.send.makeDirectOrderSuccess%%%",
         "makeDirectOrderFailed": "%%%.send.makeDirectOrderFailed%%%",
         "transferConfirm": "%%%.send.transferConfirm%%%",

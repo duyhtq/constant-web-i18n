@@ -1441,6 +1441,7 @@ export default {
           picked: 'Pending',
           voiding: 'Selling',
           voided: 'Sold',
+          locked: 'Verifying'
         },
         interestInfo: {
           header: {
@@ -1856,7 +1857,7 @@ export default {
       registerButton: 'Sign up for free',
       forgetPassword: 'Forgot password?',
       requiredPassword: 'Please enter your password',
-      loginFailureCaptchaV2: 'please check I\'m not a robot.',
+      loginFailureCaptchaV2: 'Please check I\'m not a robot.',
       notValidPassword: 'Password must be 8 characters or more',
       notValidUsername: 'Invalid email address',
       requiredUsername: 'Please enter your email',
@@ -5226,6 +5227,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
   send: {
     makeLocalOrderSuccess: 'Your order was created successfully',
     makeLocalOrderFailed: 'Sorry, we couldn\'t create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.',
+    zelleOverLimit: 'Sorry, we\'ve reached our Zelle transaction limit. Please try again later or choose another withdraw method.',
     makeDirectOrderSuccess: 'Your order was created successfully',
     makeDirectOrderFailed: 'Sorry, we couldn\'t create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.',
     transferConfirm: `We've already sent you a verification link by email. Please click this link to approve your transaction.`,

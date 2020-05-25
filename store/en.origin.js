@@ -300,6 +300,7 @@
             "transferUserNotFound": "%%%.error.serverCode.transferUserNotFound%%%",
             "userInfoInvalidKycPreValidate": "%%%.error.serverCode.userInfoInvalidKycPreValidate%%%",
             "cannotTransferToYourSelf": "%%%.error.serverCode.cannotTransferToYourSelf%%%",
+            "violateBonusPolicy": "%%%.error.serverCode.violateBonusPolicy%%%",
             "invalidUserType": "%%%.error.serverCode.invalidUserType%%%",
             "emailDoesntExist": "%%%.error.serverCode.emailDoesntExist%%%",
             "needToSignIn": "%%%.error.serverCode.needToSignIn%%%",

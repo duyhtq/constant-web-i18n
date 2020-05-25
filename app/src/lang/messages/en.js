@@ -309,6 +309,7 @@ export default {
       userInfoInvalidKycPreValidate:
         'We could not verify you with the information you uploaded. Please try again.',
       cannotTransferToYourSelf: 'Please enter a recipient other than yourself.',
+      violateBonusPolicy: 'Your bonus can\'t be withdrawn for 30 days. This gives you time to try our platform and make some money through our Flex account.',
       invalidUserType:
         'Oops we can\'t find you. Please enter your email address again.',
       emailDoesntExist:
@@ -6276,7 +6277,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       maximum_invitation_email: 'Maximun invitation emails'
     },
     editReferral: {
-      success: 'Update referral code successfully',
+      success: 'Your referral code has been updated successfully',
       failed: 'Update referral code failed',
       duplicated: 'Sorry, someone has already created that referral code. Please choose another.',
     },

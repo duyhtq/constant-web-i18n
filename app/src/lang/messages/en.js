@@ -219,7 +219,7 @@ export default {
     borrowCoin: 'Crypto Credit <sup>NEW</sup>',
     borrowCoinDesc: 'Borrow cash, get crypto. No exchanges.',
     staking: 'Staking',
-    stakingDesc: 'Earn 6-50% APR on a Constant node. Low minimums. Withdraw anytime.',
+    stakingDesc: 'Earn 6-35% APR on a Constant node. Low minimums. Withdraw anytime.',
   },
   headerBar: {
     home: 'Home',
@@ -260,8 +260,8 @@ export default {
       },
       investStaking: {
         title: 'Crypto Staking',
-        desc: '6%-50% APR. Low minimums. Withdraw anytime.',
-        descHotFix: '6%-50% APR. Low minimums. Withdraw anytime.',
+        desc: '6%-35% APR. Low minimums. Withdraw anytime.',
+        descHotFix: '6%-35% APR. Low minimums. Withdraw anytime.',
       },
       borrowFiat: {
         title: 'Crypto-backed Loans',
@@ -310,6 +310,7 @@ export default {
         'We could not verify you with the information you uploaded. Please try again.',
       cannotTransferToYourSelf: 'Please enter a recipient other than yourself.',
       violateBonusPolicy: 'Your bonus can\'t be withdrawn for 30 days. This gives you time to try our platform and make some money through our Flex account.',
+      invalidBankAccountName: 'For your security, the beneficiary name must match the name you registered when signing up with Constant. Please enter a different name or email hello@myconstant.com if you need help',
       invalidUserType:
         'Oops we can\'t find you. Please enter your email address again.',
       emailDoesntExist:
@@ -2413,7 +2414,7 @@ export default {
         btnChangeText: 'Change',
         achCheckType: 'Ach Check Type',
         yourBanks: 'Your banks',
-        addNewBank: 'Enter new bank',
+        addNewBank: 'Add a new bank account',
         emptyBank: 'Empty bank',
         openYourBank: 'Click here to open your banks',
         BeneficiaryAddressStreet1: 'Beneficiary Street 1',
@@ -5229,6 +5230,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     makeLocalOrderSuccess: 'Your order was created successfully',
     makeLocalOrderFailed: 'Sorry, we couldn\'t create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.',
     zelleOverLimit: 'Sorry, we\'ve reached our Zelle transaction limit. Please try again later or choose another withdraw method.',
+    invalidBankAccountName: 'For your security, the beneficiary name must match the name you registered when signing up with Constant. Please enter a different name or email hello@myconstant.com if you need help',
     makeDirectOrderSuccess: 'Your order was created successfully',
     makeDirectOrderFailed: 'Sorry, we couldn\'t create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.',
     transferConfirm: `We've already sent you a verification link by email. Please click this link to approve your transaction.`,

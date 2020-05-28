@@ -258,6 +258,10 @@
                 "desc": "%%%.headerBar.extraMenu.investStaking.desc%%%",
                 "descHotFix": "%%%.headerBar.extraMenu.investStaking.descHotFix%%%"
             },
+            "investFlexCrypto": {
+                "title": "%%%.headerBar.extraMenu.investFlexCrypto.title%%%",
+                "desc": "%%%.headerBar.extraMenu.investFlexCrypto.desc%%%"
+            },
             "borrowFiat": {
                 "title": "%%%.headerBar.extraMenu.borrowFiat.title%%%",
                 "desc": "%%%.headerBar.extraMenu.borrowFiat.desc%%%"
@@ -331,7 +335,8 @@
             "undefined": "%%%.error.serverCode.undefined%%%",
             "loginFailure": "%%%.error.serverCode.loginFailure%%%",
             "loginFailureCaptchaV2": "%%%.error.serverCode.loginFailureCaptchaV2%%%",
-            "stakingRequireMinTerm": "%%%.error.serverCode.stakingRequireMinTerm%%%"
+            "stakingRequireMinTerm": "%%%.error.serverCode.stakingRequireMinTerm%%%",
+            "reserveNotEnough": "%%%.error.serverCode.reserveNotEnough%%%"
         },
         "withdrawGreaterThan": "%%%.error.withdrawGreaterThan%%%",
         "withdrawLessThanOrEqual": "%%%.error.withdrawLessThanOrEqual%%%",
@@ -403,7 +408,9 @@
             "openOrders": "%%%.me.navigation.openOrders%%%",
             "interests": "%%%.me.navigation.interests%%%",
             "accountActivities": "%%%.me.navigation.accountActivities%%%",
-            "staking": "%%%.me.navigation.staking%%%"
+            "staking": "%%%.me.navigation.staking%%%",
+            "fiat": "%%%.me.navigation.fiat%%%",
+            "crypto": "%%%.me.navigation.crypto%%%"
         },
         "wallet": {
             "title": "%%%.me.wallet.title%%%",
@@ -1986,6 +1993,8 @@
                 "accountType": "%%%.home.convert.buy.accountType%%%",
                 "accountAddress": "%%%.home.convert.buy.accountAddress%%%",
                 "amount": "%%%.home.convert.buy.amount%%%",
+                "minAmount": "%%%.home.convert.buy.minAmount%%%",
+                "flexRate": "%%%.home.convert.buy.flexRate%%%",
                 "yourTopupAmount": "%%%.home.convert.buy.yourTopupAmount%%%",
                 "collateralBalance": "%%%.home.convert.buy.collateralBalance%%%",
                 "collateralRequired": "%%%.home.convert.buy.collateralRequired%%%",
@@ -1996,11 +2005,14 @@
                 "buyDepositThankMsg": "%%%.home.convert.buy.buyDepositThankMsg%%%",
                 "buyCryptoThankMsg": "%%%.home.convert.buy.buyCryptoThankMsg%%%",
                 "buyCryptoDepositThankMsg": "%%%.home.convert.buy.buyCryptoDepositThankMsg%%%",
+                "buyFlexCryptoDepositThankMsg": "%%%.home.convert.buy.buyFlexCryptoDepositThankMsg%%%",
                 "importantMsg": "%%%.home.convert.buy.importantMsg%%%",
                 "important": "%%%.home.convert.buy.important%%%",
                 "dgxFeeMsg": "%%%.home.convert.buy.dgxFeeMsg%%%",
                 "thankYou": "%%%.home.convert.buy.thankYou%%%",
                 "minuteWindow": "%%%.home.convert.buy.minuteWindow%%%",
+                "minuteWindowCryptoInvest": "%%%.home.convert.buy.minuteWindowCryptoInvest%%%",
+                "minuteWindowDescriptionCryptoInvest": "%%%.home.convert.buy.minuteWindowDescriptionCryptoInvest%%%",
                 "minuteWindowDescription": "%%%.home.convert.buy.minuteWindowDescription%%%",
                 "minuteWindowDepositDescription": "%%%.home.convert.buy.minuteWindowDepositDescription%%%",
                 "minuteWindowDescriptionDGX": "%%%.home.convert.buy.minuteWindowDescriptionDGX%%%"
@@ -3831,7 +3843,9 @@
         "amountResultLabel": "%%%.exchangeInputDepositForm.amountResultLabel%%%",
         "submitBtn": {
             "depositNow": "%%%.exchangeInputDepositForm.submitBtn.depositNow%%%",
-            "depositWithAmount": "%%%.exchangeInputDepositForm.submitBtn.depositWithAmount%%%"
+            "depositWithAmount": "%%%.exchangeInputDepositForm.submitBtn.depositWithAmount%%%",
+            "growMore": "%%%.exchangeInputDepositForm.submitBtn.growMore%%%",
+            "startEarning": "%%%.exchangeInputDepositForm.submitBtn.startEarning%%%"
         },
         "noAgentAvaiable": "%%%.exchangeInputDepositForm.noAgentAvaiable%%%",
         "amountTooSmall": "%%%.exchangeInputDepositForm.amountTooSmall%%%",
@@ -3842,10 +3856,9 @@
         "todayRate": "%%%.exchangeInputDepositForm.todayRate%%%",
         "todayRateValues": "%%%.exchangeInputDepositForm.todayRateValues%%%",
         "howMuchDoYouWantToDeposit": "%%%.exchangeInputDepositForm.howMuchDoYouWantToDeposit%%%",
-        "formDesc": "%%%.exchangeInputDepositForm.formDesc%%%",
-        "depositForWithdraw": "%%%.exchangeInputDepositForm.depositForWithdraw%%%",
-        "warningCryptoBelowLimit": "%%%.exchangeInputDepositForm.warningCryptoBelowLimit%%%",
-        "warningCryptoOverLimit": "%%%.exchangeInputDepositForm.warningCryptoOverLimit%%%"
+        "howMuchDoYouWantToInvest": "%%%.exchangeInputDepositForm.howMuchDoYouWantToInvest%%%",
+        "minDepositAmount": "%%%.exchangeInputDepositForm.minDepositAmount%%%",
+        "interestRate": "%%%.exchangeInputDepositForm.interestRate%%%"
     },
     "exchangeInputSellForm": {
         "amountResult": {
@@ -4111,6 +4124,51 @@
                 "others": "%%%.deposit.compareTable.protection.others%%%"
             },
             "description": "%%%.deposit.compareTable.description%%%"
+        }
+    },
+    "depositCrypto": {
+        "contentHtml": "%%%.depositCrypto.contentHtml%%%",
+        "learnMore": "%%%.depositCrypto.learnMore%%%",
+        "intro": {
+            "desc": {
+                "1": "%%%.depositCrypto.intro.desc.1%%%",
+                "2": "%%%.depositCrypto.intro.desc.2%%%",
+                "3": "%%%.depositCrypto.intro.desc.3%%%"
+            }
+        },
+        "whyInvest": {
+            "0": {
+                "caption": "%%%.depositCrypto.whyInvest.0.caption%%%",
+                "desc": "%%%.depositCrypto.whyInvest.0.desc%%%"
+            },
+            "1": {
+                "caption": "%%%.depositCrypto.whyInvest.1.caption%%%",
+                "desc": "%%%.depositCrypto.whyInvest.1.desc%%%"
+            },
+            "2": {
+                "caption": "%%%.depositCrypto.whyInvest.2.caption%%%",
+                "desc": "%%%.depositCrypto.whyInvest.2.desc%%%"
+            },
+            "3": {
+                "caption": "%%%.depositCrypto.whyInvest.3.caption%%%",
+                "desc": "%%%.depositCrypto.whyInvest.3.desc%%%"
+            },
+            "title": "%%%.depositCrypto.whyInvest.title%%%"
+        },
+        "howItWorks": {
+            "0": {
+                "caption": "%%%.depositCrypto.howItWorks.0.caption%%%",
+                "desc": "%%%.depositCrypto.howItWorks.0.desc%%%"
+            },
+            "1": {
+                "caption": "%%%.depositCrypto.howItWorks.1.caption%%%",
+                "desc": "%%%.depositCrypto.howItWorks.1.desc%%%"
+            },
+            "2": {
+                "caption": "%%%.depositCrypto.howItWorks.2.caption%%%",
+                "desc": "%%%.depositCrypto.howItWorks.2.desc%%%"
+            },
+            "title": "%%%.depositCrypto.howItWorks.title%%%"
         }
     },
     "yourSaving": {
@@ -4569,7 +4627,9 @@
             "question7": "%%%.home1.faqs.question7%%%",
             "answer7": "%%%.home1.faqs.answer7%%%",
             "question8": "%%%.home1.faqs.question8%%%",
-            "answer8": "%%%.home1.faqs.answer8%%%"
+            "answer8": "%%%.home1.faqs.answer8%%%",
+            "question9": "%%%.home1.faqs.question9%%%",
+            "answer9": "%%%.home1.faqs.answer9%%%"
         }
     },
     "landingPro": {
@@ -4754,6 +4814,7 @@
         "watchBoard": {
             "invested": "%%%.proLending.watchBoard.invested%%%",
             "borrowed": "%%%.proLending.watchBoard.borrowed%%%",
+            "reserves": "%%%.proLending.watchBoard.reserves%%%",
             "investments": "%%%.proLending.watchBoard.investments%%%",
             "borrows": "%%%.proLending.watchBoard.borrows%%%",
             "voidInvestmentBorrows": "%%%.proLending.watchBoard.voidInvestmentBorrows%%%",
@@ -4766,7 +4827,8 @@
             "interest": "%%%.proLending.watchBoard.interest%%%",
             "term": "%%%.proLending.watchBoard.term%%%",
             "termValues": "%%%.proLending.watchBoard.termValues%%%",
-            "matched": "%%%.proLending.watchBoard.matched%%%"
+            "matched": "%%%.proLending.watchBoard.matched%%%",
+            "termMonth": "%%%.proLending.watchBoard.termMonth%%%"
         },
         "balances": {
             "collateralBalances": "%%%.proLending.balances.collateralBalances%%%",
@@ -5114,41 +5176,6 @@
         "btnInvestments": "%%%.menuMobile.btnInvestments%%%",
         "btnLoans": "%%%.menuMobile.btnLoans%%%",
         "btnSecondaryMarket": "%%%.menuMobile.btnSecondaryMarket%%%"
-    },
-    "airdrop": {
-        "endedTitle": "%%%.airdrop.endedTitle%%%",
-        "endDesc": "%%%.airdrop.endDesc%%%",
-        "title": "%%%.airdrop.title%%%",
-        "subTitle": "%%%.airdrop.subTitle%%%",
-        "cta": {
-            "text": "%%%.airdrop.cta.text%%%",
-            "action": "%%%.airdrop.cta.action%%%",
-            "steps": {
-                "title": "%%%.airdrop.cta.steps.title%%%",
-                "step1": "%%%.airdrop.cta.steps.step1%%%",
-                "step2": "%%%.airdrop.cta.steps.step2%%%",
-                "step3": "%%%.airdrop.cta.steps.step3%%%"
-            }
-        },
-        "howItWorks": "%%%.airdrop.howItWorks%%%",
-        "compaignEndDesc": "%%%.airdrop.compaignEndDesc%%%",
-        "faqsTitle": "%%%.airdrop.faqsTitle%%%",
-        "faqs": {
-            "question1": "%%%.airdrop.faqs.question1%%%",
-            "answer1": "%%%.airdrop.faqs.answer1%%%",
-            "question2": "%%%.airdrop.faqs.question2%%%",
-            "answer2": "%%%.airdrop.faqs.answer2%%%",
-            "question3": "%%%.airdrop.faqs.question3%%%",
-            "answer3": "%%%.airdrop.faqs.answer3%%%",
-            "question4": "%%%.airdrop.faqs.question4%%%",
-            "answer4": "%%%.airdrop.faqs.answer4%%%",
-            "question5": "%%%.airdrop.faqs.question5%%%",
-            "answer5": "%%%.airdrop.faqs.answer5%%%",
-            "question6": "%%%.airdrop.faqs.question6%%%",
-            "answer6": "%%%.airdrop.faqs.answer6%%%",
-            "question7": "%%%.airdrop.faqs.question7%%%",
-            "answer7": "%%%.airdrop.faqs.answer7%%%"
-        }
     },
     "seo": {
         "homepage": {
@@ -6484,6 +6511,27 @@
                 "payoffDate": "%%%.history.borrow.headers.payoffDate%%%",
                 "date": "%%%.history.borrow.headers.date%%%",
                 "status": "%%%.history.borrow.headers.status%%%"
+            }
+        },
+        "depositCrypto": {
+            "title": "%%%.history.depositCrypto.title%%%",
+            "noHistoryData": "%%%.history.depositCrypto.noHistoryData%%%",
+            "received": "%%%.history.depositCrypto.received%%%",
+            "tabs": {
+                "crypto": "%%%.history.depositCrypto.tabs.crypto%%%",
+                "openOrders": "%%%.history.depositCrypto.tabs.openOrders%%%"
+            },
+            "headers": {
+                "orderNo": "%%%.history.depositCrypto.headers.orderNo%%%",
+                "amount": "%%%.history.depositCrypto.headers.amount%%%",
+                "address": "%%%.history.depositCrypto.headers.address%%%",
+                "date": "%%%.history.depositCrypto.headers.date%%%",
+                "status": "%%%.history.depositCrypto.headers.status%%%",
+                "action": "%%%.history.depositCrypto.headers.action%%%"
+            },
+            "status": {
+                "pending": "%%%.history.depositCrypto.status.pending%%%",
+                "done": "%%%.history.depositCrypto.status.done%%%"
             }
         }
     },

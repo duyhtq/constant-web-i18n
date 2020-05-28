@@ -263,6 +263,10 @@ export default {
         desc: '6%-35% APR. Low minimums. Withdraw anytime.',
         descHotFix: '6%-35% APR. Low minimums. Withdraw anytime.',
       },
+      investFlexCrypto: {
+        title: 'Crypto Lend',
+        desc: 'Get 10% APY on BTC, ETH, and BNB. Fully backed by Constant.',
+      },
       borrowFiat: {
         title: 'Crypto-backed Loans',
         desc: 'Your rates. Your terms. No credit checks.',
@@ -344,7 +348,8 @@ export default {
       undefined: 'Opps! Something went wrong, please try again',
       loginFailure: 'Please make sure your email and password are correct.',
       loginFailureCaptchaV2: 'Something went wrong please try again',
-      stakingRequireMinTerm: 'Since you staked your collateral to reduce the interest on your loan, you can’t un-stake until your loan matures.'
+      stakingRequireMinTerm: 'Since you staked your collateral to reduce the interest on your loan, you can’t un-stake until your loan matures.',
+      reserveNotEnough: 'Sorry, we can\'t create your order at the moment. Please contact us at hello@myconstant.com and we\'ll help fix this issue for you.'
     },
     withdrawGreaterThan: 'The minimum withdrawal amount is {min}',
     withdrawLessThanOrEqual: 'The maximum withdrawal amount is {max}',
@@ -416,7 +421,9 @@ export default {
       openOrders: 'Open Orders',
       interests: 'Interests',
       accountActivities: 'Account Activity',
-      staking: 'Staking history'
+      staking: 'Staking history',
+      fiat: 'Fiat',
+      crypto: 'Crypto',
     },
     wallet: {
       title: 'This is your wallet address you could send Constant to',
@@ -2332,7 +2339,9 @@ export default {
         swiftCode: 'Swift Code',
         accountType: 'Account Type',
         accountAddress: 'Account Address',
-        amount: 'Amount:',
+        amount: 'Amount',
+        minAmount: 'Minimum investment amount',
+        flexRate: 'Interest rate',
         yourTopupAmount:'Topup Amount',
         collateralBalance:'Your Balance',
         collateralRequired:'Collateral Required',
@@ -2347,12 +2356,16 @@ export default {
           'Please transfer {fiatAmount} {fiatCurrency} to the following wallet address to complete your investment.',
         buyCryptoDepositThankMsg:
           'Please transfer {fiatAmount} {fiatCurrency} to the following wallet address to complete your deposit.',
+        buyFlexCryptoDepositThankMsg:
+          'Please transfer a minimum of {fiatAmount} {fiatCurrency} to the following wallet address to start earning interest.',
         importantMsg:
           'Do include your reference number {referenceNumber} in the transfer description.',
         important: 'IMPORTANT',
         dgxFeeMsg: '(includes the 0.13% DGX transfer fee)',
         thankYou: 'Thank you!',
         minuteWindow: '15 MINUTE WINDOW:',
+        minuteWindowCryptoInvest: 'Send your cryptocurrency now to start earning interest',
+        minuteWindowDescriptionCryptoInvest: 'For the sake of security, this order will time-out after 6 hours. If you need a little longer, just re-enter the amount you’d like to invest when you’re ready.',
         minuteWindowDescription:
           'Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled.',
         minuteWindowDepositDescription: 'For the sake of security, this session will time-out after 12 hours. If you need a little longer, just re-enter the amount you would like to deposit when you’re ready.',
@@ -2820,9 +2833,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     },
     constantLoan: {
       faqs: {
-        question1: 'How long will it take to find a match?',
+        question1: 'How long will it take to get my loan?',
         answer1: `
-        <p>This depends on the rates and terms you set. Market levels normally result in immediate (or near-immediate) matches, so we update the market rates on the website regularly. If you choose a lower interest rate, it might take a little longer to find you a suitable match. After you've found a match, the loan will be available in your account within 24 hours (slightly longer for larger amounts).</p>
+        <p>As soon as we receive your collateral, we’ll deposit your loan into your Constant account. You can withdraw your loan as fiat to your bank account or as a stablecoin to your wallet address. All withdrawals are free.</p>
         <p><a href="https://www.myconstant.com/blog/how-to-borrow-against-crypto-4-simple-steps" className="underline" target="_blank">How to borrow in 4 simple steps.</a></p>
       `,
         question2: 'Do you check my credit score?',
@@ -2832,7 +2845,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       `,
         question3: 'How do you protect my collateral?',
         answer3: `
-        <p>Depending on your collateral, it’s held safely in either Prime Trust custody, an Ethereum smart contract, or a password-protected web wallet hosted on a dedicated server (to which only our CEO and CTO have access). When you repay, your collateral is immediately transferred back to you.</p>
+        <p>Depending on your collateral, it’s either held safely in Prime Trust custody, an Ethereum smart contract, or a password-protected web wallet hosted on a dedicated server (to which only our CEO and CTO have access). When you repay, your collateral is immediately transferred back to you.</p>
         <p><a href="https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral" className="underline" target="_blank">How we protect your collateral.</a></p>
       `,
         question4: 'What happens if I don’t repay the loan?',
@@ -5100,6 +5113,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     submitBtn: {
       depositNow: 'Start growing',
       depositWithAmount: 'Start growing {fiatAmount} {fiatCurrency}',
+      growMore: 'Earn more',
+      startEarning: 'Start earning'
     },
     noAgentAvaiable:
       'Please be patient with us, we’re trying to keep up. Try a smaller amount, or try again later.',
@@ -5112,13 +5127,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     todayRate: 'Today’s rate.',
     todayRateValues: '{rate}% APY',
     howMuchDoYouWantToDeposit: 'HOW MUCH DO YOU WANT TO DEPOSIT? ',
-    formDesc:
-      'Constant stores your money across 20 banks insured up to $250,000 each. That means you’re covered up to $5,000,000.',
-    depositForWithdraw:
-    'Please make sure you have sufficient funds in your account to complete the transfer.<br/>' +
-    'To make a transfer of ${amount}, please deposit sufficient funds.',
-    warningCryptoBelowLimit: 'It might take up to 30 minutes to update your balance. Thank you for your patience.',
-    warningCryptoOverLimit: ' As your deposit is over {amount}, it might take up to 1 business day to approve. We’re working to reduce this delay, and in the meantime, thank you for your patience.',
+    howMuchDoYouWantToInvest: 'Which cryptocurrency would you like to invest?',
+    minDepositAmount: 'Minimum investment amount: {amount}',
+    interestRate: 'Interest rate: {interest}% APY',
   },
   exchangeInputSellForm: {
     amountResult: {
@@ -5463,6 +5474,57 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         `* Data taken from first 100 results on <a href="https://www.bankrate.com/banking/savings/rates/" target="_blank" class="underline">https://www.bankrate.com/banking/savings/rates/</a> and correct as of April 29, 2020. `,
     },
   },
+  depositCrypto: {
+    contentHtml: `
+      <p>Secured crypto lending</p>
+      <h1>Earn {interest}% APY on BTC, ETH, and BNB.<br/>Compounded and paid every second.<br/>Backed by Constant.</h1>
+      <p/>
+      <p>Invest your idle cryptocurrencies for a return of {interest}% APY. All lending is backed by Constant Guarantee<sup>1</sup> and you can withdraw anytime for free. No fees. No lock-ups. Compounded every second.</p>
+      <p><sup>1</sup>The Constant Guarantee is a $3,000,000 fund that underwrites all investments in Crypto Lend, protecting you from losses.</p>
+    `,
+    learnMore: 'Learn more here',
+    intro: {
+      desc: {
+        1: 'All lending 100% backed by Constant',
+        2: 'Interest compounded and paid every second',
+        3: 'Unlimited free withdrawals',
+      }
+    },
+    whyInvest: {
+      title: 'Why invest with us?',
+      0: {
+        caption: 'Immediate growth',
+        desc: `<p>Watch your crypto grow, second by second, from the moment you invest.</p>`
+      },
+      1: {
+        caption: 'Earn on idle assets',
+        desc: `<p>Keep earning between trades with a generous {interest}% APY on your idle cryptos.</p>`
+      },
+      2: {
+        caption: 'No fees',
+        desc: `<p>We don’t charge you a penny to invest, withdraw, or deposit (though you might pay network fees to send your crypto).</p>`
+      },
+      3: {
+        caption: 'Withdraw anytime',
+        desc: `<p>Withdraw your cryptocurrency instantly whenever you need it. No fees and no limits.</p>`
+      },
+    },
+    howItWorks: {
+      title: 'How it works',
+      0: {
+        caption: 'Deposit your crypto',
+        desc: `<p>Send your crypto to our lending pool and we’ll redistribute it among our trusted exchange partners, including the Incognito pDEX.</p>`
+      },
+      1: {
+        caption: 'Earn {interest}% APY',
+        desc: `<p>Your crypto provides liquidity to exchange and swapping partners and you earn a cut of their trading fees – a generous {interest}% APY backed by the Constant Guarantee.</p>`
+      },
+      2: {
+        caption: 'Watch your crypto grow',
+        desc: `<p>Interest is compounded and paid every second, giving you immediate returns. When you’re ready, withdraw again to a wallet of your choice absolutely free.</p>`
+      },
+    },
+  },
   yourSaving: {
     hello: `
       <strong>Hello {name}</strong>.<br/>Let's see how your money is doing today.
@@ -5479,7 +5541,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       },
       borrow: {
         title: 'Borrow the way you want',
-        cap: 'No limit. Set your own fixed rates.',
+        cap: 'No limit. No credit checks. Terms from 1-6 months.',
         btn: 'Borrow',
       },
     },
@@ -5547,8 +5609,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       ,
       question2: 'What makes Constant different from other P2P lending platforms?',
       answer2: `
-        <p>Constant is the first fully-secured P2P lending platform. Every loan is 150% (minimum) backed by collateral, which is sold if borrowers default or its value falls to a threshold, protecting investors (borrowers keep the loan).</p>
-        <p>Unlike other platforms, we don’t need credit checks and you set the interest rate and term, not us. As well as providing you with a platform on which to do business, we also give you the educational resources to reach your financial goals, fast.</p>
+        <p>Constant is a fully-secured peer-to-peer lending platform. Every loan is 150% (minimum) backed by collateral, which is sold if borrowers default or its value falls to a threshold, protecting investors (borrowers keep the loan).</p>
+        <p>Unlike other platforms, Constant pools investor funds into a lending pool or reserve. This means you match instantly, whether you’re a borrower or an investor. We don’t need credit checks and we offer three fixed-term investments to give you flexibility.</p>
+        <p>As well as providing you with a platform on which to do business, we also believe in giving you the educational resources to reach your financial goals, fast. To learn more, <a href="https://myconstant.com/blog" class="underline" target="_blank">check out our blog</a>.</p>
         <p><a href="https://www.myconstant.com/blog/11-reasons-to-invest-with-constant" class="underline" target="_blank">Discover 11 reasons to invest with Constant.</a></p>
       `,
       question3: 'Who can participate?',
@@ -5565,25 +5628,25 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     },
     howItWorks: {
       title: 'How it works.',
-      desc: 'Investors make deposit of any amount, and choose the interest rate they want to earn. Borrowers choose how much interest they want to pay, and put down collateral equal to 150% of what they want to borrow. A matching algorithm connects them, and smart contract technology automates the entire process.',
+      desc: 'The Constant algorithm pools investor funds into a lending reserve from which borrowers can get loans in return for interest. Borrowers secure their loans with collateral which is sold if they default or its value falls to a threshold, eliminating the need for credit checks.',
       content: {
         1: {
-          title: '1. Investor', desc: 'Investors deposit any amount and choose the interest rate they want to earn.',
+          title: '1. Investor', desc: 'Investors deposit any amount and choose either a 1-month, 3-month, or 6-month investment term.',
         },
         2: {
           title: '2. Secure escrow', desc: 'Borrower collateral is either securely escrowed in an Ethereum smart contract or held in a cold wallet with our qualified custodian, Prime Trust.'
         },
         3: {
-          title: '3. Borrower', desc: 'Borrowers choose how much interest they want to pay, and put down collateral equal to 150% of what they want to borrow.'
+          title: '3. Borrower', desc: 'Borrowers choose a 1-month, 3-month, or 6-month repayment term, and put down collateral equal to 150% of the amount they want to borrow.'
         },
         4: {
-          title: '4. Constant P2P Lending Platform', desc: 'The Constant algorithm matches investors and borrowers on their chosen rates and terms.'
+          title: '4. Constant secured lending platform', desc: 'The Constant algorithm manages the transfer of investor funds to the lending reserve and then allocates funds to borrowers. When terms expire, the algorithm returns profits to investors and collateral to borrowers.'
         }
       }
     },
     whyItBetter: {
       title: 'Why it’s better.',
-      desc: 'Unlike traditional P2P platforms that prey on vulnerable borrowers and expect investors to shoulder the risk, Constant is designed to protect them both.',
+      desc: 'Unlike traditional P2P lending platforms that prey on vulnerable borrowers and expect investors to shoulder the risk, Constant is designed to protect them both.',
       item0: {
         title: 'Secured returns for investors',
         desc: 'If borrowers default, collateral is sold to refund the investor. If collateral falls in value, it is sold at a threshold. It’s all automated by an unstoppable smart contract - investors always get their principal and profit back.',
@@ -5796,9 +5859,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       intro: {
         content: `
           <p>Invest the way you want</p>
-          <h1>Set your own rates.</h1>
-          <p class="h1">Invest from $50.</p>
-          <p class="h1">Invest only in secured loans.</p>
+          <h1>Earn up to 7.5% APR now.</h1>
+          <p class="h1">Invest from as little as $50.</p>
+          <p class="h1">All lending secured.</p>
           <p />
           <p>
           Your investments are fully backed by borrower collateral. Unmatched portions earn an automatic 4% APY, and can be withdrawn anytime.
@@ -5806,7 +5869,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         `,
         desc: {
           1: 'Fully secured by collateral',
-          2: 'Your own rates and terms',
+          2: 'Your choice of term',
           3: '24/7 customer service',
         },
         youtube: {
@@ -5817,7 +5880,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         gotoVerifyKyc: 'Go to verify now',
         text1: 'Set your own lending terms',
         text2:
-          'Invest at the current market rate of 7.00% and find a match instantly, or increase your rate and wait for a matching order.',
+          `<p>Choose a term you like and as soon as we receive your funds you’ll start earning interest. The longer you invest for the more interest you earn. If you’d like to end your term early, you can sell your investment in our <a href="https://www.myconstant.com/blog/constant-secondary-market" target="_blank" class="underline">secondary market</a>.</p>`,
         text3:
           'We’re giving you a trial investment of $1000. All you have to do is choose your rate, and we’ll find you a match. When the trial is up, we take the $1000 back, but the interest is yours to keep.',
         text4: `
@@ -6076,16 +6139,12 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         questionTitle: 'Almost there! Just prove you\'re not a robot.',
       },
     },
-    whatCaption0: 'Set your own rates',
+    whatCaption0: 'Match instantly',
     whatCaption1: 'Insured up to $130M while waiting for a match',
     whatCaption2: 'Protected by Ethereum smart contracts while on loan',
     whatCaption3: 'Only invest in secured loans',
     whatDesc0: `
-      <p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.</p>
-      <br />
-      <p>You decide your rates. No hidden fees.</p>
-      <br />
-      <a href="https://www.myconstant.com/crypto-loan" target="_blank">How money is loaned out</a>
+      <p>When you invest, your funds contribute to a lending pool from which borrowers get loans in return for interest. The longer you leave your money in the pool, the more interest you earn. Our algorithm replaces the centralized inefficiency of the current banking system, paying you interest the moment you deposit.</p>
     `,
     whatDesc1: `
       <p>Funds that have not yet been loaned out are kept safe at multiple FDIC-insured bank accounts with an aggregated insurance of $130M.</p>
@@ -6114,17 +6173,17 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         <h5>We match investors with borrowers glad to pay their rates, and facilitate the entire transaction from beginning to end.</h5>
       `,
       step1: 'Step 1',
-      title1: 'You make an investment',
+      title1: '1. Set your own terms',
       desc1:
-        'Choose among our flexible Investment Plans, then make a bank transfer of any amount to the FDIC insured Constant Vault. Your funds will be held in USD, to protect against volatility. We earn you interest and make sure your money is secure, by lending your funds only to borrowers who are willing to overcollateralize.',
+        'Choose how much you want to invest and for how long. We have 1-month, 3-month, and 6-month terms to choose from for utmost flexibility.',
       step2: 'Step 2',
-      title2: 'Your money multplies',
+      title2: '2. Deposit your funds',
       desc2:
-        'No matter which commitment period you choose, returns are paid out daily into a Flexible Account. Flexible means you can withdraw whenever you like, and earn an extra 1% annually. Stay liquid and make profit on your profit.',
+        'Send your funds via one of our supported payment channels. Depending on your bank, it might take one or two business days to reach us.',
       step3: 'Step 3',
-      title3: 'You withdraw profit',
+      title3: '3. Start earning interest',
       desc3:
-        'Your investment income is in USD, but you can withdraw it to any local bank account at the end of the commitment period. Or you could reinvest it to keep growing your money.',
+        'As soon as your funds reach us, you start earning interest on your principal. When your term ends you can withdraw your principal and profit to a bank account or stablecoin wallet for free.',
     },
     checklist: {
       title: 'Why you should invest with Constant.',
@@ -6148,9 +6207,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       answer2: 'You can invest as much as you like, starting from just $50.',
       question3: 'How do I invest?',
       answer3: `
-        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Transfer that amount to one of our international bank accounts – we have banks in the US and abroad to make transfers quick and easy for you. Then sit back and wait for a match. This is usually very quick if you’ve set market rates.</p>
-        <p>Once you’ve found a match, we’ll transfer your funds from an escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – reinvest, withdraw, or send money abroad.</p>
-        <p><a href="/blog/how-to-invest-with-constant-in-3-simple-steps" className="underline" target="_blank">How to invest with Constant in 3 simple steps.</a></p>
+        <p>Enter how much you want to invest and for how long. Transfer that amount to one of our international bank accounts – we have banks in the US and abroad to make transfers quick and easy for you. As soon as your funds arrive, you’ll immediately start earning interest.</p>
+        <p>At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – reinvest, withdraw, or send money abroad.</p>
+        <p><a href="/blog/how-to-invest-with-constant-in-3-simple-steps" className="underline" target="_blank">How to invest in 3 simple steps.</a></p>
       `,
       question4: 'How do you protect my investment?',
       answer4: `
@@ -6167,7 +6226,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       answer5: `
         <p>When not on loan or waiting for a match, your money earns 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>
         <p>If you're waiting for a match, your money remains in the custody of Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>
-        <p>Flex is enabled by default, but you can disable it from your Accounts page. You will no longer earn interest and your funds will remain in Prime Trust custody (unless matching for a P2P loan).</p>
+        <p>Flex is enabled by default, but you can disable it from your Accounts page. You will no longer earn interest and your funds will remain in Prime Trust custody (unless you invest in a fixed-term loan).</p>
         <p><a href="https://www.myconstant.com/blog/flex-or-prime-trust-constant" className="underline" target="_blank">Prime Trust or Flex?</a></p>
       `,
       question6: 'What happens if a borrower repays early?',
@@ -6182,6 +6241,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       question8: 'Can I end my investment term early?',
       answer8: `
         <p>Yes. To end your term early, you can sell your investment to another investor from your Accounts page. Once sold, you’ll get your principal back and 2% APR on elapsed term time. Selling relies on finding a buyer willing to accept your rate and term so might take around 24 hours. You’ll also lose any earned membership points on your sold investment.</p>
+      `,
+      question9: 'How long until I start earning interest?',
+      answer9: `
+        <p>Your investments join a lending reserve from which borrowers can get loans. This means you start earning interest the moment we receive your funds.</p>
       `,
     }
   },
@@ -6420,6 +6483,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     watchBoard: {
       invested: 'Invested at Market',
       borrowed: 'Borrowed at Market',
+      reserves: 'Reserve orders',
       investments: 'Investing orders',
       borrows: 'Borrowing orders',
       voidInvestmentBorrows: 'Secondary Investments',
@@ -6432,7 +6496,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       interest: 'Interest(APR)',
       term: 'Term(Days)',
       termValues: '{term}-Months',
-      matched: 'Matched'
+      matched: 'Matched',
+      termMonth: 'Term(Months)',
     },
     balances: {
       collateralBalances: 'Withdraw crypto',
@@ -6515,13 +6580,13 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         termMonth: '{month}-Month',
         investButton: 'Invest',
         loginButton: 'Log in or Sign up to invest',
-        invalidAmount: 'Sorry, you don\'t have enough funds in your account. Please deposit {amount} to complete your order.',
+        invalidAmount: 'Sorry, you don\'t have enough funds in your account. Please deposit {amount} USD to complete your order.',
         getFeeFailed: 'Can not get fee in this time, please try again.',
         fee: 'Invest fee: <span class="amount">{fee}</span> {currency}',
         amountDesc: '<p>How much do you want to lend?</p>',
         termDesc: 'If there is a borrower looking for a shorter loan at your rates, you will be partially matched. We will continue to find you a match for the rest of the term.',
         interestDesc:'This is your annual interest rate. If there is a borrower willing to pay more, you will earn the higher rate.',
-        goToAccountApp: "Please go to the Account tab to sign up or log in.",
+        goToAccountApp: 'Please go to the Account tab to sign up or log in.',
       }
     },
     borrowBooking: {
@@ -6807,57 +6872,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     btnInvestments: 'Investments',
     btnLoans: 'Loans',
     btnSecondaryMarket: `<div class="textLeft"><small>Secondary</small><div>Market</div></div>`,
-  },
-  airdrop: {
-    endedTitle: `The Constant STARdrop campaign has now ended (October 24 2019, 10:00 AM GMT+7). We’ve reached the limit of 10,000 STAR, and thank you all for your support.`,
-    endDesc: 'You’ll receive your STAR within 10 business days – please keep an eye on your Constant account.',
-    title: 'Earn more and pay less with STARdrop',
-    subTitle: `We’re giving away <strong>10,000 STAR tokens</strong> that unlock bonus or discounted interest on our lending platform. <br/>To claim yours – worth up to 3% bonus or discounted interest – simply tell people about us.`,
-    cta: {
-      text: `Launch the STARdrop Telegram bot to earn your first STAR.`,
-      action: 'Say hello to STARbot',
-      steps: {
-        title: 'Claim up to 3 STAR by completing the following steps:',
-        step1: 'Launch STARbot',
-        step2: 'Share us on social media',
-        step3: 'Refer friends and family',
-      },
-    },
-    howItWorks: 'How does STARdrop work?',
-    compaignEndDesc: 'The campaign ends once all 10,000 STARs are given away or on October 31 2019, whichever is soonest.',
-    faqsTitle: 'FAQs',
-    faqs: {
-      question1: 'What is Constant peer-to-peer lending?',
-      answer1: `
-        <p>Unlike bank loans, P2P lending works by matching investors and borrowers directly. Since there are no greedy middlemen getting in the way, you set your own terms and rates, giving you unparalleled control of your finances. So whether you’re looking for a low-interest loan or better returns on your investment, we’ll match you with someone who’d love to do business with you.</p>
-       `,
-      question2: 'What is STAR?',
-      answer2: `
-        <p>STAR is an ERC20 token which can be redeemed for 1% bonus or discounted interest, or sent to someone as a gift. 1 STAR unlocks either +1% APR on an investment or -1% APR on a loan. You can use up to 3 STAR at one time.</p>
-        <p>The great news is all STAR rewards apply to the whole term. To redeem STAR, simply go to your <a href="/accounts" class="underline bold">Accounts</a> page and select an active loan or investment, and then choose how many to redeem.</p>
-      `,
-      question3: 'Can I trade STAR on exchanges?',
-      answer3: `
-        <p>No, not yet. STAR is only usable on the Constant platform but can still be transferred to other ERC20 wallets. Check out the smart contract on <a href="https://etherscan.io/token/0x9027ba8450b1c9bdfad6506190803873391e8e6f" class="underline bold" target="_blank">Etherscan</a>.</p>
-      `,
-      question4: 'What makes Constant different from other P2P lending platforms?',
-      answer4: `
-        <p>Constant is the first fully secured P2P lending platform. All investor funds are 150% backed by cryptocurrency collateral. Borrower collateral is stored safely in escrow, which means no one can touch it until it is transferred back to the borrower after repayment.</p>
-        <p>Unlike other platforms, Constant also allows users to set their own interest rates and terms. Ethereum powered smart contracts automate the loan agreement and always run exactly as programmed – ensuring both investors and borrowers are protected.</p>
-      `,
-      question5: 'Who can participate in STARdrop?',
-      answer5: `
-        <p>Anyone can participate, as long as you have an internet connection (to use our website) and sign up for an account on Constant to receive your reward in STAR.</p>
-      `,
-      question6: 'When does STARdrop end?',
-      answer6: `
-        <p>Either on October 31 2019 or when all 10,000 STAR have been rewarded.</p>
-      `,
-      question7: 'How can I track STAR rewards?',
-      answer7: `
-        <p>At the end of the campaign, we’ll publish the results for your reference. In the meantime, you can ask for help from our admins on <a href="https://t.me/constantcommunity" class="underline bold" target="_blank">the STARdrop Telegram group</a>.</p>
-      `,
-    }
   },
   seo: {
     homepage: {
@@ -8442,6 +8456,27 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         date: 'Date',
         status: 'Status',
       },
+    },
+    depositCrypto: {
+      title: 'Crypto Lend Deposit',
+      noHistoryData: 'Make a deposit to get started.',
+      received: 'received',
+      tabs: {
+        crypto: 'Crypto',
+        openOrders: 'Open Orders'
+      },
+      headers: {
+        orderNo: '#',
+        amount: 'Amount',
+        address: 'Address',
+        date: 'Date',
+        status: 'Status',
+        action: ' ',
+      },
+      status: {
+        pending: 'Pending',
+        done: 'Done',
+      }
     },
   },
   helpAndSupport: {

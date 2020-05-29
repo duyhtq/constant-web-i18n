@@ -256,7 +256,7 @@ export default {
       },
       investCustom: {
         title: 'Fiat Custom',
-        desc: 'Your rates. Your terms. Fully secured.',
+        desc: 'Your terms. Best rates. Fully secured.',
       },
       investStaking: {
         title: 'Crypto Staking',
@@ -1210,7 +1210,8 @@ export default {
       subject: 'Bank account details for receiving withdrawals or transfers ',
       explanations:
         'For your security, we only use these bank details to process fund withdrawals or transfers. To deposit funds, please enter the amount you want to invest, and follow the instructions to make a wire transfer directly to our FDIC-insured custodian.',
-
+      tooltipBankAccountName: 'For your security, the beneficiary name must match the name you registered when signing up with Constant. Please enter a valid name or email hello@myconstant.com if you need help',
+      yourKycName: '<p>Your KYC name: {name}</p>',
       bankName: 'Bank Name',
       action: 'Action',
       editActionLabel: 'Edit',
@@ -1675,7 +1676,7 @@ export default {
           cancelBorrowSuccess: 'You successfully cancelled borrow',
           deleteSavingSuccess: 'You successfully deleted investment',
           deleteSavingFailed: 'Failed To delete Invest Saving',
-          depositSavingSuccess: 'You successfully invested Constant.',
+          depositSavingSuccess: 'Thanks! Your investment order was successful. Your term has begun and you\'ve started earning interest.',
           depositSavingFailed: 'Failed To Invest Saving',
           stopSavingSuccess: 'You ended your term deposit. Withdraw your funds anytime.',
           stopSavingFailed: 'End your term failed.',
@@ -2085,20 +2086,6 @@ export default {
     thanksMessage: 'Thank you! Your message has been sent.',
   },
   home: {
-    lendingSection: {
-      form: {
-        tooltip: {
-          amount: '<p>How much do you want to lend?</p>',
-          maxTerm:
-            '<p>This is the maximum amount of time you want to lend your money out for. Unloaned portions are protected by the FDIC, and can be withdrawn at any time.</p>',
-          minRate:
-            '<p>This is the minimum rate you are willing to accept for your loan. If there is a borrower willing to pay more, you will earn the higher interest rate.</p>',
-        },
-        placeholder: {
-          amount: 'How much do you want to lend?',
-        },
-      },
-    },
     blockTitle1: 'Customer stories',
     blockDesc1: 'People make smarter investments with Constant.',
     blockTitle2: 'How it works',
@@ -2951,6 +2938,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         monthLoan: '{term}-month loans',
         monthsLoan: '{term}-months loans',
         dayLoan: '{term}-day loans',
+        borrowConfirm: 'You’re about to borrow {amount} {currency} for {term} days at {rate}% APR. Click confirm to start your term and receive your loan instantly. Once your term begins, you won’t be able to cancel your loan, but you can repay early from your Accounts page.'
       },
       interestTable: {
         title: 'Why you should borrow with Constant.',
@@ -3543,6 +3531,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         monthLoan: '{term}-month loans',
         monthsLoan: '{term}-months loans',
         dayLoan: '{term}-day loans',
+        borrowConfirm: `
+        <p>You’re about to borrow {amount} {currency} for {term} days at {rate}% APR. We’ll use these funds to buy a maximum of {collateralAmount} {collateral} to be deposited into your coin balance. Click confirm to get your chosen crypto and start your term.</p> 
+        <p>Once your term begins, you won’t be able to cancel your loan, but you can repay early from your Accounts page.</p>
+        `
       },
       compareTable: {
         title: 'Constant vs Exchange Margin Accounts.',
@@ -5451,7 +5443,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         others: 'Every 1-12 months',
       },
       fees: {
-        title: 'Compounded',
+        title: 'Fees',
         constant: 'FREE',
         others: 'Up to $15',
       },
@@ -5920,10 +5912,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           minRate:
             '<p>This is the minimum rate you are willing to accept for your loan. If there is a borrower willing to pay more, you will earn the higher interest rate.</p>',
         },
-        placeholder: {
-          amount: 'How much do you want to lend?',
-        },
-        yourAnytimeBalance: 'Your Balance: {balance} {currency}',
       },
       alert: {
         success: 'Success',
@@ -5939,6 +5927,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         zelleSuccess: 'Thanks! Please proceed with the transfer.',
         zelleFailed: 'Something went wrong. Please try again.',
         needKyc: '',
+        investUsingBalanceConfirm: 'You’re about to invest {amount} {currency} for {term} days at a rate of {rate}% APR. Click confirm to start your term and begin earning interest. Once you confirm, you won’t be able to cancel your investment but can sell it on our secondary market.',
+        investNotUsingBalanceConfirm: 'You’re about to invest {amount} {currency} for {term} days at {rate}% APR. Click confirm and you’ll start earning interest as soon as we receive your funds. Once your term starts, you won’t be able to cancel your investment but can sell it on our secondary market.'
       },
       confirm: {
         needGoldMember: '<p>You must become a Gold member and above, or choose a longer investment term to use this feature</p>',
@@ -6202,7 +6192,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     },
     faqs: {
       question1: 'How long will it take to find a match?',
-      answer1: 'This depends on the rates and terms you set. If you choose the market rate, you’ll match very quickly – usually within minutes. If you set a higher rate, it might take a little longer. In that case, try reducing your interest rate to market levels to guarantee a match. We regularly update the market rate so you know what most borrowers are willing to pay.',
+      answer1: 'You match the moment we receive your funds.',
       question2: 'Are there any limits?',
       answer2: 'You can invest as much as you like, starting from just $50.',
       question3: 'How do I invest?',
@@ -6564,8 +6554,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       minAmountRequired: 'Amount must be greater than {value} is required to make an investment!',
       amountRequired: 'Amount is required to make an investment!',
       interestRequired: 'Interest is required to make an investment!',
-      matchedSuccess: 'Your invest had been matched successfully.',
-      matchedFailed: 'Your invest had been matched unsuccessfully, please try again.',
+      matchedSuccess: 'Thanks! Your investment order was successful. Your term has begun and you\'ve started earning interest. To review your investments, please visit your Accounts page.',
+      matchedFailed: 'Your investment had been matched unsuccessfully, please try again.',
       matchedSecondaryInvestmentSuccess: 'Done! You\'ve bought a new investment. To track it, please visit the Secondary Market tab on your Accounts page.',
       deposit: {
         title: 'Investments deposit',
@@ -6621,7 +6611,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         stakingMinAmount: 'stake amount must be great than {minVal} {currency}',
         goToAccountApp: "Please go to the Account tab to sign up or log in.",
       },
-      createdSuccess: 'Your borrow had been created successfully',
+      createdSuccess: 'Thanks! Your borrow order was successful. Your term has started and your funds are in your account and ready to use. To review your loans, please visit your Accounts page.',
       errorMsgs: {
         notEnoughBalance: 'Your balance is not enough to make borrow!',
         generateCollateralAddressFail: 'Can\'t generate collateral address. Please try again!',
@@ -6662,7 +6652,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         stakingMinAmount: 'stake amount must be great than {minVal} {currency}',
         goToAccountApp: "Please go to the Account tab to sign up or log in.",
       },
-      createdSuccess: 'Your borrow had been created successfully',
       errorMsgs: {
         notEnoughBalance: 'Your balance is not enough to make borrow!',
         generateCollateralAddressFail: 'Can\'t generate collateral address. Please try again!',
@@ -8458,7 +8447,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       },
     },
     depositCrypto: {
-      title: 'Crypto Lend Deposit',
+      title: 'Crypto Lend - Deposits',
       noHistoryData: 'Make a deposit to get started.',
       received: 'received',
       tabs: {

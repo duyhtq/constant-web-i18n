@@ -1042,6 +1042,8 @@
             "desc": "%%%.me.bankInfo.desc%%%",
             "subject": "%%%.me.bankInfo.subject%%%",
             "explanations": "%%%.me.bankInfo.explanations%%%",
+            "tooltipBankAccountName": "%%%.me.bankInfo.tooltipBankAccountName%%%",
+            "yourKycName": "%%%.me.bankInfo.yourKycName%%%",
             "bankName": "%%%.me.bankInfo.bankName%%%",
             "action": "%%%.me.bankInfo.action%%%",
             "editActionLabel": "%%%.me.bankInfo.editActionLabel%%%",
@@ -1827,18 +1829,6 @@
         "thanksMessage": "%%%.review.thanksMessage%%%"
     },
     "home": {
-        "lendingSection": {
-            "form": {
-                "tooltip": {
-                    "amount": "%%%.home.lendingSection.form.tooltip.amount%%%",
-                    "maxTerm": "%%%.home.lendingSection.form.tooltip.maxTerm%%%",
-                    "minRate": "%%%.home.lendingSection.form.tooltip.minRate%%%"
-                },
-                "placeholder": {
-                    "amount": "%%%.home.lendingSection.form.placeholder.amount%%%"
-                }
-            }
-        },
         "blockTitle1": "%%%.home.blockTitle1%%%",
         "blockDesc1": "%%%.home.blockDesc1%%%",
         "blockTitle2": "%%%.home.blockTitle2%%%",
@@ -2427,7 +2417,8 @@
                 "moreInfo": "%%%.home.constantLoan.exchange.moreInfo%%%",
                 "monthLoan": "%%%.home.constantLoan.exchange.monthLoan%%%",
                 "monthsLoan": "%%%.home.constantLoan.exchange.monthsLoan%%%",
-                "dayLoan": "%%%.home.constantLoan.exchange.dayLoan%%%"
+                "dayLoan": "%%%.home.constantLoan.exchange.dayLoan%%%",
+                "borrowConfirm": "%%%.home.constantLoan.exchange.borrowConfirm%%%"
             },
             "interestTable": {
                 "title": "%%%.home.constantLoan.interestTable.title%%%",
@@ -2823,7 +2814,8 @@
                 "moreInfo": "%%%.home.constantC2CLoan.exchange.moreInfo%%%",
                 "monthLoan": "%%%.home.constantC2CLoan.exchange.monthLoan%%%",
                 "monthsLoan": "%%%.home.constantC2CLoan.exchange.monthsLoan%%%",
-                "dayLoan": "%%%.home.constantC2CLoan.exchange.dayLoan%%%"
+                "dayLoan": "%%%.home.constantC2CLoan.exchange.dayLoan%%%",
+                "borrowConfirm": "%%%.home.constantC2CLoan.exchange.borrowConfirm%%%"
             },
             "compareTable": {
                 "title": "%%%.home.constantC2CLoan.compareTable.title%%%",
@@ -4459,11 +4451,7 @@
                     "amount": "%%%.home1.lendingSection.form.tooltip.amount%%%",
                     "maxTerm": "%%%.home1.lendingSection.form.tooltip.maxTerm%%%",
                     "minRate": "%%%.home1.lendingSection.form.tooltip.minRate%%%"
-                },
-                "placeholder": {
-                    "amount": "%%%.home1.lendingSection.form.placeholder.amount%%%"
-                },
-                "yourAnytimeBalance": "%%%.home1.lendingSection.form.yourAnytimeBalance%%%"
+                }
             },
             "alert": {
                 "success": "%%%.home1.lendingSection.alert.success%%%",
@@ -4475,7 +4463,9 @@
                 "trialSuccess": "%%%.home1.lendingSection.alert.trialSuccess%%%",
                 "zelleSuccess": "%%%.home1.lendingSection.alert.zelleSuccess%%%",
                 "zelleFailed": "%%%.home1.lendingSection.alert.zelleFailed%%%",
-                "needKyc": "%%%.home1.lendingSection.alert.needKyc%%%"
+                "needKyc": "%%%.home1.lendingSection.alert.needKyc%%%",
+                "investUsingBalanceConfirm": "%%%.home1.lendingSection.alert.investUsingBalanceConfirm%%%",
+                "investNotUsingBalanceConfirm": "%%%.home1.lendingSection.alert.investNotUsingBalanceConfirm%%%"
             },
             "confirm": {
                 "needGoldMember": "%%%.home1.lendingSection.confirm.needGoldMember%%%",
@@ -4993,7 +4983,6 @@
                 "stakingMinAmount": "%%%.proLending.borrowC2CBooking.exchange.stakingMinAmount%%%",
                 "goToAccountApp": "%%%.proLending.borrowC2CBooking.exchange.goToAccountApp%%%"
             },
-            "createdSuccess": "%%%.proLending.borrowC2CBooking.createdSuccess%%%",
             "errorMsgs": {
                 "notEnoughBalance": "%%%.proLending.borrowC2CBooking.errorMsgs.notEnoughBalance%%%",
                 "generateCollateralAddressFail": "%%%.proLending.borrowC2CBooking.errorMsgs.generateCollateralAddressFail%%%",

@@ -456,6 +456,7 @@ export default {
       lLastName: 'Last Name',
       plLastName: 'Last Name',
       lBirthday: 'Birthday',
+      lGender: 'Gender',
       isUS: 'Are you a US Citizen?',
       isUSYes: 'Yes',
       isUSNo: 'No',
@@ -471,7 +472,7 @@ export default {
       selfie: 'Upload an image of your SELFIE',
       descIDUpload:
         'Please make sure that the photo is complete and clearly visible, in BMP, JPG, JPEG, or PNG format, and is smaller than 3MB.',
-      lAddrStr1: 'Address Street 1',
+      lAddrStr1: 'Address Street',
       lAddrCountry: 'Country on your proof of address',
       plAddrCountry: 'Select your country',
       lAddrCity: 'City',
@@ -500,7 +501,9 @@ export default {
       titleExampleClick: 'Click here to see the examples.',
       uploadImageClick: 'Click here to upload your images.',
       correct: 'Correct',
-      incorrect: 'Incorrect'
+      incorrect: 'Incorrect',
+      btnEdit: 'Edit',
+      btnSave: 'Save',
     },
     batchTransfer: {
       title: 'Batch Transfers',
@@ -2353,6 +2356,7 @@ export default {
         minuteWindow: '15 MINUTE WINDOW:',
         minuteWindowCryptoInvest: 'Send your cryptocurrency now to start earning interest',
         minuteWindowDescriptionCryptoInvest: 'For the sake of security, this order will time-out after 6 hours. If you need a little longer, just re-enter the amount you’d like to invest when you’re ready.',
+        warningMessageCryptoInvest: 'You can deposit as much as you like, but you only earn interest on the first 5 BTC or equivalent value for each supported asset.',
         minuteWindowDescription:
           'Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled.',
         minuteWindowDepositDescription: 'For the sake of security, this session will time-out after 12 hours. If you need a little longer, just re-enter the amount you would like to deposit when you’re ready.',
@@ -2840,7 +2844,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         question5: 'What happens if my crypto collateral falls in value?',
         answer5: `
         <p>We will notify you three times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, we’ll create a sell order to repay the investor. You keep the loan, but you lose your collateral.</p>
-        <p>Borrowers will receive notifications at 125%, 120% ad 115% of the investor’s principal plus earned interest. You can choose to repay early to avoid liquidation or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.</p>
+        <p>Borrowers will receive notifications at 125%, 120% and 115% of the investor’s principal plus earned interest. You can choose to repay early to avoid liquidation or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.</p>
+        <p>If you’re borrowing against stablecoins, you will be notified at 115%, 110%, and finally 105%. Once your collateral falls to 100% of the loan amount it will be sold to repay the investor.</p>
         <p><a href="https://www.myconstant.com/blog/extra-protection-for-your-collateral-auto-top-up" className="underline" target="_blank">How to avoid liquidation with auto top-up.</a></p>
       `,
         question6: 'Can I repay early?',
@@ -2855,7 +2860,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       `,
         question8: 'What is the LTV (Loan-to-Value) Ratio? Is it always the same?',
         answer8: `
-        <p>The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral.</p>
+        <p>The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral. If you’re borrowing against stablecoins, the LTV ratio is 100% (you must put up 100% of the loan amount in stablecoins to obtain a loan).</p>
       `,
         question9: 'How do I repay my loan?',
         answer9: `
@@ -3459,7 +3464,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         `,
         question13: 'What is the LTV (Loan-to-Value) Ratio? Is it always the same?',
         answer13: `
-        The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral.
+        The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral. If you’re borrowing against stablecoins, the LTV ratio is 100% (you must put up 100% of the loan amount in stablecoins to obtain a loan).
         `,
         question14: 'What happens if I repay late?',
         answer14: `
@@ -5498,7 +5503,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       },
       3: {
         caption: 'Withdraw anytime',
-        desc: `<p>Withdraw your cryptocurrency instantly whenever you need it. No fees and no limits.</p>`
+        desc: `<p>Withdraw your cryptocurrency whenever you need it. No fees and no limits.</p>`
       },
     },
     howItWorks: {
@@ -5601,7 +5606,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       ,
       question2: 'What makes Constant different from other P2P lending platforms?',
       answer2: `
-        <p>Constant is a fully-secured peer-to-peer lending platform. Every loan is 150% (minimum) backed by collateral, which is sold if borrowers default or its value falls to a threshold, protecting investors (borrowers keep the loan).</p>
+        <p>Constant is a fully-secured peer-to-peer lending platform. Every loan is backed by collateral of up to 150% of the loan amount, which is sold if borrowers default or its value falls to a threshold, protecting investors (borrowers keep the loan).</p>
         <p>Unlike other platforms, Constant pools investor funds into a lending pool or reserve. This means you match instantly, whether you’re a borrower or an investor. We don’t need credit checks and we offer three fixed-term investments to give you flexibility.</p>
         <p>As well as providing you with a platform on which to do business, we also believe in giving you the educational resources to reach your financial goals, fast. To learn more, <a href="https://myconstant.com/blog" class="underline" target="_blank">check out our blog</a>.</p>
         <p><a href="https://www.myconstant.com/blog/11-reasons-to-invest-with-constant" class="underline" target="_blank">Discover 11 reasons to invest with Constant.</a></p>
@@ -5613,7 +5618,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       `,
       question4: 'How does Constant protect customers’ assets?',
       answer4: `
-        <p>All loans are 150% (minimum) backed by collateral put up by borrowers. If borrowers default or their collateral falls too much in value, the collateral is sold to repay investors.</p>
+        <p>All loans are up to 150% backed by collateral put up by borrowers. If borrowers default or their collateral falls too much in value, the collateral is sold to repay investors.</p>
         <p>In addition, we use qualified custodial partners (Prime Trust) to manage both fiat (USD) and digital assets. This additional layer of protection helps minimize the threat of theft, mismanagement, or loss of your assets.</p>
         <p><a href="https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral" class="underline" target="_blank">Read more about how we protect your assets.</a></p>
       `,
@@ -5912,6 +5917,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           minRate:
             '<p>This is the minimum rate you are willing to accept for your loan. If there is a borrower willing to pay more, you will earn the higher interest rate.</p>',
         },
+        placeholder: {
+          amount: 'How much do you want to lend?',
+        },
       },
       alert: {
         success: 'Success',
@@ -6205,8 +6213,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       answer4: `
         <p>We’ve taken important steps to safeguard not just your investment, but your returns, too:</p>
         <ol>
-          <li>All of our borrowers must put up 150% of the loan amount as crypto collateral. If they don’t repay, we sell the collateral to repay you.</li>
-          <li>We also include a liquidation threshold to insure against a fall in the collateral’s value. If the value falls to 110% of your principal and earned interest, it’s sold to repay you.</li>
+          <li>All of our borrowers must put up 150% of the loan amount as crypto collateral (100% if stablecoins to reflect their stability). If they don’t repay, we sell the collateral to repay you.</li>
+          <li>We also include a liquidation threshold to insure against a fall in the collateral’s value. If the value falls to 110% of your principal and earned interest (100% if a stablecoin), it’s sold to repay you.</li>
           <li>We only accept vetted, quality cryptocurrencies and cap our exposure to these markets by daily trading volume. This ensures we can sell the collateral should the market dip.</li>
         </ol>
         <p>These protective measures help ensure you get the returns promised. However, all investment involves risk, and despite our best efforts, we can’t guarantee the return of your principal and profit. Therefore please invest wisely.</p>
@@ -6413,21 +6421,18 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     },
     withdrawFiat: {
       head1: 'Fiat withdrawal',
-      head2: 'Business hours (9am-6pm GMT +7, Mon-Fri)',
-      head3: 'Outside business hours',
-      head4: 'Fee',
+      head2: 'Funds received in your bank account',
+      head3: 'Fee',
     },
     withdrawCrypto: {
       head1: 'Stablecoin withdrawal',
-      head2: 'Business hours (9am-6pm GMT +7, Mon-Fri)',
-      head3: 'Outside business hours',
-      head4: 'Fee',
+      head2: 'Funds received in your wallet*',
+      head3: 'Fee',
     },
     withdrawCollateral: {
       head1: 'Collateral withdrawal',
-      head2: 'Business hours (9am-6pm GMT +7, Mon-Fri)',
-      head3: 'Outside business hours',
-      head4: 'Fee',
+      head2: 'Funds received in your wallet',
+      head3: 'Fee',
     },
     withdrawCollateralData: {
       title1: `ERC20 collaterals <strong>not</strong> deposited in BitGo / BTC, ETH, BEP2, TOMO, BEAM, XZC: <$10,000`,
@@ -8450,6 +8455,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       title: 'Crypto Lend - Deposits',
       noHistoryData: 'Make a deposit to get started.',
       received: 'received',
+      checkBalance: 'Check Balance',
       tabs: {
         crypto: 'Crypto',
         openOrders: 'Open Orders'

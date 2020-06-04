@@ -433,6 +433,7 @@
             "lLastName": "%%%.me.kyc.lLastName%%%",
             "plLastName": "%%%.me.kyc.plLastName%%%",
             "lBirthday": "%%%.me.kyc.lBirthday%%%",
+            "lGender": "%%%.me.kyc.lGender%%%",
             "isUS": "%%%.me.kyc.isUS%%%",
             "isUSYes": "%%%.me.kyc.isUSYes%%%",
             "isUSNo": "%%%.me.kyc.isUSNo%%%",
@@ -462,7 +463,9 @@
             "titleExampleClick": "%%%.me.kyc.titleExampleClick%%%",
             "uploadImageClick": "%%%.me.kyc.uploadImageClick%%%",
             "correct": "%%%.me.kyc.correct%%%",
-            "incorrect": "%%%.me.kyc.incorrect%%%"
+            "incorrect": "%%%.me.kyc.incorrect%%%",
+            "btnEdit": "%%%.me.kyc.btnEdit%%%",
+            "btnSave": "%%%.me.kyc.btnSave%%%"
         },
         "batchTransfer": {
             "title": "%%%.me.batchTransfer.title%%%",
@@ -2003,6 +2006,7 @@
                 "minuteWindow": "%%%.home.convert.buy.minuteWindow%%%",
                 "minuteWindowCryptoInvest": "%%%.home.convert.buy.minuteWindowCryptoInvest%%%",
                 "minuteWindowDescriptionCryptoInvest": "%%%.home.convert.buy.minuteWindowDescriptionCryptoInvest%%%",
+                "warningMessageCryptoInvest": "%%%.home.convert.buy.warningMessageCryptoInvest%%%",
                 "minuteWindowDescription": "%%%.home.convert.buy.minuteWindowDescription%%%",
                 "minuteWindowDepositDescription": "%%%.home.convert.buy.minuteWindowDepositDescription%%%",
                 "minuteWindowDescriptionDGX": "%%%.home.convert.buy.minuteWindowDescriptionDGX%%%"
@@ -4451,6 +4455,9 @@
                     "amount": "%%%.home1.lendingSection.form.tooltip.amount%%%",
                     "maxTerm": "%%%.home1.lendingSection.form.tooltip.maxTerm%%%",
                     "minRate": "%%%.home1.lendingSection.form.tooltip.minRate%%%"
+                },
+                "placeholder": {
+                    "amount": "%%%.home1.lendingSection.form.placeholder.amount%%%"
                 }
             },
             "alert": {
@@ -4745,20 +4752,17 @@
         "withdrawFiat": {
             "head1": "%%%.getPrices.withdrawFiat.head1%%%",
             "head2": "%%%.getPrices.withdrawFiat.head2%%%",
-            "head3": "%%%.getPrices.withdrawFiat.head3%%%",
-            "head4": "%%%.getPrices.withdrawFiat.head4%%%"
+            "head3": "%%%.getPrices.withdrawFiat.head3%%%"
         },
         "withdrawCrypto": {
             "head1": "%%%.getPrices.withdrawCrypto.head1%%%",
             "head2": "%%%.getPrices.withdrawCrypto.head2%%%",
-            "head3": "%%%.getPrices.withdrawCrypto.head3%%%",
-            "head4": "%%%.getPrices.withdrawCrypto.head4%%%"
+            "head3": "%%%.getPrices.withdrawCrypto.head3%%%"
         },
         "withdrawCollateral": {
             "head1": "%%%.getPrices.withdrawCollateral.head1%%%",
             "head2": "%%%.getPrices.withdrawCollateral.head2%%%",
-            "head3": "%%%.getPrices.withdrawCollateral.head3%%%",
-            "head4": "%%%.getPrices.withdrawCollateral.head4%%%"
+            "head3": "%%%.getPrices.withdrawCollateral.head3%%%"
         },
         "withdrawCollateralData": {
             "title1": "%%%.getPrices.withdrawCollateralData.title1%%%",
@@ -6506,6 +6510,7 @@
             "title": "%%%.history.depositCrypto.title%%%",
             "noHistoryData": "%%%.history.depositCrypto.noHistoryData%%%",
             "received": "%%%.history.depositCrypto.received%%%",
+            "checkBalance": "%%%.history.depositCrypto.checkBalance%%%",
             "tabs": {
                 "crypto": "%%%.history.depositCrypto.tabs.crypto%%%",
                 "openOrders": "%%%.history.depositCrypto.tabs.openOrders%%%"

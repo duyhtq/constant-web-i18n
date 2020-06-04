@@ -344,6 +344,7 @@
 %%%.me.kyc.lLastName%%%,"Last Name"
 %%%.me.kyc.plLastName%%%,"Last Name"
 %%%.me.kyc.lBirthday%%%,"Birthday"
+%%%.me.kyc.lGender%%%,"Gender"
 %%%.me.kyc.isUS%%%,"Are you a US Citizen?"
 %%%.me.kyc.isUSYes%%%,"Yes"
 %%%.me.kyc.isUSNo%%%,"No"
@@ -358,7 +359,7 @@
 %%%.me.kyc.lUpload%%%,"Upload an image of THE {face} of your {type}"
 %%%.me.kyc.selfie%%%,"Upload an image of your SELFIE"
 %%%.me.kyc.descIDUpload%%%,"Please make sure that the photo is complete and clearly visible, in BMP, JPG, JPEG, or PNG format, and is smaller than 3MB."
-%%%.me.kyc.lAddrStr1%%%,"Address Street 1"
+%%%.me.kyc.lAddrStr1%%%,"Address Street"
 %%%.me.kyc.lAddrCountry%%%,"Country on your proof of address"
 %%%.me.kyc.plAddrCountry%%%,"Select your country"
 %%%.me.kyc.lAddrCity%%%,"City"
@@ -388,6 +389,8 @@
 %%%.me.kyc.uploadImageClick%%%,"Click here to upload your images."
 %%%.me.kyc.correct%%%,"Correct"
 %%%.me.kyc.incorrect%%%,"Incorrect"
+%%%.me.kyc.btnEdit%%%,"Edit"
+%%%.me.kyc.btnSave%%%,"Save"
 %%%.me.batchTransfer.title%%%,"Batch Transfers"
 %%%.me.batchTransfer.detail%%%,"Batch Transfers Detail"
 %%%.me.buyOrder.title%%%,"Buy Order Available"
@@ -1805,6 +1808,7 @@
 %%%.home.convert.buy.minuteWindow%%%,"15 MINUTE WINDOW:"
 %%%.home.convert.buy.minuteWindowCryptoInvest%%%,"Send your cryptocurrency now to start earning interest"
 %%%.home.convert.buy.minuteWindowDescriptionCryptoInvest%%%,"For the sake of security, this order will time-out after 6 hours. If you need a little longer, just re-enter the amount you’d like to invest when you’re ready."
+%%%.home.convert.buy.warningMessageCryptoInvest%%%,"You can deposit as much as you like, but you only earn interest on the first 5 BTC or equivalent value for each supported asset."
 %%%.home.convert.buy.minuteWindowDescription%%%,"Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled."
 %%%.home.convert.buy.minuteWindowDepositDescription%%%,"For the sake of security, this session will time-out after 12 hours. If you need a little longer, just re-enter the amount you would like to deposit when you’re ready."
 %%%.home.convert.buy.minuteWindowDescriptionDGX%%%,"Invested DGX is converted to USD. When your term ends, you can choose to withdraw in DGX at the spot price, as USD, or a supported stablecoin."
@@ -2154,7 +2158,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.constantLoan.faqs.question5%%%,"What happens if my crypto collateral falls in value?"
 %%%.home.constantLoan.faqs.answer5%%%,"
         <p>We will notify you three times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, we’ll create a sell order to repay the investor. You keep the loan, but you lose your collateral.</p>
-        <p>Borrowers will receive notifications at 125%, 120% ad 115% of the investor’s principal plus earned interest. You can choose to repay early to avoid liquidation or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.</p>
+        <p>Borrowers will receive notifications at 125%, 120% and 115% of the investor’s principal plus earned interest. You can choose to repay early to avoid liquidation or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.</p>
+        <p>If you’re borrowing against stablecoins, you will be notified at 115%, 110%, and finally 105%. Once your collateral falls to 100% of the loan amount it will be sold to repay the investor.</p>
         <p><a href=""https://www.myconstant.com/blog/extra-protection-for-your-collateral-auto-top-up"" className=""underline"" target=""_blank"">How to avoid liquidation with auto top-up.</a></p>
       "
 %%%.home.constantLoan.faqs.question6%%%,"Can I repay early?"
@@ -2169,7 +2174,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       "
 %%%.home.constantLoan.faqs.question8%%%,"What is the LTV (Loan-to-Value) Ratio? Is it always the same?"
 %%%.home.constantLoan.faqs.answer8%%%,"
-        <p>The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral.</p>
+        <p>The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral. If you’re borrowing against stablecoins, the LTV ratio is 100% (you must put up 100% of the loan amount in stablecoins to obtain a loan).</p>
       "
 %%%.home.constantLoan.faqs.question9%%%,"How do I repay my loan?"
 %%%.home.constantLoan.faqs.answer9%%%,"
@@ -2708,7 +2713,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         "
 %%%.home.constantC2CLoan.faqs.question13%%%,"What is the LTV (Loan-to-Value) Ratio? Is it always the same?"
 %%%.home.constantC2CLoan.faqs.answer13%%%,"
-        The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral.
+        The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral. If you’re borrowing against stablecoins, the LTV ratio is 100% (you must put up 100% of the loan amount in stablecoins to obtain a loan).
         "
 %%%.home.constantC2CLoan.faqs.question14%%%,"What happens if I repay late?"
 %%%.home.constantC2CLoan.faqs.answer14%%%,"
@@ -4271,7 +4276,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.depositCrypto.whyInvest.2.caption%%%,"No fees"
 %%%.depositCrypto.whyInvest.2.desc%%%,"<p>We don’t charge you a penny to invest, withdraw, or deposit (though you might pay network fees to send your crypto).</p>"
 %%%.depositCrypto.whyInvest.3.caption%%%,"Withdraw anytime"
-%%%.depositCrypto.whyInvest.3.desc%%%,"<p>Withdraw your cryptocurrency instantly whenever you need it. No fees and no limits.</p>"
+%%%.depositCrypto.whyInvest.3.desc%%%,"<p>Withdraw your cryptocurrency whenever you need it. No fees and no limits.</p>"
 %%%.depositCrypto.whyInvest.title%%%,"Why invest with us?"
 %%%.depositCrypto.howItWorks.0.caption%%%,"Deposit your crypto"
 %%%.depositCrypto.howItWorks.0.desc%%%,"<p>Send your crypto to our lending pool and we’ll redistribute it among our trusted exchange partners, including the Incognito pDEX.</p>"
@@ -4343,7 +4348,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
       "
 %%%.newHome.faqs.question2%%%,"What makes Constant different from other P2P lending platforms?"
 %%%.newHome.faqs.answer2%%%,"
-        <p>Constant is a fully-secured peer-to-peer lending platform. Every loan is 150% (minimum) backed by collateral, which is sold if borrowers default or its value falls to a threshold, protecting investors (borrowers keep the loan).</p>
+        <p>Constant is a fully-secured peer-to-peer lending platform. Every loan is backed by collateral of up to 150% of the loan amount, which is sold if borrowers default or its value falls to a threshold, protecting investors (borrowers keep the loan).</p>
         <p>Unlike other platforms, Constant pools investor funds into a lending pool or reserve. This means you match instantly, whether you’re a borrower or an investor. We don’t need credit checks and we offer three fixed-term investments to give you flexibility.</p>
         <p>As well as providing you with a platform on which to do business, we also believe in giving you the educational resources to reach your financial goals, fast. To learn more, <a href=""https://myconstant.com/blog"" class=""underline"" target=""_blank"">check out our blog</a>.</p>
         <p><a href=""https://www.myconstant.com/blog/11-reasons-to-invest-with-constant"" class=""underline"" target=""_blank"">Discover 11 reasons to invest with Constant.</a></p>
@@ -4355,7 +4360,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
       "
 %%%.newHome.faqs.question4%%%,"How does Constant protect customers’ assets?"
 %%%.newHome.faqs.answer4%%%,"
-        <p>All loans are 150% (minimum) backed by collateral put up by borrowers. If borrowers default or their collateral falls too much in value, the collateral is sold to repay investors.</p>
+        <p>All loans are up to 150% backed by collateral put up by borrowers. If borrowers default or their collateral falls too much in value, the collateral is sold to repay investors.</p>
         <p>In addition, we use qualified custodial partners (Prime Trust) to manage both fiat (USD) and digital assets. This additional layer of protection helps minimize the threat of theft, mismanagement, or loss of your assets.</p>
         <p><a href=""https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral"" class=""underline"" target=""_blank"">Read more about how we protect your assets.</a></p>
       "
@@ -4527,6 +4532,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.home1.lendingSection.form.tooltip.amount%%%,"<p>How much do you want to lend?</p>"
 %%%.home1.lendingSection.form.tooltip.maxTerm%%%,"<p>This is the maximum amount of time you want to lend your money out for. Unloaned portions are protected by the FDIC, and can be withdrawn at any time.</p>"
 %%%.home1.lendingSection.form.tooltip.minRate%%%,"<p>This is the minimum rate you are willing to accept for your loan. If there is a borrower willing to pay more, you will earn the higher interest rate.</p>"
+%%%.home1.lendingSection.form.placeholder.amount%%%,"How much do you want to lend?"
 %%%.home1.lendingSection.alert.success%%%,"Success"
 %%%.home1.lendingSection.alert.sendEmailVerifyForTrialSuccess%%%,"Thanks! We sent you a verification email to unlock your free trial."
 %%%.home1.lendingSection.alert.sendEmailVerifyForTrialFailed%%%,"Send email failedSorry, we could not send your verification email. Please make sure your email address is valid and try again."
@@ -4782,8 +4788,8 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.home1.faqs.answer4%%%,"
         <p>We’ve taken important steps to safeguard not just your investment, but your returns, too:</p>
         <ol>
-          <li>All of our borrowers must put up 150% of the loan amount as crypto collateral. If they don’t repay, we sell the collateral to repay you.</li>
-          <li>We also include a liquidation threshold to insure against a fall in the collateral’s value. If the value falls to 110% of your principal and earned interest, it’s sold to repay you.</li>
+          <li>All of our borrowers must put up 150% of the loan amount as crypto collateral (100% if stablecoins to reflect their stability). If they don’t repay, we sell the collateral to repay you.</li>
+          <li>We also include a liquidation threshold to insure against a fall in the collateral’s value. If the value falls to 110% of your principal and earned interest (100% if a stablecoin), it’s sold to repay you.</li>
           <li>We only accept vetted, quality cryptocurrencies and cap our exposure to these markets by daily trading volume. This ensures we can sell the collateral should the market dip.</li>
         </ol>
         <p>These protective measures help ensure you get the returns promised. However, all investment involves risk, and despite our best efforts, we can’t guarantee the return of your principal and profit. Therefore please invest wisely.</p>
@@ -4956,17 +4962,14 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.getPrices.depositCollateral.head3%%%,"Outside business hours"
 %%%.getPrices.depositCollateral.head4%%%,"Fee"
 %%%.getPrices.withdrawFiat.head1%%%,"Fiat withdrawal"
-%%%.getPrices.withdrawFiat.head2%%%,"Business hours (9am-6pm GMT +7, Mon-Fri)"
-%%%.getPrices.withdrawFiat.head3%%%,"Outside business hours"
-%%%.getPrices.withdrawFiat.head4%%%,"Fee"
+%%%.getPrices.withdrawFiat.head2%%%,"Funds received in your bank account"
+%%%.getPrices.withdrawFiat.head3%%%,"Fee"
 %%%.getPrices.withdrawCrypto.head1%%%,"Stablecoin withdrawal"
-%%%.getPrices.withdrawCrypto.head2%%%,"Business hours (9am-6pm GMT +7, Mon-Fri)"
-%%%.getPrices.withdrawCrypto.head3%%%,"Outside business hours"
-%%%.getPrices.withdrawCrypto.head4%%%,"Fee"
+%%%.getPrices.withdrawCrypto.head2%%%,"Funds received in your wallet*"
+%%%.getPrices.withdrawCrypto.head3%%%,"Fee"
 %%%.getPrices.withdrawCollateral.head1%%%,"Collateral withdrawal"
-%%%.getPrices.withdrawCollateral.head2%%%,"Business hours (9am-6pm GMT +7, Mon-Fri)"
-%%%.getPrices.withdrawCollateral.head3%%%,"Outside business hours"
-%%%.getPrices.withdrawCollateral.head4%%%,"Fee"
+%%%.getPrices.withdrawCollateral.head2%%%,"Funds received in your wallet"
+%%%.getPrices.withdrawCollateral.head3%%%,"Fee"
 %%%.getPrices.withdrawCollateralData.title1%%%,"ERC20 collaterals <strong>not</strong> deposited in BitGo / BTC, ETH, BEP2, TOMO, BEAM, XZC: <$10,000"
 %%%.getPrices.withdrawCollateralData.title2%%%,"ERC20 collaterals <strong>not</strong> deposited in BitGo / BTC, ETH, BEP2, TOMO, BEAM, XZC: >$10,000"
 %%%.getPrices.withdrawCollateralData.title3%%%,"<a href=""https://docs.google.com/spreadsheets/d/1VIiNXdg7LTJXuUHhtYw2nEH14q4d9rUjW_9QH2zIyzU/edit#gid=0"" target=""_blank"" class=""underline""><strong>ERC20 collaterals deposited in BitGo</strong></a> / Others"
@@ -6401,6 +6404,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.history.depositCrypto.title%%%,"Crypto Lend - Deposits"
 %%%.history.depositCrypto.noHistoryData%%%,"Make a deposit to get started."
 %%%.history.depositCrypto.received%%%,"received"
+%%%.history.depositCrypto.checkBalance%%%,"Check Balance"
 %%%.history.depositCrypto.tabs.crypto%%%,"Crypto"
 %%%.history.depositCrypto.tabs.openOrders%%%,"Open Orders"
 %%%.history.depositCrypto.headers.orderNo%%%,"#"

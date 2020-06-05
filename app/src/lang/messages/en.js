@@ -401,6 +401,8 @@ export default {
       buyOrders: 'Buy Orders',
       myOrders: 'Deposits and withdrawals',
       deposits: 'Deposits',
+      fiatStableCoin: 'Fiat - Stablecoins',
+      cryptoLend: 'Crypto Lend',
       topupHistory: 'Topup History',
       withdraws: 'Withdraws',
       localHistory: 'Transfers and interest earnings',
@@ -424,6 +426,7 @@ export default {
       staking: 'Staking history',
       fiat: 'Fiat',
       crypto: 'Crypto',
+      collateral: 'Collateral',
     },
     wallet: {
       title: 'This is your wallet address you could send Constant to',
@@ -4324,10 +4327,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     applyForm: {
       title:`
         <p class="header">Get paid for your content.</p>
-        <p>Become a Constant affiliate and earn money on your content. <strong>Get $20</strong> for every person<sup>1</sup> you refer plus <strong>20% of their Flex interest</strong> for life. Refer as many people as you like, however you like. </p>
+        <p>Become a Constant affiliate and earn money on your content. <strong>Get $20</strong> for every person<sup>1</sup> you refer plus <strong>20% of their Flex interest in their first year</strong> (capped at $1 million). Refer as many people as you like. </p>
       `,
       titleDesc: `
-      <p class="reference"><sup>1</sup> To qualify for the $20 reward, your referee must be a US citizen.</p>
+      <p class="reference"><sup>1</sup> To qualify for the $20 reward, your referee must be a US citizen (see Affiliate Terms and Conditions).</p>
       `,
       userName: 'Your name',
       userEmail: 'Your email address',
@@ -4380,7 +4383,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         <div class="section-desc-title">YOU EARN MORE</div>
         <div><strong>Earn $20 for every US citizen who registers</strong>, paid instantly after they make their first deposit, and with no limits.</div>
         <div><strong>Then earn 20% of their Flex interest</strong>, paid every second, and capped at a generous $1,000,000.</div>
-        <div><strong>Your referee also gets $10</strong> when they pass KYC. </div>
+        <div><strong>Your referee also gets a $1500 Flex trial</strong> when they pass KYC. We’ll take the trial funds back at the end of the month, but they’ll keep the interest.</div>
       `,
       formula: {
         0: 'per registration',

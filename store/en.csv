@@ -184,7 +184,7 @@
 %%%.headerBar.extraMenu.investStaking.desc%%%,"6%-35% APR. Low minimums. Withdraw anytime."
 %%%.headerBar.extraMenu.investStaking.descHotFix%%%,"6%-35% APR. Low minimums. Withdraw anytime."
 %%%.headerBar.extraMenu.investFlexCrypto.title%%%,"Crypto Lend"
-%%%.headerBar.extraMenu.investFlexCrypto.desc%%%,"Get 10% APY on BTC, ETH, and BNB. Fully backed by Constant."
+%%%.headerBar.extraMenu.investFlexCrypto.desc%%%,"Get 10% APY on BTC, ETH, and BNB."
 %%%.headerBar.extraMenu.borrowFiat.title%%%,"Crypto-backed Loans"
 %%%.headerBar.extraMenu.borrowFiat.desc%%%,"Your rates. Your terms. No credit checks."
 %%%.headerBar.extraMenu.borrowPRV.title%%%,"Crypto Incognito Loans"
@@ -4263,13 +4263,12 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.deposit.compareTable.description%%%,"* Data taken from first 100 results on <a href=""https://www.bankrate.com/banking/savings/rates/"" target=""_blank"" class=""underline"">https://www.bankrate.com/banking/savings/rates/</a> and correct as of April 29, 2020. "
 %%%.depositCrypto.contentHtml%%%,"
       <p>Secured crypto lending</p>
-      <h1>Earn {interest}% APY on BTC, ETH, and BNB.<br/>Compounded and paid every second.<br/>Backed by Constant.</h1>
+      <h1>Earn {interest}% APY on BTC, ETH, and BNB.<br/>Compounded and paid every second.</h1>
       <p/>
-      <p>Invest your idle cryptocurrencies for a return of {interest}% APY. All lending is backed by Constant Guarantee<sup>1</sup> and you can withdraw anytime for free. No fees. No lock-ups. Compounded every second.</p>
-      <p><sup>1</sup>The Constant Guarantee is a $3,000,000 fund that underwrites all investments in Crypto Lend, protecting you from losses.</p>
+      <p>Invest your idle cryptocurrencies for a return of {interest}% APY. Withdraw anytime. No fees. No lock-ups. Compounded every second.</p>
     "
 %%%.depositCrypto.learnMore%%%,"Learn more here"
-%%%.depositCrypto.intro.desc.1%%%,"All lending 100% backed by Constant"
+%%%.depositCrypto.intro.desc.1%%%,"Provide liquidity for DEX"
 %%%.depositCrypto.intro.desc.2%%%,"Interest compounded and paid every second"
 %%%.depositCrypto.intro.desc.3%%%,"Unlimited free withdrawals"
 %%%.depositCrypto.whyInvest.0.caption%%%,"Immediate growth"
@@ -4284,7 +4283,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.depositCrypto.howItWorks.0.caption%%%,"Deposit your crypto"
 %%%.depositCrypto.howItWorks.0.desc%%%,"<p>Send your crypto to our lending pool and we’ll redistribute it among our trusted exchange partners, including the Incognito pDEX.</p>"
 %%%.depositCrypto.howItWorks.1.caption%%%,"Earn {interest}% APY"
-%%%.depositCrypto.howItWorks.1.desc%%%,"<p>Your crypto provides liquidity to exchange and swapping partners and you earn a cut of their trading fees – a generous {interest}% APY backed by the Constant Guarantee.</p>"
+%%%.depositCrypto.howItWorks.1.desc%%%,"<p>Your crypto provides liquidity to exchange and swapping partners and you earn a cut of their trading fees – a generous {interest}% APY.</p>"
 %%%.depositCrypto.howItWorks.2.caption%%%,"Watch your crypto grow"
 %%%.depositCrypto.howItWorks.2.desc%%%,"<p>Interest is compounded and paid every second, giving you immediate returns. When you’re ready, withdraw again to a wallet of your choice absolutely free.</p>"
 %%%.depositCrypto.howItWorks.title%%%,"How it works"

@@ -388,6 +388,8 @@
             "buyOrders": "%%%.me.navigation.buyOrders%%%",
             "myOrders": "%%%.me.navigation.myOrders%%%",
             "deposits": "%%%.me.navigation.deposits%%%",
+            "fiatStableCoin": "%%%.me.navigation.fiatStableCoin%%%",
+            "cryptoLend": "%%%.me.navigation.cryptoLend%%%",
             "topupHistory": "%%%.me.navigation.topupHistory%%%",
             "withdraws": "%%%.me.navigation.withdraws%%%",
             "localHistory": "%%%.me.navigation.localHistory%%%",
@@ -410,7 +412,8 @@
             "accountActivities": "%%%.me.navigation.accountActivities%%%",
             "staking": "%%%.me.navigation.staking%%%",
             "fiat": "%%%.me.navigation.fiat%%%",
-            "crypto": "%%%.me.navigation.crypto%%%"
+            "crypto": "%%%.me.navigation.crypto%%%",
+            "collateral": "%%%.me.navigation.collateral%%%"
         },
         "wallet": {
             "title": "%%%.me.wallet.title%%%",

@@ -293,6 +293,8 @@
 %%%.me.navigation.buyOrders%%%,"Buy Orders"
 %%%.me.navigation.myOrders%%%,"Deposits and withdrawals"
 %%%.me.navigation.deposits%%%,"Deposits"
+%%%.me.navigation.fiatStableCoin%%%,"Fiat - Stablecoins"
+%%%.me.navigation.cryptoLend%%%,"Crypto Lend"
 %%%.me.navigation.topupHistory%%%,"Topup History"
 %%%.me.navigation.withdraws%%%,"Withdraws"
 %%%.me.navigation.localHistory%%%,"Transfers and interest earnings"
@@ -316,6 +318,7 @@
 %%%.me.navigation.staking%%%,"Staking history"
 %%%.me.navigation.fiat%%%,"Fiat"
 %%%.me.navigation.crypto%%%,"Crypto"
+%%%.me.navigation.collateral%%%,"Collateral"
 %%%.me.wallet.title%%%,"This is your wallet address you could send Constant to"
 %%%.me.wallet.walletAddress%%%,"Your ether wallet: "
 %%%.me.kyc.needEmail%%%,"You need to verify your email first."
@@ -3416,10 +3419,10 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.affiliates.greetingForm.inviteFriends%%%,"Invite friends"
 %%%.affiliates.applyForm.title%%%,"
         <p class=""header"">Get paid for your content.</p>
-        <p>Become a Constant affiliate and earn money on your content. <strong>Get $20</strong> for every person<sup>1</sup> you refer plus <strong>20% of their Flex interest</strong> for life. Refer as many people as you like, however you like. </p>
+        <p>Become a Constant affiliate and earn money on your content. <strong>Get $20</strong> for every person<sup>1</sup> you refer plus <strong>20% of their Flex interest in their first year</strong> (capped at $1 million). Refer as many people as you like. </p>
       "
 %%%.affiliates.applyForm.titleDesc%%%,"
-      <p class=""reference""><sup>1</sup> To qualify for the $20 reward, your referee must be a US citizen.</p>
+      <p class=""reference""><sup>1</sup> To qualify for the $20 reward, your referee must be a US citizen (see Affiliate Terms and Conditions).</p>
       "
 %%%.affiliates.applyForm.userName%%%,"Your name"
 %%%.affiliates.applyForm.userEmail%%%,"Your email address"
@@ -3458,7 +3461,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
         <div class=""section-desc-title"">YOU EARN MORE</div>
         <div><strong>Earn $20 for every US citizen who registers</strong>, paid instantly after they make their first deposit, and with no limits.</div>
         <div><strong>Then earn 20% of their Flex interest</strong>, paid every second, and capped at a generous $1,000,000.</div>
-        <div><strong>Your referee also gets $10</strong> when they pass KYC. </div>
+        <div><strong>Your referee also gets a $1500 Flex trial</strong> when they pass KYC. We’ll take the trial funds back at the end of the month, but they’ll keep the interest.</div>
       "
 %%%.affiliates.whyBecome.formula.0%%%,"per registration"
 %%%.affiliates.whyBecome.formula.1%%%," "

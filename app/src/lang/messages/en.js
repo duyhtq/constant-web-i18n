@@ -265,7 +265,7 @@ export default {
       },
       investFlexCrypto: {
         title: 'Crypto Lend',
-        desc: 'Get 10% APY on BTC, ETH, and BNB. Fully backed by Constant.',
+        desc: 'Get 10% APY on BTC, ETH, and BNB.',
       },
       borrowFiat: {
         title: 'Crypto-backed Loans',
@@ -5477,15 +5477,14 @@ While Constant processes your deposits and withdrawals free of charge, transacti
   depositCrypto: {
     contentHtml: `
       <p>Secured crypto lending</p>
-      <h1>Earn {interest}% APY on BTC, ETH, and BNB.<br/>Compounded and paid every second.<br/>Backed by Constant.</h1>
+      <h1>Earn {interest}% APY on BTC, ETH, and BNB.<br/>Compounded and paid every second.</h1>
       <p/>
-      <p>Invest your idle cryptocurrencies for a return of {interest}% APY. All lending is backed by Constant Guarantee<sup>1</sup> and you can withdraw anytime for free. No fees. No lock-ups. Compounded every second.</p>
-      <p><sup>1</sup>The Constant Guarantee is a $3,000,000 fund that underwrites all investments in Crypto Lend, protecting you from losses.</p>
+      <p>Invest your idle cryptocurrencies for a return of {interest}% APY. Withdraw anytime. No fees. No lock-ups. Compounded every second.</p>
     `,
     learnMore: 'Learn more here',
     intro: {
       desc: {
-        1: 'All lending 100% backed by Constant',
+        1: 'Provide liquidity for DEX',
         2: 'Interest compounded and paid every second',
         3: 'Unlimited free withdrawals',
       }
@@ -5517,7 +5516,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       },
       1: {
         caption: 'Earn {interest}% APY',
-        desc: `<p>Your crypto provides liquidity to exchange and swapping partners and you earn a cut of their trading fees – a generous {interest}% APY backed by the Constant Guarantee.</p>`
+        desc: `<p>Your crypto provides liquidity to exchange and swapping partners and you earn a cut of their trading fees – a generous {interest}% APY.</p>`
       },
       2: {
         caption: 'Watch your crypto grow',

@@ -180,6 +180,8 @@
 %%%.headerBar.extraMenu.investFlex.desc%%%,"{percent}% APY. Fully secured. Withdraw anytime."
 %%%.headerBar.extraMenu.investCustom.title%%%,"Fiat Custom"
 %%%.headerBar.extraMenu.investCustom.desc%%%,"Your terms. Best rates. Fully secured."
+%%%.headerBar.extraMenu.investLO.title%%%,"Buy-back guaranteed"
+%%%.headerBar.extraMenu.investLO.desc%%%,"Earn up to 13% APR. Terms from 6-15 months. Backed by originator guarantee."
 %%%.headerBar.extraMenu.investStaking.title%%%,"Crypto Staking"
 %%%.headerBar.extraMenu.investStaking.desc%%%,"6%-35% APR. Low minimums. Withdraw anytime."
 %%%.headerBar.extraMenu.investStaking.descHotFix%%%,"6%-35% APR. Low minimums. Withdraw anytime."
@@ -827,6 +829,7 @@
 %%%.me.history.orderType.21%%%,"Referral Bonus"
 %%%.me.history.orderType.22%%%,"Purchase"
 %%%.me.history.orderType.23%%%,"Refund"
+%%%.me.history.orderType.26%%%,"LO Investment"
 %%%.me.history.orderType.101%%%,"Bonus"
 %%%.me.history.orderType.102%%%,"Coupon Signup"
 %%%.me.history.orderType.received%%%,"Received"
@@ -1114,6 +1117,8 @@
 %%%.me.proSaving.listApplications.trial_description%%%,"You keep the interest. Term has ended"
 %%%.me.proSaving.listApplications.saving_title%%%,"Investments"
 %%%.me.proSaving.listApplications.loans_title%%%,"Loans"
+%%%.me.proSaving.listApplications.loanOriginatorInvestments%%%,"Buy-back guaranteed Investments"
+%%%.me.proSaving.listApplications.loanOriginatorInvestmentsDesc%%%,"Investments backed by the loan originator’s buy-back guarantee. Unlike crypto-backed investments, there might not always be collateral securing the loan. Instead, the loan originator guarantees to buy back the loan should the borrower default for 60 days or more, returning your principal and earned profit."
 %%%.me.proSaving.listApplications.coin2coin_title%%%,"Crypto Credit"
 %%%.me.proSaving.listApplications.secondInvestments%%%,"Secondary Market"
 %%%.me.proSaving.listApplications.secondInvestmentsDesc%%%,"Buy and sell matched investments on our secondary market. Sell your investment to end your term early or buy another investor’s order to earn their interest. View or cancel your secondary market orders below."
@@ -3271,6 +3276,112 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.home.proLending.watchBoard.invest.title%%%,"Investments"
 %%%.home.proLending.watchBoard.borrow.title%%%,"Borrows"
 %%%.home.proLending.balances%%%,"Balances"
+%%%.home.loanOriginator.listApplications.shortTerm%%%,"Best Interest"
+%%%.home.loanOriginator.listApplications.diversified%%%,"Most Secure"
+%%%.home.loanOriginator.listApplications.noHistoryData%%%,"Make your first investment of any amount today."
+%%%.home.loanOriginator.listApplications.headers.createdDate%%%,"Date created"
+%%%.home.loanOriginator.listApplications.headers.packageId%%%,"Auto Invest Plan"
+%%%.home.loanOriginator.listApplications.headers.amount%%%,"Invested amount"
+%%%.home.loanOriginator.listApplications.headers.investAmount%%%,"Maximum investment amount"
+%%%.home.loanOriginator.listApplications.headers.status%%%,"Status"
+%%%.home.loanOriginator.listApplications.headers.action%%%," "
+%%%.home.loanOriginator.listApplications.headers.id%%%,"ID"
+%%%.home.loanOriginator.listApplications.headers.assignmentAgreement%%%,"Assignment Agreement"
+%%%.home.loanOriginator.listApplications.headers.investedDate%%%,"Date invested"
+%%%.home.loanOriginator.listApplications.headers.totalInvestAmount%%%,"Total investment amount"
+%%%.home.loanOriginator.listApplications.headers.loanStatus%%%,"Loan status"
+%%%.home.loanOriginator.listApplications.headers.totalPaymentReceived%%%,"Total payment received"
+%%%.home.loanOriginator.listApplications.headers.totalPaymentReceivedDesc%%%,"Total interest payment and principal payment (if applicable) that have been received, credited and settled in the Investor's account"
+%%%.home.loanOriginator.listApplications.headers.interestRate%%%,"Interest rate"
+%%%.home.loanOriginator.listApplications.headers.interestAccrued%%%,"Interest accrued"
+%%%.home.loanOriginator.listApplications.headers.interestAccruedDesc%%%,"interest earned but not yet being paid out, calculated proportionately based on the number of days from last payment date over total number of days from last payment day to next schedule payment date"
+%%%.home.loanOriginator.listApplications.headers.receivables%%%,"Pending payments"
+%%%.home.loanOriginator.listApplications.headers.latePaymentAmount%%%,"Late payment amount"
+%%%.home.loanOriginator.listApplications.headers.receivablesDesc%%%,"Money that is currently in the process of being credited to your account. The borrower has made a payment, and we're waiting for the lending company to transfer the money to us. We'll credit the money to your account as soon as we have it."
+%%%.home.loanOriginator.listApplications.loanOriginatorHeaders.loanOriginator%%%,"Loan Originator"
+%%%.home.loanOriginator.listApplications.loanOriginatorHeaders.loanOriginatorDesc%%%,"The lending company that orginates and services the Loans listed on Constant Marketplace"
+%%%.home.loanOriginator.listApplications.loanOriginatorHeaders.constantRate%%%,"Rating"
+%%%.home.loanOriginator.listApplications.loanOriginatorHeaders.loanType%%%,"Loan Type"
+%%%.home.loanOriginator.listApplications.loanOriginatorHeaders.loanTypeDesc%%%,"Individual icons represents different types of loans offered by the Loan Originator on Constant Marketplace such as personal loans, business loans, car loans, mortgages, invoice financing."
+%%%.home.loanOriginator.listApplications.loanOriginatorHeaders.currency%%%,"Currency"
+%%%.home.loanOriginator.listApplications.loanOriginatorHeaders.term%%%,"Term"
+%%%.home.loanOriginator.listApplications.loanOriginatorHeaders.remainingTerm%%%,"Remaining Term"
+%%%.home.loanOriginator.listApplications.loanOriginatorHeaders.paymentSchedule%%%,"Payment Schedule"
+%%%.home.loanOriginator.listApplications.loanOriginatorHeaders.nextPaymentDate%%%,"Next Payment Date"
+%%%.home.loanOriginator.listApplications.loanOriginatorHeaders.estimatedNextPayment%%%,"Estimated Next Payment"
+%%%.home.loanOriginator.listApplications.loanOriginatorHeaders.action%%%," "
+%%%.home.loanOriginator.listApplications.paymentScheduleHeaders.date%%%,"Date"
+%%%.home.loanOriginator.listApplications.paymentScheduleHeaders.principal%%%,"Principal"
+%%%.home.loanOriginator.listApplications.paymentScheduleHeaders.interest%%%,"Interest"
+%%%.home.loanOriginator.listApplications.paymentScheduleHeaders.total%%%,"Total"
+%%%.home.loanOriginator.listApplications.paymentScheduleHeaders.paymentReceived%%%,"Payment Received"
+%%%.home.loanOriginator.listApplications.paymentScheduleHeaders.paymentDate%%%,"Payment Date"
+%%%.home.loanOriginator.listApplications.paymentScheduleHeaders.status%%%,"Status"
+%%%.home.loanOriginator.listApplications.overview.headers.investCount%%%,"My investments"
+%%%.home.loanOriginator.listApplications.overview.headers.investAmount%%%,"Total"
+%%%.home.loanOriginator.listApplications.overview.headers.currentAmount%%%,"Current"
+%%%.home.loanOriginator.listApplications.overview.headers.pendingAmount%%%,"Pending payments"
+%%%.home.loanOriginator.listApplications.overview.headers.late115Amount%%%,"1-15 days late"
+%%%.home.loanOriginator.listApplications.overview.headers.late1630Amount%%%,"16-30 days late"
+%%%.home.loanOriginator.listApplications.overview.headers.late3160Amount%%%,"31-60 days late"
+%%%.home.loanOriginator.listApplications.overview.headers.lateAmount%%%,"60+ days late"
+%%%.home.loanOriginator.listApplications.overview.headers.defaultAmount%%%,"Default"
+%%%.home.loanOriginator.listApplications.overview.headers.badDebtAmount%%%,"Bad debt"
+%%%.home.loanOriginator.listApplications.paymentScheduleStatus.paid%%%,"Paid"
+%%%.home.loanOriginator.listApplications.paymentScheduleStatus.scheduled%%%,"Schedule"
+%%%.home.loanOriginator.listApplications.paymentProcessStatus.scheduled%%%,"Schedule"
+%%%.home.loanOriginator.listApplications.paymentProcessStatus.pending%%%,"Pending"
+%%%.home.loanOriginator.listApplications.paymentProcessStatus.processed%%%,"Processed"
+%%%.home.loanOriginator.listApplications.noInvestedLoans%%%,"No invested loan found"
+%%%.home.loanOriginator.listApplications.footer.desc%%%,"Showing {start} - {end} of {total} selected entries"
+%%%.home.loanOriginator.listApplications.mapStatus.overview%%%,"Overview"
+%%%.home.loanOriginator.listApplications.mapStatus.settings%%%,"Auto Invest settings"
+%%%.home.loanOriginator.listApplications.mapStatus.matched%%%,"Matched"
+%%%.home.loanOriginator.listApplications.mapStatus.closed%%%,"Done"
+%%%.home.loanOriginator.listApplications.mapStatus1.active%%%,"Active"
+%%%.home.loanOriginator.listApplications.mapStatus1.stopped%%%,"Deactivated"
+%%%.home.loanOriginator.listApplications.mapStatus1.ready%%%,"Ready"
+%%%.home.loanOriginator.listApplications.mapStatus1.activating%%%,"Activating"
+%%%.home.loanOriginator.listApplications.mapStatus1.closed%%%,"Closed"
+%%%.home.loanOriginator.listApplications.start%%%,"Activate"
+%%%.home.loanOriginator.listApplications.startConfirm.shortTerm%%%,"
+            <p>A Short Term Investment Plan is ideal if you only want to invest for short periods. The term is {term} months and your estimated return is {fromRate}% APR.</p> 
+            <p>Activate your Best Interest Investment Plan?</p>
+          "
+%%%.home.loanOriginator.listApplications.startConfirm.diversified%%%,"
+            <p>A Most Secure Investment Plan offers the best balance of risk and reward over a term of {term} months. Your estimated return is {fromRate}-{toRate}% APR.</p> 
+            <p>Activate your Most Secure Investment Plan?</p>
+          "
+%%%.home.loanOriginator.listApplications.stop%%%,"Deactivate"
+%%%.home.loanOriginator.listApplications.stopConfirm.shortTerm%%%,"
+            <p>If you deactivate your Best Interest Investment Plan, your available funds – if any – will not be used to invest in new loans.</p> 
+            <p>Deactivate your Best Interest Investment Plan?</p>
+          "
+%%%.home.loanOriginator.listApplications.stopConfirm.diversified%%%,"
+            <p>If you deactivate your Most Secure Investment Plan, your available funds – if any – will not be used to invest in new loans.</p> 
+            <p>Deactivate your Most Secure Investment Plan?</p>
+          "
+%%%.home.loanOriginator.listApplications.delete%%%,"Delete"
+%%%.home.loanOriginator.listApplications.deleteConfirm%%%,"Are you sure you want to delete this package?"
+%%%.home.loanOriginator.listApplications.investedLoanStatus.current%%%,"Paid"
+%%%.home.loanOriginator.listApplications.investedLoanStatus.scheduled%%%,"Scheduled"
+%%%.home.loanOriginator.listApplications.investedLoanStatus.late%%%,"Late"
+%%%.home.loanOriginator.listApplications.investedLoanStatus.default%%%,"Default"
+%%%.home.loanOriginator.listApplications.reInvest%%%,"Auto Reinvest"
+%%%.home.loanOriginator.listApplications.dialog.reInvestSetting.messageConfirm.true%%%,"
+                <p>When your term ends, your interest and principal will return to your Constant account. You will then have to add more funds to invest in new loans.</p>
+                <p>Are you sure you want to disable auto-reinvest?</p>
+              "
+%%%.home.loanOriginator.listApplications.dialog.reInvestSetting.messageConfirm.false%%%,"
+                <p>When your term ends, your interest and principal will be reinvested in new loans automatically. Your can disable this feature at any time.</p>
+                <p>Enable auto-reinvest?</p>
+              "
+%%%.home.loanOriginator.listApplications.dialog.reInvestSetting.autoRenewInvestmentSuccess.true%%%,"Disabled Auto Reinvest successfully"
+%%%.home.loanOriginator.listApplications.dialog.reInvestSetting.autoRenewInvestmentSuccess.false%%%,"Enabled Auto Reinvest successfully"
+%%%.home.loanOriginator.listApplications.dialog.reInvestSetting.autoRenewInvestmentFailed.true%%%,"Failed to disable Auto Reinvest"
+%%%.home.loanOriginator.listApplications.dialog.reInvestSetting.autoRenewInvestmentFailed.false%%%,"Failed to enable Auto Reinvest"
+%%%.home.loanOriginator.listApplications.dialog.reInvestSetting.confirm%%%,"Yes"
+%%%.home.loanOriginator.listApplications.dialog.reInvestSetting.cancel%%%,"No"
 %%%.home.bottomBannerText%%%,"You deserve a better bank"
 %%%.home.bottomBannerButton%%%,"Open an account"
 %%%.home.topBannerText%%%,"Better than your bank."
@@ -4298,74 +4409,70 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.newHome.oldBanner.borrow.title%%%,"Borrow the way you want"
 %%%.newHome.oldBanner.borrow.cap%%%,"No limit. No credit checks. Terms from 1-6 months."
 %%%.newHome.oldBanner.borrow.btn%%%,"Borrow"
-%%%.newHome.banner.title1%%%,"Experience <span class=textSuccess"">fully secured</span> peer-to-peer lending."
-%%%.newHome.banner.subTitle%%%,"Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free."
-%%%.newHome.banner.invest.title%%%,"Invest"
-%%%.newHome.banner.invest.cap%%%,"
+%%%.newHome.newBanner.title1%%%,"Experience <span class=textSuccess"">fully secured</span> peer-to-peer lending."
+%%%.newHome.newBanner.subTitle%%%,"Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free."
+%%%.newHome.newBanner.invest.title%%%,"
+          <p>
+            <strong>INVEST</strong>
+            Crypto-backed
+          </p>
+        "
+%%%.newHome.newBanner.invest.cap%%%,"
           <p>
             <strong>7%</strong>
-            <br />
-            Interest Rate
+            Interest rate
           </p>
-          <p class=""clearBottom"">
-            digital collateral-backed
-          </p>
-        "
-%%%.newHome.banner.invest.btn%%%,"Explore"
-%%%.newHome.banner.borrow.title%%%,"Borrow"
-%%%.newHome.banner.borrow.cap%%%,"
           <p>
-            <strong>5% - 20%</strong>
-            <br />
-            Interest Rate
+            <strong>1-9 MONTHS</strong>
+            Loan term
           </p>
           <p class=""clearBottom"">
-            <strong>411 516</strong>
-            <br />
-            Available loans
+            All lending secured by digital assets
           </p>
         "
-%%%.newHome.banner.borrow.btn%%%,"Explore"
-%%%.newHome.banner.loanOriginator.title%%%,"LO Invest"
-%%%.newHome.banner.loanOriginator.cap%%%,"
+%%%.newHome.newBanner.invest.btn%%%,"Explore"
+%%%.newHome.newBanner.borrow.title%%%,"
           <p>
-            <strong>5% - 20%</strong>
-            <br />
-            Interest Rate
-          </p>
-          <p class=""clearBottom"">
-            <strong>1 007 235</strong>
-            <br />
-            Available loans
+            <strong>BORROW</strong>
+            Crypto Collateral
           </p>
         "
-%%%.newHome.banner.loanOriginator.btn%%%,"Explore"
+%%%.newHome.newBanner.borrow.cap%%%,"
+          <p>
+            <strong>7%</strong>
+            Interest rate
+          </p>
+          <p>
+            <strong>1-9 MONTHS</strong>
+            Loan term
+          </p>
+          <p class=""clearBottom"">
+            Borrow against 60+ cryptocurrencies
+          </p>
+        "
+%%%.newHome.newBanner.borrow.btn%%%,"Explore"
+%%%.newHome.newBanner.loanOriginator.title%%%,"
+          <p>
+            <strong>INVEST</strong>
+            Buy-back Guaranteed
+          </p>
+        "
+%%%.newHome.newBanner.loanOriginator.cap%%%,"
+          <p>
+            <strong>5-20% APR</strong>
+            Interest rate
+          </p>
+          <p>
+            <strong>6-15 MONTHS</strong>
+            Loan term
+          </p>
+          <p class=""clearBottom"">
+            All lending secured by buy-back guarantee
+          </p>
+        "
+%%%.newHome.newBanner.loanOriginator.btn%%%,"Explore"
 %%%.newHome.crypto.bitGo%%%,"$100M escrow insurance"
 %%%.newHome.crypto.desc%%%,"Fully secured, fully backed. All lending is secured by crypto collateral. Smart contracts and Prime Trust custody protect collateral until it’s returned to you."
-%%%.newHome.faqs.question1%%%,"What is peer-to-peer (P2P) lending?"
-%%%.newHome.faqs.answer1%%%,"
-      <p>P2P lending is where one person lends to another in return for interest, without any third party getting in the way. Unlike bank lending, where the bank lends your deposits and keeps the lion’s share of interest, P2P lending lets you keep all the profits yourself.</p>
-      <p>On our platform, you also set your own rates and terms, which gives you plenty of flexibility to find the right investment. We also differ from other P2P lending platforms in that we only use liquid collateral – in other words, we secure loans with collateral that’s easy to sell if borrowers default, ensuring you get your money back (plus interest).</p>
-      <p>New to P2P lending? <a href=""https://www.myconstant.com/blog/peer-to-peer-lending-what-you-should-know-before-investing"" class=""underline"" target=""_blank"">Here’s what to know before you invest.</a></p>
-      "
-%%%.newHome.faqs.question2%%%,"What makes Constant different from other P2P lending platforms?"
-%%%.newHome.faqs.answer2%%%,"
-        <p>Constant is a fully-secured peer-to-peer lending platform. Every loan is backed by collateral of up to 150% of the loan amount, which is sold if borrowers default or its value falls to a threshold, protecting investors (borrowers keep the loan).</p>
-        <p>Unlike other platforms, Constant pools investor funds into a lending pool or reserve. This means you match instantly, whether you’re a borrower or an investor. We don’t need credit checks and we offer three fixed-term investments to give you flexibility.</p>
-        <p>As well as providing you with a platform on which to do business, we also believe in giving you the educational resources to reach your financial goals, fast. To learn more, <a href=""https://myconstant.com/blog"" class=""underline"" target=""_blank"">check out our blog</a>.</p>
-        <p><a href=""https://www.myconstant.com/blog/11-reasons-to-invest-with-constant"" class=""underline"" target=""_blank"">Discover 11 reasons to invest with Constant.</a></p>
-      "
-%%%.newHome.faqs.question3%%%,"Who can participate?"
-%%%.newHome.faqs.answer3%%%,"
-        <p>Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment). If you intend to invest fiat (USD), you will also need to pass KYC (Know Your Customer) checks.</p>
-        <p><a href=""https://www.myconstant.com/blog/how-to-verify-your-id-on-constant-kyc"" class=""underline"" target=""_blank"">How to verify your ID (KYC).</a></p>
-      "
-%%%.newHome.faqs.question4%%%,"How does Constant protect customers’ assets?"
-%%%.newHome.faqs.answer4%%%,"
-        <p>All loans are up to 150% backed by collateral put up by borrowers. If borrowers default or their collateral falls too much in value, the collateral is sold to repay investors.</p>
-        <p>In addition, we use qualified custodial partners (Prime Trust) to manage both fiat (USD) and digital assets. This additional layer of protection helps minimize the threat of theft, mismanagement, or loss of your assets.</p>
-        <p><a href=""https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral"" class=""underline"" target=""_blank"">Read more about how we protect your assets.</a></p>
-      "
 %%%.newHome.howItWorks.title%%%,"How it works."
 %%%.newHome.howItWorks.desc%%%,"The Constant algorithm pools investor funds into a lending reserve from which borrowers can get loans in return for interest. Borrowers secure their loans with collateral which is sold if they default or its value falls to a threshold, eliminating the need for credit checks."
 %%%.newHome.howItWorks.content.1.title%%%,"1. Investor"
@@ -5310,6 +5417,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.menuMobile.language%%%,"Language"
 %%%.menuMobile.setting%%%,"Setting"
 %%%.menuMobile.btnInvestments%%%,"Investments"
+%%%.menuMobile.btnBuyBackInvestments%%%,"<div class=""textLeft""><small>Buy back guaranteed</small><div>Investments</div></div>"
 %%%.menuMobile.btnLoans%%%,"Loans"
 %%%.menuMobile.btnSecondaryMarket%%%,"<div class=""textLeft""><small>Secondary</small><div>Market</div></div>"
 %%%.seo.homepage.title%%%,"Secured Peer-to-Peer Lending Platform for Crypto-Backed Loans - Constant"
@@ -6461,3 +6569,192 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.helpAndSupport.socials.tw.link%%%,"https://twitter.com/constantp2p"
 %%%.helpAndSupport.socials.linkedin.title%%%,"Linkedin"
 %%%.helpAndSupport.socials.linkedin.link%%%,"https://www.linkedin.com/company/constantp2p/"
+%%%.loanOriginators.header.tabs.autoInvest%%%,"Auto Invest"
+%%%.loanOriginators.header.tabs.manualInvest%%%,"Manual Invest"
+%%%.loanOriginators.header.tabs.loanOriginator%%%,"Loan Originators"
+%%%.loanOriginators.header.desc.autoInvest%%%,"Auto Invest automates your investment strategy to save you time and effort. Simply choose the plan that best fits your goals and our matching algorithm will do the rest."
+%%%.loanOriginators.header.desc.manualInvest%%%,"Manual Invest puts you in the driving seat. Set your investment criteria to filter relevant loans. Then choose one or more loans and the amount to invest in each. Easy."
+%%%.loanOriginators.header.desc.loanOriginator%%%,"We work with the best P2P lenders in the world to offer you more choice and better returns. Learn more about who we work with and view their available loans here."
+%%%.loanOriginators.manualInvest.ads.desc%%%,"
+        Advertisement goes here. Just another line to fill up empty space of this ad.
+        "
+%%%.loanOriginators.manualInvest.ads.actionText%%%,"Invest"
+%%%.loanOriginators.manualInvest.howItWorks.0%%%,"<p>Set your lending criteria using the options on the left.</p>"
+%%%.loanOriginators.manualInvest.howItWorks.1%%%,"<p>Choose a loan from the results below.</p>"
+%%%.loanOriginators.manualInvest.howItWorks.2%%%,"<p>Enter the amount you want to invest.</p>"
+%%%.loanOriginators.manualInvest.howItWorks.3%%%,"<p>Click <strong>invest</strong> and then confirm your order on the next screen.</p>"
+%%%.loanOriginators.manualInvest.sortBy%%%,"Sort by: "
+%%%.loanOriginators.manualInvest.sortHeaders.mostPopuplar%%%,"Most popular"
+%%%.loanOriginators.manualInvest.sortHeaders.issuedDate%%%,"Issued Date"
+%%%.loanOriginators.manualInvest.sortHeaders.loanType%%%,"Loan Type"
+%%%.loanOriginators.manualInvest.sortHeaders.constantRate%%%,"Constant Rate"
+%%%.loanOriginators.manualInvest.sortHeaders.term%%%,"Term"
+%%%.loanOriginators.manualInvest.sortHeaders.interestRate%%%,"Interest Rate"
+%%%.loanOriginators.manualInvest.sortHeaders.investmentAmount%%%,"Available For Investment"
+%%%.loanOriginators.manualInvest.headers.id%%%,"ID"
+%%%.loanOriginators.manualInvest.headers.loanOriginator%%%,"Loan Originator"
+%%%.loanOriginators.manualInvest.headers.loanOriginator_desc%%%,"The lending company that orginates and services the Loans listed on Constant Marketplace"
+%%%.loanOriginators.manualInvest.headers.issuedDate%%%,"Issued Date"
+%%%.loanOriginators.manualInvest.headers.loanType%%%,"Loan Type"
+%%%.loanOriginators.manualInvest.headers.loanType_desc%%%,"Individual icons represents different types of loans offered by the Loan Originator on Constant Marketplace such as personal loans, business loans, car loans, mortgages, invoice financing."
+%%%.loanOriginators.manualInvest.headers.constantRate%%%,"Rating"
+%%%.loanOriginators.manualInvest.headers.constantRate_desc%%%,"Constant assigns ratings for Loan Originators that offers Loans on Constant marketplace. Constant Ratings ranges from ""A+"" to ""C-"" relfecting the creditworthiness/counterparty risks of the Loan Originators. ""A+"" rating represent highest creditworthiness while ""C-"" rating is the lowest creditworthiness rating that is allowed to be listed on Constant Marketplace."
+%%%.loanOriginators.manualInvest.headers.term%%%,"Term"
+%%%.loanOriginators.manualInvest.headers.interestRate%%%,"Interest Rate"
+%%%.loanOriginators.manualInvest.headers.interestRate_desc%%%,"The rate at which loans are available for investors to invest in. Interest rate is generally stated in the form of annual NET interest rate paid to the investor. This is the final interest rate earned by the investor which already reflected all potential fees, commission and reserves (if any)."
+%%%.loanOriginators.manualInvest.headers.loanAmount%%%,"Loan Amount / Available for investment"
+%%%.loanOriginators.manualInvest.headers.investmentAmount%%%,"Your investment amount"
+%%%.loanOriginators.manualInvest.headers.loanStatus%%%,"Loan Status"
+%%%.loanOriginators.manualInvest.headers.country%%%,"Country"
+%%%.loanOriginators.manualInvest.headers.country_desc%%%,"The flags indicate the country in which the Loan was issued by the Loan Originator on Constant marketplace"
+%%%.loanOriginators.manualInvest.headers.currency%%%,"Currency"
+%%%.loanOriginators.manualInvest.headers.currency_desc%%%,"The denominated currency of the Claim Right"
+%%%.loanOriginators.manualInvest.headers.availableForInvestment%%%,"Loan Amount available for investment"
+%%%.loanOriginators.manualInvest.headers.availableForInvestment_desc%%%,"This is the total amount available to investors for investment consisting of remaining principal of the loan and any accrued interests."
+%%%.loanOriginators.manualInvest.headers.remainingTerm%%%,"Remaining Term"
+%%%.loanOriginators.manualInvest.headers.remainingTerm_desc%%%,"This is the period measured in months and days left until the full repayment of the loan is set. "
+%%%.loanOriginators.manualInvest.headers.buyBackGuarantee%%%,"Buy back Guarantee"
+%%%.loanOriginators.manualInvest.headers.buyBackGuarantee_desc%%%,"A buyback guarantee is a guarantee issued by the loan originator to the investor for a particular loan, whereby the loan orginator promises to repurchase the loan from the investor if that particular loan is delayed by more than 60 days. The buyback guarantee is given at an individual loan level and is marked with the symbol of a shield. If a loan with a buyback guarantee is delayed by more than 60 days, the loan will be bought back by the loan originator from the investor at the nominal value of outstanding principal, plus accrued interest. A buy back guarantee is only as good as the loan originator's financial capability to honor such guarantee at the time of a buy back event being triggered. A buy back guarantee, by no mean is a guarantee from Constant Marketplace and its associates."
+%%%.loanOriginators.manualInvest.headers.scheduleExtension%%%,"Schedule extension"
+%%%.loanOriginators.manualInvest.headers.scheduleExtension_desc%%%,"During the first 30 days after the due date of a loan payment, the borrower can opt for extending the loan payment schedule. The maximum number of extensions depends on the loan agreement. If the lending company agrees, the loan will be automatically updated, with the new schedule, and the due dates for all outstanding payments will be extended by up to 31 days. Investors will continue to earn the same interest throughout the remaining loan term."
+%%%.loanOriginators.manualInvest.headers.issueDate%%%,"Issue Date"
+%%%.loanOriginators.manualInvest.headers.issueDate_desc%%%,"The date when the loan was originally issued by the Loan Originator to the borrower"
+%%%.loanOriginators.manualInvest.headers.maturityDate%%%,"Maturity Date"
+%%%.loanOriginators.manualInvest.headers.maturityDate_desc%%%,"The date date on which a borrower's final loan payment is due and the Loan is scheduled to be fully repaid."
+%%%.loanOriginators.manualInvest.headers.loanPaymentStatus%%%,"Loan Payment Status"
+%%%.loanOriginators.manualInvest.headers.loanPaymentStatus_desc%%%,"Loan Payment Status"
+%%%.loanOriginators.manualInvest.headers.paymentType.title%%%,"Payment Type"
+%%%.loanOriginators.manualInvest.headers.paymentType.desc%%%,"
+          Payment type: 
+          <p>1. Full amortization - Fixed regular payments which consist of interest payment and principal payment. Full amortization reduces loan outstanding balance to zero at the end of the term.</p>
+          <p>2. Interest only - Regular interest payment only. Full principal is paid at the end of the term.</p>
+          "
+%%%.loanOriginators.manualInvest.headers.paymentType.interest_only.title%%%,"Interest only"
+%%%.loanOriginators.manualInvest.headers.paymentType.interest_only.desc%%%,"Interest only - Regular interest payment only. Full principal is paid at the end of the term."
+%%%.loanOriginators.manualInvest.headers.paymentType.installments.title%%%,"Full amortization"
+%%%.loanOriginators.manualInvest.headers.paymentType.installments.desc%%%,"Full amortization - Fixed regular payments which consist of interest payment and principal payment. Full amortization reduces loan outstanding balance to zero at the end of the term."
+%%%.loanOriginators.manualInvest.details.backToLoan%%%,"Back to loan list"
+%%%.loanOriginators.manualInvest.details.loanId%%%,"LOAN ID"
+%%%.loanOriginators.manualInvest.details.loanDetails%%%," Loan Details"
+%%%.loanOriginators.manualInvest.details.loanOriginatorDetails%%%,"Loan Originator Details"
+%%%.loanOriginators.manualInvest.details.loanOriginator%%%,"Loan Originator"
+%%%.loanOriginators.manualInvest.details.loanOriginator_desc%%%,"The lending company that orginates and services the Loans listed on Constant Marketplace"
+%%%.loanOriginators.manualInvest.details.legalEntity%%%,"Legal Entity"
+%%%.loanOriginators.manualInvest.details.availableAmount%%%,"Available amount:"
+%%%.loanOriginators.manualInvest.details.yourInvestment%%%,"Your investment: "
+%%%.loanOriginators.manualInvest.details.paymentSchedule%%%,"Payment Schedule"
+%%%.loanOriginators.manualInvest.details.paymentSchedule_desc%%%,"The detailed schedule of loan payments for each Loan that is contractually set at the start of the orginal Loan Agreement or Loan Assignment Agreement. In the Assignment Agreement, this refers to the Claim Payment Schedule which is the schedule payments calculated based on the Loan Amount transferred to the Investor from the Loan Originator."
+%%%.loanOriginators.manualInvest.footer.desc%%%,"Showing {start} - {end} of {total} selected entries"
+%%%.loanOriginators.manualInvest.investButton%%%,"Invest"
+%%%.loanOriginators.manualInvest.filter.title%%%,"Your investment criteria"
+%%%.loanOriginators.manualInvest.filter.loanOriginator%%%,"Loan Originator"
+%%%.loanOriginators.manualInvest.filter.issuedDate%%%,"Issued Date"
+%%%.loanOriginators.manualInvest.filter.loanType%%%,"Loan Type"
+%%%.loanOriginators.manualInvest.filter.constantRate%%%,"Rating"
+%%%.loanOriginators.manualInvest.filter.term%%%,"Term"
+%%%.loanOriginators.manualInvest.filter.interestRate%%%,"Interest Rate"
+%%%.loanOriginators.manualInvest.filter.investmentAmount%%%,"Available Investment Amount (USD)"
+%%%.loanOriginators.manualInvest.filter.selectAll%%%,"Select"
+%%%.loanOriginators.manualInvest.filter.clearAll%%%,"Clear All"
+%%%.loanOriginators.manualInvest.summary.summaryTitle%%%,"Investment Summary"
+%%%.loanOriginators.manualInvest.summary.totalTitle%%%,"Total amount:"
+%%%.loanOriginators.manualInvest.summary.confirm%%%,"Confirm"
+%%%.loanOriginators.manualInvest.summary.investSuccess%%%," Thank you! We've begun transferring your funds to the borrower. Once this is complete, we'll send you an email to confirm."
+%%%.loanOriginators.manualInvest.summary.investFailed%%%,"Fail Invested"
+%%%.loanOriginators.manualInvest.summary.validateBalance%%%,"Please make sure your balance is sufficient."
+%%%.loanOriginators.autoInvest.title%%%,"auto invest"
+%%%.loanOriginators.autoInvest.description%%%,"Auto Invest matches you with loans that best fit your investment criteria. Just select the plan that aligns with your investment goals and our matching algorithm will allocate your funds automatically."
+%%%.loanOriginators.autoInvest.shortTerm.title%%%,"Best Interest plan"
+%%%.loanOriginators.autoInvest.shortTerm.description%%%,"Ideal if you want the highest interest rates or shorter terms.<br/><br/>
+          <strong>{term}</strong><br/><br/> 
+          <strong>{interest}</strong><br/><br/>
+          Includes all loan types, countries, and loan originators rated C+ and above."
+%%%.loanOriginators.autoInvest.shortTerm.select%%%,"Select"
+%%%.loanOriginators.autoInvest.shortTerm.readMore%%%,"Read more"
+%%%.loanOriginators.autoInvest.shortTerm.readMoreDesc%%%,"
+          <p>If you’re an experienced investor, are familiar with P2P lending, and can tolerate a little extra risk for better returns, the Best Interest Plan is for you.</p>
+          <p>We picked the top 3 loan originators with the best interest rates to offer you an estimated return of up to {toRate}% APR. If you want the best rates, this Plan is ideal.</p>
+          <p>Although not all loans are collateral-backed and the loan originator rating might not be as high, all lending is backed by buy-back guarantee.</p>
+        "
+%%%.loanOriginators.autoInvest.diversified.title%%%,"Most Secure plan"
+%%%.loanOriginators.autoInvest.diversified.description%%%,"Choose for the best balance between risk and reward.<br/><br/> 
+          <strong>{term}</strong><br/><br/> 
+          <strong>{interest}</strong><br/><br/>
+          Includes all loan types, countries, and loan originators rated B- and above."
+%%%.loanOriginators.autoInvest.diversified.select%%%,"Select"
+%%%.loanOriginators.autoInvest.diversified.readMore%%%,"Read more"
+%%%.loanOriginators.autoInvest.diversified.readMoreDesc%%%,"
+          <p>If you’ve just started investing, are new to P2P lending, or want to minimize risk, choose the Most Secure Plan.</p>
+          <p>This is our most diversified Plan and includes a mixture of secured and unsecured loans from loan originators with a minimum B- rating.</p>
+          <p>Although you earn less interest than our Best Interest Plan, your portfolio is optimized for that perfect balance between risk and reward.</p>
+        "
+%%%.loanOriginators.autoInvest.custom.title%%%,"custom plan"
+%%%.loanOriginators.autoInvest.custom.description%%%,"You set the criteria and our matching algorithm will do the rest.<br/><br/> 
+          <strong>Up to 15 months</strong><br/><br/> 
+          <strong>Interest from 10% - 13%</strong><br/><br/>
+          Includes all loan types, loan originators and countries"
+%%%.loanOriginators.autoInvest.custom.select%%%,"Select"
+%%%.loanOriginators.autoInvest.custom.readMore%%%,"Read more"
+%%%.loanOriginators.autoInvest.form.description%%%,"
+          <p>Investment Plans are currently only available in USD, but we plan to add more currencies in the future.</p> 
+          <p>Before investing, please choose the amount you’d like to invest and whether you would like to reinvest your returns.</p> 
+          <p>Once you’ve entered your criteria, click <strong>Start investing</strong> and your plan will activate immediately.</p>  
+        "
+%%%.loanOriginators.autoInvest.form.selectedStrategy%%%,"Selected plan:"
+%%%.loanOriginators.autoInvest.form.strategy.shortTerm%%%,"Best Interest"
+%%%.loanOriginators.autoInvest.form.strategy.diversified%%%,"Most Secure"
+%%%.loanOriginators.autoInvest.form.strategy.custom%%%,"custom plan"
+%%%.loanOriginators.autoInvest.form.portfolioSize%%%,"Amount (USD):"
+%%%.loanOriginators.autoInvest.form.reinvest%%%,"Reinvest:"
+%%%.loanOriginators.autoInvest.form.reinvest_desc%%%,"This option enables investors to automatically utilise the regular incoming borrower's payment such as interest payment and principal repayment to immediately invest in new loans. By minimizing the time during which your money sitting idle, you will mazimize the income ability of your money"
+%%%.loanOriginators.autoInvest.form.startInvesting%%%,"Start investing"
+%%%.loanOriginators.autoInvest.form.update%%%,"Up investing"
+%%%.loanOriginators.autoInvest.form.term%%%,"By clicking the “Start Investing” button, you have fully accepted the terms and conditions of the {assignment} and the {serviceAgreement} of Constant Platform."
+%%%.loanOriginators.autoInvest.form.yes%%%,"Yes"
+%%%.loanOriginators.autoInvest.form.no%%%,"No"
+%%%.loanOriginators.autoInvest.form.investConfirmation.confirmMsg%%%,"Invest {amount} USD in our {name} Investment Plan?"
+%%%.loanOriginators.autoInvest.form.investConfirmation.investSuccess%%%,"Thank you! We've begun searching available loans and will match you automatically. This can take up to 24 hours, and we'll email you when we find your first match."
+%%%.loanOriginators.autoInvest.form.investConfirmation.investFail%%%,"Fail Invested"
+%%%.loanOriginators.loanOriginator.headers.loanOriginator%%%,"Loan Originator"
+%%%.loanOriginators.loanOriginator.headers.loanOriginator_desc%%%,"The lending company that orginates and services the Loans listed on Constant Marketplace"
+%%%.loanOriginators.loanOriginator.headers.constantRate%%%,"Rating"
+%%%.loanOriginators.loanOriginator.headers.constantRate_desc%%%,"Constant assigns ratings for Loan Originators that offers Loans on Constant marketplace. Constant Ratings ranges from ""A+"" to ""C-"" relfecting the creditworthiness/counterparty risks of the Loan Originators. ""A+"" rating represent highest creditworthiness while ""C-"" rating is the lowest creditworthiness rating that is allowed for a Loan to be listed on Constant Marketplace."
+%%%.loanOriginators.loanOriginator.headers.loanType%%%,"Loan Type"
+%%%.loanOriginators.loanOriginator.headers.loanType_desc%%%,"Individual icons represents different types of loans offered by the Loan Originator on Constant Marketplace such as personal loans, business loans, car loans, mortgages, invoice financing.   "
+%%%.loanOriginators.loanOriginator.headers.country%%%,"Country"
+%%%.loanOriginators.loanOriginator.headers.country_desc%%%,"The flags indicate the countries in which the loans listed by the company on Constant marketplace are issued"
+%%%.loanOriginators.loanOriginator.headers.currency%%%,"Currency"
+%%%.loanOriginators.loanOriginator.headers.skinInTheGame%%%,"Skin in the Game"
+%%%.loanOriginators.loanOriginator.headers.skinInTheGame_desc%%%,"The phrase “Skin In The Game” refers to the equity stake (ownership interest) that an owner of an investment owns after the investment is sold to external investors. This is to ensure the interests of the originator of the asset are aligned with the interests of the external investors, as both sides have a stake (an ownership interest) in the investment.
+          On Constant Marketplace, all Loan Originators are required to maintain a certain percentage interest in each Loan which is their stake in the loan or their skin in the game in the loan. For example, if a loan originator with 10% skin in the game issues a EUR1000 loan to a borrower, only EUR 900 of this loan will be available for external investors to invest in and the loan originator will keep a stake of EUR100, equal to 10% of the Loan."
+%%%.loanOriginators.loanOriginator.headers.buyBackGuarantee%%%,"Buyback Guarantee"
+%%%.loanOriginators.loanOriginator.headers.buyBackGuarantee_desc%%%,"A buy-back guarantee is a guarantee issued by the Loan Originator to the investor for a particular loan, whereby the loan orginator promises to repurchase the loan from the investor if that particular loan is delayed by more than 60 days. The buyback guarantee is given at an individual loan level and is marked with the symbol of a shield. If a loan with a buy-back guarantee is delayed by more than 60 days, the loan will be bought back by the Loan Originator from the investor at the nominal value of outstanding principal, plus accrued interest. A buy-back guarantee is only as good as the loan originator's financial capability to honor such guarantee at the time of a buy-back event being triggered. A buy-back guarantee is NOT a guarantee from Constant Marketplace and its associates."
+%%%.loanOriginators.loanOriginator.headers.loansOriginated%%%,"Loans Originated"
+%%%.loanOriginators.loanOriginator.headers.loansOriginated_desc%%%,"The total amount of loans of all loan types issued to borrowers by the Loan Originator on Constant Marketplace"
+%%%.loanOriginators.loanOriginator.headers.loanPortfolio%%%,"Total Loan Originated"
+%%%.loanOriginators.loanOriginator.headers.loanPortfolio_desc%%%,"The total amount of loans of all loan types issued to borrowers by the Loan Originator since its inception until now. Information is as of the last reporting date of Loan Originator"
+%%%.loanOriginators.loanOriginator.headers.loanOutstanding%%%,"Outstanding Loan originated"
+%%%.loanOriginators.loanOriginator.headers.loanOutstanding_desc%%%,"The total outstanding principal of loans issued to borrowers by the Loan Originator since its inception until now. Information is as of the last reporting date of Loan Originator"
+%%%.loanOriginators.loanOriginator.headers.averageInterest%%%,"Average Interest Rate (%)"
+%%%.loanOriginators.loanOriginator.headers.averageInterest_desc%%%,"The average interest rate calculated for all Loans offered by the Loan Originator listed on Constant Marketplace. Average interest rate percentage is calculated by weighted average method of all interest rates of the loans based on loan amount placed on Constant Marketplace."
+%%%.loanOriginators.loanOriginator.headers.founded%%%,"Founded"
+%%%.loanOriginators.loanOriginator.headers.employees%%%,"Employees"
+%%%.loanOriginators.loanOriginator.headers.joinedConstant%%%,"Joined Constant"
+%%%.loanOriginators.loanOriginator.headers.loanOutstandingConstant%%%,"Outstanding Loan originated on Constant"
+%%%.loanOriginators.loanOriginator.headers.loanOutstandingConstant_desc%%%,"The total outstanding principal of loans issued to borrowers by the Loan Originator since its inception until now. Information is as of the last reporting date of Loan Originator"
+%%%.loanOriginators.loanOriginator.headers.scheduleExtension%%%,"Schedule extension"
+%%%.loanOriginators.loanOriginator.headers.scheduleExtension_desc%%%,"During the first 30 days after the due date of a loan payment, the borrower can opt for extending the loan payment schedule. The maximum number of extensions depends on the loan agreement. If the lending company agrees, the loan will be automatically updated, with the new schedule, and the due dates for all outstanding payments will be extended by up to 31 days. Investors will continue to earn the same interest throughout the remaining loan term."
+%%%.loanOriginators.loanOriginator.headers.financialPublicationDate%%%,"Financial statements publication date"
+%%%.loanOriginators.loanOriginator.headers.financialPublicationDate_desc%%%,"The date the Loan Originator publishes its Financial Statements on Constant Marketplace"
+%%%.loanOriginators.loanOriginator.details.details%%%,"Details"
+%%%.loanOriginators.loanOriginator.details.investmentStructure%%%,"Investment structure"
+%%%.loanOriginators.loanOriginator.details.incomeRecognition%%%,"Income recognition"
+%%%.loanOriginators.loanOriginator.details.company%%%,"Company"
+%%%.loanOriginators.loanOriginator.details.pledgeOfAssets%%%,"Pledge of assets"
+%%%.loanOriginators.loanOriginator.details.groupGuarantee%%%,"Group guarantee"
+%%%.loanOriginators.loanOriginator.details.interestIncome%%%,"Interest income"
+%%%.loanOriginators.loanOriginator.details.interestIncomeDelayedPayments%%%,"Interest income on delayed payments"
+%%%.loanOriginators.loanOriginator.details.penaltyIncome%%%,"Penalty Income"
+%%%.loanOriginators.loanOriginator.details.gracePeriod%%%,"Grace period"
+%%%.loanOriginators.loanOriginator.details.defaultInterest%%%,"Default interest"
+%%%.loanOriginators.loanOriginator.footer.desc%%%,"Showing {start} - {end} of {total} selected entries"

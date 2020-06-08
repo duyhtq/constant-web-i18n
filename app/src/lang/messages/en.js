@@ -258,6 +258,10 @@ export default {
         title: 'Fiat Custom',
         desc: 'Your terms. Best rates. Fully secured.',
       },
+      investLO: {
+        title: 'Buy-back guaranteed',
+        desc: 'Earn up to 13% APR. Terms from 6-15 months. Backed by originator guarantee.',
+      },
       investStaking: {
         title: 'Crypto Staking',
         desc: '6%-35% APR. Low minimums. Withdraw anytime.',
@@ -1035,6 +1039,7 @@ export default {
         21: 'Referral Bonus',
         22: 'Purchase',
         23: 'Refund',
+        26: 'LO Investment',
         101: 'Bonus',
         102: 'Coupon Signup',
       },
@@ -1405,6 +1410,8 @@ export default {
         trial_description: 'You keep the interest. Term has ended',
         saving_title: 'Investments',
         loans_title: 'Loans',
+        loanOriginatorInvestments: 'Buy-back guaranteed Investments',
+        loanOriginatorInvestmentsDesc: 'Investments backed by the loan originator’s buy-back guarantee. Unlike crypto-backed investments, there might not always be collateral securing the loan. Instead, the loan originator guarantees to buy back the loan should the borrower default for 60 days or more, returning your principal and earned profit.',
         coin2coin_title: 'Crypto Credit',
         secondInvestments: 'Secondary Market',
         secondInvestmentsDesc: 'Buy and sell matched investments on our secondary market. Sell your investment to end your term early or buy another investor’s order to earn their interest. View or cancel your secondary market orders below.',
@@ -4109,6 +4116,152 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       },
       balances: 'Balances',
     },
+    loanOriginator: {
+      listApplications: {
+        shortTerm: 'Best Interest',
+        diversified: 'Most Secure',
+        noHistoryData: 'Make your first investment of any amount today.',
+        headers: {
+          createdDate: 'Date created',
+          packageId: 'Auto Invest Plan',
+          amount: 'Invested amount',
+          investAmount: 'Maximum investment amount',
+          status: 'Status',
+          action: ' ',
+          id: 'ID',
+          assignmentAgreement: 'Assignment Agreement',
+          investedDate: 'Date invested',
+          totalInvestAmount: 'Total investment amount',
+          loanStatus: 'Loan status',
+          totalPaymentReceived: 'Total payment received',
+          totalPaymentReceivedDesc: 'Total interest payment and principal payment (if applicable) that have been received, credited and settled in the Investor\'s account',
+          interestRate: 'Interest rate',
+          interestAccrued: 'Interest accrued',
+          interestAccruedDesc: 'interest earned but not yet being paid out, calculated proportionately based on the number of days from last payment date over total number of days from last payment day to next schedule payment date',
+          receivables: 'Pending payments',
+          latePaymentAmount: 'Late payment amount',
+          receivablesDesc: 'Money that is currently in the process of being credited to your account. The borrower has made a payment, and we\'re waiting for the lending company to transfer the money to us. We\'ll credit the money to your account as soon as we have it.' ,
+        },
+        loanOriginatorHeaders: {
+          loanOriginator: 'Loan Originator',
+          loanOriginatorDesc: 'The lending company that orginates and services the Loans listed on Constant Marketplace',
+          constantRate: 'Rating',
+          loanType: 'Loan Type',
+          loanTypeDesc: 'Individual icons represents different types of loans offered by the Loan Originator on Constant Marketplace such as personal loans, business loans, car loans, mortgages, invoice financing.',
+          currency: 'Currency',
+          term: 'Term',
+          remainingTerm: 'Remaining Term',
+          paymentSchedule: 'Payment Schedule',
+          nextPaymentDate: 'Next Payment Date',
+          estimatedNextPayment: 'Estimated Next Payment',
+          action: ' ',
+        },
+        paymentScheduleHeaders: {
+          date: 'Date',
+          principal: 'Principal',
+          interest: 'Interest',
+          total: 'Total',
+          paymentReceived: 'Payment Received',
+          paymentDate: 'Payment Date',
+          status: 'Status',
+        },
+        overview: {
+          headers: {
+            investCount: 'My investments',
+            investAmount: 'Total',
+            currentAmount: 'Current',
+            pendingAmount: 'Pending payments',
+            late115Amount: '1-15 days late',
+            late1630Amount: '16-30 days late',
+            late3160Amount: '31-60 days late',
+            lateAmount: '60+ days late',
+            defaultAmount: 'Default',
+            badDebtAmount: 'Bad debt',
+          }
+        },
+        paymentScheduleStatus: {
+          paid: 'Paid',
+          scheduled: 'Schedule'
+        },
+        paymentProcessStatus: {
+          scheduled: 'Schedule',
+          pending: 'Pending',
+          processed: 'Processed',
+        },
+        noInvestedLoans: 'No invested loan found',
+        footer: {
+          desc: 'Showing {start} - {end} of {total} selected entries'
+        },
+        mapStatus: {
+          overview: 'Overview',
+          settings: 'Auto Invest settings',
+          matched: 'Matched',
+          closed: 'Done',
+        },
+        mapStatus1: {
+          active: 'Active',
+          stopped: 'Deactivated',
+          ready: 'Ready',
+          activating: 'Activating',
+          closed: 'Closed',
+        },
+        start: 'Activate',
+        startConfirm: {
+          shortTerm: `
+            <p>A Short Term Investment Plan is ideal if you only want to invest for short periods. The term is {term} months and your estimated return is {fromRate}% APR.</p> 
+            <p>Activate your Best Interest Investment Plan?</p>
+          `,
+          diversified: `
+            <p>A Most Secure Investment Plan offers the best balance of risk and reward over a term of {term} months. Your estimated return is {fromRate}-{toRate}% APR.</p> 
+            <p>Activate your Most Secure Investment Plan?</p>
+          `,
+        },
+        stop: 'Deactivate',
+        stopConfirm: {
+          shortTerm: `
+            <p>If you deactivate your Best Interest Investment Plan, your available funds – if any – will not be used to invest in new loans.</p> 
+            <p>Deactivate your Best Interest Investment Plan?</p>
+          `,
+          diversified: `
+            <p>If you deactivate your Most Secure Investment Plan, your available funds – if any – will not be used to invest in new loans.</p> 
+            <p>Deactivate your Most Secure Investment Plan?</p>
+          `,
+        },
+        delete: 'Delete',
+        deleteConfirm: 'Are you sure you want to delete this package?',
+        investedLoanStatus: {
+          current: 'Paid',
+          scheduled: 'Scheduled',
+          late: 'Late',
+          default: 'Default',
+        },
+        reInvest: 'Auto Reinvest',
+        dialog: {
+          reInvestSetting: {
+            messageConfirm: {
+              true: `
+                <p>When your term ends, your interest and principal will return to your Constant account. You will then have to add more funds to invest in new loans.</p>
+                <p>Are you sure you want to disable auto-reinvest?</p>
+              `,
+              false: `
+                <p>When your term ends, your interest and principal will be reinvested in new loans automatically. Your can disable this feature at any time.</p>
+                <p>Enable auto-reinvest?</p>
+              `
+            },
+            autoRenewInvestmentSuccess: {
+              true: 'Disabled Auto Reinvest successfully',
+              false: 'Enabled Auto Reinvest successfully'
+            },
+            autoRenewInvestmentFailed: {
+              true: 'Failed to disable Auto Reinvest',
+              false: 'Failed to enable Auto Reinvest'
+            },
+            confirm: 'Yes',
+            cancel: 'No',
+          },
+        }
+      },
+    },
     bottomBannerText: 'You deserve a better bank',
     bottomBannerButton: 'Open an account',
     topBannerText: 'Better than your bank.',
@@ -5544,51 +5697,71 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         btn: 'Borrow',
       },
     },
-    banner: {
+    newBanner: {
       title1: `Experience <span class=textSuccess">fully secured</span> peer-to-peer lending.`,
       subTitle: 'Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.',
       invest: {
-        title: 'Invest',
+        title: `
+          <p>
+            <strong>INVEST</strong>
+            Crypto-backed
+          </p>
+        `,
         cap: `
           <p>
             <strong>7%</strong>
-            <br />
-            Interest Rate
+            Interest rate
+          </p>
+          <p>
+            <strong>1-9 MONTHS</strong>
+            Loan term
           </p>
           <p class="clearBottom">
-            digital collateral-backed
+            All lending secured by digital assets
           </p>
         `,
         btn: 'Explore',
       },
       borrow: {
-        title: 'Borrow',
+        title: `
+          <p>
+            <strong>BORROW</strong>
+            Crypto Collateral
+          </p>
+        `,
         cap: `
           <p>
-            <strong>5% - 20%</strong>
-            <br />
-            Interest Rate
+            <strong>7%</strong>
+            Interest rate
+          </p>
+          <p>
+            <strong>1-9 MONTHS</strong>
+            Loan term
           </p>
           <p class="clearBottom">
-            <strong>411 516</strong>
-            <br />
-            Available loans
+            Borrow against 60+ cryptocurrencies
           </p>
         `,
         btn: 'Explore',
       },
       loanOriginator: {
-        title: 'LO Invest',
+        title: `
+          <p>
+            <strong>INVEST</strong>
+            Buy-back Guaranteed
+          </p>
+        `,
         cap: `
           <p>
-            <strong>5% - 20%</strong>
-            <br />
-            Interest Rate
+            <strong>5-20% APR</strong>
+            Interest rate
+          </p>
+          <p>
+            <strong>6-15 MONTHS</strong>
+            Loan term
           </p>
           <p class="clearBottom">
-            <strong>1 007 235</strong>
-            <br />
-            Available loans
+            All lending secured by buy-back guarantee
           </p>
         `,
         btn: 'Explore',
@@ -5598,33 +5771,33 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       bitGo: '$100M escrow insurance',
       desc: 'Fully secured, fully backed. All lending is secured by crypto collateral. Smart contracts and Prime Trust custody protect collateral until it’s returned to you.'
     },
-    faqs: {
-      question1: 'What is peer-to-peer (P2P) lending?',
-      answer1: `
-      <p>P2P lending is where one person lends to another in return for interest, without any third party getting in the way. Unlike bank lending, where the bank lends your deposits and keeps the lion’s share of interest, P2P lending lets you keep all the profits yourself.</p>
-      <p>On our platform, you also set your own rates and terms, which gives you plenty of flexibility to find the right investment. We also differ from other P2P lending platforms in that we only use liquid collateral – in other words, we secure loans with collateral that’s easy to sell if borrowers default, ensuring you get your money back (plus interest).</p>
-      <p>New to P2P lending? <a href="https://www.myconstant.com/blog/peer-to-peer-lending-what-you-should-know-before-investing" class="underline" target="_blank">Here’s what to know before you invest.</a></p>
-      `
-      ,
-      question2: 'What makes Constant different from other P2P lending platforms?',
-      answer2: `
-        <p>Constant is a fully-secured peer-to-peer lending platform. Every loan is backed by collateral of up to 150% of the loan amount, which is sold if borrowers default or its value falls to a threshold, protecting investors (borrowers keep the loan).</p>
-        <p>Unlike other platforms, Constant pools investor funds into a lending pool or reserve. This means you match instantly, whether you’re a borrower or an investor. We don’t need credit checks and we offer three fixed-term investments to give you flexibility.</p>
-        <p>As well as providing you with a platform on which to do business, we also believe in giving you the educational resources to reach your financial goals, fast. To learn more, <a href="https://myconstant.com/blog" class="underline" target="_blank">check out our blog</a>.</p>
-        <p><a href="https://www.myconstant.com/blog/11-reasons-to-invest-with-constant" class="underline" target="_blank">Discover 11 reasons to invest with Constant.</a></p>
-      `,
-      question3: 'Who can participate?',
-      answer3: `
-        <p>Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment). If you intend to invest fiat (USD), you will also need to pass KYC (Know Your Customer) checks.</p>
-        <p><a href="https://www.myconstant.com/blog/how-to-verify-your-id-on-constant-kyc" class="underline" target="_blank">How to verify your ID (KYC).</a></p>
-      `,
-      question4: 'How does Constant protect customers’ assets?',
-      answer4: `
-        <p>All loans are up to 150% backed by collateral put up by borrowers. If borrowers default or their collateral falls too much in value, the collateral is sold to repay investors.</p>
-        <p>In addition, we use qualified custodial partners (Prime Trust) to manage both fiat (USD) and digital assets. This additional layer of protection helps minimize the threat of theft, mismanagement, or loss of your assets.</p>
-        <p><a href="https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral" class="underline" target="_blank">Read more about how we protect your assets.</a></p>
-      `,
-    },
+    // faqs: {
+    //   question1: 'What is peer-to-peer (P2P) lending?',
+    //   answer1: `
+    //   <p>P2P lending is where one person lends to another in return for interest, without any third party getting in the way. Unlike bank lending, where the bank lends your deposits and keeps the lion’s share of interest, P2P lending lets you keep all the profits yourself.</p>
+    //   <p>On our platform, you also set your own rates and terms, which gives you plenty of flexibility to find the right investment. We also differ from other P2P lending platforms in that we only use liquid collateral – in other words, we secure loans with collateral that’s easy to sell if borrowers default, ensuring you get your money back (plus interest).</p>
+    //   <p>New to P2P lending? <a href="https://www.myconstant.com/blog/peer-to-peer-lending-what-you-should-know-before-investing" class="underline" target="_blank">Here’s what to know before you invest.</a></p>
+    //   `
+    //   ,
+    //   question2: 'What makes Constant different from other P2P lending platforms?',
+    //   answer2: `
+    //     <p>Constant is a fully-secured peer-to-peer lending platform. Every loan is backed by collateral of up to 150% of the loan amount, which is sold if borrowers default or its value falls to a threshold, protecting investors (borrowers keep the loan).</p>
+    //     <p>Unlike other platforms, Constant pools investor funds into a lending pool or reserve. This means you match instantly, whether you’re a borrower or an investor. We don’t need credit checks and we offer three fixed-term investments to give you flexibility.</p>
+    //     <p>As well as providing you with a platform on which to do business, we also believe in giving you the educational resources to reach your financial goals, fast. To learn more, <a href="https://myconstant.com/blog" class="underline" target="_blank">check out our blog</a>.</p>
+    //     <p><a href="https://www.myconstant.com/blog/11-reasons-to-invest-with-constant" class="underline" target="_blank">Discover 11 reasons to invest with Constant.</a></p>
+    //   `,
+    //   question3: 'Who can participate?',
+    //   answer3: `
+    //     <p>Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment). If you intend to invest fiat (USD), you will also need to pass KYC (Know Your Customer) checks.</p>
+    //     <p><a href="https://www.myconstant.com/blog/how-to-verify-your-id-on-constant-kyc" class="underline" target="_blank">How to verify your ID (KYC).</a></p>
+    //   `,
+    //   question4: 'How does Constant protect customers’ assets?',
+    //   answer4: `
+    //     <p>All loans are up to 150% backed by collateral put up by borrowers. If borrowers default or their collateral falls too much in value, the collateral is sold to repay investors.</p>
+    //     <p>In addition, we use qualified custodial partners (Prime Trust) to manage both fiat (USD) and digital assets. This additional layer of protection helps minimize the threat of theft, mismanagement, or loss of your assets.</p>
+    //     <p><a href="https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral" class="underline" target="_blank">Read more about how we protect your assets.</a></p>
+    //   `,
+    // },
     howItWorks: {
       title: 'How it works.',
       desc: 'The Constant algorithm pools investor funds into a lending reserve from which borrowers can get loans in return for interest. Borrowers secure their loans with collateral which is sold if they default or its value falls to a threshold, eliminating the need for credit checks.',
@@ -6866,6 +7039,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     language: 'Language',
     setting: 'Setting',
     btnInvestments: 'Investments',
+    btnBuyBackInvestments: `<div class="textLeft"><small>Buy back guaranteed</small><div>Investments</div></div>`,
     btnLoans: 'Loans',
     btnSecondaryMarket: `<div class="textLeft"><small>Secondary</small><div>Market</div></div>`,
   },
@@ -8542,4 +8716,248 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       },
     },
   },
+  loanOriginators: {
+    header: {
+      tabs: {
+        autoInvest: 'Auto Invest',
+        manualInvest: 'Manual Invest',
+        loanOriginator: 'Loan Originators'
+      },
+      desc: {
+        autoInvest: 'Auto Invest automates your investment strategy to save you time and effort. Simply choose the plan that best fits your goals and our matching algorithm will do the rest.',
+        manualInvest: 'Manual Invest puts you in the driving seat. Set your investment criteria to filter relevant loans. Then choose one or more loans and the amount to invest in each. Easy.',
+        loanOriginator: 'We work with the best P2P lenders in the world to offer you more choice and better returns. Learn more about who we work with and view their available loans here.'
+      }
+    },
+    manualInvest: {
+      ads: {
+        desc: `
+        Advertisement goes here. Just another line to fill up empty space of this ad.
+        `,
+        actionText: 'Invest',
+      },
+      howItWorks: {
+        0: `<p>Set your lending criteria using the options on the left.</p>`,
+        1: `<p>Choose a loan from the results below.</p>`,
+        2: `<p>Enter the amount you want to invest.</p>`,
+        3: `<p>Click <strong>invest</strong> and then confirm your order on the next screen.</p>`,
+      },
+      sortBy: 'Sort by: ',
+      sortHeaders: {
+        mostPopuplar: 'Most popular',
+        issuedDate: 'Issued Date',
+        loanType: 'Loan Type',
+        constantRate: 'Constant Rate',
+        term: 'Term',
+        interestRate: 'Interest Rate',
+        investmentAmount: 'Available For Investment',
+      },
+      headers: {
+        id: 'ID',
+        loanOriginator: 'Loan Originator',
+        loanOriginator_desc: 'The lending company that orginates and services the Loans listed on Constant Marketplace',
+        issuedDate: 'Issued Date',
+        loanType: 'Loan Type',
+        loanType_desc: 'Individual icons represents different types of loans offered by the Loan Originator on Constant Marketplace such as personal loans, business loans, car loans, mortgages, invoice financing.',
+        constantRate: 'Rating',
+        constantRate_desc: 'Constant assigns ratings for Loan Originators that offers Loans on Constant marketplace. Constant Ratings ranges from "A+" to "C-" relfecting the creditworthiness/counterparty risks of the Loan Originators. "A+" rating represent highest creditworthiness while "C-" rating is the lowest creditworthiness rating that is allowed to be listed on Constant Marketplace.',
+        term: 'Term',
+        interestRate: 'Interest Rate',
+        interestRate_desc: 'The rate at which loans are available for investors to invest in. Interest rate is generally stated in the form of annual NET interest rate paid to the investor. This is the final interest rate earned by the investor which already reflected all potential fees, commission and reserves (if any).',
+        loanAmount: 'Loan Amount / Available for investment',
+        investmentAmount: 'Your investment amount',
+        loanStatus: 'Loan Status',
+        country: 'Country',
+        country_desc: 'The flags indicate the country in which the Loan was issued by the Loan Originator on Constant marketplace',
+        currency: 'Currency',
+        currency_desc: 'The denominated currency of the Claim Right',
+        availableForInvestment: 'Loan Amount available for investment',
+        availableForInvestment_desc: 'This is the total amount available to investors for investment consisting of remaining principal of the loan and any accrued interests.',
+        remainingTerm: 'Remaining Term',
+        remainingTerm_desc: 'This is the period measured in months and days left until the full repayment of the loan is set. ',
+        buyBackGuarantee: 'Buy back Guarantee',
+        buyBackGuarantee_desc: 'A buyback guarantee is a guarantee issued by the loan originator to the investor for a particular loan, whereby the loan orginator promises to repurchase the loan from the investor if that particular loan is delayed by more than 60 days. The buyback guarantee is given at an individual loan level and is marked with the symbol of a shield. If a loan with a buyback guarantee is delayed by more than 60 days, the loan will be bought back by the loan originator from the investor at the nominal value of outstanding principal, plus accrued interest. A buy back guarantee is only as good as the loan originator\'s financial capability to honor such guarantee at the time of a buy back event being triggered. A buy back guarantee, by no mean is a guarantee from Constant Marketplace and its associates.',
+        scheduleExtension: 'Schedule extension',
+        scheduleExtension_desc: 'During the first 30 days after the due date of a loan payment, the borrower can opt for extending the loan payment schedule. The maximum number of extensions depends on the loan agreement. If the lending company agrees, the loan will be automatically updated, with the new schedule, and the due dates for all outstanding payments will be extended by up to 31 days. Investors will continue to earn the same interest throughout the remaining loan term.',
+        issueDate: 'Issue Date',
+        issueDate_desc: 'The date when the loan was originally issued by the Loan Originator to the borrower',
+        maturityDate: 'Maturity Date',
+        maturityDate_desc: 'The date date on which a borrower\'s final loan payment is due and the Loan is scheduled to be fully repaid.',
+        loanPaymentStatus: 'Loan Payment Status',
+        loanPaymentStatus_desc: 'Loan Payment Status',
+        paymentType: {
+          title: 'Payment Type',
+          desc: `
+          Payment type: 
+          <p>1. Full amortization - Fixed regular payments which consist of interest payment and principal payment. Full amortization reduces loan outstanding balance to zero at the end of the term.</p>
+          <p>2. Interest only - Regular interest payment only. Full principal is paid at the end of the term.</p>
+          `,
+          interest_only: {
+            title: 'Interest only',
+            desc: 'Interest only - Regular interest payment only. Full principal is paid at the end of the term.'
+          },
+          installments: {
+            title: 'Full amortization',
+            desc: 'Full amortization - Fixed regular payments which consist of interest payment and principal payment. Full amortization reduces loan outstanding balance to zero at the end of the term.'
+          }
+        }
+      },
+      details: {
+        backToLoan: 'Back to loan list',
+        loanId: 'LOAN ID',
+        loanDetails: ' Loan Details',
+        loanOriginatorDetails: 'Loan Originator Details',
+        loanOriginator: 'Loan Originator',
+        loanOriginator_desc: 'The lending company that orginates and services the Loans listed on Constant Marketplace',
+        legalEntity: 'Legal Entity',
+        availableAmount:'Available amount:',
+        yourInvestment:'Your investment: ',
+        paymentSchedule:'Payment Schedule',
+        paymentSchedule_desc:'The detailed schedule of loan payments for each Loan that is contractually set at the start of the orginal Loan Agreement or Loan Assignment Agreement. In the Assignment Agreement, this refers to the Claim Payment Schedule which is the schedule payments calculated based on the Loan Amount transferred to the Investor from the Loan Originator.',
+      },
+      footer: {
+        desc: 'Showing {start} - {end} of {total} selected entries'
+      },
+      investButton: 'Invest',
+      filter: {
+        title: 'Your investment criteria',
+        loanOriginator: 'Loan Originator',
+        issuedDate: 'Issued Date',
+        loanType: 'Loan Type',
+        constantRate: 'Rating',
+        term: 'Term',
+        interestRate: 'Interest Rate',
+        investmentAmount: 'Available Investment Amount (USD)',
+        selectAll: 'Select',
+        clearAll: 'Clear All'
+      },
+      summary: {
+        summaryTitle: 'Investment Summary',
+        totalTitle: 'Total amount:',
+        confirm: 'Confirm',
+        investSuccess: ' Thank you! We\'ve begun transferring your funds to the borrower. Once this is complete, we\'ll send you an email to confirm.',
+        investFailed: 'Fail Invested',
+        validateBalance: 'Please make sure your balance is sufficient.'
+      },
+    },
+    autoInvest: {
+      title: 'auto invest',
+      description: 'Auto Invest matches you with loans that best fit your investment criteria. Just select the plan that aligns with your investment goals and our matching algorithm will allocate your funds automatically.',
+      shortTerm: {
+        title: 'Best Interest plan',
+        description: `Ideal if you want the highest interest rates or shorter terms.<br/><br/>
+          <strong>{term}</strong><br/><br/> 
+          <strong>{interest}</strong><br/><br/>
+          Includes all loan types, countries, and loan originators rated C+ and above.`,
+        select: 'Select',
+        readMore: 'Read more',
+        readMoreDesc: `
+          <p>If you’re an experienced investor, are familiar with P2P lending, and can tolerate a little extra risk for better returns, the Best Interest Plan is for you.</p>
+          <p>We picked the top 3 loan originators with the best interest rates to offer you an estimated return of up to {toRate}% APR. If you want the best rates, this Plan is ideal.</p>
+          <p>Although not all loans are collateral-backed and the loan originator rating might not be as high, all lending is backed by buy-back guarantee.</p>
+        `,
+      },
+      diversified: {
+        title: 'Most Secure plan',
+        description: `Choose for the best balance between risk and reward.<br/><br/> 
+          <strong>{term}</strong><br/><br/> 
+          <strong>{interest}</strong><br/><br/>
+          Includes all loan types, countries, and loan originators rated B- and above.`,
+        select: 'Select',
+        readMore: 'Read more',
+        readMoreDesc: `
+          <p>If you’ve just started investing, are new to P2P lending, or want to minimize risk, choose the Most Secure Plan.</p>
+          <p>This is our most diversified Plan and includes a mixture of secured and unsecured loans from loan originators with a minimum B- rating.</p>
+          <p>Although you earn less interest than our Best Interest Plan, your portfolio is optimized for that perfect balance between risk and reward.</p>
+        `,
+      },
+      custom: {
+        title: 'custom plan',
+        description: `You set the criteria and our matching algorithm will do the rest.<br/><br/> 
+          <strong>Up to 15 months</strong><br/><br/> 
+          <strong>Interest from 10% - 13%</strong><br/><br/>
+          Includes all loan types, loan originators and countries`,
+        select: 'Select',
+        readMore: 'Read more'
+      },
+      form: {
+        description: `
+          <p>Investment Plans are currently only available in USD, but we plan to add more currencies in the future.</p> 
+          <p>Before investing, please choose the amount you’d like to invest and whether you would like to reinvest your returns.</p> 
+          <p>Once you’ve entered your criteria, click <strong>Start investing</strong> and your plan will activate immediately.</p>  
+        `,
+        selectedStrategy: 'Selected plan:',
+        strategy: {
+          shortTerm: 'Best Interest',
+          diversified: 'Most Secure',
+          custom: 'custom plan'
+        },
+        portfolioSize: 'Amount (USD):',
+        reinvest: 'Reinvest:',
+        reinvest_desc: 'This option enables investors to automatically utilise the regular incoming borrower\'s payment such as interest payment and principal repayment to immediately invest in new loans. By minimizing the time during which your money sitting idle, you will mazimize the income ability of your money',
+        startInvesting: 'Start investing',
+        update: 'Up investing',
+        term: `By clicking the “Start Investing” button, you have fully accepted the terms and conditions of the {assignment} and the {serviceAgreement} of Constant Platform.`,
+        yes: 'Yes',
+        no: 'No',
+        investConfirmation: {
+          confirmMsg: 'Invest {amount} USD in our {name} Investment Plan?',
+          investSuccess: 'Thank you! We\'ve begun searching available loans and will match you automatically. This can take up to 24 hours, and we\'ll email you when we find your first match.',
+          // investUpdateSuccess: 'Successfully updated your investment',
+          investFail: 'Fail Invested'
+        },
+      }
+    },
+    loanOriginator: {
+      headers: {
+        loanOriginator: 'Loan Originator',
+        loanOriginator_desc: 'The lending company that orginates and services the Loans listed on Constant Marketplace',
+        constantRate: 'Rating',
+        constantRate_desc: 'Constant assigns ratings for Loan Originators that offers Loans on Constant marketplace. Constant Ratings ranges from "A+" to "C-" relfecting the creditworthiness/counterparty risks of the Loan Originators. "A+" rating represent highest creditworthiness while "C-" rating is the lowest creditworthiness rating that is allowed for a Loan to be listed on Constant Marketplace.',
+        loanType: 'Loan Type',
+        loanType_desc: 'Individual icons represents different types of loans offered by the Loan Originator on Constant Marketplace such as personal loans, business loans, car loans, mortgages, invoice financing.   ',
+        country: 'Country',
+        country_desc: 'The flags indicate the countries in which the loans listed by the company on Constant marketplace are issued',
+        currency: 'Currency',
+        skinInTheGame: 'Skin in the Game',
+        skinInTheGame_desc: `The phrase “Skin In The Game” refers to the equity stake (ownership interest) that an owner of an investment owns after the investment is sold to external investors. This is to ensure the interests of the originator of the asset are aligned with the interests of the external investors, as both sides have a stake (an ownership interest) in the investment.
+          On Constant Marketplace, all Loan Originators are required to maintain a certain percentage interest in each Loan which is their stake in the loan or their skin in the game in the loan. For example, if a loan originator with 10% skin in the game issues a EUR1000 loan to a borrower, only EUR 900 of this loan will be available for external investors to invest in and the loan originator will keep a stake of EUR100, equal to 10% of the Loan.`,
+        buyBackGuarantee: 'Buyback Guarantee',
+        buyBackGuarantee_desc: 'A buy-back guarantee is a guarantee issued by the Loan Originator to the investor for a particular loan, whereby the loan orginator promises to repurchase the loan from the investor if that particular loan is delayed by more than 60 days. The buyback guarantee is given at an individual loan level and is marked with the symbol of a shield. If a loan with a buy-back guarantee is delayed by more than 60 days, the loan will be bought back by the Loan Originator from the investor at the nominal value of outstanding principal, plus accrued interest. A buy-back guarantee is only as good as the loan originator\'s financial capability to honor such guarantee at the time of a buy-back event being triggered. A buy-back guarantee is NOT a guarantee from Constant Marketplace and its associates.',
+        loansOriginated: 'Loans Originated',
+        loansOriginated_desc: 'The total amount of loans of all loan types issued to borrowers by the Loan Originator on Constant Marketplace',
+        loanPortfolio: 'Total Loan Originated',
+        loanPortfolio_desc: 'The total amount of loans of all loan types issued to borrowers by the Loan Originator since its inception until now. Information is as of the last reporting date of Loan Originator',
+        loanOutstanding: 'Outstanding Loan originated',
+        loanOutstanding_desc: 'The total outstanding principal of loans issued to borrowers by the Loan Originator since its inception until now. Information is as of the last reporting date of Loan Originator',
+        averageInterest: 'Average Interest Rate (%)',
+        averageInterest_desc: 'The average interest rate calculated for all Loans offered by the Loan Originator listed on Constant Marketplace. Average interest rate percentage is calculated by weighted average method of all interest rates of the loans based on loan amount placed on Constant Marketplace.',
+        founded: 'Founded',
+        employees: 'Employees',
+        joinedConstant: 'Joined Constant',
+        loanOutstandingConstant: 'Outstanding Loan originated on Constant',
+        loanOutstandingConstant_desc: 'The total outstanding principal of loans issued to borrowers by the Loan Originator since its inception until now. Information is as of the last reporting date of Loan Originator',
+        scheduleExtension: 'Schedule extension',
+        scheduleExtension_desc: 'During the first 30 days after the due date of a loan payment, the borrower can opt for extending the loan payment schedule. The maximum number of extensions depends on the loan agreement. If the lending company agrees, the loan will be automatically updated, with the new schedule, and the due dates for all outstanding payments will be extended by up to 31 days. Investors will continue to earn the same interest throughout the remaining loan term.',
+        financialPublicationDate: 'Financial statements publication date',
+        financialPublicationDate_desc: 'The date the Loan Originator publishes its Financial Statements on Constant Marketplace',
+      },
+      details: {
+        details: 'Details',
+        investmentStructure: 'Investment structure',
+        incomeRecognition: 'Income recognition',
+        company: 'Company',
+        pledgeOfAssets: 'Pledge of assets',
+        groupGuarantee: 'Group guarantee',
+        interestIncome: 'Interest income',
+        interestIncomeDelayedPayments: 'Interest income on delayed payments',
+        penaltyIncome: 'Penalty Income',
+        gracePeriod: 'Grace period',
+        defaultInterest: 'Default interest',
+      },
+      footer: {
+        desc: 'Showing {start} - {end} of {total} selected entries'
+      },
+    },
+  }
 };

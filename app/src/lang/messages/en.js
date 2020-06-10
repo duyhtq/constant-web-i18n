@@ -39,6 +39,8 @@ export default {
       inRange: 'Must be greater than or equal to {min} and less than or equal to {max}',
       copiedAddress: 'Address is copied to clipboard',
       uploading: 'Uploading...',
+      warning6h: 'Please complete your transfer within 6 hours.',
+      timeoutDepositWarning: 'For the sake of security, this order will time-out after 6 hours. If you need a little longer, just re-enter the amount you’d like to invest when you’re ready.',
     },
     local: {
       type: {
@@ -1528,8 +1530,10 @@ export default {
           },
           autoTopup: {
             messageConfirm: {
+              false: 'Auto top-up enabled. Collateral value that falls to {AutoTopupPer}% will be restored to {AutoTopupToPer}%.',
               true: 'Are you sure you want to turn off auto top-up? Your collateral will be liquidated if it falls to {LiqPer}%.',
-              false: 'Auto top-up enabled. Collateral value that falls to {AutoTopupPer}% will be restored to {AutoTopupToPer}%.'
+              disable: 'Are you sure you want to turn off auto top-up? Your collateral will be liquidated if it falls to {LiqPer}%.',
+              enable: 'Auto top-up enabled. Collateral value that falls to {AutoTopupPer}% will be restored to {AutoTopupToPer}%.',
             },
             autoTopUpCollateralSuccess: {
               true: 'Turn auto top up on successfully',
@@ -1652,6 +1656,7 @@ export default {
             confirm: 'Pay',
             cancel: 'Not now',
             paySuccess: 'Payment made. Thanks!',
+            payFailed: 'Pay failed',
             notEnoughConstantRepay: 'Your current balance is ${balance}. Please deposit ${requireAmount} to cover the amount due, then click repay again. ',
             makeADeposit: 'Make a deposit'
           },
@@ -2906,7 +2911,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       headLine:
         'Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.',
       exchange: {
-        stakingTimeMessage: `Your collateral will be sent to the Constant node. Please note: early repayment won’t be possible for at least {dayNum} days.`,
+        availableCredit: 'Available Credit',
+        stakingTimeMessage: 'Your collateral will be sent to the Constant node. Please note: early repayment won’t be possible for at least {dayNum} days.',
         exchangeInfo: 'Estimate amount USD (const) you need to borrow',
         exchangeInfoDesc: 'Estimate amount USD (const) you need to borrow',
         usedMarketRate: 'Use market rate ',
@@ -3222,10 +3228,12 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         loan: 'loan',
         staked: 'STAKED',
         amount: 'Amount',
+        availableAmount: 'Available Amount',
         matched: 'matched',
         pendingAmount: 'Pending Amount',
         collateralRequired: 'Collateral',
         collateralAddress: 'Collateral Address',
+        collateralType: 'Collateral Type',
         extraRate: 'Your total rate will be {rate}% effect from {date}',
         exchangeRates: 'Exchange rates: 1 {symbol}/{value} USD',
         createdDate: 'Created Date',
@@ -3241,7 +3249,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         payCollateral: 'Pay',
         payOffLoan: 'Repay',
         depositMatched: 'Top up',
-        rewardApply: 'Reward',
+        redeemApply: 'Redeem STAR',
         cancelDepositMatched: 'Cancel Deposit',
         cashback: 'Cash back',
         collateral: 'Collateral',
@@ -3253,6 +3261,13 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         partialMatchesDesc: 'Some loan requests may be split into smaller amounts to fill multiple investment orders. The platform will keep trying to match you completely for the duration of your term.',
         status: 'Status',
         allStatus: 'All',
+        overview: 'Overview',
+        availableCredit: 'Available Credit',
+        totalDebt: 'Total Debt',
+        avgInterest: 'Average Interest',
+        depositCollateral: 'Deposit Collateral',
+        deposit: 'Deposit',
+        recallExcess: 'Recall Excess',
         mapStatus: {
           pending: 'Pending',
           recieved: 'Received',
@@ -3350,8 +3365,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           Please wait for assistance, or contact us at <a href="mailto:hello@myconstant.com">hello@myconstant.com</a>
         `,
         errorCollateralNotEnoughHtml: 'Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.',
-        errorCantCollateralHtml: 'To recall excess, collateral value must be higher than {lvtPer}%. Your current collateral value is {percent}%.',
-        errorGetCollateralValueHtml: 'To recall excess, collateral value must be higher than {value} USD. Your current collateral value is {currentValue} USD ({amount} {currency} * ${exchangeRate})',
+        errorRecallLowCreditRate: 'To recall excess, credit rate must be increased more than {recallRate}%. Your current credit rate is {creditRate}%',
         depositFrom: {
           title: 'Make more deposit for your collateral',
           amount: 'Amount',
@@ -3502,6 +3516,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       headLine:
         'Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.',
       exchange: {
+        availableCredit: 'Available Credit',
         eventBox: 'Borrow now to get 1% discount from the crypto price.',
         stakingTimeMessage: `Your collateral will be sent to the Constant node. Please note: early repayment won’t be possible for at least {dayNum} days.`,
         exchangeInfo: 'The amount you will borrow in USD',
@@ -3883,6 +3898,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         status: 'Status',
         allStatus: 'All',
         cancelBorrow: 'Cancel',
+        overview: 'Overview',
+        availableCredit: 'Available Credit',
+        totalDebt: 'Total Debt',
+        avgInterest: 'Average Interest',
         mapStatus: {
           pending: 'Pending',
           recieved: 'Received',
@@ -3981,8 +4000,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           Please wait for assistance, or contact us at <a href="mailto:hello@myconstant.com">hello@myconstant.com</a>
         `,
         errorCollateralNotEnoughHtml: 'Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.',
-        errorCantCollateralHtml: 'To recall excess, collateral value must be higher than {lvtPer}%. Your current collateral value is {percent}%.',
-        errorGetCollateralValueHtml: 'To recall excess, collateral value must be higher than {value} USD. Your current collateral value is {currentValue} USD ({amount} {currency} * ${exchangeRate})',
+        errorRecallLowCreditRate: 'To recall excess, credit rate must be increased more than {recallRate}%. Your current credit rate is {creditRate}%',
         depositFrom: {
           title: 'Make more deposit for your collateral',
           amount: 'Amount',
@@ -6789,11 +6807,12 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         usingStakingMobile: 'Get {discount}% off with staking',
         usingStakingDesc: 'Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.',
         stakingMinAmount: 'stake amount must be great than {minVal} {currency}',
-        goToAccountApp: "Please go to the Account tab to sign up or log in.",
+        goToAccountApp: 'Please go to the Account tab to sign up or log in.',
+        availableCredit: 'Available Credit',
       },
       createdSuccess: 'Thanks! Your borrow order was successful. Your term has started and your funds are in your account and ready to use. To review your loans, please visit your Accounts page.',
       errorMsgs: {
-        notEnoughBalance: 'Your balance is not enough to make borrow!',
+        notEnoughBalance: 'Your Available Credit is {amount} USD. Please deposit sufficient collateral to credit your requested amount',
         generateCollateralAddressFail: 'Can\'t generate collateral address. Please try again!',
         maxOfCollateralHolding: 'Please try a different coin. To manage risk, the platform can hold only 10% of any coin\'s 24h trading volume.',
         error: 'OH! something went wrong! Please try again'
@@ -6830,7 +6849,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         usingStakingMobile: 'Get {discount}% off with staking',
         usingStakingDesc: 'Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.',
         stakingMinAmount: 'stake amount must be great than {minVal} {currency}',
-        goToAccountApp: "Please go to the Account tab to sign up or log in.",
+        goToAccountApp: 'Please go to the Account tab to sign up or log in.',
+        availableCredit: 'Available Credit',
       },
       errorMsgs: {
         notEnoughBalance: 'Your balance is not enough to make borrow!',
@@ -7257,7 +7277,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     coin: 'Coin',
     name: 'Name',
     totalBalance: 'Total Balance',
+    collateralBalance: 'Collateral Balance',
     availableBalance: 'Available Balance',
+    flexBalance: 'Flex Balance',
     stakingBalance: 'Staking Balance',
     rewardBalance: 'Reward Balance',
     stakingBalanceMobile: 'Balance',
@@ -7269,6 +7291,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     withdraw: 'Withdraw',
     withdrawReward: 'Withdraw Reward',
     deposit: 'Deposit',
+    topup: 'Topup',
     staking: 'Stake',
     autoStake: 'Auto-Stake',
     autoStakeDesc: 'Auto-stake automatically adds staking rewards above {amount} {currency} back into the staking pool. Enable this if you want to earn even more interest on your {currency}.',
@@ -7289,9 +7312,15 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     },
     unStaking: 'Unstake',
     depositCollateralTitle: 'Deposit Collateral',
+    topupCollateralTitle: 'Topup Collateral',
     hideSmallBalance: 'Hide Small Balances',
     hideDesc: 'Balances valued are zero.',
     estimatedValue: 'Estimated Value',
+    topupSuccess: 'Topup Collateral successfully',
+    recommendMessage: 'To restore your collateral value to the recommended {recommendedRate}%, please top up {amount} {currency}',
+    topupNote: 'You are free to top up any amount you wish.',
+    errorMaxValue: 'Amount must less than {max}',
+    errorMinValue: 'Amount must greater than {min}',
     tabs: {
       collaterals: 'Collaterals',
       staking: 'Staking'
@@ -8242,6 +8271,141 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         confirm: 'Submit',
         cancel: 'Cancel'
       }
+    },
+    press: {
+      consumerFinance: {
+        title: 'CONSUMER FINANCE',
+        desc: `
+        <p>As the new kid on the block, <strong>we get a lot of press.</strong> Journalists cover everything from our invesment products to the flexibility and support you get along the way. Find out what finance’s most respected publications think about us below.   </p>
+        `,
+        data: {
+          1: {
+            name: 'Inc.',
+            desc: `Constant which allows borrowers and lenders to transact directly. Banks, brokers and other third parties are cut off from any deal, and therefore access to financial data is minimized. Constant lowers borrowing costs by removing middlemen, and thereby streamlining processes.`,
+            link: 'https://www.inc.com/kenny-kline/startups-have-these-advantages-over-large-enterprises.html',
+          },
+          2: {
+            name: 'Entrepreneur',
+            desc: `Constant acts as a trading hub where borrowers and creditors pick the best deal. Moreover, the Redlands, Calif.-based venture allows users to set their own interest rates and terms -- a feature that doesn’t exist anywhere else.`,
+            link: 'https://www.entrepreneur.com/article/344621',
+          },
+          3: {
+            name: 'ZeroHedge',
+            desc: `Lenders can choose their terms, no credit check, and no nonsense – and find borrowers. Programming a system like this using the US banking system, would be expensive, cumbersome, time consuming, and who knows what it might look like after all the regulatory approvals.`,
+            link: 'https://www.zerohedge.com/news/2019-08-30/lending-stable-coin-threatens-traditional-banking',
+          },
+        }
+      },
+      technology: {
+        title: 'Technology',
+        desc: `
+        <p><strong>Technology is our heart,</strong> and customers are our lifeblood. We combine the two to build products that make a positive difference to people’s lives.</p>
+        `,
+        data: {
+          1: {
+            name: 'Hackernoon',
+            desc: `The traditional loan agreement has been replaced by an unstoppable Ethereum smart contract without any possibility of downtime, fraud, or third-party interference. Fully-secured, blockchain-enabled P2P lending is our contribution to a bankless banking system.`,
+            link: 'https://hackernoon.com/how-we-built-constant-a-secured-p2p-lending-platform-that-puts-customers-in-control-6820e32d8402',
+          },
+          2: {
+            name: 'Techworm',
+            desc: `The best thing about Constant, however, is the security the lending platform has in place. Every loan is fully secured and backed in multiple ways. While on loan it’s protected by borrower collateral, and while waiting to be matched it’s protected by a $130M insurance policy.`,
+            link: 'https://www.techworm.net/2019/09/technology-changing-way-finance.html',
+          },
+          3: {
+            name: 'TechBullion',
+            desc: `Constant works by enabling borrowers to stake liquid capital via over-collateralized crypto assets (e.g., Ether) based on an LTV ratio. Subsequently, borrowers can “cherrypick” the best deals enumerated on Constant’s interface, selecting the best interest rates that are posted independently by each lending peer.`,
+            link: 'https://techbullion.com/why-constants-rise-is-indicative-of-the-blossoming-class-of-defi-platforms/',
+          },
+        }
+      },
+      blockchain: {
+        title: 'Blockchain',
+        desc: `
+        <p><strong>We believe in the future of blockchain</strong> and are proud members of the crypto community. As our voice has grown, the crypto press has helped tell our story to the world.</p>
+        `,
+        data: {
+          1: {
+            name: 'CoinSpeaker',
+            desc: `And when it comes to pioneering a new generation of fintech platforms, Constant provides a measuring stick for the industry’s progress.`,
+            link: 'https://www.coinspeaker.com/constant-p2p-lending-growth/',
+          },
+          2: {
+            name: 'Blockonomi',
+            desc: `Constant has created a platform that cuts banks out of the lending equation and allows anyone in the world to create loans on whatever terms they like. This is a big shift away from the established lending system, and it could be a big benefit for both borrowers and lenders.`,
+            link: 'https://blockonomi.com/constant-decentralized-p2p-lending/',
+          },
+          3: {
+            name: 'CryptoGazette',
+            desc: `Constant, a leading secured P2P lending platform, has been expanding its service and product offerings in recent months as it continues to originate more loans on its Ethereum-based lending service.`,
+            link: 'https://cryptogazette.com/how-constant-is-pioneering-the-exploration-of-a-new-fintech-generation/',
+          },
+          4: {
+            name: 'EndofTheChain',
+            desc: `It's a great service, with free deposits and withdrawals, extremely fast responding customer support and a transparent team.`,
+            link: 'https://www.endofthechain.com/constant-secured-p2p-lending-platform-review/',
+          },
+          5: {
+            name: 'Coin98',
+            desc: `Chắc hẳn sẽ có những lúc chúng ta rơi vào hoàn cảnh khi đang HODL một đồng coin nào đó, nhưng lại thấy 1 cơ hội khác trong khi quỹ vốn thì đã hết. Constant sẽ giúp anh em huy động được một lượng cash (tiền mặt) nhất định để vào được kèo mới nhưng không phải cash out (bán) đồng coin đang HODL.`,
+            link: 'https://coin98.net/constant-la-gi/',
+          },
+        }
+      }
+    },
+    partners: {
+      custody: {
+        title: 'Custody',
+        readMore: 'Read more',
+        data: {
+          pt: {
+            title: 'Prime Trust',
+            desc: `
+            <p>Prime Trust is the independent, accredited custodian of our USD reserve. When you deposit, Prime Trust stores your money across multiple bank accounts <strong>insured to a total of $130,000,000.</strong></p>
+            `,
+            link: 'https://primetrust.com/'
+          },
+          bg: {
+            title: 'BitGo',
+            desc: `
+            <p>BitGo is our approved custodian of digital asset collateral. When you borrow against a BitGo-supported cryptocurrency, your collateral is sent to a BitGo escrow <strong>insured to $100,000,000.</strong></p>
+            `,
+            link: 'https://www.bitgo.com/'
+          },
+        }
+      },
+      settlement: {
+        title: 'Settlement',
+        data: {
+          cb: {
+            title: 'Checkbook',
+            desc: `
+            <p>Checkbook helps settle withdrawals via ACH and digital cheque, making transfers cheaper for US residents.</p>
+            `,
+            link: 'https://checkbook.io/'
+          },
+          qc: {
+            title: 'QCP Capital',
+            desc: `
+            <p>QCP Capital helps manage collateral and offers occasional trading services.</p>
+            `,
+            link: 'https://qcp.capital/'
+          },
+        }
+      },
+      blockchain: {
+        title: 'Blockchain',
+        desc: `
+        <p>We’ve signed partnerships with <strong>blockchain’s biggest movers and shakers.</strong> Together, we work hard to help you do more with your assets.</p>
+        `,
+        vip: {
+          name: 'CZ Binance',
+          auth: '@cz_binance',
+          desc:`
+            <p>Some much appreciated "competition" to <a href="https://twitter.com/binance" target="_blank">@binance</a> lending. Let's grow together!</p>
+          `,
+        }
+      },
     }
   },
   ourStory: {
@@ -8920,8 +9084,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         country_desc: 'The flags indicate the countries in which the loans listed by the company on Constant marketplace are issued',
         currency: 'Currency',
         skinInTheGame: 'Skin in the Game',
-        skinInTheGame_desc: `The phrase “Skin In The Game” refers to the equity stake (ownership interest) that an owner of an investment owns after the investment is sold to external investors. This is to ensure the interests of the originator of the asset are aligned with the interests of the external investors, as both sides have a stake (an ownership interest) in the investment.
-          On Constant Marketplace, all Loan Originators are required to maintain a certain percentage interest in each Loan which is their stake in the loan or their skin in the game in the loan. For example, if a loan originator with 10% skin in the game issues a EUR1000 loan to a borrower, only EUR 900 of this loan will be available for external investors to invest in and the loan originator will keep a stake of EUR100, equal to 10% of the Loan.`,
+        skinInTheGame_desc: 'This is Loan Originator’s skin in the game - the minimum remaining stake in the Loan that the Loan Originator must hold',
         buyBackGuarantee: 'Buyback Guarantee',
         buyBackGuarantee_desc: 'A buy-back guarantee is a guarantee issued by the Loan Originator to the investor for a particular loan, whereby the loan orginator promises to repurchase the loan from the investor if that particular loan is delayed by more than 60 days. The buyback guarantee is given at an individual loan level and is marked with the symbol of a shield. If a loan with a buy-back guarantee is delayed by more than 60 days, the loan will be bought back by the Loan Originator from the investor at the nominal value of outstanding principal, plus accrued interest. A buy-back guarantee is only as good as the loan originator\'s financial capability to honor such guarantee at the time of a buy-back event being triggered. A buy-back guarantee is NOT a guarantee from Constant Marketplace and its associates.',
         loansOriginated: 'Loans Originated',

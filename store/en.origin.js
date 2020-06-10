@@ -38,7 +38,9 @@
             "selectChoice": "%%%.app.common.selectChoice%%%",
             "inRange": "%%%.app.common.inRange%%%",
             "copiedAddress": "%%%.app.common.copiedAddress%%%",
-            "uploading": "%%%.app.common.uploading%%%"
+            "uploading": "%%%.app.common.uploading%%%",
+            "warning6h": "%%%.app.common.warning6h%%%",
+            "timeoutDepositWarning": "%%%.app.common.timeoutDepositWarning%%%"
         },
         "local": {
             "type": {
@@ -1341,8 +1343,10 @@
                     },
                     "autoTopup": {
                         "messageConfirm": {
+                            "false": "%%%.me.proSaving.listApplications.dialog.autoTopup.messageConfirm.false%%%",
                             "true": "%%%.me.proSaving.listApplications.dialog.autoTopup.messageConfirm.true%%%",
-                            "false": "%%%.me.proSaving.listApplications.dialog.autoTopup.messageConfirm.false%%%"
+                            "disable": "%%%.me.proSaving.listApplications.dialog.autoTopup.messageConfirm.disable%%%",
+                            "enable": "%%%.me.proSaving.listApplications.dialog.autoTopup.messageConfirm.enable%%%"
                         },
                         "autoTopUpCollateralSuccess": {
                             "true": "%%%.me.proSaving.listApplications.dialog.autoTopup.autoTopUpCollateralSuccess.true%%%",
@@ -1454,6 +1458,7 @@
                         "confirm": "%%%.me.proSaving.listApplications.dialog.pay.confirm%%%",
                         "cancel": "%%%.me.proSaving.listApplications.dialog.pay.cancel%%%",
                         "paySuccess": "%%%.me.proSaving.listApplications.dialog.pay.paySuccess%%%",
+                        "payFailed": "%%%.me.proSaving.listApplications.dialog.pay.payFailed%%%",
                         "notEnoughConstantRepay": "%%%.me.proSaving.listApplications.dialog.pay.notEnoughConstantRepay%%%",
                         "makeADeposit": "%%%.me.proSaving.listApplications.dialog.pay.makeADeposit%%%"
                     },
@@ -2388,6 +2393,7 @@
             },
             "headLine": "%%%.home.constantLoan.headLine%%%",
             "exchange": {
+                "availableCredit": "%%%.home.constantLoan.exchange.availableCredit%%%",
                 "stakingTimeMessage": "%%%.home.constantLoan.exchange.stakingTimeMessage%%%",
                 "exchangeInfo": "%%%.home.constantLoan.exchange.exchangeInfo%%%",
                 "exchangeInfoDesc": "%%%.home.constantLoan.exchange.exchangeInfoDesc%%%",
@@ -2570,10 +2576,12 @@
                 "loan": "%%%.home.constantLoan.listApplications.loan%%%",
                 "staked": "%%%.home.constantLoan.listApplications.staked%%%",
                 "amount": "%%%.home.constantLoan.listApplications.amount%%%",
+                "availableAmount": "%%%.home.constantLoan.listApplications.availableAmount%%%",
                 "matched": "%%%.home.constantLoan.listApplications.matched%%%",
                 "pendingAmount": "%%%.home.constantLoan.listApplications.pendingAmount%%%",
                 "collateralRequired": "%%%.home.constantLoan.listApplications.collateralRequired%%%",
                 "collateralAddress": "%%%.home.constantLoan.listApplications.collateralAddress%%%",
+                "collateralType": "%%%.home.constantLoan.listApplications.collateralType%%%",
                 "extraRate": "%%%.home.constantLoan.listApplications.extraRate%%%",
                 "exchangeRates": "%%%.home.constantLoan.listApplications.exchangeRates%%%",
                 "createdDate": "%%%.home.constantLoan.listApplications.createdDate%%%",
@@ -2589,7 +2597,7 @@
                 "payCollateral": "%%%.home.constantLoan.listApplications.payCollateral%%%",
                 "payOffLoan": "%%%.home.constantLoan.listApplications.payOffLoan%%%",
                 "depositMatched": "%%%.home.constantLoan.listApplications.depositMatched%%%",
-                "rewardApply": "%%%.home.constantLoan.listApplications.rewardApply%%%",
+                "redeemApply": "%%%.home.constantLoan.listApplications.redeemApply%%%",
                 "cancelDepositMatched": "%%%.home.constantLoan.listApplications.cancelDepositMatched%%%",
                 "cashback": "%%%.home.constantLoan.listApplications.cashback%%%",
                 "collateral": "%%%.home.constantLoan.listApplications.collateral%%%",
@@ -2601,6 +2609,13 @@
                 "partialMatchesDesc": "%%%.home.constantLoan.listApplications.partialMatchesDesc%%%",
                 "status": "%%%.home.constantLoan.listApplications.status%%%",
                 "allStatus": "%%%.home.constantLoan.listApplications.allStatus%%%",
+                "overview": "%%%.home.constantLoan.listApplications.overview%%%",
+                "availableCredit": "%%%.home.constantLoan.listApplications.availableCredit%%%",
+                "totalDebt": "%%%.home.constantLoan.listApplications.totalDebt%%%",
+                "avgInterest": "%%%.home.constantLoan.listApplications.avgInterest%%%",
+                "depositCollateral": "%%%.home.constantLoan.listApplications.depositCollateral%%%",
+                "deposit": "%%%.home.constantLoan.listApplications.deposit%%%",
+                "recallExcess": "%%%.home.constantLoan.listApplications.recallExcess%%%",
                 "mapStatus": {
                     "pending": "%%%.home.constantLoan.listApplications.mapStatus.pending%%%",
                     "recieved": "%%%.home.constantLoan.listApplications.mapStatus.recieved%%%",
@@ -2694,8 +2709,7 @@
                 "errorRemainCollateral": "%%%.home.constantLoan.listApplications.errorRemainCollateral%%%",
                 "errorRemainCollateralHtml": "%%%.home.constantLoan.listApplications.errorRemainCollateralHtml%%%",
                 "errorCollateralNotEnoughHtml": "%%%.home.constantLoan.listApplications.errorCollateralNotEnoughHtml%%%",
-                "errorCantCollateralHtml": "%%%.home.constantLoan.listApplications.errorCantCollateralHtml%%%",
-                "errorGetCollateralValueHtml": "%%%.home.constantLoan.listApplications.errorGetCollateralValueHtml%%%",
+                "errorRecallLowCreditRate": "%%%.home.constantLoan.listApplications.errorRecallLowCreditRate%%%",
                 "depositFrom": {
                     "title": "%%%.home.constantLoan.listApplications.depositFrom.title%%%",
                     "amount": "%%%.home.constantLoan.listApplications.depositFrom.amount%%%",
@@ -2788,6 +2802,7 @@
             },
             "headLine": "%%%.home.constantC2CLoan.headLine%%%",
             "exchange": {
+                "availableCredit": "%%%.home.constantC2CLoan.exchange.availableCredit%%%",
                 "eventBox": "%%%.home.constantC2CLoan.exchange.eventBox%%%",
                 "stakingTimeMessage": "%%%.home.constantC2CLoan.exchange.stakingTimeMessage%%%",
                 "exchangeInfo": "%%%.home.constantC2CLoan.exchange.exchangeInfo%%%",
@@ -3029,6 +3044,10 @@
                 "status": "%%%.home.constantC2CLoan.listApplications.status%%%",
                 "allStatus": "%%%.home.constantC2CLoan.listApplications.allStatus%%%",
                 "cancelBorrow": "%%%.home.constantC2CLoan.listApplications.cancelBorrow%%%",
+                "overview": "%%%.home.constantC2CLoan.listApplications.overview%%%",
+                "availableCredit": "%%%.home.constantC2CLoan.listApplications.availableCredit%%%",
+                "totalDebt": "%%%.home.constantC2CLoan.listApplications.totalDebt%%%",
+                "avgInterest": "%%%.home.constantC2CLoan.listApplications.avgInterest%%%",
                 "mapStatus": {
                     "pending": "%%%.home.constantC2CLoan.listApplications.mapStatus.pending%%%",
                     "recieved": "%%%.home.constantC2CLoan.listApplications.mapStatus.recieved%%%",
@@ -3123,8 +3142,7 @@
                 "errorRemainCollateral": "%%%.home.constantC2CLoan.listApplications.errorRemainCollateral%%%",
                 "errorRemainCollateralHtml": "%%%.home.constantC2CLoan.listApplications.errorRemainCollateralHtml%%%",
                 "errorCollateralNotEnoughHtml": "%%%.home.constantC2CLoan.listApplications.errorCollateralNotEnoughHtml%%%",
-                "errorCantCollateralHtml": "%%%.home.constantC2CLoan.listApplications.errorCantCollateralHtml%%%",
-                "errorGetCollateralValueHtml": "%%%.home.constantC2CLoan.listApplications.errorGetCollateralValueHtml%%%",
+                "errorRecallLowCreditRate": "%%%.home.constantC2CLoan.listApplications.errorRecallLowCreditRate%%%",
                 "depositFrom": {
                     "title": "%%%.home.constantC2CLoan.listApplications.depositFrom.title%%%",
                     "amount": "%%%.home.constantC2CLoan.listApplications.depositFrom.amount%%%",
@@ -5072,7 +5090,8 @@
                 "usingStakingMobile": "%%%.proLending.borrowBooking.exchange.usingStakingMobile%%%",
                 "usingStakingDesc": "%%%.proLending.borrowBooking.exchange.usingStakingDesc%%%",
                 "stakingMinAmount": "%%%.proLending.borrowBooking.exchange.stakingMinAmount%%%",
-                "goToAccountApp": "%%%.proLending.borrowBooking.exchange.goToAccountApp%%%"
+                "goToAccountApp": "%%%.proLending.borrowBooking.exchange.goToAccountApp%%%",
+                "availableCredit": "%%%.proLending.borrowBooking.exchange.availableCredit%%%"
             },
             "createdSuccess": "%%%.proLending.borrowBooking.createdSuccess%%%",
             "errorMsgs": {
@@ -5113,7 +5132,8 @@
                 "usingStakingMobile": "%%%.proLending.borrowC2CBooking.exchange.usingStakingMobile%%%",
                 "usingStakingDesc": "%%%.proLending.borrowC2CBooking.exchange.usingStakingDesc%%%",
                 "stakingMinAmount": "%%%.proLending.borrowC2CBooking.exchange.stakingMinAmount%%%",
-                "goToAccountApp": "%%%.proLending.borrowC2CBooking.exchange.goToAccountApp%%%"
+                "goToAccountApp": "%%%.proLending.borrowC2CBooking.exchange.goToAccountApp%%%",
+                "availableCredit": "%%%.proLending.borrowC2CBooking.exchange.availableCredit%%%"
             },
             "errorMsgs": {
                 "notEnoughBalance": "%%%.proLending.borrowC2CBooking.errorMsgs.notEnoughBalance%%%",
@@ -5508,7 +5528,9 @@
         "coin": "%%%.collateralBalance.coin%%%",
         "name": "%%%.collateralBalance.name%%%",
         "totalBalance": "%%%.collateralBalance.totalBalance%%%",
+        "collateralBalance": "%%%.collateralBalance.collateralBalance%%%",
         "availableBalance": "%%%.collateralBalance.availableBalance%%%",
+        "flexBalance": "%%%.collateralBalance.flexBalance%%%",
         "stakingBalance": "%%%.collateralBalance.stakingBalance%%%",
         "rewardBalance": "%%%.collateralBalance.rewardBalance%%%",
         "stakingBalanceMobile": "%%%.collateralBalance.stakingBalanceMobile%%%",
@@ -5520,6 +5542,7 @@
         "withdraw": "%%%.collateralBalance.withdraw%%%",
         "withdrawReward": "%%%.collateralBalance.withdrawReward%%%",
         "deposit": "%%%.collateralBalance.deposit%%%",
+        "topup": "%%%.collateralBalance.topup%%%",
         "staking": "%%%.collateralBalance.staking%%%",
         "autoStake": "%%%.collateralBalance.autoStake%%%",
         "autoStakeDesc": "%%%.collateralBalance.autoStakeDesc%%%",
@@ -5540,9 +5563,15 @@
         },
         "unStaking": "%%%.collateralBalance.unStaking%%%",
         "depositCollateralTitle": "%%%.collateralBalance.depositCollateralTitle%%%",
+        "topupCollateralTitle": "%%%.collateralBalance.topupCollateralTitle%%%",
         "hideSmallBalance": "%%%.collateralBalance.hideSmallBalance%%%",
         "hideDesc": "%%%.collateralBalance.hideDesc%%%",
         "estimatedValue": "%%%.collateralBalance.estimatedValue%%%",
+        "topupSuccess": "%%%.collateralBalance.topupSuccess%%%",
+        "recommendMessage": "%%%.collateralBalance.recommendMessage%%%",
+        "topupNote": "%%%.collateralBalance.topupNote%%%",
+        "errorMaxValue": "%%%.collateralBalance.errorMaxValue%%%",
+        "errorMinValue": "%%%.collateralBalance.errorMinValue%%%",
         "tabs": {
             "collaterals": "%%%.collateralBalance.tabs.collaterals%%%",
             "staking": "%%%.collateralBalance.tabs.staking%%%"
@@ -6286,6 +6315,123 @@
                 "messageConfirm": "%%%.memberShip.reviewMemberShip.redeemPopup.messageConfirm%%%",
                 "confirm": "%%%.memberShip.reviewMemberShip.redeemPopup.confirm%%%",
                 "cancel": "%%%.memberShip.reviewMemberShip.redeemPopup.cancel%%%"
+            }
+        },
+        "press": {
+            "consumerFinance": {
+                "title": "%%%.memberShip.press.consumerFinance.title%%%",
+                "desc": "%%%.memberShip.press.consumerFinance.desc%%%",
+                "data": {
+                    "1": {
+                        "name": "%%%.memberShip.press.consumerFinance.data.1.name%%%",
+                        "desc": "%%%.memberShip.press.consumerFinance.data.1.desc%%%",
+                        "link": "%%%.memberShip.press.consumerFinance.data.1.link%%%"
+                    },
+                    "2": {
+                        "name": "%%%.memberShip.press.consumerFinance.data.2.name%%%",
+                        "desc": "%%%.memberShip.press.consumerFinance.data.2.desc%%%",
+                        "link": "%%%.memberShip.press.consumerFinance.data.2.link%%%"
+                    },
+                    "3": {
+                        "name": "%%%.memberShip.press.consumerFinance.data.3.name%%%",
+                        "desc": "%%%.memberShip.press.consumerFinance.data.3.desc%%%",
+                        "link": "%%%.memberShip.press.consumerFinance.data.3.link%%%"
+                    }
+                }
+            },
+            "technology": {
+                "title": "%%%.memberShip.press.technology.title%%%",
+                "desc": "%%%.memberShip.press.technology.desc%%%",
+                "data": {
+                    "1": {
+                        "name": "%%%.memberShip.press.technology.data.1.name%%%",
+                        "desc": "%%%.memberShip.press.technology.data.1.desc%%%",
+                        "link": "%%%.memberShip.press.technology.data.1.link%%%"
+                    },
+                    "2": {
+                        "name": "%%%.memberShip.press.technology.data.2.name%%%",
+                        "desc": "%%%.memberShip.press.technology.data.2.desc%%%",
+                        "link": "%%%.memberShip.press.technology.data.2.link%%%"
+                    },
+                    "3": {
+                        "name": "%%%.memberShip.press.technology.data.3.name%%%",
+                        "desc": "%%%.memberShip.press.technology.data.3.desc%%%",
+                        "link": "%%%.memberShip.press.technology.data.3.link%%%"
+                    }
+                }
+            },
+            "blockchain": {
+                "title": "%%%.memberShip.press.blockchain.title%%%",
+                "desc": "%%%.memberShip.press.blockchain.desc%%%",
+                "data": {
+                    "1": {
+                        "name": "%%%.memberShip.press.blockchain.data.1.name%%%",
+                        "desc": "%%%.memberShip.press.blockchain.data.1.desc%%%",
+                        "link": "%%%.memberShip.press.blockchain.data.1.link%%%"
+                    },
+                    "2": {
+                        "name": "%%%.memberShip.press.blockchain.data.2.name%%%",
+                        "desc": "%%%.memberShip.press.blockchain.data.2.desc%%%",
+                        "link": "%%%.memberShip.press.blockchain.data.2.link%%%"
+                    },
+                    "3": {
+                        "name": "%%%.memberShip.press.blockchain.data.3.name%%%",
+                        "desc": "%%%.memberShip.press.blockchain.data.3.desc%%%",
+                        "link": "%%%.memberShip.press.blockchain.data.3.link%%%"
+                    },
+                    "4": {
+                        "name": "%%%.memberShip.press.blockchain.data.4.name%%%",
+                        "desc": "%%%.memberShip.press.blockchain.data.4.desc%%%",
+                        "link": "%%%.memberShip.press.blockchain.data.4.link%%%"
+                    },
+                    "5": {
+                        "name": "%%%.memberShip.press.blockchain.data.5.name%%%",
+                        "desc": "%%%.memberShip.press.blockchain.data.5.desc%%%",
+                        "link": "%%%.memberShip.press.blockchain.data.5.link%%%"
+                    }
+                }
+            }
+        },
+        "partners": {
+            "custody": {
+                "title": "%%%.memberShip.partners.custody.title%%%",
+                "readMore": "%%%.memberShip.partners.custody.readMore%%%",
+                "data": {
+                    "pt": {
+                        "title": "%%%.memberShip.partners.custody.data.pt.title%%%",
+                        "desc": "%%%.memberShip.partners.custody.data.pt.desc%%%",
+                        "link": "%%%.memberShip.partners.custody.data.pt.link%%%"
+                    },
+                    "bg": {
+                        "title": "%%%.memberShip.partners.custody.data.bg.title%%%",
+                        "desc": "%%%.memberShip.partners.custody.data.bg.desc%%%",
+                        "link": "%%%.memberShip.partners.custody.data.bg.link%%%"
+                    }
+                }
+            },
+            "settlement": {
+                "title": "%%%.memberShip.partners.settlement.title%%%",
+                "data": {
+                    "cb": {
+                        "title": "%%%.memberShip.partners.settlement.data.cb.title%%%",
+                        "desc": "%%%.memberShip.partners.settlement.data.cb.desc%%%",
+                        "link": "%%%.memberShip.partners.settlement.data.cb.link%%%"
+                    },
+                    "qc": {
+                        "title": "%%%.memberShip.partners.settlement.data.qc.title%%%",
+                        "desc": "%%%.memberShip.partners.settlement.data.qc.desc%%%",
+                        "link": "%%%.memberShip.partners.settlement.data.qc.link%%%"
+                    }
+                }
+            },
+            "blockchain": {
+                "title": "%%%.memberShip.partners.blockchain.title%%%",
+                "desc": "%%%.memberShip.partners.blockchain.desc%%%",
+                "vip": {
+                    "name": "%%%.memberShip.partners.blockchain.vip.name%%%",
+                    "auth": "%%%.memberShip.partners.blockchain.vip.auth%%%",
+                    "desc": "%%%.memberShip.partners.blockchain.vip.desc%%%"
+                }
             }
         }
     },

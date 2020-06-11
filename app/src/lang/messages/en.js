@@ -5655,7 +5655,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     learnMore: 'Learn more here',
     intro: {
       desc: {
-        1: 'Provide liquidity for DEX',
+        1: 'Zero fees',
         2: 'Interest compounded and paid every second',
         3: 'Unlimited free withdrawals',
       }
@@ -5789,33 +5789,33 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       bitGo: '$100M escrow insurance',
       desc: 'Fully secured, fully backed. All lending is secured by crypto collateral. Smart contracts and Prime Trust custody protect collateral until it’s returned to you.'
     },
-    // faqs: {
-    //   question1: 'What is peer-to-peer (P2P) lending?',
-    //   answer1: `
-    //   <p>P2P lending is where one person lends to another in return for interest, without any third party getting in the way. Unlike bank lending, where the bank lends your deposits and keeps the lion’s share of interest, P2P lending lets you keep all the profits yourself.</p>
-    //   <p>On our platform, you also set your own rates and terms, which gives you plenty of flexibility to find the right investment. We also differ from other P2P lending platforms in that we only use liquid collateral – in other words, we secure loans with collateral that’s easy to sell if borrowers default, ensuring you get your money back (plus interest).</p>
-    //   <p>New to P2P lending? <a href="https://www.myconstant.com/blog/peer-to-peer-lending-what-you-should-know-before-investing" class="underline" target="_blank">Here’s what to know before you invest.</a></p>
-    //   `
-    //   ,
-    //   question2: 'What makes Constant different from other P2P lending platforms?',
-    //   answer2: `
-    //     <p>Constant is a fully-secured peer-to-peer lending platform. Every loan is backed by collateral of up to 150% of the loan amount, which is sold if borrowers default or its value falls to a threshold, protecting investors (borrowers keep the loan).</p>
-    //     <p>Unlike other platforms, Constant pools investor funds into a lending pool or reserve. This means you match instantly, whether you’re a borrower or an investor. We don’t need credit checks and we offer three fixed-term investments to give you flexibility.</p>
-    //     <p>As well as providing you with a platform on which to do business, we also believe in giving you the educational resources to reach your financial goals, fast. To learn more, <a href="https://myconstant.com/blog" class="underline" target="_blank">check out our blog</a>.</p>
-    //     <p><a href="https://www.myconstant.com/blog/11-reasons-to-invest-with-constant" class="underline" target="_blank">Discover 11 reasons to invest with Constant.</a></p>
-    //   `,
-    //   question3: 'Who can participate?',
-    //   answer3: `
-    //     <p>Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment). If you intend to invest fiat (USD), you will also need to pass KYC (Know Your Customer) checks.</p>
-    //     <p><a href="https://www.myconstant.com/blog/how-to-verify-your-id-on-constant-kyc" class="underline" target="_blank">How to verify your ID (KYC).</a></p>
-    //   `,
-    //   question4: 'How does Constant protect customers’ assets?',
-    //   answer4: `
-    //     <p>All loans are up to 150% backed by collateral put up by borrowers. If borrowers default or their collateral falls too much in value, the collateral is sold to repay investors.</p>
-    //     <p>In addition, we use qualified custodial partners (Prime Trust) to manage both fiat (USD) and digital assets. This additional layer of protection helps minimize the threat of theft, mismanagement, or loss of your assets.</p>
-    //     <p><a href="https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral" class="underline" target="_blank">Read more about how we protect your assets.</a></p>
-    //   `,
-    // },
+    faqs: {
+      question1: 'What is peer-to-peer (P2P) lending?',
+      answer1: `
+      <p>P2P lending is where one person lends to another in return for interest, without any third party getting in the way. Unlike bank lending, where the bank lends your deposits and keeps the lion’s share of interest, P2P lending lets you keep all the profits yourself.</p>
+      <p>On our platform, you also set your own rates and terms, which gives you plenty of flexibility to find the right investment. We also differ from other P2P lending platforms in that we only use liquid collateral – in other words, we secure loans with collateral that’s easy to sell if borrowers default, ensuring you get your money back (plus interest).</p>
+      <p>New to P2P lending? <a href="https://www.myconstant.com/blog/peer-to-peer-lending-what-you-should-know-before-investing" class="underline" target="_blank">Here’s what to know before you invest.</a></p>
+      `
+      ,
+      question2: 'What makes Constant different from other P2P lending platforms?',
+      answer2: `
+        <p>Constant is a fully-secured peer-to-peer lending platform. Every loan is backed by collateral of up to 150% of the loan amount, which is sold if borrowers default or its value falls to a threshold, protecting investors (borrowers keep the loan).</p>
+        <p>Unlike other platforms, Constant pools investor funds into a lending pool or reserve. This means you match instantly, whether you’re a borrower or an investor. We don’t need credit checks and we offer three fixed-term investments to give you flexibility.</p>
+        <p>As well as providing you with a platform on which to do business, we also believe in giving you the educational resources to reach your financial goals, fast. To learn more, <a href="https://myconstant.com/blog" class="underline" target="_blank">check out our blog</a>.</p>
+        <p><a href="https://www.myconstant.com/blog/11-reasons-to-invest-with-constant" class="underline" target="_blank">Discover 11 reasons to invest with Constant.</a></p>
+      `,
+      question3: 'Who can participate?',
+      answer3: `
+        <p>Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment). If you intend to invest fiat (USD), you will also need to pass KYC (Know Your Customer) checks.</p>
+        <p><a href="https://www.myconstant.com/blog/how-to-verify-your-id-on-constant-kyc" class="underline" target="_blank">How to verify your ID (KYC).</a></p>
+      `,
+      question4: 'How does Constant protect customers’ assets?',
+      answer4: `
+        <p>All loans are up to 150% backed by collateral put up by borrowers. If borrowers default or their collateral falls too much in value, the collateral is sold to repay investors.</p>
+        <p>In addition, we use qualified custodial partners (Prime Trust) to manage both fiat (USD) and digital assets. This additional layer of protection helps minimize the threat of theft, mismanagement, or loss of your assets.</p>
+        <p><a href="https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral" class="underline" target="_blank">Read more about how we protect your assets.</a></p>
+      `,
+    },
     howItWorks: {
       title: 'How it works.',
       desc: 'The Constant algorithm pools investor funds into a lending reserve from which borrowers can get loans in return for interest. Borrowers secure their loans with collateral which is sold if they default or its value falls to a threshold, eliminating the need for credit checks.',

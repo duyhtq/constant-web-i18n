@@ -4283,7 +4283,7 @@
         "learnMore": "Learn more here",
         "intro": {
             "desc": {
-                "1": "Provide liquidity for DEX",
+                "1": "Zero fees",
                 "2": "Interest compounded and paid every second",
                 "3": "Unlimited free withdrawals"
             }
@@ -4363,16 +4363,6 @@
         "crypto": {
             "bitGo": "$100M custody insurance",
             "desc": "Fully secured, fully backed. All lending is secured by crypto collateral. Smart contracts and Prime Trust custody protect collateral until it’s returned to you."
-        },
-        "faqs": {
-            "question1": "%%%.newHome.faqs.question1%%%",
-            "answer1": "%%%.newHome.faqs.answer1%%%",
-            "question2": "%%%.newHome.faqs.question2%%%",
-            "answer2": "%%%.newHome.faqs.answer2%%%",
-            "question3": "%%%.newHome.faqs.question3%%%",
-            "answer3": "%%%.newHome.faqs.answer3%%%",
-            "question4": "%%%.newHome.faqs.question4%%%",
-            "answer4": "%%%.newHome.faqs.answer4%%%"
         },
         "howItWorks": {
             "title": "How it works.",

@@ -4364,6 +4364,16 @@
             "bitGo": "%%%.newHome.crypto.bitGo%%%",
             "desc": "%%%.newHome.crypto.desc%%%"
         },
+        "faqs": {
+            "question1": "%%%.newHome.faqs.question1%%%",
+            "answer1": "%%%.newHome.faqs.answer1%%%",
+            "question2": "%%%.newHome.faqs.question2%%%",
+            "answer2": "%%%.newHome.faqs.answer2%%%",
+            "question3": "%%%.newHome.faqs.question3%%%",
+            "answer3": "%%%.newHome.faqs.answer3%%%",
+            "question4": "%%%.newHome.faqs.question4%%%",
+            "answer4": "%%%.newHome.faqs.answer4%%%"
+        },
         "howItWorks": {
             "title": "%%%.newHome.howItWorks.title%%%",
             "desc": "%%%.newHome.howItWorks.desc%%%",

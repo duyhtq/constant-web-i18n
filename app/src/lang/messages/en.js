@@ -217,7 +217,7 @@ export default {
     invest: 'Invest',
     investDesc: 'Earn 7% interest fully secured.',
     buyback: 'Loan Originator',
-    buybackDesc: 'Earn up to 13% APR. Terms from 6-15 months. All Loans has buy-back guarantee from the Lender in case of default.',
+    buybackDesc: 'Earn up to 13% APR. Terms from 6-15 months. Includes loan originator’s buy-back guarantee in case of default.',
     borrow: 'Borrow',
     borrowDesc: 'Your rates. Your terms. No credit checks. Crypto-backed.',
     borrowCoin: 'Crypto Credit <sup>NEW</sup>',
@@ -264,7 +264,7 @@ export default {
       },
       investLO: {
         title: 'Loan Originator',
-        desc: 'Earn up to 13% APR. Terms from 6-15 months. All Loans has buy-back guarantee from the Lender in case of default.',
+        desc: 'Earn up to 13% APR. Terms from 6-15 months. Includes loan originator’s buy-back guarantee in case of default.',
       },
       investStaking: {
         title: 'Crypto Staking',
@@ -4152,7 +4152,15 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           assignmentAgreement: 'Assignment Agreement',
           investedDate: 'Date invested',
           totalInvestAmount: 'Total investment amount',
-          loanStatus: 'Loan status',
+          investmentStatus: 'Investment status',
+          investmentStatusDesc: `
+            <p>Status of a specific investment.</p>
+            <p>1. Ready to invest: Investor's Account has sufficient funding to meet the Investment Order</p>
+            <p>2. Activating: The Investment is not yet active as investment payment is currently being processed. The Investment will be activated and start to earn interest when the Loan Originator receives the investment amount.</p>
+            <p>3. Active: The Investment transaction is settled and the investment is active and has started to earn interest.</p>
+            <p>4. Closed: The Investment reached the end of loan term and principal fully repaid OR The Investment has been purchased back by the Loan Originator OR  the Investment has been sold in the Secondary Market.</p>
+            <p>5. Bad Debt: The Investment has passed the loan term for more than 60 days, the Buy Back Guarantee failed to be executed and the principal or part of the principal has not been recovered.</p>
+          `,
           totalPaymentReceived: 'Total payment received',
           totalPaymentReceivedDesc: 'Total interest payment and principal payment (if applicable) that have been received, credited and settled in the Investor\'s account',
           interestRate: 'Interest rate',
@@ -4223,9 +4231,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         mapStatus1: {
           active: 'Active',
           stopped: 'Deactivated',
-          ready: 'Ready',
+          ready: 'Ready to invest',
           activating: 'Activating',
           closed: 'Closed',
+          bad_debt: 'Bad Debt',
         },
         start: 'Activate',
         stop: 'Deactivate',
@@ -4242,13 +4251,14 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         delete: 'Delete',
         deleteConfirm: 'Are you sure you want to delete this package?',
         investedLoanStatus: {
-          current: 'Paid',
-          scheduled: 'Scheduled',
-          late_1_15: 'Late 1-15 days',
-          late_16_30: 'Late 16-30 days',
-          late_31_60: 'Late 31-60 days',
-          late: 'Late',
+          current: 'Current',
+          // scheduled: 'Scheduled',
+          late_1_15: '1-15 Days Late',
+          late_16_30: '16-30 Days Late',
+          late_31_60: '31-60 Days Late',
+          // late: 'Late',
           default: 'Default',
+          bad_debt: 'Bad Debt',
         },
         reInvest: 'Auto Reinvest',
         reInvest_desc: 'This option enables investors to automatically invest borrower repayments (such as an interest or principal repayment) in new loans. This maximizes your returns by minimizing the amount of time your money spends idle.',
@@ -5699,23 +5709,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     `,
   },
   newHome: {
-    oldBanner: {
-      title1: `Experience <span class=textSuccess">fully secured</span> peer-to-peer lending.`,
-      subTitle: 'Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.',
-      invest: {
-        title: 'Invest the way you want',
-        cap: 'Start from just $50. Fully secured.',
-        btn: 'Invest',
-      },
-      borrow: {
-        title: 'Borrow the way you want',
-        cap: 'No limit. No credit checks. Terms from 1-6 months.',
-        btn: 'Borrow',
-      },
-    },
     newBanner: {
       title1: `Experience <span class=textSuccess">fully secured</span> peer-to-peer lending.`,
-      subTitle: 'Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.',
+      subTitle: 'Your investments are fully backed by borrower collateral, smart contracts, or buy-back guarantee. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.',
       invest: {
         title: `
           <p>
@@ -5777,7 +5773,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
             Loan term
           </p>
           <p class="clearBottom">
-            All Loans has buy-back guarantee from the Lender in case of default
+            Includes loan originator’s buy-back guarantee in case of default
           </p>
         `,
         btn: 'Explore',
@@ -8817,9 +8813,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         loanOriginator: 'Loan Originators'
       },
       desc: {
-        autoInvest: 'Auto Invest automates your investment strategy to save you time and effort. Simply choose the plan that best fits your goals and our matching algorithm will do the rest.',
+        autoInvest: 'Auto Invest lets you choose a predetermined investment strategy to save you time and effort. Simply choose the Plan that best fits your goals and our matching algorithm will do the rest.',
         manualInvest: 'Manual Invest puts you in the driving seat. Set your investment criteria to filter relevant loans. Then choose one or more loans and the amount to invest in each. Easy.',
-        loanOriginator: 'We work with the best P2P lenders in the world to offer you more choice and better returns. Learn more about who we work with and view their available loans here.'
+        loanOriginator: 'We work with the best P2P lenders in the world to offer you more choice and better returns. <a href="https://blog.myconstant.com/category/Loan-originator/" class="underline" target="_blank">Learn more about who we work with and view their available loans</a>.'
       }
     },
     manualInvest: {
@@ -8880,13 +8876,13 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         issueDate_desc: 'The date when the loan was originally issued by the loan originator to the borrower.',
         maturityDate: 'Maturity Date',
         maturityDate_desc: 'The date date on which a borrower\'s final loan payment is due and the loan is scheduled to be fully repaid.',
-        loanPaymentStatus: 'Loan Payment Status',
-        loanPaymentStatus_desc: 'Loan status indicates whether the borrower is repaying on schedule. There are three statuses: current, late, and in default. For late loans, the days of late payments is grouped into 3: 0-15 days late, 16-30 days late, and 31-60 days late.',
+        loanPaymentStatus: 'Loan Status',
+        loanPaymentStatus_desc: 'Loan status indicates whether the borrower is repaying on schedule. Loan status include Current, 1-15 days late, 16-30 days late, 31-60 days late, Default (more than 60 days late), Bad Debt (when the Loan is in default but the Loan Originator fails to honor its Buy Back Guarantee.',
         paymentType: {
           title: 'Payment Type',
           desc: `
           Payment type: 
-          <p>1. Full amortization – fixed, regular payments of the interest and principal. Full amortization reduces the outstanding loan balance to zero at the end of the term.</p>
+          <p>1. Installments (Full amortization) – fixed, regular payments of the interest and principal. Full amortization reduces the outstanding loan balance to zero at the end of the term.</p>
           <p>2. Interest only – fixed, regular payments of interest only. The principal is then repaid at the end of the term.</p>
           `,
           interest_only: {
@@ -8894,8 +8890,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
             desc: 'Interest only – fixed, regular payments of interest only. The principal is then repaid at the end of the term.'
           },
           installments: {
-            title: 'Full amortization',
-            desc: 'Full amortization – fixed, regular payments of the interest and principal. Full amortization reduces the outstanding loan balance to zero at the end of the term.'
+            title: 'Installments (Full amortization)',
+            desc: 'Installments (Full amortization) – fixed, regular payments of the interest and principal. Full amortization reduces the outstanding loan balance to zero at the end of the term.'
           }
         }
       },
@@ -8943,13 +8939,14 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     },
     autoInvest: {
       title: 'auto invest',
-      description: 'Auto Invest matches you with loans that best fit your investment criteria. Just select the plan that aligns with your investment goals and our matching algorithm will allocate your funds automatically.',
+      description: 'Auto Invest matches you with loans that best fit your investment criteria. Just select the predetermined plan that aligns with your investment goals and our matching algorithm will allocate your funds automatically.',
       shortTerm: {
         title: 'Best Interest plan',
-        description: `If you want shorter term and highest interest rate.<br/><br/>
-          <strong>{term}</strong><br/><br/> 
-          <strong>{interest}</strong><br/><br/>
-          Includes all loan types, countries, and loan originators rated C+ and above.`,
+        description: `Ideal if you want the highest interest rates or shorter terms.<br/><br/>
+          <strong>{term} months</strong><br/><br/> 
+          <strong>Interest {interest}</strong><br/><br/>
+          <strong>Basic diversification</strong><br/><br/>
+          Includes the highest-interest loans from three Loan Originators rated C+ and above.`,
         select: 'Select',
         readMore: 'Read more',
         readMoreDesc: `
@@ -8960,9 +8957,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       },
       diversified: {
         title: 'Diversified plan',
-        description: `Choose for the best balance between risk and reward.<br/><br/> 
-          <strong>{term}</strong><br/><br/> 
-          <strong>{interest}</strong><br/><br/>
+        description: `The ideal balance between risk and reward.<br/><br/> 
+          <strong>{term} months</strong><br/><br/> 
+          <strong>Interest {interest}</strong><br/><br/>
+          <strong>Maximum diversification</strong><br/><br/>
           Includes all loan types, countries, and loan originators rated B- and above.`,
         select: 'Select',
         readMore: 'Read more',
@@ -8983,9 +8981,14 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       },
       form: {
         description: `
-          <p>Investment Plans are currently only available in USD, but we plan to add more currencies in the future.</p> 
           <p>Before investing, please choose the amount you’d like to invest and whether you would like to reinvest your returns.</p> 
           <p>Once you’ve entered your criteria, click <strong>Start investing</strong> and your plan will activate immediately.</p>  
+        `,
+        description_shortTerm: `
+          <p>You’ve chosen the Best Interest Investment Plan, which offers {interest} APR and terms of {term} months. This Plan chooses loans with the highest interest rates from three loan originators and offers only basic diversification.</p> 
+        `,
+        description_diversified: `
+          <p>You’ve chosen the Diversified Investment Plan, which offers {interest} APR and terms of {term} months. This Plan is the ideal balance between risk and reward with maximum diversification.</p> 
         `,
         selectedStrategy: 'Selected plan:',
         strategy: {
@@ -8998,7 +9001,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         reinvest_desc: 'This option enables investors to automatically invest borrower repayments (such as an interest or principal repayment) in new loans. This maximizes your returns by minimizing the amount of time your money spends idle.',
         startInvesting: 'Start investing',
         update: 'Up investing',
-        term: `By clicking the "Start Investing" button, you have fully accepted the Investment Risks associated, the terms and conditions of the {assignment} and the {serviceAgreement} of Constant Platform.`,
+        term: `By clicking "Start investing", you fully accept the Investment Risks associated with investing, the terms and conditions of the {assignment}, and the {serviceAgreement} of the Constant Platform.`,
         yes: 'Yes',
         no: 'No',
         investConfirmation: {

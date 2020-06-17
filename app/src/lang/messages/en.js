@@ -4228,11 +4228,15 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           matched: 'Matched',
           closed: 'Done',
         },
-        mapStatus1: {
+        settingStatus: {
           active: 'Active',
           stopped: 'Deactivated',
+          deactivated: 'Deactivated',
+        },
+        investmentStatus: {
           ready: 'Ready to invest',
           activating: 'Activating',
+          active: 'Active',
           closed: 'Closed',
           bad_debt: 'Bad Debt',
         },

@@ -146,7 +146,7 @@
 %%%.lending.invest%%%,"Invest"
 %%%.lending.investDesc%%%,"Earn 7% interest fully secured."
 %%%.lending.buyback%%%,"Loan Originator"
-%%%.lending.buybackDesc%%%,"Earn up to 13% APR. Terms from 6-15 months. All Loans has buy-back guarantee from the Lender in case of default."
+%%%.lending.buybackDesc%%%,"Earn up to 13% APR. Terms from 6-15 months. Includes loan originator’s buy-back guarantee in case of default."
 %%%.lending.borrow%%%,"Borrow"
 %%%.lending.borrowDesc%%%,"Your rates. Your terms. No credit checks. Crypto-backed."
 %%%.lending.borrowCoin%%%,"Crypto Credit <sup>NEW</sup>"
@@ -185,7 +185,7 @@
 %%%.headerBar.extraMenu.investCustom.title%%%,"Fiat Custom"
 %%%.headerBar.extraMenu.investCustom.desc%%%,"Your terms. Best rates. Fully secured."
 %%%.headerBar.extraMenu.investLO.title%%%,"Loan Originator"
-%%%.headerBar.extraMenu.investLO.desc%%%,"Earn up to 13% APR. Terms from 6-15 months. All Loans has buy-back guarantee from the Lender in case of default."
+%%%.headerBar.extraMenu.investLO.desc%%%,"Earn up to 13% APR. Terms from 6-15 months. Includes loan originator’s buy-back guarantee in case of default."
 %%%.headerBar.extraMenu.investStaking.title%%%,"Crypto Staking"
 %%%.headerBar.extraMenu.investStaking.desc%%%,"6%-35% APR. Low minimums. Withdraw anytime."
 %%%.headerBar.extraMenu.investStaking.descHotFix%%%,"6%-35% APR. Low minimums. Withdraw anytime."
@@ -3309,7 +3309,15 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.home.loanOriginator.listApplications.headers.assignmentAgreement%%%,"Assignment Agreement"
 %%%.home.loanOriginator.listApplications.headers.investedDate%%%,"Date invested"
 %%%.home.loanOriginator.listApplications.headers.totalInvestAmount%%%,"Total investment amount"
-%%%.home.loanOriginator.listApplications.headers.loanStatus%%%,"Loan status"
+%%%.home.loanOriginator.listApplications.headers.investmentStatus%%%,"Investment status"
+%%%.home.loanOriginator.listApplications.headers.investmentStatusDesc%%%,"
+            <p>Status of a specific investment.</p>
+            <p>1. Ready to invest: Investor's Account has sufficient funding to meet the Investment Order</p>
+            <p>2. Activating: The Investment is not yet active as investment payment is currently being processed. The Investment will be activated and start to earn interest when the Loan Originator receives the investment amount.</p>
+            <p>3. Active: The Investment transaction is settled and the investment is active and has started to earn interest.</p>
+            <p>4. Closed: The Investment reached the end of loan term and principal fully repaid OR The Investment has been purchased back by the Loan Originator OR  the Investment has been sold in the Secondary Market.</p>
+            <p>5. Bad Debt: The Investment has passed the loan term for more than 60 days, the Buy Back Guarantee failed to be executed and the principal or part of the principal has not been recovered.</p>
+          "
 %%%.home.loanOriginator.listApplications.headers.totalPaymentReceived%%%,"Total payment received"
 %%%.home.loanOriginator.listApplications.headers.totalPaymentReceivedDesc%%%,"Total interest payment and principal payment (if applicable) that have been received, credited and settled in the Investor's account"
 %%%.home.loanOriginator.listApplications.headers.interestRate%%%,"Interest rate"
@@ -3362,9 +3370,10 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.home.loanOriginator.listApplications.mapStatus.closed%%%,"Done"
 %%%.home.loanOriginator.listApplications.mapStatus1.active%%%,"Active"
 %%%.home.loanOriginator.listApplications.mapStatus1.stopped%%%,"Deactivated"
-%%%.home.loanOriginator.listApplications.mapStatus1.ready%%%,"Ready"
+%%%.home.loanOriginator.listApplications.mapStatus1.ready%%%,"Ready to invest"
 %%%.home.loanOriginator.listApplications.mapStatus1.activating%%%,"Activating"
 %%%.home.loanOriginator.listApplications.mapStatus1.closed%%%,"Closed"
+%%%.home.loanOriginator.listApplications.mapStatus1.bad_debt%%%,"Bad Debt"
 %%%.home.loanOriginator.listApplications.start%%%,"Activate"
 %%%.home.loanOriginator.listApplications.stop%%%,"Deactivate"
 %%%.home.loanOriginator.listApplications.stopConfirm.shortTerm%%%,"
@@ -3377,13 +3386,12 @@ Exchange margin accounts typically only use the price on that exchange, so you c
           "
 %%%.home.loanOriginator.listApplications.delete%%%,"Delete"
 %%%.home.loanOriginator.listApplications.deleteConfirm%%%,"Are you sure you want to delete this package?"
-%%%.home.loanOriginator.listApplications.investedLoanStatus.current%%%,"Paid"
-%%%.home.loanOriginator.listApplications.investedLoanStatus.scheduled%%%,"Scheduled"
-%%%.home.loanOriginator.listApplications.investedLoanStatus.late_1_15%%%,"Late 1-15 days"
-%%%.home.loanOriginator.listApplications.investedLoanStatus.late_16_30%%%,"Late 16-30 days"
-%%%.home.loanOriginator.listApplications.investedLoanStatus.late_31_60%%%,"Late 31-60 days"
-%%%.home.loanOriginator.listApplications.investedLoanStatus.late%%%,"Late"
+%%%.home.loanOriginator.listApplications.investedLoanStatus.current%%%,"Current"
+%%%.home.loanOriginator.listApplications.investedLoanStatus.late_1_15%%%,"1-15 Days Late"
+%%%.home.loanOriginator.listApplications.investedLoanStatus.late_16_30%%%,"16-30 Days Late"
+%%%.home.loanOriginator.listApplications.investedLoanStatus.late_31_60%%%,"31-60 Days Late"
 %%%.home.loanOriginator.listApplications.investedLoanStatus.default%%%,"Default"
+%%%.home.loanOriginator.listApplications.investedLoanStatus.bad_debt%%%,"Bad Debt"
 %%%.home.loanOriginator.listApplications.reInvest%%%,"Auto Reinvest"
 %%%.home.loanOriginator.listApplications.reInvest_desc%%%,"This option enables investors to automatically invest borrower repayments (such as an interest or principal repayment) in new loans. This maximizes your returns by minimizing the amount of time your money spends idle."
 %%%.home.loanOriginator.listApplications.dialog.reInvestSetting.messageConfirm.true%%%,"
@@ -4419,16 +4427,8 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.yourSaving.hello%%%,"
       <strong>Hello {name}</strong>.<br/>Let's see how your money is doing today.
     "
-%%%.newHome.oldBanner.title1%%%,"Experience <span class=textSuccess"">fully secured</span> peer-to-peer lending."
-%%%.newHome.oldBanner.subTitle%%%,"Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free."
-%%%.newHome.oldBanner.invest.title%%%,"Invest the way you want"
-%%%.newHome.oldBanner.invest.cap%%%,"Start from just $50. Fully secured."
-%%%.newHome.oldBanner.invest.btn%%%,"Invest"
-%%%.newHome.oldBanner.borrow.title%%%,"Borrow the way you want"
-%%%.newHome.oldBanner.borrow.cap%%%,"No limit. No credit checks. Terms from 1-6 months."
-%%%.newHome.oldBanner.borrow.btn%%%,"Borrow"
 %%%.newHome.newBanner.title1%%%,"Experience <span class=textSuccess"">fully secured</span> peer-to-peer lending."
-%%%.newHome.newBanner.subTitle%%%,"Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free."
+%%%.newHome.newBanner.subTitle%%%,"Your investments are fully backed by borrower collateral, smart contracts, or buy-back guarantee. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free."
 %%%.newHome.newBanner.invest.title%%%,"
           <p>
             <strong>INVEST</strong>
@@ -4485,7 +4485,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
             Loan term
           </p>
           <p class=""clearBottom"">
-            All Loans has buy-back guarantee from the Lender in case of default
+            Includes loan originator’s buy-back guarantee in case of default
           </p>
         "
 %%%.newHome.newBanner.loanOriginator.btn%%%,"Explore"
@@ -6652,9 +6652,9 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.loanOriginators.header.tabs.autoInvest%%%,"Auto Invest"
 %%%.loanOriginators.header.tabs.manualInvest%%%,"Manual Invest"
 %%%.loanOriginators.header.tabs.loanOriginator%%%,"Loan Originators"
-%%%.loanOriginators.header.desc.autoInvest%%%,"Auto Invest automates your investment strategy to save you time and effort. Simply choose the plan that best fits your goals and our matching algorithm will do the rest."
+%%%.loanOriginators.header.desc.autoInvest%%%,"Auto Invest lets you choose a predetermined investment strategy to save you time and effort. Simply choose the Plan that best fits your goals and our matching algorithm will do the rest."
 %%%.loanOriginators.header.desc.manualInvest%%%,"Manual Invest puts you in the driving seat. Set your investment criteria to filter relevant loans. Then choose one or more loans and the amount to invest in each. Easy."
-%%%.loanOriginators.header.desc.loanOriginator%%%,"We work with the best P2P lenders in the world to offer you more choice and better returns. Learn more about who we work with and view their available loans here."
+%%%.loanOriginators.header.desc.loanOriginator%%%,"We work with the best P2P lenders in the world to offer you more choice and better returns. <a href=""https://blog.myconstant.com/category/Loan-originator/"" class=""underline"" target=""_blank"">Learn more about who we work with and view their available loans</a>."
 %%%.loanOriginators.manualInvest.ads.desc%%%,"
         Advertisement goes here. Just another line to fill up empty space of this ad.
         "
@@ -6705,18 +6705,18 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.loanOriginators.manualInvest.headers.issueDate_desc%%%,"The date when the loan was originally issued by the loan originator to the borrower."
 %%%.loanOriginators.manualInvest.headers.maturityDate%%%,"Maturity Date"
 %%%.loanOriginators.manualInvest.headers.maturityDate_desc%%%,"The date date on which a borrower's final loan payment is due and the loan is scheduled to be fully repaid."
-%%%.loanOriginators.manualInvest.headers.loanPaymentStatus%%%,"Loan Payment Status"
-%%%.loanOriginators.manualInvest.headers.loanPaymentStatus_desc%%%,"Loan status indicates whether the borrower is repaying on schedule. There are three statuses: current, late, and in default. For late loans, the days of late payments is grouped into 3: 0-15 days late, 16-30 days late, and 31-60 days late."
+%%%.loanOriginators.manualInvest.headers.loanPaymentStatus%%%,"Loan Status"
+%%%.loanOriginators.manualInvest.headers.loanPaymentStatus_desc%%%,"Loan status indicates whether the borrower is repaying on schedule. Loan status include Current, 1-15 days late, 16-30 days late, 31-60 days late, Default (more than 60 days late), Bad Debt (when the Loan is in default but the Loan Originator fails to honor its Buy Back Guarantee."
 %%%.loanOriginators.manualInvest.headers.paymentType.title%%%,"Payment Type"
 %%%.loanOriginators.manualInvest.headers.paymentType.desc%%%,"
           Payment type: 
-          <p>1. Full amortization – fixed, regular payments of the interest and principal. Full amortization reduces the outstanding loan balance to zero at the end of the term.</p>
+          <p>1. Installments (Full amortization) – fixed, regular payments of the interest and principal. Full amortization reduces the outstanding loan balance to zero at the end of the term.</p>
           <p>2. Interest only – fixed, regular payments of interest only. The principal is then repaid at the end of the term.</p>
           "
 %%%.loanOriginators.manualInvest.headers.paymentType.interest_only.title%%%,"Interest only"
 %%%.loanOriginators.manualInvest.headers.paymentType.interest_only.desc%%%,"Interest only – fixed, regular payments of interest only. The principal is then repaid at the end of the term."
-%%%.loanOriginators.manualInvest.headers.paymentType.installments.title%%%,"Full amortization"
-%%%.loanOriginators.manualInvest.headers.paymentType.installments.desc%%%,"Full amortization – fixed, regular payments of the interest and principal. Full amortization reduces the outstanding loan balance to zero at the end of the term."
+%%%.loanOriginators.manualInvest.headers.paymentType.installments.title%%%,"Installments (Full amortization)"
+%%%.loanOriginators.manualInvest.headers.paymentType.installments.desc%%%,"Installments (Full amortization) – fixed, regular payments of the interest and principal. Full amortization reduces the outstanding loan balance to zero at the end of the term."
 %%%.loanOriginators.manualInvest.details.backToLoan%%%,"Back to loan list"
 %%%.loanOriginators.manualInvest.details.loanId%%%,"LOAN ID"
 %%%.loanOriginators.manualInvest.details.loanDetails%%%," Loan Details"
@@ -6751,12 +6751,13 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.loanOriginators.manualInvest.summary.yourInvestAmount%%%,"Your investment amount:"
 %%%.loanOriginators.manualInvest.summary.totalAmount%%%,"Total amount:"
 %%%.loanOriginators.autoInvest.title%%%,"auto invest"
-%%%.loanOriginators.autoInvest.description%%%,"Auto Invest matches you with loans that best fit your investment criteria. Just select the plan that aligns with your investment goals and our matching algorithm will allocate your funds automatically."
+%%%.loanOriginators.autoInvest.description%%%,"Auto Invest matches you with loans that best fit your investment criteria. Just select the predetermined plan that aligns with your investment goals and our matching algorithm will allocate your funds automatically."
 %%%.loanOriginators.autoInvest.shortTerm.title%%%,"Best Interest plan"
-%%%.loanOriginators.autoInvest.shortTerm.description%%%,"If you want shorter term and highest interest rate.<br/><br/>
-          <strong>{term}</strong><br/><br/> 
-          <strong>{interest}</strong><br/><br/>
-          Includes all loan types, countries, and loan originators rated C+ and above."
+%%%.loanOriginators.autoInvest.shortTerm.description%%%,"Ideal if you want the highest interest rates or shorter terms.<br/><br/>
+          <strong>{term} months</strong><br/><br/> 
+          <strong>Interest {interest}</strong><br/><br/>
+          <strong>Basic diversification</strong><br/><br/>
+          Includes the highest-interest loans from three Loan Originators rated C+ and above."
 %%%.loanOriginators.autoInvest.shortTerm.select%%%,"Select"
 %%%.loanOriginators.autoInvest.shortTerm.readMore%%%,"Read more"
 %%%.loanOriginators.autoInvest.shortTerm.readMoreDesc%%%,"
@@ -6765,9 +6766,10 @@ Exchange margin accounts typically only use the price on that exchange, so you c
           <p>Although not all loans are collateral-backed and the loan originator rating might not be as high, all lending is backed by buy-back guarantee.</p>
         "
 %%%.loanOriginators.autoInvest.diversified.title%%%,"Diversified plan"
-%%%.loanOriginators.autoInvest.diversified.description%%%,"Choose for the best balance between risk and reward.<br/><br/> 
-          <strong>{term}</strong><br/><br/> 
-          <strong>{interest}</strong><br/><br/>
+%%%.loanOriginators.autoInvest.diversified.description%%%,"The ideal balance between risk and reward.<br/><br/> 
+          <strong>{term} months</strong><br/><br/> 
+          <strong>Interest {interest}</strong><br/><br/>
+          <strong>Maximum diversification</strong><br/><br/>
           Includes all loan types, countries, and loan originators rated B- and above."
 %%%.loanOriginators.autoInvest.diversified.select%%%,"Select"
 %%%.loanOriginators.autoInvest.diversified.readMore%%%,"Read more"
@@ -6784,9 +6786,14 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.loanOriginators.autoInvest.custom.select%%%,"Select"
 %%%.loanOriginators.autoInvest.custom.readMore%%%,"Read more"
 %%%.loanOriginators.autoInvest.form.description%%%,"
-          <p>Investment Plans are currently only available in USD, but we plan to add more currencies in the future.</p> 
           <p>Before investing, please choose the amount you’d like to invest and whether you would like to reinvest your returns.</p> 
           <p>Once you’ve entered your criteria, click <strong>Start investing</strong> and your plan will activate immediately.</p>  
+        "
+%%%.loanOriginators.autoInvest.form.description_shortTerm%%%,"
+          <p>You’ve chosen the Best Interest Investment Plan, which offers {interest} APR and terms of {term} months. This Plan chooses loans with the highest interest rates from three loan originators and offers only basic diversification.</p> 
+        "
+%%%.loanOriginators.autoInvest.form.description_diversified%%%,"
+          <p>You’ve chosen the Diversified Investment Plan, which offers {interest} APR and terms of {term} months. This Plan is the ideal balance between risk and reward with maximum diversification.</p> 
         "
 %%%.loanOriginators.autoInvest.form.selectedStrategy%%%,"Selected plan:"
 %%%.loanOriginators.autoInvest.form.strategy.shortTerm%%%,"Best Interest"
@@ -6797,7 +6804,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.loanOriginators.autoInvest.form.reinvest_desc%%%,"This option enables investors to automatically invest borrower repayments (such as an interest or principal repayment) in new loans. This maximizes your returns by minimizing the amount of time your money spends idle."
 %%%.loanOriginators.autoInvest.form.startInvesting%%%,"Start investing"
 %%%.loanOriginators.autoInvest.form.update%%%,"Up investing"
-%%%.loanOriginators.autoInvest.form.term%%%,"By clicking the ""Start Investing"" button, you have fully accepted the Investment Risks associated, the terms and conditions of the {assignment} and the {serviceAgreement} of Constant Platform."
+%%%.loanOriginators.autoInvest.form.term%%%,"By clicking ""Start investing"", you fully accept the Investment Risks associated with investing, the terms and conditions of the {assignment}, and the {serviceAgreement} of the Constant Platform."
 %%%.loanOriginators.autoInvest.form.yes%%%,"Yes"
 %%%.loanOriginators.autoInvest.form.no%%%,"No"
 %%%.loanOriginators.autoInvest.form.investConfirmation.shortTerm%%%,"

@@ -3271,8 +3271,8 @@
                     "assignmentAgreement": "Assignment Agreement",
                     "investedDate": "Date invested",
                     "totalInvestAmount": "Total investment amount",
-                    "investmentStatus": "%%%.home.loanOriginator.listApplications.headers.investmentStatus%%%",
-                    "investmentStatusDesc": "%%%.home.loanOriginator.listApplications.headers.investmentStatusDesc%%%",
+                    "investmentStatus": "Investment status",
+                    "investmentStatusDesc": "\n            <p>Status of a specific investment.</p>\n            <p>1. Ready to invest: Investor's Account has sufficient funding to meet the Investment Order</p>\n            <p>2. Activating: The Investment is not yet active as investment payment is currently being processed. The Investment will be activated and start to earn interest when the Loan Originator receives the investment amount.</p>\n            <p>3. Active: The Investment transaction is settled and the investment is active and has started to earn interest.</p>\n            <p>4. Closed: The Investment reached the end of loan term and principal fully repaid OR The Investment has been purchased back by the Loan Originator OR  the Investment has been sold in the Secondary Market.</p>\n            <p>5. Bad Debt: The Investment has passed the loan term for more than 60 days, the Buy Back Guarantee failed to be executed and the principal or part of the principal has not been recovered.</p>\n          ",
                     "totalPaymentReceived": "Total payment received",
                     "totalPaymentReceivedDesc": "Total interest payment and principal payment (if applicable) that have been received, credited and settled in the Investor's account",
                     "interestRate": "Interest rate",
@@ -3340,13 +3340,17 @@
                     "matched": "Matched",
                     "closed": "Done"
                 },
-                "mapStatus1": {
+                "settingStatus": {
                     "active": "Active",
                     "stopped": "Deactivated",
+                    "deactivated": "Deactivated"
+                },
+                "investmentStatus": {
                     "ready": "Ready to invest",
                     "activating": "Activating",
+                    "active": "Active",
                     "closed": "Closed",
-                    "bad_debt": "%%%.home.loanOriginator.listApplications.mapStatus1.bad_debt%%%"
+                    "bad_debt": "Bad Debt"
                 },
                 "start": "Activate",
                 "stop": "Deactivate",
@@ -3362,7 +3366,7 @@
                     "late_16_30": "16-30 Days Late",
                     "late_31_60": "31-60 Days Late",
                     "default": "Default",
-                    "bad_debt": "%%%.home.loanOriginator.listApplications.investedLoanStatus.bad_debt%%%"
+                    "bad_debt": "Bad Debt"
                 },
                 "reInvest": "Auto Reinvest",
                 "reInvest_desc": "This option enables investors to automatically invest borrower repayments (such as an interest or principal repayment) in new loans. This maximizes your returns by minimizing the amount of time your money spends idle.",
@@ -6954,8 +6958,8 @@
             },
             "form": {
                 "description": "\n          <p>Before investing, please choose the amount you’d like to invest and whether you would like to reinvest your returns.</p> \n          <p>Once you’ve entered your criteria, click <strong>Start investing</strong> and your plan will activate immediately.</p>  \n        ",
-                "description_shortTerm": "%%%.loanOriginators.autoInvest.form.description_shortTerm%%%",
-                "description_diversified": "%%%.loanOriginators.autoInvest.form.description_diversified%%%",
+                "description_shortTerm": "\n          <p>You’ve chosen the Best Interest Investment Plan, which offers {interest} APR and terms of {term} months. This Plan chooses loans with the highest interest rates from three loan originators and offers only basic diversification.</p> \n        ",
+                "description_diversified": "\n          <p>You’ve chosen the Diversified Investment Plan, which offers {interest} APR and terms of {term} months. This Plan is the ideal balance between risk and reward with maximum diversification.</p> \n        ",
                 "selectedStrategy": "Selected plan:",
                 "strategy": {
                     "shortTerm": "Best Interest",

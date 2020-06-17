@@ -3340,13 +3340,17 @@
                     "matched": "%%%.home.loanOriginator.listApplications.mapStatus.matched%%%",
                     "closed": "%%%.home.loanOriginator.listApplications.mapStatus.closed%%%"
                 },
-                "mapStatus1": {
-                    "active": "%%%.home.loanOriginator.listApplications.mapStatus1.active%%%",
-                    "stopped": "%%%.home.loanOriginator.listApplications.mapStatus1.stopped%%%",
-                    "ready": "%%%.home.loanOriginator.listApplications.mapStatus1.ready%%%",
-                    "activating": "%%%.home.loanOriginator.listApplications.mapStatus1.activating%%%",
-                    "closed": "%%%.home.loanOriginator.listApplications.mapStatus1.closed%%%",
-                    "bad_debt": "%%%.home.loanOriginator.listApplications.mapStatus1.bad_debt%%%"
+                "settingStatus": {
+                    "active": "%%%.home.loanOriginator.listApplications.settingStatus.active%%%",
+                    "stopped": "%%%.home.loanOriginator.listApplications.settingStatus.stopped%%%",
+                    "deactivated": "%%%.home.loanOriginator.listApplications.settingStatus.deactivated%%%"
+                },
+                "investmentStatus": {
+                    "ready": "%%%.home.loanOriginator.listApplications.investmentStatus.ready%%%",
+                    "activating": "%%%.home.loanOriginator.listApplications.investmentStatus.activating%%%",
+                    "active": "%%%.home.loanOriginator.listApplications.investmentStatus.active%%%",
+                    "closed": "%%%.home.loanOriginator.listApplications.investmentStatus.closed%%%",
+                    "bad_debt": "%%%.home.loanOriginator.listApplications.investmentStatus.bad_debt%%%"
                 },
                 "start": "%%%.home.loanOriginator.listApplications.start%%%",
                 "stop": "%%%.home.loanOriginator.listApplications.stop%%%",

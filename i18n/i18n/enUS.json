@@ -212,7 +212,7 @@
         "invest": "Invest",
         "investDesc": "Earn 7% interest fully secured.",
         "buyback": "Loan Originator",
-        "buybackDesc": "Earn up to 13% APR. Terms from 6-15 months. All Loans has buy-back guarantee from the Lender in case of default.",
+        "buybackDesc": "Earn up to 13% APR. Terms from 6-15 months. Includes loan originator’s buy-back guarantee in case of default.",
         "borrow": "Borrow",
         "borrowDesc": "Your rates. Your terms. No credit checks. Crypto-backed.",
         "borrowCoin": "Crypto Credit <sup>NEW</sup>",
@@ -259,7 +259,7 @@
             },
             "investLO": {
                 "title": "Loan Originator",
-                "desc": "Earn up to 13% APR. Terms from 6-15 months. All Loans has buy-back guarantee from the Lender in case of default."
+                "desc": "Earn up to 13% APR. Terms from 6-15 months. Includes loan originator’s buy-back guarantee in case of default."
             },
             "investStaking": {
                 "title": "Crypto Staking",
@@ -3271,7 +3271,8 @@
                     "assignmentAgreement": "Assignment Agreement",
                     "investedDate": "Date invested",
                     "totalInvestAmount": "Total investment amount",
-                    "loanStatus": "Loan status",
+                    "investmentStatus": "%%%.home.loanOriginator.listApplications.headers.investmentStatus%%%",
+                    "investmentStatusDesc": "%%%.home.loanOriginator.listApplications.headers.investmentStatusDesc%%%",
                     "totalPaymentReceived": "Total payment received",
                     "totalPaymentReceivedDesc": "Total interest payment and principal payment (if applicable) that have been received, credited and settled in the Investor's account",
                     "interestRate": "Interest rate",
@@ -3342,9 +3343,10 @@
                 "mapStatus1": {
                     "active": "Active",
                     "stopped": "Deactivated",
-                    "ready": "Ready",
+                    "ready": "Ready to invest",
                     "activating": "Activating",
-                    "closed": "Closed"
+                    "closed": "Closed",
+                    "bad_debt": "%%%.home.loanOriginator.listApplications.mapStatus1.bad_debt%%%"
                 },
                 "start": "Activate",
                 "stop": "Deactivate",
@@ -3355,13 +3357,12 @@
                 "delete": "Delete",
                 "deleteConfirm": "Are you sure you want to delete this package?",
                 "investedLoanStatus": {
-                    "current": "Paid",
-                    "scheduled": "Scheduled",
-                    "late_1_15": "Late 1-15 days",
-                    "late_16_30": "Late 16-30 days",
-                    "late_31_60": "Late 31-60 days",
-                    "late": "Late",
-                    "default": "Default"
+                    "current": "Current",
+                    "late_1_15": "1-15 Days Late",
+                    "late_16_30": "16-30 Days Late",
+                    "late_31_60": "31-60 Days Late",
+                    "default": "Default",
+                    "bad_debt": "%%%.home.loanOriginator.listApplications.investedLoanStatus.bad_debt%%%"
                 },
                 "reInvest": "Auto Reinvest",
                 "reInvest_desc": "This option enables investors to automatically invest borrower repayments (such as an interest or principal repayment) in new loans. This maximizes your returns by minimizing the amount of time your money spends idle.",
@@ -4331,23 +4332,9 @@
         "hello": "\n      <strong>Hello {name}</strong>.<br/>Let's see how your money is doing today.\n    "
     },
     "newHome": {
-        "oldBanner": {
-            "title1": "Experience <span class=textSuccess\">fully secured</span> peer-to-peer lending.",
-            "subTitle": "Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.",
-            "invest": {
-                "title": "Invest the way you want",
-                "cap": "Start from just $50. Fully secured.",
-                "btn": "Invest"
-            },
-            "borrow": {
-                "title": "Borrow the way you want",
-                "cap": "No limit. No credit checks. Terms from 1-6 months.",
-                "btn": "Borrow"
-            }
-        },
         "newBanner": {
             "title1": "Experience <span class=textSuccess\">fully secured</span> peer-to-peer lending.",
-            "subTitle": "Your investments are fully backed by borrower collateral and smart contracts. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.",
+            "subTitle": "Your investments are fully backed by borrower collateral, smart contracts, or buy-back guarantee. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.",
             "invest": {
                 "title": "\n          <p>\n            <strong>INVEST</strong>\n            Crypto-backed\n          </p>\n        ",
                 "cap": "\n          <p>\n            <strong>Up to 7.5%</strong>\n            Interest rate\n          </p>\n          <p>\n            <strong>1-6 MONTHS</strong>\n            Loan term\n          </p>\n          <p class=\"clearBottom\">\n            All lending secured by digital assets\n          </p>\n        ",
@@ -4360,7 +4347,7 @@
             },
             "loanOriginator": {
                 "title": "\n          <p>\n            <strong>INVEST</strong>\n            Loan Originator\n          </p>\n        ",
-                "cap": "\n          <p>\n            <strong>Up to 13% APR</strong>\n            Interest rate\n          </p>\n          <p>\n            <strong>6-15 MONTHS</strong>\n            Loan term\n          </p>\n          <p class=\"clearBottom\">\n            All Loans has buy-back guarantee from the Lender in case of default\n          </p>\n        ",
+                "cap": "\n          <p>\n            <strong>Up to 13% APR</strong>\n            Interest rate\n          </p>\n          <p>\n            <strong>6-15 MONTHS</strong>\n            Loan term\n          </p>\n          <p class=\"clearBottom\">\n            Includes loan originator’s buy-back guarantee in case of default\n          </p>\n        ",
                 "btn": "Explore"
             }
         },
@@ -6824,9 +6811,9 @@
                 "loanOriginator": "Loan Originators"
             },
             "desc": {
-                "autoInvest": "Auto Invest automates your investment strategy to save you time and effort. Simply choose the plan that best fits your goals and our matching algorithm will do the rest.",
+                "autoInvest": "Auto Invest lets you choose a predetermined investment strategy to save you time and effort. Simply choose the Plan that best fits your goals and our matching algorithm will do the rest.",
                 "manualInvest": "Manual Invest puts you in the driving seat. Set your investment criteria to filter relevant loans. Then choose one or more loans and the amount to invest in each. Easy.",
-                "loanOriginator": "We work with the best P2P lenders in the world to offer you more choice and better returns. Learn more about who we work with and view their available loans here."
+                "loanOriginator": "We work with the best P2P lenders in the world to offer you more choice and better returns. <a href=\"https://blog.myconstant.com/category/Loan-originator/\" class=\"underline\" target=\"_blank\">Learn more about who we work with and view their available loans</a>."
             }
         },
         "manualInvest": {
@@ -6885,18 +6872,18 @@
                 "issueDate_desc": "The date when the loan was originally issued by the loan originator to the borrower.",
                 "maturityDate": "Maturity Date",
                 "maturityDate_desc": "The date date on which a borrower's final loan payment is due and the loan is scheduled to be fully repaid.",
-                "loanPaymentStatus": "Loan Payment Status",
-                "loanPaymentStatus_desc": "Loan status indicates whether the borrower is repaying on schedule. There are three statuses: current, late, and in default. For late loans, the days of late payments is grouped into 3: 0-15 days late, 16-30 days late, and 31-60 days late.",
+                "loanPaymentStatus": "Loan Status",
+                "loanPaymentStatus_desc": "Loan status indicates whether the borrower is repaying on schedule. Loan status include Current, 1-15 days late, 16-30 days late, 31-60 days late, Default (more than 60 days late), Bad Debt (when the Loan is in default but the Loan Originator fails to honor its Buy Back Guarantee.",
                 "paymentType": {
                     "title": "Payment Type",
-                    "desc": "\n          Payment type: \n          <p>1. Full amortization – fixed, regular payments of the interest and principal. Full amortization reduces the outstanding loan balance to zero at the end of the term.</p>\n          <p>2. Interest only – fixed, regular payments of interest only. The principal is then repaid at the end of the term.</p>\n          ",
+                    "desc": "\n          Payment type: \n          <p>1. Installments (Full amortization) – fixed, regular payments of the interest and principal. Full amortization reduces the outstanding loan balance to zero at the end of the term.</p>\n          <p>2. Interest only – fixed, regular payments of interest only. The principal is then repaid at the end of the term.</p>\n          ",
                     "interest_only": {
                         "title": "Interest only",
                         "desc": "Interest only – fixed, regular payments of interest only. The principal is then repaid at the end of the term."
                     },
                     "installments": {
-                        "title": "Full amortization",
-                        "desc": "Full amortization – fixed, regular payments of the interest and principal. Full amortization reduces the outstanding loan balance to zero at the end of the term."
+                        "title": "Installments (Full amortization)",
+                        "desc": "Installments (Full amortization) – fixed, regular payments of the interest and principal. Full amortization reduces the outstanding loan balance to zero at the end of the term."
                     }
                 }
             },
@@ -6944,17 +6931,17 @@
         },
         "autoInvest": {
             "title": "auto invest",
-            "description": "Auto Invest matches you with loans that best fit your investment criteria. Just select the plan that aligns with your investment goals and our matching algorithm will allocate your funds automatically.",
+            "description": "Auto Invest matches you with loans that best fit your investment criteria. Just select the predetermined plan that aligns with your investment goals and our matching algorithm will allocate your funds automatically.",
             "shortTerm": {
                 "title": "Best Interest plan",
-                "description": "If you want shorter term and highest interest rate.<br/><br/>\n          <strong>{term}</strong><br/><br/> \n          <strong>{interest}</strong><br/><br/>\n          Includes all loan types, countries, and loan originators rated C+ and above.",
+                "description": "Ideal if you want the highest interest rates or shorter terms.<br/><br/>\n          <strong>{term} months</strong><br/><br/> \n          <strong>Interest {interest}</strong><br/><br/>\n          <strong>Basic diversification</strong><br/><br/>\n          Includes the highest-interest loans from three Loan Originators rated C+ and above.",
                 "select": "Select",
                 "readMore": "Read more",
                 "readMoreDesc": "\n          <p>If you’re an experienced investor, are familiar with P2P lending, and can tolerate a little extra risk for better returns, the Best Interest Plan is for you.</p>\n          <p>We picked the top 3 loan originators with the best interest rates to offer you an estimated return of up to {toRate}% APR. If you want the best rates, this Plan is ideal.</p>\n          <p>Although not all loans are collateral-backed and the loan originator rating might not be as high, all lending is backed by buy-back guarantee.</p>\n        "
             },
             "diversified": {
                 "title": "Diversified plan",
-                "description": "Choose for the best balance between risk and reward.<br/><br/> \n          <strong>{term}</strong><br/><br/> \n          <strong>{interest}</strong><br/><br/>\n          Includes all loan types, countries, and loan originators rated B- and above.",
+                "description": "The ideal balance between risk and reward.<br/><br/> \n          <strong>{term} months</strong><br/><br/> \n          <strong>Interest {interest}</strong><br/><br/>\n          <strong>Maximum diversification</strong><br/><br/>\n          Includes all loan types, countries, and loan originators rated B- and above.",
                 "select": "Select",
                 "readMore": "Read more",
                 "readMoreDesc": "\n          <p>If you’ve just started investing, are new to P2P lending, or want to minimize risk, choose the Diversified Plan.</p>\n          <p>This is our most diversified Plan and includes a mixture of secured and unsecured loans from loan originators with a minimum B- rating.</p>\n          <p>Although you earn less interest than our Best Interest Plan, your portfolio is optimized for that perfect balance between risk and reward.</p>\n        "
@@ -6966,7 +6953,9 @@
                 "readMore": "Read more"
             },
             "form": {
-                "description": "\n          <p>Investment Plans are currently only available in USD, but we plan to add more currencies in the future.</p> \n          <p>Before investing, please choose the amount you’d like to invest and whether you would like to reinvest your returns.</p> \n          <p>Once you’ve entered your criteria, click <strong>Start investing</strong> and your plan will activate immediately.</p>  \n        ",
+                "description": "\n          <p>Before investing, please choose the amount you’d like to invest and whether you would like to reinvest your returns.</p> \n          <p>Once you’ve entered your criteria, click <strong>Start investing</strong> and your plan will activate immediately.</p>  \n        ",
+                "description_shortTerm": "%%%.loanOriginators.autoInvest.form.description_shortTerm%%%",
+                "description_diversified": "%%%.loanOriginators.autoInvest.form.description_diversified%%%",
                 "selectedStrategy": "Selected plan:",
                 "strategy": {
                     "shortTerm": "Best Interest",
@@ -6978,7 +6967,7 @@
                 "reinvest_desc": "This option enables investors to automatically invest borrower repayments (such as an interest or principal repayment) in new loans. This maximizes your returns by minimizing the amount of time your money spends idle.",
                 "startInvesting": "Start investing",
                 "update": "Up investing",
-                "term": "By clicking the \"Start Investing\" button, you have fully accepted the Investment Risks associated, the terms and conditions of the {assignment} and the {serviceAgreement} of Constant Platform.",
+                "term": "By clicking \"Start investing\", you fully accept the Investment Risks associated with investing, the terms and conditions of the {assignment}, and the {serviceAgreement} of the Constant Platform.",
                 "yes": "Yes",
                 "no": "No",
                 "investConfirmation": {

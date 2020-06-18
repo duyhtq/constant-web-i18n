@@ -144,6 +144,7 @@ export default {
     kycGuidelines: 'KYC guidelines',
     contactUs: 'Contact us',
     referral: 'Share & Earn $',
+    riskStatement: 'Investment Risk Statement',
     phone: {
       us: {
         title: 'US: ',
@@ -9005,7 +9006,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         reinvest_desc: 'This option enables investors to automatically invest borrower repayments (such as an interest or principal repayment) in new loans. This maximizes your returns by minimizing the amount of time your money spends idle.',
         startInvesting: 'Start investing',
         update: 'Up investing',
-        term: `By clicking "Start investing", you fully accept the Investment Risks associated with investing, the terms and conditions of the {assignment}, and the {serviceAgreement} of the Constant Platform.`,
+        term: `By clicking "Start investing", you fully accept the {investmentRisk} associated with investing, the terms and conditions of the {assignment}, and the {serviceAgreement} of the Constant Platform.`,
         yes: 'Yes',
         no: 'No',
         investConfirmation: {

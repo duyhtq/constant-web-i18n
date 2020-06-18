@@ -144,6 +144,7 @@
         "kycGuidelines": "%%%.footer.kycGuidelines%%%",
         "contactUs": "%%%.footer.contactUs%%%",
         "referral": "%%%.footer.referral%%%",
+        "riskStatement": "%%%.footer.riskStatement%%%",
         "phone": {
             "us": {
                 "title": "%%%.footer.phone.us.title%%%",

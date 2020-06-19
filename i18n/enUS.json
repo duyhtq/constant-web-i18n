@@ -3286,7 +3286,7 @@
                 },
                 "loanOriginatorHeaders": {
                     "loanOriginator": "Loan Originator (LO)",
-                    "loanOriginatorDesc": "The lending company that orginates and services the loans listed on the Constant marketplace.",
+                    "loanOriginatorDesc": "The lending company that originates and services the loans listed on the Constant marketplace.",
                     "constantRate": "Constant Rating",
                     "loanType": "Loan Type",
                     "loanTypeDesc": "Individual icons represents different types of loans offered by the Loan Originator on Constant Marketplace such as personal loans, business loans, car loans, mortgages, invoice financing.",
@@ -6846,7 +6846,7 @@
                 "id": "Loan ID",
                 "id_desc": "The loan ID is assigned by the loan originator.",
                 "loanOriginator": "Loan Originator (LO)",
-                "loanOriginator_desc": "The lending company that orginates and services the loans listed on the Constant marketplace.",
+                "loanOriginator_desc": "The lending company that originates and services the loans listed on the Constant marketplace.",
                 "issuedDate": "Issued Date",
                 "issuedDate_desc": "The date when the loan was originally issued by the loan originator to the borrower.",
                 "loanType": "Loan Type",
@@ -6898,7 +6898,7 @@
                 "loanDetails": " Loan Details",
                 "loanOriginatorDetails": "Loan Originator Details",
                 "loanOriginator": "Loan Originator (LO)",
-                "loanOriginator_desc": "The lending company that orginates and services the loans listed on the Constant marketplace.",
+                "loanOriginator_desc": "The lending company that originates and services the loans listed on the Constant marketplace.",
                 "legalEntity": "Legal Entity",
                 "availableAmount": "Available amount:",
                 "yourInvestment": "Your investment: ",
@@ -6986,7 +6986,7 @@
         "loanOriginator": {
             "headers": {
                 "loanOriginator": "Loan Originator (LO)",
-                "loanOriginator_desc": "The lending company that orginates and services the loans listed on the Constant marketplace.",
+                "loanOriginator_desc": "The lending company that originates and services the loans listed on the Constant marketplace.",
                 "constantRate": "Constant Rating",
                 "constantRate_desc": "Constant assigns ratings for loan originators that offer loans on the Constant marketplace. Constant Ratings range from \"A+\" to \"C-\" reflecting the creditworthiness/counterparty risks of the loan originators. An \"A+\" rating represents the highest creditworthiness while a \"C-\" rating is the lowest allowable creditworthiness rating for a loan to be listed on the Constant marketplace.",
                 "loanType": "Loan Type",

@@ -477,7 +477,12 @@
             "correct": "Correct",
             "incorrect": "Incorrect",
             "btnEdit": "Edit",
-            "btnSave": "Save"
+            "btnSave": "Save",
+            "verifiedTitle": "You have verified your ID",
+            "updateSuccess": "Update successfully",
+            "male": "Male",
+            "female": "Female",
+            "other": "Other"
         },
         "batchTransfer": {
             "title": "Batch Transfers",
@@ -1229,6 +1234,7 @@
                 "trial_description": "You keep the interest. Term has ended",
                 "saving_title": "Investments",
                 "loans_title": "Loans",
+                "loanRecords": "Loan Records",
                 "loanOriginatorInvestments": "Loan Originator Investments",
                 "loanOriginatorInvestmentsDesc": "Investments backed by the loan originator’s buy-back guarantee. Unlike crypto-backed investments, there might not always be collateral securing the loan. Instead, the loan originator guarantees to buy back the loan should the borrower default for 60 days or more, returning your principal and earned profit.",
                 "coin2coin_title": "Crypto Credit",
@@ -2580,6 +2586,12 @@
                 "staked": "STAKED",
                 "amount": "Amount",
                 "availableAmount": "Available Amount",
+                "availableBalance": "Available Balance",
+                "minAmount": "Min Amount",
+                "maxAmount": "Max Amount",
+                "minIsolateMessage": "Min Amount: {amount} will set your Loan's Collateral Value at approximately {rate}%.",
+                "maxIsolateMessage": "Max Amount: {amount} will set your Credit Lines's Collateral Value at approximately {rate}%.",
+                "recommendMessage": "To restore your collateral value to the recommended {recommendedRate}%, please top up {amount} {currency}",
                 "matched": "matched",
                 "pendingAmount": "Pending Amount",
                 "collateralRequired": "Collateral",
@@ -2600,12 +2612,15 @@
                 "payCollateral": "Pay",
                 "payOffLoan": "Repay",
                 "depositMatched": "Top up",
+                "isolate": "Isolate",
+                "topup": "Topup",
+                "recall": "Recall",
                 "redeemApply": "Redeem STAR",
                 "cancelDepositMatched": "Cancel Deposit",
                 "cashback": "Cash back",
                 "collateral": "Collateral",
                 "collateralValue": "Collateral value",
-                "liquidWaring": "Collateral approaching the liquidation threshold. Please top up.\n",
+                "liquidWaring": "Your collateral will be liquidated, Please top up more collateral.",
                 "interestPrice": "Interest",
                 "rate": "Rate",
                 "yourLoan": "Match{plural} {matched}",
@@ -2703,16 +2718,18 @@
                 "repaymentByCollateral": "Do you want to repay with collateral?",
                 "repaymentMethod": "Payment method: ",
                 "willPayCollateral": "Collateral to be repaid",
+                "willReturnCollateral": "Collateral to be returned",
                 "feePayoffExchangeRate": "Collateral value is based on the current market price of {value} USD/{currency}",
                 "payCollateralFee": "Repay with collateral fee",
                 "payCollateralFeeDesc": "This fee is to cover the difference in price during liquidation process.",
-                "willReturnCollateral": "Collateral to be returned",
                 "repayAddress": "Repay address",
                 "copyMessage": "Address has been copied!",
                 "errorRemainCollateral": "You can not to get the remaining collateral back at the moment",
                 "errorRemainCollateralHtml": "\n          Please wait for assistance, or contact us at <a href=mailto:hello@myconstant.com\">hello@myconstant.com</a>",
                 "errorCollateralNotEnoughHtml": "Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.",
                 "errorRecallLowCreditRate": "To recall excess, credit rate must be increased more than {recallRate}%. Your current credit rate is {creditRate}%",
+                "errorRecallLowCollateralRate": "To recall excess, collateral value must be increased more than {requiredRate}%. Your current collateral value is {currentRate}%",
+                "errorIsolateNotEnought": "Your Collateral Balance does not meet the minimum amount to set multi-collateral to isolated.",
                 "depositFrom": {
                     "title": "Deposit more collateral",
                     "amount": "Amount",
@@ -2735,6 +2752,8 @@
                     "interest": "Interest",
                     "collateral": "Collateral",
                     "collateralValue": "Collateral value",
+                    "collateralRate": "Collateral Rate",
+                    "liquidationPrice": "Liquidation Price",
                     "createdDate": "Created",
                     "dueDate": "Due",
                     "collateralValueDesc": "This represents your collateral value as a percentage of your loan. It accounts for the interest accrued so far, as well as the repayment fee should you choose to repay today. If it falls to 110%, your collateral will be liquidated, and the difference refunded to you.",
@@ -3171,7 +3190,7 @@
                     "createdDate": "Created",
                     "dueDate": "Due",
                     "price": "Price",
-                    "priceDesc": "price of your chosen crypto",
+                    "priceDesc": "Price of your chosen crypto",
                     "collateralValueDesc": "This represents your collateral value as a percentage of your loan. It accounts for the interest accrued so far, as well as the repayment fee should you choose to repay today. If it falls to 110%, your collateral will be liquidated, and the difference refunded to you.",
                     "repayAddress": "Repay Address",
                     "collateralValueAtLiquid": "Liquidation price",
@@ -5343,7 +5362,8 @@
         "btnInvestments": "<div class=\"textLeft\"><small>Investments</small><div>Crypto-back</div></div>",
         "btnBuyBackInvestments": "<div class=\"textLeft\"><small>Investments</small><div>Loan Originator</div></div>",
         "btnLoans": "Loans",
-        "btnSecondaryMarket": "<div class=\"textLeft\"><small>Secondary</small><div>Market</div></div>"
+        "btnSecondaryMarket": "<div class=\"textLeft\"><small>Secondary</small><div>Market</div></div>",
+        "btnLoanSettings": "<div class=\"textLeft\"><small>Loan</small><div>Settings</div></div>"
     },
     "seo": {
         "homepage": {
@@ -6839,6 +6859,7 @@
                 "loanType": "Loan Type",
                 "constantRate": "Constant Rating",
                 "term": "Term",
+                "remainingTerm": "Remaining Term",
                 "interestRate": "Interest Rate",
                 "investmentAmount": "Available For Investment"
             },
@@ -6869,6 +6890,8 @@
                 "availableForInvestment_desc": "This is the total amount available to investors for investment consisting of remaining principal of the loan and any accrued interests.",
                 "remainingTerm": "Remaining Term",
                 "remainingTerm_desc": "This is the period measured in months and days left until the full repayment of the loan is set. ",
+                "originalTerm": "Original Term",
+                "originalTerm_desc": "This is the period  (in months and days).",
                 "buyBackGuarantee": "Buy back Guarantee",
                 "buyBackGuarantee_desc": "A buy-back guarantee is a guarantee issued by the loan originator to the investor for a particular loan, where the loan orginator promises to rebuy the loan from the investor if that particular loan is delayed by more than 60 days. The buy-back guarantee is given at an individual loan level and is marked with the symbol of a shield. If a loan with a buy-back guarantee is delayed by more than 60 days, the loan originator will buy back the loan from the investor at the nominal value of outstanding principal plus accrued interest. A buy-back guarantee is only as good as the loan originator's financial capability to honor such guarantee at the time of a buy-back event being triggered. A buy-back guarantee is NOT a guarantee from the Constant marketplace and its associates.",
                 "scheduleExtension": "Schedule extension",
@@ -7040,6 +7063,71 @@
             "footer": {
                 "desc": "Showing {start} - {end} of {total} selected entries"
             }
+        },
+        "loanRecords": {
+            "heading": "Loan Records",
+            "loanDisbursement": "Loan Disbursement",
+            "loanPayment": "Loan Payment",
+            "settlement": "Settlement",
+            "noData": "No loans data",
+            "viewDetails": "View details",
+            "dialog": {
+                "createNewTitle": "Create new loan payment",
+                "interestAmountLabel": "Total loan interest payment",
+                "principalAmountLabel": "Total loan principal payment",
+                "lateLoans": "Late loans",
+                "cancel": "Cancel",
+                "create": "Create",
+                "addOrDropFile": "+ Add or drop file here",
+                "uploadSuccess": "Upload successfully"
+            },
+            "headers": {
+                "date": "Settlement Cycle - Settlement Date",
+                "totalMatchedValue": "Total loan value matched",
+                "numberMatched": "Total number of loan matched",
+                "status": "Status",
+                "action": "",
+                "paymentId": "Payment ID",
+                "totalLoanInterest": "Total loan interest payment",
+                "totalLoanPrincipal": "Total loan principal payment",
+                "lateLoans": "Late loans",
+                "referenceCode": "Reference code",
+                "totalClaimPaymentDue": "Total claim payment due",
+                "netAmount": "Net settlement amount"
+            },
+            "status": {
+                "pending": "To Be Settled",
+                "sent": "Pending Settlement",
+                "received": "Settled"
+            },
+            "settlementStatus": {
+                "pending": "Pending",
+                "to_be_settled": "To Be Settled",
+                "pending_settlement": "Pending Settlement",
+                "settled": "Settled"
+            }
+        },
+        "loanDisbursementDetail": {
+            "title": "Assignment Transaction Record",
+            "export": "Export",
+            "settlementDate": "Settlement Cycle - Settlement Date",
+            "no": "No",
+            "referenceCode": "Reference Code",
+            "loanAmount": "Loan Amount Invested by the Investor",
+            "total": "Total",
+            "close": "Close"
+        },
+        "loanPaymentDetail": {
+            "title": "Assignment Transaction Record",
+            "export": "Export",
+            "settlementDate": "Settlement Cycle - Settlement Date",
+            "no": "No",
+            "dueDate": "Payment Due Date",
+            "interestPayment": "Interest Payment",
+            "principalPayment": "Principal Payment",
+            "totalPayment": "Total Payment",
+            "total": "Total",
+            "close": "Close"
         }
     }
 }

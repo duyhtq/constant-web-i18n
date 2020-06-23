@@ -423,6 +423,7 @@ export default {
       referral: 'Referral',
       personalInfo: 'About you',
       myTransactions: 'Account activity',
+      overView: 'Over View',
       cryptoLoanHistory: 'My Crypto Loans',
       viewLoanDetail: 'View loan detail here',
       viewConstantWallet: 'View constant wallet here',
@@ -980,6 +981,9 @@ export default {
       holdingBalance: 'Holding Balance: {balance} USD',
       withdrawAndTransfer: 'Withdrawals and Transfers',
       investmentOrder: 'Investments',
+      totalOut: 'Total Out: {totalOut} USD',
+      totalIn: 'Total In: {totalIn} USD',
+      holding: 'Holding: {holding} USD',
       date: 'Date',
       transactionID: 'Transaction ID',
       transfer: 'Transfer',
@@ -987,6 +991,7 @@ export default {
       reference_number: 'Reference No.',
       type: 'Type',
       amount: 'Amount',
+      amountText: 'Amount',
       toEmail: 'To Email',
       toAddress: 'To Address',
       sendToAddress: 'Send To Address',
@@ -1022,7 +1027,15 @@ export default {
       extID: 'External ID',
       exportToExcel: 'Export to excel',
       openOrders: 'Open orders',
+      reserveOut: 'Reserve Out',
       requestExecute: 'Help',
+      fromDate: 'From date',
+      toDate: 'To date',
+      downloadFailed: 'Export to excel is failed',
+      download: 'Download',
+      requiredDate: 'Date is required',
+      exportToExcelNote: 'You can export up to six months of your account activity.',
+      invalidDate: 'You can\'t export over six months of your account activity.',
       orderType: {
         0: 'Buy',
         1: 'Convert',
@@ -6860,7 +6873,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       exchange: {
         eventBox: 'Borrow now to get 1% discount from the crypto price',
         amountLabel: 'Crypto to buy',
-        amountLabelDesc: 'The amount and type of cryptocurrency you want to buy?',
+        amountLabelDesc: 'Choose a cryptocurrency and amount. You might receive a little less of your chosen cryptocurrency if prices change before completing the sale.',
         exchangeInfo: 'USD loan value',
         exchangeInfoDesc: 'The amount of USD you’re borrowing to buy your chosen crypto. We search multiple exchanges to find the best price for you',
         collateralLabel: 'Collateral required',
@@ -8833,6 +8846,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
   loanOriginators: {
     header: {
       tabs: {
+        landing: 'How it works',
         autoInvest: 'Auto Invest',
         manualInvest: 'Manual Invest',
         loanOriginator: 'Loan Originators'
@@ -8842,6 +8856,154 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         manualInvest: 'Manual Invest puts you in the driving seat. Set your investment criteria to filter relevant loans. Then choose one or more loans and the amount to invest in each. Easy.',
         loanOriginator: 'We work with the best P2P lenders in the world to offer you more choice and better returns. <a href="https://blog.myconstant.com/category/Loan-originator/" class="underline" target="_blank">Learn more about who we work with and view their available loans</a>.'
       }
+    },
+    landing: {
+      contentHtml: `
+      <p>A world of lending at your fingertips</p>
+      <h1>Earn up to 11% APR investing<br/> in loans from the top loan<br/> originators in the world.</h1>
+      <p/>
+      <p>Diversify your investments and multiply your returns across global lending markets. Choose an Investment Plan (Auto Invest) for easy investing or follow your own strategy (Manual Invest). All loans include the loan originator’s buy-back guarantee in case of borrower default.</p>
+    `,
+      intro: {
+        desc: {
+          1: 'Vetted loan originators',
+          2: 'Greater choice of loans',
+          3: 'Zero fees',
+        }
+      },
+      ourPress: {
+        title: 'Our Partners'
+      },
+      why: {
+        title: 'Why invest in Loan Originator loans?',
+        1: {
+          caption: 'Higher returns',
+          desc: 'Access 1,000s of borrowers from loan originators around the world to earn up to 11% APR.'
+        },
+        2: {
+          caption: 'Periodic repayments',
+          desc: 'Reinvest or withdraw earnings as you go when you choose loans with regular scheduled repayments.'
+        },
+        3: {
+          caption: 'Diversification',
+          desc: 'Balance risk and reward across multiple originators, borrowers, countries, and loan types.'
+        },
+        4: {
+          caption: 'Protection',
+          desc: 'Minimize risk with Constant Ratings and the loan originator’s buy-back guarantee behind every loan.'
+        }
+      },
+      what: {
+        title: 'What is a Loan Originator loan?',
+        desc1: `
+        <p>Before you start exploring Loan Originator, let’s quickly review what a Loan Originator investment is.</p>
+        <p>A Loan Originator investment is a <strong>Claim Right</strong> against a loan issued by our loan originator partner. Instead of buying the loan with all the rights and ownership of collateral (if any), you’re buying a right to receive payments from an existing loan.</p>
+        <p>You buy this claim right from the loan originator by entering into an <strong>Assignment Agreement</strong>, which governs the terms of your investment.</p>
+        `,
+        desc2: `
+        <p>The Buy-Back Guarantee depends on the Loan Originator’s financial capability to honor it. We give each loan originator a <strong>Constant Rating</strong> to help you assess the quality of the loan originator and their loans, but as this is just a guide, always use caution and diversify.</p>
+        <p>The Buy-Back Guarantee depends on the Loan Originator’s financial capability to honor it. We give each loan originator a <strong>Constant Rating</strong> which helps you assess the quality of the loan originator and their book of loans.</p>
+        <p>You can find out more about Loan Originator investments on <a href="https://www.myconstant.com/blog/" className="underline" style="color: #fff" target="_blank">our blog  <img src='{image}'/></a></p>
+        `,
+      },
+      how: {
+        title: 'How it works',
+        title1:'Deposit funds',
+        desc1: 'Before you choose a loan or Investment Plan, deposit the funds for your investment. The minimum is $50. ',
+        title2:'Choose a loan or Investment Plan',
+        desc2: 'Select an Auto Invest Investment Plan or filter and select loans individually with Manual Invest.',
+        title3:'Wait for a match',
+        desc3: 'Matching is usually instant, but might take a little longer depending on the loan or Investment Plan you choose.',
+        title4:'Start earning interest',
+        desc4: `
+         <p>Once your funds reach the loan originator, you’ll start earning interest. This might take up to 10 business days from the date you match.</p>
+         <p><a style="color:#3E8DEB" href="/getPrices" target="_blank"><b>Learn more about service times</b></a></p>   
+        `,
+        title5:'Withdraw or reinvest',
+        desc5: 'Withdraw or reinvest your earnings when the term ends, or sooner if your borrower repays in regular instalments.',
+      },
+    },
+    faqs: {
+      question1: 'What is a “Loan Originator” loan?',
+      answer1: `
+        <p>We’ve partnered with loan originators (companies that source borrowers) to offer you a greater choice of loans and better returns. A Loan Originator investment is a claim against a loan issued by our loan originator partner. Instead of buying the loan with all the rights and ownership of collateral (if any), you’re buying a right to receive payments from an existing loan. </p>
+        <p>When you invest in a Loan Originator, the loan originator will guarantee to buy back the loan if the borrower defaults for 60 days. This repays your principal and earned profit up to and including the 60-day default period. </p>
+        `,
+      question2: 'How do Loan Originator loans work?',
+      answer2: `When you invest in a Loan Originator loan, you’re lending to a borrower through one of our loan origination partners. Depending on the loan originator, you might receive monthly repayments of the total due, monthly payments of the interest only, or everything at the end of the term – all of which you can withdraw when paid. If the borrower is 60 days late on any of these repayments, the loan originator will buy back the loan and return your principal and earned profit.`,
+      question3: 'What is a loan originator?',
+      answer3: `A loan originator is a partner that sources borrowers on our behalf. Some arrange loans for borrowers with collateral – such as cars or property – while others assess borrowers’ credit before issuing loans. In either case, our loan originators all come with a buy-back guarantee. That means if their borrowers default for 60 days or more, the loan originator will buy back the loan, returning your principal and earned profit.`,
+      question4: 'How do you choose loan originators?',
+      answer4: `<p>Before we onboard a lending company onto our platform, we conduct a thorough due diligence process and analysis of the lending company's profile, background, corporate documents, lending practice and credit policy, historical loan performance as well as their financial strengths. </p>
+<p>During this process, we review how the lending company lends to its borrowers, how it conducts its loan monitoring as well as how it pursues the debt recovery process in the event of default. We analyze the key indicators of the lending company's operational control, risk management, and most importantly, its financial health via its audited and interim financial statements.</p>
+<p>We also take into account management experience and qualifications and the lending company's transparency and openness. All assessments of these indicators are input into our rating model and we assign a Constant Rating to the lending company.</p>`,
+      question5: 'How do you calculate a loan originator’s Constant Rating?',
+      answer5: `
+        <p>We give every loan originator a rating between A and D, A being the best. We only work with C-rated companies and above. Our rating system gives you a guide to the quality of the loans and the loan originator themselves, which determines the risk of lending to that loan originator. </p>
+<p>To calculate a rating, we consider many factors, including (but not limited to):</p> 
+<ul>
+<li>Years of operation.</li>
+<li>Country of operation.</li>
+<li>Share of the market.</li>
+<li>Reputation.</li>
+<li>Growth rate.</li>
+<li>Risk management.</li>
+<li>Transparency.</li>
+<li>Financial strength.</li>
+</ul>
+<p>We feed all the factors into an algorithmic rating system that produces a final result. However, this rating is not fixed – we regularly review and update ratings so you always have the most up-to-date information before you invest.</p>
+<p><a href="#">Learn more about the Constant Rating system.</a> </p> 
+        `,
+      question6: 'What’s the difference between a Loan Originator loan and a crypto-backed loan?',
+      answer6: `
+        <p>Loan Originator loans offer longer terms (6-15 months) and better interest rates (up to 15% APR). Depending on the loan originator, you might also receive monthly repayments that you can withdraw immediately, whereas crypto-backed borrowers usually repay at the end of the term.</p> 
+<p>A Loan Originator loan is secured by the loan originator. If borrowers default for a minimum of 60 days, the loan originator will buy back the loan. This returns your principal and earned profit up to and including the 60-day default period.</p> 
+<p>A crypto-backed loan is secured by collateral. If borrowers default or their collateral falls too much in value, we sell it to repay you. This is usually instant, depending on how quickly we can sell the collateral.</p> 
+<p>Those are the key differences, but you can see a full comparison on our Loan Originator homepage.</p> 
+
+        `,
+      question7: 'How do you protect my investment on a Loan Originator loan?',
+      answer7: `
+        <p>First, you have the loan originator’s buy-back guarantee. If borrowers default for 60 days, the loan originator will buy back the loan to return your principal and earned profit up to and including the 60-day period. However, since you rely on the loan originator’s ability to buy back the loan, we’ve given each of them a rating.</p> 
+<p>The Constant Rating is based on the loan originator’s business and performance, including the default rate, their stake in each loan, and types of loan offered. You can use the Constant Rating to choose between loan originators, but please remember it is just a guide. A high Constant Rating doesn’t guarantee the loan originator will buy back the loan in all cases.</p>
+<p>Like all investment, use caution and diversify.</p>`,
+      question8: 'Does the buy-back guarantee protect me in all cases?',
+      answer8: `
+        <p>In most cases, but not all. Since the loan originator buys back the loan, it depends on their ability to do so, and that’s why we give them a Constant rating from A to D, A being the best. Most of the loans we offer will be C or above. </p>
+        <p>Also, certain countries allow borrowers to request extensions on loans. In this case, an extension isn’t considered a default, so you might wait a bit longer for your returns. If the borrower still hasn’t repaid in full by the end of the extension, the loan originator will buy back the loan as usual. </p>
+        `,
+      question9: 'What happens if a loan originator doesn’t honor the buy-back guarantee?',
+      answer9: `We don’t expect this to happen, but if it does, there are several options available to us. If they can’t honor the buy-back guarantee due to financial issues, we may negotiate a repayment plan with the loan originator and repay you in full or periodically as they repay. Otherwise, you or us may wish to pursue legal action against the loan originator. In either case, we can’t make any assurances and ask that you diversify across different loan originators to spread your risk. `,
+      question10: 'How do I deposit money for my investments?',
+      answer10: `
+        <p>You have two options: Zelle or bank transfer, both of which are free.</p>
+
+<p>Zelle is faster, but you can only send a certain amount per day. </p>
+
+<p>We support both ACH and wire bank transfers for any amount. These take a day or two to reach us (depending on your bank) and then a short processing period of around 1 business day before it appears in your account.</p> 
+
+<p>Once we receive your funds, we then forward them to the loan originator. This might take 3 to 10 business days depending on the loan originator, as some of them only do weekly settlement. We’ll let you know as soon as your funds have been matched and you’ve started earning interest.</p>
+
+<p>For more information, please check our service times. </p>
+        `,
+      question11: 'What currencies do you accept?',
+      answer11: `You can send us any currency and we’ll convert it to USD. `,
+      question12: 'Are Loan Originator loans in USD only?',
+      answer12: `For the moment, yes. We might open up new currencies such as EUR or GBP in the future. You can still invest using other currencies, but please bear in mind we’ll convert your currency to USD upon receipt.`,
+      question13: 'Do you charge any fees?',
+      answer13: `No. All investing, currency conversion, and withdrawals are free. How do we make money? We make a slim profit on the difference between the interest rate you earn and the rate charged to the borrower. `,
+      question14: 'How long does it take to match with a Loan Originator borrower?',
+      answer14: `<p>Matching is usually instant, but you won’t start earning interest until your funds reach the loan originator. This will involve an international bank transfer. Also, some loan originators do weekly settlement only.</p> 
+<p>For guidance, you’ll start earning interest within 3-10 business days. </p>
+`,
+      question15: 'When do I start earning interest on a Loan Originator loan?',
+      answer15: `
+        <p>You start earning interest as soon as your funds reach the loan originator. This takes 3-10 business days after you’ve matched with a borrower. </p>
+<p>Depending on the loan originator, you might be able to withdraw your interest earnings periodically, perhaps monthly. In other cases, you might need to wait until the end of your term before you can withdraw your earnings.</p> 
+<p>In either case, some loan originators do weekly settlement, which combined with international transfer times, mean it could take 3-10 business days before you can withdraw any repayments.</p>  
+`,
+      question16: 'Can I invest in a portion of a Loan Originator loan?',
+      answer16: `Yes. You can view a list of available loans and fulfil all or part of each loan order. This helps you diversify, since you can spread your money across more loans. `
     },
     manualInvest: {
       ads: {

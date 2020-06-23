@@ -410,6 +410,7 @@
             "referral": "%%%.me.navigation.referral%%%",
             "personalInfo": "%%%.me.navigation.personalInfo%%%",
             "myTransactions": "%%%.me.navigation.myTransactions%%%",
+            "overView": "%%%.me.navigation.overView%%%",
             "cryptoLoanHistory": "%%%.me.navigation.cryptoLoanHistory%%%",
             "viewLoanDetail": "%%%.me.navigation.viewLoanDetail%%%",
             "viewConstantWallet": "%%%.me.navigation.viewConstantWallet%%%",
@@ -817,6 +818,9 @@
             "holdingBalance": "%%%.me.history.holdingBalance%%%",
             "withdrawAndTransfer": "%%%.me.history.withdrawAndTransfer%%%",
             "investmentOrder": "%%%.me.history.investmentOrder%%%",
+            "totalOut": "%%%.me.history.totalOut%%%",
+            "totalIn": "%%%.me.history.totalIn%%%",
+            "holding": "%%%.me.history.holding%%%",
             "date": "%%%.me.history.date%%%",
             "transactionID": "%%%.me.history.transactionID%%%",
             "transfer": "%%%.me.history.transfer%%%",
@@ -824,6 +828,7 @@
             "reference_number": "%%%.me.history.reference_number%%%",
             "type": "%%%.me.history.type%%%",
             "amount": "%%%.me.history.amount%%%",
+            "amountText": "%%%.me.history.amountText%%%",
             "toEmail": "%%%.me.history.toEmail%%%",
             "toAddress": "%%%.me.history.toAddress%%%",
             "sendToAddress": "%%%.me.history.sendToAddress%%%",
@@ -859,7 +864,15 @@
             "extID": "%%%.me.history.extID%%%",
             "exportToExcel": "%%%.me.history.exportToExcel%%%",
             "openOrders": "%%%.me.history.openOrders%%%",
+            "reserveOut": "%%%.me.history.reserveOut%%%",
             "requestExecute": "%%%.me.history.requestExecute%%%",
+            "fromDate": "%%%.me.history.fromDate%%%",
+            "toDate": "%%%.me.history.toDate%%%",
+            "downloadFailed": "%%%.me.history.downloadFailed%%%",
+            "download": "%%%.me.history.download%%%",
+            "requiredDate": "%%%.me.history.requiredDate%%%",
+            "exportToExcelNote": "%%%.me.history.exportToExcelNote%%%",
+            "invalidDate": "%%%.me.history.invalidDate%%%",
             "orderType": {
                 "0": "%%%.me.history.orderType.0%%%",
                 "1": "%%%.me.history.orderType.1%%%",
@@ -6831,6 +6844,7 @@
     "loanOriginators": {
         "header": {
             "tabs": {
+                "landing": "%%%.loanOriginators.header.tabs.landing%%%",
                 "autoInvest": "%%%.loanOriginators.header.tabs.autoInvest%%%",
                 "manualInvest": "%%%.loanOriginators.header.tabs.manualInvest%%%",
                 "loanOriginator": "%%%.loanOriginators.header.tabs.loanOriginator%%%"
@@ -6840,6 +6854,90 @@
                 "manualInvest": "%%%.loanOriginators.header.desc.manualInvest%%%",
                 "loanOriginator": "%%%.loanOriginators.header.desc.loanOriginator%%%"
             }
+        },
+        "landing": {
+            "contentHtml": "%%%.loanOriginators.landing.contentHtml%%%",
+            "intro": {
+                "desc": {
+                    "1": "%%%.loanOriginators.landing.intro.desc.1%%%",
+                    "2": "%%%.loanOriginators.landing.intro.desc.2%%%",
+                    "3": "%%%.loanOriginators.landing.intro.desc.3%%%"
+                }
+            },
+            "ourPress": {
+                "title": "%%%.loanOriginators.landing.ourPress.title%%%"
+            },
+            "why": {
+                "1": {
+                    "caption": "%%%.loanOriginators.landing.why.1.caption%%%",
+                    "desc": "%%%.loanOriginators.landing.why.1.desc%%%"
+                },
+                "2": {
+                    "caption": "%%%.loanOriginators.landing.why.2.caption%%%",
+                    "desc": "%%%.loanOriginators.landing.why.2.desc%%%"
+                },
+                "3": {
+                    "caption": "%%%.loanOriginators.landing.why.3.caption%%%",
+                    "desc": "%%%.loanOriginators.landing.why.3.desc%%%"
+                },
+                "4": {
+                    "caption": "%%%.loanOriginators.landing.why.4.caption%%%",
+                    "desc": "%%%.loanOriginators.landing.why.4.desc%%%"
+                },
+                "title": "%%%.loanOriginators.landing.why.title%%%"
+            },
+            "what": {
+                "title": "%%%.loanOriginators.landing.what.title%%%",
+                "desc1": "%%%.loanOriginators.landing.what.desc1%%%",
+                "desc2": "%%%.loanOriginators.landing.what.desc2%%%"
+            },
+            "how": {
+                "title": "%%%.loanOriginators.landing.how.title%%%",
+                "title1": "%%%.loanOriginators.landing.how.title1%%%",
+                "desc1": "%%%.loanOriginators.landing.how.desc1%%%",
+                "title2": "%%%.loanOriginators.landing.how.title2%%%",
+                "desc2": "%%%.loanOriginators.landing.how.desc2%%%",
+                "title3": "%%%.loanOriginators.landing.how.title3%%%",
+                "desc3": "%%%.loanOriginators.landing.how.desc3%%%",
+                "title4": "%%%.loanOriginators.landing.how.title4%%%",
+                "desc4": "%%%.loanOriginators.landing.how.desc4%%%",
+                "title5": "%%%.loanOriginators.landing.how.title5%%%",
+                "desc5": "%%%.loanOriginators.landing.how.desc5%%%"
+            }
+        },
+        "faqs": {
+            "question1": "%%%.loanOriginators.faqs.question1%%%",
+            "answer1": "%%%.loanOriginators.faqs.answer1%%%",
+            "question2": "%%%.loanOriginators.faqs.question2%%%",
+            "answer2": "%%%.loanOriginators.faqs.answer2%%%",
+            "question3": "%%%.loanOriginators.faqs.question3%%%",
+            "answer3": "%%%.loanOriginators.faqs.answer3%%%",
+            "question4": "%%%.loanOriginators.faqs.question4%%%",
+            "answer4": "%%%.loanOriginators.faqs.answer4%%%",
+            "question5": "%%%.loanOriginators.faqs.question5%%%",
+            "answer5": "%%%.loanOriginators.faqs.answer5%%%",
+            "question6": "%%%.loanOriginators.faqs.question6%%%",
+            "answer6": "%%%.loanOriginators.faqs.answer6%%%",
+            "question7": "%%%.loanOriginators.faqs.question7%%%",
+            "answer7": "%%%.loanOriginators.faqs.answer7%%%",
+            "question8": "%%%.loanOriginators.faqs.question8%%%",
+            "answer8": "%%%.loanOriginators.faqs.answer8%%%",
+            "question9": "%%%.loanOriginators.faqs.question9%%%",
+            "answer9": "%%%.loanOriginators.faqs.answer9%%%",
+            "question10": "%%%.loanOriginators.faqs.question10%%%",
+            "answer10": "%%%.loanOriginators.faqs.answer10%%%",
+            "question11": "%%%.loanOriginators.faqs.question11%%%",
+            "answer11": "%%%.loanOriginators.faqs.answer11%%%",
+            "question12": "%%%.loanOriginators.faqs.question12%%%",
+            "answer12": "%%%.loanOriginators.faqs.answer12%%%",
+            "question13": "%%%.loanOriginators.faqs.question13%%%",
+            "answer13": "%%%.loanOriginators.faqs.answer13%%%",
+            "question14": "%%%.loanOriginators.faqs.question14%%%",
+            "answer14": "%%%.loanOriginators.faqs.answer14%%%",
+            "question15": "%%%.loanOriginators.faqs.question15%%%",
+            "answer15": "%%%.loanOriginators.faqs.answer15%%%",
+            "question16": "%%%.loanOriginators.faqs.question16%%%",
+            "answer16": "%%%.loanOriginators.faqs.answer16%%%"
         },
         "manualInvest": {
             "ads": {

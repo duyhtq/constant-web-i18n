@@ -2604,6 +2604,7 @@
                 "maxAmount": "%%%.home.constantLoan.listApplications.maxAmount%%%",
                 "minIsolateMessage": "%%%.home.constantLoan.listApplications.minIsolateMessage%%%",
                 "maxIsolateMessage": "%%%.home.constantLoan.listApplications.maxIsolateMessage%%%",
+                "maxIsolateRateMessage": "%%%.home.constantLoan.listApplications.maxIsolateRateMessage%%%",
                 "recommendMessage": "%%%.home.constantLoan.listApplications.recommendMessage%%%",
                 "matched": "%%%.home.constantLoan.listApplications.matched%%%",
                 "pendingAmount": "%%%.home.constantLoan.listApplications.pendingAmount%%%",
@@ -2742,7 +2743,7 @@
                 "errorCollateralNotEnoughHtml": "%%%.home.constantLoan.listApplications.errorCollateralNotEnoughHtml%%%",
                 "errorRecallLowCreditRate": "%%%.home.constantLoan.listApplications.errorRecallLowCreditRate%%%",
                 "errorRecallLowCollateralRate": "%%%.home.constantLoan.listApplications.errorRecallLowCollateralRate%%%",
-                "errorIsolateNotEnought": "%%%.home.constantLoan.listApplications.errorIsolateNotEnought%%%",
+                "errorIsolateNotEnough": "%%%.home.constantLoan.listApplications.errorIsolateNotEnough%%%",
                 "depositFrom": {
                     "title": "%%%.home.constantLoan.listApplications.depositFrom.title%%%",
                     "amount": "%%%.home.constantLoan.listApplications.depositFrom.amount%%%",
@@ -5625,7 +5626,8 @@
         "topupCollateralTitle": "%%%.collateralBalance.topupCollateralTitle%%%",
         "hideSmallBalance": "%%%.collateralBalance.hideSmallBalance%%%",
         "hideDesc": "%%%.collateralBalance.hideDesc%%%",
-        "estimatedValue": "%%%.collateralBalance.estimatedValue%%%",
+        "estimatedAvailableValue": "%%%.collateralBalance.estimatedAvailableValue%%%",
+        "estimatedCollateralValue": "%%%.collateralBalance.estimatedCollateralValue%%%",
         "topupSuccess": "%%%.collateralBalance.topupSuccess%%%",
         "recommendMessage": "%%%.collateralBalance.recommendMessage%%%",
         "topupNote": "%%%.collateralBalance.topupNote%%%",
@@ -6474,9 +6476,11 @@
     "notification": {
         "title": "%%%.notification.title%%%",
         "viewAll": "%%%.notification.viewAll%%%",
+        "clearAll": "%%%.notification.clearAll%%%",
         "markAllRead": "%%%.notification.markAllRead%%%",
         "noNewData": "%%%.notification.noNewData%%%",
         "noData": "%%%.notification.noData%%%",
+        "clearAllSuccess": "%%%.notification.clearAllSuccess%%%",
         "invest": {
             "done": {
                 "title": "%%%.notification.invest.done.title%%%",

@@ -3386,6 +3386,9 @@
                     "closed": "%%%.home.loanOriginator.listApplications.investmentStatus.closed%%%",
                     "bad_debt": "%%%.home.loanOriginator.listApplications.investmentStatus.bad_debt%%%"
                 },
+                "investmentStatusDesc": {
+                    "ready": "%%%.home.loanOriginator.listApplications.investmentStatusDesc.ready%%%"
+                },
                 "start": "%%%.home.loanOriginator.listApplications.start%%%",
                 "stop": "%%%.home.loanOriginator.listApplications.stop%%%",
                 "stopConfirm": {

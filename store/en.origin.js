@@ -5634,6 +5634,7 @@
         "topupSuccess": "%%%.collateralBalance.topupSuccess%%%",
         "recommendMessage": "%%%.collateralBalance.recommendMessage%%%",
         "topupNote": "%%%.collateralBalance.topupNote%%%",
+        "topupNoBalanceMessage": "%%%.collateralBalance.topupNoBalanceMessage%%%",
         "errorMaxValue": "%%%.collateralBalance.errorMaxValue%%%",
         "errorMinValue": "%%%.collateralBalance.errorMinValue%%%",
         "tabs": {
@@ -7217,6 +7218,8 @@
             "export": "%%%.loanOriginators.loanDisbursementDetail.export%%%",
             "settlementDate": "%%%.loanOriginators.loanDisbursementDetail.settlementDate%%%",
             "no": "%%%.loanOriginators.loanDisbursementDetail.no%%%",
+            "loanId": "%%%.loanOriginators.loanDisbursementDetail.loanId%%%",
+            "investmentId": "%%%.loanOriginators.loanDisbursementDetail.investmentId%%%",
             "referenceCode": "%%%.loanOriginators.loanDisbursementDetail.referenceCode%%%",
             "loanAmount": "%%%.loanOriginators.loanDisbursementDetail.loanAmount%%%",
             "total": "%%%.loanOriginators.loanDisbursementDetail.total%%%",
@@ -7233,6 +7236,10 @@
             "totalPayment": "%%%.loanOriginators.loanPaymentDetail.totalPayment%%%",
             "total": "%%%.loanOriginators.loanPaymentDetail.total%%%",
             "close": "%%%.loanOriginators.loanPaymentDetail.close%%%"
+        },
+        "reserveType": {
+            "24": "%%%.loanOriginators.reserveType.24%%%",
+            "25": "%%%.loanOriginators.reserveType.25%%%"
         }
     }
 }

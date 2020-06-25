@@ -133,7 +133,7 @@ export default {
     acknowledgement: 'Constant Acknowledgement',
     telegramText: 'Join the {link}',
     email: 'Email us at {email}',
-    register: '2019 Constant',
+    register: '2020 Constant',
     copyright: '{term} and {privacy}',
     termOfService: 'Terms of Service',
     privacy: 'Privacy Policy',
@@ -4189,9 +4189,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           investmentStatus: 'Investment status',
           investmentStatusDesc: `
             <p>Status of a specific investment.</p>
-            <p>1. Ready to invest: Investor's Account has sufficient funding to meet the Investment Order</p>
-            <p>2. Activating: The Investment is not yet active as investment payment is currently being processed. The Investment will be activated and start to earn interest when the Loan Originator receives the investment amount.</p>
-            <p>3. Active: The Investment transaction is settled and the investment is active and has started to earn interest.</p>
+            <p>1. Initial: The Fund is being held at Constant's approved custodian's bank account waiting to be wired to the Loan Originator on the next Settlement Date.</p>
+            <p>2. Fund in transit: The wire transfer is being processed and fund is being sent to the Loan Originator. This process generally takes 3 to 7 business days.</p>
+            <p>3. Active: The Investment transaction has been settled. The investment is active and has started to earn interest.</p>
             <p>4. Closed: The Investment reached the end of loan term and principal fully repaid OR The Investment has been purchased back by the Loan Originator OR  the Investment has been sold in the Secondary Market.</p>
             <p>5. Bad Debt: The Investment has passed the loan term for more than 60 days, the Buy Back Guarantee failed to be executed and the principal or part of the principal has not been recovered.</p>
           `,
@@ -4268,11 +4268,14 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           deactivated: 'Deactivated',
         },
         investmentStatus: {
-          ready: 'Ready to invest',
-          activating: 'Activating',
+          ready: 'Initial',
+          activating: 'Fund in transit',
           active: 'Active',
           closed: 'Closed',
           bad_debt: 'Bad Debt',
+        },
+        investmentStatusDesc: {
+          ready: `The Fund is being held at Constant\'s approved custodian\'s bank account waiting to be wired to the Loan Originator on the next Settlement Date which is by <strong>{time}</strong>.`
         },
         start: 'Activate',
         stop: 'Deactivate',
@@ -8906,7 +8909,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         `,
         desc2: `
         <p>The Buy-Back Guarantee depends on the Loan Originator’s financial capability to honor it. We give each loan originator a <strong>Constant Rating</strong> to help you assess the quality of the loan originator and their loans, but as this is just a guide, always use caution and diversify.</p>
-        <p>The Buy-Back Guarantee depends on the Loan Originator’s financial capability to honor it. We give each loan originator a <strong>Constant Rating</strong> which helps you assess the quality of the loan originator and their book of loans.</p>
         <p>You can find out more about Loan Originator investments on <a href="https://www.myconstant.com/blog/" className="underline" style="color: #fff" target="_blank">our blog  <img src='{image}'/></a></p>
         `,
       },

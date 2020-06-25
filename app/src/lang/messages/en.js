@@ -1699,7 +1699,7 @@ export default {
             cancel: 'No',
           },
           cancelBorrow: {
-            messageConfirm:  'Are you sure you want to cancel your borrow?',
+            messageConfirm:  'Are you sure you want to cancel the buying coin process?',
             confirm: 'Yes',
             cancel: 'No',
           },
@@ -7375,6 +7375,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     topupSuccess: 'Top-up Collateral successfully',
     recommendMessage: 'To restore your collateral value to the recommended {recommendedRate}%, please top up {amount} {currency}',
     topupNote: 'Your crypto will be sent to your multi-collateral balance. To top up an isolated (single-collateral) loan, go to your active loans page and click the top-up button next to the loan you wish to top-up.',
+    topupNoBalanceMessage: 'Please deposit to top-up your multi-collateral balance.',
     errorMaxValue: 'Amount must less than {max}',
     errorMinValue: 'Amount must greater than {min}',
     tabs: {
@@ -9322,7 +9323,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       export: 'Export',
       settlementDate: 'Settlement Cycle - Settlement Date',
       no: 'No',
-      referenceCode: 'Reference Code',
+      loanId: 'Loan ID',
+      investmentId: 'Investment ID',
+      referenceCode: 'Loan Match Reference Code',
       loanAmount: 'Loan Amount Invested by the Investor',
       total: 'Total',
       close: 'Close',
@@ -9339,5 +9342,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       total: 'Total',
       close: 'Close',
     },
+    reserveType: {
+      24: 'LO investment',
+      25: 'LO repayment',
+    }
   }
 };

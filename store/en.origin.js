@@ -1777,6 +1777,7 @@
             "agreementAction": "%%%.user.register.agreementAction%%%",
             "registerFailed": "%%%.user.register.registerFailed%%%",
             "referrerReferralCode": "%%%.user.register.referrerReferralCode%%%",
+            "invalidReferralCode": "%%%.user.register.invalidReferralCode%%%",
             "promotionCode": "%%%.user.register.promotionCode%%%",
             "agreementText": "%%%.user.register.agreementText%%%",
             "agreementTextLink": "%%%.user.register.agreementTextLink%%%"
@@ -6855,12 +6856,19 @@
                 "landing": "%%%.loanOriginators.header.tabs.landing%%%",
                 "autoInvest": "%%%.loanOriginators.header.tabs.autoInvest%%%",
                 "manualInvest": "%%%.loanOriginators.header.tabs.manualInvest%%%",
-                "loanOriginator": "%%%.loanOriginators.header.tabs.loanOriginator%%%"
+                "loanOriginator": "%%%.loanOriginators.header.tabs.loanOriginator%%%",
+                "constantRating": "%%%.loanOriginators.header.tabs.constantRating%%%"
             },
             "desc": {
                 "autoInvest": "%%%.loanOriginators.header.desc.autoInvest%%%",
                 "manualInvest": "%%%.loanOriginators.header.desc.manualInvest%%%",
                 "loanOriginator": "%%%.loanOriginators.header.desc.loanOriginator%%%"
+            }
+        },
+        "securityHeader": {
+            "tabs": {
+                "security": "%%%.loanOriginators.securityHeader.tabs.security%%%",
+                "risk": "%%%.loanOriginators.securityHeader.tabs.risk%%%"
             }
         },
         "landing": {
@@ -7199,7 +7207,10 @@
                 "lateLoans": "%%%.loanOriginators.loanRecords.headers.lateLoans%%%",
                 "referenceCode": "%%%.loanOriginators.loanRecords.headers.referenceCode%%%",
                 "totalClaimPaymentDue": "%%%.loanOriginators.loanRecords.headers.totalClaimPaymentDue%%%",
-                "netAmount": "%%%.loanOriginators.loanRecords.headers.netAmount%%%"
+                "netAmount": "%%%.loanOriginators.loanRecords.headers.netAmount%%%",
+                "depositDate": "%%%.loanOriginators.loanRecords.headers.depositDate%%%",
+                "depositAmount": "%%%.loanOriginators.loanRecords.headers.depositAmount%%%",
+                "transactionId": "%%%.loanOriginators.loanRecords.headers.transactionId%%%"
             },
             "status": {
                 "pending": "%%%.loanOriginators.loanRecords.status.pending%%%",
@@ -7236,6 +7247,89 @@
             "totalPayment": "%%%.loanOriginators.loanPaymentDetail.totalPayment%%%",
             "total": "%%%.loanOriginators.loanPaymentDetail.total%%%",
             "close": "%%%.loanOriginators.loanPaymentDetail.close%%%"
+        },
+        "constantRating": {
+            "howCalculate": {
+                "title": "%%%.loanOriginators.constantRating.howCalculate.title%%%",
+                "description": "%%%.loanOriginators.constantRating.howCalculate.description%%%"
+            },
+            "what": {
+                "title": "%%%.loanOriginators.constantRating.what.title%%%",
+                "description": "%%%.loanOriginators.constantRating.what.description%%%"
+            },
+            "why": {
+                "title": "%%%.loanOriginators.constantRating.why.title%%%",
+                "description": "%%%.loanOriginators.constantRating.why.description%%%"
+            },
+            "howRate": {
+                "title": "%%%.loanOriginators.constantRating.howRate.title%%%",
+                "conditions": {
+                    "profile": {
+                        "0": "%%%.loanOriginators.constantRating.howRate.conditions.profile.0%%%",
+                        "1": "%%%.loanOriginators.constantRating.howRate.conditions.profile.1%%%",
+                        "title": "%%%.loanOriginators.constantRating.howRate.conditions.profile.title%%%"
+                    },
+                    "operation": {
+                        "0": "%%%.loanOriginators.constantRating.howRate.conditions.operation.0%%%",
+                        "1": "%%%.loanOriginators.constantRating.howRate.conditions.operation.1%%%",
+                        "2": "%%%.loanOriginators.constantRating.howRate.conditions.operation.2%%%",
+                        "3": "%%%.loanOriginators.constantRating.howRate.conditions.operation.3%%%",
+                        "4": "%%%.loanOriginators.constantRating.howRate.conditions.operation.4%%%",
+                        "title": "%%%.loanOriginators.constantRating.howRate.conditions.operation.title%%%"
+                    },
+                    "performance": {
+                        "0": "%%%.loanOriginators.constantRating.howRate.conditions.performance.0%%%",
+                        "1": "%%%.loanOriginators.constantRating.howRate.conditions.performance.1%%%",
+                        "2": "%%%.loanOriginators.constantRating.howRate.conditions.performance.2%%%",
+                        "title": "%%%.loanOriginators.constantRating.howRate.conditions.performance.title%%%"
+                    },
+                    "financial": {
+                        "0": "%%%.loanOriginators.constantRating.howRate.conditions.financial.0%%%",
+                        "1": "%%%.loanOriginators.constantRating.howRate.conditions.financial.1%%%",
+                        "2": "%%%.loanOriginators.constantRating.howRate.conditions.financial.2%%%",
+                        "title": "%%%.loanOriginators.constantRating.howRate.conditions.financial.title%%%"
+                    }
+                },
+                "rangeNote": "%%%.loanOriginators.constantRating.howRate.rangeNote%%%",
+                "ranges": {
+                    "low": {
+                        "title": "%%%.loanOriginators.constantRating.howRate.ranges.low.title%%%",
+                        "description": "%%%.loanOriginators.constantRating.howRate.ranges.low.description%%%"
+                    },
+                    "moderate": {
+                        "title": "%%%.loanOriginators.constantRating.howRate.ranges.moderate.title%%%",
+                        "description": "%%%.loanOriginators.constantRating.howRate.ranges.moderate.description%%%"
+                    },
+                    "high": {
+                        "title": "%%%.loanOriginators.constantRating.howRate.ranges.high.title%%%",
+                        "description": "%%%.loanOriginators.constantRating.howRate.ranges.high.description%%%"
+                    },
+                    "extremelyHigh": {
+                        "title": "%%%.loanOriginators.constantRating.howRate.ranges.extremelyHigh.title%%%",
+                        "description": "%%%.loanOriginators.constantRating.howRate.ranges.extremelyHigh.description%%%"
+                    }
+                }
+            },
+            "howOfter": {
+                "title": "%%%.loanOriginators.constantRating.howOfter.title%%%",
+                "description": "%%%.loanOriginators.constantRating.howOfter.description%%%",
+                "upgrade": {
+                    "0": "%%%.loanOriginators.constantRating.howOfter.upgrade.0%%%",
+                    "1": "%%%.loanOriginators.constantRating.howOfter.upgrade.1%%%",
+                    "2": "%%%.loanOriginators.constantRating.howOfter.upgrade.2%%%",
+                    "3": "%%%.loanOriginators.constantRating.howOfter.upgrade.3%%%",
+                    "4": "%%%.loanOriginators.constantRating.howOfter.upgrade.4%%%",
+                    "title": "%%%.loanOriginators.constantRating.howOfter.upgrade.title%%%"
+                },
+                "downgrade": {
+                    "0": "%%%.loanOriginators.constantRating.howOfter.downgrade.0%%%",
+                    "1": "%%%.loanOriginators.constantRating.howOfter.downgrade.1%%%",
+                    "2": "%%%.loanOriginators.constantRating.howOfter.downgrade.2%%%",
+                    "3": "%%%.loanOriginators.constantRating.howOfter.downgrade.3%%%",
+                    "4": "%%%.loanOriginators.constantRating.howOfter.downgrade.4%%%",
+                    "title": "%%%.loanOriginators.constantRating.howOfter.downgrade.title%%%"
+                }
+            }
         },
         "reserveType": {
             "24": "%%%.loanOriginators.reserveType.24%%%",

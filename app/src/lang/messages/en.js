@@ -1419,7 +1419,7 @@ export default {
             <p>As of <strong>Sep 10 2019</strong>, you’ll automatically earn <strong>{systemInterest}% APY</strong> on your current balance. These earnings will update real-time, and compound daily! You’ll still be able to withdraw anytime.</p>
         `,
         balanceStarDesc: `
-        Earn STAR through our Membership Program. Then redeem each STAR for 1% bonus (investments) or discounted interest (loans). Check out our Membership page for more details.
+        A STAR is a reward token you can redeem for 1% bonus interest on an investment or a 1% discount on a loan. Earn STAR every time you reach Diamond membership (invest or borrow $100,000 in 180 days).
         `,
         referralDesc: `
         Get a 10% reward when your friends earn interest – paid out every second. So if your friend earns $100, we’ll give you $10. There’s no limit to the number of friends you can refer.
@@ -1995,6 +1995,7 @@ export default {
       agreementAction: 'User Agreement and Privacy Policy.',
       registerFailed: 'Failed while creating your account, please try again',
       referrerReferralCode: `Invitation code (optional)`,
+      invalidReferralCode: 'Invalid referral code. Please check your code and try again',
       promotionCode: 'Promotion Code',
       agreementText: 'By ticking this box, I agree to Constant\'s',
       agreementTextLink: 'Terms and Conditions.',
@@ -8857,12 +8858,19 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         landing: 'How it works',
         autoInvest: 'Auto Invest',
         manualInvest: 'Manual Invest',
-        loanOriginator: 'Loan Originators'
+        loanOriginator: 'Loan Originators',
+        constantRating: 'Constant Rating',
       },
       desc: {
         autoInvest: 'Auto Invest lets you choose a predetermined investment strategy to save you time and effort. Simply choose the Plan that best fits your goals and our matching algorithm will do the rest.',
         manualInvest: 'Manual Invest puts you in the driving seat. Set your investment criteria to filter relevant loans. Then choose one or more loans and the amount to invest in each. Easy.',
         loanOriginator: 'We work with the best P2P lenders in the world to offer you more choice and better returns. <a href="https://blog.myconstant.com/category/Loan-originator/" class="underline" target="_blank">Learn more about who we work with and view their available loans</a>.'
+      }
+    },
+    securityHeader: {
+      tabs: {
+        security: 'Security & Risk',
+        risk: 'Online Security',
       }
     },
     landing: {
@@ -8909,6 +8917,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         <p>You buy this claim right from the loan originator by entering into an <strong>Assignment Agreement</strong>, which governs the terms of your investment.</p>
         `,
         desc2: `
+        <p>The “Buy-Back Guarantee” is an agreement that the loan originator will buy your claim right back if the underlying loan is late by 60 days or more. </p>
         <p>The Buy-Back Guarantee depends on the Loan Originator’s financial capability to honor it. We give each loan originator a <strong>Constant Rating</strong> to help you assess the quality of the loan originator and their loans, but as this is just a guide, always use caution and diversify.</p>
         <p>You can find out more about Loan Originator investments on <a href="https://www.myconstant.com/blog/" className="underline" style="color: #fff" target="_blank">our blog  <img src='{image}'/></a></p>
         `,
@@ -9305,6 +9314,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         referenceCode: 'Reference code',
         totalClaimPaymentDue: 'Total claim payment due',
         netAmount: 'Net settlement amount',
+        depositDate: 'Deposit date',
+        depositAmount: 'Deposit amount',
+        transactionId: 'Transaction ID',
+
       },
       status: {
         pending: 'To Be Settled',
@@ -9341,6 +9354,89 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       totalPayment: 'Total Payment',
       total: 'Total',
       close: 'Close',
+    },
+    constantRating: {
+      howCalculate: {
+        title: 'How we calculate a loan originator\'s Constant Rating',
+        description: 'Before you invest in Loan Originator, <strong>please take a minute to review our rating system</strong>. We rate loan originators from A to D, with A being the best, and only ever accept loan originators rated C and above. As a guide, our rating system can help you <strong>understand investment risk</strong>, <strong>diversify investments</strong>, and <strong>earn consistent returns</strong> over time.',
+      },
+      what: {
+        title: 'What is the Constant Rating?',
+        description: 'Similar to a credit score, our Constant Rating is an internal metric we’ve created to help you assess a loan originator’s ability to buy back your loans. We calculate each Constant Rating from a thorough assessment of the loan originator’s financial history, internal business operations, and regulatory environment.'
+      },
+      why: {
+        title: 'Why do we need a rating system?',
+        description: 'Our loan originators come from all over the world, from different cultures, regulatory and lending environments. It can be difficult to assess all that information on your own. Our Constant Rating system is a tool to help you make better informed decisions about your investments without digging through pages of financial statements and jargon.'
+      },
+      howRate: {
+        title: 'How we rate Loan Originators',
+        conditions: {
+          profile: {
+            title: 'The loan originator\'s profile',
+            0: 'History of operations, market share, and market position.',
+            1: 'Country of operation.',
+          },
+          operation: {
+            title: 'The loan originator\'s lending operations and risk management',
+            0: 'Know Your Customer (KYC) policy and AML/ATF policy.',
+            1: 'Credit/Underwriting Policy.',
+            2: 'Loan Monitoring Process.',
+            3: 'Debt recovery process.',
+            4: 'Risk management controls such as loan portfolio diversification policy.',
+          },
+          performance: {
+            title: 'The loan originator\'s current loan portfolio performance',
+            0: 'Loan portfolio structure: secured vs. unsecured loans, loan types, and maturities.',
+            1: 'Lending exposure to different countries.',
+            2: 'Historic default rates for each loan type.',
+          },
+          financial: {
+            title: 'The Loan Originator\'s financial health',
+            0: 'Profitability.',
+            1: 'Capital strength.',
+            2: 'Liquidity.',
+          },
+        },
+        rangeNote: 'After this, we will publish the final rating of each loan originator ranging from A to D',
+        ranges: {
+          low: {
+            title: 'A+ A A-<br/>Low risk',
+            description: 'A financially strong company in a leading or niche market position. It has solid asset quality, a robust and well-structured credit policy, debt collection procedures, and risk management policies. The company is led by a management team with a proven track record and operates in a stable and established regulatory environment.',
+          },
+          moderate: {
+            title: 'B+ B B-<br/>Moderate risk',
+            description: 'A company with a business standing described by one or more of the following indicators: stable but somewhat weaker financials, an average-to-good market position, adequate credit policy, adequate debt collection procedures, and a shorter asset quality track record. It is led by a management team with relevant experience, and adequate financial strengths and operates in a less regulated and/or uncertain environment.',
+          },
+          high: {
+            title: 'C+ C C-<br/>High risk',
+            description: 'A company with considerable weaknesses in financial performance and standing. They can be described by one or more of the following indicators: limited or weakening competitive position, below average/rapidly decreasing asset quality, a limited track record, inexperienced management, weaker financial strengths, and operating under substantial regulatory risk.',
+          },
+          extremelyHigh: {
+            title: 'D+ D D-<br/>Extremely high risk',
+            description: 'A company that has substantial weakness in financial performance and standing. Asset quality is sub-standard, management shows a significant lack of experience in managing and controlling the risk of the lending business, operating under substantial regulatory risk, and/or operates in a country that has a significant risk of political instability that would impact the lending business in the near future.',
+          },
+        },
+      },
+      howOfter: {
+        title: 'How often do you evaluate your loan originators?',
+        description: 'Every quarter we thoroughly assess our loan originators to decide their status in the next quarter.',
+        upgrade: {
+          title: 'We upgrade a loan originator if:',
+          0: 'Their financial strength improve materially. (For example, a capital injection.)',
+          1: 'The company significantly improves its financial standing and/or performance.',
+          2: 'There is a noticeable improvement in their loan book quality and loan book diversification.',
+          3: 'The company improves its market position, product offering, and/or income diversification.',
+          4: 'Regional regulations improve or overall business conditions improve.',
+        },
+        downgrade: {
+          title: 'We downgrade a loan originator if:',
+          0: 'Their overall loan book quality deteriorates.',
+          1: 'Their financial strength deteriorates.',
+          2: 'The company defaults on a financial obligation.',
+          3: 'The company undergoes forced restructuring.',
+          4: 'Regulation changes for the worse or a major national risk impacting the future of their lending business arises.',
+        }
+      }
     },
     reserveType: {
       24: 'LO investment',

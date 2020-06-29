@@ -3154,7 +3154,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         backAccount: 'Done',
         bitgo: {
           title: 'Secured by BitGo',
-          content: 'You’re sending your collateral to BitGo, a qualified digital asset custodian. Your collateral will be securely stored inside a BitGo cold wallet that’s insured to $100M. So no matter what happens to Constant, your collateral is secure.'
+          content: 'You’re sending your collateral to BitGo, a qualified digital asset custodian. Your collateral will be securely stored inside a Prime Trust wallet that’s insured to $100M. So no matter what happens to Constant, your collateral is secure.'
         }
       },
       history: {
@@ -3462,7 +3462,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         answer1: `
         <p>Crypto Credit is a fast, easy way to borrow USD against your existing cryptocurrencies to buy new coins.It’s a bit like a margin account, only it’s faster, cheaper, and you always get the best price for your chosen cryptocurrency.</p> 
         <p>You choose the interest rate and term and put down collateral equivalent to the USD value of your chosen crypto. We then search multiple exchanges to find the best prices and then deposit your chosen crypto into your Constant coin balance.</p> 
-        <p>Meanwhile, we store your collateral in a BitGo cold wallet insured to $100M. When you repay the USD loan, you get your collateral back. There are no trading fees, no withdrawal fees, and you always get the best price for your chosen cryptocurrency.</p>`,
+        <p>Meanwhile, we store your collateral in a Prime Trust wallet insured to $100M. When you repay the USD loan, you get your collateral back. There are no trading fees, no withdrawal fees, and you always get the best price for your chosen cryptocurrency.</p>`,
         question2: 'How does Crypto Credit work?',
         answer2: `
         <p>First, decide which cryptocurrency you want to buy. </p>
@@ -3477,7 +3477,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         answer3: `
         <p>Exchange margin accounts charge higher interest rates, trading fees, withdrawal fees, and have only one source for pricing data: the exchange. </p>
         <p>With Constant Crypto Credit, you set the rate and term to a level you’re comfortable with. Then, we search multiple exchanges to find you the best price, and faster, so you don’t ever miss out on better deals. All trading and withdrawals are free, too.</p> 
-        <p>While with us, your collateral is held in a BitGo cold wallet insured to $100M. Most exchanges store collateral in uninsured hot wallets which are less secure and don’t cover you against theft.</p> 
+        <p>While with us, your collateral is held in a Prime Trust wallet insured to $100M. Most exchanges store collateral in uninsured hot wallets which are less secure and don’t cover you against theft.</p> 
         `,
         question4: 'Am I borrowing cryptocurrency or USD?',
         answer4: `
@@ -3491,7 +3491,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         `,
         question6: 'How do you protect my collateral?',
         answer6: `
-          <p>Your collateral is stored in a BitGo cold wallet that’s insured to $100,000,000. This protects you against:</p>
+          <p>Your collateral is stored in a Prime Trust wallet that’s insured to $100,000,000. This protects you against:</p>
             <p> - Third-party hacks, copying, or theft of private keys.<br>
              - Insider theft of dishonest acts by BitGo employees or executives.<br>
              - Loss of keys.</p>
@@ -3533,7 +3533,86 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         question14: 'What happens if I repay late?',
         answer14: `
         The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due.
-        `
+        `,
+        question15: 'Is it still possible to take out a single-collateral loan?',
+        answer15: `
+        <p>
+        Yes, after you take out a loan you can click on the Isolate button in the loan menu on your accounts page to switch to a single-collateral loan. To switch you must meet the 110% minimum collateral value requirement for the crypto. However, you cannot collateralize with more crypto than your collateral rate allows (more on that below).
+        </p>
+        `,
+        question16: 'Is repayment any different with multi-collateral credit lines?',
+        answer16: `
+        <p>
+        Nope! You must still repay each loan individually. However, crypto selected for collateral repayments will still follow a 24-hour trading volume priority based on what you have available.
+        </p>
+        `,
+        question17: 'I can’t find where to choose multiple collaterals for my borrow order',
+        answer17: `
+        <p>
+        If you take out a crypto-backed loan or buy new cryptos using Crypto Credit, you’ll only see the option to use one collateral. To borrow with multiple collaterals you must start on <a href="https://www.myconstant.com/pro-lending" target="_blank" class="underline">our pro page.</a>
+        </p>
+        `,
+        question18: 'Why do you prioritize collaterals based on 24-hour exchange volume?',
+        answer18: `
+        <p>
+        Loan security is our top priority on Constant. In the unfortunate case of liquidation, we always want to make sure we can sell collateral as fast as possible to cover the loan value.
+        </p>
+        `,
+        question19: 'Will auto top-up add collateral to my loan based on 24-hour exchange volume?',
+        answer19: `
+        <p>
+        Yes.
+        </p>
+        `,
+        question20: 'Can I choose to auto top-up some loans and manually top-up others?',
+        answer20: `
+        <p>
+        No. You can only toggle auto top-up on or off for all multi-collateral loans at the same time. However, you can choose this setting separately for each isolated (single-collateral) loan.
+        </p>
+        `,
+        question21: 'Will I still receive notifications to repay individual multi-collateral loans on schedule?',
+        answer21: `
+        <p>
+        Yes.
+        </p>
+        `,
+        question22: 'Do you have a feature for paying all loans in one term period at the same time?',
+        answer22: `
+        <p>
+        Right now you still must pay off all of your loans individually.
+        </p>
+        `,
+        question23: 'If I have multiple active loans, which collaterals do I get back when I repay my earliest loans?',
+        answer23: `
+        <p>
+        If you still have active loans after repaying, your collateral won’t be released back to your available balance. Instead, it will go into your collateral balance for multi-collateral. If you want to remove collateral from this balance, you’ll need to recall excess from the overview screen and choose the crypto type and amount you want.
+        </p>
+        `,
+        question24: 'I can’t recall excess on my crypto even though my collateral value is over 110%.',
+        answer24: `
+        <p>
+        Collateral value is only used to determine loan liquidation. It is calculated by:
+        </p>
+        <p class="font-italic">
+        (number of coins * value)+”repeat for each coin”/(loan value + up-to-date interest + matching fee)
+        </p>
+        <p>
+        We calculate how much collateral you withdraw through recall excess based on the collateral rate. For more information on the collateral rate see below.
+        </p>
+        `,
+        question25: 'What is the collateral rate and why is it different from the collateral value?',
+        answer25: `
+        <p>
+        Collateral value only takes into account the monetary value of your collateral in your collateral balance compared to your loan amount. We base liquidation off collateral value. Your collateral rate is a more in-depth number that takes into account the LTV ratios required for different cryptocurrencies. We use this number to determine how much you can withdraw with recall excess as well as the maximum amount of crypto you can place in an Isolated loan.
+        </p>
+        <p>
+        You can find your collateral rate through this equation:
+        </p>
+        <p class="font-italic">
+        x = (number of coins)*(coin value)*(LTV)+“repeat for each coin”<br />
+        Collateral rate = (x/(loan value at first + up-to-date interest + matching fees))*100
+        </p>
+        `,
       },
       intro: {
         content: `
@@ -3654,7 +3733,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         step2: 'STEP 2',
         title2: 'Send your collateral',
         desc2:
-          'We store your collateral in an insured BitGo cold wallet or Ethereum smart contract until you repay the loan.',
+          'We store your collateral in an insured Prime Trust wallet or Ethereum smart contract until you repay the loan.',
         step3: 'STEP 3',
         title3: 'Get your crypto',
         desc3:
@@ -3806,7 +3885,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         backAccount: 'Done',
         bitgo: {
           title: 'Secured by BitGo',
-          content: 'You’re sending your collateral to BitGo, a qualified digital asset custodian. Your collateral will be securely stored inside a BitGo cold wallet that’s insured to $100M. So no matter what happens to Constant, your collateral is secure.'
+          content: 'You’re sending your collateral to BitGo, a qualified digital asset custodian. Your collateral will be securely stored inside a Prime Trust wallet that’s insured to $100M. So no matter what happens to Constant, your collateral is secure.'
         }
       },
       history: {
@@ -7333,7 +7412,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     title: 'Our Press',
   },
   collateralBalance: {
-    balance: 'Balance',
+    balance: 'Coin Balance',
     coin: 'Coin',
     name: 'Name',
     totalBalance: 'Total Balance',
@@ -8976,7 +9055,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         `,
       question6: 'What’s the difference between a Loan Originator loan and a crypto-backed loan?',
       answer6: `
-        <p>Loan Originator loans offer longer terms (6-15 months) and better interest rates (up to 15% APR). Depending on the loan originator, you might also receive monthly repayments that you can withdraw immediately, whereas crypto-backed borrowers usually repay at the end of the term.</p> 
+        <p>Loan Originator loans offer longer terms (6-15 months) and better interest rates (up to 11% APR). Depending on the loan originator, you might also receive monthly repayments that you can withdraw immediately, whereas crypto-backed borrowers usually repay at the end of the term.</p> 
 <p>A Loan Originator loan is secured by the loan originator. If borrowers default for a minimum of 60 days, the loan originator will buy back the loan. This returns your principal and earned profit up to and including the 60-day default period.</p> 
 <p>A crypto-backed loan is secured by collateral. If borrowers default or their collateral falls too much in value, we sell it to repay you. This is usually instant, depending on how quickly we can sell the collateral.</p> 
 <p>Those are the key differences, but you can see a full comparison on our Loan Originator homepage.</p> 
@@ -9184,7 +9263,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         title: 'custom plan',
         description: `You set the criteria and our matching algorithm will do the rest.<br/><br/> 
           <strong>Up to 15 months</strong><br/><br/> 
-          <strong>Interest from 10% - 13%</strong><br/><br/>
+          <strong>Interest from 10% - 11%</strong><br/><br/>
           Includes all loan types, loan originators and countries`,
         select: 'Select',
         readMore: 'Read more'

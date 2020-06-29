@@ -3280,6 +3280,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         payOffLoan: 'Repay',
         depositMatched: 'Top up',
         isolate: 'Isolate',
+        isolateTooltip: 'Isolate lets you secure your loan with one collateral instead of your multi-collateral balance. <a href="https://blog.myconstant.com/multi-crypto-loans/">What’s multi-collateral?</>',
         topup: 'Top-up',
         recall: 'Recall',
         redeemApply: 'Redeem STAR',
@@ -3295,9 +3296,9 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         status: 'Status',
         allStatus: 'All',
         overview: 'Overview',
-        availableCredit: 'Available Credit',
-        totalDebt: 'Total Debt',
-        avgInterest: 'Average Interest',
+        availableCredit: 'Available credit',
+        totalDebt: 'Total debt',
+        avgInterest: 'Average interest',
         depositCollateral: 'Deposit Collateral',
         deposit: 'Deposit',
         recallExcess: 'Recall Excess',
@@ -3399,8 +3400,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         `,
         errorCollateralNotEnoughHtml: 'Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.',
         errorRecallLowCreditRate: 'To recall excess, your collateral rate must be more than {recallRate}%. Your current collateral rate is {creditRate}%',
-        errorRecallLowCollateralRate: 'To recall excess, collateral value must be increased more than {requiredRate}%. Your current collateral value is {currentRate}%',
-        errorIsolateNotEnough: 'Your Collateral Balance does not meet the minimum amount to set multi-collateral to isolated.',
+        errorRecallLowCollateralRate: 'To recall excess, <a href="">collateral rate must be more than {requiredRate}%. Your current collateral value is {currentRate}%',
+        errorIsolateNotEnough: 'Your Collateral Balance does not meet the minimum amount required to set multi-collateral to isolated.',
         depositFrom: {
           title: 'Make more deposit for your collateral',
           amount: 'Amount',
@@ -6532,17 +6533,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     },
   },
   landingProReferral: {
-    title1: 'Constant Pro will live in',
-    desc1: 'This is your unique referral link. Share it via email, Facebook, or Twitter - and increase your interest earnings with every friend that signs up.',
-    title2: 'Get better rates with every friend that sign up',
-    title3: 'Your rewards so far',
-    title4: 'You\'ve earned this',
-    title5: 'FRIENDS THAT SIGNED UP',
-    title6: 'INVITE MORE 7 FRIENDS TO ARCHIEVE',
-    title7: 'INVITE MORE {num} FRIENDS TO ARCHIEVE',
-    title8: 'INVITE MORE PEERS, MORE REWARDS',
-    investment: 'On investment',
-    loans: 'On loans',
     loginRequired: 'You need to login to do the action.',
     shares: {
       title: 'Share your unique referral link',
@@ -6551,31 +6541,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       gg: 'Share on Google',
       shareFbSuccess: 'Share referral link success.',
     },
-    levels: {
-      l0: '<p>Free transaction fees for the first 30 days</p>',
-      l1: `
-        <p>Free transaction fees for the first 30 days</p>
-        <p>+1% interest for every investment made in the first 30 days</p>
-      `,
-      l2: `
-      <p>Free transaction fees for the first 30 days</p>
-      <p>+2% interest for every investment made in the first 30 days</p>
-      <p>-2% interest for every loan obtained in the first 30 days</p>
-      `,
-      l3: `
-        <p>Free transaction fees for the first 30 days</p>
-        <p>+3% interest for every investment made in the first 30 days</p>
-        <p>-3% interest for every loan obtained in the first 30 days</p>
-      `
-    },
     referral: {
       placeholder: 'https://myconstant.com/?ref=1AcXa2',
       btn: 'Copy',
       copied: 'Referral link copied to clipboard.',
-    },
-    table: {
-      referral_used_date: 'Date',
-      extra_rate: 'Rate (%)'
     },
     inviteEmail: {
       title: 'Invite friends via email',
@@ -6590,26 +6559,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       failed: 'Update referral code failed',
       duplicated: 'Sorry, someone has already created that referral code. Please choose another.',
     },
-    faqs: {
-      question1: 'What are the supported cryptocurrencies?',
-      answer1: 'The treasure box is supporting BTC, ETH and CONST',
-      question2: 'Do I need a minimum deposit?',
-      answer2: 'None at all. You can invest as much or as little as you like. ',
-      question3: 'What is the interest rate?',
-      answer3: `
-        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to our FDIC-insured escrow account, and wait for a match. This is usually very quick if you’ve set market rates. </p>
-        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>
-      `,
-      question4: 'How much is the monthly earning?',
-      answer4: `
-        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>
-        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>
-        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>
-        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>
-      `,
-      question5: 'Who can participate?',
-      answer5: 'When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds.',
-    }
   },
   getPrices: {
     title: 'Pricing and Service times',
@@ -8917,7 +8866,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         <p>You buy this claim right from the loan originator by entering into an <strong>Assignment Agreement</strong>, which governs the terms of your investment.</p>
         `,
         desc2: `
-        <p>The “Buy-Back Guarantee” is an agreement that the loan originator will buy your claim right back if the underlying loan is late by 60 days or more. </p>
+        <p>The <strong>Buy-Back Guarantee</strong> is an agreement that the loan originator will buy your claim right back if the underlying loan is late by 60 days or more. </p>
         <p>The Buy-Back Guarantee depends on the Loan Originator’s financial capability to honor it. We give each loan originator a <strong>Constant Rating</strong> to help you assess the quality of the loan originator and their loans, but as this is just a guide, always use caution and diversify.</p>
         <p>You can find out more about Loan Originator investments on <a href="https://www.myconstant.com/blog/" className="underline" style="color: #fff" target="_blank">our blog  <img src='{image}'/></a></p>
         `,

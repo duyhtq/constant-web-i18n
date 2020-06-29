@@ -104,6 +104,7 @@
 %%%.footer.contactUs%%%,"Contact us"
 %%%.footer.referral%%%,"Share & Earn $"
 %%%.footer.riskStatement%%%,"Investment Risk Statement"
+%%%.footer.securityAndRisk%%%,"Security & Risk"
 %%%.footer.phone.us.title%%%,"US: "
 %%%.footer.phone.us.phone%%%,"+1 844 201 7242"
 %%%.footer.phone.us.time%%%,"(9am - 5pm PST, Mon - Fri)"
@@ -147,7 +148,7 @@
 %%%.lending.invest%%%,"Invest"
 %%%.lending.investDesc%%%,"Earn 7% interest fully secured."
 %%%.lending.buyback%%%,"Loan Originator"
-%%%.lending.buybackDesc%%%,"Earn up to 13% APR. Terms from 6-15 months. Includes loan originator’s buy-back guarantee in case of default."
+%%%.lending.buybackDesc%%%,"Earn up to 11% APR. Terms from 6-15 months. Includes loan originator’s buy-back guarantee in case of default."
 %%%.lending.borrow%%%,"Borrow"
 %%%.lending.borrowDesc%%%,"Your rates. Your terms. No credit checks. Crypto-backed."
 %%%.lending.borrowCoin%%%,"Crypto Credit <sup>NEW</sup>"
@@ -186,7 +187,7 @@
 %%%.headerBar.extraMenu.investCustom.title%%%,"Fiat Custom"
 %%%.headerBar.extraMenu.investCustom.desc%%%,"Your terms. Best rates. Fully secured."
 %%%.headerBar.extraMenu.investLO.title%%%,"Loan Originator"
-%%%.headerBar.extraMenu.investLO.desc%%%,"Earn up to 13% APR. Terms from 6-15 months. Includes loan originator’s buy-back guarantee in case of default."
+%%%.headerBar.extraMenu.investLO.desc%%%,"Earn up to 11% APR. Terms from 6-15 months. Includes loan originator’s buy-back guarantee in case of default."
 %%%.headerBar.extraMenu.investStaking.title%%%,"Crypto Staking"
 %%%.headerBar.extraMenu.investStaking.desc%%%,"6%-35% APR. Low minimums. Withdraw anytime."
 %%%.headerBar.extraMenu.investStaking.descHotFix%%%,"6%-35% APR. Low minimums. Withdraw anytime."
@@ -2230,7 +2231,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         <p class=""h1"">Borrow against 60+ cryptocurrencies.</p>
         <h1>Get cash for crypto without needing to sell.</h1>
         <p/>
-        <p>Get the funds you need at rates you’re willing to pay. Your collateral is securely escrowed and is automatically returned to you when you repay. Free withdrawals in cash or stablecoins. </p>
+        <p>Get the funds you need at rates you’re willing to pay. Your collateral is securely escrowed and returned to you when you repay. Free withdrawals in cash or stablecoins.</p>
+        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href=""https://www.myconstant.com/blog/multi-crypto-loans"" target=""_blank"" class=""underline"">our blog</a> and FAQs for more details.</p>
         "
 %%%.home.constantLoan.intro.desc.1%%%,"Secure escrow"
 %%%.home.constantLoan.intro.desc.2%%%,"No credit checks"
@@ -2311,13 +2313,13 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         "
 %%%.home.constantLoan.howItWorks.step1%%%,"STEP 1"
 %%%.home.constantLoan.howItWorks.title1%%%,"1. Set your own terms"
-%%%.home.constantLoan.howItWorks.desc1%%%,"Choose how much you want to borrow and for how long, then enter the interest rate you want to pay."
+%%%.home.constantLoan.howItWorks.desc1%%%,"Choose how much you want to borrow and for how long, and then select the interest rate you want to pay."
 %%%.home.constantLoan.howItWorks.step2%%%,"STEP 2"
 %%%.home.constantLoan.howItWorks.title2%%%,"2. Wait to be matched"
 %%%.home.constantLoan.howItWorks.desc2%%%,"The Constant matching algorithm finds investors that can lend you the money you need at the rates you want."
 %%%.home.constantLoan.howItWorks.step3%%%,"STEP 3"
 %%%.home.constantLoan.howItWorks.title3%%%,"3. Get cash to spend"
-%%%.home.constantLoan.howItWorks.desc3%%%,"Once you’ve found a match, you’ll receive the loan in your account. ETH collateral is securely escrowed in a smart contract, while supported collateral is held in Prime Trust cold storage. Collateral will be automatically returned when you repay."
+%%%.home.constantLoan.howItWorks.desc3%%%,"Once you’ve found a match, you’ll receive the loan in your account. ETH collateral is securely escrowed in a smart contract, while supported collateral is held in Prime Trust cold storage. Collateral can be withdrawn once you repay."
 %%%.home.constantLoan.reference%%%,"
         <div name=""ref-container"">
           <div name=""ref-item"">
@@ -2786,6 +2788,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         <p class=""h1"">Borrow against 60+ cryptos.</p>
         <p/>
         <p>Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.</p>
+        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href=""https://www.myconstant.com/blog/multi-crypto-loans"" target=""_blank"" class=""underline"">our blog</a> and FAQs for more details.</p>
       "
 %%%.home.constantC2CLoan.intro.desc.1%%%,"Your rates and terms"
 %%%.home.constantC2CLoan.intro.desc.2%%%,"Best crypto prices"
@@ -4516,7 +4519,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
         "
 %%%.newHome.newBanner.loanOriginator.cap%%%,"
           <p>
-            <strong>Up to 13% APR</strong>
+            <strong>Up to 11% APR</strong>
             Interest rate
           </p>
           <p>
@@ -5048,15 +5051,43 @@ Exchange margin accounts typically only use the price on that exchange, so you c
       "
 %%%.landingPro.faqs.question5%%%,"Who can participate?"
 %%%.landingPro.faqs.answer5%%%,"When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds."
+%%%.landingProReferral.title1%%%,"Constant Pro will live in"
+%%%.landingProReferral.desc1%%%,"This is your unique referral link. Share it via email, Facebook, or Twitter - and increase your interest earnings with every friend that signs up."
+%%%.landingProReferral.title2%%%,"Get better rates with every friend that sign up"
+%%%.landingProReferral.title3%%%,"Your rewards so far"
+%%%.landingProReferral.title4%%%,"You've earned this"
+%%%.landingProReferral.title5%%%,"FRIENDS THAT SIGNED UP"
+%%%.landingProReferral.title6%%%,"INVITE MORE 7 FRIENDS TO ARCHIEVE"
+%%%.landingProReferral.title7%%%,"INVITE MORE {num} FRIENDS TO ARCHIEVE"
+%%%.landingProReferral.title8%%%,"INVITE MORE PEERS, MORE REWARDS"
+%%%.landingProReferral.investment%%%,"On investment"
+%%%.landingProReferral.loans%%%,"On loans"
 %%%.landingProReferral.loginRequired%%%,"You need to login to do the action."
 %%%.landingProReferral.shares.title%%%,"Share your unique referral link"
 %%%.landingProReferral.shares.fb%%%,"Share on Facebook"
 %%%.landingProReferral.shares.tw%%%,"Share on Twitter"
 %%%.landingProReferral.shares.gg%%%,"Share on Google"
 %%%.landingProReferral.shares.shareFbSuccess%%%,"Share referral link success."
+%%%.landingProReferral.levels.l0%%%,"<p>Free transaction fees for the first 30 days</p>"
+%%%.landingProReferral.levels.l1%%%,"
+        <p>Free transaction fees for the first 30 days</p>
+        <p>+1% interest for every investment made in the first 30 days</p>
+      "
+%%%.landingProReferral.levels.l2%%%,"
+      <p>Free transaction fees for the first 30 days</p>
+      <p>+2% interest for every investment made in the first 30 days</p>
+      <p>-2% interest for every loan obtained in the first 30 days</p>
+      "
+%%%.landingProReferral.levels.l3%%%,"
+        <p>Free transaction fees for the first 30 days</p>
+        <p>+3% interest for every investment made in the first 30 days</p>
+        <p>-3% interest for every loan obtained in the first 30 days</p>
+      "
 %%%.landingProReferral.referral.placeholder%%%,"https://myconstant.com/?ref=1AcXa2"
 %%%.landingProReferral.referral.btn%%%,"Copy"
 %%%.landingProReferral.referral.copied%%%,"Referral link copied to clipboard."
+%%%.landingProReferral.table.referral_used_date%%%,"Date"
+%%%.landingProReferral.table.extra_rate%%%,"Rate (%)"
 %%%.landingProReferral.inviteEmail.title%%%,"Invite friends via email"
 %%%.landingProReferral.inviteEmail.placeholder%%%,"Enter email address, seperate by commas"
 %%%.landingProReferral.inviteEmail.btn%%%,"Invite"
@@ -5066,6 +5097,24 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.landingProReferral.editReferral.success%%%,"Your referral code has been updated successfully"
 %%%.landingProReferral.editReferral.failed%%%,"Update referral code failed"
 %%%.landingProReferral.editReferral.duplicated%%%,"Sorry, someone has already created that referral code. Please choose another."
+%%%.landingProReferral.faqs.question1%%%,"What are the supported cryptocurrencies?"
+%%%.landingProReferral.faqs.answer1%%%,"The treasure box is supporting BTC, ETH and CONST"
+%%%.landingProReferral.faqs.question2%%%,"Do I need a minimum deposit?"
+%%%.landingProReferral.faqs.answer2%%%,"None at all. You can invest as much or as little as you like. "
+%%%.landingProReferral.faqs.question3%%%,"What is the interest rate?"
+%%%.landingProReferral.faqs.answer3%%%,"
+        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to our FDIC-insured escrow account, and wait for a match. This is usually very quick if you’ve set market rates. </p>
+        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>
+      "
+%%%.landingProReferral.faqs.question4%%%,"How much is the monthly earning?"
+%%%.landingProReferral.faqs.answer4%%%,"
+        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>
+        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>
+        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>
+        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>
+      "
+%%%.landingProReferral.faqs.question5%%%,"Who can participate?"
+%%%.landingProReferral.faqs.answer5%%%,"When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds."
 %%%.getPrices.title%%%,"Pricing and Service times"
 %%%.getPrices.desc%%%,"
     <div>All times shown below are maximum estimates. In all cases, the team strives for ASAP.</div>

@@ -145,6 +145,7 @@ export default {
     contactUs: 'Contact us',
     referral: 'Share & Earn $',
     riskStatement: 'Investment Risk Statement',
+    securityAndRisk: 'Security & Risk',
     phone: {
       us: {
         title: 'US: ',
@@ -218,7 +219,7 @@ export default {
     invest: 'Invest',
     investDesc: 'Earn 7% interest fully secured.',
     buyback: 'Loan Originator',
-    buybackDesc: 'Earn up to 13% APR. Terms from 6-15 months. Includes loan originator’s buy-back guarantee in case of default.',
+    buybackDesc: 'Earn up to 11% APR. Terms from 6-15 months. Includes loan originator’s buy-back guarantee in case of default.',
     borrow: 'Borrow',
     borrowDesc: 'Your rates. Your terms. No credit checks. Crypto-backed.',
     borrowCoin: 'Crypto Credit <sup>NEW</sup>',
@@ -265,7 +266,7 @@ export default {
       },
       investLO: {
         title: 'Loan Originator',
-        desc: 'Earn up to 13% APR. Terms from 6-15 months. Includes loan originator’s buy-back guarantee in case of default.',
+        desc: 'Earn up to 11% APR. Terms from 6-15 months. Includes loan originator’s buy-back guarantee in case of default.',
       },
       investStaking: {
         title: 'Crypto Staking',
@@ -2920,7 +2921,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         <p class="h1">Borrow against 60+ cryptocurrencies.</p>
         <h1>Get cash for crypto without needing to sell.</h1>
         <p/>
-        <p>Get the funds you need at rates you’re willing to pay. Your collateral is securely escrowed and is automatically returned to you when you repay. Free withdrawals in cash or stablecoins. </p>
+        <p>Get the funds you need at rates you’re willing to pay. Your collateral is securely escrowed and returned to you when you repay. Free withdrawals in cash or stablecoins.</p>
+        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href="https://www.myconstant.com/blog/multi-crypto-loans" target="_blank" class="underline">our blog</a> and FAQs for more details.</p>
         `,
         desc: {
           1: 'Secure escrow',
@@ -3017,7 +3019,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         step1: 'STEP 1',
         title1: '1. Set your own terms',
         desc1:
-          'Choose how much you want to borrow and for how long, then enter the interest rate you want to pay.',
+          'Choose how much you want to borrow and for how long, and then select the interest rate you want to pay.',
         step2: 'STEP 2',
         title2: '2. Wait to be matched',
         desc2:
@@ -3025,7 +3027,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         step3: 'STEP 3',
         title3: '3. Get cash to spend',
         desc3:
-          'Once you’ve found a match, you’ll receive the loan in your account. ETH collateral is securely escrowed in a smart contract, while supported collateral is held in Prime Trust cold storage. Collateral will be automatically returned when you repay.',
+          'Once you’ve found a match, you’ll receive the loan in your account. ETH collateral is securely escrowed in a smart contract, while supported collateral is held in Prime Trust cold storage. Collateral can be withdrawn once you repay.',
       },
       reference: `
         <div name="ref-container">
@@ -3541,6 +3543,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         <p class="h1">Borrow against 60+ cryptos.</p>
         <p/>
         <p>Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.</p>
+        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href="https://www.myconstant.com/blog/multi-crypto-loans" target="_blank" class="underline">our blog</a> and FAQs for more details.</p>
       `,
         desc: {
           1: 'Your rates and terms',
@@ -5808,7 +5811,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         `,
         cap: `
           <p>
-            <strong>Up to 13% APR</strong>
+            <strong>Up to 11% APR</strong>
             Interest rate
           </p>
           <p>
@@ -6533,6 +6536,17 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     },
   },
   landingProReferral: {
+    title1: 'Constant Pro will live in',
+    desc1: 'This is your unique referral link. Share it via email, Facebook, or Twitter - and increase your interest earnings with every friend that signs up.',
+    title2: 'Get better rates with every friend that sign up',
+    title3: 'Your rewards so far',
+    title4: 'You\'ve earned this',
+    title5: 'FRIENDS THAT SIGNED UP',
+    title6: 'INVITE MORE 7 FRIENDS TO ARCHIEVE',
+    title7: 'INVITE MORE {num} FRIENDS TO ARCHIEVE',
+    title8: 'INVITE MORE PEERS, MORE REWARDS',
+    investment: 'On investment',
+    loans: 'On loans',
     loginRequired: 'You need to login to do the action.',
     shares: {
       title: 'Share your unique referral link',
@@ -6541,10 +6555,31 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       gg: 'Share on Google',
       shareFbSuccess: 'Share referral link success.',
     },
+    levels: {
+      l0: '<p>Free transaction fees for the first 30 days</p>',
+      l1: `
+        <p>Free transaction fees for the first 30 days</p>
+        <p>+1% interest for every investment made in the first 30 days</p>
+      `,
+      l2: `
+      <p>Free transaction fees for the first 30 days</p>
+      <p>+2% interest for every investment made in the first 30 days</p>
+      <p>-2% interest for every loan obtained in the first 30 days</p>
+      `,
+      l3: `
+        <p>Free transaction fees for the first 30 days</p>
+        <p>+3% interest for every investment made in the first 30 days</p>
+        <p>-3% interest for every loan obtained in the first 30 days</p>
+      `
+    },
     referral: {
       placeholder: 'https://myconstant.com/?ref=1AcXa2',
       btn: 'Copy',
       copied: 'Referral link copied to clipboard.',
+    },
+    table: {
+      referral_used_date: 'Date',
+      extra_rate: 'Rate (%)'
     },
     inviteEmail: {
       title: 'Invite friends via email',
@@ -6559,6 +6594,26 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       failed: 'Update referral code failed',
       duplicated: 'Sorry, someone has already created that referral code. Please choose another.',
     },
+    faqs: {
+      question1: 'What are the supported cryptocurrencies?',
+      answer1: 'The treasure box is supporting BTC, ETH and CONST',
+      question2: 'Do I need a minimum deposit?',
+      answer2: 'None at all. You can invest as much or as little as you like. ',
+      question3: 'What is the interest rate?',
+      answer3: `
+        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to our FDIC-insured escrow account, and wait for a match. This is usually very quick if you’ve set market rates. </p>
+        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>
+      `,
+      question4: 'How much is the monthly earning?',
+      answer4: `
+        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>
+        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>
+        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>
+        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>
+      `,
+      question5: 'Who can participate?',
+      answer5: 'When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds.',
+    }
   },
   getPrices: {
     title: 'Pricing and Service times',

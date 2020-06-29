@@ -145,6 +145,7 @@
         "contactUs": "Contact us",
         "referral": "Share & Earn",
         "riskStatement": "Investment Risk Statement",
+        "securityAndRisk": "Security & Risk",
         "phone": {
             "us": {
                 "title": "US: ",
@@ -213,7 +214,7 @@
         "invest": "Invest",
         "investDesc": "Earn 7% interest fully secured.",
         "buyback": "Loan Originator",
-        "buybackDesc": "Earn up to 13% APR. Terms from 6-15 months. Includes loan originator’s buy-back guarantee in case of default.",
+        "buybackDesc": "Earn up to 11% APR. Terms from 6-15 months. Includes loan originator’s buy-back guarantee in case of default.",
         "borrow": "Borrow",
         "borrowDesc": "Your rates. Your terms. No credit checks. Crypto-backed.",
         "borrowCoin": "Crypto Credit <sup>NEW</sup>",
@@ -260,7 +261,7 @@
             },
             "investLO": {
                 "title": "Loan Originator",
-                "desc": "Earn up to 13% APR. Terms from 6-15 months. Includes loan originator’s buy-back guarantee in case of default."
+                "desc": "Earn up to 11% APR. Terms from 6-15 months. Includes loan originator’s buy-back guarantee in case of default."
             },
             "investStaking": {
                 "title": "Crypto Staking",
@@ -2404,7 +2405,7 @@
                 "answer10": "The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due."
             },
             "intro": {
-                "content": "\n        <p>Borrow the way you want</p>\n        <p class=\"h1\">Set your own rates.</p>\n        <p class=\"h1\">Borrow against 60+ cryptocurrencies.</p>\n        <h1>Get cash for crypto without needing to sell.</h1>\n        <p/>\n        <p>Get the funds you need at rates you’re willing to pay. Your collateral is securely escrowed and is automatically returned to you when you repay. Free withdrawals in cash or stablecoins. </p>\n        ",
+                "content": "\n        <p>Borrow the way you want</p>\n        <p class=\"h1\">Set your own rates.</p>\n        <p class=\"h1\">Borrow against 60+ cryptocurrencies.</p>\n        <h1>Get cash for crypto without needing to sell.</h1>\n        <p/>\n        <p>Get the funds you need at rates you’re willing to pay. Your collateral is securely escrowed and returned to you when you repay. Free withdrawals in cash or stablecoins.</p>\n        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href=\"https://www.myconstant.com/blog/multi-crypto-loans\" target=\"_blank\" class=\"underline\">our blog</a> and FAQs for more details.</p>\n        ",
                 "desc": {
                     "1": "Secure escrow",
                     "2": "No credit checks",
@@ -2483,13 +2484,13 @@
                 "intro": "\n          <p>Deposit cryptocurrency to secure cash, at the best rates on the market.</p>\n          <p>Need cash? We accept major cryptocurrencies as collateral, in exchange for USD or the equivalent in your local currency. That means you’ll have cash to spend - without needing to sell your crypto.</p>\n        ",
                 "step1": "STEP 1",
                 "title1": "1. Set your own terms",
-                "desc1": "Choose how much you want to borrow and for how long, then enter the interest rate you want to pay.",
+                "desc1": "Choose how much you want to borrow and for how long, and then select the interest rate you want to pay.",
                 "step2": "STEP 2",
                 "title2": "2. Wait to be matched",
                 "desc2": "The Constant matching algorithm finds investors that can lend you the money you need at the rates you want.",
                 "step3": "STEP 3",
                 "title3": "3. Get cash to spend",
-                "desc3": "Once you’ve found a match, you’ll receive the loan in your account. ETH collateral is securely escrowed in a smart contract, while supported collateral is held in Prime Trust cold storage. Collateral will be automatically returned when you repay."
+                "desc3": "Once you’ve found a match, you’ll receive the loan in your account. ETH collateral is securely escrowed in a smart contract, while supported collateral is held in Prime Trust cold storage. Collateral can be withdrawn once you repay."
             },
             "reference": "\n        <div name=ref-container\">",
             "transaction": {
@@ -2828,7 +2829,7 @@
                 "answer14": "\n        The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due.\n        "
             },
             "intro": {
-                "content": "\n        <p>Fast and easy crypto credit</p>\n        <h1>Trade the margin.</h1>\n        <p class=\"h1\">Skip the exchange.</p>\n        <p class=\"h1\">Borrow against 60+ cryptos.</p>\n        <p/>\n        <p>Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.</p>\n      ",
+                "content": "\n        <p>Fast and easy crypto credit</p>\n        <h1>Trade the margin.</h1>\n        <p class=\"h1\">Skip the exchange.</p>\n        <p class=\"h1\">Borrow against 60+ cryptos.</p>\n        <p/>\n        <p>Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.</p>\n        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href=\"https://www.myconstant.com/blog/multi-crypto-loans\" target=\"_blank\" class=\"underline\">our blog</a> and FAQs for more details.</p>\n      ",
                 "desc": {
                     "1": "Your rates and terms",
                     "2": "Best crypto prices",
@@ -4390,7 +4391,7 @@
             },
             "loanOriginator": {
                 "title": "\n          <p>\n            <strong>INVEST</strong>\n            Loan Originator\n          </p>\n        ",
-                "cap": "\n          <p>\n            <strong>Up to 13% APR</strong>\n            Interest rate\n          </p>\n          <p>\n            <strong>6-15 MONTHS</strong>\n            Loan term\n          </p>\n          <p class=\"clearBottom\">\n            Includes loan originator’s buy-back guarantee in case of default\n          </p>\n        ",
+                "cap": "\n          <p>\n            <strong>Up to 11% APR</strong>\n            Interest rate\n          </p>\n          <p>\n            <strong>6-15 MONTHS</strong>\n            Loan term\n          </p>\n          <p class=\"clearBottom\">\n            Includes loan originator’s buy-back guarantee in case of default\n          </p>\n        ",
                 "btn": "Explore"
             }
         },
@@ -4869,6 +4870,17 @@
         }
     },
     "landingProReferral": {
+        "title1": "Constant Pro will live in",
+        "desc1": "This is your unique referral link. Share it via email, Facebook, or Twitter - and increase your interest earnings with every friend that signs up.",
+        "title2": "Get better rates with every friend that sign up",
+        "title3": "Your rewards so far",
+        "title4": "You've earned this",
+        "title5": "FRIENDS THAT SIGNED UP",
+        "title6": "INVITE MORE 7 FRIENDS TO ARCHIEVE",
+        "title7": "INVITE MORE {num} FRIENDS TO ARCHIEVE",
+        "title8": "INVITE MORE PEERS, MORE REWARDS",
+        "investment": "On investment",
+        "loans": "On loans",
         "loginRequired": "Please log in to your account.",
         "shares": {
             "title": "Share your unique referral link",
@@ -4877,10 +4889,20 @@
             "gg": "Share on Google",
             "shareFbSuccess": "Share referral link success."
         },
+        "levels": {
+            "l0": "<p>Free transaction fees for the first 30 days</p>",
+            "l1": "\n        <p>Free transaction fees for the first 30 days</p>\n        <p>+1% interest for every investment made in the first 30 days</p>\n      ",
+            "l2": "\n      <p>Free transaction fees for the first 30 days</p>\n      <p>+2% interest for every investment made in the first 30 days</p>\n      <p>-2% interest for every loan obtained in the first 30 days</p>\n      ",
+            "l3": "\n        <p>Free transaction fees for the first 30 days</p>\n        <p>+3% interest for every investment made in the first 30 days</p>\n        <p>-3% interest for every loan obtained in the first 30 days</p>\n      "
+        },
         "referral": {
             "placeholder": "https://myconstant.com/?ref=1AcXa2",
             "btn": "Copy",
             "copied": "Referral link copied to clipboard."
+        },
+        "table": {
+            "referral_used_date": "Date",
+            "extra_rate": "Rate (%)"
         },
         "inviteEmail": {
             "title": "Invite friends via email",
@@ -4894,6 +4916,18 @@
             "success": "Your referral code has been updated successfully",
             "failed": "Update referral code failed",
             "duplicated": "Sorry, someone has already created that referral code. Please choose another."
+        },
+        "faqs": {
+            "question1": "What are the supported cryptocurrencies?",
+            "answer1": "The treasure box is supporting BTC, ETH and CONST",
+            "question2": "Do I need a minimum deposit?",
+            "answer2": "None at all. You can invest as much or as little as you like. ",
+            "question3": "What is the interest rate?",
+            "answer3": "\n        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to our FDIC-insured escrow account, and wait for a match. This is usually very quick if you’ve set market rates. </p>\n        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>\n      ",
+            "question4": "How much is the monthly earning?",
+            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>\n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
+            "question5": "Who can participate?",
+            "answer5": "When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds."
         }
     },
     "getPrices": {

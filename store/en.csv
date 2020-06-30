@@ -314,7 +314,7 @@
 %%%.me.navigation.referral%%%,"Referral"
 %%%.me.navigation.personalInfo%%%,"About you"
 %%%.me.navigation.myTransactions%%%,"Account activity"
-%%%.me.navigation.overView%%%,"Over View"
+%%%.me.navigation.overView%%%,"Overview"
 %%%.me.navigation.cryptoLoanHistory%%%,"My Crypto Loans"
 %%%.me.navigation.viewLoanDetail%%%,"View loan detail here"
 %%%.me.navigation.viewConstantWallet%%%,"View constant wallet here"
@@ -2225,6 +2225,85 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         "
 %%%.home.constantLoan.faqs.question10%%%,"What happens if I repay late?"
 %%%.home.constantLoan.faqs.answer10%%%,"The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due."
+%%%.home.constantLoan.faqs.question11%%%,"Is it still possible to take out a single-collateral loan?"
+%%%.home.constantLoan.faqs.answer11%%%,"
+        <p>
+        Yes, after you take out a loan you can click on the Isolate button in the loan menu on your accounts page to switch to a single-collateral loan. To switch you must meet the 110% minimum collateral value requirement for the crypto. However, you cannot collateralize with more crypto than your collateral rate allows (more on that below).
+        </p>
+        "
+%%%.home.constantLoan.faqs.question12%%%,"Is repayment any different with multi-collateral credit lines?"
+%%%.home.constantLoan.faqs.answer12%%%,"
+        <p>
+        Nope! You must still repay each loan individually. However, crypto selected for collateral repayments will still follow a 24-hour trading volume priority based on what you have available.
+        </p>
+        "
+%%%.home.constantLoan.faqs.question13%%%,"I can’t find where to choose multiple collaterals for my borrow order"
+%%%.home.constantLoan.faqs.answer13%%%,"
+        <p>
+        If you take out a crypto-backed loan or buy new cryptos using Crypto Credit, you’ll only see the option to use one collateral. To borrow with multiple collaterals you must start on <a href=""https://www.myconstant.com/pro-lending"" target=""_blank"" class=""underline"">our pro page.</a>
+        </p>
+        "
+%%%.home.constantLoan.faqs.question14%%%,"Why do you prioritize collaterals based on 24-hour exchange volume?"
+%%%.home.constantLoan.faqs.answer14%%%,"
+        <p>
+        Loan security is our top priority on Constant. In the unfortunate case of liquidation, we always want to make sure we can sell collateral as fast as possible to cover the loan value.
+        </p>
+        "
+%%%.home.constantLoan.faqs.question15%%%,"Will auto top-up add collateral to my loan based on 24-hour exchange volume?"
+%%%.home.constantLoan.faqs.answer15%%%,"
+        <p>
+        Yes.
+        </p>
+        "
+%%%.home.constantLoan.faqs.question16%%%,"Can I choose to auto top-up some loans and manually top-up others?"
+%%%.home.constantLoan.faqs.answer16%%%,"
+        <p>
+        No. You can only toggle auto top-up on or off for all multi-collateral loans at the same time. However, you can choose this setting separately for each isolated (single-collateral) loan.
+        </p>
+        "
+%%%.home.constantLoan.faqs.question17%%%,"Will I still receive notifications to repay individual multi-collateral loans on schedule?"
+%%%.home.constantLoan.faqs.answer17%%%,"
+        <p>
+        Yes.
+        </p>
+        "
+%%%.home.constantLoan.faqs.question18%%%,"Do you have a feature for paying all loans in one term period at the same time?"
+%%%.home.constantLoan.faqs.answer18%%%,"
+        <p>
+        Right now you still must pay off all of your loans individually.
+        </p>
+        "
+%%%.home.constantLoan.faqs.question19%%%,"If I have multiple active loans, which collaterals do I get back when I repay my earliest loans?"
+%%%.home.constantLoan.faqs.answer19%%%,"
+        <p>
+        If you still have active loans after repaying, your collateral won’t be released back to your available balance. Instead, it will go into your collateral balance for multi-collateral. If you want to remove collateral from this balance, you’ll need to recall excess from the overview screen and choose the crypto type and amount you want.
+        </p>
+        "
+%%%.home.constantLoan.faqs.question20%%%,"I can’t recall excess on my crypto even though my collateral value is over 110%."
+%%%.home.constantLoan.faqs.answer20%%%,"
+        <p>
+        Collateral value is only used to determine loan liquidation. It is calculated by:
+        </p>
+        <p class=""font-italic"">
+        (number of coins * value)+”repeat for each coin”/(loan value + up-to-date interest + matching fee)
+        </p>
+        <p>
+        We calculate how much collateral you withdraw through recall excess based on the collateral rate. For more information on the collateral rate see below.
+        </p>
+        "
+%%%.home.constantLoan.faqs.question21%%%,"What is the collateral rate and why is it different from the collateral value?"
+%%%.home.constantLoan.faqs.answer21%%%,"
+        <p>
+        Collateral value only takes into account the monetary value of your collateral in your collateral balance compared to your loan amount. We base liquidation off collateral value. Your collateral rate is a more in-depth number that takes into account the LTV ratios required for different cryptocurrencies. We use this number to determine how much you can withdraw with recall excess as well as the maximum amount of crypto you can place in an Isolated loan.
+        </p>
+        <p>
+        You can find your collateral rate through this equation:
+        </p>
+        <p class=""font-italic"">
+        x = (number of coins)*(coin value)*(LTV)+“repeat for each coin”<br />
+        Collateral rate = (x/(loan value at first + up-to-date interest + matching fees))*100
+        </p>
+        "
 %%%.home.constantLoan.intro.content%%%,"
         <p>Borrow the way you want</p>
         <p class=""h1"">Set your own rates.</p>
@@ -2780,85 +2859,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.constantC2CLoan.faqs.question14%%%,"What happens if I repay late?"
 %%%.home.constantC2CLoan.faqs.answer14%%%,"
         The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due.
-        "
-%%%.home.constantC2CLoan.faqs.question15%%%,"Is it still possible to take out a single-collateral loan?"
-%%%.home.constantC2CLoan.faqs.answer15%%%,"
-        <p>
-        Yes, after you take out a loan you can click on the Isolate button in the loan menu on your accounts page to switch to a single-collateral loan. To switch you must meet the 110% minimum collateral value requirement for the crypto. However, you cannot collateralize with more crypto than your collateral rate allows (more on that below).
-        </p>
-        "
-%%%.home.constantC2CLoan.faqs.question16%%%,"Is repayment any different with multi-collateral credit lines?"
-%%%.home.constantC2CLoan.faqs.answer16%%%,"
-        <p>
-        Nope! You must still repay each loan individually. However, crypto selected for collateral repayments will still follow a 24-hour trading volume priority based on what you have available.
-        </p>
-        "
-%%%.home.constantC2CLoan.faqs.question17%%%,"I can’t find where to choose multiple collaterals for my borrow order"
-%%%.home.constantC2CLoan.faqs.answer17%%%,"
-        <p>
-        If you take out a crypto-backed loan or buy new cryptos using Crypto Credit, you’ll only see the option to use one collateral. To borrow with multiple collaterals you must start on <a href=""https://www.myconstant.com/pro-lending"" target=""_blank"" class=""underline"">our pro page.</a>
-        </p>
-        "
-%%%.home.constantC2CLoan.faqs.question18%%%,"Why do you prioritize collaterals based on 24-hour exchange volume?"
-%%%.home.constantC2CLoan.faqs.answer18%%%,"
-        <p>
-        Loan security is our top priority on Constant. In the unfortunate case of liquidation, we always want to make sure we can sell collateral as fast as possible to cover the loan value.
-        </p>
-        "
-%%%.home.constantC2CLoan.faqs.question19%%%,"Will auto top-up add collateral to my loan based on 24-hour exchange volume?"
-%%%.home.constantC2CLoan.faqs.answer19%%%,"
-        <p>
-        Yes.
-        </p>
-        "
-%%%.home.constantC2CLoan.faqs.question20%%%,"Can I choose to auto top-up some loans and manually top-up others?"
-%%%.home.constantC2CLoan.faqs.answer20%%%,"
-        <p>
-        No. You can only toggle auto top-up on or off for all multi-collateral loans at the same time. However, you can choose this setting separately for each isolated (single-collateral) loan.
-        </p>
-        "
-%%%.home.constantC2CLoan.faqs.question21%%%,"Will I still receive notifications to repay individual multi-collateral loans on schedule?"
-%%%.home.constantC2CLoan.faqs.answer21%%%,"
-        <p>
-        Yes.
-        </p>
-        "
-%%%.home.constantC2CLoan.faqs.question22%%%,"Do you have a feature for paying all loans in one term period at the same time?"
-%%%.home.constantC2CLoan.faqs.answer22%%%,"
-        <p>
-        Right now you still must pay off all of your loans individually.
-        </p>
-        "
-%%%.home.constantC2CLoan.faqs.question23%%%,"If I have multiple active loans, which collaterals do I get back when I repay my earliest loans?"
-%%%.home.constantC2CLoan.faqs.answer23%%%,"
-        <p>
-        If you still have active loans after repaying, your collateral won’t be released back to your available balance. Instead, it will go into your collateral balance for multi-collateral. If you want to remove collateral from this balance, you’ll need to recall excess from the overview screen and choose the crypto type and amount you want.
-        </p>
-        "
-%%%.home.constantC2CLoan.faqs.question24%%%,"I can’t recall excess on my crypto even though my collateral value is over 110%."
-%%%.home.constantC2CLoan.faqs.answer24%%%,"
-        <p>
-        Collateral value is only used to determine loan liquidation. It is calculated by:
-        </p>
-        <p class=""font-italic"">
-        (number of coins * value)+”repeat for each coin”/(loan value + up-to-date interest + matching fee)
-        </p>
-        <p>
-        We calculate how much collateral you withdraw through recall excess based on the collateral rate. For more information on the collateral rate see below.
-        </p>
-        "
-%%%.home.constantC2CLoan.faqs.question25%%%,"What is the collateral rate and why is it different from the collateral value?"
-%%%.home.constantC2CLoan.faqs.answer25%%%,"
-        <p>
-        Collateral value only takes into account the monetary value of your collateral in your collateral balance compared to your loan amount. We base liquidation off collateral value. Your collateral rate is a more in-depth number that takes into account the LTV ratios required for different cryptocurrencies. We use this number to determine how much you can withdraw with recall excess as well as the maximum amount of crypto you can place in an Isolated loan.
-        </p>
-        <p>
-        You can find your collateral rate through this equation:
-        </p>
-        <p class=""font-italic"">
-        x = (number of coins)*(coin value)*(LTV)+“repeat for each coin”<br />
-        Collateral rate = (x/(loan value at first + up-to-date interest + matching fees))*100
-        </p>
         "
 %%%.home.constantC2CLoan.intro.content%%%,"
         <p>Fast and easy crypto credit</p>
@@ -5199,6 +5199,9 @@ Exchange margin accounts typically only use the price on that exchange, so you c
     <div>All times shown below are maximum estimates. In all cases, the team strives for ASAP.</div>
     <div>While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</div>
     "
+%%%.getPrices.loanOrigiantorNote%%%,"
+    <p class=""title"">* You'll start earning interest once your funds arrive in the Loan Originator's bank account, not when funds are deducted from your account.</p>
+    "
 %%%.getPrices.collateralIssue%%%,"
     <p class=""title"">* About collateral issue, please ping <a href=""https://t.me/andy_9210"" className=""underline bold"" target=""_blank""><strong>@andy_9210</strong></a> on telegram to get direct support.</p>
     "
@@ -5233,6 +5236,8 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.getPrices.depositFiat.head2%%%,"Business hours (9am-6pm GMT +7, Mon-Fri)"
 %%%.getPrices.depositFiat.head3%%%,"Outside business hours"
 %%%.getPrices.depositFiat.head4%%%,"Fee"
+%%%.getPrices.loanOriginator.head1%%%,"Loan Originators"
+%%%.getPrices.loanOriginator.head2%%%," "
 %%%.getPrices.depositCrypto.head1%%%,"Stablecoins"
 %%%.getPrices.depositCrypto.head2%%%,"Business hours (9am-6pm GMT +7, Mon-Fri)"
 %%%.getPrices.depositCrypto.head3%%%,"Outside business hours"
@@ -5250,9 +5255,9 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.getPrices.withdrawCollateral.head1%%%,"Collateral withdrawal"
 %%%.getPrices.withdrawCollateral.head2%%%,"Funds received in your wallet"
 %%%.getPrices.withdrawCollateral.head3%%%,"Fee"
-%%%.getPrices.withdrawCollateralData.title1%%%,"ERC20 collaterals <strong>not</strong> deposited in BitGo / BTC, ETH, BEP2, TOMO, BEAM, XZC: <$10,000"
-%%%.getPrices.withdrawCollateralData.title2%%%,"ERC20 collaterals <strong>not</strong> deposited in BitGo / BTC, ETH, BEP2, TOMO, BEAM, XZC: >$10,000"
-%%%.getPrices.withdrawCollateralData.title3%%%,"<a href=""https://docs.google.com/spreadsheets/d/1VIiNXdg7LTJXuUHhtYw2nEH14q4d9rUjW_9QH2zIyzU/edit#gid=0"" target=""_blank"" class=""underline""><strong>ERC20 collaterals deposited in BitGo</strong></a> / Others"
+%%%.getPrices.withdrawCollateralData.title1%%%,"BTC, ETH, ERC20, BEP2, TOMO, ZXC: <$10,000"
+%%%.getPrices.withdrawCollateralData.title2%%%,"BTC, ETH, ERC20, BEP2, TOMO, ZXC: >$10.000"
+%%%.getPrices.withdrawCollateralData.title3%%%,"Others"
 %%%.getPrices.unstaking.head1%%%,"Unstaking"
 %%%.getPrices.unstaking.head2%%%,"Tokens received in your balance"
 %%%.getPrices.matchingFee.head1%%%,"Matching fee"
@@ -6805,15 +6810,17 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.loanOriginators.landing.why.4.desc%%%,"Minimize risk with Constant Ratings and the loan originator’s buy-back guarantee behind every loan."
 %%%.loanOriginators.landing.why.title%%%,"Why invest in Loan Originator loans?"
 %%%.loanOriginators.landing.what.title%%%,"What is a Loan Originator loan?"
-%%%.loanOriginators.landing.what.desc1%%%,"
-        <p>Before you start exploring Loan Originator, let’s quickly review what a Loan Originator investment is.</p>
-        <p>A Loan Originator investment is a <strong>Claim Right</strong> against a loan issued by our loan originator partner. Instead of buying the loan with all the rights and ownership of collateral (if any), you’re buying a right to receive payments from an existing loan.</p>
-        <p>You buy this claim right from the loan originator by entering into an <strong>Assignment Agreement</strong>, which governs the terms of your investment.</p>
+%%%.loanOriginators.landing.what.claimRightDesc%%%,"A Claim or Claim Right refers to the right to receive payments from a Loan. A Claim can be against 100% of the Loan or a portion of the Loan. The sale and purchase of a Claim is executed by an Assignment Agreement, which specifies the amount of the Claim and the conditions upon which it is acquired. An Assignment Agreement stipulates all terms of the deal, including the principal and maturity date of the Claim, as well as the applicable interest rate and payment schedule."
+%%%.loanOriginators.landing.what.assignmentAgreementDesc%%%,"
+        <p>A Claim refers to the right to receive payments from a Loan. A Claim can be against 100% of the Loan or a portion of the Loan. The sale and purchase of a Claim is executed by an Assignment Agreement, which specifies the amount of the Claim and the conditions upon which it is acquired. An Assignment Agreement stipulates all terms of the deal, including the principal and maturity date of the Claim, as well as the applicable interest rate and payment schedule.</p>
+        <p>An agreement for claim assignment on the Primary Market on the Constant Platform will be formed between the Loan Originator as the Assignor and the Constant User as the Assignee. In a Secondary Market transaction on the Constant Platform, the Assignment Agreement is concluded among the Constant Users as the Assignor and the Assignee.</p>
+        <p>On Constant Marketplace, the Assignment Agreement is concluded remotely, i.e. without signatures of the parties, but has full legal force.The Assignment Agreement is deemed to be concluded and enters into legal force from the moment when the Assignee (the Constant User) has confirmed the acquisition of the Claim right in its Constant User profile.</p>        
         "
-%%%.loanOriginators.landing.what.desc2%%%,"
-        <p>The <strong>Buy-Back Guarantee</strong> is an agreement that the loan originator will buy your claim right back if the underlying loan is late by 60 days or more. </p>
-        <p>The Buy-Back Guarantee depends on the Loan Originator’s financial capability to honor it. We give each loan originator a <strong>Constant Rating</strong> to help you assess the quality of the loan originator and their loans, but as this is just a guide, always use caution and diversify.</p>
-        <p>You can find out more about Loan Originator investments on <a href=""https://www.myconstant.com/blog/"" className=""underline"" style=""color: #fff"" target=""_blank"">our blog  <img src='{image}'/></a></p>
+%%%.loanOriginators.landing.what.buyBackGuaranteeDesc%%%,"
+        <p>A buy-back guarantee is a guarantee issued by the loan originator to the investor for a particular loan, where the loan orginator promises to rebuy the loan from the investor if that particular loan is delayed by more than 60 days. The buy-back guarantee is given at an individual loan level and is marked with the symbol of a shield. If a loan with a buy-back guarantee is delayed by more than 60 days, the loan originator will buy back the loan from the investor at the nominal value of outstanding principal plus accrued interest. A buy-back guarantee is only as good as the loan originator's financial capability to honor such guarantee at the time of a buy-back event being triggered. A buy-back guarantee is NOT a guarantee from the Constant marketplace and its associates.</p>
+        "
+%%%.loanOriginators.landing.what.constantRatingDesc%%%,"
+        <p>Constant assigns ratings for loan originators that offer loans on the Constant marketplace. Constant Ratings range from ""A+"" to ""C-"" reflecting the creditworthiness/counterparty risks of the loan originators. An ""A+"" rating represents the highest creditworthiness while a ""C-"" rating is the lowest allowable creditworthiness rating for a loan to be listed on the Constant marketplace.</p>
         "
 %%%.loanOriginators.landing.how.title%%%,"How it works"
 %%%.loanOriginators.landing.how.title1%%%,"Deposit funds"

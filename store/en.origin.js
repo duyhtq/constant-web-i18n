@@ -2402,7 +2402,29 @@
                 "question9": "%%%.home.constantLoan.faqs.question9%%%",
                 "answer9": "%%%.home.constantLoan.faqs.answer9%%%",
                 "question10": "%%%.home.constantLoan.faqs.question10%%%",
-                "answer10": "%%%.home.constantLoan.faqs.answer10%%%"
+                "answer10": "%%%.home.constantLoan.faqs.answer10%%%",
+                "question11": "%%%.home.constantLoan.faqs.question11%%%",
+                "answer11": "%%%.home.constantLoan.faqs.answer11%%%",
+                "question12": "%%%.home.constantLoan.faqs.question12%%%",
+                "answer12": "%%%.home.constantLoan.faqs.answer12%%%",
+                "question13": "%%%.home.constantLoan.faqs.question13%%%",
+                "answer13": "%%%.home.constantLoan.faqs.answer13%%%",
+                "question14": "%%%.home.constantLoan.faqs.question14%%%",
+                "answer14": "%%%.home.constantLoan.faqs.answer14%%%",
+                "question15": "%%%.home.constantLoan.faqs.question15%%%",
+                "answer15": "%%%.home.constantLoan.faqs.answer15%%%",
+                "question16": "%%%.home.constantLoan.faqs.question16%%%",
+                "answer16": "%%%.home.constantLoan.faqs.answer16%%%",
+                "question17": "%%%.home.constantLoan.faqs.question17%%%",
+                "answer17": "%%%.home.constantLoan.faqs.answer17%%%",
+                "question18": "%%%.home.constantLoan.faqs.question18%%%",
+                "answer18": "%%%.home.constantLoan.faqs.answer18%%%",
+                "question19": "%%%.home.constantLoan.faqs.question19%%%",
+                "answer19": "%%%.home.constantLoan.faqs.answer19%%%",
+                "question20": "%%%.home.constantLoan.faqs.question20%%%",
+                "answer20": "%%%.home.constantLoan.faqs.answer20%%%",
+                "question21": "%%%.home.constantLoan.faqs.question21%%%",
+                "answer21": "%%%.home.constantLoan.faqs.answer21%%%"
             },
             "intro": {
                 "content": "%%%.home.constantLoan.intro.content%%%",
@@ -2826,29 +2848,7 @@
                 "question13": "%%%.home.constantC2CLoan.faqs.question13%%%",
                 "answer13": "%%%.home.constantC2CLoan.faqs.answer13%%%",
                 "question14": "%%%.home.constantC2CLoan.faqs.question14%%%",
-                "answer14": "%%%.home.constantC2CLoan.faqs.answer14%%%",
-                "question15": "%%%.home.constantC2CLoan.faqs.question15%%%",
-                "answer15": "%%%.home.constantC2CLoan.faqs.answer15%%%",
-                "question16": "%%%.home.constantC2CLoan.faqs.question16%%%",
-                "answer16": "%%%.home.constantC2CLoan.faqs.answer16%%%",
-                "question17": "%%%.home.constantC2CLoan.faqs.question17%%%",
-                "answer17": "%%%.home.constantC2CLoan.faqs.answer17%%%",
-                "question18": "%%%.home.constantC2CLoan.faqs.question18%%%",
-                "answer18": "%%%.home.constantC2CLoan.faqs.answer18%%%",
-                "question19": "%%%.home.constantC2CLoan.faqs.question19%%%",
-                "answer19": "%%%.home.constantC2CLoan.faqs.answer19%%%",
-                "question20": "%%%.home.constantC2CLoan.faqs.question20%%%",
-                "answer20": "%%%.home.constantC2CLoan.faqs.answer20%%%",
-                "question21": "%%%.home.constantC2CLoan.faqs.question21%%%",
-                "answer21": "%%%.home.constantC2CLoan.faqs.answer21%%%",
-                "question22": "%%%.home.constantC2CLoan.faqs.question22%%%",
-                "answer22": "%%%.home.constantC2CLoan.faqs.answer22%%%",
-                "question23": "%%%.home.constantC2CLoan.faqs.question23%%%",
-                "answer23": "%%%.home.constantC2CLoan.faqs.answer23%%%",
-                "question24": "%%%.home.constantC2CLoan.faqs.question24%%%",
-                "answer24": "%%%.home.constantC2CLoan.faqs.answer24%%%",
-                "question25": "%%%.home.constantC2CLoan.faqs.question25%%%",
-                "answer25": "%%%.home.constantC2CLoan.faqs.answer25%%%"
+                "answer14": "%%%.home.constantC2CLoan.faqs.answer14%%%"
             },
             "intro": {
                 "content": "%%%.home.constantC2CLoan.intro.content%%%",
@@ -4955,6 +4955,7 @@
     "getPrices": {
         "title": "%%%.getPrices.title%%%",
         "desc": "%%%.getPrices.desc%%%",
+        "loanOrigiantorNote": "%%%.getPrices.loanOrigiantorNote%%%",
         "collateralIssue": "%%%.getPrices.collateralIssue%%%",
         "withdrawFiatNote": "%%%.getPrices.withdrawFiatNote%%%",
         "withdrawCryptoNote": "%%%.getPrices.withdrawCryptoNote%%%",
@@ -4967,6 +4968,10 @@
             "head2": "%%%.getPrices.depositFiat.head2%%%",
             "head3": "%%%.getPrices.depositFiat.head3%%%",
             "head4": "%%%.getPrices.depositFiat.head4%%%"
+        },
+        "loanOriginator": {
+            "head1": "%%%.getPrices.loanOriginator.head1%%%",
+            "head2": "%%%.getPrices.loanOriginator.head2%%%"
         },
         "depositCrypto": {
             "head1": "%%%.getPrices.depositCrypto.head1%%%",
@@ -6928,8 +6933,10 @@
             },
             "what": {
                 "title": "%%%.loanOriginators.landing.what.title%%%",
-                "desc1": "%%%.loanOriginators.landing.what.desc1%%%",
-                "desc2": "%%%.loanOriginators.landing.what.desc2%%%"
+                "claimRightDesc": "%%%.loanOriginators.landing.what.claimRightDesc%%%",
+                "assignmentAgreementDesc": "%%%.loanOriginators.landing.what.assignmentAgreementDesc%%%",
+                "buyBackGuaranteeDesc": "%%%.loanOriginators.landing.what.buyBackGuaranteeDesc%%%",
+                "constantRatingDesc": "%%%.loanOriginators.landing.what.constantRatingDesc%%%"
             },
             "how": {
                 "title": "%%%.loanOriginators.landing.how.title%%%",

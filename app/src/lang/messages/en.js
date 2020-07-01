@@ -2059,6 +2059,20 @@ export default {
         <p>Create your free account now and get <strong>a $10 bonus</strong> when you verify your ID.</p>
       `,
     },
+    earnABetterRate: {
+      title:`
+        <p class="header">Isn’t it time you got a better rate?</p>
+        <p>Earn up to 11% APR investing in loans from the top loan originators in the world. Choose from 100+ business and consumer loans, all with a buy-back guarantee from the loan originator in case of borrower default.</p>
+        <p>Start investing from just $50.</p>
+      `,
+      intro: {
+        desc: {
+          1: 'Vetted loan originators',
+          2: 'Greater choice of loans',
+          3: 'Zero fees',
+        }
+      }
+    },
     howItWorks: {
       title: 'How It Works',
       data: {
@@ -6428,7 +6442,13 @@ While Constant processes your deposits and withdrawals free of charge, transacti
             referNoteDesc: 'To streamline the deposit process, please include this reference number when sending your money using PayPal.',
           },
           '-6': {
-            referNoteDesc: 'To streamline the deposit process, please include this reference number when making the bank transfer.',
+            desc: `
+            <p class="title"><strong>Important info for Prime Trust transfers</strong></p>
+            <p class="desc">Prime Trust only accepts wire transfers, not ACH. Make sure you complete a wire transfer from your personal bank account or we might be unable to locate your funds.</p>
+            <p class="desc">For more information on transferring to Prime Trust, <a href="https://blog.myconstant.com/how-to-wire-your-money-to-constant-via-prime-trust/" target="_blank" class="underline">check out our blog</a>. It’s vital you include your reference number when you wire the money so we can match it to your account.</p>
+            <p class="desc">When you have made your transfer, please send an email with your wire receipt to <a href="mailto:hello@myconstant.com" target="_blank" class="underline">hello@myconstant.com</a> to help us speed up the process. Your wire receipt, sometimes called a transaction confirmation, holds all the details of the transfer and might be emailed to you or be made available through online banking.</p>
+            `,
+            referNoteDesc: 'To receive your deposit you MUST include this reference number when your wire your funds from your bank.',
           },
         },
         zelle: `
@@ -9233,6 +9253,12 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         assignmentAgreement: 'Assignment agreement:',
         yourInvestAmount: 'Your investment amount:',
         totalAmount: 'Total amount:',
+        desc: `
+        <ul>
+        <li>Once you click Confirm your investment will be sent to our loan origination partner. Please allow <strong>3-10  business days</strong> for funds to be transferred.</li>
+        <li>Once funds have been transferred successfully to our loan origination partner, your loan status will change to <strong>Active</strong> and you will start earning interest.</li>
+        </ul>
+        `
       },
     },
     autoInvest: {
@@ -9431,6 +9457,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       loanId: 'Loan ID',
       investmentId: 'Investment ID',
       referenceCode: 'Loan Match Reference Code',
+      investDate: 'Invest Date',
+      investor: 'Investor',
       loanAmount: 'Loan Amount Invested by the Investor',
       total: 'Total',
       close: 'Close',

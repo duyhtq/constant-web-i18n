@@ -1816,6 +1816,16 @@
         "investEasy": {
             "title": "%%%.landingPage.investEasy.title%%%"
         },
+        "earnABetterRate": {
+            "title": "%%%.landingPage.earnABetterRate.title%%%",
+            "intro": {
+                "desc": {
+                    "1": "%%%.landingPage.earnABetterRate.intro.desc.1%%%",
+                    "2": "%%%.landingPage.earnABetterRate.intro.desc.2%%%",
+                    "3": "%%%.landingPage.earnABetterRate.intro.desc.3%%%"
+                }
+            }
+        },
         "howItWorks": {
             "title": "%%%.landingPage.howItWorks.title%%%",
             "data": {
@@ -4782,6 +4792,7 @@
                         "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.-5.referNoteDesc%%%"
                     },
                     "-6": {
+                        "desc": "%%%.home1.lendingSection.confirm.paymentMethods.-6.desc%%%",
                         "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.-6.referNoteDesc%%%"
                     }
                 },
@@ -7099,7 +7110,8 @@
                 "cancel": "%%%.loanOriginators.manualInvest.summary.cancel%%%",
                 "assignmentAgreement": "%%%.loanOriginators.manualInvest.summary.assignmentAgreement%%%",
                 "yourInvestAmount": "%%%.loanOriginators.manualInvest.summary.yourInvestAmount%%%",
-                "totalAmount": "%%%.loanOriginators.manualInvest.summary.totalAmount%%%"
+                "totalAmount": "%%%.loanOriginators.manualInvest.summary.totalAmount%%%",
+                "desc": "%%%.loanOriginators.manualInvest.summary.desc%%%"
             }
         },
         "autoInvest": {
@@ -7263,6 +7275,8 @@
             "loanId": "%%%.loanOriginators.loanDisbursementDetail.loanId%%%",
             "investmentId": "%%%.loanOriginators.loanDisbursementDetail.investmentId%%%",
             "referenceCode": "%%%.loanOriginators.loanDisbursementDetail.referenceCode%%%",
+            "investDate": "%%%.loanOriginators.loanDisbursementDetail.investDate%%%",
+            "investor": "%%%.loanOriginators.loanDisbursementDetail.investor%%%",
             "loanAmount": "%%%.loanOriginators.loanDisbursementDetail.loanAmount%%%",
             "total": "%%%.loanOriginators.loanDisbursementDetail.total%%%",
             "close": "%%%.loanOriginators.loanDisbursementDetail.close%%%"

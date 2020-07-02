@@ -4336,7 +4336,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.exchangeInputSellForm.countryNotSupport%%%,"Your country is not supported at the moment. Our support team will get in touch with you via email."
 %%%.exchangeInputSellForm.validateMaxInput%%%,"Please make sure your balance is sufficient."
 %%%.exchangeInputSellForm.validateMaxInputBalanceZero%%%,"Please make sure your balance is sufficient."
-%%%.exchangeInputSellForm.suggestOtherPayment%%%,"Minimum withdrawal by bank transfer is ${minDirect}. Please use Zelle or PayPal instead (it's much faster, too)."
+%%%.exchangeInputSellForm.suggestOtherPayment%%%,"Minimum withdrawal by bank transfer is ${minDirect}. Please use Zelle instead (it's much faster, too)."
 %%%.exchangeInputBuyTrialForm.title%%%,"<h6>We’re giving you a 1000 USD free initial investment. Just so you can see how it works. At the end of the trial, you keep all the returns.</h6>"
 %%%.exchangeInputBuyTrialForm.highlightText%%%,"you keep all the interest."
 %%%.exchangeInputBuyTrialForm.trialLeft%%%,"{number} trials left."
@@ -6813,6 +6813,16 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.loanOriginators.landing.intro.desc.1%%%,"Vetted loan originators"
 %%%.loanOriginators.landing.intro.desc.2%%%,"Greater choice of loans"
 %%%.loanOriginators.landing.intro.desc.3%%%,"Zero fees"
+%%%.loanOriginators.landing.ourPress.1%%%,"
+        <p>
+        Based in Windsor, England, Cubefunder has lent over $16,000,000 (equivalent) to businesses throughout the UK, helping fund expansion, refits, purchase orders, stock, and more. With interest paid monthly, Cubefunder offers fast, reliable returns on your investments, paying up to 9.5% APR on terms from three months to four years.
+        </p>
+        "
+%%%.loanOriginators.landing.ourPress.2%%%,"
+        <p>
+        Headquartered in St. Petersburg, Dozarplati is the seventh largest loan issuer in Russia with offices in 14 cities and over 2.8 million repeat borrowers. It offers unsecured loans of up to $1,400 to people in Russia and Kenya, with terms from one week up to one year, easing financial pressure and providing emergency funds between paychecks.
+        </p>
+        "
 %%%.loanOriginators.landing.ourPress.title%%%,"Our Partners"
 %%%.loanOriginators.landing.why.1.caption%%%,"Higher returns"
 %%%.loanOriginators.landing.why.1.desc%%%,"Access 1,000s of borrowers from loan originators around the world to earn up to 11% APR."

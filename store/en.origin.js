@@ -6921,6 +6921,8 @@
                 }
             },
             "ourPress": {
+                "1": "%%%.loanOriginators.landing.ourPress.1%%%",
+                "2": "%%%.loanOriginators.landing.ourPress.2%%%",
                 "title": "%%%.loanOriginators.landing.ourPress.title%%%"
             },
             "why": {

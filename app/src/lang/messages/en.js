@@ -1718,7 +1718,7 @@ export default {
           deleteSavingSuccess: 'You successfully deleted investment',
           deleteSavingFailed: 'Failed To delete Invest Saving',
           depositSavingSuccess: 'Thanks! Your investment order was successful. Your term has begun and you\'ve started earning interest.',
-          depositSavingFailed: 'Failed To Invest Saving',
+          depositSavingFailed: 'Failed To Invest Saving. Please refresh your browser and try again.',
           stopSavingSuccess: 'You ended your term deposit. Withdraw your funds anytime.',
           stopSavingFailed: 'End your term failed.',
           stopSellingInvestmentSuccess: 'Thanks – we’ve cancelled your sell order and the investment remains yours.',
@@ -6272,7 +6272,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
           'Send email failedSorry, we could not send your verification email. Please make sure your email address is valid and try again.',
         trialFailed: 'Submit trial was failed',
         normalSuccess: 'Submit normal success',
-        normalFailed: 'Submit normal failed',
+        normalFailed: 'Submit normal failed. Please refresh your browser and try again.',
         trialSuccess:
           'Thanks! We\'re connecting you with a borrower glad to pay your rates. We\'ll send you an email when you\'re matched.',
         zelleSuccess: 'Thanks! Please proceed with the transfer.',
@@ -6918,7 +6918,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       amountRequired: 'Amount is required to make an investment!',
       interestRequired: 'Interest is required to make an investment!',
       matchedSuccess: 'Thanks! Your investment order was successful. Your term has begun and you\'ve started earning interest. To review your investments, please visit your Accounts page.',
-      matchedFailed: 'Your investment had been matched unsuccessfully, please try again.',
+      matchedFailed: 'Your investment had been matched unsuccessfully. Please refresh your browser and try again.',
       matchedSecondaryInvestmentSuccess: 'Done! You\'ve bought a new investment. To track it, please visit the Secondary Market tab on your Accounts page.',
       deposit: {
         title: 'Investments deposit',
@@ -6980,7 +6980,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         notEnoughBalance: 'Your Available Credit is {amount} USD. Please deposit sufficient collateral to credit your requested amount',
         generateCollateralAddressFail: 'Can\'t generate collateral address. Please try again!',
         maxOfCollateralHolding: 'Please try a different coin. To manage risk, the platform can hold only 10% of any coin\'s 24h trading volume.',
-        error: 'OH! something went wrong! Please try again'
+        error: 'OH! something went wrong! Please refresh your browser and try again.'
       }
     },
     borrowC2CBooking: {
@@ -7308,7 +7308,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     maxValueAmount: 'You can\'t input amount greater than {max}',
     requiredAmount: 'Amount is required',
     makeStakingSuccess: 'Your staking was created successfully',
-    makeStakingFailed: 'Something went wrong. Please try again.',
+    makeStakingFailed: 'Something went wrong. Please refresh your browser and try again.',
     cancel: 'Cancel',
     starStaking: 'Create staking',
     stakingFromTitle: 'Start staking',

@@ -1520,7 +1520,7 @@
                     "deleteSavingSuccess": "Investment order deleted",
                     "deleteSavingFailed": "Failed To delete Invest Saving",
                     "depositSavingSuccess": "Thanks! Your investment order was successful. Your term has begun and you've started earning interest.",
-                    "depositSavingFailed": "Failed To Invest Saving",
+                    "depositSavingFailed": "Failed To Invest Saving. Please refresh your browser and try again.",
                     "stopSavingSuccess": "You successfully cancelled your investment.",
                     "stopSavingFailed": "End your term failed.",
                     "stopSellingInvestmentSuccess": "Thanks – we’ve cancelled your sell order and the investment remains yours.",
@@ -4707,7 +4707,7 @@
                 "sendEmailVerifyForTrialFailed": "Send email failedSorry, we could not send your verification email. Please make sure your email address is valid and try again.",
                 "trialFailed": "Sorry, we can only offer one free trial per user.",
                 "normalSuccess": "Submit normal success",
-                "normalFailed": "Submit normal failed",
+                "normalFailed": "Submit normal failed. Please refresh your browser and try again.",
                 "trialSuccess": "Thanks! We're connecting you with a borrower glad to pay your rates. We'll send you an email when you're matched.",
                 "zelleSuccess": "Thanks! Please proceed with the transfer.",
                 "zelleFailed": "Something went wrong. Please try again.",
@@ -5139,7 +5139,7 @@
             "amountRequired": "Please enter an amount.",
             "interestRequired": "Please enter an amount.",
             "matchedSuccess": "Thanks! Your investment order was successful. Your term has begun and you've started earning interest. To review your investments, please visit your Accounts page.",
-            "matchedFailed": "Your investment had been matched unsuccessfully, please try again.",
+            "matchedFailed": "Your investment had been matched unsuccessfully. Please refresh your browser and try again.",
             "matchedSecondaryInvestmentSuccess": "Done! You've bought a new investment. To track it, please visit the Secondary Market tab on your Accounts page.",
             "deposit": {
                 "title": "Deposit investment funds",
@@ -5201,7 +5201,7 @@
                 "notEnoughBalance": "Your Available Credit is {amount} USD. Please deposit sufficient collateral to credit your requested amount",
                 "generateCollateralAddressFail": "Something went wrong. Please try again.",
                 "maxOfCollateralHolding": "Please try a different coin. To manage risk, the platform can hold only 10% of any coin's 24h trading volume.",
-                "error": "OH! something went wrong! Please try again"
+                "error": "OH! something went wrong! Please refresh your browser and try again."
             }
         },
         "borrowC2CBooking": {
@@ -5502,7 +5502,7 @@
         "maxValueAmount": "You can't stake an amount greater than {max}",
         "requiredAmount": "Amount is required",
         "makeStakingSuccess": "You have successfully staked {amount} {cryptocurrency}",
-        "makeStakingFailed": "Something went wrong. Please try again.",
+        "makeStakingFailed": "Something went wrong. Please refresh your browser and try again.",
         "cancel": "Cancel",
         "starStaking": "Start staking",
         "stakingFromTitle": "Start staking now",

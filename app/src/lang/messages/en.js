@@ -5489,7 +5489,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     countryNotSupport: 'Your country is not supported at the moment. Our support team will get in touch with you via email.',
     validateMaxInput: 'Please make sure your balance is sufficient.',
     validateMaxInputBalanceZero: 'Please make sure your balance is sufficient.',
-    suggestOtherPayment: 'Minimum withdrawal by bank transfer is ${minDirect}. Please use Zelle or PayPal instead (it\'s much faster, too).'
+    suggestOtherPayment: 'Minimum withdrawal by bank transfer is ${minDirect}. Please use Zelle instead (it\'s much faster, too).'
   },
   exchangeInputBuyTrialForm: {
     title:
@@ -8998,7 +8998,17 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         }
       },
       ourPress: {
-        title: 'Our Partners'
+        title: 'Our Partners',
+        1: `
+        <p>
+        Based in Windsor, England, Cubefunder has lent over $16,000,000 (equivalent) to businesses throughout the UK, helping fund expansion, refits, purchase orders, stock, and more. With interest paid monthly, Cubefunder offers fast, reliable returns on your investments, paying up to 9.5% APR on terms from three months to four years.
+        </p>
+        `,
+        2: `
+        <p>
+        Headquartered in St. Petersburg, Dozarplati is the seventh largest loan issuer in Russia with offices in 14 cities and over 2.8 million repeat borrowers. It offers unsecured loans of up to $1,400 to people in Russia and Kenya, with terms from one week up to one year, easing financial pressure and providing emergency funds between paychecks.
+        </p>
+        `
       },
       why: {
         title: 'Why invest in Loan Originator loans?',

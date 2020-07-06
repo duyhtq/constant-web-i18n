@@ -5488,6 +5488,16 @@
             "title": "%%%.seo.staking.title%%%",
             "keyword": "%%%.seo.staking.keyword%%%",
             "description": "%%%.seo.staking.description%%%"
+        },
+        "cryptoLend": {
+            "title": "%%%.seo.cryptoLend.title%%%",
+            "keyword": "%%%.seo.cryptoLend.keyword%%%",
+            "description": "%%%.seo.cryptoLend.description%%%"
+        },
+        "loanOriginator": {
+            "title": "%%%.seo.loanOriginator.title%%%",
+            "keyword": "%%%.seo.loanOriginator.keyword%%%",
+            "description": "%%%.seo.loanOriginator.description%%%"
         }
     },
     "staking": {

@@ -7231,19 +7231,19 @@ While Constant processes your deposits and withdrawals free of charge, transacti
   },
   seo: {
     homepage: {
-      title: 'Secured Peer-to-Peer Lending Platform for Crypto-Backed Loans - Constant',
+      title: 'Secured Peer-to-Peer Lending Platform for Crypto-Backed Loans - MyConstant',
       keyword: 'lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online',
-      description: 'Constant is one of the fastest growing P2P lending platforms in the US. Lend stablecoins and USD on your own terms and interest rates or get a crypto-backed loan. Click here to get started!',
+      description: 'MyConstant is one of the fastest growing P2P lending platforms in the US. Lend stablecoins and USD on your own terms and interest rates or get a crypto-backed loan. Get started with online investment platform now!',
     },
     invest: {
-      title: 'P2P Investing - Fully Secured Online Investment Platform - Constant',
+      title: 'P2P Investing - Fully Secured Online Investment Platform - MyConstant',
       keyword: 'constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance',
-      description: 'Enjoy up to 7% returns on your alternative investments online. All lending is backed by borrower collateral. No fees. Free withdrawals. Explore the leading P2P lending platform for investors now.',
+      description: 'Enjoy up to 7% returns on your alternative investments online. All lending is backed by borrower collateral. No fees. Explore the leading P2P lending platform for investors and get started with money online investment now!',
     },
     borrow: {
-      title: 'Get a P2P Loan Online with Low Rates Today - Constant',
+      title: 'Get a P2P Loan Online with Low Rates - Peer to peer loans - MyConstant',
       keyword: 'bitcoin loan, ethereum, margin trading, margin borrowing, p2p lending, cryptocurrency, constant project, constant p2p',
-      description: 'Get an online loan for as low as 7% APR through our fully secured peer-to-peer lending platform. No credit checks, no paperwork. Get an online loan today.',
+      description: 'Get an easy online loan for as low as 7% APR through our fully secured peer-to-peer lending platform. No credit checks, no paperwork. Borrow money online and get a loan today!',
     },
     proLending: {
       title: 'Lend money with best rate in the market, secured by collateral',
@@ -7251,32 +7251,32 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       description: 'Constant P2P lending platform accepts all types of fiat and stablecoin as investment. Earn minimum 10% on any amount. All investments are secured by FDIC insurance and borrower collateral',
     },
     flex: {
-      title: 'Enjoy 50x Better Interest than a Savings Account - Constant',
+      title: 'Enjoy 50x Better Interest than a Savings Account - MyConstant',
       keyword: 'constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance, passive income, saving account, online saving platform',
-      description: 'Join our Flex lending pool to earn 4% APY on your investments. All lending is protected by collateral, and interest is compounded and paidJoin our Flex lending pool to earn 4% APY on your investments. All lending is protected by collateral, and interest is compounded and paid every second. Withdraw anytime for free.',
+      description: 'Join our Flex lending pool to earn 4% APY on your investments. All lending is protected by collateral, and interest is compounded and paid every second. Withdraw anytime for free.',
     },
     withdraw: {
       title: 'Withdraw Fiat - Peer-to-Peer Lending Platform - Constant',
       keyword: 'lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online',
-      description: 'Withdraw fiat straight to your bank account, as often as you like, without fees.',
+      description: 'Withdraw Fiat - Peer-to-Peer Lending Platform - MyConstant',
     },
     cryptoCredit: {
-      title: 'Crypro Credit - Peer-to-Peer Lending Platform - Constant',
+      title: 'Crypro Credit - Peer-to-Peer Lending Platform - MyConstant',
       keyword: 'crypto credit',
       description: 'Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.',
     },
     sendCrypto: {
-      title: 'Withdraw Crypto - Peer-to-Peer Lending Platform - Constant',
+      title: 'Withdraw Crypto - Peer-to-Peer Lending Platform - MyConstant',
       keyword: 'lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online',
       description: 'Withdraw crypto straight to your wallet of choice. No fees. ',
     },
     aboutUs: {
-      title: 'Our Story - The Leading Fully Secured Peer-to-Peer Lending Platform',
+      title: 'Our Story - The Leading Fully Secured Peer-to-Peer Lending Platform - MyConstant',
       keyword: 'lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online',
       description: 'Learn about Constant and our mission to help you do more with your money though our fully secured peer-to-peer lending platform. Constant: an online investment platform that puts customers first.',
     },
     pricing: {
-      title: 'Pricing and Service Times - Peer-to-Peer Lending Platform - Constant',
+      title: 'Pricing and Service Times - Peer-to-Peer Lending Platform - MyConstant',
       keyword: 'lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online',
       description: 'From fees to processing times, find everything you need to know about how we handle your deposits, investments, and crypto-backed loans.',
     },
@@ -7295,6 +7295,16 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       keyword: 'lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online',
       description: 'Constant is the P2P lending platform built on P2P technology with the fastest growth rate in Asia. Lend stablecoin and fiat with your own terms and interest rates or borrow money using cryptocurrency as collateral in this defi product.Fully secured by borrower collateral and smart contracts',
     },
+    cryptoLend: {
+      title: 'Crypto Lending - Make your crypto work for you - MyConstant',
+      keyword: 'crypto lending platform, p2p cryto lending',
+      description: 'Earn 10.00% APY on BTC, ETH, and BNB on MyConstant Crypto Lending platform. Send your cryptocurrencies to our P2P crypto lending and earn interest on transactions. Withdraw anytime. No fees. Compounded every second.',
+    },
+    loanOriginator: {
+      title: 'Loan Originators - Earn up to 11% APR Investing in Loans - MyConstant',
+      keyword: 'p2p lenders,buyback guarantee',
+      description: 'My Constant works with the top loan originators in the world to give investors more choice and better returns. We offer loans with buyback guarantee to protect our investors',
+    }
   },
   staking: {
     todayRate: 'Today’s rate.',

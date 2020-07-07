@@ -149,8 +149,9 @@ export default {
     phone: {
       us: {
         title: 'US: ',
-        phone: '+1 844 201 7242',
-        time: '(9am - 5pm PST, Mon - Fri)'
+        phone: '+1 646 809 8338',
+        time: `(Mon - Fri 9am - 5pm<br />Mon - Thurs 7pm - 4am PST)`,
+        timeMobile: `(Mon - Fri 9am - 5pm and Mon - Thurs 7pm - 4am PST)`,
       },
       hk: {
         title: 'Hong Kong: ',

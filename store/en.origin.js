@@ -150,7 +150,8 @@
             "us": {
                 "title": "%%%.footer.phone.us.title%%%",
                 "phone": "%%%.footer.phone.us.phone%%%",
-                "time": "%%%.footer.phone.us.time%%%"
+                "time": "%%%.footer.phone.us.time%%%",
+                "timeMobile": "%%%.footer.phone.us.timeMobile%%%"
             },
             "hk": {
                 "title": "%%%.footer.phone.hk.title%%%",

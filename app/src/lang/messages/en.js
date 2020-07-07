@@ -9456,7 +9456,8 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         depositDate: 'Deposit date',
         depositAmount: 'Deposit amount',
         transactionId: 'Transaction ID',
-
+        transactionFee: 'Transaction Fee',
+        note: 'Note',
       },
       status: {
         pending: 'To Be Settled',

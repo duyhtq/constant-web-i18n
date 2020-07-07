@@ -7196,6 +7196,8 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.loanOriginators.loanRecords.headers.depositDate%%%,"Deposit date"
 %%%.loanOriginators.loanRecords.headers.depositAmount%%%,"Deposit amount"
 %%%.loanOriginators.loanRecords.headers.transactionId%%%,"Transaction ID"
+%%%.loanOriginators.loanRecords.headers.transactionFee%%%,"Transaction Fee"
+%%%.loanOriginators.loanRecords.headers.note%%%,"Note"
 %%%.loanOriginators.loanRecords.status.pending%%%,"To Be Settled"
 %%%.loanOriginators.loanRecords.status.sent%%%,"Pending Settlement"
 %%%.loanOriginators.loanRecords.status.received%%%,"Settled"

@@ -7266,7 +7266,9 @@
                 "netAmount": "%%%.loanOriginators.loanRecords.headers.netAmount%%%",
                 "depositDate": "%%%.loanOriginators.loanRecords.headers.depositDate%%%",
                 "depositAmount": "%%%.loanOriginators.loanRecords.headers.depositAmount%%%",
-                "transactionId": "%%%.loanOriginators.loanRecords.headers.transactionId%%%"
+                "transactionId": "%%%.loanOriginators.loanRecords.headers.transactionId%%%",
+                "transactionFee": "%%%.loanOriginators.loanRecords.headers.transactionFee%%%",
+                "note": "%%%.loanOriginators.loanRecords.headers.note%%%"
             },
             "status": {
                 "pending": "%%%.loanOriginators.loanRecords.status.pending%%%",

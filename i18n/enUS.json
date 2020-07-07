@@ -7266,7 +7266,9 @@
                 "netAmount": "Net settlement amount",
                 "depositDate": "Deposit date",
                 "depositAmount": "Deposit amount",
-                "transactionId": "Transaction ID"
+                "transactionId": "Transaction ID",
+                "transactionFee": "Transaction Fee",
+                "note": "Note"
             },
             "status": {
                 "pending": "To Be Settled",

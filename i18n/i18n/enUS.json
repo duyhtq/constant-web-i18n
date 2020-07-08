@@ -252,17 +252,25 @@
         "ourStory": "Our Story",
         "testimonial": "Why people love us",
         "extraMenu": {
+            "invest": {
+                "title": "Invest",
+                "desc": "\n          <p>Get a better return on <br/>your money.</p>\n        "
+            },
+            "borrow": {
+                "title": "Borrow",
+                "desc": "\n          <p>Get cash for crypto without needing to sell.</p>\n        "
+            },
             "investFlex": {
                 "title": "Flex",
-                "desc": "{percent}% APY. Fully secured. Withdraw anytime."
+                "desc": "{percent}% APY. Fully secured.<br/>Withdraw anytime."
             },
             "investCustom": {
                 "title": "Custom",
-                "desc": "Your terms. Best rates. Fully secured."
+                "desc": "Your terms. Best rates.<br/>Fully secured."
             },
             "investLO": {
                 "title": "Loan Originator",
-                "desc": "Earn up to 11% APR. Terms from 6-15 months. Includes loan originator’s buy-back guarantee in case of default."
+                "desc": "Earn up to 11% APR. Terms from <br/>6-15 months. Includes loan originator’s <br/>buy-back guarantee in case of default."
             },
             "investStaking": {
                 "title": "Crypto Staking",
@@ -271,11 +279,11 @@
             },
             "investFlexCrypto": {
                 "title": "Crypto Lend",
-                "desc": "Get 10% APY on BTC, ETH, and BNB."
+                "desc": "Get 10% APY on BTC, ETH,<br/>and BNB."
             },
             "borrowFiat": {
                 "title": "Crypto-backed Loans",
-                "desc": "Your rates. Your terms. No credit checks."
+                "desc": "Your terms. Best rates.<br/>No credit checks."
             },
             "borrowPRV": {
                 "title": "Crypto Incognito Loans",
@@ -283,7 +291,7 @@
             },
             "borrowCoins": {
                 "title": "Crypto Credit",
-                "desc": "Borrow cash, get crypto. No exchanges."
+                "desc": "Borrow cash, get crypto.<br/>No exchanges."
             }
         }
     },
@@ -4409,23 +4417,28 @@
         "hello": "\n      <strong>Hello {name}</strong>.<br/>Let's see how your money is doing today.\n    "
     },
     "newHome": {
-        "newBanner": {
-            "title1": "Experience <span class=textSuccess\">fully secured</span> peer-to-peer lending.",
+        "banner": {
+            "title1": "Experience fully secured <span style=\"color:#F5A623\">peer-to-peer</span> lending.",
             "subTitle": "Your investments are fully backed by borrower collateral, smart contracts, or buy-back guarantee. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.",
             "invest": {
                 "title": "\n          <p>\n            <strong>INVEST</strong>\n            Crypto-backed\n          </p>\n        ",
-                "cap": "\n          <p>\n            <strong>Up to 7.5%</strong>\n            Interest rate\n          </p>\n          <p>\n            <strong>1-6 MONTHS</strong>\n            Loan term\n          </p>\n          <p class=\"clearBottom\">\n            All lending secured by digital assets\n          </p>\n        ",
+                "cap": "\n          <div class=\"row\">\n            <div class=\"col\">\n              Interest rate\n              <strong>Up to 7.5%</strong>\n            </div>\n            <div class=\"col\">\n              Loan term\n              <strong>1-6 <span>months</span></strong>\n            </div>\n          </div>\n          <p class=\"clearBottom\">\n            All lending secured by digital assets\n          </p>\n        ",
                 "btn": "Explore"
             },
             "borrow": {
                 "title": "\n          <p>\n            <strong>BORROW</strong>\n            Crypto Collateral\n          </p>\n        ",
-                "cap": "\n          <p>\n            <strong>From 7%</strong>\n            Interest rate\n          </p>\n          <p>\n            <strong>1-6 MONTHS</strong>\n            Loan term\n          </p>\n          <p class=\"clearBottom\">\n            Borrow against 60+ cryptocurrencies\n          </p>\n        ",
+                "cap": "\n          <div class=\"row\">\n            <div class=\"col\">\n              Interest rate\n              <strong>From 7%</strong>\n            </div>\n            <div class=\"col\">\n              Loan term\n              <strong>1-6 <span>months</span></strong>\n            </div>\n          </div>\n          <p class=\"clearBottom\">\n            Borrow against 60+ cryptocurrencies\n          </p>\n        ",
                 "btn": "Explore"
             },
             "loanOriginator": {
-                "title": "\n          <p>\n            <strong>INVEST</strong>\n            Loan Originator\n          </p>\n        ",
-                "cap": "\n          <p>\n            <strong>Up to 11% APR</strong>\n            Interest rate\n          </p>\n          <p>\n            <strong>6-15 MONTHS</strong>\n            Loan term\n          </p>\n          <p class=\"clearBottom\">\n            Includes loan originator’s buy-back guarantee in case of default\n          </p>\n        ",
+                "title": "\n          <p>\n            <strong>INVEST <sup>NEW</sup></strong>\n            Loan Originator\n          </p>\n        ",
+                "cap": "\n          <div class=\"row\">\n            <div class=\"col\">\n              Interest rate\n              <strong>Up to 11%</strong>\n            </div>\n            <div class=\"col\">\n              Loan term\n              <strong>6-15 <span>months</span></strong>\n            </div>\n          </div>\n          <p class=\"clearBottom\">\n            Includes loan originator’s buy-back guarantee in case of default\n          </p>\n        ",
                 "btn": "Explore"
+            },
+            "intro": {
+                "youtube": {
+                    "title": "Fully Secured Peer To Peer Lending - How It Works"
+                }
             }
         },
         "crypto": {
@@ -4904,17 +4917,6 @@
         }
     },
     "landingProReferral": {
-        "title1": "Constant Pro will live in",
-        "desc1": "This is your unique referral link. Share it via email, Facebook, or Twitter - and increase your interest earnings with every friend that signs up.",
-        "title2": "Get better rates with every friend that sign up",
-        "title3": "Your rewards so far",
-        "title4": "You've earned this",
-        "title5": "FRIENDS THAT SIGNED UP",
-        "title6": "INVITE MORE 7 FRIENDS TO ARCHIEVE",
-        "title7": "INVITE MORE {num} FRIENDS TO ARCHIEVE",
-        "title8": "INVITE MORE PEERS, MORE REWARDS",
-        "investment": "On investment",
-        "loans": "On loans",
         "loginRequired": "Please log in to your account.",
         "shares": {
             "title": "Share your unique referral link",
@@ -4923,20 +4925,10 @@
             "gg": "Share on Google",
             "shareFbSuccess": "Share referral link success."
         },
-        "levels": {
-            "l0": "<p>Free transaction fees for the first 30 days</p>",
-            "l1": "\n        <p>Free transaction fees for the first 30 days</p>\n        <p>+1% interest for every investment made in the first 30 days</p>\n      ",
-            "l2": "\n      <p>Free transaction fees for the first 30 days</p>\n      <p>+2% interest for every investment made in the first 30 days</p>\n      <p>-2% interest for every loan obtained in the first 30 days</p>\n      ",
-            "l3": "\n        <p>Free transaction fees for the first 30 days</p>\n        <p>+3% interest for every investment made in the first 30 days</p>\n        <p>-3% interest for every loan obtained in the first 30 days</p>\n      "
-        },
         "referral": {
             "placeholder": "https://myconstant.com/?ref=1AcXa2",
             "btn": "Copy",
             "copied": "Referral link copied to clipboard."
-        },
-        "table": {
-            "referral_used_date": "Date",
-            "extra_rate": "Rate (%)"
         },
         "inviteEmail": {
             "title": "Invite friends via email",
@@ -4950,18 +4942,6 @@
             "success": "Your referral code has been updated successfully",
             "failed": "Update referral code failed",
             "duplicated": "Sorry, someone has already created that referral code. Please choose another."
-        },
-        "faqs": {
-            "question1": "What are the supported cryptocurrencies?",
-            "answer1": "The treasure box is supporting BTC, ETH and CONST",
-            "question2": "Do I need a minimum deposit?",
-            "answer2": "None at all. You can invest as much or as little as you like. ",
-            "question3": "What is the interest rate?",
-            "answer3": "\n        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to our FDIC-insured escrow account, and wait for a match. This is usually very quick if you’ve set market rates. </p>\n        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>\n      ",
-            "question4": "How much is the monthly earning?",
-            "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>\n        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n      ",
-            "question5": "Who can participate?",
-            "answer5": "When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds."
         }
     },
     "getPrices": {
@@ -6673,6 +6653,10 @@
     "history": {
         "support": {
             "messageConfirm": "How can we help you with this withdrawal?",
+            "messageDepositConfirm": "How can we help you with this deposit?",
+            "wireReceipt": "wire receipt",
+            "wireReceiptRemove": "Remove receipt",
+            "invalidPhotoSize": "Files supported: jpg, png. Max file size: 4 MB.",
             "confirm": "Send",
             "cancel": "No"
         },

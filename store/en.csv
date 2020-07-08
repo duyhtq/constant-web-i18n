@@ -183,23 +183,31 @@
 %%%.headerBar.yourSaving%%%,"Accounts"
 %%%.headerBar.ourStory%%%,"Our Story"
 %%%.headerBar.testimonial%%%,"Why people love us"
+%%%.headerBar.extraMenu.invest.title%%%,"Invest"
+%%%.headerBar.extraMenu.invest.desc%%%,"
+          <p>Get a better return on <br/>your money.</p>
+        "
+%%%.headerBar.extraMenu.borrow.title%%%,"Borrow"
+%%%.headerBar.extraMenu.borrow.desc%%%,"
+          <p>Get cash for crypto without needing to sell.</p>
+        "
 %%%.headerBar.extraMenu.investFlex.title%%%,"Fiat Flex"
-%%%.headerBar.extraMenu.investFlex.desc%%%,"{percent}% APY. Fully secured. Withdraw anytime."
+%%%.headerBar.extraMenu.investFlex.desc%%%,"{percent}% APY. Fully secured.<br/>Withdraw anytime."
 %%%.headerBar.extraMenu.investCustom.title%%%,"Fiat Custom"
-%%%.headerBar.extraMenu.investCustom.desc%%%,"Your terms. Best rates. Fully secured."
+%%%.headerBar.extraMenu.investCustom.desc%%%,"Your terms. Best rates.<br/>Fully secured."
 %%%.headerBar.extraMenu.investLO.title%%%,"Loan Originator"
-%%%.headerBar.extraMenu.investLO.desc%%%,"Earn up to 11% APR. Terms from 6-15 months. Includes loan originator’s buy-back guarantee in case of default."
+%%%.headerBar.extraMenu.investLO.desc%%%,"Earn up to 11% APR. Terms from <br/>6-15 months. Includes loan originator’s <br/>buy-back guarantee in case of default."
 %%%.headerBar.extraMenu.investStaking.title%%%,"Crypto Staking"
 %%%.headerBar.extraMenu.investStaking.desc%%%,"6%-35% APR. Low minimums. Withdraw anytime."
 %%%.headerBar.extraMenu.investStaking.descHotFix%%%,"6%-35% APR. Low minimums. Withdraw anytime."
 %%%.headerBar.extraMenu.investFlexCrypto.title%%%,"Crypto Lend"
-%%%.headerBar.extraMenu.investFlexCrypto.desc%%%,"Get 10% APY on BTC, ETH, and BNB."
+%%%.headerBar.extraMenu.investFlexCrypto.desc%%%,"Get 10% APY on BTC, ETH,<br/>and BNB."
 %%%.headerBar.extraMenu.borrowFiat.title%%%,"Crypto-backed Loans"
-%%%.headerBar.extraMenu.borrowFiat.desc%%%,"Your rates. Your terms. No credit checks."
+%%%.headerBar.extraMenu.borrowFiat.desc%%%,"Your terms. Best rates.<br/>No credit checks."
 %%%.headerBar.extraMenu.borrowPRV.title%%%,"Crypto Incognito Loans"
 %%%.headerBar.extraMenu.borrowPRV.desc%%%,"Borrow against PRV from 6% APR. Secure escrow. No credit checks"
 %%%.headerBar.extraMenu.borrowCoins.title%%%,"Crypto Credit"
-%%%.headerBar.extraMenu.borrowCoins.desc%%%,"Borrow cash, get crypto. No exchanges."
+%%%.headerBar.extraMenu.borrowCoins.desc%%%,"Borrow cash, get crypto.<br/>No exchanges."
 %%%.error.required%%%,"Required"
 %%%.error.requiredOne%%%,"Please fill in the required fields."
 %%%.error.greaterThan%%%,"Please enter a number greater than {min}"
@@ -4557,68 +4565,75 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.yourSaving.hello%%%,"
       <strong>Hello {name}</strong>.<br/>Let's see how your money is doing today.
     "
-%%%.newHome.newBanner.title1%%%,"Experience <span class=textSuccess"">fully secured</span> peer-to-peer lending."
-%%%.newHome.newBanner.subTitle%%%,"Your investments are fully backed by borrower collateral, smart contracts, or buy-back guarantee. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free."
-%%%.newHome.newBanner.invest.title%%%,"
+%%%.newHome.banner.title1%%%,"Experience fully secured <span style=""color:#F5A623"">peer-to-peer</span> lending."
+%%%.newHome.banner.subTitle%%%,"Your investments are fully backed by borrower collateral, smart contracts, or buy-back guarantee. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free."
+%%%.newHome.banner.invest.title%%%,"
           <p>
             <strong>INVEST</strong>
             Crypto-backed
           </p>
         "
-%%%.newHome.newBanner.invest.cap%%%,"
-          <p>
-            <strong>Up to 7.5%</strong>
-            Interest rate
-          </p>
-          <p>
-            <strong>1-6 MONTHS</strong>
-            Loan term
-          </p>
+%%%.newHome.banner.invest.cap%%%,"
+          <div class=""row"">
+            <div class=""col"">
+              Interest rate
+              <strong>Up to 7.5%</strong>
+            </div>
+            <div class=""col"">
+              Loan term
+              <strong>1-6 <span>months</span></strong>
+            </div>
+          </div>
           <p class=""clearBottom"">
             All lending secured by digital assets
           </p>
         "
-%%%.newHome.newBanner.invest.btn%%%,"Explore"
-%%%.newHome.newBanner.borrow.title%%%,"
+%%%.newHome.banner.invest.btn%%%,"Explore"
+%%%.newHome.banner.borrow.title%%%,"
           <p>
             <strong>BORROW</strong>
             Crypto Collateral
           </p>
         "
-%%%.newHome.newBanner.borrow.cap%%%,"
-          <p>
-            <strong>From 7%</strong>
-            Interest rate
-          </p>
-          <p>
-            <strong>1-6 MONTHS</strong>
-            Loan term
-          </p>
+%%%.newHome.banner.borrow.cap%%%,"
+          <div class=""row"">
+            <div class=""col"">
+              Interest rate
+              <strong>From 7%</strong>
+            </div>
+            <div class=""col"">
+              Loan term
+              <strong>1-6 <span>months</span></strong>
+            </div>
+          </div>
           <p class=""clearBottom"">
             Borrow against 60+ cryptocurrencies
           </p>
         "
-%%%.newHome.newBanner.borrow.btn%%%,"Explore"
-%%%.newHome.newBanner.loanOriginator.title%%%,"
+%%%.newHome.banner.borrow.btn%%%,"Explore"
+%%%.newHome.banner.loanOriginator.title%%%,"
           <p>
-            <strong>INVEST</strong>
+            <strong>INVEST <sup>NEW</sup></strong>
             Loan Originator
           </p>
         "
-%%%.newHome.newBanner.loanOriginator.cap%%%,"
-          <p>
-            <strong>Up to 11% APR</strong>
-            Interest rate
-          </p>
-          <p>
-            <strong>6-15 MONTHS</strong>
-            Loan term
-          </p>
+%%%.newHome.banner.loanOriginator.cap%%%,"
+          <div class=""row"">
+            <div class=""col"">
+              Interest rate
+              <strong>Up to 11%</strong>
+            </div>
+            <div class=""col"">
+              Loan term
+              <strong>6-15 <span>months</span></strong>
+            </div>
+          </div>
           <p class=""clearBottom"">
             Includes loan originator’s buy-back guarantee in case of default
           </p>
         "
-%%%.newHome.newBanner.loanOriginator.btn%%%,"Explore"
+%%%.newHome.banner.loanOriginator.btn%%%,"Explore"
+%%%.newHome.banner.intro.youtube.title%%%,"Fully Secured Peer To Peer Lending - How It Works"
 %%%.newHome.crypto.bitGo%%%,"$100M escrow insurance"
 %%%.newHome.crypto.desc%%%,"Fully secured, fully backed. All lending is secured by crypto collateral and loan originators' buy-back guarantee."
 %%%.newHome.faqs.question1%%%,"What is peer-to-peer (P2P) lending?"
@@ -5145,43 +5160,15 @@ Exchange margin accounts typically only use the price on that exchange, so you c
       "
 %%%.landingPro.faqs.question5%%%,"Who can participate?"
 %%%.landingPro.faqs.answer5%%%,"When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds."
-%%%.landingProReferral.title1%%%,"Constant Pro will live in"
-%%%.landingProReferral.desc1%%%,"This is your unique referral link. Share it via email, Facebook, or Twitter - and increase your interest earnings with every friend that signs up."
-%%%.landingProReferral.title2%%%,"Get better rates with every friend that sign up"
-%%%.landingProReferral.title3%%%,"Your rewards so far"
-%%%.landingProReferral.title4%%%,"You've earned this"
-%%%.landingProReferral.title5%%%,"FRIENDS THAT SIGNED UP"
-%%%.landingProReferral.title6%%%,"INVITE MORE 7 FRIENDS TO ARCHIEVE"
-%%%.landingProReferral.title7%%%,"INVITE MORE {num} FRIENDS TO ARCHIEVE"
-%%%.landingProReferral.title8%%%,"INVITE MORE PEERS, MORE REWARDS"
-%%%.landingProReferral.investment%%%,"On investment"
-%%%.landingProReferral.loans%%%,"On loans"
 %%%.landingProReferral.loginRequired%%%,"You need to login to do the action."
 %%%.landingProReferral.shares.title%%%,"Share your unique referral link"
 %%%.landingProReferral.shares.fb%%%,"Share on Facebook"
 %%%.landingProReferral.shares.tw%%%,"Share on Twitter"
 %%%.landingProReferral.shares.gg%%%,"Share on Google"
 %%%.landingProReferral.shares.shareFbSuccess%%%,"Share referral link success."
-%%%.landingProReferral.levels.l0%%%,"<p>Free transaction fees for the first 30 days</p>"
-%%%.landingProReferral.levels.l1%%%,"
-        <p>Free transaction fees for the first 30 days</p>
-        <p>+1% interest for every investment made in the first 30 days</p>
-      "
-%%%.landingProReferral.levels.l2%%%,"
-      <p>Free transaction fees for the first 30 days</p>
-      <p>+2% interest for every investment made in the first 30 days</p>
-      <p>-2% interest for every loan obtained in the first 30 days</p>
-      "
-%%%.landingProReferral.levels.l3%%%,"
-        <p>Free transaction fees for the first 30 days</p>
-        <p>+3% interest for every investment made in the first 30 days</p>
-        <p>-3% interest for every loan obtained in the first 30 days</p>
-      "
 %%%.landingProReferral.referral.placeholder%%%,"https://myconstant.com/?ref=1AcXa2"
 %%%.landingProReferral.referral.btn%%%,"Copy"
 %%%.landingProReferral.referral.copied%%%,"Referral link copied to clipboard."
-%%%.landingProReferral.table.referral_used_date%%%,"Date"
-%%%.landingProReferral.table.extra_rate%%%,"Rate (%)"
 %%%.landingProReferral.inviteEmail.title%%%,"Invite friends via email"
 %%%.landingProReferral.inviteEmail.placeholder%%%,"Enter email address, seperate by commas"
 %%%.landingProReferral.inviteEmail.btn%%%,"Invite"
@@ -5191,24 +5178,6 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.landingProReferral.editReferral.success%%%,"Your referral code has been updated successfully"
 %%%.landingProReferral.editReferral.failed%%%,"Update referral code failed"
 %%%.landingProReferral.editReferral.duplicated%%%,"Sorry, someone has already created that referral code. Please choose another."
-%%%.landingProReferral.faqs.question1%%%,"What are the supported cryptocurrencies?"
-%%%.landingProReferral.faqs.answer1%%%,"The treasure box is supporting BTC, ETH and CONST"
-%%%.landingProReferral.faqs.question2%%%,"Do I need a minimum deposit?"
-%%%.landingProReferral.faqs.answer2%%%,"None at all. You can invest as much or as little as you like. "
-%%%.landingProReferral.faqs.question3%%%,"What is the interest rate?"
-%%%.landingProReferral.faqs.answer3%%%,"
-        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to our FDIC-insured escrow account, and wait for a match. This is usually very quick if you’ve set market rates. </p>
-        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>
-      "
-%%%.landingProReferral.faqs.question4%%%,"How much is the monthly earning?"
-%%%.landingProReferral.faqs.answer4%%%,"
-        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>
-        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>
-        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>
-        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>
-      "
-%%%.landingProReferral.faqs.question5%%%,"Who can participate?"
-%%%.landingProReferral.faqs.answer5%%%,"When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds."
 %%%.getPrices.title%%%,"Pricing and Service times"
 %%%.getPrices.desc%%%,"
     <div>All times shown below are maximum estimates. In all cases, the team strives for ASAP.</div>
@@ -6643,6 +6612,10 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.blog.title%%%,"The Ledger"
 %%%.blog.subTitle%%%,"News, advice, and opinion from the Constant team (and guests)."
 %%%.history.support.messageConfirm%%%,"How can we help you with this withdrawal?"
+%%%.history.support.messageDepositConfirm%%%,"How can we help you with this deposit?"
+%%%.history.support.wireReceipt%%%,"wire receipt"
+%%%.history.support.wireReceiptRemove%%%,"Remove receipt"
+%%%.history.support.invalidPhotoSize%%%,"Files supported: jpg, png. Max file size: 4 MB."
 %%%.history.support.confirm%%%,"Send"
 %%%.history.support.cancel%%%,"No"
 %%%.history.deposit.title%%%,"Deposit History"

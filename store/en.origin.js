@@ -252,6 +252,14 @@
         "ourStory": "%%%.headerBar.ourStory%%%",
         "testimonial": "%%%.headerBar.testimonial%%%",
         "extraMenu": {
+            "invest": {
+                "title": "%%%.headerBar.extraMenu.invest.title%%%",
+                "desc": "%%%.headerBar.extraMenu.invest.desc%%%"
+            },
+            "borrow": {
+                "title": "%%%.headerBar.extraMenu.borrow.title%%%",
+                "desc": "%%%.headerBar.extraMenu.borrow.desc%%%"
+            },
             "investFlex": {
                 "title": "%%%.headerBar.extraMenu.investFlex.title%%%",
                 "desc": "%%%.headerBar.extraMenu.investFlex.desc%%%"
@@ -4409,23 +4417,28 @@
         "hello": "%%%.yourSaving.hello%%%"
     },
     "newHome": {
-        "newBanner": {
-            "title1": "%%%.newHome.newBanner.title1%%%",
-            "subTitle": "%%%.newHome.newBanner.subTitle%%%",
+        "banner": {
+            "title1": "%%%.newHome.banner.title1%%%",
+            "subTitle": "%%%.newHome.banner.subTitle%%%",
             "invest": {
-                "title": "%%%.newHome.newBanner.invest.title%%%",
-                "cap": "%%%.newHome.newBanner.invest.cap%%%",
-                "btn": "%%%.newHome.newBanner.invest.btn%%%"
+                "title": "%%%.newHome.banner.invest.title%%%",
+                "cap": "%%%.newHome.banner.invest.cap%%%",
+                "btn": "%%%.newHome.banner.invest.btn%%%"
             },
             "borrow": {
-                "title": "%%%.newHome.newBanner.borrow.title%%%",
-                "cap": "%%%.newHome.newBanner.borrow.cap%%%",
-                "btn": "%%%.newHome.newBanner.borrow.btn%%%"
+                "title": "%%%.newHome.banner.borrow.title%%%",
+                "cap": "%%%.newHome.banner.borrow.cap%%%",
+                "btn": "%%%.newHome.banner.borrow.btn%%%"
             },
             "loanOriginator": {
-                "title": "%%%.newHome.newBanner.loanOriginator.title%%%",
-                "cap": "%%%.newHome.newBanner.loanOriginator.cap%%%",
-                "btn": "%%%.newHome.newBanner.loanOriginator.btn%%%"
+                "title": "%%%.newHome.banner.loanOriginator.title%%%",
+                "cap": "%%%.newHome.banner.loanOriginator.cap%%%",
+                "btn": "%%%.newHome.banner.loanOriginator.btn%%%"
+            },
+            "intro": {
+                "youtube": {
+                    "title": "%%%.newHome.banner.intro.youtube.title%%%"
+                }
             }
         },
         "crypto": {
@@ -4904,17 +4917,6 @@
         }
     },
     "landingProReferral": {
-        "title1": "%%%.landingProReferral.title1%%%",
-        "desc1": "%%%.landingProReferral.desc1%%%",
-        "title2": "%%%.landingProReferral.title2%%%",
-        "title3": "%%%.landingProReferral.title3%%%",
-        "title4": "%%%.landingProReferral.title4%%%",
-        "title5": "%%%.landingProReferral.title5%%%",
-        "title6": "%%%.landingProReferral.title6%%%",
-        "title7": "%%%.landingProReferral.title7%%%",
-        "title8": "%%%.landingProReferral.title8%%%",
-        "investment": "%%%.landingProReferral.investment%%%",
-        "loans": "%%%.landingProReferral.loans%%%",
         "loginRequired": "%%%.landingProReferral.loginRequired%%%",
         "shares": {
             "title": "%%%.landingProReferral.shares.title%%%",
@@ -4923,20 +4925,10 @@
             "gg": "%%%.landingProReferral.shares.gg%%%",
             "shareFbSuccess": "%%%.landingProReferral.shares.shareFbSuccess%%%"
         },
-        "levels": {
-            "l0": "%%%.landingProReferral.levels.l0%%%",
-            "l1": "%%%.landingProReferral.levels.l1%%%",
-            "l2": "%%%.landingProReferral.levels.l2%%%",
-            "l3": "%%%.landingProReferral.levels.l3%%%"
-        },
         "referral": {
             "placeholder": "%%%.landingProReferral.referral.placeholder%%%",
             "btn": "%%%.landingProReferral.referral.btn%%%",
             "copied": "%%%.landingProReferral.referral.copied%%%"
-        },
-        "table": {
-            "referral_used_date": "%%%.landingProReferral.table.referral_used_date%%%",
-            "extra_rate": "%%%.landingProReferral.table.extra_rate%%%"
         },
         "inviteEmail": {
             "title": "%%%.landingProReferral.inviteEmail.title%%%",
@@ -4950,18 +4942,6 @@
             "success": "%%%.landingProReferral.editReferral.success%%%",
             "failed": "%%%.landingProReferral.editReferral.failed%%%",
             "duplicated": "%%%.landingProReferral.editReferral.duplicated%%%"
-        },
-        "faqs": {
-            "question1": "%%%.landingProReferral.faqs.question1%%%",
-            "answer1": "%%%.landingProReferral.faqs.answer1%%%",
-            "question2": "%%%.landingProReferral.faqs.question2%%%",
-            "answer2": "%%%.landingProReferral.faqs.answer2%%%",
-            "question3": "%%%.landingProReferral.faqs.question3%%%",
-            "answer3": "%%%.landingProReferral.faqs.answer3%%%",
-            "question4": "%%%.landingProReferral.faqs.question4%%%",
-            "answer4": "%%%.landingProReferral.faqs.answer4%%%",
-            "question5": "%%%.landingProReferral.faqs.question5%%%",
-            "answer5": "%%%.landingProReferral.faqs.answer5%%%"
         }
     },
     "getPrices": {
@@ -6673,6 +6653,10 @@
     "history": {
         "support": {
             "messageConfirm": "%%%.history.support.messageConfirm%%%",
+            "messageDepositConfirm": "%%%.history.support.messageDepositConfirm%%%",
+            "wireReceipt": "%%%.history.support.wireReceipt%%%",
+            "wireReceiptRemove": "%%%.history.support.wireReceiptRemove%%%",
+            "invalidPhotoSize": "%%%.history.support.invalidPhotoSize%%%",
             "confirm": "%%%.history.support.confirm%%%",
             "cancel": "%%%.history.support.cancel%%%"
         },

@@ -3062,6 +3062,7 @@
             },
             "errorMessages": {
                 "Required": "%%%.home.constantC2CLoan.errorMessages.Required%%%",
+                "exchangeMaxAmountRequired": "%%%.home.constantC2CLoan.errorMessages.exchangeMaxAmountRequired%%%",
                 "constantAmountRequired": "%%%.home.constantC2CLoan.errorMessages.constantAmountRequired%%%",
                 "collateralAmountRequired": "%%%.home.constantC2CLoan.errorMessages.collateralAmountRequired%%%",
                 "walletAddressRequired": "%%%.home.constantC2CLoan.errorMessages.walletAddressRequired%%%",

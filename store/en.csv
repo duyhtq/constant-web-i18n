@@ -1596,12 +1596,12 @@
       "
 %%%.landingPage.secureReturns.title%%%,"
         <p class=""header"">Earn 7% APR now.</p>
-        <p>When markets dive, secure your returns with P2P lending. All loans are 150% backed by digital assets. No fees. No dips.</p>
+        <p>When markets dive, secure your returns with P2P lending. No fees. No dips.</p>
         <p>Start investing from just $50.</p>
       "
 %%%.landingPage.steadyGrowth.title%%%,"
         <p class=""header"">Earn 7% APR now.</p>
-        <p>Don’t go down with the market. Enjoy steady growth with fully-secured P2P lending. All loans are 150% backed by digital assets. No fees.</p>
+        <p>Don’t go down with the market. Enjoy steady growth with fully-secured P2P lending. No fees.</p>
         <p>Start investing from just $50.</p>
       "
 %%%.landingPage.netReturns.title%%%,"
@@ -1629,11 +1629,11 @@
             "
 %%%.landingPage.howItWorks.data.1.title%%%,"Step 2"
 %%%.landingPage.howItWorks.data.1.desc%%%,"
-            <p>Create an investment order with your chosen rate and term.</p>
+            <p>Create your Crypto-backed or Loan Originator investment order.</p>
             "
 %%%.landingPage.howItWorks.data.2.title%%%,"Step 3"
 %%%.landingPage.howItWorks.data.2.desc%%%,"
-            <p>We’ll match you with a borrower 150% backed by collateral.</p>
+            <p>We’ll match you with a borrower on your terms.</p>
             "
 %%%.landingPage.howItWorks.data.3.title%%%,"Step 4"
 %%%.landingPage.howItWorks.data.3.desc%%%,"
@@ -1650,7 +1650,8 @@
             "
 %%%.landingPage.howWeProtectYou.data.1.title%%%,"BitGo"
 %%%.landingPage.howWeProtectYou.data.1.desc%%%,"
-            <p>When on loan, your funds are <strong>150% backed by digital assets.</strong> If borrowers default or their collateral falls in value, the collateral is sold to repay you. All collateral is vetted regularly to ensure we can sell quickly and at the right price to repay you.</p>
+            <p>When investing in crypto-backed loans, your funds are <strong>150% backed by digital assets.</strong> If borrowers default or their collateral falls in value the collateral is sold to repay you.</p>
+            <p>For Loan Originator investments, <strong>all loans come with the loan originator’s buy-back guarantee.</strong> The originator promises to repay investors their principal and interest if borrowers default for 60 days or more.</p>
             "
 %%%.landingPage.whyPeopleLoveUs.title%%%,"Why People Love Us"
 %%%.review.title%%%,"Review"
@@ -3175,6 +3176,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.home.constantC2CLoan.history.payConstant%%%,"Pay by Constant"
 %%%.home.constantC2CLoan.history.payCollateral%%%,"Pay by Collateral"
 %%%.home.constantC2CLoan.errorMessages.Required%%%,"Required"
+%%%.home.constantC2CLoan.errorMessages.exchangeMaxAmountRequired%%%,"Amount is required to make a borrow!"
 %%%.home.constantC2CLoan.errorMessages.constantAmountRequired%%%,"Amount is required to make a borrow!"
 %%%.home.constantC2CLoan.errorMessages.collateralAmountRequired%%%,"Collateral amount is required to make a borrow!"
 %%%.home.constantC2CLoan.errorMessages.walletAddressRequired%%%,"Wallet Address is required to make a borrow!"
@@ -3744,7 +3746,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.affiliates.whyBecome.formula.3%%%," "
 %%%.affiliates.whyBecome.formula.4%%%,"for your referee"
 %%%.affiliates.whyBecome.data.0.title%%%,"REWARD YOUR COMMUNITY"
-%%%.affiliates.whyBecome.data.0.desc%%%,"Your referees earn $10 when they sign up and pass KYC – with no obligation to invest. Your affiliate offers are an easy way to reward followers who engage with your content."
+%%%.affiliates.whyBecome.data.0.desc%%%,"Your referees get a $1,500 trial bonus and keep the interest when they sign up and pass KYC - with no obligation to invest. Your affiliate offers are an easy way to reward followers who engage with your content."
 %%%.affiliates.whyBecome.data.1.title%%%,"HELP PEOPLE INVEST BETTER"
 %%%.affiliates.whyBecome.data.1.desc%%%,"Help your community overcome the challenges of today’s investment market. Constant is an ideal way to diversify and enjoy secured returns of up to 7% APR without fees."
 %%%.affiliates.whyBecome.data.2.title%%%,"CUT THROUGH THE NOISE"
@@ -4565,8 +4567,11 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.yourSaving.hello%%%,"
       <strong>Hello {name}</strong>.<br/>Let's see how your money is doing today.
     "
-%%%.newHome.banner.title1%%%,"Experience fully secured <span style=""color:#F5A623"">peer-to-peer</span> lending."
-%%%.newHome.banner.subTitle%%%,"Your investments are fully backed by borrower collateral, smart contracts, or buy-back guarantee. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free."
+%%%.newHome.banner.title1%%%,"Experience fully secured <span style=""color:#F5A623;"">peer-to-peer</span> lending."
+%%%.newHome.banner.subTitle%%%,"
+        <p>Your investments are fully backed by borrower collateral, <br/>smart contracts, or buy-back guarantee.</p>
+        <p>While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.</p>
+      "
 %%%.newHome.banner.invest.title%%%,"
           <p>
             <strong>INVEST</strong>

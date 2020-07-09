@@ -2047,14 +2047,14 @@ export default {
     secureReturns: {
       title:`
         <p class="header">Earn 7% APR now.</p>
-        <p>When markets dive, secure your returns with P2P lending. All loans are 150% backed by digital assets. No fees. No dips.</p>
+        <p>When markets dive, secure your returns with P2P lending. No fees. No dips.</p>
         <p>Start investing from just $50.</p>
       `,
     },
     steadyGrowth: {
       title:`
         <p class="header">Earn 7% APR now.</p>
-        <p>Don’t go down with the market. Enjoy steady growth with fully-secured P2P lending. All loans are 150% backed by digital assets. No fees.</p>
+        <p>Don’t go down with the market. Enjoy steady growth with fully-secured P2P lending. No fees.</p>
         <p>Start investing from just $50.</p>
       `,
     },
@@ -2098,13 +2098,13 @@ export default {
         1: {
           title: 'Step 2',
           desc: `
-            <p>Create an investment order with your chosen rate and term.</p>
+            <p>Create your Crypto-backed or Loan Originator investment order.</p>
             `,
         },
         2: {
           title: 'Step 3',
           desc: `
-            <p>We’ll match you with a borrower 150% backed by collateral.</p>
+            <p>We’ll match you with a borrower on your terms.</p>
             `,
         },
         3: {
@@ -2133,7 +2133,8 @@ export default {
         1: {
           title: 'BitGo',
           desc: `
-            <p>When on loan, your funds are <strong>150% backed by digital assets.</strong> If borrowers default or their collateral falls in value, the collateral is sold to repay you. All collateral is vetted regularly to ensure we can sell quickly and at the right price to repay you.</p>
+            <p>When investing in crypto-backed loans, your funds are <strong>150% backed by digital assets.</strong> If borrowers default or their collateral falls in value the collateral is sold to repay you.</p>
+            <p>For Loan Originator investments, <strong>all loans come with the loan originator’s buy-back guarantee.</strong> The originator promises to repay investors their principal and interest if borrowers default for 60 days or more.</p>
             `,
         },
       }
@@ -3982,6 +3983,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       },
       errorMessages: {
         Required: 'Required',
+        exchangeMaxAmountRequired: 'Amount is required to make a borrow!',
         constantAmountRequired: 'Amount is required to make a borrow!',
         collateralAmountRequired: 'Collateral amount is required to make a borrow!',
         walletAddressRequired: 'Wallet Address is required to make a borrow!',
@@ -4726,7 +4728,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
       data: {
         0: {
           title: 'REWARD YOUR COMMUNITY',
-          desc: 'Your referees earn $10 when they sign up and pass KYC – with no obligation to invest. Your affiliate offers are an easy way to reward followers who engage with your content.'
+          desc: 'Your referees get a $1,500 trial bonus and keep the interest when they sign up and pass KYC - with no obligation to invest. Your affiliate offers are an easy way to reward followers who engage with your content.'
         },
         1: {
           title: 'HELP PEOPLE INVEST BETTER',
@@ -5862,8 +5864,11 @@ While Constant processes your deposits and withdrawals free of charge, transacti
   },
   newHome: {
     banner: {
-      title1: `Experience fully secured <span style="color:#F5A623">peer-to-peer</span> lending.`,
-      subTitle: 'Your investments are fully backed by borrower collateral, smart contracts, or buy-back guarantee. While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.',
+      title1: `Experience fully secured <span style="color:#F5A623;">peer-to-peer</span> lending.`,
+      subTitle: `
+        <p>Your investments are fully backed by borrower collateral, <br/>smart contracts, or buy-back guarantee.</p>
+        <p>While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.</p>
+      `,
       invest: {
         title: `
           <p>

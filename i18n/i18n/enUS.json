@@ -908,6 +908,8 @@
                 "21": "Referral Bonus",
                 "22": "Purchase",
                 "23": "Refund",
+                "24": "LO investment",
+                "25": "LO repayment",
                 "26": "LO Investment",
                 "101": "Bonus",
                 "102": "Coupon Signup",
@@ -2403,19 +2405,19 @@
         "constantLoan": {
             "faqs": {
                 "question1": "How long will it take to get my loan?",
-                "answer1": "\n        <p>As soon as we receive your collateral, we’ll deposit your loan into your Constant account. You can withdraw your loan as fiat to your bank account or as a stablecoin to your wallet address. All withdrawals are free.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-to-borrow-against-crypto-4-simple-steps\" className=\"underline\" target=\"_blank\">How to borrow in 4 simple steps.</a></p>\n      ",
+                "answer1": "\n        <p>As soon as we receive your collateral, we’ll deposit your loan into your Constant account. You can withdraw your loan as fiat to your bank account or as a stablecoin to your wallet address. All withdrawals are free.</p>\n        <p><a href=\"https://blog.myconstant.com/how-to-borrow-against-crypto-4-simple-steps\" className=\"underline\" target=\"_blank\">How to borrow in 4 simple steps.</a></p>\n      ",
                 "question2": "Do you check my credit score?",
-                "answer2": "\n        <p>As we only offer secured loans backed by collateral, there is no need for credit scoring. All you need is adequate collateral to secure your loan. To see how much collateral you need to secure your loan, simply enter the amount you’d like to borrow. The calculator will work out the amount for you.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-to-borrow-against-crypto-4-simple-steps\" className=\"underline\" target=\"_blank\">How to borrow in 4 simple steps.</a></p>\n      ",
+                "answer2": "\n        <p>As we only offer secured loans backed by collateral, there is no need for credit scoring. All you need is adequate collateral to secure your loan. To see how much collateral you need to secure your loan, simply enter the amount you’d like to borrow. The calculator will work out the amount for you.</p>\n        <p><a href=\"https://blog.myconstant.com/how-to-borrow-against-crypto-4-simple-steps\" className=\"underline\" target=\"_blank\">How to borrow in 4 simple steps.</a></p>\n      ",
                 "question3": "How do you protect my collateral?",
-                "answer3": "\n        <p>Depending on your collateral, it’s either held safely in Prime Trust custody, an Ethereum smart contract, or a password-protected web wallet hosted on a dedicated server (to which only our CEO and CTO have access). When you repay, your collateral is immediately transferred back to you.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral\" className=\"underline\" target=\"_blank\">How we protect your collateral.</a></p>\n      ",
+                "answer3": "\n        <p>Depending on your collateral, it’s either held safely in Prime Trust custody, an Ethereum smart contract, or a password-protected web wallet hosted on a dedicated server (to which only our CEO and CTO have access). When you repay, your collateral is immediately transferred back to you.</p>\n        <p><a href=\"https://blog.myconstant.com/how-we-protect-your-money-and-collateral\" className=\"underline\" target=\"_blank\">How we protect your collateral.</a></p>\n      ",
                 "question4": "What happens if I don’t repay the loan?",
                 "answer4": "If you don’t repay the loan, your collateral will be sold to repay your investor. You get to keep the loan. That’s it.",
                 "question5": "What happens if my crypto collateral falls in value?",
-                "answer5": "\n        <p>We will notify you three times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, we’ll create a sell order to repay the investor. You keep the loan, but you lose your collateral.</p>\n        <p>Borrowers will receive notifications at 125%, 120% and 115% of the investor’s principal plus earned interest. You can choose to repay early to avoid liquidation or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.</p>\n        <p>If you’re borrowing against stablecoins, you will be notified at 115%, 110%, and finally 105%. Once your collateral falls to 100% of the loan amount it will be sold to repay the investor.</p>\n        <p><a href=\"https://www.myconstant.com/blog/extra-protection-for-your-collateral-auto-top-up\" className=\"underline\" target=\"_blank\">How to avoid liquidation with auto top-up.</a></p>\n      ",
+                "answer5": "\n        <p>We will notify you three times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, we’ll create a sell order to repay the investor. You keep the loan, but you lose your collateral.</p>\n        <p>Borrowers will receive notifications at 125%, 120% and 115% of the investor’s principal plus earned interest. You can choose to repay early to avoid liquidation or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.</p>\n        <p>If you’re borrowing against stablecoins, you will be notified at 115%, 110%, and finally 105%. Once your collateral falls to 100% of the loan amount it will be sold to repay the investor.</p>\n        <p><a href=\"https://blog.myconstant.com/extra-protection-for-your-collateral-auto-top-up\" className=\"underline\" target=\"_blank\">How to avoid liquidation with auto top-up.</a></p>\n      ",
                 "question6": "Can I repay early?",
                 "answer6": "\n          <p>If you'd like to pay back your loan before 75% of the term is up, that's absolutely fine. You simply have to pay interest for the days you are in possession of the loan, and just 50% of the original interest rate for the remaining days of the term.</p>\n          <p>If you'd like to pay back your loan after 75% of the term is up and claim back your collateral, that's also fine, but the interest due on that loan is the full percentage for the entire term.</p>\n        ",
                 "question7": "Can I recall excess if the value of my collateral increases?",
-                "answer7": "\n        <p>Yes. If the value of your collateral rises during your loan term, you can withdraw the difference from your Accounts page.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-to-deposit-top-up-recall-crypto-constant\" className=\"underline\" target=\"_blank\">How to deposit, top-up, and recall excess collateral.</a></p>\n      ",
+                "answer7": "\n        <p>Yes. If the value of your collateral rises during your loan term, you can withdraw the difference from your Accounts page.</p>\n        <p><a href=\"https://blog.myconstant.com/how-to-deposit-top-up-recall-crypto-constant\" className=\"underline\" target=\"_blank\">How to deposit, top-up, and recall excess collateral.</a></p>\n      ",
                 "question8": "What is the LTV (Loan-to-Value) Ratio? Is it always the same?",
                 "answer8": "\n        <p>The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral. If you’re borrowing against stablecoins, the LTV ratio is 100% (you must put up 100% of the loan amount in stablecoins to obtain a loan).</p>\n      ",
                 "question9": "How do I repay my loan?",
@@ -2446,7 +2448,7 @@
                 "answer21": "\n        <p>\n        Collateral value only takes into account the monetary value of your collateral in your collateral balance compared to your loan amount. We base liquidation off collateral value. Your collateral rate is a more in-depth number that takes into account the LTV ratios required for different cryptocurrencies. We use this number to determine how much you can withdraw with recall excess as well as the maximum amount of crypto you can place in an Isolated loan.\n        </p>\n        <p>\n        You can find your collateral rate through this equation:\n        </p>\n        <p class=\"font-italic\">\n        x = (number of coins)*(coin value)*(LTV)+“repeat for each coin”<br />\n        Collateral rate = (x/(loan value at first + up-to-date interest + matching fees))*100\n        </p>\n        "
             },
             "intro": {
-                "content": "\n        <p>Borrow the way you want</p>\n        <p class=\"h1\">Set your own rates.</p>\n        <p class=\"h1\">Borrow against 60+ cryptocurrencies.</p>\n        <h1>Get cash for crypto without needing to sell.</h1>\n        <p/>\n        <p>Get the funds you need at rates you’re willing to pay. Your collateral is securely escrowed and returned to you when you repay. Free withdrawals in cash or stablecoins.</p>\n        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href=\"https://www.myconstant.com/blog/multi-crypto-loans\" target=\"_blank\" class=\"underline\">our blog</a> and FAQs for more details.</p>\n        ",
+                "content": "\n        <p>Borrow the way you want</p>\n        <p class=\"h1\">Set your own rates.</p>\n        <p class=\"h1\">Borrow against 60+ cryptocurrencies.</p>\n        <h1>Get cash for crypto without needing to sell.</h1>\n        <p/>\n        <p>Get the funds you need at rates you’re willing to pay. Your collateral is securely escrowed and returned to you when you repay. Free withdrawals in cash or stablecoins.</p>\n        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href=\"https://blog.myconstant.com/multi-crypto-loans\" target=\"_blank\" class=\"underline\">our blog</a> and FAQs for more details.</p>\n        ",
                 "desc": {
                     "1": "Secure escrow",
                     "2": "No credit checks",
@@ -2851,7 +2853,7 @@
                 "question5": "How do I repay a Crypto Credit loan?",
                 "answer5": "\n          <p>You can repay your loan in the following ways:</p>\n            <p>1) Deposit USD or a supported stablecoin. <br/>\n            2) Repay the equivalent USD value using your collateral.</p> \n        ",
                 "question6": "How do you protect my collateral?",
-                "answer6": "\n          <p>Your collateral is stored in a Prime Trust wallet that’s insured to $100,000,000. This protects you against:</p>\n            <p> - Third-party hacks, copying, or theft of private keys.<br>\n             - Insider theft of dishonest acts by BitGo employees or executives.<br>\n             - Loss of keys.</p>\n          <p>When you repay, we co-sign the release of your collateral back into your coin balance and you can then withdraw it to any wallet address you choose.</p>\n          <a target=\"_blank\" href=\"https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral\">How we protect your collateral.</a>\n        ",
+                "answer6": "\n          <p>Your collateral is stored in a Prime Trust wallet that’s insured to $100,000,000. This protects you against:</p>\n            <p> - Third-party hacks, copying, or theft of private keys.<br>\n             - Insider theft of dishonest acts by BitGo employees or executives.<br>\n             - Loss of keys.</p>\n          <p>When you repay, we co-sign the release of your collateral back into your coin balance and you can then withdraw it to any wallet address you choose.</p>\n          <a target=\"_blank\" href=\"https://blog.myconstant.com/how-we-protect-your-money-and-collateral\">How we protect your collateral.</a>\n        ",
                 "question7": "How long will it take to match and get my cryptocurrency?",
                 "answer7": "\n        This depends on the rates and terms you set. Market rates will match you in thirty minutes, and you’ll match even faster if you set a higher rate. As we know timely settlement is important for margin traders, it might be worth paying more for a fast match. \n        ",
                 "question8": "Do you check my credit score?",
@@ -2859,18 +2861,18 @@
                 "question9": "What happens if I don’t repay the loan?",
                 "answer9": "\n          If you don’t repay the loan, your collateral will be sold to repay your investor. You get to keep your chosen cryptocurrency. That’s it.\n        ",
                 "question10": "What happens if my crypto collateral falls in value?",
-                "answer10": "\n        <p>We will notify you three times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, we’ll create a sell order to repay the investor. You keep your chosen cryptocurrency, but lose your collateral. </p>\n        <p>You receive email notifications at 125%, 120% and 115% of the investor’s principal plus earned interest. You can choose to repay early to avoid liquidation or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.</p>\n        <a target=\"_blank\" href=\"https://www.myconstant.com/blog/extra-protection-for-your-collateral-auto-top-up\">How to avoid liquidation with auto top-up.</a> \n        ",
+                "answer10": "\n        <p>We will notify you three times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, we’ll create a sell order to repay the investor. You keep your chosen cryptocurrency, but lose your collateral. </p>\n        <p>You receive email notifications at 125%, 120% and 115% of the investor’s principal plus earned interest. You can choose to repay early to avoid liquidation or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.</p>\n        <a target=\"_blank\" href=\"https://blog.myconstant.com/extra-protection-for-your-collateral-auto-top-up\">How to avoid liquidation with auto top-up.</a> \n        ",
                 "question11": "Can I repay early?",
                 "answer11": "\n        <p>If you'd like to pay back your loan before 75% of the term is up, that's absolutely fine. You simply have to pay interest for the days you are in possession of the loan, and just 50% of the original interest rate for the remaining days of the term.</p>\n        <p>If you'd like to pay back your loan after 75% of the term is up and claim back your collateral, that's also fine, but the interest due on that loan is the full percentage for the entire term.</p>\n        ",
                 "question12": "Can I recall excess if the value of my collateral increases?",
-                "answer12": "\n        <p>Yes. If the value of your collateral rises during your loan term, you can withdraw the difference from your Accounts page.</p>\n        <a target=\"_blank\" href=\"https://www.myconstant.com/blog/how-to-deposit-top-up-recall-crypto-constant\">How to deposit, top-up, and recall excess collateral.</a>\n        ",
+                "answer12": "\n        <p>Yes. If the value of your collateral rises during your loan term, you can withdraw the difference from your Accounts page.</p>\n        <a target=\"_blank\" href=\"https://blog.myconstant.com/how-to-deposit-top-up-recall-crypto-constant\">How to deposit, top-up, and recall excess collateral.</a>\n        ",
                 "question13": "What is the LTV (Loan-to-Value) Ratio? Is it always the same?",
                 "answer13": "\n        The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral. If you’re borrowing against stablecoins, the LTV ratio is 100% (you must put up 100% of the loan amount in stablecoins to obtain a loan).\n        ",
                 "question14": "What happens if I repay late?",
                 "answer14": "\n        The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due.\n        "
             },
             "intro": {
-                "content": "\n        <p>Fast and easy crypto credit</p>\n        <h1>Trade the margin.</h1>\n        <p class=\"h1\">Skip the exchange.</p>\n        <p class=\"h1\">Borrow against 60+ cryptos.</p>\n        <p/>\n        <p>Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.</p>\n        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href=\"https://www.myconstant.com/blog/multi-crypto-loans\" target=\"_blank\" class=\"underline\">our blog</a> and FAQs for more details.</p>\n      ",
+                "content": "\n        <p>Fast and easy crypto credit</p>\n        <h1>Trade the margin.</h1>\n        <p class=\"h1\">Skip the exchange.</p>\n        <p class=\"h1\">Borrow against 60+ cryptos.</p>\n        <p/>\n        <p>Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.</p>\n        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href=\"https://blog.myconstant.com/multi-crypto-loans\" target=\"_blank\" class=\"underline\">our blog</a> and FAQs for more details.</p>\n      ",
                 "desc": {
                     "1": "Your rates and terms",
                     "2": "Best crypto prices",
@@ -4448,13 +4450,13 @@
         },
         "faqs": {
             "question1": "What is peer-to-peer (P2P) lending?",
-            "answer1": "\n      <p>P2P lending is where one person lends to another in return for interest, without any third party getting in the way. Unlike bank lending, where the bank lends your deposits and keeps the lion’s share of interest, P2P lending lets you keep all the profits yourself.</p>\n      <p>On our platform, you also set your own rates and terms, which gives you plenty of flexibility to find the right investment. We also differ from other P2P lending platforms in that we only use liquid collateral – in other words, we secure loans with collateral that’s easy to sell if borrowers default, ensuring you get your money back (plus interest).</p>\n      <p>New to P2P lending? <a href=\"https://www.myconstant.com/blog/peer-to-peer-lending-what-you-should-know-before-investing\" class=\"underline\" target=\"_blank\">Here’s what to know before you invest.</a></p>\n      ",
+            "answer1": "\n      <p>P2P lending is where one person lends to another in return for interest, without any third party getting in the way. Unlike bank lending, where the bank lends your deposits and keeps the lion’s share of interest, P2P lending lets you keep all the profits yourself.</p>\n      <p>On our platform, you also set your own rates and terms, which gives you plenty of flexibility to find the right investment. We also differ from other P2P lending platforms in that we only use liquid collateral – in other words, we secure loans with collateral that’s easy to sell if borrowers default, ensuring you get your money back (plus interest).</p>\n      <p>New to P2P lending? <a href=\"https://blog.myconstant.com/peer-to-peer-lending-what-you-should-know-before-investing\" class=\"underline\" target=\"_blank\">Here’s what to know before you invest.</a></p>\n      ",
             "question2": "What makes Constant different from other P2P lending platforms?",
-            "answer2": "\n        <p>Constant is a fully-secured peer-to-peer lending platform. Every loan is backed by collateral of up to 150% of the loan amount, which is sold if borrowers default or its value falls to a threshold, protecting investors (borrowers keep the loan).</p>\n        <p>Unlike other platforms, Constant pools investor funds into a lending pool or reserve. This means you match instantly, whether you’re a borrower or an investor. We don’t need credit checks and we offer three fixed-term investments to give you flexibility.</p>\n        <p>As well as providing you with a platform on which to do business, we also believe in giving you the educational resources to reach your financial goals, fast. To learn more, <a href=\"https://myconstant.com/blog\" class=\"underline\" target=\"_blank\">check out our blog</a>.</p>\n        <p><a href=\"https://www.myconstant.com/blog/11-reasons-to-invest-with-constant\" class=\"underline\" target=\"_blank\">Discover 11 reasons to invest with Constant.</a></p>\n      ",
+            "answer2": "\n        <p>Constant is a fully-secured peer-to-peer lending platform. Every loan is backed by collateral of up to 150% of the loan amount, which is sold if borrowers default or its value falls to a threshold, protecting investors (borrowers keep the loan).</p>\n        <p>Unlike other platforms, Constant pools investor funds into a lending pool or reserve. This means you match instantly, whether you’re a borrower or an investor. We don’t need credit checks and we offer three fixed-term investments to give you flexibility.</p>\n        <p>As well as providing you with a platform on which to do business, we also believe in giving you the educational resources to reach your financial goals, fast. To learn more, <a href=\"https://blog.myconstant.com\" class=\"underline\" target=\"_blank\">check out our blog</a>.</p>\n        <p><a href=\"https://blog.myconstant.com/11-reasons-to-invest-with-constant\" class=\"underline\" target=\"_blank\">Discover 11 reasons to invest with Constant.</a></p>\n      ",
             "question3": "Who can participate?",
-            "answer3": "\n        <p>Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment). If you intend to invest fiat (USD), you will also need to pass KYC (Know Your Customer) checks.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-to-verify-your-id-on-constant-kyc\" class=\"underline\" target=\"_blank\">How to verify your ID (KYC).</a></p>\n      ",
+            "answer3": "\n        <p>Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment). If you intend to invest fiat (USD), you will also need to pass KYC (Know Your Customer) checks.</p>\n        <p><a href=\"https://blog.myconstant.com/how-to-verify-your-id-on-constant-kyc\" class=\"underline\" target=\"_blank\">How to verify your ID (KYC).</a></p>\n      ",
             "question4": "How does Constant protect customers’ assets?",
-            "answer4": "\n        <p>All loans are up to 150% backed by collateral put up by borrowers. If borrowers default or their collateral falls too much in value, the collateral is sold to repay investors.</p>\n        <p>In addition, we use qualified custodial partners (Prime Trust) to manage both fiat (USD) and digital assets. This additional layer of protection helps minimize the threat of theft, mismanagement, or loss of your assets.</p>\n        <p><a href=\"https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral\" class=\"underline\" target=\"_blank\">Read more about how we protect your assets.</a></p>\n      "
+            "answer4": "\n        <p>All loans are up to 150% backed by collateral put up by borrowers. If borrowers default or their collateral falls too much in value, the collateral is sold to repay investors.</p>\n        <p>In addition, we use qualified custodial partners (Prime Trust) to manage both fiat (USD) and digital assets. This additional layer of protection helps minimize the threat of theft, mismanagement, or loss of your assets.</p>\n        <p><a href=\"https://blog.myconstant.com/how-we-protect-your-money-and-collateral\" class=\"underline\" target=\"_blank\">Read more about how we protect your assets.</a></p>\n      "
         },
         "howItWorks": {
             "title": "How it works",
@@ -4683,7 +4685,7 @@
             "form": {
                 "gotoVerifyKyc": "Go to verify now",
                 "text1": "Set your own lending terms",
-                "text2": "<p>Choose a term you like and as soon as we receive your funds you’ll start earning interest. The longer you invest for the more interest you earn. If you’d like to end your term early, you can sell your investment in our <a href=\"https://www.myconstant.com/blog/constant-secondary-market\" target=\"_blank\" class=\"underline\">secondary market</a>.</p>",
+                "text2": "<p>Choose a term you like and as soon as we receive your funds you’ll start earning interest. The longer you invest for the more interest you earn. If you’d like to end your term early, you can sell your investment in our <a href=\"https://blog.myconstant.com/constant-secondary-market\" target=\"_blank\" class=\"underline\">secondary market</a>.</p>",
                 "text3": "We’re giving you a trial investment of $1000. When your term is up, we take the $1000 back, but the interest is yours to keep.",
                 "text4": "\n          <h5>You're almost done.</h5>\n          <p>For your security, we'll need you to verify your ID before using Constant.</p>\n        ",
                 "text5": "Free trial",
@@ -4875,7 +4877,7 @@
             "question4": "How do you protect my investment?",
             "answer4": "\n        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too:</p>\n        <ol>\n          <li>All of our borrowers must put up 150% of the loan amount as crypto collateral (100% if stablecoins to reflect their stability). If they don’t repay, we sell the collateral to repay you.</li>\n          <li>We also include a liquidation threshold to insure against a fall in the collateral’s value. If the value falls to 110% of your principal and earned interest (100% if a stablecoin), it’s sold to repay you.</li>\n          <li>We only accept vetted, quality cryptocurrencies and cap our exposure to these markets by daily trading volume. This ensures we can sell the collateral should the market dip.</li>\n        </ol>\n        <p>These protective measures help ensure you get the returns promised. However, all investment involves risk, and despite our best efforts, we can’t guarantee the return of your principal and profit. Therefore please invest wisely.</p>\n        <p><a href=\"/blog/how-we-protect-your-money-and-collateral\" className=\"underline\" target=\"_blank\">Read more about how we protect you.</a></p>\n      ",
             "question5": "What happens when my money isn’t on loan?",
-            "answer5": "\n        <p>When not on loan or waiting for a match, your money earns 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>\n        <p>If you're waiting for a match, your money remains in the custody of Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>\n        <p>Flex is enabled by default, but you can disable it from your Accounts page. You will no longer earn interest and your funds will remain in Prime Trust custody (unless you invest in a fixed-term loan).</p>\n        <p><a href=\"https://www.myconstant.com/blog/flex-or-prime-trust-constant\" className=\"underline\" target=\"_blank\">Prime Trust or Flex?</a></p>\n      ",
+            "answer5": "\n        <p>When not on loan or waiting for a match, your money earns 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>\n        <p>If you're waiting for a match, your money remains in the custody of Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>\n        <p>Flex is enabled by default, but you can disable it from your Accounts page. You will no longer earn interest and your funds will remain in Prime Trust custody (unless you invest in a fixed-term loan).</p>\n        <p><a href=\"https://blog.myconstant.com/flex-or-prime-trust-constant\" className=\"underline\" target=\"_blank\">Prime Trust or Flex?</a></p>\n      ",
             "question6": "What happens if a borrower repays early?",
             "answer6": "\n        <p>If a borrower repays before 75% of the loan term is complete, they’ll pay you earned interest to date plus 50% of the interest due on the remainder of the term.</p>\n        <p>If a borrower repays after 75% of the loan term is complete, they’ll pay you 100% of the interest due on the loan.</p>\n      ",
             "question7": "What happens if you have to sell borrower collateral to repay me?",
@@ -5050,10 +5052,11 @@
             "interestSpreadValues": "0.10%",
             "amount": "Amount (USD)",
             "interest": "Interest (APR)\n",
-            "term": "Term (Days)",
+            "term": "Term",
             "termValues": "{term}-Months",
             "matched": "Time",
-            "termMonth": "Term(Months)"
+            "termMonth": "Term(Months)",
+            "reserveOrderNote": "Earn 7.5%APR.\nFully secured.\nNo fees."
         },
         "balances": {
             "collateralBalances": "Withdraw crypto",
@@ -5130,11 +5133,14 @@
             },
             "form": {
                 "title": "Invest",
-                "amount": "Amount",
+                "amount": "Amount (USD)",
                 "interest": "Interest (APR)",
                 "term": "Term (Days)",
                 "termMonth": "{month}-Month",
-                "investButton": "Invest",
+                "investButton": "Invest now",
+                "cancel": "Cancel",
+                "availableBalance": "Available balance",
+                "availableInvest": "Available for investment",
                 "loginButton": "Log in or Sign up to invest",
                 "invalidAmount": "Sorry, you don't have enough funds in your account. Please deposit {amount} USD to complete your order.",
                 "getFeeFailed": "Sorry, something went wrong. Please try again.",
@@ -5176,7 +5182,11 @@
                 "usingStakingDesc": "Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.",
                 "stakingMinAmount": "The staking amount must be greater than {minVal} {currency}",
                 "goToAccountApp": "Please go to the Account tab to sign up or log in.",
-                "availableCredit": "Available Credit"
+                "availableCredit": "Available Credit",
+                "interest": "Interest (APR)",
+                "term": "Term (Days)",
+                "cancel": "Cancel",
+                "notEnoughBalance": "Please deposit sufficient collateral to credit your requested amount"
             },
             "createdSuccess": "Thanks! Your borrow order was successful. Your term has started and your funds are in your account and ready to use. To review your loans, please visit your Accounts page.",
             "errorMsgs": {
@@ -5218,7 +5228,12 @@
                 "usingStakingDesc": "Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.",
                 "stakingMinAmount": "stake amount must be great than {minVal} {currency}",
                 "goToAccountApp": "Please go to the Account tab to sign up or log in.",
-                "availableCredit": "Available Credit"
+                "availableCredit": "Available Credit",
+                "interest": "Interest (APR)",
+                "term": "Term (Days)",
+                "cancel": "Cancel",
+                "collateral": "Collateral",
+                "notEnoughBalance": "Please deposit sufficient collateral to credit your requested amount"
             },
             "errorMsgs": {
                 "notEnoughBalance": "Your balance is not enough to make borrow!",
@@ -5234,7 +5249,7 @@
     "deposit1": {
         "faqs": {
             "question1": "What is Flex?",
-            "answer1": "\n      <p>Flex is a deposit account that earns you 4% APY through automatic lending. When you deposit money into Flex, it goes into a liquidity pool managed by Compound Finance. Borrowers who’ve put up collateral can then secure loans from the pool in return for interest – and we pay that interest to you. Since your deposits go to a pool rather than individual borrowers, you can withdraw or deposit anytime, as often as you like, and without any fees.</p>\n      <p><a href=\"https://www.myconstant.com/blog/flex-apy-account-compound-finance\" class=\"underline\" target=\"_blank\">How Flex works.</a></p>\n      ",
+            "answer1": "\n      <p>Flex is a deposit account that earns you 4% APY through automatic lending. When you deposit money into Flex, it goes into a liquidity pool managed by Compound Finance. Borrowers who’ve put up collateral can then secure loans from the pool in return for interest – and we pay that interest to you. Since your deposits go to a pool rather than individual borrowers, you can withdraw or deposit anytime, as often as you like, and without any fees.</p>\n      <p><a href=\"https://blog.myconstant.com/flex-apy-account-compound-finance\" class=\"underline\" target=\"_blank\">How Flex works.</a></p>\n      ",
             "question2": "Why 4% APY?",
             "answer2": "Compound Finance uses a blockchain protocol that intelligently manages the lending pool. It also sets interest rates according to supply and demand. At the moment, the rate is fixed at 4% APY. In the future, it could be higher or lower depending on activity in Compound’s lending market.",
             "question3": "What is Compound Finance?",
@@ -5246,7 +5261,7 @@
             "question6": "How do my deposits earn interest?",
             "answer6": "Flex uses an API with Compound Finance to lend your deposits to a liquidity pool. Others borrow from the pool in return for putting up collateral, and you earn the interest. In other words, Flex is very similar to how investments work on Constant, only with Flex you can withdraw anytime.",
             "question7": "Are my deposits insured?",
-            "answer7": "\n      <p>Not always, no. While held with our trust partner, Prime Trust, your deposits are covered by a $130,000,000 insurance policy. However, we expect deposits will spend most of their time earning interest through Compound Finance, so will instead be protected by collateral put up by Compound's users.</p>\n      <p><a href=\"https://www.myconstant.com/blog/flex-or-prime-trust-constant\" class=\"underline\" target=\"_blank\">Earn interest on your deposits or insure them?</a></p>\n      ",
+            "answer7": "\n      <p>Not always, no. While held with our trust partner, Prime Trust, your deposits are covered by a $130,000,000 insurance policy. However, we expect deposits will spend most of their time earning interest through Compound Finance, so will instead be protected by collateral put up by Compound's users.</p>\n      <p><a href=\"https://blog.myconstant.com/flex-or-prime-trust-constant\" class=\"underline\" target=\"_blank\">Earn interest on your deposits or insure them?</a></p>\n      ",
             "question8": "Can I deposit collateral or other cryptocurrency into Flex?",
             "answer8": "At the moment, Flex only accepts USD and USD-backed stablecoins.",
             "question9": "Can I earn interest while waiting for an investment order to match?",
@@ -6058,7 +6073,7 @@
                     },
                     "6": {
                         "title": "Why Tung invested all his TUSD savings with Constant",
-                        "link": "https://www.myconstant.com/blog/invested-tusd-with-constant",
+                        "link": "https://blog.myconstant.com/invested-tusd-with-constant",
                         "date": "Jun 27, 2019",
                         "author": "Constant"
                     }
@@ -7342,7 +7357,7 @@
                         "description": "A financially strong company in a leading or niche market position. It has solid asset quality, a robust and well-structured credit policy, debt collection procedures, and risk management policies. The company is led by a management team with a proven track record and operates in a stable and established regulatory environment."
                     },
                     "moderate": {
-                        "title": "B+ B B-<br/>Moderate risk",
+                        "title": "B+ B B-<br/>Medium risk",
                         "description": "A company with a business standing described by one or more of the following indicators: stable but somewhat weaker financials, an average-to-good market position, adequate credit policy, adequate debt collection procedures, and a shorter asset quality track record. It is led by a management team with relevant experience, and adequate financial strengths and operates in a less regulated and/or uncertain environment."
                     },
                     "high": {
@@ -7350,7 +7365,7 @@
                         "description": "A company with considerable weaknesses in financial performance and standing. They can be described by one or more of the following indicators: limited or weakening competitive position, below average/rapidly decreasing asset quality, a limited track record, inexperienced management, weaker financial strengths, and operating under substantial regulatory risk."
                     },
                     "extremelyHigh": {
-                        "title": "D+ D D-<br/>Extremely high risk",
+                        "title": "D<br/>Extremely high risk",
                         "description": "A company that has substantial weakness in financial performance and standing. Asset quality is sub-standard, management shows a significant lack of experience in managing and controlling the risk of the lending business, operating under substantial regulatory risk, and/or operates in a country that has a significant risk of political instability that would impact the lending business in the near future."
                     }
                 }
@@ -7376,9 +7391,10 @@
                 }
             }
         },
-        "reserveType": {
-            "24": "LO investment",
-            "25": "LO repayment"
+        "filter": {
+            "clearAll": "Clear All",
+            "cancel": "Cancel",
+            "done": "Done"
         }
     }
 }

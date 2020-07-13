@@ -862,6 +862,8 @@
 %%%.me.history.orderType.21%%%,"Referral Bonus"
 %%%.me.history.orderType.22%%%,"Purchase"
 %%%.me.history.orderType.23%%%,"Refund"
+%%%.me.history.orderType.24%%%,"LO investment"
+%%%.me.history.orderType.25%%%,"LO repayment"
 %%%.me.history.orderType.26%%%,"LO Investment"
 %%%.me.history.orderType.101%%%,"Bonus"
 %%%.me.history.orderType.102%%%,"Coupon Signup"
@@ -2196,17 +2198,17 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.constantLoan.faqs.question1%%%,"How long will it take to get my loan?"
 %%%.home.constantLoan.faqs.answer1%%%,"
         <p>As soon as we receive your collateral, we’ll deposit your loan into your Constant account. You can withdraw your loan as fiat to your bank account or as a stablecoin to your wallet address. All withdrawals are free.</p>
-        <p><a href=""https://www.myconstant.com/blog/how-to-borrow-against-crypto-4-simple-steps"" className=""underline"" target=""_blank"">How to borrow in 4 simple steps.</a></p>
+        <p><a href=""https://blog.myconstant.com/how-to-borrow-against-crypto-4-simple-steps"" className=""underline"" target=""_blank"">How to borrow in 4 simple steps.</a></p>
       "
 %%%.home.constantLoan.faqs.question2%%%,"Do you check my credit score?"
 %%%.home.constantLoan.faqs.answer2%%%,"
         <p>As we only offer secured loans backed by collateral, there is no need for credit scoring. All you need is adequate collateral to secure your loan. To see how much collateral you need to secure your loan, simply enter the amount you’d like to borrow. The calculator will work out the amount for you.</p>
-        <p><a href=""https://www.myconstant.com/blog/how-to-borrow-against-crypto-4-simple-steps"" className=""underline"" target=""_blank"">How to borrow in 4 simple steps.</a></p>
+        <p><a href=""https://blog.myconstant.com/how-to-borrow-against-crypto-4-simple-steps"" className=""underline"" target=""_blank"">How to borrow in 4 simple steps.</a></p>
       "
 %%%.home.constantLoan.faqs.question3%%%,"How do you protect my collateral?"
 %%%.home.constantLoan.faqs.answer3%%%,"
         <p>Depending on your collateral, it’s either held safely in Prime Trust custody, an Ethereum smart contract, or a password-protected web wallet hosted on a dedicated server (to which only our CEO and CTO have access). When you repay, your collateral is immediately transferred back to you.</p>
-        <p><a href=""https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral"" className=""underline"" target=""_blank"">How we protect your collateral.</a></p>
+        <p><a href=""https://blog.myconstant.com/how-we-protect-your-money-and-collateral"" className=""underline"" target=""_blank"">How we protect your collateral.</a></p>
       "
 %%%.home.constantLoan.faqs.question4%%%,"What happens if I don’t repay the loan?"
 %%%.home.constantLoan.faqs.answer4%%%,"If you don’t repay the loan, your collateral will be sold to repay your investor. You get to keep the loan. That’s it."
@@ -2215,7 +2217,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         <p>We will notify you three times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, we’ll create a sell order to repay the investor. You keep the loan, but you lose your collateral.</p>
         <p>Borrowers will receive notifications at 125%, 120% and 115% of the investor’s principal plus earned interest. You can choose to repay early to avoid liquidation or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.</p>
         <p>If you’re borrowing against stablecoins, you will be notified at 115%, 110%, and finally 105%. Once your collateral falls to 100% of the loan amount it will be sold to repay the investor.</p>
-        <p><a href=""https://www.myconstant.com/blog/extra-protection-for-your-collateral-auto-top-up"" className=""underline"" target=""_blank"">How to avoid liquidation with auto top-up.</a></p>
+        <p><a href=""https://blog.myconstant.com/extra-protection-for-your-collateral-auto-top-up"" className=""underline"" target=""_blank"">How to avoid liquidation with auto top-up.</a></p>
       "
 %%%.home.constantLoan.faqs.question6%%%,"Can I repay early?"
 %%%.home.constantLoan.faqs.answer6%%%,"
@@ -2225,7 +2227,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.constantLoan.faqs.question7%%%,"Can I recall excess if the value of my collateral increases?"
 %%%.home.constantLoan.faqs.answer7%%%,"
         <p>Yes. If the value of your collateral rises during your loan term, you can withdraw the difference from your Accounts page.</p>
-        <p><a href=""https://www.myconstant.com/blog/how-to-deposit-top-up-recall-crypto-constant"" className=""underline"" target=""_blank"">How to deposit, top-up, and recall excess collateral.</a></p>
+        <p><a href=""https://blog.myconstant.com/how-to-deposit-top-up-recall-crypto-constant"" className=""underline"" target=""_blank"">How to deposit, top-up, and recall excess collateral.</a></p>
       "
 %%%.home.constantLoan.faqs.question8%%%,"What is the LTV (Loan-to-Value) Ratio? Is it always the same?"
 %%%.home.constantLoan.faqs.answer8%%%,"
@@ -2329,7 +2331,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         <h1>Get cash for crypto without needing to sell.</h1>
         <p/>
         <p>Get the funds you need at rates you’re willing to pay. Your collateral is securely escrowed and returned to you when you repay. Free withdrawals in cash or stablecoins.</p>
-        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href=""https://www.myconstant.com/blog/multi-crypto-loans"" target=""_blank"" class=""underline"">our blog</a> and FAQs for more details.</p>
+        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href=""https://blog.myconstant.com/multi-crypto-loans"" target=""_blank"" class=""underline"">our blog</a> and FAQs for more details.</p>
         "
 %%%.home.constantLoan.intro.desc.1%%%,"Secure escrow"
 %%%.home.constantLoan.intro.desc.2%%%,"No credit checks"
@@ -2840,7 +2842,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
              - Insider theft of dishonest acts by BitGo employees or executives.<br>
              - Loss of keys.</p>
           <p>When you repay, we co-sign the release of your collateral back into your coin balance and you can then withdraw it to any wallet address you choose.</p>
-          <a target=""_blank"" href=""https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral"">How we protect your collateral.</a>
+          <a target=""_blank"" href=""https://blog.myconstant.com/how-we-protect-your-money-and-collateral"">How we protect your collateral.</a>
         "
 %%%.home.constantC2CLoan.faqs.question7%%%,"How long will it take to match and get my cryptocurrency?"
 %%%.home.constantC2CLoan.faqs.answer7%%%,"
@@ -2858,7 +2860,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.constantC2CLoan.faqs.answer10%%%,"
         <p>We will notify you three times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, we’ll create a sell order to repay the investor. You keep your chosen cryptocurrency, but lose your collateral. </p>
         <p>You receive email notifications at 125%, 120% and 115% of the investor’s principal plus earned interest. You can choose to repay early to avoid liquidation or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.</p>
-        <a target=""_blank"" href=""https://www.myconstant.com/blog/extra-protection-for-your-collateral-auto-top-up"">How to avoid liquidation with auto top-up.</a> 
+        <a target=""_blank"" href=""https://blog.myconstant.com/extra-protection-for-your-collateral-auto-top-up"">How to avoid liquidation with auto top-up.</a> 
         "
 %%%.home.constantC2CLoan.faqs.question11%%%,"Can I repay early?"
 %%%.home.constantC2CLoan.faqs.answer11%%%,"
@@ -2868,7 +2870,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
 %%%.home.constantC2CLoan.faqs.question12%%%,"Can I recall excess if the value of my collateral increases?"
 %%%.home.constantC2CLoan.faqs.answer12%%%,"
         <p>Yes. If the value of your collateral rises during your loan term, you can withdraw the difference from your Accounts page.</p>
-        <a target=""_blank"" href=""https://www.myconstant.com/blog/how-to-deposit-top-up-recall-crypto-constant"">How to deposit, top-up, and recall excess collateral.</a>
+        <a target=""_blank"" href=""https://blog.myconstant.com/how-to-deposit-top-up-recall-crypto-constant"">How to deposit, top-up, and recall excess collateral.</a>
         "
 %%%.home.constantC2CLoan.faqs.question13%%%,"What is the LTV (Loan-to-Value) Ratio? Is it always the same?"
 %%%.home.constantC2CLoan.faqs.answer13%%%,"
@@ -2885,7 +2887,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         <p class=""h1"">Borrow against 60+ cryptos.</p>
         <p/>
         <p>Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.</p>
-        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href=""https://www.myconstant.com/blog/multi-crypto-loans"" target=""_blank"" class=""underline"">our blog</a> and FAQs for more details.</p>
+        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href=""https://blog.myconstant.com/multi-crypto-loans"" target=""_blank"" class=""underline"">our blog</a> and FAQs for more details.</p>
       "
 %%%.home.constantC2CLoan.intro.desc.1%%%,"Your rates and terms"
 %%%.home.constantC2CLoan.intro.desc.2%%%,"Best crypto prices"
@@ -4645,25 +4647,25 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.newHome.faqs.answer1%%%,"
       <p>P2P lending is where one person lends to another in return for interest, without any third party getting in the way. Unlike bank lending, where the bank lends your deposits and keeps the lion’s share of interest, P2P lending lets you keep all the profits yourself.</p>
       <p>On our platform, you also set your own rates and terms, which gives you plenty of flexibility to find the right investment. We also differ from other P2P lending platforms in that we only use liquid collateral – in other words, we secure loans with collateral that’s easy to sell if borrowers default, ensuring you get your money back (plus interest).</p>
-      <p>New to P2P lending? <a href=""https://www.myconstant.com/blog/peer-to-peer-lending-what-you-should-know-before-investing"" class=""underline"" target=""_blank"">Here’s what to know before you invest.</a></p>
+      <p>New to P2P lending? <a href=""https://blog.myconstant.com/peer-to-peer-lending-what-you-should-know-before-investing"" class=""underline"" target=""_blank"">Here’s what to know before you invest.</a></p>
       "
 %%%.newHome.faqs.question2%%%,"What makes Constant different from other P2P lending platforms?"
 %%%.newHome.faqs.answer2%%%,"
         <p>Constant is a fully-secured peer-to-peer lending platform. Every loan is backed by collateral of up to 150% of the loan amount, which is sold if borrowers default or its value falls to a threshold, protecting investors (borrowers keep the loan).</p>
         <p>Unlike other platforms, Constant pools investor funds into a lending pool or reserve. This means you match instantly, whether you’re a borrower or an investor. We don’t need credit checks and we offer three fixed-term investments to give you flexibility.</p>
-        <p>As well as providing you with a platform on which to do business, we also believe in giving you the educational resources to reach your financial goals, fast. To learn more, <a href=""https://myconstant.com/blog"" class=""underline"" target=""_blank"">check out our blog</a>.</p>
-        <p><a href=""https://www.myconstant.com/blog/11-reasons-to-invest-with-constant"" class=""underline"" target=""_blank"">Discover 11 reasons to invest with Constant.</a></p>
+        <p>As well as providing you with a platform on which to do business, we also believe in giving you the educational resources to reach your financial goals, fast. To learn more, <a href=""https://blog.myconstant.com"" class=""underline"" target=""_blank"">check out our blog</a>.</p>
+        <p><a href=""https://blog.myconstant.com/11-reasons-to-invest-with-constant"" class=""underline"" target=""_blank"">Discover 11 reasons to invest with Constant.</a></p>
       "
 %%%.newHome.faqs.question3%%%,"Who can participate?"
 %%%.newHome.faqs.answer3%%%,"
         <p>Anyone can participate, as long as you have an internet connection (to use our website) and access to a bank account (to receive a loan or repayment). If you intend to invest fiat (USD), you will also need to pass KYC (Know Your Customer) checks.</p>
-        <p><a href=""https://www.myconstant.com/blog/how-to-verify-your-id-on-constant-kyc"" class=""underline"" target=""_blank"">How to verify your ID (KYC).</a></p>
+        <p><a href=""https://blog.myconstant.com/how-to-verify-your-id-on-constant-kyc"" class=""underline"" target=""_blank"">How to verify your ID (KYC).</a></p>
       "
 %%%.newHome.faqs.question4%%%,"How does Constant protect customers’ assets?"
 %%%.newHome.faqs.answer4%%%,"
         <p>All loans are up to 150% backed by collateral put up by borrowers. If borrowers default or their collateral falls too much in value, the collateral is sold to repay investors.</p>
         <p>In addition, we use qualified custodial partners (Prime Trust) to manage both fiat (USD) and digital assets. This additional layer of protection helps minimize the threat of theft, mismanagement, or loss of your assets.</p>
-        <p><a href=""https://www.myconstant.com/blog/how-we-protect-your-money-and-collateral"" class=""underline"" target=""_blank"">Read more about how we protect your assets.</a></p>
+        <p><a href=""https://blog.myconstant.com/how-we-protect-your-money-and-collateral"" class=""underline"" target=""_blank"">Read more about how we protect your assets.</a></p>
       "
 %%%.newHome.howItWorks.title%%%,"How it works"
 %%%.newHome.howItWorks.desc%%%,"Constant connects investors with borrowers to do business together. Crypto collateral and buy-back guarantees protect investors’ funds while our custodial partner safely manages the movement of funds and collateral."
@@ -4807,7 +4809,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.home1.lendingSection.intro.youtube.title%%%,"Why invest with Constant?"
 %%%.home1.lendingSection.form.gotoVerifyKyc%%%,"Go to verify now"
 %%%.home1.lendingSection.form.text1%%%,"Set your own lending terms"
-%%%.home1.lendingSection.form.text2%%%,"<p>Choose a term you like and as soon as we receive your funds you’ll start earning interest. The longer you invest for the more interest you earn. If you’d like to end your term early, you can sell your investment in our <a href=""https://www.myconstant.com/blog/constant-secondary-market"" target=""_blank"" class=""underline"">secondary market</a>.</p>"
+%%%.home1.lendingSection.form.text2%%%,"<p>Choose a term you like and as soon as we receive your funds you’ll start earning interest. The longer you invest for the more interest you earn. If you’d like to end your term early, you can sell your investment in our <a href=""https://blog.myconstant.com/constant-secondary-market"" target=""_blank"" class=""underline"">secondary market</a>.</p>"
 %%%.home1.lendingSection.form.text3%%%,"We’re giving you a trial investment of $1000. All you have to do is choose your rate, and we’ll find you a match. When the trial is up, we take the $1000 back, but the interest is yours to keep."
 %%%.home1.lendingSection.form.text4%%%,"
           <h5>You're almost done.</h5>
@@ -5115,7 +5117,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
         <p>When not on loan or waiting for a match, your money earns 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>
         <p>If you're waiting for a match, your money remains in the custody of Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>
         <p>Flex is enabled by default, but you can disable it from your Accounts page. You will no longer earn interest and your funds will remain in Prime Trust custody (unless you invest in a fixed-term loan).</p>
-        <p><a href=""https://www.myconstant.com/blog/flex-or-prime-trust-constant"" className=""underline"" target=""_blank"">Prime Trust or Flex?</a></p>
+        <p><a href=""https://blog.myconstant.com/flex-or-prime-trust-constant"" className=""underline"" target=""_blank"">Prime Trust or Flex?</a></p>
       "
 %%%.home1.faqs.question6%%%,"What happens if a borrower repays early?"
 %%%.home1.faqs.answer6%%%,"
@@ -5282,10 +5284,13 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.proLending.watchBoard.interestSpreadValues%%%,"0.10%"
 %%%.proLending.watchBoard.amount%%%,"Amount(USD)"
 %%%.proLending.watchBoard.interest%%%,"Interest(APR)"
-%%%.proLending.watchBoard.term%%%,"Term(Days)"
+%%%.proLending.watchBoard.term%%%,"Term"
 %%%.proLending.watchBoard.termValues%%%,"{term}-Months"
 %%%.proLending.watchBoard.matched%%%,"Matched"
 %%%.proLending.watchBoard.termMonth%%%,"Term(Months)"
+%%%.proLending.watchBoard.reserveOrderNote%%%,"Earn 7.5%APR.
+Fully secured.
+No fees."
 %%%.proLending.balances.collateralBalances%%%,"Withdraw crypto"
 %%%.proLending.balances.title%%%,"Balances"
 %%%.proLending.balances.titleDesc%%%,"All investment and collateral deposits will show here."
@@ -5345,11 +5350,14 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.proLending.investBooking.deposit.depositButton%%%,"Deposit more"
 %%%.proLending.investBooking.deposit.depositNote%%%,"If you don't want to miss  invest opportunity, please make sure to keep your funds sufficient."
 %%%.proLending.investBooking.form.title%%%,"Invest"
-%%%.proLending.investBooking.form.amount%%%,"Amount"
+%%%.proLending.investBooking.form.amount%%%,"Amount (USD)"
 %%%.proLending.investBooking.form.interest%%%,"Interest (APR)"
 %%%.proLending.investBooking.form.term%%%,"Term (Days)"
 %%%.proLending.investBooking.form.termMonth%%%,"{month}-Month"
-%%%.proLending.investBooking.form.investButton%%%,"Invest"
+%%%.proLending.investBooking.form.investButton%%%,"Invest now"
+%%%.proLending.investBooking.form.cancel%%%,"Cancel"
+%%%.proLending.investBooking.form.availableBalance%%%,"Available balance"
+%%%.proLending.investBooking.form.availableInvest%%%,"Available for investment"
 %%%.proLending.investBooking.form.loginButton%%%,"Log in or Sign up to invest"
 %%%.proLending.investBooking.form.invalidAmount%%%,"Sorry, you don't have enough funds in your account. Please deposit {amount} USD to complete your order."
 %%%.proLending.investBooking.form.getFeeFailed%%%,"Can not get fee in this time, please try again."
@@ -5388,6 +5396,10 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.proLending.borrowBooking.exchange.stakingMinAmount%%%,"stake amount must be great than {minVal} {currency}"
 %%%.proLending.borrowBooking.exchange.goToAccountApp%%%,"Please go to the Account tab to sign up or log in."
 %%%.proLending.borrowBooking.exchange.availableCredit%%%,"Available Credit"
+%%%.proLending.borrowBooking.exchange.interest%%%,"Interest (APR)"
+%%%.proLending.borrowBooking.exchange.term%%%,"Term (Days)"
+%%%.proLending.borrowBooking.exchange.cancel%%%,"Cancel"
+%%%.proLending.borrowBooking.exchange.notEnoughBalance%%%,"Please deposit sufficient collateral to credit your requested amount"
 %%%.proLending.borrowBooking.createdSuccess%%%,"Thanks! Your borrow order was successful. Your term has started and your funds are in your account and ready to use. To review your loans, please visit your Accounts page."
 %%%.proLending.borrowBooking.errorMsgs.notEnoughBalance%%%,"Your Available Credit is {amount} USD. Please deposit sufficient collateral to credit your requested amount"
 %%%.proLending.borrowBooking.errorMsgs.generateCollateralAddressFail%%%,"Can't generate collateral address. Please try again!"
@@ -5424,6 +5436,11 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.proLending.borrowC2CBooking.exchange.stakingMinAmount%%%,"stake amount must be great than {minVal} {currency}"
 %%%.proLending.borrowC2CBooking.exchange.goToAccountApp%%%,"Please go to the Account tab to sign up or log in."
 %%%.proLending.borrowC2CBooking.exchange.availableCredit%%%,"Available Credit"
+%%%.proLending.borrowC2CBooking.exchange.interest%%%,"Interest (APR)"
+%%%.proLending.borrowC2CBooking.exchange.term%%%,"Term (Days)"
+%%%.proLending.borrowC2CBooking.exchange.cancel%%%,"Cancel"
+%%%.proLending.borrowC2CBooking.exchange.collateral%%%,"Collateral"
+%%%.proLending.borrowC2CBooking.exchange.notEnoughBalance%%%,"Please deposit sufficient collateral to credit your requested amount"
 %%%.proLending.borrowC2CBooking.errorMsgs.notEnoughBalance%%%,"Your balance is not enough to make borrow!"
 %%%.proLending.borrowC2CBooking.errorMsgs.generateCollateralAddressFail%%%,"Can't generate collateral address. Please try again!"
 %%%.proLending.borrowC2CBooking.errorMsgs.maxOfCollateralHolding%%%,"Please try a different coin. To manage risk, the platform can hold only 10% of any coin's 24h trading volume."
@@ -5434,7 +5451,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.deposit1.faqs.question1%%%,"What is Flex?"
 %%%.deposit1.faqs.answer1%%%,"
       <p>Flex is a deposit account that earns you 4% APY through automatic lending. When you deposit money into Flex, it goes into a liquidity pool managed by Compound Finance. Borrowers who’ve put up collateral can then secure loans from the pool in return for interest – and we pay that interest to you. Since your deposits go to a pool rather than individual borrowers, you can withdraw or deposit anytime, as often as you like, and without any fees.</p>
-      <p><a href=""https://www.myconstant.com/blog/flex-apy-account-compound-finance"" class=""underline"" target=""_blank"">How Flex works.</a></p>
+      <p><a href=""https://blog.myconstant.com/flex-apy-account-compound-finance"" class=""underline"" target=""_blank"">How Flex works.</a></p>
       "
 %%%.deposit1.faqs.question2%%%,"Why 4% APY?"
 %%%.deposit1.faqs.answer2%%%,"Compound Finance uses a blockchain protocol that intelligently manages the lending pool. It also sets interest rates according to supply and demand. At the moment, the rate is fixed at 4% APY. In the future, it could be higher or lower depending on activity in Compound’s lending market."
@@ -5453,7 +5470,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.deposit1.faqs.question7%%%,"Are my deposits insured?"
 %%%.deposit1.faqs.answer7%%%,"
       <p>Not always, no. While held with our trust partner, Prime Trust, your deposits are covered by a $130,000,000 insurance policy. However, we expect deposits will spend most of their time earning interest through Compound Finance, so will instead be protected by collateral put up by Compound's users.</p>
-      <p><a href=""https://www.myconstant.com/blog/flex-or-prime-trust-constant"" class=""underline"" target=""_blank"">Earn interest on your deposits or insure them?</a></p>
+      <p><a href=""https://blog.myconstant.com/flex-or-prime-trust-constant"" class=""underline"" target=""_blank"">Earn interest on your deposits or insure them?</a></p>
       "
 %%%.deposit1.faqs.question8%%%,"Can I deposit collateral or other cryptocurrency into Flex?"
 %%%.deposit1.faqs.answer8%%%,"At the moment, Flex only accepts USD and USD-backed stablecoins."
@@ -6142,7 +6159,7 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.whyPeopleLoveUs.customers.testimonials.articles.5.date%%%,"Dec 13, 2019"
 %%%.whyPeopleLoveUs.customers.testimonials.articles.5.author%%%,"End of the Chain"
 %%%.whyPeopleLoveUs.customers.testimonials.articles.6.title%%%,"Why Tung invested all his TUSD savings with Constant"
-%%%.whyPeopleLoveUs.customers.testimonials.articles.6.link%%%,"https://www.myconstant.com/blog/invested-tusd-with-constant"
+%%%.whyPeopleLoveUs.customers.testimonials.articles.6.link%%%,"https://blog.myconstant.com/invested-tusd-with-constant"
 %%%.whyPeopleLoveUs.customers.testimonials.articles.6.date%%%,"Jun 27, 2019"
 %%%.whyPeopleLoveUs.customers.testimonials.articles.6.author%%%,"Constant"
 %%%.whyPeopleLoveUs.press.consumerFinance.title%%%,"CONSUMER FINANCE"
@@ -7232,11 +7249,11 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.loanOriginators.constantRating.howRate.rangeNote%%%,"After this, we will publish the final rating of each loan originator ranging from A to D"
 %%%.loanOriginators.constantRating.howRate.ranges.low.title%%%,"A+ A A-<br/>Low risk"
 %%%.loanOriginators.constantRating.howRate.ranges.low.description%%%,"A financially strong company in a leading or niche market position. It has solid asset quality, a robust and well-structured credit policy, debt collection procedures, and risk management policies. The company is led by a management team with a proven track record and operates in a stable and established regulatory environment."
-%%%.loanOriginators.constantRating.howRate.ranges.moderate.title%%%,"B+ B B-<br/>Moderate risk"
+%%%.loanOriginators.constantRating.howRate.ranges.moderate.title%%%,"B+ B B-<br/>Medium risk"
 %%%.loanOriginators.constantRating.howRate.ranges.moderate.description%%%,"A company with a business standing described by one or more of the following indicators: stable but somewhat weaker financials, an average-to-good market position, adequate credit policy, adequate debt collection procedures, and a shorter asset quality track record. It is led by a management team with relevant experience, and adequate financial strengths and operates in a less regulated and/or uncertain environment."
 %%%.loanOriginators.constantRating.howRate.ranges.high.title%%%,"C+ C C-<br/>High risk"
 %%%.loanOriginators.constantRating.howRate.ranges.high.description%%%,"A company with considerable weaknesses in financial performance and standing. They can be described by one or more of the following indicators: limited or weakening competitive position, below average/rapidly decreasing asset quality, a limited track record, inexperienced management, weaker financial strengths, and operating under substantial regulatory risk."
-%%%.loanOriginators.constantRating.howRate.ranges.extremelyHigh.title%%%,"D+ D D-<br/>Extremely high risk"
+%%%.loanOriginators.constantRating.howRate.ranges.extremelyHigh.title%%%,"D<br/>Extremely high risk"
 %%%.loanOriginators.constantRating.howRate.ranges.extremelyHigh.description%%%,"A company that has substantial weakness in financial performance and standing. Asset quality is sub-standard, management shows a significant lack of experience in managing and controlling the risk of the lending business, operating under substantial regulatory risk, and/or operates in a country that has a significant risk of political instability that would impact the lending business in the near future."
 %%%.loanOriginators.constantRating.howOfter.title%%%,"How often do you evaluate your loan originators?"
 %%%.loanOriginators.constantRating.howOfter.description%%%,"Every quarter we thoroughly assess our loan originators to decide their status in the next quarter."
@@ -7252,5 +7269,6 @@ Exchange margin accounts typically only use the price on that exchange, so you c
 %%%.loanOriginators.constantRating.howOfter.downgrade.3%%%,"The company undergoes forced restructuring."
 %%%.loanOriginators.constantRating.howOfter.downgrade.4%%%,"Regulation changes for the worse or a major national risk impacting the future of their lending business arises."
 %%%.loanOriginators.constantRating.howOfter.downgrade.title%%%,"We downgrade a loan originator if:"
-%%%.loanOriginators.reserveType.24%%%,"LO investment"
-%%%.loanOriginators.reserveType.25%%%,"LO repayment"
+%%%.loanOriginators.filter.clearAll%%%,"Clear All"
+%%%.loanOriginators.filter.cancel%%%,"Cancel"
+%%%.loanOriginators.filter.done%%%,"Done"

@@ -908,6 +908,8 @@
                 "21": "%%%.me.history.orderType.21%%%",
                 "22": "%%%.me.history.orderType.22%%%",
                 "23": "%%%.me.history.orderType.23%%%",
+                "24": "%%%.me.history.orderType.24%%%",
+                "25": "%%%.me.history.orderType.25%%%",
                 "26": "%%%.me.history.orderType.26%%%",
                 "101": "%%%.me.history.orderType.101%%%",
                 "102": "%%%.me.history.orderType.102%%%",
@@ -5053,7 +5055,8 @@
             "term": "%%%.proLending.watchBoard.term%%%",
             "termValues": "%%%.proLending.watchBoard.termValues%%%",
             "matched": "%%%.proLending.watchBoard.matched%%%",
-            "termMonth": "%%%.proLending.watchBoard.termMonth%%%"
+            "termMonth": "%%%.proLending.watchBoard.termMonth%%%",
+            "reserveOrderNote": "%%%.proLending.watchBoard.reserveOrderNote%%%"
         },
         "balances": {
             "collateralBalances": "%%%.proLending.balances.collateralBalances%%%",
@@ -5135,6 +5138,9 @@
                 "term": "%%%.proLending.investBooking.form.term%%%",
                 "termMonth": "%%%.proLending.investBooking.form.termMonth%%%",
                 "investButton": "%%%.proLending.investBooking.form.investButton%%%",
+                "cancel": "%%%.proLending.investBooking.form.cancel%%%",
+                "availableBalance": "%%%.proLending.investBooking.form.availableBalance%%%",
+                "availableInvest": "%%%.proLending.investBooking.form.availableInvest%%%",
                 "loginButton": "%%%.proLending.investBooking.form.loginButton%%%",
                 "invalidAmount": "%%%.proLending.investBooking.form.invalidAmount%%%",
                 "getFeeFailed": "%%%.proLending.investBooking.form.getFeeFailed%%%",
@@ -5176,7 +5182,11 @@
                 "usingStakingDesc": "%%%.proLending.borrowBooking.exchange.usingStakingDesc%%%",
                 "stakingMinAmount": "%%%.proLending.borrowBooking.exchange.stakingMinAmount%%%",
                 "goToAccountApp": "%%%.proLending.borrowBooking.exchange.goToAccountApp%%%",
-                "availableCredit": "%%%.proLending.borrowBooking.exchange.availableCredit%%%"
+                "availableCredit": "%%%.proLending.borrowBooking.exchange.availableCredit%%%",
+                "interest": "%%%.proLending.borrowBooking.exchange.interest%%%",
+                "term": "%%%.proLending.borrowBooking.exchange.term%%%",
+                "cancel": "%%%.proLending.borrowBooking.exchange.cancel%%%",
+                "notEnoughBalance": "%%%.proLending.borrowBooking.exchange.notEnoughBalance%%%"
             },
             "createdSuccess": "%%%.proLending.borrowBooking.createdSuccess%%%",
             "errorMsgs": {
@@ -5218,7 +5228,12 @@
                 "usingStakingDesc": "%%%.proLending.borrowC2CBooking.exchange.usingStakingDesc%%%",
                 "stakingMinAmount": "%%%.proLending.borrowC2CBooking.exchange.stakingMinAmount%%%",
                 "goToAccountApp": "%%%.proLending.borrowC2CBooking.exchange.goToAccountApp%%%",
-                "availableCredit": "%%%.proLending.borrowC2CBooking.exchange.availableCredit%%%"
+                "availableCredit": "%%%.proLending.borrowC2CBooking.exchange.availableCredit%%%",
+                "interest": "%%%.proLending.borrowC2CBooking.exchange.interest%%%",
+                "term": "%%%.proLending.borrowC2CBooking.exchange.term%%%",
+                "cancel": "%%%.proLending.borrowC2CBooking.exchange.cancel%%%",
+                "collateral": "%%%.proLending.borrowC2CBooking.exchange.collateral%%%",
+                "notEnoughBalance": "%%%.proLending.borrowC2CBooking.exchange.notEnoughBalance%%%"
             },
             "errorMsgs": {
                 "notEnoughBalance": "%%%.proLending.borrowC2CBooking.errorMsgs.notEnoughBalance%%%",
@@ -7376,9 +7391,10 @@
                 }
             }
         },
-        "reserveType": {
-            "24": "%%%.loanOriginators.reserveType.24%%%",
-            "25": "%%%.loanOriginators.reserveType.25%%%"
+        "filter": {
+            "clearAll": "%%%.loanOriginators.filter.clearAll%%%",
+            "cancel": "%%%.loanOriginators.filter.cancel%%%",
+            "done": "%%%.loanOriginators.filter.done%%%"
         }
     }
 }

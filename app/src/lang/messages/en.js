@@ -7338,7 +7338,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
   },
   registerBonus: {
     title: 'Fancy $10 to get started?',
-    description: 'Create your account and verify your ID to get a free $1500 Flex trial in your first month. We\'ll take the money back after 30 days, but you keep the interest.',
+    description: 'Create your account and verify your ID to get a free $3,000 Flex trial in your first month. We\'ll take the money back after 30 days, but you keep the interest.',
     numLeft: '{numLeft} BONUSES LEFT',
     forUsOnly: 'Promotion for US customers only'
   },

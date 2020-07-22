@@ -146,6 +146,7 @@
         "referral": "%%%.footer.referral%%%",
         "riskStatement": "%%%.footer.riskStatement%%%",
         "securityAndRisk": "%%%.footer.securityAndRisk%%%",
+        "badges": "%%%.footer.badges%%%",
         "phone": {
             "us": {
                 "title": "%%%.footer.phone.us.title%%%",
@@ -226,9 +227,9 @@
     "headerBar": {
         "home": "%%%.headerBar.home%%%",
         "account": "%%%.headerBar.account%%%",
-        "lending": "%%%.headerBar.lending%%%",
+        "setting": "%%%.headerBar.setting%%%",
         "flex": "%%%.headerBar.flex%%%",
-        "flexMobile": "%%%.headerBar.flexMobile%%%",
+        "crypto": "%%%.headerBar.crypto%%%",
         "staking": "%%%.headerBar.staking%%%",
         "transfer": "%%%.headerBar.transfer%%%",
         "save": "%%%.headerBar.save%%%",
@@ -292,6 +293,49 @@
             "borrowCoins": {
                 "title": "%%%.headerBar.extraMenu.borrowCoins.title%%%",
                 "desc": "%%%.headerBar.extraMenu.borrowCoins.desc%%%"
+            }
+        },
+        "extraMenuMobile": {
+            "invest": {
+                "title": "%%%.headerBar.extraMenuMobile.invest.title%%%",
+                "desc": "%%%.headerBar.extraMenuMobile.invest.desc%%%"
+            },
+            "borrow": {
+                "title": "%%%.headerBar.extraMenuMobile.borrow.title%%%",
+                "desc": "%%%.headerBar.extraMenuMobile.borrow.desc%%%"
+            },
+            "investFlex": {
+                "title": "%%%.headerBar.extraMenuMobile.investFlex.title%%%",
+                "desc": "%%%.headerBar.extraMenuMobile.investFlex.desc%%%"
+            },
+            "investCustom": {
+                "title": "%%%.headerBar.extraMenuMobile.investCustom.title%%%",
+                "desc": "%%%.headerBar.extraMenuMobile.investCustom.desc%%%"
+            },
+            "investLO": {
+                "title": "%%%.headerBar.extraMenuMobile.investLO.title%%%",
+                "desc": "%%%.headerBar.extraMenuMobile.investLO.desc%%%"
+            },
+            "investStaking": {
+                "title": "%%%.headerBar.extraMenuMobile.investStaking.title%%%",
+                "desc": "%%%.headerBar.extraMenuMobile.investStaking.desc%%%",
+                "descHotFix": "%%%.headerBar.extraMenuMobile.investStaking.descHotFix%%%"
+            },
+            "investFlexCrypto": {
+                "title": "%%%.headerBar.extraMenuMobile.investFlexCrypto.title%%%",
+                "desc": "%%%.headerBar.extraMenuMobile.investFlexCrypto.desc%%%"
+            },
+            "borrowFiat": {
+                "title": "%%%.headerBar.extraMenuMobile.borrowFiat.title%%%",
+                "desc": "%%%.headerBar.extraMenuMobile.borrowFiat.desc%%%"
+            },
+            "borrowPRV": {
+                "title": "%%%.headerBar.extraMenuMobile.borrowPRV.title%%%",
+                "desc": "%%%.headerBar.extraMenuMobile.borrowPRV.desc%%%"
+            },
+            "borrowCoins": {
+                "title": "%%%.headerBar.extraMenuMobile.borrowCoins.title%%%",
+                "desc": "%%%.headerBar.extraMenuMobile.borrowCoins.desc%%%"
             }
         }
     },
@@ -616,7 +660,8 @@
             },
             "emailNotVerified": "%%%.me.accountInfo.emailNotVerified%%%",
             "verifyBtn": "%%%.me.accountInfo.verifyBtn%%%",
-            "enable2Fa": "%%%.me.accountInfo.enable2Fa%%%"
+            "enable2Fa": "%%%.me.accountInfo.enable2Fa%%%",
+            "enableSms": "%%%.me.accountInfo.enableSms%%%"
         },
         "changePassword": {
             "newPasswordIsRequired": "%%%.me.changePassword.newPasswordIsRequired%%%",
@@ -759,6 +804,35 @@
                 "disableFailed": "%%%.me.emailSetting.emailConfirmation.disableFailed%%%",
                 "enableFailed": "%%%.me.emailSetting.emailConfirmation.enableFailed%%%",
                 "two2faRequired": "%%%.me.emailSetting.emailConfirmation.two2faRequired%%%"
+            }
+        },
+        "smsSettings": {
+            "title": "%%%.me.smsSettings.title%%%",
+            "labelOff": "%%%.me.smsSettings.labelOff%%%",
+            "labelOn": "%%%.me.smsSettings.labelOn%%%",
+            "noteOn": "%%%.me.smsSettings.noteOn%%%",
+            "noteOff": "%%%.me.smsSettings.noteOff%%%",
+            "phoneNumber": "%%%.me.smsSettings.phoneNumber%%%",
+            "smsCode": "%%%.me.smsSettings.smsCode%%%",
+            "inputAuthCode": "%%%.me.smsSettings.inputAuthCode%%%",
+            "sendCode": "%%%.me.smsSettings.sendCode%%%",
+            "reSendCode": "%%%.me.smsSettings.reSendCode%%%",
+            "back": "%%%.me.smsSettings.back%%%",
+            "cancel": "%%%.me.smsSettings.cancel%%%",
+            "done": "%%%.me.smsSettings.done%%%",
+            "invalidateSms": "%%%.me.smsSettings.invalidateSms%%%",
+            "enableSms": "%%%.me.smsSettings.enableSms%%%",
+            "disableSms": "%%%.me.smsSettings.disableSms%%%",
+            "enableSmsSuccess": "%%%.me.smsSettings.enableSmsSuccess%%%",
+            "disableSmsSuccess": "%%%.me.smsSettings.disableSmsSuccess%%%",
+            "inputSms": {
+                "popupTitle": "%%%.me.smsSettings.inputSms.popupTitle%%%",
+                "newTitle": "%%%.me.smsSettings.inputSms.newTitle%%%",
+                "newInputCode": "%%%.me.smsSettings.inputSms.newInputCode%%%",
+                "cantAccess": "%%%.me.smsSettings.inputSms.cantAccess%%%",
+                "resendCode": "%%%.me.smsSettings.inputSms.resendCode%%%",
+                "resendCodeSuccess": "%%%.me.smsSettings.inputSms.resendCodeSuccess%%%",
+                "resendCodeFailed": "%%%.me.smsSettings.inputSms.resendCodeFailed%%%"
             }
         },
         "flexInterestConfig": {
@@ -911,6 +985,7 @@
                 "24": "%%%.me.history.orderType.24%%%",
                 "25": "%%%.me.history.orderType.25%%%",
                 "26": "%%%.me.history.orderType.26%%%",
+                "33": "%%%.me.history.orderType.33%%%",
                 "101": "%%%.me.history.orderType.101%%%",
                 "102": "%%%.me.history.orderType.102%%%",
                 "received": "%%%.me.history.orderType.received%%%"
@@ -1807,7 +1882,10 @@
         "account": {
             "currentBalance": "%%%.user.account.currentBalance%%%",
             "interestRate": "%%%.user.account.interestRate%%%",
-            "estimatedValue": "%%%.user.account.estimatedValue%%%"
+            "estimatedValue": "%%%.user.account.estimatedValue%%%",
+            "membershipReward": "%%%.user.account.membershipReward%%%",
+            "member": "%%%.user.account.member%%%",
+            "totalBalance": "%%%.user.account.totalBalance%%%"
         }
     },
     "landingPage": {
@@ -1836,6 +1914,9 @@
                     "3": "%%%.landingPage.earnABetterRate.intro.desc.3%%%"
                 }
             }
+        },
+        "trialBonus": {
+            "title": "%%%.landingPage.trialBonus.title%%%"
         },
         "howItWorks": {
             "title": "%%%.landingPage.howItWorks.title%%%",
@@ -2461,6 +2542,7 @@
             "headLine": "%%%.home.constantLoan.headLine%%%",
             "exchange": {
                 "availableCredit": "%%%.home.constantLoan.exchange.availableCredit%%%",
+                "collateralBalance": "%%%.home.constantLoan.exchange.collateralBalance%%%",
                 "stakingTimeMessage": "%%%.home.constantLoan.exchange.stakingTimeMessage%%%",
                 "exchangeInfo": "%%%.home.constantLoan.exchange.exchangeInfo%%%",
                 "exchangeInfoDesc": "%%%.home.constantLoan.exchange.exchangeInfoDesc%%%",
@@ -2505,7 +2587,10 @@
                 "monthLoan": "%%%.home.constantLoan.exchange.monthLoan%%%",
                 "monthsLoan": "%%%.home.constantLoan.exchange.monthsLoan%%%",
                 "dayLoan": "%%%.home.constantLoan.exchange.dayLoan%%%",
-                "borrowConfirm": "%%%.home.constantLoan.exchange.borrowConfirm%%%"
+                "borrowConfirm": "%%%.home.constantLoan.exchange.borrowConfirm%%%",
+                "borrowIsolateConfirm": "%%%.home.constantLoan.exchange.borrowIsolateConfirm%%%",
+                "isolate": "%%%.home.constantLoan.exchange.isolate%%%",
+                "isolateDesc": "%%%.home.constantLoan.exchange.isolateDesc%%%"
             },
             "interestTable": {
                 "title": "%%%.home.constantLoan.interestTable.title%%%",
@@ -2561,7 +2646,11 @@
                 "loanAmount": "%%%.home.constantLoan.transaction.loanAmount%%%",
                 "collaterals": "%%%.home.constantLoan.transaction.collaterals%%%",
                 "collateralRequired": "%%%.home.constantLoan.transaction.collateralRequired%%%",
+                "collateralRequiredDesc": "%%%.home.constantLoan.transaction.collateralRequiredDesc%%%",
                 "collateralBalance": "%%%.home.constantLoan.transaction.collateralBalance%%%",
+                "collateralBalanceDesc": "%%%.home.constantLoan.transaction.collateralBalanceDesc%%%",
+                "collateralToDeposit": "%%%.home.constantLoan.transaction.collateralToDeposit%%%",
+                "collateralToDepositDesc": "%%%.home.constantLoan.transaction.collateralToDepositDesc%%%",
                 "term": "%%%.home.constantLoan.transaction.term%%%",
                 "interestedRate": "%%%.home.constantLoan.transaction.interestedRate%%%",
                 "interestedRateValue": "%%%.home.constantLoan.transaction.interestedRateValue%%%",
@@ -2885,6 +2974,7 @@
             "headLine": "%%%.home.constantC2CLoan.headLine%%%",
             "exchange": {
                 "availableCredit": "%%%.home.constantC2CLoan.exchange.availableCredit%%%",
+                "collateralBalance": "%%%.home.constantC2CLoan.exchange.collateralBalance%%%",
                 "eventBox": "%%%.home.constantC2CLoan.exchange.eventBox%%%",
                 "stakingTimeMessage": "%%%.home.constantC2CLoan.exchange.stakingTimeMessage%%%",
                 "exchangeInfo": "%%%.home.constantC2CLoan.exchange.exchangeInfo%%%",
@@ -2926,7 +3016,10 @@
                 "monthLoan": "%%%.home.constantC2CLoan.exchange.monthLoan%%%",
                 "monthsLoan": "%%%.home.constantC2CLoan.exchange.monthsLoan%%%",
                 "dayLoan": "%%%.home.constantC2CLoan.exchange.dayLoan%%%",
-                "borrowConfirm": "%%%.home.constantC2CLoan.exchange.borrowConfirm%%%"
+                "isolate": "%%%.home.constantC2CLoan.exchange.isolate%%%",
+                "isolateDesc": "%%%.home.constantC2CLoan.exchange.isolateDesc%%%",
+                "borrowConfirm": "%%%.home.constantC2CLoan.exchange.borrowConfirm%%%",
+                "borrowIsolateConfirm": "%%%.home.constantC2CLoan.exchange.borrowIsolateConfirm%%%"
             },
             "compareTable": {
                 "title": "%%%.home.constantC2CLoan.compareTable.title%%%",
@@ -4187,7 +4280,8 @@
         "makeTrialOrderSuccess": "%%%.saving.makeTrialOrderSuccess%%%",
         "makeTrialOrderFailed": "%%%.saving.makeTrialOrderFailed%%%",
         "validation_error": "%%%.saving.validation_error%%%",
-        "invalid_amount": "%%%.saving.invalid_amount%%%"
+        "invalid_amount": "%%%.saving.invalid_amount%%%",
+        "invalid_payment_method": "%%%.saving.invalid_payment_method%%%"
     },
     "send": {
         "makeLocalOrderSuccess": "%%%.send.makeLocalOrderSuccess%%%",
@@ -4730,7 +4824,8 @@
                 "zelleFailed": "%%%.home1.lendingSection.alert.zelleFailed%%%",
                 "needKyc": "%%%.home1.lendingSection.alert.needKyc%%%",
                 "investUsingBalanceConfirm": "%%%.home1.lendingSection.alert.investUsingBalanceConfirm%%%",
-                "investNotUsingBalanceConfirm": "%%%.home1.lendingSection.alert.investNotUsingBalanceConfirm%%%"
+                "investNotUsingBalanceConfirm": "%%%.home1.lendingSection.alert.investNotUsingBalanceConfirm%%%",
+                "invalid_payment_method": "%%%.home1.lendingSection.alert.invalid_payment_method%%%"
             },
             "confirm": {
                 "needGoldMember": "%%%.home1.lendingSection.confirm.needGoldMember%%%",
@@ -4955,7 +5050,6 @@
         "withdrawFiatNote": "%%%.getPrices.withdrawFiatNote%%%",
         "withdrawCryptoNote": "%%%.getPrices.withdrawCryptoNote%%%",
         "withdrawCollateralNote": "%%%.getPrices.withdrawCollateralNote%%%",
-        "unstakingNote": "%%%.getPrices.unstakingNote%%%",
         "holidaysNote": "%%%.getPrices.holidaysNote%%%",
         "zelleDepositDelayIssue": "%%%.getPrices.zelleDepositDelayIssue%%%",
         "depositFiat": {
@@ -5275,19 +5369,65 @@
         }
     },
     "yourReferral": {
-        "v1": {
-            "howItWorks": {
-                "step1": {
-                    "title": "%%%.yourReferral.v1.howItWorks.step1.title%%%",
-                    "desc": "%%%.yourReferral.v1.howItWorks.step1.desc%%%"
+        "banner": {
+            "desc": "%%%.yourReferral.banner.desc%%%",
+            "invite": "%%%.yourReferral.banner.invite%%%"
+        },
+        "whatForYou": {
+            "title": "%%%.yourReferral.whatForYou.title%%%",
+            "desc": "%%%.yourReferral.whatForYou.desc%%%",
+            "formula": {
+                "0": "%%%.yourReferral.whatForYou.formula.0%%%",
+                "1": "%%%.yourReferral.whatForYou.formula.1%%%",
+                "2": "%%%.yourReferral.whatForYou.formula.2%%%",
+                "3": "%%%.yourReferral.whatForYou.formula.3%%%",
+                "4": "%%%.yourReferral.whatForYou.formula.4%%%"
+            },
+            "data": {
+                "0": {
+                    "title": "%%%.yourReferral.whatForYou.data.0.title%%%",
+                    "desc": "%%%.yourReferral.whatForYou.data.0.desc%%%"
                 },
-                "step2": {
-                    "title": "%%%.yourReferral.v1.howItWorks.step2.title%%%",
-                    "desc": "%%%.yourReferral.v1.howItWorks.step2.desc%%%"
+                "1": {
+                    "title": "%%%.yourReferral.whatForYou.data.1.title%%%",
+                    "desc": "%%%.yourReferral.whatForYou.data.1.desc%%%"
                 },
-                "step3": {
-                    "title": "%%%.yourReferral.v1.howItWorks.step3.title%%%",
-                    "desc": "%%%.yourReferral.v1.howItWorks.step3.desc%%%"
+                "2": {
+                    "title": "%%%.yourReferral.whatForYou.data.2.title%%%",
+                    "desc": "%%%.yourReferral.whatForYou.data.2.desc%%%"
+                }
+            }
+        },
+        "whatForThem": {
+            "title": "%%%.yourReferral.whatForThem.title%%%",
+            "content": {
+                "left": "%%%.yourReferral.whatForThem.content.left%%%",
+                "right": "%%%.yourReferral.whatForThem.content.right%%%"
+            }
+        },
+        "howItWorks": {
+            "title": "%%%.yourReferral.howItWorks.title%%%",
+            "desc": "%%%.yourReferral.howItWorks.desc%%%",
+            "data": {
+                "0": {
+                    "title": "%%%.yourReferral.howItWorks.data.0.title%%%",
+                    "desc": "%%%.yourReferral.howItWorks.data.0.desc%%%"
+                },
+                "1": {
+                    "title": "%%%.yourReferral.howItWorks.data.1.title%%%",
+                    "desc": "%%%.yourReferral.howItWorks.data.1.desc%%%"
+                },
+                "2": {
+                    "title": "%%%.yourReferral.howItWorks.data.2.title%%%",
+                    "desc": "%%%.yourReferral.howItWorks.data.2.desc%%%"
+                },
+                "3": {
+                    "title": "%%%.yourReferral.howItWorks.data.3.title%%%",
+                    "desc": "%%%.yourReferral.howItWorks.data.3.desc%%%"
+                },
+                "4": {
+                    "title": "%%%.yourReferral.howItWorks.data.4.title%%%",
+                    "desc": "%%%.yourReferral.howItWorks.data.4.desc%%%"
                 }
             }
         },
@@ -5688,7 +5828,8 @@
         "tabs": {
             "collaterals": "%%%.collateralBalance.tabs.collaterals%%%",
             "staking": "%%%.collateralBalance.tabs.staking%%%"
-        }
+        },
+        "cryptoWallet": "%%%.collateralBalance.cryptoWallet%%%"
     },
     "developers": {
         "menu": {
@@ -6244,6 +6385,7 @@
         "or": "%%%.memberShip.or%%%",
         "keepLevel": "%%%.memberShip.keepLevel%%%",
         "getLevelDate": "%%%.memberShip.getLevelDate%%%",
+        "member": "%%%.memberShip.member%%%",
         "title": {
             "level0": "%%%.memberShip.title.level0%%%",
             "level1": "%%%.memberShip.title.level1%%%",
@@ -7396,5 +7538,217 @@
             "cancel": "%%%.loanOriginators.filter.cancel%%%",
             "done": "%%%.loanOriginators.filter.done%%%"
         }
+    },
+    "badges": {
+        "intro": {
+            "title": "%%%.badges.intro.title%%%",
+            "desc": "%%%.badges.intro.desc%%%",
+            "almostDoneTitle": "%%%.badges.intro.almostDoneTitle%%%",
+            "almostDoneDesc": "%%%.badges.intro.almostDoneDesc%%%",
+            "congratTitle": "%%%.badges.intro.congratTitle%%%",
+            "congratDesc": "%%%.badges.intro.congratDesc%%%"
+        },
+        "group": {
+            "getting_started": "%%%.badges.group.getting_started%%%",
+            "getting_started_desc": "%%%.badges.group.getting_started_desc%%%",
+            "warming_up": "%%%.badges.group.warming_up%%%",
+            "warming_up_desc": "%%%.badges.group.warming_up_desc%%%",
+            "referring": "%%%.badges.group.referring%%%",
+            "referring_desc": "%%%.badges.group.referring_desc%%%",
+            "winning": "%%%.badges.group.winning%%%",
+            "winning_desc": "%%%.badges.group.winning_desc%%%"
+        },
+        "badge": {
+            "getting_started_sign_up": {
+                "title": "%%%.badges.badge.getting_started_sign_up.title%%%",
+                "desc": "%%%.badges.badge.getting_started_sign_up.desc%%%",
+                "condition": "%%%.badges.badge.getting_started_sign_up.condition%%%",
+                "name": "%%%.badges.badge.getting_started_sign_up.name%%%"
+            },
+            "getting_started_kyc_us": {
+                "title": "%%%.badges.badge.getting_started_kyc_us.title%%%",
+                "desc": "%%%.badges.badge.getting_started_kyc_us.desc%%%",
+                "condition": "%%%.badges.badge.getting_started_kyc_us.condition%%%",
+                "name": "%%%.badges.badge.getting_started_kyc_us.name%%%"
+            },
+            "getting_started_on_2fa": {
+                "title": "%%%.badges.badge.getting_started_on_2fa.title%%%",
+                "desc": "%%%.badges.badge.getting_started_on_2fa.desc%%%",
+                "condition": "%%%.badges.badge.getting_started_on_2fa.condition%%%",
+                "name": "%%%.badges.badge.getting_started_on_2fa.name%%%"
+            },
+            "getting_started_first_deposit": {
+                "title": "%%%.badges.badge.getting_started_first_deposit.title%%%",
+                "desc": "%%%.badges.badge.getting_started_first_deposit.desc%%%",
+                "condition": "%%%.badges.badge.getting_started_first_deposit.condition%%%",
+                "name": "%%%.badges.badge.getting_started_first_deposit.name%%%"
+            },
+            "warming_up_review_trustpilot": {
+                "title": "%%%.badges.badge.warming_up_review_trustpilot.title%%%",
+                "desc": "%%%.badges.badge.warming_up_review_trustpilot.desc%%%",
+                "condition": "%%%.badges.badge.warming_up_review_trustpilot.condition%%%",
+                "name": "%%%.badges.badge.warming_up_review_trustpilot.name%%%"
+            },
+            "warming_up_first_friend": {
+                "title": "%%%.badges.badge.warming_up_first_friend.title%%%",
+                "desc": "%%%.badges.badge.warming_up_first_friend.desc%%%",
+                "condition": "%%%.badges.badge.warming_up_first_friend.condition%%%",
+                "name": "%%%.badges.badge.warming_up_first_friend.name%%%"
+            },
+            "warming_up_invest_first_time": {
+                "title": "%%%.badges.badge.warming_up_invest_first_time.title%%%",
+                "desc": "%%%.badges.badge.warming_up_invest_first_time.desc%%%",
+                "condition": "%%%.badges.badge.warming_up_invest_first_time.condition%%%",
+                "name": "%%%.badges.badge.warming_up_invest_first_time.name%%%"
+            },
+            "warming_up_invest_monthly_quarter": {
+                "title": "%%%.badges.badge.warming_up_invest_monthly_quarter.title%%%",
+                "desc": "%%%.badges.badge.warming_up_invest_monthly_quarter.desc%%%",
+                "condition": "%%%.badges.badge.warming_up_invest_monthly_quarter.condition%%%",
+                "name": "%%%.badges.badge.warming_up_invest_monthly_quarter.name%%%"
+            },
+            "warming_up_invest_monthly_year": {
+                "title": "%%%.badges.badge.warming_up_invest_monthly_year.title%%%",
+                "desc": "%%%.badges.badge.warming_up_invest_monthly_year.desc%%%",
+                "condition": "%%%.badges.badge.warming_up_invest_monthly_year.condition%%%",
+                "name": "%%%.badges.badge.warming_up_invest_monthly_year.name%%%"
+            },
+            "warming_up_borrow_first_time": {
+                "title": "%%%.badges.badge.warming_up_borrow_first_time.title%%%",
+                "desc": "%%%.badges.badge.warming_up_borrow_first_time.desc%%%",
+                "condition": "%%%.badges.badge.warming_up_borrow_first_time.condition%%%",
+                "name": "%%%.badges.badge.warming_up_borrow_first_time.name%%%"
+            },
+            "warming_up_borrow_monthly_quarter": {
+                "title": "%%%.badges.badge.warming_up_borrow_monthly_quarter.title%%%",
+                "desc": "%%%.badges.badge.warming_up_borrow_monthly_quarter.desc%%%",
+                "condition": "%%%.badges.badge.warming_up_borrow_monthly_quarter.condition%%%",
+                "name": "%%%.badges.badge.warming_up_borrow_monthly_quarter.name%%%"
+            },
+            "warming_up_borrow_monthly_year": {
+                "title": "%%%.badges.badge.warming_up_borrow_monthly_year.title%%%",
+                "desc": "%%%.badges.badge.warming_up_borrow_monthly_year.desc%%%",
+                "condition": "%%%.badges.badge.warming_up_borrow_monthly_year.condition%%%",
+                "name": "%%%.badges.badge.warming_up_borrow_monthly_year.name%%%"
+            },
+            "warming_up_sell_secondary_market": {
+                "title": "%%%.badges.badge.warming_up_sell_secondary_market.title%%%",
+                "desc": "%%%.badges.badge.warming_up_sell_secondary_market.desc%%%",
+                "condition": "%%%.badges.badge.warming_up_sell_secondary_market.condition%%%",
+                "name": "%%%.badges.badge.warming_up_sell_secondary_market.name%%%"
+            },
+            "warming_up_buy_secondary_market": {
+                "title": "%%%.badges.badge.warming_up_buy_secondary_market.title%%%",
+                "desc": "%%%.badges.badge.warming_up_buy_secondary_market.desc%%%",
+                "condition": "%%%.badges.badge.warming_up_buy_secondary_market.condition%%%",
+                "name": "%%%.badges.badge.warming_up_buy_secondary_market.name%%%"
+            },
+            "winning_invest": {
+                "title": "%%%.badges.badge.winning_invest.title%%%",
+                "desc": "%%%.badges.badge.winning_invest.desc%%%",
+                "condition": "%%%.badges.badge.winning_invest.condition%%%",
+                "name": "%%%.badges.badge.winning_invest.name%%%"
+            },
+            "winning_borrow": {
+                "title": "%%%.badges.badge.winning_borrow.title%%%",
+                "desc": "%%%.badges.badge.winning_borrow.desc%%%",
+                "condition": "%%%.badges.badge.winning_borrow.condition%%%",
+                "name": "%%%.badges.badge.winning_borrow.name%%%"
+            },
+            "winning_loyalty_6months": {
+                "title": "%%%.badges.badge.winning_loyalty_6months.title%%%",
+                "condition": "%%%.badges.badge.winning_loyalty_6months.condition%%%",
+                "name": "%%%.badges.badge.winning_loyalty_6months.name%%%"
+            },
+            "winning_loyalty_12months": {
+                "title": "%%%.badges.badge.winning_loyalty_12months.title%%%",
+                "condition": "%%%.badges.badge.winning_loyalty_12months.condition%%%",
+                "name": "%%%.badges.badge.winning_loyalty_12months.name%%%"
+            },
+            "winning_loyalty_24months": {
+                "title": "%%%.badges.badge.winning_loyalty_24months.title%%%",
+                "condition": "%%%.badges.badge.winning_loyalty_24months.condition%%%",
+                "name": "%%%.badges.badge.winning_loyalty_24months.name%%%"
+            },
+            "winning_champion": {
+                "title": "%%%.badges.badge.winning_champion.title%%%",
+                "condition": "%%%.badges.badge.winning_champion.condition%%%",
+                "name": "%%%.badges.badge.winning_champion.name%%%"
+            },
+            "referring_friend_10_referees": {
+                "title": "%%%.badges.badge.referring_friend_10_referees.title%%%",
+                "condition": "%%%.badges.badge.referring_friend_10_referees.condition%%%",
+                "name": "%%%.badges.badge.referring_friend_10_referees.name%%%"
+            },
+            "referring_friend_50_referees": {
+                "title": "%%%.badges.badge.referring_friend_50_referees.title%%%",
+                "condition": "%%%.badges.badge.referring_friend_50_referees.condition%%%",
+                "name": "%%%.badges.badge.referring_friend_50_referees.name%%%"
+            },
+            "referring_friend_100_referees": {
+                "title": "%%%.badges.badge.referring_friend_100_referees.title%%%",
+                "condition": "%%%.badges.badge.referring_friend_100_referees.condition%%%",
+                "name": "%%%.badges.badge.referring_friend_100_referees.name%%%"
+            },
+            "referring_invest_100k": {
+                "title": "%%%.badges.badge.referring_invest_100k.title%%%",
+                "condition": "%%%.badges.badge.referring_invest_100k.condition%%%",
+                "name": "%%%.badges.badge.referring_invest_100k.name%%%"
+            },
+            "referring_invest_200k": {
+                "title": "%%%.badges.badge.referring_invest_200k.title%%%",
+                "condition": "%%%.badges.badge.referring_invest_200k.condition%%%",
+                "name": "%%%.badges.badge.referring_invest_200k.name%%%"
+            },
+            "referring_invest_500k": {
+                "title": "%%%.badges.badge.referring_invest_500k.title%%%",
+                "condition": "%%%.badges.badge.referring_invest_500k.condition%%%",
+                "name": "%%%.badges.badge.referring_invest_500k.name%%%"
+            },
+            "referring_article_first": {
+                "title": "%%%.badges.badge.referring_article_first.title%%%",
+                "condition": "%%%.badges.badge.referring_article_first.condition%%%",
+                "name": "%%%.badges.badge.referring_article_first.name%%%"
+            },
+            "referring_article_monthly_quarter": {
+                "title": "%%%.badges.badge.referring_article_monthly_quarter.title%%%",
+                "condition": "%%%.badges.badge.referring_article_monthly_quarter.condition%%%",
+                "name": "%%%.badges.badge.referring_article_monthly_quarter.name%%%"
+            },
+            "referring_article_monthly_year": {
+                "title": "%%%.badges.badge.referring_article_monthly_year.title%%%",
+                "condition": "%%%.badges.badge.referring_article_monthly_year.condition%%%",
+                "name": "%%%.badges.badge.referring_article_monthly_year.name%%%"
+            }
+        },
+        "term": {
+            "0": "%%%.badges.term.0%%%",
+            "1": "%%%.badges.term.1%%%",
+            "2": "%%%.badges.term.2%%%",
+            "3": "%%%.badges.term.3%%%",
+            "4": "%%%.badges.term.4%%%",
+            "5": "%%%.badges.term.5%%%",
+            "6": "%%%.badges.term.6%%%",
+            "7": "%%%.badges.term.7%%%",
+            "title": "%%%.badges.term.title%%%",
+            "note": "%%%.badges.term.note%%%"
+        },
+        "submitForm": {
+            "title": "%%%.badges.submitForm.title%%%",
+            "subtitle": "%%%.badges.submitForm.subtitle%%%",
+            "subtitleTrustpilot": "%%%.badges.submitForm.subtitleTrustpilot%%%",
+            "submit": "%%%.badges.submitForm.submit%%%",
+            "cancel": "%%%.badges.submitForm.cancel%%%",
+            "success": "%%%.badges.submitForm.success%%%",
+            "errNeedKyc": "%%%.badges.submitForm.errNeedKyc%%%",
+            "errProofPending": "%%%.badges.submitForm.errProofPending%%%",
+            "errCompletePrevious": "%%%.badges.submitForm.errCompletePrevious%%%"
+        },
+        "title": "%%%.badges.title%%%",
+        "detail": "%%%.badges.detail%%%",
+        "share": "%%%.badges.share%%%",
+        "conditions": "%%%.badges.conditions%%%",
+        "submit": "%%%.badges.submit%%%",
+        "request": "%%%.badges.request%%%"
     }
 }

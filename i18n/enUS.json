@@ -1564,7 +1564,7 @@
                 "btn": "Explore"
             },
             "loanOriginator": {
-                "title": "          <p>            <strong>INVEST <sup>NEW</sup></strong>            Loan Originator          </p>        ",
+                "title": "          <p>            <strong>INVEST</strong>            Loan Originator          </p>        ",
                 "cap": "          <div class=\"row\">            <div class=\"col\">              Interest rate              <strong>Up to 11%</strong>            </div>            <div class=\"col\">              Loan term              <strong>6-15 <span>months</span></strong>            </div>          </div>          <p class=\"clearBottom\">            Includes loan originator’s buy-back guarantee in case of default          </p>        ",
                 "btn": "Explore"
             },

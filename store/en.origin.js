@@ -30,7 +30,8 @@
             "username": "%%%.user.login.username%%%",
             "loginFailureCaptchaV2": "%%%.user.login.loginFailureCaptchaV2%%%",
             "notValidUsername": "%%%.user.login.notValidUsername%%%",
-            "twoFaRequired": "%%%.user.login.twoFaRequired%%%"
+            "twoFaRequired": "%%%.user.login.twoFaRequired%%%",
+            "loginFailed": "%%%.user.login.loginFailed%%%"
         },
         "forgetPassword": {
             "title": "%%%.user.forgetPassword.title%%%",
@@ -290,7 +291,16 @@
         "invested": "%%%.memberShip.invested%%%",
         "pointExpiredDate": "%%%.memberShip.pointExpiredDate%%%",
         "tierProgressDesc": "%%%.memberShip.tierProgressDesc%%%",
-        "getLevelDate": "%%%.memberShip.getLevelDate%%%"
+        "getLevelDate": "%%%.memberShip.getLevelDate%%%",
+        "reviewMemberShip": {
+            "redeemButton": "%%%.memberShip.reviewMemberShip.redeemButton%%%",
+            "redeemButtonMobile": "%%%.memberShip.reviewMemberShip.redeemButtonMobile%%%",
+            "redeemPopup": {
+                "messageConfirm": "%%%.memberShip.reviewMemberShip.redeemPopup.messageConfirm%%%",
+                "confirm": "%%%.memberShip.reviewMemberShip.redeemPopup.confirm%%%",
+                "cancel": "%%%.memberShip.reviewMemberShip.redeemPopup.cancel%%%"
+            }
+        }
     },
     "exchangeInputDepositForm": {
         "submitBtn": {
@@ -306,7 +316,8 @@
         "minDepositRequired": "%%%.exchangeInputDepositForm.minDepositRequired%%%",
         "minAmountRequired": "%%%.exchangeInputDepositForm.minAmountRequired%%%",
         "minDepositAmount": "%%%.exchangeInputDepositForm.minDepositAmount%%%",
-        "interestRate": "%%%.exchangeInputDepositForm.interestRate%%%"
+        "interestRate": "%%%.exchangeInputDepositForm.interestRate%%%",
+        "getAmountFailed": "%%%.exchangeInputDepositForm.getAmountFailed%%%"
     },
     "history": {
         "deposit": {
@@ -463,7 +474,8 @@
                     "google_pay": "%%%.me.history.user.paymentMethods.google_pay%%%",
                     "venmo": "%%%.me.history.user.paymentMethods.venmo%%%",
                     "paypal": "%%%.me.history.user.paymentMethods.paypal%%%",
-                    "fiat": "%%%.me.history.user.paymentMethods.fiat%%%"
+                    "fiat": "%%%.me.history.user.paymentMethods.fiat%%%",
+                    "plaid": "%%%.me.history.user.paymentMethods.plaid%%%"
                 }
             },
             "date": "%%%.me.history.date%%%",
@@ -564,7 +576,8 @@
                 "bankAccountName": "%%%.me.history.bankInfo.bankAccountName%%%",
                 "bankAccountNumber": "%%%.me.history.bankInfo.bankAccountNumber%%%"
             },
-            "note": "%%%.me.history.note%%%"
+            "note": "%%%.me.history.note%%%",
+            "received": "%%%.me.history.received%%%"
         },
         "twoFa": {
             "input2Fa": {
@@ -1131,13 +1144,34 @@
                     "body": "%%%.me.bankInfo.dialog.delete.body%%%",
                     "confirm": "%%%.me.bankInfo.dialog.delete.confirm%%%",
                     "cancel": "%%%.me.bankInfo.dialog.delete.cancel%%%"
+                },
+                "update": {
+                    "title": "%%%.me.bankInfo.dialog.update.title%%%",
+                    "body": "%%%.me.bankInfo.dialog.update.body%%%",
+                    "confirm": "%%%.me.bankInfo.dialog.update.confirm%%%",
+                    "cancel": "%%%.me.bankInfo.dialog.update.cancel%%%"
                 }
             },
             "alert": {
                 "deleteSuccess": "%%%.me.bankInfo.alert.deleteSuccess%%%",
                 "failed": "%%%.me.bankInfo.alert.failed%%%",
-                "success": "%%%.me.bankInfo.alert.success%%%"
-            }
+                "success": "%%%.me.bankInfo.alert.success%%%",
+                "deleteFailed": "%%%.me.bankInfo.alert.deleteFailed%%%"
+            },
+            "getBankFailed": "%%%.me.bankInfo.getBankFailed%%%",
+            "title": "%%%.me.bankInfo.title%%%",
+            "desc": "%%%.me.bankInfo.desc%%%",
+            "bankAccountCurrency": "%%%.me.bankInfo.bankAccountCurrency%%%",
+            "bankCountryAndCurrency": "%%%.me.bankInfo.bankCountryAndCurrency%%%",
+            "bankBranchName": "%%%.me.bankInfo.bankBranchName%%%",
+            "bankNameHolder": "%%%.me.bankInfo.bankNameHolder%%%",
+            "bankAccountNameHolder": "%%%.me.bankInfo.bankAccountNameHolder%%%",
+            "bankAccountNumberHolder": "%%%.me.bankInfo.bankAccountNumberHolder%%%",
+            "input2FA": "%%%.me.bankInfo.input2FA%%%",
+            "linkBankSectionTitle": "%%%.me.bankInfo.linkBankSectionTitle%%%",
+            "linkBankSectionDesc": "%%%.me.bankInfo.linkBankSectionDesc%%%",
+            "unlinkBankSectionTitle": "%%%.me.bankInfo.unlinkBankSectionTitle%%%",
+            "unlinkBankSectionDesc": "%%%.me.bankInfo.unlinkBankSectionDesc%%%"
         },
         "accountInfo": {
             "title": "%%%.me.accountInfo.title%%%",
@@ -1245,9 +1279,18 @@
             "status": {
                 "0": "%%%.me.staking.status.0%%%",
                 "1": "%%%.me.staking.status.1%%%",
+                "2": "%%%.me.staking.status.2%%%",
                 "3": "%%%.me.staking.status.3%%%",
                 "4": "%%%.me.staking.status.4%%%",
-                "12": "%%%.me.staking.status.12%%%"
+                "5": "%%%.me.staking.status.5%%%",
+                "6": "%%%.me.staking.status.6%%%",
+                "7": "%%%.me.staking.status.7%%%",
+                "8": "%%%.me.staking.status.8%%%",
+                "9": "%%%.me.staking.status.9%%%",
+                "10": "%%%.me.staking.status.10%%%",
+                "11": "%%%.me.staking.status.11%%%",
+                "12": "%%%.me.staking.status.12%%%",
+                "13": "%%%.me.staking.status.13%%%"
             }
         },
         "wallet": {
@@ -1256,7 +1299,14 @@
         "emailVerification": {
             "pleaseVerify": "%%%.me.emailVerification.pleaseVerify%%%",
             "resent": "%%%.me.emailVerification.resent%%%",
-            "sent": "%%%.me.emailVerification.sent%%%"
+            "sent": "%%%.me.emailVerification.sent%%%",
+            "sendCodeSuccess": "%%%.me.emailVerification.sendCodeSuccess%%%",
+            "sendCodeFailed": "%%%.me.emailVerification.sendCodeFailed%%%",
+            "verifyFailed": "%%%.me.emailVerification.verifyFailed%%%",
+            "verifySuccess": "%%%.me.emailVerification.verifySuccess%%%",
+            "pleaseUpdateEmail": "%%%.me.emailVerification.pleaseUpdateEmail%%%",
+            "updateEmail": "%%%.me.emailVerification.updateEmail%%%",
+            "alreadyVerified": "%%%.me.emailVerification.alreadyVerified%%%"
         },
         "accountLevel": {
             "alert": {
@@ -3317,11 +3367,24 @@
                         "paymentInfo": "%%%.home1.lendingSection.confirm.paymentMethods.email.paymentInfo%%%",
                         "placeholder": "%%%.home1.lendingSection.confirm.paymentMethods.email.placeholder%%%",
                         "submitButton": "%%%.home1.lendingSection.confirm.paymentMethods.email.submitButton%%%",
-                        "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.email.referNoteDesc%%%"
+                        "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.email.referNoteDesc%%%",
+                        "notAvailableAmount": "%%%.home1.lendingSection.confirm.paymentMethods.email.notAvailableAmount%%%"
                     },
                     "primetrust": {
                         "desc": "%%%.home1.lendingSection.confirm.paymentMethods.primetrust.desc%%%",
-                        "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.primetrust.referNoteDesc%%%"
+                        "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.primetrust.referNoteDesc%%%",
+                        "minuteWindow": "%%%.home1.lendingSection.confirm.paymentMethods.primetrust.minuteWindow%%%",
+                        "minuteWindowDescription": "%%%.home1.lendingSection.confirm.paymentMethods.primetrust.minuteWindowDescription%%%"
+                    },
+                    "plaid": {
+                        "title": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.title%%%",
+                        "subtitle": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle%%%",
+                        "desc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.desc%%%",
+                        "updateBalanceNoteInWorkingTime": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.updateBalanceNoteInWorkingTime%%%",
+                        "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.referNoteDesc%%%",
+                        "checkListNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.checkListNote%%%",
+                        "sendNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.sendNote%%%",
+                        "notAvailableAmount": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.notAvailableAmount%%%"
                     }
                 },
                 "zelle": "%%%.home1.lendingSection.confirm.zelle%%%",
@@ -4009,7 +4072,9 @@
             "placeholder": "%%%.exchangeInputSellForm.email.placeholder%%%"
         },
         "countryNotSupport": "%%%.exchangeInputSellForm.countryNotSupport%%%",
-        "validateMaxInput": "%%%.exchangeInputSellForm.validateMaxInput%%%"
+        "validateMaxInput": "%%%.exchangeInputSellForm.validateMaxInput%%%",
+        "validateMaxInputBalanceZero": "%%%.exchangeInputSellForm.validateMaxInputBalanceZero%%%",
+        "suggestOtherPayment": "%%%.exchangeInputSellForm.suggestOtherPayment%%%"
     },
     "transferCrypto": {
         "info": {
@@ -4874,6 +4939,42 @@
                     }
                 }
             }
+        },
+        "faqs": {
+            "data": {
+                "0": {
+                    "question": "%%%.landingPage.faqs.data.0.question%%%",
+                    "answer": "%%%.landingPage.faqs.data.0.answer%%%"
+                },
+                "1": {
+                    "question": "%%%.landingPage.faqs.data.1.question%%%",
+                    "answer": "%%%.landingPage.faqs.data.1.answer%%%"
+                },
+                "2": {
+                    "question": "%%%.landingPage.faqs.data.2.question%%%",
+                    "answer": "%%%.landingPage.faqs.data.2.answer%%%"
+                },
+                "3": {
+                    "question": "%%%.landingPage.faqs.data.3.question%%%",
+                    "answer": "%%%.landingPage.faqs.data.3.answer%%%"
+                },
+                "4": {
+                    "question": "%%%.landingPage.faqs.data.4.question%%%",
+                    "answer": "%%%.landingPage.faqs.data.4.answer%%%"
+                },
+                "5": {
+                    "question": "%%%.landingPage.faqs.data.5.question%%%",
+                    "answer": "%%%.landingPage.faqs.data.5.answer%%%"
+                },
+                "6": {
+                    "question": "%%%.landingPage.faqs.data.6.question%%%",
+                    "answer": "%%%.landingPage.faqs.data.6.answer%%%"
+                },
+                "7": {
+                    "question": "%%%.landingPage.faqs.data.7.question%%%",
+                    "answer": "%%%.landingPage.faqs.data.7.answer%%%"
+                }
+            }
         }
     },
     "form": {
@@ -5112,7 +5213,8 @@
         "submit": "%%%.badges.submit%%%"
     },
     "saving": {
-        "invalid_payment_method": "%%%.saving.invalid_payment_method%%%"
+        "invalid_payment_method": "%%%.saving.invalid_payment_method%%%",
+        "makeLocalOrderFailed": "%%%.saving.makeLocalOrderFailed%%%"
     },
     "send": {
         "invalidBankAccountName": "%%%.send.invalidBankAccountName%%%",

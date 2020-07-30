@@ -62,7 +62,8 @@
             "password": "%%%.user.register.password%%%",
             "registerFailed": "%%%.user.register.registerFailed%%%",
             "passwordTooWeak": "%%%.user.register.passwordTooWeak%%%",
-            "notValidEmail": "%%%.user.register.notValidEmail%%%"
+            "notValidEmail": "%%%.user.register.notValidEmail%%%",
+            "requiredEmail": "%%%.user.register.requiredEmail%%%"
         },
         "account": {
             "currentBalance": "%%%.user.account.currentBalance%%%",
@@ -573,8 +574,10 @@
             "cryptoAddress": "%%%.me.history.cryptoAddress%%%",
             "bankInfo": {
                 "bankName": "%%%.me.history.bankInfo.bankName%%%",
-                "bankAccountName": "%%%.me.history.bankInfo.bankAccountName%%%",
-                "bankAccountNumber": "%%%.me.history.bankInfo.bankAccountNumber%%%"
+                "bankCountryAndCurrency": "%%%.me.history.bankInfo.bankCountryAndCurrency%%%",
+                "bankAccountCurrency": "%%%.me.history.bankInfo.bankAccountCurrency%%%",
+                "bankCountry": "%%%.me.history.bankInfo.bankCountry%%%",
+                "bankAccountName": "%%%.me.history.bankInfo.bankAccountName%%%"
             },
             "note": "%%%.me.history.note%%%",
             "received": "%%%.me.history.received%%%"
@@ -1138,6 +1141,17 @@
             "routingNumber": "%%%.me.bankInfo.routingNumber%%%",
             "achCheckType": "%%%.me.bankInfo.achCheckType%%%",
             "bankAccountType": "%%%.me.bankInfo.bankAccountType%%%",
+            "beneficiaryStreet": "%%%.me.bankInfo.beneficiaryStreet%%%",
+            "beneficiaryRegion": "%%%.me.bankInfo.beneficiaryRegion%%%",
+            "beneficiaryPostalCode": "%%%.me.bankInfo.beneficiaryPostalCode%%%",
+            "linkBankSectionTitle": "%%%.me.bankInfo.linkBankSectionTitle%%%",
+            "linkBankSectionDesc": "%%%.me.bankInfo.linkBankSectionDesc%%%",
+            "linkBankImportantNote": "%%%.me.bankInfo.linkBankImportantNote%%%",
+            "unlinkBankSectionTitle": "%%%.me.bankInfo.unlinkBankSectionTitle%%%",
+            "unlinkBankSectionDesc": "%%%.me.bankInfo.unlinkBankSectionDesc%%%",
+            "unlinkBankImportantNote": "%%%.me.bankInfo.unlinkBankImportantNote%%%",
+            "getStartedIntruction": "%%%.me.bankInfo.getStartedIntruction%%%",
+            "btnCancel": "%%%.me.bankInfo.btnCancel%%%",
             "dialog": {
                 "delete": {
                     "title": "%%%.me.bankInfo.dialog.delete.title%%%",
@@ -1167,11 +1181,7 @@
             "bankNameHolder": "%%%.me.bankInfo.bankNameHolder%%%",
             "bankAccountNameHolder": "%%%.me.bankInfo.bankAccountNameHolder%%%",
             "bankAccountNumberHolder": "%%%.me.bankInfo.bankAccountNumberHolder%%%",
-            "input2FA": "%%%.me.bankInfo.input2FA%%%",
-            "linkBankSectionTitle": "%%%.me.bankInfo.linkBankSectionTitle%%%",
-            "linkBankSectionDesc": "%%%.me.bankInfo.linkBankSectionDesc%%%",
-            "unlinkBankSectionTitle": "%%%.me.bankInfo.unlinkBankSectionTitle%%%",
-            "unlinkBankSectionDesc": "%%%.me.bankInfo.unlinkBankSectionDesc%%%"
+            "input2FA": "%%%.me.bankInfo.input2FA%%%"
         },
         "accountInfo": {
             "title": "%%%.me.accountInfo.title%%%",
@@ -4740,7 +4750,8 @@
             "createdBankExisted": "%%%.error.serverCode.createdBankExisted%%%"
         },
         "expiredSession": "%%%.error.expiredSession%%%",
-        "withdrawLessThanOrEqual": "%%%.error.withdrawLessThanOrEqual%%%"
+        "withdrawLessThanOrEqual": "%%%.error.withdrawLessThanOrEqual%%%",
+        "withdrawGreaterThan": "%%%.error.withdrawGreaterThan%%%"
     },
     "menuMobile": {
         "btnSignIn": "%%%.menuMobile.btnSignIn%%%",

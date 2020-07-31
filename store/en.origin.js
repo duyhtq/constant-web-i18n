@@ -1150,6 +1150,9 @@
             "unlinkBankSectionTitle": "%%%.me.bankInfo.unlinkBankSectionTitle%%%",
             "unlinkBankSectionDesc": "%%%.me.bankInfo.unlinkBankSectionDesc%%%",
             "unlinkBankImportantNote": "%%%.me.bankInfo.unlinkBankImportantNote%%%",
+            "nonUSbankSectionTitle": "%%%.me.bankInfo.nonUSbankSectionTitle%%%",
+            "nonUSbankSectionDesc": "%%%.me.bankInfo.nonUSbankSectionDesc%%%",
+            "nonUSbankImportantNote": "%%%.me.bankInfo.nonUSbankImportantNote%%%",
             "getStartedIntruction": "%%%.me.bankInfo.getStartedIntruction%%%",
             "btnCancel": "%%%.me.bankInfo.btnCancel%%%",
             "dialog": {
@@ -1208,7 +1211,8 @@
             "newPasswordIsRequired": "%%%.me.changePassword.newPasswordIsRequired%%%",
             "oldPassword": "%%%.me.changePassword.oldPassword%%%",
             "newPassword": "%%%.me.changePassword.newPassword%%%",
-            "changeFailed": "%%%.me.changePassword.changeFailed%%%"
+            "changeFailed": "%%%.me.changePassword.changeFailed%%%",
+            "changeSuccess": "%%%.me.changePassword.changeSuccess%%%"
         },
         "flexInterestConfig": {
             "title": "%%%.me.flexInterestConfig.title%%%",
@@ -2313,6 +2317,9 @@
                 "paymentMethod": {
                     "const": "%%%.home.constantLoan.listApplications.paymentMethod.const%%%",
                     "collateral": "%%%.home.constantLoan.listApplications.paymentMethod.collateral%%%"
+                },
+                "footer": {
+                    "desc": "%%%.home.constantLoan.listApplications.footer.desc%%%"
                 }
             },
             "transaction": {
@@ -2740,6 +2747,9 @@
                     "cancel": "%%%.home.constantC2CLoan.listApplications.depositFrom.cancel%%%",
                     "depositFailed": "%%%.home.constantC2CLoan.listApplications.depositFrom.depositFailed%%%",
                     "depositSuccess": "%%%.home.constantC2CLoan.listApplications.depositFrom.depositSuccess%%%"
+                },
+                "footer": {
+                    "desc": "%%%.home.constantC2CLoan.listApplications.footer.desc%%%"
                 }
             },
             "errorMessages": {
@@ -3389,6 +3399,7 @@
                     "plaid": {
                         "title": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.title%%%",
                         "subtitle": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle%%%",
+                        "noBankDesc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.noBankDesc%%%",
                         "desc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.desc%%%",
                         "updateBalanceNoteInWorkingTime": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.updateBalanceNoteInWorkingTime%%%",
                         "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.referNoteDesc%%%",
@@ -4773,6 +4784,7 @@
         "prices": "%%%.menuMobile.prices%%%",
         "account": "%%%.menuMobile.account%%%",
         "aboutYou": "%%%.menuMobile.aboutYou%%%",
+        "badges": "%%%.menuMobile.badges%%%",
         "interest": "%%%.menuMobile.interest%%%",
         "accountActivity": "%%%.menuMobile.accountActivity%%%",
         "blog": "%%%.menuMobile.blog%%%",

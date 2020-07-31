@@ -1578,18 +1578,18 @@ export default {
         youtube: { title: 'Fully Secured Peer To Peer Lending - How It Works' }
       },
       invest: {
-        title: '          <p>            <strong>INVEST</strong>            Crypto-backed          </p>        ',
-        cap: '          <div class="row">            <div class="col">              Interest rate              <strong>Up to 7.5%</strong>            </div>            <div class="col">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class="clearBottom">            All lending secured by digital assets          </p>        ',
+        title: '<p>INVEST<br/>Crypto-backed</p>',
+        cap: '          <div class="row">            <div class="col">              Interest rate              <strong>Up to 7.5%</strong>            </div>            <div class="col">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class="clearBottom text-left">            All lending secured by<br/>digital assets          </p>        ',
         btn: 'Explore'
       },
       loanOriginator: {
-        title: '          <p>            <strong>INVEST</strong>            Loan Originator          </p>        ',
-        cap: '          <div class="row">            <div class="col">              Interest rate              <strong>Up to 11%</strong>            </div>            <div class="col">              Loan term              <strong>6-15 <span>months</span></strong>            </div>          </div>          <p class="clearBottom">            Includes loan originator’s buy-back guarantee in case of default          </p>        ',
+        title: '<p>INVEST<br/>Loan Originator</p>',
+        cap: '          <div class="row">            <div class="col">              Interest rate              <strong>Up to 11%</strong>            </div>            <div class="col">              Loan term              <strong>6-15 <span>months</span></strong>            </div>          </div>          <p class="clearBottom text-left">            Includes loan originator’s<br/>buy-back guarantee in case of<br/>default          </p>        ',
         btn: 'Explore'
       },
       borrow: {
-        title: '          <p>            <strong>BORROW</strong>            Crypto Collateral          </p>        ',
-        cap: '          <div class="row">            <div class="col">              Interest rate              <strong>From 7%</strong>            </div>            <div class="col">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class="clearBottom">            Borrow against 60+ cryptocurrencies          </p>        ',
+        title: '<p>BORROW<br/>Crypto Collateral</p>',
+        cap: '          <div class="row">            <div class="col">              Interest rate              <strong>From 7%</strong>            </div>            <div class="col">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class="clearBottom text-left">            Borrow against<br/>60+ cryptocurrencies          </p>        ',
         btn: 'Explore'
       }
     }

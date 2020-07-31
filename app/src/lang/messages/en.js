@@ -1108,10 +1108,13 @@ export default {
       beneficiaryPostalCode: 'Beneficiary postal code',
       linkBankSectionTitle: 'Link your US bank account with Plaid, our ACH processor',
       linkBankSectionDesc: '<p>Deposit or withdraw using ACH bank transfers with Plaid. Link up to two bank accounts now to save time and money transferring funds to and from your Constant account. Since most savings accounts limit the number of withdrawals, we recommend you link a checking account not a savings account to avoid ACH reversals. <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">How to avoid ACH reversals</a>.</p>',
-      linkBankImportantNote: '<strong>*Please note</strong>: For your security, you must withdraw to the same bank account from which you made your deposit. This restriction applies for 60 days and can be lifted upon supplying additional verification information. <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">How linked banking works</a>.',
+      linkBankImportantNote: '<strong>Please note</strong>: For your security, you must withdraw to the same bank account from which you made your deposit. This restriction applies for 60 days and can be lifted upon supplying additional verification information. <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">How linked banking works</a>.',
       unlinkBankSectionTitle: 'Add an unlinked bank account for manual transfers',
       unlinkBankSectionDesc: '<p>If you want to send more than $5,000 per transaction, or if your bank is outside of the US or doesn\'t support ACH transfers through Plaid, please add alternative banking details below. You can then preselect these details the next time you create a withdrawal order.</p>',
       unlinkBankImportantNote: '<strong>Please note</strong>: We can’t accept ACH transfers from unlinked bank accounts. If you send an ACH transfer from an unlinked bank account, it will be returned to you according to your bank’s schedule. Please only use Zelle or wire transfer only.',
+      nonUSbankSectionTitle: 'Add a bank account for deposits and withdrawals',
+      nonUSbankSectionDesc: '<p>Speed up the transfer process by adding your bank account details below. Once saved, you can preselect these details the next time you create a deposit or withdrawal order instead of entering them manually.</p>',
+      nonUSbankImportantNote: '<strong>Please note</strong>: We can\'t accept ACH transfers from non-US bank accounts. Please send your funds via wire or Zelle only.',
       getStartedIntruction: '<p>To get started, click <strong>+ Add new bank</strong></p>',
       btnCancel: 'Cancel',
       dialog: {
@@ -1175,7 +1178,8 @@ export default {
       newPasswordIsRequired: 'New password is required',
       oldPassword: 'Old password',
       newPassword: 'New password',
-      changeFailed: 'Please make sure you have typed in your old password correctly'
+      changeFailed: 'Please make sure you have typed in your old password correctly',
+      changeSuccess: 'Your password was changed successfully'
     },
     flexInterestConfig: {
       title: 'Earn 4% APY on your balance with Flex',
@@ -2256,7 +2260,8 @@ export default {
           depositFailed: 'Failed while depositing, please try again',
           depositSuccess: 'Your deposit was completed successfully'
         },
-        paymentMethod: { const: 'USD', collateral: 'Collateral' }
+        paymentMethod: { const: 'USD', collateral: 'Collateral' },
+        footer: { desc: 'Showing {start} - {end} of {total} selected entries' },
       },
       transaction: {
         copiedAddress: 'Address is copied to clipboard',
@@ -2678,7 +2683,8 @@ export default {
           cancel: 'Cancel',
           depositFailed: 'Failed while depositing, please try again',
           depositSuccess: 'Your deposit was completed successfully'
-        }
+        },
+        footer: { desc: 'Showing {start} - {end} of {total} selected entries' },
       },
       errorMessages: {
         exchangeMaxAmountRequired: 'Amount is required to make a borrow!',
@@ -3297,6 +3303,7 @@ export default {
           plaid: {
             title: 'Transfer from a linked US bank account',
             subtitle: '<p>Make an ACH transfer from a linked US bank account through our partner Plaid. Please ensure you have sufficient funds in your account and your bank supports ACH transfers before you proceed.</p><p>To process your transfer, please choose your linked US bank account below and then click <strong>Submit</strong>.</p><p>If you’ve not linked a US bank account yet, please click <strong>+ Add bank</strong> and follow the on-screen instructions.</p>',
+            noBankDesc: '<p>Link a US bank account to do ACH transfers through our partner, Plaid.</p><p>You don’t have any linked bank accounts at the moment. To link a US bank account to do ACH transfers, please click <strong>+ Add new bank</strong>.</p>',
             desc: "<p>We've partnered with ACH processor Plaid to make transfers easy for you. Once you’ve linked your US bank account, please select it from the options shown and click <strong>Submit</strong>.</p> <p>Please note the maximum you can send via ACH is $5,000 per transaction. If you'd like to send more, please select wire transfer.</p>",
             updateBalanceNoteInWorkingTime: 'Please note it might take <strong>up to five business days</strong> for the ACH transfer to complete and show in your account.',
             referNoteDesc: '<h4>Before you click submit...</h4> <p>Please check the following to avoid any delays or ACH reversals</p>',
@@ -4604,6 +4611,7 @@ export default {
     prices: 'Pricing & Service times',
     account: 'Account',
     aboutYou: 'About You',
+    badges: 'Your badges',
     interest: 'Interest',
     accountActivity: 'Account Activity',
     blog: 'Blog',

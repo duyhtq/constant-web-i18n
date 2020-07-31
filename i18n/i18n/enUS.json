@@ -1150,6 +1150,9 @@
             "unlinkBankSectionTitle": "Add an unlinked bank account for manual transfers",
             "unlinkBankSectionDesc": "<p>If you want to send more than $5,000 per transaction, or if your bank is outside of the US or doesn't support ACH transfers through Plaid, please add alternative banking details below. You can then preselect these details the next time you create a withdrawal order.</p>",
             "unlinkBankImportantNote": "<strong>Please note</strong>: We can’t accept ACH transfers from unlinked bank accounts. If you send an ACH transfer from an unlinked bank account, it will be returned to you according to your bank’s schedule. Please only use Zelle or wire transfer only.",
+            "nonUSbankSectionTitle": "Add a bank account for deposits and withdrawals",
+            "nonUSbankSectionDesc": "<p>Speed up the transfer process by adding your bank account details below. Once saved, you can preselect these details the next time you create a deposit or withdrawal order instead of entering them manually.</p>",
+            "nonUSbankImportantNote": "<strong>Please note</strong>: We can't accept ACH transfers from non-US bank accounts. Please send your funds via wire or Zelle only.",
             "getStartedIntruction": "<p>To get started, click <strong>+ Add new bank</strong></p>",
             "btnCancel": "Cancel",
             "dialog": {
@@ -1208,7 +1211,8 @@
             "newPasswordIsRequired": "New password is required",
             "oldPassword": "Old password",
             "newPassword": "New password",
-            "changeFailed": "Please make sure you have typed in your old password correctly"
+            "changeFailed": "Please make sure you have typed in your old password correctly",
+            "changeSuccess": "Your password was changed successfully"
         },
         "flexInterestConfig": {
             "title": "Earn 4% APY on your balance with Flex",
@@ -2313,6 +2317,9 @@
                 "paymentMethod": {
                     "const": "USD",
                     "collateral": "Collateral"
+                },
+                "footer": {
+                    "desc": "Showing {start} - {end} of {total} selected entries"
                 }
             },
             "transaction": {
@@ -2448,7 +2455,7 @@
                 "buttonText": "Buy crypto",
                 "exchangeInfoDesc": "You are borrowing USD that we will then use to buy your chosen cryptocurrency. Any USD left over from the purchase is returned to your Constant account.",
                 "toolTipCollateral": "          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.        ",
-                "amountDesc": "Choose a cryptocurrency and amount. You might receive a little less of your chosen cryptocurrency if prices change before completing the sale.",
+                "amountDesc": "Choose a cryptocurrency and amount. You might receive a little more or less of your chosen cryptocurrency if prices change before completing the sale.",
                 "borrowConfirm": "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {percent} collateralization. Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your Accounts page.",
                 "minTermTooltip": "This is the minimum amount of time you want to borrow.",
                 "collateralBalance": "Collateral Balance",
@@ -2740,6 +2747,9 @@
                     "cancel": "Cancel",
                     "depositFailed": "Failed while depositing, please try again",
                     "depositSuccess": "Your deposit was completed successfully"
+                },
+                "footer": {
+                    "desc": "Showing {start} - {end} of {total} selected entries"
                 }
             },
             "errorMessages": {
@@ -3389,6 +3399,7 @@
                     "plaid": {
                         "title": "Transfer from a linked US bank account",
                         "subtitle": "<p>Make an ACH transfer from a linked US bank account through our partner Plaid. Please ensure you have sufficient funds in your account and your bank supports ACH transfers before you proceed.</p><p>To process your transfer, please choose your linked US bank account below and then click <strong>Submit</strong>.</p><p>If you’ve not linked a US bank account yet, please click <strong>+ Add bank</strong> and follow the on-screen instructions.</p>",
+                        "noBankDesc": "<p>Link a US bank account to do ACH transfers through our partner, Plaid.</p><p>You don’t have any linked bank accounts at the moment. To link a US bank account to do ACH transfers, please click <strong>+ Add new bank</strong>.</p>",
                         "desc": "<p>We've partnered with ACH processor Plaid to make transfers easy for you. Once you’ve linked your US bank account, please select it from the options shown and click <strong>Submit</strong>.</p> <p>Please note the maximum you can send via ACH is $5,000 per transaction. If you'd like to send more, please select wire transfer.</p>",
                         "updateBalanceNoteInWorkingTime": "Please note it might take <strong>up to five business days</strong> for the ACH transfer to complete and show in your account.",
                         "referNoteDesc": "<h4>Before you click submit...</h4> <p>Please check the following to avoid any delays or ACH reversals</p>",
@@ -4689,7 +4700,7 @@
                 "amountRequired": "Amount is required to make a borrow!",
                 "exchangeInfoDesc": "The amount of USD you’re borrowing to buy your chosen crypto. We search multiple exchanges to find the best price for you",
                 "minTermTooltip": "The duration of your loan term. Repay in cash, stablecoins, or cryptocurrency before your term ends to get your collateral back",
-                "amountLabelDesc": "Choose a cryptocurrency and amount. You might receive a little less of your chosen cryptocurrency if prices change before completing the sale.",
+                "amountLabelDesc": "Choose a cryptocurrency and amount. You might receive a little more or less of your chosen cryptocurrency if prices change before completing the sale.",
                 "collateralLabel": "Collateral required",
                 "collateralDesc": "The amount of collateral you need to secure the USD loan used to buy your chosen crypto.",
                 "collateralRequiredDesc": "To secure your loan, please deposit {value}% the loan value in collateral.",
@@ -4773,6 +4784,7 @@
         "prices": "Pricing & Service times",
         "account": "Account",
         "aboutYou": "About You",
+        "badges": "Your badges",
         "interest": "Interest",
         "accountActivity": "Account Activity",
         "blog": "Blog",

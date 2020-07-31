@@ -3864,6 +3864,98 @@
                 "others": "%%%.deposit.compareTable.protection.others%%%"
             },
             "description": "%%%.deposit.compareTable.description%%%"
+        },
+        "faqs": {
+            "0": {
+                "question": "%%%.deposit.faqs.0.question%%%",
+                "answer": "%%%.deposit.faqs.0.answer%%%"
+            },
+            "1": {
+                "question": "%%%.deposit.faqs.1.question%%%",
+                "answer": "%%%.deposit.faqs.1.answer%%%"
+            },
+            "2": {
+                "question": "%%%.deposit.faqs.2.question%%%",
+                "answer": "%%%.deposit.faqs.2.answer%%%"
+            },
+            "3": {
+                "question": "%%%.deposit.faqs.3.question%%%",
+                "answer": "%%%.deposit.faqs.3.answer%%%"
+            },
+            "4": {
+                "question": "%%%.deposit.faqs.4.question%%%",
+                "answer": "%%%.deposit.faqs.4.answer%%%"
+            },
+            "5": {
+                "question6": "%%%.deposit.faqs.5.question6%%%",
+                "answer6": "%%%.deposit.faqs.5.answer6%%%"
+            },
+            "6": {
+                "question7": "%%%.deposit.faqs.6.question7%%%",
+                "answer7": "%%%.deposit.faqs.6.answer7%%%"
+            },
+            "7": {
+                "question8": "%%%.deposit.faqs.7.question8%%%",
+                "answer8": "%%%.deposit.faqs.7.answer8%%%"
+            },
+            "8": {
+                "question": "%%%.deposit.faqs.8.question%%%",
+                "answer": "%%%.deposit.faqs.8.answer%%%"
+            },
+            "9": {
+                "question": "%%%.deposit.faqs.9.question%%%",
+                "answer": "%%%.deposit.faqs.9.answer%%%"
+            },
+            "10": {
+                "question": "%%%.deposit.faqs.10.question%%%",
+                "answer": "%%%.deposit.faqs.10.answer%%%"
+            },
+            "11": {
+                "question": "%%%.deposit.faqs.11.question%%%",
+                "answer": "%%%.deposit.faqs.11.answer%%%"
+            }
+        },
+        "faqs2": {
+            "0": {
+                "question": "%%%.deposit.faqs2.0.question%%%",
+                "answer": "%%%.deposit.faqs2.0.answer%%%"
+            },
+            "1": {
+                "question": "%%%.deposit.faqs2.1.question%%%",
+                "answer": "%%%.deposit.faqs2.1.answer%%%"
+            },
+            "2": {
+                "question": "%%%.deposit.faqs2.2.question%%%",
+                "answer": "%%%.deposit.faqs2.2.answer%%%"
+            },
+            "3": {
+                "question": "%%%.deposit.faqs2.3.question%%%",
+                "answer": "%%%.deposit.faqs2.3.answer%%%"
+            },
+            "4": {
+                "question": "%%%.deposit.faqs2.4.question%%%",
+                "answer": "%%%.deposit.faqs2.4.answer%%%"
+            },
+            "5": {
+                "question": "%%%.deposit.faqs2.5.question%%%",
+                "answer": "%%%.deposit.faqs2.5.answer%%%"
+            },
+            "6": {
+                "question": "%%%.deposit.faqs2.6.question%%%",
+                "answer": "%%%.deposit.faqs2.6.answer%%%"
+            },
+            "7": {
+                "question": "%%%.deposit.faqs2.7.question%%%",
+                "answer": "%%%.deposit.faqs2.7.answer%%%"
+            },
+            "8": {
+                "question": "%%%.deposit.faqs2.8.question%%%",
+                "answer": "%%%.deposit.faqs2.8.answer%%%"
+            },
+            "9": {
+                "question": "%%%.deposit.faqs2.9.question%%%",
+                "answer": "%%%.deposit.faqs2.9.answer%%%"
+            }
         }
     },
     "depositCrypto": {
@@ -3909,34 +4001,6 @@
                 "desc": "%%%.depositCrypto.howItWorks.2.desc%%%"
             },
             "title": "%%%.depositCrypto.howItWorks.title%%%"
-        }
-    },
-    "deposit1": {
-        "faqs": {
-            "question1": "%%%.deposit1.faqs.question1%%%",
-            "answer1": "%%%.deposit1.faqs.answer1%%%",
-            "question2": "%%%.deposit1.faqs.question2%%%",
-            "answer2": "%%%.deposit1.faqs.answer2%%%",
-            "question3": "%%%.deposit1.faqs.question3%%%",
-            "answer3": "%%%.deposit1.faqs.answer3%%%",
-            "question4": "%%%.deposit1.faqs.question4%%%",
-            "answer4": "%%%.deposit1.faqs.answer4%%%",
-            "question5": "%%%.deposit1.faqs.question5%%%",
-            "answer5": "%%%.deposit1.faqs.answer5%%%",
-            "question6": "%%%.deposit1.faqs.question6%%%",
-            "answer6": "%%%.deposit1.faqs.answer6%%%",
-            "question7": "%%%.deposit1.faqs.question7%%%",
-            "answer7": "%%%.deposit1.faqs.answer7%%%",
-            "question8": "%%%.deposit1.faqs.question8%%%",
-            "answer8": "%%%.deposit1.faqs.answer8%%%",
-            "question9": "%%%.deposit1.faqs.question9%%%",
-            "answer9": "%%%.deposit1.faqs.answer9%%%",
-            "question10": "%%%.deposit1.faqs.question10%%%",
-            "answer10": "%%%.deposit1.faqs.answer10%%%",
-            "question11": "%%%.deposit1.faqs.question11%%%",
-            "answer11": "%%%.deposit1.faqs.answer11%%%",
-            "question12": "%%%.deposit1.faqs.question12%%%",
-            "answer12": "%%%.deposit1.faqs.answer12%%%"
         }
     },
     "ourStory": {

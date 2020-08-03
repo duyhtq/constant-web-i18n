@@ -1347,7 +1347,7 @@ export default {
       updatedSuccess: 'Your information was updated successfully',
       updatedFailed: 'Failed while updating your information, please try again!',
       checkVerifyFailed: 'Failed while checking your verify status',
-      statusUnverifiedUS: 'Please verify your ID to get a ${kYCTrialAmount} bonus',
+      statusUnverifiedUS: `Please verify your ID to get a <span style="color:#FF9F00;">\${kYCTrialAmount} bonus</span>`,
       action: {
         invest: 'making a deposit',
         transfer: 'making a transfer',

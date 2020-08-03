@@ -1016,7 +1016,10 @@
                     "depositFailed": "%%%.me.proSaving.listApplications.depositFrom.depositFailed%%%",
                     "depositSuccess": "%%%.me.proSaving.listApplications.depositFrom.depositSuccess%%%"
                 },
-                "noOpenData": "%%%.me.proSaving.listApplications.noOpenData%%%"
+                "noOpenData": "%%%.me.proSaving.listApplications.noOpenData%%%",
+                "footer": {
+                    "desc": "%%%.me.proSaving.listApplications.footer.desc%%%"
+                }
             },
             "applicationDetail": {
                 "dueDays": "%%%.me.proSaving.applicationDetail.dueDays%%%",
@@ -1383,6 +1386,7 @@
             "updatedSuccess": "%%%.me.kycVerification.updatedSuccess%%%",
             "updatedFailed": "%%%.me.kycVerification.updatedFailed%%%",
             "checkVerifyFailed": "%%%.me.kycVerification.checkVerifyFailed%%%",
+            "statusUnverifiedUS": "%%%.me.kycVerification.statusUnverifiedUS%%%",
             "action": {
                 "invest": "%%%.me.kycVerification.action.invest%%%",
                 "transfer": "%%%.me.kycVerification.action.transfer%%%",

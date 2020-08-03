@@ -1040,7 +1040,7 @@
 %%%.me.kycVerification.updatedSuccess%%%,"Your information was updated successfully"
 %%%.me.kycVerification.updatedFailed%%%,"Failed while updating your information, please try again!"
 %%%.me.kycVerification.checkVerifyFailed%%%,"Failed while checking your verify status"
-%%%.me.kycVerification.statusUnverifiedUS%%%,"Please verify your ID to get a ${kYCTrialAmount} bonus"
+%%%.me.kycVerification.statusUnverifiedUS%%%,"Please verify your ID to get a <span style=""color:#FF9F00;"">${kYCTrialAmount} bonus</span>"
 %%%.me.kycVerification.action.invest%%%,"making a deposit"
 %%%.me.kycVerification.action.transfer%%%,"making a transfer"
 %%%.me.kycVerification.action.deposit%%%,"making a deposit"

@@ -436,10 +436,10 @@
             "exportToExcel": "%%%.me.history.exportToExcel%%%",
             "cancel": "%%%.me.history.cancel%%%",
             "backToOrder": "%%%.me.history.backToOrder%%%",
-            "balance": "%%%.me.history.balance%%%",
-            "holding": "%%%.me.history.holding%%%",
-            "totalIn": "%%%.me.history.totalIn%%%",
-            "totalOut": "%%%.me.history.totalOut%%%",
+            "balances": "%%%.me.history.balances%%%",
+            "holdings": "%%%.me.history.holdings%%%",
+            "totalIns": "%%%.me.history.totalIns%%%",
+            "totalOuts": "%%%.me.history.totalOuts%%%",
             "amountText": "%%%.me.history.amountText%%%",
             "topup": "%%%.me.history.topup%%%",
             "topUpStatus": {
@@ -925,6 +925,7 @@
                 "day": "%%%.me.proSaving.listApplications.day%%%",
                 "anyTimeAccount": "%%%.me.proSaving.listApplications.anyTimeAccount%%%",
                 "balanceInterestDesc": "%%%.me.proSaving.listApplications.balanceInterestDesc%%%",
+                "balanceInterestDescNotTrial": "%%%.me.proSaving.listApplications.balanceInterestDescNotTrial%%%",
                 "referralDescUS": "%%%.me.proSaving.listApplications.referralDescUS%%%",
                 "trial": "%%%.me.proSaving.listApplications.trial%%%",
                 "trial_description": "%%%.me.proSaving.listApplications.trial_description%%%",
@@ -1251,6 +1252,7 @@
                 "labelOff": "%%%.me.emailSetting.emailConfirmation.labelOff%%%",
                 "noteOff": "%%%.me.emailSetting.emailConfirmation.noteOff%%%",
                 "messageConfirmDisable": "%%%.me.emailSetting.emailConfirmation.messageConfirmDisable%%%",
+                "messageConfirmEnable": "%%%.me.emailSetting.emailConfirmation.messageConfirmEnable%%%",
                 "confirm": "%%%.me.emailSetting.emailConfirmation.confirm%%%",
                 "cancel": "%%%.me.emailSetting.emailConfirmation.cancel%%%",
                 "disableSuccess": "%%%.me.emailSetting.emailConfirmation.disableSuccess%%%",
@@ -4623,8 +4625,10 @@
         "topupNote": "%%%.collateralBalance.topupNote%%%",
         "depositCollateralTitle": "%%%.collateralBalance.depositCollateralTitle%%%",
         "topupSuccess": "%%%.collateralBalance.topupSuccess%%%",
+        "depositSuccess": "%%%.collateralBalance.depositSuccess%%%",
         "flexBalance": "%%%.collateralBalance.flexBalance%%%",
-        "cryptoWallet": "%%%.collateralBalance.cryptoWallet%%%"
+        "cryptoWallet": "%%%.collateralBalance.cryptoWallet%%%",
+        "recommendMessage": "%%%.collateralBalance.recommendMessage%%%"
     },
     "proLending": {
         "balances": {
@@ -4826,7 +4830,8 @@
             "registerWithExistEmail": "%%%.error.serverCode.registerWithExistEmail%%%",
             "generalCode500": "%%%.error.serverCode.generalCode500%%%",
             "loginFailure": "%%%.error.serverCode.loginFailure%%%",
-            "createdBankExisted": "%%%.error.serverCode.createdBankExisted%%%"
+            "createdBankExisted": "%%%.error.serverCode.createdBankExisted%%%",
+            "systemError": "%%%.error.serverCode.systemError%%%"
         },
         "expiredSession": "%%%.error.expiredSession%%%",
         "withdrawLessThanOrEqual": "%%%.error.withdrawLessThanOrEqual%%%",

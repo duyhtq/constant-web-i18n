@@ -403,10 +403,10 @@ export default {
       exportToExcel: 'Export to excel',
       cancel: 'Cancel',
       backToOrder: 'View detail',
-      balance: 'Total balance: {balance} USD',
-      holding: 'Holding: {holding} USD',
-      totalIn: 'Total In: {totalIn} USD',
-      totalOut: 'Total Out: {totalOut} USD',
+      balances: 'Total balance',
+      holdings: 'Holding',
+      totalIns: 'Total In',
+      totalOuts: 'Total Out',
       amountText: 'Amount',
       topup: 'Top up',
       topUpStatus: { '1': 'Done', '3': 'Expired', '5': 'Cancelled', '7': 'Pending' },
@@ -891,6 +891,10 @@ export default {
         <div>Instant credit: <strong>\${instantCredit}</strong></div>
         <div>Trial: <strong>\${trialBalance}</strong></div>
         `,
+        balanceInterestDescNotTrial: `
+        <div>Available balance: <strong>\${availableBalance}</strong></div>
+        <div>Instant credit: <strong>\${instantCredit}</strong></div>
+        `,
         referralDescUS: '        Get a $10 reward for you and your friends when you refer them to invest with us. Additionally, get rewarded 10% of their earned interest in their first year - paid out every second. So if your friend earns $100 we’ll give you $10. There’s no limit to the number of friends you can refer.        ',
         trial: 'TRIAL',
         trial_description: 'You keep the interest. Term has ended',
@@ -1216,6 +1220,7 @@ export default {
         labelOff: 'Enable',
         noteOff: '            <p>Uh oh – email confirmations are disabled. Enable them now to add extra security to your account.</p>            ',
         messageConfirmDisable: '        <p>Are you sure you want to disable email notifications? Without them, your transactions are authorized using 2-Factor Authorization only.</p>        <p>For your security, you won’t be able to withdraw or transfer for 24 hours after disabling email notifications. Do you want to continue?</p>        ',
+        messageConfirmEnable: '<p>Thank you. Email confirmations have been enabled. Anytime you withdraw or transfer, we’ll email you a link to authorize the transaction.</p>',
         confirm: 'Yes',
         cancel: 'No',
         disableSuccess: 'Successfully Disabled',
@@ -4499,8 +4504,10 @@ export default {
     topupNote: 'Your crypto will be sent to your multi-collateral balance. To top up an isolated (single-collateral) loan, go to your active loans page and click the top-up button next to the loan you wish to top-up.',
     depositCollateralTitle: 'Deposit',
     topupSuccess: 'Top-up Collateral successfully',
+    depositSuccess: 'Deposit Collateral successfully',
     flexBalance: 'Flex Balance',
-    cryptoWallet: 'Crypto Wallet'
+    cryptoWallet: 'Crypto Wallet',
+    recommendMessage: 'To restore your collateral value to the recommended {recommendedRate}%, please top up {amount} {currency}',
   },
   proLending: {
     balances: {
@@ -4702,7 +4709,8 @@ export default {
       registerWithExistEmail: 'This email already exists in our system. Please try another.',
       generalCode500: 'Something went wrong, please try again! (500)',
       loginFailure: 'Please make sure your email and password are correct.',
-      createdBankExisted: 'Nice! This bank account has already been registered.'
+      createdBankExisted: 'Nice! This bank account has already been registered.',
+      systemError: 'System error'
     },
     expiredSession: 'Your session has expired. Please log in again.',
     withdrawLessThanOrEqual: 'The maximum withdrawal amount is {max}. Please try other available methods.',

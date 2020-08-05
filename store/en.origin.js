@@ -462,7 +462,8 @@
                     "transferMoneyToAgent": "%%%.me.history.user.status.transferMoneyToAgent%%%",
                     "transferredMoneyToAgentInvest": "%%%.me.history.user.status.transferredMoneyToAgentInvest%%%",
                     "inProgress": "%%%.me.history.user.status.inProgress%%%",
-                    "transferring_fiat": "%%%.me.history.user.status.transferring_fiat%%%"
+                    "transferring_fiat": "%%%.me.history.user.status.transferring_fiat%%%",
+                    "orderProcessing": "%%%.me.history.user.status.orderProcessing%%%"
                 },
                 "account": "%%%.me.history.user.account%%%",
                 "fullName": "%%%.me.history.user.fullName%%%",
@@ -526,6 +527,7 @@
                 "24": "%%%.me.history.orderType.24%%%",
                 "25": "%%%.me.history.orderType.25%%%",
                 "26": "%%%.me.history.orderType.26%%%",
+                "27": "%%%.me.history.orderType.27%%%",
                 "33": "%%%.me.history.orderType.33%%%",
                 "101": "%%%.me.history.orderType.101%%%",
                 "102": "%%%.me.history.orderType.102%%%",
@@ -5113,6 +5115,7 @@
             "5": "%%%.badges.term.5%%%",
             "6": "%%%.badges.term.6%%%",
             "7": "%%%.badges.term.7%%%",
+            "8": "%%%.badges.term.8%%%",
             "title": "%%%.badges.term.title%%%",
             "note": "%%%.badges.term.note%%%"
         },

@@ -424,7 +424,8 @@ export default {
           transferMoneyToAgent: 'Please make a transfer to complete your deposit',
           transferredMoneyToAgentInvest: 'Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.',
           inProgress: 'Order in progress',
-          transferring_fiat: 'Transferring Fiat'
+          transferring_fiat: 'Transferring Fiat',
+          orderProcessing: 'Your order is processing',
         },
         account: 'User',
         fullName: 'Full name',
@@ -488,6 +489,7 @@ export default {
         '24': 'LO investment',
         '25': 'LO repayment',
         '26': 'LO Investment',
+        '27': 'LO Investment Interest',
         '33': 'Badge reward',
         '101': 'Bonus',
         '102': 'Coupon Signup',
@@ -938,7 +940,7 @@ export default {
           },
           shareFbSuccess: 'Success! Thanks for telling your friends about Constant.'
         },
-        shareAndEarnUS: 'Invite a friend, earn $10 or more.',
+        shareAndEarnUS: 'Invite a friend, earn $20 or more.',
         batchtransfer: 'Transfer to multiple people',
         depositMatched: 'Deposit',
         cancelDepositMatched: 'Cancel Deposit',
@@ -5009,6 +5011,7 @@ export default {
       '5': "Badges are awarded retroactively but rewards apply to qualifying activities after July 16th 2020 only. For example, if you passed KYC before July 16th 2020, you'll earn the “Member” badge but not the reward.",
       '6': 'Constant reserves the right to withhold rewards and change the terms and conditions of Constant Badges at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.',
       '7': 'To be eligible for rewards, you must have passed KYC.',
+      '8': 'Badges awarded for depositing apply to fiat deposits only.',
       title: 'Terms and Conditions',
       note: 'Effective as of 2020/07/16 00:00 AM (GMT+0)'
     },

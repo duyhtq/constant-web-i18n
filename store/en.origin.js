@@ -451,6 +451,7 @@
             "loanId": "%%%.me.history.loanId%%%",
             "loanDate": "%%%.me.history.loanDate%%%",
             "loanStatus": "%%%.me.history.loanStatus%%%",
+            "balance": "%%%.me.history.balance%%%",
             "user": {
                 "status": {
                     "transferredMoneyToAgent": "%%%.me.history.user.status.transferredMoneyToAgent%%%",
@@ -1100,6 +1101,7 @@
             "plFirstName": "%%%.me.kyc.plFirstName%%%",
             "plMiddleName": "%%%.me.kyc.plMiddleName%%%",
             "plLastName": "%%%.me.kyc.plLastName%%%",
+            "plEmail": "%%%.me.kyc.plEmail%%%",
             "isUSYes": "%%%.me.kyc.isUSYes%%%",
             "isUSNo": "%%%.me.kyc.isUSNo%%%",
             "plTaxCountry": "%%%.me.kyc.plTaxCountry%%%",
@@ -1123,7 +1125,9 @@
             "descAddrUpload": "%%%.me.kyc.descAddrUpload%%%",
             "btnBack": "%%%.me.kyc.btnBack%%%",
             "reviewing": "%%%.me.kyc.reviewing%%%",
-            "uploadImageClick": "%%%.me.kyc.uploadImageClick%%%"
+            "uploadImageClick": "%%%.me.kyc.uploadImageClick%%%",
+            "discardNoteTitle": "%%%.me.kyc.discardNoteTitle%%%",
+            "discardNote": "%%%.me.kyc.discardNote%%%"
         },
         "bankInfo": {
             "subject": "%%%.me.bankInfo.subject%%%",
@@ -4630,7 +4634,9 @@
         "depositSuccess": "%%%.collateralBalance.depositSuccess%%%",
         "flexBalance": "%%%.collateralBalance.flexBalance%%%",
         "cryptoWallet": "%%%.collateralBalance.cryptoWallet%%%",
-        "recommendMessage": "%%%.collateralBalance.recommendMessage%%%"
+        "recommendMessage": "%%%.collateralBalance.recommendMessage%%%",
+        "errorMaxValue": "%%%.collateralBalance.errorMaxValue%%%",
+        "errorMinValue": "%%%.collateralBalance.errorMinValue%%%"
     },
     "proLending": {
         "balances": {
@@ -4833,7 +4839,12 @@
             "generalCode500": "%%%.error.serverCode.generalCode500%%%",
             "loginFailure": "%%%.error.serverCode.loginFailure%%%",
             "createdBankExisted": "%%%.error.serverCode.createdBankExisted%%%",
-            "systemError": "%%%.error.serverCode.systemError%%%"
+            "systemError": "%%%.error.serverCode.systemError%%%",
+            "transferUserNotFound": "%%%.error.serverCode.transferUserNotFound%%%",
+            "loginFailureCaptchaV2": "%%%.error.serverCode.loginFailureCaptchaV2%%%",
+            "stakingRequireMinTerm": "%%%.error.serverCode.stakingRequireMinTerm%%%",
+            "generalCode400": "%%%.error.serverCode.generalCode400%%%",
+            "generalError": "%%%.error.serverCode.generalError%%%"
         },
         "expiredSession": "%%%.error.expiredSession%%%",
         "withdrawLessThanOrEqual": "%%%.error.withdrawLessThanOrEqual%%%",

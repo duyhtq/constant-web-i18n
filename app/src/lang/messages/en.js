@@ -413,6 +413,7 @@ export default {
       loanId: 'Loan ID',
       loanDate: 'Loan date',
       loanStatus: 'Loan status',
+      balance: 'Total balance: {balance} USD',
       user: {
         status: {
           transferredMoneyToAgent: 'Your account will be credited once we have received your transfer.',
@@ -1067,6 +1068,7 @@ export default {
       plFirstName: 'First Name',
       plMiddleName: 'Middle Name (Optional)',
       plLastName: 'Last Name',
+      plEmail: 'Email Address',
       isUSYes: 'Yes',
       isUSNo: 'No',
       plTaxCountry: 'Select your country',
@@ -1090,7 +1092,9 @@ export default {
       descAddrUpload: '<div>        <p>Valid documents: utility bill, phone bill, mortgage statement, tenancy        agreement, bank/credit card statement, insurance letter (motor, home, or        life), or financial statement (pension, endowment).</p>        <p>        <strong>Document must be dated within the last 90 days.</strong>        </p>        <p>        Please ensure your proof of address is an exact match with the address        provided in your application, including all shorthands and abbreviations.</p>        <p>              Please make sure that the photo is complete and clearly visible, in BMP,         JPG, JPEG, PNG or PDF format, and is smaller than 10MB.</p>      </div>      ',
       btnBack: 'Back',
       reviewing: '        <p>Thanks, it’s nice to meet you.</p>        <p>          We’re looking over your information and will let you know once you’re          good to go.        </p>      ',
-      uploadImageClick: 'Click here to upload your images.'
+      uploadImageClick: 'Click here to upload your images.',
+      discardNoteTitle: 'Your KYC application has not yet been approved due to:',
+      discardNote: 'Please make sure all your documents are in order and just click submit again.',
     },
     bankInfo: {
       subject: 'Bank account details for receiving withdrawals or transfers ',
@@ -1957,7 +1961,14 @@ export default {
   home: {
     constantLoan: {
       intro: {
-        content: '        <p>Borrow the way you want</p>        <p class="h1">Set your own rates.</p>        <p class="h1">Borrow against 60+ cryptocurrencies.</p>        <h1>Get cash for crypto without needing to sell.</h1>        <p/>        <p>Get the funds you need at rates you’re willing to pay. Your collateral is securely escrowed and returned to you when you repay. Free withdrawals in cash or stablecoins.</p>        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href="https://blog.myconstant.com/multi-crypto-loans" target="_blank" class="underline">our blog</a> and FAQs for more details.</p>        ',
+        content: `
+            <p>Borrow the way you want</p>
+            <p class="h1">Borrow from just 7% APR.</p>
+            <p class="h1">Use 40+ cryptos as collateral.</p>
+            <h1>Get <span style="color:#F5A623;">cash for crypto</span> without selling up.</h1>
+            <br/>
+            <p>Borrow against your cryptocurrency portfolio from just 7% APR. You choose the term, we match you with an investor, and you can withdraw your loan in USD or stablecoins. Your collateral is securely stored and returned to you when you repay.</p>
+        `,
         youtube: { title: 'Why borrow with Constant?' },
         desc: {
           '1': 'Secure escrow',
@@ -2019,8 +2030,8 @@ export default {
       },
       what: {
         title: 'Why borrow with us?',
-        whatCaption0: 'Set your own rates',
-        whatDesc0: '          <p>Our P2P matching algorithm replaces centralized banks and allows you to tap into true market demand.</p>        ',
+        whatCaption0: 'Flexible terms',
+        whatDesc0: '          <p>Borrow any amount from 1-9 months, giving you the flexibility to repay at a time that suits you.</p>        ',
         whatCaption1: 'Protected by Ethereum',
         whatDesc1: '          <p>Loans secured by Ethereum (ETH) are protected by smart contracts that always run exactly as programmed.</p>        ',
         whatCaption2: 'Secure escrow',
@@ -2030,12 +2041,12 @@ export default {
       },
       howItWorks: {
         title: 'How it works',
-        title1: '1. Set your own terms',
-        desc1: 'Choose how much you want to borrow and for how long, and then select the interest rate you want to pay.',
-        title2: '2. Wait to be matched',
-        desc2: 'The Constant matching algorithm finds investors that can lend you the money you need at the rates you want.',
+        title1: '1. Choose a term',
+        desc1: 'Borrow any amount for 30, 90, or 180 days. The shorter your term, the lower the interest.',
+        title2: '2. Deposit your collateral',
+        desc2: 'Send collateral to secure your loan. You can combine different cryptocurrencies to meet the minimum collateral value.',
         title3: '3. Get cash to spend',
-        desc3: 'Once you’ve found a match, you’ll receive the loan in your account. ETH collateral is securely escrowed in a smart contract, while supported collateral is held in Prime Trust cold storage. Collateral can be withdrawn once you repay.',
+        desc3: 'Once you’ve sent your collateral, you can withdraw your loan in fiat or stablecoins. Your collateral is securely stored and returned to you when you repay.',
         intro: '          <p>Deposit cryptocurrency to secure cash, at the best rates on the market.</p>          <p>Need cash? We accept major cryptocurrencies as collateral, in exchange for USD or the equivalent in your local currency. That means you’ll have cash to spend - without needing to sell your crypto.</p>        ',
         step1: 'STEP 1',
         step2: 'STEP 2',
@@ -2464,8 +2475,8 @@ export default {
       },
       why: {
         title: 'Why borrow with us?',
-        whatCaption0: 'Set your own rates',
-        whatDesc0: '          <p>Our P2P matching algorithm allows you to tap into true market demand. Choose the market rate to guarantee a match, or go higher to match even faster.</p>        ',
+        whatCaption0: 'Flexible terms',
+        whatDesc0: '          <p>Borrow any amount from 1-9 months, giving you the flexibility to buy your chosen crypto and then repay at a time that suits you.</p>        ',
         whatCaption1: 'No exchanges',
         whatDesc1: '          <p>We match you with an investor and then source your chosen cryptocurrency at the best rates. No expensive middlemen. No trading fees.</p>        ',
         whatCaption2: 'Multiple pricing oracles',
@@ -4104,8 +4115,8 @@ export default {
   affiliates: {
     applyForm: {
       applyNow: 'Apply now',
-      title: '        <p class="header">Get paid for your content.</p>        <p>Become a Constant affiliate and earn money on your content. <strong>Get $20</strong> for every person<sup>1</sup> you refer plus <strong>20% of their Flex interest in their first year</strong> (capped at $1 million). Refer as many people as you like. </p>      ',
-      titleDesc: '      <p class="reference"><sup>1</sup> To qualify for the $20 reward, your referee must be a US citizen (see Affiliate Terms and Conditions).</p>      ',
+      title: '        <p class="header">Get paid for your content.</p>        <p>Become a Constant affiliate and earn money on your content. <strong>Get $30</strong><sup>1</sup> for every person<sup>2</sup> you refer plus <strong>20% of their Flex interest in their first year</strong> (capped at $1 million). Refer as many people as you like. </p>      ',
+      titleDesc: '<p class="reference clearBottom"><sup>1</sup> Valid until the end of August</p><p class="reference"><sup>2</sup> To qualify for the $30 reward, your referee must be a US citizen (see Affiliate Terms and Conditions).</p>      ',
       userName: 'Your name',
       userEmail: 'Your email address',
       notValidEmail: 'Invalid email address',
@@ -4128,7 +4139,7 @@ export default {
         '3': ' ',
         '4': 'for your referee'
       },
-      desc: '        <div class="section-desc-title">YOU EARN MORE</div>        <div><strong>Earn $20 for every US citizen who registers</strong>, paid instantly after they make their first deposit, and with no limits.</div>        <div><strong>Then earn 20% of their Flex interest</strong>, paid every second, and capped at a generous $1,000,000.</div>        <div><strong>Your referee also gets a ${kYCTrialAmount} Flex trial</strong> when they pass KYC. We’ll take the trial funds back at the end of the month, but they’ll keep the interest.</div>      ',
+      desc: '        <div class="section-desc-title">YOU EARN MORE</div>        <div><strong>Earn $30 for every US citizen who registers</strong>, paid instantly after they make their first deposit, and with no limits.</div>        <div><strong>Then earn 20% of their Flex interest</strong>, paid every second, and capped at a generous $1,000,000.</div>        <div><strong>Your referee also gets a ${kYCTrialAmount} Flex trial</strong> when they pass KYC. We’ll take the trial funds back at the end of the month, but they’ll keep the interest.</div>      ',
       data: {
         '0': {
           title: 'REWARD YOUR COMMUNITY',
@@ -4158,7 +4169,7 @@ export default {
         },
         '2': {
           title: ' ',
-          desc: 'You get $20 paid instantly to your Constant account.'
+          desc: 'You get $30 paid instantly to your Constant account.'
         },
         '3': {
           title: ' ',
@@ -4169,7 +4180,7 @@ export default {
           desc: 'You get 20% of their Flex earnings, paid every second.'
         }
       },
-      desc: '      <p>There are <strong>no limits</strong> to the number of people you can refer for the $20 bonus.</p>      <p>Your Flex earnings are capped at $1,000,000.</p>'
+      desc: '      <p>There are <strong>no limits</strong> to the number of people you can refer for the $30 bonus.</p>      <p>Your Flex earnings are capped at $1,000,000.</p>'
     },
     aboutYou: {
       title: 'About you',
@@ -4192,7 +4203,7 @@ export default {
     faqs: {
       '0': {
         question: 'What is the Constant affiliate program?',
-        answer: '          <p>          The Constant Affiliate Program rewards you for referring people to Constant through your website, service, or platform. For every person who signs up using your referral link, you’ll earn a $20 bonus, paid immediately upon them making their first deposit (minimum $10). You’ll also earn 20% of their Flex earnings, paid every second, and capped at $1,000,000.          </p>          <p>          We track your referrals using cookies with a 30-day lifespan. If someone clicks your affiliate link and signs up within a 30-day period, you’ll earn the bonus and commission – even if they don’t sign up immediately. Of course, should your referee clear their cookies, we won’t be able to track them, so please bear this in mind. You want people to sign up as soon as possible.          </p>          '
+        answer: '          <p>          The Constant Affiliate Program rewards you for referring people to Constant through your website, service, or platform. For every person who signs up using your referral link, you’ll earn a $30 bonus, paid immediately upon them making their first deposit (minimum $10). You’ll also earn 20% of their Flex earnings, paid every second, and capped at $1,000,000.          </p>          <p>          We track your referrals using cookies with a 30-day lifespan. If someone clicks your affiliate link and signs up within a 30-day period, you’ll earn the bonus and commission – even if they don’t sign up immediately. Of course, should your referee clear their cookies, we won’t be able to track them, so please bear this in mind. You want people to sign up as soon as possible.          </p>          '
       },
       '1': {
         question: 'Who can become a Constant affiliate?',
@@ -4297,7 +4308,7 @@ export default {
       title: '        <p class="header">Hello {name},</p>        <p>Welcome to your affiliate dashboard. You’ll find your affiliate link and sharing options below. You can track your earnings here, too.</p>        <p>Your total referral earnings to date: <strong>${totalEarned}</strong>.</p>      '
     },
     terms: {
-      content: `        <p class="section-title">Terms and Conditions</p>        <p>1. The amount you earn depends on how your referees use the platform:</p>        <p class="desc">You earn 20% of your referees’ earned Flex interest. We pay this interest every second that your referees earn.</p>        <p>2. We will pay you $20 for every person who signs up using your referral link, passes KYC and makes a deposit into Constant. If they don't meet these requirements, you don't earn the $20 bonus.</p>        <p>3. Your referral earnings are paid in USD, directly into your Constant account.</p>        <p>4. The maximum affiliate interest you can earn through Flex is $1,000,000.</p>        <p>5. You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>        <p>6. If you make false or misleading statements about Constant, use Constant keywords in Google ads, use visitor exchange systems, forced clicks, and other methods that lead to unqualified traffic, send spam with Constant ads or use other aggressive marketing methods, your affiliate earnings will be forfeit and your membership cancelled.</p>        <p>7. To qualify for affiliate earnings, your referees must be US citizens.</p>        <p>8. Constant reserves the right to change the terms of the affiliate program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p>      `
+      content: `        <p class="section-title">Terms and Conditions</p>        <p>1. The amount you earn depends on how your referees use the platform:</p>        <p class="desc">You earn 20% of your referees’ earned Flex interest. We pay this interest every second that your referees earn.</p>        <p>2. We will pay you $30 for every person who signs up using your referral link, passes KYC and makes a deposit into Constant. If they don't meet these requirements, you don't earn the $20 bonus.</p>        <p>3. Your referral earnings are paid in USD, directly into your Constant account.</p>        <p>4. The maximum affiliate interest you can earn through Flex is $1,000,000.</p>        <p>5. You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>        <p>6. If you make false or misleading statements about Constant, use Constant keywords in Google ads, use visitor exchange systems, forced clicks, and other methods that lead to unqualified traffic, send spam with Constant ads or use other aggressive marketing methods, your affiliate earnings will be forfeit and your membership cancelled.</p>        <p>7. To qualify for affiliate earnings, your referees must be US citizens.</p>        <p>8. Constant reserves the right to change the terms of the affiliate program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p>      `
     },
     referralUsers: {
       title: 'Emailed invites',
@@ -4510,6 +4521,8 @@ export default {
     flexBalance: 'Flex Balance',
     cryptoWallet: 'Crypto Wallet',
     recommendMessage: 'To restore your collateral value to the recommended {recommendedRate}%, please top up {amount} {currency}',
+    errorMaxValue: 'Amount must less than {max}',
+    errorMinValue: 'Amount must greater than {min}',
   },
   proLending: {
     balances: {
@@ -4712,7 +4725,12 @@ export default {
       generalCode500: 'Something went wrong, please try again! (500)',
       loginFailure: 'Please make sure your email and password are correct.',
       createdBankExisted: 'Nice! This bank account has already been registered.',
-      systemError: 'System error'
+      systemError: 'System error',
+      transferUserNotFound: 'Please enter a valid email.',
+      loginFailureCaptchaV2: 'Something went wrong please try again',
+      stakingRequireMinTerm: 'Since you staked your collateral to reduce the interest on your loan, you can’t un-stake until your loan matures.',
+      generalCode400: 'Something went wrong, please try again! (400)',
+      generalError: 'Oops! Something went wrong, please try again',
     },
     expiredSession: 'Your session has expired. Please log in again.',
     withdrawLessThanOrEqual: 'The maximum withdrawal amount is {max}. Please try other available methods.',

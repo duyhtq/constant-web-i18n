@@ -494,6 +494,7 @@ export default {
         '33': 'Badge reward',
         '101': 'Bonus',
         '102': 'Coupon Signup',
+        '105': 'Instant Credit Interest',
         received: 'Received'
       },
       orderStatus: {
@@ -4115,6 +4116,14 @@ export default {
     goToLoginPage: 'Go to Sign In page'
   },
   affiliates: {
+    greetingForm: {
+      title:`
+        <p class="header">Hello {name},</p>
+        <p>Welcome to your affiliate dashboard. You’ll find your affiliate link and sharing options below. You can track your earnings here, too.</p>
+        <p>Your total referral earnings to date: <strong>{totalEarned}</strong>.</p>
+      `,
+      inviteFriends: 'Invite friends',
+    },
     applyForm: {
       applyNow: 'Apply now',
       title: '        <p class="header">Get paid for your content.</p>        <p>Become a Constant affiliate and earn money on your content. <strong>Get $30</strong><sup>1</sup> for every person<sup>2</sup> you refer plus <strong>20% of their Flex interest in their first year</strong> (capped at $1 million). Refer as many people as you like. </p>      ',
@@ -4123,6 +4132,26 @@ export default {
       userEmail: 'Your email address',
       notValidEmail: 'Invalid email address',
       requestSuccess: 'Successfully Requested'
+    },
+    applicationForm: {
+      title: `
+      <p class="header">Constant Affiliate Application Form</p>
+      `,
+      desc: `
+      <p>Thanks for your interest in our affiliate program. To progress your application, please fill out the details below:</p>
+        `,
+      fullName: 'Your full name (as it appears on your ID)',
+      emailAddress: 'Email address',
+      phoneNumber: 'Phone number',
+      permanentAddress: 'Permanent address (in full)',
+      taxId: 'Tax ID',
+      website: 'Website',
+      socialMediaLinks: 'Social media links',
+      howToAdvertise: 'How will you advertise us? (CPC, blog, SEO, and so on)',
+      others: 'Anything else that might help us approve your application',
+      applyNow: 'Apply now',
+      requestSuccess: 'Successfully Submitted',
+      requestFailed: 'Failed To Submit',
     },
     summary: {
       title: 'P2P lending done right. No fees. All loans secured.',
@@ -4304,10 +4333,6 @@ export default {
         answer: '          <p>          You’ll be paid in USD.          </p>          '
       },
       desc: 'Unlike traditional P2P platforms that prey on vulnerable borrowers and expect investors to shoulder the risk, Constant is designed to protect them both.'
-    },
-    greetingForm: {
-      inviteFriends: 'Invite friends',
-      title: '        <p class="header">Hello {name},</p>        <p>Welcome to your affiliate dashboard. You’ll find your affiliate link and sharing options below. You can track your earnings here, too.</p>        <p>Your total referral earnings to date: <strong>${totalEarned}</strong>.</p>      '
     },
     terms: {
       content: `        <p class="section-title">Terms and Conditions</p>        <p>1. The amount you earn depends on how your referees use the platform:</p>        <p class="desc">You earn 20% of your referees’ earned Flex interest. We pay this interest every second that your referees earn.</p>        <p>2. We will pay you $30 for every person who signs up using your referral link, passes KYC and makes a deposit into Constant. If they don't meet these requirements, you don't earn the $20 bonus.</p>        <p>3. Your referral earnings are paid in USD, directly into your Constant account.</p>        <p>4. The maximum affiliate interest you can earn through Flex is $1,000,000.</p>        <p>5. You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>        <p>6. If you make false or misleading statements about Constant, use Constant keywords in Google ads, use visitor exchange systems, forced clicks, and other methods that lead to unqualified traffic, send spam with Constant ads or use other aggressive marketing methods, your affiliate earnings will be forfeit and your membership cancelled.</p>        <p>7. To qualify for affiliate earnings, your referees must be US citizens.</p>        <p>8. Constant reserves the right to change the terms of the affiliate program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p>      `

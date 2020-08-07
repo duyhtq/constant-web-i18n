@@ -532,6 +532,7 @@
                 "33": "Badge reward",
                 "101": "Bonus",
                 "102": "Coupon Signup",
+                "105": "Instant Credit Interest",
                 "received": "Received"
             },
             "orderStatus": {
@@ -1646,7 +1647,7 @@
             },
             "borrow": {
                 "title": "<p>BORROW<br/>Crypto Collateral</p>",
-                "cap": "          <div class=\"row\">            <div class=\"col\">              Interest rate              <strong>From 7%</strong>            </div>            <div class=\"col\">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class=\"clearBottom text-left\">            Borrow against<br/>60+ cryptocurrencies          </p>        ",
+                "cap": "          <div class=\"row\">            <div class=\"col\">              Interest rate              <strong>From 7%</strong>            </div>            <div class=\"col\">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class=\"clearBottom text-left\">            Borrow against<br/>40+ cryptocurrencies          </p>        \n",
                 "btn": "Explore"
             }
         }
@@ -2448,7 +2449,7 @@
         "constantC2CLoan": {
             "cryptosDesc": "Your collateral is securely stored in either a Prime Trust cold wallet, an Ethereum smart contract, or a password-protected web wallet until you repay your loan.",
             "intro": {
-                "content": "        <p>Fast and easy crypto credit</p>        <h1>Trade the margin.</h1>        <p class=\"h1\">Skip the exchange.</p>        <p class=\"h1\">Borrow against 60+ cryptos.</p>        <p/>        <p>Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.</p>        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href=\"https://blog.myconstant.com/multi-crypto-loans\" target=\"_blank\" class=\"underline\">our blog</a> and FAQs for more details.</p>      ",
+                "content": "        <p>Fast and easy crypto credit</p>        <h1>Trade the margin.</h1>        <p class=\"h1\">Skip the exchange.</p>        <p class=\"h1\">Borrow against 40+ cryptos.</p>        <p/>        <p>Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.</p>        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href=\"https://blog.myconstant.com/multi-crypto-loans\" target=\"_blank\" class=\"underline\">our blog</a> and FAQs for more details.</p>      ",
                 "youtube": {
                     "title": "How does Crypto Credit work?"
                 },
@@ -2512,10 +2513,10 @@
                 "benefits": "Benefits",
                 "const": "Constant",
                 "exchangeMarginAccount": "Exchange margin accounts",
-                "term": "Set your own rates and terms",
+                "term": "Flexible terms of 1-6 months",
                 "price": "Best prices",
-                "support": "24-7 customer services",
-                "cryptos": "60+ supported tokens",
+                "support": "24-7 customer service\n",
+                "cryptos": "40+ supported cryptos",
                 "withdraw": "Free withdraws",
                 "description": "(?) We search multiple exchanges to find the best price for your chosen cryptocurrency. <br/>Exchange margin accounts typically only use the price on that exchange, so you can miss out on better deals elsewhere. ",
                 "priceDesc": "We search multiple exchanges to find the best price for your chosen cryptocurrency.<br/>Exchange margin accounts typically only use the price on that exchange, so you can miss out on better deals elsewhere.",
@@ -4202,6 +4203,10 @@
         "goToLoginPage": "Go to Sign In page"
     },
     "affiliates": {
+        "greetingForm": {
+            "title": "\n        <p class=\"header\">Hello {name},</p>\n        <p>Welcome to your affiliate dashboard. You’ll find your affiliate link and sharing options below. You can track your earnings here, too.</p>\n        <p>Your total referral earnings to date: <strong>{totalEarned}</strong>.</p>\n      ",
+            "inviteFriends": "Invite friends"
+        },
         "applyForm": {
             "applyNow": "Apply now",
             "title": "        <p class=\"header\">Get paid for your content.</p>        <p>Become a Constant affiliate and earn money on your content. <strong>Get $30</strong><sup>1</sup> for every person<sup>2</sup> you refer plus <strong>20% of their Flex interest in their first year</strong> (capped at $1 million). Refer as many people as you like. </p>      ",
@@ -4210,6 +4215,22 @@
             "userEmail": "Your email address",
             "notValidEmail": "Invalid email address",
             "requestSuccess": "Successfully Requested"
+        },
+        "applicationForm": {
+            "title": "\n      <p class=\"header\">Constant Affiliate Application Form</p>\n      ",
+            "desc": "\n      <p>Thanks for your interest in our affiliate program. To progress your application, please fill out the details below:</p>\n        ",
+            "fullName": "Your full name (as it appears on your ID)",
+            "emailAddress": "Email address",
+            "phoneNumber": "Phone number",
+            "permanentAddress": "Permanent address (in full)",
+            "taxId": "Tax ID",
+            "website": "Website",
+            "socialMediaLinks": "Social media links",
+            "howToAdvertise": "How will you advertise us? (CPC, blog, SEO, and so on)",
+            "others": "Anything else that might help us approve your application",
+            "applyNow": "Apply now",
+            "requestSuccess": "Successfully Submitted",
+            "requestFailed": "Failed To Submit"
         },
         "summary": {
             "title": "P2P lending done right. No fees. All loans secured.",
@@ -4401,10 +4422,6 @@
             },
             "desc": "Unlike traditional P2P platforms that prey on vulnerable borrowers and expect investors to shoulder the risk, Constant is designed to protect them both."
         },
-        "greetingForm": {
-            "inviteFriends": "Invite friends",
-            "title": "        <p class=\"header\">Hello {name},</p>        <p>Welcome to your affiliate dashboard. You’ll find your affiliate link and sharing options below. You can track your earnings here, too.</p>        <p>Your total referral earnings to date: <strong>${totalEarned}</strong>.</p>      "
-        },
         "terms": {
             "content": "        <p class=\"section-title\">Terms and Conditions</p>        <p>1. The amount you earn depends on how your referees use the platform:</p>        <p class=\"desc\">You earn 20% of your referees’ earned Flex interest. We pay this interest every second that your referees earn.</p>        <p>2. We will pay you $30 for every person who signs up using your referral link, passes KYC and makes a deposit into Constant. If they don't meet these requirements, you don't earn the $20 bonus.</p>        <p>3. Your referral earnings are paid in USD, directly into your Constant account.</p>        <p>4. The maximum affiliate interest you can earn through Flex is $1,000,000.</p>        <p>5. You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>        <p>6. If you make false or misleading statements about Constant, use Constant keywords in Google ads, use visitor exchange systems, forced clicks, and other methods that lead to unqualified traffic, send spam with Constant ads or use other aggressive marketing methods, your affiliate earnings will be forfeit and your membership cancelled.</p>        <p>7. To qualify for affiliate earnings, your referees must be US citizens.</p>        <p>8. Constant reserves the right to change the terms of the affiliate program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p>      "
         },
@@ -4508,7 +4525,7 @@
             "valueDesc": "As soon as you’ve earned at least 1 cent, you can track your earnings below."
         },
         "banner": {
-            "desc": "<h2>Get a free ${referralReward}* bonus for every friend you refer.</h2>        <p>Tell your friends and family about us and get ${referralReward}* free for each person who signs up and deposits USD (US citizens only). You also earn <strong>{referralFlexReward}% of their Flex interest</strong>, compounded and paid every second. Refer as many friends as you like, however you like, and <strong>grow your money together</strong>.</p>      \n</br>\n<i>*The bonus reduces to $10 from 00:01 PST on September 1, 2020 – so refer now for bigger rewards!</i>",
+            "desc": "        <h2>Get a free ${referralReward} bonus for every friend you refer.</h2>        <p>Tell your friends and family about us and get ${referralReward} free for each person who signs up and deposits USD (US citizens only). You also earn <strong>{referralFlexReward}% of their Flex interest</strong>, compounded and paid every second. Refer as many friends as you like, however you like, and <strong>grow your money together</strong>.</p>      ",
             "descNotUS": "        <h2>Refer friends and earn {referralFlexReward}% of their Flex interest</h2>        <p>Tell your friends and family about us and <strong>get {referralFlexReward}% of their Flex interest</strong> (US referees only) when they sign up and deposit USD. Refer as many friends as you like, however you like, and <strong>grow your money together</strong>.</p>      ",
             "invite": "Invite now"
         },
@@ -4521,7 +4538,7 @@
                 "3": " ",
                 "4": "for your friend if they’re a US resident"
             },
-            "desc": "        <div class=\"section-desc-title\">INVITE FRIENDS, EARN TOGETHER</div>        <div><strong>Earn ${referralReward} for every friend who signs up and deposits USD</strong>, paid instantly, and with no limits. The bonus reduces to $10 from 00:01 PST on September 1, 2020 – so refer now for bigger rewards!</div>        <div><strong>Then earn {referralFlexReward}% of their Flex interest</strong>, capped at a generous $1,000,000.</div>        <div><strong>Your friend gets a 30-day ${kYCTrialAmount} trial bonus</strong> and keeps the interest (US referees only).</div>      ",
+            "desc": "        <div class=\"section-desc-title\">INVITE FRIENDS, EARN TOGETHER</div>        <div><strong>Earn ${referralReward} for every friend who signs up and deposits USD</strong>, paid instantly, and with no limits.</div>        <div><strong>Then earn {referralFlexReward}% of their Flex interest</strong>, capped at a generous $1,000,000.</div>        <div><strong>Your friend gets a 30-day ${kYCTrialAmount} trial bonus</strong> and keeps the interest (US referees only).</div>      ",
             "descNotUS": "        <div class=\"section-desc-title\">INVITE FRIENDS, EARN TOGETHER</div>        <div><strong>Earn {referralFlexReward}% of their Flex interest</strong>, capped at a generous $1,000,000.</div>        <div><strong>Your friend gets a 30-day ${kYCTrialAmount} trial bonus</strong> and keeps the interest (US referees only).</div>      ",
             "data": {
                 "0": {
@@ -4559,7 +4576,7 @@
                 },
                 "2": {
                     "title": " ",
-                    "desc": "You get ${referralReward} paid instantly to your Constant account (the bonus reduces to $10 from 00:01 PST on September 1, 2020). \n"
+                    "desc": "\nYou get ${referralReward} paid instantly to your Constant account."
                 },
                 "3": {
                     "title": " ",
@@ -4574,7 +4591,7 @@
             "descNotUS": "      <p>Your Flex earnings are capped at $1,000,000.</p>"
         },
         "terms": {
-            "normal": "        <h3 class=\"semiBold\">Terms and Conditions</h3>        <ol>          <li><p>The ${referralReward} bonus reduces to $10 from 00:01 PST September 1, 2020.</p></li>         <li><p>To qualify for referral rewards, such as the ${referralReward} bonus and {referralFlexReward}% of your referee’s Flex interest, your referee must be a US citizen.</p></li>          <li><p>The bonus is paid when your referee signs up, passes KYC, and deposits USD.</p></li>          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>          <li><p>Referral interest is paid to you by Constant and does not deduct from your friends’ earned Flex interest.</p></li>          <li>            <p>The amount you earn depends on how your friends use the platform:</p>            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>          </li>          <li><p>You can invite as many friends as you like.</p></li>          <li><p>Your referral earnings are paid in USD, directly into your Constant account.</p></li>          <li><p>The maximum you can earn is $1,000,000.</p></li>          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p></li>          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>          <li><p>Constant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>        </ol>        <p class=\"bold effective\">Effective as of 2020/02/17 00:00 AM (GMT+0)</p>      ",
+            "normal": "        <h3 class=\"semiBold\">Terms and Conditions</h3>        <ol>          <li><p>To qualify for referral rewards, such as the ${referralReward} bonus and {referralFlexReward}% of your referee’s Flex interest, your referee must be a US citizen.</p></li>          <li><p>The bonus is paid when your referee signs up, passes KYC, and deposits USD.</p></li>          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>          <li><p>Referral interest is paid to you by Constant and does not deduct from your friends’ earned Flex interest.</p></li>          <li>            <p>The amount you earn depends on how your friends use the platform:</p>            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>          </li>          <li><p>You can invite as many friends as you like.</p></li>          <li><p>Your referral earnings are paid in USD, directly into your Constant account.</p></li>          <li><p>The maximum you can earn is $1,000,000.</p></li>          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p></li>          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>          <li><p>Constant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>        </ol>        <p class=\"bold effective\">Effective as of 2020/02/17 00:00 AM (GMT+0)</p>      ",
             "normalNotUS": "        <h3 class=\"semiBold\">Terms and Conditions</h3>        <ol>          <li><p>To qualify for {referralFlexReward}% of your referee’s Flex interest, your referee must be a US citizen.</p></li>          <li><p>You will start earning {referralFlexReward}% of your referee’s Flex interest when they sign up, pass KYC, and deposit USD (minimum $10).</p></li>          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>          <li><p>Referral interest is paid to you by Constant and does not deduct from your friends’ earned Flex interest.</p></li>          <li>            <p>The amount you earn depends on how your friends use the platform:</p>            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>          </li>          <li><p>You can invite as many friends as you like.</p></li>          <li><p>Your referral earnings are paid in USD, directly into your Constant account.</p></li>          <li><p>The maximum you can earn is $1,000,000.</p></li>          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p></li>          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>          <li><p>Constant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>        </ol>        <p class=\"bold effective\">Effective as of 2020/02/17 00:00 AM (GMT+0)</p>      "
         }
     },

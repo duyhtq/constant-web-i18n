@@ -532,6 +532,7 @@
                 "33": "%%%.me.history.orderType.33%%%",
                 "101": "%%%.me.history.orderType.101%%%",
                 "102": "%%%.me.history.orderType.102%%%",
+                "105": "%%%.me.history.orderType.105%%%",
                 "received": "%%%.me.history.orderType.received%%%"
             },
             "orderStatus": {
@@ -4202,6 +4203,10 @@
         "goToLoginPage": "%%%.app.goToLoginPage%%%"
     },
     "affiliates": {
+        "greetingForm": {
+            "title": "%%%.affiliates.greetingForm.title%%%",
+            "inviteFriends": "%%%.affiliates.greetingForm.inviteFriends%%%"
+        },
         "applyForm": {
             "applyNow": "%%%.affiliates.applyForm.applyNow%%%",
             "title": "%%%.affiliates.applyForm.title%%%",
@@ -4210,6 +4215,22 @@
             "userEmail": "%%%.affiliates.applyForm.userEmail%%%",
             "notValidEmail": "%%%.affiliates.applyForm.notValidEmail%%%",
             "requestSuccess": "%%%.affiliates.applyForm.requestSuccess%%%"
+        },
+        "applicationForm": {
+            "title": "%%%.affiliates.applicationForm.title%%%",
+            "desc": "%%%.affiliates.applicationForm.desc%%%",
+            "fullName": "%%%.affiliates.applicationForm.fullName%%%",
+            "emailAddress": "%%%.affiliates.applicationForm.emailAddress%%%",
+            "phoneNumber": "%%%.affiliates.applicationForm.phoneNumber%%%",
+            "permanentAddress": "%%%.affiliates.applicationForm.permanentAddress%%%",
+            "taxId": "%%%.affiliates.applicationForm.taxId%%%",
+            "website": "%%%.affiliates.applicationForm.website%%%",
+            "socialMediaLinks": "%%%.affiliates.applicationForm.socialMediaLinks%%%",
+            "howToAdvertise": "%%%.affiliates.applicationForm.howToAdvertise%%%",
+            "others": "%%%.affiliates.applicationForm.others%%%",
+            "applyNow": "%%%.affiliates.applicationForm.applyNow%%%",
+            "requestSuccess": "%%%.affiliates.applicationForm.requestSuccess%%%",
+            "requestFailed": "%%%.affiliates.applicationForm.requestFailed%%%"
         },
         "summary": {
             "title": "%%%.affiliates.summary.title%%%",
@@ -4400,10 +4421,6 @@
                 "answer": "%%%.affiliates.faqs.24.answer%%%"
             },
             "desc": "%%%.affiliates.faqs.desc%%%"
-        },
-        "greetingForm": {
-            "inviteFriends": "%%%.affiliates.greetingForm.inviteFriends%%%",
-            "title": "%%%.affiliates.greetingForm.title%%%"
         },
         "terms": {
             "content": "%%%.affiliates.terms.content%%%"

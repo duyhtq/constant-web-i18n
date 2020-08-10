@@ -376,14 +376,19 @@
             "wireReceiptRemove": "Remove receipt"
         },
         "transferConstant": {
-            "title": "History",
+            "title": "Transfer History",
             "tabs": {
+                "fiat": "Fiat",
+                "crypto": "Crypto",
                 "sent": "Sent",
                 "received": "Received",
                 "openOrders": "Open Orders"
             },
             "headers": {
                 "orderNo": "#",
+                "send": "Send",
+                "received": "Received",
+                "type": "Type",
                 "amount": "Amount",
                 "fromEmail": "From Email",
                 "toEmail": "To Email",
@@ -416,6 +421,7 @@
         "withdrawCrypto": {
             "title": "Withdrawals History",
             "tabs": {
+                "fiat": "Fiat",
                 "crypto": "Crypto",
                 "openOrders": "Open Orders"
             },
@@ -1077,6 +1083,7 @@
             "viewConstantWallet": "Receive CONST here",
             "fiatStableCoin": "Fiat - Stablecoins",
             "collateral": "Collateral",
+            "crypto": "Crypto",
             "topupHistory": "Top-up History",
             "localHistory": "Transfers and interest earnings",
             "fiat": "Fiat",
@@ -1157,7 +1164,7 @@
             "beneficiaryPostalCode": "Beneficiary postal code",
             "linkBankSectionTitle": "Link your US bank account with Plaid, our ACH processor",
             "linkBankSectionDesc": "<p>Deposit or withdraw using ACH bank transfers with Plaid. Link up to two bank accounts now to save time and money transferring funds to and from your Constant account. Since most savings accounts limit the number of withdrawals, we recommend you link a checking account not a savings account to avoid ACH reversals. <a href=\"https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/\">How to avoid ACH reversals</a>.</p>",
-            "linkBankImportantNote": "<strong>*Please note</strong>: For your security, you must withdraw to the same bank account from which you made your deposit. This restriction applies for 60 days and can be lifted upon supplying additional verification information. <a href=\"https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/\">How linked banking works</a>.",
+            "linkBankImportantNote": "<strong>Please note</strong>: For your security, you must withdraw to the same bank account from which you made your deposit. This restriction applies for 60 days and can be lifted upon supplying additional verification information. <a href=\"https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/\">How linked banking works</a>.",
             "unlinkBankSectionTitle": "Add an unlinked bank account for manual transfers",
             "unlinkBankSectionDesc": "<p>If you want to send more than $5,000 per transaction, or if your bank is outside of the US or doesn't support ACH transfers through Plaid, please add alternative banking details below. You can then preselect these details the next time you create a withdrawal order.</p>",
             "unlinkBankImportantNote": "<strong>Please note</strong>: We can’t accept ACH transfers from unlinked bank accounts. If you send an ACH transfer from an unlinked bank account, it will be returned to you according to your bank’s schedule. Please only use Zelle or wire transfer only.",
@@ -1165,11 +1172,12 @@
             "nonUSbankSectionDesc": "<p>Speed up the transfer process by adding your bank account details below. Once saved, you can preselect these details the next time you create a deposit or withdrawal order instead of entering them manually.</p>",
             "nonUSbankImportantNote": "<strong>Please note</strong>: We can't accept ACH transfers from non-US bank accounts. Please send your funds via wire or Zelle only.",
             "getStartedIntruction": "<p>To get started, click <strong>+ Add new bank</strong></p>",
+            "errorLinkBank": "<p>For further information about the error, please go <a target=\"_blank\" href=\"https://blog.myconstant.com/plaid-errors-and-what-to-do-about-them/\">here</a>.</p>",
             "btnCancel": "Cancel",
             "dialog": {
                 "delete": {
                     "title": "Confirm Delete",
-                    "body": "Are you sure you want to delete?",
+                    "body": "Are you sure to delete?",
                     "confirm": "Yes",
                     "cancel": "No"
                 },
@@ -1208,7 +1216,7 @@
             },
             "emailNotVerified": "Please verify your email.",
             "verifyBtn": "Resend verification",
-            "enableSms": "Enable SMS Authentication to add extra security to your account"
+            "enableSms": "Enable SMS Authentication"
         },
         "changeRef": {
             "title": "Change your referral code",
@@ -4209,8 +4217,10 @@
         },
         "applyForm": {
             "applyNow": "Apply now",
-            "title": "        <p class=\"header\">Get paid for your content.</p>        <p>Become a Constant affiliate and earn money on your content. <strong>Get $30</strong><sup>1</sup> for every person<sup>2</sup> you refer plus <strong>20% of their Flex interest in their first year</strong> (capped at $1 million). Refer as many people as you like. </p>      ",
-            "titleDesc": "<p class=\"reference clearBottom\"><sup>1</sup> Valid until the end of August</p><p class=\"reference\"><sup>2</sup> To qualify for the $30 reward, your referee must be a US citizen (see Affiliate Terms and Conditions).</p>      ",
+            "titleReward": "\n        <p class=\"header\">Get paid for your content.</p>\n        <p>Become a Constant affiliate and earn money on your content. <strong>Get ${affiliateReward}</strong><sup>1</sup> for every person<sup>2</sup> you refer plus <strong>20% of their Flex interest in their first year</strong> (capped at $1 million). Refer as many people as you like. </p>\n        ",
+            "titleDescReward": "\n        <p class=\"reference clearBottom\"><sup>1</sup> Valid until {affiliateRewardEnd}</p>\n        <p class=\"reference\"><sup>2</sup> To qualify for the ${affiliateReward} reward, your referee must be a US citizen (see Affiliate Terms and Conditions).</p>\n        ",
+            "title": "\n        <p class=\"header\">Get paid for your content.</p>\n        <p>Become a Constant affiliate and earn money on your content. <strong>Get ${affiliateReward}</strong> for every person<sup>1</sup> you refer plus <strong>20% of their Flex interest in their first year</strong> (capped at $1 million). Refer as many people as you like. </p>\n        ",
+            "titleDesc": "\n        <p class=\"reference\"><sup>1</sup> To qualify for the ${affiliateReward} reward, your referee must be a US citizen (see Affiliate Terms and Conditions).</p>\n        ",
             "userName": "Your name",
             "userEmail": "Your email address",
             "notValidEmail": "Invalid email address",
@@ -4258,7 +4268,7 @@
                 "3": " ",
                 "4": "for your referee"
             },
-            "desc": "        <div class=\"section-desc-title\">YOU EARN MORE</div>        <div><strong>Earn $30 for every US citizen who registers</strong>, paid instantly after they make their first deposit, and with no limits.</div>        <div><strong>Then earn 20% of their Flex interest</strong>, paid every second, and capped at a generous $1,000,000.</div>        <div><strong>Your referee also gets a ${kYCTrialAmount} Flex trial</strong> when they pass KYC. We’ll take the trial funds back at the end of the month, but they’ll keep the interest.</div>      ",
+            "desc": "        <div class=\"section-desc-title\">YOU EARN MORE</div>        <div><strong>Earn ${affiliateReward} for every US citizen who registers</strong>, paid instantly after they make their first deposit, and with no limits.</div>        <div><strong>Then earn 20% of their Flex interest</strong>, paid every second, and capped at a generous $1,000,000.</div>        <div><strong>Your referee also gets a ${kYCTrialAmount} Flex trial</strong> when they pass KYC. We’ll take the trial funds back at the end of the month, but they’ll keep the interest.</div>      ",
             "data": {
                 "0": {
                     "title": "REWARD YOUR COMMUNITY",
@@ -4288,7 +4298,7 @@
                 },
                 "2": {
                     "title": " ",
-                    "desc": "You get $30 paid instantly to your Constant account."
+                    "desc": "You get ${affiliateReward} paid instantly to your Constant account."
                 },
                 "3": {
                     "title": " ",
@@ -4299,7 +4309,7 @@
                     "desc": "You get 20% of their Flex earnings, paid every second."
                 }
             },
-            "desc": "      <p>There are <strong>no limits</strong> to the number of people you can refer for the $30 bonus.</p>      <p>Your Flex earnings are capped at $1,000,000.</p>"
+            "desc": "      <p>There are <strong>no limits</strong> to the number of people you can refer for the ${affiliateReward} bonus.</p>      <p>Your Flex earnings are capped at $1,000,000.</p>"
         },
         "aboutYou": {
             "title": "About you",
@@ -4322,7 +4332,7 @@
         "faqs": {
             "0": {
                 "question": "What is the Constant affiliate program?",
-                "answer": "          <p>          The Constant Affiliate Program rewards you for referring people to Constant through your website, service, or platform. For every person who signs up using your referral link, you’ll earn a $30 bonus, paid immediately upon them making their first deposit (minimum $10). You’ll also earn 20% of their Flex earnings, paid every second, and capped at $1,000,000.          </p>          <p>          We track your referrals using cookies with a 30-day lifespan. If someone clicks your affiliate link and signs up within a 30-day period, you’ll earn the bonus and commission – even if they don’t sign up immediately. Of course, should your referee clear their cookies, we won’t be able to track them, so please bear this in mind. You want people to sign up as soon as possible.          </p>          "
+                "answer": "          <p>          The Constant Affiliate Program rewards you for referring people to Constant through your website, service, or platform. For every person who signs up using your referral link, you’ll earn a ${affiliateReward} bonus, paid immediately upon them making their first deposit (minimum $10). You’ll also earn 20% of their Flex earnings, paid every second, and capped at $1,000,000.          </p>          <p>          We track your referrals using cookies with a 30-day lifespan. If someone clicks your affiliate link and signs up within a 30-day period, you’ll earn the bonus and commission – even if they don’t sign up immediately. Of course, should your referee clear their cookies, we won’t be able to track them, so please bear this in mind. You want people to sign up as soon as possible.          </p>          "
             },
             "1": {
                 "question": "Who can become a Constant affiliate?",
@@ -4423,7 +4433,7 @@
             "desc": "Unlike traditional P2P platforms that prey on vulnerable borrowers and expect investors to shoulder the risk, Constant is designed to protect them both."
         },
         "terms": {
-            "content": "        <p class=\"section-title\">Terms and Conditions</p>        <p>1. The amount you earn depends on how your referees use the platform:</p>        <p class=\"desc\">You earn 20% of your referees’ earned Flex interest. We pay this interest every second that your referees earn.</p>        <p>2. We will pay you $30 for every person who signs up using your referral link, passes KYC and makes a deposit into Constant. If they don't meet these requirements, you don't earn the $20 bonus.</p>        <p>3. Your referral earnings are paid in USD, directly into your Constant account.</p>        <p>4. The maximum affiliate interest you can earn through Flex is $1,000,000.</p>        <p>5. You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>        <p>6. If you make false or misleading statements about Constant, use Constant keywords in Google ads, use visitor exchange systems, forced clicks, and other methods that lead to unqualified traffic, send spam with Constant ads or use other aggressive marketing methods, your affiliate earnings will be forfeit and your membership cancelled.</p>        <p>7. To qualify for affiliate earnings, your referees must be US citizens.</p>        <p>8. Constant reserves the right to change the terms of the affiliate program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p>      "
+            "content": "\n        <p class=\"section-title\">Terms and Conditions</p>\n        <p>1. The amount you earn depends on how your referees use the platform:</p>\n        <p class=\"desc\">You earn 20% of your referees’ earned Flex interest. We pay this interest every second that your referees earn.</p>\n        <p>2. We will pay you ${affiliateReward} for every person who signs up using your referral link, passes KYC and makes a deposit into Constant. If they don't meet these requirements, you don't earn the ${affiliateReward} bonus.</p>        <p>3. Your referral earnings are paid in USD, directly into your Constant account.</p>        <p>4. The maximum affiliate interest you can earn through Flex is $1,000,000.</p>        <p>5. You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>        <p>6. If you make false or misleading statements about Constant, use Constant keywords in Google ads, use visitor exchange systems, forced clicks, and other methods that lead to unqualified traffic, send spam with Constant ads or use other aggressive marketing methods, your affiliate earnings will be forfeit and your membership cancelled.</p>        <p>7. To qualify for affiliate earnings, your referees must be US citizens.</p>        <p>8. Constant reserves the right to change the terms of the affiliate program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p>\n      "
         },
         "referralUsers": {
             "title": "Emailed invites",
@@ -4437,6 +4447,7 @@
             "object_amount": "Friend's earnings",
             "object_type": "Type",
             "value": "Your earnings ",
+            "valueDesc": "As soon as you’ve earned at least 1 cent, you can track your earnings below.",
             "created_at": "Date"
         }
     },
@@ -4865,7 +4876,9 @@
             "loginFailureCaptchaV2": "Something went wrong please try again",
             "stakingRequireMinTerm": "Since you staked your collateral to reduce the interest on your loan, you can’t un-stake until your loan matures.",
             "generalCode400": "Something went wrong, please try again! (400)",
-            "generalError": "Oops! Something went wrong, please try again"
+            "generalError": "Oops! Something went wrong, please try again",
+            "collateralSuspendRecall": "Sorry, you can't recall excess on {symbol} collateral due to pricing volatility. We regularly review market activity and {symbol} prices are highly volatile at the moment. We've therefore limited recall excess on {symbol} to protect you from an increased risk of liquidation. For more information, please contact hello@myconstant.com.",
+            "not_enough_balance": "Your balance is insufficient. Please try again with a different amount."
         },
         "expiredSession": "Your session has expired. Please log in again.",
         "withdrawLessThanOrEqual": "The maximum withdrawal amount is {max}. Please try other available methods.",
@@ -5355,5 +5368,19 @@
         "makeDirectOrderSuccess": "Thanks! Your transfer is now processing.",
         "makeDirectOrderFailed": "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
         "transferConfirm": "We've already sent you a verification link by email. Please click this link to approve your transaction."
+    },
+    "callUs": {
+        "title": "Call Us",
+        "header": "Set your preferred time",
+        "yourName": "Your name",
+        "phoneNumber": "Phone number",
+        "emailAddress": "Email address",
+        "content": "Content",
+        "contentDesc": "You want to ask about…",
+        "selectPreferredTime": "Select your preferred time (UTC)",
+        "desc": "Once you’ve clicked Book a call, we’ll give you a ring at the time specified.",
+        "bookACall": "Book a call",
+        "requestSuccess": "Successfully Submitted",
+        "requestFailed": "Failed To Submit"
     }
 }

@@ -378,12 +378,17 @@
         "transferConstant": {
             "title": "%%%.history.transferConstant.title%%%",
             "tabs": {
+                "fiat": "%%%.history.transferConstant.tabs.fiat%%%",
+                "crypto": "%%%.history.transferConstant.tabs.crypto%%%",
                 "sent": "%%%.history.transferConstant.tabs.sent%%%",
                 "received": "%%%.history.transferConstant.tabs.received%%%",
                 "openOrders": "%%%.history.transferConstant.tabs.openOrders%%%"
             },
             "headers": {
                 "orderNo": "%%%.history.transferConstant.headers.orderNo%%%",
+                "send": "%%%.history.transferConstant.headers.send%%%",
+                "received": "%%%.history.transferConstant.headers.received%%%",
+                "type": "%%%.history.transferConstant.headers.type%%%",
                 "amount": "%%%.history.transferConstant.headers.amount%%%",
                 "fromEmail": "%%%.history.transferConstant.headers.fromEmail%%%",
                 "toEmail": "%%%.history.transferConstant.headers.toEmail%%%",
@@ -416,6 +421,7 @@
         "withdrawCrypto": {
             "title": "%%%.history.withdrawCrypto.title%%%",
             "tabs": {
+                "fiat": "%%%.history.withdrawCrypto.tabs.fiat%%%",
                 "crypto": "%%%.history.withdrawCrypto.tabs.crypto%%%",
                 "openOrders": "%%%.history.withdrawCrypto.tabs.openOrders%%%"
             },
@@ -1077,6 +1083,7 @@
             "viewConstantWallet": "%%%.me.navigation.viewConstantWallet%%%",
             "fiatStableCoin": "%%%.me.navigation.fiatStableCoin%%%",
             "collateral": "%%%.me.navigation.collateral%%%",
+            "crypto": "%%%.me.navigation.crypto%%%",
             "topupHistory": "%%%.me.navigation.topupHistory%%%",
             "localHistory": "%%%.me.navigation.localHistory%%%",
             "fiat": "%%%.me.navigation.fiat%%%",
@@ -1165,6 +1172,7 @@
             "nonUSbankSectionDesc": "%%%.me.bankInfo.nonUSbankSectionDesc%%%",
             "nonUSbankImportantNote": "%%%.me.bankInfo.nonUSbankImportantNote%%%",
             "getStartedIntruction": "%%%.me.bankInfo.getStartedIntruction%%%",
+            "errorLinkBank": "%%%.me.bankInfo.errorLinkBank%%%",
             "btnCancel": "%%%.me.bankInfo.btnCancel%%%",
             "dialog": {
                 "delete": {
@@ -4209,6 +4217,8 @@
         },
         "applyForm": {
             "applyNow": "%%%.affiliates.applyForm.applyNow%%%",
+            "titleReward": "%%%.affiliates.applyForm.titleReward%%%",
+            "titleDescReward": "%%%.affiliates.applyForm.titleDescReward%%%",
             "title": "%%%.affiliates.applyForm.title%%%",
             "titleDesc": "%%%.affiliates.applyForm.titleDesc%%%",
             "userName": "%%%.affiliates.applyForm.userName%%%",
@@ -4437,6 +4447,7 @@
             "object_amount": "%%%.affiliates.referralHistory.object_amount%%%",
             "object_type": "%%%.affiliates.referralHistory.object_type%%%",
             "value": "%%%.affiliates.referralHistory.value%%%",
+            "valueDesc": "%%%.affiliates.referralHistory.valueDesc%%%",
             "created_at": "%%%.affiliates.referralHistory.created_at%%%"
         }
     },
@@ -4865,7 +4876,9 @@
             "loginFailureCaptchaV2": "%%%.error.serverCode.loginFailureCaptchaV2%%%",
             "stakingRequireMinTerm": "%%%.error.serverCode.stakingRequireMinTerm%%%",
             "generalCode400": "%%%.error.serverCode.generalCode400%%%",
-            "generalError": "%%%.error.serverCode.generalError%%%"
+            "generalError": "%%%.error.serverCode.generalError%%%",
+            "collateralSuspendRecall": "%%%.error.serverCode.collateralSuspendRecall%%%",
+            "not_enough_balance": "%%%.error.serverCode.not_enough_balance%%%"
         },
         "expiredSession": "%%%.error.expiredSession%%%",
         "withdrawLessThanOrEqual": "%%%.error.withdrawLessThanOrEqual%%%",
@@ -5355,5 +5368,19 @@
         "makeDirectOrderSuccess": "%%%.send.makeDirectOrderSuccess%%%",
         "makeDirectOrderFailed": "%%%.send.makeDirectOrderFailed%%%",
         "transferConfirm": "%%%.send.transferConfirm%%%"
+    },
+    "callUs": {
+        "title": "%%%.callUs.title%%%",
+        "header": "%%%.callUs.header%%%",
+        "yourName": "%%%.callUs.yourName%%%",
+        "phoneNumber": "%%%.callUs.phoneNumber%%%",
+        "emailAddress": "%%%.callUs.emailAddress%%%",
+        "content": "%%%.callUs.content%%%",
+        "contentDesc": "%%%.callUs.contentDesc%%%",
+        "selectPreferredTime": "%%%.callUs.selectPreferredTime%%%",
+        "desc": "%%%.callUs.desc%%%",
+        "bookACall": "%%%.callUs.bookACall%%%",
+        "requestSuccess": "%%%.callUs.requestSuccess%%%",
+        "requestFailed": "%%%.callUs.requestFailed%%%"
     }
 }

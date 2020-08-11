@@ -404,6 +404,7 @@ export default {
   me: {
     history: {
       exportToExcel: 'Export to excel',
+      depositNow: 'Deposit Now',
       cancel: 'Cancel',
       backToOrder: 'View detail',
       balances: 'Total balance',
@@ -612,6 +613,8 @@ export default {
         loans_title: 'Loans',
         coin2coin_title: 'Crypto Credit',
         secondInvestments: 'Secondary Market',
+        secondInvestmentsLO: 'Loan Originator Secondary Market',
+        secondInvestmentsLODesc: 'Buy and sell matched investments on our secondary market. Sell your investment to end your term early or buy another investor’s order to earn their interest. View or cancel your secondary market orders below.',
         termStatusFilter: {
           investment: {
             pending: 'Pending',
@@ -1074,6 +1077,7 @@ export default {
       plMiddleName: 'Middle Name (Optional)',
       plLastName: 'Last Name',
       plEmail: 'Email Address',
+      lEmail: 'Email Address',
       isUSYes: 'Yes',
       isUSNo: 'No',
       plTaxCountry: 'Select your country',
@@ -2823,13 +2827,10 @@ export default {
         BeneficiaryAddressPostalCode: 'Beneficiary Postal Code',
         transferMethod: 'Transfer Method',
         transferMethods: {
-          ach: {
-            title: 'ACH transfer',
-            desc: 'ACH transfers are free and take 3-5 business days to process.'
-          },
+          ach: { title: 'ACH', desc: 'Fee: Free. Time: 2-5 days' },
           wire: {
-            title: 'Wire transfer',
-            desc: 'Your bank might charge a fee. Wires usually take 1 business day.'
+            title: 'Wire',
+            desc: 'Fee: might be charged by your bank. Time: a business day'
           }
         },
         fullName: 'Full Name',
@@ -3116,7 +3117,10 @@ export default {
         investmentStatus: {
           active: 'Active',
           ready: 'Initial',
-          activating: 'Fund in transit'
+          activating: 'Fund in transit',
+          voiding: 'Selling',
+          voided: 'Sold',
+          pending: 'Pending'
         },
         loanOriginatorHeaders: {
           loanOriginator: 'Loan Originator (LO)',
@@ -3161,9 +3165,38 @@ export default {
               true: 'Disabled Auto Reinvest successfully',
               false: 'Enabled Auto Reinvest successfully'
             }
+          },
+          void: {
+            messageConfirm: `
+                <p>To end your term early, you can sell your investment and any rights to future loan repayments to another investor. Once sold, you’ll get your principal of \${amount} back.</p>
+                <p>Would you like to sell your investment?</p>
+            `,
+            messageConfirmActive: `
+                <p>To end your term early, you can sell your investment and any rights to future loan repayments to another investor. Once sold, you’ll get your principal of \${amount} back plus 2% APR on elapsed term time.</p>
+                <p>Would you like to sell your investment?</p>
+            `,
+            confirm: 'Yes',
+            cancel: 'Go back'
+          },
+          cancelVoid: {
+            messageConfirm: `<p>Are you sure you want to cancel selling your investment?</p>`,
+            confirm: 'Yes',
+            cancel: 'Go back'
+          },
+          cancelPendingBuy: {
+            messageConfirm: `<p>Are you sure you want to cancel this secondary market order? Once canceled, you might not be able to buy it again.</p>`,
+            confirm: 'Yes',
+            cancel: 'Go back'
           }
         },
-        investedLoanStatus: { default: 'Default' },
+        investedLoanStatus: {
+          default: 'Default',
+          current: 'Current',
+          late_1_15: '1-15 Days Late',
+          late_16_30: '16-30 Days Late',
+          late_31_60: '31-60 Days Late',
+          bad_debt: 'Bad Debt',
+        },
         reInvest_desc: 'This option enables investors to automatically invest borrower repayments (such as an interest or principal repayment) in new loans. This maximizes your returns by minimizing the amount of time your money spends idle.',
         stopConfirm: {
           shortTerm: '            <p>If you deactivate your Best Interest Investment Plan, your available funds – if any – will not be used to invest in new loans.</p>             <p>Deactivate your Best Interest Investment Plan?</p>          '
@@ -3181,7 +3214,28 @@ export default {
           paymentDate: 'Payment Date',
           status: 'Status'
         },
-        paymentScheduleStatus: { paid: 'Paid', scheduled: 'Schedule' }
+        paymentScheduleStatus: { paid: 'Paid', scheduled: 'Schedule' },
+        secondaryMarketLoanOriginator: {
+          mapStatus: {
+            pending: 'Pending',
+            voiding: 'Selling',
+            voided: 'Sold',
+            active: 'Bought',
+            closed: 'Done',
+          },
+        },
+        void: 'End your term early',
+        cancelVoid: 'Cancel',
+        cancelPendingBuy: 'Cancel',
+        alert: {
+          voidInvestmentSuccess: 'Thanks. Your investment has rejoined the matching queue and we’ll let you know when we find a buyer. In the meantime, you can cancel your sell order from your Accounts page.',
+          voidInvestmentFailed: 'Sorry, we couldn’t create your sell order. Please try again later. If you keep seeing this message, please email us at <a href="mailto:hello@myconstant.com">hello@myconstant.com</a>.',
+          voidInvestmentFailedMinAmount: "Sorry, we couldn't create your sell order as your investment is less than ${minAmount}.",
+          cancelVoidInvestmentSuccess: 'You successfully cancelled investment.',
+          cancelVoidInvestmentFailed: 'Failed to cancel investment',
+          cancelPendingBuyInvestmentSuccess: 'You successfully cancelled buying investment.',
+          cancelPendingBuyInvestmentFailed: 'Failed to cancel buying investment',
+        },
       }
     },
     buy: {
@@ -3657,13 +3711,15 @@ export default {
         desc: '        <ul>        <li>Once you click Confirm your investment will be sent to our loan origination partner. Please allow <strong>3-10  business days</strong> for funds to be transferred.</li>        <li>Once funds have been transferred successfully to our loan origination partner, your loan status will change to <strong>Active</strong> and you will start earning interest.</li>        </ul>        ',
         totalTitle: 'Total amount:',
         confirm: 'Confirm',
-        investSuccess: " Thank you! We've begun transferring your funds to the borrower. Once this is complete, we'll send you an email to confirm.",
+        investSuccess: "Thank you! We've begun transferring your funds to the borrower. Once this is complete, we'll send you an email to confirm.",
         investFailed: 'Fail Invested',
         validateBalance: 'Please make sure your balance is sufficient.',
         cancel: 'Cancel',
         assignmentAgreement: 'Assignment agreement:',
         yourInvestAmount: 'Your investment amount:',
-        totalAmount: 'Total amount:'
+        totalAmount: 'Total amount:',
+        buy2ndDesc: `You’re about to invest {amount} USD for {days} days at {interest}%. Click confirm to agree to the <a href="{loanTermUrl}" target="_blank" class="underline bold">terms of the loan</a>, start your term, and begin earning interest. Once confirmed, you can’t cancel this investment but you can sell it early on the secondary market.`,
+        buyLOSecondaryInvestmentSuccess: 'Done! You\'ve bought a new investment. To track it, please visit the Secondary Market tab on your Accounts page.',
       },
       sortBy: 'Sort by: ',
       sortHeaders: {
@@ -3686,7 +3742,8 @@ export default {
         interestRate: 'Interest Rate',
         investmentAmount: 'Available Investment Amount (USD)',
         title: 'Your investment criteria',
-        term: 'Term'
+        term: 'Term',
+        done: 'Done',
       },
       investButton: 'Invest',
       ads: {
@@ -3790,16 +3847,16 @@ export default {
         answer: 'Yes. Since you’re not lending your deposits to an individual, but to a lending pool, you can deposit or withdraw as much and as often as you like.',
       },
       5: {
-        question6: 'How do my deposits earn interest?',
-        answer6: 'Flex uses an API with Compound Finance to lend your deposits to a liquidity pool. Others borrow from the pool in return for putting up collateral, and you earn the interest. In other words, Flex is very similar to how investments work on Constant, only with Flex you can withdraw anytime.',
+        question: 'How do my deposits earn interest?',
+        answer: 'Flex uses an API with Compound Finance to lend your deposits to a liquidity pool. Others borrow from the pool in return for putting up collateral, and you earn the interest. In other words, Flex is very similar to how investments work on Constant, only with Flex you can withdraw anytime.',
       },
       6: {
-        question7: 'Are my deposits insured?',
-        answer7: `      <p>Not always, no. While held with our trust partner, Prime Trust, your deposits are covered by a $130,000,000 insurance policy. However, we expect deposits will spend most of their time earning interest through Compound Finance, so will instead be protected by collateral put up by Compound's users.</p>      <p><a href="https://blog.myconstant.com/flex-or-prime-trust-constant" class="underline" target="_blank">Earn interest on your deposits or insure them?</a></p>      `,
+        question: 'Are my deposits insured?',
+        answer: `      <p>Not always, no. While held with our trust partner, Prime Trust, your deposits are covered by a $130,000,000 insurance policy. However, we expect deposits will spend most of their time earning interest through Compound Finance, so will instead be protected by collateral put up by Compound's users.</p>      <p><a href="https://blog.myconstant.com/flex-or-prime-trust-constant" class="underline" target="_blank">Earn interest on your deposits or insure them?</a></p>      `,
       },
       7: {
-        question8: 'Can I deposit collateral or other cryptocurrency into Flex?',
-        answer8: 'At the moment, Flex only accepts USD and USD-backed stablecoins.',
+        question: 'Can I deposit collateral or other cryptocurrency into Flex?',
+        answer: 'At the moment, Flex only accepts USD and USD-backed stablecoins.',
       },
       8: {
         question: 'Can I earn interest while waiting for an investment order to match?',
@@ -4083,10 +4140,7 @@ export default {
     sellBtn: 'Send',
     recipientBankInformation: 'Recipient’s bank information',
     yourAnytimeBalance: 'Your Balance: {balance} {currency}',
-    email: {
-      name: 'Recipient',
-      placeholder: 'Enter receiving email address',
-    },
+    email: { name: 'Recipient', placeholder: 'Enter receiving email address' },
     countryNotSupport: 'Your country is not supported at the moment. Our support team will get in touch with you via email.',
     validateMaxInput: 'Please make sure your balance is sufficient.',
     validateMaxInputBalanceZero: 'Please make sure your balance is sufficient.',
@@ -4604,12 +4658,16 @@ export default {
     watchBoard: {
       reserves: 'Reserve orders',
       reserveOrderNote: 'Earn 7.5%APR.Fully secured.No fees.',
-      voidInvestmentBorrows: 'Secondary Investments',
+      secondaryInvestments: 'Secondary Investments',
       amount: 'Amount (USD)',
       interest: 'Interest (APR)',
       term: 'Term',
       matched: 'Time',
-      voidInvestmentBorrowsDesc: 'These are matched orders investors want to sell. You can’t change the term or rate on a secondary investment, but you earn all the interest due on the loan regardless of how much time is left in the term.'
+      secondaryInvestmentsDesc: 'These are matched orders investors want to sell. You can’t change the term or rate on a secondary investment, but you earn all the interest due on the loan regardless of how much time is left in the term.',
+      loanOriginatorInvestments: 'Loan Originator Investments',
+      loanOriginatorInvestmentsDesc: 'Investments backed by the loan originator’s buy-back guarantee. Unlike crypto-backed investments, there might not always be collateral securing the loan. Instead, the loan originator guarantees to buy back the loan should the borrower default for 60 days or more, returning your principal and earned profit.',
+      loSecondaryInvestments: 'LO Secondary Investments',
+      loSecondaryInvestmentsDesc: 'These are Loan Originator (LO) investments that investors want to sell. You can’t change the term or rate on an LO secondary market investment. However, you will earn interest on the full term regardless of how much time is left. You earn a cut of interest on elapsed term time (full rate minus 2%) and the full interest amount on remaining term time.',
     },
     depositFundsTitle: 'Deposit Funds',
     depositCollateralTitle: 'Deposit',
@@ -4638,13 +4696,16 @@ export default {
         goToAccountApp: 'Please go to the Account tab to sign up or log in.'
       },
       amountRequired: 'Please enter an amount.',
-      matchedSuccess: "Thanks! Your investment order was successful. Your term has begun and you've started earning interest. To review your investments, please visit your Accounts page.",
       messLoginFirst: {
         invest: 'Please log in to make an investment.',
         borrow: 'Please log in to request a loan.'
       },
       messDepositFirst: 'Please deposit sufficient funds to make this investment.',
-      minAmountRequired: 'The minimum amount to invest is {value}.'
+      minAmountRequired: 'The minimum amount to invest is {value}.',
+      interestRequired: 'Interest is required to make an investment!',
+      matchedSuccess: 'Thanks! Your investment order was successful. Your term has begun and you\'ve started earning interest. To review your investments, please visit your Accounts page.',
+      matchedFailed: 'Your investment had been matched unsuccessfully. Please refresh your browser and try again.',
+      matchedSecondaryInvestmentSuccess: 'Done! You\'ve bought a new investment. To track it, please visit the Secondary Market tab on your Accounts page.',
     },
     deposits: {
       depositLabel: 'Select loan collateral',
@@ -4752,7 +4813,8 @@ export default {
       term: 'Days',
       date: 'Created',
       matched: 'Matched',
-      titleDesc: 'These are orders waiting for a match.'
+      titleDesc: 'These are orders waiting for a match.',
+      messageSuccess: 'Your order book have been canceled successfully',
     },
     matchedOrders: {
       title: 'Order History',
@@ -4816,6 +4878,7 @@ export default {
     btnInvestments: '<div class="textLeft"><small>Investments</small><div>Crypto-back</div></div>',
     btnBuyBackInvestments: '<div class="textLeft"><small>Investments</small><div>Loan Originator</div></div>',
     btnSecondaryMarket: '<div class="textLeft"><small>Secondary</small><div>Market</div></div>',
+    btnLOSecondaryMarket: '<div class="textLeft"><small>Loan Originator</small><div>Secondary Market</div></div>',
     btnLoans: 'Loans',
     btnLoansC2C: 'Crypto Credit'
   },

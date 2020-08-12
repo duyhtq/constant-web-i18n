@@ -726,15 +726,18 @@
                         "messageConfirm": "Are you sure you want to cancel your deposit order?"
                     },
                     "autoRenewInvestment": {
+                        "principal": "Principal",
+                        "principal_interest": "Principal + Interest",
                         "messageConfirm": {
-                            "false": "Auto Reinvest enabled. At maturity, your principal will be automatically placed in an order at the same interest rate and term.",
+                            "false": "When your term ends, you can automatically reinvest your principal and interest or just your principal. Please select which you’d like to reinvest and then click Enable auto invest.",
                             "true": "Are you sure you want to disable Auto Reinvest? With Auto Reinvest, your money earns interest around the clock, with no downtime, and no extra effort from you."
                         },
                         "confirm": "Yes",
                         "cancel": "No",
                         "autoRenewInvestmentSuccess": {
-                            "false": "Enabled Auto Reinvest successfully",
-                            "true": "Disabled Auto Reinvest successfully"
+                            "principal": "Thank you. We will automatically reinvest your principal only at the same rate and term. You can pause auto reinvest or change its settings at any time from your accounts page.",
+                            "principal_interest": "Thank you. We will automatically reinvest your principal and interest at the same rate and term. You can pause auto reinvest or change its settings at any time from your accounts page.",
+                            "disabled": "Disabled Auto Reinvest successfully"
                         },
                         "autoRenewInvestmentFailed": {
                             "true": "Failed to disable Auto Reinvest",
@@ -3251,8 +3254,7 @@
                         }
                     },
                     "void": {
-                        "messageConfirm": "\n                <p>To end your term early, you can sell your investment and any rights to future loan repayments to another investor. Once sold, you’ll get your principal of ${amount} back.</p>\n                <p>Would you like to sell your investment?</p>\n            ",
-                        "messageConfirmActive": "\n                <p>To end your term early, you can sell your investment and any rights to future loan repayments to another investor. Once sold, you’ll get your principal of ${amount} back plus 2% APR on elapsed term time.</p>\n                <p>Would you like to sell your investment?</p>\n            ",
+                        "messageConfirm": "\n                <p>To end your term early, you can sell your investment and any rights to future loan repayments to another investor. Once sold, you’ll get your principal of ${amount} back plus 2% of interest accrued.</p>\n                <p>Would you like to sell your investment?</p>\n            ",
                         "confirm": "Yes",
                         "cancel": "Go back"
                     },
@@ -3818,15 +3820,13 @@
                 "desc": "        <ul>        <li>Once you click Confirm your investment will be sent to our loan origination partner. Please allow <strong>3-10  business days</strong> for funds to be transferred.</li>        <li>Once funds have been transferred successfully to our loan origination partner, your loan status will change to <strong>Active</strong> and you will start earning interest.</li>        </ul>        ",
                 "totalTitle": "Total amount:",
                 "confirm": "Confirm",
-                "investSuccess": "Thank you! We've begun transferring your funds to the borrower. Once this is complete, we'll send you an email to confirm.",
+                "investSuccess": " Thank you! We've begun transferring your funds to the borrower. Once this is complete, we'll send you an email to confirm.",
                 "investFailed": "Fail Invested",
                 "validateBalance": "Please make sure your balance is sufficient.",
                 "cancel": "Cancel",
                 "assignmentAgreement": "Assignment agreement:",
                 "yourInvestAmount": "Your investment amount:",
-                "totalAmount": "Total amount:",
-                "buy2ndDesc": "You’re about to invest {amount} USD for {days} days at {interest}%. Click confirm to agree to the <a href=\"{loanTermUrl}\" target=\"_blank\" class=\"underline bold\">terms of the loan</a>, start your term, and begin earning interest. Once confirmed, you can’t cancel this investment but you can sell it early on the secondary market.",
-                "buyLOSecondaryInvestmentSuccess": "Done! You've bought a new investment. To track it, please visit the Secondary Market tab on your Accounts page."
+                "totalAmount": "Total amount:"
             },
             "sortBy": "Sort by: ",
             "sortHeaders": {
@@ -4756,16 +4756,16 @@
         "watchBoard": {
             "reserves": "Reserve orders",
             "reserveOrderNote": "Earn 7.5%APR.Fully secured.No fees.",
-            "secondaryInvestments": "Secondary Investments",
+            "voidInvestmentBorrows": "Secondary Investments",
             "amount": "Amount (USD)",
             "interest": "Interest (APR)",
             "term": "Term",
             "matched": "Time",
-            "secondaryInvestmentsDesc": "These are matched orders investors want to sell. You can’t change the term or rate on a secondary investment, but you earn all the interest due on the loan regardless of how much time is left in the term.",
+            "voidInvestmentBorrowsDesc": "These are matched orders investors want to sell. You can’t change the term or rate on a secondary investment, but you earn all the interest due on the loan regardless of how much time is left in the term.",
             "loanOriginatorInvestments": "Loan Originator Investments",
             "loanOriginatorInvestmentsDesc": "Investments backed by the loan originator’s buy-back guarantee. Unlike crypto-backed investments, there might not always be collateral securing the loan. Instead, the loan originator guarantees to buy back the loan should the borrower default for 60 days or more, returning your principal and earned profit.",
-            "loSecondaryInvestments": "LO Secondary Investments",
-            "loSecondaryInvestmentsDesc": "These are Loan Originator (LO) investments that investors want to sell. You can’t change the term or rate on an LO secondary market investment. However, you will earn interest on the full term regardless of how much time is left. You earn a cut of interest on elapsed term time (full rate minus 2%) and the full interest amount on remaining term time."
+            "loSecondaryMarket": "LO Secondary Investments",
+            "loSecondaryMarketDesc": "Investments backed by the loan originator’s buy-back guarantee. Unlike crypto-backed investments, there might not always be collateral securing the loan. Instead, the loan originator guarantees to buy back the loan should the borrower default for 60 days or more, returning your principal and earned profit."
         },
         "depositFundsTitle": "Deposit Funds",
         "depositCollateralTitle": "Deposit",
@@ -4794,15 +4794,13 @@
                 "goToAccountApp": "Please go to the Account tab to sign up or log in."
             },
             "amountRequired": "Please enter an amount.",
+            "matchedSuccess": "Thanks! Your investment order was successful. Your term has begun and you've started earning interest. To review your investments, please visit your Accounts page.",
             "messLoginFirst": {
                 "invest": "Please log in to make an investment.",
                 "borrow": "Please log in to request a loan."
             },
             "messDepositFirst": "Please deposit sufficient funds to make this investment.",
             "minAmountRequired": "The minimum amount to invest is {value}.",
-            "interestRequired": "Interest is required to make an investment!",
-            "matchedSuccess": "Thanks! Your investment order was successful. Your term has begun and you've started earning interest. To review your investments, please visit your Accounts page.",
-            "matchedFailed": "Your investment had been matched unsuccessfully. Please refresh your browser and try again.",
             "matchedSecondaryInvestmentSuccess": "Done! You've bought a new investment. To track it, please visit the Secondary Market tab on your Accounts page."
         },
         "deposits": {
@@ -5443,5 +5441,64 @@
         "bookACall": "Book a call",
         "requestSuccess": "Successfully Submitted",
         "requestFailed": "Failed To Submit"
+    },
+    "helpAndSupport": {
+        "searchPlaceholder": "Search for an article or question",
+        "title": "Help & Support",
+        "what": "What could you like to do?",
+        "whatDesc": "Click a button below to access step-by-step guides and tutorials",
+        "question": "Have a specific question?",
+        "questionDesc": "Click a topic below and we’ll answer it as best we can.",
+        "socials": {
+            "telegram": {
+                "link": "https://t.me/constantp2p",
+                "title": "Join our Telegram community",
+                "desc": "Get help from 1,000s of customers."
+            },
+            "blog": {
+                "link": "/blog",
+                "title": "Read our blog",
+                "desc": "Discover the latest news, guides, and opinon from the team and guests."
+            },
+            "chat": {
+                "link": "https://constant.zendesk.com/hc/en-us",
+                "title": "Chat with us live",
+                "desc": "Speak to our customer support team, day or night."
+            },
+            "email": {
+                "link": "mailto:hello@myconstant.com",
+                "title": "Send us an email",
+                "desc": "We’d love to hear from you."
+            },
+            "fb": {
+                "link": "https://www.facebook.com/constantp2p"
+            },
+            "tw": {
+                "link": "https://twitter.com/constantp2p"
+            },
+            "linkedin": {
+                "link": "https://www.linkedin.com/company/constantp2p/"
+            }
+        },
+        "announcements": "Announcements",
+        "announcementsDesc": "All you need to know, in one place.",
+        "help": "Help",
+        "categories": "FAQ categories",
+        "form": {
+            "caption": "Can't find what you're looking for? Tell us what you need below.",
+            "email": "Your email address",
+            "title": "Subject",
+            "note": "Description",
+            "submit": "Submit",
+            "emailError": "Requester email address is invalid.",
+            "titleError": "Subject: cannot be blank",
+            "noteError": "Description: cannot be blank",
+            "posts": {
+                "false": "Uh oh! Something went wrong - ",
+                "retry": "please try again."
+            }
+        },
+        "noResults": "Sorry! content not found",
+        "browseCategories": "Browse categories"
     }
 }

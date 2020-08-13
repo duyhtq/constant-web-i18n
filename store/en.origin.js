@@ -3255,6 +3255,7 @@
                     },
                     "void": {
                         "messageConfirm": "%%%.home.loanOriginator.listApplications.dialog.void.messageConfirm%%%",
+                        "messageConfirmActive": "%%%.home.loanOriginator.listApplications.dialog.void.messageConfirmActive%%%",
                         "confirm": "%%%.home.loanOriginator.listApplications.dialog.void.confirm%%%",
                         "cancel": "%%%.home.loanOriginator.listApplications.dialog.void.cancel%%%"
                     },
@@ -3826,7 +3827,9 @@
                 "cancel": "%%%.loanOriginators.manualInvest.summary.cancel%%%",
                 "assignmentAgreement": "%%%.loanOriginators.manualInvest.summary.assignmentAgreement%%%",
                 "yourInvestAmount": "%%%.loanOriginators.manualInvest.summary.yourInvestAmount%%%",
-                "totalAmount": "%%%.loanOriginators.manualInvest.summary.totalAmount%%%"
+                "totalAmount": "%%%.loanOriginators.manualInvest.summary.totalAmount%%%",
+                "buy2ndDesc": "%%%.loanOriginators.manualInvest.summary.buy2ndDesc%%%",
+                "buyLOSecondaryInvestmentSuccess": "%%%.loanOriginators.manualInvest.summary.buyLOSecondaryInvestmentSuccess%%%"
             },
             "sortBy": "%%%.loanOriginators.manualInvest.sortBy%%%",
             "sortHeaders": {
@@ -4753,19 +4756,20 @@
         },
         "orderBook": "%%%.proLending.orderBook%%%",
         "tradeHistory": "%%%.proLending.tradeHistory%%%",
+        "orderHistory": "%%%.proLending.orderHistory%%%",
         "watchBoard": {
             "reserves": "%%%.proLending.watchBoard.reserves%%%",
             "reserveOrderNote": "%%%.proLending.watchBoard.reserveOrderNote%%%",
-            "voidInvestmentBorrows": "%%%.proLending.watchBoard.voidInvestmentBorrows%%%",
+            "secondaryInvestments": "%%%.proLending.watchBoard.secondaryInvestments%%%",
             "amount": "%%%.proLending.watchBoard.amount%%%",
             "interest": "%%%.proLending.watchBoard.interest%%%",
             "term": "%%%.proLending.watchBoard.term%%%",
             "matched": "%%%.proLending.watchBoard.matched%%%",
-            "voidInvestmentBorrowsDesc": "%%%.proLending.watchBoard.voidInvestmentBorrowsDesc%%%",
+            "secondaryInvestmentsDesc": "%%%.proLending.watchBoard.secondaryInvestmentsDesc%%%",
             "loanOriginatorInvestments": "%%%.proLending.watchBoard.loanOriginatorInvestments%%%",
             "loanOriginatorInvestmentsDesc": "%%%.proLending.watchBoard.loanOriginatorInvestmentsDesc%%%",
-            "loSecondaryMarket": "%%%.proLending.watchBoard.loSecondaryMarket%%%",
-            "loSecondaryMarketDesc": "%%%.proLending.watchBoard.loSecondaryMarketDesc%%%"
+            "loSecondaryInvestments": "%%%.proLending.watchBoard.loSecondaryInvestments%%%",
+            "loSecondaryInvestmentsDesc": "%%%.proLending.watchBoard.loSecondaryInvestmentsDesc%%%"
         },
         "depositFundsTitle": "%%%.proLending.depositFundsTitle%%%",
         "depositCollateralTitle": "%%%.proLending.depositCollateralTitle%%%",
@@ -4794,13 +4798,15 @@
                 "goToAccountApp": "%%%.proLending.investBooking.form.goToAccountApp%%%"
             },
             "amountRequired": "%%%.proLending.investBooking.amountRequired%%%",
-            "matchedSuccess": "%%%.proLending.investBooking.matchedSuccess%%%",
             "messLoginFirst": {
                 "invest": "%%%.proLending.investBooking.messLoginFirst.invest%%%",
                 "borrow": "%%%.proLending.investBooking.messLoginFirst.borrow%%%"
             },
             "messDepositFirst": "%%%.proLending.investBooking.messDepositFirst%%%",
             "minAmountRequired": "%%%.proLending.investBooking.minAmountRequired%%%",
+            "interestRequired": "%%%.proLending.investBooking.interestRequired%%%",
+            "matchedSuccess": "%%%.proLending.investBooking.matchedSuccess%%%",
+            "matchedFailed": "%%%.proLending.investBooking.matchedFailed%%%",
             "matchedSecondaryInvestmentSuccess": "%%%.proLending.investBooking.matchedSecondaryInvestmentSuccess%%%"
         },
         "deposits": {
@@ -4936,7 +4942,8 @@
             "generalCode400": "%%%.error.serverCode.generalCode400%%%",
             "generalError": "%%%.error.serverCode.generalError%%%",
             "collateralSuspendRecall": "%%%.error.serverCode.collateralSuspendRecall%%%",
-            "not_enough_balance": "%%%.error.serverCode.not_enough_balance%%%"
+            "not_enough_balance": "%%%.error.serverCode.not_enough_balance%%%",
+            "violateBonusPolicy": "%%%.error.serverCode.violateBonusPolicy%%%"
         },
         "expiredSession": "%%%.error.expiredSession%%%",
         "withdrawLessThanOrEqual": "%%%.error.withdrawLessThanOrEqual%%%",

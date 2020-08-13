@@ -444,9 +444,13 @@
             "cancel": "%%%.me.history.cancel%%%",
             "backToOrder": "%%%.me.history.backToOrder%%%",
             "balances": "%%%.me.history.balances%%%",
+            "balancesDesc": "%%%.me.history.balancesDesc%%%",
             "holdings": "%%%.me.history.holdings%%%",
+            "holdingsDesc": "%%%.me.history.holdingsDesc%%%",
             "totalIns": "%%%.me.history.totalIns%%%",
+            "totalInsDesc": "%%%.me.history.totalInsDesc%%%",
             "totalOuts": "%%%.me.history.totalOuts%%%",
+            "totalOutsDesc": "%%%.me.history.totalOutsDesc%%%",
             "amountText": "%%%.me.history.amountText%%%",
             "topup": "%%%.me.history.topup%%%",
             "topUpStatus": {

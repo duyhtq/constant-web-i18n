@@ -638,7 +638,7 @@ export default {
         rate: 'Rate',
         term: 'Term',
         endTerm: 'Term ends',
-        noInvestment: 'Make your first investment of any amount today.',
+        noInvestment: 'Make your investment of any amount today.',
         autoTopup: 'Auto top-up',
         apr: 'APR',
         loanOriginatorInvestmentsDesc: 'Investments backed by the loan originator’s buy-back guarantee. Unlike crypto-backed investments, there might not always be collateral securing the loan. Instead, the loan originator guarantees to buy back the loan should the borrower default for 60 days or more, returning your principal and earned profit.',
@@ -692,7 +692,7 @@ export default {
               true: 'Are you sure you want to disable Auto Reinvest? With Auto Reinvest, your money earns interest around the clock, with no downtime, and no extra effort from you.'
             },
             confirm: 'Yes',
-            cancel: 'No',
+            cancel: 'Cancel',
             autoRenewInvestmentSuccess: {
               principal: 'Thank you. We will automatically reinvest your principal only at the same rate and term. You can pause auto reinvest or change its settings at any time from your accounts page.',
               principal_interest: 'Thank you. We will automatically reinvest your principal and interest at the same rate and term. You can pause auto reinvest or change its settings at any time from your accounts page.',
@@ -2145,7 +2145,7 @@ export default {
         cancel: 'Cancel',
         collateralRequired: 'Collateral',
         collateralAddress: 'Collateral Address',
-        noLoans: 'Request your first fixed rate loan.',
+        noLoans: 'Request your fixed rate loan.',
         delete: 'Delete',
         redeemApply: 'Redeem STAR',
         mapStatus1: {
@@ -2280,7 +2280,7 @@ export default {
         errorRemainCollateral: 'You can not to get the remaining collateral back at the moment',
         errorRemainCollateralHtml: '          Please wait for assistance, or contact us at <a href=mailto:hello@myconstant.com">hello@myconstant.com</a>',
         errorCollateralNotEnoughHtml: 'Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.',
-        errorRecallLowCollateralRate: 'To recall excess, <a href="">collateral rate must be more than {requiredRate}%. Your current collateral value is {currentRate}%',
+        errorRecallLowCollateralRate: 'To recall excess, collateral rate must be more than {requiredRate}%. Your current collateral value is {currentRate}%',
         errorIsolateNotEnough: 'Your Collateral Balance does not meet the minimum amount required to set multi-collateral to isolated.',
         depositFrom: {
           title: 'Deposit more collateral',
@@ -2637,7 +2637,7 @@ export default {
         },
         cancelBorrow: 'Cancel',
         heading: 'Crypto Credit',
-        noLoans: 'Request your first fixed rate loan.',
+        noLoans: 'Request your fixed rate loan.',
         bep2Memo: 'Memo',
         bep2MemoRequired: 'Memo is required!',
         bep2MemoDesc: 'Memo maybe is your ID if PEP2 crypto!',
@@ -3116,7 +3116,7 @@ export default {
           interestRateDesc: 'The rate at which loans are available for investors to invest in. Interest rate is generally stated in the form of annual NET interest rate paid to the investor. This is the final interest rate earned by the investor which already reflected all potential fees, commission and reserves (if any).',
           interestAccruedDesc: 'interest earned but not yet being paid out, calculated proportionately based on the number of days from last payment date over total number of days from last payment day to next schedule payment date'
         },
-        noHistoryData: 'Make your first investment of any amount today.',
+        noHistoryData: 'Make your investment of any amount today.',
         investmentStatus: {
           active: 'Active',
           ready: 'Initial',
@@ -3171,7 +3171,11 @@ export default {
           },
           void: {
             messageConfirm: `
-                <p>To end your term early, you can sell your investment and any rights to future loan repayments to another investor. Once sold, you’ll get your principal of \${amount} back plus 2% of interest accrued.</p>
+                <p>To end your term early, you can sell your investment and any rights to future loan repayments to another investor. Once sold, you’ll get your principal of \${amount} back.</p>
+                <p>Would you like to sell your investment?</p>
+            `,
+            messageConfirmActive: `
+                <p>To end your term early, you can sell your investment and any rights to future loan repayments to another investor. Once sold, you’ll get your principal of \${amount} back plus 2% APR on elapsed term time.</p>
                 <p>Would you like to sell your investment?</p>
             `,
             confirm: 'Yes',
@@ -3710,13 +3714,15 @@ export default {
         desc: '        <ul>        <li>Once you click Confirm your investment will be sent to our loan origination partner. Please allow <strong>3-10  business days</strong> for funds to be transferred.</li>        <li>Once funds have been transferred successfully to our loan origination partner, your loan status will change to <strong>Active</strong> and you will start earning interest.</li>        </ul>        ',
         totalTitle: 'Total amount:',
         confirm: 'Confirm',
-        investSuccess: " Thank you! We've begun transferring your funds to the borrower. Once this is complete, we'll send you an email to confirm.",
+        investSuccess: "Thank you! We've begun transferring your funds to the borrower. Once this is complete, we'll send you an email to confirm.",
         investFailed: 'Fail Invested',
         validateBalance: 'Please make sure your balance is sufficient.',
         cancel: 'Cancel',
         assignmentAgreement: 'Assignment agreement:',
         yourInvestAmount: 'Your investment amount:',
-        totalAmount: 'Total amount:'
+        totalAmount: 'Total amount:',
+        buy2ndDesc: `You’re about to invest {amount} USD for {days} days at {interest}%. Click confirm to agree to the <a href="{loanTermUrl}" target="_blank" class="underline bold">terms of the loan</a>, start your term, and begin earning interest. Once confirmed, you can’t cancel this investment but you can sell it early on the secondary market.`,
+        buyLOSecondaryInvestmentSuccess: 'Done! You\'ve bought a new investment. To track it, please visit the Loan Originator Secondary Market tab on your Accounts page.',
       },
       sortBy: 'Sort by: ',
       sortHeaders: {
@@ -4652,19 +4658,20 @@ export default {
     },
     orderBook: 'Order Book',
     tradeHistory: 'Trade History',
+    orderHistory: 'Order History',
     watchBoard: {
       reserves: 'Reserve orders',
       reserveOrderNote: 'Earn 7.5%APR.Fully secured.No fees.',
-      voidInvestmentBorrows: 'Secondary Investments',
+      secondaryInvestments: 'Secondary Investments',
       amount: 'Amount (USD)',
       interest: 'Interest (APR)',
       term: 'Term',
       matched: 'Time',
-      voidInvestmentBorrowsDesc: 'These are matched orders investors want to sell. You can’t change the term or rate on a secondary investment, but you earn all the interest due on the loan regardless of how much time is left in the term.',
+      secondaryInvestmentsDesc: 'These are matched orders investors want to sell. You can’t change the term or rate on a secondary investment, but you earn all the interest due on the loan regardless of how much time is left in the term.',
       loanOriginatorInvestments: 'Loan Originator Investments',
       loanOriginatorInvestmentsDesc: 'Investments backed by the loan originator’s buy-back guarantee. Unlike crypto-backed investments, there might not always be collateral securing the loan. Instead, the loan originator guarantees to buy back the loan should the borrower default for 60 days or more, returning your principal and earned profit.',
-      loSecondaryMarket: 'LO Secondary Investments',
-      loSecondaryMarketDesc: 'Investments backed by the loan originator’s buy-back guarantee. Unlike crypto-backed investments, there might not always be collateral securing the loan. Instead, the loan originator guarantees to buy back the loan should the borrower default for 60 days or more, returning your principal and earned profit.',
+      loSecondaryInvestments: 'LO Secondary Investments',
+      loSecondaryInvestmentsDesc: 'These are Loan Originator (LO) investments that investors want to sell. You can’t change the term or rate on an LO secondary market investment. However, you will earn interest on the full term regardless of how much time is left. You earn a cut of interest on elapsed term time (full rate minus 2%) and the full interest amount on remaining term time.',
     },
     depositFundsTitle: 'Deposit Funds',
     depositCollateralTitle: 'Deposit',
@@ -4693,14 +4700,16 @@ export default {
         goToAccountApp: 'Please go to the Account tab to sign up or log in.'
       },
       amountRequired: 'Please enter an amount.',
-      matchedSuccess: "Thanks! Your investment order was successful. Your term has begun and you've started earning interest. To review your investments, please visit your Accounts page.",
       messLoginFirst: {
         invest: 'Please log in to make an investment.',
         borrow: 'Please log in to request a loan.'
       },
       messDepositFirst: 'Please deposit sufficient funds to make this investment.',
       minAmountRequired: 'The minimum amount to invest is {value}.',
-      matchedSecondaryInvestmentSuccess: "Done! You've bought a new investment. To track it, please visit the Secondary Market tab on your Accounts page.",
+      interestRequired: 'Interest is required to make an investment!',
+      matchedSuccess: 'Thanks! Your investment order was successful. Your term has begun and you\'ve started earning interest. To review your investments, please visit your Accounts page.',
+      matchedFailed: 'Your investment had been matched unsuccessfully. Please refresh your browser and try again.',
+      matchedSecondaryInvestmentSuccess: 'Done! You\'ve bought a new investment. To track it, please visit the Secondary Market tab on your Accounts page.',
     },
     deposits: {
       depositLabel: 'Select loan collateral',
@@ -4836,6 +4845,7 @@ export default {
       generalError: 'Oops! Something went wrong, please try again',
       collateralSuspendRecall: 'Sorry, you can\'t recall excess on {symbol} collateral due to pricing volatility. We regularly review market activity and {symbol} prices are highly volatile at the moment. We\'ve therefore limited recall excess on {symbol} to protect you from an increased risk of liquidation. For more information, please contact hello@myconstant.com.',
       not_enough_balance: 'Your balance is insufficient. Please try again with a different amount.',
+      violateBonusPolicy: 'Your bonus can\'t be withdrawn for 30 days. This gives you time to try our platform and make some money through our Flex account.',
     },
     expiredSession: 'Your session has expired. Please log in again.',
     withdrawLessThanOrEqual: 'The maximum withdrawal amount is {max}. Please try other available methods.',

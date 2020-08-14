@@ -63,7 +63,8 @@ export default {
       registerFailed: 'Failed while creating your account, please try again',
       passwordTooWeak: 'Please try a stronger password with at least 2 of the following: 1 lowercase character, 1 uppercase character, 1 numeric character, and 1 special character.',
       notValidEmail: 'Invalid email address',
-      requiredEmail: 'Email is required'
+      requiredEmail: 'Email is required',
+      confirmStrangeEmailMessage: 'The email address <strong>{email}</strong> looks like it contains a typo or spelling mistake. Are you sure you want to sign up with this email address?',
     },
     account: {
       currentBalance: 'Current Balance',
@@ -1263,7 +1264,8 @@ export default {
         interestDesc: 'You’ll receive notifications for orders matching this interest rate or above.',
         termDesc: 'You’ll receive notifications for orders less than or equal to this term length.',
         messageConfirmDisable: 'Are you sure you want to disable secondary market notifications? You might miss out on the best deals.',
-        disableSuccess: 'Successfully Disabled'
+        disableSuccess: 'Successfully Disabled',
+        messageConfirmUpdate: 'You’re about to change your notification settings to a minimum interest rate of {rate}% and maximum term of {term} months. Do you want to proceed?',
       }
     },
     batchTransfer: { title: 'Batch Transfers' },
@@ -1997,8 +1999,8 @@ export default {
         buttonText: 'Borrow cash',
         borrowConfirm: "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate}. Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your Accounts page.",
         borrowIsolateConfirm: "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. Click confirm to start your term and receive your loan. Once your term begins you won’t be able to cancel your loan, but you can repay early from your Accounts page",
-        borrowCoinConfirm: "You're about to borrow {amount} {currency} for {term} at {rate} beginning {startDate} and ending {endDate}. We'll use these funds to buy a maximum of {receiveAmount} to be deposited into your coin balance.\n\nClick confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your History page.",
-        borrowCoinIsolateConfirm: "You're about to borrow {amount} {currency} for {term} at {rate} beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. We'll use these funds to buy a maximum of {receiveAmount} to be deposited into your coin balance.\n\nClick confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your History page.",
+        borrowCoinConfirm: "You're about to borrow {amount} {currency} for {term} at {rate}% beginning {startDate} and ending {endDate}. We'll use these funds to buy a maximum of {receiveAmount} to be deposited into your coin balance.\n\nClick confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your History page.",
+        borrowCoinIsolateConfirm: "You're about to borrow {amount} {currency} for {term} at {rate}% beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. We'll use these funds to buy a maximum of {receiveAmount} to be deposited into your coin balance.\n\nClick confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your History page.",
         collateralBalance: 'Collateral Balance',
         isolate: 'Isolate',
         isolateDesc: 'Isolate your loan to use a single cryptocurrency as collateral. If you already have a multi-collateral loan the amount of collateral you can isolate may be limited. Check out our FAQs for more details',
@@ -4850,6 +4852,7 @@ export default {
       collateralSuspendRecall: 'Sorry, you can\'t recall excess on {symbol} collateral due to pricing volatility. We regularly review market activity and {symbol} prices are highly volatile at the moment. We\'ve therefore limited recall excess on {symbol} to protect you from an increased risk of liquidation. For more information, please contact hello@myconstant.com.',
       not_enough_balance: 'Your balance is insufficient. Please try again with a different amount.',
       violateBonusPolicy: 'Your bonus can\'t be withdrawn for 30 days. This gives you time to try our platform and make some money through our Flex account.',
+      reserveNotEnough: "Sorry, we can't create your order at the moment. Please contact us at hello@myconstant.com and we'll help fix this issue for you.",
     },
     expiredSession: 'Your session has expired. Please log in again.',
     withdrawLessThanOrEqual: 'The maximum withdrawal amount is {max}. Please try other available methods.',

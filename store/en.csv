@@ -56,6 +56,7 @@
 %%%.user.register.passwordTooWeak%%%,"Please try a stronger password with at least 2 of the following: 1 lowercase character, 1 uppercase character, 1 numeric character, and 1 special character."
 %%%.user.register.notValidEmail%%%,"Invalid email address"
 %%%.user.register.requiredEmail%%%,"Email is required"
+%%%.user.register.confirmStrangeEmailMessage%%%,"The email address <strong>{email}</strong> looks like it contains a typo or spelling mistake. Are you sure you want to sign up with this email address?"
 %%%.user.account.currentBalance%%%,"Current Balance"
 %%%.user.account.totalBalance%%%,"Total Balance"
 %%%.user.account.member%%%,"Member"
@@ -990,6 +991,7 @@
 %%%.me.notificationSetting.secondaryMarketSetting.termDesc%%%,"You’ll receive notifications for orders less than or equal to this term length."
 %%%.me.notificationSetting.secondaryMarketSetting.messageConfirmDisable%%%,"Are you sure you want to disable secondary market notifications? You might miss out on the best deals."
 %%%.me.notificationSetting.secondaryMarketSetting.disableSuccess%%%,"Successfully Disabled"
+%%%.me.notificationSetting.secondaryMarketSetting.messageConfirmUpdate%%%,"You’re about to change your notification settings to a minimum interest rate of {rate}% and maximum term of {term} months. Do you want to proceed?"
 %%%.me.batchTransfer.title%%%,"Batch Transfers"
 %%%.me.referralInfo.title%%%,"Referral Information"
 %%%.me.staking.staking%%%,"Stake"
@@ -1407,10 +1409,10 @@
 %%%.home.constantLoan.exchange.buttonText%%%,"Borrow cash"
 %%%.home.constantLoan.exchange.borrowConfirm%%%,"You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate}. Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your Accounts page."
 %%%.home.constantLoan.exchange.borrowIsolateConfirm%%%,"You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. Click confirm to start your term and receive your loan. Once your term begins you won’t be able to cancel your loan, but you can repay early from your Accounts page"
-%%%.home.constantLoan.exchange.borrowCoinConfirm%%%,"You're about to borrow {amount} {currency} for {term} at {rate} beginning {startDate} and ending {endDate}. We'll use these funds to buy a maximum of {receiveAmount} to be deposited into your coin balance.
+%%%.home.constantLoan.exchange.borrowCoinConfirm%%%,"You're about to borrow {amount} {currency} for {term} at {rate}% beginning {startDate} and ending {endDate}. We'll use these funds to buy a maximum of {receiveAmount} to be deposited into your coin balance.
 
 Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your History page."
-%%%.home.constantLoan.exchange.borrowCoinIsolateConfirm%%%,"You're about to borrow {amount} {currency} for {term} at {rate} beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. We'll use these funds to buy a maximum of {receiveAmount} to be deposited into your coin balance.
+%%%.home.constantLoan.exchange.borrowCoinIsolateConfirm%%%,"You're about to borrow {amount} {currency} for {term} at {rate}% beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. We'll use these funds to buy a maximum of {receiveAmount} to be deposited into your coin balance.
 
 Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your History page."
 %%%.home.constantLoan.exchange.collateralBalance%%%,"Collateral Balance"
@@ -3604,6 +3606,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.error.serverCode.collateralSuspendRecall%%%,"Sorry, you can't recall excess on {symbol} collateral due to pricing volatility. We regularly review market activity and {symbol} prices are highly volatile at the moment. We've therefore limited recall excess on {symbol} to protect you from an increased risk of liquidation. For more information, please contact hello@myconstant.com."
 %%%.error.serverCode.not_enough_balance%%%,"Your balance is insufficient. Please try again with a different amount."
 %%%.error.serverCode.violateBonusPolicy%%%,"Your bonus can't be withdrawn for 30 days. This gives you time to try our platform and make some money through our Flex account."
+%%%.error.serverCode.reserveNotEnough%%%,"Sorry, we can't create your order at the moment. Please contact us at hello@myconstant.com and we'll help fix this issue for you."
 %%%.error.expiredSession%%%,"Your session has expired. Please log in again."
 %%%.error.withdrawLessThanOrEqual%%%,"The maximum withdrawal amount is {max}. Please try other available methods."
 %%%.error.withdrawGreaterThan%%%,"The minimum withdrawal amount is {min}"

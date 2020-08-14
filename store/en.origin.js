@@ -63,7 +63,8 @@
             "registerFailed": "%%%.user.register.registerFailed%%%",
             "passwordTooWeak": "%%%.user.register.passwordTooWeak%%%",
             "notValidEmail": "%%%.user.register.notValidEmail%%%",
-            "requiredEmail": "%%%.user.register.requiredEmail%%%"
+            "requiredEmail": "%%%.user.register.requiredEmail%%%",
+            "confirmStrangeEmailMessage": "%%%.user.register.confirmStrangeEmailMessage%%%"
         },
         "account": {
             "currentBalance": "%%%.user.account.currentBalance%%%",
@@ -1305,7 +1306,8 @@
                 "interestDesc": "%%%.me.notificationSetting.secondaryMarketSetting.interestDesc%%%",
                 "termDesc": "%%%.me.notificationSetting.secondaryMarketSetting.termDesc%%%",
                 "messageConfirmDisable": "%%%.me.notificationSetting.secondaryMarketSetting.messageConfirmDisable%%%",
-                "disableSuccess": "%%%.me.notificationSetting.secondaryMarketSetting.disableSuccess%%%"
+                "disableSuccess": "%%%.me.notificationSetting.secondaryMarketSetting.disableSuccess%%%",
+                "messageConfirmUpdate": "%%%.me.notificationSetting.secondaryMarketSetting.messageConfirmUpdate%%%"
             }
         },
         "batchTransfer": {
@@ -4947,7 +4949,8 @@
             "generalError": "%%%.error.serverCode.generalError%%%",
             "collateralSuspendRecall": "%%%.error.serverCode.collateralSuspendRecall%%%",
             "not_enough_balance": "%%%.error.serverCode.not_enough_balance%%%",
-            "violateBonusPolicy": "%%%.error.serverCode.violateBonusPolicy%%%"
+            "violateBonusPolicy": "%%%.error.serverCode.violateBonusPolicy%%%",
+            "reserveNotEnough": "%%%.error.serverCode.reserveNotEnough%%%"
         },
         "expiredSession": "%%%.error.expiredSession%%%",
         "withdrawLessThanOrEqual": "%%%.error.withdrawLessThanOrEqual%%%",

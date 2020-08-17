@@ -64,6 +64,7 @@
             "passwordTooWeak": "%%%.user.register.passwordTooWeak%%%",
             "notValidEmail": "%%%.user.register.notValidEmail%%%",
             "requiredEmail": "%%%.user.register.requiredEmail%%%",
+            "invalidReferralCode": "%%%.user.register.invalidReferralCode%%%",
             "confirmStrangeEmailMessage": "%%%.user.register.confirmStrangeEmailMessage%%%"
         },
         "account": {
@@ -628,7 +629,8 @@
                 "inputAuthCode": "%%%.me.twoFa.qrScanModal.inputAuthCode%%%",
                 "cancel": "%%%.me.twoFa.qrScanModal.cancel%%%",
                 "confirm": "%%%.me.twoFa.qrScanModal.confirm%%%",
-                "requiredPassword": "%%%.me.twoFa.qrScanModal.requiredPassword%%%"
+                "requiredPassword": "%%%.me.twoFa.qrScanModal.requiredPassword%%%",
+                "message": "%%%.me.twoFa.qrScanModal.message%%%"
             },
             "invalidateOtp": "%%%.me.twoFa.invalidateOtp%%%",
             "disable2FaSuccess": "%%%.me.twoFa.disable2FaSuccess%%%",
@@ -2089,31 +2091,59 @@
                 "moreInfo": "%%%.home.constantLoan.exchange.moreInfo%%%",
                 "monthLoan": "%%%.home.constantLoan.exchange.monthLoan%%%",
                 "monthsLoan": "%%%.home.constantLoan.exchange.monthsLoan%%%",
-                "dayLoan": "%%%.home.constantLoan.exchange.dayLoan%%%"
+                "dayLoan": "%%%.home.constantLoan.exchange.dayLoan%%%",
+                "receiveAmountLabel": "%%%.home.constantLoan.exchange.receiveAmountLabel%%%",
+                "receiveAmountLabelDesc": "%%%.home.constantLoan.exchange.receiveAmountLabelDesc%%%"
             },
             "what": {
                 "title": "%%%.home.constantLoan.what.title%%%",
-                "whatCaption0": "%%%.home.constantLoan.what.whatCaption0%%%",
-                "whatDesc0": "%%%.home.constantLoan.what.whatDesc0%%%",
-                "whatCaption1": "%%%.home.constantLoan.what.whatCaption1%%%",
-                "whatDesc1": "%%%.home.constantLoan.what.whatDesc1%%%",
-                "whatCaption2": "%%%.home.constantLoan.what.whatCaption2%%%",
-                "whatDesc2": "%%%.home.constantLoan.what.whatDesc2%%%",
-                "whatCaption3": "%%%.home.constantLoan.what.whatCaption3%%%",
-                "whatDesc3": "%%%.home.constantLoan.what.whatDesc3%%%"
+                "data": {
+                    "0": {
+                        "caption": "%%%.home.constantLoan.what.data.0.caption%%%",
+                        "desc": "%%%.home.constantLoan.what.data.0.desc%%%"
+                    },
+                    "1": {
+                        "caption": "%%%.home.constantLoan.what.data.1.caption%%%",
+                        "desc": "%%%.home.constantLoan.what.data.1.desc%%%"
+                    },
+                    "2": {
+                        "caption": "%%%.home.constantLoan.what.data.2.caption%%%",
+                        "desc": "%%%.home.constantLoan.what.data.2.desc%%%"
+                    },
+                    "3": {
+                        "caption": "%%%.home.constantLoan.what.data.3.caption%%%",
+                        "desc": "%%%.home.constantLoan.what.data.3.desc%%%"
+                    },
+                    "4": {
+                        "caption": "%%%.home.constantLoan.what.data.4.caption%%%",
+                        "desc": "%%%.home.constantLoan.what.data.4.desc%%%"
+                    }
+                }
             },
             "howItWorks": {
                 "title": "%%%.home.constantLoan.howItWorks.title%%%",
-                "title1": "%%%.home.constantLoan.howItWorks.title1%%%",
-                "desc1": "%%%.home.constantLoan.howItWorks.desc1%%%",
-                "title2": "%%%.home.constantLoan.howItWorks.title2%%%",
-                "desc2": "%%%.home.constantLoan.howItWorks.desc2%%%",
-                "title3": "%%%.home.constantLoan.howItWorks.title3%%%",
-                "desc3": "%%%.home.constantLoan.howItWorks.desc3%%%",
-                "intro": "%%%.home.constantLoan.howItWorks.intro%%%",
-                "step1": "%%%.home.constantLoan.howItWorks.step1%%%",
-                "step2": "%%%.home.constantLoan.howItWorks.step2%%%",
-                "step3": "%%%.home.constantLoan.howItWorks.step3%%%"
+                "data": {
+                    "0": {
+                        "caption": "%%%.home.constantLoan.howItWorks.data.0.caption%%%",
+                        "desc": "%%%.home.constantLoan.howItWorks.data.0.desc%%%"
+                    },
+                    "1": {
+                        "caption": "%%%.home.constantLoan.howItWorks.data.1.caption%%%",
+                        "desc": "%%%.home.constantLoan.howItWorks.data.1.desc%%%"
+                    },
+                    "2": {
+                        "caption": "%%%.home.constantLoan.howItWorks.data.2.caption%%%",
+                        "desc": "%%%.home.constantLoan.howItWorks.data.2.desc%%%"
+                    },
+                    "3": {
+                        "caption": "%%%.home.constantLoan.howItWorks.data.3.caption%%%",
+                        "desc": "%%%.home.constantLoan.howItWorks.data.3.desc%%%"
+                    },
+                    "4": {
+                        "caption": "%%%.home.constantLoan.howItWorks.data.4.caption%%%",
+                        "desc": "%%%.home.constantLoan.howItWorks.data.4.desc%%%"
+                    }
+                }
             },
             "faqs": {
                 "question1": "%%%.home.constantLoan.faqs.question1%%%",
@@ -3571,7 +3601,11 @@
                 "title": "%%%.loanOriginators.landing.why.title%%%"
             },
             "what": {
-                "title": "%%%.loanOriginators.landing.what.title%%%"
+                "title": "%%%.loanOriginators.landing.what.title%%%",
+                "constantRatingDesc": "%%%.loanOriginators.landing.what.constantRatingDesc%%%",
+                "claimRightDesc": "%%%.loanOriginators.landing.what.claimRightDesc%%%",
+                "assignmentAgreementDesc": "%%%.loanOriginators.landing.what.assignmentAgreementDesc%%%",
+                "buyBackGuaranteeDesc": "%%%.loanOriginators.landing.what.buyBackGuaranteeDesc%%%"
             },
             "how": {
                 "title": "%%%.loanOriginators.landing.how.title%%%",
@@ -4858,7 +4892,9 @@
                 "interest": "%%%.proLending.borrowBooking.exchange.interest%%%",
                 "term": "%%%.proLending.borrowBooking.exchange.term%%%",
                 "cancel": "%%%.proLending.borrowBooking.exchange.cancel%%%",
-                "notEnoughBalance": "%%%.proLending.borrowBooking.exchange.notEnoughBalance%%%"
+                "notEnoughBalance": "%%%.proLending.borrowBooking.exchange.notEnoughBalance%%%",
+                "receiveAmountLabel": "%%%.proLending.borrowBooking.exchange.receiveAmountLabel%%%",
+                "receiveAmountLabelDesc": "%%%.proLending.borrowBooking.exchange.receiveAmountLabelDesc%%%"
             },
             "createdSuccess": "%%%.proLending.borrowBooking.createdSuccess%%%",
             "errorMsgs": {
@@ -4954,7 +4990,8 @@
         },
         "expiredSession": "%%%.error.expiredSession%%%",
         "withdrawLessThanOrEqual": "%%%.error.withdrawLessThanOrEqual%%%",
-        "withdrawGreaterThan": "%%%.error.withdrawGreaterThan%%%"
+        "withdrawGreaterThan": "%%%.error.withdrawGreaterThan%%%",
+        "suspendWithdrawalTo": "%%%.error.suspendWithdrawalTo%%%"
     },
     "menuMobile": {
         "btnSignIn": "%%%.menuMobile.btnSignIn%%%",

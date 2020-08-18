@@ -1680,7 +1680,89 @@
             "trustPilot": {
                 "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.desc%%%",
                 "viewAll": "%%%.whyPeopleLoveUs.customers.trustPilot.viewAll%%%",
-                "readMore": "%%%.whyPeopleLoveUs.customers.trustPilot.readMore%%%"
+                "readMore": "%%%.whyPeopleLoveUs.customers.trustPilot.readMore%%%",
+                "data": {
+                    "0": {
+                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.data.0.star%%%",
+                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.data.0.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.data.0.desc%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.data.0.date%%%",
+                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.data.0.auth%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.data.0.link%%%"
+                    },
+                    "1": {
+                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.data.1.star%%%",
+                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.data.1.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.data.1.desc%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.data.1.date%%%",
+                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.data.1.auth%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.data.1.link%%%"
+                    },
+                    "2": {
+                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.data.2.star%%%",
+                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.data.2.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.data.2.desc%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.data.2.date%%%",
+                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.data.2.auth%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.data.2.link%%%"
+                    },
+                    "3": {
+                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.data.3.star%%%",
+                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.data.3.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.data.3.desc%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.data.3.date%%%",
+                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.data.3.auth%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.data.3.link%%%"
+                    },
+                    "4": {
+                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.data.4.star%%%",
+                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.data.4.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.data.4.desc%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.data.4.date%%%",
+                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.data.4.auth%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.data.4.link%%%"
+                    },
+                    "5": {
+                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.data.5.star%%%",
+                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.data.5.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.data.5.desc%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.data.5.date%%%",
+                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.data.5.auth%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.data.5.link%%%"
+                    },
+                    "6": {
+                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.data.6.star%%%",
+                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.data.6.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.data.6.desc%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.data.6.date%%%",
+                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.data.6.auth%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.data.6.link%%%"
+                    },
+                    "7": {
+                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.data.7.star%%%",
+                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.data.7.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.data.7.desc%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.data.7.date%%%",
+                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.data.7.auth%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.data.7.link%%%"
+                    },
+                    "8": {
+                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.data.8.star%%%",
+                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.data.8.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.data.8.desc%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.data.8.date%%%",
+                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.data.8.auth%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.data.8.link%%%"
+                    },
+                    "9": {
+                        "star": "%%%.whyPeopleLoveUs.customers.trustPilot.data.9.star%%%",
+                        "title": "%%%.whyPeopleLoveUs.customers.trustPilot.data.9.title%%%",
+                        "desc": "%%%.whyPeopleLoveUs.customers.trustPilot.data.9.desc%%%",
+                        "date": "%%%.whyPeopleLoveUs.customers.trustPilot.data.9.date%%%",
+                        "auth": "%%%.whyPeopleLoveUs.customers.trustPilot.data.9.auth%%%",
+                        "link": "%%%.whyPeopleLoveUs.customers.trustPilot.data.9.link%%%"
+                    }
+                }
             },
             "socialMedia": {
                 "comments": {
@@ -3354,7 +3436,8 @@
                     "cancelVoidInvestmentSuccess": "%%%.home.loanOriginator.listApplications.alert.cancelVoidInvestmentSuccess%%%",
                     "cancelVoidInvestmentFailed": "%%%.home.loanOriginator.listApplications.alert.cancelVoidInvestmentFailed%%%",
                     "cancelPendingBuyInvestmentSuccess": "%%%.home.loanOriginator.listApplications.alert.cancelPendingBuyInvestmentSuccess%%%",
-                    "cancelPendingBuyInvestmentFailed": "%%%.home.loanOriginator.listApplications.alert.cancelPendingBuyInvestmentFailed%%%"
+                    "cancelPendingBuyInvestmentFailed": "%%%.home.loanOriginator.listApplications.alert.cancelPendingBuyInvestmentFailed%%%",
+                    "sellInvestmentAlreadyPaidPrincipal": "%%%.home.loanOriginator.listApplications.alert.sellInvestmentAlreadyPaidPrincipal%%%"
                 }
             }
         },
@@ -5012,6 +5095,7 @@
         "supportCenter": "%%%.menuMobile.supportCenter%%%",
         "prices": "%%%.menuMobile.prices%%%",
         "account": "%%%.menuMobile.account%%%",
+        "getStarted": "%%%.menuMobile.getStarted%%%",
         "aboutYou": "%%%.menuMobile.aboutYou%%%",
         "badges": "%%%.menuMobile.badges%%%",
         "interest": "%%%.menuMobile.interest%%%",

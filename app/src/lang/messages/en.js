@@ -1630,7 +1630,109 @@ export default {
       trustPilot: {
         desc: 'From great rates to speedy service, learn how we’ve earned our stars.',
         viewAll: 'View us on TrustPilot',
-        readMore: 'Read more'
+        readMore: 'Read more',
+        data : {
+          0: {
+            star: '5',
+            title: 'Great for beginners.',
+            desc: `
+      <p>Great for beginners.<p>
+      `,
+            date: 'Aug 17, 2020',
+            auth: 'Kimberly Smith',
+            link: 'https://www.trustpilot.com/reviews/5f39c4fb9cc22a0600cd2338'
+          },
+          1: {
+            star: '5',
+            title: 'Love it!!!! A new way to make money and invest in others.',
+            desc: `
+      <p>I love the ease and flow of the app and the website. It is easy to navigate and easy to use. They give you a lot of information too!!<p>
+      `,
+            date: 'Aug 16, 2020',
+            auth: 'Alexander Clarence McIntosh',
+            link: 'https://www.trustpilot.com/reviews/5f3933219cc22a073c98cfce'
+          },
+          2: {
+            star: '5',
+            title: 'It\'s working great so far!!',
+            desc: `
+      <p>It's working great so far!!<p>
+      `,
+            date: 'Aug 16, 2020',
+            auth: 'James',
+            link: 'https://www.trustpilot.com/reviews/5f38ea749cc22a0600ccbb72'
+          },
+          3: {
+            star: '5',
+            title: '\'Constantly\' Excited to Learn, Invest, and Grow.',
+            desc: `
+      <p>The basis of this platform is useful and productive; but also, a wonderful use of resources with an economically brilliant business perspective in<p>
+      `,
+            date: 'Aug 16, 2020',
+            auth: 'Joseph A. Steadman',
+            link: 'https://www.trustpilot.com/reviews/5f38c1599cc22a073c989d41'
+          },
+          4: {
+            star: '5',
+            title: 'At first I was scared to do this but…',
+            desc: `
+      <p>At first I was scared to do this but slot of my friends told me about it and wow, they're right.. investment are my new thing.<p>
+      `,
+            date: 'Aug 15, 2020',
+            auth: 'Jose Torres',
+            link: 'https://www.trustpilot.com/reviews/5f36c69b9cc22a073c97dcdf'
+          },
+          5: {
+            star: '5',
+            title: 'So far so good',
+            desc: `
+      <p>So far so good<p>
+      `,
+            date: 'Aug 14, 2020',
+            auth: 'Alex',
+            link: 'https://www.trustpilot.com/reviews/5f361f649cc22a0600cb663e'
+          },
+          6: {
+            star: '5',
+            title: 'So Far Constant Rocks; Updates Will Follow',
+            desc: `
+      <p>I am new to Constant and must admit I was concerned about the legitimacy of Constant. I am happy to say that you can trust Constant<p>
+      `,
+            date: 'Aug 13, 2020',
+            auth: 'Jennifer A. Spagnola',
+            link: 'https://www.trustpilot.com/reviews/5f352a089cc22a0600cadd4a'
+          },
+          7: {
+            star: '5',
+            title: 'Great App!',
+            desc: `
+      <p>Wonderful App. Thanx you so much My Constant!<p>
+      `,
+            date: 'Aug 13, 2020',
+            auth: 'Trevor Edwin Lane',
+            link: 'https://www.trustpilot.com/reviews/5f34c4a41a5a6902684905ea'
+          },
+          8: {
+            star: '5',
+            title: 'I\'ve been very satisified with Constant',
+            desc: `
+      <p>I've been very satisified with my experience while using Constant. I would recommend them to other individuals looking for a stable<p>
+      `,
+            date: 'Aug 13, 2020',
+            auth: 'Christopher Reesman',
+            link: 'https://www.trustpilot.com/reviews/5f348dac1a5a69026848fc27'
+          },
+          9: {
+            star: '5',
+            title: 'I have been very pleased with my…',
+            desc: `
+      <p>I have been very pleased with my experience so far on MyConstant. I have been able to communicate with their online support on multiple<p>
+      `,
+            date: 'Aug 13, 2020',
+            auth: 'Derek',
+            link: 'https://www.trustpilot.com/reviews/5f345f3d1a5a690788a7d510'
+          },
+        }
       },
       socialMedia: {
         comments: {
@@ -3274,6 +3376,7 @@ export default {
           cancelVoidInvestmentFailed: 'Failed to cancel investment',
           cancelPendingBuyInvestmentSuccess: 'You successfully cancelled buying investment.',
           cancelPendingBuyInvestmentFailed: 'Failed to cancel buying investment',
+          sellInvestmentAlreadyPaidPrincipal: `Sorry, you can’t sell this investment as the borrower has already repaid your principal and earned profit. To learn more, please <a href="/loan-originators/manual-invest/{id}" target="_blank" class="underline">view your payment schedule</a>.`
         },
       }
     },
@@ -4922,6 +5025,7 @@ export default {
     supportCenter: 'Support Center',
     prices: 'Pricing & Service times',
     account: 'Account',
+    getStarted: 'Get Started',
     aboutYou: 'About You',
     badges: 'Your badges',
     interest: 'Interest',
@@ -5192,7 +5296,7 @@ export default {
       '0': 'Any abuse of the Constant Badges reward program will result in immediate disqualification. Abuse includes spam, cheating, or any other fraud intended to earn badges illegitimately.',
       '1': 'Any content you produce about Constant to claim a badge must not denigrate, disparage, or otherwise damage the Constant brand.',
       '2': 'You earn a reward for each badge once only.',
-      '3': 'The maximum reward you can earn from the Constant Badges program is $569 in total.',
+      '3': 'The maximum reward you can earn from the Constant Badges program is ${amount} in total.',
       '4': 'Only one Constant account per badge. Duplicate Constant accounts are disqualified.',
       '5': "Badges are awarded retroactively but rewards apply to qualifying activities after July 16th 2020 only. For example, if you passed KYC before July 16th 2020, you'll earn the “Member” badge but not the reward.",
       '6': 'Constant reserves the right to withhold rewards and change the terms and conditions of Constant Badges at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.',

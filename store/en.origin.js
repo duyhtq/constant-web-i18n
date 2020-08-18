@@ -1419,6 +1419,7 @@
             "updatedFailed": "%%%.me.kycVerification.updatedFailed%%%",
             "checkVerifyFailed": "%%%.me.kycVerification.checkVerifyFailed%%%",
             "statusUnverifiedUS": "%%%.me.kycVerification.statusUnverifiedUS%%%",
+            "statusLinkBanks": "%%%.me.kycVerification.statusLinkBanks%%%",
             "action": {
                 "invest": "%%%.me.kycVerification.action.invest%%%",
                 "transfer": "%%%.me.kycVerification.action.transfer%%%",

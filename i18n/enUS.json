@@ -1418,7 +1418,8 @@
             "updatedSuccess": "Your information was updated successfully",
             "updatedFailed": "Failed while updating your information, please try again!",
             "checkVerifyFailed": "Failed while checking your verify status",
-            "statusUnverifiedUS": "Please verify your ID to get a <span style=\"color:#FF9F00;\">${kYCTrialAmount} bonus</span>",
+            "statusUnverifiedUS": "Please verify your ID to get a ",
+            "statusLinkBanks": "Please link your bank to get started.",
             "action": {
                 "invest": "making a deposit",
                 "transfer": "making a transfer",

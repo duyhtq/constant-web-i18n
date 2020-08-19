@@ -5579,6 +5579,9 @@
         "requestFailed": "%%%.callUs.requestFailed%%%"
     },
     "helpAndSupport": {
+        "notFound": "%%%.helpAndSupport.notFound%%%",
+        "found": "%%%.helpAndSupport.found%%%",
+        "search": "%%%.helpAndSupport.search%%%",
         "searchPlaceholder": "%%%.helpAndSupport.searchPlaceholder%%%",
         "title": "%%%.helpAndSupport.title%%%",
         "what": "%%%.helpAndSupport.what%%%",

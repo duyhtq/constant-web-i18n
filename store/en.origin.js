@@ -441,6 +441,8 @@
     },
     "me": {
         "history": {
+            "invalidDate": "%%%.me.history.invalidDate%%%",
+            "noData": "%%%.me.history.noData%%%",
             "exportToExcel": "%%%.me.history.exportToExcel%%%",
             "depositNow": "%%%.me.history.depositNow%%%",
             "cancel": "%%%.me.history.cancel%%%",
@@ -4716,7 +4718,7 @@
         },
         "banner": {
             "desc": "%%%.yourReferral.banner.desc%%%",
-            "descNotUS": "%%%.yourReferral.banner.descNotUS%%%",
+            "descNonUS": "%%%.yourReferral.banner.descNonUS%%%",
             "invite": "%%%.yourReferral.banner.invite%%%"
         },
         "whatForYou": {
@@ -4729,7 +4731,7 @@
                 "4": "%%%.yourReferral.whatForYou.formula.4%%%"
             },
             "desc": "%%%.yourReferral.whatForYou.desc%%%",
-            "descNotUS": "%%%.yourReferral.whatForYou.descNotUS%%%",
+            "descNonUS": "%%%.yourReferral.whatForYou.descNonUS%%%",
             "data": {
                 "0": {
                     "title": "%%%.yourReferral.whatForYou.data.0.title%%%",
@@ -4778,11 +4780,11 @@
                 }
             },
             "desc": "%%%.yourReferral.howItWorks.desc%%%",
-            "descNotUS": "%%%.yourReferral.howItWorks.descNotUS%%%"
+            "descNonUS": "%%%.yourReferral.howItWorks.descNonUS%%%"
         },
         "terms": {
             "normal": "%%%.yourReferral.terms.normal%%%",
-            "normalNotUS": "%%%.yourReferral.terms.normalNotUS%%%"
+            "normalNonUS": "%%%.yourReferral.terms.normalNonUS%%%"
         }
     },
     "landingProReferral": {

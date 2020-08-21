@@ -1485,7 +1485,7 @@ export default {
     borrow: {
       title: 'Get a P2P Loan Online with Low Rates - Peer to peer loans - MyConstant',
       keyword: 'bitcoin loan, ethereum, margin trading, margin borrowing, p2p lending, cryptocurrency, constant project, constant p2p',
-      description: 'Get an easy online loan for as low as 7% APR through our fully secured peer-to-peer lending platform. No credit checks, no paperwork. Borrow money online and get a loan today!'
+      description: 'Get an easy online loan for as low as 6% APR through our fully secured peer-to-peer lending platform. No credit checks, no paperwork. Borrow money online and get a loan today!'
     },
     invest: {
       title: 'P2P Investing - Fully Collateralized Online Investments Platform - MyConstant',
@@ -1623,7 +1623,7 @@ export default {
       },
       borrow: {
         title: '<p>BORROW<br/>Crypto Collateral</p>',
-        cap: '          <div class="row">            <div class="col">              Interest rate              <strong>From 7%</strong>            </div>            <div class="col">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class="clearBottom text-left">            Borrow against<br/>60+ cryptocurrencies          </p>        ',
+        cap: '          <div class="row">            <div class="col">              Interest rate              <strong>From 6%</strong>            </div>            <div class="col">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class="clearBottom text-left">            Borrow against<br/>60+ cryptocurrencies          </p>        ',
         btn: 'Explore'
       }
     }

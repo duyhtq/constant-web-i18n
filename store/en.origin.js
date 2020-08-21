@@ -2230,6 +2230,64 @@
                     }
                 }
             },
+            "compareTable": {
+                "title": "%%%.home.constantLoan.compareTable.title%%%",
+                "cryptoBackedLender": {
+                    "title": "%%%.home.constantLoan.compareTable.cryptoBackedLender.title%%%",
+                    "benefits": "%%%.home.constantLoan.compareTable.cryptoBackedLender.benefits%%%",
+                    "nexo": "%%%.home.constantLoan.compareTable.cryptoBackedLender.nexo%%%",
+                    "celsius": "%%%.home.constantLoan.compareTable.cryptoBackedLender.celsius%%%",
+                    "blockfi": "%%%.home.constantLoan.compareTable.cryptoBackedLender.blockfi%%%",
+                    "withdrawInCrypto": {
+                        "title": "%%%.home.constantLoan.compareTable.cryptoBackedLender.withdrawInCrypto.title%%%",
+                        "constant": "%%%.home.constantLoan.compareTable.cryptoBackedLender.withdrawInCrypto.constant%%%",
+                        "nexo": "%%%.home.constantLoan.compareTable.cryptoBackedLender.withdrawInCrypto.nexo%%%",
+                        "celsius": "%%%.home.constantLoan.compareTable.cryptoBackedLender.withdrawInCrypto.celsius%%%",
+                        "blockfi": "%%%.home.constantLoan.compareTable.cryptoBackedLender.withdrawInCrypto.blockfi%%%"
+                    },
+                    "ltvRatio": {
+                        "title": "%%%.home.constantLoan.compareTable.cryptoBackedLender.ltvRatio.title%%%",
+                        "constant": "%%%.home.constantLoan.compareTable.cryptoBackedLender.ltvRatio.constant%%%",
+                        "nexo": "%%%.home.constantLoan.compareTable.cryptoBackedLender.ltvRatio.nexo%%%",
+                        "celsius": "%%%.home.constantLoan.compareTable.cryptoBackedLender.ltvRatio.celsius%%%",
+                        "blockfi": "%%%.home.constantLoan.compareTable.cryptoBackedLender.ltvRatio.blockfi%%%"
+                    },
+                    "supportedCryptos": {
+                        "title": "%%%.home.constantLoan.compareTable.cryptoBackedLender.supportedCryptos.title%%%",
+                        "constant": "%%%.home.constantLoan.compareTable.cryptoBackedLender.supportedCryptos.constant%%%",
+                        "nexo": "%%%.home.constantLoan.compareTable.cryptoBackedLender.supportedCryptos.nexo%%%",
+                        "celsius": "%%%.home.constantLoan.compareTable.cryptoBackedLender.supportedCryptos.celsius%%%",
+                        "blockfi": "%%%.home.constantLoan.compareTable.cryptoBackedLender.supportedCryptos.blockfi%%%"
+                    },
+                    "recallExcess": {
+                        "title": "%%%.home.constantLoan.compareTable.cryptoBackedLender.recallExcess.title%%%",
+                        "constant": "%%%.home.constantLoan.compareTable.cryptoBackedLender.recallExcess.constant%%%",
+                        "nexo": "%%%.home.constantLoan.compareTable.cryptoBackedLender.recallExcess.nexo%%%",
+                        "celsius": "%%%.home.constantLoan.compareTable.cryptoBackedLender.recallExcess.celsius%%%",
+                        "blockfi": "%%%.home.constantLoan.compareTable.cryptoBackedLender.recallExcess.blockfi%%%"
+                    },
+                    "autoTopup": {
+                        "title": "%%%.home.constantLoan.compareTable.cryptoBackedLender.autoTopup.title%%%",
+                        "constant": "%%%.home.constantLoan.compareTable.cryptoBackedLender.autoTopup.constant%%%",
+                        "nexo": "%%%.home.constantLoan.compareTable.cryptoBackedLender.autoTopup.nexo%%%",
+                        "celsius": "%%%.home.constantLoan.compareTable.cryptoBackedLender.autoTopup.celsius%%%",
+                        "blockfi": "%%%.home.constantLoan.compareTable.cryptoBackedLender.autoTopup.blockfi%%%"
+                    },
+                    "description": "%%%.home.constantLoan.compareTable.cryptoBackedLender.description%%%"
+                },
+                "exchangeMarginAccount": {
+                    "title": "%%%.home.constantLoan.compareTable.exchangeMarginAccount.title%%%",
+                    "benefits": "%%%.home.constantLoan.compareTable.exchangeMarginAccount.benefits%%%",
+                    "exchangeMarginAccount": "%%%.home.constantLoan.compareTable.exchangeMarginAccount.exchangeMarginAccount%%%",
+                    "term": "%%%.home.constantLoan.compareTable.exchangeMarginAccount.term%%%",
+                    "price": "%%%.home.constantLoan.compareTable.exchangeMarginAccount.price%%%",
+                    "support": "%%%.home.constantLoan.compareTable.exchangeMarginAccount.support%%%",
+                    "cryptos": "%%%.home.constantLoan.compareTable.exchangeMarginAccount.cryptos%%%",
+                    "withdraw": "%%%.home.constantLoan.compareTable.exchangeMarginAccount.withdraw%%%",
+                    "description": "%%%.home.constantLoan.compareTable.exchangeMarginAccount.description%%%",
+                    "priceDesc": "%%%.home.constantLoan.compareTable.exchangeMarginAccount.priceDesc%%%"
+                }
+            },
             "faqs": {
                 "question1": "%%%.home.constantLoan.faqs.question1%%%",
                 "answer1": "%%%.home.constantLoan.faqs.answer1%%%",

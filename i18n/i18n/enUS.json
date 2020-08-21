@@ -1663,7 +1663,7 @@
             },
             "invest": {
                 "title": "<p>INVEST<br/>Crypto-backed</p>",
-                "cap": "          <div class=\"row\">            <div class=\"col\">              Interest rate              <strong>Up to 7.5%</strong>            </div>            <div class=\"col\">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class=\"clearBottom text-left\">            All lending secured by<br/>digital assets          </p>        ",
+                "cap": "          <div class=\"row\">            <div class=\"col\">              Interest rate              <strong>Up to 7%</strong>            </div>            <div class=\"col\">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class=\"clearBottom text-left\">            All lending secured by<br/>digital assets          </p>        ",
                 "btn": "Explore"
             },
             "loanOriginator": {
@@ -2228,6 +2228,64 @@
                         "caption": "{step}. Repay at any time",
                         "desc": "<p>Repay anytime in fiat, stablecoins, or crypto to get your collateral back from escrow. Then withdraw your collateral to your wallet of choice or use it for another loan.</p>"
                     }
+                }
+            },
+            "compareTable": {
+                "title": "Constant vs",
+                "cryptoBackedLender": {
+                    "title": "Other crypto-backed lenders",
+                    "benefits": "Benefits",
+                    "nexo": "Nexo",
+                    "celsius": "Celsius",
+                    "blockfi": "Blockfi",
+                    "withdrawInCrypto": {
+                        "title": "Withdraw in crypto?",
+                        "constant": "<i class=\"far fa-check\"></i><sup>*</sup>",
+                        "nexo": "<i class=\"far fa-times\"></i>",
+                        "celsius": "<i class=\"far fa-times\"></i>",
+                        "blockfi": "<i class=\"far fa-times\"></i>"
+                    },
+                    "ltvRatio": {
+                        "title": "LTV ratio",
+                        "constant": "Up to 100%",
+                        "nexo": "Up to 90%",
+                        "celsius": "Up to 50%",
+                        "blockfi": "Up to 50%"
+                    },
+                    "supportedCryptos": {
+                        "title": "Supported cryptos",
+                        "constant": "40+",
+                        "nexo": "<20",
+                        "celsius": "28",
+                        "blockfi": "3"
+                    },
+                    "recallExcess": {
+                        "title": "Recall excess mid-term?",
+                        "constant": "<i class=\"far fa-check\"></i>",
+                        "nexo": "For repayment of loan only",
+                        "celsius": "<i class=\"far fa-check\"></i>",
+                        "blockfi": "<i class=\"far fa-times\"></i>"
+                    },
+                    "autoTopup": {
+                        "title": "Auto top-up",
+                        "constant": "<i class=\"far fa-check\"></i>",
+                        "nexo": "<i class=\"far fa-times\"></i>",
+                        "celsius": "<i class=\"far fa-times\"></i>",
+                        "blockfi": "<i class=\"far fa-times\"></i>"
+                    },
+                    "description": "<sup>*</sup> Trade your USD loan for a supported cryptocurrency at the best prices without exchanges or trading fees."
+                },
+                "exchangeMarginAccount": {
+                    "title": "Exchange margin accounts",
+                    "benefits": "Benefits",
+                    "exchangeMarginAccount": "Exchange margin accounts",
+                    "term": "Set your own rates and terms",
+                    "price": "Best prices",
+                    "support": "24-7 customer services",
+                    "cryptos": "40+ supported cryptos",
+                    "withdraw": "Free withdraws\n",
+                    "description": "(?) We search multiple exchanges to find the best price for your chosen cryptocurrency. <br/>Exchange margin accounts typically only use the price on that exchange, so you can miss out on better deals elsewhere. ",
+                    "priceDesc": "We search multiple exchanges to find the best price for your chosen cryptocurrency.<br/>Exchange margin accounts typically only use the price on that exchange, so you can miss out on better deals elsewhere."
                 }
             },
             "faqs": {
@@ -3490,7 +3548,7 @@
                 "btnKyc1": "<a>Verify your ID</a> to invest"
             },
             "intro": {
-                "content": "          <p>Invest the way you want</p>          <h1>Earn up to 7.5% APR now.</h1>          <p class=\"h1\">Start investing from just $50.</p>          <p class=\"h1\">Experience crypto-backed P2P lending.</p>          <p />          <p>          Lend to cryptocurrency holders across the world for a return of up to 7.5% APR. You choose the term, we match you with a borrower, and you keep the interest. All lending is backed by collateral, which is sold if the borrower defaults.          </p>        ",
+                "content": "          <p>Invest the way you want</p>          <h1>Earn up to 7% APR now.</h1>          <p class=\"h1\">Start investing from just $50.</p>          <p class=\"h1\">Experience crypto-backed P2P lending.</p>          <p />          <p>          Lend to cryptocurrency holders across the world for a return of up to 7% APR. You choose the term, we match you with a borrower, and you keep the interest. All lending is backed by collateral, which is sold if the borrower defaults.          </p>        ",
                 "youtube": {
                     "title": "Why invest with Constant?"
                 },
@@ -4752,7 +4810,7 @@
             "title": "What’s in it for them?",
             "content": {
                 "left": "          <p class=\"content-title\">${kYCTrialAmount} trial bonus</p>          <p class=\"content-desc\">When your referree signs up and passes KYC, we’ll deposit a ${kYCTrialAmount} bonus in their account. This lasts for 30 days*, at the end of which, we reclaim the bonus but your referee keeps all the interest.</p>          <p class=\"content-desc font-italic\">*30-day trial bonus (US residents only).</p>        ",
-                "right": "          <div>            <div class=\"content-title\">4% APY</div>            <p class=\"content-desc\">on all <strong>Flex</strong> deposits</p>          </div>          <div>            <div class=\"content-title\">7.5% APR</div>            <p class=\"content-desc\">on <strong>crypto-backed</strong> investments</p>          </div>          <div>            <div class=\"content-title\">11% APR</div>            <p class=\"content-desc\">on <strong>Loan Originator</strong> investments</p>          </div>        "
+                "right": "          <div>            <div class=\"content-title\">4% APY</div>            <p class=\"content-desc\">on all <strong>Flex</strong> deposits</p>          </div>          <div>            <div class=\"content-title\">7% APR</div>            <p class=\"content-desc\">on <strong>crypto-backed</strong> investments</p>          </div>          <div>            <div class=\"content-title\">11% APR</div>            <p class=\"content-desc\">on <strong>Loan Originator</strong> investments</p>          </div>        "
             }
         },
         "howItWorks": {
@@ -4885,7 +4943,7 @@
         "orderHistory": "Order History",
         "watchBoard": {
             "reserves": "Reserve orders",
-            "reserveOrderNote": "Earn 7.5%APR.Fully secured.No fees.",
+            "reserveOrderNote": "Earn 7%APR.Fully secured.No fees.",
             "secondaryInvestments": "Secondary Investments",
             "amount": "Amount (USD)",
             "interest": "Interest (APR)",
@@ -5125,7 +5183,7 @@
     },
     "landingPage": {
         "steadyGrowth": {
-            "title": "        <p class=\"header\">Start growing at 7.5% APR today.</p>        <p>Don’t fall with the market. Enjoy steady growth with fully-backed P2P lending. No fees. Free withdrawals.</p>        <p>Start investing from just $50.</p>      "
+            "title": "        <p class=\"header\">Start growing at 7% APR today.</p>        <p>Don’t fall with the market. Enjoy steady growth with fully-backed P2P lending. No fees. Free withdrawals.</p>        <p>Start investing from just $50.</p>      "
         },
         "faqsSectionLink": "      <p></p>      <p>Questions?</p>      <p>Check out our <a href=\"#landing-faqs\" class=\"underline\">FAQs</a>.</p>    ",
         "howItWorks": {
@@ -5168,7 +5226,7 @@
             "title": "Why People Love Us"
         },
         "trialBonus": {
-            "title": "        <p class=\"header\">See what it’s like to grow ${kYCTrialAmount} by the second.</p>        <p>Today when you sign up and verify your ID, we’ll deposit ${kYCTrialAmount} into your account to earn 4% APY for 30 days. At the end of 30 days, we’ll take the ${kYCTrialAmount} back but you can keep the interest and use it how you want.</p>        <p>Use your earnings to grow at 7.5% or more with our other investment tools.</p>        <p>You can start investing from just $50.</p>        <p>This offer is for a limited time and only available to US citizens.</p>      "
+            "title": "        <p class=\"header\">See what it’s like to grow ${kYCTrialAmount} by the second.</p>        <p>Today when you sign up and verify your ID, we’ll deposit ${kYCTrialAmount} into your account to earn 4% APY for 30 days. At the end of 30 days, we’ll take the ${kYCTrialAmount} back but you can keep the interest and use it how you want.</p>        <p>Use your earnings to grow at 7% or more with our other investment tools.</p>        <p>You can start investing from just $50.</p>        <p>This offer is only available for a limited time.</p>      "
         },
         "promotionGeneral": {
             "title": "        <p class=\"header\">Give us a try with a free ${kYCTrialAmount} trial bonus</p>        <p>Experience P2P lending without committing your own money. Sign up and verify your ID (pass KYC) now and enjoy an inflation-beating 4% APY on a ${kYCTrialAmount} trial bonus. After 30 days, we reclaim the bonus but you keep the interest.</p>        <p>This offer is for a limited time and only available to US citizens.</p>      ",
@@ -5210,7 +5268,7 @@
             }
         },
         "promotionCryptoBacked": {
-            "title": "        <p class=\"header\">Try secured P2P lending with a free ${kYCTrialAmount} bonus</p>        <p>Earn up to 7.5% APR with crypto-backed P2P lending. Sign up and verify your ID (pass KYC) now to get a free ${kYCTrialAmount} bonus at 4% APY to start. After 30 days, we reclaim the bonus but you keep the interest.</p>        <p>This offer is for a limited time and only available to US citizens.</p>      ",
+            "title": "        <p class=\"header\">Try secured P2P lending with a free ${kYCTrialAmount} bonus</p>        <p>Earn up to 7% APR with crypto-backed P2P lending. Sign up now to get a free ${kYCTrialAmount} bonus at 4% APY to start. After 30 days, we reclaim the bonus but you keep the interest.</p>        <p>This offer is only available for a limited time.</p>      ",
             "howItWorks": {
                 "title": "How It Works",
                 "data": {
@@ -5232,7 +5290,7 @@
                     },
                     "4": {
                         "title": "Step 5",
-                        "desc": "            <p>Reinvest at 7.5% APR or withdraw earnings to your bank account.</p>            "
+                        "desc": "            <p>Reinvest at 7% APR or withdraw earnings to your bank account.</p>            "
                     }
                 }
             },
@@ -5315,7 +5373,7 @@
                 },
                 "6": {
                     "question": "What happens after the trial?",
-                    "answer": "\n            <p>Once we’ve taken back the ${kYCTrialAmount}, you keep the interest. It’s up to you what you’d like to do next. You can keep your interest in Flex earning 4% APY with anytime free withdrawals, or you can add some of your own money and reinvest in a crypto-backed loan for 7.5% APR (minimum investment is $50). You can also just withdraw it to your bank account. The choice is yours!</p>\n            "
+                    "answer": "\n            <p>Once we’ve taken back the ${kYCTrialAmount}, you keep the interest. It’s up to you what you’d like to do next. You can keep your interest in Flex earning 4% APY with anytime free withdrawals, or you can add some of your own money and reinvest in a crypto-backed loan for 7% APR (minimum investment is $50). You can also just withdraw it to your bank account. The choice is yours!</p>\n            "
                 },
                 "7": {
                     "question": "How do I withdraw my interest?",

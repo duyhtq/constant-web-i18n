@@ -442,7 +442,7 @@
     "me": {
         "history": {
             "invalidDate": "You can't export over six months of your account activity.",
-            "noData": "No data available to download in selected times",
+            "noData": "No data available to download of times selected",
             "exportToExcel": "Export to excel",
             "depositNow": "Deposit Now",
             "cancel": "Cancel",
@@ -1534,7 +1534,7 @@
             "description": "Get an easy online loan for as low as 7% APR through our fully secured peer-to-peer lending platform. No credit checks, no paperwork. Borrow money online and get a loan today!"
         },
         "invest": {
-            "title": "P2P Investing - Fully Secured Online Investment Platform - MyConstant",
+            "title": "P2P Investing - Fully Collateralized Online Investments Platform - MyConstant",
             "keyword": "constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance",
             "description": "Enjoy up to 7% returns on your alternative investments online. All lending is backed by borrower collateral. No fees. Explore the leading P2P lending platform for investors and get started with money online investment now!"
         },
@@ -5077,7 +5077,14 @@
         "expiredSession": "Your session has expired. Please log in again.",
         "withdrawLessThanOrEqual": "The maximum withdrawal amount is {max}. Please try other available methods.",
         "withdrawGreaterThan": "The minimum withdrawal amount is {min}",
-        "suspendWithdrawalTo": "<p>For your security, withdrawals and transfers have been temporarily suspended on your account until {date}. This follows a recent change to your security settings. To reinstate withdrawals and transfers early, please <a href=\"/me/securities\" target=\"_blank\" class=\"underline bold\">enable email confirmations</a>.</p>"
+        "suspendWithdrawalTo": "<p>For your security, withdrawals and transfers have been temporarily suspended on your account until {date}. This follows a recent change to your security settings. To reinstate withdrawals and transfers early, please <a href=\"/me/securities\" target=\"_blank\" class=\"underline bold\">enable email confirmations</a>.</p>",
+        "greaterThan": "Please enter a number greater than {min}",
+        "lessThan": "Please enter a number smaller than {max}",
+        "greaterThanEqual": "Please enter a number greater than {min}",
+        "lessThanEqual": "Please enter a number smaller than {max}",
+        "mustBeANumber": "Please enter a valid number",
+        "mustBeAPositiveInteger": "Please enter a valid number",
+        "mustBeAIntergerNumber": "Please enter a valid number"
     },
     "menuMobile": {
         "btnSignIn": "Sign in",

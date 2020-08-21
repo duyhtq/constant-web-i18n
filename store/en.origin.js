@@ -5077,7 +5077,14 @@
         "expiredSession": "%%%.error.expiredSession%%%",
         "withdrawLessThanOrEqual": "%%%.error.withdrawLessThanOrEqual%%%",
         "withdrawGreaterThan": "%%%.error.withdrawGreaterThan%%%",
-        "suspendWithdrawalTo": "%%%.error.suspendWithdrawalTo%%%"
+        "suspendWithdrawalTo": "%%%.error.suspendWithdrawalTo%%%",
+        "greaterThan": "%%%.error.greaterThan%%%",
+        "lessThan": "%%%.error.lessThan%%%",
+        "greaterThanEqual": "%%%.error.greaterThanEqual%%%",
+        "lessThanEqual": "%%%.error.lessThanEqual%%%",
+        "mustBeANumber": "%%%.error.mustBeANumber%%%",
+        "mustBeAPositiveInteger": "%%%.error.mustBeAPositiveInteger%%%",
+        "mustBeAIntergerNumber": "%%%.error.mustBeAIntergerNumber%%%"
     },
     "menuMobile": {
         "btnSignIn": "%%%.menuMobile.btnSignIn%%%",

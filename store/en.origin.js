@@ -1102,6 +1102,8 @@
             "topupHistory": "%%%.me.navigation.topupHistory%%%",
             "localHistory": "%%%.me.navigation.localHistory%%%",
             "fiat": "%%%.me.navigation.fiat%%%",
+            "flex": "%%%.me.navigation.flex%%%",
+            "invest": "%%%.me.navigation.invest%%%",
             "accountActivities": "%%%.me.navigation.accountActivities%%%"
         },
         "kyc": {
@@ -3073,6 +3075,10 @@
                 "BeneficiaryAddressPostalCode": "%%%.home.convert.payToForm.BeneficiaryAddressPostalCode%%%",
                 "transferMethod": "%%%.home.convert.payToForm.transferMethod%%%",
                 "transferMethods": {
+                    "plaid": {
+                        "title": "%%%.home.convert.payToForm.transferMethods.plaid.title%%%",
+                        "desc": "%%%.home.convert.payToForm.transferMethods.plaid.desc%%%"
+                    },
                     "ach": {
                         "title": "%%%.home.convert.payToForm.transferMethods.ach.title%%%",
                         "desc": "%%%.home.convert.payToForm.transferMethods.ach.desc%%%"
@@ -4421,7 +4427,8 @@
         "countryNotSupport": "%%%.exchangeInputSellForm.countryNotSupport%%%",
         "validateMaxInput": "%%%.exchangeInputSellForm.validateMaxInput%%%",
         "validateMaxInputBalanceZero": "%%%.exchangeInputSellForm.validateMaxInputBalanceZero%%%",
-        "suggestOtherPayment": "%%%.exchangeInputSellForm.suggestOtherPayment%%%"
+        "suggestOtherPayment": "%%%.exchangeInputSellForm.suggestOtherPayment%%%",
+        "noAvailableMethod": "%%%.exchangeInputSellForm.noAvailableMethod%%%"
     },
     "transferCrypto": {
         "info": {
@@ -5706,5 +5713,12 @@
         },
         "noResults": "%%%.helpAndSupport.noResults%%%",
         "browseCategories": "%%%.helpAndSupport.browseCategories%%%"
+    },
+    "contactSupport": {
+        "title": "%%%.contactSupport.title%%%",
+        "callText": "%%%.contactSupport.callText%%%",
+        "bookText": "%%%.contactSupport.bookText%%%",
+        "chatText": "%%%.contactSupport.chatText%%%",
+        "timeSupport": "%%%.contactSupport.timeSupport%%%"
     }
 }

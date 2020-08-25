@@ -1066,6 +1066,8 @@ export default {
       topupHistory: 'Top-up History',
       localHistory: 'Transfers and interest earnings',
       fiat: 'Fiat',
+      flex: 'Flex',
+      invest: 'Invest',
       accountActivities: 'Account Activity'
     },
     kyc: {
@@ -1098,7 +1100,7 @@ export default {
       isUS: 'Are you a US citizen or resident?',
       lDocType: 'Type of ID',
       lSSN: 'Social Security Number',
-      titleExample: 'Before uploading, please crop the image of your ID to make the border as small as possible.',
+      titleExample: 'Before uploading, please make sure that your ID is still valid and crop the image of your ID to make the border as small as possible.',
       titleExampleClick: 'Click here to see the examples.',
       correct: 'Correct',
       incorrect: 'Incorrect',
@@ -1110,7 +1112,7 @@ export default {
       plAddrCity: 'Select your city',
       titleStep2: 'Thanks. Now we need a proof of address.',
       lAddrUpload: 'To verify the address above, please upload a document that meets <a href="https://medium.com/@constantp2p/how-to-verify-your-id-on-constant-kyc-1a9d08ae0a" class="underline" target="_blank" >these criteria</a>.',
-      descAddrUpload: '<div>        <p>Valid documents: utility bill, phone bill, mortgage statement, tenancy        agreement, bank/credit card statement, insurance letter (motor, home, or        life), or financial statement (pension, endowment).</p>        <p>        <strong>Document must be dated within the last 90 days.</strong>        </p>        <p>        Please ensure your proof of address is an exact match with the address        provided in your application, including all shorthands and abbreviations.</p>        <p>              Please make sure that the photo is complete and clearly visible, in BMP,         JPG, JPEG, PNG or PDF format, and is smaller than 10MB.</p>      </div>      ',
+      descAddrUpload: '<div>        <p>Valid documents: utility bill, phone bill, mortgage statement, tenancy        agreement, bank/credit card statement, insurance letter (motor, home, or        life), or financial statement (pension, endowment).</p>        <p>        <strong style="color:#F5A623;">Document must be dated within the last 90 days.</strong>        </p>        <p>        Please ensure your proof of address is an exact match with the address        provided in your application, including all shorthands and abbreviations.</p>        <p>              Please make sure that the photo is complete and clearly visible, in BMP,         JPG, JPEG, PNG or PDF format, and is smaller than 10MB.</p>      </div>      ',
       btnBack: 'Back',
       reviewing: '        <p>Thanks, it’s nice to meet you.</p>        <p>          We’re looking over your information and will let you know once you’re          good to go.        </p>      ',
       uploadImageClick: 'Click here to upload your images.',
@@ -3035,6 +3037,7 @@ export default {
         BeneficiaryAddressPostalCode: 'Beneficiary Postal Code',
         transferMethod: 'Transfer Method',
         transferMethods: {
+          plaid: { title: 'Linked bank account (ACH)', desc: 'Fee: Free. Time: 2-5 days' },
           ach: { title: 'ACH', desc: 'Fee: Free. Time: 2-5 days' },
           wire: {
             title: 'Wire',
@@ -4365,7 +4368,8 @@ export default {
     countryNotSupport: 'Your country is not supported at the moment. Our support team will get in touch with you via email.',
     validateMaxInput: 'Please make sure your balance is sufficient.',
     validateMaxInputBalanceZero: 'Please make sure your balance is sufficient.',
-    suggestOtherPayment: "Minimum withdrawal by bank transfer is ${minDirect}. Please use Zelle instead (it's much faster, too)."
+    suggestOtherPayment: "Minimum withdrawal by bank transfer is ${minDirect}. Please use Zelle instead (it's much faster, too).",
+    noAvailableMethod: 'There is no available method for you, please contact our support.',
   },
   transferCrypto: {
     info: {
@@ -5656,5 +5660,12 @@ export default {
     },
     noResults: 'Sorry! content not found',
     browseCategories: 'Browse categories'
+  },
+  contactSupport: {
+    title: '<strong>Need help or <br />have a question?</strong>',
+    callText: 'Call us on (+1) 646 809 8338',
+    bookText: 'Book a call',
+    chatText: 'Log in to Messenger',
+    timeSupport: 'We\'re available <strong>Mon-Fri 9am-5pm</strong> and<br /> <strong>Mon-Thurs 7pm-4am PST</strong>'
   }
 };

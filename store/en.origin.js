@@ -3600,50 +3600,6 @@
                 "minuteWindow": "%%%.home1.lendingSection.confirm.minuteWindow%%%",
                 "minuteWindowDescription": "%%%.home1.lendingSection.confirm.minuteWindowDescription%%%",
                 "paymentMethods": {
-                    "0": {
-                        "desc": "%%%.home1.lendingSection.confirm.paymentMethods.0.desc%%%",
-                        "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.0.referNoteDesc%%%"
-                    },
-                    "-1": {
-                        "desc": "%%%.home1.lendingSection.confirm.paymentMethods.-1.desc%%%",
-                        "paymentInfo": "%%%.home1.lendingSection.confirm.paymentMethods.-1.paymentInfo%%%",
-                        "note": "%%%.home1.lendingSection.confirm.paymentMethods.-1.note%%%",
-                        "placeholder": "%%%.home1.lendingSection.confirm.paymentMethods.-1.placeholder%%%",
-                        "submitButton": "%%%.home1.lendingSection.confirm.paymentMethods.-1.submitButton%%%",
-                        "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.-1.referNoteDesc%%%"
-                    },
-                    "-2": {
-                        "desc": "%%%.home1.lendingSection.confirm.paymentMethods.-2.desc%%%",
-                        "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.-2.referNoteDesc%%%"
-                    },
-                    "-3": {
-                        "desc": "%%%.home1.lendingSection.confirm.paymentMethods.-3.desc%%%",
-                        "paymentInfo": "%%%.home1.lendingSection.confirm.paymentMethods.-3.paymentInfo%%%",
-                        "note": "%%%.home1.lendingSection.confirm.paymentMethods.-3.note%%%",
-                        "placeholder": "%%%.home1.lendingSection.confirm.paymentMethods.-3.placeholder%%%",
-                        "submitButton": "%%%.home1.lendingSection.confirm.paymentMethods.-3.submitButton%%%",
-                        "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.-3.referNoteDesc%%%"
-                    },
-                    "-4": {
-                        "desc": "%%%.home1.lendingSection.confirm.paymentMethods.-4.desc%%%",
-                        "paymentInfo": "%%%.home1.lendingSection.confirm.paymentMethods.-4.paymentInfo%%%",
-                        "note": "%%%.home1.lendingSection.confirm.paymentMethods.-4.note%%%",
-                        "placeholder": "%%%.home1.lendingSection.confirm.paymentMethods.-4.placeholder%%%",
-                        "submitButton": "%%%.home1.lendingSection.confirm.paymentMethods.-4.submitButton%%%",
-                        "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.-4.referNoteDesc%%%"
-                    },
-                    "-5": {
-                        "desc": "%%%.home1.lendingSection.confirm.paymentMethods.-5.desc%%%",
-                        "paymentInfo": "%%%.home1.lendingSection.confirm.paymentMethods.-5.paymentInfo%%%",
-                        "note": "%%%.home1.lendingSection.confirm.paymentMethods.-5.note%%%",
-                        "placeholder": "%%%.home1.lendingSection.confirm.paymentMethods.-5.placeholder%%%",
-                        "submitButton": "%%%.home1.lendingSection.confirm.paymentMethods.-5.submitButton%%%",
-                        "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.-5.referNoteDesc%%%"
-                    },
-                    "-6": {
-                        "desc": "%%%.home1.lendingSection.confirm.paymentMethods.-6.desc%%%",
-                        "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.-6.referNoteDesc%%%"
-                    },
                     "email": {
                         "titleDesc": "%%%.home1.lendingSection.confirm.paymentMethods.email.titleDesc%%%",
                         "note": "%%%.home1.lendingSection.confirm.paymentMethods.email.note%%%",

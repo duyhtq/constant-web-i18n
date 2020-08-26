@@ -1657,7 +1657,7 @@
         },
         "banner": {
             "title1": "Experience multi-market <span style=\"color:#F5A623;\">peer-to-peer</span> lending.",
-            "subTitle": "<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee. Earn across multiple markets, spreading risk and maximizing reward.</p>",
+            "subTitle": "<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee. Earn across multiple markets, spreading risk and maximizing reward.</p>        <p>Or, borrow against 40+ cryptocurrencies to get the cash you need, instantly. Your crypto is securely held until you repay. Unlock the value of your crypto without selling up. </p>        <p>While not on loan or waiting for a match, your funds earn an automatic 4% APY, and you can withdraw anytime for free. So no downtime, no wasted earnings.</p>",
             "subTitleShort": "<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee...</p>",
             "viewMore": "...more",
             "intro": {
@@ -3600,65 +3600,21 @@
                 "minuteWindow": "Please complete your transfer within 3 days.",
                 "minuteWindowDescription": "For the sake of security, this session will time-out after 3 days. If you need a little longer, just re-enter the amount you would like to invest when you’re ready.",
                 "paymentMethods": {
-                    "0": {
-                        "desc": "              <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.</p>              <p>If you don’t bank with any of those listed, no problem. You can transfer from any bank account, but please note that your bank might charge you a fee.</p>            ",
-                        "referNoteDesc": "To streamline the deposit process, please include this reference number when making the bank transfer."
-                    },
-                    "-1": {
-                        "desc": "              <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>              <p>Please select the bank that is most convenient for you to transfer funds to.</p>            ",
-                        "paymentInfo": "              <div class=\"row\">                <div class=\"col\">                    <label>Amount</label>                    <p>{amount} USD</p>                </div>                <div class=\"col\">                    <label>Send to</label>                    <p>{email}</p>                </div>              </div>              <div class=\"row\">                <div class=\"col\">                    <label>Full name</label>                    <p>{name}</p>                </div>                <div class=\"col\">                    <label>Type</label>                    <p>{type}</p>                </div>              </div>            ",
-                        "note": "Before making a transfer, please enter the full name associated with the Zelle account here",
-                        "placeholder": "Please enter the full name here",
-                        "submitButton": "Submit",
-                        "referNoteDesc": "To streamline the deposit process, please include this reference number when making the bank transfer."
-                    },
-                    "-2": {
-                        "desc": "              <p>We’ve partnered with Checkbook to make bank transfers even easier.</p>              <p>Instead of logging into your bank account separately, enter your login details here and Checkbook will arrange the transfer automatically by ACH/digital check.</p>              <p>Neither Constant nor Checkbook store your details, and the service is free.</p>            ",
-                        "referNoteDesc": " "
-                    },
-                    "-3": {
-                        "desc": "              <p>Google Pay is a fast, safe payment tool linked to your Google account. To get started, log into Google Pay and link a payment method (such as a bank card). Then enter the details on the right in your Google Pay account and click send.</p>            ",
-                        "paymentInfo": "              <div class=\"row\">                <div class=\"col\">                    <label>Amount</label>                    <p>{amount} USD</p>                </div>                <div class=\"col\">                    <label>Send to</label>                    <p>{email}</p>                </div>              </div>            ",
-                        "note": "Before making a transfer, please enter the email associated with your Google Pay account below:",
-                        "placeholder": "Please enter the email here",
-                        "submitButton": "Submit",
-                        "referNoteDesc": "To streamline the deposit process, please include this reference number when sending your money using Google Pay."
-                    },
-                    "-4": {
-                        "desc": "              <p>Venmo is a fast, easy, and convenient payment app from the makers of PayPal </p>              <p>To use Venmo, simply download the app and send your money to us using the details on the right-hand side of this page.</p>            ",
-                        "paymentInfo": "              <div class=\"row\">                <div class=\"col\">                    <label>Amount</label>                    <p>{amount} USD</p>                </div>                <div class=\"col\">                    <label>Send to</label>                    <p>{phone}</p>                </div>              </div>            ",
-                        "note": "Before making a transfer, please enter the phone number associated with your Venmo account below:",
-                        "placeholder": "Please enter the phone number here",
-                        "submitButton": "Submit",
-                        "referNoteDesc": "To streamline the deposit process, please include this reference number when sending your money using Venmo."
-                    },
-                    "-5": {
-                        "desc": "              <p>PayPal is one of the world’s most trusted and secure payment services. To get started, create a free PayPal account and link a card or bank account. Then enter the details on the right from your PayPal account and click send.</p>            ",
-                        "paymentInfo": "              <div class=\"row\">                <div class=\"col\">                    <label>Amount</label>                    <p>{amount} USD</p>                </div>                <div class=\"col\">                    <label>Send to</label>                    <p>{email}</p>                </div>              </div>              <div class=\"row\">                <div class=\"col\">                    <label>Full name</label>                    <p>{name}</p>                </div>                <div class=\"col\">                    <label>Type</label>                    <p>{type}</p>                </div>              </div>            ",
-                        "note": "Before making a transfer, please enter the email associated with your PayPal account below:",
-                        "placeholder": "Please enter the email here",
-                        "submitButton": "Submit",
-                        "referNoteDesc": "To streamline the deposit process, please include this reference number when sending your money using PayPal."
-                    },
-                    "-6": {
-                        "desc": "            <p class=\"title\"><strong>Important info for Prime Trust transfers</strong></p>            <p class=\"desc\">Prime Trust only accepts wire transfers, not ACH. Make sure you complete a wire transfer from your personal bank account or we might be unable to locate your funds.</p>            <p class=\"desc\">For more information on transferring to Prime Trust, <a href=\"https://blog.myconstant.com/how-to-wire-your-money-to-constant-via-prime-trust/\" target=\"_blank\" class=\"underline\">check out our blog</a>. It’s vital you include your reference number when you wire the money so we can match it to your account.</p>            <p class=\"desc\">When you have made your transfer, please send an email with your wire receipt to <a href=\"mailto:hello@myconstant.com\" target=\"_blank\" class=\"underline\">hello@myconstant.com</a> to help us speed up the process. Your wire receipt, sometimes called a transaction confirmation, holds all the details of the transfer and might be emailed to you or be made available through online banking.</p>            ",
-                        "referNoteDesc": "To receive your deposit you MUST include this reference number when your wire your funds from your bank."
-                    },
                     "email": {
                         "titleDesc": "<p>Fast. Free. Easy.<br/><i>Less than ${max} per transaction</i></p>",
                         "note": "Before making a transfer, please enter the full name associated with the Zelle account here",
                         "paymentInfo": "              <div class=\"row\">                <div class=\"col\">                    <label>Amount</label>                    <p>{amount} USD</p>                </div>                <div class=\"col\">                    <label>Send to</label>                    <p>{email}</p>                </div>              </div>              <div class=\"row\">                <div class=\"col\">                    <label>Full name</label>                    <p>{name}</p>                </div>                <div class=\"col\">                    <label>Type</label>                    <p>{type}</p>                </div>              </div>            ",
                         "placeholder": "Please enter the full name here",
                         "submitButton": "Submit",
-                        "notAvailableAmount": "<p>The maximum amount you can send through Zelle is {amount}. Please choose either a wire transfer or ACH transfer (available for linked US bank accounts only).</p><p><a href=\"https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/\">How to link a US bank account for ACH transfers.</a></p>"
+                        "notAvailableAmount": "<p>The maximum amount you can send through Zelle is {amount}. Please choose either a wire transfer or ACH transfer (available for linked US bank accounts only).</p><p><a target=\"_blank\" href=\"https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/\">How to link a US bank account for ACH transfers.</a></p>"
                     },
                     "primetrust": {
                         "titleDesc": "<p>Fast. Flexible. Secure.<br/><i>Unlimited amount</i></p>",
                         "referNoteDesc": "To receive your deposit you MUST include this reference number when your wire your funds from your bank.",
                         "minuteWindow": "15 MINUTE WINDOW",
                         "minuteWindowDescription": "Please complete your transfer within 15 minutes. After that, your order will be automatically cancelled.",
-                        "subtitleGeneral": "\n              <p>Please wire your deposit of ${amount} using reference number {refNumber} to Prime Trust using the details below. When you have made your transfer, please email your wire receipt to <a href=\"mailto:finance@myconstant.com\">finance@myconstant.com</a>.</p> \n              <p>Need help? Check out our guide to Prime Trust transfers.</p>\n            ",
-                        "subtitleInvest": "\n              <p>To complete your investment of ${amount} at {interest}% for {term} days, please wire your funds to our custodial partner, Prime Trust, using the details below.</p>\n              <p>IMPORTANT: Please include your reference number {refNumber} so we can match your deposit to your account. To speed this up, please email your wire receipt to <a href=\"mailto:finance@myconstant.com\">finance@myconstant.com</a>.</p>\n              <p>Need help? <a href=\"https://blog.myconstant.com/how-to-wire-your-money-to-constant-via-prime-trust/\">View our guide to Prime Trust wire transfers.</a></p>\n            "
+                        "subtitleGeneral": "\n              <p>Please wire your deposit of ${amount} using reference number {refNumber} to Prime Trust using the details below. When you have made your transfer, please email your wire receipt to <a href=\"mailto:finance@myconstant.com\">finance@myconstant.com</a>.</p> \n              <p>Need help? <a target=\"_blank\" href=\"https://blog.myconstant.com/how-to-wire-your-money-to-constant-via-prime-trust/\">Check out our guide to Prime Trust transfers.</a></p>\n            ",
+                        "subtitleInvest": "\n              <p>To complete your investment of ${amount} at {interest}% for {term} days, please wire your funds to our custodial partner, Prime Trust, using the details below.</p>\n              <p>IMPORTANT: Please include your reference number {refNumber} so we can match your deposit to your account. To speed this up, please email your wire receipt to <a href=\"mailto:finance@myconstant.com\">finance@myconstant.com</a>.</p>\n              <p>Need help? <a target=\"_blank\" href=\"https://blog.myconstant.com/how-to-wire-your-money-to-constant-via-prime-trust/\">View our guide to Prime Trust wire transfers.</a></p>\n            "
                     },
                     "plaid": {
                         "title": "Transfer via ACH to earn {rate}% instantly",
@@ -3670,14 +3626,14 @@
                             "pleaseNote": "<p>Please note: ACH transfers are available for linked US bank accounts only, and can take <strong>up to 5 business days</strong> to clear. Please don’t send us an ACH from an unlinked bank account or it will be rejected.</p>",
                             "haveLinkedBank": "<p>Please choose a linked bank account below and then click <strong>Submit</strong>.</p>",
                             "noLinkedBank": "<p>Please click <strong>+ Add bank</strong> on the right to link a US bank account.</p>",
-                            "needHelp": "<p>Need help? Check out <a href=\"https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/\">our linked banking and ACH transfers guide.</a></p>"
+                            "needHelp": "<p>Need help? Check out <a target=\"_blank\" href=\"https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/\">our linked banking and ACH transfers guide.</a></p>"
                         },
                         "noBankDesc": "<p>Link a US bank account to do ACH transfers through our partner, Plaid.</p><p>You don’t have any linked bank accounts at the moment. To link a US bank account to do ACH transfers, please click <strong>+ Add new bank</strong>.</p>",
                         "updateBalanceNoteInWorkingTime": "Please note it might take <strong>up to five business days</strong> for the ACH transfer to complete and show in your account.",
                         "referNoteDesc": "\n              <h4>By clicking Submit, you confirm to</h4>\n            ",
-                        "checkListNote": "\n              <ul>\n                <li>You have linked a US checking account thats supports outgoing ACH transfers.</li>\n                <li>You have sufficient funds for the transfer in your linked US bank account.</li>\n                <li>The amount you’re sending is less than ${max}.</li>\n                <li>You expect to keep the same linked bank account(s) for the next 60 days.</li>\n                <li>You've read <a href=\"https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/\">our linked banking and ACH transfers guide.</a></li>\n              </ul>\n            ",
+                        "checkListNote": "\n              <ul>\n                <li>You have linked a US checking account thats supports outgoing ACH transfers.</li>\n                <li>You have sufficient funds for the transfer in your linked US bank account.</li>\n                <li>The amount you’re sending is less than ${max}.</li>\n                <li>You expect to keep the same linked bank account(s) for the next 60 days.</li>\n                <li>You've read <a target=\"_blank\" href=\"https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/\">our linked banking and ACH transfers guide.</a></li>\n              </ul>\n            ",
                         "sendNote": "<p>Please send your funds <strong>within 3 business days</strong> otherwise this transaction will time-out for the sake of security. If you need more time, please re-enter your investment amount when you're ready.</p><p>Please <strong>don't send</strong> an ACH via any method other than linking your US bank account or we won't be able to accept or trace it (and it will likely return to your bank).</p>",
-                        "notAvailableAmount": "<p>The maximum amount you can send via ACH is {amount}. Please choose a wire transfer. For more information on ACH limits, please read our <a href=\"https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/\">Guide to Linking US Bank Accounts.</a></p>"
+                        "notAvailableAmount": "<p>The maximum amount you can send via ACH is {amount}. Please choose a wire transfer. For more information on ACH limits, please read our <a target=\"_blank\" href=\"https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/\">Guide to Linking US Bank Accounts.</a></p>"
                     }
                 },
                 "zelle": "          <p>Amount: {amount} USD</p>          <p>Send to: <strong>finance@myconstant.com</strong></p>          <p>Full name: <strong>Const LLC</strong></p>          <p>Type: <strong>Personal Account</strong></p>          <br /><br />          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>        ",

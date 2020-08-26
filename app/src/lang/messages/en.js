@@ -1609,7 +1609,9 @@ export default {
     },
     banner: {
       title1: 'Experience multi-market <span style="color:#F5A623;">peer-to-peer</span> lending.',
-      subTitle: '        <p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee. Earn across multiple markets, spreading risk and maximizing reward.</p>        <p>Or, borrow against 40+ cryptocurrencies to get the cash you need, instantly. Your crypto is securely held until you repay. Unlock the value of your crypto without selling up. </p>        <p>While not on loan or waiting for a match, your funds earn an automatic 4% APY, and you can withdraw anytime for free. So no downtime, no wasted earnings.</p>      ',
+      subTitle: '<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee. Earn across multiple markets, spreading risk and maximizing reward.</p>',
+      subTitleShort: '<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee...</p>',
+      viewMore: '...more',
       intro: {
         youtube: { title: 'Fully Secured Peer To Peer Lending - How It Works' }
       },
@@ -3577,28 +3579,54 @@ export default {
             referNoteDesc: 'To receive your deposit you MUST include this reference number when your wire your funds from your bank.'
           },
           email: {
-            desc: '              <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>              <p>Please select the bank that is most convenient for you to transfer funds to.</p>            ',
+            titleDesc: '<p>Fast. Free. Easy.<br/><i>Less than ${max} per transaction</i></p>',
             note: 'Before making a transfer, please enter the full name associated with the Zelle account here',
             paymentInfo: '              <div class="row">                <div class="col">                    <label>Amount</label>                    <p>{amount} USD</p>                </div>                <div class="col">                    <label>Send to</label>                    <p>{email}</p>                </div>              </div>              <div class="row">                <div class="col">                    <label>Full name</label>                    <p>{name}</p>                </div>                <div class="col">                    <label>Type</label>                    <p>{type}</p>                </div>              </div>            ',
             placeholder: 'Please enter the full name here',
             submitButton: 'Submit',
-            referNoteDesc: 'To streamline the deposit process, please include this reference number when making the bank transfer.',
             notAvailableAmount: '<p>The maximum amount you can send through Zelle is {amount}. Please choose either a wire transfer or ACH transfer (available for linked US bank accounts only).</p><p><a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">How to link a US bank account for ACH transfers.</a></p>'
           },
           primetrust: {
-            desc: '            <h4>Important info for Prime Trust transfers</h4>            <p class="desc">Prime Trust only accepts wire transfers, not ACH. Make sure you complete a wire transfer from your personal bank account or we might be unable to locate your funds.</p>            <p class="desc">For more information on transferring to Prime Trust, <a href="https://blog.myconstant.com/how-to-wire-your-money-to-constant-via-prime-trust/" target="_blank" class="underline">check out our blog</a>. It’s vital you include your reference number when you wire the money so we can match it to your account.</p>            <p class="desc">When you have made your transfer, please send an email with your wire receipt to <a href="mailto:hello@myconstant.com" target="_blank" class="underline">hello@myconstant.com</a> to help us speed up the process. Your wire receipt, sometimes called a transaction confirmation, holds all the details of the transfer and might be emailed to you or be made available through online banking.</p>            ',
+            titleDesc: '<p>Fast. Flexible. Secure.<br/><i>Unlimited amount</i></p>',
             referNoteDesc: 'To receive your deposit you MUST include this reference number when your wire your funds from your bank.',
             minuteWindow: '15 MINUTE WINDOW',
-            minuteWindowDescription: 'Please complete your transfer within 15 minutes. After that, your order will be automatically cancelled.'
+            minuteWindowDescription: 'Please complete your transfer within 15 minutes. After that, your order will be automatically cancelled.',
+            subtitleGeneral: `
+              <p>Please wire your deposit of \${amount} using reference number {refNumber} to Prime Trust using the details below. When you have made your transfer, please email your wire receipt to <a href="mailto:finance@myconstant.com">finance@myconstant.com</a>.</p> 
+              <p>Need help? Check out our guide to Prime Trust transfers.</p>
+            `,
+            subtitleInvest: `
+              <p>To complete your investment of \${amount} at {interest}% for {term} days, please wire your funds to our custodial partner, Prime Trust, using the details below.</p>
+              <p>IMPORTANT: Please include your reference number {refNumber} so we can match your deposit to your account. To speed this up, please email your wire receipt to <a href="mailto:finance@myconstant.com">finance@myconstant.com</a>.</p>
+              <p>Need help? <a href="https://blog.myconstant.com/how-to-wire-your-money-to-constant-via-prime-trust/">View our guide to Prime Trust wire transfers.</a></p>
+            `,
           },
           plaid: {
-            title: 'Transfer from a linked US bank account',
-            subtitle: '<p>Make an ACH transfer from a linked US bank account through our partner Plaid. Please ensure you have sufficient funds in your account and your bank supports ACH transfers before you proceed.</p><p>To process your transfer, please choose your linked US bank account below and then click <strong>Submit</strong>.</p>',
+            title: 'Transfer via ACH to earn {rate}% instantly',
+            titleDesc: '<p>Instant interest. Linked US bank only.<br/><i>Less than ${max} per transaction</i></p>',
+            subtitle: {
+              enoughInstantCredit: '<p>Get an instant 4% APY on ${instantAmount}. Reinvest or withdraw your deposit when your ACH clears.</p>',
+              overInstantCredit: '<p>Get an instant 4% APY on ${instantAmount}. The remainder of your deposit will credit when your funds reach us. Reinvest or withdraw your deposit when your ACH clears.</p>',
+              investNote: '<p>Get an instant 4% APY on any Plaid ACH deposit up to ${instantAmount}. Your investment of ${amount} at {interest}% for {term} days will start after your ACH clears.</p>',
+              pleaseNote: '<p>Please note: ACH transfers are available for linked US bank accounts only, and can take <strong>up to 5 business days</strong> to clear. Please don’t send us an ACH from an unlinked bank account or it will be rejected.</p>',
+              haveLinkedBank: '<p>Please choose a linked bank account below and then click <strong>Submit</strong>.</p>',
+              noLinkedBank: '<p>Please click <strong>+ Add bank</strong> on the right to link a US bank account.</p>',
+              needHelp: '<p>Need help? Check out <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">our linked banking and ACH transfers guide.</a></p>',
+            },
             noBankDesc: '<p>Link a US bank account to do ACH transfers through our partner, Plaid.</p><p>You don’t have any linked bank accounts at the moment. To link a US bank account to do ACH transfers, please click <strong>+ Add new bank</strong>.</p>',
-            desc: "<p>We've partnered with ACH processor Plaid to make transfers easy for you. Once you’ve linked your US bank account, please select it from the options shown and click <strong>Submit</strong>.</p> <p>Please note the maximum you can send via ACH is $5,000 per transaction. If you'd like to send more, please select wire transfer.</p>",
             updateBalanceNoteInWorkingTime: 'Please note it might take <strong>up to five business days</strong> for the ACH transfer to complete and show in your account.',
-            referNoteDesc: '<h4>Before you click submit...</h4> <p>Please check the following to avoid any delays or ACH reversals</p>',
-            checkListNote: `<ul><li>You've linked a US checking account that supports outgoing ACH transfers.</li><li>You've linked a US checking account thats supports outgoing ACH transfers.</li><li>The amount you're sending is less than $5,000.</li><li>You expect to keep the same linked bank account(s) for the next 60 days.</li><li>You've read <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">our linked banking and ACH transfers guide.</a></li></ul>`,
+            referNoteDesc: `
+              <h4>By clicking Submit, you confirm to</h4>
+            `,
+            checkListNote: `
+              <ul>
+                <li>You have linked a US checking account thats supports outgoing ACH transfers.</li>
+                <li>You have sufficient funds for the transfer in your linked US bank account.</li>
+                <li>The amount you’re sending is less than \${max}.</li>
+                <li>You expect to keep the same linked bank account(s) for the next 60 days.</li>
+                <li>You've read <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">our linked banking and ACH transfers guide.</a></li>
+              </ul>
+            `,
             sendNote: "<p>Please send your funds <strong>within 3 business days</strong> otherwise this transaction will time-out for the sake of security. If you need more time, please re-enter your investment amount when you're ready.</p><p>Please <strong>don't send</strong> an ACH via any method other than linking your US bank account or we won't be able to accept or trace it (and it will likely return to your bank).</p>",
             notAvailableAmount: '<p>The maximum amount you can send via ACH is {amount}. Please choose a wire transfer. For more information on ACH limits, please read our <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">Guide to Linking US Bank Accounts.</a></p>'
           }

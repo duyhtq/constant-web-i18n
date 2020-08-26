@@ -1658,6 +1658,8 @@
         "banner": {
             "title1": "%%%.newHome.banner.title1%%%",
             "subTitle": "%%%.newHome.banner.subTitle%%%",
+            "subTitleShort": "%%%.newHome.banner.subTitleShort%%%",
+            "viewMore": "%%%.newHome.banner.viewMore%%%",
             "intro": {
                 "youtube": {
                     "title": "%%%.newHome.banner.intro.youtube.title%%%"
@@ -3643,25 +3645,34 @@
                         "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.-6.referNoteDesc%%%"
                     },
                     "email": {
-                        "desc": "%%%.home1.lendingSection.confirm.paymentMethods.email.desc%%%",
+                        "titleDesc": "%%%.home1.lendingSection.confirm.paymentMethods.email.titleDesc%%%",
                         "note": "%%%.home1.lendingSection.confirm.paymentMethods.email.note%%%",
                         "paymentInfo": "%%%.home1.lendingSection.confirm.paymentMethods.email.paymentInfo%%%",
                         "placeholder": "%%%.home1.lendingSection.confirm.paymentMethods.email.placeholder%%%",
                         "submitButton": "%%%.home1.lendingSection.confirm.paymentMethods.email.submitButton%%%",
-                        "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.email.referNoteDesc%%%",
                         "notAvailableAmount": "%%%.home1.lendingSection.confirm.paymentMethods.email.notAvailableAmount%%%"
                     },
                     "primetrust": {
-                        "desc": "%%%.home1.lendingSection.confirm.paymentMethods.primetrust.desc%%%",
+                        "titleDesc": "%%%.home1.lendingSection.confirm.paymentMethods.primetrust.titleDesc%%%",
                         "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.primetrust.referNoteDesc%%%",
                         "minuteWindow": "%%%.home1.lendingSection.confirm.paymentMethods.primetrust.minuteWindow%%%",
-                        "minuteWindowDescription": "%%%.home1.lendingSection.confirm.paymentMethods.primetrust.minuteWindowDescription%%%"
+                        "minuteWindowDescription": "%%%.home1.lendingSection.confirm.paymentMethods.primetrust.minuteWindowDescription%%%",
+                        "subtitleGeneral": "%%%.home1.lendingSection.confirm.paymentMethods.primetrust.subtitleGeneral%%%",
+                        "subtitleInvest": "%%%.home1.lendingSection.confirm.paymentMethods.primetrust.subtitleInvest%%%"
                     },
                     "plaid": {
                         "title": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.title%%%",
-                        "subtitle": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle%%%",
+                        "titleDesc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.titleDesc%%%",
+                        "subtitle": {
+                            "enoughInstantCredit": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle.enoughInstantCredit%%%",
+                            "overInstantCredit": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle.overInstantCredit%%%",
+                            "investNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle.investNote%%%",
+                            "pleaseNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle.pleaseNote%%%",
+                            "haveLinkedBank": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle.haveLinkedBank%%%",
+                            "noLinkedBank": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle.noLinkedBank%%%",
+                            "needHelp": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle.needHelp%%%"
+                        },
                         "noBankDesc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.noBankDesc%%%",
-                        "desc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.desc%%%",
                         "updateBalanceNoteInWorkingTime": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.updateBalanceNoteInWorkingTime%%%",
                         "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.referNoteDesc%%%",
                         "checkListNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.checkListNote%%%",

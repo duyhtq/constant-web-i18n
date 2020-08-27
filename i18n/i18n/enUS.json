@@ -64,6 +64,7 @@
             "passwordTooWeak": "Your password must contain at least eight characters, including (at least) one number, one uppercase character, and one lowercase character.",
             "notValidEmail": "Invalid email address",
             "requiredEmail": "Email is required",
+            "requiredPassword": "Password is required",
             "invalidReferralCode": "Invalid referral code. Please check your code and try again",
             "confirmStrangeEmailMessage": "The email address <strong>{email}</strong> looks like it contains a typo or spelling mistake. Are you sure you want to sign up with this email address?"
         },
@@ -441,6 +442,9 @@
     },
     "me": {
         "history": {
+            "source": "Source",
+            "local": "location",
+            "ip": "IP",
             "invalidDate": "You can't export over six months of your account activity.",
             "noData": "No data available to download of times selected",
             "exportToExcel": "Export to excel",
@@ -1078,6 +1082,7 @@
             }
         },
         "navigation": {
+            "loginHistory": "Login activities",
             "personalInfo": "About you",
             "kycInformation": "KYC information",
             "bankInfo": "Bank information",
@@ -1180,12 +1185,11 @@
             "beneficiaryStreet": "Beneficiary street",
             "beneficiaryRegion": "Beneficiary region",
             "beneficiaryPostalCode": "Beneficiary postal code",
-            "linkBankSectionTitle": "Link your US bank account with Plaid, our ACH processor",
-            "linkBankSectionDesc": "<p>Deposit or withdraw using ACH bank transfers with Plaid. Link up to two bank accounts now to save time and money transferring funds to and from your Constant account. Since most savings accounts limit the number of withdrawals, we recommend you link a checking account not a savings account to avoid ACH reversals. <a href=\"https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/\">How to avoid ACH reversals</a>.</p>",
+            "linkBankSectionTitle": "Link your bank account",
+            "linkBankSectionDesc": "<p>Deposit or withdraw using ACH bank transfers with Plaid. Link up to two bank accounts now to save time and money transferring funds to and from your Constant account.<br/>Since most savings accounts limit the number of withdrawals, we recommend you link a checking account not a savings account to avoid ACH reversals.<br/><a href=\"https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/\">How to avoid ACH reversals</a>.</p>",
             "linkBankImportantNote": "<strong>Please note</strong>: For your security, you must withdraw to the same bank account from which you made your deposit. This restriction applies for 60 days and can be lifted upon supplying additional verification information. <a href=\"https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/\">How linked banking works</a>.",
-            "unlinkBankSectionTitle": "Add an unlinked bank account for manual transfers",
-            "unlinkBankSectionDesc": "<p>If you want to send more than $5,000 per transaction, or if your bank is outside of the US or doesn't support ACH transfers through Plaid, please add alternative banking details below. You can then preselect these details the next time you create a withdrawal order.</p>",
-            "unlinkBankImportantNote": "<strong>Please note</strong>: We can’t accept ACH transfers from unlinked bank accounts. If you send an ACH transfer from an unlinked bank account, it will be returned to you according to your bank’s schedule. Please only use Zelle or wire transfer only.",
+            "unlinkBankSectionTitle": "International Bank",
+            "unlinkBankSectionDesc": "<p>Nice – email confirmations are enabled on all withdrawals and transfers. Whenever you withdraw or transfer USD, cryptocurrency, or stablecoins, we’ll email you a link to authorize the transaction.</p>",
             "nonUSbankSectionTitle": "Add a bank account for deposits and withdrawals",
             "nonUSbankSectionDesc": "<p>Speed up the transfer process by adding your bank account details below. Once saved, you can preselect these details the next time you create a deposit or withdrawal order instead of entering them manually.</p>",
             "nonUSbankImportantNote": "<strong>Please note</strong>: We can't accept ACH transfers from non-US bank accounts. Please send your funds via wire or Zelle only.",
@@ -1430,6 +1434,19 @@
                 "deposit": "making a deposit",
                 "withdraw": "withdrawing"
             }
+        },
+        "getStarted": {
+            "steps": {
+                "verifyEmail": "Step 1: Verify email",
+                "kyc": "Step 2: Submit KYC",
+                "bank": "Step 3: Link your bank account"
+            },
+            "verifyEmailMessage": "<p>Done! We have sent a verification to your e-mail.<br/>Please check your mailbox.</p>",
+            "resendVerify": "Resend email verification",
+            "title": "<h2>Let's get you set up...</h2>",
+            "suggestTrialBonus": "<p>Get a <strong>free ${amount} trial bonus</strong> when you pass KYC.</p>",
+            "suggestLinkBank": "<p>Almost there! Link your bank account for easy deposits and withdrawals.</p>",
+            "suggestInvestBorrow": "Your're all set! <a href=\"/invest\">Invest</a> or <a href=\"/borrow\">borrow</a> now."
         }
     },
     "headerBar": {
@@ -4379,6 +4396,7 @@
         }
     },
     "exchangeInputSellForm": {
+        "getAmountFailed": "Failed while getting amount",
         "howMuchDoYouWantToWithdraw": "How much do you want to send?",
         "paymentMethod": "Payment method",
         "amountResult": {
@@ -5104,7 +5122,8 @@
             "collateralSuspendRecall": "Sorry, you can't recall excess on {symbol} collateral due to pricing volatility. We regularly review market activity and {symbol} prices are highly volatile at the moment. We've therefore limited recall excess on {symbol} to protect you from an increased risk of liquidation. For more information, please contact hello@myconstant.com.",
             "not_enough_balance": "Your balance is insufficient. Please try again with a different amount.",
             "violateBonusPolicy": "Your bonus can't be withdrawn for 30 days. This gives you time to try our platform and make some money through our Flex account.",
-            "reserveNotEnough": "Sorry, we can't create your order at the moment. Please contact us at hello@myconstant.com and we'll help fix this issue for you."
+            "reserveNotEnough": "Sorry, we can't create your order at the moment. Please contact us at hello@myconstant.com and we'll help fix this issue for you.",
+            "already_bought_void_term_deposit": "You’ve already joined the matching queue for this order. Our system will randomly select a buyer to fulfil this order in priority of membership level. If you’re selected, your investment will start automatically and we’ll notify you by email."
         },
         "expiredSession": "Your session has expired. Please log in again.",
         "withdrawLessThanOrEqual": "The maximum withdrawal amount is {max}. Please try other available methods.",

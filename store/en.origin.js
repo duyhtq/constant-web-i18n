@@ -64,6 +64,7 @@
             "passwordTooWeak": "%%%.user.register.passwordTooWeak%%%",
             "notValidEmail": "%%%.user.register.notValidEmail%%%",
             "requiredEmail": "%%%.user.register.requiredEmail%%%",
+            "requiredPassword": "%%%.user.register.requiredPassword%%%",
             "invalidReferralCode": "%%%.user.register.invalidReferralCode%%%",
             "confirmStrangeEmailMessage": "%%%.user.register.confirmStrangeEmailMessage%%%"
         },
@@ -441,6 +442,9 @@
     },
     "me": {
         "history": {
+            "source": "%%%.me.history.source%%%",
+            "local": "%%%.me.history.local%%%",
+            "ip": "%%%.me.history.ip%%%",
             "invalidDate": "%%%.me.history.invalidDate%%%",
             "noData": "%%%.me.history.noData%%%",
             "exportToExcel": "%%%.me.history.exportToExcel%%%",
@@ -1078,6 +1082,7 @@
             }
         },
         "navigation": {
+            "loginHistory": "%%%.me.navigation.loginHistory%%%",
             "personalInfo": "%%%.me.navigation.personalInfo%%%",
             "kycInformation": "%%%.me.navigation.kycInformation%%%",
             "bankInfo": "%%%.me.navigation.bankInfo%%%",
@@ -1185,7 +1190,6 @@
             "linkBankImportantNote": "%%%.me.bankInfo.linkBankImportantNote%%%",
             "unlinkBankSectionTitle": "%%%.me.bankInfo.unlinkBankSectionTitle%%%",
             "unlinkBankSectionDesc": "%%%.me.bankInfo.unlinkBankSectionDesc%%%",
-            "unlinkBankImportantNote": "%%%.me.bankInfo.unlinkBankImportantNote%%%",
             "nonUSbankSectionTitle": "%%%.me.bankInfo.nonUSbankSectionTitle%%%",
             "nonUSbankSectionDesc": "%%%.me.bankInfo.nonUSbankSectionDesc%%%",
             "nonUSbankImportantNote": "%%%.me.bankInfo.nonUSbankImportantNote%%%",
@@ -1430,6 +1434,19 @@
                 "deposit": "%%%.me.kycVerification.action.deposit%%%",
                 "withdraw": "%%%.me.kycVerification.action.withdraw%%%"
             }
+        },
+        "getStarted": {
+            "steps": {
+                "verifyEmail": "%%%.me.getStarted.steps.verifyEmail%%%",
+                "kyc": "%%%.me.getStarted.steps.kyc%%%",
+                "bank": "%%%.me.getStarted.steps.bank%%%"
+            },
+            "verifyEmailMessage": "%%%.me.getStarted.verifyEmailMessage%%%",
+            "resendVerify": "%%%.me.getStarted.resendVerify%%%",
+            "title": "%%%.me.getStarted.title%%%",
+            "suggestTrialBonus": "%%%.me.getStarted.suggestTrialBonus%%%",
+            "suggestLinkBank": "%%%.me.getStarted.suggestLinkBank%%%",
+            "suggestInvestBorrow": "%%%.me.getStarted.suggestInvestBorrow%%%"
         }
     },
     "headerBar": {
@@ -4379,6 +4396,7 @@
         }
     },
     "exchangeInputSellForm": {
+        "getAmountFailed": "%%%.exchangeInputSellForm.getAmountFailed%%%",
         "howMuchDoYouWantToWithdraw": "%%%.exchangeInputSellForm.howMuchDoYouWantToWithdraw%%%",
         "paymentMethod": "%%%.exchangeInputSellForm.paymentMethod%%%",
         "amountResult": {
@@ -5104,7 +5122,8 @@
             "collateralSuspendRecall": "%%%.error.serverCode.collateralSuspendRecall%%%",
             "not_enough_balance": "%%%.error.serverCode.not_enough_balance%%%",
             "violateBonusPolicy": "%%%.error.serverCode.violateBonusPolicy%%%",
-            "reserveNotEnough": "%%%.error.serverCode.reserveNotEnough%%%"
+            "reserveNotEnough": "%%%.error.serverCode.reserveNotEnough%%%",
+            "already_bought_void_term_deposit": "%%%.error.serverCode.already_bought_void_term_deposit%%%"
         },
         "expiredSession": "%%%.error.expiredSession%%%",
         "withdrawLessThanOrEqual": "%%%.error.withdrawLessThanOrEqual%%%",

@@ -396,6 +396,7 @@ export default {
         orderNo: '#',
         usdAmount: 'USD Amount',
         currencyAmount: 'Currency Amount',
+        fee: 'Fee',
         address: 'Send to Address',
         date: 'Date',
         status: 'Status',
@@ -533,7 +534,7 @@ export default {
       requestExecute: 'Help',
       transactionID: 'Transaction ID',
       type: 'Type',
-      fee: 'fee',
+      fee: 'Fee',
       status: 'Status',
       collateralPay: 'Pay: ',
       description: 'Description: ',
@@ -3222,7 +3223,7 @@ export default {
       timeLimitMinute: 'minutes',
       timeLimit2: '48 hours',
       validateMaxInput: 'Please make sure your balance is sufficient.',
-      confirmMsg: '      <p>You’re about to convert {constAmount} CONST (USD) to {amount} {name} and then withdraw it to wallet address {address}.</p>      <p>Do you want to proceed?</p>      ',
+      confirmMsg: '<p>You’re about to convert {constAmount} CONST (USD) to {amount} {name}, fee ${fee} and then withdraw it to wallet address {address}.</p><p>Do you want to proceed?</p>',
       title: 'Transfer',
       caption: 'SEND CONSTANT ANYWHERE',
       transferType: 'Transfer Type',
@@ -3479,7 +3480,13 @@ export default {
           confirmSubText: "Please check the recipient's bank info again.",
           close: 'Close',
           agreeSell: 'Agree to send'
-        }
+        },
+        fee: {
+          fee: 'Fee: ',
+          wantZeroFeeLabel: 'Want zero fees?',
+          wantZeroFeeMsg:
+            'All purchases of 1000 Constant and over are completely free.',
+        },
       },
       goHistory: 'Go to History',
       backToNewOrder: 'Make another transfer '
@@ -4386,7 +4393,8 @@ export default {
       warning6h: 'Please complete your transfer within 6 hours.',
       timeoutDepositWarning: 'For the sake of security, this order will time-out after 6 hours. If you need a little longer, just re-enter the amount you’d like to invest when you’re ready.',
       copiedAddress: 'Address is copied to clipboard',
-      maxValues: 'Must less than ${max}',
+      minValues: 'Must greater than {min}',
+      maxValues: 'Must less than {max}',
       uploading: 'Uploading...',
       fileupload: 'Upload'
     },
@@ -5670,5 +5678,12 @@ export default {
     bookText: 'Book a call',
     chatText: 'Log in to Messenger',
     timeSupport: 'We\'re available <strong>Mon-Fri 9am-5pm</strong> and<br /> <strong>Mon-Thurs 7pm-4am PST</strong>'
+  },
+  withdrawFees: {
+    headers: {
+      coin: 'Coin',
+      minAmount: 'Min withdraw amount',
+      fee: 'Withdraw fee',
+    }
   }
 };

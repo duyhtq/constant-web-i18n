@@ -1114,6 +1114,7 @@
         },
         "kyc": {
             "verifiedTitle": "%%%.me.kyc.verifiedTitle%%%",
+            "verifyingTitle": "%%%.me.kyc.verifyingTitle%%%",
             "lFirstName": "%%%.me.kyc.lFirstName%%%",
             "lMiddleName": "%%%.me.kyc.lMiddleName%%%",
             "lLastName": "%%%.me.kyc.lLastName%%%",
@@ -1157,6 +1158,7 @@
             "descAddrUpload": "%%%.me.kyc.descAddrUpload%%%",
             "btnBack": "%%%.me.kyc.btnBack%%%",
             "reviewing": "%%%.me.kyc.reviewing%%%",
+            "rejected": "%%%.me.kyc.rejected%%%",
             "uploadImageClick": "%%%.me.kyc.uploadImageClick%%%",
             "discardNoteTitle": "%%%.me.kyc.discardNoteTitle%%%",
             "discardNote": "%%%.me.kyc.discardNote%%%"
@@ -5715,9 +5717,11 @@
         "timeSupport": "%%%.contactSupport.timeSupport%%%"
     },
     "withdrawFees": {
+        "title": "%%%.withdrawFees.title%%%",
         "headers": {
             "coin": "%%%.withdrawFees.headers.coin%%%",
             "minAmount": "%%%.withdrawFees.headers.minAmount%%%",
+            "network": "%%%.withdrawFees.headers.network%%%",
             "fee": "%%%.withdrawFees.headers.fee%%%"
         }
     }

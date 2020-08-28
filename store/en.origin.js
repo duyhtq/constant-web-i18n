@@ -432,6 +432,7 @@
                 "orderNo": "%%%.history.withdrawCrypto.headers.orderNo%%%",
                 "usdAmount": "%%%.history.withdrawCrypto.headers.usdAmount%%%",
                 "currencyAmount": "%%%.history.withdrawCrypto.headers.currencyAmount%%%",
+                "fee": "%%%.history.withdrawCrypto.headers.fee%%%",
                 "address": "%%%.history.withdrawCrypto.headers.address%%%",
                 "date": "%%%.history.withdrawCrypto.headers.date%%%",
                 "status": "%%%.history.withdrawCrypto.headers.status%%%",
@@ -3541,6 +3542,11 @@
                     "confirmSubText": "%%%.home.direct.components.sellInfoInput.confirmSubText%%%",
                     "close": "%%%.home.direct.components.sellInfoInput.close%%%",
                     "agreeSell": "%%%.home.direct.components.sellInfoInput.agreeSell%%%"
+                },
+                "fee": {
+                    "fee": "%%%.home.direct.components.fee.fee%%%",
+                    "wantZeroFeeLabel": "%%%.home.direct.components.fee.wantZeroFeeLabel%%%",
+                    "wantZeroFeeMsg": "%%%.home.direct.components.fee.wantZeroFeeMsg%%%"
                 }
             },
             "goHistory": "%%%.home.direct.goHistory%%%",
@@ -4428,6 +4434,7 @@
             "warning6h": "%%%.app.common.warning6h%%%",
             "timeoutDepositWarning": "%%%.app.common.timeoutDepositWarning%%%",
             "copiedAddress": "%%%.app.common.copiedAddress%%%",
+            "minValues": "%%%.app.common.minValues%%%",
             "maxValues": "%%%.app.common.maxValues%%%",
             "uploading": "%%%.app.common.uploading%%%",
             "fileupload": "%%%.app.common.fileupload%%%"
@@ -5706,5 +5713,12 @@
         "bookText": "%%%.contactSupport.bookText%%%",
         "chatText": "%%%.contactSupport.chatText%%%",
         "timeSupport": "%%%.contactSupport.timeSupport%%%"
+    },
+    "withdrawFees": {
+        "headers": {
+            "coin": "%%%.withdrawFees.headers.coin%%%",
+            "minAmount": "%%%.withdrawFees.headers.minAmount%%%",
+            "fee": "%%%.withdrawFees.headers.fee%%%"
+        }
     }
 }

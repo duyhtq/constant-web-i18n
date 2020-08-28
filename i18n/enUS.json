@@ -432,6 +432,7 @@
                 "orderNo": "#",
                 "usdAmount": "USD Amount",
                 "currencyAmount": "Currency Amount",
+                "fee": "Fee",
                 "address": "Send to Address",
                 "date": "Date",
                 "status": "Status",
@@ -574,7 +575,7 @@
             "requestExecute": "Help",
             "transactionID": "Transaction ID",
             "type": "Type",
-            "fee": "fee",
+            "fee": "Fee",
             "status": "Status",
             "collateralPay": "Pay: ",
             "description": "Description: ",
@@ -1708,83 +1709,83 @@
                 "data": {
                     "0": {
                         "star": "5",
-                        "title": "Great for beginners.",
-                        "desc": "\n      <p>Great for beginners.<p>\n      ",
-                        "date": "Aug 17, 2020",
-                        "auth": "Kimberly Smith",
-                        "link": "https://www.trustpilot.com/reviews/5f39c4fb9cc22a0600cd2338"
+                        "title": "Best investment I have made.",
+                        "desc": "\nI started investing with Constant at the beginning of this year and was skeptical at first as there were some growing pains. I stuck with them though and as processes were continually being improved I am very happy with the service as it is today      ",
+                        "date": "Aug 26, 2020",
+                        "auth": "Joshua Selkirk",
+                        "link": "https://www.trustpilot.com/reviews/5f45f32702e8570814f907bd"
                     },
                     "1": {
                         "star": "5",
-                        "title": "Love it!!!! A new way to make money and invest in others.",
-                        "desc": "\n      <p>I love the ease and flow of the app and the website. It is easy to navigate and easy to use. They give you a lot of information too!!<p>\n      ",
-                        "date": "Aug 16, 2020",
-                        "auth": "Alexander Clarence McIntosh",
-                        "link": "https://www.trustpilot.com/reviews/5f3933219cc22a073c98cfce"
+                        "title": "I like the crypto backed loan.",
+                        "desc": "\nI like the crypto backed loan for higher interests, easy deposits and withdrawals and lot of investing options.\nGreat stuff,      ",
+                        "date": "Aug 26, 2020",
+                        "auth": "Adi",
+                        "link": "https://www.trustpilot.com/reviews/5f459ea902e8570814f8f717"
                     },
                     "2": {
                         "star": "5",
-                        "title": "It's working great so far!!",
-                        "desc": "\n      <p>It's working great so far!!<p>\n      ",
-                        "date": "Aug 16, 2020",
-                        "auth": "James",
-                        "link": "https://www.trustpilot.com/reviews/5f38ea749cc22a0600ccbb72"
+                        "title": "For anyone who what's to learn how to!!",
+                        "desc": "\nFor anyone who what's to learn how to invest but low on funds. Constant will give you the money to help for 30 days. After 30 days what you made is yours. I look forward on building wealth and abundance of Constant      ",
+                        "date": "Aug 25, 2020",
+                        "auth": "Oscar Valdez",
+                        "link": "https://www.trustpilot.com/reviews/5f447dd902e85708c8d80de5"
                     },
                     "3": {
                         "star": "5",
-                        "title": "'Constantly' Excited to Learn, Invest, and Grow.",
-                        "desc": "\n      <p>The basis of this platform is useful and productive; but also, a wonderful use of resources with an economically brilliant business perspective in<p>\n      ",
-                        "date": "Aug 16, 2020",
-                        "auth": "Joseph A. Steadman",
-                        "link": "https://www.trustpilot.com/reviews/5f38c1599cc22a073c989d41"
+                        "title": "I have been on the hunt for an.",
+                        "desc": "\nI have been on the hunt for an investment platform that is totally honest and without prejudice. I have had conflicting experiences with other institutions, but with Constant I can say nothing bad about the institution from day 1      ",
+                        "date": "Aug 24, 2020",
+                        "auth": "Stephen A Triplett Jr",
+                        "link": "https://www.trustpilot.com/reviews/5f42e48f02e8570814f75852"
                     },
                     "4": {
                         "star": "5",
-                        "title": "At first I was scared to do this but…",
-                        "desc": "\n      <p>At first I was scared to do this but slot of my friends told me about it and wow, they're right.. investment are my new thing.<p>\n      ",
-                        "date": "Aug 15, 2020",
-                        "auth": "Jose Torres",
-                        "link": "https://www.trustpilot.com/reviews/5f36c69b9cc22a073c97dcdf"
+                        "title": "Couldn’t be more happy…",
+                        "desc": "\nMy experience with Constant is has been superb. My main goal in investing in their platform was to find a safe & consistent alternative to the “high” yield savings accounts that traditional brick & mortar banks offer      ",
+                        "date": "Aug 24, 2020",
+                        "auth": "Danny Scribbins",
+                        "link": "https://www.trustpilot.com/reviews/5f42cc7302e85708c8d73143"
                     },
                     "5": {
                         "star": "5",
-                        "title": "So far so good",
-                        "desc": "\n      <p>So far so good<p>\n      ",
-                        "date": "Aug 14, 2020",
-                        "auth": "Alex",
-                        "link": "https://www.trustpilot.com/reviews/5f361f649cc22a0600cb663e"
+                        "title": "I love the platform",
+                        "desc": "\nI love the platform, customer service and watching my money dance!!! #GoodJobConstant      ",
+                        "date": "Aug 22, 2020",
+                        "auth": "ShaeBaby",
+                        "link": "https://www.trustpilot.com/reviews/5f4057cb02e85708c8d638f2"
                     },
                     "6": {
                         "star": "5",
-                        "title": "So Far Constant Rocks; Updates Will Follow",
-                        "desc": "\n      <p>I am new to Constant and must admit I was concerned about the legitimacy of Constant. I am happy to say that you can trust Constant<p>\n      ",
-                        "date": "Aug 13, 2020",
-                        "auth": "Jennifer A. Spagnola",
-                        "link": "https://www.trustpilot.com/reviews/5f352a089cc22a0600cadd4a"
+                        "title": "Gold membership in Constant",
+                        "desc": "\nI just approached the $25000 investment threshold getting the Gold Membership as a reward. These memberships (Gold, Platinum, and Diamond) are full of additional benefits as an incentive you get while investing in Constant      ",
+                        "date": "Aug 21, 2020",
+                        "auth": "Isjoel",
+                        "link": "https://www.trustpilot.com/reviews/5f3fdd1202e8570814f60077"
                     },
                     "7": {
                         "star": "5",
-                        "title": "Great App!",
-                        "desc": "\n      <p>Wonderful App. Thanx you so much My Constant!<p>\n      ",
-                        "date": "Aug 13, 2020",
-                        "auth": "Trevor Edwin Lane",
-                        "link": "https://www.trustpilot.com/reviews/5f34c4a41a5a6902684905ea"
+                        "title": "I have been making investments with myconstant. com!",
+                        "desc": "\nI have been making investments with myconstant. com since January 2020 and have not had any problems. The interest rates have been very good      ",
+                        "date": "Aug 21, 2020",
+                        "auth": "Michael Hester",
+                        "link": "https://www.trustpilot.com/reviews/5f3ee0dc02e8570814f57d71"
                     },
                     "8": {
                         "star": "5",
-                        "title": "I've been very satisified with Constant",
-                        "desc": "\n      <p>I've been very satisified with my experience while using Constant. I would recommend them to other individuals looking for a stable<p>\n      ",
-                        "date": "Aug 13, 2020",
-                        "auth": "Christopher Reesman",
-                        "link": "https://www.trustpilot.com/reviews/5f348dac1a5a69026848fc27"
+                        "title": "Love Constant been using it for over 8",
+                        "desc": "\nLove Constant been using it for over 8 months. They make it very easy to get into peer to peer lending or borrowing if you need to borrow. The rates for lending beats any bank while still low for the borrower      ",
+                        "date": "Aug 20, 2020",
+                        "auth": "Larry Pankey",
+                        "link": "https://www.trustpilot.com/reviews/5f3e245102e85708c8d4bc04"
                     },
                     "9": {
                         "star": "5",
-                        "title": "I have been very pleased with my…",
-                        "desc": "\n      <p>I have been very pleased with my experience so far on MyConstant. I have been able to communicate with their online support on multiple<p>\n      ",
-                        "date": "Aug 13, 2020",
-                        "auth": "Derek",
-                        "link": "https://www.trustpilot.com/reviews/5f345f3d1a5a690788a7d510"
+                        "title": "I was cautious at first, but Constant has proved trustworthy…",
+                        "desc": "\nI wasn't sure what to think when I first encountered Constant, so I was very cautious at first and experimented with investing small amounts. I'm happy to say that my experience has been consistently very positive      ",
+                        "date": "Aug 19, 2020",
+                        "auth": "Trevor Casper",
+                        "link": "https://www.trustpilot.com/reviews/5f3cc6c402e85708c8d3e149"
                     }
                 }
             },
@@ -2198,7 +2199,7 @@
                 "monthLoan": "{term}-month loan",
                 "monthsLoan": "{term}-month loan",
                 "dayLoan": "{term}-day loans",
-                "receiveAmountLabel": "Choose USD or crypto you want to receive?",
+                "receiveAmountLabel": "Do you want your loan in USD or cryptocurrency?",
                 "receiveAmountLabelDesc": "We can pay your loan in USD or cryptocurrency. When choosing to receive your loan in cryptocurrency, you’re borrowing USD which we use to buy your chosen cryptocurrency. We search multiple exchanges for the best prices, and you might receive a little more or less cryptocurrency than the amount indicated below depending on the final price paid."
             },
             "what": {
@@ -3269,7 +3270,7 @@
             "timeLimitMinute": "minutes",
             "timeLimit2": "48 hours",
             "validateMaxInput": "Please make sure your balance is sufficient.",
-            "confirmMsg": "      <p>You’re about to convert {constAmount} CONST (USD) to {amount} {name} and then withdraw it to wallet address {address}.</p>      <p>Do you want to proceed?</p>      ",
+            "confirmMsg": "<p>You’re about to convert {constAmount} CONST (USD) to {amount} {name}, fee ${fee} and then withdraw it to wallet address {address}.</p><p>Do you want to proceed?</p>",
             "title": "Transfer",
             "caption": "SEND CONSTANT ANYWHERE",
             "transferType": "Transfer Type",
@@ -3541,6 +3542,11 @@
                     "confirmSubText": "Please check the recipient's bank info again.",
                     "close": "Close",
                     "agreeSell": "Agree to send"
+                },
+                "fee": {
+                    "fee": "Fee: ",
+                    "wantZeroFeeLabel": "Want zero fees?",
+                    "wantZeroFeeMsg": "All purchases of 1000 Constant and over are completely free."
                 }
             },
             "goHistory": "Go to History",
@@ -4428,7 +4434,8 @@
             "warning6h": "Please complete your transfer within 6 hours.",
             "timeoutDepositWarning": "For the sake of security, this order will time-out after 6 hours. If you need a little longer, just re-enter the amount you’d like to invest when you’re ready.",
             "copiedAddress": "Address is copied to clipboard",
-            "maxValues": "Must less than ${max}",
+            "minValues": "Must greater than {min}",
+            "maxValues": "Must less than {max}",
             "uploading": "Uploading...",
             "fileupload": "Upload"
         },
@@ -5029,7 +5036,7 @@
                 "term": "Term (Days)",
                 "cancel": "Cancel",
                 "notEnoughBalance": "Please deposit sufficient collateral to credit your requested amount",
-                "receiveAmountLabel": "Choose USD or crypto you want to receive?",
+                "receiveAmountLabel": "Do you want your loan in USD or cryptocurrency?",
                 "receiveAmountLabelDesc": "We can pay your loan in USD or cryptocurrency. When choosing to receive your loan in cryptocurrency, you’re borrowing USD which we use to buy your chosen cryptocurrency. We search multiple exchanges for the best prices, and you might receive a little more or less cryptocurrency than the amount indicated below depending on the final price paid."
             },
             "createdSuccess": "Thanks! Your borrow order was successful. Your term has started and your funds are in your account and ready to use. To review your loans, please visit your Accounts page.",
@@ -5706,5 +5713,12 @@
         "bookText": "Book a call",
         "chatText": "Log in to Messenger",
         "timeSupport": "We're available <strong>Mon-Fri 9am-5pm</strong> and<br /> <strong>Mon-Thurs 7pm-4am PST</strong>"
+    },
+    "withdrawFees": {
+        "headers": {
+            "coin": "Coin",
+            "minAmount": "Min withdraw amount",
+            "fee": "Withdraw fee"
+        }
     }
 }

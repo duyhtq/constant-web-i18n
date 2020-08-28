@@ -1078,6 +1078,7 @@ export default {
     },
     kyc: {
       verifiedTitle: 'You have verified your ID',
+      verifyingTitle: 'Thank you. We\'re processing your KYC details...',
       lFirstName: 'First Name',
       lMiddleName: 'Middle Name',
       lLastName: 'Last Name',
@@ -1102,12 +1103,12 @@ export default {
       isUSNo: 'No',
       plTaxCountry: 'Select your country',
       plDocType: 'Select your ID type',
-      titleStep1: 'Hi. Tell us more about yourself.',
+      titleStep1: 'Please submit your KYC details',
       isUS: 'Are you a US citizen or resident?',
       lDocType: 'Type of ID',
       lSSN: 'Social Security Number',
       titleExample: 'Before uploading, please make sure that your ID is still valid and crop the image of your ID to make the border as small as possible.',
-      titleExampleClick: 'Click here to see the examples.',
+      titleExampleClick: 'View an example',
       correct: 'Correct',
       incorrect: 'Incorrect',
       lUpload: 'Upload an image of THE {face} of your {type}',
@@ -1121,6 +1122,7 @@ export default {
       descAddrUpload: '<div>        <p>Valid documents: utility bill, phone bill, mortgage statement, tenancy        agreement, bank/credit card statement, insurance letter (motor, home, or        life), or financial statement (pension, endowment).</p>        <p>        <strong style="color:#F5A623;">Document must be dated within the last 90 days.</strong>        </p>        <p>        Please ensure your proof of address is an exact match with the address        provided in your application, including all shorthands and abbreviations.</p>        <p>              Please make sure that the photo is complete and clearly visible, in BMP,         JPG, JPEG, PNG or PDF format, and is smaller than 10MB.</p>      </div>      ',
       btnBack: 'Back',
       reviewing: '        <p>Thanks, it’s nice to meet you.</p>        <p>          We’re looking over your information and will let you know once you’re          good to go.        </p>      ',
+      rejected: '<p>We couldn’t verify your ID automatically, so your KYC documents are in manual review. It might take a little longer to verify you but no more than 7 business days. If you have any questions, please email us on <a href="mailto:hello@myconstant.com">hello@myconstant.com</a>.</p>',
       uploadImageClick: 'Click here to upload your images.',
       discardNoteTitle: 'Your KYC application has not yet been approved due to:',
       discardNote: 'Please make sure all your documents are in order and just click submit again.',
@@ -2273,11 +2275,11 @@ export default {
           benefits: 'Benefits',
           // const: 'Constant',
           exchangeMarginAccount: 'Exchange margin accounts',
-          term: 'Set your own rates and terms',
+          term: 'Set your own terms',
           price: 'Best prices',
-          support: '24-7 customer services',
+          support: '24/7 customer service',
           cryptos: '40+ supported cryptos',
-          withdraw: 'Free withdraws\n',
+          withdraw: 'Free withdrawals',
           description: '(?) We search multiple exchanges to find the best price for your chosen cryptocurrency. <br/>Exchange margin accounts typically only use the price on that exchange, so you can miss out on better deals elsewhere. ',
           priceDesc: 'We search multiple exchanges to find the best price for your chosen cryptocurrency.<br/>Exchange margin accounts typically only use the price on that exchange, so you can miss out on better deals elsewhere.',
           // apr: 'Average cost to borrow (APR)',
@@ -3304,7 +3306,11 @@ export default {
           email: 'To email',
           amount: 'Amount',
           promotionAmount: 'Bonus',
-          serviceTime: '          <h6 class="bold colorLight">Service time guarantee &#10004; </h6>          <p class="colorLight">Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>          ',
+          serviceTime: `
+            <h6 class="bold colorLight">Service time guarantee &#10004; </h6>
+            <p class="colorLight">Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>
+            <a href="/withdraw-fees"><p class="colorLight underline">Please check the withdrawal fees here.</p></a>
+          `,
           serviceTimeTransferViaEmail: '            <p class="colorLight">Your transfer is being processed and should be completed within a few minutes. </p>            <p class="colorLight">If you still can’t see your funds after 10 minutes, please contact customer support.</p>          '
         }
       },
@@ -4310,7 +4316,7 @@ export default {
       head3: 'Outside business hours',
       head4: 'Fee'
     },
-    collateralIssue: '    <p class="title">* About collateral issue, please ping <a href="https://t.me/andy_9210" className="underline bold" target="_blank"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>    ',
+    collateralIssue: '    <p class="title">* About collateral issue, please ping <a href="https://t.me/andy_9210" class="underline" target="_blank"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>    ',
     zelleDepositDelayIssue: `    <p class="title">* Possible reasons for a delay in processing your Zelle deposit</p>    <p> - Missing relevant information to match with your deposit order: Name, User ID, Reference...</p>    <p> - Varying level of processing time by the bank.</p>    <p> - Transfering from an account with the account holder's name different than your registered name on Constant platform.</p>    <p> - Lack of or incorrect deposit order created prior to depositing.</p>    `,
     withdrawFiat: {
       head1: 'Fiat withdrawal',
@@ -4334,9 +4340,13 @@ export default {
       title2: 'BTC, ETH, ERC20, BEP2, TOMO, ZXC: >$10.000',
       title3: 'Others'
     },
-    withdrawCollateralNote: '    <p class="title">* About collateral issue, please ping <a href="https://t.me/andy_9210" className="underline bold" target="_blank"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>    <p class="title">* Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive.</p>    ',
+    withdrawCollateralNote: `
+      <p class="title">* About collateral issue, please ping <a href="https://t.me/andy_9210" class="underline" target="_blank"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>
+      <p class="title">* Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive.</p>
+      <p class="title">* <a href="/withdraw-fees" class="underline"><strong>Please check the withdrawal fees here.</strong></a></p>
+    `,
     unstaking: { head1: 'Unstaking', head2: 'Tokens received in your balance' },
-    unstakingNote: '    <p class="title">* It depends on Incognito chain. Read more <a href="https://incognito.org/t/the-algorithm-of-probability-for-node-selection/836" className="underline bold" target="_blank"><strong>here</strong></a>.</p>    ',
+    unstakingNote: '    <p class="title">* It depends on Incognito chain. Read more <a href="https://incognito.org/t/the-algorithm-of-probability-for-node-selection/836" class="underline bold" target="_blank"><strong>here</strong></a>.</p>    ',
     matchingFee: { head1: 'Matching fee', head2: ' ' },
     earlyRepayment: { head1: 'Early Repayment', head2: 'Fees' },
     lateRepayment: { head1: 'Late Repayment', head2: 'Fees' },
@@ -5680,9 +5690,11 @@ export default {
     timeSupport: 'We\'re available <strong>Mon-Fri 9am-5pm</strong> and<br /> <strong>Mon-Thurs 7pm-4am PST</strong>'
   },
   withdrawFees: {
+    title: 'Withdraw Fees',
     headers: {
       coin: 'Coin',
       minAmount: 'Min withdraw amount',
+      network: 'Network',
       fee: 'Withdraw fee',
     }
   }

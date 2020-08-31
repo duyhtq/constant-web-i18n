@@ -2437,7 +2437,7 @@ export default {
         payOffLoan: 'Repay',
         isolateTooltip: 'Isolate lets you secure your loan with one collateral instead of your multi-collateral balance. <a href="https://blog.myconstant.com/multi-crypto-loans/">What’s multi-collateral?</>',
         extraRate: 'Your total rate will be {rate}% effect from {date}',
-        errorRecallLowCreditRate: 'To recall excess, your collateral rate must be more than {recallRate}%. Your current collateral rate is {creditRate}%',
+        errorRecallLowCreditRate: '<p>To recall excess, your collateral rate must be more than {recallRate}%. Your current collateral rate is {creditRate}%</p><p>The collateral rate is in proportion with LTV and collateral prices. Please check the LTV and price for each token <a href="/withdraw-fees">here</a>.</p>',
         heading: 'Loans',
         bep2Memo: 'Memo',
         bep2MemoRequired: 'Memo is required!',
@@ -3305,11 +3305,11 @@ export default {
           cryptoAddress: 'To address',
           email: 'To email',
           amount: 'Amount',
+          fee: 'Fee',
           promotionAmount: 'Bonus',
           serviceTime: `
             <h6 class="bold colorLight">Service time guarantee &#10004; </h6>
             <p class="colorLight">Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>
-            <a href="/withdraw-fees"><p class="colorLight underline">Please check the withdrawal fees here.</p></a>
           `,
           serviceTimeTransferViaEmail: '            <p class="colorLight">Your transfer is being processed and should be completed within a few minutes. </p>            <p class="colorLight">If you still can’t see your funds after 10 minutes, please contact customer support.</p>          '
         }
@@ -5690,12 +5690,15 @@ export default {
     timeSupport: 'We\'re available <strong>Mon-Fri 9am-5pm</strong> and<br /> <strong>Mon-Thurs 7pm-4am PST</strong>'
   },
   withdrawFees: {
-    title: 'Withdraw Fees',
+    title: 'Withdrawal fees and minimums',
     headers: {
-      coin: 'Coin',
-      minAmount: 'Min withdraw amount',
-      network: 'Network',
-      fee: 'Withdraw fee',
-    }
+      coin: ' ',
+      minAmount: 'Minimum withdrawal',
+      fee: 'Withdrawal fee',
+      price: 'Current price',
+      min30Price: '30-day low',
+      lvt: 'LTV',
+    },
+    desc30DayLow: 'This is the cryptocurrency\'s lowest price over a rolling 30-day period.',
   }
 };

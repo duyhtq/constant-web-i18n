@@ -3361,6 +3361,7 @@
                     "cryptoAddress": "%%%.home.transfer.components.orderInfo.cryptoAddress%%%",
                     "email": "%%%.home.transfer.components.orderInfo.email%%%",
                     "amount": "%%%.home.transfer.components.orderInfo.amount%%%",
+                    "fee": "%%%.home.transfer.components.orderInfo.fee%%%",
                     "promotionAmount": "%%%.home.transfer.components.orderInfo.promotionAmount%%%",
                     "serviceTime": "%%%.home.transfer.components.orderInfo.serviceTime%%%",
                     "serviceTimeTransferViaEmail": "%%%.home.transfer.components.orderInfo.serviceTimeTransferViaEmail%%%"
@@ -5721,8 +5722,11 @@
         "headers": {
             "coin": "%%%.withdrawFees.headers.coin%%%",
             "minAmount": "%%%.withdrawFees.headers.minAmount%%%",
-            "network": "%%%.withdrawFees.headers.network%%%",
-            "fee": "%%%.withdrawFees.headers.fee%%%"
-        }
+            "fee": "%%%.withdrawFees.headers.fee%%%",
+            "price": "%%%.withdrawFees.headers.price%%%",
+            "min30Price": "%%%.withdrawFees.headers.min30Price%%%",
+            "lvt": "%%%.withdrawFees.headers.lvt%%%"
+        },
+        "desc30DayLow": "%%%.withdrawFees.desc30DayLow%%%"
     }
 }

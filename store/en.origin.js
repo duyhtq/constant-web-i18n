@@ -2094,25 +2094,24 @@
                         "desc": "%%%.whyPeopleLoveUs.press.blockchain.data.5.desc%%%"
                     }
                 }
+            },
+            "affiliate": {
+                "title": "%%%.whyPeopleLoveUs.press.affiliate.title%%%",
+                "desc": "%%%.whyPeopleLoveUs.press.affiliate.desc%%%"
             }
         },
         "partners": {
             "custody": {
                 "title": "%%%.whyPeopleLoveUs.partners.custody.title%%%",
                 "data": {
-                    "0": {
-                        "desc": "%%%.whyPeopleLoveUs.partners.custody.data.0.desc%%%"
-                    }
-                }
-            },
-            "settlement": {
-                "title": "%%%.whyPeopleLoveUs.partners.settlement.title%%%",
-                "data": {
+                    "primetrust": {
+                        "desc": "%%%.whyPeopleLoveUs.partners.custody.data.primetrust.desc%%%"
+                    },
                     "cb": {
-                        "desc": "%%%.whyPeopleLoveUs.partners.settlement.data.cb.desc%%%"
+                        "desc": "%%%.whyPeopleLoveUs.partners.custody.data.cb.desc%%%"
                     },
                     "qc": {
-                        "desc": "%%%.whyPeopleLoveUs.partners.settlement.data.qc.desc%%%"
+                        "desc": "%%%.whyPeopleLoveUs.partners.custody.data.qc.desc%%%"
                     }
                 }
             },

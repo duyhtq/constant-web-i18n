@@ -2060,20 +2060,19 @@ export default {
             desc: 'Chắc hẳn sẽ có những lúc chúng ta rơi vào hoàn cảnh khi đang HODL một đồng coin nào đó, nhưng lại thấy 1 cơ hội khác trong khi quỹ vốn thì đã hết. Constant sẽ giúp anh em huy động được một lượng cash (tiền mặt) nhất định để vào được kèo mới nhưng không phải cash out (bán) đồng coin đang HODL.'
           }
         }
-      }
+      },
+      affiliate: {
+        title: 'Affiliate',
+        desc: 'Our affiliates lead passionate communities in finance and investing. We’re proud to add our voice to their platforms and help their audiences do more with their money.',
+      },
     },
     partners: {
       custody: {
-        title: 'Custody',
+        title: 'Custody & Settlement',
         data: {
-          '0': {
+          primetrust: {
             desc: '            <p>Prime Trust is the independent, accredited custodian of our USD reserve. When you deposit, Prime Trust stores your money across multiple bank accounts <strong>insured to a total of $130,000,000.</strong></p>            '
-          }
-        }
-      },
-      settlement: {
-        title: 'Settlement',
-        data: {
+          },
           cb: {
             desc: '            <p>Checkbook helps settle withdrawals via ACH and digital cheque, making transfers cheaper for US residents.</p>            '
           },

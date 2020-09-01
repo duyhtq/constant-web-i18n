@@ -5431,9 +5431,9 @@
         "request": "Request",
         "submitForm": {
             "errNeedKyc": "You must pass KYC before you can request this badge. <a href=\"/me/profile\">Submit your KYC documents or approval.</>",
-            "title": "Submit the link go to your review",
+            "title": "Submit the link to your review",
             "subtitle": "Thanks for requesting the {badgeName} badge. Please enter the link that supports your request below. We'll get back to you within two business days with a decision.",
-            "subtitleTrustpilot": "Thanks for requesting the Supporter badge. After reviewing us on Trustpilot, please click on the title of your review to get your link. We'll get back to you within two business days with a decision.",
+            "subtitleTrustpilot": "Thanks for requesting the Supporter badge. After reviewing us on Trustpilot, copy and paste the link to your review into the box below. We'll approve your badge within 2 business days.",
             "submit": "Submit",
             "cancel": "Cancel",
             "success": "Submit proof successfully",

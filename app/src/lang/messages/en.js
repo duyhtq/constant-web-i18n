@@ -4406,7 +4406,7 @@ export default {
       whatDesc3: '<p>Withdraw as often as you like for free. Please note that Constant cannot be liable for charges from your own bank.</p>'
     },
     info: {
-      content: '      <p>Withdraw to your local bank.</p>      <h2>Withdraw funds to your bank account of choice.</h2>      <p />      <p>Simply let us know where to send your USD funds to. If you’ve got a different local currency, it’s converted at the real-time market rate. Funds should reach you within 2 business days.</p>      <p><strong>Prefer to withdraw stablecoins?</strong> Do so <a href="/transfer-crypto" class="underline">here.</a></p>      '
+      content: '      <p>Withdraw to your local bank.</p>      <h2>Withdraw funds to your bank account of choice.</h2>      <p />      <p>Send your money via ACH bank transfer or Zelle Pay (US only). If your account doesn’t support USD, your bank will convert your funds to local currency at the current market rate. All withdrawals are free and unlimited.</p      '
     }
   },
   exchangeInputSellForm: {
@@ -4428,7 +4428,7 @@ export default {
   },
   transferCrypto: {
     info: {
-      content: '      <h2>Withdraw to your crypto wallet.</h2>      <p/>      <p>Withdraw our native stablecoin (CONST) to a decentralized ETH, EOS or TOMO address that supports CONST. E.g. metamask, mew, trust, tomo wallet - not exchange wallets like Coinbase or Binance. Or, withdraw USDT, TUSD or USDC to any compatible wallet. Just enter the amount, and select where you want it to go.</p>      '
+      content: '<p>Fast, easy crypto transfers.</p><h2>Withdraw cryptos and stablecoins to your wallet</h2>      <p/>      <p>Send cryptocurrencies and stablecoins to any compatible wallet. Simply select the amount, crypto, and enter the wallet address. Click Send and your funds will be on their way to you.</p>'
     }
   },
   app: {

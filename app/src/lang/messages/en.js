@@ -2545,7 +2545,7 @@ export default {
         interestedRate: 'Interest rate:',
         interestedRateValue: '{percent} APR',
         matchingFee: 'Matching fee:',
-        matchingFeeValue: '1% of loan amount',
+        matchingFeeValue: '{matchingFee}% of loan amount',
         repaymentField: '            <div class=row">',
         minuteWindow: 'Please complete your transfer within 60 minutes.',
         minuteWindowDescription: 'For the sake of security, this session will time-out after 60 minutes. If you need a little longer, just re-enter the amount you would like to borrow <a href="/borrow" >here</a>.',

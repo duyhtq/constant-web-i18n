@@ -4,9 +4,10 @@ export default {
       balance: 'Balance',
       star: 'Star',
       shareAndEarn: 'Share & Earn',
-      deposit: 'Deposit',
+      depositFiat: 'Deposit USD',
+      depositCrypto: 'Deposit crypto',
       transfer: 'Transfer',
-      withdrawFiat: 'Withdraw fiat',
+      withdrawFiat: 'Withdraw USD',
       withdrawCrypto: 'Withdraw crypto'
     },
     accountActivities: 'Account Activity',
@@ -300,6 +301,8 @@ export default {
     todayRateValues: '{rate}% APY',
     howMuchDoYouWantToInvest: 'Which cryptocurrency would you like to invest?',
     howMuchDoYouWantToDeposit: 'How much do you want to grow?',
+    howMuchDoYouWantToDepositFiat: 'How much do you want to deposit?',
+    howMuchDoYouWantToDepositCrypto: 'How much do you want to deposit?',
     minDepositRequired: 'Please enter an amount larger than {amount} {currency}',
     minAmountRequired: 'All investments must be at least {amount} {currency}',
     minDepositAmount: 'Minimum investment amount: {amount}',
@@ -408,7 +411,7 @@ export default {
   me: {
     history: {
       source: 'Source',
-      local: 'location',
+      local: 'Location',
       ip: 'IP',
       invalidDate: 'You can\'t export over six months of your account activity.',
       noData: 'No data available to download of times selected',
@@ -4016,13 +4019,21 @@ export default {
       whatDesc3: '<p>To any local bank account or wallet address, as often as you like.</p>'
     },
     howItWorks: {
-      title1: 'Deposit your funds',
-      desc1: 'Create your deposit order and then transfer your funds in USD or a supported stablecoin. If you send a different fiat currency, we’ll convert it for you. ',
-      title2: 'Earn {interest}% APY',
-      desc2: 'Your funds supply liquidity to decentralized exchanges and lending pools. In return, you earn {interest}% APY, compounded and paid into your account every second.',
-      title3: 'Watch your money grow',
-      desc3: 'Your balance compounds and increases every second. So no downtime, no wasted earnings.',
-      title: 'How it works'
+      title: 'How it works',
+      data: {
+        0: {
+          title: 'Deposit your funds',
+          desc: 'Create your deposit order and then transfer your funds in USD or a supported stablecoin. If you send a different fiat currency, we’ll convert it for you.',
+        },
+        1: {
+          title: 'Earn {interest}% APY',
+          desc: 'Your funds supply liquidity to decentralized exchanges and lending pools. In return, you earn {interest}% APY, compounded and paid into your account every second.',
+        },
+        2: {
+          title: 'Watch your money grow',
+          desc: 'Your balance compounds and increases every second. So no downtime, no wasted earnings.',
+        }
+      },
     },
     contentHtml: '      <p>Do more with your money</p>      <h1>Enjoy 50x better interest<br/>than a savings account<sup>*</sup>.</h1>      <p/>      <p>Earn {interest}% APY through decentralized lending and liquidity pools. You deposit, we lend on your behalf, and you keep the interest. Unlimited free withdrawals and no fees. Grow your money without locking it in.</p>      <p><sup>*</sup>Comparison based on data from <a href=https://www.valuepenguin.com/banking/average-bank-interest-rates">ValuePenguin</a>.</p>    ',
     learnMore: 'Learn more here',
@@ -4112,27 +4123,70 @@ export default {
         answer: 'Flex deposits earn interest through an API with Compound Finance, another lending platform. Compound sets interest rates according to supply and demand, and Constant will make a slim profit on any difference between the Flex and Compound rates.'
       },
     },
-    faqs2: {
+  },
+  depositFiat: {
+    contentHtml: `
+        <h1>Top up your USD account.</h1>
+        <div class="h1">Send via ACH, wire, or Zelle.</div>
+        <div class="h1">Insure or invest your balance.</div>
+        <p/>
+        <p>Deposit USD into your Constant account through our licensed custodian, Prime Trust. Earn an automatic {interest}% APY on your available balance or store it in an insured escrow. Link up to two US bank accounts for ACH transfers through Plaid. No fees.</p>`,
+    learnMore: 'Learn more here',
+    intro: {
+      desc: {
+        '1': 'Multiple markets',
+        '2': 'Compounded & paid every second',
+        '3': 'Unlimited free withdrawals'
+      }
+    },
+    howItWorks: {
+      title: 'How it works',
+      data: {
+        0: {
+          desc: 'Create your deposit order',
+        },
+        1: {
+          desc: 'Send your funds via wire, Zelle, or ACH through a linked US bank account.',
+        },
+        2: {
+          desc: 'You balance will update according to our service times.',
+        },
+        3: {
+          desc: 'Earn {interest}% APY or escrow your balance with Prime Trust.',
+        },
+        4: {
+          desc: 'Invest in a fixed-term loan or withdraw at anytime for free.',
+        },
+      },
+    },
+    faqs: {
       0: {
         question: 'How do I deposit?',
         answer: `
-          <p>To deposit into your Constant account, click <strong>Withdraw to fiat</strong> from <a href="/accounts" class="underline">your Accounts page</a> or visit <a href="/flex" class="underline">our Flex page</a>. (You’ll end up on the Flex page either way as it also serves as our deposit gateway.)</p>
-          <p>Choose how much you want to deposit and then click <strong>Start growing</strong>.</p>
+          <p>To deposit into your Constant account, click <strong>Make a deposit</strong> from <a href="/accounts" class="underline">your Accounts page</a> or visit the <a href="/deposit-fiat" class="underline">deposit page</a> directly.</p>
+          <p>Choose how much you want to deposit and then click <strong>Deposit now</strong>.</p>
           <p>On the next screen, you can choose from three deposit methods. We support Zelle for amounts under $2,000, ACH transfers for linked US accounts up to $5,000, and wire transfers which are unlimited.</p>
-          <p>Choose the appropriate deposit method and then follow the on-screen instructions.</p>
+          <p>Choose the appropriate deposit method and then follow the on-screen instructions. If you don’t have a linked US bank account, you can set one up using the on-screen link.</p>
           <p>Once we receive your deposit, which may take 1-5 business days depending on the method you choose, your balance will update within 1 business day.</p>
-          <p>Please read our <a href="/getPrices" class="underline">standard service times</a> for more information.</p>
+          <p>Please read our <a href="/getPrices" class="underline">service times</a> for more information.</p>
         `
       },
       1: {
+        question: 'How do I insure my deposits?',
+        answer: `
+          <p>Your balance earns 4% APY by default through <a href="/flex" class="underline">Flex</a>, our anytime-withdrawal investment account. If you’d prefer not to use Flex, you can disable it from <a href="/accounts" class="underline">your Accounts page</a> (under Accounts detail).</p>
+          <p>Disabling Flex means your money will remain with Prime Trust, our accredited US custodian, who will store your funds across multiple insured bank accounts to an aggregate limit of $130,000,000. You will be able to withdraw uninvested funds at anytime for free, but you won’t earn any interest on your balance.</p>
+        `
+      },
+      2: {
         question: 'What deposit methods do you accept?',
         answer: `
-          <p>We currently support Zelle for amounts under $2,000, ACH transfers for <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/" class="underline" target="_blank">linked US accounts</a> up to $5,000, and wire transfers which are unlimited.</p>
+          <p>We currently support Zelle for amounts under $2,000, ACH transfers for <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/" class="underline" target="_blank">linked US accounts</a> up to $5,000 per transaction, and wire transfers which are unlimited.</p>
           <p>In the interest of security, we’re in the process of moving all cash management to our custodial partner, Prime Trust. This means in the future we won’t need to handle your funds at all.</p>
           <p>However, we’re somewhat limited by the deposit methods Prime Trust accept, and it’s likely Zelle will be phased out in the next few months.</p>
         `
       },
-      2: {
+      3: {
         question: 'How long do deposits take?',
         answer: `
           <p>This depends on the deposit method you choose.</p>
@@ -4145,26 +4199,26 @@ export default {
           <p>Your bank might delay these times if they need a manual review or there’s missing information. For a full breakdown of timings, please <a href="/getPrices" class="underline">check out our service times</a>.</p>
         `
       },
-      3: {
+      4: {
         question: 'Are there any limits on deposits?',
         answer: `
           <p>Yes. We currently support Zelle for amounts under $2,000 and ACH transfers for <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/" class="underline" target="_blank">linked US accounts</a> up to $5,000. Wire transfers are unlimited.</p>
         `
       },
-      4: {
+      5: {
         question: 'What’s the difference between a wire and an ACH bank transfer?',
         answer: `
           <p>A wire is typically faster and more expensive than an ACH. Wires are settled between banks and are considered “cleared” money and can’t be reversed.</p>
-          <p>ACH transfers, on the other hand, are settled in batches by an automated clearing system. This makes them much cheaper than wires.</p>
+          <p>ACH transfers, on the other hand, are settled in batches by an automated clearing system. This makes them much cheaper than wires, but mistakes result in reversals, and repeated reversals will incur fees.</p>
         `
       },
-      5: {
+      6: {
         question: 'How do I link my bank account for ACH transfers?',
         answer: `
           <p>Please check out <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/" class="underline" target="_blank">our guide</a> for step-by-step instructions.</p>
         `
       },
-      6: {
+      7: {
         question: 'What is an ACH reversal and how can I avoid them?',
         answer: `
           <p>ACH reversals happen when the transfer gets canceled. Usually because of incorrect information, duplicate transfers, insufficient funds, or the bank account doesn’t support ACH transfers. To avoid ACH reversals, please ensure you:</p>
@@ -4178,23 +4232,23 @@ export default {
           <p>If your account incurs multiple ACH reversals you’ll lose your Instant Deposit benefits and might be charged a fee of up to $20. Please read <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/" class="underline" target="_blank">our guide</a> carefully to learn how to correctly link a US bank account for ACH transfers.</p>
         `
       },
-      7: {
+      8: {
         question: 'Why do you limit Zelle deposits?',
         answer: `
           <p>Our custodial partner, Prime Trust, doesn’t currently support Zelle transfers. Until now, we’ve accepted these deposits and then transferred them to Prime Trust on your behalf. However, this is both inefficient and means you have to entrust us with your money.</p>
           <p>Our aim has always to be a non-custodial platform, and as a result, we’re phasing out Zelle so Prime Trust manages all cashflow on our behalf. You have the option of Zelle deposits during this transitionary period as we know it’s convenient for you, but limited to under $2,000 per transaction.</p>
         `
       },
-      8: {
+      9: {
         question: 'Why can’t I send an ACH from outside the US?',
         answer: `
           <p>Our custodial partner, Prime Trust, accepts ACH through Plaid, an ACH processor. At the moment, you can only link US bank accounts through Plaid. If you bank outside of the US, please send a wire instead.</p>
         `
       },
-      9: {
+      10: {
         question: 'What are Instant Deposits?',
         answer: `
-          <p>Instant Deposits is a program we developed to pay you interest on ACH deposits while they’re being processed. Since ACH transfers can take up to 5 business days, that’s quite a long time for your money to stay idle. With Instant Deposits, you earn 4% APY from the moment you create the ACH transfer.</p>
+          <p>Instant Deposits is a program we developed to pay you interest on ACH deposits while they’re being processed. ACH transfers can take up to 5 business days and your funds wouldn’t normally earn interest during this time. But with Instant Deposits, you earn 4% APY from the moment you create the ACH transfer.</p>
           <p>Until your ACH has finished processing, you won’t be able to withdraw or invest your deposit in a crypto-backed or Loan Originator loan. Instant Deposits transaction limits are calculated using the formula below:</p>
           <p class="font-italic">Your Instant Deposit Limit = Your current balance + $1,000 (max $25,000 per transaction)</p>
           <p>For example, if your balance is $5,000, your Instant Deposit limit is $6,000. This means you’ll earn 4% APY on a transaction of up to $6,000 while your ACH is processed.</p>
@@ -4203,49 +4257,32 @@ export default {
     }
   },
   depositCrypto: {
-    contentHtml: '      <p>Secured crypto lending</p>      <h1>Earn {interest}% APY on BTC, ETH, and BNB.<br/>Compounded and paid every second.</h1>      <p/>      <p>Invest your idle cryptocurrencies for a return of {interest}% APY. Withdraw anytime. No fees. No lock-ups. Compounded every second.</p>    ',
-    learnMore: 'Learn more here',
-    intro: {
-      desc: {
-        '1': 'Zero fees',
-        '2': 'Interest compounded and paid every second',
-        '3': 'Unlimited free withdrawals'
-      }
-    },
-    whyInvest: {
-      '0': {
-        caption: 'Immediate growth',
-        desc: '<p>Watch your crypto grow, second by second, from the moment you invest.</p>'
-      },
-      '1': {
-        caption: 'Earn on idle assets',
-        desc: '<p>Keep earning between trades with a generous {interest}% APY on your idle cryptos.</p>'
-      },
-      '2': {
-        caption: 'No fees',
-        desc: '<p>We don’t charge you a penny to invest, withdraw, or deposit (though you might pay network fees to send your crypto).</p>'
-      },
-      '3': {
-        caption: 'Withdraw anytime',
-        desc: '<p>Withdraw your cryptocurrency whenever you need it. No fees and no limits.</p>'
-      },
-      title: 'Why invest with us?'
-    },
+    contentHtml: `
+      <h1>Deposit 40+ supported cryptos.<br/>Earn 4% APY on your idle stablecoins.<br/>Borrow instantly against your portfolio.</h1>
+      <p/>
+      <p>Deposit cryptocurrencies and stablecoins to your Constant wallet. Earn an automatic 4% APY on all USD-backed stablecoin deposits. Get an instant multi-collateral credit line from just 6% APR. Top-up collateral automatically when markets fall.</p>
+      <p><a href="https://blog.myconstant.com/how-we-protect-your-money-and-collateral/" class="underline">How we protect your assets</a></p>
+    `,
     howItWorks: {
-      '0': {
-        caption: 'Deposit your crypto',
-        desc: '<p>Send your crypto to our lending pool and we’ll redistribute it among our trusted exchange partners, including the Incognito pDEX.</p>'
+      title: 'How it works',
+      data: {
+        0: {
+          desc: 'Create your deposit order',
+        },
+        1: {
+          desc: 'Copy our wallet address or scan the QR code using your wallet app.',
+        },
+        2: {
+          desc: 'Your balance will update according to our service times.',
+        },
+        3: {
+          desc: 'Borrow against your portfolio or top-up an existing loan.',
+        },
+        4: {
+          desc: 'Withdraw anytime to your wallet of choice.',
+        },
       },
-      '1': {
-        caption: 'Earn {interest}% APY',
-        desc: '<p>Your crypto provides liquidity to exchange and swapping partners and you earn a cut of their trading fees – a generous {interest}% APY.</p>'
-      },
-      '2': {
-        caption: 'Watch your crypto grow',
-        desc: '<p>Interest is compounded and paid every second, giving you immediate returns. When you’re ready, withdraw again to a wallet of your choice absolutely free.</p>'
-      },
-      title: 'How it works'
-    }
+    },
   },
   ourStory: {
     title: 'Our Story',
@@ -5094,6 +5131,7 @@ export default {
       violateBonusPolicy: 'Your bonus can\'t be withdrawn for 30 days. This gives you time to try our platform and make some money through our Flex account.',
       reserveNotEnough: "Sorry, we can't create your order at the moment. Please contact us at hello@myconstant.com and we'll help fix this issue for you.",
       already_bought_void_term_deposit: 'You’ve already joined the matching queue for this order. Our system will randomly select a buyer to fulfil this order in priority of membership level. If you’re selected, your investment will start automatically and we’ll notify you by email.',
+      undefined: 'Oops! Something went wrong, please try again',
     },
     expiredSession: 'Your session has expired. Please log in again.',
     withdrawLessThanOrEqual: 'The maximum withdrawal amount is {max}. Please try other available methods.',
@@ -5113,6 +5151,8 @@ export default {
     btnTransfer: 'Transfer',
     btnWithdrawFiat: '<div class="textLeft"><small>Withdraw to</small><div>Fiat</div></div>',
     btnWithdrawCrypto: '<div class="textLeft"><small>Withdraw to</small><div>Crypto</div></div>',
+    btnDepositFiat: '<div class="textLeft"><small>Deposit</small><div>Fiat</div></div>',
+    btnDepositCrypto: '<div class="textLeft"><small>Deposit</small><div>Crypto</div></div>',
     greeting: {
       hi: 'Hi you',
       title: 'Good',

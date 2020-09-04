@@ -3221,7 +3221,7 @@ export default {
     },
     transferCrypto: {
       address: '{currency} wallet address',
-      maxBalance: 'Max transfer',
+      maxBalance: 'Your balance',
       transferBtn: 'Send',
       timeLimit: 'Your money will arrive within ',
       timeLimitMinute: 'minutes',
@@ -5149,9 +5149,9 @@ export default {
     btnSignIn: 'Sign in',
     btnReferral: 'Share & Earn',
     btnTransfer: 'Transfer',
-    btnWithdrawFiat: '<div class="textLeft"><small>Withdraw to</small><div>Fiat</div></div>',
-    btnWithdrawCrypto: '<div class="textLeft"><small>Withdraw to</small><div>Crypto</div></div>',
-    btnDepositFiat: '<div class="textLeft"><small>Deposit</small><div>Fiat</div></div>',
+    btnWithdrawFiat: '<div class="textLeft"><small>Withdraw</small><div>USD</div></div>',
+    btnWithdrawCrypto: '<div class="textLeft"><small>Withdraw</small><div>Crypto</div></div>',
+    btnDepositFiat: '<div class="textLeft"><small>Deposit</small><div>USD</div></div>',
     btnDepositCrypto: '<div class="textLeft"><small>Deposit</small><div>Crypto</div></div>',
     greeting: {
       hi: 'Hi you',

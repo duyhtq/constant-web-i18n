@@ -1869,7 +1869,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.home.constantLoan.transaction.interestedRate%%%,"Interest rate:"
 %%%.home.constantLoan.transaction.interestedRateValue%%%,"{percent} APR"
 %%%.home.constantLoan.transaction.matchingFee%%%,"Matching fee:"
-%%%.home.constantLoan.transaction.matchingFeeValue%%%,"1% of loan amount"
+%%%.home.constantLoan.transaction.matchingFeeValue%%%,"{matchingFee}% of loan amount"
 %%%.home.constantLoan.transaction.repaymentField%%%,"            <div class=row"">"
 %%%.home.constantLoan.transaction.minuteWindow%%%,"Please complete your transfer within 60 minutes."
 %%%.home.constantLoan.transaction.minuteWindowDescription%%%,"For the sake of security, this session will time-out after 60 minutes. If you need a little longer, just re-enter the amount you would like to borrow <a href=""/borrow"" >here</a>."

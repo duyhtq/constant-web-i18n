@@ -4,7 +4,8 @@
             "balance": "%%%.user.userLogin.balance%%%",
             "star": "%%%.user.userLogin.star%%%",
             "shareAndEarn": "%%%.user.userLogin.shareAndEarn%%%",
-            "deposit": "%%%.user.userLogin.deposit%%%",
+            "depositFiat": "%%%.user.userLogin.depositFiat%%%",
+            "depositCrypto": "%%%.user.userLogin.depositCrypto%%%",
             "transfer": "%%%.user.userLogin.transfer%%%",
             "withdrawFiat": "%%%.user.userLogin.withdrawFiat%%%",
             "withdrawCrypto": "%%%.user.userLogin.withdrawCrypto%%%"
@@ -317,6 +318,8 @@
         "todayRateValues": "%%%.exchangeInputDepositForm.todayRateValues%%%",
         "howMuchDoYouWantToInvest": "%%%.exchangeInputDepositForm.howMuchDoYouWantToInvest%%%",
         "howMuchDoYouWantToDeposit": "%%%.exchangeInputDepositForm.howMuchDoYouWantToDeposit%%%",
+        "howMuchDoYouWantToDepositFiat": "%%%.exchangeInputDepositForm.howMuchDoYouWantToDepositFiat%%%",
+        "howMuchDoYouWantToDepositCrypto": "%%%.exchangeInputDepositForm.howMuchDoYouWantToDepositCrypto%%%",
         "minDepositRequired": "%%%.exchangeInputDepositForm.minDepositRequired%%%",
         "minAmountRequired": "%%%.exchangeInputDepositForm.minAmountRequired%%%",
         "minDepositAmount": "%%%.exchangeInputDepositForm.minDepositAmount%%%",
@@ -4071,13 +4074,21 @@
             "whatDesc3": "%%%.deposit.what.whatDesc3%%%"
         },
         "howItWorks": {
-            "title1": "%%%.deposit.howItWorks.title1%%%",
-            "desc1": "%%%.deposit.howItWorks.desc1%%%",
-            "title2": "%%%.deposit.howItWorks.title2%%%",
-            "desc2": "%%%.deposit.howItWorks.desc2%%%",
-            "title3": "%%%.deposit.howItWorks.title3%%%",
-            "desc3": "%%%.deposit.howItWorks.desc3%%%",
-            "title": "%%%.deposit.howItWorks.title%%%"
+            "title": "%%%.deposit.howItWorks.title%%%",
+            "data": {
+                "0": {
+                    "title": "%%%.deposit.howItWorks.data.0.title%%%",
+                    "desc": "%%%.deposit.howItWorks.data.0.desc%%%"
+                },
+                "1": {
+                    "title": "%%%.deposit.howItWorks.data.1.title%%%",
+                    "desc": "%%%.deposit.howItWorks.data.1.desc%%%"
+                },
+                "2": {
+                    "title": "%%%.deposit.howItWorks.data.2.title%%%",
+                    "desc": "%%%.deposit.howItWorks.data.2.desc%%%"
+                }
+            }
         },
         "contentHtml": "%%%.deposit.contentHtml%%%",
         "learnMore": "%%%.deposit.learnMore%%%",
@@ -4174,93 +4185,106 @@
                 "question": "%%%.deposit.faqs.11.question%%%",
                 "answer": "%%%.deposit.faqs.11.answer%%%"
             }
+        }
+    },
+    "depositFiat": {
+        "contentHtml": "%%%.depositFiat.contentHtml%%%",
+        "learnMore": "%%%.depositFiat.learnMore%%%",
+        "intro": {
+            "desc": {
+                "1": "%%%.depositFiat.intro.desc.1%%%",
+                "2": "%%%.depositFiat.intro.desc.2%%%",
+                "3": "%%%.depositFiat.intro.desc.3%%%"
+            }
         },
-        "faqs2": {
+        "howItWorks": {
+            "title": "%%%.depositFiat.howItWorks.title%%%",
+            "data": {
+                "0": {
+                    "desc": "%%%.depositFiat.howItWorks.data.0.desc%%%"
+                },
+                "1": {
+                    "desc": "%%%.depositFiat.howItWorks.data.1.desc%%%"
+                },
+                "2": {
+                    "desc": "%%%.depositFiat.howItWorks.data.2.desc%%%"
+                },
+                "3": {
+                    "desc": "%%%.depositFiat.howItWorks.data.3.desc%%%"
+                },
+                "4": {
+                    "desc": "%%%.depositFiat.howItWorks.data.4.desc%%%"
+                }
+            }
+        },
+        "faqs": {
             "0": {
-                "question": "%%%.deposit.faqs2.0.question%%%",
-                "answer": "%%%.deposit.faqs2.0.answer%%%"
+                "question": "%%%.depositFiat.faqs.0.question%%%",
+                "answer": "%%%.depositFiat.faqs.0.answer%%%"
             },
             "1": {
-                "question": "%%%.deposit.faqs2.1.question%%%",
-                "answer": "%%%.deposit.faqs2.1.answer%%%"
+                "question": "%%%.depositFiat.faqs.1.question%%%",
+                "answer": "%%%.depositFiat.faqs.1.answer%%%"
             },
             "2": {
-                "question": "%%%.deposit.faqs2.2.question%%%",
-                "answer": "%%%.deposit.faqs2.2.answer%%%"
+                "question": "%%%.depositFiat.faqs.2.question%%%",
+                "answer": "%%%.depositFiat.faqs.2.answer%%%"
             },
             "3": {
-                "question": "%%%.deposit.faqs2.3.question%%%",
-                "answer": "%%%.deposit.faqs2.3.answer%%%"
+                "question": "%%%.depositFiat.faqs.3.question%%%",
+                "answer": "%%%.depositFiat.faqs.3.answer%%%"
             },
             "4": {
-                "question": "%%%.deposit.faqs2.4.question%%%",
-                "answer": "%%%.deposit.faqs2.4.answer%%%"
+                "question": "%%%.depositFiat.faqs.4.question%%%",
+                "answer": "%%%.depositFiat.faqs.4.answer%%%"
             },
             "5": {
-                "question": "%%%.deposit.faqs2.5.question%%%",
-                "answer": "%%%.deposit.faqs2.5.answer%%%"
+                "question": "%%%.depositFiat.faqs.5.question%%%",
+                "answer": "%%%.depositFiat.faqs.5.answer%%%"
             },
             "6": {
-                "question": "%%%.deposit.faqs2.6.question%%%",
-                "answer": "%%%.deposit.faqs2.6.answer%%%"
+                "question": "%%%.depositFiat.faqs.6.question%%%",
+                "answer": "%%%.depositFiat.faqs.6.answer%%%"
             },
             "7": {
-                "question": "%%%.deposit.faqs2.7.question%%%",
-                "answer": "%%%.deposit.faqs2.7.answer%%%"
+                "question": "%%%.depositFiat.faqs.7.question%%%",
+                "answer": "%%%.depositFiat.faqs.7.answer%%%"
             },
             "8": {
-                "question": "%%%.deposit.faqs2.8.question%%%",
-                "answer": "%%%.deposit.faqs2.8.answer%%%"
+                "question": "%%%.depositFiat.faqs.8.question%%%",
+                "answer": "%%%.depositFiat.faqs.8.answer%%%"
             },
             "9": {
-                "question": "%%%.deposit.faqs2.9.question%%%",
-                "answer": "%%%.deposit.faqs2.9.answer%%%"
+                "question": "%%%.depositFiat.faqs.9.question%%%",
+                "answer": "%%%.depositFiat.faqs.9.answer%%%"
+            },
+            "10": {
+                "question": "%%%.depositFiat.faqs.10.question%%%",
+                "answer": "%%%.depositFiat.faqs.10.answer%%%"
             }
         }
     },
     "depositCrypto": {
         "contentHtml": "%%%.depositCrypto.contentHtml%%%",
-        "learnMore": "%%%.depositCrypto.learnMore%%%",
-        "intro": {
-            "desc": {
-                "1": "%%%.depositCrypto.intro.desc.1%%%",
-                "2": "%%%.depositCrypto.intro.desc.2%%%",
-                "3": "%%%.depositCrypto.intro.desc.3%%%"
-            }
-        },
-        "whyInvest": {
-            "0": {
-                "caption": "%%%.depositCrypto.whyInvest.0.caption%%%",
-                "desc": "%%%.depositCrypto.whyInvest.0.desc%%%"
-            },
-            "1": {
-                "caption": "%%%.depositCrypto.whyInvest.1.caption%%%",
-                "desc": "%%%.depositCrypto.whyInvest.1.desc%%%"
-            },
-            "2": {
-                "caption": "%%%.depositCrypto.whyInvest.2.caption%%%",
-                "desc": "%%%.depositCrypto.whyInvest.2.desc%%%"
-            },
-            "3": {
-                "caption": "%%%.depositCrypto.whyInvest.3.caption%%%",
-                "desc": "%%%.depositCrypto.whyInvest.3.desc%%%"
-            },
-            "title": "%%%.depositCrypto.whyInvest.title%%%"
-        },
         "howItWorks": {
-            "0": {
-                "caption": "%%%.depositCrypto.howItWorks.0.caption%%%",
-                "desc": "%%%.depositCrypto.howItWorks.0.desc%%%"
-            },
-            "1": {
-                "caption": "%%%.depositCrypto.howItWorks.1.caption%%%",
-                "desc": "%%%.depositCrypto.howItWorks.1.desc%%%"
-            },
-            "2": {
-                "caption": "%%%.depositCrypto.howItWorks.2.caption%%%",
-                "desc": "%%%.depositCrypto.howItWorks.2.desc%%%"
-            },
-            "title": "%%%.depositCrypto.howItWorks.title%%%"
+            "title": "%%%.depositCrypto.howItWorks.title%%%",
+            "data": {
+                "0": {
+                    "desc": "%%%.depositCrypto.howItWorks.data.0.desc%%%"
+                },
+                "1": {
+                    "desc": "%%%.depositCrypto.howItWorks.data.1.desc%%%"
+                },
+                "2": {
+                    "desc": "%%%.depositCrypto.howItWorks.data.2.desc%%%"
+                },
+                "3": {
+                    "desc": "%%%.depositCrypto.howItWorks.data.3.desc%%%"
+                },
+                "4": {
+                    "desc": "%%%.depositCrypto.howItWorks.data.4.desc%%%"
+                }
+            }
         }
     },
     "ourStory": {
@@ -5132,7 +5156,8 @@
             "not_enough_balance": "%%%.error.serverCode.not_enough_balance%%%",
             "violateBonusPolicy": "%%%.error.serverCode.violateBonusPolicy%%%",
             "reserveNotEnough": "%%%.error.serverCode.reserveNotEnough%%%",
-            "already_bought_void_term_deposit": "%%%.error.serverCode.already_bought_void_term_deposit%%%"
+            "already_bought_void_term_deposit": "%%%.error.serverCode.already_bought_void_term_deposit%%%",
+            "undefined": "%%%.error.serverCode.undefined%%%"
         },
         "expiredSession": "%%%.error.expiredSession%%%",
         "withdrawLessThanOrEqual": "%%%.error.withdrawLessThanOrEqual%%%",
@@ -5152,6 +5177,8 @@
         "btnTransfer": "%%%.menuMobile.btnTransfer%%%",
         "btnWithdrawFiat": "%%%.menuMobile.btnWithdrawFiat%%%",
         "btnWithdrawCrypto": "%%%.menuMobile.btnWithdrawCrypto%%%",
+        "btnDepositFiat": "%%%.menuMobile.btnDepositFiat%%%",
+        "btnDepositCrypto": "%%%.menuMobile.btnDepositCrypto%%%",
         "greeting": {
             "hi": "%%%.menuMobile.greeting.hi%%%",
             "title": "%%%.menuMobile.greeting.title%%%",

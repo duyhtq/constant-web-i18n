@@ -307,7 +307,10 @@ export default {
     minAmountRequired: 'All investments must be at least {amount} {currency}',
     minDepositAmount: 'Minimum investment amount: {amount}',
     interestRate: 'Interest rate: {interest}% APY',
-    getAmountFailed: 'Failed while getting amount, please try again'
+    getAmountFailed: 'Failed while getting amount, please try again',
+    generateAddress: 'Generate address',
+    deposit: 'Deposit',
+    depositSuccess: 'Your deposit was completed successfully'
   },
   history: {
     deposit: {
@@ -1107,6 +1110,8 @@ export default {
       plTaxCountry: 'Select your country',
       plDocType: 'Select your ID type',
       titleStep1: 'Please submit your KYC details',
+      whyWeNeed: 'Why do we ask for this information',
+      descWhyWeNeed: '<p><strong>Why we need to verify your ID (KYC)</strong></p><p>As a financial company, we must complete Know-Your-Customer (KYC) checks to comply with US law. These checks form part of wider AML (Anti-Money Laundering) precautions designed to protect you and in the integrity of our platform. Prime Trust, an accredited US financial institution, completes KYC checks on our behalf. Your data is securely stored and never disclosed to anyone other than Prime Trust. For more information, review our <a href="/agreements?view=AMLPolicy">AML Policy</a>.</p>',
       isUS: 'Are you a US citizen or resident?',
       lDocType: 'Type of ID',
       lSSN: 'Social Security Number',
@@ -4281,6 +4286,57 @@ export default {
         4: {
           desc: 'Withdraw anytime to your wallet of choice.',
         },
+      },
+    },
+  },
+  cryptoLend: {
+    contentHtml: `
+      <p>Secured crypto lending</p>
+      <h1>Earn {interest}% APY on BTC, ETH, and BNB.<br/>Compounded and paid every second.<br/>Backed by Constant.</h1>
+      <p/>
+      <p>Invest your idle cryptocurrencies for a return of {interest}% APY. All lending is backed by Constant Guarantee<sup>1</sup> and you can withdraw anytime for free. No fees. No lock-ups. Compounded every second.</p>
+      <p><sup>1</sup>The Constant Guarantee is a $3,000,000 fund that underwrites all investments in Crypto Lend, protecting you from losses.</p>
+    `,
+    learnMore: 'Learn more here',
+    intro: {
+      desc: {
+        1: 'All lending 100% backed by Constant',
+        2: 'Interest compounded and paid every second',
+        3: 'Unlimited free withdrawals',
+      }
+    },
+    whyInvest: {
+      title: 'Why invest with us?',
+      0: {
+        caption: 'Immediate growth',
+        desc: `<p>Watch your crypto grow, second by second, from the moment you invest.</p>`
+      },
+      1: {
+        caption: 'Earn on idle assets',
+        desc: `<p>Keep earning between trades with a generous {interest}% APY on your idle cryptos.</p>`
+      },
+      2: {
+        caption: 'No fees',
+        desc: `<p>We don’t charge you a penny to invest, withdraw, or deposit (though you might pay network fees to send your crypto).</p>`
+      },
+      3: {
+        caption: 'Withdraw anytime',
+        desc: `<p>Withdraw your cryptocurrency instantly whenever you need it. No fees and no limits.</p>`
+      },
+    },
+    howItWorks: {
+      title: 'How it works',
+      0: {
+        caption: 'Deposit your crypto',
+        desc: `<p>Send your crypto to our lending pool and we’ll redistribute it among our trusted exchange partners, including the Incognito pDEX.</p>`
+      },
+      1: {
+        caption: 'Earn {interest}% APY',
+        desc: `<p>Your crypto provides liquidity to exchange and swapping partners and you earn a cut of their trading fees – a generous {interest}% APY backed by the Constant Guarantee.</p>`
+      },
+      2: {
+        caption: 'Watch your crypto grow',
+        desc: `<p>Interest is compounded and paid every second, giving you immediate returns. When you’re ready, withdraw again to a wallet of your choice absolutely free.</p>`
       },
     },
   },

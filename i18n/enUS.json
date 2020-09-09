@@ -2160,7 +2160,7 @@
                 "collateralRequiredLabel": "Collateral required ({value}% LTV)",
                 "minTerm": "Length of term",
                 "minTermTooltip": "This is how long you want to borrow for.",
-                "toolTipCollateral": "          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.        ",
+                "toolTipCollateral": "This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}. Check <a href=\"/withdraw-fees?from=borrow\">here</a>",
                 "apr": "APR",
                 "availableCredit": "Available Credit",
                 "buttonText": "Borrow now",
@@ -2168,6 +2168,7 @@
                 "borrowIsolateConfirm": "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. Click confirm to start your term and receive your loan. Once your term begins you won’t be able to cancel your loan, but you can repay early from your Accounts page",
                 "borrowCoinConfirm": "You're about to borrow {amount} {currency} for {term} at {rate}% beginning {startDate} and ending {endDate}. We'll use these funds to buy a maximum of {receiveAmount} to be deposited into your coin balance.\n\nClick confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your History page.",
                 "borrowCoinIsolateConfirm": "You're about to borrow {amount} {currency} for {term} at {rate}% beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. We'll use these funds to buy a maximum of {receiveAmount} to be deposited into your coin balance.\n\nClick confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your History page.",
+                "borrowConfirmNote": "Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your Accounts page.",
                 "collateralBalance": "Collateral Balance",
                 "isolate": "Isolate",
                 "isolateDesc": "Isolate your loan to use a single cryptocurrency as collateral. If you already have a multi-collateral loan the amount of collateral you can isolate may be limited. Check out our FAQs for more details",
@@ -2574,6 +2575,7 @@
                 },
                 "summarizeTitle": "Here are the loan terms:",
                 "loanAmount": "Loan amount:",
+                "creditHolding": "Credit holding",
                 "collateralBalance": "Collateral available",
                 "collateralRequired": "Collateral required:",
                 "term": "Term:",
@@ -3600,7 +3602,8 @@
                 }
             },
             "alert": {
-                "investUsingBalanceConfirm": "You’re about to invest {amount} {currency} for {term} days at a rate of {rate}% APR. Click confirm to start your term and begin earning interest. Once you confirm, you won’t be able to cancel your investment but can sell it on our secondary market.",
+                "investUsingBalanceConfirm": "Click confirm to start your term and begin earning interest. Once you confirm, you won’t be able to cancel your investment but can sell it on our secondary market.",
+                "investNotUsingBalanceConfirm": "Click confirm and you’ll start earning interest as soon as we receive your funds. Once your term starts, you won’t be able to cancel your investment but can sell it on our secondary market.",
                 "invalid_payment_method": "To invest USD, you must be a KYC-verified US citizen. Please choose another currency to deposit.",
                 "success": "Success",
                 "sendEmailVerifyForTrialSuccess": "Thanks! We sent you a verification email to unlock your free trial.",
@@ -3611,8 +3614,7 @@
                 "trialSuccess": "Thanks! We're connecting you with a borrower glad to pay your rates. We'll send you an email when you're matched.",
                 "zelleSuccess": "Thanks! Please proceed with the transfer.",
                 "zelleFailed": "Something went wrong. Please try again.",
-                "needKyc": "",
-                "investNotUsingBalanceConfirm": "You’re about to invest {amount} {currency} for {term} days at {rate}% APR. Click confirm and you’ll start earning interest as soon as we receive your funds. Once your term starts, you won’t be able to cancel your investment but can sell it on our secondary market."
+                "needKyc": ""
             },
             "confirm": {
                 "thankYou1": "Almost there.",
@@ -5123,52 +5125,6 @@
                 "error": "OH! something went wrong! Please refresh your browser and try again."
             }
         },
-        "borrowC2CBooking": {
-            "title": "Crypto Credit",
-            "exchange": {
-                "eventBox": "Borrow now to get 1% discount from the crypto price",
-                "amountLabel": "Crypto to buy",
-                "exchangeInfo": "USD loan value",
-                "availableCredit": "Available Credit",
-                "minTerm": "Term (days)",
-                "buttonText": "Borrow",
-                "collateralRequired": "Collateral amount is required to make a borrow!",
-                "amountRequired": "Amount is required to make a borrow!",
-                "exchangeInfoDesc": "The amount of USD you’re borrowing to buy your chosen crypto. We search multiple exchanges to find the best price for you",
-                "minTermTooltip": "The duration of your loan term. Repay in cash, stablecoins, or cryptocurrency before your term ends to get your collateral back",
-                "amountLabelDesc": "Choose a cryptocurrency and amount. You might receive a little more or less of your chosen cryptocurrency if prices change before completing the sale.",
-                "collateralLabel": "Collateral required",
-                "collateralDesc": "The amount of collateral you need to secure the USD loan used to buy your chosen crypto.",
-                "collateralRequiredDesc": "To secure your loan, please deposit {value}% the loan value in collateral.",
-                "maxRate": "Interest rate (APR)",
-                "maxRateTooltip": "The annual interest rate you’ll pay on your USD loan. Choose the market rate or higher to match quickly.",
-                "loginButton": "Log in or Sign up to borrow",
-                "amountMin": "The minimum amount that you can borrow is {amount}",
-                "rateRequired": "Interest rate is required to make a borrow!",
-                "rateMax": "Interest rate must be less than {rate}%",
-                "rateMax1": "Interest rate must from 1% to {rate}%",
-                "collateralNoteFee": "Fee: {fee} {currency} (1%)",
-                "collateralNoteMatchedFee": "Fee: 1%",
-                "yourBalance": "Your current balance is {value} {symbol}",
-                "collateralNoteTotal": "Total loan received: {total} {currency}",
-                "usingStaking": "Get {discount}% off your interest rate by staking collateral",
-                "usingStakingMobile": "Get {discount}% off with staking",
-                "usingStakingDesc": "Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.",
-                "stakingMinAmount": "stake amount must be great than {minVal} {currency}",
-                "goToAccountApp": "Please go to the Account tab to sign up or log in.",
-                "interest": "Interest (APR)",
-                "term": "Term (Days)",
-                "cancel": "Cancel",
-                "collateral": "Collateral",
-                "notEnoughBalance": "Please deposit sufficient collateral to credit your requested amount"
-            },
-            "errorMsgs": {
-                "notEnoughBalance": "Your balance is not enough to make borrow!",
-                "generateCollateralAddressFail": "Can't generate collateral address. Please try again!",
-                "maxOfCollateralHolding": "Please try a different coin. To manage risk, the platform can hold only 10% of any coin's 24h trading volume.",
-                "error": "OH! something went wrong! Please try again"
-            }
-        },
         "openOrders": {
             "title": "Open orders",
             "amount": "Amount (USD)",
@@ -5794,15 +5750,19 @@
         "timeSupport": "We're available <strong>Mon-Fri 9am-5pm</strong> and<br /> <strong>Mon-Thurs 7pm-4am PST</strong>"
     },
     "withdrawFees": {
-        "title": "Withdrawal fees and minimums",
+        "title": "Fee schedule and collateral rules",
         "headers": {
             "coin": " ",
             "minAmount": "Minimum withdrawal",
             "fee": "Withdrawal fee",
             "price": "Current price",
             "min30Price": "30-day low",
-            "lvt": "LTV"
+            "recallExcess": "Recall excess threshold",
+            "updatedDate": "Updated",
+            "ctv": "CTV"
         },
-        "desc30DayLow": "This is the cryptocurrency's lowest price over a rolling 30-day period."
+        "desc30DayLow": "This is the cryptocurrency's lowest price over a rolling 30-day period.",
+        "descCtv": "The Collateral to Value (CTV) ratio expresses the amount of collateral you need as a percentage of the loan amount. In other words, it's the reciprocal of the LTV (Loan to Value ratio).",
+        "descRecallExcess": "You can only recall excess collateral once the CTV (Collateral to Value ratio) rises above this threshold."
     }
 }

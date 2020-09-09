@@ -2168,6 +2168,7 @@
                 "borrowIsolateConfirm": "%%%.home.constantLoan.exchange.borrowIsolateConfirm%%%",
                 "borrowCoinConfirm": "%%%.home.constantLoan.exchange.borrowCoinConfirm%%%",
                 "borrowCoinIsolateConfirm": "%%%.home.constantLoan.exchange.borrowCoinIsolateConfirm%%%",
+                "borrowConfirmNote": "%%%.home.constantLoan.exchange.borrowConfirmNote%%%",
                 "collateralBalance": "%%%.home.constantLoan.exchange.collateralBalance%%%",
                 "isolate": "%%%.home.constantLoan.exchange.isolate%%%",
                 "isolateDesc": "%%%.home.constantLoan.exchange.isolateDesc%%%",
@@ -2574,6 +2575,7 @@
                 },
                 "summarizeTitle": "%%%.home.constantLoan.transaction.summarizeTitle%%%",
                 "loanAmount": "%%%.home.constantLoan.transaction.loanAmount%%%",
+                "creditHolding": "%%%.home.constantLoan.transaction.creditHolding%%%",
                 "collateralBalance": "%%%.home.constantLoan.transaction.collateralBalance%%%",
                 "collateralRequired": "%%%.home.constantLoan.transaction.collateralRequired%%%",
                 "term": "%%%.home.constantLoan.transaction.term%%%",
@@ -3601,6 +3603,7 @@
             },
             "alert": {
                 "investUsingBalanceConfirm": "%%%.home1.lendingSection.alert.investUsingBalanceConfirm%%%",
+                "investNotUsingBalanceConfirm": "%%%.home1.lendingSection.alert.investNotUsingBalanceConfirm%%%",
                 "invalid_payment_method": "%%%.home1.lendingSection.alert.invalid_payment_method%%%",
                 "success": "%%%.home1.lendingSection.alert.success%%%",
                 "sendEmailVerifyForTrialSuccess": "%%%.home1.lendingSection.alert.sendEmailVerifyForTrialSuccess%%%",
@@ -3611,8 +3614,7 @@
                 "trialSuccess": "%%%.home1.lendingSection.alert.trialSuccess%%%",
                 "zelleSuccess": "%%%.home1.lendingSection.alert.zelleSuccess%%%",
                 "zelleFailed": "%%%.home1.lendingSection.alert.zelleFailed%%%",
-                "needKyc": "%%%.home1.lendingSection.alert.needKyc%%%",
-                "investNotUsingBalanceConfirm": "%%%.home1.lendingSection.alert.investNotUsingBalanceConfirm%%%"
+                "needKyc": "%%%.home1.lendingSection.alert.needKyc%%%"
             },
             "confirm": {
                 "thankYou1": "%%%.home1.lendingSection.confirm.thankYou1%%%",
@@ -5123,52 +5125,6 @@
                 "error": "%%%.proLending.borrowBooking.errorMsgs.error%%%"
             }
         },
-        "borrowC2CBooking": {
-            "title": "%%%.proLending.borrowC2CBooking.title%%%",
-            "exchange": {
-                "eventBox": "%%%.proLending.borrowC2CBooking.exchange.eventBox%%%",
-                "amountLabel": "%%%.proLending.borrowC2CBooking.exchange.amountLabel%%%",
-                "exchangeInfo": "%%%.proLending.borrowC2CBooking.exchange.exchangeInfo%%%",
-                "availableCredit": "%%%.proLending.borrowC2CBooking.exchange.availableCredit%%%",
-                "minTerm": "%%%.proLending.borrowC2CBooking.exchange.minTerm%%%",
-                "buttonText": "%%%.proLending.borrowC2CBooking.exchange.buttonText%%%",
-                "collateralRequired": "%%%.proLending.borrowC2CBooking.exchange.collateralRequired%%%",
-                "amountRequired": "%%%.proLending.borrowC2CBooking.exchange.amountRequired%%%",
-                "exchangeInfoDesc": "%%%.proLending.borrowC2CBooking.exchange.exchangeInfoDesc%%%",
-                "minTermTooltip": "%%%.proLending.borrowC2CBooking.exchange.minTermTooltip%%%",
-                "amountLabelDesc": "%%%.proLending.borrowC2CBooking.exchange.amountLabelDesc%%%",
-                "collateralLabel": "%%%.proLending.borrowC2CBooking.exchange.collateralLabel%%%",
-                "collateralDesc": "%%%.proLending.borrowC2CBooking.exchange.collateralDesc%%%",
-                "collateralRequiredDesc": "%%%.proLending.borrowC2CBooking.exchange.collateralRequiredDesc%%%",
-                "maxRate": "%%%.proLending.borrowC2CBooking.exchange.maxRate%%%",
-                "maxRateTooltip": "%%%.proLending.borrowC2CBooking.exchange.maxRateTooltip%%%",
-                "loginButton": "%%%.proLending.borrowC2CBooking.exchange.loginButton%%%",
-                "amountMin": "%%%.proLending.borrowC2CBooking.exchange.amountMin%%%",
-                "rateRequired": "%%%.proLending.borrowC2CBooking.exchange.rateRequired%%%",
-                "rateMax": "%%%.proLending.borrowC2CBooking.exchange.rateMax%%%",
-                "rateMax1": "%%%.proLending.borrowC2CBooking.exchange.rateMax1%%%",
-                "collateralNoteFee": "%%%.proLending.borrowC2CBooking.exchange.collateralNoteFee%%%",
-                "collateralNoteMatchedFee": "%%%.proLending.borrowC2CBooking.exchange.collateralNoteMatchedFee%%%",
-                "yourBalance": "%%%.proLending.borrowC2CBooking.exchange.yourBalance%%%",
-                "collateralNoteTotal": "%%%.proLending.borrowC2CBooking.exchange.collateralNoteTotal%%%",
-                "usingStaking": "%%%.proLending.borrowC2CBooking.exchange.usingStaking%%%",
-                "usingStakingMobile": "%%%.proLending.borrowC2CBooking.exchange.usingStakingMobile%%%",
-                "usingStakingDesc": "%%%.proLending.borrowC2CBooking.exchange.usingStakingDesc%%%",
-                "stakingMinAmount": "%%%.proLending.borrowC2CBooking.exchange.stakingMinAmount%%%",
-                "goToAccountApp": "%%%.proLending.borrowC2CBooking.exchange.goToAccountApp%%%",
-                "interest": "%%%.proLending.borrowC2CBooking.exchange.interest%%%",
-                "term": "%%%.proLending.borrowC2CBooking.exchange.term%%%",
-                "cancel": "%%%.proLending.borrowC2CBooking.exchange.cancel%%%",
-                "collateral": "%%%.proLending.borrowC2CBooking.exchange.collateral%%%",
-                "notEnoughBalance": "%%%.proLending.borrowC2CBooking.exchange.notEnoughBalance%%%"
-            },
-            "errorMsgs": {
-                "notEnoughBalance": "%%%.proLending.borrowC2CBooking.errorMsgs.notEnoughBalance%%%",
-                "generateCollateralAddressFail": "%%%.proLending.borrowC2CBooking.errorMsgs.generateCollateralAddressFail%%%",
-                "maxOfCollateralHolding": "%%%.proLending.borrowC2CBooking.errorMsgs.maxOfCollateralHolding%%%",
-                "error": "%%%.proLending.borrowC2CBooking.errorMsgs.error%%%"
-            }
-        },
         "openOrders": {
             "title": "%%%.proLending.openOrders.title%%%",
             "amount": "%%%.proLending.openOrders.amount%%%",
@@ -5801,8 +5757,12 @@
             "fee": "%%%.withdrawFees.headers.fee%%%",
             "price": "%%%.withdrawFees.headers.price%%%",
             "min30Price": "%%%.withdrawFees.headers.min30Price%%%",
-            "lvt": "%%%.withdrawFees.headers.lvt%%%"
+            "recallExcess": "%%%.withdrawFees.headers.recallExcess%%%",
+            "updatedDate": "%%%.withdrawFees.headers.updatedDate%%%",
+            "ctv": "%%%.withdrawFees.headers.ctv%%%"
         },
-        "desc30DayLow": "%%%.withdrawFees.desc30DayLow%%%"
+        "desc30DayLow": "%%%.withdrawFees.desc30DayLow%%%",
+        "descCtv": "%%%.withdrawFees.descCtv%%%",
+        "descRecallExcess": "%%%.withdrawFees.descRecallExcess%%%"
     }
 }

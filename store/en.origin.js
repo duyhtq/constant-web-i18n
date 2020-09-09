@@ -324,7 +324,10 @@
         "minAmountRequired": "%%%.exchangeInputDepositForm.minAmountRequired%%%",
         "minDepositAmount": "%%%.exchangeInputDepositForm.minDepositAmount%%%",
         "interestRate": "%%%.exchangeInputDepositForm.interestRate%%%",
-        "getAmountFailed": "%%%.exchangeInputDepositForm.getAmountFailed%%%"
+        "getAmountFailed": "%%%.exchangeInputDepositForm.getAmountFailed%%%",
+        "generateAddress": "%%%.exchangeInputDepositForm.generateAddress%%%",
+        "deposit": "%%%.exchangeInputDepositForm.deposit%%%",
+        "depositSuccess": "%%%.exchangeInputDepositForm.depositSuccess%%%"
     },
     "history": {
         "deposit": {
@@ -1143,6 +1146,8 @@
             "plTaxCountry": "%%%.me.kyc.plTaxCountry%%%",
             "plDocType": "%%%.me.kyc.plDocType%%%",
             "titleStep1": "%%%.me.kyc.titleStep1%%%",
+            "whyWeNeed": "%%%.me.kyc.whyWeNeed%%%",
+            "descWhyWeNeed": "%%%.me.kyc.descWhyWeNeed%%%",
             "isUS": "%%%.me.kyc.isUS%%%",
             "lDocType": "%%%.me.kyc.lDocType%%%",
             "lSSN": "%%%.me.kyc.lSSN%%%",
@@ -4285,6 +4290,51 @@
                     "desc": "%%%.depositCrypto.howItWorks.data.4.desc%%%"
                 }
             }
+        }
+    },
+    "cryptoLend": {
+        "contentHtml": "%%%.cryptoLend.contentHtml%%%",
+        "learnMore": "%%%.cryptoLend.learnMore%%%",
+        "intro": {
+            "desc": {
+                "1": "%%%.cryptoLend.intro.desc.1%%%",
+                "2": "%%%.cryptoLend.intro.desc.2%%%",
+                "3": "%%%.cryptoLend.intro.desc.3%%%"
+            }
+        },
+        "whyInvest": {
+            "0": {
+                "caption": "%%%.cryptoLend.whyInvest.0.caption%%%",
+                "desc": "%%%.cryptoLend.whyInvest.0.desc%%%"
+            },
+            "1": {
+                "caption": "%%%.cryptoLend.whyInvest.1.caption%%%",
+                "desc": "%%%.cryptoLend.whyInvest.1.desc%%%"
+            },
+            "2": {
+                "caption": "%%%.cryptoLend.whyInvest.2.caption%%%",
+                "desc": "%%%.cryptoLend.whyInvest.2.desc%%%"
+            },
+            "3": {
+                "caption": "%%%.cryptoLend.whyInvest.3.caption%%%",
+                "desc": "%%%.cryptoLend.whyInvest.3.desc%%%"
+            },
+            "title": "%%%.cryptoLend.whyInvest.title%%%"
+        },
+        "howItWorks": {
+            "0": {
+                "caption": "%%%.cryptoLend.howItWorks.0.caption%%%",
+                "desc": "%%%.cryptoLend.howItWorks.0.desc%%%"
+            },
+            "1": {
+                "caption": "%%%.cryptoLend.howItWorks.1.caption%%%",
+                "desc": "%%%.cryptoLend.howItWorks.1.desc%%%"
+            },
+            "2": {
+                "caption": "%%%.cryptoLend.howItWorks.2.caption%%%",
+                "desc": "%%%.cryptoLend.howItWorks.2.desc%%%"
+            },
+            "title": "%%%.cryptoLend.howItWorks.title%%%"
         }
     },
     "ourStory": {

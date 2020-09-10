@@ -124,21 +124,29 @@
                 "title": "%%%.footer.cta.type2.title%%%",
                 "btn": "%%%.footer.cta.type2.btn%%%"
             },
-            "type10": {
-                "title": "%%%.footer.cta.type10.title%%%",
-                "btn": "%%%.footer.cta.type10.btn%%%"
+            "type3": {
+                "title": "%%%.footer.cta.type3.title%%%",
+                "btn": "%%%.footer.cta.type3.btn%%%"
             },
-            "type6": {
-                "title": "%%%.footer.cta.type6.title%%%",
-                "btn": "%%%.footer.cta.type6.btn%%%"
+            "type4": {
+                "title": "%%%.footer.cta.type4.title%%%",
+                "btn": "%%%.footer.cta.type4.btn%%%"
             },
             "type5": {
                 "title": "%%%.footer.cta.type5.title%%%",
                 "btn": "%%%.footer.cta.type5.btn%%%"
             },
-            "type3": {
-                "title": "%%%.footer.cta.type3.title%%%",
-                "btn": "%%%.footer.cta.type3.btn%%%"
+            "type6": {
+                "title": "%%%.footer.cta.type6.title%%%",
+                "btn": "%%%.footer.cta.type6.btn%%%"
+            },
+            "type10": {
+                "title": "%%%.footer.cta.type10.title%%%",
+                "btn": "%%%.footer.cta.type10.btn%%%"
+            },
+            "type11": {
+                "title": "%%%.footer.cta.type11.title%%%",
+                "btn": "%%%.footer.cta.type11.btn%%%"
             }
         },
         "company": {
@@ -327,7 +335,9 @@
         "getAmountFailed": "%%%.exchangeInputDepositForm.getAmountFailed%%%",
         "generateAddress": "%%%.exchangeInputDepositForm.generateAddress%%%",
         "deposit": "%%%.exchangeInputDepositForm.deposit%%%",
-        "depositSuccess": "%%%.exchangeInputDepositForm.depositSuccess%%%"
+        "depositSuccess": "%%%.exchangeInputDepositForm.depositSuccess%%%",
+        "earnInterest": "%%%.exchangeInputDepositForm.earnInterest%%%",
+        "depositCryptoDescription": "%%%.exchangeInputDepositForm.depositCryptoDescription%%%"
     },
     "history": {
         "deposit": {

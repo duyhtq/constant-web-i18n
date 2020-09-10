@@ -105,27 +105,14 @@ export default {
       borrow: 'Borrow'
     },
     cta: {
-      type1: {
-        title: '<h3>Start earning interest</h3>',
-        btn: 'Make an investment'
-      },
-      type2: {
-        title: '<h3>Do more with your money</h3>',
-        btn: 'Open a free account'
-      },
+      type1: { title: '<h3>Start earning interest</h3>', btn: 'Make an investment' },
+      type2: { title: '<h3>Do more with your money</h3>', btn: 'Open a free account' },
+      type3: { title: '<h3>Earn passive income with fully secured investments.</h3>', btn: 'Make an investment' },
+      type4: { title: '<h3>Get fixed-rate loans of any amount.</h3>', btn: 'Borrow now' },
+      type5: { title: '<h3>Invite your friends, earn a bonus</h3>', btn: 'Invite now' },
+      type6: { title: '<h3>Open an account and grow your money</h3>', btn: 'Open an account' },
       type10: { title: '<h3>Invest the way you want</h3>', btn: 'Sign up now' },
-      type6: {
-        title: '<h3>Open an account and grow your money</h3>',
-        btn: 'Open an account'
-      },
-      type5: {
-        title: '<h3>Invite your friends, earn a bonus</h3>',
-        btn: 'Invite now'
-      },
-      type3: {
-        title: '<h3>Earn passive income with fully secured investments.</h3>',
-        btn: 'Make an investment'
-      }
+      type11: { title: '<h3>Borrow the way you want</h3>', btn: 'Sign up now' }
     },
     company: {
       name: 'CONST LLC',
@@ -310,7 +297,9 @@ export default {
     getAmountFailed: 'Failed while getting amount, please try again',
     generateAddress: 'Generate address',
     deposit: 'Deposit',
-    depositSuccess: 'Your deposit was completed successfully'
+    depositSuccess: 'Your deposit was completed successfully',
+    earnInterest: 'Earn an automatic {interest}% APY',
+    depositCryptoDescription: 'Choose a crypto or stablecoin below and then send your funds to the wallet address shown. There is no minimum or maximum deposit.',
   },
   history: {
     deposit: {
@@ -2543,15 +2532,15 @@ export default {
           content: 'You’re sending your collateral to BitGo, a qualified digital asset custodian. Your collateral will be securely stored inside a Prime Trust wallet that’s insured to $100M. So no matter what happens to Constant, your collateral is secure.'
         },
         summarizeTitle: 'Here are the loan terms:',
-        loanAmount: 'Loan amount:',
+        loanAmount: 'Loan amount',
         creditHolding: 'Credit holding',
         collateralBalance: 'Collateral available',
-        collateralRequired: 'Collateral required:',
-        term: 'Term:',
+        collateralRequired: 'Collateral required',
+        term: 'Term',
         termUnit: '{period} month',
-        interestedRate: 'Interest rate:',
+        interestedRate: 'Interest rate',
         interestedRateValue: '{percent} APR',
-        matchingFee: 'Matching fee:',
+        matchingFee: 'Matching fee',
         matchingFeeValue: '{matchingFee}% of loan amount',
         repaymentField: '            <div class=row">',
         minuteWindow: 'Please complete your transfer within 60 minutes.',
@@ -4052,7 +4041,7 @@ export default {
       }
     },
     compareTable: {
-      title: 'Constant vs Saving Accounts',
+      title: 'Constant vs Savings Accounts',
       benefits: 'Benefits',
       constant: 'Constant',
       others: 'Savings accounts',
@@ -4444,7 +4433,7 @@ export default {
     matchingFee: { head1: 'Matching fee', head2: ' ' },
     earlyRepayment: { head1: 'Early Repayment', head2: 'Fees' },
     lateRepayment: { head1: 'Late Repayment', head2: 'Fees' },
-    holidaysNote: '    <p class="title">* Our service time may also be affected by public and banking holidays in the US and your local country.</p>    '
+    holidaysNote: '    <p class="title">* Our service time may also be affected by public and banking holidays in the US and your local country.</p>    ',
   },
   pageNotFound: {
     pageNotFound: 'Page not found',

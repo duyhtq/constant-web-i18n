@@ -67,6 +67,7 @@
             "requiredEmail": "%%%.user.register.requiredEmail%%%",
             "requiredPassword": "%%%.user.register.requiredPassword%%%",
             "invalidReferralCode": "%%%.user.register.invalidReferralCode%%%",
+            "invalidEmail": "%%%.user.register.invalidEmail%%%",
             "confirmStrangeEmailMessage": "%%%.user.register.confirmStrangeEmailMessage%%%"
         },
         "account": {
@@ -1229,6 +1230,10 @@
                     "body": "%%%.me.bankInfo.dialog.update.body%%%",
                     "confirm": "%%%.me.bankInfo.dialog.update.confirm%%%",
                     "cancel": "%%%.me.bankInfo.dialog.update.cancel%%%"
+                },
+                "unlink": {
+                    "title": "%%%.me.bankInfo.dialog.unlink.title%%%",
+                    "message": "%%%.me.bankInfo.dialog.unlink.message%%%"
                 }
             },
             "alert": {
@@ -4498,7 +4503,7 @@
         },
         "sellBtn": "%%%.exchangeInputSellForm.sellBtn%%%",
         "recipientBankInformation": "%%%.exchangeInputSellForm.recipientBankInformation%%%",
-        "yourAnytimeBalance": "%%%.exchangeInputSellForm.yourAnytimeBalance%%%",
+        "availableBalance": "%%%.exchangeInputSellForm.availableBalance%%%",
         "email": {
             "name": "%%%.exchangeInputSellForm.email.name%%%",
             "placeholder": "%%%.exchangeInputSellForm.email.placeholder%%%"
@@ -5774,5 +5779,12 @@
         "desc30DayLow": "%%%.withdrawFees.desc30DayLow%%%",
         "descCtv": "%%%.withdrawFees.descCtv%%%",
         "descRecallExcess": "%%%.withdrawFees.descRecallExcess%%%"
+    },
+    "exportInvestmentHistory": {
+        "dialogTitle": "%%%.exportInvestmentHistory.dialogTitle%%%",
+        "fromDate": "%%%.exportInvestmentHistory.fromDate%%%",
+        "toDate": "%%%.exportInvestmentHistory.toDate%%%",
+        "download": "%%%.exportInvestmentHistory.download%%%",
+        "cancel": "%%%.exportInvestmentHistory.cancel%%%"
     }
 }

@@ -67,6 +67,7 @@ export default {
       requiredEmail: 'Email is required',
       requiredPassword: 'Password is required',
       invalidReferralCode: 'Invalid referral code. Please check your code and try again',
+      invalidEmail: 'This email address does not exist. Please check again',
       confirmStrangeEmailMessage: 'The email address <strong>{email}</strong> looks like it contains a typo or spelling mistake. Are you sure you want to sign up with this email address?',
     },
     account: {
@@ -1151,7 +1152,7 @@ export default {
       beneficiaryPostalCode: 'Beneficiary postal code',
       linkBankSectionTitle: 'Link your bank account',
       linkBankSectionDesc: '<p>Deposit or withdraw using ACH bank transfers with Plaid. Link up to two bank accounts now to save time and money transferring funds to and from your Constant account.<br/>Since most savings accounts limit the number of withdrawals, we recommend you link a checking account not a savings account to avoid ACH reversals.<br/><a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">How to avoid ACH reversals</a>.</p>',
-      linkBankImportantNote: '<strong>Please note</strong>: For your security, you must withdraw to the same bank account from which you made your deposit. This restriction applies for 60 days and can be lifted upon supplying additional verification information. <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">How linked banking works</a>.',
+      linkBankImportantNote: '<strong>Please note</strong>: When you link a bank account via Plaid, your bank is assigned a unique ID. For your security, Plaid ACH deposits can only be withdrawn again <strong>via the same method and bank ID</strong> from which you deposited for a period of 60 days. This restriction <strong>does not</strong> apply to deposits via wire or Zelle.',
       unlinkBankSectionTitle: 'International Bank',
       unlinkBankSectionDesc: '<p>Nice – email confirmations are enabled on all withdrawals and transfers. Whenever you withdraw or transfer USD, cryptocurrency, or stablecoins, we’ll email you a link to authorize the transaction.</p>',
       nonUSbankSectionTitle: 'Add a bank account for deposits and withdrawals',
@@ -1172,6 +1173,10 @@ export default {
           body: 'Are you sure to update?',
           confirm: 'Yes',
           cancel: 'No'
+        },
+        unlink: {
+          title: 'Are you sure you want to unlink this bank account?',
+          message: '<strong>Please note:</strong> if you re-link this bank account, it will be assigned a new bank ID. You won’t be able to withdraw any deposits made under a previous bank ID to a new bank ID for a period of 60 days. Please consider this before unlinking your account.',
         }
       },
       alert: {
@@ -4465,7 +4470,7 @@ export default {
     },
     sellBtn: 'Send',
     recipientBankInformation: 'Recipient’s bank information',
-    yourAnytimeBalance: 'Your Balance: {balance} {currency}',
+    availableBalance: 'Your available balance',
     email: { name: 'Recipient', placeholder: 'Enter receiving email address' },
     countryNotSupport: 'Your country is not supported at the moment. Our support team will get in touch with you via email.',
     validateMaxInput: 'Please make sure your balance is sufficient.',
@@ -5745,4 +5750,11 @@ export default {
     descCtv: 'The Collateral to Value (CTV) ratio expresses the amount of collateral you need as a percentage of the loan amount. In other words, it\'s the reciprocal of the LTV (Loan to Value ratio).',
     descRecallExcess: 'You can only recall excess collateral once the CTV (Collateral to Value ratio) rises above this threshold.',
   },
+  exportInvestmentHistory: {
+    dialogTitle: 'You can export up to six months of your investment history.',
+    fromDate: 'From Date',
+    toDate: 'To Date',
+    download: 'Download',
+    cancel: 'Cancel'
+  }
 };

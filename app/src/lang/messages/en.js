@@ -268,6 +268,7 @@ export default {
     pointExpiredDate: '{value} points will expire on {date}',
     tierProgressDesc: 'Earn {points} points by {date} to maintain {level} membership',
     getLevelDate: 'From {date}',
+    claimDaily: 'Claim <strong>{amount} points</strong> Daily Login',
     reviewMemberShip: {
       redeemButton: 'Unlock your rewards',
       redeemButtonMobile: 'Rewards',
@@ -635,6 +636,7 @@ export default {
             allStatus: 'All'
           },
           secondary_investment: {
+            pending: 'Pending',
             voiding: 'Selling',
             voided: 'Sold',
             matched: 'Bought',
@@ -1281,6 +1283,7 @@ export default {
         messageConfirmDisable: 'Are you sure you want to disable secondary market notifications? You might miss out on the best deals.',
         disableSuccess: 'Successfully Disabled',
         messageConfirmUpdate: 'You’re about to change your notification settings to a minimum interest rate of {rate}% and maximum term of {term} months. Do you want to proceed?',
+        interestInRange: 'Min rate must be greater than or equal to {min} and less than or equal to {max}',
       }
     },
     batchTransfer: { title: 'Batch Transfers' },
@@ -4507,6 +4510,7 @@ export default {
         <p>Welcome to your affiliate dashboard. You’ll find your affiliate link and sharing options below. You can track your earnings here, too.</p>
         <p>Your total referral earnings to date: <strong>{totalEarned}</strong>.</p>
       `,
+      monthVolume: 'Your {month} volume',
       inviteFriends: 'Invite friends',
     },
     applyForm: {
@@ -4957,6 +4961,7 @@ export default {
     recommendMessage: 'To restore your collateral value to the recommended {recommendedRate}%, please top up {amount} {currency}',
     errorMaxValue: 'Amount must less than {max}',
     errorMinValue: 'Amount must greater than {min}',
+    generateAddress: 'Generate address',
   },
   proLending: {
     balances: {
@@ -5005,6 +5010,27 @@ export default {
       loanOriginatorInvestmentsDesc: 'Investments backed by the loan originator’s buy-back guarantee. Unlike crypto-backed investments, there might not always be collateral securing the loan. Instead, the loan originator guarantees to buy back the loan should the borrower default for 60 days or more, returning your principal and earned profit.',
       loSecondaryInvestments: 'LO Secondary Investments',
       loSecondaryInvestmentsDesc: 'These are Loan Originator (LO) investments that investors want to sell. You can’t change the term or rate on an LO secondary market investment. However, you will earn interest on the full term regardless of how much time is left. You earn a cut of interest on elapsed term time (full rate minus 2%) and the full interest amount on remaining term time.',
+    },
+    orderPool: {
+      title: 'Order Pool',
+      diamondRound: 'Diamond round',
+      openRound: 'Open round',
+      desc: 'All secondary market orders go into an order pool. We then randomly fulfil orders across 10-minute rounds. Diamond members get priority on the first round, during which you won’t be able to join the order pool unless you’re a Diamond member. Once the Diamond round ends, Open rounds begin. Open rounds are open to anyone, regardless of membership.',
+      startingSoon: 'Starting soon',
+      customer: 'Customer',
+      membership: 'Membership',
+      ordered: 'Ordered',
+      round: 'Round',
+      done: 'Done',
+      count: 'Count',
+      started:'Started',
+      remaining: 'Remaining',
+      poolSize: 'Pool size',
+      roundEnded: 'Round ended',
+      roundCanceled: 'Round cancelled',
+      current: 'Current',
+      nextRound: 'Next round',
+      roundCancelMessage: 'Round has canceled',
     },
     depositFundsTitle: 'Deposit Funds',
     depositCollateralTitle: 'Deposit',
@@ -5159,6 +5185,7 @@ export default {
     btnWithdrawCrypto: '<div class="textLeft"><small>Withdraw</small><div>Crypto</div></div>',
     btnDepositFiat: '<div class="textLeft"><small>Deposit</small><div>USD</div></div>',
     btnDepositCrypto: '<div class="textLeft"><small>Deposit</small><div>Crypto</div></div>',
+    btnDailyLogin: '<div class="textLeft"><small>Claim your</small><div>Daily Login</div></div>',
     greeting: {
       hi: 'Hi you',
       title: 'Good',
@@ -5422,7 +5449,8 @@ export default {
       almostDoneTitle: 'Hi, {name}',
       almostDoneDesc: '<p>Earn some quick wins with the badges on the right.</p><p>View all of your earned badges and progress towards others below.</p>',
       congratTitle: 'Congratulations!',
-      congratDesc: "You've earned all our badges. But the awards aren't over yet. Stay tuned for more badges and rewards that recognize your achievements."
+      congratDesc: 'You\'ve earned all our badges. But the awards aren\'t over yet. Stay tuned for more badges and rewards that recognize your achievements.',
+      earnDaily: 'Earned <strong>{amount} points</strong> for your Daily Login activity',
     },
     group: {
       getting_started: 'Getting Started',
@@ -5453,6 +5481,8 @@ export default {
       note: 'Effective as of 2020/07/16 00:00 AM (GMT+0)'
     },
     request: 'Request',
+    takeQuiz: 'Take the quiz',
+    checkLater: 'Check later',
     submitForm: {
       errNeedKyc: 'You must pass KYC before you can request this badge. <a href="/me/profile">Submit your KYC documents or approval.</>',
       title: 'Submit the link to your review',
@@ -5749,6 +5779,10 @@ export default {
     desc30DayLow: 'This is the cryptocurrency\'s lowest price over a rolling 30-day period.',
     descCtv: 'The Collateral to Value (CTV) ratio expresses the amount of collateral you need as a percentage of the loan amount. In other words, it\'s the reciprocal of the LTV (Loan to Value ratio).',
     descRecallExcess: 'You can only recall excess collateral once the CTV (Collateral to Value ratio) rises above this threshold.',
+  },
+  miniQuiz: {
+    title: 'Constant\'s mini-quiz',
+    errorNoAnswer: 'Please choose your answer before submitting',
   },
   exportInvestmentHistory: {
     dialogTitle: 'You can export up to six months of your investment history.',

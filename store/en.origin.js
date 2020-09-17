@@ -306,6 +306,7 @@
         "pointExpiredDate": "%%%.memberShip.pointExpiredDate%%%",
         "tierProgressDesc": "%%%.memberShip.tierProgressDesc%%%",
         "getLevelDate": "%%%.memberShip.getLevelDate%%%",
+        "claimDaily": "%%%.memberShip.claimDaily%%%",
         "reviewMemberShip": {
             "redeemButton": "%%%.memberShip.reviewMemberShip.redeemButton%%%",
             "redeemButtonMobile": "%%%.memberShip.reviewMemberShip.redeemButtonMobile%%%",
@@ -697,6 +698,7 @@
                         "allStatus": "%%%.me.proSaving.listApplications.termStatusFilter.investment.allStatus%%%"
                     },
                     "secondary_investment": {
+                        "pending": "%%%.me.proSaving.listApplications.termStatusFilter.secondary_investment.pending%%%",
                         "voiding": "%%%.me.proSaving.listApplications.termStatusFilter.secondary_investment.voiding%%%",
                         "voided": "%%%.me.proSaving.listApplications.termStatusFilter.secondary_investment.voided%%%",
                         "matched": "%%%.me.proSaving.listApplications.termStatusFilter.secondary_investment.matched%%%",
@@ -1343,7 +1345,8 @@
                 "termDesc": "%%%.me.notificationSetting.secondaryMarketSetting.termDesc%%%",
                 "messageConfirmDisable": "%%%.me.notificationSetting.secondaryMarketSetting.messageConfirmDisable%%%",
                 "disableSuccess": "%%%.me.notificationSetting.secondaryMarketSetting.disableSuccess%%%",
-                "messageConfirmUpdate": "%%%.me.notificationSetting.secondaryMarketSetting.messageConfirmUpdate%%%"
+                "messageConfirmUpdate": "%%%.me.notificationSetting.secondaryMarketSetting.messageConfirmUpdate%%%",
+                "interestInRange": "%%%.me.notificationSetting.secondaryMarketSetting.interestInRange%%%"
             }
         },
         "batchTransfer": {
@@ -4544,6 +4547,7 @@
     "affiliates": {
         "greetingForm": {
             "title": "%%%.affiliates.greetingForm.title%%%",
+            "monthVolume": "%%%.affiliates.greetingForm.monthVolume%%%",
             "inviteFriends": "%%%.affiliates.greetingForm.inviteFriends%%%"
         },
         "applyForm": {
@@ -4997,7 +5001,8 @@
         "cryptoWallet": "%%%.collateralBalance.cryptoWallet%%%",
         "recommendMessage": "%%%.collateralBalance.recommendMessage%%%",
         "errorMaxValue": "%%%.collateralBalance.errorMaxValue%%%",
-        "errorMinValue": "%%%.collateralBalance.errorMinValue%%%"
+        "errorMinValue": "%%%.collateralBalance.errorMinValue%%%",
+        "generateAddress": "%%%.collateralBalance.generateAddress%%%"
     },
     "proLending": {
         "balances": {
@@ -5046,6 +5051,27 @@
             "loanOriginatorInvestmentsDesc": "%%%.proLending.watchBoard.loanOriginatorInvestmentsDesc%%%",
             "loSecondaryInvestments": "%%%.proLending.watchBoard.loSecondaryInvestments%%%",
             "loSecondaryInvestmentsDesc": "%%%.proLending.watchBoard.loSecondaryInvestmentsDesc%%%"
+        },
+        "orderPool": {
+            "title": "%%%.proLending.orderPool.title%%%",
+            "diamondRound": "%%%.proLending.orderPool.diamondRound%%%",
+            "openRound": "%%%.proLending.orderPool.openRound%%%",
+            "desc": "%%%.proLending.orderPool.desc%%%",
+            "startingSoon": "%%%.proLending.orderPool.startingSoon%%%",
+            "customer": "%%%.proLending.orderPool.customer%%%",
+            "membership": "%%%.proLending.orderPool.membership%%%",
+            "ordered": "%%%.proLending.orderPool.ordered%%%",
+            "round": "%%%.proLending.orderPool.round%%%",
+            "done": "%%%.proLending.orderPool.done%%%",
+            "count": "%%%.proLending.orderPool.count%%%",
+            "started": "%%%.proLending.orderPool.started%%%",
+            "remaining": "%%%.proLending.orderPool.remaining%%%",
+            "poolSize": "%%%.proLending.orderPool.poolSize%%%",
+            "roundEnded": "%%%.proLending.orderPool.roundEnded%%%",
+            "roundCanceled": "%%%.proLending.orderPool.roundCanceled%%%",
+            "current": "%%%.proLending.orderPool.current%%%",
+            "nextRound": "%%%.proLending.orderPool.nextRound%%%",
+            "roundCancelMessage": "%%%.proLending.orderPool.roundCancelMessage%%%"
         },
         "depositFundsTitle": "%%%.proLending.depositFundsTitle%%%",
         "depositCollateralTitle": "%%%.proLending.depositCollateralTitle%%%",
@@ -5200,6 +5226,7 @@
         "btnWithdrawCrypto": "%%%.menuMobile.btnWithdrawCrypto%%%",
         "btnDepositFiat": "%%%.menuMobile.btnDepositFiat%%%",
         "btnDepositCrypto": "%%%.menuMobile.btnDepositCrypto%%%",
+        "btnDailyLogin": "%%%.menuMobile.btnDailyLogin%%%",
         "greeting": {
             "hi": "%%%.menuMobile.greeting.hi%%%",
             "title": "%%%.menuMobile.greeting.title%%%",
@@ -5446,7 +5473,8 @@
             "almostDoneTitle": "%%%.badges.intro.almostDoneTitle%%%",
             "almostDoneDesc": "%%%.badges.intro.almostDoneDesc%%%",
             "congratTitle": "%%%.badges.intro.congratTitle%%%",
-            "congratDesc": "%%%.badges.intro.congratDesc%%%"
+            "congratDesc": "%%%.badges.intro.congratDesc%%%",
+            "earnDaily": "%%%.badges.intro.earnDaily%%%"
         },
         "group": {
             "getting_started": "%%%.badges.group.getting_started%%%",
@@ -5477,6 +5505,8 @@
             "note": "%%%.badges.term.note%%%"
         },
         "request": "%%%.badges.request%%%",
+        "takeQuiz": "%%%.badges.takeQuiz%%%",
+        "checkLater": "%%%.badges.checkLater%%%",
         "submitForm": {
             "errNeedKyc": "%%%.badges.submitForm.errNeedKyc%%%",
             "title": "%%%.badges.submitForm.title%%%",
@@ -5779,6 +5809,10 @@
         "desc30DayLow": "%%%.withdrawFees.desc30DayLow%%%",
         "descCtv": "%%%.withdrawFees.descCtv%%%",
         "descRecallExcess": "%%%.withdrawFees.descRecallExcess%%%"
+    },
+    "miniQuiz": {
+        "title": "%%%.miniQuiz.title%%%",
+        "errorNoAnswer": "%%%.miniQuiz.errorNoAnswer%%%"
     },
     "exportInvestmentHistory": {
         "dialogTitle": "%%%.exportInvestmentHistory.dialogTitle%%%",

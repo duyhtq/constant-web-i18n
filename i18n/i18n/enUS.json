@@ -1594,7 +1594,7 @@
         "cryptoLend": {
             "title": "Crypto Lending - Make your crypto work for you - MyConstant",
             "keyword": "crypto lending platform, p2p cryto lending",
-            "description": "Earn 9% APY on BTC, ETH, and BNB on MyConstant Crypto Lending platform. Send your cryptocurrencies to our P2P crypto lending and earn interest on transactions. Withdraw anytime. No fees. Compounded every second."
+            "description": "Earn 9% APY on BTC, ETH, and BNB on MyConstant Crypto Lending platform. Send your cryptocurrencies to our P2P crypto lending platform and earn interest on transactions. Withdraw anytime. Compounded every second."
         },
         "cryptoCredit": {
             "title": "Crypro Credit - Peer-to-Peer Lending Platform - MyConstant",
@@ -2340,7 +2340,7 @@
             },
             "faqs": {
                 "question1": "How long will it take to get my loan?",
-                "answer1": "        <p>As soon as we receive your collateral, we’ll deposit your loan into your Constant account. You can withdraw your loan as fiat to your bank account or as a stablecoin to your wallet address. All withdrawals are free.</p>        <p><a href=\"https://blog.myconstant.com/how-to-borrow-against-crypto-4-simple-steps\" className=\"underline\" target=\"_blank\">How to borrow in 4 simple steps.</a></p>      ",
+                "answer1": "        <p>As soon as we receive your collateral, we’ll deposit your loan into your Constant account. You can withdraw your loan as fiat to your bank account or as a stablecoin to your wallet address. All fiat withdrawals are free.</p>        <p><a href=\"https://blog.myconstant.com/how-to-borrow-against-crypto-4-simple-steps\" className=\"underline\" target=\"_blank\">How to borrow in 4 simple steps.</a></p>      ",
                 "question2": "Do you check my credit score?",
                 "answer2": "        <p>As we only offer secured loans backed by collateral, there is no need for credit scoring. All you need is adequate collateral to secure your loan. To see how much collateral you need to secure your loan, simply enter the amount you’d like to borrow. The calculator will work out the amount for you.</p>        <p><a href=\"https://blog.myconstant.com/how-to-borrow-against-crypto-4-simple-steps\" className=\"underline\" target=\"_blank\">How to borrow in 4 simple steps.</a></p>      ",
                 "question3": "How do you protect my collateral?",
@@ -3307,7 +3307,7 @@
             "title2": "2. Deposit your funds",
             "desc2": "Send your funds via one of our supported payment channels. Depending on your bank, it might take one or two business days to reach us.",
             "title3": "3. Start earning interest",
-            "desc3": "As soon as your funds reach us, you start earning interest on your principal. When your term ends you can withdraw your principal and profit to a bank account or stablecoin wallet for free."
+            "desc3": "As soon as your funds reach us, you start earning interest on your principal. When your term ends you can withdraw your principal and profit to a bank account (for free) or stablecoin wallet ($1 per withdrawal)."
         }
     },
     "ourPartners": {
@@ -3695,7 +3695,7 @@
                 }
             }
         },
-        "contentHtml": "      <p>Do more with your money</p>      <h1>Enjoy 50x better interest<br/>than a savings account<sup>*</sup>.</h1>      <p/>      <p>Earn {interest}% APY through decentralized lending and liquidity pools. You deposit, we lend on your behalf, and you keep the interest. Unlimited free withdrawals and no fees. Grow your money without locking it in.</p>      <p class=\"reference\"><sup>*</sup>Comparison based on data from ValuePenguin.</p>    ",
+        "contentHtml": "      <p>Do more with your money</p>      <h1>Enjoy 50x better interest<br/>than a savings account<sup>*</sup>.</h1>      <p/>      <p>Earn {interest}% APY through decentralized lending and liquidity pools. You deposit, we lend on your behalf, and you keep the interest. Unlimited free fiat withdrawals and no fees. Grow your money without locking it in.</p>      <p class=\"reference\"><sup>*</sup>Comparison based on data from ValuePenguin.</p>    ",
         "learnMore": "Learn more here",
         "intro": {
             "desc": {
@@ -3784,7 +3784,7 @@
             },
             "10": {
                 "question": "Are there any fees?",
-                "answer": "No – all deposits and withdrawals on Flex are free."
+                "answer": "No – all deposits and fiat withdrawals on Flex are free. Withdrawals in stablecoins are charged at $1 per transaction (no limit). \n"
             },
             "11": {
                 "question": "How does Constant make money?",
@@ -3893,13 +3893,13 @@
         }
     },
     "cryptoLend": {
-        "contentHtml": "\n      <p>Secured crypto lending</p>\n      <h1>Earn {interest}% APY on BTC, ETH, and BNB.<br/>Compounded and paid every second.<br/>Backed by Constant.</h1>\n      <p/>\n      <p>Invest your idle cryptocurrencies for a return of {interest}% APY. All lending is backed by Constant Guarantee<sup>1</sup> and you can withdraw anytime for free. No fees. No lock-ups. Compounded every second.</p>\n      <p><sup>1</sup>The Constant Guarantee is a $3,000,000 fund that underwrites all investments in Crypto Lend, protecting you from losses.</p>\n    ",
+        "contentHtml": "      <p>Secured crypto lending</p>\n      <h1>Earn {interest}% APY on BTC, ETH, and BNB.<br/>Compounded and paid every second.<br/>Backed by Constant.</h1>\n      <p/>\n      <p>Invest your idle cryptocurrencies for a return of {interest}% APY. All lending is backed by Constant Guarantee<sup>1</sup> and you can withdraw anytime. No investing fees. No lock-ups. Compounded every second.</p>\n      <p><sup>1</sup>The Constant Guarantee is a $3,000,000 fund that underwrites all investments in Crypto Lend, protecting you from losses.</p>\n    ",
         "learnMore": "Learn more here",
         "intro": {
             "desc": {
                 "1": "All lending 100% backed by Constant",
                 "2": "Interest compounded and paid every second",
-                "3": "Unlimited free withdrawals"
+                "3": "Withdraw anytime"
             }
         },
         "whyInvest": {
@@ -5324,7 +5324,7 @@
                 "desc": "Get help from 1,000s of customers."
             },
             "blog": {
-                "link": "/blog",
+                "link": "https://blog.myconstant.com",
                 "title": "Read our blog",
                 "desc": "Discover the latest news, guides, and opinon from the team and guests."
             },

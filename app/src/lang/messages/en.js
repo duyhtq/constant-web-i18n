@@ -5311,7 +5311,7 @@ export default {
         desc: 'Get help from 1,000s of customers.'
       },
       blog: {
-        link: '/blog',
+        link: 'https://blog.myconstant.com',
         title: 'Read our blog',
         desc: 'Discover the latest news, guides, and opinon from the team and guests.'
       },

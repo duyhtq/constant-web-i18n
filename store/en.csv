@@ -65,6 +65,10 @@
 %%%.user.account.totalBalance%%%,"Total Balance"
 %%%.user.account.member%%%,"Member"
 %%%.user.account.membershipReward%%%,"MEMBERSHIP REWARDS >>"
+%%%.registerBonus.title%%%,"Fancy $10 to get started?"
+%%%.registerBonus.description%%%,"Create your account and verify your ID to get a free $1500 Flex trial in your first month. We'll take the money back after 30 days, but you keep the interest."
+%%%.registerBonus.numLeft%%%,"{numLeft} BONUSES LEFT"
+%%%.registerBonus.forUsOnly%%%,"Promotion for US customers only"
 %%%.footer.referral%%%,"Share & Earn"
 %%%.footer.affiliate%%%,"Affiliate"
 %%%.footer.blog%%%,"Blog"
@@ -231,6 +235,7 @@
 %%%.exchangeInputDepositForm.depositSuccess%%%,"Your deposit was completed successfully"
 %%%.exchangeInputDepositForm.earnInterest%%%,"Earn an automatic {interest}% APY"
 %%%.exchangeInputDepositForm.depositCryptoDescription%%%,"Choose a crypto or stablecoin below and then send your funds to the wallet address shown. There is no minimum or maximum deposit."
+%%%.exchangeInputDepositForm.getCurrencyListFailed%%%,"Failed while getting supported currencies"
 %%%.history.deposit.title%%%,"Deposit History"
 %%%.history.deposit.tabs.fiat%%%,"Fiat"
 %%%.history.deposit.tabs.crypto%%%,"Crypto"
@@ -3260,6 +3265,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.yourReferral.terms.normalNonUS%%%,"        <h3 class=""semiBold"">Terms and Conditions</h3>        <ol><li><p>Your earning is paid after your referee makes the first fiat deposits.</p></li>          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>          <li><p>Referral interest is paid to you by Constant and does not deduct from your friends’ earned Flex interest.</p></li>          <li>            <p>The amount you earn depends on how your friends use the platform:</p>            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>          </li>          <li><p>You can invite as many friends as you like.</p></li>          <li><p>Your referral earnings are paid in USD, directly into your Constant account.</p></li>          <li><p>The maximum you can earn is $1,000,000.</p></li>          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p></li>          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>          <li><p>Constant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>        </ol>        <p class=""bold effective"">Effective as of 2020/02/17 00:00 AM (GMT+0)</p>      "
 %%%.landingProReferral.inviteEmail.btn%%%,"Invite"
 %%%.landingProReferral.inviteEmail.sendInvitationsSuccess%%%,"Send Invitations Successfully!"
+%%%.landingProReferral.inviteEmail.sendInvitationsFail%%%,"Send Invitations Failed!"
 %%%.landingProReferral.referral.placeholder%%%,"https://myconstant.com/?ref=1AcXa2"
 %%%.landingProReferral.referral.btn%%%,"Copy"
 %%%.landingProReferral.referral.copied%%%,"Referral link copied to clipboard."
@@ -3608,7 +3614,10 @@ Click confirm to start your term and receive your loan. Once your term begins yo
             "
 %%%.landingPage.faqs.data.6.question%%%,"What happens after the trial?"
 %%%.landingPage.faqs.data.6.answer%%%,"
-            <p>Once we’ve taken back the ${kYCTrialAmount}, you keep the interest. It’s up to you what you’d like to do next. You can keep your interest in Flex earning 4% APY with anytime free withdrawals, or you can add some of your own money and reinvest in a crypto-backed loan for {rate}% APR (minimum investment is $50). You can also just withdraw it to your bank account. The choice is yours!</p>
+               <p>Once we’ve taken back the ${kYCTrialAmount}, you keep the interest. It’s up to you what you’d like to do next. You can keep your interest in Flex earning 4% APY with anytime free withdrawals, or you can add some of your own money and reinvest in a crypto-backed loan for {rate}% APR (minimum investment is $50). You can also just withdraw it to your bank account. The choice is yours!</p>
+               <p>
+                <strong>Important note:</strong> You must deposit, withdraw, or invest within 90 days of receiving your free interest otherwise it will expire.
+               </p>
             "
 %%%.landingPage.faqs.data.7.question%%%,"How do I withdraw my interest?"
 %%%.landingPage.faqs.data.7.answer%%%,"
@@ -3626,6 +3635,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.badges.intro.congratTitle%%%,"Congratulations!"
 %%%.badges.intro.congratDesc%%%,"You've earned all our badges. But the awards aren't over yet. Stay tuned for more badges and rewards that recognize your achievements."
 %%%.badges.intro.earnDaily%%%,"Earned <strong>{amount} points</strong> for your Daily Login activity"
+%%%.badges.intro.claimedMessage%%%,"You have claimed your daily reward. Come back tomorrow for more!"
 %%%.badges.group.getting_started%%%,"Getting Started"
 %%%.badges.group.warming_up%%%,"Warming Up"
 %%%.badges.group.referring%%%,"Referring"
@@ -3822,7 +3832,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.helpAndSupport.socials.linkedin.link%%%,"https://www.linkedin.com/company/constantp2p/"
 %%%.helpAndSupport.announcements%%%,"Announcements"
 %%%.helpAndSupport.announcementsDesc%%%,"All you need to know, in one place."
-%%%.helpAndSupport.help%%%,"Help"
+%%%.helpAndSupport.helpAndSupport%%%,"Help and Support"
 %%%.helpAndSupport.categories%%%,"FAQ categories"
 %%%.helpAndSupport.form.caption%%%,"Can't find what you're looking for? Tell us what you need below."
 %%%.helpAndSupport.form.email%%%,"Your email address"

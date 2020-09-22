@@ -77,6 +77,12 @@
             "membershipReward": "%%%.user.account.membershipReward%%%"
         }
     },
+    "registerBonus": {
+        "title": "%%%.registerBonus.title%%%",
+        "description": "%%%.registerBonus.description%%%",
+        "numLeft": "%%%.registerBonus.numLeft%%%",
+        "forUsOnly": "%%%.registerBonus.forUsOnly%%%"
+    },
     "footer": {
         "referral": "%%%.footer.referral%%%",
         "affiliate": "%%%.footer.affiliate%%%",
@@ -339,7 +345,8 @@
         "deposit": "%%%.exchangeInputDepositForm.deposit%%%",
         "depositSuccess": "%%%.exchangeInputDepositForm.depositSuccess%%%",
         "earnInterest": "%%%.exchangeInputDepositForm.earnInterest%%%",
-        "depositCryptoDescription": "%%%.exchangeInputDepositForm.depositCryptoDescription%%%"
+        "depositCryptoDescription": "%%%.exchangeInputDepositForm.depositCryptoDescription%%%",
+        "getCurrencyListFailed": "%%%.exchangeInputDepositForm.getCurrencyListFailed%%%"
     },
     "history": {
         "deposit": {
@@ -4524,7 +4531,8 @@
     "landingProReferral": {
         "inviteEmail": {
             "btn": "%%%.landingProReferral.inviteEmail.btn%%%",
-            "sendInvitationsSuccess": "%%%.landingProReferral.inviteEmail.sendInvitationsSuccess%%%"
+            "sendInvitationsSuccess": "%%%.landingProReferral.inviteEmail.sendInvitationsSuccess%%%",
+            "sendInvitationsFail": "%%%.landingProReferral.inviteEmail.sendInvitationsFail%%%"
         },
         "referral": {
             "placeholder": "%%%.landingProReferral.referral.placeholder%%%",
@@ -5056,7 +5064,8 @@
             "almostDoneDesc": "%%%.badges.intro.almostDoneDesc%%%",
             "congratTitle": "%%%.badges.intro.congratTitle%%%",
             "congratDesc": "%%%.badges.intro.congratDesc%%%",
-            "earnDaily": "%%%.badges.intro.earnDaily%%%"
+            "earnDaily": "%%%.badges.intro.earnDaily%%%",
+            "claimedMessage": "%%%.badges.intro.claimedMessage%%%"
         },
         "group": {
             "getting_started": "%%%.badges.group.getting_started%%%",
@@ -5350,7 +5359,7 @@
         },
         "announcements": "%%%.helpAndSupport.announcements%%%",
         "announcementsDesc": "%%%.helpAndSupport.announcementsDesc%%%",
-        "help": "%%%.helpAndSupport.help%%%",
+        "helpAndSupport": "%%%.helpAndSupport.helpAndSupport%%%",
         "categories": "%%%.helpAndSupport.categories%%%",
         "form": {
             "caption": "%%%.helpAndSupport.form.caption%%%",

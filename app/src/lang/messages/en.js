@@ -77,6 +77,12 @@ export default {
       membershipReward: 'MEMBERSHIP REWARDS >>'
     }
   },
+  registerBonus: {
+    title: 'Fancy $10 to get started?',
+    description: "Create your account and verify your ID to get a free $1500 Flex trial in your first month. We'll take the money back after 30 days, but you keep the interest.",
+    numLeft: '{numLeft} BONUSES LEFT',
+    forUsOnly: 'Promotion for US customers only',
+  },
   footer: {
     referral: 'Share & Earn',
     affiliate: 'Affiliate',
@@ -302,6 +308,7 @@ export default {
     depositSuccess: 'Your deposit was completed successfully',
     earnInterest: 'Earn an automatic {interest}% APY',
     depositCryptoDescription: 'Choose a crypto or stablecoin below and then send your funds to the wallet address shown. There is no minimum or maximum deposit.',
+    getCurrencyListFailed: 'Failed while getting supported currencies',
   },
   history: {
     deposit: {
@@ -4504,7 +4511,8 @@ export default {
   landingProReferral: {
     inviteEmail: {
       btn: 'Invite',
-      sendInvitationsSuccess: 'Send Invitations Successfully!'
+      sendInvitationsSuccess: 'Send Invitations Successfully!',
+      sendInvitationsFail: 'Send Invitations Failed!',
     },
     referral: {
       placeholder: 'https://myconstant.com/?ref=1AcXa2',
@@ -5015,9 +5023,12 @@ export default {
         },
         '6': {
           question: 'What happens after the trial?',
-          answer: '\n' +
-          '            <p>Once we’ve taken back the ${kYCTrialAmount}, you keep the interest. It’s up to you what you’d like to do next. You can keep your interest in Flex earning 4% APY with anytime free withdrawals, or you can add some of your own money and reinvest in a crypto-backed loan for {rate}% APR (minimum investment is $50). You can also just withdraw it to your bank account. The choice is yours!</p>\n' +
-          '            '
+          answer: `
+               <p>Once we’ve taken back the \${kYCTrialAmount}, you keep the interest. It’s up to you what you’d like to do next. You can keep your interest in Flex earning 4% APY with anytime free withdrawals, or you can add some of your own money and reinvest in a crypto-backed loan for {rate}% APR (minimum investment is $50). You can also just withdraw it to your bank account. The choice is yours!</p>
+               <p>
+                <strong>Important note:</strong> You must deposit, withdraw, or invest within 90 days of receiving your free interest otherwise it will expire.
+               </p>
+            `
         },
         '7': {
           question: 'How do I withdraw my interest?',
@@ -5044,6 +5055,7 @@ export default {
       congratTitle: 'Congratulations!',
       congratDesc: 'You\'ve earned all our badges. But the awards aren\'t over yet. Stay tuned for more badges and rewards that recognize your achievements.',
       earnDaily: 'Earned <strong>{amount} points</strong> for your Daily Login activity',
+      claimedMessage: 'You have claimed your daily reward. Come back tomorrow for more!',
     },
     group: {
       getting_started: 'Getting Started',
@@ -5331,7 +5343,7 @@ export default {
     },
     announcements: 'Announcements',
     announcementsDesc: 'All you need to know, in one place.',
-    help: 'Help',
+    helpAndSupport: 'Help and Support',
     categories: 'FAQ categories',
     form: {
       caption: "Can't find what you're looking for? Tell us what you need below.",

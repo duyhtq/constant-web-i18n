@@ -4794,7 +4794,8 @@
             "already_bought_void_term_deposit": "%%%.error.serverCode.already_bought_void_term_deposit%%%",
             "firstBuy2ndOrderMessage": "%%%.error.serverCode.firstBuy2ndOrderMessage%%%",
             "undefined": "%%%.error.serverCode.undefined%%%",
-            "notEnoughConstant": "%%%.error.serverCode.notEnoughConstant%%%"
+            "notEnoughConstant": "%%%.error.serverCode.notEnoughConstant%%%",
+            "unable_to_cancel": "%%%.error.serverCode.unable_to_cancel%%%"
         },
         "expiredSession": "%%%.error.expiredSession%%%",
         "withdrawLessThanOrEqual": "%%%.error.withdrawLessThanOrEqual%%%",

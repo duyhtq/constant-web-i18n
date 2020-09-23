@@ -4801,7 +4801,7 @@ export default {
     supportCenter: 'Support Center',
     prices: 'Pricing & Service times',
     account: 'Account',
-    getStarted: 'Get Started',
+    getStarted: 'Get Started (KYC & Bank account)',
     aboutYou: 'About You',
     badges: 'Your badges',
     interest: 'Interest',

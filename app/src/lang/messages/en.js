@@ -1160,7 +1160,7 @@ export default {
       beneficiaryRegion: 'Beneficiary region',
       beneficiaryPostalCode: 'Beneficiary postal code',
       linkBankSectionTitle: 'Link your bank account',
-      linkBankSectionDesc: '<p>Deposit or withdraw using ACH bank transfers with Plaid. Link up to two bank accounts now to save time and money transferring funds to and from your Constant account.<br/>Since most savings accounts limit the number of withdrawals, we recommend you link a checking account not a savings account to avoid ACH reversals.<br/><a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">How to avoid ACH reversals</a>.</p>',
+      linkBankSectionDesc: '<p>Deposit or withdraw using ACH bank transfers with Plaid. Link up to two bank accounts now to save time and money transferring funds to and from your Constant account.<br/>Since most savings accounts limit the number of withdrawals, we recommend you link a checking account not a savings account to avoid ACH reversals.<br/><a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/" target="_blank">How to avoid ACH reversals</a>.</p>',
       linkBankImportantNote: '<strong>Please note</strong>: When you link a bank account via Plaid, your bank is assigned a unique ID. For your security, Plaid ACH deposits can only be withdrawn again <strong>via the same method and bank ID</strong> from which you deposited for a period of 60 days. This restriction <strong>does not</strong> apply to deposits via wire or Zelle.',
       unlinkBankSectionTitle: 'International Bank',
       unlinkBankSectionDesc: '<p>Nice – email confirmations are enabled on all withdrawals and transfers. Whenever you withdraw or transfer USD, cryptocurrency, or stablecoins, we’ll email you a link to authorize the transaction.</p>',
@@ -2447,7 +2447,7 @@ export default {
         partialMatchesDesc: 'Some loan requests may be split into smaller amounts to fill multiple investment orders. The platform will keep trying to match you completely for the duration of your term.',
         isolate: 'Isolate',
         payOffLoan: 'Repay',
-        isolateTooltip: 'Isolate lets you secure your loan with one collateral instead of your multi-collateral balance. <a href="https://blog.myconstant.com/multi-crypto-loans/">What’s multi-collateral?</>',
+        isolateTooltip: 'Isolate lets you secure your loan with one collateral instead of your multi-collateral balance. <a href="https://blog.myconstant.com/multi-crypto-loans/" target="_blank">What’s multi-collateral?</>',
         extraRate: 'Your total rate will be {rate}% effect from {date}',
         errorRecallLowCreditRate: '<p>To recall excess, your collateral rate must be more than {recallRate}%. Your current collateral rate is {creditRate}%</p><p>The collateral rate is in proportion with LTV and collateral prices. Please check the LTV and price for each token <a href="/withdraw-fees">here</a>.</p>',
         heading: 'Loans',
@@ -3863,7 +3863,7 @@ export default {
       <h1>Deposit {numCollateral}+ supported cryptos.<br/>Earn 4% APY on your idle stablecoins.<br/>Borrow instantly against your portfolio.</h1>
       <p/>
       <p>Deposit cryptocurrencies and stablecoins to your Constant wallet. Earn an automatic 4% APY on all USD-backed stablecoin deposits. Get an instant multi-collateral credit line from just 6% APR. Top-up collateral automatically when markets fall.</p>
-      <p><a href="https://blog.myconstant.com/how-we-protect-your-money-and-collateral/" class="underline">How we protect your assets</a></p>
+      <p><a href="https://blog.myconstant.com/how-we-protect-your-money-and-collateral/" class="underline" target="_blank">How we protect your assets</a></p>
     `,
     howItWorks: {
       title: 'How it works',
@@ -3913,12 +3913,12 @@ export default {
         desc: `<p>Keep earning between trades with a generous {interest}% APY on your idle cryptos.</p>`
       },
       2: {
-        caption: 'No fees',
-        desc: `<p>We don’t charge you a penny to invest, withdraw, or deposit (though you might pay network fees to send your crypto).</p>`
+        caption: 'No investing fees',
+        desc: `<p>We don't charge you a penny to invest or deposit (though you might pay network fees to send your crypto).</p>`
       },
       3: {
         caption: 'Withdraw anytime',
-        desc: `<p>Withdraw your cryptocurrency instantly whenever you need it. No fees and no limits.</p>`
+        desc: `<p>Withdraw your cryptocurrency instantly whenever you need it. No limits.</p>`
       },
     },
     howItWorks: {
@@ -3933,7 +3933,7 @@ export default {
       },
       2: {
         caption: 'Watch your crypto grow',
-        desc: `<p>Interest is compounded and paid every second, giving you immediate returns. When you’re ready, withdraw again to a wallet of your choice absolutely free.</p>`
+        desc: `<p>Interest is compounded and paid every second, giving you immediate returns. When you’re ready, withdraw again to a wallet of your choice.</p>`
       },
     },
   },
@@ -5075,14 +5075,15 @@ export default {
     conditions: 'Conditions',
     term: {
       '0': 'Any abuse of the Constant Badges reward program will result in immediate disqualification. Abuse includes spam, cheating, or any other fraud intended to earn badges illegitimately.',
-      '1': 'Any content you produce about Constant to claim a badge must not denigrate, disparage, or otherwise damage the Constant brand.',
+      '1': 'Any content you produce about Constant to claim a badge must not denigrate, disparage, or otherwise damage the Constant brand and you also consent to us using your content in promotional material and sharing across our website and social media platforms.',
       '2': 'You earn a reward for each badge once only.',
       '3': 'The maximum reward you can earn from the Constant Badges program is ${amount} in total.',
       '4': 'Only one Constant account per badge. Duplicate Constant accounts are disqualified.',
-      '5': "Badges are awarded retroactively but rewards apply to qualifying activities after July 16th 2020 only. For example, if you passed KYC before July 16th 2020, you'll earn the “Member” badge but not the reward.",
+      '5': 'Badges are awarded retroactively but rewards apply to qualifying activities after July 16th 2020 only. For example, if you passed KYC before July 16th 2020, you\'ll earn the “Member” badge but not the reward.',
       '6': 'Constant reserves the right to withhold rewards and change the terms and conditions of Constant Badges at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.',
       '7': 'To be eligible for rewards, you must have passed KYC.',
       '8': 'Badges awarded for depositing apply to fiat deposits only.',
+      '9': 'Each reward point expires after 180 days.',
       title: 'Terms and Conditions',
       note: 'Effective as of 2020/07/16 00:00 AM (GMT+0)'
     },
@@ -5379,7 +5380,9 @@ export default {
       desc: 'Click <strong>Book a call</strong> and we’ll call you at the time specified above.',
     },
     noResults: 'Sorry! content not found',
-    browseCategories: 'Browse categories'
+    browseCategories: 'Browse categories',
+    investLinksDesc: 'Below, you\'ll find guides and tutorials that cover all aspects of investing with MyConstant. Can\'t find what you\'re looking for? Please let us know! <a href="/help-and-support">Book a call</a> or email us on <a href="mailto://hello@myconstant.com">hello@myconstant.com</a> and we\'ll help you.',
+    borrowLinksDesc: 'Below, you\'ll find guides and tutorials that cover all aspects of borrowing with MyConstant. Can\'t find what you\'re looking for? Please let us know! <a href="/help-and-support">Book a call</a> or email us on <a href="mailto://hello@myconstant.com">hello@myconstant.com</a> and we\'ll help you.',
   },
   contactSupport: {
     title: '<strong>Need help or <br />have a question?</strong>',

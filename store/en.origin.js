@@ -5093,6 +5093,7 @@
             "6": "%%%.badges.term.6%%%",
             "7": "%%%.badges.term.7%%%",
             "8": "%%%.badges.term.8%%%",
+            "9": "%%%.badges.term.9%%%",
             "title": "%%%.badges.term.title%%%",
             "note": "%%%.badges.term.note%%%"
         },
@@ -5395,7 +5396,9 @@
             "desc": "%%%.helpAndSupport.bookingCall.desc%%%"
         },
         "noResults": "%%%.helpAndSupport.noResults%%%",
-        "browseCategories": "%%%.helpAndSupport.browseCategories%%%"
+        "browseCategories": "%%%.helpAndSupport.browseCategories%%%",
+        "investLinksDesc": "%%%.helpAndSupport.investLinksDesc%%%",
+        "borrowLinksDesc": "%%%.helpAndSupport.borrowLinksDesc%%%"
     },
     "contactSupport": {
         "title": "%%%.contactSupport.title%%%",

@@ -5293,7 +5293,8 @@
     },
     "saving": {
         "invalid_payment_method": "%%%.saving.invalid_payment_method%%%",
-        "makeLocalOrderFailed": "%%%.saving.makeLocalOrderFailed%%%"
+        "makeLocalOrderFailed": "%%%.saving.makeLocalOrderFailed%%%",
+        "invalid_amount": "%%%.saving.invalid_amount%%%"
     },
     "send": {
         "invalidBankAccountName": "%%%.send.invalidBankAccountName%%%",

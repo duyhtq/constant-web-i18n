@@ -1136,14 +1136,14 @@ export default {
       correct: 'Correct',
       incorrect: 'Incorrect',
       lUpload: 'Upload an image of THE {face} of your {type}',
-      descIDUpload: 'Please make sure that the photo is complete and clearly visible, in BMP, JPG, JPEG, or PNG format, and is smaller than 10MB.',
+      descIDUpload: 'Please make sure that the photo is complete and clearly visible, in JPG, JPEG, or PNG format, and is smaller than 10MB.',
       selfie: 'Upload an image of your SELFIE',
       btnSubmit: 'Submit',
       plAddrCountry: 'Select your country',
       plAddrCity: 'Select your city',
       titleStep2: 'Thanks. Now we need a proof of address.',
       lAddrUpload: 'To verify the address above, please upload a document that meets <a href="https://medium.com/@constantp2p/how-to-verify-your-id-on-constant-kyc-1a9d08ae0a" class="underline" target="_blank" >these criteria</a>.',
-      descAddrUpload: '<div>        <p>Valid documents: utility bill, phone bill, mortgage statement, tenancy        agreement, bank/credit card statement, insurance letter (motor, home, or        life), or financial statement (pension, endowment).</p>        <p>        <strong style="color:#F5A623;">Document must be dated within the last 90 days.</strong>        </p>        <p>        Please ensure your proof of address is an exact match with the address        provided in your application, including all shorthands and abbreviations.</p>        <p>              Please make sure that the photo is complete and clearly visible, in BMP,         JPG, JPEG, PNG or PDF format, and is smaller than 10MB.</p>      </div>      ',
+      descAddrUpload: '<div><p>Valid documents: utility bill, phone bill, mortgage statement, tenancy agreement, bank/credit card statement, insurance letter (motor, home, or life), or financial statement (pension, endowment).</p><p><strong style="color:#F5A623;">Document must be dated within the last 90 days.</strong></p><p>Please ensure your proof of address is an exact match with the address provided in your application, including all shorthands and abbreviations.</p><p>Please make sure that the photo is complete and clearly visible, in JPG, JPEG, PNG and is smaller than 10MB.</p></div>',
       btnBack: 'Back',
       reviewing: '        <p>Thanks, it’s nice to meet you.</p>        <p>          We’re looking over your information and will let you know once you’re          good to go.        </p>      ',
       rejected: '<p>We couldn’t verify your ID automatically, so your KYC documents are in manual review. It might take a little longer to verify you but no more than 7 business days. If you have any questions, please email us on <a href="mailto:hello@myconstant.com">hello@myconstant.com</a>.</p>',
@@ -1531,77 +1531,7 @@ export default {
       }
     }
   },
-  seo: {
-    homepage: {
-      title: 'Secured Peer-to-Peer Lending Platform for Crypto-Backed Loans - MyConstant',
-      keyword: 'lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online',
-      description: 'MyConstant is one of the fastest growing P2P lending platforms in the US. Lend stablecoins and USD on your own terms and interest rates or get a crypto-backed loan. Get started with online investment platform now!'
-    },
-    borrow: {
-      title: 'Get a P2P Loan Online with Low Rates - Peer to peer loans - MyConstant',
-      keyword: 'bitcoin loan, ethereum, margin trading, margin borrowing, p2p lending, cryptocurrency, constant project, constant p2p',
-      description: 'Get an easy online loan for as low as {rate}% APR through our fully secured peer-to-peer lending platform. No credit checks, no paperwork. Borrow money online and get a loan today!'
-    },
-    invest: {
-      title: 'P2P Investing - Fully Collateralized Online Investments Platform - MyConstant',
-      keyword: 'constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance',
-      description: 'Enjoy up to {rate}% returns on your alternative investments online. All lending is backed by borrower collateral. No fees. Explore the leading P2P lending platform for investors and get started with money online investment now!'
-    },
-    loanOriginator: {
-      title: 'Loan Originators - Earn up to 11% APR Investing in Loans - MyConstant',
-      keyword: 'p2p lenders,buyback guarantee',
-      description: 'MyConstant works with the top loan originators in the world to give investors more choice and better returns. We offer loans with buyback guarantee to protect our investors'
-    },
-    cryptoLend: {
-      title: 'Crypto Lending - Make your crypto work for you - MyConstant',
-      keyword: 'crypto lending platform, p2p cryto lending',
-      description: 'Earn 9% APY on BTC, ETH, and BNB on MyConstant Crypto Lending platform. Send your cryptocurrencies to our P2P crypto lending and earn interest on transactions. Withdraw anytime. No fees. Compounded every second.'
-    },
-    cryptoCredit: {
-      title: 'Crypro Credit - Peer-to-Peer Lending Platform - MyConstant',
-      keyword: 'crypto credit',
-      description: 'Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.'
-    },
-    flex: {
-      title: 'Enjoy 50x Better Interest than a Savings Account - MyConstant',
-      keyword: 'constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance, passive income, saving account, online saving platform',
-      description: 'Join our Flex lending pool to earn 4% APY on your investments. All lending is protected by collateral, and interest is compounded and paid every second. Withdraw anytime for free.'
-    },
-    aboutUs: {
-      title: 'Our Story - The Leading Fully Secured Peer-to-Peer Lending Platform - MyConstant',
-      keyword: 'lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online',
-      description: 'Learn about MyConstant and our mission to help you do more with your money though our fully secured peer-to-peer lending platform. MyConstant: an online investment platform that puts customers first.'
-    },
-    pricing: {
-      title: 'Pricing and Service Times - Peer-to-Peer Lending Platform - MyConstant',
-      keyword: 'lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online',
-      description: 'From fees to processing times, find everything you need to know about how we handle your deposits, investments, and crypto-backed loans.'
-    },
-    withdraw: {
-      title: 'Withdraw Fiat - Peer-to-Peer Lending Platform - MyConstant',
-      keyword: 'lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online',
-      description: 'Withdraw Fiat - Peer-to-Peer Lending Platform - MyConstant'
-    },
-    sendCrypto: {
-      title: 'Withdraw Crypto - Peer-to-Peer Lending Platform - MyConstant',
-      keyword: 'lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online',
-      description: 'Withdraw crypto straight to your wallet of choice. No fees. '
-    },
-    transfer: {
-      title: 'Secured peer-to-peer lending platform for cryptocurrency bitcoin loan',
-      keyword: 'lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online',
-      description: 'MyConstant is the P2P lending platform built on P2P technology with the fastest growth rate in Asia. Lend stablecoin and fiat with your own terms and interest rates or borrow money using cryptocurrency as collateral in this defi product.Fully secured by borrower collateral and smart contracts'
-    },
-    proLending: {
-      title: 'Lend money with best rate in the market, secured by collateral',
-      keyword: 'constant project, peer to peer lending investing, lending club, p2p, money lenders, best peer to peer lending, lend money, lender finance',
-      description: 'MyConstant P2P lending platform accepts all types of fiat and stablecoin as investment. Earn minimum 10% on any amount. All investments are secured by FDIC insurance and borrower collateral'
-    }
-  },
-  ourPress: {
-    mobileTitle: 'Our <span style="color: #F9A00F">Press</span>',
-    title: 'Our Press',
-  },
+  ourPress: { title: 'Our Press' },
   testimonials: {
     title: 'Let’s get to know each other better',
     desc: 'Transparency is important to us. Below, you’ll find reviews, testimonials, case studies, and other important information so you can use our platform with confidence.',
@@ -1668,7 +1598,7 @@ export default {
       subTitle: '<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee. Earn across multiple markets, spreading risk and maximizing reward.</p>        <p>Or, borrow against {numCollateral}+ cryptocurrencies to get the cash you need, instantly. Your crypto is securely held until you repay. Unlock the value of your crypto without selling up. </p>        <p>While not on loan or waiting for a match, your funds earn an automatic 4% APY, and you can withdraw anytime for free. So no downtime, no wasted earnings.</p>',
       subTitleShort: '<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee...</p>',
       subTitle2: '<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee. Earn across multiple markets, spreading risk and maximizing reward.</p>',
-      newMessage: 'Is it better to pay off debt or invest? >>>',
+      newMessage: 'Why invest with MyConstant?',
       viewMore: '...more',
       intro: {
         youtube: { title: 'Fully Secured Peer To Peer Lending - How It Works' }
@@ -3995,7 +3925,7 @@ export default {
   cryptoLend: {
     contentHtml: `
       <p class="topText">Secured crypto lending</p>
-      <h1 class="hightlight">Earn {interest}% APY on BTC, ETH, and BNB.</h1>
+      <h1 class="hightlight">Earn {interest}% APY <br/>on BTC, ETH, and BNB.</h1>
       <div class="h1">Compounded and paid every second.</div>
       <div class="h1 last">Backed by MyConstant.</div>
       <p>Invest your idle cryptocurrencies for a return of {interest}% APY. All lending is backed by MyConstant Guarantee<sup>1</sup> and you can withdraw anytime for free. No fees. No lock-ups. Compounded every second.</p>
@@ -4899,6 +4829,7 @@ export default {
   },
   menuMobile: {
     btnSignIn: 'Log In',
+    btnSignUp: 'Sign Up',
     btnReferral: 'Share & Earn',
     btnTransfer: 'Transfer',
     btnWithdrawFiat: '<div class="textLeft"><small>Withdraw</small><div>USD</div></div>',

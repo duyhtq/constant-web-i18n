@@ -1586,75 +1586,7 @@
             }
         }
     },
-    "seo": {
-        "homepage": {
-            "title": "%%%.seo.homepage.title%%%",
-            "keyword": "%%%.seo.homepage.keyword%%%",
-            "description": "%%%.seo.homepage.description%%%"
-        },
-        "borrow": {
-            "title": "%%%.seo.borrow.title%%%",
-            "keyword": "%%%.seo.borrow.keyword%%%",
-            "description": "%%%.seo.borrow.description%%%"
-        },
-        "invest": {
-            "title": "%%%.seo.invest.title%%%",
-            "keyword": "%%%.seo.invest.keyword%%%",
-            "description": "%%%.seo.invest.description%%%"
-        },
-        "loanOriginator": {
-            "title": "%%%.seo.loanOriginator.title%%%",
-            "keyword": "%%%.seo.loanOriginator.keyword%%%",
-            "description": "%%%.seo.loanOriginator.description%%%"
-        },
-        "cryptoLend": {
-            "title": "%%%.seo.cryptoLend.title%%%",
-            "keyword": "%%%.seo.cryptoLend.keyword%%%",
-            "description": "%%%.seo.cryptoLend.description%%%"
-        },
-        "cryptoCredit": {
-            "title": "%%%.seo.cryptoCredit.title%%%",
-            "keyword": "%%%.seo.cryptoCredit.keyword%%%",
-            "description": "%%%.seo.cryptoCredit.description%%%"
-        },
-        "flex": {
-            "title": "%%%.seo.flex.title%%%",
-            "keyword": "%%%.seo.flex.keyword%%%",
-            "description": "%%%.seo.flex.description%%%"
-        },
-        "aboutUs": {
-            "title": "%%%.seo.aboutUs.title%%%",
-            "keyword": "%%%.seo.aboutUs.keyword%%%",
-            "description": "%%%.seo.aboutUs.description%%%"
-        },
-        "pricing": {
-            "title": "%%%.seo.pricing.title%%%",
-            "keyword": "%%%.seo.pricing.keyword%%%",
-            "description": "%%%.seo.pricing.description%%%"
-        },
-        "withdraw": {
-            "title": "%%%.seo.withdraw.title%%%",
-            "keyword": "%%%.seo.withdraw.keyword%%%",
-            "description": "%%%.seo.withdraw.description%%%"
-        },
-        "sendCrypto": {
-            "title": "%%%.seo.sendCrypto.title%%%",
-            "keyword": "%%%.seo.sendCrypto.keyword%%%",
-            "description": "%%%.seo.sendCrypto.description%%%"
-        },
-        "transfer": {
-            "title": "%%%.seo.transfer.title%%%",
-            "keyword": "%%%.seo.transfer.keyword%%%",
-            "description": "%%%.seo.transfer.description%%%"
-        },
-        "proLending": {
-            "title": "%%%.seo.proLending.title%%%",
-            "keyword": "%%%.seo.proLending.keyword%%%",
-            "description": "%%%.seo.proLending.description%%%"
-        }
-    },
     "ourPress": {
-        "mobileTitle": "%%%.ourPress.mobileTitle%%%",
         "title": "%%%.ourPress.title%%%"
     },
     "testimonials": {
@@ -4889,6 +4821,7 @@
     },
     "menuMobile": {
         "btnSignIn": "%%%.menuMobile.btnSignIn%%%",
+        "btnSignUp": "%%%.menuMobile.btnSignUp%%%",
         "btnReferral": "%%%.menuMobile.btnReferral%%%",
         "btnTransfer": "%%%.menuMobile.btnTransfer%%%",
         "btnWithdrawFiat": "%%%.menuMobile.btnWithdrawFiat%%%",

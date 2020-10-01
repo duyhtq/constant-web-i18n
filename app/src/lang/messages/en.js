@@ -646,7 +646,6 @@ export default {
         saving_title: 'Investments',
         loanOriginatorInvestments: 'Loan Originator Investments',
         loans_title: 'Loans',
-        coin2coin_title: 'Crypto Credit',
         secondInvestments: 'Secondary Market',
         secondInvestmentsLO: 'Loan Originator Secondary Market',
         secondInvestmentsLODesc: 'Buy and sell matched investments on our secondary market. Sell your investment to end your term early or buy another investor’s order to earn their interest. View or cancel your secondary market orders below.',
@@ -928,7 +927,6 @@ export default {
         totalInterestEarned: 'Interest earned',
         noRecord: 'You have not made any investments yet.',
         getListFailed: 'Sorry, something went wrong. Please try again.',
-        staking: 'Stake balance',
         received: 'received',
         interestAmount: 'Total interest',
         haveTimeAccount: '{term}-{termType} investment',
@@ -1085,7 +1083,6 @@ export default {
       openOrders: 'Open Orders',
       interests: 'Interest',
       referral: 'Referral',
-      staking: 'Your staking history',
       constantWallet: 'MyConstant Wallet',
       viewConstantWallet: 'Receive CONST here',
       fiatStableCoin: 'Fiat - Stablecoins',
@@ -1312,30 +1309,6 @@ export default {
     },
     batchTransfer: { title: 'Batch Transfers' },
     referralInfo: { title: 'Referral Information' },
-    staking: {
-      staking: 'Stake',
-      unStaking: 'Unstake',
-      reward: 'Reward',
-      rewardWithdraw: 'Withdraw',
-      matched: 'Matched: {amount} {symbol}',
-      date: 'Date',
-      status: {
-        '0': 'Pending',
-        '1': 'Done',
-        '2': 'Received',
-        '3': 'Expired',
-        '4': 'Allocating',
-        '5': 'Allocated',
-        '6': 'Voting',
-        '7': 'Voted',
-        '8': 'Failed',
-        '9': 'UnVoting',
-        '10': 'UnVoted',
-        '11': 'Transfering',
-        '12': 'Cancelled',
-        '13': 'Reward Pending'
-      }
-    },
     wallet: {
       title: 'Receive CONST here. Trying to deposit crypto collateral? Please do so from the Coin Balance'
     },
@@ -1412,6 +1385,7 @@ export default {
       updatedSuccess: 'Your information was updated successfully',
       updatedFailed: 'Failed while updating your information, please try again!',
       checkVerifyFailed: 'Failed while checking your verify status',
+      statusUnverified: 'Please verify your ID to start investing with us',
       statusUnverifiedUS: 'Please verify your ID to get a ',
       statusLinkBanks: 'Please link your bank to get started.',
       action: {
@@ -1531,7 +1505,10 @@ export default {
       }
     }
   },
-  ourPress: { title: 'Our Press' },
+  ourPress: {
+    mobileTitle: 'Our <span style="color: #F9A00F">Press</span>',
+    title: 'Our Press',
+  },
   testimonials: {
     title: 'Let’s get to know each other better',
     desc: 'Transparency is important to us. Below, you’ll find reviews, testimonials, case studies, and other important information so you can use our platform with confidence.',
@@ -1632,7 +1609,7 @@ export default {
         viewAll: 'View us on TrustPilot',
         readMore: 'Read more',
         reviews: 'Reviews',
-        numReview: '468',
+        numReview: '542',
         excellent: 'Excellent',
         points: '4.6/5',
         data : {
@@ -3074,7 +3051,7 @@ export default {
   support: {
     newTitle: `
     <h6>Questions? Let's get on a call.</h6>
-    <h6>Set up a time <a href="/call-us">here</a>.</h6>`
+    <h6>Set up a time <a href="/help-and-support">here</a>.</h6>`
   },
   home1: {
     lendingSection: {
@@ -3233,19 +3210,26 @@ export default {
       data: {
         0: {
           title: 'Match instantly',
-          desc: '<p>Your investment funds a lending pool from which borrowers get loans in return for interest. The longer you leave your money in the pool, the more interest you earn.</p>',
+          desc: `<p>Your investment funds a lending pool from which borrowers get loans in return for interest. The longer you leave your money in the pool, the more interest you earn.</p>`,
         },
         1: {
           title: 'Invest or insure deposits',
-          desc: '<p>Earn 4% APY on your balance with Flex. Or, insure your balance up to $130,000,000 with our custodial partner, Prime Trust.</p>      <br />      <a href="https://blog.myconstant.com/flex-or-prime-trust-constant" target="_blank">Your balance, your choice.</a>',
+          desc: `
+            <p>Earn 4% APY on your balance with Flex. Or, insure your balance up to $130,000,000 with our custodial partner, Prime Trust.</p>
+            <a href="https://blog.myconstant.com/flex-or-prime-trust-constant" target="_blank">Your balance, your choice.</a>
+          `,
         },
         2: {
           title: 'Collateral backed',
-          desc: `<p>Every loan is up to 200% backed by cryptocurrency collateral. To borrow $10,000, for example, a borrower must put up to $20,000 worth of cryptocurrency into escrow. Then if the borrower defaults, we sell the collateral to repay you. </p>      <br />      <p>So if borrowers default, you don’t lose a cent.</p>      <br />      <a href="https://blog.myconstant.com/how-constant-protects-money-and-collateral" target="_blank">How we protect investors' funds.</a>`,
+          desc: `
+            <p>Every loan is up to 200% backed by cryptocurrency collateral. To borrow $10,000, for example, a borrower must put up to $20,000 worth of cryptocurrency into escrow. Then if the borrower defaults, we sell the collateral to repay you. </p>
+            <p>So if borrowers default, you don’t lose a cent.</p>
+            <a href="https://blog.myconstant.com/how-constant-protects-money-and-collateral" target="_blank">How we protect investors' funds.</a>
+          `,
         },
         3: {
           title: 'Built for you',
-          desc: '<p>Enjoy 24-7 customer service, unlimited free withdrawals, and a library of useful content to help you do more with your money. MyConstant is an open, alternative financial platform and you can <a href="https://github.com/constant-money" target="_blank">view all our code</a> as well as suggest features you’d like to see</p>',
+          desc: '<p>Enjoy 24-7 customer service, unlimited free withdrawals, and a library of useful content to help you do more with your money.</p>',
         }
       }
     },
@@ -4790,7 +4774,7 @@ export default {
   },
   error: {
     serverCode: {
-      otpNotMatched: 'Google authentication code not matched, please try again.',
+      otpNotMatched: 'Sorry, your Google authentication code didn\'t match. Please check and try again. If the problem continues, check the date set on your phone. Google authentication won\'t work if the date set on your phone is incorrect.',
       invalidStatus: 'This order has been processed. Please refresh the page to see update!',
       requestFailed: 'Something went wrong. Please refresh your browser and try again.',
       need_kyc: 'For your security, please verify your identity before investing or withdrawing fiat (USD, for example). This step isn’t required for stablecoins.',
@@ -4826,6 +4810,7 @@ export default {
     mustBeANumber: 'Please enter a valid number',
     mustBeAPositiveInteger: 'Please enter a valid number',
     mustBeAIntergerNumber: 'Please enter a valid number',
+    reachDayLimit: 'You have reached the daily withdrawal limit of this payment method. Please try other available methods.',
   },
   menuMobile: {
     btnSignIn: 'Log In',
@@ -5108,6 +5093,23 @@ export default {
       earnDaily: 'Earned <strong>{amount} points</strong> for your Daily Login activity',
       claimedMessage: 'You have claimed your daily reward. Come back tomorrow for more!',
     },
+    badge: {
+      membership_gold: {
+        title: 'Gold Membership',
+        description: 'To qualify for badges and rewards, you must invest $25,000 in total within 180 days and keep that investment until the term ends (after leaving a review on Trustpilot). <a href="/membership">See more benefits.</a>',
+        name: 'Gold Membership'
+      },
+      membership_platinum: {
+        title: 'Platinum Membership',
+        description: 'To qualify for badges and rewards, you must invest $50,000 in total within 180 days and keep that investment until the term ends (after leaving a review on Trustpilot). <a href="/membership">See more benefits.</a>',
+        name: 'Platinum Membership'
+      },
+      membership_diamond: {
+        title: 'Diamond Membership',
+        description: 'To qualify for badges and rewards, you must invest $100,000 in total within 180 days and keep that investment until the term ends (after leaving a review on Trustpilot). <a href="/membership">See more benefits.</a>',
+        name: 'Diamond Membership'
+      },
+    },
     group: {
       getting_started: 'Getting Started',
       warming_up: 'Warming Up',
@@ -5304,5 +5306,19 @@ export default {
     "lb_interest_rate": "Interest rate",
     "lb_loan_term": "Loan term",
     "up_to": "Up to {value}%",
+  },
+  productsAndBenefits: {
+    title: 'Our products and benefits',
+    desc: 'Below is a handy comparison chart of our products and benefits.',
+    invest: 'INVEST',
+    borrow: 'BORROW',
+    benefit: 'BENEFITS',
+    flex: 'Flex',
+    cryptoBacked: 'Crypto-backed',
+    cryptoLend: 'Crypto Lend',
+    loanOriginator: `Loan Originator<br /><span class="soon">(coming soon)</span>`,
+    cryptoBackedLoan: 'Crypto-backed loans',
+    viewAll: 'Show all Our Products & Benefits',
+    products: 'PRODUCTS',
   }
 };

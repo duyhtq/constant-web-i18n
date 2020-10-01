@@ -696,7 +696,6 @@
                 "saving_title": "Investments",
                 "loanOriginatorInvestments": "Loan Originator Investments",
                 "loans_title": "Loans",
-                "coin2coin_title": "Crypto Credit",
                 "secondInvestments": "Secondary Market",
                 "secondInvestmentsLO": "Loan Originator Secondary Market",
                 "secondInvestmentsLODesc": "Buy and sell matched investments on our secondary market. Sell your investment to end your term early or buy another investor’s order to earn their interest. View or cancel your secondary market orders below.",
@@ -978,7 +977,6 @@
                 "totalInterestEarned": "Interest earned",
                 "noRecord": "You have not made any investments yet.",
                 "getListFailed": "Sorry, something went wrong. Please try again.",
-                "staking": "Stake balance",
                 "received": "received",
                 "interestAmount": "Total interest",
                 "haveTimeAccount": "{term}-{termType} investment",
@@ -1130,7 +1128,6 @@
             "openOrders": "Open Orders",
             "interests": "Interest",
             "referral": "Referral",
-            "staking": "Your staking history",
             "constantWallet": "MyConstant Wallet",
             "viewConstantWallet": "Receive CONST here",
             "fiatStableCoin": "Fiat - Stablecoins",
@@ -1367,30 +1364,6 @@
         "referralInfo": {
             "title": "Referral Information"
         },
-        "staking": {
-            "staking": "Stake",
-            "unStaking": "Unstake",
-            "reward": "Reward",
-            "rewardWithdraw": "Withdraw",
-            "matched": "Matched: {amount} {symbol}",
-            "date": "Date",
-            "status": {
-                "0": "Pending",
-                "1": "Done",
-                "2": "Received",
-                "3": "Expired",
-                "4": "Allocating",
-                "5": "Allocated",
-                "6": "Voting",
-                "7": "Voted",
-                "8": "Failed",
-                "9": "UnVoting",
-                "10": "UnVoted",
-                "11": "Transfering",
-                "12": "Cancelled",
-                "13": "Reward Pending"
-            }
-        },
         "wallet": {
             "title": "Receive CONST here. Trying to deposit crypto collateral? Please do so from the Coin Balance"
         },
@@ -1467,6 +1440,7 @@
             "updatedSuccess": "Your information was updated successfully",
             "updatedFailed": "Failed while updating your information, please try again!",
             "checkVerifyFailed": "Failed while checking your verify status",
+            "statusUnverified": "Please verify your ID to start investing with us",
             "statusUnverifiedUS": "Please verify your ID to get a ",
             "statusLinkBanks": "Please link your bank to get started.",
             "action": {
@@ -1587,6 +1561,7 @@
         }
     },
     "ourPress": {
+        "mobileTitle": "Our <span style=\"color: #F9A00F\">Press</span>",
         "title": "Our Press"
     },
     "testimonials": {
@@ -1690,89 +1665,89 @@
                 "viewAll": "View us on TrustPilot",
                 "readMore": "Read more",
                 "reviews": "Reviews",
-                "numReview": "468",
+                "numReview": "542",
                 "excellent": "Excellent",
                 "points": "4.6/5",
                 "data": {
                     "0": {
                         "star": "5",
-                        "title": "Making Money While Sleeping.",
-                        "desc": "\nSo far so good! I transferred a large amount to fund multiple investments and two have matured recently without issue. I worked and sacrificed to save up for years and once I learned my money could make money, discovering Constant was a dream come true      ",
-                        "date": "Sep 23, 2020",
-                        "auth": "Adrian N",
-                        "link": "https://www.trustpilot.com/users/5f6aced77c45b6935275cdc4"
+                        "title": "OVERALL it’s a great app so far!",
+                        "desc": "So far my experience with my constant is going great! Still haven’t fully taken the time to completely experience everything about it, as in the withdrawal funds, acquire loans or even giving one out. But will be doing that here in a bit. OVERALL it’s a great app so far! Thank you!",
+                        "date": "Sep 29, 2020",
+                        "auth": "Josh Goodheart",
+                        "link": "https://www.trustpilot.com/reviews/5f73e723798e6f0aa4e796da"
                     },
                     "1": {
                         "star": "5",
-                        "title": "Very Satisfied Customer.",
-                        "desc": "\nI've been using MyConstant for over a year now, and I've been very pleased. They've been expanding their offerings and offer much better interest than what I can get at the regular Savings account      ",
-                        "date": "Sep 23, 2020",
-                        "auth": "Brad Doles",
-                        "link": "https://www.trustpilot.com/reviews/5f6a9331798e6f09601dc2fc"
+                        "title": "Thumbs Up",
+                        "desc": "Just started using the app but it's very innovative and intuitive. Great interface and usability with many ways to grow your $ in the crypto space. The welcome bonus is also dope.",
+                        "date": "Sep 29, 2020",
+                        "auth": "Brian",
+                        "link": "https://www.trustpilot.com/reviews/5f73d03e798e6f09602330e0"
                     },
                     "2": {
                         "star": "5",
-                        "title": "Everything is going just like shown!!",
-                        "desc": "\nThey are dependable and honest. Great way to invest money without literally investing. Apr rates are great and 4% to 11%      ",
-                        "date": "Sep 22, 2020",
-                        "auth": "Kiana",
-                        "link": "https://www.trustpilot.com/reviews/5f697f7502e8570a4877aa18"
+                        "title": "I use MyConstant website every day!",
+                        "desc": "It is simple intrest bases on your preference of 30 days, 90 days or 180 days. You can also earn free badges that unlock extra cash for your account. Withdraw your money anytime and refere friends for rewards! I would highly recommend downloading and using this app. Dont let your money set idle in your savings let it make money for you.",
+                        "date": "Sep 29, 2020",
+                        "auth": "Zack Billy",
+                        "link": "https://www.trustpilot.com/reviews/5f733939798e6f0aa4e7262c"
                     },
                     "3": {
                         "star": "5",
-                        "title": "So far so good.",
-                        "desc": "\nSo far so good. First time user so I'm just learning. New to investing as well. The App itself is easy and pretty much self explanatory      ",
-                        "date": "Sep 22, 2020",
-                        "auth": "Danielle Macias",
-                        "link": "https://www.trustpilot.com/reviews/5f68f28102e8570acc3d4aa1"
+                        "title": "MyConstant - A great Savings Platform",
+                        "desc": "MyConstant a great platform offering the best interest for your hard earning savings. It is well above the typical bank savings rate. It is always good to see your money growing. :) Great customer service. 100% recommended.!!",
+                        "date": "Sep 29, 2020",
+                        "auth": "Ronak Brahmbhatt",
+                        "link": "https://www.trustpilot.com/reviews/5f71dc59798e6f0aa4e64d87"
                     },
                     "4": {
                         "star": "5",
-                        "title": "I really Like My Constant…",
-                        "desc": "\nIt is easy to navigate and fun to use. It offers great products and services and a great learning experience! I really enjoy checking their investment products and earning their rewards      ",
-                        "date": "Sep 21, 2020",
-                        "auth": "Delia Vallarta",
-                        "link": "https://www.trustpilot.com/reviews/5f68020f02e8570acc3c9e56"
+                        "title": "MyConstant is transparent!!!",
+                        "desc": "It is a simple and great way to save money simultaneously while investing. I want to build my wealth constantly. I have been testing them for a month. I had to contact customer service twice through email and they are prompt when contacting them during business hours.",
+                        "date": "Sep 27, 2020",
+                        "auth": "Tracy M.",
+                        "link": "https://www.trustpilot.com/reviews/5f710290798e6f0960218451"
                     },
                     "5": {
                         "star": "5",
-                        "title": "A New Beginning",
-                        "desc": "\nI have only been with constant for a couple of months, it is one of the best experiences I have ever had the pleasure to be a part of. I have watched my money grow almost instantly. I recommend myconstant to any and everybody you can't go wrong      ",
-                        "date": "Sep 20, 2020",
-                        "auth": "Roland Garcia",
-                        "link": "https://www.trustpilot.com/reviews/5f674f3102e8570a48767dbd"
+                        "title": "Nice way to diversify my investments.",
+                        "desc": "I have been using my constant for a little over a month now. So far I have been happy with my experience, the interest rates are better than any of my savings accounts and with flex my funds are still available if I need to get them quickly. Nice way to diversify my investments. Would strongly recommend.",
+                        "date": "Sep 27, 2020",
+                        "auth": "Nathan Roller",
+                        "link": "https://www.trustpilot.com/reviews/5f701da6798e6f0aa4e574c5"
                     },
                     "6": {
                         "star": "5",
-                        "title": "So Far MyConstant Rocks; Updates Will Follow",
-                        "desc": "\nI have been with MyConstant now for a year and it has been a great experience for me since it gives me more interest my money than any traditional bank would      ",
-                        "date": "Sep 20, 2020",
-                        "auth": "Opeoluwa",
-                        "link": "https://www.trustpilot.com/reviews/5f674d6b02e8570a48767cd0"
+                        "title": "Great app",
+                        "desc": "I'm new to the app and I like it so far and I'm really enjoying it very much and I'm still learning how to use it. It very interesting and I'm learning how to understand it and how it works. I would recommend try this app to everyone I know it worth it",
+                        "date": "Sep 27, 2020",
+                        "auth": "Eric L Turman",
+                        "link": "https://www.trustpilot.com/reviews/5f6fc6ce798e6f0960210768"
                     },
                     "7": {
                         "star": "5",
-                        "title": "I joined myconstant alittle over a week!",
-                        "desc": "\nI joined myconstant alittle over a week ago. still getting used to navigating the website but i love how easy it is to start making at least 4% on your savings. I totally trust investing my hard earned money with this company and i've already got 2 of my siblings to invest too      ",
-                        "date": "Sep 20, 2020",
-                        "auth": "Timothy Kelly",
-                        "link": "https://www.trustpilot.com/reviews/5f66eaf702e8570acc3c25cd"
+                        "title": "I love the service",
+                        "desc": "It’s a great place to diversify some investments at a better rate than banks and low risk. Also good to park your crypto.",
+                        "date": "Sep 26, 2020",
+                        "auth": "Santiago Martinez",
+                        "link": "https://www.trustpilot.com/reviews/5f6fa839798e6f096020fd7b"
                     },
                     "8": {
                         "star": "5",
-                        "title": "The team at Constant has been been very responsive",
-                        "desc": "\nThe team at Constant has been great with any issues. Very responsive! A great place to help store cash and/or lend money safely with solid returns      ",
-                        "date": "Sep 19, 2020",
-                        "auth": "Chris Okeson",
-                        "link": "https://www.trustpilot.com/reviews/5f655d2602e8570acc3b7f1d"
+                        "title": "Great place to invest your money",
+                        "desc": "A very unique lending platform that shows a lot of promise. Easy to use app and it really does grow your money!!",
+                        "date": "Sep 26, 2020",
+                        "auth": "Mhooner",
+                        "link": "https://www.trustpilot.com/reviews/5f6eb2c5798e6f0aa4e4d8f7"
                     },
                     "9": {
                         "star": "5",
-                        "title": "Go Constant!",
-                        "desc": "\nOk now I can honestly say I've used the platform to invest, borrow, and withdraw money and crypto. It works the rates are real the people are real and that is a huge thing now days      ",
-                        "date": "Sep 18, 2020",
-                        "auth": "Marshall Tanner",
-                        "link": "https://www.trustpilot.com/reviews/5f63f86b02e8570a4874afb0"
+                        "title": "Constant has been great for me.",
+                        "desc": "Every payday I deposit some money in and let it gain interest from lending out my money or keeping it stored in my account either way I earn!",
+                        "date": "Sep 25, 2020",
+                        "auth": "Churchbroom",
+                        "link": "https://www.trustpilot.com/reviews/5f6d97f4798e6f0aa4e3ec39"
                     }
                 }
             },
@@ -3127,7 +3102,7 @@
         }
     },
     "support": {
-        "newTitle": "\n    <h6>Questions? Let's get on a call.</h6>\n    <h6>Set up a time <a href=\"/call-us\">here</a>.</h6>"
+        "newTitle": "\n    <h6>Questions? Let's get on a call.</h6>\n    <h6>Set up a time <a href=\"/help-and-support\">here</a>.</h6>"
     },
     "home1": {
         "lendingSection": {
@@ -3266,15 +3241,15 @@
                 },
                 "1": {
                     "title": "Invest or insure deposits",
-                    "desc": "<p>Earn 4% APY on your balance with Flex. Or, insure your balance up to $130,000,000 with our custodial partner, Prime Trust.</p>      <br />      <a href=\"https://blog.myconstant.com/flex-or-prime-trust-constant\" target=\"_blank\">Your balance, your choice.</a>"
+                    "desc": "\n            <p>Earn 4% APY on your balance with Flex. Or, insure your balance up to $130,000,000 with our custodial partner, Prime Trust.</p>\n            <a href=\"https://blog.myconstant.com/flex-or-prime-trust-constant\" target=\"_blank\">Your balance, your choice.</a>\n          "
                 },
                 "2": {
                     "title": "Collateral backed",
-                    "desc": "<p>Every loan is up to 200% backed by cryptocurrency collateral. To borrow $10,000, for example, a borrower must put up to $20,000 worth of cryptocurrency into escrow. Then if the borrower defaults, we sell the collateral to repay you. </p>      <br />      <p>So if borrowers default, you don’t lose a cent.</p>      <br />      <a href=\"https://blog.myconstant.com/how-constant-protects-money-and-collateral\" target=\"_blank\">How we protect investors' funds.</a>"
+                    "desc": "\n            <p>Every loan is up to 200% backed by cryptocurrency collateral. To borrow $10,000, for example, a borrower must put up to $20,000 worth of cryptocurrency into escrow. Then if the borrower defaults, we sell the collateral to repay you. </p>\n            <p>So if borrowers default, you don’t lose a cent.</p>\n            <a href=\"https://blog.myconstant.com/how-constant-protects-money-and-collateral\" target=\"_blank\">How we protect investors' funds.</a>\n          "
                 },
                 "3": {
                     "title": "Built for you",
-                    "desc": "<p>Enjoy 24-7 customer service, unlimited free withdrawals, and a library of useful content to help you do more with your money. MyConstant is an open, alternative financial platform and you can <a href=\"https://github.com/constant-money\" target=\"_blank\">view all our code</a> as well as suggest features you’d like to see</p>"
+                    "desc": "<p>Enjoy 24-7 customer service, unlimited free withdrawals, and a library of useful content to help you do more with your money.</p>"
                 }
             }
         },
@@ -4782,7 +4757,7 @@
     },
     "error": {
         "serverCode": {
-            "otpNotMatched": "Google authentication code not matched, please try again.",
+            "otpNotMatched": "Sorry, your Google authentication code didn't match. Please check and try again. If the problem continues, check the date set on your phone. Google authentication won't work if the date set on your phone is incorrect.",
             "invalidStatus": "This order has been processed. Please refresh the page to see update!",
             "requestFailed": "Something went wrong. Please refresh your browser and try again.",
             "need_kyc": "For your security, please verify your identity before investing or withdrawing fiat (USD, for example). This step isn’t required for stablecoins.",
@@ -4817,7 +4792,8 @@
         "lessThanEqual": "Please enter a number smaller than {max}",
         "mustBeANumber": "Please enter a valid number",
         "mustBeAPositiveInteger": "Please enter a valid number",
-        "mustBeAIntergerNumber": "Please enter a valid number"
+        "mustBeAIntergerNumber": "Please enter a valid number",
+        "reachDayLimit": "You have reached the daily withdrawal limit of this payment method. Please try other available methods."
     },
     "menuMobile": {
         "btnSignIn": "Log In",
@@ -5080,6 +5056,23 @@
             "earnDaily": "Earned <strong>{amount} points</strong> for your Daily Login activity",
             "claimedMessage": "You have claimed your daily reward. Come back tomorrow for more!"
         },
+        "badge": {
+            "membership_gold": {
+                "title": "Gold Membership",
+                "description": "To qualify for badges and rewards, you must invest $25,000 in total within 180 days and keep that investment until the term ends (after leaving a review on Trustpilot). <a href=\"/membership\">See more benefits.</a>",
+                "name": "Gold Membership"
+            },
+            "membership_platinum": {
+                "title": "Platinum Membership",
+                "description": "To qualify for badges and rewards, you must invest $50,000 in total within 180 days and keep that investment until the term ends (after leaving a review on Trustpilot). <a href=\"/membership\">See more benefits.</a>",
+                "name": "Platinum Membership"
+            },
+            "membership_diamond": {
+                "title": "Diamond Membership",
+                "description": "To qualify for badges and rewards, you must invest $100,000 in total within 180 days and keep that investment until the term ends (after leaving a review on Trustpilot). <a href=\"/membership\">See more benefits.</a>",
+                "name": "Diamond Membership"
+            }
+        },
         "group": {
             "getting_started": "Getting Started",
             "warming_up": "Warming Up",
@@ -5282,5 +5275,19 @@
         "lb_interest_rate": "Interest rate",
         "lb_loan_term": "Loan term",
         "up_to": "Up to {value}%"
+    },
+    "productsAndBenefits": {
+        "title": "Our products and benefits",
+        "desc": "Below is a handy comparison chart of our products and benefits.",
+        "invest": "INVEST",
+        "borrow": "BORROW",
+        "benefit": "BENEFITS",
+        "flex": "Flex",
+        "cryptoBacked": "Crypto-backed",
+        "cryptoLend": "Crypto Lend",
+        "loanOriginator": "Loan Originator<br /><span class=\"soon\">(coming soon)</span>",
+        "cryptoBackedLoan": "Crypto-backed loans",
+        "viewAll": "Show all Our Products & Benefits",
+        "products": "PRODUCTS"
     }
 }

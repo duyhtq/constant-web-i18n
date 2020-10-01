@@ -696,7 +696,6 @@
                 "saving_title": "%%%.me.proSaving.listApplications.saving_title%%%",
                 "loanOriginatorInvestments": "%%%.me.proSaving.listApplications.loanOriginatorInvestments%%%",
                 "loans_title": "%%%.me.proSaving.listApplications.loans_title%%%",
-                "coin2coin_title": "%%%.me.proSaving.listApplications.coin2coin_title%%%",
                 "secondInvestments": "%%%.me.proSaving.listApplications.secondInvestments%%%",
                 "secondInvestmentsLO": "%%%.me.proSaving.listApplications.secondInvestmentsLO%%%",
                 "secondInvestmentsLODesc": "%%%.me.proSaving.listApplications.secondInvestmentsLODesc%%%",
@@ -978,7 +977,6 @@
                 "totalInterestEarned": "%%%.me.proSaving.listApplications.totalInterestEarned%%%",
                 "noRecord": "%%%.me.proSaving.listApplications.noRecord%%%",
                 "getListFailed": "%%%.me.proSaving.listApplications.getListFailed%%%",
-                "staking": "%%%.me.proSaving.listApplications.staking%%%",
                 "received": "%%%.me.proSaving.listApplications.received%%%",
                 "interestAmount": "%%%.me.proSaving.listApplications.interestAmount%%%",
                 "haveTimeAccount": "%%%.me.proSaving.listApplications.haveTimeAccount%%%",
@@ -1130,7 +1128,6 @@
             "openOrders": "%%%.me.navigation.openOrders%%%",
             "interests": "%%%.me.navigation.interests%%%",
             "referral": "%%%.me.navigation.referral%%%",
-            "staking": "%%%.me.navigation.staking%%%",
             "constantWallet": "%%%.me.navigation.constantWallet%%%",
             "viewConstantWallet": "%%%.me.navigation.viewConstantWallet%%%",
             "fiatStableCoin": "%%%.me.navigation.fiatStableCoin%%%",
@@ -1367,30 +1364,6 @@
         "referralInfo": {
             "title": "%%%.me.referralInfo.title%%%"
         },
-        "staking": {
-            "staking": "%%%.me.staking.staking%%%",
-            "unStaking": "%%%.me.staking.unStaking%%%",
-            "reward": "%%%.me.staking.reward%%%",
-            "rewardWithdraw": "%%%.me.staking.rewardWithdraw%%%",
-            "matched": "%%%.me.staking.matched%%%",
-            "date": "%%%.me.staking.date%%%",
-            "status": {
-                "0": "%%%.me.staking.status.0%%%",
-                "1": "%%%.me.staking.status.1%%%",
-                "2": "%%%.me.staking.status.2%%%",
-                "3": "%%%.me.staking.status.3%%%",
-                "4": "%%%.me.staking.status.4%%%",
-                "5": "%%%.me.staking.status.5%%%",
-                "6": "%%%.me.staking.status.6%%%",
-                "7": "%%%.me.staking.status.7%%%",
-                "8": "%%%.me.staking.status.8%%%",
-                "9": "%%%.me.staking.status.9%%%",
-                "10": "%%%.me.staking.status.10%%%",
-                "11": "%%%.me.staking.status.11%%%",
-                "12": "%%%.me.staking.status.12%%%",
-                "13": "%%%.me.staking.status.13%%%"
-            }
-        },
         "wallet": {
             "title": "%%%.me.wallet.title%%%"
         },
@@ -1467,6 +1440,7 @@
             "updatedSuccess": "%%%.me.kycVerification.updatedSuccess%%%",
             "updatedFailed": "%%%.me.kycVerification.updatedFailed%%%",
             "checkVerifyFailed": "%%%.me.kycVerification.checkVerifyFailed%%%",
+            "statusUnverified": "%%%.me.kycVerification.statusUnverified%%%",
             "statusUnverifiedUS": "%%%.me.kycVerification.statusUnverifiedUS%%%",
             "statusLinkBanks": "%%%.me.kycVerification.statusLinkBanks%%%",
             "action": {
@@ -1587,6 +1561,7 @@
         }
     },
     "ourPress": {
+        "mobileTitle": "%%%.ourPress.mobileTitle%%%",
         "title": "%%%.ourPress.title%%%"
     },
     "testimonials": {
@@ -4817,7 +4792,8 @@
         "lessThanEqual": "%%%.error.lessThanEqual%%%",
         "mustBeANumber": "%%%.error.mustBeANumber%%%",
         "mustBeAPositiveInteger": "%%%.error.mustBeAPositiveInteger%%%",
-        "mustBeAIntergerNumber": "%%%.error.mustBeAIntergerNumber%%%"
+        "mustBeAIntergerNumber": "%%%.error.mustBeAIntergerNumber%%%",
+        "reachDayLimit": "%%%.error.reachDayLimit%%%"
     },
     "menuMobile": {
         "btnSignIn": "%%%.menuMobile.btnSignIn%%%",
@@ -5080,6 +5056,23 @@
             "earnDaily": "%%%.badges.intro.earnDaily%%%",
             "claimedMessage": "%%%.badges.intro.claimedMessage%%%"
         },
+        "badge": {
+            "membership_gold": {
+                "title": "%%%.badges.badge.membership_gold.title%%%",
+                "description": "%%%.badges.badge.membership_gold.description%%%",
+                "name": "%%%.badges.badge.membership_gold.name%%%"
+            },
+            "membership_platinum": {
+                "title": "%%%.badges.badge.membership_platinum.title%%%",
+                "description": "%%%.badges.badge.membership_platinum.description%%%",
+                "name": "%%%.badges.badge.membership_platinum.name%%%"
+            },
+            "membership_diamond": {
+                "title": "%%%.badges.badge.membership_diamond.title%%%",
+                "description": "%%%.badges.badge.membership_diamond.description%%%",
+                "name": "%%%.badges.badge.membership_diamond.name%%%"
+            }
+        },
         "group": {
             "getting_started": "%%%.badges.group.getting_started%%%",
             "warming_up": "%%%.badges.group.warming_up%%%",
@@ -5282,5 +5275,19 @@
         "lb_interest_rate": "%%%.mobile_new_home.lb_interest_rate%%%",
         "lb_loan_term": "%%%.mobile_new_home.lb_loan_term%%%",
         "up_to": "%%%.mobile_new_home.up_to%%%"
+    },
+    "productsAndBenefits": {
+        "title": "%%%.productsAndBenefits.title%%%",
+        "desc": "%%%.productsAndBenefits.desc%%%",
+        "invest": "%%%.productsAndBenefits.invest%%%",
+        "borrow": "%%%.productsAndBenefits.borrow%%%",
+        "benefit": "%%%.productsAndBenefits.benefit%%%",
+        "flex": "%%%.productsAndBenefits.flex%%%",
+        "cryptoBacked": "%%%.productsAndBenefits.cryptoBacked%%%",
+        "cryptoLend": "%%%.productsAndBenefits.cryptoLend%%%",
+        "loanOriginator": "%%%.productsAndBenefits.loanOriginator%%%",
+        "cryptoBackedLoan": "%%%.productsAndBenefits.cryptoBackedLoan%%%",
+        "viewAll": "%%%.productsAndBenefits.viewAll%%%",
+        "products": "%%%.productsAndBenefits.products%%%"
     }
 }

@@ -2371,6 +2371,7 @@
                     "payoffDone": "Repaid",
                     "rejected": "Rejected",
                     "paid": "Paid",
+                    "cancelled": "Cancelled",
                     "tnxPending": "Transaction Pending",
                     "repayPending": "Repay Pending",
                     "repayUpPending": "Repay Up Pending",
@@ -3191,8 +3192,8 @@
                         "title": "Transfer via ACH to earn {rate}% instantly",
                         "titleDesc": "<p>Instant interest. Linked US bank only.<br/><i>Less than ${max} per transaction</i></p>",
                         "subtitle": {
-                            "enoughInstantCredit": "<p>Get an instant 4% APY on ${instantAmount}. Reinvest or withdraw your deposit when your ACH clears.</p>",
-                            "overInstantCredit": "<p>Get an instant 4% APY on ${instantAmount}. The remainder of your deposit will credit when your funds reach us. Reinvest or withdraw your deposit when your ACH clears.</p>",
+                            "enoughInstantCredit": "<p>Get an instant 4% APY on ${instantAmount} or invest it in a fixed-term loan while your ACH clears.</p>",
+                            "overInstantCredit": "<p>Get an instant 4% APY on ${instantAmount} or invest it in a fixed term loan. The remainder of your deposit will credit when your ACH clears.</p>",
                             "investNote": "<p>Get an instant 4% APY on any Plaid ACH deposit up to ${instantAmount}. Your investment of ${amount} at {interest}% for {term} days will start after your ACH clears.</p>",
                             "pleaseNote": "<p>Please note: ACH transfers are available for linked US bank accounts only, and can take <strong>up to 5 business days</strong> to clear. Please don’t send us an ACH from an unlinked bank account or it will be rejected.</p>",
                             "haveLinkedBank": "<p>Please choose a linked bank account below and then click <strong>Submit</strong>.</p>",
@@ -3850,7 +3851,7 @@
             },
             "10": {
                 "question": "What are Instant Deposits?",
-                "answer": "\n          <p>Instant Deposits is a program we developed to pay you interest on ACH deposits while they’re being processed. ACH transfers can take up to 5 business days and your funds wouldn’t normally earn interest during this time. But with Instant Deposits, you earn 4% APY from the moment you create the ACH transfer.</p>\n          <p>Until your ACH has finished processing, you won’t be able to withdraw or invest your deposit in a crypto-backed or Loan Originator loan. Instant Deposits transaction limits are calculated using the formula below:</p>\n          <p class=\"font-italic\">Your Instant Deposit Limit = Your current balance + $1,000 (max $25,000 per transaction)</p>\n          <p>For example, if your balance is $5,000, your Instant Deposit limit is $6,000. This means you’ll earn 4% APY on a transaction of up to $6,000 while your ACH is processed.</p>\n        "
+                "answer": "\n<p>Instant Deposits is a program we developed to pay you interest while your funds are being processed. ACH transfers can take several business days and your funds wouldn’t normally earn interest during this time. But with Instant Deposits, you earn 4% APY from the moment you create the ACH transfer and you can even invest in a fixed term loan (up to $5,000).</p>\n          <p>Until your ACH has finished processing, you won’t be able to withdraw your funds. Instant Deposits transaction limits are calculated using the formula below:</p>\n          <p class=\"font-italic\">Your Instant Deposit Limit = Your current balance + $1,000 (max $5,000 per transaction)</p>\n          <p>For example, if your balance is $3,000, your Instant Deposit limit is $4,000. This means while your ACH is processed, you get an instant 4% APY on transactions up to $4,000. You can also invest up to $4,000 in a fixed-term loan while your ACH clears.</p>        "
             }
         }
     },
@@ -4351,7 +4352,8 @@
             "title": "Emailed invites",
             "user_email": "Email",
             "statusHtml": "Status",
-            "date": "Date & Time"
+            "date": "Date & Time",
+            "noRecord": "You have not referred anyone yet. Start earning now!"
         },
         "referralHistory": {
             "title": "Referral history",
@@ -4360,7 +4362,8 @@
             "object_type": "Type",
             "value": "Your earnings ",
             "valueDesc": "As soon as you’ve earned at least 1 cent, you can track your earnings below.",
-            "created_at": "Date"
+            "created_at": "Date",
+            "noRecord": "You have not referred anyone yet. Start earning now!"
         }
     },
     "developers": {
@@ -4430,7 +4433,7 @@
             "user_email": "Email",
             "statusHtml": "Status",
             "date": "Date & Time",
-            "noRecord": "No record found"
+            "noRecord": "You have not referred anyone yet. Invite your friends and start earning now"
         },
         "referral_history": {
             "title": "Referral history",
@@ -4439,7 +4442,7 @@
             "object_type": "Type",
             "value": "Your earnings ",
             "created_at": "Date",
-            "noRecord": "No record found",
+            "noRecord": "You have not referred anyone yet. Invite your friends and start earning now",
             "valueDesc": "As soon as you’ve earned at least 1 cent, you can track your earnings below."
         },
         "banner": {
@@ -5278,7 +5281,7 @@
     },
     "productsAndBenefits": {
         "title": "Our products and benefits",
-        "desc": "Below is a handy comparison chart of our products and benefits.",
+        "desc": "Below is a handy comparison chart <br/>of our products and benefits.",
         "invest": "INVEST",
         "borrow": "BORROW",
         "benefit": "BENEFITS",

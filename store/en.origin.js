@@ -2371,6 +2371,7 @@
                     "payoffDone": "%%%.home.constantLoan.listApplications.mapStatus1.payoffDone%%%",
                     "rejected": "%%%.home.constantLoan.listApplications.mapStatus1.rejected%%%",
                     "paid": "%%%.home.constantLoan.listApplications.mapStatus1.paid%%%",
+                    "cancelled": "%%%.home.constantLoan.listApplications.mapStatus1.cancelled%%%",
                     "tnxPending": "%%%.home.constantLoan.listApplications.mapStatus1.tnxPending%%%",
                     "repayPending": "%%%.home.constantLoan.listApplications.mapStatus1.repayPending%%%",
                     "repayUpPending": "%%%.home.constantLoan.listApplications.mapStatus1.repayUpPending%%%",
@@ -4351,7 +4352,8 @@
             "title": "%%%.affiliates.referralUsers.title%%%",
             "user_email": "%%%.affiliates.referralUsers.user_email%%%",
             "statusHtml": "%%%.affiliates.referralUsers.statusHtml%%%",
-            "date": "%%%.affiliates.referralUsers.date%%%"
+            "date": "%%%.affiliates.referralUsers.date%%%",
+            "noRecord": "%%%.affiliates.referralUsers.noRecord%%%"
         },
         "referralHistory": {
             "title": "%%%.affiliates.referralHistory.title%%%",
@@ -4360,7 +4362,8 @@
             "object_type": "%%%.affiliates.referralHistory.object_type%%%",
             "value": "%%%.affiliates.referralHistory.value%%%",
             "valueDesc": "%%%.affiliates.referralHistory.valueDesc%%%",
-            "created_at": "%%%.affiliates.referralHistory.created_at%%%"
+            "created_at": "%%%.affiliates.referralHistory.created_at%%%",
+            "noRecord": "%%%.affiliates.referralHistory.noRecord%%%"
         }
     },
     "developers": {

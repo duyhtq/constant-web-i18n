@@ -2341,6 +2341,7 @@ export default {
           payoffDone: 'Repaid',
           rejected: 'Rejected',
           paid: 'Paid',
+          cancelled: 'Cancelled',
           tnxPending: 'Transaction Pending',
           repayPending: 'Repay Pending',
           repayUpPending: 'Repay Up Pending',
@@ -4383,7 +4384,8 @@ export default {
       title: 'Emailed invites',
       user_email: 'Email',
       statusHtml: 'Status',
-      date: 'Date & Time'
+      date: 'Date & Time',
+      noRecord: 'You have not referred anyone yet. Start earning now!',
     },
     referralHistory: {
       title: 'Referral history',
@@ -4392,7 +4394,8 @@ export default {
       object_type: 'Type',
       value: 'Your earnings ',
       valueDesc: 'As soon as you’ve earned at least 1 cent, you can track your earnings below.',
-      created_at: 'Date'
+      created_at: 'Date',
+      noRecord: 'You have not referred anyone yet. Start earning now!',
     }
   },
   developers: {
@@ -4454,7 +4457,7 @@ export default {
       user_email: 'Email',
       statusHtml: 'Status',
       date: 'Date & Time',
-      noRecord: 'No record found'
+      noRecord: 'You have not referred anyone yet. Invite your friends and start earning now'
     },
     referral_history: {
       title: 'Referral history',
@@ -4463,7 +4466,7 @@ export default {
       object_type: 'Type',
       value: 'Your earnings ',
       created_at: 'Date',
-      noRecord: 'No record found',
+      noRecord: 'You have not referred anyone yet. Invite your friends and start earning now',
       valueDesc: 'As soon as you’ve earned at least 1 cent, you can track your earnings below.'
     },
     banner: {
@@ -5309,7 +5312,7 @@ export default {
   },
   productsAndBenefits: {
     title: 'Our products and benefits',
-    desc: 'Below is a handy comparison chart of our products and benefits.',
+    desc: `Below is a handy comparison chart <br/>of our products and benefits.`,
     invest: 'INVEST',
     borrow: 'BORROW',
     benefit: 'BENEFITS',

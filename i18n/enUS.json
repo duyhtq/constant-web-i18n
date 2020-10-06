@@ -405,7 +405,7 @@
             "confirm": "Send",
             "cancel": "No",
             "messageDepositConfirm": "How can we help you with this deposit?",
-            "wireReceipt": "wire receipt",
+            "wireReceipt": "Wire receipt",
             "wireReceiptRemove": "Remove receipt"
         },
         "transferConstant": {
@@ -2356,6 +2356,7 @@
                 "term": "Term",
                 "matched": "matched",
                 "cancel": "Cancel",
+                "cancelBorrow": "Cancel",
                 "collateralRequired": "Collateral",
                 "collateralAddress": "Collateral Address",
                 "noLoans": "Request your fixed rate loan.",
@@ -2415,7 +2416,9 @@
                     "repayAddress": "Repay Address",
                     "collateralValueAtLiquid": "Liquidation price",
                     "collateralValueAtLiquidDesc": "Once the price of the token falls to this price, your loan will be liquidated.          Note: this number is always changed unpredictably due to the fluctuation of the market. Please keep an eye on your loans to avoid liquidation.",
-                    "collateralValueAtLiquidC2CDesc": "Once the price of the collateral falls to this price, your loan will be liquidated.          Note: this number is always changed unpredictably due to the fluctuation of the market. Please keep an eye on your loans to avoid liquidation."
+                    "collateralValueAtLiquidC2CDesc": "Once the price of the collateral falls to this price, your loan will be liquidated.          Note: this number is always changed unpredictably due to the fluctuation of the market. Please keep an eye on your loans to avoid liquidation.",
+                    "price": "Price",
+                    "priceDesc": "Price of your chosen crypto"
                 },
                 "partialMatchesDesc": "Some loan requests may be split into smaller amounts to fill multiple investment orders. The platform will keep trying to match you completely for the duration of your term.",
                 "isolate": "Isolate",
@@ -4796,7 +4799,8 @@
         "mustBeANumber": "Please enter a valid number",
         "mustBeAPositiveInteger": "Please enter a valid number",
         "mustBeAIntergerNumber": "Please enter a valid number",
-        "reachDayLimit": "You have reached the daily withdrawal limit of this payment method. Please try other available methods."
+        "reachDayLimit": "Sorry, you've reached your daily Zelle withdrawal limit of {max}. Please try again tomorrow or choose another withdrawal method.",
+        "reachTransactionLimit": "Sorry, the maximum you can withdraw via Zelle is {max}. Please reduce your withdrawal amount or choose another withdrawal method."
     },
     "menuMobile": {
         "btnSignIn": "Log In",
@@ -5120,12 +5124,13 @@
             "errCompletePrevious": "To qualify for {current}, you need to complete {previous} first."
         },
         "congratulations": {
-            "getting_started_on_2fa": "You've won the Guardian and {rewardAmount} reward points",
+            "getting_started_on_2fa": "You've won the Guardian and {rewardAmount} reward points.",
+            "getting_started_link_bank": "You've won the Booster and {rewardAmount} reward points.",
             "activity_install_app": "Thanks for downloading our app. You've banked 1,000 membership points free!",
             "activity_take_mini_course": "You got 100% in our Mini Quiz – nice work! Here's {rewardAmount} membership points as reward.",
-            "membership_gold": "You've become Gold member and a $50 reward is ready in your account. Keep investing and get more valuable gifts",
-            "membership_platinum": "You've become Platinum member and a $50 reward is ready in your account. Keep investing and get more valuable gifts",
-            "membership_diamond": "You've become Diamond member and a $50 reward is ready in your account. Keep investing and get more valuable gifts"
+            "membership_gold": "You've become Gold member and a $50 reward is ready in your account. Keep investing and get more valuable gifts.",
+            "membership_platinum": "You've become Platinum member and a $50 reward is ready in your account. Keep investing and get more valuable gifts.",
+            "membership_diamond": "You've become Diamond member and a $50 reward is ready in your account. Keep investing and get more valuable gifts."
         },
         "submit": "Submit"
     },
@@ -5138,7 +5143,7 @@
         "invalidBankAccountName": "For your security, the beneficiary name must match the name you registered when signing up with MyConstant. Please enter a different name or email hello@myconstant.com if you need help",
         "makeLocalOrderFailed": "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
         "makeLocalOrderSuccess": "Thanks! Your transfer is now processing.",
-        "zelleOverLimit": "Sorry, we've reached our Zelle transaction limit. Please try again later or choose another withdraw method.",
+        "zelleOverLimit": "Sorry, Zelle restrictions mean we're unable to process any further Zelle withdrawals at the moment. Please try again tomorrow or choose another withdrawal method. For more information, please check our <a href=\"/getPrices\" target=\"_blank\" class=\"underline\">service times</a>. Thank you.",
         "makeDirectOrderSuccess": "Thanks! Your transfer is now processing.",
         "makeDirectOrderFailed": "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
         "transferConfirm": "We've already sent you a verification link by email. Please click this link to approve your transaction."

@@ -2356,6 +2356,7 @@
                 "term": "%%%.home.constantLoan.listApplications.term%%%",
                 "matched": "%%%.home.constantLoan.listApplications.matched%%%",
                 "cancel": "%%%.home.constantLoan.listApplications.cancel%%%",
+                "cancelBorrow": "%%%.home.constantLoan.listApplications.cancelBorrow%%%",
                 "collateralRequired": "%%%.home.constantLoan.listApplications.collateralRequired%%%",
                 "collateralAddress": "%%%.home.constantLoan.listApplications.collateralAddress%%%",
                 "noLoans": "%%%.home.constantLoan.listApplications.noLoans%%%",
@@ -2415,7 +2416,9 @@
                     "repayAddress": "%%%.home.constantLoan.listApplications.itemMatched.repayAddress%%%",
                     "collateralValueAtLiquid": "%%%.home.constantLoan.listApplications.itemMatched.collateralValueAtLiquid%%%",
                     "collateralValueAtLiquidDesc": "%%%.home.constantLoan.listApplications.itemMatched.collateralValueAtLiquidDesc%%%",
-                    "collateralValueAtLiquidC2CDesc": "%%%.home.constantLoan.listApplications.itemMatched.collateralValueAtLiquidC2CDesc%%%"
+                    "collateralValueAtLiquidC2CDesc": "%%%.home.constantLoan.listApplications.itemMatched.collateralValueAtLiquidC2CDesc%%%",
+                    "price": "%%%.home.constantLoan.listApplications.itemMatched.price%%%",
+                    "priceDesc": "%%%.home.constantLoan.listApplications.itemMatched.priceDesc%%%"
                 },
                 "partialMatchesDesc": "%%%.home.constantLoan.listApplications.partialMatchesDesc%%%",
                 "isolate": "%%%.home.constantLoan.listApplications.isolate%%%",
@@ -4796,7 +4799,8 @@
         "mustBeANumber": "%%%.error.mustBeANumber%%%",
         "mustBeAPositiveInteger": "%%%.error.mustBeAPositiveInteger%%%",
         "mustBeAIntergerNumber": "%%%.error.mustBeAIntergerNumber%%%",
-        "reachDayLimit": "%%%.error.reachDayLimit%%%"
+        "reachDayLimit": "%%%.error.reachDayLimit%%%",
+        "reachTransactionLimit": "%%%.error.reachTransactionLimit%%%"
     },
     "menuMobile": {
         "btnSignIn": "%%%.menuMobile.btnSignIn%%%",
@@ -5121,6 +5125,7 @@
         },
         "congratulations": {
             "getting_started_on_2fa": "%%%.badges.congratulations.getting_started_on_2fa%%%",
+            "getting_started_link_bank": "%%%.badges.congratulations.getting_started_link_bank%%%",
             "activity_install_app": "%%%.badges.congratulations.activity_install_app%%%",
             "activity_take_mini_course": "%%%.badges.congratulations.activity_take_mini_course%%%",
             "membership_gold": "%%%.badges.congratulations.membership_gold%%%",

@@ -326,6 +326,22 @@
                 "confirm": "Submit",
                 "cancel": "Cancel"
             }
+        },
+        "pointHistory": {
+            "title": "Membership points record",
+            "headers": {
+                "date": "Date and time",
+                "pointEarned": "Point earned",
+                "status": "Status",
+                "activity": "Activity",
+                "membershipStatus": "Membership status"
+            },
+            "activity": {
+                "collateral_loan_matched": "borrowed ${amount}",
+                "lo_investment_investment": "invested ${amount}",
+                "saving_termdeposit": "invested ${amount}",
+                "user_badge_result": "achieved {badgeName} badge"
+            }
         }
     },
     "exchangeInputDepositForm": {
@@ -4515,8 +4531,8 @@
             "descNonUS": "      <p>You <strong>earn {referralFlexReward}% of your friends' earned Flex interest</strong> during their first year, capped at a generous $1,000,000.</p>"
         },
         "terms": {
-            "normal": "        <h3 class=\"semiBold\">Terms and Conditions</h3>        <ol>          <li><p>To qualify for the ${referralReward} bonus, your referee must be a US citizen.</p></li>          <li><p>The bonus is paid when your referee signs up, passes KYC, and deposits USD.</p></li>          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>          <li><p>Referral interest is paid to you by MyConstant and does not deduct from your friends’ earned Flex interest.</p></li>          <li>            <p>The amount you earn depends on how your friends use the platform:</p>            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>          </li>          <li><p>You can invite as many friends as you like.</p></li>          <li><p>Your referral earnings are paid in USD, directly into your MyConstant account.</p></li>          <li><p>The maximum you can earn is $1,000,000.</p></li>          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p></li>          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>          <li><p>MyConstant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>        </ol>        <p class=\"bold effective\">Effective as of 2020/02/17 00:00 AM (GMT+0)</p>      ",
-            "normalNonUS": "        <h3 class=\"semiBold\">Terms and Conditions</h3>        <ol><li><p>Your earning is paid after your referee makes the first fiat deposits.</p></li>          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>          <li><p>Referral interest is paid to you by MyConstant and does not deduct from your friends’ earned Flex interest.</p></li>          <li>            <p>The amount you earn depends on how your friends use the platform:</p>            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>          </li>          <li><p>You can invite as many friends as you like.</p></li>          <li><p>Your referral earnings are paid in USD, directly into your MyConstant account.</p></li>          <li><p>The maximum you can earn is $1,000,000.</p></li>          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p></li>          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>          <li><p>MyConstant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>        </ol>        <p class=\"bold effective\">Effective as of 2020/02/17 00:00 AM (GMT+0)</p>      "
+            "normal": "        <h3 class=\"semiBold\">Terms and Conditions</h3>        <ol>          <li><p>To qualify for the ${referralReward} bonus, your referee must be a US citizen.</p></li>          <li><p>The bonus is paid when your referee signs up, passes KYC, and deposits USD.</p></li>          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>          <li><p>Referral interest is paid to you by MyConstant and does not deduct from your friends’ earned Flex interest.</p></li>          <li>            <p>The amount you earn depends on how your friends use the platform:</p>            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>          </li>          <li><p>You can invite as many friends as you like.</p></li>          <li><p>Your referral earnings are paid in USD, directly into your MyConstant account.</p></li>          <li><p>The maximum you can earn is $1,000,000.</p></li>          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p></li>          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>          <li><p>MyConstant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>        </ol>        <p class=\"bold effective\">Effective as of {date}</p>      ",
+            "normalNonUS": "        <h3 class=\"semiBold\">Terms and Conditions</h3>        <ol><li><p>Your earning is paid after your referee makes the first fiat deposits.</p></li>          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>          <li><p>Referral interest is paid to you by MyConstant and does not deduct from your friends’ earned Flex interest.</p></li>          <li>            <p>The amount you earn depends on how your friends use the platform:</p>            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>          </li>          <li><p>You can invite as many friends as you like.</p></li>          <li><p>Your referral earnings are paid in USD, directly into your MyConstant account.</p></li>          <li><p>The maximum you can earn is $1,000,000.</p></li>          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p></li>          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>          <li><p>MyConstant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>        </ol>        <p class=\"bold effective\">Effective as of {date}</p>      "
         }
     },
     "landingProReferral": {
@@ -5053,6 +5069,7 @@
     },
     "badges": {
         "title": "Badges",
+        "historyTab": "History",
         "intro": {
             "title": "<h1>Get the recognition you deserve with <br/>MyConstant Badges</h1>",
             "desc": "Earn badges and cash rewards of up to $100 when you use or promote our platform. From passing KYC to referring friends, there’s a badge to recognize all of your achievements. How many will you earn?",
@@ -5107,7 +5124,7 @@
             "8": "Badges awarded for depositing apply to fiat deposits only.",
             "9": "Each reward point expires after 180 days.",
             "title": "Terms and Conditions",
-            "note": "Effective as of 2020/07/16 00:00 AM (GMT+0)"
+            "note": "Effective as of {date}"
         },
         "request": "Request",
         "takeQuiz": "Take the quiz",
@@ -5132,7 +5149,16 @@
             "membership_platinum": "You've become Platinum member and a $50 reward is ready in your account. Keep investing and get more valuable gifts.",
             "membership_diamond": "You've become Diamond member and a $50 reward is ready in your account. Keep investing and get more valuable gifts."
         },
-        "submit": "Submit"
+        "submit": "Submit",
+        "history": {
+            "title": "Badges History",
+            "headers": {
+                "date": "Date & time achieved",
+                "badgeName": "Badge name",
+                "reward": "Reward",
+                "category": "Category"
+            }
+        }
     },
     "saving": {
         "invalid_payment_method": "To deposit USD, you must be a KYC-verified US citizen. Please choose another currency to deposit.",

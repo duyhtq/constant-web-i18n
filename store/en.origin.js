@@ -326,6 +326,22 @@
                 "confirm": "%%%.memberShip.reviewMemberShip.redeemPopup.confirm%%%",
                 "cancel": "%%%.memberShip.reviewMemberShip.redeemPopup.cancel%%%"
             }
+        },
+        "pointHistory": {
+            "title": "%%%.memberShip.pointHistory.title%%%",
+            "headers": {
+                "date": "%%%.memberShip.pointHistory.headers.date%%%",
+                "pointEarned": "%%%.memberShip.pointHistory.headers.pointEarned%%%",
+                "status": "%%%.memberShip.pointHistory.headers.status%%%",
+                "activity": "%%%.memberShip.pointHistory.headers.activity%%%",
+                "membershipStatus": "%%%.memberShip.pointHistory.headers.membershipStatus%%%"
+            },
+            "activity": {
+                "collateral_loan_matched": "%%%.memberShip.pointHistory.activity.collateral_loan_matched%%%",
+                "lo_investment_investment": "%%%.memberShip.pointHistory.activity.lo_investment_investment%%%",
+                "saving_termdeposit": "%%%.memberShip.pointHistory.activity.saving_termdeposit%%%",
+                "user_badge_result": "%%%.memberShip.pointHistory.activity.user_badge_result%%%"
+            }
         }
     },
     "exchangeInputDepositForm": {
@@ -5053,6 +5069,7 @@
     },
     "badges": {
         "title": "%%%.badges.title%%%",
+        "historyTab": "%%%.badges.historyTab%%%",
         "intro": {
             "title": "%%%.badges.intro.title%%%",
             "desc": "%%%.badges.intro.desc%%%",
@@ -5132,7 +5149,16 @@
             "membership_platinum": "%%%.badges.congratulations.membership_platinum%%%",
             "membership_diamond": "%%%.badges.congratulations.membership_diamond%%%"
         },
-        "submit": "%%%.badges.submit%%%"
+        "submit": "%%%.badges.submit%%%",
+        "history": {
+            "title": "%%%.badges.history.title%%%",
+            "headers": {
+                "date": "%%%.badges.history.headers.date%%%",
+                "badgeName": "%%%.badges.history.headers.badgeName%%%",
+                "reward": "%%%.badges.history.headers.reward%%%",
+                "category": "%%%.badges.history.headers.category%%%"
+            }
+        }
     },
     "saving": {
         "invalid_payment_method": "%%%.saving.invalid_payment_method%%%",

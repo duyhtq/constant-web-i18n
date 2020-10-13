@@ -624,7 +624,9 @@ export default {
         inputAuthCode: 'Google authentication code',
         cancel: 'Cancel',
         confirm: 'Confirm',
-        requiredPassword: 'Password is required'
+        requiredPassword: 'Password is required',
+        facebook: 'Sign-in with your facebook account.',
+        google: 'Sign-in with your google account.',
       },
       invalidatePassword: 'Password not matched, please try again',
       labelOff: 'Turn on now?',
@@ -640,6 +642,8 @@ export default {
         confirm: 'Confirm',
         requiredPassword: 'Password is required',
         message: 'Code copied to clipboard.',
+        facebook: 'Sign-in with your facebook account.',
+        google: 'Sign-in with your google account.',
       },
       invalidateOtp: 'Google authentication code not matched, please try again',
       disable2FaSuccess: 'Disable 2FA successfully!',
@@ -649,7 +653,9 @@ export default {
         label: 'Please save this Key on paper',
         description: 'This Key will allow you to recover your Google Authenticator in case of phone loss.',
         ok: 'Done'
-      }
+      },
+      facebookButton: 'Login with Facebook',
+      googleButton: 'Login with Google',
     },
     proSaving: {
       listApplications: {
@@ -2218,7 +2224,7 @@ export default {
           },
           ltvRatio: {
             title: 'LTV ratio',
-            constant: 'Up to 100%',
+            constant: 'Up to 66%',
             nexo: 'Up to 90%',
             celsius: 'Up to 50%',
             blockfi: 'Up to 50%',
@@ -2281,7 +2287,7 @@ export default {
         question7: 'Can I recall excess if the value of my collateral increases?',
         answer7: '        <p>Yes. If the value of your collateral rises during your loan term, you can withdraw the difference from your Accounts page.</p>        <p><a href="https://blog.myconstant.com/how-to-deposit-top-up-recall-crypto-constant" className="underline" target="_blank">How to deposit, top-up, and recall excess collateral.</a></p>      ',
         question8: 'What is the LTV (Loan-to-Value) Ratio? Is it always the same?',
-        answer8: '        <p>The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral. If you’re borrowing against stablecoins, the LTV ratio is 100% (you must put up 100% of the loan amount in stablecoins to obtain a loan).</p>      ',
+        answer8: '        <p>The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral.</p>      ',
         question9: 'How do I repay my loan?',
         answer9: '          <p>We’ll deduct your repayment directly from your MyConstant account balance. Adding funds is easy. You can do one or a combination of the following:</p>          <ol>            <li>Transfer USD to one of our US bank accounts.</li>            <li>Send any one of our supported stablecoins: USDT/USDC/TUSD/GUSD/PAX/USDS.</li>            <li>Repay the equivalent USD value using your collateral.</li>          </ol>          <p>Your balance will update when funds have been received in your MyConstant account.</p>        ',
         question10: 'What happens if I repay late?',
@@ -3221,7 +3227,7 @@ export default {
       question3: 'How do I invest?',
       answer3: '        <p>Enter how much you want to invest and for how long. Transfer that amount to one of our international bank accounts – we have banks in the US and abroad to make transfers quick and easy for you. As soon as your funds arrive, you’ll immediately start earning interest.</p>        <p>At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your MyConstant account. It’s up to you what you’d like to do next – reinvest, withdraw, or send money abroad.</p>        <p><a href="https://blog.myconstant.com/how-to-invest-with-constant-in-3-simple-steps" className="underline" target="_blank">How to invest in 3 simple steps.</a></p>      ',
       question4: 'How do you protect my investment?',
-      answer4: '        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too:</p>        <ol>          <li>All of our borrowers must put up 150% of the loan amount as crypto collateral (100% if stablecoins to reflect their stability). If they don’t repay, we sell the collateral to repay you.</li>          <li>We also include a liquidation threshold to insure against a fall in the collateral’s value. If the value falls to 110% of your principal and earned interest (100% if a stablecoin), it’s sold to repay you.</li>          <li>We only accept vetted, quality cryptocurrencies and cap our exposure to these markets by daily trading volume. This ensures we can sell the collateral should the market dip.</li>        </ol>        <p>These protective measures help ensure you get the returns promised. However, all investment involves risk, and despite our best efforts, we can’t guarantee the return of your principal and profit. Therefore please invest wisely.</p>        <p><a href="https://blog.myconstant.com/how-we-protect-your-money-and-collateral" className="underline" target="_blank">Read more about how we protect you.</a></p>      ',
+      answer4: '        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too:</p>        <ol>          <li>All of our borrowers must put up 150% of the loan amount as crypto collateral. If they don’t repay, we sell the collateral to repay you.</li>          <li>We also include a liquidation threshold to insure against a fall in the collateral’s value. If the value falls to 110% of your principal and earned interest, it’s sold to repay you.</li>          <li>We only accept vetted, quality cryptocurrencies and cap our exposure to these markets by daily trading volume. This ensures we can sell the collateral should the market dip.</li>        </ol>        <p>These protective measures help ensure you get the returns promised. However, all investment involves risk, and despite our best efforts, we can’t guarantee the return of your principal and profit. Therefore please invest wisely.</p>        <p><a href="https://blog.myconstant.com/how-we-protect-your-money-and-collateral" className="underline" target="_blank">Read more about how we protect you.</a></p>      ',
       question5: 'What happens when my money isn’t on loan?',
       answer5: `        <p>When not on loan or waiting for a match, your money earns 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>        <p>If you're waiting for a match, your money remains in the custody of Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>        <p>Flex is enabled by default, but you can disable it from your Accounts page. You will no longer earn interest and your funds will remain in Prime Trust custody (unless you invest in a fixed-term loan).</p>        <p><a href="https://blog.myconstant.com/flex-or-prime-trust-constant" className="underline" target="_blank">Prime Trust or Flex?</a></p>      `,
       question6: 'What happens if a borrower repays early?',
@@ -4829,6 +4835,8 @@ export default {
       undefined: 'Oops! Something went wrong, please try again',
       notEnoughConstant: 'Please ensure you have sufficient funds in your account to complete this transfer.',
       unable_to_cancel: 'You can’t cancel this order. It might be cancelled by the seller or picked by another investor already. Please refresh the browser.',
+      userTaxIDNumberInvalid: 'TaxIDNumber is invalid',
+      userPhoneNumberInvalid: 'PhoneNumber is invalid',
     },
     expiredSession: 'Your session has expired. Please log in again.',
     withdrawLessThanOrEqual: 'The maximum withdrawal amount is {max}. Please try other available methods.',

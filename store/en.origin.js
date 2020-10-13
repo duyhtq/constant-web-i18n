@@ -674,7 +674,9 @@
                 "inputAuthCode": "%%%.me.twoFa.disableModal.inputAuthCode%%%",
                 "cancel": "%%%.me.twoFa.disableModal.cancel%%%",
                 "confirm": "%%%.me.twoFa.disableModal.confirm%%%",
-                "requiredPassword": "%%%.me.twoFa.disableModal.requiredPassword%%%"
+                "requiredPassword": "%%%.me.twoFa.disableModal.requiredPassword%%%",
+                "facebook": "%%%.me.twoFa.disableModal.facebook%%%",
+                "google": "%%%.me.twoFa.disableModal.google%%%"
             },
             "invalidatePassword": "%%%.me.twoFa.invalidatePassword%%%",
             "labelOff": "%%%.me.twoFa.labelOff%%%",
@@ -689,7 +691,9 @@
                 "cancel": "%%%.me.twoFa.qrScanModal.cancel%%%",
                 "confirm": "%%%.me.twoFa.qrScanModal.confirm%%%",
                 "requiredPassword": "%%%.me.twoFa.qrScanModal.requiredPassword%%%",
-                "message": "%%%.me.twoFa.qrScanModal.message%%%"
+                "message": "%%%.me.twoFa.qrScanModal.message%%%",
+                "facebook": "%%%.me.twoFa.qrScanModal.facebook%%%",
+                "google": "%%%.me.twoFa.qrScanModal.google%%%"
             },
             "invalidateOtp": "%%%.me.twoFa.invalidateOtp%%%",
             "disable2FaSuccess": "%%%.me.twoFa.disable2FaSuccess%%%",
@@ -699,7 +703,9 @@
                 "label": "%%%.me.twoFa.backupModal.label%%%",
                 "description": "%%%.me.twoFa.backupModal.description%%%",
                 "ok": "%%%.me.twoFa.backupModal.ok%%%"
-            }
+            },
+            "facebookButton": "%%%.me.twoFa.facebookButton%%%",
+            "googleButton": "%%%.me.twoFa.googleButton%%%"
         },
         "proSaving": {
             "listApplications": {
@@ -4811,7 +4817,9 @@
             "firstBuy2ndOrderMessage": "%%%.error.serverCode.firstBuy2ndOrderMessage%%%",
             "undefined": "%%%.error.serverCode.undefined%%%",
             "notEnoughConstant": "%%%.error.serverCode.notEnoughConstant%%%",
-            "unable_to_cancel": "%%%.error.serverCode.unable_to_cancel%%%"
+            "unable_to_cancel": "%%%.error.serverCode.unable_to_cancel%%%",
+            "userTaxIDNumberInvalid": "%%%.error.serverCode.userTaxIDNumberInvalid%%%",
+            "userPhoneNumberInvalid": "%%%.error.serverCode.userPhoneNumberInvalid%%%"
         },
         "expiredSession": "%%%.error.expiredSession%%%",
         "withdrawLessThanOrEqual": "%%%.error.withdrawLessThanOrEqual%%%",

@@ -17,6 +17,7 @@
         "memberShip": "%%%.user.memberShip%%%",
         "login": {
             "popupTitle": "%%%.user.login.popupTitle%%%",
+            "popupTitleMobile": "%%%.user.login.popupTitleMobile%%%",
             "loginSocialTitle": "%%%.user.login.loginSocialTitle%%%",
             "loginEmailTitle": "%%%.user.login.loginEmailTitle%%%",
             "email": "%%%.user.login.email%%%",
@@ -32,7 +33,9 @@
             "loginFailureCaptchaV2": "%%%.user.login.loginFailureCaptchaV2%%%",
             "notValidUsername": "%%%.user.login.notValidUsername%%%",
             "twoFaRequired": "%%%.user.login.twoFaRequired%%%",
-            "loginFailed": "%%%.user.login.loginFailed%%%"
+            "loginFailed": "%%%.user.login.loginFailed%%%",
+            "letSignIn": "%%%.user.login.letSignIn%%%",
+            "welcomeBack": "%%%.user.login.welcomeBack%%%"
         },
         "forgetPassword": {
             "title": "%%%.user.forgetPassword.title%%%",
@@ -68,7 +71,9 @@
             "requiredPassword": "%%%.user.register.requiredPassword%%%",
             "invalidReferralCode": "%%%.user.register.invalidReferralCode%%%",
             "invalidEmail": "%%%.user.register.invalidEmail%%%",
-            "confirmStrangeEmailMessage": "%%%.user.register.confirmStrangeEmailMessage%%%"
+            "confirmStrangeEmailMessage": "%%%.user.register.confirmStrangeEmailMessage%%%",
+            "popupTitle": "%%%.user.register.popupTitle%%%",
+            "popupTitleMobile": "%%%.user.register.popupTitleMobile%%%"
         },
         "account": {
             "currentBalance": "%%%.user.account.currentBalance%%%",
@@ -198,6 +203,7 @@
     },
     "memberShip": {
         "pointNeed2GetGold": "%%%.memberShip.pointNeed2GetGold%%%",
+        "getBackReward": "%%%.memberShip.getBackReward%%%",
         "intro": {
             "title": "%%%.memberShip.intro.title%%%",
             "details": "%%%.memberShip.intro.details%%%",
@@ -3170,7 +3176,8 @@
                 "trialSuccess": "%%%.home1.lendingSection.alert.trialSuccess%%%",
                 "zelleSuccess": "%%%.home1.lendingSection.alert.zelleSuccess%%%",
                 "zelleFailed": "%%%.home1.lendingSection.alert.zelleFailed%%%",
-                "needKyc": "%%%.home1.lendingSection.alert.needKyc%%%"
+                "needKyc": "%%%.home1.lendingSection.alert.needKyc%%%",
+                "buy2ndDesc": "%%%.home1.lendingSection.alert.buy2ndDesc%%%"
             },
             "confirm": {
                 "thankYou1": "%%%.home1.lendingSection.confirm.thankYou1%%%",
@@ -3197,7 +3204,8 @@
                         "paymentInfo": "%%%.home1.lendingSection.confirm.paymentMethods.email.paymentInfo%%%",
                         "placeholder": "%%%.home1.lendingSection.confirm.paymentMethods.email.placeholder%%%",
                         "submitButton": "%%%.home1.lendingSection.confirm.paymentMethods.email.submitButton%%%",
-                        "notAvailableAmount": "%%%.home1.lendingSection.confirm.paymentMethods.email.notAvailableAmount%%%"
+                        "notAvailableAmount": "%%%.home1.lendingSection.confirm.paymentMethods.email.notAvailableAmount%%%",
+                        "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.email.referNoteDesc%%%"
                     },
                     "primetrust": {
                         "titleDesc": "%%%.home1.lendingSection.confirm.paymentMethods.primetrust.titleDesc%%%",
@@ -4130,7 +4138,8 @@
             "minValues": "%%%.app.common.minValues%%%",
             "maxValues": "%%%.app.common.maxValues%%%",
             "uploading": "%%%.app.common.uploading%%%",
-            "fileupload": "%%%.app.common.fileupload%%%"
+            "fileupload": "%%%.app.common.fileupload%%%",
+            "retry": "%%%.app.common.retry%%%"
         },
         "local": {
             "type": {
@@ -4909,6 +4918,8 @@
         },
         "promotionGeneral": {
             "title": "%%%.landingPage.promotionGeneral.title%%%",
+            "titleMobile": "%%%.landingPage.promotionGeneral.titleMobile%%%",
+            "desc": "%%%.landingPage.promotionGeneral.desc%%%",
             "howItWorks": {
                 "title": "%%%.landingPage.promotionGeneral.howItWorks.title%%%",
                 "data": {

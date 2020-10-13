@@ -16,7 +16,8 @@ export default {
     logout: 'Sign out',
     memberShip: 'Membership',
     login: {
-      popupTitle: 'Welcome to MyConstant',
+      popupTitle: 'Sign in to MyConstant',
+      popupTitleMobile: 'Sign in',
       loginSocialTitle: 'Log in instantly',
       loginEmailTitle: 'or log in with email',
       email: 'Email',
@@ -32,7 +33,9 @@ export default {
       loginFailureCaptchaV2: "Please check I'm not a robot.",
       notValidUsername: 'Invalid email address',
       twoFaRequired: '2FA authentication is required for all users with balance over 1000 USD',
-      loginFailed: 'Failed while logging in, please try again'
+      loginFailed: 'Failed while logging in, please try again',
+      letSignIn: 'Let’s Sign You In',
+      welcomeBack: 'Welcome back, you’ve been missed!',
     },
     forgetPassword: {
       title: 'Forgot your password?',
@@ -69,6 +72,8 @@ export default {
       invalidReferralCode: 'Invalid referral code. Please check your code and try again',
       invalidEmail: 'This email address does not exist. Please check again',
       confirmStrangeEmailMessage: 'The email address <strong>{email}</strong> looks like it contains a typo or spelling mistake. Are you sure you want to sign up with this email address?',
+      popupTitle: 'Sign up to MyConstant',
+      popupTitleMobile: 'Sign up',
     },
     account: {
       currentBalance: 'Current Balance',
@@ -175,6 +180,7 @@ export default {
   },
   memberShip: {
     pointNeed2GetGold: 'You still need {value} points to reach Gold Member status',
+    getBackReward: 'Because you placed your loan that brought your account to the next level of membership status on the secondary market, rewards for this level have been removed from your account. This is to prevent fraud. Get your points back to earn back your rewards.',
     intro: {
       title: 'Membership Rewards',
       details: 'Get exclusive platform benefits the more you invest or borrow',
@@ -3123,6 +3129,7 @@ export default {
         zelleSuccess: 'Thanks! Please proceed with the transfer.',
         zelleFailed: 'Something went wrong. Please try again.',
         needKyc: '',
+        buy2ndDesc: `Click confirm to agree to the <a href="{loanTermUrl}" target="_blank" class="underline">terms of the loan</a>, start your term, and begin earning interest. Once confirmed, you can’t cancel this investment but you can sell it early on the secondary market.`,
       },
       confirm: {
         thankYou1: 'Almost there.',
@@ -3149,7 +3156,8 @@ export default {
             paymentInfo: '              <div class="row">                <div class="col">                    <label>Amount</label>                    <p>{amount} USD</p>                </div>                <div class="col">                    <label>Send to</label>                    <p>{email}</p>                </div>              </div>              <div class="row">                <div class="col">                    <label>Full name</label>                    <p>{name}</p>                </div>                <div class="col">                    <label>Type</label>                    <p>{type}</p>                </div>              </div>            ',
             placeholder: 'Please enter the full name here',
             submitButton: 'Submit',
-            notAvailableAmount: '<p>The maximum amount you can send through Zelle is {amount}. Please choose either a wire transfer or ACH transfer (available for linked US bank accounts only).</p><p><a target="_blank" href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">How to link a US bank account for ACH transfers.</a></p>'
+            notAvailableAmount: '<p>The maximum amount you can send through Zelle is {amount}. Please choose either a wire transfer or ACH transfer (available for linked US bank accounts only).</p><p><a target="_blank" href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">How to link a US bank account for ACH transfers.</a></p>',
+            referNoteDesc: 'Please include your reference number when you make your Zelle transfer so we can match your deposit to your account.',
           },
           primetrust: {
             titleDesc: '<p>Fast. Flexible. Secure.<br/><i>Unlimited amount</i></p>',
@@ -3583,7 +3591,7 @@ export default {
         investFailed: 'Fail Invested',
         validateBalance: 'Please make sure your balance is sufficient.',
         cancel: 'Cancel',
-        assignmentAgreement: 'Assignment agreement:',
+        assignmentAgreement: 'Assignment agreement',
         yourInvestAmount: 'Your investment amount:',
         totalAmount: 'Total amount:',
         buy2ndDesc: `You’re about to invest {amount} USD for {days} days at {interest}%. Click confirm to agree to the <a href="{loanTermUrl}" target="_blank" class="underline bold">terms of the loan</a>, start your term, and begin earning interest. Once confirmed, you can’t cancel this investment but you can sell it early on the secondary market.`,
@@ -4152,7 +4160,8 @@ export default {
       minValues: 'Must greater than {min}',
       maxValues: 'Must less than {max}',
       uploading: 'Uploading...',
-      fileupload: 'Upload'
+      fileupload: 'Upload',
+      retry: 'Something wrong happened. Please retry again.',
     },
     local: { type: { buy: 'Deposit', sell: 'Withdraw' } },
     goToHomePage: 'Go to Home page',
@@ -4881,7 +4890,7 @@ export default {
     steadyGrowth: {
       title: '        <p class="header">Start growing at {rate}% APR today.</p>        <p>Don’t fall with the market. Enjoy steady growth with fully-backed P2P lending. No fees. Free withdrawals.</p>        <p>Start investing from just $50.</p>      '
     },
-    faqsSectionLink: '      <p></p>      <p>Questions?</p>      <p>Check out our <a href="#landing-faqs" class="underline">FAQs</a>.</p>    ',
+    faqsSectionLink: '<p class="clearBottom">Questions?</p>      <p>Check out our <a href="#landing-faqs" class="underline">FAQs</a>.</p>    ',
     howItWorks: {
       title: 'How It Works',
       data: {
@@ -4923,7 +4932,16 @@ export default {
       title: '        <p class="header">See what it’s like to grow ${kYCTrialAmount} by the second.</p>        <p>Today when you sign up and verify your ID, we’ll deposit ${kYCTrialAmount} into your account to earn 4% APY for 30 days. At the end of 30 days, we’ll take the ${kYCTrialAmount} back but you can keep the interest and use it how you want.</p>        <p>Use your earnings to grow at {rate}% or more with our other investment tools.</p>        <p>You can start investing from just $50.</p>        <p>This offer is only available for a limited time.</p>      '
     },
     promotionGeneral: {
-      title: '        <p class="header">Give us a try with a free ${kYCTrialAmount} trial bonus</p>        <p>Experience P2P lending without committing your own money. Try us now and enjoy an inflation-beating 4% APY on a ${kYCTrialAmount} trial bonus. After 30 days, we reclaim the bonus but you keep the interest.</p>        <p>This offer is only available for a limited time.</p>      ',
+      title: `
+        <p class="header">Give us a try with a free <br/>\${kYCTrialAmount} trial bonus</p>
+      `,
+      titleMobile: `
+        <p class="header">Give us a try with a <br/><span class="hightlight">free \${kYCTrialAmount}</span> trial bonus</p>
+      `,
+      desc: `
+        <p>Experience P2P lending without committing your own money. Sign up and verify your ID (pass KYC) now and enjoy an inflation-beating 4% APY on a \${kYCTrialAmount} trial bonus. After 30 days, we reclaim the bonus but you keep the interest.</p>
+        <p>This offer is for a limited time and only available to US citizens.</p>
+      `,
       howItWorks: {
         title: 'How It Works',
         data: {

@@ -3196,7 +3196,7 @@ export default {
             updateBalanceNoteInWorkingTime: 'Please note it might take <strong>up to five business days</strong> for the ACH transfer to complete and show in your account.',
             confirmMessage: `
               <p>You're about to deposit {amount} via Plaid ACH. When you click Confirm, the transfer will begin and you won’t be able to cancel it.</p>
-              <p>Please ensure you have sufficient funds in your linked bank account or your ACH might be reversed and your Instant Deposit benefit banned for 30 days.</p>
+              <p>Please ensure you have sufficient funds in your linked bank account or your ACH might be reversed and your Instant Credit benefit banned for 30 days.</p>
               <p>When you’re ready, please click Confirm to start your transfer.</p>
             `,
             referNoteDesc: `
@@ -3884,7 +3884,7 @@ export default {
               <li>Link a checking account, not a savings account, to avoid any withdrawal limits.</li>
             </ol>
           </p>
-          <p>If your account incurs multiple ACH reversals you’ll lose your Instant Deposit benefits and might be charged a fee of up to $20. Please read <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/" class="underline" target="_blank">our guide</a> carefully to learn how to correctly link a US bank account for ACH transfers.</p>
+          <p>If your account incurs multiple ACH reversals you’ll lose your Instant Credit benefits and might be charged a fee of up to $20. Please read <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/" class="underline" target="_blank">our guide</a> carefully to learn how to correctly link a US bank account for ACH transfers.</p>
         `
       },
       8: {
@@ -3901,12 +3901,12 @@ export default {
         `
       },
       10: {
-        question: 'What are Instant Deposits?',
+        question: 'What are Instant Credits?',
         answer: `
-          <p>Instant Deposits is a program we developed to pay you interest on ACH deposits while they’re being processed. ACH transfers can take up to 5 business days and your funds wouldn’t normally earn interest during this time. But with Instant Deposits, you earn 4% APY from the moment you create the ACH transfer.</p>
-          <p>Until your ACH has finished processing, you won’t be able to withdraw or invest your deposit in a crypto-backed or Loan Originator loan. Instant Deposits transaction limits are calculated using the formula below:</p>
-          <p class="font-italic">Your Instant Deposit Limit = Your current balance + $1,000 (max $25,000 per transaction)</p>
-          <p>For example, if your balance is $5,000, your Instant Deposit limit is $6,000. This means you’ll earn 4% APY on a transaction of up to $6,000 while your ACH is processed.</p>
+          <p>Instant Credits is a program we developed to pay you interest on ACH deposits while they’re being processed. ACH transfers can take up to 5 business days and your funds wouldn’t normally earn interest during this time. But with Instant Credits, you earn 4% APY from the moment you create the ACH transfer.</p>
+          <p>Until your ACH has finished processing, you won’t be able to withdraw or invest your deposit in a crypto-backed or Loan Originator loan. Instant Credits transaction limits are calculated using the formula below:</p>
+          <p class="font-italic">Your Instant Credit Limit = Your current balance + $1,000 (max $25,000 per transaction)</p>
+          <p>For example, if your balance is $5,000, your Instant Credit limit is $6,000. This means you’ll earn 4% APY on a transaction of up to $6,000 while your ACH is processed.</p>
         `
       },
     }

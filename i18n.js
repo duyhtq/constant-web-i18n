@@ -1,8 +1,9 @@
 
-const id = require('./i18n/id.json');
-const km = require('./i18n/km.json');
-const zh = require('./i18n/zh.json');
-
+// const en = require('./i18n/i18n/en.json');
+// const vi = require('./i18n/i18n/vi.json');
+const enUS = require('./i18n/i18n/enUS.json');
+// const zhCN = require('./i18n/i18n/zhCN.json');
+// const zhTW = require('./i18n/i18n/zhTW.json');
 module.exports = {
-  id, km, zh
+  enUS
 };

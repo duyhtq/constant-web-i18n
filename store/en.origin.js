@@ -93,6 +93,7 @@
         "referral": "%%%.footer.referral%%%",
         "affiliate": "%%%.footer.affiliate%%%",
         "blog": "%%%.footer.blog%%%",
+        "blogDesc": "%%%.footer.blogDesc%%%",
         "social": {
             "fb": {
                 "link": "%%%.footer.social.fb.link%%%",
@@ -175,6 +176,7 @@
         "titleFoundation": "%%%.footer.titleFoundation%%%",
         "openSource": "%%%.footer.openSource%%%",
         "prices": "%%%.footer.prices%%%",
+        "pricesDesc": "%%%.footer.pricesDesc%%%",
         "developers": "%%%.footer.developers%%%",
         "contactUs": "%%%.footer.contactUs%%%",
         "phone": {
@@ -186,6 +188,7 @@
         },
         "support": "%%%.footer.support%%%",
         "supportCenter": "%%%.footer.supportCenter%%%",
+        "supportCenterDesc": "%%%.footer.supportCenterDesc%%%",
         "help": "%%%.footer.help%%%",
         "getSocial": "%%%.footer.getSocial%%%",
         "content": "%%%.footer.content%%%",
@@ -1502,7 +1505,9 @@
         "home": "%%%.headerBar.home%%%",
         "account": "%%%.headerBar.account%%%",
         "ourStory": "%%%.headerBar.ourStory%%%",
+        "ourStoryDesc": "%%%.headerBar.ourStoryDesc%%%",
         "testimonial": "%%%.headerBar.testimonial%%%",
+        "testimonialDesc": "%%%.headerBar.testimonialDesc%%%",
         "history": "%%%.headerBar.history%%%",
         "extraMenu": {
             "invest": {
@@ -4583,6 +4588,15 @@
                 "message": "%%%.components.dialog.require2Fa.message%%%",
                 "enable": "%%%.components.dialog.require2Fa.enable%%%",
                 "cancel": "%%%.components.dialog.require2Fa.cancel%%%"
+            },
+            "checkTrialKyc": {
+                "messageConfirm": "%%%.components.dialog.checkTrialKyc.messageConfirm%%%",
+                "confirm": "%%%.components.dialog.checkTrialKyc.confirm%%%",
+                "cancel": "%%%.components.dialog.checkTrialKyc.cancel%%%",
+                "action": {
+                    "withdraw": "%%%.components.dialog.checkTrialKyc.action.withdraw%%%",
+                    "transfer": "%%%.components.dialog.checkTrialKyc.action.transfer%%%"
+                }
             }
         }
     },
@@ -4859,15 +4873,19 @@
         "prices": "%%%.menuMobile.prices%%%",
         "account": "%%%.menuMobile.account%%%",
         "getStarted": "%%%.menuMobile.getStarted%%%",
+        "getStartedDesc": "%%%.menuMobile.getStartedDesc%%%",
         "getStartedNow": "%%%.menuMobile.getStartedNow%%%",
         "aboutYou": "%%%.menuMobile.aboutYou%%%",
+        "aboutYouDesc": "%%%.menuMobile.aboutYouDesc%%%",
         "badges": "%%%.menuMobile.badges%%%",
         "interest": "%%%.menuMobile.interest%%%",
         "accountActivity": "%%%.menuMobile.accountActivity%%%",
         "blog": "%%%.menuMobile.blog%%%",
         "wallet": "%%%.menuMobile.wallet%%%",
         "membership": "%%%.menuMobile.membership%%%",
+        "membershipDesc": "%%%.menuMobile.membershipDesc%%%",
         "security": "%%%.menuMobile.security%%%",
+        "securityDesc": "%%%.menuMobile.securityDesc%%%",
         "signout": "%%%.menuMobile.signout%%%",
         "history": "%%%.menuMobile.history%%%",
         "btnInvestments": "%%%.menuMobile.btnInvestments%%%",

@@ -93,6 +93,7 @@ export default {
     referral: 'Share & Earn',
     affiliate: 'Affiliate',
     blog: 'Blog',
+    blogDesc: 'News, guides, and opinion.',
     social: {
       fb: {
         link: 'https://www.facebook.com/constantp2p',
@@ -140,7 +141,8 @@ export default {
     kycGuidelines: 'KYC guidelines',
     titleFoundation: 'About',
     openSource: 'Open Source',
-    prices: 'Pricing and Service times',
+    prices: 'Pricing and service times',
+    pricesDesc: 'Fees, schedules, and limits.',
     developers: 'Developers',
     contactUs: 'Contact us',
     phone: {
@@ -152,6 +154,7 @@ export default {
     },
     support: 'Help & Support',
     supportCenter: 'Support Center',
+    supportCenterDesc: 'Help when you need it.',
     help: 'Help',
     getSocial: 'Download now',
     content: `
@@ -1446,8 +1449,10 @@ export default {
     createAccount: 'Create account',
     home: 'Home',
     account: 'Account',
-    ourStory: 'Our Story',
+    ourStory: 'Our story',
+    ourStoryDesc: 'Who we are and what we do.',
     testimonial: 'Why people love us',
+    testimonialDesc: 'Praise from customers, partners, and press.',
     history: 'History',
     extraMenu: {
       invest: {
@@ -4602,7 +4607,16 @@ export default {
         message: '          <p><span class="bold">Action required:</span> For your security, we now require all accounts to enable 2-Factor Authorization (2FA). Please enable this now from your settings menu.</p>          <p>If you have any problems, please email <a href="mailto://hello@myconstant.com">hello@myconstant.com</a>.</p>        ',
         enable: 'Enable 2FA now',
         cancel: 'Close'
-      }
+      },
+      checkTrialKyc: {
+        messageConfirm: 'For your security, please verify your identity before {action} from your Account.',
+        confirm: 'Verify my ID',
+        cancel: 'Maybe later',
+        action: {
+          withdraw: 'making a withdrawal',
+          transfer: 'making a transfer',
+        }
+      },
     }
   },
   collateralBalance: {
@@ -4875,22 +4889,26 @@ export default {
     supportCenter: 'Support Center',
     prices: 'Pricing & Service times',
     account: 'Account',
-    getStarted: 'Get Started (KYC & Bank account)',
+    getStarted: 'Get started',
+    getStartedDesc: 'Verify your ID and link your bank account.',
     getStartedNow: 'Get Started now',
-    aboutYou: 'About You',
+    aboutYou: 'Profile',
+    aboutYouDesc: 'View or change your personal details.',
     badges: 'Your badges',
     interest: 'Interest',
     accountActivity: 'Account Activity',
     blog: 'Blog',
     wallet: 'Wallet',
     membership: 'Membership',
+    membershipDesc: 'View your points, benefits, and more.',
     security: 'Security',
+    securityDesc: 'View or change your security settings.',
     signout: 'Sign out',
     history: 'History',
     btnInvestments: '<div class="textLeft"><small>Investments</small><div>Crypto-backed</div></div>',
     btnBuyBackInvestments: '<div class="textLeft"><small>Investments</small><div>Loan Originator</div></div>',
-    btnSecondaryMarket: '<div class="textLeft"><small>Secondary</small><div>Market</div></div>',
-    btnLOSecondaryMarket: '<div class="textLeft"><small>Loan Originator</small><div>Secondary Market</div></div>',
+    btnSecondaryMarket: '<div class="textLeft"><small>Secondary market</small><div>Crypto-backed</div></div>',
+    btnLOSecondaryMarket: '<div class="textLeft"><small>Secondary market</small><div>Loan Originator</div></div>',
     btnLoans: 'Loans',
     btnLoansC2C: 'Crypto Credit'
   },

@@ -783,7 +783,7 @@
                     "": "",
                     "locked": "Verifying"
                 },
-                "balanceStarDesc": "        A STAR is a reward token you can redeem for 1% bonus interest on an investment or a 1% discount on a loan. Earn STAR every time you reach Diamond membership (invest or borrow $100,000 in 180 days).        ",
+                "balanceStarDesc": "        A STAR is a reward token you can redeem for 1% bonus interest on an investment or a 1% discount on a loan. You earn STAR the first time you reach Diamond membership (invest or borrow $100,000 in 180 days).        ",
                 "referralDesc": "        Get a 10% reward when your friends earn interest – paid out every second. So if your friend earns $100, we’ll give you $10. There’s no limit to the number of friends you can refer.        ",
                 "matched": "matched",
                 "cancel": "Cancel",
@@ -2131,7 +2131,7 @@
     "home": {
         "constantLoan": {
             "intro": {
-                "content": "\n            <p class=\"topText\">Borrow the way you want</p>\n            <h1 class=\"hightlight\">Borrow from just {rate}% APR.</h1>\n            <div class=\"h1\">Combine {numCollateral}+ cryptos as collateral.</div>\n            <div class=\"h1 last\">Get cash or coins without selling up.</div>\n            <p>Get a loan in minutes from just {rate}% APR. Withdraw in fiat, stablecoins, or trade your loan for cryptocurrency at the best prices. Your collateral is securely stored and returned when you repay. No exchanges. No trading fees. Trade or cash-in the value of your portfolio without selling up.</p>\n        ",
+                "content": "            <p class=\"topText\">Borrow the way you want</p>\n            <h1 class=\"hightlight\">Borrow from just {rate}% APR.</h1>\n            <div class=\"h1\">Combine up to {numCollateral} cryptos as collateral.</div>\n            <div class=\"h1 last\">Get cash or coins without selling up.</div>\n            <p>Get a loan in minutes from just {rate}% APR. Withdraw in fiat, stablecoins, or trade your loan for cryptocurrency at the best prices. Your collateral is securely stored and returned when you repay. No exchanges. No trading fees. Trade or cash-in the value of your portfolio without selling up.</p>",
                 "youtube": {
                     "title": "Why borrow with MyConstant?"
                 },

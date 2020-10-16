@@ -1209,6 +1209,7 @@
             "correct": "Correct",
             "incorrect": "Incorrect",
             "lUpload": "Upload an image of THE {face} of your {type}",
+            "lUploadOcr": "Upload an image of THE {face} of your ID (passport, driver's license, or other government-issued ID)",
             "descIDUpload": "Please make sure that the photo is complete and clearly visible, in JPG, JPEG, or PNG format, and is smaller than 10MB.",
             "selfie": "Upload an image of your SELFIE",
             "btnSubmit": "Submit",
@@ -1483,9 +1484,12 @@
         },
         "getStarted": {
             "steps": {
-                "verifyEmail": "Step 1: Verify email",
-                "kyc": "Step 2: Submit KYC",
-                "bank": "Step 3: Link your bank account"
+                "verifyEmail": "Verify email",
+                "verifyEmailDesc": "Submit KYC now",
+                "kyc": "Submit KYC",
+                "kycDesc": "Receive <strong>${amount}</strong> trial bonus after passing KYC",
+                "bank": "Link bank account",
+                "bankDesc": "Receive <strong>300 points</strong> instantly"
             },
             "verifyEmailMessage": "<p>Done! We have sent a verification to your e-mail.<br/>Please check your mailbox.</p>",
             "resendVerify": "Resend email verification",
@@ -4832,6 +4836,7 @@
             "undefined": "Oops! Something went wrong, please try again",
             "notEnoughConstant": "Please ensure you have sufficient funds in your account to complete this transfer.",
             "unable_to_cancel": "You can’t cancel this order. It might be cancelled by the seller or picked by another investor already. Please refresh the browser.",
+            "userTaxIDNumberExisted": "This SSN is already used to verify another account.",
             "userTaxIDNumberInvalid": "TaxIDNumber is invalid",
             "userPhoneNumberInvalid": "PhoneNumber is invalid"
         },

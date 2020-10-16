@@ -1209,6 +1209,7 @@
             "correct": "%%%.me.kyc.correct%%%",
             "incorrect": "%%%.me.kyc.incorrect%%%",
             "lUpload": "%%%.me.kyc.lUpload%%%",
+            "lUploadOcr": "%%%.me.kyc.lUploadOcr%%%",
             "descIDUpload": "%%%.me.kyc.descIDUpload%%%",
             "selfie": "%%%.me.kyc.selfie%%%",
             "btnSubmit": "%%%.me.kyc.btnSubmit%%%",
@@ -1484,8 +1485,11 @@
         "getStarted": {
             "steps": {
                 "verifyEmail": "%%%.me.getStarted.steps.verifyEmail%%%",
+                "verifyEmailDesc": "%%%.me.getStarted.steps.verifyEmailDesc%%%",
                 "kyc": "%%%.me.getStarted.steps.kyc%%%",
-                "bank": "%%%.me.getStarted.steps.bank%%%"
+                "kycDesc": "%%%.me.getStarted.steps.kycDesc%%%",
+                "bank": "%%%.me.getStarted.steps.bank%%%",
+                "bankDesc": "%%%.me.getStarted.steps.bankDesc%%%"
             },
             "verifyEmailMessage": "%%%.me.getStarted.verifyEmailMessage%%%",
             "resendVerify": "%%%.me.getStarted.resendVerify%%%",
@@ -4832,6 +4836,7 @@
             "undefined": "%%%.error.serverCode.undefined%%%",
             "notEnoughConstant": "%%%.error.serverCode.notEnoughConstant%%%",
             "unable_to_cancel": "%%%.error.serverCode.unable_to_cancel%%%",
+            "userTaxIDNumberExisted": "%%%.error.serverCode.userTaxIDNumberExisted%%%",
             "userTaxIDNumberInvalid": "%%%.error.serverCode.userTaxIDNumberInvalid%%%",
             "userPhoneNumberInvalid": "%%%.error.serverCode.userPhoneNumberInvalid%%%"
         },

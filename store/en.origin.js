@@ -1211,6 +1211,7 @@
             "lUpload": "%%%.me.kyc.lUpload%%%",
             "lUploadOcr": "%%%.me.kyc.lUploadOcr%%%",
             "descIDUpload": "%%%.me.kyc.descIDUpload%%%",
+            "descIDOcrUpload": "%%%.me.kyc.descIDOcrUpload%%%",
             "selfie": "%%%.me.kyc.selfie%%%",
             "btnSubmit": "%%%.me.kyc.btnSubmit%%%",
             "plAddrCountry": "%%%.me.kyc.plAddrCountry%%%",
@@ -4630,7 +4631,8 @@
         "recommendMessage": "%%%.collateralBalance.recommendMessage%%%",
         "errorMaxValue": "%%%.collateralBalance.errorMaxValue%%%",
         "errorMinValue": "%%%.collateralBalance.errorMinValue%%%",
-        "generateAddress": "%%%.collateralBalance.generateAddress%%%"
+        "generateAddress": "%%%.collateralBalance.generateAddress%%%",
+        "noRecord": "%%%.collateralBalance.noRecord%%%"
     },
     "proLending": {
         "balances": {
@@ -5333,7 +5335,8 @@
         },
         "desc30DayLow": "%%%.withdrawFees.desc30DayLow%%%",
         "descCtv": "%%%.withdrawFees.descCtv%%%",
-        "descRecallExcess": "%%%.withdrawFees.descRecallExcess%%%"
+        "descRecallExcess": "%%%.withdrawFees.descRecallExcess%%%",
+        "noRecord": "%%%.withdrawFees.noRecord%%%"
     },
     "miniQuiz": {
         "title": "%%%.miniQuiz.title%%%",

@@ -388,7 +388,7 @@
             },
             "headers": {
                 "day": "Date",
-                "currencyAmount": "Deposited",
+                "currencyAmount": "Deposit",
                 "amount": "Received",
                 "cryptoAddress": "Crypto Address",
                 "status": "Status",
@@ -1210,14 +1210,15 @@
             "incorrect": "Incorrect",
             "lUpload": "Upload an image of THE {face} of your {type}",
             "lUploadOcr": "Upload an image of THE {face} of your ID (passport, driver's license, or other government-issued ID)",
-            "descIDUpload": "Please make sure that the photo is complete and clearly visible, in JPG, JPEG, or PNG format, and is smaller than 10MB.",
+            "descIDUpload": "Please make sure that the photo is complete and clearly visible, in JPG, JPEG, PNG, or PDF format, and is smaller than 10MB.",
+            "descIDOcrUpload": "Please make sure that the photo is complete and clearly visible, in JPG, JPEG, or PNG format, and is smaller than 10MB.",
             "selfie": "Upload an image of your SELFIE",
             "btnSubmit": "Submit",
             "plAddrCountry": "Select your country",
             "plAddrCity": "Select your city",
             "titleStep2": "Thanks. Now we need a proof of address.",
             "lAddrUpload": "To verify the address above, please upload a document that meets <a href=\"https://medium.com/@constantp2p/how-to-verify-your-id-on-constant-kyc-1a9d08ae0a\" class=\"underline\" target=\"_blank\" >these criteria</a>.",
-            "descAddrUpload": "<div><p>Valid documents: utility bill, phone bill, mortgage statement, tenancy agreement, bank/credit card statement, insurance letter (motor, home, or life), or financial statement (pension, endowment).</p><p><strong style=\"color:#F5A623;\">Document must be dated within the last 90 days.</strong></p><p>Please ensure your proof of address is an exact match with the address provided in your application, including all shorthands and abbreviations.</p><p>Please make sure that the photo is complete and clearly visible, in JPG, JPEG, PNG and is smaller than 10MB.</p></div>",
+            "descAddrUpload": "<div><p>Valid documents: utility bill, phone bill, mortgage statement, tenancy agreement, bank/credit card statement, insurance letter (motor, home, or life), or financial statement (pension, endowment).</p><p><strong style=\"color:#F5A623;\">Document must be dated within the last 90 days.</strong></p><p>Please ensure your proof of address is an exact match with the address provided in your application, including all shorthands and abbreviations.</p><p>Please make sure that the photo is complete and clearly visible, in JPG, JPEG, PNG or PDF, and is smaller than 10MB.</p></div>",
             "btnBack": "Back",
             "reviewing": "        <p>Thanks, it’s nice to meet you.</p>        <p>          We’re looking over your information and will let you know once you’re          good to go.        </p>      ",
             "rejected": "<p>We couldn’t verify your ID automatically, so your KYC documents are in manual review. It might take a little longer to verify you but no more than 7 business days. If you have any questions, please email us on <a href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>.</p>",
@@ -4630,7 +4631,8 @@
         "recommendMessage": "To restore your collateral value to the recommended {recommendedRate}%, please top up {amount} {currency}",
         "errorMaxValue": "Amount must less than {max}",
         "errorMinValue": "Amount must greater than {min}",
-        "generateAddress": "Generate address"
+        "generateAddress": "Generate address",
+        "noRecord": "No record found"
     },
     "proLending": {
         "balances": {
@@ -5333,7 +5335,8 @@
         },
         "desc30DayLow": "This is the cryptocurrency's lowest price over a rolling 30-day period.",
         "descCtv": "The Collateral to Value (CTV) ratio expresses the amount of collateral you need as a percentage of the loan amount. In other words, it's the reciprocal of the LTV (Loan to Value ratio).",
-        "descRecallExcess": "You can only recall excess collateral once the CTV (Collateral to Value ratio) rises above this threshold."
+        "descRecallExcess": "You can only recall excess collateral once the CTV (Collateral to Value ratio) rises above this threshold.",
+        "noRecord": "No record found"
     },
     "miniQuiz": {
         "title": "MyConstant's mini-quiz",

@@ -3922,7 +3922,7 @@
         }
     },
     "cryptoLend": {
-        "contentHtml": "\n      <p class=\"topText\">Secured crypto lending</p>\n      <h1 class=\"hightlight\">Earn {interest}% APY <br/>on BTC, ETH, and BNB.</h1>\n      <div class=\"h1\">Compounded and paid every second.</div>\n      <div class=\"h1 last\">Backed by MyConstant.</div>\n      <p>Invest your idle cryptocurrencies for a return of {interest}% APY. All lending is backed by MyConstant Guarantee<sup>1</sup> and you can withdraw anytime for free. No fees. No lock-ups. Compounded every second.</p>\n      <p><sup>1</sup>The MyConstant Guarantee is a $3,000,000 fund that underwrites all investments in Crypto Lend, protecting you from losses.</p>\n    ",
+        "contentHtml": "\n      <p class=\"topText\">Earn on your idle cryptos</p>\n      <h1 class=\"hightlight\">Earn {interest}% APY <br/>on BTC, ETH, and BNB.</h1>\n      <div class=\"h1\">Compounded and paid every second.</div>\n      <div class=\"h1 last\">Backed by MyConstant.</div>\n      <p>Invest your idle cryptocurrencies for a return of {interest}% APY. All lending is backed by MyConstant Guarantee<sup>1</sup>. No fees. No lock-ups. Compounded every second.</p>\n      <p><sup>1</sup>The MyConstant Guarantee is an upper limit on new Crypto Lend investments. Within this limit, we will cover any loss or theft of your cryptocurrency while in the custody of our partners. However, it's not an insurance, and your investments are still at risk.</p>",
         "learnMore": "Learn more here",
         "intro": {
             "desc": {
@@ -4861,6 +4861,7 @@
         "btnSignUp": "Sign Up",
         "btnReferral": "Share & Earn",
         "btnTransfer": "Transfer",
+        "btnCollateralBalance": "<div class=\"textLeft\"><small>Coin</small><div>Balance</div></div>",
         "btnWithdrawFiat": "<div class=\"textLeft\"><small>Withdraw</small><div>USD</div></div>",
         "btnWithdrawCrypto": "<div class=\"textLeft\"><small>Withdraw</small><div>Crypto</div></div>",
         "btnDepositFiat": "<div class=\"textLeft\"><small>Deposit</small><div>USD</div></div>",

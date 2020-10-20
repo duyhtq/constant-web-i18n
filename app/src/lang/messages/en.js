@@ -4878,6 +4878,7 @@ export default {
     btnSignUp: 'Sign Up',
     btnReferral: 'Share & Earn',
     btnTransfer: 'Transfer',
+    btnCollateralBalance: '<div class="textLeft"><small>Coin</small><div>Balance</div></div>',
     btnWithdrawFiat: '<div class="textLeft"><small>Withdraw</small><div>USD</div></div>',
     btnWithdrawCrypto: '<div class="textLeft"><small>Withdraw</small><div>Crypto</div></div>',
     btnDepositFiat: '<div class="textLeft"><small>Deposit</small><div>USD</div></div>',

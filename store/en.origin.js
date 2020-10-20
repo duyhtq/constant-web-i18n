@@ -4861,6 +4861,7 @@
         "btnSignUp": "%%%.menuMobile.btnSignUp%%%",
         "btnReferral": "%%%.menuMobile.btnReferral%%%",
         "btnTransfer": "%%%.menuMobile.btnTransfer%%%",
+        "btnCollateralBalance": "%%%.menuMobile.btnCollateralBalance%%%",
         "btnWithdrawFiat": "%%%.menuMobile.btnWithdrawFiat%%%",
         "btnWithdrawCrypto": "%%%.menuMobile.btnWithdrawCrypto%%%",
         "btnDepositFiat": "%%%.menuMobile.btnDepositFiat%%%",

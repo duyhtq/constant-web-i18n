@@ -3554,6 +3554,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.menuMobile.btnSignUp%%%,"Sign Up"
 %%%.menuMobile.btnReferral%%%,"Share & Earn"
 %%%.menuMobile.btnTransfer%%%,"Transfer"
+%%%.menuMobile.btnCollateralBalance%%%,"<div class=""textLeft""><small>Coin</small><div>Balance</div></div>"
 %%%.menuMobile.btnWithdrawFiat%%%,"<div class=""textLeft""><small>Withdraw</small><div>USD</div></div>"
 %%%.menuMobile.btnWithdrawCrypto%%%,"<div class=""textLeft""><small>Withdraw</small><div>Crypto</div></div>"
 %%%.menuMobile.btnDepositFiat%%%,"<div class=""textLeft""><small>Deposit</small><div>USD</div></div>"

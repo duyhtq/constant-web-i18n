@@ -2712,6 +2712,8 @@
                 "BeneficiaryAddressStreet2": "%%%.home.convert.payToForm.BeneficiaryAddressStreet2%%%",
                 "BeneficiaryAddressCountry": "%%%.home.convert.payToForm.BeneficiaryAddressCountry%%%",
                 "createdBankFailed": "%%%.home.convert.payToForm.createdBankFailed%%%",
+                "reVerifyPlaidMessage": "%%%.home.convert.payToForm.reVerifyPlaidMessage%%%",
+                "reVerifyButton": "%%%.home.convert.payToForm.reVerifyButton%%%",
                 "transferMethodsCheckbook": {
                     "ach": {
                         "title": "%%%.home.convert.payToForm.transferMethodsCheckbook.ach.title%%%",
@@ -5177,6 +5179,7 @@
         "submitForm": {
             "errNeedKyc": "%%%.badges.submitForm.errNeedKyc%%%",
             "title": "%%%.badges.submitForm.title%%%",
+            "titleAppster": "%%%.badges.submitForm.titleAppster%%%",
             "subtitle": "%%%.badges.submitForm.subtitle%%%",
             "subtitleTrustpilot": "%%%.badges.submitForm.subtitleTrustpilot%%%",
             "submit": "%%%.badges.submitForm.submit%%%",

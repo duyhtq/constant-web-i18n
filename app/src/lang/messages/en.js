@@ -2665,6 +2665,8 @@ export default {
         BeneficiaryAddressStreet2: 'Beneficiary Street 2',
         BeneficiaryAddressCountry: 'Beneficiary Country',
         createdBankFailed: 'Failed while creating new bank, please try again',
+        reVerifyPlaidMessage: 'Our ACH processing partner, Plaid, has detected a change in your bank details. To continue using this linked bank account for ACH transfers, please re-verify your account. This only takes a moment. Just click Re-verify below and then follow the on-screen instructions.',
+        reVerifyButton: 'Re-verify your account',
         transferMethodsCheckbook: {
           ach: { title: 'ACH', desc: 'Fee: Free. Time: next business day' }
         }
@@ -5221,6 +5223,7 @@ export default {
     submitForm: {
       errNeedKyc: 'You must pass KYC before you can request this badge. <a href="/me/profile">Submit your KYC documents or approval.</>',
       title: 'Submit the link to your review',
+      titleAppster: 'Please enter your Apple ID / Google Play account',
       subtitle: "Thanks for requesting the {badgeName} badge. Please enter the link that supports your request below. We'll get back to you within two business days with a decision.",
       subtitleTrustpilot: "Thanks for requesting the Supporter badge. After reviewing us on Trustpilot, copy and paste the link to your review into the box below. We'll approve your badge within 2 business days.",
       submit: 'Submit',

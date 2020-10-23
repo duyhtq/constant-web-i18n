@@ -1647,7 +1647,7 @@ export default {
         viewAll: 'View us on TrustPilot',
         readMore: 'Read more',
         reviews: 'Reviews',
-        numReview: '542',
+        numReview: '582',
         excellent: 'Excellent',
         points: '4.6/5',
         data : {

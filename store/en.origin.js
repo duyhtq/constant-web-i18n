@@ -376,7 +376,8 @@
         "depositSuccess": "%%%.exchangeInputDepositForm.depositSuccess%%%",
         "earnInterest": "%%%.exchangeInputDepositForm.earnInterest%%%",
         "depositCryptoDescription": "%%%.exchangeInputDepositForm.depositCryptoDescription%%%",
-        "getCurrencyListFailed": "%%%.exchangeInputDepositForm.getCurrencyListFailed%%%"
+        "getCurrencyListFailed": "%%%.exchangeInputDepositForm.getCurrencyListFailed%%%",
+        "minDeposit": "%%%.exchangeInputDepositForm.minDeposit%%%"
     },
     "history": {
         "deposit": {
@@ -450,6 +451,7 @@
                 "amount": "%%%.history.transferConstant.headers.amount%%%",
                 "fromEmail": "%%%.history.transferConstant.headers.fromEmail%%%",
                 "toEmail": "%%%.history.transferConstant.headers.toEmail%%%",
+                "time": "%%%.history.transferConstant.headers.time%%%",
                 "date": "%%%.history.transferConstant.headers.date%%%",
                 "status": "%%%.history.transferConstant.headers.status%%%",
                 "action": "%%%.history.transferConstant.headers.action%%%"
@@ -489,6 +491,7 @@
                 "currencyAmount": "%%%.history.withdrawCrypto.headers.currencyAmount%%%",
                 "fee": "%%%.history.withdrawCrypto.headers.fee%%%",
                 "address": "%%%.history.withdrawCrypto.headers.address%%%",
+                "time": "%%%.history.withdrawCrypto.headers.time%%%",
                 "date": "%%%.history.withdrawCrypto.headers.date%%%",
                 "status": "%%%.history.withdrawCrypto.headers.status%%%",
                 "action": "%%%.history.withdrawCrypto.headers.action%%%"
@@ -556,6 +559,7 @@
                     "plaid": "%%%.me.history.user.paymentMethods.plaid%%%"
                 }
             },
+            "time": "%%%.me.history.time%%%",
             "date": "%%%.me.history.date%%%",
             "reference_number": "%%%.me.history.reference_number%%%",
             "value": "%%%.me.history.value%%%",

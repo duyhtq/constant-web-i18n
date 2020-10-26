@@ -351,6 +351,7 @@ export default {
     earnInterest: 'Earn an automatic {interest}% APY',
     depositCryptoDescription: 'Choose a crypto or stablecoin below and then send your funds to the wallet address shown. There is no minimum or maximum deposit.',
     getCurrencyListFailed: 'Failed while getting supported currencies',
+    minDeposit: 'Please transfer a minimum of {amount} to the following wallet address',
   },
   history: {
     deposit: {
@@ -412,9 +413,10 @@ export default {
         amount: 'Amount',
         fromEmail: 'From Email',
         toEmail: 'To Email',
+        time: 'Time',
         date: 'Date',
         status: 'Status',
-        action: 'Action'
+        action: ' '
       },
       noHistoryData: 'Make a transfer to get started.'
     },
@@ -444,6 +446,7 @@ export default {
         currencyAmount: 'Currency Amount',
         fee: 'Fee',
         address: 'Send to Address',
+        time: 'Time',
         date: 'Date',
         status: 'Status',
         action: 'Action'
@@ -506,6 +509,7 @@ export default {
           plaid: 'Linked Bank'
         }
       },
+      time: 'Time',
       date: 'Date',
       reference_number: 'Reference No.',
       value: 'Currency Amount',
@@ -578,7 +582,7 @@ export default {
         '16': 'Order timed out'
       },
       requestExecute: 'Help',
-      transactionID: 'Transaction ID',
+      transactionID: '#',
       type: 'Type',
       fee: 'Fee',
       status: 'Status',
@@ -1104,7 +1108,7 @@ export default {
       bankInfo: 'Bank information',
       myInformation: 'Account details',
       securities: 'Account security',
-      notification_settings: 'Notification Settings',
+      notification_settings: 'Notification settings',
       myTransactions: 'Account activity',
       overView: 'Overview',
       deposits: 'Deposits',
@@ -1282,7 +1286,7 @@ export default {
       title: 'Earn 4% APY on your balance with Flex',
       desc: 'What would you like to do with your balance?',
       label: 'Earn 4% APY through Flex',
-      noteOn: 'Your balance is earning 4% APY through Flex. You can withdraw anytime for free.',
+      noteOn: `<p>Your balance is earning 4% APY through Flex. You can withdraw anytime for free.</p>`,
       descDesc: '<p>You can choose to earn 4% APY on your balance with Flex.</p>                <p>Flex is a lending pool that uses Compound Finance technology to earn you interest. All lending is secured by borrower collateral, which protects your funds, and you can withdraw anytime for free.</p>                <p>If you disable Flex, your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust store your funds across multiple insured bank accounts, giving total coverage of $130,000,000, but you won’t earn interest.</p>',
       enableFlex: {
         messageConfirm: {
@@ -1296,7 +1300,7 @@ export default {
           false: '<p>Congratulations! Your balance will now earn 4% APY through Flex. You can withdraw anytime for free and your balance is protected by borrower collateral.</p><a href="https://blog.myconstant.com/flex-or-prime-trust-you-decide!" class="underline" target="_blank">Find out how Flex works</a>'
         }
       },
-      noteOff: 'Your balance is escrowed with Prime Trust and insured to $130,000,000.'
+      noteOff: `<p>Your balance is escrowed with Prime Trust and insured to $130,000,000.</p>`
     },
     emailSetting: {
       title: 'Email Settings',
@@ -1316,10 +1320,10 @@ export default {
       }
     },
     notificationSetting: {
-      title: 'Notification Settings',
+      title: 'Notification settings',
       secondaryMarketSetting: {
         title: 'Secondary market mobile notifications',
-        downloadApp: 'Don’t have the app? Download it now using the links below.',
+        downloadApp: `<p>Don’t have the app?<br/>Download it now using the links below.</p>`,
         labelOff: 'Enable',
         noteOff: '            <p>Secondary market notifications are off. You won’t be reminded when new orders appear. Enable notifications to avoid missing the best deals.</p>            ',
         desc: '        <p>        Want to be the first to know about new secondary market orders? Enable notifications here and we’ll notify you by mobile when an order appears that matches your criteria.        </p>        ',
@@ -3183,7 +3187,7 @@ export default {
             minuteWindow: '15 MINUTE WINDOW',
             minuteWindowDescription: 'Please complete your transfer within 15 minutes. After that, your order will be automatically cancelled.',
             subtitleGeneral: `
-              <p>Please wire your deposit of \${amount} using reference number {refNumber} to Prime Trust using the details below. When you have made your transfer, please email your wire receipt to <a href="mailto:finance@myconstant.com">finance@myconstant.com</a>.</p> 
+              <p>Please wire your deposit of \${amount} using reference number {refNumber} to Prime Trust using the details below. When you have made your transfer, please email your wire receipt to <a href="mailto:finance@myconstant.com">finance@myconstant.com</a>.</p>
               <p>Need help? <a target="_blank" href="https://blog.myconstant.com/how-to-wire-your-money-to-constant-via-prime-trust/">Check out our guide to Prime Trust transfers.</a></p>
             `,
             subtitleInvest: `

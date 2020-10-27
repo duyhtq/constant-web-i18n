@@ -570,7 +570,7 @@ export default {
         '2': 'Coin minting',
         '3': 'Coin burning',
         '4': 'Transferring',
-        '5': 'Redeeming',
+        '5': 'Processing',
         '6': 'Cancelled',
         '7': 'Successful',
         '8': 'In progress',

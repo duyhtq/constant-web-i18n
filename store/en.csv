@@ -462,7 +462,7 @@
 %%%.me.history.orderStatus.2%%%,"Coin minting"
 %%%.me.history.orderStatus.3%%%,"Coin burning"
 %%%.me.history.orderStatus.4%%%,"Transferring"
-%%%.me.history.orderStatus.5%%%,"Redeeming"
+%%%.me.history.orderStatus.5%%%,"Processing"
 %%%.me.history.orderStatus.6%%%,"Cancelled"
 %%%.me.history.orderStatus.7%%%,"Successful"
 %%%.me.history.orderStatus.8%%%,"In progress"

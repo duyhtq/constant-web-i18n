@@ -507,6 +507,7 @@
             "invalidDate": "%%%.me.history.invalidDate%%%",
             "noData": "%%%.me.history.noData%%%",
             "exportToExcel": "%%%.me.history.exportToExcel%%%",
+            "filterHistory": "%%%.me.history.filterHistory%%%",
             "depositNow": "%%%.me.history.depositNow%%%",
             "cancel": "%%%.me.history.cancel%%%",
             "backToOrder": "%%%.me.history.backToOrder%%%",
@@ -653,6 +654,9 @@
             "fromDate": "%%%.me.history.fromDate%%%",
             "toDate": "%%%.me.history.toDate%%%",
             "download": "%%%.me.history.download%%%",
+            "filter": "%%%.me.history.filter%%%",
+            "filterNote": "%%%.me.history.filterNote%%%",
+            "reserveTypeGroup": "%%%.me.history.reserveTypeGroup%%%",
             "cancelMess": "%%%.me.history.cancelMess%%%",
             "cryptoAddress": "%%%.me.history.cryptoAddress%%%",
             "bankInfo": {
@@ -700,7 +704,8 @@
                 "requiredPassword": "%%%.me.twoFa.qrScanModal.requiredPassword%%%",
                 "message": "%%%.me.twoFa.qrScanModal.message%%%",
                 "facebook": "%%%.me.twoFa.qrScanModal.facebook%%%",
-                "google": "%%%.me.twoFa.qrScanModal.google%%%"
+                "google": "%%%.me.twoFa.qrScanModal.google%%%",
+                "requireVerifiedEmail": "%%%.me.twoFa.qrScanModal.requireVerifiedEmail%%%"
             },
             "invalidateOtp": "%%%.me.twoFa.invalidateOtp%%%",
             "disable2FaSuccess": "%%%.me.twoFa.disable2FaSuccess%%%",
@@ -3689,6 +3694,54 @@
                     "shortTerm": "%%%.loanOriginators.autoInvest.form.investConfirmation.shortTerm%%%"
                 }
             }
+        },
+        "loanRecords": {
+            "heading": "%%%.loanOriginators.loanRecords.heading%%%",
+            "loanDisbursement": "%%%.loanOriginators.loanRecords.loanDisbursement%%%",
+            "loanPayment": "%%%.loanOriginators.loanRecords.loanPayment%%%",
+            "settlement": "%%%.loanOriginators.loanRecords.settlement%%%",
+            "noData": "%%%.loanOriginators.loanRecords.noData%%%",
+            "viewDetails": "%%%.loanOriginators.loanRecords.viewDetails%%%",
+            "dialog": {
+                "createNewTitle": "%%%.loanOriginators.loanRecords.dialog.createNewTitle%%%",
+                "interestAmountLabel": "%%%.loanOriginators.loanRecords.dialog.interestAmountLabel%%%",
+                "principalAmountLabel": "%%%.loanOriginators.loanRecords.dialog.principalAmountLabel%%%",
+                "lateLoans": "%%%.loanOriginators.loanRecords.dialog.lateLoans%%%",
+                "cancel": "%%%.loanOriginators.loanRecords.dialog.cancel%%%",
+                "create": "%%%.loanOriginators.loanRecords.dialog.create%%%",
+                "addOrDropFile": "%%%.loanOriginators.loanRecords.dialog.addOrDropFile%%%",
+                "uploadSuccess": "%%%.loanOriginators.loanRecords.dialog.uploadSuccess%%%"
+            },
+            "headers": {
+                "date": "%%%.loanOriginators.loanRecords.headers.date%%%",
+                "totalMatchedValue": "%%%.loanOriginators.loanRecords.headers.totalMatchedValue%%%",
+                "numberMatched": "%%%.loanOriginators.loanRecords.headers.numberMatched%%%",
+                "status": "%%%.loanOriginators.loanRecords.headers.status%%%",
+                "action": "%%%.loanOriginators.loanRecords.headers.action%%%",
+                "paymentId": "%%%.loanOriginators.loanRecords.headers.paymentId%%%",
+                "totalLoanInterest": "%%%.loanOriginators.loanRecords.headers.totalLoanInterest%%%",
+                "totalLoanPrincipal": "%%%.loanOriginators.loanRecords.headers.totalLoanPrincipal%%%",
+                "lateLoans": "%%%.loanOriginators.loanRecords.headers.lateLoans%%%",
+                "referenceCode": "%%%.loanOriginators.loanRecords.headers.referenceCode%%%",
+                "totalClaimPaymentDue": "%%%.loanOriginators.loanRecords.headers.totalClaimPaymentDue%%%",
+                "netAmount": "%%%.loanOriginators.loanRecords.headers.netAmount%%%",
+                "depositDate": "%%%.loanOriginators.loanRecords.headers.depositDate%%%",
+                "depositAmount": "%%%.loanOriginators.loanRecords.headers.depositAmount%%%",
+                "transactionId": "%%%.loanOriginators.loanRecords.headers.transactionId%%%",
+                "transactionFee": "%%%.loanOriginators.loanRecords.headers.transactionFee%%%",
+                "note": "%%%.loanOriginators.loanRecords.headers.note%%%"
+            },
+            "status": {
+                "pending": "%%%.loanOriginators.loanRecords.status.pending%%%",
+                "sent": "%%%.loanOriginators.loanRecords.status.sent%%%",
+                "received": "%%%.loanOriginators.loanRecords.status.received%%%"
+            },
+            "settlementStatus": {
+                "pending": "%%%.loanOriginators.loanRecords.settlementStatus.pending%%%",
+                "to_be_settled": "%%%.loanOriginators.loanRecords.settlementStatus.to_be_settled%%%",
+                "pending_settlement": "%%%.loanOriginators.loanRecords.settlementStatus.pending_settlement%%%",
+                "settled": "%%%.loanOriginators.loanRecords.settlementStatus.settled%%%"
+            }
         }
     },
     "deposit": {
@@ -4638,7 +4691,8 @@
         "errorMaxValue": "%%%.collateralBalance.errorMaxValue%%%",
         "errorMinValue": "%%%.collateralBalance.errorMinValue%%%",
         "generateAddress": "%%%.collateralBalance.generateAddress%%%",
-        "noRecord": "%%%.collateralBalance.noRecord%%%"
+        "noRecord": "%%%.collateralBalance.noRecord%%%",
+        "topupNoBalanceMessage": "%%%.collateralBalance.topupNoBalanceMessage%%%"
     },
     "proLending": {
         "balances": {
@@ -4907,7 +4961,8 @@
         "btnSecondaryMarket": "%%%.menuMobile.btnSecondaryMarket%%%",
         "btnLOSecondaryMarket": "%%%.menuMobile.btnLOSecondaryMarket%%%",
         "btnLoans": "%%%.menuMobile.btnLoans%%%",
-        "btnLoansC2C": "%%%.menuMobile.btnLoansC2C%%%"
+        "btnLoansC2C": "%%%.menuMobile.btnLoansC2C%%%",
+        "btnLoanSettings": "%%%.menuMobile.btnLoanSettings%%%"
     },
     "landingPage": {
         "steadyGrowth": {
@@ -5356,7 +5411,8 @@
         "fromDate": "%%%.exportInvestmentHistory.fromDate%%%",
         "toDate": "%%%.exportInvestmentHistory.toDate%%%",
         "download": "%%%.exportInvestmentHistory.download%%%",
-        "cancel": "%%%.exportInvestmentHistory.cancel%%%"
+        "cancel": "%%%.exportInvestmentHistory.cancel%%%",
+        "noData": "%%%.exportInvestmentHistory.noData%%%"
     },
     "mobile_new_home": {
         "lb_interest_rate": "%%%.mobile_new_home.lb_interest_rate%%%",

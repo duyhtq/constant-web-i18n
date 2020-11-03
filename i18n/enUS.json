@@ -507,6 +507,7 @@
             "invalidDate": "You can't export over six months of your account activity.",
             "noData": "No data available to download of times selected",
             "exportToExcel": "Export to excel",
+            "filterHistory": "Filter",
             "depositNow": "Deposit Now",
             "cancel": "Cancel",
             "backToOrder": "View detail",
@@ -653,6 +654,9 @@
             "fromDate": "From date",
             "toDate": "To date",
             "download": "Download",
+            "filter": "Filter",
+            "filterNote": "Filter your account activity.",
+            "reserveTypeGroup": "Type",
             "cancelMess": "Are you sure you want to cancel this order?",
             "cryptoAddress": "Crypto address",
             "bankInfo": {
@@ -700,7 +704,8 @@
                 "requiredPassword": "Password is required",
                 "message": "Code copied to clipboard.",
                 "facebook": "Sign-in with your facebook account.",
-                "google": "Sign-in with your google account."
+                "google": "Sign-in with your google account.",
+                "requireVerifiedEmail": "<p>Please <a class=\"underline bold\" href=\"/me/information\">update your email</a> and verify it to generate QR code for scanning with Google Authenticator or Authy.</p>"
             },
             "invalidateOtp": "Google authentication code not matched, please try again",
             "disable2FaSuccess": "Disable 2FA successfully!",
@@ -3689,6 +3694,54 @@
                     "shortTerm": "            <p>You've selected the {name} Plan and a maximum investment amount of {amount} USD. Our {name} Plan offers the highest rates and shortest terms, but is higher risk than our Diversified Plan. Do you want to proceed?</p>            <p style=\"color: red\">Please note all future deposits will be invested in your {name} Plan up to the maximum investment amount. You can deactivate this Investment Plan or change the details at any time.</p>"
                 }
             }
+        },
+        "loanRecords": {
+            "heading": "Loan Records",
+            "loanDisbursement": "Loan Disbursement",
+            "loanPayment": "Loan Payment",
+            "settlement": "Settlement",
+            "noData": "No loans data",
+            "viewDetails": "View details",
+            "dialog": {
+                "createNewTitle": "Create new loan payment",
+                "interestAmountLabel": "Total loan interest payment",
+                "principalAmountLabel": "Total loan principal payment",
+                "lateLoans": "Late loans",
+                "cancel": "Cancel",
+                "create": "Create",
+                "addOrDropFile": "+ Add or drop file here",
+                "uploadSuccess": "Upload successfully"
+            },
+            "headers": {
+                "date": "Settlement Cycle - Settlement Date",
+                "totalMatchedValue": "Total loan value matched",
+                "numberMatched": "Total number of loan matched",
+                "status": "Status",
+                "action": "",
+                "paymentId": "Payment ID",
+                "totalLoanInterest": "Total loan interest payment",
+                "totalLoanPrincipal": "Total loan principal payment",
+                "lateLoans": "Late loans",
+                "referenceCode": "Reference code",
+                "totalClaimPaymentDue": "Total claim payment due",
+                "netAmount": "Net settlement amount",
+                "depositDate": "Deposit date",
+                "depositAmount": "Deposit amount",
+                "transactionId": "Transaction ID",
+                "transactionFee": "Transaction Fee",
+                "note": "Note"
+            },
+            "status": {
+                "pending": "To Be Settled",
+                "sent": "Pending Settlement",
+                "received": "Settled"
+            },
+            "settlementStatus": {
+                "pending": "Pending",
+                "to_be_settled": "To Be Settled",
+                "pending_settlement": "Pending Settlement",
+                "settled": "Settled"
+            }
         }
     },
     "deposit": {
@@ -4638,7 +4691,8 @@
         "errorMaxValue": "Amount must less than {max}",
         "errorMinValue": "Amount must greater than {min}",
         "generateAddress": "Generate address",
-        "noRecord": "No record found"
+        "noRecord": "No record found",
+        "topupNoBalanceMessage": "Please deposit to top-up your multi-collateral balance."
     },
     "proLending": {
         "balances": {
@@ -4907,7 +4961,8 @@
         "btnSecondaryMarket": "<div class=\"textLeft\"><small>Secondary market</small><div>Crypto-backed</div></div>",
         "btnLOSecondaryMarket": "<div class=\"textLeft\"><small>Secondary market</small><div>Loan Originator</div></div>",
         "btnLoans": "Loans",
-        "btnLoansC2C": "Crypto Credit"
+        "btnLoansC2C": "Crypto Credit",
+        "btnLoanSettings": "<div class=\"textLeft\"><small>Loan</small><div>Settings</div></div>"
     },
     "landingPage": {
         "steadyGrowth": {
@@ -5356,7 +5411,8 @@
         "fromDate": "From Date",
         "toDate": "To Date",
         "download": "Download",
-        "cancel": "Cancel"
+        "cancel": "Cancel",
+        "noData": "There’s no transaction history to export from {from} to {to}.\n\nPlease choose another time period."
     },
     "mobile_new_home": {
         "lb_interest_rate": "Interest rate",

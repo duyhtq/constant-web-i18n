@@ -721,6 +721,8 @@
         },
         "proSaving": {
             "listApplications": {
+                "principal": "Amount",
+                "interest_to_date": "Interest",
                 "shareAndEarn": "Invite friends, earn 10% more",
                 "anyTime_saving": "Balance",
                 "balanceCoin": "Coin balance",
@@ -737,6 +739,8 @@
                 "loanOriginatorInvestments": "Loan Originator Investments",
                 "loans_title": "Loans",
                 "secondInvestments": "Secondary Market",
+                "secondaryMarketHistory": "Secondary Market History",
+                "secondaryMarketHistoryDetail": "Secondary Market History Detail",
                 "secondInvestmentsLO": "Loan Originator Secondary Market",
                 "secondInvestmentsLODesc": "Buy and sell matched investments on our secondary market. Sell your investment to end your term early or buy another investor’s order to earn their interest. View or cancel your secondary market orders below.",
                 "termStatusFilter": {
@@ -764,6 +768,7 @@
                 "term": "Term",
                 "endTerm": "Term ends",
                 "noInvestment": "Make your investment of any amount today.",
+                "noMoreInvestment": "Make your first investment of any amount today.",
                 "autoTopup": "Auto top-up",
                 "apr": "APR",
                 "loanOriginatorInvestmentsDesc": "Investments backed by the loan originator’s buy-back guarantee. Unlike crypto-backed investments, there might not always be collateral securing the loan. Instead, the loan originator guarantees to buy back the loan should the borrower default for 60 days or more, returning your principal and earned profit.",
@@ -1009,11 +1014,13 @@
                     "confirmBatchTransferSuccess": "Success",
                     "confirmBatchTransferFailed": "Failed",
                     "voidInvestmentFailed": "Sorry, we couldn’t create your sell order. Please try again later. If you keep seeing this message, please email us at <a href=\"mailto:hello@myconstant.com\">hello@myconstant.com</a>.",
-                    "voidInvestmentFailedMinAmount": "Sorry, we couldn't create your sell order as your investment is less than ${minAmount}."
+                    "voidInvestmentFailedMinAmount": "Sorry, we couldn't create your sell order as your investment is less than ${minAmount}.",
+                    "cancelBuyingBorrowSuccess": "Cancel buying process successfully"
                 },
                 "rewardApply": "Redeem STAR",
                 "investment": "investment",
                 "noLoans": "Request your first fixed rate loan here.",
+                "noMoreLoans": "Request your fixed rate loan here.",
                 "totalInterestEarned": "Interest earned",
                 "noRecord": "You have not made any investments yet.",
                 "getListFailed": "Sorry, something went wrong. Please try again.",
@@ -1119,7 +1126,10 @@
                 "noOpenData": "No open order available",
                 "footer": {
                     "desc": "Showing {start} - {end} of {total} selected entries"
-                }
+                },
+                "transaction_id": "Transaction ID #{id}",
+                "heading": "Crypto-backed Investments History",
+                "heading_detail": "Crypto-backed Investments History Detail"
             },
             "applicationDetail": {
                 "dueDays": "Due Days",
@@ -2053,52 +2063,63 @@
         "press": {
             "consumerFinance": {
                 "title": "CONSUMER FINANCE",
-                "desc": "        <p>As the new kid on the block, <strong>we get a lot of press.</strong> Journalists cover everything from our invesment products to the flexibility and support you get along the way. Find out what finance’s most respected publications think about us below.   </p>        ",
+                "desc": "<p>As the new kid on the block, <strong>we get a lot of press.</strong> Journalists cover everything from our invesment products to the flexibility and support you get along the way. Find out what finance’s most respected publications think about us below.</p>",
                 "data": {
                     "1": {
-                        "desc": "Constant which allows borrowers and lenders to transact directly. Banks, brokers and other third parties are cut off from any deal, and therefore access to financial data is minimized. Constant lowers borrowing costs by removing middlemen, and thereby streamlining processes."
+                        "desc": "Constant which allows borrowers and lenders to transact directly. Banks, brokers and other third parties are cut off from any deal, and therefore access to financial data is minimized. Constant lowers borrowing costs by removing middlemen, and thereby streamlining processes.",
+                        "link": "https://www.inc.com/kenny-kline/startups-have-these-advantages-over-large-enterprises.html"
                     },
                     "2": {
-                        "desc": "Constant acts as a trading hub where borrowers and creditors pick the best deal. Moreover, the Redlands, Calif.-based venture allows users to set their own interest rates and terms -- a feature that doesn’t exist anywhere else."
+                        "desc": "Constant acts as a trading hub where borrowers and creditors pick the best deal. Moreover, the Redlands, Calif.-based venture allows users to set their own interest rates and terms -- a feature that doesn’t exist anywhere else.",
+                        "link": "https://www.entrepreneur.com/article/344621"
                     },
                     "3": {
-                        "desc": "Lenders can choose their terms, no credit check, and no nonsense – and find borrowers. Programming a system like this using the US banking system, would be expensive, cumbersome, time consuming, and who knows what it might look like after all the regulatory approvals."
+                        "desc": "Lenders can choose their terms, no credit check, and no nonsense – and find borrowers. Programming a system like this using the US banking system, would be expensive, cumbersome, time consuming, and who knows what it might look like after all the regulatory approvals.",
+                        "link": "https://www.zerohedge.com/news/2019-08-30/lending-stable-coin-threatens-traditional-banking"
                     }
                 }
             },
             "technology": {
                 "title": "Technology",
-                "desc": "        <p><strong>Technology is our heart,</strong> and customers are our lifeblood. We combine the two to build products that make a positive difference to people’s lives.</p>        ",
+                "desc": "<p><strong>Technology is our heart,</strong> and customers are our lifeblood. We combine the two to build products that make a positive difference to people’s lives.</p>",
                 "data": {
                     "1": {
-                        "desc": "The traditional loan agreement has been replaced by an unstoppable Ethereum smart contract without any possibility of downtime, fraud, or third-party interference. Fully-secured, blockchain-enabled P2P lending is our contribution to a bankless banking system."
+                        "desc": "The traditional loan agreement has been replaced by an unstoppable Ethereum smart contract without any possibility of downtime, fraud, or third-party interference. Fully-secured, blockchain-enabled P2P lending is our contribution to a bankless banking system.",
+                        "link": "https://hackernoon.com/how-we-built-constant-a-secured-p2p-lending-platform-that-puts-customers-in-control-6820e32d8402"
                     },
                     "2": {
-                        "desc": "The best thing about Constant, however, is the security the lending platform has in place. Every loan is fully secured and backed in multiple ways. While on loan it’s protected by borrower collateral, and while waiting to be matched it’s protected by a $130M insurance policy."
+                        "desc": "The best thing about Constant, however, is the security the lending platform has in place. Every loan is fully secured and backed in multiple ways. While on loan it’s protected by borrower collateral, and while waiting to be matched it’s protected by a $130M insurance policy.",
+                        "link": "https://www.techworm.net/2019/09/technology-changing-way-finance.html"
                     },
                     "3": {
-                        "desc": "Constant works by enabling borrowers to stake liquid capital via over-collateralized crypto assets (e.g., Ether) based on an LTV ratio. Subsequently, borrowers can “cherrypick” the best deals enumerated on Constant’s interface, selecting the best interest rates that are posted independently by each lending peer."
+                        "desc": "Constant works by enabling borrowers to stake liquid capital via over-collateralized crypto assets (e.g., Ether) based on an LTV ratio. Subsequently, borrowers can “cherrypick” the best deals enumerated on Constant’s interface, selecting the best interest rates that are posted independently by each lending peer.",
+                        "link": "https://techbullion.com/why-constants-rise-is-indicative-of-the-blossoming-class-of-defi-platforms/"
                     }
                 }
             },
             "blockchain": {
                 "title": "Blockchain",
-                "desc": "        <p><strong>We believe in the future of blockchain</strong> and are proud members of the crypto community. As our voice has grown, the crypto press has helped tell our story to the world.</p>        ",
+                "desc": "<p><strong>We believe in the future of blockchain</strong> and are proud members of the crypto community. As our voice has grown, the crypto press has helped tell our story to the world.</p>",
                 "data": {
                     "1": {
-                        "desc": "And when it comes to pioneering a new generation of fintech platforms, Constant provides a measuring stick for the industry’s progress."
+                        "desc": "And when it comes to pioneering a new generation of fintech platforms, Constant provides a measuring stick for the industry’s progress.",
+                        "link": "https://www.coinspeaker.com/constant-p2p-lending-growth/"
                     },
                     "2": {
-                        "desc": "Constant has created a platform that cuts banks out of the lending equation and allows anyone in the world to create loans on whatever terms they like. This is a big shift away from the established lending system, and it could be a big benefit for both borrowers and lenders."
+                        "desc": "Constant has created a platform that cuts banks out of the lending equation and allows anyone in the world to create loans on whatever terms they like. This is a big shift away from the established lending system, and it could be a big benefit for both borrowers and lenders.",
+                        "link": "https://blockonomi.com/constant-decentralized-p2p-lending/"
                     },
                     "3": {
-                        "desc": "Constant, a leading secured P2P lending platform, has been expanding its service and product offerings in recent months as it continues to originate more loans on its Ethereum-based lending service."
+                        "desc": "Constant, a leading secured P2P lending platform, has been expanding its service and product offerings in recent months as it continues to originate more loans on its Ethereum-based lending service.",
+                        "link": "https://cryptogazette.com/how-constant-is-pioneering-the-exploration-of-a-new-fintech-generation/"
                     },
                     "4": {
-                        "desc": "It's a great service, with free deposits and withdrawals, extremely fast responding customer support and a transparent team."
+                        "desc": "It's a great service, with free deposits and withdrawals, extremely fast responding customer support and a transparent team.",
+                        "link": "https://www.endofthechain.com/constant-secured-p2p-lending-platform-review/"
                     },
                     "5": {
-                        "desc": "Chắc hẳn sẽ có những lúc chúng ta rơi vào hoàn cảnh khi đang HODL một đồng coin nào đó, nhưng lại thấy 1 cơ hội khác trong khi quỹ vốn thì đã hết. Constant sẽ giúp anh em huy động được một lượng cash (tiền mặt) nhất định để vào được kèo mới nhưng không phải cash out (bán) đồng coin đang HODL."
+                        "desc": "Chắc hẳn sẽ có những lúc chúng ta rơi vào hoàn cảnh khi đang HODL một đồng coin nào đó, nhưng lại thấy 1 cơ hội khác trong khi quỹ vốn thì đã hết. Constant sẽ giúp anh em huy động được một lượng cash (tiền mặt) nhất định để vào được kèo mới nhưng không phải cash out (bán) đồng coin đang HODL.",
+                        "link": "https://coin98.net/constant-la-gi/"
                     }
                 }
             },
@@ -2112,23 +2133,23 @@
                 "title": "Custody & Settlement",
                 "data": {
                     "primetrust": {
-                        "desc": "            <p>Prime Trust is the independent, accredited custodian of our USD reserve. When you deposit, Prime Trust stores your money across multiple bank accounts <strong>insured to a total of $130,000,000.</strong></p>            "
+                        "desc": "<p>Prime Trust is the independent, accredited custodian of our USD reserve. When you deposit, Prime Trust stores your money across multiple bank accounts <strong>insured to a total of $130,000,000.</strong></p>"
                     },
                     "cb": {
-                        "desc": "            <p>Checkbook helps settle withdrawals via ACH and digital cheque, making transfers cheaper for US residents.</p>            "
+                        "desc": "<p>Checkbook helps settle withdrawals via ACH and digital cheque, making transfers cheaper for US residents.</p>"
                     },
                     "qc": {
-                        "desc": "            <p>QCP Capital helps manage collateral and offers occasional trading services.</p>            "
+                        "desc": "<p>QCP Capital helps manage collateral and offers occasional trading services.</p>"
                     }
                 }
             },
             "blockchain": {
                 "title": "Blockchain",
-                "desc": "        <p>We’ve signed partnerships with <strong>blockchain’s biggest movers and shakers.</strong> Together, we work hard to help you do more with your assets.</p>        ",
+                "desc": "<p>We’ve signed partnerships with <strong>blockchain’s biggest movers and shakers.</strong> Together, we work hard to help you do more with your assets.</p>",
                 "vip": {
                     "name": "CZ Binance",
                     "auth": "@cz_binance",
-                    "desc": "            <p>Some much appreciated \"competition\" to <a href=\"https://twitter.com/binance\" target=\"_blank\">@binance</a> lending. Let's grow together!</p>          "
+                    "desc": "<p>Some much appreciated \"competition\" to <a href=\"https://twitter.com/binance\" target=\"_blank\">@binance</a> lending. Let's grow together!</p>"
                 }
             }
         }
@@ -2366,6 +2387,8 @@
             },
             "cryptosDesc": "Your collateral is securely stored in either a Prime Trust cold wallet, an Ethereum smart contract, or a password-protected web wallet until you repay your loan.",
             "listApplications": {
+                "headingDetail": "Loan History Detail",
+                "title": "Loan History",
                 "overview": "Overview",
                 "mapStatus2": {
                     "pending": "Pending",
@@ -2503,7 +2526,7 @@
                 "cancelDepositMatched": "Cancel Deposit",
                 "cashback": "Cash back",
                 "collateral": "Collateral",
-                "liquidWaring": "Your collateral will be liquidated, Please top up more collateral.",
+                "liquidWaring": "Your collateral will be liquidated, please top up more collateral.",
                 "interestPrice": "Interest",
                 "status": "Status",
                 "allStatus": "All",

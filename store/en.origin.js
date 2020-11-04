@@ -721,6 +721,8 @@
         },
         "proSaving": {
             "listApplications": {
+                "principal": "%%%.me.proSaving.listApplications.principal%%%",
+                "interest_to_date": "%%%.me.proSaving.listApplications.interest_to_date%%%",
                 "shareAndEarn": "%%%.me.proSaving.listApplications.shareAndEarn%%%",
                 "anyTime_saving": "%%%.me.proSaving.listApplications.anyTime_saving%%%",
                 "balanceCoin": "%%%.me.proSaving.listApplications.balanceCoin%%%",
@@ -737,6 +739,8 @@
                 "loanOriginatorInvestments": "%%%.me.proSaving.listApplications.loanOriginatorInvestments%%%",
                 "loans_title": "%%%.me.proSaving.listApplications.loans_title%%%",
                 "secondInvestments": "%%%.me.proSaving.listApplications.secondInvestments%%%",
+                "secondaryMarketHistory": "%%%.me.proSaving.listApplications.secondaryMarketHistory%%%",
+                "secondaryMarketHistoryDetail": "%%%.me.proSaving.listApplications.secondaryMarketHistoryDetail%%%",
                 "secondInvestmentsLO": "%%%.me.proSaving.listApplications.secondInvestmentsLO%%%",
                 "secondInvestmentsLODesc": "%%%.me.proSaving.listApplications.secondInvestmentsLODesc%%%",
                 "termStatusFilter": {
@@ -764,6 +768,7 @@
                 "term": "%%%.me.proSaving.listApplications.term%%%",
                 "endTerm": "%%%.me.proSaving.listApplications.endTerm%%%",
                 "noInvestment": "%%%.me.proSaving.listApplications.noInvestment%%%",
+                "noMoreInvestment": "%%%.me.proSaving.listApplications.noMoreInvestment%%%",
                 "autoTopup": "%%%.me.proSaving.listApplications.autoTopup%%%",
                 "apr": "%%%.me.proSaving.listApplications.apr%%%",
                 "loanOriginatorInvestmentsDesc": "%%%.me.proSaving.listApplications.loanOriginatorInvestmentsDesc%%%",
@@ -1009,11 +1014,13 @@
                     "confirmBatchTransferSuccess": "%%%.me.proSaving.listApplications.alert.confirmBatchTransferSuccess%%%",
                     "confirmBatchTransferFailed": "%%%.me.proSaving.listApplications.alert.confirmBatchTransferFailed%%%",
                     "voidInvestmentFailed": "%%%.me.proSaving.listApplications.alert.voidInvestmentFailed%%%",
-                    "voidInvestmentFailedMinAmount": "%%%.me.proSaving.listApplications.alert.voidInvestmentFailedMinAmount%%%"
+                    "voidInvestmentFailedMinAmount": "%%%.me.proSaving.listApplications.alert.voidInvestmentFailedMinAmount%%%",
+                    "cancelBuyingBorrowSuccess": "%%%.me.proSaving.listApplications.alert.cancelBuyingBorrowSuccess%%%"
                 },
                 "rewardApply": "%%%.me.proSaving.listApplications.rewardApply%%%",
                 "investment": "%%%.me.proSaving.listApplications.investment%%%",
                 "noLoans": "%%%.me.proSaving.listApplications.noLoans%%%",
+                "noMoreLoans": "%%%.me.proSaving.listApplications.noMoreLoans%%%",
                 "totalInterestEarned": "%%%.me.proSaving.listApplications.totalInterestEarned%%%",
                 "noRecord": "%%%.me.proSaving.listApplications.noRecord%%%",
                 "getListFailed": "%%%.me.proSaving.listApplications.getListFailed%%%",
@@ -1119,7 +1126,10 @@
                 "noOpenData": "%%%.me.proSaving.listApplications.noOpenData%%%",
                 "footer": {
                     "desc": "%%%.me.proSaving.listApplications.footer.desc%%%"
-                }
+                },
+                "transaction_id": "%%%.me.proSaving.listApplications.transaction_id%%%",
+                "heading": "%%%.me.proSaving.listApplications.heading%%%",
+                "heading_detail": "%%%.me.proSaving.listApplications.heading_detail%%%"
             },
             "applicationDetail": {
                 "dueDays": "%%%.me.proSaving.applicationDetail.dueDays%%%",
@@ -2056,13 +2066,16 @@
                 "desc": "%%%.whyPeopleLoveUs.press.consumerFinance.desc%%%",
                 "data": {
                     "1": {
-                        "desc": "%%%.whyPeopleLoveUs.press.consumerFinance.data.1.desc%%%"
+                        "desc": "%%%.whyPeopleLoveUs.press.consumerFinance.data.1.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.consumerFinance.data.1.link%%%"
                     },
                     "2": {
-                        "desc": "%%%.whyPeopleLoveUs.press.consumerFinance.data.2.desc%%%"
+                        "desc": "%%%.whyPeopleLoveUs.press.consumerFinance.data.2.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.consumerFinance.data.2.link%%%"
                     },
                     "3": {
-                        "desc": "%%%.whyPeopleLoveUs.press.consumerFinance.data.3.desc%%%"
+                        "desc": "%%%.whyPeopleLoveUs.press.consumerFinance.data.3.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.consumerFinance.data.3.link%%%"
                     }
                 }
             },
@@ -2071,13 +2084,16 @@
                 "desc": "%%%.whyPeopleLoveUs.press.technology.desc%%%",
                 "data": {
                     "1": {
-                        "desc": "%%%.whyPeopleLoveUs.press.technology.data.1.desc%%%"
+                        "desc": "%%%.whyPeopleLoveUs.press.technology.data.1.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.technology.data.1.link%%%"
                     },
                     "2": {
-                        "desc": "%%%.whyPeopleLoveUs.press.technology.data.2.desc%%%"
+                        "desc": "%%%.whyPeopleLoveUs.press.technology.data.2.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.technology.data.2.link%%%"
                     },
                     "3": {
-                        "desc": "%%%.whyPeopleLoveUs.press.technology.data.3.desc%%%"
+                        "desc": "%%%.whyPeopleLoveUs.press.technology.data.3.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.technology.data.3.link%%%"
                     }
                 }
             },
@@ -2086,19 +2102,24 @@
                 "desc": "%%%.whyPeopleLoveUs.press.blockchain.desc%%%",
                 "data": {
                     "1": {
-                        "desc": "%%%.whyPeopleLoveUs.press.blockchain.data.1.desc%%%"
+                        "desc": "%%%.whyPeopleLoveUs.press.blockchain.data.1.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.blockchain.data.1.link%%%"
                     },
                     "2": {
-                        "desc": "%%%.whyPeopleLoveUs.press.blockchain.data.2.desc%%%"
+                        "desc": "%%%.whyPeopleLoveUs.press.blockchain.data.2.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.blockchain.data.2.link%%%"
                     },
                     "3": {
-                        "desc": "%%%.whyPeopleLoveUs.press.blockchain.data.3.desc%%%"
+                        "desc": "%%%.whyPeopleLoveUs.press.blockchain.data.3.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.blockchain.data.3.link%%%"
                     },
                     "4": {
-                        "desc": "%%%.whyPeopleLoveUs.press.blockchain.data.4.desc%%%"
+                        "desc": "%%%.whyPeopleLoveUs.press.blockchain.data.4.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.blockchain.data.4.link%%%"
                     },
                     "5": {
-                        "desc": "%%%.whyPeopleLoveUs.press.blockchain.data.5.desc%%%"
+                        "desc": "%%%.whyPeopleLoveUs.press.blockchain.data.5.desc%%%",
+                        "link": "%%%.whyPeopleLoveUs.press.blockchain.data.5.link%%%"
                     }
                 }
             },
@@ -2366,6 +2387,8 @@
             },
             "cryptosDesc": "%%%.home.constantLoan.cryptosDesc%%%",
             "listApplications": {
+                "headingDetail": "%%%.home.constantLoan.listApplications.headingDetail%%%",
+                "title": "%%%.home.constantLoan.listApplications.title%%%",
                 "overview": "%%%.home.constantLoan.listApplications.overview%%%",
                 "mapStatus2": {
                     "pending": "%%%.home.constantLoan.listApplications.mapStatus2.pending%%%",

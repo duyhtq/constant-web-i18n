@@ -147,9 +147,9 @@ export default {
     contactUs: 'Contact us',
     phone: {
       us: {
-        time: 'Mon - Fri 9am - 5pm<br />Mon - Thurs 7pm - 4am PST',
+        time: 'Mon - Fri 9am - 5pm<br />Mon-Thurs 6pm - 9am PST',
         phone: '+1 646 809 8338',
-        timeMobile: '<p><span>(Mon - Fri)</span> 9am - 5pm</p><p><span>(Mon - Thurs)</span> 7pm - 4am PST</p>'
+        timeMobile: '<p><span>(Mon - Fri)</span> 9am - 5pm</p><p><span>(Mon - Thurs)</span> 6pm - 9am PST</p>'
       }
     },
     support: 'Help & Support',
@@ -3228,8 +3228,8 @@ export default {
             title: 'Transfer via ACH to earn {rate}% instantly',
             titleDesc: '<p>Instant interest. Linked US bank only.<br/><i>Less than ${max} per transaction</i></p>',
             subtitle: {
-              enoughInstantCredit: '<p>Get an instant 4% APY on ${instantAmount}. Reinvest or withdraw your deposit when your ACH clears.</p>',
-              overInstantCredit: '<p>Get an instant 4% APY on ${instantAmount}. The remainder of your deposit will credit when your funds reach us. Reinvest or withdraw your deposit when your ACH clears.</p>',
+              enoughInstantCredit: '<p>Invest your deposit of ${instantAmount} instantly while your ACH clears. Get {flexRate}% APY through Flex or invest in a fixed term loan for up to {maxRate}%. (Please note: While you can invest your deposit instantly, you can’t withdraw it until your ACH clears.)</p>',
+              overInstantCredit: '<p>Invest up to ${instantAmount} of your deposit instantly while your ACH clears. Get {flexRate}% APY through Flex or invest in a fixed term loan for up to {maxRate}%. The remainder of your deposit will credit when your funds reach us. (Please note: While you can invest up to ${instantAmount} of your deposit instantly, you can’t withdraw it until your ACH clears.)</p>',
               investNote: '<p>Get an instant 4% APY on any Plaid ACH deposit up to ${instantAmount}. Your investment of ${amount} at {interest}% for {term} days will start after your ACH clears.</p>',
               pleaseNote: '<p>Please note: ACH transfers are available for linked US bank accounts only, and can take <strong>up to 5 business days</strong> to clear. Please don’t send us an ACH from an unlinked bank account or it will be rejected.</p>',
               haveLinkedBank: '<p>Please choose a linked bank account below and then click <strong>Submit</strong>.</p>',

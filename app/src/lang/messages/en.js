@@ -1454,7 +1454,7 @@ export default {
         kyc: 'Submit KYC',
         kycDesc: 'Receive <strong>${amount}</strong> trial bonus after passing KYC',
         bank: 'Link bank account',
-        bankDesc: 'Receive <strong>300 points</strong> instantly',
+        bankDesc: 'Receive <strong>200 points</strong> instantly',
       },
       verifyEmailMessage: '<p>Done! We have sent a verification to your e-mail.<br/>Please check your mailbox.</p>',
       resendVerify: 'Resend email verification',
@@ -1629,8 +1629,8 @@ export default {
     },
     banner: {
       title1: 'Experience multi-market <span style="color:#F5A623;">peer-to-peer</span> lending.',
-      subTitle: '<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee. Earn across multiple markets, spreading risk and maximizing reward.</p>        <p>Or, borrow against {numCollateral}+ cryptocurrencies to get the cash you need, instantly. Your crypto is securely held until you repay. Unlock the value of your crypto without selling up. </p>        <p>While not on loan or waiting for a match, your funds earn an automatic 4% APY, and you can withdraw anytime for free. So no downtime, no wasted earnings.</p>',
-      subTitleShort: '<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee...</p>',
+      subTitle: '<p>Invest in people and businesses around the world for up to 11% <a class="glossary-word">APR</a>. All lending is backed by borrower <a class="glossary-word">collateral</a> or buy-back guarantee. Earn across multiple markets, spreading risk and maximizing reward.</p>        <p>Or, borrow against {numCollateral}+ cryptocurrencies to get the cash you need, instantly. Your crypto is securely held until you repay. Unlock the value of your crypto without selling up. </p>        <p>While not on loan or waiting for a match, your funds earn an automatic 4% APY, and you can withdraw anytime for free. So no downtime, no wasted earnings.</p>',
+      subTitleShort: '<p>Invest in people and businesses around the world for up to 11% <a class="glossary-word">APR</a>. All lending is backed by borrower <a class="glossary-word">collateral</a> or buy-back guarantee...</p>',
       subTitle2: '<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee. Earn across multiple markets, spreading risk and maximizing reward.</p>',
       newMessage: 'Why invest with MyConstant?',
       viewMore: '...more',
@@ -2844,7 +2844,12 @@ export default {
       timeLimitMinute: 'minutes',
       timeLimit2: '48 hours',
       validateMaxInput: 'Please make sure your balance is sufficient.',
-      confirmMsg: '<p>You’re about to convert {constAmount} CONST (USD) to {amount} {name}, fee ${fee} and then withdraw it to wallet address {address}.</p><p>Do you want to proceed?</p>',
+      confirmMsg: `
+        <div class="textLeft">You’re about to convert: {constAmount} CONST (USD) to {amount} {name}</div>
+        <div class="textLeft">Fee: \${fee}</div>
+        <div class="textLeft">To address: {address}</div>
+        <p class="textLeft">Do you want to proceed?</p>
+      `,
       title: 'Transfer',
       caption: 'SEND CONSTANT ANYWHERE',
       transferType: 'Transfer Type',

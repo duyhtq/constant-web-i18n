@@ -2434,7 +2434,7 @@ export default {
         },
         depositCollateral: 'Deposit Collateral',
         collateralType: 'Collateral Type',
-        availableAmount: 'Available Amount',
+        availableAmount: 'Available amount',
         yourLoan: 'Match{plural} {matched}',
         itemMatched: {
           amount: 'Amount',
@@ -4280,7 +4280,7 @@ export default {
       title:`
         <p class="header">Hello {name},</p>
         <p>Welcome to your affiliate dashboard. You’ll find your affiliate link and sharing options below. You can track your earnings here, too.</p>
-        <p>Your total referral earnings to date: <strong>{totalEarned}</strong>.</p>
+        <p>Your total referral earnings to date: <strong>{totalEarned}</strong></p>
       `,
       monthVolume: 'Your {month} volume',
       inviteFriends: 'Invite friends',
@@ -4510,10 +4510,20 @@ export default {
     },
     terms: {
       content: `
-        <p class="section-title">Terms and Conditions</p>
-        <p>1. The amount you earn depends on how your referees use the platform:</p>
-        <p class="desc">You earn 20% of your referees’ earned Flex interest. We pay this interest every second that your referees earn.</p>
-        <p>2. We will pay you \${affiliateReward} for every person who signs up using your referral link, passes KYC and makes a deposit into MyConstant. If they don't meet these requirements, you don't earn the \${affiliateReward} bonus.</p>        <p>3. Your referral earnings are paid in USD, directly into your MyConstant account.</p>        <p>4. The maximum affiliate interest you can earn through Flex is $1,000,000.</p>        <p>5. You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>        <p>6. If you make false or misleading statements about MyConstant, use MyConstant keywords in Google ads, use visitor exchange systems, forced clicks, and other methods that lead to unqualified traffic, send spam with MyConstant ads or use other aggressive marketing methods, your affiliate earnings will be forfeit and your membership cancelled.</p>        <p>7. To qualify for affiliate earnings, your referees must be US citizens.</p>        <p>8. MyConstant reserves the right to change the terms of the affiliate program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p>
+        <h3 class="section-title">Terms and Conditions</h3>
+        <ol>
+          <li>
+            <p>The amount you earn depends on how your referees use the platform:</p>
+            <p class="desc">You earn 20% of your referees’ earned Flex interest. We pay this interest every second that your referees earn.</p>
+          </li>
+          <li><p>We will pay you \${affiliateReward} for every person who signs up using your referral link, passes KYC and makes a deposit into MyConstant. If they don't meet these requirements, you don't earn the \${affiliateReward} bonus.</p></li>
+          <li><p>Your referral earnings are paid in USD, directly into your MyConstant account.</p></li>
+          <li><p>The maximum affiliate interest you can earn through Flex is $1,000,000.</p></li>
+          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>
+          <li><p>If you make false or misleading statements about MyConstant, use MyConstant keywords in Google ads, use visitor exchange systems, forced clicks, and other methods that lead to unqualified traffic, send spam with MyConstant ads or use other aggressive marketing methods, your affiliate earnings will be forfeit and your membership cancelled.</p></li>
+          <li><p>To qualify for affiliate earnings, your referees must be US citizens.</p></li>
+          <li><p>MyConstant reserves the right to change the terms of the affiliate program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>
+        </ol>
       `
     },
     referralUsers: {
@@ -5295,20 +5305,22 @@ export default {
     detail: 'Details',
     share: 'Share',
     conditions: 'Conditions',
-    term: {
-      '0': 'Any abuse of the MyConstant Badges reward program will result in immediate disqualification. Abuse includes spam, cheating, or any other fraud intended to earn badges illegitimately.',
-      '1': 'Any content you produce about MyConstant to claim a badge must not denigrate, disparage, or otherwise damage the MyConstant brand and you also consent to us using your content in promotional material and sharing across our website and social media platforms.',
-      '2': 'You earn a reward for each badge once only.',
-      '3': 'The maximum reward you can earn from the MyConstant Badges program is ${amount} in total.',
-      '4': 'Only one MyConstant account per badge. Duplicate MyConstant accounts are disqualified.',
-      '5': 'Badges are awarded retroactively but rewards apply to qualifying activities after July 16th 2020 only. For example, if you passed KYC before July 16th 2020, you\'ll earn the “Member” badge but not the reward.',
-      '6': 'MyConstant reserves the right to withhold rewards and change the terms and conditions of MyConstant Badges at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.',
-      '7': 'To be eligible for rewards, you must have passed KYC.',
-      '8': 'Badges awarded for depositing apply to fiat deposits only.',
-      '9': 'Each reward point expires after 180 days.',
-      title: 'Terms and Conditions',
-      note: 'Effective as of {date}'
-    },
+    term: `
+      <h3 class="semiBold">Terms and Conditions</h3>
+      <ol>
+        <li><p>Any abuse of the MyConstant Badges reward program will result in immediate disqualification. Abuse includes spam, cheating, or any other fraud intended to earn badges illegitimately.</p></li> 
+        <li><p>Any content you produce about MyConstant to claim a badge must not denigrate, disparage, or otherwise damage the MyConstant brand and you also consent to us using your content in promotional material and sharing across our website and social media platforms.</p></li> 
+        <li><p>You earn a reward for each badge once only.</p></li> 
+        <li><p>The maximum reward you can earn from the MyConstant Badges program is \${amount} in total.</p></li> 
+        <li><p>Only one MyConstant account per badge. Duplicate MyConstant accounts are disqualified.</p></li> 
+        <li><p>Badges are awarded retroactively but rewards apply to qualifying activities after July 16th 2020 only. For example, if you passed KYC before July 16th 2020, you'll earn the “Member” badge but not the reward.</p></li> 
+        <li><p>MyConstant reserves the right to withhold rewards and change the terms and conditions of MyConstant Badges at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li> 
+        <li><p>To be eligible for rewards, you must have passed KYC.</p></li> 
+        <li><p>Badges awarded for depositing apply to fiat deposits only.</p></li> 
+        <li><p>Each reward point expires after 180 days.</p></li> 
+      </ol>
+      <p class="bold effective">Effective as of {date}</p>
+    `,
     request: 'Request',
     takeQuiz: 'Take the quiz',
     checkLater: 'Check later',

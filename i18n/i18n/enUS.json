@@ -96,15 +96,15 @@
         "blogDesc": "News, guides, and opinion.",
         "social": {
             "fb": {
-                "link": "https://www.facebook.com/constantp2p",
+                "link": "https://www.facebook.com/myconstantp2p",
                 "title": "Facebook"
             },
             "tw": {
-                "link": "https://twitter.com/constantp2p",
+                "link": "https://twitter.com/myconstantp2p",
                 "title": "Twitter"
             },
             "md": {
-                "link": "https://medium.com/@constantp2p",
+                "link": "https://myconstantp2p.medium.com",
                 "title": "Medium"
             },
             "yt": {
@@ -1236,7 +1236,7 @@
             "plAddrCountry": "Select your country",
             "plAddrCity": "Select your city",
             "titleStep2": "Thanks. Now we need a proof of address.",
-            "lAddrUpload": "To verify the address above, please upload a document that meets <a href=\"https://medium.com/@constantp2p/how-to-verify-your-id-on-constant-kyc-1a9d08ae0a\" class=\"underline\" target=\"_blank\" >these criteria</a>.",
+            "lAddrUpload": "To verify the address above, please upload a document that meets <a href=\"https://myconstantp2p.medium.com/how-to-verify-your-id-on-constant-kyc-1a9d08ae0a\" class=\"underline\" target=\"_blank\" >these criteria</a>.",
             "descAddrUpload": "<div><p>Valid documents: utility bill, phone bill, mortgage statement, tenancy agreement, bank/credit card statement, insurance letter (motor, home, or life), or financial statement (pension, endowment).</p><p><strong style=\"color:#F5A623;\">Document must be dated within the last 90 days.</strong></p><p>Please ensure your proof of address is an exact match with the address provided in your application, including all shorthands and abbreviations.</p><p>Please make sure that the photo is complete and clearly visible, in JPG, JPEG, PNG or PDF, and is smaller than 10MB.</p></div>",
             "btnBack": "Back",
             "reviewing": "        <p>Thanks, it’s nice to meet you.</p>        <p>          We’re looking over your information and will let you know once you’re          good to go.        </p>      ",
@@ -1272,7 +1272,7 @@
             "beneficiaryPostalCode": "Beneficiary postal code",
             "linkBankSectionTitle": "Link your bank account",
             "linkBankSectionDesc": "<p>Deposit or withdraw using ACH bank transfers with Plaid. Link up to two bank accounts now to save time and money transferring funds to and from your MyConstant account.<br/>Since most savings accounts limit the number of withdrawals, we recommend you link a checking account not a savings account to avoid ACH reversals.<br/><a href=\"https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/\" target=\"_blank\">How to avoid ACH reversals</a>.</p>",
-            "linkBankImportantNote": "<strong>Please note</strong>: When you link a bank account via Plaid, your bank is assigned a unique ID. For your security, Plaid ACH deposits can only be withdrawn again <strong>via the same method and bank ID</strong> from which you deposited for a period of 60 days. This restriction <strong>does not</strong> apply to deposits via wire or Zelle.",
+            "linkBankImportantNote": "<strong>Please note</strong>: When you link a bank account via Plaid, your bank is assigned a unique ID. For your security, Plaid ACH deposits can only be withdrawn again <strong>using the same withdrawal method and bank ID</strong> from which you deposited for a period of 60 days. This restriction <strong>does not</strong> apply to deposits via wire or Zelle.",
             "unlinkBankSectionTitle": "International Bank",
             "unlinkBankSectionDesc": "<p>Nice – email confirmations are enabled on all withdrawals and transfers. Whenever you withdraw or transfer USD, cryptocurrency, or stablecoins, we’ll email you a link to authorize the transaction.</p>",
             "nonUSbankSectionTitle": "Add a bank account for deposits and withdrawals",
@@ -1636,7 +1636,7 @@
             "data": {
                 "0": {
                     "title": "Protection",
-                    "desc": "Crypto collateral and buy-back guarantees protect your investments from borrower defaults so you can rely on great returns."
+                    "desc": "Crypto <a class=\"glossary-word\">collateral</a> and buy-back guarantees protect your investments from borrower defaults so you can rely on great returns."
                 },
                 "1": {
                     "title": "Free withdrawals",
@@ -1652,13 +1652,13 @@
                 },
                 "4": {
                     "title": "No credit checks",
-                    "desc": "We don’t care about your credit history. As long as you have the collateral to secure your loan, you’re always approved."
+                    "desc": "We don’t care about your credit history. As long as you have the <a class=\"glossary-word\">collateral</a> to secure your loan, you’re always approved."
                 }
             }
         },
         "howItWorks": {
             "title": "How it works",
-            "desc": "MyConstant connects investors with borrowers to do business together. Crypto collateral and buy-back guarantees protect investors’ funds while our custodial partner safely manages the movement of funds and collateral.",
+            "desc": "MyConstant connects investors with borrowers to do business together. Crypto <a class=\"glossary-word\">collateral</a> and buy-back guarantees protect investors’ funds while our custodial partner safely manages the movement of funds and collateral.",
             "content": {
                 "0": {
                     "title": "Investors",
@@ -1666,7 +1666,7 @@
                 },
                 "1": {
                     "title": "Crypto-collateralized borrowers",
-                    "desc": "Borrowers must put up 100-200% of the loan amount in cryptocurrency to secure their loan."
+                    "desc": "Borrowers must put up 100-200% of the loan amount in <a class=\"glossary-word\">cryptocurrency</a> to secure their loan."
                 },
                 "2": {
                     "title": "Buy-back guaranteed borrowers",
@@ -1678,14 +1678,14 @@
                 },
                 "4": {
                     "title": "Custodial partner",
-                    "desc": "We use Prime Trust to safely manage the transfer and storage of investor funds and borrower collateral."
+                    "desc": "We use Prime Trust to safely manage the transfer and storage of investor funds and borrower <a class=\"glossary-word\">collateral</a>."
                 }
             }
         },
         "banner": {
             "title1": "Experience multi-market <span style=\"color:#F5A623;\">peer-to-peer</span> lending.",
-            "subTitle": "<p>Invest in people and businesses around the world for up to 11% <a class=\"glossary-word\">APR</a>. All lending is backed by borrower <a class=\"glossary-word\">collateral</a> or buy-back guarantee. Earn across multiple markets, spreading risk and maximizing reward.</p>        <p>Or, borrow against {numCollateral}+ cryptocurrencies to get the cash you need, instantly. Your crypto is securely held until you repay. Unlock the value of your crypto without selling up. </p>        <p>While not on loan or waiting for a match, your funds earn an automatic 4% APY, and you can withdraw anytime for free. So no downtime, no wasted earnings.</p>",
-            "subTitleShort": "<p>Invest in people and businesses around the world for up to 11% <a class=\"glossary-word\">APR</a>. All lending is backed by borrower <a class=\"glossary-word\">collateral</a> or buy-back guarantee...</p>",
+            "subTitle": "<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee. Earn across multiple markets, spreading risk and maximizing reward.</p>        <p>Or, borrow against {numCollateral}+ cryptocurrencies to get the cash you need, instantly. Your crypto is securely held until you repay. Unlock the value of your crypto without selling up. </p>        <p>While not on loan or waiting for a match, your funds earn an automatic 4% APY, and you can withdraw anytime for free. So no downtime, no wasted earnings.</p>",
+            "subTitleShort": "<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee...</p>",
             "subTitle2": "<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee. Earn across multiple markets, spreading risk and maximizing reward.</p>",
             "newMessage": "Why invest with MyConstant?",
             "viewMore": "...more",
@@ -1722,33 +1722,33 @@
                 "viewAll": "View us on TrustPilot",
                 "readMore": "Read more",
                 "reviews": "Reviews",
-                "numReview": "582",
+                "numReview": "604",
                 "excellent": "Excellent",
-                "points": "4.6/5",
+                "points": "4.7/5",
                 "data": {
                     "0": {
                         "star": "5",
-                        "title": "This is a great service.",
-                        "desc": "I was skeptical at first, so I started simple with the minimum investment of $50.00. I saw that grow and saw that it was paid back with interest. I reinvested it, and added more cash. I like using the Flex account because it is fun to watch the pennies multiply.",
-                        "date": "Oct 21, 2020",
-                        "auth": "Mike Miller",
-                        "link": "https://www.trustpilot.com/reviews/5f90d133798e6f04a41a3c73"
+                        "title": "Using MyConstant for a month with no problems",
+                        "desc": "I’ve been using MyConstant for a little over a month now. Have not encountered any problems. Have transferred funds multiple times with both ACH (took 4-5 days) and with Zelle (less than a minute) without incident.",
+                        "date": "Nov 6, 2020",
+                        "auth": "Rustin C",
+                        "link": "https://www.trustpilot.com/reviews/5fa5a0365e693f0a84203f05"
                     },
                     "1": {
                         "star": "5",
-                        "title": "Great Alternative Investment Platform Overall",
-                        "desc": "I've been very happy with the platform. Solid interest rates and my money feels secure. Plus they've been improving features like ACH, loan formatting, and the mobile app. I will continue to invest in this platform for the foreseeable future.",
-                        "date": "Oct 21, 2020",
-                        "auth": "Shea Henke",
-                        "link": "https://www.trustpilot.com/reviews/5f8f2f9e798e6f04a419144d"
+                        "title": "100% Legit! My new favorite app!",
+                        "desc": "I'm in week 2 and my available balance has increased everyday. There was a bug with the \"Link You Bank Account\" link but it has been fixed and everything is running smoothly.",
+                        "date": "Nov 4, 2020",
+                        "auth": "BoombocxProd Leases",
+                        "link": "https://www.trustpilot.com/reviews/5fa1ab925e693f06a004dc4d"
                     },
                     "2": {
                         "star": "5",
-                        "title": "I have enjoyed the benefits of MyConstant",
-                        "desc": "Where else can you save money in an account at four percent annual interest with no MINIMUM deposit trequirement? The customer service function is handled promptly. It is also very easy to deposit either cash (fiat) or crypto into your account.",
-                        "date": "Oct 19, 2020",
-                        "auth": "Geo",
-                        "link": "https://www.trustpilot.com/reviews/5f8c85ef798e6f077061d081"
+                        "title": "Great company!",
+                        "desc": "This is a great company! I’ve been lending money for several months now and have no complaints. it’s a great way to grow my money.",
+                        "date": "Oct 29, 2020",
+                        "auth": "Kyle A",
+                        "link": "https://www.trustpilot.com/reviews/5f9a24425e693f06f8744405"
                     },
                     "3": {
                         "star": "5",
@@ -1814,7 +1814,7 @@
                         "0": {
                             "auth": "@traders_insight",
                             "date": "Jan 24, 2020",
-                            "desc": "                    <p>I wrote up a full review of <a href=\"https://twitter.com/constantp2p\" target=\"_blank\">@Constantp2p</a>, a secured P2P lending platform. Right now I'm earning 8% APR on my 3rd 30-day term loan.</p>                    <p>I'm really excited about what the team has built and love the functionality behind it. Get ready for a podcast coming soon.</p>                  "
+                            "desc": "                    <p>I wrote up a full review of <a href=\"https://twitter.com/myconstantp2p\" target=\"_blank\">@Constantp2p</a>, a secured P2P lending platform. Right now I'm earning 8% APR on my 3rd 30-day term loan.</p>                    <p>I'm really excited about what the team has built and love the functionality behind it. Get ready for a podcast coming soon.</p>                  "
                         },
                         "1": {
                             "auth": "@traders_insight",
@@ -1834,7 +1834,7 @@
                         "4": {
                             "auth": "@RookieXBT",
                             "date": "Dec 24, 2019",
-                            "desc": "                  <p>2/ <a href=\"https://twitter.com/constantp2p\" target=\"_blank\">@constantp2p</a> is P2P lending platform that offers customers to use various currencies as collateral. Borrow or Invest, your choice!</p>                  <p>Including, but not limited to: $ENJ, $VET, $FTM, $BNB</p>                  <p>The offer great customer service and have an easy to use website!</p>                  <p><a title=\"https://www.myconstant.com?r=E6LGDDDH90\" href=\"https://t.co/NODA5sOqAK?amp=1\" target=\"_blank\" rel=\"noopener noreferrer\">myconstant.com/?r=E6LGDDDH90</a></p>                "
+                            "desc": "                  <p>2/ <a href=\"https://twitter.com/myconstantp2p\" target=\"_blank\">@constantp2p</a> is P2P lending platform that offers customers to use various currencies as collateral. Borrow or Invest, your choice!</p>                  <p>Including, but not limited to: $ENJ, $VET, $FTM, $BNB</p>                  <p>The offer great customer service and have an easy to use website!</p>                  <p><a title=\"https://www.myconstant.com?r=E6LGDDDH90\" href=\"https://t.co/NODA5sOqAK?amp=1\" target=\"_blank\" rel=\"noopener noreferrer\">myconstant.com/?r=E6LGDDDH90</a></p>                "
                         },
                         "5": {
                             "auth": "@RookieXBT",
@@ -1849,17 +1849,17 @@
                         "7": {
                             "auth": "@Tim88288305",
                             "date": "Dec 05, 2019",
-                            "desc": "                  <p>great news! Looking to have more cool features between <a href=\"https://twitter.com/HBWallet_Ether\" target=\"_blank\">@HBWallet_Ether</a> & <a href=\"https://twitter.com/constantp2p\" target=\"_blank\">@constantp2p</a></p>                "
+                            "desc": "                  <p>great news! Looking to have more cool features between <a href=\"https://twitter.com/HBWallet_Ether\" target=\"_blank\">@HBWallet_Ether</a> & <a href=\"https://twitter.com/myconstantp2p\" target=\"_blank\">@constantp2p</a></p>                "
                         },
                         "8": {
                             "auth": "@anhntv2012",
                             "date": "Nov 04, 2019",
-                            "desc": "                  <p>Thank you, <a href=\"https://twitter.com/constantp2p\" target=\"_blank\">@constantp2p</a>, for making my Monday brighter 😍 Let's go staking $TOMO @TomoChainANN 💰💰💰</p>                "
+                            "desc": "                  <p>Thank you, <a href=\"https://twitter.com/myconstantp2p\" target=\"_blank\">@constantp2p</a>, for making my Monday brighter 😍 Let's go staking $TOMO @TomoChainANN 💰💰💰</p>                "
                         },
                         "9": {
                             "auth": "@KryptoKarlsson",
                             "date": "Oct 01, 2019",
-                            "desc": "                  <p>You tried <a href=\"https://twitter.com/constantp2p\" target=\"_blank\">@constantp2p</a> yet? Really nice alternative to a centralized bank where you get 5% (!) interest only for depositing funds. Crypto-backed loans and P2P lending are also nice features! Register here and get a 10$ bonus: <a title=\"https://www.myconstant.com?r=K8VWG148GT\" href=\"https://t.co/sO6Uws139B?amp=1\" target=\"_blank\" rel=\" noopener noreferrer\">myconstant.com/?r=K8VWG148GT</a> #crypto #btc #eth #DeFi</p>                "
+                            "desc": "                  <p>You tried <a href=\"https://twitter.com/myconstantp2p\" target=\"_blank\">@constantp2p</a> yet? Really nice alternative to a centralized bank where you get 5% (!) interest only for depositing funds. Crypto-backed loans and P2P lending are also nice features! Register here and get a 10$ bonus: <a title=\"https://www.myconstant.com?r=K8VWG148GT\" href=\"https://t.co/sO6Uws139B?amp=1\" target=\"_blank\" rel=\" noopener noreferrer\">myconstant.com/?r=K8VWG148GT</a> #crypto #btc #eth #DeFi</p>                "
                         },
                         "10": {
                             "auth": "@Markus30230949",
@@ -1874,7 +1874,7 @@
                         "12": {
                             "auth": "@KJNorthcote",
                             "date": "Oct 11, 2019",
-                            "desc": "                  <p>Interested in peer-to-peer lending and online investing? Here's part one of my review of <a href=\"https://twitter.com/constantp2p\" target=\"_blank\">@constantp2p</a> one of the most innovative lending platforms out there. https://kiannorthcote.com/2019/10/11/product-review-investing-made-easy-with-constant-part-one/ #p2p #investing #finance</p>                "
+                            "desc": "                  <p>Interested in peer-to-peer lending and online investing? Here's part one of my review of <a href=\"https://twitter.com/myconstantp2p\" target=\"_blank\">@constantp2p</a> one of the most innovative lending platforms out there. https://kiannorthcote.com/2019/10/11/product-review-investing-made-easy-with-constant-part-one/ #p2p #investing #finance</p>                "
                         }
                     },
                     "viewMore": "View more on",
@@ -3281,7 +3281,7 @@
                         "updateBalanceNoteInWorkingTime": "Please note it might take <strong>up to five business days</strong> for the ACH transfer to complete and show in your account.",
                         "confirmMessage": "\n              <p>You're about to deposit {amount} via Plaid ACH. When you click Confirm, the transfer will begin and you won’t be able to cancel it.</p>\n              <p>Please ensure you have sufficient funds in your linked bank account or your ACH might be reversed and your Instant Credit benefit banned for 30 days.</p>\n              <p>When you’re ready, please click Confirm to start your transfer.</p>\n            ",
                         "referNoteDesc": "\n              <h4>By clicking Submit, you confirm to</h4>\n            ",
-                        "checkListNote": "\n              <ul>\n                <li>You have linked a US checking account thats supports outgoing ACH transfers.</li>\n                <li>You have sufficient funds for the transfer in your linked US bank account.</li>\n                <li>The amount you’re sending is less than ${max}.</li>\n                <li>You expect to keep the same linked bank account(s) for the next 60 days.</li>\n                <li>You've read <a target=\"_blank\" href=\"https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/\">our linked banking and ACH transfers guide.</a></li>\n              </ul>\n            ",
+                        "checkListNote": "\n<ul>\n                <li>You have linked a US checking account thats supports outgoing ACH transfers.</li>\n                <li>You have sufficient funds for the transfer in your linked US bank account.</li>\n                <li>The amount you’re sending is less than ${max}.</li>\n                <li>For your security, you agree to only withdraw this deposit via the same currency and linked bank ID for the next 60 days.</li>\n                <li>You've read <a target=\"_blank\" href=\"https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/\">our linked banking and ACH transfers guide.</a></li>\n              </ul>\n            ",
                         "sendNote": "<p>Please send your funds <strong>within 3 business days</strong> otherwise this transaction will time-out for the sake of security. If you need more time, please re-enter your investment amount when you're ready.</p><p>Please <strong>don't send</strong> an ACH via any method other than linking your US bank account or we won't be able to accept or trace it (and it will likely return to your bank).</p>",
                         "notAvailableAmount": "<p>The maximum amount you can send via ACH is {amount}. Please choose a wire transfer. For more information on ACH limits, please read our <a target=\"_blank\" href=\"https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/\">Guide to Linking US Bank Accounts.</a></p>"
                     }
@@ -4134,7 +4134,7 @@
             "head2": "Funds received in your bank account",
             "head3": "Fee"
         },
-        "withdrawFiatNote": "    <p class=\"title\">* A receiving fee may be charged by your financial institutions.</p>    ",
+        "withdrawFiatNote": "\n        <p class=\"title\">* A receiving fee may be charged by your financial institutions.</p>\n        <p> - The global banking system is imperfect, and some banks lack the direct relationships that support international wire transfers. These banks may depend on one or more intermediary banks (banks in addition to yours and ours) to help process the wire.</p>\n        <p> - Intermediary banks may automatically deduct fees for this service before the wire reaches your bank (withdrawal) or our bank (deposit). Unfortunately, these fees are outside of our control, and we can’t reliably inform you of the intermediary banks involved nor their fees in advance.</p>\n        <p> - While we don’t charge a USD withdrawal fee, you might still receive less than the withdrawal amount (after deducting your bank’s wire receipt fee) due to intermediary bank fees. Similarly, you might receive less in your MyConstant account after a deposit due to the same intermediary bank fees.</p>\n    ",
         "withdrawCrypto": {
             "head1": "Stablecoin withdrawal",
             "head2": "Funds received in your wallet*",
@@ -5350,10 +5350,10 @@
                 "desc": "We’d love to hear from you."
             },
             "fb": {
-                "link": "https://www.facebook.com/constantp2p"
+                "link": "https://www.facebook.com/myconstantp2p"
             },
             "tw": {
-                "link": "https://twitter.com/constantp2p"
+                "link": "https://twitter.com/myconstantp2p"
             },
             "linkedin": {
                 "link": "https://www.linkedin.com/company/constantp2p/"

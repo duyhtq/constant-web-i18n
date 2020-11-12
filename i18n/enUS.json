@@ -1636,7 +1636,7 @@
             "data": {
                 "0": {
                     "title": "Protection",
-                    "desc": "Crypto collateral and buy-back guarantees protect your investments from borrower defaults so you can rely on great returns."
+                    "desc": "Crypto <a class=\"glossary-word\">collateral</a> and buy-back guarantees protect your investments from borrower defaults so you can rely on great returns."
                 },
                 "1": {
                     "title": "Free withdrawals",
@@ -1652,13 +1652,13 @@
                 },
                 "4": {
                     "title": "No credit checks",
-                    "desc": "We don’t care about your credit history. As long as you have the collateral to secure your loan, you’re always approved."
+                    "desc": "We don’t care about your credit history. As long as you have the <a class=\"glossary-word\">collateral</a> to secure your loan, you’re always approved."
                 }
             }
         },
         "howItWorks": {
             "title": "How it works",
-            "desc": "MyConstant connects investors with borrowers to do business together. Crypto collateral and buy-back guarantees protect investors’ funds while our custodial partner safely manages the movement of funds and collateral.",
+            "desc": "MyConstant connects investors with borrowers to do business together. Crypto <a class=\"glossary-word\">collateral</a> and buy-back guarantees protect investors’ funds while our custodial partner safely manages the movement of funds and collateral.",
             "content": {
                 "0": {
                     "title": "Investors",
@@ -1666,7 +1666,7 @@
                 },
                 "1": {
                     "title": "Crypto-collateralized borrowers",
-                    "desc": "Borrowers must put up 100-200% of the loan amount in cryptocurrency to secure their loan."
+                    "desc": "Borrowers must put up 100-200% of the loan amount in <a class=\"glossary-word\">cryptocurrency</a> to secure their loan."
                 },
                 "2": {
                     "title": "Buy-back guaranteed borrowers",
@@ -1678,14 +1678,14 @@
                 },
                 "4": {
                     "title": "Custodial partner",
-                    "desc": "We use Prime Trust to safely manage the transfer and storage of investor funds and borrower collateral."
+                    "desc": "We use Prime Trust to safely manage the transfer and storage of investor funds and borrower <a class=\"glossary-word\">collateral</a>."
                 }
             }
         },
         "banner": {
             "title1": "Experience multi-market <span style=\"color:#F5A623;\">peer-to-peer</span> lending.",
-            "subTitle": "<p>Invest in people and businesses around the world for up to 11% <a class=\"glossary-word\">APR</a>. All lending is backed by borrower <a class=\"glossary-word\">collateral</a> or buy-back guarantee. Earn across multiple markets, spreading risk and maximizing reward.</p>        <p>Or, borrow against {numCollateral}+ cryptocurrencies to get the cash you need, instantly. Your crypto is securely held until you repay. Unlock the value of your crypto without selling up. </p>        <p>While not on loan or waiting for a match, your funds earn an automatic 4% APY, and you can withdraw anytime for free. So no downtime, no wasted earnings.</p>",
-            "subTitleShort": "<p>Invest in people and businesses around the world for up to 11% <a class=\"glossary-word\">APR</a>. All lending is backed by borrower <a class=\"glossary-word\">collateral</a> or buy-back guarantee...</p>",
+            "subTitle": "<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee. Earn across multiple markets, spreading risk and maximizing reward.</p>        <p>Or, borrow against {numCollateral}+ cryptocurrencies to get the cash you need, instantly. Your crypto is securely held until you repay. Unlock the value of your crypto without selling up. </p>        <p>While not on loan or waiting for a match, your funds earn an automatic 4% APY, and you can withdraw anytime for free. So no downtime, no wasted earnings.</p>",
+            "subTitleShort": "<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee...</p>",
             "subTitle2": "<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee. Earn across multiple markets, spreading risk and maximizing reward.</p>",
             "newMessage": "Why invest with MyConstant?",
             "viewMore": "...more",

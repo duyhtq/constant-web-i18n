@@ -96,11 +96,11 @@ export default {
     blogDesc: 'News, guides, and opinion.',
     social: {
       fb: {
-        link: 'https://www.facebook.com/constantp2p',
+        link: 'https://www.facebook.com/myconstantp2p',
         title: 'Facebook'
       },
-      tw: { link: 'https://twitter.com/constantp2p', title: 'Twitter' },
-      md: { link: 'https://medium.com/@constantp2p', title: 'Medium' },
+      tw: { link: 'https://twitter.com/myconstantp2p', title: 'Twitter' },
+      md: { link: 'https://myconstantp2p.medium.com', title: 'Medium' },
       yt: {
         link: 'https://www.youtube.com/channel/UCedaWJPf9sgsy5JajmqBAtg',
         title: 'Youtube'
@@ -1191,7 +1191,7 @@ export default {
       plAddrCountry: 'Select your country',
       plAddrCity: 'Select your city',
       titleStep2: 'Thanks. Now we need a proof of address.',
-      lAddrUpload: 'To verify the address above, please upload a document that meets <a href="https://medium.com/@constantp2p/how-to-verify-your-id-on-constant-kyc-1a9d08ae0a" class="underline" target="_blank" >these criteria</a>.',
+      lAddrUpload: 'To verify the address above, please upload a document that meets <a href="https://myconstantp2p.medium.com/how-to-verify-your-id-on-constant-kyc-1a9d08ae0a" class="underline" target="_blank" >these criteria</a>.',
       descAddrUpload: '<div><p>Valid documents: utility bill, phone bill, mortgage statement, tenancy agreement, bank/credit card statement, insurance letter (motor, home, or life), or financial statement (pension, endowment).</p><p><strong style="color:#F5A623;">Document must be dated within the last 90 days.</strong></p><p>Please ensure your proof of address is an exact match with the address provided in your application, including all shorthands and abbreviations.</p><p>Please make sure that the photo is complete and clearly visible, in JPG, JPEG, PNG or PDF, and is smaller than 10MB.</p></div>',
       btnBack: 'Back',
       reviewing: '        <p>Thanks, it’s nice to meet you.</p>        <p>          We’re looking over your information and will let you know once you’re          good to go.        </p>      ',
@@ -1778,7 +1778,7 @@ export default {
             '0': {
               auth: '@traders_insight',
               date: 'Jan 24, 2020',
-              desc: `                    <p>I wrote up a full review of <a href="https://twitter.com/constantp2p" target="_blank">@Constantp2p</a>, a secured P2P lending platform. Right now I'm earning 8% APR on my 3rd 30-day term loan.</p>                    <p>I'm really excited about what the team has built and love the functionality behind it. Get ready for a podcast coming soon.</p>                  `
+              desc: `                    <p>I wrote up a full review of <a href="https://twitter.com/myconstantp2p" target="_blank">@Constantp2p</a>, a secured P2P lending platform. Right now I'm earning 8% APR on my 3rd 30-day term loan.</p>                    <p>I'm really excited about what the team has built and love the functionality behind it. Get ready for a podcast coming soon.</p>                  `
             },
             '1': {
               auth: '@traders_insight',
@@ -1798,7 +1798,7 @@ export default {
             '4': {
               auth: '@RookieXBT',
               date: 'Dec 24, 2019',
-              desc: '                  <p>2/ <a href="https://twitter.com/constantp2p" target="_blank">@constantp2p</a> is P2P lending platform that offers customers to use various currencies as collateral. Borrow or Invest, your choice!</p>                  <p>Including, but not limited to: $ENJ, $VET, $FTM, $BNB</p>                  <p>The offer great customer service and have an easy to use website!</p>                  <p><a title="https://www.myconstant.com?r=E6LGDDDH90" href="https://t.co/NODA5sOqAK?amp=1" target="_blank" rel="noopener noreferrer">myconstant.com/?r=E6LGDDDH90</a></p>                '
+              desc: '                  <p>2/ <a href="https://twitter.com/myconstantp2p" target="_blank">@constantp2p</a> is P2P lending platform that offers customers to use various currencies as collateral. Borrow or Invest, your choice!</p>                  <p>Including, but not limited to: $ENJ, $VET, $FTM, $BNB</p>                  <p>The offer great customer service and have an easy to use website!</p>                  <p><a title="https://www.myconstant.com?r=E6LGDDDH90" href="https://t.co/NODA5sOqAK?amp=1" target="_blank" rel="noopener noreferrer">myconstant.com/?r=E6LGDDDH90</a></p>                '
             },
             '5': {
               auth: '@RookieXBT',
@@ -1813,17 +1813,17 @@ export default {
             '7': {
               auth: '@Tim88288305',
               date: 'Dec 05, 2019',
-              desc: '                  <p>great news! Looking to have more cool features between <a href="https://twitter.com/HBWallet_Ether" target="_blank">@HBWallet_Ether</a> & <a href="https://twitter.com/constantp2p" target="_blank">@constantp2p</a></p>                '
+              desc: '                  <p>great news! Looking to have more cool features between <a href="https://twitter.com/HBWallet_Ether" target="_blank">@HBWallet_Ether</a> & <a href="https://twitter.com/myconstantp2p" target="_blank">@constantp2p</a></p>                '
             },
             '8': {
               auth: '@anhntv2012',
               date: 'Nov 04, 2019',
-              desc: `                  <p>Thank you, <a href="https://twitter.com/constantp2p" target="_blank">@constantp2p</a>, for making my Monday brighter 😍 Let's go staking $TOMO @TomoChainANN 💰💰💰</p>                `
+              desc: `                  <p>Thank you, <a href="https://twitter.com/myconstantp2p" target="_blank">@constantp2p</a>, for making my Monday brighter 😍 Let's go staking $TOMO @TomoChainANN 💰💰💰</p>                `
             },
             '9': {
               auth: '@KryptoKarlsson',
               date: 'Oct 01, 2019',
-              desc: '                  <p>You tried <a href="https://twitter.com/constantp2p" target="_blank">@constantp2p</a> yet? Really nice alternative to a centralized bank where you get 5% (!) interest only for depositing funds. Crypto-backed loans and P2P lending are also nice features! Register here and get a 10$ bonus: <a title="https://www.myconstant.com?r=K8VWG148GT" href="https://t.co/sO6Uws139B?amp=1" target="_blank" rel=" noopener noreferrer">myconstant.com/?r=K8VWG148GT</a> #crypto #btc #eth #DeFi</p>                '
+              desc: '                  <p>You tried <a href="https://twitter.com/myconstantp2p" target="_blank">@constantp2p</a> yet? Really nice alternative to a centralized bank where you get 5% (!) interest only for depositing funds. Crypto-backed loans and P2P lending are also nice features! Register here and get a 10$ bonus: <a title="https://www.myconstant.com?r=K8VWG148GT" href="https://t.co/sO6Uws139B?amp=1" target="_blank" rel=" noopener noreferrer">myconstant.com/?r=K8VWG148GT</a> #crypto #btc #eth #DeFi</p>                '
             },
             '10': {
               auth: '@Markus30230949',
@@ -1838,7 +1838,7 @@ export default {
             '12': {
               auth: '@KJNorthcote',
               date: 'Oct 11, 2019',
-              desc: `                  <p>Interested in peer-to-peer lending and online investing? Here's part one of my review of <a href="https://twitter.com/constantp2p" target="_blank">@constantp2p</a> one of the most innovative lending platforms out there. https://kiannorthcote.com/2019/10/11/product-review-investing-made-easy-with-constant-part-one/ #p2p #investing #finance</p>                `
+              desc: `                  <p>Interested in peer-to-peer lending and online investing? Here's part one of my review of <a href="https://twitter.com/myconstantp2p" target="_blank">@constantp2p</a> one of the most innovative lending platforms out there. https://kiannorthcote.com/2019/10/11/product-review-investing-made-easy-with-constant-part-one/ #p2p #investing #finance</p>                `
             }
           },
           viewMore: 'View more on',
@@ -4168,7 +4168,12 @@ export default {
       head2: 'Funds received in your bank account',
       head3: 'Fee'
     },
-    withdrawFiatNote: '    <p class="title">* A receiving fee may be charged by your financial institutions.</p>    ',
+    withdrawFiatNote: `
+        <p class="title">* A receiving fee may be charged by your financial institutions.</p>
+        <p> - The global banking system is imperfect, and some banks lack the direct relationships that support international wire transfers. These banks may depend on one or more intermediary banks (banks in addition to yours and ours) to help process the wire.</p>
+        <p> - Intermediary banks may automatically deduct fees for this service before the wire reaches your bank (withdrawal) or our bank (deposit). Unfortunately, these fees are outside of our control, and we can’t reliably inform you of the intermediary banks involved nor their fees in advance.</p>
+        <p> - While we don’t charge a USD withdrawal fee, you might still receive less than the withdrawal amount (after deducting your bank’s wire receipt fee) due to intermediary bank fees. Similarly, you might receive less in your MyConstant account after a deposit due to the same intermediary bank fees.</p>
+    `,
     withdrawCrypto: {
       head1: 'Stablecoin withdrawal',
       head2: 'Funds received in your wallet*',
@@ -5398,8 +5403,8 @@ export default {
         title: 'Send us an email',
         desc: 'We’d love to hear from you.'
       },
-      fb: { link: 'https://www.facebook.com/constantp2p' },
-      tw: { link: 'https://twitter.com/constantp2p' },
+      fb: { link: 'https://www.facebook.com/myconstantp2p' },
+      tw: { link: 'https://twitter.com/myconstantp2p' },
       linkedin: { link: 'https://www.linkedin.com/company/constantp2p/' }
     },
     announcements: 'Announcements',

@@ -2290,6 +2290,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.home.loanOriginator.listApplications.investmentStatus.voiding%%%,"Selling"
 %%%.home.loanOriginator.listApplications.investmentStatus.voided%%%,"Sold"
 %%%.home.loanOriginator.listApplications.investmentStatus.pending%%%,"Pending"
+%%%.home.loanOriginator.listApplications.investmentStatus.closed%%%,"Closed"
 %%%.home.loanOriginator.listApplications.loanOriginatorHeaders.loanOriginator%%%,"Loan Originator (LO)"
 %%%.home.loanOriginator.listApplications.loanOriginatorHeaders.loanType%%%,"Loan Type"
 %%%.home.loanOriginator.listApplications.loanOriginatorHeaders.term%%%,"Term"
@@ -2495,6 +2496,12 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.notAvailableAmount%%%,"<p>The maximum amount you can send via ACH is {amount}. Please choose a wire transfer. For more information on ACH limits, please read our <a target=""_blank"" href=""https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/"">Guide to Linking US Bank Accounts.</a></p>"
 %%%.home1.lendingSection.confirm.zelle%%%,"          <p>Amount: {amount} USD</p>          <p>Send to: <strong>finance@myconstant.com</strong></p>          <p>Full name: <strong>Const LLC</strong></p>          <p>Type: <strong>Personal Account</strong></p>          <br /><br />          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>        "
 %%%.home1.lendingSection.confirm.updateBalanceNoteInWorkingTime%%%,"Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience."
+%%%.home1.lendingSection.confirm.bankChargeFeeInfo%%%,"
+          <h3 style=""color: #757575;font-size: 16px; border-bottom: 1px solid #EEEEEE"">Notice about intermediary bank fees</h3>
+          <p class=""text-left"">The global banking system is imperfect, and some banks lack the direct relationships that support international wire transfers. These banks may depend on one or more intermediary banks (banks in addition to yours and ours) to help process the wire.</p>  
+          <p class=""text-left"">Intermediary banks may automatically deduct fees for this service before the wire reaches your bank (withdrawal) or our bank (deposit). Unfortunately, these fees are outside of our control, and we can’t reliably inform you of the intermediary banks involved nor their fees in advance.</p> 
+          <p class=""text-left"">While we don’t charge a USD withdrawal fee, you might still receive less than the withdrawal amount (after deducting your bank’s wire receipt fee) due to intermediary bank fees. Similarly, you might receive less in your MyConstant account after a deposit due to the same intermediary bank fees.</p>
+        "
 %%%.home1.faqs.question1%%%,"How long will it take to find a match?"
 %%%.home1.faqs.answer1%%%,"You match the moment we receive your funds."
 %%%.home1.faqs.question2%%%,"Are there any limits?"
@@ -3630,6 +3637,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.error.serverCode.userTaxIDNumberExisted%%%,"This SSN is already used to verify another account."
 %%%.error.serverCode.userTaxIDNumberInvalid%%%,"TaxIDNumber is invalid"
 %%%.error.serverCode.userPhoneNumberInvalid%%%,"PhoneNumber is invalid"
+%%%.error.serverCode.inValidWalletAddress%%%,"Receive address invalid"
 %%%.error.expiredSession%%%,"Your session has expired. Please log in again."
 %%%.error.withdrawLessThanOrEqual%%%,"The maximum withdrawal amount is {max}. Please try other available methods."
 %%%.error.withdrawGreaterThan%%%,"The minimum withdrawal amount is {min}"

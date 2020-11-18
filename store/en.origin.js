@@ -3031,7 +3031,8 @@
                     "activating": "%%%.home.loanOriginator.listApplications.investmentStatus.activating%%%",
                     "voiding": "%%%.home.loanOriginator.listApplications.investmentStatus.voiding%%%",
                     "voided": "%%%.home.loanOriginator.listApplications.investmentStatus.voided%%%",
-                    "pending": "%%%.home.loanOriginator.listApplications.investmentStatus.pending%%%"
+                    "pending": "%%%.home.loanOriginator.listApplications.investmentStatus.pending%%%",
+                    "closed": "%%%.home.loanOriginator.listApplications.investmentStatus.closed%%%"
                 },
                 "loanOriginatorHeaders": {
                     "loanOriginator": "%%%.home.loanOriginator.listApplications.loanOriginatorHeaders.loanOriginator%%%",
@@ -3287,7 +3288,8 @@
                     }
                 },
                 "zelle": "%%%.home1.lendingSection.confirm.zelle%%%",
-                "updateBalanceNoteInWorkingTime": "%%%.home1.lendingSection.confirm.updateBalanceNoteInWorkingTime%%%"
+                "updateBalanceNoteInWorkingTime": "%%%.home1.lendingSection.confirm.updateBalanceNoteInWorkingTime%%%",
+                "bankChargeFeeInfo": "%%%.home1.lendingSection.confirm.bankChargeFeeInfo%%%"
             }
         },
         "faqs": {
@@ -4923,7 +4925,8 @@
             "unable_to_cancel": "%%%.error.serverCode.unable_to_cancel%%%",
             "userTaxIDNumberExisted": "%%%.error.serverCode.userTaxIDNumberExisted%%%",
             "userTaxIDNumberInvalid": "%%%.error.serverCode.userTaxIDNumberInvalid%%%",
-            "userPhoneNumberInvalid": "%%%.error.serverCode.userPhoneNumberInvalid%%%"
+            "userPhoneNumberInvalid": "%%%.error.serverCode.userPhoneNumberInvalid%%%",
+            "inValidWalletAddress": "%%%.error.serverCode.inValidWalletAddress%%%"
         },
         "expiredSession": "%%%.error.expiredSession%%%",
         "withdrawLessThanOrEqual": "%%%.error.withdrawLessThanOrEqual%%%",

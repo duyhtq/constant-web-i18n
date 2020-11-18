@@ -3031,7 +3031,8 @@
                     "activating": "Fund in transit",
                     "voiding": "Selling",
                     "voided": "Sold",
-                    "pending": "Pending"
+                    "pending": "Pending",
+                    "closed": "Closed"
                 },
                 "loanOriginatorHeaders": {
                     "loanOriginator": "Loan Originator (LO)",
@@ -3287,7 +3288,8 @@
                     }
                 },
                 "zelle": "          <p>Amount: {amount} USD</p>          <p>Send to: <strong>finance@myconstant.com</strong></p>          <p>Full name: <strong>Const LLC</strong></p>          <p>Type: <strong>Personal Account</strong></p>          <br /><br />          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>        ",
-                "updateBalanceNoteInWorkingTime": "Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience."
+                "updateBalanceNoteInWorkingTime": "Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience.",
+                "bankChargeFeeInfo": "\n          <h3 style=\"color: #757575;font-size: 16px; border-bottom: 1px solid #EEEEEE\">Notice about intermediary bank fees</h3>\n          <p class=\"text-left\">The global banking system is imperfect, and some banks lack the direct relationships that support international wire transfers. These banks may depend on one or more intermediary banks (banks in addition to yours and ours) to help process the wire.</p>  \n          <p class=\"text-left\">Intermediary banks may automatically deduct fees for this service before the wire reaches your bank (withdrawal) or our bank (deposit). Unfortunately, these fees are outside of our control, and we can’t reliably inform you of the intermediary banks involved nor their fees in advance.</p> \n          <p class=\"text-left\">While we don’t charge a USD withdrawal fee, you might still receive less than the withdrawal amount (after deducting your bank’s wire receipt fee) due to intermediary bank fees. Similarly, you might receive less in your MyConstant account after a deposit due to the same intermediary bank fees.</p>\n        "
             }
         },
         "faqs": {
@@ -4923,7 +4925,8 @@
             "unable_to_cancel": "You can’t cancel this order. It might be cancelled by the seller or picked by another investor already. Please refresh the browser.",
             "userTaxIDNumberExisted": "This SSN is already used to verify another account.",
             "userTaxIDNumberInvalid": "TaxIDNumber is invalid",
-            "userPhoneNumberInvalid": "PhoneNumber is invalid"
+            "userPhoneNumberInvalid": "PhoneNumber is invalid",
+            "inValidWalletAddress": "Receive address invalid"
         },
         "expiredSession": "Your session has expired. Please log in again.",
         "withdrawLessThanOrEqual": "The maximum withdrawal amount is {max}. Please try other available methods.",

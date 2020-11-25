@@ -355,16 +355,17 @@ export default {
   },
   history: {
     deposit: {
-      title: 'Deposit History',
-      tabs: { fiat: 'Fiat', crypto: 'Crypto', openOrders: 'Open Orders' },
+      title: 'Fiat - Deposits',
+      tabs: { fiat: 'Fiat', crypto: 'Crypto', openOrders: 'Open Orders', collateral: 'Collateral' },
       headers: {
-        day: 'Date',
-        currencyAmount: 'Deposit',
-        amount: 'Received',
+        date: 'Date',
+        receivedAmount: 'Received amount',
         cryptoAddress: 'Crypto Address',
         status: 'Status',
-        refNo: 'Reference',
-        action: ' '
+        refNo: 'Reference no.',
+        action: 'Action',
+        coin: 'Coin',
+        amount: 'Amount'
       },
       noHistoryData: 'Make a deposit to get started.',
       status: {
@@ -374,7 +375,7 @@ export default {
         transferred: 'Successful',
         matching: 'Matching',
         picked: 'In progress',
-        pending: 'Order in progress',
+        pending: 'Confirming',
         transferred_fiat: 'Your account will be credited once we have received your transfer.',
         transferred_fiat_invest: 'Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.',
         transferring_fiat: 'Transferring Fiat',
@@ -382,6 +383,7 @@ export default {
       }
     },
     depositCrypto: {
+      header: 'Crypto - Deposits',
       status: { done: 'Done' },
       checkBalance: 'Check Balance',
       headers: {
@@ -404,19 +406,22 @@ export default {
     },
     transferConstant: {
       title: 'Transfer History',
-      tabs: { fiat: 'Fiat', crypto: 'Crypto', sent: 'Sent', received: 'Received', openOrders: 'Open Orders' },
+      tabs: {
+        sent: 'Sent',
+        received: 'Received',
+        openOrders: 'Open Orders'
+      },
       headers: {
-        orderNo: '#',
         send: 'Send',
         received: 'Received',
         type: 'Type',
         amount: 'Amount',
-        fromEmail: 'From Email',
-        toEmail: 'To Email',
+        fromEmail: 'From email',
+        toEmail: 'To email',
         time: 'Time',
         date: 'Date',
         status: 'Status',
-        action: ' '
+        action: 'Action'
       },
       noHistoryData: 'Make a transfer to get started.'
     },
@@ -430,7 +435,8 @@ export default {
         paymentMethod: 'Payment Method',
         date: 'Date',
         status: 'Status',
-        action: 'Action'
+        action: 'Action',
+        type: 'Type'
       },
       noHistoryData: 'Make a withdrawal to get started.',
       bankName: 'Bank name',
@@ -449,9 +455,17 @@ export default {
         time: 'Time',
         date: 'Date',
         status: 'Status',
-        action: 'Action'
+        action: 'Action',
+        amount: 'Amount',
+        coin: 'Coin',
+        type: 'Type',
+        payOut: 'Payment Method / Send to Address'
       },
       noHistoryData: 'Make a withdrawal to get started.'
+    },
+    openOrders: {
+      withdrawals: 'Withdrawals',
+      transfers: "Transfers"
     }
   },
   me: {
@@ -3142,6 +3156,7 @@ export default {
         or: 'or',
         textRegister: 'Sign up',
         btnBorrow: 'to borrow now',
+        btnDeposit: 'to deposit now',
         text1: 'Set your own lending terms',
         placeholder: { amount: 'How much do you want to lend?' },
         maxTerm: 'Length of term',
@@ -3273,6 +3288,7 @@ export default {
           <p class="text-left">Intermediary banks may automatically deduct fees for this service before the wire reaches your bank (withdrawal) or our bank (deposit). Unfortunately, these fees are outside of our control, and we can’t reliably inform you of the intermediary banks involved nor their fees in advance.</p> 
           <p class="text-left">While we don’t charge a USD withdrawal fee, you might still receive less than the withdrawal amount (after deducting your bank’s wire receipt fee) due to intermediary bank fees. Similarly, you might receive less in your MyConstant account after a deposit due to the same intermediary bank fees.</p>
         `,
+        bankChargeFeeTitle: 'Intermediary bank fees'
       }
     },
     faqs: {
@@ -5124,6 +5140,18 @@ export default {
           }
         }
       }
+    },
+    promotionGeneralV3: {
+      title: `
+        <p class="header">Your first investment is on us <br/>(free \${kYCTrialAmount} trial)</p>
+      `,
+      titleMobile: `
+        <p class="header">Your first investment is on us <br/>(<span class="hightlight">free \${kYCTrialAmount}</span> trial)</p>
+      `,
+      desc: `
+        <p>Try P2P investing before spending a cent of your own money. Sign up and verify your ID (pass KYC) and you’ll earn 4% APY on a \${kYCTrialAmount} trial bonus, compounded and paid every second. After 30 days, we take back the bonus but the interest is yours to keep or reinvest.</p>
+        <p>Hurry – the offer is for a limited time and only available to US citizens.</p>
+      `,
     },
     promotionCryptoBacked: {
       title: '        <p class="header">Try secured P2P lending with a free ${kYCTrialAmount} bonus</p>        <p>Earn up to {rate}% APR with crypto-backed P2P lending. Sign up now to get a free ${kYCTrialAmount} bonus at 4% APY to start. After 30 days, we reclaim the bonus but you keep the interest.</p>        <p>This offer is only available for a limited time.</p>      ',

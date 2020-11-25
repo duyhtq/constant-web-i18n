@@ -385,16 +385,18 @@
             "tabs": {
                 "fiat": "%%%.history.deposit.tabs.fiat%%%",
                 "crypto": "%%%.history.deposit.tabs.crypto%%%",
-                "openOrders": "%%%.history.deposit.tabs.openOrders%%%"
+                "openOrders": "%%%.history.deposit.tabs.openOrders%%%",
+                "collateral": "%%%.history.deposit.tabs.collateral%%%"
             },
             "headers": {
-                "day": "%%%.history.deposit.headers.day%%%",
-                "currencyAmount": "%%%.history.deposit.headers.currencyAmount%%%",
-                "amount": "%%%.history.deposit.headers.amount%%%",
+                "date": "%%%.history.deposit.headers.date%%%",
+                "receivedAmount": "%%%.history.deposit.headers.receivedAmount%%%",
                 "cryptoAddress": "%%%.history.deposit.headers.cryptoAddress%%%",
                 "status": "%%%.history.deposit.headers.status%%%",
                 "refNo": "%%%.history.deposit.headers.refNo%%%",
-                "action": "%%%.history.deposit.headers.action%%%"
+                "action": "%%%.history.deposit.headers.action%%%",
+                "coin": "%%%.history.deposit.headers.coin%%%",
+                "amount": "%%%.history.deposit.headers.amount%%%"
             },
             "noHistoryData": "%%%.history.deposit.noHistoryData%%%",
             "status": {
@@ -412,6 +414,7 @@
             }
         },
         "depositCrypto": {
+            "header": "%%%.history.depositCrypto.header%%%",
             "status": {
                 "done": "%%%.history.depositCrypto.status.done%%%"
             },
@@ -437,14 +440,11 @@
         "transferConstant": {
             "title": "%%%.history.transferConstant.title%%%",
             "tabs": {
-                "fiat": "%%%.history.transferConstant.tabs.fiat%%%",
-                "crypto": "%%%.history.transferConstant.tabs.crypto%%%",
                 "sent": "%%%.history.transferConstant.tabs.sent%%%",
                 "received": "%%%.history.transferConstant.tabs.received%%%",
                 "openOrders": "%%%.history.transferConstant.tabs.openOrders%%%"
             },
             "headers": {
-                "orderNo": "%%%.history.transferConstant.headers.orderNo%%%",
                 "send": "%%%.history.transferConstant.headers.send%%%",
                 "received": "%%%.history.transferConstant.headers.received%%%",
                 "type": "%%%.history.transferConstant.headers.type%%%",
@@ -471,7 +471,8 @@
                 "paymentMethod": "%%%.history.withdrawFiat.headers.paymentMethod%%%",
                 "date": "%%%.history.withdrawFiat.headers.date%%%",
                 "status": "%%%.history.withdrawFiat.headers.status%%%",
-                "action": "%%%.history.withdrawFiat.headers.action%%%"
+                "action": "%%%.history.withdrawFiat.headers.action%%%",
+                "type": "%%%.history.withdrawFiat.headers.type%%%"
             },
             "noHistoryData": "%%%.history.withdrawFiat.noHistoryData%%%",
             "bankName": "%%%.history.withdrawFiat.bankName%%%",
@@ -494,9 +495,17 @@
                 "time": "%%%.history.withdrawCrypto.headers.time%%%",
                 "date": "%%%.history.withdrawCrypto.headers.date%%%",
                 "status": "%%%.history.withdrawCrypto.headers.status%%%",
-                "action": "%%%.history.withdrawCrypto.headers.action%%%"
+                "action": "%%%.history.withdrawCrypto.headers.action%%%",
+                "amount": "%%%.history.withdrawCrypto.headers.amount%%%",
+                "coin": "%%%.history.withdrawCrypto.headers.coin%%%",
+                "type": "%%%.history.withdrawCrypto.headers.type%%%",
+                "payOut": "%%%.history.withdrawCrypto.headers.payOut%%%"
             },
             "noHistoryData": "%%%.history.withdrawCrypto.noHistoryData%%%"
+        },
+        "openOrders": {
+            "withdrawals": "%%%.history.openOrders.withdrawals%%%",
+            "transfers": "%%%.history.openOrders.transfers%%%"
         }
     },
     "me": {
@@ -3188,6 +3197,7 @@
                 "or": "%%%.home1.lendingSection.form.or%%%",
                 "textRegister": "%%%.home1.lendingSection.form.textRegister%%%",
                 "btnBorrow": "%%%.home1.lendingSection.form.btnBorrow%%%",
+                "btnDeposit": "%%%.home1.lendingSection.form.btnDeposit%%%",
                 "text1": "%%%.home1.lendingSection.form.text1%%%",
                 "placeholder": {
                     "amount": "%%%.home1.lendingSection.form.placeholder.amount%%%"
@@ -3289,7 +3299,8 @@
                 },
                 "zelle": "%%%.home1.lendingSection.confirm.zelle%%%",
                 "updateBalanceNoteInWorkingTime": "%%%.home1.lendingSection.confirm.updateBalanceNoteInWorkingTime%%%",
-                "bankChargeFeeInfo": "%%%.home1.lendingSection.confirm.bankChargeFeeInfo%%%"
+                "bankChargeFeeInfo": "%%%.home1.lendingSection.confirm.bankChargeFeeInfo%%%",
+                "bankChargeFeeTitle": "%%%.home1.lendingSection.confirm.bankChargeFeeTitle%%%"
             }
         },
         "faqs": {
@@ -5077,6 +5088,11 @@
                     }
                 }
             }
+        },
+        "promotionGeneralV3": {
+            "title": "%%%.landingPage.promotionGeneralV3.title%%%",
+            "titleMobile": "%%%.landingPage.promotionGeneralV3.titleMobile%%%",
+            "desc": "%%%.landingPage.promotionGeneralV3.desc%%%"
         },
         "promotionCryptoBacked": {
             "title": "%%%.landingPage.promotionCryptoBacked.title%%%",

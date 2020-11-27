@@ -119,14 +119,14 @@ export default {
       borrow: 'Borrow'
     },
     cta: {
-      type1: { title: '<h3>Start earning interest</h3>', btn: 'Make an investment' },
-      type2: { title: '<h3>Do more with your money</h3>', btn: 'Open a free account' },
-      type3: { title: '<h3>Earn passive income with fully secured investments.</h3>', btn: 'Make an investment' },
-      type4: { title: '<h3>Get fixed-rate loans of any amount.</h3>', btn: 'Borrow now' },
-      type5: { title: '<h3>Invite your friends, earn a bonus</h3>', btn: 'Invite now' },
-      type6: { title: '<h3>Open an account and grow your money</h3>', btn: 'Open an account' },
-      type10: { title: '<h3>Invest the way you want</h3>', btn: 'Sign up now' },
-      type11: { title: '<h3>Borrow the way you want</h3>', btn: 'Sign up now' }
+      type1: { title: '<div class="h3">Start earning interest</div>', btn: 'Make an investment' },
+      type2: { title: '<div class="h3">Do more with your money</div>', btn: 'Open a free account' },
+      type3: { title: '<div class="h3">Earn passive income with fully secured investments.</div>', btn: 'Make an investment' },
+      type4: { title: '<div class="h3">Get fixed-rate loans of any amount.</div>', btn: 'Borrow now' },
+      type5: { title: '<div class="h3">Invite your friends, earn a bonus</div>', btn: 'Invite now' },
+      type6: { title: '<div class="h3">Open an account and grow your money</div>', btn: 'Open an account' },
+      type10: { title: '<div class="h3">Invest the way you want</div>', btn: 'Sign up now' },
+      type11: { title: '<div class="h3">Borrow the way you want</div>', btn: 'Sign up now' }
     },
     company: {
       name: ' 2020 MyConstant, Inc.',
@@ -2143,8 +2143,8 @@ export default {
         content: `
             <p class="topText">Borrow the way you want</p>
             <h1 class="hightlight">Borrow from just {rate}% APR.</h1>
-            <div class="h1">Combine {numCollateral}+ cryptos as collateral.</div>
-            <div class="h1 last">Get cash or coins without selling up.</div>
+            <h2>Combine {numCollateral}+ cryptos as collateral.</h2>
+            <h2 class="last">Get cash or coins without selling up.</h2>
             <p>Get a loan in minutes from just {rate}% APR. Withdraw in fiat, stablecoins, or trade your loan for cryptocurrency at the best prices. Your collateral is securely stored and returned when you repay. No exchanges. No trading fees. Trade or cash-in the value of your portfolio without selling up.</p>
         `,
         youtube: { title: 'Why borrow with MyConstant?' },
@@ -3146,8 +3146,8 @@ export default {
   },
   support: {
     newTitle: `
-    <h6>Questions? Let's get on a call.</h6>
-    <h6>Set up a time <a href="/help-and-support">here</a>.</h6>`
+    <div class="h6">Questions? Let's get on a call.</div>
+    <div class="h6">Set up a time <a href="/help-and-support">here</a>.</div>`
   },
   home1: {
     lendingSection: {
@@ -3173,9 +3173,9 @@ export default {
       intro: {
         content: `
             <p class="topText">Invest the way you want</p>
-            <h1 style="color:#F5A623;">Earn up to {rate}% APR now.</h1>
-            <div class="h1">Start investing from just $50.</div>
-            <div class="h1">Experience crypto-backed P2P lending.</div>
+            <h2 style="color:#F5A623;">Earn up to {rate}% APR now.</h2>
+            <h2>Start investing from just $50.</h2>
+            <h1>Experience crypto-backed P2P lending.</h1>
             <p />
             <p>Lend to cryptocurrency holders across the world for a return of up to {rate}% APR. You choose the term, we match you with a borrower, and you keep the interest. All lending is backed by collateral, which is sold if the borrower defaults.</p>
 `,
@@ -4064,8 +4064,8 @@ export default {
     contentHtml: `
       <p class="topText">Secured crypto lending</p>
       <h1 class="hightlight">Earn {interest}% APY <br/>on BTC, ETH, and BNB.</h1>
-      <div class="h1">Compounded and paid every second.</div>
-      <div class="h1 last">Backed by MyConstant.</div>
+      <h2>Compounded and paid every second.</h2>
+      <h2 class="last">Backed by MyConstant.</h2>
       <p>Invest your idle cryptocurrencies for a return of {interest}% APY. All lending is backed by MyConstant Guarantee<sup>1</sup> and you can withdraw anytime for free. No fees. No lock-ups. Compounded every second.</p>
       <p><sup>1</sup>The MyConstant Guarantee is a $3,000,000 fund that underwrites all investments in Crypto Lend, protecting you from losses.</p>
     `,
@@ -5342,7 +5342,7 @@ export default {
     share: 'Share',
     conditions: 'Conditions',
     term: `
-      <h3 class="semiBold">Terms and Conditions</h3>
+      <h2 class="semiBold">Terms and Conditions</h2>
       <ol>
         <li><p>Any abuse of the MyConstant Badges reward program will result in immediate disqualification. Abuse includes spam, cheating, or any other fraud intended to earn badges illegitimately.</p></li> 
         <li><p>Any content you produce about MyConstant to claim a badge must not denigrate, disparage, or otherwise damage the MyConstant brand and you also consent to us using your content in promotional material and sharing across our website and social media platforms.</p></li> 

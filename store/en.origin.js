@@ -349,7 +349,9 @@
                 "collateral_loan_matched": "%%%.memberShip.pointHistory.activity.collateral_loan_matched%%%",
                 "lo_investment_investment": "%%%.memberShip.pointHistory.activity.lo_investment_investment%%%",
                 "saving_termdeposit": "%%%.memberShip.pointHistory.activity.saving_termdeposit%%%",
-                "user_badge_result": "%%%.memberShip.pointHistory.activity.user_badge_result%%%"
+                "user_badge_result": "%%%.memberShip.pointHistory.activity.user_badge_result%%%",
+                "user_referral_kyc_passed": "%%%.memberShip.pointHistory.activity.user_referral_kyc_passed%%%",
+                "users__referee": "%%%.memberShip.pointHistory.activity.users__referee%%%"
             }
         }
     },
@@ -3284,9 +3286,20 @@
                             "overInstantCredit": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle.overInstantCredit%%%",
                             "investNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle.investNote%%%",
                             "pleaseNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle.pleaseNote%%%",
-                            "haveLinkedBank": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle.haveLinkedBank%%%",
-                            "noLinkedBank": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle.noLinkedBank%%%",
-                            "needHelp": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle.needHelp%%%"
+                            "haveLinkedBank": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle.haveLinkedBank%%%"
+                        },
+                        "subTitleSplitDeposit": {
+                            "splitNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subTitleSplitDeposit.splitNote%%%",
+                            "investNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subTitleSplitDeposit.investNote%%%",
+                            "investNoteInstantCredit": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subTitleSplitDeposit.investNoteInstantCredit%%%",
+                            "pleaseNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subTitleSplitDeposit.pleaseNote%%%",
+                            "haveLinkedBank": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subTitleSplitDeposit.haveLinkedBank%%%"
+                        },
+                        "subTitleSplitInvestment": {
+                            "splitNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subTitleSplitInvestment.splitNote%%%",
+                            "investNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subTitleSplitInvestment.investNote%%%",
+                            "pleaseNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subTitleSplitInvestment.pleaseNote%%%",
+                            "haveLinkedBank": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subTitleSplitInvestment.haveLinkedBank%%%"
                         },
                         "noBankDesc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.noBankDesc%%%",
                         "updateBalanceNoteInWorkingTime": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.updateBalanceNoteInWorkingTime%%%",
@@ -3294,7 +3307,31 @@
                         "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.referNoteDesc%%%",
                         "checkListNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.checkListNote%%%",
                         "sendNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.sendNote%%%",
-                        "notAvailableAmount": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.notAvailableAmount%%%"
+                        "whySplitDeposit": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.whySplitDeposit%%%",
+                        "whySplitDepositDesc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.whySplitDepositDesc%%%",
+                        "notAvailableAmountDeposit2": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.notAvailableAmountDeposit2%%%",
+                        "whySplitInvestment": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.whySplitInvestment%%%",
+                        "whySplitInvestmentDesc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.whySplitInvestmentDesc%%%",
+                        "plaidSplitResultDeposit": {
+                            "investNoteSuccess1": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.investNoteSuccess1%%%",
+                            "investNoteSuccess2": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.investNoteSuccess2%%%",
+                            "investNoteSuccess3": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.investNoteSuccess3%%%",
+                            "splitNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.splitNote%%%",
+                            "investNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.investNote%%%",
+                            "transactionSuccess": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.transactionSuccess%%%",
+                            "transactionError": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.transactionError%%%"
+                        },
+                        "plaidSplitResultInvestment": {
+                            "splitNoteFail": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.splitNoteFail%%%",
+                            "investNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.investNote%%%",
+                            "investNoteUsingInstantCredit": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.investNoteUsingInstantCredit%%%",
+                            "reCreateCanceledOrder": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.reCreateCanceledOrder%%%",
+                            "investmentUsingInstantCredit": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.investmentUsingInstantCredit%%%",
+                            "trackInvestments": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.trackInvestments%%%",
+                            "investNoteSuccess": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.investNoteSuccess%%%",
+                            "transactionSuccess": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.transactionSuccess%%%",
+                            "transactionError": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.transactionError%%%"
+                        }
                     }
                 },
                 "zelle": "%%%.home1.lendingSection.confirm.zelle%%%",
@@ -4563,30 +4600,74 @@
         "noData": "%%%.notification.noData%%%"
     },
     "yourReferral": {
-        "invite": {
-            "emailPlaceholder": "%%%.yourReferral.invite.emailPlaceholder%%%",
-            "affiliateUser": "%%%.yourReferral.invite.affiliateUser%%%"
+        "inviteEmail": {
+            "emailPlaceholder": "%%%.yourReferral.inviteEmail.emailPlaceholder%%%",
+            "affiliateUser": "%%%.yourReferral.inviteEmail.affiliateUser%%%",
+            "inviteBtn": "%%%.yourReferral.inviteEmail.inviteBtn%%%",
+            "btn": "%%%.yourReferral.inviteEmail.btn%%%",
+            "sendInvitationsSuccess": "%%%.yourReferral.inviteEmail.sendInvitationsSuccess%%%",
+            "sendInvitationsFail": "%%%.yourReferral.inviteEmail.sendInvitationsFail%%%",
+            "maximum_invitation_email": "%%%.yourReferral.inviteEmail.maximum_invitation_email%%%"
         },
-        "list": {
-            "title": "%%%.yourReferral.list.title%%%",
-            "user_email": "%%%.yourReferral.list.user_email%%%",
-            "statusHtml": "%%%.yourReferral.list.statusHtml%%%",
-            "date": "%%%.yourReferral.list.date%%%",
-            "noRecord": "%%%.yourReferral.list.noRecord%%%"
+        "shareReferral": {
+            "codeTitle": "%%%.yourReferral.shareReferral.codeTitle%%%",
+            "copied": "%%%.yourReferral.shareReferral.copied%%%",
+            "success": "%%%.yourReferral.shareReferral.success%%%",
+            "failed": "%%%.yourReferral.shareReferral.failed%%%",
+            "duplicated": "%%%.yourReferral.shareReferral.duplicated%%%",
+            "fb": "%%%.yourReferral.shareReferral.fb%%%",
+            "tw": "%%%.yourReferral.shareReferral.tw%%%",
+            "shareFbSuccess": "%%%.yourReferral.shareReferral.shareFbSuccess%%%"
         },
-        "referral_history": {
-            "title": "%%%.yourReferral.referral_history.title%%%",
-            "user_email": "%%%.yourReferral.referral_history.user_email%%%",
-            "object_amount": "%%%.yourReferral.referral_history.object_amount%%%",
-            "object_type": "%%%.yourReferral.referral_history.object_type%%%",
-            "value": "%%%.yourReferral.referral_history.value%%%",
-            "created_at": "%%%.yourReferral.referral_history.created_at%%%",
-            "noRecord": "%%%.yourReferral.referral_history.noRecord%%%",
-            "valueDesc": "%%%.yourReferral.referral_history.valueDesc%%%"
+        "referralUsers": {
+            "title": "%%%.yourReferral.referralUsers.title%%%",
+            "headers": {
+                "email": "%%%.yourReferral.referralUsers.headers.email%%%",
+                "status": "%%%.yourReferral.referralUsers.headers.status%%%",
+                "statusDesc": "%%%.yourReferral.referralUsers.headers.statusDesc%%%",
+                "date": "%%%.yourReferral.referralUsers.headers.date%%%"
+            },
+            "status": {
+                "pending": "%%%.yourReferral.referralUsers.status.pending%%%",
+                "registered": "%%%.yourReferral.referralUsers.status.registered%%%",
+                "expired": "%%%.yourReferral.referralUsers.status.expired%%%",
+                "kyc": "%%%.yourReferral.referralUsers.status.kyc%%%",
+                "verified_email": "%%%.yourReferral.referralUsers.status.verified_email%%%",
+                "deposit": "%%%.yourReferral.referralUsers.status.deposit%%%"
+            },
+            "stepRemainGetBonus": "%%%.yourReferral.referralUsers.stepRemainGetBonus%%%",
+            "headHunterBadge": {
+                "title": "%%%.yourReferral.referralUsers.headHunterBadge.title%%%",
+                "content": "%%%.yourReferral.referralUsers.headHunterBadge.content%%%",
+                "referring_friend_10_referees": "%%%.yourReferral.referralUsers.headHunterBadge.referring_friend_10_referees%%%",
+                "referring_friend_50_referees": "%%%.yourReferral.referralUsers.headHunterBadge.referring_friend_50_referees%%%",
+                "referring_friend_100_referees": "%%%.yourReferral.referralUsers.headHunterBadge.referring_friend_100_referees%%%"
+            },
+            "luminaryBadge": {
+                "title": "%%%.yourReferral.referralUsers.luminaryBadge.title%%%",
+                "content": "%%%.yourReferral.referralUsers.luminaryBadge.content%%%",
+                "referring_invest_100k": "%%%.yourReferral.referralUsers.luminaryBadge.referring_invest_100k%%%",
+                "referring_invest_200k": "%%%.yourReferral.referralUsers.luminaryBadge.referring_invest_200k%%%",
+                "referring_invest_500k": "%%%.yourReferral.referralUsers.luminaryBadge.referring_invest_500k%%%"
+            }
+        },
+        "referralHistory": {
+            "title": "%%%.yourReferral.referralHistory.title%%%",
+            "headers": {
+                "email": "%%%.yourReferral.referralHistory.headers.email%%%",
+                "friendEarnings": "%%%.yourReferral.referralHistory.headers.friendEarnings%%%",
+                "type": "%%%.yourReferral.referralHistory.headers.type%%%",
+                "yourEarnings": "%%%.yourReferral.referralHistory.headers.yourEarnings%%%",
+                "yourEarningsDesc": "%%%.yourReferral.referralHistory.headers.yourEarningsDesc%%%",
+                "date": "%%%.yourReferral.referralHistory.headers.date%%%"
+            }
         },
         "banner": {
+            "title": "%%%.yourReferral.banner.title%%%",
             "desc": "%%%.yourReferral.banner.desc%%%",
+            "titleNonUS": "%%%.yourReferral.banner.titleNonUS%%%",
             "descNonUS": "%%%.yourReferral.banner.descNonUS%%%",
+            "greeting": "%%%.yourReferral.banner.greeting%%%",
             "invite": "%%%.yourReferral.banner.invite%%%"
         },
         "whatForYou": {
@@ -4598,29 +4679,31 @@
                 "3": "%%%.yourReferral.whatForYou.formula.3%%%",
                 "4": "%%%.yourReferral.whatForYou.formula.4%%%"
             },
-            "desc": "%%%.yourReferral.whatForYou.desc%%%",
-            "descNonUS": "%%%.yourReferral.whatForYou.descNonUS%%%",
-            "data": {
-                "0": {
-                    "title": "%%%.yourReferral.whatForYou.data.0.title%%%",
-                    "desc": "%%%.yourReferral.whatForYou.data.0.desc%%%"
-                },
-                "1": {
-                    "title": "%%%.yourReferral.whatForYou.data.1.title%%%",
-                    "desc": "%%%.yourReferral.whatForYou.data.1.desc%%%"
-                },
-                "2": {
-                    "title": "%%%.yourReferral.whatForYou.data.2.title%%%",
-                    "desc": "%%%.yourReferral.whatForYou.data.2.desc%%%"
-                }
-            },
             "trialBonus": "%%%.yourReferral.whatForYou.trialBonus%%%"
         },
-        "whatForThem": {
-            "title": "%%%.yourReferral.whatForThem.title%%%",
-            "content": {
-                "left": "%%%.yourReferral.whatForThem.content.left%%%",
-                "right": "%%%.yourReferral.whatForThem.content.right%%%"
+        "youBothWin": {
+            "title": "%%%.yourReferral.youBothWin.title%%%",
+            "data": {
+                "0": {
+                    "title": "%%%.yourReferral.youBothWin.data.0.title%%%",
+                    "desc": "%%%.yourReferral.youBothWin.data.0.desc%%%"
+                },
+                "1": {
+                    "title": "%%%.yourReferral.youBothWin.data.1.title%%%",
+                    "desc": "%%%.yourReferral.youBothWin.data.1.desc%%%"
+                },
+                "2": {
+                    "title": "%%%.yourReferral.youBothWin.data.2.title%%%",
+                    "desc": "%%%.yourReferral.youBothWin.data.2.desc%%%"
+                },
+                "3": {
+                    "title": "%%%.yourReferral.youBothWin.data.3.title%%%",
+                    "desc": "%%%.yourReferral.youBothWin.data.3.desc%%%"
+                },
+                "4": {
+                    "title": "%%%.yourReferral.youBothWin.data.4.title%%%",
+                    "desc": "%%%.yourReferral.youBothWin.data.4.desc%%%"
+                }
             }
         },
         "howItWorks": {
@@ -4653,25 +4736,10 @@
         "terms": {
             "normal": "%%%.yourReferral.terms.normal%%%",
             "normalNonUS": "%%%.yourReferral.terms.normalNonUS%%%"
-        }
-    },
-    "landingProReferral": {
-        "inviteEmail": {
-            "btn": "%%%.landingProReferral.inviteEmail.btn%%%",
-            "sendInvitationsSuccess": "%%%.landingProReferral.inviteEmail.sendInvitationsSuccess%%%",
-            "sendInvitationsFail": "%%%.landingProReferral.inviteEmail.sendInvitationsFail%%%"
         },
-        "referral": {
-            "placeholder": "%%%.landingProReferral.referral.placeholder%%%",
-            "btn": "%%%.landingProReferral.referral.btn%%%",
-            "copied": "%%%.landingProReferral.referral.copied%%%"
-        },
-        "shares": {
-            "fb": "%%%.landingProReferral.shares.fb%%%",
-            "tw": "%%%.landingProReferral.shares.tw%%%"
-        },
-        "editReferral": {
-            "success": "%%%.landingProReferral.editReferral.success%%%"
+        "materials": {
+            "title": "%%%.yourReferral.materials.title%%%",
+            "desc": "%%%.yourReferral.materials.desc%%%"
         }
     },
     "static_page": {

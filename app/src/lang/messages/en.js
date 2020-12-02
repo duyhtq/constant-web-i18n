@@ -320,10 +320,12 @@ export default {
         membershipStatus: 'Membership status',
       },
       activity: {
-        collateral_loan_matched: 'borrowed ${amount}',
-        lo_investment_investment: 'invested ${amount}',
-        saving_termdeposit: 'invested ${amount}',
-        user_badge_result: 'achieved {badgeName} badge',
+        collateral_loan_matched: 'Borrowed ${amount}',
+        lo_investment_investment: 'Invested ${amount}',
+        saving_termdeposit: 'Invested ${amount}',
+        user_badge_result: 'Achieved {badgeName} Badge',
+        user_referral_kyc_passed: 'Your referee passed KYC – you\'ve earned 200 points',
+        users__referee: 'Your referee deposited at least $50 – you\'ve upgraded to Diamond for 30 days',
       },
     },
   },
@@ -3254,15 +3256,40 @@ export default {
               investNote: '<p>Get an instant 4% APY on any Plaid ACH deposit up to ${instantAmount}. Your investment of ${amount} at {interest}% for {term} days will start after your ACH clears.</p>',
               pleaseNote: '<p>Please note: ACH transfers are available for linked US bank accounts only, and can take <strong>up to 5 business days</strong> to clear. Please don’t send us an ACH from an unlinked bank account or it will be rejected.</p>',
               haveLinkedBank: '<p>Please choose a linked bank account below and then click <strong>Submit</strong>.</p>',
-              noLinkedBank: '<p>Please click <strong>+ Add bank</strong> on the right to link a US bank account.</p>',
-              needHelp: '<p>Need help? Check out <a target="_blank" href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">our linked banking and ACH transfers guide.</a></p>',
+              // noLinkedBank: '<p>Please click <strong>+ Add bank</strong> on the right to link a US bank account.</p>',
+              // needHelp: '<p><a target="_blank" href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">Need help?</a></p>',
+            },
+            subTitleSplitDeposit: {
+              splitNote:`
+                <p>The maximum amount you can send via ACH in a single transaction is {amountPerTransaction}.</p>
+                <p>Instead, you can split your deposit over {numTransaction} orders:</p>
+              `,
+              investNote: `
+                    <p>Each order will be processed under the same linked bank account you choose from below.</p>
+                `,
+              investNoteInstantCredit:`
+                <p>While your ACH clears, you’ll earn {flexRate}% APY instantly on \${instantAmount} through our Instant Credit program. You can also reinvest Instant Credit in a fixed-term loan for up to 7% APR.</p>
+              `,
+              pleaseNote: '<p>Please note: ACH transfers are available for linked US bank accounts only and each ACH deposit can take <strong>up to 5 business days</strong> to clear.</p>',
+              haveLinkedBank: '<p>To confirm your deposit, please choose a linked bank account below and then click <strong>Submit</strong>.</p>',
+            },
+            subTitleSplitInvestment: {
+              splitNote:`
+                <p>The maximum amount you can send via ACH in a single transaction is {amountPerTransaction}.</p>
+                <p>Instead, you can split your investment over {numTransaction} orders:</p>
+              `,
+              investNote: `
+                    <p>The funds for each investment will be taken from the same linked bank account you choose from below.</p>
+                `,
+              pleaseNote: '<p>Please note: ACH transfers are available for linked US bank accounts only and each ACH transaction can take <strong>up to 5 business days</strong> to clear.</p>',
+              haveLinkedBank: '<p>To split your investments, please choose a linked bank account below and then click <strong>Submit</strong>.</p>',
             },
             noBankDesc: '<p>Link a US bank account to do ACH transfers through our partner, Plaid.</p><p>You don’t have any linked bank accounts at the moment. To link a US bank account to do ACH transfers, please click <strong>+ Add new bank</strong>.</p>',
             updateBalanceNoteInWorkingTime: 'Please note it might take <strong>up to five business days</strong> for the ACH transfer to complete and show in your account.',
             confirmMessage: `
-              <p>You're about to deposit {amount} via Plaid ACH. When you click Confirm, the transfer will begin and you won’t be able to cancel it.</p>
-              <p>Please ensure you have sufficient funds in your linked bank account or your ACH might be reversed and your Instant Credit benefit banned for 30 days.</p>
-              <p>When you’re ready, please click Confirm to start your transfer.</p>
+              <p class="text-left">You're about to deposit {amount} via Plaid ACH. When you click Confirm, the transfer will begin and you won’t be able to cancel it.</p>
+              <p class="text-left">Please ensure you have sufficient funds in your linked bank account or your ACH might be reversed and your Instant Credit benefit banned for 30 days.</p>
+              <p class="text-left">When you’re ready, please click Confirm to start your transfer.</p>
             `,
             referNoteDesc: `
               <h4>By clicking Submit, you confirm to</h4>
@@ -3271,13 +3298,67 @@ export default {
               <ul>
                 <li>You have linked a US checking account thats supports outgoing ACH transfers.</li>
                 <li>You have sufficient funds for the transfer in your linked US bank account.</li>
-                <li>The amount you’re sending is less than \${max}.</li>
+                <li>The amount you’re sending is less than \${max}, or if higher, you’ve agreed to split your transfer into separate transactions.</li>
                 <li>You expect to keep the same linked bank account(s) for the next 60 days.</li>
                 <li>You've read <a target="_blank" href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">our linked banking and ACH transfers guide.</a></li>
               </ul>
             `,
             sendNote: "<p>Please send your funds <strong>within 3 business days</strong> otherwise this transaction will time-out for the sake of security. If you need more time, please re-enter your investment amount when you're ready.</p><p>Please <strong>don't send</strong> an ACH via any method other than linking your US bank account or we won't be able to accept or trace it (and it will likely return to your bank).</p>",
-            notAvailableAmount: '<p>The maximum amount you can send via ACH is {amount}. Please choose a wire transfer. For more information on ACH limits, please read our <a target="_blank" href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">Guide to Linking US Bank Accounts.</a></p>'
+            // notAvailableAmountDeposit: `
+            //     <p>The maximum amount you can send via ACH in a single transaction is {amountPerTransaction}.</p>
+            //     <p>To deposit {amount}, we can split your deposit into {numTransaction} separate orders, as below:</p>
+            //   `,
+            whySplitDeposit: `
+              Why split your deposit?
+            `,
+            whySplitDepositDesc: `
+              <div>This means you don’t need to create several deposit orders. However, please note your bank may charge you for each ACH transaction. Once you agree to split your deposit into separate orders, you can’t cancel it.</div>
+            `,
+            notAvailableAmountDeposit2: `
+                <p>Would you like to deposit via split transactions?</p>
+              `,
+            // notAvailableAmountInvestment: `
+            //     <p>The maximum amount you can send via ACH in a single transaction is {amountPerTransaction}.</p>
+            //     <p>To invest {amount}, we can automatically split your investment into {numTransaction} separate orders, as below:</p>
+            //   `,
+            whySplitInvestment: `
+              Why split your investment?
+            `,
+            whySplitInvestmentDesc: `
+              <div>This means you don’t need to create several orders manually. However, please note your bank may charge you for each ACH transaction. Once you agree to split your investments, you won’t be able to cancel.</div>
+            `,
+            // notAvailableAmountInvestment2: `
+            //     <p>This means you don’t need to create several orders manually. However, please note your bank may charge you for each ACH transaction. Once you agree to split your investments, you won’t be able to cancel.</p>
+            //     <p>Would you like to split your investment?</p>
+            //   `,
+            plaidSplitResultDeposit: {
+              investNoteSuccess1: `<p>Your deposit of \${amount} was processed successfully.</p>`,
+              investNoteSuccess2: `<p>You’re now earning 4% APY on \${instantAmount} of Instant Credit. You can also reinvest your Instant Credit in a fixed-term loan for up to 7% APR.</p>`,
+              investNoteSuccess3: `<p>ACH deposits take 3-5 business days to clear (not including weekends) and your funds will be available for withdrawal 7 days <strong>after</strong> they clear.</p>`,
+              splitNote:'<p>Sorry, we couldn’t process all the transactions for your deposit. Here’s a summary:</p>',
+              investNote: `
+                <p>You’re now earning 4% APY on \${instantAmount} of Instant Credit. You can also reinvest your Instant Credit in a fixed-term loan for up to 7% APR.</p>
+                <p>ACH deposits take 3-5 business days to clear (not including weekends) and your funds will be available for withdrawal 7 days <strong>after</strong> the transaction clears.</p>
+                <p>To transfer the remaining \${unsuccessfulAmount} for your deposit, <a href="https://www.myconstant.com/flex" class="underline">create another deposit order</a>.</p>
+              `,
+              transactionSuccess: ' (Successful)',
+              transactionError: ' (Failed due to {error})'
+            },
+            plaidSplitResultInvestment: {
+              splitNoteFail:'<p>Sorry, we couldn’t process all the transfers for your investments. Here’s a summary:</p>',
+              investNote: `
+                <p>Please note ACH transfers take 3-5 business days to clear and your investments will start as soon as we receive your funds.</p>
+              `,
+              investNoteUsingInstantCredit: `
+                <p>Please note ACH transfers take 3-5 business days to clear and your other investments will start as soon as we receive your funds.</p>
+              `,
+              reCreateCanceledOrder: '<p>To recreate your canceled order, <a href="https://myconstant.com/invest" class="underline">please visit our invest page</a>.</p>',
+              investmentUsingInstantCredit: '<p>The investment below has already begun using your Instant Credit:</p>',
+              trackInvestments: '<p>To track investments, please visit your <a href="https://myconstant.com/accounts" class="underline">Accounts page</a>.</p>',
+              investNoteSuccess: '<p>The transfer(s) for your investment(s) were processed successfully.</p>',
+              transactionSuccess: '(Successful)',
+              transactionError: ' (Canceled due to {error})'
+            },
           }
         },
         zelle: "          <p>Amount: {amount} USD</p>          <p>Send to: <strong>finance@myconstant.com</strong></p>          <p>Full name: <strong>Const LLC</strong></p>          <p>Type: <strong>Personal Account</strong></p>          <br /><br />          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>        ",
@@ -4553,7 +4634,7 @@ export default {
       title: 'Emailed invites',
       user_email: 'Email',
       statusHtml: 'Status',
-      date: 'Date & Time',
+      date: 'Date',
       noRecord: 'You have not referred anyone yet. Start earning now!',
     },
     referralHistory: {
@@ -4617,37 +4698,94 @@ export default {
     noData: 'No notifications'
   },
   yourReferral: {
-    invite: {
-      emailPlaceholder: 'Enter an email address',
-      affiliateUser: '      <p>      You’re already registered under our affiliate program so can’t refer here. Please visit your <a href="/affiliates" class="underline bold">affiliate dashboard</a> to get your unique affiliate link, sharing tools, and to track your earnings.      </p>      '
+    inviteEmail: {
+      emailPlaceholder: 'Enter email addresses (seperate by comma)',
+      affiliateUser: `
+        <p>You’re already registered under our affiliate program so can’t refer here. Please visit your <a href="/affiliates" class="underline bold">affiliate dashboard</a> to get your unique affiliate link, sharing tools, and to track your earnings.</p>
+      `,
+      inviteBtn: 'Invite',
+      btn: 'Invite now',
+      sendInvitationsSuccess: 'Send Invitations Successfully!',
+      sendInvitationsFail: 'Send Invitations Failed!',
+      maximum_invitation_email: 'Maximun invitation emails',
     },
-    list: {
+    shareReferral: {
+      codeTitle: 'Your invitation code:',
+      copied: 'Referral link copied to clipboard.',
+      success: 'Your referral code has been updated successfully',
+      failed: 'Update referral code failed',
+      duplicated: 'Sorry, someone has already created that referral code. Please choose another.',
+      fb: 'Share on Facebook',
+      tw: 'Share on Twitter',
+      shareFbSuccess: 'Share referral link success.',
+    },
+    referralUsers: {
       title: 'Invited friends',
-      user_email: 'Email',
-      statusHtml: 'Status',
-      date: 'Date & Time',
-      noRecord: 'You have not referred anyone yet. Invite your friends and start earning now'
+      headers: {
+        email: 'Email',
+        status: 'Status',
+        statusDesc: 'The status (written in gold) shows your referee’s latest action. The bars below show the remaining actions to earn your reward. A blue bar is a complete action while a grey bar is an incomplete action. Once your referee completes all actions, you receive your reward and the status will turn grey.',
+        date: 'Date',
+      },
+      status: {
+        pending: 'Sent',
+        registered: 'Signed up',
+        expired: 'Expired',
+        kyc: 'Passed KYC',
+        verified_email: 'Verified email',
+        deposit: 'Made a deposit',
+      },
+      stepRemainGetBonus: '{step} step{plural} away to get ${referralReward} bonus',
+      headHunterBadge: {
+        title: 'Headhunter badges',
+        content: `
+          <div>You referred</div>
+          <div><span>{numReferees}</span> /{maxReferees}</div>
+          <div>investors</div>
+        `,
+        referring_friend_10_referees: '<strong style="color:#F7B500;">{numReferees} referees left</strong> to earn ${rewardAmount} & a bronze Headhunter badge',
+        referring_friend_50_referees: '<strong style="color:#F7B500;">{numReferees} referees left</strong> to earn ${rewardAmount} & a silver Headhunter badge',
+        referring_friend_100_referees: '<strong style="color:#F7B500;">{numReferees} referees left</strong> to earn ${rewardAmount} & a gold Headhunter badge',
+      },
+      luminaryBadge: {
+        title: 'Luminary badges',
+        content: `
+          <div>Your referees invested</div>
+          <div><span>{investedAmount}</span></div>
+          <div>/ {maxInvestAmount} USD</div>
+        `,
+        referring_invest_100k: '<strong style="color:#F7B500;">{investAmount} USD left</strong> to earn ${rewardAmount} & a bronze Luminary badge',
+        referring_invest_200k: '<strong style="color:#F7B500;">{investAmount} USD left</strong> to earn ${rewardAmount} & a silver Luminary badge',
+        referring_invest_500k: '<strong style="color:#F7B500;">{investAmount} USD left</strong> to earn ${rewardAmount} & a gold Luminary badge',
+      }
     },
-    referral_history: {
-      title: 'Referral history',
-      user_email: 'Friend’s email address',
-      object_amount: "Friend's earnings",
-      object_type: 'Type',
-      value: 'Your earnings ',
-      created_at: 'Date',
-      noRecord: 'You have not referred anyone yet. Invite your friends and start earning now',
-      valueDesc: 'As soon as you’ve earned at least 1 cent, you can track your earnings below.'
+    referralHistory: {
+      title: 'Latest referral history',
+      headers: {
+        email: 'Email',
+        friendEarnings: 'Friend\'s earnings',
+        type: 'Type',
+        yourEarnings: 'Your earnings',
+        yourEarningsDesc: 'As soon as you’ve earned at least 1 cent, you can track your earnings below.',
+        date: 'Date',
+      },
     },
     banner: {
-      desc: '        <h2>Get a free ${referralReward} bonus for every friend you refer.</h2>        <p>Tell your friends and family about us and get ${referralReward} free for each person who signs up and deposits USD (US citizens only). You also earn <strong>{referralFlexReward}% of their Flex interest</strong>, compounded and paid every second. Refer as many friends as you like, however you like, and <strong>grow your money together</strong>.</p>      ',
-      descNonUS: `
-        <h2>Refer friends and earn {referralFlexReward}% of their Flex interest</h2>
-        <p>Tell your friends and family about us and <strong style="color:#F7B500;">get {referralFlexReward}% of their Flex interest</strong> for each person who signs up and deposits USD. Refer as many friends as you like, however you like, and <strong>grow your money together</strong>.</p>
+      title: `<h2>Get a free \${referralReward} bonus for every friend you refer.</h2>`,
+      desc: `
+        <p>Tell your friends and family about us and get \${referralReward} free for each person who signs up and deposits USD (US citizens only). You also earn <strong style="color:#F7B500;">{referralFlexReward}% of their Flex interest</strong>, compounded and paid every second. Refer as many friends as you like, however you like, and <strong style="color:#F7B500;">grow your money together</strong>.</p>
       `,
-      invite: 'Invite now'
+      titleNonUS:`
+        <h2>Refer friends and earn <br/>{referralFlexReward}% of their Flex interest</h2>
+      `,
+      descNonUS: `
+        <p>Tell your friends and family about us and <strong style="color:#F7B500;">get {referralFlexReward}% of their Flex interest</strong> for each person who signs up and deposits USD. Refer as many friends as you like, however you like, and <strong style="color:#F7B500;">grow your money together</strong>.</p>
+      `,
+      greeting: `<h2>Hello {name},</h2>`,
+      invite: 'Invite friends'
     },
     whatForYou: {
-      title: 'What’s in it for you?',
+      title: 'Share the love and we’ll share the cash',
       formula: {
         '0': 'For every friend who signs up and deposits USD',
         '1': ' ',
@@ -4655,31 +4793,56 @@ export default {
         '3': ' ',
         '4': 'for your friend if they’re a US resident'
       },
-      desc: '        <div class="section-desc-title">INVITE FRIENDS, EARN TOGETHER</div>        <div><strong>Earn ${referralReward} for every friend who signs up and deposits USD</strong>, paid instantly, and with no limits.</div>        <div><strong>Then earn {referralFlexReward}% of their Flex interest</strong>, capped at a generous $1,000,000.</div>        <div><strong>Your friend gets a 30-day ${kYCTrialAmount} trial bonus</strong> and keeps the interest (US referees only).</div>      ',
-      descNonUS: '        <div class="section-desc-title">INVITE FRIENDS, EARN TOGETHER</div>        <div><strong>Earn {referralFlexReward}% of their Flex interest</strong>, capped at a generous $1,000,000.</div>        <div><strong>Your friend gets a 30-day ${kYCTrialAmount} trial bonus</strong> and keeps the interest (US referees only).</div>      ',
-      data: {
-        '0': {
-          title: 'EARN TOGETHER',
-          desc: 'With you and your friends’ earnings linked, you can grow your money faster, while your friends can refer people to multiple their earnings, too.'
-        },
-        '1': {
-          title: 'HELP PEOPLE INVEST BETTER',
-          desc: 'Help your friends and family overcome the challenges of today’s investment market. MyConstant is an ideal way to diversify and enjoy secured returns without fees.'
-        },
-        '2': {
-          title: 'IMPROVE THE PLATFORM',
-          desc: 'Every new customer we welcome helps fuel new features and products, giving you a range of investment options, rates, and tools to reach all your financial goals. '
-        }
-      },
+      // desc: '        <div class="section-desc-title">INVITE FRIENDS, EARN TOGETHER</div>        <div><strong>Earn ${referralReward} for every friend who signs up and deposits USD</strong>, paid instantly, and with no limits.</div>        <div><strong>Then earn {referralFlexReward}% of their Flex interest</strong>, capped at a generous $1,000,000.</div>        <div><strong>Your friend gets a 30-day ${kYCTrialAmount} trial bonus</strong> and keeps the interest (US referees only).</div>      ',
+      // descNonUS: '        <div class="section-desc-title">INVITE FRIENDS, EARN TOGETHER</div>        <div><strong>Earn {referralFlexReward}% of their Flex interest</strong>, capped at a generous $1,000,000.</div>        <div><strong>Your friend gets a 30-day ${kYCTrialAmount} trial bonus</strong> and keeps the interest (US referees only).</div>      ',
+      // data: {
+      //   '0': {
+      //     title: 'EARN TOGETHER',
+      //     desc: 'With you and your friends’ earnings linked, you can grow your money faster, while your friends can refer people to multiple their earnings, too.'
+      //   },
+      //   '1': {
+      //     title: 'HELP PEOPLE INVEST BETTER',
+      //     desc: 'Help your friends and family overcome the challenges of today’s investment market. MyConstant is an ideal way to diversify and enjoy secured returns without fees.'
+      //   },
+      //   '2': {
+      //     title: 'IMPROVE THE PLATFORM',
+      //     desc: 'Every new customer we welcome helps fuel new features and products, giving you a range of investment options, rates, and tools to reach all your financial goals. '
+      //   }
+      // },
       trialBonus: 'a ${kYCTrialAmount} trial bonus'
     },
-    whatForThem: {
-      title: 'What’s in it for them?',
-      content: {
-        left: '          <p class="content-title">${kYCTrialAmount} trial bonus</p>          <p class="content-desc">When your referree signs up and passes KYC, we’ll deposit a ${kYCTrialAmount} bonus in their account. This lasts for 30 days*, at the end of which, we reclaim the bonus but your referee keeps all the interest.</p>          <p class="content-desc font-italic">*30-day trial bonus (US residents only).</p>        ',
-        right: '          <div>            <div class="content-title">4% APY</div>            <p class="content-desc">on all <strong>Flex</strong> deposits</p>          </div>          <div>            <div class="content-title">{rate}% APR</div>            <p class="content-desc">on <strong>crypto-backed</strong> investments</p>          </div>          <div>            <div class="content-title">11% APR</div>            <p class="content-desc">on <strong>Loan Originator</strong> investments</p>          </div>        '
+    youBothWin: {
+      title: 'Invite friends and you both win',
+      data: {
+        0: {
+          title: 'GET THE BEST SERVICE',
+          desc: 'Loved by 1,000s of customers, with a <strong>4.7/5 rating on Trustpilot</strong> across 600+ reviews.'
+        },
+        1: {
+          title: 'EARN OUR BEST RATES',
+          desc: 'Beat the banks and inflation with interest rates of up to 7% APR. Earn <strong>20x more</strong> than a CD.'
+        },
+        2: {
+          title: 'MULTIPLY YOUR EARNINGS',
+          desc: 'Refer as many people as you like and <strong>get paid 10%</strong> on all their Flex earnings, capped at $1,000,000.'
+        },
+        3: {
+          title: 'PROFIT IN ANY MARKET',
+          desc: '<trong>Earn consistent returns</trong> despite the economic climate, backed by collateral that protects your funds.'
+        },
+        4: {
+          title: 'GET HELP WHEN YOU NEED IT',
+          desc: 'With offices around the world, we’re here to help day or night, regardless of your location.'
+        },
       }
     },
+    // whatForThem: {
+    //   title: 'What’s in it for them?',
+    //   content: {
+    //     left: '          <p class="content-title">${kYCTrialAmount} trial bonus</p>          <p class="content-desc">When your referree signs up and passes KYC, we’ll deposit a ${kYCTrialAmount} bonus in their account. This lasts for 30 days*, at the end of which, we reclaim the bonus but your referee keeps all the interest.</p>          <p class="content-desc font-italic">*30-day trial bonus (US residents only).</p>        ',
+    //     right: '          <div>            <div class="content-title">4% APY</div>            <p class="content-desc">on all <strong>Flex</strong> deposits</p>          </div>          <div>            <div class="content-title">{rate}% APR</div>            <p class="content-desc">on <strong>crypto-backed</strong> investments</p>          </div>          <div>            <div class="content-title">11% APR</div>            <p class="content-desc">on <strong>Loan Originator</strong> investments</p>          </div>        '
+    //   }
+    // },
     howItWorks: {
       title: 'How it works',
       data: {
@@ -4710,22 +4873,26 @@ export default {
     terms: {
       normal: '        <h3 class="semiBold">Terms and Conditions</h3>        <ol>          <li><p>To qualify for the ${referralReward} bonus, your referee must be a US citizen.</p></li>          <li><p>The bonus is paid when your referee signs up, passes KYC, and deposits USD.</p></li>          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>          <li><p>Referral interest is paid to you by MyConstant and does not deduct from your friends’ earned Flex interest.</p></li>          <li>            <p>The amount you earn depends on how your friends use the platform:</p>            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>          </li>          <li><p>You can invite as many friends as you like.</p></li>          <li><p>Your referral earnings are paid in USD, directly into your MyConstant account.</p></li>          <li><p>The maximum you can earn is $1,000,000.</p></li>          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won\'t earn interest but on the 365th one you will.</p></li>          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>          <li><p>MyConstant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>        </ol>        <p class="bold effective">Effective as of {date}</p>      ',
       normalNonUS: `        <h3 class="semiBold">Terms and Conditions</h3>        <ol><li><p>Your earning is paid after your referee makes the first fiat deposits.</p></li>          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>          <li><p>Referral interest is paid to you by MyConstant and does not deduct from your friends’ earned Flex interest.</p></li>          <li>            <p>The amount you earn depends on how your friends use the platform:</p>            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>          </li>          <li><p>You can invite as many friends as you like.</p></li>          <li><p>Your referral earnings are paid in USD, directly into your MyConstant account.</p></li>          <li><p>The maximum you can earn is $1,000,000.</p></li>          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p></li>          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>          <li><p>MyConstant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>        </ol>        <p class="bold effective">Effective as of {date}</p>      `
+    },
+    materials: {
+      title: 'We make referring easy',
+      desc: 'Check out <strong>our library of free resources</strong> to refer more friends and earn bigger rewards. Our blogs and downloadable materials make referring friends a piece of cake.'
     }
   },
-  landingProReferral: {
-    inviteEmail: {
-      btn: 'Invite',
-      sendInvitationsSuccess: 'Send Invitations Successfully!',
-      sendInvitationsFail: 'Send Invitations Failed!',
-    },
-    referral: {
-      placeholder: 'https://myconstant.com/?ref=1AcXa2',
-      btn: 'Copy',
-      copied: 'Referral link copied to clipboard.'
-    },
-    shares: { fb: 'Share on Facebook', tw: 'Share on Twitter' },
-    editReferral: { success: 'Your referral code has been updated successfully' }
-  },
+  // landingProReferral: {
+  // inviteEmail: {
+  //   btn: 'Invite',
+  //   sendInvitationsSuccess: 'Send Invitations Successfully!',
+  //   sendInvitationsFail: 'Send Invitations Failed!',
+  // },
+  // referral: {
+  //   placeholder: 'https://myconstant.com/?ref=1AcXa2',
+  //   btn: 'Copy',
+  //   copied: 'Referral link copied to clipboard.'
+  // },
+  // shares: { fb: 'Share on Facebook', tw: 'Share on Twitter' },
+  // editReferral: { success: 'Your referral code has been updated successfully' }
+  // },
   static_page: {
     AMLPolicy: 'Anti-Money Laundering Agreement',
     privacyPolicy: 'Privacy Policy'

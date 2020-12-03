@@ -3309,7 +3309,6 @@
                         "sendNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.sendNote%%%",
                         "whySplitDeposit": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.whySplitDeposit%%%",
                         "whySplitDepositDesc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.whySplitDepositDesc%%%",
-                        "notAvailableAmountDeposit2": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.notAvailableAmountDeposit2%%%",
                         "whySplitInvestment": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.whySplitInvestment%%%",
                         "whySplitInvestmentDesc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.whySplitInvestmentDesc%%%",
                         "plaidSplitResultDeposit": {
@@ -3322,19 +3321,19 @@
                             "transactionError": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.transactionError%%%"
                         },
                         "plaidSplitResultInvestment": {
+                            "investNoteSuccess": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.investNoteSuccess%%%",
                             "splitNoteFail": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.splitNoteFail%%%",
                             "investNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.investNote%%%",
                             "investNoteUsingInstantCredit": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.investNoteUsingInstantCredit%%%",
                             "reCreateCanceledOrder": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.reCreateCanceledOrder%%%",
                             "investmentUsingInstantCredit": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.investmentUsingInstantCredit%%%",
                             "trackInvestments": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.trackInvestments%%%",
-                            "investNoteSuccess": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.investNoteSuccess%%%",
                             "transactionSuccess": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.transactionSuccess%%%",
                             "transactionError": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.transactionError%%%"
-                        }
+                        },
+                        "insufficient_bank_account": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.insufficient_bank_account%%%"
                     }
                 },
-                "zelle": "%%%.home1.lendingSection.confirm.zelle%%%",
                 "updateBalanceNoteInWorkingTime": "%%%.home1.lendingSection.confirm.updateBalanceNoteInWorkingTime%%%",
                 "bankChargeFeeInfo": "%%%.home1.lendingSection.confirm.bankChargeFeeInfo%%%",
                 "bankChargeFeeTitle": "%%%.home1.lendingSection.confirm.bankChargeFeeTitle%%%"

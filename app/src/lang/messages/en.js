@@ -3256,8 +3256,6 @@ export default {
               investNote: '<p>Get an instant 4% APY on any Plaid ACH deposit up to ${instantAmount}. Your investment of ${amount} at {interest}% for {term} days will start after your ACH clears.</p>',
               pleaseNote: '<p>Please note: ACH transfers are available for linked US bank accounts only, and can take <strong>up to 5 business days</strong> to clear. Please don’t send us an ACH from an unlinked bank account or it will be rejected.</p>',
               haveLinkedBank: '<p>Please choose a linked bank account below and then click <strong>Submit</strong>.</p>',
-              // noLinkedBank: '<p>Please click <strong>+ Add bank</strong> on the right to link a US bank account.</p>',
-              // needHelp: '<p><a target="_blank" href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">Need help?</a></p>',
             },
             subTitleSplitDeposit: {
               splitNote:`
@@ -3303,41 +3301,20 @@ export default {
                 <li>You've read <a target="_blank" href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">our linked banking and ACH transfers guide.</a></li>
               </ul>
             `,
-            sendNote: "<p>Please send your funds <strong>within 3 business days</strong> otherwise this transaction will time-out for the sake of security. If you need more time, please re-enter your investment amount when you're ready.</p><p>Please <strong>don't send</strong> an ACH via any method other than linking your US bank account or we won't be able to accept or trace it (and it will likely return to your bank).</p>",
-            // notAvailableAmountDeposit: `
-            //     <p>The maximum amount you can send via ACH in a single transaction is {amountPerTransaction}.</p>
-            //     <p>To deposit {amount}, we can split your deposit into {numTransaction} separate orders, as below:</p>
-            //   `,
-            whySplitDeposit: `
-              Why split your deposit?
+            sendNote: `
+                <p>Please send your funds <strong>within 3 business days</strong> otherwise this transaction will time-out for the sake of security. If you need more time, please re-enter your investment amount when you're ready.</p>
+                <p>Please <strong>don't send</strong> an ACH via any method other than linking your US bank account or we won't be able to accept or trace it (and it will likely return to your bank).</p>
             `,
-            whySplitDepositDesc: `
-              <div>This means you don’t need to create several deposit orders. However, please note your bank may charge you for each ACH transaction. Once you agree to split your deposit into separate orders, you can’t cancel it.</div>
-            `,
-            notAvailableAmountDeposit2: `
-                <p>Would you like to deposit via split transactions?</p>
-              `,
-            // notAvailableAmountInvestment: `
-            //     <p>The maximum amount you can send via ACH in a single transaction is {amountPerTransaction}.</p>
-            //     <p>To invest {amount}, we can automatically split your investment into {numTransaction} separate orders, as below:</p>
-            //   `,
-            whySplitInvestment: `
-              Why split your investment?
-            `,
-            whySplitInvestmentDesc: `
-              <div>This means you don’t need to create several orders manually. However, please note your bank may charge you for each ACH transaction. Once you agree to split your investments, you won’t be able to cancel.</div>
-            `,
-            // notAvailableAmountInvestment2: `
-            //     <p>This means you don’t need to create several orders manually. However, please note your bank may charge you for each ACH transaction. Once you agree to split your investments, you won’t be able to cancel.</p>
-            //     <p>Would you like to split your investment?</p>
-            //   `,
+            whySplitDeposit: 'Why split your deposit?',
+            whySplitDepositDesc: `<div>This means you don’t need to create several deposit orders. However, please note your bank may charge you for each ACH transaction. Once you agree to split your deposit into separate orders, you can’t cancel it.</div>`,
+            whySplitInvestment: 'Why split your investment?',
+            whySplitInvestmentDesc: `<div>This means you don’t need to create several orders manually. However, please note your bank may charge you for each ACH transaction. Once you agree to split your investments, you won’t be able to cancel.</div>`,
             plaidSplitResultDeposit: {
               investNoteSuccess1: `<p>Your deposit of \${amount} was processed successfully.</p>`,
               investNoteSuccess2: `<p>You’re now earning 4% APY on \${instantAmount} of Instant Credit. You can also reinvest your Instant Credit in a fixed-term loan for up to 7% APR.</p>`,
               investNoteSuccess3: `<p>ACH deposits take 3-5 business days to clear (not including weekends) and your funds will be available for withdrawal 7 days <strong>after</strong> they clear.</p>`,
               splitNote:'<p>Sorry, we couldn’t process all the transactions for your deposit. Here’s a summary:</p>',
               investNote: `
-                <p>You’re now earning 4% APY on \${instantAmount} of Instant Credit. You can also reinvest your Instant Credit in a fixed-term loan for up to 7% APR.</p>
                 <p>ACH deposits take 3-5 business days to clear (not including weekends) and your funds will be available for withdrawal 7 days <strong>after</strong> the transaction clears.</p>
                 <p>To transfer the remaining \${unsuccessfulAmount} for your deposit, <a href="https://www.myconstant.com/flex" class="underline">create another deposit order</a>.</p>
               `,
@@ -3345,23 +3322,19 @@ export default {
               transactionError: ' (Failed due to {error})'
             },
             plaidSplitResultInvestment: {
+              investNoteSuccess: '<p>The transfer(s) for your investment(s) were processed successfully.</p>',
               splitNoteFail:'<p>Sorry, we couldn’t process all the transfers for your investments. Here’s a summary:</p>',
-              investNote: `
-                <p>Please note ACH transfers take 3-5 business days to clear and your investments will start as soon as we receive your funds.</p>
-              `,
-              investNoteUsingInstantCredit: `
-                <p>Please note ACH transfers take 3-5 business days to clear and your other investments will start as soon as we receive your funds.</p>
-              `,
+              investNote: `<p>Please note ACH transfers take 3-5 business days to clear and your investments will start as soon as we receive your funds.</p>`,
+              investNoteUsingInstantCredit: `<p>Please note ACH transfers take 3-5 business days to clear and your other investments will start as soon as we receive your funds.</p>`,
               reCreateCanceledOrder: '<p>To recreate your canceled order, <a href="https://myconstant.com/invest" class="underline">please visit our invest page</a>.</p>',
               investmentUsingInstantCredit: '<p>The investment below has already begun using your Instant Credit:</p>',
               trackInvestments: '<p>To track investments, please visit your <a href="https://myconstant.com/accounts" class="underline">Accounts page</a>.</p>',
-              investNoteSuccess: '<p>The transfer(s) for your investment(s) were processed successfully.</p>',
               transactionSuccess: '(Successful)',
               transactionError: ' (Canceled due to {error})'
             },
+            insufficient_bank_account: '<p>Sorry, you appear to have insufficient funds in your linked bank account for this transfer. Please check the balance of your linked bank account and try again. If you think this is an error, please contact us on <a href="mailto:hello@myconstant.com" target="_blank" class="underline">hello@myconstant.com</a>.</p>',
           }
         },
-        zelle: "          <p>Amount: {amount} USD</p>          <p>Send to: <strong>finance@myconstant.com</strong></p>          <p>Full name: <strong>Const LLC</strong></p>          <p>Type: <strong>Personal Account</strong></p>          <br /><br />          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>        ",
         updateBalanceNoteInWorkingTime: "Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience.",
         bankChargeFeeInfo: `
           <h3 style="color: #757575;font-size: 16px; border-bottom: 1px solid #EEEEEE">Notice about intermediary bank fees</h3>
@@ -4283,7 +4256,14 @@ export default {
       head2: 'Funds received in your wallet*',
       head3: 'Fee'
     },
-    withdrawCryptoNote: '    <p class="title">* Please note that $2,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal will need to be approved manually. Larger the amount, longer the time.</p>    <p class="title">* $60,000 is the daily limitation for all the platform.</p>    <p class="title">* Withdrawal fee for DAI is still kept at 3.5% until further notice.</p>    <p class="title">* Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>    <div class="bold guarantee">Service time guarantee &#10004; </div>    <p>Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>    ',
+    withdrawCryptoNote: `
+        <p class="title">* Please note that $2,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal will need to be approved manually. Larger the amount, longer the time.</p>
+        <p class="title">* $60,000 is the daily limitation for all the platform.</p>
+        <p class="title">* Conversion fee for DAI is still kept at 3.5% until further notice.</p>
+        <p class="title">* Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>
+        <div class="bold guarantee">Service time guarantee &#10004; </div>
+        <p>Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>
+    `,
     withdrawCollateral: {
       head1: 'Collateral withdrawal',
       head2: 'Funds received in your wallet',

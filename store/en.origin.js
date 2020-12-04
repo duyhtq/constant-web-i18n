@@ -325,6 +325,8 @@
         "invested": "%%%.memberShip.invested%%%",
         "pointExpiredDate": "%%%.memberShip.pointExpiredDate%%%",
         "tierProgressDesc": "%%%.memberShip.tierProgressDesc%%%",
+        "fakeDiamondRemain": "%%%.memberShip.fakeDiamondRemain%%%",
+        "fakeDiamondNoRemain": "%%%.memberShip.fakeDiamondNoRemain%%%",
         "getLevelDate": "%%%.memberShip.getLevelDate%%%",
         "claimDaily": "%%%.memberShip.claimDaily%%%",
         "reviewMemberShip": {
@@ -2902,6 +2904,7 @@
             "timeLimit2": "%%%.home.transferCrypto.timeLimit2%%%",
             "validateMaxInput": "%%%.home.transferCrypto.validateMaxInput%%%",
             "confirmMsg": "%%%.home.transferCrypto.confirmMsg%%%",
+            "confirmMsgDai": "%%%.home.transferCrypto.confirmMsgDai%%%",
             "title": "%%%.home.transferCrypto.title%%%",
             "caption": "%%%.home.transferCrypto.caption%%%",
             "transferType": "%%%.home.transferCrypto.transferType%%%",

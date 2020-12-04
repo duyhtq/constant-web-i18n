@@ -299,6 +299,8 @@ export default {
     invested: 'Invested',
     pointExpiredDate: '{value} points will expire on {date}',
     tierProgressDesc: 'Earn {points} points by {date} to maintain {level} membership',
+    fakeDiamondRemain: 'Your free Diamond upgrade ends on {date}. Refer {number_upgrades_left} more people to extend your membership to {extend_date}.',
+    fakeDiamondNoRemain: 'Your sixth and final 30-day Diamond upgrade ends on {date}. To get full Diamond membership and benefits, please continue using the platform until you earn 100,000 points in 180 days.',
     getLevelDate: 'From {date}',
     claimDaily: 'Claim <strong>{amount} points</strong> Daily Login',
     reviewMemberShip: {
@@ -2866,6 +2868,13 @@ export default {
         <div class="textLeft">To address: {address}</div>
         <p class="textLeft">Do you want to proceed?</p>
       `,
+      confirmMsgDai: `
+        <div class="textLeft">You’re about to convert: {constAmount} CONST (USD) to {amount} {name}</div>
+        <div class="textLeft">Fee: \${fee}</div>
+        <div class="textLeft">Exchange rate: 1 DAI = 1.035 USD</div>
+        <div class="textLeft">To address: {address}</div>
+        <p class="textLeft">Do you want to proceed?</p>
+      `,
       title: 'Transfer',
       caption: 'SEND CONSTANT ANYWHERE',
       transferType: 'Transfer Type',
@@ -4259,7 +4268,7 @@ export default {
     withdrawCryptoNote: `
         <p class="title">* Please note that $2,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal will need to be approved manually. Larger the amount, longer the time.</p>
         <p class="title">* $60,000 is the daily limitation for all the platform.</p>
-        <p class="title">* Conversion fee for DAI is still kept at 3.5% until further notice.</p>
+        <p class="title">* Exchange rate for DAI: 1 DAI = 1.035 USD.</p>
         <p class="title">* Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>
         <div class="bold guarantee">Service time guarantee &#10004; </div>
         <p>Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>
@@ -4751,17 +4760,17 @@ export default {
       },
     },
     banner: {
-      title: `<h2>Get a free \${referralReward} bonus for every friend you refer.</h2>`,
+      title: `<h1>Get a free \${referralReward} bonus for every friend you refer.</h1>`,
       desc: `
         <p>Tell your friends and family about us and get \${referralReward} free for each person who signs up and deposits USD (US citizens only). You also earn <strong style="color:#F7B500;">{referralFlexReward}% of their Flex interest</strong>, compounded and paid every second. Refer as many friends as you like, however you like, and <strong style="color:#F7B500;">grow your money together</strong>.</p>
       `,
       titleNonUS:`
-        <h2>Refer friends and earn <br/>{referralFlexReward}% of their Flex interest</h2>
+        <h1>Refer friends and earn <br/>{referralFlexReward}% of their Flex interest</h1>
       `,
       descNonUS: `
         <p>Tell your friends and family about us and <strong style="color:#F7B500;">get {referralFlexReward}% of their Flex interest</strong> for each person who signs up and deposits USD. Refer as many friends as you like, however you like, and <strong style="color:#F7B500;">grow your money together</strong>.</p>
       `,
-      greeting: `<h2>Hello {name},</h2>`,
+      greeting: `<h1>Hello {name},</h1>`,
       invite: 'Invite friends'
     },
     whatForYou: {

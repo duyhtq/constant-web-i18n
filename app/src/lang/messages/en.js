@@ -4371,9 +4371,9 @@ export default {
   affiliates: {
     greetingForm: {
       title:`
-        <p class="header">Hello {name},</p>
-        <p>Welcome to your affiliate dashboard. You’ll find your affiliate link and sharing options below. You can track your earnings here, too.</p>
-        <p>Your total referral earnings to date: <strong>{totalEarned}</strong></p>
+        <h2>Hello {name},</h2>
+        <p><strong style="color:#F7B500;">Get $20</strong> for every person<sup>1</sup> you refer (no limits) plus <strong style="color:#F7B500;">20% of their Flex interest</strong> in their first year (capped at $1 million). Refer as many people as you like.</p>
+        <p class="reference"><sup>1</sup> To qualify for the $20 reward, your referee must be a US citizen (see Affiliate Terms and Conditions).</p>
       `,
       monthVolume: 'Your {month} volume',
       inviteFriends: 'Invite friends',
@@ -4389,8 +4389,8 @@ export default {
         <p class="reference"><sup>2</sup> To qualify for the \${affiliateReward} reward, your referee must be a US citizen (see Affiliate Terms and Conditions).</p>
         `,
       title: `
-        <p class="header">Get paid for your content.</p>
-        <p>Become a MyConstant affiliate and earn money on your content. <strong>Get \${affiliateReward}</strong> for every person<sup>1</sup> you refer plus <strong>20% of their Flex interest in their first year</strong> (capped at $1 million). Refer as many people as you like. </p>
+        <p class="header">You create, we pay</p>
+        <p>Become a MyConstant affiliate and get paid for your content. <strong style="color:#F7B500;">Get \${affiliateReward}</strong> for every person<sup>1</sup> you refer (no limits) plus <strong style="color:#F7B500;">20% of their Flex interest</strong> in their first year (capped at $1 million). Refer as many people as you like.</p>
         `,
       titleDesc: `
         <p class="reference"><sup>1</sup> To qualify for the \${affiliateReward} reward, your referee must be a US citizen (see Affiliate Terms and Conditions).</p>
@@ -4398,7 +4398,13 @@ export default {
       userName: 'Your name',
       userEmail: 'Your email address',
       notValidEmail: 'Invalid email address',
-      requestSuccess: 'Successfully Requested'
+      requestSuccess: 'Successfully Requested',
+      becomeAffiliate: 'Become our affiliate',
+    },
+    becomeAffiliateForm: {
+      title: 'Ready to start earning?',
+      desc: 'Join our affiliate program and start earning cash rewards on all of your content. Fill in the form on the right and we’ll be in touch within three business days.',
+      titleMobile: 'Become our affiliates.'
     },
     applicationForm: {
       title: `
@@ -4419,17 +4425,19 @@ export default {
       applyNow: 'Apply now',
       requestSuccess: 'Successfully Submitted',
       requestFailed: 'Failed To Submit',
+      emailExisted: 'Affiliate with this email already exists.',
+      notValidEmail: 'Invalid email address',
     },
-    summary: {
-      title: 'P2P lending done right. No fees. All loans secured.',
-      data: {
-        '0': { title: '8.5%', desc: 'average net annual return' },
-        '1': { title: '15,000+', desc: 'registered investors' },
-        '2': { title: '$15M+', desc: 'matched loan volume' }
-      }
-    },
+    // summary: {
+    //   title: 'P2P lending done right. No fees. All loans secured.',
+    //   data: {
+    //     '0': { title: '8.5%', desc: 'average net annual return' },
+    //     '1': { title: '15,000+', desc: 'registered investors' },
+    //     '2': { title: '$15M+', desc: 'matched loan volume' }
+    //   }
+    // },
     whyBecome: {
-      title: 'Why become an affiliate?',
+      title: 'The best rewards in the business',
       formula: {
         '0': 'per registration',
         '1': ' ',
@@ -4437,22 +4445,47 @@ export default {
         '3': ' ',
         '4': 'for your referee'
       },
-      desc: '        <div class="section-desc-title">YOU EARN MORE</div>        <div><strong>Earn ${affiliateReward} for every US citizen who registers</strong>, paid instantly after they make their first deposit, and with no limits.</div>        <div><strong>Then earn 20% of their Flex interest</strong>, paid every second, and capped at a generous $1,000,000.</div>        <div><strong>Your referee also gets a ${kYCTrialAmount} Flex trial</strong> when they pass KYC. We’ll take the trial funds back at the end of the month, but they’ll keep the interest.</div>      ',
-      data: {
-        '0': {
-          title: 'REWARD YOUR COMMUNITY',
-          desc: 'Your referees get a ${kYCTrialAmount} trial bonus and keep the interest when they sign up and pass KYC - with no obligation to invest. Your affiliate offers are an easy way to reward followers who engage with your content.'
-        },
-        '1': {
-          title: 'HELP PEOPLE INVEST BETTER',
-          desc: 'Help your community overcome the challenges of today’s investment market. MyConstant is an ideal way to diversify and enjoy secured returns of up to 7% APR without fees.'
-        },
-        '2': {
-          title: 'CUT THROUGH THE NOISE',
-          desc: 'Whether you already monetize or not, our creative team will help boost the value and impact of your content. We can advise on SEO, copywriting, marketing, and more.'
-        }
-      },
+      // desc: '        <div class="section-desc-title">YOU EARN MORE</div>        <div><strong>Earn ${affiliateReward} for every US citizen who registers</strong>, paid instantly after they make their first deposit, and with no limits.</div>        <div><strong>Then earn 20% of their Flex interest</strong>, paid every second, and capped at a generous $1,000,000.</div>        <div><strong>Your referee also gets a ${kYCTrialAmount} Flex trial</strong> when they pass KYC. We’ll take the trial funds back at the end of the month, but they’ll keep the interest.</div>      ',
+      // data: {
+      //   '0': {
+      //     title: 'REWARD YOUR COMMUNITY',
+      //     desc: 'Your referees get a ${kYCTrialAmount} trial bonus and keep the interest when they sign up and pass KYC - with no obligation to invest. Your affiliate offers are an easy way to reward followers who engage with your content.'
+      //   },
+      //   '1': {
+      //     title: 'HELP PEOPLE INVEST BETTER',
+      //     desc: 'Help your community overcome the challenges of today’s investment market. MyConstant is an ideal way to diversify and enjoy secured returns of up to 7% APR without fees.'
+      //   },
+      //   '2': {
+      //     title: 'CUT THROUGH THE NOISE',
+      //     desc: 'Whether you already monetize or not, our creative team will help boost the value and impact of your content. We can advise on SEO, copywriting, marketing, and more.'
+      //   }
+      // },
       trialBonus: 'a ${kYCTrialAmount} trial bonus'
+    },
+    theBestOpportunity: {
+      title: 'The best opportunity in the market',
+      data: {
+        0: {
+          title: 'GIVE PEOPLE WHAT THEY LOVE',
+          desc: 'We’re loved and trusted by 2,000s of customers with <strong>a Trustpilot score of 4.7/5</strong> over 600+ reviews. It’s an easy sell.'
+        },
+        1: {
+          title: 'CASH-IN ON HIGH GROWTH',
+          desc: 'We’re one of the <strong>fastest-growing P2P lenders in the US</strong> with over 25% growth month-on-month. Take your cut. \n'
+        },
+        2: {
+          title: 'TAP INTO A $2.3BN MARKET',
+          desc: '<strong>The US P2P lending market is worth over $2.3 billion</strong> with few competitors – the perfect market to sweep up affiliate bonuses.'
+        },
+        3: {
+          title: 'EARN DESPITE THE MARKET',
+          desc: 'No matter the economic climate, we’ve paid <strong>consistent returns</strong> to customers and <strong>$1,000s</strong> to our affiliates. '
+        },
+        4: {
+          title: 'ENJOY 24/7 SUPPORT',
+          desc: 'With offices in the US and Southeast Asia, <strong>we’re here to help day or night,</strong> regardless of your location.'
+        },
+      }
     },
     howItWorks: {
       title: 'How it works',
@@ -4746,7 +4779,9 @@ export default {
         referring_invest_100k: '<strong style="color:#F7B500;">{investAmount} USD left</strong> to earn ${rewardAmount} & a bronze Luminary badge',
         referring_invest_200k: '<strong style="color:#F7B500;">{investAmount} USD left</strong> to earn ${rewardAmount} & a silver Luminary badge',
         referring_invest_500k: '<strong style="color:#F7B500;">{investAmount} USD left</strong> to earn ${rewardAmount} & a gold Luminary badge',
-      }
+      },
+      affiliateNoRecord: '<p>Start referring now and in addition to your usual rewards you’ll also qualify for our Headhunter badges (Bronze is worth $20!)</p>',
+      affiliateNoRecordMobile: '<p>Refer now to earn Headhunter badge and $20 reward.</p>',
     },
     referralHistory: {
       title: 'Latest referral history',
@@ -4758,6 +4793,8 @@ export default {
         yourEarningsDesc: 'As soon as you’ve earned at least 1 cent, you can track your earnings below.',
         date: 'Date',
       },
+      affiliateNoRecord: '<p>Start referring now and in addition to your usual rewards you’ll also qualify for our Luminary badges (Bronze is worth $10!)</p>',
+      affiliateNoRecordMobile: '<p>Refer now to earn Luminary badge and $10 reward.</p>',
     },
     banner: {
       title: `<h1>Get a free \${referralReward} bonus for every friend you refer.</h1>`,
@@ -4868,20 +4905,6 @@ export default {
       desc: 'Check out <strong>our library of free resources</strong> to refer more friends and earn bigger rewards. Our blogs and downloadable materials make referring friends a piece of cake.'
     }
   },
-  // landingProReferral: {
-  // inviteEmail: {
-  //   btn: 'Invite',
-  //   sendInvitationsSuccess: 'Send Invitations Successfully!',
-  //   sendInvitationsFail: 'Send Invitations Failed!',
-  // },
-  // referral: {
-  //   placeholder: 'https://myconstant.com/?ref=1AcXa2',
-  //   btn: 'Copy',
-  //   copied: 'Referral link copied to clipboard.'
-  // },
-  // shares: { fb: 'Share on Facebook', tw: 'Share on Twitter' },
-  // editReferral: { success: 'Your referral code has been updated successfully' }
-  // },
   static_page: {
     AMLPolicy: 'Anti-Money Laundering Agreement',
     privacyPolicy: 'Privacy Policy'
@@ -5464,6 +5487,7 @@ export default {
       congratDesc: 'You\'ve earned all our badges. But the awards aren\'t over yet. Stay tuned for more badges and rewards that recognize your achievements.',
       earnDaily: 'Earned <strong>{amount} points</strong> for your Daily Login activity',
       claimedMessage: 'You have claimed your daily reward. Come back tomorrow for more!',
+      see_term: 'See Terms and Conditions'
     },
     badge: {
       membership_gold: {

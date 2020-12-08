@@ -4315,7 +4315,13 @@
             "userName": "%%%.affiliates.applyForm.userName%%%",
             "userEmail": "%%%.affiliates.applyForm.userEmail%%%",
             "notValidEmail": "%%%.affiliates.applyForm.notValidEmail%%%",
-            "requestSuccess": "%%%.affiliates.applyForm.requestSuccess%%%"
+            "requestSuccess": "%%%.affiliates.applyForm.requestSuccess%%%",
+            "becomeAffiliate": "%%%.affiliates.applyForm.becomeAffiliate%%%"
+        },
+        "becomeAffiliateForm": {
+            "title": "%%%.affiliates.becomeAffiliateForm.title%%%",
+            "desc": "%%%.affiliates.becomeAffiliateForm.desc%%%",
+            "titleMobile": "%%%.affiliates.becomeAffiliateForm.titleMobile%%%"
         },
         "applicationForm": {
             "title": "%%%.affiliates.applicationForm.title%%%",
@@ -4331,24 +4337,9 @@
             "others": "%%%.affiliates.applicationForm.others%%%",
             "applyNow": "%%%.affiliates.applicationForm.applyNow%%%",
             "requestSuccess": "%%%.affiliates.applicationForm.requestSuccess%%%",
-            "requestFailed": "%%%.affiliates.applicationForm.requestFailed%%%"
-        },
-        "summary": {
-            "title": "%%%.affiliates.summary.title%%%",
-            "data": {
-                "0": {
-                    "title": "%%%.affiliates.summary.data.0.title%%%",
-                    "desc": "%%%.affiliates.summary.data.0.desc%%%"
-                },
-                "1": {
-                    "title": "%%%.affiliates.summary.data.1.title%%%",
-                    "desc": "%%%.affiliates.summary.data.1.desc%%%"
-                },
-                "2": {
-                    "title": "%%%.affiliates.summary.data.2.title%%%",
-                    "desc": "%%%.affiliates.summary.data.2.desc%%%"
-                }
-            }
+            "requestFailed": "%%%.affiliates.applicationForm.requestFailed%%%",
+            "emailExisted": "%%%.affiliates.applicationForm.emailExisted%%%",
+            "notValidEmail": "%%%.affiliates.applicationForm.notValidEmail%%%"
         },
         "whyBecome": {
             "title": "%%%.affiliates.whyBecome.title%%%",
@@ -4359,22 +4350,32 @@
                 "3": "%%%.affiliates.whyBecome.formula.3%%%",
                 "4": "%%%.affiliates.whyBecome.formula.4%%%"
             },
-            "desc": "%%%.affiliates.whyBecome.desc%%%",
+            "trialBonus": "%%%.affiliates.whyBecome.trialBonus%%%"
+        },
+        "theBestOpportunity": {
+            "title": "%%%.affiliates.theBestOpportunity.title%%%",
             "data": {
                 "0": {
-                    "title": "%%%.affiliates.whyBecome.data.0.title%%%",
-                    "desc": "%%%.affiliates.whyBecome.data.0.desc%%%"
+                    "title": "%%%.affiliates.theBestOpportunity.data.0.title%%%",
+                    "desc": "%%%.affiliates.theBestOpportunity.data.0.desc%%%"
                 },
                 "1": {
-                    "title": "%%%.affiliates.whyBecome.data.1.title%%%",
-                    "desc": "%%%.affiliates.whyBecome.data.1.desc%%%"
+                    "title": "%%%.affiliates.theBestOpportunity.data.1.title%%%",
+                    "desc": "%%%.affiliates.theBestOpportunity.data.1.desc%%%"
                 },
                 "2": {
-                    "title": "%%%.affiliates.whyBecome.data.2.title%%%",
-                    "desc": "%%%.affiliates.whyBecome.data.2.desc%%%"
+                    "title": "%%%.affiliates.theBestOpportunity.data.2.title%%%",
+                    "desc": "%%%.affiliates.theBestOpportunity.data.2.desc%%%"
+                },
+                "3": {
+                    "title": "%%%.affiliates.theBestOpportunity.data.3.title%%%",
+                    "desc": "%%%.affiliates.theBestOpportunity.data.3.desc%%%"
+                },
+                "4": {
+                    "title": "%%%.affiliates.theBestOpportunity.data.4.title%%%",
+                    "desc": "%%%.affiliates.theBestOpportunity.data.4.desc%%%"
                 }
-            },
-            "trialBonus": "%%%.affiliates.whyBecome.trialBonus%%%"
+            }
         },
         "howItWorks": {
             "title": "%%%.affiliates.howItWorks.title%%%",
@@ -4651,7 +4652,9 @@
                 "referring_invest_100k": "%%%.yourReferral.referralUsers.luminaryBadge.referring_invest_100k%%%",
                 "referring_invest_200k": "%%%.yourReferral.referralUsers.luminaryBadge.referring_invest_200k%%%",
                 "referring_invest_500k": "%%%.yourReferral.referralUsers.luminaryBadge.referring_invest_500k%%%"
-            }
+            },
+            "affiliateNoRecord": "%%%.yourReferral.referralUsers.affiliateNoRecord%%%",
+            "affiliateNoRecordMobile": "%%%.yourReferral.referralUsers.affiliateNoRecordMobile%%%"
         },
         "referralHistory": {
             "title": "%%%.yourReferral.referralHistory.title%%%",
@@ -4662,7 +4665,9 @@
                 "yourEarnings": "%%%.yourReferral.referralHistory.headers.yourEarnings%%%",
                 "yourEarningsDesc": "%%%.yourReferral.referralHistory.headers.yourEarningsDesc%%%",
                 "date": "%%%.yourReferral.referralHistory.headers.date%%%"
-            }
+            },
+            "affiliateNoRecord": "%%%.yourReferral.referralHistory.affiliateNoRecord%%%",
+            "affiliateNoRecordMobile": "%%%.yourReferral.referralHistory.affiliateNoRecordMobile%%%"
         },
         "banner": {
             "title": "%%%.yourReferral.banner.title%%%",
@@ -5296,7 +5301,8 @@
             "congratTitle": "%%%.badges.intro.congratTitle%%%",
             "congratDesc": "%%%.badges.intro.congratDesc%%%",
             "earnDaily": "%%%.badges.intro.earnDaily%%%",
-            "claimedMessage": "%%%.badges.intro.claimedMessage%%%"
+            "claimedMessage": "%%%.badges.intro.claimedMessage%%%",
+            "see_term": "%%%.badges.intro.see_term%%%"
         },
         "badge": {
             "membership_gold": {

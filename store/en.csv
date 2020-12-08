@@ -3235,9 +3235,9 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.app.goToHomePage%%%,"Go to Home page"
 %%%.app.goToLoginPage%%%,"Go to Sign In page"
 %%%.affiliates.greetingForm.title%%%,"
-        <p class=""header"">Hello {name},</p>
-        <p>Welcome to your affiliate dashboard. You’ll find your affiliate link and sharing options below. You can track your earnings here, too.</p>
-        <p>Your total referral earnings to date: <strong>{totalEarned}</strong></p>
+        <h2>Hello {name},</h2>
+        <p><strong style=""color:#F7B500;"">Get $20</strong> for every person<sup>1</sup> you refer (no limits) plus <strong style=""color:#F7B500;"">20% of their Flex interest</strong> in their first year (capped at $1 million). Refer as many people as you like.</p>
+        <p class=""reference""><sup>1</sup> To qualify for the $20 reward, your referee must be a US citizen (see Affiliate Terms and Conditions).</p>
       "
 %%%.affiliates.greetingForm.monthVolume%%%,"Your {month} volume"
 %%%.affiliates.greetingForm.inviteFriends%%%,"Invite friends"
@@ -3251,8 +3251,8 @@ Click confirm to start your term and receive your loan. Once your term begins yo
         <p class=""reference""><sup>2</sup> To qualify for the ${affiliateReward} reward, your referee must be a US citizen (see Affiliate Terms and Conditions).</p>
         "
 %%%.affiliates.applyForm.title%%%,"
-        <p class=""header"">Get paid for your content.</p>
-        <p>Become a MyConstant affiliate and earn money on your content. <strong>Get ${affiliateReward}</strong> for every person<sup>1</sup> you refer plus <strong>20% of their Flex interest in their first year</strong> (capped at $1 million). Refer as many people as you like. </p>
+        <p class=""header"">You create, we pay</p>
+        <p>Become a MyConstant affiliate and get paid for your content. <strong style=""color:#F7B500;"">Get ${affiliateReward}</strong> for every person<sup>1</sup> you refer (no limits) plus <strong style=""color:#F7B500;"">20% of their Flex interest</strong> in their first year (capped at $1 million). Refer as many people as you like.</p>
         "
 %%%.affiliates.applyForm.titleDesc%%%,"
         <p class=""reference""><sup>1</sup> To qualify for the ${affiliateReward} reward, your referee must be a US citizen (see Affiliate Terms and Conditions).</p>
@@ -3261,6 +3261,10 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.affiliates.applyForm.userEmail%%%,"Your email address"
 %%%.affiliates.applyForm.notValidEmail%%%,"Invalid email address"
 %%%.affiliates.applyForm.requestSuccess%%%,"Successfully Requested"
+%%%.affiliates.applyForm.becomeAffiliate%%%,"Become our affiliate"
+%%%.affiliates.becomeAffiliateForm.title%%%,"Ready to start earning?"
+%%%.affiliates.becomeAffiliateForm.desc%%%,"Join our affiliate program and start earning cash rewards on all of your content. Fill in the form on the right and we’ll be in touch within three business days."
+%%%.affiliates.becomeAffiliateForm.titleMobile%%%,"Become our affiliates."
 %%%.affiliates.applicationForm.title%%%,"
       <p class=""header"">MyConstant Affiliate Application Form</p>
       "
@@ -3279,27 +3283,27 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.affiliates.applicationForm.applyNow%%%,"Apply now"
 %%%.affiliates.applicationForm.requestSuccess%%%,"Successfully Submitted"
 %%%.affiliates.applicationForm.requestFailed%%%,"Failed To Submit"
-%%%.affiliates.summary.title%%%,"P2P lending done right. No fees. All loans secured."
-%%%.affiliates.summary.data.0.title%%%,"8.5%"
-%%%.affiliates.summary.data.0.desc%%%,"average net annual return"
-%%%.affiliates.summary.data.1.title%%%,"15,000+"
-%%%.affiliates.summary.data.1.desc%%%,"registered investors"
-%%%.affiliates.summary.data.2.title%%%,"$15M+"
-%%%.affiliates.summary.data.2.desc%%%,"matched loan volume"
-%%%.affiliates.whyBecome.title%%%,"Why become an affiliate?"
+%%%.affiliates.applicationForm.emailExisted%%%,"Affiliate with this email already exists."
+%%%.affiliates.applicationForm.notValidEmail%%%,"Invalid email address"
+%%%.affiliates.whyBecome.title%%%,"The best rewards in the business"
 %%%.affiliates.whyBecome.formula.0%%%,"per registration"
 %%%.affiliates.whyBecome.formula.1%%%," "
 %%%.affiliates.whyBecome.formula.2%%%,"of referee’s Flex interest"
 %%%.affiliates.whyBecome.formula.3%%%," "
 %%%.affiliates.whyBecome.formula.4%%%,"for your referee"
-%%%.affiliates.whyBecome.desc%%%,"        <div class=""section-desc-title"">YOU EARN MORE</div>        <div><strong>Earn ${affiliateReward} for every US citizen who registers</strong>, paid instantly after they make their first deposit, and with no limits.</div>        <div><strong>Then earn 20% of their Flex interest</strong>, paid every second, and capped at a generous $1,000,000.</div>        <div><strong>Your referee also gets a ${kYCTrialAmount} Flex trial</strong> when they pass KYC. We’ll take the trial funds back at the end of the month, but they’ll keep the interest.</div>      "
-%%%.affiliates.whyBecome.data.0.title%%%,"REWARD YOUR COMMUNITY"
-%%%.affiliates.whyBecome.data.0.desc%%%,"Your referees get a ${kYCTrialAmount} trial bonus and keep the interest when they sign up and pass KYC - with no obligation to invest. Your affiliate offers are an easy way to reward followers who engage with your content."
-%%%.affiliates.whyBecome.data.1.title%%%,"HELP PEOPLE INVEST BETTER"
-%%%.affiliates.whyBecome.data.1.desc%%%,"Help your community overcome the challenges of today’s investment market. MyConstant is an ideal way to diversify and enjoy secured returns of up to 7% APR without fees."
-%%%.affiliates.whyBecome.data.2.title%%%,"CUT THROUGH THE NOISE"
-%%%.affiliates.whyBecome.data.2.desc%%%,"Whether you already monetize or not, our creative team will help boost the value and impact of your content. We can advise on SEO, copywriting, marketing, and more."
 %%%.affiliates.whyBecome.trialBonus%%%,"a ${kYCTrialAmount} trial bonus"
+%%%.affiliates.theBestOpportunity.title%%%,"The best opportunity in the market"
+%%%.affiliates.theBestOpportunity.data.0.title%%%,"GIVE PEOPLE WHAT THEY LOVE"
+%%%.affiliates.theBestOpportunity.data.0.desc%%%,"We’re loved and trusted by 2,000s of customers with <strong>a Trustpilot score of 4.7/5</strong> over 600+ reviews. It’s an easy sell."
+%%%.affiliates.theBestOpportunity.data.1.title%%%,"CASH-IN ON HIGH GROWTH"
+%%%.affiliates.theBestOpportunity.data.1.desc%%%,"We’re one of the <strong>fastest-growing P2P lenders in the US</strong> with over 25% growth month-on-month. Take your cut. 
+"
+%%%.affiliates.theBestOpportunity.data.2.title%%%,"TAP INTO A $2.3BN MARKET"
+%%%.affiliates.theBestOpportunity.data.2.desc%%%,"<strong>The US P2P lending market is worth over $2.3 billion</strong> with few competitors – the perfect market to sweep up affiliate bonuses."
+%%%.affiliates.theBestOpportunity.data.3.title%%%,"EARN DESPITE THE MARKET"
+%%%.affiliates.theBestOpportunity.data.3.desc%%%,"No matter the economic climate, we’ve paid <strong>consistent returns</strong> to customers and <strong>$1,000s</strong> to our affiliates. "
+%%%.affiliates.theBestOpportunity.data.4.title%%%,"ENJOY 24/7 SUPPORT"
+%%%.affiliates.theBestOpportunity.data.4.desc%%%,"With offices in the US and Southeast Asia, <strong>we’re here to help day or night,</strong> regardless of your location."
 %%%.affiliates.howItWorks.title%%%,"How it works"
 %%%.affiliates.howItWorks.data.0.title%%%," "
 %%%.affiliates.howItWorks.data.0.desc%%%,"Referee clicks your unique affiliate link."
@@ -3478,6 +3482,8 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.yourReferral.referralUsers.luminaryBadge.referring_invest_100k%%%,"<strong style=""color:#F7B500;"">{investAmount} USD left</strong> to earn ${rewardAmount} & a bronze Luminary badge"
 %%%.yourReferral.referralUsers.luminaryBadge.referring_invest_200k%%%,"<strong style=""color:#F7B500;"">{investAmount} USD left</strong> to earn ${rewardAmount} & a silver Luminary badge"
 %%%.yourReferral.referralUsers.luminaryBadge.referring_invest_500k%%%,"<strong style=""color:#F7B500;"">{investAmount} USD left</strong> to earn ${rewardAmount} & a gold Luminary badge"
+%%%.yourReferral.referralUsers.affiliateNoRecord%%%,"<p>Start referring now and in addition to your usual rewards you’ll also qualify for our Headhunter badges (Bronze is worth $20!)</p>"
+%%%.yourReferral.referralUsers.affiliateNoRecordMobile%%%,"<p>Refer now to earn Headhunter badge and $20 reward.</p>"
 %%%.yourReferral.referralHistory.title%%%,"Latest referral history"
 %%%.yourReferral.referralHistory.headers.email%%%,"Email"
 %%%.yourReferral.referralHistory.headers.friendEarnings%%%,"Friend's earnings"
@@ -3485,6 +3491,8 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.yourReferral.referralHistory.headers.yourEarnings%%%,"Your earnings"
 %%%.yourReferral.referralHistory.headers.yourEarningsDesc%%%,"As soon as you’ve earned at least 1 cent, you can track your earnings below."
 %%%.yourReferral.referralHistory.headers.date%%%,"Date"
+%%%.yourReferral.referralHistory.affiliateNoRecord%%%,"<p>Start referring now and in addition to your usual rewards you’ll also qualify for our Luminary badges (Bronze is worth $10!)</p>"
+%%%.yourReferral.referralHistory.affiliateNoRecordMobile%%%,"<p>Refer now to earn Luminary badge and $10 reward.</p>"
 %%%.yourReferral.banner.title%%%,"<h1>Get a free ${referralReward} bonus for every friend you refer.</h1>"
 %%%.yourReferral.banner.desc%%%,"
         <p>Tell your friends and family about us and get ${referralReward} free for each person who signs up and deposits USD (US citizens only). You also earn <strong style=""color:#F7B500;"">{referralFlexReward}% of their Flex interest</strong>, compounded and paid every second. Refer as many friends as you like, however you like, and <strong style=""color:#F7B500;"">grow your money together</strong>.</p>
@@ -3938,6 +3946,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.badges.intro.congratDesc%%%,"You've earned all our badges. But the awards aren't over yet. Stay tuned for more badges and rewards that recognize your achievements."
 %%%.badges.intro.earnDaily%%%,"Earned <strong>{amount} points</strong> for your Daily Login activity"
 %%%.badges.intro.claimedMessage%%%,"You have claimed your daily reward. Come back tomorrow for more!"
+%%%.badges.intro.see_term%%%,"See Terms and Conditions"
 %%%.badges.badge.membership_gold.title%%%,"Gold Membership"
 %%%.badges.badge.membership_gold.description%%%,"To qualify for badges and rewards, you must invest $25,000 in total within 180 days and keep that investment until the term ends (after leaving a review on Trustpilot). <a href=""/membership"">See more benefits.</a>"
 %%%.badges.badge.membership_gold.name%%%,"Gold Membership"

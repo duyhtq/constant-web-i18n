@@ -4652,23 +4652,6 @@ export default {
         </ol>
       `
     },
-    referralUsers: {
-      title: 'Emailed invites',
-      user_email: 'Email',
-      statusHtml: 'Status',
-      date: 'Date',
-      noRecord: 'You have not referred anyone yet. Start earning now!',
-    },
-    referralHistory: {
-      title: 'Referral history',
-      user_email: "Referee's email address",
-      object_amount: "Friend's earnings",
-      object_type: 'Type',
-      value: 'Your earnings ',
-      valueDesc: 'As soon as you’ve earned at least 1 cent, you can track your earnings below.',
-      created_at: 'Date',
-      noRecord: 'You have not referred anyone yet. Start earning now!',
-    }
   },
   developers: {
     menu: {
@@ -4748,6 +4731,7 @@ export default {
         status: 'Status',
         statusDesc: 'The status (written in gold) shows your referee’s latest action. The bars below show the remaining actions to earn your reward. A blue bar is a complete action while a grey bar is an incomplete action. Once your referee completes all actions, you receive your reward and the status will turn grey.',
         date: 'Date',
+        action: ' ',
       },
       status: {
         pending: 'Sent',
@@ -4782,6 +4766,12 @@ export default {
       },
       affiliateNoRecord: '<p>Start referring now and in addition to your usual rewards you’ll also qualify for our Headhunter badges (Bronze is worth $20!)</p>',
       affiliateNoRecordMobile: '<p>Refer now to earn Headhunter badge and $20 reward.</p>',
+      remind: 'Remind',
+      remindAll: 'Remind all',
+      remindAllDesc: 'When you click Remind, a reminder email will be sent to your friend. Then, the status will change to Reminder sent. The Remind all button lets you remind all your friends in a single click.',
+      remindAllMobile: 'Send a reminder email',
+      sent: 'Sent',
+      remindEmailSuccess: 'Hooray! You just sent a reminder email successfully to:'
     },
     referralHistory: {
       title: 'Latest referral history',

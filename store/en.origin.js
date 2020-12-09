@@ -4526,23 +4526,6 @@
         },
         "terms": {
             "content": "%%%.affiliates.terms.content%%%"
-        },
-        "referralUsers": {
-            "title": "%%%.affiliates.referralUsers.title%%%",
-            "user_email": "%%%.affiliates.referralUsers.user_email%%%",
-            "statusHtml": "%%%.affiliates.referralUsers.statusHtml%%%",
-            "date": "%%%.affiliates.referralUsers.date%%%",
-            "noRecord": "%%%.affiliates.referralUsers.noRecord%%%"
-        },
-        "referralHistory": {
-            "title": "%%%.affiliates.referralHistory.title%%%",
-            "user_email": "%%%.affiliates.referralHistory.user_email%%%",
-            "object_amount": "%%%.affiliates.referralHistory.object_amount%%%",
-            "object_type": "%%%.affiliates.referralHistory.object_type%%%",
-            "value": "%%%.affiliates.referralHistory.value%%%",
-            "valueDesc": "%%%.affiliates.referralHistory.valueDesc%%%",
-            "created_at": "%%%.affiliates.referralHistory.created_at%%%",
-            "noRecord": "%%%.affiliates.referralHistory.noRecord%%%"
         }
     },
     "developers": {
@@ -4628,7 +4611,8 @@
                 "email": "%%%.yourReferral.referralUsers.headers.email%%%",
                 "status": "%%%.yourReferral.referralUsers.headers.status%%%",
                 "statusDesc": "%%%.yourReferral.referralUsers.headers.statusDesc%%%",
-                "date": "%%%.yourReferral.referralUsers.headers.date%%%"
+                "date": "%%%.yourReferral.referralUsers.headers.date%%%",
+                "action": "%%%.yourReferral.referralUsers.headers.action%%%"
             },
             "status": {
                 "pending": "%%%.yourReferral.referralUsers.status.pending%%%",
@@ -4654,7 +4638,13 @@
                 "referring_invest_500k": "%%%.yourReferral.referralUsers.luminaryBadge.referring_invest_500k%%%"
             },
             "affiliateNoRecord": "%%%.yourReferral.referralUsers.affiliateNoRecord%%%",
-            "affiliateNoRecordMobile": "%%%.yourReferral.referralUsers.affiliateNoRecordMobile%%%"
+            "affiliateNoRecordMobile": "%%%.yourReferral.referralUsers.affiliateNoRecordMobile%%%",
+            "remind": "%%%.yourReferral.referralUsers.remind%%%",
+            "remindAll": "%%%.yourReferral.referralUsers.remindAll%%%",
+            "remindAllDesc": "%%%.yourReferral.referralUsers.remindAllDesc%%%",
+            "remindAllMobile": "%%%.yourReferral.referralUsers.remindAllMobile%%%",
+            "sent": "%%%.yourReferral.referralUsers.sent%%%",
+            "remindEmailSuccess": "%%%.yourReferral.referralUsers.remindEmailSuccess%%%"
         },
         "referralHistory": {
             "title": "%%%.yourReferral.referralHistory.title%%%",

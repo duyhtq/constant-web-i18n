@@ -4644,7 +4644,8 @@
             "remindAllDesc": "%%%.yourReferral.referralUsers.remindAllDesc%%%",
             "remindAllMobile": "%%%.yourReferral.referralUsers.remindAllMobile%%%",
             "sent": "%%%.yourReferral.referralUsers.sent%%%",
-            "remindEmailSuccess": "%%%.yourReferral.referralUsers.remindEmailSuccess%%%"
+            "remindEmailSuccess": "%%%.yourReferral.referralUsers.remindEmailSuccess%%%",
+            "noEmailRemind": "%%%.yourReferral.referralUsers.noEmailRemind%%%"
         },
         "referralHistory": {
             "title": "%%%.yourReferral.referralHistory.title%%%",

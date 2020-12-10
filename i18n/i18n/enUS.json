@@ -181,9 +181,9 @@
         "contactUs": "Contact us",
         "phone": {
             "us": {
-                "time": "Mon - Fri 9am - 5pm<br />Mon-Thurs 6pm - 9am PST",
+                "time": "Mon - Fri 9am - 5pm<br />Mon-Thurs 6pm - 3am PST",
                 "phone": "+1 646 809 8338",
-                "timeMobile": "<p><span>(Mon - Fri)</span> 9am - 5pm</p><p><span>(Mon - Thurs)</span> 6pm - 9am PST</p>"
+                "timeMobile": "<p><span>(Mon - Fri)</span> 9am - 5pm</p><p><span>(Mon - Thurs)</span> 6pm - 3am PST</p>"
             }
         },
         "support": "Help & Support",
@@ -4644,7 +4644,8 @@
             "remindAllDesc": "When you click Remind, a reminder email will be sent to your friend. Then, the status will change to Reminder sent. The Remind all button lets you remind all your friends in a single click.",
             "remindAllMobile": "Send a reminder email",
             "sent": "Sent",
-            "remindEmailSuccess": "Hooray! You just sent a reminder email successfully to:"
+            "remindEmailSuccess": "Hooray! You just sent a reminder email successfully to:",
+            "noEmailRemind": "You’ve reminded all your friends today. There’s no one left to send. Check back again tomorrow."
         },
         "referralHistory": {
             "title": "Latest referral history",

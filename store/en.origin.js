@@ -202,7 +202,9 @@
         "achievement": "%%%.footer.achievement%%%",
         "badges": "%%%.footer.badges%%%",
         "heading": "%%%.footer.heading%%%",
-        "follow": "%%%.footer.follow%%%"
+        "follow": "%%%.footer.follow%%%",
+        "statistics": "%%%.footer.statistics%%%",
+        "statisticsDesc": "%%%.footer.statisticsDesc%%%"
     },
     "memberShip": {
         "pointNeed2GetGold": "%%%.memberShip.pointNeed2GetGold%%%",
@@ -5528,5 +5530,24 @@
         "cryptoBackedLoan": "%%%.productsAndBenefits.cryptoBackedLoan%%%",
         "viewAll": "%%%.productsAndBenefits.viewAll%%%",
         "products": "%%%.productsAndBenefits.products%%%"
+    },
+    "statistic": {
+        "banner": {
+            "title": "%%%.statistic.banner.title%%%"
+        },
+        "stats": {
+            "interest": "%%%.statistic.stats.interest%%%",
+            "interestDesc": "%%%.statistic.stats.interestDesc%%%",
+            "numInvestment": "%%%.statistic.stats.numInvestment%%%",
+            "numInvestmentDesc": "%%%.statistic.stats.numInvestmentDesc%%%",
+            "sizeInvestment": "%%%.statistic.stats.sizeInvestment%%%",
+            "sizeInvestmentDesc": "%%%.statistic.stats.sizeInvestmentDesc%%%",
+            "totalInterest": "%%%.statistic.stats.totalInterest%%%",
+            "totalInterestDesc": "%%%.statistic.stats.totalInterestDesc%%%",
+            "defaultRate": "%%%.statistic.stats.defaultRate%%%",
+            "defaultRateDesc": "%%%.statistic.stats.defaultRateDesc%%%",
+            "recoveryRate": "%%%.statistic.stats.recoveryRate%%%",
+            "recoveryRateDesc": "%%%.statistic.stats.recoveryRateDesc%%%"
+        }
     }
 }

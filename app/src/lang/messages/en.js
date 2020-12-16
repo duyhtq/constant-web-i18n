@@ -179,7 +179,9 @@ export default {
     achievement: 'Achievement',
     badges: 'Your Badges',
     heading: 'Experience multi-market <br/> <span style="color:#F5A623;">peer-to-peer</span> lending.',
-    follow: 'Follow'
+    follow: 'Follow',
+    statistics: 'Statistics',
+    statisticsDesc: 'View historical loan performance and more.',
   },
   memberShip: {
     pointNeed2GetGold: 'You still need {value} points to reach Gold Member status',
@@ -5722,5 +5724,27 @@ export default {
     cryptoBackedLoan: 'Crypto-backed loans',
     viewAll: 'Show all Our Products & Benefits',
     products: 'PRODUCTS',
+  },
+  statistic: {
+    banner: {
+      title: `
+        <h1>Our results so far</h1>
+        <p>Below, you’ll find our historical performance statistics. These numbers represent investor and borrower activity to date. Use these figures to gain a deeper understanding of the risk and rewards of using our collateral-backed investment platform.</p>
+      `
+    },
+    stats: {
+      interest: 'Average interest earned',
+      interestDesc: 'This is the average interest rate earned by our investors since launch, updated daily.',
+      numInvestment: 'Average number of <br/> investments per customer',
+      numInvestmentDesc: 'The average number of investments per customer since launch, updated daily.',
+      sizeInvestment: 'Average size of investments',
+      sizeInvestmentDesc: 'This is the average invested amount since launch, updated daily.',
+      totalInterest: 'Total interest earned',
+      totalInterestDesc: 'This is the total interest earned by all of our investors since launch, updated daily.',
+      defaultRate: 'Liquidation rate',
+      defaultRateDesc: 'This is the percentage of loans that were liquidated due to borrower default or collateral devaluation since launch. This figure is updated daily.',
+      recoveryRate: 'Recovery rate',
+      recoveryRateDesc: 'This is the percentage of loan funds recovered as a result of collateral liquidation due to borrower default or collateral devaluation. This figure is updated daily.',
+    }
   }
 };

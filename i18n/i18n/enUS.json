@@ -202,7 +202,9 @@
         "achievement": "Achievement",
         "badges": "Your Badges",
         "heading": "Experience multi-market <br/> <span style=\"color:#F5A623;\">peer-to-peer</span> lending.",
-        "follow": "Follow"
+        "follow": "Follow",
+        "statistics": "Statistics",
+        "statisticsDesc": "View historical loan performance and more."
     },
     "memberShip": {
         "pointNeed2GetGold": "You still need {value} points to reach Gold Member status",
@@ -1735,89 +1737,89 @@
                 "viewAll": "View us on TrustPilot",
                 "readMore": "Read more",
                 "reviews": "Reviews",
-                "numReview": "604",
+                "numReview": "665",
                 "excellent": "Excellent",
-                "points": "4.7/5",
+                "points": "4.6/5",
                 "data": {
                     "0": {
                         "star": "5",
-                        "title": "Using MyConstant for a month with no problems",
-                        "desc": "I’ve been using MyConstant for a little over a month now. Have not encountered any problems. Have transferred funds multiple times with both ACH (took 4-5 days) and with Zelle (less than a minute) without incident.",
-                        "date": "Nov 6, 2020",
-                        "auth": "Rustin C",
-                        "link": "https://www.trustpilot.com/reviews/5fa5a0365e693f0a84203f05"
+                        "title": "Great app",
+                        "desc": "It gives you a trial of 2000 to watch it grow. Then it takes that back but you keep what you earned from it. I put my own 120 in and make 1 cent a day. It’s a 4% flex account but they have crypto investing and many things to do. All easy to use and learn.",
+                        "date": "Dec 12, 2020",
+                        "auth": "Sal",
+                        "link": "https://www.trustpilot.com/reviews/5fd524fc755dc107e0c11569"
                     },
                     "1": {
                         "star": "5",
-                        "title": "100% Legit! My new favorite app!",
-                        "desc": "I'm in week 2 and my available balance has increased everyday. There was a bug with the \"Link You Bank Account\" link but it has been fixed and everything is running smoothly.",
-                        "date": "Nov 4, 2020",
-                        "auth": "BoombocxProd Leases",
-                        "link": "https://www.trustpilot.com/reviews/5fa1ab925e693f06a004dc4d"
+                        "title": "A good way to beat inflation",
+                        "desc": "I researched this company hard prior to trusting them with my money. It all seemed too good to be true. However, after earning 4% interest in their Flex account plus 6% on crypto-backed investments with them, I now am sure that they are a solid company.",
+                        "date": "Dec 11, 2020",
+                        "auth": "Sam U",
+                        "link": "https://www.trustpilot.com/reviews/5fd3a191755dc10b481f7a7f"
                     },
                     "2": {
                         "star": "5",
-                        "title": "Great company!",
-                        "desc": "This is a great company! I’ve been lending money for several months now and have no complaints. it’s a great way to grow my money.",
-                        "date": "Oct 29, 2020",
-                        "auth": "Kyle A",
-                        "link": "https://www.trustpilot.com/reviews/5f9a24425e693f06f8744405"
+                        "title": "Love the bonuses!",
+                        "desc": "Awesome app, no bugs, $2000 bonus, killer referall bonuses, badge system is fun and good way to track progression, nice interest on investments, variety of products!",
+                        "date": "Dec 11, 2020",
+                        "auth": "Sean Kilcourse",
+                        "link": "https://www.trustpilot.com/reviews/5fd396ae755dc107e0bfb7e8"
                     },
                     "3": {
                         "star": "5",
-                        "title": "This is definitely something worth out",
-                        "desc": "It is all good and so far surpassed my expedition. I know this is pleasant surprise in our hard times and worth investing the time at the least of nothing else but definately like myself money at the end.",
-                        "date": "Oct 18, 2020",
-                        "auth": "Daniel V.",
-                        "link": "https://www.trustpilot.com/reviews/5f883155798e6f07705f4376"
+                        "title": "Very good customer service",
+                        "desc": "Solid company with very good customer service. Most convenient aspect of MyConstant is that you can transfer money via Zelle and ACH. There is also a secondary market where the rates are attractive.\n\n",
+                        "date": "Dec 7, 2020",
+                        "auth": "Henry",
+                        "link": "https://www.trustpilot.com/reviews/5fcdad055e693f06047a275f"
                     },
                     "4": {
                         "star": "5",
-                        "title": "Best P2P platform i have ever used.",
-                        "desc": "I am extremely satisfied with this and I will always be part of their community as well. I rather place all my savings in Myconstant account to see it grow on a daily basis.Yes, it moves daily. I highly recommend Myconstant to everyone!",
-                        "date": "Oct 15, 2020",
-                        "auth": "Jerson Morillo Hernandez",
-                        "link": "https://www.trustpilot.com/reviews/5f883155798e6f07705f4376"
+                        "title": "Excellent investment alternative!",
+                        "desc": "I have invested in both the Flex account and their 30 day loan option, in both cases their interest has been as advertised and I have the flexibility to withdraw my funds easily through Zelle whenever I want. I highly recommend them!!",
+                        "date": "Dec 6, 2020",
+                        "auth": "Julian Taurozzi",
+                        "link": "https://www.trustpilot.com/reviews/5fcc0f215e693f06047947b3"
                     },
                     "5": {
                         "star": "5",
-                        "title": "Definitely beats out any \"high interest\" accounts out there.",
-                        "desc": "The concept, reliability, and security of the product is well-executed and much-needed in these turbulent times. They are always improving their features, the most important of which was to have standard ACH bank transfers where you can start receiving interest instantly.",
-                        "date": "Oct 14, 2020",
-                        "auth": "John",
-                        "link": "https://www.trustpilot.com/reviews/5f865d24798e6f0bcc44a19a"
+                        "title": "Extremely pleased",
+                        "desc": "Started with a small deposit to see how it worked. I have been extremely pleased in the way the site is very user friendly and I enjoy watching my money earn above average interest. Will continue to be using MyConstant well into the future.",
+                        "date": "Dec 6, 2020",
+                        "auth": "Marc",
+                        "link": "https://www.trustpilot.com/reviews/5fcbd5a45e693f0604792181"
                     },
                     "6": {
                         "star": "5",
-                        "title": "Great alternative to savings account.",
-                        "desc": "I've been with Myconstant for almost a year now and have had no issues. I highly recommend it. The interface can be a little intimidating until you get the hang of it. They add features fairly regularly which creates new opportunities for passive income.",
-                        "date": "Oct 14, 2020",
-                        "auth": "Tyler S",
-                        "link": "https://www.trustpilot.com/reviews/5f865bdf798e6f07705dc520"
+                        "title": "Highly recommend this to everyone",
+                        "desc": "I have been using My constant for 2 years now and have made amazing gains both by lending as well as borrowing. Very happy with the team, customers service and how easy it is to use the app on my phone.",
+                        "date": "Dec 3, 2020",
+                        "auth": "Nicolas Rodriques Santos",
+                        "link": "https://www.trustpilot.com/reviews/5fc8bea85e693f07049e2cbe"
                     },
                     "7": {
                         "star": "5",
-                        "title": "Constant has accelerated my financial goals.",
-                        "desc": "I can easily earn high interest on my USD and crypto without any lockups. Even when I invest in a loan that is supposed to last 30 days, I can sell it early on the secondary market if I need to. With Constant, my money is constantly earning, unlocking passive income that everyone richly deserves.",
-                        "date": "Oct 13, 2020",
-                        "auth": "David Snell",
-                        "link": "https://www.trustpilot.com/reviews/5f850bbb798e6f0bcc433849"
+                        "title": "Should invest at MyConstant right now",
+                        "desc": "Anyone who is looking to get the most out of the hard earned money should be investing it at MyConstant right now. Very easy app to use and you have full support of customer service at a click away. You will not regret switching your money to MyConstant.",
+                        "date": "Nov 30, 2020",
+                        "auth": "Rick R",
+                        "link": "https://www.trustpilot.com/reviews/5fc4c4c35e693f0b10056525"
                     },
                     "8": {
                         "star": "5",
-                        "title": "Very good customer service",
-                        "desc": "Everything works as it should. Withdrawals are a breeze, deposits can be confusing, but once you understand the interface it’s quick and easy.",
-                        "date": "Oct 11, 2020",
-                        "auth": "Jeff Vidmar",
-                        "link": "https://www.trustpilot.com/reviews/5f82ff0d798e6f0784aa92c0"
+                        "title": "Great place to grow your funds",
+                        "desc": "Right now the savings account and CD interest is too low. MyConstant is pretty much risk free with high interest rate. All your savings are backed by crypto currency collateral while earning interest! Highly recommend.",
+                        "date": "Nov 29, 2020",
+                        "auth": "Lee",
+                        "link": "https://www.trustpilot.com/reviews/5fc2f9fd5e693f08f00d8e52"
                     },
                     "9": {
                         "star": "5",
-                        "title": "Gained my trust",
-                        "desc": "I like the option of just depositing to a flex account that gives me more interest than regular savings these days. Although the rate for investing has also dropped a bit (where you can invest for 30 days or more), it's still better than a lot of options out there.",
-                        "date": "Oct 13, 2020",
-                        "auth": "Randy",
-                        "link": "https://www.trustpilot.com/reviews/5f84a54e798e6f07705c1867"
+                        "title": "Things have gone very well",
+                        "desc": "The interest I'm earning is far than I can earn elsewhere. I started slow with 100 deposit and saw the interest accrue. So for my second month I invested a little more plus what I had earned previously. I think I will do this every month from here on out.",
+                        "date": "Nov 27, 2020",
+                        "auth": "Kimberly Miller",
+                        "link": "https://www.trustpilot.com/reviews/5fc0fa0c5e693f0b100307a6"
                     }
                 }
             },
@@ -5528,5 +5530,24 @@
         "cryptoBackedLoan": "Crypto-backed loans",
         "viewAll": "Show all Our Products & Benefits",
         "products": "PRODUCTS"
+    },
+    "statistic": {
+        "banner": {
+            "title": "\n        <h1>Our results so far</h1>\n        <p>Below, you’ll find our historical performance statistics. These numbers represent investor and borrower activity to date. Use these figures to gain a deeper understanding of the risk and rewards of using our collateral-backed investment platform.</p>\n      "
+        },
+        "stats": {
+            "interest": "Average interest earned",
+            "interestDesc": "This is the average interest rate earned by our investors since launch, updated daily.",
+            "numInvestment": "Average number of <br/> investments per customer",
+            "numInvestmentDesc": "The average number of investments per customer since launch, updated daily.",
+            "sizeInvestment": "Average size of investments",
+            "sizeInvestmentDesc": "This is the average invested amount since launch, updated daily.",
+            "totalInterest": "Total interest earned",
+            "totalInterestDesc": "This is the total interest earned by all of our investors since launch, updated daily.",
+            "defaultRate": "Liquidation rate",
+            "defaultRateDesc": "This is the percentage of loans that were liquidated due to borrower default or collateral devaluation since launch. This figure is updated daily.",
+            "recoveryRate": "Recovery rate",
+            "recoveryRateDesc": "This is the percentage of loan funds recovered as a result of collateral liquidation due to borrower default or collateral devaluation. This figure is updated daily."
+        }
     }
 }

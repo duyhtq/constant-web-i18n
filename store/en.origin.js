@@ -204,7 +204,8 @@
         "heading": "%%%.footer.heading%%%",
         "follow": "%%%.footer.follow%%%",
         "statistics": "%%%.footer.statistics%%%",
-        "statisticsDesc": "%%%.footer.statisticsDesc%%%"
+        "statisticsDesc": "%%%.footer.statisticsDesc%%%",
+        "giftCard": "%%%.footer.giftCard%%%"
     },
     "memberShip": {
         "pointNeed2GetGold": "%%%.memberShip.pointNeed2GetGold%%%",
@@ -592,7 +593,8 @@
                 "3": "%%%.me.history.withdrawStatus.3%%%",
                 "4": "%%%.me.history.withdrawStatus.4%%%",
                 "5": "%%%.me.history.withdrawStatus.5%%%",
-                "6": "%%%.me.history.withdrawStatus.6%%%"
+                "6": "%%%.me.history.withdrawStatus.6%%%",
+                "7": "%%%.me.history.withdrawStatus.7%%%"
             },
             "sendToAddress": "%%%.me.history.sendToAddress%%%",
             "orderType": {
@@ -646,6 +648,84 @@
                 "14": "%%%.me.history.orderStatus.14%%%",
                 "15": "%%%.me.history.orderStatus.15%%%",
                 "16": "%%%.me.history.orderStatus.16%%%"
+            },
+            "reverseType": {
+                "pending": {
+                    "label": "%%%.me.history.reverseType.pending.label%%%"
+                },
+                "purchasing": {
+                    "label": "%%%.me.history.reverseType.purchasing.label%%%",
+                    "desc": "%%%.me.history.reverseType.purchasing.desc%%%"
+                },
+                "coinMinting": {
+                    "label": "%%%.me.history.reverseType.coinMinting.label%%%"
+                },
+                "coinBurning": {
+                    "label": "%%%.me.history.reverseType.coinBurning.label%%%"
+                },
+                "transferring": {
+                    "label": "%%%.me.history.reverseType.transferring.label%%%"
+                },
+                "redeemingAch": {
+                    "label": "%%%.me.history.reverseType.redeemingAch.label%%%",
+                    "desc": "%%%.me.history.reverseType.redeemingAch.desc%%%",
+                    "desc1": "%%%.me.history.reverseType.redeemingAch.desc1%%%"
+                },
+                "redeemingWire": {
+                    "label": "%%%.me.history.reverseType.redeemingWire.label%%%",
+                    "desc": "%%%.me.history.reverseType.redeemingWire.desc%%%",
+                    "desc1": "%%%.me.history.reverseType.redeemingWire.desc1%%%"
+                },
+                "redeemingZelle": {
+                    "label": "%%%.me.history.reverseType.redeemingZelle.label%%%",
+                    "desc": "%%%.me.history.reverseType.redeemingZelle.desc%%%",
+                    "desc1": "%%%.me.history.reverseType.redeemingZelle.desc1%%%"
+                },
+                "redeemingFiat": {
+                    "label": "%%%.me.history.reverseType.redeemingFiat.label%%%",
+                    "desc": "%%%.me.history.reverseType.redeemingFiat.desc%%%",
+                    "desc1": "%%%.me.history.reverseType.redeemingFiat.desc1%%%"
+                },
+                "cancelled": {
+                    "label": "%%%.me.history.reverseType.cancelled.label%%%",
+                    "desc": "%%%.me.history.reverseType.cancelled.desc%%%"
+                },
+                "done": {
+                    "label": "%%%.me.history.reverseType.done.label%%%",
+                    "desc": "%%%.me.history.reverseType.done.desc%%%"
+                },
+                "holding": {
+                    "label": "%%%.me.history.reverseType.holding.label%%%",
+                    "desc": "%%%.me.history.reverseType.holding.desc%%%"
+                },
+                "transferringFailed": {
+                    "label": "%%%.me.history.reverseType.transferringFailed.label%%%",
+                    "desc": "%%%.me.history.reverseType.transferringFailed.desc%%%"
+                },
+                "approving": {
+                    "label": "%%%.me.history.reverseType.approving.label%%%",
+                    "desc": "%%%.me.history.reverseType.approving.desc%%%"
+                },
+                "agentApproving": {
+                    "label": "%%%.me.history.reverseType.agentApproving.label%%%",
+                    "desc": "%%%.me.history.reverseType.agentApproving.desc%%%"
+                },
+                "tokenTransferring": {
+                    "label": "%%%.me.history.reverseType.tokenTransferring.label%%%",
+                    "desc": "%%%.me.history.reverseType.tokenTransferring.desc%%%"
+                },
+                "emailConfirming": {
+                    "label": "%%%.me.history.reverseType.emailConfirming.label%%%",
+                    "desc": "%%%.me.history.reverseType.emailConfirming.desc%%%"
+                },
+                "timeout": {
+                    "label": "%%%.me.history.reverseType.timeout.label%%%",
+                    "desc": "%%%.me.history.reverseType.timeout.desc%%%"
+                },
+                "reversed": {
+                    "label": "%%%.me.history.reverseType.reversed.label%%%",
+                    "desc": "%%%.me.history.reverseType.reversed.desc%%%"
+                }
             },
             "requestExecute": "%%%.me.history.requestExecute%%%",
             "transactionID": "%%%.me.history.transactionID%%%",
@@ -758,6 +838,8 @@
                 "secondaryMarketHistoryDetail": "%%%.me.proSaving.listApplications.secondaryMarketHistoryDetail%%%",
                 "secondInvestmentsLO": "%%%.me.proSaving.listApplications.secondInvestmentsLO%%%",
                 "secondInvestmentsLODesc": "%%%.me.proSaving.listApplications.secondInvestmentsLODesc%%%",
+                "spendings": "%%%.me.proSaving.listApplications.spendings%%%",
+                "spendingsDesc": "%%%.me.proSaving.listApplications.spendingsDesc%%%",
                 "termStatusFilter": {
                     "investment": {
                         "pending": "%%%.me.proSaving.listApplications.termStatusFilter.investment.pending%%%",
@@ -783,6 +865,7 @@
                 "term": "%%%.me.proSaving.listApplications.term%%%",
                 "endTerm": "%%%.me.proSaving.listApplications.endTerm%%%",
                 "noInvestment": "%%%.me.proSaving.listApplications.noInvestment%%%",
+                "noSpendings": "%%%.me.proSaving.listApplications.noSpendings%%%",
                 "noMoreInvestment": "%%%.me.proSaving.listApplications.noMoreInvestment%%%",
                 "autoTopup": "%%%.me.proSaving.listApplications.autoTopup%%%",
                 "apr": "%%%.me.proSaving.listApplications.apr%%%",
@@ -792,6 +875,7 @@
                 "ref_number": "%%%.me.proSaving.listApplications.ref_number%%%",
                 "delete": "%%%.me.proSaving.listApplications.delete%%%",
                 "totalInterestDesc": "%%%.me.proSaving.listApplications.totalInterestDesc%%%",
+                "cashBack": "%%%.me.proSaving.listApplications.cashBack%%%",
                 "termStatus": {
                     "matching": "%%%.me.proSaving.listApplications.termStatus.matching%%%",
                     "pending": "%%%.me.proSaving.listApplications.termStatus.pending%%%",
@@ -1329,7 +1413,10 @@
             "bankNameHolder": "%%%.me.bankInfo.bankNameHolder%%%",
             "bankAccountNameHolder": "%%%.me.bankInfo.bankAccountNameHolder%%%",
             "bankAccountNumberHolder": "%%%.me.bankInfo.bankAccountNumberHolder%%%",
-            "input2FA": "%%%.me.bankInfo.input2FA%%%"
+            "input2FA": "%%%.me.bankInfo.input2FA%%%",
+            "bankStatus": {
+                "pending_automatic_verification_desc": "%%%.me.bankInfo.bankStatus.pending_automatic_verification_desc%%%"
+            }
         },
         "accountInfo": {
             "title": "%%%.me.accountInfo.title%%%",
@@ -5031,6 +5118,7 @@
         "btnWithdrawCrypto": "%%%.menuMobile.btnWithdrawCrypto%%%",
         "btnDepositFiat": "%%%.menuMobile.btnDepositFiat%%%",
         "btnDepositCrypto": "%%%.menuMobile.btnDepositCrypto%%%",
+        "btnGiftCard": "%%%.menuMobile.btnGiftCard%%%",
         "btnDailyLogin": "%%%.menuMobile.btnDailyLogin%%%",
         "greeting": {
             "hi": "%%%.menuMobile.greeting.hi%%%",
@@ -5067,7 +5155,8 @@
         "btnLOSecondaryMarket": "%%%.menuMobile.btnLOSecondaryMarket%%%",
         "btnLoans": "%%%.menuMobile.btnLoans%%%",
         "btnLoansC2C": "%%%.menuMobile.btnLoansC2C%%%",
-        "btnLoanSettings": "%%%.menuMobile.btnLoanSettings%%%"
+        "btnLoanSettings": "%%%.menuMobile.btnLoanSettings%%%",
+        "btnSpending": "%%%.menuMobile.btnSpending%%%"
     },
     "landingPage": {
         "steadyGrowth": {
@@ -5157,10 +5246,10 @@
                 }
             }
         },
-        "promotionGeneralV3": {
-            "title": "%%%.landingPage.promotionGeneralV3.title%%%",
-            "titleMobile": "%%%.landingPage.promotionGeneralV3.titleMobile%%%",
-            "desc": "%%%.landingPage.promotionGeneralV3.desc%%%"
+        "christmas": {
+            "title": "%%%.landingPage.christmas.title%%%",
+            "titleMobile": "%%%.landingPage.christmas.titleMobile%%%",
+            "desc": "%%%.landingPage.christmas.desc%%%"
         },
         "promotionCryptoBacked": {
             "title": "%%%.landingPage.promotionCryptoBacked.title%%%",
@@ -5548,6 +5637,30 @@
             "defaultRateDesc": "%%%.statistic.stats.defaultRateDesc%%%",
             "recoveryRate": "%%%.statistic.stats.recoveryRate%%%",
             "recoveryRateDesc": "%%%.statistic.stats.recoveryRateDesc%%%"
+        }
+    },
+    "giftCard": {
+        "title": "%%%.giftCard.title%%%",
+        "intro": {
+            "content": "%%%.giftCard.intro.content%%%",
+            "desc": {
+                "1": "%%%.giftCard.intro.desc.1%%%",
+                "2": "%%%.giftCard.intro.desc.2%%%",
+                "3": "%%%.giftCard.intro.desc.3%%%"
+            }
+        },
+        "form": {
+            "title": "%%%.giftCard.form.title%%%",
+            "retailer": "%%%.giftCard.form.retailer%%%",
+            "amount": "%%%.giftCard.form.amount%%%",
+            "youPay": "%%%.giftCard.form.youPay%%%",
+            "cashbackNote": "%%%.giftCard.form.cashbackNote%%%"
+        },
+        "successBox": {
+            "title": "%%%.giftCard.successBox.title%%%",
+            "subtitle": "%%%.giftCard.successBox.subtitle%%%",
+            "note": "%%%.giftCard.successBox.note%%%",
+            "newOrder": "%%%.giftCard.successBox.newOrder%%%"
         }
     }
 }

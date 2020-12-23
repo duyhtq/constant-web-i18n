@@ -204,7 +204,8 @@
         "heading": "Experience multi-market <br/> <span style=\"color:#F5A623;\">peer-to-peer</span> lending.",
         "follow": "Follow",
         "statistics": "Statistics",
-        "statisticsDesc": "View historical loan performance and more."
+        "statisticsDesc": "View historical loan performance and more.",
+        "giftCard": "Gift Cards"
     },
     "memberShip": {
         "pointNeed2GetGold": "You still need {value} points to reach Gold Member status",
@@ -592,7 +593,8 @@
                 "3": "Approving",
                 "4": "Rejected",
                 "5": "Confirming",
-                "6": "Order timed out"
+                "6": "Order timed out",
+                "7": "Waiting Approving"
             },
             "sendToAddress": "Send To Address",
             "orderType": {
@@ -646,6 +648,84 @@
                 "14": "Transferring",
                 "15": "Confirming",
                 "16": "Order timed out"
+            },
+            "reverseType": {
+                "pending": {
+                    "label": "In progress"
+                },
+                "purchasing": {
+                    "label": "In progress",
+                    "desc": "Your deposit order was created successfully. Once we receive your funds, it might take up to 1 business day for your balance to update. "
+                },
+                "coinMinting": {
+                    "label": "In progress"
+                },
+                "coinBurning": {
+                    "label": "In progress"
+                },
+                "transferring": {
+                    "label": "In progress"
+                },
+                "redeemingAch": {
+                    "label": "Processing (ACH)",
+                    "desc": "Your withdrawal is being processed. ACH withdrawals may take 3-5 business days (weekends not included) to reach your account.",
+                    "desc1": "Sorry, it's taking a little longer to process your withdrawal. We're working with our custodian to get your money to you as soon as possible. In the meantime, you earn 12% APY on your withdrawal amount for every day we're late. For more info, please email us on hello@myconstant.com."
+                },
+                "redeemingWire": {
+                    "label": "Processing (Wire)",
+                    "desc": "Your withdrawal is being processed. Wires may take 2-5 business days (not including weekends) to reach your account.",
+                    "desc1": "Sorry, it's taking a little longer to process your withdrawal. We're working with our custodian to get your money to you as soon as possible. In the meantime, you earn 12% APY on your withdrawal amount for every day we're late. For more info, please email us on hello@myconstant.com."
+                },
+                "redeemingZelle": {
+                    "label": "Processing (Zelle)",
+                    "desc": "Your withdrawal is being processed. Zelle withdrawals may take up to 1 business day to reach your account (weekends not included).",
+                    "desc1": "Sorry, it's taking a little longer to process your withdrawal. We're working with our custodian to get your money to you as soon as possible. In the meantime, you earn 12% APY on your withdrawal amount for every day we're late. For more info, please email us on hello@myconstant.com."
+                },
+                "redeemingFiat": {
+                    "label": "In progress",
+                    "desc": "Your withdrawal is being processed. It may take 3-5 business days (not including weekends) to reach your account.",
+                    "desc1": "Sorry, it's taking a little longer to process your withdrawal. We're working with our custodian to get your money to you as soon as possible. In the meantime, you earn 12% APY on your withdrawal amount for every day we're late. For more info, please email us on hello@myconstant.com."
+                },
+                "cancelled": {
+                    "label": "Canceled",
+                    "desc": "Your transaction was canceled."
+                },
+                "done": {
+                    "label": "Successful",
+                    "desc": "Your transaction was approved and has completed successfully."
+                },
+                "holding": {
+                    "label": "In progress",
+                    "desc": "Your funds are currently being held for another order. This could be because they're allocated to an investment order that hasn't started yet. For more info, please email us on hello@myconstant.com."
+                },
+                "transferringFailed": {
+                    "label": "Failed",
+                    "desc": "Your crypto transfer failed and the funds returned to your balance. This could be for many reasons, including network or wallet issues. Please recreate your order or email us on hello@myconstant.com for support."
+                },
+                "approving": {
+                    "label": "In progress",
+                    "desc": "Your withdrawal request was flagged for additional review before we can process your withdrawal. This added security measure is our system’s way to prevent against suspicious account activity and protect your crypto."
+                },
+                "agentApproving": {
+                    "label": "In progress",
+                    "desc": "Your withdrawal has been flagged for manual review. It might take a little longer to process your withdrawal, but it helps protects your crypto and the security of our platform. Please email us on hello@myconstant.com if you have any questions."
+                },
+                "tokenTransferring": {
+                    "label": "Transferring",
+                    "desc": "Your cryptocurrency is on its way to the receiving wallet address. This should take no longer than an hour for small amounts of certain cryptos, but others or larger amounts may take up to 1 business day. Please view our <a class=\"underline bold\" href=\"/getPrices\">service times</a> for more information. "
+                },
+                "emailConfirming": {
+                    "label": "Awaiting confirmation",
+                    "desc": "Please confirm your transaction by clicking the link in the email we sent you. For your security, this transaction will time-out unless you confirm it within the next 15 minutes."
+                },
+                "timeout": {
+                    "label": "Order timed out",
+                    "desc": "Your order timed out. This happens when you don't confirm a transaction in time (such as an email confirmation) or when we never receive funds for an investment order you created."
+                },
+                "reversed": {
+                    "label": "Correction",
+                    "desc": "This corrects a previous deposit error such as an overpayment or duplicate transaction. For more information, please email us on hello@myconstant.com."
+                }
             },
             "requestExecute": "Help",
             "transactionID": "#",
@@ -758,6 +838,8 @@
                 "secondaryMarketHistoryDetail": "Secondary Market History Detail",
                 "secondInvestmentsLO": "Loan Originator Secondary Market",
                 "secondInvestmentsLODesc": "Buy and sell matched investments on our secondary market. Sell your investment to end your term early or buy another investor’s order to earn their interest. View or cancel your secondary market orders below.",
+                "spendings": "Purchases",
+                "spendingsDesc": "Gift cards and other items or services bought using your MyConstant balance.",
                 "termStatusFilter": {
                     "investment": {
                         "pending": "Pending",
@@ -783,6 +865,7 @@
                 "term": "Term",
                 "endTerm": "Term ends",
                 "noInvestment": "Make your investment of any amount today.",
+                "noSpendings": "Save up to 3% on MyConstant gift cards",
                 "noMoreInvestment": "Make your first investment of any amount today.",
                 "autoTopup": "Auto top-up",
                 "apr": "APR",
@@ -792,6 +875,7 @@
                 "ref_number": "Ref number",
                 "delete": "Delete",
                 "totalInterestDesc": "This is the interest you will earn for the full term. If a borrower repays early, you will earn the interest to date.",
+                "cashBack": "Cashback",
                 "termStatus": {
                     "matching": "Matching",
                     "pending": "Matching",
@@ -1329,7 +1413,10 @@
             "bankNameHolder": "Enter Bank Name",
             "bankAccountNameHolder": "Enter Bank Account Name",
             "bankAccountNumberHolder": "Enter Bank Account Number",
-            "input2FA": "Please, enter your OTP"
+            "input2FA": "Please, enter your OTP",
+            "bankStatus": {
+                "pending_automatic_verification_desc": "We're automatically verifying your bank account. This should only take a few hours and you don't need to do anything. Once verified, you'll be able to use this account for ACH deposits and withdrawals."
+            }
         },
         "accountInfo": {
             "title": "Your account details",
@@ -4058,7 +4145,7 @@
         }
     },
     "cryptoLend": {
-        "contentHtml": "\n      <p class=\"topText\">Secured crypto lending</p>\n      <h1 class=\"hightlight\">Earn {interest}% APY <br/>on BTC, ETH, and BNB.</h1>\n      <h2>Compounded and paid every second.</h2>\n      <h2 class=\"last\">Backed by MyConstant.</h2>\n      <p>Invest your idle cryptocurrencies for a return of {interest}% APY. All lending is backed by MyConstant Guarantee<sup>1</sup> and you can withdraw anytime for free. No fees. No lock-ups. Compounded every second.</p>\n      <p><sup>1</sup>The MyConstant Guarantee is a $3,000,000 fund that underwrites all investments in Crypto Lend, protecting you from losses.</p>\n    ",
+        "contentHtml": "\n      <p class=\"topText\">Secured crypto lending</p>\n      <h1 class=\"hightlight\">Earn {interest}% APY <br/>on BTC, ETH, and BNB.</h1>\n      <h2>Compounded and paid every second.</h2>\n      <h2 class=\"last\">Backed by MyConstant.</h2>\n      <p>Invest your idle cryptocurrencies for a return of {interest}% APY. All lending is backed by MyConstant Guarantee<sup>1</sup> and you can withdraw anytime for free. No fees. No lock-ups. Compounded every second.</p>\n      <p><sup>1</sup>The MyConstant Guarantee defines a limit of investment within which MyConstant can protect invested funds from loss or theft while in the custody of third parties.</p>\n    ",
         "learnMore": "Learn more here",
         "intro": {
             "desc": {
@@ -4994,7 +5081,7 @@
             "generalCode400": "Something went wrong, please try again! (400)",
             "generalError": "Oops! Something went wrong, please try again",
             "collateralSuspendRecall": "Sorry, you can't recall excess on {symbol} collateral due to pricing volatility. We regularly review market activity and {symbol} prices are highly volatile at the moment. We've therefore limited recall excess on {symbol} to protect you from an increased risk of liquidation. For more information, please contact hello@myconstant.com.",
-            "not_enough_balance": "Your balance is insufficient. Please try again with a different amount.",
+            "not_enough_balance": "Your balance is insufficient. Please deposit sufficient funds.",
             "violateBonusPolicy": "Your bonus can't be withdrawn for 30 days. This gives you time to try our platform and make some money through our Flex account.",
             "reserveNotEnough": "Sorry, we can't create your order at the moment. Please contact us at hello@myconstant.com and we'll help fix this issue for you.",
             "already_bought_void_term_deposit": "You’ve already joined the matching queue for this order. Our system will randomly select a buyer to fulfil this order in priority of membership level. If you’re selected, your investment will start automatically and we’ll notify you by email.",
@@ -5031,6 +5118,7 @@
         "btnWithdrawCrypto": "<div class=\"textLeft\"><small>Withdraw</small><div>Crypto</div></div>",
         "btnDepositFiat": "<div class=\"textLeft\"><small>Deposit</small><div>USD</div></div>",
         "btnDepositCrypto": "<div class=\"textLeft\"><small>Deposit</small><div>Crypto</div></div>",
+        "btnGiftCard": "<div class=\"textLeft\"><div>Gift Cards</div></div>",
         "btnDailyLogin": "<div class=\"textLeft\"><small>Claim your</small><div>Daily Login</div></div>",
         "greeting": {
             "hi": "Hi you",
@@ -5067,7 +5155,8 @@
         "btnLOSecondaryMarket": "<div class=\"textLeft\"><small>Secondary market</small><div>Loan Originator</div></div>",
         "btnLoans": "Loans",
         "btnLoansC2C": "Crypto Credit",
-        "btnLoanSettings": "<div class=\"textLeft\"><small>Loan</small><div>Settings</div></div>"
+        "btnLoanSettings": "<div class=\"textLeft\"><small>Loan</small><div>Settings</div></div>",
+        "btnSpending": "Purchases"
     },
     "landingPage": {
         "steadyGrowth": {
@@ -5157,10 +5246,10 @@
                 }
             }
         },
-        "promotionGeneralV3": {
-            "title": "\n        <p class=\"header\">Your first investment is on us <br/>(free ${kYCTrialAmount} trial)</p>\n      ",
-            "titleMobile": "\n        <p class=\"header\">Your first investment is on us <br/>(<span class=\"hightlight\">free ${kYCTrialAmount}</span> trial)</p>\n      ",
-            "desc": "\n        <p>Try P2P investing before spending a cent of your own money. Sign up and verify your ID (pass KYC) and you’ll earn 4% APY on a ${kYCTrialAmount} trial bonus, compounded and paid every second. After 30 days, we take back the bonus but the interest is yours to keep or reinvest.</p>\n        <p>Hurry – the offer is for a limited time and only available to US citizens.</p>\n      "
+        "christmas": {
+            "title": "\n        <p class=\"header\">Kick off the new year with <br/>a free ${kYCTrialAmount} trial</p>\n      ",
+            "titleMobile": "\n        <p class=\"header\">Kick off the new year with <br/>a free ${kYCTrialAmount} trial</p>\n      ",
+            "desc": "\n        <p>Boost your finances this festive season with P2P investing. Earn up to 20x better interest than a savings account. No fees and all loans backed by collateral. Sign up now to enjoy <strong>a free ${kYCTrialAmount} bonus at 4% APY.</strong> After 30 days, we take back the bonus but you keep the interest.</p>\n        <p style=\"font-style: italic;\">This offer is for a limited time and only available to US citizens.</p>\n      "
         },
         "promotionCryptoBacked": {
             "title": "        <p class=\"header\">Try secured P2P lending with a free ${kYCTrialAmount} bonus</p>        <p>Earn up to {rate}% APR with crypto-backed P2P lending. Sign up now to get a free ${kYCTrialAmount} bonus at 4% APY to start. After 30 days, we reclaim the bonus but you keep the interest.</p>        <p>This offer is only available for a limited time.</p>      ",
@@ -5548,6 +5637,30 @@
             "defaultRateDesc": "This is the percentage of loans that were liquidated due to borrower default or collateral devaluation since launch. This figure is updated daily.",
             "recoveryRate": "Recovery rate",
             "recoveryRateDesc": "This is the percentage of loan funds recovered as a result of collateral liquidation due to borrower default or collateral devaluation. This figure is updated daily."
+        }
+    },
+    "giftCard": {
+        "title": "Gift cards",
+        "intro": {
+            "content": "\n        <p class=\"topText\">Pay less for what you love</p>\n        <h1>Save <span class=\"hightlight\">up to {rate}%</span> on gift cards*</h1>\n        <h2>Choose from <span class=\"hightlight\">{numCollateral}+ retailers</span>.</h2>\n        <h2 class=\"last\"><span class=\"hightlight\">Instant</span> digital delivery.</h2>\n        <p>Shop and save up to 3% at your favorite brands and restaurants with MyConstant Gift Cards. Choose an amount and retailer and get your card in seconds. No fees. No postage. Never pay full price again.</p>\n        <p>The 3% saving applies to gift cards purchased before {date} and is paid instantly as cashback to your MyConstant balance.</p>\n      ",
+            "desc": {
+                "1": "Pay up to 3% less for your favorite brands",
+                "2": "Instant payment through your MyConstant balance",
+                "3": "Gift card code sent straight to your inbox"
+            }
+        },
+        "form": {
+            "title": "Where do you want to shop?",
+            "retailer": "Retailer",
+            "amount": "Amount",
+            "youPay": "You pay",
+            "cashbackNote": "${amount} will return to your MyConstant balance as cashback."
+        },
+        "successBox": {
+            "title": "You saved ${savedAmount}!",
+            "subtitle": "Nice work, {name}! Your gift card is on its way to your inbox now. In the meantime, view your order details below.",
+            "note": "If you have any queries regarding your order, please contact our Customer Services team on <a href=\"mailto://hello@myconstant.com\">hello@myconstant.com</a>",
+            "newOrder": "Place new order"
         }
     }
 }

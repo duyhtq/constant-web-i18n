@@ -350,15 +350,18 @@ export default {
     minDepositRequired: 'Please enter an amount larger than {amount} {currency}',
     minAmountRequired: 'All investments must be at least {amount} {currency}',
     minDepositAmount: 'Minimum investment amount: {amount}',
-    interestRate: 'Interest rate: {interest}% APY',
+    interestRate: 'Interest rate: {interest}% {interestType} {inCollateral}',
     getAmountFailed: 'Failed while getting amount, please try again',
     generateAddress: 'Generate address',
     deposit: 'Deposit',
     depositSuccess: 'Your deposit was completed successfully',
-    earnInterest: 'Earn an automatic {interest}% APY',
+    earnInterest: 'Earn an automatic {interest}% {interestType} {inCollateral}',
     depositCryptoDescription: 'Choose a crypto or stablecoin below and then send your funds to the wallet address shown. There is no minimum or maximum deposit.',
     getCurrencyListFailed: 'Failed while getting supported currencies',
     minDeposit: 'Please transfer a minimum of {amount} to the following wallet address',
+    prvDescription: `PRV is the native token of privacy network, Incognito. It enables you to digitally transact crypto in private and is readily exchanged for other cryptocurrencies through Incognito’s pDEX (decentralized exchange). We negotiated a special interest rate in PRV that helps you take advantage of private transactions over the Incognito network. To learn more about PRV, <a class="underline" href="https://incognito.org/" target="_blank">visit the Incognito community</a>.`,
+    payInterestIn: 'Pay interest in:',
+    depositCollateralSuccess: `Thanks – you'll now earn {interest}% {interestType} interest on your {collateral} balance, paid in {inCollateral}.`,
   },
   history: {
     deposit: {
@@ -1225,7 +1228,7 @@ export default {
       personalInfo: 'About you',
       kycInformation: 'KYC information',
       bankInfo: 'Bank information',
-      myInformation: 'Account details',
+      myInformation: 'Account settings',
       securities: 'Account security',
       notification_settings: 'Notification settings',
       myTransactions: 'Account activity',
@@ -1592,7 +1595,7 @@ export default {
       },
       investFlex: {
         title: 'Flex',
-        desc: '{percent}% APY. Withdraw anytime.  <br/>No fees.'
+        desc: '{interest}% APY. Withdraw anytime.  <br/>No fees.'
       },
       investCustom: {
         title: 'Crypto-backed',
@@ -1604,7 +1607,7 @@ export default {
       },
       investFlexCrypto: {
         title: 'Crypto Lend',
-        desc: 'Get 9% APY on BTC, ETH,<br/>and BNB.'
+        desc: 'Get {interest}% APY on BTC, ETH,<br/>and BNB.'
       },
       borrow: {
         title: 'Borrow',
@@ -4214,17 +4217,17 @@ export default {
   },
   cryptoLend: {
     contentHtml: `
-      <p class="topText">Secured crypto lending</p>
-      <h1 class="hightlight">Earn {interest}% APY <br/>on BTC, ETH, and BNB.</h1>
-      <h2>Compounded and paid every second.</h2>
-      <h2 class="last">Backed by MyConstant.</h2>
-      <p>Invest your idle cryptocurrencies for a return of {interest}% APY. All lending is backed by MyConstant Guarantee<sup>1</sup> and you can withdraw anytime for free. No fees. No lock-ups. Compounded every second.</p>
+      <p class="topText">Lend your idle cryptos</p>
+      <h1 class="hightlight">Earn up to 11% APR.</h1>
+      <h2>Invest BTC, ETH, and BNB.</h2>
+      <h2 class="last">No fees, penalties, or lock-ups.</h2>
+      <p>Invest your idle cryptocurrencies and get up to 11% APR. Unlock the best rate when you receive interest in PRV. Otherwise, earn {interest}% APY in BTC, ETH, or BNB, compounded and paid every second. Withdraw interest and principal anytime. All lending backed by MyConstant Guarantee<sup>1</sup>.</p>
       <p><sup>1</sup>The MyConstant Guarantee defines a limit of investment within which MyConstant can protect invested funds from loss or theft while in the custody of third parties.</p>
     `,
     learnMore: 'Learn more here',
     intro: {
       desc: {
-        1: 'All lending 100% backed by MyConstant',
+        1: 'Investments protected by MyConstant Guarantee',
         2: 'Interest compounded and paid every second',
         3: 'Unlimited free withdrawals',
       }

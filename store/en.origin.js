@@ -384,7 +384,10 @@
         "earnInterest": "%%%.exchangeInputDepositForm.earnInterest%%%",
         "depositCryptoDescription": "%%%.exchangeInputDepositForm.depositCryptoDescription%%%",
         "getCurrencyListFailed": "%%%.exchangeInputDepositForm.getCurrencyListFailed%%%",
-        "minDeposit": "%%%.exchangeInputDepositForm.minDeposit%%%"
+        "minDeposit": "%%%.exchangeInputDepositForm.minDeposit%%%",
+        "prvDescription": "%%%.exchangeInputDepositForm.prvDescription%%%",
+        "payInterestIn": "%%%.exchangeInputDepositForm.payInterestIn%%%",
+        "depositCollateralSuccess": "%%%.exchangeInputDepositForm.depositCollateralSuccess%%%"
     },
     "history": {
         "deposit": {

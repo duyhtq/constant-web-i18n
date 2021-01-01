@@ -331,6 +331,9 @@ export default {
         user_badge_result: 'Achieved {badgeName} Badge',
         user_referral_kyc_passed: 'Your referee passed KYC – you\'ve earned 200 points',
         users__referee: 'Your referee deposited at least $50 – you\'ve upgraded to Diamond for 30 days',
+        gift_ticket_transaction: 'Prize Wheel spin',
+        user_tickets: 'Prize Wheel reward',
+        gift_reward: 'Prize Wheel reward',
       },
     },
   },
@@ -1588,6 +1591,7 @@ export default {
     testimonial: 'Why people love us',
     testimonialDesc: 'Praise from customers, partners, and press.',
     history: 'History',
+    prizeWheel: 'Prize Wheel',
     extraMenu: {
       invest: {
         title: 'Invest',
@@ -5311,6 +5315,7 @@ export default {
     btnLoansC2C: 'Crypto Credit',
     btnLoanSettings: '<div class="textLeft"><small>Loan</small><div>Settings</div></div>',
     btnSpending: 'Purchases',
+    prizeWheel: '<span class="prizeWheel">Prize Wheel</span>',
   },
   landingPage: {
     steadyGrowth: {
@@ -5407,6 +5412,18 @@ export default {
     },
     christmas: {
       title: `
+        <p class="header">Get your free \${kYCTrialAmount} trial <br/>to celebrate our 2nd birthday</p>
+      `,
+      titleMobile: `
+        <p class="header">Get your free \${kYCTrialAmount} trial <br/>to celebrate our 2nd birthday</p>
+      `,
+      desc: `
+        <p>We’re another year older and giving away double bonuses to celebrate. Sign up and verify your ID (KYC) and <strong>your first investment of \${kYCTrialAmount} at 4% APY is on us.</strong> After 30 days, we reclaim the bonus but you keep the interest. All lending is backed by collateral, protecting your funds, and there are no fees. Claim your bonus now for double returns.</p>
+        <p style="font-style: italic;">This offer is for a limited time and only available to US citizens.</p>
+      `,
+    },
+    birthday: {
+      title: `
         <p class="header">Kick off the new year with <br/>a free \${kYCTrialAmount} trial</p>
       `,
       titleMobile: `
@@ -5416,6 +5433,68 @@ export default {
         <p>Boost your finances this festive season with P2P investing. Earn up to 20x better interest than a savings account. No fees and all loans backed by collateral. Sign up now to enjoy <strong>a free \${kYCTrialAmount} bonus at 4% APY.</strong> After 30 days, we take back the bonus but you keep the interest.</p>
         <p style="font-style: italic;">This offer is for a limited time and only available to US citizens.</p>
       `,
+    },
+    luckySpin: {
+      title: 'Lucky Spin',
+      howItWorks: {
+        title: 'How to get spins',
+        desc: 'From <strong>January 1st 00:00 PST to January 7th 23:59 PST,</strong> you can earn spins in the following ways:',
+        data: {
+          0: {
+            title: 'Deposit USD',
+            desc: '<p>When you deposit USD, you’ll receive the same amount divided by 100 in spins (rounded up to the nearest whole number). For example, deposit $5,001 and you’ll receive 51 spins.</p>'
+          },
+          1: {
+            title: 'Refer friends',
+            desc: '<p>For every friend you refer who passes KYC, you get 1 spin.</p>'
+          },
+          2: {
+            title: 'Send us birthday wishes',
+            desc: '<p>Wish us a happy birthday in the chat box and you get a spin (maximum of 1 per day).</p>'
+          },
+          3: {
+            title: 'Share our birthday event on social media',
+            desc: '<p>Click the social share buttons on the right to post our event on social media and you get 1 spin. Multiple shares don’t result in more spins.</p>'
+          },
+          4: {
+            title: 'Trade membership points',
+            desc: '<p>You can trade 1,000 membership points for 1 spin. The more membership points you spend, the more spins you get, and the better your chances of winning the grand prize of $1,000.</p>'
+          }
+        }
+      },
+      intro: {
+        contentHtml: `
+          <h1 class="last"><span class="hightlight">Win up to $1,000</span> in our birthday prize giveaway</h1>
+          <p>
+          It might be our birthday, but you’re getting the gifts! For one week only, we’re giving away <strong>prizes of $1,000</strong> when you spin our Prize Wheel. Each spin <strong>guarantees</strong> a prize, including membership points and extra spins. Want more spins? Refer, share, or send us some birthday wishes – you can even “buy” spins with your membership points.
+          </p>
+        `,
+        desc: {
+          1: 'A cash reward of $1,000 paid instantly to your MyConstant account.',
+          2: 'Double membership points & other rewards of 100-5,000 points.',
+          3: 'Other cool giveaways from cash rewards of $1 or extra spins.',
+        }
+      },
+      howToExchange: {
+        title: 'How to exchange spins for prizes',
+        desc: 'Celebrate our 2nd birthday by completing simple tasks. The more tasks you do, the more spins you will get. All spins are guaranteed with gifts',
+        data: {
+          0: {
+            title: 'Visit the app',
+            desc: '<p>Once you’ve earned spins, visit the Prize Wheel on the MyConstant app.</p>'
+          },
+          1: {
+            title: 'Spin the Prize Wheel',
+            desc: '<p>Click Tap to Spin. When the Wheel stops, you’ll see your prize.</p>'
+          },
+          2: {
+            title: 'Get your prize',
+            desc: '<p>The prize is delivered instantly to your MyConstant account.</p>'
+          },
+        }
+      },
+      learnMore: 'Learn more here',
+      downloadApp: 'DOWNLOAD NOW',
     },
     promotionCryptoBacked: {
       title: '        <p class="header">Try secured P2P lending with a free ${kYCTrialAmount} bonus</p>        <p>Earn up to {rate}% APR with crypto-backed P2P lending. Sign up now to get a free ${kYCTrialAmount} bonus at 4% APY to start. After 30 days, we reclaim the bonus but you keep the interest.</p>        <p>This offer is only available for a limited time.</p>      ',
@@ -5802,6 +5881,7 @@ export default {
     "lb_interest_rate": "Interest rate",
     "lb_loan_term": "Loan term",
     "up_to": "Up to {value}%",
+    "from": "From {value}%",
   },
   productsAndBenefits: {
     title: 'Our products and benefits',
@@ -5861,7 +5941,8 @@ export default {
       retailer: 'Retailer',
       amount: 'Amount',
       youPay: 'You pay',
-      cashbackNote: '${amount} will return to your MyConstant balance as cashback.'
+      cashbackNote: '${amount} will return to your MyConstant balance as cashback.',
+      notEnoughBalance: 'Sorry, you don\'t have enough in your balance to order this gift card. Please deposit now and then return to this page and select your gift card again.',
     },
     successBox: {
       title: 'You saved ${savedAmount}!',

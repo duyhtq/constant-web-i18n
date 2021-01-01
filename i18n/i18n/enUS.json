@@ -356,7 +356,10 @@
                 "saving_termdeposit": "Invested ${amount}",
                 "user_badge_result": "Achieved {badgeName} Badge",
                 "user_referral_kyc_passed": "Your referee passed KYC – you've earned 200 points",
-                "users__referee": "Your referee deposited at least $50 – you've upgraded to Diamond for 30 days"
+                "users__referee": "Your referee deposited at least $50 – you've upgraded to Diamond for 30 days",
+                "gift_ticket_transaction": "Prize Wheel spin",
+                "user_tickets": "Prize Wheel reward",
+                "gift_reward": "Prize Wheel reward"
             }
         }
     },
@@ -1638,6 +1641,7 @@
         "testimonial": "Why people love us",
         "testimonialDesc": "Praise from customers, partners, and press.",
         "history": "History",
+        "prizeWheel": "Prize Wheel",
         "extraMenu": {
             "invest": {
                 "title": "Invest",
@@ -1827,19 +1831,75 @@
                 "viewAll": "View us on TrustPilot",
                 "readMore": "Read more",
                 "reviews": "Reviews",
-                "numReview": "665",
+                "numReview": "689",
                 "excellent": "Excellent",
                 "points": "4.6/5",
                 "data": {
                     "0": {
                         "star": "5",
+                        "title": "Skeptical at first but LOVE it now",
+                        "desc": "I had some minor issues regarding the transfer of funds but those were worked out a while ago. The returns are very good, and my experience has been very predictable and pleasant.",
+                        "date": "Dec 29, 2020",
+                        "auth": "John Graham",
+                        "link": "https://www.trustpilot.com/reviews/5feaacc1755dc1032c0602d9"
+                    },
+                    "1": {
+                        "star": "5",
+                        "title": "Great Communication, Great Returns!",
+                        "desc": "Great communication from the helpdesk team and easy to understand with competitive rates! Would definitely recommend and continue to use to build my wealth.",
+                        "date": "Dec 28, 2020",
+                        "auth": "John Rickgarn",
+                        "link": "https://www.trustpilot.com/reviews/5fe981fd755dc107e0d048ed"
+                    },
+                    "2": {
+                        "star": "5",
+                        "title": "Great place for investment",
+                        "desc": "They give you much more returns than any other traditional bank. As many of us are using it and everyday many are joining, it is quite trustworthy. Depositing and withdrawing money is pretty smooth and fast. Thanks for your service.",
+                        "date": "Dec 26, 2020",
+                        "auth": "Abhisek Saha",
+                        "link": "https://www.trustpilot.com/reviews/5fe666c8755dc107e0cec173"
+                    },
+                    "3": {
+                        "star": "5",
+                        "title": "I love this app",
+                        "desc": "I was skeptical at first but once I saw the money was growing I started to invest more money, especially they start with their own money to give you the head start on the great way to earn a quality money. Thank you MyConstant.",
+                        "date": "Dec 23, 2020",
+                        "auth": "Dee Rophael",
+                        "link": "https://www.trustpilot.com/reviews/5fe2d4c2755dc1032c00f687"
+                    },
+                    "4": {
+                        "star": "5",
+                        "title": "New to it but so far so good",
+                        "desc": "So far seems like a great place, fabulous sign up bonus along with achievement badges even once the bonus runs out to keep giving you rewards.",
+                        "date": "Dec 18, 2020",
+                        "auth": "Olivia Conrad",
+                        "link": "https://www.trustpilot.com/reviews/5fdc30b0755dc107e0c71043"
+                    },
+                    "5": {
+                        "star": "5",
+                        "title": "Stellar CS and great interest rates",
+                        "desc": "The mobile app is constantly updated and provides a clear clean interface. I am also very pleased with their competitive interest baring rates and will continue to reinvest and invest more money into their platform!",
+                        "date": "Dec 16, 2020",
+                        "auth": "Fubag",
+                        "link": "https://www.trustpilot.com/reviews/5fd971ee755dc107e0c4877d"
+                    },
+                    "6": {
+                        "star": "5",
+                        "title": "With MyConstant for almost a year",
+                        "desc": "I was initially apprehensive, but have always earned the return on my money promised. When I've had questions they were answered promptly. The few times I've had problems, they were resolved quickly and cheerfully.",
+                        "date": "Dec 13, 2020",
+                        "auth": "Dan Nechodom",
+                        "link": "https://www.trustpilot.com/reviews/5fd5539f755dc10b4820e37a"
+                    },
+                    "7": {
+                        "star": "5",
                         "title": "Great app",
-                        "desc": "It gives you a trial of 2000 to watch it grow. Then it takes that back but you keep what you earned from it. I put my own 120 in and make 1 cent a day. It’s a 4% flex account but they have crypto investing and many things to do. All easy to use and learn.",
-                        "date": "Dec 12, 2020",
+                        "desc": "It gives you a trial of $2,000 for a while to watch it grow. I put my own $120 in and I make 1 cent a day. It’s a 4% Flex account, but they have crypto investing and many things to do. All easy to use and learn.",
+                        "date": "Dec 14, 2020",
                         "auth": "Sal",
                         "link": "https://www.trustpilot.com/reviews/5fd524fc755dc107e0c11569"
                     },
-                    "1": {
+                    "8": {
                         "star": "5",
                         "title": "A good way to beat inflation",
                         "desc": "I researched this company hard prior to trusting them with my money. It all seemed too good to be true. However, after earning 4% interest in their Flex account plus 6% on crypto-backed investments with them, I now am sure that they are a solid company.",
@@ -1847,69 +1907,13 @@
                         "auth": "Sam U",
                         "link": "https://www.trustpilot.com/reviews/5fd3a191755dc10b481f7a7f"
                     },
-                    "2": {
+                    "9": {
                         "star": "5",
                         "title": "Love the bonuses!",
-                        "desc": "Awesome app, no bugs, $2000 bonus, killer referall bonuses, badge system is fun and good way to track progression, nice interest on investments, variety of products!",
+                        "desc": "Awesome app! No bugs, $2000 bonus, killer referall bonuses, badge system is fun and good way to track progression, nice interest on investments, variety of products!",
                         "date": "Dec 11, 2020",
                         "auth": "Sean Kilcourse",
                         "link": "https://www.trustpilot.com/reviews/5fd396ae755dc107e0bfb7e8"
-                    },
-                    "3": {
-                        "star": "5",
-                        "title": "Very good customer service",
-                        "desc": "Solid company with very good customer service. Most convenient aspect of MyConstant is that you can transfer money via Zelle and ACH. There is also a secondary market where the rates are attractive.\n\n",
-                        "date": "Dec 7, 2020",
-                        "auth": "Henry",
-                        "link": "https://www.trustpilot.com/reviews/5fcdad055e693f06047a275f"
-                    },
-                    "4": {
-                        "star": "5",
-                        "title": "Excellent investment alternative!",
-                        "desc": "I have invested in both the Flex account and their 30 day loan option, in both cases their interest has been as advertised and I have the flexibility to withdraw my funds easily through Zelle whenever I want. I highly recommend them!!",
-                        "date": "Dec 6, 2020",
-                        "auth": "Julian Taurozzi",
-                        "link": "https://www.trustpilot.com/reviews/5fcc0f215e693f06047947b3"
-                    },
-                    "5": {
-                        "star": "5",
-                        "title": "Extremely pleased",
-                        "desc": "Started with a small deposit to see how it worked. I have been extremely pleased in the way the site is very user friendly and I enjoy watching my money earn above average interest. Will continue to be using MyConstant well into the future.",
-                        "date": "Dec 6, 2020",
-                        "auth": "Marc",
-                        "link": "https://www.trustpilot.com/reviews/5fcbd5a45e693f0604792181"
-                    },
-                    "6": {
-                        "star": "5",
-                        "title": "Highly recommend this to everyone",
-                        "desc": "I have been using My constant for 2 years now and have made amazing gains both by lending as well as borrowing. Very happy with the team, customers service and how easy it is to use the app on my phone.",
-                        "date": "Dec 3, 2020",
-                        "auth": "Nicolas Rodriques Santos",
-                        "link": "https://www.trustpilot.com/reviews/5fc8bea85e693f07049e2cbe"
-                    },
-                    "7": {
-                        "star": "5",
-                        "title": "Should invest at MyConstant right now",
-                        "desc": "Anyone who is looking to get the most out of the hard earned money should be investing it at MyConstant right now. Very easy app to use and you have full support of customer service at a click away. You will not regret switching your money to MyConstant.",
-                        "date": "Nov 30, 2020",
-                        "auth": "Rick R",
-                        "link": "https://www.trustpilot.com/reviews/5fc4c4c35e693f0b10056525"
-                    },
-                    "8": {
-                        "star": "5",
-                        "title": "Great place to grow your funds",
-                        "desc": "Right now the savings account and CD interest is too low. MyConstant is pretty much risk free with high interest rate. All your savings are backed by crypto currency collateral while earning interest! Highly recommend.",
-                        "date": "Nov 29, 2020",
-                        "auth": "Lee",
-                        "link": "https://www.trustpilot.com/reviews/5fc2f9fd5e693f08f00d8e52"
-                    },
-                    "9": {
-                        "star": "5",
-                        "title": "Things have gone very well",
-                        "desc": "The interest I'm earning is far than I can earn elsewhere. I started slow with 100 deposit and saw the interest accrue. So for my second month I invested a little more plus what I had earned previously. I think I will do this every month from here on out.",
-                        "date": "Nov 27, 2020",
-                        "auth": "Kimberly Miller",
-                        "link": "https://www.trustpilot.com/reviews/5fc0fa0c5e693f0b100307a6"
                     }
                 }
             },
@@ -5159,7 +5163,8 @@
         "btnLoans": "Loans",
         "btnLoansC2C": "Crypto Credit",
         "btnLoanSettings": "<div class=\"textLeft\"><small>Loan</small><div>Settings</div></div>",
-        "btnSpending": "Purchases"
+        "btnSpending": "Purchases",
+        "prizeWheel": "<span class=\"prizeWheel\">Prize Wheel</span>"
     },
     "landingPage": {
         "steadyGrowth": {
@@ -5250,9 +5255,71 @@
             }
         },
         "christmas": {
+            "title": "\n        <p class=\"header\">Get your free ${kYCTrialAmount} trial <br/>to celebrate our 2nd birthday</p>\n      ",
+            "titleMobile": "\n        <p class=\"header\">Get your free ${kYCTrialAmount} trial <br/>to celebrate our 2nd birthday</p>\n      ",
+            "desc": "\n        <p>We’re another year older and giving away double bonuses to celebrate. Sign up and verify your ID (KYC) and <strong>your first investment of ${kYCTrialAmount} at 4% APY is on us.</strong> After 30 days, we reclaim the bonus but you keep the interest. All lending is backed by collateral, protecting your funds, and there are no fees. Claim your bonus now for double returns.</p>\n        <p style=\"font-style: italic;\">This offer is for a limited time and only available to US citizens.</p>\n      "
+        },
+        "birthday": {
             "title": "\n        <p class=\"header\">Kick off the new year with <br/>a free ${kYCTrialAmount} trial</p>\n      ",
             "titleMobile": "\n        <p class=\"header\">Kick off the new year with <br/>a free ${kYCTrialAmount} trial</p>\n      ",
             "desc": "\n        <p>Boost your finances this festive season with P2P investing. Earn up to 20x better interest than a savings account. No fees and all loans backed by collateral. Sign up now to enjoy <strong>a free ${kYCTrialAmount} bonus at 4% APY.</strong> After 30 days, we take back the bonus but you keep the interest.</p>\n        <p style=\"font-style: italic;\">This offer is for a limited time and only available to US citizens.</p>\n      "
+        },
+        "luckySpin": {
+            "title": "Lucky Spin",
+            "howItWorks": {
+                "title": "How to get spins",
+                "desc": "From <strong>January 1st 00:00 PST to January 7th 23:59 PST,</strong> you can earn spins in the following ways:",
+                "data": {
+                    "0": {
+                        "title": "Deposit USD",
+                        "desc": "<p>When you deposit USD, you’ll receive the same amount divided by 100 in spins (rounded up to the nearest whole number). For example, deposit $5,001 and you’ll receive 51 spins.</p>"
+                    },
+                    "1": {
+                        "title": "Refer friends",
+                        "desc": "<p>For every friend you refer who passes KYC, you get 1 spin.</p>"
+                    },
+                    "2": {
+                        "title": "Send us birthday wishes",
+                        "desc": "<p>Wish us a happy birthday in the chat box and you get a spin (maximum of 1 per day).</p>"
+                    },
+                    "3": {
+                        "title": "Share our birthday event on social media",
+                        "desc": "<p>Click the social share buttons on the right to post our event on social media and you get 1 spin. Multiple shares don’t result in more spins.</p>"
+                    },
+                    "4": {
+                        "title": "Trade membership points",
+                        "desc": "<p>You can trade 1,000 membership points for 1 spin. The more membership points you spend, the more spins you get, and the better your chances of winning the grand prize of $1,000.</p>"
+                    }
+                }
+            },
+            "intro": {
+                "contentHtml": "\n          <h1 class=\"last\"><span class=\"hightlight\">Win up to $1,000</span> in our birthday prize giveaway</h1>\n          <p>\n          It might be our birthday, but you’re getting the gifts! For one week only, we’re giving away <strong>prizes of $1,000</strong> when you spin our Prize Wheel. Each spin <strong>guarantees</strong> a prize, including membership points and extra spins. Want more spins? Refer, share, or send us some birthday wishes – you can even “buy” spins with your membership points.\n          </p>\n        ",
+                "desc": {
+                    "1": "A cash reward of $1,000 paid instantly to your MyConstant account.",
+                    "2": "Double membership points & other rewards of 100-5,000 points.",
+                    "3": "Other cool giveaways from cash rewards of $1 or extra spins."
+                }
+            },
+            "howToExchange": {
+                "title": "How to exchange spins for prizes",
+                "desc": "Celebrate our 2nd birthday by completing simple tasks. The more tasks you do, the more spins you will get. All spins are guaranteed with gifts",
+                "data": {
+                    "0": {
+                        "title": "Visit the app",
+                        "desc": "<p>Once you’ve earned spins, visit the Prize Wheel on the MyConstant app.</p>"
+                    },
+                    "1": {
+                        "title": "Spin the Prize Wheel",
+                        "desc": "<p>Click Tap to Spin. When the Wheel stops, you’ll see your prize.</p>"
+                    },
+                    "2": {
+                        "title": "Get your prize",
+                        "desc": "<p>The prize is delivered instantly to your MyConstant account.</p>"
+                    }
+                }
+            },
+            "learnMore": "Learn more here",
+            "downloadApp": "DOWNLOAD NOW"
         },
         "promotionCryptoBacked": {
             "title": "        <p class=\"header\">Try secured P2P lending with a free ${kYCTrialAmount} bonus</p>        <p>Earn up to {rate}% APR with crypto-backed P2P lending. Sign up now to get a free ${kYCTrialAmount} bonus at 4% APY to start. After 30 days, we reclaim the bonus but you keep the interest.</p>        <p>This offer is only available for a limited time.</p>      ",
@@ -5607,7 +5674,8 @@
     "mobile_new_home": {
         "lb_interest_rate": "Interest rate",
         "lb_loan_term": "Loan term",
-        "up_to": "Up to {value}%"
+        "up_to": "Up to {value}%",
+        "from": "From {value}%"
     },
     "productsAndBenefits": {
         "title": "Our products and benefits",
@@ -5657,7 +5725,8 @@
             "retailer": "Retailer",
             "amount": "Amount",
             "youPay": "You pay",
-            "cashbackNote": "${amount} will return to your MyConstant balance as cashback."
+            "cashbackNote": "${amount} will return to your MyConstant balance as cashback.",
+            "notEnoughBalance": "Sorry, you don't have enough in your balance to order this gift card. Please deposit now and then return to this page and select your gift card again."
         },
         "successBox": {
             "title": "You saved ${savedAmount}!",

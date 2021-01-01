@@ -356,7 +356,10 @@
                 "saving_termdeposit": "%%%.memberShip.pointHistory.activity.saving_termdeposit%%%",
                 "user_badge_result": "%%%.memberShip.pointHistory.activity.user_badge_result%%%",
                 "user_referral_kyc_passed": "%%%.memberShip.pointHistory.activity.user_referral_kyc_passed%%%",
-                "users__referee": "%%%.memberShip.pointHistory.activity.users__referee%%%"
+                "users__referee": "%%%.memberShip.pointHistory.activity.users__referee%%%",
+                "gift_ticket_transaction": "%%%.memberShip.pointHistory.activity.gift_ticket_transaction%%%",
+                "user_tickets": "%%%.memberShip.pointHistory.activity.user_tickets%%%",
+                "gift_reward": "%%%.memberShip.pointHistory.activity.gift_reward%%%"
             }
         }
     },
@@ -1638,6 +1641,7 @@
         "testimonial": "%%%.headerBar.testimonial%%%",
         "testimonialDesc": "%%%.headerBar.testimonialDesc%%%",
         "history": "%%%.headerBar.history%%%",
+        "prizeWheel": "%%%.headerBar.prizeWheel%%%",
         "extraMenu": {
             "invest": {
                 "title": "%%%.headerBar.extraMenu.invest.title%%%",
@@ -5159,7 +5163,8 @@
         "btnLoans": "%%%.menuMobile.btnLoans%%%",
         "btnLoansC2C": "%%%.menuMobile.btnLoansC2C%%%",
         "btnLoanSettings": "%%%.menuMobile.btnLoanSettings%%%",
-        "btnSpending": "%%%.menuMobile.btnSpending%%%"
+        "btnSpending": "%%%.menuMobile.btnSpending%%%",
+        "prizeWheel": "%%%.menuMobile.prizeWheel%%%"
     },
     "landingPage": {
         "steadyGrowth": {
@@ -5253,6 +5258,68 @@
             "title": "%%%.landingPage.christmas.title%%%",
             "titleMobile": "%%%.landingPage.christmas.titleMobile%%%",
             "desc": "%%%.landingPage.christmas.desc%%%"
+        },
+        "birthday": {
+            "title": "%%%.landingPage.birthday.title%%%",
+            "titleMobile": "%%%.landingPage.birthday.titleMobile%%%",
+            "desc": "%%%.landingPage.birthday.desc%%%"
+        },
+        "luckySpin": {
+            "title": "%%%.landingPage.luckySpin.title%%%",
+            "howItWorks": {
+                "title": "%%%.landingPage.luckySpin.howItWorks.title%%%",
+                "desc": "%%%.landingPage.luckySpin.howItWorks.desc%%%",
+                "data": {
+                    "0": {
+                        "title": "%%%.landingPage.luckySpin.howItWorks.data.0.title%%%",
+                        "desc": "%%%.landingPage.luckySpin.howItWorks.data.0.desc%%%"
+                    },
+                    "1": {
+                        "title": "%%%.landingPage.luckySpin.howItWorks.data.1.title%%%",
+                        "desc": "%%%.landingPage.luckySpin.howItWorks.data.1.desc%%%"
+                    },
+                    "2": {
+                        "title": "%%%.landingPage.luckySpin.howItWorks.data.2.title%%%",
+                        "desc": "%%%.landingPage.luckySpin.howItWorks.data.2.desc%%%"
+                    },
+                    "3": {
+                        "title": "%%%.landingPage.luckySpin.howItWorks.data.3.title%%%",
+                        "desc": "%%%.landingPage.luckySpin.howItWorks.data.3.desc%%%"
+                    },
+                    "4": {
+                        "title": "%%%.landingPage.luckySpin.howItWorks.data.4.title%%%",
+                        "desc": "%%%.landingPage.luckySpin.howItWorks.data.4.desc%%%"
+                    }
+                }
+            },
+            "intro": {
+                "contentHtml": "%%%.landingPage.luckySpin.intro.contentHtml%%%",
+                "desc": {
+                    "1": "%%%.landingPage.luckySpin.intro.desc.1%%%",
+                    "2": "%%%.landingPage.luckySpin.intro.desc.2%%%",
+                    "3": "%%%.landingPage.luckySpin.intro.desc.3%%%"
+                }
+            },
+            "howToExchange": {
+                "title": "%%%.landingPage.luckySpin.howToExchange.title%%%",
+                "desc": "%%%.landingPage.luckySpin.howToExchange.desc%%%",
+                "data": {
+                    "0": {
+                        "title": "%%%.landingPage.luckySpin.howToExchange.data.0.title%%%",
+                        "desc": "%%%.landingPage.luckySpin.howToExchange.data.0.desc%%%"
+                    },
+                    "1": {
+                        "title": "%%%.landingPage.luckySpin.howToExchange.data.1.title%%%",
+                        "desc": "%%%.landingPage.luckySpin.howToExchange.data.1.desc%%%"
+                    },
+                    "2": {
+                        "title": "%%%.landingPage.luckySpin.howToExchange.data.2.title%%%",
+                        "desc": "%%%.landingPage.luckySpin.howToExchange.data.2.desc%%%"
+                    }
+                }
+            },
+            "learnMore": "%%%.landingPage.luckySpin.learnMore%%%",
+            "downloadApp": "%%%.landingPage.luckySpin.downloadApp%%%"
         },
         "promotionCryptoBacked": {
             "title": "%%%.landingPage.promotionCryptoBacked.title%%%",
@@ -5607,7 +5674,8 @@
     "mobile_new_home": {
         "lb_interest_rate": "%%%.mobile_new_home.lb_interest_rate%%%",
         "lb_loan_term": "%%%.mobile_new_home.lb_loan_term%%%",
-        "up_to": "%%%.mobile_new_home.up_to%%%"
+        "up_to": "%%%.mobile_new_home.up_to%%%",
+        "from": "%%%.mobile_new_home.from%%%"
     },
     "productsAndBenefits": {
         "title": "%%%.productsAndBenefits.title%%%",
@@ -5657,7 +5725,8 @@
             "retailer": "%%%.giftCard.form.retailer%%%",
             "amount": "%%%.giftCard.form.amount%%%",
             "youPay": "%%%.giftCard.form.youPay%%%",
-            "cashbackNote": "%%%.giftCard.form.cashbackNote%%%"
+            "cashbackNote": "%%%.giftCard.form.cashbackNote%%%",
+            "notEnoughBalance": "%%%.giftCard.form.notEnoughBalance%%%"
         },
         "successBox": {
             "title": "%%%.giftCard.successBox.title%%%",

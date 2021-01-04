@@ -5424,13 +5424,13 @@ export default {
     },
     birthday: {
       title: `
-        <p class="header">Kick off the new year with <br/>a free \${kYCTrialAmount} trial</p>
+        <p class="header">Limited time: Get double bonus<br/> of \${kYCTrialAmount} at 4% APY</p>
       `,
       titleMobile: `
-        <p class="header">Kick off the new year with <br/>a free \${kYCTrialAmount} trial</p>
+        <p class="header">Limited time: Get double bonus<br/> of \${kYCTrialAmount} at 4% APY</p>
       `,
       desc: `
-        <p>Boost your finances this festive season with P2P investing. Earn up to 20x better interest than a savings account. No fees and all loans backed by collateral. Sign up now to enjoy <strong>a free \${kYCTrialAmount} bonus at 4% APY.</strong> After 30 days, we take back the bonus but you keep the interest.</p>
+        <p>New year, bigger bonus! To celebrate our 2nd birthday, we’re doubling <strong>your free trial bonus to \${kYCTrialAmount} at 4% APY</strong> when you sign up and verify your ID (KYC). After 30 days, we take the bonus back but the interest is yours to keep or reinvest. All lending is backed by collateral. No fees. Sign up now and double your returns.</p>
         <p style="font-style: italic;">This offer is for a limited time and only available to US citizens.</p>
       `,
     },

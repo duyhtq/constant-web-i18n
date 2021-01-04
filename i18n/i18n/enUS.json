@@ -5260,9 +5260,9 @@
             "desc": "\n        <p>We’re another year older and giving away double bonuses to celebrate. Sign up and verify your ID (KYC) and <strong>your first investment of ${kYCTrialAmount} at 4% APY is on us.</strong> After 30 days, we reclaim the bonus but you keep the interest. All lending is backed by collateral, protecting your funds, and there are no fees. Claim your bonus now for double returns.</p>\n        <p style=\"font-style: italic;\">This offer is for a limited time and only available to US citizens.</p>\n      "
         },
         "birthday": {
-            "title": "\n        <p class=\"header\">Kick off the new year with <br/>a free ${kYCTrialAmount} trial</p>\n      ",
-            "titleMobile": "\n        <p class=\"header\">Kick off the new year with <br/>a free ${kYCTrialAmount} trial</p>\n      ",
-            "desc": "\n        <p>Boost your finances this festive season with P2P investing. Earn up to 20x better interest than a savings account. No fees and all loans backed by collateral. Sign up now to enjoy <strong>a free ${kYCTrialAmount} bonus at 4% APY.</strong> After 30 days, we take back the bonus but you keep the interest.</p>\n        <p style=\"font-style: italic;\">This offer is for a limited time and only available to US citizens.</p>\n      "
+            "title": "\n        <p class=\"header\">Limited time: Get double bonus<br/> of ${kYCTrialAmount} at 4% APY</p>\n      ",
+            "titleMobile": "\n        <p class=\"header\">Limited time: Get double bonus<br/> of ${kYCTrialAmount} at 4% APY</p>\n      ",
+            "desc": "\n        <p>New year, bigger bonus! To celebrate our 2nd birthday, we’re doubling <strong>your free trial bonus to ${kYCTrialAmount} at 4% APY</strong> when you sign up and verify your ID (KYC). After 30 days, we take the bonus back but the interest is yours to keep or reinvest. All lending is backed by collateral. No fees. Sign up now and double your returns.</p>\n        <p style=\"font-style: italic;\">This offer is for a limited time and only available to US citizens.</p>\n      "
         },
         "luckySpin": {
             "title": "Lucky Spin",

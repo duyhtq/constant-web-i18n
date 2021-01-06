@@ -758,6 +758,8 @@ export default {
         cancel: 'Cancel',
         confirm: 'Confirm',
         requiredPassword: 'Password is required',
+        requiredGoogle: 'You must sign-in with your google account',
+        requiredFacebook: 'You must sign-in with your facebook account.',
         message: 'Code copied to clipboard.',
         facebook: 'Sign-in with your facebook account.',
         google: 'Sign-in with your google account.',
@@ -1110,6 +1112,7 @@ export default {
         matchedList: 'Matched List',
         getCollateral: 'Recall excess',
         payCollateral: 'Pay',
+        repay: 'Repay',
         getRemainCollateral: 'Get Remaining Collateral',
         payOffLoan: 'Payoff',
         payOffLoanTitle: 'Payoff Loan',
@@ -2471,6 +2474,7 @@ export default {
       },
       cryptosDesc: 'Your collateral is securely stored in either a Prime Trust cold wallet, an Ethereum smart contract, or a password-protected web wallet until you repay your loan.',
       listApplications: {
+        notAllowReBorrowing: "Sorry, you’re unable to repay using refinancing as your collateral value rate is less than 125%. To enable refinancing, please deposit more collateral.",
         headingDetail: 'Loan History Detail',
         title: 'Loan History',
         overview: 'Overview',
@@ -2508,6 +2512,8 @@ export default {
         amount: 'Amount',
         rate: 'Rate',
         term: 'Term',
+        interest: "Interest",
+        reBorrowingInfo: "",
         matched: 'matched',
         cancel: 'Cancel',
         cancelBorrow: 'Cancel',
@@ -2516,6 +2522,7 @@ export default {
         noLoans: 'Request your fixed rate loan.',
         delete: 'Delete',
         redeemApply: 'Redeem STAR',
+        reBorrowingInfo: "We will create new loan for you with these information:",
         mapStatus1: {
           done: 'Done',
           liquidatePending: 'Liquidation In Process',
@@ -2663,8 +2670,16 @@ export default {
           depositFailed: 'Failed while depositing, please try again',
           depositSuccess: 'Your deposit was completed successfully'
         },
-        paymentMethod: { const: 'USD', collateral: 'Collateral' },
+        paymentMethod: {
+          const: 'USD',
+          collateral: 'Collateral',
+          reBorrowing: {
+            title: "Refinancing",
+            desc: "Refinancing allows you to repay your loan and any applicable fees by taking out another loan against your collateral. However, please note refinancing results in you paying more interest over time, reduces your collateral value rate (which may result in greater risk of liquidation), and lowers your capacity to borrow unless you deposit more collateral. "
+          }
+        },
         footer: { desc: 'Showing {start} - {end} of {total} selected entries' },
+        repay: "Repay"
       },
       transaction: {
         copiedAddress: 'Address is copied to clipboard',
@@ -3061,9 +3076,14 @@ export default {
           promotionAmount: 'Bonus',
           serviceTime: `
             <h6 class="bold colorLight">Service time guarantee &#10004; </h6>
-            <p class="colorLight">Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>
+            <div class="colorLight">Most stablecoin withdrawals take under an hour.</div>
+            <div class="colorLight">Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times).</div>
+            <p class="colorLight">If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>
           `,
-          serviceTimeTransferViaEmail: '            <p class="colorLight">Your transfer is being processed and should be completed within a few minutes. </p>            <p class="colorLight">If you still can’t see your funds after 10 minutes, please contact customer support.</p>          '
+          serviceTimeTransferViaEmail: `
+            <div class="colorLight">Your transfer is being processed and should be completed within a few minutes. </div>
+            <p class="colorLight">If you still can’t see your funds after 10 minutes, please contact customer support.</p>
+          `
         }
       },
       howItWorks: 'How it works',
@@ -5466,7 +5486,7 @@ export default {
         contentHtml: `
           <h1 class="last"><span class="hightlight">Win up to $1,000</span> in our birthday prize giveaway</h1>
           <p>
-          It might be our birthday, but you’re getting the gifts! For one week only, we’re giving away <strong>prizes of $1,000</strong> when you spin the Prize Wheel on our mobile app. Each spin <strong>guarantees</strong> a prize, including membership points and extra spins. Want more spins? Refer, share, or send us some birthday wishes – you can even “buy” spins with your membership points. Download our app to join now!
+          It might be our birthday, but you’re getting the gifts! For one week only, we’re giving away <strong>prizes of $1,000</strong> when you spin the Prize Wheel on our mobile app. Each spin <strong>guarantees</strong> a prize, including membership points and extra spins. Want more spins? Refer, share, or send us some birthday wishes – you can even “buy” spins with your membership points. <strong>Download our app to join now!</strong>
           </p>
         `,
         desc: {
@@ -5495,6 +5515,9 @@ export default {
       },
       learnMore: 'Learn more here',
       downloadApp: 'DOWNLOAD NOW',
+      prizeHistory: {
+        content: `{userName} won <span class="prize">+{reward}{unit}</span> {type} on their lucky spin`,
+      },
     },
     promotionCryptoBacked: {
       title: '        <p class="header">Try secured P2P lending with a free ${kYCTrialAmount} bonus</p>        <p>Earn up to {rate}% APR with crypto-backed P2P lending. Sign up now to get a free ${kYCTrialAmount} bonus at 4% APY to start. After 30 days, we reclaim the bonus but you keep the interest.</p>        <p>This offer is only available for a limited time.</p>      ',

@@ -803,6 +803,8 @@
                 "cancel": "%%%.me.twoFa.qrScanModal.cancel%%%",
                 "confirm": "%%%.me.twoFa.qrScanModal.confirm%%%",
                 "requiredPassword": "%%%.me.twoFa.qrScanModal.requiredPassword%%%",
+                "requiredGoogle": "%%%.me.twoFa.qrScanModal.requiredGoogle%%%",
+                "requiredFacebook": "%%%.me.twoFa.qrScanModal.requiredFacebook%%%",
                 "message": "%%%.me.twoFa.qrScanModal.message%%%",
                 "facebook": "%%%.me.twoFa.qrScanModal.facebook%%%",
                 "google": "%%%.me.twoFa.qrScanModal.google%%%",
@@ -1148,6 +1150,7 @@
                 "matchedList": "%%%.me.proSaving.listApplications.matchedList%%%",
                 "getCollateral": "%%%.me.proSaving.listApplications.getCollateral%%%",
                 "payCollateral": "%%%.me.proSaving.listApplications.payCollateral%%%",
+                "repay": "%%%.me.proSaving.listApplications.repay%%%",
                 "getRemainCollateral": "%%%.me.proSaving.listApplications.getRemainCollateral%%%",
                 "payOffLoan": "%%%.me.proSaving.listApplications.payOffLoan%%%",
                 "payOffLoanTitle": "%%%.me.proSaving.listApplications.payOffLoanTitle%%%",
@@ -2496,6 +2499,7 @@
             },
             "cryptosDesc": "%%%.home.constantLoan.cryptosDesc%%%",
             "listApplications": {
+                "notAllowReBorrowing": "%%%.home.constantLoan.listApplications.notAllowReBorrowing%%%",
                 "headingDetail": "%%%.home.constantLoan.listApplications.headingDetail%%%",
                 "title": "%%%.home.constantLoan.listApplications.title%%%",
                 "overview": "%%%.home.constantLoan.listApplications.overview%%%",
@@ -2533,6 +2537,8 @@
                 "amount": "%%%.home.constantLoan.listApplications.amount%%%",
                 "rate": "%%%.home.constantLoan.listApplications.rate%%%",
                 "term": "%%%.home.constantLoan.listApplications.term%%%",
+                "interest": "%%%.home.constantLoan.listApplications.interest%%%",
+                "reBorrowingInfo": "%%%.home.constantLoan.listApplications.reBorrowingInfo%%%",
                 "matched": "%%%.home.constantLoan.listApplications.matched%%%",
                 "cancel": "%%%.home.constantLoan.listApplications.cancel%%%",
                 "cancelBorrow": "%%%.home.constantLoan.listApplications.cancelBorrow%%%",
@@ -2693,11 +2699,16 @@
                 },
                 "paymentMethod": {
                     "const": "%%%.home.constantLoan.listApplications.paymentMethod.const%%%",
-                    "collateral": "%%%.home.constantLoan.listApplications.paymentMethod.collateral%%%"
+                    "collateral": "%%%.home.constantLoan.listApplications.paymentMethod.collateral%%%",
+                    "reBorrowing": {
+                        "title": "%%%.home.constantLoan.listApplications.paymentMethod.reBorrowing.title%%%",
+                        "desc": "%%%.home.constantLoan.listApplications.paymentMethod.reBorrowing.desc%%%"
+                    }
                 },
                 "footer": {
                     "desc": "%%%.home.constantLoan.listApplications.footer.desc%%%"
-                }
+                },
+                "repay": "%%%.home.constantLoan.listApplications.repay%%%"
             },
             "transaction": {
                 "copiedAddress": "%%%.home.constantLoan.transaction.copiedAddress%%%",
@@ -5319,7 +5330,10 @@
                 }
             },
             "learnMore": "%%%.landingPage.luckySpin.learnMore%%%",
-            "downloadApp": "%%%.landingPage.luckySpin.downloadApp%%%"
+            "downloadApp": "%%%.landingPage.luckySpin.downloadApp%%%",
+            "prizeHistory": {
+                "content": "%%%.landingPage.luckySpin.prizeHistory.content%%%"
+            }
         },
         "promotionCryptoBacked": {
             "title": "%%%.landingPage.promotionCryptoBacked.title%%%",

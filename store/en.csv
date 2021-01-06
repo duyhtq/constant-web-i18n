@@ -591,6 +591,8 @@
 %%%.me.twoFa.qrScanModal.cancel%%%,"Cancel"
 %%%.me.twoFa.qrScanModal.confirm%%%,"Confirm"
 %%%.me.twoFa.qrScanModal.requiredPassword%%%,"Password is required"
+%%%.me.twoFa.qrScanModal.requiredGoogle%%%,"You must sign-in with your google account"
+%%%.me.twoFa.qrScanModal.requiredFacebook%%%,"You must sign-in with your facebook account."
 %%%.me.twoFa.qrScanModal.message%%%,"Code copied to clipboard."
 %%%.me.twoFa.qrScanModal.facebook%%%,"Sign-in with your facebook account."
 %%%.me.twoFa.qrScanModal.google%%%,"Sign-in with your google account."
@@ -861,6 +863,7 @@
 %%%.me.proSaving.listApplications.matchedList%%%,"Matched List"
 %%%.me.proSaving.listApplications.getCollateral%%%,"Recall excess"
 %%%.me.proSaving.listApplications.payCollateral%%%,"Pay"
+%%%.me.proSaving.listApplications.repay%%%,"Repay"
 %%%.me.proSaving.listApplications.getRemainCollateral%%%,"Get Remaining Collateral"
 %%%.me.proSaving.listApplications.payOffLoan%%%,"Payoff"
 %%%.me.proSaving.listApplications.payOffLoanTitle%%%,"Payoff Loan"
@@ -1797,6 +1800,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.home.constantLoan.faqs.question21%%%,"What is the collateral rate and why is it different from the collateral value?"
 %%%.home.constantLoan.faqs.answer21%%%,"        <p>        Collateral value only takes into account the monetary value of your collateral in your collateral balance compared to your loan amount. We base liquidation off collateral value. Your collateral rate is a more in-depth number that takes into account the LTV ratios required for different cryptocurrencies. We use this number to determine how much you can withdraw with recall excess as well as the maximum amount of crypto you can place in an Isolated loan.        </p>        <p>        You can find your collateral rate through this equation:        </p>        <p class=""font-italic"">        x = (number of coins)*(coin value)*(LTV)+“repeat for each coin”<br />        Collateral rate = (x/(loan value at first + up-to-date interest + matching fees))*100        </p>        "
 %%%.home.constantLoan.cryptosDesc%%%,"Your collateral is securely stored in either a Prime Trust cold wallet, an Ethereum smart contract, or a password-protected web wallet until you repay your loan."
+%%%.home.constantLoan.listApplications.notAllowReBorrowing%%%,"Sorry, you’re unable to repay using refinancing as your collateral value rate is less than 125%. To enable refinancing, please deposit more collateral."
 %%%.home.constantLoan.listApplications.headingDetail%%%,"Loan History Detail"
 %%%.home.constantLoan.listApplications.title%%%,"Loan History"
 %%%.home.constantLoan.listApplications.overview%%%,"Overview"
@@ -1832,6 +1836,8 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.home.constantLoan.listApplications.amount%%%,"Amount"
 %%%.home.constantLoan.listApplications.rate%%%,"Rate"
 %%%.home.constantLoan.listApplications.term%%%,"Term"
+%%%.home.constantLoan.listApplications.interest%%%,"Interest"
+%%%.home.constantLoan.listApplications.reBorrowingInfo%%%,"We will create new loan for you with these information:"
 %%%.home.constantLoan.listApplications.matched%%%,"matched"
 %%%.home.constantLoan.listApplications.cancel%%%,"Cancel"
 %%%.home.constantLoan.listApplications.cancelBorrow%%%,"Cancel"
@@ -1982,7 +1988,10 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.home.constantLoan.listApplications.depositFrom.depositSuccess%%%,"Your deposit was completed successfully"
 %%%.home.constantLoan.listApplications.paymentMethod.const%%%,"USD"
 %%%.home.constantLoan.listApplications.paymentMethod.collateral%%%,"Collateral"
+%%%.home.constantLoan.listApplications.paymentMethod.reBorrowing.title%%%,"Refinancing"
+%%%.home.constantLoan.listApplications.paymentMethod.reBorrowing.desc%%%,"Refinancing allows you to repay your loan and any applicable fees by taking out another loan against your collateral. However, please note refinancing results in you paying more interest over time, reduces your collateral value rate (which may result in greater risk of liquidation), and lowers your capacity to borrow unless you deposit more collateral. "
 %%%.home.constantLoan.listApplications.footer.desc%%%,"Showing {start} - {end} of {total} selected entries"
+%%%.home.constantLoan.listApplications.repay%%%,"Repay"
 %%%.home.constantLoan.transaction.copiedAddress%%%,"Address is copied to clipboard"
 %%%.home.constantLoan.transaction.scanQR%%%,"Alternatively, scan this QR code directly from your mobile wallet to complete the transfer."
 %%%.home.constantLoan.transaction.title%%%,"Almost there."
@@ -2323,9 +2332,14 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.home.transfer.components.orderInfo.promotionAmount%%%,"Bonus"
 %%%.home.transfer.components.orderInfo.serviceTime%%%,"
             <h6 class=""bold colorLight"">Service time guarantee &#10004; </h6>
-            <p class=""colorLight"">Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>
+            <div class=""colorLight"">Most stablecoin withdrawals take under an hour.</div>
+            <div class=""colorLight"">Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times).</div>
+            <p class=""colorLight"">If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>
           "
-%%%.home.transfer.components.orderInfo.serviceTimeTransferViaEmail%%%,"            <p class=""colorLight"">Your transfer is being processed and should be completed within a few minutes. </p>            <p class=""colorLight"">If you still can’t see your funds after 10 minutes, please contact customer support.</p>          "
+%%%.home.transfer.components.orderInfo.serviceTimeTransferViaEmail%%%,"
+            <div class=""colorLight"">Your transfer is being processed and should be completed within a few minutes. </div>
+            <p class=""colorLight"">If you still can’t see your funds after 10 minutes, please contact customer support.</p>
+          "
 %%%.home.transfer.howItWorks%%%,"How it works"
 %%%.home.transfer.amount%%%,"Amount"
 %%%.home.transfer.to%%%,"To"
@@ -3942,7 +3956,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.landingPage.luckySpin.intro.contentHtml%%%,"
           <h1 class=""last""><span class=""hightlight"">Win up to $1,000</span> in our birthday prize giveaway</h1>
           <p>
-          It might be our birthday, but you’re getting the gifts! For one week only, we’re giving away <strong>prizes of $1,000</strong> when you spin the Prize Wheel on our mobile app. Each spin <strong>guarantees</strong> a prize, including membership points and extra spins. Want more spins? Refer, share, or send us some birthday wishes – you can even “buy” spins with your membership points. Download our app to join now!
+          It might be our birthday, but you’re getting the gifts! For one week only, we’re giving away <strong>prizes of $1,000</strong> when you spin the Prize Wheel on our mobile app. Each spin <strong>guarantees</strong> a prize, including membership points and extra spins. Want more spins? Refer, share, or send us some birthday wishes – you can even “buy” spins with your membership points. <strong>Download our app to join now!</strong>
           </p>
         "
 %%%.landingPage.luckySpin.intro.desc.1%%%,"A cash reward of $1,000 paid instantly to your MyConstant account."
@@ -3958,6 +3972,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.landingPage.luckySpin.howToExchange.data.2.desc%%%,"<p>The prize is delivered instantly to your MyConstant account.</p>"
 %%%.landingPage.luckySpin.learnMore%%%,"Learn more here"
 %%%.landingPage.luckySpin.downloadApp%%%,"DOWNLOAD NOW"
+%%%.landingPage.luckySpin.prizeHistory.content%%%,"{userName} won <span class=""prize"">+{reward}{unit}</span> {type} on their lucky spin"
 %%%.landingPage.promotionCryptoBacked.title%%%,"        <p class=""header"">Try secured P2P lending with a free ${kYCTrialAmount} bonus</p>        <p>Earn up to {rate}% APR with crypto-backed P2P lending. Sign up now to get a free ${kYCTrialAmount} bonus at 4% APY to start. After 30 days, we reclaim the bonus but you keep the interest.</p>        <p>This offer is only available for a limited time.</p>      "
 %%%.landingPage.promotionCryptoBacked.howItWorks.title%%%,"How It Works"
 %%%.landingPage.promotionCryptoBacked.howItWorks.data.0.title%%%,"Step 1"

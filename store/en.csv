@@ -207,7 +207,7 @@
 %%%.memberShip.memberShipLevel.level2%%%,"Platinum"
 %%%.memberShip.memberShipLevel.level3%%%,"Diamond"
 %%%.memberShip.memberShipLevel.level0%%%,"Member"
-%%%.memberShip.desc.level1%%%,"<h4>What you get:</h4>              <p><i class=""fal fa-check""></i> ${cashback} credit to your MyConstant account the first time you reach Gold (after leaving a review on Trustpilot).</p>              <p><i class=""fal fa-check""></i> US members: ${referralReward} credit every time you refer a friend.</p>              <p><i class=""fal fa-check""></i> {referralFlexReward}% of all earned interest from Flex accounts of referred friends during their first year.</p>            "
+%%%.memberShip.desc.level1%%%,"<h4>What you get:</h4>              <p><i class=""fal fa-check""></i> US members: ${referralReward} credit every time you refer a friend.</p>              <p><i class=""fal fa-check""></i> {referralFlexReward}% of all earned interest from Flex accounts of referred friends during their first year.</p>            "
 %%%.memberShip.desc.level2%%%,"<h4>What you get:</h4>              <p><i class=""fal fa-check""></i> ${cashback} credit to your MyConstant account the first time you reach Platinum (after leaving a review on Trustpilot).</p>              <p><i class=""fal fa-check""></i> US members: ${referralReward} credit every time you refer a friend.</p>              <p><i class=""fal fa-check""></i> {referralFlexReward}% of all earned interest from Flex accounts of referred friends during their first year.</p>            "
 %%%.memberShip.desc.level3%%%,"<h4>What you get:</h4>              <p><i class=""fal fa-check""></i> ${cashback} credit to your MyConstant account the first time you reach Diamond (after leaving a review on Trustpilot).</p>              <p><i class=""fal fa-check""></i> US members: ${referralReward} credit every time you refer a friend.</p>              <p><i class=""fal fa-check""></i> {referralFlexReward}% of all earned interest from Flex accounts of referred friends during their first year.</p>              <p><i class=""fal fa-check""></i> Automatic bump to the top of our matching queue for all investments.</p>              <p><i class=""fal fa-check""></i> {bonus} STAR token to redeem for a {bonus}% bonus or discounted interest.</p>            "
 %%%.memberShip.membershipPoints%%%,"Your Membership Points"
@@ -404,6 +404,10 @@
 %%%.me.history.loanDate%%%,"Loan date"
 %%%.me.history.loanStatus%%%,"Loan status"
 %%%.me.history.balance%%%,"Total balance: {balance} USD"
+%%%.me.history.name%%%,"Wallet name"
+%%%.me.history.crypto%%%,"Crypto"
+%%%.me.history.network%%%,"Network"
+%%%.me.history.address%%%,"Wallet address"
 %%%.me.history.user.status.transferredMoneyToAgent%%%,"Your account will be credited once we have received your transfer."
 %%%.me.history.user.status.canceled%%%,"Cancelled"
 %%%.me.history.user.status.timeout%%%,"Order timed out"
@@ -977,6 +981,7 @@
 %%%.me.navigation.flex%%%,"Flex"
 %%%.me.navigation.invest%%%,"Invest"
 %%%.me.navigation.accountActivities%%%,"Account Activity"
+%%%.me.navigation.addressBook%%%,"Saved wallet addresses"
 %%%.me.kyc.verifiedTitle%%%,"You have verified your ID"
 %%%.me.kyc.verifyingTitle%%%,"Thank you. We're processing your KYC details..."
 %%%.me.kyc.lFirstName%%%,"First Name"
@@ -2283,6 +2288,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.home.transferCrypto.howItWorks%%%,"How it works"
 %%%.home.transferCrypto.amount%%%,"Amount"
 %%%.home.transferCrypto.to%%%,"To"
+%%%.home.transferCrypto.memo%%%,"Memo"
 %%%.home.transferCrypto.input2FA%%%,"Input 2FA"
 %%%.home.transferCrypto.promotion%%%,"Withdraw in {currency} and get a {percent}% bonus"
 %%%.home.transfer.info.content%%%,"
@@ -3962,6 +3968,30 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.landingPage.luckySpin.intro.desc.1%%%,"A cash reward of $1,000 paid instantly to your MyConstant account."
 %%%.landingPage.luckySpin.intro.desc.2%%%,"Double membership points & other rewards of 100-5,000 points."
 %%%.landingPage.luckySpin.intro.desc.3%%%,"Other cool giveaways from cash rewards of $1 or extra spins."
+%%%.landingPage.luckySpin.finish.contentHtml%%%,"
+          <h1 class=""last"">Thank you for spinning our birthday<br/> Prize Wheel!</h1>
+          <p class=""clearBottom"">It’s been great reading your birthday wishes and we hope you’ve enjoyed your prizes.</p>
+          <p class=""clearBottom"">Keep your eye out for other giveaways in the future.</p>
+          <p>Who knows – maybe the Prize Wheel will stick around!</p>
+          <p class=""clearBottom"" style=""margin-bottom: 5px;"">Have an amazing 2021.</p>
+          <p class=""font-italic"">The MyConstant Team</p>
+        "
+%%%.landingPage.luckySpin.finish.desc.1%%%,"
+            <div>WE AWARDED</div>
+            <div class=""value"">{spins}</div>
+            <div>SPINS</div>
+          "
+%%%.landingPage.luckySpin.finish.desc.2%%%,"
+            <div>WE RECEIVED</div>
+            <div class=""value"">{wishes}</div>
+            <div>BIRTHDAY WISHES</div>
+          "
+%%%.landingPage.luckySpin.finish.desc.3%%%,"
+            <div>CUSTOMERS WON</div>
+            <div class=""value"">{points}</div>
+            <div>MEMBERSHIP POINTS</div>
+          "
+%%%.landingPage.luckySpin.finish.youtube.title%%%,"Interview with Chris Rossi."
 %%%.landingPage.luckySpin.howToExchange.title%%%,"How to exchange spins for prizes"
 %%%.landingPage.luckySpin.howToExchange.desc%%%,"Celebrate our 2nd birthday by completing simple tasks. The more tasks you do, the more spins you will get. All spins are guaranteed with gifts"
 %%%.landingPage.luckySpin.howToExchange.data.0.title%%%,"Visit the app"

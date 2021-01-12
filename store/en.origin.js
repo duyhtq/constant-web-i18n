@@ -553,6 +553,10 @@
             "loanDate": "%%%.me.history.loanDate%%%",
             "loanStatus": "%%%.me.history.loanStatus%%%",
             "balance": "%%%.me.history.balance%%%",
+            "name": "%%%.me.history.name%%%",
+            "crypto": "%%%.me.history.crypto%%%",
+            "network": "%%%.me.history.network%%%",
+            "address": "%%%.me.history.address%%%",
             "user": {
                 "status": {
                     "transferredMoneyToAgent": "%%%.me.history.user.status.transferredMoneyToAgent%%%",
@@ -1296,7 +1300,8 @@
             "fiat": "%%%.me.navigation.fiat%%%",
             "flex": "%%%.me.navigation.flex%%%",
             "invest": "%%%.me.navigation.invest%%%",
-            "accountActivities": "%%%.me.navigation.accountActivities%%%"
+            "accountActivities": "%%%.me.navigation.accountActivities%%%",
+            "addressBook": "%%%.me.navigation.addressBook%%%"
         },
         "kyc": {
             "verifiedTitle": "%%%.me.kyc.verifiedTitle%%%",
@@ -3052,6 +3057,7 @@
             "howItWorks": "%%%.home.transferCrypto.howItWorks%%%",
             "amount": "%%%.home.transferCrypto.amount%%%",
             "to": "%%%.home.transferCrypto.to%%%",
+            "memo": "%%%.home.transferCrypto.memo%%%",
             "input2FA": "%%%.home.transferCrypto.input2FA%%%",
             "promotion": "%%%.home.transferCrypto.promotion%%%"
         },
@@ -5309,6 +5315,17 @@
                     "1": "%%%.landingPage.luckySpin.intro.desc.1%%%",
                     "2": "%%%.landingPage.luckySpin.intro.desc.2%%%",
                     "3": "%%%.landingPage.luckySpin.intro.desc.3%%%"
+                }
+            },
+            "finish": {
+                "contentHtml": "%%%.landingPage.luckySpin.finish.contentHtml%%%",
+                "desc": {
+                    "1": "%%%.landingPage.luckySpin.finish.desc.1%%%",
+                    "2": "%%%.landingPage.luckySpin.finish.desc.2%%%",
+                    "3": "%%%.landingPage.luckySpin.finish.desc.3%%%"
+                },
+                "youtube": {
+                    "title": "%%%.landingPage.luckySpin.finish.youtube.title%%%"
                 }
             },
             "howToExchange": {

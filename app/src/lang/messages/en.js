@@ -268,7 +268,7 @@ export default {
       level0: 'Member'
     },
     desc: {
-      level1: '<h4>What you get:</h4>              <p><i class="fal fa-check"></i> ${cashback} credit to your MyConstant account the first time you reach Gold (after leaving a review on Trustpilot).</p>              <p><i class="fal fa-check"></i> US members: ${referralReward} credit every time you refer a friend.</p>              <p><i class="fal fa-check"></i> {referralFlexReward}% of all earned interest from Flex accounts of referred friends during their first year.</p>            ',
+      level1: '<h4>What you get:</h4>              <p><i class="fal fa-check"></i> US members: ${referralReward} credit every time you refer a friend.</p>              <p><i class="fal fa-check"></i> {referralFlexReward}% of all earned interest from Flex accounts of referred friends during their first year.</p>            ',
       level2: '<h4>What you get:</h4>              <p><i class="fal fa-check"></i> ${cashback} credit to your MyConstant account the first time you reach Platinum (after leaving a review on Trustpilot).</p>              <p><i class="fal fa-check"></i> US members: ${referralReward} credit every time you refer a friend.</p>              <p><i class="fal fa-check"></i> {referralFlexReward}% of all earned interest from Flex accounts of referred friends during their first year.</p>            ',
       level3: '<h4>What you get:</h4>              <p><i class="fal fa-check"></i> ${cashback} credit to your MyConstant account the first time you reach Diamond (after leaving a review on Trustpilot).</p>              <p><i class="fal fa-check"></i> US members: ${referralReward} credit every time you refer a friend.</p>              <p><i class="fal fa-check"></i> {referralFlexReward}% of all earned interest from Flex accounts of referred friends during their first year.</p>              <p><i class="fal fa-check"></i> Automatic bump to the top of our matching queue for all investments.</p>              <p><i class="fal fa-check"></i> {bonus} STAR token to redeem for a {bonus}% bonus or discounted interest.</p>            '
     },
@@ -508,6 +508,10 @@ export default {
       loanDate: 'Loan date',
       loanStatus: 'Loan status',
       balance: 'Total balance: {balance} USD',
+      name: 'Wallet name',
+      crypto: 'Crypto',
+      network: 'Network',
+      address: 'Wallet address',
       user: {
         status: {
           transferredMoneyToAgent: 'Your account will be credited once we have received your transfer.',
@@ -1256,7 +1260,8 @@ export default {
       fiat: 'Fiat',
       flex: 'Flex',
       invest: 'Invest',
-      accountActivities: 'Account Activity'
+      accountActivities: 'Account Activity',
+      addressBook: 'Saved wallet addresses',
     },
     kyc: {
       verifiedTitle: 'You have verified your ID',
@@ -3022,6 +3027,7 @@ export default {
       howItWorks: 'How it works',
       amount: 'Amount',
       to: 'To',
+      memo: 'Memo',
       input2FA: 'Input 2FA',
       promotion: 'Withdraw in {currency} and get a {percent}% bonus'
     },
@@ -5493,6 +5499,36 @@ export default {
           1: 'A cash reward of $1,000 paid instantly to your MyConstant account.',
           2: 'Double membership points & other rewards of 100-5,000 points.',
           3: 'Other cool giveaways from cash rewards of $1 or extra spins.',
+        }
+      },
+      finish:  {
+        contentHtml: `
+          <h1 class="last">Thank you for spinning our birthday<br/> Prize Wheel!</h1>
+          <p class="clearBottom">It’s been great reading your birthday wishes and we hope you’ve enjoyed your prizes.</p>
+          <p class="clearBottom">Keep your eye out for other giveaways in the future.</p>
+          <p>Who knows – maybe the Prize Wheel will stick around!</p>
+          <p class="clearBottom" style="margin-bottom: 5px;">Have an amazing 2021.</p>
+          <p class="font-italic">The MyConstant Team</p>
+        `,
+        desc: {
+          1: `
+            <div>WE AWARDED</div>
+            <div class="value">{spins}</div>
+            <div>SPINS</div>
+          `,
+          2: `
+            <div>WE RECEIVED</div>
+            <div class="value">{wishes}</div>
+            <div>BIRTHDAY WISHES</div>
+          `,
+          3: `
+            <div>CUSTOMERS WON</div>
+            <div class="value">{points}</div>
+            <div>MEMBERSHIP POINTS</div>
+          `,
+        },
+        youtube: {
+          title: 'Interview with Chris Rossi.'
         }
       },
       howToExchange: {

@@ -8,7 +8,8 @@ export default {
       depositCrypto: 'Deposit crypto',
       transfer: 'Transfer',
       withdrawFiat: 'Withdraw USD',
-      withdrawCrypto: 'Withdraw crypto'
+      withdrawCrypto: 'Withdraw crypto',
+      withdrawGiftCards: 'Withdraw to gift-card'
     },
     accountActivities: 'Account Activity',
     prices: 'Pricing & Service times',
@@ -512,6 +513,7 @@ export default {
       crypto: 'Crypto',
       network: 'Network',
       address: 'Wallet address',
+      memo: 'Memo',
       user: {
         status: {
           transferredMoneyToAgent: 'Your account will be credited once we have received your transfer.',
@@ -795,6 +797,7 @@ export default {
         withdrawDesc: 'Withdraw funds to your bank account or wallet address.',
         withdrawFiat: 'USD',
         withdrawCrypto: 'Crypto',
+        withdrawGiftCards: 'Gift cards',
         transfer: 'Transfer',
         transferDesc: 'Send money across the world - to as many people as you like.',
         saving_title: 'Investments',
@@ -805,7 +808,7 @@ export default {
         secondaryMarketHistoryDetail: 'Secondary Market History Detail',
         secondInvestmentsLO: 'Loan Originator Secondary Market',
         secondInvestmentsLODesc: 'Buy and sell matched investments on our secondary market. Sell your investment to end your term early or buy another investor’s order to earn their interest. View or cancel your secondary market orders below.',
-        spendings: 'Purchases',
+        spendings: 'Gift Cards',
         spendingsDesc: 'Gift cards and other items or services bought using your MyConstant balance.',
         termStatusFilter: {
           investment: {
@@ -5340,7 +5343,7 @@ export default {
     btnLoans: 'Loans',
     btnLoansC2C: 'Crypto Credit',
     btnLoanSettings: '<div class="textLeft"><small>Loan</small><div>Settings</div></div>',
-    btnSpending: 'Purchases',
+    btnSpending: 'Gift Cards',
     prizeWheel: '<span class="prizeWheel">Prize Wheel</span>',
   },
   landingPage: {

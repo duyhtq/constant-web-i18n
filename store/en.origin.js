@@ -8,7 +8,8 @@
             "depositCrypto": "%%%.user.userLogin.depositCrypto%%%",
             "transfer": "%%%.user.userLogin.transfer%%%",
             "withdrawFiat": "%%%.user.userLogin.withdrawFiat%%%",
-            "withdrawCrypto": "%%%.user.userLogin.withdrawCrypto%%%"
+            "withdrawCrypto": "%%%.user.userLogin.withdrawCrypto%%%",
+            "withdrawGiftCards": "%%%.user.userLogin.withdrawGiftCards%%%"
         },
         "accountActivities": "%%%.user.accountActivities%%%",
         "prices": "%%%.user.prices%%%",
@@ -557,6 +558,7 @@
             "crypto": "%%%.me.history.crypto%%%",
             "network": "%%%.me.history.network%%%",
             "address": "%%%.me.history.address%%%",
+            "memo": "%%%.me.history.memo%%%",
             "user": {
                 "status": {
                     "transferredMoneyToAgent": "%%%.me.history.user.status.transferredMoneyToAgent%%%",
@@ -840,6 +842,7 @@
                 "withdrawDesc": "%%%.me.proSaving.listApplications.withdrawDesc%%%",
                 "withdrawFiat": "%%%.me.proSaving.listApplications.withdrawFiat%%%",
                 "withdrawCrypto": "%%%.me.proSaving.listApplications.withdrawCrypto%%%",
+                "withdrawGiftCards": "%%%.me.proSaving.listApplications.withdrawGiftCards%%%",
                 "transfer": "%%%.me.proSaving.listApplications.transfer%%%",
                 "transferDesc": "%%%.me.proSaving.listApplications.transferDesc%%%",
                 "saving_title": "%%%.me.proSaving.listApplications.saving_title%%%",

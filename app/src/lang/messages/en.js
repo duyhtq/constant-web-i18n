@@ -5308,6 +5308,7 @@ export default {
     btnDepositCrypto: '<div class="textLeft"><small>Deposit</small><div>Crypto</div></div>',
     btnGiftCard: '<div class="textLeft"><div>Gift Cards</div></div>',
     btnDailyLogin: '<div class="textLeft"><small>Claim your</small><div>Daily Login</div></div>',
+    btnWithdrawGiftcards: '<div class="textLeft"><small>Withdraw to</small><div>Gift-card</div></div>',
     greeting: {
       hi: 'Hi you',
       title: 'Good',
@@ -5351,6 +5352,8 @@ export default {
     loanDesc: 'View active and settled loans.',
     secondaryMarketDesc: 'View bought and sold investments.',
     accountActivityDesc: 'View interest earnings, deposits, withdrawals, and more.',
+    dashBoard: 'Dashboard',
+    dashBoardDesc: ' ',
   },
   landingPage: {
     steadyGrowth: {
@@ -5473,11 +5476,11 @@ export default {
       title: 'Lucky Spin',
       howItWorks: {
         title: 'How to get spins',
-        desc: 'From <strong>January 19th 09:00 PST to February 18th 23:59 PST,</strong> you can earn spins in the following ways:',
+        desc: 'From <strong>January 18th 09:00 PST to February 17th 23:59 PST,</strong> you can earn spins in the following ways:',
         data: {
           0: {
             title: 'Deposit USD',
-            desc: '<p>When you deposit USD, you’ll receive the same amount divided by 1,000 in spins (rounded up to the nearest whole number). For example, deposit $5,001 and you’ll receive 6 spins.</p>'
+            desc: '<p>When you deposit USD, you’ll receive the same amount divided by 1,000 in spins (rounded up to the nearest whole number) with the minimum amount from $1,000. For example, deposit $5,001 and you’ll receive 6 spins.</p>'
           },
           1: {
             title: 'Refer friends',
@@ -5485,11 +5488,11 @@ export default {
           },
           2: {
             title: 'Review us on the app store',
-            desc: '<p>Click the social share buttons on the right to post our event on social media and you get 1 spin. (Limited to one share per day)</p>'
+            desc: '<p>Post a review for our app on the Apple or Google Play store for 3 spins (one time only).</p>'
           },
           3: {
             title: 'Share about our event on social media',
-            desc: '<p>Click the social share buttons on the right to post our event on social media and you get 1 spin. Multiple shares don’t result in more spins.</p>'
+            desc: '<p>Click the social share buttons on our app to share our event on social media and you’ll get 1 spin. (Limited to one share per day).</p>'
           },
           4: {
             title: 'Trade membership points',
@@ -5501,9 +5504,10 @@ export default {
         contentHtml: `
           <h1 class="last">Now for a whole month, win $10 cash prizes, membership points, and more in our prize giveaway</h1>
           <p>
-          We saw how much you all liked spinning the wheel this January (especially our lucky $1,000 winner) so we brought it back <strong>for an entire month.</strong> We’re giving away more <strong>cash prizes, membership points, and other bonuses</strong> when you spin our Prize Wheel. Each spin <strong>guarantees</strong> a prize, including extra spins. Want more spins? Refer, share, or review us on the app store – you can even “buy” spins with your membership points. <strong>Download our app to join now!</strong>
+          We saw how much you all liked spinning the wheel <a href="/prize-wheel/january" class="underline">this January</a> (especially our lucky $1,000 winner) so we brought it back <strong>for an entire month.</strong> We’re giving away more <strong>cash prizes, membership points, and other bonuses</strong> when you spin our Prize Wheel. Each spin <strong>guarantees</strong> a prize, including extra spins. Want more spins? Refer, share, or review us on the app store – you can even “buy” spins with your membership points. <strong>Download our app to join now!</strong>
           </p>
         `,
+        title: 'WHAT YOU COULD WIN',
         desc: {
           1: 'Cash rewards of $1 or $10 paid instantly to your MyConstant account.',
           2: 'Double membership points and other rewards of 100-5,000 membership points.',

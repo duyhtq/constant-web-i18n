@@ -206,7 +206,8 @@
         "follow": "%%%.footer.follow%%%",
         "statistics": "%%%.footer.statistics%%%",
         "statisticsDesc": "%%%.footer.statisticsDesc%%%",
-        "giftCard": "%%%.footer.giftCard%%%"
+        "giftCard": "%%%.footer.giftCard%%%",
+        "giftCardDesc": "%%%.footer.giftCardDesc%%%"
     },
     "memberShip": {
         "pointNeed2GetGold": "%%%.memberShip.pointNeed2GetGold%%%",
@@ -5184,7 +5185,12 @@
         "btnLoansC2C": "%%%.menuMobile.btnLoansC2C%%%",
         "btnLoanSettings": "%%%.menuMobile.btnLoanSettings%%%",
         "btnSpending": "%%%.menuMobile.btnSpending%%%",
-        "prizeWheel": "%%%.menuMobile.prizeWheel%%%"
+        "prizeWheel": "%%%.menuMobile.prizeWheel%%%",
+        "cryptoBackedDesc": "%%%.menuMobile.cryptoBackedDesc%%%",
+        "loanOriginatorDesc": "%%%.menuMobile.loanOriginatorDesc%%%",
+        "loanDesc": "%%%.menuMobile.loanDesc%%%",
+        "secondaryMarketDesc": "%%%.menuMobile.secondaryMarketDesc%%%",
+        "accountActivityDesc": "%%%.menuMobile.accountActivityDesc%%%"
     },
     "landingPage": {
         "steadyGrowth": {
@@ -5352,7 +5358,9 @@
             "learnMore": "%%%.landingPage.luckySpin.learnMore%%%",
             "downloadApp": "%%%.landingPage.luckySpin.downloadApp%%%",
             "prizeHistory": {
-                "content": "%%%.landingPage.luckySpin.prizeHistory.content%%%"
+                "gift": "%%%.landingPage.luckySpin.prizeHistory.gift%%%",
+                "gift_food": "%%%.landingPage.luckySpin.prizeHistory.gift_food%%%",
+                "task": "%%%.landingPage.luckySpin.prizeHistory.task%%%"
             }
         },
         "promotionCryptoBacked": {

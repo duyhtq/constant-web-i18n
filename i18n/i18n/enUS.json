@@ -206,7 +206,8 @@
         "follow": "Follow",
         "statistics": "Statistics",
         "statisticsDesc": "View historical loan performance and more.",
-        "giftCard": "Gift Cards"
+        "giftCard": "Gift Cards",
+        "giftCardDesc": "Save up to 3% at 40+ retailers."
     },
     "memberShip": {
         "pointNeed2GetGold": "You still need {value} points to reach Gold Member status",
@@ -494,7 +495,7 @@
             "accountNumber": "Account number"
         },
         "withdrawCrypto": {
-            "title": "Withdrawals History",
+            "title": "Crypto - Withdrawals",
             "tabs": {
                 "fiat": "Fiat",
                 "crypto": "Crypto",
@@ -5184,7 +5185,12 @@
         "btnLoansC2C": "Crypto Credit",
         "btnLoanSettings": "<div class=\"textLeft\"><small>Loan</small><div>Settings</div></div>",
         "btnSpending": "Gift Cards",
-        "prizeWheel": "<span class=\"prizeWheel\">Prize Wheel</span>"
+        "prizeWheel": "<span class=\"prizeWheel\">Prize Wheel</span>",
+        "cryptoBackedDesc": "View Crypto-backed investments.",
+        "loanOriginatorDesc": "View Loan Originator investments.",
+        "loanDesc": "View active and settled loans.",
+        "secondaryMarketDesc": "View bought and sold investments.",
+        "accountActivityDesc": "View interest earnings, deposits, withdrawals, and more."
     },
     "landingPage": {
         "steadyGrowth": {
@@ -5288,36 +5294,36 @@
             "title": "Lucky Spin",
             "howItWorks": {
                 "title": "How to get spins",
-                "desc": "From <strong>January 1st 00:00 PST to January 7th 23:59 PST,</strong> you can earn spins in the following ways:",
+                "desc": "From <strong>January 19th 09:00 PST to February 18th 23:59 PST,</strong> you can earn spins in the following ways:",
                 "data": {
                     "0": {
                         "title": "Deposit USD",
-                        "desc": "<p>When you deposit USD, you’ll receive the same amount divided by 100 in spins (rounded up to the nearest whole number). For example, deposit $5,001 and you’ll receive 51 spins.</p>"
+                        "desc": "<p>When you deposit USD, you’ll receive the same amount divided by 1,000 in spins (rounded up to the nearest whole number). For example, deposit $5,001 and you’ll receive 6 spins.</p>"
                     },
                     "1": {
                         "title": "Refer friends",
                         "desc": "<p>For every friend you refer who passes KYC, you get 1 spin.</p>"
                     },
                     "2": {
-                        "title": "Send us birthday wishes",
-                        "desc": "<p>Wish us a happy birthday in the chat box and you get a spin (maximum of 1 per day).</p>"
+                        "title": "Review us on the app store",
+                        "desc": "<p>Click the social share buttons on the right to post our event on social media and you get 1 spin. (Limited to one share per day)</p>"
                     },
                     "3": {
-                        "title": "Share our birthday event on social media",
+                        "title": "Share about our event on social media",
                         "desc": "<p>Click the social share buttons on the right to post our event on social media and you get 1 spin. Multiple shares don’t result in more spins.</p>"
                     },
                     "4": {
                         "title": "Trade membership points",
-                        "desc": "<p>You can trade 1,000 membership points for 1 spin. The more membership points you spend, the more spins you get, and the better your chances of winning the grand prize of $1,000.</p>"
+                        "desc": "<p>You can trade 1,000 membership points for 1 spin. The more membership points you spend, the more spins you get, the more prizes you earn.</p>"
                     }
                 }
             },
             "intro": {
-                "contentHtml": "\n          <h1 class=\"last\"><span class=\"hightlight\">Win up to $1,000</span> in our birthday prize giveaway</h1>\n          <p>\n          It might be our birthday, but you’re getting the gifts! For one week only, we’re giving away <strong>prizes of $1,000</strong> when you spin the Prize Wheel on our mobile app. Each spin <strong>guarantees</strong> a prize, including membership points and extra spins. Want more spins? Refer, share, or send us some birthday wishes – you can even “buy” spins with your membership points. <strong>Download our app to join now!</strong>\n          </p>\n        ",
+                "contentHtml": "\n          <h1 class=\"last\">Now for a whole month, win $10 cash prizes, membership points, and more in our prize giveaway</h1>\n          <p>\n          We saw how much you all liked spinning the wheel this January (especially our lucky $1,000 winner) so we brought it back <strong>for an entire month.</strong> We’re giving away more <strong>cash prizes, membership points, and other bonuses</strong> when you spin our Prize Wheel. Each spin <strong>guarantees</strong> a prize, including extra spins. Want more spins? Refer, share, or review us on the app store – you can even “buy” spins with your membership points. <strong>Download our app to join now!</strong>\n          </p>\n        ",
                 "desc": {
-                    "1": "A cash reward of $1,000 paid instantly to your MyConstant account.",
-                    "2": "Double membership points & other rewards of 100-5,000 points.",
-                    "3": "Other cool giveaways from cash rewards of $1 or extra spins."
+                    "1": "Cash rewards of $1 or $10 paid instantly to your MyConstant account.",
+                    "2": "Double membership points and other rewards of 100-5,000 membership points.",
+                    "3": "Other prizes: Dog food on Feed & Give or extra spins."
                 }
             },
             "finish": {
@@ -5352,7 +5358,9 @@
             "learnMore": "Learn more here",
             "downloadApp": "DOWNLOAD NOW",
             "prizeHistory": {
-                "content": "{userName} won <span class=\"prize\">+{reward}{unit}</span> {type} on their lucky spin"
+                "gift": "{userName} won <span class=\"prize\">+{reward}{unit}</span> {type} on their lucky spin",
+                "gift_food": "{userName} won <span class=\"prize\">+{reward} {unit}</span> {type} for their virtual pet on",
+                "task": "{userName} got <span class=\"prize\">+{reward}{unit}</span> for {action}."
             }
         },
         "promotionCryptoBacked": {

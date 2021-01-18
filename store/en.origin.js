@@ -5148,6 +5148,7 @@
         "btnDepositCrypto": "%%%.menuMobile.btnDepositCrypto%%%",
         "btnGiftCard": "%%%.menuMobile.btnGiftCard%%%",
         "btnDailyLogin": "%%%.menuMobile.btnDailyLogin%%%",
+        "btnWithdrawGiftcards": "%%%.menuMobile.btnWithdrawGiftcards%%%",
         "greeting": {
             "hi": "%%%.menuMobile.greeting.hi%%%",
             "title": "%%%.menuMobile.greeting.title%%%",
@@ -5190,7 +5191,9 @@
         "loanOriginatorDesc": "%%%.menuMobile.loanOriginatorDesc%%%",
         "loanDesc": "%%%.menuMobile.loanDesc%%%",
         "secondaryMarketDesc": "%%%.menuMobile.secondaryMarketDesc%%%",
-        "accountActivityDesc": "%%%.menuMobile.accountActivityDesc%%%"
+        "accountActivityDesc": "%%%.menuMobile.accountActivityDesc%%%",
+        "dashBoard": "%%%.menuMobile.dashBoard%%%",
+        "dashBoardDesc": "%%%.menuMobile.dashBoardDesc%%%"
     },
     "landingPage": {
         "steadyGrowth": {
@@ -5320,6 +5323,7 @@
             },
             "intro": {
                 "contentHtml": "%%%.landingPage.luckySpin.intro.contentHtml%%%",
+                "title": "%%%.landingPage.luckySpin.intro.title%%%",
                 "desc": {
                     "1": "%%%.landingPage.luckySpin.intro.desc.1%%%",
                     "2": "%%%.landingPage.luckySpin.intro.desc.2%%%",

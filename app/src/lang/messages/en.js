@@ -618,7 +618,7 @@ export default {
         '15': 'Confirming',
         '16': 'Order timed out'
       },
-      reverseType: {
+      reserveType: {
         pending: {
           label: 'In progress',
         },
@@ -694,6 +694,12 @@ export default {
         reversed: {
           label: 'Correction',
           desc: "This corrects a previous deposit error such as an overpayment or duplicate transaction. For more information, please email us on hello@myconstant.com."
+        },
+        affiliateRewardUser: {
+          label: 'Reward user',
+        },
+        affiliateRewardVolume: {
+          label: 'Reward volume',
         }
       },
       requestExecute: 'Help',
@@ -714,7 +720,7 @@ export default {
         cancelSuccess: 'Successfully Cancelled'
       },
       toEmail: 'To Email',
-      exportToExcelNote: 'You can export up to six months of your account activity.',
+      exportToExcelNote: 'You can export up to twelve months of your account activity.',
       fromDate: 'From date',
       toDate: 'To date',
       download: 'Download',
@@ -4566,11 +4572,15 @@ export default {
     whyBecome: {
       title: 'The best rewards in the business',
       formula: {
-        '0': 'per registration',
+        '0': 'when you refer 10 people iwthin 30 days who deposit',
         '1': ' ',
-        '2': 'of referee’s Flex interest',
+        '2': 'when referees deposit $500,000 within their first 90 days',
         '3': ' ',
-        '4': 'for your referee'
+        '4': 'per registration',
+        '5': ' ',
+        '6': 'of referee’s Flex interest',
+        '7': ' ',
+        '8': 'for your referee',
       },
       // desc: '        <div class="section-desc-title">YOU EARN MORE</div>        <div><strong>Earn ${affiliateReward} for every US citizen who registers</strong>, paid instantly after they make their first deposit, and with no limits.</div>        <div><strong>Then earn 20% of their Flex interest</strong>, paid every second, and capped at a generous $1,000,000.</div>        <div><strong>Your referee also gets a ${kYCTrialAmount} Flex trial</strong> when they pass KYC. We’ll take the trial funds back at the end of the month, but they’ll keep the interest.</div>      ',
       // data: {
@@ -4775,10 +4785,17 @@ export default {
           <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>
           <li><p>If you make false or misleading statements about MyConstant, use MyConstant keywords in Google ads, use visitor exchange systems, forced clicks, and other methods that lead to unqualified traffic, send spam with MyConstant ads or use other aggressive marketing methods, your affiliate earnings will be forfeit and your membership cancelled.</p></li>
           <li><p>To qualify for affiliate earnings, your referees must be US citizens.</p></li>
+          <li><p>To qualify for the \${milestoneReward10People} milestone reward, your referees must have been referred and have made their first deposit within the rolling 30-day period. Deposits outside of the rolling 30-day period don’t count. The rolling 30-day period is the immediate 30 days before today or 30 days from your previous milestone award date, whichever is the latest.</p></li>
+          <li><p>To qualify for the \${milestoneReward500k} milestone reward, your referees must have been referred and have deposited a combined total of at least $500,000 within the rolling 90-day period.  Deopsits outside of the rolling 90-day period don’t count. The rolling 90-day period is the immediate 90 days before today or 90 days from your previous milestone award date, whichever is the latest.</p></li>
+          <li><p>Milestone rewards are unlimited. Rolling timelines are reset whenever you earn a milestone.</p></li>
           <li><p>MyConstant reserves the right to change the terms of the affiliate program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>
         </ol>
       `
     },
+    milestone: {
+      title: 'MILESTONES',
+      intro: 'Smash these depositor goals to earn <strong>our best rewards</strong>. Milestone rewards are <strong>unlimited</strong> - we reset the timeline on every win.',
+    }
   },
   developers: {
     menu: {
@@ -5016,7 +5033,7 @@ export default {
     },
     terms: {
       normal: '        <h3 class="semiBold">Terms and Conditions</h3>        <ol>          <li><p>To qualify for the ${referralReward} bonus, your referee must be a US citizen.</p></li>          <li><p>The bonus is paid when your referee signs up, passes KYC, and deposits USD.</p></li>          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>          <li><p>Referral interest is paid to you by MyConstant and does not deduct from your friends’ earned Flex interest.</p></li>          <li>            <p>The amount you earn depends on how your friends use the platform:</p>            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>          </li>          <li><p>You can invite as many friends as you like.</p></li>          <li><p>Your referral earnings are paid in USD, directly into your MyConstant account.</p></li>          <li><p>The maximum you can earn is $1,000,000.</p></li>          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won\'t earn interest but on the 365th one you will.</p></li>          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>          <li><p>MyConstant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>        </ol>        <p class="bold effective">Effective as of {date}</p>      ',
-      normalNonUS: `        <h3 class="semiBold">Terms and Conditions</h3>        <ol><li><p>Your earning is paid after your referee makes the first fiat deposits.</p></li>          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>          <li><p>Referral interest is paid to you by MyConstant and does not deduct from your friends’ earned Flex interest.</p></li>          <li>            <p>The amount you earn depends on how your friends use the platform:</p>            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>          </li>          <li><p>You can invite as many friends as you like.</p></li>          <li><p>Your referral earnings are paid in USD, directly into your MyConstant account.</p></li>          <li><p>The maximum you can earn is $1,000,000.</p></li>          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p></li>          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>          <li><p>MyConstant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>        </ol>        <p class="bold effective">Effective as of {date}</p>      `
+      normalNonUS: `        <h3 class="semiBold">Terms and Conditions</h3>        <ol><li><p>Your reward is paid when your referee makes their first fiat deposit.</p></li>          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>          <li><p>Referral interest is paid to you by MyConstant and does not deduct from your friends’ earned Flex interest.</p></li>          <li>            <p>The amount you earn depends on how your friends use the platform:</p>            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>          </li>          <li><p>You can invite as many friends as you like.</p></li>          <li><p>Your referral earnings are paid in USD, directly into your MyConstant account.</p></li>          <li><p>The maximum you can earn is $1,000,000.</p></li>          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p></li>          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>          <li><p>MyConstant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>        </ol>        <p class="bold effective">Effective as of {date}</p>      `
     },
     materials: {
       title: 'We make referring easy',
@@ -5695,7 +5712,7 @@ export default {
           answer: `
                <p>Once we’ve taken back the \${kYCTrialAmount}, you keep the interest. It’s up to you what you’d like to do next. You can keep your interest in Flex earning 4% APY with anytime free withdrawals, or you can add some of your own money and reinvest in a crypto-backed loan for {rate}% APR (minimum investment is $50). You can also just withdraw it to your bank account. The choice is yours!</p>
                <p>
-                <strong>Important note:</strong> You must deposit, withdraw, or invest within 90 days of receiving your free interest otherwise it will expire.
+                <strong>Important note:</strong> You must deposit, withdraw, or invest within 60 days of receiving your free interest otherwise it will expire.
                </p>
             `
         },

@@ -663,82 +663,88 @@
                 "15": "%%%.me.history.orderStatus.15%%%",
                 "16": "%%%.me.history.orderStatus.16%%%"
             },
-            "reverseType": {
+            "reserveType": {
                 "pending": {
-                    "label": "%%%.me.history.reverseType.pending.label%%%"
+                    "label": "%%%.me.history.reserveType.pending.label%%%"
                 },
                 "purchasing": {
-                    "label": "%%%.me.history.reverseType.purchasing.label%%%",
-                    "desc": "%%%.me.history.reverseType.purchasing.desc%%%"
+                    "label": "%%%.me.history.reserveType.purchasing.label%%%",
+                    "desc": "%%%.me.history.reserveType.purchasing.desc%%%"
                 },
                 "coinMinting": {
-                    "label": "%%%.me.history.reverseType.coinMinting.label%%%"
+                    "label": "%%%.me.history.reserveType.coinMinting.label%%%"
                 },
                 "coinBurning": {
-                    "label": "%%%.me.history.reverseType.coinBurning.label%%%"
+                    "label": "%%%.me.history.reserveType.coinBurning.label%%%"
                 },
                 "transferring": {
-                    "label": "%%%.me.history.reverseType.transferring.label%%%"
+                    "label": "%%%.me.history.reserveType.transferring.label%%%"
                 },
                 "redeemingAch": {
-                    "label": "%%%.me.history.reverseType.redeemingAch.label%%%",
-                    "desc": "%%%.me.history.reverseType.redeemingAch.desc%%%",
-                    "desc1": "%%%.me.history.reverseType.redeemingAch.desc1%%%"
+                    "label": "%%%.me.history.reserveType.redeemingAch.label%%%",
+                    "desc": "%%%.me.history.reserveType.redeemingAch.desc%%%",
+                    "desc1": "%%%.me.history.reserveType.redeemingAch.desc1%%%"
                 },
                 "redeemingWire": {
-                    "label": "%%%.me.history.reverseType.redeemingWire.label%%%",
-                    "desc": "%%%.me.history.reverseType.redeemingWire.desc%%%",
-                    "desc1": "%%%.me.history.reverseType.redeemingWire.desc1%%%"
+                    "label": "%%%.me.history.reserveType.redeemingWire.label%%%",
+                    "desc": "%%%.me.history.reserveType.redeemingWire.desc%%%",
+                    "desc1": "%%%.me.history.reserveType.redeemingWire.desc1%%%"
                 },
                 "redeemingZelle": {
-                    "label": "%%%.me.history.reverseType.redeemingZelle.label%%%",
-                    "desc": "%%%.me.history.reverseType.redeemingZelle.desc%%%",
-                    "desc1": "%%%.me.history.reverseType.redeemingZelle.desc1%%%"
+                    "label": "%%%.me.history.reserveType.redeemingZelle.label%%%",
+                    "desc": "%%%.me.history.reserveType.redeemingZelle.desc%%%",
+                    "desc1": "%%%.me.history.reserveType.redeemingZelle.desc1%%%"
                 },
                 "redeemingFiat": {
-                    "label": "%%%.me.history.reverseType.redeemingFiat.label%%%",
-                    "desc": "%%%.me.history.reverseType.redeemingFiat.desc%%%",
-                    "desc1": "%%%.me.history.reverseType.redeemingFiat.desc1%%%"
+                    "label": "%%%.me.history.reserveType.redeemingFiat.label%%%",
+                    "desc": "%%%.me.history.reserveType.redeemingFiat.desc%%%",
+                    "desc1": "%%%.me.history.reserveType.redeemingFiat.desc1%%%"
                 },
                 "cancelled": {
-                    "label": "%%%.me.history.reverseType.cancelled.label%%%",
-                    "desc": "%%%.me.history.reverseType.cancelled.desc%%%"
+                    "label": "%%%.me.history.reserveType.cancelled.label%%%",
+                    "desc": "%%%.me.history.reserveType.cancelled.desc%%%"
                 },
                 "done": {
-                    "label": "%%%.me.history.reverseType.done.label%%%",
-                    "desc": "%%%.me.history.reverseType.done.desc%%%"
+                    "label": "%%%.me.history.reserveType.done.label%%%",
+                    "desc": "%%%.me.history.reserveType.done.desc%%%"
                 },
                 "holding": {
-                    "label": "%%%.me.history.reverseType.holding.label%%%",
-                    "desc": "%%%.me.history.reverseType.holding.desc%%%"
+                    "label": "%%%.me.history.reserveType.holding.label%%%",
+                    "desc": "%%%.me.history.reserveType.holding.desc%%%"
                 },
                 "transferringFailed": {
-                    "label": "%%%.me.history.reverseType.transferringFailed.label%%%",
-                    "desc": "%%%.me.history.reverseType.transferringFailed.desc%%%"
+                    "label": "%%%.me.history.reserveType.transferringFailed.label%%%",
+                    "desc": "%%%.me.history.reserveType.transferringFailed.desc%%%"
                 },
                 "approving": {
-                    "label": "%%%.me.history.reverseType.approving.label%%%",
-                    "desc": "%%%.me.history.reverseType.approving.desc%%%"
+                    "label": "%%%.me.history.reserveType.approving.label%%%",
+                    "desc": "%%%.me.history.reserveType.approving.desc%%%"
                 },
                 "agentApproving": {
-                    "label": "%%%.me.history.reverseType.agentApproving.label%%%",
-                    "desc": "%%%.me.history.reverseType.agentApproving.desc%%%"
+                    "label": "%%%.me.history.reserveType.agentApproving.label%%%",
+                    "desc": "%%%.me.history.reserveType.agentApproving.desc%%%"
                 },
                 "tokenTransferring": {
-                    "label": "%%%.me.history.reverseType.tokenTransferring.label%%%",
-                    "desc": "%%%.me.history.reverseType.tokenTransferring.desc%%%"
+                    "label": "%%%.me.history.reserveType.tokenTransferring.label%%%",
+                    "desc": "%%%.me.history.reserveType.tokenTransferring.desc%%%"
                 },
                 "emailConfirming": {
-                    "label": "%%%.me.history.reverseType.emailConfirming.label%%%",
-                    "desc": "%%%.me.history.reverseType.emailConfirming.desc%%%"
+                    "label": "%%%.me.history.reserveType.emailConfirming.label%%%",
+                    "desc": "%%%.me.history.reserveType.emailConfirming.desc%%%"
                 },
                 "timeout": {
-                    "label": "%%%.me.history.reverseType.timeout.label%%%",
-                    "desc": "%%%.me.history.reverseType.timeout.desc%%%"
+                    "label": "%%%.me.history.reserveType.timeout.label%%%",
+                    "desc": "%%%.me.history.reserveType.timeout.desc%%%"
                 },
                 "reversed": {
-                    "label": "%%%.me.history.reverseType.reversed.label%%%",
-                    "desc": "%%%.me.history.reverseType.reversed.desc%%%"
+                    "label": "%%%.me.history.reserveType.reversed.label%%%",
+                    "desc": "%%%.me.history.reserveType.reversed.desc%%%"
+                },
+                "affiliateRewardUser": {
+                    "label": "%%%.me.history.reserveType.affiliateRewardUser.label%%%"
+                },
+                "affiliateRewardVolume": {
+                    "label": "%%%.me.history.reserveType.affiliateRewardVolume.label%%%"
                 }
             },
             "requestExecute": "%%%.me.history.requestExecute%%%",
@@ -4466,7 +4472,11 @@
                 "1": "%%%.affiliates.whyBecome.formula.1%%%",
                 "2": "%%%.affiliates.whyBecome.formula.2%%%",
                 "3": "%%%.affiliates.whyBecome.formula.3%%%",
-                "4": "%%%.affiliates.whyBecome.formula.4%%%"
+                "4": "%%%.affiliates.whyBecome.formula.4%%%",
+                "5": "%%%.affiliates.whyBecome.formula.5%%%",
+                "6": "%%%.affiliates.whyBecome.formula.6%%%",
+                "7": "%%%.affiliates.whyBecome.formula.7%%%",
+                "8": "%%%.affiliates.whyBecome.formula.8%%%"
             },
             "trialBonus": "%%%.affiliates.whyBecome.trialBonus%%%"
         },
@@ -4644,6 +4654,10 @@
         },
         "terms": {
             "content": "%%%.affiliates.terms.content%%%"
+        },
+        "milestone": {
+            "title": "%%%.affiliates.milestone.title%%%",
+            "intro": "%%%.affiliates.milestone.intro%%%"
         }
     },
     "developers": {

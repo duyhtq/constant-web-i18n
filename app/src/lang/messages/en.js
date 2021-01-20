@@ -9,7 +9,7 @@ export default {
       transfer: 'Transfer',
       withdrawFiat: 'Withdraw USD',
       withdrawCrypto: 'Withdraw crypto',
-      withdrawGiftCards: 'Withdraw to gift-card'
+      withdrawGiftCards: 'Withdraw as gift card'
     },
     accountActivities: 'Account Activity',
     prices: 'Pricing & Service times',
@@ -367,6 +367,7 @@ export default {
     prvDescription: `PRV is the native token of privacy network, Incognito. It enables you to digitally transact crypto in private and is readily exchanged for other cryptocurrencies through Incognito’s pDEX (decentralized exchange). We negotiated a special interest rate in PRV that helps you take advantage of private transactions over the Incognito network. To learn more about PRV, <a class="underline" href="https://incognito.org/" target="_blank">visit the Incognito community</a>.`,
     payInterestIn: 'Pay interest in:',
     depositCollateralSuccess: `Thanks – you'll now earn {interest}% {interestType} interest on your {collateral} balance, paid in {inCollateral}.`,
+    trc20Note: 'Transfer USDT over the Tron Network (TRC20) to reduce fees and transfer times.',
   },
   history: {
     deposit: {
@@ -4382,9 +4383,9 @@ export default {
     },
     withdrawFiatNote: `
         <p class="title">* A receiving fee may be charged by your financial institutions.</p>
-        <p> - The global banking system is imperfect, and some banks lack the direct relationships that support international wire transfers. These banks may depend on one or more intermediary banks (banks in addition to yours and ours) to help process the wire.</p>
-        <p> - Intermediary banks may automatically deduct fees for this service before the wire reaches your bank (withdrawal) or our bank (deposit). Unfortunately, these fees are outside of our control, and we can’t reliably inform you of the intermediary banks involved nor their fees in advance.</p>
-        <p> - While we don’t charge a USD withdrawal fee, you might still receive less than the withdrawal amount (after deducting your bank’s wire receipt fee) due to intermediary bank fees. Similarly, you might receive less in your MyConstant account after a deposit due to the same intermediary bank fees.</p>
+        <p>The global banking system is imperfect, and some banks lack the direct relationships that support international wire transfers. These banks may depend on one or more intermediary banks (banks in addition to yours and ours) to help process the wire.</p>
+        <p>Intermediary banks may automatically deduct fees for this service before the wire reaches your bank (withdrawal) or our bank (deposit). Unfortunately, these fees are outside of our control, and we can’t reliably inform you of the intermediary banks involved nor their fees in advance.</p>
+        <p>While we don’t charge a USD withdrawal fee, you might still receive less than the withdrawal amount (after deducting your bank’s wire receipt fee) due to intermediary bank fees. Similarly, you might receive less in your MyConstant account after a deposit due to the same intermediary bank fees.</p>
     `,
     withdrawCrypto: {
       head1: 'Stablecoin withdrawal',
@@ -5308,7 +5309,7 @@ export default {
     btnDepositCrypto: '<div class="textLeft"><small>Deposit</small><div>Crypto</div></div>',
     btnGiftCard: '<div class="textLeft"><div>Gift Cards</div></div>',
     btnDailyLogin: '<div class="textLeft"><small>Claim your</small><div>Daily Login</div></div>',
-    btnWithdrawGiftcards: '<div class="textLeft"><small>Withdraw to</small><div>Gift-card</div></div>',
+    btnWithdrawGiftcards: '<div class="textLeft"><small>Withdraw as</small><div>Gift card</div></div>',
     greeting: {
       hi: 'Hi you',
       title: 'Good',
@@ -5353,7 +5354,7 @@ export default {
     secondaryMarketDesc: 'View bought and sold investments.',
     accountActivityDesc: 'View interest earnings, deposits, withdrawals, and more.',
     dashBoard: 'Dashboard',
-    dashBoardDesc: ' ',
+    dashBoardDesc: 'View your balance, deposit, withdraw, and more.',
   },
   landingPage: {
     steadyGrowth: {
@@ -5476,7 +5477,7 @@ export default {
       title: 'Lucky Spin',
       howItWorks: {
         title: 'How to get spins',
-        desc: 'From <strong>January 18th 09:00 PST to February 17th 23:59 PST,</strong> you can earn spins in the following ways:',
+        desc: 'You can earn spins in the following ways:',
         data: {
           0: {
             title: 'Deposit USD',

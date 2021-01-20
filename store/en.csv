@@ -7,7 +7,7 @@
 %%%.user.userLogin.transfer%%%,"Transfer"
 %%%.user.userLogin.withdrawFiat%%%,"Withdraw USD"
 %%%.user.userLogin.withdrawCrypto%%%,"Withdraw crypto"
-%%%.user.userLogin.withdrawGiftCards%%%,"Withdraw to gift-card"
+%%%.user.userLogin.withdrawGiftCards%%%,"Withdraw as gift card"
 %%%.user.accountActivities%%%,"Account Activity"
 %%%.user.prices%%%,"Pricing & Service times"
 %%%.user.settings%%%,"Settings"
@@ -287,6 +287,7 @@
 %%%.exchangeInputDepositForm.prvDescription%%%,"PRV is the native token of privacy network, Incognito. It enables you to digitally transact crypto in private and is readily exchanged for other cryptocurrencies through Incognito’s pDEX (decentralized exchange). We negotiated a special interest rate in PRV that helps you take advantage of private transactions over the Incognito network. To learn more about PRV, <a class=""underline"" href=""https://incognito.org/"" target=""_blank"">visit the Incognito community</a>."
 %%%.exchangeInputDepositForm.payInterestIn%%%,"Pay interest in:"
 %%%.exchangeInputDepositForm.depositCollateralSuccess%%%,"Thanks – you'll now earn {interest}% {interestType} interest on your {collateral} balance, paid in {inCollateral}."
+%%%.exchangeInputDepositForm.trc20Note%%%,"Transfer USDT over the Tron Network (TRC20) to reduce fees and transfer times."
 %%%.history.deposit.title%%%,"Fiat - Deposits"
 %%%.history.deposit.tabs.fiat%%%,"Fiat"
 %%%.history.deposit.tabs.crypto%%%,"Crypto"
@@ -3229,9 +3230,9 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.getPrices.withdrawFiat.head3%%%,"Fee"
 %%%.getPrices.withdrawFiatNote%%%,"
         <p class=""title"">* A receiving fee may be charged by your financial institutions.</p>
-        <p> - The global banking system is imperfect, and some banks lack the direct relationships that support international wire transfers. These banks may depend on one or more intermediary banks (banks in addition to yours and ours) to help process the wire.</p>
-        <p> - Intermediary banks may automatically deduct fees for this service before the wire reaches your bank (withdrawal) or our bank (deposit). Unfortunately, these fees are outside of our control, and we can’t reliably inform you of the intermediary banks involved nor their fees in advance.</p>
-        <p> - While we don’t charge a USD withdrawal fee, you might still receive less than the withdrawal amount (after deducting your bank’s wire receipt fee) due to intermediary bank fees. Similarly, you might receive less in your MyConstant account after a deposit due to the same intermediary bank fees.</p>
+        <p>The global banking system is imperfect, and some banks lack the direct relationships that support international wire transfers. These banks may depend on one or more intermediary banks (banks in addition to yours and ours) to help process the wire.</p>
+        <p>Intermediary banks may automatically deduct fees for this service before the wire reaches your bank (withdrawal) or our bank (deposit). Unfortunately, these fees are outside of our control, and we can’t reliably inform you of the intermediary banks involved nor their fees in advance.</p>
+        <p>While we don’t charge a USD withdrawal fee, you might still receive less than the withdrawal amount (after deducting your bank’s wire receipt fee) due to intermediary bank fees. Similarly, you might receive less in your MyConstant account after a deposit due to the same intermediary bank fees.</p>
     "
 %%%.getPrices.withdrawCrypto.head1%%%,"Stablecoin withdrawal"
 %%%.getPrices.withdrawCrypto.head2%%%,"Funds received in your wallet*"
@@ -3852,7 +3853,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.menuMobile.btnDepositCrypto%%%,"<div class=""textLeft""><small>Deposit</small><div>Crypto</div></div>"
 %%%.menuMobile.btnGiftCard%%%,"<div class=""textLeft""><div>Gift Cards</div></div>"
 %%%.menuMobile.btnDailyLogin%%%,"<div class=""textLeft""><small>Claim your</small><div>Daily Login</div></div>"
-%%%.menuMobile.btnWithdrawGiftcards%%%,"<div class=""textLeft""><small>Withdraw to</small><div>Gift-card</div></div>"
+%%%.menuMobile.btnWithdrawGiftcards%%%,"<div class=""textLeft""><small>Withdraw as</small><div>Gift card</div></div>"
 %%%.menuMobile.greeting.hi%%%,"Hi you"
 %%%.menuMobile.greeting.title%%%,"Good"
 %%%.menuMobile.greeting.evening%%%,"Evening"
@@ -3895,7 +3896,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.menuMobile.secondaryMarketDesc%%%,"View bought and sold investments."
 %%%.menuMobile.accountActivityDesc%%%,"View interest earnings, deposits, withdrawals, and more."
 %%%.menuMobile.dashBoard%%%,"Dashboard"
-%%%.menuMobile.dashBoardDesc%%%," "
+%%%.menuMobile.dashBoardDesc%%%,"View your balance, deposit, withdraw, and more."
 %%%.landingPage.steadyGrowth.title%%%,"        <p class=""header"">Start growing at {rate}% APR today.</p>        <p>Don’t fall with the market. Enjoy steady growth with fully-backed P2P lending. No fees. Free withdrawals.</p>        <p>Start investing from just $50.</p>      "
 %%%.landingPage.faqsSectionLink%%%,"<p class=""clearBottom"">Questions?</p>      <p>Check out our <a href=""#landing-faqs"" class=""underline"">FAQs</a>.</p>    "
 %%%.landingPage.howItWorks.title%%%,"How It Works"
@@ -3960,7 +3961,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
       "
 %%%.landingPage.luckySpin.title%%%,"Lucky Spin"
 %%%.landingPage.luckySpin.howItWorks.title%%%,"How to get spins"
-%%%.landingPage.luckySpin.howItWorks.desc%%%,"From <strong>January 18th 09:00 PST to February 17th 23:59 PST,</strong> you can earn spins in the following ways:"
+%%%.landingPage.luckySpin.howItWorks.desc%%%,"You can earn spins in the following ways:"
 %%%.landingPage.luckySpin.howItWorks.data.0.title%%%,"Deposit USD"
 %%%.landingPage.luckySpin.howItWorks.data.0.desc%%%,"<p>When you deposit USD, you’ll receive the same amount divided by 1,000 in spins (rounded up to the nearest whole number) with the minimum amount from $1,000. For example, deposit $5,001 and you’ll receive 6 spins.</p>"
 %%%.landingPage.luckySpin.howItWorks.data.1.title%%%,"Refer friends"

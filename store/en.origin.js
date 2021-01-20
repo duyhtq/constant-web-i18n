@@ -392,7 +392,8 @@
         "minDeposit": "%%%.exchangeInputDepositForm.minDeposit%%%",
         "prvDescription": "%%%.exchangeInputDepositForm.prvDescription%%%",
         "payInterestIn": "%%%.exchangeInputDepositForm.payInterestIn%%%",
-        "depositCollateralSuccess": "%%%.exchangeInputDepositForm.depositCollateralSuccess%%%"
+        "depositCollateralSuccess": "%%%.exchangeInputDepositForm.depositCollateralSuccess%%%",
+        "trc20Note": "%%%.exchangeInputDepositForm.trc20Note%%%"
     },
     "history": {
         "deposit": {

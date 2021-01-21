@@ -4650,6 +4650,18 @@
                 "question": "%%%.affiliates.faqs.24.question%%%",
                 "answer": "%%%.affiliates.faqs.24.answer%%%"
             },
+            "25": {
+                "question": "%%%.affiliates.faqs.25.question%%%",
+                "answer": "%%%.affiliates.faqs.25.answer%%%"
+            },
+            "26": {
+                "question": "%%%.affiliates.faqs.26.question%%%",
+                "answer": "%%%.affiliates.faqs.26.answer%%%"
+            },
+            "27": {
+                "question": "%%%.affiliates.faqs.27.question%%%",
+                "answer": "%%%.affiliates.faqs.27.answer%%%"
+            },
             "desc": "%%%.affiliates.faqs.desc%%%"
         },
         "terms": {

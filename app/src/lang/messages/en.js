@@ -4674,98 +4674,117 @@ export default {
         answer: '          <p>          The MyConstant Affiliate Program rewards you for referring people to MyConstant through your website, service, or platform. For every person who signs up using your referral link, you’ll earn a ${affiliateReward} bonus, paid immediately upon them making their first deposit (minimum $10). You’ll also earn 20% of their Flex earnings, paid every second, and capped at $1,000,000.          </p>          <p>          We track your referrals using cookies with a 30-day lifespan. If someone clicks your affiliate link and signs up within a 30-day period, you’ll earn the bonus and commission – even if they don’t sign up immediately. Of course, should your referee clear their cookies, we won’t be able to track them, so please bear this in mind. You want people to sign up as soon as possible.          </p>          '
       },
       '1': {
+        question: 'What are milestone rewards?',
+        answer: `
+          <p>Milestone rewards recognize your efforts to encourage deposits as well as signups. While it's great to welcome new people, it's even better when they start enjoying the great returns on our suite of investment products and finally start to grow their money.</p>
+          <p>We have two Milestone rewards:</p>
+          <ul>
+            <li>\${milestoneCountReward} when you refer {milestoneCount} people within {milestoneCountDays} days who also deposit within that timeframe.</li>
+            <li>\${milestoneVolumeReward} when you refer people within {milestoneVolumeDays} days whose combined deposit volume hits \${milestoneVolume} within that timeframe.</li>
+          </ul>
+        `
+      },
+      '2': {
+        question: 'Why are milestone rewards time-limited?',
+        answer: 'Time-limited rewards encourage action. The longer your referees wait before depositing, the more returns they potentially miss out on – and we don\'t want that! It\'s easy to put things off "until tomorrow", but we believe your referees benefit most when they start investing early, compounding their returns over time.  So we ask you, as the voice of MyConstant, to encourage a timely deposit which results in a timely reward for you.',
+      },
+      '3': {
+        question: 'How are the rolling {milestoneCountDays} and {milestoneVolumeDays}-day periods calculated for milestone rewards?',
+        answer: '<p>Both the {milestoneCountDays}-day and {milestoneVolumeDays}-day periods are rolling, which means they\'re calculated on the {milestoneCountDays} or {milestoneVolumeDays} days preceding today. However, the milestone timelines are reset whenever you earn a reward.</p>'
+      },
+      '4': {
         question: 'Who can become a MyConstant affiliate?',
         answer: '          <p>          Anyone, so long as your audience is based in the US. You will only earn rewards for referring US citizens.          </p>          '
       },
-      '2': {
+      '5': {
         question: 'How do I join the MyConstant Affiliate program?',
         answer: '          <p>          It’s easy! Enter your name and email address on our Affiliate page and we’ll send you a short application form. We’ll review your responses and get back to you within three business days (usually sooner). Once approved, you can start earning immediately.          </p>          '
       },
-      '3': {
+      '6': {
         question: 'How long will the application approval process take?',
         answer: '          <p>          Approval should take no longer than three business days, but might take a little longer if we need more information from you.          </p>          '
       },
-      '4': {
+      '7': {
         question: 'Do I need to pay to become a MyConstant affiliate?',
         answer: '          <p>          No – we’ll be paying you!          </p>          '
       },
-      '5': {
+      '8': {
         question: 'Where can I promote MyConstant to earn under the program?',
         answer: '          <p>          Anywhere you want! Blogs, social media, websites – you name it.          </p>          '
       },
-      '6': {
+      '9': {
         question: 'Do I need to register as a business to become an affiliate?',
         answer: '          <p>          No, you don’t.          </p>          '
       },
-      '7': {
+      '10': {
         question: 'Do I need to have my own website to become an affiliate?',
         answer: '          <p>          No, but you do need an online platform to share your affiliate link. This could be YouTube or another social media channel, for example, or an email newsletter.          </p>          '
       },
-      '8': {
+      '11': {
         question: 'What promotions am I not allowed to use?',
         answer: '          <p>          You can’t make false or misleading statements about MyConstant, or use MyConstant keywords in Google ads. Neither can you use visitor exchange systems, forced clicks, and other methods that lead to unqualified traffic. You are not allowed to send spam with MyConstant ads or use other aggressive marketing methods. If you use any of these methods, your affiliate account will permanently cancelled.          </p>          '
       },
-      '9': {
+      '12': {
         question: 'How long do affiliate cookies last?',
         answer: '          <p>          When someone clicks your affiliate link, a cookie is created. That cookie will stay on their computer for 30 days unless manually cleared. You’ll earn rewards on all sign-ups containing your unique cookie data.          </p>          '
       },
-      '10': {
+      '13': {
         question: 'Who has control of what’s being published on an affiliate’s site/blog?',
         answer: '          <p>          As long as you publish in accordance with the affiliate program terms and conditions, you have full control over publication.          </p>          '
       },
-      '11': {
+      '14': {
         question: 'If someone has my affiliate cookie but invests from a different source, do I still earn the rewards?',
         answer: '          <p>          Yes. It doesn’t matter where the person signs up as long as they do so with your unique cookie installed.          </p>          '
       },
-      '12': {
+      '15': {
         question: "What if my referral doesn't show up in reporting?",
         answer: '          <p>          If this happens, email us at <a href="mailto:hello@myconstant.com" target="_blank">hello@myconstant.com</a> with the details so we can see if something went wrong.          </p>          '
       },
-      '13': {
+      '16': {
         question: 'Will I have any report on my performance?',
         answer: '          <p>          Yes, you’ll receive monthly reports, notifications when you earn, and occasional updates on how to boost your earnings through our affiliate program.          </p>          '
       },
-      '14': {
+      '17': {
         question: 'Can my affiliate account get cancelled?',
         answer: '          <p>          Yes. We will cancel your membership if you break any of the clauses in our affiliate program terms and conditions.          </p>          '
       },
-      '15': {
+      '18': {
         question: 'What happens if my affiliate account is inactive?',
         answer: '          <p>          We understand it might take time for your referees to sign up. You have a full six months before we consider reviewing your membership, and we’ll be in touch regularly before then with ideas on how to kickstart your affiliate earnings.          </p>          '
       },
-      '16': {
+      '19': {
         question: 'How do I cancel my affiliate membership?',
         answer: '          <p>          Hopefully you won’t need to! But if so, send us an email at <a href="mailto:hello@myconstant.com" target="_blank">hello@myconstant.com</a> and we’ll arrange it for you.          </p>          '
       },
-      '17': {
+      '20': {
         question: 'What technical skills do I need to become an affiliate?',
         answer: '          <p>          As long as you can work a computer or smartphone and know how to use the internet, you can become an affiliate.          </p>          '
       },
-      '18': {
+      '21': {
         question: 'Can I use the MyConstant logo in my own banners?',
         answer: '          <p>          Yes, but please send your design to us first for approval. You’ll get a better response if your banner is consistent with our brand guidelines.          </p>          '
       },
-      '19': {
+      '22': {
         question: 'What affiliate platform should I choose?',
         answer: '          <p>          That’s up to you. Our affiliates use many different platforms, including podcasts, blogs, streaming accounts, social media, personal websites and others.          </p>          '
       },
-      '20': {
+      '23': {
         question: 'Do I get paid if I invest myself?',
         answer: '          <p>          You won’t get paid under the affiliate program, no.          </p>          '
       },
-      '21': {
+      '24': {
         question: 'Are my earnings taxable?',
         answer: '          <p>          Yes. Please consult your local tax authority for more information.          </p>          '
       },
-      '22': {
+      '25': {
         question: 'Can people I refer see my username?',
         answer: '          <p>          No. The affiliate program is private for both you and your referees.          </p>          '
       },
-      '23': {
+      '26': {
         question: 'Can I promote my affiliate link across multiple platforms?',
         answer: '          <p>          Yes – in fact, we encourage it!          </p>          '
       },
-      '24': {
+      '27': {
         question: 'In what currency will I get paid?',
         answer: '          <p>          You’ll be paid in USD.          </p>          '
       },

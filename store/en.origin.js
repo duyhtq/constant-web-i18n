@@ -2359,7 +2359,8 @@
                 "monthsLoan": "%%%.home.constantLoan.exchange.monthsLoan%%%",
                 "dayLoan": "%%%.home.constantLoan.exchange.dayLoan%%%",
                 "receiveAmountLabel": "%%%.home.constantLoan.exchange.receiveAmountLabel%%%",
-                "receiveAmountLabelDesc": "%%%.home.constantLoan.exchange.receiveAmountLabelDesc%%%"
+                "receiveAmountLabelDesc": "%%%.home.constantLoan.exchange.receiveAmountLabelDesc%%%",
+                "overCollateralCap": "%%%.home.constantLoan.exchange.overCollateralCap%%%"
             },
             "what": {
                 "title": "%%%.home.constantLoan.what.title%%%",
@@ -3445,7 +3446,8 @@
                             "splitNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.splitNote%%%",
                             "investNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.investNote%%%",
                             "transactionSuccess": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.transactionSuccess%%%",
-                            "transactionError": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.transactionError%%%"
+                            "transactionError": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.transactionError%%%",
+                            "plaidReachLimit": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.plaidReachLimit%%%"
                         },
                         "plaidSplitResultInvestment": {
                             "investNoteSuccess": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.investNoteSuccess%%%",
@@ -3458,7 +3460,8 @@
                             "transactionSuccess": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.transactionSuccess%%%",
                             "transactionError": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.transactionError%%%"
                         },
-                        "insufficient_bank_account": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.insufficient_bank_account%%%"
+                        "insufficient_bank_account": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.insufficient_bank_account%%%",
+                        "plaid_reach_limit": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaid_reach_limit%%%"
                     }
                 },
                 "updateBalanceNoteInWorkingTime": "%%%.home1.lendingSection.confirm.updateBalanceNoteInWorkingTime%%%",
@@ -4938,7 +4941,10 @@
         "errorMinValue": "%%%.collateralBalance.errorMinValue%%%",
         "generateAddress": "%%%.collateralBalance.generateAddress%%%",
         "noRecord": "%%%.collateralBalance.noRecord%%%",
-        "topupNoBalanceMessage": "%%%.collateralBalance.topupNoBalanceMessage%%%"
+        "topupNoBalanceMessage": "%%%.collateralBalance.topupNoBalanceMessage%%%",
+        "depositCapNote": "%%%.collateralBalance.depositCapNote%%%",
+        "depositCapReachedNote": "%%%.collateralBalance.depositCapReachedNote%%%",
+        "explainWhyCap": "%%%.collateralBalance.explainWhyCap%%%"
     },
     "proLending": {
         "balances": {

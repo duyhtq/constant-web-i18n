@@ -5620,6 +5620,7 @@
         "content": "%%%.callUs.content%%%",
         "contentDesc": "%%%.callUs.contentDesc%%%",
         "selectPreferredTime": "%%%.callUs.selectPreferredTime%%%",
+        "selectHour": "%%%.callUs.selectHour%%%",
         "desc": "%%%.callUs.desc%%%",
         "bookACall": "%%%.callUs.bookACall%%%",
         "requestSuccess": "%%%.callUs.requestSuccess%%%",

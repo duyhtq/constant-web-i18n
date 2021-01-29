@@ -4804,8 +4804,9 @@ export default {
           <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>
           <li><p>If you make false or misleading statements about MyConstant, use MyConstant keywords in Google ads, use visitor exchange systems, forced clicks, and other methods that lead to unqualified traffic, send spam with MyConstant ads or use other aggressive marketing methods, your affiliate earnings will be forfeit and your membership cancelled.</p></li>
           <li><p>To qualify for affiliate earnings, your referees must be US citizens.</p></li>
-          <li><p>To qualify for the \${milestoneReward10People} milestone reward, your referees must have been referred and have made their first deposit within the rolling 30-day period. Deposits outside of the rolling 30-day period don’t count. The rolling 30-day period is the immediate 30 days before today or 30 days from your previous milestone award date, whichever is the latest.</p></li>
-          <li><p>To qualify for the \${milestoneReward500k} milestone reward, your referees must have been referred and have deposited a combined total of at least $500,000 within the rolling 90-day period.  Deopsits outside of the rolling 90-day period don’t count. The rolling 90-day period is the immediate 90 days before today or 90 days from your previous milestone award date, whichever is the latest.</p></li>
+          <li><p>Milestone rewards apply to qualifying referrals made after Jan 21, 2021 only. They don't apply retroactively to referrals before this date.</p></li>
+          <li><p>To qualify for the \${periodCountReward} milestone reward, your referees must have been referred and have made their first deposit within the rolling 30-day period. Deposits outside of the rolling 30-day period don’t count. The rolling 30-day period is the immediate 30 days before today or 30 days from your previous milestone award date, whichever is the latest.</p></li>
+          <li><p>To qualify for the \${periodVolumeReward} milestone reward, your referees must have been referred and have deposited a combined total of at least \${periodVolume} within the rolling 90-day period.  Deopsits outside of the rolling 90-day period don’t count. The rolling 90-day period is the immediate 90 days before today or 90 days from your previous milestone award date, whichever is the latest.</p></li>
           <li><p>Milestone rewards are unlimited. Rolling timelines are reset whenever you earn a milestone.</p></li>
           <li><p>MyConstant reserves the right to change the terms of the affiliate program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>
         </ol>
@@ -5870,6 +5871,7 @@ export default {
     content:'Tell us a little about your problem or question',
     contentDesc:'You want to ask about…',
     selectPreferredTime: 'Select your preferred time',
+    selectHour: 'Hour',
     desc:'Click <strong>Book a call</strong> and we\'ll call you at the time specified above.',
     bookACall: 'Book a call',
     requestSuccess: 'Successfully Submitted',

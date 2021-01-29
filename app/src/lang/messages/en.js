@@ -1046,7 +1046,7 @@ export default {
           void: 'End your term early',
           dialog: {
             void: {
-              messageConfirm: '              <p>To end your term early, you can sell your investment to another investor. Once sold, you get your principal of ${amount} back and 2% APR on elapsed term time, but you’ll lose any earned membership points on this investment. Selling normally takes around 24 hours.</p>               <p>Would you like to sell your investment?</p>               ',
+              messageConfirm: '<p>To end your term early, you can sell all or part of your investment to another investor. Once sold, you get your principal back and 2% APR on elapsed term time, but will lose membership points earned on this investment. Selling normally takes around 24 hours.</p>',
               confirm: 'Yes',
               cancel: 'Go back'
             }
@@ -2329,6 +2329,7 @@ export default {
         dayLoan: '{term}-day loans',
         receiveAmountLabel: 'Choose USD or crypto you want to receive?',
         receiveAmountLabelDesc: 'We can pay your loan in USD or cryptocurrency. When choosing to receive your loan in cryptocurrency, you’re borrowing USD which we use to buy your chosen cryptocurrency. We search multiple exchanges for the best prices, and you might receive a little more or less cryptocurrency than the amount indicated below depending on the final price paid.',
+        overCollateralCap: `We've reached our collateral limit on new loans against {symbol}. Please choose another cryptocurrency as collateral.`,
       },
       what: {
         title: 'Why borrow with us?',
@@ -3461,7 +3462,8 @@ export default {
                 <p>To transfer the remaining \${unsuccessfulAmount} for your deposit, <a href="https://www.myconstant.com/flex" class="underline">create another deposit order</a>.</p>
               `,
               transactionSuccess: ' (Successful)',
-              transactionError: ' (Failed due to {error})'
+              transactionError: ' (Failed due to {error})',
+              plaidReachLimit: 'Sorry, the maximum you can deposit via ACH is {remainAmount}. To deposit a larger amount, please choose wire. Otherwise, your daily ACH deposit limit of $50,000 will reset at {resetTime}.',
             },
             plaidSplitResultInvestment: {
               investNoteSuccess: '<p>The transfer(s) for your investment(s) were processed successfully.</p>',
@@ -3475,6 +3477,7 @@ export default {
               transactionError: ' (Canceled due to {error})'
             },
             insufficient_bank_account: '<p>Sorry, you appear to have insufficient funds in your linked bank account for this transfer. Please check the balance of your linked bank account and try again. If you think this is an error, please contact us on <a href="mailto:hello@myconstant.com" target="_blank" class="underline">hello@myconstant.com</a>.</p>',
+            plaid_reach_limit: '<p>Sorry, you appear to have insufficient funds in your linked bank account for this transfer. Please check the balance of your linked bank account and try again. If you think this is an error, please contact us on <a href="mailto:hello@myconstant.com" target="_blank" class="underline">hello@myconstant.com</a>.</p>',
           }
         },
         updateBalanceNoteInWorkingTime: "Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience.",
@@ -5110,6 +5113,9 @@ export default {
     generateAddress: 'Generate address',
     noRecord: 'No record found',
     topupNoBalanceMessage: 'Please deposit to top-up your multi-collateral balance.',
+    depositCapNote: 'Our remaining collateral cap for {symbol} is {amount} {symbol}. Please note if you deposit over this amount, you\'ll only be able to borrow against a maximum of {amount} {symbol}. This cap is subject to change.',
+    depositCapReachedNote: 'We\'ve reached the collateral cap for {symbol}. You can still deposit, but you won\'t be able to borrow against {symbol} for the time being. This cap is subject to change.',
+    explainWhyCap: `<p>We cap our exposure to different cryptocurrency collateral to prevent triggering a mass liquidation event should that cryptocurrency's price fall. It helps protect investors while minimizing the potential for mass liquidations of borrower collateral.</p>`,
   },
   proLending: {
     balances: {

@@ -192,10 +192,6 @@
         "supportCenterDesc": "%%%.footer.supportCenterDesc%%%",
         "help": "%%%.footer.help%%%",
         "getSocial": "%%%.footer.getSocial%%%",
-        "content": "%%%.footer.content%%%",
-        "content2": "%%%.footer.content2%%%",
-        "mobileContent1": "%%%.footer.mobileContent1%%%",
-        "mobileContent2": "%%%.footer.mobileContent2%%%",
         "copyright": "%%%.footer.copyright%%%",
         "copyright2": "%%%.footer.copyright2%%%",
         "securityAndRisk": "%%%.footer.securityAndRisk%%%",
@@ -1666,6 +1662,10 @@
                 "title": "%%%.headerBar.extraMenu.invest.title%%%",
                 "desc": "%%%.headerBar.extraMenu.invest.desc%%%"
             },
+            "depositFiat": {
+                "title": "%%%.headerBar.extraMenu.depositFiat.title%%%",
+                "desc": "%%%.headerBar.extraMenu.depositFiat.desc%%%"
+            },
             "investFlex": {
                 "title": "%%%.headerBar.extraMenu.investFlex.title%%%",
                 "desc": "%%%.headerBar.extraMenu.investFlex.desc%%%"
@@ -1702,6 +1702,10 @@
             "invest": {
                 "title": "%%%.headerBar.extraMenuMobile.invest.title%%%",
                 "desc": "%%%.headerBar.extraMenuMobile.invest.desc%%%"
+            },
+            "depositFiat": {
+                "title": "%%%.headerBar.extraMenuMobile.depositFiat.title%%%",
+                "desc": "%%%.headerBar.extraMenuMobile.depositFiat.desc%%%"
             },
             "investFlex": {
                 "title": "%%%.headerBar.extraMenuMobile.investFlex.title%%%",
@@ -1746,8 +1750,8 @@
         }
     },
     "ourPress": {
-        "mobileTitle": "%%%.ourPress.mobileTitle%%%",
-        "title": "%%%.ourPress.title%%%"
+        "title": "%%%.ourPress.title%%%",
+        "desc": "%%%.ourPress.desc%%%"
     },
     "testimonials": {
         "title": "%%%.testimonials.title%%%",
@@ -1784,37 +1788,27 @@
                 }
             }
         },
+        "whyItBetter2": {
+            "title": "%%%.newHome.whyItBetter2.title%%%",
+            "desc": "%%%.newHome.whyItBetter2.desc%%%"
+        },
         "howItWorks": {
             "title": "%%%.newHome.howItWorks.title%%%",
             "desc": "%%%.newHome.howItWorks.desc%%%",
-            "content": {
+            "data": {
                 "0": {
-                    "title": "%%%.newHome.howItWorks.content.0.title%%%",
-                    "desc": "%%%.newHome.howItWorks.content.0.desc%%%"
+                    "title": "%%%.newHome.howItWorks.data.0.title%%%",
+                    "desc": "%%%.newHome.howItWorks.data.0.desc%%%"
                 },
                 "1": {
-                    "title": "%%%.newHome.howItWorks.content.1.title%%%",
-                    "desc": "%%%.newHome.howItWorks.content.1.desc%%%"
-                },
-                "2": {
-                    "title": "%%%.newHome.howItWorks.content.2.title%%%",
-                    "desc": "%%%.newHome.howItWorks.content.2.desc%%%"
-                },
-                "3": {
-                    "title": "%%%.newHome.howItWorks.content.3.title%%%",
-                    "desc": "%%%.newHome.howItWorks.content.3.desc%%%"
-                },
-                "4": {
-                    "title": "%%%.newHome.howItWorks.content.4.title%%%",
-                    "desc": "%%%.newHome.howItWorks.content.4.desc%%%"
+                    "title": "%%%.newHome.howItWorks.data.1.title%%%",
+                    "desc": "%%%.newHome.howItWorks.data.1.desc%%%"
                 }
             }
         },
         "banner": {
             "title1": "%%%.newHome.banner.title1%%%",
             "subTitle": "%%%.newHome.banner.subTitle%%%",
-            "subTitleShort": "%%%.newHome.banner.subTitleShort%%%",
-            "subTitle2": "%%%.newHome.banner.subTitle2%%%",
             "newMessage": "%%%.newHome.banner.newMessage%%%",
             "viewMore": "%%%.newHome.banner.viewMore%%%",
             "intro": {
@@ -2469,50 +2463,6 @@
                     "description": "%%%.home.constantLoan.compareTable.exchangeMarginAccount.description%%%",
                     "priceDesc": "%%%.home.constantLoan.compareTable.exchangeMarginAccount.priceDesc%%%"
                 }
-            },
-            "faqs": {
-                "question1": "%%%.home.constantLoan.faqs.question1%%%",
-                "answer1": "%%%.home.constantLoan.faqs.answer1%%%",
-                "question2": "%%%.home.constantLoan.faqs.question2%%%",
-                "answer2": "%%%.home.constantLoan.faqs.answer2%%%",
-                "question3": "%%%.home.constantLoan.faqs.question3%%%",
-                "answer3": "%%%.home.constantLoan.faqs.answer3%%%",
-                "question4": "%%%.home.constantLoan.faqs.question4%%%",
-                "answer4": "%%%.home.constantLoan.faqs.answer4%%%",
-                "question5": "%%%.home.constantLoan.faqs.question5%%%",
-                "answer5": "%%%.home.constantLoan.faqs.answer5%%%",
-                "question6": "%%%.home.constantLoan.faqs.question6%%%",
-                "answer6": "%%%.home.constantLoan.faqs.answer6%%%",
-                "question7": "%%%.home.constantLoan.faqs.question7%%%",
-                "answer7": "%%%.home.constantLoan.faqs.answer7%%%",
-                "question8": "%%%.home.constantLoan.faqs.question8%%%",
-                "answer8": "%%%.home.constantLoan.faqs.answer8%%%",
-                "question9": "%%%.home.constantLoan.faqs.question9%%%",
-                "answer9": "%%%.home.constantLoan.faqs.answer9%%%",
-                "question10": "%%%.home.constantLoan.faqs.question10%%%",
-                "answer10": "%%%.home.constantLoan.faqs.answer10%%%",
-                "question11": "%%%.home.constantLoan.faqs.question11%%%",
-                "answer11": "%%%.home.constantLoan.faqs.answer11%%%",
-                "question12": "%%%.home.constantLoan.faqs.question12%%%",
-                "answer12": "%%%.home.constantLoan.faqs.answer12%%%",
-                "question13": "%%%.home.constantLoan.faqs.question13%%%",
-                "answer13": "%%%.home.constantLoan.faqs.answer13%%%",
-                "question14": "%%%.home.constantLoan.faqs.question14%%%",
-                "answer14": "%%%.home.constantLoan.faqs.answer14%%%",
-                "question15": "%%%.home.constantLoan.faqs.question15%%%",
-                "answer15": "%%%.home.constantLoan.faqs.answer15%%%",
-                "question16": "%%%.home.constantLoan.faqs.question16%%%",
-                "answer16": "%%%.home.constantLoan.faqs.answer16%%%",
-                "question17": "%%%.home.constantLoan.faqs.question17%%%",
-                "answer17": "%%%.home.constantLoan.faqs.answer17%%%",
-                "question18": "%%%.home.constantLoan.faqs.question18%%%",
-                "answer18": "%%%.home.constantLoan.faqs.answer18%%%",
-                "question19": "%%%.home.constantLoan.faqs.question19%%%",
-                "answer19": "%%%.home.constantLoan.faqs.answer19%%%",
-                "question20": "%%%.home.constantLoan.faqs.question20%%%",
-                "answer20": "%%%.home.constantLoan.faqs.answer20%%%",
-                "question21": "%%%.home.constantLoan.faqs.question21%%%",
-                "answer21": "%%%.home.constantLoan.faqs.answer21%%%"
             },
             "cryptosDesc": "%%%.home.constantLoan.cryptosDesc%%%",
             "listApplications": {
@@ -3469,26 +3419,6 @@
                 "bankChargeFeeTitle": "%%%.home1.lendingSection.confirm.bankChargeFeeTitle%%%"
             }
         },
-        "faqs": {
-            "question1": "%%%.home1.faqs.question1%%%",
-            "answer1": "%%%.home1.faqs.answer1%%%",
-            "question2": "%%%.home1.faqs.question2%%%",
-            "answer2": "%%%.home1.faqs.answer2%%%",
-            "question3": "%%%.home1.faqs.question3%%%",
-            "answer3": "%%%.home1.faqs.answer3%%%",
-            "question4": "%%%.home1.faqs.question4%%%",
-            "answer4": "%%%.home1.faqs.answer4%%%",
-            "question5": "%%%.home1.faqs.question5%%%",
-            "answer5": "%%%.home1.faqs.answer5%%%",
-            "question6": "%%%.home1.faqs.question6%%%",
-            "answer6": "%%%.home1.faqs.answer6%%%",
-            "question7": "%%%.home1.faqs.question7%%%",
-            "answer7": "%%%.home1.faqs.answer7%%%",
-            "question8": "%%%.home1.faqs.question8%%%",
-            "answer8": "%%%.home1.faqs.answer8%%%",
-            "question9": "%%%.home1.faqs.question9%%%",
-            "answer9": "%%%.home1.faqs.answer9%%%"
-        },
         "whyInvest": {
             "title": "%%%.home1.whyInvest.title%%%",
             "data": {
@@ -3507,6 +3437,10 @@
                 "3": {
                     "title": "%%%.home1.whyInvest.data.3.title%%%",
                     "desc": "%%%.home1.whyInvest.data.3.desc%%%"
+                },
+                "4": {
+                    "title": "%%%.home1.whyInvest.data.4.title%%%",
+                    "desc": "%%%.home1.whyInvest.data.4.desc%%%"
                 }
             }
         },
@@ -3524,6 +3458,10 @@
                 "2": {
                     "title": "%%%.home1.howItWorks.data.2.title%%%",
                     "desc": "%%%.home1.howItWorks.data.2.desc%%%"
+                },
+                "3": {
+                    "title": "%%%.home1.howItWorks.data.3.title%%%",
+                    "desc": "%%%.home1.howItWorks.data.3.desc%%%"
                 }
             }
         }
@@ -3605,40 +3543,6 @@
             "ourPress": {
                 "title": "%%%.loanOriginators.landing.ourPress.title%%%"
             }
-        },
-        "faqs": {
-            "question1": "%%%.loanOriginators.faqs.question1%%%",
-            "answer1": "%%%.loanOriginators.faqs.answer1%%%",
-            "question2": "%%%.loanOriginators.faqs.question2%%%",
-            "answer2": "%%%.loanOriginators.faqs.answer2%%%",
-            "question3": "%%%.loanOriginators.faqs.question3%%%",
-            "answer3": "%%%.loanOriginators.faqs.answer3%%%",
-            "question4": "%%%.loanOriginators.faqs.question4%%%",
-            "answer4": "%%%.loanOriginators.faqs.answer4%%%",
-            "question5": "%%%.loanOriginators.faqs.question5%%%",
-            "answer5": "%%%.loanOriginators.faqs.answer5%%%",
-            "question6": "%%%.loanOriginators.faqs.question6%%%",
-            "answer6": "%%%.loanOriginators.faqs.answer6%%%",
-            "question7": "%%%.loanOriginators.faqs.question7%%%",
-            "answer7": "%%%.loanOriginators.faqs.answer7%%%",
-            "question8": "%%%.loanOriginators.faqs.question8%%%",
-            "answer8": "%%%.loanOriginators.faqs.answer8%%%",
-            "question9": "%%%.loanOriginators.faqs.question9%%%",
-            "answer9": "%%%.loanOriginators.faqs.answer9%%%",
-            "question10": "%%%.loanOriginators.faqs.question10%%%",
-            "answer10": "%%%.loanOriginators.faqs.answer10%%%",
-            "question11": "%%%.loanOriginators.faqs.question11%%%",
-            "answer11": "%%%.loanOriginators.faqs.answer11%%%",
-            "question12": "%%%.loanOriginators.faqs.question12%%%",
-            "answer12": "%%%.loanOriginators.faqs.answer12%%%",
-            "question13": "%%%.loanOriginators.faqs.question13%%%",
-            "answer13": "%%%.loanOriginators.faqs.answer13%%%",
-            "question14": "%%%.loanOriginators.faqs.question14%%%",
-            "answer14": "%%%.loanOriginators.faqs.answer14%%%",
-            "question15": "%%%.loanOriginators.faqs.question15%%%",
-            "answer15": "%%%.loanOriginators.faqs.answer15%%%",
-            "question16": "%%%.loanOriginators.faqs.question16%%%",
-            "answer16": "%%%.loanOriginators.faqs.answer16%%%"
         },
         "loanOriginator": {
             "headers": {

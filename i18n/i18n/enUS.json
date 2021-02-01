@@ -192,10 +192,6 @@
         "supportCenterDesc": "Help when you need it.",
         "help": "Help",
         "getSocial": "Download now",
-        "content": "\n        <p class=\"bold\">Is CONST LLC a bank?</p>\n        <p>Please note that CONST LLC (hereafter referred to as “we”, “us”, or “Company”) is not a bank or deposit account, nor is it a regulated financial institution. MyConstant tokens are not financial instruments. No interest will be paid on any funds or other assets held in your MyConstant account and all assets directly held by us are not insured by us or, except as set forth below, any third party or any government agency.</p>\n    ",
-        "content2": "\n\n        <p>We work with independent third-party financial institutions such as Prime Trust to provide cash management for the fiat deposits backing MyConstant tokens, ensuring that all MyConstant tokens in circulation are matched by an equal amount of fiat deposits. To achieve this, the fiat deposits backing MyConstant are held in one or more depository accounts at US banks or trust companies whose deposits may be insured.</p>\n        <p>Rate is current at the time of reading, and may be subject to change in the future.</p>\n    ",
-        "mobileContent1": "<p class=\"bold\">Is CONST LLC a bank?</p>",
-        "mobileContent2": "\n    <p>Please note that CONST LLC (hereafter referred to as “we”, “us”, or “Company”) is not a bank or deposit account, nor is it a regulated financial institution. MyConstant tokens are not financial instruments. No interest will be paid on any funds or other assets held in your MyConstant account and all assets directly held by us are not insured by us or, except as set forth below, any third party or any government agency.</p>\n    <p>We work with independent third-party financial institutions such as Prime Trust to provide cash management for the fiat deposits backing MyConstant tokens, ensuring that all MyConstant tokens in circulation are matched by an equal amount of fiat deposits. To achieve this, the fiat deposits backing MyConstant are held in one or more depository accounts at US banks or trust companies whose deposits may be insured.</p>\n    <p>Rate is current at the time of reading, and may be subject to change in the future.</p>\n    ",
         "copyright": "{term} and {privacy}",
         "copyright2": "{term}",
         "securityAndRisk": "Security & Risk",
@@ -1666,12 +1662,16 @@
                 "title": "Invest",
                 "desc": "          <p>Get a better return on <br/>your money.</p>        "
             },
+            "depositFiat": {
+                "title": "Deposit USD",
+                "desc": "Automatic {interest}% APY.<br/>Withdraw anytime. No fees."
+            },
             "investFlex": {
                 "title": "Flex",
                 "desc": "{interest}% APY. Withdraw anytime.  <br/>No fees."
             },
             "investCustom": {
-                "title": "Crypto-backed",
+                "title": "Lend USD",
                 "desc": "Your terms. Best rates. <br/>Backed by crypto."
             },
             "investLO": {
@@ -1679,7 +1679,7 @@
                 "desc": "Earn up to 11% APR. Terms from <br/>6-15 months. Includes loan originator’s <br/>buy-back guarantee in case of default."
             },
             "investFlexCrypto": {
-                "title": "Crypto Lend",
+                "title": "Lend Crypto",
                 "desc": "Get {interest}% APY on BTC, ETH,<br/>and BNB."
             },
             "borrow": {
@@ -1703,17 +1703,21 @@
                 "title": "Invest",
                 "desc": "          <p>Get a better return on your money.</p>        "
             },
+            "depositFiat": {
+                "title": "Deposit USD",
+                "desc": "Automatic {percent}% APY.<br/>Withdraw anytime. No fees."
+            },
             "investFlex": {
                 "title": "Flex",
                 "desc": "{percent}% APY. Withdraw anytime. No fees."
             },
             "investCustom": {
-                "title": "Crypto-backed",
-                "desc": "Your terms. Best rates. Backed by crypto."
+                "title": "Lend USD",
+                "desc": "Your terms. Best rates.<br/>Backed by crypto."
             },
             "investFlexCrypto": {
-                "title": "Crypto Lend",
-                "desc": "Get {percent}% APY on BTC, ETH, and BNB."
+                "title": "Lend Crypto",
+                "desc": "Get {percent}% APY on BTC, ETH,<br/>and BNB."
             },
             "investLO": {
                 "title": "Loan Originator",
@@ -1746,8 +1750,8 @@
         }
     },
     "ourPress": {
-        "mobileTitle": "Our <span style=\"color: #F9A00F\">Press</span>",
-        "title": "Our Press"
+        "title": "Our <span style=\"color: #F9A00F\">Press</span>",
+        "desc": "<p>Our high-yield, collateral-backed investments have gotten a lot of press. Click <strong>View press</strong> below to find out what finance’s most respected publications think about us.</p>"
     },
     "testimonials": {
         "title": "Let’s get to know each other better",
@@ -1756,65 +1760,55 @@
     },
     "newHome": {
         "crypto": {
-            "desc": "All lending includes either cryptocurrency collateral or the loan originator’s buy-back guarantee to protect your investment against borrower defaults."
+            "desc": "Cryptocurrency collateral (held by us or liquidity pool partners) helps protect your investment returns from borrower defaults."
         },
         "whyItBetter": {
             "title": "Why it’s better",
             "desc": "Unlike traditional <span style=\"color:#FFFFFF\">P2P platforms</span> that prey on vulnerable borrowers and expect investors to shoulder the risk, <span style=\"color:#FFFFFF\">MyConstant</span> is designed to protect them both.",
             "data": {
                 "0": {
-                    "title": "Protection",
-                    "desc": "Crypto <a class=\"glossary-word\">collateral</a> and buy-back guarantees protect your investments from borrower defaults so you can rely on great returns."
+                    "title": "Reliable returns",
+                    "desc": "Crypto <a class=\"glossary-word\">collateral</a> helps protect your investments from borrower defaults."
                 },
                 "1": {
                     "title": "Free withdrawals",
-                    "desc": "We never charge you a penny for accessing your own money. Withdraw as much as you like for free."
+                    "desc": "Withdraw any amount in USD for free, straight to your bank account."
                 },
                 "2": {
-                    "title": "Flexible terms & best rates",
-                    "desc": "Set your own terms on a crypto-backed loan or pick the best deals from our list of Loan Originator loans."
+                    "title": "Flexible terms",
+                    "desc": "Enjoy instant access to your funds or the choice of three fixed terms."
                 },
                 "3": {
                     "title": "24/7 customer support",
-                    "desc": "No call centres, no recorded messages, just real people ready to help you."
+                    "desc": "No call centres, no automated messages, just real people ready to help you."
                 },
                 "4": {
                     "title": "No credit checks",
-                    "desc": "We don’t care about your credit history. As long as you have the <a class=\"glossary-word\">collateral</a> to secure your loan, you’re always approved."
+                    "desc": "As long as you have the <a class=\"glossary-word\">collateral</a> to back your loan, you’re always approved."
                 }
             }
         },
+        "whyItBetter2": {
+            "title": "You deserve a better rate",
+            "desc": "<p>The top US banks lend your deposits but keep most of the profits. With us, you keep all the interest you make – up to {investRate}% APR, which is over 20x better interest than a CD.</p>"
+        },
         "howItWorks": {
             "title": "How it works",
-            "desc": "MyConstant connects investors with borrowers to do business together. Crypto <a class=\"glossary-word\">collateral</a> and buy-back guarantees protect investors’ funds while our custodial partner safely manages the movement of funds and collateral.",
-            "content": {
+            "desc": "MyConstant connects investors with borrowers to do business together. Crypto <a class=\"glossary-word\">collateral</a> backs investors’ funds while our custodial partner safely manages the movement of funds and collateral.",
+            "data": {
                 "0": {
                     "title": "Investors",
                     "desc": "Investors deposit any amount and choose either crypto-backed or Loan Originator lending."
                 },
                 "1": {
-                    "title": "Crypto-collateralized borrowers",
-                    "desc": "Borrowers must put up 100-200% of the loan amount in <a class=\"glossary-word\">cryptocurrency</a> to secure their loan."
-                },
-                "2": {
-                    "title": "Buy-back guaranteed borrowers",
-                    "desc": "Loan originators guarantee to buy back loans if they default longer than 60 days, protecting investor funds."
-                },
-                "3": {
-                    "title": "Loan origination partners",
-                    "desc": "We work with trusted, vetted loan originators to connect you with more borrowers and better returns."
-                },
-                "4": {
-                    "title": "Custodial partner",
-                    "desc": "We use Prime Trust to safely manage the transfer and storage of investor funds and borrower <a class=\"glossary-word\">collateral</a>."
+                    "title": "Collateralized borrowers",
+                    "desc": "Borrowers must put up to 200% of the loan amount in <a class=\"glossary-word\">cryptocurrency</a> or a portfolio of cryptocurrencies to obtain the loan."
                 }
             }
         },
         "banner": {
             "title1": "Experience multi-market <span style=\"color:#F5A623;\">peer-to-peer</span> lending.",
-            "subTitle": "<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee. Earn across multiple markets, spreading risk and maximizing reward.</p>        <p>Or, borrow against {numCollateral}+ cryptocurrencies to get the cash you need, instantly. Your crypto is securely held until you repay. Unlock the value of your crypto without selling up. </p>        <p>While not on loan or waiting for a match, your funds earn an automatic 4% APY, and you can withdraw anytime for free. So no downtime, no wasted earnings.</p>",
-            "subTitleShort": "<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee...</p>",
-            "subTitle2": "<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee. Earn across multiple markets, spreading risk and maximizing reward.</p>",
+            "subTitle": "\n        <p>Invest in people and businesses around the world for up to {investRate}% <a class=\"glossary-word\">APR</a>. All lending is backed by cryptocurrency <a class=\"glossary-word\">collateral</a>. Earn across multiple markets, spreading risk and maximizing reward. No investing fees. Free USD withdrawals. 24-7 customer support.</p>\n        <p>Or borrow against {numCollateral}+ cryptocurrencies from just {borrowRate}% <a class=\"glossary-word\">APR</a>. Get the cash or crypto you need instantly without having to sell your portfolio. Your crypto is securely stored and returned to you when you repay.</p>\n      ",
             "newMessage": "Why invest with MyConstant?",
             "viewMore": "...more",
             "intro": {
@@ -1824,7 +1818,7 @@
             },
             "invest": {
                 "title": "<p>INVEST<br/>Crypto-backed</p>",
-                "cap": "          <div class=\"row\">            <div class=\"col\">              Interest rate              <strong class=\"rate\">Up to {rate}%</strong>            </div>            <div class=\"col\">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class=\"clearBottom text-left\">            All lending secured by digital assets          </p>        ",
+                "cap": "          <div class=\"row\">            <div class=\"col\">              Interest rate              <strong class=\"rate\">Up to {rate}%</strong>            </div>            <div class=\"col\">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class=\"clearBottom text-left\">All lending backed by digital assets</p>        ",
                 "btn": "Explore",
                 "desc": "All lending secured by\ndigital assets",
                 "new_title": "INVEST\nCrypto-backed"
@@ -2469,50 +2463,6 @@
                     "description": "(?) We search multiple exchanges to find the best price for your chosen cryptocurrency. <br/>Exchange margin accounts typically only use the price on that exchange, so you can miss out on better deals elsewhere. ",
                     "priceDesc": "We search multiple exchanges to find the best price for your chosen cryptocurrency.<br/>Exchange margin accounts typically only use the price on that exchange, so you can miss out on better deals elsewhere."
                 }
-            },
-            "faqs": {
-                "question1": "How long will it take to get my loan?",
-                "answer1": "        <p>As soon as we receive your collateral, we’ll deposit your loan into your MyConstant account. You can withdraw your loan as fiat to your bank account or as a stablecoin to your wallet address. All withdrawals are free.</p>        <p><a href=\"https://blog.myconstant.com/how-to-borrow-against-crypto-4-simple-steps\" className=\"underline\" target=\"_blank\">How to borrow in 4 simple steps.</a></p>      ",
-                "question2": "Do you check my credit score?",
-                "answer2": "        <p>As we only offer secured loans backed by collateral, there is no need for credit scoring. All you need is adequate collateral to secure your loan. To see how much collateral you need to secure your loan, simply enter the amount you’d like to borrow. The calculator will work out the amount for you.</p>        <p><a href=\"https://blog.myconstant.com/how-to-borrow-against-crypto-4-simple-steps\" className=\"underline\" target=\"_blank\">How to borrow in 4 simple steps.</a></p>      ",
-                "question3": "How do you protect my collateral?",
-                "answer3": "        <p>Depending on your collateral, it’s either held safely in Prime Trust custody, an Ethereum smart contract, or a password-protected web wallet hosted on a dedicated server (to which only our CEO and CTO have access). When you repay, your collateral is immediately transferred back to you.</p>        <p><a href=\"https://blog.myconstant.com/how-we-protect-your-money-and-collateral\" className=\"underline\" target=\"_blank\">How we protect your collateral.</a></p>      ",
-                "question4": "What happens if I don’t repay the loan?",
-                "answer4": "If you don’t repay the loan, your collateral will be sold to repay your investor. You get to keep the loan. That’s it.",
-                "question5": "What happens if my crypto collateral falls in value?",
-                "answer5": "        <p>We will notify you three times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, we’ll create a sell order to repay the investor. You keep the loan, but you lose your collateral.</p>        <p>Borrowers will receive notifications at 125%, 120% and 115% of the investor’s principal plus earned interest. You can choose to repay early to avoid liquidation or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.</p>        <p>If you’re borrowing against stablecoins, you will be notified at 115%, 110%, and finally 105%. Once your collateral falls to 100% of the loan amount it will be sold to repay the investor.</p>        <p><a href=\"https://blog.myconstant.com/extra-protection-for-your-collateral-auto-top-up\" className=\"underline\" target=\"_blank\">How to avoid liquidation with auto top-up.</a></p>      ",
-                "question6": "Can I repay early?",
-                "answer6": "          <p>If you'd like to pay back your loan before 75% of the term is up, that's absolutely fine. You simply have to pay interest for the days you are in possession of the loan, and just 50% of the original interest rate for the remaining days of the term.</p>          <p>If you'd like to pay back your loan after 75% of the term is up and claim back your collateral, that's also fine, but the interest due on that loan is the full percentage for the entire term.</p>        ",
-                "question7": "Can I recall excess if the value of my collateral increases?",
-                "answer7": "        <p>Yes. If the value of your collateral rises during your loan term, you can withdraw the difference from your Accounts page.</p>        <p><a href=\"https://blog.myconstant.com/how-to-deposit-top-up-recall-crypto-constant\" className=\"underline\" target=\"_blank\">How to deposit, top-up, and recall excess collateral.</a></p>      ",
-                "question8": "What is the LTV (Loan-to-Value) Ratio? Is it always the same?",
-                "answer8": "        <p>The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral.</p>      ",
-                "question9": "How do I repay my loan?",
-                "answer9": "          <p>We’ll deduct your repayment directly from your MyConstant account balance. Adding funds is easy. You can do one or a combination of the following:</p>          <ol>            <li>Transfer USD to one of our US bank accounts.</li>            <li>Send any one of our supported stablecoins: USDT/USDC/TUSD/GUSD/PAX/USDS.</li>            <li>Repay the equivalent USD value using your collateral.</li>          </ol>          <p>Your balance will update when funds have been received in your MyConstant account.</p>        ",
-                "question10": "What happens if I repay late?",
-                "answer10": "The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due.",
-                "question11": "Is it still possible to take out a single-collateral loan?",
-                "answer11": "        <p>        Yes, after you take out a loan you can click on the Isolate button in the loan menu on your accounts page to switch to a single-collateral loan. To switch you must meet the 110% minimum collateral value requirement for the crypto. However, you cannot collateralize with more crypto than your collateral rate allows (more on that below).        </p>        ",
-                "question12": "Is repayment any different with multi-collateral credit lines?",
-                "answer12": "        <p>        Nope! You must still repay each loan individually. However, crypto selected for collateral repayments will still follow a 24-hour trading volume priority based on what you have available.        </p>        ",
-                "question13": "I can’t find where to choose multiple collaterals for my borrow order",
-                "answer13": "        <p>        If you take out a crypto-backed loan or buy new cryptos using Crypto Credit, you’ll only see the option to use one collateral. To borrow with multiple collaterals you must start on <a href=\"https://www.myconstant.com/pro-lending\" target=\"_blank\" class=\"underline\">our pro page.</a>        </p>        ",
-                "question14": "Why do you prioritize collaterals based on 24-hour exchange volume?",
-                "answer14": "        <p>        Loan security is our top priority on MyConstant. In the unfortunate case of liquidation, we always want to make sure we can sell collateral as fast as possible to cover the loan value.        </p>        ",
-                "question15": "Will auto top-up add collateral to my loan based on 24-hour exchange volume?",
-                "answer15": "        <p>        Yes.        </p>        ",
-                "question16": "Can I choose to auto top-up some loans and manually top-up others?",
-                "answer16": "        <p>        No. You can only toggle auto top-up on or off for all multi-collateral loans at the same time. However, you can choose this setting separately for each isolated (single-collateral) loan.        </p>        ",
-                "question17": "Will I still receive notifications to repay individual multi-collateral loans on schedule?",
-                "answer17": "        <p>        Yes.        </p>        ",
-                "question18": "Do you have a feature for paying all loans in one term period at the same time?",
-                "answer18": "        <p>        Right now you still must pay off all of your loans individually.        </p>        ",
-                "question19": "If I have multiple active loans, which collaterals do I get back when I repay my earliest loans?",
-                "answer19": "        <p>        If you still have active loans after repaying, your collateral won’t be released back to your available balance. Instead, it will go into your collateral balance for multi-collateral. If you want to remove collateral from this balance, you’ll need to recall excess from the overview screen and choose the crypto type and amount you want.        </p>        ",
-                "question20": "I can’t recall excess on my crypto even though my collateral value is over 110%.",
-                "answer20": "        <p>        Collateral value is only used to determine loan liquidation. It is calculated by:        </p>        <p class=\"font-italic\">        (number of coins * value)+”repeat for each coin”/(loan value + up-to-date interest + matching fee)        </p>        <p>        We calculate how much collateral you withdraw through recall excess based on the collateral rate. For more information on the collateral rate see below.        </p>        ",
-                "question21": "What is the collateral rate and why is it different from the collateral value?",
-                "answer21": "        <p>        Collateral value only takes into account the monetary value of your collateral in your collateral balance compared to your loan amount. We base liquidation off collateral value. Your collateral rate is a more in-depth number that takes into account the LTV ratios required for different cryptocurrencies. We use this number to determine how much you can withdraw with recall excess as well as the maximum amount of crypto you can place in an Isolated loan.        </p>        <p>        You can find your collateral rate through this equation:        </p>        <p class=\"font-italic\">        x = (number of coins)*(coin value)*(LTV)+“repeat for each coin”<br />        Collateral rate = (x/(loan value at first + up-to-date interest + matching fees))*100        </p>        "
             },
             "cryptosDesc": "Your collateral is securely stored in either a Prime Trust cold wallet, an Ethereum smart contract, or a password-protected web wallet until you repay your loan.",
             "listApplications": {
@@ -3333,10 +3283,10 @@
                     "amount": "How much do you want to lend?"
                 },
                 "maxTerm": "Length of term",
-                "text2": "<p>Choose a term you like and as soon as we receive your funds you’ll start earning interest. The longer you invest for the more interest you earn. If you’d like to end your term early, you can sell your investment in our <a href=\"https://blog.myconstant.com/constant-secondary-market\" target=\"_blank\" class=\"underline\">secondary market</a>.</p>",
+                "text2": "<p>Choose a term you like and as soon as Prime Trust, our custodian, receives your funds you’ll start earning interest. The longer you invest for the more interest you earn. If you’d like to end your term early, you can sell your investment in our <a href=\"https://blog.myconstant.com/constant-secondary-market\" target=\"_blank\" class=\"underline\">secondary market</a>.</p>",
                 "btn2": "to invest now",
                 "tooltip": {
-                    "maxTerm": "<p>This is the maximum amount of time you want to lend your money out for. Unloaned portions can be withdrawn at any time.</p>"
+                    "maxTerm": "<p>Choose instant access to withdraw your funds at any time for free. Otherwise, pick a fixed term to get our best rates.</p>"
                 },
                 "deposit": "to deposit now",
                 "btn1": "Invest now",
@@ -3344,14 +3294,14 @@
                 "btnKyc1": "<a>Verify your ID</a> to invest"
             },
             "intro": {
-                "content": "\n            <p class=\"topText\">Invest the way you want</p>\n            <h2 style=\"color:#F5A623;\">Earn up to {rate}% APR now.</h2>\n            <h2>Start investing from just $50.</h2>\n            <h1>Experience crypto-backed P2P lending.</h1>\n            <p />\n            <p>Lend to cryptocurrency holders across the world for a return of up to {rate}% APR. You choose the term, we match you with a borrower, and you keep the interest. All lending is backed by collateral, which is sold if the borrower defaults.</p>\n",
+                "content": "\n            <p class=\"topText\">Invest the way you want</p>\n            <h1 style=\"color:#F5A623;\">Earn 20x more than a CD<sup>*</sup>.</h1>\n            <div class=\"h1\">Start investing from just $10.</div>\n            <div class=\"h1\">Instant access or fixed terms.</div>\n            <p />\n            <p>Invest in people and businesses around the world for a return of up to {rate}% APR. Withdraw anytime for free or invest in a fixed-term loan for the best rates. All lending is backed by cryptocurrency collateral. No fees.</p>\n",
                 "youtube": {
                     "title": "Why invest with MyConstant?"
                 },
                 "desc": {
                     "1": "All lending backed by crypto",
-                    "2": "Your choice of term",
-                    "3": "24/7 customer service"
+                    "2": "Instant access or fixed term",
+                    "3": "24/7 customer support"
                 }
             },
             "alert": {
@@ -3469,44 +3419,28 @@
                 "bankChargeFeeTitle": "Intermediary bank fees"
             }
         },
-        "faqs": {
-            "question1": "How long will it take to find a match?",
-            "answer1": "You match the moment we receive your funds.",
-            "question2": "Are there any limits?",
-            "answer2": "You can invest as much as you like, starting from just $50.",
-            "question3": "How do I invest?",
-            "answer3": "        <p>Enter how much you want to invest and for how long. Transfer that amount to one of our international bank accounts – we have banks in the US and abroad to make transfers quick and easy for you. As soon as your funds arrive, you’ll immediately start earning interest.</p>        <p>At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your MyConstant account. It’s up to you what you’d like to do next – reinvest, withdraw, or send money abroad.</p>        <p><a href=\"https://blog.myconstant.com/how-to-invest-with-constant-in-3-simple-steps\" className=\"underline\" target=\"_blank\">How to invest in 3 simple steps.</a></p>      ",
-            "question4": "How do you protect my investment?",
-            "answer4": "        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too:</p>        <ol>          <li>All of our borrowers must put up 150% of the loan amount as crypto collateral. If they don’t repay, we sell the collateral to repay you.</li>          <li>We also include a liquidation threshold to insure against a fall in the collateral’s value. If the value falls to 110% of your principal and earned interest, it’s sold to repay you.</li>          <li>We only accept vetted, quality cryptocurrencies and cap our exposure to these markets by daily trading volume. This ensures we can sell the collateral should the market dip.</li>        </ol>        <p>These protective measures help ensure you get the returns promised. However, all investment involves risk, and despite our best efforts, we can’t guarantee the return of your principal and profit. Therefore please invest wisely.</p>        <p><a href=\"https://blog.myconstant.com/how-we-protect-your-money-and-collateral\" className=\"underline\" target=\"_blank\">Read more about how we protect you.</a></p>      ",
-            "question5": "What happens when my money isn’t on loan?",
-            "answer5": "        <p>When not on loan or waiting for a match, your money earns 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>        <p>If you're waiting for a match, your money remains in the custody of Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>        <p>Flex is enabled by default, but you can disable it from your Accounts page. You will no longer earn interest and your funds will remain in Prime Trust custody (unless you invest in a fixed-term loan).</p>        <p><a href=\"https://blog.myconstant.com/flex-or-prime-trust-constant\" className=\"underline\" target=\"_blank\">Prime Trust or Flex?</a></p>      ",
-            "question6": "What happens if a borrower repays early?",
-            "answer6": "        <p>If a borrower repays before 75% of the loan term is complete, they’ll pay you earned interest to date plus 50% of the interest due on the remainder of the term.</p>        <p>If a borrower repays after 75% of the loan term is complete, they’ll pay you 100% of the interest due on the loan.</p>      ",
-            "question7": "What happens if you have to sell borrower collateral to repay me?",
-            "answer7": "        <p>If a borrower can’t repay, or their collateral falls to 110% of your principal and earned profit, we’ll sell the collateral to repay you. In either case, you’ll get your principal back. You’ll also get earned interest to date if the collateral is sold mid-term, or 100% of the interest due if the collateral is sold after the term ends.</p>      ",
-            "question8": "Can I end my investment term early?",
-            "answer8": "        <p>Yes. To end your term early, you can sell your investment to another investor from your Accounts page. Once sold, you’ll get your principal back and 2% APR on elapsed term time. Selling relies on finding a buyer willing to accept your rate and term so might take around 24 hours. You’ll also lose any earned membership points on your sold investment.</p>      ",
-            "question9": "How long until I start earning interest?",
-            "answer9": "        <p>Your investments join a lending reserve from which borrowers can get loans. This means you start earning interest the moment we receive your funds.</p>      "
-        },
         "whyInvest": {
             "title": "Why invest with us?",
             "data": {
                 "0": {
-                    "title": "Match instantly",
-                    "desc": "<p>Your investment funds a lending pool from which borrowers get loans in return for interest. The longer you leave your money in the pool, the more interest you earn.</p>"
+                    "title": "Immediate returns",
+                    "desc": "<p>Start earning interest the moment you deposit.</p>"
                 },
                 "1": {
-                    "title": "Invest or insure deposits",
-                    "desc": "\n            <p>Earn 4% APY on your balance with Flex. Or, insure your balance up to $130,000,000 with our custodial partner, Prime Trust.</p>\n            <a href=\"https://blog.myconstant.com/flex-or-prime-trust-constant\" target=\"_blank\">Your balance, your choice.</a>\n          "
+                    "title": "Flexible terms",
+                    "desc": "\n            <p>Withdraw anytime or choose from three fixed terms.</p>\n          "
                 },
                 "2": {
-                    "title": "Collateral backed",
-                    "desc": "\n            <p>Every loan is up to 200% backed by cryptocurrency collateral. To borrow $10,000, for example, a borrower must put up to $20,000 worth of cryptocurrency into escrow. Then if the borrower defaults, we sell the collateral to repay you. </p>\n            <p>So if borrowers default, you don’t lose a cent.</p>\n            <a href=\"https://blog.myconstant.com/how-constant-protects-money-and-collateral\" target=\"_blank\">How we protect investors' funds.</a>\n          "
+                    "title": "Collateral-backed",
+                    "desc": "\n            <p>All lending is backed by cryptocurrencies that are easy to sell if borrowers default.</p>\n            <a href=\"https://blog.myconstant.com/how-constant-protects-money-and-collateral\" target=\"_blank\">How we protect you</a>\n          "
                 },
                 "3": {
-                    "title": "Built for you",
-                    "desc": "<p>Enjoy 24-7 customer service, unlimited free withdrawals, and a library of useful content to help you do more with your money.</p>"
+                    "title": "No fees",
+                    "desc": "<p>No fees to invest or withdraw USD.</p>"
+                },
+                "4": {
+                    "title": "24/7 customer support",
+                    "desc": "<p>Call, email, or message us on social media at any time of the day or night.</p>"
                 }
             }
         },
@@ -3515,15 +3449,19 @@
             "data": {
                 "0": {
                     "title": "1. Set your own terms",
-                    "desc": "Choose how much you want to invest and for how long. We have 1-month, 3-month, and 6-month terms to choose from for utmost flexibility."
+                    "desc": "Choose instant access or a fixed term of 30, 60, or 180 days."
                 },
                 "1": {
                     "title": "2. Deposit your funds",
-                    "desc": "Send your funds via one of our supported payment channels. Depending on your bank, it might take one or two business days to reach us."
+                    "desc": "Send your funds via ACH (US) or wire (non-US)."
                 },
                 "2": {
                     "title": "3. Start earning interest",
-                    "desc": "As soon as your funds reach us, you start earning interest on your principal. When your term ends you can withdraw your principal and profit to a bank account or stablecoin wallet for free."
+                    "desc": "You earn interest as soon as your funds reach us."
+                },
+                "3": {
+                    "title": "4. Withdraw or reinvest",
+                    "desc": "Withdraw anytime (instant access) or at the end of your fixed term for free."
                 }
             }
         }
@@ -3605,40 +3543,6 @@
             "ourPress": {
                 "title": "Our Partners"
             }
-        },
-        "faqs": {
-            "question1": "What is a “Loan Originator” loan?",
-            "answer1": "        <p>We’ve partnered with loan originators (companies that source borrowers) to offer you a greater choice of loans and better returns. A Loan Originator investment is a claim against a loan issued by our loan originator partner. Instead of buying the loan with all the rights and ownership of collateral (if any), you’re buying a right to receive payments from an existing loan. </p>        <p>When you invest in a Loan Originator, the loan originator will guarantee to buy back the loan if the borrower defaults for 60 days. This repays your principal and earned profit up to and including the 60-day default period. </p>        ",
-            "question2": "How do Loan Originator loans work?",
-            "answer2": "When you invest in a Loan Originator loan, you’re lending to a borrower through one of our loan origination partners. Depending on the loan originator, you might receive monthly repayments of the total due, monthly payments of the interest only, or everything at the end of the term – all of which you can withdraw when paid. If the borrower is 60 days late on any of these repayments, the loan originator will buy back the loan and return your principal and earned profit.",
-            "question3": "What is a loan originator?",
-            "answer3": "A loan originator is a partner that sources borrowers on our behalf. Some arrange loans for borrowers with collateral – such as cars or property – while others assess borrowers’ credit before issuing loans. In either case, our loan originators all come with a buy-back guarantee. That means if their borrowers default for 60 days or more, the loan originator will buy back the loan, returning your principal and earned profit.",
-            "question4": "How do you choose loan originators?",
-            "answer4": "<p>Before we onboard a lending company onto our platform, we conduct a thorough due diligence process and analysis of the lending company's profile, background, corporate documents, lending practice and credit policy, historical loan performance as well as their financial strengths. </p><p>During this process, we review how the lending company lends to its borrowers, how it conducts its loan monitoring as well as how it pursues the debt recovery process in the event of default. We analyze the key indicators of the lending company's operational control, risk management, and most importantly, its financial health via its audited and interim financial statements.</p><p>We also take into account management experience and qualifications and the lending company's transparency and openness. All assessments of these indicators are input into our rating model and we assign a MyConstant Rating to the lending company.</p>",
-            "question5": "How do you calculate a loan originator’s MyConstant Rating?",
-            "answer5": "        <p>We give every loan originator a rating between A and D, A being the best. We only work with C-rated companies and above. Our rating system gives you a guide to the quality of the loans and the loan originator themselves, which determines the risk of lending to that loan originator. </p><p>To calculate a rating, we consider many factors, including (but not limited to):</p> <ul><li>Years of operation.</li><li>Country of operation.</li><li>Share of the market.</li><li>Reputation.</li><li>Growth rate.</li><li>Risk management.</li><li>Transparency.</li><li>Financial strength.</li></ul><p>We feed all the factors into an algorithmic rating system that produces a final result. However, this rating is not fixed – we regularly review and update ratings so you always have the most up-to-date information before you invest.</p><p><a href=\"#\">Learn more about the MyConstant Rating system.</a> </p>         ",
-            "question6": "What’s the difference between a Loan Originator loan and a crypto-backed loan?",
-            "answer6": "        <p>Loan Originator loans offer longer terms (6-15 months) and better interest rates (up to 11% APR). Depending on the loan originator, you might also receive monthly repayments that you can withdraw immediately, whereas crypto-backed borrowers usually repay at the end of the term.</p> <p>A Loan Originator loan is secured by the loan originator. If borrowers default for a minimum of 60 days, the loan originator will buy back the loan. This returns your principal and earned profit up to and including the 60-day default period.</p> <p>A crypto-backed loan is secured by collateral. If borrowers default or their collateral falls too much in value, we sell it to repay you. This is usually instant, depending on how quickly we can sell the collateral.</p> <p>Those are the key differences, but you can see a full comparison on our Loan Originator homepage.</p>         ",
-            "question7": "How do you protect my investment on a Loan Originator loan?",
-            "answer7": "        <p>First, you have the loan originator’s buy-back guarantee. If borrowers default for 60 days, the loan originator will buy back the loan to return your principal and earned profit up to and including the 60-day period. However, since you rely on the loan originator’s ability to buy back the loan, we’ve given each of them a rating.</p> <p>The MyConstant Rating is based on the loan originator’s business and performance, including the default rate, their stake in each loan, and types of loan offered. You can use the MyConstant Rating to choose between loan originators, but please remember it is just a guide. A high MyConstant Rating doesn’t guarantee the loan originator will buy back the loan in all cases.</p><p>Like all investment, use caution and diversify.</p>",
-            "question8": "Does the buy-back guarantee protect me in all cases?",
-            "answer8": "        <p>In most cases, but not all. Since the loan originator buys back the loan, it depends on their ability to do so, and that’s why we give them a MyConstant rating from A to D, A being the best. Most of the loans we offer will be C or above. </p>        <p>Also, certain countries allow borrowers to request extensions on loans. In this case, an extension isn’t considered a default, so you might wait a bit longer for your returns. If the borrower still hasn’t repaid in full by the end of the extension, the loan originator will buy back the loan as usual. </p>        ",
-            "question9": "What happens if a loan originator doesn’t honor the buy-back guarantee?",
-            "answer9": "We don’t expect this to happen, but if it does, there are several options available to us. If they can’t honor the buy-back guarantee due to financial issues, we may negotiate a repayment plan with the loan originator and repay you in full or periodically as they repay. Otherwise, you or us may wish to pursue legal action against the loan originator. In either case, we can’t make any assurances and ask that you diversify across different loan originators to spread your risk. ",
-            "question10": "How do I deposit money for my investments?",
-            "answer10": "        <p>You have two options: Zelle or bank transfer, both of which are free.</p><p>Zelle is faster, but you can only send a certain amount per day. </p><p>We support both ACH and wire bank transfers for any amount. These take a day or two to reach us (depending on your bank) and then a short processing period of around 1 business day before it appears in your account.</p> <p>Once we receive your funds, we then forward them to the loan originator. This might take 3 to 10 business days depending on the loan originator, as some of them only do weekly settlement. We’ll let you know as soon as your funds have been matched and you’ve started earning interest.</p><p>For more information, please check our service times. </p>        ",
-            "question11": "What currencies do you accept?",
-            "answer11": "You can send us any currency and we’ll convert it to USD. ",
-            "question12": "Are Loan Originator loans in USD only?",
-            "answer12": "For the moment, yes. We might open up new currencies such as EUR or GBP in the future. You can still invest using other currencies, but please bear in mind we’ll convert your currency to USD upon receipt.",
-            "question13": "Do you charge any fees?",
-            "answer13": "No. All investing, currency conversion, and withdrawals are free. How do we make money? We make a slim profit on the difference between the interest rate you earn and the rate charged to the borrower. ",
-            "question14": "How long does it take to match with a Loan Originator borrower?",
-            "answer14": "<p>Matching is usually instant, but you won’t start earning interest until your funds reach the loan originator. This will involve an international bank transfer. Also, some loan originators do weekly settlement only.</p> <p>For guidance, you’ll start earning interest within 3-10 business days. </p>",
-            "question15": "When do I start earning interest on a Loan Originator loan?",
-            "answer15": "        <p>You start earning interest as soon as your funds reach the loan originator. This takes 3-10 business days after you’ve matched with a borrower. </p><p>Depending on the loan originator, you might be able to withdraw your interest earnings periodically, perhaps monthly. In other cases, you might need to wait until the end of your term before you can withdraw your earnings.</p> <p>In either case, some loan originators do weekly settlement, which combined with international transfer times, mean it could take 3-10 business days before you can withdraw any repayments.</p>  ",
-            "question16": "Can I invest in a portion of a Loan Originator loan?",
-            "answer16": "Yes. You can view a list of available loans and fulfil all or part of each loan order. This helps you diversify, since you can spread your money across more loans. "
         },
         "loanOriginator": {
             "headers": {
@@ -5211,16 +5115,16 @@
         "securityDesc": "View or change your security settings.",
         "signout": "Sign out",
         "history": "History",
-        "btnInvestments": "<div class=\"textLeft\"><small>Investments</small><div>Crypto-backed</div></div>",
+        "btnInvestments": "Investments",
         "btnBuyBackInvestments": "<div class=\"textLeft\"><small>Investments</small><div>Loan Originator</div></div>",
-        "btnSecondaryMarket": "<div class=\"textLeft\"><small>Secondary market</small><div>Crypto-backed</div></div>",
+        "btnSecondaryMarket": "Secondary market",
         "btnLOSecondaryMarket": "<div class=\"textLeft\"><small>Secondary market</small><div>Loan Originator</div></div>",
         "btnLoans": "Loans",
         "btnLoansC2C": "Crypto Credit",
         "btnLoanSettings": "<div class=\"textLeft\"><small>Loan</small><div>Settings</div></div>",
         "btnSpending": "Gift Cards",
         "prizeWheel": "<span class=\"prizeWheel\">Prize Wheel</span>",
-        "cryptoBackedDesc": "View Crypto-backed investments.",
+        "cryptoBackedDesc": "View instant access and fixed-term investments.",
         "loanOriginatorDesc": "View Loan Originator investments.",
         "loanDesc": "View active and settled loans.",
         "secondaryMarketDesc": "View bought and sold investments.",
@@ -5763,8 +5667,8 @@
         "invest": "INVEST",
         "borrow": "BORROW",
         "benefit": "BENEFITS",
-        "flex": "Flex",
-        "cryptoBacked": "Crypto-backed",
+        "flex": "Instant access",
+        "cryptoBacked": "Fixed term",
         "cryptoLend": "Crypto Lend",
         "loanOriginator": "Loan Originator<br /><span class=\"soon\">(coming soon)</span>",
         "cryptoBackedLoan": "Crypto-backed loans",

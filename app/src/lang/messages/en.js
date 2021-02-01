@@ -9,7 +9,7 @@ export default {
       transfer: 'Transfer',
       withdrawFiat: 'Withdraw USD',
       withdrawCrypto: 'Withdraw crypto',
-      withdrawGiftCards: 'Withdraw as gift card'
+      withdrawGiftCards: 'Withdraw as gift card',
     },
     accountActivities: 'Account Activity',
     prices: 'Pricing & Service times',
@@ -122,12 +122,15 @@ export default {
     cta: {
       type1: { title: '<div class="h3">Start earning interest</div>', btn: 'Make an investment' },
       type2: { title: '<div class="h3">Do more with your money</div>', btn: 'Open a free account' },
-      type3: { title: '<div class="h3">Earn passive income with fully secured investments.</div>', btn: 'Make an investment' },
+      type3: {
+        title: '<div class="h3">Earn passive income with fully secured investments.</div>',
+        btn: 'Make an investment',
+      },
       type4: { title: '<div class="h3">Get fixed-rate loans of any amount.</div>', btn: 'Borrow now' },
       type5: { title: '<div class="h3">Invite your friends, earn a bonus</div>', btn: 'Invite now' },
       type6: { title: '<div class="h3">Open an account and grow your money</div>', btn: 'Open an account' },
       type10: { title: '<div class="h3">Invest the way you want</div>', btn: 'Sign up now' },
-      type11: { title: '<div class="h3">Borrow the way you want</div>', btn: 'Sign up now' }
+      type11: { title: '<div class="h3">Borrow the way you want</div>', btn: 'Sign up now' },
     },
     company: {
       name: ' 2020 MyConstant, Inc.',
@@ -150,7 +153,7 @@ export default {
       us: {
         time: 'Mon - Fri 9am - 5pm<br />Mon-Thurs 6pm - 3am PST',
         phone: '+1 646 809 8338',
-        timeMobile: '<p><span>(Mon - Fri)</span> 9am - 5pm</p><p><span>(Mon - Thurs)</span> 6pm - 3am PST</p>'
+        timeMobile: '<p><span>(Mon - Fri)</span> 9am - 5pm</p><p><span>(Mon - Thurs)</span> 6pm - 3am PST</p>',
       }
     },
     support: 'Help & Support',
@@ -158,21 +161,6 @@ export default {
     supportCenterDesc: 'Help when you need it.',
     help: 'Help',
     getSocial: 'Download now',
-    content: `
-        <p class="bold">Is CONST LLC a bank?</p>
-        <p>Please note that CONST LLC (hereafter referred to as “we”, “us”, or “Company”) is not a bank or deposit account, nor is it a regulated financial institution. MyConstant tokens are not financial instruments. No interest will be paid on any funds or other assets held in your MyConstant account and all assets directly held by us are not insured by us or, except as set forth below, any third party or any government agency.</p>
-    `,
-    content2:`
-
-        <p>We work with independent third-party financial institutions such as Prime Trust to provide cash management for the fiat deposits backing MyConstant tokens, ensuring that all MyConstant tokens in circulation are matched by an equal amount of fiat deposits. To achieve this, the fiat deposits backing MyConstant are held in one or more depository accounts at US banks or trust companies whose deposits may be insured.</p>
-        <p>Rate is current at the time of reading, and may be subject to change in the future.</p>
-    `,
-    mobileContent1: `<p class="bold">Is CONST LLC a bank?</p>`,
-    mobileContent2: `
-    <p>Please note that CONST LLC (hereafter referred to as “we”, “us”, or “Company”) is not a bank or deposit account, nor is it a regulated financial institution. MyConstant tokens are not financial instruments. No interest will be paid on any funds or other assets held in your MyConstant account and all assets directly held by us are not insured by us or, except as set forth below, any third party or any government agency.</p>
-    <p>We work with independent third-party financial institutions such as Prime Trust to provide cash management for the fiat deposits backing MyConstant tokens, ensuring that all MyConstant tokens in circulation are matched by an equal amount of fiat deposits. To achieve this, the fiat deposits backing MyConstant are held in one or more depository accounts at US banks or trust companies whose deposits may be insured.</p>
-    <p>Rate is current at the time of reading, and may be subject to change in the future.</p>
-    `,
     copyright: '{term} and {privacy}',
     copyright2: '{term}',
     securityAndRisk: 'Security & Risk',
@@ -381,7 +369,7 @@ export default {
         refNo: 'Reference no.',
         action: 'Action',
         coin: 'Coin',
-        amount: 'Amount'
+        amount: 'Amount',
       },
       noHistoryData: 'Make a deposit to get started.',
       status: {
@@ -425,7 +413,7 @@ export default {
       tabs: {
         sent: 'Sent',
         received: 'Received',
-        openOrders: 'Open Orders'
+        openOrders: 'Open Orders',
       },
       headers: {
         send: 'Send',
@@ -437,7 +425,7 @@ export default {
         time: 'Time',
         date: 'Date',
         status: 'Status',
-        action: 'Action'
+        action: 'Action',
       },
       noHistoryData: 'Make a transfer to get started.'
     },
@@ -452,7 +440,7 @@ export default {
         date: 'Date',
         status: 'Status',
         action: 'Action',
-        type: 'Type'
+        type: 'Type',
       },
       noHistoryData: 'Make a withdrawal to get started.',
       bankName: 'Bank name',
@@ -475,7 +463,7 @@ export default {
         amount: 'Amount',
         coin: 'Coin',
         type: 'Type',
-        payOut: 'Payment Method / Send to Address'
+        payOut: 'Payment Method / Send to Address',
       },
       noHistoryData: 'Make a withdrawal to get started.'
     },
@@ -556,14 +544,14 @@ export default {
       openOrders: 'Open orders',
       withdraw: 'Withdraw',
       withdrawStatus: {
-        0 : 'Pending',
-        1 : 'Done',
-        2 : 'Failed',
-        3 : 'Approving',
-        4 : 'Rejected',
-        5 : 'Confirming',
-        6 : 'Order timed out',
-        7 : 'Waiting Approving',
+        0: 'Pending',
+        1: 'Done',
+        2: 'Failed',
+        3: 'Approving',
+        4: 'Rejected',
+        5: 'Confirming',
+        6: 'Order timed out',
+        7: 'Waiting Approving',
       },
       sendToAddress: 'Send To Address',
       orderType: {
@@ -624,63 +612,63 @@ export default {
         },
         purchasing: {
           label: 'In progress',
-          desc: 'Your deposit order was created successfully. Once we receive your funds, it might take up to 1 business day for your balance to update. '
+          desc: 'Your deposit order was created successfully. Once we receive your funds, it might take up to 1 business day for your balance to update. ',
         },
         coinMinting: {
-          label: 'In progress'
+          label: 'In progress',
         },
         coinBurning: {
-          label: 'In progress'
+          label: 'In progress',
         },
         transferring: {
           label: 'In progress',
         },
         redeemingAch: {
           label: 'Processing (ACH)',
-          desc: "Your withdrawal is being processed. ACH withdrawals may take 3-5 business days (weekends not included) to reach your account.",
-          desc1: "Sorry, it's taking a little longer to process your withdrawal. We're working with our custodian to get your money to you as soon as possible. In the meantime, you earn 12% APY on your withdrawal amount for every day we're late. For more info, please email us on hello@myconstant.com."
+          desc: 'Your withdrawal is being processed. ACH withdrawals may take 3-5 business days (weekends not included) to reach your account.',
+          desc1: 'Sorry, it\'s taking a little longer to process your withdrawal. We\'re working with our custodian to get your money to you as soon as possible. In the meantime, you earn 12% APY on your withdrawal amount for every day we\'re late. For more info, please email us on hello@myconstant.com.',
         },
         redeemingWire: {
           label: 'Processing (Wire)',
-          desc: "Your withdrawal is being processed. Wires may take 2-5 business days (not including weekends) to reach your account.",
-          desc1: "Sorry, it's taking a little longer to process your withdrawal. We're working with our custodian to get your money to you as soon as possible. In the meantime, you earn 12% APY on your withdrawal amount for every day we're late. For more info, please email us on hello@myconstant.com."
+          desc: 'Your withdrawal is being processed. Wires may take 2-5 business days (not including weekends) to reach your account.',
+          desc1: 'Sorry, it\'s taking a little longer to process your withdrawal. We\'re working with our custodian to get your money to you as soon as possible. In the meantime, you earn 12% APY on your withdrawal amount for every day we\'re late. For more info, please email us on hello@myconstant.com.',
         },
         redeemingZelle: {
           label: 'Processing (Zelle)',
-          desc: "Your withdrawal is being processed. Zelle withdrawals may take up to 1 business day to reach your account (weekends not included).",
-          desc1: "Sorry, it's taking a little longer to process your withdrawal. We're working with our custodian to get your money to you as soon as possible. In the meantime, you earn 12% APY on your withdrawal amount for every day we're late. For more info, please email us on hello@myconstant.com."
+          desc: 'Your withdrawal is being processed. Zelle withdrawals may take up to 1 business day to reach your account (weekends not included).',
+          desc1: 'Sorry, it\'s taking a little longer to process your withdrawal. We\'re working with our custodian to get your money to you as soon as possible. In the meantime, you earn 12% APY on your withdrawal amount for every day we\'re late. For more info, please email us on hello@myconstant.com.',
         },
         redeemingFiat: {
           label: 'In progress',
-          desc: "Your withdrawal is being processed. It may take 3-5 business days (not including weekends) to reach your account.",
-          desc1: "Sorry, it's taking a little longer to process your withdrawal. We're working with our custodian to get your money to you as soon as possible. In the meantime, you earn 12% APY on your withdrawal amount for every day we're late. For more info, please email us on hello@myconstant.com."
+          desc: 'Your withdrawal is being processed. It may take 3-5 business days (not including weekends) to reach your account.',
+          desc1: 'Sorry, it\'s taking a little longer to process your withdrawal. We\'re working with our custodian to get your money to you as soon as possible. In the meantime, you earn 12% APY on your withdrawal amount for every day we\'re late. For more info, please email us on hello@myconstant.com.',
         },
         cancelled: {
-          label: "Canceled",
-          desc: "Your transaction was canceled."
+          label: 'Canceled',
+          desc: 'Your transaction was canceled.',
         },
         done: {
           label: 'Successful',
-          desc: 'Your transaction was approved and has completed successfully.'
+          desc: 'Your transaction was approved and has completed successfully.',
         },
         holding: {
-          label: "In progress",
-          desc: "Your funds are currently being held for another order. This could be because they're allocated to an investment order that hasn't started yet. For more info, please email us on hello@myconstant.com."
+          label: 'In progress',
+          desc: 'Your funds are currently being held for another order. This could be because they\'re allocated to an investment order that hasn\'t started yet. For more info, please email us on hello@myconstant.com.',
         },
         transferringFailed: {
           label: 'Failed',
-          desc: 'Your crypto transfer failed and the funds returned to your balance. This could be for many reasons, including network or wallet issues. Please recreate your order or email us on hello@myconstant.com for support.'
+          desc: 'Your crypto transfer failed and the funds returned to your balance. This could be for many reasons, including network or wallet issues. Please recreate your order or email us on hello@myconstant.com for support.',
         },
         approving: {
           label: 'In progress',
-          desc: 'Your withdrawal request was flagged for additional review before we can process your withdrawal. This added security measure is our system’s way to prevent against suspicious account activity and protect your crypto.'
+          desc: 'Your withdrawal request was flagged for additional review before we can process your withdrawal. This added security measure is our system’s way to prevent against suspicious account activity and protect your crypto.',
         },
         agentApproving: {
           label: 'In progress',
           desc: 'Your withdrawal has been flagged for manual review. It might take a little longer to process your withdrawal, but it helps protects your crypto and the security of our platform. Please email us on hello@myconstant.com if you have any questions.',
         },
         tokenTransferring: {
-          label:'Transferring',
+          label: 'Transferring',
           desc: 'Your cryptocurrency is on its way to the receiving wallet address. This should take no longer than an hour for small amounts of certain cryptos, but others or larger amounts may take up to 1 business day. Please view our <a class="underline bold" href="/getPrices">service times</a> for more information. ',
         },
         emailConfirming: {
@@ -688,19 +676,19 @@ export default {
           desc: 'Please confirm your transaction by clicking the link in the email we sent you. For your security, this transaction will time-out unless you confirm it within the next 15 minutes.',
         },
         timeout: {
-          label: "Order timed out",
-          desc: "Your order timed out. This happens when you don't confirm a transaction in time (such as an email confirmation) or when we never receive funds for an investment order you created."
+          label: 'Order timed out',
+          desc: 'Your order timed out. This happens when you don\'t confirm a transaction in time (such as an email confirmation) or when we never receive funds for an investment order you created.',
         },
         reversed: {
           label: 'Correction',
-          desc: "This corrects a previous deposit error such as an overpayment or duplicate transaction. For more information, please email us on hello@myconstant.com."
+          desc: 'This corrects a previous deposit error such as an overpayment or duplicate transaction. For more information, please email us on hello@myconstant.com.',
         },
         affiliateRewardUser: {
           label: 'Reward user',
         },
         affiliateRewardVolume: {
           label: 'Reward volume',
-        }
+        },
       },
       requestExecute: 'Help',
       transactionID: '#',
@@ -1401,7 +1389,7 @@ export default {
       input2FA: 'Please, enter your OTP',
       bankStatus: {
         pending_automatic_verification_desc: 'We\'re automatically verifying your bank account. This should only take a few hours and you don\'t need to do anything. Once verified, you\'ll be able to use this account for ACH deposits and withdrawals.',
-      }
+      },
     },
     accountInfo: {
       title: 'Your account details',
@@ -1616,12 +1604,16 @@ export default {
         title: 'Invest',
         desc: '          <p>Get a better return on <br/>your money.</p>        '
       },
+      depositFiat: {
+        title: 'Deposit USD',
+        desc: 'Automatic {interest}% APY.<br/>Withdraw anytime. No fees.',
+      },
       investFlex: {
         title: 'Flex',
-        desc: '{interest}% APY. Withdraw anytime.  <br/>No fees.'
+        desc: '{interest}% APY. Withdraw anytime.  <br/>No fees.',
       },
       investCustom: {
-        title: 'Crypto-backed',
+        title: 'Lend USD',
         desc: 'Your terms. Best rates. <br/>Backed by crypto.'
       },
       investLO: {
@@ -1629,8 +1621,8 @@ export default {
         desc: 'Earn up to 11% APR. Terms from <br/>6-15 months. Includes loan originator’s <br/>buy-back guarantee in case of default.'
       },
       investFlexCrypto: {
-        title: 'Crypto Lend',
-        desc: 'Get {interest}% APY on BTC, ETH,<br/>and BNB.'
+        title: 'Lend Crypto',
+        desc: 'Get {interest}% APY on BTC, ETH,<br/>and BNB.',
       },
       borrow: {
         title: 'Borrow',
@@ -1653,17 +1645,21 @@ export default {
         title: 'Invest',
         desc: '          <p>Get a better return on your money.</p>        '
       },
+      depositFiat: {
+        title: 'Deposit USD',
+        desc: 'Automatic {percent}% APY.<br/>Withdraw anytime. No fees.',
+      },
       investFlex: {
         title: 'Flex',
         desc: '{percent}% APY. Withdraw anytime. No fees.'
       },
       investCustom: {
-        title: 'Crypto-backed',
-        desc: 'Your terms. Best rates. Backed by crypto.'
+        title: 'Lend USD',
+        desc: 'Your terms. Best rates.<br/>Backed by crypto.',
       },
       investFlexCrypto: {
-        title: 'Crypto Lend',
-        desc: 'Get {percent}% APY on BTC, ETH, and BNB.'
+        title: 'Lend Crypto',
+        desc: 'Get {percent}% APY on BTC, ETH,<br/>and BNB.',
       },
       investLO: {
         title: 'Loan Originator',
@@ -1696,8 +1692,8 @@ export default {
     }
   },
   ourPress: {
-    mobileTitle: 'Our <span style="color: #F9A00F">Press</span>',
-    title: 'Our Press',
+    title: 'Our <span style="color: #F9A00F">Press</span>',
+    desc: '<p>Our high-yield, collateral-backed investments have gotten a lot of press. Click <strong>View press</strong> below to find out what finance’s most respected publications think about us.</p>'
   },
   testimonials: {
     title: 'Let’s get to know each other better',
@@ -1706,65 +1702,58 @@ export default {
   },
   newHome: {
     crypto: {
-      desc: 'All lending includes either cryptocurrency collateral or the loan originator’s buy-back guarantee to protect your investment against borrower defaults.'
+      desc: 'Cryptocurrency collateral (held by us or liquidity pool partners) helps protect your investment returns from borrower defaults.',
     },
     whyItBetter: {
       title: 'Why it’s better',
       desc: 'Unlike traditional <span style="color:#FFFFFF">P2P platforms</span> that prey on vulnerable borrowers and expect investors to shoulder the risk, <span style="color:#FFFFFF">MyConstant</span> is designed to protect them both.',
       data: {
         '0': {
-          title: 'Protection',
-          desc: 'Crypto <a class="glossary-word">collateral</a> and buy-back guarantees protect your investments from borrower defaults so you can rely on great returns.'
+          title: 'Reliable returns',
+          desc: 'Crypto <a class="glossary-word">collateral</a> helps protect your investments from borrower defaults.',
         },
         '1': {
           title: 'Free withdrawals',
-          desc: 'We never charge you a penny for accessing your own money. Withdraw as much as you like for free.'
+          desc: 'Withdraw any amount in USD for free, straight to your bank account.'
         },
         '2': {
-          title: 'Flexible terms & best rates',
-          desc: 'Set your own terms on a crypto-backed loan or pick the best deals from our list of Loan Originator loans.'
+          title: 'Flexible terms',
+          desc: 'Enjoy instant access to your funds or the choice of three fixed terms.'
         },
         '3': {
           title: '24/7 customer support',
-          desc: 'No call centres, no recorded messages, just real people ready to help you.'
+          desc: 'No call centres, no automated messages, just real people ready to help you.',
         },
         '4': {
           title: 'No credit checks',
-          desc: 'We don’t care about your credit history. As long as you have the <a class="glossary-word">collateral</a> to secure your loan, you’re always approved.'
+          desc: 'As long as you have the <a class="glossary-word">collateral</a> to back your loan, you’re always approved.',
         }
       }
     },
+    whyItBetter2: {
+      title: 'You deserve a better rate',
+      desc: '<p>The top US banks lend your deposits but keep most of the profits. With us, you keep all the interest you make – up to {investRate}% APR, which is over 20x better interest than a CD.</p>',
+    },
     howItWorks: {
       title: 'How it works',
-      desc: 'MyConstant connects investors with borrowers to do business together. Crypto <a class="glossary-word">collateral</a> and buy-back guarantees protect investors’ funds while our custodial partner safely manages the movement of funds and collateral.',
-      content: {
+      desc: 'MyConstant connects investors with borrowers to do business together. Crypto <a class="glossary-word">collateral</a> backs investors’ funds while our custodial partner safely manages the movement of funds and collateral.',
+      data: {
         '0': {
           title: 'Investors',
           desc: 'Investors deposit any amount and choose either crypto-backed or Loan Originator lending.'
         },
         '1': {
-          title: 'Crypto-collateralized borrowers',
-          desc: 'Borrowers must put up 100-200% of the loan amount in <a class="glossary-word">cryptocurrency</a> to secure their loan.'
+          title: 'Collateralized borrowers',
+          desc: 'Borrowers must put up to 200% of the loan amount in <a class="glossary-word">cryptocurrency</a> or a portfolio of cryptocurrencies to obtain the loan.',
         },
-        '2': {
-          title: 'Buy-back guaranteed borrowers',
-          desc: 'Loan originators guarantee to buy back loans if they default longer than 60 days, protecting investor funds.'
-        },
-        '3': {
-          title: 'Loan origination partners',
-          desc: 'We work with trusted, vetted loan originators to connect you with more borrowers and better returns.'
-        },
-        '4': {
-          title: 'Custodial partner',
-          desc: 'We use Prime Trust to safely manage the transfer and storage of investor funds and borrower <a class="glossary-word">collateral</a>.'
-        }
       }
     },
     banner: {
       title1: 'Experience multi-market <span style="color:#F5A623;">peer-to-peer</span> lending.',
-      subTitle: '<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee. Earn across multiple markets, spreading risk and maximizing reward.</p>        <p>Or, borrow against {numCollateral}+ cryptocurrencies to get the cash you need, instantly. Your crypto is securely held until you repay. Unlock the value of your crypto without selling up. </p>        <p>While not on loan or waiting for a match, your funds earn an automatic 4% APY, and you can withdraw anytime for free. So no downtime, no wasted earnings.</p>',
-      subTitleShort: '<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee...</p>',
-      subTitle2: '<p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee. Earn across multiple markets, spreading risk and maximizing reward.</p>',
+      subTitle: `
+        <p>Invest in people and businesses around the world for up to {investRate}% <a class="glossary-word">APR</a>. All lending is backed by cryptocurrency <a class="glossary-word">collateral</a>. Earn across multiple markets, spreading risk and maximizing reward. No investing fees. Free USD withdrawals. 24-7 customer support.</p>
+        <p>Or borrow against {numCollateral}+ cryptocurrencies from just {borrowRate}% <a class="glossary-word">APR</a>. Get the cash or crypto you need instantly without having to sell your portfolio. Your crypto is securely stored and returned to you when you repay.</p>
+      `,
       newMessage: 'Why invest with MyConstant?',
       viewMore: '...more',
       intro: {
@@ -1772,7 +1761,7 @@ export default {
       },
       invest: {
         title: '<p>INVEST<br/>Crypto-backed</p>',
-        cap: '          <div class="row">            <div class="col">              Interest rate              <strong class="rate">Up to {rate}%</strong>            </div>            <div class="col">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class="clearBottom text-left">            All lending secured by digital assets          </p>        ',
+        cap: '          <div class="row">            <div class="col">              Interest rate              <strong class="rate">Up to {rate}%</strong>            </div>            <div class="col">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class="clearBottom text-left">All lending backed by digital assets</p>        ',
         btn: 'Explore',
         desc: "All lending secured by\ndigital assets",
         new_title: "INVEST\nCrypto-backed",
@@ -2445,53 +2434,10 @@ export default {
         }
 
       },
-      faqs: {
-        question1: 'How long will it take to get my loan?',
-        answer1: '        <p>As soon as we receive your collateral, we’ll deposit your loan into your MyConstant account. You can withdraw your loan as fiat to your bank account or as a stablecoin to your wallet address. All withdrawals are free.</p>        <p><a href="https://blog.myconstant.com/how-to-borrow-against-crypto-4-simple-steps" className="underline" target="_blank">How to borrow in 4 simple steps.</a></p>      ',
-        question2: 'Do you check my credit score?',
-        answer2: '        <p>As we only offer secured loans backed by collateral, there is no need for credit scoring. All you need is adequate collateral to secure your loan. To see how much collateral you need to secure your loan, simply enter the amount you’d like to borrow. The calculator will work out the amount for you.</p>        <p><a href="https://blog.myconstant.com/how-to-borrow-against-crypto-4-simple-steps" className="underline" target="_blank">How to borrow in 4 simple steps.</a></p>      ',
-        question3: 'How do you protect my collateral?',
-        answer3: '        <p>Depending on your collateral, it’s either held safely in Prime Trust custody, an Ethereum smart contract, or a password-protected web wallet hosted on a dedicated server (to which only our CEO and CTO have access). When you repay, your collateral is immediately transferred back to you.</p>        <p><a href="https://blog.myconstant.com/how-we-protect-your-money-and-collateral" className="underline" target="_blank">How we protect your collateral.</a></p>      ',
-        question4: 'What happens if I don’t repay the loan?',
-        answer4: 'If you don’t repay the loan, your collateral will be sold to repay your investor. You get to keep the loan. That’s it.',
-        question5: 'What happens if my crypto collateral falls in value?',
-        answer5: '        <p>We will notify you three times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, we’ll create a sell order to repay the investor. You keep the loan, but you lose your collateral.</p>        <p>Borrowers will receive notifications at 125%, 120% and 115% of the investor’s principal plus earned interest. You can choose to repay early to avoid liquidation or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.</p>        <p>If you’re borrowing against stablecoins, you will be notified at 115%, 110%, and finally 105%. Once your collateral falls to 100% of the loan amount it will be sold to repay the investor.</p>        <p><a href="https://blog.myconstant.com/extra-protection-for-your-collateral-auto-top-up" className="underline" target="_blank">How to avoid liquidation with auto top-up.</a></p>      ',
-        question6: 'Can I repay early?',
-        answer6: "          <p>If you'd like to pay back your loan before 75% of the term is up, that's absolutely fine. You simply have to pay interest for the days you are in possession of the loan, and just 50% of the original interest rate for the remaining days of the term.</p>          <p>If you'd like to pay back your loan after 75% of the term is up and claim back your collateral, that's also fine, but the interest due on that loan is the full percentage for the entire term.</p>        ",
-        question7: 'Can I recall excess if the value of my collateral increases?',
-        answer7: '        <p>Yes. If the value of your collateral rises during your loan term, you can withdraw the difference from your Accounts page.</p>        <p><a href="https://blog.myconstant.com/how-to-deposit-top-up-recall-crypto-constant" className="underline" target="_blank">How to deposit, top-up, and recall excess collateral.</a></p>      ',
-        question8: 'What is the LTV (Loan-to-Value) Ratio? Is it always the same?',
-        answer8: '        <p>The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral.</p>      ',
-        question9: 'How do I repay my loan?',
-        answer9: '          <p>We’ll deduct your repayment directly from your MyConstant account balance. Adding funds is easy. You can do one or a combination of the following:</p>          <ol>            <li>Transfer USD to one of our US bank accounts.</li>            <li>Send any one of our supported stablecoins: USDT/USDC/TUSD/GUSD/PAX/USDS.</li>            <li>Repay the equivalent USD value using your collateral.</li>          </ol>          <p>Your balance will update when funds have been received in your MyConstant account.</p>        ',
-        question10: 'What happens if I repay late?',
-        answer10: 'The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due.',
-        question11: 'Is it still possible to take out a single-collateral loan?',
-        answer11: '        <p>        Yes, after you take out a loan you can click on the Isolate button in the loan menu on your accounts page to switch to a single-collateral loan. To switch you must meet the 110% minimum collateral value requirement for the crypto. However, you cannot collateralize with more crypto than your collateral rate allows (more on that below).        </p>        ',
-        question12: 'Is repayment any different with multi-collateral credit lines?',
-        answer12: '        <p>        Nope! You must still repay each loan individually. However, crypto selected for collateral repayments will still follow a 24-hour trading volume priority based on what you have available.        </p>        ',
-        question13: 'I can’t find where to choose multiple collaterals for my borrow order',
-        answer13: '        <p>        If you take out a crypto-backed loan or buy new cryptos using Crypto Credit, you’ll only see the option to use one collateral. To borrow with multiple collaterals you must start on <a href="https://www.myconstant.com/pro-lending" target="_blank" class="underline">our pro page.</a>        </p>        ',
-        question14: 'Why do you prioritize collaterals based on 24-hour exchange volume?',
-        answer14: '        <p>        Loan security is our top priority on MyConstant. In the unfortunate case of liquidation, we always want to make sure we can sell collateral as fast as possible to cover the loan value.        </p>        ',
-        question15: 'Will auto top-up add collateral to my loan based on 24-hour exchange volume?',
-        answer15: '        <p>        Yes.        </p>        ',
-        question16: 'Can I choose to auto top-up some loans and manually top-up others?',
-        answer16: '        <p>        No. You can only toggle auto top-up on or off for all multi-collateral loans at the same time. However, you can choose this setting separately for each isolated (single-collateral) loan.        </p>        ',
-        question17: 'Will I still receive notifications to repay individual multi-collateral loans on schedule?',
-        answer17: '        <p>        Yes.        </p>        ',
-        question18: 'Do you have a feature for paying all loans in one term period at the same time?',
-        answer18: '        <p>        Right now you still must pay off all of your loans individually.        </p>        ',
-        question19: 'If I have multiple active loans, which collaterals do I get back when I repay my earliest loans?',
-        answer19: '        <p>        If you still have active loans after repaying, your collateral won’t be released back to your available balance. Instead, it will go into your collateral balance for multi-collateral. If you want to remove collateral from this balance, you’ll need to recall excess from the overview screen and choose the crypto type and amount you want.        </p>        ',
-        question20: 'I can’t recall excess on my crypto even though my collateral value is over 110%.',
-        answer20: '        <p>        Collateral value is only used to determine loan liquidation. It is calculated by:        </p>        <p class="font-italic">        (number of coins * value)+”repeat for each coin”/(loan value + up-to-date interest + matching fee)        </p>        <p>        We calculate how much collateral you withdraw through recall excess based on the collateral rate. For more information on the collateral rate see below.        </p>        ',
-        question21: 'What is the collateral rate and why is it different from the collateral value?',
-        answer21: '        <p>        Collateral value only takes into account the monetary value of your collateral in your collateral balance compared to your loan amount. We base liquidation off collateral value. Your collateral rate is a more in-depth number that takes into account the LTV ratios required for different cryptocurrencies. We use this number to determine how much you can withdraw with recall excess as well as the maximum amount of crypto you can place in an Isolated loan.        </p>        <p>        You can find your collateral rate through this equation:        </p>        <p class="font-italic">        x = (number of coins)*(coin value)*(LTV)+“repeat for each coin”<br />        Collateral rate = (x/(loan value at first + up-to-date interest + matching fees))*100        </p>        '
-      },
+
       cryptosDesc: 'Your collateral is securely stored in either a Prime Trust cold wallet, an Ethereum smart contract, or a password-protected web wallet until you repay your loan.',
       listApplications: {
-        notAllowReBorrowing: "Sorry, you’re unable to repay using refinancing as your collateral value rate is less than 125%. To enable refinancing, please deposit more collateral.",
+        notAllowReBorrowing: 'Sorry, you’re unable to repay using refinancing as your collateral value rate is less than 125%. To enable refinancing, please deposit more collateral.',
         headingDetail: 'Loan History Detail',
         title: 'Loan History',
         overview: 'Overview',
@@ -2529,8 +2475,8 @@ export default {
         amount: 'Amount',
         rate: 'Rate',
         term: 'Term',
-        interest: "Interest",
-        reBorrowingInfo: "",
+        interest: 'Interest',
+        reBorrowingInfo: '',
         matched: 'matched',
         cancel: 'Cancel',
         cancelBorrow: 'Cancel',
@@ -2539,7 +2485,7 @@ export default {
         noLoans: 'Request your fixed rate loan.',
         delete: 'Delete',
         redeemApply: 'Redeem STAR',
-        reBorrowingInfo: "We will create new loan for you with these information:",
+        reBorrowingInfo: 'We will create new loan for you with these information:',
         mapStatus1: {
           done: 'Done',
           liquidatePending: 'Liquidation In Process',
@@ -2691,12 +2637,12 @@ export default {
           const: 'USD',
           collateral: 'Collateral',
           reBorrowing: {
-            title: "Refinancing",
-            desc: "Refinancing allows you to repay your loan and any applicable fees by taking out another loan against your collateral. However, please note refinancing results in you paying more interest over time, reduces your collateral value rate (which may result in greater risk of liquidation), and lowers your capacity to borrow unless you deposit more collateral. "
-          }
+            title: 'Refinancing',
+            desc: 'Refinancing allows you to repay your loan and any applicable fees by taking out another loan against your collateral. However, please note refinancing results in you paying more interest over time, reduces your collateral value rate (which may result in greater risk of liquidation), and lowers your capacity to borrow unless you deposit more collateral. ',
+          },
         },
         footer: { desc: 'Showing {start} - {end} of {total} selected entries' },
-        repay: "Repay"
+        repay: 'Repay',
       },
       transaction: {
         copiedAddress: 'Address is copied to clipboard',
@@ -3101,7 +3047,7 @@ export default {
           serviceTimeTransferViaEmail: `
             <div class="colorLight">Your transfer is being processed and should be completed within a few minutes. </div>
             <p class="colorLight">If you still can’t see your funds after 10 minutes, please contact customer support.</p>
-          `
+          `,
         }
       },
       howItWorks: 'How it works',
@@ -3148,7 +3094,7 @@ export default {
           voiding: 'Selling',
           voided: 'Sold',
           pending: 'Pending',
-          closed: 'Closed'
+          closed: 'Closed',
         },
         loanOriginatorHeaders: {
           loanOriginator: 'Loan Originator (LO)',
@@ -3305,10 +3251,10 @@ export default {
         text1: 'Set your own lending terms',
         placeholder: { amount: 'How much do you want to lend?' },
         maxTerm: 'Length of term',
-        text2: '<p>Choose a term you like and as soon as we receive your funds you’ll start earning interest. The longer you invest for the more interest you earn. If you’d like to end your term early, you can sell your investment in our <a href="https://blog.myconstant.com/constant-secondary-market" target="_blank" class="underline">secondary market</a>.</p>',
+        text2: '<p>Choose a term you like and as soon as Prime Trust, our custodian, receives your funds you’ll start earning interest. The longer you invest for the more interest you earn. If you’d like to end your term early, you can sell your investment in our <a href="https://blog.myconstant.com/constant-secondary-market" target="_blank" class="underline">secondary market</a>.</p>',
         btn2: 'to invest now',
         tooltip: {
-          maxTerm: '<p>This is the maximum amount of time you want to lend your money out for. Unloaned portions can be withdrawn at any time.</p>'
+          maxTerm: '<p>Choose instant access to withdraw your funds at any time for free. Otherwise, pick a fixed term to get our best rates.</p>',
         },
         deposit: 'to deposit now',
         btn1: 'Invest now',
@@ -3318,17 +3264,17 @@ export default {
       intro: {
         content: `
             <p class="topText">Invest the way you want</p>
-            <h2 style="color:#F5A623;">Earn up to {rate}% APR now.</h2>
-            <h2>Start investing from just $50.</h2>
-            <h1>Experience crypto-backed P2P lending.</h1>
+            <h1 style="color:#F5A623;">Earn 20x more than a CD<sup>*</sup>.</h1>
+            <div class="h1">Start investing from just $10.</div>
+            <div class="h1">Instant access or fixed terms.</div>
             <p />
-            <p>Lend to cryptocurrency holders across the world for a return of up to {rate}% APR. You choose the term, we match you with a borrower, and you keep the interest. All lending is backed by collateral, which is sold if the borrower defaults.</p>
+            <p>Invest in people and businesses around the world for a return of up to {rate}% APR. Withdraw anytime for free or invest in a fixed-term loan for the best rates. All lending is backed by cryptocurrency collateral. No fees.</p>
 `,
         youtube: { title: 'Why invest with MyConstant?' },
         desc: {
           '1': 'All lending backed by crypto',
-          '2': 'Your choice of term',
-          '3': '24/7 customer service'
+          '2': 'Instant access or fixed term',
+          '3': '24/7 customer support'
         }
       },
       alert: {
@@ -3401,21 +3347,21 @@ export default {
               haveLinkedBank: '<p>Please choose a linked bank account below and then click <strong>Submit</strong>.</p>',
             },
             subTitleSplitDeposit: {
-              splitNote:`
+              splitNote: `
                 <p>The maximum amount you can send via ACH in a single transaction is {amountPerTransaction}.</p>
                 <p>Instead, you can split your deposit over {numTransaction} orders:</p>
               `,
               investNote: `
                     <p>Each order will be processed under the same linked bank account you choose from below.</p>
                 `,
-              investNoteInstantCredit:`
+              investNoteInstantCredit: `
                 <p>While your ACH clears, you’ll earn {flexRate}% APY instantly on \${instantAmount} through our Instant Credit program. You can also reinvest Instant Credit in a fixed-term loan for up to 7% APR.</p>
               `,
               pleaseNote: '<p>Please note: ACH transfers are available for linked US bank accounts only and each ACH deposit can take <strong>up to 5 business days</strong> to clear.</p>',
               haveLinkedBank: '<p>To confirm your deposit, please choose a linked bank account below and then click <strong>Submit</strong>.</p>',
             },
             subTitleSplitInvestment: {
-              splitNote:`
+              splitNote: `
                 <p>The maximum amount you can send via ACH in a single transaction is {amountPerTransaction}.</p>
                 <p>Instead, you can split your investment over {numTransaction} orders:</p>
               `,
@@ -3456,7 +3402,7 @@ export default {
               investNoteSuccess1: `<p>Your deposit of \${amount} was processed successfully.</p>`,
               investNoteSuccess2: `<p>You’re now earning 4% APY on \${instantAmount} of Instant Credit. You can also reinvest your Instant Credit in a fixed-term loan for up to 7% APR.</p>`,
               investNoteSuccess3: `<p>ACH deposits take 3-5 business days to clear (not including weekends) and your funds will be available for withdrawal 7 days <strong>after</strong> they clear.</p>`,
-              splitNote:'<p>Sorry, we couldn’t process all the transactions for your deposit. Here’s a summary:</p>',
+              splitNote: '<p>Sorry, we couldn’t process all the transactions for your deposit. Here’s a summary:</p>',
               investNote: `
                 <p>ACH deposits take 3-5 business days to clear (not including weekends) and your funds will be available for withdrawal 7 days <strong>after</strong> the transaction clears.</p>
                 <p>To transfer the remaining \${unsuccessfulAmount} for your deposit, <a href="https://www.myconstant.com/flex" class="underline">create another deposit order</a>.</p>
@@ -3467,74 +3413,56 @@ export default {
             },
             plaidSplitResultInvestment: {
               investNoteSuccess: '<p>The transfer(s) for your investment(s) were processed successfully.</p>',
-              splitNoteFail:'<p>Sorry, we couldn’t process all the transfers for your investments. Here’s a summary:</p>',
+              splitNoteFail: '<p>Sorry, we couldn’t process all the transfers for your investments. Here’s a summary:</p>',
               investNote: `<p>Please note ACH transfers take 3-5 business days to clear and your investments will start as soon as we receive your funds.</p>`,
               investNoteUsingInstantCredit: `<p>Please note ACH transfers take 3-5 business days to clear and your other investments will start as soon as we receive your funds.</p>`,
               reCreateCanceledOrder: '<p>To recreate your canceled order, <a href="https://myconstant.com/invest" class="underline">please visit our invest page</a>.</p>',
               investmentUsingInstantCredit: '<p>The investment below has already begun using your Instant Credit:</p>',
               trackInvestments: '<p>To track investments, please visit your <a href="https://myconstant.com/accounts" class="underline">Accounts page</a>.</p>',
               transactionSuccess: '(Successful)',
-              transactionError: ' (Canceled due to {error})'
+              transactionError: ' (Canceled due to {error})',
             },
             insufficient_bank_account: '<p>Sorry, you appear to have insufficient funds in your linked bank account for this transfer. Please check the balance of your linked bank account and try again. If you think this is an error, please contact us on <a href="mailto:hello@myconstant.com" target="_blank" class="underline">hello@myconstant.com</a>.</p>',
             plaid_reach_limit: '<p>Sorry, you appear to have insufficient funds in your linked bank account for this transfer. Please check the balance of your linked bank account and try again. If you think this is an error, please contact us on <a href="mailto:hello@myconstant.com" target="_blank" class="underline">hello@myconstant.com</a>.</p>',
           }
         },
-        updateBalanceNoteInWorkingTime: "Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience.",
+        updateBalanceNoteInWorkingTime: 'Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We\'re working hard to reduce this time, so thanks for your patience.',
         bankChargeFeeInfo: `
           <h3 style="color: #757575;font-size: 16px; border-bottom: 1px solid #EEEEEE">Notice about intermediary bank fees</h3>
           <p class="text-left">The global banking system is imperfect, and some banks lack the direct relationships that support international wire transfers. These banks may depend on one or more intermediary banks (banks in addition to yours and ours) to help process the wire.</p>  
           <p class="text-left">Intermediary banks may automatically deduct fees for this service before the wire reaches your bank (withdrawal) or our bank (deposit). Unfortunately, these fees are outside of our control, and we can’t reliably inform you of the intermediary banks involved nor their fees in advance.</p> 
           <p class="text-left">While we don’t charge a USD withdrawal fee, you might still receive less than the withdrawal amount (after deducting your bank’s wire receipt fee) due to intermediary bank fees. Similarly, you might receive less in your MyConstant account after a deposit due to the same intermediary bank fees.</p>
         `,
-        bankChargeFeeTitle: 'Intermediary bank fees'
+        bankChargeFeeTitle: 'Intermediary bank fees',
       }
-    },
-    faqs: {
-      question1: 'How long will it take to find a match?',
-      answer1: 'You match the moment we receive your funds.',
-      question2: 'Are there any limits?',
-      answer2: 'You can invest as much as you like, starting from just $50.',
-      question3: 'How do I invest?',
-      answer3: '        <p>Enter how much you want to invest and for how long. Transfer that amount to one of our international bank accounts – we have banks in the US and abroad to make transfers quick and easy for you. As soon as your funds arrive, you’ll immediately start earning interest.</p>        <p>At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your MyConstant account. It’s up to you what you’d like to do next – reinvest, withdraw, or send money abroad.</p>        <p><a href="https://blog.myconstant.com/how-to-invest-with-constant-in-3-simple-steps" className="underline" target="_blank">How to invest in 3 simple steps.</a></p>      ',
-      question4: 'How do you protect my investment?',
-      answer4: '        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too:</p>        <ol>          <li>All of our borrowers must put up 150% of the loan amount as crypto collateral. If they don’t repay, we sell the collateral to repay you.</li>          <li>We also include a liquidation threshold to insure against a fall in the collateral’s value. If the value falls to 110% of your principal and earned interest, it’s sold to repay you.</li>          <li>We only accept vetted, quality cryptocurrencies and cap our exposure to these markets by daily trading volume. This ensures we can sell the collateral should the market dip.</li>        </ol>        <p>These protective measures help ensure you get the returns promised. However, all investment involves risk, and despite our best efforts, we can’t guarantee the return of your principal and profit. Therefore please invest wisely.</p>        <p><a href="https://blog.myconstant.com/how-we-protect-your-money-and-collateral" className="underline" target="_blank">Read more about how we protect you.</a></p>      ',
-      question5: 'What happens when my money isn’t on loan?',
-      answer5: `        <p>When not on loan or waiting for a match, your money earns 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>        <p>If you're waiting for a match, your money remains in the custody of Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>        <p>Flex is enabled by default, but you can disable it from your Accounts page. You will no longer earn interest and your funds will remain in Prime Trust custody (unless you invest in a fixed-term loan).</p>        <p><a href="https://blog.myconstant.com/flex-or-prime-trust-constant" className="underline" target="_blank">Prime Trust or Flex?</a></p>      `,
-      question6: 'What happens if a borrower repays early?',
-      answer6: '        <p>If a borrower repays before 75% of the loan term is complete, they’ll pay you earned interest to date plus 50% of the interest due on the remainder of the term.</p>        <p>If a borrower repays after 75% of the loan term is complete, they’ll pay you 100% of the interest due on the loan.</p>      ',
-      question7: 'What happens if you have to sell borrower collateral to repay me?',
-      answer7: '        <p>If a borrower can’t repay, or their collateral falls to 110% of your principal and earned profit, we’ll sell the collateral to repay you. In either case, you’ll get your principal back. You’ll also get earned interest to date if the collateral is sold mid-term, or 100% of the interest due if the collateral is sold after the term ends.</p>      ',
-      question8: 'Can I end my investment term early?',
-      answer8: '        <p>Yes. To end your term early, you can sell your investment to another investor from your Accounts page. Once sold, you’ll get your principal back and 2% APR on elapsed term time. Selling relies on finding a buyer willing to accept your rate and term so might take around 24 hours. You’ll also lose any earned membership points on your sold investment.</p>      ',
-      question9: 'How long until I start earning interest?',
-      answer9: '        <p>Your investments join a lending reserve from which borrowers can get loans. This means you start earning interest the moment we receive your funds.</p>      '
     },
     whyInvest: {
       title: 'Why invest with us?',
       data: {
         0: {
-          title: 'Match instantly',
-          desc: `<p>Your investment funds a lending pool from which borrowers get loans in return for interest. The longer you leave your money in the pool, the more interest you earn.</p>`,
+          title: 'Immediate returns',
+          desc: `<p>Start earning interest the moment you deposit.</p>`,
         },
         1: {
-          title: 'Invest or insure deposits',
+          title: 'Flexible terms',
           desc: `
-            <p>Earn 4% APY on your balance with Flex. Or, insure your balance up to $130,000,000 with our custodial partner, Prime Trust.</p>
-            <a href="https://blog.myconstant.com/flex-or-prime-trust-constant" target="_blank">Your balance, your choice.</a>
+            <p>Withdraw anytime or choose from three fixed terms.</p>
           `,
         },
         2: {
-          title: 'Collateral backed',
+          title: 'Collateral-backed',
           desc: `
-            <p>Every loan is up to 200% backed by cryptocurrency collateral. To borrow $10,000, for example, a borrower must put up to $20,000 worth of cryptocurrency into escrow. Then if the borrower defaults, we sell the collateral to repay you. </p>
-            <p>So if borrowers default, you don’t lose a cent.</p>
-            <a href="https://blog.myconstant.com/how-constant-protects-money-and-collateral" target="_blank">How we protect investors' funds.</a>
+            <p>All lending is backed by cryptocurrencies that are easy to sell if borrowers default.</p>
+            <a href="https://blog.myconstant.com/how-constant-protects-money-and-collateral" target="_blank">How we protect you</a>
           `,
         },
         3: {
-          title: 'Built for you',
-          desc: '<p>Enjoy 24-7 customer service, unlimited free withdrawals, and a library of useful content to help you do more with your money.</p>',
+          title: 'No fees',
+          desc: '<p>No fees to invest or withdraw USD.</p>',
+        },
+        4: {
+          title: '24/7 customer support',
+          desc: '<p>Call, email, or message us on social media at any time of the day or night.</p>',
         }
       }
     },
@@ -3543,15 +3471,19 @@ export default {
       data: {
         0: {
           title: '1. Set your own terms',
-          desc: 'Choose how much you want to invest and for how long. We have 1-month, 3-month, and 6-month terms to choose from for utmost flexibility.',
+          desc: 'Choose instant access or a fixed term of 30, 60, or 180 days.',
         },
         1: {
           title: '2. Deposit your funds',
-          desc: 'Send your funds via one of our supported payment channels. Depending on your bank, it might take one or two business days to reach us.',
+          desc: 'Send your funds via ACH (US) or wire (non-US).',
         },
         2: {
           title: '3. Start earning interest',
-          desc: 'As soon as your funds reach us, you start earning interest on your principal. When your term ends you can withdraw your principal and profit to a bank account or stablecoin wallet for free.'
+          desc: 'You earn interest as soon as your funds reach us.'
+        },
+        3: {
+          title: '4. Withdraw or reinvest',
+          desc: 'Withdraw anytime (instant access) or at the end of your fixed term for free.'
         }
       }
     }
@@ -3637,40 +3569,6 @@ export default {
         }
       },
       ourPress: { title: 'Our Partners' }
-    },
-    faqs: {
-      question1: 'What is a “Loan Originator” loan?',
-      answer1: '        <p>We’ve partnered with loan originators (companies that source borrowers) to offer you a greater choice of loans and better returns. A Loan Originator investment is a claim against a loan issued by our loan originator partner. Instead of buying the loan with all the rights and ownership of collateral (if any), you’re buying a right to receive payments from an existing loan. </p>        <p>When you invest in a Loan Originator, the loan originator will guarantee to buy back the loan if the borrower defaults for 60 days. This repays your principal and earned profit up to and including the 60-day default period. </p>        ',
-      question2: 'How do Loan Originator loans work?',
-      answer2: 'When you invest in a Loan Originator loan, you’re lending to a borrower through one of our loan origination partners. Depending on the loan originator, you might receive monthly repayments of the total due, monthly payments of the interest only, or everything at the end of the term – all of which you can withdraw when paid. If the borrower is 60 days late on any of these repayments, the loan originator will buy back the loan and return your principal and earned profit.',
-      question3: 'What is a loan originator?',
-      answer3: 'A loan originator is a partner that sources borrowers on our behalf. Some arrange loans for borrowers with collateral – such as cars or property – while others assess borrowers’ credit before issuing loans. In either case, our loan originators all come with a buy-back guarantee. That means if their borrowers default for 60 days or more, the loan originator will buy back the loan, returning your principal and earned profit.',
-      question4: 'How do you choose loan originators?',
-      answer4: "<p>Before we onboard a lending company onto our platform, we conduct a thorough due diligence process and analysis of the lending company's profile, background, corporate documents, lending practice and credit policy, historical loan performance as well as their financial strengths. </p><p>During this process, we review how the lending company lends to its borrowers, how it conducts its loan monitoring as well as how it pursues the debt recovery process in the event of default. We analyze the key indicators of the lending company's operational control, risk management, and most importantly, its financial health via its audited and interim financial statements.</p><p>We also take into account management experience and qualifications and the lending company's transparency and openness. All assessments of these indicators are input into our rating model and we assign a MyConstant Rating to the lending company.</p>",
-      question5: 'How do you calculate a loan originator’s MyConstant Rating?',
-      answer5: '        <p>We give every loan originator a rating between A and D, A being the best. We only work with C-rated companies and above. Our rating system gives you a guide to the quality of the loans and the loan originator themselves, which determines the risk of lending to that loan originator. </p><p>To calculate a rating, we consider many factors, including (but not limited to):</p> <ul><li>Years of operation.</li><li>Country of operation.</li><li>Share of the market.</li><li>Reputation.</li><li>Growth rate.</li><li>Risk management.</li><li>Transparency.</li><li>Financial strength.</li></ul><p>We feed all the factors into an algorithmic rating system that produces a final result. However, this rating is not fixed – we regularly review and update ratings so you always have the most up-to-date information before you invest.</p><p><a href="#">Learn more about the MyConstant Rating system.</a> </p>         ',
-      question6: 'What’s the difference between a Loan Originator loan and a crypto-backed loan?',
-      answer6: '        <p>Loan Originator loans offer longer terms (6-15 months) and better interest rates (up to 11% APR). Depending on the loan originator, you might also receive monthly repayments that you can withdraw immediately, whereas crypto-backed borrowers usually repay at the end of the term.</p> <p>A Loan Originator loan is secured by the loan originator. If borrowers default for a minimum of 60 days, the loan originator will buy back the loan. This returns your principal and earned profit up to and including the 60-day default period.</p> <p>A crypto-backed loan is secured by collateral. If borrowers default or their collateral falls too much in value, we sell it to repay you. This is usually instant, depending on how quickly we can sell the collateral.</p> <p>Those are the key differences, but you can see a full comparison on our Loan Originator homepage.</p>         ',
-      question7: 'How do you protect my investment on a Loan Originator loan?',
-      answer7: '        <p>First, you have the loan originator’s buy-back guarantee. If borrowers default for 60 days, the loan originator will buy back the loan to return your principal and earned profit up to and including the 60-day period. However, since you rely on the loan originator’s ability to buy back the loan, we’ve given each of them a rating.</p> <p>The MyConstant Rating is based on the loan originator’s business and performance, including the default rate, their stake in each loan, and types of loan offered. You can use the MyConstant Rating to choose between loan originators, but please remember it is just a guide. A high MyConstant Rating doesn’t guarantee the loan originator will buy back the loan in all cases.</p><p>Like all investment, use caution and diversify.</p>',
-      question8: 'Does the buy-back guarantee protect me in all cases?',
-      answer8: '        <p>In most cases, but not all. Since the loan originator buys back the loan, it depends on their ability to do so, and that’s why we give them a MyConstant rating from A to D, A being the best. Most of the loans we offer will be C or above. </p>        <p>Also, certain countries allow borrowers to request extensions on loans. In this case, an extension isn’t considered a default, so you might wait a bit longer for your returns. If the borrower still hasn’t repaid in full by the end of the extension, the loan originator will buy back the loan as usual. </p>        ',
-      question9: 'What happens if a loan originator doesn’t honor the buy-back guarantee?',
-      answer9: 'We don’t expect this to happen, but if it does, there are several options available to us. If they can’t honor the buy-back guarantee due to financial issues, we may negotiate a repayment plan with the loan originator and repay you in full or periodically as they repay. Otherwise, you or us may wish to pursue legal action against the loan originator. In either case, we can’t make any assurances and ask that you diversify across different loan originators to spread your risk. ',
-      question10: 'How do I deposit money for my investments?',
-      answer10: '        <p>You have two options: Zelle or bank transfer, both of which are free.</p><p>Zelle is faster, but you can only send a certain amount per day. </p><p>We support both ACH and wire bank transfers for any amount. These take a day or two to reach us (depending on your bank) and then a short processing period of around 1 business day before it appears in your account.</p> <p>Once we receive your funds, we then forward them to the loan originator. This might take 3 to 10 business days depending on the loan originator, as some of them only do weekly settlement. We’ll let you know as soon as your funds have been matched and you’ve started earning interest.</p><p>For more information, please check our service times. </p>        ',
-      question11: 'What currencies do you accept?',
-      answer11: 'You can send us any currency and we’ll convert it to USD. ',
-      question12: 'Are Loan Originator loans in USD only?',
-      answer12: 'For the moment, yes. We might open up new currencies such as EUR or GBP in the future. You can still invest using other currencies, but please bear in mind we’ll convert your currency to USD upon receipt.',
-      question13: 'Do you charge any fees?',
-      answer13: 'No. All investing, currency conversion, and withdrawals are free. How do we make money? We make a slim profit on the difference between the interest rate you earn and the rate charged to the borrower. ',
-      question14: 'How long does it take to match with a Loan Originator borrower?',
-      answer14: '<p>Matching is usually instant, but you won’t start earning interest until your funds reach the loan originator. This will involve an international bank transfer. Also, some loan originators do weekly settlement only.</p> <p>For guidance, you’ll start earning interest within 3-10 business days. </p>',
-      question15: 'When do I start earning interest on a Loan Originator loan?',
-      answer15: '        <p>You start earning interest as soon as your funds reach the loan originator. This takes 3-10 business days after you’ve matched with a borrower. </p><p>Depending on the loan originator, you might be able to withdraw your interest earnings periodically, perhaps monthly. In other cases, you might need to wait until the end of your term before you can withdraw your earnings.</p> <p>In either case, some loan originators do weekly settlement, which combined with international transfer times, mean it could take 3-10 business days before you can withdraw any repayments.</p>  ',
-      question16: 'Can I invest in a portion of a Loan Originator loan?',
-      answer16: 'Yes. You can view a list of available loans and fulfil all or part of each loan order. This helps you diversify, since you can spread your money across more loans. '
     },
     loanOriginator: {
       headers: {
@@ -4540,7 +4438,7 @@ export default {
     becomeAffiliateForm: {
       title: 'Ready to start earning?',
       desc: 'Join our affiliate program and start earning cash rewards on all of your content. Fill in the form on the right and we’ll be in touch within three business days.',
-      titleMobile: 'Become our affiliates.'
+      titleMobile: 'Become our affiliates.',
     },
     applicationForm: {
       title: `
@@ -4600,30 +4498,30 @@ export default {
       //     desc: 'Whether you already monetize or not, our creative team will help boost the value and impact of your content. We can advise on SEO, copywriting, marketing, and more.'
       //   }
       // },
-      trialBonus: 'a ${kYCTrialAmount} trial bonus'
+      trialBonus: 'a ${kYCTrialAmount} trial bonus',
     },
     theBestOpportunity: {
       title: 'The best opportunity in the market',
       data: {
         0: {
           title: 'GIVE PEOPLE WHAT THEY LOVE',
-          desc: 'We’re loved and trusted by 2,000s of customers with <strong>a Trustpilot score of 4.7/5</strong> over 600+ reviews. It’s an easy sell.'
+          desc: 'We’re loved and trusted by 2,000s of customers with <strong>a Trustpilot score of 4.7/5</strong> over 600+ reviews. It’s an easy sell.',
         },
         1: {
           title: 'CASH-IN ON HIGH GROWTH',
-          desc: 'We’re one of the <strong>fastest-growing P2P lenders in the US</strong> with over 25% growth month-on-month. Take your cut. \n'
+          desc: 'We’re one of the <strong>fastest-growing P2P lenders in the US</strong> with over 25% growth month-on-month. Take your cut. \n',
         },
         2: {
           title: 'TAP INTO A $2.3BN MARKET',
-          desc: '<strong>The US P2P lending market is worth over $2.3 billion</strong> with few competitors – the perfect market to sweep up affiliate bonuses.'
+          desc: '<strong>The US P2P lending market is worth over $2.3 billion</strong> with few competitors – the perfect market to sweep up affiliate bonuses.',
         },
         3: {
           title: 'EARN DESPITE THE MARKET',
-          desc: 'No matter the economic climate, we’ve paid <strong>consistent returns</strong> to customers and <strong>$1,000s</strong> to our affiliates. '
+          desc: 'No matter the economic climate, we’ve paid <strong>consistent returns</strong> to customers and <strong>$1,000s</strong> to our affiliates. ',
         },
         4: {
           title: 'ENJOY 24/7 SUPPORT',
-          desc: 'With offices in the US and Southeast Asia, <strong>we’re here to help day or night,</strong> regardless of your location.'
+          desc: 'With offices in the US and Southeast Asia, <strong>we’re here to help day or night,</strong> regardless of your location.',
         },
       }
     },
@@ -4685,7 +4583,7 @@ export default {
             <li>\${milestoneCountReward} when you refer {milestoneCount} people within {milestoneCountDays} days who also deposit within that timeframe.</li>
             <li>\${milestoneVolumeReward} when you refer people within {milestoneVolumeDays} days whose combined deposit volume hits \${milestoneVolume} within that timeframe.</li>
           </ul>
-        `
+        `,
       },
       '2': {
         question: 'Why are milestone rewards time-limited?',
@@ -4693,7 +4591,7 @@ export default {
       },
       '3': {
         question: 'How are the rolling {milestoneCountDays} and {milestoneVolumeDays}-day periods calculated for milestone rewards?',
-        answer: '<p>Both the {milestoneCountDays}-day and {milestoneVolumeDays}-day periods are rolling, which means they\'re calculated on the {milestoneCountDays} or {milestoneVolumeDays} days preceding today. However, the milestone timelines are reset whenever you earn a reward.</p>'
+        answer: '<p>Both the {milestoneCountDays}-day and {milestoneVolumeDays}-day periods are rolling, which means they\'re calculated on the {milestoneCountDays} or {milestoneVolumeDays} days preceding today. However, the milestone timelines are reset whenever you earn a reward.</p>',
       },
       '4': {
         question: 'Who can become a MyConstant affiliate?',
@@ -4959,14 +4857,14 @@ export default {
       desc: `
         <p>Tell your friends and family about us and get \${referralReward} free for each person who signs up and deposits USD (US citizens only). You also earn <strong style="color:#F7B500;">{referralFlexReward}% of their Flex interest</strong>, compounded and paid every second. Refer as many friends as you like, however you like, and <strong style="color:#F7B500;">grow your money together</strong>.</p>
       `,
-      titleNonUS:`
+      titleNonUS: `
         <h1>Refer friends and earn <br/>{referralFlexReward}% of their Flex interest</h1>
       `,
       descNonUS: `
         <p>Tell your friends and family about us and <strong style="color:#F7B500;">get {referralFlexReward}% of their Flex interest</strong> for each person who signs up and deposits USD. Refer as many friends as you like, however you like, and <strong style="color:#F7B500;">grow your money together</strong>.</p>
       `,
       greeting: `<h1>Hello {name},</h1>`,
-      invite: 'Invite friends'
+      invite: 'Invite friends',
     },
     whatForYou: {
       title: 'Share the love and we’ll share the cash',
@@ -4993,30 +4891,30 @@ export default {
       //     desc: 'Every new customer we welcome helps fuel new features and products, giving you a range of investment options, rates, and tools to reach all your financial goals. '
       //   }
       // },
-      trialBonus: 'a ${kYCTrialAmount} trial bonus'
+      trialBonus: 'a ${kYCTrialAmount} trial bonus',
     },
     youBothWin: {
       title: 'Invite friends and you both win',
       data: {
         0: {
           title: 'GET THE BEST SERVICE',
-          desc: 'Loved by 1,000s of customers, with a <strong>4.7/5 rating on Trustpilot</strong> across 600+ reviews.'
+          desc: 'Loved by 1,000s of customers, with a <strong>4.7/5 rating on Trustpilot</strong> across 600+ reviews.',
         },
         1: {
           title: 'EARN OUR BEST RATES',
-          desc: 'Beat the banks and inflation with interest rates of up to 7% APR. Earn <strong>20x more</strong> than a CD.'
+          desc: 'Beat the banks and inflation with interest rates of up to 7% APR. Earn <strong>20x more</strong> than a CD.',
         },
         2: {
           title: 'MULTIPLY YOUR EARNINGS',
-          desc: 'Refer as many people as you like and <strong>get paid 10%</strong> on all their Flex earnings, capped at $1,000,000.'
+          desc: 'Refer as many people as you like and <strong>get paid 10%</strong> on all their Flex earnings, capped at $1,000,000.',
         },
         3: {
           title: 'PROFIT IN ANY MARKET',
-          desc: '<trong>Earn consistent returns</trong> despite the economic climate, backed by collateral that protects your funds.'
+          desc: '<trong>Earn consistent returns</trong> despite the economic climate, backed by collateral that protects your funds.',
         },
         4: {
           title: 'GET HELP WHEN YOU NEED IT',
-          desc: 'With offices around the world, we’re here to help day or night, regardless of your location.'
+          desc: 'With offices around the world, we’re here to help day or night, regardless of your location.',
         },
       }
     },
@@ -5056,12 +4954,12 @@ export default {
     },
     terms: {
       normal: '        <h3 class="semiBold">Terms and Conditions</h3>        <ol>          <li><p>To qualify for the ${referralReward} bonus, your referee must be a US citizen.</p></li>          <li><p>The bonus is paid when your referee signs up, passes KYC, and deposits USD.</p></li>          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>          <li><p>Referral interest is paid to you by MyConstant and does not deduct from your friends’ earned Flex interest.</p></li>          <li>            <p>The amount you earn depends on how your friends use the platform:</p>            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>          </li>          <li><p>You can invite as many friends as you like.</p></li>          <li><p>Your referral earnings are paid in USD, directly into your MyConstant account.</p></li>          <li><p>The maximum you can earn is $1,000,000.</p></li>          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won\'t earn interest but on the 365th one you will.</p></li>          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>          <li><p>MyConstant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>        </ol>        <p class="bold effective">Effective as of {date}</p>      ',
-      normalNonUS: `        <h3 class="semiBold">Terms and Conditions</h3>        <ol><li><p>Your reward is paid when your referee makes their first fiat deposit.</p></li>          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>          <li><p>Referral interest is paid to you by MyConstant and does not deduct from your friends’ earned Flex interest.</p></li>          <li>            <p>The amount you earn depends on how your friends use the platform:</p>            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>          </li>          <li><p>You can invite as many friends as you like.</p></li>          <li><p>Your referral earnings are paid in USD, directly into your MyConstant account.</p></li>          <li><p>The maximum you can earn is $1,000,000.</p></li>          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p></li>          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>          <li><p>MyConstant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>        </ol>        <p class="bold effective">Effective as of {date}</p>      `
+      normalNonUS: `        <h3 class="semiBold">Terms and Conditions</h3>        <ol><li><p>Your reward is paid when your referee makes their first fiat deposit.</p></li>          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>          <li><p>Referral interest is paid to you by MyConstant and does not deduct from your friends’ earned Flex interest.</p></li>          <li>            <p>The amount you earn depends on how your friends use the platform:</p>            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>          </li>          <li><p>You can invite as many friends as you like.</p></li>          <li><p>Your referral earnings are paid in USD, directly into your MyConstant account.</p></li>          <li><p>The maximum you can earn is $1,000,000.</p></li>          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p></li>          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>          <li><p>MyConstant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>        </ol>        <p class="bold effective">Effective as of {date}</p>      `,
     },
     materials: {
       title: 'We make referring easy',
-      desc: 'Check out <strong>our library of free resources</strong> to refer more friends and earn bigger rewards. Our blogs and downloadable materials make referring friends a piece of cake.'
-    }
+      desc: 'Check out <strong>our library of free resources</strong> to refer more friends and earn bigger rewards. Our blogs and downloadable materials make referring friends a piece of cake.',
+    },
   },
   static_page: {
     AMLPolicy: 'Anti-Money Laundering Agreement',
@@ -5382,16 +5280,16 @@ export default {
     securityDesc: 'View or change your security settings.',
     signout: 'Sign out',
     history: 'History',
-    btnInvestments: '<div class="textLeft"><small>Investments</small><div>Crypto-backed</div></div>',
+    btnInvestments: 'Investments',
     btnBuyBackInvestments: '<div class="textLeft"><small>Investments</small><div>Loan Originator</div></div>',
-    btnSecondaryMarket: '<div class="textLeft"><small>Secondary market</small><div>Crypto-backed</div></div>',
+    btnSecondaryMarket: 'Secondary market',
     btnLOSecondaryMarket: '<div class="textLeft"><small>Secondary market</small><div>Loan Originator</div></div>',
     btnLoans: 'Loans',
     btnLoansC2C: 'Crypto Credit',
     btnLoanSettings: '<div class="textLeft"><small>Loan</small><div>Settings</div></div>',
     btnSpending: 'Gift Cards',
     prizeWheel: '<span class="prizeWheel">Prize Wheel</span>',
-    cryptoBackedDesc: 'View Crypto-backed investments.',
+    cryptoBackedDesc: 'View instant access and fixed-term investments.',
     loanOriginatorDesc: 'View Loan Originator investments.',
     loanDesc: 'View active and settled loans.',
     secondaryMarketDesc: 'View bought and sold investments.',
@@ -5524,25 +5422,25 @@ export default {
         data: {
           0: {
             title: 'Deposit USD',
-            desc: '<p>When you deposit USD, you’ll receive the same amount divided by 1,000 in spins (rounded up to the nearest whole number) with the minimum amount from $1,000. For example, deposit $5,001 and you’ll receive 6 spins.</p>'
+            desc: '<p>When you deposit USD, you’ll receive the same amount divided by 1,000 in spins (rounded up to the nearest whole number) with the minimum amount from $1,000. For example, deposit $5,001 and you’ll receive 6 spins.</p>',
           },
           1: {
             title: 'Refer friends',
-            desc: '<p>For every friend you refer who passes KYC, you get 1 spin.</p>'
+            desc: '<p>For every friend you refer who passes KYC, you get 1 spin.</p>',
           },
           2: {
             title: 'Review us on the app store',
-            desc: '<p>Post a review for our app on the Apple or Google Play store for 3 spins (one time only).</p>'
+            desc: '<p>Post a review for our app on the Apple or Google Play store for 3 spins (one time only).</p>',
           },
           3: {
             title: 'Share about our event on social media',
-            desc: '<p>Click the social share buttons on our app to share our event on social media and you’ll get 1 spin. (Limited to one share per day).</p>'
+            desc: '<p>Click the social share buttons on our app to share our event on social media and you’ll get 1 spin. (Limited to one share per day).</p>',
           },
           4: {
             title: 'Trade membership points',
-            desc: '<p>You can trade 1,000 membership points for 1 spin. The more membership points you spend, the more spins you get, the more prizes you earn.</p>'
-          }
-        }
+            desc: '<p>You can trade 1,000 membership points for 1 spin. The more membership points you spend, the more spins you get, the more prizes you earn.</p>',
+          },
+        },
       },
       intro: {
         contentHtml: `
@@ -5556,9 +5454,9 @@ export default {
           1: 'Cash rewards of $1 or $10 paid instantly to your MyConstant account.',
           2: 'Double membership points and other rewards of 100-5,000 membership points.',
           3: 'Other prizes: Dog food on Feed & Give or extra spins.',
-        }
+        },
       },
-      finish:  {
+      finish: {
         contentHtml: `
           <h1 class="last">Thank you for spinning our birthday<br/> Prize Wheel!</h1>
           <p class="clearBottom">It’s been great reading your birthday wishes and we hope you’ve enjoyed your prizes.</p>
@@ -5585,8 +5483,8 @@ export default {
           `,
         },
         youtube: {
-          title: 'Interview with Chris Rossi.'
-        }
+          title: 'Interview with Chris Rossi.',
+        },
       },
       howToExchange: {
         title: 'How to exchange spins for prizes',
@@ -5594,17 +5492,17 @@ export default {
         data: {
           0: {
             title: 'Visit the app',
-            desc: '<p>Once you’ve earned spins, visit the Prize Wheel on the MyConstant app.</p>'
+            desc: '<p>Once you’ve earned spins, visit the Prize Wheel on the MyConstant app.</p>',
           },
           1: {
             title: 'Spin the Prize Wheel',
-            desc: '<p>Click Tap to Spin. When the Wheel stops, you’ll see your prize.</p>'
+            desc: '<p>Click Tap to Spin. When the Wheel stops, you’ll see your prize.</p>',
           },
           2: {
             title: 'Get your prize',
-            desc: '<p>The prize is delivered instantly to your MyConstant account.</p>'
+            desc: '<p>The prize is delivered instantly to your MyConstant account.</p>',
           },
-        }
+        },
       },
       learnMore: 'Learn more here',
       downloadApp: 'DOWNLOAD NOW',
@@ -5769,7 +5667,7 @@ export default {
       congratDesc: 'You\'ve earned all our badges. But the awards aren\'t over yet. Stay tuned for more badges and rewards that recognize your achievements.',
       earnDaily: 'Earned <strong>{amount} points</strong> for your Daily Login activity',
       claimedMessage: 'You have claimed your daily reward. Come back tomorrow for more!',
-      see_term: 'See Terms and Conditions'
+      see_term: 'See Terms and Conditions',
     },
     badge: {
       membership_gold: {
@@ -6000,7 +5898,7 @@ export default {
     "lb_interest_rate": "Interest rate",
     "lb_loan_term": "Loan term",
     "up_to": "Up to {value}%",
-    "from": "From {value}%",
+    'from': 'From {value}%',
   },
   productsAndBenefits: {
     title: 'Our products and benefits',
@@ -6008,8 +5906,8 @@ export default {
     invest: 'INVEST',
     borrow: 'BORROW',
     benefit: 'BENEFITS',
-    flex: 'Flex',
-    cryptoBacked: 'Crypto-backed',
+    flex: 'Instant access',
+    cryptoBacked: 'Fixed term',
     cryptoLend: 'Crypto Lend',
     loanOriginator: `Loan Originator<br /><span class="soon">(coming soon)</span>`,
     cryptoBackedLoan: 'Crypto-backed loans',
@@ -6021,7 +5919,7 @@ export default {
       title: `
         <h1>Our results so far</h1>
         <p>Below, you’ll find our historical performance statistics. These numbers represent investor and borrower activity to date. Use these figures to gain a deeper understanding of the risk and rewards of using our collateral-backed investment platform.</p>
-      `
+      `,
     },
     stats: {
       interest: 'Average interest earned',
@@ -6036,7 +5934,7 @@ export default {
       defaultRateDesc: 'This is the percentage of loans that were liquidated due to borrower default or collateral devaluation since launch. This figure is updated daily.',
       recoveryRate: 'Recovery rate',
       recoveryRateDesc: 'This is the percentage of loan funds recovered as a result of collateral liquidation due to borrower default or collateral devaluation. This figure is updated daily.',
-    }
+    },
   },
   giftCard: {
     title: 'Gift cards',
@@ -6053,7 +5951,7 @@ export default {
         1: 'Pay up to 3% less for your favorite brands',
         2: 'Instant payment through your MyConstant balance',
         3: 'Gift card code sent straight to your inbox',
-      }
+      },
     },
     form: {
       title: 'Where do you want to shop?',
@@ -6068,6 +5966,6 @@ export default {
       subtitle: 'Nice work, {name}! Your gift card is on its way to your inbox now. In the meantime, view your order details below.',
       note: 'If you have any queries regarding your order, please contact our Customer Services team on <a href="mailto://hello@myconstant.com">hello@myconstant.com</a>',
       newOrder: 'Place new order',
-    }
+    },
   }
 };

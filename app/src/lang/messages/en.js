@@ -1693,7 +1693,7 @@ export default {
   },
   ourPress: {
     title: 'Our <span style="color: #F9A00F">Press</span>',
-    desc: '<p>Our high-yield, collateral-backed investments have gotten a lot of press. Click <strong>View press</strong> below to find out what finance’s most respected publications think about us.</p>'
+    desc: '<p>Our high-yield, collateral-backed investments have gotten a lot of press. Click <strong>View press</strong> below to find out what finance’s most respected publications think about us.</p>',
   },
   testimonials: {
     title: 'Let’s get to know each other better',
@@ -1714,11 +1714,11 @@ export default {
         },
         '1': {
           title: 'Free withdrawals',
-          desc: 'Withdraw any amount in USD for free, straight to your bank account.'
+          desc: 'Withdraw any amount in USD for free, straight to your bank account.',
         },
         '2': {
           title: 'Flexible terms',
-          desc: 'Enjoy instant access to your funds or the choice of three fixed terms.'
+          desc: 'Enjoy instant access to your funds or the choice of three fixed terms.',
         },
         '3': {
           title: '24/7 customer support',
@@ -3274,7 +3274,7 @@ export default {
         desc: {
           '1': 'All lending backed by crypto',
           '2': 'Instant access or fixed term',
-          '3': '24/7 customer support'
+          '3': '24/7 customer support',
         }
       },
       alert: {
@@ -3479,11 +3479,11 @@ export default {
         },
         2: {
           title: '3. Start earning interest',
-          desc: 'You earn interest as soon as your funds reach us.'
+          desc: 'You earn interest as soon as your funds reach us.',
         },
         3: {
           title: '4. Withdraw or reinvest',
-          desc: 'Withdraw anytime (instant access) or at the end of your fixed term for free.'
+          desc: 'Withdraw anytime (instant access) or at the end of your fixed term for free.',
         }
       }
     }

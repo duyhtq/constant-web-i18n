@@ -749,7 +749,13 @@ export default {
       },
       invalidatePassword: 'Password not matched, please try again',
       labelOff: 'Turn on now?',
-      noteOff: '<p>Yikes – you’re not using Google 2FA.</p>            <p>Google 2FA uses your phone as well as your password to protect your account.</p>              <p>We strongly recommend you enable 2FA to protect your account from fraud, identity theft, and other abuse.</p>                <p>Enable 2FA now to double the security protection on your account.</p>',
+      noteOff: `
+          <p>Yikes – you’re not using Google 2FA.</p>
+          <p>Google 2FA uses your phone as well as your password to protect your account.</p>
+          <p>We strongly recommend you enable 2FA to protect your account from fraud, identity theft, and other abuse.</p>
+          <p>Enable 2FA now to double the security protection on your account.</p>
+          <p><a href="https://blog.myconstant.com/how-to-constant-2fa/" class="underline" target="_blank">Click here</a> to learn how to set up your 2FA, and to understand how it keeps you safe.</p>
+        `,
       qrScanModal: {
         step1: 'Step 1',
         description: 'Please scan this code with Google Authenticator or Authy, then enter the code sent to you.',
@@ -1006,7 +1012,8 @@ export default {
             payOffSuccess: 'Repayment made. Thanks!',
             payOffFailed: 'Repay failed',
             notEnoughConstantRepay: 'Your current balance is ${balance}. Please deposit ${requireAmount} to cover the amount due, then click repay again. ',
-            makeADeposit: 'Make a deposit'
+            makeADeposit: 'Make a deposit',
+            unableWithCollateral: 'Sorry, you’re unable to repay this loan with collateral. We may restrict repayment using collateral due to the loan amount, collateral type, or market conditions. This is to protect our ability to sell cryptocurrency at a price that covers investor commitment. Please repay using USD.',
           },
           pay: {
             messageConfirm: 'Are you sure you want to pay?',
@@ -2319,6 +2326,7 @@ export default {
         receiveAmountLabel: 'Choose USD or crypto you want to receive?',
         receiveAmountLabelDesc: 'We can pay your loan in USD or cryptocurrency. When choosing to receive your loan in cryptocurrency, you’re borrowing USD which we use to buy your chosen cryptocurrency. We search multiple exchanges for the best prices, and you might receive a little more or less cryptocurrency than the amount indicated below depending on the final price paid.',
         overCollateralCap: `We've reached our collateral limit on new loans against {symbol}. Please choose another cryptocurrency as collateral.`,
+        overBorrowAmount: 'Sorry, the maximum you can borrow in one order is ${max}. Please choose a smaller amount and try again. <a href="#landing-faqs">Why is there a maximum?</a>',
       },
       what: {
         title: 'Why borrow with us?',
@@ -3423,7 +3431,6 @@ export default {
               transactionError: ' (Canceled due to {error})',
             },
             insufficient_bank_account: '<p>Sorry, you appear to have insufficient funds in your linked bank account for this transfer. Please check the balance of your linked bank account and try again. If you think this is an error, please contact us on <a href="mailto:hello@myconstant.com" target="_blank" class="underline">hello@myconstant.com</a>.</p>',
-            plaid_reach_limit: '<p>Sorry, you appear to have insufficient funds in your linked bank account for this transfer. Please check the balance of your linked bank account and try again. If you think this is an error, please contact us on <a href="mailto:hello@myconstant.com" target="_blank" class="underline">hello@myconstant.com</a>.</p>',
           }
         },
         updateBalanceNoteInWorkingTime: 'Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We\'re working hard to reduce this time, so thanks for your patience.',

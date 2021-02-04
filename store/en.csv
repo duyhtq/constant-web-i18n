@@ -793,6 +793,7 @@
 %%%.me.proSaving.listApplications.itemMatched.due%%%,"Term ends"
 %%%.me.proSaving.listApplications.itemMatched.void%%%,"End your term early"
 %%%.me.proSaving.listApplications.itemMatched.dialog.void.messageConfirm%%%,"<p>To end your term early, you can sell all or part of your investment to another investor. Once sold, you get your principal back and 2% APR on elapsed term time, but will lose membership points earned on this investment. Selling normally takes around 24 hours.</p>"
+%%%.me.proSaving.listApplications.itemMatched.dialog.void.messageConfirmFullAmount%%%,"<p>To end your term early, you can sell your investment to another investor. Once sold, you get your principal of ${amount} back and 2% APR on elapsed term time, but you’ll lose any earned membership points on this investment. Selling normally takes around 24 hours.</p><p>Would you like to sell your investment?</p>"
 %%%.me.proSaving.listApplications.itemMatched.dialog.void.confirm%%%,"Yes"
 %%%.me.proSaving.listApplications.itemMatched.dialog.void.cancel%%%,"Go back"
 %%%.me.proSaving.listApplications.partialMatchesDesc%%%,"Some investments may be split into smaller amounts to fill multiple loan orders. The platform will keep trying to match you completely for the duration of your term."
@@ -2447,7 +2448,8 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.home1.lendingSection.form.text1%%%,"Set your own lending terms"
 %%%.home1.lendingSection.form.placeholder.amount%%%,"How much do you want to lend?"
 %%%.home1.lendingSection.form.maxTerm%%%,"Length of term"
-%%%.home1.lendingSection.form.text2%%%,"<p>Choose a term you like and as soon as Prime Trust, our custodian, receives your funds you’ll start earning interest. The longer you invest for the more interest you earn. If you’d like to end your term early, you can sell your investment in our <a href=""https://blog.myconstant.com/constant-secondary-market"" target=""_blank"" class=""underline"">secondary market</a>.</p>"
+%%%.home1.lendingSection.form.text2Promotion%%%,"Choose a term and as soon as our custodian receives your funds you’ll start earning interest. You earn {promotionRate}% APR on the first ${promotionAmount} and 6% thereafter. If you’d like to end your term early, you can sell your investment in our <a href=""https://blog.myconstant.com/constant-secondary-market"" target=""_blank"" class=""underline"">secondary market</a>."
+%%%.home1.lendingSection.form.text2%%%,"Choose a term you like and as soon as Prime Trust, our custodian, receives your funds you’ll start earning interest. The longer you invest for the more interest you earn. If you’d like to end your term early, you can sell your investment in our <a href=""https://blog.myconstant.com/constant-secondary-market"" target=""_blank"" class=""underline"">secondary market</a>."
 %%%.home1.lendingSection.form.btn2%%%,"to invest now"
 %%%.home1.lendingSection.form.tooltip.maxTerm%%%,"<p>Choose instant access to withdraw your funds at any time for free. Otherwise, pick a fixed term to get our best rates.</p>"
 %%%.home1.lendingSection.form.deposit%%%,"to deposit now"
@@ -2461,7 +2463,13 @@ Click confirm to start your term and receive your loan. Once your term begins yo
             <div class=""h1"">Instant access or fixed terms.</div>
             <p />
             <p>Invest in people and businesses around the world for a return of up to {rate}% APR. Withdraw anytime for free or invest in a fixed-term loan for the best rates. All lending is backed by cryptocurrency collateral. No fees.</p>
-"
+        "
+%%%.home1.lendingSection.intro.contentPromotion%%%,"
+            <p class=""topText"">Invest the way you want</p>
+            <h1 style=""color:#F5A623;"">Earn {promotionRate}% APR on your <br/>first 30-day investment.</h1>
+            <p>Triple your returns on your first fixed-term investment. Lend at least ${promotionAmount} for 30 days and you’ll earn {promotionRate}% APR<sup>*</sup> (up to 9x higher than a CD). All lending is backed by collateral which is sold if the borrower defaults. No fees. When your investment matures, withdraw or reinvest for free.</p>
+            <p class=""reference""><sup>*</sup> To qualify, you must invest within 30 days of passing KYC. The {promotionRate}% APR introductory rate applies to the first ${promotionAmount} of your investment only (you’ll earn our usual 6% APR rate on any remaining amount).</p>
+        "
 %%%.home1.lendingSection.intro.youtube.title%%%,"Why invest with MyConstant?"
 %%%.home1.lendingSection.intro.desc.1%%%,"All lending backed by crypto"
 %%%.home1.lendingSection.intro.desc.2%%%,"Instant access or fixed term"
@@ -3007,7 +3015,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
         "
 %%%.depositFiat.faqs.4.question%%%,"Are there any limits on deposits?"
 %%%.depositFiat.faqs.4.answer%%%,"
-          <p>Yes. We currently support Zelle for amounts under $2,000 and ACH transfers for <a href=""https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/"" class=""underline"" target=""_blank"">linked US accounts</a> up to $5,000. Wire transfers are unlimited.</p>
+          <p>Yes. We currently support Zelle for amounts under $2,000 and ACH transfers for <a href=""https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/"" class=""underline"" target=""_blank"">linked US accounts</a> up to $5,000. The maximum you can send via a linked US account is $50,000 per day. Wire transfers are unlimited.</p>
         "
 %%%.depositFiat.faqs.5.question%%%,"What’s the difference between a wire and an ACH bank transfer?"
 %%%.depositFiat.faqs.5.answer%%%,"
@@ -3282,7 +3290,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.affiliates.whyBecome.formula.6%%%,"of referee’s Flex interest"
 %%%.affiliates.whyBecome.formula.7%%%," "
 %%%.affiliates.whyBecome.formula.8%%%,"for your referee"
-%%%.affiliates.whyBecome.trialBonus%%%,"a ${kYCTrialAmount} trial bonus"
+%%%.affiliates.whyBecome.trialBonus%%%,"a ${kycTrialAmount} trial bonus"
 %%%.affiliates.theBestOpportunity.title%%%,"The best opportunity in the market"
 %%%.affiliates.theBestOpportunity.data.0.title%%%,"GIVE PEOPLE WHAT THEY LOVE"
 %%%.affiliates.theBestOpportunity.data.0.desc%%%,"We’re loved and trusted by 2,000s of customers with <strong>a Trustpilot score of 4.7/5</strong> over 600+ reviews. It’s an easy sell."
@@ -3303,7 +3311,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.affiliates.howItWorks.data.2.title%%%," "
 %%%.affiliates.howItWorks.data.2.desc%%%,"You get ${affiliateReward} paid instantly to your MyConstant account."
 %%%.affiliates.howItWorks.data.3.title%%%," "
-%%%.affiliates.howItWorks.data.3.desc%%%,"Your referee invests in Flex for 4% APY."
+%%%.affiliates.howItWorks.data.3.desc%%%,"Your referee invests in Flex for {flexRate}% APY."
 %%%.affiliates.howItWorks.data.4.title%%%," "
 %%%.affiliates.howItWorks.data.4.desc%%%,"You get 20% of their Flex earnings, paid every second."
 %%%.affiliates.howItWorks.desc%%%,"      <p>There are <strong>no limits</strong> to the number of people you can refer for the ${affiliateReward} bonus.</p>      <p>Your Flex earnings are capped at $1,000,000.</p>"
@@ -3516,12 +3524,12 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.yourReferral.whatForYou.formula.2%%%,"of your friends’ Flex interest"
 %%%.yourReferral.whatForYou.formula.3%%%," "
 %%%.yourReferral.whatForYou.formula.4%%%,"for your friend if they’re a US resident"
-%%%.yourReferral.whatForYou.trialBonus%%%,"a ${kYCTrialAmount} trial bonus"
+%%%.yourReferral.whatForYou.trialBonus%%%,"a ${kycTrialAmount} trial bonus"
 %%%.yourReferral.youBothWin.title%%%,"Invite friends and you both win"
 %%%.yourReferral.youBothWin.data.0.title%%%,"GET THE BEST SERVICE"
 %%%.yourReferral.youBothWin.data.0.desc%%%,"Loved by 1,000s of customers, with a <strong>4.7/5 rating on Trustpilot</strong> across 600+ reviews."
 %%%.yourReferral.youBothWin.data.1.title%%%,"EARN OUR BEST RATES"
-%%%.yourReferral.youBothWin.data.1.desc%%%,"Beat the banks and inflation with interest rates of up to 7% APR. Earn <strong>20x more</strong> than a CD."
+%%%.yourReferral.youBothWin.data.1.desc%%%,"Beat the banks and inflation with interest rates of up to {investRate}% APR. Earn <strong>20x more</strong> than a CD."
 %%%.yourReferral.youBothWin.data.2.title%%%,"MULTIPLY YOUR EARNINGS"
 %%%.yourReferral.youBothWin.data.2.desc%%%,"Refer as many people as you like and <strong>get paid 10%</strong> on all their Flex earnings, capped at $1,000,000."
 %%%.yourReferral.youBothWin.data.3.title%%%,"PROFIT IN ANY MARKET"
@@ -3536,7 +3544,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.yourReferral.howItWorks.data.2.title%%%," "
 %%%.yourReferral.howItWorks.data.2.desc%%%,"You get ${referralReward} paid instantly to your MyConstant account."
 %%%.yourReferral.howItWorks.data.3.title%%%," "
-%%%.yourReferral.howItWorks.data.3.desc%%%,"Your referee earns interest on a 30-day ${kYCTrialAmount} trial bonus."
+%%%.yourReferral.howItWorks.data.3.desc%%%,"Your referee earns interest on a {kycTrialPeriod}-day ${kycTrialAmount} trial bonus."
 %%%.yourReferral.howItWorks.data.4.title%%%," "
 %%%.yourReferral.howItWorks.data.4.desc%%%,"You get {referralFlexReward}% of their Flex earnings, compounded and paid every second."
 %%%.yourReferral.howItWorks.desc%%%,"      <p>There are <strong>no limits</strong> to the number of people you can refer for the ${referralReward} bonus.</p>      <p>Your Flex earnings are capped at $1,000,000.</p>"
@@ -3850,24 +3858,21 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.landingPage.whyPeopleLoveUs.title%%%,"Why People Love Us"
 %%%.landingPage.trialBonus.title%%%,"        <p class=""header"">See what it’s like to grow ${kYCTrialAmount} by the second.</p>        <p>Today when you sign up and verify your ID, we’ll deposit ${kYCTrialAmount} into your account to earn 4% APY for 30 days. At the end of 30 days, we’ll take the ${kYCTrialAmount} back but you can keep the interest and use it how you want.</p>        <p>Use your earnings to grow at {rate}% or more with our other investment tools.</p>        <p>You can start investing from just $50.</p>        <p>This offer is only available for a limited time.</p>      "
 %%%.landingPage.promotionGeneral.title%%%,"
-        <p class=""header"">Give us a try with a free <br/>${kYCTrialAmount} trial bonus</p>
-      "
-%%%.landingPage.promotionGeneral.titleMobile%%%,"
-        <p class=""header"">Give us a try with a <br/><span class=""hightlight"">free ${kYCTrialAmount}</span> trial bonus</p>
+        <p class=""header"">Fancy earning {flexRate}% APY on a <br/><span class=""hightlight"">free ${kycTrialAmount} investment?</span></p>
       "
 %%%.landingPage.promotionGeneral.desc%%%,"
-        <p>Experience P2P lending without committing your own money. Sign up and verify your ID (pass KYC) now and enjoy an inflation-beating 4% APY on a ${kYCTrialAmount} trial bonus. After 30 days, we reclaim the bonus but you keep the interest.</p>
-        <p>This offer is for a limited time and only available to US citizens.</p>
+        <p>Earn while you learn with collateral-backed P2P lending. Sign up, verify your ID, and enjoy {flexRate}% APY on a ${kycTrialAmount} free bonus. After {kycTrialPeriod} days of earning free interest, we reclaim the bonus but you keep the profits. See how much you could earn – start your free trial today.</p>
+        <p class=""font-italic"">This offer is for a limited time and only available to US citizens.</p>
       "
 %%%.landingPage.promotionGeneral.howItWorks.title%%%,"How It Works"
 %%%.landingPage.promotionGeneral.howItWorks.data.0.title%%%,"Step 1"
 %%%.landingPage.promotionGeneral.howItWorks.data.0.desc%%%,"            <p>Sign up for your free MyConstant account.</p>            "
 %%%.landingPage.promotionGeneral.howItWorks.data.1.title%%%,"Step 2"
-%%%.landingPage.promotionGeneral.howItWorks.data.1.desc%%%,"            <p>We deposit your free ${kYCTrialAmount} bonus to earn 4% APY over 30 days.</p>            "
+%%%.landingPage.promotionGeneral.howItWorks.data.1.desc%%%,"            <p>We deposit your free ${kycTrialAmount} bonus to earn {flexRate}% APY over {kycTrialPeriod} days.</p>            "
 %%%.landingPage.promotionGeneral.howItWorks.data.2.title%%%,"Step 3"
 %%%.landingPage.promotionGeneral.howItWorks.data.2.desc%%%,"            <p>Watch your money grow, compounded and paid every second.</p>            "
 %%%.landingPage.promotionGeneral.howItWorks.data.3.title%%%,"Step 4"
-%%%.landingPage.promotionGeneral.howItWorks.data.3.desc%%%,"            <p>After 30 days, we reclaim the bonus but you keep the interest.</p>            "
+%%%.landingPage.promotionGeneral.howItWorks.data.3.desc%%%,"            <p>After {kycTrialPeriod} days, we reclaim the bonus but you keep the interest.</p>            "
 %%%.landingPage.promotionGeneral.howItWorks.data.4.title%%%,"Step 5"
 %%%.landingPage.promotionGeneral.howItWorks.data.4.desc%%%,"            <p>Reinvest your earnings or withdraw to your bank account.</p>            "
 %%%.landingPage.promotionGeneral.howWeProtectYou.title%%%,"How We Protect You"
@@ -3983,44 +3988,6 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.landingPage.promotionFlex.howWeProtectYou.title%%%,"How We Protect You"
 %%%.landingPage.promotionFlex.howWeProtectYou.data.0.desc%%%,"            <p>Prime Trust is the accredited custodian of our USD reserve. When you deposit, your unloaned funds are stored across multiple bank accounts <strong>insured to a total of $130,000,000</strong>. </p>            "
 %%%.landingPage.promotionFlex.howWeProtectYou.data.1.desc%%%,"            <p>When you invest in Flex, your money supplies loans to collateralized borrowers and liquidity to decentralized exchanges. <strong>Flex is a multi-market investment product</strong> that spreads risk across multiple platforms to offer you a consistent return and the convenience of unlimited free withdrawals.</p>            "
-%%%.landingPage.faqs.data.0.question%%%,"What is MyConstant?"
-%%%.landingPage.faqs.data.0.answer%%%,"
-            <p>MyConstant is a multi-market P2P investment platform that pays up to 11% APR. With us, you can invest in people and businesses around the world, without fees or limits, with all lending backed by collateral or loan originator’s buy-back guarantee. We have a range of easy and accessible investment products for every risk appetite and goal, and provide you with the learning resources to achieve those goals, fast.</p>
-            "
-%%%.landingPage.faqs.data.1.question%%%,"What is the ${kYCTrialAmount} trial bonus?"
-%%%.landingPage.faqs.data.1.answer%%%,"
-            <p>The ${kYCTrialAmount} trial bonus is a way to experience investing on our platform without committing any of your own money. Instead, we credit your Flex account with a ${kYCTrialAmount} bonus that you can watch grow at 4% APY, compounded and paid every second. Then, at the end of 30 days, we take back the ${kYCTrialAmount} and you keep the interest, which you can then reinvest with some of your own money or withdraw to your bank account.</p>
-            "
-%%%.landingPage.faqs.data.2.question%%%,"Why are you offering this bonus?"
-%%%.landingPage.faqs.data.2.answer%%%,"
-            <p>We understand that investing can be a little daunting at first – especially if you’ve never done it before. The bonus therefore gives you a taste for investing with us and will hopefully inspire you to continue investing with us for even bigger returns.</p>
-            "
-%%%.landingPage.faqs.data.3.question%%%,"How do I get the bonus?"
-%%%.landingPage.faqs.data.3.answer%%%,"
-            <p>To qualify for the bonus, you must be a US citizen. Then, you simply sign up for a free MyConstant account, verify your ID (KYC), and your ${kYCTrialAmount} bonus will be paid into your account immediately. You won’t be able to withdraw the bonus, and it’ll be debited from your account after 30 days, but you keep all the interest.</p>
-            "
-%%%.landingPage.faqs.data.4.question%%%,"How do I verify my ID?"
-%%%.landingPage.faqs.data.4.answer%%%,"
-            <p>We have to verify your ID to comply with US Anti-Money Laundering (AML) and Know Your Customer (KYC) regulations.</p>
-            <p>Once you’ve created an account, you’ll be asked to submit address and ID proof, so we can verify your ID and approve your account.</p>
-            <p>KYC verification is usually very fast, assuming you submit all relevant details and they’re clear, legible, and valid.</p>
-            <p>Here’s a tip sheet: <a href=""https://blog.myconstant.com/how-to-verify-your-id-on-constant-kyc/"" class=""underline"" target=""_blank"">How to verify your ID on MyConstant</a>.</p>
-            "
-%%%.landingPage.faqs.data.5.question%%%,"Can I withdraw the ${kYCTrialAmount}?"
-%%%.landingPage.faqs.data.5.answer%%%,"
-            <p>No, the ${kYCTrialAmount} is locked into your Flex account for the 30 days. After 30 days, we take back the ${kYCTrialAmount} but you keep the interest.</p>
-            "
-%%%.landingPage.faqs.data.6.question%%%,"What happens after the trial?"
-%%%.landingPage.faqs.data.6.answer%%%,"
-               <p>Once we’ve taken back the ${kYCTrialAmount}, you keep the interest. It’s up to you what you’d like to do next. You can keep your interest in Flex earning 4% APY with anytime free withdrawals, or you can add some of your own money and reinvest in a crypto-backed loan for {rate}% APR (minimum investment is $50). You can also just withdraw it to your bank account. The choice is yours!</p>
-               <p>
-                <strong>Important note:</strong> You must deposit, withdraw, or invest within 60 days of receiving your free interest otherwise it will expire.
-               </p>
-            "
-%%%.landingPage.faqs.data.7.question%%%,"How do I withdraw my interest?"
-%%%.landingPage.faqs.data.7.answer%%%,"
-            <p>After the 30 days is up, you can withdraw the interest on the ${kYCTrialAmount} bonus. To do so, head to your Accounts page and click Withdraw to fiat. You can only withdraw in fiat and not in a digital currency such as a stablecoin.</p>
-            "
 %%%.form.required%%%,"Required"
 %%%.form.invalidEmail%%%,"Invalid Email Address"
 %%%.form.unSupportFile%%%,"Unsupported Format"

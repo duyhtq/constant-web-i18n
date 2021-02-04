@@ -1089,6 +1089,7 @@
                     "dialog": {
                         "void": {
                             "messageConfirm": "%%%.me.proSaving.listApplications.itemMatched.dialog.void.messageConfirm%%%",
+                            "messageConfirmFullAmount": "%%%.me.proSaving.listApplications.itemMatched.dialog.void.messageConfirmFullAmount%%%",
                             "confirm": "%%%.me.proSaving.listApplications.itemMatched.dialog.void.confirm%%%",
                             "cancel": "%%%.me.proSaving.listApplications.itemMatched.dialog.void.cancel%%%"
                         }
@@ -3285,6 +3286,7 @@
                     "amount": "%%%.home1.lendingSection.form.placeholder.amount%%%"
                 },
                 "maxTerm": "%%%.home1.lendingSection.form.maxTerm%%%",
+                "text2Promotion": "%%%.home1.lendingSection.form.text2Promotion%%%",
                 "text2": "%%%.home1.lendingSection.form.text2%%%",
                 "btn2": "%%%.home1.lendingSection.form.btn2%%%",
                 "tooltip": {
@@ -3297,6 +3299,7 @@
             },
             "intro": {
                 "content": "%%%.home1.lendingSection.intro.content%%%",
+                "contentPromotion": "%%%.home1.lendingSection.intro.contentPromotion%%%",
                 "youtube": {
                     "title": "%%%.home1.lendingSection.intro.youtube.title%%%"
                 },
@@ -5182,7 +5185,6 @@
         },
         "promotionGeneral": {
             "title": "%%%.landingPage.promotionGeneral.title%%%",
-            "titleMobile": "%%%.landingPage.promotionGeneral.titleMobile%%%",
             "desc": "%%%.landingPage.promotionGeneral.desc%%%",
             "howItWorks": {
                 "title": "%%%.landingPage.promotionGeneral.howItWorks.title%%%",
@@ -5380,42 +5382,6 @@
                     "1": {
                         "desc": "%%%.landingPage.promotionFlex.howWeProtectYou.data.1.desc%%%"
                     }
-                }
-            }
-        },
-        "faqs": {
-            "data": {
-                "0": {
-                    "question": "%%%.landingPage.faqs.data.0.question%%%",
-                    "answer": "%%%.landingPage.faqs.data.0.answer%%%"
-                },
-                "1": {
-                    "question": "%%%.landingPage.faqs.data.1.question%%%",
-                    "answer": "%%%.landingPage.faqs.data.1.answer%%%"
-                },
-                "2": {
-                    "question": "%%%.landingPage.faqs.data.2.question%%%",
-                    "answer": "%%%.landingPage.faqs.data.2.answer%%%"
-                },
-                "3": {
-                    "question": "%%%.landingPage.faqs.data.3.question%%%",
-                    "answer": "%%%.landingPage.faqs.data.3.answer%%%"
-                },
-                "4": {
-                    "question": "%%%.landingPage.faqs.data.4.question%%%",
-                    "answer": "%%%.landingPage.faqs.data.4.answer%%%"
-                },
-                "5": {
-                    "question": "%%%.landingPage.faqs.data.5.question%%%",
-                    "answer": "%%%.landingPage.faqs.data.5.answer%%%"
-                },
-                "6": {
-                    "question": "%%%.landingPage.faqs.data.6.question%%%",
-                    "answer": "%%%.landingPage.faqs.data.6.answer%%%"
-                },
-                "7": {
-                    "question": "%%%.landingPage.faqs.data.7.question%%%",
-                    "answer": "%%%.landingPage.faqs.data.7.answer%%%"
                 }
             }
         }

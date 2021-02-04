@@ -3402,7 +3402,7 @@
                             "investNote": "\n                <p>ACH deposits take 3-5 business days to clear (not including weekends) and your funds will be available for withdrawal 7 days <strong>after</strong> the transaction clears.</p>\n                <p>To transfer the remaining ${unsuccessfulAmount} for your deposit, <a href=\"https://www.myconstant.com/flex\" class=\"underline\">create another deposit order</a>.</p>\n              ",
                             "transactionSuccess": " (Successful)",
                             "transactionError": " (Failed due to {error})",
-                            "plaidReachLimit": "Sorry, the maximum you can deposit via ACH is {remainAmount}. To deposit a larger amount, please choose wire. Otherwise, your daily ACH deposit limit of $50,000 will reset at {resetTime}."
+                            "plaidReachLimit": "Sorry, the maximum you can deposit via ACH is ${remainAmount}. To deposit a larger amount, please choose wire. Otherwise, your daily ACH deposit limit of $50,000 will reset at {resetTime}."
                         },
                         "plaidSplitResultInvestment": {
                             "investNoteSuccess": "<p>The transfer(s) for your investment(s) were processed successfully.</p>",

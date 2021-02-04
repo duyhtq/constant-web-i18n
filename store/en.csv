@@ -2590,7 +2590,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
               "
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.transactionSuccess%%%," (Successful)"
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.transactionError%%%," (Failed due to {error})"
-%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.plaidReachLimit%%%,"Sorry, the maximum you can deposit via ACH is {remainAmount}. To deposit a larger amount, please choose wire. Otherwise, your daily ACH deposit limit of $50,000 will reset at {resetTime}."
+%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.plaidReachLimit%%%,"Sorry, the maximum you can deposit via ACH is ${remainAmount}. To deposit a larger amount, please choose wire. Otherwise, your daily ACH deposit limit of $50,000 will reset at {resetTime}."
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.investNoteSuccess%%%,"<p>The transfer(s) for your investment(s) were processed successfully.</p>"
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.splitNoteFail%%%,"<p>Sorry, we couldn’t process all the transfers for your investments. Here’s a summary:</p>"
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.investNote%%%,"<p>Please note ACH transfers take 3-5 business days to clear and your investments will start as soon as we receive your funds.</p>"

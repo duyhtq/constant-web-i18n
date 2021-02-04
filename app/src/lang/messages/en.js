@@ -3425,7 +3425,7 @@ export default {
               `,
               transactionSuccess: ' (Successful)',
               transactionError: ' (Failed due to {error})',
-              plaidReachLimit: 'Sorry, the maximum you can deposit via ACH is {remainAmount}. To deposit a larger amount, please choose wire. Otherwise, your daily ACH deposit limit of $50,000 will reset at {resetTime}.',
+              plaidReachLimit: 'Sorry, the maximum you can deposit via ACH is ${remainAmount}. To deposit a larger amount, please choose wire. Otherwise, your daily ACH deposit limit of $50,000 will reset at {resetTime}.',
             },
             plaidSplitResultInvestment: {
               investNoteSuccess: '<p>The transfer(s) for your investment(s) were processed successfully.</p>',

@@ -802,7 +802,7 @@
             },
             "invalidatePassword": "Password not matched, please try again",
             "labelOff": "Turn on now?",
-            "noteOff": "<p>Yikes – you’re not using Google 2FA.</p>            <p>Google 2FA uses your phone as well as your password to protect your account.</p>              <p>We strongly recommend you enable 2FA to protect your account from fraud, identity theft, and other abuse.</p>                <p>Enable 2FA now to double the security protection on your account.</p>",
+            "noteOff": "\n          <p>Yikes – you’re not using Google 2FA.</p>\n          <p>Google 2FA uses your phone as well as your password to protect your account.</p>\n          <p>We strongly recommend you enable 2FA to protect your account from fraud, identity theft, and other abuse.</p>\n          <p>Enable 2FA now to double the security protection on your account.</p>\n          <p><a href=\"https://blog.myconstant.com/how-to-constant-2fa/\" class=\"underline\" target=\"_blank\">Click here</a> to learn how to set up your 2FA, and to understand how it keeps you safe.</p>\n        ",
             "qrScanModal": {
                 "step1": "Step 1",
                 "description": "Please scan this code with Google Authenticator or Authy, then enter the code sent to you.",
@@ -1059,7 +1059,8 @@
                         "payOffSuccess": "Repayment made. Thanks!",
                         "payOffFailed": "Repay failed",
                         "notEnoughConstantRepay": "Your current balance is ${balance}. Please deposit ${requireAmount} to cover the amount due, then click repay again. ",
-                        "makeADeposit": "Make a deposit"
+                        "makeADeposit": "Make a deposit",
+                        "unableWithCollateral": "Sorry, you’re unable to repay this loan with collateral. We may restrict repayment using collateral due to the loan amount, collateral type, or market conditions. This is to protect our ability to sell cryptocurrency at a price that covers investor commitment. Please repay using USD."
                     },
                     "pay": {
                         "messageConfirm": "Are you sure you want to pay?",
@@ -1844,89 +1845,89 @@
                 "viewAll": "View us on TrustPilot",
                 "readMore": "Read more",
                 "reviews": "Reviews",
-                "numReview": "708",
+                "numReview": "779",
                 "excellent": "Excellent",
                 "points": "4.7/5",
                 "data": {
                     "0": {
                         "star": "5",
-                        "title": "Skeptical at first but LOVE it now",
-                        "desc": "I had some minor issues regarding the transfer of funds but those were worked out a while ago. The returns are very good, and my experience has been very predictable and pleasant.",
-                        "date": "Dec 29, 2020",
-                        "auth": "John Graham",
-                        "link": "https://www.trustpilot.com/reviews/5feaacc1755dc1032c0602d9"
+                        "title": "It's a pretty cool app",
+                        "desc": "First time investing into anything. Looking forward to seeing these numbers go up.",
+                        "date": "Feb 3, 2021",
+                        "auth": "Candys Williams",
+                        "link": "https://www.trustpilot.com/reviews/601a0042679d9705c8624ab8"
                     },
                     "1": {
                         "star": "5",
-                        "title": "Great Communication, Great Returns!",
-                        "desc": "Great communication from the helpdesk team and easy to understand with competitive rates! Would definitely recommend and continue to use to build my wealth.",
-                        "date": "Dec 28, 2020",
-                        "auth": "John Rickgarn",
-                        "link": "https://www.trustpilot.com/reviews/5fe981fd755dc107e0d048ed"
+                        "title": "Better than leaving money in bank",
+                        "desc": "This is so easy to work with and it is very reliable because of the way my money is backed. I 10/10 recommend.",
+                        "date": "Feb 3, 2021",
+                        "auth": "Rachel Wood",
+                        "link": "https://www.trustpilot.com/reviews/6019ebce679d9701d081383e"
                     },
                     "2": {
                         "star": "5",
-                        "title": "Great place for investment",
-                        "desc": "They give you much more returns than any other traditional bank. As many of us are using it and everyday many are joining, it is quite trustworthy. Depositing and withdrawing money is pretty smooth and fast. Thanks for your service.",
-                        "date": "Dec 26, 2020",
-                        "auth": "Abhisek Saha",
-                        "link": "https://www.trustpilot.com/reviews/5fe666c8755dc107e0cec173"
+                        "title": "Great Experience",
+                        "desc": "A great new way to grow your money. Different investment options are available and everything is transparent. You can see your interest in real time. Easy to transfer funds from bank and it is available to invest immediately.",
+                        "date": "Feb 1, 2021",
+                        "auth": "AG",
+                        "link": "https://www.trustpilot.com/reviews/601607de679d9701d07e0c79"
                     },
                     "3": {
                         "star": "5",
-                        "title": "I love this app",
-                        "desc": "I was skeptical at first but once I saw the money was growing I started to invest more money, especially they start with their own money to give you the head start on the great way to earn a quality money. Thank you MyConstant.",
-                        "date": "Dec 23, 2020",
-                        "auth": "Dee Rophael",
-                        "link": "https://www.trustpilot.com/reviews/5fe2d4c2755dc1032c00f687"
+                        "title": "Great Investing App",
+                        "desc": "MyConstant has come a long way and is a great place to earn a nice return on your investment. The customer support is there for you if you hit a snag. I'd recommend them to anyone with a bit of tech knowledge.",
+                        "date": "Feb 1, 2021",
+                        "auth": "Daprice",
+                        "link": "https://www.trustpilot.com/reviews/6015dd10679d9705c85f0a45"
                     },
                     "4": {
                         "star": "5",
-                        "title": "New to it but so far so good",
-                        "desc": "So far seems like a great place, fabulous sign up bonus along with achievement badges even once the bonus runs out to keep giving you rewards.",
-                        "date": "Dec 18, 2020",
-                        "auth": "Olivia Conrad",
+                        "title": "Great platform",
+                        "desc": "Great alternative to stagnant interest earning checking/savings account. Been using MyConstant for around a year with no complaints.",
+                        "date": "Feb 1, 2021",
+                        "auth": "Aronn Boldridge",
                         "link": "https://www.trustpilot.com/reviews/5fdc30b0755dc107e0c71043"
                     },
                     "5": {
                         "star": "5",
-                        "title": "Stellar CS and great interest rates",
-                        "desc": "The mobile app is constantly updated and provides a clear clean interface. I am also very pleased with their competitive interest baring rates and will continue to reinvest and invest more money into their platform!",
-                        "date": "Dec 16, 2020",
-                        "auth": "Fubag",
-                        "link": "https://www.trustpilot.com/reviews/5fd971ee755dc107e0c4877d"
+                        "title": "Best platform for crypto borrow-lending",
+                        "desc": "I choose My Constant looking for a place to invest my crypto and I'm very satisfied with the platform: easy to use, best interest in the market and very reliable. I personally using it for crypto lending but the borrow is also a great.",
+                        "date": "Jan 31, 2021",
+                        "auth": "Limber Lopez",
+                        "link": "https://www.trustpilot.com/reviews/60144091679d9701d07ce0fa"
                     },
                     "6": {
                         "star": "5",
-                        "title": "With MyConstant for almost a year",
-                        "desc": "I was initially apprehensive, but have always earned the return on my money promised. When I've had questions they were answered promptly. The few times I've had problems, they were resolved quickly and cheerfully.",
-                        "date": "Dec 13, 2020",
-                        "auth": "Dan Nechodom",
-                        "link": "https://www.trustpilot.com/reviews/5fd5539f755dc10b4820e37a"
+                        "title": "Great App",
+                        "desc": "I love this app and everything you can do with it. You make money easily and it’s fun to. They have games were you can win money and other things.",
+                        "date": "Jan 31, 2021",
+                        "auth": "Amy Hudson",
+                        "link": "https://www.trustpilot.com/reviews/60135756679d9705c85d1ab3"
                     },
                     "7": {
                         "star": "5",
-                        "title": "Great app",
-                        "desc": "It gives you a trial of $2,000 for a while to watch it grow. I put my own $120 in and I make 1 cent a day. It’s a 4% Flex account, but they have crypto investing and many things to do. All easy to use and learn.",
-                        "date": "Dec 14, 2020",
-                        "auth": "Sal",
-                        "link": "https://www.trustpilot.com/reviews/5fd524fc755dc107e0c11569"
+                        "title": "This app is amazing",
+                        "desc": "I have gained money using there free money they give you when you first sign up...and its going wonderful I can't wait to see what else is in store for me...",
+                        "date": "Jan 30, 2021",
+                        "auth": "Crystal",
+                        "link": "https://www.trustpilot.com/reviews/60134918679d9705c85d13fd"
                     },
                     "8": {
                         "star": "5",
-                        "title": "A good way to beat inflation",
-                        "desc": "I researched this company hard prior to trusting them with my money. It all seemed too good to be true. However, after earning 4% interest in their Flex account plus 6% on crypto-backed investments with them, I now am sure that they are a solid company.",
-                        "date": "Dec 11, 2020",
-                        "auth": "Sam U",
-                        "link": "https://www.trustpilot.com/reviews/5fd3a191755dc10b481f7a7f"
+                        "title": "Great risk-free investment",
+                        "desc": "MyConstant has really changed the way I think of investment. Usually it comes with huge risk, but not here. This is a must have got anyone who wants a non traditional way to save and invest 110% risk free!",
+                        "date": "Jan 26, 2021",
+                        "auth": "Casey Shafer",
+                        "link": "https://www.trustpilot.com/reviews/600f8a48679d97040c51445c"
                     },
                     "9": {
                         "star": "5",
-                        "title": "Love the bonuses!",
-                        "desc": "Awesome app! No bugs, $2000 bonus, killer referall bonuses, badge system is fun and good way to track progression, nice interest on investments, variety of products!",
-                        "date": "Dec 11, 2020",
-                        "auth": "Sean Kilcourse",
-                        "link": "https://www.trustpilot.com/reviews/5fd396ae755dc107e0bfb7e8"
+                        "title": "It’s a good alternative",
+                        "desc": "It’s a good alternative to put your savings in no interest savings account. You don’t have to think too much about it like if you invest in stock market. They gave out pretty good bonus as well. I would recommend to use it.",
+                        "date": "Jan 25, 2020",
+                        "auth": "Timothy Wong",
+                        "link": "https://www.trustpilot.com/reviews/600db5f1755dc109e8e460b9"
                     }
                 }
             },
@@ -2354,7 +2355,8 @@
                 "dayLoan": "{term}-day loans",
                 "receiveAmountLabel": "Do you want your loan in USD or cryptocurrency?",
                 "receiveAmountLabelDesc": "We can pay your loan in USD or cryptocurrency. When choosing to receive your loan in cryptocurrency, you’re borrowing USD which we use to buy your chosen cryptocurrency. We search multiple exchanges for the best prices, and you might receive a little more or less cryptocurrency than the amount indicated below depending on the final price paid.",
-                "overCollateralCap": "We've reached our collateral limit on new loans against {symbol}. Please choose another cryptocurrency as collateral."
+                "overCollateralCap": "We've reached our collateral limit on new loans against {symbol}. Please choose another cryptocurrency as collateral.",
+                "overBorrowAmount": "Sorry, the maximum you can borrow in one order is ${max}. Please choose a smaller amount and try again. <a href=\"#landing-faqs\">Why is there a maximum?</a>"
             },
             "what": {
                 "title": "Why borrow with us?",
@@ -3410,8 +3412,7 @@
                             "transactionSuccess": "(Successful)",
                             "transactionError": " (Canceled due to {error})"
                         },
-                        "insufficient_bank_account": "<p>Sorry, you appear to have insufficient funds in your linked bank account for this transfer. Please check the balance of your linked bank account and try again. If you think this is an error, please contact us on <a href=\"mailto:hello@myconstant.com\" target=\"_blank\" class=\"underline\">hello@myconstant.com</a>.</p>",
-                        "plaid_reach_limit": "<p>Sorry, you appear to have insufficient funds in your linked bank account for this transfer. Please check the balance of your linked bank account and try again. If you think this is an error, please contact us on <a href=\"mailto:hello@myconstant.com\" target=\"_blank\" class=\"underline\">hello@myconstant.com</a>.</p>"
+                        "insufficient_bank_account": "<p>Sorry, you appear to have insufficient funds in your linked bank account for this transfer. Please check the balance of your linked bank account and try again. If you think this is an error, please contact us on <a href=\"mailto:hello@myconstant.com\" target=\"_blank\" class=\"underline\">hello@myconstant.com</a>.</p>"
                     }
                 },
                 "updateBalanceNoteInWorkingTime": "Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience.",

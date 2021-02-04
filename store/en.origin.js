@@ -1059,7 +1059,8 @@
                         "payOffSuccess": "%%%.me.proSaving.listApplications.dialog.payOff.payOffSuccess%%%",
                         "payOffFailed": "%%%.me.proSaving.listApplications.dialog.payOff.payOffFailed%%%",
                         "notEnoughConstantRepay": "%%%.me.proSaving.listApplications.dialog.payOff.notEnoughConstantRepay%%%",
-                        "makeADeposit": "%%%.me.proSaving.listApplications.dialog.payOff.makeADeposit%%%"
+                        "makeADeposit": "%%%.me.proSaving.listApplications.dialog.payOff.makeADeposit%%%",
+                        "unableWithCollateral": "%%%.me.proSaving.listApplications.dialog.payOff.unableWithCollateral%%%"
                     },
                     "pay": {
                         "messageConfirm": "%%%.me.proSaving.listApplications.dialog.pay.messageConfirm%%%",
@@ -2354,7 +2355,8 @@
                 "dayLoan": "%%%.home.constantLoan.exchange.dayLoan%%%",
                 "receiveAmountLabel": "%%%.home.constantLoan.exchange.receiveAmountLabel%%%",
                 "receiveAmountLabelDesc": "%%%.home.constantLoan.exchange.receiveAmountLabelDesc%%%",
-                "overCollateralCap": "%%%.home.constantLoan.exchange.overCollateralCap%%%"
+                "overCollateralCap": "%%%.home.constantLoan.exchange.overCollateralCap%%%",
+                "overBorrowAmount": "%%%.home.constantLoan.exchange.overBorrowAmount%%%"
             },
             "what": {
                 "title": "%%%.home.constantLoan.what.title%%%",
@@ -3410,8 +3412,7 @@
                             "transactionSuccess": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.transactionSuccess%%%",
                             "transactionError": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.transactionError%%%"
                         },
-                        "insufficient_bank_account": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.insufficient_bank_account%%%",
-                        "plaid_reach_limit": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaid_reach_limit%%%"
+                        "insufficient_bank_account": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.insufficient_bank_account%%%"
                     }
                 },
                 "updateBalanceNoteInWorkingTime": "%%%.home1.lendingSection.confirm.updateBalanceNoteInWorkingTime%%%",

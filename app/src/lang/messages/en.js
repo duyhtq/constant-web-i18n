@@ -1042,6 +1042,7 @@ export default {
           dialog: {
             void: {
               messageConfirm: '<p>To end your term early, you can sell all or part of your investment to another investor. Once sold, you get your principal back and 2% APR on elapsed term time, but will lose membership points earned on this investment. Selling normally takes around 24 hours.</p>',
+              messageConfirmFullAmount: '<p>To end your term early, you can sell your investment to another investor. Once sold, you get your principal of ${amount} back and 2% APR on elapsed term time, but you’ll lose any earned membership points on this investment. Selling normally takes around 24 hours.</p><p>Would you like to sell your investment?</p>',
               confirm: 'Yes',
               cancel: 'Go back'
             }
@@ -3259,7 +3260,8 @@ export default {
         text1: 'Set your own lending terms',
         placeholder: { amount: 'How much do you want to lend?' },
         maxTerm: 'Length of term',
-        text2: '<p>Choose a term you like and as soon as Prime Trust, our custodian, receives your funds you’ll start earning interest. The longer you invest for the more interest you earn. If you’d like to end your term early, you can sell your investment in our <a href="https://blog.myconstant.com/constant-secondary-market" target="_blank" class="underline">secondary market</a>.</p>',
+        text2Promotion: 'Choose a term and as soon as our custodian receives your funds you’ll start earning interest. You earn {promotionRate}% APR on the first ${promotionAmount} and 6% thereafter. If you’d like to end your term early, you can sell your investment in our <a href="https://blog.myconstant.com/constant-secondary-market" target="_blank" class="underline">secondary market</a>.',
+        text2: 'Choose a term you like and as soon as Prime Trust, our custodian, receives your funds you’ll start earning interest. The longer you invest for the more interest you earn. If you’d like to end your term early, you can sell your investment in our <a href="https://blog.myconstant.com/constant-secondary-market" target="_blank" class="underline">secondary market</a>.',
         btn2: 'to invest now',
         tooltip: {
           maxTerm: '<p>Choose instant access to withdraw your funds at any time for free. Otherwise, pick a fixed term to get our best rates.</p>',
@@ -3277,7 +3279,13 @@ export default {
             <div class="h1">Instant access or fixed terms.</div>
             <p />
             <p>Invest in people and businesses around the world for a return of up to {rate}% APR. Withdraw anytime for free or invest in a fixed-term loan for the best rates. All lending is backed by cryptocurrency collateral. No fees.</p>
-`,
+        `,
+        contentPromotion: `
+            <p class="topText">Invest the way you want</p>
+            <h1 style="color:#F5A623;">Earn {promotionRate}% APR on your <br/>first 30-day investment.</h1>
+            <p>Triple your returns on your first fixed-term investment. Lend at least \${promotionAmount} for 30 days and you’ll earn {promotionRate}% APR<sup>*</sup> (up to 9x higher than a CD). All lending is backed by collateral which is sold if the borrower defaults. No fees. When your investment matures, withdraw or reinvest for free.</p>
+            <p class="reference"><sup>*</sup> To qualify, you must invest within 30 days of passing KYC. The {promotionRate}% APR introductory rate applies to the first \${promotionAmount} of your investment only (you’ll earn our usual 6% APR rate on any remaining amount).</p>
+        `,
         youtube: { title: 'Why invest with MyConstant?' },
         desc: {
           '1': 'All lending backed by crypto',
@@ -4081,7 +4089,7 @@ export default {
       4: {
         question: 'Are there any limits on deposits?',
         answer: `
-          <p>Yes. We currently support Zelle for amounts under $2,000 and ACH transfers for <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/" class="underline" target="_blank">linked US accounts</a> up to $5,000. Wire transfers are unlimited.</p>
+          <p>Yes. We currently support Zelle for amounts under $2,000 and ACH transfers for <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/" class="underline" target="_blank">linked US accounts</a> up to $5,000. The maximum you can send via a linked US account is $50,000 per day. Wire transfers are unlimited.</p>
         `
       },
       5: {
@@ -4505,7 +4513,7 @@ export default {
       //     desc: 'Whether you already monetize or not, our creative team will help boost the value and impact of your content. We can advise on SEO, copywriting, marketing, and more.'
       //   }
       // },
-      trialBonus: 'a ${kYCTrialAmount} trial bonus',
+      trialBonus: 'a ${kycTrialAmount} trial bonus',
     },
     theBestOpportunity: {
       title: 'The best opportunity in the market',
@@ -4549,7 +4557,7 @@ export default {
         },
         '3': {
           title: ' ',
-          desc: 'Your referee invests in Flex for 4% APY.'
+          desc: 'Your referee invests in Flex for {flexRate}% APY.',
         },
         '4': {
           title: ' ',
@@ -4898,7 +4906,7 @@ export default {
       //     desc: 'Every new customer we welcome helps fuel new features and products, giving you a range of investment options, rates, and tools to reach all your financial goals. '
       //   }
       // },
-      trialBonus: 'a ${kYCTrialAmount} trial bonus',
+      trialBonus: 'a ${kycTrialAmount} trial bonus',
     },
     youBothWin: {
       title: 'Invite friends and you both win',
@@ -4909,7 +4917,7 @@ export default {
         },
         1: {
           title: 'EARN OUR BEST RATES',
-          desc: 'Beat the banks and inflation with interest rates of up to 7% APR. Earn <strong>20x more</strong> than a CD.',
+          desc: 'Beat the banks and inflation with interest rates of up to {investRate}% APR. Earn <strong>20x more</strong> than a CD.',
         },
         2: {
           title: 'MULTIPLY YOUR EARNINGS',
@@ -4949,7 +4957,7 @@ export default {
         },
         '3': {
           title: ' ',
-          desc: 'Your referee earns interest on a 30-day ${kYCTrialAmount} trial bonus.'
+          desc: 'Your referee earns interest on a {kycTrialPeriod}-day ${kycTrialAmount} trial bonus.',
         },
         '4': {
           title: ' ',
@@ -5351,14 +5359,11 @@ export default {
     },
     promotionGeneral: {
       title: `
-        <p class="header">Give us a try with a free <br/>\${kYCTrialAmount} trial bonus</p>
-      `,
-      titleMobile: `
-        <p class="header">Give us a try with a <br/><span class="hightlight">free \${kYCTrialAmount}</span> trial bonus</p>
+        <p class="header">Fancy earning {flexRate}% APY on a <br/><span class="hightlight">free \${kycTrialAmount} investment?</span></p>
       `,
       desc: `
-        <p>Experience P2P lending without committing your own money. Sign up and verify your ID (pass KYC) now and enjoy an inflation-beating 4% APY on a \${kYCTrialAmount} trial bonus. After 30 days, we reclaim the bonus but you keep the interest.</p>
-        <p>This offer is for a limited time and only available to US citizens.</p>
+        <p>Earn while you learn with collateral-backed P2P lending. Sign up, verify your ID, and enjoy {flexRate}% APY on a \${kycTrialAmount} free bonus. After {kycTrialPeriod} days of earning free interest, we reclaim the bonus but you keep the profits. See how much you could earn – start your free trial today.</p>
+        <p class="font-italic">This offer is for a limited time and only available to US citizens.</p>
       `,
       howItWorks: {
         title: 'How It Works',
@@ -5369,7 +5374,7 @@ export default {
           },
           '1': {
             title: 'Step 2',
-            desc: '            <p>We deposit your free ${kYCTrialAmount} bonus to earn 4% APY over 30 days.</p>            '
+            desc: '            <p>We deposit your free ${kycTrialAmount} bonus to earn {flexRate}% APY over {kycTrialPeriod} days.</p>            ',
           },
           '2': {
             title: 'Step 3',
@@ -5377,7 +5382,7 @@ export default {
           },
           '3': {
             title: 'Step 4',
-            desc: '            <p>After 30 days, we reclaim the bonus but you keep the interest.</p>            '
+            desc: '            <p>After {kycTrialPeriod} days, we reclaim the bonus but you keep the interest.</p>            ',
           },
           '4': {
             title: 'Step 5',
@@ -5597,64 +5602,6 @@ export default {
         }
       }
     },
-    faqs: {
-      data: {
-        '0': {
-          question: 'What is MyConstant?',
-          answer: '\n' +
-          '            <p>MyConstant is a multi-market P2P investment platform that pays up to 11% APR. With us, you can invest in people and businesses around the world, without fees or limits, with all lending backed by collateral or loan originator’s buy-back guarantee. We have a range of easy and accessible investment products for every risk appetite and goal, and provide you with the learning resources to achieve those goals, fast.</p>\n' +
-          '            '
-        },
-        '1': {
-          question: 'What is the ${kYCTrialAmount} trial bonus?',
-          answer: '\n' +
-          '            <p>The ${kYCTrialAmount} trial bonus is a way to experience investing on our platform without committing any of your own money. Instead, we credit your Flex account with a ${kYCTrialAmount} bonus that you can watch grow at 4% APY, compounded and paid every second. Then, at the end of 30 days, we take back the ${kYCTrialAmount} and you keep the interest, which you can then reinvest with some of your own money or withdraw to your bank account.</p>\n' +
-          '            '
-        },
-        '2': {
-          question: 'Why are you offering this bonus?',
-          answer: '\n' +
-          '            <p>We understand that investing can be a little daunting at first – especially if you’ve never done it before. The bonus therefore gives you a taste for investing with us and will hopefully inspire you to continue investing with us for even bigger returns.</p>\n' +
-          '            '
-        },
-        '3': {
-          question: 'How do I get the bonus?',
-          answer: '\n' +
-          '            <p>To qualify for the bonus, you must be a US citizen. Then, you simply sign up for a free MyConstant account, verify your ID (KYC), and your ${kYCTrialAmount} bonus will be paid into your account immediately. You won’t be able to withdraw the bonus, and it’ll be debited from your account after 30 days, but you keep all the interest.</p>\n' +
-          '            '
-        },
-        '4': {
-          question: 'How do I verify my ID?',
-          answer: '\n' +
-          '            <p>We have to verify your ID to comply with US Anti-Money Laundering (AML) and Know Your Customer (KYC) regulations.</p>\n' +
-          '            <p>Once you’ve created an account, you’ll be asked to submit address and ID proof, so we can verify your ID and approve your account.</p>\n' +
-          '            <p>KYC verification is usually very fast, assuming you submit all relevant details and they’re clear, legible, and valid.</p>\n' +
-          '            <p>Here’s a tip sheet: <a href="https://blog.myconstant.com/how-to-verify-your-id-on-constant-kyc/" class="underline" target="_blank">How to verify your ID on MyConstant</a>.</p>\n' +
-          '            '
-        },
-        '5': {
-          question: 'Can I withdraw the ${kYCTrialAmount}?',
-          answer: '\n' +
-          '            <p>No, the ${kYCTrialAmount} is locked into your Flex account for the 30 days. After 30 days, we take back the ${kYCTrialAmount} but you keep the interest.</p>\n' +
-          '            '
-        },
-        '6': {
-          question: 'What happens after the trial?',
-          answer: `
-               <p>Once we’ve taken back the \${kYCTrialAmount}, you keep the interest. It’s up to you what you’d like to do next. You can keep your interest in Flex earning 4% APY with anytime free withdrawals, or you can add some of your own money and reinvest in a crypto-backed loan for {rate}% APR (minimum investment is $50). You can also just withdraw it to your bank account. The choice is yours!</p>
-               <p>
-                <strong>Important note:</strong> You must deposit, withdraw, or invest within 60 days of receiving your free interest otherwise it will expire.
-               </p>
-            `
-        },
-        '7': {
-          question: 'How do I withdraw my interest?',
-          answer: '\n' +
-          '            <p>After the 30 days is up, you can withdraw the interest on the ${kYCTrialAmount} bonus. To do so, head to your Accounts page and click Withdraw to fiat. You can only withdraw in fiat and not in a digital currency such as a stablecoin.</p>\n' +
-          '            '
-        }
-      }
-    }
   },
   form: {
     required: 'Required',

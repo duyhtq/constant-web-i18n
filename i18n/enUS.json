@@ -5184,8 +5184,8 @@
             "title": "        <p class=\"header\">See what it’s like to grow ${kYCTrialAmount} by the second.</p>        <p>Today when you sign up and verify your ID, we’ll deposit ${kYCTrialAmount} into your account to earn 4% APY for 30 days. At the end of 30 days, we’ll take the ${kYCTrialAmount} back but you can keep the interest and use it how you want.</p>        <p>Use your earnings to grow at {rate}% or more with our other investment tools.</p>        <p>You can start investing from just $50.</p>        <p>This offer is only available for a limited time.</p>      "
         },
         "promotionGeneral": {
-            "title": "\n        <p class=\"header\">Fancy earning {flexRate}% APY on a <br/><span class=\"hightlight\">free ${kycTrialAmount} investment?</span></p>\n      ",
-            "desc": "\n        <p>Earn while you learn with collateral-backed P2P lending. Sign up, verify your ID, and enjoy {flexRate}% APY on a ${kycTrialAmount} free bonus. After {kycTrialPeriod} days of earning free interest, we reclaim the bonus but you keep the profits. See how much you could earn – start your free trial today.</p>\n        <p class=\"font-italic\">This offer is for a limited time and only available to US citizens.</p>\n      ",
+            "title": "\n        <p class=\"header\">Give us a try with a free <br/><span class=\"hightlight\">${kycTrialAmount} trial bonus</span></p>\n      ",
+            "desc": "\n        <p>Experience P2P lending without committing your own money. Sign up and verify your ID (pass KYC) now and enjoy an inflation-beating {flexRate}% APY on a ${kycTrialAmount} trial bonus. After {kycTrialPeriod} days, we reclaim the bonus but you keep the interest.</p>\n        <p class=\"font-italic\">This offer is for a limited time and only available to US citizens.</p>\n      ",
             "howItWorks": {
                 "title": "How It Works",
                 "data": {

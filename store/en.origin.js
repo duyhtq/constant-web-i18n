@@ -3394,6 +3394,7 @@
                         "whySplitDepositDesc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.whySplitDepositDesc%%%",
                         "whySplitInvestment": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.whySplitInvestment%%%",
                         "whySplitInvestmentDesc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.whySplitInvestmentDesc%%%",
+                        "whyLimitAch": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.whyLimitAch%%%",
                         "plaidSplitResultDeposit": {
                             "investNoteSuccess1": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.investNoteSuccess1%%%",
                             "investNoteSuccess2": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.investNoteSuccess2%%%",
@@ -3402,7 +3403,8 @@
                             "investNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.investNote%%%",
                             "transactionSuccess": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.transactionSuccess%%%",
                             "transactionError": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.transactionError%%%",
-                            "plaidReachLimit": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.plaidReachLimit%%%"
+                            "plaidReachLimit": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.plaidReachLimit%%%",
+                            "plaidReachNumerOrderLimit": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.plaidReachNumerOrderLimit%%%"
                         },
                         "plaidSplitResultInvestment": {
                             "investNoteSuccess": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.investNoteSuccess%%%",

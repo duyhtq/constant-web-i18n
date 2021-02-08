@@ -2567,7 +2567,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
               <ul>
                 <li>You have linked a US checking account thats supports outgoing ACH transfers.</li>
                 <li>You have sufficient funds for the transfer in your linked US bank account.</li>
-                <li>The amount you’re sending is less than ${max}, or if higher, you’ve agreed to split your transfer into separate transactions.</li>
+                <li>The amount you’re sending is less than ${max}, or if higher, you’ve agreed to split your transactions (up to a maximum of ${maxTotal})</li>
                 <li>You expect to keep the same linked bank account(s) for the next 60 days.</li>
                 <li>You've read <a target=""_blank"" href=""https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/"">our linked banking and ACH transfers guide.</a></li>
               </ul>
@@ -2580,6 +2580,15 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.whySplitDepositDesc%%%,"<div>This means you don’t need to create several deposit orders. However, please note your bank may charge you for each ACH transaction. Once you agree to split your deposit into separate orders, you can’t cancel it.</div>"
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.whySplitInvestment%%%,"Why split your investment?"
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.whySplitInvestmentDesc%%%,"<div>This means you don’t need to create several orders manually. However, please note your bank may charge you for each ACH transaction. Once you agree to split your investments, you won’t be able to cancel.</div>"
+%%%.home1.lendingSection.confirm.paymentMethods.plaid.whyLimitAch%%%,"
+              <p><strong>Why we limit ACH transfers</strong></p>
+              <p>ACH reversals can result in fees and the suspension of your account. To prevent this, we set the following upper limits on your account:</p>
+              <ul>
+                <li>A maximum of ${amountPer} per transaction.</li>
+                <li>A maximum of {number} active (not yet cleared) ACH transfers at any one time.</li>
+              </ul>
+              <p>If you want to send more than these limits allow, please choose wire as your payment method.</p>
+            "
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.investNoteSuccess1%%%,"<p>Your deposit of ${amount} was processed successfully.</p>"
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.investNoteSuccess2%%%,"<p>You’re now earning 4% APY on ${instantAmount} of Instant Credit. You can also reinvest your Instant Credit in a fixed-term loan for up to 7% APR.</p>"
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.investNoteSuccess3%%%,"<p>ACH deposits take 3-5 business days to clear (not including weekends) and your funds will be available for withdrawal 7 days <strong>after</strong> they clear.</p>"
@@ -2590,7 +2599,8 @@ Click confirm to start your term and receive your loan. Once your term begins yo
               "
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.transactionSuccess%%%," (Successful)"
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.transactionError%%%," (Failed due to {error})"
-%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.plaidReachLimit%%%,"Sorry, the maximum you can deposit via ACH is ${remainAmount}. To deposit a larger amount, please choose wire. Otherwise, your daily ACH deposit limit of $50,000 will reset at {resetTime}."
+%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.plaidReachLimit%%%,"You're allowed up to {number} active ACH transfers of up to ${amountPer} each. The amount entered would require ${amount} ACH transfers at once. Therefore, please choose another payment method or transfer your funds in batches."
+%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.plaidReachNumerOrderLimit%%%,"Sorry, you already have {number} active ACH transfers. Please wait until these have cleared before starting a new transfer or choose another payment method."
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.investNoteSuccess%%%,"<p>The transfer(s) for your investment(s) were processed successfully.</p>"
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.splitNoteFail%%%,"<p>Sorry, we couldn’t process all the transfers for your investments. Here’s a summary:</p>"
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.investNote%%%,"<p>Please note ACH transfers take 3-5 business days to clear and your investments will start as soon as we receive your funds.</p>"

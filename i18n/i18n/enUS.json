@@ -292,7 +292,7 @@
             "level0": "Member"
         },
         "desc": {
-            "level1": "<h4>What you get:</h4>              <p><i class=\"fal fa-check\"></i> US members: ${referralReward} credit every time you refer a friend.</p>              <p><i class=\"fal fa-check\"></i> {referralFlexReward}% of all earned interest from Flex accounts of referred friends during their first year.</p>            ",
+            "level1": "<h4>What you get:</h4>              <p><i class=\"fal fa-check\"></i> US members: ${referralReward} credit every time you refer a friend.</p>              <p><i class=\"fal fa-check\"></i> {referralFlexReward}% of all earned interest from Flex accounts of referred friends during their first year.</p>            <p><i class=\"fal fa-check\"></i> 1,000 Membership points.</p>",
             "level2": "<h4>What you get:</h4>              <p><i class=\"fal fa-check\"></i> ${cashback} credit to your MyConstant account the first time you reach Platinum (after leaving a review on Trustpilot).</p>              <p><i class=\"fal fa-check\"></i> US members: ${referralReward} credit every time you refer a friend.</p>              <p><i class=\"fal fa-check\"></i> {referralFlexReward}% of all earned interest from Flex accounts of referred friends during their first year.</p>            ",
             "level3": "<h4>What you get:</h4>              <p><i class=\"fal fa-check\"></i> ${cashback} credit to your MyConstant account the first time you reach Diamond (after leaving a review on Trustpilot).</p>              <p><i class=\"fal fa-check\"></i> US members: ${referralReward} credit every time you refer a friend.</p>              <p><i class=\"fal fa-check\"></i> {referralFlexReward}% of all earned interest from Flex accounts of referred friends during their first year.</p>              <p><i class=\"fal fa-check\"></i> Automatic bump to the top of our matching queue for all investments.</p>              <p><i class=\"fal fa-check\"></i> {bonus} STAR token to redeem for a {bonus}% bonus or discounted interest.</p>            "
         },
@@ -5459,7 +5459,7 @@
             "getting_started_link_bank": "You've won the Booster and {rewardAmount} reward points.",
             "activity_install_app": "Thanks for downloading our app. You've banked 1,000 membership points free!",
             "activity_take_mini_course": "You got 100% in our Mini Quiz – nice work! Here's {rewardAmount} membership points as reward.",
-            "membership_gold": "You've become Gold member and a $50 reward is ready in your account. Keep investing and get more valuable gifts.",
+            "membership_gold": "You've become Gold member and gotten 1,000 membership points. Keep investing and get more valuable gifts.",
             "membership_platinum": "You've become Platinum member and a $50 reward is ready in your account. Keep investing and get more valuable gifts.",
             "membership_diamond": "You've become Diamond member and a $50 reward is ready in your account. Keep investing and get more valuable gifts."
         },

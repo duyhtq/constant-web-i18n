@@ -5359,10 +5359,10 @@ export default {
     },
     promotionGeneral: {
       title: `
-        <p class="header">Fancy earning {flexRate}% APY on a <br/><span class="hightlight">free \${kycTrialAmount} investment?</span></p>
+        <p class="header">Give us a try with a free <br/><span class="hightlight">\${kycTrialAmount} trial bonus</span></p>
       `,
       desc: `
-        <p>Earn while you learn with collateral-backed P2P lending. Sign up, verify your ID, and enjoy {flexRate}% APY on a \${kycTrialAmount} free bonus. After {kycTrialPeriod} days of earning free interest, we reclaim the bonus but you keep the profits. See how much you could earn – start your free trial today.</p>
+        <p>Experience P2P lending without committing your own money. Sign up and verify your ID (pass KYC) now and enjoy an inflation-beating {flexRate}% APY on a \${kycTrialAmount} trial bonus. After {kycTrialPeriod} days, we reclaim the bonus but you keep the interest.</p>
         <p class="font-italic">This offer is for a limited time and only available to US citizens.</p>
       `,
       howItWorks: {

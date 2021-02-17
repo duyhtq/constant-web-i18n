@@ -3448,6 +3448,7 @@ export default {
               transactionSuccess: '(Successful)',
               transactionError: ' (Canceled due to {error})',
             },
+            unknownError: '<p>Sorry, something went wrong and we couldn\'t process your ACH transaction. Please try again later. If the problem continues, please contact us on hello@myconstant.com.</p>',
             insufficient_bank_account: '<p>Sorry, you appear to have insufficient funds in your linked bank account for this transfer. Please check the balance of your linked bank account and try again. If you think this is an error, please contact us on <a href="mailto:hello@myconstant.com" target="_blank" class="underline">hello@myconstant.com</a>.</p>',
           }
         },
@@ -5369,10 +5370,10 @@ export default {
     },
     promotionGeneral: {
       title: `
-        <p class="header">Give us a try with a free <br/><span class="hightlight">\${kycTrialAmount} trial bonus</span></p>
+        <p class="header">Invest in your future <br/><span class="hightlight">with a free \${kycTrialAmount} trial</span></p>
       `,
       desc: `
-        <p>Experience P2P lending without committing your own money. Sign up and verify your ID (pass KYC) now and enjoy an inflation-beating {flexRate}% APY on a \${kycTrialAmount} trial bonus. After {kycTrialPeriod} days, we reclaim the bonus but you keep the interest.</p>
+        <p>Experience the magic of compounding interest with collateral-backed P2P lending. Sign up, verify your ID, and enjoy {flexRate}% APY on a \${kycTrialAmount} trial bonus. After {kycTrialPeriod} days, we reclaim the bonus but you keep the interest. Start your investing journey for free today.</p>
         <p class="font-italic">This offer is for a limited time and only available to US citizens.</p>
       `,
       howItWorks: {

@@ -3417,6 +3417,7 @@
                             "transactionSuccess": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.transactionSuccess%%%",
                             "transactionError": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.transactionError%%%"
                         },
+                        "unknownError": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.unknownError%%%",
                         "insufficient_bank_account": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.insufficient_bank_account%%%"
                     }
                 },

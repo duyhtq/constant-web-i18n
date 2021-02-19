@@ -2774,8 +2774,8 @@ export default {
         BeneficiaryAddressPostalCode: 'Beneficiary Postal Code',
         transferMethod: 'Transfer Method',
         transferMethods: {
-          plaid: { title: 'Linked bank account (ACH)', desc: 'Fee: Free. Time: 2-5 days' },
-          ach: { title: 'ACH', desc: 'Fee: Free. Time: 2-5 days' },
+          plaid: { title: 'Linked bank account (ACH)', desc: 'Fee: Free. Time: 3-5 days' },
+          ach: { title: 'ACH', desc: 'Fee: Free. Time: 3-5 days' },
           wire: { title: 'Wire', desc: 'Fee: might be charged by your bank. Time: a business day' },
         },
         fullName: 'Full Name',

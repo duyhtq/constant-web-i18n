@@ -389,7 +389,8 @@
         "prvDescription": "PRV is the native token of privacy network, Incognito. It enables you to digitally transact crypto in private and is readily exchanged for other cryptocurrencies through Incognito’s pDEX (decentralized exchange). We negotiated a special interest rate in PRV that helps you take advantage of private transactions over the Incognito network. To learn more about PRV, <a class=\"underline\" href=\"https://incognito.org/\" target=\"_blank\">visit the Incognito community</a>.",
         "payInterestIn": "Pay interest in:",
         "depositCollateralSuccess": "Thanks – you'll now earn {interest}% {interestType} interest on your {collateral} balance, paid in {inCollateral}.",
-        "trc20Note": "Transfer USDT over the Tron Network (TRC20) to reduce fees and transfer times."
+        "trc20Note": "Transfer USDT over the Tron Network (TRC20) to reduce fees and transfer times.",
+        "makeLocalOrderFailed": "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you."
     },
     "history": {
         "deposit": {
@@ -1846,89 +1847,89 @@
                 "viewAll": "View us on TrustPilot",
                 "readMore": "Read more",
                 "reviews": "Reviews",
-                "numReview": "779",
+                "numReview": "813",
                 "excellent": "Excellent",
-                "points": "4.7/5",
+                "points": "4.6/5",
                 "data": {
                     "0": {
                         "star": "5",
-                        "title": "It's a pretty cool app",
-                        "desc": "First time investing into anything. Looking forward to seeing these numbers go up.",
-                        "date": "Feb 3, 2021",
-                        "auth": "Candys Williams",
-                        "link": "https://www.trustpilot.com/reviews/601a0042679d9705c8624ab8"
+                        "title": "What a great app",
+                        "desc": "Just go into crypto and love the fact I can leave my crypto idle on their app make 4%. Also you can be the lender and lend out money and get a great return on 30 60 90 day loans. Awesome idea, great application.",
+                        "date": "Feb 17, 2021",
+                        "auth": "Brian S Barbieri",
+                        "link": "https://www.trustpilot.com/reviews/602c6a37679d9708b4d8a3aa"
                     },
                     "1": {
                         "star": "5",
-                        "title": "Better than leaving money in bank",
-                        "desc": "This is so easy to work with and it is very reliable because of the way my money is backed. I 10/10 recommend.",
-                        "date": "Feb 3, 2021",
-                        "auth": "Rachel Wood",
-                        "link": "https://www.trustpilot.com/reviews/6019ebce679d9701d081383e"
+                        "title": "Solid option to park your money for the short term with great returns",
+                        "desc": "All works smoothly and easily and I’m steadily gaining trust in the platform and service. I would like to have higher ach transfer limits, which would simplify moving my money around. Wire transfer is always an option but I don’t want to pay repeated transfer fees.",
+                        "date": "Feb 16, 2021",
+                        "auth": "Kevin Holmes",
+                        "link": "https://www.trustpilot.com/reviews/602ac4db679d9708b4d72f66"
                     },
                     "2": {
                         "star": "5",
-                        "title": "Great Experience",
-                        "desc": "A great new way to grow your money. Different investment options are available and everything is transparent. You can see your interest in real time. Easy to transfer funds from bank and it is available to invest immediately.",
-                        "date": "Feb 1, 2021",
-                        "auth": "AG",
-                        "link": "https://www.trustpilot.com/reviews/601607de679d9701d07e0c79"
+                        "title": "I love it! Simple to sign up!",
+                        "desc": "A great new way to earn a little interest money. Invest as little as $10. I cant wait to start seeing my investment making money by just sitting there! You can also earn money by referring or simply by going on there. Sounds too good to be true but it is true!",
+                        "date": "Feb 15, 2021",
+                        "auth": "Brandi Wilson",
+                        "link": "https://www.trustpilot.com/reviews/60277ee1679d9708b4d4bfc2"
                     },
                     "3": {
                         "star": "5",
-                        "title": "Great Investing App",
-                        "desc": "MyConstant has come a long way and is a great place to earn a nice return on your investment. The customer support is there for you if you hit a snag. I'd recommend them to anyone with a bit of tech knowledge.",
-                        "date": "Feb 1, 2021",
-                        "auth": "Daprice",
-                        "link": "https://www.trustpilot.com/reviews/6015dd10679d9705c85f0a45"
+                        "title": "10/10 would recommend",
+                        "desc": "I’m really enjoying MyConstant so far! The whole process of getting registered and set up has been quick and convenient. I’m learning about investing and about peer to peer lending. It’s an awesome sight!",
+                        "date": "Feb 12, 2021",
+                        "auth": "Keragyn Goodmansen",
+                        "link": "https://www.trustpilot.com/reviews/60257325679d97052cd4ddbe"
                     },
                     "4": {
                         "star": "5",
-                        "title": "Great platform",
-                        "desc": "Great alternative to stagnant interest earning checking/savings account. Been using MyConstant for around a year with no complaints.",
-                        "date": "Feb 1, 2021",
-                        "auth": "Aronn Boldridge",
-                        "link": "https://www.trustpilot.com/reviews/5fdc30b0755dc107e0c71043"
+                        "title": "Easy investments",
+                        "desc": "I have been enjoying the investments, and the automatic reinvestments. If you are questioning MyConstant... Don't! They have been amazing! The withdraw process is easy, and simple too.",
+                        "date": "Feb 9, 2021",
+                        "auth": "Mike Miller",
+                        "link": "https://www.trustpilot.com/reviews/6021b2b1679d9708b4cfc008"
                     },
                     "5": {
                         "star": "5",
-                        "title": "Best platform for crypto borrow-lending",
-                        "desc": "I choose My Constant looking for a place to invest my crypto and I'm very satisfied with the platform: easy to use, best interest in the market and very reliable. I personally using it for crypto lending but the borrow is also a great.",
-                        "date": "Jan 31, 2021",
-                        "auth": "Limber Lopez",
-                        "link": "https://www.trustpilot.com/reviews/60144091679d9701d07ce0fa"
+                        "title": "Great experience so far",
+                        "desc": "I have signed up, they have done nothing but make me money! The 30 day trial period is a great incentive. Not only that but I have become much more knowledgeable about cryptocurrency and P2P lending! I definitely recommend this site/app to everyone!",
+                        "date": "Feb 9, 2021",
+                        "auth": "Elicia Kupper",
+                        "link": "https://www.trustpilot.com/reviews/60219ec3679d9708b4cfadca"
                     },
                     "6": {
                         "star": "5",
-                        "title": "Great App",
-                        "desc": "I love this app and everything you can do with it. You make money easily and it’s fun to. They have games were you can win money and other things.",
-                        "date": "Jan 31, 2021",
-                        "auth": "Amy Hudson",
-                        "link": "https://www.trustpilot.com/reviews/60135756679d9705c85d1ab3"
+                        "title": "Great investment app to increase my interest earning",
+                        "desc": "I've enjoyed its ease of use. I'm hopeful to be gold or even diamond soon so i can take advantage of the secondary market investment and increase my earnings faster. I look forward to continuing using the app and increased earnings.",
+                        "date": "Feb 9, 2021",
+                        "auth": "John Carreon",
+                        "link": "https://www.trustpilot.com/reviews/60217eee679d97052cd12ae5"
                     },
                     "7": {
                         "star": "5",
-                        "title": "This app is amazing",
-                        "desc": "I have gained money using there free money they give you when you first sign up...and its going wonderful I can't wait to see what else is in store for me...",
-                        "date": "Jan 30, 2021",
-                        "auth": "Crystal",
-                        "link": "https://www.trustpilot.com/reviews/60134918679d9705c85d13fd"
+                        "title": "Great Place to Earn on Idle Cash",
+                        "desc": "It's a great place to earn a nice return on your idle cash. It can be a bit confusing if you aren't tech-savvy, but the app and website have both upgraded a lot recently and the customer service is very helpful and responsive. I'd recommend MyConstant to anyone.",
+                        "date": "Feb 8, 2021",
+                        "auth": "Kyle de Vries",
+                        "link": "https://www.trustpilot.com/reviews/6020445b679d9708d8289c93"
                     },
                     "8": {
                         "star": "5",
-                        "title": "Great risk-free investment",
-                        "desc": "MyConstant has really changed the way I think of investment. Usually it comes with huge risk, but not here. This is a must have got anyone who wants a non traditional way to save and invest 110% risk free!",
-                        "date": "Jan 26, 2021",
-                        "auth": "Casey Shafer",
-                        "link": "https://www.trustpilot.com/reviews/600f8a48679d97040c51445c"
+                        "title": "Best rates I can find for BTC, ETH, and BNB",
+                        "desc": "After almost 2 months, really happy with MyConstant. 8% interest on BTC, ETH, and BNB is the highest rate I can find for those crypto assets. I hope to make a decent amount of interest on various assets through MyConstant.",
+                        "date": "Feb 5, 2021",
+                        "auth": "Jonathan Charpie",
+                        "link": "https://www.trustpilot.com/reviews/601cb44b679d9708d8261deb"
                     },
                     "9": {
                         "star": "5",
-                        "title": "It’s a good alternative",
-                        "desc": "It’s a good alternative to put your savings in no interest savings account. You don’t have to think too much about it like if you invest in stock market. They gave out pretty good bonus as well. I would recommend to use it.",
-                        "date": "Jan 25, 2020",
-                        "auth": "Timothy Wong",
-                        "link": "https://www.trustpilot.com/reviews/600db5f1755dc109e8e460b9"
+                        "title": "10/10 recommend",
+                        "desc": "This is so much better than leaving my money in the bank. This is so easy to work with and it is very reliable because of the way my money is backed.",
+                        "date": "Feb 3, 2020",
+                        "auth": "Rachel Wood",
+                        "link": "https://www.trustpilot.com/reviews/6019ebce679d9701d081383e"
                     }
                 }
             },
@@ -3403,7 +3404,7 @@
                             "investNote": "\n                <p>ACH deposits take 3-5 business days to clear (not including weekends) and your funds will be available for withdrawal 7 days <strong>after</strong> the transaction clears.</p>\n                <p>To transfer the remaining ${unsuccessfulAmount} for your deposit, <a href=\"https://www.myconstant.com/flex\" class=\"underline\">create another deposit order</a>.</p>\n              ",
                             "transactionSuccess": " (Successful)",
                             "transactionError": " (Failed due to {error})",
-                            "plaidReachLimit": "You're allowed up to {number} active ACH transfers of up to ${amountPer} each. The amount entered would require ${amount} ACH transfers at once. Therefore, please choose another payment method or transfer your funds in batches.",
+                            "plaidReachLimit": "You're allowed up to {number} active ACH transfers of up to ${amountPer} each. The amount entered would require {requireNumber} ACH transfers at once. Therefore, please choose another payment method or transfer your funds in batches.",
                             "plaidReachNumerOrderLimit": "Sorry, you already have {number} active ACH transfers. Please wait until these have cleared before starting a new transfer or choose another payment method."
                         },
                         "plaidSplitResultInvestment": {
@@ -3419,11 +3420,15 @@
                         },
                         "unknownError": "<p>Sorry, something went wrong and we couldn't process your ACH transaction. Please try again later. If the problem continues, please contact us on hello@myconstant.com.</p>",
                         "insufficient_bank_account": "<p>Sorry, you appear to have insufficient funds in your linked bank account for this transfer. Please check the balance of your linked bank account and try again. If you think this is an error, please contact us on <a href=\"mailto:hello@myconstant.com\" target=\"_blank\" class=\"underline\">hello@myconstant.com</a>.</p>"
+                    },
+                    "gift_card": {
+                        "titleDesc": "Instantly. Free. <span class=\"yellow\">3% cashback</span> to your Flex."
                     }
                 },
                 "updateBalanceNoteInWorkingTime": "Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience.",
                 "bankChargeFeeInfo": "\n          <h3 style=\"color: #757575;font-size: 16px; border-bottom: 1px solid #EEEEEE\">Notice about intermediary bank fees</h3>\n          <p class=\"text-left\">The global banking system is imperfect, and some banks lack the direct relationships that support international wire transfers. These banks may depend on one or more intermediary banks (banks in addition to yours and ours) to help process the wire.</p>  \n          <p class=\"text-left\">Intermediary banks may automatically deduct fees for this service before the wire reaches your bank (withdrawal) or our bank (deposit). Unfortunately, these fees are outside of our control, and we can’t reliably inform you of the intermediary banks involved nor their fees in advance.</p> \n          <p class=\"text-left\">While we don’t charge a USD withdrawal fee, you might still receive less than the withdrawal amount (after deducting your bank’s wire receipt fee) due to intermediary bank fees. Similarly, you might receive less in your MyConstant account after a deposit due to the same intermediary bank fees.</p>\n        ",
-                "bankChargeFeeTitle": "Intermediary bank fees"
+                "bankChargeFeeTitle": "Intermediary bank fees",
+                "makeLocalOrderFailed": "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you."
             }
         },
         "whyInvest": {
@@ -4268,7 +4273,7 @@
     },
     "withdraw": {
         "what": {
-            "title": "What we can do",
+            "title": "Access your money whenever you need it",
             "data": {
                 "0": {
                     "title": "Works with your bank",
@@ -4285,6 +4290,10 @@
                 "3": {
                     "title": "Unlimited free withdrawals",
                     "desc": "<p>Withdraw as often as you like for free. Please note that MyConstant cannot be liable for charges from your own bank.</p>"
+                },
+                "4": {
+                    "title": "Spend instantly",
+                    "desc": "<p>Withdraw your funds as a gift card for up to 3% cashback (into your MyConstant balance) and instant digital delivery.</p>"
                 }
             }
         },

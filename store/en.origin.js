@@ -389,7 +389,8 @@
         "prvDescription": "%%%.exchangeInputDepositForm.prvDescription%%%",
         "payInterestIn": "%%%.exchangeInputDepositForm.payInterestIn%%%",
         "depositCollateralSuccess": "%%%.exchangeInputDepositForm.depositCollateralSuccess%%%",
-        "trc20Note": "%%%.exchangeInputDepositForm.trc20Note%%%"
+        "trc20Note": "%%%.exchangeInputDepositForm.trc20Note%%%",
+        "makeLocalOrderFailed": "%%%.exchangeInputDepositForm.makeLocalOrderFailed%%%"
     },
     "history": {
         "deposit": {
@@ -3419,11 +3420,15 @@
                         },
                         "unknownError": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.unknownError%%%",
                         "insufficient_bank_account": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.insufficient_bank_account%%%"
+                    },
+                    "gift_card": {
+                        "titleDesc": "%%%.home1.lendingSection.confirm.paymentMethods.gift_card.titleDesc%%%"
                     }
                 },
                 "updateBalanceNoteInWorkingTime": "%%%.home1.lendingSection.confirm.updateBalanceNoteInWorkingTime%%%",
                 "bankChargeFeeInfo": "%%%.home1.lendingSection.confirm.bankChargeFeeInfo%%%",
-                "bankChargeFeeTitle": "%%%.home1.lendingSection.confirm.bankChargeFeeTitle%%%"
+                "bankChargeFeeTitle": "%%%.home1.lendingSection.confirm.bankChargeFeeTitle%%%",
+                "makeLocalOrderFailed": "%%%.home1.lendingSection.confirm.makeLocalOrderFailed%%%"
             }
         },
         "whyInvest": {
@@ -4285,6 +4290,10 @@
                 "3": {
                     "title": "%%%.withdraw.what.data.3.title%%%",
                     "desc": "%%%.withdraw.what.data.3.desc%%%"
+                },
+                "4": {
+                    "title": "%%%.withdraw.what.data.4.title%%%",
+                    "desc": "%%%.withdraw.what.data.4.desc%%%"
                 }
             }
         },

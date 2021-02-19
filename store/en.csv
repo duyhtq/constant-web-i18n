@@ -273,6 +273,7 @@
 %%%.exchangeInputDepositForm.payInterestIn%%%,"Pay interest in:"
 %%%.exchangeInputDepositForm.depositCollateralSuccess%%%,"Thanks – you'll now earn {interest}% {interestType} interest on your {collateral} balance, paid in {inCollateral}."
 %%%.exchangeInputDepositForm.trc20Note%%%,"Transfer USDT over the Tron Network (TRC20) to reduce fees and transfer times."
+%%%.exchangeInputDepositForm.makeLocalOrderFailed%%%,"Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you."
 %%%.history.deposit.title%%%,"Fiat - Deposits"
 %%%.history.deposit.tabs.fiat%%%,"Fiat"
 %%%.history.deposit.tabs.crypto%%%,"Crypto"
@@ -2599,7 +2600,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
               "
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.transactionSuccess%%%," (Successful)"
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.transactionError%%%," (Failed due to {error})"
-%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.plaidReachLimit%%%,"You're allowed up to {number} active ACH transfers of up to ${amountPer} each. The amount entered would require ${amount} ACH transfers at once. Therefore, please choose another payment method or transfer your funds in batches."
+%%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.plaidReachLimit%%%,"You're allowed up to {number} active ACH transfers of up to ${amountPer} each. The amount entered would require {requireNumber} ACH transfers at once. Therefore, please choose another payment method or transfer your funds in batches."
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultDeposit.plaidReachNumerOrderLimit%%%,"Sorry, you already have {number} active ACH transfers. Please wait until these have cleared before starting a new transfer or choose another payment method."
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.investNoteSuccess%%%,"<p>The transfer(s) for your investment(s) were processed successfully.</p>"
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.splitNoteFail%%%,"<p>Sorry, we couldn’t process all the transfers for your investments. Here’s a summary:</p>"
@@ -2612,6 +2613,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.plaidSplitResultInvestment.transactionError%%%," (Canceled due to {error})"
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.unknownError%%%,"<p>Sorry, something went wrong and we couldn't process your ACH transaction. Please try again later. If the problem continues, please contact us on hello@myconstant.com.</p>"
 %%%.home1.lendingSection.confirm.paymentMethods.plaid.insufficient_bank_account%%%,"<p>Sorry, you appear to have insufficient funds in your linked bank account for this transfer. Please check the balance of your linked bank account and try again. If you think this is an error, please contact us on <a href=""mailto:hello@myconstant.com"" target=""_blank"" class=""underline"">hello@myconstant.com</a>.</p>"
+%%%.home1.lendingSection.confirm.paymentMethods.gift_card.titleDesc%%%,"Instantly. Free. <span class=""yellow"">3% cashback</span> to your Flex."
 %%%.home1.lendingSection.confirm.updateBalanceNoteInWorkingTime%%%,"Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience."
 %%%.home1.lendingSection.confirm.bankChargeFeeInfo%%%,"
           <h3 style=""color: #757575;font-size: 16px; border-bottom: 1px solid #EEEEEE"">Notice about intermediary bank fees</h3>
@@ -2620,6 +2622,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
           <p class=""text-left"">While we don’t charge a USD withdrawal fee, you might still receive less than the withdrawal amount (after deducting your bank’s wire receipt fee) due to intermediary bank fees. Similarly, you might receive less in your MyConstant account after a deposit due to the same intermediary bank fees.</p>
         "
 %%%.home1.lendingSection.confirm.bankChargeFeeTitle%%%,"Intermediary bank fees"
+%%%.home1.lendingSection.confirm.makeLocalOrderFailed%%%,"Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you."
 %%%.home1.whyInvest.title%%%,"Why invest with us?"
 %%%.home1.whyInvest.data.0.title%%%,"Immediate returns"
 %%%.home1.whyInvest.data.0.desc%%%,"<p>Start earning interest the moment you deposit.</p>"
@@ -3196,7 +3199,7 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.pageNotFound.pageNotFound%%%,"Page not found"
 %%%.pageNotFound.descText%%%,"Sorry we couldn't find what you were looking for."
 %%%.pageNotFound.backHome%%%,"Back to Home"
-%%%.withdraw.what.title%%%,"What we can do"
+%%%.withdraw.what.title%%%,"Access your money whenever you need it"
 %%%.withdraw.what.data.0.title%%%,"Works with your bank"
 %%%.withdraw.what.data.0.desc%%%,"<p>Easily transfer MyConstant funds to your local bank account. Just let us know where to send it.</p>"
 %%%.withdraw.what.data.1.title%%%,"Easy, quick withdrawals"
@@ -3205,6 +3208,8 @@ Click confirm to start your term and receive your loan. Once your term begins yo
 %%%.withdraw.what.data.2.desc%%%,"<p>Withdraw as often as you like for free. Never pay a penny to access your money.</p>"
 %%%.withdraw.what.data.3.title%%%,"Unlimited free withdrawals"
 %%%.withdraw.what.data.3.desc%%%,"<p>Withdraw as often as you like for free. Please note that MyConstant cannot be liable for charges from your own bank.</p>"
+%%%.withdraw.what.data.4.title%%%,"Spend instantly"
+%%%.withdraw.what.data.4.desc%%%,"<p>Withdraw your funds as a gift card for up to 3% cashback (into your MyConstant balance) and instant digital delivery.</p>"
 %%%.withdraw.info.content%%%,"
         <p class=""topText"">Withdraw to your local bank.</p>
         <h1 class=""last"">Withdraw funds to your bank account of choice.</h1>

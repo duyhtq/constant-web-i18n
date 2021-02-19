@@ -2803,11 +2803,11 @@
                 "transferMethods": {
                     "plaid": {
                         "title": "Linked bank account (ACH)",
-                        "desc": "Fee: Free. Time: 2-5 days"
+                        "desc": "Fee: Free. Time: 3-5 days"
                     },
                     "ach": {
                         "title": "ACH",
-                        "desc": "Fee: Free. Time: 2-5 days"
+                        "desc": "Fee: Free. Time: 3-5 days"
                     },
                     "wire": {
                         "title": "Wire",

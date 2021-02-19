@@ -356,6 +356,7 @@ export default {
     payInterestIn: 'Pay interest in:',
     depositCollateralSuccess: `Thanks – you'll now earn {interest}% {interestType} interest on your {collateral} balance, paid in {inCollateral}.`,
     trc20Note: 'Transfer USDT over the Tron Network (TRC20) to reduce fees and transfer times.',
+    makeLocalOrderFailed: "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
   },
   history: {
     deposit: {
@@ -3434,7 +3435,7 @@ export default {
               `,
               transactionSuccess: ' (Successful)',
               transactionError: ' (Failed due to {error})',
-              plaidReachLimit: 'You\'re allowed up to {number} active ACH transfers of up to ${amountPer} each. The amount entered would require ${amount} ACH transfers at once. Therefore, please choose another payment method or transfer your funds in batches.',
+              plaidReachLimit: 'You\'re allowed up to {number} active ACH transfers of up to ${amountPer} each. The amount entered would require {requireNumber} ACH transfers at once. Therefore, please choose another payment method or transfer your funds in batches.',
               plaidReachNumerOrderLimit: 'Sorry, you already have {number} active ACH transfers. Please wait until these have cleared before starting a new transfer or choose another payment method.',
             },
             plaidSplitResultInvestment: {
@@ -3450,6 +3451,9 @@ export default {
             },
             unknownError: '<p>Sorry, something went wrong and we couldn\'t process your ACH transaction. Please try again later. If the problem continues, please contact us on hello@myconstant.com.</p>',
             insufficient_bank_account: '<p>Sorry, you appear to have insufficient funds in your linked bank account for this transfer. Please check the balance of your linked bank account and try again. If you think this is an error, please contact us on <a href="mailto:hello@myconstant.com" target="_blank" class="underline">hello@myconstant.com</a>.</p>',
+          },
+          gift_card: {
+            titleDesc: 'Instantly. Free. <span class="yellow">3% cashback</span> to your Flex.'
           }
         },
         updateBalanceNoteInWorkingTime: 'Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We\'re working hard to reduce this time, so thanks for your patience.',
@@ -3460,6 +3464,7 @@ export default {
           <p class="text-left">While we don’t charge a USD withdrawal fee, you might still receive less than the withdrawal amount (after deducting your bank’s wire receipt fee) due to intermediary bank fees. Similarly, you might receive less in your MyConstant account after a deposit due to the same intermediary bank fees.</p>
         `,
         bankChargeFeeTitle: 'Intermediary bank fees',
+        makeLocalOrderFailed: "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
       }
     },
     whyInvest: {
@@ -4362,7 +4367,7 @@ export default {
   },
   withdraw: {
     what: {
-      title: 'What we can do',
+      title: 'Access your money whenever you need it',
       data: {
         0: {
           title: 'Works with your bank',
@@ -4379,6 +4384,10 @@ export default {
         3: {
           title: 'Unlimited free withdrawals',
           desc: '<p>Withdraw as often as you like for free. Please note that MyConstant cannot be liable for charges from your own bank.</p>'
+        },
+        4: {
+          title: 'Spend instantly',
+          desc: '<p>Withdraw your funds as a gift card for up to 3% cashback (into your MyConstant balance) and instant digital delivery.</p>',
         },
       },
     },

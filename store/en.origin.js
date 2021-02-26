@@ -5087,7 +5087,8 @@
         "mustBeAPositiveInteger": "%%%.error.mustBeAPositiveInteger%%%",
         "mustBeAIntergerNumber": "%%%.error.mustBeAIntergerNumber%%%",
         "reachDayLimit": "%%%.error.reachDayLimit%%%",
-        "reachTransactionLimit": "%%%.error.reachTransactionLimit%%%"
+        "reachTransactionLimit": "%%%.error.reachTransactionLimit%%%",
+        "zelleOverLimitLessThanMin": "%%%.error.zelleOverLimitLessThanMin%%%"
     },
     "menuMobile": {
         "btnSignIn": "%%%.menuMobile.btnSignIn%%%",

@@ -4393,9 +4393,9 @@ export default {
     },
     info: {
       content: `
-        <p class="topText">Withdraw to your local bank.</p>
-        <h1 class="last">Withdraw funds to your bank account of choice.</h1>
-        <p>Send your money via ACH bank transfer or Zelle Pay (US only). If your account doesn’t support USD, your bank will convert your funds to local currency at the current market rate. All withdrawals are free and unlimited.</p>
+        <p class="topText">How would you like your money?</p>
+        <h1 class="last">Withdraw to your bank account or instantly as a gift card</h1>
+        <p>Withdraw funds to your bank account via Wire, Zelle, or ACH. Or, withdraw instantly as a gift card and get up to 3% cashback on 40+ retailers. All withdrawals – including gift cards – are free and unlimited.</p>
       `
     }
   },
@@ -5272,6 +5272,7 @@ export default {
     mustBeAIntergerNumber: 'Please enter a valid number',
     reachDayLimit: `Sorry, you've reached your daily Zelle withdrawal limit of {max}. Please try again tomorrow or choose another withdrawal method.`,
     reachTransactionLimit: 'Sorry, the maximum you can withdraw via Zelle is {max}. Please reduce your withdrawal amount or choose another withdrawal method.',
+    zelleOverLimitLessThanMin: 'The maximum you can withdraw via Zelle is {max}. As this is less than our minimum withdrawal amount of {min}, please choose another payment method.',
   },
   menuMobile: {
     btnSignIn: 'Log In',

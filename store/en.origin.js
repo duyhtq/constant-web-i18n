@@ -2995,6 +2995,7 @@
             "exchangeRate": "%%%.home.transferCrypto.exchangeRate%%%",
             "yourBalance": "%%%.home.transferCrypto.yourBalance%%%",
             "validateMaxInputBalanceZero": "%%%.home.transferCrypto.validateMaxInputBalanceZero%%%",
+            "validateMinInput": "%%%.home.transferCrypto.validateMinInput%%%",
             "transferFeeLabel": "%%%.home.transferCrypto.transferFeeLabel%%%",
             "subTitle": "%%%.home.transferCrypto.subTitle%%%",
             "introTitle": "%%%.home.transferCrypto.introTitle%%%",
@@ -3263,6 +3264,7 @@
                 },
                 "fee": {
                     "fee": "%%%.home.direct.components.fee.fee%%%",
+                    "minAmount": "%%%.home.direct.components.fee.minAmount%%%",
                     "wantZeroFeeLabel": "%%%.home.direct.components.fee.wantZeroFeeLabel%%%",
                     "wantZeroFeeMsg": "%%%.home.direct.components.fee.wantZeroFeeMsg%%%"
                 }
@@ -5073,7 +5075,8 @@
             "userTaxIDNumberExisted": "%%%.error.serverCode.userTaxIDNumberExisted%%%",
             "userTaxIDNumberInvalid": "%%%.error.serverCode.userTaxIDNumberInvalid%%%",
             "userPhoneNumberInvalid": "%%%.error.serverCode.userPhoneNumberInvalid%%%",
-            "inValidWalletAddress": "%%%.error.serverCode.inValidWalletAddress%%%"
+            "inValidWalletAddress": "%%%.error.serverCode.inValidWalletAddress%%%",
+            "missingUserDocuments": "%%%.error.serverCode.missingUserDocuments%%%"
         },
         "expiredSession": "%%%.error.expiredSession%%%",
         "withdrawLessThanOrEqual": "%%%.error.withdrawLessThanOrEqual%%%",

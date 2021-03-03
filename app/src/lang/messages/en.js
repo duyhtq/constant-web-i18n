@@ -2971,7 +2971,7 @@ export default {
       exchangeRate: 'Exchange rate',
       yourBalance: 'Your balance',
       validateMaxInputBalanceZero: 'Please make sure your balance is sufficient.',
-      validateMinInput: '<div>Must be at least {min}</div><div>Fee: ${fee}</div><div>Minimum withdrawal: ${min} (including fee)</div>',
+      validateMinInput: 'Must be at least ${min}',
       transferFeeLabel: 'Transfer fee',
       subTitle: 'Free. To anyone, anywhere.',
       introTitle: 'Withdraw to your crypto wallet.',
@@ -3392,9 +3392,9 @@ export default {
             noBankDesc: '<p>Link a US bank account to do ACH transfers through our partner, Plaid.</p><p>You don’t have any linked bank accounts at the moment. To link a US bank account to do ACH transfers, please click <strong>+ Add new bank</strong>.</p>',
             updateBalanceNoteInWorkingTime: 'Please note it might take <strong>up to five business days</strong> for the ACH transfer to complete and show in your account.',
             confirmMessage: `
-              <p class="text-left">You're about to deposit {amount} via Plaid ACH. When you click Confirm, the transfer will begin and you won’t be able to cancel it.</p>
-              <p class="text-left">Please ensure you have sufficient funds in your linked bank account or your ACH might be reversed and your Instant Credit benefit banned for 30 days.</p>
-              <p class="text-left">When you’re ready, please click Confirm to start your transfer.</p>
+              <p class="text-left">You're about to deposit {amount} via Plaid ACH. Once you click Confirm, you will not be able to cancel the transfer.</p>
+              <p class="text-left">Please ensure you have sufficient funds in your bank account to avoid an ACH reversal. All ACH reversals result in temporary suspension of your account and <strong>fees up to $50 for each reversal.</strong></p>
+              <p class="text-left">When you're ready, please click Confirm and start your transfer.</p>
             `,
             referNoteDesc: `
               <h4>By clicking Submit, you confirm to</h4>
@@ -3402,7 +3402,13 @@ export default {
             checkListNote: `
               <ul>
                 <li>You have linked a US checking account thats supports outgoing ACH transfers.</li>
-                <li>You have sufficient funds for the transfer in your linked US bank account.</li>
+                <p class="red bold">Attention!</p>
+                <li class="red">To avoid an ACH reversal, please make sure you have sufficient funds in your bank account. The penalties for all ACH reversals result in a temporary suspension of your account as well as fees incurred.</li>
+                <ul class="red">
+                    <li>1st ACH reversal — $20 fee</li>       
+                    <li>2nd ACH reversal — $30 fee</li>       
+                    <li>3rd ACH reversal — $50 fee</li>       
+                </ul>
                 <li>The amount you’re sending is less than \${max}, or if higher, you’ve agreed to split your transactions (up to a maximum of \${maxTotal})</li>
                 <li>You expect to keep the same linked bank account(s) for the next 60 days.</li>
                 <li>You've read <a target="_blank" href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">our linked banking and ACH transfers guide.</a></li>
@@ -4741,7 +4747,6 @@ export default {
           <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>
           <li><p>If you make false or misleading statements about MyConstant, use MyConstant keywords in Google ads, use visitor exchange systems, forced clicks, and other methods that lead to unqualified traffic, send spam with MyConstant ads or use other aggressive marketing methods, your affiliate earnings will be forfeit and your membership cancelled.</p></li>
           <li><p>To qualify for affiliate earnings, your referees must be US citizens.</p></li>
-          <li><p>Milestone rewards apply to qualifying referrals made after Jan 21, 2021 only. They don't apply retroactively to referrals before this date.</p></li>
           <li><p>To qualify for the \${periodCountReward} milestone reward, your referees must have been referred and have made their first deposit within the rolling 30-day period. Deposits outside of the rolling 30-day period don’t count. The rolling 30-day period is the immediate 30 days before today or 30 days from your previous milestone award date, whichever is the latest.</p></li>
           <li><p>To qualify for the \${periodVolumeReward} milestone reward, your referees must have been referred and have deposited a combined total of at least \${periodVolume} within the rolling 90-day period.  Deopsits outside of the rolling 90-day period don’t count. The rolling 90-day period is the immediate 90 days before today or 90 days from your previous milestone award date, whichever is the latest.</p></li>
           <li><p>Milestone rewards are unlimited. Rolling timelines are reset whenever you earn a milestone.</p></li>

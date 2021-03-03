@@ -2971,6 +2971,7 @@ export default {
       exchangeRate: 'Exchange rate',
       yourBalance: 'Your balance',
       validateMaxInputBalanceZero: 'Please make sure your balance is sufficient.',
+      validateMinInput: '<div>Must be at least {min}</div><div>Fee: ${fee}</div><div>Minimum withdrawal: ${min} (including fee)</div>',
       transferFeeLabel: 'Transfer fee',
       subTitle: 'Free. To anyone, anywhere.',
       introTitle: 'Withdraw to your crypto wallet.',
@@ -3236,9 +3237,9 @@ export default {
         },
         fee: {
           fee: 'Fee: ',
+          minAmount: 'Minimum withdrawal: ',
           wantZeroFeeLabel: 'Want zero fees?',
-          wantZeroFeeMsg:
-            'All purchases of 1000 Constant and over are completely free.',
+          wantZeroFeeMsg: 'All purchases of 1000 Constant and over are completely free.',
         },
       },
       goHistory: 'Go to History',
@@ -5258,6 +5259,7 @@ export default {
       userTaxIDNumberInvalid: 'TaxIDNumber is invalid',
       userPhoneNumberInvalid: 'PhoneNumber is invalid',
       inValidWalletAddress: 'Receive address invalid',
+      missingUserDocuments: 'Please upload required documents.',
     },
     expiredSession: 'Your session has expired. Please log in again.',
     withdrawLessThanOrEqual: 'The maximum withdrawal amount is {max}. Please try other available methods.',

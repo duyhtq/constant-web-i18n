@@ -3372,7 +3372,8 @@
                             "overInstantCredit": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle.overInstantCredit%%%",
                             "investNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle.investNote%%%",
                             "pleaseNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle.pleaseNote%%%",
-                            "haveLinkedBank": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle.haveLinkedBank%%%"
+                            "haveLinkedBank": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle.haveLinkedBank%%%",
+                            "attention": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subtitle.attention%%%"
                         },
                         "subTitleSplitDeposit": {
                             "splitNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.subTitleSplitDeposit.splitNote%%%",
@@ -3390,6 +3391,7 @@
                         "noBankDesc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.noBankDesc%%%",
                         "updateBalanceNoteInWorkingTime": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.updateBalanceNoteInWorkingTime%%%",
                         "confirmMessage": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.confirmMessage%%%",
+                        "confirmMessage2": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.confirmMessage2%%%",
                         "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.referNoteDesc%%%",
                         "checkListNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.checkListNote%%%",
                         "sendNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.sendNote%%%",

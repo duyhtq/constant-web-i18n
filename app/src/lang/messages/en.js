@@ -3363,10 +3363,19 @@ export default {
               investNote: '<p>Get an instant 4% APY on any Plaid ACH deposit up to ${instantAmount}. Your investment of ${amount} at {interest}% for {term} days will start after your ACH clears.</p>',
               pleaseNote: '<p>Please note: ACH transfers are available for linked US bank accounts only, and can take <strong>up to 5 business days</strong> to clear. Please don’t send us an ACH from an unlinked bank account or it will be rejected.</p>',
               haveLinkedBank: '<p>Please choose a linked bank account below and then click <strong>Submit</strong>.</p>',
+              attention: `
+                <div class="bold">Attention!</div>
+                <p >To avoid an ACH reversal, please make sure you have sufficient funds in your bank account. The penalties for all ACH reversals result in a temporary suspension of your account as well as fees incurred.</p>
+                <ul class="bold">
+                    <li>1st ACH reversal — $20 fee</li>       
+                    <li>2nd ACH reversal — $30 fee</li>       
+                    <li>3rd ACH reversal — $50 fee</li>       
+                </ul>
+              `,
             },
             subTitleSplitDeposit: {
               splitNote: `
-                <p>The maximum amount you can send via ACH in a single transaction is {amountPerTransaction}.</p>
+                <div>The maximum amount you can send via ACH in a single transaction is {amountPerTransaction}.</div>
                 <p>Instead, you can split your deposit over {numTransaction} orders:</p>
               `,
               investNote: `
@@ -3376,25 +3385,27 @@ export default {
                 <p>While your ACH clears, you’ll earn {flexRate}% APY instantly on \${instantAmount} through our Instant Credit program. You can also reinvest Instant Credit in a fixed-term loan for up to 7% APR.</p>
               `,
               pleaseNote: '<p>Please note: ACH transfers are available for linked US bank accounts only and each ACH deposit can take <strong>up to 5 business days</strong> to clear.</p>',
-              haveLinkedBank: '<p>To confirm your deposit, please choose a linked bank account below and then click <strong>Submit</strong>.</p>',
+              haveLinkedBank: '<div>To confirm your deposit, please choose a linked bank account below and then click <strong>Submit</strong>.</div>',
             },
             subTitleSplitInvestment: {
               splitNote: `
-                <p>The maximum amount you can send via ACH in a single transaction is {amountPerTransaction}.</p>
+                <div>The maximum amount you can send via ACH in a single transaction is {amountPerTransaction}.</div>
                 <p>Instead, you can split your investment over {numTransaction} orders:</p>
               `,
               investNote: `
                     <p>The funds for each investment will be taken from the same linked bank account you choose from below.</p>
                 `,
               pleaseNote: '<p>Please note: ACH transfers are available for linked US bank accounts only and each ACH transaction can take <strong>up to 5 business days</strong> to clear.</p>',
-              haveLinkedBank: '<p>To split your investments, please choose a linked bank account below and then click <strong>Submit</strong>.</p>',
+              haveLinkedBank: '<div>To split your investments, please choose a linked bank account below and then click <strong>Submit</strong>.</div>',
             },
             noBankDesc: '<p>Link a US bank account to do ACH transfers through our partner, Plaid.</p><p>You don’t have any linked bank accounts at the moment. To link a US bank account to do ACH transfers, please click <strong>+ Add new bank</strong>.</p>',
             updateBalanceNoteInWorkingTime: 'Please note it might take <strong>up to five business days</strong> for the ACH transfer to complete and show in your account.',
             confirmMessage: `
-              <p class="text-left">You're about to deposit {amount} via Plaid ACH. Once you click Confirm, you will not be able to cancel the transfer.</p>
               <p class="text-left">Please ensure you have sufficient funds in your bank account to avoid an ACH reversal. All ACH reversals result in temporary suspension of your account and <strong>fees up to $50 for each reversal.</strong></p>
-              <p class="text-left">When you're ready, please click Confirm and start your transfer.</p>
+              <p class="text-left">When you're ready, please click <strong>Confirm</strong> and start your transfer.</p>
+            `,
+            confirmMessage2: `
+              <p class="text-left">Once you click <span class="yellow">Confirm</span>, <br/>you will not be able to cancel the transfer.</p>
             `,
             referNoteDesc: `
               <h4>By clicking Submit, you confirm to</h4>
@@ -3402,13 +3413,6 @@ export default {
             checkListNote: `
               <ul>
                 <li>You have linked a US checking account thats supports outgoing ACH transfers.</li>
-                <p class="red bold">Attention!</p>
-                <li class="red">To avoid an ACH reversal, please make sure you have sufficient funds in your bank account. The penalties for all ACH reversals result in a temporary suspension of your account as well as fees incurred.</li>
-                <ul class="red">
-                    <li>1st ACH reversal — $20 fee</li>       
-                    <li>2nd ACH reversal — $30 fee</li>       
-                    <li>3rd ACH reversal — $50 fee</li>       
-                </ul>
                 <li>The amount you’re sending is less than \${max}, or if higher, you’ve agreed to split your transactions (up to a maximum of \${maxTotal})</li>
                 <li>You expect to keep the same linked bank account(s) for the next 60 days.</li>
                 <li>You've read <a target="_blank" href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">our linked banking and ACH transfers guide.</a></li>

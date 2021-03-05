@@ -3394,7 +3394,6 @@
                         "confirmMessage2": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.confirmMessage2%%%",
                         "referNoteDesc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.referNoteDesc%%%",
                         "checkListNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.checkListNote%%%",
-                        "sendNote": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.sendNote%%%",
                         "whySplitDeposit": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.whySplitDeposit%%%",
                         "whySplitDepositDesc": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.whySplitDepositDesc%%%",
                         "whySplitInvestment": "%%%.home1.lendingSection.confirm.paymentMethods.plaid.whySplitInvestment%%%",

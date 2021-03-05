@@ -260,7 +260,7 @@ export default {
     desc: {
       level1: '<h4>What you get:</h4>              <p><i class="fal fa-check"></i> US members: ${referralReward} credit every time you refer a friend.</p>              <p><i class="fal fa-check"></i> {referralFlexReward}% of all earned interest from Flex accounts of referred friends during their first year.</p>            <p><i class="fal fa-check"></i> 1,000 Membership points.</p>',
       level2: '<h4>What you get:</h4>              <p><i class="fal fa-check"></i> ${cashback} credit to your MyConstant account the first time you reach Platinum (after leaving a review on Trustpilot).</p>              <p><i class="fal fa-check"></i> US members: ${referralReward} credit every time you refer a friend.</p>              <p><i class="fal fa-check"></i> {referralFlexReward}% of all earned interest from Flex accounts of referred friends during their first year.</p>            ',
-      level3: '<h4>What you get:</h4>              <p><i class="fal fa-check"></i> ${cashback} credit to your MyConstant account the first time you reach Diamond (after leaving a review on Trustpilot).</p>              <p><i class="fal fa-check"></i> US members: ${referralReward} credit every time you refer a friend.</p>              <p><i class="fal fa-check"></i> {referralFlexReward}% of all earned interest from Flex accounts of referred friends during their first year.</p>              <p><i class="fal fa-check"></i> Automatic bump to the top of our matching queue for all investments.</p>              <p><i class="fal fa-check"></i> {bonus} STAR token to redeem for a {bonus}% bonus or discounted interest.</p>            '
+      level3: '<h4>What you get:</h4>              <p><i class="fal fa-check"></i> ${cashback} credit to your MyConstant account the first time you reach Diamond (after leaving a review on Trustpilot).</p>              <p><i class="fal fa-check"></i> US members: ${referralReward} credit every time you refer a friend.</p>              <p><i class="fal fa-check"></i> {referralFlexReward}% of all earned interest from Flex accounts of referred friends during their first year.</p>              <p><i class="fal fa-check"></i> Up to 6 ACH transfers per month.</p>              <p><i class="fal fa-check"></i> {bonus} STAR token to redeem for a {bonus}% bonus or discounted interest.</p>            '
     },
     membershipPoints: 'Your Membership Points',
     title: {
@@ -1749,7 +1749,7 @@ export default {
       data: {
         '0': {
           title: 'Investors',
-          desc: 'Investors deposit any amount and choose either crypto-backed or Loan Originator lending.'
+          desc: 'Investors deposit any amount and choose to either Lend USD or Lend Crypto.'
         },
         '1': {
           title: 'Collateralized borrowers',
@@ -3361,7 +3361,7 @@ export default {
               enoughInstantCredit: '<p>Invest your deposit of ${instantAmount} instantly while your ACH clears. Get {flexRate}% APY through Flex or invest in a fixed term loan for up to {maxRate}%. (Please note: While you can invest your deposit instantly, you can’t withdraw it until your ACH clears.)</p>',
               overInstantCredit: '<p>Invest up to ${instantAmount} of your deposit instantly while your ACH clears. Get {flexRate}% APY through Flex or invest in a fixed term loan for up to {maxRate}%. The remainder of your deposit will credit when your funds reach us. (Please note: While you can invest up to ${instantAmount} of your deposit instantly, you can’t withdraw it until your ACH clears.)</p>',
               investNote: '<p>Get an instant 4% APY on any Plaid ACH deposit up to ${instantAmount}. Your investment of ${amount} at {interest}% for {term} days will start after your ACH clears.</p>',
-              pleaseNote: '<p>Please note: ACH transfers are available for linked US bank accounts only, and can take <strong>up to 5 business days</strong> to clear. Please don’t send us an ACH from an unlinked bank account or it will be rejected.</p>',
+              pleaseNote: '<p>Please note: ACH transfers are available for linked US bank accounts only, and can take <strong>up to 5 business days</strong> to clear.</p>',
               haveLinkedBank: '<p>Please choose a linked bank account below and then click <strong>Submit</strong>.</p>',
               attention: `
                 <div class="bold">Attention!</div>
@@ -3418,10 +3418,10 @@ export default {
                 <li>You've read <a target="_blank" href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">our linked banking and ACH transfers guide.</a></li>
               </ul>
             `,
-            sendNote: `
-                <p>Please send your funds <strong>within 3 business days</strong> otherwise this transaction will time-out for the sake of security. If you need more time, please re-enter your investment amount when you're ready.</p>
-                <p>Please <strong>don't send</strong> an ACH via any method other than linking your US bank account or we won't be able to accept or trace it (and it will likely return to your bank).</p>
-            `,
+            // sendNote: `
+            //     <p>Please send your funds <strong>within 3 business days</strong> otherwise this transaction will time-out for the sake of security. If you need more time, please re-enter your investment amount when you're ready.</p>
+            //     <p>Please <strong>don't send</strong> an ACH via any method other than linking your US bank account or we won't be able to accept or trace it (and it will likely return to your bank).</p>
+            // `,
             whySplitDeposit: 'Why split your deposit?',
             whySplitDepositDesc: `<div>This means you don’t need to create several deposit orders. However, please note your bank may charge you for each ACH transaction. Once you agree to split your deposit into separate orders, you can’t cancel it.</div>`,
             whySplitInvestment: 'Why split your investment?',
@@ -4082,6 +4082,7 @@ export default {
           <p>On the next screen, you can choose from three deposit methods. We support Zelle for amounts under $2,000, ACH transfers for linked US accounts up to $5,000, and wire transfers which are unlimited.</p>
           <p>Choose the appropriate deposit method and then follow the on-screen instructions. If you don’t have a linked US bank account, you can set one up using the on-screen link.</p>
           <p>Once we receive your deposit, which may take 1-5 business days depending on the method you choose, your balance will update within 1 business day.</p>
+          <p>Please note, non-diamond members are only allowed to have 1 active ACH transfer active at a time.</p>
           <p>Please read our <a href="/getPrices" class="underline">service times</a> for more information.</p>
         `
       },

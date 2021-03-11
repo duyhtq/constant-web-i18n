@@ -3366,7 +3366,7 @@ export default {
               haveLinkedBank: '<p>Please choose a linked bank account below and then click <strong>Submit</strong>.</p>',
               attention: `
                 <div class="bold">Attention!</div>
-                <p >To avoid an ACH reversal, please make sure you have <strong>sufficient funds</strong> (within at least the next 48 hours)  in your bank account. The penalties for all ACH reversals result in a temporary suspension of your account as well as fees incurred.</p>
+                <p >To avoid an ACH reversal, please make sure you have <strong>sufficient funds within at least the next 48 hours</strong> in your bank account. The penalties for all ACH reversals result in a temporary suspension of your account as well as fees incurred.</p>
                 <ul class="bold">
                     <li>1st ACH reversal — $20 fee</li>       
                     <li>2nd ACH reversal — $30 fee</li>       

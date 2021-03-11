@@ -2329,6 +2329,7 @@ export default {
         receiveAmountLabelDesc: 'We can pay your loan in USD or cryptocurrency. When choosing to receive your loan in cryptocurrency, you’re borrowing USD which we use to buy your chosen cryptocurrency. We search multiple exchanges for the best prices, and you might receive a little more or less cryptocurrency than the amount indicated below depending on the final price paid.',
         overCollateralCap: `We've reached our collateral limit on new loans against {symbol}. Please choose another cryptocurrency as collateral.`,
         overBorrowAmount: 'Sorry, the maximum you can borrow in one order is ${max}. Please choose a smaller amount and try again. <a href="#landing-faqs">Why is there a maximum?</a>',
+        overBorrowTerm: 'At the moment, with this term and rate you can only borrow a maximum ${max} amount. Please adjust the amount of money borrowed or try again using a different term and rate. Thank you.',
       },
       what: {
         title: 'Why borrow with us?',
@@ -3365,7 +3366,7 @@ export default {
               haveLinkedBank: '<p>Please choose a linked bank account below and then click <strong>Submit</strong>.</p>',
               attention: `
                 <div class="bold">Attention!</div>
-                <p >To avoid an ACH reversal, please make sure you have sufficient funds in your bank account. The penalties for all ACH reversals result in a temporary suspension of your account as well as fees incurred.</p>
+                <p >To avoid an ACH reversal, please make sure you have <strong>sufficient funds</strong> (within at least the next 48 hours)  in your bank account. The penalties for all ACH reversals result in a temporary suspension of your account as well as fees incurred.</p>
                 <ul class="bold">
                     <li>1st ACH reversal — $20 fee</li>       
                     <li>2nd ACH reversal — $30 fee</li>       
@@ -3461,7 +3462,7 @@ export default {
               transactionError: ' (Canceled due to {error})',
             },
             unknownError: '<p>Sorry, something went wrong and we couldn\'t process your ACH transaction. Please try again later. If the problem continues, please contact us on hello@myconstant.com.</p>',
-            insufficient_bank_account: '<p>Sorry, you appear to have insufficient funds in your linked bank account for this transfer. Please check the balance of your linked bank account and try again. If you think this is an error, please contact us on <a href="mailto:hello@myconstant.com" target="_blank" class="underline">hello@myconstant.com</a>.</p>',
+            insufficient_bank_account: '<p>Sorry, your deposit amount can\'t be higher than 70% of your available bank balance. Please enter a smaller amount.</p><p><strong>Important</strong>: please ensure you don\'t exceed this limit while your deposit is being processed otherwise your ACH will be reversed.</p>',
           },
           gift_card: {
             titleDesc: 'Instantly. Free. <span class="yellow">3% cashback</span> to your Flex.'
@@ -5743,6 +5744,7 @@ export default {
     invalid_payment_method: 'To deposit USD, you must be a KYC-verified US citizen. Please choose another currency to deposit.',
     makeLocalOrderFailed: "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
     invalid_amount: 'Invalid amount, please check your amount and try again',
+    validation_error: 'Ensure that there are no more than 10 digits before the decimal point.',
   },
   send: {
     invalidBankAccountName: 'For your security, the beneficiary name must match the name you registered when signing up with MyConstant. Please enter a different name or email hello@myconstant.com if you need help',

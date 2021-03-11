@@ -2358,7 +2358,8 @@
                 "receiveAmountLabel": "%%%.home.constantLoan.exchange.receiveAmountLabel%%%",
                 "receiveAmountLabelDesc": "%%%.home.constantLoan.exchange.receiveAmountLabelDesc%%%",
                 "overCollateralCap": "%%%.home.constantLoan.exchange.overCollateralCap%%%",
-                "overBorrowAmount": "%%%.home.constantLoan.exchange.overBorrowAmount%%%"
+                "overBorrowAmount": "%%%.home.constantLoan.exchange.overBorrowAmount%%%",
+                "overBorrowTerm": "%%%.home.constantLoan.exchange.overBorrowTerm%%%"
             },
             "what": {
                 "title": "%%%.home.constantLoan.what.title%%%",
@@ -5494,7 +5495,8 @@
     "saving": {
         "invalid_payment_method": "%%%.saving.invalid_payment_method%%%",
         "makeLocalOrderFailed": "%%%.saving.makeLocalOrderFailed%%%",
-        "invalid_amount": "%%%.saving.invalid_amount%%%"
+        "invalid_amount": "%%%.saving.invalid_amount%%%",
+        "validation_error": "%%%.saving.validation_error%%%"
     },
     "send": {
         "invalidBankAccountName": "%%%.send.invalidBankAccountName%%%",
